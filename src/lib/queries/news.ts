@@ -1,5 +1,10 @@
 import { createSupabaseServerClient } from "@/lib/supabase/server";
-import { throwIfError, toImageRef, toPrefectureRef } from "@/lib/queries/shared";
+import {
+  escapeLikePattern,
+  throwIfError,
+  toImageRef,
+  toPrefectureRef,
+} from "@/lib/queries/shared";
 import type { NewsRow } from "@/types/database";
 import type { NewsSummary } from "@/types/app";
 
@@ -40,6 +45,37 @@ export async function getLatestNews(limit = 6): Promise<NewsSummary[]> {
     .limit(limit);
 
   throwIfError(error, "ニュースの取得");
+
+  const rows = (data ?? []) as unknown as NewsRow[];
+  return rows.filter((row) => row.published_at !== null).map(toNewsSummary);
+}
+
+/**
+ * 見出しと要約からニュースを探す。
+ *
+ * 本文（body）は対象にしていない。件数が増えたときに重くなるのと、
+ * 本文の断片だけが一致しても利用者の求める記事とは限らないため。
+ */
+export async function searchNews(
+  q: string,
+  limit = 10,
+): Promise<NewsSummary[]> {
+  if (!q) return [];
+
+  const supabase = createSupabaseServerClient();
+
+  // .or() は条件をカンマ区切りで解釈するため、検索語にカンマが入ると
+  // フィルタ自体が壊れる。値を二重引用符で包んで1つの値として扱わせる。
+  const pattern = `"%${escapeLikePattern(q).replace(/"/g, '\\"')}%"`;
+
+  const { data, error } = await supabase
+    .from("news")
+    .select(NEWS_SUMMARY_SELECT)
+    .or(`title.ilike.${pattern},summary.ilike.${pattern}`)
+    .order("published_at", { ascending: false })
+    .limit(limit);
+
+  throwIfError(error, "ニュースの検索");
 
   const rows = (data ?? []) as unknown as NewsRow[];
   return rows.filter((row) => row.published_at !== null).map(toNewsSummary);

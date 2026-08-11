@@ -33,3 +33,19 @@ export function throwIfError(
   if (!error) return;
   throw new Error(`${context}に失敗しました: ${error.message}`);
 }
+
+/**
+ * ILIKE のパターンに使う文字列を無害化する。
+ *
+ * ユーザーが「100%」と入れたとき、% がワイルドカードとして解釈されると
+ * 意図しない全件マッチになる。SQLインジェクションはSupabaseの
+ * パラメータバインドで防がれるが、こちらはLIKEの文法上の問題なので別に対処する。
+ */
+export function escapeLikePattern(input: string): string {
+  return input.replace(/[\\%_]/g, (char) => `\\${char}`);
+}
+
+/** 検索キーワードを正規化する。長すぎる入力と空白だけの入力を弾く。 */
+export function normalizeQuery(raw: string | undefined): string {
+  return (raw ?? "").trim().slice(0, 60);
+}

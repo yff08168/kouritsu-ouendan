@@ -9,6 +9,10 @@ type Props = {
   size?: "sm" | "lg";
   /** ラベルを読み上げ用に隠さず表示するか */
   labelText?: string;
+  /** 送信先。既定は横断検索の /search */
+  action?: string;
+  /** 同じページに複数置く場合にidが衝突しないようにする */
+  id?: string;
 };
 
 /**
@@ -22,12 +26,14 @@ export function SearchBar({
   className,
   size = "sm",
   labelText = "学校名・地域で検索",
+  action = "/search",
+  id = "site-search",
 }: Props) {
-  const inputId = "site-search";
+  const inputId = id;
 
   return (
     <form
-      action="/search"
+      action={action}
       role="search"
       className={cn("relative w-full", className)}
     >

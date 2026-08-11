@@ -1,5 +1,6 @@
 import { createSupabaseServerClient } from "@/lib/supabase/server";
-import { throwIfError, toImageRef, toPrefectureRef } from "@/lib/queries/shared";
+import { escapeLikePattern, throwIfError, toImageRef, toPrefectureRef } from "@/lib/queries/shared";
+import { PREFECTURE_BY_SLUG } from "@/lib/constants";
 import type { SchoolCountRow, SchoolRow } from "@/types/database";
 import type { SchoolSummary } from "@/types/app";
 
@@ -48,6 +49,72 @@ export async function getFeaturedSchools(limit = 3): Promise<SchoolSummary[]> {
   throwIfError(error, "注目校の取得");
 
   return ((data ?? []) as unknown as SchoolRow[]).map(toSchoolSummary);
+}
+
+export type SchoolSearchParams = {
+  /** 学校名・正式名称・別名・市区町村を横断する部分一致 */
+  q?: string;
+  /** 都道府県slug（例: shimane） */
+  prefectureSlug?: string;
+  /** 1始まり */
+  page?: number;
+  perPage?: number;
+};
+
+export type SchoolSearchResult = {
+  schools: SchoolSummary[];
+  total: number;
+  page: number;
+  perPage: number;
+  totalPages: number;
+};
+
+/**
+ * 学校の一覧・検索。
+ *
+ * 検索対象は schools.search_text（名称・正式名称・別名・市区町村を結合した列）。
+ * トリガで維持され、pg_trgm の GIN インデックスが張ってある。
+ * 日本語は形態素解析なしだと標準の全文検索が効かないため、部分一致を使っている。
+ */
+export async function searchSchools({
+  q = "",
+  prefectureSlug,
+  page = 1,
+  perPage = 24,
+}: SchoolSearchParams): Promise<SchoolSearchResult> {
+  const supabase = createSupabaseServerClient();
+  const currentPage = Math.max(1, Math.floor(page));
+  const from = (currentPage - 1) * perPage;
+
+  let query = supabase
+    .from("schools")
+    .select(SCHOOL_SUMMARY_SELECT, { count: "exact" });
+
+  if (q) {
+    query = query.ilike("search_text", `%${escapeLikePattern(q)}%`);
+  }
+
+  if (prefectureSlug) {
+    const prefecture = PREFECTURE_BY_SLUG.get(prefectureSlug);
+    // 存在しないslugが来たら0件にする（不正なIDでの全件取得を防ぐ）
+    query = query.eq("prefecture_id", prefecture?.id ?? -1);
+  }
+
+  const { data, error, count } = await query
+    .order("prefecture_id", { ascending: true })
+    .order("name", { ascending: true })
+    .range(from, from + perPage - 1);
+
+  throwIfError(error, "学校の検索");
+
+  const total = count ?? 0;
+  return {
+    schools: ((data ?? []) as unknown as SchoolRow[]).map(toSchoolSummary),
+    total,
+    page: currentPage,
+    perPage,
+    totalPages: Math.max(1, Math.ceil(total / perPage)),
+  };
 }
 
 /**

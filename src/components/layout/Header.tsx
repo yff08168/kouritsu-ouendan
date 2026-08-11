@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Star } from "lucide-react";
 import { SITE } from "@/lib/constants";
 import { Container } from "@/components/layout/Container";
@@ -37,13 +38,13 @@ export function Header() {
             MVPでは未ログインでも使える「注目の公立高校」へ誘導しておき、
             ユーザー機能の実装後に /mypage へ差し替える。
           */}
-          <a
+          <Link
             href="/schools"
             className="hidden h-10 items-center gap-1.5 rounded-full bg-navy-800 px-4 text-sm font-bold text-white hover:bg-navy-700 md:inline-flex"
           >
             <Star size={16} aria-hidden="true" className="text-accent-500" />
             応援する学校
-          </a>
+          </Link>
 
           <MobileMenu />
         </div>

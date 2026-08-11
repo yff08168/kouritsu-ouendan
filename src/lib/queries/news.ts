@@ -51,6 +51,32 @@ export async function getLatestNews(limit = 6): Promise<NewsSummary[]> {
 }
 
 /**
+ * ある学校に関連づけられたニュース。
+ *
+ * !inner を付けて中間テーブルを内部結合し、その学校に紐づく記事だけに絞る。
+ * 中間テーブルのRLSは「親のニュースと学校が両方公開済み」を要求するので、
+ * 下書き記事がここから漏れることはない。
+ */
+export async function getNewsBySchool(
+  schoolId: string,
+  limit = 6,
+): Promise<NewsSummary[]> {
+  const supabase = createSupabaseServerClient();
+
+  const { data, error } = await supabase
+    .from("news")
+    .select(`${NEWS_SUMMARY_SELECT}, news_schools!inner ( school_id )`)
+    .eq("news_schools.school_id", schoolId)
+    .order("published_at", { ascending: false })
+    .limit(limit);
+
+  throwIfError(error, "関連ニュースの取得");
+
+  const rows = (data ?? []) as unknown as NewsRow[];
+  return rows.filter((row) => row.published_at !== null).map(toNewsSummary);
+}
+
+/**
  * 見出しと要約からニュースを探す。
  *
  * 本文（body）は対象にしていない。件数が増えたときに重くなるのと、

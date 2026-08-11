@@ -54,8 +54,37 @@ export type NewsSummary = {
   sourceName: string | null;
 };
 
+/** 学校詳細ページで使う。一覧の情報に、詳細でだけ必要な項目を足したもの。 */
+export type SchoolDetail = SchoolSummary & {
+  description: string | null;
+  websiteUrl: string | null;
+  foundedYear: number | null;
+  /** 「県岐商」のような通称。検索と、詳細ページでの表記ゆれ案内に使う */
+  nameAliases: string[];
+};
+
 export type PhenomenonLevel = "koshien" | "prefectural" | "regional";
 export type Season = "spring" | "summer" | "autumn";
+
+/** 甲子園出場歴の1行 */
+export type Championship = {
+  id: string;
+  year: number;
+  season: Season;
+  result: string | null;
+  wins: number | null;
+  losses: number | null;
+  note: string | null;
+};
+
+/** 最近の戦績の1行 */
+export type SchoolRecord = {
+  id: string;
+  year: number;
+  tournamentName: string;
+  result: string | null;
+  note: string | null;
+};
 
 /** 公立旋風。トップの注目枠で使う */
 export type PhenomenonSummary = {

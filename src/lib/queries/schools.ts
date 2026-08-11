@@ -1,8 +1,19 @@
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { escapeLikePattern, throwIfError, toImageRef, toPrefectureRef } from "@/lib/queries/shared";
 import { PREFECTURE_BY_SLUG } from "@/lib/constants";
-import type { SchoolCountRow, SchoolRow } from "@/types/database";
-import type { SchoolSummary } from "@/types/app";
+import type {
+  ChampionshipRow,
+  SchoolCountRow,
+  SchoolDetailRow,
+  SchoolRecordRow,
+  SchoolRow,
+} from "@/types/database";
+import type {
+  Championship,
+  SchoolDetail,
+  SchoolRecord,
+  SchoolSummary,
+} from "@/types/app";
 
 const SCHOOL_SUMMARY_SELECT = `
   id, slug, name, official_name, city, establishment, school_kind,
@@ -49,6 +60,122 @@ export async function getFeaturedSchools(limit = 3): Promise<SchoolSummary[]> {
   throwIfError(error, "注目校の取得");
 
   return ((data ?? []) as unknown as SchoolRow[]).map(toSchoolSummary);
+}
+
+/** 詳細ページ用。一覧の列に、詳細でだけ使う列を足す。 */
+const SCHOOL_DETAIL_SELECT = `
+  ${SCHOOL_SUMMARY_SELECT},
+  description, website_url, founded_year, name_aliases
+`;
+
+/** slug から学校1件を取得する。見つからなければ null（呼び出し側で404にする）。 */
+export async function getSchoolBySlug(
+  slug: string,
+): Promise<SchoolDetail | null> {
+  const supabase = createSupabaseServerClient();
+
+  const { data, error } = await supabase
+    .from("schools")
+    .select(SCHOOL_DETAIL_SELECT)
+    .eq("slug", slug)
+    .maybeSingle();
+
+  throwIfError(error, "学校情報の取得");
+  if (!data) return null;
+
+  const row = data as unknown as SchoolDetailRow;
+  return {
+    ...toSchoolSummary(row),
+    description: row.description,
+    websiteUrl: row.website_url,
+    foundedYear: row.founded_year,
+    nameAliases: row.name_aliases ?? [],
+  };
+}
+
+/** 甲子園出場歴。新しい年が上。 */
+export async function getSchoolChampionships(
+  schoolId: string,
+): Promise<Championship[]> {
+  const supabase = createSupabaseServerClient();
+
+  const { data, error } = await supabase
+    .from("school_championships")
+    .select("id, year, season, result, wins, losses, note")
+    .eq("school_id", schoolId)
+    .order("year", { ascending: false });
+
+  throwIfError(error, "甲子園出場歴の取得");
+
+  return ((data ?? []) as unknown as ChampionshipRow[]).map((row) => ({
+    id: row.id,
+    year: row.year,
+    season: row.season,
+    result: row.result,
+    wins: row.wins,
+    losses: row.losses,
+    note: row.note,
+  }));
+}
+
+/** 最近の戦績。新しい年が上。 */
+export async function getSchoolRecords(
+  schoolId: string,
+  limit = 12,
+): Promise<SchoolRecord[]> {
+  const supabase = createSupabaseServerClient();
+
+  const { data, error } = await supabase
+    .from("school_records")
+    .select("id, year, tournament_name, result, note")
+    .eq("school_id", schoolId)
+    .order("year", { ascending: false })
+    .limit(limit);
+
+  throwIfError(error, "戦績の取得");
+
+  return ((data ?? []) as unknown as SchoolRecordRow[]).map((row) => ({
+    id: row.id,
+    year: row.year,
+    tournamentName: row.tournament_name,
+    result: row.result,
+    note: row.note,
+  }));
+}
+
+/** 同じ都道府県の他の学校。回遊導線に使う（要件23）。 */
+export async function getRelatedSchools(
+  prefectureSlug: string,
+  excludeSchoolId: string,
+  limit = 4,
+): Promise<SchoolSummary[]> {
+  const prefecture = PREFECTURE_BY_SLUG.get(prefectureSlug);
+  if (!prefecture) return [];
+
+  const supabase = createSupabaseServerClient();
+
+  const { data, error } = await supabase
+    .from("schools")
+    .select(SCHOOL_SUMMARY_SELECT)
+    .eq("prefecture_id", prefecture.id)
+    .neq("id", excludeSchoolId)
+    .order("name", { ascending: true })
+    .limit(limit);
+
+  throwIfError(error, "同じ都道府県の学校の取得");
+
+  return ((data ?? []) as unknown as SchoolRow[]).map(toSchoolSummary);
+}
+
+/** generateStaticParams 用。公開済みの学校slugを全部返す。 */
+export async function getAllSchoolSlugs(): Promise<string[]> {
+  const supabase = createSupabaseServerClient();
+
+  const { data, error } = await supabase.from("schools").select("slug");
+
+  throwIfError(error, "学校slugの取得");
+
+  return ((data ?? []) as { slug: string }[]).map((row) => row.slug);
 }
 
 export type SchoolSearchParams = {

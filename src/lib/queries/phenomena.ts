@@ -33,6 +33,37 @@ function toPhenomenonSummary(row: PhenomenonRow): PhenomenonSummary {
 }
 
 /**
+ * ある学校が関わった公立旋風。
+ *
+ * !inner + eq で中間テーブルを絞ると、埋め込みで返る phenomenon_schools も
+ * その学校の行だけになる。結果として schoolName はその学校の名前になる。
+ */
+export async function getPhenomenaBySchool(
+  schoolId: string,
+  limit = 6,
+): Promise<PhenomenonSummary[]> {
+  const supabase = createSupabaseServerClient();
+
+  const { data, error } = await supabase
+    .from("phenomena")
+    .select(
+      `
+      id, slug, title, year, season, level, badge,
+      image_url, image_credit, image_source_url,
+      prefecture:prefectures ( name, slug ),
+      phenomenon_schools!inner ( role, school_id, schools ( name ) )
+    `,
+    )
+    .eq("phenomenon_schools.school_id", schoolId)
+    .order("year", { ascending: false })
+    .limit(limit);
+
+  throwIfError(error, "関連する公立旋風の取得");
+
+  return ((data ?? []) as unknown as PhenomenonRow[]).map(toPhenomenonSummary);
+}
+
+/**
  * トップページの注目枠。
  * highlight_rank が入っているものだけを、その順で返す。
  */

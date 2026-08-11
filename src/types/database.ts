@@ -48,6 +48,31 @@ export type SchoolRow = ImageColumns & {
   prefecture: PrefectureJoin;
 };
 
+export type SchoolDetailRow = SchoolRow & {
+  description: string | null;
+  website_url: string | null;
+  founded_year: number | null;
+  name_aliases: string[] | null;
+};
+
+export type ChampionshipRow = {
+  id: string;
+  year: number;
+  season: Season;
+  result: string | null;
+  wins: number | null;
+  losses: number | null;
+  note: string | null;
+};
+
+export type SchoolRecordRow = {
+  id: string;
+  year: number;
+  tournament_name: string;
+  result: string | null;
+  note: string | null;
+};
+
 export type PhenomenonRow = ImageColumns & {
   id: string;
   slug: string;

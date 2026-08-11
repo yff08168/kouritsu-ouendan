@@ -5,7 +5,7 @@ import { Container } from "@/components/layout/Container";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { Pagination } from "@/components/common/Pagination";
 import { SchoolList } from "@/components/schools/SchoolList";
-import { PrefectureSelector } from "@/components/schools/PrefectureSelector";
+import { PrefectureMap } from "@/components/schools/PrefectureMap";
 import { SearchBar } from "@/components/common/SearchBar";
 import { AdSlot } from "@/components/ads/AdSlot";
 
@@ -121,14 +121,14 @@ export default async function SchoolsPage({ searchParams }: Props) {
         <h2 id="prefecture-filter" className="text-sm font-bold text-navy-800">
           都道府県で絞り込む
         </h2>
-        <PrefectureSelector
-          groupByRegion
+        <PrefectureMap
           counts={counts}
           activeSlug={prefectureSlug}
           buildHref={(slug) =>
+            // 選択中の県をもう一度押したら絞り込みを解除する
             buildUrl({ q: keyword, pref: slug === prefectureSlug ? undefined : slug })
           }
-          className="mt-3"
+          className="mt-4"
         />
       </section>
 

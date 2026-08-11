@@ -1,5 +1,6 @@
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { throwIfError, toImageRef, toPrefectureRef } from "@/lib/queries/shared";
+import { PREFECTURE_BY_SLUG } from "@/lib/constants";
 import type { PhenomenonRow } from "@/types/database";
 import type { PhenomenonSummary } from "@/types/app";
 
@@ -59,6 +60,28 @@ export async function getPhenomenaBySchool(
     .limit(limit);
 
   throwIfError(error, "関連する公立旋風の取得");
+
+  return ((data ?? []) as unknown as PhenomenonRow[]).map(toPhenomenonSummary);
+}
+
+/** ある都道府県の公立旋風 */
+export async function getPhenomenaByPrefecture(
+  prefectureSlug: string,
+  limit = 6,
+): Promise<PhenomenonSummary[]> {
+  const prefecture = PREFECTURE_BY_SLUG.get(prefectureSlug);
+  if (!prefecture) return [];
+
+  const supabase = createSupabaseServerClient();
+
+  const { data, error } = await supabase
+    .from("phenomena")
+    .select(PHENOMENON_SUMMARY_SELECT)
+    .eq("prefecture_id", prefecture.id)
+    .order("year", { ascending: false })
+    .limit(limit);
+
+  throwIfError(error, "都道府県の公立旋風の取得");
 
   return ((data ?? []) as unknown as PhenomenonRow[]).map(toPhenomenonSummary);
 }

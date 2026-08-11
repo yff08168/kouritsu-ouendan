@@ -8,7 +8,7 @@ import { XFollowCard } from "@/components/common/XFollowCard";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { NewsCard } from "@/components/news/NewsCard";
 import { SchoolCard } from "@/components/schools/SchoolCard";
-import { PrefectureSelector } from "@/components/schools/PrefectureSelector";
+import { PrefectureMap } from "@/components/schools/PrefectureMap";
 import { PhenomenonRanking } from "@/components/phenomenon/PhenomenonRanking";
 import { FeatureCard } from "@/components/features/FeatureCard";
 
@@ -82,7 +82,7 @@ export default async function HomePage() {
             <p className="mt-3 text-xs font-medium text-ink-muted">
               都道府県から探す
             </p>
-            <PrefectureSelector counts={prefectureCounts} className="mt-2" />
+            <PrefectureMap counts={prefectureCounts} className="mt-2" />
             <Link
               href="/schools"
               className="mt-4 flex min-h-11 items-center justify-center gap-2 rounded-lg bg-navy-800 px-4 text-sm font-bold text-white hover:bg-navy-700"

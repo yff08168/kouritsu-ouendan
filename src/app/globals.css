@@ -76,6 +76,35 @@ li {
 }
 
 /*
+ * 都道府県のタイル地図。
+ *
+ * スマートフォンでは4列の折り返しグリッド、sm以上で日本の形に並べ替える。
+ * マス目の座標は各要素の --map-col / --map-row から読む。
+ * 表示切り替えのためにマークアップを二重に持たないのは、
+ * 同じリンクが読み上げで2回読まれるのを避けるため。
+ */
+.prefecture-map {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.375rem;
+}
+
+@media (min-width: 640px) {
+  .prefecture-map {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: repeat(14, minmax(0, auto));
+    gap: 0.25rem;
+    max-width: 40rem;
+    margin-inline: auto;
+  }
+
+  .prefecture-map > li {
+    grid-column: var(--map-col);
+    grid-row: var(--map-row);
+  }
+}
+
+/*
  * 記事本文（Markdown）のスタイル。
  * @tailwindcss/typography を入れずにここで完結させている。
  * 見出し・段落・引用など、記事で使う要素はこれで足りるため。

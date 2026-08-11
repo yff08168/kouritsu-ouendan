@@ -23,6 +23,22 @@ alter table public.school_records       enable row level security;
 
 
 -- ------------------------------------------------------------
+-- 既存ポリシーの削除
+-- このファイルを2回実行してもエラーにならないようにするため。
+-- （create policy には if not exists が無いため、先に落としておく）
+-- ------------------------------------------------------------
+drop policy if exists "prefectures are public"            on public.prefectures;
+drop policy if exists "published schools are public"      on public.schools;
+drop policy if exists "published news are public"         on public.news;
+drop policy if exists "published phenomena are public"    on public.phenomena;
+drop policy if exists "published features are public"     on public.features;
+drop policy if exists "news_schools follow parents"       on public.news_schools;
+drop policy if exists "phenomenon_schools follow parents" on public.phenomenon_schools;
+drop policy if exists "championships follow school"       on public.school_championships;
+drop policy if exists "records follow school"             on public.school_records;
+
+
+-- ------------------------------------------------------------
 -- マスタ: 誰でも読める
 -- ------------------------------------------------------------
 create policy "prefectures are public"

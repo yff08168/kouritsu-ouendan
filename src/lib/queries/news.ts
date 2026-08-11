@@ -5,8 +5,9 @@ import {
   toImageRef,
   toPrefectureRef,
 } from "@/lib/queries/shared";
-import type { NewsRow } from "@/types/database";
-import type { NewsSummary } from "@/types/app";
+import { PREFECTURE_BY_SLUG, type NewsCategory } from "@/lib/constants";
+import type { NewsDetailRow, NewsRow } from "@/types/database";
+import type { NewsDetail, NewsSummary } from "@/types/app";
 
 /**
  * 一覧で使う列。
@@ -45,6 +46,120 @@ export async function getLatestNews(limit = 6): Promise<NewsSummary[]> {
     .limit(limit);
 
   throwIfError(error, "ニュースの取得");
+
+  const rows = (data ?? []) as unknown as NewsRow[];
+  return rows.filter((row) => row.published_at !== null).map(toNewsSummary);
+}
+
+const NEWS_DETAIL_SELECT = `
+  ${NEWS_SUMMARY_SELECT},
+  body, source_url, seo_title, seo_description
+`;
+
+export type NewsListParams = {
+  category?: NewsCategory;
+  prefectureSlug?: string;
+  page?: number;
+  perPage?: number;
+};
+
+export type NewsListResult = {
+  news: NewsSummary[];
+  total: number;
+  page: number;
+  totalPages: number;
+};
+
+/** ニュース一覧。カテゴリ・都道府県で絞り込める。 */
+export async function getNewsList({
+  category,
+  prefectureSlug,
+  page = 1,
+  perPage = 20,
+}: NewsListParams): Promise<NewsListResult> {
+  const supabase = createSupabaseServerClient();
+  const currentPage = Math.max(1, Math.floor(page));
+  const from = (currentPage - 1) * perPage;
+
+  let query = supabase
+    .from("news")
+    .select(NEWS_SUMMARY_SELECT, { count: "exact" });
+
+  if (category) {
+    query = query.eq("category", category);
+  }
+  if (prefectureSlug) {
+    const prefecture = PREFECTURE_BY_SLUG.get(prefectureSlug);
+    query = query.eq("prefecture_id", prefecture?.id ?? -1);
+  }
+
+  const { data, error, count } = await query
+    .order("published_at", { ascending: false })
+    .range(from, from + perPage - 1);
+
+  throwIfError(error, "ニュース一覧の取得");
+
+  const rows = (data ?? []) as unknown as NewsRow[];
+  const total = count ?? 0;
+
+  return {
+    news: rows.filter((row) => row.published_at !== null).map(toNewsSummary),
+    total,
+    page: currentPage,
+    totalPages: Math.max(1, Math.ceil(total / perPage)),
+  };
+}
+
+/** slug から1件。見つからなければ null。 */
+export async function getNewsBySlug(slug: string): Promise<NewsDetail | null> {
+  const supabase = createSupabaseServerClient();
+
+  const { data, error } = await supabase
+    .from("news")
+    .select(NEWS_DETAIL_SELECT)
+    .eq("slug", slug)
+    .maybeSingle();
+
+  throwIfError(error, "ニュースの取得");
+  if (!data) return null;
+
+  const row = data as unknown as NewsDetailRow;
+  if (row.published_at === null) return null;
+
+  return {
+    ...toNewsSummary(row),
+    body: row.body,
+    sourceUrl: row.source_url,
+    seoTitle: row.seo_title,
+    seoDescription: row.seo_description,
+  };
+}
+
+/** generateStaticParams 用 */
+export async function getAllNewsSlugs(): Promise<string[]> {
+  const supabase = createSupabaseServerClient();
+  const { data, error } = await supabase.from("news").select("slug");
+  throwIfError(error, "ニュースslugの取得");
+  return ((data ?? []) as { slug: string }[]).map((row) => row.slug);
+}
+
+/** 記事下の「他のニュース」。同じカテゴリを優先して出す。 */
+export async function getRelatedNews(
+  currentSlug: string,
+  category: NewsCategory,
+  limit = 4,
+): Promise<NewsSummary[]> {
+  const supabase = createSupabaseServerClient();
+
+  const { data, error } = await supabase
+    .from("news")
+    .select(NEWS_SUMMARY_SELECT)
+    .eq("category", category)
+    .neq("slug", currentSlug)
+    .order("published_at", { ascending: false })
+    .limit(limit);
+
+  throwIfError(error, "関連ニュースの取得");
 
   const rows = (data ?? []) as unknown as NewsRow[];
   return rows.filter((row) => row.published_at !== null).map(toNewsSummary);

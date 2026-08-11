@@ -167,6 +167,27 @@ export async function getRelatedSchools(
   return ((data ?? []) as unknown as SchoolRow[]).map(toSchoolSummary);
 }
 
+/**
+ * あるニュースに関連づけられた学校。
+ * 記事から学校ページへの回遊導線に使う（要件34）。
+ */
+export async function getSchoolsByNews(
+  newsId: string,
+  limit = 6,
+): Promise<SchoolSummary[]> {
+  const supabase = createSupabaseServerClient();
+
+  const { data, error } = await supabase
+    .from("schools")
+    .select(`${SCHOOL_SUMMARY_SELECT}, news_schools!inner ( news_id )`)
+    .eq("news_schools.news_id", newsId)
+    .limit(limit);
+
+  throwIfError(error, "関連する学校の取得");
+
+  return ((data ?? []) as unknown as SchoolRow[]).map(toSchoolSummary);
+}
+
 /** generateStaticParams 用。公開済みの学校slugを全部返す。 */
 export async function getAllSchoolSlugs(): Promise<string[]> {
   const supabase = createSupabaseServerClient();

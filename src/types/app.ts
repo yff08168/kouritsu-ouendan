@@ -54,6 +54,19 @@ export type NewsSummary = {
   sourceName: string | null;
 };
 
+/**
+ * ニュース詳細。
+ * body には引用元の全文を入れない運用（見出し＋自作の要約＋出典リンクまで）。
+ */
+export type NewsDetail = NewsSummary & {
+  /** Markdown。生HTMLは描画しない */
+  body: string | null;
+  /** 元記事へのリンク */
+  sourceUrl: string | null;
+  seoTitle: string | null;
+  seoDescription: string | null;
+};
+
 /** 学校詳細ページで使う。一覧の情報に、詳細でだけ必要な項目を足したもの。 */
 export type SchoolDetail = SchoolSummary & {
   description: string | null;

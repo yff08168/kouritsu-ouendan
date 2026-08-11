@@ -48,6 +48,13 @@ export type SchoolRow = ImageColumns & {
   prefecture: PrefectureJoin;
 };
 
+export type NewsDetailRow = NewsRow & {
+  body: string | null;
+  source_url: string | null;
+  seo_title: string | null;
+  seo_description: string | null;
+};
+
 export type SchoolDetailRow = SchoolRow & {
   description: string | null;
   website_url: string | null;

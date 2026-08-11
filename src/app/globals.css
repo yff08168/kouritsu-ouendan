@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+/*
+ * 公立応援団 ブランドトークン
+ * メイン: 深いネイビー / アクセント: 明るいオレンジ
+ * オレンジは「バッジ・下線・CTAの縁取り」など小面積のみに使う。
+ */
+@theme {
+  /* ネイビー系（メイン） */
+  --color-navy-900: #081a30;
+  --color-navy-800: #0f2747; /* ブランドメイン */
+  --color-navy-700: #1a3a63;
+  --color-navy-600: #27507f;
+  --color-navy-300: #8fa5c0;
+  --color-navy-100: #e5ebf3;
+  --color-navy-50: #f2f6fb;
+
+  /* オレンジ系（アクセント） */
+  --color-accent-700: #c96f14;
+  --color-accent-600: #e07d1c;
+  --color-accent-500: #f28c28; /* ブランドアクセント */
+  --color-accent-100: #fdeedf;
+  --color-accent-50: #fef7f0;
+
+  /* 面・線・文字 */
+  --color-surface: #f7f8fa;
+  --color-line: #e3e7ec;
+  --color-line-strong: #cbd3dd;
+  --color-ink: #16202f;
+  --color-ink-muted: #5a6675;
+  --color-ink-faint: #8b95a3;
+
+  /* タイポグラフィ */
+  --font-sans: "Inter", "Noto Sans JP", "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", "Yu Gothic Medium", "Yu Gothic", Meiryo, sans-serif;
+
+  /* レイアウト */
+  --spacing-header: 4rem;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  /* 日本語は行間を広めにとると可読性が上がる */
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 見出しは行間を詰める（日本語の見出しは行間が空きすぎると締まらない） */
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+/* キーボード操作時のフォーカスを明示（要件27） */
+:focus-visible {
+  outline: 2px solid var(--color-accent-500);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* 日本語の行折り返しを自然にする */
+p,
+li {
+  overflow-wrap: anywhere;
+  word-break: normal;
+  line-break: strict;
+}

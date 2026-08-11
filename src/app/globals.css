@@ -15,7 +15,17 @@
   --color-navy-100: #e5ebf3;
   --color-navy-50: #f2f6fb;
 
-  /* オレンジ系（アクセント） */
+  /*
+   * オレンジ系（アクセント）
+   *
+   * 注意: オレンジは白地では原理的にコントラストが取れない。
+   *   accent-500 を白地の文字に使うと 2.45:1（基準は4.5:1）。
+   * そのため用途を分けている。
+   *   - accent-500 : 面（バッジ背景）・濃紺地の上の文字・装飾
+   *   - accent-800 : 白地や薄い地の上に置く「文字」専用（5.65:1）
+   * オレンジ地に白文字は使わない。濃紺文字（navy-900）を載せる。
+   */
+  --color-accent-800: #9c550d;
   --color-accent-700: #c96f14;
   --color-accent-600: #e07d1c;
   --color-accent-500: #f28c28; /* ブランドアクセント */
@@ -28,7 +38,8 @@
   --color-line-strong: #cbd3dd;
   --color-ink: #16202f;
   --color-ink-muted: #5a6675;
-  --color-ink-faint: #8b95a3;
+  /* 白地・surface地の両方で4.5:1を満たす最も薄い灰色 */
+  --color-ink-faint: #646e7b;
 
   /* タイポグラフィ */
   --font-sans: "Inter", "Noto Sans JP", "Hiragino Kaku Gothic ProN",
@@ -140,7 +151,8 @@ li {
 }
 
 .markdown a:hover {
-  color: var(--color-accent-600);
+  /* ホバー時も文字なので、白地で4.5:1を満たす濃いオレンジを使う */
+  color: var(--color-accent-800);
 }
 
 .markdown ul,

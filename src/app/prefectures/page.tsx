@@ -68,7 +68,7 @@ export default async function PrefecturesPage() {
                     >
                       {p.name}
                       {(counts[p.slug] ?? 0) > 0 && (
-                        <span className="text-xs text-accent-600">
+                        <span className="text-xs text-accent-800">
                           {counts[p.slug]}校
                         </span>
                       )}

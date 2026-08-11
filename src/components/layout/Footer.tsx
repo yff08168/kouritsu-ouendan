@@ -80,7 +80,7 @@ export function Footer() {
               <li className="col-span-2">
                 <Link
                   href="/prefectures"
-                  className="text-sm font-medium text-accent-500 hover:underline"
+                  className="inline-flex min-h-6 items-center py-1 text-sm font-medium text-accent-500 hover:underline"
                 >
                   47都道府県すべて見る
                 </Link>

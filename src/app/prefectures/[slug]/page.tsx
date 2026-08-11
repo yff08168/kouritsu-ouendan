@@ -63,7 +63,7 @@ export default async function PrefectureDetailPage({ params }: Props) {
 
       <header className="rounded-xl border border-line bg-white p-5 sm:p-7">
         {/* 読み仮名は見出しの外に置く。h1の中に入れると「…野球しまね」と読み上げられるため */}
-        <p className="flex flex-wrap items-baseline gap-2 text-xs font-bold text-accent-500">
+        <p className="flex flex-wrap items-baseline gap-2 text-xs font-bold text-accent-800">
           {prefecture.region}
           <span className="font-normal text-ink-faint">
             {prefecture.nameKana}

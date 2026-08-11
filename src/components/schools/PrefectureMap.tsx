@@ -78,7 +78,7 @@ export function PrefectureMap({
                   aria-hidden="true"
                   className={cn(
                     "text-[0.625rem] tabular-nums sm:text-[0.5625rem]",
-                    isActive ? "text-navy-100" : "text-accent-600",
+                    isActive ? "text-navy-100" : "text-accent-800",
                   )}
                 >
                   {count}

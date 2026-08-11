@@ -43,7 +43,7 @@ export function PhenomenonRanking({
             >
               <span
                 aria-hidden="true"
-                className="grid w-5 shrink-0 place-items-start pt-0.5 text-lg font-bold leading-none text-accent-500"
+                className="grid w-5 shrink-0 place-items-start pt-0.5 text-lg font-bold leading-none text-accent-800"
               >
                 {index + 1}
               </span>

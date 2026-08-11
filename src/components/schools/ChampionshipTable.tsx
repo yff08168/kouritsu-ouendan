@@ -49,7 +49,7 @@ export function ChampionshipTable({ items }: { items: Championship[] }) {
                   className={cn(
                     "font-medium",
                     item.result && HIGHLIGHT_RESULTS.includes(item.result)
-                      ? "text-accent-600"
+                      ? "text-accent-800"
                       : "text-ink",
                   )}
                 >

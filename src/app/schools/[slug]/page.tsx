@@ -226,10 +226,15 @@ export default async function SchoolDetailPage({ params }: Props) {
       )}
 
       {/* ------- 戦績 ------- */}
+      {/*
+        min-w-0 が要る。グリッドの子要素は既定で min-width:auto のため、
+        中の表（min-w-[26rem]）が親を押し広げてしまい、
+        表側の overflow-x-auto が効かずページごと横スクロールしてしまう。
+      */}
       <div className="mt-4 grid gap-4 lg:grid-cols-2">
         <section
           aria-labelledby="koshien"
-          className="rounded-xl border border-line bg-white p-5"
+          className="min-w-0 rounded-xl border border-line bg-white p-5"
         >
           <SectionHeading
             id="koshien"
@@ -244,7 +249,7 @@ export default async function SchoolDetailPage({ params }: Props) {
 
         <section
           aria-labelledby="records"
-          className="rounded-xl border border-line bg-white p-5"
+          className="min-w-0 rounded-xl border border-line bg-white p-5"
         >
           <SectionHeading id="records" title="最近の戦績" />
           <div className="mt-3">

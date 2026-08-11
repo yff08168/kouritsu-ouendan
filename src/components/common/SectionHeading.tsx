@@ -64,7 +64,8 @@ export function SectionHeading({
         <Link
           href={moreHref}
           className={cn(
-            "ml-auto inline-flex shrink-0 items-center gap-0.5 text-xs font-medium hover:underline",
+            // 上下の余白でタップ領域を確保する（文字の高さだけだと16pxしかない）
+            "-my-1.5 ml-auto inline-flex shrink-0 items-center gap-0.5 py-1.5 text-xs font-medium hover:underline",
             onDark ? "text-navy-100" : "text-ink-muted hover:text-navy-800",
           )}
         >

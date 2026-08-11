@@ -37,7 +37,7 @@ export function SourceNote({ sourceName, sourceUrl }: Props) {
                 href={sourceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 break-all text-navy-700 underline underline-offset-2 hover:text-accent-600"
+                className="inline-flex items-center gap-1 break-all text-navy-700 underline underline-offset-2 hover:text-accent-800"
               >
                 元記事を読む
                 <ExternalLink size={12} aria-hidden="true" className="shrink-0" />

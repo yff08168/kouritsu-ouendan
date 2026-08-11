@@ -37,6 +37,22 @@ export const ESTABLISHMENTS = {
 
 export type Establishment = keyof typeof ESTABLISHMENTS;
 
+/**
+ * 設置区分の表示ラベル。
+ * 都道府県立は「県立」で一律にせず、北海道は道立、東京は都立、
+ * 大阪・京都は府立と表記する（実際の校名表記に合わせるため）。
+ */
+export function establishmentLabel(
+  establishment: Establishment,
+  prefectureName: string,
+): string {
+  if (establishment !== "prefectural") return ESTABLISHMENTS[establishment];
+  if (prefectureName === "北海道") return "道立";
+  if (prefectureName === "東京") return "都立";
+  if (prefectureName === "大阪" || prefectureName === "京都") return "府立";
+  return "県立";
+}
+
 /** サイトの収録対象（私立は対戦相手データとしてのみ保持する） */
 export const TARGET_ESTABLISHMENTS: Establishment[] = [
   "prefectural",

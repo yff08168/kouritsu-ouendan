@@ -108,6 +108,13 @@ export type FeatureRow = ImageColumns & {
   category: FeatureCategory;
 };
 
+export type FeatureDetailRow = FeatureRow & {
+  body: string | null;
+  published_at: string | null;
+  seo_title: string | null;
+  seo_description: string | null;
+};
+
 /** 0003 で作ったビュー */
 export type SchoolCountRow = {
   prefecture_slug: string;

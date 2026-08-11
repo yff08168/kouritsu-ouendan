@@ -17,6 +17,29 @@ export const SITE = {
 } as const;
 
 /**
+ * 運営者情報。
+ *
+ * ★ 公開前に必ず設定すること ★
+ * 未設定のままだと /about と /contact に「未設定」と表示される。
+ * 実在しない名前や住所を仮に入れることはしない（虚偽の運営者情報になるため）。
+ *
+ * 将来 Google AdSense を申請する場合、運営者情報・問い合わせ先・
+ * プライバシーポリシーの3点は審査の前提になる。
+ */
+export const OPERATOR: {
+  /** 例: 「公立応援団 編集部」、個人名、屋号など */
+  name: string | null;
+  /** 問い合わせ用のメールアドレス。公開したくない場合は null のままでよい */
+  contactEmail: string | null;
+  /** サイト開設年 */
+  establishedYear: number;
+} = {
+  name: null,
+  contactEmail: null,
+  establishedYear: 2026,
+};
+
+/**
  * 「公立旋風」の呼び名。
  *
  * このサイト独自の看板コンテンツだが、高校野球に詳しくない人には

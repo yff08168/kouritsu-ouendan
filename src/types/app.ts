@@ -137,3 +137,11 @@ export type FeatureSummary = {
   category: FeatureCategory;
   image: ImageRef | null;
 };
+
+export type FeatureDetail = FeatureSummary & {
+  /** Markdown。生HTMLは描画しない */
+  body: string | null;
+  publishedAt: string | null;
+  seoTitle: string | null;
+  seoDescription: string | null;
+};

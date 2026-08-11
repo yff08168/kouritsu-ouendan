@@ -19,6 +19,8 @@ import {
   getPhenomenonBySlug,
 } from "@/lib/queries/phenomena";
 import { getSchoolsByPhenomenon } from "@/lib/queries/schools";
+import { JsonLd } from "@/components/common/JsonLd";
+import { phenomenonJsonLd } from "@/lib/seo";
 import { PHENOMENON, PHENOMENON_LEVELS, SEASONS } from "@/lib/constants";
 
 export const revalidate = 3600;
@@ -65,6 +67,7 @@ export default async function PhenomenonDetailPage({ params }: Props) {
 
   return (
     <Container size="narrow" className="pb-4">
+      <JsonLd data={phenomenonJsonLd(item)} />
       <Breadcrumb
         items={[
           { label: PHENOMENON.label, href: "/phenomenon" },

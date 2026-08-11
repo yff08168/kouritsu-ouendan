@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { JsonLd } from "@/components/common/JsonLd";
+import { breadcrumbJsonLd } from "@/lib/seo";
 
 export type Crumb = {
   label: string;
@@ -7,10 +9,15 @@ export type Crumb = {
   href?: string;
 };
 
-/** パンくず。回遊導線とSEOの両方で効く（要件23）。 */
+/**
+ * パンくず。回遊導線とSEOの両方で効く（要件23）。
+ * 構造化データもここで一緒に出すので、パンくずを置いたページは
+ * 自動的に BreadcrumbList を持つ。個別に書き足す必要はない。
+ */
 export function Breadcrumb({ items }: { items: Crumb[] }) {
   return (
     <nav aria-label="パンくずリスト" className="py-3">
+      <JsonLd data={breadcrumbJsonLd(items)} />
       <ol className="flex flex-wrap items-center gap-1 text-xs text-ink-muted">
         <li className="flex items-center gap-1">
           <Link href="/" className="hover:text-navy-800 hover:underline">

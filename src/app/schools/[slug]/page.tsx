@@ -32,6 +32,8 @@ import {
 } from "@/lib/queries/schools";
 import { getNewsBySchool } from "@/lib/queries/news";
 import { getPhenomenaBySchool } from "@/lib/queries/phenomena";
+import { JsonLd } from "@/components/common/JsonLd";
+import { schoolJsonLd } from "@/lib/seo";
 import { ESTABLISHMENTS, SCHOOL_KINDS, establishmentLabel } from "@/lib/constants";
 
 // 学校情報は頻繁には変わらないので長めに保つ
@@ -95,6 +97,7 @@ export default async function SchoolDetailPage({ params }: Props) {
 
   return (
     <Container className="pb-4">
+      <JsonLd data={schoolJsonLd(school)} />
       <Breadcrumb
         items={[
           { label: "公立高校", href: "/schools" },

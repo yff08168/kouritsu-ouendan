@@ -16,6 +16,8 @@ import {
   getFeatureBySlug,
   getRelatedFeatures,
 } from "@/lib/queries/features";
+import { JsonLd } from "@/components/common/JsonLd";
+import { articleJsonLd } from "@/lib/seo";
 import { FEATURE_CATEGORIES } from "@/lib/constants";
 import { formatDateLong, toDateAttr } from "@/lib/utils";
 
@@ -60,6 +62,15 @@ export default async function FeatureDetailPage({ params }: Props) {
 
   return (
     <Container size="narrow" className="pb-4">
+      <JsonLd
+        data={articleJsonLd({
+          title: feature.title,
+          description: feature.seoDescription ?? feature.subtitle,
+          path: `/features/${feature.slug}`,
+          publishedAt: feature.publishedAt,
+          imageUrl: feature.image?.url ?? null,
+        })}
+      />
       <Breadcrumb
         items={[
           { label: "特集", href: "/features" },

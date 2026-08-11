@@ -20,6 +20,8 @@ import {
   getRelatedNews,
 } from "@/lib/queries/news";
 import { getSchoolsByNews } from "@/lib/queries/schools";
+import { JsonLd } from "@/components/common/JsonLd";
+import { newsArticleJsonLd } from "@/lib/seo";
 import { NEWS_CATEGORIES } from "@/lib/constants";
 import { formatDateLong, toDateAttr } from "@/lib/utils";
 
@@ -69,6 +71,7 @@ export default async function NewsDetailPage({ params }: Props) {
 
   return (
     <Container size="narrow" className="pb-4">
+      <JsonLd data={newsArticleJsonLd(news)} />
       <Breadcrumb
         items={[
           { label: "ニュース", href: "/news" },

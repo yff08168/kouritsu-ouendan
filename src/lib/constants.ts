@@ -9,8 +9,12 @@ export const SITE = {
   catchphrase: "公立高校野球が、もっと面白くなる。",
   description:
     "全国の公立高校野球を応援する人のためのサイト。ニュース、学校情報、戦績、歴史、そして公立旋風まで。公立高校野球の“今”を、ここに。",
-  // 本番ドメイン決定後に NEXT_PUBLIC_SITE_URL で上書きする
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  /*
+   * 既定値を本番ドメインにしてある。Vercel側で環境変数の設定を忘れても
+   * canonical と sitemap が localhost になってしまう事故を防ぐため。
+   * ローカル開発では .env.local の NEXT_PUBLIC_SITE_URL が上書きする。
+   */
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://kouritsu-ouendan.com",
   locale: "ja_JP",
   xHandle: "@kouritsu_ouendan",
   xUrl: "https://x.com/kouritsu_ouendan",

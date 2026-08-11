@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { SITE } from "@/lib/constants";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { JsonLd } from "@/components/common/JsonLd";
+import { websiteJsonLd } from "@/lib/seo";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -33,6 +35,8 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className="flex min-h-dvh flex-col">
+        {/* サイト全体を表す構造化データ。全ページに1回だけ出す */}
+        <JsonLd data={websiteJsonLd()} />
         {/* キーボード利用者がヘッダーを読み飛ばせるようにする（要件27） */}
         <a
           href="#main"

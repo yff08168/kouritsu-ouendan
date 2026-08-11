@@ -188,6 +188,24 @@ export async function getSchoolsByNews(
   return ((data ?? []) as unknown as SchoolRow[]).map(toSchoolSummary);
 }
 
+/** ある公立旋風に登場する学校 */
+export async function getSchoolsByPhenomenon(
+  phenomenonId: string,
+  limit = 6,
+): Promise<SchoolSummary[]> {
+  const supabase = createSupabaseServerClient();
+
+  const { data, error } = await supabase
+    .from("schools")
+    .select(`${SCHOOL_SUMMARY_SELECT}, phenomenon_schools!inner ( phenomenon_id )`)
+    .eq("phenomenon_schools.phenomenon_id", phenomenonId)
+    .limit(limit);
+
+  throwIfError(error, "登場する学校の取得");
+
+  return ((data ?? []) as unknown as SchoolRow[]).map(toSchoolSummary);
+}
+
 /** generateStaticParams 用。公開済みの学校slugを全部返す。 */
 export async function getAllSchoolSlugs(): Promise<string[]> {
   const supabase = createSupabaseServerClient();

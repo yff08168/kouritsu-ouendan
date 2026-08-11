@@ -16,11 +16,31 @@ export const SITE = {
   xUrl: "https://x.com/kouritsu_ouendan",
 } as const;
 
+/**
+ * 「公立旋風」の呼び名。
+ *
+ * このサイト独自の看板コンテンツだが、高校野球に詳しくない人には
+ * 何のページか伝わりにくい。名前だけを置かず、必ず説明を添えて出す。
+ *
+ * 呼び名を変えたくなったらここだけ直せば全ページに反映される。
+ * URL（/phenomenon）は変えないこと。一度公開したURLを変えると
+ * 検索結果と外部リンクが切れるため。
+ */
+export const PHENOMENON = {
+  /** ナビや見出しに出す短い名前 */
+  label: "公立旋風",
+  /** 見出しの下や一覧カードに添える一行説明 */
+  tagline: "公立高校が起こした快進撃の記録",
+  /** ページ冒頭で使う、もう少し詳しい説明 */
+  description:
+    "強豪私学がひしめく地方大会や甲子園で、公立高校が勝ち上がっていくこと。このサイトでは、その一つひとつを記録として残していきます。",
+} as const;
+
 /** ヘッダー / フッターの主要ナビゲーション */
 export const NAV = [
   { href: "/news", label: "ニュース" },
   { href: "/schools", label: "公立高校" },
-  { href: "/phenomenon", label: "公立旋風" },
+  { href: "/phenomenon", label: PHENOMENON.label },
   { href: "/features", label: "特集" },
   { href: "/prefectures", label: "都道府県" },
 ] as const;

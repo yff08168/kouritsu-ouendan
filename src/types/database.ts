@@ -95,6 +95,11 @@ export type PhenomenonRow = ImageColumns & {
     | null;
 };
 
+export type PhenomenonDetailRow = PhenomenonRow & {
+  summary: string | null;
+  body: string | null;
+};
+
 export type FeatureRow = ImageColumns & {
   id: string;
   slug: string;

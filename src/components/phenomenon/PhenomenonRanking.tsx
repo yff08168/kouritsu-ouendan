@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Flame } from "lucide-react";
-import { SEASONS } from "@/lib/constants";
+import { PHENOMENON, SEASONS } from "@/lib/constants";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { Thumbnail } from "@/components/common/Thumbnail";
 import { Badge } from "@/components/common/Badge";
@@ -22,13 +22,17 @@ export function PhenomenonRanking({
     >
       <SectionHeading
         id="phenomenon-heading"
-        title="公立旋風"
-        note="注目の公立高校"
+        title={PHENOMENON.label}
+        note={PHENOMENON.tagline}
         icon={<Flame size={18} />}
         moreHref="/phenomenon"
         tone="onDark"
-        className="mb-3"
+        className="mb-1"
       />
+      {/* 名前だけでは何のことか伝わらないため、狭い画面でも説明を出す */}
+      <p className="mb-3 text-[0.6875rem] text-navy-100/80 sm:hidden">
+        {PHENOMENON.tagline}
+      </p>
 
       <ol className="space-y-2">
         {phenomena.map((item, index) => (

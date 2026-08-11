@@ -115,6 +115,13 @@ export type PhenomenonSummary = {
   image: ImageRef | null;
 };
 
+/** 公立旋風の詳細 */
+export type PhenomenonDetail = PhenomenonSummary & {
+  summary: string | null;
+  /** Markdown。生HTMLは描画しない */
+  body: string | null;
+};
+
 export type FeatureCategory =
   | "guide"
   | "history"

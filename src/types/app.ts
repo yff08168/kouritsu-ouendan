@@ -29,7 +29,7 @@ export type SchoolSummary = {
   name: string;
   officialName: string;
   prefecture: PrefectureRef;
-  city: string;
+  city: string | null;
   establishment: Establishment;
   schoolKind: SchoolKind;
   /** 学校ページの見出しに使う一言 */
@@ -65,9 +65,9 @@ export type PhenomenonSummary = {
   year: number;
   season: Season;
   level: PhenomenonLevel;
-  /** 旋風を起こした代表校 */
-  schoolName: string;
-  prefecture: PrefectureRef;
+  /** 旋風を起こした代表校。関連校が未設定なら null */
+  schoolName: string | null;
+  prefecture: PrefectureRef | null;
   /** 「甲子園出場決定」「ベスト8進出」などの短いラベル */
   badge: string | null;
   image: ImageRef | null;
@@ -84,7 +84,7 @@ export type FeatureSummary = {
   id: string;
   slug: string;
   title: string;
-  subtitle: string;
+  subtitle: string | null;
   category: FeatureCategory;
   image: ImageRef | null;
 };

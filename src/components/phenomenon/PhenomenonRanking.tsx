@@ -47,11 +47,13 @@ export function PhenomenonRanking({
               <div className="min-w-0 flex-1">
                 <div className="flex flex-wrap items-center gap-1.5">
                   <span className="text-sm font-bold text-ink group-hover:underline">
-                    {item.schoolName}
+                    {item.schoolName ?? item.title}
                   </span>
-                  <span className="text-xs text-ink-muted">
-                    （{item.prefecture.name}）
-                  </span>
+                  {item.prefecture && (
+                    <span className="text-xs text-ink-muted">
+                      （{item.prefecture.name}）
+                    </span>
+                  )}
                   {item.badge && (
                     <Badge variant="accent">{item.badge}</Badge>
                   )}

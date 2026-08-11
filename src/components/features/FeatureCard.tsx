@@ -26,9 +26,11 @@ export function FeatureCard({ feature }: { feature: FeatureSummary }) {
             {feature.title}
           </Link>
         </h3>
-        <p className="mt-1 line-clamp-2 text-[0.6875rem] leading-relaxed text-white/80">
-          {feature.subtitle}
-        </p>
+        {feature.subtitle && (
+          <p className="mt-1 line-clamp-2 text-[0.6875rem] leading-relaxed text-white/80">
+            {feature.subtitle}
+          </p>
+        )}
       </div>
     </article>
   );

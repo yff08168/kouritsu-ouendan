@@ -30,9 +30,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      # v4 は実行環境が Node.js 20 で、GitHub が非推奨の警告を出す。
+      # v5 は Node.js 24 で動く。（下の node-version はスクリプトを動かす
+      # Node のバージョンで、アクション自体の実行環境とは別物）
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: "24"
           cache: npm

@@ -1,18 +1,18 @@
 import Link from "next/link";
-import { BookOpen, Newspaper, School, Search, Star } from "lucide-react";
+import { BookOpen, School, Search, Star } from "lucide-react";
 
 import { Container } from "@/components/layout/Container";
 import { Hero } from "@/components/layout/Hero";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { XFollowCard } from "@/components/common/XFollowCard";
 import { AdSlot } from "@/components/ads/AdSlot";
-import { NewsCard } from "@/components/news/NewsCard";
+import { LiveResultsCard } from "@/components/results/LiveResultsCard";
 import { SchoolCard } from "@/components/schools/SchoolCard";
 import { PrefectureMap } from "@/components/schools/PrefectureMap";
 import { PhenomenonRanking } from "@/components/phenomenon/PhenomenonRanking";
 import { FeatureCard } from "@/components/features/FeatureCard";
 
-import { getLatestNews } from "@/lib/queries/news";
+import { LIVE_RESULTS } from "@/lib/data/live-results";
 import {
   getFeaturedSchools,
   getSchoolCountByPrefecture,
@@ -24,9 +24,8 @@ import { getLatestFeatures } from "@/lib/queries/features";
 export const revalidate = 600;
 
 export default async function HomePage() {
-  const [news, phenomena, featuredSchools, prefectureCounts, features] =
+  const [phenomena, featuredSchools, prefectureCounts, features] =
     await Promise.all([
-      getLatestNews(5),
       getHighlightedPhenomena(3),
       getFeaturedSchools(3),
       getSchoolCountByPrefecture(),
@@ -48,26 +47,12 @@ export default async function HomePage() {
 
       <Container className="mt-4 sm:mt-5">
         <div className="grid gap-4 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
-          {/* 最新ニュース */}
-          <section
-            aria-labelledby="news-heading"
-            className="rounded-xl border border-line bg-white p-4 sm:p-5"
-          >
-            <SectionHeading
-              id="news-heading"
-              title="最新ニュース"
-              icon={<Newspaper size={18} />}
-              moreHref="/news"
-              moreLabel="一覧を見る"
-            />
-            <ul className="mt-1 divide-y divide-line">
-              {news.map((item) => (
-                <li key={item.id}>
-                  <NewsCard news={item} />
-                </li>
-              ))}
-            </ul>
-          </section>
+          {/*
+            結果速報。
+            DBのニュースではなく、Wikipediaから自動生成した試合結果を出す。
+            公立校が絡む試合だけに絞ってあるのがこのサイトの切り口。
+          */}
+          <LiveResultsCard results={LIVE_RESULTS} />
 
           {/* 注目の公立高校 */}
           <section

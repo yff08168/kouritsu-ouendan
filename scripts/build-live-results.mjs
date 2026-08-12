@@ -151,6 +151,8 @@ function parseRepresentatives(wikitext) {
  */
 function parseGames(wikitext) {
   const games = [];
+  /** まだ行われていない対戦カード。次戦の相手を出すのに使う */
+  const upcoming = [];
   const blocks = wikitext.match(/\{\{Round\d+[^}]*\}\}/gs) ?? [];
 
   for (const block of blocks) {
@@ -180,8 +182,21 @@ function parseGames(wikitext) {
       const sA = plain(scoreA);
       const sB = plain(scoreB);
 
-      // 空行・未実施を落とす
+      // 対戦カードが埋まっていない行（`|||||`）は無視する
       if (!nameA || !nameB) continue;
+
+      // **スコアが空＝これから行われる試合。** 次戦の相手として拾っておく。
+      // 日付は「月日（）」というプレースホルダのことが多いので、
+      // 実際の日付が入っているときだけ持つ。
+      if (sA === "" && sB === "") {
+        const d = plain(date);
+        upcoming.push({
+          round,
+          date: /\d+月\d+日/.test(d) ? d.replace(/（.*$/, "").trim() : null,
+          teams: [nameA, nameB],
+        });
+        continue;
+      }
       if (sA === "" || sB === "") continue;
 
       // **サヨナラは「2x」と書かれる。** 数字だけを期待すると、
@@ -204,7 +219,7 @@ function parseGames(wikitext) {
     }
   }
 
-  return games;
+  return { games, upcoming };
 }
 
 // ------------------------------------------------------------------
@@ -225,7 +240,7 @@ if (!fetched) {
 }
 
 const representatives = parseRepresentatives(fetched.wikitext);
-const games = parseGames(fetched.wikitext);
+const { games, upcoming } = parseGames(fetched.wikitext);
 
 console.log(`大会: ${fetched.title}`);
 console.log(`代表校: ${representatives.size} 校`);
@@ -299,6 +314,19 @@ for (const g of publicGames) {
 }
 const alive = [...played.values()]
   .filter((s) => !lost.has(s.slug))
+  .map((s) => {
+    // 次戦。ブラケットにスコアの無い対戦カードとして入っている。
+    // **日付は「月日（）」というプレースホルダのことが多い**ので、
+    // 実際の日付が入っていなければ null のままにする（推測しない）。
+    const next = upcoming.find((u) => u.teams.includes(s.display));
+    const opponent = next?.teams.find((t) => t !== s.display) ?? null;
+    return {
+      ...s,
+      next: next && opponent
+        ? { round: next.round, date: next.date, opponent }
+        : null,
+    };
+  })
   .sort((a, b) => b.wins - a.wins || a.name.localeCompare(b.name, "ja"));
 
 console.log(`勝ち残り: ${alive.length} 校 — ${alive.map((s) => `${s.name}(${s.wins}勝)`).join("、")}`);
@@ -328,9 +356,13 @@ export const LIVE_RESULTS: LiveResults = ${JSON.stringify(
     games: publicGames,
     alive: alive.map((s) => ({
       slug: s.slug,
+      // 表示は略称に揃える。学校マスタの「大分商業高校」だけ「高校」が付くと、
+      // 相手校（「英明」など大会記事の略称）と並んだときに不揃いに見える。
+      display: s.display,
       name: s.name,
       prefecture: s.prefecture,
       wins: s.wins,
+      next: s.next,
     })),
   },
   null,

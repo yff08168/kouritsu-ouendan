@@ -39,9 +39,22 @@ export type LiveGame = {
 /** まだ負けていない公立校 */
 export type LiveAliveSchool = {
   slug: string;
+  /** 大会記事の略称（「大分商」）。**画面ではこちらを使う。** */
+  display: string;
+  /** 学校マスタの校名（「大分商業高校」）。リンクのtitleなどに使う */
   name: string;
   prefecture: string | null;
   wins: number;
+  /**
+   * 次戦。**日付は未定のことが多い。**
+   * ブラケットに対戦カードだけ先に入り、日付は「月日（）」のままなので、
+   * 実際の日付が入っていなければ null。
+   */
+  next: {
+    round: string;
+    date: string | null;
+    opponent: string;
+  } | null;
 };
 
 export type LiveResults = {

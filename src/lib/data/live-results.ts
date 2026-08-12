@@ -206,15 +206,27 @@ export const LIVE_RESULTS: LiveResults = {
   "alive": [
     {
       "slug": "oitashogyo",
+      "display": "大分商",
       "name": "大分商業高校",
       "prefecture": "大分",
-      "wins": 1
+      "wins": 1,
+      "next": {
+        "round": "2回戦",
+        "date": null,
+        "opponent": "英明"
+      }
     },
     {
       "slug": "narutozushio",
+      "display": "鳴門渦潮",
       "name": "鳴門渦潮高校",
       "prefecture": "徳島",
-      "wins": 1
+      "wins": 1,
+      "next": {
+        "round": "2回戦",
+        "date": null,
+        "opponent": "霞ヶ浦"
+      }
     }
   ]
 };

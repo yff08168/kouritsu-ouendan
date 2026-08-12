@@ -1,3 +1,5 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { SITE } from "@/lib/constants";
 import {
@@ -5,6 +7,7 @@ import {
   OG_SIZE,
   fontOptions,
   loadJapaneseFont,
+  toDataUri,
 } from "@/lib/og";
 
 /*
@@ -17,7 +20,12 @@ export const contentType = OG_CONTENT_TYPE;
 
 export default async function Image() {
   const text = `${SITE.name}${SITE.catchphrase}公立高校野球応援サイト`;
-  const font = await loadJapaneseFont(text);
+  // ロゴのパスは文字列リテラルのまま渡す。変数で組み立てると
+  // Next.js がデプロイ時に同梱すべきファイルを追えなくなる。
+  const [font, logo] = await Promise.all([
+    loadJapaneseFont(text),
+    readFile(join(process.cwd(), "assets/og-logo-white.png")),
+  ]);
 
   return new ImageResponse(
     (
@@ -33,25 +41,8 @@ export default async function Image() {
           fontFamily: "Noto Sans JP",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 22 }}>
-          <svg width="72" height="72" viewBox="0 0 40 40" fill="none">
-            <circle cx="16" cy="24" r="11" stroke="#fff" strokeWidth="2.2" />
-            <path
-              d="M8.5 16.5c3.2 2.4 4.6 6.2 4.3 10.4M23.5 16.5c-3.2 2.4-4.6 6.2-4.3 10.4"
-              stroke="#fff"
-              strokeWidth="1.6"
-              strokeLinecap="round"
-            />
-            <path d="M27 33V5" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" />
-            <path
-              d="M27 6.5h9.5c.6 0 .9.7.5 1.1L34 10.5l3 2.9c.4.4.1 1.1-.5 1.1H27z"
-              fill="#F28C28"
-            />
-          </svg>
-          <div style={{ fontSize: 52, color: "#fff", fontWeight: 700 }}>
-            {SITE.name}
-          </div>
-        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={toDataUri(logo)} width={330} height={111} alt="" />
 
         <div
           style={{

@@ -47,7 +47,7 @@ export default async function HomePage() {
       </Container>
 
       <Container className="mt-4 sm:mt-5">
-        <div className="grid gap-4 lg:grid-cols-3">
+        <div className="grid gap-4 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
           {/* 最新ニュース */}
           <section
             aria-labelledby="news-heading"
@@ -67,29 +67,6 @@ export default async function HomePage() {
                 </li>
               ))}
             </ul>
-          </section>
-
-          {/* 公立高校を探す */}
-          <section
-            aria-labelledby="search-heading"
-            className="rounded-xl border border-line bg-white p-4 sm:p-5"
-          >
-            <SectionHeading
-              id="search-heading"
-              title="公立高校を探す"
-              icon={<Search size={18} />}
-            />
-            <p className="mt-3 text-xs font-medium text-ink-muted">
-              都道府県から探す
-            </p>
-            <PrefectureMap counts={prefectureCounts} className="mt-2" />
-            <Link
-              href="/schools"
-              className="mt-4 flex min-h-11 items-center justify-center gap-2 rounded-lg bg-navy-800 px-4 text-sm font-bold text-white hover:bg-navy-700"
-            >
-              <Search size={16} aria-hidden="true" />
-              学校名から探す
-            </Link>
           </section>
 
           {/* 注目の公立高校 */}
@@ -112,6 +89,36 @@ export default async function HomePage() {
             </ul>
           </section>
         </div>
+      </Container>
+
+      {/*
+        都道府県から探す導線は横幅いっぱいで置く。
+        狭いカラムに入れるとタイル地図が潰れて県名が読めなくなるため。
+      */}
+      <Container className="mt-4 sm:mt-5">
+        <section
+          aria-labelledby="search-heading"
+          className="rounded-xl border border-line bg-white p-4 sm:p-5"
+        >
+          <SectionHeading
+            id="search-heading"
+            title="公立高校を探す"
+            icon={<Search size={18} />}
+          />
+          <p className="mt-3 text-xs font-medium text-ink-muted">
+            都道府県から探す（数字は掲載している学校数）
+          </p>
+          <PrefectureMap counts={prefectureCounts} className="mt-3" />
+          <div className="mt-5 flex justify-center">
+            <Link
+              href="/schools"
+              className="inline-flex min-h-11 w-full max-w-sm items-center justify-center gap-2 rounded-lg bg-navy-800 px-6 text-sm font-bold text-white hover:bg-navy-700"
+            >
+              <Search size={16} aria-hidden="true" />
+              学校名から探す
+            </Link>
+          </div>
+        </section>
       </Container>
 
       <AdSlot slot="home-mid" />

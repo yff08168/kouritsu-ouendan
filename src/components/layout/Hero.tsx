@@ -1,25 +1,47 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Newspaper } from "lucide-react";
 import { SITE } from "@/lib/constants";
+import { HERO_SLIDES } from "@/lib/hero";
+import { HeroSlideshow } from "@/components/layout/HeroSlideshow";
 
 /**
  * トップのヒーロー。
- * 背景写真ありきにせず、ネイビーのグラデーションと球場をモチーフにした
- * 図形だけで成立させている。写真を入れる場合はこの背景の上に重ねる。
+ *
+ * 背景は球場の写真を一定時間で切り替える（HeroSlideshow）。
+ * **写真が1枚も無くても成立するようにしてある。** 写真を外したときは
+ * ネイビーのグラデーションと球場をモチーフにした図形だけで表示する。
+ *
+ * ロゴはキャッチコピーまで入った一式ではなく、マークまでの版を置いている。
+ * 一式を縮めるとキャッチコピーの字が小さくなりすぎて読めないため、
+ * キャッチコピーは見出しのテキストとして大きく出す。
+ * ロゴ画像は alt="" にして、読み上げが見出しと二重にならないようにする。
  */
 export function Hero() {
+  const hasPhotos = HERO_SLIDES.length > 0;
+
   return (
     <section className="relative h-full overflow-hidden rounded-xl bg-gradient-to-br from-navy-800 via-navy-700 to-navy-600 px-5 py-10 sm:px-8 sm:py-14">
-      <StadiumBackdrop />
+      {hasPhotos ? <HeroSlideshow slides={HERO_SLIDES} /> : <StadiumBackdrop />}
 
       <div className="relative max-w-lg">
-        <h1 className="text-2xl font-bold leading-tight text-white sm:text-3xl lg:text-[2.5rem]">
+        <Image
+          src="/logo-mark-white.png"
+          alt=""
+          width={480}
+          height={162}
+          priority
+          sizes="(min-width: 640px) 20rem, 15rem"
+          className="h-auto w-full max-w-[15rem] sm:max-w-xs"
+        />
+
+        <h1 className="hero-text mt-6 text-2xl font-bold leading-tight text-white sm:text-3xl lg:text-[2.5rem]">
           公立高校野球が、
           <br />
           <span className="text-accent-500">もっと面白くなる。</span>
         </h1>
 
-        <p className="mt-5 text-sm leading-relaxed text-navy-100 sm:text-[0.9375rem]">
+        <p className="hero-text mt-5 text-sm leading-relaxed text-navy-100 sm:text-[0.9375rem]">
           全国の公立高校野球を応援する人のためのサイト。
           <br className="hidden sm:block" />
           ニュース、学校情報、戦績、歴史、そして公立旋風まで。

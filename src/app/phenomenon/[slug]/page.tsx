@@ -10,8 +10,10 @@ import { Thumbnail } from "@/components/common/Thumbnail";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { NewsBody } from "@/components/news/NewsBody";
 import { PhenomenonCard } from "@/components/phenomenon/PhenomenonCard";
+import { TournamentRun } from "@/components/phenomenon/TournamentRun";
 import { SchoolCard } from "@/components/schools/SchoolCard";
 import { AdSlot } from "@/components/ads/AdSlot";
+import { getTournamentRun } from "@/lib/content/tournament-runs";
 
 import {
   getAllPhenomenonSlugs,
@@ -64,6 +66,10 @@ export default async function PhenomenonDetailPage({ params }: Props) {
   ]);
 
   const others = sameYear.phenomena.filter((p) => p.slug !== item.slug);
+
+  // 勝ち上がりはDBではなくコードに持っている（src/lib/content/tournament-runs.ts）。
+  // 用意してある記録だけに出るので、無ければ何も足さない。
+  const run = getTournamentRun(item.slug);
 
   return (
     <Container size="narrow" className="pb-4">
@@ -125,6 +131,8 @@ export default async function PhenomenonDetailPage({ params }: Props) {
           )}
         </div>
       </article>
+
+      {run && <TournamentRun run={run} />}
 
       <AdSlot slot="news-article-bottom" />
 

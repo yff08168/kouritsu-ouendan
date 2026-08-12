@@ -47,16 +47,21 @@ async function expectBlocked(label, table) {
 
 console.log(`接続先: ${url}\n`);
 
+// 期待値は「架空10校を削除済み・公立旋風の実データ4件を投入済み」の状態。
+// remove_sample_data.sql と senpu_seed.sql を適用した 2026-08-12 の実測値。
 console.log("--- 公開データが読めるか ---");
-await expectCount("都道府県", "prefectures", 47);
-await expectCount("学校", "schools", 10);
+await expectCount("地区（都道府県）", "prefectures", 49);
+await expectCount("学校（公開ぶん）", "schools", 3505);
+// 架空4件を消し、senpu_seed.sql で実在4校を入れたので同じ4件。中身は別物。
 await expectCount("公立旋風", "phenomena", 4);
 await expectCount("特集", "features", 4);
-await expectCount("甲子園出場歴", "school_championships", 18);
+await expectCount("甲子園出場歴", "school_championships", 2969);
 
 console.log("\n--- RLSが効いているか ---");
-// seed には7件入れたが、1件は draft。anonキーでは6件しか見えないはず。
-await expectCount("ニュース（下書き1件が除外される）", "news", 6);
+// 架空記事を消したのでニュースは0件。
+// **これで「下書きが除外されるか」は確かめられなくなった。** 実記事を
+// 入れたら、draft を1件混ぜて「公開ぶんだけ見えるか」を必ず確認すること。
+await expectCount("ニュース（実記事はまだ無い）", "news", 0);
 await expectBlocked("news_sources（運用情報）", "news_sources");
 
 console.log("\n--- 書き込みが拒否されるか ---");

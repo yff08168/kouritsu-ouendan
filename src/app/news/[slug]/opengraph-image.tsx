@@ -1,3 +1,5 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { getNewsBySlug } from "@/lib/queries/news";
 import { NEWS_CATEGORIES, SITE } from "@/lib/constants";
@@ -7,6 +9,7 @@ import {
   OG_SIZE,
   fontOptions,
   loadJapaneseFont,
+  toDataUri,
 } from "@/lib/og";
 
 /*
@@ -31,9 +34,14 @@ export default async function Image({
   const prefecture = news?.prefecture?.name ?? "";
   const date = news ? formatDate(news.publishedAt) : "";
 
-  const font = await loadJapaneseFont(
-    `${title}${category}${prefecture}${SITE.name}${SITE.catchphrase}`,
-  );
+  // ロゴのパスは文字列リテラルのまま渡す。変数で組み立てると
+  // Next.js がデプロイ時に同梱すべきファイルを追えなくなる。
+  const [font, logo] = await Promise.all([
+    loadJapaneseFont(
+      `${title}${category}${prefecture}${SITE.name}${SITE.catchphrase}`,
+    ),
+    readFile(join(process.cwd(), "assets/og-logo.png")),
+  ]);
 
   return new ImageResponse(
     (
@@ -97,23 +105,8 @@ export default async function Image({
             paddingTop: 28,
           }}
         >
-          <svg width="46" height="46" viewBox="0 0 40 40" fill="none">
-            <circle cx="16" cy="24" r="11" stroke="#0F2747" strokeWidth="2.2" />
-            <path
-              d="M8.5 16.5c3.2 2.4 4.6 6.2 4.3 10.4M23.5 16.5c-3.2 2.4-4.6 6.2-4.3 10.4"
-              stroke="#0F2747"
-              strokeWidth="1.6"
-              strokeLinecap="round"
-            />
-            <path d="M27 33V5" stroke="#0F2747" strokeWidth="2.2" strokeLinecap="round" />
-            <path
-              d="M27 6.5h9.5c.6 0 .9.7.5 1.1L34 10.5l3 2.9c.4.4.1 1.1-.5 1.1H27z"
-              fill="#F28C28"
-            />
-          </svg>
-          <div style={{ fontSize: 30, color: "#0F2747", fontWeight: 700 }}>
-            {SITE.name}
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={toDataUri(logo)} width={180} height={61} alt="" />
           <div style={{ fontSize: 22, color: "#8B95A3" }}>
             {SITE.catchphrase}
           </div>

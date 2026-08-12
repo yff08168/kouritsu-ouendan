@@ -18,6 +18,7 @@ import type {
 const SCHOOL_SUMMARY_SELECT = `
   id, slug, name, official_name, city, establishment, school_kind,
   catchcopy, koshien_spring_count, koshien_summer_count, last_koshien_year,
+  cheer_count,
   image_url, image_credit, image_source_url,
   prefecture:prefectures ( name, slug )
 `;
@@ -40,6 +41,7 @@ function toSchoolSummary(row: SchoolRow): SchoolSummary {
     koshienSpringCount: row.koshien_spring_count,
     koshienSummerCount: row.koshien_summer_count,
     lastKoshienYear: row.last_koshien_year,
+    cheerCount: row.cheer_count ?? 0,
   };
 }
 
@@ -93,7 +95,13 @@ export async function getSchoolBySlug(
   };
 }
 
-/** 甲子園出場歴。新しい年が上。 */
+/**
+ * 甲子園出場歴。新しい年が上。同じ年なら夏 → 春の順。
+ *
+ * season は列挙型 `('spring', 'summer', 'autumn')` で、Postgres は
+ * 列挙型を**定義順**で比較する。降順にすると autumn → summer → spring に
+ * なるので、これで夏が春より上に来る。
+ */
 export async function getSchoolChampionships(
   schoolId: string,
 ): Promise<Championship[]> {
@@ -103,7 +111,8 @@ export async function getSchoolChampionships(
     .from("school_championships")
     .select("id, year, season, result, wins, losses, note")
     .eq("school_id", schoolId)
-    .order("year", { ascending: false });
+    .order("year", { ascending: false })
+    .order("season", { ascending: false });
 
   throwIfError(error, "甲子園出場歴の取得");
 
@@ -207,14 +216,66 @@ export async function getSchoolsByPhenomenon(
 }
 
 /** generateStaticParams 用。公開済みの学校slugを全部返す。 */
+/** PostgREST が1回に返す上限 */
+const SLUG_PAGE_SIZE = 1000;
+
+/**
+ * 全学校の slug。sitemap と generateStaticParams が使う。
+ *
+ * **必ずページングすること。** PostgREST は1回に1,000行しか返さないので、
+ * 素の `select("slug")` だと3,505校のうち1,000校しか返らない。
+ * それに気づかないまま公開すると、**sitemap から2,500校が丸ごと抜ける。**
+ * （2026-08-12 に実際にこの状態だった）
+ *
+ * `slug` は unique なので、これで並べればページの境目で重複・欠落が起きない。
+ */
 export async function getAllSchoolSlugs(): Promise<string[]> {
+  return fetchSchoolSlugs({ koshienOnly: false });
+}
+
+/**
+ * sitemap に載せる学校の slug。
+ *
+ * **甲子園出場歴のある学校だけ。** 出場歴の無い約2,827校のページは
+ * `noindex` にしているので（`app/schools/[slug]/page.tsx` の isIndexable）、
+ * sitemap に載せると「載せているのに入れるなと言う」矛盾した指示になる。
+ * 中身が入れば自動的に両方に現れる。
+ */
+export async function getIndexableSchoolSlugs(): Promise<string[]> {
+  return fetchSchoolSlugs({ koshienOnly: true });
+}
+
+async function fetchSchoolSlugs({
+  koshienOnly,
+}: {
+  koshienOnly: boolean;
+}): Promise<string[]> {
   const supabase = createSupabaseServerClient();
+  const slugs: string[] = [];
 
-  const { data, error } = await supabase.from("schools").select("slug");
+  for (let from = 0; ; from += SLUG_PAGE_SIZE) {
+    let query = supabase
+      .from("schools")
+      .select("slug")
+      .order("slug", { ascending: true })
+      .range(from, from + SLUG_PAGE_SIZE - 1);
 
-  throwIfError(error, "学校slugの取得");
+    if (koshienOnly) {
+      query = query.or(
+        "koshien_spring_count.gt.0,koshien_summer_count.gt.0",
+      );
+    }
 
-  return ((data ?? []) as { slug: string }[]).map((row) => row.slug);
+    const { data, error } = await query;
+
+    throwIfError(error, "学校slugの取得");
+
+    const page = (data ?? []) as { slug: string }[];
+    slugs.push(...page.map((row) => row.slug));
+    if (page.length < SLUG_PAGE_SIZE) break;
+  }
+
+  return slugs;
 }
 
 export type SchoolSearchParams = {

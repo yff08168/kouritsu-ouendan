@@ -38,7 +38,10 @@ export const OPERATOR: {
   /** サイト開設年 */
   establishedYear: number;
 } = {
-  name: null,
+  name: "公立応援団 編集部",
+  // TODO(公開前): 問い合わせ用のGmailを取得したら入れる。
+  // 応援メッセージを預かっている以上、削除依頼・通報の受け皿が要る。
+  // Xだけだと、Xアカウントを持たない人が削除を求められない。
   contactEmail: null,
   establishedYear: 2026,
 };
@@ -67,10 +70,59 @@ export const PHENOMENON = {
 export const NAV = [
   { href: "/news", label: "ニュース" },
   { href: "/schools", label: "公立高校" },
+  { href: "/rankings", label: "記録" },
   { href: "/phenomenon", label: PHENOMENON.label },
   { href: "/features", label: "特集" },
   { href: "/prefectures", label: "都道府県" },
 ] as const;
+
+/**
+ * 記録・ランキングのページ一覧。
+ *
+ * ハブページのカード・グローバルナビ・sitemap がこの1か所を見る。
+ * **URLは公開後に変えない。** slug はローマ字（日本語URLは共有時に読めなくなる）。
+ */
+export const RANKINGS = [
+  {
+    slug: "koshien",
+    title: "甲子園出場回数ランキング",
+    short: "出場回数",
+    description:
+      "春・夏・通算のそれぞれで、甲子園に多く出場している公立高校の順位。通算勝利数と勝率でも並べ替えられます。",
+  },
+  {
+    slug: "best",
+    title: "春夏の最高成績",
+    short: "最高成績",
+    description:
+      "優勝・準優勝・ベスト4……と、到達した段階ごとに学校を並べた一覧。公立で全国制覇した学校がひと目で分かります。",
+  },
+  {
+    slug: "21seiki-waku",
+    title: "21世紀枠の出場校",
+    short: "21世紀枠",
+    description:
+      "2001年に始まった21世紀枠で選抜大会に出場した学校を、選ばれた年の順に並べた年表。",
+  },
+  {
+    slug: "prefectures",
+    title: "都道府県別の甲子園記録",
+    short: "都道府県別",
+    description:
+      "公立勢がどの地域で甲子園に出ているか。出場回数・勝利数を日本地図の形に色分けして表示します。",
+  },
+  {
+    slug: "history",
+    title: "公立の甲子園、100年の移り変わり",
+    short: "100年の推移",
+    description:
+      "甲子園の出場校に公立が占める割合は、100年でどう変わったのか。大会ごとの推移を折れ線で示します。",
+  },
+] as const;
+
+export type RankingPage = (typeof RANKINGS)[number];
+
+export const RANKING_BY_SLUG = new Map(RANKINGS.map((r) => [r.slug, r]));
 
 /** 設置区分。国立・高専も応援対象に含める（私立のみ収録対象外） */
 export const ESTABLISHMENTS = {
@@ -88,14 +140,17 @@ export type Establishment = keyof typeof ESTABLISHMENTS;
  * 設置区分の表示ラベル。
  * 都道府県立は「県立」で一律にせず、北海道は道立、東京は都立、
  * 大阪・京都は府立と表記する（実際の校名表記に合わせるため）。
+ *
+ * 地区名は「北北海道」「西東京」のように分割されているので、
+ * 完全一致ではなく末尾で見る。
  */
 export function establishmentLabel(
   establishment: Establishment,
   prefectureName: string,
 ): string {
   if (establishment !== "prefectural") return ESTABLISHMENTS[establishment];
-  if (prefectureName === "北海道") return "道立";
-  if (prefectureName === "東京") return "都立";
+  if (prefectureName.endsWith("北海道")) return "道立";
+  if (prefectureName.endsWith("東京")) return "都立";
   if (prefectureName === "大阪" || prefectureName === "京都") return "府立";
   return "県立";
 }
@@ -166,7 +221,13 @@ export const REGIONS = [
 export type Region = (typeof REGIONS)[number];
 
 export type PrefectureMaster = {
-  /** JIS都道府県コード（1〜47）。DBの主キーと一致させる */
+  /**
+   * 地区ID。DBの主キーと一致させる。
+   *
+   * 分割していない45件はJIS都道府県コードと同じ値。
+   * 北海道（01）と東京（13）は甲子園の大会区分にあわせて2つに分けたため、
+   * JISコードに対応する値がなく、48〜51を割り当てている。
+   */
   id: number;
   name: string;
   slug: string;
@@ -189,12 +250,19 @@ export const MAP_COLUMNS = 12;
 export const MAP_ROWS = 14;
 
 /**
- * 47都道府県マスタ。JISコード順。
+ * 地区マスタ（49件）。おおむねJISコード順。
+ *
+ * 都道府県そのものではなく、**甲子園の大会区分**で並べている。
+ * 北海道は北北海道・南北海道、東京は東東京・西東京に分かれ、
+ * それぞれ別の代表校が甲子園に出るため、高校野球では2つの地区として扱う。
+ * 学校の住所としての「北海道」「東京都」は schools.city 側に残る。
+ *
  * slug をローマ字にしているのは、日本語URLがエンコードされて
  * 共有時に読めなくなるのを避けるため（設計判断⑨）。
  */
 export const PREFECTURES: PrefectureMaster[] = [
-  { id: 1, name: "北海道", slug: "hokkaido", region: "北海道", mapCol: 12, mapRow: 1 },
+  { id: 48, name: "北北海道", slug: "kita-hokkaido", region: "北海道", mapCol: 12, mapRow: 1 },
+  { id: 49, name: "南北海道", slug: "minami-hokkaido", region: "北海道", mapCol: 11, mapRow: 1 },
   { id: 2, name: "青森", slug: "aomori", region: "東北", mapCol: 11, mapRow: 2 },
   { id: 3, name: "岩手", slug: "iwate", region: "東北", mapCol: 11, mapRow: 3 },
   { id: 4, name: "宮城", slug: "miyagi", region: "東北", mapCol: 11, mapRow: 4 },
@@ -205,8 +273,11 @@ export const PREFECTURES: PrefectureMaster[] = [
   { id: 9, name: "栃木", slug: "tochigi", region: "関東", mapCol: 11, mapRow: 6 },
   { id: 10, name: "群馬", slug: "gunma", region: "関東", mapCol: 10, mapRow: 6 },
   { id: 11, name: "埼玉", slug: "saitama", region: "関東", mapCol: 10, mapRow: 7 },
-  { id: 12, name: "千葉", slug: "chiba", region: "関東", mapCol: 12, mapRow: 7 },
-  { id: 13, name: "東京", slug: "tokyo", region: "関東", mapCol: 11, mapRow: 7 },
+  // 東東京と西東京は必ず横に並べる。縦に積むと東西の関係が読み取れない。
+  // そのぶん千葉を1つ下げている。
+  { id: 12, name: "千葉", slug: "chiba", region: "関東", mapCol: 12, mapRow: 8 },
+  { id: 50, name: "東東京", slug: "higashi-tokyo", region: "関東", mapCol: 12, mapRow: 7 },
+  { id: 51, name: "西東京", slug: "nishi-tokyo", region: "関東", mapCol: 11, mapRow: 7 },
   { id: 14, name: "神奈川", slug: "kanagawa", region: "関東", mapCol: 10, mapRow: 8 },
   { id: 15, name: "新潟", slug: "niigata", region: "中部", mapCol: 10, mapRow: 5 },
   { id: 16, name: "富山", slug: "toyama", region: "中部", mapCol: 9, mapRow: 6 },

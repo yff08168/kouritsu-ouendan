@@ -20,9 +20,14 @@ Supabase CLI は使わず、**ブラウザのダッシュボードだけ**で完
 |---|---|---|
 | 1 | `migrations/0001_init.sql` | 列挙型・10テーブル・インデックス・トリガ |
 | 2 | `migrations/0002_rls.sql` | 行レベルセキュリティ |
-| 3 | `seed.sql` | 開発用サンプルデータ |
+| 3 | `migrations/0003_phenomena_badge_and_view.sql` | badge列・都道府県別学校数ビュー |
+| 4 | `migrations/0004_split_hokkaido_tokyo.sql` | 49地区に分割 |
+| 5 | `seed.sql` | 地区マスタ・情報源・特集 |
+| 6 | `schools_*.sql` 8ファイル | 全国3,531校（順不同） |
 
-> `seed.sql` は冒頭で全テーブルを `truncate` する。**本番データが入ったあとは実行しないこと。**
+> `seed.sql` は truncate しない。**何度実行しても安全**（upsert）。
+> 架空の10校を消す `remove_sample_data.sql` は、実データを確認したあと
+> 公開前に一度だけ実行する。詳しくはプロジェクト直下の README「適用の順番」。
 
 エラーが出たらその場で止めて、メッセージをそのまま共有してほしい。
 途中まで作られたテーブルが残っている場合は、SQL Editor で
@@ -57,7 +62,9 @@ select
   (select count(*) from public.school_championships) as 甲子園出場歴;
 ```
 
-期待値: 都道府県47 / 学校10 / ニュース7 / 公立旋風4 / 特集4 / 甲子園出場歴18
+期待値は `verify.sql` にまとめてある（そのまま貼れば項目ごとに出る）。
+架空10校を残したまま実データを入れた状態なら、地区49 / 学校3,541 /
+ニュース7 / 公立旋風4 / 特集4 / 甲子園出場歴18。
 
 RLS が効いているかは、**Table Editor ではなく** アプリ側から確認する。
 `news` の7件のうち1件は `status = 'draft'` にしてあるので、

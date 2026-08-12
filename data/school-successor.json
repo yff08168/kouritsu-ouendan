@@ -1,0 +1,389 @@
+{
+ "_comment": "統廃合・改称で学校マスタに無くなった校名と現存校の対応。scripts/resolve-defunct-schools.mjs が作る。",
+ "_注意": "**校名を推測で書かない。** confirmed: true のものだけを match-koshien.mjs が使う。via が『要確認』のものは、候補から人が選んで to を埋め、confirmed を true にする。候補が空なら後身校が学校マスタに無い（完全に廃校した）か、記事に書かれていない。",
+ "generatedOn": "2026-08-11",
+ "schools": [
+  {
+   "from": "山梨県立市川高等学校",
+   "to": null,
+   "via": "要確認",
+   "confirmed": false,
+   "appearances": 5,
+   "candidates": [
+    "山梨県立青洲高等学校",
+    "山梨県立身延高等学校"
+   ],
+   "mutual": [
+    "山梨県立青洲高等学校",
+    "山梨県立身延高等学校"
+   ]
+  },
+  {
+   "from": "鳴門市立鳴門工業高等学校",
+   "to": "徳島県立鳴門渦潮高等学校",
+   "via": "wikipedia-両方向",
+   "confirmed": true,
+   "appearances": 4,
+   "candidates": [
+    "徳島県立鳴門渦潮高等学校"
+   ]
+  },
+  {
+   "from": "大阪市立扇町総合高等学校",
+   "to": "大阪府立桜和高等学校",
+   "via": "wikipedia-両方向",
+   "confirmed": true,
+   "appearances": 2,
+   "candidates": [
+    "大阪府立桜和高等学校"
+   ]
+  },
+  {
+   "from": "京都市立第二商業学校",
+   "to": null,
+   "via": "要確認",
+   "confirmed": false,
+   "appearances": 2,
+   "candidates": [],
+   "mutual": []
+  },
+  {
+   "from": "山口県立周防大島高等学校",
+   "to": "山口県立大学附属周防大島高等学校",
+   "via": "wikipedia-redirect",
+   "confirmed": true,
+   "appearances": 2
+  },
+  {
+   "from": "埼玉県立大宮工業高等学校",
+   "to": null,
+   "via": "要確認",
+   "confirmed": false,
+   "appearances": 2,
+   "candidates": [
+    "埼玉県立大宮高等学校",
+    "埼玉県立大宮科学技術高等学校",
+    "埼玉県立大宮中央高等学校"
+   ],
+   "mutual": [
+    "埼玉県立大宮科学技術高等学校",
+    "埼玉県立大宮中央高等学校"
+   ]
+  },
+  {
+   "from": "愛知県立岡崎工業高等学校",
+   "to": "愛知県立岡崎工科高等学校",
+   "via": "wikipedia-redirect",
+   "confirmed": true,
+   "appearances": 2
+  },
+  {
+   "from": "徳島県立鳴門第一高等学校",
+   "to": "徳島県立鳴門渦潮高等学校",
+   "via": "wikipedia-両方向",
+   "confirmed": true,
+   "appearances": 2,
+   "candidates": [
+    "徳島県立鳴門渦潮高等学校"
+   ]
+  },
+  {
+   "from": "山梨県立峡南高等学校",
+   "to": "山梨県立青洲高等学校",
+   "via": "wikipedia-両方向",
+   "confirmed": true,
+   "appearances": 2,
+   "candidates": [
+    "山梨県立青洲高等学校"
+   ]
+  },
+  {
+   "from": "徳島県立新野高等学校",
+   "to": "徳島県立阿南光高等学校",
+   "via": "wikipedia-両方向",
+   "confirmed": true,
+   "appearances": 2,
+   "candidates": [
+    "徳島県立阿南光高等学校"
+   ]
+  },
+  {
+   "from": "神戸市立神港高等学校",
+   "to": "神戸市立神港橘高等学校",
+   "via": "wikipedia-両方向",
+   "confirmed": true,
+   "appearances": 2,
+   "candidates": [
+    "神戸市立神港橘高等学校",
+    "兵庫県立龍野北高等学校"
+   ]
+  },
+  {
+   "from": "山形県立新庄北高等学校",
+   "to": null,
+   "via": "要確認",
+   "confirmed": false,
+   "appearances": 2,
+   "candidates": [
+    "山形県立山形東高等学校",
+    "山形県立霞城学園高等学校",
+    "山形県立新庄志誠館高等学校"
+   ],
+   "mutual": [
+    "山形県立山形東高等学校",
+    "山形県立新庄志誠館高等学校"
+   ]
+  },
+  {
+   "from": "京都市立伏見工業高等学校",
+   "to": null,
+   "via": "要確認",
+   "confirmed": false,
+   "appearances": 1,
+   "candidates": [
+    "京都市立京都工学院高等学校",
+    "愛知県立城北つばさ高等学校",
+    "沖縄県立泊高等学校",
+    "京都市立西京高等学校",
+    "京都市立京都奏和高等学校"
+   ],
+   "mutual": [
+    "京都市立京都工学院高等学校",
+    "京都市立西京高等学校",
+    "京都市立京都奏和高等学校"
+   ]
+  },
+  {
+   "from": "徳島県立海南高等学校",
+   "to": "徳島県立海部高等学校",
+   "via": "wikipedia-両方向",
+   "confirmed": true,
+   "appearances": 1,
+   "candidates": [
+    "徳島県立海部高等学校"
+   ]
+  },
+  {
+   "from": "奈良県立奈良朱雀高等学校",
+   "to": "奈良県立奈良商工高等学校",
+   "via": "wikipedia-redirect",
+   "confirmed": true,
+   "appearances": 1
+  },
+  {
+   "from": "福岡県立築上中部高等学校",
+   "to": "福岡県立青豊高等学校",
+   "via": "wikipedia-両方向",
+   "confirmed": true,
+   "appearances": 1,
+   "candidates": [
+    "福岡県立青豊高等学校"
+   ]
+  },
+  {
+   "from": "香川県立観音寺中央高等学校",
+   "to": "香川県立観音寺総合高等学校",
+   "via": "wikipedia-両方向",
+   "confirmed": true,
+   "appearances": 1,
+   "candidates": [
+    "香川県立観音寺総合高等学校",
+    "香川県立観音寺第一高等学校"
+   ]
+  },
+  {
+   "from": "佐賀県立伊万里商業高等学校",
+   "to": null,
+   "via": "要確認",
+   "confirmed": false,
+   "appearances": 1,
+   "candidates": [
+    "佐賀県立伊万里高等学校",
+    "佐賀県立伊万里実業高等学校"
+   ],
+   "mutual": [
+    "佐賀県立伊万里高等学校",
+    "佐賀県立伊万里実業高等学校"
+   ]
+  },
+  {
+   "from": "大分県立別府青山高等学校",
+   "to": "大分県立別府翔青高等学校",
+   "via": "wikipedia-両方向",
+   "confirmed": true,
+   "appearances": 1,
+   "candidates": [
+    "大分県立別府翔青高等学校"
+   ]
+  },
+  {
+   "from": "愛知県立豊橋工業高等学校",
+   "to": "愛知県立豊橋工科高等学校",
+   "via": "wikipedia-redirect",
+   "confirmed": true,
+   "appearances": 1
+  },
+  {
+   "from": "岩手県立不来方高等学校",
+   "to": "岩手県立南昌みらい高等学校",
+   "via": "wikipedia-両方向",
+   "confirmed": true,
+   "appearances": 1,
+   "candidates": [
+    "岩手県立南昌みらい高等学校"
+   ]
+  },
+  {
+   "from": "長崎県立長崎中学校 (旧制)",
+   "to": null,
+   "via": "要確認",
+   "confirmed": false,
+   "appearances": 1,
+   "candidates": [
+    "長崎県立長崎東高等学校",
+    "長崎県立長崎西高等学校",
+    "長崎県立鳴滝高等学校"
+   ],
+   "mutual": [
+    "長崎県立長崎東高等学校",
+    "長崎県立長崎西高等学校",
+    "長崎県立鳴滝高等学校"
+   ]
+  },
+  {
+   "from": "京都市立西陣商業高等学校",
+   "to": null,
+   "via": "要確認",
+   "confirmed": false,
+   "appearances": 1,
+   "candidates": [],
+   "mutual": []
+  },
+  {
+   "from": "神奈川県立希望ヶ丘高等学校",
+   "to": "神奈川県立希望ケ丘高等学校",
+   "via": "wikipedia-redirect",
+   "confirmed": true,
+   "appearances": 1
+  },
+  {
+   "from": "大阪市立都島工業高等学校",
+   "to": "大阪府立都島工業高等学校",
+   "via": "wikipedia-redirect",
+   "confirmed": true,
+   "appearances": 1
+  },
+  {
+   "from": "山口県立下関東高等学校",
+   "to": null,
+   "via": "要確認",
+   "confirmed": false,
+   "appearances": 1,
+   "candidates": [
+    "山口県立豊浦高等学校",
+    "山口県立長府高等学校"
+   ],
+   "mutual": [
+    "山口県立豊浦高等学校",
+    "山口県立長府高等学校"
+   ]
+  },
+  {
+   "from": "福島県立保原高等学校",
+   "to": null,
+   "via": "要確認",
+   "confirmed": false,
+   "appearances": 1,
+   "candidates": [
+    "福島県立ふくしま新世高等学校",
+    "福島県立伊達高等学校"
+   ],
+   "mutual": [
+    "福島県立ふくしま新世高等学校",
+    "福島県立伊達高等学校"
+   ]
+  },
+  {
+   "from": "栃木県立鹿沼農商高等学校",
+   "to": "栃木県立鹿沼商工高等学校",
+   "via": "wikipedia-両方向",
+   "confirmed": true,
+   "appearances": 1,
+   "candidates": [
+    "栃木県立鹿沼商工高等学校"
+   ]
+  },
+  {
+   "from": "徳島県立鴨島商業高等学校",
+   "to": "徳島県立吉野川高等学校",
+   "via": "wikipedia-両方向",
+   "confirmed": true,
+   "appearances": 1,
+   "candidates": [
+    "徳島県立吉野川高等学校"
+   ]
+  },
+  {
+   "from": "静岡市立清水商業高等学校",
+   "to": "静岡市立清水桜が丘高等学校",
+   "via": "wikipedia-両方向",
+   "confirmed": true,
+   "appearances": 1,
+   "candidates": [
+    "静岡市立清水桜が丘高等学校"
+   ]
+  },
+  {
+   "from": "山形県立米沢工業高等学校",
+   "to": "山形県立米沢鶴城高等学校",
+   "via": "wikipedia-両方向",
+   "confirmed": true,
+   "appearances": 1,
+   "candidates": [
+    "山形県立山形工業高等学校",
+    "山形県立鶴岡工業高等学校",
+    "山形県立米沢興譲館高等学校",
+    "山形県立米沢東高等学校",
+    "山形県立米沢鶴城高等学校"
+   ]
+  },
+  {
+   "from": "岩手県立久慈東高等学校",
+   "to": "岩手県立久慈翔北高等学校",
+   "via": "wikipedia-両方向",
+   "confirmed": true,
+   "appearances": 1,
+   "candidates": [
+    "岩手県立久慈翔北高等学校"
+   ]
+  },
+  {
+   "from": "佐賀県立伊万里農林高等学校",
+   "to": "佐賀県立伊万里実業高等学校",
+   "via": "wikipedia-両方向",
+   "confirmed": true,
+   "appearances": 1,
+   "candidates": [
+    "佐賀県立伊万里実業高等学校",
+    "佐賀県立佐賀商業高等学校"
+   ]
+  },
+  {
+   "from": "福山市立福山中・高等学校",
+   "to": null,
+   "via": "要確認",
+   "confirmed": false,
+   "appearances": 1,
+   "candidates": [
+    "広島県立福山誠之館高等学校",
+    "広島県立福山葦陽高等学校",
+    "広島県立松永高等学校",
+    "広島県立大門高等学校"
+   ],
+   "mutual": [
+    "広島県立松永高等学校",
+    "広島県立大門高等学校"
+   ]
+  }
+ ]
+}

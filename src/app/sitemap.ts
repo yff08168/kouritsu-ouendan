@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
-import { SITE, PREFECTURES } from "@/lib/constants";
-import { getAllSchoolSlugs } from "@/lib/queries/schools";
+import { SITE, PREFECTURES, RANKINGS } from "@/lib/constants";
+import { getIndexableSchoolSlugs } from "@/lib/queries/schools";
 import { getAllNewsSlugs } from "@/lib/queries/news";
 import { getAllPhenomenonSlugs } from "@/lib/queries/phenomena";
 import { getAllFeatureSlugs } from "@/lib/queries/features";
@@ -19,7 +19,8 @@ const url = (path: string) => new URL(path, SITE.url).toString();
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [schoolSlugs, newsSlugs, phenomenonSlugs, featureSlugs] =
     await Promise.all([
-      getAllSchoolSlugs(),
+      // 甲子園出場歴のある学校だけ。出場歴の無い学校は noindex にしている。
+      getIndexableSchoolSlugs(),
       getAllNewsSlugs(),
       getAllPhenomenonSlugs(),
       getAllFeatureSlugs(),
@@ -31,6 +32,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url("/"), lastModified: now, changeFrequency: "daily", priority: 1 },
     { url: url("/news"), lastModified: now, changeFrequency: "daily", priority: 0.9 },
     { url: url("/schools"), lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: url("/rankings"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: url("/phenomenon"), lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: url("/features"), lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: url("/prefectures"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
@@ -39,6 +41,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url("/privacy"), lastModified: now, changeFrequency: "yearly", priority: 0.1 },
     { url: url("/terms"), lastModified: now, changeFrequency: "yearly", priority: 0.1 },
   ];
+
+  // ランキングは検索条件（?season= など）を持つが、正規URLは条件なしの形にしてある。
+  // sitemap にも条件なしだけを載せる。
+  const rankingPages: MetadataRoute.Sitemap = RANKINGS.map((r) => ({
+    url: url(`/rankings/${r.slug}`),
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
 
   const prefecturePages: MetadataRoute.Sitemap = PREFECTURES.map((p) => ({
     url: url(`/prefectures/${p.slug}`),
@@ -77,6 +88,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     ...staticPages,
+    ...rankingPages,
     ...prefecturePages,
     ...schoolPages,
     ...newsPages,

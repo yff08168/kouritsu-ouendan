@@ -41,3 +41,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 文科省の学校コードCSV（生成物のもと。再取得できるのでgitには入れない）
+/data/mext-*.csv
+/data/missing-kana.json
+
+# Wikipediaの大会別記事のキャッシュ（再取得できる。約200記事）
+/data/wikipedia-cache/

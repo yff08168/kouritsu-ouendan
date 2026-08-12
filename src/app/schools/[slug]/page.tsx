@@ -6,8 +6,8 @@ import {
   ExternalLink,
   Flame,
   MapPin,
+  MessageSquareHeart,
   Newspaper,
-  Star,
   Trophy,
 } from "lucide-react";
 
@@ -22,6 +22,7 @@ import { SchoolCard } from "@/components/schools/SchoolCard";
 import { ChampionshipTable } from "@/components/schools/ChampionshipTable";
 import { RecordTable } from "@/components/schools/RecordTable";
 import { PhenomenonCard } from "@/components/phenomenon/PhenomenonCard";
+import { CheerButton } from "@/components/community/CheerButton";
 
 import {
   getAllSchoolSlugs,
@@ -34,7 +35,10 @@ import { getNewsBySchool } from "@/lib/queries/news";
 import { getPhenomenaBySchool } from "@/lib/queries/phenomena";
 import { JsonLd } from "@/components/common/JsonLd";
 import { schoolJsonLd } from "@/lib/seo";
+import type { SchoolDetail } from "@/types/app";
 import { ESTABLISHMENTS, SCHOOL_KINDS, establishmentLabel } from "@/lib/constants";
+import { bestResultBySeason } from "@/lib/koshien";
+import { TWENTY_FIRST_CENTURY_BERTHS } from "@/lib/data/twenty-first-century";
 
 // 学校情報は頻繁には変わらないので長めに保つ
 export const revalidate = 3600;
@@ -70,12 +74,35 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${school.name}（${school.prefecture.name}）`,
     description,
     alternates: { canonical: `/schools/${school.slug}` },
+    // 中身の無いページは検索インデックスに入れない。理由は下の isIndexable を参照。
+    robots: isIndexable(school)
+      ? undefined
+      : { index: false, follow: true },
     openGraph: {
       type: "article",
       title: `${school.name}（${school.prefecture.name}）| 公立応援団`,
       description,
     },
   };
+}
+
+/**
+ * 検索インデックスに入れてよい学校ページか。
+ *
+ * **3,505校のうち甲子園出場歴があるのは678校だけ。** 残り約2,827校のページは
+ * 校名・所在地・区分しか無く、あとは「まだありません」が3つ並ぶだけになる。
+ * 同じ形の空ページが2,800枚あるとサイト全体が「薄いコンテンツ」と見なされ、
+ * ランキングや公立旋風など中身のあるページの評価まで巻き添えになる。
+ *
+ * そこで**中身が入るまでは noindex**、ただし `follow` は残して内部リンクの
+ * 評価は流す。ユーザーは今までどおり閲覧できる。
+ *
+ * 判定に非正規化列（koshien_*_count）だけを使っているのは、3,505ページぶんの
+ * ビルドで追加のクエリを打たないため。**戦績やニュースを入れ始めたら、
+ * それも判定材料に足すこと**（いまはどちらも実データが0件なので効かない）。
+ */
+function isIndexable(school: SchoolDetail): boolean {
+  return school.koshienSpringCount + school.koshienSummerCount > 0;
 }
 
 export default async function SchoolDetailPage({ params }: Props) {
@@ -94,6 +121,12 @@ export default async function SchoolDetailPage({ params }: Props) {
     ]);
 
   const koshienTotal = school.koshienSpringCount + school.koshienSummerCount;
+  // 春・夏それぞれの最高成績。バッジに出す
+  const bestKoshien = bestResultBySeason(championships);
+  // 21世紀枠での出場。数が少なく特別な選出なので、回数ではなく年をそのまま出す
+  const berthYears = TWENTY_FIRST_CENTURY_BERTHS.filter(
+    (berth) => berth.schoolSlug === school.slug,
+  ).map((berth) => berth.year);
 
   return (
     <Container className="pb-4">
@@ -131,6 +164,21 @@ export default async function SchoolDetailPage({ params }: Props) {
               </Badge>
             )}
             {koshienTotal > 0 && <Badge>甲子園 {koshienTotal}回</Badge>}
+            {berthYears.length > 0 && (
+              <Badge variant="accent">
+                21世紀枠 {berthYears.join("・")}年
+              </Badge>
+            )}
+            {bestKoshien.summer && (
+              <Badge variant="outline">
+                夏の甲子園　最高成績：{bestKoshien.summer.result}
+              </Badge>
+            )}
+            {bestKoshien.spring && (
+              <Badge variant="outline">
+                春の甲子園　最高成績：{bestKoshien.spring.result}
+              </Badge>
+            )}
             {school.lastKoshienYear && (
               <Badge variant="outline">
                 最終出場 {school.lastKoshienYear}年
@@ -185,30 +233,40 @@ export default async function SchoolDetailPage({ params }: Props) {
             </p>
           )}
 
-          <div className="mt-5 flex flex-wrap gap-2">
+          <div className="mt-5">
             {/*
-              将来のコミュニティ機能（学校フォロー）の置き場所。
-              ユーザー登録を実装するまでは押せる形にしない。
+              応援ボタン。テキストを投稿させない、いちばん軽い参加の形。
+              自由記述のコメント欄を学校ページに置かないのは、
+              「○○高校の△△君」という書き込みを招くため（AGENTS.md）。
+              文字で応援したい人は都道府県ページのメッセージ欄へ誘導する。
             */}
-            <span
-              aria-disabled="true"
-              className="inline-flex min-h-11 cursor-not-allowed items-center gap-1.5 rounded-lg border border-line bg-surface px-5 text-sm font-bold text-ink-faint"
-            >
-              <Star size={16} aria-hidden="true" />
-              この学校を応援する（準備中）
-            </span>
+            <CheerButton
+              schoolId={school.id}
+              schoolName={school.name}
+              initialCount={school.cheerCount}
+            />
 
-            {school.websiteUrl && (
-              <a
-                href={school.websiteUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex min-h-11 items-center gap-1.5 rounded-lg border border-navy-800 px-5 text-sm font-bold text-navy-800 hover:bg-navy-50"
+            <div className="mt-4 flex flex-wrap gap-2">
+              <Link
+                href={`/prefectures/${school.prefecture.slug}#pref-cheers`}
+                className="inline-flex min-h-11 items-center gap-1.5 rounded-lg border border-line px-5 text-sm font-bold text-ink-muted hover:border-navy-800 hover:text-navy-800"
               >
-                学校公式サイト
-                <ExternalLink size={14} aria-hidden="true" />
-              </a>
-            )}
+                <MessageSquareHeart size={16} aria-hidden="true" />
+                {school.prefecture.name}へ応援メッセージ
+              </Link>
+
+              {school.websiteUrl && (
+                <a
+                  href={school.websiteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-11 items-center gap-1.5 rounded-lg border border-navy-800 px-5 text-sm font-bold text-navy-800 hover:bg-navy-50"
+                >
+                  学校公式サイト
+                  <ExternalLink size={14} aria-hidden="true" />
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </header>

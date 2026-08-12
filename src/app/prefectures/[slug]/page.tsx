@@ -1,7 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ChevronRight, Flame, MapPin, Newspaper, School } from "lucide-react";
+import {
+  ChevronRight,
+  Flame,
+  MapPin,
+  MessageSquareHeart,
+  Newspaper,
+  School,
+  Vote,
+} from "lucide-react";
 
 import { Container } from "@/components/layout/Container";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
@@ -10,14 +18,27 @@ import { SchoolList } from "@/components/schools/SchoolList";
 import { NewsCard } from "@/components/news/NewsCard";
 import { PhenomenonCard } from "@/components/phenomenon/PhenomenonCard";
 import { AdSlot } from "@/components/ads/AdSlot";
+import { PollCard } from "@/components/community/PollCard";
+import { CheerMessageForm } from "@/components/community/CheerMessageForm";
+import { CheerMessageList } from "@/components/community/CheerMessageList";
 
 import { getPrefectureBySlug } from "@/lib/queries/prefectures";
 import { searchSchools } from "@/lib/queries/schools";
 import { getNewsList } from "@/lib/queries/news";
 import { getPhenomenaByPrefecture } from "@/lib/queries/phenomena";
+import {
+  getActivePolls,
+  getCheerMessages,
+  getCheerTopics,
+} from "@/lib/queries/community";
 import { PREFECTURES } from "@/lib/constants";
 
-export const revalidate = 3600;
+/**
+ * 投票数と応援メッセージは動きが速いので、他のページより短く見直す。
+ * 投票した本人には即座に結果が見えるので（PollCard が手元で数を足す）、
+ * ここは「他の人が見たときにいつ反映されるか」の設定。
+ */
+export const revalidate = 300;
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -46,11 +67,15 @@ export default async function PrefectureDetailPage({ params }: Props) {
 
   if (!prefecture) notFound();
 
-  const [schoolResult, newsResult, phenomena] = await Promise.all([
-    searchSchools({ prefectureSlug: slug, perPage: 12 }),
-    getNewsList({ prefectureSlug: slug, perPage: 6 }),
-    getPhenomenaByPrefecture(slug),
-  ]);
+  const [schoolResult, newsResult, phenomena, polls, topics, messages] =
+    await Promise.all([
+      searchSchools({ prefectureSlug: slug, perPage: 12 }),
+      getNewsList({ prefectureSlug: slug, perPage: 6 }),
+      getPhenomenaByPrefecture(slug),
+      getActivePolls(slug),
+      getCheerTopics(),
+      getCheerMessages({ prefectureSlug: slug, limit: 10 }),
+    ]);
 
   return (
     <Container className="pb-4">
@@ -153,6 +178,47 @@ export default async function PrefectureDetailPage({ params }: Props) {
           </ul>
         </section>
       )}
+
+      {/* ------- 投票 ------- */}
+      {polls.length > 0 && (
+        <section
+          aria-labelledby="pref-polls"
+          className="mt-4 rounded-xl border border-line bg-white p-5"
+        >
+          <SectionHeading
+            id="pref-polls"
+            title={`${prefecture.name}のみんなの投票`}
+            icon={<Vote size={18} />}
+          />
+          <div className="mt-3 space-y-3">
+            {polls.map((poll) => (
+              <PollCard key={poll.id} poll={poll} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ------- 応援メッセージ ------- */}
+      <section
+        aria-labelledby="pref-cheers"
+        className="mt-4 rounded-xl border border-line bg-white p-5"
+      >
+        <SectionHeading
+          id="pref-cheers"
+          title={`${prefecture.name}の応援メッセージ`}
+          icon={<MessageSquareHeart size={18} />}
+        />
+        <div className="mt-3">
+          <CheerMessageList items={messages} />
+        </div>
+        <div className="mt-4">
+          <CheerMessageForm
+            prefectureId={prefecture.id}
+            prefectureName={prefecture.name}
+            topics={topics}
+          />
+        </div>
+      </section>
 
       {/* ------- ニュース ------- */}
       <section

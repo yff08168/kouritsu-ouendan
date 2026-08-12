@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "check": "npm run lint && npm run typecheck && npm run build"
+    "check": "npm run lint && npm run typecheck && npm run build",
+    "logo": "node scripts/build-logo-assets.mjs",
+    "hero": "node scripts/build-hero-images.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.2",

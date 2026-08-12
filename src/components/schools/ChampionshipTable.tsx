@@ -31,7 +31,7 @@ export function ChampionshipTable({ items }: { items: Championship[] }) {
               成績
             </th>
             <th scope="col" className="px-1 py-2 text-right font-medium">
-              勝敗
+              勝利数
             </th>
           </tr>
         </thead>
@@ -62,9 +62,7 @@ export function ChampionshipTable({ items }: { items: Championship[] }) {
                 )}
               </td>
               <td className="whitespace-nowrap px-1 py-2.5 text-right tabular-nums text-ink-muted">
-                {item.wins !== null && item.losses !== null
-                  ? `${item.wins}勝${item.losses}敗`
-                  : "－"}
+                {item.wins !== null ? `${item.wins}勝` : "－"}
               </td>
             </tr>
           ))}

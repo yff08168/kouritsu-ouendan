@@ -42,6 +42,14 @@ export async function loadJapaneseFont(
   }
 }
 
+/**
+ * PNGを ImageResponse の <img src> に渡せる形にする。
+ * satori は外部URLを取りに行かないので、データURIで埋め込む。
+ */
+export function toDataUri(png: Buffer): string {
+  return `data:image/png;base64,${png.toString("base64")}`;
+}
+
 /** フォントが取れたときだけ ImageResponse に渡す形にする */
 export function fontOptions(font: ArrayBuffer | null) {
   if (!font) return undefined;

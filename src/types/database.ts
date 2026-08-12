@@ -45,6 +45,8 @@ export type SchoolRow = ImageColumns & {
   koshien_spring_count: number;
   koshien_summer_count: number;
   last_koshien_year: number | null;
+  /** 0005。応援ボタンの押下数（school_cheers からトリガで非正規化） */
+  cheer_count: number;
   prefecture: PrefectureJoin;
 };
 
@@ -119,4 +121,47 @@ export type FeatureDetailRow = FeatureRow & {
 export type SchoolCountRow = {
   prefecture_slug: string;
   school_count: number;
+};
+
+// ------------------------------------------------------------
+// 0005 コミュニティ機能
+//
+// school_cheers / poll_votes には select ポリシーが無い（書けるが読めない）。
+// 表示に使う数は schools.cheer_count と poll_options.vote_count にある。
+// ------------------------------------------------------------
+
+export type PollRow = {
+  id: string;
+  slug: string;
+  question: string;
+  description: string | null;
+  starts_at: string | null;
+  ends_at: string | null;
+  prefecture: PrefectureJoin;
+  poll_options: PollOptionRow[] | null;
+};
+
+export type PollOptionRow = {
+  id: string;
+  label: string;
+  sort_order: number;
+  vote_count: number;
+  /** 学校を選ぶ設問のとき。学校ページへ辿れるようにする。 */
+  schools: { slug: string; name: string } | null;
+};
+
+export type CheerTopicRow = {
+  id: string;
+  slug: string;
+  title: string;
+  description: string | null;
+};
+
+export type CheerMessageRow = {
+  id: string;
+  body: string;
+  display_name: string | null;
+  published_at: string | null;
+  prefecture: PrefectureJoin;
+  cheer_topics: { slug: string; title: string } | null;
 };

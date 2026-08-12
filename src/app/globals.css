@@ -87,31 +87,149 @@ li {
 }
 
 /*
- * 都道府県のタイル地図。
+ * ヒーローの写真の上に重ねる膜。
  *
- * スマートフォンでは4列の折り返しグリッド、sm以上で日本の形に並べ替える。
- * マス目の座標は各要素の --map-col / --map-row から読む。
- * 表示切り替えのためにマークアップを二重に持たないのは、
- * 同じリンクが読み上げで2回読まれるのを避けるため。
+ * 写真は明るさがばらばら（青空の球場もあれば夕暮れもある）ので、
+ * 素のまま白文字を載せるとコントラストが写真次第になる。かといって
+ * 一様に濃くすると写真が何も見えなくなる。**見出しがある側だけ濃くする。**
+ *
+ * 数値は「白文字が 4.5:1 を満たす濃さ」から決めている。いちばん明るい
+ * 青空（相対輝度 0.55）の上でも、navy-900 を 70% 重ねれば 4.7:1 になる。
+ *
+ * 切り替えの基準を lg（1024px）にしているのは、トップでヒーローと公立旋風が
+ * 横に並ぶのがこの幅から（src/app/page.tsx のグリッド）。それより狭いと
+ * 見出しが幅いっぱいに広がるので、右側だけ薄くすることができない。
  */
+.hero-veil {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 26, 48, 0.7);
+}
+
+@media (min-width: 1024px) {
+  .hero-veil {
+    /*
+     * いちばん長い行（説明文の2行目）がヒーローの幅の 59% で終わるので、
+     * 60% までは濃さを保ち、そこから一気に薄くして写真を見せる。
+     * **文言を長くしたらこの 60% も見直すこと。**
+     */
+    background: linear-gradient(
+      to right,
+      rgba(8, 26, 48, 0.92) 0%,
+      rgba(8, 26, 48, 0.86) 60%,
+      rgba(8, 26, 48, 0.4) 82%,
+      rgba(8, 26, 48, 0.15) 100%
+    );
+  }
+}
+
+/*
+ * 写真の上に載る文字。膜を薄くした側にはみ出したときの保険。
+ * 影はコントラスト計算には数えられないので、これに頼りきらないこと
+ * （膜の濃さのほうで 4.5:1 を確保してある）。
+ */
+.hero-text {
+  text-shadow: 0 1px 2px rgba(8, 26, 48, 0.55), 0 4px 18px rgba(8, 26, 48, 0.45);
+}
+
+/*
+ * 都道府県セレクタ。
+ *
+ * 狭いとき（スマートフォン、PCでも幅の狭いカラム）は地方ごとの見出し＋
+ * 横並びのボタン。幅が足りるときだけ日本の形のタイル地図に並べ替える。
+ *
+ * 判定は画面幅ではなく置かれた場所の幅で行う（コンテナクエリ）。
+ * 画面幅で切り替えると、PCの3カラムのような狭い枠に入れたときに
+ * マスが潰れて県名が縦書きのようになってしまう。
+ *
+ * マークアップはどちらの形でも1つだけ。表示切り替えのために
+ * DOMを二重に持つと、同じリンクが読み上げで2回読まれる。
+ */
+.prefecture-map-frame {
+  container-type: inline-size;
+}
+
 .prefecture-map {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.prefecture-map__region-name {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-ink-muted);
+}
+
+.prefecture-map__list {
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.375rem;
 }
 
-@media (min-width: 640px) {
+/* 狭いときは指で押せる大きさの横長ボタン */
+.prefecture-map__tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  min-height: 2.75rem;
+  padding-inline: 0.625rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.prefecture-map__count {
+  font-size: 0.6875rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/*
+ * 日本の形に並べる。マス目の座標は各 li の --map-col / --map-row から読む。
+ * 12列×14行が潰れずに収まる幅を境目にしている。
+ */
+@container (min-width: 34rem) {
   .prefecture-map {
+    display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-template-rows: repeat(14, minmax(0, auto));
     gap: 0.25rem;
-    max-width: 40rem;
+    max-width: 46rem;
     margin-inline: auto;
   }
 
-  .prefecture-map > li {
+  /* 地方のまとまりは配置には関与させず、マスだけをグリッドに置く */
+  .prefecture-map__region,
+  .prefecture-map__list {
+    display: contents;
+  }
+
+  .prefecture-map__region-name {
+    display: none;
+  }
+
+  .prefecture-map__list > li {
     grid-column: var(--map-col);
     grid-row: var(--map-row);
+  }
+
+  .prefecture-map__tile {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 1;
+    padding-inline: 0.125rem;
+    font-size: 0.6875rem;
+  }
+
+  .prefecture-map__count {
+    font-size: 0.625rem;
   }
 }
 

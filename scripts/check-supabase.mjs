@@ -55,7 +55,8 @@ await expectCount("学校（公開ぶん）", "schools", 3505);
 // 架空4件を消し、senpu_seed.sql で実在4校を入れたので同じ4件。中身は別物。
 await expectCount("公立旋風", "phenomena", 4);
 await expectCount("特集", "features", 4);
-await expectCount("甲子園出場歴", "school_championships", 2969);
+// 2026-08-12 に成績欠損41件を修正した際、1件増えて2970になった。
+await expectCount("甲子園出場歴", "school_championships", 2970);
 
 console.log("\n--- RLSが効いているか ---");
 // 架空記事を消したのでニュースは0件。

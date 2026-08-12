@@ -308,8 +308,12 @@ if (DRY) {
   return;
 }
 
+// **タイムスタンプを埋め込まない。**
+// 生成時刻を書くとファイルが毎回変わり、CIが3時間おきに中身の同じコミットを
+// 積み続ける。この生成物は「入力（Wikipediaの記事）が同じなら出力も同じ」に
+// してある。おかげで**本当に試合結果が動いたときだけコミットが発生する。**
+// 鮮度は最新の試合日（データ自身が持っている）で示せば足りる。
 const body = `// このファイルは scripts/build-live-results.mjs が生成する。直接編集しない。
-// 生成日時: ${new Date().toISOString()}
 // 出典: ${fetched.title}（Wikipedia, CC BY-SA）
 //   https://ja.wikipedia.org/wiki/${encodeURIComponent(fetched.title)}
 
@@ -321,8 +325,6 @@ export const LIVE_RESULTS: LiveResults = ${JSON.stringify(
     season: tournament.season,
     year: tournament.year,
     sourceUrl: `https://ja.wikipedia.org/wiki/${encodeURIComponent(fetched.title)}`,
-    revisedAt: fetched.revisedAt,
-    generatedAt: new Date().toISOString(),
     games: publicGames,
     alive: alive.map((s) => ({
       slug: s.slug,

@@ -49,22 +49,36 @@ export type LiveResults = {
   season: "spring" | "summer";
   year: number;
   sourceUrl: string;
-  /** Wikipedia側の最終更新（ISO文字列） */
-  revisedAt: string | null;
-  /** 生成した時刻（ISO文字列） */
-  generatedAt: string;
-  /** 公立校が絡む試合だけ。新しい順ではなくブラケット順 */
+  /**
+   * 公立校が絡む試合だけ。新しい順ではなくブラケット順。
+   *
+   * **生成時刻は持たせていない。** 埋め込むとCIが3時間おきに中身の同じ
+   * コミットを積み続けるため。鮮度は `latestGameDate()` で出す。
+   */
   games: LiveGame[];
   alive: LiveAliveSchool[];
 };
 
+/** 並べ替え用の数値。「8月12日（2）」→ 81202。年をまたがないので月日で足りる。 */
+function sortKey(game: LiveGame): number {
+  const m = game.date.match(/(\d+)月(\d+)日/);
+  const md = m ? Number(m[1]) * 100 + Number(m[2]) : 0;
+  return md * 100 + Number(game.order ?? 0);
+}
+
 /** 新しい試合が上に来るように並べ替える。同じ日なら試合順の遅いほうが上。 */
 export function sortGamesByRecency(games: LiveGame[]): LiveGame[] {
-  const key = (g: LiveGame) => {
-    // 「8月12日」→ 812 のような比較用の数値。年をまたがないので月日で足りる。
-    const m = g.date.match(/(\d+)月(\d+)日/);
-    const md = m ? Number(m[1]) * 100 + Number(m[2]) : 0;
-    return md * 100 + Number(g.order ?? 0);
-  };
-  return [...games].sort((a, b) => key(b) - key(a));
+  return [...games].sort((a, b) => sortKey(b) - sortKey(a));
+}
+
+/**
+ * 反映されている最新の試合日。「8月12日」のような文字列を返す。
+ * 試合がまだ無ければ null。
+ *
+ * 生成時刻の代わりに鮮度を示すために使う。読者にとっても
+ * 「いつ生成したか」より「どこまで反映されているか」のほうが意味がある。
+ */
+export function latestGameDate(games: LiveGame[]): string | null {
+  if (games.length === 0) return null;
+  return games.reduce((a, b) => (sortKey(b) > sortKey(a) ? b : a)).date;
 }

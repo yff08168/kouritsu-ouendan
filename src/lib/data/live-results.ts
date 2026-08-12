@@ -1,5 +1,4 @@
 // このファイルは scripts/build-live-results.mjs が生成する。直接編集しない。
-// 生成日時: 2026-08-12T10:06:57.011Z
 // 出典: 第108回全国高等学校野球選手権大会（Wikipedia, CC BY-SA）
 //   https://ja.wikipedia.org/wiki/%E7%AC%AC108%E5%9B%9E%E5%85%A8%E5%9B%BD%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E9%81%B8%E6%89%8B%E6%A8%A9%E5%A4%A7%E4%BC%9A
 
@@ -10,8 +9,6 @@ export const LIVE_RESULTS: LiveResults = {
   "season": "summer",
   "year": 2026,
   "sourceUrl": "https://ja.wikipedia.org/wiki/%E7%AC%AC108%E5%9B%9E%E5%85%A8%E5%9B%BD%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E9%81%B8%E6%89%8B%E6%A8%A9%E5%A4%A7%E4%BC%9A",
-  "revisedAt": "2026-08-12T10:05:00Z",
-  "generatedAt": "2026-08-12T10:06:57.012Z",
   "games": [
     {
       "round": "2回戦",

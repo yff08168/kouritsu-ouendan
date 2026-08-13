@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { CSSProperties } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import { PREFECTURES, REGIONS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import type { LatestPublicByPrefecture } from "@/lib/queries/rankings";
@@ -7,6 +7,24 @@ import type { LatestPublicByPrefecture } from "@/lib/queries/rankings";
 type Props = {
   /** 都道府県slug -> 収録校数 */
   counts?: Record<string, number>;
+  /**
+   * タイル地図の**左上の空き**に入れる内容。
+   *
+   * 49地区を日本の形に並べると、左上（1〜8列目・1〜5行目）が丸ごと空く。
+   * 北海道と東北が右端に寄るためで、ここは何を置いても地図の形を崩さない。
+   *
+   * `heading` は1〜2行目に固定で入る（セクションの見出しを想定）。
+   * **地図の外に置くと、地図の左上が見出しのぶんだけ下から始まって
+   * 右隣の北北海道と上端が揃わず、そこに空きができる。**
+   *
+   * `aside` は残りの3〜5行目に入るが、**入り切る幅のときだけ**。
+   * 足りなければ地図の下に回る（globals.css の `.prefecture-map__aside`）。
+   *
+   * **狭いときは地図が横並びのボタンに変わる**ので、その場合は普通の
+   * 縦並びに戻し、見出しを先頭・案内を最後に置く（`order`）。
+   */
+  heading?: ReactNode;
+  aside?: ReactNode;
   /**
    * 地区slug -> 春・夏それぞれで直近に甲子園へ出た公立校。
    * 渡すとマスの中に校名が出る（幅が足りるときだけ）。
@@ -40,6 +58,8 @@ const defaultHref = (slug: string) => `/prefectures/${slug}`;
  */
 export function PrefectureMap({
   counts,
+  heading,
+  aside,
   latest,
   highlightYear,
   buildHref = defaultHref,
@@ -50,6 +70,8 @@ export function PrefectureMap({
     // 幅を測る基準になる要素。これ自体には見た目を持たせない。
     <div className={cn("prefecture-map-frame", className)}>
       <div className={cn("prefecture-map", latest && "prefecture-map--detailed")}>
+        {heading && <div className="prefecture-map__heading">{heading}</div>}
+        {aside && <div className="prefecture-map__aside">{aside}</div>}
         {REGIONS.map((region) => (
           <div key={region} className="prefecture-map__region">
             <span className="prefecture-map__region-name">{region}</span>

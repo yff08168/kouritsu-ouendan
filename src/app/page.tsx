@@ -7,12 +7,17 @@ import { SectionHeading } from "@/components/common/SectionHeading";
 import { XFollowCard } from "@/components/common/XFollowCard";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { LiveResultsCard } from "@/components/results/LiveResultsCard";
+import { RegionalResultsCard } from "@/components/results/RegionalResultsCard";
 import { SchoolCard } from "@/components/schools/SchoolCard";
 import { PrefectureMap } from "@/components/schools/PrefectureMap";
+import { PrefectureMapGuide } from "@/components/schools/PrefectureMapGuide";
 import { PhenomenonRanking } from "@/components/phenomenon/PhenomenonRanking";
 import { FeatureCard } from "@/components/features/FeatureCard";
 
 import { LIVE_RESULTS } from "@/lib/data/live-results";
+import { REGIONAL_PICKUPS } from "@/lib/data/regional-pickup";
+import { pickResultsSlot } from "@/lib/results-slot";
+import { spotlightTitle } from "@/lib/regional-results";
 import { statusBySlug } from "@/lib/live-results";
 import {
   getSchoolsBySlugs,
@@ -67,12 +72,50 @@ export default async function HomePage() {
     どの地区も色が付かず、色分けの説明だけが浮いてしまう。
   */
   const thisYear = koshien.latestYear;
-  const bothSeasons = Object.values(latestByPrefecture).filter(
+  /*
+    地図の左上の欄に出す数字。**地図から読み取れるものだけ**にしてある。
+    地図と食い違う数字を並べると、どちらが正なのか分からなくなる。
+  */
+  const mapEntries = Object.values(latestByPrefecture);
+  const countDistricts = (season: "spring" | "summer") =>
+    thisYear == null
+      ? 0
+      : mapEntries.filter((entry) => entry[season]?.year === thisYear).length;
+  const springDistricts = countDistricts("spring");
+  const summerDistricts = countDistricts("summer");
+  const bothSeasons = mapEntries.filter(
     (entry) =>
       thisYear != null &&
       entry.spring?.year === thisYear &&
       entry.summer?.year === thisYear,
   ).length;
+  const totalSchools = Object.values(prefectureCounts).reduce(
+    (sum, count) => sum + count,
+    0,
+  );
+
+  /*
+    結果速報の枠に甲子園と地方大会のどちらを出すか。
+    **今日の日付ではなく、最後の試合が新しいほうを出す**（`pickResultsSlot`）。
+    右カラム（出場校／勝ち上がり）も同じ判定で一緒に入れ替える。
+  */
+  const resultsSlot = pickResultsSlot(LIVE_RESULTS, REGIONAL_PICKUPS);
+  /*
+    **勝ち上がりが1校も無いときは切り替えない。** 大会の谷間や、
+    どの県も初戦前のときに空の枠が出てしまう。そのときは
+    従来どおり甲子園の出場校を出しておくほうが、情報として空にならない。
+  */
+  const showRegionalSpotlight =
+    resultsSlot === "regional" &&
+    REGIONAL_PICKUPS.spotlightSeason != null &&
+    REGIONAL_PICKUPS.spotlight.length > 0;
+  const spotlightBySlug = new Map(
+    REGIONAL_PICKUPS.spotlight.map((s) => [s.slug, s]),
+  );
+  // 学校カードに出す情報はDBから引く（甲子園の出場校と同じ作り）
+  const spotlightCards = showRegionalSpotlight
+    ? await getSchoolsBySlugs(REGIONAL_PICKUPS.spotlight.map((s) => s.slug))
+    : [];
 
   return (
     <>
@@ -90,17 +133,75 @@ export default async function HomePage() {
       <Container className="mt-4 sm:mt-5">
         <div className="grid gap-4 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
           {/*
-            結果速報。
-            DBのニュースではなく、Wikipediaから自動生成した試合結果を出す。
-            公立校が絡む試合だけに絞ってあるのがこのサイトの切り口。
+            結果速報。**時期によって中身が入れ替わる枠。**
+
+            大会期間中は甲子園、それ以外は地方大会（秋季・春季・選手権予選）。
+            公立校が絡む試合だけに絞ってあるのがこのサイトの切り口で、
+            そこは甲子園でも地方大会でも同じ。
+
+            ★**切り替えは今日の日付ではなくデータで決める**（`pickResultsSlot`）。
+            日付で切ると大会の谷間に何も出ない期間ができ、雨天順延にも追随できない。
           */}
-          <LiveResultsCard results={LIVE_RESULTS} />
+          {resultsSlot === "koshien" ? (
+            <LiveResultsCard results={LIVE_RESULTS} />
+          ) : (
+            <RegionalResultsCard pickups={REGIONAL_PICKUPS} />
+          )}
 
           {/*
-            今夏の甲子園に出場している公立校。
+            右カラムも左の枠と一緒に入れ替える。**左が地方大会なのに右が
+            夏の出場校のままだと、秋・冬に古い情報が残り続ける。**
+
+            甲子園の期間中 … 今夏の甲子園に出場している公立校
+            それ以外       … いま開催中の地方大会で勝ち上がっている公立校
+
             以前は「甲子園出場回数の多い順」の3校を出していたが、
             **大会期間中に見たいのは殿堂ではなく「いま出ている学校」。**
+            地方大会のときも同じ考えで「いま勝ち上がっている学校」を出す。
           */}
+          {showRegionalSpotlight ? (
+            <section
+              aria-labelledby="featured-heading"
+              className="rounded-xl border border-line bg-white p-4 sm:p-5"
+            >
+              <SectionHeading
+                id="featured-heading"
+                title={spotlightTitle(REGIONAL_PICKUPS.spotlightSeason!)}
+                icon={<Star size={22} />}
+                moreHref="/schools"
+              />
+              <p className="mt-1 text-sm text-ink-muted">
+                まだ1度も負けていない公立校　{spotlightCards.length}校
+              </p>
+              <ul className="mt-1 divide-y divide-line">
+                {spotlightCards.map((school) => {
+                  const record = spotlightBySlug.get(school.slug);
+                  return (
+                    <li key={school.id}>
+                      <SchoolCard
+                        school={school}
+                        compact
+                        note={
+                          record ? (
+                            <span className="font-bold text-accent-800">
+                              {record.district}・
+                              {/*
+                                **「1勝」ではなく「ベスト16」を出す。**
+                                参加校数が県で大きく違うので、勝ち数だけでは
+                                どこまで勝ち上がったのか伝わらない。
+                                数えられなかったときだけ勝ち数に落とす。
+                              */}
+                              {record.standing ?? `${record.wins}勝で勝ち上がり`}
+                            </span>
+                          ) : null
+                        }
+                      />
+                    </li>
+                  );
+                })}
+              </ul>
+            </section>
+          ) : (
           <section
             aria-labelledby="featured-heading"
             className="rounded-xl border border-line bg-white p-4 sm:p-5"
@@ -149,6 +250,7 @@ export default async function HomePage() {
               })}
             </ul>
           </section>
+          )}
         </div>
       </Container>
 
@@ -161,47 +263,45 @@ export default async function HomePage() {
           aria-labelledby="search-heading"
           className="rounded-xl border border-line bg-white p-4 sm:p-5"
         >
-          <SectionHeading
-            id="search-heading"
-            title="公立高校を探す"
-            icon={<Search size={20} />}
-          />
-          <p className="mt-3 text-sm font-medium text-ink">
-            都道府県から探す
-            <span className="ml-2 text-xs font-normal text-ink-muted">
-              春・夏それぞれで、その地区から最後に甲子園へ出た公立校を出しています（右肩の数字は掲載校数）
-            </span>
-          </p>
+          {/*
+            **見出しも含めて、地図の左上の空きに入れる**（`aside`）。
+            49地区を日本の形に並べると1〜8列目・1〜5行目が丸ごと空くので、
+            凡例も数字も「学校名から探す」も地図の下に積む必要がない。
+
+            見出しを地図の外に置くと、地図の左上が見出しのぶんだけ下から
+            始まって右隣の北北海道と上端が揃わず、そこに空きができる。
+            狭いときは地図が横並びのボタンに変わり、`aside` は先頭に回る
+            （見出しが地区ボタンより下に来ないようにするため）。
+          */}
           <PrefectureMap
             counts={prefectureCounts}
             latest={latestByPrefecture}
             highlightYear={thisYear}
-            className="mt-3"
-          />
-
-          {/* 色分けは色だけで意味を持たせない。必ず文字で書く。 */}
-          {thisYear != null && (
-            <p className="mt-4 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-xs text-ink-muted">
-              <span
-                aria-hidden="true"
-                className="inline-block h-3.5 w-6 rounded-sm border border-accent-500 bg-accent-50"
+            heading={
+              <>
+                <SectionHeading
+                  id="search-heading"
+                  title="公立高校を探す"
+                  icon={<Search size={20} />}
+                />
+                <p className="mt-2 text-sm font-medium text-ink">
+                  都道府県から探す
+                  <span className="ml-2 text-xs font-normal text-ink-muted">
+                    春・夏それぞれで、その地区から最後に甲子園へ出た公立校を出しています
+                  </span>
+                </p>
+              </>
+            }
+            aside={
+              <PrefectureMapGuide
+                totalSchools={totalSchools}
+                thisYear={thisYear}
+                springDistricts={springDistricts}
+                summerDistricts={summerDistricts}
+                bothSeasons={bothSeasons}
               />
-              <span>
-                {thisYear}年の春夏そろって公立校が出場した地区
-                {bothSeasons > 0 ? `（${bothSeasons}地区）` : "（まだありません）"}
-              </span>
-            </p>
-          )}
-
-          <div className="mt-5 flex justify-center">
-            <Link
-              href="/schools"
-              className="inline-flex min-h-12 w-full max-w-sm items-center justify-center gap-2 rounded-lg bg-navy-800 px-6 text-base font-bold text-white hover:bg-navy-700"
-            >
-              <Search size={18} aria-hidden="true" />
-              学校名から探す
-            </Link>
-          </div>
+            }
+          />
         </section>
       </Container>
 

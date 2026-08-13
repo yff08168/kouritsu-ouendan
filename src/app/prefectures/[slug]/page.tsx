@@ -19,6 +19,7 @@ import { NewsCard } from "@/components/news/NewsCard";
 import { PhenomenonCard } from "@/components/phenomenon/PhenomenonCard";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { PollCard } from "@/components/community/PollCard";
+import { RegionalDistrictCard } from "@/components/results/RegionalDistrictCard";
 import { CheerMessageForm } from "@/components/community/CheerMessageForm";
 import { CheerMessageList } from "@/components/community/CheerMessageList";
 
@@ -32,6 +33,16 @@ import {
   getCheerTopics,
 } from "@/lib/queries/community";
 import { PREFECTURES } from "@/lib/constants";
+import { getRegionalDistrict, latestSeasonGames } from "@/lib/regional-results";
+
+/**
+ * その県の地方大会の結果を何試合まで出すか。
+ *
+ * 神奈川の選手権予選は公立が絡む試合だけで100件を超える。全部出すと
+ * ページが長くなりすぎるうえ、**下の応援メッセージや投票まで遠くなる。**
+ * 出していない試合があることは画面に明記する（`RegionalDistrictCard`）。
+ */
+const REGIONAL_GAMES_LIMIT = 24;
 
 /**
  * 投票数と応援メッセージは動きが速いので、他のページより短く見直す。
@@ -67,7 +78,7 @@ export default async function PrefectureDetailPage({ params }: Props) {
 
   if (!prefecture) notFound();
 
-  const [schoolResult, newsResult, phenomena, polls, topics, messages] =
+  const [schoolResult, newsResult, phenomena, polls, topics, messages, regional] =
     await Promise.all([
       searchSchools({ prefectureSlug: slug, perPage: 12 }),
       getNewsList({ prefectureSlug: slug, perPage: 6 }),
@@ -75,7 +86,15 @@ export default async function PrefectureDetailPage({ params }: Props) {
       getActivePolls(slug),
       getCheerTopics(),
       getCheerMessages({ prefectureSlug: slug, limit: 10 }),
+      /*
+        地方大会の結果。**DBではなくリポジトリ内の生成物**から読む
+        （`src/lib/data/regional/<県>.ts`。出典が県ごとに違うため）。
+        **対応していない県は null**（2026-08-13 時点で6県だけ）。
+      */
+      getRegionalDistrict(slug),
     ]);
+
+  const regionalGames = regional ? latestSeasonGames(regional, REGIONAL_GAMES_LIMIT) : null;
 
   return (
     <Container className="pb-4">
@@ -154,6 +173,17 @@ export default async function PrefectureDetailPage({ params }: Props) {
           <SchoolList schools={schoolResult.schools} />
         </div>
       </section>
+
+      {/* ------- 地方大会の結果（対応している県だけ） ------- */}
+      {regional && regionalGames && (
+        <RegionalDistrictCard
+          district={regional}
+          season={regionalGames.season}
+          games={regionalGames.games}
+          total={regionalGames.total}
+          tournaments={regionalGames.tournaments}
+        />
+      )}
 
       <AdSlot slot="sidebar" />
 

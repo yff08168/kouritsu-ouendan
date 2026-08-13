@@ -91,6 +91,26 @@ function AliveSchools({ alive }: { alive: LiveResults["alive"] }) {
         <Trophy size={16} aria-hidden="true" />
         勝ち残っている公立校
       </h3>
+      {/*
+        **項目に min-w を振って、学校をまたいで桁を揃えている。**
+
+        素直に flex + gap だけで組むと、前の項目の幅がそのまま後ろを押すので
+        学校ごとに位置がずれる。「大分商」と「鳴門渦潮」で校名の長さが違い、
+        次戦も開始時刻が出る学校と出ない学校があるため（日程が未発表だと
+        時刻が無い）、同じ項目が縦に並ばず読みにくかった。
+
+        li ごとに別の要素なので、grid を使っても列幅は共有されない
+        （subgrid は行方向にしか効かない）。**幅を直接そろえるしかない。**
+        値は最長の表記に合わせてある。溢れても flex なので押し出されるだけ。
+
+          校名     min-w-24 = 96px … 5文字（18px×5＝90px）まで
+          都道府県 min-w-22 = 88px … （南北海道）（14px×6＝84px）
+          日付     min-w-28 = 112px … 8月13日 18:00（約96px）
+          回戦     min-w-32 = 128px … 第1試合・準々決勝（約120px）
+
+        いちばん狭い画面では最後の「vs 相手」が次の行に折り返す。
+        これは元から（min-w を入れる前）そうなっていた。
+      */}
       <ul className="mt-2.5 space-y-2.5">
         {alive.map((school) => (
           <li key={school.slug}>
@@ -98,12 +118,12 @@ function AliveSchools({ alive }: { alive: LiveResults["alive"] }) {
               <Link
                 href={`/schools/${school.slug}`}
                 title={school.name}
-                className="text-lg font-bold text-navy-800 hover:underline"
+                className="min-w-24 text-lg font-bold text-navy-800 hover:underline"
               >
                 {school.display}
               </Link>
               {school.prefecture && (
-                <span className="text-sm text-ink-muted">
+                <span className="min-w-22 text-sm text-ink-muted">
                   （{school.prefecture}）
                 </span>
               )}
@@ -114,29 +134,41 @@ function AliveSchools({ alive }: { alive: LiveResults["alive"] }) {
 
             {/*
               次戦。日付・第何試合・開始時刻まで出せるのは出典が高野連だから。
-              **日程が発表されていない試合はページ自体が無い**ので、
-              「相手だけ分かっていて日付が空」という状態にはならない。
+
+              **日程が未発表でも対戦カードは出す。** 3回戦までは大会前の
+              抽選で決まっているので、日別ページがまだ無いだけの状態がある
+              （組み合わせ表から補っている。`provisional`）。そのときは
+              開始時刻が無いので、時刻の欄が空くだけになる。
+
+              **未発表であることは画面に書かない**（ユーザーの指示）。
+              相手と第何試合かは抽選で確定しており、読者にとっては
+              「時刻がまだ出ていない」以上の意味が無いため。
+
+              next が null なのは3回戦まで勝ったとき。準々決勝以降は
+              勝ちチーム主将のくじ引きなので、まだ相手が決まっていない。
             */}
             {school.next ? (
               <p className="mt-1 flex flex-wrap items-baseline gap-x-2 rounded bg-white/70 px-2.5 py-1.5 text-sm">
                 <span className="rounded bg-accent-500 px-1.5 py-0.5 text-xs font-bold text-navy-900">
                   次戦
                 </span>
-                <span className="font-bold text-ink">
-                  {school.next.date}
+                <span className="min-w-28 font-bold text-ink">
+                  {school.next.date ?? `大会第${school.next.dayNo}日`}
                   {school.next.startTime && (
                     <span className="ml-1.5">{school.next.startTime}</span>
                   )}
                 </span>
-                <span className="text-ink-muted">
+                <span className="min-w-32 text-ink-muted">
                   {school.next.order && <>第{school.next.order}試合・</>}
                   {school.next.round}
                 </span>
-                <span className="text-ink">vs {school.next.opponent}</span>
+                <span className="text-ink">
+                  vs {school.next.opponent ?? "勝者"}
+                </span>
               </p>
             ) : (
               <p className="mt-1 text-sm text-ink-muted">
-                次戦の日程はまだ発表されていません
+                次戦の相手はまだ決まっていません
               </p>
             )}
           </li>

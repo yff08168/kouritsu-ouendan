@@ -246,9 +246,11 @@ export const LIVE_RESULTS: LiveResults = {
       "next": {
         "round": "2回戦",
         "date": "8月13日",
+        "dayNo": 9,
         "order": "4",
         "startTime": "18:00",
-        "opponent": "英明"
+        "opponent": "英明",
+        "provisional": false
       }
     },
     {
@@ -257,7 +259,15 @@ export const LIVE_RESULTS: LiveResults = {
       "name": "鳴門渦潮高校",
       "prefecture": "徳島",
       "wins": 1,
-      "next": null
+      "next": {
+        "round": "2回戦",
+        "date": "8月14日",
+        "dayNo": 10,
+        "order": "2",
+        "startTime": null,
+        "opponent": "霞ケ浦",
+        "provisional": true
+      }
     }
   ]
 };

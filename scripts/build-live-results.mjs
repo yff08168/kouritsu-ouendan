@@ -27,6 +27,7 @@
  *
  *   一覧 /sensyuken/<年>/schedule/          … schedule_YYYYMMDD.html へのリンク
  *   代表校 /sensyuken/<年>/team/            … 「地区名」「略称」「出場回数」
+ *   組み合わせ /sensyuken/<年>/tournament/  … ブラケット（次戦の第2の出典）
  *   日別 /sensyuken/<年>/schedule/schedule_YYYYMMDD.html
  *
  *     <h4>8月9日(日) ＜大会5日目＞</h4>
@@ -36,6 +37,17 @@
  *
  *   **未実施の試合はスコアの数字が無く、表も無い。** 見出しと対戦カードだけが
  *   先に載る。ここから次戦の日付・試合番号・開始時刻が取れる。
+ *
+ * ------------------------------------------------------------------
+ * 次戦の出典は2つある（2026-08-13 追加）
+ *
+ *   日別ページは**日程が発表された日ぶんしか無い**（2〜3日先まで）。
+ *   勝った直後の学校は、対戦相手が抽選で決まっているのにページが無くて
+ *   次戦が空になる。そこを組み合わせ表 `/sensyuken/<年>/tournament/` で
+ *   補う。詳しくは下の「組み合わせ表」の節。
+ *
+ *   **日別ページ由来を優先する。** 組み合わせ表には開始時刻が無く、
+ *   日付も「第N日」からの換算なので、日程が出ていればそちらが正しい。
  */
 import { writeFileSync } from "node:fs";
 import path from "node:path";
@@ -112,11 +124,19 @@ function parseTeams(html) {
 // 日別ページ
 // ------------------------------------------------------------------
 
-/** 「8月9日(日) ＜大会5日目＞」→「8月9日」 */
+/**
+ * 「8月9日(日) ＜大会5日目＞」→ { date: "8月9日", dayNo: 5 }
+ *
+ * **大会何日目かも取る。** 組み合わせ表の試合は「第10日 第2試合」としか
+ * 書かれていないので、日付に直すのにこの対応表が要る。
+ */
 function parseDate(html) {
   const m = html.match(/<h4[^>]*>([\s\S]*?)<\/h4>/);
   const text = m ? plain(m[1]) : "";
-  return text.match(/\d+月\d+日/)?.[0] ?? null;
+  return {
+    date: text.match(/\d+月\d+日/)?.[0] ?? null,
+    dayNo: Number(text.match(/大会\s*(\d+)\s*日目/)?.[1]) || null,
+  };
 }
 
 /**
@@ -201,6 +221,118 @@ function parseDay(html, date) {
   }
   flush();
   return games;
+}
+
+// ------------------------------------------------------------------
+// 組み合わせ表（次戦を日程発表より先に出すための第2の出典）
+// ------------------------------------------------------------------
+
+/*
+ * なぜ日別ページだけでは足りないのか（2026-08-13 に追加）
+ *
+ *   高野連は**日程が発表された日ぶんのページしか作らない。** 2026-08-13
+ *   の時点で日別ページは 8/5〜8/13 の9日ぶんしか無く、8/14 の第10日
+ *   第2試合（鳴門渦潮 対 霞ケ浦）は日別ページのどこにも出てこない。
+ *   一方その対戦は**8月1日の抽選で決まっている**（3回戦までは大会前に
+ *   抽選し、準々決勝以降だけ勝ちチーム主将がくじを引く）。
+ *
+ *   その決まっているぶんが載っているのが `/sensyuken/<年>/tournament/`。
+ *   ここから**トーナメントの形**だけを取り、勝敗は日別ページで解決する。
+ *
+ * ------------------------------------------------------------------
+ * ページの構造
+ *
+ *   罫線をGIF画像で描いた古い作りの table が13個並んでいる。
+ *   意味を持つセルは2種類しかない。
+ *
+ *     <td class="teamName">鳴門渦潮 (徳島)</td>
+ *     <td colspan="3" class="gameDay">第5日 第3試合</td>
+ *
+ *   **1つの table が、そのままブラケットの部分木の中置表記になっている。**
+ *   セルの左からの位置（colspan を数えた列番号）が回戦の深さで、
+ *   列番号が大きいほど後の回戦＝木の上のほう。だから
+ *   「いちばん列番号の大きい試合で左右に割る」を再帰すれば木になる。
+ *
+ *     [東筑 G1 神村学園] G3 [聖隷 G1 佐野日大]  ← G3 が 2回戦、G1 が 1回戦
+ *
+ *   **チームが1つも無い table（8〜12番目）は読まない。** 準々決勝以降は
+ *   くじ引きなので、線がつながっていても対戦相手は決まっていない。
+ *   つまり**各 table の根は必ず3回戦**で、そこから下だけが確定している。
+ */
+
+/** 「第5日 第3試合」→ { dayNo: 5, order: "3" }。決勝など試合番号が無ければ order は null */
+function parseGameLabel(text) {
+  const day = text.match(/第(\d+)日/);
+  if (!day) return null;
+  const order = text.match(/第(\d+)試合/);
+  return { dayNo: Number(day[1]), order: order ? order[1] : null };
+}
+
+/** table 1つを、中置表記のまま [{kind:"team"|"game", ...}] にほどく */
+function parseBracketTable(tableHtml) {
+  const items = [];
+  for (const row of tableHtml.match(/<tr[^>]*>[\s\S]*?<\/tr>/g) ?? []) {
+    let col = 0;
+    for (const cell of row.matchAll(/<td([^>]*)>([\s\S]*?)<\/td>/g)) {
+      const [, attrs, inner] = cell;
+      const text = plain(inner);
+      if (text) {
+        if (/class="[^"]*teamName/.test(attrs)) {
+          // 「鳴門渦潮 (徳島)」。日別ページと同じ「略称＋地区名」の形
+          const m = text.match(/^(.+?)\s*[(（](.+?)[)）]$/);
+          if (m) items.push({ kind: "team", display: m[1].trim(), district: m[2].trim() });
+        } else if (/class="[^"]*gameDay/.test(attrs)) {
+          const label = parseGameLabel(text);
+          if (label) items.push({ kind: "game", col, ...label });
+        }
+        // それ以外の文字のあるセルはスコア。勝敗は日別ページで解決するので読まない
+      }
+      col += Number(/colspan="(\d+)"/.exec(attrs)?.[1] ?? 1);
+    }
+  }
+  return items;
+}
+
+/** 中置表記を木にする。列番号のいちばん大きい試合で割るのを繰り返す */
+function buildBracketTree(items) {
+  if (items.length === 0) return null;
+  if (items.length === 1) return items[0].kind === "team" ? items[0] : null;
+
+  let at = -1;
+  for (const [i, item] of items.entries()) {
+    if (item.kind === "game" && (at < 0 || item.col > items[at].col)) at = i;
+  }
+  if (at < 0) return null;
+
+  const left = buildBracketTree(items.slice(0, at));
+  const right = buildBracketTree(items.slice(at + 1));
+  if (!left || !right) return null;
+  return { kind: "game", dayNo: items[at].dayNo, order: items[at].order, left, right };
+}
+
+/**
+ * 組み合わせ表を木の配列にする。**チームを含む table だけ**を返す。
+ * 木ごとに、根から数えた深さで回戦名を振る（根＝3回戦）。
+ */
+const BRACKET_ROUNDS = ["3回戦", "2回戦", "1回戦"];
+
+function parseBracket(html) {
+  const trees = [];
+  for (const m of html.matchAll(/<table class="tournamentTable">([\s\S]*?)<\/table>/g)) {
+    const items = parseBracketTable(m[1]);
+    if (!items.some((i) => i.kind === "team")) continue; // 準々決勝以降は未確定
+    const tree = buildBracketTree(items);
+    if (tree && tree.kind === "game") trees.push(tree);
+  }
+
+  const label = (node, depth) => {
+    if (node.kind !== "game") return;
+    node.round = BRACKET_ROUNDS[depth] ?? null;
+    label(node.left, depth + 1);
+    label(node.right, depth + 1);
+  };
+  for (const t of trees) label(t, 0);
+  return trees;
 }
 
 // ------------------------------------------------------------------
@@ -326,12 +458,16 @@ async function main() {
 
   // ---- 日別ページ ----
   const allGames = [];
+  /** 大会何日目か → 「8月13日」。組み合わせ表の「第10日」を日付に直すのに使う */
+  const dayNoToDate = new Map();
   for (const d of dates) {
     const html = await fetchText(
       `${ORIGIN}/sensyuken/${YEAR}/schedule/schedule_${d}.html`,
     );
     if (!html) continue;
-    const date = parseDate(html) ?? `${Number(d.slice(4, 6))}月${Number(d.slice(6, 8))}日`;
+    const head = parseDate(html);
+    const date = head.date ?? `${Number(d.slice(4, 6))}月${Number(d.slice(6, 8))}日`;
+    if (head.dayNo) dayNoToDate.set(head.dayNo, date);
     allGames.push(...parseDay(html, date));
   }
   console.log(`試合: ${allGames.length} 件（うち実施済み ${allGames.filter((g) => g.played).length} 件）`);
@@ -385,6 +521,7 @@ async function main() {
    * 次戦。**未実施の試合から引く。** ここが高野連に変えた最大の効き目で、
    * 日付・第何試合・開始時刻がそろう。
    */
+  const dateToDayNo = new Map([...dayNoToDate].map(([no, date]) => [date, no]));
   const nextBySlug = new Map();
   for (const g of allGames) {
     if (g.played) continue;
@@ -394,10 +531,147 @@ async function main() {
       nextBySlug.set(t.slug, {
         round: g.round,
         date: g.date,
+        dayNo: dateToDayNo.get(g.date) ?? null,
         order: g.order,
         startTime: g.startTime,
         opponent: teamsOut[1 - i].display,
+        provisional: false,
       });
+    }
+  }
+
+  /*
+    **日程がまだ発表されていないぶんを組み合わせ表から補う。**
+
+    上の nextBySlug は日別ページ由来なので、開始時刻まで分かるかわりに
+    「その日のページが出ていること」が前提になる。高野連は2〜3日先の
+    ぶんしか出さないので、勝った直後の学校は次戦が空のままになる。
+    抽選は3回戦まで済んでいるのだから、そこは埋められる。
+
+    **日別ページ由来を必ず優先する。** 組み合わせ表には開始時刻が無く、
+    日付も「第N日」からの換算なので、実際の日程が出ていればそちらが正しい。
+  */
+  const nextFromBracket = new Map();
+  const bracketUrl = `${ORIGIN}/sensyuken/${YEAR}/tournament/`;
+  const bracketHtml = await fetchText(bracketUrl);
+  const brackets = bracketHtml ? parseBracket(bracketHtml) : [];
+
+  if (!brackets.length) {
+    console.log(`⚠️ 組み合わせ表を読めませんでした（${bracketUrl}）。次戦は日別ページのぶんだけになります。`);
+  } else {
+    /** 「8月13日\t2」→ 実施済みの試合 */
+    const playedByKey = new Map();
+    for (const g of allGames) {
+      if (g.played) playedByKey.set(`${g.date}\t${g.order}`, g);
+    }
+
+    /**
+     * 「第N日」を日付に直す。
+     *
+     * 日別ページが出ていればそこから引く。出ていない先の日は
+     * **1日ずつ進むと仮定して外挿する**が、次の条件を満たすときだけ。
+     *
+     *   1. 分かっている日がすべて第1日から1日ずつ並んでいること
+     *      （雨天順延が起きるとここが崩れる。崩れたら外挿しない）
+     *   2. 分かっている最後の日から3日以内であること
+     *
+     * **休養日は考えなくてよい。** 休養日は「3回戦2日目・準々決勝・
+     * 準決勝の各翌日」で、ここで扱うのは3回戦までなので必ず連続の区間に入る。
+     */
+    const known = [...dayNoToDate.entries()].sort((a, b) => a[0] - b[0]);
+    const toDate = (s) => {
+      const m = s.match(/(\d+)月(\d+)日/);
+      return m ? new Date(YEAR, Number(m[1]) - 1, Number(m[2])) : null;
+    };
+    const format = (d) => `${d.getMonth() + 1}月${d.getDate()}日`;
+    const DAY_MS = 86400000;
+    const base = known.length ? { no: known[0][0], at: toDate(known[0][1]) } : null;
+    const consecutive =
+      base?.at != null &&
+      known.every(([no, date]) => {
+        const at = toDate(date);
+        return at && at.getTime() - base.at.getTime() === (no - base.no) * DAY_MS;
+      });
+    const lastKnownNo = known.length ? known.at(-1)[0] : 0;
+    if (!consecutive) {
+      console.log("⚠️ 大会日と日付が1日ずつ並んでいません（順延？）。未発表の日は日付を出しません。");
+    }
+
+    const dateOfDay = (dayNo) => {
+      const hit = dayNoToDate.get(dayNo);
+      if (hit) return hit;
+      if (!consecutive || dayNo <= lastKnownNo || dayNo > lastKnownNo + 3) return null;
+      return format(new Date(base.at.getTime() + (dayNo - base.no) * DAY_MS));
+    };
+
+    /** その試合の勝者。まだなら null。葉はその学校自身 */
+    const winnerOf = (node) => {
+      if (node.kind === "team") return node;
+      const date = dayNoToDate.get(node.dayNo);
+      if (!date) return null;
+      const g = playedByKey.get(`${date}\t${node.order}`);
+      if (!g) return null;
+      const [a, b] = g.teams;
+      if (a.score === b.score) return null; // 引き分け再試合
+      const w = a.score > b.score ? a : b;
+      return { display: w.display, district: w.district };
+    };
+
+    /*
+      **回戦名の付け方が正しいか、実施済みの試合で検算する。**
+      組み合わせ表には回戦名が書かれておらず「根が3回戦」という前提で
+      深さから振っている。ページの組み方が変わればこの前提が崩れるので、
+      1件でも食い違ったら組み合わせ表由来の次戦は出さない
+      （間違った回戦名を出すより、次戦が出ないほうがよい）。
+    */
+    const mismatched = [];
+    const parents = new Map();
+    const leafByKey = new Map();
+    for (const tree of brackets) {
+      const visit = (node, parent) => {
+        if (parent) parents.set(node, parent);
+        if (node.kind === "team") {
+          leafByKey.set(`${node.district}\t${node.display}`, node);
+          return;
+        }
+        const date = dayNoToDate.get(node.dayNo);
+        const g = date ? playedByKey.get(`${date}\t${node.order}`) : null;
+        if (g && node.round && g.round !== node.round) {
+          mismatched.push(`第${node.dayNo}日 第${node.order}試合: 組み合わせ表=${node.round} / 日別=${g.round}`);
+        }
+        visit(node.left, node);
+        visit(node.right, node);
+      };
+      visit(tree, null);
+    }
+
+    if (mismatched.length) {
+      console.log("⚠️ 組み合わせ表の回戦名が日別ページと食い違います。組み合わせ表は使いません:");
+      for (const m of mismatched.slice(0, 5)) console.log("   " + m);
+    } else {
+      for (const [key, t] of publicTeams) {
+        if (nextBySlug.has(t.slug)) continue;
+        let node = leafByKey.get(key);
+        while (node) {
+          const parent = parents.get(node);
+          // 根まで来た＝3回戦まで勝った。準々決勝以降はくじ引きなので未確定
+          if (!parent) break;
+          if (winnerOf(parent) === null) {
+            const sibling = parent.left === node ? parent.right : parent.left;
+            nextFromBracket.set(t.slug, {
+              round: parent.round,
+              date: dateOfDay(parent.dayNo),
+              dayNo: parent.dayNo,
+              order: parent.order,
+              startTime: null,
+              opponent: winnerOf(sibling)?.display ?? null,
+              provisional: true,
+            });
+            break;
+          }
+          node = parent;
+        }
+      }
     }
   }
 
@@ -409,7 +683,7 @@ async function main() {
       name: t.name,
       prefecture: t.prefecture,
       wins: winsBySlug.get(t.slug) ?? 0,
-      next: nextBySlug.get(t.slug) ?? null,
+      next: nextBySlug.get(t.slug) ?? nextFromBracket.get(t.slug) ?? null,
     }))
     .sort((a, b) => b.wins - a.wins || a.name.localeCompare(b.name, "ja"));
 
@@ -418,11 +692,17 @@ async function main() {
       alive.map((s) => `${s.display}(${s.wins}勝)`).join("、"),
   );
   for (const s of alive) {
-    if (s.next) {
-      console.log(
-        `   ${s.display} 次戦: ${s.next.date} 第${s.next.order}試合 ${s.next.startTime ?? "時刻未定"} ${s.next.round} vs ${s.next.opponent}`,
-      );
+    if (!s.next) {
+      console.log(`   ${s.display} 次戦: 未確定`);
+      continue;
     }
+    const n = s.next;
+    const when = n.date ?? `第${n.dayNo}日`;
+    console.log(
+      `   ${s.display} 次戦: ${when} 第${n.order}試合 ${n.startTime ?? "時刻未定"} ` +
+        `${n.round} vs ${n.opponent ?? "未定"}` +
+        (n.provisional ? "（組み合わせ表・日程未発表）" : ""),
+    );
   }
 
   const results = {

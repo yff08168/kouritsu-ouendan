@@ -2,17 +2,17 @@
  * 開催中の甲子園の試合結果。
  *
  * データ本体は `src/lib/data/live-results.ts`（**生成物・直接編集しない**）。
- * `scripts/build-live-results.mjs` が Wikipedia から作り、GitHub Actions が
- * 定期的に回してコミットする。
+ * `scripts/build-live-results.mjs` が日本高野連の公式サイトから作り、
+ * GitHub Actions が定期的に回してコミットする。
  *
  * DBに入れていないのは、書き込みに `service_role` キーが要るため。
  * このプロジェクトは意図的にそのキーを持たない（README参照）ので、
  * **生成物をリポジトリに置いてデプロイで反映する**形にしている。
- * 差分がGitに残るので、Wikipediaが荒らされても後から追える。
+ * 差分がGitに残るので、出典側が変わっても後から追える。
  */
 
 export type LiveTeam = {
-  /** Wikipediaのブラケット上の表記（「高岡商」など） */
+  /** 高野連の表記（「高岡商」など） */
   display: string;
   /** 学校マスタの校名。公立でなければ display と同じ */
   name: string;
@@ -48,22 +48,28 @@ export type LiveAliveSchool = {
   prefecture: string | null;
   wins: number;
   /**
-   * 次戦。
+   * 次戦。準々決勝以降はくじ引きなので、3回戦まで勝つと null になる。
    *
-   * 高野連は**日程が発表された日ぶんしかページを出さない。**
-   * 対戦カードが決まっていても、その日の日程がまだ出ていなければ null。
-   * 「相手だけ分かっていて日付が無い」状態は作らない
-   * （Wikipedia由来だったころは日付が常に空だった）。
+   * 出典が2つあり、**どちらから来たかで埋まる項目が違う**（`provisional`）。
+   *
+   *   日別ページ（provisional: false）… 日程が発表済み。開始時刻まで分かる
+   *   組み合わせ表（provisional: true）… 抽選で決まっているが日程は未発表。
+   *                                       開始時刻は無く、日付は「第N日」からの換算
    */
   next: {
-    round: string;
-    /** 「8月13日」 */
-    date: string;
+    round: string | null;
+    /** 「8月13日」。換算できないときだけ null */
+    date: string | null;
+    /** 大会何日目か。日付が出せないときの代わりに使う */
+    dayNo: number | null;
     /** その日の第何試合か */
     order: string | null;
-    /** 「18:00」。開始予定時刻 */
+    /** 「18:00」。開始予定時刻。日程が未発表なら null */
     startTime: string | null;
-    opponent: string;
+    /** 相手校。相手を決める試合がまだなら null */
+    opponent: string | null;
+    /** 組み合わせ表から補ったぶん＝日程はまだ発表されていない */
+    provisional: boolean;
   } | null;
 };
 

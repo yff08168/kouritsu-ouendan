@@ -1,0 +1,1966 @@
+[
+  {
+    "name": "北海道高等学校野球連盟",
+    "site": "http://www.hokkaido-hbf.jp/hp/index.html",
+    "origin": "http://www.hokkaido-hbf.jp",
+    "robots": "User-agent: * Disallow: /batch/ Disallow: /common/ Disallow: /gyouji/ Disallow: /hbftest/ Disallow: /hs/ Disallow: /hs_henkoulist/ Disallow: /img/ Disallow: /ispdf/ Disallow: /kiyakutodoke/ Disallow: /ktspdf/ Disallow: /local/ Disallow: /manage/ Disallow: /manual/ Disallow: /map/ Disallow: /mobile/ Disallow: /mobilehp/ Disallow: /nendokirokupdf/ Disallow: /newspic/ Disallow: /oldispdf/ Disallow: /scorepdf/ Disallow: /temp/ Disallow: /tspdf/ Arrow: /hp/index.html",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "無断転載の禁止",
+        "page": "(トップ)",
+        "url": "http://www.hokkaido-hbf.jp/hp/index.html",
+        "snippet": "erved. 掲載されている全ての写真、画像、記事、データの無断転用・転載をお断りします。"
+      },
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "http://www.hokkaido-hbf.jp/hp/index.html",
+        "snippet": "いたします！ https://lin.ee/8IyWlwP Copyright 2007-2022 Hokkaido High School Baseball"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "【南・北北海道大会エスコンフィールド北海道での準決勝・決勝の開催概要】",
+        "url": "http://www.hokkaido-hbf.jp/hp/info20230622_01.pdf"
+      },
+      {
+        "label": "秋季北海道高校野球大会 札幌ドーム開催について",
+        "url": "http://www.hokkaido-hbf.jp/hp/info20231005.pdf"
+      },
+      {
+        "label": "【南北海道大会エスコンフィールド北海道開催概要】",
+        "url": "http://www.hokkaido-hbf.jp/hp/info20240619.pdf"
+      },
+      {
+        "label": "【秋季北海道大会概要】",
+        "url": "http://www.hokkaido-hbf.jp/hp/info20241002.pdf"
+      },
+      {
+        "label": "【南・北北海道大会エスコンフィールド北海道入場券・駐車券販売概要】",
+        "url": "http://www.hokkaido-hbf.jp/hp/info20250620.pdf"
+      },
+      {
+        "label": "【秋季北海道大会概要】",
+        "url": "http://www.hokkaido-hbf.jp/hp/info20251003.pdf"
+      },
+      {
+        "label": "【南・北北海道大会エスコンフィールド北海道での準決勝・決勝の開催概要】",
+        "url": "http://www.hokkaido-hbf.jp/hp/info20260612.pdf"
+      }
+    ],
+    "note": [],
+    "charset": "euc-jp",
+    "finalUrl": "http://www.hokkaido-hbf.jp/hp/index.html"
+  },
+  {
+    "name": "青森県高等学校野球連盟",
+    "site": "http://www.aomori-kouyaren.com/",
+    "origin": "http://www.aomori-kouyaren.com",
+    "robots": "User-agent: * Disallow: /wp-admin/ Allow: /wp-admin/admin-ajax.php Sitemap: https://www.aomori-kouyaren.com/wp-sitemap.xml",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "無断転載の禁止",
+        "page": "(トップ)",
+        "url": "https://www.aomori-kouyaren.com/",
+        "snippet": " このホームページに掲載されている全ての画像・文章・データの無断転用・転載をお断りします。 &copy; Aomori Highschool Baseball F"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "大会日程",
+        "url": "https://www.aomori-kouyaren.com/schedule/"
+      },
+      {
+        "label": "試合結果",
+        "url": "https://www.aomori-kouyaren.com/result/"
+      },
+      {
+        "label": "過去の大会資料",
+        "url": "https://www.aomori-kouyaren.com/data/"
+      },
+      {
+        "label": "令和８年度秋季高等学校野球ブロック大会【組み合わせ】",
+        "url": "https://www.aomori-kouyaren.com/wp-content/uploads/2026/08/757fd3c4455b0e9d393f6c2d75f02f84.pdf"
+      },
+      {
+        "label": "第73回春季東北地区高等学校野球青森県大会 開催",
+        "url": "https://www.aomori-kouyaren.com/news/news-2654/"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権青森大会【大会結果】",
+        "url": "https://www.aomori-kouyaren.com/wp-content/uploads/2026/07/03_108_natsu.pdf"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権青森大会【変更 組み合わせ】",
+        "url": "https://www.aomori-kouyaren.com/wp-content/uploads/2026/07/108_natsu_02.pdf"
+      },
+      {
+        "label": "第73回春季東北地区高等学校野球大会【大会結果】",
+        "url": "https://www.aomori-kouyaren.com/wp-content/uploads/2026/07/02_haru_tohoku-1.pdf"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://www.aomori-kouyaren.com/"
+  },
+  {
+    "name": "岩手県高等学校野球連盟",
+    "site": "http://www.iwate-koyaren.com/",
+    "origin": "http://www.iwate-koyaren.com",
+    "robots": "User-agent: * Disallow: /cms/wp-admin/ Allow: /cms/wp-admin/admin-ajax.php Sitemap: https://www.iwate-koyaren.com/wp-sitemap.xml",
+    "terms": [
+      {
+        "label": "サイトポリシー",
+        "url": "https://www.iwate-koyaren.com/sitepolicy/",
+        "ok": true
+      }
+    ],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "https://www.iwate-koyaren.com/",
+        "snippet": "WEBサイト内に掲載の写真・記事の無断転載は御遠慮ください Copyright(C) Iwate High School Baseball Federatio"
+      },
+      {
+        "rule": "無断転載の禁止",
+        "page": "サイトポリシー",
+        "url": "https://www.iwate-koyaren.com/sitepolicy/",
+        "snippet": "べての画像やレイアウト、および記事やドキュメントなどは事前の許可なく無断で引用、転載、加工することはできません。 リンクについて 当サイトへのリンクはトップページへお願いします。トップページ"
+      },
+      {
+        "rule": "著作権の記載",
+        "page": "サイトポリシー",
+        "url": "https://www.iwate-koyaren.com/sitepolicy/",
+        "snippet": "意図したものとは違い、正常にご利用できない場合があります。 著作権について 当サイト内の写真やロゴなどすべての画像やレイアウト、および記事やドキュ"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "大会結果",
+        "url": "https://www.iwate-koyaren.com/results-nanshiki/"
+      },
+      {
+        "label": "大会スケジュール",
+        "url": "https://www.iwate-koyaren.com/cms/wp-content/themes/kouyaren/images/top/schedule/R5taikainittei.pdf"
+      },
+      {
+        "label": "2026.08.02 岩手県高野連選抜・北東北大学野球選抜交流試合の結果",
+        "url": "https://www.iwate-koyaren.com/4569/"
+      },
+      {
+        "label": "2026.07.31 第71回全国高等学校軟式野球選手権東東北大会勝ち上がり",
+        "url": "https://www.iwate-koyaren.com/4536/"
+      },
+      {
+        "label": "2026.07.25 第108回全国高等学校野球選手権岩手大会【勝ち上がり】",
+        "url": "https://www.iwate-koyaren.com/4413/"
+      },
+      {
+        "label": "2026.07.25 第108回全国高等学校野球選手権岩手大会 7.25始球式 ",
+        "url": "https://www.iwate-koyaren.com/4519/"
+      },
+      {
+        "label": "2026.07.23 第108回全国高等学校野球選手権岩手大会 7.23始球式 ",
+        "url": "https://www.iwate-koyaren.com/4512/"
+      },
+      {
+        "label": "2026.07.20 第108回全国高等学校野球選手権岩手大会 7.20始球式 ",
+        "url": "https://www.iwate-koyaren.com/4470/"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://www.iwate-koyaren.com/"
+  },
+  {
+    "name": "秋田県高等学校野球連盟",
+    "site": "http://www.akita-koyaren.com/",
+    "origin": "http://www.akita-koyaren.com",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "無断転載の禁止",
+        "page": "(トップ)",
+        "url": "http://www.akita-koyaren.com/",
+        "snippet": "ohibited. 掲載されている全ての画像,文章,データの無断転用、転載をお断りします。"
+      },
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "http://www.akita-koyaren.com/",
+        "snippet": "田中央高等学校内 TEL/FAX：018-846-5589 Copyright 2005 Akita High School Baseball Federat"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "組合せ",
+        "url": "http://www.akita-koyaren.com/05/R07_aki/%E6%9D%B1%E5%8C%97/78%20%E7%A7%8B%E5%AD%A3%E6%9D%B1%E5%8C%97%E5%A4%A7%E4%BC%9A%E7%B5%84%E5%90%88%E3%81%9B%E3%82%84%E3%81%90%E3%82%89%E3%80%90%E7%A2%BA%E5%AE%9A%E3%80%91.pdf"
+      }
+    ],
+    "note": [],
+    "charset": "shift_jis",
+    "finalUrl": "http://www.akita-koyaren.com/"
+  },
+  {
+    "name": "山形県高等学校野球連盟",
+    "site": "http://www.yamagata-hbf.org/top",
+    "origin": "http://www.yamagata-hbf.org",
+    "robots": "User-agent: * Disallow: Sitemap: https://baseball.omyutech.com/sitemap.txt",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://www.yamagata-hbf.org/top"
+  },
+  {
+    "name": "宮城県高等学校野球連盟",
+    "site": "http://www.miyagi-kouyaren.com/",
+    "origin": "http://www.miyagi-kouyaren.com",
+    "robots": "なし(HTTP 404)",
+    "terms": [
+      {
+        "label": "サイトポリシー",
+        "url": "http://www.miyagi-kouyaren.com/sitepolicy.html",
+        "ok": true
+      }
+    ],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "http://www.miyagi-kouyaren.com/",
+        "snippet": "ナー広告募集 ボランティア募集 審判団員募集 お問い合わせ Copyright &copy; Miyagi High School Baseball Fede"
+      },
+      {
+        "rule": "無断転載の禁止",
+        "page": "サイトポリシー",
+        "url": "http://www.miyagi-kouyaren.com/sitepolicy.html",
+        "snippet": "べての画像やレイアウト、および記事やドキュメントなどは事前の許可なく無断で引用、転載、加工することはできません。 リンクについて 当サイトへのリンクはトップページ（httpss://www."
+      },
+      {
+        "rule": "著作権の記載",
+        "page": "サイトポリシー",
+        "url": "http://www.miyagi-kouyaren.com/sitepolicy.html",
+        "snippet": "意図したものとは違い、正常にご利用できない場合があります。 著作権について 当サイト内の写真やロゴなどすべての画像やレイアウト、および記事やドキュ"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "大会について",
+        "url": "http://www.miyagi-kouyaren.com/index.html#data"
+      },
+      {
+        "label": "過去の結果",
+        "url": "http://www.miyagi-kouyaren.com/results.html"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "http://www.miyagi-kouyaren.com/"
+  },
+  {
+    "name": "福島県高等学校野球連盟",
+    "site": "https://www.fks-kouyaren.com/",
+    "origin": "https://www.fks-kouyaren.com",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "https://www.fks-kouyaren.com/",
+        "snippet": "連盟ホームページﾞ内のコンテンツの無断使用はご遠慮下さい。 Copyrighted by Fukushima High School B aseball Fe"
+      },
+      {
+        "rule": "リンクの制限",
+        "page": "(トップ)",
+        "url": "https://www.fks-kouyaren.com/",
+        "snippet": "会関連 今年度 大会記録 軟式大会関連 中学大会速報 高野連リンク 東北大会連絡 青森県高野連 秋田県高野連 岩手県高野連 山形県高野連 宮城県高野連 日 本 "
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "過去 の 大会記録",
+        "url": "http://fks-kouyaren.com/renmeikankei/past_record/indexrecord.html"
+      },
+      {
+        "label": "大会規定",
+        "url": "https://www.fks-kouyaren.com/renmeikankei/kisoku/taikaikitei.pdf"
+      },
+      {
+        "label": "大会関連",
+        "url": "https://www.fks-kouyaren.com/#"
+      },
+      {
+        "label": "県 ﾘｱﾙﾀｲﾑ速報",
+        "url": "http://fks-kouyaren.com/click3/click3.cgi?cnt=realtime&url=https://fkshsbf.wordpress.com"
+      },
+      {
+        "label": "県 組合せと日程",
+        "url": "http://fks-kouyaren.com/click3/click3.cgi?cnt=kumiawase&url=http://fks-kouyaren.com/taikai/kumiawase.pdf"
+      },
+      {
+        "label": "県 試合結果詳細",
+        "url": "http://fks-kouyaren.com/click3/click3.cgi?cnt=shiaishousai&url=http://fks-kouyaren.com/taikai/shiaishousai.pdf"
+      },
+      {
+        "label": "東北大会関連",
+        "url": "http://fks-kouyaren.com/click3/click3.cgi?cnt=touhokukanren&url=http://fks-kouyaren.com/taikai/touhokutaikai.pdf"
+      },
+      {
+        "label": "全国大会関連",
+        "url": "http://fks-kouyaren.com/click3/click3.cgi?cnt=zenkokukanren&url=http://fks-kouyaren.com/taikai/zenkokutaikai.pdf"
+      }
+    ],
+    "note": [
+      "フレーム構成（4件）"
+    ],
+    "charset": "utf-8",
+    "finalUrl": "https://www.fks-kouyaren.com/"
+  },
+  {
+    "name": "茨城県高等学校野球連盟",
+    "site": "http://www.ibaraki-hbf.com/",
+    "origin": "http://www.ibaraki-hbf.com",
+    "robots": "User-agent: * Disallow: Sitemap: https://baseball.omyutech.com/sitemap.txt",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://www.ibaraki-hbf.com/"
+  },
+  {
+    "name": "栃木県高等学校野球連盟",
+    "site": "https://www.tochigi-koyaren.net/",
+    "origin": "https://www.tochigi-koyaren.net",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "https://www.tochigi-koyaren.net/",
+        "snippet": ".28） --> △ページのトップへ 個人情報保護方針 － Copyright(C) Tochigi High School Baseball Federat"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "全国大会関係",
+        "url": "https://www.tochigi-koyaren.net/national/index.html"
+      },
+      {
+        "label": "関東大会",
+        "url": "https://www.tochigi-koyaren.net/report/kanto.html"
+      },
+      {
+        "label": "春季地区予選",
+        "url": "https://www.tochigi-koyaren.net/report/spring-area.html"
+      },
+      {
+        "label": "第79回春季栃木県高等学校野球大会",
+        "url": "https://www.tochigi-koyaren.net/report/79sp-p.html"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権栃木大会",
+        "url": "https://www.tochigi-koyaren.net/report/108ch.html"
+      },
+      {
+        "label": "第78回秋季栃木県高等学校野球大会",
+        "url": "https://www.tochigi-koyaren.net/report/78au.html"
+      },
+      {
+        "label": "第16回 １年生大会",
+        "url": "https://www.tochigi-koyaren.net/report/1nen-no16.html"
+      },
+      {
+        "label": "試合結果",
+        "url": "https://www.tochigi-koyaren.net/report/75au/tournament.pdf"
+      }
+    ],
+    "note": [
+      "フレーム構成（2件）"
+    ],
+    "charset": "utf-8",
+    "finalUrl": "https://www.tochigi-koyaren.net/"
+  },
+  {
+    "name": "群馬県高等学校野球連盟",
+    "site": "http://www.gunma-hbf.com/",
+    "origin": "http://www.gunma-hbf.com",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [
+      {
+        "label": "過去の試合結果",
+        "url": "http://www.gunma-hbf.com/99_blank.html"
+      },
+      {
+        "label": "大会結果",
+        "url": "http://www.gunma-hbf.com/99_blank001.html"
+      },
+      {
+        "label": "組合せ",
+        "url": "http://www.gunma-hbf.com/R8-H78kumi.pdf"
+      },
+      {
+        "label": "結果",
+        "url": "http://www.gunma-hbf.com/99_blank014065.html"
+      },
+      {
+        "label": "組合せ",
+        "url": "http://www.gunma-hbf.com/R8-N108kumi.pdf"
+      },
+      {
+        "label": "結果",
+        "url": "http://www.gunma-hbf.com/99_blank010067.html"
+      },
+      {
+        "label": "組合せ",
+        "url": "http://www.gunma-hbf.com/R8-N108kumi2.pdf"
+      },
+      {
+        "label": "結果",
+        "url": "http://www.gunma-hbf.com/R8-N108k14.pdf"
+      }
+    ],
+    "note": [],
+    "charset": "shift_jis",
+    "finalUrl": "http://www.gunma-hbf.com/"
+  },
+  {
+    "name": "埼玉県高等学校野球連盟",
+    "site": "http://www2.ttcn.ne.jp/~sai-kouyaren/",
+    "origin": "http://www2.ttcn.ne.jp",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "無断転載の禁止",
+        "page": "(トップ)",
+        "url": "http://www2.ttcn.ne.jp/~sai-kouyaren/",
+        "snippet": "・管理する公式ホームページです。 当ページの内容・画像などを無断転載・複製・複写することを一切禁止いたします。 埼玉県高野連軟式部公式HP 高校野球審判員募集 埼玉県高等学校野球"
+      },
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "http://www2.ttcn.ne.jp/~sai-kouyaren/",
+        "snippet": "。 ２．個人が特定できるもの。 ３．営利を目的としたもの。 Copyright&copy; Saitama Highschool Baseball Feder"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "大会トーナメント表(最終結果）",
+        "url": "http://www2.ttcn.ne.jp/~sai-kouyaren/taikai/r8/108/R8_yagura_0726_compressed.pdf"
+      },
+      {
+        "label": "関東大会トーナメント",
+        "url": "http://www2.ttcn.ne.jp/~sai-kouyaren/taikai/r8/spring/kanto/R8_0524kanto_yagura_compressed.pdf"
+      },
+      {
+        "label": "県大会トーナメント表",
+        "url": "http://www2.ttcn.ne.jp/~sai-kouyaren/taikai/r8/spring/ken/R8_0505_compressed.pdf"
+      },
+      {
+        "label": "地区予選トーナメント表",
+        "url": "http://www2.ttcn.ne.jp/~sai-kouyaren/taikai/r8/spring/tiku/R8_0416_compressed.pdf"
+      },
+      {
+        "label": "第98回選抜高等学校野球大会",
+        "url": "http://www2.ttcn.ne.jp/~sai-kouyaren/taikai/r8/R8senbatsu_compressed.pdf"
+      },
+      {
+        "label": "県大会トーナメント表",
+        "url": "http://www2.ttcn.ne.jp/~sai-kouyaren/taikai/r7/autum/ken/R7_autum_ken_1005_compressed.pdf"
+      },
+      {
+        "label": "↓一球速報はこちら↓",
+        "url": "https://baseball.omyutech.com/CupHomePageTournament.action?cupId=20250007767"
+      },
+      {
+        "label": "地区予選トーナメント表",
+        "url": "http://www2.ttcn.ne.jp/~sai-kouyaren/taikai/r7/autum/tiku/R7_0912autum_tiku_compressed1.pdf"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "http://www2.ttcn.ne.jp/~sai-kouyaren/"
+  },
+  {
+    "name": "山梨県高等学校野球連盟",
+    "site": "http://www.yamanashi-hbf.com/",
+    "origin": "http://www.yamanashi-hbf.com",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "http://www.yamanashi-hbf.com/top.html",
+        "snippet": "回春季関東地区高校野球山梨県大会組み合わせ(PDF) 戻る Copyright (C) 2004-2026 山梨高野連 All Rights Reserved"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "第108回全国高等学校野球選手権大会結果",
+        "url": "http://www.yamanashi-hbf.com/26sensyukenresult.html"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権山梨大会結果",
+        "url": "http://www.yamanashi-hbf.com/26natsuresult.html"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権山梨大会組み合わせ(PDF)",
+        "url": "http://www.yamanashi-hbf.com/26natsu.pdf"
+      },
+      {
+        "label": "第78回春季関東地区高校野球大会結果",
+        "url": "http://www.yamanashi-hbf.com/26harukantoresult.html"
+      },
+      {
+        "label": "第78回春季関東地区高校野球山梨県大会結果",
+        "url": "http://www.yamanashi-hbf.com/26haruresult.html"
+      },
+      {
+        "label": "第98回選抜高校野球大会結果",
+        "url": "http://www.yamanashi-hbf.com/26senbaturesult.html"
+      },
+      {
+        "label": "第78回春季関東地区高校野球山梨県大会組み合わせ(PDF)",
+        "url": "http://www.yamanashi-hbf.com/26haru.pdf"
+      },
+      {
+        "label": "第56回明治神宮大会結果",
+        "url": "http://www.yamanashi-hbf.com/25meijijinguresult.html"
+      }
+    ],
+    "note": [
+      "フレーム構成（2件）"
+    ],
+    "charset": "shift_jis",
+    "finalUrl": "http://www.yamanashi-hbf.com/"
+  },
+  {
+    "name": "千葉県高等学校野球連盟",
+    "site": "https://chbf.or.jp/",
+    "origin": "https://chbf.or.jp",
+    "robots": "User-agent: * Disallow:https://chbf.or.jp/wp-content/uploads/2023/12/木製バット-使用ルールについて.pdf Disallow:https://chbf.or.jp/wp-content/uploads/2023/09/R5生徒対象審判講習会参加確認書.docx Disallow:https://chbf.or.jp/wp-content/uploads/2023/09/令和５年度部長・監督研修会記録.pdf Disallow:https://chbf.or.jp/wp-content/uploads/2023/06/R05年度-部員数（軟式）-千葉.pdf Disallow:https://chbf.or.jp/wp-content/uploads/2023/06/R05年度-部員数（硬式）-千葉.pdf Disallow:https://chbf.or.jp/wp-content/uploads/2023/06/教職員審判講習会申込FAX05.8.1.pdf Disallow:https://chbf.or.jp/wp-content/uploads/2023/05/大学練習試合の申請様式例１.pdf Disallow:https://chbf.or.jp/wp-content/uploads/",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "https://chbf.or.jp/",
+        "snippet": "せ 加盟校一覧 連盟関係 野球ねっとチーム担当者マニュアル Copyright &copy; 一般財団法人 千葉県高等学校野球連盟 All Rights Re"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "&#x25b6;︎ 組み合わせはこちらから",
+        "url": "https://chbf.or.jp/wp-content/uploads/2026/08/%E7%AC%AC108%E5%9B%9E%E7%B5%84%E5%90%88%E3%81%9B.pdf"
+      },
+      {
+        "label": "「 令和８年度第７９回秋季千葉県高等学校野球大会予選の組合せ 」",
+        "url": "https://chbf.or.jp/wp-content/uploads/2026/08/%EF%BC%B2%EF%BC%98%E7%A7%8B%E5%AD%A3%E4%BA%88%E9%81%B8%E7%B5%84%E5%90%88%E3%81%9B%EF%BC%88%EF%BC%98%E6%9C%88%EF%BC%96%E6%97%A5%E8%A8%82%E6%AD%A3%E7%89%88%EF%BC%89.pdf"
+      },
+      {
+        "label": "▷第７１回全国高等学校軟式野球大会 南関東大会 組合せ（外部サイト参照）",
+        "url": "https://baseball.omyutech.com/CupHomePageTournament.action?cupId=20260021517"
+      },
+      {
+        "label": "▷一球速報はこちらから",
+        "url": "https://baseball.omyutech.com/CupHomePageMain.action?cupId=20260021517"
+      },
+      {
+        "label": "視聴方法や試合結果はこちらをご覧ください。",
+        "url": "https://chbf.or.jp/nanshiki"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://chbf.or.jp/"
+  },
+  {
+    "name": "東京都高等学校野球連盟",
+    "site": "https://tokyo-hbf.com/",
+    "origin": "https://tokyo-hbf.com",
+    "robots": "取得できず(fetch failed)",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [],
+    "note": [
+      "トップページ取得できず: fetch failed"
+    ]
+  },
+  {
+    "name": "神奈川県高等学校野球連盟",
+    "site": "https://kanagawa-hbf.sakura.ne.jp/",
+    "origin": "https://kanagawa-hbf.sakura.ne.jp",
+    "robots": "User-agent: * Disallow: /wp/wp-admin/ Allow: /wp/wp-admin/admin-ajax.php Sitemap: https://kanagawa-hbf.sakura.ne.jp/wp-sitemap.xml User-agent: * Disallow: /wp/wp-content/uploads/wpo/wpo-plugins-tables-list.json",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "https://kanagawa-hbf.sakura.ne.jp/",
+        "snippet": "045-744-7788 ＦＡＸ 045-744-7798 ©Kanagawa High School Baseball Federation"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "選手権大会（夏の大会）",
+        "url": "https://kanagawa-hbf.sakura.ne.jp/2026/?result-hard_=prefecture-summer"
+      },
+      {
+        "label": "選手権大会（夏の大会）",
+        "url": "https://kanagawa-hbf.sakura.ne.jp/2026/?result-soft_=summer"
+      },
+      {
+        "label": "選手権大会（夏の大会）",
+        "url": "https://kanagawa-hbf.sakura.ne.jp/2026/?representative_=national-summer"
+      },
+      {
+        "label": "選手権大会（夏の大会）",
+        "url": "https://kanagawa-hbf.sakura.ne.jp/2026/?representative_=national-summer_soft"
+      },
+      {
+        "label": "大会日程",
+        "url": "https://kanagawa-hbf.sakura.ne.jp//schedule/"
+      },
+      {
+        "label": "2026.7.26 その他 横浜高校が、第108回全国高等学校野球選手権神奈川大",
+        "url": "https://kanagawa-hbf.sakura.ne.jp/%e6%a8%aa%e6%b5%9c%e9%ab%98%e6%a0%a1%e3%81%8c%e3%80%81%e7%ac%ac108%e5%9b%9e%e5%85%a8%e5%9b%bd%e9%ab%98%e7%ad%89%e5%ad%a6%e6%a0%a1%e9%87%8e%e7%90%83%e9%81%b8%e6%89%8b%e6%a8%a9%e7%a5%9e%e5%a5%88/"
+      },
+      {
+        "label": "2026.7.21 お知らせ 大会誌完売のお知らせ 第108回全国高等学校野球選",
+        "url": "https://kanagawa-hbf.sakura.ne.jp/%e5%a4%a7%e4%bc%9a%e8%aa%8c%e5%ae%8c%e5%a3%b2%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/"
+      },
+      {
+        "label": "春季大会",
+        "url": "https://kanagawa-hbf.sakura.ne.jp/2026/?result-hard_=prefecture-spring"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://kanagawa-hbf.sakura.ne.jp/"
+  },
+  {
+    "name": "長野県高等学校野球連盟",
+    "site": "https://www.nagano-hbf.jp/",
+    "origin": "https://www.nagano-hbf.jp",
+    "robots": "User-agent: * Disallow: /wp_hbf/wp-admin/ Allow: /wp_hbf/wp-admin/admin-ajax.php # START YOAST BLOCK # --------------------------- User-agent: * Disallow: Sitemap: https://www.nagano-hbf.jp/sitemap_index.xml # --------------------------- # END YOAST BLOCK",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "https://www.nagano-hbf.jp/",
+        "snippet": "報 日本高等学校野球連盟 長野県野球協会 加盟校専用サイト © Nagano-hbf --> 大会スケジュール 年間スケジュール 本連盟につい"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "大会結果（硬式）",
+        "url": "https://www.nagano-hbf.jp/tresults_koshiki/"
+      },
+      {
+        "label": "大会記録（硬式）",
+        "url": "https://www.nagano-hbf.jp/records/"
+      },
+      {
+        "label": "大会",
+        "url": "https://www.nagano-hbf.jp/tournament/"
+      },
+      {
+        "label": "第71回全国高等学校軟式野球選手権北信越大会 結果 大会｜ 2026.08.02",
+        "url": "https://www.nagano-hbf.jp/news/16399/"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権長野大会 熱戦の記録 ― PHOTO ARCHI",
+        "url": "https://www.nagano-hbf.jp/news/information/16150/"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権長野大会 久保村 智 会長 「閉幕に寄せて」 お",
+        "url": "https://www.nagano-hbf.jp/news/16294/"
+      },
+      {
+        "label": "第108回 全国高等学校野球選手権 長野大会 結果 大会｜ 2026.07.25",
+        "url": "https://www.nagano-hbf.jp/news/16287/"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権長野大会 始球式 お知らせ｜ 2026.07.2",
+        "url": "https://www.nagano-hbf.jp/news/information/16064/"
+      }
+    ],
+    "note": [
+      "フレーム構成（1件）"
+    ],
+    "charset": "utf-8",
+    "finalUrl": "https://www.nagano-hbf.jp/"
+  },
+  {
+    "name": "新潟県高等学校野球連盟",
+    "site": "http://niigata-hbf.jp/",
+    "origin": "http://niigata-hbf.jp",
+    "robots": "User-agent: * Disallow: /wp/wp-admin/ Allow: /wp/wp-admin/admin-ajax.php Sitemap: https://niigata-hbf.jp/sitemap.xml Sitemap: https://niigata-hbf.jp/sitemap.rss",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [
+      {
+        "label": "試合速報",
+        "url": "https://niigata-hbf.jp/breaking_results/"
+      },
+      {
+        "label": "試合速報",
+        "url": "https://niigata-hbf.jp/breakingnews/"
+      },
+      {
+        "label": "大会日程 Tournament schedule",
+        "url": "https://niigata-hbf.jp/taikainittei/"
+      },
+      {
+        "label": "今年度各種大会",
+        "url": "https://niigata-hbf.jp/tournamentlist/"
+      },
+      {
+        "label": "春季大会",
+        "url": "https://niigata-hbf.jp/tournamentlist/#spring"
+      },
+      {
+        "label": "夏季大会",
+        "url": "https://niigata-hbf.jp/tournamentlist/#summer"
+      },
+      {
+        "label": "秋季大会",
+        "url": "https://niigata-hbf.jp/tournamentlist/#autumn"
+      },
+      {
+        "label": "過去大会結果",
+        "url": "https://niigata-hbf.jp/koushikikako2/"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "http://niigata-hbf.jp/"
+  },
+  {
+    "name": "富山県高等学校野球連盟",
+    "site": "https://www.toyama-hbf.jp/",
+    "origin": "https://www.toyama-hbf.jp",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [
+      {
+        "label": "春季大会",
+        "url": "https://www.toyama-hbf.jp/?cat=3"
+      },
+      {
+        "label": "夏の大会",
+        "url": "https://www.toyama-hbf.jp/?cat=5"
+      },
+      {
+        "label": "秋季大会",
+        "url": "https://www.toyama-hbf.jp/?cat=6"
+      },
+      {
+        "label": "一年生大会",
+        "url": "https://www.toyama-hbf.jp/?cat=7"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権富山大会",
+        "url": "https://www.toyama-hbf.jp/?p=5807"
+      },
+      {
+        "label": "第１５４回北信越地区高等学校野球大会（令和８年度春季）",
+        "url": "https://www.toyama-hbf.jp/?p=5786"
+      },
+      {
+        "label": "第９８回春季富山県高等学校野球大会",
+        "url": "https://www.toyama-hbf.jp/?p=5753"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://www.toyama-hbf.jp/"
+  },
+  {
+    "name": "石川県高等学校野球連盟",
+    "site": "http://ishikawa-hbf.jp/",
+    "origin": "http://ishikawa-hbf.jp",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [
+      {
+        "label": "第１０８回全国高等学校野球選手権大会",
+        "url": "https://ishikawa-hbf.jp/?p=2492"
+      },
+      {
+        "label": "第１０８回全国高等学校野球選手権大会 表敬訪問",
+        "url": "https://ishikawa-hbf.jp/?p=4711"
+      },
+      {
+        "label": "第１０８回全国高等学校野球選手権石川大会 遊学館が優勝",
+        "url": "https://ishikawa-hbf.jp/?p=4993"
+      },
+      {
+        "label": "第１０８回全国高等学校野球選手権石川大会ボールプレゼント",
+        "url": "https://ishikawa-hbf.jp/?p=3824"
+      },
+      {
+        "label": "第１０８回全国高等学校野球選手権石川大会委嘱審判技術講習会",
+        "url": "https://ishikawa-hbf.jp/?p=4710"
+      },
+      {
+        "label": "第１５４回北信越地区高等学校野球大会（長野県開催）",
+        "url": "https://ishikawa-hbf.jp/?p=1789"
+      },
+      {
+        "label": "第１５４回北信越地区高等学校野球石川県大会 星稜が優勝",
+        "url": "https://ishikawa-hbf.jp/?p=3662"
+      },
+      {
+        "label": "第９８回選抜高等学校野球大会",
+        "url": "https://ishikawa-hbf.jp/?p=1305"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://ishikawa-hbf.jp/"
+  },
+  {
+    "name": "福井県高等学校野球連盟",
+    "site": "https://291fki.sakura.ne.jp/wp2024/",
+    "origin": "https://291fki.sakura.ne.jp",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "https://291fki.sakura.ne.jp/wp2024/",
+        "snippet": "学生野球協会優秀選手」表彰 敦賀気比高校の &#8230; Copyright &copy; 2026 福井県高等学校野球連盟 &ndash; OnePres"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "過去大会の結果",
+        "url": "https://291fki.sakura.ne.jp/wp2024/%e7%a6%8f%e4%ba%95%e7%9c%8c%e5%a4%a7%e4%bc%9a%e3%81%ae%e8%a8%98%e9%8c%b2/"
+      },
+      {
+        "label": "福井県高校野球連盟 速報ページ",
+        "url": "https://291fki.sakura.ne.jp/wp2019/"
+      },
+      {
+        "label": "組み合わせ",
+        "url": "https://291fki.sakura.ne.jp/wp2019/wp-content/uploads/2026/08/tournament108.pdf"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権福井大会",
+        "url": "https://291fki.sakura.ne.jp/wp2019/wp-content/uploads/2026/06/108%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B%E8%A1%A8.pdf"
+      },
+      {
+        "label": "組み合わせ",
+        "url": "https://291fki.sakura.ne.jp/wp2019/wp-content/uploads/2026/06/154_h_katiagari.pdf"
+      },
+      {
+        "label": "一球速報へ",
+        "url": "https://baseball.omyutech.com/CupHomePageTournament.action?cupId=20260013584"
+      },
+      {
+        "label": "春季大会",
+        "url": "https://291fki.sakura.ne.jp/wp2024/%e6%98%a5%e5%ad%a3%e5%a4%a7%e4%bc%9a/"
+      },
+      {
+        "label": "夏季大会",
+        "url": "https://291fki.sakura.ne.jp/wp2024/%e5%a4%8f%e5%ad%a3%e5%a4%a7%e4%bc%9a/"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://291fki.sakura.ne.jp/wp2024/"
+  },
+  {
+    "name": "静岡県高等学校野球連盟",
+    "site": "https://shizuoka-hbf.com",
+    "origin": "https://shizuoka-hbf.com",
+    "robots": "User-agent: * Disallow: Sitemap: https://baseball.omyutech.com/sitemap.txt",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://shizuoka-hbf.com/"
+  },
+  {
+    "name": "愛知県高等学校野球連盟",
+    "site": "https://www.aichi-kouyaren.com/",
+    "origin": "https://www.aichi-kouyaren.com",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "https://www.aichi-kouyaren.com/",
+        "snippet": " その他大会 ｜ 大会記録 ｜ サイトマップ ｜ 軟式 ｜ Copyright &copy; 2019 Aichi High School Baseball "
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "全尾張大会",
+        "url": "https://www.aichi-kouyaren.com/#"
+      },
+      {
+        "label": "大会別",
+        "url": "https://www.aichi-kouyaren.com/pastgame_spring/"
+      },
+      {
+        "label": "夏の大会",
+        "url": "https://www.aichi-kouyaren.com/pastgame_summer/"
+      },
+      {
+        "label": "秋季県大会",
+        "url": "https://www.aichi-kouyaren.com/pastgame_autumn/"
+      },
+      {
+        "label": "１年生大会",
+        "url": "https://www.aichi-kouyaren.com/pastgame_first/"
+      },
+      {
+        "label": "全三河大会",
+        "url": "https://www.aichi-kouyaren.com/all_Mikawa/"
+      },
+      {
+        "label": "全尾張大会",
+        "url": "https://www.aichi-kouyaren.com/all_Owari/"
+      },
+      {
+        "label": "尾東大会",
+        "url": "https://www.aichi-kouyaren.com/nagoyaArea/bitou/"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://www.aichi-kouyaren.com/"
+  },
+  {
+    "name": "岐阜県高等学校野球連盟",
+    "site": "https://ghbf.asfsite.jp",
+    "origin": "https://ghbf.asfsite.jp",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [
+      {
+        "label": "大会日程・要項",
+        "url": "https://ghbf.asfsite.jp/event/schedule/"
+      },
+      {
+        "label": "【大会】第79回秋季東海地区高等学校野球岐阜県大会",
+        "url": "https://ghbf.asfsite.jp/news/entry-7875.html"
+      },
+      {
+        "label": "【大会】第71回全国高等学校軟式野球選手権 組み合わせ",
+        "url": "https://ghbf.asfsite.jp/news/entry-7874.html"
+      },
+      {
+        "label": "【結果】第108回全国高等学校野球選手権大会",
+        "url": "https://ghbf.asfsite.jp/news/entry-7847.html"
+      },
+      {
+        "label": "【結果】第71回全国高等学校軟式野球選手権 東海大会",
+        "url": "https://ghbf.asfsite.jp/news/entry-7842.html"
+      },
+      {
+        "label": "【大会】第79回秋季東海地区高等学校野球岐阜県大会 地区シード決め戦",
+        "url": "https://ghbf.asfsite.jp/news/entry-7820.html"
+      },
+      {
+        "label": "【大会】第108回全国高等学校野球選手権大会 中京高校壮行会",
+        "url": "https://ghbf.asfsite.jp/news/entry-7802.html"
+      },
+      {
+        "label": "一球速報.com（Omyu Tech）",
+        "url": "https://baseball.omyutech.com/CupHomePageTournament.action?cupId=20260013587"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://ghbf.asfsite.jp/"
+  },
+  {
+    "name": "三重県高等学校野球連盟",
+    "site": "https://mie-kouyaren.com/",
+    "origin": "https://mie-kouyaren.com",
+    "robots": "User-agent: * Disallow: /wp-admin/ Allow: /wp-admin/admin-ajax.php Sitemap: https://mie-kouyaren.com/sitemap.xml Sitemap: https://mie-kouyaren.com/sitemap.rss",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "https://mie-kouyaren.com/",
+        "snippet": " 広告 - リンク 各部門より - 審判部 - メディカル Copyright© Mie High School Baseball Federation Al"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "大会について",
+        "url": "https://mie-kouyaren.com/#match"
+      },
+      {
+        "label": "大会日程",
+        "url": "https://mie-kouyaren.com/schedule/"
+      },
+      {
+        "label": "組み合わせ",
+        "url": "https://mie-kouyaren.com/pairing_category/latest/"
+      },
+      {
+        "label": "大会結果",
+        "url": "https://mie-kouyaren.com/result_category/latest/"
+      },
+      {
+        "label": "第79回秋季東海地区高等学校野球三重県大会 シード決め中地区予選トーナメント表",
+        "url": "https://mie-kouyaren.com/2026/08/05/%e7%ac%ac79%e5%9b%9e%e7%a7%8b%e5%ad%a3%e6%9d%b1%e6%b5%b7%e5%9c%b0%e5%8c%ba%e9%ab%98%e7%ad%89%e5%ad%a6%e6%a0%a1%e9%87%8e%e7%90%83%e4%b8%89%e9%87%8d%e7%9c%8c%e5%a4%a7%e4%bc%9a-%e3%82%b7%e3%83%bc-2/"
+      },
+      {
+        "label": "第79回 秋季東海地区高等学校野球三重県大会 南地区シード決めトーナメント表",
+        "url": "https://mie-kouyaren.com/2026/08/04/%e7%ac%ac79%e5%9b%9e-%e7%a7%8b%e5%ad%a3%e6%9d%b1%e6%b5%b7%e5%9c%b0%e5%8c%ba%e9%ab%98%e7%ad%89%e5%ad%a6%e6%a0%a1%e9%87%8e%e7%90%83%e4%b8%89%e9%87%8d%e7%9c%8c%e5%a4%a7%e4%bc%9a-%e5%8d%97%e5%9c%b0/"
+      },
+      {
+        "label": "第79回秋季東海地区高等学校野球三重県大会 シード決め北地区予選トーナメント表",
+        "url": "https://mie-kouyaren.com/2026/08/03/%e7%ac%ac79%e5%9b%9e%e7%a7%8b%e5%ad%a3%e6%9d%b1%e6%b5%b7%e5%9c%b0%e5%8c%ba%e9%ab%98%e7%ad%89%e5%ad%a6%e6%a0%a1%e9%87%8e%e7%90%83%e4%b8%89%e9%87%8d%e7%9c%8c%e5%a4%a7%e4%bc%9a-%e3%82%b7%e3%83%bc/"
+      },
+      {
+        "label": "（最終結果）第108回全国高等学校野球選手権三重大会トーナメント表",
+        "url": "https://mie-kouyaren.com/2026/07/27/%ef%bc%887-27%e6%9b%b4%e6%96%b0%ef%bc%89%e7%ac%ac108%e5%9b%9e%e5%85%a8%e5%9b%bd%e9%ab%98%e7%ad%89%e5%ad%a6%e6%a0%a1%e9%87%8e%e7%90%83%e9%81%b8%e6%89%8b%e6%a8%a9%e4%b8%89%e9%87%8d%e5%a4%a7%e4%bc%9a/"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://mie-kouyaren.com/"
+  },
+  {
+    "name": "滋賀県高等学校野球連盟",
+    "site": "http://www.biwa.ne.jp/~shigafed/",
+    "origin": "http://www.biwa.ne.jp",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "http://www.biwa.ne.jp/~shigafed/",
+        "snippet": "公告 役員名簿 関連団体・県内球場 過去大会記録 決算報告 Copyright(C) 一般財団法人 滋賀県高等学校野球連盟 All Rights Reserv"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "過去大会記録",
+        "url": "http://www.biwa.ne.jp/~shigafed/log.html"
+      },
+      {
+        "label": "第１０８回全国高等学校野球選手権滋賀大会 結果【優勝：八幡商業高校】",
+        "url": "http://www.biwa.ne.jp/~shigafed/pdf/108koushikiyama.pdf"
+      },
+      {
+        "label": "第７１回全国高等学校軟式野球選手権滋賀大会 結果【優勝：比叡山高校】",
+        "url": "http://www.biwa.ne.jp/~shigafed/pdf/71nannshikiyama.pdf"
+      },
+      {
+        "label": "第５３回 １年生大会 抽選結果（８／４更新）",
+        "url": "http://www.biwa.ne.jp/~shigafed/pdf/53ichinennseiyama.pdf"
+      },
+      {
+        "label": "令和８年度春季近畿地区高等学校野球滋賀県大会 結果【優勝：滋賀学園高校】",
+        "url": "http://www.biwa.ne.jp/~shigafed/pdf/R08_koushikiyama.pdf"
+      },
+      {
+        "label": "野球滋賀県大会 結果【優勝：比叡山高校】",
+        "url": "http://www.biwa.ne.jp/~shigafed/pdf/R08_nanshikiyama.pdf"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "http://www.biwa.ne.jp/~shigafed/"
+  },
+  {
+    "name": "京都府高等学校野球連盟",
+    "site": "https://kyoto-hsbf.sakura.ne.jp/khsbf/",
+    "origin": "https://kyoto-hsbf.sakura.ne.jp",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "営利・商用の禁止",
+        "page": "(トップ)",
+        "url": "https://kyoto-hsbf.sakura.ne.jp/khsbf/",
+        "snippet": "アルコール（酒）類の持ち込みはご遠慮ください。 〇球場内での営利目的とする撮影は禁止しております。 ＳＮＳ等への配信行為もお控えください。 最近の投稿 京都野球協会"
+      },
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "https://kyoto-hsbf.sakura.ne.jp/khsbf/",
+        "snippet": "行いました 2026年6月27日 その他のお知らせはこちら Copyright &copy; 一般財団法人 京都府高等学校野球連盟 All Rights Re"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "大会",
+        "url": "https://kyoto-hsbf.sakura.ne.jp/khsbf/tournament/"
+      },
+      {
+        "label": "京都大会歴代優勝校",
+        "url": "https://kyoto-hsbf.sakura.ne.jp/khsbf/library/champion/"
+      },
+      {
+        "label": "全国大会歴代出場校",
+        "url": "https://kyoto-hsbf.sakura.ne.jp/khsbf/library/kosien/"
+      },
+      {
+        "label": "組み合わせ・結果はこちら",
+        "url": "https://drive.google.com/file/d/1JdI8TJRa3UJXXBbUEkn-NPjiFk8NMw4m/view?usp=sharing"
+      },
+      {
+        "label": "組み合わせ・結果はこちら",
+        "url": "https://drive.google.com/file/d/1ms4iTJ1w6glcBmSe_sZRysYgdNx8OI0-/view?usp=sharing"
+      },
+      {
+        "label": "組み合わせ・結果はこちら",
+        "url": "https://drive.google.com/file/d/1e6BU45Edy8X8-EX7MmKMZoINjAzANELC/view?usp=sharing"
+      }
+    ],
+    "note": [
+      "フレーム構成（1件）"
+    ],
+    "charset": "utf-8",
+    "finalUrl": "https://kyoto-hsbf.sakura.ne.jp/khsbf/"
+  },
+  {
+    "name": "奈良県高等学校野球連盟",
+    "site": "http://www1.kcn.ne.jp/~nhsbbf/",
+    "origin": "http://www1.kcn.ne.jp",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "http://www1.kcn.ne.jp/~nhsbbf/",
+        "snippet": "44-27-2239 役員専用ログイン 加盟校専用ログイン copyright &copy; 2012-2026 Nara Prefecture High-S"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "抽選結果",
+        "url": "http://www1.kcn.ne.jp/~nhsbbf/and/2025haru-kumiawase.pdf"
+      },
+      {
+        "label": "第97回選抜高等学校野球大会 出場校決定",
+        "url": "https://www.jhbf.or.jp/topics/detail/488"
+      },
+      {
+        "label": "大会開催中の試合結果",
+        "url": "http://www1.kcn.ne.jp/~nhsbbf/genzaisiai.html"
+      },
+      {
+        "label": "過去の試合結果",
+        "url": "http://www1.kcn.ne.jp/~nhsbbf/kakonosiai.html"
+      },
+      {
+        "label": "これまでの近畿大会出場校",
+        "url": "http://www1.kcn.ne.jp/~nhsbbf/kinkitaikai.html"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "http://www1.kcn.ne.jp/~nhsbbf/"
+  },
+  {
+    "name": "和歌山県高等学校野球連盟",
+    "site": "https://www.whbf.jp/",
+    "origin": "https://www.whbf.jp",
+    "robots": "User-agent: * Disallow:",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "https://www.whbf.jp/",
+        "snippet": "組合せ 管理者ログイン 加盟校ログイン 報道関係者ログイン © 一般財団法人 和歌山県高等学校野球連盟. All rights reserve"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "開催中の試合結果等",
+        "url": "https://www.whbf.jp/game.html"
+      },
+      {
+        "label": "大会履歴",
+        "url": "https://www.whbf.jp/history.html"
+      },
+      {
+        "label": "第108回 全国高校野球選手権大会 試合結果",
+        "url": "https://www.whbf.jp/news.html#1211"
+      },
+      {
+        "label": "令和8年度 県下高校野球新人戦 組み合わせ",
+        "url": "https://www.whbf.jp/news.html#1210"
+      },
+      {
+        "label": "新人戦以降の試合観戦（入場料）等について",
+        "url": "https://www.whbf.jp/news.html#1209"
+      },
+      {
+        "label": "第１０８回全国高等学校野球選手権和歌山大会勝ち上がりトーナメント",
+        "url": "https://www.whbf.jp/news.html#1208"
+      },
+      {
+        "label": "令和８年度県下高校野球新人戦について（お知らせ）",
+        "url": "https://www.whbf.jp/news.html#1207"
+      },
+      {
+        "label": "第１０８回全国高等学校野球選手権和歌山大会 優勝 智辯学園和歌山高等学校",
+        "url": "https://www.whbf.jp/news.html#1205"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://www.whbf.jp/"
+  },
+  {
+    "name": "大阪府高等学校野球連盟",
+    "site": "http://www.ohbl.sakura.ne.jp/",
+    "origin": "http://www.ohbl.sakura.ne.jp",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [
+      {
+        "label": "本年度大会日程",
+        "url": "http://www.ohbl.sakura.ne.jp/frm-nittei.html"
+      },
+      {
+        "label": "今大会組み合せ",
+        "url": "http://www.ohbl.sakura.ne.jp/frm-kumiawase.html"
+      },
+      {
+        "label": "各日の試合結果",
+        "url": "http://www.ohbl.sakura.ne.jp/frm-kekka.html"
+      },
+      {
+        "label": "過去の大会記録",
+        "url": "http://www.ohbl.sakura.ne.jp/frm-kako.html"
+      },
+      {
+        "label": "秋季近畿地区大阪府予選組合せ（2026.08.08）",
+        "url": "http://www.ohbl.sakura.ne.jp/2-taikaikankei/kumiawase/26_03aki/26_aki_yagura_ippan.pdf"
+      }
+    ],
+    "note": [
+      "フレーム構成（2件）"
+    ],
+    "charset": "shift_jis",
+    "finalUrl": "http://www.ohbl.sakura.ne.jp/"
+  },
+  {
+    "name": "兵庫県高等学校野球連盟",
+    "site": "http://www.hyogo-koyaren.or.jp/index.php",
+    "origin": "http://www.hyogo-koyaren.or.jp",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "http://www.hyogo-koyaren.or.jp/index.php",
+        "snippet": "クセス 日程変更のご案内 試合結果（携帯URL発信） 広報 Copyright(C) 一般財団法人 兵庫県高等学校野球連盟 All Rights Reserv"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "組み合わせ",
+        "url": "http://www.hyogo-koyaren.or.jp/taikai/index.php"
+      },
+      {
+        "label": "日程変更のご案内",
+        "url": "http://www.hyogo-koyaren.or.jp/taikai/nitteihenkou.php"
+      },
+      {
+        "label": "試合結果（携帯URL発信）",
+        "url": "http://www.hyogo-koyaren.or.jp/taikai/result.php"
+      },
+      {
+        "label": "組合せ",
+        "url": "http://www.hyogo-koyaren.or.jp/homepagedata(R8)/aki26district.xls"
+      },
+      {
+        "label": "組合せ",
+        "url": "http://www.hyogo-koyaren.or.jp/homepagedata(R8)/71hyogo.pdf"
+      },
+      {
+        "label": "地区大会",
+        "url": "http://www.hyogo-koyaren.or.jp/homepagedata(R8)/haru26district.xlsx"
+      },
+      {
+        "label": "県大会",
+        "url": "http://www.hyogo-koyaren.or.jp/homepagedata(R8)/26haru.pdf"
+      },
+      {
+        "label": "近畿大会",
+        "url": "http://www.hyogo-koyaren.or.jp/homepagedata(R8)/kinki26haru.pdf"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "http://www.hyogo-koyaren.or.jp/index.php"
+  },
+  {
+    "name": "岡山県高等学校野球連盟",
+    "site": "https://www.okayama-hbf.com/",
+    "origin": "https://www.okayama-hbf.com",
+    "robots": "なし(HTTP 200)",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "https://www.okayama-hbf.com/",
+        "snippet": "の硬式大会の試合日程・結果 直近の軟式大会の試合日程・結果 Copyright © 岡山県高等学校野球連盟. All Rights Reserved."
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "【軟式】第71回全国高等学校軟式野球選手権東中国大会 優勝 矢掛高校",
+        "url": "https://www.okayama-hbf.com/information/article/305"
+      },
+      {
+        "label": "〔硬式〕第108回選手権岡山大会 優秀選手",
+        "url": "https://www.okayama-hbf.com/information/article/304"
+      },
+      {
+        "label": "〔硬式〕第108回選手権岡山大会 優勝 岡山学芸館高校",
+        "url": "https://www.okayama-hbf.com/information/article/303"
+      },
+      {
+        "label": "〔硬式〕第108回選手権岡山大会 決勝",
+        "url": "https://www.okayama-hbf.com/information/article/301"
+      },
+      {
+        "label": "【軟式】第71回全国高等学校軟式野球選手権岡山大会の結果",
+        "url": "https://www.okayama-hbf.com/information/article/302"
+      },
+      {
+        "label": "直近の硬式大会の試合日程・結果",
+        "url": "https://www.okayama-hbf.com/schedule/hard"
+      },
+      {
+        "label": "直近の軟式大会の試合日程・結果",
+        "url": "https://www.okayama-hbf.com/schedule/soft"
+      }
+    ],
+    "note": [
+      "フレーム構成（1件）"
+    ],
+    "charset": "utf-8",
+    "finalUrl": "https://www.okayama-hbf.com/"
+  },
+  {
+    "name": "鳥取県高等学校野球連盟",
+    "site": "https://tottori-hbf.jp/",
+    "origin": "https://tottori-hbf.jp",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "無断転載の禁止",
+        "page": "(トップ)",
+        "url": "https://tottori-hbf.jp/",
+        "snippet": "Reserved. 掲載されている全ての画像・文章・データの無断転用及び転載をお断りします。 Unauthorized use or reproduction of"
+      },
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "https://tottori-hbf.jp/",
+        "snippet": "会 優秀選手および部員表彰(令和7年度) ◇ 更新履歴 ＞ © 鳥取県高等学校野球連盟 Copyright Tottori Highschoo"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "大会・行事",
+        "url": "https://tottori-hbf.jp/#"
+      },
+      {
+        "label": "［硬式］大会予定",
+        "url": "https://tottori-hbf.jp/calendar-koushiki.html"
+      },
+      {
+        "label": "［軟式］大会予定",
+        "url": "https://tottori-hbf.jp/calendar-nanshiki.html"
+      },
+      {
+        "label": "大会記録",
+        "url": "https://tottori-hbf.jp/history-data.htm"
+      },
+      {
+        "label": "鳥取県高等学校野球連盟主催・主管する大会における誹謗中傷等への対応について",
+        "url": "https://tottori-hbf.jp/20250904.html"
+      },
+      {
+        "label": "令和7年度秋季鳥取県高等学校軟式野球大会(",
+        "url": "https://tottori-hbf.jp/data/data-r7/r7-nanshiki-05-autumn.html"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権鳥取大会",
+        "url": "https://tottori-hbf.jp/data/data-r8/r8-koushiki-04-summer-tottori.html"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権大会",
+        "url": "https://www.jhbf.or.jp/sensyuken/2026/"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://tottori-hbf.jp/"
+  },
+  {
+    "name": "広島県高等学校野球連盟",
+    "site": "https://hiroshima.hhbf1950.or.jp/",
+    "origin": "https://hiroshima.hhbf1950.or.jp",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "https://hiroshima.hhbf1950.or.jp/",
+        "snippet": "構想 200年構想について 加盟校専用サイト 業務ポータル © 2025 Hiroshima High School Baseball Fed"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "大会関連",
+        "url": "https://hiroshima.hhbf1950.or.jp/%E5%A4%A7%E4%BC%9A%E9%96%A2%E9%80%A3"
+      },
+      {
+        "label": "硬式部各種大会",
+        "url": "https://hiroshima.hhbf1950.or.jp/%E5%A4%A7%E4%BC%9A%E9%96%A2%E9%80%A3/%E7%A1%AC%E5%BC%8F%E9%83%A8%E5%90%84%E7%A8%AE%E5%A4%A7%E4%BC%9A"
+      },
+      {
+        "label": "軟式部各種大会",
+        "url": "https://hiroshima.hhbf1950.or.jp/%E5%A4%A7%E4%BC%9A%E9%96%A2%E9%80%A3/%E8%BB%9F%E5%BC%8F%E9%83%A8%E5%90%84%E7%A8%AE%E5%A4%A7%E4%BC%9A"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://hiroshima.hhbf1950.or.jp/"
+  },
+  {
+    "name": "島根県高等学校野球連盟",
+    "site": "https://shimanehbf.sakura.ne.jp/",
+    "origin": "https://shimanehbf.sakura.ne.jp",
+    "robots": "User-agent: * Disallow: /wp-admin/ Allow: /wp-admin/admin-ajax.php Sitemap: https://shimanehbf.sakura.ne.jp/sitemap.xml",
+    "terms": [
+      {
+        "label": "利用規約・プライバシーポリシー",
+        "url": "https://shimanehbf.sakura.ne.jp/privacy/",
+        "ok": true
+      }
+    ],
+    "findings": [
+      {
+        "rule": "無断転載の禁止",
+        "page": "利用規約・プライバシーポリシー",
+        "url": "https://shimanehbf.sakura.ne.jp/privacy/",
+        "snippet": "べての画像やレイアウト、および記事やドキュメントなどは事前の許可なく無断で引用、転載、加工することはできません。 リンクについて 当サイトへのリンクはトップページへお願いします。トップページ"
+      },
+      {
+        "rule": "著作権の記載",
+        "page": "利用規約・プライバシーポリシー",
+        "url": "https://shimanehbf.sakura.ne.jp/privacy/",
+        "snippet": "いただくものであり、これらの目的以外では利用いたしません。 著作権について 当サイト内の写真やロゴなどすべての画像やレイアウト、および記事やドキュ"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "大会結果",
+        "url": "https://shimanehbf.sakura.ne.jp/result/"
+      },
+      {
+        "label": "2026年6月12日（金） お知らせ --> 第108回全国高等学校野球選手権島",
+        "url": "https://shimanehbf.sakura.ne.jp/3145/"
+      },
+      {
+        "label": "2026年5月29日（金） お知らせ --> 第146回春季中国地区高等学校野球",
+        "url": "https://shimanehbf.sakura.ne.jp/3133/"
+      },
+      {
+        "label": "2026年5月13日（水） お知らせ --> 第65回山陰高等学校野球大会 組み",
+        "url": "https://shimanehbf.sakura.ne.jp/3115/"
+      },
+      {
+        "label": "2026年5月12日（火） お知らせ --> 第146回春季中国地区高等学校野球",
+        "url": "https://shimanehbf.sakura.ne.jp/3091/"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://shimanehbf.sakura.ne.jp/"
+  },
+  {
+    "name": "山口県高等学校野球連盟",
+    "site": "https://yamaguchi-hbf.com/top",
+    "origin": "https://yamaguchi-hbf.com",
+    "robots": "User-agent: * Disallow: Sitemap: https://baseball.omyutech.com/sitemap.txt",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://yamaguchi-hbf.com/top"
+  },
+  {
+    "name": "香川県高等学校野球連盟",
+    "site": "https://www.kagawa-hbf.com/top",
+    "origin": "https://www.kagawa-hbf.com",
+    "robots": "User-agent: * Disallow: Sitemap: https://baseball.omyutech.com/sitemap.txt",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://www.kagawa-hbf.com/top"
+  },
+  {
+    "name": "愛媛県高等学校野球連盟",
+    "site": "http://www.ehimehbb.jp/",
+    "origin": "http://www.ehimehbb.jp",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "http://www.ehimehbb.jp/",
+        "snippet": "089-941-8189 ＦＡＸ 089-941-8758 Copyright (C) 2022 Ehime High School Baseball Fｅｄ"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "第１０８回全国高等学校野球選手権大会組み合わせ",
+        "url": "https://www.jhbf.or.jp/sensyuken/2026/tournament.pdf"
+      },
+      {
+        "label": "組合せ・試合結果",
+        "url": "http://www.ehimehbb.jp/taikai/kousiki/2026_R08/shinjin/shinjin2026.html"
+      },
+      {
+        "label": "組合せ・試合結果",
+        "url": "http://www.ehimehbb.jp/taikai/kousiki/2026_R08/natsu/natsu108.html"
+      },
+      {
+        "label": "組合せ・試合結果",
+        "url": "http://www.ehimehbb.jp/taikai/kousiki/2026_R08/haru/haru2026.html"
+      },
+      {
+        "label": "組合せ・試合結果",
+        "url": "http://www.ehimehbb.jp/taikai/nanshiki/syunki/2026haru/2026haru_nan.html"
+      },
+      {
+        "label": "組合せ・試合結果",
+        "url": "http://www.ehimehbb.jp/taikai/nanshiki/natsu/2026natsu/2026natsu_nanshiki.html"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "http://www.ehimehbb.jp/"
+  },
+  {
+    "name": "徳島県高等学校野球連盟",
+    "site": "http://www.tk2.nmt.ne.jp/~tokushimakoyaren/",
+    "origin": "http://www.tk2.nmt.ne.jp",
+    "robots": "なし(HTTP 200)",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [
+      {
+        "label": "第１０８回全国高等学校野球選手権 徳島大会結果",
+        "url": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/%E7%AC%AC108%E5%9B%9E%E5%85%A8%E5%9B%BD%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E9%81%B8%E6%89%8B%E6%A8%A9%E5%BE%B3%E5%B3%B6%E5%A4%A7%E4%BC%9A%E7%B5%90%E6%9E%9C.pdf"
+      },
+      {
+        "label": "第７１回全国高等学校軟式野球選手権 四国地方大会結果",
+        "url": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/71%E5%9B%9E%E5%9B%9B%E5%9B%BD%E9%81%B8%E6%89%8B%E6%A8%A9_%E4%B8%80%E5%9B%9E%E6%88%A6_%E6%96%B0%E7%94%B0%EF%BC%88%E6%84%9B%E5%AA%9B%EF%BC%89vs%E5%AF%8C%E5%B2%A1%E6%9D%B1%EF%BC%88%E5%BE%B3%E5%B3%B6%EF%BC%89_%E3%83%A9%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B9%E3%82%B3%E3%82%A2.pdf"
+      },
+      {
+        "label": "大会における写真・ビデオ等の撮影についてR6 9月改定",
+        "url": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/%E5%BE%B3%E5%B3%B6%E7%9C%8C%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E8%AB%B8%E5%A4%A7%E4%BC%9A%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%86%99%E7%9C%9F%E3%83%BB%E3%83%93%E3%83%87%E3%82%AA%E7%AD%89%E3%81%AE%E6%92%AE%E5%BD%B1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%88%E4%BF%AE%E6%AD%A3%E6%A1%88240908%EF%BC%89.pdf"
+      },
+      {
+        "label": "第79回徳島県高等学校野球春季大会",
+        "url": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/R8_haru.html"
+      },
+      {
+        "label": "春季四国地区高校野球大会",
+        "url": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/R8shunki_shikoku.html"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権 徳島大会",
+        "url": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/R8natsu.html"
+      },
+      {
+        "label": "大会記録",
+        "url": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/jimu0.html"
+      },
+      {
+        "label": "令和４年度大会データ",
+        "url": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/indexR4.html"
+      }
+    ],
+    "note": [],
+    "charset": "shift_jis",
+    "finalUrl": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/"
+  },
+  {
+    "name": "高知県高等学校野球連盟",
+    "site": "https://www.kochi-hbf.com/top",
+    "origin": "https://www.kochi-hbf.com",
+    "robots": "User-agent: * Disallow: Sitemap: https://baseball.omyutech.com/sitemap.txt",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://www.kochi-hbf.com/top"
+  },
+  {
+    "name": "福岡県高等学校野球連盟",
+    "site": "https://fukuoka-hbf.jp/",
+    "origin": "https://fukuoka-hbf.jp",
+    "robots": "User-agent: * Allow: /files Disallow: /test Disallow: /*login=true Disallow: /publics/get_js_msg Disallow: */pages/*/p*= Disallow: */pages/p*=",
+    "terms": [
+      {
+        "label": "サイトポリシー",
+        "url": "https://fukuoka-hbf.jp/pages/7/",
+        "ok": true
+      }
+    ],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "https://fukuoka-hbf.jp/",
+        "snippet": "093-967-6016 FAX：093-967-6017 Copyright© 福岡県高等学校野球連盟 All Rights Reserved. JC-40"
+      },
+      {
+        "rule": "著作権の記載",
+        "page": "サイトポリシー",
+        "url": "https://fukuoka-hbf.jp/pages/7/",
+        "snippet": "員ページ サイトポリシー トップページ ＞ サイトポリシー 著作権について 当ホームページに掲載されている個々の情報（文字、写真、イラスト等）は著"
+      },
+      {
+        "rule": "リンクの制限",
+        "page": "サイトポリシー",
+        "url": "https://fukuoka-hbf.jp/pages/7/",
+        "snippet": "の責任を一切負いません。 リンクについて 当ホームページへのリンクは原則として自由ですので、リンクする場合のご連絡は不要です。 ただし、悪用の意図があきらかな場合やリンク元の内容が法令や公序良俗"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "硬式大会結果",
+        "url": "https://fukuoka-hbf.jp/pages/68/"
+      },
+      {
+        "label": "公式LINEで 大会情報を お知らせして います",
+        "url": "https://lin.ee/Sq6GGoh"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://fukuoka-hbf.jp/"
+  },
+  {
+    "name": "佐賀県高等学校野球連盟",
+    "site": "http://kouyaren-saga.jp/",
+    "origin": "http://kouyaren-saga.jp",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [
+      {
+        "label": "第108回全国高等学校野球選手権大会 組合せ決定！",
+        "url": "http://kouyaren-saga.jp/?p=13548"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権佐賀大会 大会終了御礼！",
+        "url": "http://kouyaren-saga.jp/?p=13539"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権佐賀大会（7/26大会15日目）",
+        "url": "http://kouyaren-saga.jp/?p=13537"
+      },
+      {
+        "label": "組合せ（結果）",
+        "url": "http://kouyaren-saga.jp/wp-content/uploads/2026/07/07-%E7%AC%AC108%E5%9B%9E%E5%8B%9D%E3%81%A1%E4%B8%8A%E3%81%8C%E3%82%8A%E8%A1%A8%EF%BC%88%E3%83%99%E3%82%B9%E3%83%88%EF%BC%94%E3%81%BE%E3%81%A7%EF%BC%89.pdf"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権佐賀大会（7/24大会14日目）",
+        "url": "http://kouyaren-saga.jp/?p=13533"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権佐賀大会（7/21大会13日目）",
+        "url": "http://kouyaren-saga.jp/?p=13529"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権佐賀大会（7/20大会12日目）",
+        "url": "http://kouyaren-saga.jp/?p=13527"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権佐賀大会（7/18大会11日目）",
+        "url": "http://kouyaren-saga.jp/?p=13525"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "http://kouyaren-saga.jp/"
+  },
+  {
+    "name": "長崎県高等学校野球連盟",
+    "site": "https://nagasaki-kouyaren.com/",
+    "origin": "https://nagasaki-kouyaren.com",
+    "robots": "User-agent: * Disallow: Sitemap: https://baseball.omyutech.com/sitemap.txt",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://nagasaki-kouyaren.com/"
+  },
+  {
+    "name": "熊本県高等学校野球連盟",
+    "site": "http://www.kumamoto-kouyaren.com/",
+    "origin": "http://www.kumamoto-kouyaren.com",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [
+      {
+        "label": "春季大会",
+        "url": "http://www.kumamoto-kouyaren.com/tournament-spring/"
+      },
+      {
+        "label": "夏季大会",
+        "url": "http://www.kumamoto-kouyaren.com/tournament-summer/"
+      },
+      {
+        "label": "秋季大会",
+        "url": "http://www.kumamoto-kouyaren.com/tournament-autumn/"
+      },
+      {
+        "label": "その他の大会",
+        "url": "http://www.kumamoto-kouyaren.com/tournament-other/"
+      },
+      {
+        "label": "軟式野球大会",
+        "url": "http://www.kumamoto-kouyaren.com/tournament-rubberball/"
+      },
+      {
+        "label": "第154回九州地区高等学校野球熊本大会 組合せ",
+        "url": "http://www.kumamoto-kouyaren.com/tournament-spring/pdf/2023_kyusyu_152th.pdf"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権熊本大会 決勝",
+        "url": "http://www.kumamoto-kouyaren.com/matchreport/report/index.html#f-01"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権熊本大会 準決勝 第二試合",
+        "url": "http://www.kumamoto-kouyaren.com/matchreport/report/index.html#f-02"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "http://www.kumamoto-kouyaren.com/"
+  },
+  {
+    "name": "大分県高等学校野球連盟",
+    "site": "https://www.oita-kouyaren.com/",
+    "origin": "https://www.oita-kouyaren.com",
+    "robots": "なし(HTTP 404)",
+    "terms": [
+      {
+        "label": "プライバシー・ポリシー",
+        "url": "https://www.oita-kouyaren.com/privacy.html",
+        "ok": true
+      }
+    ],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "https://www.oita-kouyaren.com/",
+        "snippet": "分県立大分豊府高等学校内 TEL:097-576-9666 Copyright(C) OITA High School Baseball Federation"
+      },
+      {
+        "rule": "営利・商用の禁止",
+        "page": "プライバシー・ポリシー",
+        "url": "https://www.oita-kouyaren.com/privacy.html",
+        "snippet": "と例外 本サイトで提供される情報及び著作物の複製は、それが非営利目的かつ私的利用での複製を禁止いたします。 ただしホームページ上の個々の情報・著作物について個別の所有者、著作"
+      },
+      {
+        "rule": "著作権の記載",
+        "page": "プライバシー・ポリシー",
+        "url": "https://www.oita-kouyaren.com/privacy.html",
+        "snippet": "だしホームページ上の個々の情報・著作物について個別の所有者、著作権者がある場合で、複製に対する許諾または禁止の表示がある場合は、この表示に従うもの"
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "大会中の試合結果",
+        "url": "https://www.oita-kouyaren.com/sokuho/sokuho_1.html"
+      },
+      {
+        "label": "本年度大会日程",
+        "url": "https://www.oita-kouyaren.com/schedule.html"
+      },
+      {
+        "label": "本年度大会記録",
+        "url": "https://www.oita-kouyaren.com/cgi/game_disp.cgi"
+      },
+      {
+        "label": "第150回大分県高等学校野球選手権大会 支部予選（8/11結果）",
+        "url": "https://www.oita-kouyaren.com/news/news_1.html#279"
+      },
+      {
+        "label": "第150回大分県高等学校野球選手権大会 支部予選（8/10結果）",
+        "url": "https://www.oita-kouyaren.com/news/news_1.html#235"
+      },
+      {
+        "label": "第150回大分県高等学校野球選手権大会 支部予選（8/9結果）",
+        "url": "https://www.oita-kouyaren.com/news/news_1.html#176"
+      },
+      {
+        "label": "第150回大分県高等学校野球選手権大会 支部予選（8/8結果）",
+        "url": "https://www.oita-kouyaren.com/news/news_1.html#28"
+      },
+      {
+        "label": "第150回大分県高等学校野球選手権大会 支部予選 組合せについて",
+        "url": "https://www.oita-kouyaren.com/news/news_1.html#274"
+      }
+    ],
+    "note": [
+      "フレーム構成（1件）"
+    ],
+    "charset": "shift_jis",
+    "finalUrl": "https://www.oita-kouyaren.com/"
+  },
+  {
+    "name": "宮崎県高等学校野球連盟",
+    "site": "http://miyazaki-hbf.jp/",
+    "origin": "http://miyazaki-hbf.jp",
+    "robots": "User-agent: * Disallow: Sitemap: https://baseball.omyutech.com/sitemap.txt",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "https://miyazaki-hbf.jp/"
+  },
+  {
+    "name": "鹿児島県高等学校野球連盟",
+    "site": "http://www.kagoshima-kouyaren.jp/",
+    "origin": "http://www.kagoshima-kouyaren.jp",
+    "robots": "User-agent:* Disallow:/library/ Disallow:/material/ Allow:/library/*/favicon/*/favicon.ico Allow:/library/*/favicon/*/webclip.png Allow:/library/5e337f119132af322adf5678/* Sitemap: http://www.kagoshima-kouyaren.jp/sitemap.xml",
+    "terms": [],
+    "findings": [
+      {
+        "rule": "著作権の記載",
+        "page": "(トップ)",
+        "url": "http://www.kagoshima-kouyaren.jp/",
+        "snippet": "覧 球場案内 大会記録 ダウンロード 野球ねっとマニュアル Copyright (c) 2020 - 2026 エキスパートサービス部 All Rights "
+      }
+    ],
+    "resultLinks": [
+      {
+        "label": "大会日程",
+        "url": "http://www.kagoshima-kouyaren.jp/page3"
+      },
+      {
+        "label": "試合結果",
+        "url": "http://www.kagoshima-kouyaren.jp/page4"
+      },
+      {
+        "label": "大会規定",
+        "url": "http://www.kagoshima-kouyaren.jp/page5"
+      },
+      {
+        "label": "大会記録",
+        "url": "http://www.kagoshima-kouyaren.jp/page8"
+      },
+      {
+        "label": "令和6年度肩肘検診の結果",
+        "url": "http://www.kagoshima-kouyaren.jp/library/5e337f119132af322adf5678/683d35cf7c1d30066f337179.pdf"
+      },
+      {
+        "label": "第71回全国高等学校軟式野球選手権南部九州大会",
+        "url": "http://www.kagoshima-kouyaren.jp/library/5e337f119132af322adf5678/6a7c121cca7c23c930a0b22d.pdf"
+      },
+      {
+        "label": "組合せ表はこちら",
+        "url": "http://www.kagoshima-kouyaren.jp/library/5e337f119132af322adf5678/6a6968a50de99e3c0841c728.pdf"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権鹿児島 大会【勝ち上がり】",
+        "url": "http://www.kagoshima-kouyaren.jp/library/5e337f119132af322adf5678/6a644a8637888f3e3fc7b9b1.pdf"
+      }
+    ],
+    "note": [
+      "フレーム構成（1件）"
+    ],
+    "charset": "utf-8",
+    "finalUrl": "http://www.kagoshima-kouyaren.jp/"
+  },
+  {
+    "name": "沖縄県高等学校野球連盟",
+    "site": "http://www.kouyaren-okinawa.jp/",
+    "origin": "http://www.kouyaren-okinawa.jp",
+    "robots": "なし(HTTP 404)",
+    "terms": [],
+    "findings": [],
+    "resultLinks": [
+      {
+        "label": "過去大会の記録",
+        "url": "http://www.kouyaren-okinawa.jp/kako/kako.html"
+      },
+      {
+        "label": "第53回沖縄県高等学校野球新人大会について",
+        "url": "http://www.kouyaren-okinawa.jp/#%E7%AC%AC53%E5%9B%9E%E6%B2%96%E7%B8%84%E7%9C%8C%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E6%96%B0%E4%BA%BA%E5%A4%A7%E4%BC%9A"
+      },
+      {
+        "label": "第108回全国高等学校野球選手権沖縄大会について",
+        "url": "http://www.kouyaren-okinawa.jp/#%E7%AC%AC108%E5%9B%9E%E5%85%A8%E5%9B%BD%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E9%81%B8%E6%89%8B%E6%A8%A9%E6%B2%96%E7%B8%84%E5%A4%A7%E4%BC%9A"
+      },
+      {
+        "label": "第158回九州地区高等学校野球大会について",
+        "url": "http://www.kouyaren-okinawa.jp/#%E7%AC%AC158%E5%9B%9E%E4%B9%9D%E5%B7%9E%E5%9C%B0%E5%8C%BA%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E5%A4%A7%E4%BC%9A"
+      },
+      {
+        "label": "大会要項(PDF)",
+        "url": "http://www.kouyaren-okinawa.jp/yoko/newcomer/53/01_53yoko.pdf"
+      },
+      {
+        "label": "大会要項(PDF)",
+        "url": "http://www.kouyaren-okinawa.jp/yoko/compe/54/01_54yoko.pdf"
+      }
+    ],
+    "note": [],
+    "charset": "utf-8",
+    "finalUrl": "http://www.kouyaren-okinawa.jp/"
+  }
+]

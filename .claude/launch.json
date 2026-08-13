@@ -2,9 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "_comment": "Node はポータブル版でPATHが通っていない。npm.cmd 経由だと next が 'node' を見つけられずに落ちるので、node.exe から Next のCLIを直接叩く。",
       "name": "kouritsu-ouendan",
-      "runtimeExecutable": "C:\\Users\\81809\\tools\\node-v24.19.0-win-x64\\npm.cmd",
-      "runtimeArgs": ["run", "dev"],
+      "runtimeExecutable": "C:\\Users\\81809\\tools\\node-v24.19.0-win-x64\\node.exe",
+      "runtimeArgs": ["node_modules/next/dist/bin/next", "dev"],
       "port": 3000
     }
   ]

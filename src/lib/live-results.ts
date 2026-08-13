@@ -31,6 +31,8 @@ export type LiveGame = {
   date: string;
   /** 同じ日の第何試合か。無ければ null */
   order: string | null;
+  /** 「8:03」。高野連の日別ページから。実施済みは実際の開始時刻 */
+  startTime: string | null;
   /** サヨナラ決着か */
   walkOff: boolean;
   teams: LiveTeam[];
@@ -46,13 +48,21 @@ export type LiveAliveSchool = {
   prefecture: string | null;
   wins: number;
   /**
-   * 次戦。**日付は未定のことが多い。**
-   * ブラケットに対戦カードだけ先に入り、日付は「月日（）」のままなので、
-   * 実際の日付が入っていなければ null。
+   * 次戦。
+   *
+   * 高野連は**日程が発表された日ぶんしかページを出さない。**
+   * 対戦カードが決まっていても、その日の日程がまだ出ていなければ null。
+   * 「相手だけ分かっていて日付が無い」状態は作らない
+   * （Wikipedia由来だったころは日付が常に空だった）。
    */
   next: {
     round: string;
-    date: string | null;
+    /** 「8月13日」 */
+    date: string;
+    /** その日の第何試合か */
+    order: string | null;
+    /** 「18:00」。開始予定時刻 */
+    startTime: string | null;
     opponent: string;
   } | null;
 };
@@ -94,4 +104,50 @@ export function sortGamesByRecency(games: LiveGame[]): LiveGame[] {
 export function latestGameDate(games: LiveGame[]): string | null {
   if (games.length === 0) return null;
   return games.reduce((a, b) => (sortKey(b) > sortKey(a) ? b : a)).date;
+}
+
+/** 大会での、その学校のいまの状況 */
+export type LiveStatus = {
+  wins: number;
+  /** まだ負けていない */
+  alive: boolean;
+  /** 負けた試合の回戦名。勝ち残っていれば null */
+  lostAt: string | null;
+};
+
+/**
+ * 公立校ごとの勝敗をまとめる。トップの「今夏の甲子園に出場している公立校」で、
+ * 各校が勝ち残っているのか、どこで負けたのかを出すのに使う。
+ *
+ * **勝ち残りの判定は `alive` を正とする。** 試合結果だけから
+ * 「負けていない＝勝ち残り」と決めると、初戦がまだの学校（1試合も
+ * 記録が無い）を取りこぼす。`alive` はブラケット全体から作られている。
+ */
+export function statusBySlug(results: LiveResults): Map<string, LiveStatus> {
+  const aliveSlugs = new Set(results.alive.map((s) => s.slug));
+  const status = new Map<string, LiveStatus>();
+
+  for (const game of sortGamesByRecency(results.games)) {
+    for (const team of game.teams) {
+      if (!team.slug) continue;
+      const current = status.get(team.slug) ?? {
+        wins: 0,
+        alive: aliveSlugs.has(team.slug),
+        lostAt: null,
+      };
+      if (team.won) current.wins += 1;
+      // 新しい順に見ているので、最初に見つかった負けが最後の試合
+      else if (current.lostAt === null) current.lostAt = game.round;
+      status.set(team.slug, current);
+    }
+  }
+
+  // 初戦がまだの勝ち残り校は試合が1件も無い。ここで拾う
+  for (const school of results.alive) {
+    if (!status.has(school.slug)) {
+      status.set(school.slug, { wins: school.wins, alive: true, lostAt: null });
+    }
+  }
+
+  return status;
 }

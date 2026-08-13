@@ -1,6 +1,6 @@
 // このファイルは scripts/build-live-results.mjs が生成する。直接編集しない。
-// 出典: 第108回全国高等学校野球選手権大会（Wikipedia, CC BY-SA）
-//   https://ja.wikipedia.org/wiki/%E7%AC%AC108%E5%9B%9E%E5%85%A8%E5%9B%BD%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E9%81%B8%E6%89%8B%E6%A8%A9%E5%A4%A7%E4%BC%9A
+// 出典: 公益財団法人日本高等学校野球連盟（一次情報）
+//   https://www.jhbf.or.jp/sensyuken/2026/schedule/
 
 import type { LiveResults } from "@/lib/live-results";
 
@@ -8,125 +8,30 @@ export const LIVE_RESULTS: LiveResults = {
   "tournamentTitle": "第108回全国高等学校野球選手権大会",
   "season": "summer",
   "year": 2026,
-  "sourceUrl": "https://ja.wikipedia.org/wiki/%E7%AC%AC108%E5%9B%9E%E5%85%A8%E5%9B%BD%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E9%81%B8%E6%89%8B%E6%A8%A9%E5%A4%A7%E4%BC%9A",
+  "sourceUrl": "https://www.jhbf.or.jp/sensyuken/2026/schedule/",
   "games": [
-    {
-      "round": "2回戦",
-      "date": "8月10日",
-      "order": "3",
-      "walkOff": false,
-      "teams": [
-        {
-          "display": "高岡商",
-          "score": 1,
-          "won": false,
-          "slug": "takaokashogyo",
-          "name": "高岡商業高校",
-          "prefecture": "富山"
-        },
-        {
-          "display": "高川学園",
-          "score": 7,
-          "won": true,
-          "slug": null,
-          "name": "高川学園",
-          "prefecture": null
-        }
-      ]
-    },
-    {
-      "round": "2回戦",
-      "date": "8月11日",
-      "order": "1",
-      "walkOff": false,
-      "teams": [
-        {
-          "display": "横手",
-          "score": 0,
-          "won": false,
-          "slug": "yokote",
-          "name": "横手高校",
-          "prefecture": "秋田"
-        },
-        {
-          "display": "敦賀気比",
-          "score": 10,
-          "won": true,
-          "slug": null,
-          "name": "敦賀気比",
-          "prefecture": null
-        }
-      ]
-    },
-    {
-      "round": "2回戦",
-      "date": "8月11日",
-      "order": "2",
-      "walkOff": false,
-      "teams": [
-        {
-          "display": "智弁和歌山",
-          "score": 2,
-          "won": true,
-          "slug": null,
-          "name": "智弁和歌山",
-          "prefecture": null
-        },
-        {
-          "display": "社",
-          "score": 1,
-          "won": false,
-          "slug": "hyogo-yashiro",
-          "name": "社高校",
-          "prefecture": "兵庫"
-        }
-      ]
-    },
-    {
-      "round": "2回戦",
-      "date": "8月12日",
-      "order": "1",
-      "walkOff": false,
-      "teams": [
-        {
-          "display": "拓大紅陵",
-          "score": 1,
-          "won": true,
-          "slug": null,
-          "name": "拓大紅陵",
-          "prefecture": null
-        },
-        {
-          "display": "佐賀商",
-          "score": 0,
-          "won": false,
-          "slug": "sagashogyo",
-          "name": "佐賀商業高校",
-          "prefecture": "佐賀"
-        }
-      ]
-    },
     {
       "round": "1回戦",
       "date": "8月6日",
       "order": "1",
+      "startTime": "16:02",
       "walkOff": false,
       "teams": [
         {
           "display": "東筑",
-          "score": 1,
-          "won": false,
-          "slug": "tochiku",
           "name": "東筑高校",
-          "prefecture": "福岡"
+          "slug": "tochiku",
+          "prefecture": "福岡",
+          "score": 1,
+          "won": false
         },
         {
           "display": "神村学園",
-          "score": 5,
-          "won": true,
-          "slug": null,
           "name": "神村学園",
-          "prefecture": null
+          "slug": null,
+          "prefecture": null,
+          "score": 5,
+          "won": true
         }
       ]
     },
@@ -134,23 +39,24 @@ export const LIVE_RESULTS: LiveResults = {
       "round": "1回戦",
       "date": "8月7日",
       "order": "2",
+      "startTime": "13:32",
       "walkOff": false,
       "teams": [
         {
           "display": "八幡商",
-          "score": 1,
-          "won": false,
-          "slug": "hachimanshogyo",
           "name": "八幡商業高校",
-          "prefecture": "滋賀"
+          "slug": "hachimanshogyo",
+          "prefecture": "滋賀",
+          "score": 1,
+          "won": false
         },
         {
           "display": "健大高崎",
-          "score": 7,
-          "won": true,
-          "slug": null,
           "name": "健大高崎",
-          "prefecture": null
+          "slug": null,
+          "prefecture": null,
+          "score": 7,
+          "won": true
         }
       ]
     },
@@ -158,47 +64,24 @@ export const LIVE_RESULTS: LiveResults = {
       "round": "1回戦",
       "date": "8月8日",
       "order": "3",
+      "startTime": "16:10",
       "walkOff": false,
       "teams": [
         {
           "display": "日本文理",
-          "score": 4,
-          "won": false,
-          "slug": null,
           "name": "日本文理",
-          "prefecture": null
-        },
-        {
-          "display": "大分商",
-          "score": 6,
-          "won": true,
-          "slug": "oitashogyo",
-          "name": "大分商業高校",
-          "prefecture": "大分"
-        }
-      ]
-    },
-    {
-      "round": "2回戦",
-      "date": "8月13日",
-      "order": "4",
-      "walkOff": false,
-      "teams": [
-        {
-          "display": "大分商",
-          "score": 1,
-          "won": false,
-          "slug": "oitashogyo",
-          "name": "大分商業高校",
-          "prefecture": "大分"
-        },
-        {
-          "display": "英明",
-          "score": 6,
-          "won": true,
           "slug": null,
-          "name": "英明",
-          "prefecture": null
+          "prefecture": null,
+          "score": 4,
+          "won": false
+        },
+        {
+          "display": "大分商",
+          "name": "大分商業高校",
+          "slug": "oitashogyo",
+          "prefecture": "大分",
+          "score": 6,
+          "won": true
         }
       ]
     },
@@ -206,39 +89,175 @@ export const LIVE_RESULTS: LiveResults = {
       "round": "1回戦",
       "date": "8月9日",
       "order": "3",
+      "startTime": "16:20",
       "walkOff": true,
       "teams": [
         {
           "display": "鳴門渦潮",
-          "score": 2,
-          "won": true,
-          "slug": "narutozushio",
           "name": "鳴門渦潮高校",
-          "prefecture": "徳島"
+          "slug": "narutozushio",
+          "prefecture": "徳島",
+          "score": 2,
+          "won": true
         },
         {
           "display": "八王子実践",
-          "score": 1,
-          "won": false,
-          "slug": null,
           "name": "八王子実践",
-          "prefecture": null
+          "slug": null,
+          "prefecture": null,
+          "score": 1,
+          "won": false
+        }
+      ]
+    },
+    {
+      "round": "2回戦",
+      "date": "8月10日",
+      "order": "3",
+      "startTime": "16:13",
+      "walkOff": false,
+      "teams": [
+        {
+          "display": "高岡商",
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo",
+          "prefecture": "富山",
+          "score": 1,
+          "won": false
+        },
+        {
+          "display": "高川学園",
+          "name": "高川学園",
+          "slug": null,
+          "prefecture": null,
+          "score": 7,
+          "won": true
+        }
+      ]
+    },
+    {
+      "round": "2回戦",
+      "date": "8月10日",
+      "order": "4",
+      "startTime": "18:47",
+      "walkOff": false,
+      "teams": [
+        {
+          "display": "天理",
+          "name": "天理",
+          "slug": null,
+          "prefecture": null,
+          "score": 7,
+          "won": true
+        },
+        {
+          "display": "福山",
+          "name": "福山高校",
+          "slug": "fukuyama",
+          "prefecture": "広島",
+          "score": 2,
+          "won": false
+        }
+      ]
+    },
+    {
+      "round": "2回戦",
+      "date": "8月11日",
+      "order": "1",
+      "startTime": "8:02",
+      "walkOff": false,
+      "teams": [
+        {
+          "display": "横手",
+          "name": "横手高校",
+          "slug": "yokote",
+          "prefecture": "秋田",
+          "score": 0,
+          "won": false
+        },
+        {
+          "display": "敦賀気比",
+          "name": "敦賀気比",
+          "slug": null,
+          "prefecture": null,
+          "score": 10,
+          "won": true
+        }
+      ]
+    },
+    {
+      "round": "2回戦",
+      "date": "8月11日",
+      "order": "2",
+      "startTime": "13:31",
+      "walkOff": false,
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "name": "智辯和歌山",
+          "slug": null,
+          "prefecture": null,
+          "score": 2,
+          "won": true
+        },
+        {
+          "display": "社",
+          "name": "社高校",
+          "slug": "hyogo-yashiro",
+          "prefecture": "兵庫",
+          "score": 1,
+          "won": false
+        }
+      ]
+    },
+    {
+      "round": "2回戦",
+      "date": "8月12日",
+      "order": "1",
+      "startTime": "8:02",
+      "walkOff": false,
+      "teams": [
+        {
+          "display": "拓大紅陵",
+          "name": "拓大紅陵",
+          "slug": null,
+          "prefecture": null,
+          "score": 1,
+          "won": true
+        },
+        {
+          "display": "佐賀商",
+          "name": "佐賀商業高校",
+          "slug": "sagashogyo",
+          "prefecture": "佐賀",
+          "score": 0,
+          "won": false
         }
       ]
     }
   ],
   "alive": [
     {
+      "slug": "oitashogyo",
+      "display": "大分商",
+      "name": "大分商業高校",
+      "prefecture": "大分",
+      "wins": 1,
+      "next": {
+        "round": "2回戦",
+        "date": "8月13日",
+        "order": "4",
+        "startTime": "18:00",
+        "opponent": "英明"
+      }
+    },
+    {
       "slug": "narutozushio",
       "display": "鳴門渦潮",
       "name": "鳴門渦潮高校",
       "prefecture": "徳島",
       "wins": 1,
-      "next": {
-        "round": "2回戦",
-        "date": null,
-        "opponent": "霞ヶ浦"
-      }
+      "next": null
     }
   ]
 };

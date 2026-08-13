@@ -11,4 +11,5 @@ export const REGIONAL_LOADERS: Record<string, () => Promise<RegionalDistrict>> =
   yamanashi: () => import("./yamanashi").then((m) => m.REGIONAL_YAMANASHI),
   tokushima: () => import("./tokushima").then((m) => m.REGIONAL_TOKUSHIMA),
   kumamoto: () => import("./kumamoto").then((m) => m.REGIONAL_KUMAMOTO),
+  gunma: () => import("./gunma").then((m) => m.REGIONAL_GUNMA),
 };

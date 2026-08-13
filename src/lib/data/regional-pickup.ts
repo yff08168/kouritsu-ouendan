@@ -113,6 +113,58 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       ]
     },
     {
+      "districtSlug": "gunma",
+      "district": "群馬",
+      "sourceName": "群馬県高等学校野球連盟",
+      "sourceUrl": "http://www.gunma-hbf.com/",
+      "date": "2026-07-24",
+      "season": "summer",
+      "tournament": "108回全国高校野球選手権群馬大会",
+      "round": "準決勝",
+      "teams": [
+        {
+          "display": "前橋商",
+          "score": 4,
+          "won": true,
+          "name": "前橋商業高校",
+          "slug": "maebashishogyo"
+        },
+        {
+          "display": "桐生第一",
+          "score": 1,
+          "won": false,
+          "name": "桐生第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "districtSlug": "gunma",
+      "district": "群馬",
+      "sourceName": "群馬県高等学校野球連盟",
+      "sourceUrl": "http://www.gunma-hbf.com/",
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "108回全国高校野球選手権群馬大会",
+      "round": "準々決勝",
+      "teams": [
+        {
+          "display": "利根商",
+          "score": 1,
+          "won": false,
+          "name": "利根商業高校",
+          "slug": "toneshogyo"
+        },
+        {
+          "display": "前橋商",
+          "score": 10,
+          "won": true,
+          "name": "前橋商業高校",
+          "slug": "maebashishogyo"
+        }
+      ]
+    },
+    {
       "districtSlug": "saitama",
       "district": "埼玉",
       "sourceName": "埼玉高校野球情報局",
@@ -165,6 +217,32 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       ]
     },
     {
+      "districtSlug": "gunma",
+      "district": "群馬",
+      "sourceName": "群馬県高等学校野球連盟",
+      "sourceUrl": "http://www.gunma-hbf.com/",
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "108回全国高校野球選手権群馬大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "伊勢崎商",
+          "score": 1,
+          "won": false,
+          "name": "伊勢崎商業高校",
+          "slug": "isesakishogyo"
+        },
+        {
+          "display": "桐生",
+          "score": 9,
+          "won": true,
+          "name": "桐生高校",
+          "slug": "kiryu"
+        }
+      ]
+    },
+    {
       "districtSlug": "kumamoto",
       "district": "熊本",
       "sourceName": "熊本県高等学校野球連盟",
@@ -187,6 +265,32 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": false,
           "name": "ルーテル学院",
           "slug": null
+        }
+      ]
+    },
+    {
+      "districtSlug": "gunma",
+      "district": "群馬",
+      "sourceName": "群馬県高等学校野球連盟",
+      "sourceUrl": "http://www.gunma-hbf.com/",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "108回全国高校野球選手権群馬大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "渋川青翠",
+          "score": 2,
+          "won": false,
+          "name": "渋川青翠高校",
+          "slug": "shibukawaseisui"
+        },
+        {
+          "display": "前橋商",
+          "score": 6,
+          "won": true,
+          "name": "前橋商業高校",
+          "slug": "maebashishogyo"
         }
       ]
     },

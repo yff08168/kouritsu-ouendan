@@ -1067,6 +1067,172 @@ const kumamoto = {
 };
 
 /**
+ * 群馬県高等学校野球連盟（`gunma-hbf.com`）。
+ *
+ * **規約に転載の制限は無い**（2026-08-14 にトップ・結果ページを確認）。
+ *
+ * ★**1大会＝1ページ。** 日別ページを辿らずに済むので、1回の実行が
+ * 「トップ1枚＋大会ページ数枚」で終わる。**自動更新と相性がよい形。**
+ *
+ * ★**結果ページのURLに意味が無い**（`99_blank010067.html`）。組み立てられないので
+ * トップページの「結果」リンクを辿る。どの大会かは**リンクの周りの文字ではなく、
+ * 開いたページ自身のタイトル**で決める（`R８夏大会`）。
+ * リンクの近くの文字から大会名を拾うのは、レイアウトが変わると壊れる。
+ *
+ *   <title>R８夏大会 …</title>          ← 令和8年度＝2026年、夏
+ *   ＝＝＝＝　　７月２６日（日）　＝＝＝＝
+ *   決勝
+ *   上毛新聞敷島球場
+ *   健大高崎 ― 前橋商
+ *   <table> チーム|1|2|…|9|計 </table>
+ *   （前）秋元―中村                      ← 投手・捕手。**取らない**
+ *
+ * ★**選手の名前は取らない**（熊本と同じ）。読むのはイニング表だけ。
+ */
+const gunma = {
+  slug: "gunma",
+  district: "群馬",
+  name: "群馬県高等学校野球連盟",
+  siteUrl: "http://www.gunma-hbf.com/",
+  /*
+    ★**この出典は一部の回戦しか出さない。** 夏は3回戦以降の15試合だけで、
+    1・2回戦のスコアは載らない（春はさらに少ない）。**取りこぼしではなく、
+    出典がそこまでしか公開していない。** 取りこぼしの検算（準々決勝4・
+    準決勝2・決勝1）で「試合が欠けている」と毎回鳴るので、この県では
+    足りない側の警告を出さない。**多すぎる側の警告は残す**
+    （別の大会が混ざるのは、部分公開でも起きてはいけない）。
+  */
+  partial: true,
+  /*
+    3季節ともトップページから辿るので同じURL。取得は1回で済ませる（`indexCache`）。
+  */
+  seasons: {
+    spring: "http://www.gunma-hbf.com/",
+    summer: "http://www.gunma-hbf.com/",
+    autumn: "http://www.gunma-hbf.com/",
+  },
+  indexCache: new Map(),
+  /** ページのタイトルの「春/夏/秋」→ 季節 */
+  SEASON_OF: { 春: "spring", 夏: "summer", 秋: "autumn" },
+  /**
+   * 結果ページのURL → 大会名。
+   *
+   * ★**大会ページ自身は正式な大会名を持っていない**（見出しもタイトルも「R８夏大会」）。
+   * トップの大会情報の欄には正式名があるので、そちらから取る。
+   *
+   *   ○108回全国高校野球　選手権群馬大会　7/4～7/26　[組合せ] [結果]
+   *
+   * 欄は `○` 区切り。**リンクより前のテキストが大会名**で、日付の範囲が続く。
+   * 取れなければ null にして、大会名なしで出す（**回数を推測して補わない**）。
+   */
+  tournamentNames(index, baseUrl) {
+    const names = new Map();
+    for (const chunk of index.split("○").slice(1)) {
+      for (const a of chunk.matchAll(/<a[^>]+href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
+        if (normalize(plain(a[2])) !== "結果") continue;
+        if (!/\.html?$/i.test(a[1])) continue;
+        const name = normalize(plain(chunk.slice(0, chunk.indexOf("<a"))))
+          // 「7/4～7/26」のような開催期間は大会名ではない
+          .replace(/\d{1,2}\/\d{1,2}.*$/, "")
+          .replace(/\s+/g, "")
+          .trim();
+        try {
+          names.set(new URL(a[1], baseUrl).toString(), name || null);
+        } catch {
+          /* リンクが壊れているだけ。大会名が付かないだけで試合は取れる */
+        }
+      }
+    }
+    return names;
+  },
+  async collect({ fetchHtml, season, url, year }) {
+    if (!this.indexCache.has(url)) this.indexCache.set(url, await fetchHtml(url));
+    const index = this.indexCache.get(url);
+    if (!index) return [];
+
+    /*
+      「結果」と書かれた同一サイトのHTMLリンク。PDF（組合せ）は除く。
+      **関東大会や1年生大会のリンクも混ざる**が、開いたページのタイトルで
+      弾けるので、ここでは絞り込まない。
+    */
+    const pages = dailyLinks(index, url, {
+      hrefPattern: /\.html?$/i,
+      labelPattern: /^結果$/,
+    });
+    const names = this.tournamentNames(index, url);
+
+    const games = [];
+    for (const page of pages.slice(0, MAX_DAILY_PAGES)) {
+      const html = await fetchHtml(page.url);
+      if (!html) continue;
+
+      /*
+        ★**タイトルが「R<令和><春夏秋>大会」の形でなければ読まない。**
+        関東大会（`R８春季関東大会`）や1年生大会をここで落とす。
+        年も季節もこのタイトルだけで決まるので、**日付から推測しない。**
+      */
+      const title = normalize(plain(/<title[^>]*>([\s\S]*?)<\/title>/i.exec(html)?.[1] ?? ""));
+      const m = title.match(/R(\d+)(春|夏|秋)大会/);
+      if (!m) continue;
+      const pageYear = 2018 + Number(m[1]);
+      if (this.SEASON_OF[m[2]] !== season || pageYear !== year) continue;
+      const tournament = names.get(page.url) ?? null;
+
+      let date = null;
+      let round = null;
+      let venue = null;
+      let cursor = 0;
+      for (const t of html.matchAll(/<table[\s\S]*?<\/table>/gi)) {
+        /*
+          表の直前のテキストに、日付・回戦・球場がこの順で書いてある。
+          **前の試合の投手・捕手の行も混ざる**が、日付や回戦の形には一致しない。
+          1日に複数試合ある日は2試合目以降に日付も回戦も無いので、
+          **見つかったときだけ更新して持ち越す。**
+        */
+        const before = normalize(plain(html.slice(cursor, t.index)));
+        cursor = t.index + t[0].length;
+        const d = before.match(/(\d{1,2})月(\d{1,2})日/);
+        if (d) {
+          date = `${pageYear}-${d[1].padStart(2, "0")}-${d[2].padStart(2, "0")}`;
+          // 日付が変わったら回戦も球場も引き継がない
+          round = null;
+          venue = null;
+        }
+        round = pickRound(before) ?? round;
+        venue = pickVenue(before) ?? venue;
+        if (!date) continue;
+
+        const rows = tableRows(t[0]);
+        if (rows.length < 3) continue;
+        // 見出しの行は「チーム 1 2 … 計」
+        if (!/チーム/.test(rows[0][0] ?? "")) continue;
+        const [homeRow, awayRow] = rows.slice(1, 3);
+        const home = homeRow[0];
+        const away = awayRow[0];
+        if (!home || !away) continue;
+        const a = inningTotal(homeRow);
+        const b = inningTotal(awayRow);
+        if (a === null || b === null) continue;
+
+        games.push({
+          date,
+          season,
+          tournament,
+          round,
+          venue,
+          // 勝者の印が無いので点数から決める
+          teams: [
+            { display: home, score: a, won: a > b },
+            { display: away, score: b, won: b > a },
+          ],
+        });
+      }
+    }
+    return games;
+  },
+};
+
+/**
  * ここに県を足していく。
  *
  * ★**規約で制限のある連盟のサイトは足さないこと。**
@@ -1080,7 +1246,7 @@ const kumamoto = {
  *
  * 詳細はREADMEの「都道府県高野連サイトの規約調査」。
  */
-const ADAPTERS = [nagano, kanagawa, saitama, yamanashi, tokushima, kumamoto];
+const ADAPTERS = [nagano, kanagawa, saitama, yamanashi, tokushima, kumamoto, gunma];
 
 // ------------------------------------------------------------------
 // 学校マスタとの照合（build-live-results.mjs と同じ考え方）
@@ -1160,8 +1326,17 @@ async function fetchSchools(supabase) {
 /**
  * ★**規則では拾えない校名の対応表。手で書く。**
  *
- * 「地区名＼出典の表記」→ 学校マスタの校名。**推測で書かないこと。**
+ * 「地区名＼出典の表記」→ **学校の slug**。**推測で書かないこと。**
  * 出典のページで実際にその表記が使われていることを確かめてから足す。
+ *
+ * ★**校名ではなく slug で指すこと。** 同じ県に同名の学校がある
+ * （群馬の「前橋高校」は県立と市立の2件）。校名で指すと、
+ * **対応表を書いたのにどちらか分からない**という元の問題に戻る。
+ *
+ * ★**分からないものは書かない。** 群馬の「前 橋」がまさにそれで、
+ * 県立と市立のどちらを指すのか出典から確かめられなかった（この連盟は
+ * 加盟校名簿を公開しておらず、結果ページに市立側の表記が出てこない）。
+ * 1試合を取りこぼすほうが、別の学校の戦績にするより軽い。
  *
  * 高専のキャンパスについて:
  *   熊本高専は八代・熊本の2キャンパスがあり、**大会にはキャンパスごとに出る**
@@ -1171,8 +1346,11 @@ async function fetchSchools(supabase) {
  *   嘘にはならない側に倒れる。
  */
 const DISTRICT_ALIASES = {
-  "熊本\t高専八代": "熊本高専",
-  "熊本\t高専熊本": "熊本高専",
+  "熊本\t高専八代": "kumamoto-kosen",
+  "熊本\t高専熊本": "kumamoto-kosen",
+  // 群馬は3回戦以降しか結果を出さないが、その中に出てくる略記
+  "群馬\t桐生市商": "kiryushiritsushogyo",
+  "群馬\t安中総合": "annakasogogakuen",
 };
 
 /**
@@ -1213,11 +1391,13 @@ function buildIndex(schools) {
   }
 
   // 手で書いた対応表。**規則で拾える学校を上書きしない**（同じ Map に足すだけ）
-  for (const [key, target] of Object.entries(DISTRICT_ALIASES)) {
+  const bySlug = new Map(schools.map((s) => [s.slug, s]));
+  for (const [key, slug] of Object.entries(DISTRICT_ALIASES)) {
     const [district, label] = key.split("\t");
-    const hit = (byDistrict.get(`${district}\t${normalizeSchoolName(target)}`) ?? [])[0];
+    const hit = bySlug.get(slug);
     if (!hit) {
-      console.log(`  ⚠️ 対応表の「${target}」が学校マスタに見つからない（${key}）`);
+      // 学校マスタ側で slug が変わったときに黙って効かなくなるのを防ぐ
+      console.log(`  ⚠️ 対応表の slug「${slug}」が学校マスタに見つからない（${key}）`);
       continue;
     }
     push(byDistrict, `${district}\t${normalizeSchoolName(label)}`, hit);
@@ -1650,12 +1830,16 @@ async function main() {
       byRound.set(g.round ?? "?", (byRound.get(g.round ?? "?") ?? 0) + 1);
     }
   }
+  /** 一部の回戦しか公開しない出典。足りない側の警告を出さない（`partial`） */
+  const partialDistricts = new Set(ADAPTERS.filter((a) => a.partial).map((a) => a.slug));
+
   for (const [key, byRound] of gamesPerRound) {
     for (const [round, expected, mode] of TAIL_ROUNDS) {
       const actual = byRound.get(round);
       // その回戦にまだ達していない大会は検算の対象外
       if (actual === undefined) continue;
       if (mode === "atLeast" ? actual >= expected : actual === expected) continue;
+      if (actual < expected && partialDistricts.has(key.split("\t")[0])) continue;
       console.log(
         `  ⚠️ ${key.replace("\t", " / ")}: ${round}が${actual}試合（${expected}試合のはず）。` +
           (actual < expected ? "試合が欠けている" : "別の大会が混ざっている"),

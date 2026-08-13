@@ -234,25 +234,34 @@ export const LIVE_RESULTS: LiveResults = {
           "won": false
         }
       ]
+    },
+    {
+      "round": "2回戦",
+      "date": "8月13日",
+      "order": "4",
+      "startTime": "17:46",
+      "walkOff": false,
+      "teams": [
+        {
+          "display": "大分商",
+          "name": "大分商業高校",
+          "slug": "oitashogyo",
+          "prefecture": "大分",
+          "score": 1,
+          "won": false
+        },
+        {
+          "display": "英明",
+          "name": "英明",
+          "slug": null,
+          "prefecture": null,
+          "score": 6,
+          "won": true
+        }
+      ]
     }
   ],
   "alive": [
-    {
-      "slug": "oitashogyo",
-      "display": "大分商",
-      "name": "大分商業高校",
-      "prefecture": "大分",
-      "wins": 1,
-      "next": {
-        "round": "2回戦",
-        "date": "8月13日",
-        "dayNo": 9,
-        "order": "4",
-        "startTime": "18:00",
-        "opponent": "英明",
-        "provisional": false
-      }
-    },
     {
       "slug": "narutozushio",
       "display": "鳴門渦潮",

@@ -1,6 +1,7 @@
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { escapeLikePattern, throwIfError, toImageRef, toPrefectureRef } from "@/lib/queries/shared";
 import { PREFECTURE_BY_SLUG } from "@/lib/constants";
+import type { Establishment, SchoolKind } from "@/lib/constants";
 import type {
   ChampionshipRow,
   SchoolCountRow,
@@ -43,6 +44,35 @@ function toSchoolSummary(row: SchoolRow): SchoolSummary {
     lastKoshienYear: row.last_koshien_year,
     cheerCount: row.cheer_count ?? 0,
   };
+}
+
+/**
+ * slug を指定して学校をまとめて取る。**渡した順に返す。**
+ *
+ * DBの `in` は順序を保証しないので、並べ直してから返す。
+ * トップの「今夏の甲子園に出場している公立校」のように、
+ * 呼び出し側が並び（勝ち残り→敗退など）を決めたい場面で使う。
+ */
+export async function getSchoolsBySlugs(
+  slugs: string[],
+): Promise<SchoolSummary[]> {
+  if (slugs.length === 0) return [];
+  const supabase = createSupabaseServerClient();
+
+  const { data, error } = await supabase
+    .from("schools")
+    .select(SCHOOL_SUMMARY_SELECT)
+    .in("slug", slugs);
+
+  throwIfError(error, "学校のまとめ取得");
+
+  const bySlug = new Map(
+    ((data ?? []) as unknown as SchoolRow[]).map((row) => [
+      row.slug,
+      toSchoolSummary(row),
+    ]),
+  );
+  return slugs.map((slug) => bySlug.get(slug)).filter((s) => s !== undefined);
 }
 
 /**
@@ -278,11 +308,40 @@ async function fetchSchoolSlugs({
   return slugs;
 }
 
+/**
+ * 並び替え。
+ *
+ * **DBの列で並べられるものだけ。** PostgREST は式を order に渡せないので、
+ * 「春＋夏の合計」は生成列が要る（`koshien_total`／マイグレーション 0007）。
+ */
+export const SCHOOL_SORTS = {
+  pref: { label: "都道府県順", note: "北から順に、同じ県内は校名順" },
+  count: { label: "甲子園出場回数順", note: "春夏の合計が多い順", needs0007: true },
+  recent: { label: "最近甲子園に出た順", note: "最後に出場した年が新しい順" },
+  cheer: { label: "応援の多い順", note: "応援ボタンが押された数の多い順" },
+} as const;
+
+export type SchoolSort = keyof typeof SCHOOL_SORTS;
+
+export const SCHOOL_KOSHIEN_FILTERS = {
+  yes: "甲子園に出たことがある",
+  no: "甲子園はまだ",
+} as const;
+
+export type SchoolKoshienFilter = keyof typeof SCHOOL_KOSHIEN_FILTERS;
+
 export type SchoolSearchParams = {
   /** 学校名・正式名称・別名・市区町村を横断する部分一致 */
   q?: string;
   /** 都道府県slug（例: shimane） */
   prefectureSlug?: string;
+  /** 設置区分。私立は収録対象外なので渡されない想定 */
+  establishment?: Establishment;
+  /** 学校種別（高校・高専・中等教育学校） */
+  kind?: SchoolKind;
+  /** 甲子園の出場歴の有無 */
+  koshien?: SchoolKoshienFilter;
+  sort?: SchoolSort;
   /** 1始まり */
   page?: number;
   perPage?: number;
@@ -294,6 +353,11 @@ export type SchoolSearchResult = {
   page: number;
   perPage: number;
   totalPages: number;
+  /**
+   * 指定された並び替えが使えず、既定（都道府県順）で返したか。
+   * マイグレーション 0007 が未適用のときに立つ。画面で断ること。
+   */
+  sortUnavailable: boolean;
 };
 
 /**
@@ -306,6 +370,10 @@ export type SchoolSearchResult = {
 export async function searchSchools({
   q = "",
   prefectureSlug,
+  establishment,
+  kind,
+  koshien,
+  sort = "pref",
   page = 1,
   perPage = 24,
 }: SchoolSearchParams): Promise<SchoolSearchResult> {
@@ -313,24 +381,72 @@ export async function searchSchools({
   const currentPage = Math.max(1, Math.floor(page));
   const from = (currentPage - 1) * perPage;
 
-  let query = supabase
-    .from("schools")
-    .select(SCHOOL_SUMMARY_SELECT, { count: "exact" });
+  /*
+    **問い合わせは毎回ゼロから組み立てる。**
+    PostgREST のビルダーは `.order()` などが自身を書き換えて返す作りなので、
+    一度実行したものを使い回すと条件が二重に付く。下の再試行のために
+    関数にしてある。
+  */
+  const run = (sortKey: SchoolSort) => {
+    let query = supabase
+      .from("schools")
+      .select(SCHOOL_SUMMARY_SELECT, { count: "exact" });
 
-  if (q) {
-    query = query.ilike("search_text", `%${escapeLikePattern(q)}%`);
+    if (q) query = query.ilike("search_text", `%${escapeLikePattern(q)}%`);
+
+    if (prefectureSlug) {
+      const prefecture = PREFECTURE_BY_SLUG.get(prefectureSlug);
+      // 存在しないslugが来たら0件にする（不正なIDでの全件取得を防ぐ）
+      query = query.eq("prefecture_id", prefecture?.id ?? -1);
+    }
+
+    if (establishment) query = query.eq("establishment", establishment);
+    if (kind) query = query.eq("school_kind", kind);
+
+    if (koshien === "yes") {
+      query = query.or("koshien_spring_count.gt.0,koshien_summer_count.gt.0");
+    } else if (koshien === "no") {
+      query = query.eq("koshien_spring_count", 0).eq("koshien_summer_count", 0);
+    }
+
+    if (sortKey === "count") {
+      query = query.order("koshien_total", { ascending: false });
+    } else if (sortKey === "recent") {
+      // 未出場（null）は後ろへ。「最近出た順」の先頭に空欄が並ぶのを防ぐ
+      query = query.order("last_koshien_year", {
+        ascending: false,
+        nullsFirst: false,
+      });
+    } else if (sortKey === "cheer") {
+      query = query.order("cheer_count", { ascending: false });
+    } else {
+      query = query.order("prefecture_id", { ascending: true });
+    }
+
+    /*
+      **最後は必ず一意に決まる列で締める。**
+      同点が多い列（出場回数・最終出場年・応援数）だけで並べると、
+      ページの境目で同じ学校が2回出たり抜けたりする。
+    */
+    return query
+      .order("name", { ascending: true })
+      .order("slug", { ascending: true })
+      .range(from, from + perPage - 1);
+  };
+
+  let { data, error, count } = await run(sort);
+
+  /*
+    `koshien_total` はマイグレーション 0007 で足す生成列。
+    **未適用でも /schools を落とさない。** このプロジェクトはSQLを人が
+    ブラウザで流す運用なので、適用漏れでページごと落ちるのを避ける。
+    既定の並びで出し直し、並び替えが効いていないことを画面で断る。
+  */
+  let sortUnavailable = false;
+  if (error && sort === "count") {
+    sortUnavailable = true;
+    ({ data, error, count } = await run("pref"));
   }
-
-  if (prefectureSlug) {
-    const prefecture = PREFECTURE_BY_SLUG.get(prefectureSlug);
-    // 存在しないslugが来たら0件にする（不正なIDでの全件取得を防ぐ）
-    query = query.eq("prefecture_id", prefecture?.id ?? -1);
-  }
-
-  const { data, error, count } = await query
-    .order("prefecture_id", { ascending: true })
-    .order("name", { ascending: true })
-    .range(from, from + perPage - 1);
 
   throwIfError(error, "学校の検索");
 
@@ -341,6 +457,7 @@ export async function searchSchools({
     page: currentPage,
     perPage,
     totalPages: Math.max(1, Math.ceil(total / perPage)),
+    sortUnavailable,
   };
 }
 

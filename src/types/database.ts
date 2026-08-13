@@ -93,7 +93,7 @@ export type PhenomenonRow = ImageColumns & {
   prefecture: PrefectureJoin;
   /** 中間テーブル経由の関連校。多対多なので配列で返る。 */
   phenomenon_schools:
-    | { role: string; schools: { name: string } | null }[]
+    | { role: string; schools: { slug: string; name: string } | null }[]
     | null;
 };
 

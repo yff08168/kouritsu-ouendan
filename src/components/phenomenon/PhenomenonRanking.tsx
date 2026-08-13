@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Flame } from "lucide-react";
 import { PHENOMENON, SEASONS } from "@/lib/constants";
+import { shortSchoolName } from "@/lib/school-name";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { Thumbnail } from "@/components/common/Thumbnail";
 import { Badge } from "@/components/common/Badge";
@@ -24,13 +25,13 @@ export function PhenomenonRanking({
         id="phenomenon-heading"
         title={PHENOMENON.label}
         note={PHENOMENON.tagline}
-        icon={<Flame size={18} />}
+        icon={<Flame size={22} />}
         moreHref="/phenomenon"
         tone="onDark"
         className="mb-1"
       />
       {/* 名前だけでは何のことか伝わらないため、狭い画面でも説明を出す */}
-      <p className="mb-3 text-[0.6875rem] text-navy-100/80 sm:hidden">
+      <p className="mb-3 text-xs text-navy-100/80 sm:hidden">
         {PHENOMENON.tagline}
       </p>
 
@@ -43,18 +44,23 @@ export function PhenomenonRanking({
             >
               <span
                 aria-hidden="true"
-                className="grid w-5 shrink-0 place-items-start pt-0.5 text-lg font-bold leading-none text-accent-800"
+                className="grid w-6 shrink-0 place-items-start pt-0.5 text-xl font-bold leading-none text-accent-800"
               >
                 {index + 1}
               </span>
 
               <div className="min-w-0 flex-1">
                 <div className="flex flex-wrap items-center gap-1.5">
-                  <span className="text-sm font-bold text-ink group-hover:underline">
-                    {item.schoolName ?? item.title}
+                  <span
+                    title={item.schoolName ?? undefined}
+                    className="text-base font-bold text-ink group-hover:underline"
+                  >
+                    {item.schoolName
+                      ? shortSchoolName(item.schoolName, item.schoolSlug ?? undefined)
+                      : item.title}
                   </span>
                   {item.prefecture && (
-                    <span className="text-xs text-ink-muted">
+                    <span className="text-sm text-ink-muted">
                       （{item.prefecture.name}）
                     </span>
                   )}
@@ -62,7 +68,7 @@ export function PhenomenonRanking({
                     <Badge variant="accent">{item.badge}</Badge>
                   )}
                 </div>
-                <p className="mt-1 line-clamp-1 text-xs text-ink-muted">
+                <p className="mt-1 line-clamp-1 text-sm text-ink-muted">
                   {item.year}
                   {SEASONS[item.season]}　{item.title}
                 </p>
@@ -71,6 +77,11 @@ export function PhenomenonRanking({
               <Thumbnail
                 image={item.image}
                 seed={item.slug}
+                school={
+                  item.schoolName && item.schoolSlug
+                    ? { name: item.schoolName, slug: item.schoolSlug }
+                    : undefined
+                }
                 className="h-12 w-16 shrink-0 rounded"
                 sizes="64px"
               />

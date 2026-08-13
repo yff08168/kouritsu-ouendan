@@ -66,14 +66,20 @@ export const PHENOMENON = {
     "強豪私学がひしめく地方大会や甲子園で、公立高校が勝ち上がっていくこと。このサイトでは、その一つひとつを記録として残していきます。",
 } as const;
 
-/** ヘッダー / フッターの主要ナビゲーション */
+/**
+ * ヘッダー / フッターの主要ナビゲーション。
+ *
+ * **「公立高校」と「都道府県」は1つにまとめた（2026-08-13）。**
+ * どちらも日本地図から学校へ辿るページで、利用者から見ると
+ * 同じものが2つ並んでいた。`/prefectures` はURLを壊さないために
+ * 残してあるが、ナビからは外し `/schools` の中から辿れるようにしている。
+ */
 export const NAV = [
   { href: "/news", label: "ニュース" },
-  { href: "/schools", label: "公立高校" },
+  { href: "/schools", label: "公立高校を探す" },
   { href: "/rankings", label: "記録" },
   { href: "/phenomenon", label: PHENOMENON.label },
   { href: "/features", label: "特集" },
-  { href: "/prefectures", label: "都道府県" },
 ] as const;
 
 /**
@@ -240,14 +246,21 @@ export type PrefectureMaster = {
    * (2) 地図データの配布ライセンスと帰属表示の問題が発生しない
    * (3) ただのリンクの集まりなのでキーボード操作と読み上げがそのまま効く
    * ため。正確な地図ではなく、位置関係が伝わればよいという割り切り。
+   *
+   * 並びは**甲子園の出場校一覧でおなじみの配置**に合わせてある
+   * （北海道・東北を右上にまとめ、残り40地区を10列×4行に敷き詰める）。
+   * 高校野球を見る人がいちばん見慣れた形で、日本の形を模した配置より
+   * マスの隙間が少なく、1マスあたりを大きく取れる。
    */
   mapCol: number;
   mapRow: number;
+  /** 横に何マス分使うか。北海道の2地区だけ2マス（既定は1） */
+  mapSpan?: number;
 };
 
 /** タイル地図の列数・行数。CSSグリッドの定義に使う */
-export const MAP_COLUMNS = 12;
-export const MAP_ROWS = 14;
+export const MAP_COLUMNS = 10;
+export const MAP_ROWS = 10;
 
 /**
  * 地区マスタ（49件）。おおむねJISコード順。
@@ -259,59 +272,69 @@ export const MAP_ROWS = 14;
  *
  * slug をローマ字にしているのは、日本語URLがエンコードされて
  * 共有時に読めなくなるのを避けるため（設計判断⑨）。
+ *
+ * ------------------------------------------------------------------
+ * タイル地図の座標について
+ *
+ *   1〜2行目 … 北海道の2地区（右上・横2マス）
+ *   3〜5行目 … 東北6県（右端2列）。左に空くマスは凡例と説明を置く場所
+ *   6〜9行目 … 残り40地区を10列×4行に。各行は西から東へ
+ *   10行目   … 沖縄
+ *
+ *   配列の並び自体はJISコード順のまま。狭い画面では地方別の一覧に
+ *   切り替わり、そのときはこの並びがそのまま読み上げ順になるため。
  */
 export const PREFECTURES: PrefectureMaster[] = [
-  { id: 48, name: "北北海道", slug: "kita-hokkaido", region: "北海道", mapCol: 12, mapRow: 1 },
-  { id: 49, name: "南北海道", slug: "minami-hokkaido", region: "北海道", mapCol: 11, mapRow: 1 },
-  { id: 2, name: "青森", slug: "aomori", region: "東北", mapCol: 11, mapRow: 2 },
-  { id: 3, name: "岩手", slug: "iwate", region: "東北", mapCol: 11, mapRow: 3 },
-  { id: 4, name: "宮城", slug: "miyagi", region: "東北", mapCol: 11, mapRow: 4 },
-  { id: 5, name: "秋田", slug: "akita", region: "東北", mapCol: 10, mapRow: 3 },
-  { id: 6, name: "山形", slug: "yamagata", region: "東北", mapCol: 10, mapRow: 4 },
-  { id: 7, name: "福島", slug: "fukushima", region: "東北", mapCol: 11, mapRow: 5 },
-  { id: 8, name: "茨城", slug: "ibaraki", region: "関東", mapCol: 12, mapRow: 6 },
-  { id: 9, name: "栃木", slug: "tochigi", region: "関東", mapCol: 11, mapRow: 6 },
-  { id: 10, name: "群馬", slug: "gunma", region: "関東", mapCol: 10, mapRow: 6 },
-  { id: 11, name: "埼玉", slug: "saitama", region: "関東", mapCol: 10, mapRow: 7 },
+  { id: 48, name: "北北海道", slug: "kita-hokkaido", region: "北海道", mapCol: 9, mapRow: 1, mapSpan: 2 },
+  { id: 49, name: "南北海道", slug: "minami-hokkaido", region: "北海道", mapCol: 9, mapRow: 2, mapSpan: 2 },
+  { id: 2, name: "青森", slug: "aomori", region: "東北", mapCol: 9, mapRow: 3 },
+  { id: 3, name: "岩手", slug: "iwate", region: "東北", mapCol: 10, mapRow: 3 },
+  { id: 4, name: "宮城", slug: "miyagi", region: "東北", mapCol: 10, mapRow: 4 },
+  { id: 5, name: "秋田", slug: "akita", region: "東北", mapCol: 9, mapRow: 4 },
+  { id: 6, name: "山形", slug: "yamagata", region: "東北", mapCol: 9, mapRow: 5 },
+  { id: 7, name: "福島", slug: "fukushima", region: "東北", mapCol: 10, mapRow: 5 },
+  { id: 8, name: "茨城", slug: "ibaraki", region: "関東", mapCol: 10, mapRow: 7 },
+  { id: 9, name: "栃木", slug: "tochigi", region: "関東", mapCol: 10, mapRow: 6 },
+  { id: 10, name: "群馬", slug: "gunma", region: "関東", mapCol: 9, mapRow: 6 },
+  { id: 11, name: "埼玉", slug: "saitama", region: "関東", mapCol: 9, mapRow: 7 },
+  { id: 12, name: "千葉", slug: "chiba", region: "関東", mapCol: 10, mapRow: 9 },
   // 東東京と西東京は必ず横に並べる。縦に積むと東西の関係が読み取れない。
-  // そのぶん千葉を1つ下げている。
-  { id: 12, name: "千葉", slug: "chiba", region: "関東", mapCol: 12, mapRow: 8 },
-  { id: 50, name: "東東京", slug: "higashi-tokyo", region: "関東", mapCol: 12, mapRow: 7 },
-  { id: 51, name: "西東京", slug: "nishi-tokyo", region: "関東", mapCol: 11, mapRow: 7 },
-  { id: 14, name: "神奈川", slug: "kanagawa", region: "関東", mapCol: 10, mapRow: 8 },
-  { id: 15, name: "新潟", slug: "niigata", region: "中部", mapCol: 10, mapRow: 5 },
-  { id: 16, name: "富山", slug: "toyama", region: "中部", mapCol: 9, mapRow: 6 },
-  { id: 17, name: "石川", slug: "ishikawa", region: "中部", mapCol: 8, mapRow: 6 },
+  { id: 50, name: "東東京", slug: "higashi-tokyo", region: "関東", mapCol: 10, mapRow: 8 },
+  { id: 51, name: "西東京", slug: "nishi-tokyo", region: "関東", mapCol: 9, mapRow: 8 },
+  { id: 14, name: "神奈川", slug: "kanagawa", region: "関東", mapCol: 9, mapRow: 9 },
+  { id: 15, name: "新潟", slug: "niigata", region: "中部", mapCol: 8, mapRow: 6 },
+  { id: 16, name: "富山", slug: "toyama", region: "中部", mapCol: 7, mapRow: 6 },
+  { id: 17, name: "石川", slug: "ishikawa", region: "中部", mapCol: 6, mapRow: 6 },
   { id: 18, name: "福井", slug: "fukui", region: "中部", mapCol: 7, mapRow: 7 },
-  { id: 19, name: "山梨", slug: "yamanashi", region: "中部", mapCol: 9, mapRow: 8 },
-  { id: 20, name: "長野", slug: "nagano", region: "中部", mapCol: 9, mapRow: 7 },
-  { id: 21, name: "岐阜", slug: "gifu", region: "中部", mapCol: 8, mapRow: 7 },
-  { id: 22, name: "静岡", slug: "shizuoka", region: "中部", mapCol: 9, mapRow: 9 },
-  { id: 23, name: "愛知", slug: "aichi", region: "中部", mapCol: 8, mapRow: 8 },
-  { id: 24, name: "三重", slug: "mie", region: "近畿", mapCol: 8, mapRow: 9 },
-  { id: 25, name: "滋賀", slug: "shiga", region: "近畿", mapCol: 7, mapRow: 8 },
-  { id: 26, name: "京都", slug: "kyoto", region: "近畿", mapCol: 6, mapRow: 8 },
-  { id: 27, name: "大阪", slug: "osaka", region: "近畿", mapCol: 6, mapRow: 9 },
-  { id: 28, name: "兵庫", slug: "hyogo", region: "近畿", mapCol: 5, mapRow: 8 },
-  { id: 29, name: "奈良", slug: "nara", region: "近畿", mapCol: 7, mapRow: 9 },
-  { id: 30, name: "和歌山", slug: "wakayama", region: "近畿", mapCol: 6, mapRow: 10 },
-  { id: 31, name: "鳥取", slug: "tottori", region: "中国", mapCol: 4, mapRow: 8 },
-  { id: 32, name: "島根", slug: "shimane", region: "中国", mapCol: 3, mapRow: 8 },
-  { id: 33, name: "岡山", slug: "okayama", region: "中国", mapCol: 4, mapRow: 9 },
-  { id: 34, name: "広島", slug: "hiroshima", region: "中国", mapCol: 3, mapRow: 9 },
-  { id: 35, name: "山口", slug: "yamaguchi", region: "中国", mapCol: 2, mapRow: 9 },
-  { id: 36, name: "徳島", slug: "tokushima", region: "四国", mapCol: 5, mapRow: 10 },
-  { id: 37, name: "香川", slug: "kagawa", region: "四国", mapCol: 5, mapRow: 9 },
-  { id: 38, name: "愛媛", slug: "ehime", region: "四国", mapCol: 4, mapRow: 10 },
-  { id: 39, name: "高知", slug: "kochi", region: "四国", mapCol: 4, mapRow: 11 },
-  { id: 40, name: "福岡", slug: "fukuoka", region: "九州・沖縄", mapCol: 2, mapRow: 10 },
-  { id: 41, name: "佐賀", slug: "saga", region: "九州・沖縄", mapCol: 1, mapRow: 11 },
-  { id: 42, name: "長崎", slug: "nagasaki", region: "九州・沖縄", mapCol: 1, mapRow: 12 },
-  { id: 43, name: "熊本", slug: "kumamoto", region: "九州・沖縄", mapCol: 2, mapRow: 12 },
-  { id: 44, name: "大分", slug: "oita", region: "九州・沖縄", mapCol: 3, mapRow: 11 },
-  { id: 45, name: "宮崎", slug: "miyazaki", region: "九州・沖縄", mapCol: 3, mapRow: 12 },
-  { id: 46, name: "鹿児島", slug: "kagoshima", region: "九州・沖縄", mapCol: 2, mapRow: 13 },
-  { id: 47, name: "沖縄", slug: "okinawa", region: "九州・沖縄", mapCol: 1, mapRow: 14 },
+  { id: 19, name: "山梨", slug: "yamanashi", region: "中部", mapCol: 8, mapRow: 8 },
+  { id: 20, name: "長野", slug: "nagano", region: "中部", mapCol: 8, mapRow: 7 },
+  { id: 21, name: "岐阜", slug: "gifu", region: "中部", mapCol: 7, mapRow: 8 },
+  { id: 22, name: "静岡", slug: "shizuoka", region: "中部", mapCol: 8, mapRow: 9 },
+  { id: 23, name: "愛知", slug: "aichi", region: "中部", mapCol: 7, mapRow: 9 },
+  { id: 24, name: "三重", slug: "mie", region: "近畿", mapCol: 6, mapRow: 9 },
+  { id: 25, name: "滋賀", slug: "shiga", region: "近畿", mapCol: 6, mapRow: 8 },
+  { id: 26, name: "京都", slug: "kyoto", region: "近畿", mapCol: 6, mapRow: 7 },
+  { id: 27, name: "大阪", slug: "osaka", region: "近畿", mapCol: 5, mapRow: 7 },
+  { id: 28, name: "兵庫", slug: "hyogo", region: "近畿", mapCol: 5, mapRow: 6 },
+  { id: 29, name: "奈良", slug: "nara", region: "近畿", mapCol: 5, mapRow: 8 },
+  { id: 30, name: "和歌山", slug: "wakayama", region: "近畿", mapCol: 5, mapRow: 9 },
+  { id: 31, name: "鳥取", slug: "tottori", region: "中国", mapCol: 4, mapRow: 6 },
+  { id: 32, name: "島根", slug: "shimane", region: "中国", mapCol: 3, mapRow: 6 },
+  { id: 33, name: "岡山", slug: "okayama", region: "中国", mapCol: 4, mapRow: 7 },
+  { id: 34, name: "広島", slug: "hiroshima", region: "中国", mapCol: 3, mapRow: 7 },
+  { id: 35, name: "山口", slug: "yamaguchi", region: "中国", mapCol: 2, mapRow: 6 },
+  { id: 36, name: "徳島", slug: "tokushima", region: "四国", mapCol: 4, mapRow: 9 },
+  { id: 37, name: "香川", slug: "kagawa", region: "四国", mapCol: 4, mapRow: 8 },
+  { id: 38, name: "愛媛", slug: "ehime", region: "四国", mapCol: 3, mapRow: 8 },
+  { id: 39, name: "高知", slug: "kochi", region: "四国", mapCol: 3, mapRow: 9 },
+  { id: 40, name: "福岡", slug: "fukuoka", region: "九州・沖縄", mapCol: 2, mapRow: 7 },
+  { id: 41, name: "佐賀", slug: "saga", region: "九州・沖縄", mapCol: 1, mapRow: 6 },
+  { id: 42, name: "長崎", slug: "nagasaki", region: "九州・沖縄", mapCol: 1, mapRow: 7 },
+  { id: 43, name: "熊本", slug: "kumamoto", region: "九州・沖縄", mapCol: 1, mapRow: 8 },
+  { id: 44, name: "大分", slug: "oita", region: "九州・沖縄", mapCol: 2, mapRow: 8 },
+  { id: 45, name: "宮崎", slug: "miyazaki", region: "九州・沖縄", mapCol: 2, mapRow: 9 },
+  { id: 46, name: "鹿児島", slug: "kagoshima", region: "九州・沖縄", mapCol: 1, mapRow: 9 },
+  { id: 47, name: "沖縄", slug: "okinawa", region: "九州・沖縄", mapCol: 1, mapRow: 10 },
 ];
 
 export const PREFECTURE_BY_SLUG = new Map(PREFECTURES.map((p) => [p.slug, p]));

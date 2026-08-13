@@ -190,14 +190,23 @@ li {
 }
 
 /*
- * 日本の形に並べる。マス目の座標は各 li の --map-col / --map-row から読む。
- * 12列×14行が潰れずに収まる幅を境目にしている。
+ * 直近の出場校（春・夏）は、マス目に並んだときだけ出す。
+ * 横長ボタンの形では2行ぶんの校名が入らない。
+ */
+.prefecture-map__seasons {
+  display: none;
+}
+
+/*
+ * 甲子園の出場校一覧でおなじみの並びにする。
+ * マス目の座標は各 li の --map-col / --map-row / --map-span から読む。
+ * 10列×10行が潰れずに収まる幅を境目にしている。
  */
 @container (min-width: 34rem) {
   .prefecture-map {
     display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    grid-template-rows: repeat(14, minmax(0, auto));
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+    grid-template-rows: repeat(10, minmax(0, auto));
     gap: 0.25rem;
     max-width: 46rem;
     margin-inline: auto;
@@ -214,7 +223,8 @@ li {
   }
 
   .prefecture-map__list > li {
-    grid-column: var(--map-col);
+    /* 北海道の2地区だけ横2マス。それ以外は --map-span が 1 */
+    grid-column: var(--map-col) / span var(--map-span, 1);
     grid-row: var(--map-row);
   }
 
@@ -225,11 +235,102 @@ li {
     min-height: 0;
     aspect-ratio: 1;
     padding-inline: 0.125rem;
-    font-size: 0.6875rem;
+    font-size: 0.75rem;
   }
 
   .prefecture-map__count {
-    font-size: 0.625rem;
+    font-size: 0.6875rem;
+  }
+}
+
+/*
+ * 校名入りのマス。
+ *
+ * 校名が2行入るぶん正方形では収まらないので aspect-ratio を外し、
+ * 県名を上の帯、春・夏を下の2行に分ける。1マス約95pxを想定していて、
+ * それを割り込むと校名が3行に折れて崩れるため、切り替えは
+ * 素のマス目（34rem）より広い 46rem = 1マス約73px から。
+ */
+@container (min-width: 46rem) {
+  .prefecture-map--detailed {
+    max-width: none;
+    gap: 0.3125rem;
+  }
+
+  .prefecture-map--detailed .prefecture-map__tile {
+    justify-content: flex-start;
+    aspect-ratio: auto;
+    /* 校名が2行に折れるマスがあると行が伸びる。同じ行のマスは高さを揃える */
+    height: 100%;
+    min-height: 4.25rem;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .prefecture-map--detailed .prefecture-map__name {
+    display: block;
+    width: 100%;
+    padding: 0.1875rem 0.125rem;
+    border-bottom: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  /* 校名を出すマスでは、掲載校数は県名の右肩に小さく添える */
+  .prefecture-map--detailed .prefecture-map__count {
+    position: absolute;
+    top: 0.1875rem;
+    right: 0.25rem;
+    font-size: 0.5625rem;
+    line-height: 1.4;
+  }
+
+  .prefecture-map--detailed .prefecture-map__tile {
+    position: relative;
+  }
+
+  .prefecture-map--detailed .prefecture-map__seasons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.0625rem;
+    width: 100%;
+    padding: 0.1875rem 0.1875rem 0.25rem;
+  }
+
+  .prefecture-map__season {
+    display: flex;
+    align-items: baseline;
+    gap: 0.1875rem;
+    font-size: 0.6875rem;
+    line-height: 1.3;
+    text-align: left;
+  }
+
+  .prefecture-map__season-label {
+    flex: none;
+    border-radius: 2px;
+    padding-inline: 0.125rem;
+    font-size: 0.5625rem;
+    font-weight: 700;
+  }
+
+  .prefecture-map__season-school {
+    flex: 1 1 auto;
+    min-width: 0;
+    font-weight: 500;
+    /* 3行に折れると隣のマスと高さが揃わなくなる。2行で打ち切る */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
+  .prefecture-map__season-year {
+    flex: none;
+    font-size: 0.5625rem;
+    font-variant-numeric: tabular-nums;
+    opacity: 0.75;
   }
 }
 

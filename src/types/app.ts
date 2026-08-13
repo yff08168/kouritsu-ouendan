@@ -167,6 +167,10 @@ export type SchoolKoshienStats = {
   winRate: number | null;
   firstYear: number | null;
   lastYear: number | null;
+  /** 春（選抜）に最後に出た年。1度も出ていなければ null */
+  lastSpringYear: number | null;
+  /** 夏（選手権）に最後に出た年。1度も出ていなければ null */
+  lastSummerYear: number | null;
   bestSpring: KoshienBest | null;
   bestSummer: KoshienBest | null;
   /** 春夏を通した最高成績 */
@@ -227,6 +231,8 @@ export type PhenomenonSummary = {
   level: PhenomenonLevel;
   /** 旋風を起こした代表校。関連校が未設定なら null */
   schoolName: string | null;
+  /** 同じ学校のslug。一覧で短い校名に置き換えるのに使う（school-name.ts） */
+  schoolSlug: string | null;
   prefecture: PrefectureRef | null;
   /** 「甲子園出場決定」「ベスト8進出」などの短いラベル */
   badge: string | null;

@@ -346,6 +346,7 @@ values
   ((select id from public.schools where slug = 'fukushima-fukushimashogyo'), 2000, 'summer'::public.season, '初戦敗退', 0, 1, null),
   ((select id from public.schools where slug = 'fukushima-konan'), 2006, 'summer'::public.season, '初戦敗退', 0, 1, null),
   ((select id from public.schools where slug = 'fukushimakita'), 1988, 'spring'::public.season, 'ベスト16', 1, 1, null),
+  ((select id from public.schools where slug = 'fukuyama'), 2026, 'summer'::public.season, '初戦敗退', 0, 1, null),
   ((select id from public.schools where slug = 'furukawakogyo'), 2011, 'summer'::public.season, '初戦敗退', 0, 1, null),
   ((select id from public.schools where slug = 'futaba'), 1973, 'summer'::public.season, '初戦敗退', 0, 1, null),
   ((select id from public.schools where slug = 'futaba'), 1980, 'summer'::public.season, 'ベスト32', 1, 1, null),

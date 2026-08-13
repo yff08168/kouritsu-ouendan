@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Flame } from "lucide-react";
 import { PHENOMENON_LEVELS, SEASONS } from "@/lib/constants";
+import { shortSchoolName } from "@/lib/school-name";
 import { Badge } from "@/components/common/Badge";
 import { Thumbnail } from "@/components/common/Thumbnail";
 import type { PhenomenonSummary } from "@/types/app";
@@ -13,6 +14,11 @@ export function PhenomenonCard({ item }: { item: PhenomenonSummary }) {
         image={item.image}
         seed={item.slug}
         label={item.prefecture?.name}
+        school={
+          item.schoolName && item.schoolSlug
+            ? { name: item.schoolName, slug: item.schoolSlug }
+            : undefined
+        }
         className="h-16 w-20 shrink-0 rounded sm:h-20 sm:w-28"
         sizes="112px"
       />
@@ -36,8 +42,8 @@ export function PhenomenonCard({ item }: { item: PhenomenonSummary }) {
         </h3>
 
         {item.schoolName && (
-          <p className="mt-1 text-xs text-ink-muted">
-            {item.schoolName}
+          <p className="mt-1 text-sm text-ink-muted" title={item.schoolName}>
+            {shortSchoolName(item.schoolName, item.schoolSlug ?? undefined)}
             {item.prefecture && `（${item.prefecture.name}）`}
           </p>
         )}

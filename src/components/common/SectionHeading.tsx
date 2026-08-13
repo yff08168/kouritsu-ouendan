@@ -44,7 +44,7 @@ export function SectionHeading({
       <h2
         id={id}
         className={cn(
-          "text-base font-bold sm:text-lg",
+          "text-lg font-bold sm:text-xl",
           onDark ? "text-white" : "text-navy-800",
         )}
       >
@@ -53,7 +53,7 @@ export function SectionHeading({
       {note && (
         <span
           className={cn(
-            "hidden text-xs sm:inline",
+            "hidden text-sm sm:inline",
             onDark ? "text-navy-100/80" : "text-ink-muted",
           )}
         >
@@ -65,7 +65,7 @@ export function SectionHeading({
           href={moreHref}
           className={cn(
             // 上下の余白でタップ領域を確保する（文字の高さだけだと16pxしかない）
-            "-my-1.5 ml-auto inline-flex shrink-0 items-center gap-0.5 py-1.5 text-xs font-medium hover:underline",
+            "-my-1.5 ml-auto inline-flex shrink-0 items-center gap-0.5 py-1.5 text-sm font-medium hover:underline",
             onDark ? "text-navy-100" : "text-ink-muted hover:text-navy-800",
           )}
         >

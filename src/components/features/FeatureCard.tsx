@@ -15,10 +15,10 @@ export function FeatureCard({ feature }: { feature: FeatureSummary }) {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-navy-900/85 via-navy-900/35 to-transparent" />
       <div className="absolute inset-x-0 bottom-0 p-3">
-        <p className="text-[0.6875rem] font-bold text-accent-500">
+        <p className="text-xs font-bold text-accent-500">
           {FEATURE_CATEGORIES[feature.category]}
         </p>
-        <h3 className="mt-0.5 text-sm font-bold leading-snug text-white">
+        <h3 className="mt-0.5 text-base font-bold leading-snug text-white">
           <Link
             href={`/features/${feature.slug}`}
             className="after:absolute after:inset-0 group-hover:underline"
@@ -27,7 +27,7 @@ export function FeatureCard({ feature }: { feature: FeatureSummary }) {
           </Link>
         </h3>
         {feature.subtitle && (
-          <p className="mt-1 line-clamp-2 text-[0.6875rem] leading-relaxed text-white/80">
+          <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-white/80">
             {feature.subtitle}
           </p>
         )}

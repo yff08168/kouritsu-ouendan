@@ -41,7 +41,7 @@ export function Hero() {
           <span className="text-accent-500">もっと面白くなる。</span>
         </h1>
 
-        <p className="hero-text mt-5 text-sm leading-relaxed text-navy-100 sm:text-[0.9375rem]">
+        <p className="hero-text mt-5 text-[0.9375rem] leading-relaxed text-navy-100 sm:text-base">
           全国の公立高校野球を応援する人のためのサイト。
           <br className="hidden sm:block" />
           ニュース、学校情報、戦績、歴史、そして公立旋風まで。
@@ -51,9 +51,9 @@ export function Hero() {
 
         <Link
           href="/news"
-          className="mt-7 inline-flex min-h-12 items-center gap-2 rounded-lg bg-white px-6 text-sm font-bold text-navy-800 shadow-sm hover:bg-navy-50"
+          className="mt-7 inline-flex min-h-12 items-center gap-2 rounded-lg bg-white px-6 text-base font-bold text-navy-800 shadow-sm hover:bg-navy-50"
         >
-          <Newspaper size={18} aria-hidden="true" />
+          <Newspaper size={20} aria-hidden="true" />
           最新ニュースを見る
         </Link>
 

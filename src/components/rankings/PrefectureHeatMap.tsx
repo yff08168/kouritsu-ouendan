@@ -131,6 +131,7 @@ export function PrefectureHeatMap({
                         {
                           "--map-col": prefecture.mapCol,
                           "--map-row": prefecture.mapRow,
+                          "--map-span": prefecture.mapSpan ?? 1,
                         } as CSSProperties
                       }
                     >

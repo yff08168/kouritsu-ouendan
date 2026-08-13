@@ -13,6 +13,12 @@ type Props = {
   action?: string;
   /** 同じページに複数置く場合にidが衝突しないようにする */
   id?: string;
+  /**
+   * 検索と一緒に送る値。**絞り込みを保つのに要る。**
+   * GETフォームは送信時にURLのクエリを丸ごと入力欄の内容で置き換えるので、
+   * これが無いと検索した瞬間に絞り込みと並び替えが消える。
+   */
+  hidden?: Record<string, string | undefined>;
 };
 
 /**
@@ -28,6 +34,7 @@ export function SearchBar({
   labelText = "学校名・地域で検索",
   action = "/search",
   id = "site-search",
+  hidden,
 }: Props) {
   const inputId = id;
 
@@ -37,6 +44,12 @@ export function SearchBar({
       role="search"
       className={cn("relative w-full", className)}
     >
+      {hidden &&
+        Object.entries(hidden).map(([name, value]) =>
+          value ? (
+            <input key={name} type="hidden" name={name} value={value} />
+          ) : null,
+        )}
       <label htmlFor={inputId} className="sr-only">
         {labelText}
       </label>

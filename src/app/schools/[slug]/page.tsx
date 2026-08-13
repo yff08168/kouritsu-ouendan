@@ -143,129 +143,180 @@ export default async function SchoolDetailPage({ params }: Props) {
       />
 
       {/* ------- 学校の見出し ------- */}
-      <header className="overflow-hidden rounded-xl border border-line bg-white">
-        <Thumbnail
-          image={school.image}
-          seed={school.slug}
-          label={school.prefecture.name}
-          className="h-36 w-full sm:h-48"
-          sizes="(max-width: 768px) 100vw, 1024px"
-          showCredit
-        />
+      <header className="rounded-xl border border-line bg-white p-5">
+        {/*
+          写真を左・情報を右に置く。
 
-        <div className="p-5">
-          <div className="flex flex-wrap items-center gap-1.5">
-            <Badge variant="outline">
-              {establishmentLabel(school.establishment, school.prefecture.name)}
-            </Badge>
-            {school.schoolKind !== "high_school" && (
-              <Badge variant="outline">
-                {SCHOOL_KINDS[school.schoolKind]}
-              </Badge>
-            )}
-            {koshienTotal > 0 && <Badge>甲子園 {koshienTotal}回</Badge>}
-            {berthYears.length > 0 && (
-              <Badge variant="accent">
-                21世紀枠 {berthYears.join("・")}年
-              </Badge>
-            )}
-            {bestKoshien.summer && (
-              <Badge variant="outline">
-                夏の甲子園　最高成績：{bestKoshien.summer.result}
-              </Badge>
-            )}
-            {bestKoshien.spring && (
-              <Badge variant="outline">
-                春の甲子園　最高成績：{bestKoshien.spring.result}
-              </Badge>
-            )}
-            {school.lastKoshienYear && (
-              <Badge variant="outline">
-                最終出場 {school.lastKoshienYear}年
-              </Badge>
+          **横帯にしない理由。** 学校の写真として手に入るのはWikipediaの
+          校舎写真で、実測した縦横比は中央値1.33（4:3）・上位10%でも1.50。
+          以前のような横長（約5:1）の帯に嵌めると高さの7割以上が捨てられ、
+          建物の横帯しか残らない。
+
+          **カードの端いっぱいに広げず、余白の内側に4:3で置く。** 端まで
+          広げて高さを右の列に合わせると、右の情報量（キャッチコピーの有無、
+          バッジの数）で写真の縦横比が変わり、切り取られる量が学校ごとに
+          ばらつく。比率を固定してしまえば、どの学校でも切らずに済む。
+
+          狭い画面では写真を上に積む。
+        */}
+        {/* items-start が要る。既定の stretch だと右の列の高さに引き伸ばされ、
+            aspect-[4/3] が効かずに写真が縦長へ切り取られる */}
+        <div className="sm:flex sm:items-start sm:gap-5">
+          <div className="mb-4 shrink-0 sm:mb-0 sm:w-56 md:w-64">
+            <Thumbnail
+              image={school.image}
+              seed={school.slug}
+              school={{ name: school.name, slug: school.slug }}
+              emblemVariant="panel"
+              className="aspect-[4/3] w-full rounded-lg"
+              sizes="(max-width: 640px) 100vw, 256px"
+            />
+
+            {/*
+              帰属表示。**写真に重ねず、下に書く。**
+              CC BY-SA が求めるのは撮影者・ライセンス・改変の告知に加えて
+              **元の作品へのリンク**で、10pxの帯に重ねると256px幅では
+              入りきらず、リンクも押しにくい。
+            */}
+            {school.image?.credit && (
+              <p className="mt-1.5 text-[0.6875rem] leading-snug text-ink-faint">
+                {school.image.sourceUrl ? (
+                  <a
+                    href={school.image.sourceUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline hover:text-navy-800"
+                  >
+                    {school.image.credit}
+                  </a>
+                ) : (
+                  school.image.credit
+                )}
+              </p>
             )}
           </div>
 
-          <h1 className="mt-2.5 text-2xl font-bold text-navy-800 sm:text-3xl">
-            {school.name}
-          </h1>
-          <p className="mt-1 text-sm text-ink-muted">{school.officialName}</p>
-
-          {school.catchcopy && (
-            <p className="mt-3 text-[0.9375rem] leading-relaxed text-ink">
-              {school.catchcopy}
-            </p>
-          )}
-
-          <dl className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm">
-            <div className="flex items-center gap-1.5">
-              <dt className="sr-only">所在地</dt>
-              <MapPin size={15} aria-hidden="true" className="text-ink-faint" />
-              <dd className="text-ink-muted">
-                <Link
-                  href={`/schools?pref=${school.prefecture.slug}`}
-                  className="hover:text-navy-800 hover:underline"
-                >
-                  {school.prefecture.name}
-                </Link>
-                {school.city && `　${school.city}`}
-              </dd>
+          <div className="min-w-0 flex-1">
+            <div className="flex flex-wrap items-center gap-1.5">
+              <Badge variant="outline">
+                {establishmentLabel(
+                  school.establishment,
+                  school.prefecture.name,
+                )}
+              </Badge>
+              {school.schoolKind !== "high_school" && (
+                <Badge variant="outline">
+                  {SCHOOL_KINDS[school.schoolKind]}
+                </Badge>
+              )}
+              {koshienTotal > 0 && <Badge>甲子園 {koshienTotal}回</Badge>}
+              {berthYears.length > 0 && (
+                <Badge variant="accent">
+                  21世紀枠 {berthYears.join("・")}年
+                </Badge>
+              )}
+              {bestKoshien.summer && (
+                <Badge variant="outline">
+                  夏の甲子園　最高成績：{bestKoshien.summer.result}
+                </Badge>
+              )}
+              {bestKoshien.spring && (
+                <Badge variant="outline">
+                  春の甲子園　最高成績：{bestKoshien.spring.result}
+                </Badge>
+              )}
+              {school.lastKoshienYear && (
+                <Badge variant="outline">
+                  最終出場 {school.lastKoshienYear}年
+                </Badge>
+              )}
             </div>
 
-            <div className="flex items-center gap-1.5">
-              <dt className="sr-only">区分</dt>
-              <Building2
-                size={15}
-                aria-hidden="true"
-                className="text-ink-faint"
-              />
-              <dd className="text-ink-muted">
-                {ESTABLISHMENTS[school.establishment]}・
-                {SCHOOL_KINDS[school.schoolKind]}
-                {school.foundedYear && `　${school.foundedYear}年創立`}
-              </dd>
-            </div>
-          </dl>
+            <h1 className="mt-2.5 text-2xl font-bold text-navy-800 sm:text-3xl">
+              {school.name}
+            </h1>
+            <p className="mt-1 text-sm text-ink-muted">{school.officialName}</p>
 
-          {school.nameAliases.length > 0 && (
-            <p className="mt-2 text-xs text-ink-faint">
-              通称：{school.nameAliases.join("／")}
-            </p>
-          )}
+            {school.catchcopy && (
+              <p className="mt-3 text-[0.9375rem] leading-relaxed text-ink">
+                {school.catchcopy}
+              </p>
+            )}
 
-          <div className="mt-5">
-            {/*
+            <dl className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+              <div className="flex items-center gap-1.5">
+                <dt className="sr-only">所在地</dt>
+                <MapPin
+                  size={15}
+                  aria-hidden="true"
+                  className="text-ink-faint"
+                />
+                <dd className="text-ink-muted">
+                  <Link
+                    href={`/schools?pref=${school.prefecture.slug}`}
+                    className="hover:text-navy-800 hover:underline"
+                  >
+                    {school.prefecture.name}
+                  </Link>
+                  {school.city && `　${school.city}`}
+                </dd>
+              </div>
+
+              <div className="flex items-center gap-1.5">
+                <dt className="sr-only">区分</dt>
+                <Building2
+                  size={15}
+                  aria-hidden="true"
+                  className="text-ink-faint"
+                />
+                <dd className="text-ink-muted">
+                  {ESTABLISHMENTS[school.establishment]}・
+                  {SCHOOL_KINDS[school.schoolKind]}
+                  {school.foundedYear && `　${school.foundedYear}年創立`}
+                </dd>
+              </div>
+            </dl>
+
+            {school.nameAliases.length > 0 && (
+              <p className="mt-2 text-xs text-ink-faint">
+                通称：{school.nameAliases.join("／")}
+              </p>
+            )}
+
+            <div className="mt-5">
+              {/*
               応援ボタン。テキストを投稿させない、いちばん軽い参加の形。
               自由記述のコメント欄を学校ページに置かないのは、
               「○○高校の△△君」という書き込みを招くため（AGENTS.md）。
               文字で応援したい人は都道府県ページのメッセージ欄へ誘導する。
             */}
-            <CheerButton
-              schoolId={school.id}
-              schoolName={school.name}
-              initialCount={school.cheerCount}
-            />
+              <CheerButton
+                schoolId={school.id}
+                schoolName={school.name}
+                initialCount={school.cheerCount}
+              />
 
-            <div className="mt-4 flex flex-wrap gap-2">
-              <Link
-                href={`/prefectures/${school.prefecture.slug}#pref-cheers`}
-                className="inline-flex min-h-11 items-center gap-1.5 rounded-lg border border-line px-5 text-sm font-bold text-ink-muted hover:border-navy-800 hover:text-navy-800"
-              >
-                <MessageSquareHeart size={16} aria-hidden="true" />
-                {school.prefecture.name}へ応援メッセージ
-              </Link>
-
-              {school.websiteUrl && (
-                <a
-                  href={school.websiteUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex min-h-11 items-center gap-1.5 rounded-lg border border-navy-800 px-5 text-sm font-bold text-navy-800 hover:bg-navy-50"
+              <div className="mt-4 flex flex-wrap gap-2">
+                <Link
+                  href={`/prefectures/${school.prefecture.slug}#pref-cheers`}
+                  className="inline-flex min-h-11 items-center gap-1.5 rounded-lg border border-line px-5 text-sm font-bold text-ink-muted hover:border-navy-800 hover:text-navy-800"
                 >
-                  学校公式サイト
-                  <ExternalLink size={14} aria-hidden="true" />
-                </a>
-              )}
+                  <MessageSquareHeart size={16} aria-hidden="true" />
+                  {school.prefecture.name}へ応援メッセージ
+                </Link>
+
+                {school.websiteUrl && (
+                  <a
+                    href={school.websiteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex min-h-11 items-center gap-1.5 rounded-lg border border-navy-800 px-5 text-sm font-bold text-navy-800 hover:bg-navy-50"
+                  >
+                    学校公式サイト
+                    <ExternalLink size={14} aria-hidden="true" />
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         </div>

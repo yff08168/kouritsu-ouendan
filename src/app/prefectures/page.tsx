@@ -5,6 +5,10 @@ import { Container } from "@/components/layout/Container";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { PrefectureMap } from "@/components/schools/PrefectureMap";
 import { getSchoolCountByPrefecture } from "@/lib/queries/schools";
+import {
+  getKoshienDataset,
+  latestPublicByPrefecture,
+} from "@/lib/queries/rankings";
 import { PREFECTURES, REGIONS } from "@/lib/constants";
 
 export const revalidate = 3600;
@@ -17,8 +21,21 @@ export const metadata: Metadata = {
 };
 
 export default async function PrefecturesPage() {
-  const counts = await getSchoolCountByPrefecture();
+  const [counts, koshien] = await Promise.all([
+    getSchoolCountByPrefecture(),
+    getKoshienDataset(),
+  ]);
   const totalSchools = Object.values(counts).reduce((sum, n) => sum + n, 0);
+
+  const latestByPrefecture = latestPublicByPrefecture(koshien.schools);
+  // 「今年」は今日の日付ではなく、出場歴が入っている最も新しい年で決める（トップと同じ）
+  const thisYear = koshien.latestYear;
+  const bothSeasons = Object.values(latestByPrefecture).filter(
+    (entry) =>
+      thisYear != null &&
+      entry.spring?.year === thisYear &&
+      entry.summer?.year === thisYear,
+  ).length;
 
   return (
     <Container className="pb-4">
@@ -31,17 +48,38 @@ export default async function PrefecturesPage() {
             都道府県から公立高校を探す
           </h1>
         </div>
-        <p className="mt-2 text-sm leading-relaxed text-ink-muted">
-          地図から選んでください。数字はそれぞれの都道府県に掲載している学校数です。
+        <p className="mt-2 text-base leading-relaxed text-ink-muted">
+          地図から選んでください。マスの中は、春・夏それぞれで
+          <strong className="text-ink">その地区から最後に甲子園へ出た公立校</strong>
+          です（右肩の数字は掲載している学校数）。
           現在 <strong className="text-ink">{totalSchools}</strong> 校を掲載しています。
         </p>
 
         <div className="mt-6">
-          <PrefectureMap counts={counts} />
+          <PrefectureMap
+            counts={counts}
+            latest={latestByPrefecture}
+            highlightYear={thisYear}
+          />
         </div>
 
-        <p className="mt-5 text-center text-xs text-ink-faint">
-          ※ 位置関係がわかるように並べた図です。実際の県の形や面積とは異なります。
+        {thisYear != null && (
+          <p className="mt-4 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-sm text-ink-muted">
+            <span
+              aria-hidden="true"
+              className="inline-block h-3.5 w-6 rounded-sm border border-accent-500 bg-accent-50"
+            />
+            <span>
+              {thisYear}年の春夏そろって公立校が出場した地区
+              {bothSeasons > 0 ? `（${bothSeasons}地区）` : "（まだありません）"}
+            </span>
+          </p>
+        )}
+
+        <p className="mt-3 text-center text-xs text-ink-faint">
+          ※ 甲子園の大会区分（49地区）で並べた図です。実際の県の形や面積とは異なります。
+          <br />
+          校名は<strong className="font-medium">公立・国立・高専のみ</strong>を対象にしています。私立を含む代表校ではありません。
         </p>
       </header>
 

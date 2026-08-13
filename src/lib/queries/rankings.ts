@@ -4,6 +4,7 @@ import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { throwIfError, toPrefectureRef } from "@/lib/queries/shared";
 import { PREFECTURES } from "@/lib/constants";
 import { resultRank } from "@/lib/koshien";
+import { shortSchoolName } from "@/lib/school-name";
 import { TOURNAMENT_BY_KEY } from "@/lib/data/koshien-tournaments";
 import { TWENTY_FIRST_CENTURY_BERTHS } from "@/lib/data/twenty-first-century";
 import type { PrefectureJoin } from "@/types/database";
@@ -192,6 +193,8 @@ export const getKoshienDataset = cache(async (): Promise<KoshienDataset> => {
       winRate: null,
       firstYear: null,
       lastYear: null,
+      lastSpringYear: null,
+      lastSummerYear: null,
       bestSpring: null,
       bestSummer: null,
       best: null,
@@ -211,9 +214,13 @@ export const getKoshienDataset = cache(async (): Promise<KoshienDataset> => {
     // 学校が下書きなら schools 側がRLSで返らない。集計からも外す。
     if (!stats) continue;
 
-    if (row.season === "spring") stats.spring += 1;
-    else if (row.season === "summer") stats.summer += 1;
-    else continue; // autumn は甲子園ではない
+    if (row.season === "spring") {
+      stats.spring += 1;
+      stats.lastSpringYear = Math.max(stats.lastSpringYear ?? row.year, row.year);
+    } else if (row.season === "summer") {
+      stats.summer += 1;
+      stats.lastSummerYear = Math.max(stats.lastSummerYear ?? row.year, row.year);
+    } else continue; // autumn は甲子園ではない
 
     stats.total += 1;
     stats.wins += row.wins ?? 0;
@@ -435,6 +442,88 @@ export function aggregateByPrefecture(
   return [...bySlug.values()].sort(
     (a, b) => b.appearances - a.appearances || b.wins - a.wins,
   );
+}
+
+/** 「その地区で最後に甲子園へ出た公立校」1校ぶん */
+export type LatestPublicAppearance = {
+  year: number;
+  /** 学校名。「〇〇高校」の接尾辞を落とした表示用の短い名前 */
+  display: string;
+  /** 読み上げ・title属性に使う正式な学校名 */
+  name: string;
+  slug: string;
+};
+
+/** 地区ごとの「春／夏それぞれで最後に出た公立校」 */
+export type LatestPublicByPrefecture = Record<
+  string,
+  { spring: LatestPublicAppearance | null; summer: LatestPublicAppearance | null }
+>;
+
+/**
+ * 地区ごとに「春・夏それぞれで直近に甲子園へ出た公立校」を求める。
+ *
+ * **私立は学校マスタに無い**ので、ここでいう「直近の出場校」は
+ * その地区の代表校ではなく、**直近で出場した公立校**。
+ * 画面では必ずその旨が伝わる書き方をすること。
+ *
+ * 同じ年に同じ地区から2校以上出ている場合（記念大会の複数代表）は、
+ * 出場回数の多いほうを代表として出す。並びが不定だと再生成のたびに
+ * 表示が入れ替わってしまうため、最後は slug で決める。
+ */
+export function latestPublicByPrefecture(
+  schools: SchoolKoshienStats[],
+): LatestPublicByPrefecture {
+  /** 採用中の1校と、比べるのに使う出場回数 */
+  type Pick = { appearance: LatestPublicAppearance; appearances: number };
+
+  const picks = new Map<string, { spring: Pick | null; summer: Pick | null }>(
+    PREFECTURES.map((p) => [p.slug, { spring: null, summer: null }]),
+  );
+
+  for (const school of schools) {
+    const entry = picks.get(school.prefecture.slug);
+    if (!entry) continue;
+
+    for (const season of ["spring", "summer"] as const) {
+      const year = season === "spring" ? school.lastSpringYear : school.lastSummerYear;
+      if (year === null) continue;
+
+      const appearances = season === "spring" ? school.spring : school.summer;
+      const current = entry[season];
+      if (
+        current &&
+        !(
+          year > current.appearance.year ||
+          (year === current.appearance.year &&
+            (appearances > current.appearances ||
+              (appearances === current.appearances &&
+                school.slug < current.appearance.slug)))
+        )
+      ) {
+        continue;
+      }
+
+      entry[season] = {
+        appearances,
+        appearance: {
+          year,
+          display: shortSchoolName(school.name, school.slug),
+          name: school.name,
+          slug: school.slug,
+        },
+      };
+    }
+  }
+
+  const result: LatestPublicByPrefecture = {};
+  for (const [slug, entry] of picks) {
+    result[slug] = {
+      spring: entry.spring?.appearance ?? null,
+      summer: entry.summer?.appearance ?? null,
+    };
+  }
+  return result;
 }
 
 /**

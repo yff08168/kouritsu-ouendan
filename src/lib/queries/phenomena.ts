@@ -12,17 +12,21 @@ const PHENOMENON_SUMMARY_SELECT = `
   id, slug, title, year, season, level, badge,
   image_url, image_credit, image_source_url,
   prefecture:prefectures ( name, slug ),
-  phenomenon_schools ( role, schools ( name ) )
+  phenomenon_schools ( role, schools ( slug, name ) )
 `;
 
-/** 関連校のうち、主役（role = 'main'）の校名を1つ取り出す */
-function pickMainSchoolName(row: PhenomenonRow): string | null {
+/**
+ * 関連校のうち、主役（role = 'main'）を1校取り出す。
+ * slug も返すのは、一覧で短い校名に置き換えるのに要るため（school-name.ts）。
+ */
+function pickMainSchool(row: PhenomenonRow): { slug: string; name: string } | null {
   const links = row.phenomenon_schools ?? [];
   const main = links.find((link) => link.role === "main") ?? links[0];
-  return main?.schools?.name ?? null;
+  return main?.schools ?? null;
 }
 
 function toPhenomenonSummary(row: PhenomenonRow): PhenomenonSummary {
+  const school = pickMainSchool(row);
   return {
     id: row.id,
     slug: row.slug,
@@ -30,7 +34,8 @@ function toPhenomenonSummary(row: PhenomenonRow): PhenomenonSummary {
     year: row.year,
     season: row.season,
     level: row.level,
-    schoolName: pickMainSchoolName(row),
+    schoolSlug: school?.slug ?? null,
+    schoolName: school?.name ?? null,
     prefecture: toPrefectureRef(row.prefecture),
     badge: row.badge,
     image: toImageRef(row, row.title),

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { ImageRef } from "@/types/app";
 import { cn } from "@/lib/utils";
+import { SchoolEmblem, type EmblemVariant } from "@/components/schools/SchoolEmblem";
 
 type Props = {
   image: ImageRef | null;
@@ -8,6 +9,13 @@ type Props = {
   label?: string;
   /** 同じ見た目が並ばないよう、この文字列からパターンを決める */
   seed?: string;
+  /**
+   * 学校が主役のカードで渡す。写真が無いとき、共通のグラデーションではなく
+   * その学校の記章（`SchoolEmblem`）を出す。
+   */
+  school?: { name: string; slug: string };
+  /** 記章の描き分け。大きな枠（学校詳細ページ）では "panel" を渡す */
+  emblemVariant?: EmblemVariant;
   className?: string;
   sizes?: string;
   /** 画像のクレジットを重ねて表示するか（詳細ページのメイン画像で使う） */
@@ -25,6 +33,8 @@ export function Thumbnail({
   image,
   label,
   seed = "",
+  school,
+  emblemVariant = "chip",
   className,
   sizes = "(max-width: 768px) 100vw, 33vw",
   showCredit = false,
@@ -45,6 +55,18 @@ export function Thumbnail({
           </span>
         )}
       </div>
+    );
+  }
+
+  // 学校が主役なら、どの学校か分かる記章を出す（共通の絵だと全部同じに見える）
+  if (school) {
+    return (
+      <SchoolEmblem
+        name={school.name}
+        slug={school.slug}
+        variant={emblemVariant}
+        className={className}
+      />
     );
   }
 

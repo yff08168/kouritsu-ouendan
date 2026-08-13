@@ -1,0 +1,103 @@
+# 地方大会（秋季・春季・選手権予選）の結果を**各県の出典**から取り直し、
+# 変化があればコミットする。コミットで Vercel が再デプロイする。
+#
+# ------------------------------------------------------------------
+# ★ 甲子園（update-results.yml）とは**別のワークフロー**にしてある
+#
+#   1. **出典が県ごとに違い、個人運営のサイトが2つ含まれる**（神奈川・埼玉）。
+#      甲子園と同じ3時間おき（1日8回）で全県ぶんを取りに行くのは、
+#      相手のサーバーに対して重い。**回数はこちらの都合で決めない。**
+#   2. 走る時間も違ってよい。地方大会の試合は夕方までに終わるので、
+#      深夜や早朝に取りに行っても新しい結果は無い。
+#   3. 1つのワークフローには1つの cron しか書けない。
+#
+# ------------------------------------------------------------------
+# **service_role キーは使わない**（甲子園と同じ）。読み取りに anon キーを
+# 使うだけで、書き込み先はDBではなくリポジトリ。
+#
+# 大会が無い時期は、出典にその年のページがまだ無い。スクリプトは例外を
+# 投げずに終わるので、CIが失敗し続けることはない。
+#
+# 手で走らせたいときは Actions タブから "Run workflow"（workflow_dispatch）。
+name: 地方大会の結果の更新
+
+on:
+  schedule:
+    # 1日2回。cronはUTC。日本時間だと 19時・22時。
+    # 地方大会は夕方までに終わるので、その日の結果はこの2回で入る。
+    # 決勝が延長にもつれても22時の回で拾える。
+    - cron: "0 10,13 * * *"
+  workflow_dispatch:
+
+# 生成物をコミットするために必要
+permissions:
+  contents: write
+
+# 同時に走らせない。前の実行が終わる前に次が来るとコミットが衝突する。
+concurrency:
+  group: update-regional-results
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    # 6県 × 3季節を**1件ずつ間隔をあけて**取るので、1回が10分を超えることがある。
+    # 既定の6時間ではなく、明らかに詰まったと分かる長さで切る。
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+          cache: npm
+
+      # 生成スクリプトは @supabase/supabase-js しか使わないが、
+      # lockfile どおりに入れておくほうが再現性がある。
+      - run: npm ci
+
+      - name: 地方大会の結果を取り直す
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: node scripts/build-regional-results.mjs
+
+      - name: 型が通るか確かめる
+        # 壊れた生成物をコミットしないための保険。
+        run: npx tsc --noEmit
+
+      - name: 変化があればコミットする
+        run: |
+          set -eu
+
+          TARGETS="src/lib/data/regional src/lib/data/regional-pickup.ts"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # ★**先に add してから差分を見る。** `git diff` は追跡していない
+          #   ファイルを見ないので、**新しい県を足した最初の実行**（まだ
+          #   コミットされていない `<県>.ts` が増える回）を「変化なし」と
+          #   取り違える。
+          git add -A -- $TARGETS
+
+          if git diff --cached --quiet -- $TARGETS; then
+            echo "変化なし。コミットしない。"
+            exit 0
+          fi
+
+          git commit -m "地方大会の結果を更新（自動）"
+
+          # ★甲子園のワークフローと**同時に走ることがある**。どちらも
+          #   同じブランチに push するので、そのままだと後から来たほうが
+          #   non-fast-forward で失敗する。生成物どうしで中身は衝突しないので、
+          #   相手のコミットを取り込んでから積み直す。
+          for i in 1 2 3; do
+            if git pull --rebase origin "$GITHUB_REF_NAME" && git push; then
+              exit 0
+            fi
+            echo "push に失敗した（$i 回目）。少し待って試し直す。"
+            sleep 15
+          done
+          exit 1

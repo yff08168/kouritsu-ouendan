@@ -1002,7 +1002,12 @@ GitHub Actions が3時間おきに回し、**変化があったときだけコ�
 | `scripts/build-live-results.mjs` | 取得・解析・生成 |
 | `src/lib/live-results.ts` | 型と補助関数（手書き） |
 | `src/lib/data/live-results.ts` | **生成物。直接編集しない** |
-| `.github/workflows/update-results.yml` | 定期実行 |
+| `.github/workflows/update-results.yml` | 定期実行（3時間おき） |
+
+★**地方大会は別のワークフロー**（`update-regional-results.yml`・1日2回）。
+出典が県ごとに違い、個人運営のサイトを含むため回数を分けてある。
+詳しくは「地方大会の結果」の「自動更新」。**2つが同時に走ると push が
+ぶつかる**ので、どちらも `git pull --rebase` してから積み直す。
 
 ```
 node --env-file=.env.local scripts/build-live-results.mjs --dry   # 報告だけ
@@ -1367,6 +1372,32 @@ node --env-file=.env.local scripts/build-regional-results.mjs --pref yamanashi  
   出てくるが学校マスタは1校。`DISTRICT_ALIASES`（手書きの対応表）で両方を
   同じ学校に結び付けている。**その日は1校が1勝1敗になりうる**が、
   勝ち上がりに出てこなくなるだけで嘘にはならない側に倒れる
+
+### 自動更新（2026-08-14 実装）
+
+`.github/workflows/update-regional-results.yml`。**甲子園とは別のワークフロー。**
+
+| | 甲子園 | 地方大会 |
+|---|---|---|
+| ワークフロー | `update-results.yml` | `update-regional-results.yml` |
+| 実行 | 3時間おき（1日8回） | **1日2回**（日本時間19時・22時） |
+| 出典 | 日本高野連の1サイト | 6県ぶん。**うち2つは個人運営** |
+
+- ★**回数はこちらの都合で決めない。** 神奈川・埼玉は個人の共有サーバーで、
+  1回の実行で日別ページを数十枚取る。甲子園と同じ3時間おきにすると
+  1日で数百リクエストになる。**地方大会の試合は夕方までに終わる**ので、
+  19時と22時の2回で足りる（決勝が延長にもつれても22時で拾える）
+- ★**1試合も取れなかった県のファイルは書き換えない。** 出典が作り替えられて
+  取れなくなったとき、`games: []` で上書きすると**その県のページから試合が消える。**
+  前の実行までの中身を残すほうが嘘が少ない。同じ理由で、**1件も抜粋できなかった
+  ときは `regional-pickup.ts` を書き換えない**（トップだけが空になるのを防ぐ）
+- ★**2つのワークフローが同時に走ることがある。** どちらも同じブランチに
+  push するので、後から来たほうが non-fast-forward で失敗する。
+  生成物どうしで中身は衝突しないので、`git pull --rebase` してから3回まで試す
+- 1回の実行は10分を超えることがある（1件ずつ間隔をあけて取るため）。
+  `timeout-minutes: 30` で切ってある
+- **秘密情報は甲子園と同じ2つ**（`NEXT_PUBLIC_SUPABASE_URL` /
+  `NEXT_PUBLIC_SUPABASE_ANON_KEY`）。学校マスタの読み取りに使う
 
 ### 残っている課題
 

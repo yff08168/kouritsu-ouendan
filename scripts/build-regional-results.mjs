@@ -1703,7 +1703,25 @@ async function main() {
 
   // ---- 県ごとのファイル ----
   mkdirSync(OUT_DIR, { recursive: true });
+  /** 1試合も取れなかった県。CIの判断に使うので数えておく */
+  const empty = [];
   for (const { allGames: _allGames, ...d } of districts) {
+    /*
+      ★**1試合も取れなかった県のファイルを書き換えない。**
+
+      出典のサイトは作り替えられる。取れなくなった県をそのまま書き出すと
+      **`games: []` で上書きされ、その県のページから試合が消える。**
+      CIは3時間おきに回るので、気づいたときには「消えたコミット」が
+      積み重なっている。前の実行までの中身を残すほうが、まだ嘘が少ない。
+
+      **鳴らしっぱなしにしないこと。** 大会の谷間ではなく出典側の変更なら、
+      アダプタを直すまでデータは古いままになる。
+    */
+    if (d.games.length === 0) {
+      empty.push(d.district);
+      console.log(`  ⚠️ ${d.district}: 1試合も取れなかった。${d.slug}.ts は書き換えない`);
+      continue;
+    }
     // `allGames` はベストNを数えるための作業用。生成物には出さない
     const file =
       `// このファイルは scripts/build-regional-results.mjs が生成する。直接編集しない。\n` +
@@ -1766,6 +1784,23 @@ async function main() {
   */
   if (onlyPref) {
     console.log(`  ${path.relative(ROOT, OUT_PICKUP)} は書き換えません（--pref のため）`);
+    return;
+  }
+
+  /*
+    ★**空の抜粋で上書きしない。**
+
+    全県が取れなかった回（相手のサイトがまとめて落ちている、こちらの
+    ネットワークが死んでいる）に空の抜粋を書くと、**トップの速報カードが
+    「いまは掲載できる地方大会の結果がありません」になる。**
+    県ごとのファイルは無事なのに、トップだけが空になる。
+    1県でも取れていれば書く（その回の抜粋がその県に偏るのは許容する）。
+  */
+  if (!picked.length && existsSync(OUT_PICKUP)) {
+    console.log(
+      `  ⚠️ 1件も抜粋できなかった。${path.relative(ROOT, OUT_PICKUP)} は書き換えない` +
+        (empty.length ? `（取れなかった県: ${empty.join("・")}）` : ""),
+    );
     return;
   }
 

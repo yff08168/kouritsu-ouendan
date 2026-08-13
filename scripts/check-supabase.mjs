@@ -56,7 +56,8 @@ await expectCount("学校（公開ぶん）", "schools", 3505);
 await expectCount("公立旋風", "phenomena", 4);
 await expectCount("特集", "features", 4);
 // 2026-08-12 に成績欠損41件を修正した際、1件増えて2970になった。
-await expectCount("甲子園出場歴", "school_championships", 2970);
+// さらに同日、照合漏れだった福山（広島・2026夏）を足して2971。
+await expectCount("甲子園出場歴", "school_championships", 2971);
 
 console.log("\n--- RLSが効いているか ---");
 // 架空記事を消したのでニュースは0件。

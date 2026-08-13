@@ -113,6 +113,58 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       ]
     },
     {
+      "districtSlug": "saga",
+      "district": "佐賀",
+      "sourceName": "佐賀県高等学校野球連盟",
+      "sourceUrl": "http://kouyaren-saga.jp/",
+      "date": "2026-07-27",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権佐賀大会",
+      "round": "決勝",
+      "teams": [
+        {
+          "display": "北陵",
+          "score": 1,
+          "won": false,
+          "name": "北陵",
+          "slug": null
+        },
+        {
+          "display": "佐賀商業",
+          "score": 4,
+          "won": true,
+          "name": "佐賀商業高校",
+          "slug": "sagashogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "saga",
+      "district": "佐賀",
+      "sourceName": "佐賀県高等学校野球連盟",
+      "sourceUrl": "http://kouyaren-saga.jp/",
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権佐賀大会",
+      "round": "準決勝",
+      "teams": [
+        {
+          "display": "早稲田佐賀",
+          "score": 3,
+          "won": false,
+          "name": "早稲田佐賀",
+          "slug": null
+        },
+        {
+          "display": "佐賀商業",
+          "score": 5,
+          "won": true,
+          "name": "佐賀商業高校",
+          "slug": "sagashogyo"
+        }
+      ]
+    },
+    {
       "districtSlug": "gunma",
       "district": "群馬",
       "sourceName": "群馬県高等学校野球連盟",
@@ -139,6 +191,32 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       ]
     },
     {
+      "districtSlug": "nara",
+      "district": "奈良",
+      "sourceName": "奈良県高等学校野球連盟",
+      "sourceUrl": "http://www1.kcn.ne.jp/~nhsbbf/",
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": "準々決勝",
+      "teams": [
+        {
+          "display": "生駒",
+          "score": 4,
+          "won": false,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        },
+        {
+          "display": "畝傍",
+          "score": 5,
+          "won": true,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        }
+      ]
+    },
+    {
       "districtSlug": "gunma",
       "district": "群馬",
       "sourceName": "群馬県高等学校野球連盟",
@@ -161,6 +239,84 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": true,
           "name": "前橋商業高校",
           "slug": "maebashishogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "saga",
+      "district": "佐賀",
+      "sourceName": "佐賀県高等学校野球連盟",
+      "sourceUrl": "http://kouyaren-saga.jp/",
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権佐賀大会",
+      "round": "準々決勝",
+      "teams": [
+        {
+          "display": "唐津商業",
+          "score": 3,
+          "won": false,
+          "name": "唐津商業高校",
+          "slug": "karatsushogyo"
+        },
+        {
+          "display": "有田工業",
+          "score": 4,
+          "won": true,
+          "name": "有田工業高校",
+          "slug": "aritakogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "saga",
+      "district": "佐賀",
+      "sourceName": "佐賀県高等学校野球連盟",
+      "sourceUrl": "http://kouyaren-saga.jp/",
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権佐賀大会",
+      "round": "準々決勝",
+      "teams": [
+        {
+          "display": "佐賀商業",
+          "score": 3,
+          "won": true,
+          "name": "佐賀商業高校",
+          "slug": "sagashogyo"
+        },
+        {
+          "display": "嬉野高校",
+          "score": 2,
+          "won": false,
+          "name": "嬉野高校",
+          "slug": "ureshino"
+        }
+      ]
+    },
+    {
+      "districtSlug": "nara",
+      "district": "奈良",
+      "sourceName": "奈良県高等学校野球連盟",
+      "sourceUrl": "http://www1.kcn.ne.jp/~nhsbbf/",
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "teams": [
+        {
+          "display": "法隆寺国際",
+          "score": 3,
+          "won": false,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        },
+        {
+          "display": "御所実業",
+          "score": 4,
+          "won": true,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
         }
       ]
     },
@@ -239,6 +395,58 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": true,
           "name": "桐生高校",
           "slug": "kiryu"
+        }
+      ]
+    },
+    {
+      "districtSlug": "nara",
+      "district": "奈良",
+      "sourceName": "奈良県高等学校野球連盟",
+      "sourceUrl": "http://www1.kcn.ne.jp/~nhsbbf/",
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "teams": [
+        {
+          "display": "生駒",
+          "score": 5,
+          "won": true,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        },
+        {
+          "display": "奈良高専",
+          "score": 3,
+          "won": false,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "nara",
+      "district": "奈良",
+      "sourceName": "奈良県高等学校野球連盟",
+      "sourceUrl": "http://www1.kcn.ne.jp/~nhsbbf/",
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 11,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "高田",
+          "score": 8,
+          "won": false,
+          "name": "高田高校",
+          "slug": "nara-takata"
         }
       ]
     },

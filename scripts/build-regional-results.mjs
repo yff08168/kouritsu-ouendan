@@ -228,6 +228,12 @@ const normalizeSchoolName = (s) =>
     .replace(/ケ/g, "ヶ")
     .replace(/穗/g, "穂")
     .replace(/舘/g, "館")
+    /*
+      **埼 と 崎 の書き違え。** 佐賀の出典は同じ学校を「神埼清明」（正しい）と
+      「神崎清明」の両方で書いていた。人が打ち間違える組み合わせなので寄せる。
+      別の学校に化ける心配は小さい（**1件に決まらなければ結び付けない**ため）。
+    */
+    .replace(/埼/g, "崎")
     .replace(/﨑/g, "崎")
     .replace(/濵/g, "浜")
     .replace(/學/g, "学")
@@ -645,11 +651,14 @@ const tableRows = (table) =>
 /**
  * 文字列から球場名を1つ拾う。「山日YBS球場　第１試合」→「山日YBS球場」
  *
- * ★**見出しの記号を巻き込まない。** 熊本は `■リブワーク藤崎台球場` と書くので、
- * `\S*` で拾うと **「■」ごと画面に出る**（実際に出ていた）。
+ * ★**見出しの記号や括弧を巻き込まない。** 熊本は `■リブワーク藤崎台球場`、
+ * 佐賀は `【三回戦】さがみどりの森球場` と書く。`\S*` で拾うと
+ * **「■」や「【三回戦】」ごと球場名になる**（どちらも実際に出ていた）。
  */
 const pickVenue = (s) =>
-  normalize(s ?? "").match(/[^\s■◆●▲▼□○◇☆★・]*(?:球場|スタジアム|ドーム|パーク)/)?.[0] ?? null;
+  normalize(s ?? "").match(
+    /[^\s■◆●▲▼□○◇☆★・【】〔〕［］\[\]()（）]*(?:球場|スタジアム|ドーム|パーク)/,
+  )?.[0] ?? null;
 
 /**
  * イニング表から両校のスコアを読む。**合計は「いちばん右の数字」。**
@@ -1233,6 +1242,268 @@ const gunma = {
 };
 
 /**
+ * 佐賀県高等学校野球連盟（`kouyaren-saga.jp`）。
+ *
+ * **規約に転載の制限は無い**（2026-08-14 にトップ・記事を確認）。
+ *
+ * WordPress。1日ぶんが1つの記事で、記事の中に試合が並ぶ。
+ *
+ *   <div class="date">2026年 7月 14日 火曜日 @ PM 09:42</div>   ← **年が入っている**
+ *   <p>【三回戦】さがみどりの森球場①</p>
+ *   <table class="score"> …イニング表… </table>
+ *   <p>（試合終了）<br />佐賀商：東條、溝口－立花…</p>          ← 投手・捕手。**取らない**
+ *
+ * ★**季節は月で決める。** 春と秋の県大会は**どちらも「第N回九州地区高等学校野球
+ * 佐賀大会」**で、名前では見分けが付かない（2026年4月が第158回、2025年9月が第157回）。
+ * 月ごとの一覧（`?m=YYYYMM`）から辿るので、どの月から来たかで季節が決まる。
+ *
+ * ★**記事の一覧は10件で切れる。** WordPressの月別一覧は既定で1ページ10件。
+ * 夏は15日ぶんあるので、`&paged=2` まで辿らないと**大会の前半が丸ごと落ちる。**
+ */
+const saga = {
+  slug: "saga",
+  district: "佐賀",
+  name: "佐賀県高等学校野球連盟",
+  siteUrl: "http://kouyaren-saga.jp/",
+  /*
+    季節ごとに見に行く月。**大会の開催月をこちらで決め打ちしている。**
+    ずれても「その月に記事が無い」だけで、他の季節には影響しない。
+  */
+  seasons: { spring: "3,4,5", summer: "6,7", autumn: "8,9,10" },
+  archiveCache: new Map(),
+  async collect({ fetchHtml, season, url, year }) {
+    const site = this.siteUrl;
+    /** その月の記事一覧（ページングを辿る） */
+    const monthPosts = async (ym) => {
+      if (this.archiveCache.has(ym)) return this.archiveCache.get(ym);
+      const posts = [];
+      for (let page = 1; page <= 3; page++) {
+        const archive = await fetchHtml(`${site}?m=${ym}${page > 1 ? `&paged=${page}` : ""}`);
+        if (!archive) break;
+        /*
+          記事は結果だけではない（組合せ決定・大会情報・御礼）。
+          **タイトルに「日付」か「大会◯日目」が入っているものだけ**を結果とみなす。
+          全部開いてから中身で判断すると、月ごとに何十リクエストにもなる。
+        */
+        const found = dailyLinks(archive, site, { hrefPattern: /\?p=\d+$/ }).filter(
+          (p) => /第\d+回/.test(p.label) && /\d{1,2}[/／]\d{1,2}|大会[^\s]*日/.test(p.label),
+        );
+        const fresh = found.filter((f) => !posts.some((p) => p.url === f.url));
+        if (!fresh.length) break;
+        posts.push(...fresh);
+      }
+      this.archiveCache.set(ym, posts);
+      return posts;
+    };
+
+    const games = [];
+    for (const month of url.split(",")) {
+      const posts = await monthPosts(`${year}${month.padStart(2, "0")}`);
+      for (const post of posts.slice(0, MAX_DAILY_PAGES)) {
+        const html = await fetchHtml(post.url);
+        if (!html) continue;
+
+        /*
+          日付は記事の投稿日から。**タイトルの「（7/14…）」からは取らない** —
+          書き方が大会ごとに違う（`(4/5)` / `（9/29）` / 前置き・後置き）。
+          投稿日なら年も入っていて、形も一定。
+        */
+        const d = normalize(plain(/<div class="date">([\s\S]*?)<\/div>/i.exec(html)?.[1] ?? "")).match(
+          /(\d{4})年\s*(\d{1,2})月\s*(\d{1,2})日/,
+        );
+        if (!d) continue;
+        const isoDate = `${d[1]}-${d[2].padStart(2, "0")}-${d[3].padStart(2, "0")}`;
+
+        /*
+          「大会10日目(4/5) 第158回…佐賀大会」も「第108回…佐賀大会（7/14…）」も同じ形で取れる。
+          ★**最短一致にすること。** 貪欲だと「…佐賀大会 大会8日目」の後ろの「大会」まで
+          飲み込んで、大会名が「…佐賀大会 大会」になる。
+
+          ★**県名の入った大会だけを残す。** この連盟は同じブログに
+          **甲子園（第107回全国高等学校野球選手権大会）**や、他県で開かれる
+          九州地区大会の結果も載せる。月で季節を決めているので、8月の甲子園が
+          そのままだと「秋季大会」に混ざる（実際に2試合入っていた）。
+          春の「佐賀県高等学校野球連盟杯」も県大会ではないのでここで落ちる。
+        */
+        const tournament = normalize(post.label).match(/第\d+回[^（(]*?大会/)?.[0] ?? null;
+        if (!tournament?.includes(this.district)) continue;
+
+        let cursor = 0;
+        for (const t of html.matchAll(/<table[^>]*class="score"[\s\S]*?<\/table>/gi)) {
+          const before = plain(html.slice(cursor, t.index));
+          cursor = t.index + t[0].length;
+          // 【三回戦】さがみどりの森球場①
+          const head = before.match(/【[^】]*】[^【]*$/)?.[0] ?? before;
+
+          const rows = tableRows(t[0]);
+          if (rows.length < 3) continue;
+          const [homeRow, awayRow] = rows.slice(1, 3);
+          const home = homeRow[0];
+          const away = awayRow[0];
+          if (!home || !away) continue;
+          const a = inningTotal(homeRow);
+          const b = inningTotal(awayRow);
+          if (a === null || b === null) continue;
+
+          games.push({
+            date: isoDate,
+            season,
+            tournament,
+            round: pickRound(head),
+            venue: pickVenue(head),
+            teams: [
+              { display: home, score: a, won: a > b },
+              { display: away, score: b, won: b > a },
+            ],
+          });
+        }
+      }
+    }
+    return games;
+  },
+};
+
+/**
+ * 奈良県高等学校野球連盟（`www1.kcn.ne.jp/~nhsbbf`）。
+ *
+ * **規約に転載の制限は無い**（2026-08-14 にトップ・結果ページを確認）。
+ *
+ * 大会ごとに1枚のHTML。開催中は `genzaisiai.html`、終わると
+ * `kakonosiai.html`（過去の試合結果）から年ごとのページに移る。
+ *
+ *   <h3>第107回全国高等学校野球選手権奈良大会</h3>
+ *   <b>7月28日 決勝　さとやくスタジアム</b>
+ *   <table> 第1試合 |1|2|…|9|計 </table>
+ *
+ * ★**ページに年が書かれていない**（日付は「7月28日」まで）。年は次のどちらかで決める。
+ * どちらも**計算で決まる**ので、日付から推測することはしない。
+ *
+ *   過去のページ  一覧のリンクの文字（「第107回（2025年)」）に年がある
+ *   開催中のページ 大会名から。選手権は `年 = 1918 + 回`、
+ *                  春秋は「令和N年度」から `年 = 2018 + N`
+ *
+ * ★**近畿大会のページを混ぜない。** 同じ一覧に「令和7年度（2025年)」として
+ * 近畿地区大会（他県開催）のページも並んでいる。URLに `kinki` が入るので外す。
+ */
+const nara = {
+  slug: "nara",
+  district: "奈良",
+  name: "奈良県高等学校野球連盟",
+  siteUrl: "http://www1.kcn.ne.jp/~nhsbbf/",
+  // 過去ページのURLに入る季節の語（`/and/2025natu.html` `/and/natu/nk24.html`）
+  seasons: { spring: "haru", summer: "natu", autumn: "aki" },
+  pageCache: new Map(),
+  async collect({ fetchHtml, season, url, year }) {
+    /*
+      ★**HTMLコメントを落としてから読む。** このサイトは前の状態
+      （`<!-- <h3>実施中の試合はありません</h3> -->`）をコメントにして残している。
+      落とさないと**大会名としてそれを拾い**、開催中のページを丸ごと捨てる
+      （実際に春夏が0試合になった）。
+    */
+    const get = async (u) => {
+      if (!this.pageCache.has(u)) {
+        const html = await fetchHtml(u);
+        this.pageCache.set(u, html ? html.replace(/<!--[\s\S]*?-->/g, " ") : html);
+      }
+      return this.pageCache.get(u);
+    };
+
+    /** その年・その季節のページを1枚だけ選ぶ */
+    const pageUrl = await (async () => {
+      const archive = await get(`${this.siteUrl}kakonosiai.html`);
+      if (archive) {
+        const hit = dailyLinks(archive, this.siteUrl, { hrefPattern: /\.html?$/i }).find(
+          (l) =>
+            l.label.includes(`${year}年`) &&
+            new RegExp(url, "i").test(l.url) &&
+            !/kinki/i.test(l.url),
+        );
+        if (hit) return hit.url;
+      }
+      /*
+        一覧に無ければ開催中のページ。**大会名から年と季節が確かめられるときだけ使う。**
+        「第108回…選手権奈良大会」→ 1918+108=2026年の夏
+        「令和8年度秋季…奈良県予選」→ 2018+8=2026年の秋
+      */
+      const current = await get(`${this.siteUrl}genzaisiai.html`);
+      if (!current) return null;
+      const names = [...current.matchAll(/<h[1-4][^>]*>([\s\S]*?)<\/h[1-4]>/gi)].map((m) =>
+        normalize(plain(m[1])),
+      );
+      const ok = names.some((name) => {
+        const sen = name.match(/第(\d+)回.*選手権/);
+        const era = name.match(/令和(\d+)年度(春季|秋季)/);
+        if (sen) return season === "summer" && 1918 + Number(sen[1]) === year;
+        if (era) {
+          return (
+            2018 + Number(era[1]) === year &&
+            ((era[2] === "春季" && season === "spring") || (era[2] === "秋季" && season === "autumn"))
+          );
+        }
+        return false;
+      });
+      return ok ? `${this.siteUrl}genzaisiai.html` : null;
+    })();
+    if (!pageUrl) return [];
+
+    const html = await get(pageUrl);
+    if (!html) return [];
+    const tournament =
+      [...html.matchAll(/<h[1-4][^>]*>([\s\S]*?)<\/h[1-4]>/gi)]
+        .map((m) => normalize(plain(m[1])))
+        .find((t) => /大会|予選/.test(t)) ?? null;
+
+    const games = [];
+    let date = null;
+    let round = null;
+    let venue = null;
+    let cursor = 0;
+    for (const t of html.matchAll(/<table[\s\S]*?<\/table>/gi)) {
+      /*
+        表の直前の `<b>7月28日 決勝　さとやくスタジアム</b>`。
+        日付が変わったら回戦と球場は引き継がない（1日に複数試合ある日は
+        2試合目以降に見出しが無く、その日の見出しをそのまま使う）。
+      */
+      const before = normalize(plain(html.slice(cursor, t.index)));
+      cursor = t.index + t[0].length;
+      const d = before.match(/(\d{1,2})月(\d{1,2})日/);
+      if (d) {
+        date = `${year}-${d[1].padStart(2, "0")}-${d[2].padStart(2, "0")}`;
+        round = null;
+        venue = null;
+      }
+      round = pickRound(before) ?? round;
+      venue = pickVenue(before) ?? venue;
+      if (!date) continue;
+
+      const rows = tableRows(t[0]);
+      if (rows.length < 3) continue;
+      const [homeRow, awayRow] = rows.slice(1, 3);
+      // 1列目は「第1試合」などの見出しで、校名は2行目以降の先頭
+      const home = homeRow[0];
+      const away = awayRow[0];
+      if (!home || !away) continue;
+      const a = inningTotal(homeRow);
+      const b = inningTotal(awayRow);
+      if (a === null || b === null) continue;
+
+      games.push({
+        date,
+        season,
+        tournament,
+        round,
+        venue,
+        teams: [
+          { display: home, score: a, won: a > b },
+          { display: away, score: b, won: b > a },
+        ],
+      });
+    }
+    return games;
+  },
+};
+
+/**
  * ここに県を足していく。
  *
  * ★**規約で制限のある連盟のサイトは足さないこと。**
@@ -1246,7 +1517,17 @@ const gunma = {
  *
  * 詳細はREADMEの「都道府県高野連サイトの規約調査」。
  */
-const ADAPTERS = [nagano, kanagawa, saitama, yamanashi, tokushima, kumamoto, gunma];
+const ADAPTERS = [
+  nagano,
+  kanagawa,
+  saitama,
+  yamanashi,
+  tokushima,
+  kumamoto,
+  gunma,
+  saga,
+  nara,
+];
 
 // ------------------------------------------------------------------
 // 学校マスタとの照合（build-live-results.mjs と同じ考え方）
@@ -1351,6 +1632,13 @@ const DISTRICT_ALIASES = {
   // 群馬は3回戦以降しか結果を出さないが、その中に出てくる略記
   "群馬\t桐生市商": "kiryushiritsushogyo",
   "群馬\t安中総合": "annakasogogakuen",
+  /*
+    奈良。**大学附属は略し方が2通りある**（同じ大会の中で「奈女大附」と
+    「女子大附」の両方が出てくる）。国立なのでこのサイトの収録対象。
+  */
+  "奈良\t県大附属": "narakenritsudaigakufuzoku",
+  "奈良\t奈女大附": "narajoshidaigakufuzoku",
+  "奈良\t女子大附": "narajoshidaigakufuzoku",
 };
 
 /**

@@ -218,12 +218,33 @@ export function assembleSlotBracket(page, { roundLabels, venueSymbols, nameOrder
 
     `nameOrder: "asc"` で折り返しの向きに合わせる。同じ行の中は必ず x の昇順。
   */
+  /*
+    ★**校名が2行に組まれていることがある**（2026-08-15。三重）。
+
+    三重の連合チームはスロット1つぶんの幅に**2行×複数列**で組まれている:
+
+        鳥 羽   南 伊 勢     ← 上の行
+          石  薬  師         ← 下の行
+
+    1次元に並べ替えると**行をまたいで交互に**読んでしまい、
+    `鳥羽石南伊勢薬師` のように崩れる（該当2件。**行を読み切ってから次の行**へ）。
+
+    ★**同じ行の文字は「スロット軸の座標」が等しい**（縦書きの京都なら同じ列、
+    横書きの三重・広島なら同じ行）。そこで**まずスロット軸でまとめ、
+    まとまりの中を `nameOrder` の向きで読む。** 1行しかない表では今までと同じ結果になる。
+  */
   const dir = nameOrder === "asc" ? 1 : -1;
+  const LINE = PITCH * 0.35;
   const nameOf = new Map(
-    [...rawName].map(([n, cs]) => [
-      n,
-      cs.sort((a, b) => dir * (a.y - b.y) || a.x - b.x).map((c) => c.t).join(""),
-    ]),
+    [...rawName].map(([n, cs]) => {
+      const lines = [];
+      for (const c of [...cs].sort((a, b) => a.x - b.x)) {
+        const last = lines.at(-1);
+        if (last && Math.abs(last.x - c.x) <= LINE) last.cs.push(c);
+        else lines.push({ x: c.x, cs: [c] });
+      }
+      return [n, lines.map((l) => l.cs.sort((a, b) => dir * (a.y - b.y)).map((c) => c.t).join("")).join("")];
+    }),
   );
   if ([...nameOf.values()].some((v) => !v)) return null;
 

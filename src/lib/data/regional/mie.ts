@@ -784,10 +784,10 @@ export const REGIONAL_MIE: RegionalDistrict = {
           "slug": "komono"
         },
         {
-          "display": "木熊本野紀青南藍",
+          "display": "木本紀南熊野青藍",
           "score": 4,
           "won": false,
-          "name": "木熊本野紀青南藍",
+          "name": "木本紀南熊野青藍",
           "slug": null
         }
       ]
@@ -922,10 +922,10 @@ export const REGIONAL_MIE: RegionalDistrict = {
           "slug": "mie-kawagoe"
         },
         {
-          "display": "鳥羽石南伊勢薬師",
+          "display": "鳥羽南伊勢石薬師",
           "score": 1,
           "won": false,
-          "name": "鳥羽石南伊勢薬師",
+          "name": "鳥羽南伊勢石薬師",
           "slug": null
         }
       ]

@@ -2267,7 +2267,26 @@ const kyoto = {
  *          null（この紙は目当ての大会ではない。呼ぶ側は次のPDFへ）
  */
 function readTwoColumnBracket(raw, opts) {
-  const { district, titlePattern, half, rowTolerance, nameOrder, season, hasDates, venueLegend } = opts;
+  const {
+    district, titlePattern, half, rowTolerance, nameOrder, season, hasDates, venueLegend,
+    /*
+      ★**決勝のスコアの置き場所は2通りある**（`finalAt`）。
+
+        "middle"（広島・三重）… 左右の境目に**2つ並べて**書かれている
+        "center"（鹿児島）    … **半分ごとの準決勝と同じ帯**に、中央をはさんで
+                                 1つずつ向かい合って書かれている
+
+      後者は `assembleSlotBracket({ finalInCenter: true })` が
+      `centerScore` として取り出すので、それを2つ合わせて決勝にする。
+    */
+    finalAt = "middle",
+    /** 日付・球場が1つの断片になっている表のための読み手（鹿児島の `県12日9：00`） */
+    parseLabel,
+    /** 連合チームの略称 → 展開した校名。凡例が行で読めない表のため（鹿児島の `連合①`） */
+    expand,
+    /** 表の別の場所に書いてある優勝校と決勝のスコア。**合わなければ1試合も出さない** */
+    verify,
+  } = opts;
   const flat = raw.lines.map((l) => normalize(l.text.replace(/\t/g, "")));
   const tournament = flat.map((t) => t.match(titlePattern)?.[0]).find(Boolean);
   if (!tournament) return null;
@@ -2292,7 +2311,14 @@ function readTwoColumnBracket(raw, opts) {
         range: i === 0 ? [0, half] : [half, 1e6],
         rowTolerance,
       }),
-      { roundLabels: LABELS, venueSymbols: symbols, nameOrder: nameOrder[i] },
+      {
+        roundLabels: LABELS,
+        venueSymbols: symbols,
+        nameOrder: nameOrder[i],
+        finalInCenter: finalAt === "center",
+        parseLabel,
+        expand,
+      },
     ),
   );
   if (halves.some((h) => !h)) {
@@ -2305,13 +2331,32 @@ function readTwoColumnBracket(raw, opts) {
     左右の勝者の対戦。**中央（左右の境目）にだけ置かれている**ので、
     半分ずつの組み立てには入ってこない。
   */
+  /*
+    ★**鹿児島は半分ごとの組み立てが決勝の得点を1つずつ持って返る。**
+    中央の帯を走査する必要が無い（走査するとシードのスロット番号を拾う）。
+  */
+  let finalPair = null;
+  if (finalAt === "center") {
+    const cs = halves.map((h) => h.centerScore);
+    if (cs.some((c) => !c)) {
+      console.log(`  ⚠️ ${district}: ${tournament} の決勝のスコアが中央に見つからない。1試合も出さない`);
+      return [];
+    }
+    finalPair = {
+      pair: cs.map((c) => c.v),
+      // 日付・球場はどちらか片側にしか書かれていない（鹿児島は上半分だけ）
+      date: cs.map((c) => c.date).find(Boolean) ?? null,
+      venue: cs.map((c) => c.venue).find(Boolean) ?? null,
+    };
+  }
+
   const items = page.lines.flatMap((l) => l.items.map((i) => ({ x: i.x, y: l.y, t: i.text.trim() })));
   const mid = items.filter((i) => Math.abs(i.x - half) < half * 0.2);
   const nums = mid.filter((i) => /^\d{1,2}$/.test(i.t) || /^\d{1,2}\s+\d{1,2}$/.test(i.t));
   // 「3 4」のように2つが1断片に潰れていることがある（広島が実際そうだった）
   const glued = nums.find((i) => /^\d{1,2}\s+\d{1,2}$/.test(i.t));
   const anchor = glued ?? nums.filter((i) => /^\d{1,2}$/.test(i.t)).sort((a, b) => b.y - a.y)[0];
-  if (!anchor) {
+  if (!finalPair && !anchor) {
     console.log(`  ⚠️ ${district}: ${tournament} の決勝が読めなかった。1試合も出さない`);
     return [];
   }
@@ -2322,11 +2367,14 @@ function readTwoColumnBracket(raw, opts) {
   */
   const nearest = (list) =>
     list.length ? list.reduce((p, c) => (Math.abs(c.x - anchor.x) < Math.abs(p.x - anchor.x) ? c : p)) : null;
-  const finalDate = nearest(mid.filter((i) => /^\d{1,2}\/\d{1,2}[(（]?$/.test(i.t)))?.t.replace(/[(（]$/, "");
-  const finalVenue = nearest(mid.filter((i) => symbols.has(i.t)))?.t ?? null;
-  const pair = glued
-    ? glued.t.split(/\s+/).map(Number)
-    : nums.filter((i) => /^\d{1,2}$/.test(i.t)).sort((a, b) => b.y - a.y).slice(0, 2).map((i) => Number(i.t));
+  const finalDate =
+    finalPair?.date ?? nearest(mid.filter((i) => /^\d{1,2}\/\d{1,2}[(（]?$/.test(i.t)))?.t.replace(/[(（]$/, "");
+  const finalVenue = finalPair ? finalPair.venue : (nearest(mid.filter((i) => symbols.has(i.t)))?.t ?? null);
+  const pair =
+    finalPair?.pair ??
+    (glued
+      ? glued.t.split(/\s+/).map(Number)
+      : nums.filter((i) => /^\d{1,2}$/.test(i.t)).sort((a, b) => b.y - a.y).slice(0, 2).map((i) => Number(i.t)));
   if (pair.length !== 2) {
     console.log(`  ⚠️ ${district}: ${tournament} の決勝のスコアが2つ読めなかった。1試合も出さない`);
     return [];
@@ -2352,13 +2400,48 @@ function readTwoColumnBracket(raw, opts) {
   if (hasDates) {
     const printed = raw.lines
       .flatMap((l) => l.items)
-      .filter((i) => /^\d{1,2}\/\d{1,2}[(（]?$/.test(i.text.trim())).length;
+      .filter((i) => {
+        const t = i.text.trim();
+        return parseLabel ? Boolean(parseLabel(t)?.date) : /^\d{1,2}\/\d{1,2}[(（]?$/.test(t);
+      }).length;
     if (printed !== built.length) {
       console.log(`  ⚠️ ${district}: 表の日付が ${printed} 件、組み立てた試合が ${built.length} 件。1試合も出さない`);
       return [];
     }
     if (built.some((g) => !g.date)) {
       console.log(`  ⚠️ ${district}: 日付の読めない試合がある。1試合も出さない`);
+      return [];
+    }
+  }
+  /*
+    ★**表の外に優勝校と決勝のスコアが書いてある出典がある**（鹿児島。2026-08-15）。
+
+    連盟のトップページが「決勝戦 神村学園高等部 ９ ー ０ 鹿児島実業」と
+    **文章で**書いている。組合せ表の枝から組み立てた結果と突き合わせれば、
+    石川で通ってしまった「構造の検算は通るのに決勝の相手が違う」を止められる。
+    **このリポジトリで京都に次いで強い検算。**
+  */
+  if (verify) {
+    const champ = pair[0] > pair[1] ? A : B;
+    const runner = pair[0] > pair[1] ? B : A;
+    const score = [...pair].sort((x, y) => y - x);
+    /*
+      ★**校名は完全一致では比べられない。** 表は「神村学園」、文章は「神村学園高等部」。
+      どちらかがもう一方を含んでいれば同じ学校とみなす。
+      **勝敗と点数のほうは完全一致を要求する**（そこが緩むと検算にならない）。
+    */
+    const same = (a, b) => a.includes(b) || b.includes(a);
+    const ok =
+      same(verify.champion, champ) &&
+      same(verify.runnerUp, runner) &&
+      score[0] === verify.score[0] &&
+      score[1] === verify.score[1];
+    if (!ok) {
+      console.log(
+        `  ⚠️ ${district}: 決勝が出典の記載と合わない` +
+          `（記載「${verify.champion} ${verify.score[0]}-${verify.score[1]} ${verify.runnerUp}」/ ` +
+          `組み立て「${champ} ${score[0]}-${score[1]} ${runner}」）。1試合も出さない`,
+      );
       return [];
     }
   }
@@ -2582,6 +2665,173 @@ const mie = {
 };
 
 /**
+ * 鹿児島県高等学校野球連盟（`www.kagoshima-kouyaren.jp`）。
+ * ★**トーナメント表の出典としては4つ目**（京都・広島・三重に続く）。
+ *
+ * **規約に転載の制限は無い**（2026-08-15 にトップ・大会日程・試合結果・大会記録の
+ * 4ページを「転載・無断・複製・営利・著作権」で検索して確認。footer の
+ * Copyright 表記だけで、利用条件の記載そのものが無い）。
+ * ★**robots.txt は `/library/` を Disallow しているが、
+ * `/library/5e337f119132af322adf5678/*` だけ Allow している。**
+ * 組合せ表のPDFはちょうどこのディレクトリにある。**他の library 配下は取らないこと。**
+ *
+ * ★**同じサイトに一球速報（omyutech）へのリンクがある**が、そちらは
+ * 軟式・九州地区大会のもので、**選手権鹿児島大会の結果は連盟自身のPDF**にある。
+ * 取っているのはPDFだけで、omyutech からは1件も取っていない。
+ *
+ * ------------------------------------------------------------------
+ * ★ この表がほかの3県と違うところ
+ *
+ *   1. **上下2段組**（広島・三重は左右）。`orientPage` の扱いは同じ
+ *   2. ★**決勝のスコアが、半分ごとの準決勝と同じ帯の中央にある。**
+ *      準決勝のスコアは連結線の**両端**（中点から±6.5スロット）に置かれ、
+ *      中点に来るのは決勝の得点。`finalInCenter` で外して `centerScore` に取る
+ *   3. ★**日付が `県12日9：00`**（球場記号＋日＋開始時刻が1断片）。
+ *      月が書かれていないので、表の開催期間の行から月を決める
+ *   4. **スコアの後ろに丸数字**（`10⑤` ＝ 5回コールドで10点）
+ *   5. 連合チームの凡例が「連合①」と中身の2列組
+ *
+ * ------------------------------------------------------------------
+ * ★ 検算（京都に次いで強い）
+ *
+ *   - **連盟のトップページが決勝の結果を文章で書いている**
+ *     （「決勝戦 神村学園高等部 ９ ー ０ 鹿児島実業」）。
+ *     枝から組み立てた決勝と突き合わせる。**表の枝とは別の場所から来る事実**なので、
+ *     石川で通ってしまった「構造は合うのに決勝の相手が違う」を止められる
+ *   - N チーム − 試合数 = 1
+ *   - 表に書かれた日付の個数 = 試合数（鹿児島は61件＝61試合）
+ *
+ *   2026年（第108回）は 62チーム・61試合・優勝 神村学園（9-0 鹿児島実業）で
+ *   すべて一致した。**表のシード欄のスロット番号（1・62・45・19・24・37・50・15）**も
+ *   神村学園・鹿屋中央・樟南・鹿児島商業・川内・出水中央・鹿児島実業・徳之島を指しており、
+ *   組み立てた並びと矛盾しない。
+ */
+const kagoshima = {
+  slug: "kagoshima",
+  district: "鹿児島",
+  name: "鹿児島県高等学校野球連盟",
+  siteUrl: "http://www.kagoshima-kouyaren.jp/",
+  politenessMs: 2000,
+  // **夏だけ。** 春季・秋季の表は形を確かめてから足すこと
+  seasons: { summer: "http://www.kagoshima-kouyaren.jp/" },
+  async collect({ fetchHtml, season, url }) {
+    const html = await fetchHtml(url);
+    if (!html) return [];
+    /*
+      ★**「勝ち上がり」のPDFを狙うこと。** 同じページに【組合せ】（スコアの入って
+      いない抽選直後の表）も並んでいる。**軟式の同名PDFもある**ので、
+      「全国高等学校野球選手権鹿児島」（軟式は「全国高等学校軟式野球選手権」）で分ける。
+    */
+    const links = [];
+    for (const m of html.matchAll(/<a[^>]+href=["']([^"']+\.pdf)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
+      const label = normalize(plain(m[2]));
+      const hit = label.match(/第(\d+)回全国高等学校野球選手権鹿児島\s*大会【勝ち上がり】/);
+      if (hit) links.push({ round: Number(hit[1]), url: new URL(m[1], url).toString() });
+    }
+    if (!links.length) {
+      console.log("  ⚠️ 鹿児島: 勝ち上がりのPDFへのリンクが見つからない。出典の作りが変わった可能性がある");
+      return [];
+    }
+    // **新しい回から順に見る**（前年ぶんのリンクが下に残っている）
+    links.sort((a, b) => b.round - a.round);
+
+    /*
+      ★**同じページに決勝の結果が文章で書いてある。** これを検算に使う。
+      「第108回…【勝ち上がり】 決勝戦 神村学園高等部 ９ ー ０ 鹿児島実業 優勝 …」
+    */
+    const text = normalize(plain(html));
+    const verifyOf = (round) => {
+      const m = text.match(
+        new RegExp(
+          `第${round}回全国高等学校野球選手権鹿児島\\s*大会【勝ち上がり】\\s*決勝戦\\s*` +
+            `(\\S+?)\\s*(\\d{1,2})\\s*[ー−–—-]\\s*(\\d{1,2})\\s*(\\S+?)\\s*優勝`,
+        ),
+      );
+      return m ? { champion: m[1], runnerUp: m[4], score: [Number(m[2]), Number(m[3])] } : null;
+    };
+
+    for (const link of links.slice(0, 3)) {
+      const verify = verifyOf(link.round);
+      if (!verify) {
+        console.log(`  ⚠️ 鹿児島: 第${link.round}回の決勝の記載がページに無い。検算できないので1試合も出さない`);
+        continue;
+      }
+      const parsed = await fetchPdfPages(link.url, { headers: UA });
+      await sleep(this.politenessMs);
+      if (!parsed?.length) continue;
+      for (const raw of parsed) {
+        const games = this.readSheet(raw, season, verify);
+        if (games) return games;
+      }
+    }
+    return [];
+  },
+  /** 1枚の組合せ表を読む。**組めなければ null**（呼び出し側は次のPDFへ） */
+  readSheet(raw, season, verify) {
+    const flat = raw.lines.map((l) => normalize(l.text.replace(/\t/g, "")));
+    if (!flat.some((t) => /第\d+回全国高等学校野球選手権鹿児島大会/.test(t))) return null;
+
+    /*
+      ★**日付に月が書かれていない**（`県12日9：00`）。
+      **7月と決め打ちしないこと。** 表の開催期間の行
+      「令和８年７月４日（土）～７月２５日（土）」から月を決める。
+      またいでいたら、日で振り分ける（開幕日以降は前の月）。
+    */
+    const period = flat.map((t) => t.match(/(\d{1,2})月(\d{1,2})日.*?[～~－―-].*?(\d{1,2})月(\d{1,2})日/)).find(Boolean);
+    if (!period) {
+      console.log("  ⚠️ 鹿児島: 開催期間の行が読めない。日付の月を決められないので1試合も出さない");
+      return [];
+    }
+    const [, m1, d1, m2] = period.map(Number);
+    const monthOf = (day) => (m1 === m2 ? m1 : day >= d1 ? m1 : m2);
+    const parseLabel = (t) => {
+      const m = t.match(/^([^\d\s])(\d{1,2})日/);
+      if (!m) return null;
+      const day = Number(m[2]);
+      return { date: `${monthOf(day)}/${day}`, venue: m[1] };
+    };
+
+    /** 連合チームの凡例（「連合①」と中身が同じ行の2列に並ぶ） */
+    const expand = new Map();
+    for (const l of raw.lines) {
+      const m = l.text.match(/(?:^|\t)(連合[①-⑳])\t([^\t]+)$/);
+      if (m) expand.set(m[1], m[2].trim());
+    }
+
+    return readTwoColumnBracket(raw, {
+      district: "鹿児島",
+      titlePattern: /第\d+回全国高等学校野球選手権鹿児島大会/,
+      /*
+        上下で分ける境目。**中央の決勝はどちらにも入れない**……のだが、
+        鹿児島の決勝は準決勝と同じ帯にあるので、`finalAt: "center"` で
+        半分ずつの組み立てから取り出す。スロット列は 194 と 789 にあり、その中間。
+      */
+      half: 490,
+      // 丸数字つきのスコアだけ別の帯に落ちるので、行の許容幅を少し広げる
+      rowTolerance: 8,
+      nameOrder: ["asc", "desc"],
+      season,
+      hasDates: true,
+      finalAt: "center",
+      parseLabel,
+      expand,
+      verify,
+      venueLegend: (page) => {
+        // 凡例「県：平和リース球場（鹿児島県立鴨池野球場）」
+        const map = new Map();
+        for (const l of page.lines) {
+          for (const m of l.text.matchAll(/(?:^|\t)([^\t\s])\s*[：:]\s*([^\t]+?)(?=\t|$)/g)) {
+            const name = m[2].trim();
+            if (/球場|スタジアム|ドーム|パーク|PARK/i.test(name)) map.set(m[1], name);
+          }
+        }
+        return map;
+      },
+    });
+  },
+};
+
+/**
  * ここに県を足していく。
  *
  * ★**規約で制限のある連盟のサイトは足さないこと。**
@@ -2611,6 +2861,7 @@ const ADAPTERS = [
   kyoto,
   hiroshima,
   mie,
+  kagoshima,
 ];
 
 // ------------------------------------------------------------------

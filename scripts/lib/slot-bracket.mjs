@@ -29,6 +29,21 @@
  *   位置で寄せると毎回戦きっかり1試合を落としていた（実測）。
  *
  * ------------------------------------------------------------------
+ * ★ 表ごとの違いを吸収するための任意の引数（2026-08-15 現在）
+ *
+ *   `nameOrder`     … 校名の読む向き（縦書き／横書きの折り返し）
+ *   `parseLabel`    … 日付と球場が1断片の表（鹿児島の `県12日9：00`）
+ *   `expand`        … 連合チームの凡例が行で読めない表（鹿児島の `連合①`）
+ *   `finalInCenter` … ★**いちばん深い帯の中央に、その半分のものではない
+ *                     得点（大会の決勝）が1つ紛れている表**（鹿児島）。
+ *                     このとき準決勝のスコアは中点ではなく**連結線の両端**に来るので、
+ *                     窓を「その試合が結ぶ2本の線のあいだ」に広げる。
+ *                     外した中央の1個は `centerScore` で返す
+ *
+ *   ★**どれも「そう書いてある表がある」ことを実データで確かめてから足したもの。**
+ *   新しい県に流用する前に、その県の表でも同じ形かを必ず測ること。
+ *
+ * ------------------------------------------------------------------
  * ★ 呼ぶ側は必ず検算すること
  *
  *   組み立てが正しいことを、**表の別の場所に書いてある事実**と突き合わせる。
@@ -42,6 +57,10 @@
  *
  *   京都ではこの4つすべてが合い、さらに**全70試合を外部の情報源と
  *   突き合わせて70/70で一致**した（2026-08-14）。
+ *
+ *   ★**表の外に検算材料があることもある**（2026-08-15。鹿児島）。
+ *   連盟のトップページが決勝の結果を文章で書いていた。
+ *   **枝とは別の場所から来る事実**なので、出典のページ本文も必ず探すこと。
  */
 
 /** 同じ帯とみなす y の差 */
@@ -133,7 +152,10 @@ export function orientPage(page, { slotAxis = "x", flip = false, range, rowToler
  * @param opts.roundLabels 深い順に使う回戦名
  * @returns null（形が違って組めない）または組み立て結果
  */
-export function assembleSlotBracket(page, { roundLabels, venueSymbols, nameOrder = "desc" } = {}) {
+export function assembleSlotBracket(
+  page,
+  { roundLabels, venueSymbols, nameOrder = "desc", finalInCenter = false, parseLabel, expand } = {},
+) {
   /*
     ---- 1. スロット番号の行 ----
 
@@ -258,7 +280,13 @@ export function assembleSlotBracket(page, { roundLabels, venueSymbols, nameOrder
     const m = l.text.match(/(?:^|\t)([^\t])\t([^\t])\t([^\t])\t…\t([^\t]+)$/);
     if (m) combined.set(m[1] + m[2] + m[3], m[4].trim());
   }
-  const display = (n) => combined.get(nameOf.get(n)) ?? nameOf.get(n);
+  /*
+    ★**凡例の書き方は表ごとに違う。** 京都は「西 園 須 … 西乙訓・園部・須知」と
+    1行に収まるが、**鹿児島は「連合①」と中身が別々の行にあり、x が揃っているだけ**。
+    行では読めないので、その形は呼ぶ側に解かせて `expand` で受け取る。
+    どちらにせよ**展開しないと連合チームだと分からず、1校に結び付けてしまう。**
+  */
+  const display = (n) => expand?.get(nameOf.get(n)) ?? combined.get(nameOf.get(n)) ?? nameOf.get(n);
 
   // ---- 3. 数字・日付・球場を座標つきで取り出す ----
   const CHAR = PITCH * 0.45;
@@ -272,7 +300,15 @@ export function assembleSlotBracket(page, { roundLabels, venueSymbols, nameOrder
       let cursor = it.x;
       for (const part of it.text.trim().split(/\s+/)) {
         const w = part.length * CHAR;
-        const half = part.replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0));
+        /*
+          ★**スコアの後ろに丸数字が付く表がある**（鹿児島の `10⑤` `11⑦`）。
+          ⑤は5回コールドの意味で、点数は10。落とさないと**その試合のスコアが
+          まるごと読めず**、その回戦の数字が奇数個になって組めなくなる
+          （鹿児島の1回戦は26のところ25になっていた）。
+        */
+        const half = part
+          .replace(/[①-⑳]+$/, "")
+          .replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0));
         /*
           ★**桁数のぶんだけ左にずれるのを戻す。** PDFが返すのは断片の左端なので、
           2桁の数は1桁の数より半文字ぶん左から始まる。**中心＝左端＋(桁数-1)/2文字。**
@@ -280,7 +316,8 @@ export function assembleSlotBracket(page, { roundLabels, venueSymbols, nameOrder
           **スロットの境目の判定が 0.3 を超えて外れる**（京都の1回戦が落ちた）。
         */
         if (/^\d{1,2}$/.test(half)) {
-          out.push({ v: Number(half), slot: toSlot(cursor + ((part.length - 1) * CHAR) / 2) });
+          const x = cursor + ((part.length - 1) * CHAR) / 2;
+          out.push({ v: Number(half), slot: toSlot(x), x });
         }
         cursor += w + CHAR * 0.35;
       }
@@ -318,7 +355,20 @@ export function assembleSlotBracket(page, { roundLabels, venueSymbols, nameOrder
   let r1row = null;
   let pods = [];
   for (const line of bandRows) {
-    const ns = numbersOf(line).sort((a, b) => a.slot - b.slot);
+    /*
+      ★**1回戦のスコアが2行に分かれることがある。**
+      鹿児島は点数の後ろに丸数字（コールドの回数）が付く試合だけ行が上にずれ、
+      1行では29個（奇数）にしかならず組めなかった。**近い行はまとめて1つの帯**
+      として見る（回戦の間隔よりずっと近い範囲だけ）。
+
+      ★**数字の無い行をまとめないこと**（2026-08-15。鹿児島）。
+      まとめた行のいちばん上が「1回戦の位置」になるので、注記だけの行
+      （鹿児島は「９：００」）を巻き込むと**帯の位置が実際より上にずれる。**
+      2回戦との間隔がそのぶん狭く見え、次の回戦のまとめ幅（間隔から決まる）が
+      足りなくなる。**中身に寄与しない行は最初から入れない。**
+    */
+    const merged = bandRows.filter((l) => Math.abs(l.y - line.y) <= PITCH * 0.4 && numbersOf(l).length);
+    const ns = merged.flatMap((l) => numbersOf(l)).sort((a, b) => a.slot - b.slot);
     if (ns.length < 4 || ns.length % 2 !== 0) continue;
     const found = [];
     let ok = true;
@@ -341,7 +391,12 @@ export function assembleSlotBracket(page, { roundLabels, venueSymbols, nameOrder
     // 同じスロットを2度使う組み方はありえない
     const used = new Set();
     if (found.some((p) => used.has(p.a) || used.has(p.a + 1) || (used.add(p.a), used.add(p.a + 1), false))) continue;
-    r1row = line;
+    /*
+      ★**まとめた行のうち「いちばん上」を1回戦の位置とすること。**
+      下の行を基準にすると、**残りの行が2回戦の帯として 読まれる**
+      （鹿児島で実際に起きて、以降の回戦が1つずつずれた）。
+    */
+    r1row = merged.reduce((a, b) => (b.y > a.y ? b : a));
     pods = found;
     break;
   }
@@ -379,19 +434,67 @@ export function assembleSlotBracket(page, { roundLabels, venueSymbols, nameOrder
    * 距離で選ぶと**別の回戦の日付**を拾うので、**個数で帯を決める。**
    * 決めた帯の近くだけを返せば、継続試合で積み上がった日付も一緒に拾える。
    */
-  const pickBand = (list, count, nearY) => {
-    const byBand = new Map();
+  /**
+   * ★**1つの回戦の日付が2行に割れることがある**（2026-08-15。鹿児島）。
+   *
+   * 鹿児島の1回戦は15試合ぶんの日付が **12件の行と3件の行**に分かれており、
+   * 「ちょうど15件の行」が無いために帯を決められなかった（全部の日付が
+   * 候補のまま残り、1回戦に3回戦の日付が付いた）。
+   *
+   * ★**まとめてよいのは「同じスロットの日付を持たない」行どうしだけ。**
+   * 京都は継続試合の日付が同じ場所に何段も積まれている
+   * （7/4→7/5→7/6→7/7）ので、そちらは**まとめてはいけない**
+   * ——まとめると個数が試合数を超えて、やはり帯を決められなくなる。
+   * **同じ試合の続きは同じスロット、別の試合は別のスロット**という違いで分ける。
+   */
+  const groupBands = (list) => {
+    const byRow = new Map();
     for (const d of list) {
-      const k = [...byBand.keys()].find((v) => Math.abs(v - d.y) <= BAND) ?? d.y;
-      if (!byBand.has(k)) byBand.set(k, []);
-      byBand.get(k).push(d);
+      const k = [...byRow.keys()].find((v) => Math.abs(v - d.y) <= BAND) ?? d.y;
+      if (!byRow.has(k)) byRow.set(k, []);
+      byRow.get(k).push(d);
     }
-    const hit = [...byBand.entries()]
-      .filter(([, l]) => l.length === count)
-      .sort((a, b) => Math.abs(a[0] - nearY) - Math.abs(b[0] - nearY))[0];
-    if (!hit) return list;
-    const spread = Math.max(PITCH * 0.5, 12);
-    return list.filter((d) => Math.abs(d.y - hit[0]) <= spread);
+    const rows = [...byRow.entries()].sort((a, b) => a[0] - b[0]).map(([y, l]) => ({ ys: [y], list: l }));
+    const out = [];
+    for (const row of rows) {
+      const prev = out.at(-1);
+      const disjoint =
+        prev && prev.list.every((p) => row.list.every((c) => Math.abs(p.slot - c.slot) > 0.5));
+      if (prev && disjoint && Math.abs(row.ys[0] - prev.ys.at(-1)) <= PITCH * 0.5) {
+        prev.ys.push(row.ys[0]);
+        prev.list.push(...row.list);
+      } else out.push(row);
+    }
+    return out;
+  };
+  /**
+   * ★**日付は「個数がその回戦の試合数と一致する帯」に並んでいる。**
+   *
+   * 日付がスコアの帯からどれだけ離れているかは表によって全く違う
+   * （京都は約8ポイント下、**広島は約150ポイント下**＝回戦の間隔とほぼ同じ、
+   * **鹿児島は約78ポイント下**＝2段ぶん下）。
+   * 距離で選ぶと**別の回戦の日付**を拾うので、**個数で帯を決める。**
+   * 決めた帯の近くだけを返せば、継続試合で積み上がった日付も一緒に拾える。
+   *
+   * ★**「スコアの帯にいちばん近い帯」で選ばないこと**（2026-08-15。鹿児島）。
+   *
+   * 準決勝と決勝はどちらも1試合なので、**個数だけでは区別が付かない。**
+   * 鹿児島は決勝の日付が準決勝のスコアと同じ帯にあり、近さで選ぶと
+   * 準決勝に決勝の日付（7/25）が付いた。
+   * **日付の帯はスコアの帯と同じ順に並ぶ**ので、
+   * **前の回戦で使った帯より上の、いちばん低い帯**を採る。これなら
+   * 「日付がスコアの何段ぶん下にあるか」を県ごとに決め打ちしなくて済む
+   * （鹿児島は上半分が約80ポイント下・下半分が約27ポイント下で**左右でも違う**）。
+   *
+   * @param aboveY 前の回戦で使った帯の高さ。これより上だけを見る
+   * @returns `{ dates, y }` … 選んだ帯の日付と、その帯の高さ（選べなければ y は null）
+   */
+  const pickBand = (list, count, aboveY, spread = Math.max(PITCH * 0.5, 12)) => {
+    const hit = groupBands(list)
+      .filter((g) => g.list.length === count && (aboveY === null || g.ys[0] > aboveY))
+      .sort((a, b) => a.ys[0] - b.ys[0])[0];
+    if (!hit) return { dates: list, y: null };
+    return { dates: list.filter((d) => hit.ys.some((y) => Math.abs(d.y - y) <= spread)), y: hit.ys.at(-1) };
   };
 
   /** 帯のまわりから日付・球場を拾う（試合の中点のいちばん近くにある） */
@@ -402,6 +505,18 @@ export function assembleSlotBracket(page, { roundLabels, venueSymbols, nameOrder
       if (l.y <= yFrom || l.y > yTo) continue;
       for (const it of l.items) {
         const t = it.text.trim();
+        /*
+          ★**日付と球場が1つの断片にまとまっている表がある**（`parseLabel`）。
+          鹿児島は `県12日9：00`（球場記号＋日＋開始時刻）で、
+          月も `/` も無いので下の正規表現では1件も取れない。
+          **形が違うぶんは呼ぶ側に解かせる。**
+        */
+        const parsed = parseLabel?.(t);
+        if (parsed) {
+          if (parsed.date) dates.push({ slot: toSlot(it.x), y: l.y, t: parsed.date });
+          if (parsed.venue) venues.push({ slot: toSlot(it.x), t: parsed.venue });
+          continue;
+        }
         /*
           ★**日付の断片に括弧が付いていることがある。** 広島は曜日を続けて
           「7/11( 土 )」と書くので、断片は `7/11(` になる。
@@ -421,6 +536,8 @@ export function assembleSlotBracket(page, { roundLabels, venueSymbols, nameOrder
   };
 
   let nodes = [];
+  /** 前の回戦で使った日付の帯の高さ。**次の回戦はこれより上の帯から選ぶ** */
+  let prevDateY = null;
   {
     const start = new Map(pods.map((p) => [p.a, p]));
     const inPod = new Set(pods.flatMap((p) => [p.a, p.a + 1]));
@@ -430,7 +547,9 @@ export function assembleSlotBracket(page, { roundLabels, venueSymbols, nameOrder
       広めに探すと**2回戦以降の日付を拾って17試合の日付が狂っていた。**
     */
     const wide = labelsBetween(slotLine.y, r1row.y + PITCH * 2.2);
-    const { dates, venues } = { ...wide, dates: pickBand(wide.dates, pods.length, r1row.y) };
+    const picked = pickBand(wide.dates, pods.length, null);
+    prevDateY = picked.y;
+    const { dates, venues } = { ...wide, dates: picked.dates };
     for (let n = 1; n <= N; n++) {
       const p = start.get(n);
       if (p) {
@@ -450,17 +569,27 @@ export function assembleSlotBracket(page, { roundLabels, venueSymbols, nameOrder
 
   // ---- 5. 2回戦以降 ----
   let lastY = r1row.y;
+  /** `finalInCenter` のとき、いちばん深い帯の中央にあった「決勝ぶんの得点」 */
+  let center = null;
   for (let r = 1; nodes.length > 1; r++) {
     const mids = [];
     for (let i = 0; i + 1 < nodes.length; i += 2) mids.push((nodes[i].x + nodes[i + 1].x) / 2);
 
     // 予測した中点のそばに数字がいちばん多く乗っている帯を探す
-    const cand = bandRows
+    /*
+      ★**数字の無い行は帯の候補から外す**（2026-08-15。鹿児島）。
+      `lastY` はこのあと「まとめた行のいちばん上」まで進めるので、
+      注記だけの行（鹿児島は球場名の但し書き）を巻き込むと
+      **回戦の間隔が実際より狭く見え、次の回戦のまとめ幅が足りなくなる。**
+    */
+    const rows = bandRows
       .filter((l) => l.y > lastY + BAND)
       .map((l) => {
         const ns = numbersOf(l);
         return { line: l, ns, hit: ns.filter((n) => mids.some((m) => Math.abs(n.slot - m) <= 0.95)).length };
       })
+      .filter((c) => c.ns.length);
+    const cand = rows
       /*
         ★**決勝は数字が2つしか無い**ので、しきい値を試合数から作ること。
         `min(2, 試合数*2)` にすると決勝（中点の予測が最大にずれる）で
@@ -481,11 +610,40 @@ export function assembleSlotBracket(page, { roundLabels, venueSymbols, nameOrder
       スロットの間隔（`PITCH`）を基準にすると、**回戦の間隔のほうが狭い表**で
       隣の回戦を巻き込む。広島は左半分の決勝（y=1316）に**大会全体の決勝**
       （y=1397）が混ざり、数字が4個になって組めなくなった。
-      こぼれた行は回戦の間隔よりずっと近いので、その1/3までにする。
+      こぼれた行は回戦の間隔よりずっと近いので、その一部までにする。
+
+      ★**ずれ幅は桁数と注記で変わる**（2026-08-15。鹿児島）。
+      鹿児島のこぼれ方は 9〜11ポイント（`10⑤` など1桁＋丸数字）だが、
+      **2桁＋丸数字の `10⑥` だけ 15.2 ポイント**で、間隔の1/3（13.3）に
+      収まらず下半分が組めなかった。間隔の 0.45 まで広げる
+      （広島は間隔141に対しずれ81なので、広げても混ざらない）。
     */
-    const mergeTol = Math.min(PITCH * 0.9, (best.line.y - lastY) / 3);
-    const pool = cand
-      .filter((c) => Math.abs(c.line.y - best.line.y) <= mergeTol)
+    const mergeTol = Math.min(PITCH * 0.9, (best.line.y - lastY) * 0.45);
+    /*
+      ★**こぼれた行を `cand` から拾わないこと**（2026-08-15。鹿児島）。
+
+      `cand` は「中点のそばに数字が2つ以上ある行」だけなので、
+      **1試合ぶんしかこぼれていない行は最初から候補に入っていない。**
+      鹿児島の3回戦は `11⑦` の1つだけが11ポイント上の行に落ちており、
+      数字が7個（必要8個）で止まっていた。**まとめる相手は候補ではなく
+      その高さにある行すべて**から選ぶ。混ざりものは下の
+      「中点から3スロット以内」と「個数がちょうど2倍」で落ちる。
+    */
+    const merged = rows.filter((c) => Math.abs(c.line.y - best.line.y) <= mergeTol);
+    /*
+      ★**いちばん深い帯だけ、窓を「枝の張る幅」に広げる**（`finalInCenter`。鹿児島）。
+
+      鹿児島の準決勝は、スコアが**中点ではなく連結線の両端**に書かれる
+      （中点のスロット16に対して 9.2 と 21.7）。下の「中点から3スロット」では
+      両方とも落ち、数字が1個になって組めなかった。
+      **その試合が結ぶ2本の線のあいだ**なら推測ではないので、そこまで広げる。
+      表の右端に並ぶシードのスロット番号（29.8〜33.3）はこの外に出る。
+    */
+    const deepest = finalInCenter && mids.length === 1;
+    const span = deepest
+      ? [Math.min(nodes[0].x, nodes[1].x) - 1, Math.max(nodes[0].x, nodes[1].x) + 1]
+      : null;
+    const pool = merged
       .flatMap((c) => c.ns)
       /*
         ★**表の左上にある日程表の数字を拾わないこと。**
@@ -493,8 +651,31 @@ export function assembleSlotBracket(page, { roundLabels, venueSymbols, nameOrder
         準決勝・決勝の帯はその一覧と**同じ高さ**にある。そのままだと
         数字の個数が合わなくなり、順番の対応が崩れる（実測）。
       */
-      .filter((s) => mids.some((m) => Math.abs(s.slot - m) <= 3))
+      .filter((s) => (span ? s.slot >= span[0] && s.slot <= span[1] : mids.some((m) => Math.abs(s.slot - m) <= 3)))
       .sort((a, b) => a.slot - b.slot);
+
+    /*
+      ★**中央に1つ余る帯がある**（`finalInCenter`。鹿児島。2026-08-15）。
+
+      上下2段組で、**決勝のスコアが半分ごとの準決勝と同じ帯に、
+      中央をはさんで向かい合って**書かれている表がある。
+      鹿児島の上半分の準決勝の帯は `7（9.2） 9（15.8） 0（21.7）` の3個で、
+      **中央の 9 が決勝の得点**（下半分の同じ位置に相手の 0 がある）。
+
+      準決勝の2つは連結線の両端、決勝の1つは連結線の交点（＝中点）に来るので、
+      **中点にいちばん近い1個を決勝ぶんとして外す。** 外した値は
+      `centerScore` で返し、呼ぶ側が決勝を組み立てるのに使う
+      （`readTwoColumnBracket` の `finalAt: "center"`）。
+    */
+    if (deepest && pool.length === 3) {
+      const k = pool.reduce((b, s, i) => (Math.abs(s.slot - mids[0]) < Math.abs(pool[b].slot - mids[0]) ? i : b), 0);
+      center = { ...pool[k], y: best.line.y };
+      pool.splice(k, 1);
+      // 決勝の日付・球場は**その行の中**にある（鹿児島は「県25日10：05」）
+      const here = labelsBetween(best.line.y - BAND, best.line.y + BAND);
+      center.date = pickNear(here.dates, center.slot)?.t ?? null;
+      center.venue = pickNear(here.venues, center.slot)?.t ?? null;
+    }
 
     /*
       ★**個数がちょうど2倍でなければ組まない。**
@@ -519,20 +700,29 @@ export function assembleSlotBracket(page, { roundLabels, venueSymbols, nameOrder
       選んだ帯の近くだけを見れば、継続試合で積み上がった日付も拾える
       （京都の1回戦は7/4→7/5→7/6→7/7と積まれていて、最新を採る）。
     */
+    /*
+      ★**探す下限は「前の回戦で使った帯」にする**（2026-08-15。鹿児島）。
+
+      「スコアの帯から1段ぶん下」を窓にすると、**日付がもっと下にある表**で
+      正しい帯が窓の外に出る（鹿児島の上半分は約2段ぶん下にあり、
+      2回戦の日付の帯が窓から 3ポイント外れていた）。
+      日付の帯は回戦の順に並ぶので、**前の回戦の帯より上**を見れば足りる。
+    */
     const gap = best.line.y - lastY;
-    const wide = labelsBetween(lastY - gap, best.line.y + gap * 0.3);
-    const byBand = new Map();
-    for (const d of wide.dates) {
-      const k = [...byBand.keys()].find((v) => Math.abs(v - d.y) <= BAND) ?? d.y;
-      if (!byBand.has(k)) byBand.set(k, []);
-      byBand.get(k).push(d);
-    }
-    const exact = [...byBand.entries()]
-      .filter(([, list]) => list.length === mids.length)
-      .sort((a, b) => Math.abs(a[0] - best.line.y) - Math.abs(b[0] - best.line.y))[0];
-    const dates = exact
-      ? wide.dates.filter((d) => Math.abs(d.y - exact[0]) <= Math.abs(gap) * 0.45)
-      : wide.dates;
+    /*
+      ★**球場の窓は狭めないこと。** 球場の記号は日付と同じ帯には無く、
+      前の回戦の帯より下にあることがある（広島の右半分の準決勝がそうで、
+      日付に合わせて窓を切ったら球場だけ落ちた）。**日付にだけ順番の条件を掛ける。**
+    */
+    const wide = labelsBetween(Math.min(prevDateY ?? Infinity, lastY - gap), best.line.y + gap * 0.3);
+    const picked = pickBand(
+      wide.dates.filter((d) => prevDateY === null || d.y > prevDateY),
+      mids.length,
+      prevDateY,
+      Math.abs(gap) * 0.45,
+    );
+    prevDateY = picked.y ?? prevDateY;
+    const dates = picked.dates;
     const venues = wide.venues;
     const next = [];
     for (let i = 0; i + 1 < nodes.length; i += 2) {
@@ -551,7 +741,8 @@ export function assembleSlotBracket(page, { roundLabels, venueSymbols, nameOrder
       // ★**親の位置は「読めた2つのスコアの中点」にする。** 予測だけで積むとずれが溜まる
       next.push({ x: mid, team: left.v > right.v ? L.team : R.team });
     }
-    lastY = best.line.y;
+    // ★まとめた行のうちいちばん上を基準にする（下だと残りが次の回戦の帯として読まれる）
+    lastY = merged.reduce((a, c) => Math.max(a, c.line.y), best.line.y);
     nodes = next;
   }
 
@@ -581,5 +772,5 @@ export function assembleSlotBracket(page, { roundLabels, venueSymbols, nameOrder
     if (g.date) byDate.set(g.date, (byDate.get(g.date) ?? 0) + 1);
     if (g.venue) byVenue.set(g.venue, (byVenue.get(g.venue) ?? 0) + 1);
   }
-  return { games, champion: nodes[0]?.team ?? null, teams: N, byDate, byVenue, combined };
+  return { games, champion: nodes[0]?.team ?? null, teams: N, byDate, byVenue, combined, centerScore: center };
 }

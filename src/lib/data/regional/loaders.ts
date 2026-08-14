@@ -16,4 +16,8 @@ export const REGIONAL_LOADERS: Record<string, () => Promise<RegionalDistrict>> =
   nara: () => import("./nara").then((m) => m.REGIONAL_NARA),
   ehime: () => import("./ehime").then((m) => m.REGIONAL_EHIME),
   niigata: () => import("./niigata").then((m) => m.REGIONAL_NIIGATA),
+  aichi: () => import("./aichi").then((m) => m.REGIONAL_AICHI),
+  kyoto: () => import("./kyoto").then((m) => m.REGIONAL_KYOTO),
+  hiroshima: () => import("./hiroshima").then((m) => m.REGIONAL_HIROSHIMA),
+  mie: () => import("./mie").then((m) => m.REGIONAL_MIE),
 };

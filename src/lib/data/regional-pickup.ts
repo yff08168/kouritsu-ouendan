@@ -113,6 +113,32 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       ]
     },
     {
+      "districtSlug": "hiroshima",
+      "district": "広島",
+      "sourceName": "広島県高等学校野球連盟",
+      "sourceUrl": "https://hiroshima.hhbf1950.or.jp/",
+      "date": "2026-07-28",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権広島大会",
+      "round": "決勝",
+      "teams": [
+        {
+          "display": "広島商",
+          "score": 3,
+          "won": false,
+          "name": "広島商業高校",
+          "slug": "hiroshimashogyo"
+        },
+        {
+          "display": "福山",
+          "score": 4,
+          "won": true,
+          "name": "福山高校",
+          "slug": "fukuyama"
+        }
+      ]
+    },
+    {
       "districtSlug": "saga",
       "district": "佐賀",
       "sourceName": "佐賀県高等学校野球連盟",
@@ -139,6 +165,58 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       ]
     },
     {
+      "districtSlug": "hiroshima",
+      "district": "広島",
+      "sourceName": "広島県高等学校野球連盟",
+      "sourceUrl": "https://hiroshima.hhbf1950.or.jp/",
+      "date": "2026-07-26",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権広島大会",
+      "round": "準決勝",
+      "teams": [
+        {
+          "display": "広島商",
+          "score": 9,
+          "won": true,
+          "name": "広島商業高校",
+          "slug": "hiroshimashogyo"
+        },
+        {
+          "display": "広陵",
+          "score": 4,
+          "won": false,
+          "name": "広陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "districtSlug": "hiroshima",
+      "district": "広島",
+      "sourceName": "広島県高等学校野球連盟",
+      "sourceUrl": "https://hiroshima.hhbf1950.or.jp/",
+      "date": "2026-07-26",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権広島大会",
+      "round": "準決勝",
+      "teams": [
+        {
+          "display": "福山",
+          "score": 4,
+          "won": true,
+          "name": "福山高校",
+          "slug": "fukuyama"
+        },
+        {
+          "display": "呉",
+          "score": 3,
+          "won": false,
+          "name": "呉高校",
+          "slug": "kure"
+        }
+      ]
+    },
+    {
       "districtSlug": "saga",
       "district": "佐賀",
       "sourceName": "佐賀県高等学校野球連盟",
@@ -161,6 +239,32 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": true,
           "name": "佐賀商業高校",
           "slug": "sagashogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "kyoto",
+      "district": "京都",
+      "sourceName": "京都府高等学校野球連盟",
+      "sourceUrl": "https://kyoto-hsbf.sakura.ne.jp/khsbf/",
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "準決勝",
+      "teams": [
+        {
+          "display": "鳥羽",
+          "score": 4,
+          "won": true,
+          "name": "鳥羽高校",
+          "slug": "kyoto-toba"
+        },
+        {
+          "display": "京都両洋",
+          "score": 1,
+          "won": false,
+          "name": "京都両洋",
+          "slug": null
         }
       ]
     },
@@ -239,6 +343,58 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": false,
           "name": "済美",
           "slug": null
+        }
+      ]
+    },
+    {
+      "districtSlug": "kyoto",
+      "district": "京都",
+      "sourceName": "京都府高等学校野球連盟",
+      "sourceUrl": "https://kyoto-hsbf.sakura.ne.jp/khsbf/",
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "準々決勝",
+      "teams": [
+        {
+          "display": "龍谷大平安",
+          "score": 7,
+          "won": false,
+          "name": "龍谷大平安",
+          "slug": null
+        },
+        {
+          "display": "鳥羽",
+          "score": 10,
+          "won": true,
+          "name": "鳥羽高校",
+          "slug": "kyoto-toba"
+        }
+      ]
+    },
+    {
+      "districtSlug": "hiroshima",
+      "district": "広島",
+      "sourceName": "広島県高等学校野球連盟",
+      "sourceUrl": "https://hiroshima.hhbf1950.or.jp/",
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権広島大会",
+      "round": "準々決勝",
+      "teams": [
+        {
+          "display": "呉港",
+          "score": 3,
+          "won": false,
+          "name": "呉港",
+          "slug": null
+        },
+        {
+          "display": "広島商",
+          "score": 5,
+          "won": true,
+          "name": "広島商業高校",
+          "slug": "hiroshimashogyo"
         }
       ]
     },
@@ -607,6 +763,136 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       ]
     },
     {
+      "districtSlug": "aichi",
+      "district": "愛知",
+      "sourceName": "CATVase.jp（愛知県ケーブルテレビ協議会）",
+      "sourceUrl": "https://catvase.jp/",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "4回戦",
+      "teams": [
+        {
+          "display": "碧南",
+          "score": 1,
+          "won": false,
+          "name": "碧南高校",
+          "slug": "hekinan"
+        },
+        {
+          "display": "名古屋南",
+          "score": 4,
+          "won": true,
+          "name": "名古屋南高校",
+          "slug": "nagoyaminami"
+        }
+      ]
+    },
+    {
+      "districtSlug": "aichi",
+      "district": "愛知",
+      "sourceName": "CATVase.jp（愛知県ケーブルテレビ協議会）",
+      "sourceUrl": "https://catvase.jp/",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "4回戦",
+      "teams": [
+        {
+          "display": "誉",
+          "score": 3,
+          "won": false,
+          "name": "誉",
+          "slug": null
+        },
+        {
+          "display": "千種",
+          "score": 4,
+          "won": true,
+          "name": "千種高校",
+          "slug": "chikusa"
+        }
+      ]
+    },
+    {
+      "districtSlug": "aichi",
+      "district": "愛知",
+      "sourceName": "CATVase.jp（愛知県ケーブルテレビ協議会）",
+      "sourceUrl": "https://catvase.jp/",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "4回戦",
+      "teams": [
+        {
+          "display": "渥美農業",
+          "score": 2,
+          "won": false,
+          "name": "渥美農業高校",
+          "slug": "atsuminogyo"
+        },
+        {
+          "display": "刈谷工科",
+          "score": 5,
+          "won": true,
+          "name": "刈谷工科高校",
+          "slug": "kariyakoka"
+        }
+      ]
+    },
+    {
+      "districtSlug": "aichi",
+      "district": "愛知",
+      "sourceName": "CATVase.jp（愛知県ケーブルテレビ協議会）",
+      "sourceUrl": "https://catvase.jp/",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "4回戦",
+      "teams": [
+        {
+          "display": "名古屋大谷",
+          "score": 1,
+          "won": false,
+          "name": "名古屋大谷",
+          "slug": null
+        },
+        {
+          "display": "西尾東",
+          "score": 2,
+          "won": true,
+          "name": "西尾東高校",
+          "slug": "nishiohigashi"
+        }
+      ]
+    },
+    {
+      "districtSlug": "kyoto",
+      "district": "京都",
+      "sourceName": "京都府高等学校野球連盟",
+      "sourceUrl": "https://kyoto-hsbf.sakura.ne.jp/khsbf/",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "4回戦",
+      "teams": [
+        {
+          "display": "城南菱創",
+          "score": 2,
+          "won": false,
+          "name": "城南菱創高校",
+          "slug": "jonanryoso"
+        },
+        {
+          "display": "鳥羽",
+          "score": 7,
+          "won": true,
+          "name": "鳥羽高校",
+          "slug": "kyoto-toba"
+        }
+      ]
+    },
+    {
       "districtSlug": "kanagawa",
       "district": "神奈川",
       "sourceName": "神奈川高校野球ステーション",
@@ -915,6 +1201,32 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": true,
           "name": "新潟工業高校",
           "slug": "niigatakogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "kyoto",
+      "district": "京都",
+      "sourceName": "京都府高等学校野球連盟",
+      "sourceUrl": "https://kyoto-hsbf.sakura.ne.jp/khsbf/",
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "京都精華",
+          "score": 1,
+          "won": false,
+          "name": "京都精華",
+          "slug": null
+        },
+        {
+          "display": "乙訓",
+          "score": 6,
+          "won": true,
+          "name": "乙訓高校",
+          "slug": "otokuni"
         }
       ]
     },

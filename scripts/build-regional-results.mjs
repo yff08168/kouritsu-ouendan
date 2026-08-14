@@ -49,6 +49,7 @@ import path from "node:path";
 import { createClient } from "@supabase/supabase-js";
 
 import { fetchPdfPages } from "./lib/pdf-text.mjs";
+import { assembleSlotBracket, orientPage, stripInningMarks } from "./lib/slot-bracket.mjs";
 import { fetchXlsxSheets } from "./lib/xlsx-rows.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
@@ -1816,6 +1817,771 @@ const niigata = {
 };
 
 /**
+ * CATVase.jp（`catvase.jp`）── **愛知。連盟でも個人サイトでもない3つ目の型。**
+ *
+ * 運営は**愛知県ケーブルテレビ協議会**（県内のケーブルテレビ局14社）。
+ * 選手権愛知大会の「応援Webサイト」で、テレビ放送と対になっている。
+ * **愛知県高野連の公式サイトではない**ので、
+ * ★**出典表示は「CATVase.jp（愛知県ケーブルテレビ協議会）」にすること。**
+ * 連盟の名前で出さない（神奈川・埼玉の個人サイトと同じ扱い）。
+ *
+ * **愛知県高野連の結果はトーナメント表のPDFしか無い**（READMEの「PDFの13県」）。
+ * 組み立ては3方式とも失敗しているので、愛知はこのサイトからでなければ出せない。
+ *
+ * **規約を確認した（2026-08-14）。** トップ・運営について・robots.txt を見て、
+ * **転載・複製・営利目的・自動取得のいずれも制限が無い。**
+ * 「営業を目的として…おやめください」とあるのは**応援メッセージの投稿**の
+ * 注意事項で、サイトの内容の利用についての記載ではない。
+ * robots.txt は `/wp/wp-admin/` を除いて全許可。
+ *
+ * ★**1回の実行でリクエストは1つだけ。** 全179試合が `/game/` の1枚に入っている。
+ * これまでで**いちばん出典に優しい形**（神奈川・埼玉は日別ページを数十枚取る）。
+ *
+ *   <div class="day_wrap">
+ *     <p class="game_day"><span>7</span>月<span>28</span>日 (火)</p>
+ *     <ul class="game_list">
+ *       <li><a href="https://catvase.jp/game-91279/">
+ *         <p class="time_pc">11:30</p>
+ *         <div class="school_wrap">
+ *           <p class="school school_a">愛工大名電</p>
+ *           <div class="point_wrap">
+ *             <p class="status">終了</p>
+ *             <div class="point_inner">
+ *               <p class="point point_a">1</p><p class="vs">-</p><p class="point point_b">4</p>
+ *
+ * ★**このサイトは夏（選手権）だけ。** 春季・秋季大会は扱っていないので
+ * `seasons` に summer しか置かない。愛知の春秋は当面出せない。
+ */
+const aichi = {
+  slug: "aichi",
+  district: "愛知",
+  // ★**連盟の名前で出さないこと**（このサイトは高野連の公式ではない）
+  name: "CATVase.jp（愛知県ケーブルテレビ協議会）",
+  siteUrl: "https://catvase.jp/",
+  politenessMs: 2000,
+  // **夏だけ。** このサイトは選手権愛知大会の応援サイトで、春秋の大会は扱っていない
+  seasons: { summer: "https://catvase.jp/game/" },
+  /*
+    ★**`year` を受け取らない。** 他の県は「その年のページ」を開きに行くが、
+    このサイトは**大会が変わるとページごと作り替わる**（URLは `/game/` のまま）。
+    年はページの大会名から出すので、外から渡された年は使わない。
+  */
+  async collect({ fetchHtml, season, url }) {
+    const html = await fetchHtml(url);
+    if (!html) return [];
+
+    /*
+      大会名は本文から拾う。**`<title>` を信用しない**という既知の落とし穴
+      （山梨・神奈川は前年のまま更新されていなかった）があるので、
+      ここでも「第N回…愛知大会」の形で本文ごと拾い、**回数から年を出す。**
+      選手権の回数は `年 - 1918`（`build-live-results.mjs` と同じ）。
+    */
+    const tournament = normalize(html).match(/第\d+回全国高等学校野球選手権愛知大会/)?.[0] ?? null;
+    const round108 = Number(tournament?.match(/第(\d+)回/)?.[1]);
+    if (!Number.isFinite(round108)) {
+      console.log("  ⚠️ 愛知: 大会名が読めない。出典の作りが変わった可能性がある");
+      return [];
+    }
+    const pageYear = round108 + 1918;
+
+    /*
+      ★**ページに西暦が書かれていない。** 日付は「7月28日 (火)」で年が無く、
+      年は大会の回数から出すしかない。**回数が前年のまま更新されていない
+      サイトがある**（山梨・神奈川で実際にあった）ので、**そのまま信じない。**
+
+      幸いこのサイトは**曜日を併記している。** 「7月28日(火)」が成り立つ年は
+      6〜7年に1度しか来ないので、**曜日で年の検算ができる。**
+      合わなければ**1試合も出さない**（画面に嘘の日付を出すよりよい）。
+    */
+    const WEEKDAY = ["日", "月", "火", "水", "木", "金", "土"];
+
+    const games = [];
+    /** 直前に出てきた日付の見出し。試合はその日のものとして読む */
+    let date = null;
+    /*
+      日付の見出しと試合を**出てきた順に**見る（山梨・熊本と同じやり方）。
+      `day_wrap` の入れ子を数えずに済むので、レイアウトの変更に強い。
+    */
+    const token =
+      /<p class="game_day">([\s\S]*?)<\/p>|<a href="https:\/\/catvase\.jp\/game-\d+\/">([\s\S]*?)<\/a>/gi;
+    for (const m of html.matchAll(token)) {
+      if (m[1] !== undefined) {
+        const d = normalize(plain(m[1])).match(/(\d{1,2})\s*月\s*(\d{1,2})\s*日\s*[(（]([日月火水木金土])/);
+        date = null;
+        if (!d) continue;
+        const iso = `${pageYear}-${d[1].padStart(2, "0")}-${d[2].padStart(2, "0")}`;
+        // ★ 曜日で年を検算する。合わなければその日は**まるごと捨てる**
+        if (WEEKDAY[new Date(`${iso}T00:00:00Z`).getUTCDay()] !== d[3]) {
+          console.log(
+            `  ⚠️ 愛知: ${iso} の曜日が出典（${d[3]}）と合わない。` +
+              `大会名「${tournament}」から出した年が違う可能性がある`,
+          );
+          continue;
+        }
+        date = iso;
+        continue;
+      }
+
+      if (!date) continue;
+      const block = m[2];
+      const pick = (re) => normalize(plain(re.exec(block)?.[1] ?? ""));
+      const home = pick(/<p class="school school_a">([\s\S]*?)<\/p>/);
+      const away = pick(/<p class="school school_b">([\s\S]*?)<\/p>/);
+      const sa = pick(/<p class="point point_a">([\s\S]*?)<\/p>/);
+      const sb = pick(/<p class="point point_b">([\s\S]*?)<\/p>/);
+      /*
+        ★**まだ行われていない試合と順延の試合は点が空。**
+        `Number("")` は **0** なので `Number.isFinite` では弾けない
+        （両校0点の引き分けとして入ってしまう）。**数字かどうかで見る。**
+      */
+      if (!home || !away || !/^\d+$/.test(sa) || !/^\d+$/.test(sb)) continue;
+
+      /*
+        回戦は「A 1回戦」「B 3回戦」のようにブロック記号が前に付く。
+        ★**ブロックを大会名に足さないこと。** 徳島の新人ブロック大会は
+        ブロックごとに別の大会（決勝がブロックの数だけある）だが、
+        愛知のA〜Hは**1つの大会の中の山**で、準々決勝で合流する。
+        分けると準々決勝以降が宙に浮き、検算も通らなくなる。
+      */
+      const label = pick(/<p class="block">([\s\S]*?)<\/p>/);
+      const a = Number(sa);
+      const b = Number(sb);
+      games.push({
+        date,
+        season,
+        tournament,
+        round: pickRound(label),
+        // 球場は `display_pc` のほう（`display_sp` は「ドーム」のような略記）
+        venue: pick(/<span class="display_pc">([\s\S]*?)<\/span>/) || null,
+        // 勝者の印が無いので点数から決める（神奈川・埼玉と同じ）
+        teams: [
+          { display: home, score: a, won: a > b },
+          { display: away, score: b, won: b > a },
+        ],
+      });
+    }
+
+    /*
+      ★**中断した試合は2回載る。**
+
+      雷雨などで途中打ち切りになった試合は、その日のぶんが `試合打ち切り`
+      （中断時の点数）として残ったまま、後日ぶんが `A 1回戦（継続試合）`
+      として別の日に載る。**日付が違うので、呼び出し側の重複除去では落ちない。**
+
+        7月11日  刈谷工科  9 - 0  小坂井   A 1回戦（試合打ち切り）
+        7月14日  刈谷工科 10 - 0  小坂井   A 1回戦（継続試合）   ← こちらが最終結果
+
+      そのままだと**1回戦が1試合多くなり、刈谷工科が2勝・小坂井が2敗**になる。
+      勝ち抜き戦なので**同じ2校が同じ大会で2度当たることはない**から、
+      **同じ組み合わせは新しい日付のほうだけ残す。**
+    */
+    const byPair = new Map();
+    for (const g of games) {
+      const key = g.teams
+        .map((t) => normalizeSchoolName(t.display))
+        .sort()
+        .join("\t");
+      const kept = byPair.get(key);
+      if (!kept || g.date > kept.date) byPair.set(key, g);
+    }
+    if (byPair.size !== games.length) {
+      console.log(`  （中断・再開で二重に載っている ${games.length - byPair.size} 試合をまとめた）`);
+    }
+    return [...byPair.values()];
+  },
+};
+
+/**
+ * 京都府高等学校野球連盟（`kyoto-hsbf.sakura.ne.jp`）。
+ * ★**このリポジトリで唯一、トーナメント表（組合せ表）を出典にしている県。**
+ *
+ * **規約に転載の制限は無い**（2026-08-14 にトップ・大会ページを確認）。
+ * 「営利目的とする撮影は禁止」とあるのは**球場内での撮影**の話で、
+ * サイトの内容の利用についての記載ではない。
+ *
+ * ★**PDFは Google Drive に置かれている。**（大会ページに preview で埋め込み）
+ * **IDを直書きしないこと。** 大会が変わればIDも変わる。
+ * 大会ページのHTMLから `drive.google.com/file/d/<ID>/` を拾って辿る。
+ * 出典はあくまで京都府高野連で、Drive は置き場所にすぎない。
+ *
+ * ------------------------------------------------------------------
+ * ★ トーナメント表を出典にしないという決定を、なぜここだけ覆したか
+ *
+ *   富山・石川では3方式とも誤った対戦を作った（石川は検算を通ってなお
+ *   決勝の相手が違った）。**京都の表は石川に無かった手掛かりを2つ持つ。**
+ *
+ *   1. **1回戦のスコアがスロットの中心に置かれる。** 71校中どの14校が
+ *      1回戦を戦うかが推測なしで決まる。**石川で解けなかったのは
+ *      「シード（不戦）と対戦の区別」**で、まさにここ
+ *   2. **各回戦の数字の個数が試合数のちょうど2倍。** 左から順に対応させられ、
+ *      「どのスコアがどの枝か」を座標から推測せずに済む
+ *
+ *   組み立ての中身は `scripts/lib/slot-bracket.mjs`。**扱える表の条件も
+ *   そこに書いてある。富山・石川はいまも条件を満たさない。**
+ *
+ * ------------------------------------------------------------------
+ * ★ 検算（合わなければ**1試合も出さない**）
+ *
+ *   石川の教訓は「**検算を通ってもなお間違える**」だった。そこで、
+ *   **表の別の場所に書いてある事実**と突き合わせる検査を4つ置いている。
+ *
+ *   | 検査 | 出所 |
+ *   |---|---|
+ *   | 合計試合数 | 表の日程欄の「合計」 |
+ *   | 優勝校 | 表に印字された「優勝 ○○高等学校」 |
+ *   | 日ごとの試合数 | 表の左上の日程欄（枝とは別に作られている） |
+ *   | 球場ごとの試合数 | 同上 |
+ *
+ *   2026年（第108回）で4つとも一致し、さらに**全70試合を外部の情報源と
+ *   突き合わせて70/70で一致**した。★**来年レイアウトが変わればこの検査で
+ *   落ちて0件になる。** 誤った試合が画面に出るより、出ないほうがよい。
+ *
+ * ★**夏（選手権）だけ。** 春季のPDFは「2次戦16校＋1次戦58校をA〜Lの
+ * ブロックに分けた2ページ構成」で、スロット格子ではないので組めない。
+ */
+const kyoto = {
+  slug: "kyoto",
+  district: "京都",
+  name: "京都府高等学校野球連盟",
+  siteUrl: "https://kyoto-hsbf.sakura.ne.jp/khsbf/",
+  politenessMs: 2000,
+  // **夏だけ。** 春季は表の形が違い、秋季はまだ出ていない
+  seasons: { summer: "https://kyoto-hsbf.sakura.ne.jp/khsbf/tournament/" },
+  /** 表の凡例「わ・・わかさスタジアム京都」。1文字の記号 → 球場名 */
+  venueLegend(page) {
+    const map = new Map();
+    for (const l of page.lines) {
+      for (const m of l.text.matchAll(/([^\t\s])\s*[・･]{2}\s*([^\t]+?)(?=\t|$)/g)) {
+        const name = m[2].trim();
+        if (/球場|スタジアム|ドーム/.test(name)) map.set(m[1], name);
+      }
+    }
+    return map;
+  },
+  async collect({ fetchHtml, season, url }) {
+    const index = await fetchHtml(url);
+    if (!index) return [];
+
+    /*
+      ★**IDを直書きせず、大会ページから拾う。** 同じページに春季・近畿大会の
+      PDFも並んでいるので、**開いてみて「選手権京都大会」の表だったものだけ使う。**
+    */
+    const ids = [...new Set([...index.matchAll(/drive\.google\.com\/file\/d\/([\w-]{20,})/g)].map((m) => m[1]))];
+    if (!ids.length) {
+      console.log("  ⚠️ 京都: 大会ページにPDFのリンクが無い。出典の作りが変わった可能性がある");
+      return [];
+    }
+
+    for (const id of ids.slice(0, 6)) {
+      const parsed = await fetchPdfPages(`https://drive.google.com/uc?export=download&id=${id}`, {
+        headers: UA,
+      });
+      await sleep(this.politenessMs);
+      if (!parsed?.length) continue;
+
+      for (const page of parsed) {
+        const flat = page.lines.map((l) => normalize(l.text.replace(/\t/g, "")));
+        const tournament = flat
+          .map((t) => t.match(/第\d+回全国高等学校野球選手権京都大会/)?.[0])
+          .find(Boolean);
+        if (!tournament) continue;
+
+        const round = Number(tournament.match(/第(\d+)回/)?.[1]);
+        // 選手権の回数は 年 - 1918（`build-live-results.mjs` と同じ）
+        const year = round + 1918;
+
+        const venues = this.venueLegend(page);
+        const built = assembleSlotBracket(page, {
+          roundLabels: ["決勝", "準決勝", "準々決勝"],
+          venueSymbols: new Set(venues.keys()),
+        });
+        if (!built) {
+          console.log(`  ⚠️ 京都: ${tournament} の組合せ表を組み立てられなかった。1試合も出さない`);
+          return [];
+        }
+
+        // ---- 検算1: 表の日程欄の「合計」 ----
+        const totalRow = flat.find((t) => /^合計/.test(t.replace(/\s/g, "")));
+        const printedTotal = Number(
+          page.lines.find((l) => /合\t計/.test(l.text))?.text.match(/(\d+)\s*$/)?.[1] ?? NaN,
+        );
+        if (Number.isFinite(printedTotal) && built.games.length !== printedTotal) {
+          console.log(
+            `  ⚠️ 京都: 組み立て ${built.games.length} 試合 / 表の合計 ${printedTotal}。合わないので1試合も出さない`,
+          );
+          return [];
+        }
+
+        // ---- 検算2: 表に印字された優勝校 ----
+        const printedChampion = flat.find((t) => /^優勝/.test(t))?.replace(/^優勝\s*/, "");
+        if (printedChampion) {
+          const bare = normalizeSchoolName(printedChampion.replace(/[（(].*$/, "").replace(/高等学校$/, ""));
+          if (!bare.startsWith(normalizeSchoolName(built.champion ?? "")) && built.champion) {
+            console.log(
+              `  ⚠️ 京都: 組み立てた優勝校が表と合わない（表「${printedChampion}」/ 組み立て「${built.champion}」）。1試合も出さない`,
+            );
+            return [];
+          }
+        }
+
+        /*
+          ---- 検算3・4: 表の左上の日程欄 ----
+
+          ★**これがいちばん強い検査。** 日程欄は枝とは別に作られた表で、
+          「その日に、どの球場で何試合あるか」が書いてある。組み立てた試合を
+          日ごと・球場ごとに数えて、ここと1つ残らず一致するかを見る。
+
+            日 曜 回戦  わ 太 あ 計
+             8 水  ②    2  2  2  6
+            合計          35 18 17 70
+
+          京都の第108回では**15日ぶんすべてと、球場3つすべて**が一致した。
+        */
+        const schedule = new Map();
+        const venueTotals = new Map([...venues.keys()].map((k) => [k, 0]));
+        const order = [...venues.keys()];
+        for (const l of page.lines) {
+          /*
+            日程欄は**左右2つの組**が並んでいる（4〜17日と18〜27日）。
+            1行から両方を拾う。数字だけの並びの先頭が日、続きが球場ごとの試合数。
+          */
+          for (const m of l.text.matchAll(/(?:^|\t)(\d{1,2})\t[土日月火水木金祝]+\t([^\t]*)\t([\d\t予]*?)(?=\t\d{1,2}\t[土日月火水木金祝]|$)/g)) {
+            const day = Number(m[1]);
+            const nums = m[3].split("\t").filter((t) => /^\d+$/.test(t)).map(Number);
+            // 「わ 太 あ 計」。予備日・休養日は数字が無いか 0
+            if (nums.length >= 2) schedule.set(`7/${day}`, nums);
+          }
+        }
+        for (const g of built.games) if (g.venue) venueTotals.set(g.venue, (venueTotals.get(g.venue) ?? 0) + 1);
+
+        let mismatch = null;
+        for (const [d, n] of built.byDate) {
+          const nums = schedule.get(d);
+          if (!nums) continue; // 日程欄から読めなかった日は飛ばす（検査を厳しくしすぎない）
+          const printed = nums.at(-1);
+          if (printed !== n) mismatch ??= `${d} が ${n} 試合（日程欄は ${printed}）`;
+        }
+        const totalsRow = page.lines.find((l) => /合\t計/.test(l.text));
+        if (totalsRow) {
+          const nums = totalsRow.text.split("\t").filter((t) => /^\d+$/.test(t)).map(Number);
+          // 末尾が「わ 太 あ 計」。並びは凡例の順
+          const tail = nums.slice(-(order.length + 1), -1);
+          if (tail.length === order.length) {
+            order.forEach((sym, i) => {
+              if (venueTotals.get(sym) !== tail[i]) {
+                mismatch ??= `球場「${venues.get(sym)}」が ${venueTotals.get(sym)} 試合（日程欄は ${tail[i]}）`;
+              }
+            });
+          }
+        }
+        if (mismatch) {
+          console.log(`  ⚠️ 京都: 日程欄と合わない（${mismatch}）。1試合も出さない`);
+          return [];
+        }
+
+        const games = built.games
+          .filter((g) => g.date)
+          .map((g) => {
+            const [mm, dd] = g.date.split("/");
+            const a = g.sa;
+            const b = g.sb;
+            return {
+              date: `${year}-${mm.padStart(2, "0")}-${dd.padStart(2, "0")}`,
+              season,
+              tournament,
+              round: g.round,
+              venue: venues.get(g.venue) ?? null,
+              teams: [
+                { display: g.a, score: a, won: a > b },
+                { display: g.b, score: b, won: b > a },
+              ],
+            };
+          });
+        if (games.length !== built.games.length) {
+          console.log(
+            `  ⚠️ 京都: 日付の読めない試合が ${built.games.length - games.length} 件。1試合も出さない`,
+          );
+          return [];
+        }
+        console.log(
+          `  （${tournament}: ${games.length} 試合 / 優勝 ${built.champion} / ${built.teams} チーム）` +
+            (totalRow ? "" : ""),
+        );
+        return games;
+      }
+    }
+    return [];
+  },
+};
+
+/**
+ * 広島県高等学校野球連盟。★**2つ目のトーナメント表の出典**（京都に続く）。
+ *
+ * PDFは Google Drive に置かれている（京都と同じ）。**IDを直書きしない。**
+ *
+ * ------------------------------------------------------------------
+ * ★ 京都と同じ「スロット格子型」だが、**向きと段組が違う**
+ *
+ *   京都 … スロットが横一列、回戦は上へ
+ *   広島 … ★**出場校が縦に並び、左右2段組で中央へ向かって合流する**
+ *          左（スロット1〜42、回戦は右へ）／右（43〜85、回戦は**左へ**）
+ *
+ *   中身の規則は同じなので、`orientPage()` で座標を入れ替えて
+ *   **半分ずつ**組み立て、最後に中央の決勝でつなぐ。
+ *
+ * ------------------------------------------------------------------
+ * ★ ここで踏んだ落とし穴（他の縦向きの表でも起きる）
+ *
+ *   - **スロット番号が2行に割れる**（桁数で位置が変わり「1〜9」と「10〜42」）
+ *   - ★**コールドの回数がスコアと同じ列に来る。**
+ *     `7/10(金) │ "12 8" │ 回` の 8 は**8回コールド**で、スコアは12。
+ *     `stripInningMarks()` で落とさないと2回戦が32のところ38になる
+ *   - ★**左右で数字の揃え方が逆。** 右半分は右揃えなので、
+ *     **2桁のスコアだけ別の帯に落ちる**（1回戦が19個＝奇数になった）。
+ *     `rowTolerance` を広げて吸収する
+ *   - ★**帯をまとめる幅はスロット間隔ではなく回戦の間隔で決める。**
+ *     左半分の決勝に**大会全体の決勝**が巻き込まれた
+ *   - **日付の断片に括弧が付く**（`7/11(`）
+ *
+ * ------------------------------------------------------------------
+ * ★ 検算（合わなければ**1試合も出さない**）
+ *
+ *   広島の表には**優勝校も合計試合数も日程欄も書かれていない**ので、
+ *   京都のような「表の別の場所と突き合わせる」検算ができない。
+ *   代わりに**構造の検算**を置く。どれも表の別々の場所から来る数字。
+ *
+ *     - スロット番号が 1〜N で**欠けなく**揃うか
+ *     - **N チーム − 組み立てた試合数 = 1**（勝ち抜き戦の算数）
+ *     - 表に書かれた**日付の個数**と組み立てた試合数が一致するか
+ *
+ *   ★**京都より検知力は落ちる**（優勝校で止められない）。
+ *   2026年の第108回は**全84試合を外部の情報源と突き合わせて一致**を確認した。
+ */
+/**
+ * ★**左右2段組のトーナメント表を1枚読む**（広島・三重で共通）。
+ *
+ * 出場校が縦に並び、左半分（回戦は右へ）と右半分（回戦は左へ）が
+ * 中央で合流する形。**半分ずつ組み立てて、中央の決勝でつなぐ。**
+ *
+ * @returns 試合の配列 / `[]`（検算に落ちた。**その大会は1試合も出さない**）/
+ *          null（この紙は目当ての大会ではない。呼ぶ側は次のPDFへ）
+ */
+function readTwoColumnBracket(raw, opts) {
+  const { district, titlePattern, half, rowTolerance, nameOrder, season, hasDates, venueLegend } = opts;
+  const flat = raw.lines.map((l) => normalize(l.text.replace(/\t/g, "")));
+  const tournament = flat.map((t) => t.match(titlePattern)?.[0]).find(Boolean);
+  if (!tournament) return null;
+  // 選手権の回数は 年 - 1918（`build-live-results.mjs` と同じ）
+  const year = Number(tournament.match(/第(\d+)回/)[1]) + 1918;
+
+  const page = stripInningMarks(raw);
+  const venues = venueLegend ? venueLegend(raw) : new Map();
+  const symbols = new Set(venues.keys());
+  /*
+    ★**深いほうから固定で名前が付くぶんだけ渡す。**
+    半分ずつ組むので、各半分のいちばん深い試合は**大会全体の準決勝**。
+    それより浅い回戦は `slot-bracket.mjs` が「1回戦」「2回戦」…と付ける
+    （大会の段数が県で違うので、一覧を決め打ちにすると回戦名がずれる）。
+  */
+  const LABELS = ["準決勝", "準々決勝"];
+  const halves = [0, 1].map((i) =>
+    assembleSlotBracket(
+      orientPage(page, {
+        slotAxis: "y",
+        flip: i === 1,
+        range: i === 0 ? [0, half] : [half, 1e6],
+        rowTolerance,
+      }),
+      { roundLabels: LABELS, venueSymbols: symbols, nameOrder: nameOrder[i] },
+    ),
+  );
+  if (halves.some((h) => !h)) {
+    console.log(`  ⚠️ ${district}: ${tournament} の組合せ表を組み立てられなかった。1試合も出さない`);
+    return [];
+  }
+
+  /*
+    ---- 決勝 ----
+    左右の勝者の対戦。**中央（左右の境目）にだけ置かれている**ので、
+    半分ずつの組み立てには入ってこない。
+  */
+  const items = page.lines.flatMap((l) => l.items.map((i) => ({ x: i.x, y: l.y, t: i.text.trim() })));
+  const mid = items.filter((i) => Math.abs(i.x - half) < half * 0.2);
+  const nums = mid.filter((i) => /^\d{1,2}$/.test(i.t) || /^\d{1,2}\s+\d{1,2}$/.test(i.t));
+  // 「3 4」のように2つが1断片に潰れていることがある（広島が実際そうだった）
+  const glued = nums.find((i) => /^\d{1,2}\s+\d{1,2}$/.test(i.t));
+  const anchor = glued ?? nums.filter((i) => /^\d{1,2}$/.test(i.t)).sort((a, b) => b.y - a.y)[0];
+  if (!anchor) {
+    console.log(`  ⚠️ ${district}: ${tournament} の決勝が読めなかった。1試合も出さない`);
+    return [];
+  }
+  /*
+    ★**日付と球場は「決勝のスコアにいちばん近いもの」を取る。**
+    中央の帯には**準決勝2試合の日付・球場も入っている**ので、
+    最初に見つかったものを使うと**準決勝の日付が決勝に付く**（実際に付いた）。
+  */
+  const nearest = (list) =>
+    list.length ? list.reduce((p, c) => (Math.abs(c.x - anchor.x) < Math.abs(p.x - anchor.x) ? c : p)) : null;
+  const finalDate = nearest(mid.filter((i) => /^\d{1,2}\/\d{1,2}[(（]?$/.test(i.t)))?.t.replace(/[(（]$/, "");
+  const finalVenue = nearest(mid.filter((i) => symbols.has(i.t)))?.t ?? null;
+  const pair = glued
+    ? glued.t.split(/\s+/).map(Number)
+    : nums.filter((i) => /^\d{1,2}$/.test(i.t)).sort((a, b) => b.y - a.y).slice(0, 2).map((i) => Number(i.t));
+  if (pair.length !== 2) {
+    console.log(`  ⚠️ ${district}: ${tournament} の決勝のスコアが2つ読めなかった。1試合も出さない`);
+    return [];
+  }
+
+  const [A, B] = halves.map((h) => h.champion);
+  const built = [
+    ...halves.flatMap((h) => h.games),
+    { round: "決勝", a: A, b: B, sa: pair[0], sb: pair[1], date: finalDate, venue: finalVenue },
+  ];
+
+  /*
+    ---- 検算 ----
+    ★**表に優勝校も合計試合数も日程欄も無い県がある**（広島・三重とも無い）。
+    京都のような「表の別の場所と突き合わせる」検算ができないので、
+    **構造の検算**で代える。どれも表の別々の場所から来る数字。
+  */
+  const teams = halves.reduce((s, h) => s + h.teams, 0);
+  if (teams - built.length !== 1) {
+    console.log(`  ⚠️ ${district}: ${teams} チームに対し ${built.length} 試合（${teams - 1} のはず）。1試合も出さない`);
+    return [];
+  }
+  if (hasDates) {
+    const printed = raw.lines
+      .flatMap((l) => l.items)
+      .filter((i) => /^\d{1,2}\/\d{1,2}[(（]?$/.test(i.text.trim())).length;
+    if (printed !== built.length) {
+      console.log(`  ⚠️ ${district}: 表の日付が ${printed} 件、組み立てた試合が ${built.length} 件。1試合も出さない`);
+      return [];
+    }
+    if (built.some((g) => !g.date)) {
+      console.log(`  ⚠️ ${district}: 日付の読めない試合がある。1試合も出さない`);
+      return [];
+    }
+  }
+  console.log(
+    `  （${tournament}: ${built.length} 試合 / 優勝 ${pair[0] > pair[1] ? A : B} / ${teams} チーム` +
+      (hasDates ? "" : "・**日付なし**") + "）",
+  );
+
+  return built.map((g) => {
+    /*
+      ★**日付が無ければ null のまま。推測で埋めない。**
+      画面は回戦ごとに並べる（`groupGamesForDistrict`）。
+    */
+    let date = null;
+    if (g.date) {
+      const [mm, dd] = g.date.split("/");
+      date = `${year}-${mm.padStart(2, "0")}-${dd.padStart(2, "0")}`;
+    }
+    return {
+      date,
+      season,
+      tournament,
+      round: g.round,
+      venue: venues.get(g.venue) ?? null,
+      teams: [
+        { display: g.a, score: g.sa, won: g.sa > g.sb },
+        { display: g.b, score: g.sb, won: g.sb > g.sa },
+      ],
+    };
+  });
+}
+
+const hiroshima = {
+  slug: "hiroshima",
+  district: "広島",
+  name: "広島県高等学校野球連盟",
+  siteUrl: "https://hiroshima.hhbf1950.or.jp/",
+  politenessMs: 2000,
+  // **夏だけ。** 春季・秋季の表は形が違う可能性があるので確かめてから足すこと
+  seasons: {
+    summer:
+      "https://hiroshima.hhbf1950.or.jp/%E5%A4%A7%E4%BC%9A%E9%96%A2%E9%80%A3/%E7%A1%AC%E5%BC%8F%E9%83%A8%E5%90%84%E7%A8%AE%E5%A4%A7%E4%BC%9A",
+  },
+  /** 凡例「呉 ： 鶴岡一人記念球場」。1文字の記号 → 球場名 */
+  venueLegend(page) {
+    const map = new Map();
+    for (const l of page.lines) {
+      for (const m of l.text.matchAll(/(?:^|\t)([^\t\s])\s*[：:]\s*([^\t]+?)(?=\t|$)/g)) {
+        const name = m[2].trim();
+        if (/球場|スタジアム|ドーム|パーク|Stadium/i.test(name)) map.set(m[1], name);
+      }
+    }
+    return map;
+  },
+  async collect({ fetchHtml, season, url }) {
+    const index = await fetchHtml(url);
+    if (!index) return [];
+    /*
+      ★**このページにはPDFが22件ある**（地区予選の出場校一覧・パンフレットの案内・
+      始球式の募集など）。全部開くと1回の実行で20回以上ダウンロードすることになる。
+      **リンクの近くの文字が「組み合わせ表」のものだけに絞る。**
+      「組み合わせ表（ベスト16）」は途中経過なので外す。
+    */
+    /*
+      ★**リンクの名前は `aria-label` に入っている**（Google Sites）。
+      前後の文字を窓で拾うと、**すぐ上にある「組み合わせ表（ベスト16）」を
+      巻き込んで目当ての表が落ちる**（実際に落ちて0件になった）。
+    */
+    const ids = [];
+    for (const m of index.matchAll(
+      /drive\.google\.com\/file\/d\/([\w-]{20,})\/view[^"]*"[^>]*aria-label="([^"]*)"/g,
+    )) {
+      if (!/組\s*み?\s*合\s*わ?\s*せ\s*表/.test(m[2]) || /ベスト/.test(m[2])) continue;
+      if (!ids.includes(m[1])) ids.push(m[1]);
+    }
+    if (!ids.length) {
+      console.log("  ⚠️ 広島: 大会ページに組み合わせ表のPDFが見つからない。出典の作りが変わった可能性がある");
+      return [];
+    }
+    for (const id of ids.slice(0, 6)) {
+      const parsed = await fetchPdfPages(`https://drive.google.com/uc?export=download&id=${id}`, { headers: UA });
+      await sleep(this.politenessMs);
+      if (!parsed?.length) continue;
+      for (const raw of parsed) {
+        const games = this.readSheet(raw, season);
+        if (games) return games;
+      }
+    }
+    return [];
+  },
+  /** 1枚の組合せ表を読む。**組めなければ null**（呼び出し側は次のPDFへ） */
+  readSheet(raw, season) {
+    return readTwoColumnBracket(raw, {
+      district: "広島",
+      titlePattern: /第\d+回全国高等学校野球選手権広島大会/,
+      /*
+        左右で分ける境目。**中央の決勝はどちらにも入れない。**
+        スロット列の x（左408／右2449）のちょうど中間あたりで切る。
+      */
+      half: 1400,
+      /*
+        ★**入れ替えたあとは行の許容幅を広げる。** 右半分は数字が右揃えで、
+        2桁のスコアだけ約29ポイント別の帯に落ちる。回戦の間隔（約141）より十分小さく。
+      */
+      rowTolerance: 40,
+      // ★広島の校名は横書きで折り返すので、京都（縦書き）と読む順が逆
+      nameOrder: ["asc", "asc"],
+      season,
+      hasDates: true,
+      venueLegend: (page) => this.venueLegend(page),
+    });
+  },
+};
+
+/**
+ * 三重県高等学校野球連盟（`mie-kouyaren.com`）。
+ * ★**日付を持たない出典**（このリポジトリで最初）。
+ *
+ * **規約に転載の制限は無い**（2026-08-14 に確認）。
+ *
+ * ------------------------------------------------------------------
+ * ★ 日付が1つも書かれていない
+ *
+ *   組合せ表に**日付・開始時刻・球場が一切無い**。優勝校も合計試合数も無い。
+ *   ★**以前はこれを理由に見送っていたが、「回戦が分かれば載せる」方針に変えた**
+ *   （2026-08-14）。日付は **null のまま持ち、推測で埋めない。**
+ *   画面は回戦ごとに並べる（`groupGamesForDistrict`）。
+ *
+ *   ★**日付の無い試合はトップの抜粋と勝ち上がりに出さない。**
+ *   どちらも「新しい順」で選ぶので、順番を決められない試合を混ぜられない。
+ *   県のページ（`/prefectures/mie`）にだけ出る。
+ *
+ * ------------------------------------------------------------------
+ * ★ 検算が2つしかない（このリポジトリでいちばん弱い）
+ *
+ *   表に優勝校も合計も日程欄も無いので、**構造の検算だけ**になる。
+ *
+ *     - スロット番号が 1〜N で欠けなく揃うか
+ *     - **N チーム − 試合数 = 1**（勝ち抜き戦の算数）
+ *
+ *   2026年（第108回）は**全56試合を外部の情報源と突き合わせて確認**した
+ *   （57チーム・優勝 三重・準優勝 近大工業高専・回戦の内訳も一致）。
+ *
+ * ★**スロットの間隔が均等でない**（左は15→16、右は43→44だけ広い）。
+ * `slot-bracket.mjs` は実測位置の区分線形で読むので扱えるが、
+ * **等間隔を前提にした処理を足さないこと。**
+ */
+const mie = {
+  slug: "mie",
+  district: "三重",
+  name: "三重県高等学校野球連盟",
+  siteUrl: "https://mie-kouyaren.com/",
+  politenessMs: 2000,
+  /*
+    ★**組合せ表は「組み合わせ」の一覧ではなく、ニュース記事に載っている。**
+    `/pairing_category/latest/` には春季のPDFしか無く、選手権の表は
+    `/2026/07/27/（最終結果）…トーナメント表` という記事にある。
+    **記事はWordPressの検索APIで辿れる**ので、URLを直書きせずに済む。
+
+    ★**「最終結果」だけを狙わないこと。** 大会中は
+    「（7/21更新）」「（7/23更新）」…と同じ題で何度も上がる。
+    **新しい記事から順に見て、最初に組み立てられたものを使う。**
+  */
+  // **夏だけ。** 春季・秋季の表は形を確かめてから足すこと
+  seasons: { summer: "選手権三重大会トーナメント表" },
+  async collect({ fetchHtml, season, url }) {
+    const found = await fetchHtml(
+      `https://mie-kouyaren.com/wp-json/wp/v2/search?search=${encodeURIComponent(url)}&per_page=10`,
+    );
+    if (!found) return [];
+    let hits;
+    try {
+      hits = JSON.parse(found);
+    } catch {
+      console.log("  ⚠️ 三重: 記事の検索APIが読めない。出典の作りが変わった可能性がある");
+      return [];
+    }
+    const articles = (Array.isArray(hits) ? hits : [])
+      .filter((h) => /トーナメント表/.test(h.title ?? "") && /選手権/.test(h.title ?? ""))
+      .map((h) => h.url)
+      .filter(Boolean);
+    if (!articles.length) {
+      console.log("  ⚠️ 三重: 組合せ表の記事が見つからない");
+      return [];
+    }
+
+    const pdfs = [];
+    for (const article of articles.slice(0, 4)) {
+      const html = await fetchHtml(article);
+      await sleep(this.politenessMs);
+      if (!html) continue;
+      for (const m of html.matchAll(/https?:\/\/[^"']*?\.pdf/g)) {
+        if (!pdfs.includes(m[0])) pdfs.push(m[0]);
+      }
+      if (pdfs.length) break;
+    }
+    if (!pdfs.length) {
+      console.log("  ⚠️ 三重: 記事にPDFが無い");
+      return [];
+    }
+    for (const pdf of pdfs.slice(0, 6)) {
+      const parsed = await fetchPdfPages(pdf, { headers: UA });
+      await sleep(this.politenessMs);
+      if (!parsed?.length) continue;
+      for (const raw of parsed) {
+        const games = readTwoColumnBracket(raw, {
+          district: "三重",
+          titlePattern: /第\d+回全国高等学校野球選手権三重大会/,
+          half: 300,
+          rowTolerance: 6,
+          nameOrder: ["asc", "desc"],
+          season,
+          // ★**日付を持たない**ので、日付での検算はできない
+          hasDates: false,
+        });
+        if (games) return games;
+      }
+    }
+    return [];
+  },
+};
+
+/**
  * ここに県を足していく。
  *
  * ★**規約で制限のある連盟のサイトは足さないこと。**
@@ -1841,6 +2607,10 @@ const ADAPTERS = [
   nara,
   ehime,
   niigata,
+  aichi,
+  kyoto,
+  hiroshima,
+  mie,
 ];
 
 // ------------------------------------------------------------------
@@ -1969,6 +2739,51 @@ const DISTRICT_ALIASES = {
   "愛媛\t愛大附": "ehimedaigakufuzoku",
   "愛媛\t（新）小松": "komatsushin",
   "愛媛\t（新）八幡浜": "yawatahamashin",
+  /*
+    愛知。**「名市」は名古屋市立の略。** この出典は市立校を「名市工業」
+    「名市工芸」と書く（他の市立校は「菊里」「向陽」のように設置区分を
+    付けないので、規則では拾えない2校だけを対応表で受ける）。
+
+    ★**紛らわしい校名が同じ大会に出ている。** 対応表に書く前に、
+    どれが公立でどれが私立かを1件ずつ確かめた（2026-08-14）。
+
+      名市工業   → 名古屋市立工業高校（市立）        ← ここで受ける
+      名市工芸   → 名古屋市立工芸高校（市立）        ← ここで受ける
+      名古屋工科 → 愛知県立名古屋工科高校（県立。規則で結び付く）
+      名古屋工業 → **私立**（学校法人名工学園）。学校マスタに無くて正しい
+      科技高豊田 → **私立**科学技術学園高校 豊田校。県立豊田工科とは別
+      名古屋     → **私立**名古屋高校
+  */
+  "愛知\t名市工業": "nagoyashiritsukogyo",
+  "愛知\t名市工芸": "aichi-kogei",
+  /*
+    京都。組合せ表は「京教大附属」と略す。**国立なのでこのサイトの収録対象。**
+    京都府高野連の加盟校一覧（№41「京都教育大学附属・国立」）で確かめた。
+
+    ★**「宮津天橋」はここに書かない**（2026-08-14）。
+    加盟校一覧では**1校（№69 宮津天橋・府立）**だが、学校マスタは
+    **宮津学舎・加悦谷学舎の2件**に分かれている（文科省データがそうなっている）。
+    どちらの学舎として出ているのか出典からは分からないので結び付けない。
+    **1試合を取りこぼすほうが、別の学校の戦績にするより軽い。**
+  */
+  "京都\t京教大附属": "kyotokyoikudaigakufuzoku",
+  /*
+    広島。組合せ表は県名・市名を省く。**同名の県立と市立があるので確かめてから書いた**
+    （2026-08-14。外部のチーム情報で正式名称を確認）。
+
+      広島商   → 広島**県立**広島商業（市立にも同名がある）
+      広島工   → 広島**県立**広島工業（表は市立を「広島市工」と書き分けている）
+      広島市工 → 広島**市立**広島工業
+  */
+  "広島\t広島商": "hiroshimashogyo",
+  "広島\t広島工": "hiroshimakogyo",
+  "広島\t広島市工": "hiroshima-hiroshimakogyo",
+  // 市名を省いた略記。同名は無いので規則で拾えないぶんだけ足す
+  "広島\t誠之館": "fukuyamaseishikan",
+  "広島\t明王台": "fukuyamamyodai",
+  "広島\t庄原実": "shobarajitsugyo",
+  "広島\t加計芸北": "kakegeihoku",
+  "広島\t広島中等教育": "hiroshima-chuto",
 };
 
 /**
@@ -2024,7 +2839,19 @@ function buildIndex(schools) {
     if (!nationwide.has(norm)) push(nationwide, norm, school);
   }
 
-  // 手で書いた対応表。**規則で拾える学校を上書きしない**（同じ Map に足すだけ）
+  /*
+    手で書いた対応表。★**規則で引いた結果を「上書き」する**（2026-08-14 に変更）。
+
+    以前は同じ Map に足すだけだったが、それだと**同名が2件ある学校を
+    対応表で決められない。** 広島の「広島商」は県立と市立の2件があり、
+    足すだけでは3件になって結局「1件に決まらない」で落ちていた。
+
+    ★**上書きにしてよいのは、対応表が「人が出典で確かめて書いたもの」だから。**
+    確かめられないものは書かない、という決まりは今までどおり
+    （群馬の「前 橋」は県立か市立か確かめられず、いまも書いていない）。
+  */
+  /** 対応表で既に置き換えた鍵。同じ鍵に2校を割り当てる書き方（高専のキャンパス）に備える */
+  const aliasKeys = new Set();
   const bySlug = new Map(schools.map((s) => [s.slug, s]));
   for (const [key, slug] of Object.entries(DISTRICT_ALIASES)) {
     const [district, label] = key.split("\t");
@@ -2034,7 +2861,15 @@ function buildIndex(schools) {
       console.log(`  ⚠️ 対応表の slug「${slug}」が学校マスタに見つからない（${key}）`);
       continue;
     }
-    push(byDistrict, `${district}\t${normalizeSchoolName(label)}`, hit);
+    const mapKey = `${district}\t${normalizeSchoolName(label)}`;
+    /*
+      同じ表記に複数の slug を割り当てている場合だけは足す
+      （熊本高専の「高専八代」「高専熊本」は別表記なので衝突しない。
+      衝突するのは同じ表記に2校を意図的に結び付けたいときだけ）。
+    */
+    if (!aliasKeys.has(mapKey)) byDistrict.set(mapKey, []);
+    aliasKeys.add(mapKey);
+    push(byDistrict, mapKey, hit);
   }
   return { byDistrict, nationwide };
 }
@@ -2129,14 +2964,23 @@ async function main() {
       */
       const kept = (() => {
         if (KEEP_ALL || !seasonGames.length) return seasonGames;
-        const newest = seasonGames.reduce((a, g) => (g.date > a ? g.date : a), "");
+        /*
+          ★**日付を持たない試合は窓で切らない。**（2026-08-14）
+          三重のように**組合せ表に日付が1つも無い**出典がある。
+          窓は「いちばん新しい試合から120日」で切るものなので、
+          日付が無い試合には当てられない。**1大会ぶんしか持たない**ので
+          そのまま全部残す。
+        */
+        const dated = seasonGames.filter((g) => g.date);
+        if (!dated.length) return seasonGames;
+        const newest = dated.reduce((a, g) => (g.date > a ? g.date : a), "");
         const limit = new Date(`${newest}T00:00:00Z`);
         limit.setUTCDate(limit.getUTCDate() - KEEP_DAYS);
         const from = limit.toISOString().slice(0, 10);
-        return seasonGames.filter((g) => g.date >= from);
+        return seasonGames.filter((g) => !g.date || g.date >= from);
       })();
 
-      const dates = kept.map((g) => g.date).sort();
+      const dates = kept.map((g) => g.date).filter(Boolean).sort();
       const dropped = seasonGames.length - kept.length;
       console.log(
         `  ${season}: ${kept.length} 試合` +
@@ -2146,8 +2990,40 @@ async function main() {
       all.push(...kept);
     }
 
+    /*
+      ★**県外の学校に結び付けてよい大会かどうかを、大会名から決める。**（2026-08-14）
+
+      全国の索引（`index.nationwide`）は、**地区大会に出てくる県外の相手**を
+      拾うために置いてある（長野の秋の先にある北信越大会に富山商業が出る）。
+      ところが**県大会にもこの受け皿が効いていたため、同名の県外校に
+      結び付いていた。** 実際に出ていた誤りは次のとおり。
+
+        愛知「愛知」   → **滋賀**県立愛知（えち）高校   ×6試合
+        愛知「桜丘」   → **神奈川**県立桜丘高校         ×3試合
+        愛知「東海」   → **茨城**県立東海高校           ×2試合
+        神奈川「旭丘」 → **愛知**県立旭丘高校           ×7試合
+        熊本「城北」   → **徳島**県立城北高校           ×10試合
+
+      どれも出典側は**その県の私立校**を指していて、学校マスタに無いのが正しい。
+      ★**校名だけを見ていると気づけない**（警告も出ない。画面に出て初めて分かる）。
+
+      **県大会に県外の学校は出ない**ので、県大会だと分かる大会では
+      全国の受け皿を使わない。判定は大会名に
+      「県の名前」「県予選」「県大会」のどれかが入っているか。
+
+        第108回全国高等学校野球選手権愛知大会   → 県内だけ
+        78回春季関東高校野球大会県予選           → 県内だけ（県名は入らない）
+        第154回北信越地区高等学校野球大会       → **県外あり**（受け皿を使う）
+
+      ★**大会名が取れていないときは県内だけにする。** 分からないまま
+      全国から引くと、上と同じ誤りが黙って戻る。
+      **1試合を取りこぼすほうが、別の学校の戦績にするより軽い。**
+    */
+    const isPrefectureOnly = (tournament) =>
+      !tournament || tournament.includes(adapter.district) || /県予選|県大会/.test(tournament);
+
     // 公立校に結び付ける
-    const decorate = (t0) => {
+    const decorate = (t0, allowNationwide) => {
       if (isCombinedTeam(t0.display)) {
         /*
           連合チームは1校に結び付けない。印だけ付けて持つ。
@@ -2165,8 +3041,11 @@ async function main() {
       const t = { ...t0, display: t0.display.replace(/[\s　]+/g, "") };
       const norm = normalizeSchoolName(t.display);
       let hits = index.byDistrict.get(`${adapter.district}\t${norm}`) ?? [];
-      // 県内で引けなければ全国で引く（地区大会の県外の相手）
-      if (hits.length === 0) hits = index.nationwide.get(norm) ?? [];
+      /*
+        県内で引けなければ全国で引く（**地区大会の県外の相手**）。
+        ★**県大会では使わない**（上の `isPrefectureOnly` を参照）。
+      */
+      if (hits.length === 0 && allowNationwide) hits = index.nationwide.get(norm) ?? [];
       if (hits.length !== 1) {
         unmatched.add(hits.length > 1 ? `${t.display}（同名が${hits.length}件）` : t.display);
         return { ...t, name: t.display, slug: null };
@@ -2179,7 +3058,10 @@ async function main() {
         **勝敗はアダプタが出典から取ったものを使う。** スコアから導かない。
         引き分け・没収試合で食い違う。長野は勝者に class="win" が付いている。
       */
-      .map((g) => ({ ...g, teams: g.teams.map(decorate) }))
+      .map((g) => {
+        const allowNationwide = !isPrefectureOnly(g.tournament);
+        return { ...g, teams: g.teams.map((t) => decorate(t, allowNationwide)) };
+      })
       // **公立が絡む試合だけ残す。** このサイトの切り口はそこにある
       .filter((g) => g.teams.some((t) => t.slug));
 
@@ -2254,7 +3136,9 @@ async function main() {
     抜粋に入れるのは「いちばん新しい試合から `KEEP_DAYS` 以内」だけにする。
     県のページ（`src/lib/data/regional/<県>.ts`）はそのままで、前年の秋も残る。
   */
-  const newestOverall = districts.flatMap((d) => d.games.map((g) => g.date)).sort().at(-1) ?? null;
+  // ★**日付を持たない試合は抜粋に出さない**（新しい順に選ぶので順番を決められない）
+  const newestOverall =
+    districts.flatMap((d) => d.games.map((g) => g.date)).filter(Boolean).sort().at(-1) ?? null;
   const pickupFrom = (() => {
     if (!newestOverall) return null;
     const limit = new Date(`${newestOverall}T00:00:00Z`);
@@ -2266,7 +3150,7 @@ async function main() {
   for (const d of districts) {
     const sorted = [...d.games]
       .filter((g) => g.teams.some((t) => t.slug && !t.combined))
-      .filter((g) => !pickupFrom || g.date >= pickupFrom)
+      .filter((g) => g.date && (!pickupFrom || g.date >= pickupFrom))
       .sort((a, b) => {
         const wonA = a.teams.some((t) => t.slug && t.won) ? 1 : 0;
         const wonB = b.teams.some((t) => t.slug && t.won) ? 1 : 0;
@@ -2297,7 +3181,7 @@ async function main() {
     抜粋の先頭を使うと「7月20日の試合まで」と、実際より古く見える。
   */
   const latestDate =
-    districts.flatMap((d) => d.games.map((g) => g.date)).sort().at(-1) ?? null;
+    districts.flatMap((d) => d.games.map((g) => g.date)).filter(Boolean).sort().at(-1) ?? null;
 
   /*
     ------------------------------------------------------------------
@@ -2314,9 +3198,15 @@ async function main() {
     対象はいちばん新しい試合が属する季節だけ。春の結果と秋の結果を
     混ぜると、どの大会の話なのか分からなくなる。
   */
+  /*
+    ★**日付を持たない試合はここに入れない**（2026-08-14）。
+    「いちばん新しい試合の季節」で決めるので、順番の付けられない試合は使えない。
+    その県は勝ち上がりにも出ないが、県のページには出る。
+  */
   const spotlightSeason =
     districts
       .flatMap((d) => d.games)
+      .filter((g) => g.date)
       .sort((a, b) => a.date.localeCompare(b.date))
       .at(-1)?.season ?? null;
 

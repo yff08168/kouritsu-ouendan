@@ -4,8 +4,7 @@ import { MapPinned } from "lucide-react";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { cn } from "@/lib/utils";
 import {
-  formatRegionalDateWithYear,
-  groupGamesByDate,
+  groupGamesForDistrict,
   seasonLabel,
   type RegionalDistrict,
   type RegionalGame,
@@ -50,7 +49,13 @@ export function RegionalDistrictCard({
   total: number;
   tournaments: string[];
 }) {
-  const byDate = groupGamesByDate(games);
+  const groups = groupGamesForDistrict(games);
+  /*
+    ★**日付を持たない出典がある**（三重の組合せ表など）。その県は
+    日付ではなく**回戦**で見出しを作り、説明文も「回戦順」に変える。
+    「新しい順」と書いてあるのに日付が無いと、読む人が戸惑うため。
+  */
+  const dated = games.some((g) => g.date);
 
   return (
     <section
@@ -75,18 +80,16 @@ export function RegionalDistrictCard({
             {tournaments.length > 2 && "ほか"}から、
           </>
         )}
-        公立高校が出た試合を新しい順に出しています
+        公立高校が出た試合を{dated ? "新しい順" : "回戦の深い順"}に出しています
       </p>
 
       <div className="mt-4 space-y-4">
-        {byDate.map(({ date, games: dayGames }) => (
-          <div key={date}>
-            <h3 className="text-xs font-bold text-ink-faint">
-              {formatRegionalDateWithYear(date)}
-            </h3>
+        {groups.map(({ key, label, games: groupGames }) => (
+          <div key={key}>
+            <h3 className="text-xs font-bold text-ink-faint">{label}</h3>
             <ul className="mt-1 divide-y divide-line border-t border-line">
-              {dayGames.map((game, i) => (
-                <li key={`${date}-${i}`}>
+              {groupGames.map((game, i) => (
+                <li key={`${key}-${i}`}>
                   <GameRow game={game} />
                 </li>
               ))}

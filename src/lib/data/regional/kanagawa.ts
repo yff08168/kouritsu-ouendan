@@ -319,8 +319,8 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "display": "旭丘",
           "score": 9,
           "won": true,
-          "name": "旭丘高校",
-          "slug": "asahigaoka"
+          "name": "旭丘",
+          "slug": null
         },
         {
           "display": "川崎総合科学",
@@ -671,8 +671,8 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "display": "旭丘",
           "score": 3,
           "won": true,
-          "name": "旭丘高校",
-          "slug": "asahigaoka"
+          "name": "旭丘",
+          "slug": null
         }
       ]
     },
@@ -1062,8 +1062,8 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "display": "旭丘",
           "score": 3,
           "won": false,
-          "name": "旭丘高校",
-          "slug": "asahigaoka"
+          "name": "旭丘",
+          "slug": null
         }
       ]
     },
@@ -1594,29 +1594,6 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": true,
           "name": "綾瀬高校",
           "slug": "ayase"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-07",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権神奈川大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "旭丘",
-          "score": 4,
-          "won": true,
-          "name": "旭丘高校",
-          "slug": "asahigaoka"
-        },
-        {
-          "display": "県商工",
-          "score": 2,
-          "won": false,
-          "name": "県商工",
-          "slug": null
         }
       ]
     },
@@ -2468,8 +2445,8 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "display": "旭丘",
           "score": 11,
           "won": true,
-          "name": "旭丘高校",
-          "slug": "asahigaoka"
+          "name": "旭丘",
+          "slug": null
         }
       ]
     },
@@ -3598,29 +3575,6 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "住吉高校",
           "slug": "sumiyoshi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-13",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権神奈川大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "三浦学苑",
-          "score": 6,
-          "won": true,
-          "name": "三浦学苑",
-          "slug": null
-        },
-        {
-          "display": "旭丘",
-          "score": 0,
-          "won": false,
-          "name": "旭丘高校",
-          "slug": "asahigaoka"
         }
       ]
     },
@@ -5161,8 +5115,8 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "display": "旭丘",
           "score": 1,
           "won": false,
-          "name": "旭丘高校",
-          "slug": "asahigaoka"
+          "name": "旭丘",
+          "slug": null
         }
       ]
     },

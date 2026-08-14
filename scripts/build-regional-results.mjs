@@ -48,6 +48,8 @@ import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { createClient } from "@supabase/supabase-js";
 
+import { fetchPdfPages } from "./lib/pdf-text.mjs";
+
 const ROOT = path.resolve(import.meta.dirname, "..");
 /** 県ごとのファイルを置くところ。1県あたり約120KB */
 const OUT_DIR = path.join(ROOT, "src", "lib", "data", "regional");
@@ -106,6 +108,14 @@ const KEEP_DAYS = 120;
  * 県大会の日程は1大会30日を超えない。
  */
 const MAX_DAILY_PAGES = 30;
+
+/**
+ * 1季節あたり何枚のPDFを読むか。
+ * **愛媛は球場ごと・日ごとに1枚**なので、夏は40枚を超える。
+ * 1枚ずつ間隔をあけて取るため、上限が無いと1回の実行が長くなりすぎる。
+ * ★**足りなくて切れたときは、その回戦の試合数の検算で気づける。**
+ */
+const MAX_PDF_PAGES = 45;
 
 /**
  * どの年度を取りに行くか。**`--year` で明示できる。**
@@ -1504,6 +1514,142 @@ const nara = {
 };
 
 /**
+ * 愛媛県高等学校野球連盟（`ehimehbb.jp`）。**このリポジトリで最初のPDFの出典。**
+ *
+ * **規約に転載の制限は無い**（2026-08-14 にトップ・結果ページを確認）。
+ *
+ * 大会ごとのHTML（組合せ・試合結果）から、**球場ごと・日ごとのスコアPDF**へ。
+ * リンクの文字が球場名、URLに月日が入っている（`Botchan0711score.pdf`）。
+ *
+ *   第108回全国高等学校野球選手権愛媛大会
+ *   7 月 11 日 (土）
+ *   坊っちゃんスタジアム   1回戦
+ *   第１試合
+ *   松山北 － 松山東
+ *   チーム 1 2 … 15 計
+ *   松 山 東  0 0 0 0 1 0 0 0 0   1
+ *   松 山 北  2 1 0 0 1 0 0 0 ×   4
+ *   松 山 東 ： 岩田－三瀬          ← 投手・捕手。**取らない**
+ *
+ * ★**PDFの文字は描画順に並んでいる。** 素直につなぐと表が壊れるので、
+ * `scripts/lib/pdf-text.mjs` で**yで行にまとめ、xで並べ直して**から読む。
+ *
+ * ★**校名が2行に折り返すことがある**（「八 幡 浜 ・ 川 之 石」＋「連 合」）。
+ * 数字を持たない行がスコア行の直前にあれば、校名の続きとして前に付ける。
+ *
+ * ★**新人大会は取らない。** 季節はURLのディレクトリ（haru/natsu/aki）で決める。
+ * 「地区別新人大会」は県大会ではないので混ぜない（佐賀の連盟杯と同じ扱い）。
+ */
+const ehime = {
+  slug: "ehime",
+  district: "愛媛",
+  name: "愛媛県高等学校野球連盟",
+  siteUrl: "http://www.ehimehbb.jp/",
+  // PDFを何十枚も取るので、1件ごとの間隔を長めにする
+  politenessMs: 2000,
+  seasons: { spring: "haru", summer: "natsu", autumn: "aki" },
+  indexCache: new Map(),
+  async collect({ fetchHtml, season, url, year }) {
+    const top = this.indexCache.has("top")
+      ? this.indexCache.get("top")
+      : this.indexCache.set("top", await fetchHtml(this.siteUrl)).get("top");
+    if (!top) return [];
+
+    /*
+      トップから「組合せ・試合結果」のリンクを拾う。**URLを組み立てない。**
+      年は `/2026_R08/`、季節はその次のディレクトリ（haru/natsu/aki）で決まる。
+    */
+    const pages = dailyLinks(top, this.siteUrl, {
+      hrefPattern: new RegExp(`/taikai/kousiki/${year}_R\\d+/${url}/`),
+    });
+
+    const games = [];
+    for (const page of pages) {
+      const index = await fetchHtml(page.url);
+      if (!index) continue;
+      // 球場ごと・日ごとのスコアPDF（組合せ表のPDFは除く）
+      const pdfs = dailyLinks(index, page.url, { hrefPattern: /score\w*\.pdf$/i });
+
+      for (const pdf of pdfs.slice(0, MAX_PDF_PAGES)) {
+        const parsed = await fetchPdfPages(pdf.url, { headers: UA });
+        await sleep(this.politenessMs);
+        if (!parsed) continue;
+
+        for (const { lines } of parsed) {
+          const flat = lines.map((l) => ({ ...l, plain: l.text.replace(/\t/g, "") }));
+          /*
+            ★**大会名を正規化してから使う。** 出典のPDFは同じ大会を
+            「第79回」「第7９回」「第７９回」と全角半角を混ぜて書いており、
+            そのままだと1つの大会が3つに割れる（検算も勝ち上がりも狂う）。
+
+            ★**県名の入った大会だけ残す。** 同じディレクトリに
+            **四国地区大会（他県開催）や甲子園**のスコアPDFも置いてある。
+            残さないと、高知商や花巻東が「愛媛の地方大会」に出てくる（実際に出た）。
+          */
+          const tournament = normalize(flat.find((l) => /大会/.test(l.plain))?.plain ?? "") || null;
+          if (!tournament?.includes(this.district)) continue;
+          const d = flat.map((l) => l.plain).join(" ").match(/(\d{1,2})月(\d{1,2})日/);
+          if (!d) continue;
+          const date = `${year}-${d[1].padStart(2, "0")}-${d[2].padStart(2, "0")}`;
+          const headLine = flat.find((l) => /球場|スタジアム/.test(l.plain));
+          const venue = pickVenue(headLine?.plain ?? "");
+          const pageRound = pickRound(headLine?.plain ?? "");
+
+          /** 直前の「数字を持たない行」。折り返した校名の前半 */
+          let carry = null;
+          let pending = null;
+          for (const line of flat) {
+            const cells = line.text.split("\t").map((c) => c.trim()).filter(Boolean);
+            const isHeader = /チーム/.test(line.plain) && /計/.test(line.plain);
+            if (isHeader) {
+              pending = [];
+              carry = null;
+              continue;
+            }
+            if (!pending) continue;
+            // 投手・捕手の行（「：」を含む）で1試合の終わり
+            if (/[：:]/.test(line.plain)) {
+              pending = null;
+              continue;
+            }
+
+            // 校名（数字が出るまで）とスコア（そこから後ろ）に割る
+            const firstNumber = cells.findIndex((c) => /^[0-9]+[×xX]?$/.test(normalize(c)));
+            if (firstNumber <= 0) {
+              // 数字が無い行は、折り返した校名の前半として覚えておく
+              if (cells.length) carry = cells.join("");
+              continue;
+            }
+            const name = (carry ?? "") + cells.slice(0, firstNumber).join("");
+            carry = null;
+            const score = inningTotal(["", ...cells.slice(firstNumber).map(normalize)]);
+            if (!name || score === null) continue;
+            pending.push({ name, score });
+
+            if (pending.length === 2) {
+              const [a, b] = pending;
+              pending = null;
+              games.push({
+                date,
+                season,
+                tournament,
+                round: pageRound,
+                venue,
+                teams: [
+                  { display: a.name, score: a.score, won: a.score > b.score },
+                  { display: b.name, score: b.score, won: b.score > a.score },
+                ],
+              });
+            }
+          }
+        }
+      }
+    }
+    return games;
+  },
+};
+
+/**
  * ここに県を足していく。
  *
  * ★**規約で制限のある連盟のサイトは足さないこと。**
@@ -1527,6 +1673,7 @@ const ADAPTERS = [
   gunma,
   saga,
   nara,
+  ehime,
 ];
 
 // ------------------------------------------------------------------
@@ -1639,6 +1786,15 @@ const DISTRICT_ALIASES = {
   "奈良\t県大附属": "narakenritsudaigakufuzoku",
   "奈良\t奈女大附": "narajoshidaigakufuzoku",
   "奈良\t女子大附": "narajoshidaigakufuzoku",
+  /*
+    愛媛。**統合の前後で同じ校名の学校が2件ある**（小松・八幡浜）。
+    出典は新しいほうを「（新）小松」と書いて区別している。
+    括弧が**前に付く**ので、末尾の括弧を落とす正規化では拾えない。
+    **どちらを指すか出典が書き分けているので、対応表で受ける。**
+  */
+  "愛媛\t愛大附": "ehimedaigakufuzoku",
+  "愛媛\t（新）小松": "komatsushin",
+  "愛媛\t（新）八幡浜": "yawatahamashin",
 };
 
 /**

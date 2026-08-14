@@ -41,9 +41,10 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    # 6県 × 3季節を**1件ずつ間隔をあけて**取るので、1回が10分を超えることがある。
+    # 10県 × 3季節を**1件ずつ間隔をあけて**取る。
+    # ★**愛媛だけで10分前後かかる**（球場ごと・日ごとのPDFを1枚ずつ読むため）。
     # 既定の6時間ではなく、明らかに詰まったと分かる長さで切る。
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     steps:
       - uses: actions/checkout@v5

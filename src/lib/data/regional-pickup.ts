@@ -217,6 +217,32 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       ]
     },
     {
+      "districtSlug": "ehime",
+      "district": "愛媛",
+      "sourceName": "愛媛県高等学校野球連盟",
+      "sourceUrl": "http://www.ehimehbb.jp/",
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛媛大会",
+      "round": "準々決勝",
+      "teams": [
+        {
+          "display": "小松",
+          "score": 3,
+          "won": true,
+          "name": "小松高校",
+          "slug": "ehime-komatsu"
+        },
+        {
+          "display": "済美",
+          "score": 0,
+          "won": false,
+          "name": "済美",
+          "slug": null
+        }
+      ]
+    },
+    {
       "districtSlug": "gunma",
       "district": "群馬",
       "sourceName": "群馬県高等学校野球連盟",
@@ -317,6 +343,32 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": true,
           "name": "御所実業高校",
           "slug": "gosejitsugyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "ehime",
+      "district": "愛媛",
+      "sourceName": "愛媛県高等学校野球連盟",
+      "sourceUrl": "http://www.ehimehbb.jp/",
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛媛大会",
+      "round": "準々決勝",
+      "teams": [
+        {
+          "display": "松山商",
+          "score": 8,
+          "won": false,
+          "name": "松山商業高校",
+          "slug": "matsuyamashogyo"
+        },
+        {
+          "display": "松山北",
+          "score": 11,
+          "won": true,
+          "name": "松山北高校",
+          "slug": "matsuyamakita"
         }
       ]
     },
@@ -499,6 +551,58 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": true,
           "name": "前橋商業高校",
           "slug": "maebashishogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "ehime",
+      "district": "愛媛",
+      "sourceName": "愛媛県高等学校野球連盟",
+      "sourceUrl": "http://www.ehimehbb.jp/",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛媛大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "西条",
+          "score": 13,
+          "won": true,
+          "name": "西条高校",
+          "slug": "saijo"
+        },
+        {
+          "display": "聖カタリナ学園",
+          "score": 4,
+          "won": false,
+          "name": "聖カタリナ学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "districtSlug": "ehime",
+      "district": "愛媛",
+      "sourceName": "愛媛県高等学校野球連盟",
+      "sourceUrl": "http://www.ehimehbb.jp/",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛媛大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "小松",
+          "score": 9,
+          "won": true,
+          "name": "小松高校",
+          "slug": "ehime-komatsu"
+        },
+        {
+          "display": "宇和島東",
+          "score": 2,
+          "won": false,
+          "name": "宇和島東高校",
+          "slug": "uwajimahigashi"
         }
       ]
     },

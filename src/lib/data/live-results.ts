@@ -273,9 +273,9 @@ export const LIVE_RESULTS: LiveResults = {
         "date": "8月14日",
         "dayNo": 10,
         "order": "2",
-        "startTime": null,
+        "startTime": "16:00",
         "opponent": "霞ケ浦",
-        "provisional": true
+        "provisional": false
       }
     }
   ]

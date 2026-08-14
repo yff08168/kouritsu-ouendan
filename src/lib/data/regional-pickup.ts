@@ -841,6 +841,84 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       ]
     },
     {
+      "districtSlug": "niigata",
+      "district": "新潟",
+      "sourceName": "新潟県高等学校野球連盟",
+      "sourceUrl": "https://niigata-hbf.jp/",
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "佐渡",
+          "score": 8,
+          "won": true,
+          "name": "佐渡高校",
+          "slug": "sado"
+        },
+        {
+          "display": "巻総合",
+          "score": 7,
+          "won": false,
+          "name": "巻総合高校",
+          "slug": "makisogo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "niigata",
+      "district": "新潟",
+      "sourceName": "新潟県高等学校野球連盟",
+      "sourceUrl": "https://niigata-hbf.jp/",
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "佐渡総合",
+          "score": 2,
+          "won": false,
+          "name": "佐渡総合高校",
+          "slug": "sadosogo"
+        },
+        {
+          "display": "新発田南",
+          "score": 15,
+          "won": true,
+          "name": "新発田南高校",
+          "slug": "shibataminami"
+        }
+      ]
+    },
+    {
+      "districtSlug": "niigata",
+      "district": "新潟",
+      "sourceName": "新潟県高等学校野球連盟",
+      "sourceUrl": "https://niigata-hbf.jp/",
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "加茂",
+          "score": 0,
+          "won": false,
+          "name": "加茂高校",
+          "slug": "kamo"
+        },
+        {
+          "display": "新潟工",
+          "score": 10,
+          "won": true,
+          "name": "新潟工業高校",
+          "slug": "niigatakogyo"
+        }
+      ]
+    },
+    {
       "districtSlug": "yamanashi",
       "district": "山梨",
       "sourceName": "山梨県高等学校野球連盟",
@@ -863,6 +941,32 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": true,
           "name": "甲府工業高校",
           "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "niigata",
+      "district": "新潟",
+      "sourceName": "新潟県高等学校野球連盟",
+      "sourceUrl": "https://niigata-hbf.jp/",
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "巻",
+          "score": 2,
+          "won": false,
+          "name": "巻高校",
+          "slug": "maki"
+        },
+        {
+          "display": "六日町",
+          "score": 3,
+          "won": true,
+          "name": "六日町高校",
+          "slug": "muikamachi"
         }
       ]
     },

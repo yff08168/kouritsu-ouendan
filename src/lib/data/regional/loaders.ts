@@ -15,4 +15,5 @@ export const REGIONAL_LOADERS: Record<string, () => Promise<RegionalDistrict>> =
   saga: () => import("./saga").then((m) => m.REGIONAL_SAGA),
   nara: () => import("./nara").then((m) => m.REGIONAL_NARA),
   ehime: () => import("./ehime").then((m) => m.REGIONAL_EHIME),
+  niigata: () => import("./niigata").then((m) => m.REGIONAL_NIIGATA),
 };

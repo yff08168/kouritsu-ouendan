@@ -49,6 +49,7 @@ import path from "node:path";
 import { createClient } from "@supabase/supabase-js";
 
 import { fetchPdfPages } from "./lib/pdf-text.mjs";
+import { fetchXlsxSheets } from "./lib/xlsx-rows.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 /** 県ごとのファイルを置くところ。1県あたり約120KB */
@@ -1650,6 +1651,171 @@ const ehime = {
 };
 
 /**
+ * 新潟県高等学校野球連盟（`niigata-hbf.jp`）。**このリポジトリで最初のExcelの出典。**
+ *
+ * **規約に転載の制限は無い**（2026-08-14 にトップ・結果ページを確認）。
+ *
+ * 大会ごとに「全試合データ」のExcelが1つ。**1大会が1ファイルで手に入る**ので、
+ * 取得は1回の実行で3ファイルだけ。回戦ごとにシートが分かれている。
+ *
+ *   シート「1~2回戦」
+ *     大会　第 | 1 | 日目 | | 令和 | 7 | 年 | 7 | 月 | 9 | 日 | （ | 水 | ）
+ *     第１試合 |   | ハードオフ |  |  | １回戦
+ *     校　名 | 1 | 2 | … | 9
+ *     新潟青陵 | 0 | 0 | 0 | …          ← **合計欄が無い。イニングを足す**
+ *     加茂暁星 | 0 | 0 | 4 | … | ×
+ *     校　名 | バッテリー | …            ← 投手・捕手。**取らない**
+ *
+ * ★**合計欄が無いので、イニングを足して点数にする。** 「×」は打っていない印。
+ *
+ * ★**年はファイルの中の「令和N年」から取る。** ファイル名の回数（154haru）は
+ * 春と秋で増え方が違う（154春→155秋）ので、**回数から年を割り出さない。**
+ *
+ * ★**甲子園のシートが入っている。** 夏のファイルには県代表の甲子園の試合が
+ * 別シートで入っているので外す（佐賀・愛媛と同じ落とし穴）。
+ */
+const niigata = {
+  slug: "niigata",
+  district: "新潟",
+  name: "新潟県高等学校野球連盟",
+  siteUrl: "https://niigata-hbf.jp/",
+  seasons: { spring: "haru", summer: "natu", autumn: "aki" },
+  pageCache: new Map(),
+  /**
+   * 県大会ではないシート。
+   * ★**「本大会」を忘れないこと。** 春のファイルには北信越本大会のシートが
+   * 入っており、外さないと**星稜・敦賀気比・佐久長聖が「新潟の地方大会」に出てくる。**
+   */
+  SKIP_SHEETS: /甲子園|神宮|選抜|北信越|本大会/,
+  async collect({ fetchHtml, season, url, year }) {
+    const get = async (u) => {
+      if (!this.pageCache.has(u)) this.pageCache.set(u, await fetchHtml(u));
+      return this.pageCache.get(u);
+    };
+    // 今年度の一覧が先。過去の一覧は年が変わったあとの受け皿
+    const current = await get(`${this.siteUrl}tournamentlist/`);
+    const archive = await get(`${this.siteUrl}koushikikako2/`);
+
+    /*
+      大会名は今年度の一覧の見出しから取る（Excelの中には入っていない）。
+
+        -春季大会- 第154回北信越地区高等学校野球新潟県大会（令和８年度春季）
+        -夏季大会- 第108回全国高等学校野球選手権新潟大会
+
+      ★**回数から名前を組み立てない。** 春と秋で増え方が違ううえ、
+      正式名称は連盟の書き方に合わせる必要がある。
+    */
+    const marker = { spring: "-春季大会-", summer: "-夏季大会-", autumn: "-秋季大会-" }[season];
+    const tournament =
+      normalize(plain(current ?? ""))
+        .split(marker)[1]
+        ?.match(/^\s*(第[^【]*?大会(?:（[^）]*）)?)/)?.[1]
+        ?.trim() ?? null;
+
+    /** 「全試合データ」「試合結果」のExcel。新しい順に並べる */
+    const links = [current, archive]
+      .filter(Boolean)
+      .flatMap((html, i) =>
+        dailyLinks(html, i === 0 ? `${this.siteUrl}tournamentlist/` : `${this.siteUrl}koushikikako2/`, {
+          hrefPattern: /\.xlsx$/i,
+        }),
+      )
+      .filter((l) => new RegExp(`\\d+${url}`, "i").test(l.url));
+
+    const games = [];
+    /*
+      **年が合うファイルを1つだけ読む。** 一覧には過去10年ぶんが並んでいるので、
+      全部開くと1回の実行で何十ファイルにもなる。新しい順に見て、
+      中の日付が指定の年ならそれを使い、違えば次を見る（3つまで）。
+    */
+    for (const link of links.slice(0, 3)) {
+      const sheets = await fetchXlsxSheets(link.url, { headers: UA });
+      await sleep(this.politenessMs ?? 1500);
+      if (!sheets) continue;
+
+      const found = [];
+      let fileYear = null;
+      for (const sheet of sheets) {
+        if (this.SKIP_SHEETS.test(sheet.name)) continue;
+        let date = null;
+        /** 直前の「第N試合 ｜ 球場 ｜ 回戦」の行。**列の位置ごとに違う試合が入る** */
+        let gameRow = [];
+        for (let i = 0; i < sheet.rows.length; i++) {
+          const cells = sheet.rows[i].map((c) => normalize(c));
+          const line = cells.join("");
+
+          const d = line.match(/令和(\d+)年(\d{1,2})月(\d{1,2})日/);
+          if (d) {
+            const y = 2018 + Number(d[1]);
+            fileYear ??= y;
+            date = `${y}-${d[2].padStart(2, "0")}-${d[3].padStart(2, "0")}`;
+            continue;
+          }
+          if (cells.some((c) => /^第\d+試合$/.test(c))) {
+            gameRow = cells;
+            continue;
+          }
+
+          /*
+            ★**1つの行に試合が横に2つ並ぶ。**（左が第1試合、右が第2試合。
+            右のブロックは21列目から始まる）。左だけ読むと**試合がちょうど半分**しか
+            取れない（実際に34試合になり、準々決勝2・準決勝1で検算に引っかかった）。
+            **見出し行にある「校名」の列を全部拾って、それぞれをブロックとして読む。**
+
+            イニング表の見出しは「校　名 | 1 | 2 | …」。
+            **投手・捕手の表も見出しが「校　名」**なので、次の列が "1" かで見分ける。
+          */
+          const heads = cells.flatMap((c, idx) =>
+            /^校名$/.test(c.replace(/\s/g, "")) && cells[idx + 1] === "1" ? [idx] : [],
+          );
+          if (!heads.length) continue;
+
+          const rowA = (sheet.rows[i + 1] ?? []).map((c) => normalize(c));
+          const rowB = (sheet.rows[i + 2] ?? []).map((c) => normalize(c));
+          heads.forEach((start, k) => {
+            const end = heads[k + 1] ?? Math.max(cells.length, rowA.length, rowB.length);
+            // 「計」の列。**無ければイニングを足す**（年によって計の欄が無いファイルがある）
+            const totalAt = cells.slice(start, end).indexOf("計");
+            const scoreOf = (row) => {
+              const total = totalAt >= 0 ? row[start + totalAt] : "";
+              if (/^\d+$/.test(total ?? "")) return Number(total);
+              return row
+                .slice(start + 1, end)
+                .reduce((sum, c) => (/^\d+$/.test(c) ? sum + Number(c) : sum), 0);
+            };
+            const nameA = rowA[start] ?? "";
+            const nameB = rowB[start] ?? "";
+            if (!nameA || !nameB || !date) return;
+
+            // 球場と回戦も同じ列の範囲から取る（右の試合は球場が違うことがある）
+            const head = gameRow.slice(start, end);
+            const scoreA = scoreOf(rowA);
+            const scoreB = scoreOf(rowB);
+            found.push({
+              date,
+              season,
+              tournament,
+              round: pickRound(head.join(" ")),
+              venue: head.find((c) => c && !/^第\d+試合$/.test(c) && !/回戦|決勝/.test(c)) ?? null,
+              teams: [
+                { display: nameA, score: scoreA, won: scoreA > scoreB },
+                { display: nameB, score: scoreB, won: scoreB > scoreA },
+              ],
+            });
+          });
+          i += 2;
+        }
+      }
+      if (fileYear === year) {
+        games.push(...found);
+        break;
+      }
+    }
+    return games;
+  },
+};
+
+/**
  * ここに県を足していく。
  *
  * ★**規約で制限のある連盟のサイトは足さないこと。**
@@ -1674,6 +1840,7 @@ const ADAPTERS = [
   saga,
   nara,
   ehime,
+  niigata,
 ];
 
 // ------------------------------------------------------------------
@@ -1705,8 +1872,15 @@ function labelCandidates(name, aliases) {
     一覧の短い校名（`src/lib/school-name.ts`）では「中等教育学校」を落とさない
     （何の学校か分からなくなるため）。
   */
-  if (/中等教育学校$/.test(name)) set.add(name.replace(/中等教育学校$/, ""));
-  return [...set].filter(Boolean);
+  const weak = new Set();
+  /*
+    ★**これは「弱い」候補。** 同じ県に同じ短い名前の高校があるときは足さない。
+    新潟には**佐渡高校と佐渡中等教育学校の両方**があり、両方に「佐渡」を
+    持たせると**出典の「佐渡」がどちらか決まらなくなって結び付かない。**
+    出典は中等教育学校を「◯◯中等」と書くので、素の短名は高校のものとして扱う。
+  */
+  if (/中等教育学校$/.test(name)) weak.add(name.replace(/中等教育学校$/, ""));
+  return { names: [...set].filter(Boolean), weak: [...weak].filter(Boolean) };
 }
 
 /**
@@ -1819,10 +1993,13 @@ function buildIndex(schools) {
     if (!map.get(key).some((h) => h.slug === s.slug)) map.get(key).push(s);
   };
 
+  /** 「弱い」候補は全部の学校を入れ終わってから足す（下の2周目） */
+  const weakLater = [];
   for (const s of schools) {
     const district = s.prefecture?.name;
     if (!district) continue;
-    for (const label of labelCandidates(s.name, s.name_aliases)) {
+    const { names, weak } = labelCandidates(s.name, s.name_aliases);
+    for (const label of names) {
       // **鍵は正規化した校名。** 揺れ（ケ/ヶ・旧字体・空白）で外れるのを防ぐ
       const norm = normalizeSchoolName(label);
       push(byDistrict, `${district}\t${norm}`, s);
@@ -1832,6 +2009,19 @@ function buildIndex(schools) {
     for (const label of districtOnlyCandidates(s.name, district)) {
       push(byDistrict, `${district}\t${normalizeSchoolName(label)}`, s);
     }
+    for (const label of weak) weakLater.push({ school: s, district, norm: normalizeSchoolName(label) });
+  }
+
+  /*
+    ★**「弱い」候補は、その名前がまだ空いているときだけ足す。**
+    中等教育学校から「中等教育学校」を落とした形（佐渡中等教育学校→佐渡）は、
+    同じ県に「佐渡高校」があると**出典の「佐渡」がどちらか決まらなくなる。**
+    先に入れた高校の側を優先し、空いているときだけ足す。
+  */
+  for (const { school, district, norm } of weakLater) {
+    if (byDistrict.has(`${district}\t${norm}`)) continue;
+    push(byDistrict, `${district}\t${norm}`, school);
+    if (!nationwide.has(norm)) push(nationwide, norm, school);
   }
 
   // 手で書いた対応表。**規則で拾える学校を上書きしない**（同じ Map に足すだけ）

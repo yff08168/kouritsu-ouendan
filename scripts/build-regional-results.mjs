@@ -2832,6 +2832,267 @@ const kagoshima = {
 };
 
 /**
+ * 石川県高等学校野球連盟（`ishikawa-hbf.jp`）。
+ * ★**トーナメント表ではなく「試合結果（スコア表）」から取る**（2026-08-15）。
+ *
+ * ------------------------------------------------------------------
+ * ★ 石川は3回失敗している。**今回は同じ土俵に乗っていない**
+ *
+ *   2026-08-14 までに3方式でやぐら表（組合せ表）を組み立てて3回とも誤った。
+ *   **検算（準々4・準決2・決勝1）を通ったのに決勝の相手が違った**
+ *   （事実は 金沢 3-4x 遊学館、組み立ては 金沢 vs 小松大谷）。
+ *
+ *   ★**この出典は組み立てを一切しない。** 同じPDFの2ページ目以降に
+ *   **1試合ずつイニングスコアが印刷されている**（愛媛と同じ「スコア表」型）。
+ *   どの点がどの対戦のものかが紙に書いてあるので、推測する余地が無い。
+ *   1ページ目のやぐら表は**優勝校の検算にだけ**使い、枝は読まない。
+ *
+ * ------------------------------------------------------------------
+ * ★ 紙の形
+ *
+ *   `◆<球場> 第N試合` の x が**1試合ぶんの枠の左端**。1行に最大3試合並ぶ。
+ *   枠の左端からの距離で中身が決まる:
+ *
+ *     38〜145 … 各回の得点（`X` は打たずに終わった回）
+ *    152〜182 … 合計（`6x` のように x が付く。**`Number("6x")` は NaN**）
+ *     36〜115 … 合計の下の行にある正式な校名（先攻・後攻）
+ *
+ *   ★**回戦と日付はページをまたいで続く**（2回戦は2〜3ページ、
+ *   準々決勝は4〜5ページにまたがる）。ページごとに状態を捨てないこと。
+ *
+ * ------------------------------------------------------------------
+ * ★ 検算（このリポジトリでいちばん強い）
+ *
+ *   1. **試合ごと**: 各回の得点の和 == 印刷された合計。41試合すべてで一致
+ *   2. **勝ち上がり**: 3回戦以降の出場校は**全員が前の回戦の勝者**。
+ *      勝ったのに次の回戦にいない学校が**0件**。2回戦の非勝者22校は
+ *      シードで、42 −（1回戦10試合×2）= 22 と一致する
+ *   3. **のべ出場校 42 / 試合 41**（N − 1）。42はやぐら表のスロット数と一致
+ *   4. **優勝校が3か所で一致**（やぐら表の「優勝 遊学館」／決勝の勝者／
+ *      連盟のお知らせの見出し「遊学館が優勝」）
+ *
+ *   ★**1と2は組み立て型の県には無い検算。** 石川で以前すり抜けた
+ *   「構造は合うのに対戦相手が違う」は、2で必ず捕まる。
+ *
+ * **規約**: トップ・成績記録・試合スケジュール・過去データ・リンク・
+ * お知らせの各ページを「転載・無断・複製・営利・著作権」で検索して
+ * **制限の記載なし**。robots.txt は 404（2026-08-15 に確認）。
+ * ★サイトに一球速報へのリンクがあるが、**取っているのは連盟自身のPDFだけ**。
+ */
+const ishikawa = {
+  slug: "ishikawa",
+  district: "石川",
+  name: "石川県高等学校野球連盟",
+  siteUrl: "https://ishikawa-hbf.jp/",
+  politenessMs: 2000,
+  // **夏だけ。** 春季・秋季は同じ形のPDFが出るか確かめてから足すこと
+  seasons: { summer: "https://ishikawa-hbf.jp/?page_id=213" },
+  async collect({ fetchHtml, season, url }) {
+    const index = await fetchHtml(url);
+    if (!index) return [];
+    /*
+      ★**お知らせの見出しが優勝校を持っている**
+      （「第１０８回全国高等学校野球選手権石川大会 遊学館が優勝」）。
+      PDFとは別の場所から来る事実なので、検算に使う。
+    */
+    const posts = [];
+    for (const link of dailyLinks(index, url, { hrefPattern: /\?p=\d+/ })) {
+      const m = link.label.match(/第(\d+)回全国高等学校野球選手権石川大会\s*(\S+?)が優勝/);
+      if (m) posts.push({ url: link.url, round: Number(m[1]), champion: m[2] });
+    }
+    if (!posts.length) {
+      console.log("  ⚠️ 石川: 優勝を伝えるお知らせが見つからない。出典の作りが変わった可能性がある");
+      return [];
+    }
+    posts.sort((a, b) => b.round - a.round);
+
+    for (const post of posts.slice(0, 2)) {
+      const html = await fetchHtml(post.url);
+      await sleep(this.politenessMs);
+      if (!html) continue;
+      const pdfs = dailyLinks(html, post.url, {
+        hrefPattern: /\.pdf$/i,
+        labelPattern: /試合結果|勝ち上がり/,
+      });
+      if (!pdfs.length) {
+        console.log(`  ⚠️ 石川: 第${post.round}回のお知らせに試合結果のPDFが無い`);
+        continue;
+      }
+      for (const pdf of pdfs.slice(0, 3)) {
+        const pages = await fetchPdfPages(pdf.url, { headers: UA });
+        await sleep(this.politenessMs);
+        if (!pages?.length) continue;
+        const games = this.readSheet(pages, season, post);
+        if (games?.length) return games;
+      }
+    }
+    return [];
+  },
+  /**
+   * PDF全体を読む。**組めなければ空**（1試合も出さない）。
+   * @param post お知らせから読んだ `{ round, champion }`
+   */
+  readSheet(pages, season, post) {
+    const flat = pages.flatMap((p) => p.lines.map((l) => normalize(l.text.replace(/\t/g, ""))));
+    const tournament = flat.map((t) => t.match(/第\d+回全国高等学校野球選手権石川大会/)?.[0]).find(Boolean);
+    if (!tournament) return null;
+    const no = Number(tournament.match(/第(\d+)回/)[1]);
+    if (no !== post.round) return null;
+    // 選手権の回数は 年 - 1918
+    const year = no + 1918;
+
+    /** やぐら表（1ページ目）の「優勝 ◯◯」。**枝は読まない** */
+    const printedChampion = flat
+      .map((t) => t.match(/^優勝\s*(\S+)$/)?.[1])
+      .find(Boolean);
+
+    const ROUNDS = new Set(["1回戦", "2回戦", "3回戦", "4回戦", "準々決勝", "準決勝", "決勝"]);
+    /** `6x` `X` `１２` を数にする。**`Number("6x")` は NaN なので直に渡さない** */
+    const score = (t) => {
+      const s = normalize(t.trim());
+      const m = s.match(/^(\d{1,2})[xX]?$/);
+      return m ? Number(m[1]) : null;
+    };
+
+    const games = [];
+    // ★回戦と日付は**ページをまたいで続く**。ページごとに捨てないこと
+    let round = null;
+    let date = null;
+    for (const page of pages) {
+      const lines = page.lines;
+      for (let i = 0; i < lines.length; i++) {
+        const line = lines[i];
+        const text = normalize(line.items.map((it) => it.text.trim()).join(""));
+        if (ROUNDS.has(text)) {
+          round = text;
+          continue;
+        }
+        const d = text.match(/令和(\d+)年(\d+)月(\d+)日/);
+        if (d) {
+          // ★**和暦と大会回数を突き合わせる**（令和は 2018 + N）。ずれたら出さない
+          if (2018 + Number(d[1]) !== year) {
+            console.log(`  ⚠️ 石川: 日付の年（令和${d[1]}）が大会の年（${year}）と合わない。1試合も出さない`);
+            return [];
+          }
+          date = `${year}-${String(+d[2]).padStart(2, "0")}-${String(+d[3]).padStart(2, "0")}`;
+          continue;
+        }
+        const marks = line.items.filter((it) => it.text.trim().startsWith("◆"));
+        if (!marks.length) continue;
+        if (!round || !date) {
+          console.log("  ⚠️ 石川: 回戦か日付が分からない試合がある。1試合も出さない");
+          return [];
+        }
+        const rows = [lines[i + 1], lines[i + 2]];
+        if (!rows[0] || !rows[1]) continue;
+
+        /*
+          校名の行。**ラベル列（枠の左端から 10〜35）に何も無い**行で、
+          先攻（+41 付近）と後攻（+106 付近）の2つが並ぶ。
+          あいだに「（5回コールド）」の行が入ることがあるので、少し下まで探す。
+        */
+        let nameRow = null;
+        for (let k = i + 3; k < Math.min(i + 8, lines.length); k++) {
+          const off = lines[k].items.map((it) => it.x - marks[0].x);
+          if (off.some((o) => o >= 10 && o <= 35)) continue;
+          if (off.some((o) => o >= 36 && o <= 50) && off.some((o) => o >= 100 && o <= 115)) {
+            nameRow = lines[k];
+            break;
+          }
+        }
+        if (!nameRow) {
+          console.log(`  ⚠️ 石川: 校名の行が読めない枠がある（${round}・${date}）。1試合も出さない`);
+          return [];
+        }
+
+        for (const mark of marks) {
+          const at = (row, lo, hi) =>
+            row.items.filter((it) => it.x - mark.x >= lo && it.x - mark.x <= hi).sort((p, q) => p.x - q.x);
+          const sides = rows.map((row) => {
+            const innings = at(row, 38, 145).map((it) => score(it.text)).filter((v) => v !== null);
+            const total = at(row, 152, 182).map((it) => score(it.text)).filter((v) => v !== null);
+            return { innings, total: total.at(-1) ?? null };
+          });
+          const names = at(nameRow, 36, 115).map((it) => it.text.trim());
+          if (names.length !== 2 || sides.some((s) => s.total === null || !s.innings.length)) {
+            console.log(`  ⚠️ 石川: 読めない枠がある（${round}・${date}）。1試合も出さない`);
+            return [];
+          }
+          // ★**試合ごとの検算**: 各回の得点の和 == 印刷された合計
+          const bad = sides.find((s) => s.innings.reduce((x, y) => x + y, 0) !== s.total);
+          if (bad) {
+            console.log(
+              `  ⚠️ 石川: イニングの和が合計と合わない（${names.join(" vs ")}・${round}）。1試合も出さない`,
+            );
+            return [];
+          }
+          games.push({
+            date,
+            season,
+            tournament,
+            round,
+            venue: mark.text.trim().replace(/^◆/, ""),
+            teams: [
+              { display: names[0], score: sides[0].total, won: sides[0].total > sides[1].total },
+              { display: names[1], score: sides[1].total, won: sides[1].total > sides[0].total },
+            ],
+          });
+        }
+      }
+    }
+    if (!games.length) return [];
+
+    /*
+      ---- 勝ち上がりの検算 ----
+      ★**組み立て型の県には無い検算。** 石川で以前すり抜けた
+      「構造は合うのに対戦相手が違う」は、ここで必ず捕まる。
+    */
+    const ORDER = ["1回戦", "2回戦", "3回戦", "4回戦", "準々決勝", "準決勝", "決勝"];
+    const played = ORDER.filter((r) => games.some((g) => g.round === r));
+    let winners = null;
+    for (const r of played) {
+      const gs = games.filter((g) => g.round === r);
+      const teams = gs.flatMap((g) => g.teams.map((t) => t.display));
+      if (winners) {
+        const missing = winners.filter((w) => !teams.includes(w));
+        if (missing.length) {
+          console.log(`  ⚠️ 石川: ${r} に出ていない前の回戦の勝者がある（${missing.join("・")}）。1試合も出さない`);
+          return [];
+        }
+      }
+      winners = gs.map((g) => g.teams.find((t) => t.won)?.display).filter(Boolean);
+      if (winners.length !== gs.length) {
+        console.log(`  ⚠️ 石川: ${r} に引き分けがある。読み方が違う可能性があるので1試合も出さない`);
+        return [];
+      }
+    }
+    const champion = winners[0];
+    const entries = new Set(games.flatMap((g) => g.teams.map((t) => t.display)));
+    if (entries.size - games.length !== 1) {
+      console.log(`  ⚠️ 石川: ${entries.size} チームに対し ${games.length} 試合（${entries.size - 1} のはず）。1試合も出さない`);
+      return [];
+    }
+    /*
+      ★**優勝校を2か所と突き合わせる。**
+      やぐら表の「優勝 ◯◯」と、連盟のお知らせの見出し「◯◯が優勝」。
+      どちらも**枠のスコアとは別の場所から来る事実**。
+    */
+    const same = (a, b) => Boolean(a) && Boolean(b) && (a.includes(b) || b.includes(a));
+    if (!same(post.champion, champion) || (printedChampion && !same(printedChampion, champion))) {
+      console.log(
+        `  ⚠️ 石川: 優勝校が一致しない（お知らせ「${post.champion}」/ 表「${printedChampion ?? "—"}」/ ` +
+          `決勝の勝者「${champion}」）。1試合も出さない`,
+      );
+      return [];
+    }
+    console.log(
+      `  （${tournament}: ${games.length} 試合 / 優勝 ${champion} / ${entries.size} チーム・**スコア表から**）`,
+    );
+    return games;
+  },
+};
+
+/**
  * ここに県を足していく。
  *
  * ★**規約で制限のある連盟のサイトは足さないこと。**
@@ -2862,6 +3123,7 @@ const ADAPTERS = [
   hiroshima,
   mie,
   kagoshima,
+  ishikawa,
 ];
 
 // ------------------------------------------------------------------
@@ -3035,6 +3297,18 @@ const DISTRICT_ALIASES = {
   "広島\t庄原実": "shobarajitsugyo",
   "広島\t加計芸北": "kakegeihoku",
   "広島\t広島中等教育": "hiroshima-chuto",
+  /*
+    石川。結果表は「金大附属」と略す。**国立なのでこのサイトの収録対象。**
+
+    ★**私立の「金沢学院大学附属」と紛らわしいので、同じPDFの中で
+    書き分けられていることを確かめてから書いた**（2026-08-15）:
+
+      金大附属     → 金沢大学人間社会学域学校教育学類附属（**国立**）  ← ここで受ける
+      金沢学院大附 → **私立**金沢学院大学附属（シード欄では「金沢学院大学附属」と略さず書かれている）
+
+    学校マスタの石川県に「金沢大学」を含む学校はこの1校だけ。
+  */
+  "石川\t金大附属": "kanazawadaigakuningenshakaigakuikigakkokyoikugakuruifuzoku",
 };
 
 /**

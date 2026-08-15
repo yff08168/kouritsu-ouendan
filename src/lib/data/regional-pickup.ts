@@ -607,32 +607,6 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       ]
     },
     {
-      "districtSlug": "kanagawa",
-      "district": "神奈川",
-      "sourceName": "神奈川高校野球ステーション",
-      "sourceUrl": "https://www.kanagawa-baseball.com/",
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権神奈川大会",
-      "round": "5回戦",
-      "teams": [
-        {
-          "display": "市ケ尾",
-          "score": 3,
-          "won": true,
-          "name": "市ケ尾高校",
-          "slug": "ichigao"
-        },
-        {
-          "display": "川和",
-          "score": 1,
-          "won": false,
-          "name": "川和高校",
-          "slug": "kawawa"
-        }
-      ]
-    },
-    {
       "districtSlug": "saitama",
       "district": "埼玉",
       "sourceName": "埼玉高校野球情報局",
@@ -707,84 +681,6 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": false,
           "name": "日本航空",
           "slug": null
-        }
-      ]
-    },
-    {
-      "districtSlug": "kanagawa",
-      "district": "神奈川",
-      "sourceName": "神奈川高校野球ステーション",
-      "sourceUrl": "https://www.kanagawa-baseball.com/",
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権神奈川大会",
-      "round": "4回戦",
-      "teams": [
-        {
-          "display": "市ケ尾",
-          "score": 5,
-          "won": true,
-          "name": "市ケ尾高校",
-          "slug": "ichigao"
-        },
-        {
-          "display": "川崎工科",
-          "score": 2,
-          "won": false,
-          "name": "川崎工科高校",
-          "slug": "kawasakikoka"
-        }
-      ]
-    },
-    {
-      "districtSlug": "kanagawa",
-      "district": "神奈川",
-      "sourceName": "神奈川高校野球ステーション",
-      "sourceUrl": "https://www.kanagawa-baseball.com/",
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権神奈川大会",
-      "round": "4回戦",
-      "teams": [
-        {
-          "display": "横浜清陵",
-          "score": 10,
-          "won": true,
-          "name": "横浜清陵高校",
-          "slug": "yokohamaseiryo"
-        },
-        {
-          "display": "多摩",
-          "score": 5,
-          "won": false,
-          "name": "多摩高校",
-          "slug": "kanagawa-tama"
-        }
-      ]
-    },
-    {
-      "districtSlug": "kanagawa",
-      "district": "神奈川",
-      "sourceName": "神奈川高校野球ステーション",
-      "sourceUrl": "https://www.kanagawa-baseball.com/",
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権神奈川大会",
-      "round": "4回戦",
-      "teams": [
-        {
-          "display": "横浜商業",
-          "score": 12,
-          "won": true,
-          "name": "横浜商業高校",
-          "slug": "yokohamashogyo"
-        },
-        {
-          "display": "新羽",
-          "score": 2,
-          "won": false,
-          "name": "新羽高校",
-          "slug": "nippa"
         }
       ]
     },

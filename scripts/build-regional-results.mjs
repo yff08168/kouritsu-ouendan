@@ -2275,6 +2275,8 @@ function readTwoColumnBracket(raw, opts) {
         "middle"（広島・三重）… 左右の境目に**2つ並べて**書かれている
         "center"（鹿児島）    … **半分ごとの準決勝と同じ帯**に、中央をはさんで
                                  1つずつ向かい合って書かれている
+        "innermost"（千葉）   … 中央の帯に**深い回戦のスコアが何段も並ぶ**ので、
+                                 **境目をはさむ組のうちいちばん内側**を決勝とする
 
       後者は `assembleSlotBracket({ finalInCenter: true })` が
       `centerScore` として取り出すので、それを2つ合わせて決勝にする。
@@ -2286,6 +2288,10 @@ function readTwoColumnBracket(raw, opts) {
     expand,
     /** 表の別の場所に書いてある優勝校と決勝のスコア。**合わなければ1試合も出さない** */
     verify,
+    /** 校名の掃除（字間の空白など） */
+    cleanName = (s) => s,
+    /** 半分ごとの読み取り範囲。既定は境目で2つに割るだけ */
+    ranges,
   } = opts;
   const flat = raw.lines.map((l) => normalize(l.text.replace(/\t/g, "")));
   const tournament = flat.map((t) => t.match(titlePattern)?.[0]).find(Boolean);
@@ -2308,7 +2314,16 @@ function readTwoColumnBracket(raw, opts) {
       orientPage(page, {
         slotAxis: "y",
         flip: i === 1,
-        range: i === 0 ? [0, half] : [half, 1e6],
+        /*
+          ★**校名の欄の外側を切り落とせるようにしてある**（`ranges`。千葉）。
+          千葉はシード記号（Ａ・Ｂ・Ｃ）が**校名とは別の列**に並ぶ
+          （左は x=31、右は x=561。校名は左 37〜78、右 513〜556 で、
+          あいだに隙間がある）。この列を読み込むと校名にくっついてしまい、
+          さらに**記号でない1文字が紛れていることがある**
+          （右の x=560 に「宣」が1つあり、`千葉東` が `千葉東宣` になっていた）。
+          **記号だけを消す作りにすると、そういう字を取りこぼす。列ごと外す。**
+        */
+        range: ranges?.[i] ?? (i === 0 ? [0, half] : [half, 1e6]),
         rowTolerance,
       }),
       {
@@ -2352,6 +2367,41 @@ function readTwoColumnBracket(raw, opts) {
 
   const items = page.lines.flatMap((l) => l.items.map((i) => ({ x: i.x, y: l.y, t: i.text.trim() })));
   const mid = items.filter((i) => Math.abs(i.x - half) < half * 0.2);
+
+  /*
+    ★**中央に深い回戦のスコアが何段も並ぶ表がある**（`finalAt: "innermost"`。千葉）。
+
+    左右それぞれの4回戦〜準決勝が、境目をはさんで対称に置かれるので、
+    「境目をはさむ2つ」は**何組も**見つかる（千葉は14段）。
+    **決勝はいちばん深い＝境目にいちばん近い組**なので、内側から選ぶ。
+
+    ★**「境目にいちばん近い数字2つ」では駄目。** 千葉は中央に
+    「優勝 拓殖大紅陵高等学校（24年振り6回目）」が縦書きで入っており、
+    **その `2` `4` `6` が境目のほぼ真上に来る。**
+    **同じ帯（y）で境目を左右にまたぐ組**に限れば、この文字列は候補にならない。
+  */
+  if (finalAt === "innermost") {
+    const byRow = new Map();
+    for (const i of mid) {
+      if (!/^\d{1,2}$/.test(i.t)) continue;
+      const k = [...byRow.keys()].find((v) => Math.abs(v - i.y) <= 1) ?? i.y;
+      if (!byRow.has(k)) byRow.set(k, []);
+      byRow.get(k).push(i);
+    }
+    let best = null;
+    for (const row of byRow.values()) {
+      const left = row.filter((i) => i.x < half).sort((a, b) => b.x - a.x)[0];
+      const right = row.filter((i) => i.x > half).sort((a, b) => a.x - b.x)[0];
+      if (!left || !right) continue;
+      const span = right.x - left.x;
+      if (!best || span < best.span) best = { left, right, span };
+    }
+    if (!best) {
+      console.log(`  ⚠️ ${district}: ${tournament} の決勝が中央に見つからない。1試合も出さない`);
+      return [];
+    }
+    finalPair = { pair: [Number(best.left.t), Number(best.right.t)], date: null, venue: null };
+  }
   const nums = mid.filter((i) => /^\d{1,2}$/.test(i.t) || /^\d{1,2}\s+\d{1,2}$/.test(i.t));
   // 「3 4」のように2つが1断片に潰れていることがある（広島が実際そうだった）
   const glued = nums.find((i) => /^\d{1,2}\s+\d{1,2}$/.test(i.t));
@@ -2380,9 +2430,9 @@ function readTwoColumnBracket(raw, opts) {
     return [];
   }
 
-  const [A, B] = halves.map((h) => h.champion);
+  const [A, B] = halves.map((h) => cleanName(h.champion));
   const built = [
-    ...halves.flatMap((h) => h.games),
+    ...halves.flatMap((h) => h.games).map((g) => ({ ...g, a: cleanName(g.a), b: cleanName(g.b) })),
     { round: "決勝", a: A, b: B, sa: pair[0], sb: pair[1], date: finalDate, venue: finalVenue },
   ];
 
@@ -2431,15 +2481,20 @@ function readTwoColumnBracket(raw, opts) {
       **勝敗と点数のほうは完全一致を要求する**（そこが緩むと検算にならない）。
     */
     const same = (a, b) => a.includes(b) || b.includes(a);
+    /*
+      ★**点数が書かれていない出典もある**（千葉は表の中央に優勝校と準優勝校の
+      名前だけ縦書きされている）。**その場合は校名だけを突き合わせる。**
+      点数があるなら完全一致を要求する。
+    */
     const ok =
       same(verify.champion, champ) &&
       same(verify.runnerUp, runner) &&
-      score[0] === verify.score[0] &&
-      score[1] === verify.score[1];
+      (!verify.score || (score[0] === verify.score[0] && score[1] === verify.score[1]));
     if (!ok) {
+      const printed = verify.score ? ` ${verify.score[0]}-${verify.score[1]} ` : " / ";
       console.log(
         `  ⚠️ ${district}: 決勝が出典の記載と合わない` +
-          `（記載「${verify.champion} ${verify.score[0]}-${verify.score[1]} ${verify.runnerUp}」/ ` +
+          `（記載「${verify.champion}${printed}${verify.runnerUp}」/ ` +
           `組み立て「${champ} ${score[0]}-${score[1]} ${runner}」）。1試合も出さない`,
       );
       return [];
@@ -3332,6 +3387,152 @@ const gifu = {
 };
 
 /**
+ * 千葉県高等学校野球連盟（`chbf.or.jp`）。
+ * ★**このリポジトリでいちばん大きい大会**（148チーム・147試合。2026-08-15）。
+ *
+ * ★**岐阜と同じく「一球速報の県」という分類が誤りだった。**
+ * 連盟が自分でやぐら表（試合結果入り）のPDFを出している。
+ *
+ * ------------------------------------------------------------------
+ * ★ 規約と robots.txt
+ *
+ *   転載・複製・営利の制限は**どのページにも無い**
+ *   （毎ページに出る「禁止」はサイドバーの「動画撮影禁止区域」で、再利用の話ではない）。
+ *
+ *   ★**robots.txt は 199件の Disallow を持つが、全部が個別のURL指定で、
+ *   2018〜2023年の内部書類だけ**（部員登録書・選手資格証明書・オーダー用紙・
+ *   ガイドライン・審判資料など）。**結果と組合せは1件も入っていない。**
+ *   2024年以降のファイルも1件も無い。目当てのPDFは対象外。
+ *   ★**他の `/wp-content/uploads/` 配下を無条件に取らないこと。**
+ *
+ * ------------------------------------------------------------------
+ * ★ 紙の形（やぐら型・左右2段組）
+ *
+ *   スロット番号が**各校名の隣に縦に**並ぶ（左 1〜74 が x≈86、右 75〜148 が x≈505）。
+ *   中央 x≈294 で合流する。`orientPage` で入れ替えれば京都・広島と同じ扱いになる。
+ *
+ *   ★**決勝は中央の帯にある**が、**左右の深い回戦も同じ帯に何段も並ぶ**ので、
+ *   `finalAt: "innermost"`（境目をまたぐ組のうちいちばん内側）で取る。
+ *
+ *   ★**校名にシード記号が付く**（左は先頭 `Ａ学館浦安`、右は末尾 `中央学院Ｃ`）。
+ *   Ａ・Ｂ・Ｃ の3種だけ。**全角ラテン文字を無条件に落とさないこと** —
+ *   「光英ＶＥＲＩＴＡＳ」が壊れる。字間の空白も落とす（日本の校名に空白は入らない）。
+ *
+ * ------------------------------------------------------------------
+ * ★ 日付が無い（三重と同じ）
+ *
+ *   1試合ぶんの日付が1つも書かれていない。**推測で埋めない。**
+ *   画面は回戦ごとに並べる（`groupGamesForDistrict`）。
+ *   ★**日付の無い試合はトップの抜粋と勝ち上がりに出さない**ので、
+ *   147試合あっても出るのは県のページ（`/prefectures/chiba`）だけ。
+ *
+ * ------------------------------------------------------------------
+ * ★ 検算（京都に次いで強い）
+ *
+ *   - ★**優勝と準優勝の両方**が表の中央に縦書きされている
+ *     （「優勝 拓殖大紅陵高等学校（24年振り6回目）」「準優勝 専修大松戸高等学校」）。
+ *     **準優勝まで突き合わせられるのは千葉が初めて。**
+ *     左半分の勝ち上がりが優勝校・右半分が準優勝校と一致しなければ1試合も出さない
+ *   - N チーム − 試合数 = 1（148 − 147）
+ *   - 各回戦の数字の個数が試合数の2倍（`slot-bracket.mjs` が強制する）
+ *
+ *   ★**連盟のお知らせも外から裏付けている**（「千葉県代表の拓殖大紅陵高校
+ *   （24年ぶり６度目）」）。表とは別の場所から来る事実。
+ */
+const chiba = {
+  slug: "chiba",
+  district: "千葉",
+  name: "千葉県高等学校野球連盟",
+  siteUrl: "https://chbf.or.jp/",
+  politenessMs: 2000,
+  // **夏だけ。** 春季・秋季の表は形を確かめてから足すこと
+  seasons: { summer: "https://chbf.or.jp/wp-sitemap-posts-oshirase2-1.xml" },
+  async collect({ fetchHtml, season, url }) {
+    /*
+      ★**大会の記事はトップからは辿れない**（秋季に差し替わると消える）。
+      サイトマップに残るので、そこから「第N回…千葉大会について」を探す。
+      記事には**最新版のPDFだけ**が貼ってある（大会中は ①〜⑬ と更新される）。
+    */
+    const xml = await fetchHtml(url);
+    if (!xml) return [];
+    const posts = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)]
+      .map((m) => ({ url: m[1], name: decodeURIComponent(m[1]) }))
+      .filter((p) => /全国高等学校野球選手権千葉大会/.test(normalize(p.name)));
+    if (!posts.length) {
+      console.log("  ⚠️ 千葉: 選手権千葉大会の記事がサイトマップに無い。出典の作りが変わった可能性がある");
+      return [];
+    }
+    for (const post of posts.slice(0, 3)) {
+      const html = await fetchHtml(post.url);
+      await sleep(this.politenessMs);
+      if (!html) continue;
+      const pdfs = dailyLinks(html, post.url, { hrefPattern: /\.pdf$/i });
+      for (const pdf of pdfs.slice(0, 4)) {
+        const parsed = await fetchPdfPages(pdf.url, { headers: UA });
+        await sleep(this.politenessMs);
+        if (!parsed?.length) continue;
+        for (const raw of parsed) {
+          const games = this.readSheet(raw, season);
+          if (games) return games;
+        }
+      }
+    }
+    return [];
+  },
+  /** 1枚のやぐら表を読む。**目当ての紙でなければ null**（呼ぶ側は次のPDFへ） */
+  readSheet(raw, season) {
+    const flat = raw.lines.map((l) => normalize(l.text.replace(/\t/g, "")));
+    if (!flat.some((t) => /第\d+回全国高等学校野球選手権千葉大会/.test(t))) return null;
+
+    /*
+      表の中央に縦書きされた「優勝 ◯◯高等学校（…）」「準優勝 ◯◯高等学校」。
+      **枝のスコアとは別の場所から来る事実**なので検算に使う。
+    */
+    const HALF = 294;
+    const centre = raw.lines
+      .flatMap((l) => l.items.map((i) => ({ x: i.x, y: l.y, t: i.text.trim() })))
+      .filter((i) => Math.abs(i.x - HALF) <= 10)
+      .sort((a, b) => b.y - a.y)
+      .map((i) => i.t)
+      .join("");
+    const champion = centre.match(/(?:^|[^準])優勝(\S+?)高等学校/)?.[1] ?? null;
+    const runnerUp = centre.match(/準優勝(\S+?)高等学校/)?.[1] ?? null;
+    if (!champion || !runnerUp) {
+      console.log("  ⚠️ 千葉: 表の中央から優勝・準優勝を読めなかった。検算できないので1試合も出さない");
+      return [];
+    }
+
+    return readTwoColumnBracket(raw, {
+      district: "千葉",
+      titlePattern: /第\d+回全国高等学校野球選手権千葉大会/,
+      half: HALF,
+      rowTolerance: 3,
+      // 左は上から、右は下から読む（スロットは縦、校名は横書き）
+      nameOrder: ["asc", "desc"],
+      season,
+      // ★**日付が1つも書かれていない**ので、日付での検算はできない
+      hasDates: false,
+      finalAt: "innermost",
+      /*
+        ★**シード記号の列を範囲ごと外す**（2026-08-15 に実データで測った）。
+
+          左 … 記号 x=31 ／ 校名 x=37〜78（74スロットすべて 37 から始まる）
+          右 … 校名 x=513〜556 ／ 記号 x=561（556〜558 は空）
+
+        **記号だけを文字で消す作りにしないこと。** 右の x=560 に
+        記号でない「宣」が1つあり、`千葉東` が `千葉東宣` になっていた。
+        文字で消す方式では、こういう字を取りこぼして**画面に誤った校名が出る**。
+        ★**全角ラテン文字を無条件に落とすのも駄目**（「光英ＶＥＲＩＴＡＳ」が壊れる）。
+      */
+      ranges: [[35, HALF], [HALF, 558]],
+      // 字間の空白を詰める（日本の校名に空白は入らない）
+      cleanName: (s) => s.replace(/\s+/g, ""),
+      verify: { champion, runnerUp },
+    });
+  },
+};
+
+/**
  * ここに県を足していく。
  *
  * ★**規約で制限のある連盟のサイトは足さないこと。**
@@ -3364,6 +3565,7 @@ const ADAPTERS = [
   kagoshima,
   ishikawa,
   gifu,
+  chiba,
 ];
 
 // ------------------------------------------------------------------
@@ -3563,6 +3765,23 @@ const DISTRICT_ALIASES = {
   "岐阜\t県岐阜商": "gifushogyo",
   "岐阜\t市岐阜商": "gifu-gifushogyo",
   "岐阜\t岐阜総合": "gifusogogakuen",
+  /*
+    千葉（2026-08-15）。★**同名の県立と市立が5組ある**（このリポジトリで最多）。
+    学校マスタではどちらも同じ名前なので、規則だけでは候補が2つになって
+    結び付かない（**曖昧なら結び付けないのが正しい動作**）。
+
+    ★**出典は市立だけ「市立◯◯」と書き、県立は school 名だけで書く。**
+    同じ表に両方の書き方が別のスロットとして載っている（市立千葉＝13番・千葉＝95番）
+    ので、**「市立が付かないほうが県立」は推測ではなく表の読み取り**。
+  */
+  "千葉\t市立千葉": "chiba-chiba",
+  "千葉\t市立船橋": "chiba-funabashi",
+  "千葉\t市立柏": "chiba-kashiwa",
+  "千葉\t市立松戸": "chiba-matsudo",
+  "千葉\t市立銚子": "chiba-choshi",
+  "千葉\t千葉": "chiba",
+  "千葉\t船橋": "funabashi",
+  "千葉\t柏": "kashiwa",
 };
 
 /**

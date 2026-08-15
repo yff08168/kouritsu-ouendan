@@ -112,6 +112,9 @@ function RegionalRow({ game }: { game: RegionalPickup }) {
   const other = game.teams.find((t) => t !== ours);
   if (!ours || !other) return null;
 
+  // ★引き分けを「負け」と書かない（`RegionalDistrictCard` と同じ理由）
+  const drawn = ours.score === other.score;
+
   return (
     // 甲子園の速報カード（LiveResultsCard）と同じ組み方にそろえてある
     <div className="flex items-center gap-3 py-3.5 sm:gap-4">
@@ -124,9 +127,9 @@ function RegionalRow({ game }: { game: RegionalPickup }) {
             : "bg-navy-50 text-ink-muted ring-line",
         )}
       >
-        {ours.won ? "○" : "●"}
+        {ours.won ? "○" : drawn ? "△" : "●"}
       </span>
-      <span className="sr-only">{ours.won ? "勝ち" : "負け"}</span>
+      <span className="sr-only">{ours.won ? "勝ち" : drawn ? "引き分け" : "負け"}</span>
 
       <p className="w-16 shrink-0 text-xs leading-tight text-ink-faint sm:w-28 sm:text-sm">
         <Link

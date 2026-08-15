@@ -3093,6 +3093,245 @@ const ishikawa = {
 };
 
 /**
+ * 岐阜県高等学校野球連盟（`ghbf.asfsite.jp`）。
+ * ★**このリポジトリでいちばん素直な出典**（2026-08-15）。
+ *
+ * ------------------------------------------------------------------
+ * ★ 「一球速報の県」という分類が誤りだった
+ *
+ *   READMEは岐阜を「結果を一球速報に載せている3県」に入れていたが、
+ *   **大会ページに一球速報は無く、連盟が日別のスコア表PDFを出していた**。
+ *   千葉・福井も同じ可能性があるので、同じ分類の県は見直すこと。
+ *
+ * ------------------------------------------------------------------
+ * ★ 紙の形（組み立ても略称の推測も要らない）
+ *
+ *     第108回全国高等学校野球選手権岐阜県大会  試合結果報告書
+ *     令和８年 7 月 28 日 (火)  場所： ぎふしん長良川球場
+ *     【第１試合】 試合時間 9時32分～12時6分
+ *     高校名  1  2  3  4  5  6  7  8  9  10 11 12  計   ← ここが列の x をくれる
+ *     中京    1  0  0  2  0  0  2  0  0            5
+ *     大垣日大 0  0  0  0  0  0  2  0  0            2
+ *
+ *   **見出し行が列の座標を持っている**ので、断片の並び順に頼らずに読める。
+ *   ★**断片の順で読むと落ちる**（実測で14試合が検算に落ちた）。
+ *
+ *   ★**サヨナラは `1×`（全角の×）。** `^\d+$` で弾くとその回が消え、
+ *   イニングの和が合計と合わなくなる。**`Number("1×")` は NaN。**
+ *
+ * ------------------------------------------------------------------
+ * ★ 持っているもの / 持っていないもの
+ *
+ *   あり … 日付・球場・第N試合・**正式な校名**・各回の得点・合計
+ *   なし … ★**回戦**（1回戦・2回戦…）。**三重とちょうど逆。**
+ *          ファイル名に書いてある準決勝・決勝だけは分かるので、そこは入れる。
+ *          **それ以外を日付から推測しない**（順延と再試合があるので当てられない）
+ *
+ * ------------------------------------------------------------------
+ * ★ 検算
+ *
+ *   1. **試合ごと**: 各回の得点の和 == 印刷された合計。62/62 一致
+ *   2. のべ出場校 − 試合数（★下の「校名の揺れ」を畳んでから数えること）
+ *   3. 決勝のPDFに「中京高校 7年ぶり8回目の甲子園出場」と書いてある
+ *
+ *   ★**校名の揺れがある**（同じ学校が回戦で書き分けられる）。実測で5組:
+ *   中津商/中津商業・多治見工/多治見工業・岐阜聖徳学園/岐阜聖徳・
+ *   中津川工業/中津川工・大垣商業/大垣商。**畳まないと「差5」になって
+ *   検算が通らない**（学校マスタとの照合は `labelCandidates` が吸収する）。
+ *
+ *   ★**引き分け再試合がある。** 市岐阜商 0-0 県岐阜商（7/18）が
+ *   翌日 0-10 で再試合になった。**引き分けも試合として出す**
+ *   （画面は `RegionalDistrictCard` が △ と書く）。
+ *
+ *   ★**順延の告知がスコア空欄で載る。** 得点が読めない枠は**捨てる**
+ *   （その試合は後日ぶんに載っている）。
+ *
+ * **規約**: トップ・policy・privacy・about・link・sitepolicy を
+ * 「転載・無断・複製・営利・著作権」で検索して**制限の記載なし**。
+ * robots.txt は 404（2026-08-15 に確認）。
+ */
+const gifu = {
+  slug: "gifu",
+  district: "岐阜",
+  name: "岐阜県高等学校野球連盟",
+  siteUrl: "https://ghbf.asfsite.jp/",
+  politenessMs: 1500,
+  // **夏だけ。** 春季・秋季も同じ形の報告書が出るか確かめてから足すこと
+  seasons: { summer: "https://ghbf.asfsite.jp/event/schedule/" },
+  async collect({ fetchHtml, season, url }) {
+    /*
+      大会ページの一覧から「全国高等学校野球選手権岐阜」の回を探す。
+      ★**URLを直書きしない**（毎年 entry-NNNN.html が変わる）。
+    */
+    const index = await fetchHtml(url);
+    if (!index) return [];
+    /*
+      ★**大会の一覧は `<a>` ではなく、ページに埋め込まれたJSON**。
+      `{ "title": "第108回…岐阜大会", "url": "…/entry-6247.html", … }` が並ぶ。
+      `dailyLinks`（`<a>` を読む）では1件も取れない。
+    */
+    const entries = [];
+    for (const m of index.matchAll(/"title":\s*"([^"]+)"\s*,\s*"url":\s*"([^"]+)"/g)) {
+      const round = Number(normalize(m[1]).match(/第(\d+)回全国高等学校野球選手権岐阜/)?.[1]);
+      if (Number.isFinite(round)) entries.push({ url: m[2].replace(/\\\//g, "/"), round });
+    }
+    entries.sort((a, b) => b.round - a.round);
+    if (!entries.length) {
+      console.log("  ⚠️ 岐阜: 選手権岐阜大会のページが一覧に無い。出典の作りが変わった可能性がある");
+      return [];
+    }
+
+    for (const entry of entries.slice(0, 2)) {
+      const html = await fetchHtml(entry.url);
+      await sleep(this.politenessMs);
+      if (!html) continue;
+      /*
+        ★**「試合結果報告書」だけを取る。** 同じページに要項・組合せ表
+        （やぐら）も並んでいる。**やぐらは読まない**（組み立てをしないため）。
+      */
+      const reports = dailyLinks(html, entry.url, {
+        hrefPattern: /\.pdf$/i,
+        labelPattern: /試合結果報告書/,
+      });
+      if (!reports.length) {
+        console.log(`  ⚠️ 岐阜: 第${entry.round}回のページに試合結果報告書が無い`);
+        continue;
+      }
+      const games = [];
+      for (const report of reports) {
+        const pages = await fetchPdfPages(report.url, { headers: UA });
+        await sleep(this.politenessMs);
+        if (!pages?.length) continue;
+        // ファイル名にある回戦だけ拾う（【準決勝0726】【決勝0728】）
+        const round = pickRound(report.label.match(/【([^】]*)】/)?.[1] ?? "");
+        games.push(...this.readReport(pages, season, entry.round, round));
+      }
+      if (games.length) return this.verify(games, entry.round);
+    }
+    return [];
+  },
+  /** 日別の報告書1本を読む */
+  readReport(pages, season, no, round) {
+    const year = no + 1918; // 選手権の回数は 年 - 1918
+    const tournament = `第${no}回全国高等学校野球選手権岐阜大会`;
+    const han = (t) => normalize(t);
+    /** 得点のます。`1×`（サヨナラ）・`X`（打たずに終了）・空欄がある */
+    const cell = (t) => {
+      const s = han(t.trim());
+      if (!s || /^[xX×✕✖]$/.test(s)) return { v: null, blank: true };
+      const m = s.match(/^(\d{1,2})\s*[xX×✕✖]?$/);
+      return m ? { v: Number(m[1]), blank: false } : { v: null, blank: false, bad: true };
+    };
+
+    const out = [];
+    let date = null;
+    let venue = null;
+    for (const page of pages) {
+      const lines = page.lines;
+      for (let i = 0; i < lines.length; i++) {
+        const flat = han(lines[i].text.replace(/\t/g, ""));
+        const d = flat.match(/令和(\d+)年(\d{1,2})月(\d{1,2})日/);
+        if (d) {
+          // ★和暦（2018 + N）と大会の回数から出した年が合うか
+          if (2018 + Number(d[1]) !== year) {
+            console.log(`  ⚠️ 岐阜: 日付の年（令和${d[1]}）が大会の年（${year}）と合わない。この報告書は使わない`);
+            return [];
+          }
+          date = `${year}-${String(+d[2]).padStart(2, "0")}-${String(+d[3]).padStart(2, "0")}`;
+          venue = flat.match(/場所[：:]\s*(.+?)$/)?.[1]?.trim() ?? venue;
+        }
+        if (!/^高校名/.test(flat)) continue;
+
+        // 見出し行が列の x をくれる（1〜12 と 計）
+        const cols = [];
+        let totalX = null;
+        for (const it of lines[i].items) {
+          const t = han(it.text.trim());
+          if (/^\d{1,2}$/.test(t)) cols.push({ n: Number(t), x: it.x });
+          else if (t === "計") totalX = it.x;
+        }
+        cols.sort((a, b) => a.n - b.n);
+        if (cols.length < 9 || totalX === null) continue;
+
+        const rows = [lines[i + 1], lines[i + 2]];
+        if (!rows[0] || !rows[1]) continue;
+        const sides = rows.map((row) => ({
+          name: row.items.filter((it) => it.x < cols[0].x - 12).map((it) => it.text.trim()).join(""),
+          innings: cols.map((c) => {
+            const hit = row.items.find((it) => Math.abs(it.x - c.x) <= 12);
+            return hit ? cell(hit.text) : { v: null, blank: true };
+          }),
+          total: (() => {
+            const hit = rows && row.items.find((it) => Math.abs(it.x - totalX) <= 14);
+            return hit ? cell(hit.text) : { v: null, blank: true };
+          })(),
+        }));
+
+        /*
+          ★**得点の無い枠は捨てる**（順延の告知）。その試合は後日ぶんに載っている。
+          読めない字が混ざっている枠は**捨てずに落とす**（黙って歪めない）。
+        */
+        if (sides.some((s) => s.total.v === null)) continue;
+        if (sides.some((s) => !s.name || s.innings.some((x) => x.bad) || s.total.bad)) {
+          console.log(`  ⚠️ 岐阜: 読めない枠がある（${date}・${sides.map((s) => s.name).join(" vs ")}）。1試合も出さない`);
+          return [];
+        }
+        // ★試合ごとの検算: 各回の得点の和 == 印刷された合計
+        const sums = sides.map((s) => s.innings.reduce((a, x) => a + (x.v ?? 0), 0));
+        if (sums[0] !== sides[0].total.v || sums[1] !== sides[1].total.v) {
+          console.log(
+            `  ⚠️ 岐阜: イニングの和が合計と合わない（${sides.map((s, k) => `${s.name} ${sums[k]}/${s.total.v}`).join(" - ")}）。1試合も出さない`,
+          );
+          return [];
+        }
+        if (!date) {
+          console.log("  ⚠️ 岐阜: 日付の分からない試合がある。1試合も出さない");
+          return [];
+        }
+        out.push({
+          date,
+          season,
+          tournament,
+          round,
+          venue,
+          teams: [
+            { display: sides[0].name, score: sides[0].total.v, won: sides[0].total.v > sides[1].total.v },
+            { display: sides[1].name, score: sides[1].total.v, won: sides[1].total.v > sides[0].total.v },
+          ],
+        });
+      }
+    }
+    return out;
+  },
+  /** 全部そろってからの検算 */
+  verify(games, no) {
+    /*
+      ★**校名の揺れを畳んでから数える。** 同じ学校が回戦で書き分けられる
+      （中津商/中津商業 など5組）。`labelCandidates` と同じ畳み方にそろえる。
+    */
+    const fold = (s) => s.replace(/商業$/, "商").replace(/工業$/, "工").replace(/農業$/, "農").replace(/学園$/, "");
+    const teams = new Set(games.flatMap((g) => g.teams.map((t) => fold(t.display))));
+    /*
+      引き分け再試合があるぶん、試合数はチーム数−1より多くなる。
+      **引き分けを除いた決着した試合が チーム数−1** になるはず。
+    */
+    const decided = games.filter((g) => g.teams[0].score !== g.teams[1].score).length;
+    if (teams.size - decided !== 1) {
+      console.log(
+        `  ⚠️ 岐阜: ${teams.size} チームに対し決着した試合 ${decided}（${teams.size - 1} のはず）。1試合も出さない`,
+      );
+      return [];
+    }
+    const draws = games.length - decided;
+    console.log(
+      `  （第${no}回全国高等学校野球選手権岐阜大会: ${games.length} 試合 / ${teams.size} チーム` +
+        (draws ? ` / 引き分け再試合 ${draws}` : "") + "・**日別のスコア表から**）",
+    );
+    return games;
+  },
+};
+
+/**
  * ここに県を足していく。
  *
  * ★**規約で制限のある連盟のサイトは足さないこと。**
@@ -3124,6 +3363,7 @@ const ADAPTERS = [
   mie,
   kagoshima,
   ishikawa,
+  gifu,
 ];
 
 // ------------------------------------------------------------------
@@ -3309,6 +3549,20 @@ const DISTRICT_ALIASES = {
     学校マスタの石川県に「金沢大学」を含む学校はこの1校だけ。
   */
   "石川\t金大附属": "kanazawadaigakuningenshakaigakuikigakkokyoikugakuruifuzoku",
+  /*
+    岐阜（2026-08-15）。
+
+    ★**岐阜商業は県立と市立の2校があり、学校マスタではどちらも「岐阜商業高校」。**
+    規則だけでは候補が2つになって結び付かない（**曖昧なら結び付けないのが正しい動作**）。
+    出典は「県岐阜商」「市岐阜商」と書き分けているので、そこだけ受ける。
+    `src/lib/school-name.ts` の短縮名（`gifushogyo: "県岐阜商"` /
+    `gifu-gifushogyo: "市岐阜商"`）とまったく同じ対応にしてある。
+
+    「岐阜総合」は岐阜総合学園。`labelCandidates` は「学園」を落とさないので規則では拾えない。
+  */
+  "岐阜\t県岐阜商": "gifushogyo",
+  "岐阜\t市岐阜商": "gifu-gifushogyo",
+  "岐阜\t岐阜総合": "gifusogogakuen",
 };
 
 /**

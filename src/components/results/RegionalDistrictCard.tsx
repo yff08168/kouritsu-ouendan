@@ -134,6 +134,15 @@ function GameRow({ game }: { game: RegionalGame }) {
   const other = game.teams.find((t) => t !== ours);
   if (!ours || !other) return null;
 
+  /*
+    ★**引き分けを「負け」と書かない**（2026-08-15）。
+    高校野球には**引き分け再試合**がある（岐阜の 市岐阜商 0-0 県岐阜商 が
+    翌日 0-10 で再試合になった）。`won` は両方 false になるので、
+    「勝っていない＝負け」と読むと**画面に事実と違うことが出る。**
+    スコアで引き分けを判定する（`won` の否定では区別が付かない）。
+  */
+  const drawn = ours.score === other.score;
+
   return (
     <div className="flex items-center gap-3 py-3 sm:gap-4">
       <span
@@ -145,9 +154,9 @@ function GameRow({ game }: { game: RegionalGame }) {
             : "bg-navy-50 text-ink-muted ring-line",
         )}
       >
-        {ours.won ? "○" : "●"}
+        {ours.won ? "○" : drawn ? "△" : "●"}
       </span>
-      <span className="sr-only">{ours.won ? "勝ち" : "負け"}</span>
+      <span className="sr-only">{ours.won ? "勝ち" : drawn ? "引き分け" : "負け"}</span>
 
       {/*
         ★**回戦は出典に無いことがある**（山梨は準々決勝より前の日に書いていない）。

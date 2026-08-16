@@ -24,4 +24,5 @@ export const REGIONAL_LOADERS: Record<string, () => Promise<RegionalDistrict>> =
   ishikawa: () => import("./ishikawa").then((m) => m.REGIONAL_ISHIKAWA),
   gifu: () => import("./gifu").then((m) => m.REGIONAL_GIFU),
   chiba: () => import("./chiba").then((m) => m.REGIONAL_CHIBA),
+  yamagata: () => import("./yamagata").then((m) => m.REGIONAL_YAMAGATA),
 };

@@ -3533,6 +3533,181 @@ const chiba = {
 };
 
 /**
+ * 山形県高等学校野球連盟（`yamagata-hbf.org`）。
+ * ★**「一球速報の県」に分類していたが誤りだった**（2026-08-16）。
+ * 連盟は結果を **Google Drive** に置いていて、omyutech とは無関係。
+ *
+ * ------------------------------------------------------------------
+ * ★ なぜ Drive のファイルIDを直に持っているのか
+ *
+ *   連盟のサイトはReactのSPAで、**Driveへのリンクは omyutech の告知API
+ *   （`other-api.omyutech.com/otherapi/rest`）からしか辿れない。**
+ *   そのAPIのパス名は難読化された遅延チャンクの中にあり、追いかけても
+ *   **サイトを作り直すたびに壊れる**（chunkのハッシュごと変わる）。
+ *
+ *   ★**IDを固定しても大会中は自動で追随する。** 連盟は**同じファイルを
+ *   上書き更新**しているため（お知らせは6/25付なのに、PDFには7/26の決勝まで
+ *   入っていた）。人が手を入れるのは**新しい大会になったときだけ**。
+ *
+ *   ★**大会名はPDFから読む。** IDと一緒に大会名を書くと、
+ *   ファイルが差し替わったときに**古い大会名のまま出る**。
+ *
+ * ------------------------------------------------------------------
+ * ★ 紙の形（スコア表。組み立ても推測も要らない）
+ *
+ *   開催日   回戦   球場   試合開始時間   一塁側  ー  三塁側   備考
+ *   7月10日(金)  ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形
+ *            1回戦        12時30分   創学館 17 ー 7 米沢東   8回コールド
+ *
+ *   見出し行が列の x をくれる。★**開催日と球場はセルが縦に結合されていて、
+ *   変わったときだけ書かれる**ので、行を上から順に見て持ち回る。
+ *
+ *   ★**回戦の欄は中央揃え。** 「準々決勝」は4文字なので x=98 から始まり、
+ *   「1回戦」（104）「準決勝」（102）より左に出る。**列の左端を 104 にすると
+ *   準々決勝の4試合だけ落ちる**（実際に落ちて 32/36 になった）。
+ *
+ *   ★**スコアが空の行は「予定」**（順延で組み直されたぶん）。同じ対戦が
+ *   空欄と結果ありで2回出てくる。**空欄のほうは捨てる。**
+ *   ★**サヨナラは `11x`**。`Number("11x")` は NaN。
+ *
+ * ------------------------------------------------------------------
+ * ★ 検算
+ *
+ *   - のべ出場校 − 試合数 = 1（37 − 36）
+ *   - **やぐら表のPDFに「優勝：◯◯ 準優勝：◯◯」**があり、決勝の結果と突き合わせる
+ *   - 2026年（第108回）は 5+16+8+4+2+1 = 36試合、優勝 鶴岡東（決勝 5-0 山形城北）で一致
+ *
+ * **規約**: 連盟のサイトに転載の制限は無い。robots.txt は全許可。
+ * 結果PDFは Google Drive にあり、**omyutech からは1件も取っていない。**
+ */
+const yamagata = {
+  slug: "yamagata",
+  district: "山形",
+  name: "山形県高等学校野球連盟",
+  siteUrl: "https://www.yamagata-hbf.org/",
+  politenessMs: 2000,
+  // **夏だけ。** 春季・秋季も同じ形のPDFが出るか確かめてから足すこと
+  seasons: { summer: "https://www.yamagata-hbf.org/" },
+  /*
+    ★**Google Drive のファイルID。新しい大会になったら人が入れ替える。**
+    連盟のトップ → お知らせ「第N回…山形大会【勝ち上がり】・【試合結果一覧】」
+    → 各リンクの `drive.google.com/file/d/<ここ>/view`。
+    **大会名は書かない**（PDFから読む）。
+  */
+  files: {
+    summer: {
+      results: "1lbzp2D9qaueOlUr4jLinl1bEMfZ6fCHq",
+      bracket: "1p-nBzeXkCDs4Joapx5_TaxD-T9gQfJPO",
+    },
+  },
+  async collect({ season }) {
+    const ids = this.files[season];
+    if (!ids) return [];
+    const drive = (id) => `https://drive.google.com/uc?export=download&id=${id}`;
+    const results = await fetchPdfPages(drive(ids.results), { headers: UA });
+    await sleep(this.politenessMs);
+    if (!results?.length) {
+      console.log("  ⚠️ 山形: 試合結果一覧のPDFが読めない。ファイルIDが差し替わった可能性がある");
+      return [];
+    }
+    const bracket = ids.bracket ? await fetchPdfPages(drive(ids.bracket), { headers: UA }) : null;
+    await sleep(this.politenessMs);
+    return this.readSheet(results, bracket, season);
+  },
+  readSheet(pages, bracket, season) {
+    const flat = pages.flatMap((p) => p.lines.map((l) => normalize(l.text.replace(/\t/g, ""))));
+    const tournament = flat.map((t) => t.match(/第\d+回全国高等学校野球選手権山形大会/)?.[0]).find(Boolean);
+    if (!tournament) {
+      console.log("  ⚠️ 山形: PDFに大会名が無い。中身が変わった可能性がある");
+      return [];
+    }
+    // 選手権の回数は 年 - 1918
+    const year = Number(tournament.match(/第(\d+)回/)[1]) + 1918;
+    const ROUND = /^(\d+回戦|準々決勝|準決勝|決勝)$/;
+
+    const games = [];
+    let date = null;
+    let venue = null;
+    for (const page of pages) {
+      for (const line of page.lines) {
+        const txt = (lo, hi) =>
+          line.items.filter((i) => i.x >= lo && i.x < hi).sort((a, b) => a.x - b.x).map((i) => i.text).join("").replace(/\s+/g, "");
+
+        const d = normalize(txt(0, 100)).match(/(\d{1,2})月(\d{1,2})日/);
+        if (d) date = `${year}-${String(+d[1]).padStart(2, "0")}-${String(+d[2]).padStart(2, "0")}`;
+        const v = txt(140, 240);
+        if (v && !/^\d/.test(v)) venue = v;
+
+        // ★列の左端は 90。104 にすると「準々決勝」（中央揃えで x=98）が落ちる
+        const round = normalize(txt(90, 145));
+        if (!ROUND.test(round)) continue;
+
+        const a = txt(300, 365);
+        const b = txt(420, 478);
+        const bar = txt(385, 398);
+        const sa = normalize(txt(365, 385));
+        const sb = normalize(txt(398, 420));
+        if (!a || !b || !/^[ー―—-]$/.test(bar)) {
+          console.log(`  ⚠️ 山形: 読めない行がある（${round}・${a} ${bar} ${b}）。1試合も出さない`);
+          return [];
+        }
+        // ★スコアが空の行は「予定」。順延で組み直されたぶんが同じ対戦で2回出る
+        if (!sa && !sb) continue;
+        // ★サヨナラは `11x`
+        const na = sa.match(/^(\d{1,2})[xX×]?$/);
+        const nb = sb.match(/^(\d{1,2})[xX×]?$/);
+        if (!na || !nb) {
+          console.log(`  ⚠️ 山形: スコアが読めない（${a} ${sa}-${sb} ${b}）。1試合も出さない`);
+          return [];
+        }
+        if (!date) {
+          console.log("  ⚠️ 山形: 日付の分からない試合がある。1試合も出さない");
+          return [];
+        }
+        games.push({
+          date, season, tournament, round, venue,
+          teams: [
+            { display: a, score: +na[1], won: +na[1] > +nb[1] },
+            { display: b, score: +nb[1], won: +nb[1] > +na[1] },
+          ],
+        });
+      }
+    }
+    if (!games.length) return [];
+
+    // ---- 検算 ----
+    const teams = new Set(games.flatMap((g) => g.teams.map((t) => t.display)));
+    if (teams.size - games.length !== 1) {
+      console.log(`  ⚠️ 山形: ${teams.size} チームに対し ${games.length} 試合（${teams.size - 1} のはず）。1試合も出さない`);
+      return [];
+    }
+    /*
+      ★**やぐら表のPDFに「優勝：◯◯ 準優勝：◯◯」**が書いてある。
+      **結果表とは別の紙から来る事実**なので、決勝の結果と突き合わせる。
+    */
+    if (bracket?.length) {
+      const bt = bracket.flatMap((p) => p.lines.map((l) => l.text.replace(/[\t\s]/g, ""))).join("\n");
+      const champion = bt.match(/優勝：(\S+?)準優勝/)?.[1] ?? null;
+      const runnerUp = bt.match(/準優勝：([^【\s]+)/)?.[1] ?? null;
+      const final = games.filter((g) => g.round === "決勝").at(-1);
+      const same = (x, y) => Boolean(x) && Boolean(y) && (x.includes(y) || y.includes(x));
+      if (champion && runnerUp && final) {
+        const win = final.teams.find((t) => t.won)?.display;
+        const lose = final.teams.find((t) => !t.won)?.display;
+        if (!same(champion, win) || !same(runnerUp, lose)) {
+          console.log(
+            `  ⚠️ 山形: 決勝がやぐら表と合わない（表「${champion} / ${runnerUp}」/ 結果「${win} / ${lose}」）。1試合も出さない`,
+          );
+          return [];
+        }
+      }
+    }
+    console.log(`  （${tournament}: ${games.length} 試合 / ${teams.size} チーム・**スコア表から**）`);
+    return games;
+  },
+};
+
+/**
  * ここに県を足していく。
  *
  * ★**規約で制限のある連盟のサイトは足さないこと。**
@@ -3566,6 +3741,7 @@ const ADAPTERS = [
   ishikawa,
   gifu,
   chiba,
+  yamagata,
 ];
 
 // ------------------------------------------------------------------
@@ -3782,6 +3958,18 @@ const DISTRICT_ALIASES = {
   "千葉\t千葉": "chiba",
   "千葉\t船橋": "funabashi",
   "千葉\t柏": "kashiwa",
+  /*
+    山形（2026-08-16）。どちらも公立で、規則では拾えない書き方をされている。
+
+      山形商業   → 山形**市立**商業（出典は「市立」を省く。学校マスタで
+                   「山形」と「商業」を含む学校はこの1校だけ）
+      新庄神室   → 新庄神室**産業**（出典は「産業」を省く）
+                   ★**分校は別**（真室川校・金山校）。出典はそちらを
+                   「新庄神室産業真室川」のように書き分けるので、
+                   「新庄神室」だけなら本校。**分校名が付いたら結び付けない。**
+  */
+  "山形\t山形商業": "yamagatashiritsushogyo",
+  "山形\t新庄神室": "shinjokamurosangyo",
 };
 
 /**

@@ -1044,6 +1044,974 @@ export const REGIONAL_YAMAGUCHI: RegionalDistrict = {
           "slug": null
         }
       ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岩国商業",
+          "score": 1,
+          "won": false,
+          "name": "岩国商業高校",
+          "slug": "iwakunishogyo"
+        },
+        {
+          "display": "長門",
+          "score": 5,
+          "won": true,
+          "name": "長門",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "防府西",
+          "score": 8,
+          "won": true,
+          "name": "防府西高校",
+          "slug": "hofunishi"
+        },
+        {
+          "display": "徳山",
+          "score": 7,
+          "won": false,
+          "name": "徳山高校",
+          "slug": "tokuyama"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "厚狭・厚狭明進",
+          "score": 4,
+          "won": false,
+          "name": "厚狭・厚狭明進",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "防府商工",
+          "score": 5,
+          "won": true,
+          "name": "防府商工高校",
+          "slug": "hofushoko"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岩国工業",
+          "score": 10,
+          "won": true,
+          "name": "岩国工業高校",
+          "slug": "iwakunikogyo"
+        },
+        {
+          "display": "大島商船",
+          "score": 0,
+          "won": false,
+          "name": "大島商船高専",
+          "slug": "oshimashosen"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宇部鴻城",
+          "score": 8,
+          "won": true,
+          "name": "宇部鴻城",
+          "slug": null
+        },
+        {
+          "display": "下松",
+          "score": 5,
+          "won": false,
+          "name": "下松高校",
+          "slug": "kudamatsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "華陵",
+          "score": 9,
+          "won": true,
+          "name": "華陵高校",
+          "slug": "karyo"
+        },
+        {
+          "display": "高水",
+          "score": 1,
+          "won": false,
+          "name": "高水",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "下関北",
+          "score": 1,
+          "won": false,
+          "name": "下関北高校",
+          "slug": "shimonosekikita"
+        },
+        {
+          "display": "宇部フロンティア大学付属香川",
+          "score": 2,
+          "won": true,
+          "name": "宇部フロンティア大学付属香川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "西京",
+          "score": 8,
+          "won": true,
+          "name": "西京高校",
+          "slug": "yamaguchi-saikyo"
+        },
+        {
+          "display": "慶進",
+          "score": 4,
+          "won": false,
+          "name": "慶進",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "誠英",
+          "score": 1,
+          "won": false,
+          "name": "誠英",
+          "slug": null
+        },
+        {
+          "display": "防府",
+          "score": 9,
+          "won": true,
+          "name": "防府高校",
+          "slug": "hofu"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-17",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "防府西",
+          "score": 3,
+          "won": true,
+          "name": "防府西高校",
+          "slug": "hofunishi"
+        },
+        {
+          "display": "防府商工",
+          "score": 1,
+          "won": false,
+          "name": "防府商工高校",
+          "slug": "hofushoko"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "下関西",
+          "score": 3,
+          "won": false,
+          "name": "下関西高校",
+          "slug": "shimonosekinishi"
+        },
+        {
+          "display": "岩国工業",
+          "score": 4,
+          "won": true,
+          "name": "岩国工業高校",
+          "slug": "iwakunikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宇部鴻城",
+          "score": 0,
+          "won": false,
+          "name": "宇部鴻城",
+          "slug": null
+        },
+        {
+          "display": "周防大島",
+          "score": 2,
+          "won": true,
+          "name": "山口県立大学附属周防大島高校",
+          "slug": "yamaguchikenritsudaigakufuzokusuooshima"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "豊浦",
+          "score": 2,
+          "won": true,
+          "name": "豊浦高校",
+          "slug": "toyora"
+        },
+        {
+          "display": "華陵",
+          "score": 1,
+          "won": false,
+          "name": "華陵高校",
+          "slug": "karyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-17",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宇部フロンティア大学付属香川",
+          "score": 9,
+          "won": true,
+          "name": "宇部フロンティア大学付属香川",
+          "slug": null
+        },
+        {
+          "display": "小野田",
+          "score": 4,
+          "won": false,
+          "name": "小野田高校",
+          "slug": "onoda"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-17",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "早鞆",
+          "score": 6,
+          "won": false,
+          "name": "早鞆",
+          "slug": null
+        },
+        {
+          "display": "西京",
+          "score": 9,
+          "won": true,
+          "name": "西京高校",
+          "slug": "yamaguchi-saikyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-17",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "防府",
+          "score": 7,
+          "won": false,
+          "name": "防府高校",
+          "slug": "hofu"
+        },
+        {
+          "display": "山口県鴻城",
+          "score": 8,
+          "won": true,
+          "name": "山口県鴻城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "下関国際",
+          "score": 10,
+          "won": true,
+          "name": "下関国際",
+          "slug": null
+        },
+        {
+          "display": "防府西",
+          "score": 0,
+          "won": false,
+          "name": "防府西高校",
+          "slug": "hofunishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岩国工業",
+          "score": 6,
+          "won": true,
+          "name": "岩国工業高校",
+          "slug": "iwakunikogyo"
+        },
+        {
+          "display": "周防大島",
+          "score": 2,
+          "won": false,
+          "name": "山口県立大学附属周防大島高校",
+          "slug": "yamaguchikenritsudaigakufuzokusuooshima"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "豊浦",
+          "score": 8,
+          "won": true,
+          "name": "豊浦高校",
+          "slug": "toyora"
+        },
+        {
+          "display": "宇部フロンティア大学付属香川",
+          "score": 1,
+          "won": false,
+          "name": "宇部フロンティア大学付属香川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "西京",
+          "score": 2,
+          "won": false,
+          "name": "西京高校",
+          "slug": "yamaguchi-saikyo"
+        },
+        {
+          "display": "山口県鴻城",
+          "score": 3,
+          "won": true,
+          "name": "山口県鴻城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-24",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "下関国際",
+          "score": 8,
+          "won": true,
+          "name": "下関国際",
+          "slug": null
+        },
+        {
+          "display": "岩国工業",
+          "score": 0,
+          "won": false,
+          "name": "岩国工業高校",
+          "slug": "iwakunikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-24",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "豊浦",
+          "score": 6,
+          "won": false,
+          "name": "豊浦高校",
+          "slug": "toyora"
+        },
+        {
+          "display": "山口県鴻城",
+          "score": 8,
+          "won": true,
+          "name": "山口県鴻城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "柳井学園",
+          "score": 7,
+          "won": true,
+          "name": "柳井学園",
+          "slug": null
+        },
+        {
+          "display": "光",
+          "score": 2,
+          "won": false,
+          "name": "光高校",
+          "slug": "hikari"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "萩",
+          "score": 1,
+          "won": false,
+          "name": "萩高校",
+          "slug": "hagi"
+        },
+        {
+          "display": "宇部高専",
+          "score": 2,
+          "won": true,
+          "name": "宇部工業高専",
+          "slug": "ubekogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小野田工業",
+          "score": 8,
+          "won": false,
+          "name": "小野田工業高校",
+          "slug": "onodakogyo"
+        },
+        {
+          "display": "山口",
+          "score": 9,
+          "won": true,
+          "name": "山口高校",
+          "slug": "yamaguchi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宇部商業",
+          "score": 9,
+          "won": true,
+          "name": "宇部商業高校",
+          "slug": "ubeshogyo"
+        },
+        {
+          "display": "下松工業",
+          "score": 0,
+          "won": false,
+          "name": "下松工業高校",
+          "slug": "kudamatsukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "下関工科",
+          "score": 3,
+          "won": true,
+          "name": "下関工科高校",
+          "slug": "shimonosekikoka"
+        },
+        {
+          "display": "萩商工",
+          "score": 0,
+          "won": false,
+          "name": "萩商工高校",
+          "slug": "hagishoko"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "下関商業",
+          "score": 11,
+          "won": true,
+          "name": "下関商業高校",
+          "slug": "shimonosekishogyo"
+        },
+        {
+          "display": "大津緑洋",
+          "score": 1,
+          "won": false,
+          "name": "大津緑洋高校",
+          "slug": "otsuryokuyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岩国",
+          "score": 15,
+          "won": true,
+          "name": "岩国高校",
+          "slug": "iwakuni"
+        },
+        {
+          "display": "柳井",
+          "score": 2,
+          "won": false,
+          "name": "柳井高校",
+          "slug": "yanai"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "美祢青嶺",
+          "score": 4,
+          "won": false,
+          "name": "美祢青嶺高校",
+          "slug": "mineseirei"
+        },
+        {
+          "display": "徳山高専",
+          "score": 5,
+          "won": true,
+          "name": "徳山工業高専",
+          "slug": "tokuyamakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宇部高専",
+          "score": 0,
+          "won": false,
+          "name": "宇部工業高専",
+          "slug": "ubekogyo-kosen"
+        },
+        {
+          "display": "聖光",
+          "score": 1,
+          "won": true,
+          "name": "聖光",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高森・柳井商工・新南陽・下関中等教育",
+          "score": 0,
+          "won": false,
+          "name": "高森・柳井商工・新南陽・下関中等教育",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "山口",
+          "score": 10,
+          "won": true,
+          "name": "山口高校",
+          "slug": "yamaguchi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宇部商業",
+          "score": 0,
+          "won": false,
+          "name": "宇部商業高校",
+          "slug": "ubeshogyo"
+        },
+        {
+          "display": "宇部工業",
+          "score": 10,
+          "won": true,
+          "name": "宇部工業高校",
+          "slug": "ubekogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-17",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南陽工業",
+          "score": 3,
+          "won": true,
+          "name": "南陽工業高校",
+          "slug": "nanyokogyo"
+        },
+        {
+          "display": "下関工科",
+          "score": 2,
+          "won": false,
+          "name": "下関工科高校",
+          "slug": "shimonosekikoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "下関商業",
+          "score": 13,
+          "won": true,
+          "name": "下関商業高校",
+          "slug": "shimonosekishogyo"
+        },
+        {
+          "display": "宇部",
+          "score": 6,
+          "won": false,
+          "name": "宇部高校",
+          "slug": "ube"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "徳山商工",
+          "score": 4,
+          "won": false,
+          "name": "徳山商工高校",
+          "slug": "tokuyamashoko"
+        },
+        {
+          "display": "岩国",
+          "score": 8,
+          "won": true,
+          "name": "岩国高校",
+          "slug": "iwakuni"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-17",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "徳山高専",
+          "score": 0,
+          "won": false,
+          "name": "徳山工業高専",
+          "slug": "tokuyamakogyo"
+        },
+        {
+          "display": "高川学園",
+          "score": 10,
+          "won": true,
+          "name": "高川学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "山口",
+          "score": 0,
+          "won": false,
+          "name": "山口高校",
+          "slug": "yamaguchi"
+        },
+        {
+          "display": "宇部工業",
+          "score": 7,
+          "won": true,
+          "name": "宇部工業高校",
+          "slug": "ubekogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南陽工業",
+          "score": 16,
+          "won": true,
+          "name": "南陽工業高校",
+          "slug": "nanyokogyo"
+        },
+        {
+          "display": "下関商業",
+          "score": 0,
+          "won": false,
+          "name": "下関商業高校",
+          "slug": "shimonosekishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岩国",
+          "score": 1,
+          "won": false,
+          "name": "岩国高校",
+          "slug": "iwakuni"
+        },
+        {
+          "display": "高川学園",
+          "score": 9,
+          "won": true,
+          "name": "高川学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "山口県桜ケ丘",
+          "score": 5,
+          "won": true,
+          "name": "山口県桜ケ丘",
+          "slug": null
+        },
+        {
+          "display": "宇部工業",
+          "score": 0,
+          "won": false,
+          "name": "宇部工業高校",
+          "slug": "ubekogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南陽工業",
+          "score": 0,
+          "won": false,
+          "name": "南陽工業高校",
+          "slug": "nanyokogyo"
+        },
+        {
+          "display": "高川学園",
+          "score": 4,
+          "won": true,
+          "name": "高川学園",
+          "slug": null
+        }
+      ]
     }
   ]
 };

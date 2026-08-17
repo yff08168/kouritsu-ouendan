@@ -146,6 +146,42 @@ export function stripVerticalInningMarks(page, { dx = 5, dy = 16 } = {}) {
 }
 
 /**
+ * ★**先頭の記号が校名と1つの断片になっているのを割る**（2026-08-17。山口の春季のため）。
+ *
+ * 山口の春の表は、**スロット1だけ**シード記号と校名がくっついて
+ * `① 下 関 国 際`（x=36.2）という1つの断片になっている。
+ * 他のスロットは記号（x=36）と校名（x=54）が別々の断片なので、
+ * `ranges` で記号の列ごと外せていた。**くっついた1つだけが列の外から始まる**ため、
+ * **そのスロットの校名が丸ごと消えて**組み立てが止まった。
+ *
+ * ★★**記号を「文字で消す」作りにしないこと。**
+ * 千葉で、記号の列に記号でない「宣」が紛れていて `千葉東` が `千葉東宣` になった。
+ * **列ごと外す**のが決まりなので、ここでは**断片を割るだけ**にして、
+ * 外すのは今までどおり `ranges`（列）に任せる。
+ *
+ * @param pattern 括弧2つの正規表現。1つ目が記号、2つ目が残り
+ */
+export function splitLeadingMark(page, pattern) {
+  const lines = page.lines.map((line) => {
+    const items = line.items.flatMap((it) => {
+      const m = it.text.match(pattern);
+      // 幅が無ければ割った側の位置を決められないので、そのまま返す
+      if (!m || !(it.width > 0)) return [it];
+      const per = it.width / it.text.length;
+      const at = it.text.indexOf(m[2], m[1].length);
+      if (at < 0) return [it];
+      return [
+        { ...it, width: m[1].length * per, text: m[1] },
+        { ...it, x: it.x + at * per, width: (it.text.length - at) * per, text: m[2] },
+      ];
+    });
+    items.sort((a, b) => a.x - b.x);
+    return { y: line.y, items, text: items.map((i) => i.text).join("\t") };
+  });
+  return { page: page.page, lines };
+}
+
+/**
  * ★**数字がいくつも1つの断片に潰れているのをほどく**（2026-08-17。滋賀のため）。
  *
  * 滋賀のスロット番号の行は、47個のうち17個が
@@ -355,7 +391,18 @@ export function assembleSlotBracket(
     const run = longestRun(ints.filter((i) => Math.abs(i.y - anchor.y) <= SLOT_ROW));
     if (run.length > slotItems.length) slotItems = run;
   }
-  if (slotItems.length < 8) return null;
+  /*
+    ★**組み立て前に落ちた理由も出せるようにしておく**（`BRACKET_DEBUG=1`。2026-08-17）。
+
+    ここより下の「1回戦の候補」は出るのに、**ここで返ると何も出ない。**
+    山口の春はこの `nameOf` の空きで落ちていて、
+    **左半分だけデバッグ出力が丸ごと無い**という形でしか気づけなかった。
+  */
+  const bail = (why) => {
+    if (process.env.BRACKET_DEBUG) console.log(`  [debug] 組み立て前に中止: ${why}`);
+    return null;
+  };
+  if (slotItems.length < 8) return bail(`スロット番号が ${slotItems.length} 個しか連番になっていない`);
   /** スロット行の高さ。**割れているので中央値を使う** */
   const slotY = [...slotItems].map((i) => i.y).sort((a, b) => a - b)[Math.floor(slotItems.length / 2)];
   const slotLine = { y: slotY };
@@ -372,10 +419,10 @@ export function assembleSlotBracket(
   const pos = slotItems.map((i) => i.x);
   const gaps = [];
   for (let i = 1; i < N; i++) gaps.push(pos[i] - pos[i - 1]);
-  if (gaps.some((g) => !(g > 0))) return null;
+  if (gaps.some((g) => !(g > 0))) return bail("スロット番号の間隔に 0 か負のものがある");
   /** 代表的な間隔。文字幅や窓の大きさに使う。**平均ではなく中央値**（広い箇所に引きずられない） */
   const PITCH = [...gaps].sort((a, b) => a - b)[Math.floor(gaps.length / 2)];
-  if (!(PITCH > 0)) return null;
+  if (!(PITCH > 0)) return bail("スロット番号の代表的な間隔が 0 になった");
   const toSlot = (x) => {
     if (x <= pos[0]) return 1 + (x - pos[0]) / gaps[0];
     for (let i = 1; i < N; i++) {
@@ -433,7 +480,10 @@ export function assembleSlotBracket(
       return [n, lines.map((l) => l.cs.sort((a, b) => dir * (a.y - b.y)).map((c) => c.t).join("")).join("")];
     }),
   );
-  if ([...nameOf.values()].some((v) => !v)) return null;
+  if ([...nameOf.values()].some((v) => !v)) {
+    const empty = [...nameOf].filter(([, v]) => !v).map(([n]) => n);
+    return bail(`校名が空のスロットがある: ${empty.join(",")}（全 ${N} スロット）`);
+  }
 
   /*
     ★**連合チームは3文字に略され、凡例で展開されている。**

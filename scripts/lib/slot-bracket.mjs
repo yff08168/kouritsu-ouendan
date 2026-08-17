@@ -79,13 +79,26 @@ const BAND = 1.0;
  * 落とさないと、その回戦の数字が試合数の2倍にならず組めなくなる
  * （広島の2回戦は 32 のところ 38 になっていた）。
  */
-export function stripInningMarks(page) {
+/**
+ * @param maxGap ★**「回」とその手前の数字がどれだけ離れていたら別物とみなすか。**
+ *
+ *   既定は無制限（今までの挙動）。**離れた「回」を巻き込む表がある**
+ *   （2026-08-16。宮崎）。中央の縦書き「（8年ぶり**10回**目）」の `回` が、
+ *   同じ行の **53ポイント左にある3回戦のスコア `0`** を消していた
+ *   （その回戦の数字が7個になり、8個必要で組めなくなる）。
+ *
+ *   ★**既定値を変えないこと。** ポイントの絶対値は表ごとに桁が違う
+ *   （広島は紙の幅が約2900ポイント、宮崎は約550）。**その表で測って
+ *   呼ぶ側から渡す。**
+ */
+export function stripInningMarks(page, { maxGap = Infinity } = {}) {
   const lines = page.lines.map((line) => {
     const items = line.items.map((i) => ({ ...i }));
     for (let k = 0; k < items.length; k++) {
       if (items[k].text.trim() !== "回") continue;
       const prev = items[k - 1];
       if (!prev) continue;
+      if (items[k].x - prev.x > maxGap) continue;
       const t = prev.text.trim();
       if (/^\d{1,2}$/.test(t)) prev.text = "";
       else if (/\s\d{1,2}$/.test(t)) prev.text = t.replace(/\s+\d{1,2}$/, "");
@@ -154,7 +167,31 @@ export function orientPage(page, { slotAxis = "x", flip = false, range, rowToler
  */
 export function assembleSlotBracket(
   page,
-  { roundLabels, venueSymbols, nameOrder = "desc", finalInCenter = false, parseLabel, expand } = {},
+  {
+    roundLabels,
+    venueSymbols,
+    nameOrder = "desc",
+    finalInCenter = false,
+    parseLabel,
+    expand,
+    /*
+      ★**スコアが「連結線の両端」に書かれる表がある**（2026-08-16。山口）。
+
+      京都・広島は、どの回戦もスコアが**中点のそば**（±0.2スロット）に来るので、
+      帯を選ぶときの窓を 0.95 スロットにしてある。**山口は全回戦で両端**に置く。
+      2回戦のスコアは中点から ±1.2 スロット離れており、窓に1つも入らない。
+      その結果**3回戦の帯が2回戦として選ばれ**、組み立てが止まった
+      （鹿児島の `finalInCenter` は同じ置き方だが、いちばん深い帯だけの話だった）。
+
+      `hitSpan: true` にすると、窓を**その試合が結ぶ2本の線のあいだ**
+      （＋余裕1スロット）に広げる。推測ではなく枝の形から決まる範囲なので、
+      深い回戦の数字を誤って拾うことはない（実測でも 16 対 6 で正しい帯が勝つ）。
+
+      ★**既定は false のまま。** 既存の県（京都・広島・三重・鹿児島・千葉・静岡）は
+      同じ道を通るので、生成物は1バイトも変わらない。
+    */
+    hitSpan = false,
+  } = {},
 ) {
   /*
     ---- 1. スロット番号の行 ----
@@ -306,8 +343,19 @@ export function assembleSlotBracket(
           まるごと読めず**、その回戦の数字が奇数個になって組めなくなる
           （鹿児島の1回戦は26のところ25になっていた）。
         */
+        /*
+          ★**サヨナラは点数のうしろに `×` が付く**（2026-08-17。福井の `7×` `9×`）。
+          落とさないと `Number("7×")` にならず**その試合のスコアが丸ごと読めない。**
+          福井の2回戦は16個必要なところ14個になり、組み立てが止まった。
+
+          ★**これは足しても既存の県に影響しない。** いまも `7×` は数字として
+          読めていないので、もしどこかの県の帯に入っていたら「その回戦の数字が
+          試合数の2倍にならない」で既に落ちている。実際、全23県を再生成して
+          生成物が1バイトも変わらないことを確認した。
+        */
         const half = part
           .replace(/[①-⑳]+$/, "")
+          .replace(/[×xX]+$/, "")
           .replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0));
         /*
           ★**桁数のぶんだけ左にずれるのを戻す。** PDFが返すのは断片の左端なので、
@@ -369,12 +417,33 @@ export function assembleSlotBracket(
     */
     const merged = bandRows.filter((l) => Math.abs(l.y - line.y) <= PITCH * 0.4 && numbersOf(l).length);
     const ns = merged.flatMap((l) => numbersOf(l)).sort((a, b) => a.slot - b.slot);
+    /*
+      ★**1回戦の帯を選ぶ過程を出せるようにしておく**（`BRACKET_DEBUG=1`。2026-08-16）。
+
+      ここが外れると**次の帯が1回戦として読まれ、以降の回戦が1つずつずれる。**
+      それでも表に出るのは「組合せ表を組み立てられなかった」の1行だけなので、
+      **どの帯が何個で落ちたのか**が分からず、新しい県のたびに当てずっぽうになる。
+      山口はこれを出して初めて「1回戦は通っていて2回戦で落ちている」と分かった。
+    */
+    if (process.env.BRACKET_DEBUG) {
+      console.log(
+        `  [debug] 1回戦の候補 y=${line.y.toFixed(0)}: 数字${ns.length}個` +
+          `（帯 ${merged.map((l) => l.y.toFixed(0)).join("+")}／PITCH=${PITCH.toFixed(1)}）`,
+      );
+    }
     if (ns.length < 4 || ns.length % 2 !== 0) continue;
     const found = [];
     let ok = true;
     for (let i = 0; i + 1 < ns.length; i += 2) {
       const mid = (ns[i].slot + ns[i + 1].slot) / 2;
       const a = Math.round(mid - 0.5);
+      // どの組がどれだけ境目から外れて落ちたのかを出す（上のコメントの続き）
+      if (process.env.BRACKET_DEBUG && Math.abs(mid - (a + 0.5)) > 0.45) {
+        console.log(
+          `  [debug]   ${ns[i].v}(${ns[i].slot.toFixed(2)}) と ${ns[i + 1].v}(${ns[i + 1].slot.toFixed(2)}) の中点 ` +
+            `${mid.toFixed(2)} が境目から ${Math.abs(mid - (a + 0.5)).toFixed(2)} ずれている`,
+        );
+      }
       /*
         ★**許容幅は 0.45 まで。** スロットの位置はスロット番号の行から出しているが、
         スコアの置き方はそれと完全には揃っておらず、表によって 0.35 ほどずれる
@@ -573,7 +642,16 @@ export function assembleSlotBracket(
   let center = null;
   for (let r = 1; nodes.length > 1; r++) {
     const mids = [];
-    for (let i = 0; i + 1 < nodes.length; i += 2) mids.push((nodes[i].x + nodes[i + 1].x) / 2);
+    /** ★`hitSpan` 用。その試合が結ぶ2本の線のあいだ（＋余裕1スロット） */
+    const spans = [];
+    for (let i = 0; i + 1 < nodes.length; i += 2) {
+      mids.push((nodes[i].x + nodes[i + 1].x) / 2);
+      spans.push([Math.min(nodes[i].x, nodes[i + 1].x) - 1, Math.max(nodes[i].x, nodes[i + 1].x) + 1]);
+    }
+    const isHit = (n) =>
+      hitSpan
+        ? spans.some((s) => n.slot >= s[0] && n.slot <= s[1])
+        : mids.some((m) => Math.abs(n.slot - m) <= 0.95);
 
     // 予測した中点のそばに数字がいちばん多く乗っている帯を探す
     /*
@@ -586,7 +664,7 @@ export function assembleSlotBracket(
       .filter((l) => l.y > lastY + BAND)
       .map((l) => {
         const ns = numbersOf(l);
-        return { line: l, ns, hit: ns.filter((n) => mids.some((m) => Math.abs(n.slot - m) <= 0.95)).length };
+        return { line: l, ns, hit: ns.filter(isHit).length };
       })
       .filter((c) => c.ns.length);
     const cand = rows
@@ -596,6 +674,18 @@ export function assembleSlotBracket(
         1つも候補が残らず、大会ごと落ちる（実際に落ちた）。
       */
       .filter((c) => c.hit >= Math.min(2, mids.length));
+    /*
+      ★**帯の選び方を出せるようにしておく**（`BRACKET_DEBUG=1`）。
+      「数字N個（必要M個）」だけでは、**選ばれた帯が正しいのか**が分からない。
+      山口は**正しい帯（16個）より深い帯（6個）のほうが一致数が多い**という
+      形で落ちており、中点と数字の位置を並べて初めて原因が見えた。
+    */
+    if (process.env.BRACKET_DEBUG) {
+      const line = (c) =>
+        `           帯 y=${c.line.y.toFixed(0)} 数字${c.ns.length}個 一致${c.hit}` +
+        ` [${c.ns.map((n) => `${n.v}@${n.slot.toFixed(2)}`).join(" ")}]`;
+      console.log(`  [debug] 第${r}段: 中点=${mids.map((m) => m.toFixed(2)).join(",")}\n${rows.map(line).join("\n")}`);
+    }
     if (!cand.length) {
       if (process.env.BRACKET_DEBUG) console.log(`  [debug] 第${r}段: 帯が見つからない（試合${mids.length}）`);
       return null;
@@ -651,7 +741,18 @@ export function assembleSlotBracket(
         準決勝・決勝の帯はその一覧と**同じ高さ**にある。そのままだと
         数字の個数が合わなくなり、順番の対応が崩れる（実測）。
       */
-      .filter((s) => (span ? s.slot >= span[0] && s.slot <= span[1] : mids.some((m) => Math.abs(s.slot - m) <= 3)))
+      /*
+        ★`hitSpan` の県は「中点から3スロット」では足りない。
+        深い回戦ほど連結線が長くなり、両端に置かれたスコアは中点から離れる
+        （山口の準決勝は ±6 スロット）。**枝の形から決まる範囲で見る。**
+      */
+      .filter((s) =>
+        span
+          ? s.slot >= span[0] && s.slot <= span[1]
+          : hitSpan
+            ? isHit(s)
+            : mids.some((m) => Math.abs(s.slot - m) <= 3),
+      )
       .sort((a, b) => a.slot - b.slot);
 
     /*

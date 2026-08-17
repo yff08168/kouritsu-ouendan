@@ -25,4 +25,9 @@ export const REGIONAL_LOADERS: Record<string, () => Promise<RegionalDistrict>> =
   gifu: () => import("./gifu").then((m) => m.REGIONAL_GIFU),
   chiba: () => import("./chiba").then((m) => m.REGIONAL_CHIBA),
   yamagata: () => import("./yamagata").then((m) => m.REGIONAL_YAMAGATA),
+  shizuoka: () => import("./shizuoka").then((m) => m.REGIONAL_SHIZUOKA),
+  yamaguchi: () => import("./yamaguchi").then((m) => m.REGIONAL_YAMAGUCHI),
+  miyazaki: () => import("./miyazaki").then((m) => m.REGIONAL_MIYAZAKI),
+  fukui: () => import("./fukui").then((m) => m.REGIONAL_FUKUI),
+  wakayama: () => import("./wakayama").then((m) => m.REGIONAL_WAKAYAMA),
 };

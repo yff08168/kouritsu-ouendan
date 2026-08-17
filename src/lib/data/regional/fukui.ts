@@ -1,0 +1,521 @@
+// このファイルは scripts/build-regional-results.mjs が生成する。直接編集しない。
+// 出典: 福井県高等学校野球連盟（https://291fki.sakura.ne.jp/wp2024/）
+
+import type { RegionalDistrict } from "@/lib/regional-results";
+
+export const REGIONAL_FUKUI: RegionalDistrict = {
+  "slug": "fukui",
+  "district": "福井",
+  "sourceName": "福井県高等学校野球連盟",
+  "sourceUrl": "https://291fki.sakura.ne.jp/wp2024/",
+  "games": [
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "武生東",
+          "score": 3,
+          "won": false,
+          "name": "武生東高校",
+          "slug": "takefuhigashi"
+        },
+        {
+          "display": "福農・明成",
+          "score": 4,
+          "won": true,
+          "name": "福農・明成",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "藤島",
+          "score": 6,
+          "won": true,
+          "name": "藤島高校",
+          "slug": "fujishima"
+        },
+        {
+          "display": "美方",
+          "score": 5,
+          "won": false,
+          "name": "美方高校",
+          "slug": "mikata"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "足羽",
+          "score": 2,
+          "won": true,
+          "name": "足羽高校",
+          "slug": "asuwa"
+        },
+        {
+          "display": "鯖江",
+          "score": 1,
+          "won": false,
+          "name": "鯖江高校",
+          "slug": "sabae"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "敦賀",
+          "score": 1,
+          "won": true,
+          "name": "敦賀高校",
+          "slug": "tsuruga"
+        },
+        {
+          "display": "科学技術",
+          "score": 0,
+          "won": false,
+          "name": "科学技術高校",
+          "slug": "fukui-kagakugijutsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "丸岡",
+          "score": 1,
+          "won": false,
+          "name": "丸岡高校",
+          "slug": "maruoka"
+        },
+        {
+          "display": "大野",
+          "score": 8,
+          "won": true,
+          "name": "大野高校",
+          "slug": "fukui-ono"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "高志",
+          "score": 4,
+          "won": false,
+          "name": "高志高校",
+          "slug": "fukui-koshi"
+        },
+        {
+          "display": "坂井",
+          "score": 11,
+          "won": true,
+          "name": "坂井高校",
+          "slug": "fukui-sakai"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "福井高専",
+          "score": 0,
+          "won": false,
+          "name": "福井工業高専",
+          "slug": "fukuikogyo"
+        },
+        {
+          "display": "啓新",
+          "score": 6,
+          "won": true,
+          "name": "啓新",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "三国",
+          "score": 1,
+          "won": false,
+          "name": "三国高校",
+          "slug": "mikuni"
+        },
+        {
+          "display": "武生商工",
+          "score": 8,
+          "won": true,
+          "name": "武生商工高校",
+          "slug": "takefushoko"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "金津",
+          "score": 14,
+          "won": true,
+          "name": "金津高校",
+          "slug": "kanazu"
+        },
+        {
+          "display": "武生",
+          "score": 7,
+          "won": false,
+          "name": "武生高校",
+          "slug": "takefu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "羽水",
+          "score": 4,
+          "won": true,
+          "name": "羽水高校",
+          "slug": "usui"
+        },
+        {
+          "display": "敦賀工業",
+          "score": 2,
+          "won": false,
+          "name": "敦賀工業高校",
+          "slug": "tsurugakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "丹生",
+          "score": 5,
+          "won": true,
+          "name": "丹生高校",
+          "slug": "nyu"
+        },
+        {
+          "display": "勝山",
+          "score": 0,
+          "won": false,
+          "name": "勝山高校",
+          "slug": "katsuyama"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "2回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "福農・明成",
+          "score": 7,
+          "won": true,
+          "name": "福農・明成",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "藤島",
+          "score": 3,
+          "won": false,
+          "name": "藤島高校",
+          "slug": "fujishima"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "2回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "足羽",
+          "score": 3,
+          "won": false,
+          "name": "足羽高校",
+          "slug": "asuwa"
+        },
+        {
+          "display": "敦賀",
+          "score": 11,
+          "won": true,
+          "name": "敦賀高校",
+          "slug": "tsuruga"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "2回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "大野",
+          "score": 7,
+          "won": true,
+          "name": "大野高校",
+          "slug": "fukui-ono"
+        },
+        {
+          "display": "若狭",
+          "score": 6,
+          "won": false,
+          "name": "若狭高校",
+          "slug": "wakasa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "2回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "工大福井",
+          "score": 4,
+          "won": true,
+          "name": "工大福井",
+          "slug": null
+        },
+        {
+          "display": "坂井",
+          "score": 0,
+          "won": false,
+          "name": "坂井高校",
+          "slug": "fukui-sakai"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "2回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "啓新",
+          "score": 9,
+          "won": true,
+          "name": "啓新",
+          "slug": null
+        },
+        {
+          "display": "武生商工",
+          "score": 2,
+          "won": false,
+          "name": "武生商工高校",
+          "slug": "takefushoko"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "2回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "金津",
+          "score": 2,
+          "won": true,
+          "name": "金津高校",
+          "slug": "kanazu"
+        },
+        {
+          "display": "羽水",
+          "score": 1,
+          "won": false,
+          "name": "羽水高校",
+          "slug": "usui"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "2回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "丹生",
+          "score": 0,
+          "won": false,
+          "name": "丹生高校",
+          "slug": "nyu"
+        },
+        {
+          "display": "福井商業",
+          "score": 8,
+          "won": true,
+          "name": "福井商業高校",
+          "slug": "fukuishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "準々決勝",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "敦賀",
+          "score": 5,
+          "won": true,
+          "name": "敦賀高校",
+          "slug": "tsuruga"
+        },
+        {
+          "display": "大野",
+          "score": 4,
+          "won": false,
+          "name": "大野高校",
+          "slug": "fukui-ono"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "準々決勝",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "金津",
+          "score": 5,
+          "won": false,
+          "name": "金津高校",
+          "slug": "kanazu"
+        },
+        {
+          "display": "福井商業",
+          "score": 6,
+          "won": true,
+          "name": "福井商業高校",
+          "slug": "fukuishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "準決勝",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "敦賀気比",
+          "score": 10,
+          "won": true,
+          "name": "敦賀気比",
+          "slug": null
+        },
+        {
+          "display": "敦賀",
+          "score": 2,
+          "won": false,
+          "name": "敦賀高校",
+          "slug": "tsuruga"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "準決勝",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "工大福井",
+          "score": 3,
+          "won": true,
+          "name": "工大福井",
+          "slug": null
+        },
+        {
+          "display": "福井商業",
+          "score": 1,
+          "won": false,
+          "name": "福井商業高校",
+          "slug": "fukuishogyo"
+        }
+      ]
+    }
+  ]
+};

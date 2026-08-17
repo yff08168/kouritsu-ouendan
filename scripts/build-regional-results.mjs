@@ -49,7 +49,13 @@ import path from "node:path";
 import { createClient } from "@supabase/supabase-js";
 
 import { fetchPdfPages } from "./lib/pdf-text.mjs";
-import { assembleSlotBracket, orientPage, stripInningMarks } from "./lib/slot-bracket.mjs";
+import {
+  assembleSlotBracket,
+  explodeNumberRuns,
+  orientPage,
+  stripInningMarks,
+  stripVerticalInningMarks,
+} from "./lib/slot-bracket.mjs";
 import { fetchXlsxSheets } from "./lib/xlsx-rows.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
@@ -4942,6 +4948,324 @@ const wakayama = {
 };
 
 /**
+ * 滋賀県高等学校野球連盟。★**「トーナメント表しか無い」の判定が誤りだった県**
+ * （2026-08-17。以前は「1〜N と並ぶ行が無い＝勝者を回戦ごとに書き直す形式」に
+ * 分類していたが、実際に開いたら**スロット1〜47の格子型**だった）。
+ *
+ * ------------------------------------------------------------------
+ * ★ この県が今まで組めなかった理由は2つだけだった
+ *
+ *   1. **スロット番号が全角で、しかも潰れている。**
+ *      47個のうち17個が「１５ １６ １７ １８」のように1つの断片になっており、
+ *      `assembleSlotBracket` の `/^\d+$/` に1つも当たらない。
+ *      → `explodeNumberRuns()` でほどく（幅を文字数で割る）
+ *   2. **スコアが `11-1` と1つの断片。** 3回戦以降は全角で `４－３`。
+ *      → `pairedScores: true`
+ *
+ *   どちらも既定を変えていないので、**既存25県の生成物は1バイトも変わらない。**
+ *
+ * ------------------------------------------------------------------
+ * ★ 検算材料が3つある（この県がやりやすい理由）
+ *
+ *   1. **紙に「出場チーム：４７チーム」**と印刷されている（`verify.teams`）。
+ *      「チーム数−試合数=1」だけだと**スロットを1つ読み落としても両方一緒に減って通る。**
+ *   2. **優勝校が新着一覧のリンクの見出しに入っている**
+ *      （「…滋賀大会 結果【優勝：八幡商業高校】」）。**枝とは別の場所から来る事実**なので、
+ *      石川ですり抜けた「構造は合うのに決勝の相手が違う」を止められる（鹿児島と同じ形）。
+ *   3. **同じ優勝校が紙の上部にも横書きで印字されている。**
+ *
+ * ------------------------------------------------------------------
+ * ★ 日付は出さない（`date: null`）
+ *
+ *   紙には**日にちだけ**が書いてある（7・8・…・25）。**月がどこにも無い。**
+ *   連盟のサイト本文にも、過去大会記録にも、リンクの見出しにも無い。
+ *   PDFの `Last-Modified` は 7/25 で決勝の日と合うが、
+ *   **連盟が後からPDFを差し替えれば静かに別の月に化ける**（山形のように
+ *   同じファイルを上書きする連盟がある）。しかも**回数と年の突き合わせでは
+ *   捕まらない**（月だけ変わるので）。静岡は「お知らせの掲載日」という
+ *   **公開された日付**が使えたが、ここにはそれが無い。
+ *   **推測で月を埋めない**（千葉・三重・宮崎・和歌山と同じ）。
+ *
+ *   球場は日付と無関係に読めるので出す（凡例の「皇 … マイネットスタジアム皇子山」）。
+ *
+ * ------------------------------------------------------------------
+ * ★ 軟式を必ず外すこと
+ *
+ *   同じ一覧に「第７１回全国高等学校**軟式**野球選手権滋賀大会」が並んでいる。
+ *   このサイトは硬式と軟式を同じ書き方で出しているので、**見出しとURLの両方**で外す
+ *   （`nannshikiyama` と `nanshikiyama` の2つづりがある）。
+ */
+const shiga = {
+  slug: "shiga",
+  district: "滋賀",
+  name: "滋賀県高等学校野球連盟",
+  siteUrl: "http://www.biwa.ne.jp/~shigafed/",
+  politenessMs: 2000,
+  /**
+   * 新着一覧に硬式の夏と春が並んでいる。**秋は「8／26 18：00公開予定」でまだ出ていない**
+   * （出たら `autumn` を足せる。見出しは「秋季近畿地区高等学校野球滋賀県大会」）。
+   */
+  seasons: {
+    summer: "http://www.biwa.ne.jp/~shigafed/",
+    spring: "http://www.biwa.ne.jp/~shigafed/",
+  },
+  /** 季節ごとの、見出しの見分け方 */
+  matcher: {
+    summer: /第\d+回全国高等学校野球選手権滋賀大会/,
+    spring: /春季近畿地区高等学校野球滋賀県大会/,
+  },
+  /**
+   * 表の凡例「皇 … マイネットスタジアム皇子山」。1文字の記号 → 球場名。
+   *
+   * ★**行末に固定しないこと。** 凡例の行には**優勝校と甲子園出場回数が
+   * 続けて書かれている**（`皇 … ﾏｲﾈｯﾄｽﾀｼﾞｱﾑ皇子山 八 幡 商`）。
+   * `$` で締めると1件も取れず、**全試合の球場が空になる**（実際そうなった）。
+   */
+  venueLegend(page) {
+    const map = new Map();
+    for (const l of page.lines) {
+      for (const m of l.text.matchAll(/(?:^|\t)([^\t\s])\t…\t([^\t]+)/g)) {
+        // ★半角カナで書かれている（ﾏｲﾈｯﾄｽﾀｼﾞｱﾑ皇子山）
+        const name = m[2].trim().normalize("NFKC");
+        if (/球場|スタジアム|パーク|ドーム/.test(name)) map.set(m[1], name);
+      }
+    }
+    return map;
+  },
+  /**
+   * 連合チームの内訳。紙の下端に
+   * 「出場チーム：４７チーム（連合：① 安曇川・湖南農業・石部・信楽・愛知・長浜農業」とある。
+   *
+   * ★**行をつないだ文字列からは切り出せない。** すぐ後ろに「選手宣誓：…」が続くので、
+   * 最後の学校が「長浜農業選手宣誓」になる。**断片のまま、末尾で終わるものを見る。**
+   *
+   * ★**この県の連合には「愛知」が入っている**（滋賀県立愛知高校・あいち）。
+   * 展開しないと 1校に結び付けてしまい、しかも**愛知県の学校と取り違える**
+   * 種類の間違いになる（AGENTS.md の「県大会で県外の学校に結び付けない」）。
+   */
+  combinedLegend(page) {
+    const found = new Set();
+    for (const l of page.lines) {
+      for (const it of l.items) {
+        /*
+          ★**中の空白と、末尾の閉じ括弧に気をつける。**
+          夏は `合：① 安曇川・湖南農業・…・長浜農業`、
+          春は `合：① 安曇川・ 湖南農業・…・長浜農業）` と**書き方が揃っていない**
+          （春は「安曇川・」の後ろに空白があり、末尾に `）` が付く）。
+          空白を落として括弧を外してから、`・` でつながっているものだけを採る。
+        */
+        const m = it.text.trim().match(/[①-⑳]\s*([^：:]+)$/);
+        if (!m) continue;
+        const names = m[1].replace(/[）)]\s*$/, "").replace(/\s+/g, "");
+        if (/・/.test(names)) found.add(names);
+      }
+    }
+    /*
+      ★**2つ以上見つかったら展開しない。** いまは連合が1つ（①）しか無いので
+      スロットの校名も「連合」だが、**将来 ①② と増えたら、どちらを当てるかは
+      この関数では決められない。** 黙って最後のものを当てると
+      **別のチームの内訳が画面に出る。** 展開しなければ「連合」のまま残り、
+      `readSheet` の検算で**1試合も出さずに止まる**（気づける壊れ方にする）。
+    */
+    return found.size === 1 ? new Map([["連合", [...found][0]]]) : new Map();
+  },
+  async collect({ fetchHtml, season, url }) {
+    const re = this.matcher[season];
+    if (!re) return [];
+    const html = await fetchHtml(url);
+    if (!html) return [];
+
+    /*
+      ★**優勝校は見出しに入っている**（「…滋賀大会 結果【優勝：八幡商業高校】」）。
+      **枝とは別の場所から来る事実**なので、これを検算に使う。
+      見出しに無いものは（＝抽選結果・公開予定）そもそも結果ではないので拾わない。
+    */
+    const links = [];
+    for (const m of html.matchAll(/<a[^>]+href=["']([^"']+\.pdf)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
+      const label = normalize(plain(m[2]));
+      const href = new URL(m[1], url).toString();
+      // ★軟式を外す。見出しとURLの両方で見る
+      if (/軟式/.test(label) || /nan+shiki/i.test(href)) continue;
+      if (!re.test(label)) continue;
+      const champion = label.match(/優勝[：:]\s*([^】\s]+?)(?:高等学校|高校)?\s*[】]/)?.[1];
+      if (!champion) continue;
+      links.push({ href, label, champion });
+    }
+    if (!links.length) {
+      console.log(`  ⚠️ 滋賀: ${season} の結果PDFへのリンクが見つからない`);
+      return [];
+    }
+
+    for (const link of links.slice(0, 2)) {
+      const parsed = await fetchPdfPages(link.href, { headers: UA });
+      await sleep(this.politenessMs);
+      if (!parsed?.length) {
+        console.log(`  ⚠️ 滋賀: 「${link.label}」のPDFが読めない`);
+        continue;
+      }
+      for (const raw of parsed) {
+        const games = this.readSheet(raw, season, link.champion);
+        if (games) return games;
+      }
+      /*
+        ★**「大会名が読めなかった」を黙って通り過ぎないこと。**
+        `readSheet` の null は「次のページ／次のPDFを見る」の合図なので、
+        全部外れると**何の警告も出ずに0試合**になる。
+        実際、春の表題が1文字ずつ空けて組まれていたせいで0試合になり、
+        原因を探すのに時間がかかった。
+      */
+      console.log(`  ⚠️ 滋賀: 「${link.label}」のPDFに大会名の見出しが見つからない`);
+    }
+    return [];
+  },
+  /** 1枚のやぐら表を読む。**組めなければ null**（呼び出し側は次のPDFへ） */
+  readSheet(raw, season, champion) {
+    /*
+      ★**先に数字の断片をほどく。** スロット番号が全角で、しかも
+      「１５ １６ １７ １８」と潰れている（この県が今まで組めなかった理由の1つ）。
+    */
+    /*
+      ★★**コールドの「7回」は縦書き。落とさないと1回戦の帯を取り違える**
+      （余って組めなくなるのではなく、**組めてしまう**ほうの壊れ方。
+      詳しくは `stripVerticalInningMarks` のコメント）。
+      **数字と「回」の間隔は実測13.2ポイント**（スコアまでは26.4あるので巻き込まない）。
+    */
+    const page = stripVerticalInningMarks(explodeNumberRuns(raw), { dy: 16 });
+    /*
+      ★**空白を落としてから大会名を探すこと。**
+      春の表題は**1文字ずつ空けて**組まれている
+      （`令 和 ８ 年 度　春 季 近 畿 地 区 高 等 学 校 野 球 滋 賀 県 大 会`）。
+      夏は空きが無いので、詰めた文字列で見れば両方に効く。
+      **画面に出す大会名も詰めたほうを使う**（空きが入ったまま出さない）。
+    */
+    const flat = page.lines.map((l) => normalize(l.text.replace(/\t/g, "")).replace(/\s+/g, ""));
+    const tournament = flat
+      .map((t) => t.match(/第\d+回全国高等学校野球選手権滋賀大会|令和\d+年度春季近畿地区高等学校野球滋賀県大会/)?.[0])
+      .find(Boolean);
+    if (!tournament) return null;
+
+    /*
+      ★**紙が書いている出場チーム数と突き合わせる。**
+      「チーム数−試合数=1」だけでは、**スロットを1つ読み落としたときに
+      両方一緒に減って通ってしまう**（宮崎で分かった）。
+    */
+    const printedTeams = Number(flat.map((t) => t.match(/出場チーム[：:]\s*(\d+)\s*チーム/)?.[1]).find(Boolean));
+
+    const venues = this.venueLegend(page);
+    const expand = this.combinedLegend(page);
+
+    /*
+      ★**紙の下端の注記を、行ごと落としてから渡す。**
+
+      「加盟校：５２校　出場チーム：４７チーム（連合：…　選手宣誓：神谷 恭伍（彦根東高校）」が
+      **校名より下**に1行あり、校名を集める側は**スロット行より下を全部**見るので、
+      x がたまたま近い断片が校名の末尾にくっつく。実際に
+      **「草津加盟校：５２校」「伊香出場チーム：４７チーム（連」「近江（彦根東高校）」**
+      という**実在しない校名が5件できた。**
+
+      ★**座標で決め打ちしないこと。** 注記の行そのものを探して、そこから下を落とす。
+      ★**検算材料（出場チーム数）と連合の内訳はこの行にある**ので、
+      **落とす前に読んでおく**（上の `printedTeams` と `expand`）。
+    */
+    const noteY = page.lines.filter((l) => /加盟校|出場チーム|選手宣誓/.test(l.text)).map((l) => l.y);
+    const cropped = noteY.length
+      ? { page: page.page, lines: page.lines.filter((l) => l.y > Math.max(...noteY)) }
+      : page;
+
+    const built = assembleSlotBracket(cropped, {
+      roundLabels: ["決勝", "準決勝", "準々決勝"],
+      venueSymbols: new Set(venues.keys()),
+      // ★スコアが `11-1`（1〜2回戦）と `４－３`（3回戦以降）で1つの断片
+      pairedScores: true,
+      /*
+        ★**球場の記号はスコアの帯の26〜29ポイント「上」にある**（この紙は上に積む）。
+        既定の窓では届かず、**1つ前の回戦の球場が付く**（実測で3回戦に
+        その回戦では使っていない今津スタジアムが付いた）。
+        次の回戦のスコアは間隔の1.0倍上なので、0.75倍まで広げれば混ざらない。
+      */
+      labelReach: 2.5,
+      expand,
+    });
+    if (!built) {
+      console.log(`  ⚠️ 滋賀: ${tournament} の組合せ表を組み立てられなかった。1試合も出さない`);
+      return [];
+    }
+
+    // ---- 検算1: チーム数 − 試合数 = 1 ----
+    if (built.teams - built.games.length !== 1) {
+      console.log(
+        `  ⚠️ 滋賀: ${built.teams} チームに対し ${built.games.length} 試合（${built.teams - 1} のはず）。1試合も出さない`,
+      );
+      return [];
+    }
+    /*
+      ---- 検算2: 紙に印刷された出場チーム数 ----
+      ★**無くても止めない**（京都の「合計」と同じ扱い）が、**黙って通さない。**
+      検算が1つ減ったことに気づけないと、次に壊れたときの原因が分からなくなる。
+    */
+    if (!Number.isFinite(printedTeams)) {
+      console.log(`  ⚠️ 滋賀: ${tournament} の紙に「出場チーム：Nチーム」が無い。検算が1つ減っている`);
+    } else if (printedTeams !== built.teams) {
+      console.log(
+        `  ⚠️ 滋賀: 読めたスロットが ${built.teams}（紙は「出場チーム：${printedTeams}チーム」）。1試合も出さない`,
+      );
+      return [];
+    }
+    /*
+      ---- 検算3: 見出しの優勝校 ----
+      ★**枝とは別の場所から来る事実。** 石川ですり抜けた
+      「構造は合うのに決勝の相手が違う」を止められるのはこれだけ。
+      見出しは「八幡商業高校」、表は「八幡商」なので**前方一致で見る**
+      （点数と違い、校名は書き方が揃わない）。
+    */
+    const built0 = normalizeSchoolName(built.champion ?? "");
+    if (!built0 || !normalizeSchoolName(champion).startsWith(built0)) {
+      console.log(
+        `  ⚠️ 滋賀: 組み立てた優勝校が見出しと合わない（見出し「${champion}」/ 組み立て「${built.champion}」）。1試合も出さない`,
+      );
+      return [];
+    }
+    /*
+      ---- 検算4: 終盤の試合数が 4・2・1 か ----
+      ★**校名では検算しない**（出典が同じ学校を回戦ごとに書き分けることがある）。
+      **全回戦に半分を要求しない**（シード校が2回戦から登場する）。
+    */
+    for (const [round, want] of [["準々決勝", 4], ["準決勝", 2], ["決勝", 1]]) {
+      const got = built.games.filter((g) => g.round === round).length;
+      if (got !== want) {
+        console.log(`  ⚠️ 滋賀: ${round}が ${got} 試合（${want} のはず）。1試合も出さない`);
+        return [];
+      }
+    }
+    /*
+      ---- 検算5: 連合チームを展開できたか ----
+      展開できないと「連合」という実在しない校名が画面に出る。
+    */
+    const bare = built.games.flatMap((g) => [g.a, g.b]).filter((n) => /^連合[①-⑳]?$/.test(n));
+    if (bare.length) {
+      console.log("  ⚠️ 滋賀: 連合チームの内訳が紙から読めない。1試合も出さない");
+      return [];
+    }
+
+    console.log(
+      `  （${tournament}: ${built.games.length} 試合 / 優勝 ${built.champion} / ${built.teams} チーム・**日付なし**）`,
+    );
+    return built.games.map((g) => ({
+      // ★**日にちしか書かれていない。月を推測で埋めない**（上のコメント）
+      date: null,
+      season,
+      tournament,
+      round: g.round,
+      venue: venues.get(g.venue) ?? null,
+      teams: [
+        { display: g.a, score: g.sa, won: g.sa > g.sb },
+        { display: g.b, score: g.sb, won: g.sb > g.sa },
+      ],
+    }));
+  },
+};
+
+/**
  * ここに県を足していく。
  *
  * ★**規約で制限のある連盟のサイトは足さないこと。**
@@ -4981,6 +5305,7 @@ const ADAPTERS = [
   miyazaki,
   fukui,
   wakayama,
+  shiga,
 ];
 
 // ------------------------------------------------------------------

@@ -33,10 +33,20 @@ const ROW_TOLERANCE = 3;
 /**
  * PDFのバイト列 → ページごとの行。
  *
- * 戻り値は `[{ page, lines: [{ y, items: [{ x, text }], text }] }]`。
+ * 戻り値は `[{ page, lines: [{ y, items: [{ x, width, text }], text }] }]`。
  * `text` は行の文字を x 順につないだもの（区切りはタブ）。
  * **区切りをタブにしてあるのは、空白が校名の中に入ることがある**ため
  *  （「今 治」のように1文字ずつ空ける書き方）。
+ *
+ * ★**`width` は断片の幅**（2026-08-17 に追加。滋賀のため）。
+ *
+ *   断片の中に文字が複数入っていて、**それを1つずつに分けたいことがある**
+ *   （滋賀のスロット番号は「１５ １６ １７ １８」で1つの断片）。
+ *   位置を「代表的な間隔 × 文字数」で見積もる手もあるが、
+ *   **紙によって字送りが違う**ので外れる（実測で最大5ポイント＝0.4スロットずれた）。
+ *   pdf.js は断片の幅を知っているので、**それを渡して文字数で割る。**
+ *
+ *   ★**足しただけで、既存の読み手は誰も見ていない**（x と text しか使っていない）。
  */
 export async function pdfPages(data) {
   const doc = await getDocument({ data, useSystemFonts: true }).promise;
@@ -54,7 +64,7 @@ export async function pdfPages(data) {
       // 近い y の行があればそこに入れる（無ければ新しい行）
       const key = [...rows.keys()].find((k) => Math.abs(k - y) <= ROW_TOLERANCE) ?? y;
       if (!rows.has(key)) rows.set(key, []);
-      rows.get(key).push({ x, text: item.str });
+      rows.get(key).push({ x, width: item.width, text: item.str });
     }
 
     const lines = [...rows.entries()]

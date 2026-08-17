@@ -110,6 +110,101 @@ export function stripInningMarks(page, { maxGap = Infinity } = {}) {
 }
 
 /**
+ * ★**コールドの「7回」が縦書きの表がある**（2026-08-17。滋賀）。
+ *
+ * 滋賀はスコアの下に**数字と「回」を上下に積んで**書く（同じ x に、1行ずつ）。
+ * `stripInningMarks` は**同じ行の左隣**しか見ないので、これは1つも落とせない。
+ *
+ * ★★**落とさないと1回戦の帯を取り違える。** これは
+ * 「数字が余って組めなくなる」ではなく、**組めてしまうほうの壊れ方**:
+ *
+ *   コールドの数字は**その試合の中心（＝スロットの境目）に置かれる。**
+ *   境目どうしの中点は `(n+0.5 + m+0.5)/2 = (n+m+1)/2` なので、
+ *   **n+m が奇数ならまた境目に乗る**（＝1/2の確率で検査を通る）。
+ *   滋賀の実データでは4組すべてが通り、**コールドの帯（8個）が1回戦
+ *   （4試合）として読まれた。** 以降の回戦が全部ずれて組み立てが止まる。
+ *
+ * @param dx 「回」が数字の真下と認める横のずれ（実測2ポイント）
+ * @param dy 何ポイント下までを「真下」と見るか。★**紙で測って渡すこと。**
+ *           滋賀は13.2（1行ぶん）。**スコアの帯まで届く値にしないこと**
+ *           （滋賀ならスコアと「回」は26.4離れており、16なら巻き込まない）
+ */
+export function stripVerticalInningMarks(page, { dx = 5, dy = 16 } = {}) {
+  const marks = page.lines.flatMap((l) =>
+    l.items.filter((i) => i.text.trim() === "回").map((i) => ({ x: i.x, y: l.y })),
+  );
+  if (!marks.length) return page;
+  const lines = page.lines.map((line) => {
+    const items = line.items.filter((i) => {
+      // ★**単独の数字だけを対象にする。** `7-4` のようなスコアには触らない
+      if (!/^[0-9０-９]{1,2}$/.test(i.text.trim())) return true;
+      return !marks.some((m) => Math.abs(m.x - i.x) <= dx && line.y - m.y > 0 && line.y - m.y <= dy);
+    });
+    return { ...line, items, text: items.map((i) => i.text).join("\t") };
+  });
+  return { page: page.page, lines };
+}
+
+/**
+ * ★**数字がいくつも1つの断片に潰れているのをほどく**（2026-08-17。滋賀のため）。
+ *
+ * 滋賀のスロット番号の行は、47個のうち17個が
+ * **「１５ １６ １７ １８」のように1つの断片**になっている。
+ * さらに**全角**なので、`assembleSlotBracket` の `/^\d+$/` には1つも当たらない。
+ * このまま渡すと連番が 1〜14 で途切れ、**47スロットの表を14スロットとして読む。**
+ *
+ * ★**位置は「代表的な間隔 × 文字数」で見積もらないこと。**
+ * 紙によって字送りが違い、実測で最大5ポイント（＝0.4スロット）ずれた。
+ * **pdf.js が返す断片の幅を文字数で割る**（`pdf-text.mjs` の `width`）。
+ * 幅が無い断片は割れないので、そのまま返す。
+ *
+ * ★**桁数で左端がずれるのも、ここで直す。**
+ * `９`(幅4.4) と `１０`(幅8.9) は**同じ間隔で並んでいるのに左端の差は9.6**しかない
+ * （本当の間隔は11.9）。`assembleSlotBracket` は左端を見るので、
+ * 1桁と2桁の境目でスロットの位置が2ポイント狂う。
+ * **`numbersOf` と同じ「左端＋(桁数−1)/2文字」に置き直す**と、
+ * どの桁数でも同じ基準になり、校名の行との差も一定になる（実測で1.0〜1.8ポイント）。
+ *
+ * ★**対象は「数字と空白だけでできた断片」に限る。**
+ * `11-1` のようなスコアや校名には触らない（スコアは `pairedScores` の担当）。
+ */
+export function explodeNumberRuns(page) {
+  const lines = page.lines.map((line) => {
+    const items = line.items.flatMap((it) => {
+      const raw = it.text.trim();
+      if (!/^[0-9０-９]+(?:[ 　]+[0-9０-９]+)*$/.test(raw)) return [it];
+      const half = raw.replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0));
+      // 幅が無ければ割れない。全角を半角にするところまではやる
+      if (!(it.width > 0)) return [{ ...it, text: half }];
+      /*
+        ★**幅は「元の文字列ぜんぶ」の幅。** 前後に空白が付いていることがあるので、
+        文字送りは `trim` した長さではなく**元の長さ**で割り、
+        先頭の空白のぶんだけ右にずらす。
+      */
+      const per = it.width / it.text.length;
+      const lead = it.text.length - it.text.trimStart().length;
+      const out = [];
+      // ★区切りの空白が2つ以上のこともあるので、**実際の文字位置**を数える
+      let seen = 0;
+      for (const part of half.split(/[ 　]+/)) {
+        const at = half.indexOf(part, seen);
+        out.push({
+          ...it,
+          x: it.x + (lead + at + (part.length - 1) / 2) * per,
+          width: part.length * per,
+          text: part,
+        });
+        seen = at + part.length;
+      }
+      return out;
+    });
+    items.sort((a, b) => a.x - b.x);
+    return { y: line.y, items, text: items.map((i) => i.text).join("\t") };
+  });
+  return { page: page.page, lines };
+}
+
+/**
  * ページの座標を入れ替えて「スロットが横・回戦が上へ」の向きに直す。
  *
  * ★**表は縦向きに描かれていることがある。** 京都はスロットが横一列で
@@ -191,6 +286,39 @@ export function assembleSlotBracket(
       同じ道を通るので、生成物は1バイトも変わらない。
     */
     hitSpan = false,
+    /*
+      ★**1試合のスコアが `11-1` と1つの断片に書かれる表がある**（2026-08-17。滋賀）。
+
+      京都・広島・山口はスコアが**2つの数字として別々に**置かれるので、
+      `numbersOf` は「数字だけの断片」しか見ていない。滋賀は
+      **`11-1`（1〜2回戦）と `４－３`（3回戦以降）**で、どちらも1つの断片。
+      そのままでは**その回戦の数字が1つも読めず**、帯が見つからない。
+
+      `pairedScores: true` にすると `A-B` を**2つの数字**として読む。
+      置く位置は断片の中の文字位置から出す（`pdf-text.mjs` の `width` を使う。
+      無ければ今までどおり代表的な文字幅で見積もる）。
+
+      ★**既定は false のまま。** 既存の25県は `A-B` の断片を今も読み飛ばしており、
+      有効にすると**日付の範囲（`7-8`）まで数字として拾いうる**ので、
+      使う県だけで有効にする。
+    */
+    pairedScores = false,
+    /*
+      ★**日付・球場を探す窓の広さ**（2026-08-17。滋賀）。`1` が今までどおり。
+
+      京都・広島は日付や球場が**スコアの帯より下**にあるので、
+      窓は「スコアの帯からほんの少し上」までで足りていた。
+      滋賀は**上に積む**（下から コールド → スコア → 第何試合 → 球場 → 日付）ので、
+      球場の帯はスコアの帯の**26〜29ポイント上**にある。
+      既定の窓（回戦の間隔の0.3倍＝15〜24ポイント）には**1つも入らず、
+      2回戦以降は「1つ前の回戦の球場」が付いていた**
+      （3回戦の試合に、その回戦では使っていない今津スタジアムが付いた）。
+
+      ★**広げすぎると次の回戦の帯に届く。** 滋賀で測ると、
+      球場は間隔の0.56倍・次の回戦のスコアは1.0倍なので、そのあいだを採る
+      （`2.5` を渡すと 0.3×2.5＝0.75倍）。**県ごとに測って渡すこと。**
+    */
+    labelReach = 1,
   } = {},
 ) {
   /*
@@ -334,9 +462,19 @@ export function assembleSlotBracket(
   const numbersOf = (line) => {
     const out = [];
     for (const it of line.items) {
-      let cursor = it.x;
-      for (const part of it.text.trim().split(/\s+/)) {
-        const w = part.length * CHAR;
+      const raw = it.text.trim();
+      /*
+        ★`pairedScores` のとき、字送りは**代表的な文字幅ではなく断片の実測幅**から出す。
+        `11-1` の左右をどこに置くかは 0.1 スロットの精度が要り、
+        `PITCH * 0.45` の見積もりでは足りない（滋賀の右端で 0.30 スロットずれた）。
+        ★**幅は元の文字列ぜんぶのぶん**なので、割るのも元の長さ。
+        先頭に空白があれば、そのぶん右から始める。
+      */
+      const useWidth = pairedScores && it.width > 0 && it.text.length > 0;
+      const step = useWidth ? it.width / it.text.length : CHAR;
+      let cursor = useWidth ? it.x + (it.text.length - it.text.trimStart().length) * step : it.x;
+      for (const part of raw.split(/\s+/)) {
+        const w = part.length * step;
         /*
           ★**スコアの後ろに丸数字が付く表がある**（鹿児島の `10⑤` `11⑦`）。
           ⑤は5回コールドの意味で、点数は10。落とさないと**その試合のスコアが
@@ -363,11 +501,25 @@ export function assembleSlotBracket(
           `+ 幅/2` にすると1桁の数まで半文字ぶん右にずれ、
           **スロットの境目の判定が 0.3 を超えて外れる**（京都の1回戦が落ちた）。
         */
-        if (/^\d{1,2}$/.test(half)) {
-          const x = cursor + ((part.length - 1) * CHAR) / 2;
-          out.push({ v: Number(half), slot: toSlot(x), x });
+        /** 断片の中の `at` 文字目から `len` 文字ぶんの数を、その位置に置く */
+        const put = (v, at, len) => {
+          const x = cursor + (at + (len - 1) / 2) * step;
+          out.push({ v, slot: toSlot(x), x });
+        };
+        /*
+          ★**`11-1` を左右2つの数として読む**（`pairedScores` のときだけ）。
+          区切りは半角ハイフンのほか、全角（滋賀の3回戦以降は `４－３`）と
+          長音・ダッシュも受ける。**桁数は2桁まで**にして、
+          電話番号や年号のような長い並びを拾わないようにする。
+        */
+        const pair = pairedScores && half.length === part.length && half.match(/^(\d{1,2})[-‐‑–—−ー－](\d{1,2})$/);
+        if (pair) {
+          put(Number(pair[1]), 0, pair[1].length);
+          put(Number(pair[2]), pair[1].length + 1, pair[2].length);
+        } else if (/^\d{1,2}$/.test(half)) {
+          put(Number(half), 0, part.length);
         }
-        cursor += w + CHAR * 0.35;
+        cursor += w + step * 0.35;
       }
     }
     return out;
@@ -615,7 +767,7 @@ export function assembleSlotBracket(
       広島は1回戦の日付がスコアの帯から約140ポイント下にあり、
       広めに探すと**2回戦以降の日付を拾って17試合の日付が狂っていた。**
     */
-    const wide = labelsBetween(slotLine.y, r1row.y + PITCH * 2.2);
+    const wide = labelsBetween(slotLine.y, r1row.y + PITCH * 2.2 * labelReach);
     const picked = pickBand(wide.dates, pods.length, null);
     prevDateY = picked.y;
     const { dates, venues } = { ...wide, dates: picked.dates };
@@ -815,7 +967,10 @@ export function assembleSlotBracket(
       前の回戦の帯より下にあることがある（広島の右半分の準決勝がそうで、
       日付に合わせて窓を切ったら球場だけ落ちた）。**日付にだけ順番の条件を掛ける。**
     */
-    const wide = labelsBetween(Math.min(prevDateY ?? Infinity, lastY - gap), best.line.y + gap * 0.3);
+    const wide = labelsBetween(
+      Math.min(prevDateY ?? Infinity, lastY - gap),
+      best.line.y + gap * 0.3 * labelReach,
+    );
     const picked = pickBand(
       wide.dates.filter((d) => prevDateY === null || d.y > prevDateY),
       mids.length,

@@ -257,14 +257,20 @@ export function latestSeasonGames(
   if (!district.games.length) return null;
   /*
     ★**日付を持たない県がある**ので、日付だけで「いちばん新しい季節」を
-    決められない。日付のある試合があればそれで決め、無ければ
-    **その県が持っている季節をそのまま使う**（日付の無い出典は
-    1つの大会ぶんしか持たないので、季節も1つに決まる）。
+    決められない。日付のある試合があればそれで決める。
+
+    ~~日付の無い出典は1つの大会ぶんしか持たないので、季節も1つに決まる~~
+    ★**これは 2026-08-17 に成り立たなくなった。** 滋賀は**夏と春の両方**を
+    持っていて、**どちらも日付が無い**（紙に日にちしか書かれておらず、
+    月がどこにも無いため）。**配列の先頭を採ると、アダプタの `seasons` に
+    書いた順で結果が変わる。** 季節の順で決める。
   */
+  /** 日付が無いときの新しい順。春 → 夏 → 秋（同じ年の中での順） */
+  const SEASON_ORDER: Record<RegionalSeason, number> = { spring: 0, summer: 1, autumn: 2 };
   const dated = district.games.filter((g) => g.date);
   const newestSeason = dated.length
     ? [...dated].sort((a, b) => a.date!.localeCompare(b.date!)).at(-1)!.season
-    : district.games[0].season;
+    : district.games.reduce((a, b) => (SEASON_ORDER[b.season] > SEASON_ORDER[a.season] ? b : a)).season;
 
   const games = district.games
     .filter((g) => g.season === newestSeason)

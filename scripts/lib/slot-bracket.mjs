@@ -355,6 +355,21 @@ export function assembleSlotBracket(
       （`2.5` を渡すと 0.3×2.5＝0.75倍）。**県ごとに測って渡すこと。**
     */
     labelReach = 1,
+    /*
+      ★**1回戦が何試合以上なら「1回戦の帯」と認めるか**（2026-08-18。兵庫のため）。
+
+      既定は 2。**2つの数字がたまたま境目をはさんだだけの行**を
+      1回戦と読み違えると、以降の回戦が全部ずれるので、
+      **2試合ぶん（4個）を要求して誤検出を防いでいる。**
+
+      ★**兵庫は9チームのブロックが16個**という形で、
+      **どのブロックも1回戦はちょうど1試合**（9→8→4→2→1）。
+      既定のままだと1回戦の帯が飛ばされ、**2回戦が1回戦として読まれる。**
+
+      ★**下げるのは「1回戦が1試合と分かっている表」だけにすること。**
+      チーム数が事前に分かっていて、試合数の検算ができる県に限る。
+    */
+    minFirstRound = 2,
   } = {},
 ) {
   /*
@@ -633,7 +648,7 @@ export function assembleSlotBracket(
           `（帯 ${merged.map((l) => l.y.toFixed(0)).join("+")}／PITCH=${PITCH.toFixed(1)}）`,
       );
     }
-    if (ns.length < 4 || ns.length % 2 !== 0) continue;
+    if (ns.length < minFirstRound * 2 || ns.length % 2 !== 0) continue;
     const found = [];
     let ok = true;
     for (let i = 0; i + 1 < ns.length; i += 2) {

@@ -677,6 +677,75 @@ export const REGIONAL_WAKAYAMA: RegionalDistrict = {
           "slug": "wakayamakogyo"
         }
       ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権和歌山大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "熊野",
+          "score": 2,
+          "won": false,
+          "name": "熊野高校",
+          "slug": "kumano"
+        },
+        {
+          "display": "耐久",
+          "score": 5,
+          "won": true,
+          "name": "耐久高校",
+          "slug": "taikyu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権和歌山大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山工",
+          "score": 1,
+          "won": false,
+          "name": "和歌山工業高校",
+          "slug": "wakayamakogyo"
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 8,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権和歌山大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "耐久",
+          "score": 3,
+          "won": false,
+          "name": "耐久高校",
+          "slug": "taikyu"
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 4,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ]
     }
   ]
 };

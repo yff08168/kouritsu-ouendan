@@ -4988,8 +4988,13 @@ const wakayama = {
   siteUrl: "https://www.whbf.jp/",
   politenessMs: 2000,
   seasons: { summer: "https://www.whbf.jp/news.html" },
-  /** ★準決勝以降は抽選なので出さない（下記）。「試合が欠けている」の警告を止める */
-  partial: true,
+  /*
+    ~~★準決勝以降は抽選なので出さない。`partial: true` で警告を止める~~
+    ★**2026-08-18 に外した。** 抽選の結果は紙に書いてあり、
+    `readDrawnRounds()` で読めるようになったので**準々決勝4・準決勝2・決勝1が揃う。**
+    `partial` を付けたままだと、**将来この読み取りが壊れて3試合が消えても
+    警告が出ない**（それがいちばん困る）。**検査を効かせておく。**
+  */
   async collect({ fetchHtml, season, url }) {
     if (season !== "summer") return [];
     const html = await fetchHtml(url);
@@ -5090,10 +5095,11 @@ const wakayama = {
       **準々決勝までを出す**（`partial: true` で「試合が欠けている」の警告を止める）。
       準決勝2試合と決勝1試合は出さない。35試合中32試合。
 
-      ★**次にやるなら**、表は準決勝の対戦校を**縦書きの校名**で書いている
-      （x≒111/310/508/719、y は準々決勝の帯と準決勝の帯のあいだ）。
-      そこを読めば残り3試合も出せる。ただし同じ範囲に
-      **準々決勝の勝者名の行（横書き）と休養日の注記**が入るので、切り分けが要る。
+      ★★**ただし「出せない」ではなかった**（2026-08-18）。
+      **抽選の結果そのものが紙に書いてある** —— 準決勝に進んだ4校が
+      **縦書きの校名**で並んでいる（x≒111/310/508/719）。
+      枝を伸ばすのではなく**そこを読む**ので、推測にはならない。
+      下の `readDrawnRounds()` を見ること。
     */
     const dropped = new Set(["決勝", "準決勝"]);
     const games = built.games.filter((g) => !dropped.has(g.round));
@@ -5134,9 +5140,18 @@ const wakayama = {
       }
     }
 
+    /*
+      ---- ★★抽選で決まった準決勝・決勝を、紙から読む（2026-08-18）----
+      **枝からは決まらないが、結果は紙に書いてある。** 読めなければ
+      準々決勝までを出す（今までどおり）。
+    */
+    const drawn = this.readDrawnRounds(cropped, winners, verify, subseq);
+    for (const g of drawn) games.push(g);
+
     console.log(
       `  （${tournament}: ${games.length} 試合 / ${built.teams} チーム・**日付なし**` +
-        `／準決勝以降は抽選なので出さない）`,
+        (drawn.length ? "／準決勝以降は抽選の結果を紙から読んだ" : "／準決勝以降は読めなかったので出さない") +
+        "）",
     );
     return games.map((g) => ({
       // ★**日付が1つも書かれていない。推測で埋めない**（千葉・三重・宮崎と同じ）
@@ -5150,6 +5165,145 @@ const wakayama = {
         { display: g.b, score: g.sb, won: g.sb > g.sa },
       ],
     }));
+  },
+  /**
+   * ★★**抽選で決まった準決勝・決勝を、紙から読む**（2026-08-18）。
+   *
+   * 和歌山は準決勝の組み合わせを準々決勝の勝者から抽選し直すので、
+   * **枝を伸ばすと実在しない対戦ができる。** ただし
+   * **抽選の結果そのものが紙に書いてある** —— 準決勝に進んだ4校が
+   * 縦書きで並んでいる（第108回は x≒111/310/508/719）。
+   * 枝ではなくそこを読むので、これは推測ではなく**読み取り**。
+   *
+   * ★**実際に枝の順とは違った。** 準々決勝の勝者は枝の順で
+   * 熊野・智辯和歌山・耐久・和歌山工 だが、抽選後は
+   * **熊野 vs 耐久／和歌山工 vs 智辯和歌山**。
+   * 枝を伸ばしていたら2試合とも実在しない対戦になっていた。
+   *
+   * ★**切り分けは「紙に書いてある行」で決める。** 同じ範囲に
+   * **準々決勝の勝者名（横書き）と休養日の注記**が入るので、
+   * **注記の行より上・準決勝のスコアの帯より下**だけを見る
+   * （座標の決め打ちをしない）。
+   *
+   * ★**読めない・辻褄が合わないときは空を返す**（準々決勝までを出す）。
+   * ここは「補えないなら補わない」に倒す。
+   */
+  readDrawnRounds(page, qfWinners, verify, subseq) {
+    const items = page.lines.flatMap((l) => l.items.map((i) => ({ x: i.x, y: l.y, t: i.text.trim() })));
+    /** 「準決勝戦の組み合わせは…抽選する」の注記。ここより上が抽選後の世界 */
+    const note = page.lines.filter((l) => /抽\s*選|休\s*養\s*日/.test(l.text.replace(/\t/g, ""))).map((l) => l.y);
+    if (!note.length) {
+      console.log("  ⚠️ 和歌山: 抽選の注記が見つからない。準決勝以降は出さない");
+      return [];
+    }
+    const noteY = Math.max(...note);
+
+    /** 注記より上にある「数字だけの帯」を下から順に */
+    const bands = new Map();
+    for (const it of items) {
+      if (it.y <= noteY || !/^\d{1,2}$/.test(it.t)) continue;
+      const k = [...bands.keys()].find((v) => Math.abs(v - it.y) <= 3) ?? it.y;
+      if (!bands.has(k)) bands.set(k, []);
+      bands.get(k).push({ x: it.x, v: Number(it.t) });
+    }
+    const sorted = [...bands.entries()].sort((a, b) => a[0] - b[0]);
+    const sf = sorted.find(([, ns]) => ns.length === 4);
+    const fin = sorted.find(([y, ns]) => ns.length === 2 && (!sf || y > sf[0]));
+    if (!sf || !fin) {
+      console.log("  ⚠️ 和歌山: 準決勝(4個)・決勝(2個)のスコアの帯が見つからない。準決勝以降は出さない");
+      return [];
+    }
+
+    /*
+      ★**準決勝に出た4校の縦書き。** 注記より上・準決勝のスコアより下。
+      同じ列（x が近い）の字を**上から下**につなぐ。
+    */
+    const cols = new Map();
+    for (const it of items) {
+      if (it.y <= noteY || it.y >= sf[0] || !it.t) continue;
+      if (/^\d{1,2}$/.test(it.t)) continue;
+      const k = [...cols.keys()].find((v) => Math.abs(v - it.x) <= 4) ?? it.x;
+      if (!cols.has(k)) cols.set(k, []);
+      cols.get(k).push(it);
+    }
+    const names = [...cols.entries()]
+      .map(([x, cs]) => ({ x, name: cs.sort((a, b) => b.y - a.y).map((c) => c.t).join("") }))
+      .sort((a, b) => a.x - b.x);
+    if (names.length !== 4) {
+      console.log(`  ⚠️ 和歌山: 準決勝に進んだ校名が ${names.length} 列（4列のはず）。準決勝以降は出さない`);
+      return [];
+    }
+
+    /*
+      ---- ★検算1: 4校は準々決勝の勝者の並べ替えでなければならない ----
+      **これがいちばん強い。** 読み違えれば、必ずどれかが勝者に無い名前になる。
+    */
+    const pool = [...qfWinners];
+    for (const n of names) {
+      const i = pool.findIndex((w) => normalizeSchoolName(w) === normalizeSchoolName(n.name));
+      if (i < 0) {
+        console.log(
+          `  ⚠️ 和歌山: 準決勝の「${n.name}」が準々決勝の勝者（${qfWinners.join("・")}）に無い。準決勝以降は出さない`,
+        );
+        return [];
+      }
+      pool.splice(i, 1);
+    }
+
+    /** スコアは校名の列のすぐそば（実測で 3〜4ポイント） */
+    const scoreFor = (n) => {
+      const hit = sf[1].filter((s) => Math.abs(s.x - n.x) <= 12).sort((a, b) => Math.abs(a.x - n.x) - Math.abs(b.x - n.x));
+      return hit[0] ?? null;
+    };
+    const withScore = names.map((n) => ({ ...n, s: scoreFor(n) }));
+    if (withScore.some((n) => !n.s) || new Set(withScore.map((n) => n.s.x)).size !== 4) {
+      console.log("  ⚠️ 和歌山: 準決勝のスコアを校名に結び付けられない。準決勝以降は出さない");
+      return [];
+    }
+
+    const out = [];
+    const finalists = [];
+    for (const [p, q] of [[withScore[0], withScore[1]], [withScore[2], withScore[3]]]) {
+      if (p.s.v === q.s.v) {
+        console.log("  ⚠️ 和歌山: 準決勝が同点になっている。準決勝以降は出さない");
+        return [];
+      }
+      out.push({ round: "準決勝", a: p.name, b: q.name, sa: p.s.v, sb: q.s.v });
+      finalists.push(p.s.v > q.s.v ? p : q);
+    }
+
+    /*
+      ---- 決勝 ----
+      ★**左右どちらの山の得点かは、準決勝の2校のあいだにあるかで決める。**
+      （紙は決勝の得点を、その山の2校の中ほどに置く）
+    */
+    const side = (lo, hi) => fin[1].filter((f) => f.x > Math.min(lo, hi) && f.x < Math.max(lo, hi));
+    const left = side(withScore[0].x, withScore[1].x);
+    const right = side(withScore[2].x, withScore[3].x);
+    if (left.length !== 1 || right.length !== 1) {
+      console.log("  ⚠️ 和歌山: 決勝の得点を左右の山に振り分けられない。準決勝以降は出さない");
+      return out;
+    }
+    if (left[0].v === right[0].v) {
+      console.log("  ⚠️ 和歌山: 決勝が同点になっている。決勝は出さない");
+      return out;
+    }
+    out.push({ round: "決勝", a: finalists[0].name, b: finalists[1].name, sa: left[0].v, sb: right[0].v });
+
+    /*
+      ---- ★検算2: 決勝の優勝校・準優勝校がお知らせと一致するか ----
+      ★**ここが石川ですり抜けた「構造は合うのに決勝の相手が違う」を止める。**
+      枝ではなく紙から読んでいるので、**両校とも**突き合わせられる。
+    */
+    const champ = left[0].v > right[0].v ? finalists[0].name : finalists[1].name;
+    const runner = left[0].v > right[0].v ? finalists[1].name : finalists[0].name;
+    if (!subseq(champ, verify.champion) || !subseq(runner, verify.runnerUp)) {
+      console.log(
+        `  ⚠️ 和歌山: 読んだ決勝（${champ} / ${runner}）がお知らせ（${verify.champion} / ${verify.runnerUp}）と合わない。準決勝以降は出さない`,
+      );
+      return [];
+    }
+    return out;
   },
 };
 
@@ -5472,6 +5626,420 @@ const shiga = {
 };
 
 /**
+ * 兵庫県高等学校野球連盟（`hyogo-koyaren.or.jp`）。
+ * ★**「履歴が無い（当日のみ）」に分類していたが誤りだった**（2026-08-18）。
+ * トップページに**大会が終わったあとの結果PDFが4枚**並んでいる。
+ * 規約の制限は無い（Copyright表記のみ・robots.txt は404）。
+ *
+ * ------------------------------------------------------------------
+ * ★★ この県は**1つの大会が4枚のPDFに分かれている**（このリポジトリで初）
+ *
+ *   108hyogo.pdf        「4回戦まで」… **16ブロック × 9チーム = 128試合**
+ *   108hyogo 5R.pdf     「5回戦」    … 8試合（ブロックの優勝校16校）
+ *   108hyogo quarter.pdf「準々決勝戦」… 4試合
+ *   108hyogo final.pdf  「準決勝・決勝戦」… 3試合
+ *
+ *   144チーム・143試合。★**1枚ずつでは「チーム数−試合数=1」が成立しない**ので、
+ *   **4枚を突き合わせて検算する**（下記）。
+ *
+ * ------------------------------------------------------------------
+ * ★ 紙の形は2種類
+ *
+ *   **本体**… 4列×4段の**16ブロック**が格子に並ぶ。1ブロックは
+ *   「スロット番号1〜9の列 → 校名 → 回戦ごとの得点の列」が**左から右**へ並ぶ縦型。
+ *   ★**校名と得点がスロット番号の同じ側にある**ので、`assembleSlotBracket` の
+ *   前提（校名と回戦が反対側）に合わない。**スロット番号の列を校名と得点のあいだへ
+ *   動かしてから渡す**（スロット軸は y なので、x を動かしても順番は変わらない）。
+ *
+ *   **残り3枚**… 校名を縦に並べ、得点を1本の列に置くだけの単純な形。
+ *   ブロックが無いので専用の読み手（`readSimpleSheet`）で読む。
+ *
+ * ------------------------------------------------------------------
+ * ★ 検算（4枚をまたぐのがこの県の要）
+ *
+ *   1. 各ブロックが **9チーム・8試合**（`assembleSlotBracket` の構造検査）
+ *   2. ブロックは **16個**ちょうど（見出し①〜⑯）
+ *   3. ★★**5回戦に出た16校が、ブロックの優勝校16校と完全に一致する**
+ *      —— **枚をまたぐので、本体の読み違いをここで捕まえられる。**
+ *      1ブロックでも組み立てを間違えれば、必ずどれかが一致しなくなる
+ *   4. 準々決勝の8校 = 5回戦の勝者8校／準決勝の4校 = 準々決勝の勝者4校
+ *   5. 合計 143試合（144チーム − 1）
+ */
+const hyogo = {
+  slug: "hyogo",
+  district: "兵庫",
+  name: "兵庫県高等学校野球連盟",
+  siteUrl: "http://www.hyogo-koyaren.or.jp/",
+  politenessMs: 2000,
+  // **夏だけ。** 春季（`26haru.pdf`）と秋季は紙の形が未確認
+  seasons: { summer: "http://www.hyogo-koyaren.or.jp/index.php" },
+  /**
+   * トップページから4枚を見分ける。★**軟式を必ず外す**
+   * （同じ一覧に `71hyogo.pdf`＝第71回軟式、`N26haru.pdf` などが並ぶ。
+   * 軟式は**ファイル名が `N` で始まる**か「軟式」と書いてある）。
+   */
+  sheets: [
+    { key: "main", label: /4回戦まで/, games: 128 },
+    { key: "r5", label: /5回戦/, games: 8 },
+    { key: "quarter", label: /準々決勝/, games: 4 },
+    { key: "final", label: /準決勝|決勝/, games: 3 },
+  ],
+  async collect({ fetchHtml, season, url }) {
+    if (season !== "summer") return [];
+    const html = await fetchHtml(url);
+    if (!html) return [];
+
+    /** 見出し → PDFのURL。**「108hyogo」で始まるものだけ**を見る（軟式・春季を外す） */
+    const found = new Map();
+    for (const m of html.matchAll(/<a[^>]+href=["']([^"']+\.pdf)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
+      const href = new URL(m[1], url).toString();
+      const file = decodeURIComponent(href.split("/").pop() ?? "");
+      if (!/^108hyogo/i.test(file)) continue;
+      const label = normalize(plain(m[2]));
+      for (const s of this.sheets) {
+        if (!found.has(s.key) && s.label.test(label)) found.set(s.key, { href, label });
+      }
+    }
+    const missing = this.sheets.filter((s) => !found.has(s.key));
+    if (missing.length) {
+      console.log(`  ⚠️ 兵庫: ${missing.map((s) => s.key).join("・")} のPDFが見つからない。1試合も出さない`);
+      return [];
+    }
+
+    const sheets = new Map();
+    for (const s of this.sheets) {
+      const { href } = found.get(s.key);
+      const parsed = await fetchPdfPages(href, { headers: UA });
+      await sleep(this.politenessMs);
+      if (!parsed?.length) {
+        console.log(`  ⚠️ 兵庫: ${s.key} のPDFが読めない。1試合も出さない`);
+        return [];
+      }
+      sheets.set(s.key, parsed[0]);
+    }
+
+    const tournament = raw2flat(sheets.get("main"))
+      .map((t) => t.match(/第\d+回全国高校野球選手権兵庫大会/)?.[0])
+      .find(Boolean);
+    if (!tournament) {
+      console.log("  ⚠️ 兵庫: 本体のPDFに大会名の見出しが無い。1試合も出さない");
+      return [];
+    }
+    // 「第108回全国高校野球選手権兵庫大会」→ 画面には全国と同じ書き方でそろえる
+    const title = tournament.replace("全国高校野球選手権", "全国高等学校野球選手権");
+
+    const blocks = this.readBlocks(sheets.get("main"));
+    if (!blocks) return [];
+    const later = [];
+    for (const [key, round] of [["r5", "5回戦"], ["quarter", "準々決勝"], ["final", null]]) {
+      const got = this.readSimpleSheet(sheets.get(key), key, round);
+      if (!got) return [];
+      later.push(...got);
+    }
+
+    const games = [...blocks.games, ...later];
+    if (!this.verify(blocks, later, games)) return [];
+
+    console.log(`  （${title}: ${games.length} 試合 / ${blocks.teams} チーム・16ブロック・**日付なし**）`);
+    return games.map((g) => ({
+      /*
+        ★**日付を出さない。** 本体の紙は**ブロックごとに1つの日付も書いていない**
+        （見出しの「7月18日」は印刷日）。残り3枚には日付があるが、
+        **128試合に日付が無いまま15試合だけ日付を出すと、県のページの並びが
+        「日付のある試合が先」になって回戦の順が崩れる。** そろえて出さない。
+      */
+      date: null,
+      season,
+      tournament: title,
+      round: g.round,
+      venue: null,
+      teams: [
+        { display: g.a, score: g.sa, won: g.sa > g.sb },
+        { display: g.b, score: g.sb, won: g.sb > g.sa },
+      ],
+    }));
+  },
+  /**
+   * 本体（16ブロック）を読む。
+   *
+   * ★**座標を決め打ちしない。** 見出し①〜⑯の位置から
+   * 列（x が同じもの）と段（y が同じもの）を作る。
+   */
+  readBlocks(raw) {
+    const marks = [];
+    for (const l of raw.lines) {
+      for (const i of l.items) {
+        if (/^[①-⑳]$/.test(i.text.trim())) marks.push({ x: i.x, y: l.y, t: i.text.trim() });
+      }
+    }
+    if (marks.length !== 16) {
+      console.log(`  ⚠️ 兵庫: ブロックの見出しが ${marks.length} 個（16個のはず）。1試合も出さない`);
+      return null;
+    }
+    const uniq = (vs) => [...new Set(vs.map((v) => Math.round(v)))].sort((a, b) => a - b);
+    const colX = uniq(marks.map((m) => m.x));
+    const rowY = uniq(marks.map((m) => m.y)).reverse(); // 上から
+    if (colX.length !== 4 || rowY.length !== 4) {
+      console.log(`  ⚠️ 兵庫: ブロックが ${colX.length}列 × ${rowY.length}段（4×4のはず）。1試合も出さない`);
+      return null;
+    }
+    /** 列の幅。いちばん右の列は次が無いので、他の列と同じ幅とみなす */
+    const pitchX = colX[1] - colX[0];
+
+    const games = [];
+    const winners = [];
+    let teams = 0;
+    for (const m of marks.sort((a, b) => b.y - a.y || a.x - b.x)) {
+      const xlo = m.x - 6;
+      const xhi = m.x + pitchX - 6;
+      const below = rowY.find((y) => y < m.y - 1);
+      const ylo = below ?? 0;
+      const yhi = m.y - 1;
+
+      /*
+        ★**スロット番号の列を、校名と得点のあいだへ動かす。**
+        この紙は「スロット番号 → 校名 → 得点」と**同じ向き**に並ぶので、
+        そのままでは `assembleSlotBracket` が校名を帯として読む。
+        スロット軸は y なので、**x を動かしてもスロットの順番は変わらない。**
+        ★**得点の列から 20ポイント以上離すこと**（近いと1回戦の得点を
+        スロット番号として拾う。実測で 14ポイントでは足りなかった）。
+        校名は見出しから +13〜+35、最初の得点の列は +92 なので **+60** に置く。
+      */
+      const lines = raw.lines
+        .filter((l) => l.y > ylo && l.y <= yhi)
+        .map((l) => {
+          const items = l.items
+            .filter((i) => i.x >= xlo && i.x <= xhi)
+            // ★コールド・延長・タイブレークの注記は落とす（校名の側にも得点の側にも混ざる）
+            .filter((i) => !/^[（(]|※/.test(i.text.trim()))
+            .map((i) =>
+              Math.abs(i.x - (m.x + 3)) < 5 && /^\d+$/.test(i.text.trim()) ? { ...i, x: m.x + 60 } : i,
+            )
+            .sort((a, b) => a.x - b.x);
+          return { y: l.y, items, text: items.map((i) => i.text).join("\t") };
+        })
+        .filter((l) => l.items.length);
+
+      const built = assembleSlotBracket(orientPage({ page: 1, lines }, { slotAxis: "y", rowTolerance: 2 }), {
+        roundLabels: [],
+        nameOrder: "asc",
+        /*
+          ★**ブロックの大きさは一定ではない**（実測で9チームと10チームが混在）。
+          **9チームのブロックは1回戦がちょうど1試合**（9→8→4→2→1）なので、
+          既定（2試合ぶん＝4個）のままだと1回戦の帯が飛ばされ、
+          **2回戦が1回戦として読まれる。**
+        */
+        minFirstRound: 1,
+      });
+      if (!built || built.games.length !== built.teams - 1) {
+        console.log(
+          `  ⚠️ 兵庫: ブロック${m.t}を組み立てられない（${built ? `${built.teams}チーム/${built.games.length}試合` : "null"}）。1試合も出さない`,
+        );
+        return null;
+      }
+      games.push(...built.games);
+      winners.push(built.champion);
+      teams += built.teams;
+    }
+    return { games, winners, teams };
+  },
+  /**
+   * 5回戦・準々決勝・準決勝決勝の3枚を読む。
+   *
+   * ★**本体とは別の、ずっと単純な形。** 校名を縦に並べ、
+   * 得点は**1本（5回戦は左右2本）の列**に置くだけ。
+   * 「2つの得点は、その試合の2校の中間の高さをはさむ」だけで組める。
+   */
+  readSimpleSheet(raw, key, fixedRound) {
+    /** 得点。**列ごと**にまとめる（5回戦は左右2本、準決勝決勝は準決勝用と決勝用の2本） */
+    const nums = [];
+    for (const l of raw.lines) {
+      for (const i of l.items) {
+        if (/^\d{1,2}$/.test(i.text.trim())) nums.push({ x: i.x, y: l.y, v: Number(i.text.trim()) });
+      }
+    }
+    const cols = new Map();
+    for (const n of nums) {
+      const k = [...cols.keys()].find((v) => Math.abs(v - n.x) <= 8) ?? n.x;
+      if (!cols.has(k)) cols.set(k, []);
+      cols.get(k).push(n);
+    }
+    const colXs = [...cols.keys()].sort((a, b) => a - b);
+
+    /*
+      ★★**校名は「得点の列で区切った帯」ごとに組み立てること。**
+      5回戦の紙は**左右2組**が同じ高さに並ぶので、行の文字を素直につなぐと
+      **「西脇工業小野」のように2校がくっつく**（実際にそうなった）。
+
+      ★**文字の間隔では切り分けられない。** この紙は校名を一定の幅に
+      引き伸ばして組むので、「小 野」の字間（84ポイント）が
+      左右の組の隙間（172ポイント）と同じ桁になる。**得点の列で切る。**
+    */
+    const region = (x) => {
+      const i = colXs.findIndex((c) => x < c - 5);
+      return i < 0 ? colXs.length : i;
+    };
+    const teams = [];
+    for (const l of raw.lines) {
+      const byRegion = new Map();
+      for (const i of l.items) {
+        const t = i.text.trim();
+        if (!t || /^\d+$/.test(t) || /^[（(]|※|：|:/.test(t)) continue;
+        const r = region(i.x);
+        if (!byRegion.has(r)) byRegion.set(r, []);
+        byRegion.get(r).push(i);
+      }
+      for (const [r, cs] of byRegion) {
+        const name = cs.sort((a, b) => a.x - b.x).map((i) => i.text.trim()).join("").replace(/\s+/g, "");
+        // 見出し・脚注を外す（校名にこれらの語は入らない）
+        if (/大会|組合せ|試合日|球場|場所|本部|回戦|決勝|年|月|日/.test(name)) continue;
+        teams.push({ y: l.y, x: Math.min(...cs.map((i) => i.x)), region: r, name });
+      }
+    }
+
+    const out = [];
+    for (let k = 0; k < colXs.length; k++) {
+      const cx = colXs[k];
+      const list = cols.get(cx);
+      if (list.length % 2 !== 0) continue;
+      /*
+        ★**その得点の列に対応するのは、同じ帯にいる校名。**
+        帯が空なら、**それより浅い帯**（＝同じ校名を使う深い回戦。
+        準決勝決勝の紙の「決勝」がこれ）を使う。
+      */
+      const here = teams.filter((t) => t.region === k);
+      const pool = here.length ? here : teams.filter((t) => t.region < k);
+      const sorted = [...list].sort((a, b) => b.y - a.y);
+      for (let i = 0; i + 1 < sorted.length; i += 2) {
+        const hi = sorted[i];
+        const lo = sorted[i + 1];
+        const mid = (hi.y + lo.y) / 2;
+        // 中間の高さをはさんで、いちばん近い上下1校ずつ
+        const above = pool.filter((t) => t.y > mid).sort((a, b) => a.y - b.y)[0];
+        const below = pool.filter((t) => t.y < mid).sort((a, b) => b.y - a.y)[0];
+        if (!above || !below) continue;
+        out.push({ round: fixedRound, a: above.name, b: below.name, sa: hi.v, sb: lo.v, cx, mid });
+      }
+    }
+    /*
+      ★**準決勝・決勝の紙だけは2つの回戦が入っている。**
+      得点の列が浅い順に「準決勝2試合」「決勝1試合」。
+    */
+    if (key === "final") {
+      const byCol = new Map();
+      for (const g of out) byCol.set(g.cx, [...(byCol.get(g.cx) ?? []), g]);
+      const ordered = [...byCol.entries()].sort((a, b) => a[0] - b[0]);
+      if (ordered.length !== 2 || ordered[0][1].length !== 2 || ordered[1][1].length !== 1) {
+        console.log("  ⚠️ 兵庫: 準決勝2試合・決勝1試合として読めない。1試合も出さない");
+        return null;
+      }
+      for (const g of ordered[0][1]) g.round = "準決勝";
+      ordered[1][1][0].round = "決勝";
+      /*
+        ★**決勝は「準決勝の勝者2校」で組み直す。** 決勝の得点の左側にいるのは
+        準決勝の4校なので、そのままでは負けた学校を拾いうる。
+      */
+      const winners = ordered[0][1].map((g) => (g.sa > g.sb ? g.a : g.b));
+      ordered[1][1][0].a = winners[0];
+      ordered[1][1][0].b = winners[1];
+    }
+    const want = this.sheets.find((s) => s.key === key).games;
+    if (out.length !== want) {
+      console.log(`  ⚠️ 兵庫: ${key} が ${out.length} 試合（${want} 試合のはず）。1試合も出さない`);
+      return null;
+    }
+    return out.map(({ round, a, b, sa, sb }) => ({ round, a, b, sa, sb }));
+  },
+  /** ★★4枚をまたぐ検算。この県の要 */
+  verify(blocks, later, games) {
+    const key = (s) => normalizeSchoolName(s ?? "");
+    /*
+      ★★**紙ごとに略し方が違う**（実測）。
+      本体「市尼崎・西脇工・神戸商・明石商・神戸学院大附属」／
+      5回戦「市立尼崎・西脇工業・神戸商業・明石商業・神戸学院大附」。
+      **完全一致では突き合わせられない。**
+
+      ★**どちらかがもう一方の部分列**なら同じ学校とみなす
+      （「市尼崎」⊂「市立尼崎」、「神戸学院大附」⊂「神戸学院大附属」）。
+      ★**緩いのは1組の比べ方だけで、要求は「16校が過不足なく1対1で対応する」。**
+      1ブロックでも読み違えれば、必ずどれかが余る。
+      ★**先に完全一致を取ってから**部分列を見る（取り違えを減らす）。
+    */
+    const sub = (a, b) => {
+      let i = 0;
+      for (const c of b) if (c === a[i]) i += 1;
+      return i === a.length;
+    };
+    const alike = (a, b) => a === b || sub(a, b) || sub(b, a);
+    /** xs と ys が1対1で対応するか。対応しなければ余りを返す */
+    const match = (xs, ys) => {
+      const bag = [...ys].map(key);
+      const rest = [];
+      const left = [];
+      for (const x of xs.map(key)) {
+        const i = bag.indexOf(x);
+        if (i >= 0) bag.splice(i, 1);
+        else rest.push(x);
+      }
+      for (const x of rest) {
+        const i = bag.findIndex((b) => alike(x, b));
+        if (i >= 0) bag.splice(i, 1);
+        else left.push(x);
+      }
+      return { ok: xs.length === ys.length && !left.length && !bag.length, left, bag };
+    };
+    const same = (xs, ys) => match(xs, ys).ok;
+    /** ★合わないときは**どこが違うか**を出す（16校を目で見比べるのは無理） */
+    const diff = (xs, ys) => {
+      const { left, bag } = match(xs, ys);
+      return `後の紙だけ: ${left.join("・") || "なし"} / 前の紙だけ: ${bag.join("・") || "なし"}`;
+    };
+
+    const r5 = later.filter((g) => g.round === "5回戦");
+    const qf = later.filter((g) => g.round === "準々決勝");
+    const sf = later.filter((g) => g.round === "準決勝");
+    const fin = later.filter((g) => g.round === "決勝");
+
+    /*
+      ★★**5回戦に出た16校が、ブロックの優勝校16校と一致するか。**
+      **枚をまたぐ検算なので、本体の読み違いをここで捕まえられる。**
+      1ブロックでも組み立てを間違えれば、必ずどれかが一致しなくなる。
+    */
+    if (!same(r5.flatMap((g) => [g.a, g.b]), blocks.winners)) {
+      console.log(
+        `  ⚠️ 兵庫: 5回戦の16校が、ブロックの優勝校16校と合わない（${diff(r5.flatMap((g) => [g.a, g.b]), blocks.winners)}）。1試合も出さない`,
+      );
+      return false;
+    }
+    const winnersOf = (gs) => gs.map((g) => (g.sa > g.sb ? g.a : g.b));
+    for (const [name, prev, next] of [
+      ["準々決勝", winnersOf(r5), qf],
+      ["準決勝", winnersOf(qf), sf],
+      ["決勝", winnersOf(sf), fin],
+    ]) {
+      if (!same(next.flatMap((g) => [g.a, g.b]), prev)) {
+        console.log(`  ⚠️ 兵庫: ${name}の出場校が、前の回戦の勝者と合わない。1試合も出さない`);
+        return false;
+      }
+    }
+    /*
+      ★**合計は「チーム数 − 1」。** ブロックの大きさは一定ではない
+      （実測で9チームと10チームが混在）ので、**数を決め打ちしない。**
+    */
+    if (games.length !== blocks.teams - 1) {
+      console.log(`  ⚠️ 兵庫: 合計 ${games.length} 試合（${blocks.teams} チームなので ${blocks.teams - 1} のはず）。1試合も出さない`);
+      return false;
+    }
+    return true;
+  },
+};
+
+/** 行を「タブを外して全角を寄せた文字列」にする（大会名を探すため） */
+function raw2flat(page) {
+  return page.lines.map((l) => normalize(l.text.replace(/\t/g, "")));
+}
+
+/**
  * ここに県を足していく。
  *
  * ★**規約で制限のある連盟のサイトは足さないこと。**
@@ -5512,6 +6080,7 @@ const ADAPTERS = [
   fukui,
   wakayama,
   shiga,
+  hyogo,
 ];
 
 // ------------------------------------------------------------------
@@ -5774,6 +6343,51 @@ const DISTRICT_ALIASES = {
   */
   "山形\t山形商業": "yamagatashiritsushogyo",
   "山形\t新庄神室": "shinjokamurosangyo",
+  /*
+    兵庫（2026-08-18）。★**同名の県立と市立が3組ある**（尼崎・伊丹・西宮）。
+    学校マスタではどちらも同じ名前なので、規則だけでは候補が2つになって
+    結び付かない（**曖昧なら結び付けないのが正しい動作**）。
+
+    ★**出典は「県尼崎」「市尼崎」と設置区分を前に付けて書き分けている。**
+    同じ大会に両方が別のスロットとして載っているので、
+    **どちらがどちらかは推測ではなく表の読み取り。**
+    ★**5回戦の紙だけ「市立尼崎」と書く**（紙ごとに略し方が違う）ので両方受ける。
+  */
+  "兵庫\t県尼崎": "amagasaki",
+  "兵庫\t市尼崎": "hyogo-amagasaki",
+  "兵庫\t市立尼崎": "hyogo-amagasaki",
+  "兵庫\t県伊丹": "itami",
+  "兵庫\t市伊丹": "hyogo-itami",
+  "兵庫\t県西宮": "nishinomiya",
+  "兵庫\t市西宮": "hyogo-nishinomiya",
+  /*
+    兵庫。**規則では拾えない略し方**（学校マスタで候補が1件だけなのを確かめた）。
+
+      県立大附 → 兵庫県立大学附属（「県立大」を含む学校はこの1校）
+      県農     → 兵庫県立農業（但馬農業・播磨農業とは別。「県立農業」はこの1校）
+      洲本実   → 洲本実業（**実業→実 は規則に無い**。商業→商・工業→工・農業→農だけ）
+      篠山産   → 篠山産業（**産業→産 も規則に無い**）
+      相生産   → 相生産業（同上）
+      神戸高専 → 神戸市立工業高専（県内の高専は明石工業と神戸市立工業の2つで、
+                 「神戸」を含むのはこの1校。規則は「◯◯市立工業高専→◯◯市立高専」
+                 までしか畳まない）
+  */
+  "兵庫\t県立大附": "hyogokenritsudaigakufuzoku",
+  "兵庫\t県農": "hyogokenritsunogyo",
+  "兵庫\t洲本実": "sumotojitsugyo",
+  "兵庫\t篠山産": "sasayamasangyo",
+  "兵庫\t相生産": "aioisangyo",
+  "兵庫\t神戸高専": "kobeshiritsukogyo",
+  /*
+    ★**「市姫路」と「市川」はここに書かない**（2026-08-18）。
+
+      市姫路 … 学校マスタに**市立の姫路が2件**ある（`himejishiritsu` 姫路市立高校 /
+               `himeji` 姫路高校・市立）。**どちらを指すか出典からは決められない。**
+      市川   … 学校マスタに**「市川」を含む学校が1件も無い**。
+               結び付ける先が無いので、そのまま校名だけを出す。
+
+    **1試合を取りこぼすほうが、別の学校の戦績にするより軽い**（京都の宮津天橋と同じ判断）。
+  */
 };
 
 /**

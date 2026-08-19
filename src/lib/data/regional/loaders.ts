@@ -32,4 +32,9 @@ export const REGIONAL_LOADERS: Record<string, () => Promise<RegionalDistrict>> =
   wakayama: () => import("./wakayama").then((m) => m.REGIONAL_WAKAYAMA),
   shiga: () => import("./shiga").then((m) => m.REGIONAL_SHIGA),
   hyogo: () => import("./hyogo").then((m) => m.REGIONAL_HYOGO),
+  ibaraki: () => import("./ibaraki").then((m) => m.REGIONAL_IBARAKI),
+  okayama: () => import("./okayama").then((m) => m.REGIONAL_OKAYAMA),
+  kagawa: () => import("./kagawa").then((m) => m.REGIONAL_KAGAWA),
+  kochi: () => import("./kochi").then((m) => m.REGIONAL_KOCHI),
+  nagasaki: () => import("./nagasaki").then((m) => m.REGIONAL_NAGASAKI),
 };

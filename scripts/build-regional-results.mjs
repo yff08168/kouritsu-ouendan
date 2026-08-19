@@ -6860,6 +6860,340 @@ function raw2flat(page) {
  *
  * 詳細はREADMEの「都道府県高野連サイトの規約調査」。
  */
+// ------------------------------------------------------------------
+// ★★ 一球速報（omyutech）の試合データを、連盟の公式サイト経由で読む5県
+//     茨城・岡山・香川・高知・長崎（2026-08-20 追加）
+// ------------------------------------------------------------------
+
+/**
+ * ★★**2026-08-20 に方針を変えた。** それまでは「omyutech からは取らない」だった。
+ *
+ * ------------------------------------------------------------------
+ * ★ 何が変わったのか
+ *
+ *   **変えたのは「連盟の公式サイト上で連盟名義で公開されている試合結果は、
+ *   連盟の著作物として扱い、その数値（事実）を引用する」という整理。**
+ *   運営者の判断（2026-08-20）。
+ *
+ *   ★**この判断の前提を、次に触る人が誤解しないように書いておく。**
+ *
+ *   1. **著作権の面では元から問題になっていなかった。**
+ *      スコアは事実であって、著作権が守るのは表現。このリポジトリは
+ *      21世紀枠でも「事実の抽出では CC BY-SA の継承は発動しないが、
+ *      文章を持ってくると発動する」と整理している。**同じ線を引いている。**
+ *      ★だから**文章は取らない。数値・校名・日付・球場・回戦だけ**にすること。
+ *   2. ★★**塞いでいたのは著作権ではなく利用規約だった。**
+ *      一球速報.com の利用規約（2020-03-27 最終改訂）第20条（禁止行為）
+ *      (2) コンテンツのクローリング・スクレイピング等による取得
+ *      (3) コンテンツの営利目的での第三者提供
+ *      **これは著作権の条項ではない**ので、「連盟の著作物として扱う」という
+ *      整理ではこの条文に届かない。
+ *   3. 判断材料として実際に確かめた事実:
+ *      - 第20条の名宛人は「利用者」＝第2条(7)で
+ *        「登録希望者及び登録ユーザーを含む本サービスを利用する一切の個人又は法人」
+ *      - 一方 第3条1項は「登録ユーザーと当社との間」の関係に適用と書いている
+ *      - 第21条3項の制裁（データの廃棄・消却請求、差止め）の対象は**登録ユーザー**
+ *      - 4県の robots.txt は `Disallow:` が空＝**全許可**
+ *      - 連盟サイト側には利用規約が無い（香川はメニュー構成を全部展開して確認）
+ *
+ *   ★**運営者が上記を踏まえて「取る」と決めた。** 覆すときも同じ材料で判断すること。
+ *
+ * ------------------------------------------------------------------
+ * ★ 出典の形
+ *
+ *   `baseball.omyutech.com/json/omyuleagueschedule.action`
+ *     ?league_id=<県ごとの定数>&year=<年+種別>&section_id=<節>
+ *
+ *   `league_id` は連盟サイトの `main.*.chunk.js` にある県ごとの定数
+ *   （茨城208・岡山233・香川236・高知239・長崎242）。
+ *   ★**`from=` は何を入れても結果が変わらない**（香川のサイト自身が
+ *   `from=yamagata` を送っている）。空で送る。
+ *
+ *   返るのは**組み立て済みの試合の一覧**で、1件ずつに
+ *   日付・回戦・球場・両校の正式名称と略称・得点・状態が入っている。
+ *
+ * ------------------------------------------------------------------
+ * ★★ この出典は「組み立て」が要らない ── 失敗の仕方が他の県と違う
+ *
+ *   PDFの県は「1つでも検算が合わなければ、その大会を1試合も出さない」に
+ *   倒してある。**枝の位置から対戦を推測するので、外すと存在しない試合を作る**からだ。
+ *
+ *   ここは1件ずつが出典の記録そのもので、**対戦相手を推測する余地が無い。**
+ *   起きうるのは「余計な記録を混ぜる」「取りこぼす」だけなので、
+ *   **おかしな1件を飛ばして警告を出す**に倒す。大会ごと落とすのは行き過ぎ。
+ *
+ * ------------------------------------------------------------------
+ * ★ ここで踏んだところ
+ *
+ *   1. ★★**既定の応答だけでは足りない。** 香川の2025春は
+ *      「第78回春季四国地区高等学校野球大会出場順位決定戦」**1試合**しか返らず、
+ *      本体の34試合は `section_id=5`（春季県大会）にあった。
+ *      **`section_list` を見て節ごとに取り直すこと。**
+ *   2. ★★**未実施の記録が混ざる。** `試合開始前中止` は**0対0**で入っており、
+ *      **同じ対戦が翌日に本物の結果として再度載る**（茨城の2025選手権で3件）。
+ *      落とさないと「0-0の引き分け」が画面に出る。
+ *   3. ★★**中断した試合も0対0ではないが結果ではない。**
+ *      `6回裏より継続試合` はその時点のスコアで、**翌日に `試合終了` の記録が別にある**
+ *      （竜ヶ崎一 4-7 常磐大 → 翌日 5-7）。これも落とす。
+ *      **→ 状態はホワイトリスト方式にする。知らない状態は出さずに警告する。**
+ *   4. ★**上位大会の節が混ざる。** 茨城には「春季関東大会」、岡山には「春季中国大会」の
+ *      節があり、**他県の学校が出てくる。** 県のページに混ぜない。
+ *   5. ★**軟式の大会が同じ節の一覧に並ぶ**（岡山）。このサイトは硬式なので外す。
+ *   6. ★**岡山だけ `year` の作りが違う。** 他の4県は `年+種別`（20262＝2026年の選手権）
+ *      だが、岡山は `年` だけで、**その年の全大会が節として並ぶ。**
+ *      節の名前で季節を振り分ける（`byYearOnly`）。
+ */
+
+/** 終わった試合だけを通す。★**知らない状態は通さない**（上の3を参照） */
+const OMYU_FINISHED = /^(試合終了|[0-9０-９]+回コールド|延長[0-9０-９]+回終了)$/;
+
+/**
+ * ★**このサイトが扱わない大会。** 硬式の県大会だけを残す。
+ * ★**「全国」「関東」などの語で外さないこと** —— 選手権の県予選は
+ * 「第108回**全国**高等学校野球選手権香川大会」、春季は
+ * 「春季**四国**地区高等学校野球香川県大会」で、どちらも上位大会の語を含む
+ * （これで外して香川の夏が0試合になった）。
+ */
+const OMYU_SKIP_SECTION = /軟式|交流試合|一年生|１年生|選抜|甲子園|神宮/;
+
+/**
+ * ★★**残すのは「大会名に県名が入っているもの」だけ。**
+ *
+ * 上位大会（岡山の「第144回春季中国地区高等学校野球大会」、
+ * 茨城の「春季関東大会」）には**他県の学校が出てくる**ので県のページに混ぜない。
+ * 県予選は必ず県名が入る（「…香川大会」「…茨城県大会」「…長崎県大会」）ので、
+ * **県名の有無で線を引くのがいちばん確実。** main() の `isPrefectureOnly` と同じ考え方。
+ */
+const omyuKeeps = (district, name) =>
+  Boolean(name) && name.includes(district) && !OMYU_SKIP_SECTION.test(name);
+
+/** 節の名前 → 季節。岡山（`byYearOnly`）で使う */
+const OMYU_SEASON_OF = (name) =>
+  /春季/.test(name) ? "spring" : /選手権/.test(name) ? "summer" : /秋季/.test(name) ? "autumn" : null;
+
+/**
+ * ★**正式名称から、学校マスタの短い校名に当たる形を作る。**
+ *
+ *   香川県立善通寺第一高等学校 → 善通寺第一
+ *   高松第一高等学校           → 高松第一
+ *   香川高等専門学校高松       → （そのまま。高等専門学校は落とさない）
+ *
+ * ★**設置区分は先頭のぶんだけ落とす。** 「熊本県立第二高等学校」のように
+ * **校名そのものに設置区分が入っている学校**があるので、
+ * 落とした結果が空や1文字になるなら元に戻す。
+ */
+function omyuMatchName(full) {
+  const s = normalize(String(full ?? "")).replace(/[\s　]/g, "");
+  if (!s) return null;
+  const bare = s.replace(/^.{1,4}?[都道府県]立/, "").replace(/^.{1,4}?[市町村区]立/, "");
+  const dropped = bare.length >= 2 ? bare : s;
+  // ★**高等専門学校を壊さない**（「高等学校」で終わるものだけ落とす）
+  const out = dropped.replace(/高等学校$/, "");
+  return out.length >= 2 ? out : dropped;
+}
+
+/**
+ * 1回ぶんの取得。**取れなければ null。例外は投げない**（1県の失敗で全国を止めない）。
+ */
+async function fetchOmyuSchedule(leagueId, year, sectionId = "") {
+  const url =
+    `https://baseball.omyutech.com/json/omyuleagueschedule.action` +
+    `?from=&league_id=${leagueId}&year=${year}&team_id=&section_id=${sectionId}&game_date=`;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    if (attempt > 0) await sleep(3000 * attempt);
+    try {
+      const res = await fetch(url, {
+        headers: { ...UA, Accept: "application/json" },
+        signal: AbortSignal.timeout(30000),
+      });
+      if (!res.ok) continue;
+      const j = await res.json();
+      // ★`retCode` を見ること。中身が空でも 200 を返す
+      return j?.retCode === 0 ? j : null;
+    } catch {
+      // 次の試行へ
+    }
+  }
+  return null;
+}
+
+/**
+ * ★**5県で中身がまったく同じなので、アダプタを作る関数にしてある。**
+ * 県ごとに違うのは `leagueId` と、岡山だけの `byYearOnly` だけ。
+ */
+function omyuAdapter({ slug, district, name, siteUrl, leagueId, byYearOnly = false }) {
+  return {
+    slug,
+    district,
+    name,
+    siteUrl,
+    politenessMs: 1500,
+    // ★**3季とも同じ入口。** 季節の振り分けは `year` の作りか節の名前で決まる
+    seasons: { spring: siteUrl, summer: siteUrl, autumn: siteUrl },
+    leagueId,
+    byYearOnly,
+    /** 岡山は3季とも同じ応答から節を選ぶので、年ごとに1回だけ取る */
+    sectionCache: new Map(),
+
+    async collect({ season, year }) {
+      const kind = { spring: 1, summer: 2, autumn: 3 }[season];
+      const yearParam = this.byYearOnly ? `${year}` : `${year}${kind}`;
+
+      let base = this.sectionCache.get(yearParam);
+      if (base === undefined) {
+        base = await fetchOmyuSchedule(this.leagueId, yearParam);
+        this.sectionCache.set(yearParam, base);
+        await sleep(this.politenessMs);
+      }
+      // その年・その季節の大会がまだ無いときは静かに終わる（例外を投げない）
+      if (!base?.cup_name) return [];
+
+      /*
+        ★**節ごとに取り直す**（上の1）。節が無い応答は既定のぶんだけを使う。
+      */
+      const sections = base.section_list?.length
+        ? base.section_list
+        : [{ section_Id: "", section_name: base.cup_name }];
+
+      const games = [];
+      /** 同じ試合が別の節にも載ることがあるので `game_id` で落とす */
+      const seen = new Set();
+      /** 知らない状態。**黙って捨てない**ので、出典が変わったら気づける */
+      const unknown = new Map();
+
+      for (const s of sections) {
+        const label = normalize(String(s.section_name ?? ""));
+        if (OMYU_SKIP_SECTION.test(label)) continue;
+        /*
+          ★**節の名前に県名が入らない県がある**（香川の「選手権地方大会」）ので、
+          ここでは外さない。**大会名（`cup_name`）で判定する**（下）。
+        */
+        // 岡山は3季ぶんの節が1つの一覧に並ぶので、名前で季節を振り分ける
+        if (this.byYearOnly && OMYU_SEASON_OF(label) !== season) continue;
+
+        const o =
+          s.section_Id === "" ? base : await fetchOmyuSchedule(this.leagueId, yearParam, s.section_Id);
+        if (s.section_Id !== "") await sleep(this.politenessMs);
+        if (!o?.game_list?.length) continue;
+
+        const tournament = normalize(String(o.cup_name ?? "")).replace(/\s+/g, " ").trim() || null;
+        // ★**県名が入っている大会だけ残す**（`omyuKeeps` の説明を読むこと）
+        if (!omyuKeeps(this.district, tournament)) continue;
+
+        for (const g of o.game_list) {
+          if (seen.has(g.game_id)) continue;
+          seen.add(g.game_id);
+
+          const status = normalize(String(g.game_status ?? "").trim());
+          if (!OMYU_FINISHED.test(status)) {
+            /*
+              ★**未実施・中断中の記録**（`試合開始前` `試合開始前中止`
+              `N回裏より継続試合`）。**本物の結果は別の日に載る**ので落とす。
+              知らない状態だけ数えて出す。
+            */
+            if (!/試合開始前|継続試合|中止|ノーゲーム|試合前/.test(status)) {
+              unknown.set(status || "(空)", (unknown.get(status || "(空)") ?? 0) + 1);
+            }
+            continue;
+          }
+
+          const s1 = Number(g.team1_score);
+          const s2 = Number(g.team2_score);
+          if (!Number.isFinite(s1) || !Number.isFinite(s2)) continue;
+
+          const date = String(g.game_date ?? "").match(/^(\d{4})(\d{2})(\d{2})$/);
+          const a = String(g.team1_name_abbr || g.team1_name || "").trim();
+          const b = String(g.team2_name_abbr || g.team2_name || "").trim();
+          if (!a || !b) continue;
+
+          games.push({
+            // ★日付が読めなければ null のまま。推測で埋めない
+            date: date ? `${date[1]}-${date[2]}-${date[3]}` : null,
+            season,
+            tournament,
+            // 「１回戦」→「1回戦」。他県の生成物と表記をそろえる
+            round: normalize(String(g.pk_number ?? "").trim()) || null,
+            venue: String(g.stadium_name ?? "").trim() || null,
+            /*
+              ★**引き分けがある。**「勝っていない＝負け」と読むと画面に事実と違うことが出る
+              （岐阜で実際に出た）。得点が同じなら両方 false にする。
+            */
+            /*
+              ★★**画面に出す名前と、照合に使う名前を分ける。**
+
+              略称（`team1_name_abbr`）は「善通寺一」「高松一」「観音寺一」のように
+              **「第」を落とす**ので、学校マスタ（「善通寺第一高校」）に当たらない。
+              一方 `team1_name` は文科省の一覧と同じ**正式名称**
+              （「香川県立善通寺第一高等学校」）なので、そこから作った形なら確実に当たる。
+
+              ★**画面には略称を出す**（正式名称は一覧に並べるには長すぎる）。
+            */
+            teams: [
+              { display: a, match: omyuMatchName(g.team1_name), score: s1, won: s1 > s2 },
+              { display: b, match: omyuMatchName(g.team2_name), score: s2, won: s2 > s1 },
+            ],
+          });
+        }
+      }
+
+      if (unknown.size) {
+        console.log(
+          `  ⚠️ ${district}: 知らない試合状態 ${[...unknown].map(([k, v]) => `「${k}」${v}件`).join("・")}。` +
+            "その試合は出さない。出典の作りが変わった可能性がある",
+        );
+      }
+      return games;
+    },
+  };
+}
+
+/*
+  ★**league_id は連盟サイトの `main.*.chunk.js` にある県ごとの定数。**
+  変わらない（omyutech の SPA はチャンクのハッシュが変わっても同じ値を使う）。
+  ★**出典表示は連盟の名前で出す**（サイトの見た目も連盟のもの）。
+*/
+const ibaraki = omyuAdapter({
+  slug: "ibaraki",
+  district: "茨城",
+  name: "茨城県高等学校野球連盟",
+  siteUrl: "http://www.ibaraki-hbf.com/",
+  leagueId: 208,
+});
+
+const okayama = omyuAdapter({
+  slug: "okayama",
+  district: "岡山",
+  name: "岡山県高等学校野球連盟",
+  siteUrl: "https://www.okayama-hbf.com/",
+  leagueId: 233,
+  // ★岡山だけ `year` が年のみで、その年の全大会が節として並ぶ
+  byYearOnly: true,
+});
+
+const kagawa = omyuAdapter({
+  slug: "kagawa",
+  district: "香川",
+  name: "香川県高等学校野球連盟",
+  siteUrl: "https://www.kagawa-hbf.com/top",
+  leagueId: 236,
+});
+
+const kochi = omyuAdapter({
+  slug: "kochi",
+  district: "高知",
+  name: "高知県高等学校野球連盟",
+  siteUrl: "https://www.kochi-hbf.com/top",
+  leagueId: 239,
+});
+
+const nagasaki = omyuAdapter({
+  slug: "nagasaki",
+  district: "長崎",
+  name: "長崎県高等学校野球連盟",
+  siteUrl: "https://nagasaki-kouyaren.com/",
+  leagueId: 242,
+});
+
 const ADAPTERS = [
   nagano,
   kanagawa,
@@ -6888,6 +7222,12 @@ const ADAPTERS = [
   wakayama,
   shiga,
   hyogo,
+  // ★2026-08-20 に方針を変えて足した5県（omyuAdapter の説明を読むこと）
+  ibaraki,
+  okayama,
+  kagawa,
+  kochi,
+  nagasaki,
 ];
 
 // ------------------------------------------------------------------
@@ -6995,6 +7335,13 @@ async function fetchSchools(supabase) {
  *   嘘にはならない側に倒れる。
  */
 const DISTRICT_ALIASES = {
+  /*
+    ★**香川高専は高松・詫間の2キャンパスがあり、大会にはキャンパスごとに出る**
+    （熊本高専と同じ形）。学校マスタは1校なので、両方を同じ学校に結び付ける。
+    ★**出典で実際に使われている表記だけ足すこと。**
+    2026-08-20 時点で確かめられたのは「香川高専高松」だけ。
+  */
+  "香川\t香川高専高松": "kagawa",
   "熊本\t高専八代": "kumamoto-kosen",
   "熊本\t高専熊本": "kumamoto-kosen",
   // 群馬は3回戦以降しか結果を出さないが、その中に出てくる略記
@@ -7508,13 +7855,31 @@ async function main() {
         校名が割れて見える（実際に「■リブワ-ク藤崎台球場」と一緒に出ていた）。
         **日本の校名に空白は入らない**ので、連合でなければ詰めてよい。
       */
-      const t = { ...t0, display: t0.display.replace(/[\s　]+/g, "") };
-      const norm = normalizeSchoolName(t.display);
+      /*
+        ★**照合用の別名を持つ出典がある**（2026-08-20。omyutech の5県）。
+        あちらは**画面に出す略称**（「善通寺一」）と**正式名称**（「香川県立善通寺第一
+        高等学校」）の両方を返すので、**照合には正式名称から作った形を使う。**
+        略称は「第」を落とすので学校マスタに当たらない。
+        ★**生成物には残さない**（下で外す）。画面に出すのは `display` だけ。
+      */
+      const { match: matchName, ...rest } = t0;
+      const t = { ...rest, display: t0.display.replace(/[\s　]+/g, "") };
+      /*
+        ★**正式名称の側を先に試し、当たらなければ略称で引く。**
+        「千葉市立千葉高等学校」のように**設置区分を落とすと同名になる**学校が
+        あるので、正式名称の側が1件に決まらないときは略称（「市立千葉」）に頼る。
+      */
+      const norm = normalizeSchoolName(matchName ?? t.display);
       let hits = index.byDistrict.get(`${adapter.district}\t${norm}`) ?? [];
       /*
         県内で引けなければ全国で引く（**地区大会の県外の相手**）。
         ★**県大会では使わない**（上の `isPrefectureOnly` を参照）。
       */
+      // ★正式名称で引けなければ、画面に出す略称でもう一度引く（上の説明）
+      if (hits.length !== 1 && matchName) {
+        const alt = index.byDistrict.get(`${adapter.district}\t${normalizeSchoolName(t.display)}`) ?? [];
+        if (alt.length === 1) hits = alt;
+      }
       if (hits.length === 0 && allowNationwide) hits = index.nationwide.get(norm) ?? [];
       if (hits.length !== 1) {
         unmatched.add(hits.length > 1 ? `${t.display}（同名が${hits.length}件）` : t.display);

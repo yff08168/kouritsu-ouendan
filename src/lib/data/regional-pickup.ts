@@ -4,29 +4,187 @@
 import type { RegionalPickups } from "@/lib/regional-results";
 
 export const REGIONAL_PICKUPS: RegionalPickups = {
-  "latestDate": "2026-07-28",
-  "spotlightSeason": "summer",
+  "latestDate": "2026-08-19",
+  "spotlightSeason": "autumn",
   "spotlight": [
     {
-      "slug": "narutozushio",
-      "display": "鳴門渦潮",
-      "name": "鳴門渦潮高校",
-      "district": "徳島",
-      "districtSlug": "tokushima",
-      "wins": 4,
+      "slug": "tamashimashogyo",
+      "display": "玉島商",
+      "name": "玉島商業高校",
+      "district": "岡山",
+      "districtSlug": "okayama",
+      "wins": 6,
       "standing": "決勝進出"
     },
     {
-      "slug": "ananko",
-      "display": "阿南光",
-      "name": "阿南光高校",
-      "district": "徳島",
-      "districtSlug": "tokushima",
-      "wins": 3,
+      "slug": "kurashikishogyo",
+      "display": "倉敷商",
+      "name": "倉敷商業高校",
+      "district": "岡山",
+      "districtSlug": "okayama",
+      "wins": 6,
       "standing": "決勝進出"
+    },
+    {
+      "slug": "tsuchiuradaiichi",
+      "display": "土浦一",
+      "name": "土浦第一高校",
+      "district": "茨城",
+      "districtSlug": "ibaraki",
+      "wins": 2,
+      "standing": "2回戦突破"
+    },
+    {
+      "slug": "sawa",
+      "display": "佐和",
+      "name": "佐和高校",
+      "district": "茨城",
+      "districtSlug": "ibaraki",
+      "wins": 1,
+      "standing": "2回戦突破"
+    },
+    {
+      "slug": "katsutakogyo",
+      "display": "勝田工",
+      "name": "勝田工業高校",
+      "district": "茨城",
+      "districtSlug": "ibaraki",
+      "wins": 1,
+      "standing": "2回戦突破"
+    },
+    {
+      "slug": "mitoshogyo",
+      "display": "水戸商",
+      "name": "水戸商業高校",
+      "district": "茨城",
+      "districtSlug": "ibaraki",
+      "wins": 1,
+      "standing": "2回戦突破"
+    },
+    {
+      "slug": "mitonogyo",
+      "display": "水戸農",
+      "name": "水戸農業高校",
+      "district": "茨城",
+      "districtSlug": "ibaraki",
+      "wins": 1,
+      "standing": "2回戦突破"
+    },
+    {
+      "slug": "ishiokashogyo",
+      "display": "石岡商",
+      "name": "石岡商業高校",
+      "district": "茨城",
+      "districtSlug": "ibaraki",
+      "wins": 1,
+      "standing": "2回戦突破"
     }
   ],
   "games": [
+    {
+      "districtSlug": "ibaraki",
+      "district": "茨城",
+      "sourceName": "茨城県高等学校野球連盟",
+      "sourceUrl": "http://www.ibaraki-hbf.com/",
+      "date": "2026-08-19",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "teams": [
+        {
+          "display": "水戸農",
+          "score": 4,
+          "won": true,
+          "name": "水戸農業高校",
+          "slug": "mitonogyo"
+        },
+        {
+          "display": "水戸三",
+          "score": 0,
+          "won": false,
+          "name": "水戸第三高校",
+          "slug": "mitodaisan"
+        }
+      ]
+    },
+    {
+      "districtSlug": "ibaraki",
+      "district": "茨城",
+      "sourceName": "茨城県高等学校野球連盟",
+      "sourceUrl": "http://www.ibaraki-hbf.com/",
+      "date": "2026-08-19",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "teams": [
+        {
+          "display": "牛久栄進",
+          "score": 1,
+          "won": false,
+          "name": "牛久栄進高校",
+          "slug": "ushikueishin"
+        },
+        {
+          "display": "石岡商",
+          "score": 9,
+          "won": true,
+          "name": "石岡商業高校",
+          "slug": "ishiokashogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "ibaraki",
+      "district": "茨城",
+      "sourceName": "茨城県高等学校野球連盟",
+      "sourceUrl": "http://www.ibaraki-hbf.com/",
+      "date": "2026-08-19",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "1回戦",
+      "teams": [
+        {
+          "display": "古河三",
+          "score": 2,
+          "won": false,
+          "name": "古河第三高校",
+          "slug": "kogadaisan"
+        },
+        {
+          "display": "鬼怒商",
+          "score": 12,
+          "won": true,
+          "name": "鬼怒商業高校",
+          "slug": "kinushogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "ibaraki",
+      "district": "茨城",
+      "sourceName": "茨城県高等学校野球連盟",
+      "sourceUrl": "http://www.ibaraki-hbf.com/",
+      "date": "2026-08-19",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "teams": [
+        {
+          "display": "牛久",
+          "score": 5,
+          "won": false,
+          "name": "牛久高校",
+          "slug": "ushiku"
+        },
+        {
+          "display": "土浦一",
+          "score": 7,
+          "won": true,
+          "name": "土浦第一高校",
+          "slug": "tsuchiuradaiichi"
+        }
+      ]
+    },
     {
       "districtSlug": "hiroshima",
       "district": "広島",
@@ -236,6 +394,32 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       ]
     },
     {
+      "districtSlug": "okayama",
+      "district": "岡山",
+      "sourceName": "岡山県高等学校野球連盟",
+      "sourceUrl": "https://www.okayama-hbf.com/",
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権岡山大会",
+      "round": "準決勝",
+      "teams": [
+        {
+          "display": "倉敷商",
+          "score": 9,
+          "won": true,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        },
+        {
+          "display": "関西",
+          "score": 5,
+          "won": false,
+          "name": "関西",
+          "slug": null
+        }
+      ]
+    },
+    {
       "districtSlug": "gunma",
       "district": "群馬",
       "sourceName": "群馬県高等学校野球連盟",
@@ -362,6 +546,84 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": false,
           "name": "宇部鴻城",
           "slug": null
+        }
+      ]
+    },
+    {
+      "districtSlug": "okayama",
+      "district": "岡山",
+      "sourceName": "岡山県高等学校野球連盟",
+      "sourceUrl": "https://www.okayama-hbf.com/",
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権岡山大会",
+      "round": "準々決勝",
+      "teams": [
+        {
+          "display": "倉敷商",
+          "score": 11,
+          "won": true,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        },
+        {
+          "display": "岡山東商",
+          "score": 1,
+          "won": false,
+          "name": "岡山東商業高校",
+          "slug": "okayamahigashishogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "kagawa",
+      "district": "香川",
+      "sourceName": "香川県高等学校野球連盟",
+      "sourceUrl": "https://www.kagawa-hbf.com/top",
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権香川大会",
+      "round": "準決勝",
+      "teams": [
+        {
+          "display": "丸亀",
+          "score": 2,
+          "won": false,
+          "name": "丸亀高校",
+          "slug": "marugame"
+        },
+        {
+          "display": "高松商",
+          "score": 3,
+          "won": true,
+          "name": "高松商業高校",
+          "slug": "takamatsushogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "nagasaki",
+      "district": "長崎",
+      "sourceName": "長崎県高等学校野球連盟",
+      "sourceUrl": "https://nagasaki-kouyaren.com/",
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権長崎大会",
+      "round": "準決勝",
+      "teams": [
+        {
+          "display": "長崎西",
+          "score": 2,
+          "won": false,
+          "name": "長崎西高校",
+          "slug": "nagasakinishi"
+        },
+        {
+          "display": "大崎",
+          "score": 5,
+          "won": true,
+          "name": "大崎高校",
+          "slug": "nagasaki-osaki"
         }
       ]
     },
@@ -1016,6 +1278,188 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       ]
     },
     {
+      "districtSlug": "okayama",
+      "district": "岡山",
+      "sourceName": "岡山県高等学校野球連盟",
+      "sourceUrl": "https://www.okayama-hbf.com/",
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権岡山大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "創志",
+          "score": 5,
+          "won": false,
+          "name": "創志",
+          "slug": null
+        },
+        {
+          "display": "倉敷工",
+          "score": 6,
+          "won": true,
+          "name": "倉敷工業高校",
+          "slug": "kurashikikogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "okayama",
+      "district": "岡山",
+      "sourceName": "岡山県高等学校野球連盟",
+      "sourceUrl": "https://www.okayama-hbf.com/",
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権岡山大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "金光",
+          "score": 1,
+          "won": false,
+          "name": "金光",
+          "slug": null
+        },
+        {
+          "display": "岡山東商",
+          "score": 8,
+          "won": true,
+          "name": "岡山東商業高校",
+          "slug": "okayamahigashishogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "kagawa",
+      "district": "香川",
+      "sourceName": "香川県高等学校野球連盟",
+      "sourceUrl": "https://www.kagawa-hbf.com/top",
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権香川大会",
+      "round": "準々決勝",
+      "teams": [
+        {
+          "display": "高松商",
+          "score": 10,
+          "won": true,
+          "name": "高松商業高校",
+          "slug": "takamatsushogyo"
+        },
+        {
+          "display": "寒川",
+          "score": 2,
+          "won": false,
+          "name": "寒川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "districtSlug": "kagawa",
+      "district": "香川",
+      "sourceName": "香川県高等学校野球連盟",
+      "sourceUrl": "https://www.kagawa-hbf.com/top",
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権香川大会",
+      "round": "準々決勝",
+      "teams": [
+        {
+          "display": "蓬莱",
+          "score": 5,
+          "won": false,
+          "name": "蓬莱",
+          "slug": null
+        },
+        {
+          "display": "丸亀",
+          "score": 6,
+          "won": true,
+          "name": "丸亀高校",
+          "slug": "marugame"
+        }
+      ]
+    },
+    {
+      "districtSlug": "nagasaki",
+      "district": "長崎",
+      "sourceName": "長崎県高等学校野球連盟",
+      "sourceUrl": "https://nagasaki-kouyaren.com/",
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権長崎大会",
+      "round": "準々決勝",
+      "teams": [
+        {
+          "display": "創成館",
+          "score": 1,
+          "won": false,
+          "name": "創成館",
+          "slug": null
+        },
+        {
+          "display": "大崎",
+          "score": 4,
+          "won": true,
+          "name": "大崎高校",
+          "slug": "nagasaki-osaki"
+        }
+      ]
+    },
+    {
+      "districtSlug": "nagasaki",
+      "district": "長崎",
+      "sourceName": "長崎県高等学校野球連盟",
+      "sourceUrl": "https://nagasaki-kouyaren.com/",
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権長崎大会",
+      "round": "準々決勝",
+      "teams": [
+        {
+          "display": "波佐見",
+          "score": 11,
+          "won": true,
+          "name": "波佐見高校",
+          "slug": "hasami"
+        },
+        {
+          "display": "九州文化",
+          "score": 6,
+          "won": false,
+          "name": "九州文化",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "districtSlug": "nagasaki",
+      "district": "長崎",
+      "sourceName": "長崎県高等学校野球連盟",
+      "sourceUrl": "https://nagasaki-kouyaren.com/",
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権長崎大会",
+      "round": "準々決勝",
+      "teams": [
+        {
+          "display": "長崎西",
+          "score": 10,
+          "won": true,
+          "name": "長崎西高校",
+          "slug": "nagasakinishi"
+        },
+        {
+          "display": "大村工",
+          "score": 1,
+          "won": false,
+          "name": "大村工業高校",
+          "slug": "omurakogyo"
+        }
+      ]
+    },
+    {
       "districtSlug": "kumamoto",
       "district": "熊本",
       "sourceName": "熊本県高等学校野球連盟",
@@ -1432,6 +1876,84 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       ]
     },
     {
+      "districtSlug": "kagawa",
+      "district": "香川",
+      "sourceName": "香川県高等学校野球連盟",
+      "sourceUrl": "https://www.kagawa-hbf.com/top",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権香川大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "三本松",
+          "score": 8,
+          "won": true,
+          "name": "三本松高校",
+          "slug": "sanbonmatsu"
+        },
+        {
+          "display": "小豆島中央",
+          "score": 4,
+          "won": false,
+          "name": "小豆島中央高校",
+          "slug": "shodoshimachuo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "kochi",
+      "district": "高知",
+      "sourceName": "高知県高等学校野球連盟",
+      "sourceUrl": "https://www.kochi-hbf.com/top",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
+      "teams": [
+        {
+          "display": "高知国際",
+          "score": 2,
+          "won": false,
+          "name": "高知国際高校",
+          "slug": "kochikokusai"
+        },
+        {
+          "display": "高知東",
+          "score": 9,
+          "won": true,
+          "name": "高知東高校",
+          "slug": "kochihigashi"
+        }
+      ]
+    },
+    {
+      "districtSlug": "kochi",
+      "district": "高知",
+      "sourceName": "高知県高等学校野球連盟",
+      "sourceUrl": "https://www.kochi-hbf.com/top",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
+      "teams": [
+        {
+          "display": "土佐塾",
+          "score": 1,
+          "won": false,
+          "name": "土佐塾",
+          "slug": null
+        },
+        {
+          "display": "梼原",
+          "score": 3,
+          "won": true,
+          "name": "檮原高校",
+          "slug": "yusuhara"
+        }
+      ]
+    },
+    {
       "districtSlug": "kanagawa",
       "district": "神奈川",
       "sourceName": "神奈川高校野球ステーション",
@@ -1588,522 +2110,54 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       ]
     },
     {
-      "districtSlug": "kagoshima",
-      "district": "鹿児島",
-      "sourceName": "鹿児島県高等学校野球連盟",
-      "sourceUrl": "http://www.kagoshima-kouyaren.jp/",
-      "date": "2026-07-17",
+      "districtSlug": "kochi",
+      "district": "高知",
+      "sourceName": "高知県高等学校野球連盟",
+      "sourceUrl": "https://www.kochi-hbf.com/top",
+      "date": "2026-07-18",
       "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権鹿児島大会",
-      "round": "3回戦",
-      "teams": [
-        {
-          "display": "錦江湾",
-          "score": 5,
-          "won": true,
-          "name": "錦江湾高校",
-          "slug": "kinkowan"
-        },
-        {
-          "display": "徳之島",
-          "score": 3,
-          "won": false,
-          "name": "徳之島高校",
-          "slug": "tokunoshima"
-        }
-      ]
-    },
-    {
-      "districtSlug": "kagoshima",
-      "district": "鹿児島",
-      "sourceName": "鹿児島県高等学校野球連盟",
-      "sourceUrl": "http://www.kagoshima-kouyaren.jp/",
-      "date": "2026-07-17",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権鹿児島大会",
-      "round": "3回戦",
-      "teams": [
-        {
-          "display": "大島",
-          "score": 4,
-          "won": true,
-          "name": "大島高校",
-          "slug": "kagoshima-oshima"
-        },
-        {
-          "display": "鹿屋農業",
-          "score": 1,
-          "won": false,
-          "name": "鹿屋農業高校",
-          "slug": "kanoyanogyo"
-        }
-      ]
-    },
-    {
-      "districtSlug": "yamagata",
-      "district": "山形",
-      "sourceName": "山形県高等学校野球連盟",
-      "sourceUrl": "https://www.yamagata-hbf.org/",
-      "date": "2026-07-17",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権山形大会",
-      "round": "3回戦",
-      "teams": [
-        {
-          "display": "米沢興譲館",
-          "score": 0,
-          "won": false,
-          "name": "米沢興譲館高校",
-          "slug": "yonezawakojokan"
-        },
-        {
-          "display": "酒田光陵",
-          "score": 3,
-          "won": true,
-          "name": "酒田光陵高校",
-          "slug": "sakatakoryo"
-        }
-      ]
-    },
-    {
-      "districtSlug": "yamagata",
-      "district": "山形",
-      "sourceName": "山形県高等学校野球連盟",
-      "sourceUrl": "https://www.yamagata-hbf.org/",
-      "date": "2026-07-17",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権山形大会",
-      "round": "3回戦",
-      "teams": [
-        {
-          "display": "山形南",
-          "score": 8,
-          "won": true,
-          "name": "山形南高校",
-          "slug": "yamagataminami"
-        },
-        {
-          "display": "酒田東",
-          "score": 0,
-          "won": false,
-          "name": "酒田東高校",
-          "slug": "sakatahigashi"
-        }
-      ]
-    },
-    {
-      "districtSlug": "kanagawa",
-      "district": "神奈川",
-      "sourceName": "神奈川高校野球ステーション",
-      "sourceUrl": "https://www.kanagawa-baseball.com/",
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権神奈川大会",
-      "round": "4回戦",
-      "teams": [
-        {
-          "display": "市ケ尾",
-          "score": 5,
-          "won": true,
-          "name": "市ケ尾高校",
-          "slug": "ichigao"
-        },
-        {
-          "display": "川崎工科",
-          "score": 2,
-          "won": false,
-          "name": "川崎工科高校",
-          "slug": "kawasakikoka"
-        }
-      ]
-    },
-    {
-      "districtSlug": "kanagawa",
-      "district": "神奈川",
-      "sourceName": "神奈川高校野球ステーション",
-      "sourceUrl": "https://www.kanagawa-baseball.com/",
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権神奈川大会",
-      "round": "4回戦",
-      "teams": [
-        {
-          "display": "横浜清陵",
-          "score": 10,
-          "won": true,
-          "name": "横浜清陵高校",
-          "slug": "yokohamaseiryo"
-        },
-        {
-          "display": "多摩",
-          "score": 5,
-          "won": false,
-          "name": "多摩高校",
-          "slug": "kanagawa-tama"
-        }
-      ]
-    },
-    {
-      "districtSlug": "kanagawa",
-      "district": "神奈川",
-      "sourceName": "神奈川高校野球ステーション",
-      "sourceUrl": "https://www.kanagawa-baseball.com/",
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権神奈川大会",
-      "round": "4回戦",
-      "teams": [
-        {
-          "display": "横浜商業",
-          "score": 12,
-          "won": true,
-          "name": "横浜商業高校",
-          "slug": "yokohamashogyo"
-        },
-        {
-          "display": "新羽",
-          "score": 2,
-          "won": false,
-          "name": "新羽高校",
-          "slug": "nippa"
-        }
-      ]
-    },
-    {
-      "districtSlug": "kumamoto",
-      "district": "熊本",
-      "sourceName": "熊本県高等学校野球連盟",
-      "sourceUrl": "http://www.kumamoto-kouyaren.com/",
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権熊本大会",
-      "round": "3回戦",
-      "teams": [
-        {
-          "display": "八代工業",
-          "score": 1,
-          "won": false,
-          "name": "八代工業高校",
-          "slug": "yatsushirokogyo"
-        },
-        {
-          "display": "熊本工業",
-          "score": 6,
-          "won": true,
-          "name": "熊本工業高校",
-          "slug": "kumamotokogyo"
-        }
-      ]
-    },
-    {
-      "districtSlug": "kumamoto",
-      "district": "熊本",
-      "sourceName": "熊本県高等学校野球連盟",
-      "sourceUrl": "http://www.kumamoto-kouyaren.com/",
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権熊本大会",
-      "round": "3回戦",
-      "teams": [
-        {
-          "display": "東稜",
-          "score": 2,
-          "won": false,
-          "name": "東稜高校",
-          "slug": "kumamoto-toryo"
-        },
-        {
-          "display": "岱志",
-          "score": 6,
-          "won": true,
-          "name": "岱志高校",
-          "slug": "kumamoto-taishi"
-        }
-      ]
-    },
-    {
-      "districtSlug": "niigata",
-      "district": "新潟",
-      "sourceName": "新潟県高等学校野球連盟",
-      "sourceUrl": "https://niigata-hbf.jp/",
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権新潟大会",
-      "round": "3回戦",
-      "teams": [
-        {
-          "display": "佐渡",
-          "score": 8,
-          "won": true,
-          "name": "佐渡高校",
-          "slug": "sado"
-        },
-        {
-          "display": "巻総合",
-          "score": 7,
-          "won": false,
-          "name": "巻総合高校",
-          "slug": "makisogo"
-        }
-      ]
-    },
-    {
-      "districtSlug": "niigata",
-      "district": "新潟",
-      "sourceName": "新潟県高等学校野球連盟",
-      "sourceUrl": "https://niigata-hbf.jp/",
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権新潟大会",
-      "round": "3回戦",
-      "teams": [
-        {
-          "display": "佐渡総合",
-          "score": 2,
-          "won": false,
-          "name": "佐渡総合高校",
-          "slug": "sadosogo"
-        },
-        {
-          "display": "新発田南",
-          "score": 15,
-          "won": true,
-          "name": "新発田南高校",
-          "slug": "shibataminami"
-        }
-      ]
-    },
-    {
-      "districtSlug": "niigata",
-      "district": "新潟",
-      "sourceName": "新潟県高等学校野球連盟",
-      "sourceUrl": "https://niigata-hbf.jp/",
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権新潟大会",
-      "round": "3回戦",
-      "teams": [
-        {
-          "display": "加茂",
-          "score": 0,
-          "won": false,
-          "name": "加茂高校",
-          "slug": "kamo"
-        },
-        {
-          "display": "新潟工",
-          "score": 10,
-          "won": true,
-          "name": "新潟工業高校",
-          "slug": "niigatakogyo"
-        }
-      ]
-    },
-    {
-      "districtSlug": "kyoto",
-      "district": "京都",
-      "sourceName": "京都府高等学校野球連盟",
-      "sourceUrl": "https://kyoto-hsbf.sakura.ne.jp/khsbf/",
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権京都大会",
-      "round": "3回戦",
-      "teams": [
-        {
-          "display": "京都精華",
-          "score": 1,
-          "won": false,
-          "name": "京都精華",
-          "slug": null
-        },
-        {
-          "display": "乙訓",
-          "score": 6,
-          "won": true,
-          "name": "乙訓高校",
-          "slug": "otokuni"
-        }
-      ]
-    },
-    {
-      "districtSlug": "yamanashi",
-      "district": "山梨",
-      "sourceName": "山梨県高等学校野球連盟",
-      "sourceUrl": "http://www.yamanashi-hbf.com/",
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権山梨大会",
-      "round": null,
-      "teams": [
-        {
-          "display": "甲府商業",
-          "score": 5,
-          "won": false,
-          "name": "甲府商業高校",
-          "slug": "kofushogyo"
-        },
-        {
-          "display": "甲府工業",
-          "score": 6,
-          "won": true,
-          "name": "甲府工業高校",
-          "slug": "kofukogyo"
-        }
-      ]
-    },
-    {
-      "districtSlug": "niigata",
-      "district": "新潟",
-      "sourceName": "新潟県高等学校野球連盟",
-      "sourceUrl": "https://niigata-hbf.jp/",
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権新潟大会",
-      "round": "3回戦",
-      "teams": [
-        {
-          "display": "巻",
-          "score": 2,
-          "won": false,
-          "name": "巻高校",
-          "slug": "maki"
-        },
-        {
-          "display": "六日町",
-          "score": 3,
-          "won": true,
-          "name": "六日町高校",
-          "slug": "muikamachi"
-        }
-      ]
-    },
-    {
-      "districtSlug": "ishikawa",
-      "district": "石川",
-      "sourceName": "石川県高等学校野球連盟",
-      "sourceUrl": "https://ishikawa-hbf.jp/",
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権石川大会",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
       "round": "2回戦",
       "teams": [
         {
-          "display": "金沢二水",
-          "score": 5,
-          "won": true,
-          "name": "金沢二水高校",
-          "slug": "kanazawanisui"
-        },
-        {
-          "display": "金沢北陵",
+          "display": "高知農",
           "score": 2,
           "won": false,
-          "name": "金沢北陵高校",
-          "slug": "kanazawahokuryo"
-        }
-      ]
-    },
-    {
-      "districtSlug": "yamanashi",
-      "district": "山梨",
-      "sourceName": "山梨県高等学校野球連盟",
-      "sourceUrl": "http://www.yamanashi-hbf.com/",
-      "date": "2026-07-14",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権山梨大会",
-      "round": null,
-      "teams": [
-        {
-          "display": "青洲",
-          "score": 5,
-          "won": true,
-          "name": "青洲高校",
-          "slug": "seishu"
+          "name": "高知農業高校",
+          "slug": "kochinogyo"
         },
         {
-          "display": "笛吹",
-          "score": 0,
-          "won": false,
-          "name": "笛吹高校",
-          "slug": "fuefuki"
+          "display": "高知商",
+          "score": 5,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
         }
       ]
     },
     {
-      "districtSlug": "kumamoto",
-      "district": "熊本",
-      "sourceName": "熊本県高等学校野球連盟",
-      "sourceUrl": "http://www.kumamoto-kouyaren.com/",
-      "date": "2026-07-14",
+      "districtSlug": "kochi",
+      "district": "高知",
+      "sourceName": "高知県高等学校野球連盟",
+      "sourceUrl": "https://www.kochi-hbf.com/top",
+      "date": "2026-07-18",
       "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権熊本大会",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
       "round": "2回戦",
       "teams": [
         {
-          "display": "八代",
-          "score": 1,
-          "won": false,
-          "name": "八代高校",
-          "slug": "yatsushiro"
-        },
-        {
-          "display": "済々黌",
-          "score": 8,
+          "display": "窪川",
+          "score": 11,
           "won": true,
-          "name": "済々黌高校",
-          "slug": "seiseiko"
-        }
-      ]
-    },
-    {
-      "districtSlug": "yamagata",
-      "district": "山形",
-      "sourceName": "山形県高等学校野球連盟",
-      "sourceUrl": "https://www.yamagata-hbf.org/",
-      "date": "2026-07-14",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権山形大会",
-      "round": "3回戦",
-      "teams": [
-        {
-          "display": "新庄志誠館",
-          "score": 3,
-          "won": false,
-          "name": "新庄志誠館高校",
-          "slug": "shinjoshiseikan"
+          "name": "窪川高校",
+          "slug": "kubokawa"
         },
         {
-          "display": "山形中央",
+          "display": "中村",
           "score": 7,
-          "won": true,
-          "name": "山形中央高校",
-          "slug": "yamagatachuo"
-        }
-      ]
-    },
-    {
-      "districtSlug": "yamanashi",
-      "district": "山梨",
-      "sourceName": "山梨県高等学校野球連盟",
-      "sourceUrl": "http://www.yamanashi-hbf.com/",
-      "date": "2026-07-13",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権山梨大会",
-      "round": null,
-      "teams": [
-        {
-          "display": "白根",
-          "score": 4,
           "won": false,
-          "name": "白根高校",
-          "slug": "yamanashi-shirone"
-        },
-        {
-          "display": "日川",
-          "score": 6,
-          "won": true,
-          "name": "日川高校",
-          "slug": "hikawa"
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
         }
       ]
     }

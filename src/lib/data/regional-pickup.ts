@@ -4,114 +4,29 @@
 import type { RegionalPickups } from "@/lib/regional-results";
 
 export const REGIONAL_PICKUPS: RegionalPickups = {
-  "latestDate": "2026-08-13",
-  "spotlightSeason": "autumn",
-  "spotlight": [],
+  "latestDate": "2026-07-28",
+  "spotlightSeason": "summer",
+  "spotlight": [
+    {
+      "slug": "narutozushio",
+      "display": "鳴門渦潮",
+      "name": "鳴門渦潮高校",
+      "district": "徳島",
+      "districtSlug": "tokushima",
+      "wins": 4,
+      "standing": "決勝進出"
+    },
+    {
+      "slug": "ananko",
+      "display": "阿南光",
+      "name": "阿南光高校",
+      "district": "徳島",
+      "districtSlug": "tokushima",
+      "wins": 3,
+      "standing": "決勝進出"
+    }
+  ],
   "games": [
-    {
-      "districtSlug": "tokushima",
-      "district": "徳島",
-      "sourceName": "徳島県高等学校野球連盟",
-      "sourceUrl": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/",
-      "date": "2026-08-13",
-      "season": "autumn",
-      "tournament": "令和8年度徳島県高校野球新人南部ブロック大会",
-      "round": "決勝",
-      "teams": [
-        {
-          "display": "阿南光",
-          "score": 1,
-          "won": false,
-          "name": "阿南光高校",
-          "slug": "ananko"
-        },
-        {
-          "display": "海部",
-          "score": 8,
-          "won": true,
-          "name": "海部高校",
-          "slug": "kaifu"
-        }
-      ]
-    },
-    {
-      "districtSlug": "tokushima",
-      "district": "徳島",
-      "sourceName": "徳島県高等学校野球連盟",
-      "sourceUrl": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/",
-      "date": "2026-08-13",
-      "season": "autumn",
-      "tournament": "令和8年度徳島県高校野球新人南部ブロック大会",
-      "round": "3位決定戦",
-      "teams": [
-        {
-          "display": "那賀",
-          "score": 1,
-          "won": false,
-          "name": "那賀高校",
-          "slug": "tokushima-naga"
-        },
-        {
-          "display": "小松島",
-          "score": 11,
-          "won": true,
-          "name": "小松島高校",
-          "slug": "komatsushima"
-        }
-      ]
-    },
-    {
-      "districtSlug": "tokushima",
-      "district": "徳島",
-      "sourceName": "徳島県高等学校野球連盟",
-      "sourceUrl": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/",
-      "date": "2026-08-11",
-      "season": "autumn",
-      "tournament": "令和8年度徳島県高校野球新人ブロック大会（Aブロック）",
-      "round": "決勝",
-      "teams": [
-        {
-          "display": "鳴門",
-          "score": 14,
-          "won": true,
-          "name": "鳴門高校",
-          "slug": "tokushima-naruto"
-        },
-        {
-          "display": "城東",
-          "score": 4,
-          "won": false,
-          "name": "城東高校",
-          "slug": "tokushima-joto"
-        }
-      ]
-    },
-    {
-      "districtSlug": "tokushima",
-      "district": "徳島",
-      "sourceName": "徳島県高等学校野球連盟",
-      "sourceUrl": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/",
-      "date": "2026-08-11",
-      "season": "autumn",
-      "tournament": "令和8年度徳島県高等学校野球新人ブロック大会",
-      "round": "決勝",
-      "teams": [
-        {
-          "display": "脇町",
-          "score": 4,
-          "won": false,
-          "name": "脇町高校",
-          "slug": "wakimachi"
-        },
-        {
-          "display": "穴吹",
-          "score": 5,
-          "won": true,
-          "name": "穴吹高校",
-          "slug": "anabuki"
-        }
-      ]
-    },
     {
       "districtSlug": "hiroshima",
       "district": "広島",
@@ -213,6 +128,58 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": false,
           "name": "呉高校",
           "slug": "kure"
+        }
+      ]
+    },
+    {
+      "districtSlug": "tokushima",
+      "district": "徳島",
+      "sourceName": "徳島県高等学校野球連盟",
+      "sourceUrl": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/",
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権徳島大会",
+      "round": "準決勝",
+      "teams": [
+        {
+          "display": "阿南光",
+          "score": 8,
+          "won": true,
+          "name": "阿南光高校",
+          "slug": "ananko"
+        },
+        {
+          "display": "板野",
+          "score": 2,
+          "won": false,
+          "name": "板野高校",
+          "slug": "itano"
+        }
+      ]
+    },
+    {
+      "districtSlug": "tokushima",
+      "district": "徳島",
+      "sourceName": "徳島県高等学校野球連盟",
+      "sourceUrl": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/",
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権徳島大会",
+      "round": "準決勝",
+      "teams": [
+        {
+          "display": "鳴門渦潮",
+          "score": 5,
+          "won": true,
+          "name": "鳴門渦潮高校",
+          "slug": "narutozushio"
+        },
+        {
+          "display": "生光学園",
+          "score": 4,
+          "won": false,
+          "name": "生光学園",
+          "slug": null
         }
       ]
     },
@@ -321,6 +288,32 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       ]
     },
     {
+      "districtSlug": "tokushima",
+      "district": "徳島",
+      "sourceName": "徳島県高等学校野球連盟",
+      "sourceUrl": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/",
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権徳島大会",
+      "round": "準々決勝",
+      "teams": [
+        {
+          "display": "板野",
+          "score": 5,
+          "won": true,
+          "name": "板野高校",
+          "slug": "itano"
+        },
+        {
+          "display": "徳島北",
+          "score": 3,
+          "won": false,
+          "name": "徳島北高校",
+          "slug": "tokushimakita"
+        }
+      ]
+    },
+    {
       "districtSlug": "gifu",
       "district": "岐阜",
       "sourceName": "岐阜県高等学校野球連盟",
@@ -369,6 +362,32 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": false,
           "name": "宇部鴻城",
           "slug": null
+        }
+      ]
+    },
+    {
+      "districtSlug": "tokushima",
+      "district": "徳島",
+      "sourceName": "徳島県高等学校野球連盟",
+      "sourceUrl": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/",
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権徳島大会",
+      "round": "準々決勝",
+      "teams": [
+        {
+          "display": "阿南光",
+          "score": 9,
+          "won": true,
+          "name": "阿南光高校",
+          "slug": "ananko"
+        },
+        {
+          "display": "小松島西",
+          "score": 2,
+          "won": false,
+          "name": "小松島西高校",
+          "slug": "komatsushimanishi"
         }
       ]
     },

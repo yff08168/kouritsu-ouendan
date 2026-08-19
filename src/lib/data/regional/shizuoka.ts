@@ -2057,6 +2057,696 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
           "slug": null
         }
       ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "飛龍",
+          "score": 4,
+          "won": true,
+          "name": "飛龍",
+          "slug": null
+        },
+        {
+          "display": "静岡市立",
+          "score": 2,
+          "won": false,
+          "name": "静岡市立高校",
+          "slug": "shizuokashiritsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "島田樟誠",
+          "score": 2,
+          "won": false,
+          "name": "島田樟誠",
+          "slug": null
+        },
+        {
+          "display": "遠江総合",
+          "score": 3,
+          "won": true,
+          "name": "遠江総合高校",
+          "slug": "totomisogo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "島田工",
+          "score": 1,
+          "won": false,
+          "name": "島田工業高校",
+          "slug": "shimadakogyo"
+        },
+        {
+          "display": "沼津商",
+          "score": 4,
+          "won": true,
+          "name": "沼津商業高校",
+          "slug": "numazushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浜松大平台",
+          "score": 4,
+          "won": true,
+          "name": "浜松大平台高校",
+          "slug": "hamamatsuohiradai"
+        },
+        {
+          "display": "焼津中央",
+          "score": 2,
+          "won": false,
+          "name": "焼津中央高校",
+          "slug": "yaizuchuo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐陽",
+          "score": 4,
+          "won": false,
+          "name": "桐陽",
+          "slug": null
+        },
+        {
+          "display": "掛川西",
+          "score": 5,
+          "won": true,
+          "name": "掛川西高校",
+          "slug": "kakegawanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浜松工",
+          "score": 0,
+          "won": false,
+          "name": "浜松工業高校",
+          "slug": "hamamatsukogyo"
+        },
+        {
+          "display": "東海大静岡翔洋",
+          "score": 6,
+          "won": true,
+          "name": "東海大静岡翔洋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富士宮北",
+          "score": 0,
+          "won": false,
+          "name": "富士宮北高校",
+          "slug": "fujinomiyakita"
+        },
+        {
+          "display": "浜松開誠館",
+          "score": 3,
+          "won": true,
+          "name": "浜松開誠館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "静岡",
+          "score": 8,
+          "won": true,
+          "name": "静岡高校",
+          "slug": "shizuoka"
+        },
+        {
+          "display": "掛川東",
+          "score": 1,
+          "won": false,
+          "name": "掛川東高校",
+          "slug": "kakegawahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "遠江総合",
+          "score": 2,
+          "won": false,
+          "name": "遠江総合高校",
+          "slug": "totomisogo"
+        },
+        {
+          "display": "加藤学園",
+          "score": 4,
+          "won": true,
+          "name": "加藤学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "聖隷クリストファー",
+          "score": 3,
+          "won": true,
+          "name": "聖隷クリストファー",
+          "slug": null
+        },
+        {
+          "display": "沼津商",
+          "score": 1,
+          "won": false,
+          "name": "沼津商業高校",
+          "slug": "numazushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浜松学院興誠",
+          "score": 3,
+          "won": false,
+          "name": "浜松学院興誠",
+          "slug": null
+        },
+        {
+          "display": "静岡商",
+          "score": 5,
+          "won": true,
+          "name": "静岡商業高校",
+          "slug": "shizuokashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "磐田東",
+          "score": 6,
+          "won": true,
+          "name": "磐田東",
+          "slug": null
+        },
+        {
+          "display": "三島北",
+          "score": 4,
+          "won": false,
+          "name": "三島北高校",
+          "slug": "mishimakita"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浜松大平台",
+          "score": 0,
+          "won": false,
+          "name": "浜松大平台高校",
+          "slug": "hamamatsuohiradai"
+        },
+        {
+          "display": "富士市立",
+          "score": 4,
+          "won": true,
+          "name": "富士市立高校",
+          "slug": "fujishiritsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "藤枝明誠",
+          "score": 1,
+          "won": false,
+          "name": "藤枝明誠",
+          "slug": null
+        },
+        {
+          "display": "掛川西",
+          "score": 4,
+          "won": true,
+          "name": "掛川西高校",
+          "slug": "kakegawanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富士",
+          "score": 3,
+          "won": false,
+          "name": "富士高校",
+          "slug": "shizuoka-fuji"
+        },
+        {
+          "display": "浜松商",
+          "score": 7,
+          "won": true,
+          "name": "浜松商業高校",
+          "slug": "hamamatsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海大静岡翔洋",
+          "score": 8,
+          "won": true,
+          "name": "東海大静岡翔洋",
+          "slug": null
+        },
+        {
+          "display": "沼津東",
+          "score": 0,
+          "won": false,
+          "name": "沼津東高校",
+          "slug": "numazuhigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "駿河総合",
+          "score": 0,
+          "won": false,
+          "name": "駿河総合高校",
+          "slug": "surugasogo"
+        },
+        {
+          "display": "浜松開誠館",
+          "score": 6,
+          "won": true,
+          "name": "浜松開誠館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "清水桜が丘",
+          "score": 5,
+          "won": false,
+          "name": "清水桜が丘高校",
+          "slug": "shimizusakuragaoka"
+        },
+        {
+          "display": "日大三島",
+          "score": 10,
+          "won": true,
+          "name": "日大三島",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "磐田南",
+          "score": 2,
+          "won": false,
+          "name": "磐田南高校",
+          "slug": "iwataminami"
+        },
+        {
+          "display": "藤枝東",
+          "score": 3,
+          "won": true,
+          "name": "藤枝東高校",
+          "slug": "fujiedahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富士宮西",
+          "score": 2,
+          "won": false,
+          "name": "富士宮西高校",
+          "slug": "fujinomiyanishi"
+        },
+        {
+          "display": "袋井",
+          "score": 6,
+          "won": true,
+          "name": "袋井高校",
+          "slug": "fukuroi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "静岡",
+          "score": 6,
+          "won": true,
+          "name": "静岡高校",
+          "slug": "shizuoka"
+        },
+        {
+          "display": "加藤学園",
+          "score": 5,
+          "won": false,
+          "name": "加藤学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "聖隷クリストファー",
+          "score": 7,
+          "won": true,
+          "name": "聖隷クリストファー",
+          "slug": null
+        },
+        {
+          "display": "静岡商",
+          "score": 0,
+          "won": false,
+          "name": "静岡商業高校",
+          "slug": "shizuokashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "磐田東",
+          "score": 5,
+          "won": true,
+          "name": "磐田東",
+          "slug": null
+        },
+        {
+          "display": "富士市立",
+          "score": 4,
+          "won": false,
+          "name": "富士市立高校",
+          "slug": "fujishiritsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "掛川西",
+          "score": 9,
+          "won": false,
+          "name": "掛川西高校",
+          "slug": "kakegawanishi"
+        },
+        {
+          "display": "浜松商",
+          "score": 10,
+          "won": true,
+          "name": "浜松商業高校",
+          "slug": "hamamatsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "藤枝東",
+          "score": 6,
+          "won": true,
+          "name": "藤枝東高校",
+          "slug": "fujiedahigashi"
+        },
+        {
+          "display": "袋井",
+          "score": 5,
+          "won": false,
+          "name": "袋井高校",
+          "slug": "fukuroi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "知徳",
+          "score": 4,
+          "won": true,
+          "name": "知徳",
+          "slug": null
+        },
+        {
+          "display": "静岡",
+          "score": 1,
+          "won": false,
+          "name": "静岡高校",
+          "slug": "shizuoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浜松商",
+          "score": 3,
+          "won": true,
+          "name": "浜松商業高校",
+          "slug": "hamamatsushogyo"
+        },
+        {
+          "display": "東海大静岡翔洋",
+          "score": 2,
+          "won": false,
+          "name": "東海大静岡翔洋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日大三島",
+          "score": 12,
+          "won": true,
+          "name": "日大三島",
+          "slug": null
+        },
+        {
+          "display": "藤枝東",
+          "score": 1,
+          "won": false,
+          "name": "藤枝東高校",
+          "slug": "fujiedahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浜松商",
+          "score": 5,
+          "won": true,
+          "name": "浜松商業高校",
+          "slug": "hamamatsushogyo"
+        },
+        {
+          "display": "日大三島",
+          "score": 4,
+          "won": false,
+          "name": "日大三島",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-03",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "知徳",
+          "score": 6,
+          "won": true,
+          "name": "知徳",
+          "slug": null
+        },
+        {
+          "display": "浜松商",
+          "score": 0,
+          "won": false,
+          "name": "浜松商業高校",
+          "slug": "hamamatsushogyo"
+        }
+      ]
     }
   ]
 };

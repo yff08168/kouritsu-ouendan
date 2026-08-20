@@ -1829,6 +1829,29 @@ export const REGIONAL_TOKUSHIMA: RegionalDistrict = {
           "slug": "ananko"
         }
       ]
+    },
+    {
+      "date": "2026-08-20",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高等学校新人中央大会",
+      "round": "1回戦",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "生光学園",
+          "score": 8,
+          "won": true,
+          "name": "生光学園",
+          "slug": null
+        },
+        {
+          "display": "脇町",
+          "score": 1,
+          "won": false,
+          "name": "脇町高校",
+          "slug": "wakimachi"
+        }
+      ]
     }
   ]
 };

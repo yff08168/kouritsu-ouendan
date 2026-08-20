@@ -1254,110 +1254,341 @@ export const REGIONAL_TOKUSHIMA: RegionalDistrict = {
       ]
     },
     {
-      "date": "2025-09-13",
+      "date": "2026-08-09",
       "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
+      "tournament": "令和8年度徳島県高校野球新人南部ブロック大会",
       "round": "1回戦",
-      "venue": "むつみスタジアム",
+      "venue": "JAアグリあなんスタジアム",
       "teams": [
         {
-          "display": "阿波",
-          "score": 12,
-          "won": true,
-          "name": "阿波高校",
-          "slug": "tokushima-awa"
+          "display": "阿南高専・城ノ内",
+          "score": 0,
+          "won": false,
+          "name": "阿南高専・城ノ内",
+          "slug": null,
+          "combined": true
         },
         {
-          "display": "吉野川",
-          "score": 2,
-          "won": false,
-          "name": "吉野川高校",
-          "slug": "yoshinogawa"
+          "display": "那賀",
+          "score": 6,
+          "won": true,
+          "name": "那賀高校",
+          "slug": "tokushima-naga"
         }
       ]
     },
     {
-      "date": "2025-09-13",
+      "date": "2026-08-09",
       "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
+      "tournament": "令和8年度徳島県高校野球新人南部ブロック大会",
+      "round": "1回戦",
+      "venue": "JAアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "小松島",
+          "score": 11,
+          "won": true,
+          "name": "小松島高校",
+          "slug": "komatsushima"
+        },
+        {
+          "display": "小松島西",
+          "score": 10,
+          "won": false,
+          "name": "小松島西高校",
+          "slug": "komatsushimanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-09",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高校野球新人南部ブロック大会",
+      "round": "1回戦",
+      "venue": "JAアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "富岡西",
+          "score": 0,
+          "won": false,
+          "name": "富岡西高校",
+          "slug": "tomiokanishi"
+        },
+        {
+          "display": "海部",
+          "score": 5,
+          "won": true,
+          "name": "海部高校",
+          "slug": "kaifu"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-10",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高校野球新人南部ブロック大会",
+      "round": "準決勝",
+      "venue": "JAアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "阿南光",
+          "score": 5,
+          "won": true,
+          "name": "阿南光高校",
+          "slug": "ananko"
+        },
+        {
+          "display": "那賀",
+          "score": 1,
+          "won": false,
+          "name": "那賀高校",
+          "slug": "tokushima-naga"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-10",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高校野球新人南部ブロック大会",
+      "round": "準決勝",
+      "venue": "JAアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "小松島",
+          "score": 0,
+          "won": false,
+          "name": "小松島高校",
+          "slug": "komatsushima"
+        },
+        {
+          "display": "海部",
+          "score": 1,
+          "won": true,
+          "name": "海部高校",
+          "slug": "kaifu"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高校野球新人南部ブロック大会",
+      "round": "決勝",
+      "venue": "JAアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "阿南光",
+          "score": 1,
+          "won": false,
+          "name": "阿南光高校",
+          "slug": "ananko"
+        },
+        {
+          "display": "海部",
+          "score": 8,
+          "won": true,
+          "name": "海部高校",
+          "slug": "kaifu"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高校野球新人南部ブロック大会",
+      "round": "3位決定戦",
+      "venue": "JAアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "那賀",
+          "score": 1,
+          "won": false,
+          "name": "那賀高校",
+          "slug": "tokushima-naga"
+        },
+        {
+          "display": "小松島",
+          "score": 11,
+          "won": true,
+          "name": "小松島高校",
+          "slug": "komatsushima"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-08",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高校野球新人ブロック大会（Aブロック）",
       "round": "1回戦",
       "venue": "むつみスタジアム",
       "teams": [
         {
-          "display": "徳島北",
+          "display": "板野",
+          "score": 2,
+          "won": false,
+          "name": "板野高校",
+          "slug": "itano"
+        },
+        {
+          "display": "鳴門",
+          "score": 7,
+          "won": true,
+          "name": "鳴門高校",
+          "slug": "tokushima-naruto"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-08",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高校野球新人ブロック大会（Aブロック）",
+      "round": "1回戦",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "城東",
           "score": 10,
           "won": true,
-          "name": "徳島北高校",
-          "slug": "tokushimakita"
+          "name": "城東高校",
+          "slug": "tokushima-joto"
         },
+        {
+          "display": "徳島市立",
+          "score": 2,
+          "won": false,
+          "name": "徳島市立高校",
+          "slug": "tokushimashiritsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-08",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高校野球新人ブロック大会（Bブロック）",
+      "round": "1回戦",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "生光学園",
+          "score": 12,
+          "won": true,
+          "name": "生光学園",
+          "slug": null
+        },
+        {
+          "display": "名西",
+          "score": 2,
+          "won": false,
+          "name": "名西高校",
+          "slug": "myozai"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-08",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高校野球新人ブロック大会（Bブロック）",
+      "round": "1回戦",
+      "venue": "むつみスタジアム",
+      "teams": [
         {
           "display": "城北",
           "score": 0,
           "won": false,
           "name": "城北高校",
           "slug": "johoku"
+        },
+        {
+          "display": "徳島北",
+          "score": 19,
+          "won": true,
+          "name": "徳島北高校",
+          "slug": "tokushimakita"
         }
       ]
     },
     {
-      "date": "2025-09-13",
+      "date": "2026-08-08",
       "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
+      "tournament": "令和8年度徳島県高校野球新人ブロック大会（Bブロック）",
       "round": "1回戦",
       "venue": "むつみスタジアム",
       "teams": [
         {
-          "display": "小松島西",
-          "score": 7,
-          "won": false,
-          "name": "小松島西高校",
-          "slug": "komatsushimanishi"
+          "display": "徳島商業",
+          "score": 11,
+          "won": true,
+          "name": "徳島商業高校",
+          "slug": "tokushimashogyo"
         },
         {
-          "display": "池田",
+          "display": "城西",
+          "score": 1,
+          "won": false,
+          "name": "城西高校",
+          "slug": "josei"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-08",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高校野球新人ブロック大会（Bブロック）",
+      "round": "1回戦",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "城南",
           "score": 10,
           "won": true,
-          "name": "池田高校",
-          "slug": "tokushima-ikeda"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-13",
-      "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "1回戦",
-      "venue": "JAアグリあなんスタジアム",
-      "teams": [
-        {
-          "display": "つるぎ",
-          "score": 0,
-          "won": false,
-          "name": "つるぎ高校",
-          "slug": "tokushima-tsurugi"
+          "name": "城南高校",
+          "slug": "jonan"
         },
         {
-          "display": "板野",
-          "score": 19,
-          "won": true,
-          "name": "板野高校",
-          "slug": "itano"
+          "display": "科学技術",
+          "score": 9,
+          "won": false,
+          "name": "徳島科学技術高校",
+          "slug": "tokushimakagakugijutsu"
         }
       ]
     },
     {
-      "date": "2025-09-13",
+      "date": "2026-08-09",
       "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "1回戦",
-      "venue": "JAアグリあなんスタジアム",
+      "tournament": "令和8年度徳島県高校野球新人ブロック大会（Bブロック）",
+      "round": "準決勝",
+      "venue": "むつみスタジアム",
       "teams": [
         {
-          "display": "城東",
-          "score": 4,
+          "display": "生光学園",
+          "score": 8,
           "won": true,
-          "name": "城東高校",
-          "slug": "tokushima-joto"
+          "name": "生光学園",
+          "slug": null
+        },
+        {
+          "display": "徳島北",
+          "score": 7,
+          "won": false,
+          "name": "徳島北高校",
+          "slug": "tokushimakita"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-09",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高校野球新人ブロック大会（Bブロック）",
+      "round": "準決勝",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "徳島商業",
+          "score": 11,
+          "won": true,
+          "name": "徳島商業高校",
+          "slug": "tokushimashogyo"
         },
         {
           "display": "城南",
@@ -1369,230 +1600,161 @@ export const REGIONAL_TOKUSHIMA: RegionalDistrict = {
       ]
     },
     {
-      "date": "2025-09-13",
+      "date": "2026-08-11",
       "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "1回戦",
-      "venue": "JAアグリあなんスタジアム",
-      "teams": [
-        {
-          "display": "城西",
-          "score": 7,
-          "won": false,
-          "name": "城西高校",
-          "slug": "josei"
-        },
-        {
-          "display": "脇町",
-          "score": 8,
-          "won": true,
-          "name": "脇町高校",
-          "slug": "wakimachi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "1回戦",
+      "tournament": "令和8年度徳島県高校野球新人ブロック大会（Aブロック）",
+      "round": "決勝",
       "venue": "むつみスタジアム",
       "teams": [
         {
-          "display": "徳島商業",
-          "score": 1,
+          "display": "鳴門",
+          "score": 14,
           "won": true,
-          "name": "徳島商業高校",
-          "slug": "tokushimashogyo"
+          "name": "鳴門高校",
+          "slug": "tokushima-naruto"
         },
         {
-          "display": "名西",
-          "score": 0,
+          "display": "城東",
+          "score": 4,
           "won": false,
-          "name": "名西高校",
-          "slug": "myozai"
+          "name": "城東高校",
+          "slug": "tokushima-joto"
         }
       ]
     },
     {
-      "date": "2025-09-14",
+      "date": "2026-08-11",
       "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "1回戦",
+      "tournament": "令和8年度徳島県高校野球新人ブロック大会（Bブロック）",
+      "round": "決勝",
       "venue": "むつみスタジアム",
       "teams": [
         {
           "display": "生光学園",
-          "score": 9,
+          "score": 6,
           "won": true,
           "name": "生光学園",
           "slug": null
         },
         {
-          "display": "科学技術",
-          "score": 2,
+          "display": "徳島商業",
+          "score": 5,
           "won": false,
-          "name": "徳島科学技術高校",
-          "slug": "tokushimakagakugijutsu"
+          "name": "徳島商業高校",
+          "slug": "tokushimashogyo"
         }
       ]
     },
     {
-      "date": "2025-09-14",
+      "date": "2026-08-08",
       "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
+      "tournament": "令和8年度徳島県高等学校野球新人ブロック大会",
       "round": "1回戦",
-      "venue": "むつみスタジアム",
+      "venue": "池田球場",
       "teams": [
         {
-          "display": "小松島",
-          "score": 28,
-          "won": true,
-          "name": "小松島高校",
-          "slug": "komatsushima"
+          "display": "池田",
+          "score": 6,
+          "won": false,
+          "name": "池田高校",
+          "slug": "tokushima-ikeda"
         },
         {
-          "display": "穴吹・阿波西・池田辻",
-          "score": 2,
+          "display": "川島",
+          "score": 7,
+          "won": true,
+          "name": "川島高校",
+          "slug": "kawashima"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-08",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高等学校野球新人ブロック大会",
+      "round": "1回戦",
+      "venue": "池田球場",
+      "teams": [
+        {
+          "display": "吉野川",
+          "score": 0,
           "won": false,
-          "name": "穴吹・阿波西・池田辻",
+          "name": "吉野川高校",
+          "slug": "yoshinogawa"
+        },
+        {
+          "display": "穴吹",
+          "score": 8,
+          "won": true,
+          "name": "穴吹高校",
+          "slug": "anabuki"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-08",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高等学校野球新人ブロック大会",
+      "round": "1回戦",
+      "venue": "池田球場",
+      "teams": [
+        {
+          "display": "阿波",
+          "score": 12,
+          "won": true,
+          "name": "阿波高校",
+          "slug": "tokushima-awa"
+        },
+        {
+          "display": "つるぎ・阿波西・池田辻",
+          "score": 3,
+          "won": false,
+          "name": "つるぎ・阿波西・池田辻",
           "slug": null,
           "combined": true
         }
       ]
     },
     {
-      "date": "2025-09-14",
+      "date": "2026-08-09",
       "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "1回戦",
-      "venue": "JAアグリあなんスタジアム",
+      "tournament": "令和8年度徳島県高等学校野球新人ブロック大会",
+      "round": "準決勝",
+      "venue": "池田球場",
       "teams": [
         {
+          "display": "脇町",
+          "score": 8,
+          "won": true,
+          "name": "脇町高校",
+          "slug": "wakimachi"
+        },
+        {
           "display": "川島",
-          "score": 1,
+          "score": 7,
           "won": false,
           "name": "川島高校",
           "slug": "kawashima"
-        },
-        {
-          "display": "徳島市立",
-          "score": 4,
-          "won": true,
-          "name": "徳島市立高校",
-          "slug": "tokushimashiritsu"
         }
       ]
     },
     {
-      "date": "2025-09-14",
+      "date": "2026-08-09",
       "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "1回戦",
-      "venue": "JAアグリあなんスタジアム",
+      "tournament": "令和8年度徳島県高等学校野球新人ブロック大会",
+      "round": "準決勝",
+      "venue": "池田球場",
       "teams": [
         {
-          "display": "那賀",
-          "score": 7,
+          "display": "穴吹",
+          "score": 10,
           "won": true,
-          "name": "那賀高校",
-          "slug": "tokushima-naga"
-        },
-        {
-          "display": "城ノ内",
-          "score": 5,
-          "won": false,
-          "name": "城ノ内中等教育学校",
-          "slug": "jonochi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "1回戦",
-      "venue": "JAアグリあなんスタジアム",
-      "teams": [
-        {
-          "display": "阿南高専",
-          "score": 1,
-          "won": false,
-          "name": "阿南工業高専",
-          "slug": "anankogyo"
-        },
-        {
-          "display": "阿南光",
-          "score": 8,
-          "won": true,
-          "name": "阿南光高校",
-          "slug": "ananko"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "2回戦",
-      "venue": "むつみスタジアム",
-      "teams": [
-        {
-          "display": "鳴門",
-          "score": 2,
-          "won": true,
-          "name": "鳴門高校",
-          "slug": "tokushima-naruto"
-        },
-        {
-          "display": "徳島市立",
-          "score": 0,
-          "won": false,
-          "name": "徳島市立高校",
-          "slug": "tokushimashiritsu"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "2回戦",
-      "venue": "むつみスタジアム",
-      "teams": [
-        {
-          "display": "海部",
-          "score": 6,
-          "won": true,
-          "name": "海部高校",
-          "slug": "kaifu"
-        },
-        {
-          "display": "板野",
-          "score": 0,
-          "won": false,
-          "name": "板野高校",
-          "slug": "itano"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "2回戦",
-      "venue": "JAアグリあなんスタジアム",
-      "teams": [
-        {
-          "display": "鳴門渦潮",
-          "score": 4,
-          "won": true,
-          "name": "鳴門渦潮高校",
-          "slug": "narutozushio"
+          "name": "穴吹高校",
+          "slug": "anabuki"
         },
         {
           "display": "阿波",
-          "score": 1,
+          "score": 7,
           "won": false,
           "name": "阿波高校",
           "slug": "tokushima-awa"
@@ -1600,199 +1762,61 @@ export const REGIONAL_TOKUSHIMA: RegionalDistrict = {
       ]
     },
     {
-      "date": "2025-09-20",
+      "date": "2026-08-11",
       "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "2回戦",
-      "venue": "JAアグリあなんスタジアム",
+      "tournament": "令和8年度徳島県高等学校野球新人ブロック大会",
+      "round": "決勝",
+      "venue": "池田球場",
       "teams": [
-        {
-          "display": "富岡西",
-          "score": 3,
-          "won": false,
-          "name": "富岡西高校",
-          "slug": "tomiokanishi"
-        },
-        {
-          "display": "徳島商業",
-          "score": 13,
-          "won": true,
-          "name": "徳島商業高校",
-          "slug": "tokushimashogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-21",
-      "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "2回戦",
-      "venue": "むつみスタジアム",
-      "teams": [
-        {
-          "display": "城東",
-          "score": 11,
-          "won": true,
-          "name": "城東高校",
-          "slug": "tokushima-joto"
-        },
         {
           "display": "脇町",
-          "score": 1,
+          "score": 4,
           "won": false,
           "name": "脇町高校",
           "slug": "wakimachi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-21",
-      "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "2回戦",
-      "venue": "むつみスタジアム",
-      "teams": [
-        {
-          "display": "那賀",
-          "score": 0,
-          "won": false,
-          "name": "那賀高校",
-          "slug": "tokushima-naga"
         },
         {
-          "display": "阿南光",
-          "score": 10,
+          "display": "穴吹",
+          "score": 5,
           "won": true,
-          "name": "阿南光高校",
-          "slug": "ananko"
+          "name": "穴吹高校",
+          "slug": "anabuki"
         }
       ]
     },
     {
-      "date": "2025-09-21",
+      "date": "2026-08-11",
       "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "2回戦",
-      "venue": "JAアグリあなんスタジアム",
+      "tournament": "令和8年度徳島県高等学校野球新人ブロック大会",
+      "round": "3位決定戦",
+      "venue": "池田球場",
       "teams": [
         {
-          "display": "徳島北",
-          "score": 8,
+          "display": "川島",
+          "score": 11,
           "won": true,
-          "name": "徳島北高校",
-          "slug": "tokushimakita"
+          "name": "川島高校",
+          "slug": "kawashima"
         },
         {
-          "display": "池田",
-          "score": 0,
+          "display": "阿波",
+          "score": 5,
           "won": false,
-          "name": "池田高校",
-          "slug": "tokushima-ikeda"
+          "name": "阿波高校",
+          "slug": "tokushima-awa"
         }
       ]
     },
     {
-      "date": "2025-09-21",
+      "date": "2026-08-20",
       "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "2回戦",
-      "venue": "JAアグリあなんスタジアム",
-      "teams": [
-        {
-          "display": "生光学園",
-          "score": 16,
-          "won": false,
-          "name": "生光学園",
-          "slug": null
-        },
-        {
-          "display": "小松島",
-          "score": 19,
-          "won": true,
-          "name": "小松島高校",
-          "slug": "komatsushima"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "準々決勝",
-      "venue": "むつみスタジアム",
-      "teams": [
-        {
-          "display": "鳴門渦潮",
-          "score": 3,
-          "won": true,
-          "name": "鳴門渦潮高校",
-          "slug": "narutozushio"
-        },
-        {
-          "display": "徳島北",
-          "score": 2,
-          "won": false,
-          "name": "徳島北高校",
-          "slug": "tokushimakita"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "準々決勝",
-      "venue": "むつみスタジアム",
-      "teams": [
-        {
-          "display": "海部",
-          "score": 7,
-          "won": true,
-          "name": "海部高校",
-          "slug": "kaifu"
-        },
-        {
-          "display": "城東",
-          "score": 3,
-          "won": false,
-          "name": "城東高校",
-          "slug": "tokushima-joto"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-28",
-      "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "準々決勝",
-      "venue": "むつみスタジアム",
-      "teams": [
-        {
-          "display": "徳島商業",
-          "score": 2,
-          "won": true,
-          "name": "徳島商業高校",
-          "slug": "tokushimashogyo"
-        },
-        {
-          "display": "小松島",
-          "score": 1,
-          "won": false,
-          "name": "小松島高校",
-          "slug": "komatsushima"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-28",
-      "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "準々決勝",
+      "tournament": "令和8年度徳島県高等学校新人中央大会",
+      "round": "1回戦",
       "venue": "むつみスタジアム",
       "teams": [
         {
           "display": "鳴門",
-          "score": 1,
+          "score": 3,
           "won": false,
           "name": "鳴門高校",
           "slug": "tokushima-naruto"
@@ -1807,94 +1831,25 @@ export const REGIONAL_TOKUSHIMA: RegionalDistrict = {
       ]
     },
     {
-      "date": "2025-10-04",
+      "date": "2026-08-20",
       "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "準決勝",
+      "tournament": "令和8年度徳島県高等学校新人中央大会",
+      "round": "1回戦",
       "venue": "むつみスタジアム",
       "teams": [
         {
-          "display": "鳴門渦潮",
-          "score": 0,
-          "won": false,
-          "name": "鳴門渦潮高校",
-          "slug": "narutozushio"
+          "display": "生光学園",
+          "score": 8,
+          "won": true,
+          "name": "生光学園",
+          "slug": null
         },
         {
-          "display": "徳島商業",
-          "score": 4,
-          "won": true,
-          "name": "徳島商業高校",
-          "slug": "tokushimashogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-04",
-      "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "準決勝",
-      "venue": "むつみスタジアム",
-      "teams": [
-        {
-          "display": "海部",
+          "display": "脇町",
           "score": 1,
           "won": false,
-          "name": "海部高校",
-          "slug": "kaifu"
-        },
-        {
-          "display": "阿南光",
-          "score": 7,
-          "won": true,
-          "name": "阿南光高校",
-          "slug": "ananko"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-05",
-      "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "3位決定戦",
-      "venue": "むつみスタジアム",
-      "teams": [
-        {
-          "display": "鳴門渦潮",
-          "score": 3,
-          "won": false,
-          "name": "鳴門渦潮高校",
-          "slug": "narutozushio"
-        },
-        {
-          "display": "海部",
-          "score": 5,
-          "won": true,
-          "name": "海部高校",
-          "slug": "kaifu"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-05",
-      "season": "autumn",
-      "tournament": "第78回徳島県高等学校野球秋季大会",
-      "round": "決勝",
-      "venue": "むつみスタジアム",
-      "teams": [
-        {
-          "display": "徳島商業",
-          "score": 3,
-          "won": false,
-          "name": "徳島商業高校",
-          "slug": "tokushimashogyo"
-        },
-        {
-          "display": "阿南光",
-          "score": 5,
-          "won": true,
-          "name": "阿南光高校",
-          "slug": "ananko"
+          "name": "脇町高校",
+          "slug": "wakimachi"
         }
       ]
     }

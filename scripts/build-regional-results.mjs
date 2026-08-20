@@ -6861,6 +6861,302 @@ function raw2flat(page) {
  * 詳細はREADMEの「都道府県高野連サイトの規約調査」。
  */
 /**
+ * 栃木県高校野球連盟（`tochigi-koyaren.net`）。
+ *
+ * ------------------------------------------------------------------
+ * ★★ 規約：**「写真、記事」しか名指ししていない**（2026-08-20 に読み直した）
+ *
+ *   全ページのフッタに「**掲載の写真、記事の無断転載を禁じます。**」とある。
+ *   ★**「データ」も「コンテンツ」も名指ししていない。**
+ *   青森・秋田・鳥取が「画像・文章・**データ**の無断転用・転載をお断りします」と
+ *   **データを名指ししている**のとは別の類型で、岩手（「文章や画像、動画等の
+ *   **著作物**」）に近い。**スコアは写真でも記事でもない。**
+ *
+ *   ★**だから記事の文章は取らない。** 取るのは試合結果の表（校名・回戦・得点）だけ。
+ *   `robots.txt` は 404（制限そのものが無い）。
+ *
+ *   ★**47連盟の調査で「制限あり12件」に入れていたのは誤り**だった
+ *   （大分と同じで、自動分類が語だけを拾っていた）。
+ *
+ * ------------------------------------------------------------------
+ * ★★ 出典の形 ── **このリポジトリでいちばん素直な形のひとつ**
+ *
+ *   大会ごとの索引（`report/108ch.html`）に
+ *   **「日付 → 球場 → 試合結果へのリンク」**が並び、その先が
+ *   **日別×球場ごとのイニングスコアのページ**（`108ch/ajex/7-9_ajex.html`）。
+ *
+ *     <div class="gamescore">
+ *       <h3>さくら清修　―　鹿沼商工</h3>
+ *       <table class="tb_noline"><tr>
+ *         <td>第1試合</td><td>（1回戦）</td><td>開始10時52分</td>…
+ *       <div class="board"><table>
+ *         <tr><th>校名</th><td>1</td>…<td>計</td></tr>
+ *         <tr><th>鹿沼商工</th><td>5</td>…<td rowspan="2" colspan="8">7回コールド</td><td>8</td></tr>
+ *         <tr><th>さくら清修</th><td>0</td>…<td>1</td></tr>
+ *
+ *   ★**組み立てが要らない。** トーナメント表のPDF（`108ch/tournament.pdf`）も
+ *   あるが、**スロットが縦向き**で大分とは別の形。**読む必要が無い。**
+ *
+ * ------------------------------------------------------------------
+ * ★ ここで踏んだところ
+ *
+ *   1. ★**合計は「その行のいちばん最後の `<td>`」。**
+ *      コールドの注記が `rowspan="2" colspan="8"` のセルとして
+ *      **合計の手前に割り込む**ので、「N番目の td」では取れない。
+ *   2. ★**文字コードが Shift_JIS。** `fetchHtml` は UTF-8 として読むので、
+ *      **自前で取り直して判定する**（このアダプタだけ `fetchHtml` を使わない）。
+ *   3. **索引の日付は「7月9日(木)」で年が無い。** 大会名の回数から出す
+ *      （選手権は 年 − 1918）。春季・秋季は索引の題から西暦を拾う。
+ *
+ * ------------------------------------------------------------------
+ * ★ 検算
+ *
+ *   ★**組み立てが要らない出典なので、PDFの県とは失敗の仕方が違う。**
+ *   対戦相手を推測する余地が無いので、**おかしな1件を飛ばして警告**に倒してある
+ *   （omyutech の5県・島根・岩手と同じ）。
+ *
+ *   - 校名2つと得点2つが揃わない試合は出さない
+ *   - **1ページも取れなかった大会は静かに終わる**（その年の大会がまだ無い）
+ */
+const tochigi = {
+  slug: "tochigi",
+  district: "栃木",
+  name: "栃木県高校野球連盟",
+  siteUrl: "https://www.tochigi-koyaren.net/",
+  politenessMs: 1500,
+  seasons: {
+    spring: "https://www.tochigi-koyaren.net/report/",
+    summer: "https://www.tochigi-koyaren.net/report/",
+    autumn: "https://www.tochigi-koyaren.net/report/",
+  },
+  /**
+   * 季節 → 索引のファイル名。
+   * ★**夏だけ回数がファイル名に入る**（`108ch.html`）。選手権の回数は 年 − 1918。
+   * ★**春は県大会と地区予選の2つ**ある。
+   */
+  indexesOf(season, year) {
+    if (season === "summer") return [`${year - 1918}ch.html`];
+    if (season === "spring") return ["spring-pref.html", "spring-area.html"];
+    return ["autumn-pref.html"];
+  },
+  /**
+   * ★**Shift_JIS のページがある。** 自前で取って判定する。
+   *
+   * ★★**`Connection: close` を必ず付けること**（2026-08-20）。
+   * 付けずに全県の再生成を回したら、**栃木の途中で Node の HTTP パーサが
+   * 内部アサーションで落ちた**（`assert(!this.paused)`。undici の keep-alive の道）。
+   * ★**これは `try/catch` では拾えない**（イベントループから投げられる）。
+   * ★★**生成物は全県ぶんを最後にまとめて書き出すので、1県で落ちると実行まるごと失われる。**
+   */
+  async fetchSjis(url) {
+    for (let attempt = 0; attempt < 3; attempt++) {
+      if (attempt > 0) await sleep(2000 * attempt);
+      const buf = await this.rawGet(url);
+      if (!buf) continue;
+      const utf8 = buf.toString("utf8");
+      return /\uFFFD/.test(utf8.slice(0, 3000)) ? new TextDecoder("shift_jis").decode(buf) : utf8;
+    }
+    return null;
+  },
+  /**
+   * ★★**`fetch` を使わないこと**（2026-08-20）。
+   *
+   * この出典を `fetch`（undici）で取ると、**Node の HTTP パーサが内部アサーションで
+   * 落ちる**（`AssertionError: assert(!this.paused)`）。`Connection: close` を
+   * 付けても止まらなかった。**サーバの応答が undici の想定に合っていない。**
+   *
+   * ★**`try/catch` では拾えない。** イベントループから投げられるので、
+   * **プロセスごと死ぬ。**
+   * ★★**生成物は全県ぶんを最後にまとめて書き出すので、1県で落ちると実行まるごと
+   * 失われる**（実際に、栃木の途中で落ちて35県ぶんが1つも書き出されなかった）。
+   *
+   * **Node 標準の `https` は別の実装**なので、この応答でも落ちない。
+   * ★**この県だけの回避策。** 他の県は `fetchHtml` のままでよい。
+   */
+  rawGet(url) {
+    return new Promise((resolve) => {
+      /*
+        ★★**必ず終わるようにすること。** `https.get` の `timeout` は
+        **接続が無反応のときにしか効かない。** 応答が始まったまま終わらないと
+        `end` が来ず、**この Promise が永久に解決しない**（実際に止まった）。
+        **自前のタイマーで打ち切る。**
+      */
+      let done = false;
+      const finish = (v) => {
+        if (done) return;
+        done = true;
+        clearTimeout(timer);
+        resolve(v);
+      };
+      const timer = setTimeout(() => finish(null), 30000);
+      import("node:https")
+        .then(({ get }) => {
+          const req = get(url, { headers: UA }, (res) => {
+            if (res.statusCode !== 200) {
+              res.resume();
+              finish(null);
+              return;
+            }
+            const chunks = [];
+            res.on("data", (c) => chunks.push(c));
+            res.on("end", () => finish(Buffer.concat(chunks)));
+            res.on("error", () => finish(null));
+          });
+          req.on("error", () => finish(null));
+          // タイマーが先に切れたら、開いたままの要求を捨てる
+          timer.unref?.();
+          setTimeout(() => req.destroy(), 30000).unref?.();
+        })
+        .catch(() => finish(null));
+    });
+  },
+  async collect({ season, year }) {
+    const games = [];
+    for (const file of this.indexesOf(season, year)) {
+      /** その大会ぶん。**未来の日付が混ざっていたら丸ごと捨てる**（下の検算） */
+      const found = [];
+      const baseUrl = `https://www.tochigi-koyaren.net/report/${file}`;
+      const index = await this.fetchSjis(baseUrl);
+      await sleep(this.politenessMs);
+      // その大会のページがまだ無ければ静かに飛ばす
+      if (!index) continue;
+
+      /*
+        ★**大会名は `<h2>` ではなく `<h3>`。** `<h2>` は「秋季県大会」のような
+        ページの見出しで、回数が入っていない。
+      */
+      const tournament = normalize(plain(index.match(/<h3[^>]*>([\s\S]*?)<\/h3>/)?.[1] ?? "")).trim() || null;
+      /*
+        ★★**索引に西暦が1つも書かれていないので、回数から出すしかない。**
+
+          第108回 全国高等学校野球選手権栃木大会 … 2026年（＋1918。このリポジトリ共通）
+          第79回  春季栃木県高等学校野球大会     … 2026年（＋1947）
+          第78回  秋季栃木県高等学校野球大会     … **2025年**（＋1947）
+          第74回  春季栃木県高等学校野球大会 地区予選 … 2026年（＋1952）
+
+        ★**春と秋で回数の系列が同じ**（どちらも＋1947）。新潟は春と秋で増え方が
+        違ったので、**県ごとに実データで確かめてから使うこと。**
+
+        ★★**回数から年を出すのは危ういので、下で「未来の日付が無いか」を必ず見る**
+        （結果が未来にあることはありえない）。これが無いと、秋の索引が前年のままの
+        時期に**2025年の試合が2026年として出る**（実際に一度そうなった）。
+      */
+      const round = Number(normalize(tournament ?? "").match(/第(\d+)回/)?.[1]);
+      const base = /選手権/.test(tournament ?? "") ? 1918 : /地区/.test(tournament ?? "") ? 1952 : 1947;
+      const y = Number.isFinite(round) ? round + base : year;
+
+      for (const { url, date, venue } of this.dailyLinks(index, baseUrl, y)) {
+        const page = await this.fetchSjis(url);
+        await sleep(this.politenessMs);
+        if (!page) continue;
+        found.push(...this.parse(page, season, tournament, date, venue));
+      }
+
+      /*
+        ---- 検算: 未来の日付が無いか ----
+        ★**結果が未来にあることはありえない。** 回数から年を出しているので、
+        系列の数え方を取り違えるとここに出る。**1日でも先なら、その大会は1試合も出さない。**
+      */
+      const today = new Date().toISOString().slice(0, 10);
+      const ahead = found.filter((g) => g.date && g.date > today);
+      if (ahead.length) {
+        console.log(
+          `  ⚠️ 栃木: 「${tournament}」を ${y} 年として読んだが、` +
+            `${ahead.length} 試合が未来の日付になる（${ahead[0].date}）。1試合も出さない`,
+        );
+        continue;
+      }
+      games.push(...found);
+    }
+    return games;
+  },
+  /**
+   * 索引から「日別×球場」のページを拾う。
+   * ★**日付・球場・リンクが順番に並ぶだけ**なので、**上から読んで持ち回る。**
+   */
+  dailyLinks(index, base, year) {
+    const out = [];
+    let date = null;
+    const re = /(\d{1,2})月(\d{1,2})日|<a\s+href="([^"]+\.html)"[^>]*>([\s\S]*?)<\/a>/g;
+    let m;
+    let lastEnd = 0;
+    while ((m = re.exec(index))) {
+      if (m[1] !== undefined) {
+        date = `${year}-${m[1].padStart(2, "0")}-${m[2].padStart(2, "0")}`;
+        lastEnd = re.lastIndex;
+        continue;
+      }
+      const label = normalize(plain(m[4])).trim();
+      if (!/試合結果/.test(label) || !date) {
+        lastEnd = re.lastIndex;
+        continue;
+      }
+      /*
+        ★**球場名はリンクの直前のテキスト。** 「7月9日(木)」の次に
+        「エイジェックスタジアム」「試合結果」と並ぶ。
+        直前の区間からタグを外し、最後のひとかたまりを球場名とする。
+      */
+      const before = normalize(plain(index.slice(lastEnd, m.index)))
+        .split(/[\s|｜]+/)
+        .filter(Boolean);
+      const venue = before.length ? before.at(-1) : null;
+      out.push({ url: new URL(m[3], base).toString(), date, venue });
+      lastEnd = re.lastIndex;
+    }
+    return out;
+  },
+  /** 日別×球場のページを読む */
+  parse(html, season, tournament, date, venue) {
+    const out = [];
+    for (const block of html.split(/<div class="gamescore">/).slice(1)) {
+      const round = pickRound(
+        normalize(plain(block.match(/<td>\s*[（(]([^）)]*?[回戦決勝][^）)]*?)[）)]\s*<\/td>/)?.[1] ?? "")),
+      );
+      /*
+        ★**イニングスコアの表は `div.board` の中。**
+        1行目は見出し（校名 1 2 3 … 計）なので、**`<th>` を持つ行のうち
+        2行目・3行目**が両校。
+      */
+      const board = block.match(/<div class="board">([\s\S]*?)<\/div>/)?.[1] ?? "";
+      const rows = [...board.matchAll(/<tr>([\s\S]*?)<\/tr>/g)].map((r) => r[1]);
+      const teams = [];
+      for (const row of rows) {
+        const name = normalize(plain(row.match(/<th[^>]*>([\s\S]*?)<\/th>/)?.[1] ?? "")).replace(/\s+/g, "");
+        if (!name || name === "校名") continue;
+        /*
+          ★**合計はその行のいちばん最後の `<td>`。**
+          コールドの注記が `rowspan="2" colspan="8"` のセルとして
+          **合計の手前に割り込む**ので、「N番目の td」では取れない。
+        */
+        const tds = [...row.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map((t) =>
+          normalize(plain(t[1])).replace(/\s+/g, ""),
+        );
+        const total = tds.length ? Number(tds.at(-1)) : NaN;
+        if (!Number.isFinite(total)) continue;
+        teams.push({ name, total });
+      }
+      if (teams.length !== 2) continue;
+      const [a, b] = teams;
+      out.push({
+        date,
+        season,
+        tournament,
+        round,
+        venue,
+        /*
+          ★**引き分けがある。**「勝っていない＝負け」と読まないこと。
+        */
+        teams: [
+          { display: a.name, score: a.total, won: a.total > b.total },
+          { display: b.name, score: b.total, won: b.total > a.total },
+        ],
+      });
+    }
+    return out;
+  },
+};
+
+/**
  * 大分県高等学校野球連盟（`oita-kouyaren.com`）。
  *
  * ------------------------------------------------------------------
@@ -7791,8 +8087,9 @@ const ADAPTERS = [
   // ★連盟ではなく個人運営のサイトが出典（埼玉・神奈川・愛知と同じ）
   shimane,
   iwate,
-  // ★規約で外していたのは誤りだった（oita の説明を読むこと）
+  // ★規約で外していたのは誤りだった（oita / tochigi の説明を読むこと）
   oita,
+  tochigi,
 ];
 
 // ------------------------------------------------------------------

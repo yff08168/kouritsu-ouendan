@@ -7262,12 +7262,12 @@ const oita = {
         「全国高等学校」まで同じ。**回数で分かれる**が、念のため語でも外す。
       */
       if (!flat.some((t) => want.test(t)) || flat.some((t) => /軟式/.test(t))) continue;
-      return this.readSheet(page, season, year);
+      return this.readSheet(page, season);
     }
     return [];
   },
   /** やぐら表を1枚読む */
-  readSheet(page, season, year) {
+  readSheet(page, season) {
     const flat = page.lines.map((l) => normalize(l.text.replace(/\t/g, "")));
     const tournament = flat.map((t) => t.match(/第\d+回全国高等学校野球選手権大分大会/)?.[0]).find(Boolean);
 

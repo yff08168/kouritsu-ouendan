@@ -37,4 +37,6 @@ export const REGIONAL_LOADERS: Record<string, () => Promise<RegionalDistrict>> =
   kagawa: () => import("./kagawa").then((m) => m.REGIONAL_KAGAWA),
   kochi: () => import("./kochi").then((m) => m.REGIONAL_KOCHI),
   nagasaki: () => import("./nagasaki").then((m) => m.REGIONAL_NAGASAKI),
+  shimane: () => import("./shimane").then((m) => m.REGIONAL_SHIMANE),
+  iwate: () => import("./iwate").then((m) => m.REGIONAL_IWATE),
 };

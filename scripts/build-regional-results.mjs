@@ -6860,6 +6860,380 @@ function raw2flat(page) {
  *
  * 詳細はREADMEの「都道府県高野連サイトの規約調査」。
  */
+/**
+ * 白球ペンギン.com（`89penguin.com`）。**連盟ではない個人運営のサイト。**
+ *
+ * ------------------------------------------------------------------
+ * ★ なぜ連盟から取らないのか
+ *
+ *   **岩手県高野連は写真・記事の無断転載を禁じている**ので、47連盟の調査で
+ *   外した12連盟に入っている。埼玉・神奈川・愛知・島根と同じで**連盟以外から取る。**
+ *
+ * ------------------------------------------------------------------
+ * ★★ 規約（2026-08-20 確認）── **ここは他の出典より慎重に扱うこと**
+ *
+ *   `robots.txt` は `/wp-admin/` 以外を許可しているが、**免責事項に
+ *   「無断転載の禁止」がある。** ただし線の引き方が次のようになっている。
+ *
+ *     - 禁止しているのは「**文章や画像、動画等の著作物**の情報」の無断転載
+ *     - 「**引用の範囲を超えるもの**については法的処置を行います」
+ *     - 「転載する際にはお問い合わせよりご連絡いただけますよう」
+ *
+ *   ★**このリポジトリが 2026-08-20 に採った整理（数値＝事実を引用する）と同じ線。**
+ *   ★**だから記事の文章は1文字も取らない。** 取るのは記事の末尾に付いている
+ *   **スコア表（`▽回戦　＠球場` の段落）の数値と校名だけ。**
+ *   ★**この方針を緩めないこと。** 前文の記述（試合の描写）を取り込んだ瞬間に
+ *   「引用の範囲を超えるもの」に変わる。
+ *
+ *   ★**公開前に一度問い合わせること**（サイト自身が連絡を求めている）。
+ *
+ * ------------------------------------------------------------------
+ * ★ 出典の形
+ *
+ *   **「大会成績」のページは全部「制作中」**で、構造化された結果は無い。
+ *   カスタム投稿タイプ `matches` も**中身が0件**（リニューアル中）。
+ *   結果は**日ごとの記事の末尾**に、次の形で付いている。
+ *
+ *     <h3>7月17日の試合結果</h3>
+ *     <p>▽3回戦　＠きたぎんボールパーク<br>
+ *        　花泉 000 000 0  =0　H1E4<br>
+ *        花巻東 010 020 4x=7　H7E0<br>
+ *        7回コールド<br>(泉)和久−菅原<br>…</p>
+ *
+ *   ★**1試合が1つの `<p>`。** 1行目が回戦と球場、2〜3行目が両校のイニングスコア。
+ *   ★**WordPress の REST API は一覧に本文を載せられる**ので、
+ *   `_fields=id,date,title,content` にすれば**1リクエストで1季節ぶん取れる。**
+ *   相手が個人のサーバーなので、記事を1本ずつ取りに行かないこと。
+ *
+ * ------------------------------------------------------------------
+ * ★ ここで踏んだところ
+ *
+ *   1. ★★**カテゴリは当てにならない。** 2020〜2025年は「2025年春季大会」の形だが、
+ *      **2026年は「選手権岩手大会」「秋季大会」と年が入らない**名前に変わり、
+ *      **2026年の春季にいたってはカテゴリが無い。**
+ *      → **日付の窓と見出しの【…】で絞る。**
+ *   2. ★★**東北大会の記事が同じ【春季大会】の見出しで並ぶ**
+ *      （花巻東 対 青森山田など）。**他県の学校が出てくる**ので必ず外す。
+ *   3. **校名の前に位置合わせの全角空白が入る**（`　花泉`）。`plain()` で落ちる。
+ *   4. **サヨナラは合計の直前に `x`**（`4x=7`）。イニングの側に付くので合計には影響しない。
+ *
+ * ------------------------------------------------------------------
+ * ★ 取れる範囲（2026-08-20 時点）
+ *
+ *   - **選手権（2026）48試合** … 大会は58校49チームなので **49 − 48 = 1** で
+ *     勝ち抜きの算数が合う（＝**取りこぼしが無い**）
+ *   - **春季（2026）** … 地区予選から県大会まで記事がある
+ *   - ★**秋季はほとんど記事が無い**（2025年8〜11月で結果記事0本）。
+ *     出典側の事情なので、取れないまま置いておく
+ *
+ * ★**検算は構造だけ。** 1つの `▽` から校名と得点が2組そろわなければその試合を出さない。
+ * 組み立てが要らない出典なので、**おかしな1件を飛ばして警告**に倒してある。
+ */
+const iwate = {
+  slug: "iwate",
+  district: "岩手",
+  name: "白球ペンギン.com",
+  siteUrl: "https://89penguin.com/",
+  politenessMs: 2000,
+  seasons: {
+    spring: "https://89penguin.com/",
+    summer: "https://89penguin.com/",
+    autumn: "https://89penguin.com/",
+  },
+  /**
+   * 季節 → 記事を探す窓と、見出しの印。
+   * ★**カテゴリを使わない**（上の1）。窓は前後に余裕を取ってある。
+   */
+  windowOf(season, year) {
+    if (season === "spring") return { from: `${year}-03-01`, to: `${year}-07-05`, mark: /【春季大会】/ };
+    if (season === "summer") return { from: `${year}-06-15`, to: `${year}-09-05`, mark: /【選手権岩手大会】/ };
+    return { from: `${year}-08-15`, to: `${year}-12-20`, mark: /【秋季大会】/ };
+  },
+  async collect({ season, year }) {
+    const w = this.windowOf(season, year);
+    const url =
+      `https://89penguin.com/wp-json/wp/v2/posts?per_page=100` +
+      `&after=${w.from}T00:00:00&before=${w.to}T00:00:00&_fields=id,date,title,content`;
+    let posts = null;
+    try {
+      const res = await fetch(url, { headers: UA, signal: AbortSignal.timeout(30000) });
+      if (res.ok) posts = await res.json();
+    } catch {
+      posts = null;
+    }
+    await sleep(this.politenessMs);
+    if (!Array.isArray(posts)) {
+      console.log("  ⚠️ 岩手: 記事の一覧が取れない。出典の作りが変わった可能性がある");
+      return [];
+    }
+
+    const games = [];
+    for (const post of posts) {
+      const title = normalize(plain(post.title?.rendered ?? ""));
+      if (!w.mark.test(title)) continue;
+      /*
+        ★★**東北大会の記事を必ず外す**（上の2）。
+        同じ【春季大会】の見出しで、青森・福島の学校が出てくる記事が並ぶ。
+      */
+      if (/東北大会|甲子園|全国/.test(title)) continue;
+      games.push(...this.parse(post, season));
+    }
+    return games;
+  },
+  /** 記事1本ぶんのスコア表を読む。**文章には触らない** */
+  parse(post, season) {
+    const html = post.content?.rendered ?? "";
+    const tournament = { spring: "春季岩手県大会", summer: "選手権岩手大会", autumn: "秋季岩手県大会" }[season];
+    const year = Number(String(post.date ?? "").slice(0, 4));
+    /** 記事の掲載日。見出しに日付が無いときのよりどころ */
+    const fallback = String(post.date ?? "").slice(0, 10) || null;
+
+    const out = [];
+    let date = fallback;
+    /*
+      ★**見出し（`7月17日の試合結果`）とスコアの段落が交互に並ぶ**ので、
+      順に読んで**直前の見出しの日付を持ち回る**（島根の球場と同じやり方）。
+      1本の記事が2日ぶんを載せることがある（雨天順延のとき）。
+    */
+    const re = /<h[1-6][^>]*>([\s\S]*?)<\/h[1-6]>|<p[^>]*>\s*▽([\s\S]*?)<\/p>/g;
+    let m;
+    while ((m = re.exec(html))) {
+      if (m[1] !== undefined) {
+        const d = normalize(plain(m[1])).match(/(\d{1,2})月(\d{1,2})日/);
+        if (d && Number.isFinite(year)) {
+          date = `${year}-${String(d[1]).padStart(2, "0")}-${String(d[2]).padStart(2, "0")}`;
+        }
+        continue;
+      }
+      const lines = m[2].split(/<br\s*\/?>/i).map((l) => normalize(plain(l)).trim());
+      const [head, ...rest] = lines;
+      // 「3回戦　＠きたぎんボールパーク」
+      const [roundPart, venuePart] = head.split(/[＠@]/);
+      const rows = [];
+      for (const line of rest) {
+        /*
+          「花泉 000 000 0 =0 H1E4」／「盛岡大附 010 031 6=11 H5E0」
+          ★**合計だけを取る**（イニングごとの得点も安打も失策も使わない）。
+          ★サヨナラの `x` はイニング側に付くので合計には影響しない。
+        */
+        /*
+          ★**2桁のイニング得点は丸数字で書かれる**（`３１０ ⑩０=14`）。
+          `normalize()` は全角数字は直すが**丸数字はそのまま**なので、
+          イニングの側に丸数字を許さないと**その試合が丸ごと落ちる**（実測で2件落ちていた）。
+          ★合計は `=` の右なので、イニングの中身は読まなくてよい。
+        */
+        const r = line.match(/^(\S+?)[\s]+([0-9０-９\s　xX×Ｘ①-⑳]*?)[=＝]\s*(\d+)/);
+        if (r) rows.push({ name: r[1], score: Number(r[3]) });
+        if (rows.length === 2) break;
+      }
+      if (rows.length !== 2 || !rows[0].name || !rows[1].name) continue;
+      const [a, b] = rows;
+      out.push({
+        date,
+        season,
+        tournament,
+        round: pickRound(roundPart),
+        venue: venuePart ? venuePart.trim() || null : null,
+        /*
+          ★**引き分けがある。**「勝っていない＝負け」と読まないこと。
+        */
+        teams: [
+          { display: a.name, score: a.score, won: a.score > b.score },
+          { display: b.name, score: b.score, won: b.score > a.score },
+        ],
+      });
+    }
+    return out;
+  },
+};
+
+/**
+ * 島根県高校野球データベース（`kokoyakyu-database.jp`）。**連盟ではない個人運営のサイト。**
+ *
+ * ------------------------------------------------------------------
+ * ★ なぜ連盟から取らないのか
+ *
+ *   **島根県高野連は写真・記事の無断転載を禁じている**ので、47連盟の調査で
+ *   外した12連盟に入っている（README「都道府県高野連サイトの規約調査」）。
+ *   埼玉・神奈川・愛知と同じで、**連盟以外の出典から取る。**
+ *
+ * ------------------------------------------------------------------
+ * ★ 規約（2026-08-20 確認）
+ *
+ *   - `robots.txt` は **404**（制限そのものが無い）
+ *   - **転載・無断・複製・営利・著作の記載がサイトのどこにも無い**
+ *     （トップ・運営理念・スコア見方を確認）
+ *   - 運営理念に「**利用者がデータ活用できるサイトを目指すこと**」と明記
+ *   - フッタに「当サイトは島根県高校野球連盟とは無関係です」
+ *
+ *   ★**出典表示はこのサイトの名前で出すこと**（連盟の名前で出さない）。
+ *
+ * ------------------------------------------------------------------
+ * ★ 出典の形（静的HTML。**このリポジトリでいちばん読みやすい**）
+ *
+ *   `search-year/<年代>/shimane-<大会>/shimane-<大会>-<年代>.html`
+ *
+ *   大会は `sensyuken`（選手権）・`haru`（春季）・`aki`（秋季）・
+ *   `tiku`（地区大会）・`1nen`（一年生。**使わない**）。
+ *
+ *   1試合が1つの `ul.siaimei` に、意味のある class 付きで並んでいる。
+ *
+ *     <div class="taikai-nittei">
+ *       <time class="siaikekka-time" datetime="2026-07-19">7月19日</time>
+ *       <h1 class="kaizyo">県立浜山球場</h1>
+ *       <div class="siaikekka">
+ *         <ul class="siaimei">
+ *           <li class="siai-number">第１試合</li>
+ *           <li class="kaisen">３回戦</li>
+ *           <li class="school-name">大　田</li>
+ *           <li class="point">２</li>
+ *           <li class="center">対</li>
+ *           <li class="point">９</li>
+ *           <li class="school-name">益田東</li>
+ *           <h1 class="siaikekka-biko-big">７回コールド</h1>
+ *
+ *   ★**推測が1つも要らない。** 日付・球場・回戦・両校・得点が全部そのまま載っている。
+ *
+ * ------------------------------------------------------------------
+ * ★★ URLの `<年代>` は「年度（チームの代）」であって暦年ではない
+ *
+ *   高校野球の1つの代は**秋に始まって翌夏に終わる**ので、
+ *
+ *     2026年代秋季島根県大会 … **2025年9月**
+ *     2026年代春季島根県大会 … 2026年4〜5月
+ *     2026年代島根県地区大会 … 2026年5〜6月
+ *     第108回選手権島根県大会 … 2026年7月
+ *
+ *   ★**だから秋だけ `年代 = 暦年 + 1` で引く。**
+ *   `main()` は「その年で0件なら前年で引き直す」ので、
+ *   2026年の秋がまだ無いうちは 2026年代（＝2025年9月）が入る。
+ *
+ * ------------------------------------------------------------------
+ * ★ 地区大会を春に入れている
+ *
+ *   5月末〜6月初めの県大会で、**同じ代の春季大会の続き**にあたる時期。
+ *   春・夏・秋の3つしか持たないので、暦の近い**春**に入れてある。
+ *   ★**大会名は画面に出る**（「2026年代島根県地区大会」）ので、
+ *   読む人が何の大会かを取り違えることはない。
+ *
+ * ------------------------------------------------------------------
+ * ★ 検算
+ *
+ *   ★**組み立てが要らないので、PDFの県とは失敗の仕方が違う。**
+ *   対戦相手を推測する余地が無く、起きうるのは取りこぼしだけなので、
+ *   **おかしな1件を飛ばして警告を出す**に倒してある（omyutech の5県と同じ）。
+ *
+ *   - 得点が読めない試合は出さない（まだ行われていない試合の枠がある）
+ *   - **1件も取れなかった年のページは静かに飛ばす**（その年の大会がまだ無い）
+ */
+const shimane = {
+  slug: "shimane",
+  district: "島根",
+  name: "島根県高校野球データベース",
+  siteUrl: "https://kokoyakyu-database.jp/",
+  politenessMs: 2000,
+  seasons: {
+    spring: "https://kokoyakyu-database.jp/",
+    summer: "https://kokoyakyu-database.jp/",
+    autumn: "https://kokoyakyu-database.jp/",
+  },
+  /**
+   * 季節 → 読む大会と、URLの「年代」の作り方。
+   * ★**秋だけ 年代 = 暦年 + 1**（上の説明）。
+   */
+  keysOf(season, year) {
+    if (season === "spring") return [["haru", year], ["tiku", year]];
+    if (season === "summer") return [["sensyuken", year]];
+    return [["aki", year + 1]];
+  },
+  async collect({ fetchHtml, season, year }) {
+    const games = [];
+    for (const [key, era] of this.keysOf(season, year)) {
+      const url = `https://kokoyakyu-database.jp/search-year/${era}/shimane-${key}/shimane-${key}-${era}.html`;
+      const html = await fetchHtml(url);
+      // ★その代の大会がまだ無ければ404。**静かに飛ばす**（例外にしない）
+      if (!html) continue;
+      games.push(...this.parse(html, season));
+    }
+    return games;
+  },
+  /** 1つの大会のページを読む */
+  parse(html, season) {
+    const tournament = normalize(plain(html.match(/<title>([\s\S]*?)<\/title>/)?.[1] ?? "")).trim() || null;
+    const out = [];
+    let skipped = 0;
+    /*
+      日付のかたまり（`div.taikai-nittei`）ごとに切る。
+      ★**1日に複数の球場がある**ので、球場と試合の並びを順に読んで
+      **直前の球場を持ち回る**（球場ごとに `h1.kaizyo` → `div.siaikekka` が来る）。
+    */
+    for (const block of html.split(/<div class="taikai-nittei">/).slice(1)) {
+      const date = block.match(/datetime="(\d{4}-\d{2}-\d{2})"/)?.[1] ?? null;
+      let venue = null;
+      const re = /<h1 class="kaizyo">([\s\S]*?)<\/h1>|<ul class="siaimei">([\s\S]*?)<\/ul>/g;
+      let m;
+      while ((m = re.exec(block))) {
+        if (m[1] !== undefined) {
+          venue = normalize(plain(m[1])).replace(/\s+/g, "") || null;
+          continue;
+        }
+        const g = m[2];
+        /*
+          ★★**連合チームだけ class が違う**（`school-name-over`。名前が長いため）。
+          `school-name` だけを見ていると**その試合が丸ごと落ちる**
+          （2026年の選手権で1件、秋季で3件が消えていた）。
+
+          ★**さらに `<br>` で折り返している**ものがある
+          （`江津・江津工業<br>・浜田水産`）。`plain()` はタグを空白に変えるので、
+          **中黒のまわりの空白を詰めないと「江津・江津工業 ・浜田水産」になる。**
+          連合チームは `decorate` が空白を残す（空白が学校の区切りの出典があるため）ので、
+          ここで詰めておかないとそのまま画面に出る。
+        */
+        const names = [...g.matchAll(/class="school-name(?:-over)?">([\s\S]*?)</g)].map((x) =>
+          normalize(plain(x[1])).replace(/\s*[・･]\s*/g, "・").trim(),
+        );
+        const points = [...g.matchAll(/class="point">([\s\S]*?)</g)].map((x) =>
+          normalize(plain(x[1])).trim(),
+        );
+        if (names.length !== 2 || points.length !== 2) {
+          skipped += 1;
+          continue;
+        }
+        const [a, b] = names;
+        const s1 = Number(points[0]);
+        const s2 = Number(points[1]);
+        /*
+          ★**まだ行われていない試合の枠がある**（得点が空）。出さない。
+          推測で埋めないのはもちろん、0対0の引き分けとして出さないこと。
+        */
+        if (!a || !b || !Number.isFinite(s1) || !Number.isFinite(s2)) continue;
+        out.push({
+          date,
+          season,
+          tournament,
+          round: pickRound(g.match(/class="kaisen">([\s\S]*?)</)?.[1] ?? null),
+          venue,
+          /*
+            ★**引き分けがある。**「勝っていない＝負け」と読むと画面に事実と違うことが出る。
+            得点が同じなら両方 false にする。
+          */
+          teams: [
+            { display: a, score: s1, won: s1 > s2 },
+            { display: b, score: s2, won: s2 > s1 },
+          ],
+        });
+      }
+    }
+    if (skipped) {
+      console.log(
+        `  ⚠️ 島根: 校名か得点が2つ揃わない試合が ${skipped} 件。その試合は出さない。` +
+          "出典の作りが変わった可能性がある",
+      );
+    }
+    return out;
+  },
+};
+
 // ------------------------------------------------------------------
 // ★★ 一球速報（omyutech）の試合データを、連盟の公式サイト経由で読む5県
 //     茨城・岡山・香川・高知・長崎（2026-08-20 追加）
@@ -7091,7 +7465,13 @@ function omyuAdapter({ slug, district, name, siteUrl, leagueId, byYearOnly = fal
               `N回裏より継続試合`）。**本物の結果は別の日に載る**ので落とす。
               知らない状態だけ数えて出す。
             */
-            if (!/試合開始前|継続試合|中止|ノーゲーム|試合前/.test(status)) {
+            /*
+              ★★**進行中の試合は「7回表」「4回表」のように回で書かれる**
+              （2026-08-20。茨城の秋季が開催中で実際に出た）。
+              これは出典の作りが変わったのではなく**まだ終わっていないだけ**なので、
+              警告を出さずに飛ばす。**次の実行で結果として入ってくる。**
+            */
+            if (!/試合開始前|継続試合|中止|ノーゲーム|試合前|\d+回[表裏]/.test(status)) {
               unknown.set(status || "(空)", (unknown.get(status || "(空)") ?? 0) + 1);
             }
             continue;
@@ -7228,6 +7608,9 @@ const ADAPTERS = [
   kagawa,
   kochi,
   nagasaki,
+  // ★連盟ではなく個人運営のサイトが出典（埼玉・神奈川・愛知と同じ）
+  shimane,
+  iwate,
 ];
 
 // ------------------------------------------------------------------
@@ -7267,6 +7650,13 @@ function labelCandidates(name, aliases) {
     出典は中等教育学校を「◯◯中等」と書くので、素の短名は高校のものとして扱う。
   */
   if (/中等教育学校$/.test(name)) weak.add(name.replace(/中等教育学校$/, ""));
+  /*
+    ★**「第」を落とした形**（2026-08-20。岩手のため）。
+    出典は「盛岡第一」を**「盛岡一」**、「一関第二」を**「一関二」**と書く。
+    ★**弱い候補にする。** 同じ県に「◯◯一高校」が別にあるなら、そちらが優先される。
+  */
+  const noOrdinal = short.replace(/第([一二三四五六七八九十]|d+)/, "$1");
+  if (noOrdinal !== short) weak.add(noOrdinal);
   return { names: [...set].filter(Boolean), weak: [...weak].filter(Boolean) };
 }
 
@@ -7840,7 +8230,17 @@ async function main() {
       !tournament || tournament.includes(adapter.district) || /県予選|県大会/.test(tournament);
 
     // 公立校に結び付ける
-    const decorate = (t0, allowNationwide) => {
+    const decorate = (t0raw, allowNationwide) => {
+      /*
+        ★**照合用の別名は生成物に残さない**（2026-08-20。omyutech の5県）。
+        あちらは画面に出す略称（`display`）と、照合に使う正式名称（`match`）の
+        両方を返す。**`match` を先に外すこと。**
+        ★**連合チームの枝でも外れるようにここで外す** ——
+        下の連合チームの分岐は `t0` をそのまま広げるので、
+        外し忘れると**連合チームの試合だけ `match` が生成物に残り、
+        `RegionalTeam` に無い項目として型検査で落ちる**（実際に落ちた）。
+      */
+      const { match: matchName, ...t0 } = t0raw;
       if (isCombinedTeam(t0.display)) {
         /*
           連合チームは1校に結び付けない。印だけ付けて持つ。
@@ -7862,8 +8262,7 @@ async function main() {
         略称は「第」を落とすので学校マスタに当たらない。
         ★**生成物には残さない**（下で外す）。画面に出すのは `display` だけ。
       */
-      const { match: matchName, ...rest } = t0;
-      const t = { ...rest, display: t0.display.replace(/[\s　]+/g, "") };
+      const t = { ...t0, display: t0.display.replace(/[\s　]+/g, "") };
       /*
         ★**正式名称の側を先に試し、当たらなければ略称で引く。**
         「千葉市立千葉高等学校」のように**設置区分を落とすと同名になる**学校が

@@ -202,7 +202,6 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       "teams": [
         {
           "display": "御津・鷲羽・緑陽",
-          "match": "御津・鷲羽・緑陽",
           "score": 3,
           "won": false,
           "name": "御津・鷲羽・緑陽",
@@ -1331,7 +1330,6 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       "teams": [
         {
           "display": "岡山・吉備高原",
-          "match": "岡山・吉備高原",
           "score": 1,
           "won": false,
           "name": "岡山・吉備高原",
@@ -1379,7 +1377,6 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       "teams": [
         {
           "display": "御津・鷲羽・緑陽",
-          "match": "御津・鷲羽・緑陽",
           "score": 2,
           "won": false,
           "name": "御津・鷲羽・緑陽",
@@ -2278,7 +2275,6 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       "teams": [
         {
           "display": "岡山・吉備高原",
-          "match": "岡山・吉備高原",
           "score": 0,
           "won": false,
           "name": "岡山・吉備高原",
@@ -2809,7 +2805,6 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       "teams": [
         {
           "display": "岡山・吉備高原",
-          "match": "岡山・吉備高原",
           "score": 0,
           "won": false,
           "name": "岡山・吉備高原",
@@ -3547,7 +3542,6 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       "teams": [
         {
           "display": "御津・鷲羽・緑陽",
-          "match": "御津・鷲羽・緑陽",
           "score": 4,
           "won": false,
           "name": "御津・鷲羽・緑陽",

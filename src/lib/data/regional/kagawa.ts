@@ -18,7 +18,6 @@ export const REGIONAL_KAGAWA: RegionalDistrict = {
       "teams": [
         {
           "display": "石田･坂出･飯山",
-          "match": "石田･坂出･飯山",
           "score": 1,
           "won": false,
           "name": "石田･坂出･飯山",
@@ -940,7 +939,6 @@ export const REGIONAL_KAGAWA: RegionalDistrict = {
       "teams": [
         {
           "display": "石田･琴平･飯山",
-          "match": "石田･琴平･飯山",
           "score": 2,
           "won": false,
           "name": "石田･琴平･飯山",

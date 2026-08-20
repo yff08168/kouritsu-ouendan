@@ -248,7 +248,6 @@ export const REGIONAL_KOCHI: RegionalDistrict = {
       "teams": [
         {
           "display": "丸の内・追手前",
-          "match": "丸の内・追手前",
           "score": 9,
           "won": true,
           "name": "丸の内・追手前",
@@ -510,7 +509,6 @@ export const REGIONAL_KOCHI: RegionalDistrict = {
         },
         {
           "display": "高知海洋・室戸・幡多農",
-          "match": "高知海洋・室戸・幡多農",
           "score": 10,
           "won": false,
           "name": "高知海洋・室戸・幡多農",
@@ -1103,7 +1101,6 @@ export const REGIONAL_KOCHI: RegionalDistrict = {
       "teams": [
         {
           "display": "丸の内・追手前",
-          "match": "丸の内・追手前",
           "score": 0,
           "won": false,
           "name": "丸の内・追手前",
@@ -1181,7 +1178,6 @@ export const REGIONAL_KOCHI: RegionalDistrict = {
         },
         {
           "display": "高知海洋・室戸・幡多農",
-          "match": "高知海洋・室戸・幡多農",
           "score": 2,
           "won": false,
           "name": "高知海洋・室戸・幡多農",

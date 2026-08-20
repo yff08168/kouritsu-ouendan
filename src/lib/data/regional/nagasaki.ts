@@ -117,7 +117,6 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
         },
         {
           "display": "諫早東・口加・島原翔南・島原農",
-          "match": "諫早東・口加・島原翔南・島原農",
           "score": 4,
           "won": false,
           "name": "諫早東・口加・島原翔南・島原農",
@@ -227,7 +226,6 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
       "teams": [
         {
           "display": "西彼杵・上対馬・長崎鶴洋",
-          "match": "西彼杵・上対馬・長崎鶴洋",
           "score": 0,
           "won": false,
           "name": "西彼杵・上対馬・長崎鶴洋",
@@ -482,7 +480,6 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
       "teams": [
         {
           "display": "佐世保西・佐世保商・平戸",
-          "match": "佐世保西・佐世保商・平戸",
           "score": 1,
           "won": false,
           "name": "佐世保西・佐世保商・平戸",
@@ -921,7 +918,6 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
       "teams": [
         {
           "display": "西彼杵・上対馬・長崎鶴洋",
-          "match": "西彼杵・上対馬・長崎鶴洋",
           "score": 0,
           "won": false,
           "name": "西彼杵・上対馬・長崎鶴洋",
@@ -1038,7 +1034,6 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
       "teams": [
         {
           "display": "島原翔南・島原農",
-          "match": "島原翔南・島原農",
           "score": 0,
           "won": false,
           "name": "島原翔南・島原農",
@@ -1868,7 +1863,6 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
       "teams": [
         {
           "display": "諫早東・口加・島原翔南・島原農",
-          "match": "諫早東・口加・島原翔南・島原農",
           "score": 2,
           "won": false,
           "name": "諫早東・口加・島原翔南・島原農",
@@ -1916,7 +1910,6 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
       "teams": [
         {
           "display": "佐世保西・佐世保商・平戸",
-          "match": "佐世保西・佐世保商・平戸",
           "score": 0,
           "won": false,
           "name": "佐世保西・佐世保商・平戸",
@@ -1964,7 +1957,6 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
       "teams": [
         {
           "display": "西彼杵・上対馬・長崎鶴洋",
-          "match": "西彼杵・上対馬・長崎鶴洋",
           "score": 0,
           "won": false,
           "name": "西彼杵・上対馬・長崎鶴洋",

@@ -110,7 +110,6 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       "teams": [
         {
           "display": "三校連合",
-          "match": "三校連合",
           "score": 4,
           "won": false,
           "name": "三校連合",
@@ -372,7 +371,6 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
         },
         {
           "display": "県西連合",
-          "match": "県西連合",
           "score": 21,
           "won": true,
           "name": "県西連合",
@@ -528,7 +526,6 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       "teams": [
         {
           "display": "清松・海洋",
-          "match": "清松・海洋",
           "score": 4,
           "won": false,
           "name": "清松・海洋",
@@ -698,7 +695,6 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
         },
         {
           "display": "麻生・つく国",
-          "match": "麻生・つく国",
           "score": 2,
           "won": false,
           "name": "麻生・つく国",
@@ -946,7 +942,6 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       "teams": [
         {
           "display": "県西連合",
-          "match": "県西連合",
           "score": 8,
           "won": false,
           "name": "県西連合",
@@ -971,7 +966,6 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       "teams": [
         {
           "display": "那珂湊・高専",
-          "match": "那珂湊・高専",
           "score": 0,
           "won": false,
           "name": "那珂湊・高専",
@@ -1732,7 +1726,6 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       "teams": [
         {
           "display": "那珂湊・高専",
-          "match": "那珂湊・高専",
           "score": 0,
           "won": false,
           "name": "那珂湊・高専",
@@ -3167,7 +3160,6 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
         },
         {
           "display": "清松・磯原",
-          "match": "清松・磯原",
           "score": 0,
           "won": false,
           "name": "清松・磯原",
@@ -3231,7 +3223,6 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       "teams": [
         {
           "display": "県北連合",
-          "match": "県北連合",
           "score": 5,
           "won": false,
           "name": "県北連合",
@@ -3726,6 +3717,214 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
           "score": 12,
           "won": true,
           "name": "常磐大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "venue": "竜ヶ崎市営たつのこ球場",
+      "teams": [
+        {
+          "display": "土浦二",
+          "score": 0,
+          "won": false,
+          "name": "土浦第二高校",
+          "slug": "tsuchiuradaini"
+        },
+        {
+          "display": "土浦日大",
+          "score": 15,
+          "won": true,
+          "name": "土浦日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
+      "venue": "ひたちなか市民球場",
+      "teams": [
+        {
+          "display": "勝田工",
+          "score": 1,
+          "won": false,
+          "name": "勝田工業高校",
+          "slug": "katsutakogyo"
+        },
+        {
+          "display": "太田一",
+          "score": 7,
+          "won": true,
+          "name": "太田第一高校",
+          "slug": "otadaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "venue": "結城鹿窪球場",
+      "teams": [
+        {
+          "display": "古河二",
+          "score": 0,
+          "won": false,
+          "name": "古河第二高校",
+          "slug": "kogadaini"
+        },
+        {
+          "display": "下館工",
+          "score": 15,
+          "won": true,
+          "name": "下館工業高校",
+          "slug": "shimodatekogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "venue": "常総市石下球場",
+      "teams": [
+        {
+          "display": "県西連合",
+          "score": 0,
+          "won": false,
+          "name": "県西連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "守谷",
+          "score": 10,
+          "won": true,
+          "name": "守谷高校",
+          "slug": "moriya"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "venue": "結城鹿窪球場",
+      "teams": [
+        {
+          "display": "伊奈",
+          "score": 1,
+          "won": false,
+          "name": "伊奈高校",
+          "slug": "ina"
+        },
+        {
+          "display": "岩瀬日大",
+          "score": 8,
+          "won": true,
+          "name": "岩瀬日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
+      "venue": "ひたちなか市民球場",
+      "teams": [
+        {
+          "display": "多賀",
+          "score": 2,
+          "won": false,
+          "name": "多賀高校",
+          "slug": "taga"
+        },
+        {
+          "display": "茨城キリスト",
+          "score": 12,
+          "won": true,
+          "name": "茨城キリスト",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "venue": "常総市石下球場",
+      "teams": [
+        {
+          "display": "水海道二",
+          "score": 2,
+          "won": false,
+          "name": "水海道第二高校",
+          "slug": "mitsukaidodaini"
+        },
+        {
+          "display": "下妻一",
+          "score": 11,
+          "won": true,
+          "name": "下妻第一高校",
+          "slug": "shimotsumadaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "venue": "茨城トヨタスポーツパークうしく（牛久運動公園）野球場",
+      "teams": [
+        {
+          "display": "江戸川学園",
+          "score": 3,
+          "won": false,
+          "name": "江戸川学園",
+          "slug": null
+        },
+        {
+          "display": "取手一",
+          "score": 7,
+          "won": true,
+          "name": "取手第一高校",
+          "slug": "toridedaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "venue": "竜ヶ崎市営たつのこ球場",
+      "teams": [
+        {
+          "display": "藤代",
+          "score": 3,
+          "won": false,
+          "name": "藤代高校",
+          "slug": "fujishiro"
+        },
+        {
+          "display": "東洋大牛久",
+          "score": 4,
+          "won": true,
+          "name": "東洋大牛久",
           "slug": null
         }
       ]

@@ -1852,6 +1852,52 @@ export const REGIONAL_TOKUSHIMA: RegionalDistrict = {
           "slug": "wakimachi"
         }
       ]
+    },
+    {
+      "date": "2026-08-21",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高等学校新人中央大会",
+      "round": "1回戦",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "穴吹",
+          "score": 1,
+          "won": false,
+          "name": "穴吹高校",
+          "slug": "anabuki"
+        },
+        {
+          "display": "鳴門渦潮",
+          "score": 11,
+          "won": true,
+          "name": "鳴門渦潮高校",
+          "slug": "narutozushio"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高等学校新人中央大会",
+      "round": "1回戦",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "海部",
+          "score": 6,
+          "won": false,
+          "name": "海部高校",
+          "slug": "kaifu"
+        },
+        {
+          "display": "徳島商業",
+          "score": 7,
+          "won": true,
+          "name": "徳島商業高校",
+          "slug": "tokushimashogyo"
+        }
+      ]
     }
   ]
 };

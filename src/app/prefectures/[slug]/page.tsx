@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import {
   ChevronRight,
   Flame,
+  GitBranch,
   MapPin,
   MessageSquareHeart,
   Newspaper,
@@ -29,6 +30,8 @@ import { getPhenomenaByPrefecture } from "@/lib/queries/phenomena";
 import { getActivePolls, getCheerMessages } from "@/lib/queries/community";
 import { PREFECTURES } from "@/lib/constants";
 import { getRegionalDistrict, latestSeasonGames } from "@/lib/regional-results";
+import { bracketForGames } from "@/lib/regional-bracket";
+import { RegionalBracket } from "@/components/results/RegionalBracket";
 
 /**
  * その県の地方大会の結果を何試合まで出すか。
@@ -93,6 +96,25 @@ export default async function PrefectureDetailPage({ params }: Props) {
     ]);
 
   const regionalGames = regional ? latestSeasonGames(regional, REGIONAL_GAMES_LIMIT) : null;
+  /*
+    ★★**トーナメント表は「組めたときだけ」出す**（2026-08-22）。
+
+    生成物は枝を持っていないので、**全試合から組み直す**
+    （`buildRegionalBracket` の説明を読むこと）。組めない大会が普通にある
+    ―― ブロック予選（1枚から複数の代表）・出典に載っていない試合がある・
+    校名が一意でない（`連合`）。**そのときは null で、下の一覧だけを出す。**
+
+    ★**私立どうしの試合も渡すこと。** 枝が切れて必ず組めなくなる。
+    `regionalGames.games` は**公立が絡む試合だけ**なので、
+    **ここでは使わない**（`regional.games` を渡す）。
+  */
+  const bracket =
+    regional && regionalGames
+      ? bracketForGames(
+          regional.games.filter((g) => g.season === regionalGames.season),
+          regionalGames.tournaments[0] ?? null,
+        )
+      : null;
 
   return (
     <Container className="pb-4">
@@ -181,6 +203,27 @@ export default async function PrefectureDetailPage({ params }: Props) {
           total={regionalGames.total}
           tournaments={regionalGames.tournaments}
         />
+      )}
+
+      {/*
+        ------- トーナメント表（枝が組めた大会だけ） -------
+        ★**組めなかった大会では何も出さない。**「だいたい合っている表」は出さない。
+      */}
+      {bracket && (
+        <section
+          aria-labelledby="pref-bracket"
+          className="mt-4 rounded-xl border border-line bg-white p-5"
+        >
+          <SectionHeading
+            id="pref-bracket"
+            title="トーナメント表"
+            icon={<GitBranch size={18} />}
+          />
+          {bracket.tournament && (
+            <p className="mt-1 text-sm text-ink-muted">{bracket.tournament}</p>
+          )}
+          <RegionalBracket bracket={bracket} />
+        </section>
       )}
 
       <AdSlot slot="sidebar" />

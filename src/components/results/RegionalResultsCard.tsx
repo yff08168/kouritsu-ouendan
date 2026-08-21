@@ -56,10 +56,13 @@ export function RegionalResultsCard({
       aria-labelledby="regional-heading"
       className="rounded-xl border border-line bg-white p-4 sm:p-6"
     >
+      {/* ★進捗の地図（/regional）への入口。地図から各県の試合とトーナメント表へ行ける */}
       <SectionHeading
         id="regional-heading"
         title="地方大会の結果"
         icon={<MapPinned size={22} />}
+        moreHref="/regional"
+        moreLabel="全国の進捗を見る"
       />
 
       {/*

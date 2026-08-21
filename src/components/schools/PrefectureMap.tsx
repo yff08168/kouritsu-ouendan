@@ -35,9 +35,39 @@ type Props = {
    * `latest` を渡すときだけ意味を持つ。
    */
   highlightYear?: number | null;
+  /**
+   * ★**マスの中に自由な行を出す**（2026-08-22 に追加。地方大会の進捗地図のため）。
+   *
+   * `latest` は甲子園の「春・夏それぞれの直近の公立校」専用なので、
+   * **別の中身を出したいときはこちら。** 見た目（マスの高さ・行の詰め方）は
+   * `latest` とまったく同じCSSを使う（`prefecture-map--detailed`）。
+   *
+   * ★**`latest` と同時に渡さないこと。** 渡した場合は `detail` を優先する。
+   * ★**行は2行までにすること。** 3行入れると**その行のマスだけ背が高くなり、
+   * 同じ行の他県まで引き伸ばされる**（AGENTS の「割り当てた行ぶんの高さに収める」）。
+   */
+  detail?: Record<string, PrefectureMapDetail>;
   buildHref?: (slug: string) => string;
   activeSlug?: string;
   className?: string;
+};
+
+/** `detail` の1行。`latest` の「春 ◯◯高校 '26」と同じ形に描かれる */
+export type PrefectureMapLine = {
+  /** 行頭の小さなラベル（「秋」「済」）。省略できる */
+  label?: string;
+  text: string;
+  /** 行末の小さな文字（年・件数） */
+  suffix?: string;
+};
+
+export type PrefectureMapDetail = {
+  /** ★**2行まで**（上の注意を読むこと） */
+  lines: PrefectureMapLine[];
+  /** オレンジの枠で目立たせる（「いま動いている」など） */
+  highlight?: boolean;
+  /** 読み上げ用の文。**マスの中身をそのまま読んでも意味が通らない**ので必ず渡す */
+  label: string;
 };
 
 const defaultHref = (slug: string) => `/prefectures/${slug}`;
@@ -62,6 +92,7 @@ export function PrefectureMap({
   aside,
   latest,
   highlightYear,
+  detail,
   buildHref = defaultHref,
   activeSlug,
   className,
@@ -69,7 +100,12 @@ export function PrefectureMap({
   return (
     // 幅を測る基準になる要素。これ自体には見た目を持たせない。
     <div className={cn("prefecture-map-frame", className)}>
-      <div className={cn("prefecture-map", latest && "prefecture-map--detailed")}>
+      <div
+        className={cn(
+          "prefecture-map",
+          (latest || detail) && "prefecture-map--detailed",
+        )}
+      >
         {heading && <div className="prefecture-map__heading">{heading}</div>}
         {aside && <div className="prefecture-map__aside">{aside}</div>}
         {REGIONS.map((region) => (
@@ -82,12 +118,15 @@ export function PrefectureMap({
                 const count = counts?.[prefecture.slug] ?? 0;
                 const isActive = activeSlug === prefecture.slug;
                 const seasons = latest?.[prefecture.slug];
+                /* ★`detail` を渡したときは `latest` を見ない（同時に渡さない決まり） */
+                const cell = detail?.[prefecture.slug];
 
                 // 春も夏も「今年」に公立が出ている地区。今年いちばん熱い場所。
-                const isHot =
-                  highlightYear != null &&
-                  seasons?.spring?.year === highlightYear &&
-                  seasons?.summer?.year === highlightYear;
+                const isHot = cell
+                  ? Boolean(cell.highlight)
+                  : highlightYear != null &&
+                    seasons?.spring?.year === highlightYear &&
+                    seasons?.summer?.year === highlightYear;
 
                 return (
                   <li
@@ -103,12 +142,11 @@ export function PrefectureMap({
                     <Link
                       href={buildHref(prefecture.slug)}
                       aria-current={isActive ? "true" : undefined}
-                      aria-label={prefectureLabel(
-                        prefecture.name,
-                        count,
-                        seasons,
-                        isHot,
-                      )}
+                      aria-label={
+                        cell
+                          ? cell.label
+                          : prefectureLabel(prefecture.name, count, seasons, isHot)
+                      }
                       className={cn(
                         "prefecture-map__tile rounded border transition-colors",
                         isActive
@@ -138,24 +176,40 @@ export function PrefectureMap({
                         </span>
                       )}
 
-                      {seasons && (
+                      {cell ? (
                         <span
                           aria-hidden="true"
                           className="prefecture-map__seasons"
                         >
-                          <SeasonLine
-                            label="春"
-                            entry={seasons.spring}
-                            isActive={isActive}
-                            isThisYear={seasons.spring?.year === highlightYear}
-                          />
-                          <SeasonLine
-                            label="夏"
-                            entry={seasons.summer}
-                            isActive={isActive}
-                            isThisYear={seasons.summer?.year === highlightYear}
-                          />
+                          {cell.lines.map((line, i) => (
+                            <DetailLine
+                              key={i}
+                              line={line}
+                              isActive={isActive}
+                              isHighlight={Boolean(cell.highlight)}
+                            />
+                          ))}
                         </span>
+                      ) : (
+                        seasons && (
+                          <span
+                            aria-hidden="true"
+                            className="prefecture-map__seasons"
+                          >
+                            <SeasonLine
+                              label="春"
+                              entry={seasons.spring}
+                              isActive={isActive}
+                              isThisYear={seasons.spring?.year === highlightYear}
+                            />
+                            <SeasonLine
+                              label="夏"
+                              entry={seasons.summer}
+                              isActive={isActive}
+                              isThisYear={seasons.summer?.year === highlightYear}
+                            />
+                          </span>
+                        )
                       )}
                     </Link>
                   </li>
@@ -209,6 +263,43 @@ function SeasonLine({
         </>
       ) : (
         <span className="prefecture-map__season-school opacity-60">—</span>
+      )}
+    </span>
+  );
+}
+
+/**
+ * `detail` の1行。**`SeasonLine` と同じマークアップ**にしてあるので、
+ * マスの高さ・行の詰まり方は甲子園の地図とまったく同じになる。
+ */
+function DetailLine({
+  line,
+  isActive,
+  isHighlight,
+}: {
+  line: PrefectureMapLine;
+  isActive: boolean;
+  isHighlight: boolean;
+}) {
+  return (
+    <span className="prefecture-map__season">
+      {line.label && (
+        <span
+          className={cn(
+            "prefecture-map__season-label",
+            isActive
+              ? "bg-white/20 text-white"
+              : isHighlight
+                ? "bg-accent-500 text-navy-900"
+                : "bg-navy-100 text-navy-700",
+          )}
+        >
+          {line.label}
+        </span>
+      )}
+      <span className="prefecture-map__season-school">{line.text}</span>
+      {line.suffix && (
+        <span className="prefecture-map__season-year">{line.suffix}</span>
       )}
     </span>
   );

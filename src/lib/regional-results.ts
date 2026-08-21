@@ -131,6 +131,53 @@ export type RegionalSpotlight = {
   standing: string | null;
 };
 
+/**
+ * ★**タイル地図に出す「今季の進捗」**（2026-08-22 に追加）。
+ *
+ * `src/lib/data/regional-progress.ts`（生成物）。**47地区ぶんの1行だけ**で、
+ * 県ごとの試合（1県100KB超）は入っていない。地図は49地区ぶんを一度に描くので、
+ * 県のファイルを読むわけにいかない。
+ *
+ * ★**この表に行が無い地区は「未対応」**（出典をまだ読んでいない）。
+ * `pending`（出典はあるが今季の試合がまだ無い）と**画面で区別すること。**
+ * 同じ見た目にすると「まだ始まっていない」と「取れていない」が混ざる。
+ */
+export type RegionalProgress =
+  | {
+      slug: string;
+      district: string;
+      /** 出典はあるが、今季の試合がまだ取れていない */
+      state: "pending";
+    }
+  | {
+      slug: string;
+      district: string;
+      /** `playing`＝開催中（決勝が読めていない）／`done`＝決勝まで読めた */
+      state: "playing" | "done";
+      season: RegionalSeason;
+      /** いちばん試合数の多い大会名 */
+      tournament: string | null;
+      /** 取れている試合数（**私立どうしも含む**） */
+      games: number;
+      /** うち公立が絡む試合数（画面に出るのはこちら） */
+      publicGames: number;
+      /** いちばん深い回戦。「4回戦」「準決勝」「決勝」 */
+      round: string | null;
+      latestDate: string | null;
+      /** 優勝校。**決勝が読めたときだけ。** 私立なら slug は null */
+      champion: { display: string; slug: string | null } | null;
+    };
+
+export type RegionalProgressBoard = {
+  /**
+   * 地図全体の季節。**地区ごとに変えない。**
+   * 混ぜると「どの大会の一覧なのか」が言えなくなる。
+   */
+  season: RegionalSeason | null;
+  latestDate: string | null;
+  districts: RegionalProgress[];
+};
+
 export type RegionalPickups = {
   /** 反映されている最新の試合日。鮮度の表示に使う */
   latestDate: string | null;

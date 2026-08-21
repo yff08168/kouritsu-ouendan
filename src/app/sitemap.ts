@@ -36,6 +36,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url("/phenomenon"), lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: url("/features"), lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: url("/prefectures"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    // 地方大会の進捗。大会中は毎日変わる
+    { url: url("/regional"), lastModified: now, changeFrequency: "daily", priority: 0.8 },
     { url: url("/about"), lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: url("/contact"), lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: url("/privacy"), lastModified: now, changeFrequency: "yearly", priority: 0.1 },

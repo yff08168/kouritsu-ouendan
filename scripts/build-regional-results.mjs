@@ -67,6 +67,14 @@ const ROOT = path.resolve(import.meta.dirname, "..");
 const OUT_DIR = path.join(ROOT, "src", "lib", "data", "regional");
 /** トップ用の抜粋。ここだけはトップページが読むので小さく保つ */
 const OUT_PICKUP = path.join(ROOT, "src", "lib", "data", "regional-pickup.ts");
+/**
+ * ★**タイル地図に出す「今季の進捗」**（2026-08-22 に追加）。
+ *
+ * 47地区ぶんの1行だけを持つ**小さな生成物**（数KB）。
+ * ★**県ごとのファイル（1県100KB超）を47県ぶん読めない**ので、
+ * 抜粋と同じ考え方で「地図が要るぶんだけ」を別に書き出す。
+ */
+const OUT_PROGRESS = path.join(ROOT, "src", "lib", "data", "regional-progress.ts");
 const UA = { "User-Agent": "kouritsu-ouendan/1.0 (+https://kouritsu-ouendan.com)" };
 
 const args = process.argv.slice(2);
@@ -11728,6 +11736,140 @@ async function main() {
   writeFileSync(OUT_PICKUP, pickupFile, "utf8");
   console.log(
     `  書き出した: ${path.relative(ROOT, OUT_PICKUP)}（${Math.round(pickupFile.length / 1024)}KB）`,
+  );
+
+  /*
+    ------------------------------------------------------------------
+    ★★ タイル地図に出す「今季の進捗」（2026-08-22 に追加）
+    ------------------------------------------------------------------
+
+    47地区ぶんの1行だけを書き出す。**県ごとのファイルは読まない。**
+
+    ★**季節は全国で1つ**（`pickupSeason`）。県ごとに別の季節を出すと、
+    **地図の中で夏と秋が混ざって「どの大会の一覧なのか」が言えなくなる。**
+
+    ★★**その季節の試合が「無い」には2種類ある。区別して書き出すこと。**
+
+      （この生成物に**行が無い**）… その地区の出典をまだ読んでいない（39県の外の地区）
+      `pending`                  … 出典はあるが、その季節の試合がまだ取れていない
+
+    **画面で同じ見た目にすると「まだ始まっていない」と「取れていない」が
+    混ざる。** 秋は始まったばかりで `pending` が大半になるので、ここは効く。
+
+    ★**47地区の一覧はここに持たない。** 地区マスタ（`src/lib/constants.ts` の
+    `PREFECTURES`）はTypeScriptにあり、このスクリプト（.mjs）からは読めない。
+    **画面側が49地区を並べ、この表に無い地区を「未対応」として描く。**
+    ★**マスタを2か所に持たないこと**（ずれたら地図が欠ける）。
+
+    ★**前年の同じ季節を「今季」として数えない。** 抜粋と同じ窓（`pickupFrom`）で切る。
+    切らないと、秋のページが前年ぶんしか無い県が**去年の決勝を「終了」として出す。**
+  */
+  /** 回戦の深さ。深いほど大きい。`ROUND_ORDER` はこの上で定義済み */
+  const depthOf = (round) => {
+    const i = ROUND_ORDER.indexOf(round ?? "");
+    return i < 0 ? -1 : i;
+  };
+  /** 地図が示す年。いちばん新しい試合の年 */
+  const boardYear = newestOverall ? Number(newestOverall.slice(0, 4)) : null;
+  /*
+    ★★**大会の年を出す。日付が無い大会があるため。**
+
+    ★**日付だけに頼ると、前年の大会を「今季」として出す**（宮崎は秋の紙が
+    前年ぶんしか無く、しかも**日付が1つも書かれていない**ので、
+    「窓で切る」が効かずに**去年の決勝を『終了』として出していた**）。
+    ★**日付の無い季節は珍しくない**（実測：夏7県・春3県・秋1県）ので、
+    「日付が無ければ捨てる」だけでは夏に7県が地図から消える。
+
+    順に見る。**推測はしない。決められなければ null**（＝地図に出さない）。
+      1. その大会の試合に日付があれば、その年（いちばん確か）
+      2. `第N回…選手権…大会` は **N + 1918**（`build-live-results.mjs` と同じ）
+      3. `令和N年度` / `令和N年` は **2018 + N**
+    ★**九州地区大会の「第157回」のような通し番号から年を出さないこと**
+    （選手権の回数とは別の系列で、年とは関係がない）。
+  */
+  const yearOfTournament = (name, gamesOfTournament) => {
+    const dated = gamesOfTournament.map((g) => g.date).filter(Boolean).sort();
+    if (dated.length) return Number(dated.at(-1).slice(0, 4));
+    const t = normalize(name ?? "");
+    const senshuken = t.match(/第(\d+)回.*選手権/);
+    if (senshuken) return Number(senshuken[1]) + 1918;
+    const reiwa = t.match(/令和(\d+)年/);
+    if (reiwa) return 2018 + Number(reiwa[1]);
+    return null;
+  };
+
+  const progress = districts.map((d) => {
+    const pending = { slug: d.slug, district: d.district, state: "pending" };
+    /*
+      ★**全試合から数える**（私立どうしも含む）。進捗は大会の進み具合なので、
+      公立が絡むかどうかは関係がない。**画面に出す試合の数は別に持つ。**
+    */
+    const seasonGames = d.games.filter((g) => g.season === pickupSeason);
+    if (!seasonGames.length) return pending;
+
+    /*
+      ★★**大会ごとに分けてから、1つだけを見る。**
+      **1つの季節に複数の大会が並ぶ県がある**（徳島の秋は**5つ**あり、
+      ブロック大会4つと新人中央大会が同じ季節に入っている）。
+      まとめて数えると、**ブロック予選の決勝で県全体が「終了」になる**
+      （実際に徳島がそうなった）。
+
+      ★★**選ぶのは「最後の試合がいちばん新しい大会」。試合数の多い大会ではない。**
+      徳島のブロック大会は7試合で 8/13 に終わっており、
+      いま動いている新人中央大会は**4試合で 8/21**。
+      試合数で選ぶと**終わったブロック大会を「県の今季」として出す。**
+      ★**これはサイトの他の場所と同じ決め方**（`results-slot.ts` の
+      「最後の試合が新しいほうを出す」、`spotlightSeason` の「いちばん新しい試合の季節」）。
+      ★**日付がどこにも無い県だけ、試合数のいちばん多い大会に落とす。**
+    */
+    const byTournament = new Map();
+    for (const g of seasonGames) {
+      const k = g.tournament ?? "";
+      if (!byTournament.has(k)) byTournament.set(k, []);
+      byTournament.get(k).push(g);
+    }
+    const newestOf = (gs) => gs.map((g) => g.date).filter(Boolean).sort().at(-1) ?? "";
+    const [tournament, games] = [...byTournament.entries()].sort(
+      (a, b) => newestOf(b[1]).localeCompare(newestOf(a[1])) || b[1].length - a[1].length,
+    )[0];
+
+    // ★**今季のものでなければ出さない**（前年の大会を「今季」として並べない）
+    const year = yearOfTournament(tournament, games);
+    if (year === null || (boardYear !== null && year !== boardYear)) return pending;
+
+    const finalGame = games.find((g) => g.round === "決勝");
+    const deepest = games.reduce((a, b) => (depthOf(b.round) > depthOf(a.round) ? b : a));
+    const champ = finalGame?.teams.find((t) => t.won) ?? null;
+    return {
+      slug: d.slug,
+      district: d.district,
+      state: finalGame ? "done" : "playing",
+      season: pickupSeason,
+      tournament: tournament || null,
+      games: games.length,
+      publicGames: games.filter((g) => g.teams.some((t) => t.slug)).length,
+      /** いちばん深い回戦。「4回戦」「準決勝」「決勝」 */
+      round: deepest.round ?? null,
+      latestDate: games.map((g) => g.date).filter(Boolean).sort().at(-1) ?? null,
+      /** 優勝校。**決勝が読めたときだけ。**私立なら slug は null */
+      champion: champ ? { display: champ.display, slug: champ.slug ?? null } : null,
+    };
+  });
+
+  const progressFile =
+    `// このファイルは scripts/build-regional-results.mjs が生成する。直接編集しない。\n` +
+    `// タイル地図に出す「今季の進捗」。**47地区ぶんの1行だけ**（県ごとの試合は別ファイル）。\n\n` +
+    `import type { RegionalProgressBoard } from "@/lib/regional-results";\n\n` +
+    `export const REGIONAL_PROGRESS: RegionalProgressBoard = ${JSON.stringify(
+      { season: pickupSeason, latestDate, districts: progress },
+      null,
+      2,
+    )};\n`;
+  writeFileSync(OUT_PROGRESS, progressFile, "utf8");
+  const counted = progress.filter((p) => p.state === "playing" || p.state === "done").length;
+  console.log(
+    `  書き出した: ${path.relative(ROOT, OUT_PROGRESS)}` +
+      `（${counted} 地区に今季の試合あり／終了 ${progress.filter((p) => p.state === "done").length}）`,
   );
 }
 

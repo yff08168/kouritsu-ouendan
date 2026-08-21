@@ -11,6 +11,767 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
   "games": [
     {
       "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "延岡",
+          "score": 11,
+          "won": true,
+          "name": "延岡高校",
+          "slug": "nobeoka"
+        },
+        {
+          "display": "高鍋農業・宮崎海洋・高千穂",
+          "score": 4,
+          "won": false,
+          "name": "高鍋農業・宮崎海洋・高千穂",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宮崎商業",
+          "score": 7,
+          "won": true,
+          "name": "宮崎商業高校",
+          "slug": "miyazakishogyo"
+        },
+        {
+          "display": "宮崎工業",
+          "score": 2,
+          "won": false,
+          "name": "宮崎工業高校",
+          "slug": "miyazakikogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "都城西",
+          "score": 11,
+          "won": false,
+          "name": "都城西高校",
+          "slug": "miyakonojonishi"
+        },
+        {
+          "display": "都城商業",
+          "score": 14,
+          "won": true,
+          "name": "都城商業高校",
+          "slug": "miyakonojoshogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日章学園",
+          "score": 7,
+          "won": true,
+          "name": "日章学園",
+          "slug": null
+        },
+        {
+          "display": "延岡工業",
+          "score": 4,
+          "won": false,
+          "name": "延岡工業高校",
+          "slug": "nobeokakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小林秀峰",
+          "score": 8,
+          "won": false,
+          "name": "小林秀峰高校",
+          "slug": "kobayashishuho"
+        },
+        {
+          "display": "鵬翔",
+          "score": 9,
+          "won": true,
+          "name": "鵬翔",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小林西",
+          "score": 8,
+          "won": true,
+          "name": "小林西",
+          "slug": null
+        },
+        {
+          "display": "延岡星雲",
+          "score": 1,
+          "won": false,
+          "name": "延岡星雲高校",
+          "slug": "nobeokaseiun"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "延岡",
+          "score": 1,
+          "won": false,
+          "name": "延岡高校",
+          "slug": "nobeoka"
+        },
+        {
+          "display": "延岡学園",
+          "score": 6,
+          "won": true,
+          "name": "延岡学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宮崎商業",
+          "score": 17,
+          "won": true,
+          "name": "宮崎商業高校",
+          "slug": "miyazakishogyo"
+        },
+        {
+          "display": "宮崎西",
+          "score": 0,
+          "won": false,
+          "name": "宮崎西高校",
+          "slug": "miyazakinishi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "都城工業",
+          "score": 9,
+          "won": true,
+          "name": "都城工業高校",
+          "slug": "miyakonojokogyo"
+        },
+        {
+          "display": "日南",
+          "score": 8,
+          "won": false,
+          "name": "日南高校",
+          "slug": "nichinan"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "本庄",
+          "score": 2,
+          "won": false,
+          "name": "本庄高校",
+          "slug": "miyazaki-honjo"
+        },
+        {
+          "display": "高鍋",
+          "score": 11,
+          "won": true,
+          "name": "高鍋高校",
+          "slug": "takanabe"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "都城商業",
+          "score": 5,
+          "won": true,
+          "name": "都城商業高校",
+          "slug": "miyakonojoshogyo"
+        },
+        {
+          "display": "日章学園",
+          "score": 4,
+          "won": false,
+          "name": "日章学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "妻",
+          "score": 0,
+          "won": false,
+          "name": "妻高校",
+          "slug": "tsuma"
+        },
+        {
+          "display": "宮崎日大",
+          "score": 9,
+          "won": true,
+          "name": "宮崎日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宮崎商業",
+          "score": 6,
+          "won": true,
+          "name": "宮崎商業高校",
+          "slug": "miyazakishogyo"
+        },
+        {
+          "display": "都城工業",
+          "score": 1,
+          "won": false,
+          "name": "都城工業高校",
+          "slug": "miyakonojokogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高鍋",
+          "score": 4,
+          "won": true,
+          "name": "高鍋高校",
+          "slug": "takanabe"
+        },
+        {
+          "display": "都城商業",
+          "score": 2,
+          "won": false,
+          "name": "都城商業高校",
+          "slug": "miyakonojoshogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小林西",
+          "score": 3,
+          "won": true,
+          "name": "小林西",
+          "slug": null
+        },
+        {
+          "display": "宮崎商業",
+          "score": 1,
+          "won": false,
+          "name": "宮崎商業高校",
+          "slug": "miyazakishogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高鍋",
+          "score": 3,
+          "won": false,
+          "name": "高鍋高校",
+          "slug": "takanabe"
+        },
+        {
+          "display": "宮崎日大",
+          "score": 5,
+          "won": true,
+          "name": "宮崎日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "延岡商業",
+          "score": 0,
+          "won": false,
+          "name": "延岡商業高校",
+          "slug": "nobeokashogyo"
+        },
+        {
+          "display": "日南振徳",
+          "score": 2,
+          "won": true,
+          "name": "日南振徳高校",
+          "slug": "nichinanshintoku"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "飯野・高城・福島",
+          "score": 6,
+          "won": false,
+          "name": "飯野・高城・福島",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "小林",
+          "score": 7,
+          "won": true,
+          "name": "小林高校",
+          "slug": "kobayashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日向",
+          "score": 3,
+          "won": false,
+          "name": "日向高校",
+          "slug": "hyuga"
+        },
+        {
+          "display": "宮崎北",
+          "score": 5,
+          "won": true,
+          "name": "宮崎北高校",
+          "slug": "miyazakikita"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐土原",
+          "score": 10,
+          "won": true,
+          "name": "佐土原高校",
+          "slug": "sadowara"
+        },
+        {
+          "display": "宮崎農業",
+          "score": 1,
+          "won": false,
+          "name": "宮崎農業高校",
+          "slug": "miyazakinogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宮崎大宮",
+          "score": 10,
+          "won": true,
+          "name": "宮崎大宮高校",
+          "slug": "miyazakiomiya"
+        },
+        {
+          "display": "日向工業",
+          "score": 6,
+          "won": false,
+          "name": "日向工業高校",
+          "slug": "hyugakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日南学園",
+          "score": 9,
+          "won": true,
+          "name": "日南学園",
+          "slug": null
+        },
+        {
+          "display": "富島",
+          "score": 2,
+          "won": false,
+          "name": "富島高校",
+          "slug": "tomishima"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日南振徳",
+          "score": 4,
+          "won": true,
+          "name": "日南振徳高校",
+          "slug": "nichinanshintoku"
+        },
+        {
+          "display": "都城泉ヶ丘",
+          "score": 3,
+          "won": false,
+          "name": "都城泉ヶ丘高校",
+          "slug": "miyakonojoizumigaoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宮崎第一",
+          "score": 6,
+          "won": true,
+          "name": "宮崎第一",
+          "slug": null
+        },
+        {
+          "display": "小林",
+          "score": 0,
+          "won": false,
+          "name": "小林高校",
+          "slug": "kobayashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "門川",
+          "score": 1,
+          "won": false,
+          "name": "門川高校",
+          "slug": "kadogawa"
+        },
+        {
+          "display": "聖心ウルスラ",
+          "score": 12,
+          "won": true,
+          "name": "聖心ウルスラ",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宮崎南",
+          "score": 14,
+          "won": true,
+          "name": "宮崎南高校",
+          "slug": "miyazakiminami"
+        },
+        {
+          "display": "都城高専",
+          "score": 1,
+          "won": false,
+          "name": "都城工業高専",
+          "slug": "miyakonojokogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宮崎北",
+          "score": 5,
+          "won": false,
+          "name": "宮崎北高校",
+          "slug": "miyazakikita"
+        },
+        {
+          "display": "佐土原",
+          "score": 6,
+          "won": true,
+          "name": "佐土原高校",
+          "slug": "sadowara"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "櫻美学園",
+          "score": 1,
+          "won": false,
+          "name": "櫻美学園",
+          "slug": null
+        },
+        {
+          "display": "宮崎大宮",
+          "score": 4,
+          "won": true,
+          "name": "宮崎大宮高校",
+          "slug": "miyazakiomiya"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "都城農業",
+          "score": 2,
+          "won": false,
+          "name": "都城農業高校",
+          "slug": "miyakonojonogyo"
+        },
+        {
+          "display": "宮崎学園",
+          "score": 3,
+          "won": true,
+          "name": "宮崎学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日南学園",
+          "score": 10,
+          "won": true,
+          "name": "日南学園",
+          "slug": null
+        },
+        {
+          "display": "日南振徳",
+          "score": 1,
+          "won": false,
+          "name": "日南振徳高校",
+          "slug": "nichinanshintoku"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宮崎南",
+          "score": 4,
+          "won": false,
+          "name": "宮崎南高校",
+          "slug": "miyazakiminami"
+        },
+        {
+          "display": "佐土原",
+          "score": 6,
+          "won": true,
+          "name": "佐土原高校",
+          "slug": "sadowara"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宮崎大宮",
+          "score": 2,
+          "won": false,
+          "name": "宮崎大宮高校",
+          "slug": "miyazakiomiya"
+        },
+        {
+          "display": "宮崎学園",
+          "score": 3,
+          "won": true,
+          "name": "宮崎学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐土原",
+          "score": 0,
+          "won": false,
+          "name": "佐土原高校",
+          "slug": "sadowara"
+        },
+        {
+          "display": "宮崎学園",
+          "score": 3,
+          "won": true,
+          "name": "宮崎学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権宮崎大会",
       "round": "1回戦",

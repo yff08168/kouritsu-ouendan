@@ -2339,6 +2339,23 @@ function readTwoColumnBracket(raw, opts) {
       **1〜3月の大会に使うときは食い違う**ので、そのときは渡す側で直すこと。
     */
     yearOf = (t) => Number(t.match(/第(\d+)回/)?.[1]) + 1918,
+    /*
+      ★★**中央の走査の下限**（2026-08-21。宮崎の春季のため）。
+
+      `finalAt: "innermost"` は「境目をはさむ組のうちいちばん内側」を決勝とするが、
+      ★**3位決定戦が決勝の下に縦に並ぶ表では、これが逆転することがある。**
+      宮崎の春季（2026）は **決勝が幅16（x=287/303）／3位決定戦が幅15（x=287/302）**で、
+      **3位決定戦のほうが内側**（秋は決勝15 対 3決41で、向きが逆）。
+      ★**取り違えると画面に嘘の決勝スコアが出る。**
+
+      ★**幅の大小では決められない**ので、紙の区画で決める。
+      宮崎の春は中央に**【3位決定戦】のラベル**が刷ってあり、
+      **その下が3位決定戦の区画**（両校名も縦書きでラベルの下にある）。
+      **ラベルの y を渡して、それより下を中央の走査から丸ごと外す。**
+
+      ★**渡さなければ今までどおり紙の全体を走査する**（他県は1行も変わらない）。
+    */
+    centerFloor,
   } = opts;
   const flat = raw.lines.map((l) => normalize(l.text.replace(/\t/g, "")));
   const tournament = flat.map((t) => t.match(titlePattern)?.[0]).find(Boolean);
@@ -2418,7 +2435,13 @@ function readTwoColumnBracket(raw, opts) {
   }
 
   const items = page.lines.flatMap((l) => l.items.map((i) => ({ x: i.x, y: l.y, t: i.text.trim() })));
-  const mid = items.filter((i) => Math.abs(i.x - half) < half * 0.2);
+  /*
+    ★**`centerFloor` より下は中央の走査から外す**（3位決定戦の区画。宮崎の春季）。
+    ここで外すので、決勝の探索だけでなく**日付・球場を拾う `nearest` にも効く。**
+  */
+  const mid = items.filter(
+    (i) => Math.abs(i.x - half) < half * 0.2 && (centerFloor === undefined || i.y > centerFloor),
+  );
 
   /*
     ★**中央に深い回戦のスコアが何段も並ぶ表がある**（`finalAt: "innermost"`。千葉）。
@@ -5251,18 +5274,26 @@ const miyazaki = {
   siteUrl: "https://miyazaki-hbf.jp/",
   politenessMs: 2000,
   /*
-    ★**夏と秋の2季**（秋は 2026-08-19 に追加）。
-    春季は**県大会＋県北・県央・県南の地区予選の4枚**で、
-    ★**地区予選は1枚から代表が2〜3校出る**（優勝校が1つに収束しない）。
-    `assembleSlotBracket` の前提に合わないので入れていない。
+    ★**春・夏・秋の3季**（春は 2026-08-21 に追加）。
+
+    ★★**「春季は県大会＋県北・県央・県南の地区予選の4枚」という記録は誤りだった。**
+    4枚あるのは**別の大会**（`第N回宮崎県高等学校野球選手権大会`。5〜6月）で、
+    春季九州地区大会の県予選は**1枚に収束するやぐら表**（夏・秋と同じ左右2段組）。
+    ★**4枚のほうはまだ取っていない**（地区予選の紙が3枚そろっており、
+    県大会と合わせて別の季節として持つ形になる。**別の仕事**）。
   */
-  seasons: { summer: "https://miyazaki-hbf.jp/", autumn: "https://miyazaki-hbf.jp/" },
+  seasons: {
+    spring: "https://miyazaki-hbf.jp/",
+    summer: "https://miyazaki-hbf.jp/",
+    autumn: "https://miyazaki-hbf.jp/",
+  },
   /** 連盟ごとの定数。`main.*.chunk.js` の `leagueId=245` */
   leagueId: 245,
   /** 左右の境目。スロット列は x≒116 と x≒438 にあり、その中間 */
   half: 277,
   async collect({ season }) {
     if (season === "autumn") return this.collectAutumn();
+    if (season === "spring") return this.collectSpring();
     if (season !== "summer") return [];
     const news = await fetchOmyuNews(this.leagueId);
     if (!news) {
@@ -5587,6 +5618,510 @@ const miyazaki = {
       ],
       cleanName: (s) => s.replace(/\s+/g, ""),
     });
+  },
+
+  /*
+    ------------------------------------------------------------------
+    ★ 春季（九州地区大会の宮崎県予選）。2026-08-21 に追加
+    ------------------------------------------------------------------
+
+    紙は秋と同じ**左右2段組のやぐら表1枚**で、優勝校1つに収束する。
+    ★**お知らせは1件しかなく、そこに複数の年の紙がぶら下がる**
+    （`newsId=12` に第156回＝2025春 と 第158回＝2026春 の2枚）。
+
+    ★★**だから「お知らせの掲載年」を検算に使えない。**
+    夏・秋は `年 ≠ お知らせの掲載年` なら落としているが、
+    春は**2枚とも同じお知らせ（2025.04.11）に付いている**ので、
+    そのまま持ってくると新しいほうの紙が必ず落ちる。
+    ★**年は紙の「期日」だけから出し、いちばん新しい1枚を使う。**
+
+    ------------------------------------------------------------------
+    ★★ ここが春季のいちばんの難所 ── 決勝と3位決定戦の取り違え
+
+    中央に**決勝と3位決定戦が縦に並ぶ。** `finalAt: "innermost"`
+    （境目をはさむ組のうちいちばん内側）は、**どちらが内側かが年で入れ替わる。**
+
+      2026春 … 決勝 3-4（x=287/303・幅16）／3位決定戦 1-6（x=287/302・**幅15**）
+      2025春 … 決勝 3-4（x=290/297・幅7）／3位決定戦 4-3（x=290/297・**幅7**）
+      （秋は 決勝15 対 3決41 で、**向きが逆**）
+
+    ★**2026は3位決定戦のほうが内側、2025は同点で「先に見つかったほう」任せ。**
+    どちらも**画面に嘘の決勝スコアが出る**（2026は実際に 1-6 が決勝として出た）。
+
+    ★★**幅では決められないので、紙の区画で決める。**
+    中央に**3位決定戦のラベル**が刷ってあり、**その下が3位決定戦の区画**
+    （両校名も縦書きでラベルの下にある）。ラベルの y を `centerFloor` に渡して
+    **それより下を中央の走査から丸ごと外す。**
+
+      2026 … `【3位決定戦】`（1断片・x=279・y=412.8）。決勝 448.6 ＞ 412.8 ＞ 3決 392.4
+      2025 … `3`(x=282) + `位`(x=293) の2断片・y=402.6。決勝 471.1 ＞ 402.6 ＞ 3決 381.1
+
+    ★**断片は年によって割れ方が違う**ので、**中央の行の断片をつないでから
+    「3位」を探す**（文字で消すのではなく、行の y を境目として使うだけ）。
+
+    ------------------------------------------------------------------
+    ★★ 検算 ── **優勝校が刷られていない年がある**
+
+    2025春には中央に `優勝／宮崎商業高等学校` が縦書きされているが、
+    ★**2026春は `（16季ぶり2回目）` だけで校名が無い。**
+    お知らせの本文も「PDFファイル」の一覧だけで、優勝校もチーム数も書いていない。
+    ★**秋で使っている「中央の縦書きから優勝校を読む」検算が、年によって使えない。**
+
+    ★★**そこで「紙の下の日程表」を検算材料にした。**
+    球場ごと・日ごとの**試合数**が刷ってあり、**枝とは別の場所から来る事実。**
+
+      2026 … ｻﾝﾏﾘﾝ 25 ＋ ｱｲﾋﾞｰ 18 ＝ **43** ＝ 組み立て42 ＋ 3位決定戦1
+      2025 … ｻﾝﾏﾘﾝ 25 ＋ ｱｲﾋﾞｰ 20 ＝ **45** ＝ 組み立て44 ＋ 3位決定戦1
+
+    ★★**この検算は 2025春 で「優勝校の検算」と一緒に通した。**
+    片方だけしか無い年（2026）に使う前に、**両方ある年で一致することを確かめてある。**
+
+    ★**日ごとの数ではなく合計を見るのは、雨天順延に強いから。**
+    順延は試合を日のあいだで動かすだけで**合計を変えない**
+    （沖縄の「会期の最終日は落とす条件にしない」と同じ考え方だが、
+    こちらは**日付ではなく個数**なので、順延しても要求を緩めなくてよい）。
+
+    ★**`予`（予備日）`休``×` は数字ではないので自然に落ちる。**
+    ★**日程表の見出し（`日程` `月日`）にも数字が並ぶ**ので、
+    **球場名のある行だけ**を数える（見出しの行に球場名は無い）。
+
+    ★ 検算（合わなければ**1試合も出さない**）
+
+      - チーム数 − 試合数 = 1
+      - ★**日程表の試合数の合計 = 組み立てた試合数 + 3位決定戦**
+      - **中央に優勝校が刷ってあれば**、決勝の勝者と一致（無ければ飛ばし、**ログに出す**）
+      - 紙の「期日」が3〜6月（秋の紙を春として読まないため）
+
+    ★**3位決定戦は出さない**（秋と同じ）。勝ち抜きの枝ではないので
+    「チーム数 − 試合数 = 1」に乗らず、足すと検算が緩む。
+  */
+  async collectSpring() {
+    const news = await fetchOmyuNews(this.leagueId);
+    if (!news) {
+      console.log("  ⚠️ 宮崎: お知らせの一覧が取れない。出典の作りが変わった可能性がある");
+      return [];
+    }
+    /*
+      ★**「春季九州地区…宮崎県予選」だけを拾う。**
+      **秋季**（`秋季九州地区…`）と**九州地区大会そのもの**（県予選でない）、
+      **軟式**を外す。★**5〜6月の「宮崎県高等学校野球選手権大会」は別の大会**で、
+      「九州地区」に当たらないので混ざらない。
+    */
+    const posts = news
+      .map((n) => ({ ...n, title: normalize(n.title ?? "") }))
+      .filter((n) => /春季/.test(n.title) && /九州地区/.test(n.title) && /宮崎県予選/.test(n.title))
+      .filter((n) => /結果/.test(n.title) && !/軟式/.test(n.title))
+      .sort((a, b) => String(b.createTime).localeCompare(String(a.createTime)));
+    if (!posts.length) {
+      console.log("  ⚠️ 宮崎: 春季（九州地区大会県予選）の結果のお知らせが見つからない");
+      return [];
+    }
+
+    /*
+      ★★**1件のお知らせに年ちがいの紙が何枚もぶら下がる。**
+      **全部読んでから、紙の期日がいちばん新しい1枚だけを使う。**
+      ★**落ちたらその季節は0件**（福岡で決めた線。前の年の紙に落ちない）。
+    */
+    const post = posts[0];
+    await sleep(this.politenessMs);
+    const body = await fetchOmyuNewsBody(this.leagueId, post.newsId);
+    const urls = [...(body ?? "").matchAll(/https?:\/\/[^"'\s<>]+\.pdf/g)].map((m) => m[0]);
+    if (!urls.length) {
+      console.log(`  ⚠️ 宮崎: 「${post.title}」にPDFのリンクが無い`);
+      return [];
+    }
+
+    const sheets = [];
+    for (const url of urls) {
+      const parsed = await fetchPdfPages(url, { headers: UA });
+      await sleep(this.politenessMs);
+      if (!parsed?.length) {
+        console.log(`  ⚠️ 宮崎(春): ${url} が読めない`);
+        continue;
+      }
+      for (const raw of parsed) {
+        const dated = this.springSheetYear(raw);
+        if (dated) sheets.push({ raw, ...dated });
+      }
+    }
+    if (!sheets.length) {
+      console.log("  ⚠️ 宮崎(春): 春季のやぐら表が1枚も見つからない");
+      return [];
+    }
+    sheets.sort((a, b) => b.year - a.year);
+    const newest = sheets[0];
+    if (sheets.length > 1) {
+      console.log(`  （宮崎(春): ${sheets.length} 枚のうち、いちばん新しい ${newest.year} 年の紙を使う）`);
+    }
+    return this.readSpringSheet(newest.raw, newest.year) ?? [];
+  },
+
+  /**
+   * 春季の紙かどうかを見て、**紙の「期日」から年を出す**。
+   * 春季でなければ null（呼ぶ側は次の紙へ）。
+   */
+  springSheetYear(raw) {
+    const flat = raw.lines.map((l) => normalize(l.text.replace(/\t/g, "")));
+    if (!flat.some((t) => /第\d+回九州地区高等学校野球大会宮崎県予選/.test(t))) return null;
+    /*
+      ★**回数から年を出せない**（秋と同じ。「第158回」は九州地区大会の通し番号）。
+      ★**「令和N年」は暦年**（年度ではない）。春季は3〜4月なので暦年と一致する。
+    */
+    const m = flat.map((t) => t.match(/期\s*日\D{0,4}令和(\d+)年\s*(\d+)月/)).find(Boolean);
+    if (!m) return null;
+    const month = Number(m[2]);
+    /*
+      ★★**季節は「期日」の月で決める**（大分と同じ）。表題は春も秋も同じ形なので、
+      月を見ないと**秋の紙を春として読む**（そのまま出すと画面に別の大会が並ぶ）。
+    */
+    if (month < 3 || month > 6) return null;
+    return { year: 2018 + Number(m[1]) };
+  },
+
+  /** 春季のやぐら表を1枚読む。**組めなければ null**（＝この紙ではない） */
+  readSpringSheet(raw, year) {
+    /*
+      ★**スロット番号の列を紙から探す**（秋のような決め打ちにしない）。
+      **2025と2026で座標がまるごと違う**（左のスロット列は 121〜123 と 104〜106、
+      右は 462 と 482）ので、決め打ちだと片方の紙しか読めない。
+      ★**2桁の数字は1桁より左端が出る**ので、列をまとめる幅は 5 で取る。
+    */
+    const cols = new Map();
+    for (const l of raw.lines) {
+      for (const i of l.items) {
+        const t = i.text.trim();
+        if (!/^\d{1,2}$/.test(t)) continue;
+        const k = [...cols.keys()].find((v) => Math.abs(v - i.x) <= 5) ?? i.x;
+        if (!cols.has(k)) cols.set(k, []);
+        cols.get(k).push({ y: l.y, v: Number(t), x: i.x });
+      }
+    }
+    /*
+      ★**上から順に1ずつ増える「並び」を取る**（列の全部が連番であることは求めない）。
+
+      ★★**列の下のほうに日程表の数字が入り込む。** 2025春の右のスロット列（x≒462）は
+      `24,25,…,45` のあとに **`20` と `8`** が続く ——
+      日程表の見出し（`日程 … 20 21`）と月日の行（`… 8 9`）が同じ x に来るためで、
+      **列ぜんぶに連番を求めると、この紙は1試合も出せない**（実際に落ちた）。
+      ★**スロットは上から読むので、切れたところから下は見なくてよい。**
+      ★**足りない番号があれば並びはそこで切れる**ので、
+      左右の対応（右の先頭＝左の枚数＋1）と下の検算がその取りこぼしを捕まえる。
+    */
+    const runs = [...cols.entries()]
+      .map(([x, list]) => {
+        const sorted = list.sort((a, b) => b.y - a.y);
+        let n = 1;
+        while (n < sorted.length && sorted[n].v === sorted[0].v + n) n++;
+        return { x, list: sorted.slice(0, n), from: sorted[0].v };
+      })
+      .filter((c) => c.list.length >= 8);
+    const left = runs.find((c) => c.from === 1);
+    const right = left ? runs.find((c) => c.from === left.list.length + 1) : null;
+    if (!left || !right) {
+      console.log(
+        "  ⚠️ 宮崎(春): スロット番号の列（左は1から、右はその続き）が見つからない。" +
+          "紙の形が変わった可能性がある。1試合も出さない",
+      );
+      return [];
+    }
+    const leftX = left.list[0].x;
+    const rightX = right.list[0].x;
+
+    /*
+      ★**紙の下半分（開始時刻の凡例と日程表）を行ごと落とす**（夏・秋と同じ理由で、
+      日程表の列は回戦の帯と同じ x に来るので範囲では切り分けられない）。
+      ★**落とす前に日程表を読んでおく**（そこが検算材料）。
+    */
+    const gaps = left.list.slice(1).map((s, i) => left.list[i].y - s.y);
+    const pitch = [...gaps].sort((a, b) => a - b)[Math.floor(gaps.length / 2)];
+    const floor = left.list.at(-1).y - pitch * 0.5;
+    const scheduled = this.springScheduleGames(raw, floor);
+    /*
+      ★★**中央の縦書き「（2季ぶり14回目）」を列ごと落とす**（2026-08-21）。
+
+      ★**この数字が準々決勝の帯に混ざる。** 2025春は中央の注記が **x=263**、
+      左半分のいちばん深い帯が **x=251** で、**12ポイントしか離れていない。**
+      帯をまとめる幅は「回戦の間隔の0.45倍」（＝12.6）なので**まとめられ**、
+      準々決勝が「数字6個（必要4個）」になって組み立てが止まった。
+
+      ★**夏・秋は `hitSpan` がたまたま落としていた**（注記がスロット1.7〜4.1に来て
+      枝の張る範囲の外に出る）。★**2025春は注記が枝の内側に入る**ので効かない。
+      ★**幅を詰めて逃げないこと** —— 本物の帯も6ポイントこぼれる紙があり、
+      12との差が小さすぎて歯止めにならない。**注記そのものを落とす。**
+
+      ★**文字で消すのではなく列ごと落とす**（山口の秋季と同じ道具）。
+      **校名の列は「◯季ぶり◯回目」の形にならない**ので巻き込まない。
+
+      ★★**日程表を落としてから列を作ること。** 縦書きの列は「同じ x の文字をつなぐ」ので、
+      **紙のいちばん下の日程表の升目が同じ列に入る** ——
+      切る前は `（2季ぶり14回目）6火22×○×` になり、**形が合わずに1件も落ちなかった**
+      （沖縄で凡例が校名に吸われたのと同じ、「下端が列に入る」たぐいの罠）。
+    */
+    const cropped = stripVerticalNotes(
+      { page: raw.page, lines: raw.lines.filter((l) => l.y > floor) },
+      { patterns: [/^[（(][0-9０-９]+[季年]ぶり[0-9０-９]+回目[）)]$/] },
+    );
+
+    /*
+      ★★**3位決定戦のラベルより下を、中央の走査から外す**（上の説明を参照）。
+      ★**断片の割れ方が年で違う**ので、**中央の行をつないでから「3位」を探す。**
+    */
+    const centerFloor = this.thirdPlaceLabelY(cropped);
+    if (centerFloor === null) {
+      console.log(
+        "  ⚠️ 宮崎(春): 中央に3位決定戦のラベルが見つからない。" +
+          "決勝と取り違えるおそれがあるので1試合も出さない",
+      );
+      return [];
+    }
+    /*
+      ★**優勝校は刷ってある年と無い年がある**（2025はある／2026は無い）。
+      **無ければ検算を飛ばすが、飛ばしたことは必ずログに出す**
+      （「通った」と「していない」が見分けられなくなるため）。
+    */
+    const champion = this.springChampionFromCenter(cropped, centerFloor);
+
+    /*
+      ★★**ラベルの行の「中央の断片」を落としてから組み立てる**（2026-08-21）。
+
+      2025春のラベルは `3`(x=282) と `位`(x=293) の2断片で、
+      ★**`3` が左半分の準決勝の帯（x=279）に3ポイントしか離れずに並ぶ。**
+      そのまま渡すと準決勝が「数字3個（必要2個）」になって組み立てが止まった。
+      （2026春は `【3位決定戦】` が1断片なので数字にならず、ここは通っていた。）
+
+      ★**範囲（`ranges`）では切れない** —— 279 を入れて 282 を外す境目は
+      3ポイントしか無く、紙が少し伸び縮みしただけで逆になる。
+      ★**行の中央だけを落とす**（沖縄の凡例・山口の「◯◯会場」と同じ「行で落とす」）。
+      ★**行ごと落とさないこと** —— この行には左右の校名とスロット番号も載っている。
+      ★**中央には決勝も3位決定戦のスコアも無い**（どちらも別の行）ので、巻き込まない。
+    */
+    const sheet = {
+      page: cropped.page,
+      lines: cropped.lines.map((l) => {
+        if (l.y !== centerFloor) return l;
+        const items = l.items.filter((i) => !(i.x > 255 && i.x < 335));
+        return { ...l, items, text: items.map((i) => i.text).join("\t") };
+      }),
+    };
+
+    const games = readTwoColumnBracket(sheet, {
+      district: "宮崎",
+      titlePattern: /第\d+回九州地区高等学校野球大会宮崎県予選/,
+      // ★回数は九州大会の通し番号。年は紙の期日から読んである
+      yearOf: () => year,
+      /*
+        ★**左右の境目。** 2025は左の準決勝 279／決勝 290-297／右の準決勝 306、
+        2026は左の準決勝 257／決勝 287-303／右の準決勝 331。
+        **決勝の2つをまたぎ、準決勝はまたがない**幅は両年で (290, 297)。
+      */
+      half: 294,
+      rowTolerance: 3,
+      nameOrder: ["asc", "desc"],
+      season: "spring",
+      // ★**枝に日付が1つも書かれていない**（日程表は下に別にある）。推測で埋めない
+      hasDates: false,
+      finalAt: "innermost",
+      centerFloor,
+      ...(champion ? { verify: { champion } } : {}),
+      // ★**スコアは連結線の両端に置かれる**（夏・秋と同じ）
+      hitSpan: true,
+      // 中央の縦書き「（16季ぶり2回目）」の「回」が離れたスコアを消さないように
+      inningMarkGap: 30,
+      /*
+        ★**シード記号（☆）の列を範囲ごと外し、中央も外す。**
+        ★**座標はスロット列からの相対で取る**（2025と2026で紙がまるごとずれている）。
+          2025 … ☆ 51 ／ 校名 61〜116 ／ スロット 121 ／ 回戦 …279 ‖ 306… ／ スロット 462 ／ 校名 474〜529 ／ ☆ 532
+          2026 … ☆ 31 ／ 校名 42〜99 ／ スロット 104 ／ 回戦 …257 ‖ 331… ／ スロット 482 ／ 校名 495〜553 ／ ☆ 556
+        ★**右端は「いちばん右の校名の断片」より外**（縦に1文字ずつ割れた校名がある）
+        **かつ ☆ より内**に取る。スロット列 +65 が両年でその間に入る。
+      */
+      ranges: [
+        [leftX - 66, leftX + 163],
+        [305, rightX + 65],
+      ],
+      cleanName: (s) => s.replace(/\s+/g, ""),
+    });
+    if (!games?.length) return games;
+
+    /*
+      ---- ★★日程表との突き合わせ ----
+      **枝とは別の場所から来る事実**なので、優勝校が刷られていない年でも
+      「スロットを丸ごと読み落とした」「余分に組んだ」を止められる。
+    */
+    if (scheduled === null) {
+      console.log("  ⚠️ 宮崎(春): 日程表の試合数が読めない。検算できないので1試合も出さない");
+      return [];
+    }
+    // 3位決定戦は組み立てない（出さない）が、日程表には入っている
+    const expected = games.length + 1;
+    if (scheduled !== expected) {
+      console.log(
+        `  ⚠️ 宮崎(春): 日程表の試合数は ${scheduled} 件だが、` +
+          `組み立て ${games.length} ＋ 3位決定戦1 ＝ ${expected} 件。1試合も出さない`,
+      );
+      return [];
+    }
+    /*
+      ---- ★★3位決定戦の出場校との突き合わせ ----
+
+      ★**ラベルの下に、3位決定戦の両校名が縦書きで刷ってある**
+      （2026は `小林西` と `宮崎学園`、2025は `富島` と `都城`）。
+      **これは準決勝で負けた2校**なので、組み立てた準決勝と突き合わせられる。
+
+      ★★**枝とは別の場所から来る事実**で、しかも**準決勝の相手が違えば必ず食い違う** ——
+      石川で通ってしまった「構造は合うのに対戦相手が違う」を、
+      **優勝校が刷られていない年でも**止められる。
+
+      ★**読めなければ飛ばす**（校名が2つ揃って読めたときだけ検算する）。
+      **飛ばしたことはログに出す。**
+      ★**読めたのに合わなければ落とす**（1試合も出さない）。
+    */
+    const printed = this.springThirdPlaceTeams(cropped, centerFloor);
+    const semis = games.filter((g) => g.round === "準決勝");
+    const losers = semis.flatMap((g) => g.teams.filter((t) => !t.won).map((t) => t.display));
+    let thirdPlaceNote = "★**3位決定戦の出場校が読めず未検算**";
+    if (printed && semis.length === 2 && losers.length === 2) {
+      /*
+        ★**完全一致を求める。** どちらも同じ紙の同じ書き方なので略し方は揃う。
+        ★**部分一致で緩めないこと** —— 2025春の表には `都城` と `都城東` が
+        どちらも出ており、**含む／含まれるで比べると取り違える。**
+      */
+      const a = [...printed].sort();
+      const b = [...losers].sort();
+      if (a[0] !== b[0] || a[1] !== b[1]) {
+        console.log(
+          `  ⚠️ 宮崎(春): 3位決定戦の出場校は紙では「${printed.join("・")}」だが、` +
+            `準決勝で負けたのは「${losers.join("・")}」。1試合も出さない`,
+        );
+        return [];
+      }
+      thirdPlaceNote = `3位決定戦の「${printed.join("・")}」＝準決勝の敗者とも一致`;
+    }
+    console.log(
+      `  （宮崎(春): 日程表の ${scheduled} 試合と一致 ／ ` +
+        (champion ? `優勝校「${champion}」とも一致` : "★**優勝校は紙に無く未検算**") +
+        ` ／ ${thirdPlaceNote}）`,
+    );
+    return games;
+  },
+
+  /**
+   * ★**3位決定戦の両校名を読む**（ラベルの下に縦書きで刷ってある）。
+   *
+   *   2026 … x≒278 `小 林 西` ／ x≒308 `宮 崎 学 園`
+   *   2025 … x≒281 `富 島`   ／ x≒302 `都 城`
+   *
+   * ★**列の幅は3で取る。** 球場の凡例（`サ…ｻﾝﾏﾘﾝｽﾀｼﾞｱﾑ`）が
+   * 2025では校名の5.6ポイント隣にあり、5で取ると巻き込む。
+   * ★**数字（3位決定戦のスコア）と凡例は形で落ちる**
+   * （スコアは1文字、凡例は `…` を含んで長い）。
+   *
+   * @returns 校名2つ / null（2つ揃って読めなかった。**検算は飛ばす**）
+   */
+  springThirdPlaceTeams(raw, centerFloor) {
+    const items = raw.lines
+      .flatMap((l) => l.items.map((i) => ({ x: i.x, y: l.y, t: i.text.trim() })))
+      .filter((i) => i.x > 255 && i.x < 335 && i.y < centerFloor);
+    const cols = new Map();
+    for (const i of items) {
+      const k = [...cols.keys()].find((v) => Math.abs(v - i.x) <= 3) ?? i.x;
+      if (!cols.has(k)) cols.set(k, []);
+      cols.get(k).push(i);
+    }
+    const names = [];
+    for (const col of cols.values()) {
+      const s = col.sort((a, b) => b.y - a.y).map((i) => i.t).join("");
+      if (/^[^\d…]{2,10}$/.test(s)) names.push(s);
+    }
+    return names.length === 2 ? names : null;
+  },
+
+  /**
+   * ★**紙の下の日程表から、球場ごとの試合数の合計を読む**（春季の検算材料）。
+   *
+   *   試 ｻﾝﾏﾘﾝｽﾀｼﾞｱﾑ  3 3 2 3 3 休 2 2 休 予 1 2 × × × × 2 2 ×
+   *   合 ｱｲﾋﾞｰｽﾀｼﾞｱﾑ  2 3 2 3 3 休 2 2 休 予 1 予 × × × × × × ×
+   *
+   * ★**球場名のある行だけを数える。** 見出し（`日程` `月日`）にも
+   * 1〜21 や 20,21,22… と数字が並ぶので、行を選ばずに数えると桁違いになる。
+   * ★**`予`（予備日）`休``×` は数字ではないので自然に落ちる。**
+   *
+   * @param floor これより下が日程表（やぐら表の切り落とし位置）
+   * @returns 合計 / null（球場名のある行が1つも無い）
+   */
+  springScheduleGames(raw, floor) {
+    let total = 0;
+    let rows = 0;
+    for (const l of raw.lines) {
+      if (l.y > floor) continue;
+      /*
+        ★**半角カナで刷られている年がある**（2026は `ｻ ﾝ ﾏ ﾘ ﾝ ｽ ﾀ ｼ ﾞ ｱ ﾑ` と
+        1文字ずつ別の断片、2025は `ｻﾝﾏﾘﾝｽﾀｼﾞｱﾑ` で1断片）。
+        **区切りを外してから NFKC** にしないと濁点が分かれたままになる。
+      */
+      const label = l.items.map((i) => i.text).join("").replace(/\s/g, "").normalize("NFKC");
+      if (!/スタジアム|球場|ドーム|グラウンド|パーク/.test(label)) continue;
+      rows++;
+      for (const i of l.items) {
+        const t = i.text.trim();
+        if (/^\d{1,2}$/.test(t)) total += Number(t);
+      }
+    }
+    return rows ? total : null;
+  },
+
+  /**
+   * ★**中央の「3位決定戦」のラベルの y を返す**（`centerFloor`。春季）。
+   *
+   * ★**断片の割れ方が年で違う**（2026は `【3位決定戦】` の1断片、
+   * 2025は `3` と `位` の2断片）ので、**中央の行の断片をつないでから探す。**
+   * ★**文字を消すのではなく、行の y を境目として使うだけ**にしてある。
+   */
+  thirdPlaceLabelY(raw) {
+    for (const l of raw.lines) {
+      const mid = l.items.filter((i) => i.x > 255 && i.x < 335);
+      if (!mid.length) continue;
+      if (/3\s*位/.test(normalize(mid.map((i) => i.text).join("")))) return l.y;
+    }
+    return null;
+  },
+
+  /**
+   * ★**中央の縦書きから優勝校を読む**（春季。刷ってある年だけ）。
+   *
+   *   x≒279 … 優 勝 宮 崎 商 業 高 等 学 校   ← 2025春
+   *   x≒265 … （ 2 季 ぶ り 14 回 目 ）
+   *
+   * ★**秋の `championFromCenter` は使えない。** あちらは `優勝` が1つの断片に
+   * なっている紙で、春は **`優` と `勝` が縦に別々**（1文字ずつ）。
+   * ★**列をつないで「優勝◯◯高等学校」で始まる列**を選ぶ。
+   *
+   * @param centerFloor これより下（3位決定戦の区画）は見ない
+   */
+  springChampionFromCenter(raw, centerFloor) {
+    const items = raw.lines
+      .flatMap((l) => l.items.map((i) => ({ x: i.x, y: l.y, t: i.text.trim() })))
+      .filter((i) => i.x > 255 && i.x < 335 && i.y > centerFloor);
+    const cols = new Map();
+    for (const i of items) {
+      /*
+        ★**列の幅は 5 で取る。** 「優勝」（x=279.2）と校名（x=282.4）で
+        3ポイントずれる紙がある（字の大きさが違うため）。
+      */
+      const k = [...cols.keys()].find((v) => Math.abs(v - i.x) <= 5) ?? i.x;
+      if (!cols.has(k)) cols.set(k, []);
+      cols.get(k).push(i);
+    }
+    for (const col of cols.values()) {
+      const s = col.sort((a, b) => b.y - a.y).map((i) => i.t).join("");
+      /*
+        ★**末尾で止めないこと**（秋と同じ）。列には準決勝のスコアなど
+        別の断片も混ざる。**先頭からの一致だけを見て、校名の長さで歯止めをかける。**
+      */
+      const m = s.match(/^優\s*勝(.{2,10}?)(?:高等学校|高校)/);
+      if (m) return m[1];
+    }
+    return null;
   },
 
   /**

@@ -12,7 +12,11 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-white">
       <Container className="flex h-16 items-center gap-3 lg:h-[4.5rem] lg:gap-6">
-        <Logo withTagline className="shrink-0" />
+        {/*
+          ★**ヘッダーではキャッチコピーを出さない**（2026-08-21 に運営者の判断）。
+          ロゴマークだけにする。フッターでは今までどおり出している。
+        */}
+        <Logo className="shrink-0" />
 
         <div className="hidden lg:block">
           <NavLinks />

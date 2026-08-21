@@ -74,8 +74,13 @@ export const PHENOMENON = {
  * 同じものが2つ並んでいた。`/prefectures` はURLを壊さないために
  * 残してあるが、ナビからは外し `/schools` の中から辿れるようにしている。
  */
+/**
+ * グローバルナビ。**ヘッダー（PC・モバイルのメニュー）とフッターが同じ一覧を見る。**
+ *
+ * ★**「ニュース」は 2026-08-21 に運営者の判断で外した**（`/news` 自体は残っている）。
+ * 記事が0件のうちは入口を出さない。**戻すときはここに1行足すだけ。**
+ */
 export const NAV = [
-  { href: "/news", label: "ニュース" },
   { href: "/schools", label: "公立高校を探す" },
   { href: "/rankings", label: "記録" },
   { href: "/phenomenon", label: PHENOMENON.label },

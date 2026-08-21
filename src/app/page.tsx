@@ -4,7 +4,6 @@ import { BookOpen, School, Search, Star } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Hero } from "@/components/layout/Hero";
 import { SectionHeading } from "@/components/common/SectionHeading";
-import { XFollowCard } from "@/components/common/XFollowCard";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { LiveResultsCard } from "@/components/results/LiveResultsCard";
 import { RegionalResultsCard } from "@/components/results/RegionalResultsCard";
@@ -329,7 +328,11 @@ export default async function HomePage() {
             </ul>
           </section>
 
-          <XFollowCard />
+          {/*
+            ★**Xのフォロー枠は 2026-08-21 に外した**（運営者の判断）。
+            アカウントを追って作るので、**まだ無いアカウントへ誘導しない。**
+            作ったら XFollowCard を戻すだけ（コンポーネントは残してある）。
+          */}
         </div>
       </Container>
 

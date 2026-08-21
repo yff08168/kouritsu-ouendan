@@ -86,6 +86,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
       "venue": "五十公野",
       "teams": [
         {
+          "display": "新潟青陵",
+          "score": 0,
+          "won": false,
+          "name": "新潟青陵",
+          "slug": null
+        },
+        {
+          "display": "日本文理",
+          "score": 10,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球新潟県大会（令和8年度春季）",
+      "round": "1回戦",
+      "venue": "五十公野",
+      "teams": [
+        {
           "display": "万代",
           "score": 1,
           "won": false,
@@ -1055,6 +1078,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
       "venue": "佐藤池",
       "teams": [
         {
+          "display": "新潟明訓",
+          "score": 5,
+          "won": true,
+          "name": "新潟明訓",
+          "slug": null
+        },
+        {
+          "display": "帝京長岡",
+          "score": 4,
+          "won": false,
+          "name": "帝京長岡",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-04",
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球新潟県大会（令和8年度春季）",
+      "round": "3回戦",
+      "venue": "佐藤池",
+      "teams": [
+        {
           "display": "新潟商",
           "score": 3,
           "won": true,
@@ -1098,6 +1144,52 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
       "season": "spring",
       "tournament": "第154回北信越地区高等学校野球新潟県大会（令和8年度春季）",
       "round": "3回戦",
+      "venue": "五十公野",
+      "teams": [
+        {
+          "display": "関根学園",
+          "score": 1,
+          "won": false,
+          "name": "関根学園",
+          "slug": null
+        },
+        {
+          "display": "加茂暁星",
+          "score": 8,
+          "won": true,
+          "name": "加茂暁星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球新潟県大会（令和8年度春季）",
+      "round": "3回戦",
+      "venue": "三条パール",
+      "teams": [
+        {
+          "display": "新潟産大附",
+          "score": 8,
+          "won": true,
+          "name": "新潟産大附",
+          "slug": null
+        },
+        {
+          "display": "開志学園",
+          "score": 2,
+          "won": false,
+          "name": "開志学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球新潟県大会（令和8年度春季）",
+      "round": "3回戦",
       "venue": "三条パール",
       "teams": [
         {
@@ -1124,6 +1216,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
       "venue": "悠久山",
       "teams": [
         {
+          "display": "北越",
+          "score": 5,
+          "won": false,
+          "name": "北越",
+          "slug": null
+        },
+        {
+          "display": "中越",
+          "score": 6,
+          "won": true,
+          "name": "中越",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球新潟県大会（令和8年度春季）",
+      "round": "3回戦",
+      "venue": "悠久山",
+      "teams": [
+        {
           "display": "長岡大手",
           "score": 3,
           "won": false,
@@ -1134,6 +1249,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
           "display": "新発田中央",
           "score": 10,
           "won": true,
+          "name": "新発田中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-06",
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球新潟県大会（令和8年度春季）",
+      "round": "準々決勝",
+      "venue": "五十公野",
+      "teams": [
+        {
+          "display": "中越",
+          "score": 10,
+          "won": true,
+          "name": "中越",
+          "slug": null
+        },
+        {
+          "display": "新発田中央",
+          "score": 3,
+          "won": false,
           "name": "新発田中央",
           "slug": null
         }
@@ -1170,6 +1308,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
       "venue": "悠久山",
       "teams": [
         {
+          "display": "加茂暁星",
+          "score": 4,
+          "won": true,
+          "name": "加茂暁星",
+          "slug": null
+        },
+        {
+          "display": "日本文理",
+          "score": 0,
+          "won": false,
+          "name": "日本文理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-06",
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球新潟県大会（令和8年度春季）",
+      "round": "準々決勝",
+      "venue": "悠久山",
+      "teams": [
+        {
           "display": "新潟産大附",
           "score": 11,
           "won": true,
@@ -1182,6 +1343,75 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
           "won": false,
           "name": "新潟県央工業高校",
           "slug": "niigatakenokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-10",
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球新潟県大会（令和8年度春季）",
+      "round": "準決勝",
+      "venue": "悠久山",
+      "teams": [
+        {
+          "display": "加茂暁星",
+          "score": 2,
+          "won": false,
+          "name": "加茂暁星",
+          "slug": null
+        },
+        {
+          "display": "新潟産業附",
+          "score": 6,
+          "won": true,
+          "name": "新潟産業附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-10",
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球新潟県大会（令和8年度春季）",
+      "round": "準決勝",
+      "venue": "悠久山",
+      "teams": [
+        {
+          "display": "新潟明訓",
+          "score": 16,
+          "won": true,
+          "name": "新潟明訓",
+          "slug": null
+        },
+        {
+          "display": "中越",
+          "score": 0,
+          "won": false,
+          "name": "中越",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-11",
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球新潟県大会（令和8年度春季）",
+      "round": "決勝",
+      "venue": "悠久山",
+      "teams": [
+        {
+          "display": "新潟産大附",
+          "score": 4,
+          "won": false,
+          "name": "新潟産大附",
+          "slug": null
+        },
+        {
+          "display": "新潟明訓",
+          "score": 5,
+          "won": true,
+          "name": "新潟明訓",
+          "slug": null
         }
       ]
     },
@@ -1285,6 +1515,30 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
       "venue": "五十公野",
       "teams": [
         {
+          "display": "柏崎常盤･総合",
+          "score": 2,
+          "won": false,
+          "name": "柏崎常盤･総合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "日本文理",
+          "score": 14,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "2回戦",
+      "venue": "五十公野",
+      "teams": [
+        {
           "display": "新潟青陵",
           "score": 1,
           "won": false,
@@ -1297,6 +1551,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
           "won": true,
           "name": "新発田農業高校",
           "slug": "shibatanogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "2回戦",
+      "venue": "悠久山",
+      "teams": [
+        {
+          "display": "東京学館新潟",
+          "score": 4,
+          "won": true,
+          "name": "東京学館新潟",
+          "slug": null
+        },
+        {
+          "display": "中越",
+          "score": 1,
+          "won": false,
+          "name": "中越",
+          "slug": null
         }
       ]
     },
@@ -1347,6 +1624,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "2回戦",
+      "venue": "佐藤池",
+      "teams": [
+        {
+          "display": "敬和学園",
+          "score": 4,
+          "won": false,
+          "name": "敬和学園",
+          "slug": null
+        },
+        {
+          "display": "北村上中条碧",
+          "score": 7,
+          "won": true,
+          "name": "北村上中条碧",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-11",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権新潟大会",
@@ -1366,6 +1666,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
           "won": true,
           "name": "新津工業高校",
           "slug": "niitsukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "2回戦",
+      "venue": "ハードオフ",
+      "teams": [
+        {
+          "display": "開志学園",
+          "score": 9,
+          "won": true,
+          "name": "開志学園",
+          "slug": null
+        },
+        {
+          "display": "新井高商白嶺",
+          "score": 0,
+          "won": false,
+          "name": "新井高商白嶺",
+          "slug": null
         }
       ]
     },
@@ -1976,6 +2299,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
       "venue": "悠久山",
       "teams": [
         {
+          "display": "東京学館新潟",
+          "score": 11,
+          "won": true,
+          "name": "東京学館新潟",
+          "slug": null
+        },
+        {
+          "display": "上越",
+          "score": 3,
+          "won": false,
+          "name": "上越",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "3回戦",
+      "venue": "悠久山",
+      "teams": [
+        {
           "display": "新潟西",
           "score": 1,
           "won": false,
@@ -1988,6 +2334,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
           "won": true,
           "name": "五泉高校",
           "slug": "gosen"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "3回戦",
+      "venue": "佐藤池",
+      "teams": [
+        {
+          "display": "新潟産大附",
+          "score": 29,
+          "won": true,
+          "name": "新潟産大附",
+          "slug": null
+        },
+        {
+          "display": "北村上中条碧",
+          "score": 0,
+          "won": false,
+          "name": "北村上中条碧",
+          "slug": null
         }
       ]
     },
@@ -2114,6 +2483,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
       "venue": "悠久山",
       "teams": [
         {
+          "display": "帝京長岡",
+          "score": 14,
+          "won": true,
+          "name": "帝京長岡",
+          "slug": null
+        },
+        {
+          "display": "新潟第一",
+          "score": 2,
+          "won": false,
+          "name": "新潟第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "3回戦",
+      "venue": "悠久山",
+      "teams": [
+        {
           "display": "佐渡総合",
           "score": 2,
           "won": false,
@@ -2183,6 +2575,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
       "venue": "五十公野",
       "teams": [
         {
+          "display": "開志学園",
+          "score": 9,
+          "won": false,
+          "name": "開志学園",
+          "slug": null
+        },
+        {
+          "display": "新潟明訓",
+          "score": 10,
+          "won": true,
+          "name": "新潟明訓",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "4回戦",
+      "venue": "五十公野",
+      "teams": [
+        {
           "display": "日本文理",
           "score": 8,
           "won": true,
@@ -2195,6 +2610,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
           "won": false,
           "name": "六日町高校",
           "slug": "muikamachi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "4回戦",
+      "venue": "五十公野",
+      "teams": [
+        {
+          "display": "加茂暁星",
+          "score": 2,
+          "won": true,
+          "name": "加茂暁星",
+          "slug": null
+        },
+        {
+          "display": "関根学園",
+          "score": 1,
+          "won": false,
+          "name": "関根学園",
+          "slug": null
         }
       ]
     },
@@ -2309,6 +2747,167 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
           "score": 8,
           "won": true,
           "name": "北越",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "準々決勝",
+      "venue": "五十公野",
+      "teams": [
+        {
+          "display": "新潟明訓",
+          "score": 8,
+          "won": true,
+          "name": "新潟明訓",
+          "slug": null
+        },
+        {
+          "display": "加茂暁星",
+          "score": 3,
+          "won": false,
+          "name": "加茂暁星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "準々決勝",
+      "venue": "五十公野",
+      "teams": [
+        {
+          "display": "北越",
+          "score": 2,
+          "won": false,
+          "name": "北越",
+          "slug": null
+        },
+        {
+          "display": "日本文理",
+          "score": 7,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "準々決勝",
+      "venue": "悠久山",
+      "teams": [
+        {
+          "display": "新潟産大附",
+          "score": 7,
+          "won": true,
+          "name": "新潟産大附",
+          "slug": null
+        },
+        {
+          "display": "新発田中央",
+          "score": 0,
+          "won": false,
+          "name": "新発田中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "準々決勝",
+      "venue": "悠久山",
+      "teams": [
+        {
+          "display": "帝京長岡",
+          "score": 7,
+          "won": true,
+          "name": "帝京長岡",
+          "slug": null
+        },
+        {
+          "display": "東京学館新潟",
+          "score": 1,
+          "won": false,
+          "name": "東京学館新潟",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "準決勝",
+      "venue": "ハードオフ",
+      "teams": [
+        {
+          "display": "新潟明訓",
+          "score": 2,
+          "won": false,
+          "name": "新潟明訓",
+          "slug": null
+        },
+        {
+          "display": "日本文理",
+          "score": 8,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "準決勝",
+      "venue": "ハードオフ",
+      "teams": [
+        {
+          "display": "帝京長岡",
+          "score": 8,
+          "won": true,
+          "name": "帝京長岡",
+          "slug": null
+        },
+        {
+          "display": "新潟産大附",
+          "score": 1,
+          "won": false,
+          "name": "新潟産大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権新潟大会",
+      "round": "決勝",
+      "venue": "ハードオフ",
+      "teams": [
+        {
+          "display": "帝京長岡",
+          "score": 2,
+          "won": false,
+          "name": "帝京長岡",
+          "slug": null
+        },
+        {
+          "display": "日本文理",
+          "score": 8,
+          "won": true,
+          "name": "日本文理",
           "slug": null
         }
       ]
@@ -2848,6 +3447,52 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
       "season": "autumn",
       "tournament": "第155回北信越地区高等学校野球新潟県大会（令和8年度秋季）",
       "round": "1回戦",
+      "venue": "三条パール",
+      "teams": [
+        {
+          "display": "新潟青陵",
+          "score": 1,
+          "won": false,
+          "name": "新潟青陵",
+          "slug": null
+        },
+        {
+          "display": "北越",
+          "score": 6,
+          "won": true,
+          "name": "北越",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "第155回北信越地区高等学校野球新潟県大会（令和8年度秋季）",
+      "round": "1回戦",
+      "venue": "悠久山",
+      "teams": [
+        {
+          "display": "中越",
+          "score": 10,
+          "won": true,
+          "name": "中越",
+          "slug": null
+        },
+        {
+          "display": "新潟産大附",
+          "score": 2,
+          "won": false,
+          "name": "新潟産大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "第155回北信越地区高等学校野球新潟県大会（令和8年度秋季）",
+      "round": "1回戦",
       "venue": "悠久山",
       "teams": [
         {
@@ -2990,6 +3635,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
       "venue": "五十公野",
       "teams": [
         {
+          "display": "日本文理",
+          "score": 4,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        },
+        {
+          "display": "加茂暁星",
+          "score": 3,
+          "won": false,
+          "name": "加茂暁星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "第155回北信越地区高等学校野球新潟県大会（令和8年度秋季）",
+      "round": "2回戦",
+      "venue": "五十公野",
+      "teams": [
+        {
           "display": "新発田農",
           "score": 4,
           "won": false,
@@ -3001,6 +3669,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
           "score": 10,
           "won": true,
           "name": "開志学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "第155回北信越地区高等学校野球新潟県大会（令和8年度秋季）",
+      "round": "2回戦",
+      "venue": "三条パール",
+      "teams": [
+        {
+          "display": "新潟明訓",
+          "score": 10,
+          "won": true,
+          "name": "新潟明訓",
+          "slug": null
+        },
+        {
+          "display": "新潟第一",
+          "score": 0,
+          "won": false,
+          "name": "新潟第一",
           "slug": null
         }
       ]
@@ -3171,6 +3862,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
       "season": "autumn",
       "tournament": "第155回北信越地区高等学校野球新潟県大会（令和8年度秋季）",
       "round": "2回戦",
+      "venue": "三条パール",
+      "teams": [
+        {
+          "display": "東京学館新潟",
+          "score": 4,
+          "won": true,
+          "name": "東京学館新潟",
+          "slug": null
+        },
+        {
+          "display": "北越",
+          "score": 1,
+          "won": false,
+          "name": "北越",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "第155回北信越地区高等学校野球新潟県大会（令和8年度秋季）",
+      "round": "2回戦",
       "venue": "悠久山",
       "teams": [
         {
@@ -3232,6 +3946,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
           "won": false,
           "name": "糸魚川高校",
           "slug": "itoigawa"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "第155回北信越地区高等学校野球新潟県大会（令和8年度秋季）",
+      "round": "2回戦",
+      "venue": "佐藤池",
+      "teams": [
+        {
+          "display": "関根学園",
+          "score": 3,
+          "won": false,
+          "name": "関根学園",
+          "slug": null
+        },
+        {
+          "display": "帝京長岡",
+          "score": 4,
+          "won": true,
+          "name": "帝京長岡",
+          "slug": null
         }
       ]
     },
@@ -3420,6 +4157,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2025-09-19",
+      "season": "autumn",
+      "tournament": "第155回北信越地区高等学校野球新潟県大会（令和8年度秋季）",
+      "round": "3回戦",
+      "venue": "佐藤池",
+      "teams": [
+        {
+          "display": "東京学館新潟",
+          "score": 0,
+          "won": false,
+          "name": "東京学館新潟",
+          "slug": null
+        },
+        {
+          "display": "帝京長岡",
+          "score": 9,
+          "won": true,
+          "name": "帝京長岡",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-20",
       "season": "autumn",
       "tournament": "第155回北信越地区高等学校野球新潟県大会（令和8年度秋季）",
@@ -3439,6 +4199,29 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
           "won": false,
           "name": "六日町高校",
           "slug": "muikamachi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "第155回北信越地区高等学校野球新潟県大会（令和8年度秋季）",
+      "round": "準々決勝",
+      "venue": "三条パール",
+      "teams": [
+        {
+          "display": "新発田中央",
+          "score": 2,
+          "won": false,
+          "name": "新発田中央",
+          "slug": null
+        },
+        {
+          "display": "中越",
+          "score": 8,
+          "won": true,
+          "name": "中越",
+          "slug": null
         }
       ]
     },
@@ -3484,6 +4267,98 @@ export const REGIONAL_NIIGATA: RegionalDistrict = {
           "score": 8,
           "won": true,
           "name": "帝京長岡",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "season": "autumn",
+      "tournament": "第155回北信越地区高等学校野球新潟県大会（令和8年度秋季）",
+      "round": "準決勝",
+      "venue": "三条パール",
+      "teams": [
+        {
+          "display": "開志学園",
+          "score": 1,
+          "won": false,
+          "name": "開志学園",
+          "slug": null
+        },
+        {
+          "display": "中越",
+          "score": 5,
+          "won": true,
+          "name": "中越",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "season": "autumn",
+      "tournament": "第155回北信越地区高等学校野球新潟県大会（令和8年度秋季）",
+      "round": "準決勝",
+      "venue": "三条パール",
+      "teams": [
+        {
+          "display": "帝京長岡",
+          "score": 3,
+          "won": false,
+          "name": "帝京長岡",
+          "slug": null
+        },
+        {
+          "display": "日本文理",
+          "score": 10,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-24",
+      "season": "autumn",
+      "tournament": "第155回北信越地区高等学校野球新潟県大会（令和8年度秋季）",
+      "round": "代表決定戦",
+      "venue": "三条パール",
+      "teams": [
+        {
+          "display": "開志学園",
+          "score": 1,
+          "won": false,
+          "name": "開志学園",
+          "slug": null
+        },
+        {
+          "display": "帝京長岡",
+          "score": 8,
+          "won": true,
+          "name": "帝京長岡",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-24",
+      "season": "autumn",
+      "tournament": "第155回北信越地区高等学校野球新潟県大会（令和8年度秋季）",
+      "round": "決勝",
+      "venue": "三条パール",
+      "teams": [
+        {
+          "display": "中越",
+          "score": 8,
+          "won": false,
+          "name": "中越",
+          "slug": null
+        },
+        {
+          "display": "日本文理",
+          "score": 9,
+          "won": true,
+          "name": "日本文理",
           "slug": null
         }
       ]

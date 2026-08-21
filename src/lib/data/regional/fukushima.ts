@@ -33,6 +33,52 @@ export const REGIONAL_FUKUSHIMA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-05-24",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "決勝",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "聖光学院",
+          "score": 8,
+          "won": true,
+          "name": "聖光学院",
+          "slug": null
+        },
+        {
+          "display": "学法石川",
+          "score": 1,
+          "won": false,
+          "name": "学法石川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "準決勝",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "東日大昌平",
+          "score": 1,
+          "won": false,
+          "name": "東日大昌平",
+          "slug": null
+        },
+        {
+          "display": "学法石川",
+          "score": 4,
+          "won": true,
+          "name": "学法石川",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-05-23",
       "season": "spring",
       "tournament": "第78回春季東北地区高等学校野球福島県大会",
@@ -75,6 +121,29 @@ export const REGIONAL_FUKUSHIMA: RegionalDistrict = {
           "won": false,
           "name": "南会津高校",
           "slug": "minamiaizu"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "準々決勝",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "会津北嶺",
+          "score": 0,
+          "won": false,
+          "name": "会津北嶺",
+          "slug": null
+        },
+        {
+          "display": "聖光学院",
+          "score": 8,
+          "won": true,
+          "name": "聖光学院",
+          "slug": null
         }
       ]
     },
@@ -201,6 +270,29 @@ export const REGIONAL_FUKUSHIMA: RegionalDistrict = {
       "venue": "ポニーリーグNARAHASTADIUM",
       "teams": [
         {
+          "display": "東日大昌平",
+          "score": 8,
+          "won": true,
+          "name": "東日大昌平",
+          "slug": null
+        },
+        {
+          "display": "学法福島",
+          "score": 6,
+          "won": false,
+          "name": "学法福島",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "2回戦",
+      "venue": "ポニーリーグNARAHASTADIUM",
+      "teams": [
+        {
           "display": "若松商",
           "score": 4,
           "won": false,
@@ -236,6 +328,29 @@ export const REGIONAL_FUKUSHIMA: RegionalDistrict = {
           "won": false,
           "name": "磐城高校",
           "slug": "iwaki"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "2回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "帝京安積",
+          "score": 1,
+          "won": false,
+          "name": "帝京安積",
+          "slug": null
+        },
+        {
+          "display": "学法石川",
+          "score": 8,
+          "won": true,
+          "name": "学法石川",
+          "slug": null
         }
       ]
     },
@@ -516,6 +631,98 @@ export const REGIONAL_FUKUSHIMA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-05-15",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "1回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "帝京安積",
+          "score": 4,
+          "won": true,
+          "name": "帝京安積",
+          "slug": null
+        },
+        {
+          "display": "尚志",
+          "score": 3,
+          "won": false,
+          "name": "尚志",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "決勝",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "東日大昌平",
+          "score": 10,
+          "won": true,
+          "name": "東日大昌平",
+          "slug": null
+        },
+        {
+          "display": "学法石川",
+          "score": 7,
+          "won": false,
+          "name": "学法石川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "準決勝",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "東日大昌平",
+          "score": 3,
+          "won": true,
+          "name": "東日大昌平",
+          "slug": null
+        },
+        {
+          "display": "聖光学院",
+          "score": 2,
+          "won": false,
+          "name": "聖光学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "準決勝",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "学法石川",
+          "score": 6,
+          "won": true,
+          "name": "学法石川",
+          "slug": null
+        },
+        {
+          "display": "尚志",
+          "score": 0,
+          "won": false,
+          "name": "尚志",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-20",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権福島大会",
@@ -569,6 +776,29 @@ export const REGIONAL_FUKUSHIMA: RegionalDistrict = {
       "venue": "あづま球場",
       "teams": [
         {
+          "display": "会津北嶺",
+          "score": 2,
+          "won": false,
+          "name": "会津北嶺",
+          "slug": null
+        },
+        {
+          "display": "学法石川",
+          "score": 5,
+          "won": true,
+          "name": "学法石川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "準々決勝",
+      "venue": "あづま球場",
+      "teams": [
+        {
           "display": "尚志",
           "score": 14,
           "won": true,
@@ -581,6 +811,29 @@ export const REGIONAL_FUKUSHIMA: RegionalDistrict = {
           "won": false,
           "name": "安積黎明高校",
           "slug": "asakareimei"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "3回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "帝京安積",
+          "score": 0,
+          "won": false,
+          "name": "帝京安積",
+          "slug": null
+        },
+        {
+          "display": "聖光学院",
+          "score": 10,
+          "won": true,
+          "name": "聖光学院",
+          "slug": null
         }
       ]
     },
@@ -627,6 +880,29 @@ export const REGIONAL_FUKUSHIMA: RegionalDistrict = {
           "won": false,
           "name": "いわき光洋高校",
           "slug": "iwakikoyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "3回戦",
+      "venue": "あづま球場",
+      "teams": [
+        {
+          "display": "日大東北",
+          "score": 3,
+          "won": false,
+          "name": "日大東北",
+          "slug": null
+        },
+        {
+          "display": "尚志",
+          "score": 4,
+          "won": true,
+          "name": "尚志",
+          "slug": null
         }
       ]
     },
@@ -865,6 +1141,53 @@ export const REGIONAL_FUKUSHIMA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権福島大会",
       "round": "2回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "日大東北",
+          "score": 3,
+          "won": true,
+          "name": "日大東北",
+          "slug": null
+        },
+        {
+          "display": "学法福島",
+          "score": 1,
+          "won": false,
+          "name": "学法福島",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "2回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "帝京安積",
+          "score": 4,
+          "won": true,
+          "name": "帝京安積",
+          "slug": null
+        },
+        {
+          "display": "相馬連合",
+          "score": 3,
+          "won": false,
+          "name": "相馬連合",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "2回戦",
       "venue": "あづま球場",
       "teams": [
         {
@@ -1088,6 +1411,30 @@ export const REGIONAL_FUKUSHIMA: RegionalDistrict = {
           "won": false,
           "name": "福島工業高校",
           "slug": "fukushimakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "あづま球場",
+      "teams": [
+        {
+          "display": "福島成蹊",
+          "score": 23,
+          "won": true,
+          "name": "福島成蹊",
+          "slug": null
+        },
+        {
+          "display": "あぶくま柏鵬・石川",
+          "score": 0,
+          "won": false,
+          "name": "あぶくま柏鵬・石川",
+          "slug": null,
+          "combined": true
         }
       ]
     },

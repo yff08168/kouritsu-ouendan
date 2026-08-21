@@ -109,6 +109,29 @@ export const REGIONAL_SAGA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "北陵",
+          "score": 3,
+          "won": false,
+          "name": "北陵",
+          "slug": null
+        },
+        {
+          "display": "早稲田佐賀",
+          "score": 10,
+          "won": true,
+          "name": "早稲田佐賀",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球佐賀大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "神崎清明",
           "score": 0,
           "won": false,
@@ -397,6 +420,29 @@ export const REGIONAL_SAGA: RegionalDistrict = {
           "won": false,
           "name": "唐津東高校",
           "slug": "karatsuhigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-21",
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球佐賀大会",
+      "round": "2回戦",
+      "venue": "ブルースタジアム",
+      "teams": [
+        {
+          "display": "早稲田佐賀",
+          "score": 10,
+          "won": true,
+          "name": "早稲田佐賀",
+          "slug": null
+        },
+        {
+          "display": "龍谷",
+          "score": 0,
+          "won": false,
+          "name": "龍谷",
+          "slug": null
         }
       ]
     },
@@ -846,6 +892,29 @@ export const REGIONAL_SAGA: RegionalDistrict = {
       "venue": "さがみどりの森球場",
       "teams": [
         {
+          "display": "早稲田佐賀",
+          "score": 11,
+          "won": true,
+          "name": "早稲田佐賀",
+          "slug": null
+        },
+        {
+          "display": "龍谷",
+          "score": 4,
+          "won": false,
+          "name": "龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権佐賀大会",
+      "round": "準々決勝",
+      "venue": "さがみどりの森球場",
+      "teams": [
+        {
           "display": "佐賀商業",
           "score": 3,
           "won": true,
@@ -1076,6 +1145,29 @@ export const REGIONAL_SAGA: RegionalDistrict = {
       "venue": "さがみどりの森球場",
       "teams": [
         {
+          "display": "東明館",
+          "score": 4,
+          "won": false,
+          "name": "東明館",
+          "slug": null
+        },
+        {
+          "display": "早稲田佐賀",
+          "score": 5,
+          "won": true,
+          "name": "早稲田佐賀",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権佐賀大会",
+      "round": "2回戦",
+      "venue": "さがみどりの森球場",
+      "teams": [
+        {
           "display": "伊万里実業",
           "score": 0,
           "won": false,
@@ -1272,6 +1364,29 @@ export const REGIONAL_SAGA: RegionalDistrict = {
           "won": false,
           "name": "嬉野高校",
           "slug": "ureshino"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権佐賀大会",
+      "round": "2回戦",
+      "venue": "さがみどりの森球場",
+      "teams": [
+        {
+          "display": "佐賀学園",
+          "score": 1,
+          "won": false,
+          "name": "佐賀学園",
+          "slug": null
+        },
+        {
+          "display": "北陵",
+          "score": 7,
+          "won": true,
+          "name": "北陵",
+          "slug": null
         }
       ]
     },
@@ -1938,6 +2053,29 @@ export const REGIONAL_SAGA: RegionalDistrict = {
           "score": 1,
           "won": false,
           "name": "佐賀学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-22",
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球佐賀大会",
+      "round": "2回戦",
+      "venue": "みゆき球場",
+      "teams": [
+        {
+          "display": "敬徳",
+          "score": 1,
+          "won": false,
+          "name": "敬徳",
+          "slug": null
+        },
+        {
+          "display": "龍谷",
+          "score": 2,
+          "won": true,
+          "name": "龍谷",
           "slug": null
         }
       ]

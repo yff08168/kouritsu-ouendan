@@ -106,6 +106,30 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       "season": "spring",
       "tournament": "令和8年度 春季岡山県高等学校野球大会 地区予選",
       "round": "1回戦",
+      "venue": "明誠学院グラウンド",
+      "teams": [
+        {
+          "display": "岡山・吉備高原",
+          "score": 0,
+          "won": false,
+          "name": "岡山・吉備高原",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "明誠",
+          "score": 26,
+          "won": true,
+          "name": "明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度 春季岡山県高等学校野球大会 地区予選",
+      "round": "1回戦",
       "venue": "美咲エイコンスタジアム",
       "teams": [
         {
@@ -682,6 +706,29 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       "season": "spring",
       "tournament": "令和8年度 春季岡山県高等学校野球大会",
       "round": "1回戦",
+      "venue": "美咲エイコンスタジアム",
+      "teams": [
+        {
+          "display": "興譲館",
+          "score": 3,
+          "won": true,
+          "name": "興譲館",
+          "slug": null
+        },
+        {
+          "display": "商大附",
+          "score": 1,
+          "won": false,
+          "name": "商大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "令和8年度 春季岡山県高等学校野球大会",
+      "round": "1回戦",
       "venue": "倉敷市営球場",
       "teams": [
         {
@@ -697,6 +744,29 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
           "won": true,
           "name": "岡山朝日高校",
           "slug": "okayamaasahi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "令和8年度 春季岡山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "学芸館",
+          "score": 12,
+          "won": true,
+          "name": "学芸館",
+          "slug": null
+        },
+        {
+          "display": "翠松",
+          "score": 1,
+          "won": false,
+          "name": "翠松",
+          "slug": null
         }
       ]
     },
@@ -751,6 +821,29 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       "season": "spring",
       "tournament": "令和8年度 春季岡山県高等学校野球大会",
       "round": "1回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "方谷學舎",
+          "score": 4,
+          "won": true,
+          "name": "方谷學舎",
+          "slug": null
+        },
+        {
+          "display": "美作",
+          "score": 1,
+          "won": false,
+          "name": "美作",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "令和8年度 春季岡山県高等学校野球大会",
+      "round": "1回戦",
       "venue": "倉敷市営球場",
       "teams": [
         {
@@ -789,6 +882,29 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
           "won": false,
           "name": "岡山一宮高校",
           "slug": "okayamaichinomiya"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "令和8年度 春季岡山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "美咲エイコンスタジアム",
+      "teams": [
+        {
+          "display": "学芸館",
+          "score": 2,
+          "won": true,
+          "name": "学芸館",
+          "slug": null
+        },
+        {
+          "display": "関西",
+          "score": 1,
+          "won": false,
+          "name": "関西",
+          "slug": null
         }
       ]
     },
@@ -889,6 +1005,29 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       "season": "spring",
       "tournament": "令和8年度 春季岡山県高等学校野球大会",
       "round": "2回戦",
+      "venue": "美咲エイコンスタジアム",
+      "teams": [
+        {
+          "display": "方谷學舎",
+          "score": 1,
+          "won": false,
+          "name": "方谷學舎",
+          "slug": null
+        },
+        {
+          "display": "理大附",
+          "score": 2,
+          "won": true,
+          "name": "理大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "令和8年度 春季岡山県高等学校野球大会",
+      "round": "2回戦",
       "venue": "マスカットスタジアム",
       "teams": [
         {
@@ -961,6 +1100,29 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       "venue": "マスカットスタジアム",
       "teams": [
         {
+          "display": "理大附",
+          "score": 4,
+          "won": false,
+          "name": "理大附",
+          "slug": null
+        },
+        {
+          "display": "学芸館",
+          "score": 5,
+          "won": true,
+          "name": "学芸館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "season": "spring",
+      "tournament": "令和8年度 春季岡山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
           "display": "笠岡商",
           "score": 1,
           "won": false,
@@ -973,6 +1135,52 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
           "won": true,
           "name": "岡山東商業高校",
           "slug": "okayamahigashishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "season": "spring",
+      "tournament": "令和8年度 春季岡山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "作陽学園",
+          "score": 3,
+          "won": false,
+          "name": "作陽学園",
+          "slug": null
+        },
+        {
+          "display": "創志",
+          "score": 9,
+          "won": true,
+          "name": "創志",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "season": "spring",
+      "tournament": "令和8年度 春季岡山県高等学校野球大会",
+      "round": "準決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "山陽",
+          "score": 8,
+          "won": true,
+          "name": "山陽",
+          "slug": null
+        },
+        {
+          "display": "学芸館",
+          "score": 2,
+          "won": false,
+          "name": "学芸館",
+          "slug": null
         }
       ]
     },
@@ -993,6 +1201,29 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
         {
           "display": "創志",
           "score": 3,
+          "won": true,
+          "name": "創志",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-03",
+      "season": "spring",
+      "tournament": "令和8年度 春季岡山県高等学校野球大会",
+      "round": "決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "山陽",
+          "score": 2,
+          "won": false,
+          "name": "山陽",
+          "slug": null
+        },
+        {
+          "display": "創志",
+          "score": 6,
           "won": true,
           "name": "創志",
           "slug": null
@@ -1423,6 +1654,52 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       "venue": "美咲エイコンスタジアム",
       "teams": [
         {
+          "display": "金光",
+          "score": 13,
+          "won": true,
+          "name": "金光",
+          "slug": null
+        },
+        {
+          "display": "邑久瀬戸",
+          "score": 1,
+          "won": false,
+          "name": "邑久瀬戸",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権岡山大会",
+      "round": "1回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "方谷學舎",
+          "score": 5,
+          "won": true,
+          "name": "方谷學舎",
+          "slug": null
+        },
+        {
+          "display": "翠松",
+          "score": 0,
+          "won": false,
+          "name": "翠松",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権岡山大会",
+      "round": "1回戦",
+      "venue": "美咲エイコンスタジアム",
+      "teams": [
+        {
           "display": "総社南",
           "score": 1,
           "won": false,
@@ -1673,6 +1950,29 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権岡山大会",
       "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "商大附",
+          "score": 2,
+          "won": false,
+          "name": "商大附",
+          "slug": null
+        },
+        {
+          "display": "創志",
+          "score": 4,
+          "won": true,
+          "name": "創志",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権岡山大会",
+      "round": "2回戦",
       "venue": "美咲エイコンスタジアム",
       "teams": [
         {
@@ -1715,6 +2015,52 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権岡山大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "作陽学園",
+          "score": 5,
+          "won": false,
+          "name": "作陽学園",
+          "slug": null
+        },
+        {
+          "display": "関西",
+          "score": 6,
+          "won": true,
+          "name": "関西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権岡山大会",
+      "round": "2回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "就実",
+          "score": 4,
+          "won": false,
+          "name": "就実",
+          "slug": null
+        },
+        {
+          "display": "興譲館",
+          "score": 5,
+          "won": true,
+          "name": "興譲館",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-18",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権岡山大会",
@@ -1734,6 +2080,29 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
           "won": false,
           "name": "岡山大安寺中等教育学校",
           "slug": "okayamadaianji"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権岡山大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "方谷學舎",
+          "score": 6,
+          "won": false,
+          "name": "方谷學舎",
+          "slug": null
+        },
+        {
+          "display": "金光",
+          "score": 7,
+          "won": true,
+          "name": "金光",
+          "slug": null
         }
       ]
     },
@@ -1945,6 +2314,29 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権岡山大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "理大附",
+          "score": 2,
+          "won": false,
+          "name": "理大附",
+          "slug": null
+        },
+        {
+          "display": "学芸館",
+          "score": 3,
+          "won": true,
+          "name": "学芸館",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-23",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権岡山大会",
@@ -1987,6 +2379,29 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
           "won": false,
           "name": "岡山東商業高校",
           "slug": "okayamahigashishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権岡山大会",
+      "round": "準決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "山陽",
+          "score": 2,
+          "won": false,
+          "name": "山陽",
+          "slug": null
+        },
+        {
+          "display": "学芸館",
+          "score": 3,
+          "won": true,
+          "name": "学芸館",
+          "slug": null
         }
       ]
     },
@@ -2102,6 +2517,29 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
           "won": false,
           "name": "西大寺高校",
           "slug": "saidaiji"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-23",
+      "season": "autumn",
+      "tournament": "令和7年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "かさおか古代の丘スポーツ公園野球場",
+      "teams": [
+        {
+          "display": "山陽",
+          "score": 16,
+          "won": true,
+          "name": "山陽",
+          "slug": null
+        },
+        {
+          "display": "翠松",
+          "score": 5,
+          "won": false,
+          "name": "翠松",
+          "slug": null
         }
       ]
     },
@@ -2314,6 +2752,29 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2025-08-23",
+      "season": "autumn",
+      "tournament": "令和7年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "邑久スポーツ公園野球場",
+      "teams": [
+        {
+          "display": "邑久瀬戸",
+          "score": 0,
+          "won": false,
+          "name": "邑久瀬戸",
+          "slug": null
+        },
+        {
+          "display": "商大附",
+          "score": 18,
+          "won": true,
+          "name": "商大附",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-08-24",
       "season": "autumn",
       "tournament": "令和7年度 秋季岡山県高等学校野球大会 地区予選",
@@ -2447,6 +2908,30 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
           "score": 7,
           "won": true,
           "name": "明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-08-24",
+      "season": "autumn",
+      "tournament": "令和7年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "岡山県野球場",
+      "teams": [
+        {
+          "display": "御津・鷲羽・緑陽",
+          "score": 1,
+          "won": false,
+          "name": "御津・鷲羽・緑陽",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "関西",
+          "score": 14,
+          "won": true,
+          "name": "関西",
           "slug": null
         }
       ]
@@ -2677,6 +3162,29 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
           "score": 18,
           "won": true,
           "name": "学芸館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "season": "autumn",
+      "tournament": "令和7年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "岡山理大附グラウンド",
+      "teams": [
+        {
+          "display": "商大附",
+          "score": 0,
+          "won": false,
+          "name": "商大附",
+          "slug": null
+        },
+        {
+          "display": "理大附",
+          "score": 7,
+          "won": true,
+          "name": "理大附",
           "slug": null
         }
       ]
@@ -3074,6 +3582,30 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2025-08-31",
+      "season": "autumn",
+      "tournament": "令和7年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "就実グラウンド",
+      "teams": [
+        {
+          "display": "大安寺白陵",
+          "score": 8,
+          "won": true,
+          "name": "大安寺白陵",
+          "slug": null
+        },
+        {
+          "display": "御津・鷲羽・緑陽",
+          "score": 5,
+          "won": false,
+          "name": "御津・鷲羽・緑陽",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
       "date": "2025-09-06",
       "season": "autumn",
       "tournament": "令和7年度 秋季岡山県高等学校野球大会 地区予選",
@@ -3185,6 +3717,29 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
           "won": true,
           "name": "玉野光南高校",
           "slug": "tamanokonan"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-06",
+      "season": "autumn",
+      "tournament": "令和7年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "瀬戸町総合運動公園球場",
+      "teams": [
+        {
+          "display": "邑久瀬戸",
+          "score": 3,
+          "won": false,
+          "name": "邑久瀬戸",
+          "slug": null
+        },
+        {
+          "display": "理大附",
+          "score": 10,
+          "won": true,
+          "name": "理大附",
+          "slug": null
         }
       ]
     },
@@ -3400,6 +3955,29 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       "season": "autumn",
       "tournament": "令和7年度 秋季岡山県高等学校野球大会 地区予選",
       "round": null,
+      "venue": "かさおか古代の丘スポーツ公園野球場",
+      "teams": [
+        {
+          "display": "方谷學舎",
+          "score": 2,
+          "won": false,
+          "name": "方谷學舎",
+          "slug": null
+        },
+        {
+          "display": "金光",
+          "score": 9,
+          "won": true,
+          "name": "金光",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "令和7年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
       "venue": "なりわ運動公園野球場",
       "teams": [
         {
@@ -3415,6 +3993,53 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
           "won": false,
           "name": "玉野高校",
           "slug": "tamano"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "令和7年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "瀬戸町総合運動公園球場",
+      "teams": [
+        {
+          "display": "大安寺白陵",
+          "score": 0,
+          "won": false,
+          "name": "大安寺白陵",
+          "slug": null
+        },
+        {
+          "display": "関西",
+          "score": 16,
+          "won": true,
+          "name": "関西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "令和7年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "明誠学院グラウンド",
+      "teams": [
+        {
+          "display": "岡山・吉備高原",
+          "score": 0,
+          "won": false,
+          "name": "岡山・吉備高原",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "明誠",
+          "score": 18,
+          "won": true,
+          "name": "明誠",
+          "slug": null
         }
       ]
     },
@@ -3772,6 +4397,29 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
       "venue": "なりわ運動公園野球場",
       "teams": [
         {
+          "display": "作陽学園",
+          "score": 3,
+          "won": true,
+          "name": "作陽学園",
+          "slug": null
+        },
+        {
+          "display": "翠松",
+          "score": 2,
+          "won": false,
+          "name": "翠松",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "令和7年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": "代表決定戦",
+      "venue": "なりわ運動公園野球場",
+      "teams": [
+        {
           "display": "倉敷工",
           "score": 0,
           "won": false,
@@ -3921,6 +4569,52 @@ export const REGIONAL_OKAYAMA: RegionalDistrict = {
           "score": 0,
           "won": false,
           "name": "美作",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "令和7年度 秋季岡山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "美咲エイコンスタジアム",
+      "teams": [
+        {
+          "display": "学芸館",
+          "score": 1,
+          "won": false,
+          "name": "学芸館",
+          "slug": null
+        },
+        {
+          "display": "関西",
+          "score": 2,
+          "won": true,
+          "name": "関西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "令和7年度 秋季岡山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "理大附",
+          "score": 7,
+          "won": true,
+          "name": "理大附",
+          "slug": null
+        },
+        {
+          "display": "おかやま山陽",
+          "score": 5,
+          "won": false,
+          "name": "おかやま山陽",
           "slug": null
         }
       ]

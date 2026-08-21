@@ -254,7 +254,18 @@ export function latestSeasonGames(
   /** 出している試合の大会名（重複を除く） */
   tournaments: string[];
 } | null {
-  if (!district.games.length) return null;
+  /*
+    ★★**生成物には私立どうしの試合も入っている**（2026-08-21 に方針を変えた）。
+    **絞り込みはここでやる。**「取るときは私立の戦績も引用し、
+    **着目するところを公立にする**」という決め方なので、
+    **データは全部持ち、画面に出すのは公立が絡む試合だけ**にする。
+
+    ★**この1行を外すと県のページに私立どうしの試合が並ぶ。**
+    ★**総数（`total`）も公立が絡む試合の数**である（画面の「N件あり、うち…」の N）。
+    トーナメント表を作るときは `district.games` を直に読むこと（そちらは全試合）。
+  */
+  const publicGames = district.games.filter((g) => g.teams.some((t) => t.slug));
+  if (!publicGames.length) return null;
   /*
     ★**日付を持たない県がある**ので、日付だけで「いちばん新しい季節」を
     決められない。日付のある試合があればそれで決める。
@@ -267,8 +278,8 @@ export function latestSeasonGames(
   */
   /** 日付が無いときの新しい順。春 → 夏 → 秋（同じ年の中での順） */
   const SEASON_ORDER: Record<RegionalSeason, number> = { spring: 0, summer: 1, autumn: 2 };
-  const dated = district.games.filter((g) => g.date);
-  const seasons = [...new Set(district.games.map((g) => g.season))];
+  const dated = publicGames.filter((g) => g.date);
+  const seasons = [...new Set(publicGames.map((g) => g.season))];
   const byOrder = seasons.reduce((a, b) => (SEASON_ORDER[b] > SEASON_ORDER[a] ? b : a));
   /*
     ★★**日付のある季節と無い季節が混ざる県がある**（2026-08-21。大分）。
@@ -290,7 +301,7 @@ export function latestSeasonGames(
     return ambiguous ? byOrder : byDate;
   })();
 
-  const games = district.games
+  const games = publicGames
     .filter((g) => g.season === newestSeason)
     /*
       日付があれば新しい順。**無ければ回戦の深い順**（決勝がいちばん上）。

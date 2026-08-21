@@ -470,6 +470,29 @@ export const REGIONAL_YAMAGUCHI: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山口大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宇部鴻城",
+          "score": 2,
+          "won": true,
+          "name": "宇部鴻城",
+          "slug": null
+        },
+        {
+          "display": "山口県鴻城",
+          "score": 1,
+          "won": false,
+          "name": "山口県鴻城",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-23",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権山口大会",
@@ -651,6 +674,30 @@ export const REGIONAL_YAMAGUCHI: RegionalDistrict = {
           "won": false,
           "name": "美祢青嶺高校",
           "slug": "mineseirei"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山口大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "厚狭・厚狭明進",
+          "score": 2,
+          "won": false,
+          "name": "厚狭・厚狭明進",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "宇部フロンティア大学付属香川",
+          "score": 7,
+          "won": true,
+          "name": "宇部フロンティア大学付属香川",
+          "slug": null
         }
       ]
     },
@@ -1023,6 +1070,29 @@ export const REGIONAL_YAMAGUCHI: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-24",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山口大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "長門",
+          "score": 0,
+          "won": false,
+          "name": "長門",
+          "slug": null
+        },
+        {
+          "display": "下関国際",
+          "score": 4,
+          "won": true,
+          "name": "下関国際",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-26",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権山口大会",
@@ -1040,6 +1110,29 @@ export const REGIONAL_YAMAGUCHI: RegionalDistrict = {
           "display": "下関国際",
           "score": 2,
           "won": true,
+          "name": "下関国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-28",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山口大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高川学園",
+          "score": 5,
+          "won": true,
+          "name": "高川学園",
+          "slug": null
+        },
+        {
+          "display": "下関国際",
+          "score": 3,
+          "won": false,
           "name": "下関国際",
           "slug": null
         }
@@ -1250,6 +1343,29 @@ export const REGIONAL_YAMAGUCHI: RegionalDistrict = {
           "won": true,
           "name": "防府高校",
           "slug": "hofu"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-17",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "下関国際",
+          "score": 5,
+          "won": true,
+          "name": "下関国際",
+          "slug": null
+        },
+        {
+          "display": "長門",
+          "score": 2,
+          "won": false,
+          "name": "長門",
+          "slug": null
         }
       ]
     },
@@ -1553,6 +1669,29 @@ export const REGIONAL_YAMAGUCHI: RegionalDistrict = {
       ]
     },
     {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "下関国際",
+          "score": 11,
+          "won": true,
+          "name": "下関国際",
+          "slug": null
+        },
+        {
+          "display": "山口県鴻城",
+          "score": 2,
+          "won": false,
+          "name": "山口県鴻城",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-04-11",
       "season": "spring",
       "tournament": "令和8年度春季山口県高等学校野球大会",
@@ -1737,6 +1876,29 @@ export const REGIONAL_YAMAGUCHI: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-04-17",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "山口県桜ケ丘",
+          "score": 2,
+          "won": true,
+          "name": "山口県桜ケ丘",
+          "slug": null
+        },
+        {
+          "display": "柳井学園",
+          "score": 1,
+          "won": false,
+          "name": "柳井学園",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-04-18",
       "season": "spring",
       "tournament": "令和8年度春季山口県高等学校野球大会",
@@ -1906,6 +2068,29 @@ export const REGIONAL_YAMAGUCHI: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "山口県桜ケ丘",
+          "score": 8,
+          "won": true,
+          "name": "山口県桜ケ丘",
+          "slug": null
+        },
+        {
+          "display": "聖光",
+          "score": 0,
+          "won": false,
+          "name": "聖光",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "山口",
           "score": 0,
           "won": false,
@@ -2007,6 +2192,52 @@ export const REGIONAL_YAMAGUCHI: RegionalDistrict = {
         {
           "display": "高川学園",
           "score": 4,
+          "won": true,
+          "name": "高川学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "山口県桜ケ丘",
+          "score": 0,
+          "won": false,
+          "name": "山口県桜ケ丘",
+          "slug": null
+        },
+        {
+          "display": "高川学園",
+          "score": 10,
+          "won": true,
+          "name": "高川学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-28",
+      "season": "spring",
+      "tournament": "令和8年度春季山口県高等学校野球大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "下関国際",
+          "score": 2,
+          "won": false,
+          "name": "下関国際",
+          "slug": null
+        },
+        {
+          "display": "高川学園",
+          "score": 7,
           "won": true,
           "name": "高川学園",
           "slug": null
@@ -2482,6 +2713,30 @@ export const REGIONAL_YAMAGUCHI: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "厚狭・厚狭明進",
+          "score": 5,
+          "won": false,
+          "name": "厚狭・厚狭明進",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "慶進",
+          "score": 9,
+          "won": true,
+          "name": "慶進",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "令和7年度山口県スポーツ大会高校野球競技(硬式)地区予選",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "萩商工",
           "score": 4,
           "won": false,
@@ -2758,6 +3013,29 @@ export const REGIONAL_YAMAGUCHI: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "下関国際",
+          "score": 7,
+          "won": true,
+          "name": "下関国際",
+          "slug": null
+        },
+        {
+          "display": "早鞆",
+          "score": 2,
+          "won": false,
+          "name": "早鞆",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-19",
+      "season": "autumn",
+      "tournament": "令和7年度山口県スポーツ大会高校野球競技(硬式)地区予選",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "西京",
           "score": 3,
           "won": false,
@@ -2839,6 +3117,29 @@ export const REGIONAL_YAMAGUCHI: RegionalDistrict = {
           "won": false,
           "name": "下関商業高校",
           "slug": "shimonosekishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "令和7年度山口県スポーツ大会高校野球競技(硬式)地区予選",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "長門",
+          "score": 3,
+          "won": false,
+          "name": "長門",
+          "slug": null
+        },
+        {
+          "display": "山口県鴻城",
+          "score": 4,
+          "won": true,
+          "name": "山口県鴻城",
+          "slug": null
         }
       ]
     },
@@ -2975,6 +3276,75 @@ export const REGIONAL_YAMAGUCHI: RegionalDistrict = {
           "display": "山口県桜ケ丘",
           "score": 3,
           "won": true,
+          "name": "山口県桜ケ丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-04",
+      "season": "autumn",
+      "tournament": "令和7年度山口県スポーツ大会高校野球競技(硬式)県決勝大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "山口県鴻城",
+          "score": 1,
+          "won": false,
+          "name": "山口県鴻城",
+          "slug": null
+        },
+        {
+          "display": "下関国際",
+          "score": 11,
+          "won": true,
+          "name": "下関国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "令和7年度山口県スポーツ大会高校野球競技(硬式)県決勝大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高川学園",
+          "score": 6,
+          "won": false,
+          "name": "高川学園",
+          "slug": null
+        },
+        {
+          "display": "山口県桜ケ丘",
+          "score": 7,
+          "won": true,
+          "name": "山口県桜ケ丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "season": "autumn",
+      "tournament": "令和7年度山口県スポーツ大会高校野球競技(硬式)県決勝大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "下関国際",
+          "score": 5,
+          "won": true,
+          "name": "下関国際",
+          "slug": null
+        },
+        {
+          "display": "山口県桜ケ丘",
+          "score": 3,
+          "won": false,
           "name": "山口県桜ケ丘",
           "slug": null
         }

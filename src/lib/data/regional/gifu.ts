@@ -218,6 +218,29 @@ export const REGIONAL_GIFU: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権岐阜大会",
+      "round": null,
+      "venue": "中津川公園野球場",
+      "teams": [
+        {
+          "display": "岐阜第一",
+          "score": 3,
+          "won": true,
+          "name": "岐阜第一",
+          "slug": null
+        },
+        {
+          "display": "美濃加茂",
+          "score": 1,
+          "won": false,
+          "name": "美濃加茂",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-11",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権岐阜大会",
@@ -237,6 +260,29 @@ export const REGIONAL_GIFU: RegionalDistrict = {
           "won": true,
           "name": "武義高校",
           "slug": "mugi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権岐阜大会",
+      "round": null,
+      "venue": "ぎふしん長良川球場",
+      "teams": [
+        {
+          "display": "岐阜聖徳学園",
+          "score": 4,
+          "won": true,
+          "name": "岐阜聖徳学園",
+          "slug": null
+        },
+        {
+          "display": "富田",
+          "score": 2,
+          "won": false,
+          "name": "富田",
+          "slug": null
         }
       ]
     },
@@ -1075,6 +1121,29 @@ export const REGIONAL_GIFU: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権岐阜大会",
       "round": null,
+      "venue": "ぎふしん長良川球場",
+      "teams": [
+        {
+          "display": "麗澤瑞浪",
+          "score": 0,
+          "won": false,
+          "name": "麗澤瑞浪",
+          "slug": null
+        },
+        {
+          "display": "中京",
+          "score": 6,
+          "won": true,
+          "name": "中京",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権岐阜大会",
+      "round": null,
       "venue": "弘光舎レインボースタジアム",
       "teams": [
         {
@@ -1262,6 +1331,29 @@ export const REGIONAL_GIFU: RegionalDistrict = {
       "venue": "ぎふしん長良川球場",
       "teams": [
         {
+          "display": "中京",
+          "score": 7,
+          "won": true,
+          "name": "中京",
+          "slug": null
+        },
+        {
+          "display": "岐阜聖徳",
+          "score": 2,
+          "won": false,
+          "name": "岐阜聖徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権岐阜大会",
+      "round": null,
+      "venue": "ぎふしん長良川球場",
+      "teams": [
+        {
           "display": "関商工",
           "score": 9,
           "won": true,
@@ -1320,6 +1412,29 @@ export const REGIONAL_GIFU: RegionalDistrict = {
           "won": false,
           "name": "岐阜商業高校",
           "slug": "gifushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-28",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権岐阜大会",
+      "round": "決勝",
+      "venue": "ぎふしん長良川球場",
+      "teams": [
+        {
+          "display": "中京",
+          "score": 5,
+          "won": true,
+          "name": "中京",
+          "slug": null
+        },
+        {
+          "display": "大垣日大",
+          "score": 2,
+          "won": false,
+          "name": "大垣日大",
+          "slug": null
         }
       ]
     }

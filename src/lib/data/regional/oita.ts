@@ -17,6 +17,29 @@ export const REGIONAL_OITA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "明豊",
+          "score": 8,
+          "won": true,
+          "name": "明豊",
+          "slug": null
+        },
+        {
+          "display": "藤蔭",
+          "score": 1,
+          "won": false,
+          "name": "藤蔭",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "第149回大分県高等学校野球選手権大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
           "display": "柳ヶ浦",
           "score": 5,
           "won": false,
@@ -903,6 +926,29 @@ export const REGIONAL_OITA: RegionalDistrict = {
           "score": 6,
           "won": true,
           "name": "大分",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大分大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "明豊",
+          "score": 7,
+          "won": true,
+          "name": "明豊",
+          "slug": null
+        },
+        {
+          "display": "藤蔭",
+          "score": 6,
+          "won": false,
+          "name": "藤蔭",
           "slug": null
         }
       ]

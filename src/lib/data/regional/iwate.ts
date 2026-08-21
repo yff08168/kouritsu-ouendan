@@ -13,6 +13,29 @@ export const REGIONAL_IWATE: RegionalDistrict = {
       "date": "2026-05-25",
       "season": "spring",
       "tournament": "春季岩手県大会",
+      "round": "決勝",
+      "venue": "楽天イーグルス奇跡の一本松球場",
+      "teams": [
+        {
+          "display": "花巻東",
+          "score": 2,
+          "won": true,
+          "name": "花巻東",
+          "slug": null
+        },
+        {
+          "display": "盛岡大附",
+          "score": 1,
+          "won": false,
+          "name": "盛岡大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-25",
+      "season": "spring",
+      "tournament": "春季岩手県大会",
       "round": "3位決定戦",
       "venue": "楽天イーグルス奇跡の一本松球場",
       "teams": [
@@ -28,6 +51,29 @@ export const REGIONAL_IWATE: RegionalDistrict = {
           "score": 5,
           "won": true,
           "name": "盛岡誠桜",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "season": "spring",
+      "tournament": "春季岩手県大会",
+      "round": "準々決勝",
+      "venue": "楽天イーグルス奇跡の一本松球場",
+      "teams": [
+        {
+          "display": "花巻東",
+          "score": 2,
+          "won": true,
+          "name": "花巻東",
+          "slug": null
+        },
+        {
+          "display": "一関学院",
+          "score": 0,
+          "won": false,
+          "name": "一関学院",
           "slug": null
         }
       ]
@@ -1324,6 +1370,52 @@ export const REGIONAL_IWATE: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "選手権岩手大会",
+      "round": "決勝",
+      "venue": "きたぎんボールパーク",
+      "teams": [
+        {
+          "display": "花巻東",
+          "score": 5,
+          "won": true,
+          "name": "花巻東",
+          "slug": null
+        },
+        {
+          "display": "盛岡大附",
+          "score": 0,
+          "won": false,
+          "name": "盛岡大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "選手権岩手大会",
+      "round": "準決勝",
+      "venue": "きたぎんボールパーク",
+      "teams": [
+        {
+          "display": "一関学院",
+          "score": 0,
+          "won": false,
+          "name": "一関学院",
+          "slug": null
+        },
+        {
+          "display": "花巻東",
+          "score": 9,
+          "won": true,
+          "name": "花巻東",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-23",
       "season": "summer",
       "tournament": "選手権岩手大会",
@@ -1434,6 +1526,29 @@ export const REGIONAL_IWATE: RegionalDistrict = {
           "score": 0,
           "won": false,
           "name": "盛岡誠桜",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "選手権岩手大会",
+      "round": "3回戦",
+      "venue": "きたぎんボールパーク",
+      "teams": [
+        {
+          "display": "盛岡誠桜",
+          "score": 8,
+          "won": true,
+          "name": "盛岡誠桜",
+          "slug": null
+        },
+        {
+          "display": "盛岡白百合学園",
+          "score": 2,
+          "won": false,
+          "name": "盛岡白百合学園",
           "slug": null
         }
       ]
@@ -1596,6 +1711,29 @@ export const REGIONAL_IWATE: RegionalDistrict = {
           "won": true,
           "name": "水沢高校",
           "slug": "mizusawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "選手権岩手大会",
+      "round": "2回戦",
+      "venue": "きたぎんボールパーク",
+      "teams": [
+        {
+          "display": "専大北上",
+          "score": 3,
+          "won": false,
+          "name": "専大北上",
+          "slug": null
+        },
+        {
+          "display": "一関学院",
+          "score": 4,
+          "won": true,
+          "name": "一関学院",
+          "slug": null
         }
       ]
     },

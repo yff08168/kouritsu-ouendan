@@ -221,6 +221,29 @@ export const REGIONAL_SHIMANE: RegionalDistrict = {
       "season": "spring",
       "tournament": "2026年代春季島根県大会",
       "round": "2回戦",
+      "venue": "松江市営野球場",
+      "teams": [
+        {
+          "display": "立正大淞南",
+          "score": 10,
+          "won": true,
+          "name": "立正大淞南",
+          "slug": null
+        },
+        {
+          "display": "出雲西",
+          "score": 0,
+          "won": false,
+          "name": "出雲西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年代春季島根県大会",
+      "round": "2回戦",
       "venue": "平田愛宕山球場",
       "teams": [
         {
@@ -592,6 +615,29 @@ export const REGIONAL_SHIMANE: RegionalDistrict = {
       "venue": "益田市民球場",
       "teams": [
         {
+          "display": "立正大淞南",
+          "score": 5,
+          "won": true,
+          "name": "立正大淞南",
+          "slug": null
+        },
+        {
+          "display": "益田東",
+          "score": 4,
+          "won": false,
+          "name": "益田東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年代春季島根県大会",
+      "round": "3回戦",
+      "venue": "益田市民球場",
+      "teams": [
+        {
           "display": "浜田",
           "score": 10,
           "won": false,
@@ -723,6 +769,29 @@ export const REGIONAL_SHIMANE: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-05-01",
+      "season": "spring",
+      "tournament": "2026年代春季島根県大会",
+      "round": "準決勝",
+      "venue": "江津市民球場",
+      "teams": [
+        {
+          "display": "石見智翠館",
+          "score": 0,
+          "won": false,
+          "name": "石見智翠館",
+          "slug": null
+        },
+        {
+          "display": "立正大淞南",
+          "score": 0,
+          "won": false,
+          "name": "立正大淞南",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-05-02",
       "season": "spring",
       "tournament": "2026年代春季島根県大会",
@@ -741,6 +810,29 @@ export const REGIONAL_SHIMANE: RegionalDistrict = {
           "score": 10,
           "won": true,
           "name": "開星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "season": "spring",
+      "tournament": "2026年代春季島根県大会",
+      "round": "準決勝",
+      "venue": "江津市民球場",
+      "teams": [
+        {
+          "display": "石見智翠館",
+          "score": 6,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        },
+        {
+          "display": "立正大淞南",
+          "score": 1,
+          "won": false,
+          "name": "立正大淞南",
           "slug": null
         }
       ]
@@ -769,6 +861,29 @@ export const REGIONAL_SHIMANE: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-05-03",
+      "season": "spring",
+      "tournament": "2026年代春季島根県大会",
+      "round": "決勝",
+      "venue": "江津市民球場",
+      "teams": [
+        {
+          "display": "開星",
+          "score": 0,
+          "won": false,
+          "name": "開星",
+          "slug": null
+        },
+        {
+          "display": "石見智翠館",
+          "score": 0,
+          "won": false,
+          "name": "石見智翠館",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-05-04",
       "season": "spring",
       "tournament": "2026年代春季島根県大会",
@@ -787,6 +902,29 @@ export const REGIONAL_SHIMANE: RegionalDistrict = {
           "score": 1,
           "won": false,
           "name": "立正大淞南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-04",
+      "season": "spring",
+      "tournament": "2026年代春季島根県大会",
+      "round": "決勝",
+      "venue": "江津市民球場",
+      "teams": [
+        {
+          "display": "開星",
+          "score": 5,
+          "won": false,
+          "name": "開星",
+          "slug": null
+        },
+        {
+          "display": "石見智翠館",
+          "score": 9,
+          "won": true,
+          "name": "石見智翠館",
           "slug": null
         }
       ]
@@ -1651,6 +1789,29 @@ export const REGIONAL_SHIMANE: RegionalDistrict = {
       "venue": "県立浜山球場",
       "teams": [
         {
+          "display": "石見智翠館",
+          "score": 10,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        },
+        {
+          "display": "出雲西",
+          "score": 0,
+          "won": false,
+          "name": "出雲西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権島根県大会",
+      "round": "2回戦",
+      "venue": "県立浜山球場",
+      "teams": [
+        {
           "display": "立正大淞南",
           "score": 7,
           "won": true,
@@ -2181,6 +2342,29 @@ export const REGIONAL_SHIMANE: RegionalDistrict = {
       "venue": "県立浜山球場",
       "teams": [
         {
+          "display": "石見智翠館",
+          "score": 5,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        },
+        {
+          "display": "益田東",
+          "score": 4,
+          "won": false,
+          "name": "益田東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権島根県大会",
+      "round": "準々決勝",
+      "venue": "県立浜山球場",
+      "teams": [
+        {
           "display": "開星",
           "score": 11,
           "won": true,
@@ -2239,6 +2423,29 @@ export const REGIONAL_SHIMANE: RegionalDistrict = {
           "won": false,
           "name": "松江南高校",
           "slug": "matsueminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権島根県大会",
+      "round": "準決勝",
+      "venue": "県立浜山球場",
+      "teams": [
+        {
+          "display": "石見智翠館",
+          "score": 0,
+          "won": false,
+          "name": "石見智翠館",
+          "slug": null
+        },
+        {
+          "display": "立正大淞南",
+          "score": 2,
+          "won": true,
+          "name": "立正大淞南",
+          "slug": null
         }
       ]
     },
@@ -2493,6 +2700,30 @@ export const REGIONAL_SHIMANE: RegionalDistrict = {
           "won": true,
           "name": "出雲高校",
           "slug": "izumo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "2026年代秋季島根県大会",
+      "round": "2回戦",
+      "venue": "浜田市野球場",
+      "teams": [
+        {
+          "display": "江津・江津工業",
+          "score": 5,
+          "won": true,
+          "name": "江津・江津工業",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "出雲北陵",
+          "score": 3,
+          "won": false,
+          "name": "出雲北陵",
+          "slug": null
         }
       ]
     },
@@ -2884,6 +3115,29 @@ export const REGIONAL_SHIMANE: RegionalDistrict = {
           "won": true,
           "name": "大田高校",
           "slug": "oda"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-19",
+      "season": "autumn",
+      "tournament": "2026年代秋季島根県大会",
+      "round": "3回戦",
+      "venue": "江津市民球場",
+      "teams": [
+        {
+          "display": "石見智翠館",
+          "score": 10,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        },
+        {
+          "display": "開星",
+          "score": 9,
+          "won": false,
+          "name": "開星",
+          "slug": null
         }
       ]
     },

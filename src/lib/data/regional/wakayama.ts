@@ -155,6 +155,29 @@ export const REGIONAL_WAKAYAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "高野山",
+          "score": 5,
+          "won": false,
+          "name": "高野山",
+          "slug": null
+        },
+        {
+          "display": "初芝橋本",
+          "score": 7,
+          "won": true,
+          "name": "初芝橋本",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "熊野",
           "score": 5,
           "won": true,
@@ -305,6 +328,31 @@ export const REGIONAL_WAKAYAMA: RegionalDistrict = {
           "won": false,
           "name": "和歌山商業高校",
           "slug": "wakayamashogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "・貴志川有田中央",
+          "score": 2,
+          "won": false,
+          "name": "・貴志川有田中央",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "紀北農芸笠田・",
+          "score": 8,
+          "won": true,
+          "name": "紀北農芸笠田・",
+          "slug": null,
+          "combined": true
         }
       ]
     },
@@ -560,6 +608,30 @@ export const REGIONAL_WAKAYAMA: RegionalDistrict = {
           "won": true,
           "name": "南部高校龍神分校",
           "slug": "minaberyujin"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "慶風",
+          "score": 5,
+          "won": true,
+          "name": "慶風",
+          "slug": null
+        },
+        {
+          "display": "新宮・新翔",
+          "score": 4,
+          "won": false,
+          "name": "新宮・新翔",
+          "slug": null,
+          "combined": true
         }
       ]
     },

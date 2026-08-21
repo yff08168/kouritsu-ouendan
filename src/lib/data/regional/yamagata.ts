@@ -60,6 +60,30 @@ export const REGIONAL_YAMAGATA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権山形大会",
       "round": "2回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "４校連合",
+          "score": 6,
+          "won": false,
+          "name": "４校連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "米沢中央",
+          "score": 8,
+          "won": true,
+          "name": "米沢中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
       "venue": "米沢市営野球場",
       "teams": [
         {
@@ -152,6 +176,29 @@ export const REGIONAL_YAMAGATA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権山形大会",
       "round": "2回戦",
+      "venue": "鶴岡ﾄﾞﾘｰﾑｽﾀｼﾞｱﾑ",
+      "teams": [
+        {
+          "display": "日大山形",
+          "score": 14,
+          "won": true,
+          "name": "日大山形",
+          "slug": null
+        },
+        {
+          "display": "創学館",
+          "score": 1,
+          "won": false,
+          "name": "創学館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
       "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
       "teams": [
         {
@@ -236,6 +283,30 @@ export const REGIONAL_YAMAGATA: RegionalDistrict = {
           "won": true,
           "name": "山形南高校",
           "slug": "yamagataminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "酒田南",
+          "score": 10,
+          "won": true,
+          "name": "酒田南",
+          "slug": null
+        },
+        {
+          "display": "３校連合",
+          "score": 0,
+          "won": false,
+          "name": "３校連合",
+          "slug": null,
+          "combined": true
         }
       ]
     },
@@ -381,6 +452,75 @@ export const REGIONAL_YAMAGATA: RegionalDistrict = {
       "date": "2026-07-14",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "新庄市民球場",
+      "teams": [
+        {
+          "display": "新庄東",
+          "score": 2,
+          "won": false,
+          "name": "新庄東",
+          "slug": null
+        },
+        {
+          "display": "鶴岡東",
+          "score": 8,
+          "won": true,
+          "name": "鶴岡東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "鶴岡ﾄﾞﾘｰﾑｽﾀｼﾞｱﾑ",
+      "teams": [
+        {
+          "display": "九里学園",
+          "score": 5,
+          "won": true,
+          "name": "九里学園",
+          "slug": null
+        },
+        {
+          "display": "羽黒",
+          "score": 3,
+          "won": false,
+          "name": "羽黒",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "鶴岡ﾄﾞﾘｰﾑｽﾀｼﾞｱﾑ",
+      "teams": [
+        {
+          "display": "日大山形",
+          "score": 7,
+          "won": true,
+          "name": "日大山形",
+          "slug": null
+        },
+        {
+          "display": "米沢中央",
+          "score": 0,
+          "won": false,
+          "name": "米沢中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
       "round": "3回戦",
       "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
       "teams": [
@@ -519,6 +659,29 @@ export const REGIONAL_YAMAGATA: RegionalDistrict = {
       "date": "2026-07-18",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "きらやかスタジアム",
+      "teams": [
+        {
+          "display": "酒田南",
+          "score": 2,
+          "won": true,
+          "name": "酒田南",
+          "slug": null
+        },
+        {
+          "display": "九里学園",
+          "score": 1,
+          "won": false,
+          "name": "九里学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
       "round": "準々決勝",
       "venue": "きらやかスタジアム",
       "teams": [
@@ -585,6 +748,52 @@ export const REGIONAL_YAMAGATA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "準々決勝",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "山形城北",
+          "score": 11,
+          "won": true,
+          "name": "山形城北",
+          "slug": null
+        },
+        {
+          "display": "酒田南",
+          "score": 3,
+          "won": false,
+          "name": "酒田南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "準決勝",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "日大山形",
+          "score": 2,
+          "won": false,
+          "name": "日大山形",
+          "slug": null
+        },
+        {
+          "display": "鶴岡東",
+          "score": 9,
+          "won": true,
+          "name": "鶴岡東",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-23",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権山形大会",
@@ -602,6 +811,29 @@ export const REGIONAL_YAMAGATA: RegionalDistrict = {
           "display": "山形城北",
           "score": 11,
           "won": true,
+          "name": "山形城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-26",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "決勝",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "鶴岡東",
+          "score": 5,
+          "won": true,
+          "name": "鶴岡東",
+          "slug": null
+        },
+        {
+          "display": "山形城北",
+          "score": 0,
+          "won": false,
           "name": "山形城北",
           "slug": null
         }

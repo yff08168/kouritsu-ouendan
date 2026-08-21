@@ -176,6 +176,29 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
       "season": "spring",
       "tournament": "第79回春季栃木県高等学校野球大会試合結果",
       "round": "1回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "白鷗大足利",
+          "score": 12,
+          "won": true,
+          "name": "白鷗大足利",
+          "slug": null
+        },
+        {
+          "display": "宇短大附",
+          "score": 0,
+          "won": false,
+          "name": "宇短大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "第79回春季栃木県高等学校野球大会試合結果",
+      "round": "1回戦",
       "venue": "石川スポーツグラウンドくろいそ",
       "teams": [
         {
@@ -597,6 +620,30 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
       "venue": "エイジェックスタジアム",
       "teams": [
         {
+          "display": "連合",
+          "score": 5,
+          "won": false,
+          "name": "連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "幸福学園",
+          "score": 7,
+          "won": true,
+          "name": "幸福学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第79回春季栃木県高等学校野球大会試合結果",
+      "round": "2回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
           "display": "足利",
           "score": 1,
           "won": false,
@@ -801,6 +848,29 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
       "date": "2026-04-25",
       "season": "spring",
       "tournament": "第79回春季栃木県高等学校野球大会試合結果",
+      "round": "3回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "矢板中央",
+          "score": 2,
+          "won": false,
+          "name": "矢板中央",
+          "slug": null
+        },
+        {
+          "display": "國學院栃木",
+          "score": 7,
+          "won": true,
+          "name": "國學院栃木",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "第79回春季栃木県高等学校野球大会試合結果",
       "round": "2回戦",
       "venue": "宇都宮清原球場",
       "teams": [
@@ -874,6 +944,29 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
       "venue": "宇都宮清原球場",
       "teams": [
         {
+          "display": "青藍泰斗",
+          "score": 9,
+          "won": true,
+          "name": "青藍泰斗",
+          "slug": null
+        },
+        {
+          "display": "幸福学園",
+          "score": 8,
+          "won": false,
+          "name": "幸福学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "第79回春季栃木県高等学校野球大会試合結果",
+      "round": "3回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
           "display": "烏山",
           "score": 0,
           "won": false,
@@ -886,6 +979,29 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
           "won": true,
           "name": "栃木工業高校",
           "slug": "tochigikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "season": "spring",
+      "tournament": "第79回春季栃木県高等学校野球大会試合結果",
+      "round": "準々決勝",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "文星芸大附",
+          "score": 5,
+          "won": true,
+          "name": "文星芸大附",
+          "slug": null
+        },
+        {
+          "display": "白鷗大足利",
+          "score": 0,
+          "won": false,
+          "name": "白鷗大足利",
+          "slug": null
         }
       ]
     },
@@ -936,6 +1052,29 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-04-29",
+      "season": "spring",
+      "tournament": "第79回春季栃木県高等学校野球大会試合結果",
+      "round": "準々決勝",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "作新学院",
+          "score": 5,
+          "won": false,
+          "name": "作新学院",
+          "slug": null
+        },
+        {
+          "display": "青藍泰斗",
+          "score": 8,
+          "won": true,
+          "name": "青藍泰斗",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-05-02",
       "season": "spring",
       "tournament": "第79回春季栃木県高等学校野球大会試合結果",
@@ -955,6 +1094,52 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
           "won": false,
           "name": "石橋高校",
           "slug": "ishibashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "season": "spring",
+      "tournament": "第79回春季栃木県高等学校野球大会試合結果",
+      "round": "準決勝",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "青藍泰斗",
+          "score": 5,
+          "won": false,
+          "name": "青藍泰斗",
+          "slug": null
+        },
+        {
+          "display": "佐野日大",
+          "score": 7,
+          "won": true,
+          "name": "佐野日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-03",
+      "season": "spring",
+      "tournament": "第79回春季栃木県高等学校野球大会試合結果",
+      "round": "決勝",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "文星芸大附",
+          "score": 9,
+          "won": true,
+          "name": "文星芸大附",
+          "slug": null
+        },
+        {
+          "display": "佐野日大",
+          "score": 4,
+          "won": false,
+          "name": "佐野日大",
+          "slug": null
         }
       ]
     },
@@ -1476,6 +1661,29 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
       "venue": "宇都宮清原球場",
       "teams": [
         {
+          "display": "宇短大附",
+          "score": 0,
+          "won": false,
+          "name": "宇短大附",
+          "slug": null
+        },
+        {
+          "display": "佐野日大",
+          "score": 10,
+          "won": true,
+          "name": "佐野日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権栃木大会",
+      "round": "2回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
           "display": "鹿沼",
           "score": 16,
           "won": true,
@@ -1673,6 +1881,29 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
           "won": true,
           "name": "那須拓陽高校",
           "slug": "nasutakuyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権栃木大会",
+      "round": "2回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "矢板中央",
+          "score": 3,
+          "won": false,
+          "name": "矢板中央",
+          "slug": null
+        },
+        {
+          "display": "國學院栃木",
+          "score": 9,
+          "won": true,
+          "name": "國學院栃木",
+          "slug": null
         }
       ]
     },
@@ -1958,6 +2189,29 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権栃木大会",
       "round": "準々決勝",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "文星芸大附",
+          "score": 11,
+          "won": true,
+          "name": "文星芸大附",
+          "slug": null
+        },
+        {
+          "display": "白鷗大足利",
+          "score": 4,
+          "won": false,
+          "name": "白鷗大足利",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権栃木大会",
+      "round": "準々決勝",
       "venue": "宇都宮清原球場",
       "teams": [
         {
@@ -1993,6 +2247,52 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
         {
           "display": "國學院栃木",
           "score": 11,
+          "won": true,
+          "name": "國學院栃木",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権栃木大会",
+      "round": "準決勝",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "作新学院",
+          "score": 0,
+          "won": false,
+          "name": "作新学院",
+          "slug": null
+        },
+        {
+          "display": "佐野日大",
+          "score": 5,
+          "won": true,
+          "name": "佐野日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権栃木大会",
+      "round": "準決勝",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "文星芸大附",
+          "score": 2,
+          "won": false,
+          "name": "文星芸大附",
+          "slug": null
+        },
+        {
+          "display": "國學院栃木",
+          "score": 5,
           "won": true,
           "name": "國學院栃木",
           "slug": null
@@ -2112,6 +2412,30 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
           "name": "連合",
           "slug": null,
           "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "第78回秋季栃木県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "連合",
+          "score": 5,
+          "won": false,
+          "name": "連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "幸福学園",
+          "score": 10,
+          "won": true,
+          "name": "幸福学園",
+          "slug": null
         }
       ]
     },
@@ -2401,6 +2725,29 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
       "venue": "エイジェックスタジアム",
       "teams": [
         {
+          "display": "青藍泰斗",
+          "score": 7,
+          "won": false,
+          "name": "青藍泰斗",
+          "slug": null
+        },
+        {
+          "display": "幸福学園",
+          "score": 8,
+          "won": true,
+          "name": "幸福学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "第78回秋季栃木県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
           "display": "鹿沼",
           "score": 14,
           "won": true,
@@ -2540,6 +2887,29 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
       "venue": "エイジェックスタジアム",
       "teams": [
         {
+          "display": "足利大附",
+          "score": 3,
+          "won": false,
+          "name": "足利大附",
+          "slug": null
+        },
+        {
+          "display": "國學院栃木",
+          "score": 7,
+          "won": true,
+          "name": "國學院栃木",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "第78回秋季栃木県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
           "display": "宇都宮南",
           "score": 1,
           "won": false,
@@ -2667,6 +3037,30 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
           "won": true,
           "name": "栃木高校",
           "slug": "tochigi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "第78回秋季栃木県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "とちぎ木の花スタジアム",
+      "teams": [
+        {
+          "display": "連合",
+          "score": 1,
+          "won": false,
+          "name": "連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "宇短大附",
+          "score": 8,
+          "won": true,
+          "name": "宇短大附",
+          "slug": null
         }
       ]
     },
@@ -2832,6 +3226,29 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
       ]
     },
     {
+      "date": "2025-09-23",
+      "season": "autumn",
+      "tournament": "第78回秋季栃木県高等学校野球大会",
+      "round": "3回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "作新学院",
+          "score": 11,
+          "won": true,
+          "name": "作新学院",
+          "slug": null
+        },
+        {
+          "display": "宇短大附",
+          "score": 1,
+          "won": false,
+          "name": "宇短大附",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-27",
       "season": "autumn",
       "tournament": "第78回秋季栃木県高等学校野球大会",
@@ -2851,6 +3268,29 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
           "won": false,
           "name": "宇都宮工業高校",
           "slug": "utsunomiyakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "第78回秋季栃木県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "作新学院",
+          "score": 3,
+          "won": false,
+          "name": "作新学院",
+          "slug": null
+        },
+        {
+          "display": "佐野日大",
+          "score": 6,
+          "won": true,
+          "name": "佐野日大",
+          "slug": null
         }
       ]
     },
@@ -2896,6 +3336,75 @@ export const REGIONAL_TOCHIGI: RegionalDistrict = {
           "score": 5,
           "won": true,
           "name": "國學院栃木",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-04",
+      "season": "autumn",
+      "tournament": "第78回秋季栃木県高等学校野球大会",
+      "round": "準決勝",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "文星芸大附",
+          "score": 6,
+          "won": true,
+          "name": "文星芸大附",
+          "slug": null
+        },
+        {
+          "display": "幸福学園",
+          "score": 2,
+          "won": false,
+          "name": "幸福学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-04",
+      "season": "autumn",
+      "tournament": "第78回秋季栃木県高等学校野球大会",
+      "round": "準決勝",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "國學院栃木",
+          "score": 4,
+          "won": false,
+          "name": "國學院栃木",
+          "slug": null
+        },
+        {
+          "display": "佐野日大",
+          "score": 6,
+          "won": true,
+          "name": "佐野日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "第78回秋季栃木県高等学校野球大会",
+      "round": "決勝",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "文星芸大附",
+          "score": 3,
+          "won": false,
+          "name": "文星芸大附",
+          "slug": null
+        },
+        {
+          "display": "佐野日大",
+          "score": 4,
+          "won": true,
+          "name": "佐野日大",
           "slug": null
         }
       ]

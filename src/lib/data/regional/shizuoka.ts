@@ -361,6 +361,29 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権静岡大会",
       "round": "1回戦",
+      "venue": "愛鷹",
+      "teams": [
+        {
+          "display": "桐陽",
+          "score": 5,
+          "won": true,
+          "name": "桐陽",
+          "slug": null
+        },
+        {
+          "display": "飛龍",
+          "score": 1,
+          "won": false,
+          "name": "飛龍",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権静岡大会",
+      "round": "1回戦",
       "venue": "ちゅ～るスタジアム清水",
       "teams": [
         {
@@ -591,6 +614,29 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権静岡大会",
       "round": "2回戦",
+      "venue": "しずてつスタジアム草薙",
+      "teams": [
+        {
+          "display": "静岡北",
+          "score": 1,
+          "won": false,
+          "name": "静岡北",
+          "slug": null
+        },
+        {
+          "display": "浜松修学舎",
+          "score": 2,
+          "won": true,
+          "name": "浜松修学舎",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権静岡大会",
+      "round": "2回戦",
       "venue": "愛鷹",
       "teams": [
         {
@@ -706,6 +752,29 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権静岡大会",
       "round": "2回戦",
+      "venue": "ちゅ～るスタジアム清水",
+      "teams": [
+        {
+          "display": "桐陽",
+          "score": 5,
+          "won": true,
+          "name": "桐陽",
+          "slug": null
+        },
+        {
+          "display": "常葉大橘",
+          "score": 2,
+          "won": false,
+          "name": "常葉大橘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権静岡大会",
+      "round": "2回戦",
       "venue": "掛川",
       "teams": [
         {
@@ -798,6 +867,29 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権静岡大会",
       "round": "3回戦",
+      "venue": "愛鷹",
+      "teams": [
+        {
+          "display": "知徳",
+          "score": 4,
+          "won": false,
+          "name": "知徳",
+          "slug": null
+        },
+        {
+          "display": "藤枝明誠",
+          "score": 5,
+          "won": true,
+          "name": "藤枝明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権静岡大会",
+      "round": "3回戦",
       "venue": "しずてつスタジアム草薙",
       "teams": [
         {
@@ -813,6 +905,52 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
           "won": true,
           "name": "掛川西高校",
           "slug": "kakegawanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権静岡大会",
+      "round": "3回戦",
+      "venue": "ちゅ～るスタジアム清水",
+      "teams": [
+        {
+          "display": "浜松開誠館",
+          "score": 6,
+          "won": true,
+          "name": "浜松開誠館",
+          "slug": null
+        },
+        {
+          "display": "浜松修学舎",
+          "score": 4,
+          "won": false,
+          "name": "浜松修学舎",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権静岡大会",
+      "round": "3回戦",
+      "venue": "浜松",
+      "teams": [
+        {
+          "display": "御殿場西",
+          "score": 5,
+          "won": false,
+          "name": "御殿場西",
+          "slug": null
+        },
+        {
+          "display": "磐田東",
+          "score": 15,
+          "won": true,
+          "name": "磐田東",
+          "slug": null
         }
       ]
     },
@@ -886,6 +1024,29 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権静岡大会",
+      "round": "3回戦",
+      "venue": "浜松",
+      "teams": [
+        {
+          "display": "島田樟誠",
+          "score": 1,
+          "won": false,
+          "name": "島田樟誠",
+          "slug": null
+        },
+        {
+          "display": "聖隷クリストファー",
+          "score": 5,
+          "won": true,
+          "name": "聖隷クリストファー",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-21",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権静岡大会",
@@ -913,6 +1074,29 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権静岡大会",
       "round": "4回戦",
+      "venue": "しずてつスタジアム草薙",
+      "teams": [
+        {
+          "display": "浜松開誠館",
+          "score": 5,
+          "won": false,
+          "name": "浜松開誠館",
+          "slug": null
+        },
+        {
+          "display": "磐田東",
+          "score": 6,
+          "won": true,
+          "name": "磐田東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権静岡大会",
+      "round": "4回戦",
       "venue": "ちゅ～るスタジアム清水",
       "teams": [
         {
@@ -927,6 +1111,98 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
           "score": 6,
           "won": true,
           "name": "桐陽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権静岡大会",
+      "round": "4回戦",
+      "venue": "浜松",
+      "teams": [
+        {
+          "display": "浜松学院興誠",
+          "score": 0,
+          "won": false,
+          "name": "浜松学院興誠",
+          "slug": null
+        },
+        {
+          "display": "聖隷クリストファー",
+          "score": 9,
+          "won": true,
+          "name": "聖隷クリストファー",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権静岡大会",
+      "round": "準々決勝",
+      "venue": "しずてつスタジアム草薙",
+      "teams": [
+        {
+          "display": "藤枝明誠",
+          "score": 1,
+          "won": false,
+          "name": "藤枝明誠",
+          "slug": null
+        },
+        {
+          "display": "磐田東",
+          "score": 4,
+          "won": true,
+          "name": "磐田東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権静岡大会",
+      "round": "準々決勝",
+      "venue": "ちゅ～るスタジアム清水",
+      "teams": [
+        {
+          "display": "桐陽",
+          "score": 1,
+          "won": false,
+          "name": "桐陽",
+          "slug": null
+        },
+        {
+          "display": "聖隷クリストファー",
+          "score": 9,
+          "won": true,
+          "name": "聖隷クリストファー",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権静岡大会",
+      "round": "準決勝",
+      "venue": "しずてつスタジアム草薙",
+      "teams": [
+        {
+          "display": "磐田東",
+          "score": 1,
+          "won": false,
+          "name": "磐田東",
+          "slug": null
+        },
+        {
+          "display": "聖隷クリストファー",
+          "score": 2,
+          "won": true,
+          "name": "聖隷クリストファー",
           "slug": null
         }
       ]
@@ -1741,6 +2017,29 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権静岡大会",
       "round": "2回戦",
+      "venue": "焼津",
+      "teams": [
+        {
+          "display": "城南静岡",
+          "score": 2,
+          "won": false,
+          "name": "城南静岡",
+          "slug": null
+        },
+        {
+          "display": "静清",
+          "score": 5,
+          "won": true,
+          "name": "静清",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権静岡大会",
+      "round": "2回戦",
       "venue": "浜松",
       "teams": [
         {
@@ -1948,6 +2247,29 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権静岡大会",
       "round": "4回戦",
+      "venue": "愛鷹",
+      "teams": [
+        {
+          "display": "日大三島",
+          "score": 3,
+          "won": false,
+          "name": "日大三島",
+          "slug": null
+        },
+        {
+          "display": "加藤学園",
+          "score": 5,
+          "won": true,
+          "name": "加藤学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権静岡大会",
+      "round": "4回戦",
       "venue": "しずてつスタジアム草薙",
       "teams": [
         {
@@ -2053,6 +2375,52 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
           "display": "常葉大菊川",
           "score": 7,
           "won": true,
+          "name": "常葉大菊川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権静岡大会",
+      "round": "準決勝",
+      "venue": "しずてつスタジアム草薙",
+      "teams": [
+        {
+          "display": "加藤学園",
+          "score": 2,
+          "won": false,
+          "name": "加藤学園",
+          "slug": null
+        },
+        {
+          "display": "常葉大菊川",
+          "score": 4,
+          "won": true,
+          "name": "常葉大菊川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権静岡大会",
+      "round": "決勝",
+      "venue": "しずてつスタジアム草薙",
+      "teams": [
+        {
+          "display": "聖隷クリストファー",
+          "score": 4,
+          "won": true,
+          "name": "聖隷クリストファー",
+          "slug": null
+        },
+        {
+          "display": "常葉大菊川",
+          "score": 2,
+          "won": false,
           "name": "常葉大菊川",
           "slug": null
         }
@@ -2215,6 +2583,52 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
           "score": 3,
           "won": true,
           "name": "浜松開誠館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "常葉大菊川",
+          "score": 6,
+          "won": true,
+          "name": "常葉大菊川",
+          "slug": null
+        },
+        {
+          "display": "飛龍",
+          "score": 2,
+          "won": false,
+          "name": "飛龍",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "知徳",
+          "score": 8,
+          "won": true,
+          "name": "知徳",
+          "slug": null
+        },
+        {
+          "display": "静清",
+          "score": 0,
+          "won": false,
+          "name": "静清",
           "slug": null
         }
       ]
@@ -2411,6 +2825,29 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "浜松日体",
+          "score": 1,
+          "won": false,
+          "name": "浜松日体",
+          "slug": null
+        },
+        {
+          "display": "常葉大橘",
+          "score": 2,
+          "won": true,
+          "name": "常葉大橘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "東海大静岡翔洋",
           "score": 8,
           "won": true,
@@ -2526,6 +2963,29 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "常葉大菊川",
+          "score": 2,
+          "won": false,
+          "name": "常葉大菊川",
+          "slug": null
+        },
+        {
+          "display": "知徳",
+          "score": 4,
+          "won": true,
+          "name": "知徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "静岡",
           "score": 6,
           "won": true,
@@ -2618,6 +3078,52 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "常葉大橘",
+          "score": 2,
+          "won": false,
+          "name": "常葉大橘",
+          "slug": null
+        },
+        {
+          "display": "東海大静岡翔洋",
+          "score": 3,
+          "won": true,
+          "name": "東海大静岡翔洋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浜松開誠館",
+          "score": 0,
+          "won": false,
+          "name": "浜松開誠館",
+          "slug": null
+        },
+        {
+          "display": "日大三島",
+          "score": 7,
+          "won": true,
+          "name": "日大三島",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "藤枝東",
           "score": 6,
           "won": true,
@@ -2664,6 +3170,29 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "聖隷クリストファー",
+          "score": 5,
+          "won": true,
+          "name": "聖隷クリストファー",
+          "slug": null
+        },
+        {
+          "display": "磐田東",
+          "score": 4,
+          "won": false,
+          "name": "磐田東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
           "display": "浜松商",
           "score": 3,
           "won": true,
@@ -2699,6 +3228,29 @@ export const REGIONAL_SHIZUOKA: RegionalDistrict = {
           "won": false,
           "name": "藤枝東高校",
           "slug": "fujiedahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球静岡県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "知徳",
+          "score": 3,
+          "won": true,
+          "name": "知徳",
+          "slug": null
+        },
+        {
+          "display": "聖隷クリストファー",
+          "score": 1,
+          "won": false,
+          "name": "聖隷クリストファー",
+          "slug": null
         }
       ]
     },

@@ -844,6 +844,29 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
       "date": "2026-03-31",
       "season": "spring",
       "tournament": "第158回 九州地区高等学校野球長崎県大会",
+      "round": "準々決勝",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "九州文化",
+          "score": 7,
+          "won": true,
+          "name": "九州文化",
+          "slug": null
+        },
+        {
+          "display": "海星",
+          "score": 3,
+          "won": false,
+          "name": "海星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "season": "spring",
+      "tournament": "第158回 九州地区高等学校野球長崎県大会",
       "round": "3回戦",
       "venue": "長崎県営野球場",
       "teams": [
@@ -859,6 +882,29 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
           "score": 3,
           "won": true,
           "name": "創成館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-04",
+      "season": "spring",
+      "tournament": "第158回 九州地区高等学校野球長崎県大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "創成館",
+          "score": 1,
+          "won": false,
+          "name": "創成館",
+          "slug": null
+        },
+        {
+          "display": "九州文化",
+          "score": 3,
+          "won": true,
+          "name": "九州文化",
           "slug": null
         }
       ]
@@ -1192,6 +1238,30 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権長崎大会",
       "round": "1回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "佐世保西・佐世保商・平戸",
+          "score": 4,
+          "won": false,
+          "name": "佐世保西・佐世保商・平戸",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "長総大附",
+          "score": 14,
+          "won": true,
+          "name": "長総大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権長崎大会",
+      "round": "1回戦",
       "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
         {
@@ -1330,6 +1400,29 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権長崎大会",
       "round": "2回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "創成館",
+          "score": 11,
+          "won": true,
+          "name": "創成館",
+          "slug": null
+        },
+        {
+          "display": "長総大附",
+          "score": 0,
+          "won": false,
+          "name": "長総大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権長崎大会",
+      "round": "2回戦",
       "venue": "長崎県営野球場",
       "teams": [
         {
@@ -1399,6 +1492,52 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権長崎大会",
       "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "海星",
+          "score": 5,
+          "won": true,
+          "name": "海星",
+          "slug": null
+        },
+        {
+          "display": "鎮西学院",
+          "score": 0,
+          "won": false,
+          "name": "鎮西学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権長崎大会",
+      "round": "2回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "長崎南山",
+          "score": 7,
+          "won": true,
+          "name": "長崎南山",
+          "slug": null
+        },
+        {
+          "display": "西海学園",
+          "score": 4,
+          "won": false,
+          "name": "西海学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権長崎大会",
+      "round": "2回戦",
       "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
         {
@@ -1414,6 +1553,29 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
           "won": true,
           "name": "大村高校",
           "slug": "omura"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権長崎大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "島原中央",
+          "score": 3,
+          "won": true,
+          "name": "島原中央",
+          "slug": null
+        },
+        {
+          "display": "佐世保実",
+          "score": 2,
+          "won": false,
+          "name": "佐世保実",
+          "slug": null
         }
       ]
     },
@@ -1506,6 +1668,29 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
           "won": true,
           "name": "諫早農業高校",
           "slug": "isahayanogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権長崎大会",
+      "round": "3回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "島原中央",
+          "score": 0,
+          "won": false,
+          "name": "島原中央",
+          "slug": null
+        },
+        {
+          "display": "長崎日大",
+          "score": 3,
+          "won": true,
+          "name": "長崎日大",
+          "slug": null
         }
       ]
     },
@@ -1977,6 +2162,29 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球長崎県大会",
       "round": "1回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "瓊浦",
+          "score": 2,
+          "won": true,
+          "name": "瓊浦",
+          "slug": null
+        },
+        {
+          "display": "島原中央",
+          "score": 0,
+          "won": false,
+          "name": "島原中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球長崎県大会",
+      "round": "1回戦",
       "venue": "長崎県営野球場",
       "teams": [
         {
@@ -2046,6 +2254,29 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球長崎県大会",
       "round": "1回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "西海学園",
+          "score": 5,
+          "won": true,
+          "name": "西海学園",
+          "slug": null
+        },
+        {
+          "display": "佐世保実",
+          "score": 1,
+          "won": false,
+          "name": "佐世保実",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球長崎県大会",
+      "round": "1回戦",
       "venue": "長崎県営野球場",
       "teams": [
         {
@@ -2061,6 +2292,29 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
           "won": false,
           "name": "長崎北高校",
           "slug": "nagasakikita"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球長崎県大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "海星",
+          "score": 7,
+          "won": true,
+          "name": "海星",
+          "slug": null
+        },
+        {
+          "display": "西海学園",
+          "score": 0,
+          "won": false,
+          "name": "西海学園",
+          "slug": null
         }
       ]
     },
@@ -2414,6 +2668,29 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球長崎県大会",
       "round": "3回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "長崎日大",
+          "score": 7,
+          "won": true,
+          "name": "長崎日大",
+          "slug": null
+        },
+        {
+          "display": "鎮西学院",
+          "score": 0,
+          "won": false,
+          "name": "鎮西学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球長崎県大会",
+      "round": "3回戦",
       "venue": "佐世保市総合グラウンド野球場",
       "teams": [
         {
@@ -2575,6 +2852,29 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球長崎県大会",
       "round": "準々決勝",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "創成館",
+          "score": 3,
+          "won": false,
+          "name": "創成館",
+          "slug": null
+        },
+        {
+          "display": "長崎日大",
+          "score": 4,
+          "won": true,
+          "name": "長崎日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-04",
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球長崎県大会",
+      "round": "準々決勝",
       "venue": "長崎県営野球場",
       "teams": [
         {
@@ -2636,6 +2936,29 @@ export const REGIONAL_NAGASAKI: RegionalDistrict = {
           "won": false,
           "name": "長崎商業高校",
           "slug": "nagasakishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-11",
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球長崎県大会",
+      "round": "準決勝",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "九州文化",
+          "score": 5,
+          "won": false,
+          "name": "九州文化",
+          "slug": null
+        },
+        {
+          "display": "長崎日大",
+          "score": 6,
+          "won": true,
+          "name": "長崎日大",
+          "slug": null
         }
       ]
     },

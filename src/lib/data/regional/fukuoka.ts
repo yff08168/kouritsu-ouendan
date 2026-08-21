@@ -33,6 +33,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "1回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "久留米学園",
+          "score": 0,
+          "won": false,
+          "name": "久留米学園",
+          "slug": null
+        },
+        {
+          "display": "沖学園",
+          "score": 16,
+          "won": true,
+          "name": "沖学園",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-03-21",
       "season": "spring",
       "tournament": "春季九州地区高校野球 福岡県大会",
@@ -198,6 +221,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       "season": "spring",
       "tournament": "春季九州地区高校野球 福岡県大会",
       "round": "2回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "福工大城東",
+          "score": 10,
+          "won": true,
+          "name": "福工大城東",
+          "slug": null
+        },
+        {
+          "display": "九産大九産",
+          "score": 0,
+          "won": false,
+          "name": "九産大九産",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
       "venue": "久留米市野球場",
       "teams": [
         {
@@ -282,6 +328,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
           "won": true,
           "name": "福岡農業高校",
           "slug": "fukuokanogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-23",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "福岡舞鶴",
+          "score": 19,
+          "won": true,
+          "name": "福岡舞鶴",
+          "slug": null
+        },
+        {
+          "display": "福岡常葉",
+          "score": 0,
+          "won": false,
+          "name": "福岡常葉",
+          "slug": null
         }
       ]
     },
@@ -498,6 +567,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       "season": "spring",
       "tournament": "春季九州地区高校野球 福岡県大会",
       "round": "2回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "大牟田",
+          "score": 5,
+          "won": true,
+          "name": "大牟田",
+          "slug": null
+        },
+        {
+          "display": "沖学園",
+          "score": 2,
+          "won": false,
+          "name": "沖学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-23",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
       "venue": "小郡市野球場",
       "teams": [
         {
@@ -659,6 +751,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       "season": "spring",
       "tournament": "春季九州地区高校野球 福岡県大会",
       "round": "3回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "飯塚",
+          "score": 10,
+          "won": true,
+          "name": "飯塚",
+          "slug": null
+        },
+        {
+          "display": "東筑紫学園",
+          "score": 0,
+          "won": false,
+          "name": "東筑紫学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
       "venue": "筑豊緑地野球場",
       "teams": [
         {
@@ -743,6 +858,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
           "won": false,
           "name": "香住丘高校",
           "slug": "kasumigaoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "八女学院",
+          "score": 6,
+          "won": true,
+          "name": "八女学院",
+          "slug": null
+        },
+        {
+          "display": "柳川",
+          "score": 1,
+          "won": false,
+          "name": "柳川",
+          "slug": null
         }
       ]
     },
@@ -908,6 +1046,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-03-27",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "東福岡",
+          "score": 10,
+          "won": true,
+          "name": "東福岡",
+          "slug": null
+        },
+        {
+          "display": "博多",
+          "score": 3,
+          "won": false,
+          "name": "博多",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-03-26",
       "season": "spring",
       "tournament": "春季九州地区高校野球 福岡県大会",
@@ -1004,6 +1165,52 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       "season": "spring",
       "tournament": "春季九州地区高校野球 福岡県大会",
       "round": "4回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "福工大城東",
+          "score": 2,
+          "won": true,
+          "name": "福工大城東",
+          "slug": null
+        },
+        {
+          "display": "八女学院",
+          "score": 1,
+          "won": false,
+          "name": "八女学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "福岡舞鶴",
+          "score": 3,
+          "won": false,
+          "name": "福岡舞鶴",
+          "slug": null
+        },
+        {
+          "display": "祐誠",
+          "score": 6,
+          "won": true,
+          "name": "祐誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
       "venue": "中間仰木彬記念球場",
       "teams": [
         {
@@ -1042,6 +1249,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
           "won": true,
           "name": "八幡南高校",
           "slug": "yahataminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "大牟田",
+          "score": 4,
+          "won": true,
+          "name": "大牟田",
+          "slug": null
+        },
+        {
+          "display": "東福岡",
+          "score": 2,
+          "won": false,
+          "name": "東福岡",
+          "slug": null
         }
       ]
     },
@@ -1096,6 +1326,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       "season": "spring",
       "tournament": "春季九州地区高校野球 福岡県大会",
       "round": "5回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "福工大城東",
+          "score": 2,
+          "won": false,
+          "name": "福工大城東",
+          "slug": null
+        },
+        {
+          "display": "祐誠",
+          "score": 6,
+          "won": true,
+          "name": "祐誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "5回戦",
       "venue": "桃園球場",
       "teams": [
         {
@@ -1134,6 +1387,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
           "won": false,
           "name": "福岡高校",
           "slug": "fukuoka-fukuoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "準々決勝",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "飯塚",
+          "score": 10,
+          "won": true,
+          "name": "飯塚",
+          "slug": null
+        },
+        {
+          "display": "祐誠",
+          "score": 6,
+          "won": false,
+          "name": "祐誠",
+          "slug": null
         }
       ]
     },
@@ -1234,6 +1510,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       "season": "spring",
       "tournament": "春季九州地区高校野球 福岡県大会",
       "round": "2回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "大和青藍",
+          "score": 0,
+          "won": false,
+          "name": "大和青藍",
+          "slug": null
+        },
+        {
+          "display": "星琳",
+          "score": 7,
+          "won": true,
+          "name": "星琳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
       "venue": "筑豊緑地野球場",
       "teams": [
         {
@@ -1318,6 +1617,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
           "won": false,
           "name": "八幡高校",
           "slug": "fukuoka-hachiman"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "常磐",
+          "score": 5,
+          "won": true,
+          "name": "常磐",
+          "slug": null
+        },
+        {
+          "display": "折尾愛真",
+          "score": 4,
+          "won": false,
+          "name": "折尾愛真",
+          "slug": null
         }
       ]
     },
@@ -2133,6 +2455,75 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       "season": "spring",
       "tournament": "春季九州地区高校野球 福岡県大会",
       "round": "3回戦",
+      "venue": "中間仰木彬記念球場",
+      "teams": [
+        {
+          "display": "近大福岡",
+          "score": 10,
+          "won": true,
+          "name": "近大福岡",
+          "slug": null
+        },
+        {
+          "display": "豊国学園",
+          "score": 1,
+          "won": false,
+          "name": "豊国学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "福大大濠",
+          "score": 10,
+          "won": true,
+          "name": "福大大濠",
+          "slug": null
+        },
+        {
+          "display": "福大若葉",
+          "score": 5,
+          "won": false,
+          "name": "福大若葉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "西南学院",
+          "score": 3,
+          "won": false,
+          "name": "西南学院",
+          "slug": null
+        },
+        {
+          "display": "筑陽学園",
+          "score": 4,
+          "won": true,
+          "name": "筑陽学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
       "venue": "久留米市野球場",
       "teams": [
         {
@@ -2202,6 +2593,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       "season": "spring",
       "tournament": "春季九州地区高校野球 福岡県大会",
       "round": "4回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "希望が丘",
+          "score": 13,
+          "won": true,
+          "name": "希望が丘",
+          "slug": null
+        },
+        {
+          "display": "常磐",
+          "score": 3,
+          "won": false,
+          "name": "常磐",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
       "venue": "大牟田市延命球場",
       "teams": [
         {
@@ -2217,6 +2631,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
           "won": false,
           "name": "太宰府高校",
           "slug": "dazaifu"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "筑紫台",
+          "score": 6,
+          "won": false,
+          "name": "筑紫台",
+          "slug": null
+        },
+        {
+          "display": "純真",
+          "score": 9,
+          "won": true,
+          "name": "純真",
+          "slug": null
         }
       ]
     },
@@ -2239,6 +2676,52 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
           "score": 2,
           "won": false,
           "name": "真颯館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "中間仰木彬記念球場",
+      "teams": [
+        {
+          "display": "東海大福岡",
+          "score": 4,
+          "won": true,
+          "name": "東海大福岡",
+          "slug": null
+        },
+        {
+          "display": "近大福岡",
+          "score": 3,
+          "won": false,
+          "name": "近大福岡",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "season": "spring",
+      "tournament": "春季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "福大大濠",
+          "score": 4,
+          "won": false,
+          "name": "福大大濠",
+          "slug": null
+        },
+        {
+          "display": "筑陽学園",
+          "score": 5,
+          "won": true,
+          "name": "筑陽学園",
           "slug": null
         }
       ]
@@ -2470,6 +2953,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
           "won": false,
           "name": "朝倉高校",
           "slug": "asakura"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "1回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "博多",
+          "score": 4,
+          "won": true,
+          "name": "博多",
+          "slug": null
+        },
+        {
+          "display": "久留米学園",
+          "score": 1,
+          "won": false,
+          "name": "久留米学園",
+          "slug": null
         }
       ]
     },
@@ -2846,6 +3352,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権 福岡大会",
       "round": "2回戦",
+      "venue": "筑豊緑地野球場",
+      "teams": [
+        {
+          "display": "折尾愛真",
+          "score": 6,
+          "won": true,
+          "name": "折尾愛真",
+          "slug": null
+        },
+        {
+          "display": "常磐",
+          "score": 1,
+          "won": false,
+          "name": "常磐",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "2回戦",
       "venue": "光陵グリーンスタジアム",
       "teams": [
         {
@@ -2948,12 +3477,35 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
           "slug": "ukihakogyo"
         },
         {
-          "display": "久留米筑水・八女農業輝翔館",
+          "display": "久留米筑水・八女農業・輝翔館",
           "score": 8,
           "won": false,
-          "name": "久留米筑水・八女農業輝翔館",
+          "name": "久留米筑水・八女農業・輝翔館",
           "slug": null,
           "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "2回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "高稜",
+          "score": 2,
+          "won": false,
+          "name": "高稜",
+          "slug": null
+        },
+        {
+          "display": "豊国学園",
+          "score": 6,
+          "won": true,
+          "name": "豊国学園",
+          "slug": null
         }
       ]
     },
@@ -3308,6 +3860,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権 福岡大会",
       "round": "3回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "福工大城東",
+          "score": 1,
+          "won": true,
+          "name": "福工大城東",
+          "slug": null
+        },
+        {
+          "display": "柳川",
+          "score": 0,
+          "won": false,
+          "name": "柳川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "3回戦",
       "venue": "北九州市民球場",
       "teams": [
         {
@@ -3515,6 +4090,75 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権 福岡大会",
       "round": "4回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "東筑紫学園",
+          "score": 2,
+          "won": false,
+          "name": "東筑紫学園",
+          "slug": null
+        },
+        {
+          "display": "福大大濠",
+          "score": 7,
+          "won": true,
+          "name": "福大大濠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "4回戦",
+      "venue": "筑豊緑地野球場",
+      "teams": [
+        {
+          "display": "希望が丘",
+          "score": 5,
+          "won": true,
+          "name": "希望が丘",
+          "slug": null
+        },
+        {
+          "display": "八女学院",
+          "score": 0,
+          "won": false,
+          "name": "八女学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "4回戦",
+      "venue": "光陵グリーンスタジアム",
+      "teams": [
+        {
+          "display": "折尾愛真",
+          "score": 3,
+          "won": false,
+          "name": "折尾愛真",
+          "slug": null
+        },
+        {
+          "display": "福工大城東",
+          "score": 7,
+          "won": true,
+          "name": "福工大城東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "4回戦",
       "venue": "北九州市民球場",
       "teams": [
         {
@@ -3530,6 +4174,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
           "won": false,
           "name": "明善高校",
           "slug": "meizen"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "4回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "豊国学園",
+          "score": 2,
+          "won": false,
+          "name": "豊国学園",
+          "slug": null
+        },
+        {
+          "display": "九産大九州",
+          "score": 9,
+          "won": true,
+          "name": "九産大九州",
+          "slug": null
         }
       ]
     },
@@ -3584,6 +4251,75 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権 福岡大会",
       "round": "5回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "東福岡",
+          "score": 2,
+          "won": false,
+          "name": "東福岡",
+          "slug": null
+        },
+        {
+          "display": "福大大濠",
+          "score": 15,
+          "won": true,
+          "name": "福大大濠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "5回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "希望が丘",
+          "score": 2,
+          "won": true,
+          "name": "希望が丘",
+          "slug": null
+        },
+        {
+          "display": "福工大城東",
+          "score": 1,
+          "won": false,
+          "name": "福工大城東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "5回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "飯塚",
+          "score": 6,
+          "won": true,
+          "name": "飯塚",
+          "slug": null
+        },
+        {
+          "display": "九産大九州",
+          "score": 0,
+          "won": false,
+          "name": "九産大九州",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "5回戦",
       "venue": "小郡市野球場",
       "teams": [
         {
@@ -3610,6 +4346,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       "venue": "北九州市民球場",
       "teams": [
         {
+          "display": "福大大濠",
+          "score": 1,
+          "won": false,
+          "name": "福大大濠",
+          "slug": null
+        },
+        {
+          "display": "希望が丘",
+          "score": 4,
+          "won": true,
+          "name": "希望が丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "準々決勝",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
           "display": "飯塚",
           "score": 7,
           "won": true,
@@ -3622,6 +4381,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
           "won": false,
           "name": "小倉高校",
           "slug": "kokura"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "準決勝",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "希望が丘",
+          "score": 11,
+          "won": true,
+          "name": "希望が丘",
+          "slug": null
+        },
+        {
+          "display": "飯塚",
+          "score": 6,
+          "won": false,
+          "name": "飯塚",
+          "slug": null
         }
       ]
     },
@@ -3967,6 +4749,53 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
           "won": true,
           "name": "北筑高校",
           "slug": "hokuchiku"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "2回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "福岡舞鶴",
+          "score": 6,
+          "won": true,
+          "name": "福岡舞鶴",
+          "slug": null
+        },
+        {
+          "display": "筑紫台",
+          "score": 3,
+          "won": false,
+          "name": "筑紫台",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "2回戦",
+      "venue": "筑豊緑地野球場",
+      "teams": [
+        {
+          "display": "若松・鞍手竜徳",
+          "score": 5,
+          "won": false,
+          "name": "若松・鞍手竜徳",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "大和青藍",
+          "score": 8,
+          "won": true,
+          "name": "大和青藍",
+          "slug": null
         }
       ]
     },
@@ -4339,6 +5168,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "2回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "沖学園",
+          "score": 11,
+          "won": true,
+          "name": "沖学園",
+          "slug": null
+        },
+        {
+          "display": "福岡常葉",
+          "score": 0,
+          "won": false,
+          "name": "福岡常葉",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-11",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権 福岡大会",
@@ -4404,6 +5256,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
           "won": true,
           "name": "北筑高校",
           "slug": "hokuchiku"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "3回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "九産大九産",
+          "score": 2,
+          "won": false,
+          "name": "九産大九産",
+          "slug": null
+        },
+        {
+          "display": "福岡舞鶴",
+          "score": 3,
+          "won": true,
+          "name": "福岡舞鶴",
+          "slug": null
         }
       ]
     },
@@ -4546,6 +5421,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "3回戦",
+      "venue": "筑豊緑地野球場",
+      "teams": [
+        {
+          "display": "近大福岡",
+          "score": 9,
+          "won": true,
+          "name": "近大福岡",
+          "slug": null
+        },
+        {
+          "display": "慶成",
+          "score": 7,
+          "won": false,
+          "name": "慶成",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-13",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権 福岡大会",
@@ -4634,6 +5532,52 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
           "won": false,
           "name": "福岡魁誠高校",
           "slug": "fukuokakaisei"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "3回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "筑陽学園",
+          "score": 0,
+          "won": false,
+          "name": "筑陽学園",
+          "slug": null
+        },
+        {
+          "display": "沖学園",
+          "score": 1,
+          "won": true,
+          "name": "沖学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "4回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "九国大付",
+          "score": 6,
+          "won": true,
+          "name": "九国大付",
+          "slug": null
+        },
+        {
+          "display": "福大若葉",
+          "score": 0,
+          "won": false,
+          "name": "福大若葉",
+          "slug": null
         }
       ]
     },
@@ -4734,6 +5678,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権 福岡大会",
       "round": "4回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "近大福岡",
+          "score": 1,
+          "won": true,
+          "name": "近大福岡",
+          "slug": null
+        },
+        {
+          "display": "大牟田",
+          "score": 0,
+          "won": false,
+          "name": "大牟田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "4回戦",
       "venue": "筑豊緑地野球場",
       "teams": [
         {
@@ -4803,6 +5770,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権 福岡大会",
       "round": "5回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "西短大附",
+          "score": 2,
+          "won": false,
+          "name": "西短大附",
+          "slug": null
+        },
+        {
+          "display": "祐誠",
+          "score": 4,
+          "won": true,
+          "name": "祐誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "5回戦",
       "venue": "北九州市民球場",
       "teams": [
         {
@@ -4840,6 +5830,29 @@ export const REGIONAL_FUKUOKA: RegionalDistrict = {
           "score": 0,
           "won": false,
           "name": "沖学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 福岡大会",
+      "round": "準々決勝",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "九国大付",
+          "score": 4,
+          "won": true,
+          "name": "九国大付",
+          "slug": null
+        },
+        {
+          "display": "祐誠",
+          "score": 1,
+          "won": false,
+          "name": "祐誠",
           "slug": null
         }
       ]

@@ -455,6 +455,29 @@ export const REGIONAL_KAGAWA: RegionalDistrict = {
       "venue": "レクザムボールパーク丸亀（丸亀市民球場）",
       "teams": [
         {
+          "display": "四国学院大香川西",
+          "score": 8,
+          "won": true,
+          "name": "四国学院大香川西",
+          "slug": null
+        },
+        {
+          "display": "大手前高松",
+          "score": 5,
+          "won": false,
+          "name": "大手前高松",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "season": "spring",
+      "tournament": "令和8年度(第79回)春季四国地区高等学校野球 香川県大会",
+      "round": "3回戦",
+      "venue": "レクザムボールパーク丸亀（丸亀市民球場）",
+      "teams": [
+        {
           "display": "高松南",
           "score": 1,
           "won": false,
@@ -1254,6 +1277,29 @@ export const REGIONAL_KAGAWA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権香川大会",
+      "round": "3回戦",
+      "venue": "レクザムスタジアム（県営球場）",
+      "teams": [
+        {
+          "display": "英明",
+          "score": 12,
+          "won": true,
+          "name": "英明",
+          "slug": null
+        },
+        {
+          "display": "四国学院大香川西",
+          "score": 0,
+          "won": false,
+          "name": "四国学院大香川西",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-19",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権香川大会",
@@ -1457,6 +1503,29 @@ export const REGIONAL_KAGAWA: RegionalDistrict = {
           "won": true,
           "name": "高松商業高校",
           "slug": "takamatsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権香川大会",
+      "round": "準決勝",
+      "venue": "レクザムスタジアム（県営球場）",
+      "teams": [
+        {
+          "display": "英明",
+          "score": 10,
+          "won": true,
+          "name": "英明",
+          "slug": null
+        },
+        {
+          "display": "尽誠学園",
+          "score": 4,
+          "won": false,
+          "name": "尽誠学園",
+          "slug": null
         }
       ]
     },
@@ -1714,6 +1783,30 @@ export const REGIONAL_KAGAWA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "令和7年度(第78回)秋季四国地区高等学校野球 香川県大会",
+      "round": "2回戦",
+      "venue": "レクザムボールパーク丸亀（丸亀市民球場）",
+      "teams": [
+        {
+          "display": "石田･坂出･飯山",
+          "score": 2,
+          "won": false,
+          "name": "石田･坂出･飯山",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "寒川",
+          "score": 13,
+          "won": true,
+          "name": "寒川",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-20",
       "season": "autumn",
       "tournament": "令和7年度(第78回)秋季四国地区高等学校野球 香川県大会",
@@ -1967,6 +2060,29 @@ export const REGIONAL_KAGAWA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2025-09-23",
+      "season": "autumn",
+      "tournament": "令和7年度(第78回)秋季四国地区高等学校野球 香川県大会",
+      "round": "準々決勝",
+      "venue": "レクザムボールパーク丸亀（丸亀市民球場）",
+      "teams": [
+        {
+          "display": "英明",
+          "score": 5,
+          "won": true,
+          "name": "英明",
+          "slug": null
+        },
+        {
+          "display": "高松中央",
+          "score": 3,
+          "won": false,
+          "name": "高松中央",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-27",
       "season": "autumn",
       "tournament": "令和7年度(第78回)秋季四国地区高等学校野球 香川県大会",
@@ -2147,6 +2263,98 @@ export const REGIONAL_KAGAWA: RegionalDistrict = {
           "won": false,
           "name": "高松商業高校",
           "slug": "takamatsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-04",
+      "season": "autumn",
+      "tournament": "令和7年度(第78回)秋季四国地区高等学校野球 香川県大会",
+      "round": "準決勝",
+      "venue": "レクザムスタジアム（県営球場）",
+      "teams": [
+        {
+          "display": "四国学院大香川西",
+          "score": 1,
+          "won": false,
+          "name": "四国学院大香川西",
+          "slug": null
+        },
+        {
+          "display": "英明",
+          "score": 4,
+          "won": true,
+          "name": "英明",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-04",
+      "season": "autumn",
+      "tournament": "令和7年度(第78回)秋季四国地区高等学校野球 香川県大会",
+      "round": "準決勝",
+      "venue": "レクザムスタジアム（県営球場）",
+      "teams": [
+        {
+          "display": "蓬莱",
+          "score": 5,
+          "won": true,
+          "name": "蓬莱",
+          "slug": null
+        },
+        {
+          "display": "尽誠学園",
+          "score": 4,
+          "won": false,
+          "name": "尽誠学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "令和7年度(第78回)秋季四国地区高等学校野球 香川県大会",
+      "round": "3位決定戦",
+      "venue": "レクザムスタジアム（県営球場）",
+      "teams": [
+        {
+          "display": "四国学院大香川西",
+          "score": 0,
+          "won": false,
+          "name": "四国学院大香川西",
+          "slug": null
+        },
+        {
+          "display": "尽誠学園",
+          "score": 5,
+          "won": true,
+          "name": "尽誠学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "令和7年度(第78回)秋季四国地区高等学校野球 香川県大会",
+      "round": "決勝",
+      "venue": "レクザムスタジアム（県営球場）",
+      "teams": [
+        {
+          "display": "英明",
+          "score": 7,
+          "won": false,
+          "name": "英明",
+          "slug": null
+        },
+        {
+          "display": "蓬莱",
+          "score": 12,
+          "won": true,
+          "name": "蓬莱",
+          "slug": null
         }
       ]
     }

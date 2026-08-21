@@ -264,6 +264,29 @@ export const REGIONAL_FUKUI: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "2回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "敦賀気比",
+          "score": 4,
+          "won": true,
+          "name": "敦賀気比",
+          "slug": null
+        },
+        {
+          "display": "北陸",
+          "score": 3,
+          "won": false,
+          "name": "北陸",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-19",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権福井大会",
@@ -433,6 +456,30 @@ export const REGIONAL_FUKUI: RegionalDistrict = {
       "venue": "セーレン・ドリームスタジアム",
       "teams": [
         {
+          "display": "敦賀気比",
+          "score": 11,
+          "won": true,
+          "name": "敦賀気比",
+          "slug": null
+        },
+        {
+          "display": "福農・明成",
+          "score": 1,
+          "won": false,
+          "name": "福農・明成",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "準々決勝",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
           "display": "敦賀",
           "score": 5,
           "won": true,
@@ -445,6 +492,29 @@ export const REGIONAL_FUKUI: RegionalDistrict = {
           "won": false,
           "name": "大野高校",
           "slug": "fukui-ono"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "準々決勝",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "工大福井",
+          "score": 10,
+          "won": true,
+          "name": "工大福井",
+          "slug": null
+        },
+        {
+          "display": "啓新",
+          "score": 0,
+          "won": false,
+          "name": "啓新",
+          "slug": null
         }
       ]
     },
@@ -514,6 +584,29 @@ export const REGIONAL_FUKUI: RegionalDistrict = {
           "won": false,
           "name": "福井商業高校",
           "slug": "fukuishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福井大会",
+      "round": "決勝",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "敦賀気比",
+          "score": 4,
+          "won": true,
+          "name": "敦賀気比",
+          "slug": null
+        },
+        {
+          "display": "工大福井",
+          "score": 1,
+          "won": false,
+          "name": "工大福井",
+          "slug": null
         }
       ]
     },
@@ -778,6 +871,30 @@ export const REGIONAL_FUKUI: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "敦賀気比",
+          "score": 4,
+          "won": true,
+          "name": "敦賀気比",
+          "slug": null
+        },
+        {
+          "display": "福農・明成",
+          "score": 2,
+          "won": false,
+          "name": "福農・明成",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "丹生",
           "score": 3,
           "won": true,
@@ -813,6 +930,29 @@ export const REGIONAL_FUKUI: RegionalDistrict = {
           "won": true,
           "name": "武生高校",
           "slug": "takefu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "啓新",
+          "score": 4,
+          "won": false,
+          "name": "啓新",
+          "slug": null
+        },
+        {
+          "display": "工大福井",
+          "score": 6,
+          "won": true,
+          "name": "工大福井",
+          "slug": null
         }
       ]
     },
@@ -997,6 +1137,29 @@ export const REGIONAL_FUKUI: RegionalDistrict = {
           "won": true,
           "name": "若狭高校",
           "slug": "wakasa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "敦賀気比",
+          "score": 7,
+          "won": true,
+          "name": "敦賀気比",
+          "slug": null
+        },
+        {
+          "display": "工大福井",
+          "score": 0,
+          "won": false,
+          "name": "工大福井",
+          "slug": null
         }
       ]
     },
@@ -1504,6 +1667,29 @@ export const REGIONAL_FUKUI: RegionalDistrict = {
           "won": true,
           "name": "福井商業高校",
           "slug": "fukuishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "season": "autumn",
+      "tournament": "第153回北信越地区高等学校野球福井県大会（秋季）",
+      "round": "準々決勝",
+      "venue": "敦賀総合運動公園野球場",
+      "teams": [
+        {
+          "display": "啓新",
+          "score": 6,
+          "won": false,
+          "name": "啓新",
+          "slug": null
+        },
+        {
+          "display": "敦賀気比",
+          "score": 7,
+          "won": true,
+          "name": "敦賀気比",
+          "slug": null
         }
       ]
     },

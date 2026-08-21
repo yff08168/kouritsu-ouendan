@@ -245,6 +245,29 @@ export const REGIONAL_ISHIKAWA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権石川大会",
       "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "北陸学院",
+          "score": 2,
+          "won": false,
+          "name": "北陸学院",
+          "slug": null
+        },
+        {
+          "display": "星稜",
+          "score": 6,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権石川大会",
+      "round": "2回戦",
       "venue": "金沢市民野球場",
       "teams": [
         {
@@ -777,6 +800,29 @@ export const REGIONAL_ISHIKAWA: RegionalDistrict = {
       "venue": "石川県立野球場",
       "teams": [
         {
+          "display": "金沢",
+          "score": 10,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "星稜",
+          "score": 3,
+          "won": false,
+          "name": "星稜",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権石川大会",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
           "display": "金沢市立工業",
           "score": 2,
           "won": true,
@@ -788,6 +834,29 @@ export const REGIONAL_ISHIKAWA: RegionalDistrict = {
           "score": 1,
           "won": false,
           "name": "金沢学院大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権石川大会",
+      "round": "準々決勝",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 4,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "日本航空石川",
+          "score": 2,
+          "won": false,
+          "name": "日本航空石川",
           "slug": null
         }
       ]
@@ -834,6 +903,52 @@ export const REGIONAL_ISHIKAWA: RegionalDistrict = {
           "score": 3,
           "won": true,
           "name": "金沢",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権石川大会",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 12,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "小松大谷",
+          "score": 8,
+          "won": false,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-26",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権石川大会",
+      "round": "決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 3,
+          "won": false,
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "遊学館",
+          "score": 4,
+          "won": true,
+          "name": "遊学館",
           "slug": null
         }
       ]

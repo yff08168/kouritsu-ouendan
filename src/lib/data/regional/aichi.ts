@@ -10,6 +10,167 @@ export const REGIONAL_AICHI: RegionalDistrict = {
   "sourceUrl": "https://catvase.jp/",
   "games": [
     {
+      "date": "2026-07-28",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "決勝",
+      "venue": "バンテリンドームナゴヤ",
+      "teams": [
+        {
+          "display": "愛工大名電",
+          "score": 1,
+          "won": false,
+          "name": "愛工大名電",
+          "slug": null
+        },
+        {
+          "display": "享栄",
+          "score": 4,
+          "won": true,
+          "name": "享栄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "準決勝",
+      "venue": "バンテリンドームナゴヤ",
+      "teams": [
+        {
+          "display": "中部大春日丘",
+          "score": 1,
+          "won": false,
+          "name": "中部大春日丘",
+          "slug": null
+        },
+        {
+          "display": "愛工大名電",
+          "score": 6,
+          "won": true,
+          "name": "愛工大名電",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "準決勝",
+      "venue": "バンテリンドームナゴヤ",
+      "teams": [
+        {
+          "display": "星城",
+          "score": 1,
+          "won": false,
+          "name": "星城",
+          "slug": null
+        },
+        {
+          "display": "享栄",
+          "score": 3,
+          "won": true,
+          "name": "享栄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "準々決勝",
+      "venue": "小牧市民球場",
+      "teams": [
+        {
+          "display": "中部大春日丘",
+          "score": 10,
+          "won": true,
+          "name": "中部大春日丘",
+          "slug": null
+        },
+        {
+          "display": "名古屋たちばな",
+          "score": 1,
+          "won": false,
+          "name": "名古屋たちばな",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "準々決勝",
+      "venue": "岡崎レッドダイヤモンドスタジアム",
+      "teams": [
+        {
+          "display": "豊川",
+          "score": 0,
+          "won": false,
+          "name": "豊川",
+          "slug": null
+        },
+        {
+          "display": "愛工大名電",
+          "score": 7,
+          "won": true,
+          "name": "愛工大名電",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "準々決勝",
+      "venue": "岡崎レッドダイヤモンドスタジアム",
+      "teams": [
+        {
+          "display": "愛知",
+          "score": 2,
+          "won": false,
+          "name": "愛知",
+          "slug": null
+        },
+        {
+          "display": "享栄",
+          "score": 10,
+          "won": true,
+          "name": "享栄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "準々決勝",
+      "venue": "小牧市民球場",
+      "teams": [
+        {
+          "display": "星城",
+          "score": 5,
+          "won": true,
+          "name": "星城",
+          "slug": null
+        },
+        {
+          "display": "東邦",
+          "score": 2,
+          "won": false,
+          "name": "東邦",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-21",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権愛知大会",
@@ -60,6 +221,29 @@ export const REGIONAL_AICHI: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権愛知大会",
       "round": "5回戦",
+      "venue": "岡崎レッドダイヤモンドスタジアム",
+      "teams": [
+        {
+          "display": "享栄",
+          "score": 4,
+          "won": true,
+          "name": "享栄",
+          "slug": null
+        },
+        {
+          "display": "中京大中京",
+          "score": 1,
+          "won": false,
+          "name": "中京大中京",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "5回戦",
       "venue": "豊田球場",
       "teams": [
         {
@@ -74,6 +258,52 @@ export const REGIONAL_AICHI: RegionalDistrict = {
           "score": 6,
           "won": true,
           "name": "東邦",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "5回戦",
+      "venue": "小牧市民球場",
+      "teams": [
+        {
+          "display": "愛知",
+          "score": 4,
+          "won": true,
+          "name": "愛知",
+          "slug": null
+        },
+        {
+          "display": "至学館",
+          "score": 2,
+          "won": false,
+          "name": "至学館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "5回戦",
+      "venue": "豊田球場",
+      "teams": [
+        {
+          "display": "名古屋たちばな",
+          "score": 8,
+          "won": true,
+          "name": "名古屋たちばな",
+          "slug": null
+        },
+        {
+          "display": "名古屋",
+          "score": 2,
+          "won": false,
+          "name": "名古屋",
           "slug": null
         }
       ]
@@ -152,6 +382,52 @@ export const REGIONAL_AICHI: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権愛知大会",
       "round": "4回戦",
+      "venue": "岡崎レッドダイヤモンドスタジアム",
+      "teams": [
+        {
+          "display": "豊川",
+          "score": 4,
+          "won": true,
+          "name": "豊川",
+          "slug": null
+        },
+        {
+          "display": "大成",
+          "score": 0,
+          "won": false,
+          "name": "大成",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "4回戦",
+      "venue": "小牧市民球場",
+      "teams": [
+        {
+          "display": "愛知",
+          "score": 3,
+          "won": true,
+          "name": "愛知",
+          "slug": null
+        },
+        {
+          "display": "誠信",
+          "score": 1,
+          "won": false,
+          "name": "誠信",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "4回戦",
       "venue": "春日井市民球場",
       "teams": [
         {
@@ -190,6 +466,29 @@ export const REGIONAL_AICHI: RegionalDistrict = {
           "won": false,
           "name": "時習館高校",
           "slug": "jishukan"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "4回戦",
+      "venue": "豊田球場",
+      "teams": [
+        {
+          "display": "名古屋",
+          "score": 4,
+          "won": true,
+          "name": "名古屋",
+          "slug": null
+        },
+        {
+          "display": "大同大大同",
+          "score": 1,
+          "won": false,
+          "name": "大同大大同",
+          "slug": null
         }
       ]
     },
@@ -244,6 +543,29 @@ export const REGIONAL_AICHI: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権愛知大会",
       "round": "4回戦",
+      "venue": "岡崎レッドダイヤモンドスタジアム",
+      "teams": [
+        {
+          "display": "享栄",
+          "score": 4,
+          "won": true,
+          "name": "享栄",
+          "slug": null
+        },
+        {
+          "display": "愛知啓成",
+          "score": 2,
+          "won": false,
+          "name": "愛知啓成",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "4回戦",
       "venue": "春日井市民球場",
       "teams": [
         {
@@ -290,6 +612,29 @@ export const REGIONAL_AICHI: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権愛知大会",
       "round": "4回戦",
+      "venue": "小牧市民球場",
+      "teams": [
+        {
+          "display": "清林館",
+          "score": 2,
+          "won": false,
+          "name": "清林館",
+          "slug": null
+        },
+        {
+          "display": "中部大春日丘",
+          "score": 12,
+          "won": true,
+          "name": "中部大春日丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "4回戦",
       "venue": "刈谷球場",
       "teams": [
         {
@@ -327,6 +672,29 @@ export const REGIONAL_AICHI: RegionalDistrict = {
           "score": 1,
           "won": true,
           "name": "東邦",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "4回戦",
+      "venue": "小牧市民球場",
+      "teams": [
+        {
+          "display": "豊田大谷",
+          "score": 0,
+          "won": false,
+          "name": "豊田大谷",
+          "slug": null
+        },
+        {
+          "display": "愛工大名電",
+          "score": 7,
+          "won": true,
+          "name": "愛工大名電",
           "slug": null
         }
       ]
@@ -419,6 +787,29 @@ export const REGIONAL_AICHI: RegionalDistrict = {
           "score": 8,
           "won": true,
           "name": "大成",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "3回戦",
+      "venue": "豊田球場",
+      "teams": [
+        {
+          "display": "清林館",
+          "score": 6,
+          "won": true,
+          "name": "清林館",
+          "slug": null
+        },
+        {
+          "display": "人環大岡崎",
+          "score": 2,
+          "won": false,
+          "name": "人環大岡崎",
           "slug": null
         }
       ]
@@ -704,6 +1095,29 @@ export const REGIONAL_AICHI: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権愛知大会",
       "round": "3回戦",
+      "venue": "刈谷球場",
+      "teams": [
+        {
+          "display": "中部大第一",
+          "score": 1,
+          "won": false,
+          "name": "中部大第一",
+          "slug": null
+        },
+        {
+          "display": "星城",
+          "score": 7,
+          "won": true,
+          "name": "星城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "3回戦",
       "venue": "豊橋市民球場",
       "teams": [
         {
@@ -718,6 +1132,52 @@ export const REGIONAL_AICHI: RegionalDistrict = {
           "score": 10,
           "won": true,
           "name": "豊川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "3回戦",
+      "venue": "小牧市民球場",
+      "teams": [
+        {
+          "display": "誠信",
+          "score": 4,
+          "won": true,
+          "name": "誠信",
+          "slug": null
+        },
+        {
+          "display": "岡崎城西",
+          "score": 1,
+          "won": false,
+          "name": "岡崎城西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "3回戦",
+      "venue": "熱田愛知時計120スタジアム",
+      "teams": [
+        {
+          "display": "至学館",
+          "score": 5,
+          "won": true,
+          "name": "至学館",
+          "slug": null
+        },
+        {
+          "display": "日本福祉大付属",
+          "score": 1,
+          "won": false,
+          "name": "日本福祉大付属",
           "slug": null
         }
       ]
@@ -810,6 +1270,29 @@ export const REGIONAL_AICHI: RegionalDistrict = {
           "score": 7,
           "won": true,
           "name": "中部大春日丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "3回戦",
+      "venue": "岡崎レッドダイヤモンドスタジアム",
+      "teams": [
+        {
+          "display": "名経大市邨",
+          "score": 0,
+          "won": false,
+          "name": "名経大市邨",
+          "slug": null
+        },
+        {
+          "display": "東邦",
+          "score": 1,
+          "won": true,
+          "name": "東邦",
           "slug": null
         }
       ]
@@ -948,6 +1431,29 @@ export const REGIONAL_AICHI: RegionalDistrict = {
           "score": 11,
           "won": true,
           "name": "愛工大名電",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "3回戦",
+      "venue": "岡崎レッドダイヤモンドスタジアム",
+      "teams": [
+        {
+          "display": "東海",
+          "score": 1,
+          "won": false,
+          "name": "東海",
+          "slug": null
+        },
+        {
+          "display": "名古屋たちばな",
+          "score": 3,
+          "won": true,
+          "name": "名古屋たちばな",
           "slug": null
         }
       ]
@@ -1344,6 +1850,29 @@ export const REGIONAL_AICHI: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "2回戦",
+      "venue": "阿久比球場",
+      "teams": [
+        {
+          "display": "科技高豊田",
+          "score": 4,
+          "won": false,
+          "name": "科技高豊田",
+          "slug": null
+        },
+        {
+          "display": "大同大大同",
+          "score": 5,
+          "won": true,
+          "name": "大同大大同",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-08",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権愛知大会",
@@ -1363,6 +1892,29 @@ export const REGIONAL_AICHI: RegionalDistrict = {
           "won": true,
           "name": "知立東高校",
           "slug": "chiryuhigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "2回戦",
+      "venue": "小牧市民球場",
+      "teams": [
+        {
+          "display": "名城大附属",
+          "score": 2,
+          "won": false,
+          "name": "名城大附属",
+          "slug": null
+        },
+        {
+          "display": "名古屋",
+          "score": 7,
+          "won": true,
+          "name": "名古屋",
+          "slug": null
         }
       ]
     },
@@ -1762,6 +2314,29 @@ export const REGIONAL_AICHI: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権愛知大会",
       "round": "2回戦",
+      "venue": "熱田愛知時計120スタジアム",
+      "teams": [
+        {
+          "display": "至学館",
+          "score": 7,
+          "won": true,
+          "name": "至学館",
+          "slug": null
+        },
+        {
+          "display": "同朋",
+          "score": 0,
+          "won": false,
+          "name": "同朋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "2回戦",
       "venue": "岡崎レッドダイヤモンドスタジアム",
       "teams": [
         {
@@ -1939,6 +2514,29 @@ export const REGIONAL_AICHI: RegionalDistrict = {
           "won": true,
           "name": "桜台高校",
           "slug": "sakuradai"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "1回戦",
+      "venue": "小牧市民球場",
+      "teams": [
+        {
+          "display": "修文学院",
+          "score": 5,
+          "won": false,
+          "name": "修文学院",
+          "slug": null
+        },
+        {
+          "display": "清林館",
+          "score": 6,
+          "won": true,
+          "name": "清林館",
+          "slug": null
         }
       ]
     },
@@ -2131,6 +2729,53 @@ export const REGIONAL_AICHI: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権愛知大会",
       "round": "1回戦",
+      "venue": "一宮市営球場",
+      "teams": [
+        {
+          "display": "海陽学園",
+          "score": 0,
+          "won": false,
+          "name": "海陽学園",
+          "slug": null
+        },
+        {
+          "display": "大成",
+          "score": 10,
+          "won": true,
+          "name": "大成",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "2回戦",
+      "venue": "豊田球場",
+      "teams": [
+        {
+          "display": "瀬戸工科・瀬戸北総合",
+          "score": 0,
+          "won": false,
+          "name": "瀬戸工科・瀬戸北総合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "人環大岡崎",
+          "score": 6,
+          "won": true,
+          "name": "人環大岡崎",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "1回戦",
       "venue": "阿久比球場",
       "teams": [
         {
@@ -2238,6 +2883,29 @@ export const REGIONAL_AICHI: RegionalDistrict = {
           "won": true,
           "name": "大府高校",
           "slug": "obu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "2回戦",
+      "venue": "刈谷球場",
+      "teams": [
+        {
+          "display": "愛産大三河",
+          "score": 1,
+          "won": true,
+          "name": "愛産大三河",
+          "slug": null
+        },
+        {
+          "display": "南山",
+          "score": 0,
+          "won": false,
+          "name": "南山",
+          "slug": null
         }
       ]
     },
@@ -2422,6 +3090,29 @@ export const REGIONAL_AICHI: RegionalDistrict = {
           "score": 10,
           "won": true,
           "name": "桜丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "1回戦",
+      "venue": "一宮市営球場",
+      "teams": [
+        {
+          "display": "杜若",
+          "score": 5,
+          "won": false,
+          "name": "杜若",
+          "slug": null
+        },
+        {
+          "display": "愛知黎明",
+          "score": 6,
+          "won": true,
+          "name": "愛知黎明",
           "slug": null
         }
       ]
@@ -2653,6 +3344,52 @@ export const REGIONAL_AICHI: RegionalDistrict = {
           "won": true,
           "name": "犬山総合高校",
           "slug": "inuyamasogo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "1回戦",
+      "venue": "春日井市民球場",
+      "teams": [
+        {
+          "display": "大同大大同",
+          "score": 4,
+          "won": true,
+          "name": "大同大大同",
+          "slug": null
+        },
+        {
+          "display": "名経大高蔵",
+          "score": 3,
+          "won": false,
+          "name": "名経大高蔵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛知大会",
+      "round": "1回戦",
+      "venue": "熱田愛知時計120スタジアム",
+      "teams": [
+        {
+          "display": "豊橋中央",
+          "score": 1,
+          "won": false,
+          "name": "豊橋中央",
+          "slug": null
+        },
+        {
+          "display": "名古屋",
+          "score": 3,
+          "won": true,
+          "name": "名古屋",
+          "slug": null
         }
       ]
     },

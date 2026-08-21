@@ -268,6 +268,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       "season": "spring",
       "tournament": "第78回 春季関東地区高校野球茨城県大会 地区予選",
       "round": "代表決定戦",
+      "venue": "ノーブルホームスタジアム水戸",
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 6,
+          "won": true,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "清真学園",
+          "score": 0,
+          "won": false,
+          "name": "清真学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-09",
+      "season": "spring",
+      "tournament": "第78回 春季関東地区高校野球茨城県大会 地区予選",
+      "round": "代表決定戦",
       "venue": "茨城県営球場",
       "teams": [
         {
@@ -306,6 +329,30 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
           "won": true,
           "name": "鹿島高校",
           "slug": "kashima"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-09",
+      "season": "spring",
+      "tournament": "第78回 春季関東地区高校野球茨城県大会 地区予選",
+      "round": "1回戦",
+      "venue": "J:COMスタジアム土浦",
+      "teams": [
+        {
+          "display": "東風",
+          "score": 0,
+          "won": false,
+          "name": "東風",
+          "slug": null
+        },
+        {
+          "display": "麻生・つく国",
+          "score": 7,
+          "won": true,
+          "name": "麻生・つく国",
+          "slug": null,
+          "combined": true
         }
       ]
     },
@@ -892,6 +939,30 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       "season": "spring",
       "tournament": "第78回 春季関東地区高校野球茨城県大会 地区予選",
       "round": "代表決定戦",
+      "venue": "ひたちなか市民球場",
+      "teams": [
+        {
+          "display": "水郡連合",
+          "score": 2,
+          "won": false,
+          "name": "水郡連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "科技日立",
+          "score": 9,
+          "won": true,
+          "name": "科技日立",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-13",
+      "season": "spring",
+      "tournament": "第78回 春季関東地区高校野球茨城県大会 地区予選",
+      "round": "代表決定戦",
       "venue": "茨城トヨタスポーツパークうしく（牛久運動公園）野球場",
       "teams": [
         {
@@ -989,6 +1060,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       "venue": "笠間市民球場",
       "teams": [
         {
+          "display": "水戸啓明",
+          "score": 1,
+          "won": false,
+          "name": "水戸啓明",
+          "slug": null
+        },
+        {
+          "display": "常総学院",
+          "score": 6,
+          "won": true,
+          "name": "常総学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第78回春季関東地区高等学校野球茨城県大会",
+      "round": "1回戦",
+      "venue": "笠間市民球場",
+      "teams": [
+        {
           "display": "水戸葵陵",
           "score": 8,
           "won": true,
@@ -1024,6 +1118,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
           "won": true,
           "name": "取手松陽高校",
           "slug": "torideshoyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第78回春季関東地区高等学校野球茨城県大会",
+      "round": "2回戦",
+      "venue": "笠間市民球場",
+      "teams": [
+        {
+          "display": "水城",
+          "score": 6,
+          "won": true,
+          "name": "水城",
+          "slug": null
+        },
+        {
+          "display": "明秀日立",
+          "score": 5,
+          "won": false,
+          "name": "明秀日立",
+          "slug": null
         }
       ]
     },
@@ -1139,6 +1256,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
           "won": false,
           "name": "下妻第二高校",
           "slug": "shimotsumadaini"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-20",
+      "season": "spring",
+      "tournament": "第78回春季関東地区高等学校野球茨城県大会",
+      "round": "2回戦",
+      "venue": "笠間市民球場",
+      "teams": [
+        {
+          "display": "水戸葵陵",
+          "score": 6,
+          "won": true,
+          "name": "水戸葵陵",
+          "slug": null
+        },
+        {
+          "display": "岩瀬日大",
+          "score": 3,
+          "won": false,
+          "name": "岩瀬日大",
+          "slug": null
         }
       ]
     },
@@ -1396,6 +1536,52 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "第78回春季関東地区高等学校野球茨城県大会",
+      "round": "3回戦",
+      "venue": "笠間市民球場",
+      "teams": [
+        {
+          "display": "水戸葵陵",
+          "score": 5,
+          "won": false,
+          "name": "水戸葵陵",
+          "slug": null
+        },
+        {
+          "display": "水城",
+          "score": 6,
+          "won": true,
+          "name": "水城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "第78回春季関東地区高等学校野球茨城県大会",
+      "round": "3回戦",
+      "venue": "J:COMスタジアム土浦",
+      "teams": [
+        {
+          "display": "霞ヶ浦",
+          "score": 7,
+          "won": false,
+          "name": "霞ヶ浦",
+          "slug": null
+        },
+        {
+          "display": "鹿島学園",
+          "score": 9,
+          "won": true,
+          "name": "鹿島学園",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-04-26",
       "season": "spring",
       "tournament": "第78回春季関東地区高等学校野球茨城県大会",
@@ -1415,6 +1601,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
           "won": false,
           "name": "日立商業高校",
           "slug": "hitachishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "第78回春季関東地区高等学校野球茨城県大会",
+      "round": "3回戦",
+      "venue": "J:COMスタジアム土浦",
+      "teams": [
+        {
+          "display": "茨城",
+          "score": 1,
+          "won": false,
+          "name": "茨城",
+          "slug": null
+        },
+        {
+          "display": "土浦日大",
+          "score": 8,
+          "won": true,
+          "name": "土浦日大",
+          "slug": null
         }
       ]
     },
@@ -1469,6 +1678,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       "season": "spring",
       "tournament": "第78回春季関東地区高等学校野球茨城県大会",
       "round": "準々決勝",
+      "venue": "J:COMスタジアム土浦",
+      "teams": [
+        {
+          "display": "東洋大牛久",
+          "score": 7,
+          "won": true,
+          "name": "東洋大牛久",
+          "slug": null
+        },
+        {
+          "display": "鹿島学園",
+          "score": 2,
+          "won": false,
+          "name": "鹿島学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "season": "spring",
+      "tournament": "第78回春季関東地区高等学校野球茨城県大会",
+      "round": "準々決勝",
       "venue": "ノーブルホームスタジアム水戸",
       "teams": [
         {
@@ -1483,6 +1715,121 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
           "score": 3,
           "won": true,
           "name": "水城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "season": "spring",
+      "tournament": "第78回春季関東地区高等学校野球茨城県大会",
+      "round": "準々決勝",
+      "venue": "J:COMスタジアム土浦",
+      "teams": [
+        {
+          "display": "土浦日大",
+          "score": 6,
+          "won": true,
+          "name": "土浦日大",
+          "slug": null
+        },
+        {
+          "display": "常総学院",
+          "score": 1,
+          "won": false,
+          "name": "常総学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "season": "spring",
+      "tournament": "第78回春季関東地区高等学校野球茨城県大会",
+      "round": "準々決勝",
+      "venue": "ノーブルホームスタジアム水戸",
+      "teams": [
+        {
+          "display": "常磐大",
+          "score": 7,
+          "won": true,
+          "name": "常磐大",
+          "slug": null
+        },
+        {
+          "display": "ウェルネス",
+          "score": 1,
+          "won": false,
+          "name": "ウェルネス",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "season": "spring",
+      "tournament": "第78回春季関東地区高等学校野球茨城県大会",
+      "round": "準決勝",
+      "venue": "J:COMスタジアム土浦",
+      "teams": [
+        {
+          "display": "東洋大牛久",
+          "score": 3,
+          "won": false,
+          "name": "東洋大牛久",
+          "slug": null
+        },
+        {
+          "display": "土浦日大",
+          "score": 10,
+          "won": true,
+          "name": "土浦日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "season": "spring",
+      "tournament": "第78回春季関東地区高等学校野球茨城県大会",
+      "round": "準決勝",
+      "venue": "J:COMスタジアム土浦",
+      "teams": [
+        {
+          "display": "水城",
+          "score": 7,
+          "won": true,
+          "name": "水城",
+          "slug": null
+        },
+        {
+          "display": "常磐大",
+          "score": 6,
+          "won": false,
+          "name": "常磐大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-04",
+      "season": "spring",
+      "tournament": "第78回春季関東地区高等学校野球茨城県大会",
+      "round": "決勝",
+      "venue": "J:COMスタジアム土浦",
+      "teams": [
+        {
+          "display": "水城",
+          "score": 0,
+          "won": false,
+          "name": "水城",
+          "slug": null
+        },
+        {
+          "display": "土浦日大",
+          "score": 8,
+          "won": true,
+          "name": "土浦日大",
           "slug": null
         }
       ]
@@ -1553,6 +1900,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
           "won": false,
           "name": "鬼怒商業高校",
           "slug": "kinushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権茨城大会",
+      "round": "1回戦",
+      "venue": "笠間市民球場",
+      "teams": [
+        {
+          "display": "四谷学院",
+          "score": 7,
+          "won": true,
+          "name": "四谷学院",
+          "slug": null
+        },
+        {
+          "display": "つくば秀英",
+          "score": 0,
+          "won": false,
+          "name": "つくば秀英",
+          "slug": null
         }
       ]
     },
@@ -1838,6 +2208,31 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権茨城大会",
       "round": "1回戦",
+      "venue": "ノーブルホームスタジアム水戸",
+      "teams": [
+        {
+          "display": "茨城連合",
+          "score": 3,
+          "won": false,
+          "name": "茨城連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "麻生・つく国",
+          "score": 6,
+          "won": true,
+          "name": "麻生・つく国",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権茨城大会",
+      "round": "1回戦",
       "venue": "笠間市民球場",
       "teams": [
         {
@@ -1945,6 +2340,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
           "won": true,
           "name": "下館工業高校",
           "slug": "shimodatekogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権茨城大会",
+      "round": "2回戦",
+      "venue": "J:COMスタジアム土浦",
+      "teams": [
+        {
+          "display": "茨城キリスト",
+          "score": 1,
+          "won": false,
+          "name": "茨城キリスト",
+          "slug": null
+        },
+        {
+          "display": "土浦日大",
+          "score": 10,
+          "won": true,
+          "name": "土浦日大",
+          "slug": null
         }
       ]
     },
@@ -2198,6 +2616,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
           "won": false,
           "name": "鉾田第二高校",
           "slug": "hokotadaini"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権茨城大会",
+      "round": "2回戦",
+      "venue": "J:COMスタジアム土浦",
+      "teams": [
+        {
+          "display": "四谷学院",
+          "score": 1,
+          "won": false,
+          "name": "四谷学院",
+          "slug": null
+        },
+        {
+          "display": "霞ヶ浦",
+          "score": 9,
+          "won": true,
+          "name": "霞ヶ浦",
+          "slug": null
         }
       ]
     },
@@ -2528,6 +2969,53 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権茨城大会",
       "round": "2回戦",
+      "venue": "笠間市民球場",
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 11,
+          "won": true,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "江戸川学園",
+          "score": 0,
+          "won": false,
+          "name": "江戸川学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権茨城大会",
+      "round": "2回戦",
+      "venue": "J:COMスタジアム土浦",
+      "teams": [
+        {
+          "display": "麻生・つく国",
+          "score": 0,
+          "won": false,
+          "name": "麻生・つく国",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "常総学院",
+          "score": 10,
+          "won": true,
+          "name": "常総学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権茨城大会",
+      "round": "2回戦",
       "venue": "ひたちなか市民球場",
       "teams": [
         {
@@ -2565,6 +3053,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
           "score": 6,
           "won": true,
           "name": "水城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権茨城大会",
+      "round": "3回戦",
+      "venue": "笠間市民球場",
+      "teams": [
+        {
+          "display": "岩瀬日大",
+          "score": 1,
+          "won": false,
+          "name": "岩瀬日大",
+          "slug": null
+        },
+        {
+          "display": "茨城",
+          "score": 2,
+          "won": true,
+          "name": "茨城",
           "slug": null
         }
       ]
@@ -2942,6 +3453,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権茨城大会",
       "round": "4回戦",
+      "venue": "J:COMスタジアム土浦",
+      "teams": [
+        {
+          "display": "東洋大牛久",
+          "score": 2,
+          "won": false,
+          "name": "東洋大牛久",
+          "slug": null
+        },
+        {
+          "display": "常総学院",
+          "score": 4,
+          "won": true,
+          "name": "常総学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権茨城大会",
+      "round": "4回戦",
       "venue": "ひたちなか市民球場",
       "teams": [
         {
@@ -2956,6 +3490,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
           "score": 3,
           "won": true,
           "name": "常磐大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権茨城大会",
+      "round": "4回戦",
+      "venue": "ノーブルホームスタジアム水戸",
+      "teams": [
+        {
+          "display": "土浦日大",
+          "score": 3,
+          "won": false,
+          "name": "土浦日大",
+          "slug": null
+        },
+        {
+          "display": "明秀日立",
+          "score": 4,
+          "won": true,
+          "name": "明秀日立",
           "slug": null
         }
       ]
@@ -3007,6 +3564,98 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権茨城大会",
+      "round": "4回戦",
+      "venue": "ひたちなか市民球場",
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 1,
+          "won": false,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "鹿島学園",
+          "score": 4,
+          "won": true,
+          "name": "鹿島学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権茨城大会",
+      "round": "準々決勝",
+      "venue": "ノーブルホームスタジアム水戸",
+      "teams": [
+        {
+          "display": "常総学院",
+          "score": 7,
+          "won": true,
+          "name": "常総学院",
+          "slug": null
+        },
+        {
+          "display": "常磐大",
+          "score": 2,
+          "won": false,
+          "name": "常磐大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権茨城大会",
+      "round": "準々決勝",
+      "venue": "J:COMスタジアム土浦",
+      "teams": [
+        {
+          "display": "明秀日立",
+          "score": 10,
+          "won": true,
+          "name": "明秀日立",
+          "slug": null
+        },
+        {
+          "display": "水戸葵陵",
+          "score": 6,
+          "won": false,
+          "name": "水戸葵陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権茨城大会",
+      "round": "準々決勝",
+      "venue": "ノーブルホームスタジアム水戸",
+      "teams": [
+        {
+          "display": "鹿島学園",
+          "score": 0,
+          "won": false,
+          "name": "鹿島学園",
+          "slug": null
+        },
+        {
+          "display": "霞ヶ浦",
+          "score": 3,
+          "won": true,
+          "name": "霞ヶ浦",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-20",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権茨城大会",
@@ -3048,6 +3697,52 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
           "score": 5,
           "won": true,
           "name": "霞ヶ浦",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権茨城大会",
+      "round": "準決勝",
+      "venue": "ノーブルホームスタジアム水戸",
+      "teams": [
+        {
+          "display": "明秀日立",
+          "score": 8,
+          "won": false,
+          "name": "明秀日立",
+          "slug": null
+        },
+        {
+          "display": "常総学院",
+          "score": 9,
+          "won": true,
+          "name": "常総学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権茨城大会",
+      "round": "決勝",
+      "venue": "ノーブルホームスタジアム水戸",
+      "teams": [
+        {
+          "display": "霞ヶ浦",
+          "score": 9,
+          "won": true,
+          "name": "霞ヶ浦",
+          "slug": null
+        },
+        {
+          "display": "常総学院",
+          "score": 7,
+          "won": false,
+          "name": "常総学院",
           "slug": null
         }
       ]
@@ -3195,6 +3890,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       "date": "2026-08-17",
       "season": "autumn",
       "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "venue": "ノーブルホームスタジアム水戸",
+      "teams": [
+        {
+          "display": "水戸葵陵",
+          "score": 11,
+          "won": true,
+          "name": "水戸葵陵",
+          "slug": null
+        },
+        {
+          "display": "水戸啓明",
+          "score": 4,
+          "won": false,
+          "name": "水戸啓明",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
       "round": "1回戦",
       "venue": "笠間市民球場",
       "teams": [
@@ -3235,6 +3953,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
           "won": true,
           "name": "太田第一高校",
           "slug": "otadaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "venue": "ひたちなか市民球場",
+      "teams": [
+        {
+          "display": "茨城キリスト",
+          "score": 9,
+          "won": true,
+          "name": "茨城キリスト",
+          "slug": null
+        },
+        {
+          "display": "科技日立",
+          "score": 1,
+          "won": false,
+          "name": "科技日立",
+          "slug": null
         }
       ]
     },
@@ -3726,6 +4467,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       "season": "autumn",
       "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
       "round": "2回戦",
+      "venue": "茨城トヨタスポーツパークうしく（牛久運動公園）野球場",
+      "teams": [
+        {
+          "display": "国紫麻総",
+          "score": 0,
+          "won": false,
+          "name": "国紫麻総",
+          "slug": null
+        },
+        {
+          "display": "常総学院",
+          "score": 10,
+          "won": true,
+          "name": "常総学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
       "venue": "竜ヶ崎市営たつのこ球場",
       "teams": [
         {
@@ -3925,6 +4689,236 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
           "score": 4,
           "won": true,
           "name": "東洋大牛久",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
+      "venue": "笠間市民球場",
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 1,
+          "won": false,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "水戸葵陵",
+          "score": 2,
+          "won": true,
+          "name": "水戸葵陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
+      "venue": "ノーブルホームスタジアム水戸",
+      "teams": [
+        {
+          "display": "水戸商",
+          "score": 5,
+          "won": true,
+          "name": "水戸商業高校",
+          "slug": "mitoshogyo"
+        },
+        {
+          "display": "水戸農",
+          "score": 2,
+          "won": false,
+          "name": "水戸農業高校",
+          "slug": "mitonogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
+      "venue": "ひたちなか市民球場",
+      "teams": [
+        {
+          "display": "明秀日立",
+          "score": 8,
+          "won": true,
+          "name": "明秀日立",
+          "slug": null
+        },
+        {
+          "display": "日立北",
+          "score": 0,
+          "won": false,
+          "name": "日立北高校",
+          "slug": "hitachikita"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "venue": "結城鹿窪球場",
+      "teams": [
+        {
+          "display": "八千代",
+          "score": 0,
+          "won": false,
+          "name": "八千代高校",
+          "slug": "yachiyo"
+        },
+        {
+          "display": "四谷学院",
+          "score": 27,
+          "won": true,
+          "name": "四谷学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "venue": "常総市石下球場",
+      "teams": [
+        {
+          "display": "つくば秀英",
+          "score": 0,
+          "won": false,
+          "name": "つくば秀英",
+          "slug": null
+        },
+        {
+          "display": "境",
+          "score": 7,
+          "won": true,
+          "name": "境高校",
+          "slug": "sakai"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
+      "venue": "ノーブルホームスタジアム水戸",
+      "teams": [
+        {
+          "display": "茨城",
+          "score": 5,
+          "won": false,
+          "name": "茨城",
+          "slug": null
+        },
+        {
+          "display": "常磐大",
+          "score": 10,
+          "won": true,
+          "name": "常磐大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
+      "venue": "ひたちなか市民球場",
+      "teams": [
+        {
+          "display": "日立一",
+          "score": 4,
+          "won": true,
+          "name": "日立第一高校",
+          "slug": "hitachidaiichi"
+        },
+        {
+          "display": "佐和",
+          "score": 2,
+          "won": false,
+          "name": "佐和高校",
+          "slug": "sawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "venue": "結城鹿窪球場",
+      "teams": [
+        {
+          "display": "鬼怒商",
+          "score": 1,
+          "won": false,
+          "name": "鬼怒商業高校",
+          "slug": "kinushogyo"
+        },
+        {
+          "display": "下館一",
+          "score": 2,
+          "won": true,
+          "name": "下館第一高校",
+          "slug": "shimodatedaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "venue": "常総市石下球場",
+      "teams": [
+        {
+          "display": "水海道一",
+          "score": 4,
+          "won": false,
+          "name": "水海道第一高校",
+          "slug": "mitsukaidodaiichi"
+        },
+        {
+          "display": "下妻二",
+          "score": 7,
+          "won": true,
+          "name": "下妻第二高校",
+          "slug": "shimotsumadaini"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
+      "venue": "笠間市民球場",
+      "teams": [
+        {
+          "display": "鹿島学園",
+          "score": 6,
+          "won": true,
+          "name": "鹿島学園",
+          "slug": null
+        },
+        {
+          "display": "水城",
+          "score": 2,
+          "won": false,
+          "name": "水城",
           "slug": null
         }
       ]

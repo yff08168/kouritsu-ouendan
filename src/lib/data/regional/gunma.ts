@@ -17,6 +17,29 @@ export const REGIONAL_GUNMA: RegionalDistrict = {
       "venue": "高崎城南球場",
       "teams": [
         {
+          "display": "常磐",
+          "score": 0,
+          "won": false,
+          "name": "常磐",
+          "slug": null
+        },
+        {
+          "display": "商大附",
+          "score": 8,
+          "won": true,
+          "name": "商大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "78回春季関東高校野球大会県予選",
+      "round": "準々決勝",
+      "venue": "高崎城南球場",
+      "teams": [
+        {
           "display": "利根商",
           "score": 2,
           "won": false,
@@ -28,6 +51,29 @@ export const REGIONAL_GUNMA: RegionalDistrict = {
           "score": 9,
           "won": true,
           "name": "健大高崎",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "78回春季関東高校野球大会県予選",
+      "round": null,
+      "venue": "高崎城南球場",
+      "teams": [
+        {
+          "display": "前橋",
+          "score": 3,
+          "won": false,
+          "name": "前橋",
+          "slug": null
+        },
+        {
+          "display": "桐生第一",
+          "score": 7,
+          "won": true,
+          "name": "桐生第一",
           "slug": null
         }
       ]
@@ -86,6 +132,29 @@ export const REGIONAL_GUNMA: RegionalDistrict = {
       "venue": "上毛新聞敷島球場",
       "teams": [
         {
+          "display": "前橋育英",
+          "score": 0,
+          "won": false,
+          "name": "前橋育英",
+          "slug": null
+        },
+        {
+          "display": "健大高崎",
+          "score": 2,
+          "won": true,
+          "name": "健大高崎",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "season": "summer",
+      "tournament": "108回全国高校野球選手権群馬大会",
+      "round": "準決勝",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
           "display": "前橋商",
           "score": 4,
           "won": true,
@@ -120,6 +189,52 @@ export const REGIONAL_GUNMA: RegionalDistrict = {
           "score": 4,
           "won": true,
           "name": "前橋育英",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "108回全国高校野球選手権群馬大会",
+      "round": "準々決勝",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "桐生第一",
+          "score": 5,
+          "won": true,
+          "name": "桐生第一",
+          "slug": null
+        },
+        {
+          "display": "樹徳",
+          "score": 4,
+          "won": false,
+          "name": "樹徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "108回全国高校野球選手権群馬大会",
+      "round": "準々決勝",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "東農大二",
+          "score": 1,
+          "won": false,
+          "name": "東農大二",
+          "slug": null
+        },
+        {
+          "display": "健大高崎",
+          "score": 8,
+          "won": true,
+          "name": "健大高崎",
           "slug": null
         }
       ]
@@ -212,6 +327,29 @@ export const REGIONAL_GUNMA: RegionalDistrict = {
           "score": 17,
           "won": true,
           "name": "桐生第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "108回全国高校野球選手権群馬大会",
+      "round": "3回戦",
+      "venue": "高崎城南球場",
+      "teams": [
+        {
+          "display": "関学大附",
+          "score": 0,
+          "won": false,
+          "name": "関学大附",
+          "slug": null
+        },
+        {
+          "display": "樹徳",
+          "score": 10,
+          "won": true,
+          "name": "樹徳",
           "slug": null
         }
       ]

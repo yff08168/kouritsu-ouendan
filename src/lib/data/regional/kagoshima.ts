@@ -680,6 +680,29 @@ export const REGIONAL_KAGOSHIMA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権鹿児島大会",
+      "round": "準決勝",
+      "venue": "平和リース球場（鹿児島県立鴨池野球場）",
+      "teams": [
+        {
+          "display": "神村学園",
+          "score": 7,
+          "won": true,
+          "name": "神村学園",
+          "slug": null
+        },
+        {
+          "display": "尚志館",
+          "score": 0,
+          "won": false,
+          "name": "尚志館",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-11",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権鹿児島大会",
@@ -1027,6 +1050,52 @@ export const REGIONAL_KAGOSHIMA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権鹿児島大会",
+      "round": "2回戦",
+      "venue": "SuMIzei PARK(鹿児島市鴨池公園野球場)",
+      "teams": [
+        {
+          "display": "れいめい",
+          "score": 3,
+          "won": true,
+          "name": "れいめい",
+          "slug": null
+        },
+        {
+          "display": "鹿児島",
+          "score": 2,
+          "won": false,
+          "name": "鹿児島",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権鹿児島大会",
+      "round": "2回戦",
+      "venue": "SuMIzei PARK(鹿児島市鴨池公園野球場)",
+      "teams": [
+        {
+          "display": "出水中央",
+          "score": 1,
+          "won": false,
+          "name": "出水中央",
+          "slug": null
+        },
+        {
+          "display": "鹿児島城西",
+          "score": 5,
+          "won": true,
+          "name": "鹿児島城西",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-14",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権鹿児島大会",
@@ -1172,6 +1241,29 @@ export const REGIONAL_KAGOSHIMA: RegionalDistrict = {
       "venue": "平和リース球場（鹿児島県立鴨池野球場）",
       "teams": [
         {
+          "display": "れいめい",
+          "score": 0,
+          "won": false,
+          "name": "れいめい",
+          "slug": null
+        },
+        {
+          "display": "鹿児島城西",
+          "score": 1,
+          "won": true,
+          "name": "鹿児島城西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権鹿児島大会",
+      "round": "3回戦",
+      "venue": "平和リース球場（鹿児島県立鴨池野球場）",
+      "teams": [
+        {
           "display": "国分中央",
           "score": 4,
           "won": true,
@@ -1276,6 +1368,52 @@ export const REGIONAL_KAGOSHIMA: RegionalDistrict = {
           "won": false,
           "name": "大島高校",
           "slug": "kagoshima-oshima"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権鹿児島大会",
+      "round": "準決勝",
+      "venue": "平和リース球場（鹿児島県立鴨池野球場）",
+      "teams": [
+        {
+          "display": "鹿児島城西",
+          "score": 5,
+          "won": false,
+          "name": "鹿児島城西",
+          "slug": null
+        },
+        {
+          "display": "鹿児島実業",
+          "score": 8,
+          "won": true,
+          "name": "鹿児島実業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権鹿児島大会",
+      "round": "決勝",
+      "venue": "平和リース球場（鹿児島県立鴨池野球場）",
+      "teams": [
+        {
+          "display": "神村学園",
+          "score": 9,
+          "won": true,
+          "name": "神村学園",
+          "slug": null
+        },
+        {
+          "display": "鹿児島実業",
+          "score": 0,
+          "won": false,
+          "name": "鹿児島実業",
+          "slug": null
         }
       ]
     }

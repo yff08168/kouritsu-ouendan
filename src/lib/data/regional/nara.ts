@@ -10,6 +10,29 @@ export const REGIONAL_NARA: RegionalDistrict = {
   "sourceUrl": "http://www1.kcn.ne.jp/~nhsbbf/",
   "games": [
     {
+      "date": "2026-07-27",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": "決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 8,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "奈良大附",
+          "score": 0,
+          "won": false,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-25",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権奈良大会",
@@ -28,6 +51,29 @@ export const REGIONAL_NARA: RegionalDistrict = {
           "score": 7,
           "won": true,
           "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": "準決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "score": 0,
+          "won": false,
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "奈良大附",
+          "score": 7,
+          "won": true,
+          "name": "奈良大附",
           "slug": null
         }
       ]
@@ -213,6 +259,29 @@ export const REGIONAL_NARA: RegionalDistrict = {
           "won": false,
           "name": "高田高校",
           "slug": "nara-takata"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "score": 6,
+          "won": false,
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "奈良大附",
+          "score": 9,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
         }
       ]
     },
@@ -610,6 +679,29 @@ export const REGIONAL_NARA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2025-10-07",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": "決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "score": 4,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "天理",
+          "score": 3,
+          "won": false,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-10-05",
       "season": "autumn",
       "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
@@ -656,6 +748,29 @@ export const REGIONAL_NARA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2025-10-04",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": "準決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "score": 5,
+          "won": false,
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "天理",
+          "score": 7,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-28",
       "season": "autumn",
       "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
@@ -675,6 +790,29 @@ export const REGIONAL_NARA: RegionalDistrict = {
           "won": false,
           "name": "奈良女子大学附属中等教育学校",
           "slug": "narajoshidaigakufuzoku"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良大附",
+          "score": 1,
+          "won": false,
+          "name": "奈良大附",
+          "slug": null
+        },
+        {
+          "display": "天理",
+          "score": 3,
+          "won": true,
+          "name": "天理",
+          "slug": null
         }
       ]
     },
@@ -998,6 +1136,29 @@ export const REGIONAL_NARA: RegionalDistrict = {
           "won": false,
           "name": "奈良県立大学附属高校",
           "slug": "narakenritsudaigakufuzoku"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ロートスタジアム",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "score": 12,
+          "won": true,
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "西大和学園",
+          "score": 0,
+          "won": false,
+          "name": "西大和学園",
+          "slug": null
         }
       ]
     },

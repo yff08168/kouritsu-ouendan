@@ -454,6 +454,29 @@ export const REGIONAL_MIE: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "皇學館",
+          "score": 8,
+          "won": true,
+          "name": "皇學館",
+          "slug": null
+        },
+        {
+          "display": "青山",
+          "score": 2,
+          "won": false,
+          "name": "青山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権三重大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "桑名",
           "score": 5,
           "won": false,
@@ -558,6 +581,29 @@ export const REGIONAL_MIE: RegionalDistrict = {
           "won": true,
           "name": "明野高校",
           "slug": "mie-akeno"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権三重大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "津田学園",
+          "score": 2,
+          "won": false,
+          "name": "津田学園",
+          "slug": null
+        },
+        {
+          "display": "近大工業高専",
+          "score": 5,
+          "won": true,
+          "name": "近大工業高専",
+          "slug": null
         }
       ]
     },
@@ -697,6 +743,29 @@ export const REGIONAL_MIE: RegionalDistrict = {
           "won": false,
           "name": "尾鷲高校",
           "slug": "owase"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権三重大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "徳風",
+          "score": 0,
+          "won": false,
+          "name": "徳風",
+          "slug": null
+        },
+        {
+          "display": "鳥羽南伊勢石薬師",
+          "score": 11,
+          "won": true,
+          "name": "鳥羽南伊勢石薬師",
+          "slug": null
         }
       ]
     },
@@ -1118,6 +1187,29 @@ export const REGIONAL_MIE: RegionalDistrict = {
       "date": null,
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権三重大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高田",
+          "score": 3,
+          "won": false,
+          "name": "高田",
+          "slug": null
+        },
+        {
+          "display": "三重",
+          "score": 13,
+          "won": true,
+          "name": "三重",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権三重大会",
       "round": "準々決勝",
       "venue": null,
       "teams": [
@@ -1141,6 +1233,29 @@ export const REGIONAL_MIE: RegionalDistrict = {
       "date": null,
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権三重大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "いなべ総合",
+          "score": 0,
+          "won": false,
+          "name": "いなべ総合",
+          "slug": null
+        },
+        {
+          "display": "三重",
+          "score": 7,
+          "won": true,
+          "name": "三重",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権三重大会",
       "round": "準決勝",
       "venue": null,
       "teams": [
@@ -1154,6 +1269,29 @@ export const REGIONAL_MIE: RegionalDistrict = {
         {
           "display": "三重",
           "score": 7,
+          "won": true,
+          "name": "三重",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権三重大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "近大工業高専",
+          "score": 3,
+          "won": false,
+          "name": "近大工業高専",
+          "slug": null
+        },
+        {
+          "display": "三重",
+          "score": 12,
           "won": true,
           "name": "三重",
           "slug": null

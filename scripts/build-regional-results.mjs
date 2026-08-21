@@ -11247,14 +11247,31 @@ async function main() {
       .map((g) => {
         const allowNationwide = !isPrefectureOnly(g.tournament);
         return { ...g, teams: g.teams.map((t) => decorate(t, allowNationwide)) };
-      })
-      // **公立が絡む試合だけ残す。** このサイトの切り口はそこにある
-      .filter((g) => g.teams.some((t) => t.slug));
+      });
+    /*
+      ★★**2026-08-21 に方針を変えた。生成物には私立どうしの試合も残す**（運営者の判断）。
+
+      ~~公立が絡む試合だけ残す。このサイトの切り口はそこにある~~
+      → **「取るときは私立の戦績も引用し、着目するところを公立にする」**に変えた。
+
+      ★**なぜ必要だったか。** 落とすと**トーナメント表が作れない。**
+      枝が欠けるだけでなく、**その次の公立の試合に誰が上がってきたのかも辿れない**
+      （落ちていたのは全4,033試合に対して私立どうしが0件＝全部落ちていた）。
+      ベストNを数えるのに `allGames` を別に持っていたのも同じ理由で、
+      **「表示は公立だけ／数えるのは全部」を2本のデータでやっていた。**
+
+      ★★**画面の見え方は変えていない。** 絞り込みは表示側（`latestSeasonGames`）に移した。
+      **県のページに私立どうしの試合を出すという意味ではない。**
+      ★**戻すときは、表示側の絞り込みも一緒に見ること**（片方だけ戻すと画面が変わる）。
+    */
 
     const publicTeams = new Set(
       games.flatMap((g) => g.teams.filter((t) => t.slug).map((t) => t.slug)),
     );
-    console.log(`  → 公立が絡む試合 ${games.length} 件 / 公立 ${publicTeams.size} 校`);
+    const withPublic = games.filter((g) => g.teams.some((t) => t.slug)).length;
+    console.log(
+      `  → ${games.length} 試合（うち公立が絡む ${withPublic} 件）/ 公立 ${publicTeams.size} 校`,
+    );
     /*
       **結び付かなかった校名は必ず出す。** 大半は私立（学校マスタに無いので当然）
       だが、揺れや旧校名で外れているものが混ざる。黙って落とすと気づけない。
@@ -11339,10 +11356,30 @@ async function main() {
     return limit.toISOString().slice(0, 10);
   })();
 
+  /*
+    ★★**抜粋はいちばん新しい季節だけにする**（2026-08-21。運営者の判断）。
+
+    それまでは季節を混ぜて「公立が勝った試合を優先・新しい順」で選んでいたが、
+    **夏は39県ぶん、秋は始まったばかりの数県ぶん**しか無いので、
+    秋季大会が始まっても**トップには夏の選手権が並び続けた**（実測 80件中72件が夏）。
+
+    ★**下の `spotlightSeason`（いちばん新しい試合の季節）と同じ基準で切る。**
+    右カラムの「まだ負けていない公立校」と左の試合一覧が**同じ大会を指す**ようになる。
+    ★**季節が変わる端境期は件数が減る**が、**古い大会が新しい顔で並ぶよりよい。**
+    ★**前年の秋は入らない**（上の `pickupFrom` の窓で落ちている）。
+  */
+  const pickupSeason =
+    districts
+      .flatMap((d) => d.games)
+      .filter((g) => g.date)
+      .sort((a, b) => a.date.localeCompare(b.date))
+      .at(-1)?.season ?? null;
+
   const pickups = [];
   for (const d of districts) {
     const sorted = [...d.games]
       .filter((g) => g.teams.some((t) => t.slug && !t.combined))
+      .filter((g) => !pickupSeason || g.season === pickupSeason)
       .filter((g) => g.date && (!pickupFrom || g.date >= pickupFrom))
       .sort((a, b) => {
         const wonA = a.teams.some((t) => t.slug && t.won) ? 1 : 0;
@@ -11396,12 +11433,11 @@ async function main() {
     「いちばん新しい試合の季節」で決めるので、順番の付けられない試合は使えない。
     その県は勝ち上がりにも出ないが、県のページには出る。
   */
-  const spotlightSeason =
-    districts
-      .flatMap((d) => d.games)
-      .filter((g) => g.date)
-      .sort((a, b) => a.date.localeCompare(b.date))
-      .at(-1)?.season ?? null;
+  /*
+    ★**抜粋（左の試合一覧）と同じ季節を使う**（2026-08-21）。
+    別々に出すと、**左が秋・右が夏**のように食い違いうる。
+  */
+  const spotlightSeason = pickupSeason;
 
   /*
     ★**「1勝」ではなく「4回戦突破」で出す。**

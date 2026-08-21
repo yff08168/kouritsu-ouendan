@@ -271,6 +271,29 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "都城",
+          "score": 0,
+          "won": false,
+          "name": "都城",
+          "slug": null
+        },
+        {
+          "display": "鵬翔",
+          "score": 11,
+          "won": true,
+          "name": "鵬翔",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "妻",
           "score": 0,
           "won": false,
@@ -282,6 +305,29 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
           "score": 9,
           "won": true,
           "name": "宮崎日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小林西",
+          "score": 8,
+          "won": true,
+          "name": "小林西",
+          "slug": null
+        },
+        {
+          "display": "延岡学園",
+          "score": 2,
+          "won": false,
+          "name": "延岡学園",
           "slug": null
         }
       ]
@@ -336,6 +382,29 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
       "date": null,
       "season": "spring",
       "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鵬翔",
+          "score": 1,
+          "won": false,
+          "name": "鵬翔",
+          "slug": null
+        },
+        {
+          "display": "宮崎日大",
+          "score": 11,
+          "won": true,
+          "name": "宮崎日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
       "round": "準々決勝",
       "venue": null,
       "teams": [
@@ -382,6 +451,29 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
       "date": null,
       "season": "spring",
       "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小林西",
+          "score": 2,
+          "won": false,
+          "name": "小林西",
+          "slug": null
+        },
+        {
+          "display": "宮崎日大",
+          "score": 3,
+          "won": true,
+          "name": "宮崎日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
       "round": "1回戦",
       "venue": null,
       "teams": [
@@ -398,6 +490,29 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
           "won": true,
           "name": "日南振徳高校",
           "slug": "nichinanshintoku"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宮崎第一",
+          "score": 10,
+          "won": true,
+          "name": "宮崎第一",
+          "slug": null
+        },
+        {
+          "display": "日向学院",
+          "score": 0,
+          "won": false,
+          "name": "日向学院",
+          "slug": null
         }
       ]
     },
@@ -709,6 +824,29 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "宮崎第一",
+          "score": 1,
+          "won": false,
+          "name": "宮崎第一",
+          "slug": null
+        },
+        {
+          "display": "聖心ウルスラ",
+          "score": 5,
+          "won": true,
+          "name": "聖心ウルスラ",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "宮崎南",
           "score": 4,
           "won": false,
@@ -755,6 +893,29 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "日南学園",
+          "score": 1,
+          "won": false,
+          "name": "日南学園",
+          "slug": null
+        },
+        {
+          "display": "聖心ウルスラ",
+          "score": 3,
+          "won": true,
+          "name": "聖心ウルスラ",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
           "display": "佐土原",
           "score": 0,
           "won": false,
@@ -766,6 +927,52 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
           "score": 3,
           "won": true,
           "name": "宮崎学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "聖心ウルスラ",
+          "score": 10,
+          "won": true,
+          "name": "聖心ウルスラ",
+          "slug": null
+        },
+        {
+          "display": "宮崎学園",
+          "score": 2,
+          "won": false,
+          "name": "宮崎学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球大会宮崎県予選",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宮崎日大",
+          "score": 3,
+          "won": false,
+          "name": "宮崎日大",
+          "slug": null
+        },
+        {
+          "display": "聖心ウルスラ",
+          "score": 4,
+          "won": true,
+          "name": "聖心ウルスラ",
           "slug": null
         }
       ]
@@ -1147,6 +1354,29 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "延岡学園",
+          "score": 3,
+          "won": false,
+          "name": "延岡学園",
+          "slug": null
+        },
+        {
+          "display": "都城",
+          "score": 4,
+          "won": true,
+          "name": "都城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権宮崎大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "宮崎学園",
           "score": 1,
           "won": false,
@@ -1193,6 +1423,29 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "宮崎日大",
+          "score": 4,
+          "won": false,
+          "name": "宮崎日大",
+          "slug": null
+        },
+        {
+          "display": "都城",
+          "score": 8,
+          "won": true,
+          "name": "都城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権宮崎大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
           "display": "妻",
           "score": 0,
           "won": false,
@@ -1202,6 +1455,29 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
         {
           "display": "小林西",
           "score": 6,
+          "won": true,
+          "name": "小林西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権宮崎大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "都城",
+          "score": 1,
+          "won": false,
+          "name": "都城",
+          "slug": null
+        },
+        {
+          "display": "小林西",
+          "score": 9,
           "won": true,
           "name": "小林西",
           "slug": null
@@ -1534,6 +1810,29 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
       "date": null,
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権宮崎大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "櫻美学園",
+          "score": 2,
+          "won": false,
+          "name": "櫻美学園",
+          "slug": null
+        },
+        {
+          "display": "日南学園",
+          "score": 7,
+          "won": true,
+          "name": "日南学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権宮崎大会",
       "round": "3回戦",
       "venue": null,
       "teams": [
@@ -1561,6 +1860,29 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "宮崎第一",
+          "score": 8,
+          "won": true,
+          "name": "宮崎第一",
+          "slug": null
+        },
+        {
+          "display": "聖心ウルスラ",
+          "score": 7,
+          "won": false,
+          "name": "聖心ウルスラ",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権宮崎大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "高鍋",
           "score": 10,
           "won": true,
@@ -1572,6 +1894,29 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
           "score": 7,
           "won": false,
           "name": "日向学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権宮崎大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日章学園",
+          "score": 6,
+          "won": false,
+          "name": "日章学園",
+          "slug": null
+        },
+        {
+          "display": "日南学園",
+          "score": 8,
+          "won": true,
+          "name": "日南学園",
           "slug": null
         }
       ]
@@ -1639,6 +1984,29 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
         {
           "display": "日南学園",
           "score": 2,
+          "won": true,
+          "name": "日南学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権宮崎大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小林西",
+          "score": 0,
+          "won": false,
+          "name": "小林西",
+          "slug": null
+        },
+        {
+          "display": "日南学園",
+          "score": 11,
           "won": true,
           "name": "日南学園",
           "slug": null
@@ -1952,6 +2320,29 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "宮崎学園",
+          "score": 5,
+          "won": true,
+          "name": "宮崎学園",
+          "slug": null
+        },
+        {
+          "display": "鵬翔",
+          "score": 1,
+          "won": false,
+          "name": "鵬翔",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球大会宮崎県予選",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "日向学院",
           "score": 0,
           "won": false,
@@ -2040,6 +2431,52 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
       "date": null,
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球大会宮崎県予選",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "都城",
+          "score": 1,
+          "won": false,
+          "name": "都城",
+          "slug": null
+        },
+        {
+          "display": "日南学園",
+          "score": 2,
+          "won": true,
+          "name": "日南学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球大会宮崎県予選",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宮崎学園",
+          "score": 1,
+          "won": true,
+          "name": "宮崎学園",
+          "slug": null
+        },
+        {
+          "display": "日南学園",
+          "score": 0,
+          "won": false,
+          "name": "日南学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球大会宮崎県予選",
       "round": "1回戦",
       "venue": null,
       "teams": [
@@ -2103,6 +2540,30 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
           "won": false,
           "name": "日向工業高校",
           "slug": "hyugakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球大会宮崎県予選",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高鍋農業・宮崎海洋・高千穂",
+          "score": 0,
+          "won": false,
+          "name": "高鍋農業・宮崎海洋・高千穂",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "宮崎第一",
+          "score": 18,
+          "won": true,
+          "name": "宮崎第一",
+          "slug": null
         }
       ]
     },
@@ -2390,6 +2851,29 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "宮崎日大",
+          "score": 4,
+          "won": true,
+          "name": "宮崎日大",
+          "slug": null
+        },
+        {
+          "display": "宮崎第一",
+          "score": 1,
+          "won": false,
+          "name": "宮崎第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球大会宮崎県予選",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "宮崎商業",
           "score": 3,
           "won": true,
@@ -2401,6 +2885,29 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
           "score": 2,
           "won": false,
           "name": "延岡学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球大会宮崎県予選",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "聖心ウルスラ",
+          "score": 4,
+          "won": false,
+          "name": "聖心ウルスラ",
+          "slug": null
+        },
+        {
+          "display": "小林西",
+          "score": 6,
+          "won": true,
+          "name": "小林西",
           "slug": null
         }
       ]
@@ -2425,6 +2932,52 @@ export const REGIONAL_MIYAZAKI: RegionalDistrict = {
           "won": false,
           "name": "宮崎商業高校",
           "slug": "miyazakishogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球大会宮崎県予選",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小林西",
+          "score": 5,
+          "won": true,
+          "name": "小林西",
+          "slug": null
+        },
+        {
+          "display": "宮崎日大",
+          "score": 2,
+          "won": false,
+          "name": "宮崎日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球大会宮崎県予選",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宮崎学園",
+          "score": 1,
+          "won": false,
+          "name": "宮崎学園",
+          "slug": null
+        },
+        {
+          "display": "小林西",
+          "score": 4,
+          "won": true,
+          "name": "小林西",
+          "slug": null
         }
       ]
     }

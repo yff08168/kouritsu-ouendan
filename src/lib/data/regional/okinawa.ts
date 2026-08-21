@@ -913,6 +913,29 @@ export const REGIONAL_OKINAWA: RegionalDistrict = {
       "season": "spring",
       "tournament": "第73回沖縄県高等学校野球春季大会",
       "round": "3回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 1,
+          "won": false,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "興南",
+          "score": 8,
+          "won": true,
+          "name": "興南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "season": "spring",
+      "tournament": "第73回沖縄県高等学校野球春季大会",
+      "round": "3回戦",
       "venue": "嘉手納町野球場",
       "teams": [
         {
@@ -1185,6 +1208,52 @@ export const REGIONAL_OKINAWA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "第73回沖縄県高等学校野球春季大会",
+      "round": "準決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "エナジック",
+          "score": 4,
+          "won": true,
+          "name": "エナジック",
+          "slug": null
+        },
+        {
+          "display": "ＫＢＣ",
+          "score": 1,
+          "won": false,
+          "name": "ＫＢＣ",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-08",
+      "season": "spring",
+      "tournament": "第73回沖縄県高等学校野球春季大会",
+      "round": "決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "興南",
+          "score": 1,
+          "won": false,
+          "name": "興南",
+          "slug": null
+        },
+        {
+          "display": "エナジック",
+          "score": 2,
+          "won": true,
+          "name": "エナジック",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-06-14",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権沖縄大会",
@@ -1343,6 +1412,30 @@ export const REGIONAL_OKINAWA: RegionalDistrict = {
           "won": true,
           "name": "浦添高校",
           "slug": "urasoe"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権沖縄大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "ＫＢＣ",
+          "score": 4,
+          "won": true,
+          "name": "ＫＢＣ",
+          "slug": null
+        },
+        {
+          "display": "宮古総実・宮古工業",
+          "score": 1,
+          "won": false,
+          "name": "宮古総実・宮古工業",
+          "slug": null,
+          "combined": true
         }
       ]
     },
@@ -2402,6 +2495,29 @@ export const REGIONAL_OKINAWA: RegionalDistrict = {
           "won": false,
           "name": "北山高校",
           "slug": "hokuzan"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権沖縄大会",
+      "round": "決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "沖縄尚学",
+          "score": 4,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        },
+        {
+          "display": "エナジック",
+          "score": 3,
+          "won": false,
+          "name": "エナジック",
+          "slug": null
         }
       ]
     },
@@ -3580,6 +3696,75 @@ export const REGIONAL_OKINAWA: RegionalDistrict = {
           "won": false,
           "name": "知念高校",
           "slug": "chinen"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-11",
+      "season": "autumn",
+      "tournament": "第75回沖縄県高等学校野球秋季大会",
+      "round": "準決勝",
+      "venue": "Ｅｎａｇｉｃスタジアム名護",
+      "teams": [
+        {
+          "display": "エナジック",
+          "score": 2,
+          "won": false,
+          "name": "エナジック",
+          "slug": null
+        },
+        {
+          "display": "沖縄尚学",
+          "score": 5,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-11",
+      "season": "autumn",
+      "tournament": "第75回沖縄県高等学校野球秋季大会",
+      "round": "準決勝",
+      "venue": "Ｅｎａｇｉｃスタジアム名護",
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 7,
+          "won": true,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "ＫＢＣ",
+          "score": 4,
+          "won": false,
+          "name": "ＫＢＣ",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "第75回沖縄県高等学校野球秋季大会",
+      "round": "決勝",
+      "venue": "Ｅｎａｇｉｃスタジアム名護",
+      "teams": [
+        {
+          "display": "沖縄尚学",
+          "score": 4,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        },
+        {
+          "display": "ウェルネス",
+          "score": 0,
+          "won": false,
+          "name": "ウェルネス",
+          "slug": null
         }
       ]
     }

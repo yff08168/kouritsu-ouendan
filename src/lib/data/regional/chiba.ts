@@ -247,6 +247,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "学館浦安",
+          "score": 1,
+          "won": true,
+          "name": "学館浦安",
+          "slug": null
+        },
+        {
+          "display": "東京学館",
+          "score": 0,
+          "won": false,
+          "name": "東京学館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "松戸馬橋",
           "score": 0,
           "won": false,
@@ -305,6 +328,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
           "won": false,
           "name": "若松高校",
           "slug": "wakamatsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市川",
+          "score": 5,
+          "won": true,
+          "name": "市川",
+          "slug": null
+        },
+        {
+          "display": "あずさ第一",
+          "score": 1,
+          "won": false,
+          "name": "あずさ第一",
+          "slug": null
         }
       ]
     },
@@ -547,6 +593,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "日体大柏",
+          "score": 2,
+          "won": true,
+          "name": "日体大柏",
+          "slug": null
+        },
+        {
+          "display": "千葉学芸",
+          "score": 1,
+          "won": false,
+          "name": "千葉学芸",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "千葉黎明",
           "score": 8,
           "won": true,
@@ -593,6 +662,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "暁星国際",
+          "score": 7,
+          "won": true,
+          "name": "暁星国際",
+          "slug": null
+        },
+        {
+          "display": "千葉日大一",
+          "score": 1,
+          "won": false,
+          "name": "千葉日大一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "木更津高専",
           "score": 7,
           "won": true,
@@ -605,6 +697,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
           "won": false,
           "name": "富里高校",
           "slug": "tomisato"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "千葉敬愛",
+          "score": 13,
+          "won": true,
+          "name": "千葉敬愛",
+          "slug": null
+        },
+        {
+          "display": "西武台千葉",
+          "score": 6,
+          "won": false,
+          "name": "西武台千葉",
+          "slug": null
         }
       ]
     },
@@ -652,6 +767,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
           "won": false,
           "name": "東総工業高校",
           "slug": "tosokogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "流経大柏",
+          "score": 3,
+          "won": true,
+          "name": "流経大柏",
+          "slug": null
+        },
+        {
+          "display": "光英ＶＥＲＩＴＡＳ",
+          "score": 2,
+          "won": false,
+          "name": "光英ＶＥＲＩＴＡＳ",
+          "slug": null
         }
       ]
     },
@@ -813,6 +951,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
           "score": 8,
           "won": false,
           "name": "明聖",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海大市原望洋",
+          "score": 2,
+          "won": false,
+          "name": "東海大市原望洋",
+          "slug": null
+        },
+        {
+          "display": "拓殖大紅陵",
+          "score": 6,
+          "won": true,
+          "name": "拓殖大紅陵",
           "slug": null
         }
       ]
@@ -1009,6 +1170,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "千葉黎明",
+          "score": 5,
+          "won": false,
+          "name": "千葉黎明",
+          "slug": null
+        },
+        {
+          "display": "木更津総合",
+          "score": 11,
+          "won": true,
+          "name": "木更津総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "暁星国際",
           "score": 11,
           "won": true,
@@ -1032,6 +1216,30 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "千葉敬愛",
+          "score": 14,
+          "won": true,
+          "name": "千葉敬愛",
+          "slug": null
+        },
+        {
+          "display": "稲毛・稲毛国際中等教育",
+          "score": 0,
+          "won": false,
+          "name": "稲毛・稲毛国際中等教育",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "長生",
           "score": 3,
           "won": false,
@@ -1043,6 +1251,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
           "score": 5,
           "won": true,
           "name": "流経大柏",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市原中央",
+          "score": 18,
+          "won": true,
+          "name": "市原中央",
+          "slug": null
+        },
+        {
+          "display": "鴨川令徳",
+          "score": 0,
+          "won": false,
+          "name": "鴨川令徳",
           "slug": null
         }
       ]
@@ -1124,6 +1355,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "学館浦安",
+          "score": 6,
+          "won": true,
+          "name": "学館浦安",
+          "slug": null
+        },
+        {
+          "display": "東邦大東邦",
+          "score": 0,
+          "won": false,
+          "name": "東邦大東邦",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "幕張総合",
           "score": 1,
           "won": true,
@@ -1181,6 +1435,75 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
           "score": 12,
           "won": true,
           "name": "日体大柏",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "木更津総合",
+          "score": 5,
+          "won": false,
+          "name": "木更津総合",
+          "slug": null
+        },
+        {
+          "display": "暁星国際",
+          "score": 7,
+          "won": true,
+          "name": "暁星国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "千葉敬愛",
+          "score": 3,
+          "won": false,
+          "name": "千葉敬愛",
+          "slug": null
+        },
+        {
+          "display": "流経大柏",
+          "score": 4,
+          "won": true,
+          "name": "流経大柏",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市原中央",
+          "score": 4,
+          "won": true,
+          "name": "市原中央",
+          "slug": null
+        },
+        {
+          "display": "翔凜",
+          "score": 0,
+          "won": false,
+          "name": "翔凜",
           "slug": null
         }
       ]
@@ -1258,6 +1581,52 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
       "date": null,
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "暁星国際",
+          "score": 7,
+          "won": true,
+          "name": "暁星国際",
+          "slug": null
+        },
+        {
+          "display": "流経大柏",
+          "score": 3,
+          "won": false,
+          "name": "流経大柏",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市原中央",
+          "score": 1,
+          "won": false,
+          "name": "市原中央",
+          "slug": null
+        },
+        {
+          "display": "拓殖大紅陵",
+          "score": 2,
+          "won": true,
+          "name": "拓殖大紅陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
       "round": "準々決勝",
       "venue": null,
       "teams": [
@@ -1274,6 +1643,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
           "won": true,
           "name": "習志野高校",
           "slug": "narashino"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "暁星国際",
+          "score": 1,
+          "won": false,
+          "name": "暁星国際",
+          "slug": null
+        },
+        {
+          "display": "拓殖大紅陵",
+          "score": 4,
+          "won": true,
+          "name": "拓殖大紅陵",
+          "slug": null
         }
       ]
     },
@@ -1679,6 +2071,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "桜林",
+          "score": 1,
+          "won": false,
+          "name": "桜林",
+          "slug": null
+        },
+        {
+          "display": "芝浦工大柏",
+          "score": 2,
+          "won": true,
+          "name": "芝浦工大柏",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "京葉工業",
           "score": 0,
           "won": false,
@@ -1886,6 +2301,52 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "千葉明徳",
+          "score": 11,
+          "won": true,
+          "name": "千葉明徳",
+          "slug": null
+        },
+        {
+          "display": "千葉英和",
+          "score": 1,
+          "won": false,
+          "name": "千葉英和",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "二松学舎柏",
+          "score": 15,
+          "won": true,
+          "name": "二松学舎柏",
+          "slug": null
+        },
+        {
+          "display": "わせがく",
+          "score": 0,
+          "won": false,
+          "name": "わせがく",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "佐倉西・佐倉東",
           "score": 4,
           "won": false,
@@ -1956,6 +2417,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "成田",
+          "score": 5,
+          "won": true,
+          "name": "成田",
+          "slug": null
+        },
+        {
+          "display": "学館船橋",
+          "score": 1,
+          "won": false,
+          "name": "学館船橋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "小金",
           "score": 1,
           "won": false,
@@ -1968,6 +2452,52 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
           "won": true,
           "name": "八千代高校",
           "slug": "chiba-yachiyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日大習志野",
+          "score": 1,
+          "won": false,
+          "name": "日大習志野",
+          "slug": null
+        },
+        {
+          "display": "中央学院",
+          "score": 6,
+          "won": true,
+          "name": "中央学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "志学館",
+          "score": 7,
+          "won": true,
+          "name": "志学館",
+          "slug": null
+        },
+        {
+          "display": "敬愛学園",
+          "score": 2,
+          "won": false,
+          "name": "敬愛学園",
+          "slug": null
         }
       ]
     },
@@ -2090,6 +2620,52 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
       "date": null,
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "渋谷幕張",
+          "score": 3,
+          "won": false,
+          "name": "渋谷幕張",
+          "slug": null
+        },
+        {
+          "display": "秀明八千代",
+          "score": 5,
+          "won": true,
+          "name": "秀明八千代",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "千葉経大附",
+          "score": 2,
+          "won": true,
+          "name": "千葉経大附",
+          "slug": null
+        },
+        {
+          "display": "八千代松陰",
+          "score": 0,
+          "won": false,
+          "name": "八千代松陰",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
       "round": "3回戦",
       "venue": null,
       "teams": [
@@ -2152,6 +2728,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
           "won": true,
           "name": "実籾高校",
           "slug": "mimomi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "芝浦工大柏",
+          "score": 0,
+          "won": false,
+          "name": "芝浦工大柏",
+          "slug": null
+        },
+        {
+          "display": "千葉商大付",
+          "score": 7,
+          "won": true,
+          "name": "千葉商大付",
+          "slug": null
         }
       ]
     },
@@ -2244,6 +2843,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
           "won": true,
           "name": "船橋高校",
           "slug": "chiba-funabashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "千葉明徳",
+          "score": 10,
+          "won": true,
+          "name": "千葉明徳",
+          "slug": null
+        },
+        {
+          "display": "二松学舎柏",
+          "score": 0,
+          "won": false,
+          "name": "二松学舎柏",
+          "slug": null
         }
       ]
     },
@@ -2389,6 +3011,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
       "date": null,
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "秀明八千代",
+          "score": 3,
+          "won": false,
+          "name": "秀明八千代",
+          "slug": null
+        },
+        {
+          "display": "千葉経大附",
+          "score": 21,
+          "won": true,
+          "name": "千葉経大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
       "round": "4回戦",
       "venue": null,
       "teams": [
@@ -2508,6 +3153,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "成田",
+          "score": 14,
+          "won": true,
+          "name": "成田",
+          "slug": null
+        },
+        {
+          "display": "中央学院",
+          "score": 7,
+          "won": false,
+          "name": "中央学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "志学館",
           "score": 9,
           "won": true,
@@ -2542,6 +3210,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
           "score": 8,
           "won": true,
           "name": "千葉経大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "専修大松戸",
+          "score": 2,
+          "won": true,
+          "name": "専修大松戸",
+          "slug": null
+        },
+        {
+          "display": "千葉商大付",
+          "score": 1,
+          "won": false,
+          "name": "千葉商大付",
           "slug": null
         }
       ]
@@ -2596,6 +3287,29 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
       "date": null,
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "志学館",
+          "score": 11,
+          "won": true,
+          "name": "志学館",
+          "slug": null
+        },
+        {
+          "display": "千葉経大附",
+          "score": 0,
+          "won": false,
+          "name": "千葉経大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
       "round": "準々決勝",
       "venue": null,
       "teams": [
@@ -2612,6 +3326,75 @@ export const REGIONAL_CHIBA: RegionalDistrict = {
           "won": false,
           "name": "船橋高校",
           "slug": "chiba-funabashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "成田",
+          "score": 3,
+          "won": false,
+          "name": "成田",
+          "slug": null
+        },
+        {
+          "display": "志学館",
+          "score": 4,
+          "won": true,
+          "name": "志学館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "専修大松戸",
+          "score": 7,
+          "won": true,
+          "name": "専修大松戸",
+          "slug": null
+        },
+        {
+          "display": "志学館",
+          "score": 0,
+          "won": false,
+          "name": "志学館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権千葉大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "拓殖大紅陵",
+          "score": 3,
+          "won": true,
+          "name": "拓殖大紅陵",
+          "slug": null
+        },
+        {
+          "display": "専修大松戸",
+          "score": 1,
+          "won": false,
+          "name": "専修大松戸",
+          "slug": null
         }
       ]
     }

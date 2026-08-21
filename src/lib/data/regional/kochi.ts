@@ -221,6 +221,30 @@ export const REGIONAL_KOCHI: RegionalDistrict = {
       "season": "spring",
       "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
       "round": "2回戦",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "高知海洋・室戸・幡多農",
+          "score": 0,
+          "won": false,
+          "name": "高知海洋・室戸・幡多農",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "高知",
+          "score": 16,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "2回戦",
       "venue": "県営春野球場",
       "teams": [
         {
@@ -356,6 +380,30 @@ export const REGIONAL_KOCHI: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-03-26",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "準々決勝",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "高知",
+          "score": 8,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        },
+        {
+          "display": "丸の内・追手前",
+          "score": 0,
+          "won": false,
+          "name": "丸の内・追手前",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
       "date": "2026-03-28",
       "season": "spring",
       "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
@@ -374,6 +422,29 @@ export const REGIONAL_KOCHI: RegionalDistrict = {
           "score": 2,
           "won": false,
           "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "準決勝",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "高知中央",
+          "score": 3,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        },
+        {
+          "display": "高知",
+          "score": 2,
+          "won": false,
+          "name": "高知",
           "slug": null
         }
       ]
@@ -886,6 +957,75 @@ export const REGIONAL_KOCHI: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "準決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知中央",
+          "score": 4,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        },
+        {
+          "display": "高知",
+          "score": 0,
+          "won": false,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "準決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "土佐",
+          "score": 3,
+          "won": false,
+          "name": "土佐",
+          "slug": null
+        },
+        {
+          "display": "明徳義塾",
+          "score": 4,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 3,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "高知中央",
+          "score": 0,
+          "won": false,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-06",
       "season": "autumn",
       "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
@@ -1121,6 +1261,29 @@ export const REGIONAL_KOCHI: RegionalDistrict = {
       "season": "autumn",
       "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
       "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知",
+          "score": 2,
+          "won": false,
+          "name": "高知",
+          "slug": null
+        },
+        {
+          "display": "高知中央",
+          "score": 9,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
+      "round": "2回戦",
       "venue": "日本トーター野球場",
       "teams": [
         {
@@ -1302,6 +1465,29 @@ export const REGIONAL_KOCHI: RegionalDistrict = {
       ]
     },
     {
+      "date": "2025-10-04",
+      "season": "autumn",
+      "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
+      "round": "準決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知中央",
+          "score": 1,
+          "won": false,
+          "name": "高知中央",
+          "slug": null
+        },
+        {
+          "display": "土佐",
+          "score": 2,
+          "won": true,
+          "name": "土佐",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-10-05",
       "season": "autumn",
       "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
@@ -1320,6 +1506,29 @@ export const REGIONAL_KOCHI: RegionalDistrict = {
           "score": 1,
           "won": false,
           "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
+      "round": "決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 4,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "土佐",
+          "score": 2,
+          "won": false,
+          "name": "土佐",
           "slug": null
         }
       ]

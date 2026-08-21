@@ -40,6 +40,52 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "浦和実",
+          "score": 5,
+          "won": false,
+          "name": "浦和実",
+          "slug": null
+        },
+        {
+          "display": "早大本庄",
+          "score": 6,
+          "won": true,
+          "name": "早大本庄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-24",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "山村学園",
+          "score": 10,
+          "won": true,
+          "name": "山村学園",
+          "slug": null
+        },
+        {
+          "display": "正智深谷",
+          "score": 7,
+          "won": false,
+          "name": "正智深谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-24",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "春日部",
           "score": 2,
           "won": false,
@@ -74,6 +120,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "score": 10,
           "won": true,
           "name": "埼玉栄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-24",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "叡明",
+          "score": 3,
+          "won": false,
+          "name": "叡明",
+          "slug": null
+        },
+        {
+          "display": "武蔵越生",
+          "score": 5,
+          "won": true,
+          "name": "武蔵越生",
           "slug": null
         }
       ]
@@ -155,6 +224,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "市立川越",
+          "score": 0,
+          "won": false,
+          "name": "市立川越",
+          "slug": null
+        },
+        {
+          "display": "昌平",
+          "score": 8,
+          "won": true,
+          "name": "昌平",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "大宮北",
           "score": 2,
           "won": false,
@@ -190,6 +282,52 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "won": false,
           "name": "越ケ谷高校",
           "slug": "koshigaya"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "山村国際",
+          "score": 5,
+          "won": false,
+          "name": "山村国際",
+          "slug": null
+        },
+        {
+          "display": "立教新座",
+          "score": 6,
+          "won": true,
+          "name": "立教新座",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "西武台",
+          "score": 10,
+          "won": true,
+          "name": "西武台",
+          "slug": null
+        },
+        {
+          "display": "慶應志木",
+          "score": 3,
+          "won": false,
+          "name": "慶應志木",
+          "slug": null
         }
       ]
     },
@@ -339,6 +477,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "細田学園",
+          "score": 1,
+          "won": false,
+          "name": "細田学園",
+          "slug": null
+        },
+        {
+          "display": "浦和麗明",
+          "score": 3,
+          "won": true,
+          "name": "浦和麗明",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "大宮東",
           "score": 6,
           "won": true,
@@ -351,6 +512,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "won": false,
           "name": "熊谷工業高校",
           "slug": "kumagayakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "秀明英光",
+          "score": 9,
+          "won": true,
+          "name": "秀明英光",
+          "slug": null
+        },
+        {
+          "display": "星野",
+          "score": 5,
+          "won": false,
+          "name": "星野",
+          "slug": null
         }
       ]
     },
@@ -408,6 +592,52 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "山村学園",
+          "score": 6,
+          "won": true,
+          "name": "山村学園",
+          "slug": null
+        },
+        {
+          "display": "武蔵越生",
+          "score": 3,
+          "won": false,
+          "name": "武蔵越生",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市立浦和",
+          "score": 10,
+          "won": true,
+          "name": "市立浦和",
+          "slug": null
+        },
+        {
+          "display": "早大本庄",
+          "score": 3,
+          "won": false,
+          "name": "早大本庄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "春日部工",
           "score": 0,
           "won": false,
@@ -419,6 +649,144 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "score": 7,
           "won": true,
           "name": "西武台",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "聖望学園",
+          "score": 6,
+          "won": false,
+          "name": "聖望学園",
+          "slug": null
+        },
+        {
+          "display": "昌平",
+          "score": 11,
+          "won": true,
+          "name": "昌平",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "獨協埼玉",
+          "score": 6,
+          "won": false,
+          "name": "獨協埼玉",
+          "slug": null
+        },
+        {
+          "display": "埼玉栄",
+          "score": 13,
+          "won": true,
+          "name": "埼玉栄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東農大三",
+          "score": 1,
+          "won": false,
+          "name": "東農大三",
+          "slug": null
+        },
+        {
+          "display": "立教新座",
+          "score": 3,
+          "won": true,
+          "name": "立教新座",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "本庄第一",
+          "score": 5,
+          "won": false,
+          "name": "本庄第一",
+          "slug": null
+        },
+        {
+          "display": "浦和",
+          "score": 6,
+          "won": true,
+          "name": "浦和",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "花咲徳栄",
+          "score": 12,
+          "won": true,
+          "name": "花咲徳栄",
+          "slug": null
+        },
+        {
+          "display": "市立浦和",
+          "score": 2,
+          "won": false,
+          "name": "市立浦和",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浦和学院",
+          "score": 9,
+          "won": true,
+          "name": "浦和学院",
+          "slug": null
+        },
+        {
+          "display": "浦和",
+          "score": 3,
+          "won": false,
+          "name": "浦和",
           "slug": null
         }
       ]
@@ -477,6 +845,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "春日部共栄",
+          "score": 2,
+          "won": false,
+          "name": "春日部共栄",
+          "slug": null
+        },
+        {
+          "display": "立教新座",
+          "score": 3,
+          "won": true,
+          "name": "立教新座",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "大宮東",
           "score": 1,
           "won": false,
@@ -488,6 +879,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "score": 6,
           "won": true,
           "name": "山村学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "埼玉栄",
+          "score": 5,
+          "won": false,
+          "name": "埼玉栄",
+          "slug": null
+        },
+        {
+          "display": "秀明英光",
+          "score": 7,
+          "won": true,
+          "name": "秀明英光",
           "slug": null
         }
       ]
@@ -523,6 +937,52 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "秀明英光",
+          "score": 1,
+          "won": false,
+          "name": "秀明英光",
+          "slug": null
+        },
+        {
+          "display": "花咲徳栄",
+          "score": 8,
+          "won": true,
+          "name": "花咲徳栄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "山村学園",
+          "score": 7,
+          "won": false,
+          "name": "山村学園",
+          "slug": null
+        },
+        {
+          "display": "浦和学院",
+          "score": 8,
+          "won": true,
+          "name": "浦和学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
           "display": "上尾",
           "score": 5,
           "won": false,
@@ -534,6 +994,98 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "score": 6,
           "won": true,
           "name": "昌平",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浦和麗明",
+          "score": 4,
+          "won": false,
+          "name": "浦和麗明",
+          "slug": null
+        },
+        {
+          "display": "立教新座",
+          "score": 10,
+          "won": true,
+          "name": "立教新座",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-04",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "花咲徳栄",
+          "score": 8,
+          "won": true,
+          "name": "花咲徳栄",
+          "slug": null
+        },
+        {
+          "display": "昌平",
+          "score": 3,
+          "won": false,
+          "name": "昌平",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-04",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浦和学院",
+          "score": 17,
+          "won": true,
+          "name": "浦和学院",
+          "slug": null
+        },
+        {
+          "display": "立教新座",
+          "score": 5,
+          "won": false,
+          "name": "立教新座",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "season": "spring",
+      "tournament": "2026年春季埼玉県高校野球大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "花咲徳栄",
+          "score": 7,
+          "won": false,
+          "name": "花咲徳栄",
+          "slug": null
+        },
+        {
+          "display": "浦和学院",
+          "score": 11,
+          "won": true,
+          "name": "浦和学院",
           "slug": null
         }
       ]
@@ -581,6 +1133,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "won": false,
           "name": "浦和北高校",
           "slug": "urawakita"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東農大三",
+          "score": 3,
+          "won": true,
+          "name": "東農大三",
+          "slug": null
+        },
+        {
+          "display": "狭山ヶ丘",
+          "score": 1,
+          "won": false,
+          "name": "狭山ヶ丘",
+          "slug": null
         }
       ]
     },
@@ -799,6 +1374,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "国際学院",
+          "score": 17,
+          "won": true,
+          "name": "国際学院",
+          "slug": null
+        },
+        {
+          "display": "わせがく夢育",
+          "score": 0,
+          "won": false,
+          "name": "わせがく夢育",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "所沢",
           "score": 0,
           "won": false,
@@ -868,6 +1466,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "開智未来",
+          "score": 15,
+          "won": true,
+          "name": "開智未来",
+          "slug": null
+        },
+        {
+          "display": "越谷総合",
+          "score": 0,
+          "won": false,
+          "name": "越谷総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "蕨",
           "score": 9,
           "won": true,
@@ -903,6 +1524,99 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "won": false,
           "name": "川越南高校",
           "slug": "kawagoeminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浦和麗明",
+          "score": 3,
+          "won": true,
+          "name": "浦和麗明",
+          "slug": null
+        },
+        {
+          "display": "叡明",
+          "score": 1,
+          "won": false,
+          "name": "叡明",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "本庄東",
+          "score": 1,
+          "won": false,
+          "name": "本庄東",
+          "slug": null
+        },
+        {
+          "display": "浦和学院",
+          "score": 8,
+          "won": true,
+          "name": "浦和学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "聖望学園",
+          "score": 4,
+          "won": false,
+          "name": "聖望学園",
+          "slug": null
+        },
+        {
+          "display": "昌平",
+          "score": 5,
+          "won": true,
+          "name": "昌平",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "連合Ａ",
+          "score": 0,
+          "won": false,
+          "name": "連合Ａ",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "花咲徳栄",
+          "score": 25,
+          "won": true,
+          "name": "花咲徳栄",
+          "slug": null
         }
       ]
     },
@@ -1098,6 +1812,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "細田学園",
+          "score": 13,
+          "won": true,
+          "name": "細田学園",
+          "slug": null
+        },
+        {
+          "display": "川越",
+          "score": 1,
+          "won": false,
+          "name": "川越",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "浦和商",
           "score": 3,
           "won": true,
@@ -1213,6 +1950,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "獨協埼玉",
+          "score": 0,
+          "won": false,
+          "name": "獨協埼玉",
+          "slug": null
+        },
+        {
+          "display": "浦和",
+          "score": 5,
+          "won": true,
+          "name": "浦和",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "桶川",
           "score": 0,
           "won": false,
@@ -1317,6 +2077,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "won": true,
           "name": "大宮南高校",
           "slug": "omiyaminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市立浦和",
+          "score": 1,
+          "won": false,
+          "name": "市立浦和",
+          "slug": null
+        },
+        {
+          "display": "星野",
+          "score": 10,
+          "won": true,
+          "name": "星野",
+          "slug": null
         }
       ]
     },
@@ -1558,6 +2341,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "川越東",
+          "score": 10,
+          "won": true,
+          "name": "川越東",
+          "slug": null
+        },
+        {
+          "display": "栄東",
+          "score": 0,
+          "won": false,
+          "name": "栄東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "川越工",
           "score": 0,
           "won": false,
@@ -1686,6 +2492,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "won": true,
           "name": "浦和東高校",
           "slug": "urawahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "本庄第一",
+          "score": 8,
+          "won": true,
+          "name": "本庄第一",
+          "slug": null
+        },
+        {
+          "display": "伊奈学園",
+          "score": 5,
+          "won": false,
+          "name": "伊奈学園",
+          "slug": null
         }
       ]
     },
@@ -2089,6 +2918,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "山村国際",
+          "score": 0,
+          "won": false,
+          "name": "山村国際",
+          "slug": null
+        },
+        {
+          "display": "山村学園",
+          "score": 2,
+          "won": true,
+          "name": "山村学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "春日部東",
           "score": 0,
           "won": false,
@@ -2273,6 +3125,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "東野",
+          "score": 0,
+          "won": false,
+          "name": "東野",
+          "slug": null
+        },
+        {
+          "display": "城西大川越",
+          "score": 6,
+          "won": true,
+          "name": "城西大川越",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "春日部共栄",
           "score": 10,
           "won": true,
@@ -2331,6 +3206,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "won": false,
           "name": "浦和東高校",
           "slug": "urawahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市立川越",
+          "score": 6,
+          "won": true,
+          "name": "市立川越",
+          "slug": null
+        },
+        {
+          "display": "埼玉栄",
+          "score": 3,
+          "won": false,
+          "name": "埼玉栄",
+          "slug": null
         }
       ]
     },
@@ -2411,6 +3309,52 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "開智未来",
+          "score": 3,
+          "won": false,
+          "name": "開智未来",
+          "slug": null
+        },
+        {
+          "display": "川越東",
+          "score": 12,
+          "won": true,
+          "name": "川越東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浦和実",
+          "score": 7,
+          "won": true,
+          "name": "浦和実",
+          "slug": null
+        },
+        {
+          "display": "本庄第一",
+          "score": 1,
+          "won": false,
+          "name": "本庄第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "大宮東",
           "score": 7,
           "won": true,
@@ -2468,6 +3412,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "score": 4,
           "won": true,
           "name": "西武文理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "栄北",
+          "score": 1,
+          "won": false,
+          "name": "栄北",
+          "slug": null
+        },
+        {
+          "display": "正智深谷",
+          "score": 14,
+          "won": true,
+          "name": "正智深谷",
           "slug": null
         }
       ]
@@ -2595,6 +3562,52 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "城北埼玉",
+          "score": 0,
+          "won": false,
+          "name": "城北埼玉",
+          "slug": null
+        },
+        {
+          "display": "浦和学院",
+          "score": 7,
+          "won": true,
+          "name": "浦和学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東農大三",
+          "score": 2,
+          "won": false,
+          "name": "東農大三",
+          "slug": null
+        },
+        {
+          "display": "立教新座",
+          "score": 3,
+          "won": true,
+          "name": "立教新座",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "花咲徳栄",
           "score": 12,
           "won": true,
@@ -2641,6 +3654,52 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "春日部共栄",
+          "score": 1,
+          "won": false,
+          "name": "春日部共栄",
+          "slug": null
+        },
+        {
+          "display": "早大本庄",
+          "score": 8,
+          "won": true,
+          "name": "早大本庄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "昌平",
+          "score": 19,
+          "won": true,
+          "name": "昌平",
+          "slug": null
+        },
+        {
+          "display": "城西大川越",
+          "score": 0,
+          "won": false,
+          "name": "城西大川越",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "上尾",
           "score": 4,
           "won": false,
@@ -2652,6 +3711,75 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "score": 5,
           "won": true,
           "name": "正智深谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "川越東",
+          "score": 3,
+          "won": false,
+          "name": "川越東",
+          "slug": null
+        },
+        {
+          "display": "西武台",
+          "score": 10,
+          "won": true,
+          "name": "西武台",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市立川越",
+          "score": 9,
+          "won": true,
+          "name": "市立川越",
+          "slug": null
+        },
+        {
+          "display": "西武文理",
+          "score": 0,
+          "won": false,
+          "name": "西武文理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浦和実",
+          "score": 0,
+          "won": false,
+          "name": "浦和実",
+          "slug": null
+        },
+        {
+          "display": "浦和",
+          "score": 3,
+          "won": true,
+          "name": "浦和",
           "slug": null
         }
       ]
@@ -2802,6 +3930,75 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "早大本庄",
+          "score": 0,
+          "won": false,
+          "name": "早大本庄",
+          "slug": null
+        },
+        {
+          "display": "浦和学院",
+          "score": 12,
+          "won": true,
+          "name": "浦和学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "昌平",
+          "score": 21,
+          "won": true,
+          "name": "昌平",
+          "slug": null
+        },
+        {
+          "display": "浦和",
+          "score": 12,
+          "won": false,
+          "name": "浦和",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "花咲徳栄",
+          "score": 5,
+          "won": true,
+          "name": "花咲徳栄",
+          "slug": null
+        },
+        {
+          "display": "武蔵越生",
+          "score": 2,
+          "won": false,
+          "name": "武蔵越生",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "浦和麗明",
           "score": 1,
           "won": false,
@@ -2814,6 +4011,52 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "won": true,
           "name": "大宮東高校",
           "slug": "omiyahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市立川越",
+          "score": 3,
+          "won": false,
+          "name": "市立川越",
+          "slug": null
+        },
+        {
+          "display": "立教新座",
+          "score": 7,
+          "won": true,
+          "name": "立教新座",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "西武台",
+          "score": 0,
+          "won": false,
+          "name": "西武台",
+          "slug": null
+        },
+        {
+          "display": "山村学園",
+          "score": 10,
+          "won": true,
+          "name": "山村学園",
+          "slug": null
         }
       ]
     },
@@ -2871,6 +4114,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "秀明英光",
+          "score": 0,
+          "won": false,
+          "name": "秀明英光",
+          "slug": null
+        },
+        {
+          "display": "浦和学院",
+          "score": 10,
+          "won": true,
+          "name": "浦和学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
           "display": "花咲徳栄",
           "score": 9,
           "won": true,
@@ -2910,6 +4176,98 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "昌平",
+          "score": 3,
+          "won": true,
+          "name": "昌平",
+          "slug": null
+        },
+        {
+          "display": "山村学園",
+          "score": 2,
+          "won": false,
+          "name": "山村学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浦和学院",
+          "score": 9,
+          "won": true,
+          "name": "浦和学院",
+          "slug": null
+        },
+        {
+          "display": "立教新座",
+          "score": 0,
+          "won": false,
+          "name": "立教新座",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "花咲徳栄",
+          "score": 6,
+          "won": true,
+          "name": "花咲徳栄",
+          "slug": null
+        },
+        {
+          "display": "昌平",
+          "score": 3,
+          "won": false,
+          "name": "昌平",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-26",
+      "season": "summer",
+      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "花咲徳栄",
+          "score": 7,
+          "won": true,
+          "name": "花咲徳栄",
+          "slug": null
+        },
+        {
+          "display": "浦和学院",
+          "score": 3,
+          "won": false,
+          "name": "浦和学院",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-26",
       "season": "autumn",
       "tournament": "2025年秋季埼玉県高校野球大会",
@@ -2929,6 +4287,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "won": true,
           "name": "富士見高校",
           "slug": "fujimi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-26",
+      "season": "autumn",
+      "tournament": "2025年秋季埼玉県高校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "川越東",
+          "score": 5,
+          "won": false,
+          "name": "川越東",
+          "slug": null
+        },
+        {
+          "display": "市立川越",
+          "score": 6,
+          "won": true,
+          "name": "市立川越",
+          "slug": null
         }
       ]
     },
@@ -2963,6 +4344,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "本庄第一",
+          "score": 4,
+          "won": false,
+          "name": "本庄第一",
+          "slug": null
+        },
+        {
+          "display": "春日部共栄",
+          "score": 6,
+          "won": true,
+          "name": "春日部共栄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-26",
+      "season": "autumn",
+      "tournament": "2025年秋季埼玉県高校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "熊谷商",
           "score": 4,
           "won": true,
@@ -2975,6 +4379,52 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "won": false,
           "name": "川口工業高校",
           "slug": "kawaguchikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-26",
+      "season": "autumn",
+      "tournament": "2025年秋季埼玉県高校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "本庄東",
+          "score": 6,
+          "won": false,
+          "name": "本庄東",
+          "slug": null
+        },
+        {
+          "display": "浦和",
+          "score": 7,
+          "won": true,
+          "name": "浦和",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-26",
+      "season": "autumn",
+      "tournament": "2025年秋季埼玉県高校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "花咲徳栄",
+          "score": 10,
+          "won": true,
+          "name": "花咲徳栄",
+          "slug": null
+        },
+        {
+          "display": "慶應志木",
+          "score": 0,
+          "won": false,
+          "name": "慶應志木",
+          "slug": null
         }
       ]
     },
@@ -3055,6 +4505,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "西武文理",
+          "score": 12,
+          "won": true,
+          "name": "西武文理",
+          "slug": null
+        },
+        {
+          "display": "市立浦和",
+          "score": 2,
+          "won": false,
+          "name": "市立浦和",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年秋季埼玉県高校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "山村学園",
           "score": 2,
           "won": false,
@@ -3101,6 +4574,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "伊奈学園",
+          "score": 1,
+          "won": false,
+          "name": "伊奈学園",
+          "slug": null
+        },
+        {
+          "display": "武蔵越生",
+          "score": 3,
+          "won": true,
+          "name": "武蔵越生",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年秋季埼玉県高校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "昌平",
           "score": 8,
           "won": true,
@@ -3135,6 +4631,52 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "score": 3,
           "won": false,
           "name": "開智未来",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "2025年秋季埼玉県高校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市立川越",
+          "score": 3,
+          "won": false,
+          "name": "市立川越",
+          "slug": null
+        },
+        {
+          "display": "埼玉栄",
+          "score": 6,
+          "won": true,
+          "name": "埼玉栄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "2025年秋季埼玉県高校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "山村国際",
+          "score": 3,
+          "won": false,
+          "name": "山村国際",
+          "slug": null
+        },
+        {
+          "display": "浦和学院",
+          "score": 12,
+          "won": true,
+          "name": "浦和学院",
           "slug": null
         }
       ]
@@ -3216,6 +4758,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "浦和",
+          "score": 6,
+          "won": false,
+          "name": "浦和",
+          "slug": null
+        },
+        {
+          "display": "秀明英光",
+          "score": 7,
+          "won": true,
+          "name": "秀明英光",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "2025年秋季埼玉県高校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "花咲徳栄",
           "score": 9,
           "won": true,
@@ -3250,6 +4815,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "score": 7,
           "won": true,
           "name": "春日部共栄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-30",
+      "season": "autumn",
+      "tournament": "2025年秋季埼玉県高校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "昌平",
+          "score": 3,
+          "won": false,
+          "name": "昌平",
+          "slug": null
+        },
+        {
+          "display": "花咲徳栄",
+          "score": 5,
+          "won": true,
+          "name": "花咲徳栄",
           "slug": null
         }
       ]
@@ -3308,6 +4896,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "西武文理",
+          "score": 0,
+          "won": false,
+          "name": "西武文理",
+          "slug": null
+        },
+        {
+          "display": "浦和学院",
+          "score": 10,
+          "won": true,
+          "name": "浦和学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-30",
+      "season": "autumn",
+      "tournament": "2025年秋季埼玉県高校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "上尾",
           "score": 3,
           "won": true,
@@ -3319,6 +4930,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "score": 2,
           "won": false,
           "name": "埼玉栄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-30",
+      "season": "autumn",
+      "tournament": "2025年秋季埼玉県高校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "武蔵越生",
+          "score": 1,
+          "won": false,
+          "name": "武蔵越生",
+          "slug": null
+        },
+        {
+          "display": "春日部共栄",
+          "score": 6,
+          "won": true,
+          "name": "春日部共栄",
           "slug": null
         }
       ]
@@ -3400,6 +5034,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "花咲徳栄",
+          "score": 4,
+          "won": true,
+          "name": "花咲徳栄",
+          "slug": null
+        },
+        {
+          "display": "春日部共栄",
+          "score": 1,
+          "won": false,
+          "name": "春日部共栄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-02",
+      "season": "autumn",
+      "tournament": "2025年秋季埼玉県高校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
           "display": "大宮東",
           "score": 3,
           "won": false,
@@ -3411,6 +5068,29 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "score": 8,
           "won": true,
           "name": "浦和学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-02",
+      "season": "autumn",
+      "tournament": "2025年秋季埼玉県高校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浦和麗明",
+          "score": 6,
+          "won": true,
+          "name": "浦和麗明",
+          "slug": null
+        },
+        {
+          "display": "秀明英光",
+          "score": 3,
+          "won": false,
+          "name": "秀明英光",
           "slug": null
         }
       ]
@@ -3433,6 +5113,52 @@ export const REGIONAL_SAITAMA: RegionalDistrict = {
           "display": "浦和学院",
           "score": 4,
           "won": true,
+          "name": "浦和学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-04",
+      "season": "autumn",
+      "tournament": "2025年秋季埼玉県高校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浦和麗明",
+          "score": 3,
+          "won": false,
+          "name": "浦和麗明",
+          "slug": null
+        },
+        {
+          "display": "花咲徳栄",
+          "score": 9,
+          "won": true,
+          "name": "花咲徳栄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "2025年秋季埼玉県高校野球大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "花咲徳栄",
+          "score": 3,
+          "won": true,
+          "name": "花咲徳栄",
+          "slug": null
+        },
+        {
+          "display": "浦和学院",
+          "score": 2,
+          "won": false,
           "name": "浦和学院",
           "slug": null
         }

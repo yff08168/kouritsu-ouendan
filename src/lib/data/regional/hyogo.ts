@@ -1885,6 +1885,31 @@ export const REGIONAL_HYOGO: RegionalDistrict = {
       "date": null,
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権兵庫大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "神戸甲北・神戸北・北神戸総合",
+          "score": 8,
+          "won": true,
+          "name": "神戸甲北・神戸北・北神戸総合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "西宮北・西宮苦楽園",
+          "score": 1,
+          "won": false,
+          "name": "西宮北・西宮苦楽園",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権兵庫大会",
       "round": "3回戦",
       "venue": null,
       "teams": [
@@ -2446,6 +2471,29 @@ export const REGIONAL_HYOGO: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "神戸国際大附",
+          "score": 5,
+          "won": true,
+          "name": "神戸国際大附",
+          "slug": null
+        },
+        {
+          "display": "神戸弘陵学園",
+          "score": 2,
+          "won": false,
+          "name": "神戸弘陵学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権兵庫大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "県農",
           "score": 2,
           "won": false,
@@ -2504,6 +2552,29 @@ export const REGIONAL_HYOGO: RegionalDistrict = {
           "won": false,
           "name": "飾磨高校",
           "slug": "shikama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権兵庫大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "報徳学園",
+          "score": 5,
+          "won": true,
+          "name": "報徳学園",
+          "slug": null
+        },
+        {
+          "display": "育英",
+          "score": 3,
+          "won": false,
+          "name": "育英",
+          "slug": null
         }
       ]
     },
@@ -2617,6 +2688,29 @@ export const REGIONAL_HYOGO: RegionalDistrict = {
           "display": "関西学院",
           "score": 3,
           "won": true,
+          "name": "関西学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権兵庫大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "報徳学園",
+          "score": 5,
+          "won": true,
+          "name": "報徳学園",
+          "slug": null
+        },
+        {
+          "display": "関西学院",
+          "score": 1,
+          "won": false,
           "name": "関西学院",
           "slug": null
         }
@@ -2803,6 +2897,52 @@ export const REGIONAL_HYOGO: RegionalDistrict = {
           "won": false,
           "name": "川西緑台高校",
           "slug": "kawanishimidoridai"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権兵庫大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "園田学園",
+          "score": 0,
+          "won": false,
+          "name": "園田学園",
+          "slug": null
+        },
+        {
+          "display": "神港学園",
+          "score": 4,
+          "won": true,
+          "name": "神港学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権兵庫大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滝川第二",
+          "score": 1,
+          "won": true,
+          "name": "滝川第二",
+          "slug": null
+        },
+        {
+          "display": "神港学園",
+          "score": 0,
+          "won": false,
+          "name": "神港学園",
+          "slug": null
         }
       ]
     },
@@ -3021,6 +3161,29 @@ export const REGIONAL_HYOGO: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "仁川学院",
+          "score": 2,
+          "won": false,
+          "name": "仁川学院",
+          "slug": null
+        },
+        {
+          "display": "須磨学園",
+          "score": 13,
+          "won": true,
+          "name": "須磨学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権兵庫大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "小野",
           "score": 0,
           "won": false,
@@ -3148,6 +3311,29 @@ export const REGIONAL_HYOGO: RegionalDistrict = {
           "won": false,
           "name": "西脇工業高校",
           "slug": "nishiwakikogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権兵庫大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "神戸国際大附",
+          "score": 7,
+          "won": true,
+          "name": "神戸国際大附",
+          "slug": null
+        },
+        {
+          "display": "三田松聖",
+          "score": 0,
+          "won": false,
+          "name": "三田松聖",
+          "slug": null
         }
       ]
     },

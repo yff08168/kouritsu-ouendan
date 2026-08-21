@@ -10,6 +10,98 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
   "sourceUrl": "https://www.nagano-hbf.jp/",
   "games": [
     {
+      "date": "2026-06-09",
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球大会",
+      "round": "決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "長野日大",
+          "score": 0,
+          "won": false,
+          "name": "長野日大",
+          "slug": null
+        },
+        {
+          "display": "松本国際",
+          "score": 3,
+          "won": true,
+          "name": "松本国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-06-07",
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球大会",
+      "round": "準決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 2,
+          "won": false,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "松本国際",
+          "score": 5,
+          "won": true,
+          "name": "松本国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-06-07",
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球大会",
+      "round": "準決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "長野日大",
+          "score": 10,
+          "won": true,
+          "name": "長野日大",
+          "slug": null
+        },
+        {
+          "display": "佐久長聖",
+          "score": 6,
+          "won": false,
+          "name": "佐久長聖",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-06-06",
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球大会",
+      "round": "準々決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 2,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "上田西",
+          "score": 1,
+          "won": false,
+          "name": "上田西",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-06-06",
       "season": "spring",
       "tournament": "第154回北信越地区高等学校野球大会",
@@ -29,6 +121,144 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
           "won": false,
           "name": "富山商業高校",
           "slug": "toyamashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-06",
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球大会",
+      "round": "準々決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "佐久長聖",
+          "score": 7,
+          "won": true,
+          "name": "佐久長聖",
+          "slug": null
+        },
+        {
+          "display": "敦賀気比",
+          "score": 1,
+          "won": false,
+          "name": "敦賀気比",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-06-06",
+      "season": "spring",
+      "tournament": "第154回北信越地区高等学校野球大会",
+      "round": "準々決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "長野日大",
+          "score": 4,
+          "won": true,
+          "name": "長野日大",
+          "slug": null
+        },
+        {
+          "display": "新潟明訓",
+          "score": 2,
+          "won": false,
+          "name": "新潟明訓",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-24",
+      "season": "spring",
+      "tournament": "第154回 北信越地区高等学校野球長野県大会",
+      "round": "決勝",
+      "venue": "しんきん諏訪湖スタジアム",
+      "teams": [
+        {
+          "display": "佐久長聖",
+          "score": 6,
+          "won": false,
+          "name": "佐久長聖",
+          "slug": null
+        },
+        {
+          "display": "上田西",
+          "score": 7,
+          "won": true,
+          "name": "上田西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-24",
+      "season": "spring",
+      "tournament": "第154回 北信越地区高等学校野球長野県大会",
+      "round": "3位決定戦",
+      "venue": "しんきん諏訪湖スタジアム",
+      "teams": [
+        {
+          "display": "長野日本大学",
+          "score": 9,
+          "won": true,
+          "name": "長野日本大学",
+          "slug": null
+        },
+        {
+          "display": "松本国際",
+          "score": 1,
+          "won": false,
+          "name": "松本国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "season": "spring",
+      "tournament": "第154回 北信越地区高等学校野球長野県大会",
+      "round": "準決勝",
+      "venue": "しんきん諏訪湖スタジアム",
+      "teams": [
+        {
+          "display": "松本国際",
+          "score": 0,
+          "won": false,
+          "name": "松本国際",
+          "slug": null
+        },
+        {
+          "display": "上田西",
+          "score": 7,
+          "won": true,
+          "name": "上田西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "season": "spring",
+      "tournament": "第154回 北信越地区高等学校野球長野県大会",
+      "round": "準決勝",
+      "venue": "しんきん諏訪湖スタジアム",
+      "teams": [
+        {
+          "display": "長野日大",
+          "score": 2,
+          "won": false,
+          "name": "長野日大",
+          "slug": null
+        },
+        {
+          "display": "佐久長聖",
+          "score": 4,
+          "won": true,
+          "name": "佐久長聖",
+          "slug": null
         }
       ]
     },
@@ -60,6 +290,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
       "season": "spring",
       "tournament": "第154回 北信越地区高等学校野球長野県大会",
       "round": "準々決勝",
+      "venue": "しんきん諏訪湖スタジアム",
+      "teams": [
+        {
+          "display": "東海大学付属諏訪",
+          "score": 2,
+          "won": false,
+          "name": "東海大学付属諏訪",
+          "slug": null
+        },
+        {
+          "display": "上田西",
+          "score": 6,
+          "won": true,
+          "name": "上田西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "第154回 北信越地区高等学校野球長野県大会",
+      "round": "準々決勝",
       "venue": "メタルテック飯田スタジアム",
       "teams": [
         {
@@ -75,6 +328,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
           "won": false,
           "name": "小諸義塾高校",
           "slug": "komorogijuku"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "第154回 北信越地区高等学校野球長野県大会",
+      "round": "準々決勝",
+      "venue": "メタルテック飯田スタジアム",
+      "teams": [
+        {
+          "display": "松商学園",
+          "score": 0,
+          "won": false,
+          "name": "松商学園",
+          "slug": null
+        },
+        {
+          "display": "佐久長聖",
+          "score": 9,
+          "won": true,
+          "name": "佐久長聖",
+          "slug": null
         }
       ]
     },
@@ -240,6 +516,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "第154回 北信越地区高等学校野球長野県大会",
+      "round": "1回戦",
+      "venue": "伊那ニッパツスタジアム",
+      "teams": [
+        {
+          "display": "長野",
+          "score": 7,
+          "won": false,
+          "name": "長野",
+          "slug": null
+        },
+        {
+          "display": "上田西",
+          "score": 8,
+          "won": true,
+          "name": "上田西",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-05-10",
       "season": "spring",
       "tournament": "第154回 北信越地区高等学校野球長野県大会 北信予選会",
@@ -259,6 +558,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
           "won": false,
           "name": "長野商業高校",
           "slug": "naganoshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-10",
+      "season": "spring",
+      "tournament": "第154回 北信越地区高等学校野球長野県大会 東信予選会",
+      "round": "決勝",
+      "venue": "佐久総合運動公園野球場",
+      "teams": [
+        {
+          "display": "上田西",
+          "score": 2,
+          "won": false,
+          "name": "上田西",
+          "slug": null
+        },
+        {
+          "display": "佐久長聖",
+          "score": 3,
+          "won": true,
+          "name": "佐久長聖",
+          "slug": null
         }
       ]
     },
@@ -704,6 +1026,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
       "season": "spring",
       "tournament": "第154回 北信越地区高等学校野球長野県大会 中信予選会",
       "round": "準々決勝",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "松商学園",
+          "score": 10,
+          "won": true,
+          "name": "松商学園",
+          "slug": null
+        },
+        {
+          "display": "都市大塩尻",
+          "score": 3,
+          "won": false,
+          "name": "都市大塩尻",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-06",
+      "season": "spring",
+      "tournament": "第154回 北信越地区高等学校野球長野県大会 中信予選会",
+      "round": "準々決勝",
       "venue": "信州グリーンローズスタジアム四賀",
       "teams": [
         {
@@ -1112,6 +1457,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
           "won": false,
           "name": "長野西高校",
           "slug": "naganonishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "season": "spring",
+      "tournament": "第154回 北信越地区高等学校野球長野県大会 北信予選会",
+      "round": "2回戦",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "長野俊英",
+          "score": 5,
+          "won": false,
+          "name": "長野俊英",
+          "slug": null
+        },
+        {
+          "display": "長野",
+          "score": 6,
+          "won": true,
+          "name": "長野",
+          "slug": null
         }
       ]
     },
@@ -1584,6 +1952,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
       "venue": "セキスイハイム松本スタジアム",
       "teams": [
         {
+          "display": "松本第一",
+          "score": 11,
+          "won": true,
+          "name": "松本第一",
+          "slug": null
+        },
+        {
+          "display": "日本ウェルネス長野",
+          "score": 1,
+          "won": false,
+          "name": "日本ウェルネス長野",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "season": "spring",
+      "tournament": "第154回 北信越地区高等学校野球長野県大会 中信予選会",
+      "round": "1回戦",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
           "display": "中信連合",
           "score": 4,
           "won": false,
@@ -1712,6 +2103,167 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
           "won": false,
           "name": "松本美須々ケ丘高校",
           "slug": "matsumotomisuzugaoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回 全国高等学校野球選手権長野大会",
+      "round": "決勝",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "松商学園",
+          "score": 4,
+          "won": true,
+          "name": "松商学園",
+          "slug": null
+        },
+        {
+          "display": "都市大学塩尻",
+          "score": 1,
+          "won": false,
+          "name": "都市大学塩尻",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回 全国高等学校野球選手権長野大会",
+      "round": "準決勝",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "都市大学塩尻",
+          "score": 3,
+          "won": true,
+          "name": "都市大学塩尻",
+          "slug": null
+        },
+        {
+          "display": "松本国際",
+          "score": 2,
+          "won": false,
+          "name": "松本国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回 全国高等学校野球選手権長野大会",
+      "round": "準決勝",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "松商学園",
+          "score": 11,
+          "won": true,
+          "name": "松商学園",
+          "slug": null
+        },
+        {
+          "display": "佐久長聖",
+          "score": 6,
+          "won": false,
+          "name": "佐久長聖",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回 全国高等学校野球選手権長野大会",
+      "round": "準々決勝",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "長野日大",
+          "score": 5,
+          "won": false,
+          "name": "長野日大",
+          "slug": null
+        },
+        {
+          "display": "松商学園",
+          "score": 6,
+          "won": true,
+          "name": "松商学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回 全国高等学校野球選手権長野大会",
+      "round": "準々決勝",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "東海大学付属諏訪",
+          "score": 2,
+          "won": false,
+          "name": "東海大学付属諏訪",
+          "slug": null
+        },
+        {
+          "display": "松本国際",
+          "score": 9,
+          "won": true,
+          "name": "松本国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回 全国高等学校野球選手権長野大会",
+      "round": "準々決勝",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "都市大学塩尻",
+          "score": 6,
+          "won": true,
+          "name": "都市大学塩尻",
+          "slug": null
+        },
+        {
+          "display": "上田西",
+          "score": 1,
+          "won": false,
+          "name": "上田西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回 全国高等学校野球選手権長野大会",
+      "round": "準々決勝",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "松本第一",
+          "score": 1,
+          "won": false,
+          "name": "松本第一",
+          "slug": null
+        },
+        {
+          "display": "佐久長聖",
+          "score": 5,
+          "won": true,
+          "name": "佐久長聖",
+          "slug": null
         }
       ]
     },
@@ -2240,6 +2792,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
           "score": 10,
           "won": true,
           "name": "松本国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回 全国高等学校野球選手権長野大会",
+      "round": "3回戦",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "松商学園",
+          "score": 19,
+          "won": true,
+          "name": "松商学園",
+          "slug": null
+        },
+        {
+          "display": "長野俊英",
+          "score": 0,
+          "won": false,
+          "name": "長野俊英",
           "slug": null
         }
       ]
@@ -2873,6 +3448,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回 全国高等学校野球選手権長野大会",
       "round": "2回戦",
+      "venue": "佐久総合運動公園野球場",
+      "teams": [
+        {
+          "display": "佐久長聖",
+          "score": 11,
+          "won": true,
+          "name": "佐久長聖",
+          "slug": null
+        },
+        {
+          "display": "長野",
+          "score": 4,
+          "won": false,
+          "name": "長野",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回 全国高等学校野球選手権長野大会",
+      "round": "2回戦",
       "venue": "しんきん諏訪湖スタジアム",
       "teams": [
         {
@@ -3079,6 +3677,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
       "date": "2025-09-28",
       "season": "autumn",
       "tournament": "第153回 北信越地区高等学校野球 長野県大会",
+      "round": "決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "長野日大",
+          "score": 3,
+          "won": false,
+          "name": "長野日大",
+          "slug": null
+        },
+        {
+          "display": "上田西",
+          "score": 5,
+          "won": true,
+          "name": "上田西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球 長野県大会",
       "round": "3位決定戦",
       "venue": "長野オリンピックスタジアム",
       "teams": [
@@ -3106,6 +3727,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
       "venue": "長野オリンピックスタジアム",
       "teams": [
         {
+          "display": "松本国際",
+          "score": 1,
+          "won": false,
+          "name": "松本国際",
+          "slug": null
+        },
+        {
+          "display": "上田西",
+          "score": 4,
+          "won": true,
+          "name": "上田西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球 長野県大会",
+      "round": "準決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
           "display": "諏訪清陵",
           "score": 3,
           "won": false,
@@ -3117,6 +3761,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
           "score": 9,
           "won": true,
           "name": "長野日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-24",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球 長野県大会",
+      "round": "準々決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "上田西",
+          "score": 8,
+          "won": true,
+          "name": "上田西",
+          "slug": null
+        },
+        {
+          "display": "長野俊英",
+          "score": 6,
+          "won": false,
+          "name": "長野俊英",
           "slug": null
         }
       ]
@@ -3168,6 +3835,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
       ]
     },
     {
+      "date": "2025-09-24",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球 長野県大会",
+      "round": "準々決勝",
+      "venue": "県営上田野球場",
+      "teams": [
+        {
+          "display": "長野日大",
+          "score": 6,
+          "won": true,
+          "name": "長野日大",
+          "slug": null
+        },
+        {
+          "display": "佐久長聖",
+          "score": 3,
+          "won": false,
+          "name": "佐久長聖",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-21",
       "season": "autumn",
       "tournament": "第153回 北信越地区高等学校野球 長野県大会",
@@ -3210,6 +3900,52 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
           "won": true,
           "name": "長野商業高校",
           "slug": "naganoshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球 長野県大会",
+      "round": "2回戦",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "長野日大",
+          "score": 5,
+          "won": true,
+          "name": "長野日大",
+          "slug": null
+        },
+        {
+          "display": "松商学園",
+          "score": 4,
+          "won": false,
+          "name": "松商学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球 長野県大会",
+      "round": "2回戦",
+      "venue": "県営上田野球場",
+      "teams": [
+        {
+          "display": "松本第一",
+          "score": 0,
+          "won": false,
+          "name": "松本第一",
+          "slug": null
+        },
+        {
+          "display": "上田西",
+          "score": 1,
+          "won": true,
+          "name": "上田西",
+          "slug": null
         }
       ]
     },
@@ -3279,6 +4015,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
           "won": false,
           "name": "伊那北高校",
           "slug": "inakita"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球 長野県大会",
+      "round": "2回戦",
+      "venue": "長野県営野球場",
+      "teams": [
+        {
+          "display": "佐久長聖",
+          "score": 10,
+          "won": true,
+          "name": "佐久長聖",
+          "slug": null
+        },
+        {
+          "display": "都市大学塩尻",
+          "score": 5,
+          "won": false,
+          "name": "都市大学塩尻",
+          "slug": null
         }
       ]
     },
@@ -3493,6 +4252,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
       "date": "2025-09-15",
       "season": "autumn",
       "tournament": "第153回 北信越地区高等学校野球長野県大会 中信予選会",
+      "round": "決勝",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "松本国際",
+          "score": 10,
+          "won": true,
+          "name": "松本国際",
+          "slug": null
+        },
+        {
+          "display": "都市大学塩尻",
+          "score": 0,
+          "won": false,
+          "name": "都市大学塩尻",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球長野県大会 中信予選会",
       "round": "3位決定戦",
       "venue": "セキスイハイム松本スタジアム",
       "teams": [
@@ -3539,6 +4321,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
       "date": "2025-09-14",
       "season": "autumn",
       "tournament": "第153回 北信越地区高等学校野球長野県大会 北信予選会",
+      "round": "決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "長野日大",
+          "score": 11,
+          "won": true,
+          "name": "長野日大",
+          "slug": null
+        },
+        {
+          "display": "長野俊英",
+          "score": 1,
+          "won": false,
+          "name": "長野俊英",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球長野県大会 北信予選会",
       "round": "代表決定",
       "venue": "長野オリンピックスタジアム",
       "teams": [
@@ -3577,6 +4382,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
           "score": 10,
           "won": true,
           "name": "上田西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球長野県大会 東信予選会",
+      "round": "3位決定戦",
+      "venue": "県営上田野球場",
+      "teams": [
+        {
+          "display": "小諸商業",
+          "score": 0,
+          "won": false,
+          "name": "小諸商業",
+          "slug": null
+        },
+        {
+          "display": "佐久長聖",
+          "score": 7,
+          "won": true,
+          "name": "佐久長聖",
           "slug": null
         }
       ]
@@ -3743,6 +4571,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
       ]
     },
     {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球長野県大会 中信予選会",
+      "round": "準決勝",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "都市大学塩尻",
+          "score": 3,
+          "won": true,
+          "name": "都市大学塩尻",
+          "slug": null
+        },
+        {
+          "display": "松本第一",
+          "score": 1,
+          "won": false,
+          "name": "松本第一",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第153回 北信越地区高等学校野球長野県大会 北信予選会",
@@ -3842,6 +4693,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
       "venue": "県営上田野球場",
       "teams": [
         {
+          "display": "上田西",
+          "score": 4,
+          "won": true,
+          "name": "上田西",
+          "slug": null
+        },
+        {
+          "display": "佐久長聖",
+          "score": 0,
+          "won": false,
+          "name": "佐久長聖",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球長野県大会 東信予選会",
+      "round": "準決勝",
+      "venue": "県営上田野球場",
+      "teams": [
+        {
           "display": "上田",
           "score": 8,
           "won": true,
@@ -3923,6 +4797,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
           "won": false,
           "name": "伊那北高校",
           "slug": "inakita"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球長野県大会 東信予選会",
+      "round": "2回戦",
+      "venue": "県営上田野球場",
+      "teams": [
+        {
+          "display": "地球環境",
+          "score": 1,
+          "won": false,
+          "name": "地球環境",
+          "slug": null
+        },
+        {
+          "display": "小諸商業",
+          "score": 2,
+          "won": true,
+          "name": "小諸商業",
+          "slug": null
         }
       ]
     },
@@ -4279,6 +5176,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
       "venue": "セキスイハイム松本スタジアム",
       "teams": [
         {
+          "display": "松商学園",
+          "score": 0,
+          "won": false,
+          "name": "松商学園",
+          "slug": null
+        },
+        {
+          "display": "松本国際",
+          "score": 1,
+          "won": true,
+          "name": "松本国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-06",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球長野県大会 中信予選会",
+      "round": "2回戦",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
           "display": "塩尻志学館",
           "score": 2,
           "won": false,
@@ -4314,6 +5234,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
           "won": false,
           "name": "松本工業高校",
           "slug": "matsumotokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-06",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球長野県大会 中信予選会",
+      "round": "2回戦",
+      "venue": "信州グリーンローズスタジアム四賀",
+      "teams": [
+        {
+          "display": "都市大学塩尻",
+          "score": 6,
+          "won": true,
+          "name": "都市大学塩尻",
+          "slug": null
+        },
+        {
+          "display": "日本ウェルネス長野",
+          "score": 0,
+          "won": false,
+          "name": "日本ウェルネス長野",
+          "slug": null
         }
       ]
     },
@@ -4690,6 +5633,29 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
     {
       "date": "2025-08-30",
       "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球長野県大会 北信予選会",
+      "round": "2回戦",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "長野",
+          "score": 2,
+          "won": false,
+          "name": "長野",
+          "slug": null
+        },
+        {
+          "display": "長野俊英",
+          "score": 5,
+          "won": true,
+          "name": "長野俊英",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "season": "autumn",
       "tournament": "第153回 北信越地区高等学校野球長野県大会 東信予選会",
       "round": "1回戦",
       "venue": "県営上田野球場",
@@ -4914,6 +5880,30 @@ export const REGIONAL_NAGANO: RegionalDistrict = {
           "won": false,
           "name": "大町岳陽高校",
           "slug": "omachigakuyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球長野県大会 中信予選会",
+      "round": "1回戦",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "中信連合",
+          "score": 2,
+          "won": false,
+          "name": "中信連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "日本ウェルネス長野",
+          "score": 14,
+          "won": true,
+          "name": "日本ウェルネス長野",
+          "slug": null
         }
       ]
     },

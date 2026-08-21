@@ -110,6 +110,30 @@ export const REGIONAL_EHIME: RegionalDistrict = {
       "venue": "坊っちゃんスタジアム",
       "teams": [
         {
+          "display": "内 子 小 田 ・ 上 浮穴 ・ 済 美 平 成",
+          "score": 0,
+          "won": false,
+          "name": "内 子 小 田 ・ 上 浮穴 ・ 済 美 平 成",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "松山学院",
+          "score": 10,
+          "won": true,
+          "name": "松山学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "令和8年度（第79回）春季四国地区高等学校野球愛媛県大会",
+      "round": "1回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
           "display": "伊予農",
           "score": 0,
           "won": false,
@@ -192,6 +216,30 @@ export const REGIONAL_EHIME: RegionalDistrict = {
           "won": true,
           "name": "松山北高校",
           "slug": "matsuyamakita"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-21",
+      "season": "spring",
+      "tournament": "令和8年度（第79回）春季四国地区高等学校野球愛媛県大会",
+      "round": "2回戦",
+      "venue": "今治市営球場",
+      "teams": [
+        {
+          "display": "今 治 東 ・ 大 三 島今治南",
+          "score": 0,
+          "won": false,
+          "name": "今 治 東 ・ 大 三 島今治南",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "松山聖陵",
+          "score": 10,
+          "won": true,
+          "name": "松山聖陵",
+          "slug": null
         }
       ]
     },
@@ -666,6 +714,29 @@ export const REGIONAL_EHIME: RegionalDistrict = {
       "venue": "マドンナスタジアム",
       "teams": [
         {
+          "display": "松山聖陵",
+          "score": 8,
+          "won": true,
+          "name": "松山聖陵",
+          "slug": null
+        },
+        {
+          "display": "松山学院",
+          "score": 0,
+          "won": false,
+          "name": "松山学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "season": "spring",
+      "tournament": "令和8年度（第79回）春季四国地区高等学校野球愛媛県大会",
+      "round": "3回戦",
+      "venue": "マドンナスタジアム",
+      "teams": [
+        {
           "display": "今治北",
           "score": 2,
           "won": false,
@@ -794,6 +865,29 @@ export const REGIONAL_EHIME: RegionalDistrict = {
           "won": false,
           "name": "小松高校",
           "slug": "ehime-komatsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "season": "spring",
+      "tournament": "令和8年度（第79回）春季四国地区高等学校野球愛媛県大会",
+      "round": "準決勝",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "松山聖陵",
+          "score": 9,
+          "won": true,
+          "name": "松山聖陵",
+          "slug": null
+        },
+        {
+          "display": "聖カタリナ",
+          "score": 7,
+          "won": false,
+          "name": "聖カタリナ",
+          "slug": null
         }
       ]
     },
@@ -1028,6 +1122,29 @@ export const REGIONAL_EHIME: RegionalDistrict = {
           "won": true,
           "name": "新居浜商業高校",
           "slug": "niihamashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛媛大会",
+      "round": "1回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "内子小田上浮穴",
+          "score": 0,
+          "won": false,
+          "name": "内子小田上浮穴",
+          "slug": null
+        },
+        {
+          "display": "済美平成連合東温",
+          "score": 8,
+          "won": true,
+          "name": "済美平成連合東温",
+          "slug": null
         }
       ]
     },
@@ -1767,6 +1884,29 @@ export const REGIONAL_EHIME: RegionalDistrict = {
           "score": 0,
           "won": false,
           "name": "済美",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-26",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権愛媛大会",
+      "round": "決勝",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "新田",
+          "score": 12,
+          "won": true,
+          "name": "新田",
+          "slug": null
+        },
+        {
+          "display": "松山学院",
+          "score": 3,
+          "won": false,
+          "name": "松山学院",
           "slug": null
         }
       ]

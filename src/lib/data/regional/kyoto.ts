@@ -56,6 +56,29 @@ export const REGIONAL_KYOTO: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "1回戦",
+      "venue": "太陽が丘球場",
+      "teams": [
+        {
+          "display": "京都共栄",
+          "score": 10,
+          "won": true,
+          "name": "京都共栄",
+          "slug": null
+        },
+        {
+          "display": "花園",
+          "score": 0,
+          "won": false,
+          "name": "花園",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-07",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権京都大会",
@@ -264,6 +287,29 @@ export const REGIONAL_KYOTO: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "2回戦",
+      "venue": "太陽が丘球場",
+      "teams": [
+        {
+          "display": "洛星",
+          "score": 2,
+          "won": true,
+          "name": "洛星",
+          "slug": null
+        },
+        {
+          "display": "京都廣学館",
+          "score": 1,
+          "won": false,
+          "name": "京都廣学館",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-11",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権京都大会",
@@ -352,6 +398,29 @@ export const REGIONAL_KYOTO: RegionalDistrict = {
           "won": false,
           "name": "洛水高校",
           "slug": "rakusui"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "2回戦",
+      "venue": "わかさスタジアム京都",
+      "teams": [
+        {
+          "display": "京都両洋",
+          "score": 8,
+          "won": true,
+          "name": "京都両洋",
+          "slug": null
+        },
+        {
+          "display": "京都明徳",
+          "score": 1,
+          "won": false,
+          "name": "京都明徳",
+          "slug": null
         }
       ]
     },
@@ -541,6 +610,29 @@ export const REGIONAL_KYOTO: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "2回戦",
+      "venue": "わかさスタジアム京都",
+      "teams": [
+        {
+          "display": "立命館",
+          "score": 3,
+          "won": false,
+          "name": "立命館",
+          "slug": null
+        },
+        {
+          "display": "京都翔英",
+          "score": 5,
+          "won": true,
+          "name": "京都翔英",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-12",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権京都大会",
@@ -698,6 +790,52 @@ export const REGIONAL_KYOTO: RegionalDistrict = {
           "won": false,
           "name": "向陽高校",
           "slug": "kyoto-koyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "2回戦",
+      "venue": "太陽が丘球場",
+      "teams": [
+        {
+          "display": "同志社",
+          "score": 1,
+          "won": false,
+          "name": "同志社",
+          "slug": null
+        },
+        {
+          "display": "福知山成美",
+          "score": 8,
+          "won": true,
+          "name": "福知山成美",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "2回戦",
+      "venue": "太陽が丘球場",
+      "teams": [
+        {
+          "display": "洛南",
+          "score": 0,
+          "won": false,
+          "name": "洛南",
+          "slug": null
+        },
+        {
+          "display": "日星",
+          "score": 7,
+          "won": true,
+          "name": "日星",
+          "slug": null
         }
       ]
     },
@@ -887,6 +1025,29 @@ export const REGIONAL_KYOTO: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "3回戦",
+      "venue": "太陽が丘球場",
+      "teams": [
+        {
+          "display": "京都両洋",
+          "score": 2,
+          "won": true,
+          "name": "京都両洋",
+          "slug": null
+        },
+        {
+          "display": "大谷",
+          "score": 1,
+          "won": false,
+          "name": "大谷",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-15",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権京都大会",
@@ -1006,6 +1167,29 @@ export const REGIONAL_KYOTO: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権京都大会",
       "round": "3回戦",
+      "venue": "わかさスタジアム京都",
+      "teams": [
+        {
+          "display": "京都国際",
+          "score": 3,
+          "won": true,
+          "name": "京都国際",
+          "slug": null
+        },
+        {
+          "display": "京都文教",
+          "score": 2,
+          "won": false,
+          "name": "京都文教",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "3回戦",
       "venue": "あやべ・日東精工スタジアム",
       "teams": [
         {
@@ -1021,6 +1205,29 @@ export const REGIONAL_KYOTO: RegionalDistrict = {
           "won": true,
           "name": "亀岡高校",
           "slug": "kameoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "3回戦",
+      "venue": "わかさスタジアム京都",
+      "teams": [
+        {
+          "display": "京都先端附",
+          "score": 2,
+          "won": false,
+          "name": "京都先端附",
+          "slug": null
+        },
+        {
+          "display": "福知山成美",
+          "score": 10,
+          "won": true,
+          "name": "福知山成美",
+          "slug": null
         }
       ]
     },
@@ -1117,6 +1324,29 @@ export const REGIONAL_KYOTO: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "4回戦",
+      "venue": "わかさスタジアム京都",
+      "teams": [
+        {
+          "display": "京都成章",
+          "score": 0,
+          "won": false,
+          "name": "京都成章",
+          "slug": null
+        },
+        {
+          "display": "京都両洋",
+          "score": 1,
+          "won": true,
+          "name": "京都両洋",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-19",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権京都大会",
@@ -1135,6 +1365,29 @@ export const REGIONAL_KYOTO: RegionalDistrict = {
           "score": 6,
           "won": true,
           "name": "東山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "4回戦",
+      "venue": "わかさスタジアム京都",
+      "teams": [
+        {
+          "display": "京都外大西",
+          "score": 0,
+          "won": false,
+          "name": "京都外大西",
+          "slug": null
+        },
+        {
+          "display": "京都翔英",
+          "score": 7,
+          "won": true,
+          "name": "京都翔英",
           "slug": null
         }
       ]
@@ -1186,6 +1439,29 @@ export const REGIONAL_KYOTO: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "4回戦",
+      "venue": "わかさスタジアム京都",
+      "teams": [
+        {
+          "display": "日星",
+          "score": 2,
+          "won": false,
+          "name": "日星",
+          "slug": null
+        },
+        {
+          "display": "立命館宇治",
+          "score": 10,
+          "won": true,
+          "name": "立命館宇治",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-22",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権京都大会",
@@ -1209,6 +1485,75 @@ export const REGIONAL_KYOTO: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "準々決勝",
+      "venue": "わかさスタジアム京都",
+      "teams": [
+        {
+          "display": "京都両洋",
+          "score": 2,
+          "won": true,
+          "name": "京都両洋",
+          "slug": null
+        },
+        {
+          "display": "東山",
+          "score": 1,
+          "won": false,
+          "name": "東山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "準々決勝",
+      "venue": "わかさスタジアム京都",
+      "teams": [
+        {
+          "display": "京都翔英",
+          "score": 7,
+          "won": true,
+          "name": "京都翔英",
+          "slug": null
+        },
+        {
+          "display": "京都国際",
+          "score": 2,
+          "won": false,
+          "name": "京都国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "準々決勝",
+      "venue": "わかさスタジアム京都",
+      "teams": [
+        {
+          "display": "福知山成美",
+          "score": 4,
+          "won": false,
+          "name": "福知山成美",
+          "slug": null
+        },
+        {
+          "display": "立命館宇治",
+          "score": 9,
+          "won": true,
+          "name": "立命館宇治",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-25",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権京都大会",
@@ -1227,6 +1572,29 @@ export const REGIONAL_KYOTO: RegionalDistrict = {
           "score": 1,
           "won": false,
           "name": "京都両洋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権京都大会",
+      "round": "準決勝",
+      "venue": "わかさスタジアム京都",
+      "teams": [
+        {
+          "display": "京都翔英",
+          "score": 2,
+          "won": false,
+          "name": "京都翔英",
+          "slug": null
+        },
+        {
+          "display": "立命館宇治",
+          "score": 6,
+          "won": true,
+          "name": "立命館宇治",
           "slug": null
         }
       ]

@@ -10,6 +10,75 @@ export const REGIONAL_YAMANASHI: RegionalDistrict = {
   "sourceUrl": "http://www.yamanashi-hbf.com/",
   "games": [
     {
+      "date": "2026-05-06",
+      "season": "spring",
+      "tournament": "第78回春季関東地区高校野球山梨県大会",
+      "round": "決勝",
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "山梨学院",
+          "score": 2,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        },
+        {
+          "display": "東海大甲府",
+          "score": 1,
+          "won": false,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "season": "spring",
+      "tournament": "第78回春季関東地区高校野球山梨県大会",
+      "round": "準決勝",
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 0,
+          "won": false,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "山梨学院",
+          "score": 2,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "season": "spring",
+      "tournament": "第78回春季関東地区高校野球山梨県大会",
+      "round": "準決勝",
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 0,
+          "won": false,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "東海大甲府",
+          "score": 6,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-05-03",
       "season": "spring",
       "tournament": "第78回春季関東地区高校野球山梨県大会",
@@ -28,6 +97,29 @@ export const REGIONAL_YAMANASHI: RegionalDistrict = {
           "score": 6,
           "won": true,
           "name": "帝京第三",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-03",
+      "season": "spring",
+      "tournament": "第78回春季関東地区高校野球山梨県大会",
+      "round": "準々決勝",
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "駿台甲府",
+          "score": 6,
+          "won": false,
+          "name": "駿台甲府",
+          "slug": null
+        },
+        {
+          "display": "東海大甲府",
+          "score": 7,
+          "won": true,
+          "name": "東海大甲府",
           "slug": null
         }
       ]
@@ -236,6 +328,30 @@ export const REGIONAL_YAMANASHI: RegionalDistrict = {
           "won": true,
           "name": "山梨学院",
           "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "第78回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 13,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "農･塩･上",
+          "score": 1,
+          "won": false,
+          "name": "農･塩･上",
+          "slug": null,
+          "combined": true
         }
       ]
     },
@@ -609,6 +725,52 @@ export const REGIONAL_YAMANASHI: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山梨大会",
+      "round": "決勝",
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 3,
+          "won": false,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "東海大甲府",
+          "score": 5,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山梨大会",
+      "round": "準決勝",
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 5,
+          "won": true,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "山梨学院",
+          "score": 4,
+          "won": false,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-20",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権山梨大会",
@@ -673,6 +835,29 @@ export const REGIONAL_YAMANASHI: RegionalDistrict = {
           "score": 1,
           "won": false,
           "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山梨大会",
+      "round": "準々決勝",
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "駿台甲府",
+          "score": 0,
+          "won": false,
+          "name": "駿台甲府",
+          "slug": null
+        },
+        {
+          "display": "山梨学院",
+          "score": 7,
+          "won": true,
+          "name": "山梨学院",
           "slug": null
         }
       ]
@@ -869,6 +1054,29 @@ export const REGIONAL_YAMANASHI: RegionalDistrict = {
       "venue": "山日YBS球場",
       "teams": [
         {
+          "display": "駿台甲府",
+          "score": 4,
+          "won": true,
+          "name": "駿台甲府",
+          "slug": null
+        },
+        {
+          "display": "日大明誠",
+          "score": 1,
+          "won": false,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "山日YBS球場",
+      "teams": [
+        {
           "display": "甲府城西",
           "score": 1,
           "won": false,
@@ -997,6 +1205,29 @@ export const REGIONAL_YAMANASHI: RegionalDistrict = {
           "won": true,
           "name": "甲府商業高校",
           "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 5,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "富士学苑",
+          "score": 0,
+          "won": false,
+          "name": "富士学苑",
+          "slug": null
         }
       ]
     },
@@ -1395,6 +1626,29 @@ export const REGIONAL_YAMANASHI: RegionalDistrict = {
       "date": "2025-09-27",
       "season": "autumn",
       "tournament": "第78回秋季関東地区高校野球山梨県大会",
+      "round": "3位決定戦",
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 1,
+          "won": false,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "駿台甲府",
+          "score": 3,
+          "won": true,
+          "name": "駿台甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "第78回秋季関東地区高校野球山梨県大会",
       "round": "決勝",
       "venue": "山日YBS球場",
       "teams": [
@@ -1434,6 +1688,52 @@ export const REGIONAL_YAMANASHI: RegionalDistrict = {
           "won": true,
           "name": "甲府工業高校",
           "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "season": "autumn",
+      "tournament": "第78回秋季関東地区高校野球山梨県大会",
+      "round": "準決勝",
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 2,
+          "won": false,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "山梨学院",
+          "score": 9,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "第78回秋季関東地区高校野球山梨県大会",
+      "round": "準々決勝",
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "日大明誠",
+          "score": 2,
+          "won": false,
+          "name": "日大明誠",
+          "slug": null
+        },
+        {
+          "display": "駿台甲府",
+          "score": 9,
+          "won": true,
+          "name": "駿台甲府",
+          "slug": null
         }
       ]
     },
@@ -1480,6 +1780,29 @@ export const REGIONAL_YAMANASHI: RegionalDistrict = {
           "won": false,
           "name": "山梨高校",
           "slug": "yamanashi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "第78回秋季関東地区高校野球山梨県大会",
+      "round": "準々決勝",
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 1,
+          "won": false,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "山梨学院",
+          "score": 2,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
         }
       ]
     },
@@ -1549,6 +1872,29 @@ export const REGIONAL_YAMANASHI: RegionalDistrict = {
           "won": false,
           "name": "甲府第一高校",
           "slug": "kofudaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "第78回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 5,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "帝京第三",
+          "score": 1,
+          "won": false,
+          "name": "帝京第三",
+          "slug": null
         }
       ]
     },
@@ -1756,6 +2102,29 @@ export const REGIONAL_YAMANASHI: RegionalDistrict = {
           "won": true,
           "name": "山梨高校",
           "slug": "yamanashi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "第78回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 4,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "富士学苑",
+          "score": 2,
+          "won": false,
+          "name": "富士学苑",
+          "slug": null
         }
       ]
     },

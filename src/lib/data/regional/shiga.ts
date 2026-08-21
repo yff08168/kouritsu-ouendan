@@ -270,6 +270,29 @@ export const REGIONAL_SHIGA: RegionalDistrict = {
       "venue": "HPLベースボールパーク",
       "teams": [
         {
+          "display": "比叡山",
+          "score": 4,
+          "won": false,
+          "name": "比叡山",
+          "slug": null
+        },
+        {
+          "display": "立命館守山",
+          "score": 5,
+          "won": true,
+          "name": "立命館守山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
           "display": "水口",
           "score": 2,
           "won": false,
@@ -708,6 +731,29 @@ export const REGIONAL_SHIGA: RegionalDistrict = {
       "venue": "マイネットスタジアム皇子山",
       "teams": [
         {
+          "display": "滋賀学園",
+          "score": 4,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "近江兄弟社",
+          "score": 3,
+          "won": false,
+          "name": "近江兄弟社",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
           "display": "滋賀短大附",
           "score": 7,
           "won": true,
@@ -823,6 +869,29 @@ export const REGIONAL_SHIGA: RegionalDistrict = {
       "venue": "HPLベースボールパーク",
       "teams": [
         {
+          "display": "近江",
+          "score": 2,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "光泉カトリック",
+          "score": 1,
+          "won": false,
+          "name": "光泉カトリック",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
           "display": "彦根東",
           "score": 8,
           "won": true,
@@ -846,6 +915,29 @@ export const REGIONAL_SHIGA: RegionalDistrict = {
       "venue": "HPLベースボールパーク",
       "teams": [
         {
+          "display": "滋賀学園",
+          "score": 4,
+          "won": false,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "滋賀短大附",
+          "score": 11,
+          "won": true,
+          "name": "滋賀短大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権滋賀大会",
+      "round": "準々決勝",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
           "display": "綾羽",
           "score": 3,
           "won": false,
@@ -858,6 +950,29 @@ export const REGIONAL_SHIGA: RegionalDistrict = {
           "won": true,
           "name": "八幡商業高校",
           "slug": "hachimanshogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権滋賀大会",
+      "round": "準々決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "彦根総合",
+          "score": 5,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        },
+        {
+          "display": "立命館守山",
+          "score": 1,
+          "won": false,
+          "name": "立命館守山",
+          "slug": null
         }
       ]
     },
@@ -904,6 +1019,29 @@ export const REGIONAL_SHIGA: RegionalDistrict = {
           "won": true,
           "name": "八幡商業高校",
           "slug": "hachimanshogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権滋賀大会",
+      "round": "準決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "彦根総合",
+          "score": 5,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        },
+        {
+          "display": "近江",
+          "score": 2,
+          "won": false,
+          "name": "近江",
+          "slug": null
         }
       ]
     },
@@ -1396,6 +1534,29 @@ export const REGIONAL_SHIGA: RegionalDistrict = {
       "season": "spring",
       "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
       "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "彦根総合",
+          "score": 5,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        },
+        {
+          "display": "滋賀短大附",
+          "score": 2,
+          "won": false,
+          "name": "滋賀短大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
       "venue": "湖東スタジアム",
       "teams": [
         {
@@ -1649,6 +1810,29 @@ export const REGIONAL_SHIGA: RegionalDistrict = {
       "season": "spring",
       "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
       "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "近江兄弟社",
+          "score": 2,
+          "won": false,
+          "name": "近江兄弟社",
+          "slug": null
+        },
+        {
+          "display": "光泉カトリック",
+          "score": 5,
+          "won": true,
+          "name": "光泉カトリック",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
       "venue": "HPLベースボールパーク",
       "teams": [
         {
@@ -1787,6 +1971,52 @@ export const REGIONAL_SHIGA: RegionalDistrict = {
       "season": "spring",
       "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
       "round": "準々決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "光泉カトリック",
+          "score": 0,
+          "won": false,
+          "name": "光泉カトリック",
+          "slug": null
+        },
+        {
+          "display": "彦根総合",
+          "score": 3,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "準々決勝",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 2,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "立命館守山",
+          "score": 1,
+          "won": false,
+          "name": "立命館守山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "準々決勝",
       "venue": "HPLベースボールパーク",
       "teams": [
         {
@@ -1802,6 +2032,75 @@ export const REGIONAL_SHIGA: RegionalDistrict = {
           "won": false,
           "name": "水口高校",
           "slug": "minakuchi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "準決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 0,
+          "won": false,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "彦根総合",
+          "score": 4,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "準決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 2,
+          "won": false,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "滋賀学園",
+          "score": 5,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "彦根総合",
+          "score": 1,
+          "won": false,
+          "name": "彦根総合",
+          "slug": null
+        },
+        {
+          "display": "滋賀学園",
+          "score": 3,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
         }
       ]
     }

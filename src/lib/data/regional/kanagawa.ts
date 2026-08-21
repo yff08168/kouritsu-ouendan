@@ -454,6 +454,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "向上",
+          "score": 0,
+          "won": false,
+          "name": "向上",
+          "slug": null
+        },
+        {
+          "display": "横浜創学館",
+          "score": 8,
+          "won": true,
+          "name": "横浜創学館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "桐光学園",
           "score": 11,
           "won": true,
@@ -466,6 +489,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "横浜瀬谷高校",
           "slug": "yokohamaseya"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "法政二",
+          "score": 6,
+          "won": true,
+          "name": "法政二",
+          "slug": null
+        },
+        {
+          "display": "神奈川大付",
+          "score": 0,
+          "won": false,
+          "name": "神奈川大付",
+          "slug": null
         }
       ]
     },
@@ -512,6 +558,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "大磯高校",
           "slug": "oiso"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "光明相模原",
+          "score": 0,
+          "won": false,
+          "name": "光明相模原",
+          "slug": null
+        },
+        {
+          "display": "相洋",
+          "score": 4,
+          "won": true,
+          "name": "相洋",
+          "slug": null
         }
       ]
     },
@@ -581,6 +650,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "市ケ尾高校",
           "slug": "ichigao"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "関東学院",
+          "score": 0,
+          "won": false,
+          "name": "関東学院",
+          "slug": null
+        },
+        {
+          "display": "横浜翠陵",
+          "score": 3,
+          "won": true,
+          "name": "横浜翠陵",
+          "slug": null
         }
       ]
     },
@@ -764,6 +856,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "score": 6,
           "won": true,
           "name": "横須賀学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "湘南学院",
+          "score": 0,
+          "won": false,
+          "name": "湘南学院",
+          "slug": null
+        },
+        {
+          "display": "武相",
+          "score": 8,
+          "won": true,
+          "name": "武相",
           "slug": null
         }
       ]
@@ -983,6 +1098,52 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "東海大相模",
+          "score": 0,
+          "won": false,
+          "name": "東海大相模",
+          "slug": null
+        },
+        {
+          "display": "相洋",
+          "score": 2,
+          "won": true,
+          "name": "相洋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三浦学苑",
+          "score": 16,
+          "won": true,
+          "name": "三浦学苑",
+          "slug": null
+        },
+        {
+          "display": "日大",
+          "score": 6,
+          "won": false,
+          "name": "日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "山手学院",
           "score": 8,
           "won": true,
@@ -1006,6 +1167,121 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "横浜隼人",
+          "score": 2,
+          "won": true,
+          "name": "横浜隼人",
+          "slug": null
+        },
+        {
+          "display": "横須賀学院",
+          "score": 0,
+          "won": false,
+          "name": "横須賀学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "法政二",
+          "score": 3,
+          "won": false,
+          "name": "法政二",
+          "slug": null
+        },
+        {
+          "display": "慶応",
+          "score": 7,
+          "won": true,
+          "name": "慶応",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐光学園",
+          "score": 8,
+          "won": true,
+          "name": "桐光学園",
+          "slug": null
+        },
+        {
+          "display": "藤嶺藤沢",
+          "score": 4,
+          "won": false,
+          "name": "藤嶺藤沢",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鎌倉学園",
+          "score": 11,
+          "won": true,
+          "name": "鎌倉学園",
+          "slug": null
+        },
+        {
+          "display": "横浜翠陵",
+          "score": 2,
+          "won": false,
+          "name": "横浜翠陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "慶応藤沢",
+          "score": 1,
+          "won": false,
+          "name": "慶応藤沢",
+          "slug": null
+        },
+        {
+          "display": "藤沢翔陵",
+          "score": 8,
+          "won": true,
+          "name": "藤沢翔陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "橘",
           "score": 7,
           "won": true,
@@ -1018,6 +1294,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "旭高校",
           "slug": "asahi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "県相模原",
+          "score": 1,
+          "won": false,
+          "name": "県相模原",
+          "slug": null
+        },
+        {
+          "display": "日大藤沢",
+          "score": 2,
+          "won": true,
+          "name": "日大藤沢",
+          "slug": null
         }
       ]
     },
@@ -1063,6 +1362,52 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "score": 3,
           "won": false,
           "name": "旭丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "平塚学園",
+          "score": 0,
+          "won": false,
+          "name": "平塚学園",
+          "slug": null
+        },
+        {
+          "display": "横浜創学館",
+          "score": 7,
+          "won": true,
+          "name": "横浜創学館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐蔭学園",
+          "score": 6,
+          "won": true,
+          "name": "桐蔭学園",
+          "slug": null
+        },
+        {
+          "display": "星槎国際湘南",
+          "score": 5,
+          "won": false,
+          "name": "星槎国際湘南",
           "slug": null
         }
       ]
@@ -1190,6 +1535,52 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "横浜",
+          "score": 4,
+          "won": true,
+          "name": "横浜",
+          "slug": null
+        },
+        {
+          "display": "鎌倉学園",
+          "score": 3,
+          "won": false,
+          "name": "鎌倉学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐光学園",
+          "score": 10,
+          "won": true,
+          "name": "桐光学園",
+          "slug": null
+        },
+        {
+          "display": "横浜隼人",
+          "score": 0,
+          "won": false,
+          "name": "横浜隼人",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "横浜創学館",
           "score": 10,
           "won": true,
@@ -1202,6 +1593,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "川和高校",
           "slug": "kawawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立花学園",
+          "score": 7,
+          "won": true,
+          "name": "立花学園",
+          "slug": null
+        },
+        {
+          "display": "藤沢翔陵",
+          "score": 0,
+          "won": false,
+          "name": "藤沢翔陵",
+          "slug": null
         }
       ]
     },
@@ -1271,6 +1685,190 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "横浜清陵高校",
           "slug": "yokohamaseiryo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三浦学苑",
+          "score": 2,
+          "won": false,
+          "name": "三浦学苑",
+          "slug": null
+        },
+        {
+          "display": "桐蔭学園",
+          "score": 3,
+          "won": true,
+          "name": "桐蔭学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "準々決勝",
+      "venue": "サーティーフォー保土ケ谷球場",
+      "teams": [
+        {
+          "display": "横浜",
+          "score": 3,
+          "won": true,
+          "name": "横浜",
+          "slug": null
+        },
+        {
+          "display": "桐蔭学園",
+          "score": 0,
+          "won": false,
+          "name": "桐蔭学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "準々決勝",
+      "venue": "サーティーフォー保土ケ谷球場",
+      "teams": [
+        {
+          "display": "日大藤沢",
+          "score": 0,
+          "won": false,
+          "name": "日大藤沢",
+          "slug": null
+        },
+        {
+          "display": "桐光学園",
+          "score": 3,
+          "won": true,
+          "name": "桐光学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "準々決勝",
+      "venue": "サーティーフォー保土ケ谷球場",
+      "teams": [
+        {
+          "display": "立花学園",
+          "score": 4,
+          "won": false,
+          "name": "立花学園",
+          "slug": null
+        },
+        {
+          "display": "慶応",
+          "score": 7,
+          "won": true,
+          "name": "慶応",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "準々決勝",
+      "venue": "サーティーフォー保土ケ谷球場",
+      "teams": [
+        {
+          "display": "相洋",
+          "score": 1,
+          "won": false,
+          "name": "相洋",
+          "slug": null
+        },
+        {
+          "display": "横浜創学館",
+          "score": 4,
+          "won": true,
+          "name": "横浜創学館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "準決勝",
+      "venue": "横浜スタジアム",
+      "teams": [
+        {
+          "display": "横浜",
+          "score": 8,
+          "won": true,
+          "name": "横浜",
+          "slug": null
+        },
+        {
+          "display": "桐光学園",
+          "score": 6,
+          "won": false,
+          "name": "桐光学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "準決勝",
+      "venue": "横浜スタジアム",
+      "teams": [
+        {
+          "display": "慶応",
+          "score": 1,
+          "won": false,
+          "name": "慶応",
+          "slug": null
+        },
+        {
+          "display": "横浜創学館",
+          "score": 4,
+          "won": true,
+          "name": "横浜創学館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-03",
+      "season": "spring",
+      "tournament": "令和8年度神奈川県高校野球春季県大会",
+      "round": "決勝",
+      "venue": "横浜スタジアム",
+      "teams": [
+        {
+          "display": "横浜",
+          "score": 8,
+          "won": true,
+          "name": "横浜",
+          "slug": null
+        },
+        {
+          "display": "横浜創学館",
+          "score": 3,
+          "won": false,
+          "name": "横浜創学館",
+          "slug": null
         }
       ]
     },
@@ -1605,6 +2203,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "旭丘",
+          "score": 4,
+          "won": true,
+          "name": "旭丘",
+          "slug": null
+        },
+        {
+          "display": "県商工",
+          "score": 2,
+          "won": false,
+          "name": "県商工",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "藤沢清流",
           "score": 10,
           "won": true,
@@ -1766,6 +2387,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "森村学園",
+          "score": 0,
+          "won": false,
+          "name": "森村学園",
+          "slug": null
+        },
+        {
+          "display": "法政二",
+          "score": 7,
+          "won": true,
+          "name": "法政二",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "柏陽",
           "score": 8,
           "won": true,
@@ -1812,6 +2456,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "サイエンス",
+          "score": 3,
+          "won": false,
+          "name": "サイエンス",
+          "slug": null
+        },
+        {
+          "display": "相模原中等",
+          "score": 10,
+          "won": true,
+          "name": "相模原中等",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "光明相模原",
           "score": 2,
           "won": false,
@@ -1847,6 +2514,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "津久井高校",
           "slug": "tsukui"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鶴見大付",
+          "score": 1,
+          "won": false,
+          "name": "鶴見大付",
+          "slug": null
+        },
+        {
+          "display": "横須賀学院",
+          "score": 6,
+          "won": true,
+          "name": "横須賀学院",
+          "slug": null
         }
       ]
     },
@@ -2043,6 +2733,30 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "高津 横浜旭陵",
+          "score": 0,
+          "won": false,
+          "name": "高津 横浜旭陵",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "平塚学園",
+          "score": 10,
+          "won": true,
+          "name": "平塚学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "厚木西",
           "score": 12,
           "won": true,
@@ -2125,6 +2839,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "横浜立野高校",
           "slug": "yokohamatateno"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜",
+          "score": 7,
+          "won": true,
+          "name": "横浜",
+          "slug": null
+        },
+        {
+          "display": "湘南工大付",
+          "score": 0,
+          "won": false,
+          "name": "湘南工大付",
+          "slug": null
         }
       ]
     },
@@ -2573,6 +3310,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "武相",
+          "score": 10,
+          "won": true,
+          "name": "武相",
+          "slug": null
+        },
+        {
+          "display": "中大横浜",
+          "score": 0,
+          "won": false,
+          "name": "中大横浜",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "新栄",
           "score": 6,
           "won": false,
@@ -2585,6 +3345,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": true,
           "name": "鶴見総合高校",
           "slug": "tsurumisogo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜創学館",
+          "score": 4,
+          "won": false,
+          "name": "横浜創学館",
+          "slug": null
+        },
+        {
+          "display": "平塚学園",
+          "score": 5,
+          "won": true,
+          "name": "平塚学園",
+          "slug": null
         }
       ]
     },
@@ -2769,6 +3552,30 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "麻溝台高校",
           "slug": "asamizodai"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大和東 相模向陽館",
+          "score": 0,
+          "won": false,
+          "name": "大和東 相模向陽館",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "浅野",
+          "score": 19,
+          "won": true,
+          "name": "浅野",
+          "slug": null
         }
       ]
     },
@@ -3056,6 +3863,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "桐光学園",
+          "score": 11,
+          "won": true,
+          "name": "桐光学園",
+          "slug": null
+        },
+        {
+          "display": "相模原中等",
+          "score": 0,
+          "won": false,
+          "name": "相模原中等",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "関東学院",
           "score": 10,
           "won": true,
@@ -3252,6 +4082,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "金沢総合高校",
           "slug": "kanazawasogo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "湘南学園",
+          "score": 6,
+          "won": false,
+          "name": "湘南学園",
+          "slug": null
+        },
+        {
+          "display": "横須賀学院",
+          "score": 15,
+          "won": true,
+          "name": "横須賀学院",
+          "slug": null
         }
       ]
     },
@@ -3586,6 +4439,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "三浦学苑",
+          "score": 6,
+          "won": true,
+          "name": "三浦学苑",
+          "slug": null
+        },
+        {
+          "display": "旭丘",
+          "score": 0,
+          "won": false,
+          "name": "旭丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "茅ケ崎",
           "score": 1,
           "won": false,
@@ -3666,6 +4542,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "score": 6,
           "won": false,
           "name": "武相",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "県相模原",
+          "score": 3,
+          "won": true,
+          "name": "県相模原",
+          "slug": null
+        },
+        {
+          "display": "日大",
+          "score": 2,
+          "won": false,
+          "name": "日大",
           "slug": null
         }
       ]
@@ -3954,6 +4853,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "藤嶺藤沢",
+          "score": 6,
+          "won": true,
+          "name": "藤嶺藤沢",
+          "slug": null
+        },
+        {
+          "display": "横須賀学院",
+          "score": 0,
+          "won": false,
+          "name": "横須賀学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "桐光学園",
           "score": 14,
           "won": true,
@@ -3966,6 +4888,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "相模原弥栄高校",
           "slug": "sagamiharayaei"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "星槎国際湘南",
+          "score": 1,
+          "won": false,
+          "name": "星槎国際湘南",
+          "slug": null
+        },
+        {
+          "display": "法政二",
+          "score": 6,
+          "won": true,
+          "name": "法政二",
+          "slug": null
         }
       ]
     },
@@ -4034,6 +4979,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "score": 7,
           "won": true,
           "name": "関東学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "向上",
+          "score": 5,
+          "won": true,
+          "name": "向上",
+          "slug": null
+        },
+        {
+          "display": "アレセイア",
+          "score": 1,
+          "won": false,
+          "name": "アレセイア",
           "slug": null
         }
       ]
@@ -4138,6 +5106,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "横浜",
+          "score": 8,
+          "won": true,
+          "name": "横浜",
+          "slug": null
+        },
+        {
+          "display": "東海大相模",
+          "score": 1,
+          "won": false,
+          "name": "東海大相模",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "市ケ尾",
           "score": 5,
           "won": true,
@@ -4173,6 +5164,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "横浜栄高校",
           "slug": "yokohamasakae"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立花学園",
+          "score": 7,
+          "won": true,
+          "name": "立花学園",
+          "slug": null
+        },
+        {
+          "display": "県相模原",
+          "score": 6,
+          "won": false,
+          "name": "県相模原",
+          "slug": null
         }
       ]
     },
@@ -4242,6 +5256,52 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "横須賀高校",
           "slug": "yokosuka"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日大藤沢",
+          "score": 4,
+          "won": true,
+          "name": "日大藤沢",
+          "slug": null
+        },
+        {
+          "display": "湘南学院",
+          "score": 2,
+          "won": false,
+          "name": "湘南学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三浦学苑",
+          "score": 4,
+          "won": true,
+          "name": "三浦学苑",
+          "slug": null
+        },
+        {
+          "display": "麻布大付",
+          "score": 0,
+          "won": false,
+          "name": "麻布大付",
+          "slug": null
         }
       ]
     },
@@ -4338,6 +5398,144 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐蔭学園",
+          "score": 6,
+          "won": true,
+          "name": "桐蔭学園",
+          "slug": null
+        },
+        {
+          "display": "藤嶺藤沢",
+          "score": 1,
+          "won": false,
+          "name": "藤嶺藤沢",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "法政二",
+          "score": 3,
+          "won": false,
+          "name": "法政二",
+          "slug": null
+        },
+        {
+          "display": "関東学院",
+          "score": 5,
+          "won": true,
+          "name": "関東学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "藤沢翔陵",
+          "score": 2,
+          "won": false,
+          "name": "藤沢翔陵",
+          "slug": null
+        },
+        {
+          "display": "向上",
+          "score": 3,
+          "won": true,
+          "name": "向上",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐光学園",
+          "score": 4,
+          "won": true,
+          "name": "桐光学園",
+          "slug": null
+        },
+        {
+          "display": "関東学院",
+          "score": 0,
+          "won": false,
+          "name": "関東学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日大藤沢",
+          "score": 7,
+          "won": true,
+          "name": "日大藤沢",
+          "slug": null
+        },
+        {
+          "display": "向上",
+          "score": 4,
+          "won": false,
+          "name": "向上",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "平塚学園",
+          "score": 4,
+          "won": false,
+          "name": "平塚学園",
+          "slug": null
+        },
+        {
+          "display": "鎌倉学園",
+          "score": 8,
+          "won": true,
+          "name": "鎌倉学園",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-18",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権神奈川大会",
@@ -4357,6 +5555,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "平塚江南高校",
           "slug": "hiratsukakonan"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜",
+          "score": 12,
+          "won": true,
+          "name": "横浜",
+          "slug": null
+        },
+        {
+          "display": "三浦学苑",
+          "score": 0,
+          "won": false,
+          "name": "三浦学苑",
+          "slug": null
         }
       ]
     },
@@ -4449,6 +5670,190 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "市ケ尾高校",
           "slug": "ichigao"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "準々決勝",
+      "venue": "横浜スタジアム",
+      "teams": [
+        {
+          "display": "慶応",
+          "score": 5,
+          "won": true,
+          "name": "慶応",
+          "slug": null
+        },
+        {
+          "display": "立花学園",
+          "score": 4,
+          "won": false,
+          "name": "立花学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "準々決勝",
+      "venue": "横浜スタジアム",
+      "teams": [
+        {
+          "display": "鎌倉学園",
+          "score": 3,
+          "won": true,
+          "name": "鎌倉学園",
+          "slug": null
+        },
+        {
+          "display": "桐蔭学園",
+          "score": 2,
+          "won": false,
+          "name": "桐蔭学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "準々決勝",
+      "venue": "横浜スタジアム",
+      "teams": [
+        {
+          "display": "桐光学園",
+          "score": 9,
+          "won": true,
+          "name": "桐光学園",
+          "slug": null
+        },
+        {
+          "display": "日大藤沢",
+          "score": 6,
+          "won": false,
+          "name": "日大藤沢",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "準決勝",
+      "venue": "横浜スタジアム",
+      "teams": [
+        {
+          "display": "横浜",
+          "score": 4,
+          "won": true,
+          "name": "横浜",
+          "slug": null
+        },
+        {
+          "display": "慶応",
+          "score": 0,
+          "won": false,
+          "name": "慶応",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "準決勝",
+      "venue": "横浜スタジアム",
+      "teams": [
+        {
+          "display": "鎌倉学園",
+          "score": 5,
+          "won": false,
+          "name": "鎌倉学園",
+          "slug": null
+        },
+        {
+          "display": "桐光学園",
+          "score": 10,
+          "won": true,
+          "name": "桐光学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-26",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権神奈川大会",
+      "round": "決勝",
+      "venue": "横浜スタジアム",
+      "teams": [
+        {
+          "display": "横浜",
+          "score": 11,
+          "won": true,
+          "name": "横浜",
+          "slug": null
+        },
+        {
+          "display": "桐光学園",
+          "score": 1,
+          "won": false,
+          "name": "桐光学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-06",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "武相",
+          "score": 3,
+          "won": true,
+          "name": "武相",
+          "slug": null
+        },
+        {
+          "display": "慶応",
+          "score": 1,
+          "won": false,
+          "name": "慶応",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-06",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "相洋",
+          "score": 4,
+          "won": false,
+          "name": "相洋",
+          "slug": null
+        },
+        {
+          "display": "横浜隼人",
+          "score": 10,
+          "won": true,
+          "name": "横浜隼人",
+          "slug": null
         }
       ]
     },
@@ -4576,6 +5981,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "湘南学院",
+          "score": 6,
+          "won": false,
+          "name": "湘南学院",
+          "slug": null
+        },
+        {
+          "display": "法政二",
+          "score": 8,
+          "won": true,
+          "name": "法政二",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-06",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "座間総合",
           "score": 2,
           "won": false,
@@ -4611,6 +6039,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "横浜栄高校",
           "slug": "yokohamasakae"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-06",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "星槎国際湘南",
+          "score": 10,
+          "won": true,
+          "name": "星槎国際湘南",
+          "slug": null
+        },
+        {
+          "display": "慶応藤沢",
+          "score": 0,
+          "won": false,
+          "name": "慶応藤沢",
+          "slug": null
         }
       ]
     },
@@ -4737,6 +6188,30 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "柏木学園",
+          "score": 7,
+          "won": true,
+          "name": "柏木学園",
+          "slug": null
+        },
+        {
+          "display": "麻生 高津 横浜旭陵",
+          "score": 0,
+          "won": false,
+          "name": "麻生 高津 横浜旭陵",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2025-09-06",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "市ケ尾",
           "score": 11,
           "won": true,
@@ -4806,6 +6281,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "横浜",
+          "score": 10,
+          "won": true,
+          "name": "横浜",
+          "slug": null
+        },
+        {
+          "display": "浅野",
+          "score": 0,
+          "won": false,
+          "name": "浅野",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "荏田",
           "score": 7,
           "won": true,
@@ -4852,6 +6350,52 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "横浜創学館",
+          "score": 9,
+          "won": true,
+          "name": "横浜創学館",
+          "slug": null
+        },
+        {
+          "display": "光明相模原",
+          "score": 2,
+          "won": false,
+          "name": "光明相模原",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立花学園",
+          "score": 10,
+          "won": true,
+          "name": "立花学園",
+          "slug": null
+        },
+        {
+          "display": "柏木学園",
+          "score": 0,
+          "won": false,
+          "name": "柏木学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "鎌倉学園",
           "score": 5,
           "won": true,
@@ -4864,6 +6408,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "横浜清陵高校",
           "slug": "yokohamaseiryo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐蔭学園",
+          "score": 4,
+          "won": true,
+          "name": "桐蔭学園",
+          "slug": null
+        },
+        {
+          "display": "星槎国際湘南",
+          "score": 0,
+          "won": false,
+          "name": "星槎国際湘南",
+          "slug": null
         }
       ]
     },
@@ -5128,6 +6695,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "向上",
+          "score": 12,
+          "won": true,
+          "name": "向上",
+          "slug": null
+        },
+        {
+          "display": "鶴見大付",
+          "score": 1,
+          "won": false,
+          "name": "鶴見大付",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "麻溝台",
           "score": 5,
           "won": false,
@@ -5163,6 +6753,75 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "大和高校",
           "slug": "yamato"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "麻布大付",
+          "score": 9,
+          "won": false,
+          "name": "麻布大付",
+          "slug": null
+        },
+        {
+          "display": "中大横浜",
+          "score": 14,
+          "won": true,
+          "name": "中大横浜",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三浦学苑",
+          "score": 10,
+          "won": true,
+          "name": "三浦学苑",
+          "slug": null
+        },
+        {
+          "display": "横須賀学院",
+          "score": 3,
+          "won": false,
+          "name": "横須賀学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "湘南工大付",
+          "score": 0,
+          "won": false,
+          "name": "湘南工大付",
+          "slug": null
+        },
+        {
+          "display": "県相模原",
+          "score": 9,
+          "won": true,
+          "name": "県相模原",
+          "slug": null
         }
       ]
     },
@@ -5267,6 +6926,75 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "横浜",
+          "score": 8,
+          "won": true,
+          "name": "横浜",
+          "slug": null
+        },
+        {
+          "display": "横浜創学館",
+          "score": 2,
+          "won": false,
+          "name": "横浜創学館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三浦学苑",
+          "score": 8,
+          "won": true,
+          "name": "三浦学苑",
+          "slug": null
+        },
+        {
+          "display": "武相",
+          "score": 1,
+          "won": false,
+          "name": "武相",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "向上",
+          "score": 10,
+          "won": true,
+          "name": "向上",
+          "slug": null
+        },
+        {
+          "display": "中大横浜",
+          "score": 2,
+          "won": false,
+          "name": "中大横浜",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "市ケ尾",
           "score": 3,
           "won": true,
@@ -5302,6 +7030,52 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "金沢高校",
           "slug": "kanazawa"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "県相模原",
+          "score": 3,
+          "won": false,
+          "name": "県相模原",
+          "slug": null
+        },
+        {
+          "display": "桐光学園",
+          "score": 7,
+          "won": true,
+          "name": "桐光学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "藤沢翔陵",
+          "score": 5,
+          "won": false,
+          "name": "藤沢翔陵",
+          "slug": null
+        },
+        {
+          "display": "法政二",
+          "score": 6,
+          "won": true,
+          "name": "法政二",
+          "slug": null
         }
       ]
     },
@@ -5428,6 +7202,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "立花学園",
+          "score": 3,
+          "won": true,
+          "name": "立花学園",
+          "slug": null
+        },
+        {
+          "display": "藤嶺藤沢",
+          "score": 1,
+          "won": false,
+          "name": "藤嶺藤沢",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "横浜商大",
           "score": 10,
           "won": true,
@@ -5497,6 +7294,52 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "東海大相模",
+          "score": 2,
+          "won": true,
+          "name": "東海大相模",
+          "slug": null
+        },
+        {
+          "display": "鎌倉学園",
+          "score": 1,
+          "won": false,
+          "name": "鎌倉学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "向上",
+          "score": 5,
+          "won": false,
+          "name": "向上",
+          "slug": null
+        },
+        {
+          "display": "桐光学園",
+          "score": 6,
+          "won": true,
+          "name": "桐光学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "横浜",
           "score": 10,
           "won": true,
@@ -5509,6 +7352,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "won": false,
           "name": "川和高校",
           "slug": "kawawa"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日大藤沢",
+          "score": 0,
+          "won": false,
+          "name": "日大藤沢",
+          "slug": null
+        },
+        {
+          "display": "三浦学苑",
+          "score": 3,
+          "won": true,
+          "name": "三浦学苑",
+          "slug": null
         }
       ]
     },
@@ -5566,6 +7432,29 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
       "venue": null,
       "teams": [
         {
+          "display": "法政二",
+          "score": 6,
+          "won": true,
+          "name": "法政二",
+          "slug": null
+        },
+        {
+          "display": "横浜商大",
+          "score": 0,
+          "won": false,
+          "name": "横浜商大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "平塚学園",
           "score": 7,
           "won": true,
@@ -5600,6 +7489,144 @@ export const REGIONAL_KANAGAWA: RegionalDistrict = {
           "score": 8,
           "won": true,
           "name": "法政二",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "準々決勝",
+      "venue": "サーティーフォー保土ケ谷球場",
+      "teams": [
+        {
+          "display": "立花学園",
+          "score": 11,
+          "won": true,
+          "name": "立花学園",
+          "slug": null
+        },
+        {
+          "display": "桐光学園",
+          "score": 10,
+          "won": false,
+          "name": "桐光学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "準々決勝",
+      "venue": "サーティーフォー保土ケ谷球場",
+      "teams": [
+        {
+          "display": "横浜",
+          "score": 8,
+          "won": true,
+          "name": "横浜",
+          "slug": null
+        },
+        {
+          "display": "平塚学園",
+          "score": 1,
+          "won": false,
+          "name": "平塚学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "準々決勝",
+      "venue": "サーティーフォー保土ケ谷球場",
+      "teams": [
+        {
+          "display": "東海大相模",
+          "score": 4,
+          "won": true,
+          "name": "東海大相模",
+          "slug": null
+        },
+        {
+          "display": "三浦学苑",
+          "score": 1,
+          "won": false,
+          "name": "三浦学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-04",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "準決勝",
+      "venue": "サーティーフォー保土ケ谷球場",
+      "teams": [
+        {
+          "display": "法政二",
+          "score": 3,
+          "won": true,
+          "name": "法政二",
+          "slug": null
+        },
+        {
+          "display": "立花学園",
+          "score": 2,
+          "won": false,
+          "name": "立花学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "準決勝",
+      "venue": "サーティーフォー保土ケ谷球場",
+      "teams": [
+        {
+          "display": "横浜",
+          "score": 11,
+          "won": true,
+          "name": "横浜",
+          "slug": null
+        },
+        {
+          "display": "東海大相模",
+          "score": 6,
+          "won": false,
+          "name": "東海大相模",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-07",
+      "season": "autumn",
+      "tournament": "令和7年度神奈川県高校野球秋季県大会",
+      "round": "決勝",
+      "venue": "サーティーフォー保土ケ谷球場",
+      "teams": [
+        {
+          "display": "法政二",
+          "score": 0,
+          "won": false,
+          "name": "法政二",
+          "slug": null
+        },
+        {
+          "display": "横浜",
+          "score": 12,
+          "won": true,
+          "name": "横浜",
           "slug": null
         }
       ]

@@ -60,6 +60,30 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
       "season": "spring",
       "tournament": "第158回九州地区高等学校野球熊本大会",
       "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "高専熊本・菊池農業",
+          "score": 0,
+          "won": false,
+          "name": "高専熊本・菊池農業",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "熊本国府",
+          "score": 10,
+          "won": true,
+          "name": "熊本国府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
       "venue": "県営八代野球場",
       "teams": [
         {
@@ -122,6 +146,31 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
           "won": true,
           "name": "翔陽高校",
           "slug": "kumamoto-shoyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-21",
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "高専八代・甲佐",
+          "score": 7,
+          "won": false,
+          "name": "高専八代・甲佐",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "鹿本商工・鹿本",
+          "score": 8,
+          "won": true,
+          "name": "鹿本商工・鹿本",
+          "slug": null,
+          "combined": true
         }
       ]
     },
@@ -283,6 +332,30 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
           "won": true,
           "name": "菊池高校",
           "slug": "kikuchi"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "天草拓心・牛深・上天草",
+          "score": 0,
+          "won": false,
+          "name": "天草拓心・牛深・上天草",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "城北",
+          "score": 24,
+          "won": true,
+          "name": "城北",
+          "slug": null
         }
       ]
     },
@@ -522,6 +595,52 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
       "season": "spring",
       "tournament": "第158回九州地区高等学校野球熊本大会",
       "round": "2回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "東海大熊本星翔",
+          "score": 6,
+          "won": true,
+          "name": "東海大熊本星翔",
+          "slug": null
+        },
+        {
+          "display": "秀岳館",
+          "score": 4,
+          "won": false,
+          "name": "秀岳館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-24",
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "専大熊本",
+          "score": 3,
+          "won": false,
+          "name": "専大熊本",
+          "slug": null
+        },
+        {
+          "display": "開新",
+          "score": 4,
+          "won": true,
+          "name": "開新",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-24",
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
       "venue": "県営八代野球場",
       "teams": [
         {
@@ -686,6 +805,29 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
       "venue": "リブワーク藤崎台球場",
       "teams": [
         {
+          "display": "熊本国府",
+          "score": 3,
+          "won": false,
+          "name": "熊本国府",
+          "slug": null
+        },
+        {
+          "display": "文徳",
+          "score": 4,
+          "won": true,
+          "name": "文徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球熊本大会",
+      "round": "3回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
           "display": "九州学院",
           "score": 14,
           "won": true,
@@ -775,6 +917,29 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
       "season": "spring",
       "tournament": "第158回九州地区高等学校野球熊本大会",
       "round": "3回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "開新",
+          "score": 5,
+          "won": false,
+          "name": "開新",
+          "slug": null
+        },
+        {
+          "display": "東海大星翔",
+          "score": 8,
+          "won": true,
+          "name": "東海大星翔",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球熊本大会",
+      "round": "3回戦",
       "venue": "県営八代野球場",
       "teams": [
         {
@@ -821,6 +986,75 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
       "season": "spring",
       "tournament": "第158回九州地区高等学校野球熊本大会",
       "round": "準々決勝",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "ルーテル学院",
+          "score": 3,
+          "won": true,
+          "name": "ルーテル学院",
+          "slug": null
+        },
+        {
+          "display": "有明",
+          "score": 1,
+          "won": false,
+          "name": "有明",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球熊本大会",
+      "round": "準々決勝",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "鎮西",
+          "score": 2,
+          "won": false,
+          "name": "鎮西",
+          "slug": null
+        },
+        {
+          "display": "城北",
+          "score": 8,
+          "won": true,
+          "name": "城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球熊本大会",
+      "round": "準々決勝",
+      "venue": "県営八代野球場",
+      "teams": [
+        {
+          "display": "文徳",
+          "score": 2,
+          "won": false,
+          "name": "文徳",
+          "slug": null
+        },
+        {
+          "display": "九州学院",
+          "score": 8,
+          "won": true,
+          "name": "九州学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球熊本大会",
+      "round": "準々決勝",
       "venue": "県営八代野球場",
       "teams": [
         {
@@ -835,6 +1069,75 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
           "score": 10,
           "won": true,
           "name": "東海大熊本星翔",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球熊本大会",
+      "round": "準決勝",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "ルーテル学院",
+          "score": 0,
+          "won": false,
+          "name": "ルーテル学院",
+          "slug": null
+        },
+        {
+          "display": "九州学院",
+          "score": 7,
+          "won": true,
+          "name": "九州学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球熊本大会",
+      "round": "準決勝",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "城北",
+          "score": 1,
+          "won": false,
+          "name": "城北",
+          "slug": null
+        },
+        {
+          "display": "東海大星翔",
+          "score": 6,
+          "won": true,
+          "name": "東海大星翔",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "第158回九州地区高等学校野球熊本大会",
+      "round": "決勝",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "九州学院",
+          "score": 2,
+          "won": true,
+          "name": "九州学院",
+          "slug": null
+        },
+        {
+          "display": "東海大星翔",
+          "score": 1,
+          "won": false,
+          "name": "東海大星翔",
           "slug": null
         }
       ]
@@ -1183,6 +1486,53 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
           "won": true,
           "name": "熊本高校",
           "slug": "kumamoto"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権熊本大会",
+      "round": "1回戦",
+      "venue": "県営八代野球場",
+      "teams": [
+        {
+          "display": "学園大付属",
+          "score": 3,
+          "won": true,
+          "name": "学園大付属",
+          "slug": null
+        },
+        {
+          "display": "鎮西",
+          "score": 2,
+          "won": false,
+          "name": "鎮西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権熊本大会",
+      "round": "1回戦",
+      "venue": "県営八代野球場",
+      "teams": [
+        {
+          "display": "天草拓心・牛深",
+          "score": 0,
+          "won": false,
+          "name": "天草拓心・牛深",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "専大熊本",
+          "score": 11,
+          "won": true,
+          "name": "専大熊本",
+          "slug": null
         }
       ]
     },
@@ -1540,6 +1890,29 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
       "venue": "県営八代野球場",
       "teams": [
         {
+          "display": "学園大付属",
+          "score": 2,
+          "won": true,
+          "name": "学園大付属",
+          "slug": null
+        },
+        {
+          "display": "専大熊本",
+          "score": 1,
+          "won": false,
+          "name": "専大熊本",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権熊本大会",
+      "round": "2回戦",
+      "venue": "県営八代野球場",
+      "teams": [
+        {
           "display": "城北",
           "score": 6,
           "won": true,
@@ -1598,6 +1971,29 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
           "won": true,
           "name": "済々黌高校",
           "slug": "seiseiko"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権熊本大会",
+      "round": "2回戦",
+      "venue": "県営八代野球場",
+      "teams": [
+        {
+          "display": "文徳",
+          "score": 2,
+          "won": false,
+          "name": "文徳",
+          "slug": null
+        },
+        {
+          "display": "熊本国府",
+          "score": 4,
+          "won": true,
+          "name": "熊本国府",
+          "slug": null
         }
       ]
     },
@@ -1694,6 +2090,29 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権熊本大会",
+      "round": "3回戦",
+      "venue": "県営八代野球場",
+      "teams": [
+        {
+          "display": "開新",
+          "score": 0,
+          "won": false,
+          "name": "開新",
+          "slug": null
+        },
+        {
+          "display": "有明",
+          "score": 5,
+          "won": true,
+          "name": "有明",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-17",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権熊本大会",
@@ -1721,6 +2140,29 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権熊本大会",
       "round": "3回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "学園大付属",
+          "score": 11,
+          "won": true,
+          "name": "学園大付属",
+          "slug": null
+        },
+        {
+          "display": "城北",
+          "score": 9,
+          "won": false,
+          "name": "城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権熊本大会",
+      "round": "3回戦",
       "venue": "県営八代野球場",
       "teams": [
         {
@@ -1736,6 +2178,29 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
           "won": false,
           "name": "済々黌高校",
           "slug": "seiseiko"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権熊本大会",
+      "round": "3回戦",
+      "venue": "県営八代野球場",
+      "teams": [
+        {
+          "display": "熊本国府",
+          "score": 2,
+          "won": false,
+          "name": "熊本国府",
+          "slug": null
+        },
+        {
+          "display": "秀岳館",
+          "score": 3,
+          "won": true,
+          "name": "秀岳館",
+          "slug": null
         }
       ]
     },
@@ -1786,6 +2251,52 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権熊本大会",
+      "round": "準々決勝",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "学園大付属",
+          "score": 2,
+          "won": true,
+          "name": "学園大付属",
+          "slug": null
+        },
+        {
+          "display": "九州学院",
+          "score": 1,
+          "won": false,
+          "name": "九州学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権熊本大会",
+      "round": "準々決勝",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "東海大星翔",
+          "score": 11,
+          "won": true,
+          "name": "東海大星翔",
+          "slug": null
+        },
+        {
+          "display": "秀岳館",
+          "score": 1,
+          "won": false,
+          "name": "秀岳館",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-22",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権熊本大会",
@@ -1805,6 +2316,52 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
           "won": false,
           "name": "熊本工業高校",
           "slug": "kumamotokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権熊本大会",
+      "round": "準決勝",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "学園大付属",
+          "score": 1,
+          "won": false,
+          "name": "学園大付属",
+          "slug": null
+        },
+        {
+          "display": "東海大星翔",
+          "score": 8,
+          "won": true,
+          "name": "東海大星翔",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権熊本大会",
+      "round": "決勝",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "有明",
+          "score": 4,
+          "won": true,
+          "name": "有明",
+          "slug": null
+        },
+        {
+          "display": "東海大星翔",
+          "score": 1,
+          "won": false,
+          "name": "東海大星翔",
+          "slug": null
         }
       ]
     },
@@ -2277,6 +2834,29 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球熊本大会",
       "round": "2回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "学園大付属",
+          "score": 10,
+          "won": true,
+          "name": "学園大付属",
+          "slug": null
+        },
+        {
+          "display": "真和",
+          "score": 3,
+          "won": false,
+          "name": "真和",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-17",
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
       "venue": "県営八代野球場",
       "teams": [
         {
@@ -2292,6 +2872,30 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
           "won": false,
           "name": "熊本商業高校",
           "slug": "kumamotoshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-17",
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
+      "venue": "県営八代野球場",
+      "teams": [
+        {
+          "display": "高専熊本・菊池農業",
+          "score": 2,
+          "won": false,
+          "name": "高専熊本・菊池農業",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "専大熊本",
+          "score": 9,
+          "won": true,
+          "name": "専大熊本",
+          "slug": null
         }
       ]
     },
@@ -2441,6 +3045,30 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
       "venue": "県営八代野球場",
       "teams": [
         {
+          "display": "鹿本商工・鹿本",
+          "score": 0,
+          "won": false,
+          "name": "鹿本商工・鹿本",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "東海大星翔",
+          "score": 12,
+          "won": true,
+          "name": "東海大星翔",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-19",
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
+      "venue": "県営八代野球場",
+      "teams": [
+        {
           "display": "熊本西",
           "score": 0,
           "won": false,
@@ -2452,6 +3080,29 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
           "score": 7,
           "won": true,
           "name": "城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "開新",
+          "score": 6,
+          "won": true,
+          "name": "開新",
+          "slug": null
+        },
+        {
+          "display": "熊本国府",
+          "score": 1,
+          "won": false,
+          "name": "熊本国府",
           "slug": null
         }
       ]
@@ -2526,6 +3177,52 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
       ]
     },
     {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球熊本大会",
+      "round": "3回戦",
+      "venue": "県営八代野球場",
+      "teams": [
+        {
+          "display": "学園大付属",
+          "score": 1,
+          "won": false,
+          "name": "学園大付属",
+          "slug": null
+        },
+        {
+          "display": "有明",
+          "score": 4,
+          "won": true,
+          "name": "有明",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球熊本大会",
+      "round": "3回戦",
+      "venue": "県営八代野球場",
+      "teams": [
+        {
+          "display": "専大熊本",
+          "score": 4,
+          "won": false,
+          "name": "専大熊本",
+          "slug": null
+        },
+        {
+          "display": "文徳",
+          "score": 11,
+          "won": true,
+          "name": "文徳",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-22",
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球熊本大会",
@@ -2568,6 +3265,52 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
           "won": true,
           "name": "岱志高校",
           "slug": "kumamoto-taishi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-22",
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球熊本大会",
+      "round": "3回戦",
+      "venue": "県営八代野球場",
+      "teams": [
+        {
+          "display": "東海大星翔",
+          "score": 4,
+          "won": true,
+          "name": "東海大星翔",
+          "slug": null
+        },
+        {
+          "display": "城北",
+          "score": 1,
+          "won": false,
+          "name": "城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-22",
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球熊本大会",
+      "round": "3回戦",
+      "venue": "県営八代野球場",
+      "teams": [
+        {
+          "display": "秀岳館",
+          "score": 1,
+          "won": false,
+          "name": "秀岳館",
+          "slug": null
+        },
+        {
+          "display": "ルーテル学院",
+          "score": 8,
+          "won": true,
+          "name": "ルーテル学院",
+          "slug": null
         }
       ]
     },
@@ -2625,6 +3368,29 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
       "venue": "県営八代野球場",
       "teams": [
         {
+          "display": "有明",
+          "score": 10,
+          "won": true,
+          "name": "有明",
+          "slug": null
+        },
+        {
+          "display": "文徳",
+          "score": 2,
+          "won": false,
+          "name": "文徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球熊本大会",
+      "round": "準々決勝",
+      "venue": "県営八代野球場",
+      "teams": [
+        {
           "display": "鎮西",
           "score": 0,
           "won": false,
@@ -2637,6 +3403,29 @@ export const REGIONAL_KUMAMOTO: RegionalDistrict = {
           "won": true,
           "name": "岱志高校",
           "slug": "kumamoto-taishi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "第157回九州地区高等学校野球熊本大会",
+      "round": "準々決勝",
+      "venue": "県営八代野球場",
+      "teams": [
+        {
+          "display": "東海大星翔",
+          "score": 5,
+          "won": true,
+          "name": "東海大星翔",
+          "slug": null
+        },
+        {
+          "display": "ルーテル学院",
+          "score": 1,
+          "won": false,
+          "name": "ルーテル学院",
+          "slug": null
         }
       ]
     },

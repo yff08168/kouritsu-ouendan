@@ -356,6 +356,29 @@ export const REGIONAL_HIROSHIMA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権広島大会",
+      "round": "2回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "如水館",
+          "score": 0,
+          "won": false,
+          "name": "如水館",
+          "slug": null
+        },
+        {
+          "display": "広島新庄",
+          "score": 9,
+          "won": true,
+          "name": "広島新庄",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-10",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権広島大会",
@@ -564,6 +587,29 @@ export const REGIONAL_HIROSHIMA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権広島大会",
+      "round": "2回戦",
+      "venue": "Balcom BMW Baseball Stadium",
+      "teams": [
+        {
+          "display": "桜が丘",
+          "score": 0,
+          "won": false,
+          "name": "桜が丘",
+          "slug": null
+        },
+        {
+          "display": "崇徳",
+          "score": 10,
+          "won": true,
+          "name": "崇徳",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-15",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権広島大会",
@@ -651,6 +697,29 @@ export const REGIONAL_HIROSHIMA: RegionalDistrict = {
           "score": 2,
           "won": false,
           "name": "尾道",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権広島大会",
+      "round": "3回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "広陵",
+          "score": 11,
+          "won": true,
+          "name": "広陵",
+          "slug": null
+        },
+        {
+          "display": "広島工大",
+          "score": 1,
+          "won": false,
+          "name": "広島工大",
           "slug": null
         }
       ]
@@ -840,6 +909,29 @@ export const REGIONAL_HIROSHIMA: RegionalDistrict = {
       ]
     },
     {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権広島大会",
+      "round": "準々決勝",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "広陵",
+          "score": 5,
+          "won": true,
+          "name": "広陵",
+          "slug": null
+        },
+        {
+          "display": "崇徳",
+          "score": 3,
+          "won": false,
+          "name": "崇徳",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-26",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権広島大会",
@@ -928,6 +1020,30 @@ export const REGIONAL_HIROSHIMA: RegionalDistrict = {
           "won": true,
           "name": "基町高校",
           "slug": "motomachi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権広島大会",
+      "round": "1回戦",
+      "venue": "やまみ三原市民球場",
+      "teams": [
+        {
+          "display": "竹原・福山商",
+          "score": 3,
+          "won": false,
+          "name": "竹原・福山商",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "広島城北",
+          "score": 4,
+          "won": true,
+          "name": "広島城北",
+          "slug": null
         }
       ]
     },
@@ -1089,6 +1205,29 @@ export const REGIONAL_HIROSHIMA: RegionalDistrict = {
           "won": true,
           "name": "吉田高校",
           "slug": "hiroshima-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権広島大会",
+      "round": "2回戦",
+      "venue": "エブリイ福山市民球場",
+      "teams": [
+        {
+          "display": "近大福山",
+          "score": 3,
+          "won": true,
+          "name": "近大福山",
+          "slug": null
+        },
+        {
+          "display": "瀬戸内",
+          "score": 1,
+          "won": false,
+          "name": "瀬戸内",
+          "slug": null
         }
       ]
     },
@@ -1327,6 +1466,29 @@ export const REGIONAL_HIROSHIMA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権広島大会",
       "round": "2回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "山陽",
+          "score": 5,
+          "won": true,
+          "name": "山陽",
+          "slug": null
+        },
+        {
+          "display": "修大協創",
+          "score": 3,
+          "won": false,
+          "name": "修大協創",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権広島大会",
+      "round": "2回戦",
       "venue": "エブリイ福山市民球場",
       "teams": [
         {
@@ -1466,6 +1628,29 @@ export const REGIONAL_HIROSHIMA: RegionalDistrict = {
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権広島大会",
       "round": "3回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "英数学館",
+          "score": 1,
+          "won": false,
+          "name": "英数学館",
+          "slug": null
+        },
+        {
+          "display": "広島城北",
+          "score": 3,
+          "won": true,
+          "name": "広島城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権広島大会",
+      "round": "3回戦",
       "venue": "電光石火きんさいスタジアム三次",
       "teams": [
         {
@@ -1504,6 +1689,29 @@ export const REGIONAL_HIROSHIMA: RegionalDistrict = {
           "won": false,
           "name": "府中東高校",
           "slug": "hiroshima-fuchuhigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権広島大会",
+      "round": "3回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "広島国際学院",
+          "score": 5,
+          "won": true,
+          "name": "広島国際学院",
+          "slug": null
+        },
+        {
+          "display": "山陽",
+          "score": 4,
+          "won": false,
+          "name": "山陽",
+          "slug": null
         }
       ]
     },
@@ -1596,6 +1804,29 @@ export const REGIONAL_HIROSHIMA: RegionalDistrict = {
           "won": false,
           "name": "廿日市西高校",
           "slug": "hatsukaichinishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権広島大会",
+      "round": "4回戦",
+      "venue": "エブリイ福山市民球場",
+      "teams": [
+        {
+          "display": "盈進",
+          "score": 1,
+          "won": false,
+          "name": "盈進",
+          "slug": null
+        },
+        {
+          "display": "広島国際学院",
+          "score": 7,
+          "won": true,
+          "name": "広島国際学院",
+          "slug": null
         }
       ]
     },

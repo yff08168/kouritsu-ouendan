@@ -40,4 +40,5 @@ export const REGIONAL_LOADERS: Record<string, () => Promise<RegionalDistrict>> =
   shimane: () => import("./shimane").then((m) => m.REGIONAL_SHIMANE),
   iwate: () => import("./iwate").then((m) => m.REGIONAL_IWATE),
   oita: () => import("./oita").then((m) => m.REGIONAL_OITA),
+  tochigi: () => import("./tochigi").then((m) => m.REGIONAL_TOCHIGI),
 };

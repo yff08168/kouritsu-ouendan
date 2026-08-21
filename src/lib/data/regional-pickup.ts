@@ -2085,6 +2085,32 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       ]
     },
     {
+      "districtSlug": "tochigi",
+      "district": "栃木",
+      "sourceName": "栃木県高校野球連盟",
+      "sourceUrl": "https://www.tochigi-koyaren.net/",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権栃木大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "宇都宮工",
+          "score": 7,
+          "won": true,
+          "name": "宇都宮工業高校",
+          "slug": "utsunomiyakogyo"
+        },
+        {
+          "display": "栃木商",
+          "score": 4,
+          "won": false,
+          "name": "栃木商業高校",
+          "slug": "tochigishogyo"
+        }
+      ]
+    },
+    {
       "districtSlug": "kanagawa",
       "district": "神奈川",
       "sourceName": "神奈川高校野球ステーション",
@@ -2133,32 +2159,6 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": true,
           "name": "川口市立高校",
           "slug": "kawaguchishiritsu"
-        }
-      ]
-    },
-    {
-      "districtSlug": "saitama",
-      "district": "埼玉",
-      "sourceName": "埼玉高校野球情報局",
-      "sourceUrl": "https://saitama-baseball.com/",
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "2026年（第108回）全国高校野球選手権埼玉大会",
-      "round": "4回戦",
-      "teams": [
-        {
-          "display": "熊谷商",
-          "score": 1,
-          "won": true,
-          "name": "熊谷商業高校",
-          "slug": "kumagayashogyo"
-        },
-        {
-          "display": "武南",
-          "score": 0,
-          "won": false,
-          "name": "武南",
-          "slug": null
         }
       ]
     }

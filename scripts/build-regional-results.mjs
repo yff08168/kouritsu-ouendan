@@ -6861,6 +6861,195 @@ function raw2flat(page) {
  * 詳細はREADMEの「都道府県高野連サイトの規約調査」。
  */
 /**
+ * 福島県高等学校野球連盟（`fks-kouyaren.com`）。
+ *
+ * ------------------------------------------------------------------
+ * ★★ 規約：**「禁止」ではなく「ご遠慮下さい」**（2026-08-20 に読み直した）
+ *
+ *   トップに「**本連盟ホームページ内のコンテンツの無断使用はご遠慮下さい。**」とある。
+ *
+ *   ★**他の6県とは表現の強さが違う。** 北海道・青森・秋田・東京・鳥取は
+ *   「全ての画像・文章・**データ**の無断転用・転載を**お断りします**」と
+ *   **データを名指しして断って**おり、宮城は**引用まで明示的に禁じている。**
+ *   福島は**名指しが「コンテンツ」と曖昧で、表現も「ご遠慮下さい」**。
+ *
+ *   ★★**この差を踏まえたうえで、運営者の判断（2026-08-21）で取ることにした。**
+ *   ★**取るのは試合結果の数値と校名・日付・球場・回戦だけ。**
+ *   このリポジトリ共通の整理（数値＝事実を引用する）から外れないこと。
+ *
+ * ------------------------------------------------------------------
+ * ★★ 出典の形 ── **スコア表。組み立てが要らない**
+ *
+ *   `taikai/shiaishousai.pdf`（試合詳細）が**全試合のイニングスコア表**。
+ *   石川・山形・愛媛と同じ「スコア表型」で、**枝から対戦を推測する余地が無い。**
+ *
+ *     第108回 全国高等学校野球選手権福島大会          第１０日
+ *     決勝   令和 8 年 7 月 25 日 ( 土 )  2時間53分  ヨーク開成山スタジアム
+ *     チ ー ム 名   1  2  3 … 15   計
+ *     東日大昌平    3  2  0 …       10
+ *     学 法 石 川   1  0  1 …        7
+ *
+ *   ★**校名に位置合わせの空白が入る**（「学 法 石 川」）。詰めて使う。
+ *   ★**合計は行のいちばん右**（x≒625）。イニングの数と混ざらない。
+ *
+ *   ★**組合せ表（`taikai/kumiawase.pdf`）に優勝校が書いてある**
+ *   （「東日本国際大学附属昌平高等学校は初優勝」）。**検算材料。**
+ *
+ * ------------------------------------------------------------------
+ * ★ 検算
+ *
+ *   ★**組み立てが要らない出典なので、PDFの県とは失敗の仕方が違う。**
+ *   おかしな1件を飛ばして警告を出すに倒してある（島根・岩手・栃木と同じ）。
+ *
+ *   - 校名2つと合計2つが揃わない試合は出さない
+ *   - **組合せ表に書かれた優勝校と、決勝の勝者が一致**（読めたときだけ）
+ *
+ * ★**夏だけ。** 春季・秋季のPDFがあるかは未確認。
+ */
+// ★**まだ `ADAPTERS` に入れていない。** 先頭の `_` は「使っていない」の印
+const _fukushima = {
+  slug: "fukushima",
+  district: "福島",
+  name: "福島県高等学校野球連盟",
+  siteUrl: "https://www.fks-kouyaren.com/",
+  politenessMs: 2000,
+  seasons: { summer: "https://www.fks-kouyaren.com/" },
+  async collect({ season, year }) {
+    if (season !== "summer") return [];
+    const parsed = await fetchPdfPages("http://fks-kouyaren.com/taikai/shiaishousai.pdf", { headers: UA });
+    await sleep(this.politenessMs);
+    if (!parsed?.length) {
+      console.log("  ⚠️ 福島: 試合詳細のPDFが読めない。出典の作りが変わった可能性がある");
+      return [];
+    }
+
+    /*
+      ★**大会名は1ページ目の見出し。** 選手権の回数は 年 − 1918。
+      呼ばれた年と食い違ったら前年の紙を見ているので、1試合も出さない。
+    */
+    const head = parsed[0].lines.map((l) => normalize(l.text.replace(/\t/g, "")));
+    const tournament = head.map((t) => t.match(/第\d+回全国高等学校野球選手権福島大会/)?.[0]).find(Boolean);
+    if (!tournament) {
+      console.log("  ⚠️ 福島: 試合詳細のPDFに大会名の見出しが無い。1試合も出さない");
+      return [];
+    }
+    const round = Number(tournament.match(/第(\d+)回/)[1]);
+    if (round + 1918 !== year) {
+      console.log(`  ⚠️ 福島: 第${round}回（${round + 1918}年）の紙を ${year} 年として読もうとした。1試合も出さない`);
+      return [];
+    }
+
+    const games = [];
+    for (const page of parsed) games.push(...this.readPage(page, season, tournament, year));
+
+    // ---- 検算: 組合せ表に書かれた優勝校 ----
+    const champion = await this.printedChampion();
+    const final = games.find((g) => g.round === "決勝");
+    if (champion && final) {
+      const won = final.teams.find((t) => t.won)?.display ?? "";
+      const bare = normalizeSchoolName(champion.replace(/高等?学?校.*$/, ""));
+      /*
+        ★**紙によって書き方が違う。** 組合せ表は「東日本国際大学附属昌平高等学校」、
+        スコア表は「東日大昌平」。**先頭2文字だけを突き合わせる。**
+      */
+      if (!normalizeSchoolName(won).startsWith(bare.slice(0, 2))) {
+        console.log(
+          `  ⚠️ 福島: 決勝の勝者が組合せ表の記載と合わない（記載「${champion}」/ 読み取り「${won}」）。1試合も出さない`,
+        );
+        return [];
+      }
+    }
+    return games;
+  },
+  /** 組合せ表に印字された優勝校。**読めなければ null**（検算だけ飛ばす） */
+  async printedChampion() {
+    const parsed = await fetchPdfPages("http://fks-kouyaren.com/taikai/kumiawase.pdf", { headers: UA });
+    await sleep(this.politenessMs);
+    if (!parsed?.length) return null;
+    for (const page of parsed) {
+      for (const line of page.lines) {
+        const m = normalize(line.text.replace(/\t/g, "")).match(/(\S+?)高等学校は(?:初)?優勝/);
+        if (m) return m[1];
+      }
+    }
+    return null;
+  },
+  /** 1ページぶんのスコア表を読む */
+  readPage(page, season, tournament, year) {
+    const out = [];
+    const lines = page.lines;
+    for (let i = 0; i < lines.length; i++) {
+      // 見出し行「チ ー ム 名 … 計」を目印にする
+      if (!/^チ\s*ー\s*ム\s*名/.test(normalize(lines[i].text.replace(/\t/g, "")))) continue;
+      /*
+        ★**見出しの1つ上が「回戦・日付・所要時間・球場」の行。**
+        その下2行が両校。どれか欠けていたらその試合は出さない。
+      */
+      const info = lines[i - 1] ? normalize(lines[i - 1].text.replace(/\t/g, " ")) : "";
+      const rows = [lines[i + 1], lines[i + 2]];
+      if (rows.some((r) => !r)) continue;
+
+      const d = info.match(/令和\s*(\d+)\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日/);
+      // ★元号は年度ではなく暦年（夏なのでずれない）
+      const date = d && 2018 + Number(d[1]) === year
+        ? `${year}-${String(d[2]).padStart(2, "0")}-${String(d[3]).padStart(2, "0")}`
+        : null;
+      const venue = lines[i - 1]?.items.map((it) => it.text.trim())
+        .find((t) => /球場|スタジアム|パーク|ドーム/.test(t)) ?? null;
+
+      /*
+        ★★**列の位置は見出し行から決めること。座標を決め打ちしない。**
+        **ページによって縮尺が違う**（1試合だけのページは x が 628 まで、
+        複数試合のページは 1249 まで）。`x < 170` と書いたら
+        **32試合のうち17試合が落ちた。**
+
+          校名の列 … 見出しの「1」（イニングの先頭）より左
+          合計の列 … 見出しの「計」の x
+      */
+      const head = lines[i].items;
+      const firstInning = head.find((it) => normalize(it.text.trim()) === "1");
+      const totalCol = head.find((it) => /^計$/.test(it.text.trim()));
+      if (!firstInning || !totalCol) continue;
+
+      const teams = [];
+      for (const row of rows) {
+        // ★位置合わせの空白は詰める（「学 法 石 川」→「学法石川」）
+        const name = row.items
+          .filter((it) => it.x < firstInning.x - 5)
+          .map((it) => it.text)
+          .join("")
+          .replace(/\s+/g, "");
+        /*
+          ★**合計は「計」の列にあるものを取る。**「行のいちばん右」にすると
+          **コールドの注記（「５回コールド」）を拾う**（実際に拾って落ちた）。
+        */
+        const cell = row.items
+          .filter((it) => Math.abs(it.x - totalCol.x) <= 20)
+          .map((it) => Number(normalize(it.text.trim())))
+          .find((v) => Number.isFinite(v));
+        if (!name || cell === undefined) continue;
+        teams.push({ name, total: cell });
+      }
+      if (teams.length !== 2) continue;
+      const [a, b] = teams;
+      out.push({
+        date,
+        season,
+        tournament,
+        round: pickRound(info.match(/(決勝|準決勝|準々決勝|\d+回戦|[一二三四五六七八九]回戦)/)?.[1] ?? null),
+        venue,
+        // ★引き分けがある。「勝っていない＝負け」と読まないこと
+        teams: [
+          { display: a.name, score: a.total, won: a.total > b.total },
+          { display: b.name, score: b.total, won: b.total > a.total },
+        ],
+      });
+    }
+    return out;
+  },
+};
+
+/**
  * 栃木県高校野球連盟（`tochigi-koyaren.net`）。
  *
  * ------------------------------------------------------------------
@@ -8090,6 +8279,17 @@ const ADAPTERS = [
   // ★規約で外していたのは誤りだった（oita / tochigi の説明を読むこと）
   oita,
   tochigi,
+  /*
+    ★★**福島はまだ入れない**（2026-08-21）。アダプタは書いてあるが**未完成。**
+    `taikai/shiaishousai.pdf` は**スコア表32試合ぶん**あるのに**15試合しか読めていない。**
+    ★**原因はページごとに座標の縮尺が違うこと**（1試合だけのページは x が 628 まで、
+    複数試合のページは 1249 まで）。見出し行から列を決める形に直したが、
+    **複数試合のページはまだ取りこぼす。** 見出し行に**2試合ぶんの列が横に並んでいる**
+    可能性が高いので、そこから測り直すこと。
+    ★**そもそもこのPDFは32試合しか載っていない**（福島は約75校＝74試合）。
+    残りがどこにあるかも先に確かめること。
+    // fukushima,
+  */
 ];
 
 // ------------------------------------------------------------------
@@ -8530,6 +8730,54 @@ function previousDistrict(slug) {
   return out;
 }
 
+/**
+ * ★★**1つの県を、組み立てた直後に書き出す**（2026-08-21）。
+ *
+ * ------------------------------------------------------------------
+ * ★ なぜ最後にまとめて書かないのか
+ *
+ *   以前は全県ぶんを `districts` に貯めて、**ループが終わってから**書いていた。
+ *   **1県で落ちると実行まるごとが失われる。**
+ *
+ *   2026-08-20 に実際に起きた: 栃木の出典を `fetch`（undici）で取ると
+ *   **Node の HTTP パーサが内部アサーションで落ちる**（`assert(!this.paused)`）。
+ *   ★**これは `try/catch` では拾えない**（イベントループから投げられる）ので、
+ *   **プロセスごと死に、それまでに取れていた35県ぶんが1つも書き出されなかった。**
+ *
+ *   ★**回避策（栃木だけ `node:https` を使う）は原因の側の手当てにすぎない。**
+ *   **どの県でも同じことが起きうる**ので、**取れたそばから書き出す**形にした。
+ *   途中で死んでも、そこまでの県はディスクに残る。
+ *
+ * ------------------------------------------------------------------
+ * ★ 1試合も取れなかった県のファイルは書き換えない
+ *
+ *   出典のサイトは作り替えられる。取れなくなった県をそのまま書き出すと
+ *   **`games: []` で上書きされ、その県のページから試合が消える。**
+ *   前の実行までの中身を残すほうが、まだ嘘が少ない。
+ *   ★**季節ごとの歯止めは別にある**（`previousDistrict`）。
+ *
+ * @returns 書き出したら true
+ */
+function writeDistrict(district) {
+  if (DRY) return false;
+  const { allGames: _allGames, ...d } = district;
+  if (d.games.length === 0) {
+    console.log(`  ⚠️ ${d.district}: 1試合も取れなかった。${d.slug}.ts は書き換えない`);
+    return false;
+  }
+  mkdirSync(OUT_DIR, { recursive: true });
+  // `allGames` はベストNを数えるための作業用。生成物には出さない
+  const file =
+    `// このファイルは scripts/build-regional-results.mjs が生成する。直接編集しない。\n` +
+    `// 出典: ${d.sourceName}（${d.sourceUrl}）\n\n` +
+    `import type { RegionalDistrict } from "@/lib/regional-results";\n\n` +
+    `export const REGIONAL_${d.slug.toUpperCase().replace(/-/g, "_")}: RegionalDistrict = ${JSON.stringify(d, null, 2)};\n`;
+  const out = path.join(OUT_DIR, `${d.slug}.ts`);
+  writeFileSync(out, file, "utf8");
+  console.log(`  書き出した: ${path.relative(ROOT, out)}（${Math.round(file.length / 1024)}KB）`);
+  return true;
+}
+
 async function main() {
   const targets = onlyPref ? ADAPTERS.filter((a) => a.slug === onlyPref) : ADAPTERS;
   if (!targets.length) {
@@ -8791,7 +9039,7 @@ async function main() {
       console.log(`    ${[...unmatched].join("、")}`);
     }
 
-    districts.push({
+    const district = {
       slug: adapter.slug,
       district: adapter.district,
       sourceName: adapter.name,
@@ -8812,7 +9060,14 @@ async function main() {
         round: g.round,
         teams: g.teams.map((t) => ({ display: t.display, won: t.won })),
       })),
-    });
+    };
+    /*
+      ★★**取れたそばから書き出す**（2026-08-21。`writeDistrict` の説明を読むこと）。
+      以前は全県ぶんを貯めて最後に書いていたので、**1県で落ちると実行まるごとが
+      失われた**（栃木で実際に35県ぶんが消えた）。
+    */
+    writeDistrict(district);
+    districts.push(district);
   }
 
   const results = { districts };
@@ -9122,37 +9377,12 @@ async function main() {
     return;
   }
 
-  // ---- 県ごとのファイル ----
-  mkdirSync(OUT_DIR, { recursive: true });
-  /** 1試合も取れなかった県。CIの判断に使うので数えておく */
-  const empty = [];
-  for (const { allGames: _allGames, ...d } of districts) {
-    /*
-      ★**1試合も取れなかった県のファイルを書き換えない。**
-
-      出典のサイトは作り替えられる。取れなくなった県をそのまま書き出すと
-      **`games: []` で上書きされ、その県のページから試合が消える。**
-      CIは3時間おきに回るので、気づいたときには「消えたコミット」が
-      積み重なっている。前の実行までの中身を残すほうが、まだ嘘が少ない。
-
-      **鳴らしっぱなしにしないこと。** 大会の谷間ではなく出典側の変更なら、
-      アダプタを直すまでデータは古いままになる。
-    */
-    if (d.games.length === 0) {
-      empty.push(d.district);
-      console.log(`  ⚠️ ${d.district}: 1試合も取れなかった。${d.slug}.ts は書き換えない`);
-      continue;
-    }
-    // `allGames` はベストNを数えるための作業用。生成物には出さない
-    const file =
-      `// このファイルは scripts/build-regional-results.mjs が生成する。直接編集しない。\n` +
-      `// 出典: ${d.sourceName}（${d.sourceUrl}）\n\n` +
-      `import type { RegionalDistrict } from "@/lib/regional-results";\n\n` +
-      `export const REGIONAL_${d.slug.toUpperCase().replace(/-/g, "_")}: RegionalDistrict = ${JSON.stringify(d, null, 2)};\n`;
-    const out = path.join(OUT_DIR, `${d.slug}.ts`);
-    writeFileSync(out, file, "utf8");
-    console.log(`  書き出した: ${path.relative(ROOT, out)}（${Math.round(file.length / 1024)}KB）`);
-  }
+  /*
+    ---- 県ごとのファイル ----
+    ★★**書き出しは県を組み立てた直後に済ませてある**（`writeDistrict`）。
+    ここで数えているのは「1試合も取れなかった県」だけ。
+  */
+  const empty = districts.filter((d) => d.games.length === 0).map((d) => d.district);
 
   /*
     ---- 県のページが読むための索引 ----

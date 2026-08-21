@@ -20,18 +20,13 @@ import { PhenomenonCard } from "@/components/phenomenon/PhenomenonCard";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { PollCard } from "@/components/community/PollCard";
 import { RegionalDistrictCard } from "@/components/results/RegionalDistrictCard";
-import { CheerMessageForm } from "@/components/community/CheerMessageForm";
 import { CheerMessageList } from "@/components/community/CheerMessageList";
 
 import { getPrefectureBySlug } from "@/lib/queries/prefectures";
 import { searchSchools } from "@/lib/queries/schools";
 import { getNewsList } from "@/lib/queries/news";
 import { getPhenomenaByPrefecture } from "@/lib/queries/phenomena";
-import {
-  getActivePolls,
-  getCheerMessages,
-  getCheerTopics,
-} from "@/lib/queries/community";
+import { getActivePolls, getCheerMessages } from "@/lib/queries/community";
 import { PREFECTURES } from "@/lib/constants";
 import { getRegionalDistrict, latestSeasonGames } from "@/lib/regional-results";
 
@@ -78,13 +73,16 @@ export default async function PrefectureDetailPage({ params }: Props) {
 
   if (!prefecture) notFound();
 
-  const [schoolResult, newsResult, phenomena, polls, topics, messages, regional] =
+  const [schoolResult, newsResult, phenomena, polls, messages, regional] =
     await Promise.all([
       searchSchools({ prefectureSlug: slug, perPage: 12 }),
       getNewsList({ prefectureSlug: slug, perPage: 6 }),
       getPhenomenaByPrefecture(slug),
       getActivePolls(slug),
-      getCheerTopics(),
+      /*
+        この県の学校あての応援メッセージ（0008）。
+        **投稿欄は学校ページにしか無い**ので、ここは集約表示に徹する。
+      */
       getCheerMessages({ prefectureSlug: slug, limit: 10 }),
       /*
         地方大会の結果。**DBではなくリポジトリ内の生成物**から読む
@@ -228,26 +226,28 @@ export default async function PrefectureDetailPage({ params }: Props) {
         </section>
       )}
 
-      {/* ------- 応援メッセージ ------- */}
+      {/* ------- 応援メッセージ（集約表示。投稿欄は学校ページ） ------- */}
       <section
         aria-labelledby="pref-cheers"
         className="mt-4 rounded-xl border border-line bg-white p-5"
       >
         <SectionHeading
           id="pref-cheers"
-          title={`${prefecture.name}の応援メッセージ`}
+          title={`${prefecture.name}の学校に届いた応援`}
           icon={<MessageSquareHeart size={18} />}
+          moreHref={`/schools?pref=${prefecture.slug}`}
+          moreLabel="学校を探す"
         />
         <div className="mt-3">
-          <CheerMessageList items={messages} />
-        </div>
-        <div className="mt-4">
-          <CheerMessageForm
-            prefectureId={prefecture.id}
-            prefectureName={prefecture.name}
-            topics={topics}
+          <CheerMessageList
+            items={messages}
+            showSchool
+            emptyText={`${prefecture.name}の学校にはまだ応援メッセージが届いていません。各校のページから投稿できます。`}
           />
         </div>
+        <p className="mt-3 text-xs text-ink-faint">
+          応援メッセージは各学校のページから投稿できます。
+        </p>
       </section>
 
       {/* ------- ニュース ------- */}

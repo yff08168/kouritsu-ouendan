@@ -150,18 +150,12 @@ export type PollOptionRow = {
   schools: { slug: string; name: string } | null;
 };
 
-export type CheerTopicRow = {
-  id: string;
-  slug: string;
-  title: string;
-  description: string | null;
-};
-
 export type CheerMessageRow = {
   id: string;
   body: string;
   display_name: string | null;
   published_at: string | null;
+  /** 宛先の学校。null は 0005 時代の県あての投稿 */
+  schools: { slug: string; name: string } | null;
   prefecture: PrefectureJoin;
-  cheer_topics: { slug: string; title: string } | null;
 };

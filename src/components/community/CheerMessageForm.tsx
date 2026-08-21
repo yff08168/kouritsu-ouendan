@@ -3,30 +3,36 @@
 import { useState } from "react";
 import { postCheerMessage } from "@/lib/mutations/community";
 import { cn } from "@/lib/utils";
-import type { CheerTopic } from "@/types/app";
 
 const MAX_BODY = 200;
 
 type Props = {
-  prefectureId: number;
-  prefectureName: string;
-  topics: CheerTopic[];
+  schoolId: string;
+  schoolName: string;
 };
 
 /**
- * 応援メッセージの投稿欄。
+ * 応援メッセージの投稿欄。**学校ページに置く**（0008）。
  *
- * **学校ページではなく都道府県ページに置く。** 学校ページに自由記述欄を作ると
- * 「○○高校の△△君」という書き込みが出る。このサイトは選手個人のページを
- * 作らない方針（AGENTS.md）なので、自分が載せない情報を利用者に書かせる
- * 場所も作らない。都道府県単位なら個人が特定されにくい。
+ * かつては都道府県ページに置いていた。学校ページに自由記述欄を作ると
+ * 「○○高校の△△君」という書き込みが出るためで、これは
+ * 「選手個人のページ・個人成績は作らない」という方針（AGENTS.md）と
+ * 揃えたものだった。**2026-08-20 に運営者の判断で学校単位に変えた。**
  *
- * お題を選ばせるのは、自由記述の幅を狭めて内容を誘導するため。
- * 投稿は必ず下書きとして入り、運営が承認したものだけ公開される
- * （DBトリガ force_cheer_message_draft が status を強制する）。
+ * ★選手個人を取り上げない方針そのものは変わっていない。
+ * 置き場所が学校ページに移ったぶん個人名が書かれやすくなるので、
+ * 歯止めは全部残してある。
+ *
+ *   - 投稿は必ず下書きとして入り、承認したものだけ公開される
+ *     （DBトリガ force_cheer_message_draft が status を強制する）
+ *   - 個人名を書かないよう、送信前と送信後の両方で伝える
+ *   - 利用規約 5-2 が「選手・生徒個人を名指しした内容は掲載しない」と
+ *     定めている。**承認する人はここを基準に見る**
+ *
+ * お題（cheer_topics）は 2026-08-20 にやめた。宛先が学校に決まったので
+ * 「何を書く場所か」は見出しで足りる。
  */
-export function CheerMessageForm({ prefectureId, prefectureName, topics }: Props) {
-  const [topicId, setTopicId] = useState<string>(topics[0]?.id ?? "");
+export function CheerMessageForm({ schoolId, schoolName }: Props) {
   const [body, setBody] = useState("");
   const [displayName, setDisplayName] = useState("");
   const [pending, setPending] = useState(false);
@@ -35,7 +41,6 @@ export function CheerMessageForm({ prefectureId, prefectureName, topics }: Props
 
   const remaining = MAX_BODY - body.length;
   const tooLong = remaining < 0;
-  const selectedTopic = topics.find((t) => t.id === topicId);
 
   async function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
@@ -45,8 +50,7 @@ export function CheerMessageForm({ prefectureId, prefectureName, topics }: Props
     setError(null);
 
     const result = await postCheerMessage({
-      prefectureId,
-      topicId: topicId || null,
+      schoolId,
       body,
       displayName: displayName || null,
     });
@@ -86,36 +90,20 @@ export function CheerMessageForm({ prefectureId, prefectureName, topics }: Props
       className="rounded-xl border border-line bg-white p-5"
     >
       <h3 className="text-base font-bold text-navy-800">
-        {prefectureName}の公立校へ応援メッセージ
+        {schoolName}へ応援メッセージ
       </h3>
 
-      {topics.length > 0 && (
-        <div className="mt-3">
-          <label
-            htmlFor="cheer-topic"
-            className="block text-sm font-medium text-ink"
-          >
-            お題
-          </label>
-          <select
-            id="cheer-topic"
-            value={topicId}
-            onChange={(e) => setTopicId(e.target.value)}
-            className="mt-1 w-full rounded-lg border border-line bg-white px-3 py-2 text-sm text-ink"
-          >
-            {topics.map((topic) => (
-              <option key={topic.id} value={topic.id}>
-                {topic.title}
-              </option>
-            ))}
-          </select>
-          {selectedTopic?.description && (
-            <p className="mt-1 text-xs text-ink-muted">
-              {selectedTopic.description}
-            </p>
-          )}
-        </div>
-      )}
+      {/*
+        ★注意書きは本文欄の「前」に置く。書いたあとに条件を知らせても、
+        書き直しになるだけで守られにくい。
+      */}
+      <p className="mt-2 rounded-lg bg-navy-50 px-3 py-2 text-xs leading-relaxed text-ink-muted">
+        チームへの応援としてお書きください。
+        <strong className="font-bold text-navy-800">
+          選手・生徒個人のお名前が入った投稿は掲載しません。
+        </strong>
+        称賛のつもりでも同じ扱いになります。
+      </p>
 
       <div className="mt-3">
         <label htmlFor="cheer-body" className="block text-sm font-medium text-ink">
@@ -129,11 +117,11 @@ export function CheerMessageForm({ prefectureId, prefectureName, topics }: Props
           required
           aria-describedby="cheer-body-help"
           className="mt-1 w-full resize-y rounded-lg border border-line bg-white px-3 py-2 text-sm text-ink"
-          placeholder="地元の公立校を応援する言葉をどうぞ。"
+          placeholder={`${schoolName}を応援する言葉をどうぞ。`}
         />
         <div className="mt-1 flex items-center justify-between gap-3">
           <p id="cheer-body-help" className="text-xs text-ink-faint">
-            選手個人の名前は書かないでください。
+            個人名は伏せて、チームへの言葉としてお書きください。
           </p>
           <span
             className={cn(

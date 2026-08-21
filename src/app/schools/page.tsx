@@ -359,7 +359,7 @@ export default async function SchoolsPage({ searchParams }: Props) {
         </div>
 
         <p className="mt-4 text-sm text-ink-muted">
-          各都道府県のページ（応援メッセージ・地域のニュース）は{" "}
+          各都道府県のページ（地域のニュース・地方大会の結果）は{" "}
           <Link href="/prefectures" className="underline hover:text-navy-800">
             都道府県一覧
           </Link>{" "}

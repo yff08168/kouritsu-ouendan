@@ -1,12 +1,8 @@
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { throwIfError, toPrefectureRef } from "@/lib/queries/shared";
 import { PREFECTURE_BY_SLUG } from "@/lib/constants";
-import type {
-  CheerMessageRow,
-  CheerTopicRow,
-  PollRow,
-} from "@/types/database";
-import type { CheerMessage, CheerTopic, Poll } from "@/types/app";
+import type { CheerMessageRow, PollRow } from "@/types/database";
+import type { CheerMessage, Poll } from "@/types/app";
 
 /**
  * コミュニティ機能の読み取り。
@@ -83,31 +79,25 @@ export async function getActivePolls(prefectureSlug?: string): Promise<Poll[]> {
     .map(toPoll);
 }
 
-/** お題。投稿欄で「何を書く場所か」を示すために使う */
-export async function getCheerTopics(): Promise<CheerTopic[]> {
-  const supabase = createSupabaseServerClient();
-
-  const { data, error } = await supabase
-    .from("cheer_topics")
-    .select("id, slug, title, description")
-    .order("sort_order", { ascending: true });
-
-  throwIfError(error, "お題の取得");
-
-  return ((data ?? []) as unknown as CheerTopicRow[]).map((row) => ({
-    id: row.id,
-    slug: row.slug,
-    title: row.title,
-    description: row.description,
-  }));
-}
-
 /**
  * 公開済みの応援メッセージ。新しい順。
  * 承認したものしか返らない（RLS で status = 'published' を強制）。
+ *
+ * **0008 で学校単位になった。** 絞り方は2通りある。
+ *
+ *   - `schoolId` … 学校ページ。その学校あての投稿だけ
+ *   - `prefectureSlug` … 都道府県ページ。**その県の学校あての投稿を集める。**
+ *     投稿欄は学校ページにしか無いので、県ページは集約表示に徹する
+ *
+ * `prefecture_id` は投稿時にDBのトリガが学校から引いて入れているので、
+ * 県で絞るのに学校を経由した結合は要らない。
  */
 export async function getCheerMessages(
-  options: { prefectureSlug?: string; limit?: number } = {},
+  options: {
+    schoolId?: string;
+    prefectureSlug?: string;
+    limit?: number;
+  } = {},
 ): Promise<CheerMessage[]> {
   const supabase = createSupabaseServerClient();
 
@@ -115,11 +105,15 @@ export async function getCheerMessages(
     .from("cheer_messages")
     .select(
       `id, body, display_name, published_at,
-       prefecture:prefectures ( name, slug ),
-       cheer_topics ( slug, title )`,
+       schools ( slug, name ),
+       prefecture:prefectures ( name, slug )`,
     )
     .order("published_at", { ascending: false, nullsFirst: false })
     .limit(options.limit ?? 20);
+
+  if (options.schoolId) {
+    query = query.eq("school_id", options.schoolId);
+  }
 
   if (options.prefectureSlug) {
     // 設問と同じ理由で、埋め込み側ではなく親のカラムで絞る
@@ -136,7 +130,7 @@ export async function getCheerMessages(
     body: row.body,
     displayName: row.display_name,
     publishedAt: row.published_at,
+    school: row.schools ? { slug: row.schools.slug, name: row.schools.name } : null,
     prefecture: toPrefectureRef(row.prefecture),
-    topicTitle: row.cheer_topics?.title ?? null,
   }));
 }

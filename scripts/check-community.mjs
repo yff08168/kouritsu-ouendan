@@ -1,5 +1,6 @@
 /**
- * コミュニティ機能（0005）が意図どおり効いているかを anon キーで確かめる。
+ * コミュニティ機能（0005 / 0006 / 0008）が意図どおり効いているかを
+ * anon キーで確かめる。
  *
  *   node --env-file=.env.local scripts/check-community.mjs
  *
@@ -150,15 +151,49 @@ const option = poll.poll_options?.[0];
 }
 
 // ------------------------------------------------------------
-console.log("\n--- 3. 応援メッセージ ---");
+console.log("\n--- 3. 応援メッセージ（0008 で学校単位になった）---");
 let posted = 0;
 {
   const { error } = await supabase.from("cheer_messages").insert({
-    prefecture_id: prefecture.id,
+    school_id: school.id,
     body: "動作確認の投稿です。",
     visitor_key: visitorKey,
   });
-  expectPass("投稿できる", error);
+  expectPass("学校あてに投稿できる", error);
+  if (!error) posted++;
+}
+{
+  // 宛先の無い投稿。トリガと RLS ポリシーの両方で止まるはず
+  const { error } = await supabase.from("cheer_messages").insert({
+    prefecture_id: prefecture.id,
+    body: "学校を指定しない投稿",
+    visitor_key: visitorKey,
+  });
+  expectBlocked("学校を指定しない投稿を弾く", error, "school_id 必須");
+}
+{
+  // 存在しない学校。**下書きの学校も同じ経路で弾かれる**
+  // （anon には draft の学校が見えないので、id をここで用意できない）
+  const { error } = await supabase.from("cheer_messages").insert({
+    school_id: "00000000-0000-0000-0000-000000000000",
+    body: "存在しない学校あての投稿",
+    visitor_key: visitorKey,
+  });
+  expectBlocked("存在しない学校あての投稿を弾く", error);
+}
+{
+  // 県はDBのトリガが学校から引く。偽の値を送っても投稿自体は通り、
+  // 保存される prefecture_id は学校の県に直る。
+  // **anon は自分の下書きを読めないので、直ったことはSQL側で確かめる**
+  // （下の掃除用SQLに確認クエリを入れてある）。
+  const bogus = prefecture.id === 1 ? 2 : 1;
+  const { error } = await supabase.from("cheer_messages").insert({
+    school_id: school.id,
+    prefecture_id: bogus,
+    body: "偽の県を送る投稿",
+    visitor_key: visitorKey,
+  });
+  expectPass("偽の県を送っても投稿は通る（DB側で学校の県に直る）", error);
   if (!error) posted++;
 }
 {
@@ -172,7 +207,7 @@ let posted = 0;
 }
 {
   const { error } = await supabase.from("cheer_messages").insert({
-    prefecture_id: prefecture.id,
+    school_id: school.id,
     body: "公開済みとして入れようとする試み",
     status: "published",
     visitor_key: visitorKey,
@@ -192,7 +227,7 @@ let posted = 0;
 }
 {
   const { error } = await supabase.from("cheer_messages").insert({
-    prefecture_id: prefecture.id,
+    school_id: school.id,
     body: "   ",
     visitor_key: visitorKey,
   });
@@ -200,7 +235,7 @@ let posted = 0;
 }
 {
   const { error } = await supabase.from("cheer_messages").insert({
-    prefecture_id: prefecture.id,
+    school_id: school.id,
     body: "あ".repeat(201),
     visitor_key: visitorKey,
   });
@@ -211,7 +246,7 @@ let posted = 0;
   let lastError = null;
   for (let i = posted; i < 6; i++) {
     const { error } = await supabase.from("cheer_messages").insert({
-      prefecture_id: prefecture.id,
+      school_id: school.id,
       body: `連投テスト ${i}`,
       visitor_key: visitorKey,
     });
@@ -242,6 +277,15 @@ console.log("\n--- 4. 書き換え・削除ができないこと ---");
 // ------------------------------------------------------------
 console.log("\n--- 掃除用SQL（Supabase の SQL Editor で実行）---");
 console.log(`
+-- ★消す前に、県が学校から引かれているかを見る（「偽の県を送る投稿」の行）。
+-- school_id の県と prefecture_id が一致していれば 0008 のトリガが効いている。
+select m.body, s.name as 学校, p1.name as 保存された県, p2.name as 学校の県
+from public.cheer_messages m
+join public.schools s      on s.id  = m.school_id
+join public.prefectures p1 on p1.id = m.prefecture_id
+join public.prefectures p2 on p2.id = s.prefecture_id
+where m.visitor_key like 'zzzselftest%';
+
 delete from public.cheer_messages where visitor_key like 'zzzselftest%';
 delete from public.poll_votes      where visitor_key like 'zzzselftest%';
 delete from public.school_cheers   where visitor_key like 'zzzselftest%';

@@ -65,12 +65,15 @@ export async function votePoll(
 }
 
 /**
- * 応援メッセージを投稿する。
+ * 学校あての応援メッセージを投稿する（0008 で都道府県単位から移した）。
+ *
  * status は送らない。**送っても意味がない**（DBトリガが draft で上書きする）。
+ * **prefecture_id も送らない。** DBトリガが学校から引いて入れる。
+ * 送れる形にしておくと、ある県の学校あての投稿を別の県のページに
+ * 混ぜ込めてしまう。
  */
 export async function postCheerMessage(input: {
-  prefectureId: number;
-  topicId: string | null;
+  schoolId: string;
   body: string;
   displayName: string | null;
 }): Promise<MutationResult> {
@@ -87,8 +90,7 @@ export async function postCheerMessage(input: {
 
   const supabase = createSupabaseBrowserClient();
   const { error } = await supabase.from("cheer_messages").insert({
-    prefecture_id: input.prefectureId,
-    topic_id: input.topicId,
+    school_id: input.schoolId,
     body,
     display_name: input.displayName?.trim() || null,
     visitor_key: visitorKey,

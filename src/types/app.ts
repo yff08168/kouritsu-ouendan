@@ -102,21 +102,21 @@ export type Poll = {
   totalVotes: number;
 };
 
-export type CheerTopic = {
-  id: string;
-  slug: string;
-  title: string;
-  description: string | null;
-};
-
+/**
+ * 応援メッセージ。**学校あて**（0008 で都道府県単位から移した）。
+ *
+ * お題（cheer_topics）は 2026-08-20 に画面から外した。
+ * DBのテーブルと topic_id 列は残っているが、ここには持ってきていない。
+ */
 export type CheerMessage = {
   id: string;
   body: string;
   /** 未入力なら「名無しの応援団」を出す。個人が特定できる情報は求めない */
   displayName: string | null;
   publishedAt: string | null;
+  /** 宛先の学校。null は 0005 時代の県あての投稿 */
+  school: { slug: string; name: string } | null;
   prefecture: PrefectureRef | null;
-  topicTitle: string | null;
 };
 
 export type PhenomenonLevel = "koshien" | "prefectural" | "regional";

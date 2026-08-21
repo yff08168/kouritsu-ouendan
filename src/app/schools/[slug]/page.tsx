@@ -23,6 +23,8 @@ import { ChampionshipTable } from "@/components/schools/ChampionshipTable";
 import { RecordTable } from "@/components/schools/RecordTable";
 import { PhenomenonCard } from "@/components/phenomenon/PhenomenonCard";
 import { CheerButton } from "@/components/community/CheerButton";
+import { CheerMessageForm } from "@/components/community/CheerMessageForm";
+import { CheerMessageList } from "@/components/community/CheerMessageList";
 
 import {
   getAllSchoolSlugs,
@@ -33,6 +35,7 @@ import {
 } from "@/lib/queries/schools";
 import { getNewsBySchool } from "@/lib/queries/news";
 import { getPhenomenaBySchool } from "@/lib/queries/phenomena";
+import { getCheerMessages } from "@/lib/queries/community";
 import { JsonLd } from "@/components/common/JsonLd";
 import { schoolJsonLd } from "@/lib/seo";
 import type { SchoolDetail } from "@/types/app";
@@ -111,13 +114,15 @@ export default async function SchoolDetailPage({ params }: Props) {
 
   if (!school) notFound();
 
-  const [championships, records, news, phenomena, relatedSchools] =
+  const [championships, records, news, phenomena, relatedSchools, cheerMessages] =
     await Promise.all([
       getSchoolChampionships(school.id),
       getSchoolRecords(school.id),
       getNewsBySchool(school.id),
       getPhenomenaBySchool(school.id),
       getRelatedSchools(school.prefecture.slug, school.id),
+      // 応援メッセージは学校あて（0008）。承認済みのものだけ返る
+      getCheerMessages({ schoolId: school.id, limit: 20 }),
     ]);
 
   const koshienTotal = school.koshienSpringCount + school.koshienSummerCount;
@@ -286,9 +291,8 @@ export default async function SchoolDetailPage({ params }: Props) {
             <div className="mt-5">
               {/*
               応援ボタン。テキストを投稿させない、いちばん軽い参加の形。
-              自由記述のコメント欄を学校ページに置かないのは、
-              「○○高校の△△君」という書き込みを招くため（AGENTS.md）。
-              文字で応援したい人は都道府県ページのメッセージ欄へ誘導する。
+              文字で応援したい人は、同じページ下部のメッセージ欄へ送る
+              （0008 で都道府県ページから学校ページへ移した）。
             */}
               <CheerButton
                 schoolId={school.id}
@@ -297,13 +301,13 @@ export default async function SchoolDetailPage({ params }: Props) {
               />
 
               <div className="mt-4 flex flex-wrap gap-2">
-                <Link
-                  href={`/prefectures/${school.prefecture.slug}#pref-cheers`}
+                <a
+                  href="#school-cheers"
                   className="inline-flex min-h-11 items-center gap-1.5 rounded-lg border border-line px-5 text-sm font-bold text-ink-muted hover:border-navy-800 hover:text-navy-800"
                 >
                   <MessageSquareHeart size={16} aria-hidden="true" />
-                  {school.prefecture.name}へ応援メッセージ
-                </Link>
+                  応援メッセージを書く
+                </a>
 
                 {school.websiteUrl && (
                   <a
@@ -390,6 +394,24 @@ export default async function SchoolDetailPage({ params }: Props) {
           </ul>
         </section>
       )}
+
+      {/* ------- 応援メッセージ（0008 で都道府県ページから移した） ------- */}
+      <section
+        aria-labelledby="school-cheers"
+        className="mt-4 rounded-xl border border-line bg-white p-5"
+      >
+        <SectionHeading
+          id="school-cheers"
+          title={`${school.name}への応援メッセージ`}
+          icon={<MessageSquareHeart size={18} />}
+        />
+        <div className="mt-3">
+          <CheerMessageList items={cheerMessages} />
+        </div>
+        <div className="mt-4">
+          <CheerMessageForm schoolId={school.id} schoolName={school.name} />
+        </div>
+      </section>
 
       {/* ------- 関連ニュース ------- */}
       <section

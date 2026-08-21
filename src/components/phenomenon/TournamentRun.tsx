@@ -11,7 +11,11 @@ import {
 } from "@/lib/content/tournament-runs";
 
 /**
- * 甲子園の勝ち上がりを1試合ずつ縦に並べる。
+ * 大会での勝ち上がりを1試合ずつ縦に並べる。
+ *
+ * **見出しは既定が「甲子園での勝ち上がり」で、地方大会の記録だけ
+ * `run.heading` で上書きする**（「神奈川大会での勝ち上がり」）。
+ * 同じ見出しで並べると、地方大会の準々決勝が甲子園の準々決勝に見える。
  *
  * 表ではなく縦のリストにしているのは、狭い画面でも横スクロールが出ないようにするため。
  * 各試合が「回戦・相手・スコア・寸評」を持つので、表にすると列が多くなりすぎる。
@@ -29,7 +33,7 @@ export function TournamentRun({ run }: { run: Run }) {
     >
       <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
         <h2 id="tournament-run" className="text-base font-bold text-navy-800">
-          甲子園での勝ち上がり
+          {run.heading ?? "甲子園での勝ち上がり"}
         </h2>
         <p className="text-xs text-ink-muted">
           {run.tournamentName}

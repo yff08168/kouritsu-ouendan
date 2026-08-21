@@ -116,6 +116,13 @@ export type TournamentRun = {
   year: number;
   season: "spring" | "summer";
   tournamentName: string;
+  /**
+   * 見出し。既定は「甲子園での勝ち上がり」。
+   * **地方大会の記録では大会にあわせて上書きする**（「神奈川大会での勝ち上がり」）。
+   * 甲子園と地方大会が同じ見出しで並ぶと、地方大会の準々決勝が
+   * 甲子園の準々決勝に見える。
+   */
+  heading?: string;
   /** 到達した段階 */
   result: string;
   games: RunGame[];
@@ -774,6 +781,140 @@ export const TOURNAMENT_RUNS: TournamentRun[] = [
         label: "第107回全国高等学校野球選手権大会 - Wikipedia",
         url: wiki("第107回全国高等学校野球選手権大会"),
         note: "大会全体の勝ち上がり",
+      },
+    ],
+  },
+
+  // ==========================================================
+  // 県相模原 2019（神奈川大会・ベスト4）
+  //
+  // **甲子園ではなく地方大会の記録。** 出典は神奈川高校野球ステーション
+  // （個人運営・2002年〜）の2019年夏の日別ページで、このリポジトリが
+  // 地方大会の結果に使っているのと同じ出典。
+  // **出典表示は必ずサイト名で出す**（神奈川県高野連の名前で出さない）。
+  //
+  // ★検算（トーナメント表を組み立てたわけではないが、同じ考え方で確かめた）:
+  //   ・準々決勝4試合・準決勝2試合・決勝1試合で数が合う
+  //   ・決勝は 東海大相模 24-1 日大藤沢。**Wikipedia「全国高等学校野球選手権
+  //     神奈川大会」の歴代代表校の表と一致する**（別の出典との突き合わせ）
+  //   ・「創部初のベスト4」は Wikipedia の学校記事にある
+  //
+  // **イニングごとの得点は出典に無いので linescore を入れていない。**
+  // 資料に無いものを埋めないこと。
+  //
+  // 7月16日の二宮戦は雨で中止になり、翌17日に2回戦として行われている。
+  // ==========================================================
+  {
+    phenomenonSlug: "sagamihara-2019-summer",
+    schoolSlug: "sagamihara",
+    schoolName: "相模原高校",
+    year: 2019,
+    season: "summer",
+    tournamentName: "第101回全国高等学校野球選手権神奈川大会",
+    heading: "神奈川大会での勝ち上がり",
+    result: "ベスト4",
+    games: [
+      {
+        round: "1回戦",
+        date: "7月13日",
+        opponent: "上矢部",
+        scoreFor: 6,
+        scoreAgainst: 3,
+        outcome: "win",
+      },
+      {
+        round: "2回戦",
+        date: "7月17日",
+        opponent: "二宮",
+        scoreFor: 8,
+        scoreAgainst: 0,
+        outcome: "win",
+        note: "16日が雨天中止で翌日に順延",
+      },
+      {
+        round: "3回戦",
+        date: "7月18日",
+        opponent: "湘南学院",
+        scoreFor: 10,
+        scoreAgainst: 0,
+        outcome: "win",
+        comment: "第3シードの湘南学院を相手に10点を奪った。",
+      },
+      {
+        round: "4回戦",
+        date: "7月21日",
+        opponent: "日大",
+        scoreFor: 12,
+        scoreAgainst: 9,
+        outcome: "win",
+      },
+      {
+        round: "5回戦",
+        date: "7月22日",
+        opponent: "横浜商業",
+        scoreFor: 4,
+        scoreAgainst: 3,
+        outcome: "win",
+        walkOff: true,
+        note: "延長11回",
+      },
+      {
+        round: "準々決勝",
+        date: "7月25日",
+        opponent: "横浜",
+        scoreFor: 8,
+        scoreAgainst: 6,
+        outcome: "win",
+        comment:
+          "横浜スタジアムで第1シードの横浜と対戦し、8対6で勝った。県相模原はこの勝利で創部初のベスト4に進んでいる。",
+      },
+      {
+        round: "準決勝",
+        date: "7月27日",
+        opponent: "東海大相模",
+        scoreFor: 2,
+        scoreAgainst: 11,
+        outcome: "loss",
+        comment:
+          "この大会を優勝する東海大相模に2対11で敗れ、大会を終えた。",
+      },
+    ],
+    sources: [
+      {
+        label: "神奈川高校野球ステーション（2019年夏・日別の対戦カード）",
+        url: "https://www.kanagawa-baseball.com/summer/2019/",
+        note: "全7試合のスコアと日付",
+      },
+      {
+        label: "全国高等学校野球選手権神奈川大会 - Wikipedia",
+        url: wiki("全国高等学校野球選手権神奈川大会"),
+        note: "決勝の結果（出典どうしの突き合わせ）",
+      },
+      {
+        label: "神奈川県立相模原高等学校 - Wikipedia",
+        url: wiki("神奈川県立相模原高等学校"),
+        note: "創部初のベスト4であること",
+      },
+    ],
+    /*
+      ★**画面には出ない。** 個人が上げた試合映像なので `unverified`。
+      `isEmbeddableVideo()` が `official`（主催者・放送局・学校・高野連）しか
+      通さないので、埋め込みもリンクも出ない。
+      **同じ動画を何度も調べ直さないために記録として残している。**
+      2026-08-20 に運営者から埋め込みの可否を聞かれて調べた。
+      tvk・高野連・朝日新聞など権利者側の映像は見つからなかった。
+      ★動画の説明文にあるイニングスコア（横浜 201 020 010 = 6 ／
+      県相模原 000 000 53X = 8）は**出典として採らない**。合計が
+      準々決勝の 8-6 と合うことを確かめただけで、`linescore` には入れていない。
+    */
+    videos: [
+      {
+        url: "https://www.youtube.com/watch?v=MuQewbmYmSw",
+        title:
+          "7~9回 横浜高校 - 県相模原 2019年7月25日(木)第101回全国高校野球選手権大会神奈川大会[準々決勝]",
+        channel: "paretoma パレトマ",
+        source: "unverified",
+        checkedOn: "2026-08-20",
       },
     ],
   },

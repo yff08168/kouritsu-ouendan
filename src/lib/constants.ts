@@ -190,10 +190,17 @@ export const NEWS_CATEGORIES = {
 
 export type NewsCategory = keyof typeof NEWS_CATEGORIES;
 
-/** 公立旋風の規模 */
+/**
+ * 公立旋風の規模。
+ *
+ * **`prefectural` は「県大会」ではなく「地方大会」と出す**（2026-08-20 に変更）。
+ * 東東京・西東京の大会は「県大会」ではないうえ、サイトの他の場所
+ * （結果速報・県のページ）はどれも都道府県の予選を「地方大会」と呼んでいる。
+ * `regional` の「地区大会」は関東大会・東海大会のような複数県の大会のこと。
+ */
 export const PHENOMENON_LEVELS = {
   koshien: "甲子園",
-  prefectural: "県大会",
+  prefectural: "地方大会",
   regional: "地区大会",
 } as const;
 

@@ -108,17 +108,11 @@ export function RegionalDistrictCard({
         </p>
       )}
 
-      <p className="mt-4 border-t border-line pt-3 text-xs leading-relaxed text-ink-faint">
-        出典:{" "}
-        <Link
-          href={district.sourceUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="underline hover:text-navy-800"
-        >
-          {district.sourceName}
-        </Link>
-      </p>
+      {/*
+        ★**出典の行は 2026-08-21 に運営者の判断で画面から外した**
+        （トップの `RegionalResultsCard` と揃えてある）。
+        **`district.sourceName` / `sourceUrl` は残してある**ので、戻すのはここだけ。
+      */}
     </section>
   );
 }

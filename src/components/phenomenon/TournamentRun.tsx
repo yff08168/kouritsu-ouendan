@@ -1,6 +1,3 @@
-import Link from "next/link";
-import { ExternalLink } from "lucide-react";
-
 import { cn } from "@/lib/utils";
 import {
   isEmbeddableVideo,
@@ -57,7 +54,12 @@ export function TournamentRun({ run }: { run: Run }) {
 
       {run.videos && run.videos.length > 0 && <Videos videos={run.videos} />}
 
-      <Sources sources={run.sources} />
+      {/*
+        ★**出典の一覧は 2026-08-21 に運営者の判断で画面から外した。**
+        **`TournamentRun.sources` は残してある**（どの試合をどこで確認したかの記録）。
+        戻すときはここに `<Sources sources={run.sources} />` を置く
+        —— **描画する部品は消してあるので、一緒に書き直すこと。**
+      */}
     </section>
   );
 }
@@ -345,41 +347,8 @@ function Videos({ videos }: { videos: NonNullable<Run["videos"]> }) {
   );
 }
 
-function Sources({ sources }: { sources: Run["sources"] }) {
-  return (
-    <div className="mt-6 border-t border-line pt-4">
-      <h3 className="text-xs font-medium text-ink-muted">出典</h3>
-      <ul className="mt-1.5 space-y-1">
-        {sources.map((source) => (
-          <li key={source.url ?? source.label} className="text-xs">
-            {/* URLが無い出典もある（運営者自身の記録・書籍など） */}
-            {source.url ? (
-              <Link
-                href={source.url}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-baseline gap-1 text-ink-muted underline hover:text-navy-800"
-              >
-                {source.label}
-                <ExternalLink
-                  size={11}
-                  aria-hidden="true"
-                  className="shrink-0"
-                />
-              </Link>
-            ) : (
-              <span className="text-ink-muted">{source.label}</span>
-            )}
-            {source.note && (
-              <span className="ml-1 text-ink-faint">— {source.note}</span>
-            )}
-          </li>
-        ))}
-      </ul>
-      <p className="mt-2 text-xs leading-relaxed text-ink-faint">
-        スコアと対戦相手は上記の出典で確認しています。試合の寸評は出典をもとに
-        当サイトが書いたものです。
-      </p>
-    </div>
-  );
-}
+/*
+  ★**出典を描画する `Sources` は 2026-08-21 に消した**（運営者の判断）。
+  **`TournamentRun.sources` の型とデータはそのまま残してある**ので、
+  戻すときはこの位置に部品を書き直す。
+*/

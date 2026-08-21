@@ -44,10 +44,12 @@ export function RegionalResultsCard({
 }) {
   const games = pickRegionalGames(pickups, limit, seed);
 
-  // 出した試合の出典だけを並べる。出していない県の出典は書かない
-  const sources = [
-    ...new Map(games.map((g) => [g.sourceUrl, { name: g.sourceName, url: g.sourceUrl }])).values(),
-  ];
+  /*
+    ★**出典を並べる処理は 2026-08-21 に消した**（画面から外したため。運営者の判断）。
+    戻すときは「**出した試合の出典だけ**を、その名前で並べる」に戻すこと ——
+    出していない県の出典を書いたり、1つにまとめて「各都道府県高野連」と
+    書いたりしないこと（出典は県ごとに違い、連盟とは限らない）。
+  */
 
   return (
     <section
@@ -60,8 +62,16 @@ export function RegionalResultsCard({
         icon={<MapPinned size={22} />}
       />
 
+      {/*
+        ★**抜粋はいちばん新しい季節だけ**（2026-08-21 に変えた）。
+        以前は春・夏・秋を混ぜていたので「秋季・春季大会と選手権予選から」と
+        書いていたが、**いまは1つの季節しか出ない**ので、その季節を名乗る。
+        ★**季節が分からないときだけ、元の言い方に落とす。**
+      */}
       <p className="mt-1 text-sm text-ink-muted">
-        各県の秋季・春季大会と選手権予選から、公立高校の試合を選んで出しています
+        {pickups.spotlightSeason
+          ? `各県の${seasonLabel(pickups.spotlightSeason)}から、公立高校の試合を選んで出しています`
+          : "各県の地方大会から、公立高校の試合を選んで出しています"}
         {pickups.latestDate && <>・{formatRegionalDate(pickups.latestDate)}の試合まで</>}
       </p>
 
@@ -79,22 +89,12 @@ export function RegionalResultsCard({
         </ul>
       )}
 
-      <p className="mt-4 border-t border-line pt-3 text-xs leading-relaxed text-ink-faint">
-        出典:{" "}
-        {sources.map((s, i) => (
-          <span key={s.url}>
-            {i > 0 && "／"}
-            <Link
-              href={s.url}
-              target="_blank"
-              rel="noreferrer"
-              className="underline hover:text-navy-800"
-            >
-              {s.name}
-            </Link>
-          </span>
-        ))}
-      </p>
+      {/*
+        ★**出典の行は 2026-08-21 に運営者の判断で画面から外した。**
+        **データ側（`sourceName` / `sourceUrl`）は残してある**ので、戻すのはここだけ。
+        ★**どの県をどこから取っているかの記録が消えたわけではない**
+        （README とアダプタのコメントにある）。
+      */}
     </section>
   );
 }

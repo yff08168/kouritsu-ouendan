@@ -63,16 +63,14 @@ export function LiveResultsCard({
         </ul>
       )}
 
+      {/*
+        ★**出典の行は 2026-08-21 に運営者の判断で画面から外した**（地方大会と揃えてある）。
+        ★**「公立だけを載せている」という断りは残す** ——
+        これは出典ではなく、**収録範囲の説明**（この一覧が全試合ではないこと）。
+        消すと「甲子園の全試合」に見える。
+      */}
       <p className="mt-4 border-t border-line pt-3 text-xs leading-relaxed text-ink-faint">
-        公立高校が出場した試合だけを載せています。出典:{" "}
-        <Link
-          href={results.sourceUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="underline hover:text-navy-800"
-        >
-          日本高等学校野球連盟「{results.tournamentTitle}」試合日程・結果
-        </Link>
+        公立高校が出場した試合だけを載せています。
       </p>
     </section>
   );

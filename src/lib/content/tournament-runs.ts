@@ -918,6 +918,98 @@ export const TOURNAMENT_RUNS: TournamentRun[] = [
       },
     ],
   },
+  // ==========================================================
+  // 小山台 2018・2019（東東京大会・どちらも準優勝）
+  //
+  // **出典は「わっぱ飯のイン斬り野球」**（個人ブログ。2026-08-21 に運営者が指定）。
+  // 小山台のOBが観戦歴50年ぶんの試合を1試合ずつ記録していて、
+  // 「温故知新」の回が年ごとの一覧になっている。**観戦した本人の記録**なので、
+  // 神奈川・埼玉の情報サイトと同じ「連盟以外の出典」として扱う。
+  // **出典表示はブログ名で出す**（東京都高野連の名前で出さない)。
+  //
+  // ★規約は 2026-08-21 に トップ・プロフィールを見て確認した。
+  //   転載・無断・複製・著作・営利のいずれの記載も無い（robots.txt は404）。
+  //
+  // ★**取ったのは回戦・対戦相手・スコア・勝敗だけ。** このブログは
+  //   観戦記の文章が本体なので、**文章は1文字も取らないこと。**
+  //
+  // ★検算：**決勝のスコアが Wikipedia の歴代代表校の表と一致する**
+  //   （2018は二松学舎大付 6-3、2019は関東第一 4-0）。
+  //   ★**突き合わせられるのは決勝だけ。** 東京都高野連は「データ」の転載を
+  //   制限していて日別の結果が取れないので、3回戦〜準決勝は
+  //   **この1つの出典しか無い。** 別の出典が見つかったら必ず照合すること。
+  //
+  // ★**日付は出典に無いので入れていない**（推測しない）。
+  //   イニングごとの得点も無いので linescore も無い。
+  //
+  // ★校名は**大会記事の表記に寄せた**（出典は「二松學舍大付」「関東一」と書く）。
+  //   記事本文・Wikipedia と揃えるため。学校そのものは同じ。
+  //
+  // どちらの年も3回戦から登場している。東東京は春季東京都大会のベスト16以上が
+  // 3回戦からのシードで、小山台は春に2018年ベスト8・2019年ベスト4に入っている
+  // （春の成績も同じ出典にある）。
+  // ==========================================================
+  {
+    phenomenonSlug: "koyamadai-2018-summer",
+    schoolSlug: "koyamadai",
+    schoolName: "小山台高校",
+    year: 2018,
+    season: "summer",
+    tournamentName: "第100回全国高等学校野球選手権記念東東京大会",
+    heading: "東東京大会での勝ち上がり",
+    result: "準優勝",
+    games: [
+      { round: "3回戦", opponent: "日本ウェルネス", scoreFor: 3, scoreAgainst: 1, outcome: "win" },
+      { round: "4回戦", opponent: "紅葉川", scoreFor: 9, scoreAgainst: 2, outcome: "win" },
+      { round: "5回戦", opponent: "高島", scoreFor: 10, scoreAgainst: 1, outcome: "win" },
+      { round: "準々決勝", opponent: "安田学園", scoreFor: 6, scoreAgainst: 4, outcome: "win" },
+      { round: "準決勝", opponent: "帝京", scoreFor: 7, scoreAgainst: 2, outcome: "win" },
+      { round: "決勝", opponent: "二松学舎大付", scoreFor: 3, scoreAgainst: 6, outcome: "loss" },
+    ],
+    sources: [
+      {
+        label: "わっぱ飯のイン斬り野球「小山台高校野球班　温故知新　第３３６球目～第３５１球目」",
+        url: "https://maemae-jizai.moe-nifty.com/5589/2022/09/post-9c22e7.html",
+        note: "6試合の回戦・対戦相手・スコア",
+      },
+      {
+        label: "全国高等学校野球選手権東東京大会 - Wikipedia",
+        url: wiki("全国高等学校野球選手権東東京大会"),
+        note: "決勝のスコア（出典どうしの突き合わせ）",
+      },
+    ],
+  },
+
+  {
+    phenomenonSlug: "koyamadai-2019-summer",
+    schoolSlug: "koyamadai",
+    schoolName: "小山台高校",
+    year: 2019,
+    season: "summer",
+    tournamentName: "第101回全国高等学校野球選手権東東京大会",
+    heading: "東東京大会での勝ち上がり",
+    result: "準優勝",
+    games: [
+      { round: "3回戦", opponent: "東海大高輪台", scoreFor: 10, scoreAgainst: 2, outcome: "win" },
+      { round: "4回戦", opponent: "足立学園", scoreFor: 8, scoreAgainst: 1, outcome: "win" },
+      { round: "5回戦", opponent: "安田学園", scoreFor: 4, scoreAgainst: 3, outcome: "win" },
+      { round: "準々決勝", opponent: "高島", scoreFor: 5, scoreAgainst: 1, outcome: "win" },
+      { round: "準決勝", opponent: "上野学園", scoreFor: 4, scoreAgainst: 1, outcome: "win" },
+      { round: "決勝", opponent: "関東第一", scoreFor: 0, scoreAgainst: 4, outcome: "loss" },
+    ],
+    sources: [
+      {
+        label: "わっぱ飯のイン斬り野球「小山台高校野球班　温故知新　第３５８球目～第３６６球目」",
+        url: "https://maemae-jizai.moe-nifty.com/5589/2022/09/post-3e313a.html",
+        note: "6試合の回戦・対戦相手・スコア",
+      },
+      {
+        label: "全国高等学校野球選手権東東京大会 - Wikipedia",
+        url: wiki("全国高等学校野球選手権東東京大会"),
+        note: "決勝のスコア（出典どうしの突き合わせ）",
+      },
+    ],
+  },
 ];
 
 /** phenomena の slug から勝ち上がりを引く。無ければ undefined。 */

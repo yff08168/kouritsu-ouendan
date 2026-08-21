@@ -1010,6 +1010,140 @@ export const TOURNAMENT_RUNS: TournamentRun[] = [
       },
     ],
   },
+// ==========================================================
+  // 宜野座 2001春・利府 2009春（どちらも21世紀枠でベスト4）
+  //
+  // **甲子園の記録**なので heading は既定（「甲子園での勝ち上がり」）のまま。
+  //
+  // 出典は大会記事の wikitext を直接読んだもの
+  // （data/wikipedia-cache/spring-073.json / spring-081.json）。
+  // **太字が勝者、x 付きがサヨナラ。** 要約モデルに通していない。
+  //
+  // ★検算：どちらも school_championships と一致（3勝1敗・ベスト4）。
+  //
+  // **イニングごとの得点は入れていない。** 大会記事に Linescore があるのは
+  // 決勝だけで、この2校の試合には無い。0を埋めないこと。
+  //
+  // ★宜野座は2回戦から、利府は1回戦から登場している（大会記事の回戦名のまま）。
+  //   2001年は34校（通常32＋21世紀枠2）、2009年は32校。
+  // ==========================================================
+  {
+    phenomenonSlug: "ginoza-2001-spring",
+    schoolSlug: "ginoza",
+    schoolName: "宜野座高校",
+    year: 2001,
+    season: "spring",
+    tournamentName: "第73回選抜高等学校野球大会",
+    result: "ベスト4",
+    games: [
+      {
+        round: "2回戦",
+        date: "3月28日",
+        opponent: "岐阜第一",
+        opponentPrefecture: "岐阜",
+        scoreFor: 7,
+        scoreAgainst: 2,
+        outcome: "win",
+        comment: "21世紀枠での初めての甲子園を、初戦から5点差で勝った。",
+      },
+      {
+        round: "3回戦",
+        date: "4月1日",
+        opponent: "桐光学園",
+        opponentPrefecture: "神奈川",
+        scoreFor: 4,
+        scoreAgainst: 3,
+        outcome: "win",
+      },
+      {
+        round: "準々決勝",
+        date: "4月2日",
+        opponent: "浪速",
+        opponentPrefecture: "大阪",
+        scoreFor: 4,
+        scoreAgainst: 2,
+        outcome: "win",
+        note: "延長11回",
+      },
+      {
+        round: "準決勝",
+        date: "4月3日",
+        opponent: "仙台育英",
+        opponentPrefecture: "宮城",
+        scoreFor: 1,
+        scoreAgainst: 7,
+        outcome: "loss",
+        comment:
+          "この大会の準優勝校となる仙台育英に敗れ、大会を終えた（仙台育英は決勝で常総学院に6対7）。",
+      },
+    ],
+    sources: [
+      {
+        label: "第73回選抜高等学校野球大会 - Wikipedia",
+        url: wiki("第73回選抜高等学校野球大会"),
+        note: "4試合の勝ち上がり（勝ち上がり表の wikitext）",
+      },
+    ],
+  },
+
+  {
+    phenomenonSlug: "rifu-2009-spring",
+    schoolSlug: "rifu",
+    schoolName: "利府高校",
+    year: 2009,
+    season: "spring",
+    tournamentName: "第81回選抜高等学校野球大会",
+    result: "ベスト4",
+    games: [
+      {
+        round: "1回戦",
+        date: "3月27日",
+        opponent: "掛川西",
+        opponentPrefecture: "静岡",
+        scoreFor: 10,
+        scoreAgainst: 4,
+        outcome: "win",
+        comment: "春夏を通じて初めての甲子園で、二桁得点を挙げて初戦を勝った。",
+      },
+      {
+        round: "2回戦",
+        date: "3月29日",
+        opponent: "習志野",
+        opponentPrefecture: "千葉",
+        scoreFor: 2,
+        scoreAgainst: 1,
+        outcome: "win",
+        walkOff: true,
+      },
+      {
+        round: "準々決勝",
+        date: "3月31日",
+        opponent: "早稲田実",
+        opponentPrefecture: "東京",
+        scoreFor: 5,
+        scoreAgainst: 4,
+        outcome: "win",
+      },
+      {
+        round: "準決勝",
+        date: "4月1日",
+        opponent: "花巻東",
+        opponentPrefecture: "岩手",
+        scoreFor: 2,
+        scoreAgainst: 5,
+        outcome: "loss",
+        comment:
+          "この大会の準優勝校となる花巻東に敗れ、大会を終えた（花巻東は決勝で清峰に0対1）。",
+      },
+    ],
+    sources: [
+      {
+        label: "第81回選抜高等学校野球大会 - Wikipedia",
+        url: wiki("第81回選抜高等学校野球大会"),
+        note: "4試合の勝ち上がり（勝ち上がり表の wikitext）",
+      },
+    ],
+  },
 ];
 
 /** phenomena の slug から勝ち上がりを引く。無ければ undefined。 */

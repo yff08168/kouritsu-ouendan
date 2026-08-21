@@ -41,4 +41,7 @@ export const REGIONAL_LOADERS: Record<string, () => Promise<RegionalDistrict>> =
   iwate: () => import("./iwate").then((m) => m.REGIONAL_IWATE),
   oita: () => import("./oita").then((m) => m.REGIONAL_OITA),
   tochigi: () => import("./tochigi").then((m) => m.REGIONAL_TOCHIGI),
+  fukuoka: () => import("./fukuoka").then((m) => m.REGIONAL_FUKUOKA),
+  okinawa: () => import("./okinawa").then((m) => m.REGIONAL_OKINAWA),
+  fukushima: () => import("./fukushima").then((m) => m.REGIONAL_FUKUSHIMA),
 };

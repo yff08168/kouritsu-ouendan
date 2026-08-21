@@ -1,0 +1,1718 @@
+// このファイルは scripts/build-regional-results.mjs が生成する。直接編集しない。
+// 出典: 福島県高等学校野球連盟（https://www.fks-kouyaren.com/）
+
+import type { RegionalDistrict } from "@/lib/regional-results";
+
+export const REGIONAL_FUKUSHIMA: RegionalDistrict = {
+  "slug": "fukushima",
+  "district": "福島",
+  "sourceName": "福島県高等学校野球連盟",
+  "sourceUrl": "https://www.fks-kouyaren.com/",
+  "games": [
+    {
+      "date": "2026-05-24",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "3位決定戦",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "東日大昌平",
+          "score": 9,
+          "won": true,
+          "name": "東日大昌平",
+          "slug": null
+        },
+        {
+          "display": "福島",
+          "score": 1,
+          "won": false,
+          "name": "福島高校",
+          "slug": "fukushima"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "準決勝",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "福島",
+          "score": 2,
+          "won": false,
+          "name": "福島高校",
+          "slug": "fukushima"
+        },
+        {
+          "display": "聖光学院",
+          "score": 4,
+          "won": true,
+          "name": "聖光学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "準々決勝",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "東日大昌平",
+          "score": 11,
+          "won": true,
+          "name": "東日大昌平",
+          "slug": null
+        },
+        {
+          "display": "南会津",
+          "score": 0,
+          "won": false,
+          "name": "南会津高校",
+          "slug": "minamiaizu"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "準々決勝",
+      "venue": "ポニーリーグNARAHASTADIUM",
+      "teams": [
+        {
+          "display": "ふたば未来",
+          "score": 0,
+          "won": false,
+          "name": "ふたば未来学園高校",
+          "slug": "futabamiraigakuen"
+        },
+        {
+          "display": "学法石川",
+          "score": 2,
+          "won": true,
+          "name": "学法石川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "準々決勝",
+      "venue": "ポニーリーグNARAHASTADIUM",
+      "teams": [
+        {
+          "display": "福島",
+          "score": 4,
+          "won": true,
+          "name": "福島高校",
+          "slug": "fukushima"
+        },
+        {
+          "display": "日大東北",
+          "score": 2,
+          "won": false,
+          "name": "日大東北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "2回戦",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "いわき湯本",
+          "score": 4,
+          "won": false,
+          "name": "いわき湯本高校",
+          "slug": "iwakiyumoto"
+        },
+        {
+          "display": "ふたば未来",
+          "score": 11,
+          "won": true,
+          "name": "ふたば未来学園高校",
+          "slug": "futabamiraigakuen"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "2回戦",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "会津北嶺",
+          "score": 6,
+          "won": true,
+          "name": "会津北嶺",
+          "slug": null
+        },
+        {
+          "display": "田村",
+          "score": 0,
+          "won": false,
+          "name": "田村高校",
+          "slug": "tamura"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "2回戦",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "平工",
+          "score": 1,
+          "won": false,
+          "name": "平工業高校",
+          "slug": "tairakogyo"
+        },
+        {
+          "display": "日大東北",
+          "score": 10,
+          "won": true,
+          "name": "日大東北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "2回戦",
+      "venue": "ポニーリーグNARAHASTADIUM",
+      "teams": [
+        {
+          "display": "若松商",
+          "score": 4,
+          "won": false,
+          "name": "若松商業高校",
+          "slug": "wakamatsushogyo"
+        },
+        {
+          "display": "南会津",
+          "score": 6,
+          "won": true,
+          "name": "南会津高校",
+          "slug": "minamiaizu"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "2回戦",
+      "venue": "ポニーリーグNARAHASTADIUM",
+      "teams": [
+        {
+          "display": "聖光学院",
+          "score": 7,
+          "won": true,
+          "name": "聖光学院",
+          "slug": null
+        },
+        {
+          "display": "磐城",
+          "score": 3,
+          "won": false,
+          "name": "磐城高校",
+          "slug": "iwaki"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "2回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "福島",
+          "score": 5,
+          "won": true,
+          "name": "福島高校",
+          "slug": "fukushima"
+        },
+        {
+          "display": "光南",
+          "score": 3,
+          "won": false,
+          "name": "光南高校",
+          "slug": "fukushima-konan"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "1回戦",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "田村",
+          "score": 6,
+          "won": true,
+          "name": "田村高校",
+          "slug": "tamura"
+        },
+        {
+          "display": "白河",
+          "score": 0,
+          "won": false,
+          "name": "白河高校",
+          "slug": "shirakawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "1回戦",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "平工",
+          "score": 4,
+          "won": true,
+          "name": "平工業高校",
+          "slug": "tairakogyo"
+        },
+        {
+          "display": "二本松実",
+          "score": 1,
+          "won": false,
+          "name": "二本松実業高校",
+          "slug": "nihonmatsujitsugyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "1回戦",
+      "venue": "ポニーリーグNARAHASTADIUM",
+      "teams": [
+        {
+          "display": "福島商",
+          "score": 1,
+          "won": false,
+          "name": "福島商業高校",
+          "slug": "fukushima-fukushimashogyo"
+        },
+        {
+          "display": "磐城",
+          "score": 4,
+          "won": true,
+          "name": "磐城高校",
+          "slug": "iwaki"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "1回戦",
+      "venue": "ポニーリーグNARAHASTADIUM",
+      "teams": [
+        {
+          "display": "聖光学院",
+          "score": 13,
+          "won": true,
+          "name": "聖光学院",
+          "slug": null
+        },
+        {
+          "display": "勿来工",
+          "score": 0,
+          "won": false,
+          "name": "勿来工業高校",
+          "slug": "nakosokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "1回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "福島",
+          "score": 7,
+          "won": true,
+          "name": "福島高校",
+          "slug": "fukushima"
+        },
+        {
+          "display": "福島成蹊",
+          "score": 0,
+          "won": false,
+          "name": "福島成蹊",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "1回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "会津工",
+          "score": 0,
+          "won": false,
+          "name": "会津工業高校",
+          "slug": "aizukogyo"
+        },
+        {
+          "display": "光南",
+          "score": 7,
+          "won": true,
+          "name": "光南高校",
+          "slug": "fukushima-konan"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "1回戦",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "学法福島",
+          "score": 8,
+          "won": true,
+          "name": "学法福島",
+          "slug": null
+        },
+        {
+          "display": "清陵情報",
+          "score": 0,
+          "won": false,
+          "name": "清陵情報高校",
+          "slug": "seiryojoho"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "1回戦",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "いわき湯本",
+          "score": 5,
+          "won": true,
+          "name": "いわき湯本高校",
+          "slug": "iwakiyumoto"
+        },
+        {
+          "display": "安積",
+          "score": 3,
+          "won": false,
+          "name": "安積高校",
+          "slug": "asaka"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "1回戦",
+      "venue": "ポニーリーグNARAHASTADIUM",
+      "teams": [
+        {
+          "display": "若松商",
+          "score": 4,
+          "won": true,
+          "name": "若松商業高校",
+          "slug": "wakamatsushogyo"
+        },
+        {
+          "display": "会津",
+          "score": 3,
+          "won": false,
+          "name": "会津高校",
+          "slug": "aizu"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "1回戦",
+      "venue": "ポニーリーグNARAHASTADIUM",
+      "teams": [
+        {
+          "display": "小高産業技術",
+          "score": 3,
+          "won": false,
+          "name": "小高産業技術高校",
+          "slug": "odakasangyogijutsu"
+        },
+        {
+          "display": "南会津",
+          "score": 5,
+          "won": true,
+          "name": "南会津高校",
+          "slug": "minamiaizu"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "season": "spring",
+      "tournament": "第78回春季東北地区高等学校野球福島県大会",
+      "round": "1回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "須賀川創英館",
+          "score": 0,
+          "won": false,
+          "name": "須賀川創英館高校",
+          "slug": "sukagawasoeikan"
+        },
+        {
+          "display": "学法石川",
+          "score": 24,
+          "won": true,
+          "name": "学法石川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "準々決勝",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "福島商",
+          "score": 0,
+          "won": false,
+          "name": "福島商業高校",
+          "slug": "fukushima-fukushimashogyo"
+        },
+        {
+          "display": "聖光学院",
+          "score": 10,
+          "won": true,
+          "name": "聖光学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "準々決勝",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "清陵情報",
+          "score": 0,
+          "won": false,
+          "name": "清陵情報高校",
+          "slug": "seiryojoho"
+        },
+        {
+          "display": "東日大昌平",
+          "score": 4,
+          "won": true,
+          "name": "東日大昌平",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "準々決勝",
+      "venue": "あづま球場",
+      "teams": [
+        {
+          "display": "尚志",
+          "score": 14,
+          "won": true,
+          "name": "尚志",
+          "slug": null
+        },
+        {
+          "display": "安積黎明",
+          "score": 7,
+          "won": false,
+          "name": "安積黎明高校",
+          "slug": "asakareimei"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "3回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "東日大昌平",
+          "score": 10,
+          "won": true,
+          "name": "東日大昌平",
+          "slug": null
+        },
+        {
+          "display": "勿来工",
+          "score": 0,
+          "won": false,
+          "name": "勿来工業高校",
+          "slug": "nakosokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "3回戦",
+      "venue": "あづま球場",
+      "teams": [
+        {
+          "display": "学法石川",
+          "score": 5,
+          "won": true,
+          "name": "学法石川",
+          "slug": null
+        },
+        {
+          "display": "いわき光洋",
+          "score": 0,
+          "won": false,
+          "name": "いわき光洋高校",
+          "slug": "iwakikoyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "3回戦",
+      "venue": "ヨークいわきスタジアム",
+      "teams": [
+        {
+          "display": "福島成蹊",
+          "score": 0,
+          "won": false,
+          "name": "福島成蹊",
+          "slug": null
+        },
+        {
+          "display": "福島商",
+          "score": 1,
+          "won": true,
+          "name": "福島商業高校",
+          "slug": "fukushima-fukushimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "3回戦",
+      "venue": "ヨークいわきスタジアム",
+      "teams": [
+        {
+          "display": "清陵情報",
+          "score": 4,
+          "won": true,
+          "name": "清陵情報高校",
+          "slug": "seiryojoho"
+        },
+        {
+          "display": "会津工",
+          "score": 1,
+          "won": false,
+          "name": "会津工業高校",
+          "slug": "aizukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "3回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "会津北嶺",
+          "score": 9,
+          "won": true,
+          "name": "会津北嶺",
+          "slug": null
+        },
+        {
+          "display": "福島東",
+          "score": 2,
+          "won": false,
+          "name": "福島東高校",
+          "slug": "fukushimahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "3回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "安積黎明",
+          "score": 14,
+          "won": true,
+          "name": "安積黎明高校",
+          "slug": "asakareimei"
+        },
+        {
+          "display": "郡山商",
+          "score": 5,
+          "won": false,
+          "name": "郡山商業高校",
+          "slug": "koriyamashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "2回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "福島成蹊",
+          "score": 5,
+          "won": true,
+          "name": "福島成蹊",
+          "slug": null
+        },
+        {
+          "display": "田村",
+          "score": 2,
+          "won": false,
+          "name": "田村高校",
+          "slug": "tamura"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "2回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "尚志",
+          "score": 4,
+          "won": true,
+          "name": "尚志",
+          "slug": null
+        },
+        {
+          "display": "白河",
+          "score": 3,
+          "won": false,
+          "name": "白河高校",
+          "slug": "shirakawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "2回戦",
+      "venue": "あづま球場",
+      "teams": [
+        {
+          "display": "いわき総合",
+          "score": 1,
+          "won": false,
+          "name": "いわき総合高校",
+          "slug": "iwakisogo"
+        },
+        {
+          "display": "勿来工",
+          "score": 8,
+          "won": true,
+          "name": "勿来工業高校",
+          "slug": "nakosokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "2回戦",
+      "venue": "あづま球場",
+      "teams": [
+        {
+          "display": "磐城桜が丘",
+          "score": 0,
+          "won": false,
+          "name": "磐城桜が丘高校",
+          "slug": "iwakisakuragaoka"
+        },
+        {
+          "display": "福島東",
+          "score": 10,
+          "won": true,
+          "name": "福島東高校",
+          "slug": "fukushimahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "2回戦",
+      "venue": "ヨークいわきスタジアム",
+      "teams": [
+        {
+          "display": "いわき光洋",
+          "score": 10,
+          "won": true,
+          "name": "いわき光洋高校",
+          "slug": "iwakikoyo"
+        },
+        {
+          "display": "原町",
+          "score": 3,
+          "won": false,
+          "name": "原町高校",
+          "slug": "haramachi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "2回戦",
+      "venue": "ヨークいわきスタジアム",
+      "teams": [
+        {
+          "display": "安積黎明",
+          "score": 4,
+          "won": true,
+          "name": "安積黎明高校",
+          "slug": "asakareimei"
+        },
+        {
+          "display": "小高産業技術",
+          "score": 0,
+          "won": false,
+          "name": "小高産業技術高校",
+          "slug": "odakasangyogijutsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "2回戦",
+      "venue": "あづま球場",
+      "teams": [
+        {
+          "display": "聖光学院",
+          "score": 1,
+          "won": true,
+          "name": "聖光学院",
+          "slug": null
+        },
+        {
+          "display": "光南",
+          "score": 0,
+          "won": false,
+          "name": "光南高校",
+          "slug": "fukushima-konan"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "2回戦",
+      "venue": "あづま球場",
+      "teams": [
+        {
+          "display": "福島",
+          "score": 5,
+          "won": false,
+          "name": "福島高校",
+          "slug": "fukushima"
+        },
+        {
+          "display": "会津工",
+          "score": 8,
+          "won": true,
+          "name": "会津工業高校",
+          "slug": "aizukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "2回戦",
+      "venue": "ヨークいわきスタジアム",
+      "teams": [
+        {
+          "display": "東日大昌平",
+          "score": 11,
+          "won": true,
+          "name": "東日大昌平",
+          "slug": null
+        },
+        {
+          "display": "只見",
+          "score": 0,
+          "won": false,
+          "name": "只見高校",
+          "slug": "tadami"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "2回戦",
+      "venue": "ヨークいわきスタジアム",
+      "teams": [
+        {
+          "display": "郡山商",
+          "score": 6,
+          "won": true,
+          "name": "郡山商業高校",
+          "slug": "koriyamashogyo"
+        },
+        {
+          "display": "安達",
+          "score": 0,
+          "won": false,
+          "name": "安達高校",
+          "slug": "adachi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "2回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "須賀川創英館",
+          "score": 0,
+          "won": false,
+          "name": "須賀川創英館高校",
+          "slug": "sukagawasoeikan"
+        },
+        {
+          "display": "学法石川",
+          "score": 6,
+          "won": true,
+          "name": "学法石川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "2回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "清陵情報",
+          "score": 5,
+          "won": true,
+          "name": "清陵情報高校",
+          "slug": "seiryojoho"
+        },
+        {
+          "display": "伊達・本宮・福島北",
+          "score": 4,
+          "won": false,
+          "name": "伊達・本宮・福島北",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "2回戦",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "いわき湯本",
+          "score": 5,
+          "won": false,
+          "name": "いわき湯本高校",
+          "slug": "iwakiyumoto"
+        },
+        {
+          "display": "会津北嶺",
+          "score": 6,
+          "won": true,
+          "name": "会津北嶺",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "2回戦",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "白河実",
+          "score": 2,
+          "won": false,
+          "name": "白河実業高校",
+          "slug": "shirakawajitsugyo"
+        },
+        {
+          "display": "福島商",
+          "score": 3,
+          "won": true,
+          "name": "福島商業高校",
+          "slug": "fukushima-fukushimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "須賀川桐陽",
+          "score": 9,
+          "won": false,
+          "name": "須賀川桐陽高校",
+          "slug": "sukagawatoyo"
+        },
+        {
+          "display": "磐城桜が丘",
+          "score": 10,
+          "won": true,
+          "name": "磐城桜が丘高校",
+          "slug": "iwakisakuragaoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "尚志",
+          "score": 9,
+          "won": true,
+          "name": "尚志",
+          "slug": null
+        },
+        {
+          "display": "福島工",
+          "score": 1,
+          "won": false,
+          "name": "福島工業高校",
+          "slug": "fukushimakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "あづま球場",
+      "teams": [
+        {
+          "display": "いわき総合",
+          "score": 3,
+          "won": true,
+          "name": "いわき総合高校",
+          "slug": "iwakisogo"
+        },
+        {
+          "display": "郡山東",
+          "score": 2,
+          "won": false,
+          "name": "郡山東高校",
+          "slug": "koriyamahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "ヨークいわきスタジアム",
+      "teams": [
+        {
+          "display": "勿来工",
+          "score": 10,
+          "won": true,
+          "name": "勿来工業高校",
+          "slug": "nakosokogyo"
+        },
+        {
+          "display": "会津農林",
+          "score": 0,
+          "won": false,
+          "name": "会津農林高校",
+          "slug": "aizunorin"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "ヨークいわきスタジアム",
+      "teams": [
+        {
+          "display": "平工",
+          "score": 2,
+          "won": false,
+          "name": "平工業高校",
+          "slug": "tairakogyo"
+        },
+        {
+          "display": "小高産業技術",
+          "score": 3,
+          "won": true,
+          "name": "小高産業技術高校",
+          "slug": "odakasangyogijutsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "福島西",
+          "score": 1,
+          "won": false,
+          "name": "福島西高校",
+          "slug": "fukushimanishi"
+        },
+        {
+          "display": "白河",
+          "score": 2,
+          "won": true,
+          "name": "白河高校",
+          "slug": "shirakawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "橘",
+          "score": 0,
+          "won": false,
+          "name": "橘高校",
+          "slug": "tachibana"
+        },
+        {
+          "display": "安積黎明",
+          "score": 4,
+          "won": true,
+          "name": "安積黎明高校",
+          "slug": "asakareimei"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "会津学鳳",
+          "score": 0,
+          "won": false,
+          "name": "会津学鳳高校",
+          "slug": "aizugakuho"
+        },
+        {
+          "display": "日大東北",
+          "score": 9,
+          "won": true,
+          "name": "日大東北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 5,
+          "won": false,
+          "name": "郡山高校",
+          "slug": "koriyama"
+        },
+        {
+          "display": "田村",
+          "score": 6,
+          "won": true,
+          "name": "田村高校",
+          "slug": "tamura"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "あづま球場",
+      "teams": [
+        {
+          "display": "福島",
+          "score": 9,
+          "won": true,
+          "name": "福島高校",
+          "slug": "fukushima"
+        },
+        {
+          "display": "郡山北工",
+          "score": 1,
+          "won": false,
+          "name": "郡山北工業高校",
+          "slug": "koriyamakitakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "あづま球場",
+      "teams": [
+        {
+          "display": "福島明成",
+          "score": 7,
+          "won": false,
+          "name": "福島明成高校",
+          "slug": "fukushimameisei"
+        },
+        {
+          "display": "安達",
+          "score": 10,
+          "won": true,
+          "name": "安達高校",
+          "slug": "adachi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "ヨークいわきスタジアム",
+      "teams": [
+        {
+          "display": "東日大昌平",
+          "score": 4,
+          "won": true,
+          "name": "東日大昌平",
+          "slug": null
+        },
+        {
+          "display": "安積",
+          "score": 0,
+          "won": false,
+          "name": "安積高校",
+          "slug": "asaka"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "ヨークいわきスタジアム",
+      "teams": [
+        {
+          "display": "ふたば未来",
+          "score": 3,
+          "won": false,
+          "name": "ふたば未来学園高校",
+          "slug": "futabamiraigakuen"
+        },
+        {
+          "display": "郡山商",
+          "score": 6,
+          "won": true,
+          "name": "郡山商業高校",
+          "slug": "koriyamashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "伊達・本宮・福島北",
+          "score": 4,
+          "won": true,
+          "name": "伊達・本宮・福島北",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "小名浜海星",
+          "score": 0,
+          "won": false,
+          "name": "小名浜海星高校",
+          "slug": "onahamakaisei"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "喜多方",
+          "score": 1,
+          "won": false,
+          "name": "喜多方高校",
+          "slug": "kitakata"
+        },
+        {
+          "display": "福島東",
+          "score": 5,
+          "won": true,
+          "name": "福島東高校",
+          "slug": "fukushimahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "会津北嶺",
+          "score": 8,
+          "won": true,
+          "name": "会津北嶺",
+          "slug": null
+        },
+        {
+          "display": "磐城",
+          "score": 0,
+          "won": false,
+          "name": "磐城高校",
+          "slug": "iwaki"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "南会津",
+          "score": 2,
+          "won": false,
+          "name": "南会津高校",
+          "slug": "minamiaizu"
+        },
+        {
+          "display": "福島商",
+          "score": 9,
+          "won": true,
+          "name": "福島商業高校",
+          "slug": "fukushima-fukushimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "磐農商情",
+          "score": 1,
+          "won": false,
+          "name": "磐農商情",
+          "slug": null
+        },
+        {
+          "display": "会津工",
+          "score": 15,
+          "won": true,
+          "name": "会津工業高校",
+          "slug": "aizukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "帝京安積",
+          "score": 7,
+          "won": true,
+          "name": "帝京安積",
+          "slug": null
+        },
+        {
+          "display": "会津",
+          "score": 3,
+          "won": false,
+          "name": "会津高校",
+          "slug": "aizu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "岩瀬農",
+          "score": 7,
+          "won": false,
+          "name": "岩瀬農業高校",
+          "slug": "iwasenogyo"
+        },
+        {
+          "display": "原町",
+          "score": 8,
+          "won": true,
+          "name": "原町高校",
+          "slug": "haramachi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "あづま球場",
+      "teams": [
+        {
+          "display": "会津ザベリオ",
+          "score": 0,
+          "won": false,
+          "name": "会津ザベリオ",
+          "slug": null
+        },
+        {
+          "display": "白河実",
+          "score": 10,
+          "won": true,
+          "name": "白河実業高校",
+          "slug": "shirakawajitsugyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "あづま球場",
+      "teams": [
+        {
+          "display": "学法福島",
+          "score": 10,
+          "won": true,
+          "name": "学法福島",
+          "slug": null
+        },
+        {
+          "display": "喜多方桐桜",
+          "score": 0,
+          "won": false,
+          "name": "喜多方桐桜高校",
+          "slug": "kitakatato"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "ヨークいわきスタジアム",
+      "teams": [
+        {
+          "display": "いわき光洋",
+          "score": 12,
+          "won": true,
+          "name": "いわき光洋高校",
+          "slug": "iwakikoyo"
+        },
+        {
+          "display": "葵",
+          "score": 1,
+          "won": false,
+          "name": "葵高校",
+          "slug": "aoi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "ヨークいわきスタジアム",
+      "teams": [
+        {
+          "display": "いわき湯本",
+          "score": 10,
+          "won": true,
+          "name": "いわき湯本高校",
+          "slug": "iwakiyumoto"
+        },
+        {
+          "display": "修明",
+          "score": 1,
+          "won": false,
+          "name": "修明高校",
+          "slug": "shumei"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "光南",
+          "score": 6,
+          "won": true,
+          "name": "光南高校",
+          "slug": "fukushima-konan"
+        },
+        {
+          "display": "二本松実",
+          "score": 0,
+          "won": false,
+          "name": "二本松実業高校",
+          "slug": "nihonmatsujitsugyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "清陵情報",
+          "score": 8,
+          "won": true,
+          "name": "清陵情報高校",
+          "slug": "seiryojoho"
+        },
+        {
+          "display": "白河旭",
+          "score": 1,
+          "won": false,
+          "name": "白河旭高校",
+          "slug": "shirakawaasahi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "只見",
+          "score": 18,
+          "won": true,
+          "name": "只見高校",
+          "slug": "tadami"
+        },
+        {
+          "display": "相馬農",
+          "score": 0,
+          "won": false,
+          "name": "相馬農業高校",
+          "slug": "somanogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "あいづ球場",
+      "teams": [
+        {
+          "display": "須賀川創英館",
+          "score": 4,
+          "won": true,
+          "name": "須賀川創英館高校",
+          "slug": "sukagawasoeikan"
+        },
+        {
+          "display": "若松商",
+          "score": 3,
+          "won": false,
+          "name": "若松商業高校",
+          "slug": "wakamatsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権福島大会",
+      "round": "1回戦",
+      "venue": "あづま球場",
+      "teams": [
+        {
+          "display": "福島高専",
+          "score": 2,
+          "won": false,
+          "name": "福島工業高専",
+          "slug": "fukushimakogyo-kosen"
+        },
+        {
+          "display": "相馬連合",
+          "score": 19,
+          "won": true,
+          "name": "相馬連合",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    }
+  ]
+};

@@ -268,9 +268,27 @@ export function latestSeasonGames(
   /** 日付が無いときの新しい順。春 → 夏 → 秋（同じ年の中での順） */
   const SEASON_ORDER: Record<RegionalSeason, number> = { spring: 0, summer: 1, autumn: 2 };
   const dated = district.games.filter((g) => g.date);
-  const newestSeason = dated.length
-    ? [...dated].sort((a, b) => a.date!.localeCompare(b.date!)).at(-1)!.season
-    : district.games.reduce((a, b) => (SEASON_ORDER[b.season] > SEASON_ORDER[a.season] ? b : a)).season;
+  const seasons = [...new Set(district.games.map((g) => g.season))];
+  const byOrder = seasons.reduce((a, b) => (SEASON_ORDER[b] > SEASON_ORDER[a] ? b : a));
+  /*
+    ★★**日付のある季節と無い季節が混ざる県がある**（2026-08-21。大分）。
+    大分は**夏のやぐら表に日にちが1つも書かれていない**のに、
+    春の紙には書いてある。日付だけで決めると、**7月に終わった夏が
+    5月に終わった春に負けて、県のページに春が出る。**
+
+    ★**日付の無い季節が、日付で選ばれた季節より「あと」にあるなら、
+    どちらが新しいかは分からない。** そのときは季節の順で決める。
+    ★**逆（日付の無い季節のほうが前）なら迷わない**ので、今までどおり日付で決める
+    —— 福井は春だけ日付が無く、夏（今年）と秋（前年）は日付があるので、
+    この分岐に入らず**夏のまま**（2026-08-21 に全県で確認した）。
+  */
+  const undatedSeasons = seasons.filter((s) => !dated.some((g) => g.season === s));
+  const newestSeason = (() => {
+    if (!dated.length) return byOrder;
+    const byDate = [...dated].sort((a, b) => a.date!.localeCompare(b.date!)).at(-1)!.season;
+    const ambiguous = undatedSeasons.some((s) => SEASON_ORDER[s] > SEASON_ORDER[byDate]);
+    return ambiguous ? byOrder : byDate;
+  })();
 
   const games = district.games
     .filter((g) => g.season === newestSeason)

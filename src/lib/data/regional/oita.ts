@@ -10,6 +10,144 @@ export const REGIONAL_OITA: RegionalDistrict = {
   "sourceUrl": "https://www.oita-kouyaren.com/",
   "games": [
     {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "第149回大分県高等学校野球選手権大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "柳ヶ浦",
+          "score": 5,
+          "won": false,
+          "name": "柳ヶ浦",
+          "slug": null
+        },
+        {
+          "display": "大分商業",
+          "score": 6,
+          "won": true,
+          "name": "大分商業高校",
+          "slug": "oitashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "第149回大分県高等学校野球選手権大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "楊志館",
+          "score": 10,
+          "won": true,
+          "name": "楊志館",
+          "slug": null
+        },
+        {
+          "display": "佐伯鶴城",
+          "score": 0,
+          "won": false,
+          "name": "佐伯鶴城高校",
+          "slug": "saikikakujo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "第149回大分県高等学校野球選手権大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大分舞鶴",
+          "score": 6,
+          "won": true,
+          "name": "大分舞鶴高校",
+          "slug": "oitamaizuru"
+        },
+        {
+          "display": "大分上野丘",
+          "score": 4,
+          "won": false,
+          "name": "大分上野丘高校",
+          "slug": "oitauenogaoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "season": "spring",
+      "tournament": "第149回大分県高等学校野球選手権大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "明豊",
+          "score": 2,
+          "won": false,
+          "name": "明豊",
+          "slug": null
+        },
+        {
+          "display": "大分商業",
+          "score": 4,
+          "won": true,
+          "name": "大分商業高校",
+          "slug": "oitashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "season": "spring",
+      "tournament": "第149回大分県高等学校野球選手権大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "楊志館",
+          "score": 8,
+          "won": true,
+          "name": "楊志館",
+          "slug": null
+        },
+        {
+          "display": "大分舞鶴",
+          "score": 1,
+          "won": false,
+          "name": "大分舞鶴高校",
+          "slug": "oitamaizuru"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-24",
+      "season": "spring",
+      "tournament": "第149回大分県高等学校野球選手権大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大分商業",
+          "score": 9,
+          "won": true,
+          "name": "大分商業高校",
+          "slug": "oitashogyo"
+        },
+        {
+          "display": "楊志館",
+          "score": 0,
+          "won": false,
+          "name": "楊志館",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": null,
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権大分大会",

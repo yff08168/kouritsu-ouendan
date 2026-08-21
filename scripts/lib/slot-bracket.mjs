@@ -146,6 +146,98 @@ export function stripVerticalInningMarks(page, { dx = 5, dy = 16 } = {}) {
 }
 
 /**
+ * ★★**日付が `9/` と `26` の2断片に割れている紙がある**
+ * （2026-08-21。山口の秋季の県決勝大会）。
+ *
+ * ★**放っておくと日にちがスコアとして読まれる。**
+ * 山口の県決勝大会は準々決勝の日付が `9/26` `9/25` の4件で、
+ * 割れた `26` `26` `25` `25` が**ちょうどスロットの境目に乗る**ため、
+ * **1回戦の帯としてスコアの帯より先に選ばれた**（「数字4個」で2試合と読まれ、
+ * 本物の8個の帯が「必要6個」に合わず組み立てが止まった）。
+ * ★**滋賀・沖縄と同じ「組めてしまう／組めなくなる」たぐいの壊れ方。**
+ *
+ * ★**つなぐ根拠は座標だけにする。** `9/` の右端（x + 幅）と次の断片の左端が
+ * 接していること（実測で 0.1 ポイント）を要求し、**離れていればつながない。**
+ *
+ * @param maxGap 接していると認める隙間
+ */
+export function joinSplitDates(page, { maxGap = 2 } = {}) {
+  const lines = page.lines.map((line) => {
+    const items = [];
+    for (const it of line.items) {
+      const prev = items.at(-1);
+      const ok =
+        prev &&
+        /^\d{1,2}\/$/.test(prev.text.trim()) &&
+        /^\d{1,2}$/.test(it.text.trim()) &&
+        prev.width > 0 &&
+        it.x - (prev.x + prev.width) <= maxGap;
+      if (ok) {
+        items[items.length - 1] = {
+          ...prev,
+          text: prev.text.trim() + it.text.trim(),
+          width: prev.width + (it.width ?? 0),
+        };
+      } else {
+        items.push({ ...it });
+      }
+    }
+    return { ...line, items, text: items.map((i) => i.text).join("	") };
+  });
+  return { page: page.page, lines };
+}
+
+/**
+ * ★★**縦書きの注記（`５回コールド` `延長１０回`）を、列ごと落とす**
+ * （2026-08-21。山口の秋季のため）。
+ *
+ * `stripVerticalInningMarks` は「`回` の真上にある数字」だけを消すもので、
+ * **注記そのもの（回・コ・ー・ル・ド…）は紙に残る。**
+ * スロット番号の行より**下**まで伸びた注記は、そのまま**校名の文字として読まれる。**
+ * 山口の秋季では `延長１０回` の `回` がスロット48に入り、
+ * **校名が `宇部` ではなく `回宇部`** になっていた（3試合ぶん）。
+ *
+ * ★★**1文字ずつ消さない。列をつないで注記の形になったときだけ、その列を丸ごと落とす。**
+ * 消してよいと判断する根拠は「その列を上から読むと注記の文になる」ことだけで、
+ * **文字の種類では決めない**（千葉で「宣」を巻き込んだのと同じ轍を踏まないため）。
+ *
+ * @param dx 同じ列とみなす横のずれ
+ * @param patterns 列をつないだ文字列がこれに当たれば注記とみなす
+ */
+export function stripVerticalNotes(
+  page,
+  { dx = 3, patterns = [/^[0-9０-９]{1,2}回コールド$/, /^延長[0-9０-９]{1,2}回(ＴＢ|TB)?$/] } = {},
+) {
+  // 1文字の断片だけを列にまとめる（校名も1文字ずつなので、当たるかは下の形で決める）
+  const cells = [];
+  for (const l of page.lines) {
+    for (const it of l.items) {
+      const t = it.text.trim();
+      if ([...t].length === 1) cells.push({ x: it.x, y: l.y, t, it });
+    }
+  }
+  const cols = [];
+  for (const c of [...cells].sort((a, b) => a.x - b.x)) {
+    const last = cols.at(-1);
+    if (last && Math.abs(last.x - c.x) <= dx) last.cs.push(c);
+    else cols.push({ x: c.x, cs: [c] });
+  }
+  const drop = new Set();
+  for (const col of cols) {
+    if (col.cs.length < 3) continue;
+    const text = [...col.cs].sort((a, b) => b.y - a.y).map((c) => c.t).join("");
+    if (!patterns.some((re) => re.test(text))) continue;
+    for (const c of col.cs) drop.add(c.it);
+  }
+  if (!drop.size) return page;
+  const lines = page.lines.map((line) => {
+    const items = line.items.filter((it) => !drop.has(it));
+    return { ...line, items, text: items.map((i) => i.text).join("	") };
+  });
+  return { page: page.page, lines };
+}
+
+/**
  * ★**先頭の記号が校名と1つの断片になっているのを割る**（2026-08-17。山口の春季のため）。
  *
  * 山口の春の表は、**スロット1だけ**シード記号と校名がくっついて
@@ -386,6 +478,36 @@ export function assembleSlotBracket(
       （静岡の春は1行も割れていないので 6 で足りる）。
     */
     roundBandGap,
+    /*
+      ★★**1枚から複数の代表が出るブロック表**（2026-08-21。山口の秋季の地区予選）。
+      既定の `1` が今までどおり（優勝校1つに収束する紙）。
+
+      山口の秋季は**4会場のブロック表が1枚に横並び**で、**1枚から4校が勝ち上がる。**
+      枝は最後まで1つに合流しないので、既定のままだと
+      **最後の段で帯が見つからず `null`** になる（実際にそうなっていた）。
+
+      ★★**「ブロックの切れ目を座標で探す」ことはしない。**
+      `assembleSlotBracket` は各段で**隣どうしを組む**ので、
+      **どのブロックも段数が同じなら、切れ目を知らなくても組は正しくなる**
+      （各段でブロックごとのノード数が偶数になり、境目をまたぐ組ができない）。
+      切れ目を推測しないぶん、兵庫（①〜⑯の見出しで切った）より安全。
+
+      ★★**そのかわり「段数が同じ」を検算で必ず担保すること。**
+      段数が違うブロックが混ざると**境目をまたいで組んでしまう**。
+      呼ぶ側は返り値の `champions` を、
+      **紙の別の場所に書いてある代表校の一覧と突き合わせること**
+      （山口はブロック表の上に代表校名が刷ってあり、次の紙＝県決勝大会の
+      出場校とも一致する）。**一致しなければその大会を1試合も出さない。**
+    */
+    winners = 1,
+    /*
+      ★**1つのスロットの校名が2列以上に組まれているときの列の向き**
+      （2026-08-21。山口の秋季）。既定の `"asc"` が今までどおり（左から）。
+      **縦書きの紙は右から左へ読む**ので、縦書き（スロットが横一列）の県で
+      長い連合チーム名が2列に割れている紙では `"desc"` を渡すこと。
+      ★**列が1つのスロットでは効かない**ので、既存の県の生成物は変わらない。
+    */
+    nameColumns = "asc",
   } = {},
 ) {
   /*
@@ -508,7 +630,20 @@ export function assembleSlotBracket(
         if (last && Math.abs(last.x - c.x) <= LINE) last.cs.push(c);
         else lines.push({ x: c.x, cs: [c] });
       }
-      return [n, lines.map((l) => l.cs.sort((a, b) => dir * (a.y - b.y)).map((c) => c.t).join("")).join("")];
+      /*
+        ★★**縦書きで2列に組まれた校名は「右の列から」読む**（2026-08-21。山口の秋季）。
+        日本語の縦書きは右から左へ進む。既定は今までどおり左からだが、
+        **1つのスロットに列が2つ以上ある紙では、向きを間違えると校名が壊れる。**
+
+          x=476「南陽・下関中等教育」／ x=490「高森・柳井商工・新」
+
+        左から読むと `南陽・下関中等教育高森・柳井商工・新`（末尾の「新」が浮く）。
+        **右から読むと `高森・柳井商工・新南陽・下関中等教育`** ＝
+        高森／柳井商工／新南陽／下関中等教育 の4校の連合チームで、意味が通る。
+        ★**列が1つしかないスロットでは向きは効かない**ので、既存の県は変わらない。
+      */
+      const ordered = nameColumns === "desc" ? [...lines].reverse() : lines;
+      return [n, ordered.map((l) => l.cs.sort((a, b) => dir * (a.y - b.y)).map((c) => c.t).join("")).join("")];
     }),
   );
   if ([...nameOf.values()].some((v) => !v)) {
@@ -873,7 +1008,7 @@ export function assembleSlotBracket(
   let lastY = r1row.y;
   /** `finalInCenter` のとき、いちばん深い帯の中央にあった「決勝ぶんの得点」 */
   let center = null;
-  for (let r = 1; nodes.length > 1; r++) {
+  for (let r = 1; nodes.length > winners; r++) {
     const mids = [];
     /** ★`hitSpan` 用。その試合が結ぶ2本の線のあいだ（＋余裕1スロット） */
     const spans = [];
@@ -1118,5 +1253,18 @@ export function assembleSlotBracket(
     if (g.date) byDate.set(g.date, (byDate.get(g.date) ?? 0) + 1);
     if (g.venue) byVenue.set(g.venue, (byVenue.get(g.venue) ?? 0) + 1);
   }
-  return { games, champion: nodes[0]?.team ?? null, teams: N, byDate, byVenue, combined, centerScore: center };
+  /*
+    ★**`champions` は勝ち残った枝の代表（左から順）。** `winners: 1` なら1件で、
+    `champion` と同じものが入る（既存の県の返り値は変わらない）。
+  */
+  return {
+    games,
+    champion: nodes[0]?.team ?? null,
+    champions: nodes.map((n) => n.team),
+    teams: N,
+    byDate,
+    byVenue,
+    combined,
+    centerScore: center,
+  };
 }

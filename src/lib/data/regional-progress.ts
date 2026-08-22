@@ -5,7 +5,7 @@ import type { RegionalProgressBoard } from "@/lib/regional-results";
 
 export const REGIONAL_PROGRESS: RegionalProgressBoard = {
   "season": "autumn",
-  "latestDate": "2026-08-21",
+  "latestDate": "2026-08-22",
   "districts": [
     {
       "slug": "nagano",
@@ -155,10 +155,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
-      "games": 51,
-      "publicGames": 45,
+      "games": 52,
+      "publicGames": 46,
       "round": "代表決定戦",
-      "latestDate": "2026-08-21",
+      "latestDate": "2026-08-22",
       "champion": null
     },
     {
@@ -194,7 +194,11 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "oita",
       "district": "大分",
-      "state": "pending"
+      "state": "scheduled",
+      "season": "autumn",
+      "tournament": "第150回大分県高等学校野球選手権記念大会",
+      "opensOn": "2026-08-29",
+      "games": 4
     },
     {
       "slug": "tochigi",

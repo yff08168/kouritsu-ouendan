@@ -4922,6 +4922,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
           "slug": null
         }
       ]
+    },
+    {
+      "date": "2026-08-22",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "venue": "茨城トヨタスポーツパークうしく（牛久運動公園）野球場",
+      "teams": [
+        {
+          "display": "竜ヶ崎一",
+          "score": 6,
+          "won": false,
+          "name": "竜ヶ崎第一高校",
+          "slug": "ryugasakidaiichi"
+        },
+        {
+          "display": "霞ヶ浦",
+          "score": 7,
+          "won": true,
+          "name": "霞ヶ浦",
+          "slug": null
+        }
+      ]
     }
   ]
 };

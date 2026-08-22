@@ -1091,5 +1091,83 @@ export const REGIONAL_OITA: RegionalDistrict = {
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-08-29",
+      "season": "autumn",
+      "tournament": "第150回大分県高等学校野球選手権記念大会",
+      "round": "1回戦",
+      "venue": "佐伯",
+      "teams": [
+        {
+          "display": "大分商業",
+          "name": "大分商業高校",
+          "slug": "oitashogyo"
+        },
+        {
+          "display": "大分",
+          "name": "大分",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-29",
+      "season": "autumn",
+      "tournament": "第150回大分県高等学校野球選手権記念大会",
+      "round": "1回戦",
+      "venue": "佐伯",
+      "teams": [
+        {
+          "display": "楊志館",
+          "name": "楊志館",
+          "slug": null
+        },
+        {
+          "display": "佐伯鶴城",
+          "name": "佐伯鶴城高校",
+          "slug": "saikikakujo"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第150回大分県高等学校野球選手権記念大会",
+      "round": "1回戦",
+      "venue": "佐伯",
+      "teams": [
+        {
+          "display": "鶴崎工業",
+          "name": "鶴崎工業高校",
+          "slug": "tsurusakikogyo"
+        },
+        {
+          "display": "柳ヶ浦",
+          "name": "柳ヶ浦",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第150回大分県高等学校野球選手権記念大会",
+      "round": "1回戦",
+      "venue": "佐伯",
+      "teams": [
+        {
+          "display": "宇佐",
+          "name": "宇佐高校",
+          "slug": "usa"
+        },
+        {
+          "display": "明豊",
+          "name": "明豊",
+          "slug": null
+        }
+      ]
+    }
   ]
 };

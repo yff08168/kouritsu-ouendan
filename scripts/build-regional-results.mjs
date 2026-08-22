@@ -8691,6 +8691,184 @@ const oita = {
    * **県北・久大支部の1枚だけ**で、他の支部の紙が見つからない。
    * **一部だけ出すと「その支部しか試合が無かった」ように見える**ので出さない。
    */
+  /**
+   * ★★**組み合わせ（まだ行われていない試合）**（2026-08-22。運営者の指示）。
+   *
+   * 速報の一覧に `第150回大分県高等学校野球選手権記念大会 組合せ` が
+   * **結果より先に**上がる。★**結果の紙とは別のPDF**で、表題が `組合せ` で終わる。
+   *
+   * ------------------------------------------------------------------
+   * ★ 紙の形（8チームのやぐら表・1枚）
+   *
+   *   スロット 1〜8 が横に並び（y≒215）、**その下に校名が縦書き**、
+   *   さらに下に**支部の行**（`推薦` `大分` `県南豊肥` …）。
+   *   回戦は上へ 1回戦（y≒380）→ 準決勝（y≒492）→ 決勝（y≒573）で、
+   *   **各試合の上に日付・会場・第何試合が刷ってある。**
+   *
+   * ★**出すのは1回戦だけ。** 準決勝・決勝は**誰が上がるか決まっていない**ので、
+   * 枠だけ作っても対戦相手を書けない。**推測で埋めない**（甲子園の準々決勝以降と同じ）。
+   *
+   * ------------------------------------------------------------------
+   * ★ 検算（合わなければ**1試合も出さない**）
+   *
+   *   - スロットが 1〜8 で欠けずに並ぶ
+   *   - 校名が8つ読める（**支部の行を字の大きさで落としてから**。春と同じ）
+   *   - ★★**速報ページの本文に書かれている代表校と、8校が過不足なく一致**
+   *     （`○県北・久大支部（2校）…柳ヶ浦高校、宇佐高校` …）。
+   *     **枝とは別の場所から来る事実**なので、いちばん強い検算になる
+   */
+  async collectUpcoming({ fetchHtml }) {
+    const html = await fetchHtml(this.seasons.autumn);
+    if (!html) return [];
+    const numbers = [...new Set([...html.matchAll(/img\/pdf_(\d+)\.pdf/gi)].map((m) => Number(m[1])))]
+      .sort((a, b) => b - a);
+    const text = normalize(html.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ");
+
+    for (const n of numbers.slice(0, this.maxSheets)) {
+      const parsed = await this.pdf(n);
+      if (!parsed?.length) continue;
+      const raw = parsed[0];
+      const flat = raw.lines.map((l) => normalize(l.text.replace(/\t/g, "")).replace(/\s+/g, ""));
+      const title = flat.find((t) => /^第\d+回大分県高等学校野球選手権(記念)?大会組合せ$/.test(t));
+      if (!title || flat.some((t) => /軟式/.test(t))) continue;
+      const games = this.readDrawSheet(raw, flat, title.replace(/組合せ$/, ""), text);
+      if (games) return games;
+    }
+    return [];
+  },
+  /**
+   * ★**速報ページ本文から、その回の代表校を取る**（検算材料）。
+   *
+   *   ※第150回県大会の代表校決定！！
+   *   ○県北・久大支部（２校）・・・柳ヶ浦高校、宇佐高校 ○別杵支部（１校）・・・明豊高校 …
+   *
+   * ★★**回数で場所を決めること。** 速報ページには**第149回の同じ並びも載っている**ので、
+   * 「`・・・` の後ろ」を拾うだけだと**前の大会の代表校と混ざる**（実際に混ざった）。
+   * ★**`○` から次の `○` までに区切る。** ページ全体に `・・・` は何度も出てくる。
+   */
+  representativesFrom(text, round) {
+    const at = text.indexOf(`第${round}回県大会の代表校決定`);
+    if (at < 0) return [];
+    // 次の見出し（更新日）までを見る。無ければ十分な長さで打ち切る
+    const rest = text.slice(at, at + 600);
+    const stop = rest.search(/更新日/);
+    return [...(stop > 0 ? rest.slice(0, stop) : rest).matchAll(/○[^○]*?[・･]{2,}\s*([^○]+)/g)]
+      .flatMap((m) => m[1].split(/[、,]/))
+      /*
+        ★**空白のところで切る。** 一覧の最後（`○推薦出場…・・・大分商業高校`）の
+        後ろには**次のお知らせの本文がそのまま続く**（`更新日` はさらに後ろなので
+        区切りにならない）。**日本の校名に空白は入らない**ので、
+        先頭の空白でないところまでを校名とする。
+      */
+      .map((s) => s.trim().match(/^[^\s&]+/)?.[0] ?? "")
+      .map((s) => s.replace(/高等学校|高校/g, "").trim())
+      .filter(Boolean);
+  },
+  /** 組合せの紙を1枚読む。**読めなければ null**（呼び出し側は次のPDFへ） */
+  readDrawSheet(raw, flat, tournament, text) {
+    const listed = this.representativesFrom(text, Number(tournament.match(/第(\d+)回/)?.[1]));
+    // ---- 年と季節（春も秋も表題が同じなので、期間の月で決める。結果の紙と同じ） ----
+    const days = new Map();
+    let year = null;
+    for (const t of flat) {
+      const era = t.match(/令和(\d+)年/);
+      if (era) year ??= 2018 + Number(era[1]);
+      for (const m of t.matchAll(/(\d{1,2})月(\d{1,2})日/g)) days.set(Number(m[2]), Number(m[1]));
+    }
+    if (!year || !days.size) return null;
+    const months = [...new Set([...days.values()])];
+    const season = months.every((m) => m >= 3 && m <= 6)
+      ? "spring"
+      : months.every((m) => m >= 8 && m <= 11)
+        ? "autumn"
+        : null;
+    if (!season) return null;
+
+    // ---- スロットの行（1〜N が横に並ぶ） ----
+    const slotLine = raw.lines
+      .map((l) => ({
+        line: l,
+        ns: l.items
+          .map((i) => ({ x: i.x, v: Number(normalize(i.text.trim())) }))
+          .filter((i) => Number.isInteger(i.v) && i.v > 0),
+      }))
+      .filter((r) => r.ns.length >= 4 && r.ns.every((n, i) => n.v === i + 1))
+      .sort((a, b) => b.ns.length - a.ns.length)[0];
+    if (!slotLine) return null;
+    const slots = slotLine.ns;
+
+    /*
+      ★★**校名は縦書き。支部の行を字の大きさで落とす**（結果の紙と同じ）。
+      **行の隙間では切れない**（校名は縦に引き伸ばして組まれている）。
+      **スロット行のすぐ下の行の幅**を「校名の大きさ」として、そこから離れた行を落とす。
+    */
+    const below = raw.lines.filter((l) => l.y < slotLine.line.y).sort((a, b) => b.y - a.y);
+    const widthOf = (l) => {
+      const ws = l.items.map((i) => i.width ?? 0).filter((w) => w > 0).sort((a, b) => a - b);
+      return ws.length ? ws[Math.floor(ws.length / 2)] : 0;
+    };
+    const nameWidth = widthOf(below[0] ?? { items: [] });
+    if (!nameWidth) return null;
+    const nameLines = below.filter((l) => Math.abs(widthOf(l) - nameWidth) <= nameWidth * 0.2);
+
+    /** スロットの x に近い文字を上から縦に読む */
+    const half = slots.length > 1 ? Math.abs(slots[1].x - slots[0].x) / 2 : 20;
+    const names = slots.map((s) =>
+      nameLines
+        .flatMap((l) => l.items.filter((i) => Math.abs(i.x - s.x) < half).map((i) => i.text.trim()))
+        .join("")
+        .replace(/\s+/g, ""),
+    );
+    if (names.some((n) => !n)) return null;
+
+    /*
+      ---- ★★検算: 速報ページ本文の代表校と過不足なく一致 ----
+      **枝とは別の場所から来る事実。** 1つでも違えば1試合も出さない。
+    */
+    if (listed.length) {
+      const a = [...names].sort();
+      const b = [...listed].sort();
+      const same = a.length === b.length && a.every((n, i) => n === b[i]);
+      if (!same) {
+        console.log(
+          `  ⚠️ 大分(組合せ): 紙の8校と速報ページの代表校が合わない` +
+            `（紙「${a.join("・")}」/ 本文「${b.join("・")}」）。1試合も出さない`,
+        );
+        return [];
+      }
+    } else {
+      console.log("  ⚠️ 大分(組合せ): 速報ページに代表校の記載が無く未検算");
+    }
+
+    /*
+      ---- 1回戦の対戦カード ----
+      ★**隣どうしのスロットが1試合。** 日付・会場は各試合の上に刷ってある
+      （スロットの中点にいちばん近いものを取る）。
+    */
+    const labelLines = raw.lines.filter((l) => l.y > slotLine.line.y);
+    const nearest = (mid, re) => {
+      const hits = labelLines.flatMap((l) =>
+        l.items.filter((i) => re.test(normalize(i.text.trim()))).map((i) => ({ x: i.x, t: normalize(i.text.trim()) })),
+      );
+      if (!hits.length) return null;
+      return hits.reduce((p, c) => (Math.abs(c.x - mid) < Math.abs(p.x - mid) ? c : p)).t;
+    };
+    const games = [];
+    for (let i = 0; i + 1 < slots.length; i += 2) {
+      const mid = (slots[i].x + slots[i + 1].x) / 2;
+      const md = nearest(mid, /^\d{1,2}\/\d{1,2}$/);
+      games.push({
+        date: md ? `${year}-${md.split("/")[0].padStart(2, "0")}-${md.split("/")[1].padStart(2, "0")}` : null,
+        season,
+        tournament,
+        round: "1回戦",
+        venue: nearest(mid, /^[^\d\s]{2,10}$/),
+        teams: [{ display: names[i] }, { display: names[i + 1] }],
+      });
+    }
+    console.log(`  （${tournament}: 組み合わせ ${games.length} 試合 / 代表8校は速報ページと一致）`);
+    return games;
+  },
   async collectPrefectural(numbers, season) {
     for (const n of numbers.slice(0, this.maxSheets)) {
       const parsed = await this.pdf(n);
@@ -11329,6 +11507,49 @@ async function main() {
       ★**戻すときは、表示側の絞り込みも一緒に見ること**（片方だけ戻すと画面が変わる）。
     */
 
+    /*
+      ★★**組み合わせ（まだ行われていない試合）**（2026-08-22。運営者の指示）。
+
+      ★**結果とは別の入れ物にする。** 試合（`games`）は
+      **スコアと勝敗を必ず持つ**形で、画面・トーナメント表・検算のすべてが
+      それを前提にしている。**未実施の試合をそこへ混ぜると全部に波及する。**
+      ★**足すだけなら、既存の4,785試合にも表示にも1バイトも影響しない。**
+
+      ★**すでに結果が出ている組はここから落とす。**
+      同じ紙が「組合せ」から「結果」へ育つので、放っておくと
+      **終わった試合が「これから」として残る。**
+      ★**日付ではなく「同じ2校の試合が `games` にあるか」で見る**
+      （雨天順延で日付が動くため）。
+
+      ★★**鍵に大会名を必ず入れること。** 校名だけで見ると
+      **別の大会の同じ顔合わせ**に当たる（大分の秋の組合せ4試合のうち1試合が、
+      春・夏に同じ2校が当たっていたために「もう終わった」と judged された）。
+    */
+    const upcomingRaw = adapter.collectUpcoming
+      ? await adapter.collectUpcoming({ fetchHtml: get }).catch((e) => {
+          console.log(`  ⚠️ 組み合わせ: ${e.message}`);
+          return [];
+        })
+      : [];
+    const pairKey = (g) =>
+      [g.tournament, ...[...g.teams.map((t) => t.display)].sort()].join("\t");
+    const playedKey = new Set(games.map(pairKey));
+    const upcoming = upcomingRaw
+      .map((g) => ({
+        ...g,
+        teams: g.teams.map((t) => {
+          const { score: _s, won: _w, ...rest } = decorate(t, !isPrefectureOnly(g.tournament));
+          return rest;
+        }),
+      }))
+      .filter((g) => !playedKey.has(pairKey(g)));
+    if (upcomingRaw.length) {
+      console.log(
+        `  → 組み合わせ ${upcoming.length} 試合（読んだ ${upcomingRaw.length} 件のうち、` +
+          `結果が出ている ${upcomingRaw.length - upcoming.length} 件は落とした）`,
+      );
+    }
+
     const publicTeams = new Set(
       games.flatMap((g) => g.teams.filter((t) => t.slug).map((t) => t.slug)),
     );
@@ -11352,6 +11573,11 @@ async function main() {
       // **リンクはトップページへ。** 深いURLへのリンクを断っている連盟がある
       sourceUrl: adapter.siteUrl,
       games,
+      /*
+        ★**組み合わせ（未実施）。無い県は空**（型のうえでも省略できる）。
+        **`games` とは別物**なので混ぜないこと。
+      */
+      ...(upcoming.length ? { upcoming } : {}),
       /*
         ★**絞る前の全試合。ベストNを数えるのに要る。**
         `games` は公立が絡む試合だけなので、私立同士の試合が落ちている。
@@ -11860,8 +12086,26 @@ async function main() {
       ★**全試合から数える**（私立どうしも含む）。進捗は大会の進み具合なので、
       公立が絡むかどうかは関係がない。**画面に出す試合の数は別に持つ。**
     */
+    /*
+      ★**組み合わせだけ出ている県は「開幕予定」として出す**（2026-08-22）。
+      **試合はまだ0件でも「これから始まる」ことは分かっている**ので、
+      「まだ試合がありません」と同じ見た目にしない。
+    */
     const seasonGames = d.games.filter((g) => g.season === pickupSeason);
-    if (!seasonGames.length) return pending;
+    if (!seasonGames.length) {
+      const soon = (d.upcoming ?? []).filter((g) => g.season === pickupSeason);
+      if (!soon.length) return pending;
+      return {
+        slug: d.slug,
+        district: d.district,
+        state: "scheduled",
+        season: pickupSeason,
+        tournament: soon[0].tournament ?? null,
+        /** 開幕日（組み合わせのいちばん早い試合） */
+        opensOn: soon.map((g) => g.date).filter(Boolean).sort()[0] ?? null,
+        games: soon.length,
+      };
+    }
 
     /*
       ★★**大会ごとに分けてから、1つだけを見る。**

@@ -70,6 +70,28 @@ export default function RegionalPage() {
       };
       continue;
     }
+    /*
+      ★**組み合わせだけ出ている県**（試合はまだ0件）。
+      **「まだ試合がありません」と同じ見た目にしない** —— 開幕日が分かっている。
+    */
+    if (p.state === "scheduled") {
+      const opens = p.opensOn ? formatRegionalDate(p.opensOn) : null;
+      detail[pref.slug] = {
+        lines: [
+          { label: "開幕", text: opens ?? "日程未定" },
+          { text: shortTournament(p.tournament) },
+        ],
+        label: [
+          pref.name,
+          p.tournament ?? "",
+          opens ? `${opens}開幕予定` : "開幕日未定",
+          `組み合わせが${p.games}試合ぶん出ています`,
+        ]
+          .filter(Boolean)
+          .join("、"),
+      };
+      continue;
+    }
     counts[pref.slug] = p.publicGames;
     const done = p.state === "done";
     detail[pref.slug] = {
@@ -100,6 +122,7 @@ export default function RegionalPage() {
 
   const playing = REGIONAL_PROGRESS.districts.filter((d) => d.state === "playing");
   const done = REGIONAL_PROGRESS.districts.filter((d) => d.state === "done");
+  const scheduled = REGIONAL_PROGRESS.districts.filter((d) => d.state === "scheduled");
   const covered = REGIONAL_PROGRESS.districts.length;
 
   return (
@@ -159,6 +182,15 @@ export default function RegionalPage() {
             />
             決勝まで（{done.length}地区）
           </span>
+          {scheduled.length > 0 && (
+            <span className="inline-flex items-center gap-1.5">
+              <span
+                aria-hidden="true"
+                className="inline-block h-3.5 w-6 rounded-sm border border-navy-300 bg-navy-50"
+              />
+              組み合わせ発表済み（{scheduled.length}地区）
+            </span>
+          )}
           <span className="inline-flex items-center gap-1.5">
             <span
               aria-hidden="true"

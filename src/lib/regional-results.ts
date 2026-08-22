@@ -78,6 +78,28 @@ export type RegionalDistrict = {
    */
   sourceUrl: string;
   games: RegionalGame[];
+  /**
+   * ★**組み合わせ（まだ行われていない試合）**（2026-08-22 に追加）。
+   *
+   * ★**`games` とは別の入れ物。混ぜないこと。** `games` は
+   * **スコアと勝敗を必ず持つ**形で、画面・トーナメント表・検算のすべてが
+   * それを前提にしている。**未実施の試合をそこへ入れると全部に波及する。**
+   *
+   * ★**結果が出たものは生成側で落としている**ので、ここに残るのは本当に
+   * これからの試合だけ。**無い県では省略される。**
+   */
+  upcoming?: RegionalUpcoming[];
+};
+
+/** 組み合わせの1試合。**スコアも勝敗も持たない**（まだ行われていない） */
+export type RegionalUpcoming = {
+  date: string | null;
+  season: RegionalSeason;
+  tournament: string | null;
+  round: string | null;
+  venue: string | null;
+  /** 対戦する2校。**決まっている試合しか入っていない**（勝者未定の枠は作らない） */
+  teams: { display: string; name: string; slug: string | null; combined?: boolean }[];
 };
 
 /** 県ごとのファイルが持つ形 */
@@ -148,6 +170,18 @@ export type RegionalProgress =
       district: string;
       /** 出典はあるが、今季の試合がまだ取れていない */
       state: "pending";
+    }
+  | {
+      slug: string;
+      district: string;
+      /** ★**組み合わせだけ出ている**（試合はまだ0件だが開幕日が分かっている） */
+      state: "scheduled";
+      season: RegionalSeason;
+      tournament: string | null;
+      /** 開幕日 */
+      opensOn: string | null;
+      /** 組み合わせが読めている試合数 */
+      games: number;
     }
   | {
       slug: string;

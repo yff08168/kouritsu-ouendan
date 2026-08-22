@@ -32,6 +32,7 @@ import { PREFECTURES } from "@/lib/constants";
 import { getRegionalDistrict, latestSeasonGames } from "@/lib/regional-results";
 import { bracketForGames } from "@/lib/regional-bracket";
 import { RegionalBracket } from "@/components/results/RegionalBracket";
+import { RegionalUpcomingCard } from "@/components/results/RegionalUpcomingCard";
 
 /**
  * その県の地方大会の結果を何試合まで出すか。
@@ -193,6 +194,18 @@ export default async function PrefectureDetailPage({ params }: Props) {
           <SchoolList schools={schoolResult.schools} />
         </div>
       </section>
+
+      {/*
+        ------- これからの試合（組み合わせが取れている県だけ） -------
+        ★**結果より前に置く。** 開幕前・開催中は「次に誰と当たるか」のほうが
+        見たい情報で、結果は下にある。
+      */}
+      {regional?.upcoming?.length ? (
+        <RegionalUpcomingCard
+          games={regional.upcoming}
+          districtName={prefecture.name}
+        />
+      ) : null}
 
       {/* ------- 地方大会の結果（対応している県だけ） ------- */}
       {regional && regionalGames && (

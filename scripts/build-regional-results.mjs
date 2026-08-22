@@ -4878,12 +4878,23 @@ const yamaguchi = {
       console.log("  ⚠️ 山口: お知らせの一覧が取れない。出典の作りが変わった可能性がある");
       return [];
     }
+    /*
+      ★★**大会名が年で変わる**（2026-08-22 に気づいた）。**同じ大会の改称。**
+
+        2025 … `令和7年度山口県スポーツ大会高校野球競技(硬式)`（お知らせの略称「秋季県大会」・9〜10月）
+        2026 … `令和8年度山口県新人高等学校野球大会`（略称「8新人大会」・**8月**）
+
+      ★**「秋季県大会」だけを見ていたので、今年の大会が丸ごと拾えていなかった**
+      （去年の秋を「いまの秋」として出し続けていた）。
+      ★**2025 にも「新人大会:…」というお知らせがある**（同じ大会を別の略称で呼んでいる）ので、
+      **両方を拾ってよい。** 軟式と中国地区大会は今までどおり外す。
+    */
     const posts = news
       .map((n) => ({ ...n, title: normalize(n.title ?? "") }))
-      .filter((n) => /秋季県大会/.test(n.title) && !/軟式|中国/.test(n.title))
+      .filter((n) => /秋季県大会|新人大会/.test(n.title) && !/軟式|中国/.test(n.title))
       .sort((a, b) => String(b.createTime).localeCompare(String(a.createTime)));
     if (!posts.length) {
-      console.log("  ⚠️ 山口: 秋季県大会のお知らせが見つからない");
+      console.log("  ⚠️ 山口: 秋季県大会・新人大会のお知らせが見つからない");
       return [];
     }
     /*
@@ -4912,19 +4923,64 @@ const yamaguchi = {
         if (!parsed?.length) continue;
         const raw = this.fixRadicals(parsed[0]);
         const flat = raw.lines.map((l) => normalize(l.text.replace(/\t/g, "")).replace(/\s+/g, ""));
-        const title = flat.map((t) => t.match(/令和\d+年度山口県スポーツ大会高校野球競技\(硬式\)(地区予選|県決勝大会)/)?.[0]).find(Boolean);
+        /*
+          ★**旧名（スポーツ大会）と新名（新人高等学校野球大会）の両方を受ける。**
+          ★★**新名の紙には「地区予選」「県決勝大会」が刷られていない**ので、
+          **紙の中身で見分ける**（下）。
+        */
+        const title = flat
+          .map(
+            (t) =>
+              t.match(
+                /令和\d+年度山口県(?:スポーツ大会高校野球競技\(硬式\)(?:地区予選|県決勝大会)|新人高等学校野球大会)/,
+              )?.[0],
+          )
+          .find(Boolean);
         if (!title) continue;
-        // ★元号は年度。秋（9〜10月）は暦年と一致する
+        // ★元号は年度。秋（8〜10月）は暦年と一致する
         const year = 2018 + Number(title.match(/令和(\d+)年度/)[1]);
-        if (/地区予選/.test(title) && !district) district = this.readAutumnDistrict(raw, title, year);
-        else if (/県決勝大会/.test(title) && !final) final = this.readAutumnFinal(raw, title, year);
+        /*
+          ★★**どちらの紙かを中身で決める。**
+          **県決勝大会は「◯◯会場」の行を持つ**（スロット番号の行のすぐ下に
+          `周南会場` `岩国会場` … が並ぶ）。**地区予選は球場名がブロックの見出しに
+          置かれるだけ**で「会場」で終わる行は無い。
+          ★**紙に「地区予選」「県決勝大会」と書いてあれば、そちらを優先する。**
+        */
+        const kind = /県決勝大会/.test(title)
+          ? "final"
+          : /地区予選/.test(title)
+            ? "district"
+            : flat.some((t) => /会場$/.test(t))
+              ? "final"
+              : "district";
+        if (kind === "district" && !district) district = this.readAutumnDistrict(raw, title, year);
+        else if (kind === "final" && !final) final = this.readAutumnFinal(raw, title, year);
       }
     }
-    if (!district || !final) {
-      console.log(
-        `  ⚠️ 山口: 秋季の紙がそろわない（地区予選 ${district ? "○" : "×"} / 県決勝大会 ${final ? "○" : "×"}）。1試合も出さない`,
-      );
+    /*
+      ★★**地区予選だけでも出す**（2026-08-22。福島で決めた「開催中の紙には強い検算を
+      そのままかけられない」と同じ考え方）。
+
+      ★**県決勝大会の紙は大会の後半にならないと出ない。**
+      「2枚そろわなければ1試合も出さない」ままだと、**地区予選が終わってから
+      県決勝大会の紙が出るまでのあいだ、その大会を1試合も出せない。**
+
+      ★**地区予選だけのときも、その紙の中の検算は効いている** ——
+      **A: 組み立てた代表8校が紙に刷ってある代表校名と一致／
+      B: チーム数 − 試合数 = 8**（どちらも `readAutumnDistrict` の中）。
+      **落とすのは枚をまたぐ検算C と お知らせの優勝校D だけ。**
+      ★**飛ばしたことは必ずログに出す**（「通った」と「していない」を見分けるため）。
+    */
+    if (!district) {
+      console.log("  ⚠️ 山口: 秋季の地区予選の紙が読めない。1試合も出さない");
       return [];
+    }
+    if (!final) {
+      console.log(
+        `  （${district.tournament}: ${district.games.length} 試合 / ${district.teams} チーム → 代表8校` +
+          " ／ ★**県決勝大会の紙がまだ無いので、枚をまたぐ検算は未実施**）",
+      );
+      return district.games;
     }
 
     /*

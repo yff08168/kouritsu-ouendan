@@ -170,6 +170,19 @@ $env:Path = "C:\Users\81809\tools\node-v24.19.0-win-x64;" + $env:Path
   `data/wikipedia-cache/summer-NNN.json` の `wikitext` を直接読むこと。
   勝ち上がり表は**太字が勝者**、`x` 付きがサヨナラ。
   書いたあとは `school_championships` の勝敗数と必ず検算する。
+- ★★**甲子園の試合単位の結果は `src/lib/data/koshien-games.ts`（生成物）。**
+  `scripts/build-koshien-games.mjs`（`npm run koshien-games`）が
+  `data/wikipedia-cache/` の **`wikitext` を直接読む**（要約に通さない。上の項）。
+  ★**wikitext の形は3つ**（`{{Round8 seed}}`／`wikitable`／`{{Linescore}}`）。
+  **太字が勝者。スコアの大小から導かない**（不戦勝はスコアが無い）。
+  ★★**`koshien-tournaments.ts` を「落とす検算」に使わないこと** ——
+  **199大会のうち43件で「出場校数 − 1 ≠ 試合数」**になっており、
+  2025年春は `30校・31試合` と**算数が合わない**。**ずれは警告に留める。**
+  ★**落とす判断は内部で導ける不変条件でやる**:
+  **①優勝校以外はちょうど1回だけ負ける ②2回戦以降は前の回戦の勝者**。
+  **紙の外の数字を使わないので、参照データの誤りに巻き込まれない。**
+  ★**学校への結び付けは完全一致だけ**（`koshienGamesOf`）。
+  記事は略称なので**部分一致は別の学校に当たる**（横浜／横浜清陵、市和歌山／和歌山）。
 - **勝ち上がりは `src/lib/content/tournament-runs.ts`（手書き）。**
   試合単位のテーブルを足すと人がSQLを流す作業が増え、忘れると詳細ページが落ちる。
   `phenomena.slug` と `phenomenonSlug` が対応しているので片方だけ変えないこと。

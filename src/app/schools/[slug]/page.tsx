@@ -17,6 +17,10 @@ import { Badge } from "@/components/common/Badge";
 import { Thumbnail } from "@/components/common/Thumbnail";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { SchoolRegionalRecord } from "@/components/schools/SchoolRegionalRecord";
+import { SchoolKoshienRecord } from "@/components/schools/SchoolKoshienRecord";
+import { KOSHIEN_GAMES } from "@/lib/data/koshien-games";
+import { koshienGamesOf } from "@/lib/koshien-games";
+import { shortSchoolName } from "@/lib/school-name";
 import { getRegionalDistrict } from "@/lib/regional-results";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { NewsCard } from "@/components/news/NewsCard";
@@ -135,6 +139,19 @@ export default async function SchoolDetailPage({ params }: Props) {
   const regionalRecord = (regionalDistrict?.games ?? []).filter((g) =>
     g.teams.some((t) => t.slug === school.slug),
   );
+  /*
+    ★**甲子園の試合**（2026-08-23）。大会記事から作った生成物。
+    ★★**校名は完全一致でしか結び付けない**（`koshienGamesOf`）。
+    大会記事は略称なので、**部分一致で拾うと別の学校に当たる**
+    （「横浜」と「横浜清陵」、「市和歌山」と「和歌山」）。
+    ★**当たらなければ出さない。** 取りこぼすほうが、誤って別の学校の戦績を
+    出すよりましである。
+  */
+  const koshienRecord = koshienGamesOf(KOSHIEN_GAMES, [
+    school.name,
+    school.officialName,
+    shortSchoolName(school.name, school.slug),
+  ]);
 
   const koshienTotal = school.koshienSpringCount + school.koshienSummerCount;
   // 春・夏それぞれの最高成績。バッジに出す
@@ -382,6 +399,11 @@ export default async function SchoolDetailPage({ params }: Props) {
             ★**その県のファイルだけを読む**（`getRegionalDistrict`）。
             ★**私立との試合も出る**（相手が私立でもこの学校の戦績である）。
           */}
+          {koshienRecord.length > 0 && (
+            <div className="mt-3">
+              <SchoolKoshienRecord games={koshienRecord} names={[school.name, school.officialName, shortSchoolName(school.name, school.slug)]} />
+            </div>
+          )}
           {regionalRecord.length > 0 ? (
             <div className="mt-3">
               <SchoolRegionalRecord
@@ -390,9 +412,11 @@ export default async function SchoolDetailPage({ params }: Props) {
               />
             </div>
           ) : (
-            <div className="mt-3">
-              <RecordTable items={records} />
-            </div>
+            koshienRecord.length === 0 && (
+              <div className="mt-3">
+                <RecordTable items={records} />
+              </div>
+            )
           )}
         </section>
       </div>

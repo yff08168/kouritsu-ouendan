@@ -16,6 +16,8 @@ import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { Badge } from "@/components/common/Badge";
 import { Thumbnail } from "@/components/common/Thumbnail";
 import { SectionHeading } from "@/components/common/SectionHeading";
+import { SchoolRegionalRecord } from "@/components/schools/SchoolRegionalRecord";
+import { getRegionalDistrict } from "@/lib/regional-results";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { NewsCard } from "@/components/news/NewsCard";
 import { SchoolCard } from "@/components/schools/SchoolCard";
@@ -124,6 +126,15 @@ export default async function SchoolDetailPage({ params }: Props) {
       // 応援メッセージは学校あて（0008）。承認済みのものだけ返る
       getCheerMessages({ schoolId: school.id, limit: 20 }),
     ]);
+
+  /*
+    ★**地方大会の戦績**（2026-08-23）。その県の生成物からこの学校の試合を拾う。
+    ★**県のファイルだけを読む**（全国ぶんは6MBある）。**対応していない県は空。**
+  */
+  const regionalDistrict = await getRegionalDistrict(school.prefecture.slug);
+  const regionalRecord = (regionalDistrict?.games ?? []).filter((g) =>
+    g.teams.some((t) => t.slug === school.slug),
+  );
 
   const koshienTotal = school.koshienSpringCount + school.koshienSummerCount;
   // 春・夏それぞれの最高成績。バッジに出す
@@ -365,9 +376,24 @@ export default async function SchoolDetailPage({ params }: Props) {
           className="min-w-0 rounded-xl border border-line bg-white p-5"
         >
           <SectionHeading id="records" title="最近の戦績" />
-          <div className="mt-3">
-            <RecordTable items={records} />
-          </div>
+          {/*
+            ★**地方大会の戦績は生成物から出す**（2026-08-23。運営者の指示）。
+            DBの `school_records` は未着手で0件なので、**実データはこちら。**
+            ★**その県のファイルだけを読む**（`getRegionalDistrict`）。
+            ★**私立との試合も出る**（相手が私立でもこの学校の戦績である）。
+          */}
+          {regionalRecord.length > 0 ? (
+            <div className="mt-3">
+              <SchoolRegionalRecord
+                games={regionalRecord}
+                schoolSlug={school.slug}
+              />
+            </div>
+          ) : (
+            <div className="mt-3">
+              <RecordTable items={records} />
+            </div>
+          )}
         </section>
       </div>
 

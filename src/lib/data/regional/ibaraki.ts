@@ -4931,6 +4931,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       "venue": "茨城トヨタスポーツパークうしく（牛久運動公園）野球場",
       "teams": [
         {
+          "display": "取手松陽",
+          "score": 6,
+          "won": false,
+          "name": "取手松陽高校",
+          "slug": "torideshoyo"
+        },
+        {
+          "display": "土浦湖北",
+          "score": 7,
+          "won": true,
+          "name": "土浦湖北高校",
+          "slug": "tsuchiurakohoku"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-22",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "2回戦",
+      "venue": "茨城トヨタスポーツパークうしく（牛久運動公園）野球場",
+      "teams": [
+        {
           "display": "竜ヶ崎一",
           "score": 6,
           "won": false,
@@ -4942,6 +4965,144 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
           "score": 7,
           "won": true,
           "name": "霞ヶ浦",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-22",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
+      "venue": "常総市石下球場",
+      "teams": [
+        {
+          "display": "下館工",
+          "score": 10,
+          "won": true,
+          "name": "下館工業高校",
+          "slug": "shimodatekogyo"
+        },
+        {
+          "display": "守谷",
+          "score": 5,
+          "won": false,
+          "name": "守谷高校",
+          "slug": "moriya"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-22",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
+      "venue": "常総市石下球場",
+      "teams": [
+        {
+          "display": "下妻一",
+          "score": 6,
+          "won": true,
+          "name": "下妻第一高校",
+          "slug": "shimotsumadaiichi"
+        },
+        {
+          "display": "岩瀬日大",
+          "score": 4,
+          "won": false,
+          "name": "岩瀬日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
+      "venue": "茨城トヨタスポーツパークうしく（牛久運動公園）野球場",
+      "teams": [
+        {
+          "display": "常総学院",
+          "score": 16,
+          "won": true,
+          "name": "常総学院",
+          "slug": null
+        },
+        {
+          "display": "取手一",
+          "score": 0,
+          "won": false,
+          "name": "取手第一高校",
+          "slug": "toridedaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
+      "venue": "竜ヶ崎市営たつのこ球場",
+      "teams": [
+        {
+          "display": "土浦湖北",
+          "score": 6,
+          "won": false,
+          "name": "土浦湖北高校",
+          "slug": "tsuchiurakohoku"
+        },
+        {
+          "display": "霞ヶ浦",
+          "score": 15,
+          "won": true,
+          "name": "霞ヶ浦",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
+      "venue": "常総市石下球場",
+      "teams": [
+        {
+          "display": "境",
+          "score": 5,
+          "won": false,
+          "name": "境高校",
+          "slug": "sakai"
+        },
+        {
+          "display": "四谷学院",
+          "score": 12,
+          "won": true,
+          "name": "四谷学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
+      "venue": "茨城トヨタスポーツパークうしく（牛久運動公園）野球場",
+      "teams": [
+        {
+          "display": "土浦日大",
+          "score": 7,
+          "won": true,
+          "name": "土浦日大",
+          "slug": null
+        },
+        {
+          "display": "東洋大牛久",
+          "score": 6,
+          "won": false,
+          "name": "東洋大牛久",
           "slug": null
         }
       ]

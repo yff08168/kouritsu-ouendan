@@ -77,6 +77,27 @@ const OUT_PICKUP = path.join(ROOT, "src", "lib", "data", "regional-pickup.ts");
 const OUT_PROGRESS = path.join(ROOT, "src", "lib", "data", "regional-progress.ts");
 const UA = { "User-Agent": "kouritsu-ouendan/1.0 (+https://kouritsu-ouendan.com)" };
 
+/**
+ * ★★**収録する大会かどうか**（2026-08-23。運営者が範囲を決めた）。
+ *
+ * 収録するのは次だけ。
+ *
+ *   甲子園   … 春のセンバツ、夏の選手権
+ *   都道府県 … 春季大会、夏の大会、秋季大会
+ *   地区大会 … 東北・関東・北信越・東海・近畿・中国・四国・九州 の春季・秋季
+ *   明治神宮大会
+ *
+ * ★★**新人大会を「秋季大会」として入れないこと。** 秋に開かれるので
+ * 季節の判定は秋になるが、**春季・夏・秋季とは別の大会**である。
+ * 実際に徳島の新人大会5大会28試合が「秋の大会」として入っていた
+ * （山口も、今年の大会が新人大会に改称されたのをそのまま拾おうとしていた）。
+ *
+ * ★**1年生大会・錬成会・連盟杯・招待試合も同じ扱いで外す。**
+ * ★**名前で外す。** 季節（開催月）では区別が付かない。
+ */
+const OFF_TARGET = /新人|１年生|1年生|一年生|錬成|連盟杯|招待|交流|オープン戦/;
+const isTargetTournament = (name) => !OFF_TARGET.test(normalize(name ?? ""));
+
 const args = process.argv.slice(2);
 const DRY = args.includes("--dry");
 /**
@@ -4879,22 +4900,25 @@ const yamaguchi = {
       return [];
     }
     /*
-      ★★**大会名が年で変わる**（2026-08-22 に気づいた）。**同じ大会の改称。**
+      ★★**新人大会は拾わない**（2026-08-23。運営者が収録範囲を決めた）。
 
-        2025 … `令和7年度山口県スポーツ大会高校野球競技(硬式)`（お知らせの略称「秋季県大会」・9〜10月）
+      ~~2026-08-22 に「同じ大会の改称」とみて `新人大会` も拾うようにした~~
+      → ★**戻した。** 収録するのは**都道府県の春季・夏・秋季**で、
+      **新人大会は秋に開かれても「秋季大会」ではない**（`isTargetTournament`）。
+
+        2025 … `令和7年度山口県スポーツ大会高校野球競技(硬式)`（略称「秋季県大会」・9〜10月）
         2026 … `令和8年度山口県新人高等学校野球大会`（略称「8新人大会」・**8月**）
 
-      ★**「秋季県大会」だけを見ていたので、今年の大会が丸ごと拾えていなかった**
-      （去年の秋を「いまの秋」として出し続けていた）。
-      ★**2025 にも「新人大会:…」というお知らせがある**（同じ大会を別の略称で呼んでいる）ので、
-      **両方を拾ってよい。** 軟式と中国地区大会は今までどおり外す。
+      ★★**この2つが同じ大会の改称なのか、別の大会なのかは名前からは決められない。**
+      **8月開催の新人大会**と、**9〜10月の秋季県大会**は別物である可能性が高い。
+      ★**9月になっても秋季県大会のお知らせが出なければ、そのとき確かめること。**
     */
     const posts = news
       .map((n) => ({ ...n, title: normalize(n.title ?? "") }))
-      .filter((n) => /秋季県大会|新人大会/.test(n.title) && !/軟式|中国/.test(n.title))
+      .filter((n) => /秋季県大会/.test(n.title) && !/軟式|中国|新人/.test(n.title))
       .sort((a, b) => String(b.createTime).localeCompare(String(a.createTime)));
     if (!posts.length) {
-      console.log("  ⚠️ 山口: 秋季県大会・新人大会のお知らせが見つからない");
+      console.log("  ⚠️ 山口: 秋季県大会のお知らせが見つからない");
       return [];
     }
     /*
@@ -11486,10 +11510,20 @@ async function main() {
         **勝敗はアダプタが出典から取ったものを使う。** スコアから導かない。
         引き分け・没収試合で食い違う。長野は勝者に class="win" が付いている。
       */
+      /*
+        ★★**収録する大会だけ残す**（2026-08-23。`isTargetTournament` の説明を読むこと）。
+        **新人大会・1年生大会などは、秋に開かれても「秋季大会」ではない。**
+      */
+      .filter((g) => isTargetTournament(g.tournament))
       .map((g) => {
         const allowNationwide = !isPrefectureOnly(g.tournament);
         return { ...g, teams: g.teams.map((t) => decorate(t, allowNationwide)) };
       });
+    const dropped = all.length - games.length;
+    if (dropped) {
+      const names = [...new Set(all.filter((g) => !isTargetTournament(g.tournament)).map((g) => g.tournament))];
+      console.log(`  （収録対象外の大会を ${dropped} 試合外した: ${names.join("・")}）`);
+    }
     /*
       ★★**2026-08-21 に方針を変えた。生成物には私立どうしの試合も残す**（運営者の判断）。
 
@@ -11535,6 +11569,8 @@ async function main() {
       [g.tournament, ...[...g.teams.map((t) => t.display)].sort()].join("\t");
     const playedKey = new Set(games.map(pairKey));
     const upcoming = upcomingRaw
+      // ★組み合わせにも同じ範囲をかける（新人大会の組合せを入れない）
+      .filter((g) => isTargetTournament(g.tournament))
       .map((g) => ({
         ...g,
         teams: g.teams.map((t) => {

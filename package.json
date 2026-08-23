@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "check": "npm run lint && npm run typecheck && npm run build",
     "logo": "node scripts/build-logo-assets.mjs",
-    "hero": "node scripts/build-hero-images.mjs"
+    "hero": "node scripts/build-hero-images.mjs",
+    "koshien-games": "node scripts/build-koshien-games.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.2",

@@ -5089,6 +5089,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
       "season": "autumn",
       "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
       "round": "代表決定戦",
+      "venue": "常総市石下球場",
+      "teams": [
+        {
+          "display": "下妻二",
+          "score": 5,
+          "won": true,
+          "name": "下妻第二高校",
+          "slug": "shimotsumadaini"
+        },
+        {
+          "display": "下館一",
+          "score": 2,
+          "won": false,
+          "name": "下館第一高校",
+          "slug": "shimodatedaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
       "venue": "茨城トヨタスポーツパークうしく（牛久運動公園）野球場",
       "teams": [
         {
@@ -5104,6 +5127,29 @@ export const REGIONAL_IBARAKI: RegionalDistrict = {
           "won": false,
           "name": "東洋大牛久",
           "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
+      "venue": "竜ヶ崎市営たつのこ球場",
+      "teams": [
+        {
+          "display": "土浦一",
+          "score": 7,
+          "won": false,
+          "name": "土浦第一高校",
+          "slug": "tsuchiuradaiichi"
+        },
+        {
+          "display": "石岡商",
+          "score": 10,
+          "won": true,
+          "name": "石岡商業高校",
+          "slug": "ishiokashogyo"
         }
       ]
     }

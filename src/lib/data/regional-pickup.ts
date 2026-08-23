@@ -44,9 +44,27 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "standing": "代表決定戦突破"
     },
     {
+      "slug": "shimotsumadaini",
+      "display": "下妻二",
+      "name": "下妻第二高校",
+      "district": "茨城",
+      "districtSlug": "ibaraki",
+      "wins": 2,
+      "standing": "代表決定戦突破"
+    },
+    {
       "slug": "mitoshogyo",
       "display": "水戸商",
       "name": "水戸商業高校",
+      "district": "茨城",
+      "districtSlug": "ibaraki",
+      "wins": 2,
+      "standing": "代表決定戦突破"
+    },
+    {
+      "slug": "ishiokashogyo",
+      "display": "石岡商",
+      "name": "石岡商業高校",
       "district": "茨城",
       "districtSlug": "ibaraki",
       "wins": 2,
@@ -60,27 +78,61 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "districtSlug": "ibaraki",
       "wins": 2,
       "standing": "代表決定戦突破"
-    },
-    {
-      "slug": "hitachidaiichi",
-      "display": "日立一",
-      "name": "日立第一高校",
-      "district": "茨城",
-      "districtSlug": "ibaraki",
-      "wins": 2,
-      "standing": "代表決定戦突破"
-    },
-    {
-      "slug": "tsuchiuradaiichi",
-      "display": "土浦一",
-      "name": "土浦第一高校",
-      "district": "茨城",
-      "districtSlug": "ibaraki",
-      "wins": 2,
-      "standing": "2回戦突破"
     }
   ],
   "games": [
+    {
+      "districtSlug": "ibaraki",
+      "district": "茨城",
+      "sourceName": "茨城県高等学校野球連盟",
+      "sourceUrl": "http://www.ibaraki-hbf.com/",
+      "date": "2026-08-23",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
+      "teams": [
+        {
+          "display": "下妻二",
+          "score": 5,
+          "won": true,
+          "name": "下妻第二高校",
+          "slug": "shimotsumadaini"
+        },
+        {
+          "display": "下館一",
+          "score": 2,
+          "won": false,
+          "name": "下館第一高校",
+          "slug": "shimodatedaiichi"
+        }
+      ]
+    },
+    {
+      "districtSlug": "ibaraki",
+      "district": "茨城",
+      "sourceName": "茨城県高等学校野球連盟",
+      "sourceUrl": "http://www.ibaraki-hbf.com/",
+      "date": "2026-08-23",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
+      "round": "代表決定戦",
+      "teams": [
+        {
+          "display": "土浦一",
+          "score": 7,
+          "won": false,
+          "name": "土浦第一高校",
+          "slug": "tsuchiuradaiichi"
+        },
+        {
+          "display": "石岡商",
+          "score": 10,
+          "won": true,
+          "name": "石岡商業高校",
+          "slug": "ishiokashogyo"
+        }
+      ]
+    },
     {
       "districtSlug": "ibaraki",
       "district": "茨城",
@@ -130,58 +182,6 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": false,
           "name": "守谷高校",
           "slug": "moriya"
-        }
-      ]
-    },
-    {
-      "districtSlug": "ibaraki",
-      "district": "茨城",
-      "sourceName": "茨城県高等学校野球連盟",
-      "sourceUrl": "http://www.ibaraki-hbf.com/",
-      "date": "2026-08-22",
-      "season": "autumn",
-      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
-      "round": "代表決定戦",
-      "teams": [
-        {
-          "display": "下妻一",
-          "score": 6,
-          "won": true,
-          "name": "下妻第一高校",
-          "slug": "shimotsumadaiichi"
-        },
-        {
-          "display": "岩瀬日大",
-          "score": 4,
-          "won": false,
-          "name": "岩瀬日大",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "districtSlug": "ibaraki",
-      "district": "茨城",
-      "sourceName": "茨城県高等学校野球連盟",
-      "sourceUrl": "http://www.ibaraki-hbf.com/",
-      "date": "2026-08-21",
-      "season": "autumn",
-      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
-      "round": "代表決定戦",
-      "teams": [
-        {
-          "display": "水戸商",
-          "score": 5,
-          "won": true,
-          "name": "水戸商業高校",
-          "slug": "mitoshogyo"
-        },
-        {
-          "display": "水戸農",
-          "score": 2,
-          "won": false,
-          "name": "水戸農業高校",
-          "slug": "mitonogyo"
         }
       ]
     }

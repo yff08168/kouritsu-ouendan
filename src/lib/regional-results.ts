@@ -382,7 +382,34 @@ export function latestSeasonGames(
     return ambiguous ? byOrder : byDate;
   })();
 
-  const games = publicGames
+  /*
+    ★★**同じ季節が複数の年ぶん入るようになった**（2026-08-23。120日の窓を外した）。
+
+    それまでは「いちばん新しい試合から120日」で切っていたので、
+    **1つの季節に1大会しか入らなかった。** 窓を外すと、長野のように
+    **2022〜2026年の春季が全部**入っている県が出る。
+    ★**季節だけで絞ると、5年ぶんの春季大会が1つの大会として並ぶ**
+    （「この大会で公立が出た試合は N 件」の N も5年ぶんの合計になる）。
+
+    ★**いちばん新しい大会だけに絞る。** 大会名で分け、
+    **その中でいちばん新しい試合を持つ大会**を採る（進捗地図と同じ決め方）。
+    ★**日付の無い県は大会名が1つしか無い**ので、この分岐に入っても変わらない。
+  */
+  const seasonGames = publicGames.filter((g) => g.season === newestSeason);
+  const byTournament = new Map<string, RegionalGame[]>();
+  for (const g of seasonGames) {
+    const k = g.tournament ?? "";
+    const list = byTournament.get(k);
+    if (list) list.push(g);
+    else byTournament.set(k, [g]);
+  }
+  const newestOf = (list: RegionalGame[]) =>
+    list.map((g) => g.date).filter(Boolean).sort().at(-1) ?? "";
+  const newestTournament = [...byTournament.values()].sort(
+    (a, b) => newestOf(b).localeCompare(newestOf(a)) || b.length - a.length,
+  )[0];
+
+  const games = newestTournament
     .filter((g) => g.season === newestSeason)
     /*
       日付があれば新しい順。**無ければ回戦の深い順**（決勝がいちばん上）。

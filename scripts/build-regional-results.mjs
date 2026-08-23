@@ -110,8 +110,10 @@ const flagValue = (name) => {
 };
 const onlyPref = flagValue("--pref");
 const jsonPath = flagValue("--json");
-/** 過去ぶんも全部残す。工数見積もりや検算のとき用 */
-const KEEP_ALL = args.includes("--all");
+/*
+  ~~`--all` … 過去ぶんも全部残す。工数見積もりや検算のとき用~~
+  → ★**2026-08-23 に既定が「全部残す」になったので消した**（`kept` の説明を読むこと）。
+*/
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -11384,33 +11386,35 @@ async function main() {
       }
 
       /*
-        開催中の大会だけに絞る。基点は**その季節のいちばん新しい試合**。
-        「今日」を基点にしないのは、試合が増えていないのに毎日差分が出るのを防ぐため。
+        ★★**2026-08-23 に窓を外した**（運営者の「2025年の大会結果も入れて」から）。
+
+        ~~開催中の大会だけに絞る（いちばん新しい試合から120日）~~
+        → **出典が持っているぶんは全部残す。**
+
+        ★**外した理由は、見積もりが過大だったこと。**
+        README には「一覧を最後まで辿ると過去4年ぶん・47県で16MBになる」と
+        書いてあったが、**これは長野の履歴の深さから外挿した数字**だった。
+        ★**実測（2026-08-23・全県）では、取れる総数は 5,638試合**で、
+        窓を付けた状態の 4,785試合に対して **+853試合（+18%）にすぎない。**
+        **履歴を持っている出典がそもそも少ない**（22県は今年の紙しか置いていない）。
+
+        ★**画面の側は変わらない。** 県のページは
+        **いちばん新しい大会だけ**を出す（`latestSeasonGames`）。
+        ★**そこを一緒に直してあること** —— 窓が無いと**1つの季節に複数の年**が
+        入るので、季節だけで絞ると5年ぶんの春季大会が1大会として並ぶ。
+
+        ★**差分が毎日出る心配は無い。** 窓は元から「今日」ではなく
+        「その季節のいちばん新しい試合」を基点にしていた。**外すほうがより安定する**
+        （もう試合が落ちることが無い）。
       */
-      const kept = (() => {
-        if (KEEP_ALL || !seasonGames.length) return seasonGames;
-        /*
-          ★**日付を持たない試合は窓で切らない。**（2026-08-14）
-          三重のように**組合せ表に日付が1つも無い**出典がある。
-          窓は「いちばん新しい試合から120日」で切るものなので、
-          日付が無い試合には当てられない。**1大会ぶんしか持たない**ので
-          そのまま全部残す。
-        */
-        const dated = seasonGames.filter((g) => g.date);
-        if (!dated.length) return seasonGames;
-        const newest = dated.reduce((a, g) => (g.date > a ? g.date : a), "");
-        const limit = new Date(`${newest}T00:00:00Z`);
-        limit.setUTCDate(limit.getUTCDate() - KEEP_DAYS);
-        const from = limit.toISOString().slice(0, 10);
-        return seasonGames.filter((g) => !g.date || g.date >= from);
-      })();
+      const kept = seasonGames;
 
       const dates = kept.map((g) => g.date).filter(Boolean).sort();
-      const dropped = seasonGames.length - kept.length;
+      const years = [...new Set(dates.map((d) => d.slice(0, 4)))];
       console.log(
         `  ${season}: ${kept.length} 試合` +
           (dates.length ? `（${dates[0]} 〜 ${dates.at(-1)}）` : "") +
-          (dropped ? ` ／ 過去分 ${dropped} 件は残さない` : ""),
+          (years.length > 1 ? ` ／ ${years.length} 年ぶん` : ""),
       );
       all.push(...kept);
     }

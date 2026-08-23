@@ -148,8 +148,8 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
-      "games": 59,
-      "publicGames": 52,
+      "games": 61,
+      "publicGames": 54,
       "round": "代表決定戦",
       "latestDate": "2026-08-23",
       "champion": null

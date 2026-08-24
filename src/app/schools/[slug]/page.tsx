@@ -20,6 +20,8 @@ import { SchoolRegionalRecord } from "@/components/schools/SchoolRegionalRecord"
 import { SchoolKoshienRecord } from "@/components/schools/SchoolKoshienRecord";
 import { KOSHIEN_GAMES } from "@/lib/data/koshien-games";
 import { koshienGamesOf } from "@/lib/koshien-games";
+import { JINGU_GAMES } from "@/lib/data/jingu-games";
+import { jinguGamesOf } from "@/lib/jingu-games";
 import { shortSchoolName } from "@/lib/school-name";
 import { getRegionalDistrict } from "@/lib/regional-results";
 import { AdSlot } from "@/components/ads/AdSlot";
@@ -147,11 +149,16 @@ export default async function SchoolDetailPage({ params }: Props) {
     ★**当たらなければ出さない。** 取りこぼすほうが、誤って別の学校の戦績を
     出すよりましである。
   */
-  const koshienRecord = koshienGamesOf(KOSHIEN_GAMES, [
+  const nationalNames = [
     school.name,
     school.officialName,
     shortSchoolName(school.name, school.slug),
-  ]);
+  ];
+  const koshienRecord = [
+    ...koshienGamesOf(KOSHIEN_GAMES, nationalNames),
+    // ★明治神宮大会も同じ枠に出す（どちらも全国大会。見出しのバッジで分ける）
+    ...jinguGamesOf(JINGU_GAMES, nationalNames),
+  ];
 
   const koshienTotal = school.koshienSpringCount + school.koshienSummerCount;
   // 春・夏それぞれの最高成績。バッジに出す
@@ -401,7 +408,7 @@ export default async function SchoolDetailPage({ params }: Props) {
           */}
           {koshienRecord.length > 0 && (
             <div className="mt-3">
-              <SchoolKoshienRecord games={koshienRecord} names={[school.name, school.officialName, shortSchoolName(school.name, school.slug)]} />
+              <SchoolKoshienRecord games={koshienRecord} names={nationalNames} />
             </div>
           )}
           {regionalRecord.length > 0 ? (

@@ -1,9 +1,20 @@
 import { cn } from "@/lib/utils";
-import {
-  normalizeKoshienName,
-  type KoshienGame,
-  type KoshienGameTeam,
-} from "@/lib/koshien-games";
+import { normalizeKoshienName } from "@/lib/koshien-games";
+
+/**
+ * ★**甲子園と明治神宮の両方をここで出す**（2026-08-24）。
+ * どちらも「全国大会の試合」で見せ方は同じなので、**部品を分けない。**
+ * `KoshienGame` も `JinguGame` もこの形に収まる
+ * （`note` と `walkOff` は片方にしか無いので省略できるようにしてある）。
+ */
+type KoshienGame = {
+  tournament: string;
+  round: string | null;
+  date: string | null;
+  note?: string | null;
+  teams: { display: string; score: number; won: boolean; walkOff?: boolean }[];
+};
+type KoshienGameTeam = KoshienGame["teams"][number];
 
 /**
  * その学校の甲子園の試合。
@@ -38,8 +49,9 @@ export function SchoolKoshienRecord({
       {groups.map((group) => (
         <div key={group.key}>
           <h3 className="flex flex-wrap items-baseline gap-x-2 border-b border-line pb-1.5">
+            {/* ★大会の種類はバッジで分ける（甲子園／神宮） */}
             <span className="rounded bg-accent-500 px-1.5 py-0.5 text-xs font-bold text-navy-900">
-              甲子園
+              {group.tournament.includes("明治神宮") ? "神宮" : "甲子園"}
             </span>
             <span className="min-w-0 text-sm font-bold text-navy-800">
               {group.tournament}

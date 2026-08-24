@@ -170,6 +170,14 @@ $env:Path = "C:\Users\81809\tools\node-v24.19.0-win-x64;" + $env:Path
   `data/wikipedia-cache/summer-NNN.json` の `wikitext` を直接読むこと。
   勝ち上がり表は**太字が勝者**、`x` 付きがサヨナラ。
   書いたあとは `school_championships` の勝敗数と必ず検算する。
+- ★★**全国大会の生成物は JSON にすること**（`koshien-games.json` / `jingu-games.json`）。
+  TypeScript のリテラル配列にすると、**2,972件で TS2590**
+  （"union type that is too complex to represent"）になり**型検査が通らない。**
+  ★**型は読む側（`src/lib/koshien-games.ts` など）で1回だけ与える。**
+- ★★**大会記事は「商業」を「商」と略す**（`高松商` `松山商` `広島商`）。
+  学校マスタは正式名なので、**完全一致だけでは当たらない** ——
+  実際に**高松商業・松山商業・広島商業が甲子園0試合**になっていた。
+  ★**寄せるのは 商業→商・工業→工・農業→農 の3つと旧字体だけ。これ以上増やさないこと。**
 - ★★**甲子園の試合単位の結果は `src/lib/data/koshien-games.ts`（生成物）。**
   `scripts/build-koshien-games.mjs`（`npm run koshien-games`）が
   `data/wikipedia-cache/` の **`wikitext` を直接読む**（要約に通さない。上の項）。

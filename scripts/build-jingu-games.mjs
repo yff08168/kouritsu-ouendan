@@ -33,7 +33,8 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
-const OUT = path.join(ROOT, "src", "lib", "data", "jingu-games.ts");
+// ★甲子園と同じく JSON で書き出す（型は読む側で1回だけ与える）
+const OUT = path.join(ROOT, "src", "lib", "data", "jingu-games.json");
 const UA = { "User-Agent": "kouritsu-ouendan/1.0 (+https://kouritsu-ouendan.com)" };
 
 const args = process.argv.slice(2);
@@ -78,8 +79,26 @@ const cleanName = (s) =>
     .replace(/\s+/g, "")
     .trim();
 
+/**
+ * ★**旧字体を新字体に寄せる**（2026-08-24）。
+ *
+ * 主催者の日程表と Wikipedia で**字体が違うことがある** ——
+ * 2008年は日程表が `慶應`、Wikipedia の歴代結果が `慶応` で、
+ * **そのままだと検算Cが落ちて1試合も出せなかった**（実際に落ちた）。
+ * ★**照合のときだけ寄せる。画面に出す表記は変えない。**
+ * ★地方大会の `normalizeSchoolName`（赤穗／赤穂、立志舘／立志館）と同じ考え方。
+ */
+const OLD_KANJI = {
+  應: "応", 廣: "広", 濱: "浜", 澤: "沢", 齋: "斎", 邊: "辺", 穗: "穂",
+  舘: "館", 國: "国", 學: "学", 榮: "栄", 德: "徳", 淸: "清", 眞: "真",
+  靑: "青", 藝: "芸", 圓: "円", 惠: "恵",
+};
+
 /** 照合用。**こちらでは「高」を落とす**（学校マスタと突き合わせるため） */
-const matchName = (s) => cleanName(s).replace(/高等学校$|高校$|高$/, "");
+const matchName = (s) =>
+  cleanName(s)
+    .replace(/[應廣濱澤齋邊穗舘國學榮德淸眞靑藝圓惠]/g, (c) => OLD_KANJI[c] ?? c)
+    .replace(/高等学校$|高校$|高$/, "");
 
 /** 回戦の深さ。浅い順 */
 const ROUND_ORDER = ["1回戦", "2回戦", "3回戦", "準々決勝", "準決勝", "決勝"];
@@ -129,12 +148,20 @@ async function fetchWikiChampions() {
     if (cells.length < 6) continue;
     const year = Number(cells[0].match(/(\d{4})年/)?.[1]);
     if (!year) continue;
+    // ★**回数も取る**（古い年を Wikipedia の各回の記事から読むのに要る）
+    const no = Number(plain(cells[1]));
     const schools = Number(plain(cells[2]));
     const champion = plain(cells[3]);
     const score = plain(cells[4]);
     const runnerUp = plain(cells[5]);
     if (!champion) continue;
-    out.set(year, { schools: Number.isInteger(schools) ? schools : null, champion, score, runnerUp });
+    out.set(year, {
+      no: Number.isInteger(no) ? no : null,
+      schools: Number.isInteger(schools) ? schools : null,
+      champion,
+      score,
+      runnerUp,
+    });
   }
   return out.size ? out : null;
 }
@@ -149,6 +176,73 @@ const sameSchool = (a, b) => {
   const y = matchName(b);
   return Boolean(x && y && (x.includes(y) || y.includes(x)));
 };
+
+/**
+ * ★★**古い年は Wikipedia の各回の記事から読む**（2026-08-24。運営者の指示）。
+ *
+ * 主催者の `schedule.php` は**2013年ごろ以降のぶんしか持っていない**
+ * （それ以前は中身が空で返る）。Wikipedia には `第N回明治神宮野球大会` の
+ * 記事が回ごとにあり、**甲子園の記事とまったく同じ `{{Round16 seed}}` 形式**で
+ * 組み合わせと結果が入っている。
+ *
+ * ★★**「高校の部」の節だけを読むこと。** 同じ記事に**大学の部の同じ形の表**がある。
+ * **節で切らずに読むと、大学の試合が高校の戦績に混ざる。**
+ *
+ * ★★**`=== 決勝戦スコア ===` の `{{Linescore}}` を足さないこと。**
+ * **決勝は `{{Round16 seed}}` の `RD4=決勝` にすでに入っている**ので、
+ * 足すと**決勝だけ2回**数えられ、検算A（負けは1回だけ）が落ちる。
+ * ★甲子園の記事とはここが違う（あちらは決勝が Linescore にしか無い）。
+ */
+async function readYearFromWikipedia(year, no) {
+  const url =
+    "https://ja.wikipedia.org/w/api.php?action=parse&page=" +
+    encodeURIComponent(`第${no}回明治神宮野球大会`) +
+    "&prop=wikitext&format=json&formatversion=2";
+  const raw = await fetchText(url);
+  if (!raw) return null;
+  let t;
+  try {
+    t = JSON.parse(raw)?.parse?.wikitext ?? "";
+  } catch {
+    return null;
+  }
+  const a = t.indexOf("== 高校の部 ==");
+  if (a < 0) return null;
+  const b = t.indexOf("== 大学の部 ==", a);
+  const sec = t.slice(a, b > 0 ? b : undefined);
+
+  const games = [];
+  for (const m of sec.matchAll(/\{\{Round[^|}]*\|([\s\S]*?)\n\}\}/g)) {
+    let round = null;
+    for (const line of m[1].split("\n")) {
+      const rd = line.match(/^\s*\|\s*RD\d+\s*=\s*(.*)$/);
+      if (rd) {
+        round = rd[1].trim() === "-" ? null : rd[1].trim();
+        continue;
+      }
+      const cells = line.split("|").slice(1);
+      if (cells.length < 5) continue;
+      const [label, ta, sa, tb, sb] = cells;
+      const na = cleanName(ta.replace(/'''/g, ""));
+      const nb = cleanName(tb.replace(/'''/g, ""));
+      if (!na || !nb) continue;
+      const va = Number(String(sa).replace(/'''/g, "").replace(/[x×]/gi, "").trim());
+      const vb = Number(String(sb).replace(/'''/g, "").replace(/[x×]/gi, "").trim());
+      if (!Number.isInteger(va) || !Number.isInteger(vb)) continue;
+      const d = label.match(/(\d{1,2})月(\d{1,2})日/);
+      games.push({
+        round,
+        md: d ? [Number(d[1]), Number(d[2])] : null,
+        // ★太字が勝者。**スコアの大小から導かない**（甲子園と同じ決まり）
+        teams: [
+          { display: na, score: va, won: ta.includes("'''") },
+          { display: nb, score: vb, won: tb.includes("'''") },
+        ],
+      });
+    }
+  }
+  return games.length ? games : null;
+}
 
 /**
  * 1年ぶんの日程表を読む。**高校の部だけ。**
@@ -201,8 +295,15 @@ function readYear(html, year, wikiChampions) {
       ],
     });
   }
-  if (!games.length) return null;
+  return games.length ? verifyAndMap(games, year, wikiChampions) : null;
+}
 
+/**
+ * 検算して整える。
+ * ★**主催者の日程表から読んだときも、Wikipedia の記事から読んだときも、
+ * まったく同じ検算をかける。** 出どころで緩めない。
+ */
+function verifyAndMap(games, year, wikiChampions) {
   /*
     ---- ★★検算A: 負けは1回だけ ----
     **優勝校以外のすべての学校がちょうど1回だけ負ける。**
@@ -308,11 +409,24 @@ async function main() {
     const url = `https://www.student-baseball.or.jp/system/prog/schedule.php?m=pc&k=all&e=jingu&s=${y}`;
     const html = await fetchText(url);
     await sleep(2000);
-    if (!html) {
-      console.log(`  ⚠️ ${y}年: ページが取れない`);
-      continue;
+    let games = html ? readYear(html, y, wikiChampions) : null;
+    if (!html) console.log(`  ⚠️ ${y}年: 主催者のページが取れない`);
+    /*
+      ★★**主催者の日程表に無い年は Wikipedia の各回の記事から読む**（運営者の指示）。
+      `schedule.php` は**2013年ごろ以降のぶんしか持っていない**（それ以前は空で返る）。
+      ★**検算は同じものをかける**ので、出どころが変わっても要求は変わらない。
+    */
+    if (!games) {
+      const no = wikiChampions?.get(y)?.no ?? null;
+      if (no) {
+        const wg = await readYearFromWikipedia(y, no);
+        await sleep(1500);
+        if (wg) {
+          games = verifyAndMap(wg, y, wikiChampions);
+          if (games) console.log(`    （${y}年は Wikipedia「第${no}回明治神宮野球大会」から）`);
+        }
+      }
     }
-    const games = readYear(html, y, wikiChampions);
     if (!games) continue;
     ok++;
     out.push(...games);
@@ -340,12 +454,8 @@ async function main() {
   }
   out.sort((a, b) => b.year - a.year || (a.date ?? "").localeCompare(b.date ?? ""));
 
-  const file =
-    `// このファイルは scripts/build-jingu-games.mjs が生成する。直接編集しない。\n` +
-    `// 明治神宮野球大会（高校の部）の試合結果。**大学の部は入っていない。**\n` +
-    `// 出典: 公益財団法人 日本学生野球協会。数値・校名・日付・回戦のみ。\n\n` +
-    `import type { JinguGame } from "@/lib/jingu-games";\n\n` +
-    `export const JINGU_GAMES: readonly JinguGame[] = ${JSON.stringify(out, null, 2)};\n`;
+  // ★JSON。型は読む側（`src/lib/jingu-games.ts`）で1回だけ与える
+  const file = JSON.stringify(out, null, 1) + "\n";
   writeFileSync(OUT, file, "utf8");
   console.log(`書き出した: ${path.relative(ROOT, OUT)}（${Math.round(file.length / 1024)}KB）`);
 }

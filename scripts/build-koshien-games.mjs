@@ -40,7 +40,13 @@ import path from "node:path";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const CACHE = path.join(ROOT, "data", "wikipedia-cache");
-const OUT = path.join(ROOT, "src", "lib", "data", "koshien-games.ts");
+/*
+  ★★**JSON で書き出す**（2026-08-24）。
+  TypeScript のリテラル配列にすると、**2,972件で TS2590**
+  （"union type that is too complex to represent"）になり型検査が通らない。
+  ★**JSON なら型を推論させずに済む**（読む側で1回だけ型を与える）。
+*/
+const OUT = path.join(ROOT, "src", "lib", "data", "koshien-games.json");
 
 const args = process.argv.slice(2);
 const flag = (n) => {
@@ -149,7 +155,15 @@ function readResultTables(text) {
       // rowspan の行に日付が入っている。以降の行はその日付を引き継ぐ
       const d = line.match(/(\d{1,2})月(\d{1,2})日/);
       if (d) date = [Number(d[1]), Number(d[2])];
-      const cells = line.replace(/^\|-?/, "").split("||").map((c) => c.trim());
+      /*
+        ★**セルの端のパイプを落とす。** 記事側に**パイプが1つ多い行**がある
+        （第106回の準決勝は `|第1試合|||関東第一||2 - 1||…` で、
+        そのままだと校名が `|関東第一` になり、**優勝校が2校いる**ことになって落ちた）。
+      */
+      const cells = line
+        .replace(/^\|-?/, "")
+        .split("||")
+        .map((c) => c.trim().replace(/^\|+|\|+$/g, "").trim());
       const at = cells.findIndex((c) => /^\d{1,2}x?\s*[-−–]\s*\d{1,2}x?$/.test(c.replace(/\s/g, "")));
       if (at < 1) continue;
       const sc = cells[at].replace(/\s/g, "").split(/[-−–]/);
@@ -363,12 +377,8 @@ async function main() {
     return;
   }
 
-  const file =
-    `// このファイルは scripts/build-koshien-games.mjs が生成する。直接編集しない。\n` +
-    `// 甲子園（春の選抜・夏の選手権）の試合単位の結果。\n` +
-    `// 出典: ja.wikipedia.org の大会別記事（CC BY-SA 4.0）の wikitext。事実データのみ。\n\n` +
-    `import type { KoshienGame } from "@/lib/koshien-games";\n\n` +
-    `export const KOSHIEN_GAMES: readonly KoshienGame[] = ${JSON.stringify(out, null, 2)};\n`;
+  // ★JSON。型は読む側（`src/lib/koshien-games.ts`）で1回だけ与える
+  const file = JSON.stringify(out, null, 1) + "\n";
   writeFileSync(OUT, file, "utf8");
   console.log(`書き出した: ${path.relative(ROOT, OUT)}（${Math.round(file.length / 1024)}KB）`);
 }

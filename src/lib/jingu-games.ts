@@ -13,6 +13,11 @@
  * という方針（地方大会・甲子園と同じ）。
  */
 
+import raw from "@/lib/data/jingu-games.json";
+
+/** ★生成物は JSON。型はここで1回だけ与える（甲子園と同じ理由） */
+export const JINGU_GAMES = raw as unknown as readonly JinguGame[];
+
 export type JinguGameTeam = {
   /** 出典の表記から「高」を落としたもの（`英明高` → `英明`） */
   display: string;

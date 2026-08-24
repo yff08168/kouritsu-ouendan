@@ -1898,6 +1898,52 @@ export const REGIONAL_TOKUSHIMA: RegionalDistrict = {
           "slug": "tokushimashogyo"
         }
       ]
+    },
+    {
+      "date": "2026-08-24",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高等学校新人中央大会",
+      "round": "準決勝",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "阿南光",
+          "score": 5,
+          "won": true,
+          "name": "阿南光高校",
+          "slug": "ananko"
+        },
+        {
+          "display": "生光学園",
+          "score": 3,
+          "won": false,
+          "name": "生光学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高等学校新人中央大会",
+      "round": "準決勝",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "鳴門渦潮",
+          "score": 6,
+          "won": true,
+          "name": "鳴門渦潮高校",
+          "slug": "narutozushio"
+        },
+        {
+          "display": "徳島商業",
+          "score": 5,
+          "won": false,
+          "name": "徳島商業高校",
+          "slug": "tokushimashogyo"
+        }
+      ]
     }
   ]
 };

@@ -4,7 +4,7 @@
 import type { RegionalPickups } from "@/lib/regional-results";
 
 export const REGIONAL_PICKUPS: RegionalPickups = {
-  "latestDate": "2026-08-21",
+  "latestDate": "2026-08-24",
   "spotlightSeason": "autumn",
   "spotlight": [
     {
@@ -13,11 +13,63 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "name": "鳴門渦潮高校",
       "district": "徳島",
       "districtSlug": "tokushima",
-      "wins": 1,
-      "standing": "1回戦突破"
+      "wins": 2,
+      "standing": "決勝進出"
     }
   ],
   "games": [
+    {
+      "districtSlug": "tokushima",
+      "district": "徳島",
+      "sourceName": "徳島県高等学校野球連盟",
+      "sourceUrl": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/",
+      "date": "2026-08-24",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高等学校新人中央大会",
+      "round": "準決勝",
+      "teams": [
+        {
+          "display": "阿南光",
+          "score": 5,
+          "won": true,
+          "name": "阿南光高校",
+          "slug": "ananko"
+        },
+        {
+          "display": "生光学園",
+          "score": 3,
+          "won": false,
+          "name": "生光学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "districtSlug": "tokushima",
+      "district": "徳島",
+      "sourceName": "徳島県高等学校野球連盟",
+      "sourceUrl": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/",
+      "date": "2026-08-24",
+      "season": "autumn",
+      "tournament": "令和8年度徳島県高等学校新人中央大会",
+      "round": "準決勝",
+      "teams": [
+        {
+          "display": "鳴門渦潮",
+          "score": 6,
+          "won": true,
+          "name": "鳴門渦潮高校",
+          "slug": "narutozushio"
+        },
+        {
+          "display": "徳島商業",
+          "score": 5,
+          "won": false,
+          "name": "徳島商業高校",
+          "slug": "tokushimashogyo"
+        }
+      ]
+    },
     {
       "districtSlug": "tokushima",
       "district": "徳島",
@@ -67,58 +119,6 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": true,
           "name": "徳島商業高校",
           "slug": "tokushimashogyo"
-        }
-      ]
-    },
-    {
-      "districtSlug": "tokushima",
-      "district": "徳島",
-      "sourceName": "徳島県高等学校野球連盟",
-      "sourceUrl": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/",
-      "date": "2026-08-20",
-      "season": "autumn",
-      "tournament": "令和8年度徳島県高等学校新人中央大会",
-      "round": "1回戦",
-      "teams": [
-        {
-          "display": "鳴門",
-          "score": 3,
-          "won": false,
-          "name": "鳴門高校",
-          "slug": "tokushima-naruto"
-        },
-        {
-          "display": "阿南光",
-          "score": 4,
-          "won": true,
-          "name": "阿南光高校",
-          "slug": "ananko"
-        }
-      ]
-    },
-    {
-      "districtSlug": "tokushima",
-      "district": "徳島",
-      "sourceName": "徳島県高等学校野球連盟",
-      "sourceUrl": "https://www.tk2.nmt.ne.jp/~tokushimakoyaren/",
-      "date": "2026-08-13",
-      "season": "autumn",
-      "tournament": "令和8年度徳島県高校野球新人南部ブロック大会",
-      "round": "決勝",
-      "teams": [
-        {
-          "display": "阿南光",
-          "score": 1,
-          "won": false,
-          "name": "阿南光高校",
-          "slug": "ananko"
-        },
-        {
-          "display": "海部",
-          "score": 8,
-          "won": true,
-          "name": "海部高校",
-          "slug": "kaifu"
         }
       ]
     },
@@ -617,32 +617,6 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       ]
     },
     {
-      "districtSlug": "kanagawa",
-      "district": "神奈川",
-      "sourceName": "神奈川高校野球ステーション",
-      "sourceUrl": "https://www.kanagawa-baseball.com/",
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権神奈川大会",
-      "round": "5回戦",
-      "teams": [
-        {
-          "display": "市ケ尾",
-          "score": 3,
-          "won": true,
-          "name": "市ケ尾高校",
-          "slug": "ichigao"
-        },
-        {
-          "display": "川和",
-          "score": 1,
-          "won": false,
-          "name": "川和高校",
-          "slug": "kawawa"
-        }
-      ]
-    },
-    {
       "districtSlug": "saitama",
       "district": "埼玉",
       "sourceName": "埼玉高校野球情報局",
@@ -717,84 +691,6 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": false,
           "name": "日本航空",
           "slug": null
-        }
-      ]
-    },
-    {
-      "districtSlug": "kanagawa",
-      "district": "神奈川",
-      "sourceName": "神奈川高校野球ステーション",
-      "sourceUrl": "https://www.kanagawa-baseball.com/",
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権神奈川大会",
-      "round": "4回戦",
-      "teams": [
-        {
-          "display": "市ケ尾",
-          "score": 5,
-          "won": true,
-          "name": "市ケ尾高校",
-          "slug": "ichigao"
-        },
-        {
-          "display": "川崎工科",
-          "score": 2,
-          "won": false,
-          "name": "川崎工科高校",
-          "slug": "kawasakikoka"
-        }
-      ]
-    },
-    {
-      "districtSlug": "kanagawa",
-      "district": "神奈川",
-      "sourceName": "神奈川高校野球ステーション",
-      "sourceUrl": "https://www.kanagawa-baseball.com/",
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権神奈川大会",
-      "round": "4回戦",
-      "teams": [
-        {
-          "display": "横浜清陵",
-          "score": 10,
-          "won": true,
-          "name": "横浜清陵高校",
-          "slug": "yokohamaseiryo"
-        },
-        {
-          "display": "多摩",
-          "score": 5,
-          "won": false,
-          "name": "多摩高校",
-          "slug": "kanagawa-tama"
-        }
-      ]
-    },
-    {
-      "districtSlug": "kanagawa",
-      "district": "神奈川",
-      "sourceName": "神奈川高校野球ステーション",
-      "sourceUrl": "https://www.kanagawa-baseball.com/",
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権神奈川大会",
-      "round": "4回戦",
-      "teams": [
-        {
-          "display": "横浜商業",
-          "score": 12,
-          "won": true,
-          "name": "横浜商業高校",
-          "slug": "yokohamashogyo"
-        },
-        {
-          "display": "新羽",
-          "score": 2,
-          "won": false,
-          "name": "新羽高校",
-          "slug": "nippa"
         }
       ]
     },

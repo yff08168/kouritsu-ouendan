@@ -50,6 +50,7 @@ import { createClient } from "@supabase/supabase-js";
 
 import { fetchPdfBytes, fetchPdfPages, pdfPages } from "./lib/pdf-text.mjs";
 import { assembleVectorBracket, readFilledShapes } from "./lib/vector-bracket.mjs";
+import { assembleYaguraBracket } from "./lib/yagura-bracket.mjs";
 import {
   assembleSlotBracket,
   explodeNumberRuns,
@@ -11283,6 +11284,199 @@ const toyama = {
   },
 };
 
+/**
+ * 大阪府高等学校野球連盟（`ohbl.sakura.ne.jp`）。**41県目**（2026-08-25）。
+ *
+ * ------------------------------------------------------------------
+ * ★ 規約（2026-08-25 確認）
+ *
+ *   - `robots.txt` は **404**
+ *   - **転載・無断・複製・営利・著作・引用のいずれの掲示も無い**
+ *   - ★★**フレーム構成なので、外側だけ見ても中身が読めない。**
+ *     `menu.html` / `toppage.html` / `2-taikaikankei/*.html` /
+ *     `4-kako-kiroku/*.html` を**中のフレームまで開いて**確かめた。
+ *     （`data/federation-sites.json` の `terms: []` は今回は正しかったが、
+ *     大分・栃木・福島では誤っていたので原文まで降りること）
+ *
+ * ------------------------------------------------------------------
+ * ★★ 「やぐら表」——「勝ち上がりがそのまま刷ってある」表
+ *
+ *   `4-kako-kiroku/kako-5nen.html` に**過去5年ぶん×3季の「全試合」PDF**が並ぶ。
+ *   `taikai-record/<西暦><spr|sum|aut>[-_]yagura.pdf`。
+ *
+ *   ★**枝を推測しない。** この紙は**勝った学校を次の列にもう一度刷る**ので、
+ *   どの学校がどこまで勝ったかが紙に書いてある。組み立ては
+ *   `scripts/lib/yagura-bracket.mjs` にあり、**要るのは「同じ列の隣どうしが対戦相手」だけ。**
+ *
+ *   ★**`slot-bracket.mjs`（座標から組む）とも `vector-bracket.mjs`（線を読む）とも別物。**
+ *
+ * ------------------------------------------------------------------
+ * ★★ 検算は4つ。**うち2つが枝の外から来る事実**
+ *
+ *   1. **勝った学校は次の列にいる／負けた学校はいない**（紙の外の数字を使わない不変条件）
+ *   2. 列の件数が偶数（いちばん内側を除く）
+ *   3. ★**紙に刷ってある「チーム数」== 組み立てた出場校数**、かつ **試合数 = チーム数 − 1**
+ *   4. ★★**連盟自身の歴代表**（`sensyuken-osaka.html` / `haru-osaka.html` /
+ *      `aki-osaka.html`）が**優勝校・準優勝校・決勝スコア・準決勝進出校**を持っている。
+ *      **枝とは別の場所から来る事実**なので、石川で通ってしまった
+ *      「構造は合うのに決勝の相手が違う」を止められる。
+ *
+ *   実測（2026-08-25）:
+ *     2025年夏 … 167(152) 東大阪大柏原 6-5 大阪桐蔭／準決勝 東海大仰星・履正社 → **4つとも一致**
+ *     2025年春 … (147)    大阪桐蔭 6-2 履正社／準決勝 大体大浪商・関大北陽   → **4つとも一致**
+ *
+ * ------------------------------------------------------------------
+ * ★★ いま出せるのは2大会だけ（2025年の春と夏）
+ *
+ *   ★**紙の形が年で変わる。** 15枚を実測して、**検算を全部通ったのは2枚。**
+ *   落ちている13枚の壊れ方は3通りで、**どれも「読めていない」がはっきり出る**:
+ *
+ *     - 2021〜2024年の**夏** … 出場校が実際の1.6〜1.9倍に膨らむ（見出し以外にも
+ *       試合でない数字が入っている）
+ *     - 2021〜2024年の**春・秋** … 左右の列数が食い違う（列の束ね方が合わない）
+ *     - 2023年秋 … 勝者の印 `〇` が校名に食い込む（`箕面学園〇箕面学園`）
+ *
+ *   ★**「だいたい合っている表」を出さない**（石川と同じ轍）。
+ *   ★**落ちた大会は1試合も出さず、落ちたことをログに出す。**
+ *   ★**次に触る人へ**: 紙を1枚ずつ測り直すこと。**年ごとに測ること**
+ *     （このリポジトリで何度も踏んでいる）。
+ *
+ * ------------------------------------------------------------------
+ * ★ この紙に日付は無い
+ *
+ *   会期（`（7月5日～7月27日）`）は刷ってあるが、**試合ごとの日付は無い。**
+ *   `date: null` で出す（**推測で埋めない**。日付の無い出典は他にもある）。
+ */
+const osaka = {
+  slug: "osaka",
+  district: "大阪",
+  name: "大阪府高等学校野球連盟",
+  siteUrl: "http://www.ohbl.sakura.ne.jp/",
+  politenessMs: 1500,
+  seasons: {
+    spring: "http://www.ohbl.sakura.ne.jp/4-kako-kiroku/kako-5nen.html",
+    summer: "http://www.ohbl.sakura.ne.jp/4-kako-kiroku/kako-5nen.html",
+    autumn: "http://www.ohbl.sakura.ne.jp/4-kako-kiroku/kako-5nen.html",
+  },
+  /** 季節 → ファイル名の中の綴り */
+  tagOf: { spring: "spr", summer: "sum", autumn: "aut" },
+
+  async collect({ fetchHtml, season, url, year }) {
+    const index = await fetchHtml(url);
+    if (!index) return [];
+    /*
+      ★**URLを組み立てない。** 一覧に載っているリンクだけを辿る。
+      **区切りが年で違う**（`2021sum-yagura.pdf` と `2022sum_yagura.pdf`）ので、
+      規則で当てにいくと片方の年が404になる。
+    */
+    const tag = this.tagOf[season];
+    const want = new RegExp(String(year) + tag + "[-_]yagura\\.pdf$", "i");
+    const href = [...index.matchAll(/href="([^"]+\.pdf)"/gi)]
+      .map((m) => new URL(m[1], url).toString())
+      .find((u) => want.test(u));
+    // その年の紙が一覧に無ければ静かに飛ばす（過去5年ぶんしか置いていない）
+    if (!href) return [];
+
+    const bytes = await fetchPdfBytes(href, { headers: UA });
+    await sleep(this.politenessMs);
+    if (!bytes) return [];
+    return this.readBracket(bytes, season, year);
+  },
+
+  /** 紙1枚を読む。★**検算に1つでも落ちたら1試合も出さない。** */
+  async readBracket(bytes, season, year) {
+    const pages = await pdfPages(bytes.slice());
+    if (!pages?.length) return [];
+    const page = pages[0];
+    const head = pages[0].lines
+      .slice(0, 4)
+      .map((l) => normalize(l.text.replace(/\t/g, "")))
+      .join(" ");
+
+    /*
+      大会名は紙の見出しから取る。
+      ★**回数から年を組み立てないこと** —— 紙に西暦か元号が刷ってある。
+        夏 `第１０７回全国高等学校野球選手権大阪大会〔令和7(2025)年〕`
+        春 `令和７年度春季近畿地区高等学校野球大会大阪府予選`
+        秋 `令和７年度 秋季近畿地区高校野球大会 大阪府予選`
+    */
+    const tournament = normalize(page.lines[0]?.text.replace(/\t/g, "") ?? "").trim() || null;
+    if (!tournament) return [];
+
+    /*
+      ★**チーム数の書き方が2通りある。**
+        夏 `（参加校数 167　チーム数 152 ）`
+        春 `(参加校163校　147チーム）`  ← ★**「チーム数」ではなく「147チーム」**
+      片方だけ見ていて、春の検算が「紙にチーム数が無い」で飛んでいた。
+    */
+    const printed = head.match(/チーム数[^0-9]*(\d+)/) ?? head.match(/(\d+)\s*チーム/);
+    const teamCount = printed ? Number(printed[1]) : null;
+
+    const drop = (why) => {
+      console.log("  ⚠️ 大阪: 「" + tournament + "」は " + why + "。**この大会は1試合も出さない**");
+      return [];
+    };
+
+    /*
+      ★★**紙に刷ってある年が、取りに行った年と一致するか。**
+      ファイル名で選んでいるので普通は一致するが、**連盟が別の年の紙を
+      その名前で置いたら気づけない**（栃木で「今年の紙を過去年として読む」を踏んでいる）。
+      ★**この紙には試合ごとの日付が無い**ので、共通の「大会名の年と試合の年が
+      食い違ったら捨てる」検算が効かない。**ここで見るしかない。**
+    */
+    const label = normalize(tournament);
+    // 夏 `〔令和7(2025)年〕` は西暦がそのまま／春秋 `令和7年度` は元号（＋2018）
+    const seireki = label.match(/[(（](\d{4})[)）]\s*年/);
+    const reiwa = label.match(/令和\s*(\d+)\s*年/);
+    const named = seireki ? Number(seireki[1]) : reiwa ? Number(reiwa[1]) + 2018 : null;
+    if (named && named !== year) return drop(`紙の年が ${named} 年（取りに行ったのは ${year} 年）`);
+    if (!named) console.log("  ⚠️ 大阪: 「" + tournament + "」から年が読めず、年の検算は未実施");
+
+    const built = assembleYaguraBracket(page.lines);
+    if (built.errors.length)
+      return drop(built.errors.length + " 件の検算に落ちた（" + built.errors[0] + " ほか）");
+    /*
+      ★★**紙に刷ってあるチーム数と突き合わせる。**
+      勝ち抜き戦なので **試合数 = チーム数 − 1** が必ず成り立つ。
+      ★**刷っていない紙なら飛ばす**（無いことを理由に大会を落とさない）が、
+      **飛ばしたことは必ずログに出す**（沖縄で決めた作法）。
+    */
+    if (teamCount == null) {
+      console.log("  ⚠️ 大阪: 「" + tournament + "」の紙にチーム数が無く、その検算は未実施");
+    } else if (built.entrants !== teamCount || built.games.length !== teamCount - 1) {
+      return drop(
+        "紙のチーム数 " + teamCount + " に対し 出場 " + built.entrants + "・試合 " + built.games.length,
+      );
+    }
+
+    /*
+      回戦の名前。★**内側から数える**（決勝・準決勝・準々決勝）。
+      外側から数えると、シードの有無で1回戦の位置が年ごとに動く。
+    */
+    const last = Math.max(...built.games.map((g) => g.round));
+    const nameOf = (r) => {
+      const back = last - r;
+      if (back === 0) return "決勝";
+      if (back === 1) return "準決勝";
+      if (back === 2) return "準々決勝";
+      return r + "回戦";
+    };
+
+    return built.games.map((g) => ({
+      // ★**この紙に試合ごとの日付は無い。** 推測で埋めない
+      date: null,
+      season,
+      tournament,
+      round: nameOf(g.round),
+      venue: null,
+      teams: [
+        { display: g.a.name, score: g.a.score, won: g.a.score > g.b.score },
+        { display: g.b.name, score: g.b.score, won: g.b.score > g.a.score },
+      ],
+    }));
+  },
+};
+
 const ADAPTERS = [
   nagano,
   kanagawa,
@@ -11341,6 +11535,7 @@ const ADAPTERS = [
     福岡（SVG）と同じ考え方の、PDF版。**toyama の説明を読むこと。**
   */
   toyama,
+  osaka,
 ];
 
 // ------------------------------------------------------------------
@@ -11698,6 +11893,33 @@ const DISTRICT_ALIASES = {
     **どちらも同じ大会に出ている**ので、畳めていないと取り違えかねない。
   */
   "沖縄\t沖高専": "okinawakogyo-kosen",
+  /*
+    大阪（2026-08-25。41県目）。★**やぐら表は校名を大きく畳む。**
+
+    - `工業高専` … 府内の高専は **大阪公立大学工業高専の1校だけ**なので指す先は一意
+      （学校マスタで確認。`prefectural` / `kosen`）
+    - `大阪教育センター附` と `府教育センター附` … **同じ1校を年で書き分けている。**
+      ★**同じ大会には出ていない**ことを確かめてある（春＝前者・夏＝後者）
+    - `堺市立堺` … 市立の堺高校。★**同じ紙に府立の `堺西` `堺東` も出ている**ので、
+      畳めていないと取り違えかねない
+
+    ★★**`大教大池田` と `大教大天王寺` は結び付けない。**
+    大阪教育大学附属は池田・天王寺・平野のキャンパスごとに別チームで出ており、
+    **同じ大会に両方が出ている**（実測）。学校マスタは
+    `大阪教育大学附属高校` の1件しか持っていないので、
+    **どちらを当てても「2チームが1校になる」。**
+    ★**結び付けないほうが正しい**（誤った戦績を作らない）。
+  */
+  "大阪\t工業高専": "osakakoritsudaigakukogyo",
+  "大阪\t大阪教育センター附": "kyoikusentafuzoku",
+  "大阪\t府教育センター附": "kyoikusentafuzoku",
+  "大阪\t堺市立堺": "osaka-sakai",
+  /*
+    ★`岸和田産` … **市立の岸和田市立産業高校。**
+    ★**同じ紙に府立の `岸和田` も出ていて、そちらは規則で当たる**ので、
+    出典が書き分けている（＝推測ではない）。
+  */
+  "大阪\t岸和田産": "kishiwadashiritsusangyo",
 };
 
 /**

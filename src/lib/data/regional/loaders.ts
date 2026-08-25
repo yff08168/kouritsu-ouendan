@@ -50,4 +50,5 @@ export const REGIONAL_LOADERS: Record<string, () => Promise<RegionalDistrict>> =
   okinawa: () => import("./okinawa.json").then((m) => m.default as RegionalDistrict),
   fukushima: () => import("./fukushima.json").then((m) => m.default as RegionalDistrict),
   toyama: () => import("./toyama.json").then((m) => m.default as RegionalDistrict),
+  osaka: () => import("./osaka.json").then((m) => m.default as RegionalDistrict),
 };

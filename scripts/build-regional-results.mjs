@@ -11400,7 +11400,16 @@ const osaka = {
         春 `令和７年度春季近畿地区高等学校野球大会大阪府予選`
         秋 `令和７年度 秋季近畿地区高校野球大会 大阪府予選`
     */
-    const tournament = normalize(page.lines[0]?.text.replace(/\t/g, "") ?? "").trim() || null;
+    /*
+      ★**見出しの行に「主催 大阪府高等学校野球連盟」が同居している年がある**（2023年）。
+      そのままだと大会名が
+      `令和5年度春季近畿地区高等学校野球大会大阪府予選主催大阪府高等学校野球連盟`
+      になり、画面にもURLの元にもそれが出る。**主催・後援から先を落とす。**
+    */
+    const tournament =
+      normalize(page.lines[0]?.text.replace(/\t/g, "") ?? "")
+        .replace(/\s*(主催|後援)\s*.*$/, "")
+        .trim() || null;
     if (!tournament) return [];
 
     /*
@@ -11438,14 +11447,29 @@ const osaka = {
     /*
       ★★**紙に刷ってあるチーム数と突き合わせる。**
       勝ち抜き戦なので **試合数 = チーム数 − 1** が必ず成り立つ。
+
+      ★**不戦勝まわりの3つを足し引きする。どれも「枠はあるが試合ではない」もの。**
+
+        `byes`              相手の欄が空の不戦勝。**枠を1つ使う**ので試合数に足す。
+                            **1回戦なら出場校を1つ隠している**が、2回戦より先は
+                            下の `doubleWithdrawals` で空いた枠なので隠していない
+        `doubleWithdrawals` 両校が出場を取りやめた組。その先の枠が1つ空く
+        `unreadable`        字が壊れて得点が読めない試合（枠も試合も在る）
+
       ★**刷っていない紙なら飛ばす**（無いことを理由に大会を落とさない）が、
       **飛ばしたことは必ずログに出す**（沖縄で決めた作法）。
     */
+    const byes = built.byes ?? 0;
+    const empties = built.doubleWithdrawals ?? 0;
     if (teamCount == null) {
       console.log("  ⚠️ 大阪: 「" + tournament + "」の紙にチーム数が無く、その検算は未実施");
-    } else if (built.entrants !== teamCount || built.games.length !== teamCount - 1) {
+    } else if (
+      built.entrants + byes - empties !== teamCount ||
+      built.games.length + byes !== teamCount - 1
+    ) {
       return drop(
-        "紙のチーム数 " + teamCount + " に対し 出場 " + built.entrants + "・試合 " + built.games.length,
+        "紙のチーム数 " + teamCount + " に対し 出場 " + built.entrants + "・試合 " + built.games.length +
+          "（不戦勝 " + byes + "・両校取りやめ " + empties + "）",
       );
     }
 
@@ -11470,15 +11494,26 @@ const osaka = {
       ★**得点が無いものを 0対0 として出さないこと**（島根で87件やっていた轍）。
       ★**飛ばした数はログに出す**（「出典に無い」と「こちらで外した」を見分けるため）。
     */
-    if (built.walkovers) {
+    if (built.walkovers || byes) {
       console.log(
-        `  大阪: 「${tournament}」の不戦勝 ${built.walkovers} 試合は、` +
+        `  大阪: 「${tournament}」の不戦勝 ${built.walkovers + byes} 試合は、` +
           "得点が無いので出しません（枝の検算には数えています）",
+      );
+    }
+    /*
+      ★**字が壊れて得点が読めない試合も出さない**（2023年春に1件）。
+      **勝ったのがどちらかは次の列から分かる**が、**点は分からない。**
+      ★**分からないものを画面に出さない。**
+    */
+    if (built.unreadable) {
+      console.log(
+        `  大阪: 「${tournament}」の ${built.unreadable} 試合は、` +
+          "紙の得点の字が壊れていて読めないので出しません",
       );
     }
 
     return built.games
-      .filter((g) => !g.a.mark && !g.b.mark)
+      .filter((g) => !g.a.mark && !g.b.mark && !g.a.unknown && !g.b.unknown)
       .map((g) => ({
         // ★**この紙に試合ごとの日付は無い。** 推測で埋めない
         date: null,

@@ -799,9 +799,33 @@ const yamanashi = {
     const days = html.matchAll(
       /<P class="topic_y">([\s\S]*?)<\/P>([\s\S]*?)(?=<P class="topic_y">|<\/body>|$)/gi,
     );
+    /*
+      ★★**前の年の日が消し残っている**（2026-08-25 に修正）。
+
+      連盟は**前年のページを雛形にして書き換えている**ので、
+      **上書きされなかった日が、前の年の日付のまま先頭に残る。**
+
+        26haruresult.html … 大会12日目 **2023年**05月07日 ／ 大会11日目 **2023年**05月06日
+                            大会11日目 2026年05月06日 … 大会１日目 2026年04月11日
+        25akiresult.html  … 大会９日目 **2024年**09月29日（2025年の9日目は9月23日）
+
+      ★**「大会N日目」が二重になる**のが目印だが、**そこを見る必要は無い。**
+      ファイル名の `<西暦下2桁>` が**その紙の年そのもの**なので、
+      **年の違う日をそのまま落とせる**（枝の外から来る事実で判定できる）。
+
+      ★**落とした試合を別の大会として拾い直さないこと。**
+      前の年の大会名はこの紙のどこにも書かれておらず、
+      **回数を数えて当てにいくと、そこは推測になる。**
+      過去年が要るなら `--year` で前の年の紙を取ること（URLは年で引ける）。
+    */
+    let stale = 0;
     for (const day of days) {
       const date = normalize(plain(day[1])).match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
       if (!date) continue;
+      if (Number(date[1]) !== Number(year)) {
+        stale += 1;
+        continue;
+      }
       const isoDate = `${date[1]}-${date[2].padStart(2, "0")}-${date[3].padStart(2, "0")}`;
 
       const body = day[2];
@@ -856,6 +880,11 @@ const yamanashi = {
           ],
         });
       }
+    }
+    if (stale) {
+      console.log(
+        `  ⚠️ 山梨: ${year} 年の紙に前の年の日が ${stale} 日ぶん消し残っている。その日は出さない`,
+      );
     }
     return games;
   },
@@ -10213,22 +10242,62 @@ const shimane = {
       const html = await fetchHtml(url);
       // ★その代の大会がまだ無ければ404。**静かに飛ばす**（例外にしない）
       if (!html) continue;
-      games.push(...this.parse(html, season));
+      /*
+        ★**その紙の暦年は、引きに行った「年代」から決まる**（下の `parse` で使う）。
+        春・夏は 年代＝暦年、**秋だけ 年代＝暦年+1**（`keysOf` と同じ規則）。
+      */
+      games.push(...this.parse(html, season, season === "autumn" ? era - 1 : era));
     }
     return games;
   },
-  /** 1つの大会のページを読む */
-  parse(html, season) {
+  /**
+   * 1つの大会のページを読む。
+   * `expectedYear` … その紙の暦年（`collect` が年代から出す）。省くと年の検査をしない。
+   */
+  parse(html, season, expectedYear = null) {
     const tournament = normalize(plain(html.match(/<title>([\s\S]*?)<\/title>/)?.[1] ?? "")).trim() || null;
     const out = [];
     let skipped = 0;
+    let repaired = 0;
+    let badDates = 0;
     /*
       日付のかたまり（`div.taikai-nittei`）ごとに切る。
       ★**1日に複数の球場がある**ので、球場と試合の並びを順に読んで
       **直前の球場を持ち回る**（球場ごとに `h1.kaizyo` → `div.siaikekka` が来る）。
     */
     for (const block of html.split(/<div class="taikai-nittei">/).slice(1)) {
-      const date = block.match(/datetime="(\d{4}-\d{2}-\d{2})"/)?.[1] ?? null;
+      /*
+        ★★**`datetime` の年が出典側で打ち間違えられている日がある**（2026-08-25 に修正）。
+
+          2023年春季島根県大会 … 4月21日の `datetime` が **2022**-04-21（7試合）
+          2024年度春季島根県大会 … 4月28日〜5月4日が **2023**-…（8試合）
+          2020年秋季島根県大会 … 9月26日・27日が **2020**-…（正しくは2019年。4試合）
+
+        ★**画面に出ている見出し（`<time>4月21日</time>`）には年が無い**ので、
+        **人が読むぶんには正しく、機械で読むところだけが間違っている。**
+
+        ★**落とすと本物の19試合が消える。**
+        1回戦だけ・決勝だけが欠けた大会になり、トーナメント表も組めなくなる。
+        ★**年はこの紙の外から決まっている** —— どの年代のページを引きに行ったかで
+        決まるので、**推測ではない。** 月日は見出しに刷ってあるものをそのまま使う。
+
+        ★**直すのは年だけ。** 見出しの月日と `datetime` の月日が食い違う日は
+        **打ち間違い以上のことが起きている**ので、直さずに落とす。
+      */
+      const ymd = block.match(/datetime="(\d{4})-(\d{2})-(\d{2})"/);
+      let date = ymd ? `${ymd[1]}-${ymd[2]}-${ymd[3]}` : null;
+      if (ymd && expectedYear != null && Number(ymd[1]) !== expectedYear) {
+        const shown = normalize(plain(block.match(/<time[^>]*>([\s\S]*?)<\/time>/)?.[1] ?? "")).match(
+          /(\d{1,2})月(\d{1,2})日/,
+        );
+        if (shown && Number(shown[1]) === Number(ymd[2]) && Number(shown[2]) === Number(ymd[3])) {
+          date = `${expectedYear}-${ymd[2]}-${ymd[3]}`;
+          repaired += 1;
+        } else {
+          badDates += 1;
+          continue;
+        }
+      }
       let venue = null;
       const re = /<h1 class="kaizyo">([\s\S]*?)<\/h1>|<ul class="siaimei">([\s\S]*?)<\/ul>/g;
       let m;
@@ -10265,8 +10334,24 @@ const shimane = {
         /*
           ★**まだ行われていない試合の枠がある**（得点が空）。出さない。
           推測で埋めないのはもちろん、0対0の引き分けとして出さないこと。
+
+          ★★**`Number.isFinite` では止まらなかった**（2026-08-25 に修正）。
+          **`Number("")` は NaN ではなく `0`** なので、得点の空いた枠が
+          **すべて 0対0 の引き分けとして画面に出ていた**（1,285試合のうち87件）。
+
+            <li class="point"></li> … 雨天順延・未実施
+            <h1 class="siaikekka-biko-rain">雨天順延</h1>
+
+          ★**順延した試合は、順延した日にも改めて載る**ので、
+          **同じ顔合わせが「0対0の引き分け」と「本当の結果」の2件になっていた。**
+          第93回・第99回の選手権で**準決勝が4試合**になっていたのはこれ
+          （出典の拾い過ぎではなかった）。
+
+          ★**0対0の引き分けそのものは実在する**（引き分け再試合）ので、
+          **「空かどうか」で見ること。**「0かどうか」で見ると本物を捨てる。
         */
-        if (!a || !b || !Number.isFinite(s1) || !Number.isFinite(s2)) continue;
+        const scored = /^\d+$/.test(points[0]) && /^\d+$/.test(points[1]);
+        if (!a || !b || !scored || !Number.isFinite(s1) || !Number.isFinite(s2)) continue;
         out.push({
           date,
           season,
@@ -10288,6 +10373,21 @@ const shimane = {
       console.log(
         `  ⚠️ 島根: 校名か得点が2つ揃わない試合が ${skipped} 件。その試合は出さない。` +
           "出典の作りが変わった可能性がある",
+      );
+    }
+    /*
+      ★**直した件数・落とした件数は必ず出す。**
+      黙って直すと「出典が直った」と「こちらで直している」が見分けられない。
+    */
+    if (repaired) {
+      console.log(
+        `  ⚠️ 島根: 出典の datetime の年が違う日が ${repaired} 日ぶん。` +
+          `見出しの月日はそのままに、${expectedYear} 年として出す`,
+      );
+    }
+    if (badDates) {
+      console.log(
+        `  ⚠️ 島根: 年が ${expectedYear} 年ではなく、見出しの月日とも食い違う日が ${badDates} 日ぶん。その日は出さない`,
       );
     }
     return out;

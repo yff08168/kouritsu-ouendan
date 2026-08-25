@@ -1,58 +1,126 @@
 import Link from "next/link";
 
 import { seasonLabel } from "@/lib/regional-results";
+import type { RegionalSeason } from "@/lib/regional-results";
 import type { TournamentEntry } from "@/lib/regional-tournaments";
 
 /**
  * 大会へのリンクの一覧。県のページと大会のページで同じものを使う。
  *
  * ------------------------------------------------------------------
- * ★★ 多い県があるので、途中から畳む
+ * ★★ 年でまとめる（2026-08-25）
  *
- *   長野は**63大会**ある（地区予選まで1大会ずつ数えるため）。
- *   全部並べると 1,700px を超えて、**下の応援メッセージや投票がずっと遠くなる。**
- *   ★**ほとんどの県は1〜5大会**なので、畳むのは長野のような県だけ。
+ *   大会が多い県は**年でまとめて、いちばん新しい年だけ開いて出す。**
+ *   佐賀64・長野61・熊本46 という県があり、平らに並べると
+ *   **どの年のものか分からないまま何十行も続く。**
+ *
+ *   ★**「年度」ではなく「年」。** データが持っているのは暦年で、
+ *   高校野球の年度（4月〜翌3月）とは**秋がずれる。**
+ *   「2025年度」と書くと秋の扱いを言い切ることになるので、
+ *   **「2025年」の春・夏・秋**と出す。
+ *
+ *   ★★**1つの年×季節に大会が複数ある県がある**（徳島の秋は5大会、
+ *   長野は地区予選まで1大会ずつ）。**春/夏/秋の3つに決め打ちしないこと。**
+ *
+ *   ★**大会が少ない県はまとめない。** 41県のうち**23県は3大会以下**で、
+ *   そこに年の入れ子を足すと階層が増えるだけになる。
+ *
+ * ------------------------------------------------------------------
+ * ★★ タブ（JavaScript）にしないこと
  *
  *   ★**`<details>` で畳む。** JavaScript を使わないので、
- *   **開いた状態で印刷・検索・読み上げができる**（`Ctrl+F` でも当たる）。
- *   ★**「ほか63件」と数だけ書いて省かないこと** —— 過去の大会に
- *   辿り着けなくなる。
+ *   **畳んだままでも `Ctrl+F` で当たり、クローラからも見える。**
+ *   タブに変えると**過去の大会がクローラから見えなくなり、
+ *   大会ページへの内部リンクが死ぬ。**
+ *
+ *   ★**「ほか63件」と数だけ書いて省かないこと** —— 過去の大会に辿り着けなくなる。
  */
 export function TournamentLinks({
   prefectureSlug,
   entries,
-  initial = 8,
+  groupFrom = 6,
 }: {
   prefectureSlug: string;
   entries: TournamentEntry[];
-  /** 畳まずに出す件数 */
-  initial?: number;
+  /** この数を超えたら年でまとめる */
+  groupFrom?: number;
 }) {
   if (!entries.length) return null;
-  const head = entries.slice(0, initial);
-  const rest = entries.slice(initial);
+
+  // 少ない県は今までどおり平らに
+  if (entries.length <= groupFrom) {
+    return <List prefectureSlug={prefectureSlug} entries={entries} />;
+  }
+
+  const years = groupByYear(entries);
 
   return (
-    <>
-      <List prefectureSlug={prefectureSlug} entries={head} />
-      {rest.length > 0 && (
-        <details className="mt-2 group">
-          <summary className="cursor-pointer list-none rounded-lg border border-line px-3 py-2 text-sm font-bold text-navy-800 hover:bg-navy-50">
-            過去の大会をあと{rest.length}件見る
-            <span className="ml-1 font-normal text-ink-muted group-open:hidden">
-              ▼
+    <div className="space-y-2">
+      {years.map((group, i) => (
+        <details
+          key={group.key}
+          // ★いちばん新しい年だけ開いておく（`listTournaments` が新しい順に返す）
+          open={i === 0}
+          className="group rounded-lg border border-line"
+        >
+          <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 px-3 py-2 text-sm font-bold text-navy-800 hover:bg-navy-50">
+            <span className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+              {group.label}
+              <span className="text-xs font-normal text-ink-muted">
+                {group.seasons.join("・")}
+              </span>
             </span>
-            <span className="ml-1 hidden font-normal text-ink-muted group-open:inline">
-              ▲
+            <span className="flex shrink-0 items-center gap-2 text-xs font-normal text-ink-muted">
+              {group.entries.length}大会
+              <span className="group-open:hidden" aria-hidden="true">
+                ▼
+              </span>
+              <span className="hidden group-open:inline" aria-hidden="true">
+                ▲
+              </span>
             </span>
           </summary>
-          <div className="mt-2">
-            <List prefectureSlug={prefectureSlug} entries={rest} />
+          <div className="border-t border-line p-3">
+            <List prefectureSlug={prefectureSlug} entries={group.entries} />
           </div>
         </details>
-      )}
-    </>
+      ))}
+    </div>
   );
+}
+
+type YearGroup = {
+  key: string;
+  label: string;
+  /** その年に入っている季節（重複を畳んだもの）。見出しの脇に出す */
+  seasons: string[];
+  entries: TournamentEntry[];
+};
+
+/**
+ * 年でまとめる。**並び順は元のまま**（`listTournaments` が新しい順にしている）。
+ * ★**年が分からない大会がある**（日付を1つも持たない出典が9県ある）ので、
+ * その受け皿を必ず用意する。**捨てないこと。**
+ */
+function groupByYear(entries: TournamentEntry[]): YearGroup[] {
+  const groups = new Map<string, YearGroup>();
+  for (const e of entries) {
+    const key = e.year == null ? "unknown" : String(e.year);
+    let group = groups.get(key);
+    if (!group) {
+      group = {
+        key,
+        label: e.year == null ? "年が分からない大会" : `${e.year}年`,
+        seasons: [],
+        entries: [],
+      };
+      groups.set(key, group);
+    }
+    group.entries.push(e);
+    const label = seasonLabel(e.season as RegionalSeason);
+    if (!group.seasons.includes(label)) group.seasons.push(label);
+  }
+  return [...groups.values()];
 }
 
 function List({

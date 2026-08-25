@@ -193,7 +193,8 @@ function OtherTournaments({
         moreHref={`/prefectures/${slug}`}
       />
       <div className="mt-3">
-        <TournamentLinks prefectureSlug={slug} entries={others} initial={6} />
+        {/* ★大会のページでは早めに年でまとめる（本文は「その大会」なので、ここは索引） */}
+        <TournamentLinks prefectureSlug={slug} entries={others} groupFrom={4} />
       </div>
     </section>
   );

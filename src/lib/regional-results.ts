@@ -17,6 +17,12 @@
  *   その県だけ**を読む形にしてある。
  */
 
+/*
+  ★**`regional-tournaments.ts` からは型しか import されていない**ので、
+  ここから関数を読んでも実行時の循環にはならない（型の import は消える）。
+*/
+import { yearOfTournament } from "@/lib/regional-tournaments";
+
 export type RegionalSeason = "spring" | "summer" | "autumn";
 
 export type RegionalTeam = {
@@ -418,7 +424,17 @@ export function latestSeasonGames(
 
     ★**いちばん新しい大会だけに絞る。** 大会名で分け、
     **その中でいちばん新しい試合を持つ大会**を採る（進捗地図と同じ決め方）。
-    ★**日付の無い県は大会名が1つしか無い**ので、この分岐に入っても変わらない。
+
+    ~~★**日付の無い県は大会名が1つしか無い**ので、この分岐に入っても変わらない。~~
+    ★★**2026-08-25 に成り立たなくなった。** 大阪は**日付を1つも持たないのに
+    5年ぶん×3季＝15大会**ある。日付が無いと上の並べ替えが全部同点になり、
+    **次の「試合数の多い順」で決まっていた** ——
+    結果、**2023年の秋（公立114試合）が2025年の秋（103試合）より新しい**
+    ことになり、**県のページの先頭に2年前の大会が出ていた。**
+
+    ★**AGENTS.md に「試合数で選ばない」と書いてあるとおり。**
+    **大会名から年を出して比べる**（`yearOfTournament`。日付があればそれを使うので、
+    今までどおりの県は1件も変わらない）。
   */
   const seasonGames = publicGames.filter((g) => g.season === newestSeason);
   const byTournament = new Map<string, RegionalGame[]>();
@@ -430,9 +446,14 @@ export function latestSeasonGames(
   }
   const newestOf = (list: RegionalGame[]) =>
     list.map((g) => g.date).filter(Boolean).sort().at(-1) ?? "";
-  const newestTournament = [...byTournament.values()].sort(
-    (a, b) => newestOf(b).localeCompare(newestOf(a)) || b.length - a.length,
-  )[0];
+  const yearOf = (name: string, list: RegionalGame[]) =>
+    yearOfTournament(name || null, list) ?? -1;
+  const newestTournament = [...byTournament.entries()].sort(
+    ([an, a], [bn, b]) =>
+      newestOf(b).localeCompare(newestOf(a)) ||
+      yearOf(bn, b) - yearOf(an, a) ||
+      b.length - a.length,
+  )[0][1];
 
   const games = newestTournament
     .filter((g) => g.season === newestSeason)

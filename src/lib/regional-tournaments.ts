@@ -59,6 +59,15 @@ export function yearOfTournament(
   if (dated.length) return Number(dated.at(-1)!.slice(0, 4));
 
   const t = (name ?? "").normalize("NFKC");
+  /*
+    ★★**大会名に西暦がそのまま入る形がある**（2026-08-25。大阪）。
+    `令和5(2023)年度 秋季近畿地区高校野球大会 大阪府予選`。
+    **`令和(\d+)年` は当たらない**（`令和5` の次が `(` なので）。
+    ★**括弧の中の西暦をいちばん先に見る。** これを入れる前、大阪の2023年秋だけ
+    「年が分からない大会」として別枠に出ていた。
+  */
+  const seireki = t.match(/[(（](\d{4})[)）]/);
+  if (seireki) return Number(seireki[1]);
   const senshuken = t.match(/第(\d+)回.*選手権/);
   if (senshuken) return Number(senshuken[1]) + 1918;
   const reiwa = t.match(/令和(\d+)年/);

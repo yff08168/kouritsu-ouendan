@@ -132,6 +132,148 @@ export default async function PrefectureDetailPage({ params }: Props) {
       ? (tournaments.find((t) => t.name === regionalGames.tournaments[0])?.slug ?? null)
       : null;
 
+  /*
+    ★★**地方大会を持っている県かどうか**（2026-08-25）。
+
+    **持っている県は大会を先頭に、持っていない県は学校一覧を先頭に**する。
+    ★**持っていないのは8地区**（北北海道・南北海道・青森・宮城・秋田・
+    東東京・西東京・鳥取。**規約で塞がれている6県**ぶん）。
+    ★**この分岐を入れ忘れると、その8地区だけ「空の見出しから始まるページ」になる。**
+  */
+  const hasRegional = Boolean(
+    (regional && regionalGames) || regional?.upcoming?.length || tournaments.length,
+  );
+
+  /* ------- 学校一覧 ------- */
+  const schoolsSection = (
+    <section
+      aria-labelledby="pref-schools"
+      className="mt-4 rounded-xl border border-line bg-white p-5"
+    >
+      <SectionHeading
+        id="pref-schools"
+        title={`${prefecture.name}の公立高校`}
+        icon={<School size={18} />}
+        moreHref={`/schools?pref=${prefecture.slug}`}
+        moreLabel="一覧・検索へ"
+      />
+      <div className="mt-2">
+        <SchoolList schools={schoolResult.schools} />
+      </div>
+    </section>
+  );
+
+  /* ------- 公立旋風 ------- */
+  const phenomenaSection =
+    phenomena.length > 0 ? (
+      <section
+        aria-labelledby="pref-phenomena"
+        className="mt-4 rounded-xl border border-line bg-white p-5"
+      >
+        <SectionHeading
+          id="pref-phenomena"
+          title={`${prefecture.name}の公立旋風`}
+          icon={<Flame size={18} />}
+          moreHref="/phenomenon"
+        />
+        <ul className="mt-3 grid gap-3 sm:grid-cols-2">
+          {phenomena.map((item) => (
+            <li key={item.id}>
+              <PhenomenonCard item={item} />
+            </li>
+          ))}
+        </ul>
+      </section>
+    ) : null;
+
+  /*
+    ------- 地方大会（いちばん新しい大会 → 大会をたどる） -------
+
+    並びは **これからの試合 → トーナメント表 → 結果 → 大会をたどる**。
+    ★**トーナメント表を結果より上に置く**（見に来た甲斐がいちばんあるもの）。
+    表は横スクロールするので、狭い画面でも下が押し流されない。
+  */
+  const regionalSection = (
+    <>
+      {/*
+        ★**結果より前に置く。** 開幕前・開催中は「次に誰と当たるか」のほうが
+        見たい情報で、結果は下にある。
+      */}
+      {regional?.upcoming?.length ? (
+        <RegionalUpcomingCard
+          games={regional.upcoming}
+          districtName={prefecture.name}
+        />
+      ) : null}
+
+      {/*
+        ★**組めなかった大会では何も出さない。**「だいたい合っている表」は出さない。
+        ★**見出しは大会名にする**（2026-08-25）。「トーナメント表」という一般名だと、
+        **ページの最初の見出しが何の大会か分からない。**
+        名前を持たない出典があるので、そのときだけ一般名に落とす。
+      */}
+      {bracket && (
+        <section
+          aria-labelledby="pref-bracket"
+          className="mt-4 rounded-xl border border-line bg-white p-5"
+        >
+          <SectionHeading
+            id="pref-bracket"
+            title={bracket.tournament ?? "トーナメント表"}
+            icon={<GitBranch size={18} />}
+          />
+          <RegionalBracket bracket={bracket} />
+          {/* ★この大会の全試合はこちら。県のページは24件までしか出していない */}
+          {currentTournamentSlug && (
+            <p className="mt-3 text-right">
+              <Link
+                href={`/prefectures/${slug}/${currentTournamentSlug}`}
+                className="text-sm font-bold text-navy-800 hover:underline"
+              >
+                この大会の全試合を見る →
+              </Link>
+            </p>
+          )}
+        </section>
+      )}
+
+      {regional && regionalGames && (
+        <RegionalDistrictCard
+          district={regional}
+          season={regionalGames.season}
+          games={regionalGames.games}
+          total={regionalGames.total}
+          tournaments={regionalGames.tournaments}
+        />
+      )}
+
+      {/*
+        ★**県のページはいちばん新しい大会しか出していない**ので、
+        過去ぶんへの入口をここに置く（生成物には過去の大会が残っている）。
+
+        ★★**いま出している大会も一覧に入れる。**「過去のぶんだけ」にすると、
+        **大会が1つしか無くて枝も組めない県で、大会ページへの導線が消える**
+        （上の「この大会の全試合を見る」は枝が組めたときにしか出ない）。
+      */}
+      {tournaments.length > 0 && (
+        <section
+          aria-labelledby="pref-tournaments"
+          className="mt-4 rounded-xl border border-line bg-white p-5"
+        >
+          <SectionHeading
+            id="pref-tournaments"
+            title="大会をたどる"
+            icon={<CalendarDays size={18} />}
+          />
+          <p className="mt-1 mb-3 text-sm text-ink-muted">
+            年ごとにまとめています。大会ごとにトーナメント表と全試合を出しています。
+          </p>
+          <TournamentLinks prefectureSlug={slug} entries={tournaments} />
+        </section>
+      )}
+    </>
+  );
+
   return (
     <Container className="pb-4">
       <Breadcrumb
@@ -193,126 +335,34 @@ export default async function PrefectureDetailPage({ params }: Props) {
         </Link>
       </header>
 
-      {/* ------- 学校 ------- */}
-      <section
-        aria-labelledby="pref-schools"
-        className="mt-4 rounded-xl border border-line bg-white p-5"
-      >
-        <SectionHeading
-          id="pref-schools"
-          title={`${prefecture.name}の公立高校`}
-          icon={<School size={18} />}
-          moreHref={`/schools?pref=${prefecture.slug}`}
-          moreLabel="一覧・検索へ"
-        />
-        <div className="mt-2">
-          <SchoolList schools={schoolResult.schools} />
-        </div>
-      </section>
-
       {/*
-        ------- これからの試合（組み合わせが取れている県だけ） -------
-        ★**結果より前に置く。** 開幕前・開催中は「次に誰と当たるか」のほうが
-        見たい情報で、結果は下にある。
+        ================= 並び順 =================
+
+        ★★**地方大会を持っている県は「いちばん新しい大会」を先頭に出す**
+        （2026-08-25。運営者の指示）。
+        検索から来た人が最初に見るのが**素の学校一覧**だと、見に来た甲斐が無い。
+        いちばん見たいトーナメント表が折りたたみの下に沈んでもいた。
+
+        ★**学校一覧はページから消さず下に移すだけ**なので、索引には従来どおり載る。
+        効くのは順位そのものより**滞在時間**と、
+        **ページ最初の見出しが「第107回…大阪大会」のような具体的な文言になること。**
+
+        ★★**地方大会を持たない8地区では学校一覧を先頭に戻す**（`hasRegional`）。
+        入れ忘れると、その8地区だけ**空の見出しから始まるページ**になる。
       */}
-      {regional?.upcoming?.length ? (
-        <RegionalUpcomingCard
-          games={regional.upcoming}
-          districtName={prefecture.name}
-        />
-      ) : null}
-
-      {/* ------- 地方大会の結果（対応している県だけ） ------- */}
-      {regional && regionalGames && (
-        <RegionalDistrictCard
-          district={regional}
-          season={regionalGames.season}
-          games={regionalGames.games}
-          total={regionalGames.total}
-          tournaments={regionalGames.tournaments}
-        />
-      )}
-
-      {/*
-        ------- トーナメント表（枝が組めた大会だけ） -------
-        ★**組めなかった大会では何も出さない。**「だいたい合っている表」は出さない。
-      */}
-      {bracket && (
-        <section
-          aria-labelledby="pref-bracket"
-          className="mt-4 rounded-xl border border-line bg-white p-5"
-        >
-          <SectionHeading
-            id="pref-bracket"
-            title="トーナメント表"
-            icon={<GitBranch size={18} />}
-          />
-          {bracket.tournament && (
-            <p className="mt-1 text-sm text-ink-muted">{bracket.tournament}</p>
-          )}
-          <RegionalBracket bracket={bracket} />
-          {/* ★この大会の全試合はこちら。県のページは24件までしか出していない */}
-          {currentTournamentSlug && (
-            <p className="mt-3 text-right">
-              <Link
-                href={`/prefectures/${slug}/${currentTournamentSlug}`}
-                className="text-sm font-bold text-navy-800 hover:underline"
-              >
-                この大会の全試合を見る →
-              </Link>
-            </p>
-          )}
-        </section>
-      )}
-
-      {/*
-        ------- 大会ごとの結果 -------
-        ★**県のページはいちばん新しい大会しか出していない**ので、
-        過去ぶんへの入口をここに置く（生成物には過去の大会が残っている）。
-
-        ★★**いま出している大会も一覧に入れる。**「過去のぶんだけ」にすると、
-        **大会が1つしか無くて枝も組めない県で、大会ページへの導線が消える**
-        （上の「この大会の全試合を見る」は枝が組めたときにしか出ない）。
-      */}
-      {tournaments.length > 0 && (
-        <section
-          aria-labelledby="pref-tournaments"
-          className="mt-4 rounded-xl border border-line bg-white p-5"
-        >
-          <SectionHeading
-            id="pref-tournaments"
-            title="大会ごとの結果"
-            icon={<CalendarDays size={18} />}
-          />
-          <p className="mt-1 mb-3 text-sm text-ink-muted">
-            大会ごとにトーナメント表と全試合を出しています
-          </p>
-          <TournamentLinks prefectureSlug={slug} entries={tournaments} />
-        </section>
-      )}
-
-      <AdSlot slot="sidebar" />
-
-      {/* ------- 公立旋風 ------- */}
-      {phenomena.length > 0 && (
-        <section
-          aria-labelledby="pref-phenomena"
-          className="mt-4 rounded-xl border border-line bg-white p-5"
-        >
-          <SectionHeading
-            id="pref-phenomena"
-            title={`${prefecture.name}の公立旋風`}
-            icon={<Flame size={18} />}
-            moreHref="/phenomenon"
-          />
-          <ul className="mt-3 grid gap-3 sm:grid-cols-2">
-            {phenomena.map((item) => (
-              <li key={item.id}>
-                <PhenomenonCard item={item} />
-              </li>
-            ))}
-          </ul>
-        </section>
+      {hasRegional ? (
+        <>
+          {regionalSection}
+          {phenomenaSection}
+          <AdSlot slot="sidebar" />
+          {schoolsSection}
+        </>
+      ) : (
+        <>
+          {schoolsSection}
+          {phenomenaSection}
+          <AdSlot slot="sidebar" />
+        </>
       )}
 
       {/* ------- 投票 ------- */}

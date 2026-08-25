@@ -21,8 +21,13 @@ export const metadata: Metadata = {
     description: SITE.description,
   },
   twitter: {
+    /*
+      ★**`site`（＝@ハンドル）は 2026-08-24 に外した**（運営者の判断。運用予定が無い）。
+      **カード自体は残す** —— X で共有されたときに大きな画像で出るかどうかは
+      アカウントの有無と関係がない。**存在しないハンドルを名乗らないだけ。**
+      アカウントを作ったら `site: SITE.xHandle` を戻す。
+    */
     card: "summary_large_image",
-    site: SITE.xHandle,
   },
   alternates: {
     canonical: "/",

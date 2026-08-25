@@ -1,0 +1,1669 @@
+{
+  "slug": "toyama",
+  "district": "富山",
+  "sourceName": "富山県高等学校野球連盟",
+  "sourceUrl": "https://www.toyama-hbf.jp/",
+  "games": [
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新湊",
+          "score": 6,
+          "won": true,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        },
+        {
+          "display": "高岡向陵",
+          "score": 3,
+          "won": false,
+          "name": "高岡向陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山高専",
+          "score": 11,
+          "won": true,
+          "name": "富山高専",
+          "slug": "toyama-kosen"
+        },
+        {
+          "display": "八尾",
+          "score": 4,
+          "won": false,
+          "name": "八尾高校",
+          "slug": "yatsuo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滑川",
+          "score": 6,
+          "won": true,
+          "name": "滑川高校",
+          "slug": "namerikawa"
+        },
+        {
+          "display": "高岡工芸",
+          "score": 5,
+          "won": false,
+          "name": "高岡工芸高校",
+          "slug": "takaokakogei"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山北部",
+          "score": 10,
+          "won": true,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        },
+        {
+          "display": "富山いずみ",
+          "score": 0,
+          "won": false,
+          "name": "富山いずみ高校",
+          "slug": "toyamaizumi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡龍谷",
+          "score": 4,
+          "won": true,
+          "name": "高岡龍谷",
+          "slug": null
+        },
+        {
+          "display": "魚津工業・上市",
+          "score": 0,
+          "won": false,
+          "name": "魚津工業・上市",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津",
+          "score": 4,
+          "won": true,
+          "name": "魚津高校",
+          "slug": "uozu"
+        },
+        {
+          "display": "砺波工業",
+          "score": 3,
+          "won": false,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 6,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "国際大付属",
+          "score": 5,
+          "won": false,
+          "name": "国際大付属",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 7,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "未来富山",
+          "score": 1,
+          "won": false,
+          "name": "未来富山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡",
+          "score": 5,
+          "won": true,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        },
+        {
+          "display": "富山中部",
+          "score": 4,
+          "won": false,
+          "name": "富山中部高校",
+          "slug": "toyamachubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山東",
+          "score": 13,
+          "won": true,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        },
+        {
+          "display": "新川",
+          "score": 3,
+          "won": false,
+          "name": "新川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新湊",
+          "score": 20,
+          "won": true,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        },
+        {
+          "display": "高岡南",
+          "score": 1,
+          "won": false,
+          "name": "高岡南高校",
+          "slug": "takaokaminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "氷見",
+          "score": 14,
+          "won": true,
+          "name": "氷見高校",
+          "slug": "himi"
+        },
+        {
+          "display": "富山西・富山南",
+          "score": 2,
+          "won": false,
+          "name": "富山西・富山南",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山高専",
+          "score": 9,
+          "won": true,
+          "name": "富山高専",
+          "slug": "toyama-kosen"
+        },
+        {
+          "display": "入善",
+          "score": 8,
+          "won": false,
+          "name": "入善高校",
+          "slug": "nyuzen"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 9,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "富山 雄山",
+          "score": 2,
+          "won": false,
+          "name": "富山 雄山",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波",
+          "score": 2,
+          "won": true,
+          "name": "砺波高校",
+          "slug": "tonami"
+        },
+        {
+          "display": "滑川",
+          "score": 0,
+          "won": false,
+          "name": "滑川高校",
+          "slug": "namerikawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡第一",
+          "score": 7,
+          "won": true,
+          "name": "高岡第一",
+          "slug": null
+        },
+        {
+          "display": "富山工業",
+          "score": 0,
+          "won": false,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山北部",
+          "score": 8,
+          "won": true,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        },
+        {
+          "display": "南砺福野",
+          "score": 1,
+          "won": false,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石動",
+          "score": 20,
+          "won": true,
+          "name": "石動高校",
+          "slug": "isurugi"
+        },
+        {
+          "display": "大門",
+          "score": 0,
+          "won": false,
+          "name": "大門高校",
+          "slug": "daimon"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡龍谷",
+          "score": 4,
+          "won": true,
+          "name": "高岡龍谷",
+          "slug": null
+        },
+        {
+          "display": "小杉",
+          "score": 1,
+          "won": false,
+          "name": "小杉高校",
+          "slug": "kosugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高朋",
+          "score": 7,
+          "won": true,
+          "name": "高朋",
+          "slug": null
+        },
+        {
+          "display": "桜井",
+          "score": 4,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津",
+          "score": 12,
+          "won": true,
+          "name": "魚津高校",
+          "slug": "uozu"
+        },
+        {
+          "display": "呉羽",
+          "score": 2,
+          "won": false,
+          "name": "呉羽高校",
+          "slug": "kureha"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "不二越工業",
+          "score": 12,
+          "won": true,
+          "name": "不二越工業",
+          "slug": null
+        },
+        {
+          "display": "福岡",
+          "score": 0,
+          "won": false,
+          "name": "福岡高校",
+          "slug": "toyama-fukuoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 8,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "ＡＯＩＫＥ",
+          "score": 1,
+          "won": false,
+          "name": "ＡＯＩＫＥ",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 9,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "高岡",
+          "score": 1,
+          "won": false,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新湊",
+          "score": 8,
+          "won": true,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        },
+        {
+          "display": "富山東",
+          "score": 2,
+          "won": false,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "氷見",
+          "score": 10,
+          "won": true,
+          "name": "氷見高校",
+          "slug": "himi"
+        },
+        {
+          "display": "富山高専",
+          "score": 0,
+          "won": false,
+          "name": "富山高専",
+          "slug": "toyama-kosen"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 15,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "砺波",
+          "score": 1,
+          "won": false,
+          "name": "砺波高校",
+          "slug": "tonami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡第一",
+          "score": 7,
+          "won": true,
+          "name": "高岡第一",
+          "slug": null
+        },
+        {
+          "display": "富山北部",
+          "score": 0,
+          "won": false,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石動",
+          "score": 5,
+          "won": true,
+          "name": "石動高校",
+          "slug": "isurugi"
+        },
+        {
+          "display": "高岡龍谷",
+          "score": 2,
+          "won": false,
+          "name": "高岡龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高朋",
+          "score": 4,
+          "won": true,
+          "name": "高朋",
+          "slug": null
+        },
+        {
+          "display": "魚津",
+          "score": 2,
+          "won": false,
+          "name": "魚津高校",
+          "slug": "uozu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 9,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "不二越工業",
+          "score": 2,
+          "won": false,
+          "name": "不二越工業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 11,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "新湊",
+          "score": 2,
+          "won": false,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 7,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "氷見",
+          "score": 1,
+          "won": false,
+          "name": "氷見高校",
+          "slug": "himi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡第一",
+          "score": 8,
+          "won": true,
+          "name": "高岡第一",
+          "slug": null
+        },
+        {
+          "display": "石動",
+          "score": 2,
+          "won": false,
+          "name": "石動高校",
+          "slug": "isurugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権富山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 4,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "高朋",
+          "score": 3,
+          "won": false,
+          "name": "高朋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小杉",
+          "score": 9,
+          "won": true,
+          "name": "小杉高校",
+          "slug": "kosugi"
+        },
+        {
+          "display": "八尾",
+          "score": 0,
+          "won": false,
+          "name": "八尾高校",
+          "slug": "yatsuo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南砺福野",
+          "score": 3,
+          "won": true,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        },
+        {
+          "display": "砺波工業",
+          "score": 1,
+          "won": false,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "未来富山",
+          "score": 11,
+          "won": true,
+          "name": "未来富山",
+          "slug": null
+        },
+        {
+          "display": "富山高専",
+          "score": 0,
+          "won": false,
+          "name": "富山高専",
+          "slug": "toyama-kosen"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "国際大付属",
+          "score": 27,
+          "won": true,
+          "name": "国際大付属",
+          "slug": null
+        },
+        {
+          "display": "入善",
+          "score": 0,
+          "won": false,
+          "name": "入善高校",
+          "slug": "nyuzen"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡",
+          "score": 5,
+          "won": true,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        },
+        {
+          "display": "上市 雄山・中央農業",
+          "score": 4,
+          "won": false,
+          "name": "上市 雄山・中央農業",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡工芸",
+          "score": 2,
+          "won": true,
+          "name": "高岡工芸高校",
+          "slug": "takaokakogei"
+        },
+        {
+          "display": "高岡龍谷",
+          "score": 8,
+          "won": false,
+          "name": "高岡龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 10,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "富山東",
+          "score": 0,
+          "won": false,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山中部",
+          "score": 8,
+          "won": true,
+          "name": "富山中部高校",
+          "slug": "toyamachubu"
+        },
+        {
+          "display": "魚津工業",
+          "score": 1,
+          "won": false,
+          "name": "魚津工業高校",
+          "slug": "uozukogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 10,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        },
+        {
+          "display": "富山いずみ",
+          "score": 3,
+          "won": false,
+          "name": "富山いずみ高校",
+          "slug": "toyamaizumi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小杉",
+          "score": 8,
+          "won": true,
+          "name": "小杉高校",
+          "slug": "kosugi"
+        },
+        {
+          "display": "富山工業",
+          "score": 3,
+          "won": false,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "不二越工業",
+          "score": 6,
+          "won": true,
+          "name": "不二越工業",
+          "slug": null
+        },
+        {
+          "display": "砺波",
+          "score": 4,
+          "won": false,
+          "name": "砺波高校",
+          "slug": "tonami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南砺福野",
+          "score": 3,
+          "won": true,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        },
+        {
+          "display": "高岡南",
+          "score": 2,
+          "won": false,
+          "name": "高岡南高校",
+          "slug": "takaokaminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡第一",
+          "score": 5,
+          "won": true,
+          "name": "高岡第一",
+          "slug": null
+        },
+        {
+          "display": "氷見",
+          "score": 4,
+          "won": false,
+          "name": "氷見高校",
+          "slug": "himi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "未来富山",
+          "score": 10,
+          "won": true,
+          "name": "未来富山",
+          "slug": null
+        },
+        {
+          "display": "高岡向陵",
+          "score": 0,
+          "won": false,
+          "name": "高岡向陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山北部",
+          "score": 5,
+          "won": true,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        },
+        {
+          "display": "福岡",
+          "score": 6,
+          "won": false,
+          "name": "福岡高校",
+          "slug": "toyama-fukuoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津",
+          "score": 1,
+          "won": true,
+          "name": "魚津高校",
+          "slug": "uozu"
+        },
+        {
+          "display": "呉羽 富山南・富山西",
+          "score": 0,
+          "won": false,
+          "name": "呉羽 富山南・富山西",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新湊",
+          "score": 2,
+          "won": true,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        },
+        {
+          "display": "石動",
+          "score": 2,
+          "won": false,
+          "name": "石動高校",
+          "slug": "isurugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "国際大付属",
+          "score": 10,
+          "won": true,
+          "name": "国際大付属",
+          "slug": null
+        },
+        {
+          "display": "新川",
+          "score": 8,
+          "won": false,
+          "name": "新川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 3,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "高朋",
+          "score": 3,
+          "won": false,
+          "name": "高朋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡",
+          "score": 5,
+          "won": true,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        },
+        {
+          "display": "滑川",
+          "score": 1,
+          "won": false,
+          "name": "滑川高校",
+          "slug": "namerikawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 10,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "富山",
+          "score": 0,
+          "won": false,
+          "name": "富山高校",
+          "slug": "toyama-toyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡工芸",
+          "score": 8,
+          "won": true,
+          "name": "高岡工芸高校",
+          "slug": "takaokakogei"
+        },
+        {
+          "display": "大門",
+          "score": 0,
+          "won": false,
+          "name": "大門高校",
+          "slug": "daimon"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 10,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "富山中部",
+          "score": 9,
+          "won": false,
+          "name": "富山中部高校",
+          "slug": "toyamachubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 10,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        },
+        {
+          "display": "小杉",
+          "score": 0,
+          "won": false,
+          "name": "小杉高校",
+          "slug": "kosugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南砺福野",
+          "score": 0,
+          "won": true,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        },
+        {
+          "display": "不二越工業",
+          "score": 0,
+          "won": false,
+          "name": "不二越工業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "未来富山",
+          "score": 10,
+          "won": true,
+          "name": "未来富山",
+          "slug": null
+        },
+        {
+          "display": "高岡第一",
+          "score": 2,
+          "won": false,
+          "name": "高岡第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山北部",
+          "score": 6,
+          "won": true,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        },
+        {
+          "display": "魚津",
+          "score": 4,
+          "won": false,
+          "name": "魚津高校",
+          "slug": "uozu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "国際大付属",
+          "score": 8,
+          "won": true,
+          "name": "国際大付属",
+          "slug": null
+        },
+        {
+          "display": "新湊",
+          "score": 2,
+          "won": false,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 3,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "高岡",
+          "score": 5,
+          "won": false,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 13,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "高岡工芸",
+          "score": 0,
+          "won": false,
+          "name": "高岡工芸高校",
+          "slug": "takaokakogei"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 9,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "桜井",
+          "score": 1,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "未来富山",
+          "score": 13,
+          "won": true,
+          "name": "未来富山",
+          "slug": null
+        },
+        {
+          "display": "南砺福野",
+          "score": 0,
+          "won": false,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山北部",
+          "score": 4,
+          "won": true,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        },
+        {
+          "display": "国際大付属",
+          "score": 3,
+          "won": false,
+          "name": "国際大付属",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 5,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "富山商業",
+          "score": 2,
+          "won": false,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "未来富山",
+          "score": 6,
+          "won": true,
+          "name": "未来富山",
+          "slug": null
+        },
+        {
+          "display": "富山第一",
+          "score": 1,
+          "won": false,
+          "name": "富山第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 6,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "富山北部",
+          "score": 5,
+          "won": false,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権富山大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "未来富山",
+          "score": 13,
+          "won": true,
+          "name": "未来富山",
+          "slug": null
+        },
+        {
+          "display": "高岡商業",
+          "score": 7,
+          "won": false,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        }
+      ]
+    }
+  ]
+}

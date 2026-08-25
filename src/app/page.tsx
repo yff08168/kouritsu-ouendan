@@ -22,7 +22,7 @@ import {
   getSchoolsBySlugs,
   getSchoolCountByPrefecture,
 } from "@/lib/queries/schools";
-import { getHighlightedPhenomena } from "@/lib/queries/phenomena";
+import { getRandomPhenomena } from "@/lib/queries/phenomena";
 import { getLatestFeatures } from "@/lib/queries/features";
 import {
   getKoshienDataset,
@@ -34,7 +34,11 @@ export const revalidate = 600;
 
 export default async function HomePage() {
   const [phenomena, prefectureCounts, features, koshien] = await Promise.all([
-    getHighlightedPhenomena(3),
+    /*
+      ★**公立旋風は「枠に入る最大数」をランダムに出す**（2026-08-24）。
+      件数の根拠は `getRandomPhenomena` の説明にある（実測で4件）。
+    */
+    getRandomPhenomena(5),
     getSchoolCountByPrefecture(),
     getLatestFeatures(4),
     getKoshienDataset(),
@@ -319,7 +323,21 @@ export default async function HomePage() {
               icon={<BookOpen size={22} />}
               moreHref="/features"
             />
-            <ul className="mt-3 grid grid-cols-2 gap-3 lg:grid-cols-4">
+            {/*
+              ★**列数を件数に合わせる**（2026-08-24）。
+              特集をいったん1件だけにしたので、4列のまま出すと
+              **1枚が左端に寄って、右3枠が空いたように見える。**
+              件数が増えたら自動で4列に戻る（`getLatestFeatures` は最大4件）。
+            */}
+            <ul
+              className={
+                features.length >= 3
+                  ? "mt-3 grid grid-cols-2 gap-3 lg:grid-cols-4"
+                  : features.length === 2
+                    ? "mt-3 grid grid-cols-2 gap-3"
+                    : "mt-3"
+              }
+            >
               {features.map((feature) => (
                 <li key={feature.id}>
                   <FeatureCard feature={feature} />

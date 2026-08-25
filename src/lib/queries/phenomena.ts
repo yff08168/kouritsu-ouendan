@@ -199,6 +199,9 @@ export async function getPhenomenaByPrefecture(
 /**
  * トップページの注目枠。
  * highlight_rank が入っているものだけを、その順で返す。
+ *
+ * ★**2026-08-24 以降、トップは `getRandomPhenomena` を使っている。**
+ * こちらは「順位を付けて出したい」ときのために残してある。
  */
 export async function getHighlightedPhenomena(
   limit = 3,
@@ -215,4 +218,54 @@ export async function getHighlightedPhenomena(
   throwIfError(error, "公立旋風の取得");
 
   return ((data ?? []) as unknown as PhenomenonRow[]).map(toPhenomenonSummary);
+}
+
+/**
+ * トップページの公立旋風の枠（2026-08-24 に順位表示から変更）。
+ *
+ * ★**注目印の付いたものだけでなく、公開されている全件から選ぶ。**
+ * `highlight_rank` が入っているのは甲子園の4件だけで、そこから4件選んでも
+ * **毎回同じ顔ぶれ**になる。地方大会の記録も混ぜて初めて「ランダム」になる。
+ *
+ * ★**並べ替えはサーバー側でやる。** ページは `revalidate` で作り置きするので、
+ * **顔ぶれが変わるのは作り直しのたび**（トップは10分）。
+ * ★**クライアントで混ぜないこと** —— 出だしの表示と食い違って
+ * 画面がちらつくうえ、読み上げの順序も変わる。
+ *
+ * ★件数は**枠に入る最大数**。1280px幅で実測した値:
+ *
+ *   本文の入る高さ 430px ／ 1件 68px（校名が折り返すと92px）／ 間隔 8px
+ *   5件 = 68*5 + 8*4 = **372px**（収まる）  6件 = 448px（溢れる）
+ *
+ * ★**ヒーローと同じグリッドの行にあるので、高さは必ず揃う。**
+ * 溢れても切れるのではなく**行ごと伸びてヒーローも一緒に高くなる**だけなので、
+ * 「1件だけ校名が折り返した」程度なら問題にならない（5件・折り返し3件で444px）。
+ * ★**列数や余白を変えたら測り直すこと。**
+ */
+export async function getRandomPhenomena(
+  limit = 5,
+): Promise<PhenomenonSummary[]> {
+  const supabase = createSupabaseServerClient();
+
+  /*
+    ★**全件取ってからJSで選ぶ。** 記録は数十件の見込みで、
+    PostgREST に乱数で並べ替えさせる手段が無い（ビューや関数を足すと、
+    人がSQLを流す運用では「適用し忘れてページが落ちる」が起きる。
+    ランキングでビューを足さないのと同じ理由）。
+  */
+  const { data, error } = await supabase
+    .from("phenomena")
+    .select(PHENOMENON_SUMMARY_SELECT)
+    .order("year", { ascending: false });
+
+  throwIfError(error, "公立旋風の取得");
+
+  const rows = ((data ?? []) as unknown as PhenomenonRow[]).map(toPhenomenonSummary);
+  // Fisher–Yates。元の配列を壊さない
+  const shuffled = [...rows];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled.slice(0, limit);
 }

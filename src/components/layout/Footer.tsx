@@ -2,7 +2,7 @@ import Link from "next/link";
 import { NAV, PREFECTURES, SITE } from "@/lib/constants";
 import { Container } from "@/components/layout/Container";
 import { Logo } from "@/components/layout/Logo";
-import { XIcon } from "@/components/common/XIcon";
+// ★`XIcon` は X のボタンを戻すときに一緒に戻す（下の注記を読むこと）
 
 const ABOUT_LINKS = [
   { href: "/about", label: "このサイトについて" },
@@ -37,15 +37,10 @@ export function Footer() {
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-navy-100/80">
               {SITE.description}
             </p>
-            <a
-              href={SITE.xUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-full bg-white px-5 text-sm font-bold text-navy-800 hover:bg-navy-50"
-            >
-              <XIcon size={16} />
-              {SITE.xHandle}
-            </a>
+            {/*
+              ★**Xのボタンは 2026-08-24 に外した**（運営者の判断。運用予定が無い）。
+              **まだ無いアカウントへ誘導しない。** 作ったらこの塊を戻すだけ。
+            */}
           </div>
 
           <nav aria-label="コンテンツ">

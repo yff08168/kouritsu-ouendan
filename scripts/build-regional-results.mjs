@@ -48,7 +48,8 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { createClient } from "@supabase/supabase-js";
 
-import { fetchPdfPages } from "./lib/pdf-text.mjs";
+import { fetchPdfBytes, fetchPdfPages, pdfPages } from "./lib/pdf-text.mjs";
+import { assembleVectorBracket, readFilledShapes } from "./lib/vector-bracket.mjs";
 import {
   assembleSlotBracket,
   explodeNumberRuns,
@@ -647,18 +648,35 @@ const saitama = {
     const tournament =
       normalize(plain(/<h1[^>]*>([\s\S]*?)<\/h1>/.exec(index)?.[1] ?? "")) || null;
 
-    // ラベルで絞らない理由は神奈川のアダプタのコメント参照
+    /*
+      ラベルで絞らない理由は神奈川のアダプタのコメント参照。
+
+      ★★**日別記事のURLは2つの形がある**（2026-08-24。過去年を取るために追加）。
+        2019年度以降 … `/YYYY/MM/DD/<id>/`
+        2015〜2018年度 … `/news/<YYYYMMDDhhmm>/`（実例 `/news/201607271415/`）
+      ★**中身（球場の表＋`TEAM…計` の表）はどちらも同じ**なので、
+      URLの形を足すだけで2015年度まで届く。
+    */
     const days = dailyLinks(index, indexUrl, {
-      hrefPattern: /\/\d{4}\/\d{2}\/\d{2}\/\d+\/?$/,
+      hrefPattern: /(\/\d{4}\/\d{2}\/\d{2}\/\d+\/?$)|(\/news\/\d{12}\/?$)/,
     });
 
     const games = [];
     for (const day of days.slice(0, MAX_DAILY_PAGES)) {
       const html = await fetchHtml(day.url);
       if (!html) continue;
-      const date = day.url.match(/\/(\d{4})\/(\d{2})\/(\d{2})\//);
+      const date =
+        day.url.match(/\/(\d{4})\/(\d{2})\/(\d{2})\//) ??
+        day.url.match(/\/news\/(\d{4})(\d{2})(\d{2})\d{4}\/?$/);
       if (!date) continue;
       const isoDate = `${date[1]}-${date[2]}-${date[3]}`;
+      /*
+        ★**その年のインデックスに、別の年の記事へのリンクが混ざる**
+        （「おすすめ」ウィジェット由来。実測3件）。
+        **過去年を辿るときに、関係のない年の試合を拾ってしまう。**
+        春・夏・秋はどれも同じ暦年に開かれるので、年で弾ける。
+      */
+      if (date[1] !== String(year)) continue;
       const round = pickRound(day.label);
 
       for (const table of html.match(/<table[\s\S]*?<\/table>/gi) ?? []) {
@@ -1338,8 +1356,14 @@ const saga = {
           **タイトルに「日付」か「大会◯日目」が入っているものだけ**を結果とみなす。
           全部開いてから中身で判断すると、月ごとに何十リクエストにもなる。
         */
-        const found = dailyLinks(archive, site, { hrefPattern: /\?p=\d+$/ }).filter(
-          (p) => /第\d+回/.test(p.label) && /\d{1,2}[/／]\d{1,2}|大会[^\s]*日/.test(p.label),
+        /*
+          ★★**昔の記事タイトルには回数も大会名も入っていない**（2026-08-25 追加）。
+          **2010・2013・2016・2019 で確認**した形は `大会第13日(7/24)の結果`。
+          ★**`第\d+回` を要求していたので、過去年は1記事も拾えていなかった。**
+          **日付か「大会◯日」があれば拾い、大会名は下で本文から取る。**
+        */
+        const found = dailyLinks(archive, site, { hrefPattern: /\?p=\d+$/ }).filter((p) =>
+          /\d{1,2}[/／]\d{1,2}|大会[^\s]*日/.test(p.label),
         );
         const fresh = found.filter((f) => !posts.some((p) => p.url === f.url));
         if (!fresh.length) break;
@@ -1378,7 +1402,17 @@ const saga = {
           そのままだと「秋季大会」に混ざる（実際に2試合入っていた）。
           春の「佐賀県高等学校野球連盟杯」も県大会ではないのでここで落ちる。
         */
-        const tournament = normalize(post.label).match(/第\d+回[^（(]*?大会/)?.[0] ?? null;
+        /*
+          ★★**タイトルに無ければ本文から取る**（2026-08-25 追加）。
+          昔の記事はタイトルが `大会第13日(7/24)の結果` だけだが、
+          **本文の見出しには `第９８回全国高等学校野球選手権佐賀大会` が入っている**
+          （2016年の記事で確認）。★**大会名を年から組み立てないこと** ——
+          7月の記事が必ず選手権予選とは限らず、推測すると嘘の大会名が付く。
+        */
+        const tournament =
+          normalize(post.label).match(/第\d+回[^（(]*?大会/)?.[0] ??
+          normalize(plain(html)).match(/第\d+回[^（(]*?大会/)?.[0] ??
+          null;
         if (!tournament?.includes(this.district)) continue;
 
         let cursor = 0;
@@ -1605,6 +1639,39 @@ const ehime = {
     const pages = dailyLinks(top, this.siteUrl, {
       hrefPattern: new RegExp(`/taikai/kousiki/${year}_R\\d+/${url}/`),
     });
+
+    /*
+      ★★**過去年度はトップからリンクされていない**（2026-08-25 追加）。
+      トップも `taikai.html` も**今年度しか出さない**ので、
+      **ディレクトリ名を組み立てて直接叩く。**
+
+        2026年度 `2026_R08` ／ 2025 `2025_R07` ／ 2024 `2024_R06` ／ 2023 `2023_R05`
+        ★**2022年度だけ `2021_R04`** —— 接頭辞の西暦が1年ずれている（出典の誤植）。
+
+      ★**だから候補を2つ試す**（`${year}_R##` と `${year-1}_R##`）。
+      ★**当たったページだけを使う**ので、外れの候補は404で静かに落ちる。
+      ★**2021年度以前はスコアPDFが無く日別HTML**なので、ここでは取れない
+      （読み手が別。取るなら別の実装が要る）。
+    */
+    if (!pages.length && year <= new Date().getFullYear()) {
+      const reiwa = String(year - 2018).padStart(2, "0");
+      /*
+        ★**ディレクトリ一覧は403**なので、**中のHTMLの名前まで組み立てる。**
+          夏 `natsu<選手権の回数>.html`（`natsu107.html` ＝ 第107回 ＝ 2025年）
+          春 `haru<西暦>.html` ／ 秋 `aki<西暦>.html`
+      */
+      const fileOf = { haru: `haru${year}.html`, natsu: `natsu${year - 1918}.html`, aki: `aki${year}.html` };
+      outer: for (const dir of [`${year}_R${reiwa}`, `${year - 1}_R${reiwa}`]) {
+        for (const file of [fileOf[url], ""]) {
+          const guess = `${this.siteUrl}taikai/kousiki/${dir}/${url}/${file}`;
+          const html = await fetchHtml(guess);
+          await sleep(this.politenessMs);
+          if (!html || !/score/i.test(html)) continue;
+          pages.push({ url: guess, label: dir });
+          break outer;
+        }
+      }
+    }
 
     const games = [];
     for (const page of pages) {
@@ -2845,33 +2912,65 @@ const mie = {
       .filter((h) => /トーナメント表/.test(h.title ?? "") && /選手権/.test(h.title ?? ""))
       .map((h) => h.url)
       .filter(Boolean);
-    if (!articles.length) {
+    /*
+      ★★**過去の大会は検索APIでは辿れない**（2026-08-25 追加）。
+      **記事そのものが消されている**（2025年の夏は6/24〜8/19 に投稿が1本も無い）。
+      代わりに**「大会結果 → 過去」のカテゴリ一覧**を見る。2022年度まで並んでいる。
+      ★**記事の題ではなくPDFのリンクを拾い、中身の表題で大会を見分ける**
+      （この県は元からその作り）。
+    */
+    /*
+      ★**一覧ページに PDF が直接並んでいる**（記事を開く必要が無い）。
+      記事URLの形（`/YYYY/MM/DD/`）を探しても1件も取れない。
+    */
+    const pastPdfs = [];
+    for (let page = 1; page <= 5; page++) {
+      const listUrl = `https://mie-kouyaren.com/result_category/past/${page > 1 ? `page/${page}/` : ""}`;
+      const list = await fetchHtml(listUrl);
+      await sleep(this.politenessMs);
+      if (!list) break;
+      for (const m of list.matchAll(/https?:\/\/[^"']*?\.pdf/g)) {
+        if (!pastPdfs.includes(m[0])) pastPdfs.push(m[0]);
+      }
+    }
+
+    if (!articles.length && !pastPdfs.length) {
       console.log("  ⚠️ 三重: 組合せ表の記事が見つからない");
       return [];
     }
 
+    /*
+      ★★**最初の記事で止めないこと**（2026-08-25）。
+      以前は `if (pdfs.length) break;` で**いちばん新しい記事1本**しか見ておらず、
+      過去大会の一覧を足しても1年ぶんしか取れなかった。
+      ★**大会の見分けは紙の表題でやる**ので、集めすぎても混ざらない。
+    */
     const pdfs = [];
-    for (const article of articles.slice(0, 4)) {
+    for (const article of articles.slice(0, 24)) {
       const html = await fetchHtml(article);
       await sleep(this.politenessMs);
       if (!html) continue;
       for (const m of html.matchAll(/https?:\/\/[^"']*?\.pdf/g)) {
         if (!pdfs.includes(m[0])) pdfs.push(m[0]);
       }
-      if (pdfs.length) break;
     }
+    // 過去大会の一覧から拾ったぶんを後ろに足す（新しい年から見たいので後ろ）
+    for (const u of pastPdfs) if (!pdfs.includes(u)) pdfs.push(u);
     if (!pdfs.length) {
       console.log("  ⚠️ 三重: 記事にPDFが無い");
       return [];
     }
-    for (const pdf of pdfs.slice(0, 6)) {
+    /** 大会名 → その大会の試合。**同じ大会の古い版で上書きしない** */
+    const collected = new Map();
+    for (const pdf of pdfs.slice(0, 40)) {
       const parsed = await fetchPdfPages(pdf, { headers: UA });
       await sleep(this.politenessMs);
       if (!parsed?.length) continue;
       for (const raw of parsed) {
         const games = readTwoColumnBracket(raw, {
           district: "三重",
-          titlePattern: /第\d+回全国高等学校野球選手権三重大会/,
+          // ★**「記念」が入る年がある**（第105回＝2023年。2026-08-25 に許した）
+          titlePattern: /第\d+回全国高等学校野球選手権(?:記念)?三重大会/,
           half: 300,
           rowTolerance: 6,
           nameOrder: ["asc", "desc"],
@@ -2879,10 +2978,19 @@ const mie = {
           // ★**日付を持たない**ので、日付での検算はできない
           hasDates: false,
         });
-        if (games) return games;
+        if (!games?.length) continue;
+        /*
+          ★**同じ大会が何度も出てくる**（大会中に「7/21更新」「7/23更新」と
+          同じ題で上がるため）。**最初に組めたものを採る** ——
+          あとの版は途中経過なので、**新しい記事から見ている限りそれが最終結果。**
+        */
+        const name = games[0].tournament;
+        if (collected.has(name)) continue;
+        collected.set(name, games);
+        break; // このPDFは読めた。次のPDFへ
       }
     }
-    return [];
+    return [...collected.values()].flat();
   },
 };
 
@@ -3403,6 +3511,8 @@ const gifu = {
       return [];
     }
 
+    /** 新サイトと旧サイトの両方から集める */
+    const out = [];
     for (const entry of entries.slice(0, 2)) {
       const html = await fetchHtml(entry.url);
       await sleep(this.politenessMs);
@@ -3428,9 +3538,88 @@ const gifu = {
         const round = pickRound(report.label.match(/【([^】]*)】/)?.[1] ?? "");
         games.push(...this.readReport(pages, season, entry.round, round));
       }
-      if (games.length) return this.verify(games, entry.round);
+      if (games.length) out.push(...this.verify(games, entry.round));
     }
-    return [];
+
+    /*
+      ★★**旧サイトに過去年のHTMLスコア表がある**（2026-08-25 追加。2021〜2023）。
+
+      新サイト（`ghbf.asfsite.jp`）の一覧には**第107回と第108回しか無い**が、
+      **旧サイト `www.ghbf.jp` が生きていて**、年度別の索引から
+      日別の結果ページに辿れる。**組み立ての要らないイニングスコア表**なので安全。
+
+        http://www.ghbf.jp/schedule_result/schedule_result.html
+          → senshuken_gifu/2023/r05senshuken_pref_0728.html
+             「第105回 全国高等学校野球選手権記念岐阜大会 7/28(金) …
+               長良川球場 決 勝 … 市岐阜商 0 0 0 2 0 0 0 0 1 3 / 大垣日大 … 4」
+
+      ★**`pref` の付いたページだけ**を見る（`zenkoku` は甲子園の結果）。
+      ★**2024年の日別結果はどちらのサイトにも無い**（穴。出典側の欠落）。
+    */
+    const old = await fetchHtml(this.oldIndexUrl);
+    await sleep(this.politenessMs);
+    if (old) {
+      const seen = new Set(out.map((g) => g.tournament));
+      const days = [...old.matchAll(/href="(senshuken_gifu\/\d{4}\/[^"]*pref[^"]*\.html)"/g)].map(
+        (m) => new URL(m[1], this.oldIndexUrl).toString(),
+      );
+      for (const day of days.slice(0, MAX_DAILY_PAGES * 2)) {
+        const html = await fetchHtml(day);
+        await sleep(this.politenessMs);
+        if (!html) continue;
+        const games = this.readOldDay(html, season);
+        if (!games?.length) continue;
+        if (seen.has(games[0].tournament)) continue;
+        out.push(...games);
+      }
+    }
+    return out;
+  },
+  /** 旧サイトの年度別索引。**新サイトに無い年はここから拾う** */
+  oldIndexUrl: "http://www.ghbf.jp/schedule_result/schedule_result.html",
+  /**
+   * 旧サイトの日別ページ1枚を読む。
+   * ★**1ページに複数試合**（球場ごと・第N試合ごと）が並ぶ。
+   */
+  readOldDay(html, season) {
+    const text = normalize(plain(html).replace(/\s+/g, " "));
+    const tournament = text.match(/第\d+回\s*全国高等学校野球選手権(?:記念)?岐阜大会/)?.[0]?.replace(/\s+/g, "");
+    if (!tournament) return [];
+    const year = Number(tournament.match(/第(\d+)回/)[1]) + 1918;
+    const md = text.match(/(\d{1,2})\/(\d{1,2})/);
+    if (!md) return [];
+    const date = `${year}-${md[1].padStart(2, "0")}-${md[2].padStart(2, "0")}`;
+
+    const games = [];
+    for (const t of html.match(/<table[\s\S]*?<\/table>/gi) ?? []) {
+      const rows = [...t.matchAll(/<tr[\s\S]*?<\/tr>/gi)].map((m) =>
+        [...m[0].matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/gi)].map((c) => normalize(plain(c[1])).trim()),
+      );
+      // 見出しが「1 2 … 9 計」で、続く2行が両校
+      const head = rows.findIndex((r) => r.join(" ").includes("計") && /\b1\b/.test(r.join(" ")));
+      if (head < 0 || rows.length < head + 3) continue;
+      const [a, b] = rows.slice(head + 1, head + 3);
+      const name = (r) => r[0];
+      const total = (r) => Number(r.at(-1));
+      if (!name(a) || !name(b) || !Number.isFinite(total(a)) || !Number.isFinite(total(b))) continue;
+      games.push({
+        date,
+        season,
+        tournament,
+        /*
+          ★**回戦は空白を落としてから見る。** 年によって「決 勝」「準 決 勝」と
+          1文字ずつ空けて組まれており、そのままだと**決勝だけ取れない**
+          （2023年の決勝が丸ごと落ちていた）。★球場名は空白を残したまま探す。
+        */
+        round: pickRound(text.replace(/[\s　]+/g, "")) ?? null,
+        venue: text.match(/([^\s]+球場)/)?.[1] ?? null,
+        teams: [
+          { display: name(a), score: total(a), won: total(a) > total(b) },
+          { display: name(b), score: total(b), won: total(b) > total(a) },
+        ],
+      });
+    }
+    return games;
   },
   /** 日別の報告書1本を読む */
   readReport(pages, season, no, round) {
@@ -3755,37 +3944,69 @@ const yamagata = {
   politenessMs: 2000,
   // **夏だけ。** 春季・秋季も同じ形のPDFが出るか確かめてから足すこと
   seasons: { summer: "https://www.yamagata-hbf.org/" },
-  /*
-    ★**Google Drive のファイルID。新しい大会になったら人が入れ替える。**
-    連盟のトップ → お知らせ「第N回…山形大会【勝ち上がり】・【試合結果一覧】」
-    → 各リンクの `drive.google.com/file/d/<ここ>/view`。
-    **大会名は書かない**（PDFから読む）。
-  */
-  files: {
-    summer: {
-      results: "1lbzp2D9qaueOlUr4jLinl1bEMfZ6fCHq",
-      bracket: "1p-nBzeXkCDs4Joapx5_TaxD-T9gQfJPO",
-    },
-  },
+  /**
+   * ★★**お知らせAPIから辿る**（2026-08-25。**ファイルIDの直書きをやめた**）。
+   *
+   * 以前は Drive のファイルIDを2つ手で書いていて、**人が大会ごとに入れ替える前提**だった。
+   * お知らせから辿れるようにしたので、**過去の大会も自動で読める**（2024年度まで）。
+   *
+   * ★★**`type=T`（トピック）を見ること。** 山形は
+   * **`type=N` だと1件しか返らない**（静岡と同じ書き方では過去が1つも見えない）。
+   * `type=T` で26件返り、そこに 2024〜2026 の3季ぶんが並んでいる。
+   */
+  leagueId: 206,
   async collect({ season }) {
-    const ids = this.files[season];
-    if (!ids) return [];
-    const drive = (id) => `https://drive.google.com/uc?export=download&id=${id}`;
-    const results = await fetchPdfPages(drive(ids.results), { headers: UA });
-    await sleep(this.politenessMs);
-    if (!results?.length) {
-      console.log("  ⚠️ 山形: 試合結果一覧のPDFが読めない。ファイルIDが差し替わった可能性がある");
+    if (season !== "summer") return [];
+    const news = await fetchOmyuNews(this.leagueId, "T");
+    if (!news?.length) {
+      console.log("  ⚠️ 山形: お知らせが取れない。出典の作りが変わった可能性がある");
       return [];
     }
-    const bracket = ids.bracket ? await fetchPdfPages(drive(ids.bracket), { headers: UA }) : null;
-    await sleep(this.politenessMs);
-    return this.readSheet(results, bracket, season);
+    /*
+      ★**見出しで選手権の記事に絞る。** 春季・秋季や総会の記事を開かずに済ませる。
+      **新しい順に見て、読めたものを積み上げる**（引き継ぎがあるので取りこぼしても消えない）。
+    */
+    const posts = news.filter((n) => /全国高等学校野球選手権|選手権山形大会/.test(n.title ?? ""));
+    const out = [];
+    const seen = new Set();
+    // ★お知らせは26件しか無いので、選手権の記事は全部見てよい（1件あたりPDF2本）
+    for (const post of posts) {
+      const body = await fetchOmyuNewsBody(this.leagueId, post.newsId);
+      await sleep(this.politenessMs);
+      if (!body) continue;
+      /*
+        ★**本文に Drive のリンクが2本ある**（勝ち上がり／試合結果一覧）。
+        **どちらが試合結果かは題では決められない**ので、両方開いて
+        「大会名と回戦の表がある」ほうを使う（`readSheet` が見分ける）。
+      */
+      const ids = [...body.matchAll(/drive\.google\.com\/file\/d\/([\w-]+)/g)].map((m) => m[1]);
+      for (const id of ids) {
+        const pages = await fetchPdfPages(`https://drive.google.com/uc?export=download&id=${id}`, { headers: UA });
+        await sleep(this.politenessMs);
+        if (!pages?.length) continue;
+        const games = this.readSheet(pages, null, season);
+        if (!games?.length) continue;
+        const name = games[0].tournament;
+        if (seen.has(name)) continue;
+        seen.add(name);
+        out.push(...games);
+        break; // この記事は読めた。次の記事へ
+      }
+    }
+    return out;
   },
   readSheet(pages, bracket, season) {
     const flat = pages.flatMap((p) => p.lines.map((l) => normalize(l.text.replace(/\t/g, ""))));
     const tournament = flat.map((t) => t.match(/第\d+回全国高等学校野球選手権山形大会/)?.[0]).find(Boolean);
     if (!tournament) {
-      console.log("  ⚠️ 山形: PDFに大会名が無い。中身が変わった可能性がある");
+      /*
+        ★**黙って返してよい**（2026-08-25）。お知らせには
+        「勝ち上がり」と「試合結果一覧」の2本がぶら下がっていて、
+        **どちらが試合表かは題では決められないので両方開いている。**
+        外れたほう（勝ち上がり表）でここに来るのは**普通のこと**で、
+        警告を出すと大会ごとに何度も鳴って本当の異常が埋もれる。
+        ★**1本も読めなかったことは呼び出し側が「0試合」で気づける。**
+      */
       return [];
     }
     // 選手権の回数は 年 - 1918
@@ -7148,6 +7369,21 @@ const shiga = {
    * 新着一覧に硬式の夏と春が並んでいる。**秋は「8／26 18：00公開予定」でまだ出ていない**
    * （出たら `autumn` を足せる。見出しは「秋季近畿地区高等学校野球滋賀県大会」）。
    */
+  /*
+    ★★**過去年と秋季は 2026-08-25 に見送った。** `log.html`（過去大会記録）に
+    2022年からの3季ぶんの紙が並んでいるのは確かめたが、
+    **検算材料（優勝校）を紙から確実に取れない。**
+
+      見出し … `log.html` の側には優勝校が入っていない（大会名だけ）
+      紙     … 優勝の文言はあるが**校名が離れた行に紛れる**
+               （`湖…湖東スタジアム２年ぶり１５回目の優勝後 援 ：朝日新聞社` の
+                 一方で、優勝校「近江」は球場の凡例の行に混ざっている）
+
+    ★**この県は組み立て型**（`slot-bracket.mjs`）なので、
+    **「枝とは別の場所から来る事実」が無いまま出すと、石川で踏んだ
+    「構造は合うのに決勝の相手が違う」を止められない。**
+    ★**取れないなら出さない。** 紙の読み方が固まったら足すこと。
+  */
   seasons: {
     summer: "http://www.biwa.ne.jp/~shigafed/",
     spring: "http://www.biwa.ne.jp/~shigafed/",
@@ -7234,6 +7470,7 @@ const shiga = {
       if (!champion) continue;
       links.push({ href, label, champion });
     }
+
     if (!links.length) {
       console.log(`  ⚠️ 滋賀: ${season} の結果PDFへのリンクが見つからない`);
       return [];
@@ -8316,8 +8553,25 @@ const tochigi = {
    */
   indexesOf(season, year) {
     if (season === "summer") return [`${year - 1918}ch.html`];
-    if (season === "spring") return ["spring-pref.html", "spring-area.html"];
-    return ["autumn-pref.html"];
+    /*
+      ★★**春季・秋季も回数から辿れる**（2026-08-24 追加。夏2014・春秋2013 まで遡れる）。
+      **春季・秋季の回数は 年 − 1947**（夏の 年 − 1918 とは別系列）。
+
+        春季 県大会 `${n}sp-p.html` ／ 春季 地区予選 `${n}sp-a.html` ／ 秋季 `${n}au.html`
+
+      ★★**今年のぶんだけ回数の無い固定名でも置かれている**（`spring-pref.html`）。
+      ★**過去年のときに固定名を候補に残さないこと** —— 回数形が404だったときに
+      **今年の紙を過去年として読んでしまう**（新潟でデータを壊したのと同じ形。
+      しかも栃木の大会名からは年が導けないので、あの歯止めが効かない）。
+    */
+    const n = year - 1947;
+    const isCurrent = year >= new Date().getFullYear();
+    if (season === "spring") {
+      return isCurrent
+        ? ["spring-pref.html", "spring-area.html"]
+        : [`${n}sp-p.html`, `${n}sp-a.html`];
+    }
+    return isCurrent ? ["autumn-pref.html"] : [`${n}au.html`];
   },
   /**
    * ★**Shift_JIS のページがある。** 自前で取って判定する。
@@ -9257,6 +9511,19 @@ const okinawa = {
   },
   /** 何枚まで開いて表題を見るか。**新しい順**に見るので、当たればすぐ止まる */
   maxSheets: 3,
+  /**
+   * ★★**過去の大会は `kako/` の索引にある**（2026-08-24 追加）。
+   *
+   *   春2008・夏2009・秋2007 まで並んでいて、**約19年ぶん**。
+   *   ★**ファイル名が年ごとにまるでバラバラ**（`H21natsu_t.pdf` `100t.pdf`
+   *   `t2020.pdf` `71harut.pdf` `75t.pdf` …）なので、
+   *   **URLを推測せず、必ずこの索引からリンクを拾うこと。**
+   */
+  kakoOf: {
+    spring: "http://www.kouyaren-okinawa.jp/kako/haru/haru.html",
+    summer: "http://www.kouyaren-okinawa.jp/kako/natu/natu.html",
+    autumn: "http://www.kouyaren-okinawa.jp/kako/aki/aki.html",
+  },
   async collect({ fetchHtml, season, url }) {
     const dir = this.dirOf[season];
     const html = await fetchHtml(url);
@@ -9274,21 +9541,58 @@ const okinawa = {
       if (m[1].toLowerCase() !== dir) continue;
       found.set(m[0], Number(m[2]));
     }
-    if (!found.size) {
-      console.log(`  ⚠️ 沖縄: ${season} のやぐら表へのリンクがトップページに無い`);
+    const sheets = [...found.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .map(([p]) => `http://www.kouyaren-okinawa.jp/${p}`)
+      .slice(0, this.maxSheets);
+
+    /*
+      ★**過去の索引からも足す。** 今年の紙は `yoko/` にあり、
+      過去の紙は `kako/` にある（同じ大会が両方にあることもある）。
+      ★**`kako/` は `t.pdf` で終わらない名前が混ざる**ので、
+      拡張子だけで拾って**開いて表題で見分ける**（この県の元からの作り）。
+    */
+    const kakoUrl = this.kakoOf[season];
+    const kako = await fetchHtml(kakoUrl);
+    await sleep(this.politenessMs);
+    if (kako) {
+      const base = kakoUrl.replace(/\/[^/]*$/, "/");
+      const past = [];
+      for (const m of kako.matchAll(/href="([^"]+\.pdf)"/gi)) {
+        past.push(new URL(m[1], base).toString());
+      }
+      // 新しいものから見たいので、索引の並び（古い順）を反転する
+      sheets.push(...past.reverse());
+    }
+    if (!sheets.length) {
+      console.log(`  ⚠️ 沖縄: ${season} のやぐら表へのリンクが見つからない`);
       return [];
     }
-    const paths = [...found.entries()].sort((a, b) => b[1] - a[1]).map(([p]) => p);
-    for (const p of paths.slice(0, this.maxSheets)) {
-      const parsed = await fetchPdfPages(`http://www.kouyaren-okinawa.jp/${p}`, { headers: UA });
+
+    /*
+      ★★**1枚で止めずに全部読む**（2026-08-24）。過去の紙が19年ぶんあるので、
+      **見つけた大会を積み上げる。**
+      ★**一度取れば生成物に残る**（季節ごとの引き継ぎ）ので、
+      次からは出典が新しい紙を出したぶんだけ増える。
+    */
+    const out = [];
+    const seenTournaments = new Set();
+    for (const sheetUrl of sheets) {
+      const parsed = await fetchPdfPages(sheetUrl, { headers: UA });
       await sleep(this.politenessMs);
       if (!parsed?.length) continue;
       const page = parsed[0];
       const flat = page.lines.map((l) => normalize(l.text.replace(/\t/g, "")));
-      if (!flat.some((t) => this.titleOf[season].test(t))) continue;
-      return this.readSheet(page, season, html);
+      const title = flat.map((t) => this.titleOf[season].exec(t)?.[0]).find(Boolean);
+      // その季節の紙でなければ飛ばす（九州地区大会・要項・軟式が混ざる）
+      if (!title) continue;
+      // 同じ大会が `yoko/` と `kako/` の両方にあることがある
+      if (seenTournaments.has(title)) continue;
+      seenTournaments.add(title);
+      const games = this.readSheet(page, season, html);
+      if (games?.length) out.push(...games);
     }
-    return [];
+    return out;
   },
   /**
    * ★★**トップページの本文が優勝校を文章で書いている**（2026-08-21。鹿児島と同じ形）。
@@ -9351,14 +9655,22 @@ const okinawa = {
       ---- 会期 ----
       「令和８年６月１３日（土）～７月２０日（月）」。**年はここから出す**（回数からは出さない）。
     */
-    const term = flat.map((t) => t.match(/令和(\d+)年(\d+)月(\d+)日[^~～]*[~～](\d+)月(\d+)日/)).find(Boolean);
+    /*
+      ★★**古い紙は平成**（2026-08-25 追加）。`kako/` の索引には
+      **春2008・夏2009・秋2007** まで並んでいて、そこは元号が平成。
+      ★**令和しか見ていなかったので、過去年が全部「会期が読めない」で落ちていた。**
+      **平成1年 = 1989年 ／ 令和1年 = 2019年。**
+    */
+    const term = flat
+      .map((t) => t.match(/(令和|平成)(\d+)年(\d+)月(\d+)日[^~～]*[~～](\d+)月(\d+)日/))
+      .find(Boolean);
     if (!term) {
       console.log(`  ⚠️ 沖縄: ${tournament} の会期が読めない。検算できないので1試合も出さない`);
       return [];
     }
-    const [, ge, m1, d1, m2, d2] = term.map(Number);
-    // 令和1年 = 2019年
-    const startYear = ge + 2018;
+    const era = term[1];
+    const [ge, m1, d1, m2, d2] = term.slice(2).map(Number);
+    const startYear = ge + (era === "令和" ? 2018 : 1988);
     /*
       ★**会期が年をまたぐ大会は無い**（春3〜4月・夏6〜7月・秋9〜10月）。
       またぐ紙が出てきたら日付の年が決められないので、ここで止める。
@@ -10696,6 +11008,181 @@ const fukuoka = {
   },
 };
 
+/**
+ * ★**過去の大会を何年ぶん辿るか**（2026-08-24）。
+ *
+ * 連盟のサイトは年ごとのお知らせを残しているので、遡れば過去の大会が読める。
+ * ★**増やしすぎないこと** —— 1年ぶんにつきPDFを1本取りに行くので、
+ * 自動更新（1日2回）のたびに出典へ余計な負荷をかける。
+ * ★**紙の形は年で変わる。** 読めない年は検算で弾かれて入らないだけで、
+ * **「取れなかった」ことは警告に出る。**
+ */
+const MAX_PAST_TOURNAMENTS = 3;
+
+/**
+ * 富山県高等学校野球連盟。**枝の線から読む最初の県**（2026-08-24）。
+ *
+ * ------------------------------------------------------------------
+ * ★★ 「トーナメント表は出典にしない」の例外だが、理由が他と違う
+ *
+ *   京都・広島・三重・鹿児島・滋賀・和歌山・兵庫・沖縄は
+ *   `slot-bracket.mjs` で**座標から枝の形を推測して**組み立てている。
+ *   富山はその条件を満たさない（**スロット番号の行が無い**）ので、
+ *   長いあいだ「取れない県」に置いてあった。
+ *
+ *   ★**この紙は枝が線として描いてある。** 赤が勝った側で、
+ *   **どの枝とどの枝が1試合になるかを紙が書いている**（`vector-bracket.mjs`）。
+ *   推測しないので、**石川で踏んだ「構造は合うのに相手が違う」が起きない。**
+ *
+ * ------------------------------------------------------------------
+ * ★★ 入っているのは準々決勝まで
+ *
+ *   連盟はこの紙を**大会中に上書き更新**しているが、2026-08-24 時点で
+ *   **準決勝・決勝は枝が黒のまま**（＝結果が入っていない）。
+ *   ★**足りないぶんを推測で埋めないこと。** 連盟が更新すれば自動で入る。
+ *   ★**手で入れた準決勝・決勝は `src/lib/content/regional-supplements.ts` にある**
+ *   （出典が連盟ではないので生成物に混ぜない）。
+ *
+ * ------------------------------------------------------------------
+ * ★★ 日付が無い
+ *
+ *   この紙には**準決勝（23日）・決勝（25日）以外に日付が1つも無い。**
+ *   `date: null` で出す（`RegionalGame.date` は null を許す）。
+ *   ★**推測で埋めないこと。**
+ *
+ * ------------------------------------------------------------------
+ * ★ 規約
+ *
+ *   `robots.txt` は404。転載・複製・営利を制限する掲示は無い
+ *   （`data/federation-sites.json` の `terms: []`。2026-08-24 に本文も確認した）。
+ */
+const toyama = {
+  slug: "toyama",
+  district: "富山",
+  name: "富山県高等学校野球連盟",
+  siteUrl: "https://www.toyama-hbf.jp/",
+  politenessMs: 2000,
+  // ★**夏だけ。** 春季・秋季は紙の形が違うかもしれないので、測ってから足すこと
+  //   （「同じ県の別の季節」でも測り直す。山口・静岡・宮崎で実際に違った）
+  seasons: { summer: "https://www.toyama-hbf.jp/?cat=5" },
+  async collect({ fetchHtml, season, url }) {
+    const index = await fetchHtml(url);
+    if (!index) return [];
+
+    // 大会のお知らせ（新しい順）。**そこから「結果はこちら」のPDFを辿る**
+    const posts = dailyLinks(index, url, { hrefPattern: /\?p=\d+/ }).filter((l) =>
+      /全国高等学校野球選手権富山大会/.test(l.label),
+    );
+    if (!posts.length) {
+      console.log("  ⚠️ 富山: 選手権のお知らせが見つからない。出典の作りが変わった可能性がある");
+      return [];
+    }
+
+    /*
+      ★★**過去の年も取る**（2026-08-24）。連盟は「夏の大会」の一覧に
+      **年ごとのお知らせを残している**（第108回・第107回・第106回…）ので、
+      新しい順に辿れば過去の大会が読める。
+      ★**読めなかった年は黙って飛ばす**（下の `readBracket` が検算で弾く）。
+      **1年が読めないだけで他の年まで落とさない。**
+    */
+    const out = [];
+    for (const post of posts.slice(0, MAX_PAST_TOURNAMENTS)) {
+      const html = await fetchHtml(post.url);
+      await sleep(this.politenessMs);
+      if (!html) continue;
+      const pdfs = dailyLinks(html, post.url, { hrefPattern: /\.pdf$/i });
+      for (const pdf of pdfs.slice(0, 3)) {
+        const bytes = await fetchPdfBytes(pdf.url, { headers: UA });
+        await sleep(this.politenessMs);
+        if (!bytes) continue;
+        const games = await this.readBracket(bytes, season);
+        if (games?.length) {
+          out.push(...games);
+          break; // その年は読めた。次の年へ
+        }
+      }
+    }
+    return out;
+  },
+
+  /** 紙1枚を読む。**検算に1つでも落ちたら空**（1試合も出さない）。 */
+  async readBracket(bytes, season) {
+    const pages = await pdfPages(bytes.slice());
+    if (!pages?.length) return null;
+    const page = pages[0];
+    const flat = page.lines.map((l) => normalize(l.text.replace(/\t/g, "")));
+
+    const tournament = flat.map((t) => t.match(/第\d+回全国高等学校野球選手権富山大会/)?.[0]).find(Boolean);
+    if (!tournament) return null;
+    // 選手権の回数は 年 - 1918
+    const year = Number(tournament.match(/第(\d+)回/)[1]) + 1918;
+    // ★先の年の紙を掴まない（栃木で入れた歯止めと同じ。この紙は日付が無いので年で見る）
+    if (year > new Date().getFullYear()) {
+      console.log(`  ⚠️ 富山: 大会の年（${year}）が未来。1試合も出さない`);
+      return [];
+    }
+
+    const shapes = await readFilledShapes(bytes.slice());
+    const { games, teamCount, broken } = assembleVectorBracket({
+      shapes,
+      page,
+      // ★左右の校名は**同じ行に並ぶ**ので、列で分けて読ませる
+      nameXLeft: 100,
+      nameXRight: 495,
+      centerX: 280,
+    });
+    if (!games.length) return null;
+    if (broken.length) {
+      console.log(`  ⚠️ 富山: 校名かスコアが読めない試合が ${broken.length} 件。1試合も出さない`);
+      return [];
+    }
+
+    /*
+      ★★ 検算1: **勝ち抜きの不変条件** —— 負けは1校につき1回まで。
+      **紙の外の数字を使わない**ので、参照データの誤りに巻き込まれない。
+    */
+    const losses = new Map();
+    for (const g of games) losses.set(g.loser, (losses.get(g.loser) ?? 0) + 1);
+    const twice = [...losses].filter(([, n]) => n > 1);
+    if (twice.length) {
+      console.log(`  ⚠️ 富山: 2回以上負けている学校がある（${twice.map(([n]) => n).join("・")}）。1試合も出さない`);
+      return [];
+    }
+
+    /*
+      ★★ 検算2: **回戦ごとの試合数の算数。**
+      1回戦に出た校数から、以降の回戦の試合数が一意に決まる。
+      （富山2026は 39校・1回戦7試合 → 2回戦16・3回戦8・準々4）
+    */
+    const byRound = new Map();
+    for (const g of games) byRound.set(g.round, (byRound.get(g.round) ?? 0) + 1);
+    let remaining = teamCount - (byRound.get(1) ?? 0);
+    for (const r of [...byRound.keys()].sort((a, b) => a - b)) {
+      const played = byRound.get(r);
+      if (r > 1 && played * 2 !== remaining) {
+        console.log(
+          `  ⚠️ 富山: ${r}回戦の試合数（${played}）が残りチーム数（${remaining}）と合わない。1試合も出さない`,
+        );
+        return [];
+      }
+      remaining = r === 1 ? remaining : remaining - played;
+    }
+
+    return games.map((g) => ({
+      // ★**この紙には日付が無い。** 推測で埋めない
+      date: null,
+      season,
+      tournament,
+      round: g.roundName,
+      venue: null,
+      teams: [
+        { display: g.winner, score: g.winnerScore, won: true },
+        { display: g.loser, score: g.loserScore, won: false },
+      ],
+    }));
+  },
+};
+
 const ADAPTERS = [
   nagano,
   kanagawa,
@@ -10747,6 +11234,13 @@ const ADAPTERS = [
     「そもそも32試合しか載っていない」も同じ取り違え。**fukushima の説明を読むこと。**
   */
   fukushima,
+  /*
+    ★★**富山は「枝の線から読む」最初の県**（2026-08-24）。
+    座標から推測して組み立てる `slot-bracket.mjs` の条件を満たさないので
+    長く「取れない県」に置いてあったが、**枝が線として描いてあった。**
+    福岡（SVG）と同じ考え方の、PDF版。**toyama の説明を読むこと。**
+  */
+  toyama,
 ];
 
 // ------------------------------------------------------------------
@@ -11209,13 +11703,18 @@ function previousDistrict(slug) {
   if (previousCache.has(slug)) return previousCache.get(slug);
   let out = null;
   try {
-    const file = path.join(OUT_DIR, `${slug}.ts`);
-    if (existsSync(file)) {
-      const text = readFileSync(file, "utf8");
-      const from = text.indexOf("= {");
-      const to = text.lastIndexOf("};");
-      if (from >= 0 && to > from) out = JSON.parse(text.slice(from + 2, to + 1));
-    }
+    /*
+      ★★**生成物は JSON**（2026-08-24 に `.ts` から移した）。
+
+      ★**ここを直し忘れて、実際にデータを失った。**
+      `.ts` を読んだままだったので「前の生成物が無い」と判断され、
+      **季節の引き継ぎが丸ごと効かなくなった** ——
+      過去年を取った神奈川・島根・栃木が**その年だけになり、今年が消えた。**
+      ★**引き継ぎは静かに効かなくなる。** 警告も例外も出ない。
+      **生成物の形を変えるときは、ここを必ず一緒に直すこと。**
+    */
+    const file = path.join(OUT_DIR, `${slug}.json`);
+    if (existsSync(file)) out = JSON.parse(readFileSync(file, "utf8"));
   } catch {
     out = null;
   }
@@ -11259,13 +11758,23 @@ function writeDistrict(district) {
     return false;
   }
   mkdirSync(OUT_DIR, { recursive: true });
+  /*
+    ★★**生成物は JSON**（2026-08-24 に `.ts` から移した）。
+
+    ★**TypeScript のリテラルにすると型検査が通らなくなる。**
+    過去年を遡って集めたら**熊本2,350件・埼玉2,513件**になり、
+    どちらも **TS2590**（"union type that is too complex to represent"）で落ちた。
+    ★**甲子園（2,972件）と神宮で先に踏んで JSON にしてあったのと同じ限界。**
+    **県ごとの上限ではなく、1ファイルの要素数の問題**なので、
+    遡るほど必ずどの県も当たる。
+
+    ★**型は読む側で1回だけ与える**（`src/lib/data/regional/loaders.ts`）。
+    ★**JSONにはコメントが書けない**ので、「生成物・直接編集しない」の注記は
+    `loaders.ts` の側に置いてある。
+  */
   // `allGames` はベストNを数えるための作業用。生成物には出さない
-  const file =
-    `// このファイルは scripts/build-regional-results.mjs が生成する。直接編集しない。\n` +
-    `// 出典: ${d.sourceName}（${d.sourceUrl}）\n\n` +
-    `import type { RegionalDistrict } from "@/lib/regional-results";\n\n` +
-    `export const REGIONAL_${d.slug.toUpperCase().replace(/-/g, "_")}: RegionalDistrict = ${JSON.stringify(d, null, 2)};\n`;
-  const out = path.join(OUT_DIR, `${d.slug}.ts`);
+  const file = `${JSON.stringify(d, null, 2)}\n`;
+  const out = path.join(OUT_DIR, `${d.slug}.json`);
   writeFileSync(out, file, "utf8");
   console.log(`  書き出した: ${path.relative(ROOT, out)}（${Math.round(file.length / 1024)}KB）`);
   return true;
@@ -11297,11 +11806,30 @@ async function main() {
     for (const [season, url] of Object.entries(adapter.seasons)) {
       const seen = new Set();
       const seasonGames = [];
-      /** 重複を落としつつ足す。**同じ試合が別ページに出ることがある** */
+      /**
+       * 重複を落としつつ足す。**同じ試合が別ページに出ることがある。**
+       *
+       * ★★**日付を持たない出典では、鍵に大会名を入れること**（2026-08-24）。
+       *
+       *   富山は紙に日付が1つも無いので、鍵が `null＋校名＋校名` になり、
+       *   **別の年の同じ顔合わせが1つの試合として潰れた**
+       *   （2025年の2回戦が16→15になった）。
+       *   ★`upcoming` で同じ罠を踏んで「鍵に大会名を必ず入れる」と決めてあったのに、
+       *   **こちらには入っていなかった。**
+       *
+       *   ★**日付がある出典は今までどおりの鍵にする。** 大会名を足すと、
+       *   **出典が同じ試合を違う大会名で2回載せていたときに重複が残る**
+       *   （既存39県の生成物を変えないため、条件を分けてある）。
+       *
+       *   ★**日付の無い引き分け再試合は落ちる**（同じ大会・同じ回戦・同じ顔合わせ）。
+       *   いまそういう出典は無い。出てきたらここを見直すこと。
+       */
       const add = (list) => {
         let added = 0;
         for (const g of list) {
-          const key = `${g.date}\t${g.teams[0].display}\t${g.teams[1].display}`;
+          const key = g.date
+            ? `${g.date}\t${g.teams[0].display}\t${g.teams[1].display}`
+            : `${g.tournament}\t${g.round}\t${g.teams[0].display}\t${g.teams[1].display}`;
           if (seen.has(key)) continue;
           seen.add(key);
           seasonGames.push(g);
@@ -11372,16 +11900,132 @@ async function main() {
         `kept` は「その季節のいちばん新しい試合から ${KEEP_DAYS}日」で切るので、
         1試合でも取れていれば 0 にはならない。
       */
-      if (seasonGames.length === 0) {
-        const before = (previousDistrict(adapter.slug)?.games ?? []).filter(
-          (g) => g.season === season,
+      /*
+        ★★★**大会名から導ける年と、試合の日付の年が食い違ったら、その季節は捨てる**
+        （2026-08-24。**新潟で実際にデータを壊してから入れた歯止め**）。
+
+        新潟のアダプタは Excel の中身から試合を読むが、**大会名は別の場所から取る。**
+        `--year 2024` で走らせると **2024年の試合に「令和8年度」の大会名が付き**、
+        引き継ぎ（大会名で見分ける）が「同じ大会」と判断して
+        **正しい2026年のデータを2024年のデータで上書きした。**
+
+        ★**警告では足りない。** 上書きは静かに起き、
+        **画面には「令和8年度春季」として2年前の試合が並ぶ。**
+        ★**気づけたのは日付を目で見たからで、検算はどれも通っていた。**
+
+        ★**「令和N年」「第N回…選手権」から年が出せる大会だけを見る。**
+        年が導けない大会名（「秋季◯◯大会」など）は素通しする —— 出せない年を
+        当てにいくと、**正しい出典まで巻き込んで捨てる。**
+      */
+      const mismatched = new Map();
+      for (const g of seasonGames) {
+        if (!g.date || !g.tournament) continue;
+        const t = normalize(g.tournament);
+        const senshuken = t.match(/第(\d+)回.*選手権/);
+        const reiwa = t.match(/令和(\d+)年/);
+        /*
+          ★**大会名に西暦がそのまま入る出典がある**（2026-08-24 追加。島根）。
+          `2023年春季島根県大会` `2019年代秋季島根県大会` `2024年度春季島根県大会`。
+          ★**これを見ていなかったので、島根で5件の年混入を素通ししていた**
+          （決め打ちURLが404のときに別の年の紙を読んでいた）。
+          ★**「年代」は暦年+1**（秋）なので、下の「1年の幅を許す」でちょうど吸収される。
+        */
+        const seireki = t.match(/(\d{4})年/);
+        const named = senshuken
+          ? Number(senshuken[1]) + 1918
+          : reiwa
+            ? 2018 + Number(reiwa[1])
+            : seireki
+              ? Number(seireki[1])
+              : null;
+        if (named == null) continue;
+        const actual = Number(g.date.slice(0, 4));
+        // 年度をまたぐ大会がある（秋季は前年の秋＝同じ暦年）ので1年の幅を許す
+        if (Math.abs(named - actual) > 1) {
+          mismatched.set(g.tournament, `${g.tournament}（名前は${named}年・試合は${actual}年）`);
+        }
+      }
+      if (mismatched.size) {
+        console.log(
+          `  ⚠️ ${season}: 大会名の年と試合の年が食い違う。**この季節は1試合も出さない**\n` +
+            [...mismatched.values()].map((m) => `      ${m}`).join("\n"),
         );
+        seasonGames.length = 0;
+      }
+
+      /*
+        ★★**1つの大会の試合が2つ以上の暦年にまたがっていたら知らせる**（2026-08-24）。
+
+        ★**上の検算をすり抜ける誤りがある。** 大会名から年が導けない
+        （「令和N年」も「第N回…選手権」も無い）大会では年を突き合わせられない。
+        **山梨で実際に見つかった** ——
+          第78回春季関東地区高校野球山梨県大会 … 2026年31試合 ＋ **2023年3試合**
+          第78回秋季関東地区高校野球山梨県大会 … 2025年34試合 ＋ **2024年3試合**
+        どちらも**この作業より前からあった誤り**（生成物に元から入っていた）。
+
+        ★**春（3〜5月）・夏（7〜8月）・秋（9〜10月）はどれも暦年をまたがない**ので、
+        1大会が2年に分かれていたら出典の拾い過ぎを疑う。
+        ★**落とさずに知らせるだけにしてある。** どちらの年が正しいかは
+        紙を見ないと決められず、**機械が選ぶと逆を捨てる恐れがある。**
+      */
+      const byTournament = new Map();
+      for (const g of seasonGames) {
+        if (!g.date) continue;
+        const key = g.tournament ?? "";
+        if (!byTournament.has(key)) byTournament.set(key, new Map());
+        const years = byTournament.get(key);
+        years.set(g.date.slice(0, 4), (years.get(g.date.slice(0, 4)) ?? 0) + 1);
+      }
+      for (const [name, years] of byTournament) {
+        if (years.size < 2) continue;
+        const detail = [...years].sort((a, b) => b[1] - a[1]).map(([y, n]) => `${y}年${n}件`);
+        console.log(
+          `  ⚠️ ${season}: 1つの大会に複数の年が混ざっている（${name || "大会名なし"}: ${detail.join(" / ")}）。` +
+            `出典の拾い過ぎの疑い。**落としていないので、紙を見て確かめること**`,
+        );
+      }
+
+      const before = (previousDistrict(adapter.slug)?.games ?? []).filter(
+        (g) => g.season === season,
+      );
+      if (seasonGames.length === 0) {
         if (before.length) {
           console.log(
             `  ⚠️ ${season}: 前は ${before.length} 試合あったのに1試合も取れなかった。` +
               `前の内容を残す（出典側の変更なら、直すまで古いままになる）`,
           );
           seasonGames.push(...before);
+        }
+      } else if (before.length) {
+        /*
+          ★★**今回取れなかった「過去の大会」は前の生成物から引き継ぐ**（2026-08-24）。
+
+          ★**これが無いと過去年を貯められない。**
+          出典はふつう**今年の紙しか置いていない**ので、毎回の実行で
+          「今年ぶんを取って季節を丸ごと上書き」すると、
+          **`--year 2024` で取った過去年が次の実行で消える。**
+          逆に `--year` を付けた実行では**今年が消える。**
+
+          ★**引き継ぐ単位は「大会」。** 今回取れた大会は新しいほうで置き換わるので、
+          **出典が誤りを直したときはちゃんと反映される。**
+          触らないのは「今回どこにも出てこなかった大会」だけ。
+
+          ★**大会名で見分ける。** 年で見分けないのは、
+          **日付を1つも持たない出典がある**ため（富山・三重・兵庫ほか9県）。
+
+          ★**古い大会名が残り続けることがある**（山口は大会が改称された）。
+          画面に出るのは「いちばん新しい大会」なので実害は出ないが、
+          **「秋が去年のままではないか」は毎季たしかめること**（READMEの宿題）。
+        */
+        const fresh = new Set(seasonGames.map((g) => g.tournament));
+        const carried = before.filter((g) => !fresh.has(g.tournament));
+        if (carried.length) {
+          const names = [...new Set(carried.map((g) => g.tournament))];
+          console.log(
+            `  ${season}: 過去の大会を引き継いだ（${carried.length} 試合／` +
+              `${names.length} 大会: ${names.slice(0, 2).join("・")}${names.length > 2 ? "ほか" : ""}）`,
+          );
+          seasonGames.push(...carried);
         }
       }
 
@@ -11997,19 +12641,22 @@ async function main() {
     （`Module not found: Can't resolve '@/lib/data/regional'` がリクエストごとに出る）。
     ファイルを名指しできる名前にしておけば、どちらでも同じ解決になる。
   */
-  const known = ADAPTERS.filter((a) => existsSync(path.join(OUT_DIR, `${a.slug}.ts`)));
+  const known = ADAPTERS.filter((a) => existsSync(path.join(OUT_DIR, `${a.slug}.json`)));
   const indexFile =
     `// このファイルは scripts/build-regional-results.mjs が生成する。直接編集しない。\n` +
     `// 県のページが自分の県だけ読み込むための表。**静的 import にしないこと**\n` +
-    `// （全県が1つのページに入る）。\n\n` +
+    `// （全県が1つのページに入る）。\n` +
+    `//\n` +
+    `// ★★県ごとのデータは **JSON**（\`<県>.json\`）。**こちらも生成物で、直接編集しない。**\n` +
+    `//    TypeScript のリテラルにすると、試合が数千件で TS2590\n` +
+    `//    （"union type that is too complex to represent"）になり型検査が通らない。\n` +
+    `//    甲子園・神宮と同じ扱いで、**型はここで1回だけ与える。**\n\n` +
     `import type { RegionalDistrict } from "@/lib/regional-results";\n\n` +
     `export const REGIONAL_LOADERS: Record<string, () => Promise<RegionalDistrict>> = {\n` +
     known
       .map(
         (a) =>
-          `  ${a.slug}: () => import("./${a.slug}").then((m) => m.REGIONAL_${a.slug
-            .toUpperCase()
-            .replace(/-/g, "_")}),\n`,
+          `  ${a.slug}: () => import("./${a.slug}.json").then((m) => m.default as RegionalDistrict),\n`,
       )
       .join("") +
     `};\n`;

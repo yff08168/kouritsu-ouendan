@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { StaticPage, UnsetNotice } from "@/components/common/StaticPage";
-import { XIcon } from "@/components/common/XIcon";
+// ★`XIcon` は X の窓口を戻すときに一緒に戻す（下の注記を読むこと）
 import { OPERATOR, SITE } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -32,22 +32,15 @@ export default function ContactPage() {
 
       <h2>連絡方法</h2>
 
-      <h3>X（旧Twitter）</h3>
-      <p>
-        いちばん早く届きます。ダイレクトメッセージまたはリプライでご連絡ください。
-      </p>
-      <p>
-        <a
-          href={SITE.xUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-navy-800 px-5 text-sm font-bold text-white no-underline hover:bg-navy-700"
-        >
-          <XIcon size={15} />
-          {SITE.xHandle}
-        </a>
-      </p>
+      {/*
+        ★★**Xの窓口は 2026-08-24 に外した**（運営者の判断。運用予定が無い）。
+        **まだ無いアカウントへ誘導しない。**
 
+        ★★**いまこのページには連絡手段が1つも無い。**
+        `OPERATOR.contactEmail` が未設定で、Xも消したため。
+        ★**公開前に必ずメールアドレスを設定すること**（READMEの「公開前に必ずやること」）。
+        応援メッセージの削除依頼を受ける窓口でもあるので、**窓口が無いまま公開しない。**
+      */}
       <h3>メール</h3>
       {OPERATOR.contactEmail ? (
         <p>
@@ -60,7 +53,7 @@ export default function ContactPage() {
           問い合わせ用メールアドレスが設定されていません。
           <code>src/lib/constants.ts</code> の{" "}
           <code>OPERATOR.contactEmail</code> を設定してください。
-          設定するまでは X からのみ受け付ける形になります。
+          <strong>設定するまで連絡手段がありません。</strong>
         </UnsetNotice>
       )}
 

@@ -60,6 +60,22 @@ export type RegionalGame = {
   round: string | null;
   venue: string | null;
   teams: RegionalTeam[];
+  /**
+   * ★**その試合だけ出所が違うときに書く**（2026-08-24 追加。富山のため）。
+   *
+   * 既定では県の `sourceName` / `sourceUrl` がその県の全試合の出所だが、
+   * **1つの県の中で出所が分かれることがある。**
+   * 富山は連盟の紙が準々決勝までしか埋まっておらず、**決勝は Wikipedia、
+   * 準決勝は運営者自身の記録**から入れている。
+   *
+   * ★**「手元に同じ記録があるから」で県の出典にまとめないこと。**
+   * 転記した経路が別なら、その経路が本当の出所
+   * （AGENTS.md「出典の表示は実際の出所と一致させること」）。
+   *
+   * ★**いまは画面に出していない**（出典の表示は 2026-08-21 に画面から外した）。
+   * データとして正しく持っておくためのもの。
+   */
+  source?: { name: string; url?: string };
 };
 
 export type RegionalDistrict = {
@@ -309,7 +325,16 @@ export async function getRegionalDistrict(
   */
   const { REGIONAL_LOADERS } = await import("@/lib/data/regional/loaders");
   const load = REGIONAL_LOADERS[prefectureSlug];
-  return load ? await load() : null;
+  if (!load) return null;
+  const district = await load();
+  /*
+    ★**手で書いた補足を合流させる**（2026-08-24。富山のため）。
+    出典の紙に入っていない試合を、別の出所から足すためのもの。
+    **生成物には触らない**（再生成で消えるため。`content/` 側に置いてある）。
+  */
+  const { mergeRegionalSupplements } = await import("@/lib/content/regional-supplements");
+  const games = mergeRegionalSupplements(prefectureSlug, district.games);
+  return games === district.games ? district : { ...district, games };
 }
 
 /**

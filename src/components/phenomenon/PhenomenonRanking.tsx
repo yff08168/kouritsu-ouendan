@@ -10,6 +10,12 @@ import type { PhenomenonSummary } from "@/types/app";
 /**
  * トップページの「公立旋風」枠。
  * このサイト独自のコンテンツなので、ヒーローの隣に置いて最も目に入る位置にする。
+ *
+ * ★★**順位を付けるのをやめた**（2026-08-24。運営者の判断）。
+ *   以前は `highlight_rank` の順に3件出して 1・2・3 と番号を振っていたが、
+ *   **いまは全件からランダムに選んで枠いっぱいに出す**（`getRandomPhenomena`）。
+ *   ★**番号を残すと「1位＝いちばんすごい旋風」に見える。**
+ *   毎回入れ替わるものに順位を付けない。
  */
 export function PhenomenonRanking({
   phenomena,
@@ -35,19 +41,20 @@ export function PhenomenonRanking({
         {PHENOMENON.tagline}
       </p>
 
-      <ol className="space-y-2">
-        {phenomena.map((item, index) => (
+      {/* ★順位ではないので `ol` ではなく `ul`（読み上げが「1番目」と言わないように） */}
+      <ul className="space-y-2">
+        {phenomena.map((item) => (
           <li key={item.id}>
             <Link
               href={`/phenomenon/${item.slug}`}
               className="group flex items-stretch gap-3 rounded-lg bg-white p-2.5 hover:bg-navy-50"
             >
-              <span
+              {/* ★番号の代わりに炎の印。**順位に見えないもの**にしてある */}
+              <Flame
+                size={18}
                 aria-hidden="true"
-                className="grid w-6 shrink-0 place-items-start pt-0.5 text-xl font-bold leading-none text-accent-800"
-              >
-                {index + 1}
-              </span>
+                className="mt-0.5 shrink-0 text-accent-500"
+              />
 
               <div className="min-w-0 flex-1">
                 <div className="flex flex-wrap items-center gap-1.5">
@@ -88,7 +95,7 @@ export function PhenomenonRanking({
             </Link>
           </li>
         ))}
-      </ol>
+      </ul>
     </section>
   );
 }

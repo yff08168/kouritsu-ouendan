@@ -1,0 +1,6762 @@
+{
+  "slug": "nara",
+  "district": "奈良",
+  "sourceName": "奈良県高等学校野球連盟",
+  "sourceUrl": "http://www1.kcn.ne.jp/~nhsbbf/",
+  "games": [
+    {
+      "date": "2014-05-10",
+      "season": "spring",
+      "tournament": null,
+      "round": "準決勝",
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 6,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "畝傍",
+          "score": 4,
+          "won": false,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        }
+      ]
+    },
+    {
+      "date": "2014-05-06",
+      "season": "spring",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 7,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "奈良朱雀",
+          "score": 3,
+          "won": false,
+          "name": "奈良朱雀",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-05-05",
+      "season": "spring",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "score": 11,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "桜井",
+          "score": 0,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        }
+      ]
+    },
+    {
+      "date": "2014-05-04",
+      "season": "spring",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "高田商業",
+          "score": 14,
+          "won": false,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        },
+        {
+          "display": "橿原学院",
+          "score": 15,
+          "won": true,
+          "name": "橿原学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-05-04",
+      "season": "spring",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "一条",
+          "score": 4,
+          "won": false,
+          "name": "一条高校",
+          "slug": "ichijo"
+        },
+        {
+          "display": "天理",
+          "score": 10,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-05-04",
+      "season": "spring",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "関西中央",
+          "score": 9,
+          "won": false,
+          "name": "関西中央",
+          "slug": null
+        },
+        {
+          "display": "奈良朱雀",
+          "score": 10,
+          "won": true,
+          "name": "奈良朱雀",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-05-03",
+      "season": "spring",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "西の京",
+          "score": 1,
+          "won": false,
+          "name": "西の京",
+          "slug": null
+        },
+        {
+          "display": "五條",
+          "score": 6,
+          "won": true,
+          "name": "五條高校",
+          "slug": "nara-gojo"
+        }
+      ]
+    },
+    {
+      "date": "2014-05-03",
+      "season": "spring",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "高田",
+          "score": 1,
+          "won": false,
+          "name": "高田高校",
+          "slug": "nara-takata"
+        },
+        {
+          "display": "桜井",
+          "score": 2,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        }
+      ]
+    },
+    {
+      "date": "2014-05-03",
+      "season": "spring",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良高専",
+          "score": 0,
+          "won": false,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        },
+        {
+          "display": "智辯学園",
+          "score": 10,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-05-03",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": "準々決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "生駒",
+          "score": 2,
+          "won": false,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        },
+        {
+          "display": "奈良",
+          "score": 4,
+          "won": true,
+          "name": "奈良高校",
+          "slug": "nara"
+        }
+      ]
+    },
+    {
+      "date": "2025-05-03",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": "準々決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "畝傍",
+          "score": 1,
+          "won": false,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        },
+        {
+          "display": "奈良大附",
+          "score": 3,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-05-03",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": "準々決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 13,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "橿原",
+          "score": 0,
+          "won": false,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        }
+      ]
+    },
+    {
+      "date": "2025-05-03",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": "準々決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "score": 5,
+          "won": true,
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "御所実業",
+          "score": 2,
+          "won": false,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-29",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "奈良高専",
+          "score": 1,
+          "won": false,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        },
+        {
+          "display": "御所実業",
+          "score": 11,
+          "won": true,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-29",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "磯城野",
+          "score": 4,
+          "won": false,
+          "name": "磯城野高校",
+          "slug": "nara-shikino"
+        },
+        {
+          "display": "橿原学院",
+          "score": 9,
+          "won": true,
+          "name": "橿原学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-04-27",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良北",
+          "score": 0,
+          "won": false,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        },
+        {
+          "display": "奈良大附",
+          "score": 4,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-04-27",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原",
+          "score": 12,
+          "won": true,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        },
+        {
+          "display": "王寺工業",
+          "score": 1,
+          "won": false,
+          "name": "王寺工業高校",
+          "slug": "ojikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-27",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 15,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "西大和学園",
+          "score": 0,
+          "won": false,
+          "name": "西大和学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-04-27",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "生駒",
+          "score": 11,
+          "won": true,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        },
+        {
+          "display": "法隆寺国際",
+          "score": 0,
+          "won": false,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-27",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "score": 1,
+          "won": false,
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "畝傍",
+          "score": 8,
+          "won": true,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-26",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "県大附属",
+          "score": 0,
+          "won": false,
+          "name": "奈良県立大学附属高校",
+          "slug": "narakenritsudaigakufuzoku"
+        },
+        {
+          "display": "橿原学院",
+          "score": 10,
+          "won": true,
+          "name": "橿原学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-04-26",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "一条",
+          "score": 1,
+          "won": false,
+          "name": "一条高校",
+          "slug": "ichijo"
+        },
+        {
+          "display": "磯城野",
+          "score": 3,
+          "won": true,
+          "name": "磯城野高校",
+          "slug": "nara-shikino"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-26",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "五條",
+          "score": 2,
+          "won": false,
+          "name": "五條高校",
+          "slug": "nara-gojo"
+        },
+        {
+          "display": "奈良",
+          "score": 3,
+          "won": true,
+          "name": "奈良高校",
+          "slug": "nara"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-20",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 10,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "高田",
+          "score": 0,
+          "won": false,
+          "name": "高田高校",
+          "slug": "nara-takata"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-20",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "御所実業",
+          "score": 5,
+          "won": true,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        },
+        {
+          "display": "奈良商工",
+          "score": 1,
+          "won": false,
+          "name": "奈良商工高校",
+          "slug": "narashoko"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-20",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 3,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        },
+        {
+          "display": "奈良高専",
+          "score": 4,
+          "won": true,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-19",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良北",
+          "score": 17,
+          "won": true,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        },
+        {
+          "display": "宇陀",
+          "score": 2,
+          "won": false,
+          "name": "宇陀高校",
+          "slug": "uda"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-19",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "大和広陵",
+          "score": 3,
+          "won": false,
+          "name": "大和広陵高校",
+          "slug": "yamatokoryo"
+        },
+        {
+          "display": "奈良大附",
+          "score": 4,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-04-19",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原",
+          "score": 8,
+          "won": true,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        },
+        {
+          "display": "奈女大附",
+          "score": 7,
+          "won": false,
+          "name": "奈良女子大学附属中等教育学校",
+          "slug": "narajoshidaigakufuzoku"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-19",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "香芝",
+          "score": 4,
+          "won": false,
+          "name": "香芝高校",
+          "slug": "kashiba"
+        },
+        {
+          "display": "西大和学園",
+          "score": 5,
+          "won": true,
+          "name": "西大和学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-04-19",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "王寺工業",
+          "score": 2,
+          "won": true,
+          "name": "王寺工業高校",
+          "slug": "ojikogyo"
+        },
+        {
+          "display": "青翔・奈良南・十津川",
+          "score": 1,
+          "won": false,
+          "name": "青翔・奈良南・十津川",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2025-04-19",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "帝塚山",
+          "score": 0,
+          "won": false,
+          "name": "帝塚山",
+          "slug": null
+        },
+        {
+          "display": "生駒",
+          "score": 6,
+          "won": true,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-13",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "法隆寺国際",
+          "score": 6,
+          "won": true,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        },
+        {
+          "display": "高円芸術・国際・二階堂山辺",
+          "score": 1,
+          "won": false,
+          "name": "高円芸術・国際・二階堂山辺",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2025-04-13",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "畝傍",
+          "score": 5,
+          "won": true,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        },
+        {
+          "display": "高田商業",
+          "score": 3,
+          "won": false,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-13",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "西和清陵",
+          "score": 0,
+          "won": false,
+          "name": "西和清陵高校",
+          "slug": "seiwaseiryo"
+        },
+        {
+          "display": "智辯学園",
+          "score": 19,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-04-12",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 2,
+          "won": false,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "奈良",
+          "score": 6,
+          "won": true,
+          "name": "奈良高校",
+          "slug": "nara"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-12",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "五條",
+          "score": 12,
+          "won": true,
+          "name": "五條高校",
+          "slug": "nara-gojo"
+        },
+        {
+          "display": "添上",
+          "score": 3,
+          "won": false,
+          "name": "添上高校",
+          "slug": "soekami"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-12",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ロートスタジアム",
+      "teams": [
+        {
+          "display": "大和広陵",
+          "score": 9,
+          "won": true,
+          "name": "大和広陵高校",
+          "slug": "yamatokoryo"
+        },
+        {
+          "display": "県立商業",
+          "score": 2,
+          "won": false,
+          "name": "奈良県立商業高校",
+          "slug": "narakenritsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-12",
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ロートスタジアム",
+      "teams": [
+        {
+          "display": "橿原",
+          "score": 6,
+          "won": true,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        },
+        {
+          "display": "高取国際",
+          "score": 1,
+          "won": false,
+          "name": "高取国際高校",
+          "slug": "takatorikokusai"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-28",
+      "season": "summer",
+      "tournament": null,
+      "round": "決勝",
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 6,
+          "won": false,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "智辯",
+          "score": 8,
+          "won": true,
+          "name": "智辯",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-07-27",
+      "season": "summer",
+      "tournament": null,
+      "round": "準決勝",
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "畝傍",
+          "score": 0,
+          "won": false,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        },
+        {
+          "display": "天理",
+          "score": 4,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-07-27",
+      "season": "summer",
+      "tournament": null,
+      "round": "準決勝",
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "智辯",
+          "score": 11,
+          "won": true,
+          "name": "智辯",
+          "slug": null
+        },
+        {
+          "display": "大和広陵",
+          "score": 6,
+          "won": false,
+          "name": "大和広陵高校",
+          "slug": "yamatokoryo"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-25",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "智辯",
+          "score": 15,
+          "won": true,
+          "name": "智辯",
+          "slug": null
+        },
+        {
+          "display": "登美ヶ丘",
+          "score": 0,
+          "won": false,
+          "name": "登美ヶ丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-07-25",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "法隆寺国際",
+          "score": 2,
+          "won": false,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        },
+        {
+          "display": "大和広陵",
+          "score": 4,
+          "won": true,
+          "name": "大和広陵高校",
+          "slug": "yamatokoryo"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-24",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "御所実業",
+          "score": 0,
+          "won": false,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        },
+        {
+          "display": "天理",
+          "score": 7,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-07-24",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良大附",
+          "score": 0,
+          "won": false,
+          "name": "奈良大附",
+          "slug": null
+        },
+        {
+          "display": "畝傍",
+          "score": 1,
+          "won": true,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-23",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良高専",
+          "score": 1,
+          "won": false,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        },
+        {
+          "display": "智辯",
+          "score": 6,
+          "won": true,
+          "name": "智辯",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-07-23",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 2,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        },
+        {
+          "display": "登美ヶ丘",
+          "score": 3,
+          "won": true,
+          "name": "登美ヶ丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-07-23",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "関西中央",
+          "score": 2,
+          "won": false,
+          "name": "関西中央",
+          "slug": null
+        },
+        {
+          "display": "大和広陵",
+          "score": 3,
+          "won": true,
+          "name": "大和広陵高校",
+          "slug": "yamatokoryo"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-23",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良",
+          "score": 3,
+          "won": false,
+          "name": "奈良高校",
+          "slug": "nara"
+        },
+        {
+          "display": "法隆寺国際",
+          "score": 4,
+          "won": true,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-22",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "西和清陵",
+          "score": 4,
+          "won": false,
+          "name": "西和清陵高校",
+          "slug": "seiwaseiryo"
+        },
+        {
+          "display": "天理",
+          "score": 11,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-07-22",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "御所実業",
+          "score": 6,
+          "won": true,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        },
+        {
+          "display": "香芝",
+          "score": 5,
+          "won": false,
+          "name": "香芝高校",
+          "slug": "kashiba"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-22",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "畝傍",
+          "score": 10,
+          "won": true,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        },
+        {
+          "display": "奈良朱雀",
+          "score": 6,
+          "won": false,
+          "name": "奈良朱雀",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-07-22",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "score": 3,
+          "won": false,
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "奈良大附",
+          "score": 4,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-07-21",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 4,
+          "won": false,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "関西中央",
+          "score": 5,
+          "won": true,
+          "name": "関西中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-07-21",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "法隆寺国際",
+          "score": 2,
+          "won": true,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        },
+        {
+          "display": "五條",
+          "score": 1,
+          "won": false,
+          "name": "五條高校",
+          "slug": "nara-gojo"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-21",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "生駒",
+          "score": 3,
+          "won": false,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        },
+        {
+          "display": "奈良",
+          "score": 6,
+          "won": true,
+          "name": "奈良高校",
+          "slug": "nara"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-20",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "青翔",
+          "score": 4,
+          "won": false,
+          "name": "青翔高校",
+          "slug": "nara-seisho"
+        },
+        {
+          "display": "登美ヶ丘",
+          "score": 6,
+          "won": true,
+          "name": "登美ヶ丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-07-20",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "橿原",
+          "score": 5,
+          "won": false,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        },
+        {
+          "display": "桜井",
+          "score": 6,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-20",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "磯城野",
+          "score": 4,
+          "won": false,
+          "name": "磯城野高校",
+          "slug": "nara-shikino"
+        },
+        {
+          "display": "大和広陵",
+          "score": 12,
+          "won": true,
+          "name": "大和広陵高校",
+          "slug": "yamatokoryo"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-19",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "一条",
+          "score": 0,
+          "won": false,
+          "name": "一条高校",
+          "slug": "ichijo"
+        },
+        {
+          "display": "奈良大附",
+          "score": 4,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-07-19",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "西の京",
+          "score": 3,
+          "won": false,
+          "name": "西の京",
+          "slug": null
+        },
+        {
+          "display": "橿原学院",
+          "score": 5,
+          "won": true,
+          "name": "橿原学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-07-19",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "平城",
+          "score": 1,
+          "won": false,
+          "name": "平城",
+          "slug": null
+        },
+        {
+          "display": "智辯",
+          "score": 8,
+          "won": true,
+          "name": "智辯",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-07-19",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良高専",
+          "score": 4,
+          "won": true,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        },
+        {
+          "display": "王寺工業",
+          "score": 3,
+          "won": false,
+          "name": "王寺工業高校",
+          "slug": "ojikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-17",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "大宇陀・吉野",
+          "score": 0,
+          "won": false,
+          "name": "大宇陀・吉野",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "香芝",
+          "score": 10,
+          "won": true,
+          "name": "香芝高校",
+          "slug": "kashiba"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-17",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "添上",
+          "score": 1,
+          "won": false,
+          "name": "添上高校",
+          "slug": "soekami"
+        },
+        {
+          "display": "畝傍",
+          "score": 2,
+          "won": true,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-17",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良朱雀",
+          "score": 18,
+          "won": true,
+          "name": "奈良朱雀",
+          "slug": null
+        },
+        {
+          "display": "十津川",
+          "score": 1,
+          "won": false,
+          "name": "十津川高校",
+          "slug": "totsukawa"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-16",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 10,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "髙田商業",
+          "score": 3,
+          "won": false,
+          "name": "髙田商業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-07-16",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "二階堂",
+          "score": 2,
+          "won": false,
+          "name": "二階堂高校",
+          "slug": "nikaido"
+        },
+        {
+          "display": "西和清陵",
+          "score": 9,
+          "won": true,
+          "name": "西和清陵高校",
+          "slug": "seiwaseiryo"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-16",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "山辺",
+          "score": 1,
+          "won": false,
+          "name": "山辺高校",
+          "slug": "nara-yamanobe"
+        },
+        {
+          "display": "御所実業",
+          "score": 9,
+          "won": true,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-15",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "高円",
+          "score": 5,
+          "won": false,
+          "name": "高円",
+          "slug": null
+        },
+        {
+          "display": "王寺工業",
+          "score": 6,
+          "won": true,
+          "name": "王寺工業高校",
+          "slug": "ojikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-15",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "大淀",
+          "score": 0,
+          "won": false,
+          "name": "大淀",
+          "slug": null
+        },
+        {
+          "display": "橿原",
+          "score": 10,
+          "won": true,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-15",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "磯城野",
+          "score": 11,
+          "won": true,
+          "name": "磯城野高校",
+          "slug": "nara-shikino"
+        },
+        {
+          "display": "榛生昇陽",
+          "score": 0,
+          "won": false,
+          "name": "榛生昇陽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-07-15",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈女大附",
+          "score": 3,
+          "won": false,
+          "name": "奈良女子大学附属中等教育学校",
+          "slug": "narajoshidaigakufuzoku"
+        },
+        {
+          "display": "奈良",
+          "score": 8,
+          "won": true,
+          "name": "奈良高校",
+          "slug": "nara"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-14",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "平城",
+          "score": 4,
+          "won": true,
+          "name": "平城",
+          "slug": null
+        },
+        {
+          "display": "奈良北",
+          "score": 3,
+          "won": false,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-15",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "添上",
+          "score": 5,
+          "won": true,
+          "name": "添上高校",
+          "slug": "soekami"
+        },
+        {
+          "display": "高取国際",
+          "score": 3,
+          "won": false,
+          "name": "高取国際高校",
+          "slug": "takatorikokusai"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-15",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "帝塚山",
+          "score": 4,
+          "won": false,
+          "name": "帝塚山",
+          "slug": null
+        },
+        {
+          "display": "一条",
+          "score": 5,
+          "won": true,
+          "name": "一条高校",
+          "slug": "ichijo"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-15",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "score": 8,
+          "won": true,
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "奈情商",
+          "score": 0,
+          "won": false,
+          "name": "奈情商",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-07-12",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "高田",
+          "score": 1,
+          "won": false,
+          "name": "高田高校",
+          "slug": "nara-takata"
+        },
+        {
+          "display": "高田商業",
+          "score": 11,
+          "won": true,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2014-07-12",
+      "season": "summer",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "西大和",
+          "score": 8,
+          "won": false,
+          "name": "西大和",
+          "slug": null
+        },
+        {
+          "display": "大宇陀・吉野",
+          "score": 9,
+          "won": true,
+          "name": "大宇陀・吉野",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2025-07-28",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": "決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 3,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "智辯学園",
+          "score": 2,
+          "won": false,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-26",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": "準決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原",
+          "score": 2,
+          "won": false,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        },
+        {
+          "display": "智辯学園",
+          "score": 9,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-26",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": "準決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良大附",
+          "score": 4,
+          "won": false,
+          "name": "奈良大附",
+          "slug": null
+        },
+        {
+          "display": "天理",
+          "score": 6,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-24",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良大附",
+          "score": 7,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        },
+        {
+          "display": "畝傍",
+          "score": 6,
+          "won": false,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-24",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "御所実業",
+          "score": 0,
+          "won": false,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        },
+        {
+          "display": "天理",
+          "score": 11,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-23",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原",
+          "score": 11,
+          "won": true,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        },
+        {
+          "display": "橿原学院",
+          "score": 6,
+          "won": false,
+          "name": "橿原学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-23",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 2,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        },
+        {
+          "display": "智辯学園",
+          "score": 9,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-22",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良高専",
+          "score": 0,
+          "won": false,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        },
+        {
+          "display": "奈良大附",
+          "score": 11,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-22",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良北",
+          "score": 3,
+          "won": false,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        },
+        {
+          "display": "御所実業",
+          "score": 4,
+          "won": true,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-22",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 10,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "磯城野",
+          "score": 0,
+          "won": false,
+          "name": "磯城野高校",
+          "slug": "nara-shikino"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-21",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "score": 16,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "奈良",
+          "score": 0,
+          "won": false,
+          "name": "奈良高校",
+          "slug": "nara"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-21",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "香芝",
+          "score": 1,
+          "won": false,
+          "name": "香芝高校",
+          "slug": "kashiba"
+        },
+        {
+          "display": "桜井",
+          "score": 5,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-21",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "畝傍",
+          "score": 10,
+          "won": true,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        },
+        {
+          "display": "高田",
+          "score": 6,
+          "won": false,
+          "name": "高田高校",
+          "slug": "nara-takata"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-20",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "磯城野",
+          "score": 10,
+          "won": true,
+          "name": "磯城野高校",
+          "slug": "nara-shikino"
+        },
+        {
+          "display": "西大和学園",
+          "score": 5,
+          "won": false,
+          "name": "西大和学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-20",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "高円芸術・国際・二階堂・山辺",
+          "score": 0,
+          "won": false,
+          "name": "高円芸術・国際・二階堂・山辺",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "天理",
+          "score": 10,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-20",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 7,
+          "won": false,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "橿原",
+          "score": 8,
+          "won": true,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-20",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "宇陀",
+          "score": 2,
+          "won": false,
+          "name": "宇陀高校",
+          "slug": "uda"
+        },
+        {
+          "display": "橿原学院",
+          "score": 21,
+          "won": true,
+          "name": "橿原学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-19",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "生駒",
+          "score": 4,
+          "won": false,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        },
+        {
+          "display": "奈良大附",
+          "score": 6,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-19",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良北",
+          "score": 4,
+          "won": true,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        },
+        {
+          "display": "県大附属",
+          "score": 0,
+          "won": false,
+          "name": "奈良県立大学附属高校",
+          "slug": "narakenritsudaigakufuzoku"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-19",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "西和清陵",
+          "score": 0,
+          "won": false,
+          "name": "西和清陵高校",
+          "slug": "seiwaseiryo"
+        },
+        {
+          "display": "御所実業",
+          "score": 7,
+          "won": true,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-16",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "法隆寺国際",
+          "score": 2,
+          "won": false,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        },
+        {
+          "display": "高田",
+          "score": 3,
+          "won": true,
+          "name": "高田高校",
+          "slug": "nara-takata"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-16",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈女大附",
+          "score": 0,
+          "won": false,
+          "name": "奈良女子大学附属中等教育学校",
+          "slug": "narajoshidaigakufuzoku"
+        },
+        {
+          "display": "奈良高専",
+          "score": 7,
+          "won": true,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-15",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "一条",
+          "score": 8,
+          "won": false,
+          "name": "一条高校",
+          "slug": "ichijo"
+        },
+        {
+          "display": "香芝",
+          "score": 10,
+          "won": true,
+          "name": "香芝高校",
+          "slug": "kashiba"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-15",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "大和広陵",
+          "score": 1,
+          "won": false,
+          "name": "大和広陵高校",
+          "slug": "yamatokoryo"
+        },
+        {
+          "display": "畝傍",
+          "score": 4,
+          "won": true,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-14",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "高田商業",
+          "score": 0,
+          "won": false,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        },
+        {
+          "display": "智辯学園",
+          "score": 2,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-14",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "五條",
+          "score": 6,
+          "won": false,
+          "name": "五條高校",
+          "slug": "nara-gojo"
+        },
+        {
+          "display": "奈良",
+          "score": 8,
+          "won": true,
+          "name": "奈良高校",
+          "slug": "nara"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-14",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良南・青翔・十津川",
+          "score": 0,
+          "won": false,
+          "name": "奈良南・青翔・十津川",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "桜井",
+          "score": 10,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原",
+          "score": 3,
+          "won": true,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        },
+        {
+          "display": "奈良商工",
+          "score": 0,
+          "won": false,
+          "name": "奈良商工高校",
+          "slug": "narashoko"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "王寺工業",
+          "score": 7,
+          "won": false,
+          "name": "王寺工業高校",
+          "slug": "ojikogyo"
+        },
+        {
+          "display": "宇陀",
+          "score": 8,
+          "won": true,
+          "name": "宇陀高校",
+          "slug": "uda"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "高取国際",
+          "score": 0,
+          "won": false,
+          "name": "高取国際高校",
+          "slug": "takatorikokusai"
+        },
+        {
+          "display": "橿原学園",
+          "score": 15,
+          "won": true,
+          "name": "橿原学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "県立商業",
+          "score": 1,
+          "won": false,
+          "name": "奈良県立商業高校",
+          "slug": "narakenritsushogyo"
+        },
+        {
+          "display": "香芝",
+          "score": 4,
+          "won": true,
+          "name": "香芝高校",
+          "slug": "kashiba"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "添上",
+          "score": 0,
+          "won": false,
+          "name": "添上高校",
+          "slug": "soekami"
+        },
+        {
+          "display": "畝傍",
+          "score": 15,
+          "won": true,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 8,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "帝塚山",
+          "score": 0,
+          "won": false,
+          "name": "帝塚山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": "決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 8,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "奈良大附",
+          "score": 0,
+          "won": false,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": "準決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "畝傍",
+          "score": 0,
+          "won": false,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        },
+        {
+          "display": "天理",
+          "score": 7,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": "準決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "score": 0,
+          "won": false,
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "奈良大附",
+          "score": 7,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": "準々決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 2,
+          "won": false,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "奈良大附",
+          "score": 6,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": "準々決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "御所実業",
+          "score": 8,
+          "won": false,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        },
+        {
+          "display": "橿原学院",
+          "score": 9,
+          "won": true,
+          "name": "橿原学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": "準々決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 13,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "奈良商工",
+          "score": 1,
+          "won": false,
+          "name": "奈良商工高校",
+          "slug": "narashoko"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": "準々決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "生駒",
+          "score": 4,
+          "won": false,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        },
+        {
+          "display": "畝傍",
+          "score": 5,
+          "won": true,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "法隆寺国際",
+          "score": 3,
+          "won": false,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        },
+        {
+          "display": "御所実業",
+          "score": 4,
+          "won": true,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "score": 10,
+          "won": true,
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "奈良北",
+          "score": 7,
+          "won": false,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "生駒",
+          "score": 5,
+          "won": true,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        },
+        {
+          "display": "奈良高専",
+          "score": 3,
+          "won": false,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 11,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "高田",
+          "score": 8,
+          "won": false,
+          "name": "高田高校",
+          "slug": "nara-takata"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "score": 6,
+          "won": false,
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "奈良大附",
+          "score": 9,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "法隆寺国際",
+          "score": 6,
+          "won": true,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        },
+        {
+          "display": "桜井",
+          "score": 4,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良北",
+          "score": 11,
+          "won": true,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        },
+        {
+          "display": "宇陀",
+          "score": 1,
+          "won": false,
+          "name": "宇陀高校",
+          "slug": "uda"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "score": 11,
+          "won": false,
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "五條",
+          "score": 17,
+          "won": true,
+          "name": "五條高校",
+          "slug": "nara-gojo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "香芝",
+          "score": 1,
+          "won": false,
+          "name": "香芝高校",
+          "slug": "kashiba"
+        },
+        {
+          "display": "智辯学園",
+          "score": 15,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "御所実業",
+          "score": 8,
+          "won": true,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        },
+        {
+          "display": "帝塚山",
+          "score": 2,
+          "won": false,
+          "name": "帝塚山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "高田",
+          "score": 1,
+          "won": true,
+          "name": "高田高校",
+          "slug": "nara-takata"
+        },
+        {
+          "display": "奈良",
+          "score": 0,
+          "won": false,
+          "name": "奈良高校",
+          "slug": "nara"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "高田商業",
+          "score": 1,
+          "won": false,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        },
+        {
+          "display": "奈良大附",
+          "score": 8,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "県立商業",
+          "score": 0,
+          "won": false,
+          "name": "奈良県立商業高校",
+          "slug": "narakenritsushogyo"
+        },
+        {
+          "display": "生駒",
+          "score": 8,
+          "won": true,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 11,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "連合B（青翔、西和清陵、十津川、奈良南）",
+          "score": 0,
+          "won": false,
+          "name": "連合B（青翔、西和清陵、十津川、奈良南）",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "一条",
+          "score": 4,
+          "won": false,
+          "name": "一条高校",
+          "slug": "ichijo"
+        },
+        {
+          "display": "王寺工業",
+          "score": 10,
+          "won": true,
+          "name": "王寺工業高校",
+          "slug": "ojikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "西大和学園",
+          "score": 8,
+          "won": false,
+          "name": "西大和学園",
+          "slug": null
+        },
+        {
+          "display": "奈良高専",
+          "score": 15,
+          "won": true,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "大和広陵",
+          "score": 11,
+          "won": true,
+          "name": "大和広陵高校",
+          "slug": "yamatokoryo"
+        },
+        {
+          "display": "県大附属",
+          "score": 1,
+          "won": false,
+          "name": "奈良県立大学附属高校",
+          "slug": "narakenritsudaigakufuzoku"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原",
+          "score": 0,
+          "won": false,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        },
+        {
+          "display": "天理",
+          "score": 3,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "添上",
+          "score": 0,
+          "won": false,
+          "name": "添上高校",
+          "slug": "soekami"
+        },
+        {
+          "display": "畝傍",
+          "score": 11,
+          "won": true,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 16,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "連合A（高円芸術・国際・二階堂・山辺）",
+          "score": 0,
+          "won": false,
+          "name": "連合A（高円芸術・国際・二階堂・山辺）",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "高取国際",
+          "score": 1,
+          "won": false,
+          "name": "高取国際高校",
+          "slug": "takatorikokusai"
+        },
+        {
+          "display": "奈良商工",
+          "score": 3,
+          "won": true,
+          "name": "奈良商工高校",
+          "slug": "narashoko"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権奈良大会",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "磯城野",
+          "score": 5,
+          "won": true,
+          "name": "磯城野高校",
+          "slug": "nara-shikino"
+        },
+        {
+          "display": "奈女大附",
+          "score": 4,
+          "won": false,
+          "name": "奈良女子大学附属中等教育学校",
+          "slug": "narajoshidaigakufuzoku"
+        }
+      ]
+    },
+    {
+      "date": "2014-10-05",
+      "season": "autumn",
+      "tournament": null,
+      "round": "3位決定戦",
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良北",
+          "score": 0,
+          "won": false,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        },
+        {
+          "display": "智辯学園",
+          "score": 6,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-10-05",
+      "season": "autumn",
+      "tournament": null,
+      "round": "決勝",
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 6,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "奈良大附",
+          "score": 3,
+          "won": false,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-10-04",
+      "season": "autumn",
+      "tournament": null,
+      "round": "準決勝",
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "智辯",
+          "score": 3,
+          "won": false,
+          "name": "智辯",
+          "slug": null
+        },
+        {
+          "display": "天理",
+          "score": 5,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-10-04",
+      "season": "autumn",
+      "tournament": null,
+      "round": "準決勝",
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良北",
+          "score": 1,
+          "won": false,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        },
+        {
+          "display": "奈良大附",
+          "score": 8,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-28",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良北",
+          "score": 8,
+          "won": true,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        },
+        {
+          "display": "橿原",
+          "score": 5,
+          "won": false,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        }
+      ]
+    },
+    {
+      "date": "2014-09-28",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "御所実業",
+          "score": 1,
+          "won": false,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        },
+        {
+          "display": "奈良大附",
+          "score": 4,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-27",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良",
+          "score": 1,
+          "won": false,
+          "name": "奈良高校",
+          "slug": "nara"
+        },
+        {
+          "display": "天理",
+          "score": 4,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-27",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 3,
+          "won": false,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "智辯学園",
+          "score": 13,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-23",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "橿原",
+          "score": 8,
+          "won": true,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        },
+        {
+          "display": "王寺工業",
+          "score": 6,
+          "won": false,
+          "name": "王寺工業高校",
+          "slug": "ojikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2014-09-23",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良北",
+          "score": 12,
+          "won": true,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        },
+        {
+          "display": "生駒",
+          "score": 0,
+          "won": false,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        }
+      ]
+    },
+    {
+      "date": "2014-09-23",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良大附",
+          "score": 8,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        },
+        {
+          "display": "磯城野",
+          "score": 1,
+          "won": false,
+          "name": "磯城野高校",
+          "slug": "nara-shikino"
+        }
+      ]
+    },
+    {
+      "date": "2014-09-23",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "香芝",
+          "score": 1,
+          "won": false,
+          "name": "香芝高校",
+          "slug": "kashiba"
+        },
+        {
+          "display": "御所実業",
+          "score": 8,
+          "won": true,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        }
+      ]
+    },
+    {
+      "date": "2014-09-21",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈情商",
+          "score": 1,
+          "won": false,
+          "name": "奈情商",
+          "slug": null
+        },
+        {
+          "display": "天理",
+          "score": 11,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-21",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良",
+          "score": 11,
+          "won": true,
+          "name": "奈良高校",
+          "slug": "nara"
+        },
+        {
+          "display": "大宇陀・吉野",
+          "score": 1,
+          "won": false,
+          "name": "大宇陀・吉野",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2014-09-21",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "高田商業",
+          "score": 2,
+          "won": false,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        },
+        {
+          "display": "智辯",
+          "score": 3,
+          "won": true,
+          "name": "智辯",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-21",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 8,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "平城",
+          "score": 3,
+          "won": false,
+          "name": "平城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-20",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈女大附",
+          "score": 1,
+          "won": false,
+          "name": "奈良女子大学附属中等教育学校",
+          "slug": "narajoshidaigakufuzoku"
+        },
+        {
+          "display": "磯城野",
+          "score": 8,
+          "won": true,
+          "name": "磯城野高校",
+          "slug": "nara-shikino"
+        }
+      ]
+    },
+    {
+      "date": "2014-09-20",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良高専",
+          "score": 0,
+          "won": false,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        },
+        {
+          "display": "奈良大附",
+          "score": 10,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-20",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "御所実業",
+          "score": 13,
+          "won": true,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        },
+        {
+          "display": "大和広陵",
+          "score": 5,
+          "won": false,
+          "name": "大和広陵高校",
+          "slug": "yamatokoryo"
+        }
+      ]
+    },
+    {
+      "date": "2014-09-20",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "山辺",
+          "score": 1,
+          "won": false,
+          "name": "山辺高校",
+          "slug": "nara-yamanobe"
+        },
+        {
+          "display": "香芝",
+          "score": 18,
+          "won": true,
+          "name": "香芝高校",
+          "slug": "kashiba"
+        }
+      ]
+    },
+    {
+      "date": "2014-09-15",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "西大和",
+          "score": 2,
+          "won": false,
+          "name": "西大和",
+          "slug": null
+        },
+        {
+          "display": "王寺工業",
+          "score": 10,
+          "won": true,
+          "name": "王寺工業高校",
+          "slug": "ojikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2014-09-15",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良北",
+          "score": 3,
+          "won": true,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        },
+        {
+          "display": "桜井",
+          "score": 2,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        }
+      ]
+    },
+    {
+      "date": "2014-09-15",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "畝傍",
+          "score": 2,
+          "won": false,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        },
+        {
+          "display": "生駒",
+          "score": 3,
+          "won": true,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        }
+      ]
+    },
+    {
+      "date": "2014-09-14",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "登美ヶ丘",
+          "score": 6,
+          "won": false,
+          "name": "登美ヶ丘",
+          "slug": null
+        },
+        {
+          "display": "奈良",
+          "score": 7,
+          "won": true,
+          "name": "奈良高校",
+          "slug": "nara"
+        }
+      ]
+    },
+    {
+      "date": "2014-09-14",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "高田商業",
+          "score": 8,
+          "won": true,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        },
+        {
+          "display": "橿原学院",
+          "score": 5,
+          "won": false,
+          "name": "橿原学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-14",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "智辯",
+          "score": 7,
+          "won": true,
+          "name": "智辯",
+          "slug": null
+        },
+        {
+          "display": "高取国際",
+          "score": 0,
+          "won": false,
+          "name": "高取国際高校",
+          "slug": "takatorikokusai"
+        }
+      ]
+    },
+    {
+      "date": "2014-09-14",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "大和郡山市営球場",
+      "teams": [
+        {
+          "display": "一条",
+          "score": 1,
+          "won": false,
+          "name": "一条高校",
+          "slug": "ichijo"
+        },
+        {
+          "display": "平城",
+          "score": 10,
+          "won": true,
+          "name": "平城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-14",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "大和郡山市営球場",
+      "teams": [
+        {
+          "display": "青翔",
+          "score": 1,
+          "won": false,
+          "name": "青翔高校",
+          "slug": "nara-seisho"
+        },
+        {
+          "display": "郡山",
+          "score": 11,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        }
+      ]
+    },
+    {
+      "date": "2014-09-14",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "大和郡山市営球場",
+      "teams": [
+        {
+          "display": "奈良朱雀",
+          "score": 9,
+          "won": false,
+          "name": "奈良朱雀",
+          "slug": null
+        },
+        {
+          "display": "橿原",
+          "score": 10,
+          "won": true,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        }
+      ]
+    },
+    {
+      "date": "2014-09-13",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "畝傍",
+          "score": 10,
+          "won": true,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        },
+        {
+          "display": "帝塚山",
+          "score": 1,
+          "won": false,
+          "name": "帝塚山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-13",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "大淀",
+          "score": 3,
+          "won": false,
+          "name": "大淀",
+          "slug": null
+        },
+        {
+          "display": "磯城野",
+          "score": 8,
+          "won": true,
+          "name": "磯城野高校",
+          "slug": "nara-shikino"
+        }
+      ]
+    },
+    {
+      "date": "2014-09-13",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "香芝",
+          "score": 6,
+          "won": true,
+          "name": "香芝高校",
+          "slug": "kashiba"
+        },
+        {
+          "display": "関西中央",
+          "score": 1,
+          "won": false,
+          "name": "関西中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-13",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "大和郡山市営球場",
+      "teams": [
+        {
+          "display": "五條",
+          "score": 1,
+          "won": false,
+          "name": "五條高校",
+          "slug": "nara-gojo"
+        },
+        {
+          "display": "天理",
+          "score": 6,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-13",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "大和郡山市営球場",
+      "teams": [
+        {
+          "display": "榛生昇陽",
+          "score": 1,
+          "won": false,
+          "name": "榛生昇陽",
+          "slug": null
+        },
+        {
+          "display": "奈情商",
+          "score": 3,
+          "won": true,
+          "name": "奈情商",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-13",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "大和郡山市営球場",
+      "teams": [
+        {
+          "display": "西和清陵",
+          "score": 4,
+          "won": false,
+          "name": "西和清陵高校",
+          "slug": "seiwaseiryo"
+        },
+        {
+          "display": "大宇陀・吉野",
+          "score": 5,
+          "won": true,
+          "name": "大宇陀・吉野",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2014-09-07",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "添上",
+          "score": 2,
+          "won": false,
+          "name": "添上高校",
+          "slug": "soekami"
+        },
+        {
+          "display": "橿原学院",
+          "score": 3,
+          "won": true,
+          "name": "橿原学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-07",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 6,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "法隆寺国際",
+          "score": 1,
+          "won": false,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        }
+      ]
+    },
+    {
+      "date": "2014-09-07",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "高円",
+          "score": 2,
+          "won": false,
+          "name": "高円",
+          "slug": null
+        },
+        {
+          "display": "奈良朱雀",
+          "score": 6,
+          "won": true,
+          "name": "奈良朱雀",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-07",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "二階堂",
+          "score": 8,
+          "won": false,
+          "name": "二階堂高校",
+          "slug": "nikaido"
+        },
+        {
+          "display": "西大和",
+          "score": 9,
+          "won": true,
+          "name": "西大和",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-06",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "西の京",
+          "score": 0,
+          "won": false,
+          "name": "西の京",
+          "slug": null
+        },
+        {
+          "display": "天理",
+          "score": 12,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-06",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "十津川",
+          "score": 2,
+          "won": false,
+          "name": "十津川高校",
+          "slug": "totsukawa"
+        },
+        {
+          "display": "登美ヶ丘",
+          "score": 9,
+          "won": true,
+          "name": "登美ヶ丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2014-09-06",
+      "season": "autumn",
+      "tournament": null,
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "一条",
+          "score": 11,
+          "won": true,
+          "name": "一条高校",
+          "slug": "ichijo"
+        },
+        {
+          "display": "高田",
+          "score": 7,
+          "won": false,
+          "name": "高田高校",
+          "slug": "nara-takata"
+        }
+      ]
+    },
+    {
+      "date": "2015-10-04",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": "決勝",
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良大附",
+          "score": 3,
+          "won": false,
+          "name": "奈良大附",
+          "slug": null
+        },
+        {
+          "display": "智辯学園",
+          "score": 13,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-10-04",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": "3位決定戦",
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "平城",
+          "score": 10,
+          "won": true,
+          "name": "平城",
+          "slug": null
+        },
+        {
+          "display": "奈良",
+          "score": 3,
+          "won": false,
+          "name": "奈良高校",
+          "slug": "nara"
+        }
+      ]
+    },
+    {
+      "date": "2015-10-03",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": "準決勝",
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "score": 1,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "平城",
+          "score": 0,
+          "won": false,
+          "name": "平城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-10-03",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": "準決勝",
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良",
+          "score": 2,
+          "won": false,
+          "name": "奈良高校",
+          "slug": "nara"
+        },
+        {
+          "display": "奈良大附",
+          "score": 11,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-27",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 1,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        },
+        {
+          "display": "奈良大附",
+          "score": 10,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-27",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良",
+          "score": 6,
+          "won": true,
+          "name": "奈良高校",
+          "slug": "nara"
+        },
+        {
+          "display": "西の京",
+          "score": 5,
+          "won": false,
+          "name": "西の京",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-26",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "score": 9,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "関西中央",
+          "score": 2,
+          "won": false,
+          "name": "関西中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-26",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "平城",
+          "score": 5,
+          "won": true,
+          "name": "平城",
+          "slug": null
+        },
+        {
+          "display": "天理",
+          "score": 3,
+          "won": false,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-22",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "法隆寺国際",
+          "score": 1,
+          "won": false,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        },
+        {
+          "display": "奈良大附",
+          "score": 2,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-22",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "高田商業",
+          "score": 2,
+          "won": false,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        },
+        {
+          "display": "桜井",
+          "score": 3,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        }
+      ]
+    },
+    {
+      "date": "2015-09-22",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "畝傍",
+          "score": 6,
+          "won": false,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        },
+        {
+          "display": "奈良",
+          "score": 7,
+          "won": true,
+          "name": "奈良高校",
+          "slug": "nara"
+        }
+      ]
+    },
+    {
+      "date": "2015-09-22",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "添上",
+          "score": 1,
+          "won": false,
+          "name": "添上高校",
+          "slug": "soekami"
+        },
+        {
+          "display": "西の京",
+          "score": 3,
+          "won": true,
+          "name": "西の京",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-21",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "score": 6,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "御所実業",
+          "score": 1,
+          "won": false,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        }
+      ]
+    },
+    {
+      "date": "2015-09-21",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "関西中央",
+          "score": 5,
+          "won": true,
+          "name": "関西中央",
+          "slug": null
+        },
+        {
+          "display": "奈良朱雀",
+          "score": 4,
+          "won": false,
+          "name": "奈良朱雀",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-21",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈女大附",
+          "score": 1,
+          "won": false,
+          "name": "奈良女子大学附属中等教育学校",
+          "slug": "narajoshidaigakufuzoku"
+        },
+        {
+          "display": "平城",
+          "score": 13,
+          "won": true,
+          "name": "平城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-21",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "五條",
+          "score": 0,
+          "won": false,
+          "name": "五條高校",
+          "slug": "nara-gojo"
+        },
+        {
+          "display": "天理",
+          "score": 1,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-20",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "帝塚山",
+          "score": 2,
+          "won": false,
+          "name": "帝塚山",
+          "slug": null
+        },
+        {
+          "display": "奈良",
+          "score": 6,
+          "won": true,
+          "name": "奈良高校",
+          "slug": "nara"
+        }
+      ]
+    },
+    {
+      "date": "2015-09-20",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "畝傍",
+          "score": 8,
+          "won": true,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        },
+        {
+          "display": "王寺工業",
+          "score": 4,
+          "won": false,
+          "name": "王寺工業高校",
+          "slug": "ojikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2015-09-20",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "一条",
+          "score": 6,
+          "won": false,
+          "name": "一条高校",
+          "slug": "ichijo"
+        },
+        {
+          "display": "添上",
+          "score": 7,
+          "won": true,
+          "name": "添上高校",
+          "slug": "soekami"
+        }
+      ]
+    },
+    {
+      "date": "2015-09-20",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "高田",
+          "score": 4,
+          "won": false,
+          "name": "高田高校",
+          "slug": "nara-takata"
+        },
+        {
+          "display": "西の京",
+          "score": 5,
+          "won": true,
+          "name": "西の京",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-19",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "五條",
+          "score": 5,
+          "won": true,
+          "name": "五條高校",
+          "slug": "nara-gojo"
+        },
+        {
+          "display": "郡山",
+          "score": 2,
+          "won": false,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        }
+      ]
+    },
+    {
+      "date": "2015-09-19",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈情商",
+          "score": 0,
+          "won": false,
+          "name": "奈情商",
+          "slug": null
+        },
+        {
+          "display": "天理",
+          "score": 3,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-19",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良高専",
+          "score": 1,
+          "won": false,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        },
+        {
+          "display": "奈良大附",
+          "score": 4,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-19",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "大和郡山市営球場",
+      "teams": [
+        {
+          "display": "法隆寺国際",
+          "score": 8,
+          "won": true,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        },
+        {
+          "display": "二階堂",
+          "score": 1,
+          "won": false,
+          "name": "二階堂高校",
+          "slug": "nikaido"
+        }
+      ]
+    },
+    {
+      "date": "2015-09-19",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "大和郡山市営球場",
+      "teams": [
+        {
+          "display": "山辺",
+          "score": 0,
+          "won": false,
+          "name": "山辺高校",
+          "slug": "nara-yamanobe"
+        },
+        {
+          "display": "桜井",
+          "score": 5,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        }
+      ]
+    },
+    {
+      "date": "2015-09-19",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "大和郡山市営球場",
+      "teams": [
+        {
+          "display": "高田商業",
+          "score": 6,
+          "won": true,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        },
+        {
+          "display": "登美ヶ丘",
+          "score": 1,
+          "won": false,
+          "name": "登美ヶ丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-13",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "御所実業",
+          "score": 11,
+          "won": true,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        },
+        {
+          "display": "西大和",
+          "score": 0,
+          "won": false,
+          "name": "西大和",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-13",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "大和広陵",
+          "score": 0,
+          "won": false,
+          "name": "大和広陵高校",
+          "slug": "yamatokoryo"
+        },
+        {
+          "display": "智辯学園",
+          "score": 4,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-13",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "関西中央",
+          "score": 9,
+          "won": true,
+          "name": "関西中央",
+          "slug": null
+        },
+        {
+          "display": "橿原",
+          "score": 2,
+          "won": false,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        }
+      ]
+    },
+    {
+      "date": "2015-09-13",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "大和郡山市営球場",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "score": 3,
+          "won": false,
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "奈良朱雀",
+          "score": 8,
+          "won": true,
+          "name": "奈良朱雀",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-13",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "大和郡山市営球場",
+      "teams": [
+        {
+          "display": "高円",
+          "score": 3,
+          "won": false,
+          "name": "高円",
+          "slug": null
+        },
+        {
+          "display": "奈女大附",
+          "score": 4,
+          "won": true,
+          "name": "奈良女子大学附属中等教育学校",
+          "slug": "narajoshidaigakufuzoku"
+        }
+      ]
+    },
+    {
+      "date": "2015-09-13",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "大和郡山市営球場",
+      "teams": [
+        {
+          "display": "青翔",
+          "score": 0,
+          "won": false,
+          "name": "青翔高校",
+          "slug": "nara-seisho"
+        },
+        {
+          "display": "平城",
+          "score": 10,
+          "won": true,
+          "name": "平城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-12",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "登美ヶ丘",
+          "score": 13,
+          "won": true,
+          "name": "登美ヶ丘",
+          "slug": null
+        },
+        {
+          "display": "大宇陀",
+          "score": 4,
+          "won": false,
+          "name": "大宇陀",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-12",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈良北",
+          "score": 0,
+          "won": false,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        },
+        {
+          "display": "帝塚山",
+          "score": 2,
+          "won": true,
+          "name": "帝塚山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-12",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "十津川",
+          "score": 1,
+          "won": false,
+          "name": "十津川高校",
+          "slug": "totsukawa"
+        },
+        {
+          "display": "奈良高専",
+          "score": 9,
+          "won": true,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2015-09-12",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "高取国際",
+          "score": 0,
+          "won": false,
+          "name": "高取国際高校",
+          "slug": "takatorikokusai"
+        },
+        {
+          "display": "西の京",
+          "score": 7,
+          "won": true,
+          "name": "西の京",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2015-09-08",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 9,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "磯城野",
+          "score": 0,
+          "won": false,
+          "name": "磯城野高校",
+          "slug": "nara-shikino"
+        }
+      ]
+    },
+    {
+      "date": "2015-09-08",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "十津川",
+          "score": 0,
+          "won": false,
+          "name": "十津川高校",
+          "slug": "totsukawa"
+        },
+        {
+          "display": "奈良高専",
+          "score": 1,
+          "won": true,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2015-09-06",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 6,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "西和清陵",
+          "score": 4,
+          "won": false,
+          "name": "西和清陵高校",
+          "slug": "seiwaseiryo"
+        }
+      ]
+    },
+    {
+      "date": "2015-09-05",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "御所実業",
+          "score": 16,
+          "won": true,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        },
+        {
+          "display": "生駒",
+          "score": 4,
+          "won": false,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        }
+      ]
+    },
+    {
+      "date": "2015-09-05",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "score": 9,
+          "won": true,
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "香芝",
+          "score": 1,
+          "won": false,
+          "name": "香芝高校",
+          "slug": "kashiba"
+        }
+      ]
+    },
+    {
+      "date": "2015-09-05",
+      "season": "autumn",
+      "tournament": "10月4日の3位決定戦結果 （佐藤薬品スタジアム）平城高校 近畿大会初出場",
+      "round": null,
+      "venue": "佐藤薬品スタジアム",
+      "teams": [
+        {
+          "display": "奈女大附",
+          "score": 12,
+          "won": true,
+          "name": "奈良女子大学附属中等教育学校",
+          "slug": "narajoshidaigakufuzoku"
+        },
+        {
+          "display": "大淀",
+          "score": 1,
+          "won": false,
+          "name": "大淀",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-10-06",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": "決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良",
+          "score": 1,
+          "won": false,
+          "name": "奈良高校",
+          "slug": "nara"
+        },
+        {
+          "display": "天理",
+          "score": 11,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-10-06",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": "3位決定戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "score": 13,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "郡山",
+          "score": 9,
+          "won": false,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        }
+      ]
+    },
+    {
+      "date": "2024-10-05",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": "準決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良",
+          "score": 7,
+          "won": true,
+          "name": "奈良高校",
+          "slug": "nara"
+        },
+        {
+          "display": "郡山",
+          "score": 3,
+          "won": false,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        }
+      ]
+    },
+    {
+      "date": "2024-10-05",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": "準決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "score": 2,
+          "won": false,
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "天理",
+          "score": 7,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-09-29",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": "準々決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 11,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "大和広陵",
+          "score": 0,
+          "won": false,
+          "name": "大和広陵高校",
+          "slug": "yamatokoryo"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-29",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": "準々決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "score": 4,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "奈良大附",
+          "score": 3,
+          "won": false,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-09-28",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": "準々決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 8,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "奈良商工",
+          "score": 7,
+          "won": false,
+          "name": "奈良商工高校",
+          "slug": "narashoko"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-28",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": "準々決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良",
+          "score": 9,
+          "won": true,
+          "name": "奈良高校",
+          "slug": "nara"
+        },
+        {
+          "display": "御所実業",
+          "score": 4,
+          "won": false,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-24",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良大附",
+          "score": 5,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        },
+        {
+          "display": "高田商業",
+          "score": 3,
+          "won": false,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-24",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "帝塚山",
+          "score": 3,
+          "won": false,
+          "name": "帝塚山",
+          "slug": null
+        },
+        {
+          "display": "智辯学園",
+          "score": 10,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-09-23",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "一条",
+          "score": 0,
+          "won": false,
+          "name": "一条高校",
+          "slug": "ichijo"
+        },
+        {
+          "display": "御所実業",
+          "score": 7,
+          "won": true,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-23",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "法隆寺国際",
+          "score": 0,
+          "won": false,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        },
+        {
+          "display": "天理",
+          "score": 10,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-09-23",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "高円芸術・国際・山辺・二階堂",
+          "score": 2,
+          "won": false,
+          "name": "高円芸術・国際・山辺・二階堂",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "大和広陵",
+          "score": 9,
+          "won": true,
+          "name": "大和広陵高校",
+          "slug": "yamatokoryo"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-22",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "五條",
+          "score": 5,
+          "won": false,
+          "name": "五條高校",
+          "slug": "nara-gojo"
+        },
+        {
+          "display": "奈良商工",
+          "score": 12,
+          "won": true,
+          "name": "奈良商工高校",
+          "slug": "narashoko"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-21",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "ロートスタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 11,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "生駒",
+          "score": 6,
+          "won": false,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-21",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "ロートスタジアム",
+      "teams": [
+        {
+          "display": "奈良",
+          "score": 8,
+          "won": true,
+          "name": "奈良高校",
+          "slug": "nara"
+        },
+        {
+          "display": "香芝",
+          "score": 0,
+          "won": false,
+          "name": "香芝高校",
+          "slug": "kashiba"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-16",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "大和広陵",
+          "score": 7,
+          "won": true,
+          "name": "大和広陵高校",
+          "slug": "yamatokoryo"
+        },
+        {
+          "display": "奈女大附",
+          "score": 2,
+          "won": false,
+          "name": "奈良女子大学附属中等教育学校",
+          "slug": "narajoshidaigakufuzoku"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-16",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "王寺工業",
+          "score": 0,
+          "won": false,
+          "name": "王寺工業高校",
+          "slug": "ojikogyo"
+        },
+        {
+          "display": "奈良大附",
+          "score": 18,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-09-16",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "高田",
+          "score": 3,
+          "won": false,
+          "name": "高田高校",
+          "slug": "nara-takata"
+        },
+        {
+          "display": "高田商業",
+          "score": 7,
+          "won": true,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-16",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "ロートスタジアム",
+      "teams": [
+        {
+          "display": "奈良北",
+          "score": 0,
+          "won": false,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        },
+        {
+          "display": "智辯学園",
+          "score": 9,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-09-16",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "ロートスタジアム",
+      "teams": [
+        {
+          "display": "帝塚山",
+          "score": 7,
+          "won": true,
+          "name": "帝塚山",
+          "slug": null
+        },
+        {
+          "display": "高取国際",
+          "score": 6,
+          "won": false,
+          "name": "高取国際高校",
+          "slug": "takatorikokusai"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-15",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "宇陀",
+          "score": 0,
+          "won": false,
+          "name": "宇陀高校",
+          "slug": "uda"
+        },
+        {
+          "display": "法隆寺国際",
+          "score": 10,
+          "won": true,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-15",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良高専",
+          "score": 0,
+          "won": false,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        },
+        {
+          "display": "天理",
+          "score": 18,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-09-15",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "青翔・奈良南・十津川",
+          "score": 2,
+          "won": false,
+          "name": "青翔・奈良南・十津川",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "高円芸術・国際・山辺・二階堂",
+          "score": 12,
+          "won": true,
+          "name": "高円芸術・国際・山辺・二階堂",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2024-09-14",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "県立大附属",
+          "score": 3,
+          "won": false,
+          "name": "県立大附属",
+          "slug": null
+        },
+        {
+          "display": "一条",
+          "score": 12,
+          "won": true,
+          "name": "一条高校",
+          "slug": "ichijo"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-14",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "県立商業",
+          "score": 2,
+          "won": false,
+          "name": "奈良県立商業高校",
+          "slug": "narakenritsushogyo"
+        },
+        {
+          "display": "香芝",
+          "score": 6,
+          "won": true,
+          "name": "香芝高校",
+          "slug": "kashiba"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-14",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良",
+          "score": 13,
+          "won": true,
+          "name": "奈良高校",
+          "slug": "nara"
+        },
+        {
+          "display": "橿原",
+          "score": 3,
+          "won": false,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-08",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "西和清陵",
+          "score": 4,
+          "won": false,
+          "name": "西和清陵高校",
+          "slug": "seiwaseiryo"
+        },
+        {
+          "display": "奈良商工",
+          "score": 14,
+          "won": true,
+          "name": "奈良商工高校",
+          "slug": "narashoko"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-08",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "score": 2,
+          "won": false,
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "御所実業",
+          "score": 3,
+          "won": true,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-07",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 3,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        },
+        {
+          "display": "郡山",
+          "score": 4,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-07",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "生駒",
+          "score": 6,
+          "won": true,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        },
+        {
+          "display": "畝傍",
+          "score": 4,
+          "won": false,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-07",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "五條",
+          "score": 3,
+          "won": true,
+          "name": "五條高校",
+          "slug": "nara-gojo"
+        },
+        {
+          "display": "磯城野",
+          "score": 2,
+          "won": false,
+          "name": "磯城野高校",
+          "slug": "nara-shikino"
+        }
+      ]
+    },
+    {
+      "date": "2024-09-03",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良",
+          "score": 9,
+          "won": true,
+          "name": "奈良高校",
+          "slug": "nara"
+        },
+        {
+          "display": "西大和学園",
+          "score": 0,
+          "won": false,
+          "name": "西大和学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-09-03",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球大会奈良県予選 結果",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "法隆寺国際",
+          "score": 5,
+          "won": true,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        },
+        {
+          "display": "添上",
+          "score": 1,
+          "won": false,
+          "name": "添上高校",
+          "slug": "soekami"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-07",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": "決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "score": 4,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "天理",
+          "score": 3,
+          "won": false,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": "3位決定戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "score": 6,
+          "won": true,
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "郡山",
+          "score": 4,
+          "won": false,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-04",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": "準決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 0,
+          "won": false,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "智辯学園",
+          "score": 9,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-04",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": "準決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "score": 5,
+          "won": false,
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "天理",
+          "score": 7,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "score": 12,
+          "won": true,
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "奈女大附",
+          "score": 1,
+          "won": false,
+          "name": "奈良女子大学附属中等教育学校",
+          "slug": "narajoshidaigakufuzoku"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良大附",
+          "score": 1,
+          "won": false,
+          "name": "奈良大附",
+          "slug": null
+        },
+        {
+          "display": "天理",
+          "score": 3,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "法隆寺国際",
+          "score": 4,
+          "won": false,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        },
+        {
+          "display": "智辯学園",
+          "score": 5,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 5,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "高田商業",
+          "score": 4,
+          "won": false,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ロートスタジアム",
+      "teams": [
+        {
+          "display": "奈良",
+          "score": 0,
+          "won": false,
+          "name": "奈良高校",
+          "slug": "nara"
+        },
+        {
+          "display": "奈良大附",
+          "score": 7,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ロートスタジアム",
+      "teams": [
+        {
+          "display": "生駒",
+          "score": 0,
+          "won": false,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        },
+        {
+          "display": "天理",
+          "score": 9,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原",
+          "score": 1,
+          "won": false,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        },
+        {
+          "display": "智辯学園",
+          "score": 4,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "香芝",
+          "score": 6,
+          "won": false,
+          "name": "香芝高校",
+          "slug": "kashiba"
+        },
+        {
+          "display": "橿原学院",
+          "score": 12,
+          "won": true,
+          "name": "橿原学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 10,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "県立商業",
+          "score": 0,
+          "won": false,
+          "name": "奈良県立商業高校",
+          "slug": "narakenritsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "高取国際",
+          "score": 0,
+          "won": false,
+          "name": "高取国際高校",
+          "slug": "takatorikokusai"
+        },
+        {
+          "display": "奈女大附",
+          "score": 3,
+          "won": true,
+          "name": "奈良女子大学附属中等教育学校",
+          "slug": "narajoshidaigakufuzoku"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 8,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "奈良北",
+          "score": 2,
+          "won": false,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "生駒",
+          "score": 10,
+          "won": true,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        },
+        {
+          "display": "青翔・西和清陵・十津川・奈良南",
+          "score": 3,
+          "won": false,
+          "name": "青翔・西和清陵・十津川・奈良南",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "法隆寺国際",
+          "score": 11,
+          "won": true,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        },
+        {
+          "display": "帝塚山",
+          "score": 0,
+          "won": false,
+          "name": "帝塚山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "高田商業",
+          "score": 7,
+          "won": true,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        },
+        {
+          "display": "奈良高専",
+          "score": 0,
+          "won": false,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "磯城野",
+          "score": 1,
+          "won": false,
+          "name": "磯城野高校",
+          "slug": "nara-shikino"
+        },
+        {
+          "display": "奈良",
+          "score": 8,
+          "won": true,
+          "name": "奈良高校",
+          "slug": "nara"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良大附",
+          "score": 9,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        },
+        {
+          "display": "県大附属",
+          "score": 0,
+          "won": false,
+          "name": "奈良県立大学附属高校",
+          "slug": "narakenritsudaigakufuzoku"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ロートスタジアム",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "score": 12,
+          "won": true,
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "西大和学園",
+          "score": 0,
+          "won": false,
+          "name": "西大和学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ロートスタジアム",
+      "teams": [
+        {
+          "display": "香芝",
+          "score": 7,
+          "won": true,
+          "name": "香芝高校",
+          "slug": "kashiba"
+        },
+        {
+          "display": "御所実業",
+          "score": 5,
+          "won": false,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 6,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "添上",
+          "score": 0,
+          "won": false,
+          "name": "添上高校",
+          "slug": "soekami"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "高取国際",
+          "score": 1,
+          "won": true,
+          "name": "高取国際高校",
+          "slug": "takatorikokusai"
+        },
+        {
+          "display": "桜井",
+          "score": 0,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "高田",
+          "score": 1,
+          "won": false,
+          "name": "高田高校",
+          "slug": "nara-takata"
+        },
+        {
+          "display": "女子大附",
+          "score": 5,
+          "won": true,
+          "name": "奈良女子大学附属中等教育学校",
+          "slug": "narajoshidaigakufuzoku"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "高田商業",
+          "score": 9,
+          "won": true,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        },
+        {
+          "display": "奈良商工",
+          "score": 0,
+          "won": false,
+          "name": "奈良商工高校",
+          "slug": "narashoko"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "王寺工業",
+          "score": 1,
+          "won": false,
+          "name": "王寺工業高校",
+          "slug": "ojikogyo"
+        },
+        {
+          "display": "奈良高専",
+          "score": 2,
+          "won": true,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "宇陀",
+          "score": 2,
+          "won": false,
+          "name": "宇陀高校",
+          "slug": "uda"
+        },
+        {
+          "display": "県立商業",
+          "score": 10,
+          "won": true,
+          "name": "奈良県立商業高校",
+          "slug": "narakenritsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "大和広陵",
+          "score": 3,
+          "won": false,
+          "name": "大和広陵高校",
+          "slug": "yamatokoryo"
+        },
+        {
+          "display": "橿原",
+          "score": 4,
+          "won": true,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "畝傍",
+          "score": 0,
+          "won": false,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        },
+        {
+          "display": "智辯学園",
+          "score": 5,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-06",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "五條",
+          "score": 0,
+          "won": false,
+          "name": "五條高校",
+          "slug": "nara-gojo"
+        },
+        {
+          "display": "高取国際",
+          "score": 5,
+          "won": true,
+          "name": "高取国際高校",
+          "slug": "takatorikokusai"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-06",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "法隆寺国際",
+          "score": 13,
+          "won": true,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        },
+        {
+          "display": "高円芸術・国際・二階堂・山辺",
+          "score": 0,
+          "won": false,
+          "name": "高円芸術・国際・二階堂・山辺",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2025-09-06",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "一条",
+          "score": 1,
+          "won": false,
+          "name": "一条高校",
+          "slug": "ichijo"
+        },
+        {
+          "display": "帝塚山",
+          "score": 8,
+          "won": true,
+          "name": "帝塚山",
+          "slug": null
+        }
+      ]
+    }
+  ]
+}

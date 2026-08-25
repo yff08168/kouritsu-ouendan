@@ -1,12 +1,11 @@
 import Link from "next/link";
 import { Star } from "lucide-react";
-import { SITE } from "@/lib/constants";
 import { Container } from "@/components/layout/Container";
 import { Logo } from "@/components/layout/Logo";
 import { NavLinks } from "@/components/layout/NavLinks";
 import { MobileMenu } from "@/components/layout/MobileMenu";
 import { SearchBar } from "@/components/common/SearchBar";
-import { XIcon } from "@/components/common/XIcon";
+// ★`SITE` と `XIcon` は X のボタンを戻すときに一緒に戻す（下の注記を読むこと）
 
 export function Header() {
   return (
@@ -27,15 +26,11 @@ export function Header() {
             <SearchBar />
           </div>
 
-          <a
-            href={SITE.xUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden h-10 w-10 place-items-center rounded-full bg-navy-800 text-white hover:bg-navy-700 sm:grid"
-          >
-            <span className="sr-only">X（旧Twitter）で公立応援団をフォローする</span>
-            <XIcon />
-          </a>
+          {/*
+            ★**Xのボタンは 2026-08-24 に外した**（運営者の判断。運用予定が無い）。
+            **まだ無いアカウントへ誘導しない。** アカウントを作ったら
+            `SITE.xUrl` は `constants.ts` に残してあるので、この塊を戻すだけ。
+          */}
 
           {/*
             将来のコミュニティ機能（学校フォロー）の入口。

@@ -89,7 +89,14 @@ export async function pdfPages(data) {
  * 例外を投げると、それまでに読めた試合ごと捨てることになる（実際にそうなった）。
  * 遅いだけのことが多いので、間をあけて3回まで試してから諦める。
  */
-export async function fetchPdfPages(url, { headers, timeoutMs = 45000 } = {}) {
+/**
+ * PDFを取ってきて**生のバイト列**で返す。
+ *
+ * ★**枝の線（`vector-bracket.mjs`）を読むには本文とは別にバイト列が要る。**
+ *   `pdfPages` に渡した配列は pdf.js が中で手放す（detach する）ので、
+ *   **2度使うなら毎回 `slice()` して渡すこと。**
+ */
+export async function fetchPdfBytes(url, { headers, timeoutMs = 45000 } = {}) {
   let res = null;
   for (let attempt = 0; attempt < 3; attempt++) {
     if (attempt > 0) await new Promise((r) => setTimeout(r, 3000 * attempt));
@@ -112,6 +119,12 @@ export async function fetchPdfPages(url, { headers, timeoutMs = 45000 } = {}) {
     そのまま pdf.js に渡すと例外で止まる。先頭の `%PDF` で見分ける。
   */
   if (data[0] !== 0x25 || data[1] !== 0x50 || data[2] !== 0x44 || data[3] !== 0x46) return null;
+  return data;
+}
+
+export async function fetchPdfPages(url, { headers, timeoutMs = 45000 } = {}) {
+  const data = await fetchPdfBytes(url, { headers, timeoutMs });
+  if (!data) return null;
   try {
     return await pdfPages(data);
   } catch {

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
+  CalendarDays,
   ChevronRight,
   Flame,
   GitBranch,
@@ -30,6 +31,8 @@ import { getPhenomenaByPrefecture } from "@/lib/queries/phenomena";
 import { getActivePolls, getCheerMessages } from "@/lib/queries/community";
 import { PREFECTURES } from "@/lib/constants";
 import { getRegionalDistrict, latestSeasonGames } from "@/lib/regional-results";
+import { listTournaments } from "@/lib/regional-tournaments";
+import { TournamentLinks } from "@/components/results/TournamentLinks";
 import { bracketForGames } from "@/lib/regional-bracket";
 import { RegionalBracket } from "@/components/results/RegionalBracket";
 import { RegionalUpcomingCard } from "@/components/results/RegionalUpcomingCard";
@@ -115,6 +118,18 @@ export default async function PrefectureDetailPage({ params }: Props) {
           regional.games.filter((g) => g.season === regionalGames.season),
           regionalGames.tournaments[0] ?? null,
         )
+      : null;
+
+  /*
+    ★**大会ごとのページへの入口**（2026-08-24）。
+    生成物には過去の大会が残っている（120日の窓は 2026-08-23 に外した）ので、
+    **県のページに一覧を置いて、勝ち上がりは大会のページで見てもらう。**
+  */
+  const tournaments = regional ? listTournaments(regional) : [];
+  /** いま県のページに出している大会（＝トーナメント表を出している大会）の slug */
+  const currentTournamentSlug =
+    regionalGames?.tournaments[0] != null
+      ? (tournaments.find((t) => t.name === regionalGames.tournaments[0])?.slug ?? null)
       : null;
 
   return (
@@ -236,6 +251,43 @@ export default async function PrefectureDetailPage({ params }: Props) {
             <p className="mt-1 text-sm text-ink-muted">{bracket.tournament}</p>
           )}
           <RegionalBracket bracket={bracket} />
+          {/* ★この大会の全試合はこちら。県のページは24件までしか出していない */}
+          {currentTournamentSlug && (
+            <p className="mt-3 text-right">
+              <Link
+                href={`/prefectures/${slug}/${currentTournamentSlug}`}
+                className="text-sm font-bold text-navy-800 hover:underline"
+              >
+                この大会の全試合を見る →
+              </Link>
+            </p>
+          )}
+        </section>
+      )}
+
+      {/*
+        ------- 大会ごとの結果 -------
+        ★**県のページはいちばん新しい大会しか出していない**ので、
+        過去ぶんへの入口をここに置く（生成物には過去の大会が残っている）。
+
+        ★★**いま出している大会も一覧に入れる。**「過去のぶんだけ」にすると、
+        **大会が1つしか無くて枝も組めない県で、大会ページへの導線が消える**
+        （上の「この大会の全試合を見る」は枝が組めたときにしか出ない）。
+      */}
+      {tournaments.length > 0 && (
+        <section
+          aria-labelledby="pref-tournaments"
+          className="mt-4 rounded-xl border border-line bg-white p-5"
+        >
+          <SectionHeading
+            id="pref-tournaments"
+            title="大会ごとの結果"
+            icon={<CalendarDays size={18} />}
+          />
+          <p className="mt-1 mb-3 text-sm text-ink-muted">
+            大会ごとにトーナメント表と全試合を出しています
+          </p>
+          <TournamentLinks prefectureSlug={slug} entries={tournaments} />
         </section>
       )}
 

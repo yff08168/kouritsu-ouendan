@@ -1,0 +1,1737 @@
+{
+  "slug": "yamagata",
+  "district": "山形",
+  "sourceName": "山形県高等学校野球連盟",
+  "sourceUrl": "https://www.yamagata-hbf.org/",
+  "games": [
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "1回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "創学館",
+          "score": 17,
+          "won": true,
+          "name": "創学館",
+          "slug": null
+        },
+        {
+          "display": "米沢東",
+          "score": 7,
+          "won": false,
+          "name": "米沢東高校",
+          "slug": "yonezawahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "1回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "山形商業",
+          "score": 3,
+          "won": false,
+          "name": "山形市立商業高校",
+          "slug": "yamagatashiritsushogyo"
+        },
+        {
+          "display": "山形南",
+          "score": 7,
+          "won": true,
+          "name": "山形南高校",
+          "slug": "yamagataminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "４校連合",
+          "score": 6,
+          "won": false,
+          "name": "４校連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "米沢中央",
+          "score": 8,
+          "won": true,
+          "name": "米沢中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "米沢市営野球場",
+      "teams": [
+        {
+          "display": "米沢鶴城",
+          "score": 4,
+          "won": false,
+          "name": "米沢鶴城高校",
+          "slug": "yonezawakakujo"
+        },
+        {
+          "display": "山形中央",
+          "score": 10,
+          "won": true,
+          "name": "山形中央高校",
+          "slug": "yamagatachuo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "1回戦",
+      "venue": "新庄市民球場",
+      "teams": [
+        {
+          "display": "鶴岡高専",
+          "score": 3,
+          "won": false,
+          "name": "鶴岡工業高専",
+          "slug": "tsuruokakogyo-kosen"
+        },
+        {
+          "display": "鶴岡中央",
+          "score": 10,
+          "won": true,
+          "name": "鶴岡中央高校",
+          "slug": "tsuruokachuo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "1回戦",
+      "venue": "新庄市民球場",
+      "teams": [
+        {
+          "display": "村山産業",
+          "score": 4,
+          "won": false,
+          "name": "村山産業高校",
+          "slug": "murayamasangyo"
+        },
+        {
+          "display": "新庄東",
+          "score": 5,
+          "won": true,
+          "name": "新庄東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "1回戦",
+      "venue": "鶴岡ﾄﾞﾘｰﾑｽﾀｼﾞｱﾑ",
+      "teams": [
+        {
+          "display": "九里学園",
+          "score": 11,
+          "won": true,
+          "name": "九里学園",
+          "slug": null
+        },
+        {
+          "display": "山形東",
+          "score": 1,
+          "won": false,
+          "name": "山形東高校",
+          "slug": "yamagatahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "鶴岡ﾄﾞﾘｰﾑｽﾀｼﾞｱﾑ",
+      "teams": [
+        {
+          "display": "日大山形",
+          "score": 14,
+          "won": true,
+          "name": "日大山形",
+          "slug": null
+        },
+        {
+          "display": "創学館",
+          "score": 1,
+          "won": false,
+          "name": "創学館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "山形工業",
+          "score": 1,
+          "won": false,
+          "name": "山形工業高校",
+          "slug": "yamagatakogyo"
+        },
+        {
+          "display": "山形学院",
+          "score": 4,
+          "won": true,
+          "name": "山形学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "米沢興譲館",
+          "score": 11,
+          "won": true,
+          "name": "米沢興譲館高校",
+          "slug": "yonezawakojokan"
+        },
+        {
+          "display": "東桜学館",
+          "score": 0,
+          "won": false,
+          "name": "東桜学館高校",
+          "slug": "togakkan"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "米沢市営野球場",
+      "teams": [
+        {
+          "display": "長井",
+          "score": 2,
+          "won": false,
+          "name": "長井高校",
+          "slug": "nagai"
+        },
+        {
+          "display": "酒田東",
+          "score": 9,
+          "won": true,
+          "name": "酒田東高校",
+          "slug": "sakatahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "鶴岡ﾄﾞﾘｰﾑｽﾀｼﾞｱﾑ",
+      "teams": [
+        {
+          "display": "東海大山形",
+          "score": 0,
+          "won": false,
+          "name": "東海大山形",
+          "slug": null
+        },
+        {
+          "display": "山形南",
+          "score": 5,
+          "won": true,
+          "name": "山形南高校",
+          "slug": "yamagataminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "酒田南",
+          "score": 10,
+          "won": true,
+          "name": "酒田南",
+          "slug": null
+        },
+        {
+          "display": "３校連合",
+          "score": 0,
+          "won": false,
+          "name": "３校連合",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "新庄志誠館",
+          "score": 3,
+          "won": true,
+          "name": "新庄志誠館高校",
+          "slug": "shinjoshiseikan"
+        },
+        {
+          "display": "酒田西",
+          "score": 0,
+          "won": false,
+          "name": "酒田西高校",
+          "slug": "sakatanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "新庄市民球場",
+      "teams": [
+        {
+          "display": "酒田光陵",
+          "score": 12,
+          "won": true,
+          "name": "酒田光陵高校",
+          "slug": "sakatakoryo"
+        },
+        {
+          "display": "寒河江工業",
+          "score": 9,
+          "won": false,
+          "name": "寒河江工業高校",
+          "slug": "sagaekogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "新庄市民球場",
+      "teams": [
+        {
+          "display": "惺山",
+          "score": 2,
+          "won": false,
+          "name": "惺山",
+          "slug": null
+        },
+        {
+          "display": "致道館",
+          "score": 3,
+          "won": true,
+          "name": "致道館高校",
+          "slug": "chidokan"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "鶴岡ﾄﾞﾘｰﾑｽﾀｼﾞｱﾑ",
+      "teams": [
+        {
+          "display": "寒河江",
+          "score": 10,
+          "won": true,
+          "name": "寒河江高校",
+          "slug": "sagae"
+        },
+        {
+          "display": "鶴岡工業",
+          "score": 0,
+          "won": false,
+          "name": "鶴岡工業高校",
+          "slug": "tsuruokakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "鶴岡ﾄﾞﾘｰﾑｽﾀｼﾞｱﾑ",
+      "teams": [
+        {
+          "display": "山形明正",
+          "score": 0,
+          "won": false,
+          "name": "山形明正",
+          "slug": null
+        },
+        {
+          "display": "新庄神室",
+          "score": 7,
+          "won": true,
+          "name": "新庄神室産業高校",
+          "slug": "shinjokamurosangyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "新庄市民球場",
+      "teams": [
+        {
+          "display": "山形城北",
+          "score": 9,
+          "won": true,
+          "name": "山形城北",
+          "slug": null
+        },
+        {
+          "display": "鶴岡中央",
+          "score": 0,
+          "won": false,
+          "name": "鶴岡中央高校",
+          "slug": "tsuruokachuo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "新庄市民球場",
+      "teams": [
+        {
+          "display": "新庄東",
+          "score": 2,
+          "won": false,
+          "name": "新庄東",
+          "slug": null
+        },
+        {
+          "display": "鶴岡東",
+          "score": 8,
+          "won": true,
+          "name": "鶴岡東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "鶴岡ﾄﾞﾘｰﾑｽﾀｼﾞｱﾑ",
+      "teams": [
+        {
+          "display": "九里学園",
+          "score": 5,
+          "won": true,
+          "name": "九里学園",
+          "slug": null
+        },
+        {
+          "display": "羽黒",
+          "score": 3,
+          "won": false,
+          "name": "羽黒",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "鶴岡ﾄﾞﾘｰﾑｽﾀｼﾞｱﾑ",
+      "teams": [
+        {
+          "display": "日大山形",
+          "score": 7,
+          "won": true,
+          "name": "日大山形",
+          "slug": null
+        },
+        {
+          "display": "米沢中央",
+          "score": 0,
+          "won": false,
+          "name": "米沢中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "新庄志誠館",
+          "score": 3,
+          "won": false,
+          "name": "新庄志誠館高校",
+          "slug": "shinjoshiseikan"
+        },
+        {
+          "display": "山形中央",
+          "score": 7,
+          "won": true,
+          "name": "山形中央高校",
+          "slug": "yamagatachuo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "米沢興譲館",
+          "score": 0,
+          "won": false,
+          "name": "米沢興譲館高校",
+          "slug": "yonezawakojokan"
+        },
+        {
+          "display": "酒田光陵",
+          "score": 3,
+          "won": true,
+          "name": "酒田光陵高校",
+          "slug": "sakatakoryo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "きらやかスタジアム",
+      "teams": [
+        {
+          "display": "新庄神室",
+          "score": 0,
+          "won": false,
+          "name": "新庄神室産業高校",
+          "slug": "shinjokamurosangyo"
+        },
+        {
+          "display": "鶴岡東",
+          "score": 10,
+          "won": true,
+          "name": "鶴岡東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "きらやかスタジアム",
+      "teams": [
+        {
+          "display": "山形南",
+          "score": 8,
+          "won": true,
+          "name": "山形南高校",
+          "slug": "yamagataminami"
+        },
+        {
+          "display": "酒田東",
+          "score": 0,
+          "won": false,
+          "name": "酒田東高校",
+          "slug": "sakatahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "致道館",
+          "score": 1,
+          "won": false,
+          "name": "致道館高校",
+          "slug": "chidokan"
+        },
+        {
+          "display": "山形学院",
+          "score": 5,
+          "won": true,
+          "name": "山形学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "山形城北",
+          "score": 9,
+          "won": true,
+          "name": "山形城北",
+          "slug": null
+        },
+        {
+          "display": "寒河江",
+          "score": 2,
+          "won": false,
+          "name": "寒河江高校",
+          "slug": "sagae"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "きらやかスタジアム",
+      "teams": [
+        {
+          "display": "酒田南",
+          "score": 2,
+          "won": true,
+          "name": "酒田南",
+          "slug": null
+        },
+        {
+          "display": "九里学園",
+          "score": 1,
+          "won": false,
+          "name": "九里学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "準々決勝",
+      "venue": "きらやかスタジアム",
+      "teams": [
+        {
+          "display": "日大山形",
+          "score": 5,
+          "won": true,
+          "name": "日大山形",
+          "slug": null
+        },
+        {
+          "display": "山形中央",
+          "score": 2,
+          "won": false,
+          "name": "山形中央高校",
+          "slug": "yamagatachuo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "準々決勝",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "酒田光陵",
+          "score": 0,
+          "won": false,
+          "name": "酒田光陵高校",
+          "slug": "sakatakoryo"
+        },
+        {
+          "display": "鶴岡東",
+          "score": 19,
+          "won": true,
+          "name": "鶴岡東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "準々決勝",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "山形南",
+          "score": 4,
+          "won": true,
+          "name": "山形南高校",
+          "slug": "yamagataminami"
+        },
+        {
+          "display": "山形学院",
+          "score": 3,
+          "won": false,
+          "name": "山形学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "準々決勝",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "山形城北",
+          "score": 11,
+          "won": true,
+          "name": "山形城北",
+          "slug": null
+        },
+        {
+          "display": "酒田南",
+          "score": 3,
+          "won": false,
+          "name": "酒田南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "準決勝",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "日大山形",
+          "score": 2,
+          "won": false,
+          "name": "日大山形",
+          "slug": null
+        },
+        {
+          "display": "鶴岡東",
+          "score": 9,
+          "won": true,
+          "name": "鶴岡東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "準決勝",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "山形南",
+          "score": 3,
+          "won": false,
+          "name": "山形南高校",
+          "slug": "yamagataminami"
+        },
+        {
+          "display": "山形城北",
+          "score": 11,
+          "won": true,
+          "name": "山形城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-26",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権山形大会",
+      "round": "決勝",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "鶴岡東",
+          "score": 5,
+          "won": true,
+          "name": "鶴岡東",
+          "slug": null
+        },
+        {
+          "display": "山形城北",
+          "score": 0,
+          "won": false,
+          "name": "山形城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-10",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "1回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "米沢東",
+          "score": 13,
+          "won": true,
+          "name": "米沢東高校",
+          "slug": "yonezawahigashi"
+        },
+        {
+          "display": "３校連合",
+          "score": 5,
+          "won": false,
+          "name": "３校連合",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2025-07-10",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "1回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "山形東",
+          "score": 7,
+          "won": true,
+          "name": "山形東高校",
+          "slug": "yamagatahigashi"
+        },
+        {
+          "display": "新庄北",
+          "score": 4,
+          "won": false,
+          "name": "新庄北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-10",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "1回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "高畠",
+          "score": 0,
+          "won": false,
+          "name": "高畠高校",
+          "slug": "takahata"
+        },
+        {
+          "display": "九里学園",
+          "score": 8,
+          "won": true,
+          "name": "九里学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-10",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "1回戦",
+      "venue": "米沢市営野球場",
+      "teams": [
+        {
+          "display": "惺山",
+          "score": 6,
+          "won": true,
+          "name": "惺山",
+          "slug": null
+        },
+        {
+          "display": "鶴岡中央",
+          "score": 0,
+          "won": false,
+          "name": "鶴岡中央高校",
+          "slug": "tsuruokachuo"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-11",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "1回戦",
+      "venue": "米沢市営野球場",
+      "teams": [
+        {
+          "display": "東桜学館",
+          "score": 13,
+          "won": true,
+          "name": "東桜学館高校",
+          "slug": "togakkan"
+        },
+        {
+          "display": "長井",
+          "score": 10,
+          "won": false,
+          "name": "長井高校",
+          "slug": "nagai"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-11",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "1回戦",
+      "venue": "新庄市民球場",
+      "teams": [
+        {
+          "display": "山形明正",
+          "score": 0,
+          "won": false,
+          "name": "山形明正",
+          "slug": null
+        },
+        {
+          "display": "酒田光陵",
+          "score": 11,
+          "won": true,
+          "name": "酒田光陵高校",
+          "slug": "sakatakoryo"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-11",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "1回戦",
+      "venue": "新庄市民球場",
+      "teams": [
+        {
+          "display": "米沢中央",
+          "score": 12,
+          "won": true,
+          "name": "米沢中央",
+          "slug": null
+        },
+        {
+          "display": "寒河江工業",
+          "score": 0,
+          "won": false,
+          "name": "寒河江工業高校",
+          "slug": "sagaekogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-11",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "1回戦",
+      "venue": "鶴岡ﾄﾞﾘｰﾑｽﾀｼﾞｱﾑ",
+      "teams": [
+        {
+          "display": "山形工業",
+          "score": 11,
+          "won": true,
+          "name": "山形工業高校",
+          "slug": "yamagatakogyo"
+        },
+        {
+          "display": "２校連合",
+          "score": 1,
+          "won": false,
+          "name": "２校連合",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2025-07-11",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "鶴岡ﾄﾞﾘｰﾑｽﾀｼﾞｱﾑ",
+      "teams": [
+        {
+          "display": "寒河江",
+          "score": 8,
+          "won": true,
+          "name": "寒河江高校",
+          "slug": "sagae"
+        },
+        {
+          "display": "酒田西",
+          "score": 4,
+          "won": false,
+          "name": "酒田西高校",
+          "slug": "sakatanishi"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-11",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "山形中央",
+          "score": 7,
+          "won": true,
+          "name": "山形中央高校",
+          "slug": "yamagatachuo"
+        },
+        {
+          "display": "米沢東",
+          "score": 0,
+          "won": false,
+          "name": "米沢東高校",
+          "slug": "yonezawahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-11",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "鶴岡工業",
+          "score": 2,
+          "won": false,
+          "name": "鶴岡工業高校",
+          "slug": "tsuruokakogyo"
+        },
+        {
+          "display": "米沢興譲館",
+          "score": 6,
+          "won": true,
+          "name": "米沢興譲館高校",
+          "slug": "yonezawakojokan"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-11",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "米沢市営野球場",
+      "teams": [
+        {
+          "display": "南陽",
+          "score": 1,
+          "won": false,
+          "name": "南陽高校",
+          "slug": "nanyo"
+        },
+        {
+          "display": "村山産業",
+          "score": 8,
+          "won": true,
+          "name": "村山産業高校",
+          "slug": "murayamasangyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "米沢市営野球場",
+      "teams": [
+        {
+          "display": "東海大山形",
+          "score": 11,
+          "won": true,
+          "name": "東海大山形",
+          "slug": null
+        },
+        {
+          "display": "新庄神室産",
+          "score": 0,
+          "won": false,
+          "name": "新庄神室産",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "新庄市民球場",
+      "teams": [
+        {
+          "display": "創学館",
+          "score": 6,
+          "won": true,
+          "name": "創学館",
+          "slug": null
+        },
+        {
+          "display": "新庄東",
+          "score": 0,
+          "won": false,
+          "name": "新庄東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "新庄市民球場",
+      "teams": [
+        {
+          "display": "天童",
+          "score": 0,
+          "won": false,
+          "name": "天童高校",
+          "slug": "tendo"
+        },
+        {
+          "display": "致道館",
+          "score": 16,
+          "won": true,
+          "name": "致道館高校",
+          "slug": "chidokan"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "鶴岡ﾄﾞﾘｰﾑｽﾀｼﾞｱﾑ",
+      "teams": [
+        {
+          "display": "鶴岡高専",
+          "score": 3,
+          "won": true,
+          "name": "鶴岡工業高専",
+          "slug": "tsuruokakogyo-kosen"
+        },
+        {
+          "display": "酒田東",
+          "score": 2,
+          "won": false,
+          "name": "酒田東高校",
+          "slug": "sakatahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "鶴岡ﾄﾞﾘｰﾑｽﾀｼﾞｱﾑ",
+      "teams": [
+        {
+          "display": "米沢鶴城",
+          "score": 4,
+          "won": false,
+          "name": "米沢鶴城高校",
+          "slug": "yonezawakakujo"
+        },
+        {
+          "display": "山形南",
+          "score": 8,
+          "won": true,
+          "name": "山形南高校",
+          "slug": "yamagataminami"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "山形東",
+          "score": 0,
+          "won": false,
+          "name": "山形東高校",
+          "slug": "yamagatahigashi"
+        },
+        {
+          "display": "山形城北",
+          "score": 7,
+          "won": true,
+          "name": "山形城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "九里学園",
+          "score": 3,
+          "won": true,
+          "name": "九里学園",
+          "slug": null
+        },
+        {
+          "display": "山形学院",
+          "score": 2,
+          "won": false,
+          "name": "山形学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "米沢市営野球場",
+      "teams": [
+        {
+          "display": "日大山形",
+          "score": 10,
+          "won": true,
+          "name": "日大山形",
+          "slug": null
+        },
+        {
+          "display": "惺山",
+          "score": 3,
+          "won": false,
+          "name": "惺山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "米沢市営野球場",
+      "teams": [
+        {
+          "display": "東桜学館",
+          "score": 0,
+          "won": false,
+          "name": "東桜学館高校",
+          "slug": "togakkan"
+        },
+        {
+          "display": "鶴岡東",
+          "score": 13,
+          "won": true,
+          "name": "鶴岡東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "新庄市民球場",
+      "teams": [
+        {
+          "display": "山形商業",
+          "score": 3,
+          "won": false,
+          "name": "山形市立商業高校",
+          "slug": "yamagatashiritsushogyo"
+        },
+        {
+          "display": "酒田光陵",
+          "score": 5,
+          "won": true,
+          "name": "酒田光陵高校",
+          "slug": "sakatakoryo"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "新庄市民球場",
+      "teams": [
+        {
+          "display": "酒田南",
+          "score": 10,
+          "won": true,
+          "name": "酒田南",
+          "slug": null
+        },
+        {
+          "display": "米沢中央",
+          "score": 0,
+          "won": false,
+          "name": "米沢中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "2回戦",
+      "venue": "鶴岡ﾄﾞﾘｰﾑｽﾀｼﾞｱﾑ",
+      "teams": [
+        {
+          "display": "山形工業",
+          "score": 1,
+          "won": false,
+          "name": "山形工業高校",
+          "slug": "yamagatakogyo"
+        },
+        {
+          "display": "羽黒",
+          "score": 8,
+          "won": true,
+          "name": "羽黒",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "鶴岡ﾄﾞﾘｰﾑｽﾀｼﾞｱﾑ",
+      "teams": [
+        {
+          "display": "酒田南",
+          "score": 4,
+          "won": true,
+          "name": "酒田南",
+          "slug": null
+        },
+        {
+          "display": "米沢興譲館",
+          "score": 1,
+          "won": false,
+          "name": "米沢興譲館高校",
+          "slug": "yonezawakojokan"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-16",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "東海大山形",
+          "score": 5,
+          "won": true,
+          "name": "東海大山形",
+          "slug": null
+        },
+        {
+          "display": "九里学園",
+          "score": 0,
+          "won": false,
+          "name": "九里学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-16",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "日大山形",
+          "score": 4,
+          "won": true,
+          "name": "日大山形",
+          "slug": null
+        },
+        {
+          "display": "創学館",
+          "score": 0,
+          "won": false,
+          "name": "創学館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-17",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "寒河江",
+          "score": 2,
+          "won": false,
+          "name": "寒河江高校",
+          "slug": "sagae"
+        },
+        {
+          "display": "羽黒",
+          "score": 5,
+          "won": true,
+          "name": "羽黒",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-17",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "山形中央",
+          "score": 4,
+          "won": true,
+          "name": "山形中央高校",
+          "slug": "yamagatachuo"
+        },
+        {
+          "display": "致道館",
+          "score": 3,
+          "won": false,
+          "name": "致道館高校",
+          "slug": "chidokan"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-18",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "鶴岡高専",
+          "score": 0,
+          "won": false,
+          "name": "鶴岡工業高専",
+          "slug": "tsuruokakogyo-kosen"
+        },
+        {
+          "display": "鶴岡東",
+          "score": 7,
+          "won": true,
+          "name": "鶴岡東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-18",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "酒田光陵",
+          "score": 5,
+          "won": false,
+          "name": "酒田光陵高校",
+          "slug": "sakatakoryo"
+        },
+        {
+          "display": "山形南",
+          "score": 6,
+          "won": true,
+          "name": "山形南高校",
+          "slug": "yamagataminami"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-19",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "3回戦",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "村山産業",
+          "score": 0,
+          "won": false,
+          "name": "村山産業高校",
+          "slug": "murayamasangyo"
+        },
+        {
+          "display": "山形城北",
+          "score": 10,
+          "won": true,
+          "name": "山形城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-19",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "準々決勝",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "酒田南",
+          "score": 2,
+          "won": true,
+          "name": "酒田南",
+          "slug": null
+        },
+        {
+          "display": "東海大山形",
+          "score": 0,
+          "won": false,
+          "name": "東海大山形",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-20",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "準々決勝",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "日大山形",
+          "score": 2,
+          "won": true,
+          "name": "日大山形",
+          "slug": null
+        },
+        {
+          "display": "羽黒",
+          "score": 1,
+          "won": false,
+          "name": "羽黒",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-20",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "準々決勝",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "山形中央",
+          "score": 3,
+          "won": false,
+          "name": "山形中央高校",
+          "slug": "yamagatachuo"
+        },
+        {
+          "display": "鶴岡東",
+          "score": 7,
+          "won": true,
+          "name": "鶴岡東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-21",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "準々決勝",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "山形南",
+          "score": 4,
+          "won": true,
+          "name": "山形南高校",
+          "slug": "yamagataminami"
+        },
+        {
+          "display": "山形城北",
+          "score": 3,
+          "won": false,
+          "name": "山形城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-21",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "準決勝",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "酒田南",
+          "score": 5,
+          "won": false,
+          "name": "酒田南",
+          "slug": null
+        },
+        {
+          "display": "日大山形",
+          "score": 12,
+          "won": true,
+          "name": "日大山形",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-24",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "準決勝",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "鶴岡東",
+          "score": 11,
+          "won": true,
+          "name": "鶴岡東",
+          "slug": null
+        },
+        {
+          "display": "山形南",
+          "score": 1,
+          "won": false,
+          "name": "山形南高校",
+          "slug": "yamagataminami"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-24",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権山形大会",
+      "round": "決勝",
+      "venue": "ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形",
+      "teams": [
+        {
+          "display": "日大山形",
+          "score": 5,
+          "won": true,
+          "name": "日大山形",
+          "slug": null
+        },
+        {
+          "display": "鶴岡東",
+          "score": 4,
+          "won": false,
+          "name": "鶴岡東",
+          "slug": null
+        }
+      ]
+    }
+  ]
+}

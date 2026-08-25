@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Newspaper } from "lucide-react";
+import { Search } from "lucide-react";
 import { SITE } from "@/lib/constants";
 import { HERO_SLIDES } from "@/lib/hero";
 import { HeroSlideshow } from "@/components/layout/HeroSlideshow";
@@ -41,20 +41,31 @@ export function Hero() {
           <span className="text-accent-500">もっと面白くなる。</span>
         </h1>
 
+        {/*
+          ★**「ニュース」は 2026-08-24 に外した**（運営者の判断。運用予定が無い）。
+          ナビからは 2026-08-21 に外れており、ここが最後の入口だった。
+          **`/news` のコードとルートは残してある**ので、始めるときは
+          この一文に「ニュース、」を戻し、下のボタンの行き先を `/news` にする。
+        */}
         <p className="hero-text mt-5 text-[0.9375rem] leading-relaxed text-navy-100 sm:text-base">
           全国の公立高校野球を応援する人のためのサイト。
           <br className="hidden sm:block" />
-          ニュース、学校情報、戦績、歴史、そして公立旋風まで。
+          学校情報、戦績、歴史、そして公立旋風まで。
           <br className="hidden sm:block" />
           公立高校野球の&ldquo;今&rdquo;を、ここに。
         </p>
 
+        {/*
+          ★**ヒーローのボタンは「公立高校を探す」**（元は「最新ニュースを見る」）。
+          ヒーローから行き先が無くなると入口として成立しないので、
+          **消すのではなく、いま中身のあるページへ向け直してある。**
+        */}
         <Link
-          href="/news"
+          href="/schools"
           className="mt-7 inline-flex min-h-12 items-center gap-2 rounded-lg bg-white px-6 text-base font-bold text-navy-800 shadow-sm hover:bg-navy-50"
         >
-          <Newspaper size={20} aria-hidden="true" />
-          最新ニュースを見る
+          <Search size={20} aria-hidden="true" />
+          公立高校を探す
         </Link>
 
         <p className="sr-only">{SITE.fullName}</p>

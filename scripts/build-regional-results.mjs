@@ -797,37 +797,67 @@ const yamanashi = {
       日付の見出し（topic_y）から次の見出しまでが1日ぶん。
       1日に複数の回戦が入ることがあるので、**回戦は表ごとに直前のものを使う。**
     */
-    const days = html.matchAll(
+    const dayBlocks = [...html.matchAll(
       /<P class="topic_y">([\s\S]*?)<\/P>([\s\S]*?)(?=<P class="topic_y">|<\/body>|$)/gi,
-    );
+    )];
     /*
-      ★★**前の年の日が消し残っている**（2026-08-25 に修正）。
+      ★★**年の合わない日が2通りある**（2026-08-25）。**見分け方が肝。**
 
-      連盟は**前年のページを雛形にして書き換えている**ので、
-      **上書きされなかった日が、前の年の日付のまま先頭に残る。**
+      (a) **前の年の日が消し残っている**（＝別の大会。落とす）
+          連盟は**前年のページを雛形にして書き換える**ので、
+          上書きされなかった日が前の年の日付のまま残る。
 
-        26haruresult.html … 大会12日目 **2023年**05月07日 ／ 大会11日目 **2023年**05月06日
-                            大会11日目 2026年05月06日 … 大会１日目 2026年04月11日
-        25akiresult.html  … 大会９日目 **2024年**09月29日（2025年の9日目は9月23日）
+            26haruresult.html  大会12日目 2023年05月07日 ／ 大会**11日目** 2023年05月06日
+                               大会**11日目** 2026年05月06日 … 大会１日目 2026年04月11日
+            25akiresult.html   大会**９日目** 2024年09月29日 ／ 大会**９日目** 2025年09月23日
 
-      ★**「大会N日目」が二重になる**のが目印だが、**そこを見る必要は無い。**
-      ファイル名の `<西暦下2桁>` が**その紙の年そのもの**なので、
-      **年の違う日をそのまま落とせる**（枝の外から来る事実で判定できる）。
+      (b) ★★**年だけ打ち間違えている**（＝この大会の日。**落としてはいけない**）
 
-      ★**落とした試合を別の大会として拾い直さないこと。**
-      前の年の大会名はこの紙のどこにも書かれておらず、
-      **回数を数えて当てにいくと、そこは推測になる。**
+            13natsuresult.html 大会12日目 2013年07月27日  決勝戦
+                               大会11日目 **2012年**07月26日  準決勝
+                               大会10日目 2013年07月24日  準々決勝
+                               大会９日目 **2012年**07月23日  準々決勝
+
+      ★**見分けるのは「大会N日目」の重なり。**
+      (a) は**同じ日番号が二重になる**（前の年の紙の日と今年の日が並ぶ）。
+      (b) は**1〜Nが1回ずつ**で、年の違う日がその並びの穴を埋めている。
+
+      ★★**この見分けを入れる前は (b) も落としていて、
+      2013〜2016年の準々決勝・準決勝が消えていた**（「試合が欠けている」と鳴っていた）。
+      ★**落とすほうに倒すと、静かに試合が消える。**
+
+      ★**(a) で落とした試合を別の大会として拾い直さないこと。**
+      前の年の大会名はこの紙のどこにも書かれておらず、回数を数えるのは推測になる。
       過去年が要るなら `--year` で前の年の紙を取ること（URLは年で引ける）。
     */
+    const parsed = dayBlocks
+      .map((day) => ({
+        day,
+        no: Number(normalize(plain(day[1])).match(/大会\s*(\d+)\s*日目/)?.[1] ?? NaN),
+        date: normalize(plain(day[1])).match(/(\d{4})年(\d{1,2})月(\d{1,2})日/),
+      }))
+      .filter((d) => d.date);
+    const seen = new Map();
+    for (const d of parsed) {
+      if (!Number.isFinite(d.no)) continue;
+      seen.set(d.no, (seen.get(d.no) ?? 0) + 1);
+    }
+    /** 日番号が二重になっている＝前の年の紙が消し残っている */
+    const leftover = [...seen.values()].some((n) => n > 1);
     let stale = 0;
-    for (const day of days) {
-      const date = normalize(plain(day[1])).match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
-      if (!date) continue;
-      if (Number(date[1]) !== Number(year)) {
-        stale += 1;
-        continue;
+    let repaired = 0;
+    for (const { day, date } of parsed) {
+      let y = Number(date[1]);
+      if (y !== Number(year)) {
+        if (leftover) {
+          stale += 1;
+          continue;
+        }
+        // 打ち間違い。**月日はそのままに、紙の年で読み替える**
+        y = Number(year);
+        repaired += 1;
       }
-      const isoDate = `${date[1]}-${date[2].padStart(2, "0")}-${date[3].padStart(2, "0")}`;
+      const isoDate = `${y}-${date[2].padStart(2, "0")}-${date[3].padStart(2, "0")}`;
 
       const body = day[2];
       let round = null;
@@ -855,17 +885,52 @@ const yamanashi = {
         cursor = m.index + m[0].length;
 
         const rows = tableRows(m[0]);
-        if (rows.length < 3) continue;
-        const [homeRow, awayRow] = rows.slice(1, 3);
+        /*
+          ★★**イニングの見出し行がある表と無い表が混ざっている**（2026-08-25 に修正）。
+
+            2016年7月23日 第1試合  … 見出し**なし**（1行目がいきなり `東海大甲府`）
+            2016年7月23日 第2試合  … 見出し**あり**（1行目が `1 2 3 … 計`）
+
+          ★**`rows.slice(1, 3)` と決め打ちしていたので、見出しの無い表の
+          1試合目が丸ごと落ちていた**（第96〜98回の準決勝が1試合になっていた）。
+          ★**行数が3に満たないと飛ばす作りだったので静かに消えていた。**
+
+          ★**「校名の欄が空でなく、合計が読める行」の先頭2つ**を採る。
+          見出し行は校名の欄が空（`&nbsp;`）なので、これで自然に外れる。
+        */
+        /*
+          ★★**「計」の欄が空の表がある**（2026-08-25 に修正）。**中断した試合。**
+
+            ["","1","2","3","4","5","6","7","8","9","","計"]   ← 見出し
+            ["農林","3","7","0","0","1","","","","","",""]     ← 計が空
+            ["日川","1","0","8","3","2","","","","","",""]
+
+          翌日に改めて行われ、そちらは計まで埋まっている（日川 11-0 農林）。
+
+          ★**`inningTotal` は「後ろから最初の数字」を返す**ので、
+          **計が空だと最終回の得点を合計として拾う**（農林 1-2 日川 になっていた）。
+          ★★**`北杜 0 0 0 0 0 0` と `日大明誠 2 0 1 0 0` は 0対0 になっていた**
+          （どちらも最後の回が 0）。**島根で87件やっていたのと同じ「幻の引き分け」。**
+
+          ★**合計は「計」の列から読む。** 見出しがある表はその位置、
+          無い表（同じ紙に混在する）は行の最後。**空なら試合として出さない。**
+        */
+        const header = rows.find((r) => r.some((c) => normalize(c) === "計"));
+        const totalAt = header ? header.findIndex((c) => normalize(c) === "計") : -1;
+        const totalOf = (r) => {
+          const cell = totalAt >= 0 && totalAt < r.length ? r[totalAt] : r.at(-1);
+          const v = Number(normalize(String(cell ?? "")));
+          return String(cell ?? "").trim() !== "" && Number.isFinite(v) ? v : null;
+        };
+        const teamRows = rows.filter(
+          (r) => r[0] && !/^(先攻|後攻)チーム$/.test(r[0]) && totalOf(r) !== null,
+        );
+        if (teamRows.length < 2) continue;
+        const [homeRow, awayRow] = teamRows;
         const home = homeRow[0];
         const away = awayRow[0];
-        /*
-          ページの末尾に**空のひな形**（「先攻チーム」「後攻チーム」）が3つ置いてある。
-          次の試合を書き足すためのもので、試合ではない。
-        */
-        if (!home || !away || /^(先攻|後攻)チーム$/.test(home)) continue;
-        const a = inningTotal(homeRow);
-        const b = inningTotal(awayRow);
+        const a = totalOf(homeRow);
+        const b = totalOf(awayRow);
         if (a === null || b === null) continue;
 
         games.push({
@@ -885,6 +950,12 @@ const yamanashi = {
     if (stale) {
       console.log(
         `  ⚠️ 山梨: ${year} 年の紙に前の年の日が ${stale} 日ぶん消し残っている。その日は出さない`,
+      );
+    }
+    if (repaired) {
+      console.log(
+        `  ⚠️ 山梨: ${year} 年の紙で年を打ち間違えている日が ${repaired} 日ぶん。` +
+          "月日はそのままに、この紙の年として出す",
       );
     }
     return games;

@@ -11462,18 +11462,35 @@ const osaka = {
       return r + "回戦";
     };
 
-    return built.games.map((g) => ({
-      // ★**この紙に試合ごとの日付は無い。** 推測で埋めない
-      date: null,
-      season,
-      tournament,
-      round: nameOf(g.round),
-      venue: null,
-      teams: [
-        { display: g.a.name, score: g.a.score, won: g.a.score > g.b.score },
-        { display: g.b.name, score: g.b.score, won: g.b.score > g.a.score },
-      ],
-    }));
+    /*
+      ★★**不戦勝の試合は出さない**（2026-08-25）。
+
+      得点の欄が `○`／`×` の試合は**行われていない**（不戦勝）。
+      **枝の上では1試合ぶんの枠を使う**ので上の検算には数えるが、
+      ★**得点が無いものを 0対0 として出さないこと**（島根で87件やっていた轍）。
+      ★**飛ばした数はログに出す**（「出典に無い」と「こちらで外した」を見分けるため）。
+    */
+    if (built.walkovers) {
+      console.log(
+        `  大阪: 「${tournament}」の不戦勝 ${built.walkovers} 試合は、` +
+          "得点が無いので出しません（枝の検算には数えています）",
+      );
+    }
+
+    return built.games
+      .filter((g) => !g.a.mark && !g.b.mark)
+      .map((g) => ({
+        // ★**この紙に試合ごとの日付は無い。** 推測で埋めない
+        date: null,
+        season,
+        tournament,
+        round: nameOf(g.round),
+        venue: null,
+        teams: [
+          { display: g.a.name, score: g.a.score, won: g.a.score > g.b.score },
+          { display: g.b.name, score: g.b.score, won: g.b.score > g.a.score },
+        ],
+      }));
   },
 };
 
@@ -11920,6 +11937,24 @@ const DISTRICT_ALIASES = {
     出典が書き分けている（＝推測ではない）。
   */
   "大阪\t岸和田産": "kishiwadashiritsusangyo",
+  /*
+    ★過去年（2021〜2024）を足して出てきたぶん（2026-08-25）。
+
+    - `府大工業高専` … **2022年に改称した**（大阪府立大学工業高専 → 大阪公立大学工業高専）。
+      **同じ1校で、古い紙が古い名前で刷っているだけ。**
+    - `市立堺` … `堺市立堺` と同じ市立の堺高校。**紙によって書き方が違う。**
+    - `四条畷` … マスタは**旧字の「四條畷」**。規則の旧字体寄せに `條` が無いので当たらない。
+    ★★**`千里星雲` は出典の誤植。** 大阪府立**千里青雲**高校（`senriseiun`）のこと。
+      **「千里星雲」という学校は実在しない**（マスタにも無い）。同じ紙の他の年は
+      `千里青雲` と正しく刷っている。**読み替える先が一意に決まるので結び付ける。**
+
+    ★**結び付けなかったもの**（マスタに無い＝統廃合で現存しない）:
+    `美原`・`かわち野`・`大阪市立`。**推測で近い名前に寄せないこと。**
+  */
+  "大阪\t府大工業高専": "osakakoritsudaigakukogyo",
+  "大阪\t市立堺": "osaka-sakai",
+  "大阪\t四条畷": "shijonawate",
+  "大阪\t千里星雲": "senriseiun",
 };
 
 /**

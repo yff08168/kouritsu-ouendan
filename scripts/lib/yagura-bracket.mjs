@@ -44,6 +44,41 @@
 const isNum = (t) => /^\d+$/.test(String(t).trim());
 
 /**
+ * ★★**不戦勝の印**（2026-08-25）。
+ *
+ * 得点の欄に、数字ではなく `○`（勝ち）と `×`（負け）が刷られる試合がある。
+ * **枝の上では1試合ぶんの枠を使うが、試合は行われていないので得点が無い。**
+ *
+ *   y=234.4  148..172:大阪国際  190..196:○
+ *   y=243.2  148..172:淀川工科  190..196:×
+ *
+ * ★**紙によって数がまるで違う**（実測: 2021年秋は30試合・2023年夏は1試合・
+ * 2021年夏は0試合）。**2021年秋が大きく壊れていたのはこれが理由。**
+ *
+ * ★**1文字だけのものに限ること。** 紙の下に `○印は不戦勝` という凡例があり、
+ * `○印` という断片で出る。**そこまで拾うと凡例が試合になる。**
+ */
+const isWinMark = (t) => /^[○〇◯]$/.test(String(t).trim());
+const isLoseMark = (t) => /^[×✕╳]$/.test(String(t).trim());
+/** 得点の欄に入りうるもの（数字か、不戦勝の印） */
+const isSlot = (t) => isNum(t) || isWinMark(t) || isLoseMark(t);
+
+/**
+ * ★★**校名ではありえない断片。ここで名前の連なりを断ち切る。**
+ *
+ * - `[` `]` … ★**枝の括弧が「線」ではなく「文字」で刷ってある紙がある**
+ *   （2021〜2024年の夏）。素通しすると **`]高石`** という校名になり、
+ *   次の列の `高石` と別物になって**勝ち上がりが全部つながらなくなる**
+ *   （2024年夏で93件の検算落ち）。
+ * - `〇` `○` … ★**勝者の印**（2023年秋）。`箕面学園〇箕面学園` になっていた。
+ *
+ * ★**「校名に出てこない記号」だけを並べること。**
+ * **中黒（`・`）や長音を入れないこと** —— 連合チーム名が壊れる
+ * （`狭山・藤井寺工・農芸・金剛`）。
+ */
+const SEPARATOR = /^[[\]［］〔〕〇○◯●◎|｜]+$/;
+
+/**
  * やぐら表を組み立てる。
  *
  * @param {{y:number,items:{x:number,width:number,text:string}[]}[]} lines
@@ -53,11 +88,22 @@ const isNum = (t) => /^\d+$/.test(String(t).trim());
  *   「同じ y の幅」を広げて組み直すと**別の行の校名が隣に来て側の判定が狂う**
  *   （実際に左半分の 34 件が落ちた）。
  * @param {object} [opts]
- * @param {number} [opts.orphanY=4.5] 得点と校名が別の行に割れているときに、
+ * @param {number} [opts.orphanY=5] 得点と校名が別の行に割れているときに、
  *   となりの行まで探しにいく y の差。
- *   ★**紙のいちばん下で、校名だけが 3.2pt 下の行に落ちている**ことがある。
- *   **既定は「行送り 6.1 は拾わず 3.2 は拾う」値。** 探すのは
- *   **校名の見つからなかった得点だけ**なので、正しく読めている行には影響しない。
+ *
+ *   ★★**紙には2種類の行送りがある。** 「文字の行」と「枝の段」で、
+ *   **この値はそのあいだに置くこと。** 15枚を実測した分布:
+ *
+ *     2025年秋 … 文字 **4.5**（76回） ／ 枝の段 9.0（26回）
+ *     2024年夏 … 文字 3.0〜**4.5**（97回） ／ 枝の段 7.5〜8.0（36回）
+ *     2025年夏 … 文字 **3.5**（19回） ／ 枝の段 6.0（81回）
+ *
+ *   ★**5 は「4.5 は拾い 6.0 は拾わない」ちょうどの値。**
+ *   4.5 にしていたときは**2025年秋の1試合が落ちた**（文字の行送りとぴったり同じで、
+ *   小数の丸めで届かなかった）。
+ *   ★**6 以上にしないこと** —— 2025年夏で**枝の段をまたいで別の学校の名前を拾う。**
+ *
+ *   探すのは**校名の見つからなかった得点だけ**なので、正しく読めている行には影響しない。
  * @param {number} [opts.nameGap=60] 得点と校名のあいだに許す隙間。
  *   離れた文字（中央の凡例など）を校名として拾わないための歯止め。
  *   ★★**きつくしすぎないこと。** 校名は列に合わせて組まれるが**得点は桁数で位置が動く**ので、
@@ -70,9 +116,13 @@ const isNum = (t) => /^\d+$/.test(String(t).trim());
  * @returns {{games:Array,rounds:number,teams:string[],errors:string[]}}
  */
 export function assembleYaguraBracket(lines, opts = {}) {
-  const orphanY = opts.orphanY ?? 4.5;
+  const orphanY = opts.orphanY ?? 5;
   const nameGap = opts.nameGap ?? 60;
+  /** 校名の断片どうしのあいだに許す隙間。★得点→校名（`nameGap`）よりずっと狭い */
+  const partGap = opts.partGap ?? 20;
   const colGap = opts.columnGap ?? 5;
+  /** 校名が跨いでよい行数。★2行を超えると、となりの列の同じ校名まで拾ってしまう */
+  const maxNameLines = opts.maxNameLines ?? 2;
   const errors = [];
   const log = (...a) => opts.debug && console.log("   [yagura]", ...a);
 
@@ -83,12 +133,54 @@ export function assembleYaguraBracket(lines, opts = {}) {
     ★**行ごと落とす。文字で消さない**（千葉で「宣」を巻き込んだのと同じ轍）。
   */
   const skip = opts.ignoreLines ?? /参加校|チーム数|主催|後援/;
+  const textOf = (l) => String(l.text ?? l.items.map((i) => i.text).join("")).replace(/\t/g, "");
+  /*
+    ★★**3位決定戦を外す**（2026-08-25）。
+
+    3位決定戦は**勝ち抜きの枝ではない**ので、混ぜると
+    「いちばん内側の列が1件多い」「試合数がチーム数を超える」で必ず落ちる。
+
+      y=55.1  470:第３位決定戦
+      y=37.6  440:大商大高 476:0 496:7 508:東海大仰星   ← これ
+
+    ★★**「ラベルより下」を丸ごと外してはいけない。**
+    紙は枝を上から下へ詰めて組むので、**ラベルより下にも本物の枝の行がある**
+    （2021年春はラベルの下に5行、2023年秋は9行）。
+    丸ごと外したときは**3枚で列が奇数になった。**
+
+    ★**外すのは「ラベルより下の、中央の帯」だけ**（宮崎の `centerFloor` と同じ）。
+    ラベルより下の本物の行は、どれも外側の列にある:
+
+      2023年秋 y=73.1  389:大阪偕星学園 432:0 │ 559:桜宮 582:0 606:7 619:興國 │ 756:3 772:清教学園
+                       ~~~~~~~~~~~~ 本物        ~~~~~~~~~~~~ 3位決定戦          ~~~~ 本物
+
+    ★**帯はラベルの位置から決める**（紙ごとに中央の x が違うため）。
+  */
+  const floorLabel = opts.floorLabel ?? /位決定戦/;
+  const band = opts.centerBand ?? 90;
+  const labelled = lines.filter((l) => floorLabel.test(textOf(l)));
+  let floor = null;
+  let bandLo = 0;
+  let bandHi = 0;
+  if (labelled.length) {
+    const row = labelled.reduce((a, b) => (a.y > b.y ? a : b));
+    floor = row.y;
+    const marks = row.items.filter((i) => floorLabel.test(String(i.text)));
+    const mid = marks.length
+      ? (Math.min(...marks.map((i) => i.x)) + Math.max(...marks.map((i) => i.x + (i.width ?? 0)))) / 2
+      : (Math.min(...row.items.map((i) => i.x)) + Math.max(...row.items.map((i) => i.x))) / 2;
+    bandLo = mid - band;
+    bandHi = mid + band;
+    log(`3位決定戦: y<${floor.toFixed(1)} かつ x=${bandLo.toFixed(0)}〜${bandHi.toFixed(0)} を外す`);
+  }
+  const inThirdPlace = (y, x) => floor != null && y < floor && x >= bandLo && x <= bandHi;
+
   const rows = lines
-    .filter((l) => !skip.test(String(l.text ?? l.items.map((i) => i.text).join(""))))
+    .filter((l) => !skip.test(textOf(l)))
     .map((l) => ({
       y: l.y,
       items: l.items
-        .filter((i) => String(i.text).trim() !== "")
+        .filter((i) => String(i.text).trim() !== "" && !inThirdPlace(l.y, i.x))
         .map((i) => ({ x: i.x, width: i.width ?? 0, text: String(i.text).trim(), y: l.y }))
         .sort((a, b) => a.x - b.x),
     }))
@@ -110,34 +202,97 @@ export function assembleYaguraBracket(lines, opts = {}) {
      **となりが数字かどうか**を見れば、中点を使わずに決まる。
      どちらもとなりが校名のときだけ中点で決める。
   ------------------------------------------------------------------ */
-  /** 得点 n から `dir` の向きへ、数字に当たるまで校名の断片を集める */
+  /** すぐ上下の行まで含めた「別の得点」。校名の連なりはこれを跨がない */
+  const numsAll = all.filter((i) => isSlot(i.text));
+  const nearNums = (n) =>
+    numsAll.filter((m) => m !== n && Math.abs(m.y - n.y) <= orphanY);
+
+  /**
+   * 得点 n から `dir` の向きへ、数字に当たるまで校名の断片を集める。
+   *
+   * ★★**区切りの記号で必ず止まること**（`SEPARATOR`）。
+   * ★**校名の行は2行までしか跨がない**（`maxNameLines`）。
+   */
   const nameFrom = (n, dir, pool) => {
     const line = pool
       .filter((i) => i !== n && (dir < 0 ? i.x + i.width <= n.x : i.x >= n.x + n.width))
       .sort((a, b) => (dir < 0 ? b.x - a.x : a.x - b.x));
+    /*
+      ★★**別の得点を跨いで校名を拾わない**（2026-08-25。2024年夏）。
+
+      同じ行の数字では止まるが、**すぐ上下の行にある数字は同じ行に入らない**ので
+      素通りしてしまい、**となりの列の校名までつないでいた**:
+
+          y=765.1  … 888:4  917:信太  976:東住吉総合・泉尾
+          y=761.3  …               965:0            ← この得点を跨いでいた
+
+      → `信太東住吉総合・泉尾` という校名になっていた。
+      ★**得点は必ず自分の校名のとなりにある**ので、
+      **途中に別の得点があれば、その先はもう別の学校。**
+    */
+    const blockers = nearNums(n);
     const parts = [];
+    const ys = new Set();
     let edge = dir < 0 ? n.x : n.x + n.width;
     for (const i of line) {
-      if (isNum(i.text)) break;
+      if (isSlot(i.text) || SEPARATOR.test(i.text)) break;
       const gap = dir < 0 ? edge - (i.x + i.width) : i.x - edge;
-      if (gap > nameGap) break;
+      /*
+        ★★**得点から校名までの隙間と、校名の中の隙間は別もの**（2026-08-25）。
+
+        - **得点→校名** は広い（得点は桁数で位置が動くので、短い校名ほど空く。実測31pt）
+        - **校名の中** はほぼ0（`大`＋`冠`、`星`＋`翔` のように1文字ずつ組まれていても
+          隙間は5pt未満。折り返しの続きは前の行と重なるので負になる）
+
+        ★**2021年夏に、校名の51〜55pt 手前に置かれた `ア` を拾って
+        `ア太成学院大高` になっていた**（紙にこの1文字が2か所だけある）。
+        ★**文字で消さずに、隙間で切る** —— 「校名に出てこない文字」を数え上げると
+        カタカナの校名（`エナジック`）を巻き込む。
+      */
+      if (gap > (parts.length ? partGap : nameGap)) break;
+      const crossed = blockers.some((m) =>
+        dir < 0 ? m.x + m.width <= edge && m.x >= i.x + i.width : m.x >= edge && m.x + m.width <= i.x,
+      );
+      if (crossed) break;
+      /*
+        ★★**折り返した校名は2行に組まれる**（2024年夏の連合チーム）。
+              狭山・藤井寺工・農      ← 上の行
+                              4       ← 得点は2行の**あいだ**に置かれる
+                芸・金剛              ← 下の行
+        ★**3行目に手を出さないこと。** となりの列にも同じ校名が刷ってあるので、
+        際限なく拾うと `狭山…芸・金剛狭山…芸・金剛` と**二重になる**（実際になった）。
+      */
+      if (!ys.has(i.y) && ys.size >= maxNameLines) break;
+      ys.add(i.y);
       parts.push(i);
       edge = dir < 0 ? i.x : i.x + i.width;
     }
     if (!parts.length) return null;
-    if (dir < 0) parts.reverse();
+    /*
+      ★**読む順は「上の行から、行の中は左から」。**
+      折り返しの続きは下の行に字下げして組まれるので x 順でも同じになるが、
+      **紙の組み方に頼らずに済む**のでこちらで並べる。
+    */
+    parts.sort((a, b) => b.y - a.y || a.x - b.x);
     return parts.map((p) => p.text).join("").replace(/\s+/g, "");
   };
+
+
+  /** 得点の欄の中身。数字なら点、印なら勝ち負けだけ（点は無い） */
+  const slotOf = (n) => ({
+    score: isNum(n.text) ? Number(n.text) : null,
+    mark: isWinMark(n.text) ? "win" : isLoseMark(n.text) ? "lose" : null,
+  });
 
   const entries = [];
   const orphans = [];
   for (const row of rows) {
     for (const n of row.items) {
-      if (!isNum(n.text)) continue;
+      if (!isSlot(n.text)) continue;
       const leftNb = row.items.filter((i) => i.x < n.x).at(-1);
       const rightNb = row.items.filter((i) => i.x > n.x)[0];
-      const leftIsNum = leftNb ? isNum(leftNb.text) : null;
-      const rightIsNum = rightNb ? isNum(rightNb.text) : null;
+      const leftIsNum = leftNb ? isSlot(leftNb.text) : null;
+      const rightIsNum = rightNb ? isSlot(rightNb.text) : null;
 
       let side;
       if (leftIsNum === false && rightIsNum === true) side = "L";
@@ -147,7 +302,13 @@ export function assembleYaguraBracket(lines, opts = {}) {
       const dir = side === "L" ? -1 : 1;
       const name = nameFrom(n, dir, row.items);
       if (name) {
-        entries.push({ y: n.y, score: Number(n.text), name, edge: side === "L" ? n.x + n.width : n.x, side });
+        entries.push({
+          y: n.y,
+          ...slotOf(n),
+          name,
+          edge: side === "L" ? n.x + n.width : n.x,
+          side,
+        });
       } else {
         orphans.push({ n, side, dir });
       }
@@ -171,7 +332,7 @@ export function assembleYaguraBracket(lines, opts = {}) {
     }
     entries.push({
       y: o.n.y,
-      score: Number(o.n.text),
+      ...slotOf(o.n),
       name,
       edge: o.side === "L" ? o.n.x + o.n.width : o.n.x,
       side: o.side,
@@ -213,6 +374,19 @@ export function assembleYaguraBracket(lines, opts = {}) {
 
      ★**いちばん内側の列は左右とも1件**で、その2件が決勝。
   ------------------------------------------------------------------ */
+  /**
+   * 組の勝者を返す。決まらなければ null。
+   * ★**不戦勝は点で決まらない。** `○`／`×` の印で決める。
+   */
+  const winnerOfPair = (a, b) => {
+    if (a.mark || b.mark) {
+      if (a.mark === "win" && b.mark === "lose") return a;
+      if (b.mark === "win" && a.mark === "lose") return b;
+      return null;
+    }
+    if (a.score === b.score) return null;
+    return a.score > b.score ? a : b;
+  };
   const games = [];
   for (const side of ["L", "R"]) {
     cols[side].forEach((col, k) => {
@@ -262,12 +436,12 @@ export function assembleYaguraBracket(lines, opts = {}) {
     // (b) 準決勝の勝者どうし。得点は中央に余った数字から
     const winnerOf = (col) => {
       const [a, b] = [...col].sort((x, y2) => y2.y - x.y);
-      return a.score === b.score ? null : a.score > b.score ? a : b;
+      return winnerOfPair(a, b);
     };
     const wl = winnerOf(innerL);
     const wr = winnerOf(innerR);
     const spare = leftovers
-      .filter((o) => o.n.x > innerL[0].edge && o.n.x + o.n.width < innerR[0].edge)
+      .filter((o) => isNum(o.n.text) && o.n.x > innerL[0].edge && o.n.x + o.n.width < innerR[0].edge)
       .sort((a, b) => a.n.x - b.n.x);
     /*
       ★**同じ行に並ぶ2つだけを決勝とみなす。** 中央には「優勝」の見出しや
@@ -286,8 +460,8 @@ export function assembleYaguraBracket(lines, opts = {}) {
       games.push({
         round: rounds + 1,
         side: "F",
-        a: { ...wl, score: Number(pair.n.text) },
-        b: { ...wr, score: Number(second.n.text) },
+        a: { ...wl, score: Number(pair.n.text), mark: null },
+        b: { ...wr, score: Number(second.n.text), mark: null },
       });
   } else {
     errors.push(
@@ -308,12 +482,12 @@ export function assembleYaguraBracket(lines, opts = {}) {
       const sorted = [...col].sort((a, b) => b.y - a.y);
       for (let i = 0; i + 1 < sorted.length; i += 2) {
         const [a, b] = [sorted[i], sorted[i + 1]];
-        if (a.score === b.score) {
-          errors.push(`${side}${k + 1}回戦: ${a.name} と ${b.name} が同点（勝者が決まらない）`);
+        const win = winnerOfPair(a, b);
+        if (!win) {
+          errors.push(`${side}${k + 1}回戦: ${a.name} と ${b.name} の勝者が決まらない`);
           continue;
         }
-        const win = a.score > b.score ? a : b;
-        const lose = a.score > b.score ? b : a;
+        const lose = win === a ? b : a;
         if (!nextNames.has(win.name))
           errors.push(`${side}${k + 1}回戦: 勝った ${win.name} が次の列にいない`);
         if (nextNames.has(lose.name))
@@ -338,12 +512,19 @@ export function assembleYaguraBracket(lines, opts = {}) {
       const prev = [...cols[side][k - 1]].sort((a, b) => b.y - a.y);
       const winners = new Set();
       for (let i = 0; i + 1 < prev.length; i += 2) {
-        const [a, b] = [prev[i], prev[i + 1]];
-        winners.add((a.score > b.score ? a : b).name);
+        const w = winnerOfPair(prev[i], prev[i + 1]);
+        if (w) winners.add(w.name);
       }
       entrants += col.filter((e) => !winners.has(e.name)).length;
     });
   }
 
-  return { games, rounds, teams, entrants, errors, columns: cols };
+  /*
+    ★★**不戦勝は「試合数」には数えるが、試合としては出せない**（得点が無い）。
+    ★**呼ぶ側が「試合数 = チーム数 − 1」を検算するときは、この数を足すこと。**
+    0対0 として出さないこと（島根で踏んだ轍）。
+  */
+  const walkovers = games.filter((g) => g.a.mark || g.b.mark).length;
+
+  return { games, rounds, teams, entrants, walkovers, errors, columns: cols };
 }

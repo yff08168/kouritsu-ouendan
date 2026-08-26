@@ -123,6 +123,13 @@ function GameRow({ game }: { game: RegionalGame }) {
         </span>
         <TeamName team={b} align="left" />
       </p>
+
+      {/* ★注記（延長・サヨナラ）。**持っている出典だけが出す**（全国大会） */}
+      {game.note && (
+        <p className="hidden w-24 shrink-0 truncate text-xs text-ink-faint sm:block">
+          {game.note}
+        </p>
+      )}
     </div>
   );
 }

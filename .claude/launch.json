@@ -6,7 +6,9 @@
       "name": "kouritsu-ouendan",
       "runtimeExecutable": "C:\\Users\\81809\\tools\\node-v24.19.0-win-x64\\node.exe",
       "runtimeArgs": ["node_modules/next/dist/bin/next", "dev"],
-      "port": 3000
+      "port": 3000,
+      "_comment2": "別のセッションが3000を使っていることがあるので、空いている番号に逃がす",
+      "autoPort": true
     }
   ]
 }

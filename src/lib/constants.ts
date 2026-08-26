@@ -86,6 +86,11 @@ export const PHENOMENON = {
  */
 export const NAV = [
   { href: "/schools", label: "公立高校を探す" },
+  /*
+    ★**「甲子園」は 2026-08-26 に足した**（大会ごとのページを作ったため）。
+    地方大会は県のページから辿れるが、**全国大会には入口が1つも無かった。**
+  */
+  { href: "/koshien", label: "甲子園" },
   { href: "/rankings", label: "記録" },
   { href: "/phenomenon", label: PHENOMENON.label },
   { href: "/features", label: "特集" },

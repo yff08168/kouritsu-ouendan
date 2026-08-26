@@ -92,7 +92,18 @@ async function fetchTournament(season, n) {
   for (const c of candidates) {
     const got = await fetchWikitext(c);
     await sleep(INTERVAL);
-    if (got && got.wikitext.length > 1000) {
+    /*
+      ★★**返ってきた記事が「その回」のものか確かめる**（2026-08-26）。
+
+      `第1回選抜高等学校野球大会` は Wikipedia では
+      **第20回（1948年。学制改革で「高等学校」になった最初の大会）へのリダイレクト**で、
+      素通しすると**第1回のつもりで第20回の記事を保存してしまう。**
+      ★**実際に 第1回・第2回・第6回の選抜が、20回・21回・25回の中身で入っていた**
+      （生成側は参照表に無い回として黙って飛ばすので、**警告も出ずに3大会欠けていた**）。
+      ★**題名の「第N回」が一致したものだけ採る。**
+    */
+    const matchesNo = got && new RegExp(`^第${n}回`).test(got.title ?? "");
+    if (got && matchesNo && got.wikitext.length > 1000) {
       const record = { season, no: n, requested: c, title: got.title, wikitext: got.wikitext };
       writeFileSync(cachePath, JSON.stringify(record), "utf8");
       return { ...record, cached: false };

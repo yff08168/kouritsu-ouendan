@@ -17,6 +17,13 @@
 export type KoshienGameTeam = {
   /** 大会記事の表記（「県岐阜商」「日大三」） */
   display: string;
+  /**
+   * ★**代表校の表から取った都道府県**（2026-08-26 追加）。
+   * **古い大会は取れない**（「奥羽」「南関東」のような地区名）ので任意。
+   * ★**同名の別校に当てないための鍵。** 実際に2003年夏の「金沢」（石川・私立）が
+   * 「金沢高校」＝横浜市立金沢（神奈川）に結び付いていた。
+   */
+  pref?: string;
   score: number;
   won: boolean;
   /** サヨナラ（wikitext の `6x`） */
@@ -24,6 +31,7 @@ export type KoshienGameTeam = {
 };
 
 import raw from "@/lib/data/koshien-games.json";
+import supplements from "@/lib/data/koshien-supplements.json";
 
 /**
  * ★★**生成物は JSON**（2026-08-24）。
@@ -35,7 +43,19 @@ import raw from "@/lib/data/koshien-games.json";
  * 一部の要素にしか無い等）と型がそのままでは重ならないため。**
  * **中身は生成側が検算済み**で、形は `KoshienGame` に揃っている。
  */
-export const KOSHIEN_GAMES = raw as unknown as readonly KoshienGame[];
+/*
+  ★★**自前の出典で埋められなかった大会だけ、別の出典から補っている**（2026-08-26）。
+
+  既定の出典は ja.wikipedia のままで、**記事側の作りが原因で検算に落ちる大会**
+  （1938年春・1984年春）だけを `koshien-supplements.json` から足す。
+  ★**補ったぶんは1試合ずつ `source` を持っている**ので、画面に出典を出せる
+  （地方大会の `RegionalGame.source` と同じ考え方）。
+  ★**穴が自前の出典で埋まったら、補いのほうを外すこと。**
+*/
+export const KOSHIEN_GAMES = [
+  ...(raw as unknown as readonly KoshienGame[]),
+  ...(supplements as unknown as readonly KoshienGame[]),
+];
 
 export type KoshienGame = {
   year: number;
@@ -51,6 +71,11 @@ export type KoshienGame = {
   /** 「延長10回 TB」など、記事が添えている注記 */
   note: string | null;
   teams: KoshienGameTeam[];
+  /**
+   * ★**その試合だけ出所が違うときに書く**（既定は ja.wikipedia の大会記事）。
+   * 画面に出す（**出典の表示は実際の出所と一致させること**）。
+   */
+  source?: { name: string; url?: string };
 };
 
 /**
@@ -62,15 +87,82 @@ export type KoshienGame = {
  * ★**当たらなければ出さない。** 取りこぼすほうが、誤って別の学校の
  * 戦績を出すよりましである。
  *
+ * ★★**都道府県が分かるときは一致を要求する**（2026-08-26）。
+ * 大会記事の校名は略称で、**別の県の同名校に当たる。**
+ * 実際に**2003年夏の「金沢」（石川・私立）が横浜市立金沢（神奈川）の戦績として
+ * 出ていた。** ★**記事側に県が無い古い大会は、今までどおり校名だけで見る。**
+ *
  * @param names その学校として認めてよい表記（学校マスタの校名・一覧用の短い校名など）
+ * @param pref  その学校の都道府県（甲子園の大会区分名でよい）。省略すると県は見ない
  */
 export function koshienGamesOf(
   games: readonly KoshienGame[],
   names: readonly string[],
+  pref?: string,
 ): KoshienGame[] {
   const want = new Set(names.map(normalizeKoshienName).filter(Boolean));
   if (!want.size) return [];
-  return games.filter((g) => g.teams.some((t) => want.has(normalizeKoshienName(t.display))));
+  return games.filter((g) =>
+    g.teams.some(
+      (t) => want.has(normalizeKoshienName(t.display)) && samePrefecture(teamPrefecture(t), pref),
+    ),
+  );
+}
+
+/**
+ * 都道府県が食い違っていないか。**どちらかが分からなければ true**（今までどおり）。
+ *
+ * ★**北北海道・南北海道と北海道、東東京・西東京と東京は同じものとして扱う。**
+ * 夏の記事は分割後の名前、春の記事は「北海道」「東京」で書く。
+ */
+export function samePrefecture(a?: string | null, b?: string | null): boolean {
+  if (!a || !b) return true;
+  return prefectureKey(a) === prefectureKey(b);
+}
+
+/**
+ * そのチームの都道府県。**紙に無ければ、同じ校名の他の大会から借りる。**
+ *
+ * ★★**古い大会は代表校の欄が「地区」**（北陸・奥羽・南関東）で県が取れない。
+ * そこを空のままにすると、**同名の別校に当たったままになる** ——
+ * 1962年夏の「金沢」（石川）が、学校マスタの「金沢高校」＝横浜市立金沢
+ * （神奈川）の戦績として画面に出ていた。
+ *
+ * ★**借りるのは「県が1つに決まる校名」だけ。** 同じ校名が複数の県で出てくるなら
+ * （熊本の城北／徳島県立城北のような組）**借りずに「分からない」とする。**
+ * ★**推測ではあるので、照合を厳しくする方向にだけ使う**（緩める方向には使わない）。
+ */
+export function teamPrefecture(t: KoshienGameTeam): string | undefined {
+  return t.pref ?? prefectureByName().get(normalizeKoshienName(t.display));
+}
+
+/*
+  ★**最初に呼ばれたときに作る（モジュールの読み込み時に作らない）。**
+  `normalizeKoshienName` はこのファイルの下のほうにある `const OLD_KANJI` を使うので、
+  **読み込み時に走らせると「初期化前に触った」で500になる**（実際になった）。
+*/
+let cachedPrefectureByName: Map<string, string> | null = null;
+const prefectureByName = () => (cachedPrefectureByName ??= buildPrefectureByName());
+
+const buildPrefectureByName = () => {
+  const found = new Map<string, Set<string>>();
+  for (const g of KOSHIEN_GAMES) {
+    for (const t of g.teams) {
+      if (!t.pref) continue;
+      const key = normalizeKoshienName(t.display);
+      const set = found.get(key) ?? new Set<string>();
+      set.add(prefectureKey(t.pref));
+      found.set(key, set);
+    }
+  }
+  const out = new Map<string, string>();
+  for (const [key, set] of found) if (set.size === 1) out.set(key, [...set][0]);
+  return out;
+};
+
+/** 北北海道・南北海道 → 北海道／東東京・西東京 → 東京 にそろえる */
+export function prefectureKey(s: string): string {
+  return s.replace(/^(北|南)北海道$/, "北海道").replace(/^(東|西)東京$/, "東京");
 }
 
 /**

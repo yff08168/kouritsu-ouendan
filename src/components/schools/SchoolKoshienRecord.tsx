@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { cn } from "@/lib/utils";
 import { normalizeKoshienName } from "@/lib/koshien-games";
 
@@ -9,6 +11,9 @@ import { normalizeKoshienName } from "@/lib/koshien-games";
  */
 type KoshienGame = {
   tournament: string;
+  /** 大会ページへのリンクを作るのに使う。**神宮は season を持たない** */
+  year?: number;
+  season?: "spring" | "summer";
   round: string | null;
   date: string | null;
   note?: string | null;
@@ -36,12 +41,29 @@ export function SchoolKoshienRecord({
   if (!games.length) return null;
   const want = new Set(names.map(normalizeKoshienName).filter(Boolean));
 
-  const groups: { key: string; tournament: string; games: KoshienGame[] }[] = [];
+  /*
+    ★**大会名から大会ページへ繋ぐ**（2026-08-26）。
+    その大会の全試合とトーナメント表がそこにある。
+    ★**年が分からない試合はリンクにしない**（生成物は必ず持っているが、
+    型としては任意なので、無いときは素のテキストに落とす）。
+  */
+  const hrefOf = (g: KoshienGame): string | null => {
+    if (g.year == null) return null;
+    if (g.tournament.includes("明治神宮")) return `/jingu/${g.year}`;
+    return g.season ? `/koshien/${g.year}-${g.season}` : null;
+  };
+
+  const groups: {
+    key: string;
+    tournament: string;
+    href: string | null;
+    games: KoshienGame[];
+  }[] = [];
   for (const g of [...games].sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""))) {
     const key = g.tournament;
     const last = groups.find((x) => x.key === key);
     if (last) last.games.push(g);
-    else groups.push({ key, tournament: g.tournament, games: [g] });
+    else groups.push({ key, tournament: g.tournament, href: hrefOf(g), games: [g] });
   }
 
   return (
@@ -53,9 +75,18 @@ export function SchoolKoshienRecord({
             <span className="rounded bg-accent-500 px-1.5 py-0.5 text-xs font-bold text-navy-900">
               {group.tournament.includes("明治神宮") ? "神宮" : "甲子園"}
             </span>
-            <span className="min-w-0 text-sm font-bold text-navy-800">
-              {group.tournament}
-            </span>
+            {group.href ? (
+              <Link
+                href={group.href}
+                className="min-w-0 text-sm font-bold text-navy-800 hover:underline"
+              >
+                {group.tournament}
+              </Link>
+            ) : (
+              <span className="min-w-0 text-sm font-bold text-navy-800">
+                {group.tournament}
+              </span>
+            )}
           </h3>
           <ul className="mt-1.5 divide-y divide-line">
             {group.games.map((g, i) => (

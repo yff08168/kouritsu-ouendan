@@ -6,6 +6,11 @@ import { getAllPhenomenonSlugs } from "@/lib/queries/phenomena";
 import { getAllFeatureSlugs } from "@/lib/queries/features";
 import { getRegionalDistrict } from "@/lib/regional-results";
 import { listTournaments } from "@/lib/regional-tournaments";
+import {
+  listJinguTournaments,
+  listKoshienTournaments,
+} from "@/lib/national-tournaments";
+import { vsPath } from "@/lib/head-to-head";
 
 // sitemapもISRで作り直す。記事を追加したときに反映されるようにする。
 export const revalidate = 3600;
@@ -43,6 +48,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url("/phenomenon"), lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: url("/features"), lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: url("/prefectures"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    // 全国大会（2026-08-26 追加）。大会ごとのページは下の nationalPages
+    { url: url("/koshien"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: url("/jingu"), lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     // 地方大会の進捗。大会中は毎日変わる
     { url: url("/regional"), lastModified: now, changeFrequency: "daily", priority: 0.8 },
     { url: url("/about"), lastModified: now, changeFrequency: "yearly", priority: 0.3 },
@@ -89,6 +97,62 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     )
   ).flat();
 
+  /*
+    ★**全国大会の大会ページ**（2026-08-26 追加）。
+    「1985年 甲子園」「第90回選抜」のような検索に当たるのはこちらなので、
+    一覧だけでなく1大会ずつ載せる。甲子園190件＋神宮24件。
+    ★**生成物を読むだけ**なのでDBには当たらない。
+  */
+  const nationalPages: MetadataRoute.Sitemap = [
+    ...listKoshienTournaments().map((t) => ({
+      url: url(`/koshien/${t.slug}`),
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+    ...listJinguTournaments().map((t) => ({
+      url: url(`/jingu/${t.slug}`),
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    })),
+  ];
+
+  /*
+    ★**直接対決のページ**（2026-08-26 追加）。
+    ★★**全部は載せない。** 公立どうしの組は7,563あり、
+    そのうち**3回以上戦った544組**だけを載せる。
+    1〜2回しか当たっていない組までsitemapに積むと、
+    **中身の薄いページを自分から検索エンジンに知らせる**ことになる。
+    ★**ページ自体は1回でも当たっていれば開ける**（ISRで作る）。
+  */
+  const versusPages: MetadataRoute.Sitemap = (
+    await Promise.all(
+      PREFECTURES.map(async (p) => {
+        const district = await getRegionalDistrict(p.slug);
+        if (!district) return [];
+        const pairs = new Map<string, number>();
+        for (const game of district.games) {
+          const [x, y] = game.teams;
+          if (!x?.slug || !y?.slug || x.combined || y.combined) continue;
+          const key = [x.slug, y.slug].sort().join("	");
+          pairs.set(key, (pairs.get(key) ?? 0) + 1);
+        }
+        return [...pairs.entries()]
+          .filter(([, n]) => n >= 3)
+          .map(([key]) => {
+            const [x, y] = key.split("	");
+            return {
+              url: url(vsPath(x, y)),
+              lastModified: now,
+              changeFrequency: "monthly" as const,
+              priority: 0.5,
+            };
+          });
+      }),
+    )
+  ).flat();
+
   const schoolPages: MetadataRoute.Sitemap = schoolSlugs.map((slug) => ({
     url: url(`/schools/${slug}`),
     lastModified: now,
@@ -119,6 +183,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...rankingPages,
     ...prefecturePages,
     ...tournamentPages,
+    ...nationalPages,
+    ...versusPages,
     ...schoolPages,
     ...phenomenonPages,
     ...featurePages,

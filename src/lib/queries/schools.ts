@@ -1,4 +1,9 @@
+import { cache } from "react";
+
 import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { normalizeKoshienName, prefectureKey } from "@/lib/koshien-games";
+import { normalizeJinguName } from "@/lib/jingu-games";
+import { shortSchoolName } from "@/lib/school-name";
 import { escapeLikePattern, throwIfError, toImageRef, toPrefectureRef } from "@/lib/queries/shared";
 import { PREFECTURE_BY_SLUG } from "@/lib/constants";
 import type { Establishment, SchoolKind } from "@/lib/constants";
@@ -483,3 +488,129 @@ export async function getSchoolCountByPrefecture(): Promise<
   }
   return counts;
 }
+
+/**
+ * 校名 → 学校マスタの学校、の索引。**全国大会のページで使う。**
+ *
+ * ------------------------------------------------------------------
+ * ★★ なぜ要るか（2026-08-26）
+ *
+ *   甲子園・明治神宮の生成物は**校名の文字列しか持っていない**
+ *   （地方大会の生成物と違い、slug が入っていない）。
+ *   大会のページで「どれが公立か」を示すには、**校名から引き直す**しかない。
+ *
+ * ------------------------------------------------------------------
+ * ★★ 学校ページと同じ規則でしか結び付けない
+ *
+ *   照合は **`normalizeKoshienName` / `normalizeJinguName` による完全一致**で、
+ *   これは学校ページ（`koshienGamesOf` / `jinguGamesOf`）が使っているものと同じ。
+ *   ★**そろえてあるので、「学校ページには出るのに大会ページでは公立扱いされない」
+ *   という食い違いが起きない。**
+ *
+ *   ★★**同じ鍵に2校が当たったら、その鍵は捨てる。**
+ *   （県立と市立で同名の学校がある。**どちらか分からないものを当てない。**
+ *   地方大会の照合で「同じ地区で2件以上に当たったら結び付けない」と
+ *   しているのと同じ考え方）。
+ *
+ * ------------------------------------------------------------------
+ * ★ ビルド1回につき1度しか取りに行かない
+ *
+ *   `cache()` で包んであるので、190枚の大会ページを作るあいだ
+ *   **同じレンダリングの中では1回しか問い合わせない**（3,505校＝4リクエスト）。
+ */
+export type SchoolNameRef = { slug: string; name: string; pref: string };
+
+type SchoolNameRow = {
+  slug: string;
+  name: string;
+  official_name: string | null;
+  prefecture: { name: string } | { name: string }[] | null;
+};
+
+const fetchSchoolNameRows = cache(async (): Promise<SchoolNameRow[]> => {
+  const supabase = createSupabaseServerClient();
+  const rows: SchoolNameRow[] = [];
+
+  // ★**必ずページングする。** PostgREST は1回に1,000行しか返さない
+  for (let from = 0; ; from += SLUG_PAGE_SIZE) {
+    const { data, error } = await supabase
+      .from("schools")
+      // ★都道府県も取る（同名の別校に当てないため。2026-08-26）
+      .select("slug, name, official_name, prefecture:prefectures ( name )")
+      .order("slug", { ascending: true })
+      .range(from, from + SLUG_PAGE_SIZE - 1);
+
+    throwIfError(error, "校名索引の取得");
+
+    const page = (data ?? []) as SchoolNameRow[];
+    rows.push(...page);
+    if (page.length < SLUG_PAGE_SIZE) break;
+  }
+
+  return rows;
+});
+
+export type SchoolNameIndex = {
+  /**
+   * 校名から学校を引く。**県が分かるなら渡すこと。**
+   *
+   * ★★**同じ校名の学校が別の県にある**（福山市立福山＝広島／鹿児島県立福山）。
+   * 県を渡さないと「どちらか分からない」として**引けない** ——
+   * 2026年夏の広島代表「福山」がこれで、**公立が9校あるのに8校**と出ていた。
+   * ★**同じ県に同名が2校あるときだけ、本当に引けない**（当て推量をしない）。
+   */
+  find(display: string, pref?: string): SchoolNameRef | null;
+};
+
+export const getSchoolNameIndex = cache(
+  async (variant: "koshien" | "jingu"): Promise<SchoolNameIndex> => {
+    const normalize = variant === "koshien" ? normalizeKoshienName : normalizeJinguName;
+    const rows = await fetchSchoolNameRows();
+
+    /** 校名だけで一意に引けるもの。**2校に当たる鍵は null を入れて「引けない」印にする** */
+    const byName = new Map<string, SchoolNameRef | null>();
+    /** 校名＋県。**同じ県に同名が2校あるときだけ null** */
+    const byNameAndPref = new Map<string, SchoolNameRef | null>();
+
+    for (const row of rows) {
+      const prefName = Array.isArray(row.prefecture)
+        ? row.prefecture[0]?.name
+        : row.prefecture?.name;
+      const ref: SchoolNameRef = { slug: row.slug, name: row.name, pref: prefName ?? "" };
+      /*
+        ★**当てにいく表記は3つ**（学校ページと同じ）。
+        マスタの校名・正式名・一覧用の短い校名。
+        大会記事は略称なので、**どれかに完全一致したときだけ**結び付ける。
+      */
+      const keys = [row.name, row.official_name ?? "", shortSchoolName(row.name, row.slug)]
+        .map(normalize)
+        .filter(Boolean);
+
+      for (const key of new Set(keys)) {
+        const found = byName.get(key);
+        if (found === undefined) byName.set(key, ref);
+        else if (found && found.slug !== row.slug) byName.set(key, null);
+
+        if (!ref.pref) continue;
+        const withPref = `${key}	${prefectureKey(ref.pref)}`;
+        const inPref = byNameAndPref.get(withPref);
+        if (inPref === undefined) byNameAndPref.set(withPref, ref);
+        else if (inPref && inPref.slug !== row.slug) byNameAndPref.set(withPref, null);
+      }
+    }
+
+    return {
+      find(display: string, pref?: string) {
+        const key = normalize(display);
+        if (!key) return null;
+        if (pref) {
+          const hit = byNameAndPref.get(`${key}	${prefectureKey(pref)}`);
+          // ★県まで分かっているなら、その県での答えがすべて（無ければ結び付けない）
+          if (hit !== undefined) return hit;
+          return null;
+        }
+        return byName.get(key) ?? null;
+      },
+    };
+  },
+);

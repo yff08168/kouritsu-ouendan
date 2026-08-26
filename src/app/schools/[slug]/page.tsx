@@ -7,6 +7,7 @@ import {
   Flame,
   MapPin,
   MessageSquareHeart,
+  Swords,
   Newspaper,
   Trophy,
 } from "lucide-react";
@@ -17,11 +18,13 @@ import { Badge } from "@/components/common/Badge";
 import { Thumbnail } from "@/components/common/Thumbnail";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { SchoolRegionalRecord } from "@/components/schools/SchoolRegionalRecord";
+import { HeadToHeadList } from "@/components/schools/HeadToHeadList";
 import { SchoolKoshienRecord } from "@/components/schools/SchoolKoshienRecord";
 import { KOSHIEN_GAMES, koshienGamesOf } from "@/lib/koshien-games";
 import { JINGU_GAMES, jinguGamesOf } from "@/lib/jingu-games";
 import { shortSchoolName } from "@/lib/school-name";
 import { getRegionalDistrict } from "@/lib/regional-results";
+import { headToHead } from "@/lib/head-to-head";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { NewsCard } from "@/components/news/NewsCard";
 import { SchoolCard } from "@/components/schools/SchoolCard";
@@ -153,10 +156,24 @@ export default async function SchoolDetailPage({ params }: Props) {
     shortSchoolName(school.name, school.slug),
   ];
   const koshienRecord = [
-    ...koshienGamesOf(KOSHIEN_GAMES, nationalNames),
+    // ★県も渡す（同名の別校に当てないため。2026-08-26）
+    ...koshienGamesOf(KOSHIEN_GAMES, nationalNames, school.prefecture.name),
     // ★明治神宮大会も同じ枠に出す（どちらも全国大会。見出しのバッジで分ける）
-    ...jinguGamesOf(JINGU_GAMES, nationalNames),
+    ...jinguGamesOf(JINGU_GAMES, nationalNames, school.prefecture.name),
   ];
+
+  /*
+    ★**直接対決・通算成績**（2026-08-26）。
+    甲子園・明治神宮・その県の地方大会から、**同じ顔合わせを集める。**
+    ★**新しい出典は要らない**（持っている試合の見せ方の話）。
+    ★**相手が公立なら `/vs/…` の対戦ページへ繋ぐ。**
+  */
+  const rivals = headToHead({
+    names: nationalNames,
+    pref: school.prefecture.name,
+    slug: school.slug,
+    regional: regionalDistrict?.games ?? [],
+  });
 
   const koshienTotal = school.koshienSpringCount + school.koshienSummerCount;
   // 春・夏それぞれの最高成績。バッジに出す
@@ -427,6 +444,29 @@ export default async function SchoolDetailPage({ params }: Props) {
       </div>
 
       <AdSlot slot="school-detail-bottom" />
+
+      {/* ------- 直接対決・通算成績 ------- */}
+      {rivals.length > 0 && (
+        <section
+          aria-labelledby="school-rivals"
+          className="mt-4 rounded-xl border border-line bg-white p-5"
+        >
+          <SectionHeading
+            id="school-rivals"
+            title="直接対決・通算成績"
+            icon={<Swords size={18} />}
+            note="対戦の多い順"
+          />
+          <p className="mt-2 text-xs leading-relaxed text-ink-muted">
+            甲子園・明治神宮・地方大会で当たった相手を、対戦の多い順に並べています。
+            <strong className="font-medium text-accent-800">オレンジ</strong>
+            の校名は、その2校の全対戦を並べたページへ進めます。
+          </p>
+          <div className="mt-2">
+            <HeadToHeadList items={rivals} schoolSlug={school.slug} />
+          </div>
+        </section>
+      )}
 
       {/* ------- 関連する公立旋風 ------- */}
       {phenomena.length > 0 && (

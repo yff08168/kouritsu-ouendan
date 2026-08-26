@@ -259,24 +259,32 @@ export const LIVE_RESULTS: LiveResults = {
           "won": true
         }
       ]
+    },
+    {
+      "round": "2回戦",
+      "date": "8月14日",
+      "order": "2",
+      "startTime": "16:36",
+      "walkOff": false,
+      "teams": [
+        {
+          "display": "鳴門渦潮",
+          "name": "鳴門渦潮高校",
+          "slug": "narutozushio",
+          "prefecture": "徳島",
+          "score": 1,
+          "won": false
+        },
+        {
+          "display": "霞ケ浦",
+          "name": "霞ケ浦",
+          "slug": null,
+          "prefecture": null,
+          "score": 5,
+          "won": true
+        }
+      ]
     }
   ],
-  "alive": [
-    {
-      "slug": "narutozushio",
-      "display": "鳴門渦潮",
-      "name": "鳴門渦潮高校",
-      "prefecture": "徳島",
-      "wins": 1,
-      "next": {
-        "round": "2回戦",
-        "date": "8月14日",
-        "dayNo": 10,
-        "order": "2",
-        "startTime": null,
-        "opponent": "霞ケ浦",
-        "provisional": true
-      }
-    }
-  ]
+  "alive": []
 };

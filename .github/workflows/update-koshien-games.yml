@@ -1,0 +1,146 @@
+# 甲子園（春の選抜・夏の選手権）の**大会記録**を取り直す。
+#
+# ------------------------------------------------------------------
+# ★ 速報（update-results.yml）とは別物
+#
+#   あちらは**開催中の速報**で、出典は日本高野連、3時間おき。
+#   こちらは**大会の記録**（`/koshien/<年-季節>` の元データ）で、
+#   出典は ja.wikipedia の大会記事。**年に2回しか完成しない**ので月1回でよい。
+#
+# ------------------------------------------------------------------
+# ★★ なぜ要るか（2026-08-26）
+#
+#   大会記事は**開催中に取ると書きかけのまま**キャッシュに残る。
+#   実際に2026年の春夏がその状態で、**春は準決勝以降が、夏は大半の試合が
+#   欠けたまま**になっていた（大会が終わってから取り直して初めてそろった）。
+#   ★**取り直す仕組みが無いと、この欠けは誰も気づかないまま残る。**
+#
+#   毎月1日に**その年の2記事だけ**取り直す。春は4月1日の回で、
+#   夏は9月1日の回で完成する。**Wikipediaへは月2リクエストだけ。**
+#
+# ------------------------------------------------------------------
+# ★★ 安全装置（1つでも当たったら何もコミットしない）
+#
+#   1. 取り直した記事が**空**なら、キャッシュを元に戻して終わる
+#      （Wikipedia側が一時的に落ちていても、既にある大会を消さない）
+#   2. **収録できた大会の数が減っていたら**、生成物を元に戻して終わる
+#      （記事の作りが変わって読めなくなったときに、静かに欠けるのを防ぐ）
+#   3. 型検査（`tsc --noEmit`）が通らなければコミットしない
+#
+#   ★**別出典から補っているぶん（`koshien-supplements.json`）は触らない。**
+#   あれは自前で読めない大会だけの例外で、自動で取りに行かない。
+name: 甲子園の大会記録の更新
+
+on:
+  schedule:
+    # 毎月1日の朝5時（日本時間）。cronはUTC。
+    - cron: "0 20 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-koshien-games
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+          cache: npm
+
+      - run: npm ci
+
+      - name: 今年の記事のキャッシュを消す
+        # ★春は「年 − 1928」回、夏は「年 − 1918」回（AGENTS.md）。
+        #   消したぶんだけ取りに行くので、Wikipediaへのアクセスは2件で済む。
+        run: |
+          set -eu
+          YEAR=$(date -u +%Y)
+          SPRING=$(printf "%03d" $((YEAR - 1928)))
+          SUMMER=$(printf "%03d" $((YEAR - 1918)))
+          echo "今年 $YEAR ／ 春 第$((YEAR - 1928))回 ／ 夏 第$((YEAR - 1918))回"
+          rm -f "data/wikipedia-cache/spring-${SPRING}.json"
+          rm -f "data/wikipedia-cache/summer-${SUMMER}.json"
+
+      - name: 記事を取り直す
+        run: node scripts/fetch-koshien-wikipedia.mjs
+
+      - name: 取り直した記事が空なら元に戻して終わる
+        # ★Wikipedia側が一時的に応答しないときに、**既にある大会を消さない**ため。
+        run: |
+          set -eu
+          YEAR=$(date -u +%Y)
+          SPRING=$(printf "%03d" $((YEAR - 1928)))
+          SUMMER=$(printf "%03d" $((YEAR - 1918)))
+          for f in "data/wikipedia-cache/spring-${SPRING}.json" "data/wikipedia-cache/summer-${SUMMER}.json"; do
+            if ! node -e "const e=require('./$f');process.exit(e.wikitext&&e.wikitext.length>1000?0:1)"; then
+              echo "$f が空。キャッシュを元に戻して終わる。"
+              git checkout -- data/wikipedia-cache
+              echo "ABORT=1" >> "$GITHUB_ENV"
+              exit 0
+            fi
+          done
+
+      - name: 大会記録を作り直す
+        if: env.ABORT != '1'
+        run: |
+          set -eu
+          node -e "const g=require('./src/lib/data/koshien-games.json');const t=new Set(g.map(x=>x.year+'-'+x.season));require('fs').writeFileSync('/tmp/before.txt',String(t.size))"
+          node scripts/build-koshien-games.mjs
+
+      - name: 収録できた大会が減っていないか確かめる
+        # ★★**減っていたら何もコミットしない。** 記事の作りが変わって
+        #   読めなくなったときに、**静かに大会が消える**のを防ぐ。
+        if: env.ABORT != '1'
+        run: |
+          set -eu
+          BEFORE=$(cat /tmp/before.txt)
+          AFTER=$(node -e "const g=require('./src/lib/data/koshien-games.json');console.log(new Set(g.map(x=>x.year+'-'+x.season)).size)")
+          echo "大会数 $BEFORE → $AFTER"
+          if [ "$AFTER" -lt "$BEFORE" ]; then
+            echo "大会が減った。生成物とキャッシュを元に戻して終わる。"
+            git checkout -- src/lib/data/koshien-games.json data/wikipedia-cache
+            echo "ABORT=1" >> "$GITHUB_ENV"
+          fi
+
+      - name: 型が通るか確かめる
+        if: env.ABORT != '1'
+        run: npx tsc --noEmit
+
+      - name: 変化があればコミットする
+        if: env.ABORT != '1'
+        run: |
+          set -eu
+
+          TARGETS="src/lib/data/koshien-games.json data/wikipedia-cache"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- $TARGETS
+
+          if git diff --cached --quiet -- $TARGETS; then
+            echo "変化なし。コミットしない。"
+            exit 0
+          fi
+
+          git commit -m "甲子園の大会記録を更新（自動）"
+
+          # ★ほかの自動更新と同時に走ることがある。生成物どうしで中身は
+          #   衝突しないので、相手のコミットを取り込んでから積み直す。
+          for i in 1 2 3; do
+            if git pull --rebase origin "$GITHUB_REF_NAME" && git push; then
+              exit 0
+            fi
+            echo "push に失敗した（$i 回目）。少し待って試し直す。"
+            sleep 15
+          done
+          exit 1

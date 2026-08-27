@@ -6,6 +6,3162 @@
   "games": [
     {
       "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "草津",
+          "score": 6,
+          "won": true,
+          "name": "草津高校",
+          "slug": "kusatsu"
+        },
+        {
+          "display": "彦根工",
+          "score": 0,
+          "won": false,
+          "name": "彦根工業高校",
+          "slug": "hikonekogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "北大津",
+          "score": 6,
+          "won": true,
+          "name": "北大津高校",
+          "slug": "kitaotsu"
+        },
+        {
+          "display": "八幡工",
+          "score": 2,
+          "won": false,
+          "name": "八幡工業高校",
+          "slug": "hachimankogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "栗東",
+          "score": 1,
+          "won": false,
+          "name": "栗東高校",
+          "slug": "ritto"
+        },
+        {
+          "display": "水口東",
+          "score": 12,
+          "won": true,
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "八幡商",
+          "score": 7,
+          "won": true,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
+        },
+        {
+          "display": "東大津",
+          "score": 1,
+          "won": false,
+          "name": "東大津高校",
+          "slug": "higashiotsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "河瀬",
+          "score": 1,
+          "won": false,
+          "name": "河瀬高校",
+          "slug": "kawase"
+        },
+        {
+          "display": "草津東",
+          "score": 4,
+          "won": true,
+          "name": "草津東高校",
+          "slug": "kusatsuhigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "伊吹",
+          "score": 1,
+          "won": false,
+          "name": "伊吹高校",
+          "slug": "ibuki"
+        },
+        {
+          "display": "光泉カトリック",
+          "score": 5,
+          "won": true,
+          "name": "光泉カトリック",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "日野",
+          "score": 0,
+          "won": false,
+          "name": "日野高校",
+          "slug": "shiga-hino"
+        },
+        {
+          "display": "彦根総合",
+          "score": 10,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "大津商",
+          "score": 13,
+          "won": false,
+          "name": "大津商業高校",
+          "slug": "otsushogyo"
+        },
+        {
+          "display": "能登川",
+          "score": 16,
+          "won": true,
+          "name": "能登川高校",
+          "slug": "notogawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "石山",
+          "score": 2,
+          "won": false,
+          "name": "石山高校",
+          "slug": "ishiyama"
+        },
+        {
+          "display": "八日市南",
+          "score": 4,
+          "won": true,
+          "name": "八日市南高校",
+          "slug": "yokaichiminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "八日市",
+          "score": 4,
+          "won": true,
+          "name": "八日市高校",
+          "slug": "yokaichi"
+        },
+        {
+          "display": "高島",
+          "score": 0,
+          "won": false,
+          "name": "高島高校",
+          "slug": "shiga-takashima"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "国際情報",
+          "score": 1,
+          "won": false,
+          "name": "国際情報高校",
+          "slug": "shiga-kokusaijoho"
+        },
+        {
+          "display": "八幡",
+          "score": 5,
+          "won": true,
+          "name": "八幡高校",
+          "slug": "hachiman"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "米原",
+          "score": 11,
+          "won": true,
+          "name": "米原高校",
+          "slug": "maibara"
+        },
+        {
+          "display": "大津",
+          "score": 4,
+          "won": false,
+          "name": "大津高校",
+          "slug": "otsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "彦根翔西館",
+          "score": 13,
+          "won": true,
+          "name": "彦根翔西館高校",
+          "slug": "hikoneshosaikan"
+        },
+        {
+          "display": "守山北",
+          "score": 1,
+          "won": false,
+          "name": "守山北高校",
+          "slug": "moriyamakita"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "水口",
+          "score": 14,
+          "won": true,
+          "name": "水口高校",
+          "slug": "minakuchi"
+        },
+        {
+          "display": "安曇川・湖南農業・石部・信楽・守山・愛知・長浜農業",
+          "score": 2,
+          "won": false,
+          "name": "安曇川・湖南農業・石部・信楽・守山・愛知・長浜農業",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 12,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "玉川",
+          "score": 0,
+          "won": false,
+          "name": "玉川高校",
+          "slug": "tamagawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "草津",
+          "score": 3,
+          "won": true,
+          "name": "草津高校",
+          "slug": "kusatsu"
+        },
+        {
+          "display": "北大津",
+          "score": 2,
+          "won": false,
+          "name": "北大津高校",
+          "slug": "kitaotsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "水口東",
+          "score": 0,
+          "won": false,
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
+        },
+        {
+          "display": "八幡商",
+          "score": 2,
+          "won": true,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "虎姫",
+          "score": 6,
+          "won": true,
+          "name": "虎姫高校",
+          "slug": "torahime"
+        },
+        {
+          "display": "甲西",
+          "score": 4,
+          "won": false,
+          "name": "甲西高校",
+          "slug": "kosei"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "近江兄弟社",
+          "score": 5,
+          "won": true,
+          "name": "近江兄弟社",
+          "slug": null
+        },
+        {
+          "display": "瀬田工",
+          "score": 1,
+          "won": false,
+          "name": "瀬田工業高校",
+          "slug": "setakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "草津東",
+          "score": 1,
+          "won": false,
+          "name": "草津東高校",
+          "slug": "kusatsuhigashi"
+        },
+        {
+          "display": "光泉カトリック",
+          "score": 9,
+          "won": true,
+          "name": "光泉カトリック",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "彦根総合",
+          "score": 5,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        },
+        {
+          "display": "滋賀短大附",
+          "score": 2,
+          "won": false,
+          "name": "滋賀短大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "膳所",
+          "score": 9,
+          "won": true,
+          "name": "膳所高校",
+          "slug": "zeze"
+        },
+        {
+          "display": "長浜北",
+          "score": 2,
+          "won": false,
+          "name": "長浜北高校",
+          "slug": "nagahamakita"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "彦根東",
+          "score": 4,
+          "won": false,
+          "name": "彦根東高校",
+          "slug": "hikonehigashi"
+        },
+        {
+          "display": "綾羽",
+          "score": 5,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "能登川",
+          "score": 6,
+          "won": true,
+          "name": "能登川高校",
+          "slug": "notogawa"
+        },
+        {
+          "display": "八日市南",
+          "score": 1,
+          "won": false,
+          "name": "八日市南高校",
+          "slug": "yokaichiminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "八日市",
+          "score": 2,
+          "won": false,
+          "name": "八日市高校",
+          "slug": "yokaichi"
+        },
+        {
+          "display": "八幡",
+          "score": 6,
+          "won": true,
+          "name": "八幡高校",
+          "slug": "hachiman"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "立命館守山",
+          "score": 8,
+          "won": true,
+          "name": "立命館守山",
+          "slug": null
+        },
+        {
+          "display": "長浜北星",
+          "score": 1,
+          "won": false,
+          "name": "長浜北星高校",
+          "slug": "nagahamahokusei"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 5,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "伊香",
+          "score": 0,
+          "won": false,
+          "name": "伊香高校",
+          "slug": "ika"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "米原",
+          "score": 1,
+          "won": false,
+          "name": "米原高校",
+          "slug": "maibara"
+        },
+        {
+          "display": "彦根翔西館",
+          "score": 6,
+          "won": true,
+          "name": "彦根翔西館高校",
+          "slug": "hikoneshosaikan"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "水口",
+          "score": 9,
+          "won": true,
+          "name": "水口高校",
+          "slug": "minakuchi"
+        },
+        {
+          "display": "比叡山",
+          "score": 8,
+          "won": false,
+          "name": "比叡山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "野洲",
+          "score": 1,
+          "won": true,
+          "name": "野洲高校",
+          "slug": "yasu"
+        },
+        {
+          "display": "堅田",
+          "score": 0,
+          "won": false,
+          "name": "堅田高校",
+          "slug": "katata"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 5,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "草津",
+          "score": 3,
+          "won": false,
+          "name": "草津高校",
+          "slug": "kusatsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "八幡商",
+          "score": 4,
+          "won": true,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
+        },
+        {
+          "display": "虎姫",
+          "score": 0,
+          "won": false,
+          "name": "虎姫高校",
+          "slug": "torahime"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "近江兄弟社",
+          "score": 2,
+          "won": false,
+          "name": "近江兄弟社",
+          "slug": null
+        },
+        {
+          "display": "光泉カトリック",
+          "score": 5,
+          "won": true,
+          "name": "光泉カトリック",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "彦根総合",
+          "score": 7,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        },
+        {
+          "display": "膳所",
+          "score": 0,
+          "won": false,
+          "name": "膳所高校",
+          "slug": "zeze"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 2,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "能登川",
+          "score": 0,
+          "won": false,
+          "name": "能登川高校",
+          "slug": "notogawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "八幡",
+          "score": 0,
+          "won": false,
+          "name": "八幡高校",
+          "slug": "hachiman"
+        },
+        {
+          "display": "立命館守山",
+          "score": 7,
+          "won": true,
+          "name": "立命館守山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 10,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "彦根翔西館",
+          "score": 4,
+          "won": false,
+          "name": "彦根翔西館高校",
+          "slug": "hikoneshosaikan"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "水口",
+          "score": 8,
+          "won": true,
+          "name": "水口高校",
+          "slug": "minakuchi"
+        },
+        {
+          "display": "野洲",
+          "score": 0,
+          "won": false,
+          "name": "野洲高校",
+          "slug": "yasu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "準々決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 11,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "八幡商",
+          "score": 7,
+          "won": false,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "準々決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "光泉カトリック",
+          "score": 0,
+          "won": false,
+          "name": "光泉カトリック",
+          "slug": null
+        },
+        {
+          "display": "彦根総合",
+          "score": 3,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "準々決勝",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 2,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "立命館守山",
+          "score": 1,
+          "won": false,
+          "name": "立命館守山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "準々決勝",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 10,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "水口",
+          "score": 0,
+          "won": false,
+          "name": "水口高校",
+          "slug": "minakuchi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "準決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 0,
+          "won": false,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "彦根総合",
+          "score": 4,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "準決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 2,
+          "won": false,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "滋賀学園",
+          "score": 5,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "彦根総合",
+          "score": 1,
+          "won": false,
+          "name": "彦根総合",
+          "slug": null
+        },
+        {
+          "display": "滋賀学園",
+          "score": 3,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "近江兄弟社",
+          "score": 11,
+          "won": true,
+          "name": "近江兄弟社",
+          "slug": null
+        },
+        {
+          "display": "八幡",
+          "score": 4,
+          "won": false,
+          "name": "八幡高校",
+          "slug": "hachiman"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "長浜北星",
+          "score": 5,
+          "won": false,
+          "name": "長浜北星高校",
+          "slug": "nagahamahokusei"
+        },
+        {
+          "display": "大津",
+          "score": 7,
+          "won": true,
+          "name": "大津高校",
+          "slug": "otsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "国際情報",
+          "score": 0,
+          "won": false,
+          "name": "国際情報高校",
+          "slug": "shiga-kokusaijoho"
+        },
+        {
+          "display": "八幡工",
+          "score": 1,
+          "won": true,
+          "name": "八幡工業高校",
+          "slug": "hachimankogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "立命館守山",
+          "score": 12,
+          "won": false,
+          "name": "立命館守山",
+          "slug": null
+        },
+        {
+          "display": "水口",
+          "score": 13,
+          "won": true,
+          "name": "水口高校",
+          "slug": "minakuchi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "長浜北",
+          "score": 6,
+          "won": false,
+          "name": "長浜北高校",
+          "slug": "nagahamakita"
+        },
+        {
+          "display": "堅田",
+          "score": 13,
+          "won": true,
+          "name": "堅田高校",
+          "slug": "katata"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "瀬田工",
+          "score": 2,
+          "won": true,
+          "name": "瀬田工業高校",
+          "slug": "setakogyo"
+        },
+        {
+          "display": "八日市",
+          "score": 0,
+          "won": false,
+          "name": "八日市高校",
+          "slug": "yokaichi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "光泉カトリック",
+          "score": 8,
+          "won": true,
+          "name": "光泉カトリック",
+          "slug": null
+        },
+        {
+          "display": "栗東・石部・信楽",
+          "score": 0,
+          "won": false,
+          "name": "栗東・石部・信楽",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "守山北",
+          "score": 0,
+          "won": false,
+          "name": "守山北高校",
+          "slug": "moriyamakita"
+        },
+        {
+          "display": "石山",
+          "score": 4,
+          "won": true,
+          "name": "石山高校",
+          "slug": "ishiyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "能登川",
+          "score": 5,
+          "won": false,
+          "name": "能登川高校",
+          "slug": "notogawa"
+        },
+        {
+          "display": "甲西",
+          "score": 9,
+          "won": true,
+          "name": "甲西高校",
+          "slug": "kosei"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "彦根総合",
+          "score": 5,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        },
+        {
+          "display": "彦根工",
+          "score": 0,
+          "won": false,
+          "name": "彦根工業高校",
+          "slug": "hikonekogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "水口東",
+          "score": 10,
+          "won": true,
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
+        },
+        {
+          "display": "高島",
+          "score": 3,
+          "won": false,
+          "name": "高島高校",
+          "slug": "shiga-takashima"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "米原",
+          "score": 10,
+          "won": true,
+          "name": "米原高校",
+          "slug": "maibara"
+        },
+        {
+          "display": "野洲",
+          "score": 0,
+          "won": false,
+          "name": "野洲高校",
+          "slug": "yasu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "安曇川・湖南農業・守山・愛知",
+          "score": 9,
+          "won": true,
+          "name": "安曇川・湖南農業・守山・愛知",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "膳所",
+          "score": 5,
+          "won": false,
+          "name": "膳所高校",
+          "slug": "zeze"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "八日市南",
+          "score": 5,
+          "won": true,
+          "name": "八日市南高校",
+          "slug": "yokaichiminami"
+        },
+        {
+          "display": "草津",
+          "score": 1,
+          "won": false,
+          "name": "草津高校",
+          "slug": "kusatsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 7,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "彦根翔西館",
+          "score": 0,
+          "won": false,
+          "name": "彦根翔西館高校",
+          "slug": "hikoneshosaikan"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "近江兄弟社",
+          "score": 14,
+          "won": true,
+          "name": "近江兄弟社",
+          "slug": null
+        },
+        {
+          "display": "大津",
+          "score": 0,
+          "won": false,
+          "name": "大津高校",
+          "slug": "otsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "八幡工",
+          "score": 5,
+          "won": true,
+          "name": "八幡工業高校",
+          "slug": "hachimankogyo"
+        },
+        {
+          "display": "水口",
+          "score": 2,
+          "won": false,
+          "name": "水口高校",
+          "slug": "minakuchi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "伊香",
+          "score": 5,
+          "won": true,
+          "name": "伊香高校",
+          "slug": "ika"
+        },
+        {
+          "display": "比叡山",
+          "score": 1,
+          "won": false,
+          "name": "比叡山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 5,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "河瀬",
+          "score": 0,
+          "won": false,
+          "name": "河瀬高校",
+          "slug": "kawase"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "堅田",
+          "score": 1,
+          "won": false,
+          "name": "堅田高校",
+          "slug": "katata"
+        },
+        {
+          "display": "瀬田工",
+          "score": 6,
+          "won": true,
+          "name": "瀬田工業高校",
+          "slug": "setakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "光泉カトリック",
+          "score": 6,
+          "won": true,
+          "name": "光泉カトリック",
+          "slug": null
+        },
+        {
+          "display": "草津東",
+          "score": 0,
+          "won": false,
+          "name": "草津東高校",
+          "slug": "kusatsuhigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "伊吹",
+          "score": 4,
+          "won": true,
+          "name": "伊吹高校",
+          "slug": "ibuki"
+        },
+        {
+          "display": "彦根東",
+          "score": 2,
+          "won": false,
+          "name": "彦根東高校",
+          "slug": "hikonehigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀短大附",
+          "score": 8,
+          "won": true,
+          "name": "滋賀短大附",
+          "slug": null
+        },
+        {
+          "display": "虎姫",
+          "score": 2,
+          "won": false,
+          "name": "虎姫高校",
+          "slug": "torahime"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "石山",
+          "score": 10,
+          "won": true,
+          "name": "石山高校",
+          "slug": "ishiyama"
+        },
+        {
+          "display": "甲西",
+          "score": 5,
+          "won": false,
+          "name": "甲西高校",
+          "slug": "kosei"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "彦根総合",
+          "score": 13,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        },
+        {
+          "display": "水口東",
+          "score": 2,
+          "won": false,
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "東大津",
+          "score": 7,
+          "won": true,
+          "name": "東大津高校",
+          "slug": "higashiotsu"
+        },
+        {
+          "display": "大津商",
+          "score": 5,
+          "won": false,
+          "name": "大津商業高校",
+          "slug": "otsushogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 10,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "日野",
+          "score": 0,
+          "won": false,
+          "name": "日野高校",
+          "slug": "shiga-hino"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "米原",
+          "score": 11,
+          "won": true,
+          "name": "米原高校",
+          "slug": "maibara"
+        },
+        {
+          "display": "安曇川・湖南農業・守山・愛知",
+          "score": 4,
+          "won": false,
+          "name": "安曇川・湖南農業・守山・愛知",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "八日市南",
+          "score": 4,
+          "won": false,
+          "name": "八日市南高校",
+          "slug": "yokaichiminami"
+        },
+        {
+          "display": "玉川",
+          "score": 5,
+          "won": true,
+          "name": "玉川高校",
+          "slug": "tamagawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "北大津",
+          "score": 1,
+          "won": false,
+          "name": "北大津高校",
+          "slug": "kitaotsu"
+        },
+        {
+          "display": "八幡商",
+          "score": 8,
+          "won": true,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 1,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "近江兄弟社",
+          "score": 0,
+          "won": false,
+          "name": "近江兄弟社",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "八幡工",
+          "score": 7,
+          "won": true,
+          "name": "八幡工業高校",
+          "slug": "hachimankogyo"
+        },
+        {
+          "display": "伊香",
+          "score": 3,
+          "won": false,
+          "name": "伊香高校",
+          "slug": "ika"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 7,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "瀬田工",
+          "score": 0,
+          "won": false,
+          "name": "瀬田工業高校",
+          "slug": "setakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "光泉カトリック",
+          "score": 7,
+          "won": true,
+          "name": "光泉カトリック",
+          "slug": null
+        },
+        {
+          "display": "伊吹",
+          "score": 0,
+          "won": false,
+          "name": "伊吹高校",
+          "slug": "ibuki"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀短大附",
+          "score": 8,
+          "won": true,
+          "name": "滋賀短大附",
+          "slug": null
+        },
+        {
+          "display": "石山",
+          "score": 2,
+          "won": false,
+          "name": "石山高校",
+          "slug": "ishiyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "彦根総合",
+          "score": 6,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        },
+        {
+          "display": "東大津",
+          "score": 0,
+          "won": false,
+          "name": "東大津高校",
+          "slug": "higashiotsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 12,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "米原",
+          "score": 3,
+          "won": false,
+          "name": "米原高校",
+          "slug": "maibara"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "玉川",
+          "score": 1,
+          "won": false,
+          "name": "玉川高校",
+          "slug": "tamagawa"
+        },
+        {
+          "display": "八幡商",
+          "score": 11,
+          "won": true,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "準々決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 8,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "八幡工",
+          "score": 0,
+          "won": false,
+          "name": "八幡工業高校",
+          "slug": "hachimankogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "準々決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 7,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "光泉カトリック",
+          "score": 2,
+          "won": false,
+          "name": "光泉カトリック",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "準々決勝",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "滋賀短大附",
+          "score": 0,
+          "won": false,
+          "name": "滋賀短大附",
+          "slug": null
+        },
+        {
+          "display": "彦根総合",
+          "score": 5,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "準々決勝",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 5,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "八幡商",
+          "score": 3,
+          "won": false,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "準決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 4,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "綾羽",
+          "score": 1,
+          "won": false,
+          "name": "綾羽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "準決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "彦根総合",
+          "score": 2,
+          "won": false,
+          "name": "彦根総合",
+          "slug": null
+        },
+        {
+          "display": "近江",
+          "score": 4,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "令和7年度春季近畿地区高等学校野球滋賀県大会",
+      "round": "決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 8,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "近江",
+          "score": 0,
+          "won": false,
+          "name": "近江",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "彦根工",
+          "score": 0,
+          "won": false,
+          "name": "彦根工業高校",
+          "slug": "hikonekogyo"
+        },
+        {
+          "display": "立命館守山",
+          "score": 10,
+          "won": true,
+          "name": "立命館守山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "八幡工",
+          "score": 1,
+          "won": false,
+          "name": "八幡工業高校",
+          "slug": "hachimankogyo"
+        },
+        {
+          "display": "光泉カトリック",
+          "score": 6,
+          "won": true,
+          "name": "光泉カトリック",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "水口東",
+          "score": 2,
+          "won": false,
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
+        },
+        {
+          "display": "堅田",
+          "score": 5,
+          "won": true,
+          "name": "堅田高校",
+          "slug": "katata"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "彦根翔西館",
+          "score": 17,
+          "won": true,
+          "name": "彦根翔西館高校",
+          "slug": "hikoneshosaikan"
+        },
+        {
+          "display": "安曇川・湖南農業・信楽・甲南・愛知・長浜農業",
+          "score": 0,
+          "won": false,
+          "name": "安曇川・湖南農業・信楽・甲南・愛知・長浜農業",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "草津東",
+          "score": 0,
+          "won": false,
+          "name": "草津東高校",
+          "slug": "kusatsuhigashi"
+        },
+        {
+          "display": "八日市",
+          "score": 5,
+          "won": true,
+          "name": "八日市高校",
+          "slug": "yokaichi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "石山",
+          "score": 5,
+          "won": false,
+          "name": "石山高校",
+          "slug": "ishiyama"
+        },
+        {
+          "display": "虎姫",
+          "score": 9,
+          "won": true,
+          "name": "虎姫高校",
+          "slug": "torahime"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "東大津",
+          "score": 10,
+          "won": true,
+          "name": "東大津高校",
+          "slug": "higashiotsu"
+        },
+        {
+          "display": "高島",
+          "score": 3,
+          "won": false,
+          "name": "高島高校",
+          "slug": "shiga-takashima"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "草津",
+          "score": 6,
+          "won": true,
+          "name": "草津高校",
+          "slug": "kusatsu"
+        },
+        {
+          "display": "彦根総合",
+          "score": 3,
+          "won": false,
+          "name": "彦根総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "八日市南",
+          "score": 4,
+          "won": false,
+          "name": "八日市南高校",
+          "slug": "yokaichiminami"
+        },
+        {
+          "display": "日野",
+          "score": 5,
+          "won": true,
+          "name": "日野高校",
+          "slug": "shiga-hino"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "伊吹",
+          "score": 9,
+          "won": true,
+          "name": "伊吹高校",
+          "slug": "ibuki"
+        },
+        {
+          "display": "野洲",
+          "score": 0,
+          "won": false,
+          "name": "野洲高校",
+          "slug": "yasu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "膳所",
+          "score": 0,
+          "won": false,
+          "name": "膳所高校",
+          "slug": "zeze"
+        },
+        {
+          "display": "伊香",
+          "score": 11,
+          "won": true,
+          "name": "伊香高校",
+          "slug": "ika"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "滋賀短大附",
+          "score": 4,
+          "won": true,
+          "name": "滋賀短大附",
+          "slug": null
+        },
+        {
+          "display": "守山",
+          "score": 0,
+          "won": false,
+          "name": "守山高校",
+          "slug": "shiga-moriyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "近江兄弟社",
+          "score": 8,
+          "won": true,
+          "name": "近江兄弟社",
+          "slug": null
+        },
+        {
+          "display": "国際情報",
+          "score": 2,
+          "won": false,
+          "name": "国際情報高校",
+          "slug": "shiga-kokusaijoho"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "甲西",
+          "score": 0,
+          "won": false,
+          "name": "甲西高校",
+          "slug": "kosei"
+        },
+        {
+          "display": "綾羽",
+          "score": 8,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "栗東",
+          "score": 1,
+          "won": false,
+          "name": "栗東高校",
+          "slug": "ritto"
+        },
+        {
+          "display": "八幡",
+          "score": 7,
+          "won": true,
+          "name": "八幡高校",
+          "slug": "hachiman"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "長浜北",
+          "score": 3,
+          "won": true,
+          "name": "長浜北高校",
+          "slug": "nagahamakita"
+        },
+        {
+          "display": "北大津",
+          "score": 2,
+          "won": false,
+          "name": "北大津高校",
+          "slug": "kitaotsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 8,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "守山北",
+          "score": 1,
+          "won": false,
+          "name": "守山北高校",
+          "slug": "moriyamakita"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "立命館守山",
+          "score": 15,
+          "won": true,
+          "name": "立命館守山",
+          "slug": null
+        },
+        {
+          "display": "光泉カトリック",
+          "score": 1,
+          "won": false,
+          "name": "光泉カトリック",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "堅田",
+          "score": 7,
+          "won": false,
+          "name": "堅田高校",
+          "slug": "katata"
+        },
+        {
+          "display": "彦根翔西館",
+          "score": 9,
+          "won": true,
+          "name": "彦根翔西館高校",
+          "slug": "hikoneshosaikan"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "米原",
+          "score": 7,
+          "won": true,
+          "name": "米原高校",
+          "slug": "maibara"
+        },
+        {
+          "display": "水口",
+          "score": 0,
+          "won": false,
+          "name": "水口高校",
+          "slug": "minakuchi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "比叡山",
+          "score": 0,
+          "won": false,
+          "name": "比叡山",
+          "slug": null
+        },
+        {
+          "display": "大津",
+          "score": 2,
+          "won": true,
+          "name": "大津高校",
+          "slug": "otsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "八日市",
+          "score": 0,
+          "won": false,
+          "name": "八日市高校",
+          "slug": "yokaichi"
+        },
+        {
+          "display": "虎姫",
+          "score": 1,
+          "won": true,
+          "name": "虎姫高校",
+          "slug": "torahime"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "東大津",
+          "score": 1,
+          "won": false,
+          "name": "東大津高校",
+          "slug": "higashiotsu"
+        },
+        {
+          "display": "草津",
+          "score": 11,
+          "won": true,
+          "name": "草津高校",
+          "slug": "kusatsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "河瀬",
+          "score": 2,
+          "won": false,
+          "name": "河瀬高校",
+          "slug": "kawase"
+        },
+        {
+          "display": "能登川",
+          "score": 6,
+          "won": true,
+          "name": "能登川高校",
+          "slug": "notogawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 10,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "彦根東",
+          "score": 6,
+          "won": false,
+          "name": "彦根東高校",
+          "slug": "hikonehigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "日野",
+          "score": 1,
+          "won": false,
+          "name": "日野高校",
+          "slug": "shiga-hino"
+        },
+        {
+          "display": "伊吹",
+          "score": 5,
+          "won": true,
+          "name": "伊吹高校",
+          "slug": "ibuki"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "伊香",
+          "score": 2,
+          "won": true,
+          "name": "伊香高校",
+          "slug": "ika"
+        },
+        {
+          "display": "滋賀短大附",
+          "score": 0,
+          "won": false,
+          "name": "滋賀短大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "石部",
+          "score": 1,
+          "won": false,
+          "name": "石部高校",
+          "slug": "ishibe"
+        },
+        {
+          "display": "瀬田工",
+          "score": 8,
+          "won": true,
+          "name": "瀬田工業高校",
+          "slug": "setakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "八幡商",
+          "score": 10,
+          "won": true,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
+        },
+        {
+          "display": "長浜北星",
+          "score": 0,
+          "won": false,
+          "name": "長浜北星高校",
+          "slug": "nagahamahokusei"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "近江兄弟社",
+          "score": 2,
+          "won": false,
+          "name": "近江兄弟社",
+          "slug": null
+        },
+        {
+          "display": "綾羽",
+          "score": 11,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "八幡",
+          "score": 8,
+          "won": true,
+          "name": "八幡高校",
+          "slug": "hachiman"
+        },
+        {
+          "display": "長浜北",
+          "score": 7,
+          "won": false,
+          "name": "長浜北高校",
+          "slug": "nagahamakita"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "大津商",
+          "score": 4,
+          "won": false,
+          "name": "大津商業高校",
+          "slug": "otsushogyo"
+        },
+        {
+          "display": "玉川",
+          "score": 5,
+          "won": true,
+          "name": "玉川高校",
+          "slug": "tamagawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 7,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "立命館守山",
+          "score": 2,
+          "won": false,
+          "name": "立命館守山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "彦根翔西館",
+          "score": 2,
+          "won": false,
+          "name": "彦根翔西館高校",
+          "slug": "hikoneshosaikan"
+        },
+        {
+          "display": "米原",
+          "score": 5,
+          "won": true,
+          "name": "米原高校",
+          "slug": "maibara"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "大津",
+          "score": 0,
+          "won": false,
+          "name": "大津高校",
+          "slug": "otsu"
+        },
+        {
+          "display": "虎姫",
+          "score": 2,
+          "won": true,
+          "name": "虎姫高校",
+          "slug": "torahime"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "草津",
+          "score": 6,
+          "won": true,
+          "name": "草津高校",
+          "slug": "kusatsu"
+        },
+        {
+          "display": "能登川",
+          "score": 2,
+          "won": false,
+          "name": "能登川高校",
+          "slug": "notogawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 10,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "伊吹",
+          "score": 0,
+          "won": false,
+          "name": "伊吹高校",
+          "slug": "ibuki"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "伊香",
+          "score": 6,
+          "won": true,
+          "name": "伊香高校",
+          "slug": "ika"
+        },
+        {
+          "display": "瀬田工",
+          "score": 1,
+          "won": false,
+          "name": "瀬田工業高校",
+          "slug": "setakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "八幡商",
+          "score": 1,
+          "won": false,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
+        },
+        {
+          "display": "綾羽",
+          "score": 4,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "八幡",
+          "score": 5,
+          "won": true,
+          "name": "八幡高校",
+          "slug": "hachiman"
+        },
+        {
+          "display": "玉川",
+          "score": 2,
+          "won": false,
+          "name": "玉川高校",
+          "slug": "tamagawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "準々決勝",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 6,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "米原",
+          "score": 0,
+          "won": false,
+          "name": "米原高校",
+          "slug": "maibara"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "準々決勝",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "虎姫",
+          "score": 3,
+          "won": false,
+          "name": "虎姫高校",
+          "slug": "torahime"
+        },
+        {
+          "display": "草津",
+          "score": 4,
+          "won": true,
+          "name": "草津高校",
+          "slug": "kusatsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "準々決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 5,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "伊香",
+          "score": 4,
+          "won": false,
+          "name": "伊香高校",
+          "slug": "ika"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "準々決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 7,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "八幡",
+          "score": 0,
+          "won": false,
+          "name": "八幡高校",
+          "slug": "hachiman"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "準決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 9,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "草津",
+          "score": 2,
+          "won": false,
+          "name": "草津高校",
+          "slug": "kusatsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "準決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 2,
+          "won": false,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "綾羽",
+          "score": 9,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権滋賀大会",
+      "round": "決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 5,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "綾羽",
+          "score": 0,
+          "won": false,
+          "name": "綾羽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権滋賀大会",
       "round": "1回戦",
@@ -1065,44 +4221,183 @@
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
       "round": "1回戦",
-      "venue": "HPLベースボールパーク",
+      "venue": "マイネットスタジアム皇子山",
       "teams": [
         {
-          "display": "草津",
-          "score": 6,
-          "won": true,
-          "name": "草津高校",
-          "slug": "kusatsu"
-        },
-        {
-          "display": "彦根工",
+          "display": "長浜北",
           "score": 0,
           "won": false,
-          "name": "彦根工業高校",
-          "slug": "hikonekogyo"
+          "name": "長浜北高校",
+          "slug": "nagahamakita"
+        },
+        {
+          "display": "膳所",
+          "score": 7,
+          "won": true,
+          "name": "膳所高校",
+          "slug": "zeze"
         }
       ]
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
       "round": "1回戦",
-      "venue": "HPLベースボールパーク",
+      "venue": "マイネットスタジアム皇子山",
       "teams": [
         {
-          "display": "北大津",
-          "score": 6,
+          "display": "八日市南",
+          "score": 1,
+          "won": false,
+          "name": "八日市南高校",
+          "slug": "yokaichiminami"
+        },
+        {
+          "display": "日野",
+          "score": 3,
           "won": true,
-          "name": "北大津高校",
-          "slug": "kitaotsu"
+          "name": "日野高校",
+          "slug": "shiga-hino"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "近江兄弟社",
+          "score": 2,
+          "won": false,
+          "name": "近江兄弟社",
+          "slug": null
+        },
+        {
+          "display": "比叡山",
+          "score": 8,
+          "won": true,
+          "name": "比叡山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "能登川",
+          "score": 10,
+          "won": true,
+          "name": "能登川高校",
+          "slug": "notogawa"
+        },
+        {
+          "display": "彦根翔西館",
+          "score": 1,
+          "won": false,
+          "name": "彦根翔西館高校",
+          "slug": "hikoneshosaikan"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "彦根東",
+          "score": 8,
+          "won": true,
+          "name": "彦根東高校",
+          "slug": "hikonehigashi"
+        },
+        {
+          "display": "野洲",
+          "score": 6,
+          "won": false,
+          "name": "野洲高校",
+          "slug": "yasu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "八幡商",
+          "score": 14,
+          "won": true,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
+        },
+        {
+          "display": "石部・信楽",
+          "score": 0,
+          "won": false,
+          "name": "石部・信楽",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "守山北",
+          "score": 3,
+          "won": false,
+          "name": "守山北高校",
+          "slug": "moriyamakita"
+        },
+        {
+          "display": "八日市",
+          "score": 8,
+          "won": true,
+          "name": "八日市高校",
+          "slug": "yokaichi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "大津商",
+          "score": 7,
+          "won": true,
+          "name": "大津商業高校",
+          "slug": "otsushogyo"
         },
         {
           "display": "八幡工",
-          "score": 2,
+          "score": 6,
           "won": false,
           "name": "八幡工業高校",
           "slug": "hachimankogyo"
@@ -1111,91 +4406,137 @@
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
       "round": "1回戦",
       "venue": "HPLベースボールパーク",
       "teams": [
         {
-          "display": "栗東",
-          "score": 1,
+          "display": "伊吹",
+          "score": 0,
           "won": false,
-          "name": "栗東高校",
-          "slug": "ritto"
+          "name": "伊吹高校",
+          "slug": "ibuki"
         },
         {
-          "display": "水口東",
-          "score": 12,
+          "display": "河瀬",
+          "score": 2,
           "won": true,
-          "name": "水口東高校",
-          "slug": "minakuchihigashi"
+          "name": "河瀬高校",
+          "slug": "kawase"
         }
       ]
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
       "round": "1回戦",
-      "venue": "湖東スタジアム",
+      "venue": "HPLベースボールパーク",
       "teams": [
         {
-          "display": "八幡商",
+          "display": "水口東",
           "score": 7,
           "won": true,
-          "name": "八幡商業高校",
-          "slug": "hachimanshogyo"
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
         },
+        {
+          "display": "石山",
+          "score": 4,
+          "won": false,
+          "name": "石山高校",
+          "slug": "ishiyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "彦根工",
+          "score": 1,
+          "won": false,
+          "name": "彦根工業高校",
+          "slug": "hikonekogyo"
+        },
+        {
+          "display": "北大津",
+          "score": 5,
+          "won": true,
+          "name": "北大津高校",
+          "slug": "kitaotsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
         {
           "display": "東大津",
           "score": 1,
           "won": false,
           "name": "東大津高校",
           "slug": "higashiotsu"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "1回戦",
-      "venue": "湖東スタジアム",
-      "teams": [
-        {
-          "display": "河瀬",
-          "score": 1,
-          "won": false,
-          "name": "河瀬高校",
-          "slug": "kawase"
         },
         {
-          "display": "草津東",
-          "score": 4,
+          "display": "草津",
+          "score": 2,
           "won": true,
-          "name": "草津東高校",
-          "slug": "kusatsuhigashi"
+          "name": "草津高校",
+          "slug": "kusatsu"
         }
       ]
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
       "round": "1回戦",
-      "venue": "湖東スタジアム",
+      "venue": "HPLベースボールパーク",
       "teams": [
         {
-          "display": "伊吹",
-          "score": 1,
+          "display": "堅田",
+          "score": 4,
+          "won": true,
+          "name": "堅田高校",
+          "slug": "katata"
+        },
+        {
+          "display": "大津",
+          "score": 0,
           "won": false,
-          "name": "伊吹高校",
-          "slug": "ibuki"
+          "name": "大津高校",
+          "slug": "otsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "水口",
+          "score": 4,
+          "won": true,
+          "name": "水口高校",
+          "slug": "minakuchi"
         },
         {
           "display": "光泉カトリック",
-          "score": 5,
-          "won": true,
+          "score": 0,
+          "won": false,
           "name": "光泉カトリック",
           "slug": null
         }
@@ -1203,86 +4544,64 @@
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
       "round": "1回戦",
-      "venue": "今津スタジアム",
+      "venue": "HPLベースボールパーク",
       "teams": [
         {
-          "display": "日野",
-          "score": 0,
-          "won": false,
-          "name": "日野高校",
-          "slug": "shiga-hino"
+          "display": "玉川",
+          "score": 11,
+          "won": true,
+          "name": "玉川高校",
+          "slug": "tamagawa"
         },
         {
-          "display": "彦根総合",
-          "score": 10,
+          "display": "安曇川・湖南農業・愛知・長浜農業",
+          "score": 0,
+          "won": false,
+          "name": "安曇川・湖南農業・愛知・長浜農業",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "虎姫",
+          "score": 0,
+          "won": false,
+          "name": "虎姫高校",
+          "slug": "torahime"
+        },
+        {
+          "display": "滋賀短大附",
+          "score": 6,
           "won": true,
-          "name": "彦根総合",
+          "name": "滋賀短大附",
           "slug": null
         }
       ]
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "1回戦",
-      "venue": "今津スタジアム",
-      "teams": [
-        {
-          "display": "大津商",
-          "score": 13,
-          "won": false,
-          "name": "大津商業高校",
-          "slug": "otsushogyo"
-        },
-        {
-          "display": "能登川",
-          "score": 16,
-          "won": true,
-          "name": "能登川高校",
-          "slug": "notogawa"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "1回戦",
-      "venue": "今津スタジアム",
-      "teams": [
-        {
-          "display": "石山",
-          "score": 2,
-          "won": false,
-          "name": "石山高校",
-          "slug": "ishiyama"
-        },
-        {
-          "display": "八日市南",
-          "score": 4,
-          "won": true,
-          "name": "八日市南高校",
-          "slug": "yokaichiminami"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "1回戦",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
       "venue": "HPLベースボールパーク",
       "teams": [
         {
-          "display": "八日市",
-          "score": 4,
+          "display": "滋賀学園",
+          "score": 10,
           "won": true,
-          "name": "八日市高校",
-          "slug": "yokaichi"
+          "name": "滋賀学園",
+          "slug": null
         },
         {
           "display": "高島",
@@ -1295,21 +4614,67 @@
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "1回戦",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
       "venue": "HPLベースボールパーク",
       "teams": [
         {
-          "display": "国際情報",
+          "display": "膳所",
+          "score": 6,
+          "won": true,
+          "name": "膳所高校",
+          "slug": "zeze"
+        },
+        {
+          "display": "日野",
+          "score": 4,
+          "won": false,
+          "name": "日野高校",
+          "slug": "shiga-hino"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "比叡山",
+          "score": 6,
+          "won": true,
+          "name": "比叡山",
+          "slug": null
+        },
+        {
+          "display": "能登川",
           "score": 1,
           "won": false,
-          "name": "国際情報高校",
-          "slug": "shiga-kokusaijoho"
+          "name": "能登川高校",
+          "slug": "notogawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "栗東",
+          "score": 0,
+          "won": false,
+          "name": "栗東高校",
+          "slug": "ritto"
         },
         {
           "display": "八幡",
-          "score": 5,
+          "score": 2,
           "won": true,
           "name": "八幡高校",
           "slug": "hachiman"
@@ -1318,137 +4683,44 @@
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "1回戦",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
       "venue": "HPLベースボールパーク",
       "teams": [
         {
-          "display": "米原",
-          "score": 11,
+          "display": "彦根総合",
+          "score": 10,
           "won": true,
-          "name": "米原高校",
-          "slug": "maibara"
-        },
-        {
-          "display": "大津",
-          "score": 4,
-          "won": false,
-          "name": "大津高校",
-          "slug": "otsu"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "1回戦",
-      "venue": "湖東スタジアム",
-      "teams": [
-        {
-          "display": "彦根翔西館",
-          "score": 13,
-          "won": true,
-          "name": "彦根翔西館高校",
-          "slug": "hikoneshosaikan"
-        },
-        {
-          "display": "守山北",
-          "score": 1,
-          "won": false,
-          "name": "守山北高校",
-          "slug": "moriyamakita"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "1回戦",
-      "venue": "湖東スタジアム",
-      "teams": [
-        {
-          "display": "水口",
-          "score": 14,
-          "won": true,
-          "name": "水口高校",
-          "slug": "minakuchi"
-        },
-        {
-          "display": "安曇川・湖南農業・石部・信楽・守山・愛知・長浜農業",
-          "score": 2,
-          "won": false,
-          "name": "安曇川・湖南農業・石部・信楽・守山・愛知・長浜農業",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "2回戦",
-      "venue": "湖東スタジアム",
-      "teams": [
-        {
-          "display": "近江",
-          "score": 12,
-          "won": true,
-          "name": "近江",
+          "name": "彦根総合",
           "slug": null
         },
         {
-          "display": "玉川",
-          "score": 0,
+          "display": "米原",
+          "score": 1,
           "won": false,
-          "name": "玉川高校",
-          "slug": "tamagawa"
+          "name": "米原高校",
+          "slug": "maibara"
         }
       ]
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
       "round": "2回戦",
-      "venue": "マイネットスタジアム皇子山",
+      "venue": "HPLベースボールパーク",
       "teams": [
         {
-          "display": "草津",
-          "score": 3,
-          "won": true,
-          "name": "草津高校",
-          "slug": "kusatsu"
-        },
-        {
-          "display": "北大津",
-          "score": 2,
+          "display": "彦根東",
+          "score": 7,
           "won": false,
-          "name": "北大津高校",
-          "slug": "kitaotsu"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "2回戦",
-      "venue": "マイネットスタジアム皇子山",
-      "teams": [
-        {
-          "display": "水口東",
-          "score": 0,
-          "won": false,
-          "name": "水口東高校",
-          "slug": "minakuchihigashi"
+          "name": "彦根東高校",
+          "slug": "hikonehigashi"
         },
         {
           "display": "八幡商",
-          "score": 2,
+          "score": 8,
           "won": true,
           "name": "八幡商業高校",
           "slug": "hachimanshogyo"
@@ -1457,201 +4729,40 @@
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "2回戦",
-      "venue": "マイネットスタジアム皇子山",
-      "teams": [
-        {
-          "display": "虎姫",
-          "score": 6,
-          "won": true,
-          "name": "虎姫高校",
-          "slug": "torahime"
-        },
-        {
-          "display": "甲西",
-          "score": 4,
-          "won": false,
-          "name": "甲西高校",
-          "slug": "kosei"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
       "round": "2回戦",
       "venue": "HPLベースボールパーク",
       "teams": [
         {
-          "display": "近江兄弟社",
-          "score": 5,
+          "display": "八日市",
+          "score": 8,
           "won": true,
-          "name": "近江兄弟社",
-          "slug": null
+          "name": "八日市高校",
+          "slug": "yokaichi"
         },
         {
-          "display": "瀬田工",
+          "display": "大津商",
           "score": 1,
           "won": false,
-          "name": "瀬田工業高校",
-          "slug": "setakogyo"
+          "name": "大津商業高校",
+          "slug": "otsushogyo"
         }
       ]
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
       "round": "2回戦",
       "venue": "HPLベースボールパーク",
       "teams": [
         {
           "display": "草津東",
-          "score": 1,
-          "won": false,
+          "score": 14,
+          "won": true,
           "name": "草津東高校",
           "slug": "kusatsuhigashi"
-        },
-        {
-          "display": "光泉カトリック",
-          "score": 9,
-          "won": true,
-          "name": "光泉カトリック",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "2回戦",
-      "venue": "HPLベースボールパーク",
-      "teams": [
-        {
-          "display": "彦根総合",
-          "score": 5,
-          "won": true,
-          "name": "彦根総合",
-          "slug": null
-        },
-        {
-          "display": "滋賀短大附",
-          "score": 2,
-          "won": false,
-          "name": "滋賀短大附",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "2回戦",
-      "venue": "湖東スタジアム",
-      "teams": [
-        {
-          "display": "膳所",
-          "score": 9,
-          "won": true,
-          "name": "膳所高校",
-          "slug": "zeze"
-        },
-        {
-          "display": "長浜北",
-          "score": 2,
-          "won": false,
-          "name": "長浜北高校",
-          "slug": "nagahamakita"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "2回戦",
-      "venue": "湖東スタジアム",
-      "teams": [
-        {
-          "display": "彦根東",
-          "score": 4,
-          "won": false,
-          "name": "彦根東高校",
-          "slug": "hikonehigashi"
-        },
-        {
-          "display": "綾羽",
-          "score": 5,
-          "won": true,
-          "name": "綾羽",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "2回戦",
-      "venue": "湖東スタジアム",
-      "teams": [
-        {
-          "display": "能登川",
-          "score": 6,
-          "won": true,
-          "name": "能登川高校",
-          "slug": "notogawa"
-        },
-        {
-          "display": "八日市南",
-          "score": 1,
-          "won": false,
-          "name": "八日市南高校",
-          "slug": "yokaichiminami"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "2回戦",
-      "venue": "マイネットスタジアム皇子山",
-      "teams": [
-        {
-          "display": "八日市",
-          "score": 2,
-          "won": false,
-          "name": "八日市高校",
-          "slug": "yokaichi"
-        },
-        {
-          "display": "八幡",
-          "score": 6,
-          "won": true,
-          "name": "八幡高校",
-          "slug": "hachiman"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "2回戦",
-      "venue": "マイネットスタジアム皇子山",
-      "teams": [
-        {
-          "display": "立命館守山",
-          "score": 8,
-          "won": true,
-          "name": "立命館守山",
-          "slug": null
         },
         {
           "display": "長浜北星",
@@ -1664,14 +4775,866 @@
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
       "round": "2回戦",
       "venue": "マイネットスタジアム皇子山",
       "teams": [
         {
+          "display": "近江",
+          "score": 8,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "守山",
+          "score": 0,
+          "won": false,
+          "name": "守山高校",
+          "slug": "shiga-moriyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "河瀬",
+          "score": 6,
+          "won": false,
+          "name": "河瀬高校",
+          "slug": "kawase"
+        },
+        {
+          "display": "水口東",
+          "score": 9,
+          "won": true,
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "北大津",
+          "score": 7,
+          "won": true,
+          "name": "北大津高校",
+          "slug": "kitaotsu"
+        },
+        {
+          "display": "草津",
+          "score": 6,
+          "won": false,
+          "name": "草津高校",
+          "slug": "kusatsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "国際情報",
+          "score": 3,
+          "won": false,
+          "name": "国際情報高校",
+          "slug": "shiga-kokusaijoho"
+        },
+        {
+          "display": "立命館守山",
+          "score": 11,
+          "won": true,
+          "name": "立命館守山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 21,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "甲西",
+          "score": 3,
+          "won": false,
+          "name": "甲西高校",
+          "slug": "kosei"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "堅田",
+          "score": 1,
+          "won": false,
+          "name": "堅田高校",
+          "slug": "katata"
+        },
+        {
+          "display": "水口",
+          "score": 2,
+          "won": true,
+          "name": "水口高校",
+          "slug": "minakuchi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "玉川",
+          "score": 4,
+          "won": false,
+          "name": "玉川高校",
+          "slug": "tamagawa"
+        },
+        {
+          "display": "滋賀短大附",
+          "score": 11,
+          "won": true,
+          "name": "滋賀短大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "瀬田工",
+          "score": 1,
+          "won": false,
+          "name": "瀬田工業高校",
+          "slug": "setakogyo"
+        },
+        {
+          "display": "伊香",
+          "score": 2,
+          "won": true,
+          "name": "伊香高校",
+          "slug": "ika"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
           "display": "滋賀学園",
+          "score": 10,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "膳所",
+          "score": 0,
+          "won": false,
+          "name": "膳所高校",
+          "slug": "zeze"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "比叡山",
+          "score": 9,
+          "won": true,
+          "name": "比叡山",
+          "slug": null
+        },
+        {
+          "display": "八幡",
+          "score": 0,
+          "won": false,
+          "name": "八幡高校",
+          "slug": "hachiman"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "彦根総合",
+          "score": 2,
+          "won": false,
+          "name": "彦根総合",
+          "slug": null
+        },
+        {
+          "display": "八幡商",
+          "score": 9,
+          "won": true,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "八日市",
+          "score": 4,
+          "won": true,
+          "name": "八日市高校",
+          "slug": "yokaichi"
+        },
+        {
+          "display": "草津東",
+          "score": 0,
+          "won": false,
+          "name": "草津東高校",
+          "slug": "kusatsuhigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 13,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "水口東",
+          "score": 6,
+          "won": false,
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "北大津",
+          "score": 0,
+          "won": false,
+          "name": "北大津高校",
+          "slug": "kitaotsu"
+        },
+        {
+          "display": "立命館守山",
+          "score": 2,
+          "won": true,
+          "name": "立命館守山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 8,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "水口",
+          "score": 1,
+          "won": false,
+          "name": "水口高校",
+          "slug": "minakuchi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "滋賀短大附",
+          "score": 3,
+          "won": false,
+          "name": "滋賀短大附",
+          "slug": null
+        },
+        {
+          "display": "伊香",
+          "score": 4,
+          "won": true,
+          "name": "伊香高校",
+          "slug": "ika"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "準々決勝",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 7,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "比叡山",
+          "score": 3,
+          "won": false,
+          "name": "比叡山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "準々決勝",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "八幡商",
+          "score": 6,
+          "won": false,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
+        },
+        {
+          "display": "八日市",
+          "score": 9,
+          "won": true,
+          "name": "八日市高校",
+          "slug": "yokaichi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "準々決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 6,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "立命館守山",
+          "score": 3,
+          "won": false,
+          "name": "立命館守山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "準々決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 6,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "伊香",
+          "score": 3,
+          "won": false,
+          "name": "伊香高校",
+          "slug": "ika"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "準決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 3,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "八日市",
+          "score": 1,
+          "won": false,
+          "name": "八日市高校",
+          "slug": "yokaichi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "準決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 6,
+          "won": false,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "綾羽",
+          "score": 8,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権滋賀大会",
+      "round": "決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 3,
+          "won": false,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "綾羽",
+          "score": 6,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "玉川",
+          "score": 0,
+          "won": false,
+          "name": "玉川高校",
+          "slug": "tamagawa"
+        },
+        {
+          "display": "八幡商",
+          "score": 6,
+          "won": true,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "光泉カトリック",
+          "score": 10,
+          "won": true,
+          "name": "光泉カトリック",
+          "slug": null
+        },
+        {
+          "display": "守山北",
+          "score": 1,
+          "won": false,
+          "name": "守山北高校",
+          "slug": "moriyamakita"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "水口",
+          "score": 6,
+          "won": true,
+          "name": "水口高校",
+          "slug": "minakuchi"
+        },
+        {
+          "display": "八日市",
           "score": 5,
+          "won": false,
+          "name": "八日市高校",
+          "slug": "yokaichi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "安曇川・湖南農業・守山・愛知",
+          "score": 3,
+          "won": false,
+          "name": "安曇川・湖南農業・守山・愛知",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "米原",
+          "score": 10,
+          "won": true,
+          "name": "米原高校",
+          "slug": "maibara"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "近江兄弟社",
+          "score": 10,
+          "won": true,
+          "name": "近江兄弟社",
+          "slug": null
+        },
+        {
+          "display": "北大津",
+          "score": 3,
+          "won": false,
+          "name": "北大津高校",
+          "slug": "kitaotsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "彦根翔西館",
+          "score": 8,
+          "won": false,
+          "name": "彦根翔西館高校",
+          "slug": "hikoneshosaikan"
+        },
+        {
+          "display": "八日市南",
+          "score": 9,
+          "won": true,
+          "name": "八日市南高校",
+          "slug": "yokaichiminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "石山",
+          "score": 11,
+          "won": true,
+          "name": "石山高校",
+          "slug": "ishiyama"
+        },
+        {
+          "display": "日野",
+          "score": 1,
+          "won": false,
+          "name": "日野高校",
+          "slug": "shiga-hino"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "彦根東",
+          "score": 1,
+          "won": true,
+          "name": "彦根東高校",
+          "slug": "hikonehigashi"
+        },
+        {
+          "display": "瀬田工",
+          "score": 0,
+          "won": false,
+          "name": "瀬田工業高校",
+          "slug": "setakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "大津商",
+          "score": 2,
+          "won": false,
+          "name": "大津商業高校",
+          "slug": "otsushogyo"
+        },
+        {
+          "display": "八幡工",
+          "score": 9,
+          "won": true,
+          "name": "八幡工業高校",
+          "slug": "hachimankogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "甲西",
+          "score": 5,
+          "won": false,
+          "name": "甲西高校",
+          "slug": "kosei"
+        },
+        {
+          "display": "虎姫",
+          "score": 12,
+          "won": true,
+          "name": "虎姫高校",
+          "slug": "torahime"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "高島",
+          "score": 9,
+          "won": true,
+          "name": "高島高校",
+          "slug": "shiga-takashima"
+        },
+        {
+          "display": "大津",
+          "score": 2,
+          "won": false,
+          "name": "大津高校",
+          "slug": "otsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "八幡",
+          "score": 1,
+          "won": false,
+          "name": "八幡高校",
+          "slug": "hachiman"
+        },
+        {
+          "display": "彦根総合",
+          "score": 8,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "滋賀短大附",
+          "score": 8,
+          "won": true,
+          "name": "滋賀短大附",
+          "slug": null
+        },
+        {
+          "display": "河瀬",
+          "score": 1,
+          "won": false,
+          "name": "河瀬高校",
+          "slug": "kawase"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "長浜北星",
+          "score": 0,
+          "won": false,
+          "name": "長浜北星高校",
+          "slug": "nagahamahokusei"
+        },
+        {
+          "display": "国際情報",
+          "score": 10,
+          "won": true,
+          "name": "国際情報高校",
+          "slug": "shiga-kokusaijoho"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 10,
           "won": true,
           "name": "滋賀学園",
           "slug": null
@@ -1687,32 +5650,378 @@
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
       "round": "2回戦",
       "venue": "HPLベースボールパーク",
       "teams": [
         {
-          "display": "米原",
+          "display": "八幡商",
           "score": 1,
           "won": false,
-          "name": "米原高校",
-          "slug": "maibara"
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
         },
         {
-          "display": "彦根翔西館",
-          "score": 6,
+          "display": "光泉カトリック",
+          "score": 11,
           "won": true,
-          "name": "彦根翔西館高校",
-          "slug": "hikoneshosaikan"
+          "name": "光泉カトリック",
+          "slug": null
         }
       ]
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
       "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "水口",
+          "score": 11,
+          "won": true,
+          "name": "水口高校",
+          "slug": "minakuchi"
+        },
+        {
+          "display": "米原",
+          "score": 4,
+          "won": false,
+          "name": "米原高校",
+          "slug": "maibara"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "堅田",
+          "score": 0,
+          "won": false,
+          "name": "堅田高校",
+          "slug": "katata"
+        },
+        {
+          "display": "膳所",
+          "score": 11,
+          "won": true,
+          "name": "膳所高校",
+          "slug": "zeze"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 13,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "能登川",
+          "score": 1,
+          "won": false,
+          "name": "能登川高校",
+          "slug": "notogawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "近江兄弟社",
+          "score": 12,
+          "won": true,
+          "name": "近江兄弟社",
+          "slug": null
+        },
+        {
+          "display": "八日市南",
+          "score": 2,
+          "won": false,
+          "name": "八日市南高校",
+          "slug": "yokaichiminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "石山",
+          "score": 9,
+          "won": true,
+          "name": "石山高校",
+          "slug": "ishiyama"
+        },
+        {
+          "display": "彦根工",
+          "score": 0,
+          "won": false,
+          "name": "彦根工業高校",
+          "slug": "hikonekogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "草津東",
+          "score": 0,
+          "won": false,
+          "name": "草津東高校",
+          "slug": "kusatsuhigashi"
+        },
+        {
+          "display": "水口東",
+          "score": 3,
+          "won": true,
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 13,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "立命館守山",
+          "score": 9,
+          "won": false,
+          "name": "立命館守山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "彦根東",
+          "score": 3,
+          "won": true,
+          "name": "彦根東高校",
+          "slug": "hikonehigashi"
+        },
+        {
+          "display": "八幡工",
+          "score": 2,
+          "won": false,
+          "name": "八幡工業高校",
+          "slug": "hachimankogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "虎姫",
+          "score": 11,
+          "won": true,
+          "name": "虎姫高校",
+          "slug": "torahime"
+        },
+        {
+          "display": "高島",
+          "score": 1,
+          "won": false,
+          "name": "高島高校",
+          "slug": "shiga-takashima"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "比叡山",
+          "score": 10,
+          "won": true,
+          "name": "比叡山",
+          "slug": null
+        },
+        {
+          "display": "栗東・石部・信楽",
+          "score": 0,
+          "won": false,
+          "name": "栗東・石部・信楽",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "草津",
+          "score": 9,
+          "won": true,
+          "name": "草津高校",
+          "slug": "kusatsu"
+        },
+        {
+          "display": "伊吹",
+          "score": 2,
+          "won": false,
+          "name": "伊吹高校",
+          "slug": "ibuki"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "彦根総合",
+          "score": 2,
+          "won": false,
+          "name": "彦根総合",
+          "slug": null
+        },
+        {
+          "display": "滋賀短大附",
+          "score": 6,
+          "won": true,
+          "name": "滋賀短大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "国際情報",
+          "score": 2,
+          "won": false,
+          "name": "国際情報高校",
+          "slug": "shiga-kokusaijoho"
+        },
+        {
+          "display": "野洲",
+          "score": 4,
+          "won": true,
+          "name": "野洲高校",
+          "slug": "yasu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "東大津",
+          "score": 9,
+          "won": true,
+          "name": "東大津高校",
+          "slug": "higashiotsu"
+        },
+        {
+          "display": "長浜北",
+          "score": 2,
+          "won": false,
+          "name": "長浜北高校",
+          "slug": "nagahamakita"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 7,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "光泉カトリック",
+          "score": 2,
+          "won": false,
+          "name": "光泉カトリック",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
       "venue": "HPLベースボールパーク",
       "teams": [
         {
@@ -1723,8 +6032,215 @@
           "slug": "minakuchi"
         },
         {
+          "display": "膳所",
+          "score": 2,
+          "won": false,
+          "name": "膳所高校",
+          "slug": "zeze"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 7,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "近江兄弟社",
+          "score": 2,
+          "won": false,
+          "name": "近江兄弟社",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "石山",
+          "score": 0,
+          "won": false,
+          "name": "石山高校",
+          "slug": "ishiyama"
+        },
+        {
+          "display": "水口東",
+          "score": 4,
+          "won": true,
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 9,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "彦根東",
+          "score": 4,
+          "won": false,
+          "name": "彦根東高校",
+          "slug": "hikonehigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "虎姫",
+          "score": 3,
+          "won": false,
+          "name": "虎姫高校",
+          "slug": "torahime"
+        },
+        {
           "display": "比叡山",
           "score": 8,
+          "won": true,
+          "name": "比叡山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "草津",
+          "score": 3,
+          "won": false,
+          "name": "草津高校",
+          "slug": "kusatsu"
+        },
+        {
+          "display": "滋賀短大附",
+          "score": 8,
+          "won": true,
+          "name": "滋賀短大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "野洲",
+          "score": 4,
+          "won": false,
+          "name": "野洲高校",
+          "slug": "yasu"
+        },
+        {
+          "display": "東大津",
+          "score": 8,
+          "won": true,
+          "name": "東大津高校",
+          "slug": "higashiotsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "準々決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 6,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "水口",
+          "score": 4,
+          "won": false,
+          "name": "水口高校",
+          "slug": "minakuchi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "準々決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 8,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "水口東",
+          "score": 1,
+          "won": false,
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "準々決勝",
+      "venue": "HPLベースボールパーク",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 9,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "比叡山",
+          "score": 1,
           "won": false,
           "name": "比叡山",
           "slug": null
@@ -1733,22 +6249,667 @@
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "2回戦",
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "準々決勝",
       "venue": "HPLベースボールパーク",
       "teams": [
         {
+          "display": "滋賀短大附",
+          "score": 11,
+          "won": true,
+          "name": "滋賀短大附",
+          "slug": null
+        },
+        {
+          "display": "東大津",
+          "score": 0,
+          "won": false,
+          "name": "東大津高校",
+          "slug": "higashiotsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "準決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 14,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "近江",
+          "score": 2,
+          "won": false,
+          "name": "近江",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "準決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 2,
+          "won": false,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "滋賀短大附",
+          "score": 6,
+          "won": true,
+          "name": "滋賀短大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和6年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "決勝",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 8,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "滋賀短大附",
+          "score": 0,
+          "won": false,
+          "name": "滋賀短大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "安曇川・湖南農業・石部・信楽・守山・愛知・長浜農業",
+          "score": 0,
+          "won": false,
+          "name": "安曇川・湖南農業・石部・信楽・守山・愛知・長浜農業",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "近江兄弟社",
+          "score": 13,
+          "won": true,
+          "name": "近江兄弟社",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "高島",
+          "score": 6,
+          "won": true,
+          "name": "高島高校",
+          "slug": "shiga-takashima"
+        },
+        {
+          "display": "大津商",
+          "score": 5,
+          "won": false,
+          "name": "大津商業高校",
+          "slug": "otsushogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "甲西",
+          "score": 1,
+          "won": false,
+          "name": "甲西高校",
+          "slug": "kosei"
+        },
+        {
+          "display": "八幡商",
+          "score": 6,
+          "won": true,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "国際情報",
+          "score": 9,
+          "won": true,
+          "name": "国際情報高校",
+          "slug": "shiga-kokusaijoho"
+        },
+        {
+          "display": "東大津",
+          "score": 3,
+          "won": false,
+          "name": "東大津高校",
+          "slug": "higashiotsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "長浜北",
+          "score": 8,
+          "won": true,
+          "name": "長浜北高校",
+          "slug": "nagahamakita"
+        },
+        {
           "display": "野洲",
           "score": 1,
-          "won": true,
+          "won": false,
           "name": "野洲高校",
           "slug": "yasu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "栗東",
+          "score": 0,
+          "won": false,
+          "name": "栗東高校",
+          "slug": "ritto"
+        },
+        {
+          "display": "水口東",
+          "score": 17,
+          "won": true,
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "彦根東",
+          "score": 9,
+          "won": true,
+          "name": "彦根東高校",
+          "slug": "hikonehigashi"
+        },
+        {
+          "display": "北大津",
+          "score": 2,
+          "won": false,
+          "name": "北大津高校",
+          "slug": "kitaotsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "伊香",
+          "score": 0,
+          "won": false,
+          "name": "伊香高校",
+          "slug": "ika"
+        },
+        {
+          "display": "八日市南",
+          "score": 7,
+          "won": true,
+          "name": "八日市南高校",
+          "slug": "yokaichiminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀短大附",
+          "score": 4,
+          "won": true,
+          "name": "滋賀短大附",
+          "slug": null
+        },
+        {
+          "display": "虎姫",
+          "score": 3,
+          "won": false,
+          "name": "虎姫高校",
+          "slug": "torahime"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "八幡",
+          "score": 0,
+          "won": false,
+          "name": "八幡高校",
+          "slug": "hachiman"
+        },
+        {
+          "display": "日野",
+          "score": 5,
+          "won": true,
+          "name": "日野高校",
+          "slug": "shiga-hino"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "堅田",
+          "score": 13,
+          "won": true,
+          "name": "堅田高校",
+          "slug": "katata"
+        },
+        {
+          "display": "大津",
+          "score": 6,
+          "won": false,
+          "name": "大津高校",
+          "slug": "otsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "米原",
+          "score": 1,
+          "won": false,
+          "name": "米原高校",
+          "slug": "maibara"
+        },
+        {
+          "display": "膳所",
+          "score": 3,
+          "won": true,
+          "name": "膳所高校",
+          "slug": "zeze"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "石山",
+          "score": 5,
+          "won": false,
+          "name": "石山高校",
+          "slug": "ishiyama"
+        },
+        {
+          "display": "草津",
+          "score": 6,
+          "won": true,
+          "name": "草津高校",
+          "slug": "kusatsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "1回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "河瀬",
+          "score": 4,
+          "won": true,
+          "name": "河瀬高校",
+          "slug": "kawase"
+        },
+        {
+          "display": "八幡工",
+          "score": 3,
+          "won": false,
+          "name": "八幡工業高校",
+          "slug": "hachimankogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 10,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "草津東",
+          "score": 3,
+          "won": false,
+          "name": "草津東高校",
+          "slug": "kusatsuhigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "近江兄弟社",
+          "score": 4,
+          "won": true,
+          "name": "近江兄弟社",
+          "slug": null
+        },
+        {
+          "display": "高島",
+          "score": 2,
+          "won": false,
+          "name": "高島高校",
+          "slug": "shiga-takashima"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "八幡商",
+          "score": 7,
+          "won": true,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
+        },
+        {
+          "display": "国際情報",
+          "score": 0,
+          "won": false,
+          "name": "国際情報高校",
+          "slug": "shiga-kokusaijoho"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "立命館守山",
+          "score": 8,
+          "won": true,
+          "name": "立命館守山",
+          "slug": null
+        },
+        {
+          "display": "伊吹",
+          "score": 2,
+          "won": false,
+          "name": "伊吹高校",
+          "slug": "ibuki"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "八日市",
+          "score": 5,
+          "won": false,
+          "name": "八日市高校",
+          "slug": "yokaichi"
+        },
+        {
+          "display": "彦根翔西館",
+          "score": 8,
+          "won": true,
+          "name": "彦根翔西館高校",
+          "slug": "hikoneshosaikan"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "長浜北",
+          "score": 1,
+          "won": false,
+          "name": "長浜北高校",
+          "slug": "nagahamakita"
+        },
+        {
+          "display": "水口東",
+          "score": 8,
+          "won": true,
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "彦根東",
+          "score": 14,
+          "won": true,
+          "name": "彦根東高校",
+          "slug": "hikonehigashi"
+        },
+        {
+          "display": "守山北",
+          "score": 1,
+          "won": false,
+          "name": "守山北高校",
+          "slug": "moriyamakita"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "比叡山",
+          "score": 1,
+          "won": false,
+          "name": "比叡山",
+          "slug": null
+        },
+        {
+          "display": "光泉カトリック",
+          "score": 4,
+          "won": true,
+          "name": "光泉カトリック",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 5,
+          "won": true,
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "水口",
+          "score": 1,
+          "won": false,
+          "name": "水口高校",
+          "slug": "minakuchi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "八日市南",
+          "score": 0,
+          "won": false,
+          "name": "八日市南高校",
+          "slug": "yokaichiminami"
+        },
+        {
+          "display": "滋賀短大附",
+          "score": 2,
+          "won": true,
+          "name": "滋賀短大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "日野",
+          "score": 0,
+          "won": false,
+          "name": "日野高校",
+          "slug": "shiga-hino"
         },
         {
           "display": "堅田",
-          "score": 0,
-          "won": false,
+          "score": 3,
+          "won": true,
           "name": "堅田高校",
           "slug": "katata"
         }
@@ -1756,21 +6917,67 @@
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "3回戦",
-      "venue": "マイネットスタジアム皇子山",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "瀬田工",
+          "score": 10,
+          "won": true,
+          "name": "瀬田工業高校",
+          "slug": "setakogyo"
+        },
+        {
+          "display": "長浜北星",
+          "score": 1,
+          "won": false,
+          "name": "長浜北星高校",
+          "slug": "nagahamahokusei"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "湖東スタジアム",
       "teams": [
         {
           "display": "近江",
-          "score": 5,
+          "score": 4,
           "won": true,
           "name": "近江",
           "slug": null
         },
         {
+          "display": "彦根総合",
+          "score": 0,
+          "won": false,
+          "name": "彦根総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "膳所",
+          "score": 11,
+          "won": true,
+          "name": "膳所高校",
+          "slug": "zeze"
+        },
+        {
           "display": "草津",
-          "score": 3,
+          "score": 1,
           "won": false,
           "name": "草津高校",
           "slug": "kusatsu"
@@ -1779,8 +6986,77 @@
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "河瀬",
+          "score": 7,
+          "won": true,
+          "name": "河瀬高校",
+          "slug": "kawase"
+        },
+        {
+          "display": "玉川",
+          "score": 2,
+          "won": false,
+          "name": "玉川高校",
+          "slug": "tamagawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "能登川",
+          "score": 11,
+          "won": true,
+          "name": "能登川高校",
+          "slug": "notogawa"
+        },
+        {
+          "display": "彦根工",
+          "score": 1,
+          "won": false,
+          "name": "彦根工業高校",
+          "slug": "hikonekogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 2,
+          "won": false,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "近江兄弟社",
+          "score": 3,
+          "won": true,
+          "name": "近江兄弟社",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
       "round": "3回戦",
       "venue": "マイネットスタジアム皇子山",
       "teams": [
@@ -1792,32 +7068,55 @@
           "slug": "hachimanshogyo"
         },
         {
-          "display": "虎姫",
-          "score": 0,
+          "display": "立命館守山",
+          "score": 3,
           "won": false,
-          "name": "虎姫高校",
-          "slug": "torahime"
+          "name": "立命館守山",
+          "slug": null
         }
       ]
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
       "round": "3回戦",
       "venue": "マイネットスタジアム皇子山",
       "teams": [
         {
-          "display": "近江兄弟社",
-          "score": 2,
+          "display": "彦根翔西館",
+          "score": 1,
           "won": false,
-          "name": "近江兄弟社",
-          "slug": null
+          "name": "彦根翔西館高校",
+          "slug": "hikoneshosaikan"
+        },
+        {
+          "display": "水口東",
+          "score": 3,
+          "won": true,
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "彦根東",
+          "score": 3,
+          "won": true,
+          "name": "彦根東高校",
+          "slug": "hikonehigashi"
         },
         {
           "display": "光泉カトリック",
-          "score": 5,
-          "won": true,
+          "score": 2,
+          "won": false,
           "name": "光泉カトリック",
           "slug": null
         }
@@ -1825,16 +7124,62 @@
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
       "round": "3回戦",
-      "venue": "HPLベースボールパーク",
+      "venue": "湖東スタジアム",
       "teams": [
         {
-          "display": "彦根総合",
-          "score": 7,
+          "display": "滋賀学園",
+          "score": 1,
           "won": true,
-          "name": "彦根総合",
+          "name": "滋賀学園",
+          "slug": null
+        },
+        {
+          "display": "滋賀短大附",
+          "score": 0,
+          "won": false,
+          "name": "滋賀短大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "堅田",
+          "score": 4,
+          "won": false,
+          "name": "堅田高校",
+          "slug": "katata"
+        },
+        {
+          "display": "瀬田工",
+          "score": 10,
+          "won": true,
+          "name": "瀬田工業高校",
+          "slug": "setakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "3回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 10,
+          "won": true,
+          "name": "近江",
           "slug": null
         },
         {
@@ -1848,22 +7193,22 @@
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
       "round": "3回戦",
-      "venue": "HPLベースボールパーク",
+      "venue": "今津スタジアム",
       "teams": [
         {
-          "display": "綾羽",
-          "score": 2,
-          "won": true,
-          "name": "綾羽",
-          "slug": null
+          "display": "河瀬",
+          "score": 1,
+          "won": false,
+          "name": "河瀬高校",
+          "slug": "kawase"
         },
         {
           "display": "能登川",
-          "score": 0,
-          "won": false,
+          "score": 5,
+          "won": true,
           "name": "能登川高校",
           "slug": "notogawa"
         }
@@ -1871,79 +7216,79 @@
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "3回戦",
-      "venue": "HPLベースボールパーク",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "準々決勝",
+      "venue": "湖東スタジアム",
       "teams": [
         {
-          "display": "八幡",
-          "score": 0,
-          "won": false,
-          "name": "八幡高校",
-          "slug": "hachiman"
+          "display": "近江兄弟社",
+          "score": 6,
+          "won": true,
+          "name": "近江兄弟社",
+          "slug": null
         },
         {
-          "display": "立命館守山",
-          "score": 7,
-          "won": true,
-          "name": "立命館守山",
-          "slug": null
+          "display": "八幡商",
+          "score": 4,
+          "won": false,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
         }
       ]
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "3回戦",
-      "venue": "マイネットスタジアム皇子山",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "準々決勝",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "水口東",
+          "score": 4,
+          "won": false,
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
+        },
+        {
+          "display": "彦根東",
+          "score": 5,
+          "won": true,
+          "name": "彦根東高校",
+          "slug": "hikonehigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "準々決勝",
+      "venue": "湖東スタジアム",
       "teams": [
         {
           "display": "滋賀学園",
-          "score": 10,
+          "score": 8,
           "won": true,
           "name": "滋賀学園",
           "slug": null
         },
         {
-          "display": "彦根翔西館",
-          "score": 4,
+          "display": "瀬田工",
+          "score": 1,
           "won": false,
-          "name": "彦根翔西館高校",
-          "slug": "hikoneshosaikan"
+          "name": "瀬田工業高校",
+          "slug": "setakogyo"
         }
       ]
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "3回戦",
-      "venue": "マイネットスタジアム皇子山",
-      "teams": [
-        {
-          "display": "水口",
-          "score": 8,
-          "won": true,
-          "name": "水口高校",
-          "slug": "minakuchi"
-        },
-        {
-          "display": "野洲",
-          "score": 0,
-          "won": false,
-          "name": "野洲高校",
-          "slug": "yasu"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
       "round": "準々決勝",
-      "venue": "マイネットスタジアム皇子山",
+      "venue": "湖東スタジアム",
       "teams": [
         {
           "display": "近江",
@@ -1953,148 +7298,79 @@
           "slug": null
         },
         {
-          "display": "八幡商",
-          "score": 7,
+          "display": "能登川",
+          "score": 9,
           "won": false,
-          "name": "八幡商業高校",
-          "slug": "hachimanshogyo"
+          "name": "能登川高校",
+          "slug": "notogawa"
         }
       ]
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "準々決勝",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
+      "round": "準決勝",
       "venue": "マイネットスタジアム皇子山",
       "teams": [
         {
-          "display": "光泉カトリック",
-          "score": 0,
+          "display": "近江兄弟社",
+          "score": 2,
           "won": false,
-          "name": "光泉カトリック",
+          "name": "近江兄弟社",
           "slug": null
         },
         {
-          "display": "彦根総合",
+          "display": "彦根東",
           "score": 3,
           "won": true,
-          "name": "彦根総合",
-          "slug": null
+          "name": "彦根東高校",
+          "slug": "hikonehigashi"
         }
       ]
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "準々決勝",
-      "venue": "HPLベースボールパーク",
-      "teams": [
-        {
-          "display": "綾羽",
-          "score": 2,
-          "won": true,
-          "name": "綾羽",
-          "slug": null
-        },
-        {
-          "display": "立命館守山",
-          "score": 1,
-          "won": false,
-          "name": "立命館守山",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "準々決勝",
-      "venue": "HPLベースボールパーク",
-      "teams": [
-        {
-          "display": "滋賀学園",
-          "score": 10,
-          "won": true,
-          "name": "滋賀学園",
-          "slug": null
-        },
-        {
-          "display": "水口",
-          "score": 0,
-          "won": false,
-          "name": "水口高校",
-          "slug": "minakuchi"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
       "round": "準決勝",
       "venue": "マイネットスタジアム皇子山",
       "teams": [
+        {
+          "display": "滋賀学園",
+          "score": 6,
+          "won": false,
+          "name": "滋賀学園",
+          "slug": null
+        },
         {
           "display": "近江",
-          "score": 0,
-          "won": false,
+          "score": 8,
+          "won": true,
           "name": "近江",
           "slug": null
-        },
-        {
-          "display": "彦根総合",
-          "score": 4,
-          "won": true,
-          "name": "彦根総合",
-          "slug": null
         }
       ]
     },
     {
       "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
-      "round": "準決勝",
-      "venue": "マイネットスタジアム皇子山",
-      "teams": [
-        {
-          "display": "綾羽",
-          "score": 2,
-          "won": false,
-          "name": "綾羽",
-          "slug": null
-        },
-        {
-          "display": "滋賀学園",
-          "score": 5,
-          "won": true,
-          "name": "滋賀学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "令和8年度春季近畿地区高等学校野球滋賀県大会",
+      "season": "autumn",
+      "tournament": "令和7年度秋季近畿地区高等学校野球滋賀県大会",
       "round": "決勝",
       "venue": "マイネットスタジアム皇子山",
       "teams": [
         {
-          "display": "彦根総合",
-          "score": 1,
+          "display": "彦根東",
+          "score": 4,
           "won": false,
-          "name": "彦根総合",
-          "slug": null
+          "name": "彦根東高校",
+          "slug": "hikonehigashi"
         },
         {
-          "display": "滋賀学園",
-          "score": 3,
+          "display": "近江",
+          "score": 14,
           "won": true,
-          "name": "滋賀学園",
+          "name": "近江",
           "slug": null
         }
       ]

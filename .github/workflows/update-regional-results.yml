@@ -72,7 +72,8 @@ jobs:
         run: |
           set -eu
 
-          TARGETS="src/lib/data/regional src/lib/data/regional-pickup.ts"
+          # ★収録状況.md も生成物（`build-regional-results.mjs` が書き直す）。入れ忘れると一覧だけ古くなる
+          TARGETS="src/lib/data/regional src/lib/data/regional-pickup.ts 収録状況.md"
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

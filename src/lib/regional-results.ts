@@ -414,8 +414,39 @@ export function latestSeasonGames(
     この分岐に入らず**夏のまま**（2026-08-21 に全県で確認した）。
   */
   const undatedSeasons = seasons.filter((s) => !dated.some((g) => g.season === s));
+  /*
+    ★★**日付を1つも持たない県が、複数の年ぶん持つようになった**（2026-08-27）。
+
+    ~~日付が無ければ季節の順（春→夏→秋）で決める~~ は**1年ぶんしか無いときの決め方**で、
+    **年をまたぐと古い大会が県のページに出る** ——
+    宮崎は 2025年の春夏秋 と 2026年の春夏 を持っているのに、
+    **季節の順だけで決めると「2025年の秋」**が出ていた（群馬・滋賀も同じ）。
+
+    ★**大会名から年を出して、いちばん新しい大会の季節を採る**（`yearOfTournament`。
+    **同じ年なら今までどおり季節の順**）。★**年が1つも出せなければ今までどおり。**
+    ★**日付のある県は1件も変わらない**（この分岐に入らない）。
+  */
+  const newestSeasonByYear = (() => {
+    const byTournamentName = new Map<string, RegionalGame[]>();
+    for (const g of publicGames) {
+      const k = `${g.season}\t${g.tournament ?? ""}`;
+      const list = byTournamentName.get(k);
+      if (list) list.push(g);
+      else byTournamentName.set(k, [g]);
+    }
+    let best: { year: number; season: RegionalSeason } | null = null;
+    for (const [k, list] of byTournamentName) {
+      const year = yearOfTournament(k.split("\t")[1] || null, list);
+      if (year === null) continue;
+      const season = list[0].season;
+      if (!best || year > best.year || (year === best.year && SEASON_ORDER[season] > SEASON_ORDER[best.season])) {
+        best = { year, season };
+      }
+    }
+    return best?.season ?? null;
+  })();
   const newestSeason = (() => {
-    if (!dated.length) return byOrder;
+    if (!dated.length) return newestSeasonByYear ?? byOrder;
     const byDate = [...dated].sort((a, b) => a.date!.localeCompare(b.date!)).at(-1)!.season;
     const ambiguous = undatedSeasons.some((s) => SEASON_ORDER[s] > SEASON_ORDER[byDate]);
     return ambiguous ? byOrder : byDate;

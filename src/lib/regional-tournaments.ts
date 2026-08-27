@@ -68,10 +68,24 @@ export function yearOfTournament(
   */
   const seireki = t.match(/[(（](\d{4})[)）]/);
   if (seireki) return Number(seireki[1]);
+  /*
+    ★★**西暦がそのまま頭に付く形もある**（2026-08-27。宮崎の春季・秋季）。
+    `2026年 第158回九州地区高等学校野球大会宮崎県予選`。
+    ★**回数は九州地区大会の通し番号**で年とは関係が無く、**日付も1つも無い**ので、
+    ここを見ないと**年の分からない大会**になる（同じ季節の2年ぶんが並ぶと見分けが付かない）。
+    ★**括弧つきより後に見る**（`令和5(2023)年度` は括弧の中が正しい）。
+  */
+  const bare = t.match(/(?:^|[^\d])(\d{4})年/);
+  if (bare) return Number(bare[1]);
   const senshuken = t.match(/第(\d+)回.*選手権/);
   if (senshuken) return Number(senshuken[1]) + 1918;
-  const reiwa = t.match(/令和(\d+)年/);
-  if (reiwa) return 2018 + Number(reiwa[1]);
+  /*
+    ★**元号は「令和」だけではない**（2026-08-26。群馬は平成18年まで遡れる）。
+    ★**「令和元年度」は `令和(\d+)年` に当たらない**ので `元` も受ける。
+    ★**規則は `scripts/build-regional-results.mjs` にも同じものがある。両方直すこと。**
+  */
+  const gengo = t.match(/(令和|平成)(元|\d+)年/);
+  if (gengo) return (gengo[1] === "令和" ? 2018 : 1988) + (gengo[2] === "元" ? 1 : Number(gengo[2]));
   return null;
 }
 

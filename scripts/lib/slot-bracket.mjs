@@ -67,6 +67,34 @@
 const BAND = 1.0;
 
 /**
+ * ★★**スコアの断片の中で「数字そのものがどこにあるか」を返す**（2026-08-27。鹿児島）。
+ *
+ * コールドの回数が丸数字で添えられる紙では、**同じ回戦のスコアなのに断片の左端が
+ * 9〜11 ポイントずれる**（`10⑩`(x=500.9) と `7`(x=509.9)、`⑦ 8`(x=410.8) と `1`(x=419.9)）。
+ * ★**丸数字が前に付く紙と後ろに付く紙があり、左端でも右端でも中心でも揃わない。**
+ * **数字の部分だけの位置**を出せば、どちらの紙でも 5 ポイント以内に収まる。
+ *
+ * @returns 断片の左端からの距離。**スコアの断片でなければ null**（呼ぶ側は動かさない）
+ */
+function digitOffset(text, width) {
+  if (!(width > 0) || !text.length) return null;
+  let first = -1;
+  let last = -1;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (/[0-9０-９]/.test(c)) {
+      if (first < 0) first = i;
+      last = i;
+    } else if (!/[①-⑳\s]/.test(c)) {
+      return null; // 数字・丸数字・空白以外が混ざる断片は触らない
+    }
+  }
+  // 数字は1〜2桁。それ以外（日付・時刻・スロット番号の並び）は動かさない
+  if (first < 0 || last - first >= 2) return null;
+  return (width * (first + last + 1)) / (2 * text.length);
+}
+
+/**
  * ★**「N回」（コールド・延長の回数）を落とす。**
  *
  * これを残すとスコアと見分けが付かない。広島の実例:
@@ -333,6 +361,60 @@ export function explodeNumberRuns(page) {
 }
 
 /**
+ * ★★**得点に括弧書きの注記が付いている紙がある**（2026-08-26。群馬）。
+ *
+ *   `8(7ｺ)`（7回コールドで8点）／`(5ｺ)14`／`(延10)9`／`6(延10)`
+ *
+ * `stripInningMarks()` は「数字＋`回`」という**別々の断片**を相手にしているので、
+ * これは1つも落とせない。落とさないと `numbersOf` の `/^\d{1,2}$/` に当たらず、
+ * **その試合のスコアが丸ごと読めない**（その回戦の数字が試合数の2倍にならず組めない）。
+ *
+ * ★★**注記は得点の左にも右にも付くので、**「括弧を消して残った数字」の
+ * **断片の中での位置**を測り直すこと。左端のままにすると、
+ * **群馬は注記のぶん（最大4文字）だけ別の回戦の帯に落ちる**
+ * （右半分の回戦の間隔は26ポイント、4文字ぶんは約14ポイント）。
+ *
+ * ★★**括弧が断片をまたいで割れていることがある**（群馬の実データ）。
+ *
+ *   `(7`(x=410.9) ／ `ｺ`(x=420.1) ／ `)9`(x=424.9)
+ *
+ * 素通しすると**得点の 9 が読めない**。**閉じ括弧だけの先頭**も
+ * 注記の残りとして落とす（`^[^(（]*[)）]`）。
+ *
+ * ★**数字以外が残る断片には触らない。**
+ * `令和７年７月５日（土）～７月２７日（日）` は括弧を消しても文字が残るので素通しする。
+ *
+ * ★**既定では誰も呼ばない。** 使う県のアダプタから明示的に呼ぶこと
+ * （既存26県の生成物は1バイトも変わらない）。
+ */
+export function stripScoreNotes(page) {
+  const lines = page.lines.map((line) => {
+    const items = line.items.map((it) => {
+      const t = it.text;
+      if (!/[(（)）]/.test(t)) return it;
+      const masked = t
+        .replace(/[(（][^)）]*[)）]?/g, (m) => " ".repeat(m.length))
+        .replace(/^[^(（]*[)）]/, (m) => " ".repeat(m.length));
+      const m = masked.match(/[0-9０-９]+/);
+      // 数字が1つも残らない断片（`(延10)` だけ、`(7` だけ）は触らない。どのみち読まれない
+      if (!m) return it;
+      // 数字以外が残るなら、これは得点の断片ではない
+      if (masked.replace(/[0-9０-９]+/, "").trim()) return it;
+      const half = m[0].replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0));
+      // 幅が無ければ位置を測り直せない。全角を半角にするところまではやる
+      if (!(it.width > 0)) return { ...it, text: half };
+      const per = it.width / t.length;
+      const at = masked.indexOf(m[0]);
+      // `numbersOf` と同じ「左端＋(桁数−1)/2文字」の基準に置き直す
+      return { ...it, x: it.x + (at + (m[0].length - 1) / 2) * per, width: m[0].length * per, text: half };
+    });
+    items.sort((a, b) => a.x - b.x);
+    return { y: line.y, items, text: items.map((i) => i.text).join("\t") };
+  });
+  return { page: page.page, lines };
+}
+
+/**
  * ページの座標を入れ替えて「スロットが横・回戦が上へ」の向きに直す。
  *
  * ★**表は縦向きに描かれていることがある。** 京都はスロットが横一列で
@@ -346,12 +428,27 @@ export function explodeNumberRuns(page) {
  * @param slotAxis "x"（スロットが横。そのまま） / "y"（スロットが縦。入れ替える）
  * @param flip     回戦が伸びる向きが負なら true
  */
-export function orientPage(page, { slotAxis = "x", flip = false, range, rowTolerance = 3 } = {}) {
+/**
+ * ★★**帯を「断片の左端」ではなく「断片の中の数字の位置」でまとめる**
+ * （2026-08-27。鹿児島）。`digitOffset` の説明を読むこと。
+ *
+ * ★**左端でまとめると、まとめ幅を広げるほかない。** ところが鹿児島の紙は
+ * **深い回戦ほど帯の間隔が狭く**（準決勝と決勝は 16 ポイント、準々決勝と準決勝は 40）、
+ * 広げると1つ深い回戦を巻き込む。**数字の位置で見れば、ずれはそもそも消える。**
+ *
+ * ★★**寄せるのはスコアの断片だけ**（`digitOffset` が null を返すものは動かさない）。
+ * 幅 60 ポイントの `県9日11：30` に同じ計算をすると**30 ポイント動いて日付の帯が壊れる。**
+ *
+ * ★**既定は false のまま。** 渡さなければ今までどおり左端でまとめる
+ * （既存の県の生成物は1バイトも変わらない）。
+ */
+export function orientPage(page, { slotAxis = "x", flip = false, range, rowTolerance = 3, bandAtCenter = false } = {}) {
   if (slotAxis === "x" && !flip && !range) return page;
   const items = [];
   for (const l of page.lines) {
     for (const i of l.items) {
-      const raw = { x: i.x, y: l.y, text: i.text };
+      const shift = bandAtCenter ? digitOffset(i.text, i.width) : null;
+      const raw = { x: i.x + (shift ?? 0), y: l.y, text: i.text };
       if (range && (raw.x < range[0] || raw.x > range[1])) continue;
       // スロットが縦なら x と y を入れ替える。**上から順に 1,2,3… なので y は反転**
       const x = slotAxis === "y" ? -raw.y : raw.x;
@@ -508,6 +605,32 @@ export function assembleSlotBracket(
       ★**列が1つのスロットでは効かない**ので、既存の県の生成物は変わらない。
     */
     nameColumns = "asc",
+    /*
+      ★★**コールドの丸数字が「スコアの前」に付く紙がある**（2026-08-27。鹿児島）。
+
+      既定は後ろだけを落とす（`10⑤`）。**前に付く紙**（`⑥11` `⑦10` `⑧8`、
+      間に空白が入る `⑦ 8` も）では**その試合のスコアが丸ごと読めない** ——
+      鹿児島の第153回は1回戦が **30個のところ25個**になり、
+      **別の帯を1回戦と取り違えて大会ごと落ちていた。**
+
+      ★**既定は false のまま。** 前の丸数字を落とすと、
+      **いま読み飛ばしている断片が数字として増える**ので、使う県だけで有効にする。
+    */
+    leadingInningMark = false,
+    /*
+      ★★**断片がスロット軸に広がらない紙**（2026-08-27。鹿児島）。
+
+      `numbersOf` は**断片の中の文字位置から数字の場所を見積もる**（京都のように
+      **スロットが横一列**で、断片もその向きに伸びる紙のための作り）。
+      ★**スロットが縦の紙では、断片は横に伸びる＝スロット軸には点**である。
+      それでも見積もると、`⑤ 10` の `10` が**丸数字1文字ぶん先へ動く。**
+      鹿児島の第106回では **0.3〜0.46 スロットずれ**、
+      **中点が境目から 0.46 外れた1試合のせいで1回戦の帯ごと捨てられていた。**
+
+      ★**既定は false のまま**（広島・三重・群馬も縦向きだが、いまの見積もりで
+      通っているので触らない）。**使う県だけで有効にする。**
+    */
+    flatFragments = false,
   } = {},
 ) {
   /*
@@ -687,7 +810,8 @@ export function assembleSlotBracket(
         先頭に空白があれば、そのぶん右から始める。
       */
       const useWidth = pairedScores && it.width > 0 && it.text.length > 0;
-      const step = useWidth ? it.width / it.text.length : CHAR;
+      // ★`flatFragments` の紙では断片はスロット軸に広がらない。**位置を動かさない**
+      const step = flatFragments ? 0 : useWidth ? it.width / it.text.length : CHAR;
       let cursor = useWidth ? it.x + (it.text.length - it.text.trimStart().length) * step : it.x;
       for (const part of raw.split(/\s+/)) {
         const w = part.length * step;
@@ -709,6 +833,7 @@ export function assembleSlotBracket(
         */
         const half = part
           .replace(/[①-⑳]+$/, "")
+          .replace(leadingInningMark ? /^[①-⑳]+/ : /(?!)/, "")
           .replace(/[×xX]+$/, "")
           .replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0));
         /*
@@ -796,7 +921,7 @@ export function assembleSlotBracket(
     if (process.env.BRACKET_DEBUG) {
       console.log(
         `  [debug] 1回戦の候補 y=${line.y.toFixed(0)}: 数字${ns.length}個` +
-          `（帯 ${merged.map((l) => l.y.toFixed(0)).join("+")}／PITCH=${PITCH.toFixed(1)}）`,
+          `（帯 ${merged.map((l) => l.y.toFixed(0)).join("+")}／PITCH=${PITCH.toFixed(1)}）` + (process.env.BRACKET_DEBUG === "2" ? ` [${ns.map((n) => n.v + "@" + n.slot.toFixed(2)).join(" ")}]` : ""),
       );
     }
     if (ns.length < minFirstRound * 2 || ns.length % 2 !== 0) continue;
@@ -1035,13 +1160,63 @@ export function assembleSlotBracket(
         return { line: l, ns, hit: ns.filter(isHit).length };
       })
       .filter((c) => c.ns.length);
-    const cand = rows
-      /*
-        ★**決勝は数字が2つしか無い**ので、しきい値を試合数から作ること。
-        `min(2, 試合数*2)` にすると決勝（中点の予測が最大にずれる）で
-        1つも候補が残らず、大会ごと落ちる（実際に落ちた）。
-      */
-      .filter((c) => c.hit >= Math.min(2, mids.length));
+    /*
+      ★★**いちばん深い帯だけ、選び方を変える**（`finalInCenter`。2026-08-27。鹿児島）。
+
+      この紙の準決勝は**スコアが連結線の両端**に書かれるので、
+      `isHit`（中点の ±0.95）では**1つも当たらない。**
+      そのままだと**決勝の得点しか無い帯**（中点の真上）のほうが当たり数で勝ち、
+      **準決勝の2つを取り逃がす**（第106回は「数字1個（必要2）」で落ちていた）。
+
+      ★**枝から決まる条件で選ぶ**:
+      **①枝の張る幅の中の数字だけを見る ②その一番外側の2つの中点が、
+      予測した中点に来る**。この2つで、
+      **中央の縦書き「（2年連続7回目）」の `2` と `7`**（中点 12.78 ≠ 15.52）は落ちる。
+      ★**決勝の得点が同じ帯にある紙（第108回）は3個**になるので、そちらを優先する。
+    */
+    const isDeepest = finalInCenter && mids.length === 1;
+    const deepSpan = isDeepest
+      ? [Math.min(nodes[0].x, nodes[1].x) - 1, Math.max(nodes[0].x, nodes[1].x) + 1]
+      : null;
+    const deepCand = isDeepest
+      ? rows
+          .map((c) => ({ c, ns: c.ns.filter((n) => n.slot >= deepSpan[0] && n.slot <= deepSpan[1]) }))
+          .filter((r) => r.ns.length === 2 || r.ns.length === 3)
+          .filter((r) => {
+            const sorted = [...r.ns].sort((x, y) => x.slot - y.slot);
+            const m = (sorted[0].slot + sorted.at(-1).slot) / 2;
+            /*
+              ★**ここだけ許容を広げる**（0.45 ではなく 1.2）。
+              いちばん深い回戦の中点は**回戦を重ねたぶんの誤差が積もる**
+              （親の位置を「読めた2つのスコアの中点」にしているため。第108回で 1.0 ずれた）。
+              ★**それでも中央の縦書きの数字は落ちる** —— 第106回の注記は 2.74 離れている。
+            */
+            return Math.abs(m - mids[0]) <= 1.2;
+          })
+      : [];
+    if (process.env.BRACKET_DEBUG && isDeepest) {
+      console.log(
+        `  [debug] いちばん深い帯の候補（枝の幅 ${deepSpan[0].toFixed(2)}〜${deepSpan[1].toFixed(2)}／中点 ${mids[0].toFixed(2)}）:` +
+          rows
+            .map((c) => {
+              const ns = c.ns.filter((n) => n.slot >= deepSpan[0] && n.slot <= deepSpan[1]);
+              const sorted = [...ns].sort((x, y) => x.slot - y.slot);
+              const m = ns.length ? (sorted[0].slot + sorted.at(-1).slot) / 2 : NaN;
+              return `
+           y=${c.line.y.toFixed(0)} 枝内${ns.length}個 中点${m.toFixed(2)} [${ns.map((n) => n.v + "@" + n.slot.toFixed(2)).join(" ")}]`;
+            })
+            .join(""),
+      );
+    }
+    const cand = isDeepest
+      ? [(deepCand.find((r) => r.ns.length === 3) ?? deepCand[0])?.c].filter(Boolean)
+      : rows
+          /*
+            ★**決勝は数字が2つしか無い**ので、しきい値を試合数から作ること。
+            `min(2, 試合数*2)` にすると決勝（中点の予測が最大にずれる）で
+            1つも候補が残らず、大会ごと落ちる（実際に落ちた）。
+          */
+          .filter((c) => c.hit >= Math.min(2, mids.length));
     /*
       ★**帯の選び方を出せるようにしておく**（`BRACKET_DEBUG=1`）。
       「数字N個（必要M個）」だけでは、**選ばれた帯が正しいのか**が分からない。
@@ -1106,10 +1281,8 @@ export function assembleSlotBracket(
       **その試合が結ぶ2本の線のあいだ**なら推測ではないので、そこまで広げる。
       表の右端に並ぶシードのスロット番号（29.8〜33.3）はこの外に出る。
     */
-    const deepest = finalInCenter && mids.length === 1;
-    const span = deepest
-      ? [Math.min(nodes[0].x, nodes[1].x) - 1, Math.max(nodes[0].x, nodes[1].x) + 1]
-      : null;
+    const deepest = isDeepest;
+    const span = deepSpan;
     const pool = merged
       .flatMap((c) => c.ns)
       /*
@@ -1145,12 +1318,45 @@ export function assembleSlotBracket(
       `centerScore` で返し、呼ぶ側が決勝を組み立てるのに使う
       （`readTwoColumnBracket` の `finalAt: "center"`）。
     */
+    /*
+      ★★**決勝の得点が、半分の準決勝と別の帯にある紙がある**（2026-08-27。第106回）。
+
+      第108回は準決勝の両端と決勝が同じ帯に並ぶ（3個）が、
+      **第106回は決勝だけ12ポイント内側の帯**にあり、この帯は2個しかない。
+      ★**内側の帯から、予測した中点に来る1個**を決勝ぶんとして拾う
+      （中央の縦書きの数字は中点に来ないので混ざらない）。
+      ★**深い回戦ほど帯は内側＝`y` が大きい**（左右どちらの半分でも同じ向き）。
+    */
+    if (deepest && pool.length === 2) {
+      const inner = rows
+        .filter((c) => c.line.y > best.line.y)
+        .flatMap((c) => c.ns.map((n) => ({ ...n, y: c.line.y })))
+        .filter((n) => Math.abs(n.slot - mids[0]) <= 0.45)
+        .sort((x, y) => Math.abs(x.slot - mids[0]) - Math.abs(y.slot - mids[0]));
+      if (inner.length) {
+        center = { ...inner[0] };
+        const reachInner = Math.max(BAND, PITCH * 0.35);
+        const here = labelsBetween(center.y - reachInner, center.y + reachInner);
+        center.date = pickDate(here.dates, center.slot)?.t ?? null;
+        center.venue = pickNear(here.venues, center.slot)?.t ?? null;
+      }
+    }
     if (deepest && pool.length === 3) {
       const k = pool.reduce((b, s, i) => (Math.abs(s.slot - mids[0]) < Math.abs(pool[b].slot - mids[0]) ? i : b), 0);
       center = { ...pool[k], y: best.line.y };
       pool.splice(k, 1);
-      // 決勝の日付・球場は**その行の中**にある（鹿児島は「県25日10：05」）
-      const here = labelsBetween(best.line.y - BAND, best.line.y + BAND);
+      /*
+        決勝の日付・球場は**その行の中**にある（鹿児島は「県25日10：05」）。
+
+        ★★**窓を `BAND`（1ポイント）にしないこと**（2026-08-27）。
+        `bandAtCenter` を使う紙では**スコアの断片だけが数ポイント動く**ので、
+        動かない日付の断片が窓から外れる。**決勝1試合だけ日付が付かず、
+        「日付の読めない試合がある」で大会がまるごと落ちる**（実際に落ちた）。
+        ★**次の回戦の帯までは間隔の1つぶん**あるので、その1/3までなら混ざらない。
+        ★**ここは `finalInCenter` の紙でしか通らない**ので、他県には影響しない。
+      */
+      const reach = Math.max(BAND, PITCH * 0.35);
+      const here = labelsBetween(best.line.y - reach, best.line.y + reach);
       center.date = pickNear(here.dates, center.slot)?.t ?? null;
       center.venue = pickNear(here.venues, center.slot)?.t ?? null;
     }

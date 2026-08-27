@@ -2613,15 +2613,15 @@
       "teams": [
         {
           "display": "津田学園",
-          "score": 2,
-          "won": false,
+          "score": 1,
+          "won": true,
           "name": "津田学園",
           "slug": null
         },
         {
           "display": "津商",
-          "score": 3,
-          "won": true,
+          "score": 0,
+          "won": false,
           "name": "津商業高校",
           "slug": "tsushogyo"
         }

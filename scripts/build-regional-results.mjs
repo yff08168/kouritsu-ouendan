@@ -2610,8 +2610,32 @@ const kyoto = {
   name: "京都府高等学校野球連盟",
   siteUrl: "https://kyoto-hsbf.sakura.ne.jp/khsbf/",
   politenessMs: 2000,
-  // **夏だけ。** 春季は表の形が違い、秋季はまだ出ていない
-  seasons: { summer: "https://kyoto-hsbf.sakura.ne.jp/khsbf/tournament/" },
+  /*
+    ★★**春・夏・秋の3季**（春季・秋季は 2026-08-27 に追加）。
+    ~~春季は表の形が違う~~ とあったのは誤りで、**2次戦の紙は夏と同じ京都型**
+    （スロット番号が横一列・校名は縦書き・回戦は上へ）。
+
+    ★**入口はどの季節も同じ「大会」のページ。** そこに並ぶ Drive のPDFを開いて、
+    **表題で季節を見分ける**（春季近畿地区大会の紙も同じページにある）。
+
+    ★★**過去年は取れない。** `/tournament/r07/` のような年度のページはあるが、
+    **【組み合わせ・結果】のリンクが外されていて**PDFが1つも無い（2022〜2025年度とも）。
+    **`--year` で過去年を取りに行っても0件**になる（紙の年と突き合わせて落とす）。
+  */
+  seasons: {
+    summer: "https://kyoto-hsbf.sakura.ne.jp/khsbf/tournament/",
+    spring: "https://kyoto-hsbf.sakura.ne.jp/khsbf/tournament/",
+    autumn: "https://kyoto-hsbf.sakura.ne.jp/khsbf/tournament/",
+  },
+  /**
+   * 季節ごとの表題。★**春季近畿地区大会の紙を拾わないこと**
+   * （同じページにあり、`京都府高等学校野球大会` に当たらないので混ざらない）。
+   */
+  TITLES: {
+    summer: /第\d+回全国高等学校野球選手権京都大会/,
+    spring: /春季京都府高等学校野球大会/,
+    autumn: /秋季京都府高等学校野球大会/,
+  },
   /** 表の凡例「わ・・わかさスタジアム京都」。1文字の記号 → 球場名 */
   venueLegend(page) {
     const map = new Map();
@@ -2623,13 +2647,13 @@ const kyoto = {
     }
     return map;
   },
-  async collect({ fetchHtml, season, url }) {
+  async collect({ fetchHtml, season, url, year: want }) {
     const index = await fetchHtml(url);
     if (!index) return [];
 
     /*
       ★**IDを直書きせず、大会ページから拾う。** 同じページに春季・近畿大会の
-      PDFも並んでいるので、**開いてみて「選手権京都大会」の表だったものだけ使う。**
+      PDFも並んでいるので、**開いてみて目当ての季節の表だったものだけ使う。**
     */
     const ids = [...new Set([...index.matchAll(/drive\.google\.com\/file\/d\/([\w-]{20,})/g)].map((m) => m[1]))];
     if (!ids.length) {
@@ -2646,19 +2670,45 @@ const kyoto = {
 
       for (const page of parsed) {
         const flat = page.lines.map((l) => normalize(l.text.replace(/\t/g, "")));
-        const tournament = flat
-          .map((t) => t.match(/第\d+回全国高等学校野球選手権京都大会/)?.[0])
-          .find(Boolean);
+        const tournament = flat.map((t) => t.match(this.TITLES[season])?.[0]).find(Boolean);
         if (!tournament) continue;
 
+        /*
+          ★**年の出しかたが季節で違う**（2026-08-27）。
+            夏 … 選手権の回数（年 − 1918）
+            春秋 … 紙の**「令和N年度」**（春は4〜5月・秋は8〜10月なので年度＝暦年）
+          ★**取りに行った年と食い違ったら1試合も出さない**
+          （過去年のページにはPDFが無いので、そこへ来るのは前の年の紙を掴んだとき）。
+        */
         const round = Number(tournament.match(/第(\d+)回/)?.[1]);
-        // 選手権の回数は 年 - 1918（`build-live-results.mjs` と同じ）
-        const year = round + 1918;
+        const era = flat.map((t) => t.match(/(令和|平成)\s*(元|\d+)\s*年度/)).find(Boolean);
+        const year = Number.isFinite(round)
+          ? round + 1918
+          : era
+            ? (era[1] === "令和" ? 2018 : 1988) + (era[2] === "元" ? 1 : Number(era[2]))
+            : null;
+        if (year === null) {
+          console.log(`  ⚠️ 京都: ${tournament} の年が読めない（回数も元号も無い）。1試合も出さない`);
+          return [];
+        }
+        if (want && year !== want) {
+          console.log(`  （京都: ${tournament} は ${year} 年の紙。${want} 年を取りに来ているので使わない）`);
+          continue;
+        }
 
         const venues = this.venueLegend(page);
         const built = assembleSlotBracket(page, {
           roundLabels: ["決勝", "準決勝", "準々決勝"],
           venueSymbols: new Set(venues.keys()),
+          /*
+            ★★**春季・秋季の紙は日付を `5月10日` と書く**（夏は `7/4`。2026-08-27）。
+            組み立て側は `M/D` の形しか見ないので、**15試合すべてが日付なしで落ちていた。**
+            ★**`M月D日` のときだけ `M/D` に直す**（当たらなければ既定の読み方に任せる＝夏は変わらない）。
+          */
+          parseLabel: (t) => {
+            const m = normalize(String(t).trim()).match(/^(\d{1,2})月(\d{1,2})日$/);
+            return m ? { date: `${m[1]}/${m[2]}` } : null;
+          },
         });
         if (!built) {
           console.log(`  ⚠️ 京都: ${tournament} の組合せ表を組み立てられなかった。1試合も出さない`);
@@ -2677,11 +2727,32 @@ const kyoto = {
           return [];
         }
 
-        // ---- 検算2: 表に印字された優勝校 ----
-        const printedChampion = flat.find((t) => /^優勝/.test(t))?.replace(/^優勝\s*/, "");
+        /*
+          ---- 検算2: 表に印字された優勝校 ----
+          ★**行の先頭にあるとは限らない**（2026-08-27。春季の紙は
+          `太陽が丘球場、京丹後夢球場 ⋮ 優勝 ⋮ 龍谷大学付属平安高等学校（９年ぶり29回目）`）。
+          **行の途中の「優勝」も拾う。**
+        */
+        const printedChampion =
+          flat.find((t) => /^優勝/.test(t))?.replace(/^優勝\s*/, "") ??
+          flat.map((t) => t.match(/優勝\s*([^\s（(]+高等学校)/)?.[1]).find(Boolean);
         if (printedChampion) {
           const bare = normalizeSchoolName(printedChampion.replace(/[（(].*$/, "").replace(/高等学校$/, ""));
-          if (!bare.startsWith(normalizeSchoolName(built.champion ?? "")) && built.champion) {
+          /*
+            ★★**紙は正式名、枝は略称**（2026-08-27。春季）。
+            `龍谷大学付属平安高等学校` に対し枝は `龍谷大平安`（欄が狭いので略す）。
+            **先頭一致では当たらない**（`学`『付属』が抜けている）。
+            ★**枝の校名が紙の校名の「部分列」なら同じとみなす**（兵庫で決めたやり方）。
+            ★**緩めるのは校名の比べ方だけ** —— 枝のほうは「無敗が1校」で決まっており、
+            **決勝の相手が違えばそこで食い違う。**
+          */
+          const subsequence = (short, long) => {
+            let i = 0;
+            for (const c of long) if (c === short[i]) i++;
+            return i === short.length;
+          };
+          const champ = normalizeSchoolName(built.champion ?? "");
+          if (built.champion && !bare.startsWith(champ) && !subsequence(champ, bare)) {
             console.log(
               `  ⚠️ 京都: 組み立てた優勝校が表と合わない（表「${printedChampion}」/ 組み立て「${built.champion}」）。1試合も出さない`,
             );
@@ -4509,8 +4580,42 @@ const gifu = {
   siteUrl: "https://ghbf.asfsite.jp/",
   politenessMs: 1500,
   // **夏だけ。** 春季・秋季も同じ形の報告書が出るか確かめてから足すこと
-  seasons: { summer: "https://ghbf.asfsite.jp/event/schedule/" },
-  async collect({ fetchHtml, season, url }) {
+  /*
+    ★★**春・夏・秋の3季**（春季・秋季は 2026-08-28 に追加）。
+    **どの季節も同じ一覧から辿り、同じ「試合結果報告書」を読む。**
+    ★**回数の起点が季節ごとに違う**（`SEASONAL`）。夏の「年 − 1918」を使い回さないこと。
+  */
+  seasons: {
+    summer: "https://ghbf.asfsite.jp/event/schedule/",
+    spring: "https://ghbf.asfsite.jp/event/schedule/",
+    autumn: "https://ghbf.asfsite.jp/event/schedule/",
+  },
+  /**
+   * 季節ごとの、一覧での見分け方と回数の起点。
+   *   夏 … 第108回＝2026年（年 − 1918）
+   *   春 … 第73回春季東海地区…岐阜県大会＝2026年（年 − 1953）
+   *   秋 … 第79回秋季東海地区…岐阜県大会＝2026年（年 − 1947）
+   * ★**題の頭に【大会】【結果】が付く記事は別物**（案内だけでPDFが無い）ので、
+   * **題の全体で当てて外す。**
+   */
+  SEASONAL: {
+    summer: {
+      re: /^第(\d+)回全国高等学校野球選手権岐阜大会$/,
+      offset: 1918,
+      name: (no) => `第${no}回全国高等学校野球選手権岐阜大会`,
+    },
+    spring: {
+      re: /^第(\d+)回春季東海地区高等学校野球岐阜県大会$/,
+      offset: 1953,
+      name: (no) => `第${no}回春季東海地区高等学校野球岐阜県大会`,
+    },
+    autumn: {
+      re: /^第(\d+)回秋季東海地区高等学校野球岐阜県大会$/,
+      offset: 1947,
+      name: (no) => `第${no}回秋季東海地区高等学校野球岐阜県大会`,
+    },
+  },
+  async collect({ fetchHtml, season, url, year }) {
     /*
       大会ページの一覧から「全国高等学校野球選手権岐阜」の回を探す。
       ★**URLを直書きしない**（毎年 entry-NNNN.html が変わる）。
@@ -4522,9 +4627,11 @@ const gifu = {
       `{ "title": "第108回…岐阜大会", "url": "…/entry-6247.html", … }` が並ぶ。
       `dailyLinks`（`<a>` を読む）では1件も取れない。
     */
+    const seasonal = this.SEASONAL[season];
+    if (!seasonal) return [];
     const entries = [];
     for (const m of index.matchAll(/"title":\s*"([^"]+)"\s*,\s*"url":\s*"([^"]+)"/g)) {
-      const round = Number(normalize(m[1]).match(/第(\d+)回全国高等学校野球選手権岐阜/)?.[1]);
+      const round = Number(normalize(m[1]).trim().match(seasonal.re)?.[1]);
       if (Number.isFinite(round)) entries.push({ url: m[2].replace(/\\\//g, "/"), round });
     }
     entries.sort((a, b) => b.round - a.round);
@@ -4533,9 +4640,16 @@ const gifu = {
       return [];
     }
 
+    /*
+      ★★**`--year` でその年の大会だけを取る**（2026-08-28）。
+      選手権の回数は **年 − 1918** なので、一覧の題から年が出せる
+      （**ページを開かずに選べる**ので、余計な取得をしない）。
+      ★**渡さなければ今までどおり新しい2件**（開催中は前の年も見に行きたいため）。
+    */
+    const targeted = entries.filter((e) => e.round + seasonal.offset === year);
     /** 新サイトと旧サイトの両方から集める */
     const out = [];
-    for (const entry of entries.slice(0, 2)) {
+    for (const entry of targeted.length ? targeted : entries.slice(0, 2)) {
       const html = await fetchHtml(entry.url);
       await sleep(this.politenessMs);
       if (!html) continue;
@@ -4558,9 +4672,9 @@ const gifu = {
         if (!pages?.length) continue;
         // ファイル名にある回戦だけ拾う（【準決勝0726】【決勝0728】）
         const round = pickRound(report.label.match(/【([^】]*)】/)?.[1] ?? "");
-        games.push(...this.readReport(pages, season, entry.round, round));
+        games.push(...this.readReport(pages, season, entry.round, round, seasonal));
       }
-      if (games.length) out.push(...this.verify(games, entry.round));
+      if (games.length) out.push(...this.verify(games, seasonal.name(entry.round)));
     }
 
     /*
@@ -4577,8 +4691,15 @@ const gifu = {
 
       ★**`pref` の付いたページだけ**を見る（`zenkoku` は甲子園の結果）。
       ★**2024年の日別結果はどちらのサイトにも無い**（穴。出典側の欠落）。
+
+      ★★★**夏のときだけ見ること**（2026-08-28。春季・秋季を足したときに踏んだ）。
+      辿るのは `senshuken_gifu`＝**選手権（夏）のページ**なのに、季節で分けていなかったので、
+      **春・秋の収集でも同じ試合を読み、`season` だけ春・秋にして返していた** ——
+      **2021〜2023年の夏199試合が、春と秋にも同じ大会名で入った**（実際に入った）。
+      ★**検算は通ってしまう**（試合の中身は正しく、季節の札だけが違う）。
+      ★**気づけたのは季節ごとの件数を数えたから。**
     */
-    const old = await fetchHtml(this.oldIndexUrl);
+    const old = season === "summer" ? await fetchHtml(this.oldIndexUrl) : null;
     await sleep(this.politenessMs);
     if (old) {
       const seen = new Set(out.map((g) => g.tournament));
@@ -4644,9 +4765,10 @@ const gifu = {
     return games;
   },
   /** 日別の報告書1本を読む */
-  readReport(pages, season, no, round) {
-    const year = no + 1918; // 選手権の回数は 年 - 1918
-    const tournament = `第${no}回全国高等学校野球選手権岐阜大会`;
+  readReport(pages, season, no, round, seasonal) {
+    // ★回数の起点は季節ごとに違う（`SEASONAL`）。夏は 年 − 1918
+    const year = no + seasonal.offset;
+    const tournament = seasonal.name(no);
     const han = (t) => normalize(t);
     /** 得点のます。`1×`（サヨナラ）・`X`（打たずに終了）・空欄がある */
     const cell = (t) => {
@@ -4737,7 +4859,7 @@ const gifu = {
     return out;
   },
   /** 全部そろってからの検算 */
-  verify(games, no) {
+  verify(games, tournamentName) {
     /*
       ★**校名の揺れを畳んでから数える。** 同じ学校が回戦で書き分けられる
       （中津商/中津商業 など5組）。`labelCandidates` と同じ畳み方にそろえる。
@@ -4757,7 +4879,7 @@ const gifu = {
     }
     const draws = games.length - decided;
     console.log(
-      `  （第${no}回全国高等学校野球選手権岐阜大会: ${games.length} 試合 / ${teams.size} チーム` +
+      `  （${tournamentName}: ${games.length} 試合 / ${teams.size} チーム` +
         (draws ? ` / 引き分け再試合 ${draws}` : "") + "・**日別のスコア表から**）",
     );
     return games;
@@ -4767,6 +4889,27 @@ const gifu = {
 /**
  * 千葉県高等学校野球連盟（`chbf.or.jp`）。
  * ★**このリポジトリでいちばん大きい大会**（148チーム・147試合。2026-08-15）。
+ *
+ * ------------------------------------------------------------------
+ * ★★ 春・夏・秋の3季 ＋ `--year` で過去年（2026-08-27。147 → 1,089試合）
+ *
+ *   入口はどの季節も同じサイトマップ。**紙も同じやぐら型**だが、
+ *   ★**大きさが違う**（夏148チーム／春・秋48〜64チーム）ので**座標は紙から測る**
+ *   （`geometryOf`）。決め打ちのままでは**過去年の夏が1試合も出せなかった。**
+ *
+ *   ★★**同じ大会に記事が3つある**（本大会・予選・予選敗者復活戦）。
+ *   **スラッグは途中で切れていて見分けられない**ので、**記事の題で見分ける。**
+ *   ★**予選と敗者復活戦は支部ごとのブロック表**で、勝ち抜きの木ではない。取らない。
+ *
+ *   ★★**年は記事の名前から出す**（夏＝回数+1918／春秋＝回数+1947）。
+ *   **紙の中の回数と元号でもう一度確かめる**（片方しか無い紙もある）。
+ *
+ *   ★ 入っている年（2026-08-27 時点）
+ *     夏 … 2023・2024・2025・2026（第105〜108回）
+ *     春 … 2022〜2026（第75〜79回）
+ *     秋 … 2019・2021・2023・2024・2025（第72・74・76・77・78回）
+ *   ★**入らなかった年は「組合せ表を組み立てられなかった」**か
+ *   **中央から優勝校を読めなかった**もの（2017〜2022の一部）。**紙ごとに測り直しが要る。**
  *
  * ★**岐阜と同じく「一球速報の県」という分類が誤りだった。**
  * 連盟が自分でやぐら表（試合結果入り）のPDFを出している。
@@ -4823,9 +4966,57 @@ const chiba = {
   name: "千葉県高等学校野球連盟",
   siteUrl: "https://chbf.or.jp/",
   politenessMs: 2000,
-  // **夏だけ。** 春季・秋季の表は形を確かめてから足すこと
-  seasons: { summer: "https://chbf.or.jp/wp-sitemap-posts-oshirase2-1.xml" },
-  async collect({ fetchHtml, season, url }) {
+  /*
+    ★★**春・夏・秋の3季**（春季・秋季は 2026-08-27 に追加）。
+    どの季節も入口は同じサイトマップで、**紙も同じやぐら型**（下の「春季・秋季」の節）。
+  */
+  SITEMAP: "https://chbf.or.jp/wp-sitemap-posts-oshirase2-1.xml",
+  seasons: {
+    summer: "https://chbf.or.jp/wp-sitemap-posts-oshirase2-1.xml",
+    spring: "https://chbf.or.jp/wp-sitemap-posts-oshirase2-1.xml",
+    autumn: "https://chbf.or.jp/wp-sitemap-posts-oshirase2-1.xml",
+  },
+  /**
+   * ★★**記事の名前から年を出す**（2026-08-27。`--year` で過去年を取るため）。
+   *
+   *   夏 … `第108回全国高等学校野球選手権千葉大会` → **回数 + 1918**
+   *        ★**「記念」が入る年がある**（第105回記念千葉大会＝2023年）
+   *   春 … `令和8年度第79回春季千葉県高等学校野球大会` → **回数 + 1947**
+   *   秋 … `令和7年度第78回秋季千葉県高等学校野球大会` → **回数 + 1947**
+   *
+   * ★**春季・秋季の起点は選手権とは別**（第79回春季＝2026年・第72回秋季＝2019年で確かめた）。
+   * ★**元号は使わない** —— **付いていない記事がある**（`第75回春季千葉県高等学校野球大会について`）。
+   *   紙の中の元号との突き合わせは `readSheet` でやる。
+   * ★**軟式は外す**（同じ一覧に「全国高等学校軟式野球選手権千葉大会」が並ぶ）。
+   *
+   * @returns その季節の大会なら年 ／ 違えば null
+   */
+  postYear(name, season) {
+    const t = normalize(name);
+    if (/軟式/.test(t)) return null;
+    if (season === "summer") {
+      const m = t.match(/第(\d+)回全国高等学校野球選手権(?:記念)?千葉大会/);
+      return m ? Number(m[1]) + 1918 : null;
+    }
+    const word = this.SEASONAL[season]?.word;
+    if (!word) return null;
+    const m = t.match(new RegExp(`第(\\d+)回${word}千葉県高等学校野球大会`));
+    if (m) return Number(m[1]) + 1947;
+    /*
+      ★**回数が入らない年がある**（2026-08-27）。
+      2020年の秋は `令和２年度秋季千葉県高等学校野球大会`（**回数が無い**）。
+      その年だけ**元号から出す**（春3〜5月・秋8〜10月はどちらも年度＝暦年）。
+    */
+    if (!new RegExp(`${word}千葉県高等学校野球大会`).test(t)) return null;
+    const g = t.match(/(令和|平成)\s*(元|\d+)\s*年度/);
+    return g ? (g[1] === "令和" ? 2018 : 1988) + (g[2] === "元" ? 1 : Number(g[2])) : null;
+  },
+  /** 春季・秋季の違い。**回数の起点（+1947）は共通** */
+  SEASONAL: {
+    spring: { word: "春季", label: "春" },
+    autumn: { word: "秋季", label: "秋" },
+  },
+  async collect({ fetchHtml, season, url, year }) {
     /*
       ★**大会の記事はトップからは辿れない**（秋季に差し替わると消える）。
       サイトマップに残るので、そこから「第N回…千葉大会について」を探す。
@@ -4835,22 +5026,38 @@ const chiba = {
     if (!xml) return [];
     const posts = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)]
       .map((m) => ({ url: m[1], name: decodeURIComponent(m[1]) }))
-      .filter((p) => /全国高等学校野球選手権千葉大会/.test(normalize(p.name)));
+      // ★**その年の大会の記事だけ**（`--year` で過去年を取るため）
+      .filter((p) => this.postYear(p.name, season) === year);
     if (!posts.length) {
-      console.log("  ⚠️ 千葉: 選手権千葉大会の記事がサイトマップに無い。出典の作りが変わった可能性がある");
+      // ★過去年を取りに行ったときは静かに終わる（その年の記事が無いだけ）
+      if (year >= new Date().getFullYear()) {
+        console.log(`  ⚠️ 千葉: ${year}年の${this.SEASONAL[season]?.label ?? "夏"}の記事がサイトマップに無い`);
+      }
       return [];
     }
     for (const post of posts.slice(0, 3)) {
       const html = await fetchHtml(post.url);
       await sleep(this.politenessMs);
       if (!html) continue;
-      const pdfs = dailyLinks(html, post.url, { hrefPattern: /\.pdf$/i });
+      /*
+        ★★**同じ大会に記事が3つある**（本大会・予選・予選敗者復活戦。2026-08-27）。
+        ★**URLの文字では見分けられない** —— スラッグは途中で切れていて、
+        `…春季千葉県高等学校野球大会` が**予選の記事**だったりする。
+        **記事の題（`<title>`）で見分けること。**
+        ★**予選と敗者復活戦は別の大会**（支部ごとのブロック表で、1枚に代表が何校も出る）。
+        **本大会だけを取る。**
+      */
+      const title = normalize(plain(html.match(/<title>([^<]*)<\/title>/)?.[1] ?? ""));
+      if (/予選|敗者復活|中止|抽選会|入場券/.test(title)) continue;
+      const pdfs = dailyLinks(html, post.url, { hrefPattern: /\.pdf$/i })
+        // ★**大会と関係ないPDFが同じ記事に貼ってある**（ガイドライン・視聴方法・担当者マニュアル）
+        .filter((p) => !/ガイドライン|マニュアル|視聴方法|電話|Ver\d/i.test(decodeURIComponent(p.url)));
       for (const pdf of pdfs.slice(0, 4)) {
         const parsed = await fetchPdfPages(pdf.url, { headers: UA });
         await sleep(this.politenessMs);
         if (!parsed?.length) continue;
         for (const raw of parsed) {
-          const games = this.readSheet(raw, season);
+          const games = this.readSheet(raw, season, year);
           if (games) return games;
         }
       }
@@ -4858,31 +5065,122 @@ const chiba = {
     return [];
   },
   /** 1枚のやぐら表を読む。**目当ての紙でなければ null**（呼ぶ側は次のPDFへ） */
-  readSheet(raw, season) {
+  readSheet(raw, season, year) {
     const flat = raw.lines.map((l) => normalize(l.text.replace(/\t/g, "")));
-    if (!flat.some((t) => /第\d+回全国高等学校野球選手権千葉大会/.test(t))) return null;
+    /*
+      ★**題は季節で違う**（2026-08-27）。
+        夏 … `第108回全国高等学校野球選手権千葉大会`（**記念が入る年がある**）
+        春 … `第79回春季千葉県高等学校野球大会`
+        秋 … `第78回秋季千葉県高等学校野球大会`
+      ★★**「予選」を必ず外すこと** —— 同じ大会の予選の紙が
+      `第78回秋季千葉県高等学校野球大会予選` という題で並んでおり、
+      **支部ごとのブロック表**なので木にならない（読めても嘘になる）。
+    */
+    const word = this.SEASONAL[season]?.word;
+    /*
+      ★**回数が入らない紙がある**（2020年の秋は `令和２年度秋季千葉県高等学校野球大会`）。
+      **回数のある形を先に探し、無ければ回数なしの形**で拾う（年は元号で確かめる）。
+    */
+    const titlePattern = word
+      ? new RegExp(`第\\d+回${word}千葉県高等学校野球大会(?!予選)`)
+      : /第\d+回全国高等学校野球選手権(?:記念)?千葉大会/;
+    const looseTitle = word ? new RegExp(`${word}千葉県高等学校野球大会(?!予選)`) : null;
+    const title =
+      flat.map((t) => t.match(titlePattern)?.[0]).find(Boolean) ??
+      (looseTitle ? flat.map((t) => t.match(looseTitle)?.[0]).find(Boolean) : undefined);
+    if (!title) return null;
+
+    /*
+      ★★**回数から出した年が、取りに行った年と食い違ったら1試合も出さない**（2026-08-27）。
+      **1つの記事に前の年の紙が残っていることがある**ので、ここで必ず突き合わせる。
+      ★**春季・秋季は紙に元号も刷ってある**（`令和７年度 第７８回秋季…`）。
+      **あれば両方が同じ年を指すことを求める**（片方だけでは取り違えに気づけない）。
+    */
+    const no = Number(title.match(/第(\d+)回/)?.[1]) || null;
+    const sheetYear = no === null ? null : no + (word ? 1947 : 1918);
+    if (sheetYear !== null && sheetYear !== year) {
+      console.log(`  ⚠️ 千葉: 第${no}回（${sheetYear}年）の紙が ${year} 年の記事に付いている。1試合も出さない`);
+      return [];
+    }
+    const era = flat.map((t) => t.match(/(令和|平成)\s*(元|\d+)\s*年度/)).find(Boolean);
+    const eraYear = era ? (era[1] === "令和" ? 2018 : 1988) + (era[2] === "元" ? 1 : Number(era[2])) : null;
+    if (eraYear !== null && eraYear !== year) {
+      console.log(`  ⚠️ 千葉: 紙の「${era[1]}${era[2]}年度」は ${eraYear} 年だが ${year} 年を取りに来ている。1試合も出さない`);
+      return [];
+    }
+    /*
+      ★**回数も元号も紙に無ければ、年を確かめる術が無い**ので出さない
+      （記事の名前だけを信じない。前の年の紙が残っている記事があるため）。
+    */
+    if (sheetYear === null && eraYear === null) {
+      console.log("  ⚠️ 千葉: 紙に回数も元号も無く、年を確かめられない。1試合も出さない");
+      return [];
+    }
 
     /*
       表の中央に縦書きされた「優勝 ◯◯高等学校（…）」「準優勝 ◯◯高等学校」。
       **枝のスコアとは別の場所から来る事実**なので検算に使う。
+      ★**春季・秋季は「高校」と書く**（夏は「高等学校」）。両方受ける。
     */
-    const HALF = 294;
-    const centre = raw.lines
+    /*
+      ★★**座標は紙から測る**（2026-08-27。それまでは夏の2026年の紙で測った決め打ちだった）。
+      ★**年でも季節でも紙の形が変わる** ——
+      夏は148チームでスロット列が x≒86 と x≒506、春・秋は48チームで x≒108 と x≒482。
+      決め打ちのままでは**過去年の夏が1試合も出せなかった**（第106回・第107回とも落ちていた）。
+    */
+    const geometry = this.geometryOf(raw);
+    if (!geometry) return [];
+    /*
+      ★★**シード記号の列を落としてから読む**（`stripMarkColumns`）。
+      春季はシード記号（◎）が**校名と同じ側**にあり、範囲では切り分けられない。
+    */
+    const sheet = this.stripMarkColumns(raw, geometry.leftX, geometry.rightX);
+    const HALF = geometry.half;
+    const centre = sheet.lines
       .flatMap((l) => l.items.map((i) => ({ x: i.x, y: l.y, t: i.text.trim() })))
       .filter((i) => Math.abs(i.x - HALF) <= 10)
       .sort((a, b) => b.y - a.y)
       .map((i) => i.t)
       .join("");
-    const champion = centre.match(/(?:^|[^準])優勝(\S+?)高等学校/)?.[1] ?? null;
-    const runnerUp = centre.match(/準優勝(\S+?)高等学校/)?.[1] ?? null;
-    if (!champion || !runnerUp) {
-      console.log("  ⚠️ 千葉: 表の中央から優勝・準優勝を読めなかった。検算できないので1試合も出さない");
+    /*
+      ★★**「高校」「高等学校」を付ける年と付けない年がある**（2026-08-27）。
+
+        2026年夏 … `優勝拓殖大紅陵高等学校（24年振り6回目）`
+        2025年秋 … `優勝専修大松戸高校（３年振り２回目）`
+        2024年秋 … `優勝千葉黎明（初優勝）`      ★**校名だけ**
+
+      **`高校` で止める作りだと、付いていない年が1試合も出せない**（実際に落ちていた）。
+      ★**括弧・数字・「準」まで**を校名として取り、**付いていれば「高校」を落とす。**
+      ★**注記の `（初優勝）` に引きずられない** —— 括弧の手前で切っているため。
+    */
+    /*
+      ★★**中央は正式名、枝は略称**という年がある（2026-08-27。2023年の春季）。
+      中央 `優勝専修大学松戸高校` に対し、枝は `専修大松戸`（欄が狭いので略す）。
+      **`同じ` の判定は「どちらかがもう一方を含む」なので、`大学` と `大` は当たらない。**
+      ★**比べるときだけ `大学` を `大` に寄せる**（画面に出る校名は枝のほう）。
+      ★**枝が `大学` と書く紙が出たら、この検算は落ちる**（黙って通さない）。
+    */
+    const nameOf = (m) =>
+      m ? m[1].replace(/高(?:等学)?校$/, "").replace(/\s+/g, "").replace(/大学/g, "大") || null : null;
+    const champion = nameOf(centre.match(/(?:^|[^準])優勝([^（）()0-9０-９：:準\s]+)/));
+    const runnerUp = nameOf(centre.match(/準優勝([^（）()0-9０-９：:準\s]+)/));
+    /*
+      ★★**準優勝を刷っていない年がある**（2026-08-27。2022年以前は優勝だけ）。
+      ★**優勝校だけでも検算になる** —— **決勝の相手が違えばどちらかが必ず食い違う**
+      （山口と同じ考え方。石川で通ってしまった「構造は合うのに決勝の相手が違う」も止まる）。
+      ★**優勝校が読めなければ1試合も出さない。**
+    */
+    if (!champion) {
+      console.log("  ⚠️ 千葉: 表の中央から優勝校を読めなかった。検算できないので1試合も出さない");
       return [];
     }
+    if (!runnerUp) {
+      console.log(`  （千葉: 紙に準優勝の記載が無いので、優勝校「${champion}」だけで検算する）`);
+    }
 
-    return readTwoColumnBracket(raw, {
+    const games = readTwoColumnBracket(sheet, {
       district: "千葉",
-      titlePattern: /第\d+回全国高等学校野球選手権千葉大会/,
+      titlePattern,
       half: HALF,
       rowTolerance: 3,
       // 左は上から、右は下から読む（スロットは縦、校名は横書き）
@@ -4891,6 +5189,17 @@ const chiba = {
       // ★**日付が1つも書かれていない**ので、日付での検算はできない
       hasDates: false,
       finalAt: "innermost",
+      /*
+        ★★**中央の縦書きの「回」が、離れたスコアを消していた**（2026-08-27。宮崎と同じ罠）。
+        `（３年振り２**回**目）` の `回`（x≒293）が、**同じ行の144ポイント左にある
+        1回戦のスコア `12`（x≒149）**を「12回コールドの12」として落としていた。
+        **その帯が16個必要なところ15個になり、1回戦を取り違えて組めなくなる。**
+        ★**この紙のコールドは丸数字（⑤⑦）**なので、`N回` を見る必要がそもそも無い。
+        ★★**夏の紙も同じだった**（2026-08-27）。2025年の夏は
+        **3回戦の帯が16個必要なところ15個**になって組めていなかった。
+        ★**2026年の夏はこれを入れても1バイトも変わらない**（確認済み）。
+      */
+      inningMarkGap: 20,
       /*
         ★**シード記号の列を範囲ごと外す**（2026-08-15 に実データで測った）。
 
@@ -4901,12 +5210,229 @@ const chiba = {
         記号でない「宣」が1つあり、`千葉東` が `千葉東宣` になっていた。
         文字で消す方式では、こういう字を取りこぼして**画面に誤った校名が出る**。
         ★**全角ラテン文字を無条件に落とすのも駄目**（「光英ＶＥＲＩＴＡＳ」が壊れる）。
+        ★**春季・秋季は紙から測る**（`seasonalGeometry`）。
       */
-      ranges: [[35, HALF], [HALF, 558]],
+      ranges: geometry.ranges,
       // 字間の空白を詰める（日本の校名に空白は入らない）
       cleanName: (s) => s.replace(/\s+/g, ""),
       verify: { champion, runnerUp },
     });
+    /*
+      ★★**春季・秋季は大会名に西暦を足す**（2026-08-27。宮崎と同じ）。
+      `第78回秋季千葉県高等学校野球大会` は**回数が選手権とは別の系列**で、
+      **紙に日付が1つも無い**ので、そのままだと `yearOfTournament` が年を出せず
+      **「年の分からない大会」として同じ季節の何年ぶんかが並ぶ。**
+      ★**年は回数と元号の両方から確かめてある**（上）ので、推測ではない。
+      ★**夏は足さない**（`第N回…選手権` から年が出るし、他県の夏と形をそろえたい）。
+    */
+    return word ? withYear(games, year) : games;
+  },
+
+  /**
+   * ★★**紙の座標を測る**（2026-08-27。夏・春・秋の3季とも）。
+   *
+   * ------------------------------------------------------------------
+   * ★ 夏の紙とは別物なので、夏の決め打ちを流用しない
+   *
+   *   夏 … 148チーム。スロット列 x≒86 と x≒506、中央 294
+   *   秋 … 48チーム。 スロット列 x≒105 と x≒486
+   *   春 … 48チーム。 スロット列 x≒108 と x≒482
+   *
+   *   ★**チーム数が違えば列の位置も回戦の数も変わる。** 紙から測る。
+   *
+   * ------------------------------------------------------------------
+   * ★★ 決勝の欄を範囲から外すのがいちばん難しい（宮崎と同じ考え方）
+   *
+   *   **準決勝の帯は数字が2つ**（左右の半分にそれぞれ1試合）で、
+   *   **決勝は中央をはさんで片側1つずつ。**
+   *   そこで**「中央に向かって、数字が2つ以上ある最後の列」が準決勝、
+   *   その次の列が決勝**とし、**その中間で切る。**
+   *
+   *   ★**中央の縦書きの「（３年振り２回目）」は邪魔をしない** ——
+   *   **全角の数字**なので `\d` に当たらない（半角のスコアとは別物）。
+   *
+   * ------------------------------------------------------------------
+   * ★ 外側の端は校名の外に置く
+   *
+   *   ★**この紙にはシード記号の列が無い**（夏はある）。校名がそのまま端に来る。
+   *   ★**万一記号が付いても、優勝・準優勝の突き合わせで落ちる**
+   *   （校名に記号がくっつけば一致しない）。
+   *
+   * @returns `{ half, ranges }`／測れなければ null（**1試合も出さない**）
+   */
+  geometryOf(raw) {
+    const items = raw.lines.flatMap((l) => l.items.map((i) => ({ x: i.x, y: l.y, t: normalize(i.text.trim()) })));
+    // ---- 数字の列 ----
+    const cols = new Map();
+    for (const i of items.filter((i) => /^\d{1,2}$/.test(i.t))) {
+      const k = [...cols.keys()].find((v) => Math.abs(v - i.x) <= 4) ?? i.x;
+      if (!cols.has(k)) cols.set(k, []);
+      cols.get(k).push(i);
+    }
+    const numbered = [...cols.entries()].map(([x, list]) => ({ x, n: list.length })).sort((a, b) => a.x - b.x);
+
+    /*
+      ★★**スロット番号の列は「1から順に並ぶ縦の列」で探す**（2026-08-27）。
+
+      ~~数字がいちばん多い2つの列~~ では**夏の紙で取り違える** ——
+      右のスロットは 75〜148 で、**3桁になると断片の左端が数ポイント動く**ので
+      1つの列にまとまらず、**得点の帯（64個）に負ける。**
+      ★**まとめ幅を広げる（8）のは番号を探すときだけ**にする
+      （帯を探すときに広げると、隣り合う回戦の帯がくっつく）。
+    */
+    const runs = (() => {
+      const wide = new Map();
+      for (const i of items.filter((i) => /^\d{1,3}$/.test(i.t))) {
+        const k = [...wide.keys()].find((v) => Math.abs(v - i.x) <= 8) ?? i.x;
+        if (!wide.has(k)) wide.set(k, []);
+        wide.get(k).push(i);
+      }
+      return [...wide.entries()]
+        .map(([x, list]) => {
+          const sorted = list.sort((a, b) => b.y - a.y).map((i) => Number(i.t));
+          let n = 1;
+          while (n < sorted.length && sorted[n] === sorted[0] + n) n++;
+          return { x, from: sorted[0], length: n };
+        })
+        .filter((c) => c.length >= 8);
+    })();
+    const left = runs.find((c) => c.from === 1);
+    const right = left ? runs.find((c) => c.from === left.length + 1) : null;
+    if (!left || !right) {
+      console.log(
+        "  ⚠️ 千葉: スロット番号の列（左は1から、右はその続き）が見つからない。紙の形が変わった可能性がある",
+      );
+      return null;
+    }
+    const [leftX, rightX] = [left.x, right.x].sort((a, b) => a - b);
+
+    /*
+      ★★**決勝の得点は「同じ行で中央をはさんでいちばん近い2つ」**（2026-08-27）。
+
+      ~~中央に向かって最後の列~~ では取れない。中央には
+      `優勝専修大松戸高校（３年振り２回目）` が1文字ずつ縦に積まれていて、
+      **注記の `３` `２` が決勝の得点より内側の「列」に見える**（実際に取り違えた）。
+      ★**全角だから落とす、という作りにはしない** ——
+      **読み手（`numbersOf`）は全角も数字として読む**ので、半角で刷られたら破れる。
+      ★**縦書きの注記は「行をまたいで中央をはさむ」ことが無い**ので、
+      **読み手の `finalAt: "innermost"` と同じ見方**（行ごとに左右の最も内側の2つを見て、
+      いちばん狭い組を決勝とする）にすれば、そもそも候補にならない。
+    */
+    const byRow = new Map();
+    for (const i of items.filter((i) => /^\d{1,2}$/.test(i.t) && i.x > leftX && i.x < rightX)) {
+      const k = [...byRow.keys()].find((v) => Math.abs(v - i.y) <= 1) ?? i.y;
+      if (!byRow.has(k)) byRow.set(k, []);
+      byRow.get(k).push(i);
+    }
+    const mid = (leftX + rightX) / 2;
+    let best = null;
+    for (const row of byRow.values()) {
+      const l = row.filter((i) => i.x < mid).sort((a, b) => b.x - a.x)[0];
+      const r = row.filter((i) => i.x > mid).sort((a, b) => a.x - b.x)[0];
+      if (!l || !r) continue;
+      if (!best || r.x - l.x < best.r.x - best.l.x) best = { l, r };
+    }
+    if (!best) {
+      console.log("  ⚠️ 千葉: 中央に決勝の得点が見つからない。1試合も出さない");
+      return null;
+    }
+    const finalL = { x: best.l.x };
+    const finalR = { x: best.r.x };
+    /*
+      ★**準決勝の帯＝決勝より外側で、数字が2つ以上ある最後の列。**
+      その2つの中間で切れば、決勝の欄（と中央の縦書き）が半分の組み立てから外れる。
+    */
+    const semiL = [...numbered].reverse().find((c) => c.x > leftX && c.x < finalL.x - 2 && c.n >= 2);
+    const semiR = numbered.find((c) => c.x < rightX && c.x > finalR.x + 2 && c.n >= 2);
+    if (!semiL || !semiR) {
+      console.log("  ⚠️ 千葉: 決勝の外側に準決勝の帯が見つからない。1試合も出さない");
+      return null;
+    }
+    /*
+      ---- 校名の外側の端 ----
+
+      ★★**シード記号の列を外に置くために、「校名の1文字目の列」で測る**（2026-08-27）。
+
+      ★**「いちばん外の文字」では測れない** —— 夏の紙は**右のシード記号の列（x≒561）に
+      記号でない「宣」が1文字だけ紛れている**ので、そこまで含めてしまう
+      （**`千葉商大付Ｃ` のような校名が画面に出る**。実際に出た）。
+
+      ★**校名の1文字目の列はスロットの数だけ字がある**（夏74・春秋24）のに対し、
+      **記号の列はシード校のぶんしか無い**（8つ・4つ）。**密な列で端を決める。**
+    */
+    const slotCount = left.length;
+    /** スロット番号より外（校名の側）の列。**表題や球場の凡例は内側にあるので入らない** */
+    const outerCols = (() => {
+      const byX = new Map();
+      for (const i of items) {
+        if (!i.t || (i.x > leftX && i.x < rightX)) continue;
+        const k = [...byX.keys()].find((v) => Math.abs(v - i.x) <= 2.5) ?? i.x;
+        byX.set(k, (byX.get(k) ?? 0) + 1);
+      }
+      return [...byX.entries()].map(([x, n]) => ({ x, n })).sort((a, b) => a.x - b.x);
+    })();
+    if (outerCols.length < 2) {
+      console.log("  ⚠️ 千葉: 校名の列が見つからない。紙の形が変わった可能性がある");
+      return null;
+    }
+    /*
+      ★**いちばん外の列が「まばら」ならシード記号の列**（スロットの数の半分も字が無い）。
+      そのときは**その内側で切る。** 密なら校名の1文字目なので**その外側で切る。**
+      ★**連合チームの校名は他より長く、密な列より外に字がある**ので、
+      **「校名の列の外側」で切ってはいけない**（`八街` が `八` になった）。
+    */
+    const edgeOf = (col, side) =>
+      col.n < slotCount * 0.5 ? col.x + side * 2 : col.x - side * 2;
+    return {
+      leftX,
+      rightX,
+      half: (finalL.x + finalR.x) / 2,
+      ranges: [
+        [edgeOf(outerCols[0], 1), (semiL.x + finalL.x) / 2],
+        [(finalR.x + semiR.x) / 2, edgeOf(outerCols.at(-1), -1)],
+      ],
+    };
+  },
+
+  /**
+   * ★★**シード記号の列を、校名の側から丸ごと落とす**（2026-08-27。春季・秋季）。
+   *
+   * 春季の紙は**◎が校名とスロット番号のあいだ**（x≒94 と x≒493）にあり、
+   * 範囲では切り分けられない（**校名と同じ側**にあるため）。
+   * 落とさないと **`専修大松戸◎` `◎千葉学芸` のような校名が画面に出る**
+   * （実際に8校がそうなり、どれも学校に結び付かなかった）。
+   *
+   * ★★**記号を文字で消さないこと**（千葉で「宣」を巻き込んだ轍。上の説明を読むこと）。
+   * **列ごと落とす。** 見分け方は
+   * **「その列の断片が全部1文字で、漢字もかなも1つも無い」** ——
+   * 校名の列には必ず漢字かかなが入る。
+   * ★**`光英ＶＥＲＩＴＡＳ` は1断片7文字**なので巻き込まない（1文字の列だけを見る）。
+   * ★**スロット番号より内側（得点の側）は見ない**（数字の列を落としてしまう）。
+   */
+  stripMarkColumns(raw, leftX, rightX) {
+    const outside = (x) => x < leftX || x > rightX;
+    const cols = new Map();
+    for (const l of raw.lines) {
+      for (const i of l.items) {
+        const t = normalize(i.text.trim());
+        if (!t || !outside(i.x)) continue;
+        const k = [...cols.keys()].find((v) => Math.abs(v - i.x) <= 2.5) ?? i.x;
+        cols.set(k, (cols.get(k) ?? []).concat(t));
+      }
+    }
+    const marks = [...cols.entries()]
+      .filter(([, ts]) => ts.every((t) => t.length === 1 && !/[一-龥ぁ-んァ-ヶ]/.test(t)))
+      .map(([x]) => x);
+    if (!marks.length) return raw;
+    const drop = (i) => outside(i.x) && marks.some((x) => Math.abs(x - i.x) <= 2.5);
+    let n = 0;
+    const lines = raw.lines.map((l) => {
+      const items = l.items.filter((i) => !drop(i));
+      n += l.items.length - items.length;
+      return { ...l, items, text: items.map((i) => i.text).join("\t") };
+    });
+    console.log(`  （千葉: 校名の外のシード記号の列（x≒${marks.map((x) => x.toFixed(0)).join("・")}）の ${n} 件を落とす）`);
+    return { page: raw.page, lines };
   },
 };
 
@@ -12301,6 +12827,13 @@ const fukuoka = {
     if (/選手権/.test(title)) return "summer";
     if (/春季/.test(title)) return "spring";
     if (/秋季/.test(title)) return "autumn";
+    /*
+      ★★**2020年は選手権が中止で、県独自の大会が代わりに開かれた**
+      （`2020年がんばれ福岡2020高等学校野球大会`。2026-08-28 に足した）。
+      **夏として収める**（奈良の「令和2年度奈良県高等学校夏季野球大会」と同じ扱い）。
+      ★**名指しで拾う。** 「◯◯大会」を広く夏に寄せると、1年生大会や招待試合まで入る。
+    */
+    if (/がんばれ福岡\s*2020/.test(title)) return "summer";
     return null;
   },
   async collect({ fetchHtml, season, year }) {
@@ -12362,8 +12895,15 @@ const fukuoka = {
       検算で落ちたときに次（＝1年前）を試すと、**古い大会が「今の季節」として出る。**
       実際に**2025年の秋季が落ちて、2024年の秋季が出た**（2年前の試合が画面に並ぶ）。
       ★**落ちたらその季節は0件にする**のが正しい。前の内容は季節ごとの歯止めが残す。
+
+      ★★**`--year` で過去年を取れるようにした**（2026-08-28。25大会・2018年まで）。
+      ★**春季・秋季は題が毎年まったく同じ**（`春季九州地区高校野球 福岡県大会`）なので、
+      **年は開いてみないと分からない。** 上から順に開いて、**年が合った1件だけ**を使う。
+      ★**「合わなければ次を試す」ではない** —— 目当ての年の大会が落ちたら**0件**にする
+      （上に書いた「古い大会が今の季節として出る」を繰り返さないため）。
     */
-    for (const link of links.slice(0, 1)) {
+    const wanted = [];
+    for (const link of links) {
       const html = await get(link.url);
       if (!html) continue;
       /*
@@ -12376,6 +12916,11 @@ const fukuoka = {
         console.log(`  ⚠️ 福岡: 「${link.title}」の大会期間から西暦を読めない`);
         continue;
       }
+      if (y !== year) continue;
+      wanted.push({ link, html, period, y });
+      break;
+    }
+    for (const { link, html, period, y } of wanted) {
       const bracket = base + (/<a[^>]+href="(\/tournament\/[^"]+)"/.exec(html)?.[1] ?? "");
       /*
         ★**「出場校」の一覧はスロット順**（実測で 折尾=1・大和青藍=2・…・
@@ -12548,7 +13093,14 @@ const fukuoka = {
       out.push({
         date,
         season: info.season,
-        tournament: info.title,
+        /*
+          ★★**春季・秋季は題が毎年まったく同じ**（`春季九州地区高校野球 福岡県大会`。2026-08-28）。
+          **年を足さないと、何年ぶんかが画面で1つの大会に潰れる**
+          （`listTournaments` は「季節＋大会名」でまとめるため）。
+          ★**年は大会期間の西暦**（紙とは別の場所から来る事実）。宮崎・千葉と同じ西暦の付け方。
+          ★**夏は足さない**（`第N回…選手権` で年ごとに違う名前になる）。
+        */
+        tournament: /選手権/.test(info.title) ? info.title : `${info.year}年 ${info.title}`,
         round: g.round,
         venue: (mark && built.legend.get(mark)) ?? null,
         teams: [

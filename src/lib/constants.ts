@@ -43,10 +43,16 @@ export const OPERATOR: {
   establishedYear: number;
 } = {
   name: "公立応援団 編集部",
-  // TODO(公開前): 問い合わせ用のGmailを取得したら入れる。
-  // 応援メッセージを預かっている以上、削除依頼・通報の受け皿が要る。
-  // Xだけだと、Xアカウントを持たない人が削除を求められない。
-  contactEmail: null,
+  /*
+   * 応援メッセージを預かっている以上、削除依頼・通報の受け皿が要る。
+   *
+   * ★★**このアドレスは Cloudflare Email Routing で運営者のGmailへ転送する。**
+   * **転送が実際に届くことを確かめるまでサイトを公開しないこと** ——
+   * 届かないアドレスを窓口として出すと、削除依頼が届かないまま
+   * 「窓口はある」ように見える（窓口が無いより悪い）。
+   * 手順は README の「2. ドメイン取得」にある。
+   */
+  contactEmail: "info@kouritsu-ouendan.com",
   establishedYear: 2026,
 };
 

@@ -3,6 +3,7 @@ import { SITE } from "@/lib/constants";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { JsonLd } from "@/components/common/JsonLd";
+import { Analytics } from "@/components/common/Analytics";
 import { websiteJsonLd } from "@/lib/seo";
 import "./globals.css";
 
@@ -54,6 +55,8 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        {/* アクセス解析。測定IDが無い環境では何も出さない（Analytics 参照） */}
+        <Analytics />
       </body>
     </html>
   );

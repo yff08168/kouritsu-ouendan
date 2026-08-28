@@ -73,7 +73,17 @@ jobs:
           set -eu
 
           # ★収録状況.md も生成物（`build-regional-results.mjs` が書き直す）。入れ忘れると一覧だけ古くなる
-          TARGETS="src/lib/data/regional src/lib/data/regional-pickup.ts 収録状況.md"
+          #
+          # ★★**`regional-progress.ts` を入れ忘れていた**（2026-08-28 に修正）。
+          #   `src/lib/data/regional` は**ディレクトリの pathspec** なので、
+          #   その**外にある** `regional-progress.ts`（進捗地図の生成物）を拾わない。
+          #   **スクリプトは毎回書き直しているのに、一度もコミットされていなかった** ——
+          #   県ごとの試合は自動で新しくなるのに、**`/regional` の地図だけが
+          #   手でコミットした日のまま凍る。**
+          #   ★**警告もエラーも出ない。** 気づけたのは「最後に変えたコミット」を
+          #   `git log -- <ファイル>` で見たから。
+          #   ★**生成物を足したら、ここに書き足すこと。**
+          TARGETS="src/lib/data/regional src/lib/data/regional-progress.ts src/lib/data/regional-pickup.ts 収録状況.md"
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

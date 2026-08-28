@@ -239,6 +239,18 @@ export type RegionalProgressBoard = {
    */
   season: RegionalSeason | null;
   latestDate: string | null;
+  /**
+   * ★**出典を最後に見に行った時刻**（2026-08-28 追加。`2026-08-28T13:04:00Z`）。
+   *
+   * ★★**`latestDate`（最後の試合の日）とは別物。**
+   * 大会の谷間や雨天中止で**何日も試合が無い**ことがあり、
+   * そのとき `latestDate` だけを出すと**サイトが止まっているように見える。**
+   * 毎日見に来る人に「今日も見に行った（試合が無かった）」を伝えるための値。
+   *
+   * ★**任意の項目。** 生成物を作り直すまでは入っていないので、
+   * **無ければ画面に出さない**（`app/regional/page.tsx`）。
+   */
+  generatedAt?: string;
   districts: RegionalProgress[];
 };
 
@@ -270,6 +282,26 @@ export function formatRegionalDate(iso: string): string {
   const m = iso.match(/^\d{4}-(\d{2})-(\d{2})$/);
   if (!m) return iso;
   return `${Number(m[1])}月${Number(m[2])}日`;
+}
+
+/**
+ * 「2026-08-28T13:04:00Z」→「2026年8月28日 22:04」（日本時間）。
+ *
+ * ★★**サーバーのタイムゾーンに頼らないこと。** Vercel の実行環境は UTC で、
+ * `toLocaleString` の既定にすると**日本の利用者に9時間前の時刻**が出る。
+ * ★**9時間足してから UTC として読む**ので、どこで実行しても同じ文字列になる
+ * （ISRで作り置きするページなので、**実行環境で変わってはいけない**）。
+ * ★**日本にしか読者がいないサイト**なので、時差の扱いはこれで足りる。
+ */
+export function formatUpdatedAt(iso: string): string {
+  const t = Date.parse(iso);
+  if (Number.isNaN(t)) return "";
+  const jst = new Date(t + 9 * 60 * 60 * 1000);
+  const pad = (n: number) => String(n).padStart(2, "0");
+  return (
+    `${jst.getUTCFullYear()}年${jst.getUTCMonth() + 1}月${jst.getUTCDate()}日 ` +
+    `${pad(jst.getUTCHours())}:${pad(jst.getUTCMinutes())}`
+  );
 }
 
 const SEASON_LABEL: Record<RegionalSeason, string> = {
@@ -318,6 +350,23 @@ export function pickRegionalGames(
 /** その試合に出ている公立校（連合チームは除く） */
 export function publicTeams(game: { teams: RegionalTeam[] }): RegionalTeam[] {
   return game.teams.filter((t) => t.slug && !t.combined);
+}
+
+/**
+ * その学校が出た試合を、県の全試合から拾う。
+ *
+ * ★★**学校ページの表示と、検索インデックスの判定（`school-index.ts`）が
+ * どちらもこれを見る。** 別々に書くと「index したのに画面は空」
+ * （またはその逆）が起きる。**絞り込みの規則はここ1か所に置く。**
+ *
+ * ★**連合チームを特別扱いしない。** 連合チームの `slug` は生成側で
+ * null にしてあるので、ここで当たることはない。
+ */
+export function regionalGamesOf(
+  games: RegionalGame[],
+  schoolSlug: string,
+): RegionalGame[] {
+  return games.filter((g) => g.teams.some((t) => t.slug === schoolSlug));
 }
 
 /**

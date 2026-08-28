@@ -15468,22 +15468,72 @@ async function main() {
     };
   });
 
-  const progressFile =
+  /*
+    ★**進捗の生成物を組み立てる。**
+
+    `generatedAt` は**中身が変わったときだけ**新しくする。詳しくは下の
+    `keepStampIfUnchanged` を読むこと。
+  */
+  const renderProgress = (board) =>
     `// このファイルは scripts/build-regional-results.mjs が生成する。直接編集しない。\n` +
     `// タイル地図に出す「今季の進捗」。**47地区ぶんの1行だけ**（県ごとの試合は別ファイル）。\n\n` +
     `import type { RegionalProgressBoard } from "@/lib/regional-results";\n\n` +
     `export const REGIONAL_PROGRESS: RegionalProgressBoard = ${JSON.stringify(
-      { season: pickupSeason, latestDate, districts: progress },
+      board,
       null,
       2,
     )};\n`;
+
+  const board = {
+    season: pickupSeason,
+    latestDate,
+    /*
+      ★**データが最後に変わった時刻**（2026-08-28 追加。`app/regional/page.tsx` が出す）。
+      ★★**`latestDate`（最後の試合の日）とは別物。**
+      大会の谷間や雨天中止で何日も試合が無いと、`latestDate` だけでは
+      **サイトが止まっているように見える。**
+      ★**秒より下は落とす**（差分を読むときに邪魔になるだけ）。
+    */
+    generatedAt: new Date().toISOString().replace(/\.\d+Z$/, "Z"),
+    districts: progress,
+  };
+  const progressFile = keepStampIfUnchanged(renderProgress, board);
   writeFileSync(OUT_PROGRESS, progressFile, "utf8");
   const counted = progress.filter((p) => p.state === "playing" || p.state === "done").length;
+
   console.log(
     `  書き出した: ${path.relative(ROOT, OUT_PROGRESS)}` +
       `（${counted} 地区に今季の試合あり／終了 ${progress.filter((p) => p.state === "done").length}）`,
   );
 
+}
+
+/**
+ * 生成物の時刻印を、**中身が変わったときだけ**新しくする。
+ *
+ * ------------------------------------------------------------------
+ * ★★**時刻を素直に書くと、CIが中身の無いコミットを積み続ける。**
+ *
+ * 地方大会の更新は1日2回走る。時刻をそのまま書くと**試合が1つも
+ * 増えなかった日でもファイルが変わる**ので、毎日2つの空コミットが積まれる。
+ * これはこのリポジトリが繰り返し避けてきたこと
+ * （「抜粋のシャッフルは表示時にやる」「1試合も取れなかった県は書き換えない」）。
+ *
+ * ★**そこで「時刻以外が前と同じなら、前の時刻を据え置く」。**
+ * 画面に出る「最終更新」は**データが最後に変わった日時**という意味になり、
+ * 空コミットは1つも積まれない。
+ *
+ * @param render 生成物の全文を作る関数
+ * @param board  `generatedAt` を持つ生成物の中身
+ */
+function keepStampIfUnchanged(render, board) {
+  const next = render(board);
+  if (!existsSync(OUT_PROGRESS)) return next;
+  const prev = readFileSync(OUT_PROGRESS, "utf8");
+  const stamp = prev.match(/"generatedAt": "([^"]+)"/)?.[1];
+  if (!stamp) return next;
+  // ★**前の時刻を差し込んで全文が一致するか**で「中身が同じ」を判定する
+  return render({ ...board, generatedAt: stamp }) === prev ? prev : next;
 }
 
 await main();

@@ -23,7 +23,8 @@ import { SchoolKoshienRecord } from "@/components/schools/SchoolKoshienRecord";
 import { KOSHIEN_GAMES, koshienGamesOf } from "@/lib/koshien-games";
 import { JINGU_GAMES, jinguGamesOf } from "@/lib/jingu-games";
 import { shortSchoolName } from "@/lib/school-name";
-import { getRegionalDistrict } from "@/lib/regional-results";
+import { getRegionalDistrict, regionalGamesOf } from "@/lib/regional-results";
+import { isIndexableSchool } from "@/lib/school-index";
 import { headToHead } from "@/lib/head-to-head";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { NewsCard } from "@/components/news/NewsCard";
@@ -47,7 +48,7 @@ import { getPhenomenaBySchool } from "@/lib/queries/phenomena";
 import { getCheerMessages } from "@/lib/queries/community";
 import { JsonLd } from "@/components/common/JsonLd";
 import { schoolJsonLd } from "@/lib/seo";
-import type { SchoolDetail } from "@/types/app";
+
 import { ESTABLISHMENTS, SCHOOL_KINDS, establishmentLabel } from "@/lib/constants";
 import { bestResultBySeason } from "@/lib/koshien";
 import { TWENTY_FIRST_CENTURY_BERTHS } from "@/lib/data/twenty-first-century";
@@ -74,20 +75,45 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const koshienTotal =
     school.koshienSpringCount + school.koshienSummerCount;
+
+  /*
+    ★**地方大会の戦績**（2026-08-28 追加）。
+    **index の判定材料**であり、**description に書く中身**でもある。
+
+    ★**その県のファイルだけを読む**（全国ぶんは6MB近くある）。
+    **対応していない県は0件**になるだけで、判定は甲子園出場歴で従来どおり通る。
+    ★**本文側でも同じものを読んでいる**が、Next の import キャッシュが効くので
+    県ごとに1回しか読み込まれない。
+  */
+  const regionalDistrict = await getRegionalDistrict(school.prefecture.slug);
+  const regionalGames = regionalGamesOf(
+    regionalDistrict?.games ?? [],
+    school.slug,
+  ).length;
+
   const description = [
     `${school.officialName}（${school.prefecture.name}${school.city ? `・${school.city}` : ""}）の野球部情報。`,
     koshienTotal > 0
       ? `甲子園出場${koshienTotal}回。`
-      : "甲子園出場記録・最近の戦績を掲載。",
-    "関連ニュース、公立旋風、同じ都道府県の公立高校もまとめて確認できます。",
+      : "",
+    /*
+      ★**何が載っているかを数で書く。**
+      ★★**どちらも無いページに「戦績を掲載」と書かないこと** ——
+      画面には「まだありません」しか出ない。**検索結果とSNSに出る文なので、
+      無いものを書かない**（サイト全体で守っている線）。
+    */
+    regionalGames > 0 ? `地方大会の試合結果${regionalGames}件を掲載。` : "",
+    koshienTotal === 0 && regionalGames === 0
+      ? "所在地・設置区分などの基本情報を掲載しています。"
+      : "同じ都道府県の公立高校、公立旋風もまとめて確認できます。",
   ].join("");
 
   return {
     title: `${school.name}（${school.prefecture.name}）`,
     description,
     alternates: { canonical: `/schools/${school.slug}` },
-    // 中身の無いページは検索インデックスに入れない。理由は下の isIndexable を参照。
-    robots: isIndexable(school)
+    // 中身の無いページは検索インデックスに入れない。理由は `lib/school-index.ts`。
+    robots: isIndexableSchool({ koshienCount: koshienTotal, regionalGames })
       ? undefined
       : { index: false, follow: true },
     openGraph: {
@@ -98,24 +124,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-/**
- * 検索インデックスに入れてよい学校ページか。
- *
- * **3,505校のうち甲子園出場歴があるのは678校だけ。** 残り約2,827校のページは
- * 校名・所在地・区分しか無く、あとは「まだありません」が3つ並ぶだけになる。
- * 同じ形の空ページが2,800枚あるとサイト全体が「薄いコンテンツ」と見なされ、
- * ランキングや公立旋風など中身のあるページの評価まで巻き添えになる。
- *
- * そこで**中身が入るまでは noindex**、ただし `follow` は残して内部リンクの
- * 評価は流す。ユーザーは今までどおり閲覧できる。
- *
- * 判定に非正規化列（koshien_*_count）だけを使っているのは、3,505ページぶんの
- * ビルドで追加のクエリを打たないため。**戦績やニュースを入れ始めたら、
- * それも判定材料に足すこと**（いまはどちらも実データが0件なので効かない）。
- */
-function isIndexable(school: SchoolDetail): boolean {
-  return school.koshienSpringCount + school.koshienSummerCount > 0;
-}
+/*
+  ★**index の判定は `lib/school-index.ts` に移した**（2026-08-28）。
+  **sitemap と同じ関数を見るため。** ここに書き戻さないこと ——
+  2か所に置くと「sitemap に載っているのに noindex」がいつか必ず起きる。
+*/
 
 export default async function SchoolDetailPage({ params }: Props) {
   const { slug } = await params;
@@ -139,8 +152,10 @@ export default async function SchoolDetailPage({ params }: Props) {
     ★**県のファイルだけを読む**（全国ぶんは6MBある）。**対応していない県は空。**
   */
   const regionalDistrict = await getRegionalDistrict(school.prefecture.slug);
-  const regionalRecord = (regionalDistrict?.games ?? []).filter((g) =>
-    g.teams.some((t) => t.slug === school.slug),
+  // ★**index の判定（generateMetadata）と同じ関数で絞る。** 片方だけ変えない
+  const regionalRecord = regionalGamesOf(
+    regionalDistrict?.games ?? [],
+    school.slug,
   );
   /*
     ★**甲子園の試合**（2026-08-23）。大会記事から作った生成物。

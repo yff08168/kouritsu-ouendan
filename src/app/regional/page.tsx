@@ -11,6 +11,7 @@ import {
 import { REGIONAL_PROGRESS } from "@/lib/data/regional-progress";
 import {
   formatRegionalDate,
+  formatUpdatedAt,
   seasonLabel,
   type RegionalProgress,
 } from "@/lib/regional-results";
@@ -158,6 +159,27 @@ export default function RegionalPage() {
             </>
           )}
         </p>
+
+        {/*
+          ★★**「最終更新」を出す**（2026-08-28）。
+
+          大会期間中に**毎日見に来る人**への表示。上の「◯月◯日の試合まで」だけだと、
+          **週末しか試合が無い時期にサイトが止まって見える。**
+          ★**これは「データが最後に変わった日時」**で、出典を見に行った時刻ではない
+          （時刻をそのまま書くとCIが中身の無いコミットを積むため。
+          `scripts/build-regional-results.mjs` の `keepStampIfUnchanged`）。
+          ★**生成物を作り直すまでは入っていない**ので、無ければ何も出さない。
+        */}
+        {REGIONAL_PROGRESS.generatedAt && (
+          <p className="mt-2 text-sm text-ink-faint">
+            最終更新：
+            <time dateTime={REGIONAL_PROGRESS.generatedAt}>
+              {formatUpdatedAt(REGIONAL_PROGRESS.generatedAt)}
+            </time>
+            {/* ★**括弧で区切る。** `margin` だけだと読み上げで前の時刻とつながる */}
+            <span>（結果は1日2回、自動で取り込んでいます）</span>
+          </p>
+        )}
 
         <div className="mt-6">
           <PrefectureMap

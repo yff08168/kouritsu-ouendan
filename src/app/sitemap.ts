@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE, PREFECTURES, RANKINGS } from "@/lib/constants";
-import { getIndexableSchoolSlugs } from "@/lib/queries/schools";
+import { getAllSchoolSlugs, getIndexableSchoolSlugs } from "@/lib/queries/schools";
 import { getAllNewsSlugs } from "@/lib/queries/news";
 import { getAllPhenomenonSlugs } from "@/lib/queries/phenomena";
 import { getAllFeatureSlugs } from "@/lib/queries/features";
@@ -11,6 +11,7 @@ import {
   listKoshienTournaments,
 } from "@/lib/national-tournaments";
 import { vsPath } from "@/lib/head-to-head";
+import { getRegionalSchoolSlugs } from "@/lib/school-index";
 
 // sitemapもISRで作り直す。記事を追加したときに反映されるようにする。
 export const revalidate = 3600;
@@ -24,14 +25,42 @@ const url = (path: string) => new URL(path, SITE.url).toString();
  * sitemapに載ることはない（アプリ側でstatusを除外する必要がない）。
  */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [schoolSlugs, newsSlugs, phenomenonSlugs, featureSlugs] =
-    await Promise.all([
-      // 甲子園出場歴のある学校だけ。出場歴の無い学校は noindex にしている。
-      getIndexableSchoolSlugs(),
-      getAllNewsSlugs(),
-      getAllPhenomenonSlugs(),
-      getAllFeatureSlugs(),
-    ]);
+  const [
+    koshienSchoolSlugs,
+    regionalSchoolSlugs,
+    publishedSchoolSlugs,
+    newsSlugs,
+    phenomenonSlugs,
+    featureSlugs,
+  ] = await Promise.all([
+    // 甲子園出場歴のある学校（678校）
+    getIndexableSchoolSlugs(),
+    // ★**地方大会に出ている学校**（2,184校。2026-08-28 追加）
+    getRegionalSchoolSlugs(),
+    // ★**公開中の学校**（RLS が draft を返さない）。下の絞り込みに使う
+    getAllSchoolSlugs(),
+    getAllNewsSlugs(),
+    getAllPhenomenonSlugs(),
+    getAllFeatureSlugs(),
+  ]);
+
+  /*
+    ★★**sitemap に載せる学校と、noindex にしない学校を一致させる。**
+    判定の規則は `lib/school-index.ts` の `isIndexableSchool` にあり、
+    学校ページもそれを見ている。**ここで条件を書き足さないこと** ——
+    食い違うと「sitemap に載っているのに noindex」という矛盾になる。
+
+    ★**重複を除く。** 甲子園出場歴があって地方大会にも出ている学校は多い。
+
+    ★★**公開中の学校だけに絞る。** 地方大会の生成物は**生成した時点の
+    学校マスタ**と突き合わせた slug を持っているので、その後
+    `status = 'draft'` にした学校（硬式野球部が無いと分かった学校）の slug が
+    残りうる。**そのまま載せると404のURLを検索エンジンに知らせることになる。**
+  */
+  const published = new Set(publishedSchoolSlugs);
+  const schoolSlugs = [...new Set([...koshienSchoolSlugs, ...regionalSchoolSlugs])]
+    .filter((slug) => published.has(slug))
+    .sort();
 
   const now = new Date();
 

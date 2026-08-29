@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { cn } from "@/lib/utils";
 import {
   formatRegionalDateWithYear,
@@ -5,6 +7,7 @@ import {
   type RegionalGame,
   type RegionalSeason,
 } from "@/lib/regional-results";
+import { tournamentDisplayName } from "@/lib/regional-tournaments";
 
 /**
  * その学校の地方大会の戦績。
@@ -26,9 +29,21 @@ import {
 export function SchoolRegionalRecord({
   games,
   schoolSlug,
+  tournamentLinks,
 }: {
   games: RegionalGame[];
   schoolSlug: string;
+  /**
+   * ★**大会ページへのリンクと、そこで使っている表示名**（2026-08-29 追加）。
+   * 鍵は下のグループ分けと同じ `${season}\t${大会名 ?? ""}`。
+   *
+   * ★**呼ぶ側が `listTournaments` から作る**（この部品はスラッグの決め方を知らない）。
+   * ★★**名前も一緒に受け取るのは、大会名を持たない大会があるから。**
+   * ここだけで組み立てると「大会名不明」になり、**同じ大会が大会ページでは
+   * 「2019年選手権予選」と出て食い違う。**
+   * ★**無い大会は素通し**（リンクを出さず、この部品の既定の名前で出す）。
+   */
+  tournamentLinks?: Record<string, { href: string; name: string }>;
 }) {
   if (!games.length) return null;
 
@@ -46,23 +61,54 @@ export function SchoolRegionalRecord({
 
   return (
     <div className="space-y-4">
-      {groups.map((group) => (
+      {groups.map((group) => {
+        /*
+          ★★**その大会のページへ張る**（2026-08-29 追加）。
+
+          学校ページは戦績を並べているのに、**その試合がどの大会のものかへ
+          辿れなかった**（逆向き＝大会ページから学校ページへは張ってある）。
+          利用者にとっては「この大会の全体を見る」という自然な導線で、
+          **2,303 の学校ページから 602 の大会ページへの道**にもなる。
+
+          ★**リンクが引けない大会は素通しにする**（文字だけ出す）。
+        */
+        const link = tournamentLinks?.[group.key];
+        const href = link?.href;
+        // ★**大会ページと同じ名前を優先する**（食い違わせない）
+        const name =
+          link?.name ?? tournamentDisplayName(group.tournament) ?? "大会名不明";
+        return (
         <div key={group.key}>
           <h3 className="flex flex-wrap items-baseline gap-x-2 border-b border-line pb-1.5">
             <span className="rounded bg-navy-50 px-1.5 py-0.5 text-xs font-bold text-navy-700">
               {seasonLabel(group.season)}
             </span>
-            <span className="min-w-0 text-sm font-bold text-navy-800">
-              {group.tournament ?? "大会名不明"}
-            </span>
+            {href ? (
+              <Link
+                href={href}
+                className="min-w-0 text-sm font-bold text-navy-800 underline decoration-line underline-offset-2 hover:decoration-navy-600"
+              >
+                {name}
+              </Link>
+            ) : (
+              <span className="min-w-0 text-sm font-bold text-navy-800">{name}</span>
+            )}
           </h3>
           <ul className="mt-1.5 divide-y divide-line">
             {group.games.map((g, i) => (
               <GameRow key={i} game={g} schoolSlug={schoolSlug} />
             ))}
           </ul>
+          {href && (
+            <p className="mt-1.5 text-right text-xs">
+              <Link href={href} className="text-navy-700 hover:underline">
+                この大会の全試合とトーナメント表 →
+              </Link>
+            </p>
+          )}
         </div>
-      ))}
+        );
+      })}
     </div>
   );
 }

@@ -23,8 +23,13 @@ import { SchoolKoshienRecord } from "@/components/schools/SchoolKoshienRecord";
 import { KOSHIEN_GAMES, koshienGamesOf } from "@/lib/koshien-games";
 import { JINGU_GAMES, jinguGamesOf } from "@/lib/jingu-games";
 import { shortSchoolName } from "@/lib/school-name";
-import { getRegionalDistrict, regionalGamesOf } from "@/lib/regional-results";
+import {
+  getRegionalDistrict,
+  regionalGamesOf,
+  seasonLabel,
+} from "@/lib/regional-results";
 import { isIndexableSchool } from "@/lib/school-index";
+import { listTournaments } from "@/lib/regional-tournaments";
 import { headToHead } from "@/lib/head-to-head";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { NewsCard } from "@/components/news/NewsCard";
@@ -172,6 +177,23 @@ export default async function SchoolDetailPage({ params }: Props) {
     regionalDistrict?.games ?? [],
     school.slug,
   );
+  /*
+    ★★**その学校が出た大会のページへのリンク**（2026-08-29 追加）。
+
+    鍵は `SchoolRegionalRecord` のグループ分けと同じ `${季節}\t${大会名 ?? ""}`。
+    ★**スラッグの決め方は `listTournaments` の中にある**ので、
+    **部品側で組み立てないこと**（連番の規則が2か所に散る）。
+  */
+  const tournamentLinks: Record<string, { href: string; name: string }> = {};
+  if (regionalDistrict) {
+    for (const t of listTournaments(regionalDistrict)) {
+      tournamentLinks[`${t.season}\t${t.name ?? ""}`] = {
+        href: `/prefectures/${school.prefecture.slug}/${t.slug}`,
+        // ★**大会ページの見出しと同じ作り方**（名前が無い大会は年＋季節）
+        name: t.displayName ?? `${t.year ?? ""}年${seasonLabel(t.season)}`,
+      };
+    }
+  }
   /*
     ★**甲子園の試合**（2026-08-23）。大会記事から作った生成物。
     ★★**校名は完全一致でしか結び付けない**（`koshienGamesOf`）。
@@ -461,6 +483,7 @@ export default async function SchoolDetailPage({ params }: Props) {
               <SchoolRegionalRecord
                 games={regionalRecord}
                 schoolSlug={school.slug}
+                tournamentLinks={tournamentLinks}
               />
             </div>
           ) : (

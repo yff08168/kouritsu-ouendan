@@ -12,6 +12,7 @@ import {
 } from "@/lib/national-tournaments";
 import { vsPath } from "@/lib/head-to-head";
 import { getRegionalSchoolSlugs } from "@/lib/school-index";
+import { listArchiveYears } from "@/lib/archive";
 
 // sitemapもISRで作り直す。記事を追加したときに反映されるようにする。
 export const revalidate = 3600;
@@ -82,6 +83,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url("/jingu"), lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     // 地方大会の進捗。大会中は毎日変わる
     { url: url("/regional"), lastModified: now, changeFrequency: "daily", priority: 0.8 },
+    // ★**年別アーカイブ**（2026-08-29 追加）。年ページは下でまとめて足す
+    { url: url("/archive"), lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: url("/about"), lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: url("/contact"), lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: url("/privacy"), lastModified: now, changeFrequency: "yearly", priority: 0.1 },
@@ -146,6 +149,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.5,
     })),
   ];
+
+  /*
+    ★**年別アーカイブの年ページ**（2026-08-29 追加）。
+    ★**地方大会がある年だけ**（`listArchiveYears`）。甲子園だけの年は作っていない
+    ので、ここで年を組み立てないこと（ページの無いURLを検索エンジンに知らせることになる）。
+  */
+  const archivePages: MetadataRoute.Sitemap = (await listArchiveYears()).map((y) => ({
+    url: url(`/archive/${y.year}`),
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
+  }));
 
   /*
     ★**直接対決のページ**（2026-08-26 追加）。
@@ -213,6 +228,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...prefecturePages,
     ...tournamentPages,
     ...nationalPages,
+    ...archivePages,
     ...versusPages,
     ...schoolPages,
     ...phenomenonPages,

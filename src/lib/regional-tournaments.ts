@@ -266,6 +266,14 @@ export type TournamentSummary = {
   teams: number;
   /** 優勝校の表示名。決勝が読めないときは null */
   champion: string | null;
+  /**
+   * ★**優勝校が公立なら slug**（2026-08-29 追加）。
+   * 私立・県外・連合チームは null。
+   * ★**「公立が優勝した大会」を数えるのに要る**（`lib/records.ts`）。
+   * ★**ここで返すのは、決勝がちょうど1試合のときだけという上の規則を
+   * 通ったものだけ。** 呼ぶ側で決勝を探し直さないこと。
+   */
+  championSlug: string | null;
   /** 準優勝校。優勝校が取れたときだけ */
   runnerUp: string | null;
 };
@@ -291,6 +299,8 @@ export function summarizeTournament(entry: TournamentEntry): TournamentSummary {
     ).length,
     teams: names.size,
     champion: champ?.display ?? null,
+    // ★**連合チームは1校の記録にしない**（生成側で slug は null だが、念のため揃える）
+    championSlug: champ && !champ.combined ? champ.slug : null,
     runnerUp: runner?.display ?? null,
   };
 }

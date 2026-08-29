@@ -4,6 +4,15 @@ import { Container } from "@/components/layout/Container";
 import { Logo } from "@/components/layout/Logo";
 // ★`XIcon` は X のボタンを戻すときに一緒に戻す（下の注記を読むこと）
 
+/**
+ * ★**グローバルナビ（`NAV`）に入れずフッターにだけ置くもの**（2026-08-29）。
+ *
+ * 年別アーカイブはハブであって、毎日見に来る人の導線ではない。
+ * ★**`NAV` に足さない理由は幅**（1024px でナビの右端639px・ボタンの左端847px。
+ * 6つ目を足すとあふれる）。**クローラには全ページのフッターから届く。**
+ */
+const FOOTER_EXTRA_LINKS = [{ href: "/archive", label: "年別アーカイブ" }];
+
 const ABOUT_LINKS = [
   { href: "/about", label: "このサイトについて" },
   { href: "/contact", label: "お問い合わせ" },
@@ -46,7 +55,7 @@ export function Footer() {
           <nav aria-label="コンテンツ">
             <h2 className="text-sm font-bold text-white">コンテンツ</h2>
             <ul className="mt-4 space-y-2.5">
-              {NAV.map((item) => (
+              {[...NAV, ...FOOTER_EXTRA_LINKS].map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}

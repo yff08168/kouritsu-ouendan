@@ -17,6 +17,7 @@ import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { Badge } from "@/components/common/Badge";
 import { Thumbnail } from "@/components/common/Thumbnail";
 import { SectionHeading } from "@/components/common/SectionHeading";
+import { SchoolLead } from "@/components/schools/SchoolLead";
 import { SchoolRegionalRecord } from "@/components/schools/SchoolRegionalRecord";
 import { HeadToHeadList } from "@/components/schools/HeadToHeadList";
 import { SchoolKoshienRecord } from "@/components/schools/SchoolKoshienRecord";
@@ -56,6 +57,7 @@ import { schoolJsonLd } from "@/lib/seo";
 
 import { ESTABLISHMENTS, SCHOOL_KINDS, establishmentLabel } from "@/lib/constants";
 import { bestResultBySeason } from "@/lib/koshien";
+import { buildSchoolLead } from "@/lib/school-lead";
 import { TWENTY_FIRST_CENTURY_BERTHS } from "@/lib/data/twenty-first-century";
 
 // 学校情報は頻繁には変わらないので長めに保つ
@@ -235,6 +237,21 @@ export default async function SchoolDetailPage({ params }: Props) {
   const berthYears = TWENTY_FIRST_CENTURY_BERTHS.filter(
     (berth) => berth.schoolSlug === school.slug,
   ).map((berth) => berth.year);
+
+  /*
+    ★★**リード文**（2026-08-29 追加）。**このページ唯一の地の文。**
+    組み立ての規則と、なぜ生成物にしていないかは src/lib/school-lead.ts に書いてある。
+    ★**ここで文を足さないこと**（規則が2か所に散る）。
+  */
+  const lead = buildSchoolLead({
+    school,
+    championships,
+    regional: regionalRecord,
+    districtName: regionalDistrict?.district ?? null,
+    rivals,
+    berthYears,
+    phenomenaCount: phenomena.length,
+  });
 
   return (
     <Container className="pb-4">
@@ -428,6 +445,12 @@ export default async function SchoolDetailPage({ params }: Props) {
           </div>
         </div>
       </header>
+
+      {/*
+        ★★リード文。見出しの直後に置く（このページ唯一の地の文なので、
+        戦績の表より先に読ませる）。中身が無い学校では何も描かれない。
+      */}
+      <SchoolLead paragraphs={lead} />
 
       {school.description && (
         <section

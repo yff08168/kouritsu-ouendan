@@ -5,6 +5,1570 @@
   "sourceUrl": "http://www.yamanashi-hbf.com/",
   "games": [
     {
+      "date": "2009-05-05",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "市川",
+          "score": 0,
+          "won": false,
+          "name": "市川",
+          "slug": null
+        },
+        {
+          "display": "山梨学院",
+          "score": 1,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-05-04",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "山梨学院",
+          "score": 1,
+          "won": false,
+          "name": "山梨学院",
+          "slug": null
+        },
+        {
+          "display": "日本航空",
+          "score": 3,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-05-02",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "塩山",
+          "score": 7,
+          "won": false,
+          "name": "塩山高校",
+          "slug": "enzan"
+        },
+        {
+          "display": "日本航空",
+          "score": 8,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-05-02",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 8,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "日大明誠",
+          "score": 1,
+          "won": false,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-05-02",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "市川",
+          "score": 4,
+          "won": true,
+          "name": "市川",
+          "slug": null
+        },
+        {
+          "display": "駿台甲府",
+          "score": 1,
+          "won": false,
+          "name": "駿台甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-04-29",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 2,
+          "won": false,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "富士学苑",
+          "score": 3,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-04-29",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "身延",
+          "score": 3,
+          "won": false,
+          "name": "身延高校",
+          "slug": "minobu"
+        },
+        {
+          "display": "市川",
+          "score": 6,
+          "won": true,
+          "name": "市川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-04-29",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 11,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "甲府南",
+          "score": 0,
+          "won": false,
+          "name": "甲府南高校",
+          "slug": "kofuminami"
+        }
+      ]
+    },
+    {
+      "date": "2009-04-29",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "駿台甲府",
+          "score": 1,
+          "won": true,
+          "name": "駿台甲府",
+          "slug": null
+        },
+        {
+          "display": "巨摩",
+          "score": 0,
+          "won": false,
+          "name": "巨摩高校",
+          "slug": "koma"
+        }
+      ]
+    },
+    {
+      "date": "2009-04-27",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "巨摩",
+          "score": 12,
+          "won": true,
+          "name": "巨摩高校",
+          "slug": "koma"
+        },
+        {
+          "display": "桂",
+          "score": 2,
+          "won": false,
+          "name": "桂",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-04-27",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府西",
+          "score": 3,
+          "won": false,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        },
+        {
+          "display": "山梨学院",
+          "score": 12,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-04-27",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "上野原",
+          "score": 1,
+          "won": false,
+          "name": "上野原高校",
+          "slug": "uenohara"
+        },
+        {
+          "display": "市川",
+          "score": 8,
+          "won": true,
+          "name": "市川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-04-27",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "富士北稜",
+          "score": 2,
+          "won": false,
+          "name": "富士北稜高校",
+          "slug": "fujihokuryo"
+        },
+        {
+          "display": "塩山",
+          "score": 9,
+          "won": true,
+          "name": "塩山高校",
+          "slug": "enzan"
+        }
+      ]
+    },
+    {
+      "date": "2009-04-26",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 8,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "白根",
+          "score": 0,
+          "won": false,
+          "name": "白根高校",
+          "slug": "yamanashi-shirone"
+        }
+      ]
+    },
+    {
+      "date": "2009-04-26",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "大月短大附",
+          "score": 0,
+          "won": false,
+          "name": "大月短大附",
+          "slug": null
+        },
+        {
+          "display": "身延",
+          "score": 7,
+          "won": true,
+          "name": "身延高校",
+          "slug": "minobu"
+        }
+      ]
+    },
+    {
+      "date": "2009-04-26",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "駿台甲府",
+          "score": 6,
+          "won": true,
+          "name": "駿台甲府",
+          "slug": null
+        },
+        {
+          "display": "谷村工業",
+          "score": 5,
+          "won": false,
+          "name": "谷村工業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-04-26",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "甲府第一",
+          "score": 1,
+          "won": false,
+          "name": "甲府第一高校",
+          "slug": "kofudaiichi"
+        },
+        {
+          "display": "富士学苑",
+          "score": 8,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-04-26",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "山梨",
+          "score": 3,
+          "won": false,
+          "name": "山梨高校",
+          "slug": "yamanashi"
+        },
+        {
+          "display": "日大明誠",
+          "score": 7,
+          "won": true,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-04-19",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "石和",
+          "score": 0,
+          "won": false,
+          "name": "石和",
+          "slug": null
+        },
+        {
+          "display": "山梨学院",
+          "score": 5,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-04-19",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "増穂商業",
+          "score": 0,
+          "won": false,
+          "name": "増穂商業",
+          "slug": null
+        },
+        {
+          "display": "甲府南",
+          "score": 9,
+          "won": true,
+          "name": "甲府南高校",
+          "slug": "kofuminami"
+        }
+      ]
+    },
+    {
+      "date": "2009-04-19",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府城西",
+          "score": 2,
+          "won": false,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        },
+        {
+          "display": "東海大甲府",
+          "score": 12,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-04-18",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "吉田",
+          "score": 2,
+          "won": false,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        },
+        {
+          "display": "日本航空",
+          "score": 7,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-04-18",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日川",
+          "score": 7,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        },
+        {
+          "display": "甲府商業",
+          "score": 4,
+          "won": false,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2009-04-18",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士北稜",
+          "score": 2,
+          "won": true,
+          "name": "富士北稜高校",
+          "slug": "fujihokuryo"
+        },
+        {
+          "display": "北杜",
+          "score": 1,
+          "won": false,
+          "name": "北杜高校",
+          "slug": "yamanashi-hokuto"
+        }
+      ]
+    },
+    {
+      "date": "2009-04-18",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "塩山",
+          "score": 2,
+          "won": true,
+          "name": "塩山高校",
+          "slug": "enzan"
+        },
+        {
+          "display": "帝京第三",
+          "score": 1,
+          "won": false,
+          "name": "帝京第三",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-04-12",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 4,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "甲府昭和",
+          "score": 2,
+          "won": false,
+          "name": "甲府昭和高校",
+          "slug": "kofushowa"
+        }
+      ]
+    },
+    {
+      "date": "2009-04-12",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "農林",
+          "score": 2,
+          "won": false,
+          "name": "山梨県立農林高校",
+          "slug": "yamanashikenritsunorin"
+        },
+        {
+          "display": "日大明誠",
+          "score": 9,
+          "won": true,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-04-12",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "市川",
+          "score": 8,
+          "won": true,
+          "name": "市川",
+          "slug": null
+        },
+        {
+          "display": "甲府東",
+          "score": 2,
+          "won": false,
+          "name": "甲府東高校",
+          "slug": "kofuhigashi"
+        }
+      ]
+    },
+    {
+      "date": "2009-04-12",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "都留",
+          "score": 0,
+          "won": false,
+          "name": "都留高校",
+          "slug": "tsuru"
+        },
+        {
+          "display": "駿台甲府",
+          "score": 2,
+          "won": true,
+          "name": "駿台甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-04-11",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士北稜",
+          "score": 5,
+          "won": true,
+          "name": "富士北稜高校",
+          "slug": "fujihokuryo"
+        },
+        {
+          "display": "峡南",
+          "score": 1,
+          "won": false,
+          "name": "峡南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-04-11",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士河口湖",
+          "score": 4,
+          "won": false,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        },
+        {
+          "display": "甲府西",
+          "score": 5,
+          "won": true,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        }
+      ]
+    },
+    {
+      "date": "2009-04-11",
+      "season": "spring",
+      "tournament": "第61回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "増穂商業",
+          "score": 23,
+          "won": true,
+          "name": "増穂商業",
+          "slug": null
+        },
+        {
+          "display": "甲陵",
+          "score": 3,
+          "won": false,
+          "name": "甲陵高校",
+          "slug": "yamanashi-koryo"
+        }
+      ]
+    },
+    {
+      "date": "2010-05-04",
+      "season": "spring",
+      "tournament": "第62回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府商業",
+          "score": 4,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        },
+        {
+          "display": "山梨学院",
+          "score": 1,
+          "won": false,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-05-03",
+      "season": "spring",
+      "tournament": "第62回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日川",
+          "score": 3,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        },
+        {
+          "display": "山梨学院",
+          "score": 1,
+          "won": false,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-05-01",
+      "season": "spring",
+      "tournament": "第62回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日川",
+          "score": 5,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        },
+        {
+          "display": "日本航空",
+          "score": 2,
+          "won": false,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-04-30",
+      "season": "spring",
+      "tournament": "第62回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府商業",
+          "score": 7,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        },
+        {
+          "display": "富士北稜",
+          "score": 4,
+          "won": false,
+          "name": "富士北稜高校",
+          "slug": "fujihokuryo"
+        }
+      ]
+    },
+    {
+      "date": "2010-04-25",
+      "season": "spring",
+      "tournament": "第62回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "都留",
+          "score": 2,
+          "won": true,
+          "name": "都留高校",
+          "slug": "tsuru"
+        },
+        {
+          "display": "甲府第一",
+          "score": 1,
+          "won": false,
+          "name": "甲府第一高校",
+          "slug": "kofudaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2010-04-24",
+      "season": "spring",
+      "tournament": "第62回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府昭和",
+          "score": 3,
+          "won": false,
+          "name": "甲府昭和高校",
+          "slug": "kofushowa"
+        },
+        {
+          "display": "市川",
+          "score": 5,
+          "won": true,
+          "name": "市川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-04-19",
+      "season": "spring",
+      "tournament": "第62回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府南",
+          "score": 0,
+          "won": false,
+          "name": "甲府南高校",
+          "slug": "kofuminami"
+        },
+        {
+          "display": "山梨学院",
+          "score": 7,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-04-18",
+      "season": "spring",
+      "tournament": "第62回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 3,
+          "won": false,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "日本航空",
+          "score": 4,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-04-11",
+      "season": "spring",
+      "tournament": "第62回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "上野原",
+          "score": 10,
+          "won": true,
+          "name": "上野原高校",
+          "slug": "uenohara"
+        },
+        {
+          "display": "大月短大附",
+          "score": 0,
+          "won": false,
+          "name": "大月短大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-04-10",
+      "season": "spring",
+      "tournament": "第62回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "峡南",
+          "score": 0,
+          "won": false,
+          "name": "峡南",
+          "slug": null
+        },
+        {
+          "display": "駿台甲府",
+          "score": 2,
+          "won": true,
+          "name": "駿台甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-05-04",
+      "season": "spring",
+      "tournament": "第63回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 8,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "甲府城西",
+          "score": 4,
+          "won": false,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        }
+      ]
+    },
+    {
+      "date": "2011-05-03",
+      "season": "spring",
+      "tournament": "第63回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 5,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "甲府城西",
+          "score": 3,
+          "won": false,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        }
+      ]
+    },
+    {
+      "date": "2011-05-01",
+      "season": "spring",
+      "tournament": "第63回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 4,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "日大明誠",
+          "score": 2,
+          "won": false,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-04-30",
+      "season": "spring",
+      "tournament": "第63回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 11,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "吉田",
+          "score": 0,
+          "won": false,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2011-04-29",
+      "season": "spring",
+      "tournament": "第63回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 6,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "巨摩",
+          "score": 0,
+          "won": false,
+          "name": "巨摩高校",
+          "slug": "koma"
+        }
+      ]
+    },
+    {
+      "date": "2011-04-25",
+      "season": "spring",
+      "tournament": "第63回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士河口湖",
+          "score": 0,
+          "won": false,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        },
+        {
+          "display": "甲府昭和",
+          "score": 7,
+          "won": true,
+          "name": "甲府昭和高校",
+          "slug": "kofushowa"
+        }
+      ]
+    },
+    {
+      "date": "2011-04-24",
+      "season": "spring",
+      "tournament": "第63回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "山梨学院",
+          "score": 2,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        },
+        {
+          "display": "甲府一",
+          "score": 0,
+          "won": false,
+          "name": "甲府第一高校",
+          "slug": "kofudaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2011-04-24",
+      "season": "spring",
+      "tournament": "第63回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "都留",
+          "score": 2,
+          "won": false,
+          "name": "都留高校",
+          "slug": "tsuru"
+        },
+        {
+          "display": "巨摩",
+          "score": 3,
+          "won": true,
+          "name": "巨摩高校",
+          "slug": "koma"
+        }
+      ]
+    },
+    {
+      "date": "2011-04-23",
+      "season": "spring",
+      "tournament": "第63回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "北杜",
+          "score": 4,
+          "won": false,
+          "name": "北杜高校",
+          "slug": "yamanashi-hokuto"
+        },
+        {
+          "display": "日大明誠",
+          "score": 12,
+          "won": true,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-04-20",
+      "season": "spring",
+      "tournament": "第63回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "身延",
+          "score": 6,
+          "won": true,
+          "name": "身延高校",
+          "slug": "minobu"
+        },
+        {
+          "display": "甲府南",
+          "score": 2,
+          "won": false,
+          "name": "甲府南高校",
+          "slug": "kofuminami"
+        }
+      ]
+    },
+    {
+      "date": "2011-04-17",
+      "season": "spring",
+      "tournament": "第63回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府西",
+          "score": 1,
+          "won": false,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        },
+        {
+          "display": "市川",
+          "score": 2,
+          "won": true,
+          "name": "市川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-04-16",
+      "season": "spring",
+      "tournament": "第63回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士北稜",
+          "score": 5,
+          "won": false,
+          "name": "富士北稜高校",
+          "slug": "fujihokuryo"
+        },
+        {
+          "display": "峡南",
+          "score": 8,
+          "won": true,
+          "name": "峡南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-04-10",
+      "season": "spring",
+      "tournament": "第63回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "山梨",
+          "score": 0,
+          "won": false,
+          "name": "山梨高校",
+          "slug": "yamanashi"
+        },
+        {
+          "display": "富士学苑",
+          "score": 6,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-05-07",
+      "season": "spring",
+      "tournament": "第64回春季関東地区高校野球山梨県大会",
+      "round": "3位決定戦",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府城西",
+          "score": 1,
+          "won": false,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        },
+        {
+          "display": "富士河口湖",
+          "score": 4,
+          "won": true,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        }
+      ]
+    },
+    {
+      "date": "2012-05-05",
+      "season": "spring",
+      "tournament": "第64回春季関東地区高校野球山梨県大会",
+      "round": "準決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士河口湖",
+          "score": 1,
+          "won": false,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        },
+        {
+          "display": "東海大甲府",
+          "score": 2,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-05-04",
+      "season": "spring",
+      "tournament": "第64回春季関東地区高校野球山梨県大会",
+      "round": "準々決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 11,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "吉田",
+          "score": 0,
+          "won": false,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2012-04-30",
+      "season": "spring",
+      "tournament": "第64回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "駿台甲府",
+          "score": 1,
+          "won": false,
+          "name": "駿台甲府",
+          "slug": null
+        },
+        {
+          "display": "山梨学院",
+          "score": 11,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-04-29",
+      "season": "spring",
+      "tournament": "第64回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 9,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "塩山",
+          "score": 0,
+          "won": false,
+          "name": "塩山高校",
+          "slug": "enzan"
+        }
+      ]
+    },
+    {
+      "date": "2012-04-29",
+      "season": "spring",
+      "tournament": "第64回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "巨摩",
+          "score": 0,
+          "won": false,
+          "name": "巨摩高校",
+          "slug": "koma"
+        },
+        {
+          "display": "富士河口湖",
+          "score": 10,
+          "won": true,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        }
+      ]
+    },
+    {
+      "date": "2012-04-28",
+      "season": "spring",
+      "tournament": "第64回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "農林",
+          "score": 0,
+          "won": false,
+          "name": "山梨県立農林高校",
+          "slug": "yamanashikenritsunorin"
+        },
+        {
+          "display": "甲府工業",
+          "score": 10,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2012-04-28",
+      "season": "spring",
+      "tournament": "第64回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "甲府城西",
+          "score": 7,
+          "won": true,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        },
+        {
+          "display": "日本航空",
+          "score": 3,
+          "won": false,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-04-22",
+      "season": "spring",
+      "tournament": "第64回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府西",
+          "score": 0,
+          "won": false,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        },
+        {
+          "display": "甲府商業",
+          "score": 5,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2012-04-21",
+      "season": "spring",
+      "tournament": "第64回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲陵",
+          "score": 1,
+          "won": false,
+          "name": "甲陵高校",
+          "slug": "yamanashi-koryo"
+        },
+        {
+          "display": "富士河口湖",
+          "score": 8,
+          "won": true,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        }
+      ]
+    },
+    {
+      "date": "2012-04-17",
+      "season": "spring",
+      "tournament": "第64回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "桂",
+          "score": 5,
+          "won": false,
+          "name": "桂",
+          "slug": null
+        },
+        {
+          "display": "吉田",
+          "score": 6,
+          "won": true,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2012-04-15",
+      "season": "spring",
+      "tournament": "第64回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 8,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "白根",
+          "score": 0,
+          "won": false,
+          "name": "白根高校",
+          "slug": "yamanashi-shirone"
+        }
+      ]
+    },
+    {
+      "date": "2012-04-08",
+      "season": "spring",
+      "tournament": "第64回春季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "身延",
+          "score": 7,
+          "won": true,
+          "name": "身延高校",
+          "slug": "minobu"
+        },
+        {
+          "display": "甲府第一",
+          "score": 4,
+          "won": false,
+          "name": "甲府第一高校",
+          "slug": "kofudaiichi"
+        }
+      ]
+    },
+    {
       "date": "2023-05-07",
       "season": "spring",
       "tournament": "第75回春季関東地区高校野球山梨県大会",
@@ -8409,6 +9973,3710 @@
           "won": false,
           "name": "笛吹高校",
           "slug": "fuefuki"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-21",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 0,
+          "won": false,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "日本航空",
+          "score": 1,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-07-19",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 3,
+          "won": false,
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "日本航空",
+          "score": 5,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-07-19",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 9,
+          "won": true,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "日川",
+          "score": 0,
+          "won": false,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-17",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 2,
+          "won": true,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "北杜",
+          "score": 1,
+          "won": false,
+          "name": "北杜高校",
+          "slug": "yamanashi-hokuto"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-17",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 3,
+          "won": false,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "日川",
+          "score": 10,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-16",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 2,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "東海大甲府",
+          "score": 1,
+          "won": false,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-07-16",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 7,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "甲府城西",
+          "score": 2,
+          "won": false,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-14",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 9,
+          "won": true,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "谷村工業",
+          "score": 2,
+          "won": false,
+          "name": "谷村工業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-07-14",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "巨摩",
+          "score": 4,
+          "won": false,
+          "name": "巨摩高校",
+          "slug": "koma"
+        },
+        {
+          "display": "甲府工業",
+          "score": 5,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-14",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "塩山",
+          "score": 2,
+          "won": false,
+          "name": "塩山高校",
+          "slug": "enzan"
+        },
+        {
+          "display": "日川",
+          "score": 3,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-13",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 10,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "上野原",
+          "score": 0,
+          "won": false,
+          "name": "上野原高校",
+          "slug": "uenohara"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-13",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府城西",
+          "score": 9,
+          "won": true,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        },
+        {
+          "display": "甲府商業",
+          "score": 5,
+          "won": false,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-13",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "石和",
+          "score": 1,
+          "won": false,
+          "name": "石和",
+          "slug": null
+        },
+        {
+          "display": "北杜",
+          "score": 7,
+          "won": true,
+          "name": "北杜高校",
+          "slug": "yamanashi-hokuto"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-13",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 6,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "日大明誠",
+          "score": 4,
+          "won": false,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-07-13",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 16,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "甲府西",
+          "score": 1,
+          "won": false,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-12",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 10,
+          "won": true,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "駿台甲府",
+          "score": 3,
+          "won": false,
+          "name": "駿台甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-07-12",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "白根",
+          "score": 0,
+          "won": false,
+          "name": "白根高校",
+          "slug": "yamanashi-shirone"
+        },
+        {
+          "display": "甲府工業",
+          "score": 10,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-12",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "増穂商業",
+          "score": 3,
+          "won": false,
+          "name": "増穂商業",
+          "slug": null
+        },
+        {
+          "display": "日川",
+          "score": 11,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-12",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "巨摩",
+          "score": 8,
+          "won": true,
+          "name": "巨摩高校",
+          "slug": "koma"
+        },
+        {
+          "display": "山梨",
+          "score": 4,
+          "won": false,
+          "name": "山梨高校",
+          "slug": "yamanashi"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-12",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "富士河口湖",
+          "score": 2,
+          "won": false,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        },
+        {
+          "display": "塩山",
+          "score": 5,
+          "won": true,
+          "name": "塩山高校",
+          "slug": "enzan"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-11",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "石和",
+          "score": 4,
+          "won": true,
+          "name": "石和",
+          "slug": null
+        },
+        {
+          "display": "甲府一",
+          "score": 2,
+          "won": false,
+          "name": "甲府第一高校",
+          "slug": "kofudaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-11",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "大月短大附",
+          "score": 4,
+          "won": false,
+          "name": "大月短大附",
+          "slug": null
+        },
+        {
+          "display": "谷村工業",
+          "score": 5,
+          "won": true,
+          "name": "谷村工業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-07-10",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲陵",
+          "score": 0,
+          "won": false,
+          "name": "甲陵高校",
+          "slug": "yamanashi-koryo"
+        },
+        {
+          "display": "甲府商業",
+          "score": 10,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-10",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "市川",
+          "score": 5,
+          "won": false,
+          "name": "市川",
+          "slug": null
+        },
+        {
+          "display": "甲府城西",
+          "score": 7,
+          "won": true,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-10",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "北杜",
+          "score": 3,
+          "won": true,
+          "name": "北杜高校",
+          "slug": "yamanashi-hokuto"
+        },
+        {
+          "display": "山梨学院",
+          "score": 1,
+          "won": false,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-07-09",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日大明誠",
+          "score": 5,
+          "won": true,
+          "name": "日大明誠",
+          "slug": null
+        },
+        {
+          "display": "峡南",
+          "score": 2,
+          "won": false,
+          "name": "峡南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-07-09",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 6,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "都留",
+          "score": 2,
+          "won": false,
+          "name": "都留高校",
+          "slug": "tsuru"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-09",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "吉田",
+          "score": 5,
+          "won": false,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        },
+        {
+          "display": "甲府西",
+          "score": 6,
+          "won": true,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-08",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 12,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "桂",
+          "score": 1,
+          "won": false,
+          "name": "桂",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-07-08",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "山梨園芸",
+          "score": 1,
+          "won": false,
+          "name": "山梨園芸",
+          "slug": null
+        },
+        {
+          "display": "上野原",
+          "score": 12,
+          "won": true,
+          "name": "上野原高校",
+          "slug": "uenohara"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-08",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "農林",
+          "score": 0,
+          "won": false,
+          "name": "山梨県立農林高校",
+          "slug": "yamanashikenritsunorin"
+        },
+        {
+          "display": "日本航空",
+          "score": 10,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-07-06",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "身延",
+          "score": 7,
+          "won": false,
+          "name": "身延高校",
+          "slug": "minobu"
+        },
+        {
+          "display": "甲府商業",
+          "score": 10,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-06",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府南",
+          "score": 3,
+          "won": false,
+          "name": "甲府南高校",
+          "slug": "kofuminami"
+        },
+        {
+          "display": "石和",
+          "score": 4,
+          "won": true,
+          "name": "石和",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-07-06",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府東",
+          "score": 0,
+          "won": false,
+          "name": "甲府東高校",
+          "slug": "kofuhigashi"
+        },
+        {
+          "display": "帝京第三",
+          "score": 11,
+          "won": true,
+          "name": "帝京第三",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-07-06",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "山梨",
+          "score": 9,
+          "won": true,
+          "name": "山梨高校",
+          "slug": "yamanashi"
+        },
+        {
+          "display": "韮崎工業",
+          "score": 2,
+          "won": false,
+          "name": "韮崎工業高校",
+          "slug": "nirasakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-06",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "富士河口湖",
+          "score": 5,
+          "won": true,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        },
+        {
+          "display": "韮崎",
+          "score": 2,
+          "won": false,
+          "name": "韮崎高校",
+          "slug": "nirasaki"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-05",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日大明誠",
+          "score": 10,
+          "won": true,
+          "name": "日大明誠",
+          "slug": null
+        },
+        {
+          "display": "富士北稜",
+          "score": 3,
+          "won": false,
+          "name": "富士北稜高校",
+          "slug": "fujihokuryo"
+        }
+      ]
+    },
+    {
+      "date": "2008-07-05",
+      "season": "summer",
+      "tournament": "第90回全国高等学校野球選手権記念山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府昭和",
+          "score": 3,
+          "won": false,
+          "name": "甲府昭和高校",
+          "slug": "kofushowa"
+        },
+        {
+          "display": "甲府西",
+          "score": 6,
+          "won": true,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        }
+      ]
+    },
+    {
+      "date": "2009-07-26",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 1,
+          "won": false,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "山梨学院",
+          "score": 3,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-07-25",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 10,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "東海大甲府",
+          "score": 3,
+          "won": false,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-07-23",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "身延",
+          "score": 2,
+          "won": true,
+          "name": "身延高校",
+          "slug": "minobu"
+        },
+        {
+          "display": "駿台甲府",
+          "score": 1,
+          "won": false,
+          "name": "駿台甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-07-22",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "都留",
+          "score": 0,
+          "won": false,
+          "name": "都留高校",
+          "slug": "tsuru"
+        },
+        {
+          "display": "東海大甲府",
+          "score": 3,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-07-20",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "吉田",
+          "score": 4,
+          "won": false,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        },
+        {
+          "display": "駿台甲府",
+          "score": 6,
+          "won": true,
+          "name": "駿台甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-07-20",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "農林",
+          "score": 3,
+          "won": false,
+          "name": "山梨県立農林高校",
+          "slug": "yamanashikenritsunorin"
+        },
+        {
+          "display": "塩山",
+          "score": 6,
+          "won": true,
+          "name": "塩山高校",
+          "slug": "enzan"
+        }
+      ]
+    },
+    {
+      "date": "2009-07-19",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 8,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "市川",
+          "score": 3,
+          "won": false,
+          "name": "市川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-07-19",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "白根",
+          "score": 1,
+          "won": false,
+          "name": "白根高校",
+          "slug": "yamanashi-shirone"
+        },
+        {
+          "display": "身延",
+          "score": 3,
+          "won": true,
+          "name": "身延高校",
+          "slug": "minobu"
+        }
+      ]
+    },
+    {
+      "date": "2009-07-19",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "都留",
+          "score": 5,
+          "won": true,
+          "name": "都留高校",
+          "slug": "tsuru"
+        },
+        {
+          "display": "巨摩",
+          "score": 2,
+          "won": false,
+          "name": "巨摩高校",
+          "slug": "koma"
+        }
+      ]
+    },
+    {
+      "date": "2009-07-19",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "峡南",
+          "score": 0,
+          "won": false,
+          "name": "峡南",
+          "slug": null
+        },
+        {
+          "display": "東海大甲府",
+          "score": 10,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-07-18",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府城西",
+          "score": 1,
+          "won": false,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        },
+        {
+          "display": "山梨学院",
+          "score": 4,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-07-18",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "塩山",
+          "score": 6,
+          "won": true,
+          "name": "塩山高校",
+          "slug": "enzan"
+        },
+        {
+          "display": "甲府西",
+          "score": 3,
+          "won": false,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        }
+      ]
+    },
+    {
+      "date": "2009-07-18",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士北稜",
+          "score": 1,
+          "won": false,
+          "name": "富士北稜高校",
+          "slug": "fujihokuryo"
+        },
+        {
+          "display": "農林",
+          "score": 6,
+          "won": true,
+          "name": "山梨県立農林高校",
+          "slug": "yamanashikenritsunorin"
+        }
+      ]
+    },
+    {
+      "date": "2009-07-16",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "白根",
+          "score": 4,
+          "won": true,
+          "name": "白根高校",
+          "slug": "yamanashi-shirone"
+        },
+        {
+          "display": "上野原",
+          "score": 0,
+          "won": false,
+          "name": "上野原高校",
+          "slug": "uenohara"
+        }
+      ]
+    },
+    {
+      "date": "2009-07-16",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "北杜",
+          "score": 6,
+          "won": false,
+          "name": "北杜高校",
+          "slug": "yamanashi-hokuto"
+        },
+        {
+          "display": "吉田",
+          "score": 7,
+          "won": true,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2009-07-15",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "谷村工業",
+          "score": 5,
+          "won": true,
+          "name": "谷村工業",
+          "slug": null
+        },
+        {
+          "display": "日大明誠",
+          "score": 0,
+          "won": false,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-07-15",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 2,
+          "won": false,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "身延",
+          "score": 3,
+          "won": true,
+          "name": "身延高校",
+          "slug": "minobu"
+        }
+      ]
+    },
+    {
+      "date": "2009-07-14",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "峡南",
+          "score": 2,
+          "won": true,
+          "name": "峡南",
+          "slug": null
+        },
+        {
+          "display": "山梨",
+          "score": 1,
+          "won": false,
+          "name": "山梨高校",
+          "slug": "yamanashi"
+        }
+      ]
+    },
+    {
+      "date": "2009-07-14",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日川",
+          "score": 2,
+          "won": false,
+          "name": "日川高校",
+          "slug": "hikawa"
+        },
+        {
+          "display": "甲府工業",
+          "score": 8,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2009-07-13",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "都留",
+          "score": 7,
+          "won": true,
+          "name": "都留高校",
+          "slug": "tsuru"
+        },
+        {
+          "display": "富士学苑",
+          "score": 3,
+          "won": false,
+          "name": "富士学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-07-13",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "増穂商業",
+          "score": 0,
+          "won": false,
+          "name": "増穂商業",
+          "slug": null
+        },
+        {
+          "display": "東海大甲府",
+          "score": 9,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-07-12",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "桂",
+          "score": 0,
+          "won": false,
+          "name": "桂",
+          "slug": null
+        },
+        {
+          "display": "甲府商業",
+          "score": 2,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2009-07-12",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "農林",
+          "score": 4,
+          "won": true,
+          "name": "山梨県立農林高校",
+          "slug": "yamanashikenritsunorin"
+        },
+        {
+          "display": "甲府東",
+          "score": 1,
+          "won": false,
+          "name": "甲府東高校",
+          "slug": "kofuhigashi"
+        }
+      ]
+    },
+    {
+      "date": "2009-07-12",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "甲府一高",
+          "score": 0,
+          "won": false,
+          "name": "甲府一高",
+          "slug": null
+        },
+        {
+          "display": "白根",
+          "score": 5,
+          "won": true,
+          "name": "白根高校",
+          "slug": "yamanashi-shirone"
+        }
+      ]
+    },
+    {
+      "date": "2009-07-12",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "富士河口湖",
+          "score": 3,
+          "won": false,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        },
+        {
+          "display": "吉田",
+          "score": 10,
+          "won": true,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2009-07-11",
+      "season": "summer",
+      "tournament": "第91回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "峡南",
+          "score": 15,
+          "won": true,
+          "name": "峡南",
+          "slug": null
+        },
+        {
+          "display": "大月短大附",
+          "score": 5,
+          "won": false,
+          "name": "大月短大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-07-25",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日川",
+          "score": 4,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        },
+        {
+          "display": "富士学苑",
+          "score": 3,
+          "won": false,
+          "name": "富士学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-07-24",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日大明誠",
+          "score": 2,
+          "won": false,
+          "name": "日大明誠",
+          "slug": null
+        },
+        {
+          "display": "日川",
+          "score": 3,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-24",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 4,
+          "won": false,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "富士学苑",
+          "score": 5,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-07-22",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "桂",
+          "score": 6,
+          "won": false,
+          "name": "桂",
+          "slug": null
+        },
+        {
+          "display": "富士学苑",
+          "score": 7,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-07-22",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 4,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "甲府商業",
+          "score": 2,
+          "won": false,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-21",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 1,
+          "won": false,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "日川",
+          "score": 8,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-21",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "山梨学院",
+          "score": 5,
+          "won": false,
+          "name": "山梨学院",
+          "slug": null
+        },
+        {
+          "display": "日大明誠",
+          "score": 6,
+          "won": true,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-07-19",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "駿台甲府",
+          "score": 2,
+          "won": false,
+          "name": "駿台甲府",
+          "slug": null
+        },
+        {
+          "display": "日大明誠",
+          "score": 3,
+          "won": true,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-07-19",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 7,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "東海大甲府",
+          "score": 1,
+          "won": false,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-07-19",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府城西",
+          "score": 6,
+          "won": false,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        },
+        {
+          "display": "甲府商業",
+          "score": 7,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-19",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "桂",
+          "score": 4,
+          "won": true,
+          "name": "桂",
+          "slug": null
+        },
+        {
+          "display": "市川",
+          "score": 3,
+          "won": false,
+          "name": "市川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-07-19",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 11,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "塩山",
+          "score": 2,
+          "won": false,
+          "name": "塩山高校",
+          "slug": "enzan"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-18",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "都留",
+          "score": 1,
+          "won": false,
+          "name": "都留高校",
+          "slug": "tsuru"
+        },
+        {
+          "display": "日川",
+          "score": 3,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-18",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 7,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "甲府東",
+          "score": 5,
+          "won": false,
+          "name": "甲府東高校",
+          "slug": "kofuhigashi"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-18",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "巨摩",
+          "score": 1,
+          "won": false,
+          "name": "巨摩高校",
+          "slug": "koma"
+        },
+        {
+          "display": "山梨学院",
+          "score": 5,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-07-17",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "桂",
+          "score": 7,
+          "won": true,
+          "name": "桂",
+          "slug": null
+        },
+        {
+          "display": "韮崎工業",
+          "score": 0,
+          "won": false,
+          "name": "韮崎工業高校",
+          "slug": "nirasakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-17",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 5,
+          "won": false,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "甲府城西",
+          "score": 6,
+          "won": true,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-17",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府西",
+          "score": 0,
+          "won": false,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        },
+        {
+          "display": "塩山",
+          "score": 10,
+          "won": true,
+          "name": "塩山高校",
+          "slug": "enzan"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-16",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府商業",
+          "score": 10,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        },
+        {
+          "display": "谷村工業",
+          "score": 1,
+          "won": false,
+          "name": "谷村工業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-07-16",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "身延",
+          "score": 1,
+          "won": false,
+          "name": "身延高校",
+          "slug": "minobu"
+        },
+        {
+          "display": "市川",
+          "score": 6,
+          "won": true,
+          "name": "市川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-07-16",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 19,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "白根",
+          "score": 0,
+          "won": false,
+          "name": "白根高校",
+          "slug": "yamanashi-shirone"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-15",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 8,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "大月短大附",
+          "score": 1,
+          "won": false,
+          "name": "大月短大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-07-14",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "峡南",
+          "score": 7,
+          "won": false,
+          "name": "峡南",
+          "slug": null
+        },
+        {
+          "display": "東海大甲府",
+          "score": 10,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-07-14",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "駿台甲府",
+          "score": 6,
+          "won": true,
+          "name": "駿台甲府",
+          "slug": null
+        },
+        {
+          "display": "吉田",
+          "score": 1,
+          "won": false,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-14",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "大月短大附",
+          "score": 0,
+          "won": false,
+          "name": "大月短大附",
+          "slug": null
+        },
+        {
+          "display": "富士学苑",
+          "score": 3,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-07-13",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "韮崎",
+          "score": 1,
+          "won": false,
+          "name": "韮崎高校",
+          "slug": "nirasaki"
+        },
+        {
+          "display": "山梨学院",
+          "score": 14,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-07-13",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "巨摩",
+          "score": 9,
+          "won": true,
+          "name": "巨摩高校",
+          "slug": "koma"
+        },
+        {
+          "display": "富士北稜",
+          "score": 1,
+          "won": false,
+          "name": "富士北稜高校",
+          "slug": "fujihokuryo"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-13",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府昭和",
+          "score": 0,
+          "won": false,
+          "name": "甲府昭和高校",
+          "slug": "kofushowa"
+        },
+        {
+          "display": "日大明誠",
+          "score": 10,
+          "won": true,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-07-12",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "増穂商業",
+          "score": 6,
+          "won": false,
+          "name": "増穂商業",
+          "slug": null
+        },
+        {
+          "display": "都留",
+          "score": 8,
+          "won": true,
+          "name": "都留高校",
+          "slug": "tsuru"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-12",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 8,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "甲府第一",
+          "score": 3,
+          "won": false,
+          "name": "甲府第一高校",
+          "slug": "kofudaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-12",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "農林",
+          "score": 10,
+          "won": false,
+          "name": "山梨県立農林高校",
+          "slug": "yamanashikenritsunorin"
+        },
+        {
+          "display": "甲府東",
+          "score": 11,
+          "won": true,
+          "name": "甲府東高校",
+          "slug": "kofuhigashi"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-11",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "上野原",
+          "score": 2,
+          "won": false,
+          "name": "上野原高校",
+          "slug": "uenohara"
+        },
+        {
+          "display": "日川",
+          "score": 8,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-11",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "富士河口湖",
+          "score": 5,
+          "won": false,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        },
+        {
+          "display": "吉田",
+          "score": 8,
+          "won": true,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-11",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 5,
+          "won": true,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "北杜",
+          "score": 0,
+          "won": false,
+          "name": "北杜高校",
+          "slug": "yamanashi-hokuto"
+        }
+      ]
+    },
+    {
+      "date": "2010-07-10",
+      "season": "summer",
+      "tournament": "第92回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府東",
+          "score": 8,
+          "won": true,
+          "name": "甲府東高校",
+          "slug": "kofuhigashi"
+        },
+        {
+          "display": "甲陵",
+          "score": 0,
+          "won": false,
+          "name": "甲陵高校",
+          "slug": "yamanashi-koryo"
+        }
+      ]
+    },
+    {
+      "date": "2011-07-24",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": "決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "山梨学院",
+          "score": 10,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        },
+        {
+          "display": "日本航空",
+          "score": 3,
+          "won": false,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-07-23",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": "準決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府南",
+          "score": 0,
+          "won": false,
+          "name": "甲府南高校",
+          "slug": "kofuminami"
+        },
+        {
+          "display": "山梨学院",
+          "score": 7,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-07-21",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": "準々決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 4,
+          "won": false,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "山梨学院",
+          "score": 5,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-07-21",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": "準々決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 6,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "身延",
+          "score": 3,
+          "won": false,
+          "name": "身延高校",
+          "slug": "minobu"
+        }
+      ]
+    },
+    {
+      "date": "2011-07-21",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": "準々決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "都留",
+          "score": 4,
+          "won": false,
+          "name": "都留高校",
+          "slug": "tsuru"
+        },
+        {
+          "display": "日本航空",
+          "score": 5,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-07-18",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "吉田",
+          "score": 4,
+          "won": false,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        },
+        {
+          "display": "甲府南",
+          "score": 7,
+          "won": true,
+          "name": "甲府南高校",
+          "slug": "kofuminami"
+        }
+      ]
+    },
+    {
+      "date": "2011-07-18",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 5,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "韮崎工業",
+          "score": 4,
+          "won": false,
+          "name": "韮崎工業高校",
+          "slug": "nirasakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2011-07-18",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "身延",
+          "score": 3,
+          "won": true,
+          "name": "身延高校",
+          "slug": "minobu"
+        },
+        {
+          "display": "日川",
+          "score": 1,
+          "won": false,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2011-07-18",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "都留",
+          "score": 11,
+          "won": true,
+          "name": "都留高校",
+          "slug": "tsuru"
+        },
+        {
+          "display": "日大明誠",
+          "score": 10,
+          "won": false,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-07-17",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "北杜",
+          "score": 0,
+          "won": false,
+          "name": "北杜高校",
+          "slug": "yamanashi-hokuto"
+        },
+        {
+          "display": "東海大甲府",
+          "score": 13,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-07-17",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府城西",
+          "score": 6,
+          "won": true,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        },
+        {
+          "display": "帝京第三",
+          "score": 2,
+          "won": false,
+          "name": "帝京第三",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-07-16",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "石和･園芸･笛吹",
+          "score": 0,
+          "won": false,
+          "name": "石和･園芸･笛吹",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "日川",
+          "score": 9,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2011-07-16",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "都留",
+          "score": 13,
+          "won": true,
+          "name": "都留高校",
+          "slug": "tsuru"
+        },
+        {
+          "display": "市川",
+          "score": 7,
+          "won": false,
+          "name": "市川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-07-14",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府商業",
+          "score": 4,
+          "won": false,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        },
+        {
+          "display": "日本航空",
+          "score": 5,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-07-14",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "増穂商業",
+          "score": 2,
+          "won": false,
+          "name": "増穂商業",
+          "slug": null
+        },
+        {
+          "display": "日大明誠",
+          "score": 7,
+          "won": true,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-07-13",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "巨摩",
+          "score": 1,
+          "won": false,
+          "name": "巨摩高校",
+          "slug": "koma"
+        },
+        {
+          "display": "甲府工業",
+          "score": 3,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2011-07-13",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士北稜",
+          "score": 0,
+          "won": false,
+          "name": "富士北稜高校",
+          "slug": "fujihokuryo"
+        },
+        {
+          "display": "甲府第一",
+          "score": 6,
+          "won": true,
+          "name": "甲府第一高校",
+          "slug": "kofudaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2011-07-12",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "峡南",
+          "score": 0,
+          "won": false,
+          "name": "峡南",
+          "slug": null
+        },
+        {
+          "display": "甲府城西",
+          "score": 10,
+          "won": true,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        }
+      ]
+    },
+    {
+      "date": "2011-07-12",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "白根",
+          "score": 0,
+          "won": false,
+          "name": "白根高校",
+          "slug": "yamanashi-shirone"
+        },
+        {
+          "display": "吉田",
+          "score": 5,
+          "won": true,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2011-07-11",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府昭和",
+          "score": 1,
+          "won": false,
+          "name": "甲府昭和高校",
+          "slug": "kofushowa"
+        },
+        {
+          "display": "山梨学院",
+          "score": 11,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-07-11",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士河口湖",
+          "score": 5,
+          "won": true,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        },
+        {
+          "display": "塩山",
+          "score": 2,
+          "won": false,
+          "name": "塩山高校",
+          "slug": "enzan"
+        }
+      ]
+    },
+    {
+      "date": "2011-07-10",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 1,
+          "won": false,
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "東海大甲府",
+          "score": 3,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-07-10",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "市川",
+          "score": 7,
+          "won": true,
+          "name": "市川",
+          "slug": null
+        },
+        {
+          "display": "桂",
+          "score": 3,
+          "won": false,
+          "name": "桂",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-07-10",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "甲陵",
+          "score": 1,
+          "won": false,
+          "name": "甲陵高校",
+          "slug": "yamanashi-koryo"
+        },
+        {
+          "display": "甲府東",
+          "score": 9,
+          "won": true,
+          "name": "甲府東高校",
+          "slug": "kofuhigashi"
+        }
+      ]
+    },
+    {
+      "date": "2011-07-09",
+      "season": "summer",
+      "tournament": "第93回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "塩山",
+          "score": 7,
+          "won": true,
+          "name": "塩山高校",
+          "slug": "enzan"
+        },
+        {
+          "display": "駿台甲府",
+          "score": 2,
+          "won": false,
+          "name": "駿台甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-07-22",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": "決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 4,
+          "won": false,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "東海大甲府",
+          "score": 8,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-07-21",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": "準決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 3,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "山梨学院",
+          "score": 1,
+          "won": false,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-07-21",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": "準決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府商業",
+          "score": 3,
+          "won": false,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        },
+        {
+          "display": "東海大甲府",
+          "score": 5,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-07-18",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": "準々決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 3,
+          "won": false,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "山梨学院",
+          "score": 4,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-07-18",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": "準々決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 4,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "甲府城西",
+          "score": 2,
+          "won": false,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-18",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": "準々決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "吉田",
+          "score": 2,
+          "won": false,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        },
+        {
+          "display": "東海大甲府",
+          "score": 9,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-07-18",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": "準々決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士河口湖",
+          "score": 1,
+          "won": false,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        },
+        {
+          "display": "甲府商業",
+          "score": 4,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-16",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "市川",
+          "score": 0,
+          "won": false,
+          "name": "市川",
+          "slug": null
+        },
+        {
+          "display": "甲府工業",
+          "score": 4,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-16",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 7,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "日本航空",
+          "score": 1,
+          "won": false,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-07-16",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "吉田",
+          "score": 7,
+          "won": true,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        },
+        {
+          "display": "甲府昭和",
+          "score": 4,
+          "won": false,
+          "name": "甲府昭和高校",
+          "slug": "kofushowa"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-16",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "日大明誠",
+          "score": 3,
+          "won": false,
+          "name": "日大明誠",
+          "slug": null
+        },
+        {
+          "display": "富士河口湖",
+          "score": 4,
+          "won": true,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-16",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "谷村工業",
+          "score": 0,
+          "won": false,
+          "name": "谷村工業",
+          "slug": null
+        },
+        {
+          "display": "甲府商業",
+          "score": 3,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-15",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "山梨学院",
+          "score": 4,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        },
+        {
+          "display": "塩山",
+          "score": 0,
+          "won": false,
+          "name": "塩山高校",
+          "slug": "enzan"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-15",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "大月短大附",
+          "score": 1,
+          "won": false,
+          "name": "大月短大附",
+          "slug": null
+        },
+        {
+          "display": "帝京第三",
+          "score": 3,
+          "won": true,
+          "name": "帝京第三",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-07-15",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 5,
+          "won": false,
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "甲府城西",
+          "score": 7,
+          "won": true,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-14",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府南",
+          "score": 4,
+          "won": false,
+          "name": "甲府南高校",
+          "slug": "kofuminami"
+        },
+        {
+          "display": "甲府昭和",
+          "score": 5,
+          "won": true,
+          "name": "甲府昭和高校",
+          "slug": "kofushowa"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-14",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日大明誠",
+          "score": 16,
+          "won": true,
+          "name": "日大明誠",
+          "slug": null
+        },
+        {
+          "display": "甲府第一",
+          "score": 4,
+          "won": false,
+          "name": "甲府第一高校",
+          "slug": "kofudaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-14",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "北杜",
+          "score": 5,
+          "won": false,
+          "name": "北杜高校",
+          "slug": "yamanashi-hokuto"
+        },
+        {
+          "display": "谷村工業",
+          "score": 12,
+          "won": true,
+          "name": "谷村工業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-07-13",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士河口湖",
+          "score": 3,
+          "won": true,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        },
+        {
+          "display": "身延",
+          "score": 1,
+          "won": false,
+          "name": "身延高校",
+          "slug": "minobu"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-13",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "吉田",
+          "score": 12,
+          "won": true,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        },
+        {
+          "display": "農林",
+          "score": 0,
+          "won": false,
+          "name": "山梨県立農林高校",
+          "slug": "yamanashikenritsunorin"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-13",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府商業",
+          "score": 10,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        },
+        {
+          "display": "巨摩",
+          "score": 5,
+          "won": false,
+          "name": "巨摩高校",
+          "slug": "koma"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-11",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "韮崎",
+          "score": 0,
+          "won": false,
+          "name": "韮崎高校",
+          "slug": "nirasaki"
+        },
+        {
+          "display": "東海大甲府",
+          "score": 16,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-07-11",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "市川",
+          "score": 3,
+          "won": true,
+          "name": "市川",
+          "slug": null
+        },
+        {
+          "display": "山梨",
+          "score": 1,
+          "won": false,
+          "name": "山梨高校",
+          "slug": "yamanashi"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-11",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 8,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "甲府西",
+          "score": 1,
+          "won": false,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-10",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "都留",
+          "score": 9,
+          "won": false,
+          "name": "都留高校",
+          "slug": "tsuru"
+        },
+        {
+          "display": "甲府工業",
+          "score": 11,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-10",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "大月短大附",
+          "score": 4,
+          "won": true,
+          "name": "大月短大附",
+          "slug": null
+        },
+        {
+          "display": "韮崎工業",
+          "score": 2,
+          "won": false,
+          "name": "韮崎工業高校",
+          "slug": "nirasakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-10",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 5,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "甲府東",
+          "score": 3,
+          "won": false,
+          "name": "甲府東高校",
+          "slug": "kofuhigashi"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-09",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府城西",
+          "score": 9,
+          "won": true,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        },
+        {
+          "display": "桂",
+          "score": 0,
+          "won": false,
+          "name": "桂",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-07-09",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "笛吹",
+          "score": 1,
+          "won": false,
+          "name": "笛吹高校",
+          "slug": "fuefuki"
+        },
+        {
+          "display": "帝京第三",
+          "score": 10,
+          "won": true,
+          "name": "帝京第三",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-07-09",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "塩山",
+          "score": 10,
+          "won": true,
+          "name": "塩山高校",
+          "slug": "enzan"
+        },
+        {
+          "display": "駿台甲府",
+          "score": 6,
+          "won": false,
+          "name": "駿台甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-07-08",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "山梨学院",
+          "score": 5,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        },
+        {
+          "display": "日川",
+          "score": 1,
+          "won": false,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-08",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "白根",
+          "score": 4,
+          "won": false,
+          "name": "白根高校",
+          "slug": "yamanashi-shirone"
+        },
+        {
+          "display": "日大明誠",
+          "score": 5,
+          "won": true,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-07-08",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲陵",
+          "score": 7,
+          "won": false,
+          "name": "甲陵高校",
+          "slug": "yamanashi-koryo"
+        },
+        {
+          "display": "谷村工業",
+          "score": 10,
+          "won": true,
+          "name": "谷村工業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-07-08",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "富士北稜",
+          "score": 1,
+          "won": false,
+          "name": "富士北稜高校",
+          "slug": "fujihokuryo"
+        },
+        {
+          "display": "山梨",
+          "score": 6,
+          "won": true,
+          "name": "山梨高校",
+          "slug": "yamanashi"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-08",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "甲府南",
+          "score": 6,
+          "won": true,
+          "name": "甲府南高校",
+          "slug": "kofuminami"
+        },
+        {
+          "display": "峡南",
+          "score": 2,
+          "won": false,
+          "name": "峡南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-07-07",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "増穂商業",
+          "score": 2,
+          "won": false,
+          "name": "増穂商業",
+          "slug": null
+        },
+        {
+          "display": "韮崎工業",
+          "score": 5,
+          "won": true,
+          "name": "韮崎工業高校",
+          "slug": "nirasakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2012-07-07",
+      "season": "summer",
+      "tournament": "第94回全国高等学校野球選手権山梨大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府東",
+          "score": 4,
+          "won": true,
+          "name": "甲府東高校",
+          "slug": "kofuhigashi"
+        },
+        {
+          "display": "上野原",
+          "score": 2,
+          "won": false,
+          "name": "上野原高校",
+          "slug": "uenohara"
         }
       ]
     },
@@ -19460,6 +24728,3686 @@
           "won": false,
           "name": "甲府西高校",
           "slug": "kofunishi"
+        }
+      ]
+    },
+    {
+      "date": "2007-10-08",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 3,
+          "won": false,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "山梨学院",
+          "score": 4,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2007-10-08",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "甲府工",
+          "score": 2,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "富士学苑",
+          "score": 1,
+          "won": false,
+          "name": "富士学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2007-10-06",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "山梨学院",
+          "score": 5,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        },
+        {
+          "display": "甲府工",
+          "score": 0,
+          "won": false,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2007-10-06",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 7,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "富士学苑",
+          "score": 1,
+          "won": false,
+          "name": "富士学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2007-10-02",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "甲府城西",
+          "score": 3,
+          "won": false,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        },
+        {
+          "display": "甲府工",
+          "score": 4,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2007-10-02",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "山梨学院",
+          "score": 12,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        },
+        {
+          "display": "日川",
+          "score": 4,
+          "won": false,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2007-10-01",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "大月短大",
+          "score": 0,
+          "won": false,
+          "name": "大月短大",
+          "slug": null
+        },
+        {
+          "display": "富士学苑",
+          "score": 6,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2007-10-01",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海甲府",
+          "score": 2,
+          "won": false,
+          "name": "東海甲府",
+          "slug": null
+        },
+        {
+          "display": "日本航空",
+          "score": 4,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2007-09-22",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 2,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "吉田",
+          "score": 0,
+          "won": false,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-22",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海甲府",
+          "score": 10,
+          "won": true,
+          "name": "東海甲府",
+          "slug": null
+        },
+        {
+          "display": "石和",
+          "score": 1,
+          "won": false,
+          "name": "石和",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2007-09-22",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "北杜",
+          "score": 1,
+          "won": false,
+          "name": "北杜高校",
+          "slug": "yamanashi-hokuto"
+        },
+        {
+          "display": "甲府城西",
+          "score": 4,
+          "won": true,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-22",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "甲府工",
+          "score": 5,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "甲府商",
+          "score": 3,
+          "won": false,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-22",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "山梨学院",
+          "score": 9,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        },
+        {
+          "display": "帝京第三",
+          "score": 1,
+          "won": false,
+          "name": "帝京第三",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2007-09-22",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "日川",
+          "score": 7,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        },
+        {
+          "display": "上野原",
+          "score": 3,
+          "won": false,
+          "name": "上野原高校",
+          "slug": "uenohara"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-16",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "巨摩",
+          "score": 0,
+          "won": false,
+          "name": "巨摩高校",
+          "slug": "koma"
+        },
+        {
+          "display": "富士学苑",
+          "score": 7,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2007-09-16",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "大月短大",
+          "score": 3,
+          "won": true,
+          "name": "大月短大",
+          "slug": null
+        },
+        {
+          "display": "塩山",
+          "score": 2,
+          "won": false,
+          "name": "塩山高校",
+          "slug": "enzan"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-16",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "谷村工",
+          "score": 1,
+          "won": false,
+          "name": "谷村工",
+          "slug": null
+        },
+        {
+          "display": "甲府工",
+          "score": 11,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-16",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "農林",
+          "score": 0,
+          "won": false,
+          "name": "山梨県立農林高校",
+          "slug": "yamanashikenritsunorin"
+        },
+        {
+          "display": "甲府商",
+          "score": 11,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-16",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "山梨学院",
+          "score": 11,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        },
+        {
+          "display": "市川",
+          "score": 3,
+          "won": false,
+          "name": "市川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2007-09-16",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 16,
+          "won": true,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "増穂商",
+          "score": 1,
+          "won": false,
+          "name": "増穂商",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2007-09-16",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "甲府一",
+          "score": 0,
+          "won": false,
+          "name": "甲府第一高校",
+          "slug": "kofudaiichi"
+        },
+        {
+          "display": "上野原",
+          "score": 1,
+          "won": true,
+          "name": "上野原高校",
+          "slug": "uenohara"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-16",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "身延",
+          "score": 4,
+          "won": false,
+          "name": "身延高校",
+          "slug": "minobu"
+        },
+        {
+          "display": "日川",
+          "score": 6,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-15",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 4,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "甲府西",
+          "score": 0,
+          "won": false,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-15",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "甲陵",
+          "score": 1,
+          "won": false,
+          "name": "甲陵高校",
+          "slug": "yamanashi-koryo"
+        },
+        {
+          "display": "吉田",
+          "score": 11,
+          "won": true,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-15",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "石和",
+          "score": 11,
+          "won": true,
+          "name": "石和",
+          "slug": null
+        },
+        {
+          "display": "甲府東",
+          "score": 1,
+          "won": false,
+          "name": "甲府東高校",
+          "slug": "kofuhigashi"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-15",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "峡南",
+          "score": 3,
+          "won": false,
+          "name": "峡南",
+          "slug": null
+        },
+        {
+          "display": "東海甲府",
+          "score": 5,
+          "won": true,
+          "name": "東海甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2007-09-15",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "北杜",
+          "score": 12,
+          "won": true,
+          "name": "北杜高校",
+          "slug": "yamanashi-hokuto"
+        },
+        {
+          "display": "甲府南",
+          "score": 1,
+          "won": false,
+          "name": "甲府南高校",
+          "slug": "kofuminami"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-15",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "甲府城西",
+          "score": 12,
+          "won": true,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        },
+        {
+          "display": "韮崎",
+          "score": 0,
+          "won": false,
+          "name": "韮崎高校",
+          "slug": "nirasaki"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-09",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "韮崎工",
+          "score": 1,
+          "won": false,
+          "name": "韮崎工業高校",
+          "slug": "nirasakikogyo"
+        },
+        {
+          "display": "帝京第三",
+          "score": 8,
+          "won": true,
+          "name": "帝京第三",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2007-09-09",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "富士河口",
+          "score": 0,
+          "won": false,
+          "name": "富士河口",
+          "slug": null
+        },
+        {
+          "display": "甲府一",
+          "score": 5,
+          "won": true,
+          "name": "甲府第一高校",
+          "slug": "kofudaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-09",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 4,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "日大明誠",
+          "score": 1,
+          "won": false,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2007-09-09",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "巨摩",
+          "score": 2,
+          "won": true,
+          "name": "巨摩高校",
+          "slug": "koma"
+        },
+        {
+          "display": "甲府昭和",
+          "score": 1,
+          "won": false,
+          "name": "甲府昭和高校",
+          "slug": "kofushowa"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-09",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "富士北稜",
+          "score": 0,
+          "won": false,
+          "name": "富士北稜高校",
+          "slug": "fujihokuryo"
+        },
+        {
+          "display": "塩山",
+          "score": 9,
+          "won": true,
+          "name": "塩山高校",
+          "slug": "enzan"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-09",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "大月短大",
+          "score": 1,
+          "won": true,
+          "name": "大月短大",
+          "slug": null
+        },
+        {
+          "display": "都留",
+          "score": 0,
+          "won": false,
+          "name": "都留高校",
+          "slug": "tsuru"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-08",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "桂",
+          "score": 2,
+          "won": false,
+          "name": "桂",
+          "slug": null
+        },
+        {
+          "display": "塩山",
+          "score": 3,
+          "won": true,
+          "name": "塩山高校",
+          "slug": "enzan"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-08",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "駿台甲府",
+          "score": 2,
+          "won": false,
+          "name": "駿台甲府",
+          "slug": null
+        },
+        {
+          "display": "吉田",
+          "score": 3,
+          "won": true,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-08",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "甲府東",
+          "score": 17,
+          "won": true,
+          "name": "甲府東高校",
+          "slug": "kofuhigashi"
+        },
+        {
+          "display": "山梨園芸",
+          "score": 1,
+          "won": false,
+          "name": "山梨園芸",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2007-09-08",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "山梨",
+          "score": 2,
+          "won": false,
+          "name": "山梨高校",
+          "slug": "yamanashi"
+        },
+        {
+          "display": "甲府城西",
+          "score": 9,
+          "won": true,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        }
+      ]
+    },
+    {
+      "date": "2007-09-08",
+      "season": "autumn",
+      "tournament": "第60回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "白根",
+          "score": 0,
+          "won": false,
+          "name": "白根高校",
+          "slug": "yamanashi-shirone"
+        },
+        {
+          "display": "甲府工",
+          "score": 6,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2008-10-12",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "山梨学院",
+          "score": 1,
+          "won": false,
+          "name": "山梨学院",
+          "slug": null
+        },
+        {
+          "display": "身延",
+          "score": 2,
+          "won": true,
+          "name": "身延高校",
+          "slug": "minobu"
+        }
+      ]
+    },
+    {
+      "date": "2008-10-12",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 1,
+          "won": false,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "日本航空",
+          "score": 5,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-10-11",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 5,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "身延",
+          "score": 4,
+          "won": false,
+          "name": "身延高校",
+          "slug": "minobu"
+        }
+      ]
+    },
+    {
+      "date": "2008-10-11",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 7,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "山梨学院",
+          "score": 2,
+          "won": false,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-10-05",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 4,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "巨摩",
+          "score": 1,
+          "won": false,
+          "name": "巨摩高校",
+          "slug": "koma"
+        }
+      ]
+    },
+    {
+      "date": "2008-10-05",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 2,
+          "won": false,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "山梨学院",
+          "score": 3,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-10-04",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "塩山",
+          "score": 1,
+          "won": false,
+          "name": "塩山高校",
+          "slug": "enzan"
+        },
+        {
+          "display": "身延",
+          "score": 2,
+          "won": true,
+          "name": "身延高校",
+          "slug": "minobu"
+        }
+      ]
+    },
+    {
+      "date": "2008-10-04",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "韮崎",
+          "score": 0,
+          "won": false,
+          "name": "韮崎高校",
+          "slug": "nirasaki"
+        },
+        {
+          "display": "甲府工業",
+          "score": 7,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-28",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 2,
+          "won": false,
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "巨摩",
+          "score": 7,
+          "won": true,
+          "name": "巨摩高校",
+          "slug": "koma"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-28",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "山梨学院",
+          "score": 9,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        },
+        {
+          "display": "吉田",
+          "score": 2,
+          "won": false,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-28",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 2,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "甲府商業",
+          "score": 0,
+          "won": false,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-27",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士河口湖",
+          "score": 0,
+          "won": false,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        },
+        {
+          "display": "甲府工業",
+          "score": 1,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-27",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "韮崎",
+          "score": 8,
+          "won": true,
+          "name": "韮崎高校",
+          "slug": "nirasaki"
+        },
+        {
+          "display": "谷村工業",
+          "score": 1,
+          "won": false,
+          "name": "谷村工業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-09-27",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日大明誠",
+          "score": 1,
+          "won": false,
+          "name": "日大明誠",
+          "slug": null
+        },
+        {
+          "display": "日本航空",
+          "score": 7,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-09-24",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "身延",
+          "score": 4,
+          "won": true,
+          "name": "身延高校",
+          "slug": "minobu"
+        },
+        {
+          "display": "北杜",
+          "score": 2,
+          "won": false,
+          "name": "北杜高校",
+          "slug": "yamanashi-hokuto"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-23",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "増穂商",
+          "score": 0,
+          "won": false,
+          "name": "増穂商",
+          "slug": null
+        },
+        {
+          "display": "東海大甲府",
+          "score": 7,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-09-23",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "塩山",
+          "score": 7,
+          "won": true,
+          "name": "塩山高校",
+          "slug": "enzan"
+        },
+        {
+          "display": "日川",
+          "score": 3,
+          "won": false,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-23",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 2,
+          "won": false,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "山梨学院",
+          "score": 3,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-09-23",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "甲府商業",
+          "score": 6,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        },
+        {
+          "display": "甲府城西",
+          "score": 0,
+          "won": false,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-15",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "都留",
+          "score": 2,
+          "won": false,
+          "name": "都留高校",
+          "slug": "tsuru"
+        },
+        {
+          "display": "巨摩",
+          "score": 4,
+          "won": true,
+          "name": "巨摩高校",
+          "slug": "koma"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-15",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 3,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "峡南",
+          "score": 0,
+          "won": false,
+          "name": "峡南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-09-15",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府昭和",
+          "score": 3,
+          "won": false,
+          "name": "甲府昭和高校",
+          "slug": "kofushowa"
+        },
+        {
+          "display": "吉田",
+          "score": 5,
+          "won": true,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-14",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "韮崎",
+          "score": 6,
+          "won": true,
+          "name": "韮崎高校",
+          "slug": "nirasaki"
+        },
+        {
+          "display": "桂",
+          "score": 1,
+          "won": false,
+          "name": "桂",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-09-14",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 4,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "駿台甲府",
+          "score": 3,
+          "won": false,
+          "name": "駿台甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-09-14",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "石和",
+          "score": 0,
+          "won": false,
+          "name": "石和",
+          "slug": null
+        },
+        {
+          "display": "日大明誠",
+          "score": 1,
+          "won": true,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-09-14",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "山梨園芸",
+          "score": 0,
+          "won": false,
+          "name": "山梨園芸",
+          "slug": null
+        },
+        {
+          "display": "富士河口湖",
+          "score": 12,
+          "won": true,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-14",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "韮崎工業",
+          "score": 0,
+          "won": false,
+          "name": "韮崎工業高校",
+          "slug": "nirasakikogyo"
+        },
+        {
+          "display": "谷村工業",
+          "score": 10,
+          "won": true,
+          "name": "谷村工業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-09-13",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "塩山",
+          "score": 9,
+          "won": true,
+          "name": "塩山高校",
+          "slug": "enzan"
+        },
+        {
+          "display": "富士北稜",
+          "score": 2,
+          "won": false,
+          "name": "富士北稜高校",
+          "slug": "fujihokuryo"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-13",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "上野原",
+          "score": 6,
+          "won": false,
+          "name": "上野原高校",
+          "slug": "uenohara"
+        },
+        {
+          "display": "身延",
+          "score": 7,
+          "won": true,
+          "name": "身延高校",
+          "slug": "minobu"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-13",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 7,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "市川",
+          "score": 0,
+          "won": false,
+          "name": "市川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-09-13",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "甲府第一",
+          "score": 2,
+          "won": false,
+          "name": "甲府第一高校",
+          "slug": "kofudaiichi"
+        },
+        {
+          "display": "日川",
+          "score": 3,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-13",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "甲府東",
+          "score": 1,
+          "won": false,
+          "name": "甲府東高校",
+          "slug": "kofuhigashi"
+        },
+        {
+          "display": "北杜",
+          "score": 2,
+          "won": true,
+          "name": "北杜高校",
+          "slug": "yamanashi-hokuto"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-12",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府商業",
+          "score": 9,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        },
+        {
+          "display": "甲府南",
+          "score": 2,
+          "won": false,
+          "name": "甲府南高校",
+          "slug": "kofuminami"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-07",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "巨摩",
+          "score": 8,
+          "won": true,
+          "name": "巨摩高校",
+          "slug": "koma"
+        },
+        {
+          "display": "山梨",
+          "score": 0,
+          "won": false,
+          "name": "山梨高校",
+          "slug": "yamanashi"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-07",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府西",
+          "score": 6,
+          "won": false,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        },
+        {
+          "display": "帝京第三",
+          "score": 13,
+          "won": true,
+          "name": "帝京第三",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2008-09-06",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "白根",
+          "score": 2,
+          "won": false,
+          "name": "白根高校",
+          "slug": "yamanashi-shirone"
+        },
+        {
+          "display": "北杜",
+          "score": 3,
+          "won": true,
+          "name": "北杜高校",
+          "slug": "yamanashi-hokuto"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-06",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "大月短大附",
+          "score": 2,
+          "won": false,
+          "name": "大月短大附",
+          "slug": null
+        },
+        {
+          "display": "富士河口湖",
+          "score": 12,
+          "won": true,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        }
+      ]
+    },
+    {
+      "date": "2008-09-06",
+      "season": "autumn",
+      "tournament": "第61回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "農林",
+          "score": 1,
+          "won": false,
+          "name": "山梨県立農林高校",
+          "slug": "yamanashikenritsunorin"
+        },
+        {
+          "display": "谷村工業",
+          "score": 8,
+          "won": true,
+          "name": "谷村工業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-10-04",
+      "season": "autumn",
+      "tournament": "第62回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府商業",
+          "score": 5,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        },
+        {
+          "display": "塩山",
+          "score": 3,
+          "won": false,
+          "name": "塩山高校",
+          "slug": "enzan"
+        }
+      ]
+    },
+    {
+      "date": "2009-09-27",
+      "season": "autumn",
+      "tournament": "第62回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 1,
+          "won": false,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "東海大甲府",
+          "score": 4,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-09-26",
+      "season": "autumn",
+      "tournament": "第62回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "塩山",
+          "score": 3,
+          "won": true,
+          "name": "塩山高校",
+          "slug": "enzan"
+        },
+        {
+          "display": "市川",
+          "score": 2,
+          "won": false,
+          "name": "市川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-09-22",
+      "season": "autumn",
+      "tournament": "第62回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "峡南",
+          "score": 0,
+          "won": false,
+          "name": "峡南",
+          "slug": null
+        },
+        {
+          "display": "東海大甲府",
+          "score": 10,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-09-21",
+      "season": "autumn",
+      "tournament": "第62回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "韮崎工業",
+          "score": 0,
+          "won": false,
+          "name": "韮崎工業高校",
+          "slug": "nirasakikogyo"
+        },
+        {
+          "display": "身延",
+          "score": 10,
+          "won": true,
+          "name": "身延高校",
+          "slug": "minobu"
+        }
+      ]
+    },
+    {
+      "date": "2009-09-21",
+      "season": "autumn",
+      "tournament": "第62回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "甲府西",
+          "score": 0,
+          "won": false,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        },
+        {
+          "display": "塩山",
+          "score": 8,
+          "won": true,
+          "name": "塩山高校",
+          "slug": "enzan"
+        }
+      ]
+    },
+    {
+      "date": "2009-09-21",
+      "season": "autumn",
+      "tournament": "第62回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "市川",
+          "score": 4,
+          "won": true,
+          "name": "市川",
+          "slug": null
+        },
+        {
+          "display": "日大明誠",
+          "score": 3,
+          "won": false,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-09-20",
+      "season": "autumn",
+      "tournament": "第62回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "巨摩",
+          "score": 9,
+          "won": true,
+          "name": "巨摩高校",
+          "slug": "koma"
+        },
+        {
+          "display": "駿台甲府",
+          "score": 8,
+          "won": false,
+          "name": "駿台甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-09-19",
+      "season": "autumn",
+      "tournament": "第62回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "峡南",
+          "score": 4,
+          "won": true,
+          "name": "峡南",
+          "slug": null
+        },
+        {
+          "display": "富士河口湖",
+          "score": 2,
+          "won": false,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        }
+      ]
+    },
+    {
+      "date": "2009-09-13",
+      "season": "autumn",
+      "tournament": "第62回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 5,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "日本航空",
+          "score": 1,
+          "won": false,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-09-13",
+      "season": "autumn",
+      "tournament": "第62回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "韮崎工業",
+          "score": 12,
+          "won": true,
+          "name": "韮崎工業高校",
+          "slug": "nirasakikogyo"
+        },
+        {
+          "display": "白根",
+          "score": 6,
+          "won": false,
+          "name": "白根高校",
+          "slug": "yamanashi-shirone"
+        }
+      ]
+    },
+    {
+      "date": "2009-09-13",
+      "season": "autumn",
+      "tournament": "第62回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "吉田",
+          "score": 0,
+          "won": false,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        },
+        {
+          "display": "甲府商業",
+          "score": 6,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2009-09-12",
+      "season": "autumn",
+      "tournament": "第62回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "市川",
+          "score": 3,
+          "won": true,
+          "name": "市川",
+          "slug": null
+        },
+        {
+          "display": "甲府南",
+          "score": 2,
+          "won": false,
+          "name": "甲府南高校",
+          "slug": "kofuminami"
+        }
+      ]
+    },
+    {
+      "date": "2009-09-06",
+      "season": "autumn",
+      "tournament": "第62回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "大月短大附",
+          "score": 2,
+          "won": false,
+          "name": "大月短大附",
+          "slug": null
+        },
+        {
+          "display": "甲府城西",
+          "score": 8,
+          "won": true,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        }
+      ]
+    },
+    {
+      "date": "2009-09-06",
+      "season": "autumn",
+      "tournament": "第62回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "北杜",
+          "score": 2,
+          "won": false,
+          "name": "北杜高校",
+          "slug": "yamanashi-hokuto"
+        },
+        {
+          "display": "富士河口湖",
+          "score": 8,
+          "won": true,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        }
+      ]
+    },
+    {
+      "date": "2009-09-06",
+      "season": "autumn",
+      "tournament": "第62回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "駿台甲府",
+          "score": 7,
+          "won": true,
+          "name": "駿台甲府",
+          "slug": null
+        },
+        {
+          "display": "谷村工業",
+          "score": 2,
+          "won": false,
+          "name": "谷村工業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2009-09-05",
+      "season": "autumn",
+      "tournament": "第62回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲陵",
+          "score": 0,
+          "won": false,
+          "name": "甲陵高校",
+          "slug": "yamanashi-koryo"
+        },
+        {
+          "display": "甲府南",
+          "score": 7,
+          "won": true,
+          "name": "甲府南高校",
+          "slug": "kofuminami"
+        }
+      ]
+    },
+    {
+      "date": "2010-09-18",
+      "season": "autumn",
+      "tournament": "第63回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "都留",
+          "score": 8,
+          "won": true,
+          "name": "都留高校",
+          "slug": "tsuru"
+        },
+        {
+          "display": "韮崎工業",
+          "score": 0,
+          "won": false,
+          "name": "韮崎工業高校",
+          "slug": "nirasakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2010-09-18",
+      "season": "autumn",
+      "tournament": "第63回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "巨摩",
+          "score": 2,
+          "won": false,
+          "name": "巨摩高校",
+          "slug": "koma"
+        },
+        {
+          "display": "身延",
+          "score": 9,
+          "won": true,
+          "name": "身延高校",
+          "slug": "minobu"
+        }
+      ]
+    },
+    {
+      "date": "2010-09-11",
+      "season": "autumn",
+      "tournament": "第63回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 9,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "桂",
+          "score": 0,
+          "won": false,
+          "name": "桂",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-09-11",
+      "season": "autumn",
+      "tournament": "第63回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 13,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "峡南",
+          "score": 1,
+          "won": false,
+          "name": "峡南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-09-05",
+      "season": "autumn",
+      "tournament": "第63回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "増穂商業",
+          "score": 0,
+          "won": false,
+          "name": "増穂商業",
+          "slug": null
+        },
+        {
+          "display": "甲府商業",
+          "score": 7,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2010-09-05",
+      "season": "autumn",
+      "tournament": "第63回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "農林",
+          "score": 0,
+          "won": false,
+          "name": "山梨県立農林高校",
+          "slug": "yamanashikenritsunorin"
+        },
+        {
+          "display": "市川",
+          "score": 10,
+          "won": true,
+          "name": "市川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2010-09-04",
+      "season": "autumn",
+      "tournament": "第63回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "韮崎",
+          "score": 5,
+          "won": true,
+          "name": "韮崎高校",
+          "slug": "nirasaki"
+        },
+        {
+          "display": "甲府西",
+          "score": 4,
+          "won": false,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        }
+      ]
+    },
+    {
+      "date": "2011-10-01",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": "決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 7,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "甲府西",
+          "score": 0,
+          "won": false,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        }
+      ]
+    },
+    {
+      "date": "2011-10-01",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": "準決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 7,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "甲府工業",
+          "score": 0,
+          "won": false,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2011-09-25",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 4,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "山梨学院",
+          "score": 2,
+          "won": false,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-09-25",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "吉田",
+          "score": 0,
+          "won": false,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        },
+        {
+          "display": "東海大甲府",
+          "score": 4,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-09-24",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "市川",
+          "score": 2,
+          "won": false,
+          "name": "市川",
+          "slug": null
+        },
+        {
+          "display": "吉田",
+          "score": 3,
+          "won": true,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2011-09-24",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府西",
+          "score": 4,
+          "won": true,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        },
+        {
+          "display": "富士学苑",
+          "score": 2,
+          "won": false,
+          "name": "富士学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-09-23",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 10,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "日川",
+          "score": 6,
+          "won": false,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2011-09-23",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "都留",
+          "score": 0,
+          "won": false,
+          "name": "都留高校",
+          "slug": "tsuru"
+        },
+        {
+          "display": "山梨学院",
+          "score": 5,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-09-19",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 2,
+          "won": false,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "甲府西",
+          "score": 6,
+          "won": true,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        }
+      ]
+    },
+    {
+      "date": "2011-09-19",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 5,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "桂",
+          "score": 2,
+          "won": false,
+          "name": "桂",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-09-18",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "塩山",
+          "score": 1,
+          "won": false,
+          "name": "塩山高校",
+          "slug": "enzan"
+        },
+        {
+          "display": "甲府工業",
+          "score": 4,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2011-09-18",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "増穂商業",
+          "score": 0,
+          "won": false,
+          "name": "増穂商業",
+          "slug": null
+        },
+        {
+          "display": "東海大甲府",
+          "score": 7,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-09-18",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府東",
+          "score": 1,
+          "won": true,
+          "name": "甲府東高校",
+          "slug": "kofuhigashi"
+        },
+        {
+          "display": "大月短大附",
+          "score": 0,
+          "won": false,
+          "name": "大月短大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-09-18",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "日大明誠",
+          "score": 12,
+          "won": true,
+          "name": "日大明誠",
+          "slug": null
+        },
+        {
+          "display": "甲府南",
+          "score": 3,
+          "won": false,
+          "name": "甲府南高校",
+          "slug": "kofuminami"
+        }
+      ]
+    },
+    {
+      "date": "2011-09-18",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "韮崎",
+          "score": 2,
+          "won": false,
+          "name": "韮崎高校",
+          "slug": "nirasaki"
+        },
+        {
+          "display": "吉田",
+          "score": 10,
+          "won": true,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2011-09-13",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日本航空",
+          "score": 1,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        },
+        {
+          "display": "身延",
+          "score": 0,
+          "won": false,
+          "name": "身延高校",
+          "slug": "minobu"
+        }
+      ]
+    },
+    {
+      "date": "2011-09-13",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "山梨学院",
+          "score": 7,
+          "won": true,
+          "name": "山梨学院",
+          "slug": null
+        },
+        {
+          "display": "峡南",
+          "score": 0,
+          "won": false,
+          "name": "峡南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-09-13",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "白根",
+          "score": 3,
+          "won": false,
+          "name": "白根高校",
+          "slug": "yamanashi-shirone"
+        },
+        {
+          "display": "都留",
+          "score": 10,
+          "won": true,
+          "name": "都留高校",
+          "slug": "tsuru"
+        }
+      ]
+    },
+    {
+      "date": "2011-09-12",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "韮崎工業",
+          "score": 2,
+          "won": false,
+          "name": "韮崎工業高校",
+          "slug": "nirasakikogyo"
+        },
+        {
+          "display": "桂",
+          "score": 4,
+          "won": true,
+          "name": "桂",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-09-11",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 3,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "甲府商業",
+          "score": 2,
+          "won": false,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2011-09-10",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士北稜",
+          "score": 0,
+          "won": false,
+          "name": "富士北稜高校",
+          "slug": "fujihokuryo"
+        },
+        {
+          "display": "帝京第三",
+          "score": 2,
+          "won": true,
+          "name": "帝京第三",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2011-09-04",
+      "season": "autumn",
+      "tournament": "第64回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府城西",
+          "score": 0,
+          "won": false,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        },
+        {
+          "display": "駿台甲府",
+          "score": 3,
+          "won": true,
+          "name": "駿台甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-10-05",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": "3位決定戦",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 1,
+          "won": false,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "甲府工業",
+          "score": 10,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2012-10-05",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": "決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日川",
+          "score": 9,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        },
+        {
+          "display": "東海大甲府",
+          "score": 8,
+          "won": false,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-10-04",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": "準決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 1,
+          "won": false,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "日川",
+          "score": 9,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2012-10-04",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": "準決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 3,
+          "won": false,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "東海大甲府",
+          "score": 4,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-09-25",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": "準々決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 6,
+          "won": true,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "富士河口湖",
+          "score": 0,
+          "won": false,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-25",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": "準々決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 4,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "富士学苑",
+          "score": 2,
+          "won": false,
+          "name": "富士学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-09-22",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": "準々決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "日川",
+          "score": 10,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        },
+        {
+          "display": "甲府商業",
+          "score": 0,
+          "won": false,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-22",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": "準々決勝",
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 3,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "日大明誠",
+          "score": 2,
+          "won": false,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-09-17",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 4,
+          "won": true,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "桂",
+          "score": 3,
+          "won": false,
+          "name": "桂",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-09-17",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 8,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "日本航空",
+          "score": 1,
+          "won": false,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-09-17",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 6,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "甲府城西",
+          "score": 3,
+          "won": false,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-16",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "韮崎工業",
+          "score": 0,
+          "won": false,
+          "name": "韮崎工業高校",
+          "slug": "nirasakikogyo"
+        },
+        {
+          "display": "日川",
+          "score": 6,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-16",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "都留",
+          "score": 2,
+          "won": false,
+          "name": "都留高校",
+          "slug": "tsuru"
+        },
+        {
+          "display": "甲府商業",
+          "score": 3,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-16",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "塩山",
+          "score": 0,
+          "won": false,
+          "name": "塩山高校",
+          "slug": "enzan"
+        },
+        {
+          "display": "日大明誠",
+          "score": 1,
+          "won": true,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-09-16",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 8,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "駿台甲府",
+          "score": 3,
+          "won": false,
+          "name": "駿台甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-09-16",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "市川",
+          "score": 1,
+          "won": false,
+          "name": "市川",
+          "slug": null
+        },
+        {
+          "display": "富士河口湖",
+          "score": 5,
+          "won": true,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-15",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府第一",
+          "score": 1,
+          "won": false,
+          "name": "甲府第一高校",
+          "slug": "kofudaiichi"
+        },
+        {
+          "display": "日本航空",
+          "score": 3,
+          "won": true,
+          "name": "日本航空",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-09-15",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "桂",
+          "score": 6,
+          "won": true,
+          "name": "桂",
+          "slug": null
+        },
+        {
+          "display": "山梨",
+          "score": 0,
+          "won": false,
+          "name": "山梨高校",
+          "slug": "yamanashi"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-15",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "score": 7,
+          "won": true,
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "笛吹",
+          "score": 0,
+          "won": false,
+          "name": "笛吹高校",
+          "slug": "fuefuki"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-15",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "甲府城西",
+          "score": 12,
+          "won": true,
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        },
+        {
+          "display": "甲陵",
+          "score": 3,
+          "won": false,
+          "name": "甲陵高校",
+          "slug": "yamanashi-koryo"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-15",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "谷村工業",
+          "score": 1,
+          "won": false,
+          "name": "谷村工業",
+          "slug": null
+        },
+        {
+          "display": "富士学苑",
+          "score": 5,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-09-09",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士河口湖",
+          "score": 7,
+          "won": true,
+          "name": "富士河口湖高校",
+          "slug": "fujikawaguchiko"
+        },
+        {
+          "display": "身延",
+          "score": 2,
+          "won": false,
+          "name": "身延高校",
+          "slug": "minobu"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-09",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 10,
+          "won": true,
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "甲府昭和",
+          "score": 4,
+          "won": false,
+          "name": "甲府昭和高校",
+          "slug": "kofushowa"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-09",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府南",
+          "score": 1,
+          "won": false,
+          "name": "甲府南高校",
+          "slug": "kofuminami"
+        },
+        {
+          "display": "市川",
+          "score": 2,
+          "won": true,
+          "name": "市川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-09-09",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "甲府東",
+          "score": 2,
+          "won": false,
+          "name": "甲府東高校",
+          "slug": "kofuhigashi"
+        },
+        {
+          "display": "日大明誠",
+          "score": 12,
+          "won": true,
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-09-09",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "大月短大附",
+          "score": 6,
+          "won": false,
+          "name": "大月短大附",
+          "slug": null
+        },
+        {
+          "display": "塩山",
+          "score": 7,
+          "won": true,
+          "name": "塩山高校",
+          "slug": "enzan"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-08",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 4,
+          "won": true,
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "山梨学院",
+          "score": 3,
+          "won": false,
+          "name": "山梨学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-09-08",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "甲府商業",
+          "score": 11,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        },
+        {
+          "display": "甲府西",
+          "score": 2,
+          "won": false,
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-08",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "白根",
+          "score": 1,
+          "won": false,
+          "name": "白根高校",
+          "slug": "yamanashi-shirone"
+        },
+        {
+          "display": "駿台甲府",
+          "score": 5,
+          "won": true,
+          "name": "駿台甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-09-08",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "上野原",
+          "score": 0,
+          "won": false,
+          "name": "上野原高校",
+          "slug": "uenohara"
+        },
+        {
+          "display": "富士学苑",
+          "score": 8,
+          "won": true,
+          "name": "富士学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2012-09-08",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "吉田",
+          "score": 5,
+          "won": false,
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        },
+        {
+          "display": "韮崎工業",
+          "score": 7,
+          "won": true,
+          "name": "韮崎工業高校",
+          "slug": "nirasakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-02",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "富士北稜",
+          "score": 1,
+          "won": false,
+          "name": "富士北稜高校",
+          "slug": "fujihokuryo"
+        },
+        {
+          "display": "日川",
+          "score": 8,
+          "won": true,
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-02",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "山梨",
+          "score": 13,
+          "won": true,
+          "name": "山梨高校",
+          "slug": "yamanashi"
+        },
+        {
+          "display": "韮崎",
+          "score": 6,
+          "won": false,
+          "name": "韮崎高校",
+          "slug": "nirasaki"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-02",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "都留",
+          "score": 8,
+          "won": true,
+          "name": "都留高校",
+          "slug": "tsuru"
+        },
+        {
+          "display": "農林",
+          "score": 4,
+          "won": false,
+          "name": "山梨県立農林高校",
+          "slug": "yamanashikenritsunorin"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-01",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "峡南",
+          "score": 0,
+          "won": false,
+          "name": "峡南",
+          "slug": null
+        },
+        {
+          "display": "甲府商業",
+          "score": 5,
+          "won": true,
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-01",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "白根",
+          "score": 4,
+          "won": true,
+          "name": "白根高校",
+          "slug": "yamanashi-shirone"
+        },
+        {
+          "display": "巨摩",
+          "score": 0,
+          "won": false,
+          "name": "巨摩高校",
+          "slug": "koma"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-01",
+      "season": "autumn",
+      "tournament": "第65秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "小瀬球場",
+      "teams": [
+        {
+          "display": "北杜",
+          "score": 2,
+          "won": false,
+          "name": "北杜高校",
+          "slug": "yamanashi-hokuto"
+        },
+        {
+          "display": "甲府南",
+          "score": 6,
+          "won": true,
+          "name": "甲府南高校",
+          "slug": "kofuminami"
         }
       ]
     },

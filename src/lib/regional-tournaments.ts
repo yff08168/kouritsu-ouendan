@@ -89,9 +89,66 @@ export function yearOfTournament(
   return null;
 }
 
+/*
+  ★★**出典のページ見出しが大会名に混ざっている**（2026-08-29 に発覚）。
+
+  神奈川の出典は個人運営の情報サイトで、**記事のページ題をそのまま大会名にしている** ——
+  `令和5年度神奈川県高校野球春季県大会 ＜ 大会掲示板 ＞`
+  `2019年神奈川県高校野球春季県大会 組み合わせ 日程 トーナメント表`
+  ★**596件中14件。全部が神奈川**（他の40県は1件も無い）。
+
+  ------------------------------------------------------------------
+  ★★**生成物（`tournament`）は直さない。**
+
+  ①**神奈川は `tournament: null` の試合を持つ県**で、AGENTS のとおり
+    **`--year` で遡ると静かに壊れる。** 名前を変えると引き継ぎの鍵が変わるので、
+    **生成物を消して年ごとに走らせ直す**ことになり、割に合わない。
+  ②`name` は**スラッグの連番を決める並び順**と、県のページの**大会の照合**にも
+    使われている。**変えるとURLが入れ替わる。**
+
+  ★**そこで「表示のときだけ」掃除する**（`displayName`）。
+  **並び・スラッグ・照合は `name` のまま。**
+
+  ------------------------------------------------------------------
+  ★★**文字を名指しで消さないこと。**
+
+  このリポジトリが繰り返し踏んできた罠（千葉の「宣」、沖縄の凡例）と同じで、
+  **含まれていたら消す**にすると本物の校名・大会名を巻き込む。
+  **「空白か ＜ の直後から始まる、決まった語」から後ろを丸ごと落とす**形にしてある。
+  ★**足すときは、41県596件を通して差分が神奈川の14件だけであることを必ず確かめる。**
+*/
+const TITLE_JUNK = ["組み合わせ", "日程", "トーナメント表", "抽選会", "速報", "＜"];
+
+export function tournamentDisplayName(name: string | null): string | null {
+  if (!name) return null;
+  let cut = -1;
+  for (const word of TITLE_JUNK) {
+    /*
+      ★**区切り（空白）の直後に現れたものだけを見る。**
+      ★**正規表現を使わない** —— `[\s　]` を組み立てる書き方は
+      エスケープが1段落ちて `[s　]` になっても**例外が出ず、静かに1件も
+      当たらなくなる**（実際にそうなった。検算していなければ気づけなかった）。
+    */
+    for (const sep of [" ", "　"]) {
+      const at = name.indexOf(sep + word);
+      if (at >= 0 && (cut < 0 || at < cut)) cut = at;
+    }
+  }
+  if (cut < 0) return name;
+  const cleaned = name.slice(0, cut).trim();
+  // ★**全部消えるなら掃除しない**（元の名前のほうがまし）
+  return cleaned || name;
+}
+
 export type TournamentEntry = {
-  /** 大会名（生成物のまま） */
+  /**
+   * 大会名（生成物のまま）。
+   * ★★**並び順・スラッグの連番・大会の照合はこれを使う。**
+   * **画面に出すのは `displayName`。**
+   */
   name: string | null;
+  /** 画面に出す大会名（出典のページ見出しを落としたもの） */
+  displayName: string | null;
   /** URLに使うローマ字の slug */
   slug: string;
   season: RegionalSeason;
@@ -129,6 +186,7 @@ export function listTournaments(district: RegionalDistrict): TournamentEntry[] {
     const dates = games.map((g) => g.date).filter((d): d is string => Boolean(d));
     return {
       name: name || null,
+      displayName: tournamentDisplayName(name || null),
       season,
       year: yearOfTournament(name || null, games),
       games,
@@ -164,6 +222,58 @@ export function listTournaments(district: RegionalDistrict): TournamentEntry[] {
 }
 
 /** slug から1つ引く。無ければ null */
+/**
+ * ★**大会ページの description に出す数字**（2026-08-29 追加）。
+ *
+ * ------------------------------------------------------------------
+ * ★★**当て推量を1つも入れないこと。**
+ *
+ * description は検索結果とSNSに出る文で、**画面より先に読まれる。**
+ * このサイトは「出典のある事実だけを出す」で通してあるので、
+ * **読み取れなかったものは null にして、呼ぶ側が書かない。**
+ *
+ * ★**優勝校は「決勝がちょうど1試合あって、勝者がいる」ときだけ。**
+ * 決勝が複数ある大会（ブロック予選）と、引き分けのまま終わっている
+ * 大会（再試合が出典に無い）は**優勝校を名乗らせない。**
+ */
+export type TournamentSummary = {
+  /** 試合数 */
+  games: number;
+  /** 公立が出た試合数 */
+  publicGames: number;
+  /** 出場したチーム数（校名の異なり数） */
+  teams: number;
+  /** 優勝校の表示名。決勝が読めないときは null */
+  champion: string | null;
+  /** 準優勝校。優勝校が取れたときだけ */
+  runnerUp: string | null;
+};
+
+export function summarizeTournament(entry: TournamentEntry): TournamentSummary {
+  const names = new Set<string>();
+  for (const g of entry.games) for (const t of g.teams) names.add(t.display);
+
+  /*
+    ★**決勝がちょうど1試合のときだけ優勝校を出す。**
+    ブロックごとに「決勝」がある大会があり、そこで1つ選ぶと嘘になる。
+  */
+  const finals = entry.games.filter((g) => g.round === "決勝");
+  const final = finals.length === 1 ? finals[0] : null;
+  const champ = final?.teams.find((t) => t.won) ?? null;
+  // ★**引き分けは勝者なし**（`won` が両方 false）。そのときは名乗らせない
+  const runner = champ ? (final?.teams.find((t) => t !== champ) ?? null) : null;
+
+  return {
+    games: entry.games.length,
+    publicGames: entry.games.filter((g) =>
+      g.teams.some((t) => t.slug && !t.combined),
+    ).length,
+    teams: names.size,
+    champion: champ?.display ?? null,
+    runnerUp: runner?.display ?? null,
+  };
+}
+
 export function findTournament(
   district: RegionalDistrict,
   slug: string,

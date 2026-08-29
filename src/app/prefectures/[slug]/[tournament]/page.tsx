@@ -14,7 +14,11 @@ import { PREFECTURES } from "@/lib/constants";
 import { getPrefectureBySlug } from "@/lib/queries/prefectures";
 import { getRegionalDistrict, seasonLabel } from "@/lib/regional-results";
 import { buildRegionalBracket } from "@/lib/regional-bracket";
-import { findTournament, listTournaments } from "@/lib/regional-tournaments";
+import {
+  findTournament,
+  listTournaments,
+  summarizeTournament,
+} from "@/lib/regional-tournaments";
 
 /**
  * 1つの大会のページ（`/prefectures/<県>/<年-季節>`）。
@@ -72,10 +76,51 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const entry = district ? findTournament(district, tournament) : null;
   if (!district || !entry) return {};
 
-  const title = entry.name ?? `${entry.year ?? ""}年${seasonLabel(entry.season)}`;
+  // ★**画面に出すのは `displayName`**（出典のページ見出しを落としたもの）
+  const title = entry.displayName ?? `${entry.year ?? ""}年${seasonLabel(entry.season)}`;
+
+  /*
+    ★★**description に実際の数字を入れる**（2026-08-29）。
+
+    それまでは**600件の大会ページが全部同じ定型文**だった。
+    「2025 神奈川 高校野球 決勝」「◯◯県大会 優勝」のような検索は、
+    **その大会にしか無い言葉**（年・優勝校・試合数）でしか当たらない。
+
+    ★★**読み取れなかったものは書かない。**
+    優勝校は決勝が1試合だけ読めているときにしか出さない
+    （`summarizeTournament`）。**当て推量を検索結果に出さない。**
+  */
+  const s = summarizeTournament(entry);
+  const bracket = buildRegionalBracket(entry.games);
+
+  /*
+    ★★**年を必ず入れる。** 狙っているのは「2025 神奈川 高校野球 決勝」のような
+    **年つきの検索**で、大会名だけでは当たらない
+    （`第108回…` と書かれていても、探す人は西暦で打つ）。
+    ★**大会名に既に西暦が入っている県がある**ので、そのときは重ねない
+    （大阪は `…大阪大会〔令和7(2025)年〕`）。
+  */
+  const hasYear = entry.year != null && title.includes(String(entry.year));
+  const label = [entry.year != null && !hasYear ? `${entry.year}年` : "", district.district]
+    .filter(Boolean)
+    .join("・");
+
+  const description = [
+    `${title}（${label}）の結果。`,
+    `${s.teams}校が出場し、${s.games}試合を掲載しています。`,
+    s.champion ? `優勝は${s.champion}。` : "",
+    // ★**「トーナメント表」は検索語として強い。組めた大会でだけ書く**
+    bracket
+      ? "トーナメント表と全試合のスコア、公立高校の勝ち上がりが分かります。"
+      : "全試合のスコアと、公立高校の勝ち上がりが分かります。",
+  ].join("");
+
   return {
-    title: `${title}｜${district.district}`,
-    description: `${title}の試合結果とトーナメント表。公立高校の勝ち上がりが分かるようにしています。`,
+    // ★**title にも年を入れる**（description より効くため。重複するときは足さない）
+    title: entry.year != null && !hasYear
+      ? `${title}（${entry.year}年）｜${district.district}`
+      : `${title}｜${district.district}`,
+    description,
     alternates: { canonical: `/prefectures/${slug}/${tournament}` },
   };
 }
@@ -98,10 +143,9 @@ export default async function TournamentPage({ params }: Props) {
   */
   const bracket = buildRegionalBracket(entry.games);
 
-  const title = entry.name ?? `${entry.year ?? ""}年${seasonLabel(entry.season)}の大会`;
-  const publicGames = entry.games.filter((g) =>
-    g.teams.some((t) => t.slug && !t.combined),
-  ).length;
+  const title = entry.displayName ?? `${entry.year ?? ""}年${seasonLabel(entry.season)}の大会`;
+  // ★**description と同じ関数で数える**（画面と検索結果で数が食い違わないように）
+  const publicGames = summarizeTournament(entry).publicGames;
 
   return (
     <Container className="pb-4">

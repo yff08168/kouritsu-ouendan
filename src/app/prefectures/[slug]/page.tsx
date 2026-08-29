@@ -31,7 +31,7 @@ import { getPhenomenaByPrefecture } from "@/lib/queries/phenomena";
 import { getActivePolls, getCheerMessages } from "@/lib/queries/community";
 import { PREFECTURES } from "@/lib/constants";
 import { getRegionalDistrict, latestSeasonGames } from "@/lib/regional-results";
-import { listTournaments } from "@/lib/regional-tournaments";
+import { listTournaments, tournamentDisplayName } from "@/lib/regional-tournaments";
 import { TournamentLinks } from "@/components/results/TournamentLinks";
 import { bracketForGames } from "@/lib/regional-bracket";
 import { RegionalBracket } from "@/components/results/RegionalBracket";
@@ -67,9 +67,40 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!prefecture) return { title: "都道府県が見つかりません" };
 
+  /*
+    ★★**description にその県の実際の中身を書く**（2026-08-29）。
+
+    それまでは**49地区すべてが同じ定型文**で、
+    「神奈川 公立 高校野球」のような**県＋野球**の検索
+    （運営者が挙げた主要な流入経路の1つ）に対して、
+    **他の48県と区別が付く言葉が県名しか無かった。**
+
+    ★**収録している大会数・試合数・いちばん新しい大会**を出す。
+    ★★**地方大会を持たない地区がある**（規約で外している6県ほか）。
+    **そこに「大会結果を掲載」と書かないこと** —— 画面には無い。
+  */
+  const [schools, district] = await Promise.all([
+    // ★**件数だけ要る**ので1件だけ取る（`total` は全件の数）
+    searchSchools({ prefectureSlug: slug, perPage: 1 }),
+    getRegionalDistrict(slug),
+  ]);
+  const tournaments = district ? listTournaments(district) : [];
+  const totalGames = district?.games.length ?? 0;
+  // ★**いちばん新しい大会**（`listTournaments` は新しい順）
+  const latest = tournaments[0] ?? null;
+
+  const description = [
+    `${prefecture.fullName}の公立高校野球。`,
+    tournaments.length > 0
+      ? `地方大会の結果を${tournaments.length}大会・${totalGames}試合ぶん掲載しています。`
+      : "",
+    latest?.displayName ? `最新は「${latest.displayName}」。` : "",
+    `公立高校・国立高校・高専${schools.total}校の一覧と、公立旋風もまとめています。`,
+  ].join("");
+
   return {
     title: `${prefecture.fullName}の公立高校野球`,
-    description: `${prefecture.fullName}の公立高校・国立高校・高専の一覧、地方大会のニュース、公立旋風をまとめています。地元の公立高校を応援しよう。`,
+    description,
     alternates: { canonical: `/prefectures/${prefecture.slug}` },
   };
 }
@@ -219,7 +250,7 @@ export default async function PrefectureDetailPage({ params }: Props) {
         >
           <SectionHeading
             id="pref-bracket"
-            title={bracket.tournament ?? "トーナメント表"}
+            title={tournamentDisplayName(bracket.tournament) ?? "トーナメント表"}
             icon={<GitBranch size={18} />}
           />
           <RegionalBracket bracket={bracket} />

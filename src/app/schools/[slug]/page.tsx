@@ -108,8 +108,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : "同じ都道府県の公立高校、公立旋風もまとめて確認できます。",
   ].join("");
 
+  /*
+    ★★**title に市区町村と「野球部」を入れる**（2026-08-29）。
+
+    それまでは `新城高校（神奈川）` で、**「野球」が1文字も入っていなかった。**
+    運営者が挙げた流入経路の1つが**「高校名 野球」という狭いワード**なので、
+    **検索語そのものが title に無い**のは効きが悪い。
+
+    ★**市区町村は同名校の見分けに効く**（`新城高校` は神奈川と愛知にある）。
+    ★**「◯◯市」だけを持っている**（`schools.city`）。都道府県は付いていない。
+
+    ★★**`prefecture.name` は住所ではなく甲子園の大会区分。**
+    北海道の学校は `北北海道・旭川市` になる。**住所として直さないこと** ——
+    このサイトは学校を大会区分で並べており、description・パンくず・
+    検索結果の表示もすべてこの形で揃えてある。**title だけ別の見せ方にしない。**
+  */
   return {
-    title: `${school.name}（${school.prefecture.name}）`,
+    title: `${school.name}（${school.prefecture.name}${school.city ? `・${school.city}` : ""}）の野球部`,
     description,
     alternates: { canonical: `/schools/${school.slug}` },
     // 中身の無いページは検索インデックスに入れない。理由は `lib/school-index.ts`。

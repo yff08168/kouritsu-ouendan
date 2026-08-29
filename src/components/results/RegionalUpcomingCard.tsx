@@ -7,6 +7,7 @@ import {
   seasonLabel,
   type RegionalUpcoming,
 } from "@/lib/regional-results";
+import { tournamentDisplayName } from "@/lib/regional-tournaments";
 
 /**
  * これからの試合（組み合わせ）。
@@ -44,7 +45,7 @@ export function RegionalUpcomingCard({
       />
       <p className="mt-1 text-sm text-ink-muted">
         {seasonLabel(season)}の組み合わせです。
-        {tournaments.length === 1 && <>（{tournaments[0]}）</>}
+        {tournaments.length === 1 && <>（{tournamentDisplayName(tournaments[0])}）</>}
       </p>
 
       <ul className="mt-3 divide-y divide-line">

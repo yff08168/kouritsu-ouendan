@@ -139,7 +139,8 @@ function List({
             className="flex min-h-11 items-center justify-between gap-3 rounded-lg border border-line px-3 py-2 hover:bg-navy-50"
           >
             <span className="min-w-0 flex-1 truncate text-sm font-medium text-ink">
-              {t.name ?? `${t.year ?? ""}年${seasonLabel(t.season)}`}
+              {/* ★**`name` ではなく `displayName`**（並び・スラッグは `name` のまま） */}
+              {t.displayName ?? `${t.year ?? ""}年${seasonLabel(t.season)}`}
             </span>
             <span className="shrink-0 text-xs text-ink-muted">
               {t.games.length}試合

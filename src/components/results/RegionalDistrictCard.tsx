@@ -9,6 +9,7 @@ import {
   type RegionalDistrict,
   type RegionalGame,
 } from "@/lib/regional-results";
+import { tournamentDisplayName } from "@/lib/regional-tournaments";
 
 /**
  * 県のページ（`/prefectures/<slug>`）に出す、その県の地方大会の結果。
@@ -76,7 +77,8 @@ export function RegionalDistrictCard({
       <p className="mt-1 text-sm text-ink-muted">
         {tournaments.length > 0 && (
           <>
-            {tournaments.slice(0, 2).join("・")}
+            {/* ★**出典のページ見出しを落として出す**（`tournamentDisplayName`） */}
+            {tournaments.slice(0, 2).map(tournamentDisplayName).join("・")}
             {tournaments.length > 2 && "ほか"}から、
           </>
         )}

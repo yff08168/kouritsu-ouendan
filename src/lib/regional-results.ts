@@ -378,7 +378,38 @@ export function regionalGamesOf(
  * まだ対応していない県は null。**47県すべてにデータがあるわけではない**
  * （2026-08-14 時点で12県）。
  */
+/**
+ * ★★★**県ごとに1回だけ読む**（2026-08-29 追加）。
+ *
+ * ------------------------------------------------------------------
+ * ★★**これが無いと Vercel のビルドが落ちる。**
+ *
+ * 学校ページは3,505枚あり、**メタ情報と本文の両方**がこの関数を呼ぶ。
+ * JSON の読み込み自体は import キャッシュが効くが、
+ * **`mergeRegionalSupplements` と戻り値の組み立ては毎回走る。**
+ *
+ * ★**Vercel のビルドは「2コア・ワーカー1つ」**で、4,419ページを
+ * **1つのヒープ**で作る。積み重なると GC が効かなくなり、
+ * **1ページ60秒の上限**に引っかかって**ビルドごと落ちる**
+ * （実測：1,971ページ目あたりから `kaifu` `kaita` `kaiyo` が連続で超過）。
+ * ★**ローカルはコアが多くワーカーも複数なので再現しない。**
+ * **「ローカルで通る」はVercelで通る根拠にならない。**
+ *
+ * ★**中身は生成物（不変）なので、使い回して問題ない。**
+ */
+const districtCache = new Map<string, RegionalDistrict | null>();
+
 export async function getRegionalDistrict(
+  prefectureSlug: string,
+): Promise<RegionalDistrict | null> {
+  const cached = districtCache.get(prefectureSlug);
+  if (cached !== undefined) return cached;
+  const built = await buildRegionalDistrict(prefectureSlug);
+  districtCache.set(prefectureSlug, built);
+  return built;
+}
+
+async function buildRegionalDistrict(
   prefectureSlug: string,
 ): Promise<RegionalDistrict | null> {
   /*

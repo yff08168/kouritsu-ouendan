@@ -171,7 +171,28 @@ const SEASON_ORDER: Record<RegionalSeason, number> = {
  * ★**`district.games` を渡すこと**（私立どうしの試合も含む）。
  * 枝を組むのに要る。
  */
+/**
+ * ★★★**県ごとに1回だけ作る**（2026-08-29 追加）。
+ *
+ * **学校ページ3,505枚がこれを呼ぶ**（その学校が出た大会へのリンクを作るため）。
+ * 中身は県の全試合をなめて Map を組み、`localeCompare` で並べ替える処理で、
+ * **神奈川なら1回あたり2,942試合ぶん**。**毎回作り直すとビルドが落ちる**
+ * （`koshien-games.ts` の `normalizedCache` の説明を読むこと）。
+ *
+ * ★**`district` は生成物から作った不変のオブジェクト**なので、
+ * 同じものが来たら同じ結果を返してよい。**WeakMap なので溜め込まない。**
+ */
+const tournamentsCache = new WeakMap<RegionalDistrict, TournamentEntry[]>();
+
 export function listTournaments(district: RegionalDistrict): TournamentEntry[] {
+  const hit = tournamentsCache.get(district);
+  if (hit) return hit;
+  const built = buildTournaments(district);
+  tournamentsCache.set(district, built);
+  return built;
+}
+
+function buildTournaments(district: RegionalDistrict): TournamentEntry[] {
   const byName = new Map<string, RegionalGame[]>();
   for (const game of district.games) {
     // 大会名の無い試合は「季節」でひとまとめにする（名前が無いと分けようがない）

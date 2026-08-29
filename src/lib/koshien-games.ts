@@ -172,7 +172,38 @@ export function prefectureKey(s: string): string {
  * （第97回選抜の「ニ松学舎大付」）。生成側でも直しているが、
  * **学校マスタ側から来る名前にも同じ掃除をかける。**
  */
+/**
+ * ★★★**正規化した結果を覚えておく**（2026-08-29 追加）。
+ *
+ * ------------------------------------------------------------------
+ * ★★**これが無いと Vercel のビルドが落ちる。**
+ *
+ * `koshienGamesOf` は**学校ページ1枚ごとに全6,094試合を走査**し、
+ * 1試合につき2チームぶん正規化する。**学校は3,505校**あるので
+ * **4,200万回**呼ばれる（`jinguGamesOf`・`headToHead` も同じ関数を通る）。
+ *
+ * ★**Vercel のビルドは「2コア・ワーカー1つ」**で 4,419ページを1つのヒープで作る。
+ * 生成速度が**毎秒15 → 8 → 1.2**と落ちていき、**1ページ60秒の上限**を超えて
+ * **ビルドごと落ちた**（実測。落ちるページは毎回違う＝特定のページが重いのではない）。
+ * ★**ローカルはコアが多くワーカーも複数なので再現しない。**
+ * **「ローカルで通る」はVercelで通る根拠にならない。**
+ *
+ * ------------------------------------------------------------------
+ * ★**中身は変えていない。** 同じ入力に同じ出力を返す純粋な関数なので、
+ * 覚えておいても結果は1文字も変わらない。
+ * ★**出てくる校名の種類は高々数千**なので、覚えても増え続けない。
+ */
+const normalizedCache = new Map<string, string>();
+
 export function normalizeKoshienName(s: string): string {
+  const hit = normalizedCache.get(s);
+  if (hit !== undefined) return hit;
+  const out = normalizeKoshienNameUncached(s);
+  normalizedCache.set(s, out);
+  return out;
+}
+
+function normalizeKoshienNameUncached(s: string): string {
   return (
     s
       .normalize("NFKC")

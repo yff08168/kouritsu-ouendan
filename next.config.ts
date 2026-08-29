@@ -5,6 +5,19 @@ const supabaseHost = process.env.NEXT_PUBLIC_SUPABASE_URL
   : undefined;
 
 const nextConfig: NextConfig = {
+  /*
+    ★★★**Vercel の「ワーカー1つ」をローカルで再現するための逃げ道**（2026-08-29）。
+
+    `BUILD_ONE_WORKER=1 npm run build` で、ページ生成を1ワーカーに絞る。
+
+    ★★**なぜ要るか** —— Vercel のビルドは **2コア・8GB で「1 worker」**。
+    4,419ページを**1つのヒープ**で作るので、ページごとの処理が重いと
+    **後半でGCが効かなくなり、1ページ60秒の上限を超えてビルドごと落ちる。**
+    ★**開発機はコアが多くワーカーも複数**なので、**ローカルで通ってもVercelで落ちる。**
+    実際に2回続けて落ち、**落ちるページは毎回違った**（`kaifu` → `sano`）。
+    ★**「ローカルで通る」をVercelで通る根拠にしないこと。**
+  */
+  experimental: process.env.BUILD_ONE_WORKER ? { cpus: 1 } : {},
   images: {
     /*
      * ★★★**Next.js の画像最適化を使わない**（2026-08-29）。

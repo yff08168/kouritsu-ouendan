@@ -185,7 +185,8 @@ export default async function SchoolDetailPage({ params }: Props) {
     **部品側で組み立てないこと**（連番の規則が2か所に散る）。
   */
   const tournamentLinks: Record<string, { href: string; name: string }> = {};
-  if (regionalDistrict) {
+  // ★**戦績が無い学校では作らない**（リンクを出す先が無い。ビルドの無駄）
+  if (regionalDistrict && regionalRecord.length > 0) {
     for (const t of listTournaments(regionalDistrict)) {
       tournamentLinks[`${t.season}\t${t.name ?? ""}`] = {
         href: `/prefectures/${school.prefecture.slug}/${t.slug}`,

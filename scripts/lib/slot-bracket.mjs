@@ -631,6 +631,35 @@ export function assembleSlotBracket(
       通っているので触らない）。**使う県だけで有効にする。**
     */
     flatFragments = false,
+    /*
+      ★★★**「試合番号の行」が刷ってある紙は、そこから1回戦を読む**（2026-08-29。沖縄）。
+
+      既定は `null`（今までどおり、帯を下から順に試して**2つずつ組にした中点が
+      全部スロットの境目に乗る帯**を1回戦とする）。
+
+      ★★**その探し方は「帯に余分な数字が1つでも混ざると必ず外れる」。**
+      沖縄の古い紙（2014〜2017年の夏など）は、**シード校のスロットにも
+      得点欄と同じ大きさの数字が刷られている**（不戦を `-1` `-2` と書く
+      いまの紙と違い、`1` や `0` がそのまま置かれる）。
+      2つずつ順に組むと**そこから先が1つずつずれ**、
+      **中点が境目に乗らなくなって帯ごと捨てられる。**
+      実際、第98回夏は「63個（奇数）」で落ち、第99回夏は
+      **その下にあるコールドの注記の行（空欄が `0` として出る）が
+      1回戦として通ってしまっていた。**
+
+      ★★**紙は「何番の試合がどこにあるか」を自分で書いている。**
+      渡すのは**その行そのもの**（`0` は不戦の印なので除く）。
+      1回戦の試合の中点が推測なしで決まるので、
+      **余分な数字がいくつ混ざっていても、その左右の数字だけを拾える。**
+
+      ★**拾った2つの中点が、試合番号の位置から 0.45 スロット以内**であることを
+      要求する（既定の探し方と同じ許容）。コールドの注記の行は
+      **試合の中心に1つずつしか無い**ので、この条件で必ず落ちる。
+
+      ★**渡す行は `page.lines` から外しておくこと**（帯の候補に残すと、
+      2回戦以降の帯として拾われる）。
+    */
+    gameNumberRow = null,
   } = {},
 ) {
   /*
@@ -895,6 +924,17 @@ export function assembleSlotBracket(
   */
   let r1row = null;
   let pods = [];
+  /**
+   * ★★**紙が刷っている「試合番号」の位置**（`gameNumberRow`。沖縄）。
+   * 不戦の印（`0`）は試合ではないので外す。渡されなければ `null` で、
+   * 下の帯の探し方は今までどおり。
+   */
+  const printedMids = gameNumberRow
+    ? numbersOf(gameNumberRow)
+        .filter((n) => n.v > 0)
+        .map((n) => n.slot)
+        .sort((a, b) => a - b)
+    : null;
   for (const line of bandRows) {
     /*
       ★**1回戦のスコアが2行に分かれることがある。**
@@ -923,6 +963,44 @@ export function assembleSlotBracket(
         `  [debug] 1回戦の候補 y=${line.y.toFixed(0)}: 数字${ns.length}個` +
           `（帯 ${merged.map((l) => l.y.toFixed(0)).join("+")}／PITCH=${PITCH.toFixed(1)}）` + (process.env.BRACKET_DEBUG === "2" ? ` [${ns.map((n) => n.v + "@" + n.slot.toFixed(2)).join(" ")}]` : ""),
       );
+    }
+    /*
+      ★★**試合番号が刷ってある紙は、その位置の左右にある数字だけを拾う**
+      （上の `gameNumberRow` の説明を読むこと）。
+      **余分な数字がいくつ混ざっていても位置がずれない**のが、
+      2つずつ順に組む既定との違い。
+    */
+    if (printedMids) {
+      const found = [];
+      let ok = true;
+      for (const mid of printedMids) {
+        const a = Math.round(mid - 0.5);
+        const left = ns.filter((n) => n.slot < mid).at(-1);
+        const right = ns.find((n) => n.slot > mid);
+        if (!left || !right || a < 1 || a + 1 > N) {
+          ok = false;
+          break;
+        }
+        // 拾った2つの中点が試合番号の位置に来ること（許容は既定と同じ 0.45）
+        if (Math.abs((left.slot + right.slot) / 2 - mid) > 0.45) {
+          if (process.env.BRACKET_DEBUG) {
+            console.log(
+              `  [debug]   試合番号 ${mid.toFixed(2)} の左右が ${left.v}(${left.slot.toFixed(2)})` +
+                ` と ${right.v}(${right.slot.toFixed(2)}) で、中点が ` +
+                `${Math.abs((left.slot + right.slot) / 2 - mid).toFixed(2)} ずれている`,
+            );
+          }
+          ok = false;
+          break;
+        }
+        found.push({ a, sa: left.v, sb: right.v });
+      }
+      if (!ok || !found.length) continue;
+      const used = new Set();
+      if (found.some((p) => used.has(p.a) || used.has(p.a + 1) || (used.add(p.a), used.add(p.a + 1), false))) continue;
+      r1row = merged.reduce((a, b) => (b.y > a.y ? b : a));
+      pods = found;
+      break;
     }
     if (ns.length < minFirstRound * 2 || ns.length % 2 !== 0) continue;
     const found = [];

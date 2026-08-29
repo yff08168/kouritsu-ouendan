@@ -129,6 +129,15 @@ export function assembleVectorBracket({
   teams: givenTeams = null,
   /** 枝の線から校名の行までの許容（既定は富山で決めた 5.5）。下の `NAME_TOL` を読むこと */
   nameTol = 5.5,
+  /** 得点が枝の線に載っている紙のための、列より外側の許容（下の scoreBetween を読むこと） */
+  scoreBack = 0,
+  /*
+    ★**決勝の得点が線からどれだけ離れているか**（既定は富山で決めた 8）。
+    愛知の春季・秋季は**出会う点から伸びる縦線のわきに 16.8 離して**置かれており、
+    既定のままだと**決勝の得点が2つとも読めない。**
+    ★**準決勝の得点は x で外れる**ので、広げても取り違えない。
+  */
+  finalScoreReach = 8,
   roundNames = ["1回戦", "2回戦", "3回戦", "準々決勝", "準決勝", "決勝"],
 }) {
   const isWin = (s) => s.color === winnerColor;
@@ -262,6 +271,7 @@ export function assembleVectorBracket({
     // 中央の三分の一だけを見る。ふつうの回戦の枝を拾わないため
     const lo = pageX * 0.4;
     const hi = pageX * 0.6;
+    const found = [];
     for (const a of horiz) {
       for (const b of horiz) {
         if (a === b) continue;
@@ -271,10 +281,31 @@ export function assembleVectorBracket({
         if (Math.abs((a.y1 + a.y2) / 2 - (b.y1 + b.y2) / 2) > JOIN_GAP) continue;
         // 勝ち色と負け色が1本ずつ。**両方同じ色なら決勝ではない**
         if (isWin(a) === isWin(b)) continue;
-        return { meet: a.x2, y: (a.y1 + a.y2) / 2, left: a, right: b };
+        found.push({ meet: a.x2, y: (a.y1 + a.y2) / 2, left: a, right: b });
       }
     }
-    return null;
+    if (!found.length) return null;
+    /*
+      ★★★**決勝の横線が3本に分かれている紙がある**（2026-08-30。愛知の春季・秋季）。
+
+          赤 247.5→278.3 ／ 黒 278.3→294.6 ／ 赤 294.6→340.5
+
+      **色の変わり目が2つできる**ので、上の探し方だと**どちらが出会う点か決められない。**
+      ★**先に見つかったほう（278.3）を採ると、勝った側が左右あべこべになる**
+      （実際に、右の山の享栄が勝った決勝で「中部大春日丘が勝った」と読んだ）。
+
+      ★★**優勝校の枝は、出会う点から縦に伸びている。**
+      愛知は `x=293.4 y=430.3〜468.4` の赤い縦線がそれで、**294.6 のほうにだけ接している。**
+      ★**推測ではなく、紙に描いてある線を見て決めている。**
+      ★**縦線が無ければ今までどおり先に見つかったものを使う**ので、富山は変わらない
+      （富山の決勝は横線が2本で、出会う点が1つしか無い）。
+    */
+    const withStem = found.filter((f) =>
+      vert.some(
+        (v) => Math.abs(v.x1 - f.meet) < COL && (Math.abs(v.y1 - f.y) < JOIN_GAP || Math.abs(v.y2 - f.y) < JOIN_GAP),
+      ),
+    );
+    return withStem[0] ?? found[0];
   }
 
   /**
@@ -410,7 +441,17 @@ export function assembleVectorBracket({
   };
   const cols = { L: colsOf("L"), R: colsOf("R") };
 
-  /** 合流点と相手の線のあいだ、列のすぐ内側にある数字 */
+  /**
+   * 合流点と相手の線のあいだ、列のすぐ内側にある数字。
+   *
+   * ★★**得点が枝の線にちょうど載っている紙がある**（2026-08-30。愛知の春季・秋季）。
+   * そこは**球場と得点が1つの断片**（`春日井② 7`）になっており、
+   * 断片の中の位置は**幅を文字数で割って見積もる**しかない。
+   * ★**全角と半角が混じると見積もりが数ポイントずれる**ので、
+   * 「列より内側」を厳密に求めると**その得点だけ読めない**（実測で11試合が壊れた）。
+   * `scoreBack` で紙ごとに数ポイントぶん外側まで見に行けるようにしてある。
+   * ★**列の間隔は 30 ポイント以上あるので、数ポイントでは隣の回戦を拾わない。**
+   */
   function scoreBetween(m, y) {
     const lo = Math.min(m.join, y);
     const hi = Math.max(m.join, y);
@@ -419,7 +460,9 @@ export function assembleVectorBracket({
       (d) =>
         d.y > lo - 1 &&
         d.y < hi + 1 &&
-        (side === "L" ? d.x > m.x && d.x < m.x + 32 : d.x < m.x && d.x > m.x - 32),
+        (side === "L"
+          ? d.x > m.x - scoreBack && d.x < m.x + 32
+          : d.x < m.x + scoreBack && d.x > m.x - 32),
     );
     if (!cand.length) return null;
     cand.sort((a, b) => Math.abs(a.y - (lo + hi) / 2) - Math.abs(b.y - (lo + hi) / 2));
@@ -456,7 +499,7 @@ export function assembleVectorBracket({
     const round = Math.max(0, ...games.map((g) => g.round)) + 1;
     const near = (from, to) =>
       digits
-        .filter((d) => Math.abs(d.y - final.y) < 8 && d.x > from && d.x < to)
+        .filter((d) => Math.abs(d.y - final.y) < finalScoreReach && d.x > from && d.x < to)
         .sort((p, q) => Math.abs(p.y - final.y) - Math.abs(q.y - final.y))[0]?.n ?? null;
     const leftName = nameAt(final.y, final.meet, "L");
     const rightName = nameAt(final.y, final.meet, "R");

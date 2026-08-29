@@ -21,6 +21,8 @@ import {
   toRegionalGames,
 } from "@/lib/national-tournaments";
 import { buildRegionalBracket } from "@/lib/regional-bracket";
+import { buildNationalLead } from "@/lib/national-lead";
+import { LeadText } from "@/components/common/LeadText";
 import { getSchoolNameIndex } from "@/lib/queries/schools";
 
 /**
@@ -91,9 +93,21 @@ export default async function KoshienTournamentPage({ params }: Props) {
   const bracket = buildRegionalBracket(games);
   const entrants = publicEntrants(t, resolve);
   const f = finalists(t);
+
   // ★この大会だけ出所が違うなら、画面に出す
   const source = supplementSource(t);
   const championIsPublic = f ? Boolean(resolve(f.champion, f.championPref)) : false;
+  /*
+    ★★**リード文**（2026-08-29 その3 追加）。**このページ唯一の地の文。**
+    組み立ての規則は `src/lib/national-lead.ts`。
+  */
+  const lead = buildNationalLead({
+    tournament: t,
+    entrants,
+    finalists: f,
+    championIsPublic,
+    hasBracket: Boolean(bracket),
+  });
 
   const all = listKoshienTournaments();
   const at = all.findIndex((x) => x.slug === t.slug);
@@ -160,6 +174,8 @@ export default async function KoshienTournamentPage({ params }: Props) {
           )}
         </p>
       </header>
+
+      <LeadText paragraphs={lead} />
 
       {/* ------- 出場した公立校 ------- */}
       {entrants.length > 0 && (

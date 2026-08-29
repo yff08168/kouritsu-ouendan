@@ -17,7 +17,7 @@ import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { Badge } from "@/components/common/Badge";
 import { Thumbnail } from "@/components/common/Thumbnail";
 import { SectionHeading } from "@/components/common/SectionHeading";
-import { SchoolLead } from "@/components/schools/SchoolLead";
+import { LeadText } from "@/components/common/LeadText";
 import { SchoolRegionalRecord } from "@/components/schools/SchoolRegionalRecord";
 import { HeadToHeadList } from "@/components/schools/HeadToHeadList";
 import { SchoolKoshienRecord } from "@/components/schools/SchoolKoshienRecord";
@@ -450,7 +450,7 @@ export default async function SchoolDetailPage({ params }: Props) {
         ★★リード文。見出しの直後に置く（このページ唯一の地の文なので、
         戦績の表より先に読ませる）。中身が無い学校では何も描かれない。
       */}
-      <SchoolLead paragraphs={lead} />
+      <LeadText paragraphs={lead} />
 
       {school.description && (
         <section

@@ -614,3 +614,78 @@ export const getSchoolNameIndex = cache(
     };
   },
 );
+
+/**
+ * その都道府県の甲子園の集計。**県のページのリード文に使う。**
+ *
+ * ------------------------------------------------------------------
+ * ★★**`getKoshienDataset` を使わない理由**（2026-08-29）
+ *
+ *   あちらは出場歴3,000件を4リクエストで取る（`/rankings` 用）。
+ *   ★**県のページは `revalidate = 300`**（投票と応援メッセージが動くため）で、
+ *   49枚が5分ごとに作り直されうる。**そこに3,000行の集計を足すと
+ *   1時間に588回のデータセット取得**になる。
+ *
+ *   ★**ここは学校マスタの非正規化列を、その県のぶんだけ読む**
+ *   （出場歴のある学校だけなので、多い県でも数十行）。
+ *
+ * ★**RLS が公開済みの行しか返さない。** `status` の条件を書かないこと。
+ */
+export type PrefectureKoshienSummary = {
+  /** 甲子園に出たことがある公立校の数 */
+  schools: number;
+  /** 春夏あわせた延べ出場回数 */
+  appearances: number;
+  /** いちばん最近に出た学校。同じ年に複数いれば校名順で1校 */
+  latest: { name: string; slug: string; year: number } | null;
+};
+
+type KoshienCountRow = {
+  slug: string;
+  name: string;
+  koshien_spring_count: number;
+  koshien_summer_count: number;
+  last_koshien_year: number | null;
+};
+
+export async function getPrefectureKoshienSummary(
+  prefectureSlug: string,
+): Promise<PrefectureKoshienSummary> {
+  const empty: PrefectureKoshienSummary = {
+    schools: 0,
+    appearances: 0,
+    latest: null,
+  };
+
+  const prefecture = PREFECTURE_BY_SLUG.get(prefectureSlug);
+  if (!prefecture) return empty;
+
+  const supabase = createSupabaseServerClient();
+
+  const { data, error } = await supabase
+    .from("schools")
+    .select("slug, name, koshien_spring_count, koshien_summer_count, last_koshien_year")
+    .eq("prefecture_id", prefecture.id)
+    // ★出場歴のある学校だけ。**「0回」の学校を数に入れない**
+    .or("koshien_spring_count.gt.0,koshien_summer_count.gt.0")
+    // ★並びを一意に決める（このリポジトリで3度踏んだページングの罠と同じ理由）
+    .order("name", { ascending: true });
+
+  throwIfError(error, "都道府県の甲子園集計の取得");
+
+  const rows = (data ?? []) as unknown as KoshienCountRow[];
+  if (rows.length === 0) return empty;
+
+  let appearances = 0;
+  let latest: PrefectureKoshienSummary["latest"] = null;
+  for (const row of rows) {
+    appearances += row.koshien_spring_count + row.koshien_summer_count;
+    if (row.last_koshien_year === null) continue;
+    // ★同じ年に複数いたら先に来たほう（＝校名順）を採る。**当て推量で選ばない**
+    if (!latest || row.last_koshien_year > latest.year) {
+      latest = { name: row.name, slug: row.slug, year: row.last_koshien_year };
+    }
+  }
+
+  return { schools: rows.length, appearances, latest };
+}

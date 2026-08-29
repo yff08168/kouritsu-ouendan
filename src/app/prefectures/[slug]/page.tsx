@@ -25,7 +25,8 @@ import { RegionalDistrictCard } from "@/components/results/RegionalDistrictCard"
 import { CheerMessageList } from "@/components/community/CheerMessageList";
 
 import { getPrefectureBySlug } from "@/lib/queries/prefectures";
-import { searchSchools } from "@/lib/queries/schools";
+import { buildPrefectureLead } from "@/lib/prefecture-lead";
+import { getPrefectureKoshienSummary, searchSchools } from "@/lib/queries/schools";
 import { getNewsList } from "@/lib/queries/news";
 import { getPhenomenaByPrefecture } from "@/lib/queries/phenomena";
 import { getActivePolls, getCheerMessages } from "@/lib/queries/community";
@@ -111,7 +112,7 @@ export default async function PrefectureDetailPage({ params }: Props) {
 
   if (!prefecture) notFound();
 
-  const [schoolResult, newsResult, phenomena, polls, messages, regional] =
+  const [schoolResult, newsResult, phenomena, polls, messages, regional, koshien] =
     await Promise.all([
       searchSchools({ prefectureSlug: slug, perPage: 12 }),
       getNewsList({ prefectureSlug: slug, perPage: 6 }),
@@ -128,6 +129,12 @@ export default async function PrefectureDetailPage({ params }: Props) {
         **対応していない県は null**（2026-08-13 時点で6県だけ）。
       */
       getRegionalDistrict(slug),
+      /*
+        ★**その県の甲子園の集計**（2026-08-29。リード文に使う）。
+        ★**`getKoshienDataset`（3,000行）は使わない** —— このページは
+        `revalidate = 300` で5分ごとに作り直されうる。理由は queries/schools.ts。
+      */
+      getPrefectureKoshienSummary(slug),
     ]);
 
   const regionalGames = regional ? latestSeasonGames(regional, REGIONAL_GAMES_LIMIT) : null;
@@ -174,6 +181,21 @@ export default async function PrefectureDetailPage({ params }: Props) {
   const hasRegional = Boolean(
     (regional && regionalGames) || regional?.upcoming?.length || tournaments.length,
   );
+
+  /*
+    ★★**リード文**（2026-08-29 その3 追加）。**このページ唯一の地の文。**
+    見出しは「◯◯県の公立高校野球」＝狙っている検索語そのものなのに、
+    それを支える文がページに無かった。組み立ての規則は `src/lib/prefecture-lead.ts`。
+    ★**ここで文を足さないこと**（規則が2か所に散る）。
+  */
+  const lead = buildPrefectureLead({
+    prefecture,
+    schoolCount: schoolResult.total,
+    district: regional,
+    tournaments,
+    koshien,
+    phenomenaCount: phenomena.length,
+  });
 
   /* ------- 学校一覧 ------- */
   const schoolsSection = (
@@ -330,6 +352,21 @@ export default async function PrefectureDetailPage({ params }: Props) {
           <p className="mt-3 text-sm leading-relaxed text-ink">
             {prefecture.description}
           </p>
+        )}
+
+        {/*
+          ★リード文は見出しカードの中に置く（学校ページは外の別カード）。
+          ここは数の並び（掲載校数・関連ニュース・公立旋風）が続くので、
+          間に別カードを挟むと見出しと数が切り離される。
+        */}
+        {lead.length > 0 && (
+          <div className="mt-3 space-y-2.5">
+            {lead.map((text) => (
+              <p key={text} className="text-sm leading-relaxed text-ink">
+                {text}
+              </p>
+            ))}
+          </div>
         )}
 
         <dl className="mt-4 flex flex-wrap gap-x-8 gap-y-2 text-sm">

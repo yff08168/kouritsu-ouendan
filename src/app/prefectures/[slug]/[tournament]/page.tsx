@@ -9,6 +9,7 @@ import { AdSlot } from "@/components/ads/AdSlot";
 import { RegionalBracket } from "@/components/results/RegionalBracket";
 import { RegionalGameList } from "@/components/results/RegionalGameList";
 import { TournamentLinks } from "@/components/results/TournamentLinks";
+import { LeadText } from "@/components/common/LeadText";
 
 import { PREFECTURES } from "@/lib/constants";
 import { getPrefectureBySlug } from "@/lib/queries/prefectures";
@@ -19,6 +20,7 @@ import {
   listTournaments,
   summarizeTournament,
 } from "@/lib/regional-tournaments";
+import { buildTournamentLead } from "@/lib/tournament-lead";
 
 /**
  * 1つの大会のページ（`/prefectures/<県>/<年-季節>`）。
@@ -147,6 +149,14 @@ export default async function TournamentPage({ params }: Props) {
   // ★**description と同じ関数で数える**（画面と検索結果で数が食い違わないように）
   const publicGames = summarizeTournament(entry).publicGames;
 
+  /*
+    ★★**リード文**（2026-08-29 その3 追加）。**このページ唯一の地の文。**
+    組み立ての規則は `src/lib/tournament-lead.ts`。
+    ★**`hasBracket` を渡すのは、組めていない大会に「トーナメント表が見られます」と
+    書かせないため** —— 画面の断り書きと食い違う。
+  */
+  const lead = buildTournamentLead({ district, entry, title, hasBracket: Boolean(bracket) });
+
   return (
     <Container className="pb-4">
       <Breadcrumb
@@ -170,6 +180,8 @@ export default async function TournamentPage({ params }: Props) {
           {publicGames > 0 && `（公立が絡む試合 ${publicGames}件）`}
         </p>
       </header>
+
+      <LeadText paragraphs={lead} />
 
       {/* ------- トーナメント表（枝が組めた大会だけ） ------- */}
       {bracket ? (

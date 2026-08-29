@@ -20,6 +20,8 @@ import {
 } from "@/lib/national-tournaments";
 import { jinguPrefectureOf } from "@/lib/jingu-games";
 import { buildRegionalBracket } from "@/lib/regional-bracket";
+import { buildNationalLead } from "@/lib/national-lead";
+import { LeadText } from "@/components/common/LeadText";
 import { getSchoolNameIndex } from "@/lib/queries/schools";
 
 /** 1つの明治神宮大会のページ（`/jingu/<年>`）。作りは甲子園の大会ページと同じ */
@@ -70,7 +72,19 @@ export default async function JinguTournamentPage({ params }: Props) {
   const bracket = buildRegionalBracket(games);
   const entrants = publicEntrants(t, resolve);
   const f = finalists(t);
+
   const championIsPublic = f ? Boolean(resolve(f.champion)) : false;
+  /*
+    ★★**リード文**（2026-08-29 その3 追加）。**このページ唯一の地の文。**
+    組み立ての規則は `src/lib/national-lead.ts`。
+  */
+  const lead = buildNationalLead({
+    tournament: t,
+    entrants,
+    finalists: f,
+    championIsPublic,
+    hasBracket: Boolean(bracket),
+  });
 
   const all = listJinguTournaments();
   const at = all.findIndex((x) => x.slug === t.slug);
@@ -129,6 +143,8 @@ export default async function JinguTournamentPage({ params }: Props) {
           )}
         </p>
       </header>
+
+      <LeadText paragraphs={lead} />
 
       {entrants.length > 0 && (
         <section

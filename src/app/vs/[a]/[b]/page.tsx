@@ -13,6 +13,8 @@ import { getSchoolBySlug } from "@/lib/queries/schools";
 import { getRegionalDistrict } from "@/lib/regional-results";
 import { headToHead, vsPath } from "@/lib/head-to-head";
 import { shortSchoolName } from "@/lib/school-name";
+import { buildVersusLead } from "@/lib/versus-lead";
+import { LeadText } from "@/components/common/LeadText";
 
 /**
  * 2校の直接対決（`/vs/<slugA>/<slugB>`）。
@@ -117,6 +119,18 @@ export default async function VersusPage({ params }: Props) {
   const total = record.meetings.length;
   const label = labelsOf(a, b);
 
+  /*
+    ★★**リード文**（2026-08-29 その3 追加）。**このページ唯一の地の文。**
+    組み立ての規則は `src/lib/versus-lead.ts`。
+  */
+  const lead = buildVersusLead({
+    labelA: label.a,
+    labelB: label.b,
+    prefA: a.prefecture.name,
+    prefB: b.prefecture.name,
+    record,
+  });
+
   return (
     <Container className="pb-4">
       <Breadcrumb
@@ -154,6 +168,8 @@ export default async function VersusPage({ params }: Props) {
           )}
         </p>
       </header>
+
+      <LeadText paragraphs={lead} />
 
       <section
         aria-labelledby="vs-games"

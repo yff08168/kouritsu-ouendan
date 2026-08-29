@@ -68,8 +68,13 @@ const COL = 2.5;
  *
  * ★**`constructPath` の第1引数が描画命令そのもの。**
  * `endPath`（28）はクリップなので捨てる。線は `eoFill` で来る。
+ *
+ * ★★**`fill` で描いてある紙もある**（2026-08-30。愛知）。既定は `eoFill` だけ
+ * （富山と同じ）で、**`ops` を渡した県だけが増える。**
+ * ★**両方を既定にしないこと** —— 富山の紙は `fill` の図形も持っており、
+ * 既定を広げると**その県の枝の読み方が変わる**（生成物が動く）。
  */
-export async function readFilledShapes(bytes, { pageNumber = 1 } = {}) {
+export async function readFilledShapes(bytes, { pageNumber = 1, ops: want = ["eoFill"] } = {}) {
   const doc = await getDocument({ data: bytes, useSystemFonts: true }).promise;
   const page = await doc.getPage(pageNumber);
   const ops = await page.getOperatorList();
@@ -81,7 +86,7 @@ export async function readFilledShapes(bytes, { pageNumber = 1 } = {}) {
     const n = names.get(ops.fnArray[i]);
     const a = ops.argsArray[i];
     if (n === "setFillRGBColor") fill = Array.isArray(a) ? a[0] : a;
-    if (n !== "constructPath" || names.get(a[0]) !== "eoFill") continue;
+    if (n !== "constructPath" || !want.includes(names.get(a[0]))) continue;
     // args[2] は minMax（[minX, minY, maxX, maxY]）
     const [x1, y1, x2, y2] = Array.from(Object.values(a[2])).map(Number);
     shapes.push({ color: String(fill).toLowerCase(), x1, y1, x2, y2, w: x2 - x1, h: y2 - y1 });
@@ -99,6 +104,20 @@ export async function readFilledShapes(bytes, { pageNumber = 1 } = {}) {
  * @param nameXRight    これより右が「右half の校名の列」
  * @param centerX       左half と右half の境目
  * @param roundNames    回戦の呼び名（外側から順に）
+ *
+ * @param teams ★★**校名を呼ぶ側が作って渡す**（2026-08-30。愛知）。既定は `null`
+ *   （今までどおり、このファイルが枝の横線から校名の行を見つける）。
+ *
+ *   ★**横線から見つける作りは、連合チームの校名が2行に組まれた紙で落ちる。**
+ *   愛知の紙は**スロット番号の行のちょうど上下に1行ずつ**校名が組まれることがあり
+ *   （`緑丘・東海学園` ／ `・春日井泉`）、**どちらの行にも横線が無い**ので
+ *   **その学校が丸ごと消え、2試合が「相手が読めない」で壊れた。**
+ *
+ *   ★**愛知の紙はスロット番号の列を持っている**ので、
+ *   **どの高さが1校ぶんかは推測ではなく読み取りで決まる。**
+ *   呼ぶ側がそれを使って `[{ y, name, side }]` を作って渡す。
+ *   ★**渡されたときは、このファイルは校名を1文字も組み立てない**
+ *   （連合チームの結合もしない。呼ぶ側の責任）。
  */
 export function assembleVectorBracket({
   shapes,
@@ -107,6 +126,9 @@ export function assembleVectorBracket({
   nameXLeft,
   nameXRight,
   centerX,
+  teams: givenTeams = null,
+  /** 枝の線から校名の行までの許容（既定は富山で決めた 5.5）。下の `NAME_TOL` を読むこと */
+  nameTol = 5.5,
   roundNames = ["1回戦", "2回戦", "3回戦", "準々決勝", "準決勝", "決勝"],
 }) {
   const isWin = (s) => s.color === winnerColor;
@@ -122,12 +144,40 @@ export function assembleVectorBracket({
   }
   columns.sort((a, b) => a.x - b.x);
 
+  /*
+    ★★**1本の枝が途中で切れて2本になっている紙がある**（2026-08-30。愛知の第106回Aブロック）。
+
+    負けた側の黒い枝が `246.0〜216.3` と `216.3〜201.8` の2本に分かれて描かれており、
+    **短いほうだけが赤と対になって、合流点が 216.3 だと読まれていた**
+    （本当は 201.8 で、負けた学校の行は 246.0）。
+    ★**その1試合が壊れるだけでなく、余った1本が別の試合として数えられ、
+    大会の試合数まで増えていた。**
+
+    ★**同じ列・同じ色で端が接している線は、もともと1本。** 先につないでおく。
+    ★**別の試合の枝どうしが接することはない**（同じ列の試合は 13pt 以上離れている）。
+    ★**富山は1本も分かれていないので、生成物は変わらない**（確認済み）。
+  */
+  for (const c of columns) {
+    for (const color of new Set(c.items.map((s) => s.color))) {
+      const same = c.items.filter((s) => s.color === color).sort((a, b) => a.y1 - b.y1);
+      for (let i = 1; i < same.length; i++) {
+        if (same[i].y1 - same[i - 1].y2 > JOIN_GAP) continue;
+        const merged = { ...same[i - 1], y2: Math.max(same[i - 1].y2, same[i].y2) };
+        merged.h = merged.y2 - merged.y1;
+        c.items[c.items.indexOf(same[i - 1])] = merged;
+        c.items.splice(c.items.indexOf(same[i]), 1);
+        same[i] = merged;
+      }
+    }
+  }
+
   // --- 同じ列で合流点を共有する「勝ち色」と「負け色」の対 ＝ 1試合 ---
   const matches = [];
   for (const c of columns) {
     const wins = c.items.filter(isWin);
     const loses = c.items.filter((s) => !isWin(s));
     const used = new Set();
+    const paired = new Set();
     for (const w of wins) {
       for (const l of loses) {
         if (used.has(l)) continue;
@@ -140,8 +190,54 @@ export function assembleVectorBracket({
         const [ja, jb, winY, loseY] = hit;
         matches.push({ x: c.x, join: (ja + jb) / 2, winY, loseY });
         used.add(l);
+        paired.add(w);
         break;
       }
+    }
+    /*
+      ★★**相手の縦線の長さが 0 になる試合がある**（2026-08-30。愛知の第105回Dブロック）。
+
+      合流点（勝った枝が次の回戦へ出ていく高さ）が、**負けた側の横線と
+      ちょうど同じ高さ**のときは、負けた側の縦線が引かれない。
+      愛知は**連合チームの校名が2行に組まれてスロットの行がずれた**ところで起きていた。
+
+      ★**そのままだと、その試合が1つ見つからず**、勝ち上がりが途切れて
+      **2試合が「相手が読めない」で壊れる**（実測でその大会が丸ごと落ちていた）。
+
+      ★**2校の高さは、縦線の両端がそのまま指している。**
+      **反対の色の横線が来ている端が負けた側**（横線の色は「その試合に勝ったか」を表す）。
+      ★★**合流点は端ではない。** この紙では**勝った枝が次の回戦へ出ていく横線**が
+      縦線の途中から伸びている（実測 317.1〜346.7 の縦線に対し、出ていくのは 331.9）。
+      **端を合流点にすると、次の回戦がこの試合に繋がらず、そこも壊れる。**
+      ★**推測ではなく、紙に描いてある「この列から右へ出ていく横線」を読んでいる。**
+      ★**対になった縦線が見つかったものには触らない**ので、富山は1試合も変わらない。
+    */
+    for (const w of c.items) {
+      if (paired.has(w) || used.has(w)) continue;
+      const at = (y, want) =>
+        horiz.some(
+          (h) =>
+            isWin(h) === want &&
+            Math.abs((h.y1 + h.y2) / 2 - y) < JOIN_GAP &&
+            Math.abs(h.x2 - c.x) < COL + 2,
+        );
+      // 負けた側 ＝ 「負け色の横線」が来ている端。両側・どちらも無しなら決められない
+      const ends = [w.y1, w.y2].filter((y) => at(y, false));
+      if (ends.length !== 1) continue;
+      const loseY = ends[0];
+      const winY = loseY === w.y1 ? w.y2 : w.y1;
+      if (!at(winY, true)) continue;
+      // この列から右へ出ていく横線（＝勝った枝）の高さが合流点
+      const out = horiz
+        .filter(
+          (h) =>
+            isWin(h) &&
+            Math.abs(h.x1 - c.x) < COL + 2 &&
+            (h.y1 + h.y2) / 2 > Math.min(winY, loseY) &&
+            (h.y1 + h.y2) / 2 < Math.max(winY, loseY),
+        )
+        .map((h) => (h.y1 + h.y2) / 2);
+      matches.push({ x: c.x, join: out.length === 1 ? out[0] : loseY, winY, loseY });
     }
   }
 
@@ -224,31 +320,34 @@ export function assembleVectorBracket({
   }
 
   // --- 校名（★左右は同じ行に並ぶので列で分ける） ---
-  const teams = [];
-  for (const line of page.lines) {
-    for (const [side, items] of [
-      ["L", line.items.filter((i) => i.x < nameXLeft)],
-      ["R", line.items.filter((i) => i.x > nameXRight)],
-    ]) {
-      const t = readName(items);
-      if (!/^[一-龥ぁ-んァ-ヶー々Ａ-ＺA-Z・\s]+$/.test(t) || !t) continue;
-      teams.push({ y: line.y, name: t, side });
+  // ★呼ぶ側が作って渡したときは、そのまま使う（上の `teams` の説明を読むこと）
+  const teams = givenTeams ?? [];
+  if (!givenTeams) {
+    for (const line of page.lines) {
+      for (const [side, items] of [
+        ["L", line.items.filter((i) => i.x < nameXLeft)],
+        ["R", line.items.filter((i) => i.x > nameXRight)],
+      ]) {
+        const t = readName(items);
+        if (!/^[一-龥ぁ-んァ-ヶー々Ａ-ＺA-Z・\s]+$/.test(t) || !t) continue;
+        teams.push({ y: line.y, name: t, side });
+      }
     }
-  }
 
-  // --- ★連合チーム: 枝の横線が無い行は、すぐ上の行の続き ---
-  const hasSlotLine = (t) =>
-    horiz.some(
-      (h) =>
-        Math.abs((h.y1 + h.y2) / 2 - t.y) < 4 &&
-        (t.side === "L" ? h.x1 < nameXLeft + 10 : h.x2 > nameXRight - 10),
-    );
-  for (const t of teams) {
-    if (hasSlotLine(t)) continue;
-    const host = teams
-      .filter((o) => o.side === t.side && o.y > t.y && hasSlotLine(o))
-      .sort((a, b) => a.y - b.y)[0];
-    if (host) host.name += `・${t.name}`;
+    // --- ★連合チーム: 枝の横線が無い行は、すぐ上の行の続き ---
+    const hasSlotLine = (t) =>
+      horiz.some(
+        (h) =>
+          Math.abs((h.y1 + h.y2) / 2 - t.y) < 4 &&
+          (t.side === "L" ? h.x1 < nameXLeft + 10 : h.x2 > nameXRight - 10),
+      );
+    for (const t of teams) {
+      if (hasSlotLine(t)) continue;
+      const host = teams
+        .filter((o) => o.side === t.side && o.y > t.y && hasSlotLine(o))
+        .sort((a, b) => a.y - b.y)[0];
+      if (host) host.name += `・${t.name}`;
+    }
   }
 
   // --- スコア（数字） ---
@@ -263,8 +362,14 @@ export function assembleVectorBracket({
   /**
    * ★**縦線は横線の上端まで伸びるので、校名までの許容は線の太さぶん広く要る**
    * （富山の右half は 4.3 ずれた）。行の間隔は 13pt 以上あるので隣は拾わない。
+   *
+   * ★★**紙によっては、いちばん端の行だけ枝の線と校名が 6.4 ずれる**
+   * （2026-08-30。愛知の第103回Bブロックの最後のスロット）。
+   * 既定のままだと**その学校だけ「読めない」になり、勝ち上がりが途切れて
+   * 3試合が壊れる。** `nameTol` で紙ごとに渡せるようにしてある。
+   * ★**行の間隔の半分より小さい値にすること**（隣の行を拾う）。
    */
-  const NAME_TOL = 5.5;
+  const NAME_TOL = nameTol;
   const teamAt = (y, side) =>
     teams
       .filter((t) => t.side === side && Math.abs(t.y - y) < NAME_TOL)
@@ -325,6 +430,14 @@ export function assembleVectorBracket({
     const side = sideOf(m);
     const round = cols[side].findIndex((x) => Math.abs(x - m.x) < COL) + 1;
     return {
+      /*
+        ★**枝の位置も返す**（2026-08-30。愛知）。日付・球場は**その試合の縦線の
+        すぐ外側**に刷られているので、呼ぶ側が拾うのに要る。
+        ★**足しただけ**で、富山は見ていない。
+      */
+      x: m.x,
+      winY: m.winY,
+      loseY: m.loseY,
       round,
       roundName: roundNames[round - 1] ?? null,
       winner: nameAt(m.winY, m.x, side),

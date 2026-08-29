@@ -2380,91 +2380,639 @@ const niigata = {
 };
 
 /**
- * CATVase.jp（`catvase.jp`）── **愛知。連盟でも個人サイトでもない3つ目の型。**
+ * 愛知県高等学校野球連盟（`www.aichi-kouyaren.com`）。
  *
- * 運営は**愛知県ケーブルテレビ協議会**（県内のケーブルテレビ局14社）。
- * 選手権愛知大会の「応援Webサイト」で、テレビ放送と対になっている。
- * **愛知県高野連の公式サイトではない**ので、
- * ★**出典表示は「CATVase.jp（愛知県ケーブルテレビ協議会）」にすること。**
- * 連盟の名前で出さない（神奈川・埼玉の個人サイトと同じ扱い）。
+ * ------------------------------------------------------------------
+ * ★ 規約（2026-08-30 確認）
  *
- * **愛知県高野連の結果はトーナメント表のPDFしか無い**（READMEの「PDFの13県」）。
- * 組み立ては3方式とも失敗しているので、愛知はこのサイトからでなければ出せない。
+ *   `robots.txt` は **404**。トップ・サイトマップ・日本学生野球憲章のページの
+ *   本文を検索したが、**転載・無断・複製・営利・商用・著作権のどの掲示も無い。**
  *
- * **規約を確認した（2026-08-14）。** トップ・運営について・robots.txt を見て、
- * **転載・複製・営利目的・自動取得のいずれも制限が無い。**
- * 「営業を目的として…おやめください」とあるのは**応援メッセージの投稿**の
- * 注意事項で、サイトの内容の利用についての記載ではない。
- * robots.txt は `/wp/wp-admin/` を除いて全許可。
+ * ------------------------------------------------------------------
+ * ★★ 出典を CATVase.jp から連盟に替えた（2026-08-30）
  *
- * ★**1回の実行でリクエストは1つだけ。** 全179試合が `/game/` の1枚に入っている。
- * これまでで**いちばん出典に優しい形**（神奈川・埼玉は日別ページを数十枚取る）。
+ *   ★**替えた理由は過去年。** CATVase.jp（愛知県ケーブルテレビ協議会の応援サイト）は
+ *   **大会が変わるとページごと作り替わる**ので、**今年の1大会しか取れなかった**
+ *   （173試合）。連盟の「夏の大会」の索引には**第100回（2018年）から**並んでいる。
  *
- *   <div class="day_wrap">
- *     <p class="game_day"><span>7</span>月<span>28</span>日 (火)</p>
- *     <ul class="game_list">
- *       <li><a href="https://catvase.jp/game-91279/">
- *         <p class="time_pc">11:30</p>
- *         <div class="school_wrap">
- *           <p class="school school_a">愛工大名電</p>
- *           <div class="point_wrap">
- *             <p class="status">終了</p>
- *             <div class="point_inner">
- *               <p class="point point_a">1</p><p class="vs">-</p><p class="point point_b">4</p>
+ *   ★★**CATVase.jp は捨てていない。** 連盟の記事は**大会が終わってから**出るので、
+ *   **開催中の大会は連盟に無い。** そこだけ CATVase から補う（`fillFromCatvase`）。
+ *   ★**補ったぶんは `source` にそのサイト名を持たせる**（富山と同じ）。
+ *   **連盟の名前で出さないこと。**
  *
- * ★**このサイトは夏（選手権）だけ。** 春季・秋季大会は扱っていないので
- * `seasons` に summer しか置かない。愛知の春秋は当面出せない。
+ * ------------------------------------------------------------------
+ * ★★★ 紙は「枝が線として描いてある」トーナメント表（富山と同じ型）
+ *
+ *   ★**座標から枝の形を推測する `slot-bracket.mjs` は使えない。**
+ *   愛知の紙は**シードが2回戦・3回戦から登場する**ので、
+ *   「毎回全員が組になる」を前提にしたあの組み立ては必ず落ちる
+ *   （実際に「1回戦は6試合、2回戦は7試合」という形で落ちた）。
+ *
+ *   ★★**枝は `fill` の塗りつぶしで描かれている**（富山は `eoFill`）。
+ *   `readFilledShapes` に `ops: ["fill"]` を渡すこと。**赤が勝った側。**
+ *
+ *   ★**夏は「ブロックごとに1ページ」の紙（8ページ）＋「準々決勝以降」の紙**の2枚組。
+ *   1枚では優勝校に収束しないので、**枚をまたぐ検算**が要る（兵庫と同じ形）。
+ *
+ * ------------------------------------------------------------------
+ * ★★ 紙の向きが2つある
+ *
+ *   ブロックの紙 … スロット番号が**縦**に並び、校名はその**左**、回戦は**右**へ
+ *   準々決勝以降 … 年によって**縦**（2021年）と**横**（2022年以降）の両方がある
+ *
+ *   ★**横向きの紙は `assembleSlotBracket`**（スロットが横一列・回戦は上へ＝京都型）。
+ *   ★**縦向きの紙は枝の線から読む**（ブロックの紙と同じ）。
+ *   **どちらか一方に決め打ちしないこと。**
+ *
+ * ------------------------------------------------------------------
+ * ★★ 踏んだところ（**次に触る人へ**）
+ *
+ *   1. ★★**シードの行にはスロット番号がなく、ブロックの記号（A〜H）が入る。**
+ *      スロット番号の連番だけを見ると**その1校が丸ごと落ちる。**
+ *      **番号の列の1つ上の行**にある `A`〜`H` も1チームとして数える。
+ *   2. ★★**校名の左に「参加校番号」の列がある**（`43 星城`）。
+ *      落とさないと校名が `43星城` になり、どの学校にも結び付かない。
+ *   3. ★★**連合チームの校名はスロットの行の上下2行に組まれる**
+ *      （`緑丘・東海学園` ／ `・春日井泉`）。**行ではなくスロットの高さでまとめる。**
+ *      `vector-bracket.mjs` の「枝の横線が無い行は続き」では拾えない
+ *      （**どちらの行にも横線が無い**）ので、**校名は呼ぶ側で作って渡す。**
+ *   4. ★**日付と得点が1つの断片になっていることがある**（`7月18日 5`）。
+ *      **断片を空白で割って、幅から位置を測り直す**（そうしないと得点が読めない）。
+ *   5. ★★**不戦勝は得点が刷られていない**（`7月22日 不戦勝`）。
+ *      **枠は使うが試合は行われていない**ので、**検算には数え、画面には出さない**
+ *      （大阪・群馬と同じ扱い。0対0にしないこと）。
  */
 const aichi = {
   slug: "aichi",
   district: "愛知",
-  // ★**連盟の名前で出さないこと**（このサイトは高野連の公式ではない）
-  name: "CATVase.jp（愛知県ケーブルテレビ協議会）",
-  siteUrl: "https://catvase.jp/",
+  name: "愛知県高等学校野球連盟",
+  siteUrl: "https://www.aichi-kouyaren.com/",
   politenessMs: 2000,
-  // **夏だけ。** このサイトは選手権愛知大会の応援サイトで、春秋の大会は扱っていない
-  seasons: { summer: "https://catvase.jp/game/" },
-  /*
-    ★**`year` を受け取らない。** 他の県は「その年のページ」を開きに行くが、
-    このサイトは**大会が変わるとページごと作り替わる**（URLは `/game/` のまま）。
-    年はページの大会名から出すので、外から渡された年は使わない。
-  */
-  async collect({ fetchHtml, season, url }) {
-    const html = await fetchHtml(url);
-    if (!html) return [];
-
-    /*
-      大会名は本文から拾う。**`<title>` を信用しない**という既知の落とし穴
-      （山梨・神奈川は前年のまま更新されていなかった）があるので、
-      ここでも「第N回…愛知大会」の形で本文ごと拾い、**回数から年を出す。**
-      選手権の回数は `年 - 1918`（`build-live-results.mjs` と同じ）。
-    */
-    const tournament = normalize(html).match(/第\d+回全国高等学校野球選手権愛知大会/)?.[0] ?? null;
-    const round108 = Number(tournament?.match(/第(\d+)回/)?.[1]);
-    if (!Number.isFinite(round108)) {
-      console.log("  ⚠️ 愛知: 大会名が読めない。出典の作りが変わった可能性がある");
+  seasons: { summer: "https://www.aichi-kouyaren.com/pastgame_summer/" },
+  /** ★開催中の大会だけを補う出典（連盟の記事は大会が終わってから出る） */
+  catvaseUrl: "https://catvase.jp/game/",
+  catvaseName: "CATVase.jp（愛知県ケーブルテレビ協議会）",
+  /**
+   * ★**既定で読む大会の数。** 過去年は生成物に引き継がれるので、
+   * 毎回ぜんぶ取りに行かない（自動更新は1日2回走る）。
+   * **遡るときは `--year` で年を指定する。**
+   */
+  maxTournaments: 2,
+  async collect({ fetchHtml, season, url, year }) {
+    const index = await fetchHtml(url);
+    if (!index) {
+      console.log("  ⚠️ 愛知: 索引が取れない。出典の作りが変わった可能性がある");
       return [];
     }
-    const pageYear = round108 + 1918;
-
-    /*
-      ★**ページに西暦が書かれていない。** 日付は「7月28日 (火)」で年が無く、
-      年は大会の回数から出すしかない。**回数が前年のまま更新されていない
-      サイトがある**（山梨・神奈川で実際にあった）ので、**そのまま信じない。**
-
-      幸いこのサイトは**曜日を併記している。** 「7月28日(火)」が成り立つ年は
-      6〜7年に1度しか来ないので、**曜日で年の検算ができる。**
-      合わなければ**1試合も出さない**（画面に嘘の日付を出すよりよい）。
-    */
-    const WEEKDAY = ["日", "月", "火", "水", "木", "金", "土"];
+    const entries = [];
+    const seen = new Set();
+    for (const m of index.matchAll(
+      /<a[^>]*href="(https:\/\/www\.aichi-kouyaren\.com\/pastgame_summer\/entry-\d+\.html)"[^>]*>([\s\S]*?)<\/a>/gi,
+    )) {
+      const label = normalize(plain(m[2]));
+      if (!label || label === "Permalink" || seen.has(m[1])) continue;
+      seen.add(m[1]);
+      const round = Number(label.match(/第(\d+)回全国高等学校野球選手権/)?.[1]);
+      /*
+        ★**選手権の回数は 年 − 1918。**
+        ★**回数を名前に持たない記事は採らない** —— 2020年は選手権が中止で
+        「夏季愛知県高等学校野球大会」という別の大会が開かれており、
+        **年を導く根拠が名前に無い。**
+      */
+      if (!Number.isFinite(round)) continue;
+      entries.push({ url: m[1], label, year: round + 1918 });
+    }
+    if (!entries.length) {
+      console.log("  ⚠️ 愛知: 索引に大会が1つも無い。出典の作りが変わった可能性がある");
+      return [];
+    }
+    entries.sort((a, b) => b.year - a.year);
+    const wanted = year ? entries.filter((e) => e.year === year) : entries.slice(0, this.maxTournaments);
 
     const games = [];
-    /** 直前に出てきた日付の見出し。試合はその日のものとして読む */
-    let date = null;
+    for (const entry of wanted) {
+      const got = await this.readTournament({ fetchHtml, season, entry });
+      if (got?.length) games.push(...got);
+    }
+    const extra = await this.fillFromCatvase({ fetchHtml, season, games });
+    return [...games, ...extra];
+  },
+
+  /** 1大会（記事1本）を読む */
+  async readTournament({ fetchHtml, season, entry }) {
+    const html = await fetchHtml(entry.url);
+    await sleep(this.politenessMs);
+    if (!html) return [];
+    const tournament = entry.label;
+
     /*
-      日付の見出しと試合を**出てきた順に**見る（山梨・熊本と同じやり方）。
-      `day_wrap` の入れ子を数えずに済むので、レイアウトの変更に強い。
+      ★★**記事の本文が優勝校を書いている**（`優　勝　享栄高等学校（３１年ぶり１０回目）`）。
+      **枝とは別の場所から来る事実**なので、石川で通ってしまった
+      「構造の検算は通るのに決勝の相手が違う」を止められる。
+
+      ★**書き方が年で違う。** 校名のうしろは括弧のことも数字のこともある。
+
+          優勝享栄高等学校（３１年ぶり１０回目）   … 第108回
+          優勝愛工大名電３年連続１５回目           … 第105回（括弧が無い）
+          優勝：愛工大名電（３年ぶり１３回目）     … 第103回
+
+      ★**そこで「校名のうしろは括弧か数字」で切る。**
+      ★**準優勝は年によって区切りが無く、取れないことがある**
+      （第105回は `準優勝中京大中京要項抽選会…` と本文が続く）。**取れたときだけ見る。**
+      ★**書かれていない年もある**（第104回の記事には優勝校が無い）。
+      **無いことを理由に大会を落とさない。** ★ただし**検算したかどうかは必ずログに出す。**
     */
+    /*
+      ★★**記事の本文だけを見ること。** ページの脇に他の大会へのリンクが並んでおり
+      （`第76回愛知県高等学校優勝野球大会ベスト８`）、ページ全体から探すと
+      **そのリンクの文字を優勝校として読む**（実際に第104回がそれで落ちた）。
+      ★**記事の本体は「掲載日＋大会名」から始まる**（ページの上のほうにも大会名は
+      出るが、そこには日付が付かない）。そこから次の掲載日までを見る。
+
+      ★★**空白を潰さないこと。** 記事は必ず **`優　勝　◯◯`** と1字空けて組んでおり、
+      脇のリンクの `…高等学校優勝野球大会ベスト８` は**空けていない。**
+      潰すと見分けが付かず、**リンクの文字を優勝校として読む**（実際に第104回が落ちた）。
+    */
+    const whole = normalize(plain(html));
+    const head = whole.match(new RegExp(`\\d{4}年\\d{2}月\\d{2}日\\s*${entry.label}`));
+    const text = head
+      ? whole.slice(head.index + head[0].length).split(/\d{4}年\d{2}月\d{2}日/)[0]
+      : "";
+    const name = /([^\s（(【\d]{2,12}?)(?:高等学校|高校)?(?=[\s（(\d])/;
+    const printed = {
+      champion: text.match(new RegExp(`優\\s+勝\\s*[：:]?\\s*${name.source}`))?.[1] ?? null,
+      runnerUp: text.match(new RegExp(`準\\s*優\\s*勝\\s*[：:]?\\s*${name.source}`))?.[1] ?? null,
+    };
+
+    const pdfs = [...new Set([...html.matchAll(/href="([^"]+\.pdf)"/gi)].map((m) => m[1]))];
+    const blocks = [];
+    let finals = null;
+    for (const pdfUrl of pdfs) {
+      const bytes = await fetchPdfBytes(pdfUrl, { headers: UA });
+      await sleep(this.politenessMs);
+      if (!bytes) continue;
+      let pages;
+      try {
+        pages = await pdfPages(bytes.slice());
+      } catch {
+        continue;
+      }
+      const title = (p) => normalize(p.lines[0]?.items.map((i) => i.text).join("") ?? "");
+      // ★**ブロックの紙は表題に「◯ブロック」が入る**（要項・ドリームシートはここで外れる）
+      if (pages.length > 1 && pages.every((p) => /ブロック/.test(title(p)))) {
+        blocks.push({ bytes, pages });
+        continue;
+      }
+      if (pages.length === 1 && /全国高等学校野球選手権/.test(title(pages[0])) && !finals) {
+        finals = { bytes, pages };
+      }
+    }
+    if (!blocks.length || !finals) {
+      console.log(
+        `  ⚠️ 愛知: ${tournament} の紙が揃わない` +
+          `（ブロック${blocks.length}枚・準々決勝以降${finals ? 1 : 0}枚）。1試合も出さない`,
+      );
+      return [];
+    }
+    // ★**同じ紙が2つ貼られている年がある**（第106回）。ページ数がいちばん多いものを使う
+    const block = blocks.sort((a, b) => b.pages.length - a.pages.length)[0];
+
+    const out = [];
+    const winners = [];
+    let teams = 0;
+    let byes = 0;
+    for (const page of block.pages) {
+      const read = await this.readVectorSheet(block.bytes, page, season, tournament);
+      if (!read) {
+        console.log(
+          `  ⚠️ 愛知: ${tournament} の ${normalize(page.lines[0]?.items.map((i) => i.text).join("") ?? "")}` +
+            ` を組み立てられない。1試合も出さない`,
+        );
+        return [];
+      }
+      out.push(...read.games);
+      winners.push(read.champion);
+      teams += read.teams;
+      byes += read.byes;
+    }
+
+    const last = await this.readFinalSheet(finals, season, tournament);
+    if (!last) {
+      console.log(`  ⚠️ 愛知: ${tournament} の準々決勝以降を組み立てられない。1試合も出さない`);
+      return [];
+    }
+
+    /*
+      ---- 検算1: 枚をまたぐ突き合わせ ----
+      ★★**準々決勝以降の紙に出てくる8校は、ブロックの紙の優勝校8校と1対1で対応する。**
+      **1ブロックでも読み違えれば必ずどれかが余る**（兵庫と同じ、いちばん強い検算）。
+    */
+    const bare = (s) => normalizeSchoolName(String(s ?? "").replace(/[（(].*$/, ""));
+    const fromBlocks = winners.map(bare).sort();
+    const fromFinals = last.entrants.map(bare).sort();
+    if (fromBlocks.length !== fromFinals.length || fromBlocks.some((n, i) => n !== fromFinals[i])) {
+      console.log(
+        `  ⚠️ 愛知: ${tournament} のブロック優勝校（${fromBlocks.join("・")}）が` +
+          `準々決勝以降の出場校（${fromFinals.join("・")}）と合わない。1試合も出さない`,
+      );
+      return [];
+    }
+    out.push(...last.games);
+    teams += 0;
+
+    /*
+      ---- 検算2: 勝ち抜きの算数 ----
+      ★**不戦勝は枠を使うが試合は行われていない**ので、試合数には数えない。
+    */
+    if (teams - (out.length + byes) !== 1) {
+      console.log(
+        `  ⚠️ 愛知: ${tournament} は ${teams} チームに対し ${out.length} 試合` +
+          `（不戦勝 ${byes}）。1試合も出さない`,
+      );
+      return [];
+    }
+
+    /*
+      ---- 検算3: 記事の本文が書いている優勝校・準優勝校 ----
+      ★**書かれていない年は飛ばす**（2022年の記事は本文に優勝校が無い）。
+      ★**黙って飛ばさない** —— 検算したかどうかを必ずログに出す。
+    */
+    const final = out.filter((g) => g.round === "決勝");
+    const champion = final.length === 1 ? final[0].teams.find((t) => t.won)?.display : null;
+    const runnerUp = final.length === 1 ? final[0].teams.find((t) => !t.won)?.display : null;
+    /*
+      ★★**本文は正式名、枝は略称**（`愛知工業大学名電` に対し枝は `愛工大名電`）。
+      **含むかどうかでは当たらない**（`業`『学』が抜けている）。
+      ★**どちらかがもう一方の部分列なら同じ**とみなす（京都・兵庫で決めたやり方）。
+      ★**緩めるのは校名の比べ方だけ** —— 枝のほうは「無敗が1校」と
+      **枚をまたぐ突き合わせ**で決まっており、決勝の相手が違えばそこで食い違う。
+    */
+    const subsequence = (short, long) => {
+      let i = 0;
+      for (const c of long) if (c === short[i]) i++;
+      return i === short.length;
+    };
+    const agrees = (a, b) => {
+      if (!a || !b) return true;
+      const [x, y] = [bare(a), bare(b)];
+      return x.length <= y.length ? subsequence(x, y) : subsequence(y, x);
+    };
+    if (!agrees(printed.champion, champion) || !agrees(printed.runnerUp, runnerUp)) {
+      console.log(
+        `  ⚠️ 愛知: ${tournament} の優勝・準優勝が本文と合わない` +
+          `（本文「${printed.champion}／${printed.runnerUp}」/ 組み立て「${champion}／${runnerUp}」）。1試合も出さない`,
+      );
+      return [];
+    }
+
+    console.log(
+      `  （${tournament}: ${out.length} 試合 / 優勝 ${champion}` +
+        `${printed.champion ? "（本文と一致）" : "（本文に記載が無く未検算）"} / ` +
+        `${teams} チーム${byes ? `・不戦勝 ${byes} 件` : ""}）`,
+    );
+    return out;
+  },
+
+  /**
+   * ★**スロット番号の列**（縦に 1,2,3… と並ぶ x）を探す。
+   * 返すのは列の x と、その列に並ぶ番号の行。
+   */
+  slotColumn(page) {
+    const ints = page.lines.flatMap((l) =>
+      l.items
+        .filter((i) => /^\d{1,3}$/.test(normalize(i.text).trim()))
+        .map((i) => ({ x: i.x, y: l.y, v: Number(normalize(i.text)) })),
+    );
+    const byX = new Map();
+    for (const it of ints) {
+      const key = [...byX.keys()].find((k) => Math.abs(k - it.x) <= 4) ?? it.x;
+      if (!byX.has(key)) byX.set(key, []);
+      byX.get(key).push(it);
+    }
+    let best = null;
+    for (const [x, list] of byX) {
+      let cur = [];
+      for (const it of [...list].sort((a, b) => b.y - a.y)) {
+        if (cur.length && it.v !== cur.at(-1).v + 1) {
+          if (!best || cur.length > best.rows.length) best = { x, rows: cur };
+          cur = [];
+        }
+        cur.push(it);
+      }
+      if (!best || cur.length > best.rows.length) best = { x, rows: cur };
+    }
+    return best && best.rows.length >= 6 ? best : null;
+  },
+
+  /**
+   * ★**断片を空白で割って、幅から位置を測り直す。**
+   * `7月18日 5` のように**日付と得点が1つの断片**になっている紙があり、
+   * 割らないと**その試合の得点が読めない**（`vector-bracket.mjs` は
+   * 断片ぜんぶが数字のものしか得点として見ない）。
+   */
+  splitFragments(page) {
+    return {
+      page: page.page,
+      lines: page.lines.map((l) => {
+        const items = [];
+        for (const it of l.items) {
+          const parts = it.text.split(/\s+/).filter(Boolean);
+          if (parts.length < 2 || !(it.width > 0)) {
+            items.push(it);
+            continue;
+          }
+          const per = it.width / it.text.length;
+          let at = 0;
+          for (const part of parts) {
+            const start = it.text.indexOf(part, at);
+            items.push({ x: it.x + start * per, width: part.length * per, text: part });
+            at = start + part.length;
+          }
+        }
+        items.sort((a, b) => a.x - b.x);
+        return { y: l.y, items, text: items.map((i) => i.text).join("\t") };
+      }),
+    };
+  },
+
+  /**
+   * 枝の線から1枚（1ブロック）を読む。
+   * ★**校名は呼ぶ側で作って渡す**（連合チームが2行に組まれるため。上の説明を読むこと）。
+   */
+  async readVectorSheet(bytes, rawPage, season, tournament) {
+    const shapes = await readFilledShapes(bytes.slice(), { pageNumber: rawPage.page, ops: ["fill"] });
+    const vert = shapes.filter((s) => s.w < 3 && s.h >= 4);
+    if (!vert.length) return null;
+    const slot = this.slotColumn(rawPage);
+    if (!slot) return null;
+    const pitch = (slot.rows[0].y - slot.rows.at(-1).y) / (slot.rows.length - 1);
+    if (!(pitch > 0)) return null;
+
+    /*
+      ★★**シードの行にはスロット番号が無く、ブロックの記号（A〜H）が入る。**
+      番号の列の**1つ上の行**を見て、記号があればその行も1チームとして数える。
+    */
+    const letter = rawPage.lines.find(
+      (l) =>
+        Math.abs(l.y - (slot.rows[0].y + pitch)) <= pitch * 0.4 &&
+        l.items.some((i) => Math.abs(i.x - slot.x) <= 7 && /^[A-HＡ-Ｈ]$/.test(i.text.trim())),
+    );
+    const rows = [...(letter ? [letter.y] : []), ...slot.rows.map((r) => r.y)];
+
+    /*
+      ★**校名はスロット番号の列のどちら側にもありうる。**
+      ブロックの紙は左（参加校番号の右どなり）、2021年の準々決勝以降の紙は右。
+      **数字でない断片が多いほうを校名の側**とする。
+    */
+    const nonNumeric = (i) => !/^\d+$/.test(normalize(i.text).trim());
+    const near = (y) => rawPage.lines.filter((l) => Math.abs(l.y - y) < pitch * 0.48);
+    /*
+      ★★**枝でない縦線がある**（2021年の準々決勝以降の紙は、左右の端に囲みの線が1本ずつ）。
+      いちばん左を素直に採ると x=64 になり、**校名の欄が幅0になって1校も読めない。**
+      ★**枝の列には必ず2本以上（勝ち側と負け側）ある**ので、そこで見分ける。
+    */
+    const colCount = new Map();
+    for (const s of vert) {
+      const key = [...colCount.keys()].find((k) => Math.abs(k - s.x1) < 2.5) ?? s.x1;
+      colCount.set(key, (colCount.get(key) ?? 0) + 1);
+    }
+    const bracketCols = [...colCount].filter(([, n]) => n >= 2).map(([x]) => x);
+    if (!bracketCols.length) return null;
+    const firstCol = Math.min(...bracketCols);
+    /*
+      ★★**日付・球場・開始時刻は、いちばん外の枝の列のすぐ左に刷ってある。**
+      校名の欄をそこまで広げると、**球場名（`豊田`）が校名として読まれる**
+      （校名と見分けが付かない）。実測すると、いちばん外の列から
+      **ラベルは 62 ポイント以内・校名は 89 ポイント以上**離れている。**70 で切る。**
+    */
+    const nameRight = firstCol - 70;
+    const leftCount = rows.reduce(
+      (n, y) => n + near(y).flatMap((l) => l.items).filter((i) => i.x < slot.x - 6 && nonNumeric(i)).length,
+      0,
+    );
+    const rightCount = rows.reduce(
+      (n, y) =>
+        n +
+        near(y)
+          .flatMap((l) => l.items)
+          .filter((i) => i.x > slot.x + 6 && i.x < nameRight && nonNumeric(i)).length,
+      0,
+    );
+    const onLeft = leftCount >= rightCount;
+    const nameItems = (l) =>
+      l.items.filter(
+        (i) => nonNumeric(i) && (onLeft ? i.x < slot.x - 6 : i.x > slot.x + 6 && i.x < nameRight),
+      );
+    const teams = rows.map((y) => ({
+      y,
+      side: "L",
+      name: near(y)
+        .filter((l) => nameItems(l).length)
+        .sort((a, b) => b.y - a.y)
+        .map((l) => nameItems(l).map((i) => i.text).join("").replace(/[\s　]/g, ""))
+        .join(""),
+    }));
+    if (teams.some((t) => !t.name)) return null;
+
+    const page = this.splitFragments(rawPage);
+    const built = assembleVectorBracket({
+      shapes,
+      page,
+      teams,
+      // ★スロット番号の列より外は見ない（参加校番号を校名に混ぜない）
+      nameXLeft: onLeft ? slot.x - 6 : 1e9,
+      nameXRight: 1e9,
+      centerX: 1e9,
+      /*
+        ★**いちばん端の行だけ枝の線と校名が 6.4 ずれる紙がある**（第103回Bブロック）。
+        行の間隔の 0.3 までなら隣の行は拾わない（`teamAt` はいちばん近い行を採る）。
+      */
+      nameTol: pitch * 0.3,
+      roundNames: ["1回戦", "2回戦", "3回戦", "4回戦", "5回戦", "6回戦", "7回戦"],
+    });
+    if (!built.games.length) return null;
+
+    /*
+      ★★**不戦勝は得点が刷られていない**（紙に `不戦勝` と書いてある）。
+      **枠は使うが試合は行われていない**ので、**画面には出さず、検算には数える。**
+      ★**0対0にしないこと**（島根で踏んだ轍）。
+    */
+    const walkovers = [];
+    for (const g of built.broken) {
+      if (g.winnerScore != null || g.loserScore != null) return null;
+      const lo = Math.min(g.winY, g.loseY) - 2;
+      const hi = Math.max(g.winY, g.loseY) + 2;
+      const marked = page.lines.some(
+        (l) => l.y > lo && l.y < hi && l.items.some((i) => /不戦/.test(i.text) && i.x > g.x - 40 && i.x < g.x + 80),
+      );
+      if (!marked) return null;
+      walkovers.push(g);
+    }
+
+    const games = [];
+    for (const g of built.games) {
+      if (walkovers.includes(g)) continue;
+      const label = this.labelsFor(page, g);
+      games.push({
+        date: label.date ? this.isoOf(`${label.date.month}/${label.date.day}`, tournament) : null,
+        season,
+        tournament,
+        round: g.roundName,
+        venue: label.venue,
+        teams: [
+          { display: g.winner, score: g.winnerScore, won: true },
+          { display: g.loser, score: g.loserScore, won: false },
+        ],
+      });
+    }
+    const champion = built.games.reduce((a, b) => (b.round > a.round ? b : a)).winner;
+    return { games, champion, teams: teams.length, byes: walkovers.length };
+  },
+
+  /**
+   * その試合の日付と球場。
+   * ★**縦線のすぐ左（外側）に、日付・球場・開始時刻が刷ってある。**
+   * 前の回戦の欄を拾わないよう、**列の間隔の内側だけ**を見る。
+   */
+  labelsFor(page, g) {
+    /*
+      ★**日付・球場は縦線のすぐ左に刷ってある。** 窓の広さは
+      **列の間隔（ブロックの紙は39・準々決勝以降の紙は80）より狭く、
+      いちばん遠いラベル（実測55）より広く**取る。
+      ★**62 では 2021年の準々決勝以降の紙の日付（列から 63.6）が入らず、
+      7試合が日付なしになる。**
+    */
+    const LABEL_REACH = 66;
+    const lo = Math.min(g.winY, g.loseY) - 2;
+    const hi = Math.max(g.winY, g.loseY) + 2;
+    /*
+      ★★**日付が1文字ずつの断片に割れている紙がある**（`7` `月` `29` `日`。2021年）。
+      **断片1つで `M月D日` を探すと、その3試合だけ日付が付かない。**
+      ★**行の中の断片をつないでから探す**（つないでも `豊田11:150` のように
+      日付にならない行は当たらない）。
+    */
+    const md = page.lines
+      .filter((l) => l.y > lo && l.y < hi)
+      .map((l) =>
+        normalize(
+          l.items
+            .filter((i) => i.x < g.x && i.x > g.x - LABEL_REACH)
+            .map((i) => i.text)
+            .join(""),
+        ).match(/(\d{1,2})月(\d{1,2})日/),
+      )
+      .find(Boolean);
+    // ★球場は「開始時刻の断片のすぐ左」。時刻が無ければ諦める（推測で埋めない）
+    let venue = null;
+    for (const l of page.lines) {
+      if (l.y <= lo || l.y >= hi) continue;
+      for (let k = 1; k < l.items.length; k++) {
+        const it = l.items[k];
+        if (!/^\d{1,2}[:：]\d{2}$/.test(normalize(it.text).trim())) continue;
+        if (it.x >= g.x || it.x < g.x - LABEL_REACH) continue;
+        const before = l.items[k - 1];
+        if (/^[一-龥ぁ-んァ-ヶー]+[①-⑳]?$/.test(before.text.trim())) venue = before.text.trim();
+      }
+    }
+    return { date: md ? { month: Number(md[1]), day: Number(md[2]) } : null, venue };
+  },
+
+  /**
+   * 準々決勝以降の紙。
+   * ★**向きが2つある** —— 横向き（京都型）は `assembleSlotBracket`、
+   * 縦向き（2021年）は枝の線から読む。**先に横向きを試す。**
+   */
+  async readFinalSheet(sheet, season, tournament) {
+    const raw = sheet.pages[0];
+    /*
+      ★★**ブロックの記号（A〜H）と、紙のいちばん下の注記を落とす。**
+      落とさないと校名が **`E享栄（若番が１塁側）`** になり、どの学校にも結び付かない
+      （**枚をまたぐ検算も落ちる** —— ブロックの紙の優勝校は `享栄` なので）。
+      ★**1文字の A〜H が校名であることはない**ので、そのまま落としてよい。
+    */
+    const page = {
+      page: raw.page,
+      lines: raw.lines
+        .map((l) => {
+          const items = l.items.filter((i) => {
+            const t = i.text.trim();
+            if (/^[（(]/.test(t)) return false;
+            if (/^[A-HＡ-Ｈ]$/.test(t)) return false;
+            return true;
+          });
+          return { y: l.y, items, text: items.map((i) => i.text).join("\t") };
+        })
+        .filter((l) => l.items.length),
+    };
+
+    const built = assembleSlotBracket(page, {
+      roundLabels: ["決勝", "準決勝", "準々決勝"],
+      // ★準決勝・決勝の得点は連結線の両端に置かれる（中点では当たらない）
+      hitSpan: true,
+    });
+    if (built?.games?.length) {
+      const games = built.games.map((g) => ({
+        date: g.date ? this.isoOf(g.date, tournament) : null,
+        season,
+        tournament,
+        round: g.round,
+        venue: g.venue ?? null,
+        teams: [
+          { display: g.a, score: g.sa, won: g.sa > g.sb },
+          { display: g.b, score: g.sb, won: g.sb > g.sa },
+        ],
+      }));
+      // ★出場校は「いちばん浅い回戦（＝準々決勝）に出ている校」
+      const first = built.games.filter((g) => g.round === "準々決勝");
+      return {
+        games,
+        entrants: (first.length ? first : built.games).flatMap((g) => [g.a, g.b]),
+      };
+    }
+
+    // ---- 縦向きの紙（枝の線から読む） ----
+    const read = await this.readVectorSheet(sheet.bytes, raw, season, tournament);
+    if (!read) return null;
+    const first = read.games.filter((g) => g.round === "1回戦");
+    return {
+      games: read.games.map((g) => ({
+        ...g,
+        round: { "1回戦": "準々決勝", "2回戦": "準決勝", "3回戦": "決勝" }[g.round] ?? g.round,
+      })),
+      entrants: (first.length ? first : read.games).flatMap((g) => g.teams.map((t) => t.display)),
+    };
+  },
+
+  /** `M/D` を大会の年の ISO 日付にする */
+  isoOf(md, tournament) {
+    const year = Number(tournament.match(/第(\d+)回/)?.[1]) + 1918;
+    const [m, d] = String(md).split("/").map(Number);
+    if (!Number.isFinite(year) || !Number.isFinite(m) || !Number.isFinite(d)) return null;
+    return `${year}-${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+  },
+
+  /**
+   * ★★**開催中の大会だけ CATVase.jp から補う。**
+   * 連盟の記事は大会が終わってから出るので、そこまでは連盟に何も無い。
+   * ★**連盟が同じ大会を持っているときは何もしない**（二重に並ぶ）。
+   */
+  async fillFromCatvase({ fetchHtml, season, games }) {
+    const have = new Set(games.map((g) => g.tournament));
+    const html = await fetchHtml(this.catvaseUrl);
+    if (!html) return [];
+    const tournament = normalize(html).match(/第\d+回全国高等学校野球選手権愛知大会/)?.[0] ?? null;
+    const round = Number(tournament?.match(/第(\d+)回/)?.[1]);
+    if (!Number.isFinite(round) || have.has(tournament)) return [];
+    const pageYear = round + 1918;
+    if (pageYear > new Date().getFullYear()) return [];
+
+    /*
+      ★**ページに西暦が書かれていない**（日付は「7月28日 (火)」）。
+      **曜日を併記している**ので、そこで年を検算する。合わなければその日は捨てる。
+    */
+    const WEEKDAY = ["日", "月", "火", "水", "木", "金", "土"];
+    const out = [];
+    let date = null;
     const token =
       /<p class="game_day">([\s\S]*?)<\/p>|<a href="https:\/\/catvase\.jp\/game-\d+\/">([\s\S]*?)<\/a>/gi;
     for (const m of html.matchAll(token)) {
@@ -2473,18 +3021,13 @@ const aichi = {
         date = null;
         if (!d) continue;
         const iso = `${pageYear}-${d[1].padStart(2, "0")}-${d[2].padStart(2, "0")}`;
-        // ★ 曜日で年を検算する。合わなければその日は**まるごと捨てる**
         if (WEEKDAY[new Date(`${iso}T00:00:00Z`).getUTCDay()] !== d[3]) {
-          console.log(
-            `  ⚠️ 愛知: ${iso} の曜日が出典（${d[3]}）と合わない。` +
-              `大会名「${tournament}」から出した年が違う可能性がある`,
-          );
+          console.log(`  ⚠️ 愛知: ${iso} の曜日が出典（${d[3]}）と合わない。その日は採らない`);
           continue;
         }
         date = iso;
         continue;
       }
-
       if (!date) continue;
       const block = m[2];
       const pick = (re) => normalize(plain(re.exec(block)?.[1] ?? ""));
@@ -2492,31 +3035,19 @@ const aichi = {
       const away = pick(/<p class="school school_b">([\s\S]*?)<\/p>/);
       const sa = pick(/<p class="point point_a">([\s\S]*?)<\/p>/);
       const sb = pick(/<p class="point point_b">([\s\S]*?)<\/p>/);
-      /*
-        ★**まだ行われていない試合と順延の試合は点が空。**
-        `Number("")` は **0** なので `Number.isFinite` では弾けない
-        （両校0点の引き分けとして入ってしまう）。**数字かどうかで見る。**
-      */
+      // ★まだ行われていない試合は点が空。`Number("")` は 0 なので数字かどうかで見る
       if (!home || !away || !/^\d+$/.test(sa) || !/^\d+$/.test(sb)) continue;
-
-      /*
-        回戦は「A 1回戦」「B 3回戦」のようにブロック記号が前に付く。
-        ★**ブロックを大会名に足さないこと。** 徳島の新人ブロック大会は
-        ブロックごとに別の大会（決勝がブロックの数だけある）だが、
-        愛知のA〜Hは**1つの大会の中の山**で、準々決勝で合流する。
-        分けると準々決勝以降が宙に浮き、検算も通らなくなる。
-      */
       const label = pick(/<p class="block">([\s\S]*?)<\/p>/);
       const a = Number(sa);
       const b = Number(sb);
-      games.push({
+      out.push({
         date,
         season,
         tournament,
         round: pickRound(label),
-        // 球場は `display_pc` のほう（`display_sp` は「ドーム」のような略記）
         venue: pick(/<span class="display_pc">([\s\S]*?)<\/span>/) || null,
-        // 勝者の印が無いので点数から決める（神奈川・埼玉と同じ）
+        // ★**出典が連盟と違う。** 富山と同じで、その試合だけの出所を持たせる
+        source: { name: this.catvaseName, url: this.catvaseUrl },
         teams: [
           { display: home, score: a, won: a > b },
           { display: away, score: b, won: b > a },
@@ -2525,30 +3056,17 @@ const aichi = {
     }
 
     /*
-      ★**中断した試合は2回載る。**
-
-      雷雨などで途中打ち切りになった試合は、その日のぶんが `試合打ち切り`
-      （中断時の点数）として残ったまま、後日ぶんが `A 1回戦（継続試合）`
-      として別の日に載る。**日付が違うので、呼び出し側の重複除去では落ちない。**
-
-        7月11日  刈谷工科  9 - 0  小坂井   A 1回戦（試合打ち切り）
-        7月14日  刈谷工科 10 - 0  小坂井   A 1回戦（継続試合）   ← こちらが最終結果
-
-      そのままだと**1回戦が1試合多くなり、刈谷工科が2勝・小坂井が2敗**になる。
-      勝ち抜き戦なので**同じ2校が同じ大会で2度当たることはない**から、
-      **同じ組み合わせは新しい日付のほうだけ残す。**
+      ★**中断した試合は2回載る**（`試合打ち切り` と `継続試合`）。
+      勝ち抜き戦なので同じ2校が2度当たることはない。**新しい日付のほうだけ残す。**
     */
     const byPair = new Map();
-    for (const g of games) {
-      const key = g.teams
-        .map((t) => normalizeSchoolName(t.display))
-        .sort()
-        .join("\t");
+    for (const g of out) {
+      const key = g.teams.map((t) => normalizeSchoolName(t.display)).sort().join("\t");
       const kept = byPair.get(key);
       if (!kept || g.date > kept.date) byPair.set(key, g);
     }
-    if (byPair.size !== games.length) {
-      console.log(`  （中断・再開で二重に載っている ${games.length - byPair.size} 試合をまとめた）`);
+    if (byPair.size) {
+      console.log(`  （${tournament}: ${byPair.size} 試合を ${this.catvaseName} から補った）`);
     }
     return [...byPair.values()];
   },
@@ -13043,9 +13561,26 @@ async function main() {
           ★**日付を1つも持たない出典では今までどおり大会名だけ**になる
           （富山・三重・兵庫ほか9県。鍵の後ろが空文字になるだけで、挙動は変わらない）。
         */
+        /*
+          ★★★**「日付が無かった試合」は、同じ名前の大会を取り直したら捨てる**
+          （2026-08-30。愛知で**同じ試合が2つ**になってから入れた）。
+
+          読み手を直して**それまで日付の無かった試合に日付が付く**と、
+          鍵の年のところが空文字から西暦に変わる。すると
+          **前の生成物の側が「別の大会」に見えて引き継がれ、
+          準決勝2試合と決勝が二重に並んだ**（実際に並んだ）。
+          ★**検算はどれも通る**（重複は勝敗の不変条件を壊さない）。
+          **気づけたのは試合数を数えたから。**
+
+          ★**日付を1つも持たない県の挙動は変わらない**（鍵の年は元から空文字で、
+          名前が一致すればどちらの条件でも捨てられる）。
+        */
         const carryKey = (g) => `${g.tournament ?? ""}\t${g.date ? g.date.slice(0, 4) : ""}`;
         const fresh = new Set(seasonGames.map(carryKey));
-        const carried = before.filter((g) => !fresh.has(carryKey(g)));
+        const freshNames = new Set(seasonGames.map((g) => g.tournament).filter(Boolean));
+        const carried = before.filter(
+          (g) => !fresh.has(carryKey(g)) && !(g.tournament && !g.date && freshNames.has(g.tournament)),
+        );
         if (carried.length) {
           const names = [...new Set(carried.map((g) => g.tournament))];
           console.log(

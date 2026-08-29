@@ -5,6 +5,492 @@
   "sourceUrl": "https://www.kochi-hbf.com/top",
   "games": [
     {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "1回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "宿毛工",
+          "score": 0,
+          "won": false,
+          "name": "宿毛工業高校",
+          "slug": "sukumokogyo"
+        },
+        {
+          "display": "高知",
+          "score": 12,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "1回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "須崎総合",
+          "score": 12,
+          "won": true,
+          "name": "須崎総合高校",
+          "slug": "susakisogo"
+        },
+        {
+          "display": "高知東工",
+          "score": 9,
+          "won": false,
+          "name": "高知東工業高校",
+          "slug": "kochihigashikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "1回戦",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "岡豊",
+          "score": 8,
+          "won": true,
+          "name": "岡豊高校",
+          "slug": "oko"
+        },
+        {
+          "display": "安芸",
+          "score": 0,
+          "won": false,
+          "name": "安芸高校",
+          "slug": "aki"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "1回戦",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "土佐塾",
+          "score": 0,
+          "won": false,
+          "name": "土佐塾",
+          "slug": null
+        },
+        {
+          "display": "高知商",
+          "score": 5,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "1回戦",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "高知東",
+          "score": 1,
+          "won": false,
+          "name": "高知東高校",
+          "slug": "kochihigashi"
+        },
+        {
+          "display": "土佐",
+          "score": 8,
+          "won": true,
+          "name": "土佐",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-21",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "小津",
+          "score": 3,
+          "won": false,
+          "name": "高知小津高校",
+          "slug": "kochiozu"
+        },
+        {
+          "display": "明徳義塾",
+          "score": 4,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-21",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知高専",
+          "score": 0,
+          "won": false,
+          "name": "高知工業高専",
+          "slug": "kochikogyo-kosen"
+        },
+        {
+          "display": "高知中央",
+          "score": 14,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-21",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "伊野商",
+          "score": 0,
+          "won": false,
+          "name": "伊野商業高校",
+          "slug": "inoshogyo"
+        },
+        {
+          "display": "梼原",
+          "score": 9,
+          "won": true,
+          "name": "檮原高校",
+          "slug": "yusuhara"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知商",
+          "score": 9,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "高知国際",
+          "score": 1,
+          "won": false,
+          "name": "高知国際高校",
+          "slug": "kochikokusai"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "中村",
+          "score": 5,
+          "won": true,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        },
+        {
+          "display": "岡豊",
+          "score": 3,
+          "won": false,
+          "name": "岡豊高校",
+          "slug": "oko"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知工",
+          "score": 3,
+          "won": false,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        },
+        {
+          "display": "土佐",
+          "score": 10,
+          "won": true,
+          "name": "土佐",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "2回戦",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "高知海洋・室戸・幡多農",
+          "score": 0,
+          "won": false,
+          "name": "高知海洋・室戸・幡多農",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "高知",
+          "score": 16,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "2回戦",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "丸の内・追手前",
+          "score": 9,
+          "won": true,
+          "name": "丸の内・追手前",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "須崎総合",
+          "score": 2,
+          "won": false,
+          "name": "須崎総合高校",
+          "slug": "susakisogo"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-24",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "準々決勝",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "中村",
+          "score": 1,
+          "won": false,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        },
+        {
+          "display": "明徳義塾",
+          "score": 6,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-24",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "準々決勝",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "土佐",
+          "score": 3,
+          "won": false,
+          "name": "土佐",
+          "slug": null
+        },
+        {
+          "display": "高知商",
+          "score": 4,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "準々決勝",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "高知中央",
+          "score": 5,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        },
+        {
+          "display": "梼原",
+          "score": 0,
+          "won": false,
+          "name": "檮原高校",
+          "slug": "yusuhara"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "準々決勝",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "高知",
+          "score": 8,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        },
+        {
+          "display": "丸の内・追手前",
+          "score": 0,
+          "won": false,
+          "name": "丸の内・追手前",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "準決勝",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "高知商",
+          "score": 4,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "明徳義塾",
+          "score": 2,
+          "won": false,
+          "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "準決勝",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "高知中央",
+          "score": 3,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        },
+        {
+          "display": "高知",
+          "score": 2,
+          "won": false,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "決勝",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "高知商",
+          "score": 5,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "高知中央",
+          "score": 3,
+          "won": false,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "round": "1回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知農",
+          "score": 2,
+          "won": false,
+          "name": "高知農業高校",
+          "slug": "kochinogyo"
+        },
+        {
+          "display": "高知商",
+          "score": 4,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        }
+      ]
+    },
+    {
       "date": "2025-03-20",
       "season": "spring",
       "tournament": "第78回 春季四国地区高等学校野球大会高知県予選",
@@ -488,45 +974,45 @@
       ]
     },
     {
-      "date": "2026-03-20",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "1回戦",
-      "venue": "日本トーター野球場",
-      "teams": [
-        {
-          "display": "岡豊",
-          "score": 8,
-          "won": true,
-          "name": "岡豊高校",
-          "slug": "oko"
-        },
-        {
-          "display": "安芸",
-          "score": 0,
-          "won": false,
-          "name": "安芸高校",
-          "slug": "aki"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-20",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
       "round": "1回戦",
       "venue": "県営春野球場",
       "teams": [
         {
-          "display": "宿毛工",
+          "display": "高知農",
+          "score": 6,
+          "won": true,
+          "name": "高知農業高校",
+          "slug": "kochinogyo"
+        },
+        {
+          "display": "高知東工",
+          "score": 2,
+          "won": false,
+          "name": "高知東工業高校",
+          "slug": "kochihigashikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "1回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "須崎総合",
           "score": 0,
           "won": false,
-          "name": "宿毛工業高校",
-          "slug": "sukumokogyo"
+          "name": "須崎総合高校",
+          "slug": "susakisogo"
         },
         {
           "display": "高知",
-          "score": 12,
+          "score": 7,
           "won": true,
           "name": "高知",
           "slug": null
@@ -534,18 +1020,157 @@
       ]
     },
     {
-      "date": "2026-03-20",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
       "round": "1回戦",
-      "venue": "日本トーター野球場",
+      "venue": "県営春野球場",
       "teams": [
         {
-          "display": "土佐塾",
+          "display": "高知高専",
+          "score": 16,
+          "won": true,
+          "name": "高知工業高専",
+          "slug": "kochikogyo-kosen"
+        },
+        {
+          "display": "高知海洋・室戸・幡多農",
+          "score": 10,
+          "won": false,
+          "name": "高知海洋・室戸・幡多農",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "1回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "追手前",
+          "score": 9,
+          "won": false,
+          "name": "高知追手前高校",
+          "slug": "kochiotemae"
+        },
+        {
+          "display": "窪川",
+          "score": 10,
+          "won": true,
+          "name": "窪川高校",
+          "slug": "kubokawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "1回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "伊野商",
           "score": 0,
           "won": false,
-          "name": "土佐塾",
-          "slug": null
+          "name": "伊野商業高校",
+          "slug": "inoshogyo"
+        },
+        {
+          "display": "高知丸の内",
+          "score": 10,
+          "won": true,
+          "name": "高知丸の内高校",
+          "slug": "kochimarunochi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "梼原",
+          "score": 9,
+          "won": true,
+          "name": "檮原高校",
+          "slug": "yusuhara"
+        },
+        {
+          "display": "高知工",
+          "score": 0,
+          "won": false,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "宿毛工",
+          "score": 1,
+          "won": false,
+          "name": "宿毛工業高校",
+          "slug": "sukumokogyo"
+        },
+        {
+          "display": "岡豊",
+          "score": 8,
+          "won": true,
+          "name": "岡豊高校",
+          "slug": "oko"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "高知国際",
+          "score": 7,
+          "won": true,
+          "name": "高知国際高校",
+          "slug": "kochikokusai"
+        },
+        {
+          "display": "安芸",
+          "score": 4,
+          "won": false,
+          "name": "安芸高校",
+          "slug": "aki"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知農",
+          "score": 2,
+          "won": false,
+          "name": "高知農業高校",
+          "slug": "kochinogyo"
         },
         {
           "display": "高知商",
@@ -557,34 +1182,241 @@
       ]
     },
     {
-      "date": "2026-03-20",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "1回戦",
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
       "venue": "県営春野球場",
       "teams": [
         {
-          "display": "須崎総合",
-          "score": 12,
-          "won": true,
-          "name": "須崎総合高校",
-          "slug": "susakisogo"
+          "display": "小津",
+          "score": 7,
+          "won": false,
+          "name": "高知小津高校",
+          "slug": "kochiozu"
         },
         {
-          "display": "高知東工",
-          "score": 9,
-          "won": false,
-          "name": "高知東工業高校",
-          "slug": "kochihigashikogyo"
+          "display": "高知",
+          "score": 8,
+          "won": true,
+          "name": "高知",
+          "slug": null
         }
       ]
     },
     {
-      "date": "2026-03-20",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "1回戦",
-      "venue": "日本トーター野球場",
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "高知高専",
+          "score": 2,
+          "won": false,
+          "name": "高知工業高専",
+          "slug": "kochikogyo-kosen"
+        },
+        {
+          "display": "高知中央",
+          "score": 18,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "窪川",
+          "score": 11,
+          "won": true,
+          "name": "窪川高校",
+          "slug": "kubokawa"
+        },
+        {
+          "display": "中村",
+          "score": 7,
+          "won": false,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知丸の内",
+          "score": 0,
+          "won": false,
+          "name": "高知丸の内高校",
+          "slug": "kochimarunochi"
+        },
+        {
+          "display": "明徳義塾",
+          "score": 7,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "土佐塾",
+          "score": 1,
+          "won": false,
+          "name": "土佐塾",
+          "slug": null
+        },
+        {
+          "display": "梼原",
+          "score": 3,
+          "won": true,
+          "name": "檮原高校",
+          "slug": "yusuhara"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "岡豊",
+          "score": 0,
+          "won": false,
+          "name": "岡豊高校",
+          "slug": "oko"
+        },
+        {
+          "display": "土佐",
+          "score": 10,
+          "won": true,
+          "name": "土佐",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "高知国際",
+          "score": 2,
+          "won": false,
+          "name": "高知国際高校",
+          "slug": "kochikokusai"
+        },
+        {
+          "display": "高知東",
+          "score": 9,
+          "won": true,
+          "name": "高知東高校",
+          "slug": "kochihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "準々決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知",
+          "score": 4,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        },
+        {
+          "display": "高知商",
+          "score": 2,
+          "won": false,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "準々決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "窪川",
+          "score": 3,
+          "won": false,
+          "name": "窪川高校",
+          "slug": "kubokawa"
+        },
+        {
+          "display": "高知中央",
+          "score": 9,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "準々決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 7,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "梼原",
+          "score": 3,
+          "won": false,
+          "name": "檮原高校",
+          "slug": "yusuhara"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "準々決勝",
+      "venue": "県営春野球場",
       "teams": [
         {
           "display": "高知東",
@@ -603,220 +1435,34 @@
       ]
     },
     {
-      "date": "2026-03-21",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "2回戦",
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "準決勝",
       "venue": "県営春野球場",
       "teams": [
-        {
-          "display": "小津",
-          "score": 3,
-          "won": false,
-          "name": "高知小津高校",
-          "slug": "kochiozu"
-        },
-        {
-          "display": "明徳義塾",
-          "score": 4,
-          "won": true,
-          "name": "明徳義塾",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-03-21",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "2回戦",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "高知高専",
-          "score": 0,
-          "won": false,
-          "name": "高知工業高専",
-          "slug": "kochikogyo-kosen"
-        },
         {
           "display": "高知中央",
-          "score": 14,
+          "score": 4,
           "won": true,
           "name": "高知中央",
           "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-03-21",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "2回戦",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "伊野商",
-          "score": 0,
-          "won": false,
-          "name": "伊野商業高校",
-          "slug": "inoshogyo"
-        },
-        {
-          "display": "梼原",
-          "score": 9,
-          "won": true,
-          "name": "梼原",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-03-22",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "2回戦",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "高知商",
-          "score": 9,
-          "won": true,
-          "name": "高知商業高校",
-          "slug": "kochishogyo"
-        },
-        {
-          "display": "高知国際",
-          "score": 1,
-          "won": false,
-          "name": "高知国際高校",
-          "slug": "kochikokusai"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-22",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "2回戦",
-      "venue": "日本トーター野球場",
-      "teams": [
-        {
-          "display": "高知海洋・室戸・幡多農",
-          "score": 0,
-          "won": false,
-          "name": "高知海洋・室戸・幡多農",
-          "slug": null,
-          "combined": true
         },
         {
           "display": "高知",
-          "score": 16,
-          "won": true,
+          "score": 0,
+          "won": false,
           "name": "高知",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-03-22",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "2回戦",
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
+      "round": "準決勝",
       "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "中村",
-          "score": 5,
-          "won": true,
-          "name": "中村高校",
-          "slug": "kochi-nakamura"
-        },
-        {
-          "display": "岡豊",
-          "score": 3,
-          "won": false,
-          "name": "岡豊高校",
-          "slug": "oko"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-22",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "2回戦",
-      "venue": "日本トーター野球場",
-      "teams": [
-        {
-          "display": "丸の内・追手前",
-          "score": 9,
-          "won": true,
-          "name": "丸の内・追手前",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "須崎総合",
-          "score": 2,
-          "won": false,
-          "name": "須崎総合高校",
-          "slug": "susakisogo"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-22",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "2回戦",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "高知工",
-          "score": 3,
-          "won": false,
-          "name": "高知工業高校",
-          "slug": "kochikogyo"
-        },
-        {
-          "display": "土佐",
-          "score": 10,
-          "won": true,
-          "name": "土佐",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-03-24",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "準々決勝",
-      "venue": "日本トーター野球場",
-      "teams": [
-        {
-          "display": "中村",
-          "score": 1,
-          "won": false,
-          "name": "中村高校",
-          "slug": "kochi-nakamura"
-        },
-        {
-          "display": "明徳義塾",
-          "score": 6,
-          "won": true,
-          "name": "明徳義塾",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-03-24",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "準々決勝",
-      "venue": "日本トーター野球場",
       "teams": [
         {
           "display": "土佐",
@@ -826,150 +1472,34 @@
           "slug": null
         },
         {
-          "display": "高知商",
-          "score": 4,
-          "won": true,
-          "name": "高知商業高校",
-          "slug": "kochishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-26",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "準々決勝",
-      "venue": "日本トーター野球場",
-      "teams": [
-        {
-          "display": "高知中央",
-          "score": 5,
-          "won": true,
-          "name": "高知中央",
-          "slug": null
-        },
-        {
-          "display": "梼原",
-          "score": 0,
-          "won": false,
-          "name": "梼原",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-03-26",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "準々決勝",
-      "venue": "日本トーター野球場",
-      "teams": [
-        {
-          "display": "高知",
-          "score": 8,
-          "won": true,
-          "name": "高知",
-          "slug": null
-        },
-        {
-          "display": "丸の内・追手前",
-          "score": 0,
-          "won": false,
-          "name": "丸の内・追手前",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-03-28",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "準決勝",
-      "venue": "日本トーター野球場",
-      "teams": [
-        {
-          "display": "高知商",
-          "score": 4,
-          "won": true,
-          "name": "高知商業高校",
-          "slug": "kochishogyo"
-        },
-        {
           "display": "明徳義塾",
-          "score": 2,
-          "won": false,
+          "score": 4,
+          "won": true,
           "name": "明徳義塾",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-03-28",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "準決勝",
-      "venue": "日本トーター野球場",
-      "teams": [
-        {
-          "display": "高知中央",
-          "score": 3,
-          "won": true,
-          "name": "高知中央",
-          "slug": null
-        },
-        {
-          "display": "高知",
-          "score": 2,
-          "won": false,
-          "name": "高知",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-03-30",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権高知大会",
       "round": "決勝",
-      "venue": "日本トーター野球場",
-      "teams": [
-        {
-          "display": "高知商",
-          "score": 5,
-          "won": true,
-          "name": "高知商業高校",
-          "slug": "kochishogyo"
-        },
-        {
-          "display": "高知中央",
-          "score": 3,
-          "won": false,
-          "name": "高知中央",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-11",
-      "season": "spring",
-      "tournament": "第79回 春季四国地区高等学校野球大会高知県予選",
-      "round": "1回戦",
       "venue": "県営春野球場",
       "teams": [
         {
-          "display": "高知農",
-          "score": 2,
-          "won": false,
-          "name": "高知農業高校",
-          "slug": "kochinogyo"
+          "display": "明徳義塾",
+          "score": 3,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
         },
         {
-          "display": "高知商",
-          "score": 4,
-          "won": true,
-          "name": "高知商業高校",
-          "slug": "kochishogyo"
+          "display": "高知中央",
+          "score": 0,
+          "won": false,
+          "name": "高知中央",
+          "slug": null
         }
       ]
     },
@@ -1153,8 +1683,8 @@
           "display": "梼原",
           "score": 8,
           "won": true,
-          "name": "檮原高校",
-          "slug": "yusuhara"
+          "name": "梼原",
+          "slug": null
         }
       ]
     },
@@ -1291,8 +1821,8 @@
           "display": "梼原",
           "score": 2,
           "won": false,
-          "name": "檮原高校",
-          "slug": "yusuhara"
+          "name": "梼原",
+          "slug": null
         }
       ]
     },
@@ -4067,536 +4597,6 @@
       ]
     },
     {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "1回戦",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "高知農",
-          "score": 6,
-          "won": true,
-          "name": "高知農業高校",
-          "slug": "kochinogyo"
-        },
-        {
-          "display": "高知東工",
-          "score": 2,
-          "won": false,
-          "name": "高知東工業高校",
-          "slug": "kochihigashikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "1回戦",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "須崎総合",
-          "score": 0,
-          "won": false,
-          "name": "須崎総合高校",
-          "slug": "susakisogo"
-        },
-        {
-          "display": "高知",
-          "score": 7,
-          "won": true,
-          "name": "高知",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "1回戦",
-      "venue": "高知球場",
-      "teams": [
-        {
-          "display": "梼原",
-          "score": 9,
-          "won": true,
-          "name": "梼原",
-          "slug": null
-        },
-        {
-          "display": "高知工",
-          "score": 0,
-          "won": false,
-          "name": "高知工業高校",
-          "slug": "kochikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "1回戦",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "高知高専",
-          "score": 16,
-          "won": true,
-          "name": "高知工業高専",
-          "slug": "kochikogyo-kosen"
-        },
-        {
-          "display": "高知海洋・室戸・幡多農",
-          "score": 10,
-          "won": false,
-          "name": "高知海洋・室戸・幡多農",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "1回戦",
-      "venue": "高知球場",
-      "teams": [
-        {
-          "display": "宿毛工",
-          "score": 1,
-          "won": false,
-          "name": "宿毛工業高校",
-          "slug": "sukumokogyo"
-        },
-        {
-          "display": "岡豊",
-          "score": 8,
-          "won": true,
-          "name": "岡豊高校",
-          "slug": "oko"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "1回戦",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "追手前",
-          "score": 9,
-          "won": false,
-          "name": "高知追手前高校",
-          "slug": "kochiotemae"
-        },
-        {
-          "display": "窪川",
-          "score": 10,
-          "won": true,
-          "name": "窪川高校",
-          "slug": "kubokawa"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "1回戦",
-      "venue": "高知球場",
-      "teams": [
-        {
-          "display": "高知国際",
-          "score": 7,
-          "won": true,
-          "name": "高知国際高校",
-          "slug": "kochikokusai"
-        },
-        {
-          "display": "安芸",
-          "score": 4,
-          "won": false,
-          "name": "安芸高校",
-          "slug": "aki"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "1回戦",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "伊野商",
-          "score": 0,
-          "won": false,
-          "name": "伊野商業高校",
-          "slug": "inoshogyo"
-        },
-        {
-          "display": "高知丸の内",
-          "score": 10,
-          "won": true,
-          "name": "高知丸の内高校",
-          "slug": "kochimarunochi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "2回戦",
-      "venue": "高知球場",
-      "teams": [
-        {
-          "display": "高知高専",
-          "score": 2,
-          "won": false,
-          "name": "高知工業高専",
-          "slug": "kochikogyo-kosen"
-        },
-        {
-          "display": "高知中央",
-          "score": 18,
-          "won": true,
-          "name": "高知中央",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "2回戦",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "高知農",
-          "score": 2,
-          "won": false,
-          "name": "高知農業高校",
-          "slug": "kochinogyo"
-        },
-        {
-          "display": "高知商",
-          "score": 5,
-          "won": true,
-          "name": "高知商業高校",
-          "slug": "kochishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "2回戦",
-      "venue": "高知球場",
-      "teams": [
-        {
-          "display": "窪川",
-          "score": 11,
-          "won": true,
-          "name": "窪川高校",
-          "slug": "kubokawa"
-        },
-        {
-          "display": "中村",
-          "score": 7,
-          "won": false,
-          "name": "中村高校",
-          "slug": "kochi-nakamura"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "2回戦",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "小津",
-          "score": 7,
-          "won": false,
-          "name": "高知小津高校",
-          "slug": "kochiozu"
-        },
-        {
-          "display": "高知",
-          "score": 8,
-          "won": true,
-          "name": "高知",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "2回戦",
-      "venue": "高知球場",
-      "teams": [
-        {
-          "display": "岡豊",
-          "score": 0,
-          "won": false,
-          "name": "岡豊高校",
-          "slug": "oko"
-        },
-        {
-          "display": "土佐",
-          "score": 10,
-          "won": true,
-          "name": "土佐",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "2回戦",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "高知丸の内",
-          "score": 0,
-          "won": false,
-          "name": "高知丸の内高校",
-          "slug": "kochimarunochi"
-        },
-        {
-          "display": "明徳義塾",
-          "score": 7,
-          "won": true,
-          "name": "明徳義塾",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "2回戦",
-      "venue": "高知球場",
-      "teams": [
-        {
-          "display": "高知国際",
-          "score": 2,
-          "won": false,
-          "name": "高知国際高校",
-          "slug": "kochikokusai"
-        },
-        {
-          "display": "高知東",
-          "score": 9,
-          "won": true,
-          "name": "高知東高校",
-          "slug": "kochihigashi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "2回戦",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "土佐塾",
-          "score": 1,
-          "won": false,
-          "name": "土佐塾",
-          "slug": null
-        },
-        {
-          "display": "梼原",
-          "score": 3,
-          "won": true,
-          "name": "梼原",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-20",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "準々決勝",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "高知",
-          "score": 4,
-          "won": true,
-          "name": "高知",
-          "slug": null
-        },
-        {
-          "display": "高知商",
-          "score": 2,
-          "won": false,
-          "name": "高知商業高校",
-          "slug": "kochishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-20",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "準々決勝",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "窪川",
-          "score": 3,
-          "won": false,
-          "name": "窪川高校",
-          "slug": "kubokawa"
-        },
-        {
-          "display": "高知中央",
-          "score": 9,
-          "won": true,
-          "name": "高知中央",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-21",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "準々決勝",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "明徳義塾",
-          "score": 7,
-          "won": true,
-          "name": "明徳義塾",
-          "slug": null
-        },
-        {
-          "display": "梼原",
-          "score": 3,
-          "won": false,
-          "name": "梼原",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-21",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "準々決勝",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "高知東",
-          "score": 1,
-          "won": false,
-          "name": "高知東高校",
-          "slug": "kochihigashi"
-        },
-        {
-          "display": "土佐",
-          "score": 8,
-          "won": true,
-          "name": "土佐",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-23",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "準決勝",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "高知中央",
-          "score": 4,
-          "won": true,
-          "name": "高知中央",
-          "slug": null
-        },
-        {
-          "display": "高知",
-          "score": 0,
-          "won": false,
-          "name": "高知",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-23",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "準決勝",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "土佐",
-          "score": 3,
-          "won": false,
-          "name": "土佐",
-          "slug": null
-        },
-        {
-          "display": "明徳義塾",
-          "score": 4,
-          "won": true,
-          "name": "明徳義塾",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-25",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権高知大会",
-      "round": "決勝",
-      "venue": "県営春野球場",
-      "teams": [
-        {
-          "display": "明徳義塾",
-          "score": 3,
-          "won": true,
-          "name": "明徳義塾",
-          "slug": null
-        },
-        {
-          "display": "高知中央",
-          "score": 0,
-          "won": false,
-          "name": "高知中央",
-          "slug": null
-        }
-      ]
-    },
-    {
       "date": "2025-09-06",
       "season": "autumn",
       "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
@@ -4616,29 +4616,6 @@
           "won": true,
           "name": "高知東工業高校",
           "slug": "kochihigashikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-06",
-      "season": "autumn",
-      "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
-      "round": "1回戦",
-      "venue": "日本トーター野球場",
-      "teams": [
-        {
-          "display": "岡豊",
-          "score": 2,
-          "won": false,
-          "name": "岡豊高校",
-          "slug": "oko"
-        },
-        {
-          "display": "高知",
-          "score": 12,
-          "won": true,
-          "name": "高知",
-          "slug": null
         }
       ]
     },
@@ -4670,29 +4647,6 @@
       "season": "autumn",
       "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
       "round": "1回戦",
-      "venue": "日本トーター野球場",
-      "teams": [
-        {
-          "display": "高知高専",
-          "score": 5,
-          "won": false,
-          "name": "高知工業高専",
-          "slug": "kochikogyo-kosen"
-        },
-        {
-          "display": "須崎総合",
-          "score": 12,
-          "won": true,
-          "name": "須崎総合高校",
-          "slug": "susakisogo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-06",
-      "season": "autumn",
-      "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
-      "round": "1回戦",
       "venue": "県営春野球場",
       "teams": [
         {
@@ -4708,6 +4662,52 @@
           "won": true,
           "name": "安芸高校",
           "slug": "aki"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-06",
+      "season": "autumn",
+      "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
+      "round": "1回戦",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "岡豊",
+          "score": 2,
+          "won": false,
+          "name": "岡豊高校",
+          "slug": "oko"
+        },
+        {
+          "display": "高知",
+          "score": 12,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-06",
+      "season": "autumn",
+      "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
+      "round": "1回戦",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "高知高専",
+          "score": 5,
+          "won": false,
+          "name": "高知工業高専",
+          "slug": "kochikogyo-kosen"
+        },
+        {
+          "display": "須崎総合",
+          "score": 12,
+          "won": true,
+          "name": "須崎総合高校",
+          "slug": "susakisogo"
         }
       ]
     },
@@ -4762,29 +4762,6 @@
       "season": "autumn",
       "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
       "round": "2回戦",
-      "venue": "日本トーター野球場",
-      "teams": [
-        {
-          "display": "安芸",
-          "score": 2,
-          "won": false,
-          "name": "安芸高校",
-          "slug": "aki"
-        },
-        {
-          "display": "高知商",
-          "score": 7,
-          "won": true,
-          "name": "高知商業高校",
-          "slug": "kochishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-13",
-      "season": "autumn",
-      "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
-      "round": "2回戦",
       "venue": "県営春野球場",
       "teams": [
         {
@@ -4800,6 +4777,29 @@
           "won": false,
           "name": "土佐塾",
           "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
+      "round": "2回戦",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "安芸",
+          "score": 2,
+          "won": false,
+          "name": "安芸高校",
+          "slug": "aki"
+        },
+        {
+          "display": "高知商",
+          "score": 7,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
         }
       ]
     },
@@ -4822,8 +4822,8 @@
           "display": "梼原",
           "score": 10,
           "won": true,
-          "name": "梼原",
-          "slug": null
+          "name": "檮原高校",
+          "slug": "yusuhara"
         }
       ]
     },
@@ -4855,29 +4855,6 @@
       "season": "autumn",
       "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
       "round": "2回戦",
-      "venue": "日本トーター野球場",
-      "teams": [
-        {
-          "display": "中村",
-          "score": 5,
-          "won": false,
-          "name": "中村高校",
-          "slug": "kochi-nakamura"
-        },
-        {
-          "display": "土佐",
-          "score": 7,
-          "won": true,
-          "name": "土佐",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
-      "round": "2回戦",
       "venue": "県営春野球場",
       "teams": [
         {
@@ -4893,6 +4870,29 @@
           "won": true,
           "name": "高知東高校",
           "slug": "kochihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "第78回秋季四国地区高等学校野球大会高知県予選",
+      "round": "2回戦",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "中村",
+          "score": 5,
+          "won": false,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        },
+        {
+          "display": "土佐",
+          "score": 7,
+          "won": true,
+          "name": "土佐",
+          "slug": null
         }
       ]
     },
@@ -4954,8 +4954,8 @@
           "display": "梼原",
           "score": 1,
           "won": false,
-          "name": "梼原",
-          "slug": null
+          "name": "檮原高校",
+          "slug": "yusuhara"
         },
         {
           "display": "高知商",

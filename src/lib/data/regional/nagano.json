@@ -17274,6 +17274,75 @@
       ]
     },
     {
+      "date": "2026-08-29",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 東信予選会",
+      "round": "1回戦",
+      "venue": "佐久総合運動公園野球場",
+      "teams": [
+        {
+          "display": "佐久平総合技術",
+          "score": 10,
+          "won": false,
+          "name": "佐久平総合技術高校",
+          "slug": "sakudairasogogijutsu"
+        },
+        {
+          "display": "蓼科",
+          "score": 11,
+          "won": true,
+          "name": "蓼科高校",
+          "slug": "tateshina"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-29",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 東信予選会",
+      "round": "1回戦",
+      "venue": "佐久総合運動公園野球場",
+      "teams": [
+        {
+          "display": "丸子修学館",
+          "score": 1,
+          "won": false,
+          "name": "丸子修学館高校",
+          "slug": "marukoshugakukan"
+        },
+        {
+          "display": "地球環境",
+          "score": 11,
+          "won": true,
+          "name": "地球環境",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-29",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 東信予選会",
+      "round": "1回戦",
+      "venue": "佐久総合運動公園野球場",
+      "teams": [
+        {
+          "display": "上田染谷丘",
+          "score": 0,
+          "won": false,
+          "name": "上田染谷丘高校",
+          "slug": "uedasomeyagaoka"
+        },
+        {
+          "display": "岩村田",
+          "score": 5,
+          "won": true,
+          "name": "岩村田高校",
+          "slug": "iwamurada"
+        }
+      ]
+    },
+    {
       "date": "2025-09-28",
       "season": "autumn",
       "tournament": "第153回 北信越地区高等学校野球 長野県大会",
@@ -25860,52 +25929,6 @@
           "won": false,
           "name": "中野西高校",
           "slug": "nakanonishi"
-        }
-      ]
-    },
-    {
-      "date": "2022-08-28",
-      "season": "autumn",
-      "tournament": "第147回北信越地区高等学校野球長野県大会東信支部",
-      "round": "1回戦",
-      "venue": "県営上田野球場",
-      "teams": [
-        {
-          "display": "地球環境",
-          "score": 8,
-          "won": false,
-          "name": "地球環境",
-          "slug": null
-        },
-        {
-          "display": "小諸",
-          "score": 15,
-          "won": true,
-          "name": "小諸",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2022-08-28",
-      "season": "autumn",
-      "tournament": "第147回北信越地区高等学校野球長野県大会東信支部",
-      "round": "1回戦",
-      "venue": "県営上田野球場",
-      "teams": [
-        {
-          "display": "上田西",
-          "score": 10,
-          "won": true,
-          "name": "上田西",
-          "slug": null
-        },
-        {
-          "display": "丸子修学館",
-          "score": 0,
-          "won": false,
-          "name": "丸子修学館高校",
-          "slug": "marukoshugakukan"
         }
       ]
     }

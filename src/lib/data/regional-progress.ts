@@ -5,12 +5,20 @@ import type { RegionalProgressBoard } from "@/lib/regional-results";
 
 export const REGIONAL_PROGRESS: RegionalProgressBoard = {
   "season": "autumn",
-  "latestDate": "2026-08-23",
+  "latestDate": "2026-08-29",
+  "generatedAt": "2026-08-29T13:41:17Z",
   "districts": [
     {
       "slug": "nagano",
       "district": "長野",
-      "state": "pending"
+      "state": "playing",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 東信予選会",
+      "games": 3,
+      "publicGames": 3,
+      "round": "1回戦",
+      "latestDate": "2026-08-29",
+      "champion": null
     },
     {
       "slug": "kanagawa",
@@ -50,7 +58,14 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "nara",
       "district": "奈良",
-      "state": "pending"
+      "state": "playing",
+      "season": "autumn",
+      "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",
+      "games": 4,
+      "publicGames": 4,
+      "round": null,
+      "latestDate": "2026-08-29",
+      "champion": null
     },
     {
       "slug": "ehime",
@@ -105,12 +120,26 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "yamagata",
       "district": "山形",
-      "state": "pending"
+      "state": "playing",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会 シード決定ブロック大会",
+      "games": 5,
+      "publicGames": 1,
+      "round": "1回戦",
+      "latestDate": "2026-08-29",
+      "champion": null
     },
     {
       "slug": "shizuoka",
       "district": "静岡",
-      "state": "pending"
+      "state": "playing",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "games": 87,
+      "publicGames": 80,
+      "round": "代表決定戦",
+      "latestDate": "2026-08-29",
+      "champion": null
     },
     {
       "slug": "yamaguchi",
@@ -157,7 +186,14 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "okayama",
       "district": "岡山",
-      "state": "pending"
+      "state": "playing",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "games": 38,
+      "publicGames": 32,
+      "round": null,
+      "latestDate": "2026-08-29",
+      "champion": null
     },
     {
       "slug": "kagawa",
@@ -211,6 +247,16 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "fukushima",
       "district": "福島",
+      "state": "pending"
+    },
+    {
+      "slug": "toyama",
+      "district": "富山",
+      "state": "pending"
+    },
+    {
+      "slug": "osaka",
+      "district": "大阪",
       "state": "pending"
     }
   ]

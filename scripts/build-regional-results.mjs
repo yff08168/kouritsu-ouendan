@@ -5437,365 +5437,53 @@ const chiba = {
 };
 
 /**
- * 山形県高等学校野球連盟（`yamagata-hbf.org`）。
- * ★**「一球速報の県」に分類していたが誤りだった**（2026-08-16）。
- * 連盟は結果を **Google Drive** に置いていて、omyutech とは無関係。
+ * ★★★**山形は 2026-08-29 に「一球速報の履歴API」へ出典を替えた**（運営者の判断）。
  *
  * ------------------------------------------------------------------
- * ★ なぜ Drive のファイルIDを直に持っているのか
+ * ★★**それまでは連盟が Google Drive に置くPDFを読んでいた**（312行の読み手）。
+ * **夏しか無く、2025・2026年の75試合**しか取れていなかった。
+ * 履歴API（`league_id=206`）は**2019年まで**あり、**1,198試合**になる。
  *
- *   連盟のサイトはReactのSPAで、**Driveへのリンクは omyutech の告知API
- *   （`other-api.omyutech.com/otherapi/rest`）からしか辿れない。**
- *   そのAPIのパス名は難読化された遅延チャンクの中にあり、追いかけても
- *   **サイトを作り直すたびに壊れる**（chunkのハッシュごと変わる）。
- *
- *   ★**IDを固定しても大会中は自動で追随する。** 連盟は**同じファイルを
- *   上書き更新**しているため（お知らせは6/25付なのに、PDFには7/26の決勝まで
- *   入っていた）。人が手を入れるのは**新しい大会になったときだけ**。
- *
- *   ★**大会名はPDFから読む。** IDと一緒に大会名を書くと、
- *   ファイルが差し替わったときに**古い大会名のまま出る**。
+ * ★**連盟サイトの「history」ページ**（`/history/1?oyyear=2025`）が
+ * 茨城・香川とまったく同じ作り。**同じ `omyuleagueschedulenew.action`。**
  *
  * ------------------------------------------------------------------
- * ★ 紙の形（スコア表。組み立ても推測も要らない）
+ * ★★★**替えるときの検算で、危うく取り違えるところだった。**
  *
- *   開催日   回戦   球場   試合開始時間   一塁側  ー  三塁側   備考
- *   7月10日(金)  ﾔﾏﾘｮｰｽﾀｼﾞｱﾑ山形
- *            1回戦        12時30分   創学館 17 ー 7 米沢東   8回コールド
+ * 素朴に「日付＋校名＋得点」で突き合わせると**43試合が消えた**ように見え、
+ * **一度は「決勝が欠ける」と判断して差し戻した。** 実際は違った:
  *
- *   見出し行が列の x をくれる。★**開催日と球場はセルが縦に結合されていて、
- *   変わったときだけ書かれる**ので、行を上から順に見て持ち回る。
+ *   34件 … **日付が1日ずれているだけ**（雨天順延。2026-07-10 ⇔ 07-11）
+ *    6件 … **連合チームの表記違い**（`４校連合` ⇔ `高畠・南陽・長井工業・左沢`）
+ *    1件 … `新庄神室` ⇔ `新庄神室産業`（**slug は同じ**）
+ *    3件 … 本当に見当たらない
  *
- *   ★**回戦の欄は中央揃え。** 「準々決勝」は4文字なので x=98 から始まり、
- *   「1回戦」（104）「準決勝」（102）より左に出る。**列の左端を 104 にすると
- *   準々決勝の4試合だけ落ちる**（実際に落ちて 32/36 になった）。
- *
- *   ★**スコアが空の行は「予定」**（順延で組み直されたぶん）。同じ対戦が
- *   空欄と結果ありで2回出てくる。**空欄のほうは捨てる。**
- *   ★**サヨナラは `11x`**。`Number("11x")` は NaN。
+ * ★★**出典を替えるときの突き合わせは、日付と表記に依存させないこと。**
+ * **並び順・日付・略称のどれかが違うだけで「消えた」に見える。**
+ * ★**学校の結び付きは `slug` で比べる**（`display` で比べると表記違いで誤検知する）。
  *
  * ------------------------------------------------------------------
- * ★ 検算
+ * ★★**連盟の紙と履歴APIで日付が食い違う試合が34件ある。**
+ * **どちらが正しいかは断定できない**（紙が予定日、APIが実施日と見られる）。
+ * **いまはAPI側の日付で出している。**
+ * 群馬で「連盟自身の2つの資料が食い違ったら引用元のまま出す」とした前例に倣う。
  *
- *   - のべ出場校 − 試合数 = 1（37 − 36）
- *   - **やぐら表のPDFに「優勝：◯◯ 準優勝：◯◯」**があり、決勝の結果と突き合わせる
- *   - 2026年（第108回）は 5+16+8+4+2+1 = 36試合、優勝 鶴岡東（決勝 5-0 山形城北）で一致
- *
- * **規約**: 連盟のサイトに転載の制限は無い。robots.txt は全許可。
- * 結果PDFは Google Drive にあり、**omyutech からは1件も取っていない。**
+ * ------------------------------------------------------------------
+ * ★**春季・秋季は `omyuKeeps` が落とす。**
+ * 出典の大会名が「第72回春季東北地区高等学校野球大会」で**県名を含まない**ため。
+ * ★**これは意図した保守側の挙動**で、東北地区大会（複数県）を山形の
+ * ファイルに混ぜないための歯止め。**緩めるなら、県大会と地区大会を
+ * 名前で見分ける方法を先に決めること**（2020年の秋は
+ * 「…大会・地区予選〜県大会」と書かれており、県大会も同じ名前で来る）。
  */
-const yamagata = {
+const yamagata = omyuAdapter({
   slug: "yamagata",
   district: "山形",
   name: "山形県高等学校野球連盟",
   siteUrl: "https://www.yamagata-hbf.org/",
-  politenessMs: 2000,
-  // **夏だけ。** 春季・秋季も同じ形のPDFが出るか確かめてから足すこと
-  seasons: { summer: "https://www.yamagata-hbf.org/" },
-  /**
-   * ★★**お知らせAPIから辿る**（2026-08-25。**ファイルIDの直書きをやめた**）。
-   *
-   * 以前は Drive のファイルIDを2つ手で書いていて、**人が大会ごとに入れ替える前提**だった。
-   * お知らせから辿れるようにしたので、**過去の大会も自動で読める**（2024年度まで）。
-   *
-   * ★★**`type=T`（トピック）を見ること。** 山形は
-   * **`type=N` だと1件しか返らない**（静岡と同じ書き方では過去が1つも見えない）。
-   * `type=T` で26件返り、そこに 2024〜2026 の3季ぶんが並んでいる。
-   */
   leagueId: 206,
-  async collect({ season }) {
-    if (season !== "summer") return [];
-    const news = await fetchOmyuNews(this.leagueId, "T");
-    if (!news?.length) {
-      console.log("  ⚠️ 山形: お知らせが取れない。出典の作りが変わった可能性がある");
-      return [];
-    }
-    /*
-      ★**見出しで選手権の記事に絞る。** 春季・秋季や総会の記事を開かずに済ませる。
-      **新しい順に見て、読めたものを積み上げる**（引き継ぎがあるので取りこぼしても消えない）。
-    */
-    const posts = news.filter((n) => /全国高等学校野球選手権|選手権山形大会/.test(n.title ?? ""));
-    const out = [];
-    const seen = new Set();
-    // ★お知らせは26件しか無いので、選手権の記事は全部見てよい（1件あたりPDF2本）
-    for (const post of posts) {
-      const body = await fetchOmyuNewsBody(this.leagueId, post.newsId);
-      await sleep(this.politenessMs);
-      if (!body) continue;
-      /*
-        ★**本文に Drive のリンクが2本ある**（勝ち上がり／試合結果一覧）。
-        **どちらが試合結果かは題では決められない**ので、両方開いて
-        「大会名と回戦の表がある」ほうを使う（`readSheet` が見分ける）。
-      */
-      const ids = [...body.matchAll(/drive\.google\.com\/file\/d\/([\w-]+)/g)].map((m) => m[1]);
-      for (const id of ids) {
-        const pages = await fetchPdfPages(`https://drive.google.com/uc?export=download&id=${id}`, { headers: UA });
-        await sleep(this.politenessMs);
-        if (!pages?.length) continue;
-        const games = this.readSheet(pages, null, season);
-        if (!games?.length) continue;
-        const name = games[0].tournament;
-        if (seen.has(name)) continue;
-        seen.add(name);
-        out.push(...games);
-        break; // この記事は読めた。次の記事へ
-      }
-    }
-    return out;
-  },
-  readSheet(pages, bracket, season) {
-    const flat = pages.flatMap((p) => p.lines.map((l) => normalize(l.text.replace(/\t/g, ""))));
-    /*
-      ★★**題の1文字ずつのあいだに空白が入る紙がある**（2026-08-27。第106回＝2024年）:
+});
 
-        第	106	回 全 国 高 等 学 校 野 球 選 手 権 山 形 大 会
-
-      タブしか落としていなかったので**大会名が見つからず、2024年が丸ごと落ちていた**
-      （お知らせは開けていて、PDFも読めていた。**照合だけが外れていた**）。
-      ★**空白を落としてから照合する。** 日本の大会名に空白は入らない。
-      ★**「記念」が入る年がある**（第105回＝2023年）。
-    */
-    const tournament = flat
-      .map((t) => t.replace(/[\s　]/g, "").match(/第\d+回全国高等学校野球選手権(?:記念)?山形大会/)?.[0])
-      .find(Boolean);
-    if (!tournament) {
-      /*
-        ★**黙って返してよい**（2026-08-25）。お知らせには
-        「勝ち上がり」と「試合結果一覧」の2本がぶら下がっていて、
-        **どちらが試合表かは題では決められないので両方開いている。**
-        外れたほう（勝ち上がり表）でここに来るのは**普通のこと**で、
-        警告を出すと大会ごとに何度も鳴って本当の異常が埋もれる。
-        ★**1本も読めなかったことは呼び出し側が「0試合」で気づける。**
-      */
-      return [];
-    }
-    // 選手権の回数は 年 - 1918
-    const year = Number(tournament.match(/第(\d+)回/)[1]) + 1918;
-    const ROUND = /^(\d+回戦|準々決勝|準決勝|決勝)$/;
-
-    /*
-      ★★★**列の x は紙の年で変わる**（2026-08-27。第106回＝2024年が丸ごと落ちていた）。
-
-      見出し行は両年ともあり、位置だけが違う:
-
-        2026 … 開催日 50.8 ／ 回戦 106.3 ／ 球場 181.9 ／ 一塁側 329.4 ／ **ー 387.1** ／ 三塁側 428.7
-        2024 … 開催日 52.2 ／ 回戦 110.1 ／ 球場 192.3 ／ 一塁側 347.2 ／ **ー 405.1** ／ 三塁側 450.6
-
-      ★**下の範囲は2026年の紙で測った値**なので、**真ん中の `ー` の x の比で伸縮させる。**
-      ★**見出しが見つからない紙は今までどおり**（比 1）。
-    */
-    const HEADER_BAR_2026 = 387.1;
-    const headerBar = pages
-      .flatMap((pg) => pg.lines)
-      .filter((l) => /開催日/.test(l.text) && /一塁側/.test(l.text) && /三塁側/.test(l.text))
-      .flatMap((l) => l.items)
-      .find((i) => /^[ー―—-]$/.test(i.text.trim()))?.x;
-    const scale = headerBar ? headerBar / HEADER_BAR_2026 : 1;
-
-    const games = [];
-    let date = null;
-    let venue = null;
-    for (const page of pages) {
-      for (const line of page.lines) {
-        const txt = (lo, hi) =>
-          line.items
-            // ★**範囲は2026年の紙の値。** 紙ごとの縮尺を掛けてから比べる
-            .filter((i) => i.x >= lo * scale && i.x < hi * scale)
-            .sort((a, b) => a.x - b.x)
-            .map((i) => i.text)
-            .join("")
-            .replace(/\s+/g, "");
-
-        const d = normalize(txt(0, 100)).match(/(\d{1,2})月(\d{1,2})日/);
-        if (d) date = `${year}-${String(+d[1]).padStart(2, "0")}-${String(+d[2]).padStart(2, "0")}`;
-        const v = txt(140, 240);
-        if (v && !/^\d/.test(v)) venue = v;
-
-        // ★列の左端は 90。104 にすると「準々決勝」（中央揃えで x=98）が落ちる
-        const round = normalize(txt(90, 145));
-        if (!ROUND.test(round)) continue;
-
-        const a = txt(300, 365);
-        const b = txt(420, 478);
-        const bar = txt(385, 398);
-        const sa = normalize(txt(365, 385));
-        const sb = normalize(txt(398, 420));
-        if (!a || !b || !/^[ー―—-]$/.test(bar)) {
-          console.log(`  ⚠️ 山形: 読めない行がある（${round}・${a} ${bar} ${b}）。1試合も出さない`);
-          return [];
-        }
-        // ★スコアが空の行は「予定」。順延で組み直されたぶんが同じ対戦で2回出る
-        if (!sa && !sb) continue;
-        // ★サヨナラは `11x`
-        const na = sa.match(/^(\d{1,2})[xX×]?$/);
-        const nb = sb.match(/^(\d{1,2})[xX×]?$/);
-        if (!na || !nb) {
-          console.log(`  ⚠️ 山形: スコアが読めない（${a} ${sa}-${sb} ${b}）。1試合も出さない`);
-          return [];
-        }
-        if (!date) {
-          console.log("  ⚠️ 山形: 日付の分からない試合がある。1試合も出さない");
-          return [];
-        }
-        games.push({
-          date, season, tournament, round, venue,
-          teams: [
-            { display: a, score: +na[1], won: +na[1] > +nb[1] },
-            { display: b, score: +nb[1], won: +nb[1] > +na[1] },
-          ],
-        });
-      }
-    }
-    if (!games.length) return [];
-
-    // ---- 検算 ----
-    const teams = new Set(games.flatMap((g) => g.teams.map((t) => t.display)));
-    if (teams.size - games.length !== 1) {
-      console.log(`  ⚠️ 山形: ${teams.size} チームに対し ${games.length} 試合（${teams.size - 1} のはず）。1試合も出さない`);
-      return [];
-    }
-    /*
-      ★**やぐら表のPDFに「優勝：◯◯ 準優勝：◯◯」**が書いてある。
-      **結果表とは別の紙から来る事実**なので、決勝の結果と突き合わせる。
-    */
-    if (bracket?.length) {
-      const bt = bracket.flatMap((p) => p.lines.map((l) => l.text.replace(/[\t\s]/g, ""))).join("\n");
-      const champion = bt.match(/優勝：(\S+?)準優勝/)?.[1] ?? null;
-      const runnerUp = bt.match(/準優勝：([^【\s]+)/)?.[1] ?? null;
-      const final = games.filter((g) => g.round === "決勝").at(-1);
-      const same = (x, y) => Boolean(x) && Boolean(y) && (x.includes(y) || y.includes(x));
-      if (champion && runnerUp && final) {
-        const win = final.teams.find((t) => t.won)?.display;
-        const lose = final.teams.find((t) => !t.won)?.display;
-        if (!same(champion, win) || !same(runnerUp, lose)) {
-          console.log(
-            `  ⚠️ 山形: 決勝がやぐら表と合わない（表「${champion} / ${runnerUp}」/ 結果「${win} / ${lose}」）。1試合も出さない`,
-          );
-          return [];
-        }
-      }
-    }
-    console.log(`  （${tournament}: ${games.length} 試合 / ${teams.size} チーム・**スコア表から**）`);
-    return games;
-  },
-};
-
-/**
- * ★**omyutech の「お知らせ」APIを読む**（2026-08-16 に足した。静岡・山口・宮崎・茨城）。
- *
- * ------------------------------------------------------------------
- * ★ これは一球速報のスコアではない
- *
- *   9県の連盟サイトは omyutech 製の同じReact SPAで、**お知らせの本文と
- *   添付ファイルだけがこのAPIから来る。** 中身は連盟が書いた文章と
- *   連盟が作ったPDFで、**一球速報のスコアデータ（`baseballapi`）ではない。**
- *   運営者の判断（2026-08-16）は「**連盟が作った文書なら omyutech の
- *   置き場からでも取る。スコアAPIからは取らない**」なので、ここはその範囲。
- *
- * ------------------------------------------------------------------
- * ★ なぜ「Drive のIDを直書きする」（山形）ではなくAPIを読むのか
- *
- *   山形のときは「**告知APIのパスは難読化された遅延チャンクの中にあり、
- *   サイトを作り直すたびに壊れる**」としてIDを直書きした。
- *   ★**2026-08-16 に測り直したところ、これは違った。**
- *   APIの入口（`other-api.omyutech.com/otherapi/rest`）と `leagueId` は
- *   **チャンクのハッシュが変わっても同じ**で、`leagueId` は県ごとの定数。
- *   直書きが必要なのは `leagueId` だけで済む。
- *
- *   静岡はIDの直書きでは**そもそも足りない。** 結果PDFに**月も年も
- *   書かれていない**（日付が「4」「27」だけ）ので、お知らせの掲載日が要る。
- *   優勝・準優勝も**PDFではなくお知らせの本文**に書かれている（＝検算材料）。
- *
- * @param leagueId 県ごとの定数。連盟サイトの `main.*.chunk.js` の `leagueId=NNN`
- * @param type "N"（お知らせ）/ "T"（トピック）
- */
-async function fetchOmyuNews(leagueId, type = "N") {
-  const j = await fetchOmyuJson(`newsandtopic/list?userID=&language=&leagueId=${leagueId}&type=${type}`);
-  return j?.news ?? null;
-}
-
-/** お知らせ1件の本文（HTML）。添付リンクは本文の `<a href>` に入っている */
-async function fetchOmyuNewsBody(leagueId, newsId) {
-  const j = await fetchOmyuJson(`newsandtopic/detail?userID=&language=&leagueId=${leagueId}&newsId=${newsId}`);
-  if (!j?.datas) return null;
-  // TT＝見出し／TD＝掲載日／TR＝本文。**本文は複数に分かれることがある**ので全部つなぐ
-  return j.datas.filter((d) => d.type === "TR").map((d) => d.content ?? "").join("\n");
-}
-
-/**
- * ★**`retCode` を必ず見ること。** このAPIは中身が空でも HTTP 200 を返す
- * （`{"retCode":0,...,"news":[]}`）。パラメータを1つ落とすと 400 の**HTML**が返り、
- * `res.json()` が例外になるので、そこも握って null にする。
- */
-async function fetchOmyuJson(pathAndQuery) {
-  const url = `https://other-api.omyutech.com/otherapi/rest/${pathAndQuery}`;
-  for (let attempt = 0; attempt < 3; attempt++) {
-    if (attempt > 0) await sleep(3000 * attempt);
-    try {
-      const res = await fetch(url, {
-        headers: { ...UA, Accept: "application/json" },
-        signal: AbortSignal.timeout(30000),
-      });
-      if (!res.ok) continue;
-      const j = await res.json();
-      return j?.retCode === 0 ? j : null;
-    } catch {
-      // 次の試行へ
-    }
-  }
-  return null;
-}
-
-/**
- * 静岡県高等学校野球連盟（`shizuoka-hbf.com`）。
- * ★**「一球速報の県」に分類していたが誤りだった**（2026-08-16）。
- * 連盟は結果を **Google Drive** に置いていて、スコアは omyutech から取っていない。
- *
- * ------------------------------------------------------------------
- * ★ 出典の流れ
- *
- *   お知らせAPI（`fetchOmyuNews`）→「第108回全国高等学校野球選手権静岡大会結果」
- *   → 本文の Drive リンク → **やぐら表（結果入り）のPDF 1枚**
- *
- *   ★**お知らせの本文がそのまま検算材料になる。**
- *   「優　勝　聖隷クリストファー高校／準優勝　常葉大菊川高校」と書いてある。
- *   **表の枝とは別の場所から来る事実**なので、千葉と同じ強さの検算ができる
- *   （優勝だけでなく**準優勝まで**突き合わせられる）。
- *
- * ------------------------------------------------------------------
- * ★ 紙の形（左右2段組のスロット格子。千葉・広島と同じ向き）
- *
- *   左 … スロット1〜53（x≒138）、校名は x=51〜121、回戦は右へ 180→279
- *   右 … スロット54〜106（x≒452）、校名は x=466〜535、回戦は左へ 409→309
- *   決勝 … 中央 x=289/299。106チーム・105試合
- *
- *   ★**シード記号（◎○△）は校名とは別の列**（左 x=37／右 x=550）にあるので、
- *   千葉と同じく**列ごと外す**（`ranges`）。
- *
- * ------------------------------------------------------------------
- * ★ ここで踏んだところ
- *
- *   1. ★**PDFに月も年も書かれていない。** 日付のラベルは `4岡②`
- *      （4日・浜岡球場・第2試合）で、**日しか無い。** 鹿児島は開催期間の行から
- *      月を決められたが、静岡の紙にはその行が無い。
- *      **お知らせの掲載日（`createTime`）から決める。** 掲載は決勝の当日〜翌日なので、
- *      掲載日より大きい日は前の月とみなす（6月開幕の年に備える）。
- *      ★**年も回数（`回 - 1918`）と掲載年の一致で確かめる。**
- *   2. ★**決勝だけラベルの形が違う**（中央に「27日」「10:00」「決勝」「（草薙）」と
- *      縦に積まれる）。`datesExcludeFinal` と `finalLabel` はこのために足した
- *   3. ★**球場の凡例が「愛：愛鷹」で、名前に「球場」も「スタジアム」も入らない。**
- *      広島・鹿児島の凡例の拾い方（名前に球場と入っているものだけ）では0件になる。
- *      **先にラベルから記号の集合を作り、その記号の凡例だけを拾う。**
- *   4. 中央の縦書き「優勝 聖隷クリストファー」は**数字を含まない**ので、
- *      千葉のような（24年振り6回目）の誤検出は起きない
- *
- * **規約**: 連盟のサイトに転載の制限は無い。robots.txt は全許可
- * （`data/federation-sites.json`）。結果PDFは Google Drive にあり、
- * **一球速報のスコアAPIからは1件も取っていない。**
- *
- * ★**春季・秋季は紙の形が違う**（スロットが横一列で回戦が上へ伸びる京都型。
- * 日付と球場も別々の断片になる）。**確かめてから足すこと。**
- */
 const shizuoka = {
   slug: "shizuoka",
   district: "静岡",

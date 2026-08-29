@@ -12511,13 +12511,47 @@ function omyuMatchName(full) {
   return out.length >= 2 ? out : dropped;
 }
 
+/*
+  ★**古い `omyuleagueschedule.action` を読む関数は 2026-08-29 に消した。**
+  直近の年しか持っておらず、`fetchOmyuScheduleHistory` が上位互換
+  （過去年も取れ、2025年夏の決勝のように**古いほうが落としていた試合も入る**）。
+*/
+
 /**
- * 1回ぶんの取得。**取れなければ null。例外は投げない**（1県の失敗で全国を止めない）。
+ * ★★★**過去年まで取れる新しいエンドポイント**（2026-08-29 に切り替えた）。
+ *
+ * ------------------------------------------------------------------
+ * ★★**古い `omyuleagueschedule.action` は直近の年しか持っていない。**
+ *
+ * 実測（茨城 league_id=208）で、**2023年以前は3季とも0件**だった。
+ * `--year 2023` で走らせても1試合も取れず、「前の内容を残す」歯止めだけが働く。
+ * ★**「取れない＝出典に無い」と結論する前に、別のエンドポイントを疑うこと。**
+ *
+ * ------------------------------------------------------------------
+ * ★★**連盟サイトの「過去の記録」ページが使っているのはこちら。**
+ *
+ *   https://www.ibaraki-hbf.com/history?oyyear=2015
+ *
+ * ★**ミニファイされたJSからは辿れない。** ブラウザで1回開いて
+ * `performance.getEntriesByType("resource")` を見るのがいちばん速い。
+ *
+ * ------------------------------------------------------------------
+ * ★**パラメータの意味**（実データで1つずつ確かめた）
+ *
+ *   year      … 西暦（`20151` のような季節つきではない）
+ *   cup_attr  … **1 で固定。** 2・3 は「その他」が返り0件
+ *   season    … **HR=春季 / HN=夏季 / HA=秋季。** ここで季節が決まる
+ *   from      … **空でよい**（連盟サイトは自分のslugを入れているが、要らなかった）
+ *
+ * ★**応答が自己記述的**で、`year_list`（年×季節の一覧）と
+ * `section_list`（その季節の中の大会）を持っている。
+ * ★**茨城は 2012年度まで**（`year_list` が44件）。
  */
-async function fetchOmyuSchedule(leagueId, year, sectionId = "") {
+async function fetchOmyuScheduleHistory(leagueId, year, seasonCode, sectionId = "") {
   const url =
-    `https://baseball.omyutech.com/json/omyuleagueschedule.action` +
-    `?from=&league_id=${leagueId}&year=${year}&team_id=&section_id=${sectionId}&game_date=`;
+    `https://baseball.omyutech.com/json/omyuleagueschedulenew.action` +
+    `?from=&league_id=${leagueId}&year=${year}&cup_attr=1` +
+    `&season=${seasonCode}&section_id=${sectionId}`;
   for (let attempt = 0; attempt < 3; attempt++) {
     if (attempt > 0) await sleep(3000 * attempt);
     try {
@@ -12535,6 +12569,9 @@ async function fetchOmyuSchedule(leagueId, year, sectionId = "") {
   }
   return null;
 }
+
+/** 季節 → 出典の季節コード */
+const OMYU_SEASON_CODE = { spring: "HR", summer: "HN", autumn: "HA" };
 
 /**
  * ★**5県で中身がまったく同じなので、アダプタを作る関数にしてある。**
@@ -12555,13 +12592,19 @@ function omyuAdapter({ slug, district, name, siteUrl, leagueId, byYearOnly = fal
     sectionCache: new Map(),
 
     async collect({ season, year }) {
-      const kind = { spring: 1, summer: 2, autumn: 3 }[season];
-      const yearParam = this.byYearOnly ? `${year}` : `${year}${kind}`;
+      /*
+        ★★**過去年の取れるエンドポイントに切り替えた**（2026-08-29）。
+        古いほうは直近の年しか持っていない（`fetchOmyuScheduleHistory` の説明）。
+        ★**季節はURLの `season` で決まる**ので、`year` に季節の数字を足す
+        古い作り（`20151`）と `byYearOnly` の出し分けは要らなくなった。
+      */
+      const seasonCode = OMYU_SEASON_CODE[season];
+      const cacheKey = `${year}\t${seasonCode}`;
 
-      let base = this.sectionCache.get(yearParam);
+      let base = this.sectionCache.get(cacheKey);
       if (base === undefined) {
-        base = await fetchOmyuSchedule(this.leagueId, yearParam);
-        this.sectionCache.set(yearParam, base);
+        base = await fetchOmyuScheduleHistory(this.leagueId, year, seasonCode);
+        this.sectionCache.set(cacheKey, base);
         await sleep(this.politenessMs);
       }
       // その年・その季節の大会がまだ無いときは静かに終わる（例外を投げない）
@@ -12591,7 +12634,9 @@ function omyuAdapter({ slug, district, name, siteUrl, leagueId, byYearOnly = fal
         if (this.byYearOnly && OMYU_SEASON_OF(label) !== season) continue;
 
         const o =
-          s.section_Id === "" ? base : await fetchOmyuSchedule(this.leagueId, yearParam, s.section_Id);
+          s.section_Id === ""
+            ? base
+            : await fetchOmyuScheduleHistory(this.leagueId, year, seasonCode, s.section_Id);
         if (s.section_Id !== "") await sleep(this.politenessMs);
         if (!o?.game_list?.length) continue;
 

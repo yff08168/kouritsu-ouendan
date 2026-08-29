@@ -1899,45 +1899,68 @@
       ]
     },
     {
-      "date": "2021-07-08",
+      "date": "2024-07-16",
       "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
       "round": "1回戦",
-      "venue": "長崎県営野球場",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
         {
-          "display": "長崎東",
-          "score": 0,
+          "display": "佐世保南",
+          "score": 1,
           "won": false,
-          "name": "長崎東高校",
-          "slug": "nagasakihigashi"
+          "name": "佐世保南高校",
+          "slug": "sasebominami"
         },
         {
-          "display": "川棚",
+          "display": "長崎西",
           "score": 8,
           "won": true,
-          "name": "川棚高校",
-          "slug": "kawatana"
+          "name": "長崎西高校",
+          "slug": "nagasakinishi"
         }
       ]
     },
     {
-      "date": "2021-07-09",
+      "date": "2024-07-16",
       "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "1回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "猶興館",
+          "score": 5,
+          "won": false,
+          "name": "猶興館高校",
+          "slug": "yukokan"
+        },
+        {
+          "display": "諫早農",
+          "score": 8,
+          "won": true,
+          "name": "諫早農業高校",
+          "slug": "isahayanogyo"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-16",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
       "round": "1回戦",
       "venue": "佐世保市総合グラウンド野球場",
       "teams": [
         {
-          "display": "諫早",
-          "score": 2,
+          "display": "川棚",
+          "score": 1,
           "won": false,
-          "name": "諫早高校",
-          "slug": "isahaya"
+          "name": "川棚高校",
+          "slug": "kawatana"
         },
         {
           "display": "鹿町工",
-          "score": 3,
+          "score": 8,
           "won": true,
           "name": "鹿町工業高校",
           "slug": "shikamachikogyo"
@@ -1945,45 +1968,256 @@
       ]
     },
     {
-      "date": "2021-07-09",
+      "date": "2024-07-16",
       "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
       "round": "1回戦",
       "venue": "佐世保市総合グラウンド野球場",
       "teams": [
         {
-          "display": "佐世保西",
-          "score": 3,
-          "won": false,
-          "name": "佐世保西高校",
-          "slug": "sasebonishi"
+          "display": "島原",
+          "score": 8,
+          "won": true,
+          "name": "島原高校",
+          "slug": "shimabara"
         },
         {
-          "display": "長崎北陽台",
-          "score": 12,
-          "won": true,
-          "name": "長崎北陽台高校",
-          "slug": "nagasakihokuyodai"
+          "display": "佐世保実",
+          "score": 0,
+          "won": false,
+          "name": "佐世保実",
+          "slug": null
         }
       ]
     },
     {
-      "date": "2021-07-10",
+      "date": "2024-07-16",
       "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "1回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "波佐見",
+          "score": 12,
+          "won": true,
+          "name": "波佐見高校",
+          "slug": "hasami"
+        },
+        {
+          "display": "長崎工",
+          "score": 0,
+          "won": false,
+          "name": "長崎工業高校",
+          "slug": "nagasakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-16",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
       "round": "1回戦",
       "venue": "長崎県営野球場",
       "teams": [
         {
-          "display": "壱岐商",
-          "score": 9,
+          "display": "上五島",
+          "score": 10,
           "won": true,
+          "name": "上五島高校",
+          "slug": "kamigoto"
+        },
+        {
+          "display": "佐世保商・佐世保西・平戸",
+          "score": 0,
+          "won": false,
+          "name": "佐世保商・佐世保西・平戸",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2024-07-16",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "長崎東",
+          "score": 19,
+          "won": true,
+          "name": "長崎東高校",
+          "slug": "nagasakihigashi"
+        },
+        {
+          "display": "島原農",
+          "score": 0,
+          "won": false,
+          "name": "島原農業高校",
+          "slug": "shimabaranogyo"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-16",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "諫早東・国見・島原翔南・口加・諫早商",
+          "score": 6,
+          "won": false,
+          "name": "諫早東・国見・島原翔南・口加・諫早商",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "長崎明誠",
+          "score": 10,
+          "won": true,
+          "name": "長崎明誠高校",
+          "slug": "nagasakimeisei"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-17",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "1回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "対馬・上対馬",
+          "score": 0,
+          "won": false,
+          "name": "対馬・上対馬",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "大村工",
+          "score": 10,
+          "won": true,
+          "name": "大村工業高校",
+          "slug": "omurakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-17",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "1回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "長崎北",
+          "score": 1,
+          "won": false,
+          "name": "長崎北高校",
+          "slug": "nagasakikita"
+        },
+        {
+          "display": "清峰",
+          "score": 2,
+          "won": true,
+          "name": "清峰高校",
+          "slug": "nagasaki-seiho"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-17",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "1回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "西陵",
+          "score": 3,
+          "won": true,
+          "name": "西陵高校",
+          "slug": "nagasaki-seiryo"
+        },
+        {
+          "display": "壱岐商",
+          "score": 1,
+          "won": false,
           "name": "壱岐商業高校",
           "slug": "ikishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-17",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "1回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "大村",
+          "score": 2,
+          "won": false,
+          "name": "大村高校",
+          "slug": "omura"
+        },
+        {
+          "display": "佐世保北",
+          "score": 3,
+          "won": true,
+          "name": "佐世保北高校",
+          "slug": "sasebokita"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-17",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "西海学園",
+          "score": 3,
+          "won": false,
+          "name": "西海学園",
+          "slug": null
+        },
+        {
+          "display": "五島・五島海陽",
+          "score": 4,
+          "won": true,
+          "name": "五島・五島海陽",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2024-07-17",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "島原工",
+          "score": 6,
+          "won": true,
+          "name": "島原工業高校",
+          "slug": "shimabarakogyo"
         },
         {
           "display": "長崎鶴洋・西彼杵",
-          "score": 7,
+          "score": 1,
           "won": false,
           "name": "長崎鶴洋・西彼杵",
           "slug": null,
@@ -1992,1544 +2226,114 @@
       ]
     },
     {
-      "date": "2021-07-10",
+      "date": "2024-07-18",
       "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "佐世保南",
-          "score": 0,
-          "won": false,
-          "name": "佐世保南高校",
-          "slug": "sasebominami"
-        },
-        {
-          "display": "瓊浦",
-          "score": 6,
-          "won": true,
-          "name": "瓊浦",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-10",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "2回戦",
       "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
         {
-          "display": "九州文化",
-          "score": 2,
-          "won": true,
-          "name": "九州文化",
-          "slug": null
-        },
-        {
-          "display": "島原中央",
-          "score": 1,
-          "won": false,
-          "name": "島原中央",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-10",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "松浦",
-          "score": 1,
-          "won": false,
-          "name": "松浦高校",
-          "slug": "matsura"
-        },
-        {
-          "display": "国見",
-          "score": 5,
-          "won": true,
-          "name": "国見高校",
-          "slug": "kunimi"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-10",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "佐世保実",
+          "display": "上五島",
           "score": 0,
           "won": false,
-          "name": "佐世保実",
-          "slug": null
+          "name": "上五島高校",
+          "slug": "kamigoto"
         },
         {
-          "display": "長崎工",
+          "display": "長崎日大",
           "score": 7,
           "won": true,
-          "name": "長崎工業高校",
-          "slug": "nagasakikogyo"
+          "name": "長崎日大",
+          "slug": null
         }
       ]
     },
     {
-      "date": "2021-07-10",
+      "date": "2024-07-18",
       "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "2回戦",
       "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
         {
-          "display": "西海学園",
-          "score": 1,
-          "won": false,
-          "name": "西海学園",
+          "display": "創成館",
+          "score": 4,
+          "won": true,
+          "name": "創成館",
           "slug": null
         },
         {
-          "display": "島原工",
-          "score": 2,
-          "won": true,
-          "name": "島原工業高校",
-          "slug": "shimabarakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-10",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "長崎南",
-          "score": 8,
-          "won": true,
-          "name": "長崎南高校",
-          "slug": "nagasakiminami"
-        },
-        {
-          "display": "佐世保高専",
-          "score": 5,
-          "won": false,
-          "name": "佐世保工業高専",
-          "slug": "sasebokogyo-kosen"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-11",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "西陵",
+          "display": "長崎西",
           "score": 1,
           "won": false,
-          "name": "西陵高校",
-          "slug": "nagasaki-seiryo"
-        },
-        {
-          "display": "清峰",
-          "score": 4,
-          "won": true,
-          "name": "清峰高校",
-          "slug": "nagasaki-seiho"
+          "name": "長崎西高校",
+          "slug": "nagasakinishi"
         }
       ]
     },
     {
-      "date": "2021-07-11",
+      "date": "2024-07-18",
       "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "2回戦",
       "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "諫早東",
-          "score": 2,
-          "won": false,
-          "name": "諫早東高校",
-          "slug": "isahayahigashi"
-        },
-        {
-          "display": "壱岐",
-          "score": 9,
-          "won": true,
-          "name": "壱岐高校",
-          "slug": "iki"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-11",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "島原翔南・諫早商",
-          "score": 0,
-          "won": false,
-          "name": "島原翔南・諫早商",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "五島",
-          "score": 14,
-          "won": true,
-          "name": "五島高校",
-          "slug": "goto"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-11",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "長崎北",
-          "score": 3,
-          "won": true,
-          "name": "長崎北高校",
-          "slug": "nagasakikita"
-        },
-        {
-          "display": "佐世保工",
-          "score": 0,
-          "won": false,
-          "name": "佐世保工業高校",
-          "slug": "sasebokogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-11",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
       "teams": [
         {
           "display": "波佐見",
-          "score": 7,
+          "score": 5,
           "won": true,
           "name": "波佐見高校",
           "slug": "hasami"
         },
         {
-          "display": "長崎明誠",
-          "score": 0,
-          "won": false,
-          "name": "長崎明誠高校",
-          "slug": "nagasakimeisei"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-12",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "佐世保北",
-          "score": 13,
-          "won": true,
-          "name": "佐世保北高校",
-          "slug": "sasebokita"
-        },
-        {
-          "display": "島原農",
-          "score": 0,
-          "won": false,
-          "name": "島原農業高校",
-          "slug": "shimabaranogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-12",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "大村",
-          "score": 11,
-          "won": true,
-          "name": "大村高校",
-          "slug": "omura"
-        },
-        {
-          "display": "対馬",
-          "score": 0,
-          "won": false,
-          "name": "対馬高校",
-          "slug": "nagasaki-tsushima"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-12",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "口加",
-          "score": 0,
-          "won": false,
-          "name": "口加高校",
-          "slug": "koka"
-        },
-        {
-          "display": "上五島",
-          "score": 6,
-          "won": true,
-          "name": "上五島高校",
-          "slug": "kamigoto"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-12",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "佐世保商",
-          "score": 2,
-          "won": false,
-          "name": "佐世保商業高校",
-          "slug": "saseboshogyo"
-        },
-        {
-          "display": "島原",
-          "score": 6,
-          "won": true,
-          "name": "島原高校",
-          "slug": "shimabara"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-12",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "長総大附",
-          "score": 6,
-          "won": false,
-          "name": "長総大附",
-          "slug": null
-        },
-        {
-          "display": "大村工",
-          "score": 7,
-          "won": true,
-          "name": "大村工業高校",
-          "slug": "omurakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-14",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "壱岐",
-          "score": 7,
-          "won": true,
-          "name": "壱岐高校",
-          "slug": "iki"
-        },
-        {
-          "display": "五島海陽",
-          "score": 0,
-          "won": false,
-          "name": "五島海陽高校",
-          "slug": "gotokaiyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-14",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "国見",
-          "score": 1,
-          "won": false,
-          "name": "国見高校",
-          "slug": "kunimi"
-        },
-        {
-          "display": "長崎商",
-          "score": 8,
-          "won": true,
-          "name": "長崎商業高校",
-          "slug": "nagasakishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-14",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "壱岐商",
-          "score": 0,
-          "won": false,
-          "name": "壱岐商業高校",
-          "slug": "ikishogyo"
-        },
-        {
-          "display": "小浜",
-          "score": 2,
-          "won": true,
-          "name": "小浜高校",
-          "slug": "obama"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-14",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "大崎",
-          "score": 6,
-          "won": true,
-          "name": "大崎高校",
-          "slug": "nagasaki-osaki"
-        },
-        {
-          "display": "川棚",
-          "score": 1,
-          "won": false,
-          "name": "川棚高校",
-          "slug": "kawatana"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-14",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "海星",
-          "score": 5,
-          "won": true,
-          "name": "海星",
-          "slug": null
-        },
-        {
-          "display": "九州文化",
-          "score": 4,
-          "won": false,
-          "name": "九州文化",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-14",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "長崎日大",
-          "score": 9,
-          "won": true,
-          "name": "長崎日大",
-          "slug": null
-        },
-        {
-          "display": "長崎南",
-          "score": 1,
-          "won": false,
-          "name": "長崎南高校",
-          "slug": "nagasakiminami"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-14",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
           "display": "鎮西学院",
-          "score": 3,
+          "score": 1,
           "won": false,
           "name": "鎮西学院",
           "slug": null
-        },
-        {
-          "display": "波佐見",
-          "score": 8,
-          "won": true,
-          "name": "波佐見高校",
-          "slug": "hasami"
         }
       ]
     },
     {
-      "date": "2021-07-14",
+      "date": "2024-07-18",
       "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "長崎西",
-          "score": 8,
-          "won": true,
-          "name": "長崎西高校",
-          "slug": "nagasakinishi"
-        },
-        {
-          "display": "島原工",
-          "score": 4,
-          "won": false,
-          "name": "島原工業高校",
-          "slug": "shimabarakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-15",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
       "round": "2回戦",
       "venue": "佐世保市総合グラウンド野球場",
       "teams": [
-        {
-          "display": "大村",
-          "score": 0,
-          "won": false,
-          "name": "大村高校",
-          "slug": "omura"
-        },
-        {
-          "display": "佐世保北",
-          "score": 7,
-          "won": true,
-          "name": "佐世保北高校",
-          "slug": "sasebokita"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-15",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "鹿町工",
-          "score": 7,
-          "won": true,
-          "name": "鹿町工業高校",
-          "slug": "shikamachikogyo"
-        },
-        {
-          "display": "長崎南山",
-          "score": 5,
-          "won": false,
-          "name": "長崎南山",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-15",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "長崎北陽台",
-          "score": 2,
-          "won": false,
-          "name": "長崎北陽台高校",
-          "slug": "nagasakihokuyodai"
-        },
-        {
-          "display": "諫早農",
-          "score": 9,
-          "won": true,
-          "name": "諫早農業高校",
-          "slug": "isahayanogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-15",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "上対馬・平戸・猶興館",
-          "score": 0,
-          "won": false,
-          "name": "上対馬・平戸・猶興館",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "上五島",
-          "score": 9,
-          "won": true,
-          "name": "上五島高校",
-          "slug": "kamigoto"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-15",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "五島",
-          "score": 5,
-          "won": true,
-          "name": "五島高校",
-          "slug": "goto"
-        },
-        {
-          "display": "長崎工",
-          "score": 4,
-          "won": false,
-          "name": "長崎工業高校",
-          "slug": "nagasakikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-15",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "長崎北",
-          "score": 0,
-          "won": false,
-          "name": "長崎北高校",
-          "slug": "nagasakikita"
-        },
-        {
-          "display": "島原",
-          "score": 5,
-          "won": true,
-          "name": "島原高校",
-          "slug": "shimabara"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-15",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "清峰",
-          "score": 1,
-          "won": false,
-          "name": "清峰高校",
-          "slug": "nagasaki-seiho"
-        },
-        {
-          "display": "大村工",
-          "score": 8,
-          "won": true,
-          "name": "大村工業高校",
-          "slug": "omurakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-15",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "創成館",
-          "score": 9,
-          "won": true,
-          "name": "創成館",
-          "slug": null
-        },
-        {
-          "display": "瓊浦",
-          "score": 0,
-          "won": false,
-          "name": "瓊浦",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-17",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "3回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "波佐見",
-          "score": 1,
-          "won": false,
-          "name": "波佐見高校",
-          "slug": "hasami"
-        },
-        {
-          "display": "長崎商",
-          "score": 2,
-          "won": true,
-          "name": "長崎商業高校",
-          "slug": "nagasakishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-17",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "3回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "大崎",
-          "score": 8,
-          "won": true,
-          "name": "大崎高校",
-          "slug": "nagasaki-osaki"
-        },
-        {
-          "display": "創成館",
-          "score": 4,
-          "won": false,
-          "name": "創成館",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-17",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "3回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "鹿町工",
-          "score": 1,
-          "won": true,
-          "name": "鹿町工業高校",
-          "slug": "shikamachikogyo"
-        },
-        {
-          "display": "五島",
-          "score": 0,
-          "won": false,
-          "name": "五島高校",
-          "slug": "goto"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-17",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "3回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "島原",
-          "score": 2,
-          "won": false,
-          "name": "島原高校",
-          "slug": "shimabara"
-        },
-        {
-          "display": "諫早農",
-          "score": 5,
-          "won": true,
-          "name": "諫早農業高校",
-          "slug": "isahayanogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-18",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "3回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "海星",
-          "score": 4,
-          "won": true,
-          "name": "海星",
-          "slug": null
-        },
-        {
-          "display": "大村工",
-          "score": 3,
-          "won": false,
-          "name": "大村工業高校",
-          "slug": "omurakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-18",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "3回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "小浜",
-          "score": 4,
-          "won": true,
-          "name": "小浜高校",
-          "slug": "obama"
-        },
-        {
-          "display": "上五島",
-          "score": 2,
-          "won": false,
-          "name": "上五島高校",
-          "slug": "kamigoto"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-18",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "3回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "長崎西",
-          "score": 8,
-          "won": true,
-          "name": "長崎西高校",
-          "slug": "nagasakinishi"
-        },
-        {
-          "display": "佐世保北",
-          "score": 3,
-          "won": false,
-          "name": "佐世保北高校",
-          "slug": "sasebokita"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-18",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "3回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "壱岐",
-          "score": 2,
-          "won": true,
-          "name": "壱岐高校",
-          "slug": "iki"
-        },
-        {
-          "display": "長崎日大",
-          "score": 0,
-          "won": false,
-          "name": "長崎日大",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-22",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "準々決勝",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "鹿町工",
-          "score": 1,
-          "won": false,
-          "name": "鹿町工業高校",
-          "slug": "shikamachikogyo"
-        },
-        {
-          "display": "大崎",
-          "score": 3,
-          "won": true,
-          "name": "大崎高校",
-          "slug": "nagasaki-osaki"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-22",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "準々決勝",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "壱岐",
-          "score": 2,
-          "won": false,
-          "name": "壱岐高校",
-          "slug": "iki"
-        },
-        {
-          "display": "海星",
-          "score": 12,
-          "won": true,
-          "name": "海星",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-23",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "準々決勝",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "諫早農",
-          "score": 3,
-          "won": false,
-          "name": "諫早農業高校",
-          "slug": "isahayanogyo"
-        },
-        {
-          "display": "長崎商",
-          "score": 4,
-          "won": true,
-          "name": "長崎商業高校",
-          "slug": "nagasakishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-23",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "準々決勝",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "長崎西",
-          "score": 2,
-          "won": false,
-          "name": "長崎西高校",
-          "slug": "nagasakinishi"
-        },
-        {
-          "display": "小浜",
-          "score": 3,
-          "won": true,
-          "name": "小浜高校",
-          "slug": "obama"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-25",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "準決勝",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "大崎",
-          "score": 2,
-          "won": true,
-          "name": "大崎高校",
-          "slug": "nagasaki-osaki"
-        },
-        {
-          "display": "海星",
-          "score": 1,
-          "won": false,
-          "name": "海星",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-25",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "準決勝",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "長崎商",
-          "score": 4,
-          "won": true,
-          "name": "長崎商業高校",
-          "slug": "nagasakishogyo"
-        },
-        {
-          "display": "小浜",
-          "score": 2,
-          "won": false,
-          "name": "小浜高校",
-          "slug": "obama"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-27",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 長崎大会",
-      "round": "決勝",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "長崎商",
-          "score": 5,
-          "won": true,
-          "name": "長崎商業高校",
-          "slug": "nagasakishogyo"
-        },
-        {
-          "display": "大崎",
-          "score": 4,
-          "won": false,
-          "name": "大崎高校",
-          "slug": "nagasaki-osaki"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-07",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "猶興館",
-          "score": 4,
-          "won": false,
-          "name": "猶興館高校",
-          "slug": "yukokan"
-        },
-        {
-          "display": "島原農",
-          "score": 5,
-          "won": true,
-          "name": "島原農業高校",
-          "slug": "shimabaranogyo"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-08",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "対馬",
-          "score": 4,
-          "won": false,
-          "name": "対馬高校",
-          "slug": "nagasaki-tsushima"
-        },
-        {
-          "display": "壱岐",
-          "score": 6,
-          "won": true,
-          "name": "壱岐高校",
-          "slug": "iki"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-08",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "川棚",
-          "score": 5,
-          "won": true,
-          "name": "川棚高校",
-          "slug": "kawatana"
-        },
-        {
-          "display": "五島",
-          "score": 2,
-          "won": false,
-          "name": "五島高校",
-          "slug": "goto"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-08",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "壱岐商",
-          "score": 0,
-          "won": false,
-          "name": "壱岐商業高校",
-          "slug": "ikishogyo"
-        },
-        {
-          "display": "瓊浦",
-          "score": 1,
-          "won": true,
-          "name": "瓊浦",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2022-07-08",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "上対馬・佐世保商・平戸",
-          "score": 0,
-          "won": false,
-          "name": "上対馬・佐世保商・平戸",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "西彼杵",
-          "score": 10,
-          "won": true,
-          "name": "西彼杵高校",
-          "slug": "nishisonogi"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-08",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "島原工",
-          "score": 5,
-          "won": true,
-          "name": "島原工業高校",
-          "slug": "shimabarakogyo"
-        },
-        {
-          "display": "上五島",
-          "score": 0,
-          "won": false,
-          "name": "上五島高校",
-          "slug": "kamigoto"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-08",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "長崎工",
-          "score": 11,
-          "won": true,
-          "name": "長崎工業高校",
-          "slug": "nagasakikogyo"
-        },
-        {
-          "display": "諫早東",
-          "score": 3,
-          "won": false,
-          "name": "諫早東高校",
-          "slug": "isahayahigashi"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-09",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "長崎北",
-          "score": 2,
-          "won": false,
-          "name": "長崎北高校",
-          "slug": "nagasakikita"
-        },
-        {
-          "display": "九州文化",
-          "score": 8,
-          "won": true,
-          "name": "九州文化",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2022-07-09",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "長崎北陽台",
-          "score": 7,
-          "won": true,
-          "name": "長崎北陽台高校",
-          "slug": "nagasakihokuyodai"
-        },
-        {
-          "display": "島原中央",
-          "score": 0,
-          "won": false,
-          "name": "島原中央",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2022-07-09",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "長崎明誠",
-          "score": 21,
-          "won": true,
-          "name": "長崎明誠高校",
-          "slug": "nagasakimeisei"
-        },
-        {
-          "display": "佐世保高専",
-          "score": 1,
-          "won": false,
-          "name": "佐世保工業高専",
-          "slug": "sasebokogyo-kosen"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-09",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "佐世保北",
-          "score": 8,
-          "won": true,
-          "name": "佐世保北高校",
-          "slug": "sasebokita"
-        },
-        {
-          "display": "島原",
-          "score": 6,
-          "won": false,
-          "name": "島原高校",
-          "slug": "shimabara"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-09",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "口加・国見・島原翔南",
-          "score": 0,
-          "won": false,
-          "name": "口加・国見・島原翔南",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "鹿町工",
-          "score": 5,
-          "won": true,
-          "name": "鹿町工業高校",
-          "slug": "shikamachikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-09",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "長崎西",
-          "score": 8,
-          "won": true,
-          "name": "長崎西高校",
-          "slug": "nagasakinishi"
-        },
-        {
-          "display": "佐世保工",
-          "score": 2,
-          "won": false,
-          "name": "佐世保工業高校",
-          "slug": "sasebokogyo"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-10",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "諫早",
-          "score": 5,
-          "won": true,
-          "name": "諫早高校",
-          "slug": "isahaya"
-        },
-        {
-          "display": "佐世保南",
-          "score": 2,
-          "won": false,
-          "name": "佐世保南高校",
-          "slug": "sasebominami"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-10",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "大村工",
-          "score": 6,
-          "won": false,
-          "name": "大村工業高校",
-          "slug": "omurakogyo"
-        },
-        {
-          "display": "佐世保実",
-          "score": 7,
-          "won": true,
-          "name": "佐世保実",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2022-07-10",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "西陵",
-          "score": 10,
-          "won": true,
-          "name": "西陵高校",
-          "slug": "nagasaki-seiryo"
-        },
-        {
-          "display": "長崎鶴洋",
-          "score": 0,
-          "won": false,
-          "name": "長崎鶴洋高校",
-          "slug": "nagasakikakuyo"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-10",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "佐世保西",
-          "score": 0,
-          "won": false,
-          "name": "佐世保西高校",
-          "slug": "sasebonishi"
-        },
-        {
-          "display": "長崎南",
-          "score": 17,
-          "won": true,
-          "name": "長崎南高校",
-          "slug": "nagasakiminami"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-10",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "大村",
-          "score": 5,
-          "won": false,
-          "name": "大村高校",
-          "slug": "omura"
-        },
-        {
-          "display": "松浦",
-          "score": 10,
-          "won": true,
-          "name": "松浦高校",
-          "slug": "matsura"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-10",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "小浜",
-          "score": 10,
-          "won": true,
-          "name": "小浜高校",
-          "slug": "obama"
-        },
         {
           "display": "長崎東",
-          "score": 0,
+          "score": 1,
           "won": false,
           "name": "長崎東高校",
           "slug": "nagasakihigashi"
+        },
+        {
+          "display": "九州文化",
+          "score": 5,
+          "won": true,
+          "name": "九州文化",
+          "slug": null
         }
       ]
     },
     {
-      "date": "2022-07-12",
+      "date": "2024-07-18",
       "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
       "round": "2回戦",
       "venue": "佐世保市総合グラウンド野球場",
       "teams": [
         {
-          "display": "長崎工",
-          "score": 3,
+          "display": "長崎明誠",
+          "score": 2,
           "won": false,
-          "name": "長崎工業高校",
-          "slug": "nagasakikogyo"
+          "name": "長崎明誠高校",
+          "slug": "nagasakimeisei"
         },
         {
           "display": "大崎",
-          "score": 5,
+          "score": 4,
           "won": true,
           "name": "大崎高校",
           "slug": "nagasaki-osaki"
@@ -3537,87 +2341,364 @@
       ]
     },
     {
-      "date": "2022-07-12",
+      "date": "2024-07-18",
       "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
       "round": "2回戦",
       "venue": "長崎県営野球場",
       "teams": [
         {
-          "display": "島原農",
+          "display": "海星",
           "score": 0,
           "won": false,
-          "name": "島原農業高校",
-          "slug": "shimabaranogyo"
-        },
-        {
-          "display": "海星",
-          "score": 7,
-          "won": true,
           "name": "海星",
           "slug": null
+        },
+        {
+          "display": "鹿町工",
+          "score": 1,
+          "won": true,
+          "name": "鹿町工業高校",
+          "slug": "shikamachikogyo"
         }
       ]
     },
     {
-      "date": "2022-07-12",
+      "date": "2024-07-18",
       "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
       "round": "2回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "venue": "長崎県営野球場",
       "teams": [
         {
-          "display": "長崎日大",
-          "score": 9,
-          "won": true,
-          "name": "長崎日大",
-          "slug": null
+          "display": "諫早農",
+          "score": 0,
+          "won": false,
+          "name": "諫早農業高校",
+          "slug": "isahayanogyo"
         },
         {
           "display": "瓊浦",
-          "score": 1,
-          "won": false,
+          "score": 3,
+          "won": true,
           "name": "瓊浦",
           "slug": null
         }
       ]
     },
     {
-      "date": "2022-07-12",
+      "date": "2024-07-18",
       "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
       "round": "2回戦",
-      "venue": "佐世保市総合グラウンド野球場",
+      "venue": "長崎県営野球場",
       "teams": [
         {
-          "display": "長崎北陽台",
+          "display": "長総大附",
           "score": 5,
-          "won": false,
-          "name": "長崎北陽台高校",
-          "slug": "nagasakihokuyodai"
+          "won": true,
+          "name": "長総大附",
+          "slug": null
         },
         {
-          "display": "波佐見",
-          "score": 6,
-          "won": true,
-          "name": "波佐見高校",
-          "slug": "hasami"
+          "display": "島原",
+          "score": 2,
+          "won": false,
+          "name": "島原高校",
+          "slug": "shimabara"
         }
       ]
     },
     {
-      "date": "2022-07-12",
+      "date": "2024-07-19",
       "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "2回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "五島・五島海陽",
+          "score": 3,
+          "won": false,
+          "name": "五島・五島海陽",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "島原中央",
+          "score": 6,
+          "won": true,
+          "name": "島原中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-19",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "2回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "島原工",
+          "score": 8,
+          "won": true,
+          "name": "島原工業高校",
+          "slug": "shimabarakogyo"
+        },
+        {
+          "display": "佐世保高専",
+          "score": 2,
+          "won": false,
+          "name": "佐世保工業高専",
+          "slug": "sasebokogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-19",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "2回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "小浜",
+          "score": 2,
+          "won": false,
+          "name": "小浜高校",
+          "slug": "obama"
+        },
+        {
+          "display": "清峰",
+          "score": 3,
+          "won": true,
+          "name": "清峰高校",
+          "slug": "nagasaki-seiho"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-19",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "2回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "長崎南山",
+          "score": 7,
+          "won": true,
+          "name": "長崎南山",
+          "slug": null
+        },
+        {
+          "display": "壱岐",
+          "score": 3,
+          "won": false,
+          "name": "壱岐高校",
+          "slug": "iki"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-19",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "2回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "大村工",
+          "score": 1,
+          "won": false,
+          "name": "大村工業高校",
+          "slug": "omurakogyo"
+        },
+        {
+          "display": "佐世保工",
+          "score": 2,
+          "won": true,
+          "name": "佐世保工業高校",
+          "slug": "sasebokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-19",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "西陵",
+          "score": 5,
+          "won": true,
+          "name": "西陵高校",
+          "slug": "nagasaki-seiryo"
+        },
+        {
+          "display": "長崎北陽台",
+          "score": 0,
+          "won": false,
+          "name": "長崎北陽台高校",
+          "slug": "nagasakihokuyodai"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-19",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "諫早",
+          "score": 0,
+          "won": false,
+          "name": "諫早高校",
+          "slug": "isahaya"
+        },
+        {
+          "display": "長崎商",
+          "score": 7,
+          "won": true,
+          "name": "長崎商業高校",
+          "slug": "nagasakishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-19",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
       "round": "2回戦",
       "venue": "長崎県営野球場",
       "teams": [
         {
           "display": "佐世保北",
+          "score": 11,
+          "won": true,
+          "name": "佐世保北高校",
+          "slug": "sasebokita"
+        },
+        {
+          "display": "長崎南",
+          "score": 1,
+          "won": false,
+          "name": "長崎南高校",
+          "slug": "nagasakiminami"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-21",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "3回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "長総大附",
+          "score": 9,
+          "won": true,
+          "name": "長総大附",
+          "slug": null
+        },
+        {
+          "display": "島原工",
           "score": 2,
+          "won": false,
+          "name": "島原工業高校",
+          "slug": "shimabarakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-21",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "3回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "佐世保北",
+          "score": 1,
           "won": false,
           "name": "佐世保北高校",
           "slug": "sasebokita"
+        },
+        {
+          "display": "大崎",
+          "score": 7,
+          "won": true,
+          "name": "大崎高校",
+          "slug": "nagasaki-osaki"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-21",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "3回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "西陵",
+          "score": 0,
+          "won": false,
+          "name": "西陵高校",
+          "slug": "nagasaki-seiryo"
+        },
+        {
+          "display": "長崎日大",
+          "score": 1,
+          "won": true,
+          "name": "長崎日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-21",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "3回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "鹿町工",
+          "score": 8,
+          "won": true,
+          "name": "鹿町工業高校",
+          "slug": "shikamachikogyo"
+        },
+        {
+          "display": "島原中央",
+          "score": 0,
+          "won": false,
+          "name": "島原中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-22",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "3回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "波佐見",
+          "score": 2,
+          "won": false,
+          "name": "波佐見高校",
+          "slug": "hasami"
         },
         {
           "display": "長崎商",
@@ -3629,64 +2710,18 @@
       ]
     },
     {
-      "date": "2022-07-12",
+      "date": "2024-07-22",
       "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "諫早農",
-          "score": 0,
-          "won": false,
-          "name": "諫早農業高校",
-          "slug": "isahayanogyo"
-        },
-        {
-          "display": "壱岐",
-          "score": 7,
-          "won": true,
-          "name": "壱岐高校",
-          "slug": "iki"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-12",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "3回戦",
       "venue": "佐世保市総合グラウンド野球場",
       "teams": [
         {
-          "display": "清峰",
-          "score": 5,
-          "won": true,
-          "name": "清峰高校",
-          "slug": "nagasaki-seiho"
-        },
-        {
-          "display": "長崎明誠",
+          "display": "九州文化",
           "score": 4,
-          "won": false,
-          "name": "長崎明誠高校",
-          "slug": "nagasakimeisei"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-12",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "鹿町工",
-          "score": 9,
           "won": true,
-          "name": "鹿町工業高校",
-          "slug": "shikamachikogyo"
+          "name": "九州文化",
+          "slug": null
         },
         {
           "display": "長崎南山",
@@ -3698,482 +2733,183 @@
       ]
     },
     {
-      "date": "2022-07-13",
+      "date": "2024-07-22",
       "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "川棚",
-          "score": 0,
-          "won": false,
-          "name": "川棚高校",
-          "slug": "kawatana"
-        },
-        {
-          "display": "西海学園",
-          "score": 7,
-          "won": true,
-          "name": "西海学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2022-07-13",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "3回戦",
       "venue": "長崎県営野球場",
       "teams": [
         {
-          "display": "長崎南",
-          "score": 0,
+          "display": "佐世保工",
+          "score": 1,
           "won": false,
-          "name": "長崎南高校",
-          "slug": "nagasakiminami"
+          "name": "佐世保工業高校",
+          "slug": "sasebokogyo"
         },
         {
-          "display": "長総大附",
-          "score": 7,
+          "display": "創成館",
+          "score": 2,
           "won": true,
-          "name": "長総大附",
+          "name": "創成館",
           "slug": null
         }
       ]
     },
     {
-      "date": "2022-07-13",
+      "date": "2024-07-22",
       "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "3回戦",
+      "venue": "長崎県営野球場",
       "teams": [
         {
-          "display": "創成館",
-          "score": 6,
-          "won": true,
-          "name": "創成館",
+          "display": "瓊浦",
+          "score": 3,
+          "won": false,
+          "name": "瓊浦",
           "slug": null
         },
         {
+          "display": "清峰",
+          "score": 7,
+          "won": true,
+          "name": "清峰高校",
+          "slug": "nagasaki-seiho"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-24",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "準々決勝",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "長総大附",
+          "score": 1,
+          "won": true,
+          "name": "長総大附",
+          "slug": null
+        },
+        {
+          "display": "長崎日大",
+          "score": 0,
+          "won": false,
+          "name": "長崎日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-24",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "準々決勝",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "鹿町工",
+          "score": 0,
+          "won": false,
+          "name": "鹿町工業高校",
+          "slug": "shikamachikogyo"
+        },
+        {
+          "display": "大崎",
+          "score": 5,
+          "won": true,
+          "name": "大崎高校",
+          "slug": "nagasaki-osaki"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-25",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "準々決勝",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "長崎商",
+          "score": 2,
+          "won": false,
+          "name": "長崎商業高校",
+          "slug": "nagasakishogyo"
+        },
+        {
+          "display": "創成館",
+          "score": 9,
+          "won": true,
+          "name": "創成館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-25",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "準々決勝",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
           "display": "九州文化",
-          "score": 3,
+          "score": 0,
           "won": false,
           "name": "九州文化",
           "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2022-07-13",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "小浜",
-          "score": 3,
-          "won": false,
-          "name": "小浜高校",
-          "slug": "obama"
         },
-        {
-          "display": "諫早",
-          "score": 4,
-          "won": true,
-          "name": "諫早高校",
-          "slug": "isahaya"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-13",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "五島海陽",
-          "score": 3,
-          "won": false,
-          "name": "五島海陽高校",
-          "slug": "gotokaiyo"
-        },
-        {
-          "display": "松浦",
-          "score": 5,
-          "won": true,
-          "name": "松浦高校",
-          "slug": "matsura"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-13",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "長崎西",
-          "score": 3,
-          "won": true,
-          "name": "長崎西高校",
-          "slug": "nagasakinishi"
-        },
-        {
-          "display": "鎮西学院",
-          "score": 0,
-          "won": false,
-          "name": "鎮西学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2022-07-13",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "西陵",
-          "score": 0,
-          "won": false,
-          "name": "西陵高校",
-          "slug": "nagasaki-seiryo"
-        },
-        {
-          "display": "佐世保実",
-          "score": 8,
-          "won": true,
-          "name": "佐世保実",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2022-07-13",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "2回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "島原工",
-          "score": 10,
-          "won": true,
-          "name": "島原工業高校",
-          "slug": "shimabarakogyo"
-        },
-        {
-          "display": "西彼杵",
-          "score": 1,
-          "won": false,
-          "name": "西彼杵高校",
-          "slug": "nishisonogi"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-16",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "3回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "西海学園",
-          "score": 1,
-          "won": false,
-          "name": "西海学園",
-          "slug": null
-        },
-        {
-          "display": "海星",
-          "score": 11,
-          "won": true,
-          "name": "海星",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2022-07-16",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "3回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
         {
           "display": "清峰",
           "score": 2,
-          "won": false,
+          "won": true,
           "name": "清峰高校",
           "slug": "nagasaki-seiho"
-        },
-        {
-          "display": "長崎日大",
-          "score": 4,
-          "won": true,
-          "name": "長崎日大",
-          "slug": null
         }
       ]
     },
     {
-      "date": "2022-07-16",
+      "date": "2024-07-27",
       "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "3回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "長崎西",
-          "score": 1,
-          "won": false,
-          "name": "長崎西高校",
-          "slug": "nagasakinishi"
-        },
-        {
-          "display": "長崎商",
-          "score": 6,
-          "won": true,
-          "name": "長崎商業高校",
-          "slug": "nagasakishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-16",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "3回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "壱岐",
-          "score": 11,
-          "won": true,
-          "name": "壱岐高校",
-          "slug": "iki"
-        },
-        {
-          "display": "松浦",
-          "score": 1,
-          "won": false,
-          "name": "松浦高校",
-          "slug": "matsura"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-17",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "3回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "島原工",
-          "score": 2,
-          "won": false,
-          "name": "島原工業高校",
-          "slug": "shimabarakogyo"
-        },
-        {
-          "display": "波佐見",
-          "score": 9,
-          "won": true,
-          "name": "波佐見高校",
-          "slug": "hasami"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-17",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "3回戦",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "round": "準決勝",
       "venue": "長崎県営野球場",
       "teams": [
         {
           "display": "長総大附",
-          "score": 3,
+          "score": 0,
           "won": false,
           "name": "長総大附",
           "slug": null
         },
         {
-          "display": "大崎",
-          "score": 5,
-          "won": true,
-          "name": "大崎高校",
-          "slug": "nagasaki-osaki"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-17",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "3回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "諫早",
+          "display": "清峰",
           "score": 3,
-          "won": false,
-          "name": "諫早高校",
-          "slug": "isahaya"
-        },
-        {
-          "display": "鹿町工",
-          "score": 5,
           "won": true,
-          "name": "鹿町工業高校",
-          "slug": "shikamachikogyo"
+          "name": "清峰高校",
+          "slug": "nagasaki-seiho"
         }
       ]
     },
     {
-      "date": "2022-07-17",
+      "date": "2024-07-27",
       "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "3回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "創成館",
-          "score": 7,
-          "won": true,
-          "name": "創成館",
-          "slug": null
-        },
-        {
-          "display": "佐世保実",
-          "score": 0,
-          "won": false,
-          "name": "佐世保実",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2022-07-21",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "準々決勝",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "鹿町工",
-          "score": 1,
-          "won": false,
-          "name": "鹿町工業高校",
-          "slug": "shikamachikogyo"
-        },
-        {
-          "display": "海星",
-          "score": 2,
-          "won": true,
-          "name": "海星",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2022-07-21",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "準々決勝",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "長崎日大",
-          "score": 2,
-          "won": false,
-          "name": "長崎日大",
-          "slug": null
-        },
-        {
-          "display": "波佐見",
-          "score": 6,
-          "won": true,
-          "name": "波佐見高校",
-          "slug": "hasami"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-22",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "準々決勝",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "創成館",
-          "score": 8,
-          "won": true,
-          "name": "創成館",
-          "slug": null
-        },
-        {
-          "display": "壱岐",
-          "score": 2,
-          "won": false,
-          "name": "壱岐高校",
-          "slug": "iki"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-22",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "準々決勝",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "長崎商",
-          "score": 3,
-          "won": false,
-          "name": "長崎商業高校",
-          "slug": "nagasakishogyo"
-        },
-        {
-          "display": "大崎",
-          "score": 4,
-          "won": true,
-          "name": "大崎高校",
-          "slug": "nagasaki-osaki"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-25",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
       "round": "準決勝",
       "venue": "長崎県営野球場",
       "teams": [
         {
-          "display": "海星",
-          "score": 5,
+          "display": "創成館",
+          "score": 3,
           "won": true,
-          "name": "海星",
+          "name": "創成館",
           "slug": null
         },
         {
           "display": "大崎",
-          "score": 2,
+          "score": 1,
           "won": false,
           "name": "大崎高校",
           "slug": "nagasaki-osaki"
@@ -4181,48 +2917,25 @@
       ]
     },
     {
-      "date": "2022-07-25",
+      "date": "2024-07-29",
       "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
-      "round": "準決勝",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "波佐見",
-          "score": 1,
-          "won": false,
-          "name": "波佐見高校",
-          "slug": "hasami"
-        },
-        {
-          "display": "創成館",
-          "score": 2,
-          "won": true,
-          "name": "創成館",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2022-07-27",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "tournament": "第106回全国高等学校野球選手権長崎大会",
       "round": "決勝",
       "venue": "長崎県営野球場",
       "teams": [
         {
-          "display": "海星",
-          "score": 9,
+          "display": "創成館",
+          "score": 4,
           "won": true,
-          "name": "海星",
+          "name": "創成館",
           "slug": null
         },
         {
-          "display": "創成館",
-          "score": 2,
+          "display": "清峰",
+          "score": 0,
           "won": false,
-          "name": "創成館",
-          "slug": null
+          "name": "清峰高校",
+          "slug": "nagasaki-seiho"
         }
       ]
     },
@@ -4254,52 +2967,6 @@
       "season": "summer",
       "tournament": "第105回全国高等学校野球選手権記念長崎大会",
       "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "五島",
-          "score": 2,
-          "won": true,
-          "name": "五島高校",
-          "slug": "goto"
-        },
-        {
-          "display": "佐世保工",
-          "score": 1,
-          "won": false,
-          "name": "佐世保工業高校",
-          "slug": "sasebokogyo"
-        }
-      ]
-    },
-    {
-      "date": "2023-07-07",
-      "season": "summer",
-      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "長崎南",
-          "score": 0,
-          "won": false,
-          "name": "長崎南高校",
-          "slug": "nagasakiminami"
-        },
-        {
-          "display": "壱岐商",
-          "score": 10,
-          "won": true,
-          "name": "壱岐商業高校",
-          "slug": "ikishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2023-07-07",
-      "season": "summer",
-      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
-      "round": "1回戦",
       "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
         {
@@ -4342,25 +3009,48 @@
       ]
     },
     {
-      "date": "2023-07-08",
+      "date": "2023-07-07",
       "season": "summer",
       "tournament": "第105回全国高等学校野球選手権記念長崎大会",
       "round": "1回戦",
-      "venue": "佐世保市総合グラウンド野球場",
+      "venue": "長崎県営野球場",
       "teams": [
         {
-          "display": "対馬",
+          "display": "五島",
           "score": 2,
-          "won": false,
-          "name": "対馬高校",
-          "slug": "nagasaki-tsushima"
+          "won": true,
+          "name": "五島高校",
+          "slug": "goto"
         },
         {
-          "display": "佐世保実",
-          "score": 3,
+          "display": "佐世保工",
+          "score": 1,
+          "won": false,
+          "name": "佐世保工業高校",
+          "slug": "sasebokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-07",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "長崎南",
+          "score": 0,
+          "won": false,
+          "name": "長崎南高校",
+          "slug": "nagasakiminami"
+        },
+        {
+          "display": "壱岐商",
+          "score": 10,
           "won": true,
-          "name": "佐世保実",
-          "slug": null
+          "name": "壱岐商業高校",
+          "slug": "ikishogyo"
         }
       ]
     },
@@ -4392,21 +3082,44 @@
       "season": "summer",
       "tournament": "第105回全国高等学校野球選手権記念長崎大会",
       "round": "1回戦",
-      "venue": "長崎県営野球場",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
         {
-          "display": "佐世保高専",
+          "display": "諫早東",
           "score": 0,
           "won": false,
-          "name": "佐世保工業高専",
-          "slug": "sasebokogyo-kosen"
+          "name": "諫早東高校",
+          "slug": "isahayahigashi"
         },
         {
-          "display": "長崎北陽台",
+          "display": "長崎南山",
           "score": 10,
           "won": true,
-          "name": "長崎北陽台高校",
-          "slug": "nagasakihokuyodai"
+          "name": "長崎南山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-08",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
+      "round": "1回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "対馬",
+          "score": 2,
+          "won": false,
+          "name": "対馬高校",
+          "slug": "nagasaki-tsushima"
+        },
+        {
+          "display": "佐世保実",
+          "score": 3,
+          "won": true,
+          "name": "佐世保実",
+          "slug": null
         }
       ]
     },
@@ -4440,21 +3153,21 @@
       "season": "summer",
       "tournament": "第105回全国高等学校野球選手権記念長崎大会",
       "round": "1回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "venue": "長崎県営野球場",
       "teams": [
         {
-          "display": "諫早東",
+          "display": "佐世保高専",
           "score": 0,
           "won": false,
-          "name": "諫早東高校",
-          "slug": "isahayahigashi"
+          "name": "佐世保工業高専",
+          "slug": "sasebokogyo-kosen"
         },
         {
-          "display": "長崎南山",
+          "display": "長崎北陽台",
           "score": 10,
           "won": true,
-          "name": "長崎南山",
-          "slug": null
+          "name": "長崎北陽台高校",
+          "slug": "nagasakihokuyodai"
         }
       ]
     },
@@ -4509,29 +3222,6 @@
       "season": "summer",
       "tournament": "第105回全国高等学校野球選手権記念長崎大会",
       "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "島原工",
-          "score": 1,
-          "won": false,
-          "name": "島原工業高校",
-          "slug": "shimabarakogyo"
-        },
-        {
-          "display": "瓊浦",
-          "score": 3,
-          "won": true,
-          "name": "瓊浦",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2023-07-10",
-      "season": "summer",
-      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
-      "round": "1回戦",
       "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
         {
@@ -4547,6 +3237,29 @@
           "won": false,
           "name": "鹿町工業高校",
           "slug": "shikamachikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-10",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "島原工",
+          "score": 1,
+          "won": false,
+          "name": "島原工業高校",
+          "slug": "shimabarakogyo"
+        },
+        {
+          "display": "瓊浦",
+          "score": 3,
+          "won": true,
+          "name": "瓊浦",
+          "slug": null
         }
       ]
     },
@@ -4647,52 +3360,6 @@
       "season": "summer",
       "tournament": "第105回全国高等学校野球選手権記念長崎大会",
       "round": "2回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "長崎西",
-          "score": 2,
-          "won": false,
-          "name": "長崎西高校",
-          "slug": "nagasakinishi"
-        },
-        {
-          "display": "大崎",
-          "score": 8,
-          "won": true,
-          "name": "大崎高校",
-          "slug": "nagasaki-osaki"
-        }
-      ]
-    },
-    {
-      "date": "2023-07-13",
-      "season": "summer",
-      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
-      "round": "2回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "海星",
-          "score": 5,
-          "won": true,
-          "name": "海星",
-          "slug": null
-        },
-        {
-          "display": "小浜",
-          "score": 0,
-          "won": false,
-          "name": "小浜高校",
-          "slug": "obama"
-        }
-      ]
-    },
-    {
-      "date": "2023-07-13",
-      "season": "summer",
-      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
-      "round": "2回戦",
       "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
         {
@@ -4708,53 +3375,6 @@
           "won": true,
           "name": "長崎北高校",
           "slug": "nagasakikita"
-        }
-      ]
-    },
-    {
-      "date": "2023-07-13",
-      "season": "summer",
-      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
-      "round": "2回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "長崎南山",
-          "score": 1,
-          "won": false,
-          "name": "長崎南山",
-          "slug": null
-        },
-        {
-          "display": "九州文化",
-          "score": 6,
-          "won": true,
-          "name": "九州文化",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2023-07-13",
-      "season": "summer",
-      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
-      "round": "2回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "国見・口加・島原翔南・諫早商",
-          "score": 0,
-          "won": false,
-          "name": "国見・口加・島原翔南・諫早商",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "長崎商",
-          "score": 6,
-          "won": true,
-          "name": "長崎商業高校",
-          "slug": "nagasakishogyo"
         }
       ]
     },
@@ -4789,6 +3409,52 @@
       "venue": "佐世保市総合グラウンド野球場",
       "teams": [
         {
+          "display": "長崎西",
+          "score": 2,
+          "won": false,
+          "name": "長崎西高校",
+          "slug": "nagasakinishi"
+        },
+        {
+          "display": "大崎",
+          "score": 8,
+          "won": true,
+          "name": "大崎高校",
+          "slug": "nagasaki-osaki"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-13",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
+      "round": "2回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "長崎南山",
+          "score": 1,
+          "won": false,
+          "name": "長崎南山",
+          "slug": null
+        },
+        {
+          "display": "九州文化",
+          "score": 6,
+          "won": true,
+          "name": "九州文化",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-13",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
+      "round": "2回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
           "display": "島原",
           "score": 9,
           "won": true,
@@ -4801,6 +3467,53 @@
           "won": false,
           "name": "西海学園",
           "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-13",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "海星",
+          "score": 5,
+          "won": true,
+          "name": "海星",
+          "slug": null
+        },
+        {
+          "display": "小浜",
+          "score": 0,
+          "won": false,
+          "name": "小浜高校",
+          "slug": "obama"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-13",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "国見・口加・島原翔南・諫早商",
+          "score": 0,
+          "won": false,
+          "name": "国見・口加・島原翔南・諫早商",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "長崎商",
+          "score": 6,
+          "won": true,
+          "name": "長崎商業高校",
+          "slug": "nagasakishogyo"
         }
       ]
     },
@@ -4832,21 +3545,21 @@
       "season": "summer",
       "tournament": "第105回全国高等学校野球選手権記念長崎大会",
       "round": "2回戦",
-      "venue": "長崎県営野球場",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
         {
-          "display": "長総大附",
+          "display": "五島",
           "score": 3,
-          "won": true,
-          "name": "長総大附",
-          "slug": null
+          "won": false,
+          "name": "五島高校",
+          "slug": "goto"
         },
         {
-          "display": "波佐見",
-          "score": 2,
-          "won": false,
-          "name": "波佐見高校",
-          "slug": "hasami"
+          "display": "島原中央",
+          "score": 4,
+          "won": true,
+          "name": "島原中央",
+          "slug": null
         }
       ]
     },
@@ -4878,21 +3591,44 @@
       "season": "summer",
       "tournament": "第105回全国高等学校野球選手権記念長崎大会",
       "round": "2回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "venue": "佐世保市総合グラウンド野球場",
       "teams": [
         {
-          "display": "五島",
-          "score": 3,
+          "display": "諫早農",
+          "score": 2,
           "won": false,
-          "name": "五島高校",
-          "slug": "goto"
+          "name": "諫早農業高校",
+          "slug": "isahayanogyo"
         },
         {
-          "display": "島原中央",
+          "display": "壱岐",
           "score": 4,
           "won": true,
-          "name": "島原中央",
+          "name": "壱岐高校",
+          "slug": "iki"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-14",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "長総大附",
+          "score": 3,
+          "won": true,
+          "name": "長総大附",
           "slug": null
+        },
+        {
+          "display": "波佐見",
+          "score": 2,
+          "won": false,
+          "name": "波佐見高校",
+          "slug": "hasami"
         }
       ]
     },
@@ -4917,29 +3653,6 @@
           "won": true,
           "name": "大村高校",
           "slug": "omura"
-        }
-      ]
-    },
-    {
-      "date": "2023-07-14",
-      "season": "summer",
-      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
-      "round": "2回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "諫早農",
-          "score": 2,
-          "won": false,
-          "name": "諫早農業高校",
-          "slug": "isahayanogyo"
-        },
-        {
-          "display": "壱岐",
-          "score": 4,
-          "won": true,
-          "name": "壱岐高校",
-          "slug": "iki"
         }
       ]
     },
@@ -5017,21 +3730,21 @@
       "season": "summer",
       "tournament": "第105回全国高等学校野球選手権記念長崎大会",
       "round": "3回戦",
-      "venue": "長崎県営野球場",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
         {
-          "display": "長総大附",
-          "score": 0,
-          "won": false,
-          "name": "長総大附",
-          "slug": null
+          "display": "清峰",
+          "score": 3,
+          "won": true,
+          "name": "清峰高校",
+          "slug": "nagasaki-seiho"
         },
         {
-          "display": "大崎",
-          "score": 9,
-          "won": true,
-          "name": "大崎高校",
-          "slug": "nagasaki-osaki"
+          "display": "瓊浦",
+          "score": 1,
+          "won": false,
+          "name": "瓊浦",
+          "slug": null
         }
       ]
     },
@@ -5063,21 +3776,21 @@
       "season": "summer",
       "tournament": "第105回全国高等学校野球選手権記念長崎大会",
       "round": "3回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "venue": "長崎県営野球場",
       "teams": [
         {
-          "display": "清峰",
-          "score": 3,
-          "won": true,
-          "name": "清峰高校",
-          "slug": "nagasaki-seiho"
+          "display": "長総大附",
+          "score": 0,
+          "won": false,
+          "name": "長総大附",
+          "slug": null
         },
         {
-          "display": "瓊浦",
-          "score": 1,
-          "won": false,
-          "name": "瓊浦",
-          "slug": null
+          "display": "大崎",
+          "score": 9,
+          "won": true,
+          "name": "大崎高校",
+          "slug": "nagasaki-osaki"
         }
       ]
     },
@@ -5109,29 +3822,6 @@
       "season": "summer",
       "tournament": "第105回全国高等学校野球選手権記念長崎大会",
       "round": "3回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "海星",
-          "score": 7,
-          "won": true,
-          "name": "海星",
-          "slug": null
-        },
-        {
-          "display": "長崎工",
-          "score": 6,
-          "won": false,
-          "name": "長崎工業高校",
-          "slug": "nagasakikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2023-07-17",
-      "season": "summer",
-      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
-      "round": "3回戦",
       "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
         {
@@ -5147,6 +3837,29 @@
           "won": false,
           "name": "大村工業高校",
           "slug": "omurakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念長崎大会",
+      "round": "3回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "海星",
+          "score": 7,
+          "won": true,
+          "name": "海星",
+          "slug": null
+        },
+        {
+          "display": "長崎工",
+          "score": 6,
+          "won": false,
+          "name": "長崎工業高校",
+          "slug": "nagasakikogyo"
         }
       ]
     },
@@ -5335,22 +4048,208 @@
       ]
     },
     {
-      "date": "2024-07-16",
+      "date": "2022-07-07",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
       "round": "1回戦",
-      "venue": "佐世保市総合グラウンド野球場",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "猶興館",
+          "score": 4,
+          "won": false,
+          "name": "猶興館高校",
+          "slug": "yukokan"
+        },
+        {
+          "display": "島原農",
+          "score": 5,
+          "won": true,
+          "name": "島原農業高校",
+          "slug": "shimabaranogyo"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-08",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
         {
           "display": "川棚",
-          "score": 1,
-          "won": false,
+          "score": 5,
+          "won": true,
           "name": "川棚高校",
           "slug": "kawatana"
         },
         {
+          "display": "五島",
+          "score": 2,
+          "won": false,
+          "name": "五島高校",
+          "slug": "goto"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-08",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "島原工",
+          "score": 5,
+          "won": true,
+          "name": "島原工業高校",
+          "slug": "shimabarakogyo"
+        },
+        {
+          "display": "上五島",
+          "score": 0,
+          "won": false,
+          "name": "上五島高校",
+          "slug": "kamigoto"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-08",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "対馬",
+          "score": 4,
+          "won": false,
+          "name": "対馬高校",
+          "slug": "nagasaki-tsushima"
+        },
+        {
+          "display": "壱岐",
+          "score": 6,
+          "won": true,
+          "name": "壱岐高校",
+          "slug": "iki"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-08",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "上対馬・佐世保商・平戸",
+          "score": 0,
+          "won": false,
+          "name": "上対馬・佐世保商・平戸",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "西彼杵",
+          "score": 10,
+          "won": true,
+          "name": "西彼杵高校",
+          "slug": "nishisonogi"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-08",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "壱岐商",
+          "score": 0,
+          "won": false,
+          "name": "壱岐商業高校",
+          "slug": "ikishogyo"
+        },
+        {
+          "display": "瓊浦",
+          "score": 1,
+          "won": true,
+          "name": "瓊浦",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-08",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "長崎工",
+          "score": 11,
+          "won": true,
+          "name": "長崎工業高校",
+          "slug": "nagasakikogyo"
+        },
+        {
+          "display": "諫早東",
+          "score": 3,
+          "won": false,
+          "name": "諫早東高校",
+          "slug": "isahayahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-09",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "長崎北陽台",
+          "score": 7,
+          "won": true,
+          "name": "長崎北陽台高校",
+          "slug": "nagasakihokuyodai"
+        },
+        {
+          "display": "島原中央",
+          "score": 0,
+          "won": false,
+          "name": "島原中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-09",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "口加・国見・島原翔南",
+          "score": 0,
+          "won": false,
+          "name": "口加・国見・島原翔南",
+          "slug": null,
+          "combined": true
+        },
+        {
           "display": "鹿町工",
-          "score": 8,
+          "score": 5,
           "won": true,
           "name": "鹿町工業高校",
           "slug": "shikamachikogyo"
@@ -5358,65 +4257,777 @@
       ]
     },
     {
-      "date": "2024-07-16",
+      "date": "2022-07-09",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
       "round": "1回戦",
-      "venue": "長崎県営野球場",
+      "venue": "佐世保市総合グラウンド野球場",
       "teams": [
         {
-          "display": "上五島",
-          "score": 10,
-          "won": true,
-          "name": "上五島高校",
-          "slug": "kamigoto"
+          "display": "長崎北",
+          "score": 2,
+          "won": false,
+          "name": "長崎北高校",
+          "slug": "nagasakikita"
         },
         {
-          "display": "佐世保商・佐世保西・平戸",
-          "score": 0,
-          "won": false,
-          "name": "佐世保商・佐世保西・平戸",
-          "slug": null,
-          "combined": true
+          "display": "九州文化",
+          "score": 8,
+          "won": true,
+          "name": "九州文化",
+          "slug": null
         }
       ]
     },
     {
-      "date": "2024-07-16",
+      "date": "2022-07-09",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
       "round": "1回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "venue": "佐世保市総合グラウンド野球場",
       "teams": [
         {
-          "display": "佐世保南",
+          "display": "佐世保北",
+          "score": 8,
+          "won": true,
+          "name": "佐世保北高校",
+          "slug": "sasebokita"
+        },
+        {
+          "display": "島原",
+          "score": 6,
+          "won": false,
+          "name": "島原高校",
+          "slug": "shimabara"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-09",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "長崎明誠",
+          "score": 21,
+          "won": true,
+          "name": "長崎明誠高校",
+          "slug": "nagasakimeisei"
+        },
+        {
+          "display": "佐世保高専",
           "score": 1,
           "won": false,
-          "name": "佐世保南高校",
-          "slug": "sasebominami"
-        },
+          "name": "佐世保工業高専",
+          "slug": "sasebokogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-09",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
         {
           "display": "長崎西",
           "score": 8,
           "won": true,
           "name": "長崎西高校",
           "slug": "nagasakinishi"
+        },
+        {
+          "display": "佐世保工",
+          "score": 2,
+          "won": false,
+          "name": "佐世保工業高校",
+          "slug": "sasebokogyo"
         }
       ]
     },
     {
-      "date": "2024-07-16",
+      "date": "2022-07-10",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "大村工",
+          "score": 6,
+          "won": false,
+          "name": "大村工業高校",
+          "slug": "omurakogyo"
+        },
+        {
+          "display": "佐世保実",
+          "score": 7,
+          "won": true,
+          "name": "佐世保実",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-10",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "大村",
+          "score": 5,
+          "won": false,
+          "name": "大村高校",
+          "slug": "omura"
+        },
+        {
+          "display": "松浦",
+          "score": 10,
+          "won": true,
+          "name": "松浦高校",
+          "slug": "matsura"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-10",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
       "round": "1回戦",
       "venue": "佐世保市総合グラウンド野球場",
       "teams": [
         {
-          "display": "島原",
+          "display": "諫早",
+          "score": 5,
+          "won": true,
+          "name": "諫早高校",
+          "slug": "isahaya"
+        },
+        {
+          "display": "佐世保南",
+          "score": 2,
+          "won": false,
+          "name": "佐世保南高校",
+          "slug": "sasebominami"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-10",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "佐世保西",
+          "score": 0,
+          "won": false,
+          "name": "佐世保西高校",
+          "slug": "sasebonishi"
+        },
+        {
+          "display": "長崎南",
+          "score": 17,
+          "won": true,
+          "name": "長崎南高校",
+          "slug": "nagasakiminami"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-10",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "西陵",
+          "score": 10,
+          "won": true,
+          "name": "西陵高校",
+          "slug": "nagasaki-seiryo"
+        },
+        {
+          "display": "長崎鶴洋",
+          "score": 0,
+          "won": false,
+          "name": "長崎鶴洋高校",
+          "slug": "nagasakikakuyo"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-10",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "小浜",
+          "score": 10,
+          "won": true,
+          "name": "小浜高校",
+          "slug": "obama"
+        },
+        {
+          "display": "長崎東",
+          "score": 0,
+          "won": false,
+          "name": "長崎東高校",
+          "slug": "nagasakihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-12",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "長崎日大",
+          "score": 9,
+          "won": true,
+          "name": "長崎日大",
+          "slug": null
+        },
+        {
+          "display": "瓊浦",
+          "score": 1,
+          "won": false,
+          "name": "瓊浦",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-12",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "諫早農",
+          "score": 0,
+          "won": false,
+          "name": "諫早農業高校",
+          "slug": "isahayanogyo"
+        },
+        {
+          "display": "壱岐",
+          "score": 7,
+          "won": true,
+          "name": "壱岐高校",
+          "slug": "iki"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-12",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "長崎工",
+          "score": 3,
+          "won": false,
+          "name": "長崎工業高校",
+          "slug": "nagasakikogyo"
+        },
+        {
+          "display": "大崎",
+          "score": 5,
+          "won": true,
+          "name": "大崎高校",
+          "slug": "nagasaki-osaki"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-12",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "長崎北陽台",
+          "score": 5,
+          "won": false,
+          "name": "長崎北陽台高校",
+          "slug": "nagasakihokuyodai"
+        },
+        {
+          "display": "波佐見",
+          "score": 6,
+          "won": true,
+          "name": "波佐見高校",
+          "slug": "hasami"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-12",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "清峰",
+          "score": 5,
+          "won": true,
+          "name": "清峰高校",
+          "slug": "nagasaki-seiho"
+        },
+        {
+          "display": "長崎明誠",
+          "score": 4,
+          "won": false,
+          "name": "長崎明誠高校",
+          "slug": "nagasakimeisei"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-12",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "島原農",
+          "score": 0,
+          "won": false,
+          "name": "島原農業高校",
+          "slug": "shimabaranogyo"
+        },
+        {
+          "display": "海星",
+          "score": 7,
+          "won": true,
+          "name": "海星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-12",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "佐世保北",
+          "score": 2,
+          "won": false,
+          "name": "佐世保北高校",
+          "slug": "sasebokita"
+        },
+        {
+          "display": "長崎商",
+          "score": 5,
+          "won": true,
+          "name": "長崎商業高校",
+          "slug": "nagasakishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-12",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "鹿町工",
+          "score": 9,
+          "won": true,
+          "name": "鹿町工業高校",
+          "slug": "shikamachikogyo"
+        },
+        {
+          "display": "長崎南山",
+          "score": 1,
+          "won": false,
+          "name": "長崎南山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-13",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "創成館",
+          "score": 6,
+          "won": true,
+          "name": "創成館",
+          "slug": null
+        },
+        {
+          "display": "九州文化",
+          "score": 3,
+          "won": false,
+          "name": "九州文化",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-13",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "長崎西",
+          "score": 3,
+          "won": true,
+          "name": "長崎西高校",
+          "slug": "nagasakinishi"
+        },
+        {
+          "display": "鎮西学院",
+          "score": 0,
+          "won": false,
+          "name": "鎮西学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-13",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "川棚",
+          "score": 0,
+          "won": false,
+          "name": "川棚高校",
+          "slug": "kawatana"
+        },
+        {
+          "display": "西海学園",
+          "score": 7,
+          "won": true,
+          "name": "西海学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-13",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "小浜",
+          "score": 3,
+          "won": false,
+          "name": "小浜高校",
+          "slug": "obama"
+        },
+        {
+          "display": "諫早",
+          "score": 4,
+          "won": true,
+          "name": "諫早高校",
+          "slug": "isahaya"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-13",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "西陵",
+          "score": 0,
+          "won": false,
+          "name": "西陵高校",
+          "slug": "nagasaki-seiryo"
+        },
+        {
+          "display": "佐世保実",
           "score": 8,
           "won": true,
-          "name": "島原高校",
-          "slug": "shimabara"
+          "name": "佐世保実",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-13",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "長崎南",
+          "score": 0,
+          "won": false,
+          "name": "長崎南高校",
+          "slug": "nagasakiminami"
+        },
+        {
+          "display": "長総大附",
+          "score": 7,
+          "won": true,
+          "name": "長総大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-13",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "五島海陽",
+          "score": 3,
+          "won": false,
+          "name": "五島海陽高校",
+          "slug": "gotokaiyo"
+        },
+        {
+          "display": "松浦",
+          "score": 5,
+          "won": true,
+          "name": "松浦高校",
+          "slug": "matsura"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-13",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "島原工",
+          "score": 10,
+          "won": true,
+          "name": "島原工業高校",
+          "slug": "shimabarakogyo"
+        },
+        {
+          "display": "西彼杵",
+          "score": 1,
+          "won": false,
+          "name": "西彼杵高校",
+          "slug": "nishisonogi"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-16",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "3回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "西海学園",
+          "score": 1,
+          "won": false,
+          "name": "西海学園",
+          "slug": null
+        },
+        {
+          "display": "海星",
+          "score": 11,
+          "won": true,
+          "name": "海星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-16",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "3回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "長崎西",
+          "score": 1,
+          "won": false,
+          "name": "長崎西高校",
+          "slug": "nagasakinishi"
+        },
+        {
+          "display": "長崎商",
+          "score": 6,
+          "won": true,
+          "name": "長崎商業高校",
+          "slug": "nagasakishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-16",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "3回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "清峰",
+          "score": 2,
+          "won": false,
+          "name": "清峰高校",
+          "slug": "nagasaki-seiho"
+        },
+        {
+          "display": "長崎日大",
+          "score": 4,
+          "won": true,
+          "name": "長崎日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-16",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "3回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "壱岐",
+          "score": 11,
+          "won": true,
+          "name": "壱岐高校",
+          "slug": "iki"
+        },
+        {
+          "display": "松浦",
+          "score": 1,
+          "won": false,
+          "name": "松浦高校",
+          "slug": "matsura"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "3回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "島原工",
+          "score": 2,
+          "won": false,
+          "name": "島原工業高校",
+          "slug": "shimabarakogyo"
+        },
+        {
+          "display": "波佐見",
+          "score": 9,
+          "won": true,
+          "name": "波佐見高校",
+          "slug": "hasami"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "3回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "諫早",
+          "score": 3,
+          "won": false,
+          "name": "諫早高校",
+          "slug": "isahaya"
+        },
+        {
+          "display": "鹿町工",
+          "score": 5,
+          "won": true,
+          "name": "鹿町工業高校",
+          "slug": "shikamachikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "3回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "長総大附",
+          "score": 3,
+          "won": false,
+          "name": "長総大附",
+          "slug": null
+        },
+        {
+          "display": "大崎",
+          "score": 5,
+          "won": true,
+          "name": "大崎高校",
+          "slug": "nagasaki-osaki"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "3回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "創成館",
+          "score": 7,
+          "won": true,
+          "name": "創成館",
+          "slug": null
         },
         {
           "display": "佐世保実",
@@ -5428,18 +5039,572 @@
       ]
     },
     {
-      "date": "2024-07-16",
+      "date": "2022-07-21",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "準々決勝",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "鹿町工",
+          "score": 1,
+          "won": false,
+          "name": "鹿町工業高校",
+          "slug": "shikamachikogyo"
+        },
+        {
+          "display": "海星",
+          "score": 2,
+          "won": true,
+          "name": "海星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-21",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "準々決勝",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "長崎日大",
+          "score": 2,
+          "won": false,
+          "name": "長崎日大",
+          "slug": null
+        },
+        {
+          "display": "波佐見",
+          "score": 6,
+          "won": true,
+          "name": "波佐見高校",
+          "slug": "hasami"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-22",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "準々決勝",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "創成館",
+          "score": 8,
+          "won": true,
+          "name": "創成館",
+          "slug": null
+        },
+        {
+          "display": "壱岐",
+          "score": 2,
+          "won": false,
+          "name": "壱岐高校",
+          "slug": "iki"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-22",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "準々決勝",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "長崎商",
+          "score": 3,
+          "won": false,
+          "name": "長崎商業高校",
+          "slug": "nagasakishogyo"
+        },
+        {
+          "display": "大崎",
+          "score": 4,
+          "won": true,
+          "name": "大崎高校",
+          "slug": "nagasaki-osaki"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-25",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "準決勝",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "海星",
+          "score": 5,
+          "won": true,
+          "name": "海星",
+          "slug": null
+        },
+        {
+          "display": "大崎",
+          "score": 2,
+          "won": false,
+          "name": "大崎高校",
+          "slug": "nagasaki-osaki"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-25",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "準決勝",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "波佐見",
+          "score": 1,
+          "won": false,
+          "name": "波佐見高校",
+          "slug": "hasami"
+        },
+        {
+          "display": "創成館",
+          "score": 2,
+          "won": true,
+          "name": "創成館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-27",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 長崎大会",
+      "round": "決勝",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "海星",
+          "score": 9,
+          "won": true,
+          "name": "海星",
+          "slug": null
+        },
+        {
+          "display": "創成館",
+          "score": 2,
+          "won": false,
+          "name": "創成館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-08",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
       "round": "1回戦",
       "venue": "長崎県営野球場",
       "teams": [
         {
           "display": "長崎東",
-          "score": 19,
-          "won": true,
+          "score": 0,
+          "won": false,
           "name": "長崎東高校",
           "slug": "nagasakihigashi"
+        },
+        {
+          "display": "川棚",
+          "score": 8,
+          "won": true,
+          "name": "川棚高校",
+          "slug": "kawatana"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-09",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "諫早",
+          "score": 2,
+          "won": false,
+          "name": "諫早高校",
+          "slug": "isahaya"
+        },
+        {
+          "display": "鹿町工",
+          "score": 3,
+          "won": true,
+          "name": "鹿町工業高校",
+          "slug": "shikamachikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-09",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "佐世保西",
+          "score": 3,
+          "won": false,
+          "name": "佐世保西高校",
+          "slug": "sasebonishi"
+        },
+        {
+          "display": "長崎北陽台",
+          "score": 12,
+          "won": true,
+          "name": "長崎北陽台高校",
+          "slug": "nagasakihokuyodai"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-10",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "九州文化",
+          "score": 2,
+          "won": true,
+          "name": "九州文化",
+          "slug": null
+        },
+        {
+          "display": "島原中央",
+          "score": 1,
+          "won": false,
+          "name": "島原中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-10",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "西海学園",
+          "score": 1,
+          "won": false,
+          "name": "西海学園",
+          "slug": null
+        },
+        {
+          "display": "島原工",
+          "score": 2,
+          "won": true,
+          "name": "島原工業高校",
+          "slug": "shimabarakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-10",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "佐世保南",
+          "score": 0,
+          "won": false,
+          "name": "佐世保南高校",
+          "slug": "sasebominami"
+        },
+        {
+          "display": "瓊浦",
+          "score": 6,
+          "won": true,
+          "name": "瓊浦",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-10",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "佐世保実",
+          "score": 0,
+          "won": false,
+          "name": "佐世保実",
+          "slug": null
+        },
+        {
+          "display": "長崎工",
+          "score": 7,
+          "won": true,
+          "name": "長崎工業高校",
+          "slug": "nagasakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-10",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "壱岐商",
+          "score": 9,
+          "won": true,
+          "name": "壱岐商業高校",
+          "slug": "ikishogyo"
+        },
+        {
+          "display": "長崎鶴洋・西彼杵",
+          "score": 7,
+          "won": false,
+          "name": "長崎鶴洋・西彼杵",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2021-07-10",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "松浦",
+          "score": 1,
+          "won": false,
+          "name": "松浦高校",
+          "slug": "matsura"
+        },
+        {
+          "display": "国見",
+          "score": 5,
+          "won": true,
+          "name": "国見高校",
+          "slug": "kunimi"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-10",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "長崎南",
+          "score": 8,
+          "won": true,
+          "name": "長崎南高校",
+          "slug": "nagasakiminami"
+        },
+        {
+          "display": "佐世保高専",
+          "score": 5,
+          "won": false,
+          "name": "佐世保工業高専",
+          "slug": "sasebokogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-11",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "諫早東",
+          "score": 2,
+          "won": false,
+          "name": "諫早東高校",
+          "slug": "isahayahigashi"
+        },
+        {
+          "display": "壱岐",
+          "score": 9,
+          "won": true,
+          "name": "壱岐高校",
+          "slug": "iki"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-11",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "西陵",
+          "score": 1,
+          "won": false,
+          "name": "西陵高校",
+          "slug": "nagasaki-seiryo"
+        },
+        {
+          "display": "清峰",
+          "score": 4,
+          "won": true,
+          "name": "清峰高校",
+          "slug": "nagasaki-seiho"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-11",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "長崎北",
+          "score": 3,
+          "won": true,
+          "name": "長崎北高校",
+          "slug": "nagasakikita"
+        },
+        {
+          "display": "佐世保工",
+          "score": 0,
+          "won": false,
+          "name": "佐世保工業高校",
+          "slug": "sasebokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-11",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "島原翔南・諫早商",
+          "score": 0,
+          "won": false,
+          "name": "島原翔南・諫早商",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "五島",
+          "score": 14,
+          "won": true,
+          "name": "五島高校",
+          "slug": "goto"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-11",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "波佐見",
+          "score": 7,
+          "won": true,
+          "name": "波佐見高校",
+          "slug": "hasami"
+        },
+        {
+          "display": "長崎明誠",
+          "score": 0,
+          "won": false,
+          "name": "長崎明誠高校",
+          "slug": "nagasakimeisei"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-12",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "大村",
+          "score": 11,
+          "won": true,
+          "name": "大村高校",
+          "slug": "omura"
+        },
+        {
+          "display": "対馬",
+          "score": 0,
+          "won": false,
+          "name": "対馬高校",
+          "slug": "nagasaki-tsushima"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-12",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "佐世保商",
+          "score": 2,
+          "won": false,
+          "name": "佐世保商業高校",
+          "slug": "saseboshogyo"
+        },
+        {
+          "display": "島原",
+          "score": 6,
+          "won": true,
+          "name": "島原高校",
+          "slug": "shimabara"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-12",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "佐世保北",
+          "score": 13,
+          "won": true,
+          "name": "佐世保北高校",
+          "slug": "sasebokita"
         },
         {
           "display": "島原農",
@@ -5451,552 +5616,87 @@
       ]
     },
     {
-      "date": "2024-07-16",
+      "date": "2021-07-12",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
       "round": "1回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "venue": "長崎県営野球場",
       "teams": [
         {
-          "display": "猶興館",
-          "score": 5,
-          "won": false,
-          "name": "猶興館高校",
-          "slug": "yukokan"
-        },
-        {
-          "display": "諫早農",
-          "score": 8,
-          "won": true,
-          "name": "諫早農業高校",
-          "slug": "isahayanogyo"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-16",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "1回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "波佐見",
-          "score": 12,
-          "won": true,
-          "name": "波佐見高校",
-          "slug": "hasami"
-        },
-        {
-          "display": "長崎工",
+          "display": "口加",
           "score": 0,
           "won": false,
-          "name": "長崎工業高校",
-          "slug": "nagasakikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-16",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "諫早東・国見・島原翔南・口加・諫早商",
-          "score": 6,
-          "won": false,
-          "name": "諫早東・国見・島原翔南・口加・諫早商",
-          "slug": null,
-          "combined": true
+          "name": "口加高校",
+          "slug": "koka"
         },
-        {
-          "display": "長崎明誠",
-          "score": 10,
-          "won": true,
-          "name": "長崎明誠高校",
-          "slug": "nagasakimeisei"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-17",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "1回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "西陵",
-          "score": 3,
-          "won": true,
-          "name": "西陵高校",
-          "slug": "nagasaki-seiryo"
-        },
-        {
-          "display": "壱岐商",
-          "score": 1,
-          "won": false,
-          "name": "壱岐商業高校",
-          "slug": "ikishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-17",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "1回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "対馬・上対馬",
-          "score": 0,
-          "won": false,
-          "name": "対馬・上対馬",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "大村工",
-          "score": 10,
-          "won": true,
-          "name": "大村工業高校",
-          "slug": "omurakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-17",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "西海学園",
-          "score": 3,
-          "won": false,
-          "name": "西海学園",
-          "slug": null
-        },
-        {
-          "display": "五島・五島海陽",
-          "score": 4,
-          "won": true,
-          "name": "五島・五島海陽",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2024-07-17",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "1回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "大村",
-          "score": 2,
-          "won": false,
-          "name": "大村高校",
-          "slug": "omura"
-        },
-        {
-          "display": "佐世保北",
-          "score": 3,
-          "won": true,
-          "name": "佐世保北高校",
-          "slug": "sasebokita"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-17",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "1回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "長崎北",
-          "score": 1,
-          "won": false,
-          "name": "長崎北高校",
-          "slug": "nagasakikita"
-        },
-        {
-          "display": "清峰",
-          "score": 2,
-          "won": true,
-          "name": "清峰高校",
-          "slug": "nagasaki-seiho"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-17",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "島原工",
-          "score": 6,
-          "won": true,
-          "name": "島原工業高校",
-          "slug": "shimabarakogyo"
-        },
-        {
-          "display": "長崎鶴洋・西彼杵",
-          "score": 1,
-          "won": false,
-          "name": "長崎鶴洋・西彼杵",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2024-07-18",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "2回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
         {
           "display": "上五島",
-          "score": 0,
-          "won": false,
+          "score": 6,
+          "won": true,
           "name": "上五島高校",
           "slug": "kamigoto"
-        },
-        {
-          "display": "長崎日大",
-          "score": 7,
-          "won": true,
-          "name": "長崎日大",
-          "slug": null
         }
       ]
     },
     {
-      "date": "2024-07-18",
+      "date": "2021-07-12",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "2回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "海星",
-          "score": 0,
-          "won": false,
-          "name": "海星",
-          "slug": null
-        },
-        {
-          "display": "鹿町工",
-          "score": 1,
-          "won": true,
-          "name": "鹿町工業高校",
-          "slug": "shikamachikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-18",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "2回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "長崎東",
-          "score": 1,
-          "won": false,
-          "name": "長崎東高校",
-          "slug": "nagasakihigashi"
-        },
-        {
-          "display": "九州文化",
-          "score": 5,
-          "won": true,
-          "name": "九州文化",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2024-07-18",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "2回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "創成館",
-          "score": 4,
-          "won": true,
-          "name": "創成館",
-          "slug": null
-        },
-        {
-          "display": "長崎西",
-          "score": 1,
-          "won": false,
-          "name": "長崎西高校",
-          "slug": "nagasakinishi"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-18",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "2回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "諫早農",
-          "score": 0,
-          "won": false,
-          "name": "諫早農業高校",
-          "slug": "isahayanogyo"
-        },
-        {
-          "display": "瓊浦",
-          "score": 3,
-          "won": true,
-          "name": "瓊浦",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2024-07-18",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "2回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "長崎明誠",
-          "score": 2,
-          "won": false,
-          "name": "長崎明誠高校",
-          "slug": "nagasakimeisei"
-        },
-        {
-          "display": "大崎",
-          "score": 4,
-          "won": true,
-          "name": "大崎高校",
-          "slug": "nagasaki-osaki"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-18",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "2回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "波佐見",
-          "score": 5,
-          "won": true,
-          "name": "波佐見高校",
-          "slug": "hasami"
-        },
-        {
-          "display": "鎮西学院",
-          "score": 1,
-          "won": false,
-          "name": "鎮西学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2024-07-18",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "2回戦",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "1回戦",
       "venue": "長崎県営野球場",
       "teams": [
         {
           "display": "長総大附",
-          "score": 5,
-          "won": true,
+          "score": 6,
+          "won": false,
           "name": "長総大附",
           "slug": null
         },
         {
-          "display": "島原",
-          "score": 2,
-          "won": false,
-          "name": "島原高校",
-          "slug": "shimabara"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-19",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "2回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "五島・五島海陽",
-          "score": 3,
-          "won": false,
-          "name": "五島・五島海陽",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "島原中央",
-          "score": 6,
-          "won": true,
-          "name": "島原中央",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2024-07-19",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "2回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "西陵",
-          "score": 5,
-          "won": true,
-          "name": "西陵高校",
-          "slug": "nagasaki-seiryo"
-        },
-        {
-          "display": "長崎北陽台",
-          "score": 0,
-          "won": false,
-          "name": "長崎北陽台高校",
-          "slug": "nagasakihokuyodai"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-19",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "2回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "長崎南山",
-          "score": 7,
-          "won": true,
-          "name": "長崎南山",
-          "slug": null
-        },
-        {
-          "display": "壱岐",
-          "score": 3,
-          "won": false,
-          "name": "壱岐高校",
-          "slug": "iki"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-19",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "2回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "島原工",
-          "score": 8,
-          "won": true,
-          "name": "島原工業高校",
-          "slug": "shimabarakogyo"
-        },
-        {
-          "display": "佐世保高専",
-          "score": 2,
-          "won": false,
-          "name": "佐世保工業高専",
-          "slug": "sasebokogyo-kosen"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-19",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "2回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "諫早",
-          "score": 0,
-          "won": false,
-          "name": "諫早高校",
-          "slug": "isahaya"
-        },
-        {
-          "display": "長崎商",
-          "score": 7,
-          "won": true,
-          "name": "長崎商業高校",
-          "slug": "nagasakishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-19",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "2回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
           "display": "大村工",
-          "score": 1,
-          "won": false,
+          "score": 7,
+          "won": true,
           "name": "大村工業高校",
           "slug": "omurakogyo"
-        },
-        {
-          "display": "佐世保工",
-          "score": 2,
-          "won": true,
-          "name": "佐世保工業高校",
-          "slug": "sasebokogyo"
         }
       ]
     },
     {
-      "date": "2024-07-19",
+      "date": "2021-07-14",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
       "round": "2回戦",
-      "venue": "長崎県営野球場",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
         {
-          "display": "佐世保北",
-          "score": 11,
+          "display": "壱岐商",
+          "score": 0,
+          "won": false,
+          "name": "壱岐商業高校",
+          "slug": "ikishogyo"
+        },
+        {
+          "display": "小浜",
+          "score": 2,
           "won": true,
-          "name": "佐世保北高校",
-          "slug": "sasebokita"
+          "name": "小浜高校",
+          "slug": "obama"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-14",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "長崎日大",
+          "score": 9,
+          "won": true,
+          "name": "長崎日大",
+          "slug": null
         },
         {
           "display": "長崎南",
@@ -6008,45 +5708,137 @@
       ]
     },
     {
-      "date": "2024-07-19",
+      "date": "2021-07-14",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
       "round": "2回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "venue": "佐世保市総合グラウンド野球場",
       "teams": [
         {
-          "display": "小浜",
-          "score": 2,
-          "won": false,
-          "name": "小浜高校",
-          "slug": "obama"
+          "display": "壱岐",
+          "score": 7,
+          "won": true,
+          "name": "壱岐高校",
+          "slug": "iki"
         },
         {
-          "display": "清峰",
-          "score": 3,
-          "won": true,
-          "name": "清峰高校",
-          "slug": "nagasaki-seiho"
+          "display": "五島海陽",
+          "score": 0,
+          "won": false,
+          "name": "五島海陽高校",
+          "slug": "gotokaiyo"
         }
       ]
     },
     {
-      "date": "2024-07-21",
+      "date": "2021-07-14",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "3回戦",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
       "venue": "佐世保市総合グラウンド野球場",
       "teams": [
         {
-          "display": "長総大附",
-          "score": 9,
+          "display": "大崎",
+          "score": 6,
           "won": true,
-          "name": "長総大附",
+          "name": "大崎高校",
+          "slug": "nagasaki-osaki"
+        },
+        {
+          "display": "川棚",
+          "score": 1,
+          "won": false,
+          "name": "川棚高校",
+          "slug": "kawatana"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-14",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "鎮西学院",
+          "score": 3,
+          "won": false,
+          "name": "鎮西学院",
           "slug": null
         },
         {
+          "display": "波佐見",
+          "score": 8,
+          "won": true,
+          "name": "波佐見高校",
+          "slug": "hasami"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-14",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "国見",
+          "score": 1,
+          "won": false,
+          "name": "国見高校",
+          "slug": "kunimi"
+        },
+        {
+          "display": "長崎商",
+          "score": 8,
+          "won": true,
+          "name": "長崎商業高校",
+          "slug": "nagasakishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-14",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "海星",
+          "score": 5,
+          "won": true,
+          "name": "海星",
+          "slug": null
+        },
+        {
+          "display": "九州文化",
+          "score": 4,
+          "won": false,
+          "name": "九州文化",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-14",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "長崎西",
+          "score": 8,
+          "won": true,
+          "name": "長崎西高校",
+          "slug": "nagasakinishi"
+        },
+        {
           "display": "島原工",
-          "score": 2,
+          "score": 4,
           "won": false,
           "name": "島原工業高校",
           "slug": "shimabarakogyo"
@@ -6054,137 +5846,138 @@
       ]
     },
     {
-      "date": "2024-07-21",
+      "date": "2021-07-15",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "3回戦",
-      "venue": "長崎県営野球場",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
         {
-          "display": "西陵",
-          "score": 0,
+          "display": "長崎北陽台",
+          "score": 2,
           "won": false,
-          "name": "西陵高校",
-          "slug": "nagasaki-seiryo"
+          "name": "長崎北陽台高校",
+          "slug": "nagasakihokuyodai"
         },
         {
-          "display": "長崎日大",
-          "score": 1,
+          "display": "諫早農",
+          "score": 9,
           "won": true,
-          "name": "長崎日大",
-          "slug": null
+          "name": "諫早農業高校",
+          "slug": "isahayanogyo"
         }
       ]
     },
     {
-      "date": "2024-07-21",
+      "date": "2021-07-15",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "3回戦",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "長崎北",
+          "score": 0,
+          "won": false,
+          "name": "長崎北高校",
+          "slug": "nagasakikita"
+        },
+        {
+          "display": "島原",
+          "score": 5,
+          "won": true,
+          "name": "島原高校",
+          "slug": "shimabara"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-15",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
       "venue": "佐世保市総合グラウンド野球場",
       "teams": [
         {
-          "display": "佐世保北",
-          "score": 1,
+          "display": "大村",
+          "score": 0,
           "won": false,
-          "name": "佐世保北高校",
-          "slug": "sasebokita"
+          "name": "大村高校",
+          "slug": "omura"
         },
         {
-          "display": "大崎",
+          "display": "佐世保北",
           "score": 7,
           "won": true,
-          "name": "大崎高校",
-          "slug": "nagasaki-osaki"
+          "name": "佐世保北高校",
+          "slug": "sasebokita"
         }
       ]
     },
     {
-      "date": "2024-07-21",
+      "date": "2021-07-15",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "3回戦",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "上対馬・平戸・猶興館",
+          "score": 0,
+          "won": false,
+          "name": "上対馬・平戸・猶興館",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "上五島",
+          "score": 9,
+          "won": true,
+          "name": "上五島高校",
+          "slug": "kamigoto"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-15",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "清峰",
+          "score": 1,
+          "won": false,
+          "name": "清峰高校",
+          "slug": "nagasaki-seiho"
+        },
+        {
+          "display": "大村工",
+          "score": 8,
+          "won": true,
+          "name": "大村工業高校",
+          "slug": "omurakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-15",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
       "venue": "長崎県営野球場",
       "teams": [
         {
           "display": "鹿町工",
-          "score": 8,
+          "score": 7,
           "won": true,
           "name": "鹿町工業高校",
           "slug": "shikamachikogyo"
         },
         {
-          "display": "島原中央",
-          "score": 0,
-          "won": false,
-          "name": "島原中央",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2024-07-22",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "3回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "波佐見",
-          "score": 2,
-          "won": false,
-          "name": "波佐見高校",
-          "slug": "hasami"
-        },
-        {
-          "display": "長崎商",
-          "score": 5,
-          "won": true,
-          "name": "長崎商業高校",
-          "slug": "nagasakishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-22",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "3回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "佐世保工",
-          "score": 1,
-          "won": false,
-          "name": "佐世保工業高校",
-          "slug": "sasebokogyo"
-        },
-        {
-          "display": "創成館",
-          "score": 2,
-          "won": true,
-          "name": "創成館",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2024-07-22",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "3回戦",
-      "venue": "佐世保市総合グラウンド野球場",
-      "teams": [
-        {
-          "display": "九州文化",
-          "score": 4,
-          "won": true,
-          "name": "九州文化",
-          "slug": null
-        },
-        {
           "display": "長崎南山",
-          "score": 1,
+          "score": 5,
           "won": false,
           "name": "長崎南山",
           "slug": null
@@ -6192,41 +5985,225 @@
       ]
     },
     {
-      "date": "2024-07-22",
+      "date": "2021-07-15",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "3回戦",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
       "venue": "長崎県営野球場",
       "teams": [
         {
-          "display": "瓊浦",
-          "score": 3,
-          "won": false,
-          "name": "瓊浦",
-          "slug": null
+          "display": "五島",
+          "score": 5,
+          "won": true,
+          "name": "五島高校",
+          "slug": "goto"
         },
         {
-          "display": "清峰",
-          "score": 7,
-          "won": true,
-          "name": "清峰高校",
-          "slug": "nagasaki-seiho"
+          "display": "長崎工",
+          "score": 4,
+          "won": false,
+          "name": "長崎工業高校",
+          "slug": "nagasakikogyo"
         }
       ]
     },
     {
-      "date": "2024-07-24",
+      "date": "2021-07-15",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "準々決勝",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "2回戦",
       "venue": "長崎県営野球場",
       "teams": [
         {
-          "display": "長総大附",
+          "display": "創成館",
+          "score": 9,
+          "won": true,
+          "name": "創成館",
+          "slug": null
+        },
+        {
+          "display": "瓊浦",
+          "score": 0,
+          "won": false,
+          "name": "瓊浦",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "3回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "波佐見",
+          "score": 1,
+          "won": false,
+          "name": "波佐見高校",
+          "slug": "hasami"
+        },
+        {
+          "display": "長崎商",
+          "score": 2,
+          "won": true,
+          "name": "長崎商業高校",
+          "slug": "nagasakishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "3回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "鹿町工",
           "score": 1,
           "won": true,
-          "name": "長総大附",
+          "name": "鹿町工業高校",
+          "slug": "shikamachikogyo"
+        },
+        {
+          "display": "五島",
+          "score": 0,
+          "won": false,
+          "name": "五島高校",
+          "slug": "goto"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "3回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "大崎",
+          "score": 8,
+          "won": true,
+          "name": "大崎高校",
+          "slug": "nagasaki-osaki"
+        },
+        {
+          "display": "創成館",
+          "score": 4,
+          "won": false,
+          "name": "創成館",
           "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "3回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "島原",
+          "score": 2,
+          "won": false,
+          "name": "島原高校",
+          "slug": "shimabara"
+        },
+        {
+          "display": "諫早農",
+          "score": 5,
+          "won": true,
+          "name": "諫早農業高校",
+          "slug": "isahayanogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "3回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "海星",
+          "score": 4,
+          "won": true,
+          "name": "海星",
+          "slug": null
+        },
+        {
+          "display": "大村工",
+          "score": 3,
+          "won": false,
+          "name": "大村工業高校",
+          "slug": "omurakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "3回戦",
+      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
+      "teams": [
+        {
+          "display": "長崎西",
+          "score": 8,
+          "won": true,
+          "name": "長崎西高校",
+          "slug": "nagasakinishi"
+        },
+        {
+          "display": "佐世保北",
+          "score": 3,
+          "won": false,
+          "name": "佐世保北高校",
+          "slug": "sasebokita"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "3回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "小浜",
+          "score": 4,
+          "won": true,
+          "name": "小浜高校",
+          "slug": "obama"
+        },
+        {
+          "display": "上五島",
+          "score": 2,
+          "won": false,
+          "name": "上五島高校",
+          "slug": "kamigoto"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "3回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "壱岐",
+          "score": 2,
+          "won": true,
+          "name": "壱岐高校",
+          "slug": "iki"
         },
         {
           "display": "長崎日大",
@@ -6238,22 +6215,22 @@
       ]
     },
     {
-      "date": "2024-07-24",
+      "date": "2021-07-22",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
       "round": "準々決勝",
       "venue": "長崎県営野球場",
       "teams": [
         {
           "display": "鹿町工",
-          "score": 0,
+          "score": 1,
           "won": false,
           "name": "鹿町工業高校",
           "slug": "shikamachikogyo"
         },
         {
           "display": "大崎",
-          "score": 5,
+          "score": 3,
           "won": true,
           "name": "大崎高校",
           "slug": "nagasaki-osaki"
@@ -6261,117 +6238,140 @@
       ]
     },
     {
-      "date": "2024-07-25",
+      "date": "2021-07-22",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
       "round": "準々決勝",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "壱岐",
+          "score": 2,
+          "won": false,
+          "name": "壱岐高校",
+          "slug": "iki"
+        },
+        {
+          "display": "海星",
+          "score": 12,
+          "won": true,
+          "name": "海星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-23",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "準々決勝",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "諫早農",
+          "score": 3,
+          "won": false,
+          "name": "諫早農業高校",
+          "slug": "isahayanogyo"
+        },
+        {
+          "display": "長崎商",
+          "score": 4,
+          "won": true,
+          "name": "長崎商業高校",
+          "slug": "nagasakishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-23",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "準々決勝",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "長崎西",
+          "score": 2,
+          "won": false,
+          "name": "長崎西高校",
+          "slug": "nagasakinishi"
+        },
+        {
+          "display": "小浜",
+          "score": 3,
+          "won": true,
+          "name": "小浜高校",
+          "slug": "obama"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-25",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "準決勝",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "大崎",
+          "score": 2,
+          "won": true,
+          "name": "大崎高校",
+          "slug": "nagasaki-osaki"
+        },
+        {
+          "display": "海星",
+          "score": 1,
+          "won": false,
+          "name": "海星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-25",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
+      "round": "準決勝",
       "venue": "長崎県営野球場",
       "teams": [
         {
           "display": "長崎商",
-          "score": 2,
-          "won": false,
+          "score": 4,
+          "won": true,
           "name": "長崎商業高校",
           "slug": "nagasakishogyo"
         },
         {
-          "display": "創成館",
-          "score": 9,
-          "won": true,
-          "name": "創成館",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2024-07-25",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "準々決勝",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "九州文化",
-          "score": 0,
-          "won": false,
-          "name": "九州文化",
-          "slug": null
-        },
-        {
-          "display": "清峰",
+          "display": "小浜",
           "score": 2,
-          "won": true,
-          "name": "清峰高校",
-          "slug": "nagasaki-seiho"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-27",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "準決勝",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "長総大附",
-          "score": 0,
           "won": false,
-          "name": "長総大附",
-          "slug": null
-        },
-        {
-          "display": "清峰",
-          "score": 3,
-          "won": true,
-          "name": "清峰高校",
-          "slug": "nagasaki-seiho"
+          "name": "小浜高校",
+          "slug": "obama"
         }
       ]
     },
     {
-      "date": "2024-07-27",
+      "date": "2021-07-27",
       "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
-      "round": "準決勝",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "創成館",
-          "score": 3,
-          "won": true,
-          "name": "創成館",
-          "slug": null
-        },
-        {
-          "display": "大崎",
-          "score": 1,
-          "won": false,
-          "name": "大崎高校",
-          "slug": "nagasaki-osaki"
-        }
-      ]
-    },
-    {
-      "date": "2024-07-29",
-      "season": "summer",
-      "tournament": "第106回全国高等学校野球選手権長崎大会",
+      "tournament": "第103回全国高等学校野球選手権 長崎大会",
       "round": "決勝",
       "venue": "長崎県営野球場",
       "teams": [
         {
-          "display": "創成館",
-          "score": 4,
+          "display": "長崎商",
+          "score": 5,
           "won": true,
-          "name": "創成館",
-          "slug": null
+          "name": "長崎商業高校",
+          "slug": "nagasakishogyo"
         },
         {
-          "display": "清峰",
-          "score": 0,
+          "display": "大崎",
+          "score": 4,
           "won": false,
-          "name": "清峰高校",
-          "slug": "nagasaki-seiho"
+          "name": "大崎高校",
+          "slug": "nagasaki-osaki"
         }
       ]
     },

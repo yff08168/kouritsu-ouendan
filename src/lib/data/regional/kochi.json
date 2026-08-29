@@ -153,8 +153,8 @@
           "display": "梼原",
           "score": 10,
           "won": true,
-          "name": "檮原高校",
-          "slug": "yusuhara"
+          "name": "梼原",
+          "slug": null
         },
         {
           "display": "岡豊",
@@ -321,8 +321,8 @@
           "display": "梼原",
           "score": 12,
           "won": true,
-          "name": "檮原高校",
-          "slug": "yusuhara"
+          "name": "梼原",
+          "slug": null
         }
       ]
     },
@@ -406,8 +406,8 @@
           "display": "梼原",
           "score": 0,
           "won": false,
-          "name": "檮原高校",
-          "slug": "yusuhara"
+          "name": "梼原",
+          "slug": null
         },
         {
           "display": "高知中央",
@@ -974,6 +974,2592 @@
       ]
     },
     {
+      "date": "2024-07-13",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "1回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "室戸・嶺北・高知海洋・幡多農・清水",
+          "score": 0,
+          "won": false,
+          "name": "室戸・嶺北・高知海洋・幡多農・清水",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "伊野商",
+          "score": 8,
+          "won": true,
+          "name": "伊野商業高校",
+          "slug": "inoshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-13",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "1回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知丸の内",
+          "score": 1,
+          "won": false,
+          "name": "高知丸の内高校",
+          "slug": "kochimarunochi"
+        },
+        {
+          "display": "須崎総合",
+          "score": 2,
+          "won": true,
+          "name": "須崎総合高校",
+          "slug": "susakisogo"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-13",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "高知工",
+          "score": 2,
+          "won": true,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        },
+        {
+          "display": "宿毛工",
+          "score": 0,
+          "won": false,
+          "name": "宿毛工業高校",
+          "slug": "sukumokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-13",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "土佐塾",
+          "score": 10,
+          "won": true,
+          "name": "土佐塾",
+          "slug": null
+        },
+        {
+          "display": "安芸",
+          "score": 2,
+          "won": false,
+          "name": "安芸高校",
+          "slug": "aki"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-14",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "伊野商",
+          "score": 1,
+          "won": false,
+          "name": "伊野商業高校",
+          "slug": "inoshogyo"
+        },
+        {
+          "display": "高知",
+          "score": 5,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-14",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知東工",
+          "score": 0,
+          "won": false,
+          "name": "高知東工業高校",
+          "slug": "kochihigashikogyo"
+        },
+        {
+          "display": "須崎総合",
+          "score": 2,
+          "won": true,
+          "name": "須崎総合高校",
+          "slug": "susakisogo"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-14",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "土佐",
+          "score": 10,
+          "won": true,
+          "name": "土佐",
+          "slug": null
+        },
+        {
+          "display": "高知東",
+          "score": 2,
+          "won": false,
+          "name": "高知東高校",
+          "slug": "kochihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-14",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "高知高専",
+          "score": 1,
+          "won": false,
+          "name": "高知工業高専",
+          "slug": "kochikogyo-kosen"
+        },
+        {
+          "display": "梼原",
+          "score": 8,
+          "won": true,
+          "name": "檮原高校",
+          "slug": "yusuhara"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-20",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "岡豊",
+          "score": 1,
+          "won": true,
+          "name": "岡豊高校",
+          "slug": "oko"
+        },
+        {
+          "display": "高知工",
+          "score": 0,
+          "won": false,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-20",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知農",
+          "score": 1,
+          "won": false,
+          "name": "高知農業高校",
+          "slug": "kochinogyo"
+        },
+        {
+          "display": "中村",
+          "score": 9,
+          "won": true,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-20",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "土佐塾",
+          "score": 2,
+          "won": false,
+          "name": "土佐塾",
+          "slug": null
+        },
+        {
+          "display": "明徳義塾",
+          "score": 4,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-20",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "高知国際",
+          "score": 1,
+          "won": true,
+          "name": "高知国際高校",
+          "slug": "kochikokusai"
+        },
+        {
+          "display": "追手前",
+          "score": 0,
+          "won": false,
+          "name": "高知追手前高校",
+          "slug": "kochiotemae"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-21",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "土佐",
+          "score": 1,
+          "won": false,
+          "name": "土佐",
+          "slug": null
+        },
+        {
+          "display": "小津",
+          "score": 4,
+          "won": true,
+          "name": "高知小津高校",
+          "slug": "kochiozu"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-21",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知商",
+          "score": 9,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "梼原",
+          "score": 2,
+          "won": false,
+          "name": "檮原高校",
+          "slug": "yusuhara"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-21",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知国際",
+          "score": 0,
+          "won": false,
+          "name": "高知国際高校",
+          "slug": "kochikokusai"
+        },
+        {
+          "display": "高知中央",
+          "score": 1,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-22",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "準々決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "須崎総合",
+          "score": 0,
+          "won": false,
+          "name": "須崎総合高校",
+          "slug": "susakisogo"
+        },
+        {
+          "display": "高知",
+          "score": 12,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-22",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "準々決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "岡豊",
+          "score": 0,
+          "won": false,
+          "name": "岡豊高校",
+          "slug": "oko"
+        },
+        {
+          "display": "中村",
+          "score": 7,
+          "won": true,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-23",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "準々決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 8,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "小津",
+          "score": 0,
+          "won": false,
+          "name": "高知小津高校",
+          "slug": "kochiozu"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-23",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "準々決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知商",
+          "score": 7,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "高知中央",
+          "score": 0,
+          "won": false,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-25",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "準決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "中村",
+          "score": 0,
+          "won": false,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        },
+        {
+          "display": "高知",
+          "score": 4,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-25",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "準決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知商",
+          "score": 2,
+          "won": false,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "明徳義塾",
+          "score": 7,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-27",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権高知大会",
+      "round": "決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知",
+          "score": 3,
+          "won": false,
+          "name": "高知",
+          "slug": null
+        },
+        {
+          "display": "明徳義塾",
+          "score": 5,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-15",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "1回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知工",
+          "score": 13,
+          "won": true,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        },
+        {
+          "display": "安芸",
+          "score": 4,
+          "won": false,
+          "name": "安芸高校",
+          "slug": "aki"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-15",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "1回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "須崎総合",
+          "score": 0,
+          "won": false,
+          "name": "須崎総合高校",
+          "slug": "susakisogo"
+        },
+        {
+          "display": "土佐塾",
+          "score": 1,
+          "won": true,
+          "name": "土佐塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-15",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "中村",
+          "score": 7,
+          "won": true,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        },
+        {
+          "display": "宿毛工",
+          "score": 5,
+          "won": false,
+          "name": "宿毛工業高校",
+          "slug": "sukumokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-15",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "土佐",
+          "score": 9,
+          "won": true,
+          "name": "土佐",
+          "slug": null
+        },
+        {
+          "display": "高知東工",
+          "score": 1,
+          "won": false,
+          "name": "高知東工業高校",
+          "slug": "kochihigashikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-16",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "中村",
+          "score": 2,
+          "won": false,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        },
+        {
+          "display": "明徳義塾",
+          "score": 3,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-16",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知東",
+          "score": 2,
+          "won": false,
+          "name": "高知東高校",
+          "slug": "kochihigashi"
+        },
+        {
+          "display": "土佐",
+          "score": 9,
+          "won": true,
+          "name": "土佐",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-16",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知中央",
+          "score": 4,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        },
+        {
+          "display": "高知工",
+          "score": 1,
+          "won": false,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-16",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "高知丸の内",
+          "score": 0,
+          "won": false,
+          "name": "高知丸の内高校",
+          "slug": "kochimarunochi"
+        },
+        {
+          "display": "追手前",
+          "score": 10,
+          "won": true,
+          "name": "高知追手前高校",
+          "slug": "kochiotemae"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-16",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "小津",
+          "score": 4,
+          "won": false,
+          "name": "高知小津高校",
+          "slug": "kochiozu"
+        },
+        {
+          "display": "梼原",
+          "score": 5,
+          "won": true,
+          "name": "梼原",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-16",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "高知高専",
+          "score": 10,
+          "won": true,
+          "name": "高知工業高専",
+          "slug": "kochikogyo-kosen"
+        },
+        {
+          "display": "室戸・嶺北・高知海洋・幡多農・清水",
+          "score": 5,
+          "won": false,
+          "name": "室戸・嶺北・高知海洋・幡多農・清水",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2023-07-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "追手前",
+          "score": 6,
+          "won": true,
+          "name": "高知追手前高校",
+          "slug": "kochiotemae"
+        },
+        {
+          "display": "高知国際",
+          "score": 5,
+          "won": false,
+          "name": "高知国際高校",
+          "slug": "kochikokusai"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知商",
+          "score": 6,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "梼原",
+          "score": 1,
+          "won": false,
+          "name": "梼原",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知高専",
+          "score": 2,
+          "won": false,
+          "name": "高知工業高専",
+          "slug": "kochikogyo-kosen"
+        },
+        {
+          "display": "伊野商",
+          "score": 9,
+          "won": true,
+          "name": "伊野商業高校",
+          "slug": "inoshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "2回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "岡豊",
+          "score": 6,
+          "won": true,
+          "name": "岡豊高校",
+          "slug": "oko"
+        },
+        {
+          "display": "高知農",
+          "score": 3,
+          "won": false,
+          "name": "高知農業高校",
+          "slug": "kochinogyo"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "2回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "土佐塾",
+          "score": 3,
+          "won": false,
+          "name": "土佐塾",
+          "slug": null
+        },
+        {
+          "display": "高知",
+          "score": 13,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-20",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "準々決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 5,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "土佐",
+          "score": 1,
+          "won": false,
+          "name": "土佐",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-20",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "準々決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知中央",
+          "score": 6,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        },
+        {
+          "display": "岡豊",
+          "score": 4,
+          "won": false,
+          "name": "岡豊高校",
+          "slug": "oko"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-21",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "準々決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "追手前",
+          "score": 0,
+          "won": false,
+          "name": "高知追手前高校",
+          "slug": "kochiotemae"
+        },
+        {
+          "display": "高知",
+          "score": 9,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-21",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "準々決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "伊野商",
+          "score": 0,
+          "won": false,
+          "name": "伊野商業高校",
+          "slug": "inoshogyo"
+        },
+        {
+          "display": "高知商",
+          "score": 7,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-23",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "準決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知中央",
+          "score": 2,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        },
+        {
+          "display": "明徳義塾",
+          "score": 1,
+          "won": false,
+          "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-23",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "準決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知商",
+          "score": 1,
+          "won": false,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "高知",
+          "score": 8,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-25",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権記念高知大会",
+      "round": "決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知中央",
+          "score": 4,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        },
+        {
+          "display": "高知",
+          "score": 3,
+          "won": false,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-09",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "1回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "追手前",
+          "score": 3,
+          "won": false,
+          "name": "高知追手前高校",
+          "slug": "kochiotemae"
+        },
+        {
+          "display": "高知西・高知国際",
+          "score": 7,
+          "won": true,
+          "name": "高知西・高知国際",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2022-07-09",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "1回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "小津",
+          "score": 5,
+          "won": true,
+          "name": "高知小津高校",
+          "slug": "kochiozu"
+        },
+        {
+          "display": "高知農",
+          "score": 1,
+          "won": false,
+          "name": "高知農業高校",
+          "slug": "kochinogyo"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-09",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "1回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "嶺北",
+          "score": 0,
+          "won": false,
+          "name": "嶺北高校",
+          "slug": "reihoku"
+        },
+        {
+          "display": "高知東工",
+          "score": 24,
+          "won": true,
+          "name": "高知東工業高校",
+          "slug": "kochihigashikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-09",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "土佐",
+          "score": 3,
+          "won": true,
+          "name": "土佐",
+          "slug": null
+        },
+        {
+          "display": "高知南",
+          "score": 1,
+          "won": false,
+          "name": "高知南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-09",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "高知東",
+          "score": 0,
+          "won": false,
+          "name": "高知東高校",
+          "slug": "kochihigashi"
+        },
+        {
+          "display": "梼原",
+          "score": 10,
+          "won": true,
+          "name": "梼原",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-09",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "土佐塾",
+          "score": 1,
+          "won": false,
+          "name": "土佐塾",
+          "slug": null
+        },
+        {
+          "display": "須崎総合",
+          "score": 7,
+          "won": true,
+          "name": "須崎総合高校",
+          "slug": "susakisogo"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-10",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "1回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知丸の内・高知海洋・幡多農・清水",
+          "score": 5,
+          "won": false,
+          "name": "高知丸の内・高知海洋・幡多農・清水",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "安芸・安芸桜ケ丘・室戸",
+          "score": 6,
+          "won": true,
+          "name": "安芸・安芸桜ケ丘・室戸",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2022-07-10",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "1回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "中村",
+          "score": 7,
+          "won": true,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        },
+        {
+          "display": "伊野商",
+          "score": 0,
+          "won": false,
+          "name": "伊野商業高校",
+          "slug": "inoshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "土佐",
+          "score": 0,
+          "won": false,
+          "name": "土佐",
+          "slug": null
+        },
+        {
+          "display": "明徳義塾",
+          "score": 7,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知高専",
+          "score": 0,
+          "won": false,
+          "name": "高知工業高専",
+          "slug": "kochikogyo-kosen"
+        },
+        {
+          "display": "梼原",
+          "score": 5,
+          "won": true,
+          "name": "梼原",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知商",
+          "score": 8,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "須崎総合",
+          "score": 3,
+          "won": false,
+          "name": "須崎総合高校",
+          "slug": "susakisogo"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "2回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "高知西・高知国際",
+          "score": 2,
+          "won": false,
+          "name": "高知西・高知国際",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "高知中央",
+          "score": 10,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "2回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "小津",
+          "score": 0,
+          "won": false,
+          "name": "高知小津高校",
+          "slug": "kochiozu"
+        },
+        {
+          "display": "高知",
+          "score": 7,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "2回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "高知東工",
+          "score": 1,
+          "won": false,
+          "name": "高知東工業高校",
+          "slug": "kochihigashikogyo"
+        },
+        {
+          "display": "岡豊",
+          "score": 4,
+          "won": true,
+          "name": "岡豊高校",
+          "slug": "oko"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-18",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知工",
+          "score": 8,
+          "won": true,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        },
+        {
+          "display": "安芸・安芸桜ケ丘・室戸",
+          "score": 0,
+          "won": false,
+          "name": "安芸・安芸桜ケ丘・室戸",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2022-07-18",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "2回戦",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "中村",
+          "score": 6,
+          "won": true,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        },
+        {
+          "display": "宿毛工",
+          "score": 0,
+          "won": false,
+          "name": "宿毛工業高校",
+          "slug": "sukumokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-20",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "準々決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 4,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "梼原",
+          "score": 1,
+          "won": false,
+          "name": "梼原",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-20",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "準々決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知中央",
+          "score": 6,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        },
+        {
+          "display": "高知商",
+          "score": 0,
+          "won": false,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-21",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "準々決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "高知",
+          "score": 7,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        },
+        {
+          "display": "岡豊",
+          "score": 2,
+          "won": false,
+          "name": "岡豊高校",
+          "slug": "oko"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-21",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "準々決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "中村",
+          "score": 4,
+          "won": true,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        },
+        {
+          "display": "高知工",
+          "score": 2,
+          "won": false,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-23",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "準決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 5,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "高知中央",
+          "score": 3,
+          "won": false,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-23",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "準決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "中村",
+          "score": 3,
+          "won": false,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        },
+        {
+          "display": "高知",
+          "score": 4,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-25",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 高知大会",
+      "round": "決勝",
+      "venue": "県営春野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 8,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "高知",
+          "score": 7,
+          "won": false,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "高知南",
+          "score": 3,
+          "won": false,
+          "name": "高知南",
+          "slug": null
+        },
+        {
+          "display": "土佐",
+          "score": 7,
+          "won": true,
+          "name": "土佐",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "梼原",
+          "score": 15,
+          "won": true,
+          "name": "梼原",
+          "slug": null
+        },
+        {
+          "display": "高知海洋",
+          "score": 0,
+          "won": false,
+          "name": "高知海洋高校",
+          "slug": "kochikaiyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "1回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知東",
+          "score": 0,
+          "won": false,
+          "name": "高知東高校",
+          "slug": "kochihigashi"
+        },
+        {
+          "display": "高知東工",
+          "score": 8,
+          "won": true,
+          "name": "高知東工業高校",
+          "slug": "kochihigashikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "1回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "伊野商",
+          "score": 7,
+          "won": true,
+          "name": "伊野商業高校",
+          "slug": "inoshogyo"
+        },
+        {
+          "display": "室戸・高知丸の内・幡多農・宿毛・清水",
+          "score": 4,
+          "won": false,
+          "name": "室戸・高知丸の内・幡多農・宿毛・清水",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2021-07-20",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "宿毛工",
+          "score": 7,
+          "won": true,
+          "name": "宿毛工業高校",
+          "slug": "sukumokogyo"
+        },
+        {
+          "display": "高知高専",
+          "score": 0,
+          "won": false,
+          "name": "高知工業高専",
+          "slug": "kochikogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-20",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "中村",
+          "score": 2,
+          "won": true,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        },
+        {
+          "display": "高知西・高知国際",
+          "score": 1,
+          "won": false,
+          "name": "高知西・高知国際",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2021-07-20",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "1回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知農",
+          "score": 10,
+          "won": true,
+          "name": "高知農業高校",
+          "slug": "kochinogyo"
+        },
+        {
+          "display": "安芸",
+          "score": 2,
+          "won": false,
+          "name": "安芸高校",
+          "slug": "aki"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-20",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "1回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "岡豊",
+          "score": 3,
+          "won": true,
+          "name": "岡豊高校",
+          "slug": "oko"
+        },
+        {
+          "display": "土佐塾",
+          "score": 2,
+          "won": false,
+          "name": "土佐塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-21",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "2回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "伊野商",
+          "score": 3,
+          "won": false,
+          "name": "伊野商業高校",
+          "slug": "inoshogyo"
+        },
+        {
+          "display": "高知商",
+          "score": 7,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-21",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "2回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "小津",
+          "score": 1,
+          "won": false,
+          "name": "高知小津高校",
+          "slug": "kochiozu"
+        },
+        {
+          "display": "高知東工",
+          "score": 2,
+          "won": true,
+          "name": "高知東工業高校",
+          "slug": "kochihigashikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-21",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "2回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "土佐",
+          "score": 1,
+          "won": false,
+          "name": "土佐",
+          "slug": null
+        },
+        {
+          "display": "明徳義塾",
+          "score": 8,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-21",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "2回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知工",
+          "score": 3,
+          "won": false,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        },
+        {
+          "display": "梼原",
+          "score": 5,
+          "won": true,
+          "name": "梼原",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-22",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "2回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "高知農",
+          "score": 0,
+          "won": false,
+          "name": "高知農業高校",
+          "slug": "kochinogyo"
+        },
+        {
+          "display": "高知中央",
+          "score": 7,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-22",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "2回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "須崎総合",
+          "score": 5,
+          "won": false,
+          "name": "須崎総合高校",
+          "slug": "susakisogo"
+        },
+        {
+          "display": "岡豊",
+          "score": 12,
+          "won": true,
+          "name": "岡豊高校",
+          "slug": "oko"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-22",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "2回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "宿毛工",
+          "score": 1,
+          "won": false,
+          "name": "宿毛工業高校",
+          "slug": "sukumokogyo"
+        },
+        {
+          "display": "高知",
+          "score": 8,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-22",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "2回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "中村",
+          "score": 1,
+          "won": false,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        },
+        {
+          "display": "追手前",
+          "score": 5,
+          "won": true,
+          "name": "高知追手前高校",
+          "slug": "kochiotemae"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-23",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "準々決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 10,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "梼原",
+          "score": 1,
+          "won": false,
+          "name": "梼原",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-23",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "準々決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知東工",
+          "score": 1,
+          "won": false,
+          "name": "高知東工業高校",
+          "slug": "kochihigashikogyo"
+        },
+        {
+          "display": "高知商",
+          "score": 3,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-24",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "準々決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "追手前",
+          "score": 3,
+          "won": false,
+          "name": "高知追手前高校",
+          "slug": "kochiotemae"
+        },
+        {
+          "display": "高知",
+          "score": 10,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-24",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "準々決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "岡豊",
+          "score": 0,
+          "won": false,
+          "name": "岡豊高校",
+          "slug": "oko"
+        },
+        {
+          "display": "高知中央",
+          "score": 10,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-26",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "準決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知商",
+          "score": 8,
+          "won": false,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "明徳義塾",
+          "score": 10,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-26",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "準決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知",
+          "score": 10,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        },
+        {
+          "display": "高知中央",
+          "score": 3,
+          "won": false,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-28",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 高知大会",
+      "round": "決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 5,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "高知",
+          "score": 3,
+          "won": false,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "高知工",
+          "score": 10,
+          "won": true,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        },
+        {
+          "display": "須崎総合",
+          "score": 0,
+          "won": false,
+          "name": "須崎総合高校",
+          "slug": "susakisogo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "高知海洋",
+          "score": 0,
+          "won": false,
+          "name": "高知海洋高校",
+          "slug": "kochikaiyo"
+        },
+        {
+          "display": "宿毛工",
+          "score": 21,
+          "won": true,
+          "name": "宿毛工業高校",
+          "slug": "sukumokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "1回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "梼原",
+          "score": 10,
+          "won": true,
+          "name": "梼原",
+          "slug": null
+        },
+        {
+          "display": "高知西",
+          "score": 4,
+          "won": false,
+          "name": "高知西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "1回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "伊野商",
+          "score": 6,
+          "won": true,
+          "name": "伊野商業高校",
+          "slug": "inoshogyo"
+        },
+        {
+          "display": "連合",
+          "score": 3,
+          "won": false,
+          "name": "連合",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "高知",
+          "score": 8,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        },
+        {
+          "display": "中村",
+          "score": 0,
+          "won": false,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "1回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知東",
+          "score": 0,
+          "won": false,
+          "name": "高知東高校",
+          "slug": "kochihigashi"
+        },
+        {
+          "display": "土佐",
+          "score": 7,
+          "won": true,
+          "name": "土佐",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "1回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "小津",
+          "score": 11,
+          "won": true,
+          "name": "高知小津高校",
+          "slug": "kochiozu"
+        },
+        {
+          "display": "安芸",
+          "score": 4,
+          "won": false,
+          "name": "安芸高校",
+          "slug": "aki"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "2回戦",
+      "venue": "高知東部球場",
+      "teams": [
+        {
+          "display": "梼原",
+          "score": 2,
+          "won": false,
+          "name": "梼原",
+          "slug": null
+        },
+        {
+          "display": "高知商",
+          "score": 9,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "2回戦",
+      "venue": "高知東部球場",
+      "teams": [
+        {
+          "display": "土佐塾",
+          "score": 9,
+          "won": false,
+          "name": "土佐塾",
+          "slug": null
+        },
+        {
+          "display": "高知南",
+          "score": 10,
+          "won": true,
+          "name": "高知南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "2回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知農",
+          "score": 7,
+          "won": false,
+          "name": "高知農業高校",
+          "slug": "kochinogyo"
+        },
+        {
+          "display": "高知工",
+          "score": 11,
+          "won": true,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "2回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "宿毛工",
+          "score": 1,
+          "won": false,
+          "name": "宿毛工業高校",
+          "slug": "sukumokogyo"
+        },
+        {
+          "display": "明徳義塾",
+          "score": 5,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "2回戦",
+      "venue": "高知東部球場",
+      "teams": [
+        {
+          "display": "土佐",
+          "score": 3,
+          "won": false,
+          "name": "土佐",
+          "slug": null
+        },
+        {
+          "display": "岡豊",
+          "score": 6,
+          "won": true,
+          "name": "岡豊高校",
+          "slug": "oko"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "2回戦",
+      "venue": "高知東部球場",
+      "teams": [
+        {
+          "display": "高知東工",
+          "score": 6,
+          "won": true,
+          "name": "高知東工業高校",
+          "slug": "kochihigashikogyo"
+        },
+        {
+          "display": "小津",
+          "score": 2,
+          "won": false,
+          "name": "高知小津高校",
+          "slug": "kochiozu"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "2回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "伊野商",
+          "score": 4,
+          "won": false,
+          "name": "伊野商業高校",
+          "slug": "inoshogyo"
+        },
+        {
+          "display": "高知中央",
+          "score": 10,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "2回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "追手前",
+          "score": 7,
+          "won": false,
+          "name": "高知追手前高校",
+          "slug": "kochiotemae"
+        },
+        {
+          "display": "高知",
+          "score": 12,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-28",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "準々決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知工",
+          "score": 1,
+          "won": false,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        },
+        {
+          "display": "明徳義塾",
+          "score": 8,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-28",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "準々決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知商",
+          "score": 5,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "高知南",
+          "score": 3,
+          "won": false,
+          "name": "高知南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "準々決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知中央",
+          "score": 1,
+          "won": false,
+          "name": "高知中央",
+          "slug": null
+        },
+        {
+          "display": "高知",
+          "score": 11,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "準々決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知東工",
+          "score": 1,
+          "won": false,
+          "name": "高知東工業高校",
+          "slug": "kochihigashikogyo"
+        },
+        {
+          "display": "岡豊",
+          "score": 9,
+          "won": true,
+          "name": "岡豊高校",
+          "slug": "oko"
+        }
+      ]
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "準決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知商",
+          "score": 0,
+          "won": false,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "明徳義塾",
+          "score": 10,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "準決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知",
+          "score": 4,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        },
+        {
+          "display": "岡豊",
+          "score": 2,
+          "won": false,
+          "name": "岡豊高校",
+          "slug": "oko"
+        }
+      ]
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020 高知県高等学校夏季特別野球大会",
+      "round": "決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知",
+          "score": 3,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        },
+        {
+          "display": "明徳義塾",
+          "score": 2,
+          "won": false,
+          "name": "明徳義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-07-12",
       "season": "summer",
       "tournament": "第107回全国高等学校野球選手権高知大会",
@@ -1152,8 +3738,8 @@
           "display": "梼原",
           "score": 1,
           "won": false,
-          "name": "檮原高校",
-          "slug": "yusuhara"
+          "name": "梼原",
+          "slug": null
         }
       ]
     },
@@ -2236,8 +4822,8 @@
           "display": "梼原",
           "score": 10,
           "won": true,
-          "name": "檮原高校",
-          "slug": "yusuhara"
+          "name": "梼原",
+          "slug": null
         }
       ]
     },
@@ -2368,8 +4954,8 @@
           "display": "梼原",
           "score": 1,
           "won": false,
-          "name": "檮原高校",
-          "slug": "yusuhara"
+          "name": "梼原",
+          "slug": null
         },
         {
           "display": "高知商",

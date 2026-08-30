@@ -2937,29 +2937,6 @@
       "venue": "長良川球場",
       "teams": [
         {
-          "display": "揖斐",
-          "score": 0,
-          "won": false,
-          "name": "揖斐高校",
-          "slug": "ibi"
-        },
-        {
-          "display": "岐阜城北",
-          "score": 0,
-          "won": false,
-          "name": "岐阜城北高校",
-          "slug": "gifujohoku"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-09",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権岐阜大会",
-      "round": "1回戦",
-      "venue": "長良川球場",
-      "teams": [
-        {
           "display": "岐阜東",
           "score": 8,
           "won": true,
@@ -2972,29 +2949,6 @@
           "won": false,
           "name": "八百津高校",
           "slug": "yaotsu"
-        }
-      ]
-    },
-    {
-      "date": "2022-07-09",
-      "season": "summer",
-      "tournament": "第104回全国高等学校野球選手権岐阜大会",
-      "round": "1回戦",
-      "venue": "長良川球場",
-      "teams": [
-        {
-          "display": "大垣工",
-          "score": 0,
-          "won": false,
-          "name": "大垣工業高校",
-          "slug": "ogakikogyo"
-        },
-        {
-          "display": "岐阜高専",
-          "score": 0,
-          "won": false,
-          "name": "岐阜工業高専",
-          "slug": "gifukogyo-kosen"
         }
       ]
     },

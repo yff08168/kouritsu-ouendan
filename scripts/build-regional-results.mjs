@@ -404,6 +404,14 @@ const nagano = {
         if (items.length < 5) continue;
         const [home, sa, , sb, away] = items;
         if (!home.text || !away.text) continue;
+        /*
+          ★★**得点の欄が空のときに 0 と読まないこと**（2026-08-30 その2）。
+          **`Number("")` は NaN ではなく `0`** なので `Number.isFinite` では止まらず、
+          **中止・未実施の枠が「0対0の引き分け」として画面に出る**
+          （島根で87件・栃木で10件・佐賀で7件やっていたのと同じ形。
+          長野ではいまのところ0件だが、**歯止めは実データが出る前に入れておく**）。
+        */
+        if (!sa.text.trim() || !sb.text.trim()) continue;
         const scoreA = Number(sa.text);
         const scoreB = Number(sb.text);
         if (!Number.isFinite(scoreA) || !Number.isFinite(scoreB)) continue;
@@ -774,6 +782,43 @@ function inningTotal(cells) {
 }
 
 /**
+ * ★★★**イニング表の合計は「計」の列から読む**（2026-08-30 その2）。
+ *
+ *   ★**中断した試合は「計」が空で刷られる**（雨天中断。翌日に改めて行われる）。
+ *   `inningTotal` は**後ろから最初の数字**を返すので、**最終回の得点を合計として拾う。**
+ *   両校の最終回が 0 なら **0対0 の幻の引き分け**になる
+ *   （島根で87件・山梨で2件やっていたのと同じ形。実測で佐賀に7件あった）。
+ *
+ *     ["","1","2","3","4","5","6","7","8","9","10","計"]   ← 見出し
+ *     ["鳥 栖","1","0","","","","","","","","",""]         ← 計が空（中断）
+ *     ["佐賀西","1","0","","","","","","","","",""]
+ *
+ *   ★**見出しに「計」がある表だけ、その列を見る。**
+ *   無い表は今までどおり（`inningTotal`）なので、**他県の生成物は変わらない。**
+ *   ★**0対0の引き分けそのものは実在する**（引き分け再試合）ので、
+ *   **「空かどうか」で見ること。「0かどうか」で見ると本物を捨てる。**
+ */
+function totalReader(rows) {
+  const isTotal = (c) => normalize(String(c ?? "")).trim() === "計";
+  const header = rows.find((r) => r.some(isTotal));
+  const at = header ? header.findIndex(isTotal) : -1;
+  return (row) => {
+    if (at < 0 || at >= row.length) return inningTotal(row);
+    /*
+      ★★**サヨナラ勝ちは「計」にも印が付く**（`5×` `1×` `3×`。2026-08-30 その2）。
+      **`Number("5×")` は NaN** なので、そのままでは合計が読めない。
+      ★**印を落として読む。** それまでは `inningTotal` が**読めないセルを飛ばして
+      手前のイニングを合計として返していた**ので、
+      **延長サヨナラで決まった試合の得点が丸ごと違っていた**
+      （`高志館 4-0 塩田工` … 紙は `4` 対 `5×`。佐賀の2016年だけで11試合）。
+    */
+    const cell = normalize(String(row[at] ?? "")).trim().replace(/[xX×]$/, "");
+    const v = Number(cell);
+    return cell !== "" && Number.isFinite(v) ? v : null;
+  };
+}
+
+/**
  * 山梨県高等学校野球連盟（`yamanashi-hbf.com`）。
  *
  * **規約に転載の制限は無い**（2026-08-13 に トップ・お問合せ・結果ページを確認）。
@@ -955,6 +1000,28 @@ const yamanashi = {
         const a = totalOf(homeRow);
         const b = totalOf(awayRow);
         if (a === null || b === null) continue;
+        /*
+          ★★★**「計」が両校とも 0 なのに、イニングに点が入っている表がある**
+          （2026-08-30 その2。出典の打ち間違い）。
+
+            ["韮崎工業","0","0","02","0","0","","","","","0"]   ← 計が 0
+            ["駿台甲府","4","3","3","1","x","","","","","0"]     ← 計が 0
+
+          そのまま出すと **`韮崎工業 0-0 駿台甲府` という幻の引き分け**になる
+          （実際に画面に出ていた。紙の枝では駿台甲府が5回コールドで勝っている）。
+          ★★**0対0の引き分けは実在する**ので消してよいのは**この形だけ** ——
+          **本物の 0対0 ならイニングもすべて 0。**
+          ★**イニングから合計を組み立て直さない**（`02` のような打ち間違いがあり、
+          10点以上を丸数字で書く紙もある。**推測で数字を作らない**）。**その試合を出さない。**
+        */
+        const scored = (r) =>
+          r.some((c, i) => i > 0 && i !== totalAt && /^[1-9][0-9]*$/.test(normalize(String(c ?? "")).trim()));
+        if (a === 0 && b === 0 && (scored(homeRow) || scored(awayRow))) {
+          console.log(
+            `  ⚠️ 山梨: ${homeRow[0]} と ${awayRow[0]} は「計」が両方 0 なのにイニングに点がある。この試合は出さない`,
+          );
+          continue;
+        }
 
         games.push({
           date: isoDate,
@@ -1249,8 +1316,25 @@ const kumamoto = {
           スコアだけ前の試合の使い回しが残っていることがある。落とすこと。
         */
         if (!home || !away || /^-+$/.test(home) || /^-+$/.test(away)) continue;
-        const a = inningTotal(homeRow);
-        const b = inningTotal(awayRow);
+        /*
+          ★★★**合計は行のいちばん最後のセル。読めなければその試合を出さない**
+          （2026-08-30 その2）。**この表には見出しが無い**（`計` の字が刷られていない）ので、
+          `totalReader` は使えない。
+
+          ★★**サヨナラ勝ちは合計に印が付く**（`7X` `10x`）。**`Number("7X")` は NaN。**
+          `inningTotal` は**読めないセルを飛ばして手前を返す**ので、
+          **サヨナラ勝ちの側の得点が「最終回の得点」になっていた** ——
+          実測で**6件が 0対0 の引き分け**として画面に出ていた
+          （`鹿本商工 0-0 学園大付属`。紙は `0` 対 `7X`）。
+          ★**印を落として読む。落としたあとが数字でなければ出さない。**
+          ★**空欄も同じく出さない**（中断した試合。翌日に改めて行われる）。
+        */
+        const readTotal = (r) => {
+          const cell = normalize(String(r.at(-1) ?? "")).trim().replace(/[xX×]$/, "");
+          return /^\d+$/.test(cell) ? Number(cell) : null;
+        };
+        const a = readTotal(homeRow);
+        const b = readTotal(awayRow);
         if (a === null || b === null) continue;
 
         games.push({
@@ -1779,8 +1863,10 @@ const saga = {
           const home = homeRow[0];
           const away = awayRow[0];
           if (!home || !away) continue;
-          const a = inningTotal(homeRow);
-          const b = inningTotal(awayRow);
+          // ★**合計は「計」の列から**（中断した試合は空。上の `totalReader` を読むこと）
+          const total = totalReader(rows);
+          const a = total(homeRow);
+          const b = total(awayRow);
           if (a === null || b === null) continue;
 
           games.push({
@@ -5567,7 +5653,24 @@ const gifu = {
       if (head < 0 || rows.length < head + 3) continue;
       const [a, b] = rows.slice(head + 1, head + 3);
       const name = (r) => r[0];
-      const total = (r) => Number(r.at(-1));
+      /*
+        ★★★**「計」が空の表がある**（2026-08-30 その2）。**雨で中断した試合。**
+
+          ["第１試合","１","２","３","４","５","６","７","８","９","計"]
+          ["揖斐","0","0","1","","","","","","",""]      ← 計が空（7/9に中断）
+          ["岐阜城北","0","0","2","","","","","","",""]
+
+        翌週に改めて行われ、そちらは計まで埋まっている（7/16 岐阜城北 11-1 揖斐）。
+        ★★**`Number("")` は NaN ではなく `0`** なので、`Number.isFinite` では止まらず、
+        **`揖斐 0-0 岐阜城北` という幻の引き分けが2件、画面に出ていた**
+        （島根で87件・山梨で2件やっていたのと同じ形）。
+        ★**0対0の引き分けそのものは実在する**（このリポジトリの `市岐阜商 0-0 県岐阜商`）ので、
+        **「空かどうか」で見ること。「0かどうか」で見ると本物を捨てる。**
+      */
+      const total = (r) => {
+        const c = String(r.at(-1) ?? "").trim();
+        return c === "" ? NaN : Number(c);
+      };
       if (!name(a) || !name(b) || !Number.isFinite(total(a)) || !Number.isFinite(total(b))) continue;
       games.push({
         date,
@@ -9781,25 +9884,74 @@ const tochigi = {
         normalize(plain(block.match(/<td>\s*[（(]([^）)]*?[回戦決勝][^）)]*?)[）)]\s*<\/td>/)?.[1] ?? "")),
       );
       /*
+        ★★★**「ノーゲーム」と書いてある試合は出さない**（2026-08-30 その2）。
+
+          矢 板 | 0 | 0 | 0 | 0 | 雷雨のためノーゲーム | 0
+          鹿 沼 | ３ | 0 | 0 | １ | 0
+          備考  16:49 雷雨ノーゲーム
+
+        **成立しなかった試合**なので、翌日に改めて行われる（この試合は翌日 鹿沼 7-0 矢板）。
+        ★**そのまま読むと `矢板 0-0 鹿沼` という幻の引き分けになる** ——
+        **出典が「0」と刷っている**ので、空欄を見るだけでは止められない。
+        ★**出典自身が「ノーゲーム」と書いているのだから、それを読む。推測ではない。**
+        ★甲子園の記事でも**ノーゲームは試合として出さない**と決めてある（AGENTS.md）。
+      */
+      if (/ノーゲーム/.test(normalize(plain(block)))) continue;
+      /*
         ★**イニングスコアの表は `div.board` の中。**
         1行目は見出し（校名 1 2 3 … 計）なので、**`<th>` を持つ行のうち
         2行目・3行目**が両校。
       */
       const board = block.match(/<div class="board">([\s\S]*?)<\/div>/)?.[1] ?? "";
       const rows = [...board.matchAll(/<tr>([\s\S]*?)<\/tr>/g)].map((r) => r[1]);
+      const nameOf = (row) =>
+        normalize(plain(row.match(/<th[^>]*>([\s\S]*?)<\/th>/)?.[1] ?? "")).replace(/\s+/g, "");
+      /*
+        ★★**`&#160;` を空白に直してからセルを読む**（2026-08-30 その2）。
+        `plain()` が直すのは `&nbsp;` だけなので、**数実体のほうはそのまま残り**、
+        `5&#160;` が数として読めずに合計が落ちる（2026年春の紙がこの書き方）。
+      */
+      const cellsOf = (row) =>
+        [...row.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map((t) =>
+          normalize(plain(t[1]).replace(/&#(?:160|xa0);/gi, " ")).replace(/\s+/g, ""),
+        );
+      /*
+        ★★★**合計は「計」の列。見出し行から位置を取る**（2026-08-30 その2）。
+        それまでは**行のいちばん最後の `<td>`** を合計としていたが、
+        **末尾に空のセルが1つ余る紙がある**（2026年春）。
+        **`Number("")` は NaN ではなく `0`** なので `Number.isFinite` では止まらず、
+        **`宇都宮南 0-0 國學院栃木`（本当は 5-8）という幻の引き分け**になっていた。
+      */
+      const header = rows.find((r) => nameOf(r) === "校名");
+      const totalAt = header ? cellsOf(header).findIndex((c) => c === "計") : -1;
       const teams = [];
       for (const row of rows) {
-        const name = normalize(plain(row.match(/<th[^>]*>([\s\S]*?)<\/th>/)?.[1] ?? "")).replace(/\s+/g, "");
+        const name = nameOf(row);
         if (!name || name === "校名") continue;
         /*
-          ★**合計はその行のいちばん最後の `<td>`。**
-          コールドの注記が `rowspan="2" colspan="8"` のセルとして
-          **合計の手前に割り込む**ので、「N番目の td」では取れない。
+          ★★**出典のひな形の行がある**（2026-08-30 その2）。
+          校名が `●●`、イニングが全部 0、合計も 0 という行が紙面に残っており、
+          **`●● 0-0 ●●` という実在しない試合が2件、画面に出ていた。**
+          ★**記号だけの校名は学校ではない。無条件に出さない。**
+          ★**片方を落とせば「校名2つが揃わない」で試合ごと落ちる**（下の `teams.length !== 2`）。
         */
-        const tds = [...row.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map((t) =>
-          normalize(plain(t[1])).replace(/\s+/g, ""),
-        );
-        const total = tds.length ? Number(tds.at(-1)) : NaN;
+        if (/^[●○◯■□◆◇▲△▼▽★☆※〇〓・]+$/.test(name)) continue;
+        const tds = cellsOf(row);
+        /*
+          ★**コールドの注記が `rowspan="2" colspan="8"` のセルとして割り込む**ので、
+          **その行だけ見出しより短くなる**（`3 0 0 0 0 1 0 4 8回コールド 8`）。
+          そのときは今までどおり**行のいちばん最後**を合計とする。
+        */
+        const at = totalAt >= 0 && totalAt < tds.length ? totalAt : tds.length - 1;
+        /*
+          ★★★**「計」の欄が空なら、その1つ手前を見る**（末尾に空セルが余る紙）。
+          ★**そこも空なら合計が読めない** ——
+          **中断した試合**（`足利 0 | | | … |`）がこれで、
+          翌日に改めて行われる。**空欄を 0 と読むと幻の引き分けになる。**
+          ★**0対0の引き分けそのものは実在する**ので、**「空かどうか」で見ること。**
+        */
+        const cell = tds[at] !== "" && tds[at] !== undefined ? tds[at] : (tds[at - 1] ?? "");
+        const total = cell === "" ? NaN : Number(cell);
         if (!Number.isFinite(total)) continue;
         teams.push({ name, total });
       }
@@ -11262,11 +11414,32 @@ const iwate = {
           ★合計は `=` の右なので、イニングの中身は読まなくてよい。
         */
         const r = line.match(/^(\S+?)[\s]+([0-9０-９\s　xX×Ｘ①-⑳]*?)[=＝]\s*(\d+)/);
-        if (r) rows.push({ name: r[1], score: Number(r[3]) });
+        // ★イニングの側も持っておく（下の「合計が 0 なのに点が入っている」の見分けに使う）
+        if (r) rows.push({ name: r[1], innings: r[2], score: Number(r[3]) });
         if (rows.length === 2) break;
       }
       if (rows.length !== 2 || !rows[0].name || !rows[1].name) continue;
       const [a, b] = rows;
+      /*
+        ★★★**`=` の右の合計が打ち間違えられている記事がある**（2026-08-30 その2）。
+
+          盛岡工 000 000 0=0
+          一関学院 031 012 X=0   ← イニングは 7 点入っているのに合計が 0
+
+        そのまま出すと **`盛岡工 0-0 一関学院` という幻の引き分け**になる
+        （実際に画面に出ていた。7回コールドなので引き分けではない）。
+        ★★**0対0の引き分けは実在する**ので消してよいのは**この形だけ** ——
+        **本物の 0対0 ならイニングもすべて 0。**
+        ★**イニングから合計を組み立て直さない**（丸数字で書かれる回があり、推測になる）。
+        **その試合を出さない。**
+      */
+      const scored = (t) => /[1-9①-⑳]/.test(String(t.innings ?? ""));
+      if (a.score === 0 && b.score === 0 && (scored(a) || scored(b))) {
+        console.log(
+          `  ⚠️ 岩手: ${a.name} と ${b.name} は合計が両方 0 なのにイニングに点がある。この試合は出さない`,
+        );
+        continue;
+      }
       out.push({
         date,
         season,
@@ -14440,6 +14613,37 @@ async function main() {
       console.log(
         `  ⚠️ ${key.replace("\t", " / ")}: ${round}が${actual}試合（${expected}試合のはず）。` +
           (actual < expected ? "試合が欠けている" : "別の大会が混ざっている"),
+      );
+    }
+  }
+
+  /*
+    ★★★**0対0の試合は、同じ大会に同じ顔合わせがもう1試合あるはず**（2026-08-30 その2）。
+
+    高校野球の引き分けは**再試合**になるので、**本物の引き分けなら必ず対になる試合がある**
+    （山口の `西市 0-0 下関商`→翌日 2-3、宮崎の `小林秀峰 0-0 都城農業`→翌日 11-5）。
+    ★**対が無い 0対0 は、たいてい出典の読み違いか、中断した試合の空欄を 0 と読んだもの。**
+    実際にこれで**沖縄の `宮古工 0-0 美里工`**（美里工が2回戦に進んでいるのに引き分け）と
+    **富山の `南砺福野 0-0 不二越工業`**（紙に片方の得点しか刷られていない）が見つかった。
+
+    ★**落とさずに警告に留める。** 大会によっては引き分けのまま抽選で決めることもあり、
+    **「対が無い＝必ず誤り」ではない。** 紙を見て判断するのは人の仕事。
+    ★**`Number("") === 0` を踏んだ県は、まずここに出る**（島根87件・栃木10件・佐賀7件）。
+  */
+  for (const d of districts) {
+    for (const g of d.allGames) {
+      if (g.teams?.[0]?.score !== 0 || g.teams?.[1]?.score !== 0) continue;
+      const names = g.teams.map((t) => t.display);
+      const again = d.allGames.some(
+        (o) =>
+          o !== g &&
+          o.tournament === g.tournament &&
+          names.every((n) => o.teams.some((t) => t.display === n)),
+      );
+      if (again) continue;
+      console.log(
+        `  ⚠️ ${d.slug} / ${g.tournament ?? ""}: ${names.join(" 0-0 ")}` +
+          `（${g.date ?? "日付なし"}）は引き分けなのに再試合が無い。出典を見ること`,
       );
     }
   }

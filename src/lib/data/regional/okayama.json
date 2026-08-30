@@ -7585,6 +7585,237 @@
       ]
     },
     {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "なりわ運動公園野球場",
+      "teams": [
+        {
+          "display": "金光",
+          "score": 7,
+          "won": true,
+          "name": "金光",
+          "slug": null
+        },
+        {
+          "display": "倉敷工",
+          "score": 5,
+          "won": false,
+          "name": "倉敷工業高校",
+          "slug": "kurashikikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "なりわ運動公園野球場",
+      "teams": [
+        {
+          "display": "古城池",
+          "score": 1,
+          "won": false,
+          "name": "倉敷古城池高校",
+          "slug": "kurashikikojochi"
+        },
+        {
+          "display": "青陵",
+          "score": 8,
+          "won": true,
+          "name": "倉敷青陵高校",
+          "slug": "kurashikiseiryo"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "興譲館野球場",
+      "teams": [
+        {
+          "display": "倉敷",
+          "score": 1,
+          "won": false,
+          "name": "倉敷",
+          "slug": null
+        },
+        {
+          "display": "興譲館",
+          "score": 8,
+          "won": true,
+          "name": "興譲館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "就実グラウンド",
+      "teams": [
+        {
+          "display": "御津・鷲羽・緑陽",
+          "score": 2,
+          "won": false,
+          "name": "御津・鷲羽・緑陽",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "就実",
+          "score": 12,
+          "won": true,
+          "name": "就実",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "就実グラウンド",
+      "teams": [
+        {
+          "display": "大安寺",
+          "score": 11,
+          "won": true,
+          "name": "岡山大安寺中等教育学校",
+          "slug": "okayamadaianji"
+        },
+        {
+          "display": "興陽",
+          "score": 5,
+          "won": false,
+          "name": "興陽高校",
+          "slug": "okayama-koyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "瀬戸町総合運動公園球場",
+      "teams": [
+        {
+          "display": "邑久瀬戸",
+          "score": 0,
+          "won": false,
+          "name": "邑久瀬戸",
+          "slug": null
+        },
+        {
+          "display": "関西",
+          "score": 25,
+          "won": true,
+          "name": "関西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "瀬戸町総合運動公園球場",
+      "teams": [
+        {
+          "display": "岡山吉備白陵",
+          "score": 1,
+          "won": false,
+          "name": "岡山吉備白陵",
+          "slug": null
+        },
+        {
+          "display": "東岡工",
+          "score": 25,
+          "won": true,
+          "name": "東岡山工業高校",
+          "slug": "higashiokayamakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "美咲エイコンスタジアム",
+      "teams": [
+        {
+          "display": "津山商",
+          "score": 6,
+          "won": true,
+          "name": "津山商業高校",
+          "slug": "tsuyamashogyo"
+        },
+        {
+          "display": "津山工",
+          "score": 3,
+          "won": false,
+          "name": "津山工業高校",
+          "slug": "tsuyamakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "美咲エイコンスタジアム",
+      "teams": [
+        {
+          "display": "津山",
+          "score": 17,
+          "won": true,
+          "name": "津山高校",
+          "slug": "tsuyama"
+        },
+        {
+          "display": "津山高専",
+          "score": 5,
+          "won": false,
+          "name": "津山工業高専",
+          "slug": "tsuyamakogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "邑久スポーツ公園野球場",
+      "teams": [
+        {
+          "display": "岡山東商",
+          "score": 13,
+          "won": true,
+          "name": "岡山東商業高校",
+          "slug": "okayamahigashishogyo"
+        },
+        {
+          "display": "岡山南",
+          "score": 1,
+          "won": false,
+          "name": "岡山南高校",
+          "slug": "okayamaminami"
+        }
+      ]
+    },
+    {
       "date": "2024-09-01",
       "season": "autumn",
       "tournament": "令和6年度 秋季岡山県高等学校野球大会 地区予選",

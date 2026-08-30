@@ -4,7 +4,7 @@
 import type { RegionalPickups } from "@/lib/regional-results";
 
 export const REGIONAL_PICKUPS: RegionalPickups = {
-  "latestDate": "2026-08-29",
+  "latestDate": "2026-08-30",
   "spotlightSeason": "autumn",
   "spotlight": [
     {
@@ -22,6 +22,15 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "name": "倉敷青陵高校",
       "district": "岡山",
       "districtSlug": "okayama",
+      "wins": 2,
+      "standing": null
+    },
+    {
+      "slug": "higashiokayamakogyo",
+      "display": "東岡工",
+      "name": "東岡山工業高校",
+      "district": "岡山",
+      "districtSlug": "okayama",
       "wins": 1,
       "standing": null
     }
@@ -32,50 +41,24 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "district": "長野",
       "sourceName": "長野県高等学校野球連盟",
       "sourceUrl": "https://www.nagano-hbf.jp/",
-      "date": "2026-08-29",
+      "date": "2026-08-30",
       "season": "autumn",
-      "tournament": "第155回 北信越地区高等学校野球長野県大会 東信予選会",
-      "round": "1回戦",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 北信予選会",
+      "round": "2回戦",
       "teams": [
         {
-          "display": "佐久平総合技術",
-          "score": 10,
-          "won": false,
-          "name": "佐久平総合技術高校",
-          "slug": "sakudairasogogijutsu"
-        },
-        {
-          "display": "蓼科",
-          "score": 11,
-          "won": true,
-          "name": "蓼科高校",
-          "slug": "tateshina"
-        }
-      ]
-    },
-    {
-      "districtSlug": "nagano",
-      "district": "長野",
-      "sourceName": "長野県高等学校野球連盟",
-      "sourceUrl": "https://www.nagano-hbf.jp/",
-      "date": "2026-08-29",
-      "season": "autumn",
-      "tournament": "第155回 北信越地区高等学校野球長野県大会 東信予選会",
-      "round": "1回戦",
-      "teams": [
-        {
-          "display": "上田染谷丘",
+          "display": "中野西",
           "score": 0,
           "won": false,
-          "name": "上田染谷丘高校",
-          "slug": "uedasomeyagaoka"
+          "name": "中野西高校",
+          "slug": "nakanonishi"
         },
         {
-          "display": "岩村田",
-          "score": 5,
+          "display": "長野商業",
+          "score": 16,
           "won": true,
-          "name": "岩村田高校",
-          "slug": "iwamurada"
+          "name": "長野商業高校",
+          "slug": "naganoshogyo"
         }
       ]
     },
@@ -84,24 +67,362 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "district": "長野",
       "sourceName": "長野県高等学校野球連盟",
       "sourceUrl": "https://www.nagano-hbf.jp/",
-      "date": "2026-08-29",
+      "date": "2026-08-30",
       "season": "autumn",
-      "tournament": "第155回 北信越地区高等学校野球長野県大会 東信予選会",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 北信予選会",
+      "round": "2回戦",
+      "teams": [
+        {
+          "display": "屋代",
+          "score": 4,
+          "won": false,
+          "name": "屋代高校",
+          "slug": "yashiro"
+        },
+        {
+          "display": "篠ノ井",
+          "score": 5,
+          "won": true,
+          "name": "篠ノ井高校",
+          "slug": "shinonoi"
+        }
+      ]
+    },
+    {
+      "districtSlug": "nagano",
+      "district": "長野",
+      "sourceName": "長野県高等学校野球連盟",
+      "sourceUrl": "https://www.nagano-hbf.jp/",
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 北信予選会",
       "round": "1回戦",
       "teams": [
         {
-          "display": "丸子修学館",
-          "score": 1,
+          "display": "長野吉田",
+          "score": 2,
           "won": false,
-          "name": "丸子修学館高校",
-          "slug": "marukoshugakukan"
+          "name": "長野吉田高校",
+          "slug": "naganoyoshida"
         },
         {
-          "display": "地球環境",
+          "display": "長野工業",
+          "score": 7,
+          "won": true,
+          "name": "長野工業高校",
+          "slug": "naganokogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "nagano",
+      "district": "長野",
+      "sourceName": "長野県高等学校野球連盟",
+      "sourceUrl": "https://www.nagano-hbf.jp/",
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 北信予選会",
+      "round": "1回戦",
+      "teams": [
+        {
+          "display": "長野東",
+          "score": 1,
+          "won": false,
+          "name": "長野東高校",
+          "slug": "naganohigashi"
+        },
+        {
+          "display": "須坂",
           "score": 11,
           "won": true,
-          "name": "地球環境",
+          "name": "須坂高校",
+          "slug": "suzaka"
+        }
+      ]
+    },
+    {
+      "districtSlug": "yamagata",
+      "district": "山形",
+      "sourceName": "山形県高等学校野球連盟",
+      "sourceUrl": "https://www.yamagata-hbf.org/",
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会 シード決定ブロック大会",
+      "round": "2回戦",
+      "teams": [
+        {
+          "display": "寒河江",
+          "score": 7,
+          "won": true,
+          "name": "寒河江高校",
+          "slug": "sagae"
+        },
+        {
+          "display": "米沢中央",
+          "score": 4,
+          "won": false,
+          "name": "米沢中央",
           "slug": null
+        }
+      ]
+    },
+    {
+      "districtSlug": "yamagata",
+      "district": "山形",
+      "sourceName": "山形県高等学校野球連盟",
+      "sourceUrl": "https://www.yamagata-hbf.org/",
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会 シード決定ブロック大会",
+      "round": "2回戦",
+      "teams": [
+        {
+          "display": "米沢興譲館",
+          "score": 4,
+          "won": false,
+          "name": "米沢興譲館高校",
+          "slug": "yonezawakojokan"
+        },
+        {
+          "display": "山形南",
+          "score": 5,
+          "won": true,
+          "name": "山形南高校",
+          "slug": "yamagataminami"
+        }
+      ]
+    },
+    {
+      "districtSlug": "yamagata",
+      "district": "山形",
+      "sourceName": "山形県高等学校野球連盟",
+      "sourceUrl": "https://www.yamagata-hbf.org/",
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会 シード決定ブロック大会",
+      "round": "2回戦",
+      "teams": [
+        {
+          "display": "山形学院",
+          "score": 4,
+          "won": true,
+          "name": "山形学院",
+          "slug": null
+        },
+        {
+          "display": "山形商業",
+          "score": 0,
+          "won": false,
+          "name": "山形市立商業高校",
+          "slug": "yamagatashiritsushogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "shizuoka",
+      "district": "静岡",
+      "sourceName": "静岡県高等学校野球連盟",
+      "sourceUrl": "https://shizuoka-koyaren.jp/",
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "teams": [
+        {
+          "display": "東海大翔洋",
+          "score": 0,
+          "won": false,
+          "name": "東海大翔洋",
+          "slug": null
+        },
+        {
+          "display": "静岡",
+          "score": 1,
+          "won": true,
+          "name": "静岡高校",
+          "slug": "shizuoka"
+        }
+      ]
+    },
+    {
+      "districtSlug": "shizuoka",
+      "district": "静岡",
+      "sourceName": "静岡県高等学校野球連盟",
+      "sourceUrl": "https://shizuoka-koyaren.jp/",
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "teams": [
+        {
+          "display": "静岡市立",
+          "score": 2,
+          "won": true,
+          "name": "静岡市立高校",
+          "slug": "shizuokashiritsu"
+        },
+        {
+          "display": "静岡商",
+          "score": 1,
+          "won": false,
+          "name": "静岡商業高校",
+          "slug": "shizuokashogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "shizuoka",
+      "district": "静岡",
+      "sourceName": "静岡県高等学校野球連盟",
+      "sourceUrl": "https://shizuoka-koyaren.jp/",
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "teams": [
+        {
+          "display": "島田工",
+          "score": 5,
+          "won": true,
+          "name": "島田工業高校",
+          "slug": "shimadakogyo"
+        },
+        {
+          "display": "静岡西",
+          "score": 4,
+          "won": false,
+          "name": "静岡西高校",
+          "slug": "shizuokanishi"
+        }
+      ]
+    },
+    {
+      "districtSlug": "shizuoka",
+      "district": "静岡",
+      "sourceName": "静岡県高等学校野球連盟",
+      "sourceUrl": "https://shizuoka-koyaren.jp/",
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "teams": [
+        {
+          "display": "浜松日体",
+          "score": 0,
+          "won": false,
+          "name": "浜松日体",
+          "slug": null
+        },
+        {
+          "display": "掛川西",
+          "score": 7,
+          "won": true,
+          "name": "掛川西高校",
+          "slug": "kakegawanishi"
+        }
+      ]
+    },
+    {
+      "districtSlug": "okayama",
+      "district": "岡山",
+      "sourceName": "岡山県高等学校野球連盟",
+      "sourceUrl": "https://www.okayama-hbf.com/",
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "teams": [
+        {
+          "display": "古城池",
+          "score": 1,
+          "won": false,
+          "name": "倉敷古城池高校",
+          "slug": "kurashikikojochi"
+        },
+        {
+          "display": "青陵",
+          "score": 8,
+          "won": true,
+          "name": "倉敷青陵高校",
+          "slug": "kurashikiseiryo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "okayama",
+      "district": "岡山",
+      "sourceName": "岡山県高等学校野球連盟",
+      "sourceUrl": "https://www.okayama-hbf.com/",
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "teams": [
+        {
+          "display": "大安寺",
+          "score": 11,
+          "won": true,
+          "name": "岡山大安寺中等教育学校",
+          "slug": "okayamadaianji"
+        },
+        {
+          "display": "興陽",
+          "score": 5,
+          "won": false,
+          "name": "興陽高校",
+          "slug": "okayama-koyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "okayama",
+      "district": "岡山",
+      "sourceName": "岡山県高等学校野球連盟",
+      "sourceUrl": "https://www.okayama-hbf.com/",
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "teams": [
+        {
+          "display": "岡山吉備白陵",
+          "score": 1,
+          "won": false,
+          "name": "岡山吉備白陵",
+          "slug": null
+        },
+        {
+          "display": "東岡工",
+          "score": 25,
+          "won": true,
+          "name": "東岡山工業高校",
+          "slug": "higashiokayamakogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "okayama",
+      "district": "岡山",
+      "sourceName": "岡山県高等学校野球連盟",
+      "sourceUrl": "https://www.okayama-hbf.com/",
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "teams": [
+        {
+          "display": "津山商",
+          "score": 6,
+          "won": true,
+          "name": "津山商業高校",
+          "slug": "tsuyamashogyo"
+        },
+        {
+          "display": "津山工",
+          "score": 3,
+          "won": false,
+          "name": "津山工業高校",
+          "slug": "tsuyamakogyo"
         }
       ]
     },
@@ -232,214 +553,6 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": true,
           "name": "致道館高校",
           "slug": "chidokan"
-        }
-      ]
-    },
-    {
-      "districtSlug": "shizuoka",
-      "district": "静岡",
-      "sourceName": "静岡県高等学校野球連盟",
-      "sourceUrl": "https://shizuoka-koyaren.jp/",
-      "date": "2026-08-29",
-      "season": "autumn",
-      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
-      "round": "1回戦",
-      "teams": [
-        {
-          "display": "駿河総合",
-          "score": 4,
-          "won": true,
-          "name": "駿河総合高校",
-          "slug": "surugasogo"
-        },
-        {
-          "display": "常葉大橘",
-          "score": 0,
-          "won": false,
-          "name": "常葉大橘",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "districtSlug": "shizuoka",
-      "district": "静岡",
-      "sourceName": "静岡県高等学校野球連盟",
-      "sourceUrl": "https://shizuoka-koyaren.jp/",
-      "date": "2026-08-29",
-      "season": "autumn",
-      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
-      "round": "1回戦",
-      "teams": [
-        {
-          "display": "相良",
-          "score": 5,
-          "won": true,
-          "name": "相良高校",
-          "slug": "sagara"
-        },
-        {
-          "display": "城南静岡",
-          "score": 4,
-          "won": false,
-          "name": "城南静岡",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "districtSlug": "shizuoka",
-      "district": "静岡",
-      "sourceName": "静岡県高等学校野球連盟",
-      "sourceUrl": "https://shizuoka-koyaren.jp/",
-      "date": "2026-08-29",
-      "season": "autumn",
-      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
-      "round": "1回戦",
-      "teams": [
-        {
-          "display": "富岳館",
-          "score": 1,
-          "won": false,
-          "name": "富岳館高校",
-          "slug": "fugakukan"
-        },
-        {
-          "display": "韮山",
-          "score": 8,
-          "won": true,
-          "name": "韮山高校",
-          "slug": "nirayama"
-        }
-      ]
-    },
-    {
-      "districtSlug": "shizuoka",
-      "district": "静岡",
-      "sourceName": "静岡県高等学校野球連盟",
-      "sourceUrl": "https://shizuoka-koyaren.jp/",
-      "date": "2026-08-29",
-      "season": "autumn",
-      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
-      "round": "1回戦",
-      "teams": [
-        {
-          "display": "浜松湖南",
-          "score": 0,
-          "won": false,
-          "name": "浜松湖南高校",
-          "slug": "hamamatsukonan"
-        },
-        {
-          "display": "浜松商",
-          "score": 7,
-          "won": true,
-          "name": "浜松商業高校",
-          "slug": "hamamatsushogyo"
-        }
-      ]
-    },
-    {
-      "districtSlug": "okayama",
-      "district": "岡山",
-      "sourceName": "岡山県高等学校野球連盟",
-      "sourceUrl": "https://www.okayama-hbf.com/",
-      "date": "2026-08-29",
-      "season": "autumn",
-      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
-      "round": null,
-      "teams": [
-        {
-          "display": "天城",
-          "score": 2,
-          "won": false,
-          "name": "倉敷天城高校",
-          "slug": "kurashikiamaki"
-        },
-        {
-          "display": "倉敷商",
-          "score": 14,
-          "won": true,
-          "name": "倉敷商業高校",
-          "slug": "kurashikishogyo"
-        }
-      ]
-    },
-    {
-      "districtSlug": "okayama",
-      "district": "岡山",
-      "sourceName": "岡山県高等学校野球連盟",
-      "sourceUrl": "https://www.okayama-hbf.com/",
-      "date": "2026-08-29",
-      "season": "autumn",
-      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
-      "round": null,
-      "teams": [
-        {
-          "display": "高梁",
-          "score": 6,
-          "won": true,
-          "name": "高梁高校",
-          "slug": "takahashi"
-        },
-        {
-          "display": "水島工",
-          "score": 4,
-          "won": false,
-          "name": "水島工業高校",
-          "slug": "mizushimakogyo"
-        }
-      ]
-    },
-    {
-      "districtSlug": "okayama",
-      "district": "岡山",
-      "sourceName": "岡山県高等学校野球連盟",
-      "sourceUrl": "https://www.okayama-hbf.com/",
-      "date": "2026-08-29",
-      "season": "autumn",
-      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
-      "round": null,
-      "teams": [
-        {
-          "display": "一宮",
-          "score": 0,
-          "won": false,
-          "name": "岡山一宮高校",
-          "slug": "okayamaichinomiya"
-        },
-        {
-          "display": "朝日",
-          "score": 5,
-          "won": true,
-          "name": "岡山朝日高校",
-          "slug": "okayamaasahi"
-        }
-      ]
-    },
-    {
-      "districtSlug": "okayama",
-      "district": "岡山",
-      "sourceName": "岡山県高等学校野球連盟",
-      "sourceUrl": "https://www.okayama-hbf.com/",
-      "date": "2026-08-29",
-      "season": "autumn",
-      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
-      "round": null,
-      "teams": [
-        {
-          "display": "玉野光南",
-          "score": 11,
-          "won": true,
-          "name": "玉野光南高校",
-          "slug": "tamanokonan"
-        },
-        {
-          "display": "玉野商工",
-          "score": 3,
-          "won": false,
-          "name": "玉野商工高校",
-          "slug": "tamanoshoko"
         }
       ]
     },

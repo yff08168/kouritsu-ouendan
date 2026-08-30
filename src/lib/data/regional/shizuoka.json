@@ -52499,6 +52499,283 @@
       ]
     },
     {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "venue": "しずてつスタジアム草薙",
+      "teams": [
+        {
+          "display": "東海大翔洋",
+          "score": 0,
+          "won": false,
+          "name": "東海大翔洋",
+          "slug": null
+        },
+        {
+          "display": "静岡",
+          "score": 1,
+          "won": true,
+          "name": "静岡高校",
+          "slug": "shizuoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "venue": "しずてつスタジアム草薙",
+      "teams": [
+        {
+          "display": "静岡市立",
+          "score": 2,
+          "won": true,
+          "name": "静岡市立高校",
+          "slug": "shizuokashiritsu"
+        },
+        {
+          "display": "静岡商",
+          "score": 1,
+          "won": false,
+          "name": "静岡商業高校",
+          "slug": "shizuokashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "venue": "ちゅ～るスタジアム清水",
+      "teams": [
+        {
+          "display": "島田工",
+          "score": 5,
+          "won": true,
+          "name": "島田工業高校",
+          "slug": "shimadakogyo"
+        },
+        {
+          "display": "静岡西",
+          "score": 4,
+          "won": false,
+          "name": "静岡西高校",
+          "slug": "shizuokanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "venue": "ちゅ～るスタジアム清水",
+      "teams": [
+        {
+          "display": "藤枝明誠",
+          "score": 8,
+          "won": true,
+          "name": "藤枝明誠",
+          "slug": null
+        },
+        {
+          "display": "沼津東",
+          "score": 5,
+          "won": false,
+          "name": "沼津東高校",
+          "slug": "numazuhigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "venue": "掛川市営球場",
+      "teams": [
+        {
+          "display": "浜松日体",
+          "score": 0,
+          "won": false,
+          "name": "浜松日体",
+          "slug": null
+        },
+        {
+          "display": "掛川西",
+          "score": 7,
+          "won": true,
+          "name": "掛川西高校",
+          "slug": "kakegawanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "venue": "掛川市営球場",
+      "teams": [
+        {
+          "display": "小笠",
+          "score": 2,
+          "won": false,
+          "name": "小笠高校",
+          "slug": "ogasa"
+        },
+        {
+          "display": "掛川東",
+          "score": 7,
+          "won": true,
+          "name": "掛川東高校",
+          "slug": "kakegawahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "venue": "裾野市運動公園野球場",
+      "teams": [
+        {
+          "display": "沼津商",
+          "score": 0,
+          "won": false,
+          "name": "沼津商業高校",
+          "slug": "numazushogyo"
+        },
+        {
+          "display": "日大三島",
+          "score": 8,
+          "won": true,
+          "name": "日大三島",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "venue": "裾野市運動公園野球場",
+      "teams": [
+        {
+          "display": "御殿場南",
+          "score": 6,
+          "won": true,
+          "name": "御殿場南高校",
+          "slug": "gotenbaminami"
+        },
+        {
+          "display": "吉原",
+          "score": 5,
+          "won": false,
+          "name": "吉原高校",
+          "slug": "yoshiwara"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "venue": "静岡県営愛鷹球場",
+      "teams": [
+        {
+          "display": "富士宮西",
+          "score": 13,
+          "won": true,
+          "name": "富士宮西高校",
+          "slug": "fujinomiyanishi"
+        },
+        {
+          "display": "富士宮東",
+          "score": 1,
+          "won": false,
+          "name": "富士宮東高校",
+          "slug": "fujinomiyahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "venue": "静岡県営愛鷹球場",
+      "teams": [
+        {
+          "display": "御殿場西",
+          "score": 5,
+          "won": false,
+          "name": "御殿場西",
+          "slug": null
+        },
+        {
+          "display": "桐陽",
+          "score": 6,
+          "won": true,
+          "name": "桐陽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "venue": "浜松球場",
+      "teams": [
+        {
+          "display": "浜松湖北",
+          "score": 8,
+          "won": false,
+          "name": "浜松湖北高校",
+          "slug": "hamamatsukohoku"
+        },
+        {
+          "display": "浜松城北工",
+          "score": 9,
+          "won": true,
+          "name": "浜松城北工業高校",
+          "slug": "hamamatsujohokukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "venue": "浜松球場",
+      "teams": [
+        {
+          "display": "遠江総合",
+          "score": 9,
+          "won": true,
+          "name": "遠江総合高校",
+          "slug": "totomisogo"
+        },
+        {
+          "display": "磐田北・清水西・佐久間",
+          "score": 2,
+          "won": false,
+          "name": "磐田北・清水西・佐久間",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
       "date": "2025-08-16",
       "season": "autumn",
       "tournament": "第78回秋季東海地区高等学校野球静岡県大会 予選",

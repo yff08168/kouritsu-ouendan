@@ -5328,7 +5328,28 @@ const ishikawa = {
       **その大会を丸ごと落としていた。**
       ★**「読めない」ではなく「読んだうえで出さない」**ので、件数はログに出す。
     */
-    const SKIP_ROUNDS = new RegExp("^(第?[0-9０-９]*代表決定戦|[0-9０-９]位決定戦|三位決定戦)$");
+    /*
+      ★★**代表決定戦の見出しは紙によって書き方が違う**（2026-08-31 その3）。
+
+        代表決定戦 ／ 第3代表決定戦 ／ **第3代表、第4代表決定戦**
+
+      ★**「第3代表決定戦」だけを名指しすると、3つ目の書き方で落ちる**
+      （2019年秋は `42チームに42試合` になっていた）。**末尾で見る。**
+      ★**行が短いことも条件にする**（本文の一部を見出しと取り違えないため）。
+    */
+    const SKIP_ROUNDS = new RegExp("(代表決定戦|位決定戦)$");
+    const isSkipHeading = (t) => t.length <= 16 && SKIP_ROUNDS.test(t);
+    /*
+      ★★**決勝の見出しは `決勝` と `決勝戦` の2通りある**（2026-08-31 その3）。
+      ★**`決勝戦` を知らないと `round` が前の見出しのまま**になり、
+      決勝が「第3代表決定戦」や「準決勝」として読まれて大会が落ちる。
+      ★**`決定戦` は `決勝戦` ではない**ので、上の SKIP を先に見る。
+    */
+    const ROUND_ALIASES = new Map([
+      ["決勝戦", "決勝"],
+      ["準決勝戦", "準決勝"],
+      ["準々決勝戦", "準々決勝"],
+    ]);
     const SKIP = "__出さない__";
     /** `6x` `X` `１２` を数にする。**`Number("6x")` は NaN なので直に渡さない** */
     const score = (t) => {
@@ -5344,6 +5365,34 @@ const ishikawa = {
       return { year: (d[1] === "令和" ? 2018 : 1988) + n, month: Number(d[3]), day: Number(d[4]) };
     };
 
+    /*
+      ★★★**紙の縮尺は「枠と枠の間隔」で測る**（2026-08-31 その3）。
+
+        2026年夏 … 枠の間隔 192・合計は枠の左端から 167
+        2025年秋 … 　　　　 194・　　　　　　　　　　 167
+        2015年夏 … 　　　　 266・　　　　　　　　　　 231
+        2004年秋 … 　　　　 379・　　　　　　　　　　 332
+
+      **比はどの紙でも 0.87 前後**で、**合計の位置は枠の幅そのもの**である。
+      ★★**それまでは「枠の左端から 120〜200 にある数字のいちばん右」で測っていた**が、
+      **枠が広い紙では 120〜200 に各回の得点が入ってしまい、縮尺が 0.88 になる**
+      （本当は 1.39）。**そのまま校名の窓を作るので「校名の行が読めない」で
+      大会が丸ごと落ちていた**（2004〜2006・2013〜2015年）。
+      ★**枠が2つ並ぶ行を探して測る。** 1つしか無い紙は今までどおりの測り方に戻す。
+      ★**基準は 2026年の紙**（間隔 192・合計 166.8）。
+    */
+    let frameGap = null;
+    for (const page of pages) {
+      for (const line of page.lines) {
+        const ms = line.items.filter((it) => it.text.trim().startsWith("◆"));
+        if (ms.length >= 2) {
+          frameGap = ms[1].x - ms[0].x;
+          break;
+        }
+      }
+      if (frameGap !== null) break;
+    }
+
     const games = [];
     /** 読んだが出さない試合（代表決定戦）。件数と中身を必ずログに出す */
     const skipped = [];
@@ -5358,12 +5407,13 @@ const ishikawa = {
       for (let i = 0; i < lines.length; i++) {
         const line = lines[i];
         const text = normalize(line.items.map((it) => it.text.trim()).join(""));
-        if (ROUNDS.has(text)) {
-          round = text;
+        if (isSkipHeading(text)) {
+          round = SKIP;
           continue;
         }
-        if (SKIP_ROUNDS.test(text)) {
-          round = SKIP;
+        const alias = ROUND_ALIASES.get(text) ?? text;
+        if (ROUNDS.has(alias)) {
+          round = alias;
           continue;
         }
         const d = parseDate(text);
@@ -5393,11 +5443,30 @@ const ishikawa = {
           「読めない枠がある」で**その大会を丸ごと落としていた**（実測4年ぶん）。
           ★**枠ごと飛ばす。** 順延先の日に同じ顔合わせが改めて載る。
         */
+        /*
+          ★★★**不戦勝も枠を使う**（2026-08-31 その3）。紙は枠の中に**文で**書く。
+
+              北陸学院 と 鵬学園の試合は、鵬学園の不戦勝
+              遊学館 と 星稜の試合は、遊学館の不戦勝
+
+          **枠はあるが試合は行われていない**ので、**枠ごと飛ばす**
+          （大阪・群馬・愛知と同じ扱い。**0対0にしない**）。
+          ★**辞退した側はこの大会のどこにも出てこなくなる**が、
+          **「チーム数 − 1 = 決着した試合」は崩れない**（出場も試合も1つずつ減るため）。
+
+          ★★**注記の行は枠の3行下にあることもある**（2023年春の中止・順延）。
+
+              金沢錦丘-金沢学院大附          ← +2
+              天候不良により中止　順延      ← **+3**
+
+          ★**+2 までしか見ていなかったので、その枠を読もうとして大会ごと落としていた。**
+        */
+        const notPlayed = /中止|順延|ノーゲーム|不戦勝|棄権/;
         marks = marks.filter((mark) => {
-          const within = [line, lines[i + 1], lines[i + 2]].filter(Boolean).flatMap((l) =>
+          const within = [line, lines[i + 1], lines[i + 2], lines[i + 3]].filter(Boolean).flatMap((l) =>
             l.items.filter((it) => it.x >= mark.x && it.x < mark.x + 200).map((it) => it.text),
           );
-          return !/中止|順延|ノーゲーム/.test(normalize(within.join("")));
+          return !notPlayed.test(normalize(within.join("")));
         });
         if (!marks.length) continue;
         if (!round || !date) {
@@ -5447,8 +5516,8 @@ const ishikawa = {
               .map((it) => it.x - marks[0].x)
               .filter((d) => d >= 120 && d <= 200),
           );
-          // 2026年の紙が基準（枠の左端から合計まで 166.8）
-          scale = cands.length ? Math.max(...cands) / 166.8 : 1;
+          // 2026年の紙が基準（枠の間隔 192・枠の左端から合計まで 166.8）
+          scale = frameGap !== null ? frameGap / 192 : cands.length ? Math.max(...cands) / 166.8 : 1;
         }
         const win = (lo, hi) => [lo * scale, hi * scale];
 
@@ -5480,7 +5549,13 @@ const ishikawa = {
             ★**そのままだと隣の枠の得点を合計として読み**、和が合わずに大会が丸ごと落ちる。
           */
           const nextMark = marks[mi + 1];
-          const frameEnd = nextMark ? Math.min(210, nextMark.x - mark.x - 5) : 210;
+          /*
+            ★★**合計の窓も紙の縮尺に合わせる**（2026-08-31 その3）。
+            それまで 110〜210 を素の値で使っていて、**枠の広い紙では合計が窓の外**
+            （2015年の紙は合計が 231）。他の窓は最初から `win()` で縮尺を掛けている。
+          */
+          const [totalLo, totalHi] = win(110, 210);
+          const frameEnd = nextMark ? Math.min(totalHi, nextMark.x - mark.x - 5) : totalHi;
           const at = (row, lo0, hi0) => {
             const [lo, hi] = win(lo0, hi0);
             return row.items.filter((it) => it.x - mark.x >= lo && it.x - mark.x <= hi).sort((p, q) => p.x - q.x);
@@ -5509,9 +5584,9 @@ const ishikawa = {
               .map((it) => ({ d: it.x - mark.x, v: score(it.text) }))
               .filter((c) => c.v !== null)
               .sort((a, b) => a.d - b.d);
-            const totalCell = cells.filter((c) => c.d >= 110 && c.d <= frameEnd).at(-1) ?? null;
+            const totalCell = cells.filter((c) => c.d >= totalLo && c.d <= frameEnd).at(-1) ?? null;
             const innings = totalCell
-              ? cells.filter((c) => c.d >= 34 && c.d < totalCell.d - 3).map((c) => c.v)
+              ? cells.filter((c) => c.d >= win(34, 34)[0] && c.d < totalCell.d - 3).map((c) => c.v)
               : [];
             return { innings, total: totalCell?.v ?? null };
           });
@@ -5596,6 +5671,7 @@ const ishikawa = {
     */
     const ORDER = ["1回戦", "2回戦", "3回戦", "4回戦", "準々決勝", "準決勝", "決勝"];
     const played = ORDER.filter((r) => games.some((g) => g.round === r));
+    const isDraw = (g) => g.teams[0].score === g.teams[1].score;
     let winners = null;
     for (const r of played) {
       const gs = games.filter((g) => g.round === r);
@@ -5607,16 +5683,59 @@ const ishikawa = {
           return [];
         }
       }
-      winners = gs.map((g) => g.teams.find((t) => t.won)?.display).filter(Boolean);
-      if (winners.length !== gs.length) {
-        console.log(`  ⚠️ 石川: ${r} に引き分けがある。読み方が違う可能性があるので1試合も出さない`);
+      /*
+        ★**引き分けた試合は勝者を出さない**（同じ回戦の後日に再試合がある）。
+        ★**引き分けは上で「紙が引き分けと刷っている」ことを確かめてある。**
+      */
+      const decidedGs = gs.filter((g) => !isDraw(g));
+      winners = decidedGs.map((g) => g.teams.find((t) => t.won)?.display).filter(Boolean);
+      if (winners.length !== decidedGs.length) {
+        console.log(`  ⚠️ 石川: ${r} に勝者の読めない試合がある。1試合も出さない`);
         return [];
       }
     }
     const champion = winners[0];
     const entries = new Set(games.flatMap((g) => g.teams.map((t) => t.display)));
-    if (entries.size - games.length !== 1) {
-      console.log(`  ⚠️ 石川: ${entries.size} チームに対し ${games.length} 試合（${entries.size - 1} のはず）。1試合も出さない`);
+    /*
+      ★**引き分け再試合があるぶん試合数は多くなる**ので、
+      **決着した試合が チーム数 − 1** になるはず（岐阜と同じ数え方）。
+    */
+    /*
+      ★★★**引き分けは「同じ回戦で同じ顔合わせが後日にある」ことを要求する**
+      （2026-08-31 その3）。
+
+          2017年秋 3回戦  松任 4 - 4 飯田（延長15回引き分け） → 後日 松任 0 - 7x 飯田
+          2014年夏 2回戦  金沢 6 - 6 小松（延長15回）        → 後日 再試合
+
+      ★**高校野球の引き分けは再試合になる**ので、本物なら必ず対になる試合がある。
+      ★★**紙の注記に頼らないこと** —— **「引き分け」と書く紙と、`(延長15回)` としか
+      書かない紙がある**（同じ石川で両方あった）。**言葉ではなく、持っている試合で確かめる。**
+      ★★**対の無い同点は認めない** —— 空欄を 0 と読んだ結果であることが多く
+      （島根で87件・佐賀・熊本・栃木で踏んだ形）、**そのまま出すと嘘になる。**
+    */
+    const drawnGames = games.filter(isDraw);
+    for (const g of drawnGames) {
+      const pair = new Set(g.teams.map((t) => t.display));
+      const replay = games.some(
+        (o) =>
+          o !== g &&
+          o.round === g.round &&
+          String(o.date) > String(g.date) &&
+          o.teams.every((t) => pair.has(t.display)),
+      );
+      if (!replay) {
+        console.log(
+          `  ⚠️ 石川: 引き分けの再試合が紙に無い（${g.teams.map((t) => t.display).join(" vs ")}・${g.round}・${g.date}）。1試合も出さない`,
+        );
+        return [];
+      }
+    }
+
+    const draws = drawnGames.length;
+    if (entries.size - (games.length - draws) !== 1) {
+      console.log(
+        `  ⚠️ 石川: ${entries.size} チームに対し決着した試合 ${games.length - draws}（${entries.size - 1} のはず）。1試合も出さない`,
+      );
       return [];
     }
     /*

@@ -168,8 +168,8 @@ function chunk<T>(items: T[], size: number): T[][] {
 function RegionalRow({ game }: { game: RegionalPickup }) {
   /*
     公立校を先に出す。**両方が公立なら勝ったほうを先にする。**
-    行の先頭に出す ○ / ● はこの学校の勝敗なので、公立同士の試合で
-    負けたほうを先に置くと、公立が勝った試合なのに ● が並んでしまう。
+    ★**勝ったほうの得点をオレンジにする**ので、公立同士の試合で
+    負けたほうを先に置くと、公立が勝った試合なのに色が付かない。
 
     **連合チームは公立扱いにしない**（どの学校の戦績かを決められない）。
   */
@@ -191,22 +191,19 @@ function RegionalRow({ game }: { game: RegionalPickup }) {
         ★**校名はこのサイトの主役。切ってはいけない。**
         上に逃がすと、校名とスコアが列の幅を丸ごと使える。
 
-      ★**丸（○●△）は上の行の先頭に置く。** 2行にまたがせると
+      ★**上の行は県・日付・回戦だけ。** 2行にまたがる要素を置くと
       行の高さが揃わず、左右の列で段差が出る。
     */
     <div className="py-2.5">
       <p className="flex items-center gap-1.5 text-[0.6875rem] leading-tight text-ink-faint">
-        <span
-          aria-hidden="true"
-          className={cn(
-            "flex size-5 shrink-0 items-center justify-center rounded-full text-[0.625rem] font-bold ring-1",
-            ours.won
-              ? "bg-accent-50 text-accent-800 ring-accent-200"
-              : "bg-navy-50 text-ink-muted ring-line",
-          )}
-        >
-          {ours.won ? "○" : drawn ? "△" : "●"}
-        </span>
+        {/*
+          ★★**○/● の丸は 2026-08-31 に外した**（運営者の指示）。
+          **勝敗はスコアの色で分かる**（勝ったほうがオレンジ）ので、
+          丸は同じことを2度言っていた。
+          ★**読み上げ用の文字だけは残す** —— 色は読み上げに乗らないので、
+          **これを消すと目の見えない人には勝敗が伝わらなくなる。**
+          画面には出ない（`sr-only`）ので、見た目は指示どおり丸が消えるだけ。
+        */}
         <span className="sr-only">
           {ours.won ? "勝ち" : drawn ? "引き分け" : "負け"}
         </span>

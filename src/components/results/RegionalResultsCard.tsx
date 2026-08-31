@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPinned } from "lucide-react";
+import { ChevronRight, MapPinned } from "lucide-react";
 
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { ResultsCarousel } from "@/components/results/ResultsCarousel";
@@ -34,12 +34,17 @@ import {
  */
 export function RegionalResultsCard({
   pickups,
-  perSlide = 4,
-  slides = 5,
+  perSlide = 12,
+  slides = 4,
   seed,
 }: {
   pickups: RegionalPickups;
-  /** 1枚に出す試合数。★**枚をまたいで変えないこと**（高さが揃わなくなる） */
+  /**
+   * 1枚に出す試合数。★**枚をまたいで変えないこと**（高さが揃わなくなる）。
+   * ★★**2列×6行＝12件**（2026-08-31。運営者の指示）。
+   * それまで1列4件で、**校名の字が大きいぶん余白が目立っていた。**
+   * ★**狭い画面では1列に落とす**（半分の幅に校名2つとスコアは入らない）。
+   */
   perSlide?: number;
   /** 何枚までめくれるようにするか */
   slides?: number;
@@ -101,16 +106,47 @@ export function RegionalResultsCard({
             カルーセル側で描くと、**検索エンジンには1枚ぶんしか見えない。**
           */
           slides={pages.map((page, p) => (
-            <ul key={p} className="divide-y divide-line">
-              {page.map((game, i) => (
-                <li key={`${game.districtSlug}-${game.date}-${i}`}>
-                  <RegionalRow game={game} />
-                </li>
+            /*
+              ★★**2列×6行**（2026-08-31）。
+              ★**区切り線は列ごとに引く** —— 格子全体に `divide-y` を掛けると
+              **左右で線の位置が食い違う**（行の高さが揃わないため）。
+              ★**列のあいだに縦線を1本**入れて、どちらの列を読んでいるか分かるようにする。
+            */
+            <div
+              key={p}
+              className="grid grid-cols-1 sm:grid-cols-2 sm:divide-x sm:divide-line"
+            >
+              {chunk(page, Math.ceil(page.length / 2)).map((column, c) => (
+                <ul
+                  key={c}
+                  className="divide-y divide-line sm:first:pr-5 sm:last:pl-5"
+                >
+                  {column.map((game, i) => (
+                    <li key={`${game.districtSlug}-${game.date}-${i}`}>
+                      <RegionalRow game={game} />
+                    </li>
+                  ))}
+                </ul>
               ))}
-            </ul>
+            </div>
           ))}
         />
       )}
+
+      {/*
+        ★★**下にも「全国の進捗」への入口を置く**（2026-08-31。運営者の指示）。
+        見出しの右にも同じリンクがあるが、**そちらは読み始める前の位置**。
+        ★**結果を見終わった人が次に行く先**なので、下にも要る。
+        ★**行き先は同じ `/regional`**（進捗地図。県ごとの試合とトーナメント表へ辿れる）。
+      */}
+      <Link
+        href="/regional"
+        className="mt-4 flex min-h-11 items-center justify-center gap-1.5 rounded-lg border border-line px-4 text-sm font-medium text-navy-800 hover:bg-navy-50"
+      >
+        <MapPinned size={16} aria-hidden="true" className="text-accent-500" />
+        全国47地区の進捗を見る
+        <ChevronRight size={16} aria-hidden="true" className="text-ink-faint" />
+      </Link>
 
       {/*
         ★**出典の行は 2026-08-21 に運営者の判断で画面から外した。**
@@ -146,35 +182,48 @@ function RegionalRow({ game }: { game: RegionalPickup }) {
   const drawn = ours.score === other.score;
 
   return (
-    // 甲子園の速報カード（LiveResultsCard）と同じ組み方にそろえてある
-    <div className="flex items-center gap-3 py-3.5 sm:gap-4">
-      <span
-        aria-hidden="true"
-        className={cn(
-          "flex size-7 shrink-0 items-center justify-center rounded-full text-sm font-bold ring-1",
-          ours.won
-            ? "bg-accent-50 text-accent-800 ring-accent-200"
-            : "bg-navy-50 text-ink-muted ring-line",
-        )}
-      >
-        {ours.won ? "○" : drawn ? "△" : "●"}
-      </span>
-      <span className="sr-only">{ours.won ? "勝ち" : drawn ? "引き分け" : "負け"}</span>
+    /*
+      ★★**県・日付を上の行に逃がしてある**（2026-08-31。2列にしたため）。
 
-      <p className="w-16 shrink-0 text-xs leading-tight text-ink-faint sm:w-28 sm:text-sm">
+        以前は「県・日付」を左の細い列に置いていたが、**2列にすると
+        校名に残る幅が50pxしかなくなり、実測で22校が3文字ほどに切れていた**
+        （`岡山吉備白陵` → `岡山吉…`）。
+        ★**校名はこのサイトの主役。切ってはいけない。**
+        上に逃がすと、校名とスコアが列の幅を丸ごと使える。
+
+      ★**丸（○●△）は上の行の先頭に置く。** 2行にまたがせると
+      行の高さが揃わず、左右の列で段差が出る。
+    */
+    <div className="py-2.5">
+      <p className="flex items-center gap-1.5 text-[0.6875rem] leading-tight text-ink-faint">
+        <span
+          aria-hidden="true"
+          className={cn(
+            "flex size-5 shrink-0 items-center justify-center rounded-full text-[0.625rem] font-bold ring-1",
+            ours.won
+              ? "bg-accent-50 text-accent-800 ring-accent-200"
+              : "bg-navy-50 text-ink-muted ring-line",
+          )}
+        >
+          {ours.won ? "○" : drawn ? "△" : "●"}
+        </span>
+        <span className="sr-only">
+          {ours.won ? "勝ち" : drawn ? "引き分け" : "負け"}
+        </span>
         <Link
           href={`/prefectures/${game.districtSlug}`}
           className="font-bold text-navy-700 hover:underline"
         >
           {game.district}
         </Link>
-        <span className="block">{formatRegionalDate(game.date)}</span>
+        <span>{formatRegionalDate(game.date)}</span>
         {/*
           ★**回戦は出典に無いことがある。** 山梨は準々決勝より前の日に回戦を
-          書いていない。「・」を決め打ちで出すと「選手権予選・」と中黒が宙に浮く。
+          書いていない。「・」を決め打ちで出すと「秋季大会・」と中黒が宙に浮く。
           **無いものを埋めない**（推測した回戦を出すほうが害が大きい）。
+          ★**狭いときは季節を省く**（日付と回戦のほうが効く）。
         */}
-        <span className="block">
+        <span className="truncate">
           <span className="hidden sm:inline">
             {seasonLabel(game.season)}
             {game.round && "・"}
@@ -187,17 +236,17 @@ function RegionalRow({ game }: { game: RegionalPickup }) {
         **スコアの列を固定幅にする。** 横並びにすると「0 - 1」と「0 - 10」で
         幅が変わり、行ごとに校名の右端がずれる（甲子園のカードと同じ理由）。
       */}
-      <p className="grid min-w-0 flex-1 grid-cols-[minmax(0,1fr)_4.5rem_minmax(0,1fr)] items-baseline gap-x-2 sm:grid-cols-[minmax(0,1fr)_6.5rem_minmax(0,1fr)] sm:gap-x-3">
+      <p className="mt-0.5 grid grid-cols-[minmax(0,1fr)_4.5rem_minmax(0,1fr)] items-baseline gap-x-1.5">
         <Link
           href={`/schools/${ours.slug}`}
           title={ours.name}
-          className="min-w-0 text-right text-base font-bold text-navy-800 hover:underline sm:truncate sm:text-xl"
+          className="min-w-0 truncate text-right text-base font-bold text-navy-800 hover:underline"
         >
           {ours.display}
         </Link>
         <span
           className={cn(
-            "text-center text-lg font-bold tabular-nums sm:text-2xl",
+            "text-center text-lg font-bold tabular-nums",
             ours.won ? "text-accent-800" : "text-ink-muted",
           )}
         >
@@ -205,7 +254,7 @@ function RegionalRow({ game }: { game: RegionalPickup }) {
           {" - "}
           {other.score}
         </span>
-        <span className="min-w-0 text-base text-ink sm:truncate sm:text-xl">
+        <span className="min-w-0 truncate text-base text-ink">
           {other.slug && !other.combined ? (
             <Link
               href={`/schools/${other.slug}`}

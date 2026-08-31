@@ -638,6 +638,19 @@ li {
   display: flex;
   width: max-content;
   /*
+   * ★★★**合成レイヤーに載せる**（2026-08-31。運営者から「カクカクする」）。
+   *
+   *   毎秒65pxということは、60fpsなら**1フレームあたり約1.1px**しか動かない。
+   *   ★**レイヤーに載っていないと、その移動量が整数ピクセルに丸められ、
+   *   1px進んでは止まる「段々」の動きに見える。**
+   *   ★**`will-change` で先に合成レイヤーを用意させると、
+   *   小数のままずらせるので滑らかになる。**
+   *
+   *   ★**帯は高さ40pxしかない**ので、幅が12,000pxあってもレイヤーは約2MB。
+   *   ★**`will-change` を面の広い要素に安易に付けないこと**（メモリを食う）。
+   */
+  will-change: transform;
+  /*
    * ★★**同じ並びを2回描いてある**（`ResultsTicker`）。
    * **半分ぶん動かしたところで元と同じ絵になる**ので、
    * そこで先頭に戻せば継ぎ目が見えない。
@@ -647,10 +660,11 @@ li {
 
 @keyframes ticker-scroll {
   from {
-    transform: translateX(0);
+    /* ★**`translate3d` で書く。** 2Dの `translateX` だと合成レイヤーに載らない環境がある */
+    transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 

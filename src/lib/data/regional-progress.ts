@@ -5,19 +5,19 @@ import type { RegionalProgressBoard } from "@/lib/regional-results";
 
 export const REGIONAL_PROGRESS: RegionalProgressBoard = {
   "season": "autumn",
-  "latestDate": "2026-08-30",
-  "generatedAt": "2026-08-30T13:42:14Z",
+  "latestDate": "2026-08-31",
+  "generatedAt": "2026-08-31T10:42:26Z",
   "districts": [
     {
       "slug": "nagano",
       "district": "長野",
       "state": "playing",
       "season": "autumn",
-      "tournament": "第155回 北信越地区高等学校野球長野県大会 東信予選会",
-      "games": 6,
-      "publicGames": 6,
-      "round": "1回戦",
-      "latestDate": "2026-08-30",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 南信予選会",
+      "games": 9,
+      "publicGames": 9,
+      "round": "2回戦",
+      "latestDate": "2026-08-31",
       "champion": null
     },
     {
@@ -61,10 +61,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",
-      "games": 4,
-      "publicGames": 4,
+      "games": 6,
+      "publicGames": 6,
       "round": null,
-      "latestDate": "2026-08-29",
+      "latestDate": "2026-08-31",
       "champion": null
     },
     {
@@ -123,10 +123,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "第79回秋季東北地区高等学校野球山形県大会 シード決定ブロック大会",
-      "games": 11,
-      "publicGames": 7,
+      "games": 19,
+      "publicGames": 13,
       "round": "2回戦",
-      "latestDate": "2026-08-30",
+      "latestDate": "2026-08-31",
       "champion": null
     },
     {

@@ -20843,6 +20843,53 @@
       ]
     },
     {
+      "date": "2026-08-31",
+      "season": "autumn",
+      "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ロートスタジアム",
+      "teams": [
+        {
+          "display": "法隆寺国際",
+          "score": 0,
+          "won": false,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        },
+        {
+          "display": "高取国際",
+          "score": 7,
+          "won": true,
+          "name": "高取国際高校",
+          "slug": "takatorikokusai"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "season": "autumn",
+      "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ロートスタジアム",
+      "teams": [
+        {
+          "display": "連合（国際・西和清陵・高円芸術・奈良南・山辺・二階堂）",
+          "score": 4,
+          "won": false,
+          "name": "連合（国際・西和清陵・高円芸術・奈良南・山辺・二階堂）",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "一条",
+          "score": 14,
+          "won": true,
+          "name": "一条高校",
+          "slug": "ichijo"
+        }
+      ]
+    },
+    {
       "date": "2026-08-29",
       "season": "autumn",
       "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",

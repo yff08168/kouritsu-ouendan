@@ -17274,6 +17274,214 @@
       ]
     },
     {
+      "date": "2026-08-31",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 北信予選会",
+      "round": "2回戦",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "長野南",
+          "score": 0,
+          "won": false,
+          "name": "長野南高校",
+          "slug": "naganominami"
+        },
+        {
+          "display": "長野俊英",
+          "score": 10,
+          "won": true,
+          "name": "長野俊英",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 南信予選会",
+      "round": "2回戦",
+      "venue": "しんきん諏訪湖スタジアム",
+      "teams": [
+        {
+          "display": "阿智",
+          "score": 12,
+          "won": true,
+          "name": "阿智高校",
+          "slug": "achi"
+        },
+        {
+          "display": "駒ヶ根工業",
+          "score": 6,
+          "won": false,
+          "name": "駒ケ根工業高校",
+          "slug": "komaganekogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 南信予選会",
+      "round": "2回戦",
+      "venue": "しんきん諏訪湖スタジアム",
+      "teams": [
+        {
+          "display": "岡谷南",
+          "score": 8,
+          "won": true,
+          "name": "岡谷南高校",
+          "slug": "okayaminami"
+        },
+        {
+          "display": "下伊那農業",
+          "score": 0,
+          "won": false,
+          "name": "下伊那農業高校",
+          "slug": "shimoinanogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 南信予選会",
+      "round": "2回戦",
+      "venue": "メタルテック飯田スタジアム",
+      "teams": [
+        {
+          "display": "赤穂",
+          "score": 17,
+          "won": true,
+          "name": "赤穂高校",
+          "slug": "akaho"
+        },
+        {
+          "display": "伊那北",
+          "score": 4,
+          "won": false,
+          "name": "伊那北高校",
+          "slug": "inakita"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 南信予選会",
+      "round": "2回戦",
+      "venue": "メタルテック飯田スタジアム",
+      "teams": [
+        {
+          "display": "飯田",
+          "score": 2,
+          "won": false,
+          "name": "飯田高校",
+          "slug": "nagano-iida"
+        },
+        {
+          "display": "伊那弥生ヶ丘",
+          "score": 9,
+          "won": true,
+          "name": "伊那弥生ケ丘高校",
+          "slug": "inayayoigaoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 南信予選会",
+      "round": "1回戦",
+      "venue": "しんきん諏訪湖スタジアム",
+      "teams": [
+        {
+          "display": "高遠",
+          "score": 2,
+          "won": false,
+          "name": "高遠高校",
+          "slug": "takato"
+        },
+        {
+          "display": "下諏訪向陽",
+          "score": 9,
+          "won": true,
+          "name": "下諏訪向陽高校",
+          "slug": "shimosuwakoyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 中信予選会",
+      "round": "1回戦",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "松本第一",
+          "score": 9,
+          "won": true,
+          "name": "松本第一",
+          "slug": null
+        },
+        {
+          "display": "大町岳陽",
+          "score": 0,
+          "won": false,
+          "name": "大町岳陽高校",
+          "slug": "omachigakuyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 中信予選会",
+      "round": "1回戦",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "中信連合",
+          "score": 0,
+          "won": false,
+          "name": "中信連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "松本深志",
+          "score": 8,
+          "won": true,
+          "name": "松本深志高校",
+          "slug": "matsumotofukashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 中信予選会",
+      "round": "1回戦",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "塩尻志学館",
+          "score": 8,
+          "won": true,
+          "name": "塩尻志学館高校",
+          "slug": "shiojirishigakukan"
+        },
+        {
+          "display": "日本ウェルネス長野",
+          "score": 3,
+          "won": false,
+          "name": "日本ウェルネス長野",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-08-30",
       "season": "autumn",
       "tournament": "第155回 北信越地区高等学校野球長野県大会 北信予選会",
@@ -25630,236 +25838,6 @@
           "won": false,
           "name": "塩尻志学館高校",
           "slug": "shiojirishigakukan"
-        }
-      ]
-    },
-    {
-      "date": "2022-09-04",
-      "season": "autumn",
-      "tournament": "第147回北信越地区高等学校野球長野県大会北信支部",
-      "round": "代表決定",
-      "venue": "長野オリンピックスタジアム",
-      "teams": [
-        {
-          "display": "長野日大",
-          "score": 6,
-          "won": true,
-          "name": "長野日大",
-          "slug": null
-        },
-        {
-          "display": "長野商業",
-          "score": 1,
-          "won": false,
-          "name": "長野商業高校",
-          "slug": "naganoshogyo"
-        }
-      ]
-    },
-    {
-      "date": "2022-09-04",
-      "season": "autumn",
-      "tournament": "第147回北信越地区高等学校野球長野県大会北信支部",
-      "round": "代表決定",
-      "venue": "長野オリンピックスタジアム",
-      "teams": [
-        {
-          "display": "長野俊英",
-          "score": 1,
-          "won": false,
-          "name": "長野俊英",
-          "slug": null
-        },
-        {
-          "display": "長野",
-          "score": 3,
-          "won": true,
-          "name": "長野",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2022-09-04",
-      "season": "autumn",
-      "tournament": "第147回北信越地区高等学校野球長野県大会東信支部",
-      "round": "準決勝",
-      "venue": "県営上田野球場",
-      "teams": [
-        {
-          "display": "野沢北",
-          "score": 0,
-          "won": false,
-          "name": "野沢北高校",
-          "slug": "nozawakita"
-        },
-        {
-          "display": "佐久長聖",
-          "score": 5,
-          "won": false,
-          "name": "佐久長聖",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2022-09-04",
-      "season": "autumn",
-      "tournament": "第147回北信越地区高等学校野球長野県大会東信支部",
-      "round": "準決勝",
-      "venue": "県営上田野球場",
-      "teams": [
-        {
-          "display": "上田西",
-          "score": 11,
-          "won": true,
-          "name": "上田西",
-          "slug": null
-        },
-        {
-          "display": "小諸商業",
-          "score": 2,
-          "won": false,
-          "name": "小諸商業",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2022-09-04",
-      "season": "autumn",
-      "tournament": "第147回北信越地区高等学校野球長野県大会南信支部",
-      "round": "代表決定",
-      "venue": "伊那スタジアム",
-      "teams": [
-        {
-          "display": "伊那北",
-          "score": 3,
-          "won": true,
-          "name": "伊那北高校",
-          "slug": "inakita"
-        },
-        {
-          "display": "上伊那農業",
-          "score": 1,
-          "won": false,
-          "name": "上伊那農業高校",
-          "slug": "kamiinanogyo"
-        }
-      ]
-    },
-    {
-      "date": "2022-09-04",
-      "season": "autumn",
-      "tournament": "第147回北信越地区高等学校野球長野県大会南信支部",
-      "round": "代表決定",
-      "venue": "伊那スタジアム",
-      "teams": [
-        {
-          "display": "諏訪清陵",
-          "score": 0,
-          "won": false,
-          "name": "諏訪清陵高校",
-          "slug": "suwaseiryo"
-        },
-        {
-          "display": "諏訪二葉",
-          "score": 3,
-          "won": true,
-          "name": "諏訪二葉高校",
-          "slug": "suwafutaba"
-        }
-      ]
-    },
-    {
-      "date": "2022-09-04",
-      "season": "autumn",
-      "tournament": "第147回北信越地区高等学校野球長野県大会南信支部",
-      "round": "代表決定",
-      "venue": "綿半飯田野球場",
-      "teams": [
-        {
-          "display": "赤穂",
-          "score": 3,
-          "won": false,
-          "name": "赤穂高校",
-          "slug": "akaho"
-        },
-        {
-          "display": "飯田OIDE長姫",
-          "score": 5,
-          "won": true,
-          "name": "飯田ＯＩＤＥ長姫高校",
-          "slug": "iidaoideosahime"
-        }
-      ]
-    },
-    {
-      "date": "2022-09-04",
-      "season": "autumn",
-      "tournament": "第147回北信越地区高等学校野球長野県大会南信支部",
-      "round": "代表決定",
-      "venue": "綿半飯田野球場",
-      "teams": [
-        {
-          "display": "飯田",
-          "score": 9,
-          "won": true,
-          "name": "飯田高校",
-          "slug": "nagano-iida"
-        },
-        {
-          "display": "松川",
-          "score": 2,
-          "won": false,
-          "name": "松川高校",
-          "slug": "matsukawa"
-        }
-      ]
-    },
-    {
-      "date": "2022-09-03",
-      "season": "autumn",
-      "tournament": "第147回北信越地区高等学校野球長野県大会北信支部",
-      "round": "代表決定",
-      "venue": "長野オリンピックスタジアム",
-      "teams": [
-        {
-          "display": "長野西",
-          "score": 6,
-          "won": false,
-          "name": "長野西高校",
-          "slug": "naganonishi"
-        },
-        {
-          "display": "更級農業",
-          "score": 7,
-          "won": true,
-          "name": "更級農業高校",
-          "slug": "sarashinanogyo"
-        }
-      ]
-    },
-    {
-      "date": "2022-09-03",
-      "season": "autumn",
-      "tournament": "第147回北信越地区高等学校野球長野県大会北信支部",
-      "round": "代表決定",
-      "venue": "長野オリンピックスタジアム",
-      "teams": [
-        {
-          "display": "中野立志館",
-          "score": 4,
-          "won": false,
-          "name": "中野立志館高校",
-          "slug": "nakanorisshikan"
-        },
-        {
-          "display": "長野工業",
-          "score": 5,
-          "won": true,
-          "name": "長野工業高校",
-          "slug": "naganokogyo"
         }
       ]
     },

@@ -561,3 +561,127 @@ li {
   height: auto;
   border-radius: 0.5rem;
 }
+
+/* ------------------------------------------------------------------
+ * 電光掲示板（リボンボード）
+ *
+ * ★**球場のリボンボードのつもり**（2026-08-31。運営者の提案）。
+ * トップのヒーローと結果カードのあいだに、細い横帯として敷く。
+ *
+ * ------------------------------------------------------------------
+ * ★★**JavaScriptを使っていない。**
+ *
+ * 流すのは CSS のアニメーションだけ。**止めるボタンは付けない**
+ * （運営者の判断：「常に情報が流れるイメージなので停止させる必要なし」）。
+ * ★**そのかわり文字をリンクにしていない** —— 動いているものは押せない。
+ * リンクは下の結果カードが持っているので、ここは眺めるものに徹する。
+ *
+ * ------------------------------------------------------------------
+ * ★★**「動きを減らす」設定のときだけ流さない。**
+ *
+ * これは止めるボタンとは別物で、**めまいを起こす人が自分で設定しているもの。**
+ * ヒーローの写真（`HeroSlideshow`）も同じ規則で切り替えを止めており、
+ * **サイト全体でそろえてある。** 流さないときは**横スクロールできる帯**にするので、
+ * 情報は失われない。
+ * ------------------------------------------------------------------ */
+.ticker {
+  position: relative;
+  overflow: hidden;
+  /*
+   * ★★**配色はサイトのトンマナに合わせる**（2026-08-31。運営者の指示）。
+   *
+   *   地   … ネイビー系。`--color-navy-900`(#081a30) より**さらに暗く**してある。
+   *          ★**真っ黒にしない**（サイトの中で浮く）。
+   *          ★**navy-900 のままにもしない** —— すぐ上の「公立旋風」が
+   *          navy-800 の面なので、**並べたときに段差が出ない。**
+   *   文字 … `--color-navy-100`（校名）。面が暗いので白でなくても十分明るい
+   *   数字 … `--color-accent-500`。★**オレンジはここだけ。**
+   *          AGENTS.md「オレンジは小面積のアクセントのみ。面で使わない」
+   */
+  --ticker-bg: #04101f;
+  background: var(--ticker-bg);
+  color: var(--color-navy-100);
+  /*
+   * ★**LEDの粒**。細かい点を敷いて掲示板らしさを出す。
+   * 画像を足さずにグラデーションだけで作る（読み込むものを増やさない）。
+   */
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.055) 1px,
+    transparent 1px
+  );
+  background-size: 3px 3px;
+}
+
+/* ★**両端をぼかす。** 文字が唐突に切れず、帯の中を流れているように見える */
+.ticker::before,
+.ticker::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3rem;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.ticker::before {
+  left: 0;
+  background: linear-gradient(to right, var(--ticker-bg), transparent);
+}
+
+.ticker::after {
+  right: 0;
+  background: linear-gradient(to left, var(--ticker-bg), transparent);
+}
+
+.ticker__track {
+  display: flex;
+  width: max-content;
+  /*
+   * ★★**同じ並びを2回描いてある**（`ResultsTicker`）。
+   * **半分ぶん動かしたところで元と同じ絵になる**ので、
+   * そこで先頭に戻せば継ぎ目が見えない。
+   */
+  animation: ticker-scroll var(--ticker-duration, 60s) linear infinite;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker__item {
+  /* ★**数字の幅をそろえる。** スコアが揺れて見えるのを防ぐ */
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* ★**LEDの光り方**。にじみを1段だけ足す（強くすると読みにくくなる） */
+.ticker__score {
+  color: var(--color-accent-500);
+  text-shadow: 0 0 5px rgba(242, 140, 40, 0.4);
+}
+
+/* 県名・日付。★**主役は校名とスコア**なので一段落とす */
+.ticker__meta {
+  color: var(--color-navy-300);
+}
+
+/* 区切りの点。★**飾りなので読み上げには出さない**（span に aria-hidden） */
+.ticker__divider {
+  color: var(--color-navy-600);
+}
+@media (prefers-reduced-motion: reduce) {
+  .ticker {
+    /* ★流さないかわりに、指で読めるようにする */
+    overflow-x: auto;
+  }
+
+  .ticker__track {
+    animation: none;
+  }
+}

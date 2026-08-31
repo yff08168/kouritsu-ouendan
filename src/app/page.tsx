@@ -7,6 +7,7 @@ import { SectionHeading } from "@/components/common/SectionHeading";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { LiveResultsCard } from "@/components/results/LiveResultsCard";
 import { RegionalResultsCard } from "@/components/results/RegionalResultsCard";
+import { ResultsTicker } from "@/components/results/ResultsTicker";
 import { SchoolCard } from "@/components/schools/SchoolCard";
 import { PrefectureMap } from "@/components/schools/PrefectureMap";
 import { PrefectureMapGuide } from "@/components/schools/PrefectureMapGuide";
@@ -132,6 +133,17 @@ export default async function HomePage() {
           <PhenomenonRanking phenomena={phenomena} />
         </div>
       </Container>
+
+      {/*
+        ★★**電光掲示板**（2026-08-31。運営者の提案）。球場のリボンボードのつもり。
+
+        ★**`Container` の外に置いて画面の端から端まで敷く。**
+        中に入れると左右に余白ができ、**帯ではなく箱に見える。**
+        ★**JavaScriptを使っていない**（`ResultsTicker` の説明を読むこと）。
+      */}
+      <div className="mt-4 sm:mt-5">
+        <ResultsTicker pickups={REGIONAL_PICKUPS} />
+      </div>
 
       <Container className="mt-4 sm:mt-5">
         <div className="grid gap-4 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">

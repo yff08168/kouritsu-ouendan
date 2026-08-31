@@ -2,6 +2,7 @@ import Link from "next/link";
 import { MapPinned } from "lucide-react";
 
 import { SectionHeading } from "@/components/common/SectionHeading";
+import { ResultsCarousel } from "@/components/results/ResultsCarousel";
 import { cn } from "@/lib/utils";
 import {
   formatRegionalDate,
@@ -33,16 +34,25 @@ import {
  */
 export function RegionalResultsCard({
   pickups,
-  limit = 4,
+  perSlide = 4,
+  slides = 5,
   seed,
 }: {
   pickups: RegionalPickups;
-  /** 出す試合数 */
-  limit?: number;
+  /** 1枚に出す試合数。★**枚をまたいで変えないこと**（高さが揃わなくなる） */
+  perSlide?: number;
+  /** 何枚までめくれるようにするか */
+  slides?: number;
   /** 同じ並びを再現したいとき（検証用）。省略すると毎回変わる */
   seed?: number;
 }) {
-  const games = pickRegionalGames(pickups, limit, seed);
+  /*
+    ★★**抜粋は20試合入っているのに、4試合しか出していなかった**（2026-08-31）。
+    **データを増やさずに見せる量を5倍にできる**ので、枚に分けて横へめくる。
+    ★**足りなければ枚数が減るだけ**（`chunk` が空の枚を作らない）。
+  */
+  const games = pickRegionalGames(pickups, perSlide * slides, seed);
+  const pages = chunk(games, perSlide);
 
   /*
     ★**出典を並べる処理は 2026-08-21 に消した**（画面から外したため。運営者の判断）。
@@ -83,13 +93,23 @@ export function RegionalResultsCard({
           いまは掲載できる地方大会の結果がありません。
         </p>
       ) : (
-        <ul className="mt-4 divide-y divide-line">
-          {games.map((game, i) => (
-            <li key={`${game.districtSlug}-${game.date}-${i}`}>
-              <RegionalRow game={game} />
-            </li>
+        <ResultsCarousel
+          className="mt-4"
+          label="地方大会の結果"
+          /*
+            ★★**中身はここ（サーバー）で全部描いて渡す。**
+            カルーセル側で描くと、**検索エンジンには1枚ぶんしか見えない。**
+          */
+          slides={pages.map((page, p) => (
+            <ul key={p} className="divide-y divide-line">
+              {page.map((game, i) => (
+                <li key={`${game.districtSlug}-${game.date}-${i}`}>
+                  <RegionalRow game={game} />
+                </li>
+              ))}
+            </ul>
           ))}
-        </ul>
+        />
       )}
 
       {/*
@@ -100,6 +120,13 @@ export function RegionalResultsCard({
       */}
     </section>
   );
+}
+
+/** 決まった数ずつに切り分ける。★**空の枚は作らない** */
+function chunk<T>(items: T[], size: number): T[][] {
+  const pages: T[][] = [];
+  for (let i = 0; i < items.length; i += size) pages.push(items.slice(i, i + size));
+  return pages;
 }
 
 function RegionalRow({ game }: { game: RegionalPickup }) {

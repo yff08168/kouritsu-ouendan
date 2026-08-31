@@ -1561,6 +1561,32 @@ const gunma = {
       .replace(/^[■-◿★☆※〇◯〓]+/, "")
       .replace(/[■-◿★☆※〇◯〓]+$/, "");
   },
+  /**
+   * ★★★**同じ字が二重に刷ってある紙がある**（2026-08-31。平成24年の選手権）。
+   *
+   *   `92.4|412.1|17` `151.1|417.5|0` `272.2|423.4|高崎商` … **1行が丸ごと2回**
+   *
+   * pdf.js は**同じ位置に同じ字が2回描かれていればそのまま2つ返す**ので、
+   * ★**スロットが35個・1回戦の数字が奇数個**になり、そこで組み立てが落ちていた。
+   * ★**位置も字も同じなら、それは同じインク。** 片方を落とす。
+   * ★**別の試合が同じ得点を取ることはあっても、同じ x・同じ y には来ない。**
+   */
+  dedupe(page) {
+    return {
+      page: page.page,
+      lines: page.lines.map((l) => {
+        const seen = new Set();
+        const items = l.items.filter((i) => {
+          const key = `${i.x.toFixed(1)}\t${i.text}`;
+          if (seen.has(key)) return false;
+          seen.add(key);
+          return true;
+        });
+        return { ...l, items, text: items.map((i) => i.text).join("\t") };
+      }),
+    };
+  },
+
   slotColumns: (page) => findSlotColumns(page),
   /**
    * 校名の欄の**外端**。シード記号の列を読み込まないための境目。
@@ -1582,7 +1608,9 @@ const gunma = {
     return side === 0 ? Math.min(...top) - 4 : Math.max(...top) + 4;
   },
   /** 1枚の勝ち上がり表を読む。null＝目当ての大会でない／[]＝検算に落ちた */
-  readSheet(raw, season, year) {
+  readSheet(rawSheet, season, year) {
+    // ★**同じ字が二重に刷ってある紙がある**（上の `dedupe` を読むこと）
+    const raw = this.dedupe(rawSheet);
     const flat = raw.lines.map((l) => normalize(l.text.replace(/\t/g, "")).replace(/[\s　]/g, ""));
     const title = flat
       .map(
@@ -1650,8 +1678,24 @@ const gunma = {
           ),
         })),
     };
+    /*
+      ★★★**不戦勝のある紙は読まない**（2026-08-31 に確かめ直した）。
+
+          長野原 16 |           | 50 前橋商
+                    | 不戦勝    |
+          伊勢崎 17 |           | 51 健大高崎
+
+      ★**得点が無いので、勝った側が決まらない。**
+      ★★**紙のどこにも書かれていない** —— 勝ち上がった学校を刷り直す形式ではなく、
+      ○は**シード校の印**で勝者の印ではない。**次の回戦にも校名は出てこない。**
+      ★**検算（チーム数 − 試合数 = 1）に不戦勝を数えれば数は合う**が、
+      **その先の回戦の校名が決まらない**ので、当てると**別の学校の戦績になる。**
+      ★**8枚がこれで落ちている**（平成19春・20春・23秋・24秋・令和3秋・4春・5秋・7春）。
+      ★**読むなら、勝った側を別の出典から持ってくるしかない**
+      （連盟の歴代記録に決勝までの勝ち上がりがある）。
+    */
     if (clipped.lines.some((l) => /不戦/.test(l.text)))
-      return drop("不戦勝の枠がある（得点の無い枠が混ざると組み立てが静かに1試合ずれる）");
+      return drop("不戦勝の枠がある（勝った側が紙に書かれていない。上の説明を読むこと）");
     const page = stripScoreNotes(clipped);
 
     const a0 = this.nameEdge(clipped, L, R, half, 0);
@@ -1705,6 +1749,14 @@ const gunma = {
         .map((hitSpan) =>
           assembleSlotBracket(oriented, {
             roundLabels: ["準決勝", "準々決勝"],
+            /*
+              ★★★**スロットが縦の紙では、断片はスロット軸には広がらない**
+              （2026-08-31。鹿児島で先に踏んだのと同じ形）。
+              既定は**断片の中の文字の位置からスロットを見積もる**ので、
+              **2桁の得点だけ 0.22 スロットずれる**（`11` が 11.24 ではなく 11.46 になる）。
+              ★**中点が境目に乗らなくなり、その帯ごと捨てられていた。**
+            */
+            flatFragments: true,
             nameOrder: i === 0 ? "asc" : "desc",
             minFirstRound: 1,
             hitSpan,
@@ -3015,8 +3067,18 @@ const aichi = {
    * ★**スロット番号の列があるので、どの高さが1校ぶんかは読み取りで決まる。**
    */
   async readTwoColumnSheet(bytes, rawPage, season, tournament) {
-    const shapes = await readFilledShapes(bytes.slice(), { pageNumber: rawPage.page, ops: ["fill"] });
-    const vert = shapes.filter((s) => s.w < 3 && s.h >= 4);
+    /*
+      ★★**枝の塗り方は年で違う**（2026-08-30 その2）。
+      2018年以降の紙は `fill`、**2015〜2017年の紙は `eoFill`**（富山と同じ）で描いてある。
+      ★**`fill` だけを見る作りだと、古い紙は「縦線が1本も無い」で丸ごと落ちる。**
+      ★**どちらかに決め打ちせず、縦線が取れたほうを使う**（紙を見て決めており推測ではない）。
+    */
+    let shapes = await readFilledShapes(bytes.slice(), { pageNumber: rawPage.page, ops: ["fill"] });
+    let vert = shapes.filter((s) => s.w < 3 && s.h >= 4);
+    if (!vert.length) {
+      shapes = await readFilledShapes(bytes.slice(), { pageNumber: rawPage.page, ops: ["eoFill"] });
+      vert = shapes.filter((s) => s.w < 3 && s.h >= 4);
+    }
     if (!vert.length) return null;
     const page = this.splitFragments(rawPage, { circled: true });
     const cols = this.slotColumns(page, { tol: 8 }).slice(0, 2).sort((a, b) => a.x - b.x);
@@ -3039,10 +3101,44 @@ const aichi = {
     const nameXLeft = left.x - 6;
     const nameXRight = right.x + 6;
 
+    /*
+      ★★★**校名はスロット番号の列のどちら側にもありうる**（2026-08-31。2019年の秋季）。
+
+        2018年以降の紙   ｜ 校名 ｜ 番号 ｜ 得点 …          校名は**外側**
+        2019年の秋季     ｜ 番号 ｜ 校名 ｜ 得点 …          校名は**内側**（左右が逆）
+
+      ★**外側と決め打ちしていたので、左half の校名が26件とも空**になり、
+      その大会が丸ごと落ちていた。
+      ★**数字でない断片が多いほうを校名の側とする**（ブロックの紙の `readVectorSheet`
+      が前から同じやり方をしている）。**紙を見て決めており、当て推量ではない。**
+      ★**内側を見るときは 90 ポイントで打ち切る** —— 校名の欄はそれより狭く、
+      広げると日付や球場の断片を巻き込む。
+    */
+    const namesOutside = (col, side) => {
+      const near = (out) =>
+        page.lines.reduce(
+          (n, l) =>
+            n +
+            l.items.filter((i) => {
+              if (!nonNumeric(i)) return false;
+              const d = side === "L" ? col.x - i.x : i.x - col.x;
+              return out ? d > 6 : d < -6 && d > -90;
+            }).length,
+          0,
+        );
+      return near(true) >= near(false);
+    };
+    const outside = { L: namesOutside(left, "L"), R: namesOutside(right, "R") };
+    if (process.env.AICHI_DEBUG) console.log(`  [debug] 校名の側 左=${outside.L ? "外" : "内"} 右=${outside.R ? "外" : "内"}`);
+
     const teamsOf = (col, side) => {
       const pitch = (col.rows[0].y - col.rows.at(-1).y) / (col.rows.length - 1);
       const pick = (l) =>
-        l.items.filter((i) => nonNumeric(i) && (side === "L" ? i.x < nameXLeft : i.x > nameXRight));
+        l.items.filter((i) => {
+          if (!nonNumeric(i)) return false;
+          const d = side === "L" ? col.x - i.x : i.x - col.x;
+          return outside[side] ? d > 6 : d < -6 && d > -90;
+        });
       return col.rows.map((r) => ({
         y: r.y,
         side,
@@ -3056,6 +3152,15 @@ const aichi = {
       }));
     };
     const teams = [...teamsOf(left, "L"), ...teamsOf(right, "R")];
+    /*
+      ★★**枝の線と、スロット番号の行は 6.7 ずれる**（2026-08-30 その2。第67回春）。
+      **ずれは紙の大きさに比例する** —— 2018年以降の紙（行の間隔 16）では 2.6 だが、
+      2015〜2017年の紙（行の間隔 41.5）では **6.7** あり、既定の 5.5 では届かない。
+      ★**そのままだと、ほとんどの試合が「校名が読めない」で壊れる**（実測 45/95）。
+      ★**行の間隔から測る**（既定より狭めない）。0.3 倍なら隣の行は拾わない。
+    */
+    const rowPitch = (left.rows[0].y - left.rows.at(-1).y) / (left.rows.length - 1);
+    const nameTol = Math.max(5.5, rowPitch * 0.3);
     if (process.env.AICHI_DEBUG) console.log(`  [debug] 校名 ${teams.length}件: ${teams.map((t) => t.name || "★空").join("・")}`);
     if (teams.some((t) => !t.name)) return null;
 
@@ -3066,6 +3171,7 @@ const aichi = {
       nameXLeft,
       nameXRight,
       centerX: (left.x + right.x) / 2,
+      nameTol,
       /*
         ★**得点が枝の線にちょうど載っている**（球場と得点が1つの断片で、
         断片の中の位置は幅を文字数で割った見積もりしかない）。
@@ -5264,19 +5370,29 @@ const ishikawa = {
           **準々決勝以降は打者ごとの成績まで並ぶ「箱スコア」**になり、
           枠の右に数字が何十個も入るので、順番で読むと合計を取り違える。
         */
+        /*
+          ★★★**縮尺は「各回の列の間隔」ではなく「合計までの距離」で測る**
+          （2026-08-31 に直した）。
+
+          2016年の紙は**各回の列の間隔だけが広い**（8.4。2026年は 8.15）のに、
+          **枠の幅は同じ**（合計まで 165.1 対 166.8）。間隔から測ると縮尺が 1.03 になり、
+          **各回の窓の左端が 1回表の得点より右にずれて、その1点が和から抜ける** ——
+          「イニングの和が合計と合わない」で**その大会が丸ごと落ちていた**（2016・2017年）。
+
+          ★**合計の位置は枠そのものの幅**なので、窓を作る目的にはこちらが正しい。
+          ★**候補は「枠の左端から 120〜200」の数字のいちばん右**
+          （各回の得点は 145 より内側、次の枠は 190 より外側にある）。
+          ★**見つからなければ今までどおり 1 倍**（紙が変わったときに黙って壊れない）。
+        */
         if (scale === null) {
-          const gaps = [];
-          for (const row of rows) {
-            const xs = row.items.map((it) => it.x).sort((a, b) => a - b);
-            for (let k = 1; k < xs.length; k++) {
-              const g = xs[k] - xs[k - 1];
-              // 校名の広い隙間と、合計の手前の広い隙間は外す。**残るのは各回の列の間隔**
-              if (g >= 4 && g <= 14) gaps.push(g);
-            }
-          }
-          gaps.sort((a, b) => a - b);
-          // 2026年の紙が基準（各回の列の間隔 8.15）
-          scale = gaps.length >= 4 ? gaps[Math.floor(gaps.length / 2)] / 8.15 : 1;
+          const cands = rows.flatMap((row) =>
+            row.items
+              .filter((it) => score(it.text) !== null)
+              .map((it) => it.x - marks[0].x)
+              .filter((d) => d >= 120 && d <= 200),
+          );
+          // 2026年の紙が基準（枠の左端から合計まで 166.8）
+          scale = cands.length ? Math.max(...cands) / 166.8 : 1;
         }
         const win = (lo, hi) => [lo * scale, hi * scale];
 
@@ -5299,15 +5415,49 @@ const ishikawa = {
           return [];
         }
 
-        for (const mark of marks) {
+        for (const [mi, mark] of marks.entries()) {
+          /*
+            ★★★**窓は「次の枠の手前」で打ち切る**（2026-08-31）。
+            1行に枠が3つ並ぶ紙があり（`◆石川県立野球場 第1試合` が3回）、
+            **次の枠の1回表・2回表が、この枠の合計の窓（110〜210）に入ってくる**
+            （枠の幅が 164.8 しかない年がある）。
+            ★**そのままだと隣の枠の得点を合計として読み**、和が合わずに大会が丸ごと落ちる。
+          */
+          const nextMark = marks[mi + 1];
+          const frameEnd = nextMark ? Math.min(210, nextMark.x - mark.x - 5) : 210;
           const at = (row, lo0, hi0) => {
             const [lo, hi] = win(lo0, hi0);
             return row.items.filter((it) => it.x - mark.x >= lo && it.x - mark.x <= hi).sort((p, q) => p.x - q.x);
           };
+          /*
+            ★★★**合計の位置は枠ごとに違う**（2026-08-31 に直した）。
+
+              ふつうの試合   … 校名 ｜ 9回ぶんの得点 ｜ 合計（枠の左端から 166.8）
+              延長13回の試合 … 校名 ｜ 13回ぶんの得点 ｜ 合計（枠の左端から 150.2）
+
+            ★**回が増えると合計も右へ動く**ので、**固定の窓では拾えない**
+            （2017年は延長13回の試合で最終回が窓から外れ、大会ごと落ちていた）。
+            ★**紙の縮尺も年で違う**（2017年は枠が狭く、合計まで 144.9）。
+
+            ★★**枠の中の「110〜210 にある数字のいちばん右」を合計とする。**
+            **各回の得点はそれより左**、**次の枠は 190 より右**にある。
+            ★★**210 で打ち切るのが要**（2026-08-31）——
+            **準々決勝以降は同じ行に打者ごとの箱スコアが続く**（`(捕) 高磯 空汰 5 0 0 4 0 …`）。
+            **いちばん右の数字を素直に採ると、その打数を合計として読む。**
+            箱スコアは枠の左端から 250 より右にしか出てこない。
+            ★**各回の得点は「34 から合計の手前まで」。** 2桁の得点は1桁より左端が出るので
+            下限に余裕を持たせてある（`12` は `1` より 1.2 ポイント左。福島・群馬と同じ形）。
+          */
           const sides = rows.map((row) => {
-            const innings = at(row, 38, 145).map((it) => score(it.text)).filter((v) => v !== null);
-            const total = at(row, 152, 182).map((it) => score(it.text)).filter((v) => v !== null);
-            return { innings, total: total.at(-1) ?? null };
+            const cells = row.items
+              .map((it) => ({ d: it.x - mark.x, v: score(it.text) }))
+              .filter((c) => c.v !== null)
+              .sort((a, b) => a.d - b.d);
+            const totalCell = cells.filter((c) => c.d >= 110 && c.d <= frameEnd).at(-1) ?? null;
+            const innings = totalCell
+              ? cells.filter((c) => c.d >= 34 && c.d < totalCell.d - 3).map((c) => c.v)
+              : [];
+            return { innings, total: totalCell?.v ?? null };
           });
           const names = at(nameRow, 36, 115).map((it) => it.text.trim());
           if (names.length !== 2 || sides.some((s) => s.total === null || !s.innings.length)) {

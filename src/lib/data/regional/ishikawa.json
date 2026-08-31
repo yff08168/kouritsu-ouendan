@@ -5,6 +5,1111 @@
   "sourceUrl": "https://ishikawa-hbf.jp/",
   "games": [
     {
+      "date": "2017-07-14",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "石川高専",
+          "score": 7,
+          "won": true,
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        },
+        {
+          "display": "大聖寺",
+          "score": 3,
+          "won": false,
+          "name": "大聖寺高校",
+          "slug": "daishoji"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-15",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "尾山台",
+          "score": 5,
+          "won": true,
+          "name": "尾山台",
+          "slug": null
+        },
+        {
+          "display": "穴水",
+          "score": 1,
+          "won": false,
+          "name": "穴水高校",
+          "slug": "anamizu"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-15",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "北陸学院",
+          "score": 11,
+          "won": true,
+          "name": "北陸学院",
+          "slug": null
+        },
+        {
+          "display": "金沢二水",
+          "score": 4,
+          "won": false,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-15",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "宝達",
+          "score": 0,
+          "won": false,
+          "name": "宝達高校",
+          "slug": "hodatsu"
+        },
+        {
+          "display": "飯田",
+          "score": 6,
+          "won": true,
+          "name": "飯田高校",
+          "slug": "iida"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-15",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢桜丘",
+          "score": 14,
+          "won": true,
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
+        },
+        {
+          "display": "金沢大学附属",
+          "score": 0,
+          "won": false,
+          "name": "金沢大学附属",
+          "slug": null
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-15",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "羽咋",
+          "score": 5,
+          "won": false,
+          "name": "羽咋高校",
+          "slug": "hakui"
+        },
+        {
+          "display": "県立工業",
+          "score": 6,
+          "won": true,
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-15",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "金沢高専",
+          "score": 1,
+          "won": false,
+          "name": "金沢高専",
+          "slug": null
+        },
+        {
+          "display": "遊学館",
+          "score": 17,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-15",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "翠星",
+          "score": 0,
+          "won": false,
+          "name": "翠星高校",
+          "slug": "suisei"
+        },
+        {
+          "display": "松任",
+          "score": 6,
+          "won": true,
+          "name": "松任高校",
+          "slug": "matto"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-15",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢辰巳丘",
+          "score": 3,
+          "won": false,
+          "name": "金沢辰巳丘高校",
+          "slug": "kanazawatatsumigaoka"
+        },
+        {
+          "display": "野々市明倫",
+          "score": 5,
+          "won": true,
+          "name": "野々市明倫高校",
+          "slug": "nonoichimeirin"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-15",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "金沢学院",
+          "score": 8,
+          "won": true,
+          "name": "金沢学院",
+          "slug": null
+        },
+        {
+          "display": "小松明峰",
+          "score": 7,
+          "won": false,
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "加賀",
+          "score": 0,
+          "won": false,
+          "name": "加賀高校",
+          "slug": "kaga"
+        },
+        {
+          "display": "鹿西",
+          "score": 17,
+          "won": true,
+          "name": "鹿西高校",
+          "slug": "rokusei"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松",
+          "score": 9,
+          "won": true,
+          "name": "小松高校",
+          "slug": "komatsu"
+        },
+        {
+          "display": "鶴来",
+          "score": 1,
+          "won": false,
+          "name": "鶴来高校",
+          "slug": "tsurugi"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢伏見",
+          "score": 0,
+          "won": false,
+          "name": "金沢伏見高校",
+          "slug": "kanazawafushimi"
+        },
+        {
+          "display": "輪島",
+          "score": 12,
+          "won": true,
+          "name": "輪島高校",
+          "slug": "wajima"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢向陽・内灘",
+          "score": 0,
+          "won": false,
+          "name": "金沢向陽・内灘",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "大聖寺実業",
+          "score": 3,
+          "won": true,
+          "name": "大聖寺実業高校",
+          "slug": "daishojijitsugyo"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "能登",
+          "score": 0,
+          "won": false,
+          "name": "能登高校",
+          "slug": "noto"
+        },
+        {
+          "display": "金沢西",
+          "score": 4,
+          "won": true,
+          "name": "金沢西高校",
+          "slug": "kanazawanishi"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢錦丘",
+          "score": 11,
+          "won": true,
+          "name": "金沢錦丘高校",
+          "slug": "kanazawanishikigaoka"
+        },
+        {
+          "display": "小松市立",
+          "score": 7,
+          "won": false,
+          "name": "小松市立高校",
+          "slug": "komatsushiritsu"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-17",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "七尾",
+          "score": 5,
+          "won": true,
+          "name": "七尾高校",
+          "slug": "nanao"
+        },
+        {
+          "display": "七尾東雲",
+          "score": 2,
+          "won": false,
+          "name": "七尾東雲高校",
+          "slug": "nanaoshinonome"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-17",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢商業",
+          "score": 3,
+          "won": false,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        },
+        {
+          "display": "金沢",
+          "score": 4,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-17",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "寺井",
+          "score": 13,
+          "won": true,
+          "name": "寺井高校",
+          "slug": "terai"
+        },
+        {
+          "display": "金沢泉丘",
+          "score": 1,
+          "won": false,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-17",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "門前",
+          "score": 2,
+          "won": false,
+          "name": "門前高校",
+          "slug": "monzen"
+        },
+        {
+          "display": "金沢市立工業",
+          "score": 8,
+          "won": true,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-17",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 12,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "羽咋工業",
+          "score": 2,
+          "won": false,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-17",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢北陵",
+          "score": 0,
+          "won": false,
+          "name": "金沢北陵高校",
+          "slug": "kanazawahokuryo"
+        },
+        {
+          "display": "津幡",
+          "score": 7,
+          "won": true,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-17",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "小松工業",
+          "score": 2,
+          "won": false,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        },
+        {
+          "display": "小松商業",
+          "score": 9,
+          "won": true,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-17",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "鵬学園",
+          "score": 0,
+          "won": false,
+          "name": "鵬学園",
+          "slug": null
+        },
+        {
+          "display": "日本航空石川",
+          "score": 3,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-17",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "石川高専",
+          "score": 3,
+          "won": false,
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        },
+        {
+          "display": "小松大谷",
+          "score": 4,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-18",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "飯田",
+          "score": 0,
+          "won": false,
+          "name": "飯田高校",
+          "slug": "iida"
+        },
+        {
+          "display": "遊学館",
+          "score": 1,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-18",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "野々市明倫",
+          "score": 4,
+          "won": true,
+          "name": "野々市明倫高校",
+          "slug": "nonoichimeirin"
+        },
+        {
+          "display": "県立工業",
+          "score": 1,
+          "won": false,
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-18",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢学院",
+          "score": 3,
+          "won": false,
+          "name": "金沢学院",
+          "slug": null
+        },
+        {
+          "display": "北陸学院",
+          "score": 7,
+          "won": true,
+          "name": "北陸学院",
+          "slug": null
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-18",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "尾山台",
+          "score": 2,
+          "won": false,
+          "name": "尾山台",
+          "slug": null
+        },
+        {
+          "display": "金沢桜丘",
+          "score": 6,
+          "won": true,
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-19",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "松任",
+          "score": 0,
+          "won": false,
+          "name": "松任高校",
+          "slug": "matto"
+        },
+        {
+          "display": "金沢西",
+          "score": 7,
+          "won": true,
+          "name": "金沢西高校",
+          "slug": "kanazawanishi"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-19",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "大聖寺実業",
+          "score": 4,
+          "won": true,
+          "name": "大聖寺実業高校",
+          "slug": "daishojijitsugyo"
+        },
+        {
+          "display": "鹿西",
+          "score": 2,
+          "won": false,
+          "name": "鹿西高校",
+          "slug": "rokusei"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-19",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢錦丘",
+          "score": 0,
+          "won": false,
+          "name": "金沢錦丘高校",
+          "slug": "kanazawanishikigaoka"
+        },
+        {
+          "display": "輪島",
+          "score": 15,
+          "won": true,
+          "name": "輪島高校",
+          "slug": "wajima"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-19",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松",
+          "score": 11,
+          "won": true,
+          "name": "小松高校",
+          "slug": "komatsu"
+        },
+        {
+          "display": "七尾",
+          "score": 5,
+          "won": false,
+          "name": "七尾高校",
+          "slug": "nanao"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 8,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "金沢",
+          "score": 6,
+          "won": false,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢桜丘",
+          "score": 4,
+          "won": false,
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
+        },
+        {
+          "display": "金沢市立工業",
+          "score": 5,
+          "won": true,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 11,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "野々市明倫",
+          "score": 3,
+          "won": false,
+          "name": "野々市明倫高校",
+          "slug": "nonoichimeirin"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松商業",
+          "score": 3,
+          "won": false,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        },
+        {
+          "display": "北陸学院",
+          "score": 4,
+          "won": true,
+          "name": "北陸学院",
+          "slug": null
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-22",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢西",
+          "score": 0,
+          "won": false,
+          "name": "金沢西高校",
+          "slug": "kanazawanishi"
+        },
+        {
+          "display": "日本航空石川",
+          "score": 6,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-22",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "津幡",
+          "score": 4,
+          "won": true,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        },
+        {
+          "display": "小松",
+          "score": 0,
+          "won": false,
+          "name": "小松高校",
+          "slug": "komatsu"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-22",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "大聖寺実業",
+          "score": 2,
+          "won": false,
+          "name": "大聖寺実業高校",
+          "slug": "daishojijitsugyo"
+        },
+        {
+          "display": "寺井",
+          "score": 4,
+          "won": true,
+          "name": "寺井高校",
+          "slug": "terai"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-22",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "輪島",
+          "score": 1,
+          "won": false,
+          "name": "輪島高校",
+          "slug": "wajima"
+        },
+        {
+          "display": "小松大谷",
+          "score": 10,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-24",
+      "season": "summer",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "北陸学院",
+          "score": 5,
+          "won": false,
+          "name": "北陸学院",
+          "slug": null
+        },
+        {
+          "display": "遊学館",
+          "score": 6,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-24",
+      "season": "summer",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 11,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "金沢市立工業",
+          "score": 1,
+          "won": false,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-26",
+      "season": "summer",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "日本航空石川",
+          "score": 7,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        },
+        {
+          "display": "小松大谷",
+          "score": 4,
+          "won": false,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-26",
+      "season": "summer",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "津幡",
+          "score": 4,
+          "won": false,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        },
+        {
+          "display": "寺井",
+          "score": 5,
+          "won": true,
+          "name": "寺井高校",
+          "slug": "terai"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-28",
+      "season": "summer",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 6,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "寺井",
+          "score": 1,
+          "won": false,
+          "name": "寺井高校",
+          "slug": "terai"
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-28",
+      "season": "summer",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 7,
+          "won": false,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "日本航空石川",
+          "score": 8,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
+      "date": "2017-07-29",
+      "season": "summer",
+      "round": "決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 2,
+          "won": false,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "日本航空石川",
+          "score": 5,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "tournament": "第99回全国高等学校野球選手権石川大会（平成29年度夏季）"
+    },
+    {
       "date": "2026-07-09",
       "season": "summer",
       "round": "1回戦",
@@ -949,240 +2054,584 @@
       "tournament": "第108回全国高等学校野球選手権石川大会（令和8年度夏季）"
     },
     {
-      "date": "2019-07-12",
+      "date": "2025-07-11",
       "season": "summer",
       "round": "1回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
-          "display": "辰巳丘・向陽・宝達・穴水",
+          "display": "羽咋",
           "score": 4,
-          "won": false,
-          "name": "辰巳丘・向陽・宝達・穴水",
-          "slug": null,
-          "combined": true
+          "won": true,
+          "name": "羽咋高校",
+          "slug": "hakui"
         },
         {
-          "display": "石川高専",
-          "score": 11,
-          "won": true,
-          "name": "石川工業高専",
-          "slug": "ishikawakogyo"
+          "display": "野々市明倫",
+          "score": 0,
+          "won": false,
+          "name": "野々市明倫高校",
+          "slug": "nonoichimeirin"
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
     },
     {
-      "date": "2019-07-13",
+      "date": "2025-07-12",
       "season": "summer",
       "round": "1回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
-          "display": "能登",
-          "score": 4,
+          "display": "大聖寺",
+          "score": 3,
           "won": false,
-          "name": "能登高校",
-          "slug": "noto"
+          "name": "大聖寺高校",
+          "slug": "daishoji"
         },
         {
-          "display": "飯田",
-          "score": 5,
+          "display": "小松",
+          "score": 13,
           "won": true,
-          "name": "飯田高校",
-          "slug": "iida"
+          "name": "小松高校",
+          "slug": "komatsu"
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
     },
     {
-      "date": "2019-07-13",
+      "date": "2025-07-12",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "鶴来",
+          "score": 2,
+          "won": false,
+          "name": "鶴来高校",
+          "slug": "tsurugi"
+        },
+        {
+          "display": "金沢龍谷",
+          "score": 4,
+          "won": true,
+          "name": "金沢龍谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-12",
       "season": "summer",
       "round": "1回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
           "display": "金沢商業",
-          "score": 11,
+          "score": 5,
           "won": true,
           "name": "金沢商業高校",
           "slug": "kanazawashogyo"
         },
         {
-          "display": "金沢北陵",
-          "score": 0,
+          "display": "金沢桜丘",
+          "score": 4,
           "won": false,
-          "name": "金沢北陵高校",
-          "slug": "kanazawahokuryo"
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
     },
     {
-      "date": "2019-07-13",
+      "date": "2025-07-12",
       "season": "summer",
       "round": "1回戦",
-      "venue": "弁慶スタジアム",
+      "venue": "金沢市民野球場",
       "teams": [
         {
-          "display": "小松市立",
-          "score": 2,
-          "won": false,
-          "name": "小松市立高校",
-          "slug": "komatsushiritsu"
+          "display": "金沢錦丘",
+          "score": 7,
+          "won": true,
+          "name": "金沢錦丘高校",
+          "slug": "kanazawanishikigaoka"
         },
+        {
+          "display": "金沢伏見",
+          "score": 0,
+          "won": false,
+          "name": "金沢伏見高校",
+          "slug": "kanazawafushimi"
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "輪島",
+          "score": 5,
+          "won": true,
+          "name": "輪島高校",
+          "slug": "wajima"
+        },
+        {
+          "display": "小松商業",
+          "score": 1,
+          "won": false,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
         {
           "display": "津幡",
           "score": 12,
           "won": true,
           "name": "津幡高校",
           "slug": "tsubata"
+        },
+        {
+          "display": "飯田",
+          "score": 2,
+          "won": false,
+          "name": "飯田高校",
+          "slug": "iida"
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
     },
     {
-      "date": "2019-07-13",
+      "date": "2025-07-12",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "金沢北陵",
+          "score": 0,
+          "won": false,
+          "name": "金沢北陵高校",
+          "slug": "kanazawahokuryo"
+        },
+        {
+          "display": "遊学館",
+          "score": 10,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "金沢二水",
+          "score": 4,
+          "won": false,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        },
+        {
+          "display": "県立工業",
+          "score": 11,
+          "won": true,
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-13",
       "season": "summer",
       "round": "1回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
-          "display": "鹿西",
-          "score": 4,
+          "display": "翠星",
+          "score": 10,
           "won": true,
-          "name": "鹿西高校",
-          "slug": "rokusei"
+          "name": "翠星高校",
+          "slug": "suisei"
         },
         {
-          "display": "七尾",
-          "score": 2,
+          "display": "能登",
+          "score": 3,
           "won": false,
-          "name": "七尾高校",
-          "slug": "nanao"
+          "name": "能登高校",
+          "slug": "noto"
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
     },
     {
-      "date": "2019-07-13",
+      "date": "2025-07-13",
       "season": "summer",
       "round": "1回戦",
-      "venue": "弁慶スタジアム",
+      "venue": "金沢市民野球場",
       "teams": [
         {
-          "display": "門前",
-          "score": 2,
+          "display": "七尾東雲",
+          "score": 0,
           "won": false,
-          "name": "門前高校",
-          "slug": "monzen"
+          "name": "七尾東雲高校",
+          "slug": "nanaoshinonome"
         },
         {
-          "display": "金沢泉丘",
-          "score": 9,
+          "display": "北陸学院",
+          "score": 7,
           "won": true,
-          "name": "金沢泉丘高校",
-          "slug": "kanazawaizumigaoka"
+          "name": "北陸学院",
+          "slug": null
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
     },
     {
-      "date": "2019-07-13",
+      "date": "2025-07-13",
       "season": "summer",
-      "round": "1回戦",
-      "venue": "弁慶スタジアム",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
       "teams": [
         {
           "display": "寺井",
-          "score": 1,
+          "score": 2,
           "won": false,
           "name": "寺井高校",
           "slug": "terai"
         },
         {
-          "display": "小松商業",
-          "score": 2,
-          "won": true,
-          "name": "小松商業高校",
-          "slug": "komatsushogyo"
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-14",
-      "season": "summer",
-      "round": "1回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "羽咋工業",
-          "score": 0,
-          "won": false,
-          "name": "羽咋工業高校",
-          "slug": "hakuikogyo"
-        },
-        {
           "display": "小松工業",
-          "score": 7,
+          "score": 10,
           "won": true,
           "name": "小松工業高校",
           "slug": "komatsukogyo"
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
     },
     {
-      "date": "2019-07-14",
+      "date": "2025-07-13",
       "season": "summer",
-      "round": "1回戦",
+      "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
-          "display": "松任",
+          "display": "大聖寺実業",
           "score": 1,
           "won": false,
-          "name": "松任高校",
-          "slug": "matto"
+          "name": "大聖寺実業高校",
+          "slug": "daishojijitsugyo"
         },
         {
-          "display": "金沢西",
-          "score": 8,
-          "won": true,
-          "name": "金沢西高校",
-          "slug": "kanazawanishi"
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-14",
-      "season": "summer",
-      "round": "1回戦",
-      "venue": "弁慶スタジアム",
-      "teams": [
-        {
           "display": "金沢",
-          "score": 2,
+          "score": 13,
           "won": true,
           "name": "金沢",
           "slug": null
-        },
-        {
-          "display": "鶴来",
-          "score": 0,
-          "won": false,
-          "name": "鶴来高校",
-          "slug": "tsurugi"
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
     },
     {
-      "date": "2019-07-14",
+      "date": "2025-07-13",
       "season": "summer",
-      "round": "1回戦",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金大附属",
+          "score": 0,
+          "won": false,
+          "name": "金沢大学人間社会学域学校教育学類附属高校",
+          "slug": "kanazawadaigakuningenshakaigakuikigakkokyoikugakuruifuzoku"
+        },
+        {
+          "display": "星稜",
+          "score": 27,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松明峰",
+          "score": 0,
+          "won": false,
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
+        },
+        {
+          "display": "小松大谷",
+          "score": 7,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-14",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢学院大附",
+          "score": 7,
+          "won": true,
+          "name": "金沢学院大附",
+          "slug": null
+        },
+        {
+          "display": "小松市立",
+          "score": 4,
+          "won": false,
+          "name": "小松市立高校",
+          "slug": "komatsushiritsu"
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-14",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "鹿西",
+          "score": 0,
+          "won": false,
+          "name": "鹿西高校",
+          "slug": "rokusei"
+        },
+        {
+          "display": "日本航空石川",
+          "score": 11,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-14",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "門前",
+          "score": 9,
+          "won": true,
+          "name": "門前高校",
+          "slug": "monzen"
+        },
+        {
+          "display": "金沢市立工業",
+          "score": 2,
+          "won": false,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-14",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢西",
+          "score": 5,
+          "won": false,
+          "name": "金沢西高校",
+          "slug": "kanazawanishi"
+        },
+        {
+          "display": "羽咋工業",
+          "score": 12,
+          "won": true,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-14",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "穴水",
+          "score": 0,
+          "won": false,
+          "name": "穴水高校",
+          "slug": "anamizu"
+        },
+        {
+          "display": "七尾",
+          "score": 10,
+          "won": true,
+          "name": "七尾高校",
+          "slug": "nanao"
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-14",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢泉丘",
+          "score": 2,
+          "won": false,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        },
+        {
+          "display": "石川高専",
+          "score": 9,
+          "won": true,
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-15",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "鵬学園",
+          "score": 1,
+          "won": false,
+          "name": "鵬学園",
+          "slug": null
+        },
+        {
+          "display": "羽咋",
+          "score": 4,
+          "won": true,
+          "name": "羽咋高校",
+          "slug": "hakui"
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-15",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松",
+          "score": 1,
+          "won": false,
+          "name": "小松高校",
+          "slug": "komatsu"
+        },
+        {
+          "display": "金沢龍谷",
+          "score": 5,
+          "won": true,
+          "name": "金沢龍谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-15",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "津幡",
+          "score": 5,
+          "won": true,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        },
+        {
+          "display": "輪島",
+          "score": 3,
+          "won": false,
+          "name": "輪島高校",
+          "slug": "wajima"
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-16",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 13,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "県立工業",
+          "score": 4,
+          "won": false,
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-16",
+      "season": "summer",
+      "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
@@ -1193,63 +2642,17 @@
           "slug": "kanazawanishikigaoka"
         },
         {
-          "display": "金沢龍谷",
-          "score": 9,
-          "won": true,
-          "name": "金沢龍谷",
-          "slug": null
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-14",
-      "season": "summer",
-      "round": "1回戦",
-      "venue": "弁慶スタジアム",
-      "teams": [
-        {
-          "display": "羽咋",
-          "score": 3,
-          "won": true,
-          "name": "羽咋高校",
-          "slug": "hakui"
-        },
-        {
-          "display": "大聖寺",
+          "display": "金沢商業",
           "score": 1,
-          "won": false,
-          "name": "大聖寺高校",
-          "slug": "daishoji"
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-15",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "七尾東雲",
-          "score": 0,
-          "won": false,
-          "name": "七尾東雲高校",
-          "slug": "nanaoshinonome"
-        },
-        {
-          "display": "星稜",
-          "score": 10,
           "won": true,
-          "name": "星稜",
-          "slug": null
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
     },
     {
-      "date": "2019-07-15",
+      "date": "2025-07-16",
       "season": "summer",
       "round": "2回戦",
       "venue": "石川県立野球場",
@@ -1262,487 +2665,1039 @@
           "slug": "suisei"
         },
         {
-          "display": "輪島",
-          "score": 22,
+          "display": "北陸学院",
+          "score": 10,
           "won": true,
-          "name": "輪島高校",
-          "slug": "wajima"
+          "name": "北陸学院",
+          "slug": null
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
     },
     {
-      "date": "2019-07-15",
+      "date": "2025-07-19",
       "season": "summer",
-      "round": "2回戦",
-      "venue": "弁慶スタジアム",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
       "teams": [
+        {
+          "display": "七尾",
+          "score": 1,
+          "won": false,
+          "name": "七尾高校",
+          "slug": "nanao"
+        },
+        {
+          "display": "小松工業",
+          "score": 2,
+          "won": true,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-19",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 10,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "石川高専",
+          "score": 1,
+          "won": false,
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-19",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 9,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "金沢龍谷",
+          "score": 5,
+          "won": false,
+          "name": "金沢龍谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-19",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松大谷",
+          "score": 9,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        },
+        {
+          "display": "羽咋",
+          "score": 0,
+          "won": false,
+          "name": "羽咋高校",
+          "slug": "hakui"
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-20",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢学院大附",
+          "score": 5,
+          "won": false,
+          "name": "金沢学院大附",
+          "slug": null
+        },
+        {
+          "display": "金沢商業",
+          "score": 6,
+          "won": true,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-20",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "津幡",
+          "score": 0,
+          "won": false,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        },
+        {
+          "display": "日本航空石川",
+          "score": 10,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-20",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "門前",
+          "score": 7,
+          "won": false,
+          "name": "門前高校",
+          "slug": "monzen"
+        },
         {
           "display": "遊学館",
           "score": 8,
           "won": true,
           "name": "遊学館",
           "slug": null
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-20",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "北陸学院",
+          "score": 7,
+          "won": true,
+          "name": "北陸学院",
+          "slug": null
         },
         {
-          "display": "金沢学院",
-          "score": 6,
+          "display": "羽咋工業",
+          "score": 4,
           "won": false,
-          "name": "金沢学院",
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-23",
+      "season": "summer",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松工業",
+          "score": 3,
+          "won": false,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        },
+        {
+          "display": "北陸学院",
+          "score": 4,
+          "won": true,
+          "name": "北陸学院",
           "slug": null
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
     },
     {
-      "date": "2019-07-15",
+      "date": "2025-07-23",
+      "season": "summer",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 0,
+          "won": false,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "金沢",
+          "score": 8,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-23",
+      "season": "summer",
+      "round": "準々決勝",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 7,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "日本航空石川",
+          "score": 5,
+          "won": false,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-23",
+      "season": "summer",
+      "round": "準々決勝",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松大谷",
+          "score": 5,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        },
+        {
+          "display": "金沢商業",
+          "score": 3,
+          "won": false,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-25",
+      "season": "summer",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "北陸学院",
+          "score": 1,
+          "won": false,
+          "name": "北陸学院",
+          "slug": null
+        },
+        {
+          "display": "小松大谷",
+          "score": 8,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-25",
+      "season": "summer",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 2,
+          "won": false,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "金沢",
+          "score": 3,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2025-07-27",
+      "season": "summer",
+      "round": "決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松大谷",
+          "score": 8,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        },
+        {
+          "display": "金沢",
+          "score": 7,
+          "won": false,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+    },
+    {
+      "date": "2024-07-11",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "翠星",
+          "score": 1,
+          "won": false,
+          "name": "翠星高校",
+          "slug": "suisei"
+        },
+        {
+          "display": "金沢北陵",
+          "score": 8,
+          "won": true,
+          "name": "金沢北陵高校",
+          "slug": "kanazawahokuryo"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-12",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "北陸学院",
+          "score": 9,
+          "won": true,
+          "name": "北陸学院",
+          "slug": null
+        },
+        {
+          "display": "鹿西",
+          "score": 1,
+          "won": false,
+          "name": "鹿西高校",
+          "slug": "rokusei"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-12",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢龍谷",
+          "score": 11,
+          "won": true,
+          "name": "金沢龍谷",
+          "slug": null
+        },
+        {
+          "display": "輪島",
+          "score": 1,
+          "won": false,
+          "name": "輪島高校",
+          "slug": "wajima"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-12",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "石川高専",
+          "score": 8,
+          "won": true,
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        },
+        {
+          "display": "金沢錦丘",
+          "score": 1,
+          "won": false,
+          "name": "金沢錦丘高校",
+          "slug": "kanazawanishikigaoka"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-13",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "鵬学園",
+          "score": 5,
+          "won": true,
+          "name": "鵬学園",
+          "slug": null
+        },
+        {
+          "display": "大聖寺",
+          "score": 2,
+          "won": false,
+          "name": "大聖寺高校",
+          "slug": "daishoji"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-13",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "穴水",
+          "score": 4,
+          "won": false,
+          "name": "穴水高校",
+          "slug": "anamizu"
+        },
+        {
+          "display": "小松明峰",
+          "score": 7,
+          "won": true,
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-13",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "飯田",
+          "score": 12,
+          "won": true,
+          "name": "飯田高校",
+          "slug": "iida"
+        },
+        {
+          "display": "金沢西",
+          "score": 3,
+          "won": false,
+          "name": "金沢西高校",
+          "slug": "kanazawanishi"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-13",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "羽咋",
+          "score": 4,
+          "won": true,
+          "name": "羽咋高校",
+          "slug": "hakui"
+        },
+        {
+          "display": "県立工業",
+          "score": 3,
+          "won": false,
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-13",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢商業",
+          "score": 6,
+          "won": true,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        },
+        {
+          "display": "鶴来",
+          "score": 2,
+          "won": false,
+          "name": "鶴来高校",
+          "slug": "tsurugi"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-13",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松市立",
+          "score": 0,
+          "won": false,
+          "name": "小松市立高校",
+          "slug": "komatsushiritsu"
+        },
+        {
+          "display": "門前",
+          "score": 10,
+          "won": true,
+          "name": "門前高校",
+          "slug": "monzen"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-13",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "寺井",
+          "score": 9,
+          "won": true,
+          "name": "寺井高校",
+          "slug": "terai"
+        },
+        {
+          "display": "野々市明倫",
+          "score": 7,
+          "won": false,
+          "name": "野々市明倫高校",
+          "slug": "nonoichimeirin"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-13",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "七尾東雲",
+          "score": 1,
+          "won": false,
+          "name": "七尾東雲高校",
+          "slug": "nanaoshinonome"
+        },
+        {
+          "display": "金沢二水",
+          "score": 8,
+          "won": true,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-14",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 8,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "津幡",
+          "score": 1,
+          "won": false,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-14",
       "season": "summer",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
           "display": "日本航空石川",
-          "score": 7,
+          "score": 10,
           "won": true,
           "name": "日本航空石川",
           "slug": null
         },
         {
-          "display": "県立工業",
+          "display": "能登",
           "score": 0,
           "won": false,
-          "name": "石川県立工業高校",
-          "slug": "ishikawakenritsukogyo"
+          "name": "能登高校",
+          "slug": "noto"
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
     },
     {
-      "date": "2019-07-15",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "弁慶スタジアム",
-      "teams": [
-        {
-          "display": "小松明峰",
-          "score": 1,
-          "won": false,
-          "name": "小松明峰高校",
-          "slug": "komatsumeiho"
-        },
-        {
-          "display": "小松",
-          "score": 8,
-          "won": true,
-          "name": "小松高校",
-          "slug": "komatsu"
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-15",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "弁慶スタジアム",
-      "teams": [
-        {
-          "display": "金沢伏見",
-          "score": 0,
-          "won": false,
-          "name": "金沢伏見高校",
-          "slug": "kanazawafushimi"
-        },
-        {
-          "display": "小松大谷",
-          "score": 12,
-          "won": true,
-          "name": "小松大谷",
-          "slug": null
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-16",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "大聖寺実業",
-          "score": 0,
-          "won": false,
-          "name": "大聖寺実業高校",
-          "slug": "daishojijitsugyo"
-        },
-        {
-          "display": "鵬学園",
-          "score": 7,
-          "won": true,
-          "name": "鵬学園",
-          "slug": null
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-16",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "金沢大学附属",
-          "score": 5,
-          "won": true,
-          "name": "金沢大学附属",
-          "slug": null
-        },
-        {
-          "display": "金沢二水",
-          "score": 4,
-          "won": false,
-          "name": "金沢二水高校",
-          "slug": "kanazawanisui"
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-17",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "飯田",
-          "score": 5,
-          "won": false,
-          "name": "飯田高校",
-          "slug": "iida"
-        },
-        {
-          "display": "鹿西",
-          "score": 6,
-          "won": true,
-          "name": "鹿西高校",
-          "slug": "rokusei"
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-17",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "石川高専",
-          "score": 0,
-          "won": false,
-          "name": "石川工業高専",
-          "slug": "ishikawakogyo"
-        },
-        {
-          "display": "金沢商業",
-          "score": 2,
-          "won": true,
-          "name": "金沢商業高校",
-          "slug": "kanazawashogyo"
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-20",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "北陸学院",
-          "score": 2,
-          "won": false,
-          "name": "北陸学院",
-          "slug": null
-        },
-        {
-          "display": "金沢市立工業",
-          "score": 3,
-          "won": true,
-          "name": "金沢市立工業高校",
-          "slug": "kanazawashiritsukogyo"
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-20",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "金沢泉丘",
-          "score": 14,
-          "won": true,
-          "name": "金沢泉丘高校",
-          "slug": "kanazawaizumigaoka"
-        },
-        {
-          "display": "金沢西",
-          "score": 1,
-          "won": false,
-          "name": "金沢西高校",
-          "slug": "kanazawanishi"
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-20",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "小松商業",
-          "score": 0,
-          "won": false,
-          "name": "小松商業高校",
-          "slug": "komatsushogyo"
-        },
-        {
-          "display": "津幡",
-          "score": 8,
-          "won": true,
-          "name": "津幡高校",
-          "slug": "tsubata"
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-20",
+      "date": "2024-07-14",
       "season": "summer",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
           "display": "小松工業",
-          "score": 2,
+          "score": 0,
           "won": false,
           "name": "小松工業高校",
           "slug": "komatsukogyo"
         },
         {
-          "display": "金沢龍谷",
-          "score": 8,
+          "display": "小松大谷",
+          "score": 3,
           "won": true,
-          "name": "金沢龍谷",
+          "name": "小松大谷",
           "slug": null
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
     },
     {
-      "date": "2019-07-20",
+      "date": "2024-07-14",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "羽咋工業",
+          "score": 1,
+          "won": false,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        },
+        {
+          "display": "金沢学院大学附属",
+          "score": 11,
+          "won": true,
+          "name": "金沢学院大学附属",
+          "slug": null
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-14",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢大学附属",
+          "score": 2,
+          "won": false,
+          "name": "金沢大学附属",
+          "slug": null
+        },
+        {
+          "display": "大聖寺実業",
+          "score": 7,
+          "won": true,
+          "name": "大聖寺実業高校",
+          "slug": "daishojijitsugyo"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-14",
       "season": "summer",
       "round": "2回戦",
       "venue": "金沢市民野球場",
       "teams": [
         {
           "display": "金沢桜丘",
-          "score": 5,
+          "score": 9,
           "won": true,
           "name": "金沢桜丘高校",
           "slug": "kanazawasakuragaoka"
         },
         {
-          "display": "野々市明倫",
-          "score": 3,
+          "display": "金沢伏見",
+          "score": 0,
           "won": false,
-          "name": "野々市明倫高校",
-          "slug": "nonoichimeirin"
+          "name": "金沢伏見高校",
+          "slug": "kanazawafushimi"
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
     },
     {
-      "date": "2019-07-20",
+      "date": "2024-07-15",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "松任",
+          "score": 0,
+          "won": false,
+          "name": "松任高校",
+          "slug": "matto"
+        },
+        {
+          "display": "小松商業",
+          "score": 9,
+          "won": true,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-15",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "七尾",
+          "score": 0,
+          "won": false,
+          "name": "七尾高校",
+          "slug": "nanao"
+        },
+        {
+          "display": "遊学館",
+          "score": 6,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-15",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松",
+          "score": 0,
+          "won": false,
+          "name": "小松高校",
+          "slug": "komatsu"
+        },
+        {
+          "display": "金沢",
+          "score": 6,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-15",
       "season": "summer",
       "round": "2回戦",
       "venue": "金沢市民野球場",
       "teams": [
         {
-          "display": "金沢",
-          "score": 14,
+          "display": "金沢市立工業",
+          "score": 2,
+          "won": false,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        },
+        {
+          "display": "金沢泉丘",
+          "score": 3,
           "won": true,
-          "name": "金沢",
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-15",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "石川高専",
+          "score": 3,
+          "won": true,
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        },
+        {
+          "display": "金沢北陵",
+          "score": 1,
+          "won": false,
+          "name": "金沢北陵高校",
+          "slug": "kanazawahokuryo"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-15",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "北陸学院",
+          "score": 4,
+          "won": false,
+          "name": "北陸学院",
           "slug": null
         },
+        {
+          "display": "金沢龍谷",
+          "score": 5,
+          "won": true,
+          "name": "金沢龍谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-16",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "寺井",
+          "score": 0,
+          "won": false,
+          "name": "寺井高校",
+          "slug": "terai"
+        },
+        {
+          "display": "金沢二水",
+          "score": 6,
+          "won": true,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-16",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "鵬学園",
+          "score": 0,
+          "won": false,
+          "name": "鵬学園",
+          "slug": null
+        },
+        {
+          "display": "小松明峰",
+          "score": 10,
+          "won": true,
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-18",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
         {
           "display": "羽咋",
           "score": 2,
           "won": false,
           "name": "羽咋高校",
           "slug": "hakui"
+        },
+        {
+          "display": "飯田",
+          "score": 3,
+          "won": true,
+          "name": "飯田高校",
+          "slug": "iida"
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
     },
     {
-      "date": "2019-07-21",
+      "date": "2024-07-18",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢商業",
+          "score": 0,
+          "won": false,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        },
+        {
+          "display": "門前",
+          "score": 7,
+          "won": true,
+          "name": "門前高校",
+          "slug": "monzen"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-20",
       "season": "summer",
       "round": "3回戦",
       "venue": "石川県立野球場",
       "teams": [
-        {
-          "display": "金沢大学附属",
-          "score": 0,
-          "won": false,
-          "name": "金沢大学附属",
-          "slug": null
-        },
         {
           "display": "星稜",
           "score": 12,
           "won": true,
           "name": "星稜",
           "slug": null
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-21",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "小松大谷",
-          "score": 12,
-          "won": true,
-          "name": "小松大谷",
-          "slug": null
         },
         {
-          "display": "金沢商業",
-          "score": 2,
+          "display": "大聖寺実業",
+          "score": 1,
           "won": false,
-          "name": "金沢商業高校",
-          "slug": "kanazawashogyo"
+          "name": "大聖寺実業高校",
+          "slug": "daishojijitsugyo"
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
     },
     {
-      "date": "2019-07-21",
+      "date": "2024-07-20",
       "season": "summer",
       "round": "3回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
           "display": "日本航空石川",
-          "score": 8,
+          "score": 6,
           "won": true,
           "name": "日本航空石川",
           "slug": null
-        },
-        {
-          "display": "小松",
-          "score": 7,
-          "won": false,
-          "name": "小松高校",
-          "slug": "komatsu"
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-21",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "鹿西",
-          "score": 1,
-          "won": false,
-          "name": "鹿西高校",
-          "slug": "rokusei"
-        },
-        {
-          "display": "遊学館",
-          "score": 11,
-          "won": true,
-          "name": "遊学館",
-          "slug": null
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-22",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "金沢",
-          "score": 3,
-          "won": false,
-          "name": "金沢",
-          "slug": null
-        },
-        {
-          "display": "輪島",
-          "score": 6,
-          "won": true,
-          "name": "輪島高校",
-          "slug": "wajima"
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-22",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "金沢泉丘",
-          "score": 4,
-          "won": false,
-          "name": "金沢泉丘高校",
-          "slug": "kanazawaizumigaoka"
-        },
-        {
-          "display": "鵬学園",
-          "score": 5,
-          "won": true,
-          "name": "鵬学園",
-          "slug": null
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-22",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "津幡",
-          "score": 3,
-          "won": true,
-          "name": "津幡高校",
-          "slug": "tsubata"
         },
         {
           "display": "金沢桜丘",
@@ -1752,56 +3707,171 @@
           "slug": "kanazawasakuragaoka"
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
     },
     {
-      "date": "2019-07-22",
+      "date": "2024-07-20",
       "season": "summer",
       "round": "3回戦",
       "venue": "金沢市民野球場",
       "teams": [
         {
-          "display": "金沢市立工業",
-          "score": 1,
+          "display": "小松商業",
+          "score": 12,
+          "won": true,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        },
+        {
+          "display": "石川高専",
+          "score": 5,
           "won": false,
-          "name": "金沢市立工業高校",
-          "slug": "kanazawashiritsukogyo"
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-20",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 12,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
         },
         {
           "display": "金沢龍谷",
-          "score": 8,
-          "won": true,
+          "score": 2,
+          "won": false,
           "name": "金沢龍谷",
           "slug": null
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
     },
     {
-      "date": "2019-07-24",
+      "date": "2024-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢二水",
+          "score": 3,
+          "won": false,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        },
+        {
+          "display": "小松大谷",
+          "score": 9,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松明峰",
+          "score": 3,
+          "won": false,
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
+        },
+        {
+          "display": "金沢学院大学附属",
+          "score": 8,
+          "won": true,
+          "name": "金沢学院大学附属",
+          "slug": null
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "門前",
+          "score": 8,
+          "won": true,
+          "name": "門前高校",
+          "slug": "monzen"
+        },
+        {
+          "display": "金沢泉丘",
+          "score": 4,
+          "won": false,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "飯田",
+          "score": 2,
+          "won": false,
+          "name": "飯田高校",
+          "slug": "iida"
+        },
+        {
+          "display": "金沢",
+          "score": 9,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-23",
       "season": "summer",
       "round": "準々決勝",
       "venue": "石川県立野球場",
       "teams": [
         {
-          "display": "星稜",
-          "score": 2,
-          "won": true,
-          "name": "星稜",
-          "slug": null
-        },
-        {
           "display": "遊学館",
-          "score": 1,
+          "score": 5,
           "won": false,
           "name": "遊学館",
           "slug": null
+        },
+        {
+          "display": "星稜",
+          "score": 6,
+          "won": true,
+          "name": "星稜",
+          "slug": null
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
     },
     {
-      "date": "2019-07-24",
+      "date": "2024-07-23",
       "season": "summer",
       "round": "準々決勝",
       "venue": "石川県立野球場",
@@ -1809,134 +3879,134 @@
         {
           "display": "日本航空石川",
           "score": 4,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        },
+        {
+          "display": "小松商業",
+          "score": 1,
+          "won": false,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-23",
+      "season": "summer",
+      "round": "準々決勝",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 1,
+          "won": false,
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "小松大谷",
+          "score": 3,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-23",
+      "season": "summer",
+      "round": "準々決勝",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "門前",
+          "score": 0,
+          "won": false,
+          "name": "門前高校",
+          "slug": "monzen"
+        },
+        {
+          "display": "金沢学院大学附属",
+          "score": 3,
+          "won": true,
+          "name": "金沢学院大学附属",
+          "slug": null
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-25",
+      "season": "summer",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 6,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "金沢学院大学附属",
+          "score": 0,
+          "won": false,
+          "name": "金沢学院大学附属",
+          "slug": null
+        }
+      ],
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+    },
+    {
+      "date": "2024-07-25",
+      "season": "summer",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "日本航空石川",
+          "score": 1,
           "won": false,
           "name": "日本航空石川",
           "slug": null
         },
         {
           "display": "小松大谷",
-          "score": 5,
+          "score": 3,
           "won": true,
           "name": "小松大谷",
           "slug": null
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
     },
     {
-      "date": "2019-07-25",
-      "season": "summer",
-      "round": "準々決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "輪島",
-          "score": 2,
-          "won": false,
-          "name": "輪島高校",
-          "slug": "wajima"
-        },
-        {
-          "display": "津幡",
-          "score": 3,
-          "won": true,
-          "name": "津幡高校",
-          "slug": "tsubata"
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-25",
-      "season": "summer",
-      "round": "準々決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "鵬学園",
-          "score": 10,
-          "won": true,
-          "name": "鵬学園",
-          "slug": null
-        },
-        {
-          "display": "金沢龍谷",
-          "score": 0,
-          "won": false,
-          "name": "金沢龍谷",
-          "slug": null
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-27",
-      "season": "summer",
-      "round": "準決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "星稜",
-          "score": 8,
-          "won": true,
-          "name": "星稜",
-          "slug": null
-        },
-        {
-          "display": "鵬学園",
-          "score": 6,
-          "won": false,
-          "name": "鵬学園",
-          "slug": null
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-27",
-      "season": "summer",
-      "round": "準決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "小松大谷",
-          "score": 10,
-          "won": true,
-          "name": "小松大谷",
-          "slug": null
-        },
-        {
-          "display": "津幡",
-          "score": 3,
-          "won": false,
-          "name": "津幡高校",
-          "slug": "tsubata"
-        }
-      ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
-    },
-    {
-      "date": "2019-07-28",
+      "date": "2024-07-27",
       "season": "summer",
       "round": "決勝",
       "venue": "石川県立野球場",
       "teams": [
         {
-          "display": "星稜",
-          "score": 6,
+          "display": "小松大谷",
+          "score": 5,
           "won": true,
-          "name": "星稜",
+          "name": "小松大谷",
           "slug": null
         },
         {
-          "display": "小松大谷",
-          "score": 2,
+          "display": "星稜",
+          "score": 0,
           "won": false,
-          "name": "小松大谷",
+          "name": "星稜",
           "slug": null
         }
       ],
-      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
     },
     {
       "date": "2022-07-08",
@@ -2929,63 +4999,1261 @@
       "tournament": "第104回全国高等学校野球選手権石川大会（令和4年度夏季）"
     },
     {
-      "date": "2024-07-11",
+      "date": "2019-07-12",
       "season": "summer",
       "round": "1回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
-          "display": "翠星",
+          "display": "辰巳丘・向陽・宝達・穴水",
+          "score": 4,
+          "won": false,
+          "name": "辰巳丘・向陽・宝達・穴水",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "石川高専",
+          "score": 11,
+          "won": true,
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-13",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "能登",
+          "score": 4,
+          "won": false,
+          "name": "能登高校",
+          "slug": "noto"
+        },
+        {
+          "display": "飯田",
+          "score": 5,
+          "won": true,
+          "name": "飯田高校",
+          "slug": "iida"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-13",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢商業",
+          "score": 11,
+          "won": true,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        },
+        {
+          "display": "金沢北陵",
+          "score": 0,
+          "won": false,
+          "name": "金沢北陵高校",
+          "slug": "kanazawahokuryo"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-13",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "小松市立",
+          "score": 2,
+          "won": false,
+          "name": "小松市立高校",
+          "slug": "komatsushiritsu"
+        },
+        {
+          "display": "津幡",
+          "score": 12,
+          "won": true,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-13",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "鹿西",
+          "score": 4,
+          "won": true,
+          "name": "鹿西高校",
+          "slug": "rokusei"
+        },
+        {
+          "display": "七尾",
+          "score": 2,
+          "won": false,
+          "name": "七尾高校",
+          "slug": "nanao"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-13",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "門前",
+          "score": 2,
+          "won": false,
+          "name": "門前高校",
+          "slug": "monzen"
+        },
+        {
+          "display": "金沢泉丘",
+          "score": 9,
+          "won": true,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-13",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "寺井",
           "score": 1,
+          "won": false,
+          "name": "寺井高校",
+          "slug": "terai"
+        },
+        {
+          "display": "小松商業",
+          "score": 2,
+          "won": true,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "羽咋工業",
+          "score": 0,
+          "won": false,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        },
+        {
+          "display": "小松工業",
+          "score": 7,
+          "won": true,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "松任",
+          "score": 1,
+          "won": false,
+          "name": "松任高校",
+          "slug": "matto"
+        },
+        {
+          "display": "金沢西",
+          "score": 8,
+          "won": true,
+          "name": "金沢西高校",
+          "slug": "kanazawanishi"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 2,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "鶴来",
+          "score": 0,
+          "won": false,
+          "name": "鶴来高校",
+          "slug": "tsurugi"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢錦丘",
+          "score": 0,
+          "won": false,
+          "name": "金沢錦丘高校",
+          "slug": "kanazawanishikigaoka"
+        },
+        {
+          "display": "金沢龍谷",
+          "score": 9,
+          "won": true,
+          "name": "金沢龍谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "羽咋",
+          "score": 3,
+          "won": true,
+          "name": "羽咋高校",
+          "slug": "hakui"
+        },
+        {
+          "display": "大聖寺",
+          "score": 1,
+          "won": false,
+          "name": "大聖寺高校",
+          "slug": "daishoji"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "七尾東雲",
+          "score": 0,
+          "won": false,
+          "name": "七尾東雲高校",
+          "slug": "nanaoshinonome"
+        },
+        {
+          "display": "星稜",
+          "score": 10,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "翠星",
+          "score": 0,
           "won": false,
           "name": "翠星高校",
           "slug": "suisei"
         },
         {
-          "display": "金沢北陵",
-          "score": 8,
+          "display": "輪島",
+          "score": 22,
           "won": true,
-          "name": "金沢北陵高校",
-          "slug": "kanazawahokuryo"
+          "name": "輪島高校",
+          "slug": "wajima"
         }
       ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
     },
     {
-      "date": "2024-07-12",
+      "date": "2019-07-15",
       "season": "summer",
-      "round": "1回戦",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 8,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "金沢学院",
+          "score": 6,
+          "won": false,
+          "name": "金沢学院",
+          "slug": null
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "日本航空石川",
+          "score": 7,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        },
+        {
+          "display": "県立工業",
+          "score": 0,
+          "won": false,
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "小松明峰",
+          "score": 1,
+          "won": false,
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
+        },
+        {
+          "display": "小松",
+          "score": 8,
+          "won": true,
+          "name": "小松高校",
+          "slug": "komatsu"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "金沢伏見",
+          "score": 0,
+          "won": false,
+          "name": "金沢伏見高校",
+          "slug": "kanazawafushimi"
+        },
+        {
+          "display": "小松大谷",
+          "score": 12,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-16",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "大聖寺実業",
+          "score": 0,
+          "won": false,
+          "name": "大聖寺実業高校",
+          "slug": "daishojijitsugyo"
+        },
+        {
+          "display": "鵬学園",
+          "score": 7,
+          "won": true,
+          "name": "鵬学園",
+          "slug": null
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-16",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢大学附属",
+          "score": 5,
+          "won": true,
+          "name": "金沢大学附属",
+          "slug": null
+        },
+        {
+          "display": "金沢二水",
+          "score": 4,
+          "won": false,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-17",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "飯田",
+          "score": 5,
+          "won": false,
+          "name": "飯田高校",
+          "slug": "iida"
+        },
+        {
+          "display": "鹿西",
+          "score": 6,
+          "won": true,
+          "name": "鹿西高校",
+          "slug": "rokusei"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-17",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "石川高専",
+          "score": 0,
+          "won": false,
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        },
+        {
+          "display": "金沢商業",
+          "score": 2,
+          "won": true,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-20",
+      "season": "summer",
+      "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
           "display": "北陸学院",
-          "score": 9,
-          "won": true,
+          "score": 2,
+          "won": false,
           "name": "北陸学院",
           "slug": null
         },
+        {
+          "display": "金沢市立工業",
+          "score": 3,
+          "won": true,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-20",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢泉丘",
+          "score": 14,
+          "won": true,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        },
+        {
+          "display": "金沢西",
+          "score": 1,
+          "won": false,
+          "name": "金沢西高校",
+          "slug": "kanazawanishi"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-20",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松商業",
+          "score": 0,
+          "won": false,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        },
+        {
+          "display": "津幡",
+          "score": 8,
+          "won": true,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-20",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松工業",
+          "score": 2,
+          "won": false,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        },
+        {
+          "display": "金沢龍谷",
+          "score": 8,
+          "won": true,
+          "name": "金沢龍谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-20",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢桜丘",
+          "score": 5,
+          "won": true,
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
+        },
+        {
+          "display": "野々市明倫",
+          "score": 3,
+          "won": false,
+          "name": "野々市明倫高校",
+          "slug": "nonoichimeirin"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-20",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 14,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "羽咋",
+          "score": 2,
+          "won": false,
+          "name": "羽咋高校",
+          "slug": "hakui"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢大学附属",
+          "score": 0,
+          "won": false,
+          "name": "金沢大学附属",
+          "slug": null
+        },
+        {
+          "display": "星稜",
+          "score": 12,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松大谷",
+          "score": 12,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        },
+        {
+          "display": "金沢商業",
+          "score": 2,
+          "won": false,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "日本航空石川",
+          "score": 8,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        },
+        {
+          "display": "小松",
+          "score": 7,
+          "won": false,
+          "name": "小松高校",
+          "slug": "komatsu"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
         {
           "display": "鹿西",
           "score": 1,
           "won": false,
           "name": "鹿西高校",
           "slug": "rokusei"
+        },
+        {
+          "display": "遊学館",
+          "score": 11,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
         }
       ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
     },
     {
-      "date": "2024-07-12",
+      "date": "2019-07-22",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 3,
+          "won": false,
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "輪島",
+          "score": 6,
+          "won": true,
+          "name": "輪島高校",
+          "slug": "wajima"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-22",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢泉丘",
+          "score": 4,
+          "won": false,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        },
+        {
+          "display": "鵬学園",
+          "score": 5,
+          "won": true,
+          "name": "鵬学園",
+          "slug": null
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-22",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "津幡",
+          "score": 3,
+          "won": true,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        },
+        {
+          "display": "金沢桜丘",
+          "score": 1,
+          "won": false,
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-22",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢市立工業",
+          "score": 1,
+          "won": false,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        },
+        {
+          "display": "金沢龍谷",
+          "score": 8,
+          "won": true,
+          "name": "金沢龍谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-24",
+      "season": "summer",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 2,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "遊学館",
+          "score": 1,
+          "won": false,
+          "name": "遊学館",
+          "slug": null
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-24",
+      "season": "summer",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "日本航空石川",
+          "score": 4,
+          "won": false,
+          "name": "日本航空石川",
+          "slug": null
+        },
+        {
+          "display": "小松大谷",
+          "score": 5,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-25",
+      "season": "summer",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "輪島",
+          "score": 2,
+          "won": false,
+          "name": "輪島高校",
+          "slug": "wajima"
+        },
+        {
+          "display": "津幡",
+          "score": 3,
+          "won": true,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-25",
+      "season": "summer",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "鵬学園",
+          "score": 10,
+          "won": true,
+          "name": "鵬学園",
+          "slug": null
+        },
+        {
+          "display": "金沢龍谷",
+          "score": 0,
+          "won": false,
+          "name": "金沢龍谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-27",
+      "season": "summer",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 8,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "鵬学園",
+          "score": 6,
+          "won": false,
+          "name": "鵬学園",
+          "slug": null
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-27",
+      "season": "summer",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松大谷",
+          "score": 10,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        },
+        {
+          "display": "津幡",
+          "score": 3,
+          "won": false,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2019-07-28",
+      "season": "summer",
+      "round": "決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 6,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "小松大谷",
+          "score": 2,
+          "won": false,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第101回全国高等学校野球選手権石川大会（令和1年度夏季）"
+    },
+    {
+      "date": "2016-07-14",
       "season": "summer",
       "round": "1回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
-          "display": "金沢龍谷",
-          "score": 11,
+          "display": "翠星",
+          "score": 16,
           "won": true,
-          "name": "金沢龍谷",
+          "name": "翠星高校",
+          "slug": "suisei"
+        },
+        {
+          "display": "志賀･内灘",
+          "score": 1,
+          "won": false,
+          "name": "志賀･内灘",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-14",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松工業",
+          "score": 2,
+          "won": false,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        },
+        {
+          "display": "羽咋工業",
+          "score": 3,
+          "won": true,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-14",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢北陵",
+          "score": 4,
+          "won": false,
+          "name": "金沢北陵高校",
+          "slug": "kanazawahokuryo"
+        },
+        {
+          "display": "野々市明倫",
+          "score": 5,
+          "won": true,
+          "name": "野々市明倫高校",
+          "slug": "nonoichimeirin"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢錦丘",
+          "score": 7,
+          "won": true,
+          "name": "金沢錦丘高校",
+          "slug": "kanazawanishikigaoka"
+        },
+        {
+          "display": "七尾",
+          "score": 0,
+          "won": false,
+          "name": "七尾高校",
+          "slug": "nanao"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢大学附属",
+          "score": 9,
+          "won": false,
+          "name": "金沢大学附属",
           "slug": null
+        },
+        {
+          "display": "石川高専",
+          "score": 15,
+          "won": true,
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "加賀",
+          "score": 2,
+          "won": false,
+          "name": "加賀高校",
+          "slug": "kaga"
+        },
+        {
+          "display": "日本航空石川",
+          "score": 9,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "宝達",
+          "score": 0,
+          "won": false,
+          "name": "宝達高校",
+          "slug": "hodatsu"
+        },
+        {
+          "display": "大聖寺実業",
+          "score": 16,
+          "won": true,
+          "name": "大聖寺実業高校",
+          "slug": "daishojijitsugyo"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "尾山台",
+          "score": 1,
+          "won": false,
+          "name": "尾山台",
+          "slug": null
+        },
+        {
+          "display": "門前",
+          "score": 2,
+          "won": true,
+          "name": "門前高校",
+          "slug": "monzen"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "鶴来",
+          "score": 3,
+          "won": false,
+          "name": "鶴来高校",
+          "slug": "tsurugi"
+        },
+        {
+          "display": "小松",
+          "score": 4,
+          "won": true,
+          "name": "小松高校",
+          "slug": "komatsu"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢市立工業",
+          "score": 9,
+          "won": true,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        },
+        {
+          "display": "金沢向陽",
+          "score": 1,
+          "won": false,
+          "name": "金沢向陽高校",
+          "slug": "kanazawakoyo"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "津幡",
+          "score": 5,
+          "won": false,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        },
+        {
+          "display": "金沢泉丘",
+          "score": 7,
+          "won": true,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "七尾東雲",
+          "score": 6,
+          "won": true,
+          "name": "七尾東雲高校",
+          "slug": "nanaoshinonome"
         },
         {
           "display": "輪島",
@@ -2995,148 +6263,125 @@
           "slug": "wajima"
         }
       ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
     },
     {
-      "date": "2024-07-12",
+      "date": "2016-07-17",
       "season": "summer",
       "round": "1回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
-          "display": "石川高専",
-          "score": 8,
-          "won": true,
-          "name": "石川工業高専",
-          "slug": "ishikawakogyo"
-        },
-        {
-          "display": "金沢錦丘",
+          "display": "金沢桜丘",
           "score": 1,
           "won": false,
-          "name": "金沢錦丘高校",
-          "slug": "kanazawanishikigaoka"
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
+        },
+        {
+          "display": "金沢",
+          "score": 4,
+          "won": true,
+          "name": "金沢",
+          "slug": null
         }
       ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
     },
     {
-      "date": "2024-07-13",
+      "date": "2016-07-17",
       "season": "summer",
       "round": "1回戦",
       "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "寺井",
+          "score": 11,
+          "won": true,
+          "name": "寺井高校",
+          "slug": "terai"
+        },
+        {
+          "display": "穴水",
+          "score": 0,
+          "won": false,
+          "name": "穴水高校",
+          "slug": "anamizu"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-17",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢高専",
+          "score": 0,
+          "won": false,
+          "name": "金沢高専",
+          "slug": null
+        },
+        {
+          "display": "鹿西",
+          "score": 10,
+          "won": true,
+          "name": "鹿西高校",
+          "slug": "rokusei"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-17",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢学院",
+          "score": 3,
+          "won": false,
+          "name": "金沢学院",
+          "slug": null
+        },
+        {
+          "display": "金沢伏見",
+          "score": 6,
+          "won": true,
+          "name": "金沢伏見高校",
+          "slug": "kanazawafushimi"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-17",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
       "teams": [
         {
           "display": "鵬学園",
-          "score": 5,
+          "score": 8,
           "won": true,
           "name": "鵬学園",
           "slug": null
         },
         {
-          "display": "大聖寺",
-          "score": 2,
+          "display": "金沢辰巳丘",
+          "score": 5,
           "won": false,
-          "name": "大聖寺高校",
-          "slug": "daishoji"
+          "name": "金沢辰巳丘高校",
+          "slug": "kanazawatatsumigaoka"
         }
       ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
     },
     {
-      "date": "2024-07-13",
-      "season": "summer",
-      "round": "1回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "穴水",
-          "score": 4,
-          "won": false,
-          "name": "穴水高校",
-          "slug": "anamizu"
-        },
-        {
-          "display": "小松明峰",
-          "score": 7,
-          "won": true,
-          "name": "小松明峰高校",
-          "slug": "komatsumeiho"
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-13",
-      "season": "summer",
-      "round": "1回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "飯田",
-          "score": 12,
-          "won": true,
-          "name": "飯田高校",
-          "slug": "iida"
-        },
-        {
-          "display": "金沢西",
-          "score": 3,
-          "won": false,
-          "name": "金沢西高校",
-          "slug": "kanazawanishi"
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-13",
-      "season": "summer",
-      "round": "1回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "羽咋",
-          "score": 4,
-          "won": true,
-          "name": "羽咋高校",
-          "slug": "hakui"
-        },
-        {
-          "display": "県立工業",
-          "score": 3,
-          "won": false,
-          "name": "石川県立工業高校",
-          "slug": "ishikawakenritsukogyo"
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-13",
-      "season": "summer",
-      "round": "1回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "金沢商業",
-          "score": 6,
-          "won": true,
-          "name": "金沢商業高校",
-          "slug": "kanazawashogyo"
-        },
-        {
-          "display": "鶴来",
-          "score": 2,
-          "won": false,
-          "name": "鶴来高校",
-          "slug": "tsurugi"
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-13",
+      "date": "2016-07-17",
       "season": "summer",
       "round": "1回戦",
       "venue": "金沢市民野球場",
@@ -3149,19 +6394,341 @@
           "slug": "komatsushiritsu"
         },
         {
-          "display": "門前",
+          "display": "金沢二水",
+          "score": 4,
+          "won": true,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-18",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 9,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "小松商業",
+          "score": 3,
+          "won": false,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-18",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "翠星",
+          "score": 0,
+          "won": false,
+          "name": "翠星高校",
+          "slug": "suisei"
+        },
+        {
+          "display": "七尾東雲",
+          "score": 3,
+          "won": true,
+          "name": "七尾東雲高校",
+          "slug": "nanaoshinonome"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-18",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "野々市明倫",
+          "score": 3,
+          "won": true,
+          "name": "野々市明倫高校",
+          "slug": "nonoichimeirin"
+        },
+        {
+          "display": "羽咋工業",
+          "score": 0,
+          "won": false,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-18",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "能登",
+          "score": 0,
+          "won": false,
+          "name": "能登高校",
+          "slug": "noto"
+        },
+        {
+          "display": "金沢商業",
           "score": 10,
           "won": true,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-18",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "松任",
+          "score": 1,
+          "won": false,
+          "name": "松任高校",
+          "slug": "matto"
+        },
+        {
+          "display": "北陸学院",
+          "score": 11,
+          "won": true,
+          "name": "北陸学院",
+          "slug": null
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-18",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "金沢泉丘",
+          "score": 4,
+          "won": true,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        },
+        {
+          "display": "金沢市立工業",
+          "score": 3,
+          "won": false,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-18",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "羽咋",
+          "score": 0,
+          "won": false,
+          "name": "羽咋高校",
+          "slug": "hakui"
+        },
+        {
+          "display": "遊学館",
+          "score": 13,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-18",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松",
+          "score": 5,
+          "won": true,
+          "name": "小松高校",
+          "slug": "komatsu"
+        },
+        {
+          "display": "門前",
+          "score": 1,
+          "won": false,
           "name": "門前高校",
           "slug": "monzen"
         }
       ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
     },
     {
-      "date": "2024-07-13",
+      "date": "2016-07-19",
       "season": "summer",
-      "round": "1回戦",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "大聖寺",
+          "score": 1,
+          "won": false,
+          "name": "大聖寺高校",
+          "slug": "daishoji"
+        },
+        {
+          "display": "小松明峰",
+          "score": 2,
+          "won": true,
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-19",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢錦丘",
+          "score": 9,
+          "won": true,
+          "name": "金沢錦丘高校",
+          "slug": "kanazawanishikigaoka"
+        },
+        {
+          "display": "石川高専",
+          "score": 2,
+          "won": false,
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-19",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "日本航空石川",
+          "score": 9,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        },
+        {
+          "display": "大聖寺実業",
+          "score": 0,
+          "won": false,
+          "name": "大聖寺実業高校",
+          "slug": "daishojijitsugyo"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-19",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "飯田",
+          "score": 3,
+          "won": true,
+          "name": "飯田高校",
+          "slug": "iida"
+        },
+        {
+          "display": "県立工業",
+          "score": 0,
+          "won": false,
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-19",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢西",
+          "score": 2,
+          "won": false,
+          "name": "金沢西高校",
+          "slug": "kanazawanishi"
+        },
+        {
+          "display": "小松大谷",
+          "score": 7,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-19",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 13,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "鵬学園",
+          "score": 5,
+          "won": false,
+          "name": "鵬学園",
+          "slug": null
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-19",
+      "season": "summer",
+      "round": "2回戦",
       "venue": "弁慶スタジアム",
       "teams": [
         {
@@ -3172,65 +6739,272 @@
           "slug": "terai"
         },
         {
-          "display": "野々市明倫",
-          "score": 7,
+          "display": "金沢二水",
+          "score": 4,
           "won": false,
-          "name": "野々市明倫高校",
-          "slug": "nonoichimeirin"
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
         }
       ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
     },
     {
-      "date": "2024-07-13",
+      "date": "2016-07-19",
       "season": "summer",
-      "round": "1回戦",
-      "venue": "弁慶スタジアム",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢伏見",
+          "score": 1,
+          "won": false,
+          "name": "金沢伏見高校",
+          "slug": "kanazawafushimi"
+        },
+        {
+          "display": "鹿西",
+          "score": 5,
+          "won": true,
+          "name": "鹿西高校",
+          "slug": "rokusei"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
       "teams": [
         {
           "display": "七尾東雲",
-          "score": 1,
+          "score": 0,
           "won": false,
           "name": "七尾東雲高校",
           "slug": "nanaoshinonome"
         },
         {
-          "display": "金沢二水",
-          "score": 8,
+          "display": "星稜",
+          "score": 7,
           "won": true,
-          "name": "金沢二水高校",
-          "slug": "kanazawanisui"
+          "name": "星稜",
+          "slug": null
         }
       ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
     },
     {
-      "date": "2024-07-14",
+      "date": "2016-07-21",
       "season": "summer",
-      "round": "2回戦",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢錦丘",
+          "score": 5,
+          "won": false,
+          "name": "金沢錦丘高校",
+          "slug": "kanazawanishikigaoka"
+        },
+        {
+          "display": "小松明峰",
+          "score": 10,
+          "won": true,
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "飯田",
+          "score": 1,
+          "won": false,
+          "name": "飯田高校",
+          "slug": "iida"
+        },
+        {
+          "display": "日本航空石川",
+          "score": 11,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "野々市明倫",
+          "score": 4,
+          "won": false,
+          "name": "野々市明倫高校",
+          "slug": "nonoichimeirin"
+        },
+        {
+          "display": "金沢商業",
+          "score": 5,
+          "won": true,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "北陸学院",
+          "score": 2,
+          "won": false,
+          "name": "北陸学院",
+          "slug": null
+        },
+        {
+          "display": "金沢泉丘",
+          "score": 9,
+          "won": true,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "寺井",
+          "score": 3,
+          "won": false,
+          "name": "寺井高校",
+          "slug": "terai"
+        },
+        {
+          "display": "小松大谷",
+          "score": 4,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松",
+          "score": 1,
+          "won": false,
+          "name": "小松高校",
+          "slug": "komatsu"
+        },
+        {
+          "display": "遊学館",
+          "score": 2,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-21",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "鹿西",
+          "score": 0,
+          "won": false,
+          "name": "鹿西高校",
+          "slug": "rokusei"
+        },
+        {
+          "display": "金沢",
+          "score": 8,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-23",
+      "season": "summer",
+      "round": "準々決勝",
       "venue": "石川県立野球場",
       "teams": [
         {
           "display": "星稜",
-          "score": 8,
+          "score": 12,
           "won": true,
           "name": "星稜",
           "slug": null
         },
         {
-          "display": "津幡",
-          "score": 1,
+          "display": "小松明峰",
+          "score": 2,
           "won": false,
-          "name": "津幡高校",
-          "slug": "tsubata"
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
         }
       ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
     },
     {
-      "date": "2024-07-14",
+      "date": "2016-07-23",
       "season": "summer",
-      "round": "2回戦",
+      "round": "準々決勝",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松大谷",
+          "score": 8,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        },
+        {
+          "display": "金沢泉丘",
+          "score": 6,
+          "won": false,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-23",
+      "season": "summer",
+      "round": "準々決勝",
       "venue": "石川県立野球場",
       "teams": [
         {
@@ -3241,72 +7015,164 @@
           "slug": null
         },
         {
-          "display": "能登",
-          "score": 0,
+          "display": "金沢商業",
+          "score": 2,
           "won": false,
-          "name": "能登高校",
-          "slug": "noto"
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
         }
       ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
     },
     {
-      "date": "2024-07-14",
+      "date": "2016-07-23",
       "season": "summer",
-      "round": "2回戦",
+      "round": "準々決勝",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 5,
+          "won": false,
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "遊学館",
+          "score": 6,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-25",
+      "season": "summer",
+      "round": "準決勝",
       "venue": "石川県立野球場",
       "teams": [
         {
-          "display": "小松工業",
-          "score": 0,
-          "won": false,
-          "name": "小松工業高校",
-          "slug": "komatsukogyo"
-        },
-        {
           "display": "小松大谷",
-          "score": 3,
-          "won": true,
+          "score": 4,
+          "won": false,
           "name": "小松大谷",
           "slug": null
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-14",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "羽咋工業",
-          "score": 1,
-          "won": false,
-          "name": "羽咋工業高校",
-          "slug": "hakuikogyo"
         },
         {
-          "display": "金沢学院大学附属",
-          "score": 11,
+          "display": "星稜",
+          "score": 8,
           "won": true,
-          "name": "金沢学院大学附属",
+          "name": "星稜",
           "slug": null
         }
       ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
     },
     {
-      "date": "2024-07-14",
+      "date": "2016-07-25",
       "season": "summer",
-      "round": "2回戦",
-      "venue": "金沢市民野球場",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
       "teams": [
         {
-          "display": "金沢大学附属",
-          "score": 2,
+          "display": "遊学館",
+          "score": 5,
           "won": false,
-          "name": "金沢大学附属",
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "日本航空石川",
+          "score": 8,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2016-07-27",
+      "season": "summer",
+      "round": "決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "日本航空石川",
+          "score": 5,
+          "won": false,
+          "name": "日本航空石川",
+          "slug": null
+        },
+        {
+          "display": "星稜",
+          "score": 7,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        }
+      ],
+      "tournament": "第98回全国高等学校野球選手権石川大会（平成28年度夏季）"
+    },
+    {
+      "date": "2004-07-14",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢商業",
+          "score": 8,
+          "won": true,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        },
+        {
+          "display": "高浜",
+          "score": 5,
+          "won": false,
+          "name": "高浜",
+          "slug": null
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-14",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "穴水",
+          "score": 0,
+          "won": false,
+          "name": "穴水高校",
+          "slug": "anamizu"
+        },
+        {
+          "display": "金沢市立工業",
+          "score": 9,
+          "won": true,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-15",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "能登青翔",
+          "score": 6,
+          "won": false,
+          "name": "能登青翔",
           "slug": null
         },
         {
@@ -3317,35 +7183,242 @@
           "slug": "daishojijitsugyo"
         }
       ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
     },
     {
-      "date": "2024-07-14",
+      "date": "2004-07-15",
       "season": "summer",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "金沢市民野球場",
       "teams": [
         {
-          "display": "金沢桜丘",
-          "score": 9,
-          "won": true,
-          "name": "金沢桜丘高校",
-          "slug": "kanazawasakuragaoka"
+          "display": "小松明峰",
+          "score": 3,
+          "won": false,
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
         },
         {
-          "display": "金沢伏見",
-          "score": 0,
-          "won": false,
-          "name": "金沢伏見高校",
-          "slug": "kanazawafushimi"
+          "display": "大聖寺",
+          "score": 4,
+          "won": true,
+          "name": "大聖寺高校",
+          "slug": "daishoji"
         }
       ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
     },
     {
-      "date": "2024-07-15",
+      "date": "2004-07-15",
       "season": "summer",
-      "round": "2回戦",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢大学附属",
+          "score": 0,
+          "won": false,
+          "name": "金沢大学附属",
+          "slug": null
+        },
+        {
+          "display": "金沢二水",
+          "score": 11,
+          "won": true,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-15",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "津幡",
+          "score": 2,
+          "won": true,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        },
+        {
+          "display": "星稜",
+          "score": 1,
+          "won": false,
+          "name": "星稜",
+          "slug": null
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢北陵",
+          "score": 0,
+          "won": false,
+          "name": "金沢北陵高校",
+          "slug": "kanazawahokuryo"
+        },
+        {
+          "display": "野々市明倫",
+          "score": 13,
+          "won": true,
+          "name": "野々市明倫高校",
+          "slug": "nonoichimeirin"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "輪島実業",
+          "score": 0,
+          "won": false,
+          "name": "輪島実業",
+          "slug": null
+        },
+        {
+          "display": "羽咋工業",
+          "score": 2,
+          "won": true,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "鵬学園",
+          "score": 1,
+          "won": false,
+          "name": "鵬学園",
+          "slug": null
+        },
+        {
+          "display": "金沢東",
+          "score": 5,
+          "won": true,
+          "name": "金沢東",
+          "slug": null
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-16",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "北陸大谷",
+          "score": 10,
+          "won": true,
+          "name": "北陸大谷",
+          "slug": null
+        },
+        {
+          "display": "鶴来",
+          "score": 5,
+          "won": false,
+          "name": "鶴来高校",
+          "slug": "tsurugi"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-17",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "鹿西",
+          "score": 2,
+          "won": false,
+          "name": "鹿西高校",
+          "slug": "rokusei"
+        },
+        {
+          "display": "寺井",
+          "score": 9,
+          "won": true,
+          "name": "寺井高校",
+          "slug": "terai"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-17",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "石川県立工業",
+          "score": 1,
+          "won": false,
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        },
+        {
+          "display": "小松商業",
+          "score": 5,
+          "won": true,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-17",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "内灘",
+          "score": 0,
+          "won": false,
+          "name": "内灘高校",
+          "slug": "uchinada"
+        },
+        {
+          "display": "珠洲実業",
+          "score": 19,
+          "won": true,
+          "name": "珠洲実業",
+          "slug": null
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-17",
+      "season": "summer",
+      "round": "1回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
@@ -3356,1532 +7429,911 @@
           "slug": "matto"
         },
         {
-          "display": "小松商業",
-          "score": 9,
+          "display": "尾山台",
+          "score": 10,
           "won": true,
-          "name": "小松商業高校",
-          "slug": "komatsushogyo"
+          "name": "尾山台",
+          "slug": null
         }
       ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
     },
     {
-      "date": "2024-07-15",
+      "date": "2004-07-17",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "門前",
+          "score": 1,
+          "won": false,
+          "name": "門前高校",
+          "slug": "monzen"
+        },
+        {
+          "display": "七尾",
+          "score": 8,
+          "won": true,
+          "name": "七尾高校",
+          "slug": "nanao"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-17",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢錦丘",
+          "score": 1,
+          "won": true,
+          "name": "金沢錦丘高校",
+          "slug": "kanazawanishikigaoka"
+        },
+        {
+          "display": "金沢辰巳丘",
+          "score": 0,
+          "won": false,
+          "name": "金沢辰巳丘高校",
+          "slug": "kanazawatatsumigaoka"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-18",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢伏見",
+          "score": 3,
+          "won": false,
+          "name": "金沢伏見高校",
+          "slug": "kanazawafushimi"
+        },
+        {
+          "display": "羽咋",
+          "score": 4,
+          "won": true,
+          "name": "羽咋高校",
+          "slug": "hakui"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-18",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "石川高専",
+          "score": 2,
+          "won": false,
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        },
+        {
+          "display": "小松市立",
+          "score": 7,
+          "won": true,
+          "name": "小松市立高校",
+          "slug": "komatsushiritsu"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-18",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "七尾商業",
+          "score": 12,
+          "won": true,
+          "name": "七尾商業",
+          "slug": null
+        },
+        {
+          "display": "飯田",
+          "score": 8,
+          "won": false,
+          "name": "飯田高校",
+          "slug": "iida"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-18",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "加賀",
+          "score": 2,
+          "won": true,
+          "name": "加賀高校",
+          "slug": "kaga"
+        },
+        {
+          "display": "小松工業",
+          "score": 0,
+          "won": false,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-18",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "能都北辰",
+          "score": 1,
+          "won": false,
+          "name": "能都北辰",
+          "slug": null
+        },
+        {
+          "display": "金沢西",
+          "score": 10,
+          "won": true,
+          "name": "金沢西高校",
+          "slug": "kanazawanishi"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-18",
+      "season": "summer",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢向陽",
+          "score": 5,
+          "won": false,
+          "name": "金沢向陽高校",
+          "slug": "kanazawakoyo"
+        },
+        {
+          "display": "輪島",
+          "score": 10,
+          "won": true,
+          "name": "輪島高校",
+          "slug": "wajima"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-19",
       "season": "summer",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
-          "display": "七尾",
+          "display": "富来",
           "score": 0,
           "won": false,
-          "name": "七尾高校",
-          "slug": "nanao"
+          "name": "富来",
+          "slug": null
+        },
+        {
+          "display": "金沢",
+          "score": 3,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-19",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢桜丘",
+          "score": 2,
+          "won": false,
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
+        },
+        {
+          "display": "金沢泉丘",
+          "score": 3,
+          "won": true,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-19",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "大聖寺実業",
+          "score": 0,
+          "won": false,
+          "name": "大聖寺実業高校",
+          "slug": "daishojijitsugyo"
+        },
+        {
+          "display": "大聖寺",
+          "score": 6,
+          "won": true,
+          "name": "大聖寺高校",
+          "slug": "daishoji"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-19",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "七尾工業",
+          "score": 1,
+          "won": false,
+          "name": "七尾工業",
+          "slug": null
         },
         {
           "display": "遊学館",
-          "score": 6,
+          "score": 11,
           "won": true,
           "name": "遊学館",
           "slug": null
         }
       ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
     },
     {
-      "date": "2024-07-15",
+      "date": "2004-07-19",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢商業",
+          "score": 3,
+          "won": false,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        },
+        {
+          "display": "金沢市立工業",
+          "score": 6,
+          "won": true,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-19",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "津幡",
+          "score": 4,
+          "won": false,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        },
+        {
+          "display": "金沢二水",
+          "score": 6,
+          "won": true,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-20",
       "season": "summer",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
           "display": "小松",
-          "score": 0,
-          "won": false,
+          "score": 12,
+          "won": true,
           "name": "小松高校",
           "slug": "komatsu"
         },
         {
-          "display": "金沢",
-          "score": 6,
-          "won": true,
-          "name": "金沢",
-          "slug": null
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-15",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "金沢市立工業",
-          "score": 2,
-          "won": false,
-          "name": "金沢市立工業高校",
-          "slug": "kanazawashiritsukogyo"
-        },
-        {
-          "display": "金沢泉丘",
-          "score": 3,
-          "won": true,
-          "name": "金沢泉丘高校",
-          "slug": "kanazawaizumigaoka"
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-15",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "石川高専",
-          "score": 3,
-          "won": true,
-          "name": "石川工業高専",
-          "slug": "ishikawakogyo"
-        },
-        {
-          "display": "金沢北陵",
-          "score": 1,
-          "won": false,
-          "name": "金沢北陵高校",
-          "slug": "kanazawahokuryo"
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-15",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "北陸学院",
-          "score": 4,
-          "won": false,
-          "name": "北陸学院",
-          "slug": null
-        },
-        {
-          "display": "金沢龍谷",
-          "score": 5,
-          "won": true,
-          "name": "金沢龍谷",
-          "slug": null
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-16",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "寺井",
+          "display": "金沢高専",
           "score": 0,
           "won": false,
-          "name": "寺井高校",
-          "slug": "terai"
-        },
-        {
-          "display": "金沢二水",
-          "score": 6,
-          "won": true,
-          "name": "金沢二水高校",
-          "slug": "kanazawanisui"
+          "name": "金沢高専",
+          "slug": null
         }
       ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
     },
     {
-      "date": "2024-07-16",
+      "date": "2004-07-20",
       "season": "summer",
       "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "鵬学園",
-          "score": 0,
-          "won": false,
-          "name": "鵬学園",
-          "slug": null
-        },
-        {
-          "display": "小松明峰",
-          "score": 10,
-          "won": true,
-          "name": "小松明峰高校",
-          "slug": "komatsumeiho"
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-18",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "羽咋",
-          "score": 2,
-          "won": false,
-          "name": "羽咋高校",
-          "slug": "hakui"
-        },
-        {
-          "display": "飯田",
-          "score": 3,
-          "won": true,
-          "name": "飯田高校",
-          "slug": "iida"
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-18",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "金沢商業",
-          "score": 0,
-          "won": false,
-          "name": "金沢商業高校",
-          "slug": "kanazawashogyo"
-        },
-        {
-          "display": "門前",
-          "score": 7,
-          "won": true,
-          "name": "門前高校",
-          "slug": "monzen"
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-20",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "星稜",
-          "score": 12,
-          "won": true,
-          "name": "星稜",
-          "slug": null
-        },
-        {
-          "display": "大聖寺実業",
-          "score": 1,
-          "won": false,
-          "name": "大聖寺実業高校",
-          "slug": "daishojijitsugyo"
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-20",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "日本航空石川",
-          "score": 6,
-          "won": true,
-          "name": "日本航空石川",
-          "slug": null
-        },
-        {
-          "display": "金沢桜丘",
-          "score": 1,
-          "won": false,
-          "name": "金沢桜丘高校",
-          "slug": "kanazawasakuragaoka"
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-20",
-      "season": "summer",
-      "round": "3回戦",
       "venue": "金沢市民野球場",
       "teams": [
-        {
-          "display": "小松商業",
-          "score": 12,
-          "won": true,
-          "name": "小松商業高校",
-          "slug": "komatsushogyo"
-        },
-        {
-          "display": "石川高専",
-          "score": 5,
-          "won": false,
-          "name": "石川工業高専",
-          "slug": "ishikawakogyo"
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-20",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "遊学館",
-          "score": 12,
-          "won": true,
-          "name": "遊学館",
-          "slug": null
-        },
-        {
-          "display": "金沢龍谷",
-          "score": 2,
-          "won": false,
-          "name": "金沢龍谷",
-          "slug": null
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-21",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "金沢二水",
-          "score": 3,
-          "won": false,
-          "name": "金沢二水高校",
-          "slug": "kanazawanisui"
-        },
-        {
-          "display": "小松大谷",
-          "score": 9,
-          "won": true,
-          "name": "小松大谷",
-          "slug": null
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-21",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "小松明峰",
-          "score": 3,
-          "won": false,
-          "name": "小松明峰高校",
-          "slug": "komatsumeiho"
-        },
-        {
-          "display": "金沢学院大学附属",
-          "score": 8,
-          "won": true,
-          "name": "金沢学院大学附属",
-          "slug": null
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-21",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "門前",
-          "score": 8,
-          "won": true,
-          "name": "門前高校",
-          "slug": "monzen"
-        },
-        {
-          "display": "金沢泉丘",
-          "score": 4,
-          "won": false,
-          "name": "金沢泉丘高校",
-          "slug": "kanazawaizumigaoka"
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-21",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "飯田",
-          "score": 2,
-          "won": false,
-          "name": "飯田高校",
-          "slug": "iida"
-        },
-        {
-          "display": "金沢",
-          "score": 9,
-          "won": true,
-          "name": "金沢",
-          "slug": null
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-23",
-      "season": "summer",
-      "round": "準々決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "遊学館",
-          "score": 5,
-          "won": false,
-          "name": "遊学館",
-          "slug": null
-        },
-        {
-          "display": "星稜",
-          "score": 6,
-          "won": true,
-          "name": "星稜",
-          "slug": null
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-23",
-      "season": "summer",
-      "round": "準々決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "日本航空石川",
-          "score": 4,
-          "won": true,
-          "name": "日本航空石川",
-          "slug": null
-        },
-        {
-          "display": "小松商業",
-          "score": 1,
-          "won": false,
-          "name": "小松商業高校",
-          "slug": "komatsushogyo"
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-23",
-      "season": "summer",
-      "round": "準々決勝",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "金沢",
-          "score": 1,
-          "won": false,
-          "name": "金沢",
-          "slug": null
-        },
-        {
-          "display": "小松大谷",
-          "score": 3,
-          "won": true,
-          "name": "小松大谷",
-          "slug": null
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-23",
-      "season": "summer",
-      "round": "準々決勝",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "門前",
-          "score": 0,
-          "won": false,
-          "name": "門前高校",
-          "slug": "monzen"
-        },
-        {
-          "display": "金沢学院大学附属",
-          "score": 3,
-          "won": true,
-          "name": "金沢学院大学附属",
-          "slug": null
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-25",
-      "season": "summer",
-      "round": "準決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "星稜",
-          "score": 6,
-          "won": true,
-          "name": "星稜",
-          "slug": null
-        },
-        {
-          "display": "金沢学院大学附属",
-          "score": 0,
-          "won": false,
-          "name": "金沢学院大学附属",
-          "slug": null
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-25",
-      "season": "summer",
-      "round": "準決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "日本航空石川",
-          "score": 1,
-          "won": false,
-          "name": "日本航空石川",
-          "slug": null
-        },
-        {
-          "display": "小松大谷",
-          "score": 3,
-          "won": true,
-          "name": "小松大谷",
-          "slug": null
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2024-07-27",
-      "season": "summer",
-      "round": "決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "小松大谷",
-          "score": 5,
-          "won": true,
-          "name": "小松大谷",
-          "slug": null
-        },
-        {
-          "display": "星稜",
-          "score": 0,
-          "won": false,
-          "name": "星稜",
-          "slug": null
-        }
-      ],
-      "tournament": "第106回全国高等学校野球選手権石川大会（令和6年度夏季）"
-    },
-    {
-      "date": "2025-07-11",
-      "season": "summer",
-      "round": "1回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "羽咋",
-          "score": 4,
-          "won": true,
-          "name": "羽咋高校",
-          "slug": "hakui"
-        },
         {
           "display": "野々市明倫",
           "score": 0,
           "won": false,
           "name": "野々市明倫高校",
           "slug": "nonoichimeirin"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-12",
-      "season": "summer",
-      "round": "1回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "大聖寺",
-          "score": 3,
-          "won": false,
-          "name": "大聖寺高校",
-          "slug": "daishoji"
         },
         {
-          "display": "小松",
-          "score": 13,
-          "won": true,
-          "name": "小松高校",
-          "slug": "komatsu"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-12",
-      "season": "summer",
-      "round": "1回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "鶴来",
-          "score": 2,
-          "won": false,
-          "name": "鶴来高校",
-          "slug": "tsurugi"
-        },
-        {
-          "display": "金沢龍谷",
-          "score": 4,
-          "won": true,
-          "name": "金沢龍谷",
-          "slug": null
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-12",
-      "season": "summer",
-      "round": "1回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "金沢商業",
-          "score": 5,
-          "won": true,
-          "name": "金沢商業高校",
-          "slug": "kanazawashogyo"
-        },
-        {
-          "display": "金沢桜丘",
-          "score": 4,
-          "won": false,
-          "name": "金沢桜丘高校",
-          "slug": "kanazawasakuragaoka"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-12",
-      "season": "summer",
-      "round": "1回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "金沢錦丘",
-          "score": 7,
-          "won": true,
-          "name": "金沢錦丘高校",
-          "slug": "kanazawanishikigaoka"
-        },
-        {
-          "display": "金沢伏見",
-          "score": 0,
-          "won": false,
-          "name": "金沢伏見高校",
-          "slug": "kanazawafushimi"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-12",
-      "season": "summer",
-      "round": "1回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "輪島",
-          "score": 5,
-          "won": true,
-          "name": "輪島高校",
-          "slug": "wajima"
-        },
-        {
-          "display": "小松商業",
+          "display": "金沢東",
           "score": 1,
-          "won": false,
-          "name": "小松商業高校",
-          "slug": "komatsushogyo"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-12",
-      "season": "summer",
-      "round": "1回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "津幡",
-          "score": 12,
           "won": true,
-          "name": "津幡高校",
-          "slug": "tsubata"
-        },
-        {
-          "display": "飯田",
-          "score": 2,
-          "won": false,
-          "name": "飯田高校",
-          "slug": "iida"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-12",
-      "season": "summer",
-      "round": "1回戦",
-      "venue": "弁慶スタジアム",
-      "teams": [
-        {
-          "display": "金沢北陵",
-          "score": 0,
-          "won": false,
-          "name": "金沢北陵高校",
-          "slug": "kanazawahokuryo"
-        },
-        {
-          "display": "遊学館",
-          "score": 10,
-          "won": true,
-          "name": "遊学館",
+          "name": "金沢東",
           "slug": null
         }
       ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
     },
     {
-      "date": "2025-07-12",
+      "date": "2004-07-20",
       "season": "summer",
-      "round": "1回戦",
-      "venue": "弁慶スタジアム",
-      "teams": [
-        {
-          "display": "金沢二水",
-          "score": 4,
-          "won": false,
-          "name": "金沢二水高校",
-          "slug": "kanazawanisui"
-        },
-        {
-          "display": "県立工業",
-          "score": 11,
-          "won": true,
-          "name": "石川県立工業高校",
-          "slug": "ishikawakenritsukogyo"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-13",
-      "season": "summer",
-      "round": "1回戦",
+      "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
+        {
+          "display": "日本航空第二",
+          "score": 3,
+          "won": true,
+          "name": "日本航空第二",
+          "slug": null
+        },
         {
           "display": "翠星",
-          "score": 10,
-          "won": true,
+          "score": 2,
+          "won": false,
           "name": "翠星高校",
           "slug": "suisei"
-        },
-        {
-          "display": "能登",
-          "score": 3,
-          "won": false,
-          "name": "能登高校",
-          "slug": "noto"
         }
       ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
     },
     {
-      "date": "2025-07-13",
+      "date": "2004-07-20",
       "season": "summer",
-      "round": "1回戦",
+      "round": "2回戦",
       "venue": "金沢市民野球場",
       "teams": [
         {
-          "display": "七尾東雲",
-          "score": 0,
-          "won": false,
-          "name": "七尾東雲高校",
-          "slug": "nanaoshinonome"
+          "display": "北陸大谷",
+          "score": 3,
+          "won": true,
+          "name": "北陸大谷",
+          "slug": null
         },
         {
-          "display": "北陸学院",
-          "score": 7,
-          "won": true,
-          "name": "北陸学院",
-          "slug": null
+          "display": "羽咋工業",
+          "score": 2,
+          "won": false,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
         }
       ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
     },
     {
-      "date": "2025-07-13",
+      "date": "2004-07-21",
       "season": "summer",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
           "display": "寺井",
-          "score": 2,
+          "score": 3,
           "won": false,
           "name": "寺井高校",
           "slug": "terai"
         },
         {
-          "display": "小松工業",
-          "score": 10,
-          "won": true,
-          "name": "小松工業高校",
-          "slug": "komatsukogyo"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-13",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "大聖寺実業",
-          "score": 1,
-          "won": false,
-          "name": "大聖寺実業高校",
-          "slug": "daishojijitsugyo"
-        },
-        {
-          "display": "金沢",
-          "score": 13,
-          "won": true,
-          "name": "金沢",
-          "slug": null
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-13",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "金大附属",
-          "score": 0,
-          "won": false,
-          "name": "金沢大学人間社会学域学校教育学類附属高校",
-          "slug": "kanazawadaigakuningenshakaigakuikigakkokyoikugakuruifuzoku"
-        },
-        {
-          "display": "星稜",
-          "score": 27,
-          "won": true,
-          "name": "星稜",
-          "slug": null
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-13",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "小松明峰",
-          "score": 0,
-          "won": false,
-          "name": "小松明峰高校",
-          "slug": "komatsumeiho"
-        },
-        {
-          "display": "小松大谷",
-          "score": 7,
-          "won": true,
-          "name": "小松大谷",
-          "slug": null
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-14",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "金沢学院大附",
-          "score": 7,
-          "won": true,
-          "name": "金沢学院大附",
-          "slug": null
-        },
-        {
-          "display": "小松市立",
-          "score": 4,
-          "won": false,
-          "name": "小松市立高校",
-          "slug": "komatsushiritsu"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-14",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "鹿西",
-          "score": 0,
-          "won": false,
-          "name": "鹿西高校",
-          "slug": "rokusei"
-        },
-        {
-          "display": "日本航空石川",
-          "score": 11,
-          "won": true,
-          "name": "日本航空石川",
-          "slug": null
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-14",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "門前",
-          "score": 9,
-          "won": true,
-          "name": "門前高校",
-          "slug": "monzen"
-        },
-        {
-          "display": "金沢市立工業",
-          "score": 2,
-          "won": false,
-          "name": "金沢市立工業高校",
-          "slug": "kanazawashiritsukogyo"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-14",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "金沢西",
-          "score": 5,
-          "won": false,
-          "name": "金沢西高校",
-          "slug": "kanazawanishi"
-        },
-        {
-          "display": "羽咋工業",
-          "score": 12,
-          "won": true,
-          "name": "羽咋工業高校",
-          "slug": "hakuikogyo"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-14",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "穴水",
-          "score": 0,
-          "won": false,
-          "name": "穴水高校",
-          "slug": "anamizu"
-        },
-        {
           "display": "七尾",
-          "score": 10,
+          "score": 5,
           "won": true,
           "name": "七尾高校",
           "slug": "nanao"
         }
       ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
     },
     {
-      "date": "2025-07-14",
+      "date": "2004-07-21",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "七尾商業",
+          "score": 6,
+          "won": false,
+          "name": "七尾商業",
+          "slug": null
+        },
+        {
+          "display": "加賀",
+          "score": 10,
+          "won": true,
+          "name": "加賀高校",
+          "slug": "kaga"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-21",
       "season": "summer",
       "round": "2回戦",
       "venue": "金沢市民野球場",
       "teams": [
         {
-          "display": "金沢泉丘",
-          "score": 2,
-          "won": false,
-          "name": "金沢泉丘高校",
-          "slug": "kanazawaizumigaoka"
-        },
-        {
-          "display": "石川高専",
-          "score": 9,
-          "won": true,
-          "name": "石川工業高専",
-          "slug": "ishikawakogyo"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-15",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "鵬学園",
-          "score": 1,
-          "won": false,
-          "name": "鵬学園",
-          "slug": null
-        },
-        {
           "display": "羽咋",
-          "score": 4,
+          "score": 2,
           "won": true,
           "name": "羽咋高校",
           "slug": "hakui"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-15",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
+        },
         {
-          "display": "小松",
+          "display": "金沢西",
           "score": 1,
           "won": false,
-          "name": "小松高校",
-          "slug": "komatsu"
-        },
-        {
-          "display": "金沢龍谷",
-          "score": 5,
-          "won": true,
-          "name": "金沢龍谷",
-          "slug": null
+          "name": "金沢西高校",
+          "slug": "kanazawanishi"
         }
       ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
     },
     {
-      "date": "2025-07-15",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "津幡",
-          "score": 5,
-          "won": true,
-          "name": "津幡高校",
-          "slug": "tsubata"
-        },
-        {
-          "display": "輪島",
-          "score": 3,
-          "won": false,
-          "name": "輪島高校",
-          "slug": "wajima"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-16",
-      "season": "summer",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "遊学館",
-          "score": 13,
-          "won": true,
-          "name": "遊学館",
-          "slug": null
-        },
-        {
-          "display": "県立工業",
-          "score": 4,
-          "won": false,
-          "name": "石川県立工業高校",
-          "slug": "ishikawakenritsukogyo"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-16",
+      "date": "2004-07-21",
       "season": "summer",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
           "display": "金沢錦丘",
-          "score": 0,
+          "score": 1,
           "won": false,
           "name": "金沢錦丘高校",
           "slug": "kanazawanishikigaoka"
         },
         {
-          "display": "金沢商業",
-          "score": 1,
+          "display": "小松商業",
+          "score": 6,
           "won": true,
-          "name": "金沢商業高校",
-          "slug": "kanazawashogyo"
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
         }
       ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
     },
     {
-      "date": "2025-07-16",
+      "date": "2004-07-21",
       "season": "summer",
       "round": "2回戦",
-      "venue": "石川県立野球場",
+      "venue": "金沢市民野球場",
       "teams": [
         {
-          "display": "翠星",
-          "score": 0,
+          "display": "珠洲実業",
+          "score": 7,
           "won": false,
-          "name": "翠星高校",
-          "slug": "suisei"
+          "name": "珠洲実業",
+          "slug": null
         },
         {
-          "display": "北陸学院",
-          "score": 10,
+          "display": "尾山台",
+          "score": 8,
           "won": true,
-          "name": "北陸学院",
+          "name": "尾山台",
           "slug": null
         }
       ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
     },
     {
-      "date": "2025-07-19",
+      "date": "2004-07-21",
+      "season": "summer",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松市立",
+          "score": 6,
+          "won": true,
+          "name": "小松市立高校",
+          "slug": "komatsushiritsu"
+        },
+        {
+          "display": "輪島",
+          "score": 2,
+          "won": false,
+          "name": "輪島高校",
+          "slug": "wajima"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-22",
       "season": "summer",
       "round": "3回戦",
       "venue": "石川県立野球場",
       "teams": [
         {
+          "display": "金沢",
+          "score": 6,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "金沢市立工業",
+          "score": 0,
+          "won": false,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-22",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢二水",
+          "score": 0,
+          "won": false,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        },
+        {
+          "display": "金沢泉丘",
+          "score": 2,
+          "won": true,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-22",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
           "display": "七尾",
+          "score": 4,
+          "won": true,
+          "name": "七尾高校",
+          "slug": "nanao"
+        },
+        {
+          "display": "尾山台",
+          "score": 2,
+          "won": false,
+          "name": "尾山台",
+          "slug": null
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-22",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 10,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "大聖寺",
+          "score": 3,
+          "won": false,
+          "name": "大聖寺高校",
+          "slug": "daishoji"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-22",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "北陸大谷",
+          "score": 5,
+          "won": false,
+          "name": "北陸大谷",
+          "slug": null
+        },
+        {
+          "display": "日本航空第二",
+          "score": 9,
+          "won": true,
+          "name": "日本航空第二",
+          "slug": null
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-23",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "羽咋",
+          "score": 4,
+          "won": true,
+          "name": "羽咋高校",
+          "slug": "hakui"
+        },
+        {
+          "display": "小松商業",
+          "score": 3,
+          "won": false,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-23",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松",
+          "score": 8,
+          "won": true,
+          "name": "小松高校",
+          "slug": "komatsu"
+        },
+        {
+          "display": "金沢東",
           "score": 1,
+          "won": false,
+          "name": "金沢東",
+          "slug": null
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-23",
+      "season": "summer",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "加賀",
+          "score": 1,
+          "won": false,
+          "name": "加賀高校",
+          "slug": "kaga"
+        },
+        {
+          "display": "小松市立",
+          "score": 7,
+          "won": true,
+          "name": "小松市立高校",
+          "slug": "komatsushiritsu"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-24",
+      "season": "summer",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 3,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "日本航空第二",
+          "score": 2,
+          "won": false,
+          "name": "日本航空第二",
+          "slug": null
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-24",
+      "season": "summer",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "七尾",
+          "score": 2,
           "won": false,
           "name": "七尾高校",
           "slug": "nanao"
         },
         {
-          "display": "小松工業",
-          "score": 2,
+          "display": "遊学館",
+          "score": 6,
           "won": true,
-          "name": "小松工業高校",
-          "slug": "komatsukogyo"
+          "name": "遊学館",
+          "slug": null
         }
       ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
     },
     {
-      "date": "2025-07-19",
+      "date": "2004-07-25",
       "season": "summer",
-      "round": "3回戦",
+      "round": "準々決勝",
       "venue": "石川県立野球場",
       "teams": [
         {
-          "display": "金沢",
-          "score": 10,
-          "won": true,
-          "name": "金沢",
-          "slug": null
-        },
-        {
-          "display": "石川高専",
-          "score": 1,
-          "won": false,
-          "name": "石川工業高専",
-          "slug": "ishikawakogyo"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-19",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "星稜",
-          "score": 9,
-          "won": true,
-          "name": "星稜",
-          "slug": null
-        },
-        {
-          "display": "金沢龍谷",
-          "score": 5,
-          "won": false,
-          "name": "金沢龍谷",
-          "slug": null
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-19",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "小松大谷",
-          "score": 9,
-          "won": true,
-          "name": "小松大谷",
-          "slug": null
-        },
-        {
           "display": "羽咋",
-          "score": 0,
+          "score": 3,
           "won": false,
           "name": "羽咋高校",
           "slug": "hakui"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-20",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "金沢学院大附",
-          "score": 5,
-          "won": false,
-          "name": "金沢学院大附",
-          "slug": null
         },
         {
-          "display": "金沢商業",
-          "score": 6,
-          "won": true,
-          "name": "金沢商業高校",
-          "slug": "kanazawashogyo"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-20",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "津幡",
-          "score": 0,
-          "won": false,
-          "name": "津幡高校",
-          "slug": "tsubata"
-        },
-        {
-          "display": "日本航空石川",
-          "score": 10,
-          "won": true,
-          "name": "日本航空石川",
-          "slug": null
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-20",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "門前",
-          "score": 7,
-          "won": false,
-          "name": "門前高校",
-          "slug": "monzen"
-        },
-        {
-          "display": "遊学館",
-          "score": 8,
-          "won": true,
-          "name": "遊学館",
-          "slug": null
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-20",
-      "season": "summer",
-      "round": "3回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "北陸学院",
-          "score": 7,
-          "won": true,
-          "name": "北陸学院",
-          "slug": null
-        },
-        {
-          "display": "羽咋工業",
-          "score": 4,
-          "won": false,
-          "name": "羽咋工業高校",
-          "slug": "hakuikogyo"
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-23",
-      "season": "summer",
-      "round": "準々決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "小松工業",
-          "score": 3,
-          "won": false,
-          "name": "小松工業高校",
-          "slug": "komatsukogyo"
-        },
-        {
-          "display": "北陸学院",
-          "score": 4,
-          "won": true,
-          "name": "北陸学院",
-          "slug": null
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-23",
-      "season": "summer",
-      "round": "準々決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "遊学館",
-          "score": 0,
-          "won": false,
-          "name": "遊学館",
-          "slug": null
-        },
-        {
-          "display": "金沢",
-          "score": 8,
-          "won": true,
-          "name": "金沢",
-          "slug": null
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-23",
-      "season": "summer",
-      "round": "準々決勝",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "星稜",
-          "score": 7,
-          "won": true,
-          "name": "星稜",
-          "slug": null
-        },
-        {
-          "display": "日本航空石川",
-          "score": 5,
-          "won": false,
-          "name": "日本航空石川",
-          "slug": null
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-23",
-      "season": "summer",
-      "round": "準々決勝",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "小松大谷",
+          "display": "金沢泉丘",
           "score": 5,
           "won": true,
-          "name": "小松大谷",
-          "slug": null
-        },
-        {
-          "display": "金沢商業",
-          "score": 3,
-          "won": false,
-          "name": "金沢商業高校",
-          "slug": "kanazawashogyo"
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
         }
       ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
     },
     {
-      "date": "2025-07-25",
+      "date": "2004-07-25",
       "season": "summer",
-      "round": "準決勝",
+      "round": "準々決勝",
       "venue": "石川県立野球場",
       "teams": [
         {
-          "display": "北陸学院",
-          "score": 1,
-          "won": false,
-          "name": "北陸学院",
-          "slug": null
-        },
-        {
-          "display": "小松大谷",
-          "score": 8,
-          "won": true,
-          "name": "小松大谷",
-          "slug": null
-        }
-      ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
-    },
-    {
-      "date": "2025-07-25",
-      "season": "summer",
-      "round": "準決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "星稜",
+          "display": "小松",
           "score": 2,
           "won": false,
-          "name": "星稜",
-          "slug": null
+          "name": "小松高校",
+          "slug": "komatsu"
         },
         {
-          "display": "金沢",
+          "display": "小松市立",
           "score": 3,
+          "won": true,
+          "name": "小松市立高校",
+          "slug": "komatsushiritsu"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-27",
+      "season": "summer",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 12,
           "won": true,
           "name": "金沢",
           "slug": null
+        },
+        {
+          "display": "小松市立",
+          "score": 1,
+          "won": false,
+          "name": "小松市立高校",
+          "slug": "komatsushiritsu"
         }
       ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
     },
     {
-      "date": "2025-07-27",
+      "date": "2004-07-27",
+      "season": "summer",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 12,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "金沢泉丘",
+          "score": 2,
+          "won": false,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        }
+      ],
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2004-07-28",
       "season": "summer",
       "round": "決勝",
       "venue": "石川県立野球場",
       "teams": [
         {
-          "display": "小松大谷",
-          "score": 8,
+          "display": "遊学館",
+          "score": 10,
           "won": true,
-          "name": "小松大谷",
+          "name": "遊学館",
           "slug": null
         },
         {
           "display": "金沢",
-          "score": 7,
+          "score": 0,
           "won": false,
           "name": "金沢",
           "slug": null
         }
       ],
-      "tournament": "第107回全国高等学校野球選手権石川大会（令和7年度夏季）"
+      "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
     }
   ]
 }

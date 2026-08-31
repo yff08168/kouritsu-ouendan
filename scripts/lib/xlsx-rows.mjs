@@ -13,6 +13,7 @@
  *   生成物を作るスクリプトだけが使う。**サイト側から import しないこと。**
  */
 import ExcelJS from "exceljs";
+import * as XLSX from "xlsx";
 
 /**
  * 1つのセルを文字列にする。
@@ -65,6 +66,37 @@ export async function xlsxSheets(data) {
 }
 
 /**
+ * ★★★**旧形式（.xls）のバイト列 → シートごとの行**（2026-08-31 その5。運営者の承認）。
+ *
+ * ★**`exceljs` は `.xlsx` 専用**で `.xls`（BIFF）は読めない。
+ *   ★**新潟の「全試合データ」48件のうち25件（2010〜2019年）**と、
+ *   **兵庫の県大会のスコアシートのほとんど**が旧形式で、これが無いと届かない。
+ *
+ * ★★**SheetJS は「作者の配布元（cdn.sheetjs.com）」から入れてある。**
+ *   **npm に出ている版は 0.18.5 で止まっていて既知の脆弱性の告知が残る**ので、
+ *   `package.json` の依存はCDNのtgzを指している。**npm の `xlsx` に戻さないこと。**
+ *
+ * ★**新形式は今までどおり `exceljs` で読む。** SheetJS に一本化しない ——
+ *   **既に読めている県の生成物が変わるおそれ**があり、確かめる手間に見合わない。
+ *
+ * ★**セルは文字列にする。** `raw: false` で表示どおりの文字列を受け取り、
+ *   **日付のシリアル値が数値になって出るのを避ける**（`cellText` と同じ考え方）。
+ * ★**空の行も残す**（行番号がずれると上の行から引き継ぐ日付が狂う）。
+ */
+export function xlsSheets(data) {
+  const book = XLSX.read(new Uint8Array(data), { type: "array", cellDates: true, raw: false });
+  const sheets = [];
+  for (const name of book.SheetNames) {
+    const sheet = book.Sheets[name];
+    const rows = XLSX.utils
+      .sheet_to_json(sheet, { header: 1, blankrows: true, defval: "", raw: false })
+      .map((row) => row.map((c) => (c == null ? "" : String(c).trim())));
+    sheets.push({ name, rows });
+  }
+  return sheets;
+}
+
+/**
  * URL から取ってシートにする。**取れなければ null。例外は投げない。**
  * 理由は `pdf-text.mjs` と同じで、1つのファイルの失敗で1県を落とさないため。
  */
@@ -83,12 +115,17 @@ export async function fetchXlsxSheets(url, { headers, timeoutMs = 45000 } = {}) 
   try {
     const data = await res.arrayBuffer();
     /*
-      **xlsx は ZIP。** 先頭が `PK` でなければ Excel ではない
-      （404のHTMLが返ることがある）。古い .xls は別形式なので読めない。
+      ★★★**拡張子で新旧を判断しないこと**（2026-08-31 その5）。
+      **先頭4バイトで見る** —— `50 4B`（`PK`）なら新形式（zip）、
+      `D0 CF 11 E0` なら旧形式（OLE2 複合ファイル）。
+      ★**兵庫は拡張子 `.xls` のまま中身も旧形式**だったが、
+      **新潟には `.xlsx` も混ざる**ので1件ずつ見る必要がある。
+      ★**どちらでもなければ Excel ではない**（404のHTMLが返ることがある）。
     */
-    const head = new Uint8Array(data.slice(0, 2));
-    if (head[0] !== 0x50 || head[1] !== 0x4b) return null;
-    return await xlsxSheets(data);
+    const head = new Uint8Array(data.slice(0, 4));
+    if (head[0] === 0x50 && head[1] === 0x4b) return await xlsxSheets(data);
+    if (head[0] === 0xd0 && head[1] === 0xcf && head[2] === 0x11 && head[3] === 0xe0) return xlsSheets(data);
+    return null;
   } catch {
     return null;
   }

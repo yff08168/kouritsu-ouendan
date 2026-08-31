@@ -2396,7 +2396,7 @@ const niigata = {
    * ★★**年・季節・回数が表から直に取れる。** それまでは**ファイル名に
    *   `haru`/`natu`/`aki` が入っているものを新しい順に3件**しか見ておらず、
    *   **2021年以前のファイル（`103kekka_all.xlsx` など）が1件も拾えていなかった。**
-   * ★**表は2010年から48件ある**（うち `.xlsx` は21件。**`.xls` は `exceljs` で開けない**）。
+   * ★**表は2010年から48件ある**（`.xlsx` が21件・`.xls` が25件）。★**2026-08-31 その5 に `.xls` も読めるようにした**（`xlsx-rows.mjs`）。
    * ★**列の順は見出しの春・夏・秋と同じ。確かめてから使うこと。**
    */
   pastEntries(html) {
@@ -2425,7 +2425,7 @@ const niigata = {
         const title = td.match(new RegExp('class="file_title"[^>]*>([\\s\\S]*?)<', "i"))?.[1] ?? "";
         const no = Number(normalize(title).match(new RegExp("第(\\d+)回"))?.[1]);
         const link = [
-          ...td.matchAll(new RegExp('<a[^>]+href="([^"]+\\.xlsx)"[^>]*>([\\s\\S]*?)</a>', "gi")),
+          ...td.matchAll(new RegExp('<a[^>]+href="([^"]+\\.xlsx?)"[^>]*>([\\s\\S]*?)</a>', "gi")),
         ].find((m) => /全試合データ|試合結果/.test(normalize(plain(m[2]))));
         if (!link || !Number.isFinite(no)) continue;
         out.push({ year, season: order[k], no, url: link[1] });
@@ -2443,14 +2443,27 @@ const niigata = {
   nameOf(no, year, season) {
     if (season === "summer") return `第${no}回全国高等学校野球選手権新潟大会`;
     const label = season === "spring" ? "春季" : "秋季";
-    return `第${no}回北信越地区高等学校野球新潟県大会（令和${year - 2018}年度${label}）`;
+    /*
+      ★★**元号は年度で切り替える**（2026-08-31 その5）。**令和は2019年度から。**
+      ★**引き算1本にすると 2010年が `令和-8年度` になる**（実際になった）。
+    */
+    const era = year >= 2019 ? `令和${year - 2018}` : `平成${year - 1988}`;
+    return `第${no}回北信越地区高等学校野球新潟県大会（${era}年度${label}）`;
   },
   /**
    * 県大会ではないシート。
    * ★**「本大会」を忘れないこと。** 春のファイルには北信越本大会のシートが
    * 入っており、外さないと**星稜・敦賀気比・佐久長聖が「新潟の地方大会」に出てくる。**
    */
-  SKIP_SHEETS: /甲子園|神宮|選抜|北信越|本大会/,
+  /*
+    県大会ではないシート。
+    ★**「本大会」を忘れないこと。** 春のファイルには北信越本大会のシートが
+    入っており、外さないと**星稜・敦賀気比・佐久長聖が「新潟の地方大会」に出てくる。**
+    ★★**「支部」も外す**（2026-08-31 その5）。古いファイル（.xls）は
+    **秋季のシートが `支部１～３回戦` と `県1回戦・準々・準決・決勝` に分かれている。**
+    支部予選は勝ち抜きの木ではないので取らない（千葉と同じ扱い）。
+  */
+  SKIP_SHEETS: /甲子園|神宮|選抜|北信越|本大会|支部/,
   async collect({ fetchHtml, season, url, year }) {
     const get = async (u) => {
       if (!this.pageCache.has(u)) this.pageCache.set(u, await fetchHtml(u));
@@ -2519,9 +2532,16 @@ const niigata = {
           const cells = sheet.rows[i].map((c) => normalize(c));
           const line = cells.join("");
 
-          const d = line.match(/令和(\d+)年(\d{1,2})月(\d{1,2})日/);
+          /*
+            ★**古いファイルは平成**（`平成 28 年 7 月 8 日`）。
+            ★**元号ごとに足す数が違う**ので、まとめて `(令和|平成)` にはしない。
+          */
+          const d =
+            line.match(new RegExp("令和([0-9]+)年([0-9]{1,2})月([0-9]{1,2})日")) ??
+            line.match(new RegExp("平成([0-9]+)年([0-9]{1,2})月([0-9]{1,2})日"));
+          const era = /平成/.test(line) && !/令和/.test(line) ? 1988 : 2018;
           if (d) {
-            const y = 2018 + Number(d[1]);
+            const y = era + Number(d[1]);
             fileYear ??= y;
             date = `${y}-${d[2].padStart(2, "0")}-${d[3].padStart(2, "0")}`;
             continue;
@@ -2539,7 +2559,7 @@ const niigata = {
           if (
             cells.some(
               (c) =>
-                new RegExp("^第\d+試合$").test(c) ||
+                new RegExp("^第[0-9]+試合$").test(c) ||
                 new RegExp("^(決勝|準決勝|準々決勝|[0-9]+回戦)戦?$").test(c.replace(/[\s　]/g, "")),
             )
           ) {
@@ -2559,7 +2579,78 @@ const niigata = {
           const heads = cells.flatMap((c, idx) =>
             /^校名$/.test(c.replace(/\s/g, "")) && cells[idx + 1] === "1" ? [idx] : [],
           );
-          if (!heads.length) continue;
+          /*
+            ★★★**古いファイル（.xls）は見出しの形が違う**（2026-08-31 その5）。
+
+              新しい形（2020年度〜）
+                校　名 | 1 | 2 | … | 9 | … | 計          ← **見出しの行がある**
+                新潟青陵 | 0 | 0 | … | 0
+              古い形（2010〜2019年度）
+                ＜球場名＞ | ハードオフ | | | 第１試合 | | | 1 | 回戦   ← **見出しの行が無い**
+                羽茂   | 0 | 0 | 1 | 0 | 0 | 0 | 0 | …(空) | 1 | 7 | 回コールド
+                新潟西 | 1 | 3 | 0 | 0 | 3 | 1 | X | … | 8
+
+            ★**古い形は「第N試合」の行の次の2行がそのまま両チーム**で、
+            **合計は16列目**（実測。9回でも延長10回でも同じ位置。新しい形の「計」と同じ列）。
+            ★**列が固定なので見出しが要らない。** 見つからなければ古い形として読む。
+            ★**右にもう1試合並ぶことは古い形には無い**（実測。1行1試合）。
+          */
+          const OLD_TOTAL = 16;
+          if (!heads.length) {
+            if (!gameRow.length || !date) continue;
+            const rowA = (sheet.rows[i] ?? []).map((c) => normalize(c));
+            const rowB = (sheet.rows[i + 1] ?? []).map((c) => normalize(c));
+            /*
+              ★★★**古い形も、深い回戦は2試合が横に並ぶ**（2026-08-31 その5）。
+
+                ＜球場名＞|ハードオフ|||第１試合|||準々決勝|…(14空)…|＜球場名＞|ハードオフ|…
+                長岡商  |0|…|0（16列目が合計）|…            |巻    |0|…
+                                                            ↑ 22列目から2試合目
+
+              ★**左だけ読むと準々決勝が2試合・準決勝が1試合になる**（実際になった）。
+              ★**`＜球場名＞` の列を全部拾って、それぞれを1試合として読む**
+              （新しい形で「校名」の列を全部拾うのと同じ考え方）。
+            */
+            const starts = gameRow.flatMap((c, idx) => (/球場名/.test(c) ? [idx] : []));
+            const blocks = starts.length ? starts : [0];
+            let pushed = false;
+            for (const [k, start] of blocks.entries()) {
+              const end = blocks[k + 1] ?? Math.max(gameRow.length, rowA.length, rowB.length);
+              const nameA = rowA[start] ?? "";
+              const nameB = rowB[start] ?? "";
+              const num = (v) => (new RegExp("^[0-9]+$").test(v ?? "") ? Number(v) : null);
+              const sa = num(rowA[start + OLD_TOTAL]);
+              const sb = num(rowB[start + OLD_TOTAL]);
+              if (!nameA || !nameB || sa === null || sb === null) continue;
+              // ★**校名の欄が校名でない行は飛ばす**（「バッテリー」の表など）
+              if (new RegExp("^[0-9]").test(nameA) || /バッテリー|投|捕/.test(nameA)) continue;
+              const head = gameRow.slice(start, end);
+              found.push({
+                date,
+                season,
+                tournament: link.tournament,
+                /*
+                  ★★**古い形は回戦が2つのセルに割れている**（`… | 4 | 回戦`）。
+                  **空白でつなぐと `4 回戦` になって回戦として読めない。詰めてつなぐこと。**
+                */
+                round: pickRound(head.join("")),
+                venue:
+                  head.find(
+                    (c) => c && !new RegExp("^第[0-9]+試合$").test(c) && !/回戦|決勝|球場名|＜|＞/.test(c),
+                  ) ?? null,
+                teams: [
+                  { display: nameA, score: sa, won: sa > sb },
+                  { display: nameB, score: sb, won: sb > sa },
+                ],
+              });
+              pushed = true;
+            }
+            if (pushed) {
+              gameRow = [];
+              i += 1;
+            }
+            continue;
+          }
 
           const rowA = (sheet.rows[i + 1] ?? []).map((c) => normalize(c));
           const rowB = (sheet.rows[i + 2] ?? []).map((c) => normalize(c));
@@ -2612,8 +2703,38 @@ const niigata = {
             `${year} 年の日付でないので採らない）`,
         );
       }
-      if (ofYear.length) {
-        games.push(...ofYear);
+      /*
+        ★★★**回戦の札が合わない大会は1試合も出さない**（2026-08-31 その5）。
+
+        古いファイル（.xls）は**回戦が2つのセルに割れている**ことがあり、
+        **読めなかった枠が前の見出しの回戦を引き継いでしまう。**
+        実測で46大会中4大会が
+        「2回戦が32試合」「準々決勝が5試合」「決勝が0試合」という形になっていた。
+
+        ★★**回戦は画面に事実として出る。** 数が合わないなら**札のどれかが嘘**なので、
+        **その大会ごと落とす**（このリポジトリ共通の構え）。
+        ★**決勝1・準決勝2**は勝ち抜きなら必ず成り立つ。
+        ★**落ちた大会は名前を出す**（次に触る人が紙を見に行けるように）。
+      */
+      const byTournament = new Map();
+      for (const g of ofYear) {
+        if (!byTournament.has(g.tournament)) byTournament.set(g.tournament, []);
+        byTournament.get(g.tournament).push(g);
+      }
+      const sane = [];
+      for (const [name, gs] of byTournament) {
+        const f = gs.filter((g) => g.round === "決勝").length;
+        const sf = gs.filter((g) => g.round === "準決勝").length;
+        if (f === 1 && sf === 2) {
+          sane.push(...gs);
+          continue;
+        }
+        console.log(
+          `  ⚠️ 新潟: ${name} は 決勝${f}試合・準決勝${sf}試合（1・2 のはず）。回戦の札が合わないので1試合も出さない`,
+        );
+      }
+      if (sane.length) {
+        games.push(...sane);
         break;
       }
     }

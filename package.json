@@ -33,6 +33,7 @@
     "exceljs": "^4.4.0",
     "pdfjs-dist": "^6.2.108",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
   }
 }

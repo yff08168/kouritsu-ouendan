@@ -9580,8 +9580,16 @@ const hyogo = {
   name: "兵庫県高等学校野球連盟",
   siteUrl: "http://www.hyogo-koyaren.or.jp/",
   politenessMs: 2000,
-  // **夏だけ。** 春季（`26haru.pdf`）と秋季は紙の形が未確認
-  seasons: { summer: "http://www.hyogo-koyaren.or.jp/index.php" },
+  /*
+    ★★**春・夏・秋の3季**（2026-08-31 その5）。入口は年度の索引。
+    ★**2026年度だけスコアシートが無くPDF**なので、そこは `pdfUrl`（トップページ）から取る。
+  */
+  seasons: {
+    spring: "http://www.hyogo-koyaren.or.jp/taikai/index.php",
+    summer: "http://www.hyogo-koyaren.or.jp/taikai/index.php",
+    autumn: "http://www.hyogo-koyaren.or.jp/taikai/index.php",
+  },
+  pdfUrl: "http://www.hyogo-koyaren.or.jp/index.php",
   /**
    * トップページから4枚を見分ける。★**軟式を必ず外す**
    * （同じ一覧に `71hyogo.pdf`＝第71回軟式、`N26haru.pdf` などが並ぶ。
@@ -9593,8 +9601,210 @@ const hyogo = {
     { key: "quarter", label: /準々決勝/, games: 4 },
     { key: "final", label: /準決勝|決勝/, games: 3 },
   ],
-  async collect({ fetchHtml, season, url }) {
+  async collect({ fetchHtml, season, url, year }) {
+    /*
+      ★**まずスコアシート**（2017〜2025年度）。無ければ夏だけPDF（2026年度）に落とす。
+      ★**両方に同じ大会が入ることはない**（スコアシートのある年にPDFは無い）。
+    */
+    const fromSheets = await this.collectScoresheets({ fetchHtml, season, year, url });
+    if (fromSheets.length) return fromSheets;
     if (season !== "summer") return [];
+    return await this.collectPdf({ fetchHtml, season });
+  },
+  /**
+   * ★★★**2017〜2025年度は「会場ごとのスコアシート（.xls）」から取る**
+   * （2026-08-31 その5。運営者から `taikai/index.php` を教わった）。
+   *
+   *   `taikai/index.php` … 2004〜2026年度の索引
+   *     → `taikai/koushiki/<年>/…index.php` … その年度の大会一覧
+   *       → `haru<年>.php`（春季県大会）/ `<回>hyogo.php`（夏）/ `aki<年>.php`（秋季）
+   *         → `homepagedata(R7)/scoresheets/*.xls`
+   *
+   * ★★**組合せ表はGIF画像**（`kenR7akiA.gif`）で**文字が1つも入っていない。**
+   *   ★**スコアシートだけで足りる**ので、GIFは見ない。
+   * ★★**`.xls` は旧形式（OLE2）。** `xlsx-rows.mjs` が SheetJS で読む
+   *   （2026-08-31 その5 に足した。運営者の承認）。
+   * ★**2026年度だけスコアシートが無くPDF**なので、そこは今までどおり `collectPdf`。
+   * ★**2016年度以前は地区大会（支部予選）の `.xls` しか無い。**
+   *
+   * ★**地区大会（`district`）と軟式（`N` で始まる／`nanshiki`）は必ず外す。**
+   */
+  SEASON_PAGE: { spring: "haru", summer: "hyogo", autumn: "aki" },
+  async collectScoresheets({ fetchHtml, season, year, url }) {
+    const idx = await fetchHtml(url);
+    if (!idx) return [];
+    const yearUrl = [...idx.matchAll(new RegExp('<a[^>]+href="([^"]*koushiki/([0-9]{4})/[^"]*)"', "gi"))]
+      .filter((m) => Number(m[2]) === year)
+      .map((m) => new URL(m[1], url).toString())[0];
+    if (!yearUrl) return [];
+    const page = await fetchHtml(yearUrl);
+    await sleep(this.politenessMs);
+    if (!page) return [];
+
+    const word = this.SEASON_PAGE[season];
+    const pages = [
+      ...new Set(
+        [...page.matchAll(new RegExp('<a[^>]+href="([^"]+\.php)"', "gi"))]
+          .map((m) => new URL(m[1], yearUrl).toString())
+          .filter((u) => {
+            const file = decodeURIComponent(u.split("/").pop() ?? "").toLowerCase();
+            if (!file.includes(word)) return false;
+            // ★近畿大会・軟式・地区大会・選抜・神宮は県大会ではない
+            return !/kinki|nanshiki|district|sembatsu|meiji|index/.test(file);
+          }),
+      ),
+    ];
+    if (!pages.length) return [];
+
+    /** スコアシートのURL。**同じファイルが複数のページから張られている**ので重複を外す */
+    const files = new Set();
+    for (const p of pages) {
+      const html = await fetchHtml(p);
+      await sleep(this.politenessMs);
+      if (!html) continue;
+      for (const m of html.matchAll(new RegExp('href="([^"]+\.xlsx?)"', "gi"))) {
+        const u = new URL(m[1], p).toString();
+        const file = decodeURIComponent(u.split("/").pop() ?? "");
+        if (/district|nanshiki/i.test(u) || new RegExp("^N", "i").test(file)) continue;
+        files.add(u);
+      }
+    }
+    if (!files.size) return [];
+
+    const games = [];
+    for (const file of files) {
+      const sheets = await fetchXlsxSheets(file, { headers: UA });
+      await sleep(this.politenessMs);
+      if (!sheets) {
+        console.log(`  ⚠️ 兵庫: ${file.split("/").pop()} が開けない`);
+        continue;
+      }
+      for (const sheet of sheets) games.push(...this.readScoresheet(sheet, season, year));
+    }
+
+    /*
+      ★★★**回戦の札が合わない大会は1試合も出さない**（2026-08-31 その5。新潟と同じ構え）。
+      **回戦はセルに割れていて空白も入る**ので、読めなかった枠が出ると
+      **決勝が0試合・準決勝が3試合**のような形になる。
+      ★**回戦は画面に事実として出る。数が合わないなら札のどれかが嘘。**
+      ★**落ちた大会は名前を出す**（次に触る人が紙を見に行けるように）。
+    */
+    const byName = new Map();
+    for (const g of games) {
+      if (!byName.has(g.tournament)) byName.set(g.tournament, []);
+      byName.get(g.tournament).push(g);
+    }
+    const sane = [];
+    for (const [name, gs] of byName) {
+      const f = gs.filter((g) => g.round === "決勝").length;
+      const sf = gs.filter((g) => g.round === "準決勝").length;
+      if (f === 1 && sf === 2) {
+        sane.push(...gs);
+        continue;
+      }
+      console.log(
+        `  ⚠️ 兵庫: ${name} は 決勝${f}試合・準決勝${sf}試合（1・2 のはず）。回戦の札が合わないので1試合も出さない`,
+      );
+    }
+    return sane;
+  },
+  /**
+   * ★**1シート＝1会場1日。** 紙の形は3季とも同じ。
+   *
+   *     令和 7|年度 秋季兵庫県高校野球大会|…|第|1|日|2025|年|9|月|13|日 (|土|)
+   *     場  所　｛||尼崎記念公園野球場（ベイコム野球場）|…|｝
+   *     |1|回戦||第１試合||開 始||9:53|…
+   *     学校名||一|二|…|十五|合計
+   *     市立西宮||0|2|0|0|0|0|0|0|0|…|2
+   *     兵庫工業||0|0|0|0|2|0|0|1|x|…|3
+   *
+   * ★★**「学校名」の行は2種類ある** —— イニングの表（`合計` がある）と
+   *   投手・捕手の表（`投　手` がある）。**`合計` があるほうだけ**を見ること。
+   * ★**合計の列は見出しから取る。** 延長のときは十五の欄に「延長14回 ﾀｲﾌﾞﾚｰｸ」と
+   *   書かれることがあり、**位置を決め打ちすると拾えない。**
+   * ★**大会名も日付も紙の1行目にある**（西暦つき）。**推測しない。**
+   */
+  readScoresheet(sheet, season, year) {
+    const rows = sheet.rows.map((r) => r.map((c) => normalize(c)));
+    const head = rows[0]?.join("") ?? "";
+    const d = head.match(new RegExp("([0-9]{4})年([0-9]{1,2})月([0-9]{1,2})日"));
+    if (!d) return [];
+    // ★**紙の年が取りに行った年と違えば1試合も出さない**（索引と中身は別の場所から来る）
+    if (Number(d[1]) !== year) return [];
+    const date = `${d[1]}-${d[2].padStart(2, "0")}-${d[3].padStart(2, "0")}`;
+    /*
+      ★★★**大会名は「第」のセルの手前まで**（2026-08-31 その5）。
+
+          第107回全国高等学校野球選手権 兵庫大会|||||||第|2|日|2025|年|7|月|6|日
+                                                     ↑ ここで切る
+
+      ★**`第[0-9]+日` で切ると落ちる** —— **日にちが別のセル**なので、
+      つないだ文字列は `…兵庫大会第日2025年…`（数字が無い）になり、
+      **大会名に日付がくっついたまま出る**（実際に6大会がそうなった）。
+      ★★**空白は「セルの中の飾り」なので必ず落とす** ——
+      元号の数字がセルに分かれており、`平成 2 9年度` のような名前になる。
+      ★**同じ大会に2つの書き方がある**（`全国高校野球選手権` と
+      `全国高等学校野球選手権`）。**片方に寄せないと1つの大会が2つに割れる。**
+    */
+    const cut = rows[0].findIndex((c, k) => k > 0 && c === "第");
+    const tournament = (cut > 0 ? rows[0].slice(0, cut) : [head.split(String(d[1]) + "年")[0]])
+      .join("")
+      .split(" ")
+      .join("")
+      .split("　")
+      .join("")
+      .split("全国高校野球選手権")
+      .join("全国高等学校野球選手権");
+    if (!tournament) return [];
+
+    let venue = null;
+    let round = null;
+    const out = [];
+    for (let i = 0; i < rows.length; i++) {
+      const line = rows[i].join("");
+      const place = line.match(new RegExp("場[\s　]*所[\s　]*[｛{]([^｝}]+)[｝}]"));
+      if (place) {
+        venue = place[1].replace(new RegExp("[\s　]", "g"), "") || null;
+        continue;
+      }
+      /*
+        ★★**回戦もセルに割れていて空白が入る**（2026-08-31 その5）。
+
+            |準々決|勝戦||第１試合…    → 準々決勝戦
+            |準決|勝戦||第１試合…      → 準決勝戦
+            |決 勝|戦||第１試合…       → **決 勝戦**（空白が残る）
+
+        ★**空白を落とさないと決勝だけ回戦が付かない**（実測で12大会が「決勝0試合」）。
+      */
+      const r = pickRound(line.split(" ").join("").split("　").join(""));
+      if (r && !rows[i].includes("学校名")) round = r;
+      if (!rows[i].includes("学校名")) continue;
+      const totalAt = rows[i].indexOf("合計");
+      // ★**投手・捕手の表には「合計」が無い。** そちらは読まない
+      if (totalAt < 0) continue;
+      const a = rows[i + 1] ?? [];
+      const b = rows[i + 2] ?? [];
+      const num = (v) => (new RegExp("^[0-9]+$").test(v ?? "") ? Number(v) : null);
+      const sa = num(a[totalAt]);
+      const sb = num(b[totalAt]);
+      if (!a[0] || !b[0] || sa === null || sb === null) continue;
+      out.push({
+        date,
+        season,
+        tournament,
+        round,
+        venue,
+        teams: [
+          { display: a[0], score: sa, won: sa > sb },
+          { display: b[0], score: sb, won: sb > sa },
+        ],
+      });
+      i += 2;
+    }
+    return out;
+  },
+  async collectPdf({ fetchHtml, season }) {
+    const url = this.pdfUrl;
     const html = await fetchHtml(url);
     if (!html) return [];
 

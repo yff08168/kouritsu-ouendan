@@ -5394,10 +5394,16 @@ const ishikawa = {
     }
 
     const games = [];
+    /** 不戦勝の枠。`{ round, won, pair }`。勝ち上がりの検算にだけ使う */
+    const byes = [];
     /** 読んだが出さない試合（代表決定戦）。件数と中身を必ずログに出す */
     const skipped = [];
     // ★回戦と日付は**ページをまたいで続く**。ページごとに捨てないこと
-    let round = null;
+    /** いまの回戦の帯。`[{ x, name }]`。1行に見出しが2つ並ぶ紙があるので配列で持つ */
+    let roundBands = null;
+    /** 枠の x にいちばん近い帯の回戦名 */
+    const roundAt = (x) =>
+      roundBands?.slice().sort((p, q) => Math.abs(p.x - x) - Math.abs(q.x - x))[0]?.name ?? null;
     let date = null;
     let months = [];
     /** ★**紙の縮尺は1枚で一定。** 最初に測れた枠の値をそのまま使う */
@@ -5407,14 +5413,38 @@ const ishikawa = {
       for (let i = 0; i < lines.length; i++) {
         const line = lines[i];
         const text = normalize(line.items.map((it) => it.text.trim()).join(""));
-        if (isSkipHeading(text)) {
-          round = SKIP;
+        const headingOf = (t) => {
+          if (isSkipHeading(t)) return SKIP;
+          const al = ROUND_ALIASES.get(t) ?? t;
+          return ROUNDS.has(al) ? al : null;
+        };
+        const whole = headingOf(text);
+        if (whole) {
+          roundBands = [{ x: line.items[0].x, name: whole }];
           continue;
         }
-        const alias = ROUND_ALIASES.get(text) ?? text;
-        if (ROUNDS.has(alias)) {
-          round = alias;
-          continue;
+        /*
+          ★★★**回戦の見出しが1行に2つ並ぶ紙がある**（2026-08-31 その4。2021年夏）。
+
+              ３回戦(x=188)            準々決勝(x=476)
+              ◆(15) ◆(210)            ◆(404)          ← 枠は同じ行に3つ
+
+          行をつないで見ると `3回戦準々決勝` になり、**どの見出しにも当たらない**ので
+          `round` が前の見出しのまま**になり、3回戦と準々決勝が混ざっていた。**
+          ★**見出しは自分の枠の group の中央に刷ってある**ので、
+          **枠にいちばん近い見出しを当てる。**（実測：3回戦8試合・準々決勝4試合に分かれる）
+          ★**断片が全部見出しのときだけ**この道を通る。
+          1つしか無い紙は今までどおり（帯が1本なら必ずそれが選ばれる）。
+        */
+        if (line.items.length >= 2) {
+          const each = line.items.map((it) => {
+            const name = headingOf(normalize(it.text.trim()));
+            return name ? { x: it.x, name } : null;
+          });
+          if (each.every(Boolean)) {
+            roundBands = each;
+            continue;
+          }
         }
         const d = parseDate(text);
         if (d) {
@@ -5466,10 +5496,34 @@ const ishikawa = {
           const within = [line, lines[i + 1], lines[i + 2], lines[i + 3]].filter(Boolean).flatMap((l) =>
             l.items.filter((it) => it.x >= mark.x && it.x < mark.x + 200).map((it) => it.text),
           );
-          return !notPlayed.test(normalize(within.join("")));
+          const note = normalize(within.join("")).replace(/[s　]/g, "");
+          if (!notPlayed.test(note)) return true;
+          /*
+            ★★★**不戦勝は「上がった側」まで紙に書いてある**（2026-08-31 その4）。
+
+                遊学館 と 星稜の試合は、遊学館の不戦勝
+
+            ★**枠を飛ばすだけだと、勝ち上がりの検算が落ちる** ——
+            前の回戦の勝者（星稜・遊学館）が次の回戦に出てこないため。
+            ★**辞退した側は本当にもう出てこない**ので、検算のほうを直すのが正しい。
+            ★**紙が名指ししている**ので推測ではない。**読めなければ何も足さない**
+            （そのときは今までどおり検算に落ちて、その大会は1試合も出さない）。
+          */
+          /*
+            ★**枠の見出し（`◆石川県立野球場第2試合`）を先に落とすこと。**
+            残したまま当てると、いちばん外の `(.+?)` がそれを飲み込んで
+            **1校目が `◆石川県立野球場第2試合遊学館` になる**（実際になった）。
+          */
+          const body = note.replace(new RegExp("^◆.*?第[0-9０-９]+試合"), "");
+          const m = body.match(new RegExp("(.+?)と(.+?)の試合は、(.+?)の不戦勝"));
+          if (m) {
+            const [, x1, x2, won] = m;
+            if ([x1, x2].includes(won)) byes.push({ round: roundAt(mark.x), won, pair: [x1, x2] });
+          }
+          return false;
         });
         if (!marks.length) continue;
-        if (!round || !date) {
+        if (!roundBands || !date) {
           console.log("  ⚠️ 石川: 回戦か日付が分からない試合がある。1試合も出さない");
           return [];
         }
@@ -5526,6 +5580,8 @@ const ishikawa = {
           先攻（+41 付近）と後攻（+106 付近）の2つが並ぶ。
           あいだに「（5回コールド）」の行が入ることがあるので、少し下まで探す。
         */
+        // ★**枠ごとに回戦が違うことがある**（1行に見出しが2つ並ぶ紙）
+        const roundOfFirst = roundAt(marks[0].x);
         let nameRow = null;
         for (let k = i + 3; k < Math.min(i + 8, lines.length); k++) {
           const off = lines[k].items.map((it) => (it.x - marks[0].x) / scale);
@@ -5536,7 +5592,7 @@ const ishikawa = {
           }
         }
         if (!nameRow) {
-          console.log(`  ⚠️ 石川: 校名の行が読めない枠がある（${round}・${date}）。1試合も出さない`);
+          console.log(`  ⚠️ 石川: 校名の行が読めない枠がある（${roundOfFirst}・${date}）。1試合も出さない`);
           return [];
         }
 
@@ -5548,6 +5604,7 @@ const ishikawa = {
             （枠の幅が 164.8 しかない年がある）。
             ★**そのままだと隣の枠の得点を合計として読み**、和が合わずに大会が丸ごと落ちる。
           */
+          const round = roundAt(mark.x);
           const nextMark = marks[mi + 1];
           /*
             ★★**合計の窓も紙の縮尺に合わせる**（2026-08-31 その3）。
@@ -5625,6 +5682,14 @@ const ishikawa = {
         }
       }
     }
+    if (process.env.ISHIKAWA_DEBUG) {
+      console.log(`  [debug] ${title}: ${games.length}試合`);
+      for (const g of games)
+        console.log(
+          `  [debug]   ${g.date} ${g.round} ${g.venue} ` +
+            g.teams.map((t) => `${t.display} ${t.score}`).join(" - "),
+        );
+    }
     if (!games.length) return [];
 
     /*
@@ -5675,7 +5740,9 @@ const ishikawa = {
     let winners = null;
     for (const r of played) {
       const gs = games.filter((g) => g.round === r);
-      const teams = gs.flatMap((g) => g.teams.map((t) => t.display));
+      // ★**不戦勝の枠に出ている2校も「その回戦に出た」に数える**（上の項）
+      const byeAt = byes.filter((b) => b.round === r);
+      const teams = gs.flatMap((g) => g.teams.map((t) => t.display)).concat(byeAt.flatMap((b) => b.pair));
       if (winners) {
         const missing = winners.filter((w) => !teams.includes(w));
         if (missing.length) {
@@ -5688,8 +5755,12 @@ const ishikawa = {
         ★**引き分けは上で「紙が引き分けと刷っている」ことを確かめてある。**
       */
       const decidedGs = gs.filter((g) => !isDraw(g));
-      winners = decidedGs.map((g) => g.teams.find((t) => t.won)?.display).filter(Boolean);
-      if (winners.length !== decidedGs.length) {
+      winners = decidedGs
+        .map((g) => g.teams.find((t) => t.won)?.display)
+        .filter(Boolean)
+        // ★**不戦勝で上がった側も次の回戦にいるはず**
+        .concat(byeAt.map((b) => b.won));
+      if (winners.length !== decidedGs.length + byeAt.length) {
         console.log(`  ⚠️ 石川: ${r} に勝者の読めない試合がある。1試合も出さない`);
         return [];
       }
@@ -5732,9 +5803,22 @@ const ishikawa = {
     }
 
     const draws = drawnGames.length;
-    if (entries.size - (games.length - draws) !== 1) {
+    /*
+      ★★**不戦勝は「行われなかった試合」なので、チーム数の勘定に入れる**
+      （2026-08-31 その4）。
+
+          出場校 − 1 ＝ 決着した試合 ＋ 不戦勝
+
+      ★**辞退した側が1試合も戦っていない年もある**ので、
+      **不戦勝の枠に出ている2校も出場校に数える**（そうしないと年ごとに式が変わる）。
+      ★実測：2021年秋は辞退した側がどこにも出てこず、2021年夏は3回戦を戦っていた。
+    */
+    const allTeams = new Set([...entries, ...byes.flatMap((b) => b.pair)]);
+    const playedCount = games.length - draws;
+    if (allTeams.size - 1 !== playedCount + byes.length) {
       console.log(
-        `  ⚠️ 石川: ${entries.size} チームに対し決着した試合 ${games.length - draws}（${entries.size - 1} のはず）。1試合も出さない`,
+        `  ⚠️ 石川: ${allTeams.size} チームに対し決着した試合 ${playedCount}` +
+          `${byes.length ? `・不戦勝 ${byes.length}` : ""}（${allTeams.size - 1 - byes.length} 試合のはず）。1試合も出さない`,
       );
       return [];
     }
@@ -5775,7 +5859,11 @@ const ishikawa = {
             **同じ優勝校なのに突き合わせを取りやめてしまう**（令和3年度春季）。
           */
           .map((v) => (v ? v.replace(new RegExp("^[：:・]+"), "") : v))
-          .filter((v) => v && !isClock(v)),
+          /*
+            ★**括弧で始まる候補は校名ではない**（`優勝　（春は17回目）` と
+            回数だけを別行に刷る紙がある。2013年春）。**校名は括弧では始まらない。**
+          */
+          .filter((v) => v && !isClock(v) && !new RegExp("^[（(]").test(v)),
       ),
     ];
     if (printedCandidates.length > 1) {
@@ -5795,6 +5883,7 @@ const ishikawa = {
     console.log(
       `  （${tournament}: ${games.length} 試合 / 優勝 ${champion} / ${entries.size} チーム・**スコア表から**` +
         (skipped.length ? ` / 代表決定戦 ${skipped.length} 件は出さない（${skipped.join("・")}）` : "") +
+        (byes.length ? ` / 不戦勝 ${byes.length} 件（${byes.map((b) => `${b.won}`).join("・")}）` : "") +
         "）",
     );
     return games;

@@ -3180,6 +3180,24 @@ const aichi = {
       scoreBack: 4,
       // ★決勝の得点は、出会う点から伸びる縦線のわきに 16.8 離れている
       finalScoreReach: 22,
+      /*
+        ★★**2017年春の紙は決勝の横線が左右とも赤で、真ん中が刷られていない。**
+        色でも接点でも勝った側が決まらないので、**垂れている縦線から読む**
+        （`vector-bracket.mjs` の `finalByStem` の説明を読むこと）。
+        ★**色で決まる年はこの道を通らない**ので、他の年は1バイトも変わらない
+        （2018〜2026年を再生成して確かめてある）。
+        ★★**当て推量ではないことは、下の検算3（記事の本文が書いている優勝校との
+        突き合わせ）で確かめている** —— 本文は**紙とは別の場所から来る事実**なので、
+        stem の読み違えはそこで必ず捕まる。
+      */
+      finalByStem: true,
+      /*
+        ★**この紙の決勝の得点は線から 27.9 離れている**（他の年は 22 で届く）。
+        ★**既定（`finalScoreReach`）を広げないこと** —— 2026-08-30 に決勝の得点の窓を
+        広げたら、**2024年春の決勝が別の数字に静かに入れ替わった。**
+        stem で読んだ決勝にだけ効く値を渡す。
+      */
+      finalScoreReachStem: 30,
     });
     if (process.env.AICHI_DEBUG) {
       console.log(`  [debug] ${built.games.length}試合 / 壊れ${built.broken.length}`);
@@ -5168,13 +5186,29 @@ const ishikawa = {
     ★3季とも同じページなので取得は1回で済ませる（`indexCache`）。
   */
   /*
-    ★★**夏だけ。** 春季・秋季（北信越地区の県大会）は同じPDFの中で
-    **準決勝以降だけ「打者ごとの成績まで入った箱スコア」に切り替わる**
-    （校名が枠の下の行ではなく**得点の行の中**にあり、`◆` の枠に
-    「天候不良により中止　順延」だけの空枠も混ざる）。
-    ★**読み方が2つ要るので、確かめてから足すこと。**
+    ★★★**春・夏・秋の3季**（春季・秋季は 2026-08-31 に追加）。
+
+    ~~春季・秋季は準決勝以降が「打者ごとの成績まで入った箱スコア」に切り替わるので
+    読み方が2つ要る~~ とあったのは**誤りだった。** 実際に紙を開いて確かめたところ、
+    **県大会の紙は3季とも同じ形**（`◆球場 第N試合` の枠・各回の得点・合計・
+    その下に正式な校名）で、**箱スコアは枠の右に足されるだけ。**
+    ★**夏の読み手が 2026-08-31 に「210 で打ち切る」を入れて既に対応済み**
+    （準々決勝以降は夏の紙でも箱スコアになる）。**足すだけで読めた。**
+    ★**季節を見分ける仕掛けも `readSheet` に前から入っていた**
+    （北信越の県大会は春も秋も同じ大会名なので、**紙の日付の月で決める**）。
+
+    ★★**「読み方が2つ要る」と書いてあっても、紙を開いて確かめること。**
+    滋賀の「スロット番号の行が無い」と同じで、**確かめずに書かれた見立て**だった。
+
+    ★**同じ索引に北信越の『本大会』の紙も並ぶ**（`北信越地区高等学校野球大会`）。
+    そちらは**他県の学校が出る**ので取らない —— `collect` の pattern が
+    `北信越地区高等学校野球石川県大会` を求めているので混ざらない。
   */
-  seasons: { summer: "https://ishikawa-hbf.jp/?page_id=29" },
+  seasons: {
+    spring: "https://ishikawa-hbf.jp/?page_id=29",
+    summer: "https://ishikawa-hbf.jp/?page_id=29",
+    autumn: "https://ishikawa-hbf.jp/?page_id=29",
+  },
   indexCache: new Map(),
   /**
    * 「過去データ」を年の見出し（`<h1 class="entry-title2">2015年</h1>`）で切り、
@@ -5280,6 +5314,22 @@ const ishikawa = {
     if (isSummer !== (season === "summer")) return null;
 
     const ROUNDS = new Set(["1回戦", "2回戦", "3回戦", "4回戦", "準々決勝", "準決勝", "決勝"]);
+    /*
+      ★★★**代表決定戦は勝ち抜きの枝ではないので出さない**（2026-08-31。秋季）。
+
+        準決勝 → **代表決定戦** → 決勝   （紙の見出しがこの順で刷ってある）
+
+      北信越の県大会は**3校が地区大会へ進む**ので、準決勝で負けた2校が
+      **第3代表を決める試合**をする。★**紙が見出しで名指ししている**ので
+      推測ではない（3位決定戦を出さない宮崎・沖縄・愛知・岐阜と同じ扱い）。
+
+      ★**見出しを知らないままだと `round` が「準決勝」のまま**になり、
+      **準決勝が3試合**になって「決勝に出ていない前の回戦の勝者がある（星稜）」で
+      **その大会を丸ごと落としていた。**
+      ★**「読めない」ではなく「読んだうえで出さない」**ので、件数はログに出す。
+    */
+    const SKIP_ROUNDS = new RegExp("^(第?[0-9０-９]*代表決定戦|[0-9０-９]位決定戦|三位決定戦)$");
+    const SKIP = "__出さない__";
     /** `6x` `X` `１２` を数にする。**`Number("6x")` は NaN なので直に渡さない** */
     const score = (t) => {
       const s = normalize(t.trim());
@@ -5295,6 +5345,8 @@ const ishikawa = {
     };
 
     const games = [];
+    /** 読んだが出さない試合（代表決定戦）。件数と中身を必ずログに出す */
+    const skipped = [];
     // ★回戦と日付は**ページをまたいで続く**。ページごとに捨てないこと
     let round = null;
     let date = null;
@@ -5308,6 +5360,10 @@ const ishikawa = {
         const text = normalize(line.items.map((it) => it.text.trim()).join(""));
         if (ROUNDS.has(text)) {
           round = text;
+          continue;
+        }
+        if (SKIP_ROUNDS.test(text)) {
+          round = SKIP;
           continue;
         }
         const d = parseDate(text);
@@ -5472,6 +5528,15 @@ const ishikawa = {
             );
             return [];
           }
+          /*
+            ★**代表決定戦はここまで読んだうえで出さない**（上の `SKIP_ROUNDS`）。
+            ★**読まずに飛ばさないこと** —— 枠の検算（イニングの和＝合計）は
+            通しておきたいし、読めない枠があるなら大会ごと落としたい。
+          */
+          if (round === SKIP) {
+            skipped.push(`${date} ${names[0]} ${sides[0].total} - ${sides[1].total} ${names[1]}`);
+            continue;
+          }
           games.push({
             date,
             season,
@@ -5559,7 +5624,47 @@ const ishikawa = {
       やぐら表の「優勝 ◯◯」（同じPDFの1ページ目）と、連盟のお知らせの見出し。
       ★**お知らせは今年ぶんしか残らない**ので、無ければ紙の中の検算だけで判定する。
     */
-    const printedChampion = flat.map((t) => t.match(/^優勝\s*(\S+)$/)?.[1]).find(Boolean);
+    /*
+      ★★★**「優勝」の行は紙に2つある**（2026-08-31。秋季の紙で分かった）。
+
+        優勝  9:00        ← 中央の枠の見出しで、隣は**試合開始時刻**
+        優勝  小松大谷    ← こちらが優勝校
+
+      ★**先に見つかったほうを採ると、優勝校が `9:00` になる**
+      （実際に「優勝校が一致しない（表「9:00」）」で秋季が丸ごと落ちていた）。
+      ★**落とすのは時刻と裸の数字だけ。** 「校名らしいほう」を選ばないこと
+      —— それをやると、**決勝の勝者と突き合わせる検算が骨抜きになる。**
+      ★★**残った候補が2つ以上あるなら、優勝校は読めなかったものとして扱う**
+      （紙の中の検算だけで判定する。**当てない**）。
+    */
+    const isClock = (v) =>
+      new RegExp("^[0-9０-９]+[:：][0-9０-９]+$").test(v) || new RegExp("^[0-9０-９]+$").test(v);
+    const printedCandidates = [
+      ...new Set(
+        flat
+          .map((t) => t.match(/^優勝\s*(\S+)$/)?.[1])
+          /*
+            ★**「優勝」と「準優勝」が1行に組まれている紙がある**（春季の紙）——
+            `優勝 小松工業 準優勝 金沢` が1行になり `小松工業準優勝金沢` と読める。
+            ★**準優勝から後ろを落とす。** 同じ優勝校なのに候補が2つに割れて、
+            せっかくの突き合わせを取りやめてしまうため。
+          */
+          .map((v) => (v ? v.split("準優勝")[0] : v))
+          /*
+            ★**先頭の区切り記号を落とす**（`優勝：小松大谷` と書く年がある）。
+            落とさないと `：小松大谷` と `小松大谷` が別の候補になり、
+            **同じ優勝校なのに突き合わせを取りやめてしまう**（令和3年度春季）。
+          */
+          .map((v) => (v ? v.replace(new RegExp("^[：:・]+"), "") : v))
+          .filter((v) => v && !isClock(v)),
+      ),
+    ];
+    if (printedCandidates.length > 1) {
+      console.log(
+        `  ⚠️ 石川: 紙の「優勝」が2つ以上ある（${printedCandidates.join("・")}）。表との突き合わせはしない`,
+      );
+    }
+    const printedChampion = printedCandidates.length === 1 ? printedCandidates[0] : null;
     const same = (a, b) => Boolean(a) && Boolean(b) && (a.includes(b) || b.includes(a));
     if ((announced && !same(announced, champion)) || (printedChampion && !same(printedChampion, champion))) {
       console.log(
@@ -5569,7 +5674,9 @@ const ishikawa = {
       return [];
     }
     console.log(
-      `  （${tournament}: ${games.length} 試合 / 優勝 ${champion} / ${entries.size} チーム・**スコア表から**）`,
+      `  （${tournament}: ${games.length} 試合 / 優勝 ${champion} / ${entries.size} チーム・**スコア表から**` +
+        (skipped.length ? ` / 代表決定戦 ${skipped.length} 件は出さない（${skipped.join("・")}）` : "") +
+        "）",
     );
     return games;
   },
@@ -5943,18 +6050,68 @@ const gifu = {
     */
     const fold = (s) => s.replace(/商業$/, "商").replace(/工業$/, "工").replace(/農業$/, "農").replace(/学園$/, "");
     const teams = new Set(games.flatMap((g) => g.teams.map((t) => fold(t.display))));
+    if (process.env.GIFU_DEBUG) {
+      console.log(`  [debug] ${tournamentName}: ${games.length}試合 / ${teams.size}チーム`);
+      for (const g of [...games].sort((x, y) => String(x.date).localeCompare(String(y.date))))
+        console.log(`  [debug]   ${g.date} ${g.round ?? "—"} ${g.venue ?? "—"} ${g.teams.map((t) => `${t.display} ${t.score}`).join(" - ")}`);
+    }
     /*
       引き分け再試合があるぶん、試合数はチーム数−1より多くなる。
       **引き分けを除いた決着した試合が チーム数−1** になるはず。
     */
-    const decided = games.filter((g) => g.teams[0].score !== g.teams[1].score).length;
-    if (teams.size - decided !== 1) {
+    let decided = games.filter((g) => g.teams[0].score !== g.teams[1].score);
+
+    /*
+      ★★★**3位決定戦を外す**（2026-08-31。春季で 24チームに 24試合になっていた）。
+
+        4/25 準決勝  県岐阜商 7 - 岐阜城北 0 ／ 帝京大可児 2 - 大垣日大 6
+        4/29        岐阜城北 3 - 帝京大可児 6   ← **両校ともすでに負けている**
+        4/29 決勝    県岐阜商 2 - 大垣日大 3    ← どちらも負けていない
+
+      ★**この出典は回戦を書いていない**（ファイル名の【準決勝】【決勝】だけ）ので、
+      **紙から「3位決定戦」と読むことはできない。**
+      ★★**代わりに勝ち抜きの性質から決める** —— 勝ち抜きでは、優勝校以外は
+      **ちょうど1度だけ負ける。** だから**両校ともそれ以前に負けている試合**は
+      勝ち抜きの枝ではない。★**当て推量ではなく、持っている試合から導ける。**
+
+      ★**外すのは、外した数がちょうど辻褄を合わせるときだけ。**
+      1つでも余れば今までどおり1試合も出さない（読み違えを見逃さないため）。
+      ★**引き分けは負けに数えない**（引き分け再試合があるため）。
+      ★**日付の無い試合は判定しない**（この出典は日付を必ず持つが、念のため）。
+    */
+    const excess = decided.length - (teams.size - 1);
+    let extra = [];
+    if (excess > 0) {
+      const lostOn = new Map();
+      for (const g of decided) {
+        const loser = fold(g.teams[0].score < g.teams[1].score ? g.teams[0].display : g.teams[1].display);
+        const prev = lostOn.get(loser);
+        if (!prev || String(g.date) < prev) lostOn.set(loser, String(g.date));
+      }
+      const alreadyLost = (g, side) => {
+        const d = lostOn.get(fold(side.display));
+        return Boolean(d) && Boolean(g.date) && d < String(g.date);
+      };
+      extra = decided.filter((g) => g.teams.every((t) => alreadyLost(g, t)));
+      if (extra.length === excess) {
+        decided = decided.filter((g) => !extra.includes(g));
+        games = games.filter((g) => !extra.includes(g));
+        for (const g of extra) {
+          console.log(
+            `  （岐阜: ${tournamentName} の ${g.date} ${g.teams.map((t) => `${t.display} ${t.score}`).join(" - ")} は` +
+              "両校ともすでに負けているので3位決定戦とみて出さない）",
+          );
+        }
+      }
+    }
+
+    if (teams.size - decided.length !== 1) {
       console.log(
-        `  ⚠️ 岐阜: ${teams.size} チームに対し決着した試合 ${decided}（${teams.size - 1} のはず）。1試合も出さない`,
+        `  ⚠️ 岐阜: ${teams.size} チームに対し決着した試合 ${decided.length}（${teams.size - 1} のはず）。1試合も出さない`,
       );
       return [];
     }
-    const draws = games.length - decided;
+    const draws = games.length - decided.length;
     console.log(
       `  （${tournamentName}: ${games.length} 試合 / ${teams.size} チーム` +
         (draws ? ` / 引き分け再試合 ${draws}` : "") + "・**日別のスコア表から**）",

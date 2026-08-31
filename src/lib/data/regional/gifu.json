@@ -5965,6 +5965,535 @@
           "slug": "gifushogyo"
         }
       ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "弘光舎レインボースタジアム",
+      "teams": [
+        {
+          "display": "大垣養老",
+          "score": 4,
+          "won": true,
+          "name": "大垣養老高校",
+          "slug": "ogakiyoro"
+        },
+        {
+          "display": "岐阜北",
+          "score": 0,
+          "won": false,
+          "name": "岐阜北高校",
+          "slug": "gifukita"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "弘光舎レインボースタジアム",
+      "teams": [
+        {
+          "display": "岐阜総合",
+          "score": 4,
+          "won": false,
+          "name": "岐阜総合学園高校",
+          "slug": "gifusogogakuen"
+        },
+        {
+          "display": "海津明誠",
+          "score": 5,
+          "won": true,
+          "name": "海津明誠高校",
+          "slug": "kaizumeisei"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "プリニーの野球場",
+      "teams": [
+        {
+          "display": "各務原西",
+          "score": 6,
+          "won": true,
+          "name": "各務原西高校",
+          "slug": "kakamigaharanishi"
+        },
+        {
+          "display": "益田清風",
+          "score": 5,
+          "won": false,
+          "name": "益田清風高校",
+          "slug": "mashitaseifu"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "プリニーの野球場",
+      "teams": [
+        {
+          "display": "大垣西",
+          "score": 12,
+          "won": true,
+          "name": "大垣西高校",
+          "slug": "ogakinishi"
+        },
+        {
+          "display": "岐阜各務野",
+          "score": 4,
+          "won": false,
+          "name": "岐阜各務野高校",
+          "slug": "gifukakamino"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "河上薬品スタジアム",
+      "teams": [
+        {
+          "display": "帝京大可児",
+          "score": 7,
+          "won": true,
+          "name": "帝京大可児",
+          "slug": null
+        },
+        {
+          "display": "長良",
+          "score": 6,
+          "won": false,
+          "name": "長良高校",
+          "slug": "nagara"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "河上薬品スタジアム",
+      "teams": [
+        {
+          "display": "岐阜第一",
+          "score": 7,
+          "won": true,
+          "name": "岐阜第一",
+          "slug": null
+        },
+        {
+          "display": "美濃加茂",
+          "score": 4,
+          "won": false,
+          "name": "美濃加茂",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "中津川公園野球場",
+      "teams": [
+        {
+          "display": "岐阜工業",
+          "score": 5,
+          "won": true,
+          "name": "岐阜工業高校",
+          "slug": "gifukogyo"
+        },
+        {
+          "display": "麗澤瑞浪",
+          "score": 2,
+          "won": false,
+          "name": "麗澤瑞浪",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "中津川公園野球場",
+      "teams": [
+        {
+          "display": "関",
+          "score": 6,
+          "won": false,
+          "name": "関高校",
+          "slug": "seki"
+        },
+        {
+          "display": "土岐商業",
+          "score": 7,
+          "won": true,
+          "name": "土岐商業高校",
+          "slug": "tokishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "プリニーの野球場",
+      "teams": [
+        {
+          "display": "帝京大可児",
+          "score": 7,
+          "won": true,
+          "name": "帝京大可児",
+          "slug": null
+        },
+        {
+          "display": "関商工",
+          "score": 4,
+          "won": false,
+          "name": "関商工高校",
+          "slug": "sekishoko"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "プリニーの野球場",
+      "teams": [
+        {
+          "display": "岐阜工",
+          "score": 0,
+          "won": false,
+          "name": "岐阜工業高校",
+          "slug": "gifukogyo"
+        },
+        {
+          "display": "県岐阜商",
+          "score": 5,
+          "won": true,
+          "name": "岐阜商業高校",
+          "slug": "gifushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "大垣市北公園野球場",
+      "teams": [
+        {
+          "display": "大垣商業",
+          "score": 12,
+          "won": true,
+          "name": "大垣商業高校",
+          "slug": "ogakishogyo"
+        },
+        {
+          "display": "大垣養老",
+          "score": 7,
+          "won": false,
+          "name": "大垣養老高校",
+          "slug": "ogakiyoro"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "大垣市北公園野球場",
+      "teams": [
+        {
+          "display": "土岐商業",
+          "score": 1,
+          "won": false,
+          "name": "土岐商業高校",
+          "slug": "tokishogyo"
+        },
+        {
+          "display": "岐阜城北",
+          "score": 4,
+          "won": true,
+          "name": "岐阜城北高校",
+          "slug": "gifujohoku"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "河上薬品スタジアム",
+      "teams": [
+        {
+          "display": "各務原西",
+          "score": 0,
+          "won": false,
+          "name": "各務原西高校",
+          "slug": "kakamigaharanishi"
+        },
+        {
+          "display": "大垣日大",
+          "score": 11,
+          "won": true,
+          "name": "大垣日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "河上薬品スタジアム",
+      "teams": [
+        {
+          "display": "加茂農林",
+          "score": 4,
+          "won": false,
+          "name": "加茂農林高校",
+          "slug": "gifu-kamonorin"
+        },
+        {
+          "display": "海津明誠",
+          "score": 7,
+          "won": true,
+          "name": "海津明誠高校",
+          "slug": "kaizumeisei"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "中津川公園野球場",
+      "teams": [
+        {
+          "display": "大垣西",
+          "score": 2,
+          "won": false,
+          "name": "大垣西高校",
+          "slug": "ogakinishi"
+        },
+        {
+          "display": "多治見工業",
+          "score": 9,
+          "won": true,
+          "name": "多治見工業高校",
+          "slug": "tajimikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "中津川公園野球場",
+      "teams": [
+        {
+          "display": "岐阜第一",
+          "score": 1,
+          "won": false,
+          "name": "岐阜第一",
+          "slug": null
+        },
+        {
+          "display": "中京",
+          "score": 5,
+          "won": true,
+          "name": "中京",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "弘光舎レインボースタジアム",
+      "teams": [
+        {
+          "display": "大垣商業",
+          "score": 0,
+          "won": false,
+          "name": "大垣商業高校",
+          "slug": "ogakishogyo"
+        },
+        {
+          "display": "大垣日大",
+          "score": 8,
+          "won": true,
+          "name": "大垣日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "弘光舎レインボースタジアム",
+      "teams": [
+        {
+          "display": "中京",
+          "score": 0,
+          "won": false,
+          "name": "中京",
+          "slug": null
+        },
+        {
+          "display": "県岐阜商",
+          "score": 1,
+          "won": true,
+          "name": "岐阜商業高校",
+          "slug": "gifushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "大垣市北公園野球場",
+      "teams": [
+        {
+          "display": "帝京大可児",
+          "score": 3,
+          "won": true,
+          "name": "帝京大可児",
+          "slug": null
+        },
+        {
+          "display": "多治見工",
+          "score": 2,
+          "won": false,
+          "name": "多治見工業高校",
+          "slug": "tajimikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "大垣市北公園野球場",
+      "teams": [
+        {
+          "display": "海津明誠",
+          "score": 2,
+          "won": false,
+          "name": "海津明誠高校",
+          "slug": "kaizumeisei"
+        },
+        {
+          "display": "岐阜城北",
+          "score": 12,
+          "won": true,
+          "name": "岐阜城北高校",
+          "slug": "gifujohoku"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "弘光舎レインボースタジアム",
+      "teams": [
+        {
+          "display": "帝京大可児",
+          "score": 2,
+          "won": false,
+          "name": "帝京大可児",
+          "slug": null
+        },
+        {
+          "display": "大垣日大",
+          "score": 6,
+          "won": true,
+          "name": "大垣日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "弘光舎レインボースタジアム",
+      "teams": [
+        {
+          "display": "県岐阜商",
+          "score": 7,
+          "won": true,
+          "name": "岐阜商業高校",
+          "slug": "gifushogyo"
+        },
+        {
+          "display": "岐阜城北",
+          "score": 0,
+          "won": false,
+          "name": "岐阜城北高校",
+          "slug": "gifujohoku"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "season": "spring",
+      "tournament": "第73回春季東海地区高等学校野球岐阜県大会",
+      "round": null,
+      "venue": "弘光舎レインボースタジアム",
+      "teams": [
+        {
+          "display": "県岐阜商",
+          "score": 2,
+          "won": false,
+          "name": "岐阜商業高校",
+          "slug": "gifushogyo"
+        },
+        {
+          "display": "大垣日大",
+          "score": 3,
+          "won": true,
+          "name": "大垣日大",
+          "slug": null
+        }
+      ]
     }
   ]
 }

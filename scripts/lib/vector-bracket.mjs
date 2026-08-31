@@ -138,6 +138,29 @@ export function assembleVectorBracket({
     ★**準決勝の得点は x で外れる**ので、広げても取り違えない。
   */
   finalScoreReach = 8,
+  /*
+    ★★**決勝の横線が左右とも勝ち色で、しかも真ん中が描かれていない紙がある**
+    （2026-08-31。愛知の2017年春季）。**色でも接点でも勝った側が決まらない。**
+
+        赤 406.1→484.4 ｜ ← 28.2 の空き → ｜ 赤 512.6→566.8      （y=680.2）
+        赤の縦線 x=481.9 y=680.2→743.7                          ← 空きの左端に垂れている
+
+    ★★**垂れている縦線（stem）が勝った側の目印。**
+    ★**これは推測ではなく、読めている年の紙と同じ描き方**である ——
+    2024年春の紙は `赤 251.8→296.3 ｜ 黒 296.3→310.0 ｜ 赤 310.0→340.8` と
+    3本に分かれており、**縦線は色の変わり目（296.3）に垂れていて、
+    そこへ届いているほうの赤（左）が優勝校**（享栄）だった。
+    2017年春は**真ん中の黒が刷られていないだけ**で、縦線の役割は同じ。
+
+    ★**既定は `false`。** 渡さなければこの道は一度も通らないので、
+    富山も、色で決まる愛知の年も1バイトも変わらない。
+    ★**色で決まる紙ではそちらが優先**（この道は `findFinal()` が空のときだけ）。
+  */
+  finalByStem = false,
+  /** stem で読んだ決勝の得点だけ、線からの許容を変えたいとき（既定は finalScoreReach） */
+  finalScoreReachStem = null,
+  /** 左右の腕のあいだに許す空き（stem で読むときだけ使う） */
+  finalGapMax = 40,
   roundNames = ["1回戦", "2回戦", "3回戦", "準々決勝", "準決勝", "決勝"],
 }) {
   const isWin = (s) => s.color === winnerColor;
@@ -306,6 +329,46 @@ export function assembleVectorBracket({
       ),
     );
     return withStem[0] ?? found[0];
+  }
+
+  /**
+   * ★★**真ん中が描かれていない決勝を、垂れている縦線（stem）から読む。**
+   *   上の `finalByStem` の説明を読むこと。**`finalByStem` のときだけ呼ぶ。**
+   *
+   * ★**勝った側は「stem に届いているほうの腕」。** 色は見ない（左右とも勝ち色なので）。
+   * ★**両方に届く／どちらにも届かないときは決勝を出さない** ——
+   *   当てると別の学校が優勝校になる。出さなければ
+   *   「チーム数 − 試合数 = 1」に落ちて大会ごと出さないので、**嘘は画面に出ない。**
+   */
+  function findFinalByStem() {
+    const pageX = shapes.reduce((m, s) => Math.max(m, s.x2), 0);
+    const lo = pageX * 0.4;
+    const hi = pageX * 0.6;
+    const found = [];
+    for (const a of horiz) {
+      for (const b of horiz) {
+        if (a === b) continue;
+        const gap = b.x1 - a.x2;
+        if (gap <= 1.5 || gap > finalGapMax) continue;
+        if (a.x2 < lo || a.x2 > hi) continue;
+        if (Math.abs((a.y1 + a.y2) / 2 - (b.y1 + b.y2) / 2) > JOIN_GAP) continue;
+        // ★**両方とも勝ち色の腕だけ。** 片方が負け色なら上の色で決まる探し方が拾う
+        if (!isWin(a) || !isWin(b)) continue;
+        const y = (a.y1 + a.y2) / 2;
+        const stemAt = (x) =>
+          vert.some(
+            (v) =>
+              isWin(v) &&
+              Math.abs(v.x2 - x) < COL &&
+              (Math.abs(v.y1 - y) < JOIN_GAP || Math.abs(v.y2 - y) < JOIN_GAP),
+          );
+        const [l, r] = [stemAt(a.x2), stemAt(b.x1)];
+        if (l === r) continue;
+        found.push({ meet: l ? a.x2 : b.x1, y, left: a, right: b, leftWon: l });
+      }
+    }
+    // ★**1つに決まらなければ出さない**（紙に複数の候補があるなら読み違えている）
+    return found.length === 1 ? found[0] : null;
   }
 
   /**
@@ -509,18 +572,19 @@ export function assembleVectorBracket({
     ★決勝を足す。**左右それぞれの山をここまで辿って校名を出す。**
     スコアは中央の左右に置かれている（左の得点は合流点より左、右は右）。
   */
-  const final = findFinal();
+  const final = findFinal() ?? (finalByStem ? findFinalByStem() : null);
   if (final) {
     const round = Math.max(0, ...games.map((g) => g.round)) + 1;
+    const reach = final.leftWon === undefined ? finalScoreReach : (finalScoreReachStem ?? finalScoreReach);
     const near = (from, to) =>
       digits
-        .filter((d) => Math.abs(d.y - final.y) < finalScoreReach && d.x > from && d.x < to)
+        .filter((d) => Math.abs(d.y - final.y) < reach && d.x > from && d.x < to)
         .sort((p, q) => Math.abs(p.y - final.y) - Math.abs(q.y - final.y))[0]?.n ?? null;
     const leftName = nameAt(final.y, final.meet, "L");
     const rightName = nameAt(final.y, final.meet, "R");
     const leftScore = near(final.meet - 34, final.meet);
     const rightScore = near(final.meet, final.meet + 34);
-    const leftWon = isWin(final.left);
+    const leftWon = final.leftWon ?? isWin(final.left);
     games.push({
       round,
       roundName: roundNames[round - 1] ?? null,

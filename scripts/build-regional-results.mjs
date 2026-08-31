@@ -2384,6 +2384,68 @@ const niigata = {
   seasons: { spring: "haru", summer: "natu", autumn: "aki" },
   pageCache: new Map(),
   /**
+   * ★★★**過去大会のページは「年 × 春/夏/秋」の表**（2026-08-31 その5）。
+   *
+   *     <tr>
+   *       <td>令和７年（2025年）</td>
+   *       <td><p class="file_title">第152回</p><a …152haru…xlsx>全試合データ</a>…</td>  ← 春
+   *       <td><p class="file_title">第107回</p><a …107natu…xlsx>全試合データ</a>…</td>  ← 夏
+   *       <td><p class="file_title">第153回</p><a …153aki…xlsx>全試合データ</a>…</td>  ← 秋
+   *     </tr>
+   *
+   * ★★**年・季節・回数が表から直に取れる。** それまでは**ファイル名に
+   *   `haru`/`natu`/`aki` が入っているものを新しい順に3件**しか見ておらず、
+   *   **2021年以前のファイル（`103kekka_all.xlsx` など）が1件も拾えていなかった。**
+   * ★**表は2010年から48件ある**（うち `.xlsx` は21件。**`.xls` は `exceljs` で開けない**）。
+   * ★**列の順は見出しの春・夏・秋と同じ。確かめてから使うこと。**
+   */
+  pastEntries(html) {
+    if (!html) return [];
+    const out = [];
+    const head = html.split(new RegExp("<thead[^>]*>", "i"))[1]?.split(new RegExp("</thead>", "i"))[0] ?? "";
+    const cols = [...head.matchAll(new RegExp("<th[^>]*>([\\s\\S]*?)</th>", "gi"))].map((m) =>
+      normalize(plain(m[1])),
+    );
+    const order = ["spring", "summer", "autumn"];
+    const want = ["春季", "夏季", "秋季"];
+    const named = cols.filter((c) => /季大会/.test(c));
+    if (named.length !== 3 || !named.every((c, i) => c.includes(want[i]))) {
+      console.log("  ⚠️ 新潟: 過去大会の表の見出しが春・夏・秋の順でない。出典の作りが変わった可能性がある");
+      return [];
+    }
+    for (const row of html.split(new RegExp("<tr[^>]*>", "i")).slice(1)) {
+      const tds = row
+        .split(new RegExp("<td[^>]*>", "i"))
+        .slice(1)
+        .map((t) => t.split(new RegExp("</td>", "i"))[0]);
+      if (tds.length < 4) continue;
+      const year = Number(normalize(plain(tds[0])).match(new RegExp("[（(](\\d{4})年[）)]"))?.[1]);
+      if (!Number.isFinite(year)) continue;
+      for (const [k, td] of tds.slice(1, 4).entries()) {
+        const title = td.match(new RegExp('class="file_title"[^>]*>([\\s\\S]*?)<', "i"))?.[1] ?? "";
+        const no = Number(normalize(title).match(new RegExp("第(\\d+)回"))?.[1]);
+        const link = [
+          ...td.matchAll(new RegExp('<a[^>]+href="([^"]+\\.xlsx)"[^>]*>([\\s\\S]*?)</a>', "gi")),
+        ].find((m) => /全試合データ|試合結果/.test(normalize(plain(m[2]))));
+        if (!link || !Number.isFinite(no)) continue;
+        out.push({ year, season: order[k], no, url: link[1] });
+      }
+    }
+    return out;
+  },
+  /**
+   * ★**過去大会の名前は回数と年から組み立てる**（表に正式名称が無いため）。
+   * ★**回数は表から読んだもの**で、**年は開いたファイルの中の日付**。
+   *   どちらも当て推量ではない（**回数から年を出さない**という前からの規則は守っている）。
+   * ★**今年度の大会は今までどおり `tournamentlist/` の見出しから取る**
+   *   （まだ過去大会の表に載らないため）。
+   */
+  nameOf(no, year, season) {
+    if (season === "summer") return `第${no}回全国高等学校野球選手権新潟大会`;
+    const label = season === "spring" ? "春季" : "秋季";
+    return `第${no}回北信越地区高等学校野球新潟県大会（令和${year - 2018}年度${label}）`;
+  },
+  /**
    * 県大会ではないシート。
    * ★**「本大会」を忘れないこと。** 春のファイルには北信越本大会のシートが
    * 入っており、外さないと**星稜・敦賀気比・佐久長聖が「新潟の地方大会」に出てくる。**
@@ -2424,13 +2486,24 @@ const niigata = {
       )
       .filter((l) => new RegExp(`\\d+${url}`, "i").test(l.url));
 
+    /*
+      ★★★**過去の大会は「年 × 春/夏/秋」の表から1つだけ選ぶ**（2026-08-31 その5）。
+      表に年・季節・回数が書いてあるので、**開く前にどのファイルかが決まる**
+      （出典に取りに行くのは1大会につき1ファイル）。
+      ★**今年度の大会はまだ表に載らない**ので、そのときだけ今までどおり
+      `tournamentlist/` の見出しから名前を取って、新しい順に3件まで開く。
+    */
+    const past = this.pastEntries(archive).find((e) => e.season === season && e.year === year);
+    const candidates = past
+      ? [{ url: past.url, tournament: this.nameOf(past.no, past.year, past.season) }]
+      : links.slice(0, 3).map((l) => ({ url: l.url, tournament }));
+
     const games = [];
     /*
-      **年が合うファイルを1つだけ読む。** 一覧には過去10年ぶんが並んでいるので、
-      全部開くと1回の実行で何十ファイルにもなる。新しい順に見て、
-      中の日付が指定の年ならそれを使い、違えば次を見る（3つまで）。
+      **年が合うファイルだけを使う。** 表の年とファイルの中の日付は別の場所から来るので、
+      **食い違えばそのファイルは使わない**（連盟が貼り違えていたらここで止まる）。
     */
-    for (const link of links.slice(0, 3)) {
+    for (const link of candidates) {
       const sheets = await fetchXlsxSheets(link.url, { headers: UA });
       await sleep(this.politenessMs ?? 1500);
       if (!sheets) continue;
@@ -2453,7 +2526,23 @@ const niigata = {
             date = `${y}-${d[2].padStart(2, "0")}-${d[3].padStart(2, "0")}`;
             continue;
           }
-          if (cells.some((c) => /^第\d+試合$/.test(c))) {
+          /*
+            ★★★**決勝の行だけ「第N試合」が無い紙がある**（2026-08-31 その5。2021年夏）。
+
+                大会　第 13 日目  令和3年7月27日（火）
+                | HARD OFF | 決勝戦 |          ← **第N試合が無い**
+
+            ★**そのままだと `gameRow` が前の準決勝のままになり、
+            決勝が「準決勝」として画面に出る**（実際に出ていた。準決勝が3試合になる）。
+            ★**回戦の名前そのものが書いてある行も見出しとして扱う。**
+          */
+          if (
+            cells.some(
+              (c) =>
+                new RegExp("^第\d+試合$").test(c) ||
+                new RegExp("^(決勝|準決勝|準々決勝|[0-9]+回戦)戦?$").test(c.replace(/[\s　]/g, "")),
+            )
+          ) {
             gameRow = cells;
             continue;
           }
@@ -2496,7 +2585,7 @@ const niigata = {
             found.push({
               date,
               season,
-              tournament,
+              tournament: link.tournament,
               round: pickRound(head.join(" ")),
               venue: head.find((c) => c && !/^第\d+試合$/.test(c) && !/回戦|決勝/.test(c)) ?? null,
               teams: [
@@ -2508,8 +2597,23 @@ const niigata = {
           i += 2;
         }
       }
-      if (fileYear === year) {
-        games.push(...found);
+      /*
+        ★★★**1つのファイルに2つの年が入っていることがある**（2026-08-31 その5）。
+        2023年春（第148回）の `1~2回戦` シートには **令和5年4月の行と令和6年4月の行**が
+        両方あり、そのまま採ると**2024年の19試合が2023年の大会に混ざる。**
+        ★**「ファイルの最後に見た日付」で丸ごと判定していた**ので気づけなかった。
+        ★★**試合ごとに日付の年を見て、表が言う年と合うものだけ採る。**
+        ★**日付の無い試合は採らない**（この出典は必ず日付を持つ）。
+      */
+      const ofYear = found.filter((g) => g.date && Number(g.date.slice(0, 4)) === year);
+      if (ofYear.length !== found.length) {
+        console.log(
+          `  （新潟: ${link.tournament} は ${found.length} 試合のうち ${found.length - ofYear.length} 試合が` +
+            `${year} 年の日付でないので採らない）`,
+        );
+      }
+      if (ofYear.length) {
+        games.push(...ofYear);
         break;
       }
     }
@@ -5577,16 +5681,28 @@ const ishikawa = {
 
         /*
           校名の行。**ラベル列（枠の左端から 10〜35）に何も無い**行で、
-          先攻（+41 付近）と後攻（+106 付近）の2つが並ぶ。
+          先攻と後攻の2つが並ぶ。
           あいだに「（5回コールド）」の行が入ることがあるので、少し下まで探す。
+
+          ★★★**校名の列は縮尺を掛けてもぴったり揃わない**（2026-08-31 その5）。
+          40枚の紙で実測すると **1つ目 37〜56・2つ目 98〜124**（縮尺で割った値）。
+
+              2026年夏 … 41 / 106      2004年春 … 47 / 118
+              2015年夏 … 37 / 104      2001年夏 … 50 / 121
+
+          ★**古い紙ほど外に出る。** 既定の 36〜50 / 100〜115 では
+          **2000〜2006年の紙が「校名の行が読めない」で丸ごと落ちていた。**
+          ★**実測の幅に合わせて広げてある。これ以上広げないこと** ——
+          広げると「投手 ◯◯ ◯◯」の行を校名の行と取り違える。
         */
+        const NAME_WINDOW = [34, 130];
         // ★**枠ごとに回戦が違うことがある**（1行に見出しが2つ並ぶ紙）
         const roundOfFirst = roundAt(marks[0].x);
         let nameRow = null;
         for (let k = i + 3; k < Math.min(i + 8, lines.length); k++) {
           const off = lines[k].items.map((it) => (it.x - marks[0].x) / scale);
           if (off.some((o) => o >= 10 && o <= 35)) continue;
-          if (off.some((o) => o >= 36 && o <= 50) && off.some((o) => o >= 100 && o <= 115)) {
+          if (off.some((o) => o >= 34 && o <= 60) && off.some((o) => o >= 95 && o <= 130)) {
             nameRow = lines[k];
             break;
           }
@@ -5647,7 +5763,7 @@ const ishikawa = {
               : [];
             return { innings, total: totalCell?.v ?? null };
           });
-          const names = at(nameRow, 36, 115).map((it) => it.text.trim());
+          const names = at(nameRow, NAME_WINDOW[0], NAME_WINDOW[1]).map((it) => it.text.trim());
           if (names.length !== 2 || sides.some((s) => s.total === null || !s.innings.length)) {
             console.log(`  ⚠️ 石川: 読めない枠がある（${round}・${date}）。1試合も出さない`);
             return [];

@@ -48,7 +48,26 @@ const ROW_TOLERANCE = 3;
  *
  *   ★**足しただけで、既存の読み手は誰も見ていない**（x と text しか使っていない）。
  */
-export async function pdfPages(data) {
+/**
+ * ★★**行にまとめる幅を呼ぶ側から渡せる**（2026-09-01。大分の過去年のため）。
+ *
+ *   既定の 3 は「表の罫線の中で数字が少し上下する」ぶんを吸収するための値で、
+ *   ほとんどの紙ではこれでよい。
+ *
+ *   ★**枝の位置を測る紙では、この吸収が邪魔になることがある。**
+ *   大分の古いやぐら表は**スロットの間隔が 15.3 ポイント**しかなく、
+ *   3 ポイントは **0.2 スロット**にあたる。まとめの鍵は「先に見つけた行の y」なので、
+ *   近い行が数珠つなぎになると**スロットの 0.2 ぶんずれる**
+ *   （実測：得点の断片は 42.95 にあるのに、行の y は 45.1 になっていた）。
+ *   **その 0.2 スロットで「2つずつの中点が境目に乗る」検査が落ちる。**
+ *
+ *   ★**小さくすると本文の行はばらばらになる**（見出しや注記が1文字ずつの行になる）。
+ *   **本文は既定の幅で、枝は細かい幅で、と2回読むこと**
+ *   （大分の `readArchiveSheet` がそうしている）。
+ *
+ * @param rowTolerance 同じ行とみなす y の差。**既定は今までどおり 3**
+ */
+export async function pdfPages(data, { rowTolerance = ROW_TOLERANCE } = {}) {
   const doc = await getDocument({ data, useSystemFonts: true }).promise;
   const pages = [];
   for (let p = 1; p <= doc.numPages; p++) {
@@ -62,7 +81,7 @@ export async function pdfPages(data) {
       const x = item.transform[4];
       const y = item.transform[5];
       // 近い y の行があればそこに入れる（無ければ新しい行）
-      const key = [...rows.keys()].find((k) => Math.abs(k - y) <= ROW_TOLERANCE) ?? y;
+      const key = [...rows.keys()].find((k) => Math.abs(k - y) <= rowTolerance) ?? y;
       if (!rows.has(key)) rows.set(key, []);
       rows.get(key).push({ x, width: item.width, text: item.str });
     }

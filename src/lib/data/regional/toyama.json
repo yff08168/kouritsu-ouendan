@@ -6,6 +6,4028 @@
   "games": [
     {
       "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "不二越工業",
+          "score": 17,
+          "won": true,
+          "name": "不二越工業",
+          "slug": null
+        },
+        {
+          "display": "新湊",
+          "score": 12,
+          "won": false,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津",
+          "score": 9,
+          "won": true,
+          "name": "魚津高校",
+          "slug": "uozu"
+        },
+        {
+          "display": "富山南",
+          "score": 0,
+          "won": false,
+          "name": "富山南高校",
+          "slug": "toyamaminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大門",
+          "score": 7,
+          "won": true,
+          "name": "大門高校",
+          "slug": "daimon"
+        },
+        {
+          "display": "富山いずみ",
+          "score": 3,
+          "won": false,
+          "name": "富山いずみ高校",
+          "slug": "toyamaizumi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "未来富山",
+          "score": 36,
+          "won": true,
+          "name": "未来富山",
+          "slug": null
+        },
+        {
+          "display": "中央農業",
+          "score": 0,
+          "won": false,
+          "name": "中央農業高校",
+          "slug": "toyama-chuonogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 3,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        },
+        {
+          "display": "石動",
+          "score": 2,
+          "won": false,
+          "name": "石動高校",
+          "slug": "isurugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 12,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "富山中部",
+          "score": 0,
+          "won": false,
+          "name": "富山中部高校",
+          "slug": "toyamachubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 7,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "高岡南",
+          "score": 0,
+          "won": false,
+          "name": "高岡南高校",
+          "slug": "takaokaminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山工業",
+          "score": 6,
+          "won": true,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        },
+        {
+          "display": "上市 雄山",
+          "score": 4,
+          "won": false,
+          "name": "上市 雄山",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡向陵",
+          "score": 3,
+          "won": true,
+          "name": "高岡向陵",
+          "slug": null
+        },
+        {
+          "display": "富山東",
+          "score": 0,
+          "won": false,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "不二越工業",
+          "score": 8,
+          "won": true,
+          "name": "不二越工業",
+          "slug": null
+        },
+        {
+          "display": "八尾 呉羽・富西 伏木",
+          "score": 6,
+          "won": false,
+          "name": "八尾 呉羽・富西 伏木",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高朋",
+          "score": 4,
+          "won": true,
+          "name": "高朋",
+          "slug": null
+        },
+        {
+          "display": "南砺福野",
+          "score": 2,
+          "won": false,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津",
+          "score": 7,
+          "won": true,
+          "name": "魚津高校",
+          "slug": "uozu"
+        },
+        {
+          "display": "魚津工業入善",
+          "score": 0,
+          "won": false,
+          "name": "魚津工業入善",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡",
+          "score": 11,
+          "won": true,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        },
+        {
+          "display": "福岡",
+          "score": 2,
+          "won": false,
+          "name": "福岡高校",
+          "slug": "toyama-fukuoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大門",
+          "score": 13,
+          "won": true,
+          "name": "大門高校",
+          "slug": "daimon"
+        },
+        {
+          "display": "砺波",
+          "score": 11,
+          "won": false,
+          "name": "砺波高校",
+          "slug": "tonami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山北部",
+          "score": 8,
+          "won": true,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        },
+        {
+          "display": "砺波工業",
+          "score": 2,
+          "won": false,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "氷見",
+          "score": 13,
+          "won": true,
+          "name": "氷見高校",
+          "slug": "himi"
+        },
+        {
+          "display": "小杉",
+          "score": 3,
+          "won": false,
+          "name": "小杉高校",
+          "slug": "kosugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "国際大付属",
+          "score": 13,
+          "won": true,
+          "name": "国際大付属",
+          "slug": null
+        },
+        {
+          "display": "高岡龍谷",
+          "score": 2,
+          "won": false,
+          "name": "高岡龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "未来富山",
+          "score": 3,
+          "won": true,
+          "name": "未来富山",
+          "slug": null
+        },
+        {
+          "display": "高岡工芸",
+          "score": 1,
+          "won": false,
+          "name": "高岡工芸高校",
+          "slug": "takaokakogei"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡第一",
+          "score": 10,
+          "won": true,
+          "name": "高岡第一",
+          "slug": null
+        },
+        {
+          "display": "富山",
+          "score": 0,
+          "won": false,
+          "name": "富山高校",
+          "slug": "toyama-toyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 10,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        },
+        {
+          "display": "滑川",
+          "score": 3,
+          "won": false,
+          "name": "滑川高校",
+          "slug": "namerikawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 10,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "富山高専",
+          "score": 3,
+          "won": false,
+          "name": "富山高専",
+          "slug": "toyama-kosen"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 8,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "新川",
+          "score": 1,
+          "won": false,
+          "name": "新川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 7,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "富山工業",
+          "score": 5,
+          "won": false,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "不二越工業",
+          "score": 10,
+          "won": true,
+          "name": "不二越工業",
+          "slug": null
+        },
+        {
+          "display": "高岡向陵",
+          "score": 9,
+          "won": false,
+          "name": "高岡向陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高朋",
+          "score": 6,
+          "won": true,
+          "name": "高朋",
+          "slug": null
+        },
+        {
+          "display": "魚津",
+          "score": 2,
+          "won": false,
+          "name": "魚津高校",
+          "slug": "uozu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡",
+          "score": 8,
+          "won": true,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        },
+        {
+          "display": "大門",
+          "score": 0,
+          "won": false,
+          "name": "大門高校",
+          "slug": "daimon"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "氷見",
+          "score": 7,
+          "won": true,
+          "name": "氷見高校",
+          "slug": "himi"
+        },
+        {
+          "display": "富山北部",
+          "score": 0,
+          "won": false,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "国際大付属",
+          "score": 6,
+          "won": true,
+          "name": "国際大付属",
+          "slug": null
+        },
+        {
+          "display": "未来富山",
+          "score": 1,
+          "won": false,
+          "name": "未来富山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡第一",
+          "score": 8,
+          "won": true,
+          "name": "高岡第一",
+          "slug": null
+        },
+        {
+          "display": "桜井",
+          "score": 0,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 10,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "富山第一",
+          "score": 3,
+          "won": false,
+          "name": "富山第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 5,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "不二越工業",
+          "score": 4,
+          "won": false,
+          "name": "不二越工業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高朋",
+          "score": 12,
+          "won": true,
+          "name": "高朋",
+          "slug": null
+        },
+        {
+          "display": "高岡",
+          "score": 7,
+          "won": false,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "氷見",
+          "score": 12,
+          "won": true,
+          "name": "氷見高校",
+          "slug": "himi"
+        },
+        {
+          "display": "国際大付属",
+          "score": 2,
+          "won": false,
+          "name": "国際大付属",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 6,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "高岡第一",
+          "score": 1,
+          "won": false,
+          "name": "高岡第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 9,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "高朋",
+          "score": 8,
+          "won": false,
+          "name": "高朋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 11,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "氷見",
+          "score": 5,
+          "won": false,
+          "name": "氷見高校",
+          "slug": "himi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 第96回春季富山県高等学校野球大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 7,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "高岡商業",
+          "score": 0,
+          "won": false,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石動",
+          "score": 4,
+          "won": true,
+          "name": "石動高校",
+          "slug": "isurugi"
+        },
+        {
+          "display": "高岡工芸",
+          "score": 3,
+          "won": false,
+          "name": "高岡工芸高校",
+          "slug": "takaokakogei"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山中部",
+          "score": 4,
+          "won": true,
+          "name": "富山中部高校",
+          "slug": "toyamachubu"
+        },
+        {
+          "display": "入善",
+          "score": 0,
+          "won": false,
+          "name": "入善高校",
+          "slug": "nyuzen"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "泊上射・富山工業",
+          "score": 12,
+          "won": true,
+          "name": "泊上射・富山工業",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "片山学園",
+          "score": 1,
+          "won": false,
+          "name": "片山学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山工業",
+          "score": 8,
+          "won": true,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        },
+        {
+          "display": "南砺福光",
+          "score": 1,
+          "won": false,
+          "name": "南砺福光",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高専本郷",
+          "score": 10,
+          "won": true,
+          "name": "高専本郷",
+          "slug": null
+        },
+        {
+          "display": "富山西",
+          "score": 0,
+          "won": false,
+          "name": "富山西高校",
+          "slug": "toyamanishi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡",
+          "score": 2,
+          "won": true,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        },
+        {
+          "display": "八尾",
+          "score": 0,
+          "won": false,
+          "name": "八尾高校",
+          "slug": "yatsuo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山・いずみ",
+          "score": 20,
+          "won": true,
+          "name": "富山・いずみ",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "中央農業",
+          "score": 0,
+          "won": false,
+          "name": "中央農業高校",
+          "slug": "toyama-chuonogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡第一",
+          "score": 8,
+          "won": true,
+          "name": "高岡第一",
+          "slug": null
+        },
+        {
+          "display": "小杉",
+          "score": 1,
+          "won": false,
+          "name": "小杉高校",
+          "slug": "kosugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "未来富山",
+          "score": 7,
+          "won": true,
+          "name": "未来富山",
+          "slug": null
+        },
+        {
+          "display": "砺波",
+          "score": 5,
+          "won": false,
+          "name": "砺波高校",
+          "slug": "tonami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南砺福野",
+          "score": 6,
+          "won": true,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        },
+        {
+          "display": "大門",
+          "score": 4,
+          "won": false,
+          "name": "大門高校",
+          "slug": "daimon"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高朋",
+          "score": 3,
+          "won": true,
+          "name": "高朋",
+          "slug": null
+        },
+        {
+          "display": "富山北部",
+          "score": 2,
+          "won": false,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "不二越・工業",
+          "score": 2,
+          "won": true,
+          "name": "不二越・工業",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "富山",
+          "score": 0,
+          "won": false,
+          "name": "富山高校",
+          "slug": "toyama-toyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波工業",
+          "score": 8,
+          "won": true,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        },
+        {
+          "display": "雄山",
+          "score": 3,
+          "won": false,
+          "name": "雄山高校",
+          "slug": "toyama-oyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滑川",
+          "score": 12,
+          "won": true,
+          "name": "滑川高校",
+          "slug": "namerikawa"
+        },
+        {
+          "display": "富山南",
+          "score": 0,
+          "won": false,
+          "name": "富山南高校",
+          "slug": "toyamaminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 9,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "伏木",
+          "score": 2,
+          "won": false,
+          "name": "伏木高校",
+          "slug": "fushiki"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石動",
+          "score": 5,
+          "won": true,
+          "name": "石動高校",
+          "slug": "isurugi"
+        },
+        {
+          "display": "富山中部",
+          "score": 2,
+          "won": false,
+          "name": "富山中部高校",
+          "slug": "toyamachubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新湊",
+          "score": 12,
+          "won": true,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        },
+        {
+          "display": "高岡西",
+          "score": 5,
+          "won": false,
+          "name": "高岡西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山工業",
+          "score": 7,
+          "won": true,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        },
+        {
+          "display": "泊上射・富山工業",
+          "score": 3,
+          "won": false,
+          "name": "泊上射・富山工業",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 9,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        },
+        {
+          "display": "高岡南",
+          "score": 2,
+          "won": false,
+          "name": "高岡南高校",
+          "slug": "takaokaminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡",
+          "score": 13,
+          "won": true,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        },
+        {
+          "display": "高専本郷",
+          "score": 12,
+          "won": false,
+          "name": "高専本郷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津",
+          "score": 5,
+          "won": true,
+          "name": "魚津高校",
+          "slug": "uozu"
+        },
+        {
+          "display": "魚津工業",
+          "score": 3,
+          "won": false,
+          "name": "魚津工業高校",
+          "slug": "uozukogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡第一",
+          "score": 8,
+          "won": true,
+          "name": "高岡第一",
+          "slug": null
+        },
+        {
+          "display": "富山・いずみ",
+          "score": 0,
+          "won": false,
+          "name": "富山・いずみ",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "国際大・付属",
+          "score": 3,
+          "won": true,
+          "name": "国際大・付属",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "福岡",
+          "score": 1,
+          "won": false,
+          "name": "福岡高校",
+          "slug": "toyama-fukuoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南砺福野",
+          "score": 10,
+          "won": true,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        },
+        {
+          "display": "未来富山",
+          "score": 0,
+          "won": false,
+          "name": "未来富山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "氷見",
+          "score": 7,
+          "won": true,
+          "name": "氷見高校",
+          "slug": "himi"
+        },
+        {
+          "display": "水橋",
+          "score": 4,
+          "won": false,
+          "name": "水橋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "不二越・工業",
+          "score": 7,
+          "won": true,
+          "name": "不二越・工業",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "高朋",
+          "score": 0,
+          "won": false,
+          "name": "高朋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 5,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "呉羽",
+          "score": 2,
+          "won": false,
+          "name": "呉羽高校",
+          "slug": "kureha"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波工業",
+          "score": 3,
+          "won": true,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        },
+        {
+          "display": "滑川",
+          "score": 2,
+          "won": false,
+          "name": "滑川高校",
+          "slug": "namerikawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 6,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "高岡龍谷",
+          "score": 0,
+          "won": false,
+          "name": "高岡龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山東",
+          "score": 12,
+          "won": true,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        },
+        {
+          "display": "新川",
+          "score": 2,
+          "won": false,
+          "name": "新川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 8,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "石動",
+          "score": 1,
+          "won": false,
+          "name": "石動高校",
+          "slug": "isurugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新湊",
+          "score": 2,
+          "won": true,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        },
+        {
+          "display": "富山工業",
+          "score": 1,
+          "won": false,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 12,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        },
+        {
+          "display": "高岡",
+          "score": 0,
+          "won": false,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡第一",
+          "score": 7,
+          "won": true,
+          "name": "高岡第一",
+          "slug": null
+        },
+        {
+          "display": "魚津",
+          "score": 5,
+          "won": false,
+          "name": "魚津高校",
+          "slug": "uozu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南砺福野",
+          "score": 6,
+          "won": true,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        },
+        {
+          "display": "国際大・付属",
+          "score": 1,
+          "won": false,
+          "name": "国際大・付属",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "不二越・工業",
+          "score": 5,
+          "won": true,
+          "name": "不二越・工業",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "氷見",
+          "score": 4,
+          "won": false,
+          "name": "氷見高校",
+          "slug": "himi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 11,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "砺波工業",
+          "score": 1,
+          "won": false,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山東",
+          "score": 4,
+          "won": true,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        },
+        {
+          "display": "富山第一",
+          "score": 0,
+          "won": false,
+          "name": "富山第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 8,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "新湊",
+          "score": 1,
+          "won": false,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡第一",
+          "score": 8,
+          "won": true,
+          "name": "高岡第一",
+          "slug": null
+        },
+        {
+          "display": "桜井",
+          "score": 1,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南砺福野",
+          "score": 4,
+          "won": true,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        },
+        {
+          "display": "不二越・工業",
+          "score": 3,
+          "won": false,
+          "name": "不二越・工業",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 6,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "富山東",
+          "score": 0,
+          "won": false,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 5,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "高岡第一",
+          "score": 0,
+          "won": false,
+          "name": "高岡第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 4,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "南砺福野",
+          "score": 3,
+          "won": false,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2018年 第90回春季富山県高等学校野球大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 7,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "富山商業",
+          "score": 4,
+          "won": false,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津工業",
+          "score": 9,
+          "won": true,
+          "name": "魚津工業高校",
+          "slug": "uozukogyo"
+        },
+        {
+          "display": "新川",
+          "score": 1,
+          "won": false,
+          "name": "新川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大門",
+          "score": 9,
+          "won": true,
+          "name": "大門高校",
+          "slug": "daimon"
+        },
+        {
+          "display": "富山北部",
+          "score": 3,
+          "won": false,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 10,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        },
+        {
+          "display": "高岡西",
+          "score": 0,
+          "won": false,
+          "name": "高岡西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "入善",
+          "score": 6,
+          "won": true,
+          "name": "入善高校",
+          "slug": "nyuzen"
+        },
+        {
+          "display": "雄山",
+          "score": 5,
+          "won": false,
+          "name": "雄山高校",
+          "slug": "toyama-oyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "八尾",
+          "score": 8,
+          "won": true,
+          "name": "八尾高校",
+          "slug": "yatsuo"
+        },
+        {
+          "display": "水橋",
+          "score": 3,
+          "won": false,
+          "name": "水橋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山西",
+          "score": 9,
+          "won": true,
+          "name": "富山西高校",
+          "slug": "toyamanishi"
+        },
+        {
+          "display": "福岡",
+          "score": 2,
+          "won": false,
+          "name": "福岡高校",
+          "slug": "toyama-fukuoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "呉羽",
+          "score": 15,
+          "won": true,
+          "name": "呉羽高校",
+          "slug": "kureha"
+        },
+        {
+          "display": "泊上市",
+          "score": 5,
+          "won": false,
+          "name": "泊上市",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "不二越・工業",
+          "score": 2,
+          "won": true,
+          "name": "不二越・工業",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "南砺福野",
+          "score": 1,
+          "won": false,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高朋",
+          "score": 20,
+          "won": true,
+          "name": "高朋",
+          "slug": null
+        },
+        {
+          "display": "中央農業",
+          "score": 0,
+          "won": false,
+          "name": "中央農業高校",
+          "slug": "toyama-chuonogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石動",
+          "score": 11,
+          "won": true,
+          "name": "石動高校",
+          "slug": "isurugi"
+        },
+        {
+          "display": "砺波",
+          "score": 4,
+          "won": false,
+          "name": "砺波高校",
+          "slug": "tonami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "片山学園",
+          "score": 10,
+          "won": true,
+          "name": "片山学園",
+          "slug": null
+        },
+        {
+          "display": "高岡南",
+          "score": 8,
+          "won": false,
+          "name": "高岡南高校",
+          "slug": "takaokaminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山",
+          "score": 4,
+          "won": true,
+          "name": "富山高校",
+          "slug": "toyama-toyama"
+        },
+        {
+          "display": "富山・いずみ",
+          "score": 0,
+          "won": false,
+          "name": "富山・いずみ",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡向陵",
+          "score": 4,
+          "won": true,
+          "name": "高岡向陵",
+          "slug": null
+        },
+        {
+          "display": "高岡工芸",
+          "score": 3,
+          "won": false,
+          "name": "高岡工芸高校",
+          "slug": "takaokakogei"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "伏木",
+          "score": 9,
+          "won": true,
+          "name": "伏木高校",
+          "slug": "fushiki"
+        },
+        {
+          "display": "高専射水",
+          "score": 2,
+          "won": false,
+          "name": "高専射水",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 14,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "富山中部",
+          "score": 4,
+          "won": false,
+          "name": "富山中部高校",
+          "slug": "toyamachubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 9,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "富山工業",
+          "score": 2,
+          "won": false,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津工業",
+          "score": 6,
+          "won": true,
+          "name": "魚津工業高校",
+          "slug": "uozukogyo"
+        },
+        {
+          "display": "大門",
+          "score": 5,
+          "won": false,
+          "name": "大門高校",
+          "slug": "daimon"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滑川",
+          "score": 9,
+          "won": true,
+          "name": "滑川高校",
+          "slug": "namerikawa"
+        },
+        {
+          "display": "高専本郷",
+          "score": 0,
+          "won": false,
+          "name": "高専本郷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 4,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        },
+        {
+          "display": "入善",
+          "score": 3,
+          "won": false,
+          "name": "入善高校",
+          "slug": "nyuzen"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新湊",
+          "score": 4,
+          "won": true,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        },
+        {
+          "display": "高岡龍谷",
+          "score": 0,
+          "won": false,
+          "name": "高岡龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山西",
+          "score": 5,
+          "won": true,
+          "name": "富山西高校",
+          "slug": "toyamanishi"
+        },
+        {
+          "display": "八尾",
+          "score": 4,
+          "won": false,
+          "name": "八尾高校",
+          "slug": "yatsuo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "氷見",
+          "score": 5,
+          "won": true,
+          "name": "氷見高校",
+          "slug": "himi"
+        },
+        {
+          "display": "魚津",
+          "score": 4,
+          "won": false,
+          "name": "魚津高校",
+          "slug": "uozu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "呉羽",
+          "score": 6,
+          "won": true,
+          "name": "呉羽高校",
+          "slug": "kureha"
+        },
+        {
+          "display": "不二越・工業",
+          "score": 4,
+          "won": false,
+          "name": "不二越・工業",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山東",
+          "score": 21,
+          "won": true,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        },
+        {
+          "display": "南砺福光",
+          "score": 2,
+          "won": false,
+          "name": "南砺福光",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高朋",
+          "score": 7,
+          "won": true,
+          "name": "高朋",
+          "slug": null
+        },
+        {
+          "display": "石動",
+          "score": 4,
+          "won": false,
+          "name": "石動高校",
+          "slug": "isurugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡",
+          "score": 8,
+          "won": true,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        },
+        {
+          "display": "富山南",
+          "score": 7,
+          "won": false,
+          "name": "富山南高校",
+          "slug": "toyamaminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山",
+          "score": 12,
+          "won": true,
+          "name": "富山高校",
+          "slug": "toyama-toyama"
+        },
+        {
+          "display": "片山学園",
+          "score": 0,
+          "won": false,
+          "name": "片山学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小杉",
+          "score": 7,
+          "won": true,
+          "name": "小杉高校",
+          "slug": "kosugi"
+        },
+        {
+          "display": "富山第一",
+          "score": 2,
+          "won": false,
+          "name": "富山第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡向陵",
+          "score": 3,
+          "won": true,
+          "name": "高岡向陵",
+          "slug": null
+        },
+        {
+          "display": "伏木",
+          "score": 1,
+          "won": false,
+          "name": "伏木高校",
+          "slug": "fushiki"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡第一",
+          "score": 7,
+          "won": true,
+          "name": "高岡第一",
+          "slug": null
+        },
+        {
+          "display": "国際大・付属",
+          "score": 6,
+          "won": false,
+          "name": "国際大・付属",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波工業",
+          "score": 3,
+          "won": true,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        },
+        {
+          "display": "富山商業",
+          "score": 0,
+          "won": false,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 12,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "魚津工業",
+          "score": 2,
+          "won": false,
+          "name": "魚津工業高校",
+          "slug": "uozukogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 10,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        },
+        {
+          "display": "滑川",
+          "score": 0,
+          "won": false,
+          "name": "滑川高校",
+          "slug": "namerikawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新湊",
+          "score": 11,
+          "won": true,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        },
+        {
+          "display": "富山西",
+          "score": 1,
+          "won": false,
+          "name": "富山西高校",
+          "slug": "toyamanishi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "呉羽",
+          "score": 5,
+          "won": true,
+          "name": "呉羽高校",
+          "slug": "kureha"
+        },
+        {
+          "display": "氷見",
+          "score": 0,
+          "won": false,
+          "name": "氷見高校",
+          "slug": "himi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高朋",
+          "score": 6,
+          "won": true,
+          "name": "高朋",
+          "slug": null
+        },
+        {
+          "display": "富山東",
+          "score": 2,
+          "won": false,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡",
+          "score": 5,
+          "won": true,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        },
+        {
+          "display": "富山",
+          "score": 2,
+          "won": false,
+          "name": "富山高校",
+          "slug": "toyama-toyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡向陵",
+          "score": 3,
+          "won": true,
+          "name": "高岡向陵",
+          "slug": null
+        },
+        {
+          "display": "小杉",
+          "score": 2,
+          "won": false,
+          "name": "小杉高校",
+          "slug": "kosugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波工業",
+          "score": 4,
+          "won": true,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        },
+        {
+          "display": "高岡第一",
+          "score": 3,
+          "won": false,
+          "name": "高岡第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 4,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "桜井",
+          "score": 1,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "呉羽",
+          "score": 2,
+          "won": true,
+          "name": "呉羽高校",
+          "slug": "kureha"
+        },
+        {
+          "display": "新湊",
+          "score": 1,
+          "won": false,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高朋",
+          "score": 4,
+          "won": true,
+          "name": "高朋",
+          "slug": null
+        },
+        {
+          "display": "高岡",
+          "score": 0,
+          "won": false,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波工業",
+          "score": 6,
+          "won": true,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        },
+        {
+          "display": "高岡向陵",
+          "score": 1,
+          "won": false,
+          "name": "高岡向陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 7,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "呉羽",
+          "score": 0,
+          "won": false,
+          "name": "呉羽高校",
+          "slug": "kureha"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波工業",
+          "score": 3,
+          "won": true,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        },
+        {
+          "display": "高朋",
+          "score": 1,
+          "won": false,
+          "name": "高朋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2017年 第89回春季富山県高等学校野球大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 5,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "砺波工業",
+          "score": 2,
+          "won": false,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山北部",
+          "score": 8,
+          "won": true,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        },
+        {
+          "display": "高岡向陵",
+          "score": 7,
+          "won": false,
+          "name": "高岡向陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡",
+          "score": 7,
+          "won": true,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        },
+        {
+          "display": "水橋",
+          "score": 6,
+          "won": false,
+          "name": "水橋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "国際大・付属",
+          "score": 9,
+          "won": true,
+          "name": "国際大・付属",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "高岡南",
+          "score": 4,
+          "won": false,
+          "name": "高岡南高校",
+          "slug": "takaokaminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "八尾",
+          "score": 6,
+          "won": true,
+          "name": "八尾高校",
+          "slug": "yatsuo"
+        },
+        {
+          "display": "高専射水",
+          "score": 4,
+          "won": false,
+          "name": "高専射水",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山",
+          "score": 6,
+          "won": true,
+          "name": "富山高校",
+          "slug": "toyama-toyama"
+        },
+        {
+          "display": "南砺福野",
+          "score": 1,
+          "won": false,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "氷見",
+          "score": 5,
+          "won": true,
+          "name": "氷見高校",
+          "slug": "himi"
+        },
+        {
+          "display": "高岡西",
+          "score": 4,
+          "won": false,
+          "name": "高岡西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山東",
+          "score": 6,
+          "won": true,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        },
+        {
+          "display": "砺波",
+          "score": 0,
+          "won": false,
+          "name": "砺波高校",
+          "slug": "tonami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡工芸",
+          "score": 9,
+          "won": true,
+          "name": "高岡工芸高校",
+          "slug": "takaokakogei"
+        },
+        {
+          "display": "高岡龍谷",
+          "score": 1,
+          "won": false,
+          "name": "高岡龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小杉",
+          "score": 9,
+          "won": true,
+          "name": "小杉高校",
+          "slug": "kosugi"
+        },
+        {
+          "display": "富山・いずみ",
+          "score": 4,
+          "won": false,
+          "name": "富山・いずみ",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "伏木",
+          "score": 10,
+          "won": true,
+          "name": "伏木高校",
+          "slug": "fushiki"
+        },
+        {
+          "display": "雄山",
+          "score": 0,
+          "won": false,
+          "name": "雄山高校",
+          "slug": "toyama-oyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石動",
+          "score": 13,
+          "won": true,
+          "name": "石動高校",
+          "slug": "isurugi"
+        },
+        {
+          "display": "富山西",
+          "score": 4,
+          "won": false,
+          "name": "富山西高校",
+          "slug": "toyamanishi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "呉羽",
+          "score": 8,
+          "won": true,
+          "name": "呉羽高校",
+          "slug": "kureha"
+        },
+        {
+          "display": "泊",
+          "score": 4,
+          "won": false,
+          "name": "泊",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 3,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        },
+        {
+          "display": "南砺福光",
+          "score": 1,
+          "won": false,
+          "name": "南砺福光",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大門",
+          "score": 12,
+          "won": true,
+          "name": "大門高校",
+          "slug": "daimon"
+        },
+        {
+          "display": "福岡",
+          "score": 1,
+          "won": false,
+          "name": "福岡高校",
+          "slug": "toyama-fukuoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滑川",
+          "score": 4,
+          "won": true,
+          "name": "滑川高校",
+          "slug": "namerikawa"
+        },
+        {
+          "display": "高岡第一",
+          "score": 2,
+          "won": false,
+          "name": "高岡第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新湊",
+          "score": 7,
+          "won": true,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        },
+        {
+          "display": "片山学園",
+          "score": 0,
+          "won": false,
+          "name": "片山学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡",
+          "score": 8,
+          "won": true,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        },
+        {
+          "display": "富山北部",
+          "score": 5,
+          "won": false,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 10,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "入善",
+          "score": 0,
+          "won": false,
+          "name": "入善高校",
+          "slug": "nyuzen"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "八尾",
+          "score": 7,
+          "won": true,
+          "name": "八尾高校",
+          "slug": "yatsuo"
+        },
+        {
+          "display": "国際大・付属",
+          "score": 6,
+          "won": false,
+          "name": "国際大・付属",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波工業",
+          "score": 3,
+          "won": true,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        },
+        {
+          "display": "不二越・工業",
+          "score": 2,
+          "won": false,
+          "name": "不二越・工業",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "氷見",
+          "score": 8,
+          "won": true,
+          "name": "氷見高校",
+          "slug": "himi"
+        },
+        {
+          "display": "富山",
+          "score": 4,
+          "won": false,
+          "name": "富山高校",
+          "slug": "toyama-toyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山中部",
+          "score": 6,
+          "won": true,
+          "name": "富山中部高校",
+          "slug": "toyamachubu"
+        },
+        {
+          "display": "高朋",
+          "score": 1,
+          "won": false,
+          "name": "高朋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山東",
+          "score": 5,
+          "won": true,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        },
+        {
+          "display": "高岡工芸",
+          "score": 2,
+          "won": false,
+          "name": "高岡工芸高校",
+          "slug": "takaokakogei"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山工業",
+          "score": 15,
+          "won": true,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        },
+        {
+          "display": "高専本郷",
+          "score": 5,
+          "won": false,
+          "name": "高専本郷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "伏木",
+          "score": 5,
+          "won": true,
+          "name": "伏木高校",
+          "slug": "fushiki"
+        },
+        {
+          "display": "小杉",
+          "score": 4,
+          "won": false,
+          "name": "小杉高校",
+          "slug": "kosugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津工業",
+          "score": 6,
+          "won": true,
+          "name": "魚津工業高校",
+          "slug": "uozukogyo"
+        },
+        {
+          "display": "新川",
+          "score": 5,
+          "won": false,
+          "name": "新川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石動",
+          "score": 12,
+          "won": true,
+          "name": "石動高校",
+          "slug": "isurugi"
+        },
+        {
+          "display": "呉羽",
+          "score": 2,
+          "won": false,
+          "name": "呉羽高校",
+          "slug": "kureha"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 30,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "中農上市",
+          "score": 0,
+          "won": false,
+          "name": "中農上市",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 10,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        },
+        {
+          "display": "大門",
+          "score": 6,
+          "won": false,
+          "name": "大門高校",
+          "slug": "daimon"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 8,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "魚津",
+          "score": 1,
+          "won": false,
+          "name": "魚津高校",
+          "slug": "uozu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滑川",
+          "score": 4,
+          "won": true,
+          "name": "滑川高校",
+          "slug": "namerikawa"
+        },
+        {
+          "display": "富山南",
+          "score": 0,
+          "won": false,
+          "name": "富山南高校",
+          "slug": "toyamaminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新湊",
+          "score": 8,
+          "won": true,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        },
+        {
+          "display": "高岡",
+          "score": 1,
+          "won": false,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 10,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "八尾",
+          "score": 3,
+          "won": false,
+          "name": "八尾高校",
+          "slug": "yatsuo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "氷見",
+          "score": 5,
+          "won": true,
+          "name": "氷見高校",
+          "slug": "himi"
+        },
+        {
+          "display": "砺波工業",
+          "score": 4,
+          "won": false,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山東",
+          "score": 6,
+          "won": true,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        },
+        {
+          "display": "富山中部",
+          "score": 5,
+          "won": false,
+          "name": "富山中部高校",
+          "slug": "toyamachubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山工業",
+          "score": 7,
+          "won": true,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        },
+        {
+          "display": "伏木",
+          "score": 0,
+          "won": false,
+          "name": "伏木高校",
+          "slug": "fushiki"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津工業",
+          "score": 6,
+          "won": true,
+          "name": "魚津工業高校",
+          "slug": "uozukogyo"
+        },
+        {
+          "display": "石動",
+          "score": 4,
+          "won": false,
+          "name": "石動高校",
+          "slug": "isurugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 4,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "桜井",
+          "score": 0,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 5,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "滑川",
+          "score": 0,
+          "won": false,
+          "name": "滑川高校",
+          "slug": "namerikawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 3,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "新湊",
+          "score": 2,
+          "won": false,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山東",
+          "score": 6,
+          "won": true,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        },
+        {
+          "display": "氷見",
+          "score": 5,
+          "won": false,
+          "name": "氷見高校",
+          "slug": "himi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津工業",
+          "score": 4,
+          "won": true,
+          "name": "魚津工業高校",
+          "slug": "uozukogyo"
+        },
+        {
+          "display": "富山工業",
+          "score": 3,
+          "won": false,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 11,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "高岡商業",
+          "score": 10,
+          "won": false,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 6,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "富山東",
+          "score": 1,
+          "won": false,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 9,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "魚津工業",
+          "score": 2,
+          "won": false,
+          "name": "魚津工業高校",
+          "slug": "uozukogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2015年 第87回春季富山県高等学校野球大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 3,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "富山第一",
+          "score": 1,
+          "won": false,
+          "name": "富山第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権富山大会",
       "round": "1回戦",
@@ -1336,7 +5358,7 @@
         },
         {
           "display": "富山中部",
-          "score": 9,
+          "score": 0,
           "won": false,
           "name": "富山中部高校",
           "slug": "toyamachubu"
@@ -1375,7 +5397,7 @@
       "teams": [
         {
           "display": "南砺福野",
-          "score": 0,
+          "score": 7,
           "won": true,
           "name": "南砺福野高校",
           "slug": "nantofukuno"
@@ -1428,7 +5450,7 @@
         },
         {
           "display": "魚津",
-          "score": 4,
+          "score": 1,
           "won": false,
           "name": "魚津高校",
           "slug": "uozu"
@@ -1474,7 +5496,7 @@
         },
         {
           "display": "高岡",
-          "score": 5,
+          "score": 1,
           "won": false,
           "name": "高岡高校",
           "slug": "takaoka"
@@ -1662,6 +5684,2867 @@
           "won": false,
           "name": "高岡商業高校",
           "slug": "takaokashogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 10,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "富山",
+          "score": 3,
+          "won": false,
+          "name": "富山高校",
+          "slug": "toyama-toyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石動",
+          "score": 10,
+          "won": true,
+          "name": "石動高校",
+          "slug": "isurugi"
+        },
+        {
+          "display": "高岡",
+          "score": 3,
+          "won": false,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 8,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "高朋",
+          "score": 5,
+          "won": false,
+          "name": "高朋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "不二越工業",
+          "score": 10,
+          "won": true,
+          "name": "不二越工業",
+          "slug": null
+        },
+        {
+          "display": "富山東",
+          "score": 4,
+          "won": false,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山高専",
+          "score": 7,
+          "won": true,
+          "name": "富山高専",
+          "slug": "toyama-kosen"
+        },
+        {
+          "display": "上市 雄山",
+          "score": 6,
+          "won": false,
+          "name": "上市 雄山",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡南",
+          "score": 7,
+          "won": true,
+          "name": "高岡南高校",
+          "slug": "takaokaminami"
+        },
+        {
+          "display": "小杉",
+          "score": 6,
+          "won": false,
+          "name": "小杉高校",
+          "slug": "kosugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 5,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        },
+        {
+          "display": "富山商業",
+          "score": 4,
+          "won": false,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南砺福野",
+          "score": 14,
+          "won": true,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        },
+        {
+          "display": "入善",
+          "score": 0,
+          "won": false,
+          "name": "入善高校",
+          "slug": "nyuzen"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津",
+          "score": 7,
+          "won": true,
+          "name": "魚津高校",
+          "slug": "uozu"
+        },
+        {
+          "display": "八尾",
+          "score": 2,
+          "won": false,
+          "name": "八尾高校",
+          "slug": "yatsuo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 10,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "新川",
+          "score": 3,
+          "won": false,
+          "name": "新川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "未来富山",
+          "score": 4,
+          "won": true,
+          "name": "未来富山",
+          "slug": null
+        },
+        {
+          "display": "新湊",
+          "score": 1,
+          "won": false,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山工業",
+          "score": 4,
+          "won": true,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        },
+        {
+          "display": "石動",
+          "score": 2,
+          "won": false,
+          "name": "石動高校",
+          "slug": "isurugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波",
+          "score": 14,
+          "won": true,
+          "name": "砺波高校",
+          "slug": "tonami"
+        },
+        {
+          "display": "大門",
+          "score": 3,
+          "won": false,
+          "name": "大門高校",
+          "slug": "daimon"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "氷見",
+          "score": 5,
+          "won": true,
+          "name": "氷見高校",
+          "slug": "himi"
+        },
+        {
+          "display": "高岡商業",
+          "score": 4,
+          "won": false,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山北部",
+          "score": 8,
+          "won": true,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        },
+        {
+          "display": "高岡工芸",
+          "score": 1,
+          "won": false,
+          "name": "高岡工芸高校",
+          "slug": "takaokakogei"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滑川",
+          "score": 8,
+          "won": true,
+          "name": "滑川高校",
+          "slug": "namerikawa"
+        },
+        {
+          "display": "砺波工業",
+          "score": 0,
+          "won": false,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "福岡",
+          "score": 6,
+          "won": true,
+          "name": "福岡高校",
+          "slug": "toyama-fukuoka"
+        },
+        {
+          "display": "中央農業・魚津工業",
+          "score": 3,
+          "won": false,
+          "name": "中央農業・魚津工業",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "不二越工業",
+          "score": 20,
+          "won": true,
+          "name": "不二越工業",
+          "slug": null
+        },
+        {
+          "display": "呉羽 富山南・富山西",
+          "score": 3,
+          "won": false,
+          "name": "呉羽 富山南・富山西",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡第一",
+          "score": 4,
+          "won": true,
+          "name": "高岡第一",
+          "slug": null
+        },
+        {
+          "display": "富山中部",
+          "score": 0,
+          "won": false,
+          "name": "富山中部高校",
+          "slug": "toyamachubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山いずみ",
+          "score": 5,
+          "won": true,
+          "name": "富山いずみ高校",
+          "slug": "toyamaizumi"
+        },
+        {
+          "display": "富山高専",
+          "score": 4,
+          "won": false,
+          "name": "富山高専",
+          "slug": "toyama-kosen"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "国際大付属",
+          "score": 5,
+          "won": true,
+          "name": "国際大付属",
+          "slug": null
+        },
+        {
+          "display": "高岡龍谷",
+          "score": 1,
+          "won": false,
+          "name": "高岡龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡南",
+          "score": 7,
+          "won": true,
+          "name": "高岡南高校",
+          "slug": "takaokaminami"
+        },
+        {
+          "display": "高岡向陵",
+          "score": 5,
+          "won": false,
+          "name": "高岡向陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 7,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        },
+        {
+          "display": "南砺福野",
+          "score": 6,
+          "won": false,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 11,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "魚津",
+          "score": 1,
+          "won": false,
+          "name": "魚津高校",
+          "slug": "uozu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山工業",
+          "score": 3,
+          "won": true,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        },
+        {
+          "display": "未来富山",
+          "score": 1,
+          "won": false,
+          "name": "未来富山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波",
+          "score": 5,
+          "won": true,
+          "name": "砺波高校",
+          "slug": "tonami"
+        },
+        {
+          "display": "氷見",
+          "score": 3,
+          "won": false,
+          "name": "氷見高校",
+          "slug": "himi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山北部",
+          "score": 7,
+          "won": true,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        },
+        {
+          "display": "滑川",
+          "score": 0,
+          "won": false,
+          "name": "滑川高校",
+          "slug": "namerikawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "福岡",
+          "score": 7,
+          "won": true,
+          "name": "福岡高校",
+          "slug": "toyama-fukuoka"
+        },
+        {
+          "display": "不二越工業",
+          "score": 4,
+          "won": false,
+          "name": "不二越工業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡第一",
+          "score": 15,
+          "won": true,
+          "name": "高岡第一",
+          "slug": null
+        },
+        {
+          "display": "富山いずみ",
+          "score": 0,
+          "won": false,
+          "name": "富山いずみ高校",
+          "slug": "toyamaizumi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "国際大付属",
+          "score": 11,
+          "won": true,
+          "name": "国際大付属",
+          "slug": null
+        },
+        {
+          "display": "高岡南",
+          "score": 7,
+          "won": false,
+          "name": "高岡南高校",
+          "slug": "takaokaminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 7,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "桜井",
+          "score": 3,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波",
+          "score": 5,
+          "won": true,
+          "name": "砺波高校",
+          "slug": "tonami"
+        },
+        {
+          "display": "富山工業",
+          "score": 4,
+          "won": false,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山北部",
+          "score": 7,
+          "won": true,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        },
+        {
+          "display": "福岡",
+          "score": 2,
+          "won": false,
+          "name": "福岡高校",
+          "slug": "toyama-fukuoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡第一",
+          "score": 11,
+          "won": true,
+          "name": "高岡第一",
+          "slug": null
+        },
+        {
+          "display": "国際大付属",
+          "score": 4,
+          "won": false,
+          "name": "国際大付属",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 6,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "砺波",
+          "score": 0,
+          "won": false,
+          "name": "砺波高校",
+          "slug": "tonami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山北部",
+          "score": 6,
+          "won": true,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        },
+        {
+          "display": "高岡第一",
+          "score": 3,
+          "won": false,
+          "name": "高岡第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2024年 第77回秋季富山県高等学校野球大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 15,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "富山北部",
+          "score": 1,
+          "won": false,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山東",
+          "score": 17,
+          "won": true,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        },
+        {
+          "display": "高専本郷",
+          "score": 1,
+          "won": false,
+          "name": "高専本郷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡南",
+          "score": 9,
+          "won": true,
+          "name": "高岡南高校",
+          "slug": "takaokaminami"
+        },
+        {
+          "display": "小杉",
+          "score": 1,
+          "won": false,
+          "name": "小杉高校",
+          "slug": "kosugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "不二越工業",
+          "score": 12,
+          "won": true,
+          "name": "不二越工業",
+          "slug": null
+        },
+        {
+          "display": "富山いずみ",
+          "score": 5,
+          "won": false,
+          "name": "富山いずみ高校",
+          "slug": "toyamaizumi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "伏木",
+          "score": 14,
+          "won": true,
+          "name": "伏木高校",
+          "slug": "fushiki"
+        },
+        {
+          "display": "呉羽",
+          "score": 7,
+          "won": false,
+          "name": "呉羽高校",
+          "slug": "kureha"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波工業",
+          "score": 2,
+          "won": true,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        },
+        {
+          "display": "南砺福野",
+          "score": 1,
+          "won": false,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山工業",
+          "score": 13,
+          "won": true,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        },
+        {
+          "display": "上市片山福岡福光",
+          "score": 0,
+          "won": false,
+          "name": "上市片山福岡福光",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新湊",
+          "score": 10,
+          "won": true,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        },
+        {
+          "display": "大門",
+          "score": 0,
+          "won": false,
+          "name": "大門高校",
+          "slug": "daimon"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波",
+          "score": 10,
+          "won": true,
+          "name": "砺波高校",
+          "slug": "tonami"
+        },
+        {
+          "display": "高岡西",
+          "score": 0,
+          "won": false,
+          "name": "高岡西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津工業",
+          "score": 9,
+          "won": true,
+          "name": "魚津工業高校",
+          "slug": "uozukogyo"
+        },
+        {
+          "display": "高岡",
+          "score": 1,
+          "won": false,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滑川",
+          "score": 18,
+          "won": true,
+          "name": "滑川高校",
+          "slug": "namerikawa"
+        },
+        {
+          "display": "高専射水",
+          "score": 2,
+          "won": false,
+          "name": "高専射水",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "水橋",
+          "score": 5,
+          "won": true,
+          "name": "水橋",
+          "slug": null
+        },
+        {
+          "display": "氷見",
+          "score": 0,
+          "won": false,
+          "name": "氷見高校",
+          "slug": "himi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "雄山",
+          "score": 11,
+          "won": true,
+          "name": "雄山高校",
+          "slug": "toyama-oyama"
+        },
+        {
+          "display": "中央農業",
+          "score": 0,
+          "won": false,
+          "name": "中央農業高校",
+          "slug": "toyama-chuonogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山",
+          "score": 7,
+          "won": true,
+          "name": "富山高校",
+          "slug": "toyama-toyama"
+        },
+        {
+          "display": "高岡龍谷",
+          "score": 0,
+          "won": false,
+          "name": "高岡龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 7,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "富山中部",
+          "score": 0,
+          "won": false,
+          "name": "富山中部高校",
+          "slug": "toyamachubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡南",
+          "score": 4,
+          "won": true,
+          "name": "高岡南高校",
+          "slug": "takaokaminami"
+        },
+        {
+          "display": "富山東",
+          "score": 2,
+          "won": false,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "未来富山",
+          "score": 10,
+          "won": true,
+          "name": "未来富山",
+          "slug": null
+        },
+        {
+          "display": "富山第一",
+          "score": 8,
+          "won": false,
+          "name": "富山第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "伏木",
+          "score": 5,
+          "won": true,
+          "name": "伏木高校",
+          "slug": "fushiki"
+        },
+        {
+          "display": "不二越工業",
+          "score": 2,
+          "won": false,
+          "name": "不二越工業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 12,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        },
+        {
+          "display": "高朋",
+          "score": 1,
+          "won": false,
+          "name": "高朋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山工業",
+          "score": 4,
+          "won": true,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        },
+        {
+          "display": "砺波工業",
+          "score": 1,
+          "won": false,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡向陵",
+          "score": 11,
+          "won": true,
+          "name": "高岡向陵",
+          "slug": null
+        },
+        {
+          "display": "高岡工芸",
+          "score": 1,
+          "won": false,
+          "name": "高岡工芸高校",
+          "slug": "takaokakogei"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新湊",
+          "score": 8,
+          "won": true,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        },
+        {
+          "display": "富山西",
+          "score": 1,
+          "won": false,
+          "name": "富山西高校",
+          "slug": "toyamanishi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新川",
+          "score": 9,
+          "won": true,
+          "name": "新川",
+          "slug": null
+        },
+        {
+          "display": "富山南",
+          "score": 8,
+          "won": false,
+          "name": "富山南高校",
+          "slug": "toyamaminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津工業",
+          "score": 13,
+          "won": true,
+          "name": "魚津工業高校",
+          "slug": "uozukogyo"
+        },
+        {
+          "display": "砺波",
+          "score": 11,
+          "won": false,
+          "name": "砺波高校",
+          "slug": "tonami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 3,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "国際大付属",
+          "score": 2,
+          "won": false,
+          "name": "国際大付属",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "水橋",
+          "score": 11,
+          "won": true,
+          "name": "水橋",
+          "slug": null
+        },
+        {
+          "display": "滑川",
+          "score": 1,
+          "won": false,
+          "name": "滑川高校",
+          "slug": "namerikawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石動",
+          "score": 8,
+          "won": true,
+          "name": "石動高校",
+          "slug": "isurugi"
+        },
+        {
+          "display": "八尾",
+          "score": 3,
+          "won": false,
+          "name": "八尾高校",
+          "slug": "yatsuo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山",
+          "score": 8,
+          "won": true,
+          "name": "富山高校",
+          "slug": "toyama-toyama"
+        },
+        {
+          "display": "雄山",
+          "score": 0,
+          "won": false,
+          "name": "雄山高校",
+          "slug": "toyama-oyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡第一",
+          "score": 21,
+          "won": true,
+          "name": "高岡第一",
+          "slug": null
+        },
+        {
+          "display": "富山北部",
+          "score": 0,
+          "won": false,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津",
+          "score": 10,
+          "won": true,
+          "name": "魚津高校",
+          "slug": "uozu"
+        },
+        {
+          "display": "入善",
+          "score": 0,
+          "won": false,
+          "name": "入善高校",
+          "slug": "nyuzen"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡南",
+          "score": 6,
+          "won": true,
+          "name": "高岡南高校",
+          "slug": "takaokaminami"
+        },
+        {
+          "display": "富山商業",
+          "score": 5,
+          "won": false,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "未来富山",
+          "score": 11,
+          "won": true,
+          "name": "未来富山",
+          "slug": null
+        },
+        {
+          "display": "伏木",
+          "score": 3,
+          "won": false,
+          "name": "伏木高校",
+          "slug": "fushiki"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山工業",
+          "score": 3,
+          "won": true,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        },
+        {
+          "display": "桜井",
+          "score": 2,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡向陵",
+          "score": 4,
+          "won": true,
+          "name": "高岡向陵",
+          "slug": null
+        },
+        {
+          "display": "新湊",
+          "score": 0,
+          "won": false,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津工業",
+          "score": 9,
+          "won": true,
+          "name": "魚津工業高校",
+          "slug": "uozukogyo"
+        },
+        {
+          "display": "新川",
+          "score": 6,
+          "won": false,
+          "name": "新川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 7,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "水橋",
+          "score": 0,
+          "won": false,
+          "name": "水橋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石動",
+          "score": 7,
+          "won": true,
+          "name": "石動高校",
+          "slug": "isurugi"
+        },
+        {
+          "display": "富山",
+          "score": 5,
+          "won": false,
+          "name": "富山高校",
+          "slug": "toyama-toyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡第一",
+          "score": 15,
+          "won": true,
+          "name": "高岡第一",
+          "slug": null
+        },
+        {
+          "display": "魚津",
+          "score": 4,
+          "won": false,
+          "name": "魚津高校",
+          "slug": "uozu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "未来富山",
+          "score": 7,
+          "won": true,
+          "name": "未来富山",
+          "slug": null
+        },
+        {
+          "display": "高岡南",
+          "score": 1,
+          "won": false,
+          "name": "高岡南高校",
+          "slug": "takaokaminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡向陵",
+          "score": 5,
+          "won": true,
+          "name": "高岡向陵",
+          "slug": null
+        },
+        {
+          "display": "富山工業",
+          "score": 3,
+          "won": false,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 4,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "魚津工業",
+          "score": 0,
+          "won": false,
+          "name": "魚津工業高校",
+          "slug": "uozukogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡第一",
+          "score": 14,
+          "won": true,
+          "name": "高岡第一",
+          "slug": null
+        },
+        {
+          "display": "石動",
+          "score": 1,
+          "won": false,
+          "name": "石動高校",
+          "slug": "isurugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡向陵",
+          "score": 10,
+          "won": true,
+          "name": "高岡向陵",
+          "slug": null
+        },
+        {
+          "display": "未来富山",
+          "score": 0,
+          "won": false,
+          "name": "未来富山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 4,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "高岡第一",
+          "score": 3,
+          "won": false,
+          "name": "高岡第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 第72回秋季富山県高等学校野球大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡向陵",
+          "score": 4,
+          "won": true,
+          "name": "高岡向陵",
+          "slug": null
+        },
+        {
+          "display": "高岡商業",
+          "score": 3,
+          "won": false,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "八尾",
+          "score": 8,
+          "won": true,
+          "name": "八尾高校",
+          "slug": "yatsuo"
+        },
+        {
+          "display": "大門",
+          "score": 1,
+          "won": false,
+          "name": "大門高校",
+          "slug": "daimon"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "水橋",
+          "score": 7,
+          "won": true,
+          "name": "水橋",
+          "slug": null
+        },
+        {
+          "display": "新川",
+          "score": 1,
+          "won": false,
+          "name": "新川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "氷見",
+          "score": 12,
+          "won": true,
+          "name": "氷見高校",
+          "slug": "himi"
+        },
+        {
+          "display": "泊",
+          "score": 2,
+          "won": false,
+          "name": "泊",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山南",
+          "score": 8,
+          "won": true,
+          "name": "富山南高校",
+          "slug": "toyamaminami"
+        },
+        {
+          "display": "入善",
+          "score": 3,
+          "won": false,
+          "name": "入善高校",
+          "slug": "nyuzen"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山北部",
+          "score": 6,
+          "won": true,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        },
+        {
+          "display": "高専本郷",
+          "score": 1,
+          "won": false,
+          "name": "高専本郷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡西",
+          "score": 5,
+          "won": true,
+          "name": "高岡西",
+          "slug": null
+        },
+        {
+          "display": "小杉",
+          "score": 3,
+          "won": false,
+          "name": "小杉高校",
+          "slug": "kosugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山工業",
+          "score": 7,
+          "won": true,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        },
+        {
+          "display": "高岡第一",
+          "score": 1,
+          "won": false,
+          "name": "高岡第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 4,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        },
+        {
+          "display": "国際大・付属",
+          "score": 1,
+          "won": false,
+          "name": "国際大・付属",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "片山学園",
+          "score": 7,
+          "won": true,
+          "name": "片山学園",
+          "slug": null
+        },
+        {
+          "display": "高岡龍谷",
+          "score": 6,
+          "won": false,
+          "name": "高岡龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山中部",
+          "score": 8,
+          "won": true,
+          "name": "富山中部高校",
+          "slug": "toyamachubu"
+        },
+        {
+          "display": "富山",
+          "score": 7,
+          "won": false,
+          "name": "富山高校",
+          "slug": "toyama-toyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山・いずみ",
+          "score": 16,
+          "won": true,
+          "name": "富山・いずみ",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "高専射水",
+          "score": 5,
+          "won": false,
+          "name": "高専射水",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山東",
+          "score": 6,
+          "won": true,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        },
+        {
+          "display": "高岡工芸",
+          "score": 1,
+          "won": false,
+          "name": "高岡工芸高校",
+          "slug": "takaokakogei"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津工業",
+          "score": 6,
+          "won": true,
+          "name": "魚津工業高校",
+          "slug": "uozukogyo"
+        },
+        {
+          "display": "魚津",
+          "score": 5,
+          "won": false,
+          "name": "魚津高校",
+          "slug": "uozu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "水橋",
+          "score": 10,
+          "won": true,
+          "name": "水橋",
+          "slug": null
+        },
+        {
+          "display": "八尾",
+          "score": 4,
+          "won": false,
+          "name": "八尾高校",
+          "slug": "yatsuo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 13,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "呉羽・福岡",
+          "score": 0,
+          "won": false,
+          "name": "呉羽・福岡",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "氷見",
+          "score": 11,
+          "won": true,
+          "name": "氷見高校",
+          "slug": "himi"
+        },
+        {
+          "display": "富山南",
+          "score": 1,
+          "won": false,
+          "name": "富山南高校",
+          "slug": "toyamaminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新湊",
+          "score": 10,
+          "won": true,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        },
+        {
+          "display": "南砺福光",
+          "score": 0,
+          "won": false,
+          "name": "南砺福光",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡西",
+          "score": 10,
+          "won": true,
+          "name": "高岡西",
+          "slug": null
+        },
+        {
+          "display": "富山北部",
+          "score": 0,
+          "won": false,
+          "name": "富山北部高校",
+          "slug": "toyamahokubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 8,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "石動",
+          "score": 1,
+          "won": false,
+          "name": "石動高校",
+          "slug": "isurugi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波",
+          "score": 9,
+          "won": true,
+          "name": "砺波高校",
+          "slug": "tonami"
+        },
+        {
+          "display": "雄山富山西",
+          "score": 2,
+          "won": false,
+          "name": "雄山富山西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "不二越・工業",
+          "score": 7,
+          "won": true,
+          "name": "不二越・工業",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "高朋",
+          "score": 0,
+          "won": false,
+          "name": "高朋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山工業",
+          "score": 3,
+          "won": true,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        },
+        {
+          "display": "桜井",
+          "score": 1,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "sakurai"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滑川",
+          "score": 6,
+          "won": true,
+          "name": "滑川高校",
+          "slug": "namerikawa"
+        },
+        {
+          "display": "高岡",
+          "score": 5,
+          "won": false,
+          "name": "高岡高校",
+          "slug": "takaoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山中部",
+          "score": 6,
+          "won": true,
+          "name": "富山中部高校",
+          "slug": "toyamachubu"
+        },
+        {
+          "display": "片山学園",
+          "score": 5,
+          "won": false,
+          "name": "片山学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 12,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "高岡向陵",
+          "score": 3,
+          "won": false,
+          "name": "高岡向陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山東",
+          "score": 6,
+          "won": true,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        },
+        {
+          "display": "富山・いずみ",
+          "score": 1,
+          "won": false,
+          "name": "富山・いずみ",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波工業",
+          "score": 9,
+          "won": true,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        },
+        {
+          "display": "伏木",
+          "score": 2,
+          "won": false,
+          "name": "伏木高校",
+          "slug": "fushiki"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡南",
+          "score": 10,
+          "won": true,
+          "name": "高岡南高校",
+          "slug": "takaokaminami"
+        },
+        {
+          "display": "南砺福野",
+          "score": 3,
+          "won": false,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "魚津工業",
+          "score": 10,
+          "won": true,
+          "name": "魚津工業高校",
+          "slug": "uozukogyo"
+        },
+        {
+          "display": "水橋",
+          "score": 9,
+          "won": false,
+          "name": "水橋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 12,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "氷見",
+          "score": 3,
+          "won": false,
+          "name": "氷見高校",
+          "slug": "himi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新湊",
+          "score": 6,
+          "won": true,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        },
+        {
+          "display": "高岡西",
+          "score": 4,
+          "won": false,
+          "name": "高岡西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山商業",
+          "score": 6,
+          "won": true,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        },
+        {
+          "display": "砺波",
+          "score": 5,
+          "won": false,
+          "name": "砺波高校",
+          "slug": "tonami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山工業",
+          "score": 1,
+          "won": true,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        },
+        {
+          "display": "不二越・工業",
+          "score": 0,
+          "won": false,
+          "name": "不二越・工業",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山中部",
+          "score": 5,
+          "won": true,
+          "name": "富山中部高校",
+          "slug": "toyamachubu"
+        },
+        {
+          "display": "滑川",
+          "score": 4,
+          "won": false,
+          "name": "滑川高校",
+          "slug": "namerikawa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡商業",
+          "score": 11,
+          "won": true,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        },
+        {
+          "display": "富山東",
+          "score": 4,
+          "won": false,
+          "name": "富山東高校",
+          "slug": "toyamahigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波工業",
+          "score": 8,
+          "won": true,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        },
+        {
+          "display": "高岡南",
+          "score": 1,
+          "won": false,
+          "name": "高岡南高校",
+          "slug": "takaokaminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山第一",
+          "score": 13,
+          "won": true,
+          "name": "富山第一",
+          "slug": null
+        },
+        {
+          "display": "魚津工業",
+          "score": 2,
+          "won": false,
+          "name": "魚津工業高校",
+          "slug": "uozukogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新湊",
+          "score": 2,
+          "won": true,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        },
+        {
+          "display": "富山商業",
+          "score": 1,
+          "won": false,
+          "name": "富山商業高校",
+          "slug": "toyamashogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山工業",
+          "score": 2,
+          "won": true,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        },
+        {
+          "display": "富山中部",
+          "score": 0,
+          "won": false,
+          "name": "富山中部高校",
+          "slug": "toyamachubu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波工業",
+          "score": 6,
+          "won": true,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        },
+        {
+          "display": "高岡商業",
+          "score": 2,
+          "won": false,
+          "name": "高岡商業高校",
+          "slug": "takaokashogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新湊",
+          "score": 5,
+          "won": true,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        },
+        {
+          "display": "富山第一",
+          "score": 4,
+          "won": false,
+          "name": "富山第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山工業",
+          "score": 3,
+          "won": true,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
+        },
+        {
+          "display": "砺波工業",
+          "score": 2,
+          "won": false,
+          "name": "砺波工業高校",
+          "slug": "tonamikogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2014年 第67回秋季富山県高等学校野球大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新湊",
+          "score": 4,
+          "won": true,
+          "name": "新湊高校",
+          "slug": "shinminato"
+        },
+        {
+          "display": "富山工業",
+          "score": 3,
+          "won": false,
+          "name": "富山工業高校",
+          "slug": "toyamakogyo"
         }
       ]
     }

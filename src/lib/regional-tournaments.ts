@@ -77,8 +77,17 @@ export function yearOfTournament(
   */
   const bare = t.match(/(?:^|[^\d])(\d{4})年/);
   if (bare) return Number(bare[1]);
+  /*
+    ★★★**「第N回…選手権」は全国の選手権とは限らない**（2026-09-01。大分）。
+    大分の県大会は `第149回大分県高等学校野球選手権大会` で、
+    **149 + 1918 = 2067年**という無い年になる。
+    ★**ありえない年になったら、その規則は当たっていない。** 使わずに次を見る。
+  */
   const senshuken = t.match(/第(\d+)回.*選手権/);
-  if (senshuken) return Number(senshuken[1]) + 1918;
+  if (senshuken) {
+    const y = Number(senshuken[1]) + 1918;
+    if (y >= 1915 && y <= new Date().getFullYear() + 1) return y;
+  }
   /*
     ★**元号は「令和」だけではない**（2026-08-26。群馬は平成18年まで遡れる）。
     ★**「令和元年度」は `令和(\d+)年` に当たらない**ので `元` も受ける。

@@ -607,8 +607,629 @@
     },
     {
       "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "金津",
+          "score": 1,
+          "won": true,
+          "name": "金津高校",
+          "slug": "kanazu"
+        },
+        {
+          "display": "武生",
+          "score": 0,
+          "won": false,
+          "name": "武生高校",
+          "slug": "takefu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高志",
+          "score": 24,
+          "won": true,
+          "name": "高志高校",
+          "slug": "fukui-koshi"
+        },
+        {
+          "display": "丸岡",
+          "score": 0,
+          "won": false,
+          "name": "丸岡高校",
+          "slug": "maruoka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "奥越明成",
+          "score": 1,
+          "won": false,
+          "name": "奥越明成高校",
+          "slug": "okuetsumeisei"
+        },
+        {
+          "display": "福井商業",
+          "score": 5,
+          "won": true,
+          "name": "福井商業高校",
+          "slug": "fukuishogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "勝山",
+          "score": 3,
+          "won": false,
+          "name": "勝山高校",
+          "slug": "katsuyama"
+        },
+        {
+          "display": "美方",
+          "score": 6,
+          "won": true,
+          "name": "美方高校",
+          "slug": "mikata"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "武生商工",
+          "score": 1,
+          "won": false,
+          "name": "武生商工高校",
+          "slug": "takefushoko"
+        },
+        {
+          "display": "鯖江",
+          "score": 5,
+          "won": true,
+          "name": "鯖江高校",
+          "slug": "sabae"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "福井高専",
+          "score": 3,
+          "won": false,
+          "name": "福井工業高専",
+          "slug": "fukuikogyo"
+        },
+        {
+          "display": "三国",
+          "score": 4,
+          "won": true,
+          "name": "三国高校",
+          "slug": "mikuni"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "福井農林",
+          "score": 1,
+          "won": false,
+          "name": "福井農林高校",
+          "slug": "fukuinorin"
+        },
+        {
+          "display": "大野",
+          "score": 6,
+          "won": true,
+          "name": "大野高校",
+          "slug": "fukui-ono"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "足羽",
+          "score": 0,
+          "won": false,
+          "name": "足羽高校",
+          "slug": "asuwa"
+        },
+        {
+          "display": "敦賀",
+          "score": 10,
+          "won": true,
+          "name": "敦賀高校",
+          "slug": "tsuruga"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "羽水",
+          "score": 5,
+          "won": false,
+          "name": "羽水高校",
+          "slug": "usui"
+        },
+        {
+          "display": "坂井",
+          "score": 9,
+          "won": true,
+          "name": "坂井高校",
+          "slug": "fukui-sakai"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "啓新",
+          "score": 4,
+          "won": true,
+          "name": "啓新",
+          "slug": null
+        },
+        {
+          "display": "丹生",
+          "score": 1,
+          "won": false,
+          "name": "丹生高校",
+          "slug": "nyu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "科学技術",
+          "score": 1,
+          "won": false,
+          "name": "科学技術高校",
+          "slug": "fukui-kagakugijutsu"
+        },
+        {
+          "display": "武生東",
+          "score": 2,
+          "won": true,
+          "name": "武生東高校",
+          "slug": "takefuhigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "敦賀工業■印はシード校",
+          "score": 1,
+          "won": false,
+          "name": "敦賀工業■印はシード校",
+          "slug": null
+        },
+        {
+          "display": "藤島",
+          "score": 10,
+          "won": true,
+          "name": "藤島高校",
+          "slug": "fujishima"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "敦賀気比",
+          "score": 11,
+          "won": true,
+          "name": "敦賀気比",
+          "slug": null
+        },
+        {
+          "display": "金津",
+          "score": 1,
+          "won": false,
+          "name": "金津高校",
+          "slug": "kanazu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高志",
+          "score": 2,
+          "won": false,
+          "name": "高志高校",
+          "slug": "fukui-koshi"
+        },
+        {
+          "display": "福井商業",
+          "score": 8,
+          "won": true,
+          "name": "福井商業高校",
+          "slug": "fukuishogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "美方",
+          "score": 7,
+          "won": true,
+          "name": "美方高校",
+          "slug": "mikata"
+        },
+        {
+          "display": "鯖江",
+          "score": 2,
+          "won": false,
+          "name": "鯖江高校",
+          "slug": "sabae"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三国",
+          "score": 0,
+          "won": false,
+          "name": "三国高校",
+          "slug": "mikuni"
+        },
+        {
+          "display": "北陸",
+          "score": 6,
+          "won": true,
+          "name": "北陸",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "若狭",
+          "score": 0,
+          "won": false,
+          "name": "若狭高校",
+          "slug": "wakasa"
+        },
+        {
+          "display": "大野",
+          "score": 4,
+          "won": true,
+          "name": "大野高校",
+          "slug": "fukui-ono"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "敦賀",
+          "score": 2,
+          "won": false,
+          "name": "敦賀高校",
+          "slug": "tsuruga"
+        },
+        {
+          "display": "坂井",
+          "score": 9,
+          "won": true,
+          "name": "坂井高校",
+          "slug": "fukui-sakai"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "啓新",
+          "score": 8,
+          "won": true,
+          "name": "啓新",
+          "slug": null
+        },
+        {
+          "display": "武生東",
+          "score": 0,
+          "won": false,
+          "name": "武生東高校",
+          "slug": "takefuhigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "藤島",
+          "score": 1,
+          "won": false,
+          "name": "藤島高校",
+          "slug": "fujishima"
+        },
+        {
+          "display": "工大福井",
+          "score": 12,
+          "won": true,
+          "name": "工大福井",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "敦賀気比",
+          "score": 9,
+          "won": true,
+          "name": "敦賀気比",
+          "slug": null
+        },
+        {
+          "display": "福井商業",
+          "score": 2,
+          "won": false,
+          "name": "福井商業高校",
+          "slug": "fukuishogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "美方",
+          "score": 0,
+          "won": false,
+          "name": "美方高校",
+          "slug": "mikata"
+        },
+        {
+          "display": "北陸",
+          "score": 5,
+          "won": true,
+          "name": "北陸",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大野",
+          "score": 5,
+          "won": false,
+          "name": "大野高校",
+          "slug": "fukui-ono"
+        },
+        {
+          "display": "坂井",
+          "score": 11,
+          "won": true,
+          "name": "坂井高校",
+          "slug": "fukui-sakai"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "啓新",
+          "score": 0,
+          "won": false,
+          "name": "啓新",
+          "slug": null
+        },
+        {
+          "display": "工大福井",
+          "score": 7,
+          "won": true,
+          "name": "工大福井",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "敦賀気比",
+          "score": 5,
+          "won": true,
+          "name": "敦賀気比",
+          "slug": null
+        },
+        {
+          "display": "北陸",
+          "score": 1,
+          "won": false,
+          "name": "北陸",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "坂井",
+          "score": 0,
+          "won": false,
+          "name": "坂井高校",
+          "slug": "fukui-sakai"
+        },
+        {
+          "display": "工大福井",
+          "score": 17,
+          "won": true,
+          "name": "工大福井",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権福井大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "敦賀気比",
+          "score": 7,
+          "won": true,
+          "name": "敦賀気比",
+          "slug": null
+        },
+        {
+          "display": "工大福井",
+          "score": 3,
+          "won": false,
+          "name": "工大福井",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "1回戦",
       "venue": null,
       "teams": [
@@ -631,7 +1252,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "1回戦",
       "venue": null,
       "teams": [
@@ -654,7 +1275,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "1回戦",
       "venue": null,
       "teams": [
@@ -677,7 +1298,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "1回戦",
       "venue": null,
       "teams": [
@@ -700,7 +1321,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "1回戦",
       "venue": null,
       "teams": [
@@ -723,7 +1344,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "1回戦",
       "venue": null,
       "teams": [
@@ -746,7 +1367,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "1回戦",
       "venue": null,
       "teams": [
@@ -769,7 +1390,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "1回戦",
       "venue": null,
       "teams": [
@@ -792,7 +1413,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "1回戦",
       "venue": null,
       "teams": [
@@ -815,7 +1436,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "1回戦",
       "venue": null,
       "teams": [
@@ -838,7 +1459,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "1回戦",
       "venue": null,
       "teams": [
@@ -861,7 +1482,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "2回戦",
       "venue": null,
       "teams": [
@@ -885,7 +1506,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "2回戦",
       "venue": null,
       "teams": [
@@ -908,7 +1529,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "2回戦",
       "venue": null,
       "teams": [
@@ -931,7 +1552,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "2回戦",
       "venue": null,
       "teams": [
@@ -954,7 +1575,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "2回戦",
       "venue": null,
       "teams": [
@@ -977,7 +1598,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "2回戦",
       "venue": null,
       "teams": [
@@ -1000,7 +1621,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "2回戦",
       "venue": null,
       "teams": [
@@ -1023,7 +1644,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "2回戦",
       "venue": null,
       "teams": [
@@ -1046,7 +1667,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "準々決勝",
       "venue": null,
       "teams": [
@@ -1069,7 +1690,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "準々決勝",
       "venue": null,
       "teams": [
@@ -1092,7 +1713,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "準々決勝",
       "venue": null,
       "teams": [
@@ -1115,7 +1736,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "準々決勝",
       "venue": null,
       "teams": [
@@ -1138,7 +1759,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "準決勝",
       "venue": null,
       "teams": [
@@ -1161,7 +1782,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "準決勝",
       "venue": null,
       "teams": [
@@ -1184,7 +1805,7 @@
     {
       "date": null,
       "season": "spring",
-      "tournament": "第154回北信越地区高等学校野球大会福井県大会（春季）",
+      "tournament": "2026年 第154回北信越地区高等学校野球大会福井県大会（春季）",
       "round": "決勝",
       "venue": null,
       "teams": [

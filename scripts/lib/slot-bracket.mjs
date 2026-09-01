@@ -529,6 +529,16 @@ export function assembleSlotBracket(
     */
     pairedScores = false,
     /*
+      ★★**断片の中の字送りを、代表的な文字幅ではなく実測の幅から出す**
+      （2026-09-01。大分の過去年）。既定 `false` が今までどおり。
+
+      `pairedScores` を立てると同じことが起きるが、あちらは
+      **`11-1` を2つの数として読む**という別の働きも付いてくる。
+      **幅だけが欲しい紙**（半角と全角が1つの断片に混ざる）のために分けてある。
+      ★**詳しくは `numbersOf` の中の説明を読むこと。**
+    */
+    fragmentWidth = false,
+    /*
       ★**日付・球場を探す窓の広さ**（2026-08-17。滋賀）。`1` が今までどおり。
 
       京都・広島は日付や球場が**スコアの帯より下**にあるので、
@@ -838,7 +848,17 @@ export function assembleSlotBracket(
         ★**幅は元の文字列ぜんぶのぶん**なので、割るのも元の長さ。
         先頭に空白があれば、そのぶん右から始める。
       */
-      const useWidth = pairedScores && it.width > 0 && it.text.length > 0;
+      /*
+        ★★**`fragmentWidth` は「幅から字送りを出す」だけを単独で使うための引数**
+        （2026-09-01。大分の過去年のため）。`pairedScores` の副作用（`A-B` を
+        2つの数として読む）は要らないが、**幅は要る**という紙がある。
+
+        大分の第121回（2012年春）は `11 ５` と**半角と全角が1つの断片に混ざる**ので、
+        代表的な文字幅（`PITCH * 0.45`）では 2 つの数の位置が **0.84 スロット**離れ、
+        中点が境目から **0.50** ずれて1回戦の帯ごと捨てられていた。
+        ★**既定は false のまま**（既存の県は今までどおり代表的な文字幅で見積もる）。
+      */
+      const useWidth = (pairedScores || fragmentWidth) && it.width > 0 && it.text.length > 0;
       // ★`flatFragments` の紙では断片はスロット軸に広がらない。**位置を動かさない**
       const step = flatFragments ? 0 : useWidth ? it.width / it.text.length : CHAR;
       let cursor = useWidth ? it.x + (it.text.length - it.text.trimStart().length) * step : it.x;

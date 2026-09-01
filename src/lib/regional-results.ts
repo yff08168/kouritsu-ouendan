@@ -529,7 +529,23 @@ export function latestSeasonGames(
     if (!dated.length) return newestSeasonByYear ?? byOrder;
     const byDate = [...dated].sort((a, b) => a.date!.localeCompare(b.date!)).at(-1)!.season;
     const ambiguous = undatedSeasons.some((s) => SEASON_ORDER[s] > SEASON_ORDER[byDate]);
-    return ambiguous ? byOrder : byDate;
+    /*
+      ★★★**迷ったときも「季節の順」だけで決めないこと**（2026-09-01。大分・愛知・和歌山）。
+
+      `byOrder` は**その県が持っている季節のうち、いちばん後ろの季節**を返すだけで、
+      **年をまったく見ていない。** 日付の無い季節が1つでもあると必ずここへ来るので、
+      **何年も前の秋が県のページの先頭に出る。**
+
+        大分   … 夏（第108回・2026年・日付なし）を持ちながら **2015年の秋**が出ていた
+        愛知   … 夏（第108回・2026年）を持ちながら **2025年の秋**が出ていた
+        和歌山 … 夏（第108回・2026年・日付なし）を持ちながら **2025年の秋**が出ていた
+
+      ★**上でもう「大会名から年を出して、いちばん新しい大会の季節」を計算してある**
+      （`newestSeasonByYear`）。**迷ったときはそちらを使う。**
+      ★**年が1つも出せない県だけ今までどおり**（`byOrder`）。
+      ★**この分岐に入らない県は1件も変わらない**（実測：41県のうち当たるのは上の3県だけ）。
+    */
+    return ambiguous ? (newestSeasonByYear ?? byOrder) : byDate;
   })();
 
   /*

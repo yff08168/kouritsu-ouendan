@@ -26,6 +26,30 @@
  *   **「赤い側」と「点の多い側」が一致するかを検算にできる。**
  *
  * ------------------------------------------------------------------
+ * ★★ 紙は2種類ある（2026-09-02 その2 に「1段の紙」を足した）
+ *
+ *   ① **左右2段組**（大きい大会）。スロット番号が左右に1列ずつ、1〜N の連番。
+ *      決勝は左右の勝者どうしで、**縦の連結線が無い**（得点は `y_f7` の2つ）。
+ *   ② ★**1段**。**小さい大会**（高知・愛媛の春季）と、
+ *      ★★**「ブロック＋決勝トーナメント」の紙**（岐阜の夏・2020年の代替大会）。
+ *      **1枚に山（サブトーナメント）がいくつも縦に並び、番号は山ごとに振り直される。**
+ *      得点は**全部 `y_f7`**。決勝も普通の縦の連結線で描いてある。
+ *
+ *   ★★**入口で①を先に探し、見つからなかったときだけ②として読む**ので、
+ *   **①の紙の読み取りは1バイトも変わらない**（既存の県で確かめてある）。
+ *
+ *   ★②で気をつけるところ:
+ *     - **山は枝の連結から求める**（union-find）。★**番号は後からまた変わるので最後にそろえる**
+ *     - ★★**決勝トーナメントの山は「その出場校＝他の山の優勝校」で見つける。**
+ *       **紙の中の2か所が一致することを求める**ので、山を読み違えれば必ず落ちる
+ *     - ★★**返すスロットからその山を外す** —— **同じ学校が紙に2度出ているだけ**で、
+ *       外すと呼ぶ側の「チーム数 − 試合数 = 1」がそのまま成り立つ
+ *     - ★**回戦はブロック → 決勝トーナメントと続けて数える**（ブロック決勝＝大会の準々決勝）
+ *     - ★★**ブロックが紙の上で逆さに並ぶ年がある**（岐阜の第105回）。
+ *       **返すのはスロット番号の順**（呼ぶ側が「出場校の一覧」と1対1で突き合わせるため）
+ *     - ★**山ごとの優勝校が見出しの右に刷ってある。** 組み立てと突き合わせて検算にしてある
+ *
+ * ------------------------------------------------------------------
  * ★ 表の作り（2026-08-21 に福岡で実測）
  *
  *   - スロット番号 … `class="y_f8"` の数字。左 x≒113（1〜64）／右 x≒982（65〜128）
@@ -79,7 +103,15 @@ export function readHsbBracket(html, { district = "" } = {}) {
 
   /*
     ---- 1. スロット番号 ----
-    ★**左右2列ある。** x でまとめて、**連番になっている列**だけを採る。
+    ★**紙は2種類ある**（2026-09-02 その2 に1段の紙を足した）:
+
+      左右2段組  … 大きい大会。スロット番号が左右に1列ずつ（1〜N の連番）
+      1段        … ★**小さい大会**（高知・愛媛の春季など）と、
+                    ★★**「ブロック＋決勝トーナメント」の紙**（岐阜の夏・2020年の代替大会）。
+                    **1枚に山がいくつも縦に並び、番号は山ごとに振り直される。**
+
+    ★★**まず今までどおり「連番の列がちょうど2本」を探す**（2段組の紙は1バイトも挙動が変わらない）。
+    **見つからなければ**「4つ以上ある列がちょうど1本」を1段の紙として読む。
   */
   const cols = new Map();
   for (const t of texts.filter((t) => t.cls === "y_f8" && /^\d+$/.test(t.text))) {
@@ -87,20 +119,44 @@ export function readHsbBracket(html, { district = "" } = {}) {
     if (!cols.has(k)) cols.set(k, []);
     cols.get(k).push(t);
   }
-  const slotCols = [...cols.entries()]
+  const columns = [...cols.entries()]
     .map(([x, list]) => ({ x, list: list.sort((a, b) => a.y - b.y) }))
-    .filter(
-      ({ list }) =>
-        list.length >= 4 && list.every((t, i) => i === 0 || Number(t.text) === Number(list[i - 1].text) + 1),
-    )
     .sort((a, b) => a.x - b.x);
-  if (slotCols.length !== 2) return bail(`スロット番号の列が ${slotCols.length} 本（2本のはず）`);
-  const center = (slotCols[0].x + slotCols[1].x) / 2;
-  const slots = slotCols
-    .flatMap(({ x, list }) => list.map((t) => ({ n: Number(t.text), y: t.y, side: x < center ? "L" : "R" })))
-    .sort((a, b) => a.n - b.n);
-  if (slots.some((s, i) => s.n !== i + 1)) return bail("スロット番号が 1 から連番になっていない");
-  const pitch = Math.abs(slots[1].y - slots[0].y);
+  const runCols = columns.filter(
+    ({ list }) =>
+      list.length >= 4 && list.every((t, i) => i === 0 || Number(t.text) === Number(list[i - 1].text) + 1),
+  );
+  const wideCols = columns.filter(({ list }) => list.length >= 4);
+  /** "two" = 左右2段組（今までの紙）／"one" = 1段（山が1つ以上） */
+  let mode, slotCols, center, slots, pitch;
+  if (runCols.length === 2) {
+    mode = "two";
+    slotCols = runCols;
+    center = (slotCols[0].x + slotCols[1].x) / 2;
+    slots = slotCols
+      .flatMap(({ x, list }) => list.map((t) => ({ n: Number(t.text), y: t.y, side: x < center ? "L" : "R" })))
+      .sort((a, b) => a.n - b.n);
+    if (slots.some((s, i) => s.n !== i + 1)) return bail("スロット番号が 1 から連番になっていない");
+    pitch = Math.abs(slots[1].y - slots[0].y);
+  } else if (wideCols.length === 1) {
+    mode = "one";
+    slotCols = wideCols;
+    /*
+      ★**1段の紙では「中心」が無い。** すべて左側として扱い、
+      **深さは x が大きいほど深い**（`depth` と `side` の判定がこれで揃う）。
+    */
+    center = Infinity;
+    slots = slotCols[0].list.map((t) => ({ n: Number(t.text), y: t.y, side: "L" }));
+    /*
+      ★★**間隔は「中央値」で取ること。** 山と山のあいだは大きく空くので、
+      いちばん狭い隙間や平均を使うと**校名を拾う窓（`pitch / 2`）が狂う。**
+    */
+    const gaps = slots.slice(1).map((s, i) => s.y - slots[i].y).filter((g) => g > 0).sort((a, b) => a - b);
+    if (!gaps.length) return bail("スロットの間隔が測れない");
+    pitch = gaps[Math.floor(gaps.length / 2)];
+  } else {
+    return bail(`スロット番号の列が ${runCols.length} 本（2本のはず）`);
+  }
 
   /*
     ---- 2. 校名 ----
@@ -175,8 +231,32 @@ export function readHsbBracket(html, { district = "" } = {}) {
   const at = new Map();
   const key = (side, y) => side + ":" + Math.round(y * 2) / 2;
   for (const s of slots) at.set(key(s.side, s.y), s.name);
+  /*
+    ★★**どのスロットとどのスロットが同じ山（サブトーナメント）か**を持つ（2026-09-02 その2）。
+    1段の紙は**1枚に山がいくつも並ぶ**（ブロック＋決勝トーナメント）ので、
+    **回戦名も、勝ち残りの検算も、山ごとにやらないと合わない。**
+    ★2段組の紙では山は1つしか出来ないので、持っていても何も変わらない。
+  */
+  const parent = slots.map((_, i) => i);
+  const find = (i) => (parent[i] === i ? i : (parent[i] = find(parent[i])));
+  const compOf = new Map();
+  slots.forEach((s, i) => compOf.set(key(s.side, s.y), i));
+  /** 2つの枝を1つの山にまとめ、勝ち上がった先の枝にもその山を持たせる */
+  const merge = (kt, kb, nk) => {
+    const ca = find(compOf.get(kt));
+    parent[find(compOf.get(kb))] = ca;
+    compOf.set(nk, ca);
+    return ca;
+  };
 
-  const scores = texts.filter((t) => t.cls === "y_f9" && /^\d{1,2}$/.test(t.text));
+  const scores = texts.filter(
+    /*
+      ★★**得点のクラスは紙で違う**（2026-09-02 その2）。
+      2段組の紙は `y_f9`（決勝だけ `y_f7`）。**1段の紙は全部 `y_f7`。**
+      ★**2段組では `y_f7` を混ぜないこと** —— 決勝の得点を準決勝の枝が拾う余地ができる。
+    */
+    (t) => (t.cls === "y_f9" || (mode === "one" && t.cls === "y_f7")) && /^\d{1,2}$/.test(t.text),
+  );
   const anchors = [...html.matchAll(/<a class="playdt"[^>]*>([\s\S]*?)<\/a>/g)]
     .map((m) => {
       const r = /<rect\b([^>]*)>/.exec(m[1]);
@@ -242,6 +322,7 @@ export function readHsbBracket(html, { district = "" } = {}) {
           ★**画面には出さない**（0対0にしない。大阪・石川・群馬と同じ）。
         */
         byes += 1;
+        merge(kt, kb, key(side, j.mid));
         at.delete(kt);
         at.delete(kb);
         at.set(key(side, j.mid), j.topRed ? A : B);
@@ -260,7 +341,8 @@ export function readHsbBracket(html, { district = "" } = {}) {
     const anchor = anchors.find(
       (a) => Math.abs(a.y + a.h / 2 - j.mid) <= 3 && Math.abs((j.x < center ? a.x + a.w : a.x) - j.x) <= 3,
     );
-    games.push({ side, roundX: j.x, a: A, b: B, sa, sb: sbv, label: anchor?.label ?? [] });
+    const comp = merge(kt, kb, key(side, j.mid));
+    games.push({ side, comp, roundX: j.x, a: A, b: B, sa, sb: sbv, label: anchor?.label ?? [] });
     at.delete(kt);
     at.delete(kb);
     at.set(key(side, j.mid), sa === sbv ? null : sa > sbv ? A : B);
@@ -270,8 +352,12 @@ export function readHsbBracket(html, { district = "" } = {}) {
     ---- 5. 決勝 ----
     ★**左右の勝者どうし。** 枝は同じ高さで向かい合うので縦の連結が無い。
     得点は `y_f7` の2つ（左が先）。
+    ★★**1段の紙にはこの段は無い**（決勝も普通の縦の連結として描いてある）。
   */
-  const finalScores = texts.filter((t) => t.cls === "y_f7" && /^\d{1,2}$/.test(t.text)).sort((a, b) => a.x - b.x);
+  const finalScores =
+    mode === "two"
+      ? texts.filter((t) => t.cls === "y_f7" && /^\d{1,2}$/.test(t.text)).sort((a, b) => a.x - b.x)
+      : [];
   let champion = null;
   if (finalScores.length === 2) {
     const rest = [...at.entries()].filter(([, v]) => v);
@@ -291,7 +377,81 @@ export function readHsbBracket(html, { district = "" } = {}) {
   }
 
   /*
-    ---- 6. 回戦名 ----
+    ---- 6. 山（サブトーナメント）----
+    ★★**1段の紙は1枚に山がいくつも並ぶ**（2026-09-02 その2）。
+    ブロックがいくつかと、**その優勝校だけで戦う「決勝トーナメント」**が1枚に刷ってある
+    （岐阜の夏・2020年の代替大会）。**山が1つだけの紙**（小さい大会）も同じ道を通る。
+  */
+  let finalComp = null;
+  let blockSlots = slots;
+  if (mode === "one") {
+    /*
+      ★**山の番号は、まとめた先が後からまた変わる**（union-find）ので、
+      **最後に一度そろえること。** 途中で持った番号のまま比べると、
+      **同じ山の試合が2つに割れて見える。**
+    */
+    slots.forEach((s, i) => {
+      s.comp = find(i);
+    });
+    for (const g of games) g.comp = find(g.comp);
+    /*
+      ★**山ごとに勝ち残っている校名は `at` から取る**（生きているのはそこだけ）。
+      引き分けで止まった山は値が null になり、下の突き合わせは飛ばす。
+    */
+    const winnerOf = new Map();
+    for (const [k, v] of at) {
+      const c = compOf.get(k);
+      if (c !== undefined && v) winnerOf.set(find(c), v);
+    }
+    const comps = [...new Set(slots.map((s) => s.comp))];
+    const namesOf = (c) => slots.filter((s) => s.comp === c).map((s) => s.name).sort().join("\u0001");
+    const winners = (list) => list.map((c) => winnerOf.get(c)).filter(Boolean).sort().join("\u0001");
+    if (comps.length > 1) {
+      /*
+        ★★**決勝トーナメントの山は「他の山の優勝校だけで出来ている」。**
+        **枝とは別の場所から来る事実ではない**が、**同じ紙の中の2か所が一致することを求める**
+        ので、山の切り分けを読み違えれば必ず落ちる。
+      */
+      finalComp = comps.find((c) => namesOf(c) === winners(comps.filter((o) => o !== c))) ?? null;
+      if (finalComp === null) {
+        return bail(`山が ${comps.length} つあるのに、決勝トーナメントが見つからない`);
+      }
+      blockSlots = slots.filter((s) => s.comp !== finalComp);
+    }
+    /*
+      ★★★**返すのは「スロット番号の順」。紙に並んでいる順ではない**（2026-09-02 その2）。
+      **ブロックが紙の上で逆さに並ぶ年がある**（岐阜の第105回は 第2ブロック が上、第1ブロック が下）。
+      **呼ぶ側は「出場校の一覧」と1対1で突き合わせる**ので、
+      **紙の順のまま返すと、その年だけ丸ごと落ちる**（実際に落ちた）。
+      ★**番号が 1 から連番になっていることも、ここで確かめる**
+      （2段組の紙で前からやっている検査と同じもの。読み違えれば必ず穴が開く）。
+    */
+    blockSlots = [...blockSlots].sort((x, y) => x.n - y.n);
+    if (blockSlots.some((s, i) => s.n !== i + 1)) {
+      return bail("ブロックのスロット番号が 1 から連番になっていない");
+    }
+    /*
+      ★★**山ごとに、紙に刷ってある優勝校と突き合わせる。**
+      見出し（`Aブロック`）はスロット番号の列より左、**優勝校は右**に刷ってある。
+    */
+    const labelX = slotCols[0].x;
+    for (const c of comps) {
+      const ys = slots.filter((s) => s.comp === c).map((s) => s.y);
+      const lo = Math.min(...ys) - pitch;
+      const hi = Math.max(...ys) + pitch;
+      const printed = texts.filter((t) => t.cls === "y_f14" && t.x > labelX && t.y > lo && t.y < hi);
+      const won = winnerOf.get(c);
+      if (printed.length !== 1 || !won) continue;
+      const a = printed[0].text;
+      if (!(a.includes(won) || won.includes(a))) {
+        return bail(`山の優勝校が紙と合わない（紙「${a}」/ 組み立て「${won}」）`);
+      }
+    }
+    champion = winnerOf.get(finalComp ?? comps[0]) ?? null;
+  }
+
+  /*
+    ---- 7. 回戦名 ----
     ★**深さは「連結線の x」で決まる**（帯を探す必要が無い）。
     深いほうから 決勝・準決勝・準々決勝、浅いほうから 1回戦・2回戦…。
   */
@@ -301,22 +461,62 @@ export function readHsbBracket(html, { district = "" } = {}) {
     （実際に「8回戦・9回戦…」という名前が出た）。
     ★**左は x が小さいほど浅く、右は大きいほど浅い。**
   */
-  const bandsOf = (side) =>
-    [...new Set(games.filter((g) => g.side === side).map((g) => g.roundX))].sort((a, b) =>
-      side === "L" ? a - b : b - a,
-    );
-  const bands = { L: bandsOf("L"), R: bandsOf("R") };
-  if (bands.L.length !== bands.R.length) {
-    return bail(`左右で回戦の数が違う（左 ${bands.L.length} / 右 ${bands.R.length}）`);
-  }
-  const rounds = bands.L.length;
   const deep = ["決勝", "準決勝", "準々決勝"];
+  if (mode === "two") {
+    const bandsOf = (side) =>
+      [...new Set(games.filter((g) => g.side === side).map((g) => g.roundX))].sort((a, b) =>
+        side === "L" ? a - b : b - a,
+      );
+    const bands = { L: bandsOf("L"), R: bandsOf("R") };
+    /*
+      ★★**左右で回戦の数が1つ違う紙がある**（2026-09-02 その2。岐阜の第104回）。
+      **出場校が2のべき乗をまたぐと、片側だけ1回戦が増える**
+      （65校なら左33・右32で、左だけ6回戦・右は5回戦）。**紙は正しい。**
+      ★**2つ以上違ったら読み違えを疑って落とす。**
+    */
+    if (Math.abs(bands.L.length - bands.R.length) > 1) {
+      return bail(`左右で回戦の数が違う（左 ${bands.L.length} / 右 ${bands.R.length}）`);
+    }
+    /*
+      ★★★**回戦は「決勝から数える」こと。浅いほうから数えない。**
+      浅いほうから数えると、**1回戦が無い側の全部が1つずつ浅い名前**になる
+      （右の2回戦が「1回戦」として画面に出る）。
+      ★**左右の回戦数が同じ紙では、今までとまったく同じ番号になる。**
+    */
+    const rounds = Math.max(bands.L.length, bands.R.length);
+    for (const g of games) {
+      const list = g.side === "F" ? null : bands[g.side];
+      const i =
+        list === null ? rounds : rounds - 1 - (list.length - 1 - list.indexOf(g.roundX));
+      const fromTop = rounds - i;
+      g.round = fromTop < deep.length ? deep[fromTop] : `${i + 1}回戦`;
+    }
+  } else {
+    /*
+      ★★★**1段の紙の回戦は「ブロックの回戦 → 決勝トーナメントの回戦」と続けて数える。**
+      ブロックの決勝（16チームなら4戦目）は、**大会全体では準々決勝**にあたる。
+      ★**ブロックどうしは連結線の x がそろっている**ので、まとめて並べてよい。
+      ★**決勝トーナメントの x はブロックと重なる**（岐阜は 240・300 が両方に出る）ので、
+      **必ず山で分けてから数えること。**
+    */
+    const bandsOf = (list) => [...new Set(list.map((g) => g.roundX))].sort((a, b) => a - b);
+    const blockBands = bandsOf(games.filter((g) => g.comp !== finalComp));
+    const finalBands = finalComp === null ? [] : bandsOf(games.filter((g) => g.comp === finalComp));
+    const indexOf = (g) =>
+      g.comp === finalComp && finalComp !== null
+        ? blockBands.length + finalBands.indexOf(g.roundX)
+        : blockBands.indexOf(g.roundX);
+    const last = Math.max(...games.map(indexOf));
+    for (const g of games) {
+      const i = indexOf(g);
+      const fromTop = last - i;
+      g.round = fromTop < deep.length ? deep[fromTop] : `${i + 1}回戦`;
+    }
+  }
   for (const g of games) {
-    const i = g.side === "F" ? rounds : bands[g.side].indexOf(g.roundX);
-    const fromTop = rounds - i;
-    g.round = fromTop < deep.length ? deep[fromTop] : `${i + 1}回戦`;
     delete g.roundX;
     delete g.side;
+    delete g.comp;
   }
   /*
     ---- 7. 球場の凡例 ----
@@ -332,8 +532,14 @@ export function readHsbBracket(html, { district = "" } = {}) {
     );
     if (name) legend.set(t.text, name.text);
   }
+  /*
+    ★★**返すスロットからは「決勝トーナメントの山」を外す**（2026-09-02 その2）。
+    あちらに並ぶのは**他の山の優勝校**で、**同じ学校がこの紙に2度出ている**だけ。
+    ★**外すと「チーム数 − 試合数 = 1」がそのまま成り立つ**
+    （岐阜の第107回は 63チーム・62試合）。呼ぶ側の検算を変えなくてよい。
+  */
   return {
-    slots,
+    slots: blockSlots,
     games,
     byes,
     champion,

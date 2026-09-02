@@ -13942,6 +13942,352 @@
     {
       "date": null,
       "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東稜",
+          "score": 5,
+          "won": false,
+          "name": "東稜高校",
+          "slug": "kyoto-toryo"
+        },
+        {
+          "display": "綾部",
+          "score": 11,
+          "won": true,
+          "name": "綾部高校",
+          "slug": "ayabe"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "京都すばる",
+          "score": 0,
+          "won": false,
+          "name": "京都すばる高校",
+          "slug": "kyotosubaru"
+        },
+        {
+          "display": "乙訓",
+          "score": 9,
+          "won": true,
+          "name": "乙訓高校",
+          "slug": "otokuni"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立命館",
+          "score": 5,
+          "won": false,
+          "name": "立命館",
+          "slug": null
+        },
+        {
+          "display": "立命館宇治",
+          "score": 10,
+          "won": true,
+          "name": "立命館宇治",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東山",
+          "score": 23,
+          "won": true,
+          "name": "東山",
+          "slug": null
+        },
+        {
+          "display": "宮津天橋・宮津・加悦谷",
+          "score": 11,
+          "won": false,
+          "name": "宮津天橋・宮津・加悦谷",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2020-09-26",
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "綾部",
+          "score": 1,
+          "won": false,
+          "name": "綾部高校",
+          "slug": "ayabe"
+        },
+        {
+          "display": "乙訓",
+          "score": 5,
+          "won": true,
+          "name": "乙訓高校",
+          "slug": "otokuni"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立命館宇治",
+          "score": 1,
+          "won": false,
+          "name": "立命館宇治",
+          "slug": null
+        },
+        {
+          "display": "東山",
+          "score": 3,
+          "won": true,
+          "name": "東山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-10-03",
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
+      "round": "準決勝",
+      "venue": "わかさスタジアム京都",
+      "teams": [
+        {
+          "display": "乙訓",
+          "score": 8,
+          "won": true,
+          "name": "乙訓高校",
+          "slug": "otokuni"
+        },
+        {
+          "display": "東山",
+          "score": 1,
+          "won": false,
+          "name": "東山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "京都国際",
+          "score": 4,
+          "won": true,
+          "name": "京都国際",
+          "slug": null
+        },
+        {
+          "display": "洛東",
+          "score": 0,
+          "won": false,
+          "name": "洛東高校",
+          "slug": "rakuto"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "西城陽",
+          "score": 0,
+          "won": false,
+          "name": "西城陽高校",
+          "slug": "nishijoyo"
+        },
+        {
+          "display": "京都外大西",
+          "score": 3,
+          "won": true,
+          "name": "京都外大西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "福知山成美",
+          "score": 5,
+          "won": true,
+          "name": "福知山成美",
+          "slug": null
+        },
+        {
+          "display": "山城",
+          "score": 3,
+          "won": false,
+          "name": "山城高校",
+          "slug": "yamashiro"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "龍谷大平安",
+          "score": 19,
+          "won": true,
+          "name": "龍谷大平安",
+          "slug": null
+        },
+        {
+          "display": "西京",
+          "score": 0,
+          "won": false,
+          "name": "西京高校",
+          "slug": "saikyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "京都国際",
+          "score": 11,
+          "won": true,
+          "name": "京都国際",
+          "slug": null
+        },
+        {
+          "display": "京都外大西",
+          "score": 0,
+          "won": false,
+          "name": "京都外大西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "福知山成美",
+          "score": 3,
+          "won": false,
+          "name": "福知山成美",
+          "slug": null
+        },
+        {
+          "display": "龍谷大平安",
+          "score": 13,
+          "won": true,
+          "name": "龍谷大平安",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-10-03",
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
+      "round": "準決勝",
+      "venue": "わかさスタジアム京都",
+      "teams": [
+        {
+          "display": "京都国際",
+          "score": 1,
+          "won": false,
+          "name": "京都国際",
+          "slug": null
+        },
+        {
+          "display": "龍谷大平安",
+          "score": 3,
+          "won": true,
+          "name": "龍谷大平安",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-10-04",
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "龍谷大平安",
+          "score": 6,
+          "won": true,
+          "name": "龍谷大平安",
+          "slug": null
+        },
+        {
+          "display": "乙訓",
+          "score": 2,
+          "won": false,
+          "name": "乙訓高校",
+          "slug": "otokuni"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
       "tournament": "2019年 秋季近畿地区高校野球 京都府大会",
       "round": "1回戦",
       "venue": null,
@@ -14396,352 +14742,6 @@
           "won": true,
           "name": "京都翔英",
           "slug": null
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "東稜",
-          "score": 5,
-          "won": false,
-          "name": "東稜高校",
-          "slug": "kyoto-toryo"
-        },
-        {
-          "display": "綾部",
-          "score": 11,
-          "won": true,
-          "name": "綾部高校",
-          "slug": "ayabe"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "京都すばる",
-          "score": 0,
-          "won": false,
-          "name": "京都すばる高校",
-          "slug": "kyotosubaru"
-        },
-        {
-          "display": "乙訓",
-          "score": 9,
-          "won": true,
-          "name": "乙訓高校",
-          "slug": "otokuni"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "立命館",
-          "score": 5,
-          "won": false,
-          "name": "立命館",
-          "slug": null
-        },
-        {
-          "display": "立命館宇治",
-          "score": 10,
-          "won": true,
-          "name": "立命館宇治",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "東山",
-          "score": 23,
-          "won": true,
-          "name": "東山",
-          "slug": null
-        },
-        {
-          "display": "宮津天橋・宮津・加悦谷",
-          "score": 11,
-          "won": false,
-          "name": "宮津天橋・宮津・加悦谷",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2020-09-26",
-      "season": "autumn",
-      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "綾部",
-          "score": 1,
-          "won": false,
-          "name": "綾部高校",
-          "slug": "ayabe"
-        },
-        {
-          "display": "乙訓",
-          "score": 5,
-          "won": true,
-          "name": "乙訓高校",
-          "slug": "otokuni"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "立命館宇治",
-          "score": 1,
-          "won": false,
-          "name": "立命館宇治",
-          "slug": null
-        },
-        {
-          "display": "東山",
-          "score": 3,
-          "won": true,
-          "name": "東山",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2020-10-03",
-      "season": "autumn",
-      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
-      "round": "準決勝",
-      "venue": "わかさスタジアム京都",
-      "teams": [
-        {
-          "display": "乙訓",
-          "score": 8,
-          "won": true,
-          "name": "乙訓高校",
-          "slug": "otokuni"
-        },
-        {
-          "display": "東山",
-          "score": 1,
-          "won": false,
-          "name": "東山",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "京都国際",
-          "score": 4,
-          "won": true,
-          "name": "京都国際",
-          "slug": null
-        },
-        {
-          "display": "洛東",
-          "score": 0,
-          "won": false,
-          "name": "洛東高校",
-          "slug": "rakuto"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "西城陽",
-          "score": 0,
-          "won": false,
-          "name": "西城陽高校",
-          "slug": "nishijoyo"
-        },
-        {
-          "display": "京都外大西",
-          "score": 3,
-          "won": true,
-          "name": "京都外大西",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "福知山成美",
-          "score": 5,
-          "won": true,
-          "name": "福知山成美",
-          "slug": null
-        },
-        {
-          "display": "山城",
-          "score": 3,
-          "won": false,
-          "name": "山城高校",
-          "slug": "yamashiro"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "龍谷大平安",
-          "score": 19,
-          "won": true,
-          "name": "龍谷大平安",
-          "slug": null
-        },
-        {
-          "display": "西京",
-          "score": 0,
-          "won": false,
-          "name": "西京高校",
-          "slug": "saikyo"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "京都国際",
-          "score": 11,
-          "won": true,
-          "name": "京都国際",
-          "slug": null
-        },
-        {
-          "display": "京都外大西",
-          "score": 0,
-          "won": false,
-          "name": "京都外大西",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "福知山成美",
-          "score": 3,
-          "won": false,
-          "name": "福知山成美",
-          "slug": null
-        },
-        {
-          "display": "龍谷大平安",
-          "score": 13,
-          "won": true,
-          "name": "龍谷大平安",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2020-10-03",
-      "season": "autumn",
-      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
-      "round": "準決勝",
-      "venue": "わかさスタジアム京都",
-      "teams": [
-        {
-          "display": "京都国際",
-          "score": 1,
-          "won": false,
-          "name": "京都国際",
-          "slug": null
-        },
-        {
-          "display": "龍谷大平安",
-          "score": 3,
-          "won": true,
-          "name": "龍谷大平安",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2020-10-04",
-      "season": "autumn",
-      "tournament": "2020年 秋季近畿地区高校野球 京都府大会",
-      "round": "決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "龍谷大平安",
-          "score": 6,
-          "won": true,
-          "name": "龍谷大平安",
-          "slug": null
-        },
-        {
-          "display": "乙訓",
-          "score": 2,
-          "won": false,
-          "name": "乙訓高校",
-          "slug": "otokuni"
         }
       ]
     },

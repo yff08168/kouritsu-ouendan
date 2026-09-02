@@ -5,6 +5,512 @@
   "sourceUrl": "https://okayama.hsbflash.jp/",
   "games": [
     {
+      "date": "2021-04-24",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山商大附",
+          "score": 12,
+          "won": true,
+          "name": "岡山商大附",
+          "slug": null
+        },
+        {
+          "display": "倉敷南",
+          "score": 1,
+          "won": false,
+          "name": "倉敷南高校",
+          "slug": "kurashikiminami"
+        }
+      ]
+    },
+    {
+      "date": "2021-04-24",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "岡山城東",
+          "score": 14,
+          "won": true,
+          "name": "岡山城東高校",
+          "slug": "okayamajoto"
+        },
+        {
+          "display": "高梁",
+          "score": 0,
+          "won": false,
+          "name": "高梁高校",
+          "slug": "takahashi"
+        }
+      ]
+    },
+    {
+      "date": "2021-04-24",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "就実",
+          "score": 6,
+          "won": true,
+          "name": "就実",
+          "slug": null
+        },
+        {
+          "display": "美作",
+          "score": 2,
+          "won": false,
+          "name": "美作",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-04-24",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "岡山東商",
+          "score": 7,
+          "won": true,
+          "name": "岡山東商業高校",
+          "slug": "okayamahigashishogyo"
+        },
+        {
+          "display": "玉野光南",
+          "score": 0,
+          "won": false,
+          "name": "玉野光南高校",
+          "slug": "tamanokonan"
+        }
+      ]
+    },
+    {
+      "date": "2021-04-25",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "玉島商",
+          "score": 3,
+          "won": false,
+          "name": "玉島商業高校",
+          "slug": "tamashimashogyo"
+        },
+        {
+          "display": "岡山商大附",
+          "score": 10,
+          "won": true,
+          "name": "岡山商大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-04-25",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山城東",
+          "score": 3,
+          "won": false,
+          "name": "岡山城東高校",
+          "slug": "okayamajoto"
+        },
+        {
+          "display": "倉敷工",
+          "score": 10,
+          "won": true,
+          "name": "倉敷工業高校",
+          "slug": "kurashikikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-04-25",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "倉敷商",
+          "score": 5,
+          "won": true,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        },
+        {
+          "display": "就実",
+          "score": 3,
+          "won": false,
+          "name": "就実",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-04-25",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山東商",
+          "score": 5,
+          "won": true,
+          "name": "岡山東商業高校",
+          "slug": "okayamahigashishogyo"
+        },
+        {
+          "display": "玉野商工",
+          "score": 2,
+          "won": false,
+          "name": "玉野商工高校",
+          "slug": "tamanoshoko"
+        }
+      ]
+    },
+    {
+      "date": "2021-04-30",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "準決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山商大附",
+          "score": 0,
+          "won": false,
+          "name": "岡山商大附",
+          "slug": null
+        },
+        {
+          "display": "倉敷工",
+          "score": 6,
+          "won": true,
+          "name": "倉敷工業高校",
+          "slug": "kurashikikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-04-30",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "準決勝",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "倉敷商",
+          "score": 5,
+          "won": true,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        },
+        {
+          "display": "岡山東商",
+          "score": 4,
+          "won": false,
+          "name": "岡山東商業高校",
+          "slug": "okayamahigashishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-04-24",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "1回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山",
+          "score": 4,
+          "won": false,
+          "name": "岡山",
+          "slug": null
+        },
+        {
+          "display": "水島工",
+          "score": 13,
+          "won": true,
+          "name": "水島工業高校",
+          "slug": "mizushimakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-04-24",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "1回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "津山商",
+          "score": 2,
+          "won": false,
+          "name": "津山商業高校",
+          "slug": "tsuyamashogyo"
+        },
+        {
+          "display": "高梁日新",
+          "score": 9,
+          "won": true,
+          "name": "高梁日新",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-04-24",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "1回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "岡山理大附",
+          "score": 6,
+          "won": false,
+          "name": "岡山理大附",
+          "slug": null
+        },
+        {
+          "display": "総社南",
+          "score": 8,
+          "won": true,
+          "name": "総社南高校",
+          "slug": "sojaminami"
+        }
+      ]
+    },
+    {
+      "date": "2021-04-24",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "1回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "岡山工",
+          "score": 0,
+          "won": false,
+          "name": "岡山工業高校",
+          "slug": "okayamakogyo"
+        },
+        {
+          "display": "おかやま山陽",
+          "score": 12,
+          "won": true,
+          "name": "おかやま山陽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-04-25",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "創志学園",
+          "score": 7,
+          "won": true,
+          "name": "創志学園",
+          "slug": null
+        },
+        {
+          "display": "水島工",
+          "score": 0,
+          "won": false,
+          "name": "水島工業高校",
+          "slug": "mizushimakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-04-25",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "高梁日新",
+          "score": 0,
+          "won": false,
+          "name": "高梁日新",
+          "slug": null
+        },
+        {
+          "display": "興譲館",
+          "score": 5,
+          "won": true,
+          "name": "興譲館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-04-25",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "関西",
+          "score": 3,
+          "won": false,
+          "name": "関西",
+          "slug": null
+        },
+        {
+          "display": "総社南",
+          "score": 10,
+          "won": true,
+          "name": "総社南高校",
+          "slug": "sojaminami"
+        }
+      ]
+    },
+    {
+      "date": "2021-04-25",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "おかやま山陽",
+          "score": 3,
+          "won": true,
+          "name": "おかやま山陽",
+          "slug": null
+        },
+        {
+          "display": "岡山学芸館",
+          "score": 1,
+          "won": false,
+          "name": "岡山学芸館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-04-30",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "創志学園",
+          "score": 3,
+          "won": true,
+          "name": "創志学園",
+          "slug": null
+        },
+        {
+          "display": "興譲館",
+          "score": 1,
+          "won": false,
+          "name": "興譲館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-04-30",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "総社南",
+          "score": 1,
+          "won": true,
+          "name": "総社南高校",
+          "slug": "sojaminami"
+        },
+        {
+          "display": "おかやま山陽",
+          "score": 0,
+          "won": false,
+          "name": "おかやま山陽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-05-01",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "準決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "創志学園",
+          "score": 10,
+          "won": true,
+          "name": "創志学園",
+          "slug": null
+        },
+        {
+          "display": "総社南",
+          "score": 0,
+          "won": false,
+          "name": "総社南高校",
+          "slug": "sojaminami"
+        }
+      ]
+    },
+    {
+      "date": "2021-05-02",
+      "season": "spring",
+      "tournament": "2021年 春季中国地区高校野球 岡山県大会",
+      "round": "決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "創志学園",
+          "score": 14,
+          "won": true,
+          "name": "創志学園",
+          "slug": null
+        },
+        {
+          "display": "倉敷商",
+          "score": 2,
+          "won": false,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        }
+      ]
+    },
+    {
       "date": "2019-04-27",
       "season": "spring",
       "tournament": "2019年 春季中国地区高校野球 岡山県大会",
@@ -3133,6 +3639,1317 @@
       ]
     },
     {
+      "date": "2021-07-13",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "倉敷",
+          "score": 4,
+          "won": true,
+          "name": "倉敷",
+          "slug": null
+        },
+        {
+          "display": "勝山",
+          "score": 3,
+          "won": false,
+          "name": "勝山高校",
+          "slug": "okayama-katsuyama"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-14",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山芳泉",
+          "score": 4,
+          "won": true,
+          "name": "岡山芳泉高校",
+          "slug": "okayamahosen"
+        },
+        {
+          "display": "岡山大安寺",
+          "score": 3,
+          "won": false,
+          "name": "岡山大安寺中等教育学校",
+          "slug": "okayamadaianji"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-14",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "岡山理大附",
+          "score": 10,
+          "won": true,
+          "name": "岡山理大附",
+          "slug": null
+        },
+        {
+          "display": "笠岡商業",
+          "score": 0,
+          "won": false,
+          "name": "笠岡商業高校",
+          "slug": "kasaokashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-14",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山一宮",
+          "score": 11,
+          "won": true,
+          "name": "岡山一宮高校",
+          "slug": "okayamaichinomiya"
+        },
+        {
+          "display": "津山高専",
+          "score": 1,
+          "won": false,
+          "name": "津山工業高専",
+          "slug": "tsuyamakogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-14",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "玉島商業",
+          "score": 8,
+          "won": true,
+          "name": "玉島商業高校",
+          "slug": "tamashimashogyo"
+        },
+        {
+          "display": "笠岡工業",
+          "score": 1,
+          "won": false,
+          "name": "笠岡工業高校",
+          "slug": "kasaokakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-14",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "倉敷鷲羽",
+          "score": 2,
+          "won": false,
+          "name": "倉敷鷲羽高校",
+          "slug": "kurashikiwashu"
+        },
+        {
+          "display": "金光学園",
+          "score": 4,
+          "won": true,
+          "name": "金光学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-11",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "西大寺",
+          "score": 1,
+          "won": false,
+          "name": "西大寺高校",
+          "slug": "saidaiji"
+        },
+        {
+          "display": "岡山東商業",
+          "score": 9,
+          "won": true,
+          "name": "岡山東商業高校",
+          "slug": "okayamahigashishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-14",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "関西",
+          "score": 11,
+          "won": true,
+          "name": "関西",
+          "slug": null
+        },
+        {
+          "display": "岡山朝日",
+          "score": 0,
+          "won": false,
+          "name": "岡山朝日高校",
+          "slug": "okayamaasahi"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-14",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "玉野商工",
+          "score": 15,
+          "won": true,
+          "name": "玉野商工高校",
+          "slug": "tamanoshoko"
+        },
+        {
+          "display": "吉備高原学園",
+          "score": 1,
+          "won": false,
+          "name": "吉備高原学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-15",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "林野",
+          "score": 1,
+          "won": false,
+          "name": "林野高校",
+          "slug": "hayashino"
+        },
+        {
+          "display": "倉敷南",
+          "score": 3,
+          "won": true,
+          "name": "倉敷南高校",
+          "slug": "kurashikiminami"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-15",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "和気閑谷",
+          "score": 18,
+          "won": true,
+          "name": "和気閑谷高校",
+          "slug": "wakeshizutani"
+        },
+        {
+          "display": "邑久",
+          "score": 3,
+          "won": false,
+          "name": "邑久高校",
+          "slug": "oku"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-15",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "備前緑陽",
+          "score": 5,
+          "won": false,
+          "name": "備前緑陽高校",
+          "slug": "bizenryokuyo"
+        },
+        {
+          "display": "津山",
+          "score": 7,
+          "won": true,
+          "name": "津山高校",
+          "slug": "tsuyama"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-13",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "高梁日新",
+          "score": 4,
+          "won": false,
+          "name": "高梁日新",
+          "slug": null
+        },
+        {
+          "display": "津山工業",
+          "score": 5,
+          "won": true,
+          "name": "津山工業高校",
+          "slug": "tsuyamakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "創志学園",
+          "score": 4,
+          "won": true,
+          "name": "創志学園",
+          "slug": null
+        },
+        {
+          "display": "倉敷",
+          "score": 3,
+          "won": false,
+          "name": "倉敷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "2回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "岡山芳泉",
+          "score": 0,
+          "won": false,
+          "name": "岡山芳泉高校",
+          "slug": "okayamahosen"
+        },
+        {
+          "display": "岡山理大附",
+          "score": 19,
+          "won": true,
+          "name": "岡山理大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山一宮",
+          "score": 4,
+          "won": false,
+          "name": "岡山一宮高校",
+          "slug": "okayamaichinomiya"
+        },
+        {
+          "display": "玉島商業",
+          "score": 8,
+          "won": true,
+          "name": "玉島商業高校",
+          "slug": "tamashimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "金光学園",
+          "score": 3,
+          "won": false,
+          "name": "金光学園",
+          "slug": null
+        },
+        {
+          "display": "岡山東商業",
+          "score": 5,
+          "won": true,
+          "name": "岡山東商業高校",
+          "slug": "okayamahigashishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "興譲館",
+          "score": 2,
+          "won": false,
+          "name": "興譲館",
+          "slug": null
+        },
+        {
+          "display": "関西",
+          "score": 9,
+          "won": true,
+          "name": "関西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "2回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "玉野商工",
+          "score": 7,
+          "won": true,
+          "name": "玉野商工高校",
+          "slug": "tamanoshoko"
+        },
+        {
+          "display": "倉敷南",
+          "score": 0,
+          "won": false,
+          "name": "倉敷南高校",
+          "slug": "kurashikiminami"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "和気閑谷",
+          "score": 7,
+          "won": true,
+          "name": "和気閑谷高校",
+          "slug": "wakeshizutani"
+        },
+        {
+          "display": "津山",
+          "score": 5,
+          "won": false,
+          "name": "津山高校",
+          "slug": "tsuyama"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "津山工業",
+          "score": 0,
+          "won": false,
+          "name": "津山工業高校",
+          "slug": "tsuyamakogyo"
+        },
+        {
+          "display": "倉敷商業",
+          "score": 16,
+          "won": true,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-19",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "3回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "創志学園",
+          "score": 7,
+          "won": true,
+          "name": "創志学園",
+          "slug": null
+        },
+        {
+          "display": "岡山理大附",
+          "score": 3,
+          "won": false,
+          "name": "岡山理大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-19",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "3回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "玉島商業",
+          "score": 10,
+          "won": true,
+          "name": "玉島商業高校",
+          "slug": "tamashimashogyo"
+        },
+        {
+          "display": "岡山東商業",
+          "score": 1,
+          "won": false,
+          "name": "岡山東商業高校",
+          "slug": "okayamahigashishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-19",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "3回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "関西",
+          "score": 4,
+          "won": true,
+          "name": "関西",
+          "slug": null
+        },
+        {
+          "display": "玉野商工",
+          "score": 3,
+          "won": false,
+          "name": "玉野商工高校",
+          "slug": "tamanoshoko"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-19",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "3回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "和気閑谷",
+          "score": 5,
+          "won": false,
+          "name": "和気閑谷高校",
+          "slug": "wakeshizutani"
+        },
+        {
+          "display": "倉敷商業",
+          "score": 12,
+          "won": true,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-21",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "創志学園",
+          "score": 4,
+          "won": true,
+          "name": "創志学園",
+          "slug": null
+        },
+        {
+          "display": "玉島商業",
+          "score": 2,
+          "won": false,
+          "name": "玉島商業高校",
+          "slug": "tamashimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-21",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "関西",
+          "score": 3,
+          "won": false,
+          "name": "関西",
+          "slug": null
+        },
+        {
+          "display": "倉敷商業",
+          "score": 4,
+          "won": true,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-23",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "準決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "創志学園",
+          "score": 3,
+          "won": false,
+          "name": "創志学園",
+          "slug": null
+        },
+        {
+          "display": "倉敷商業",
+          "score": 4,
+          "won": true,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-10",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "瀬戸",
+          "score": 7,
+          "won": true,
+          "name": "瀬戸高校",
+          "slug": "okayama-seto"
+        },
+        {
+          "display": "岡山御津",
+          "score": 2,
+          "won": false,
+          "name": "岡山御津高校",
+          "slug": "okayamamitsu"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-11",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "倉敷天城",
+          "score": 4,
+          "won": true,
+          "name": "倉敷天城高校",
+          "slug": "kurashikiamaki"
+        },
+        {
+          "display": "岡山工業",
+          "score": 2,
+          "won": false,
+          "name": "岡山工業高校",
+          "slug": "okayamakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-11",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "岡山城東",
+          "score": 8,
+          "won": true,
+          "name": "岡山城東高校",
+          "slug": "okayamajoto"
+        },
+        {
+          "display": "津山商業",
+          "score": 0,
+          "won": false,
+          "name": "津山商業高校",
+          "slug": "tsuyamashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-11",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "岡山県作陽",
+          "score": 0,
+          "won": false,
+          "name": "岡山県作陽",
+          "slug": null
+        },
+        {
+          "display": "岡山学芸館",
+          "score": 3,
+          "won": true,
+          "name": "岡山学芸館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-11",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山白陵",
+          "score": 0,
+          "won": false,
+          "name": "岡山白陵",
+          "slug": null
+        },
+        {
+          "display": "明誠学院",
+          "score": 10,
+          "won": true,
+          "name": "明誠学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-11",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "高梁",
+          "score": 3,
+          "won": false,
+          "name": "高梁高校",
+          "slug": "takahashi"
+        },
+        {
+          "display": "玉野光南",
+          "score": 10,
+          "won": true,
+          "name": "玉野光南高校",
+          "slug": "tamanokonan"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-11",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山商大附",
+          "score": 4,
+          "won": true,
+          "name": "岡山商大附",
+          "slug": null
+        },
+        {
+          "display": "水島工業",
+          "score": 1,
+          "won": false,
+          "name": "水島工業高校",
+          "slug": "mizushimakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-13",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "岡山南",
+          "score": 7,
+          "won": true,
+          "name": "岡山南高校",
+          "slug": "okayamaminami"
+        },
+        {
+          "display": "岡山県美作",
+          "score": 6,
+          "won": false,
+          "name": "岡山県美作",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-12",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山操山",
+          "score": 12,
+          "won": true,
+          "name": "岡山操山高校",
+          "slug": "okayamasozan"
+        },
+        {
+          "display": "玉野",
+          "score": 5,
+          "won": false,
+          "name": "玉野高校",
+          "slug": "tamano"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-12",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "就実",
+          "score": 10,
+          "won": true,
+          "name": "就実",
+          "slug": null
+        },
+        {
+          "display": "東岡山工業",
+          "score": 0,
+          "won": false,
+          "name": "東岡山工業高校",
+          "slug": "higashiokayamakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-13",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "興陽",
+          "score": 1,
+          "won": false,
+          "name": "興陽高校",
+          "slug": "okayama-koyo"
+        },
+        {
+          "display": "倉敷古城池",
+          "score": 2,
+          "won": true,
+          "name": "倉敷古城池高校",
+          "slug": "kurashikikojochi"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-13",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "倉敷青陵",
+          "score": 8,
+          "won": false,
+          "name": "倉敷青陵高校",
+          "slug": "kurashikiseiryo"
+        },
+        {
+          "display": "津山東",
+          "score": 10,
+          "won": true,
+          "name": "津山東高校",
+          "slug": "tsuyamahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-10",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "1回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "倉敷翠松",
+          "score": 13,
+          "won": true,
+          "name": "倉敷翠松",
+          "slug": null
+        },
+        {
+          "display": "岡山",
+          "score": 3,
+          "won": false,
+          "name": "岡山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-15",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "倉敷工業",
+          "score": 10,
+          "won": true,
+          "name": "倉敷工業高校",
+          "slug": "kurashikikogyo"
+        },
+        {
+          "display": "瀬戸",
+          "score": 0,
+          "won": false,
+          "name": "瀬戸高校",
+          "slug": "okayama-seto"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "2回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "倉敷天城",
+          "score": 0,
+          "won": false,
+          "name": "倉敷天城高校",
+          "slug": "kurashikiamaki"
+        },
+        {
+          "display": "岡山城東",
+          "score": 2,
+          "won": true,
+          "name": "岡山城東高校",
+          "slug": "okayamajoto"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "2回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "岡山学芸館",
+          "score": 3,
+          "won": true,
+          "name": "岡山学芸館",
+          "slug": null
+        },
+        {
+          "display": "明誠学院",
+          "score": 0,
+          "won": false,
+          "name": "明誠学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-15",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "玉野光南",
+          "score": 0,
+          "won": false,
+          "name": "玉野光南高校",
+          "slug": "tamanokonan"
+        },
+        {
+          "display": "おかやま山陽",
+          "score": 7,
+          "won": true,
+          "name": "おかやま山陽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-15",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "2回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "岡山商大附",
+          "score": 5,
+          "won": true,
+          "name": "岡山商大附",
+          "slug": null
+        },
+        {
+          "display": "岡山南",
+          "score": 4,
+          "won": false,
+          "name": "岡山南高校",
+          "slug": "okayamaminami"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "2回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "岡山操山",
+          "score": 0,
+          "won": false,
+          "name": "岡山操山高校",
+          "slug": "okayamasozan"
+        },
+        {
+          "display": "就実",
+          "score": 10,
+          "won": true,
+          "name": "就実",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "2回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "倉敷古城池",
+          "score": 2,
+          "won": false,
+          "name": "倉敷古城池高校",
+          "slug": "kurashikikojochi"
+        },
+        {
+          "display": "津山東",
+          "score": 3,
+          "won": true,
+          "name": "津山東高校",
+          "slug": "tsuyamahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-15",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "倉敷翠松",
+          "score": 3,
+          "won": false,
+          "name": "倉敷翠松",
+          "slug": null
+        },
+        {
+          "display": "総社南",
+          "score": 10,
+          "won": true,
+          "name": "総社南高校",
+          "slug": "sojaminami"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "3回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "倉敷工業",
+          "score": 3,
+          "won": false,
+          "name": "倉敷工業高校",
+          "slug": "kurashikikogyo"
+        },
+        {
+          "display": "岡山城東",
+          "score": 4,
+          "won": true,
+          "name": "岡山城東高校",
+          "slug": "okayamajoto"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "3回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "岡山学芸館",
+          "score": 0,
+          "won": false,
+          "name": "岡山学芸館",
+          "slug": null
+        },
+        {
+          "display": "おかやま山陽",
+          "score": 10,
+          "won": true,
+          "name": "おかやま山陽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "3回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山商大附",
+          "score": 8,
+          "won": false,
+          "name": "岡山商大附",
+          "slug": null
+        },
+        {
+          "display": "就実",
+          "score": 11,
+          "won": true,
+          "name": "就実",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "3回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "津山東",
+          "score": 0,
+          "won": false,
+          "name": "津山東高校",
+          "slug": "tsuyamahigashi"
+        },
+        {
+          "display": "総社南",
+          "score": 4,
+          "won": true,
+          "name": "総社南高校",
+          "slug": "sojaminami"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-20",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山城東",
+          "score": 5,
+          "won": false,
+          "name": "岡山城東高校",
+          "slug": "okayamajoto"
+        },
+        {
+          "display": "おかやま山陽",
+          "score": 12,
+          "won": true,
+          "name": "おかやま山陽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-20",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "就実",
+          "score": 8,
+          "won": true,
+          "name": "就実",
+          "slug": null
+        },
+        {
+          "display": "総社南",
+          "score": 2,
+          "won": false,
+          "name": "総社南高校",
+          "slug": "sojaminami"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-23",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "準決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "おかやま山陽",
+          "score": 8,
+          "won": true,
+          "name": "おかやま山陽",
+          "slug": null
+        },
+        {
+          "display": "就実",
+          "score": 0,
+          "won": false,
+          "name": "就実",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-25",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 岡山大会",
+      "round": "決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "おかやま山陽",
+          "score": 6,
+          "won": false,
+          "name": "おかやま山陽",
+          "slug": null
+        },
+        {
+          "display": "倉敷商業",
+          "score": 7,
+          "won": true,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        }
+      ]
+    },
+    {
       "date": "2019-07-16",
       "season": "summer",
       "tournament": "第101回全国高等学校野球選手権 岡山大会",
@@ -5774,1317 +7591,6 @@
           "won": false,
           "name": "創志学園",
           "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-13",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "エイコンスタジアム",
-      "teams": [
-        {
-          "display": "倉敷",
-          "score": 4,
-          "won": true,
-          "name": "倉敷",
-          "slug": null
-        },
-        {
-          "display": "勝山",
-          "score": 3,
-          "won": false,
-          "name": "勝山高校",
-          "slug": "okayama-katsuyama"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-14",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "岡山芳泉",
-          "score": 4,
-          "won": true,
-          "name": "岡山芳泉高校",
-          "slug": "okayamahosen"
-        },
-        {
-          "display": "岡山大安寺",
-          "score": 3,
-          "won": false,
-          "name": "岡山大安寺中等教育学校",
-          "slug": "okayamadaianji"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-14",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "岡山理大附",
-          "score": 10,
-          "won": true,
-          "name": "岡山理大附",
-          "slug": null
-        },
-        {
-          "display": "笠岡商業",
-          "score": 0,
-          "won": false,
-          "name": "笠岡商業高校",
-          "slug": "kasaokashogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-14",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "岡山一宮",
-          "score": 11,
-          "won": true,
-          "name": "岡山一宮高校",
-          "slug": "okayamaichinomiya"
-        },
-        {
-          "display": "津山高専",
-          "score": 1,
-          "won": false,
-          "name": "津山工業高専",
-          "slug": "tsuyamakogyo-kosen"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-14",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "玉島商業",
-          "score": 8,
-          "won": true,
-          "name": "玉島商業高校",
-          "slug": "tamashimashogyo"
-        },
-        {
-          "display": "笠岡工業",
-          "score": 1,
-          "won": false,
-          "name": "笠岡工業高校",
-          "slug": "kasaokakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-14",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "エイコンスタジアム",
-      "teams": [
-        {
-          "display": "倉敷鷲羽",
-          "score": 2,
-          "won": false,
-          "name": "倉敷鷲羽高校",
-          "slug": "kurashikiwashu"
-        },
-        {
-          "display": "金光学園",
-          "score": 4,
-          "won": true,
-          "name": "金光学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-11",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "西大寺",
-          "score": 1,
-          "won": false,
-          "name": "西大寺高校",
-          "slug": "saidaiji"
-        },
-        {
-          "display": "岡山東商業",
-          "score": 9,
-          "won": true,
-          "name": "岡山東商業高校",
-          "slug": "okayamahigashishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-14",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "エイコンスタジアム",
-      "teams": [
-        {
-          "display": "関西",
-          "score": 11,
-          "won": true,
-          "name": "関西",
-          "slug": null
-        },
-        {
-          "display": "岡山朝日",
-          "score": 0,
-          "won": false,
-          "name": "岡山朝日高校",
-          "slug": "okayamaasahi"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-14",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "玉野商工",
-          "score": 15,
-          "won": true,
-          "name": "玉野商工高校",
-          "slug": "tamanoshoko"
-        },
-        {
-          "display": "吉備高原学園",
-          "score": 1,
-          "won": false,
-          "name": "吉備高原学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-15",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "エイコンスタジアム",
-      "teams": [
-        {
-          "display": "林野",
-          "score": 1,
-          "won": false,
-          "name": "林野高校",
-          "slug": "hayashino"
-        },
-        {
-          "display": "倉敷南",
-          "score": 3,
-          "won": true,
-          "name": "倉敷南高校",
-          "slug": "kurashikiminami"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-15",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "和気閑谷",
-          "score": 18,
-          "won": true,
-          "name": "和気閑谷高校",
-          "slug": "wakeshizutani"
-        },
-        {
-          "display": "邑久",
-          "score": 3,
-          "won": false,
-          "name": "邑久高校",
-          "slug": "oku"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-15",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "エイコンスタジアム",
-      "teams": [
-        {
-          "display": "備前緑陽",
-          "score": 5,
-          "won": false,
-          "name": "備前緑陽高校",
-          "slug": "bizenryokuyo"
-        },
-        {
-          "display": "津山",
-          "score": 7,
-          "won": true,
-          "name": "津山高校",
-          "slug": "tsuyama"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-13",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "高梁日新",
-          "score": 4,
-          "won": false,
-          "name": "高梁日新",
-          "slug": null
-        },
-        {
-          "display": "津山工業",
-          "score": 5,
-          "won": true,
-          "name": "津山工業高校",
-          "slug": "tsuyamakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-16",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "2回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "創志学園",
-          "score": 4,
-          "won": true,
-          "name": "創志学園",
-          "slug": null
-        },
-        {
-          "display": "倉敷",
-          "score": 3,
-          "won": false,
-          "name": "倉敷",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-17",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "2回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "岡山芳泉",
-          "score": 0,
-          "won": false,
-          "name": "岡山芳泉高校",
-          "slug": "okayamahosen"
-        },
-        {
-          "display": "岡山理大附",
-          "score": 19,
-          "won": true,
-          "name": "岡山理大附",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-17",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "2回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "岡山一宮",
-          "score": 4,
-          "won": false,
-          "name": "岡山一宮高校",
-          "slug": "okayamaichinomiya"
-        },
-        {
-          "display": "玉島商業",
-          "score": 8,
-          "won": true,
-          "name": "玉島商業高校",
-          "slug": "tamashimashogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-17",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "2回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "金光学園",
-          "score": 3,
-          "won": false,
-          "name": "金光学園",
-          "slug": null
-        },
-        {
-          "display": "岡山東商業",
-          "score": 5,
-          "won": true,
-          "name": "岡山東商業高校",
-          "slug": "okayamahigashishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-16",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "2回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "興譲館",
-          "score": 2,
-          "won": false,
-          "name": "興譲館",
-          "slug": null
-        },
-        {
-          "display": "関西",
-          "score": 9,
-          "won": true,
-          "name": "関西",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-17",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "2回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "玉野商工",
-          "score": 7,
-          "won": true,
-          "name": "玉野商工高校",
-          "slug": "tamanoshoko"
-        },
-        {
-          "display": "倉敷南",
-          "score": 0,
-          "won": false,
-          "name": "倉敷南高校",
-          "slug": "kurashikiminami"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-17",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "2回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "和気閑谷",
-          "score": 7,
-          "won": true,
-          "name": "和気閑谷高校",
-          "slug": "wakeshizutani"
-        },
-        {
-          "display": "津山",
-          "score": 5,
-          "won": false,
-          "name": "津山高校",
-          "slug": "tsuyama"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-16",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "2回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "津山工業",
-          "score": 0,
-          "won": false,
-          "name": "津山工業高校",
-          "slug": "tsuyamakogyo"
-        },
-        {
-          "display": "倉敷商業",
-          "score": 16,
-          "won": true,
-          "name": "倉敷商業高校",
-          "slug": "kurashikishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-19",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "3回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "創志学園",
-          "score": 7,
-          "won": true,
-          "name": "創志学園",
-          "slug": null
-        },
-        {
-          "display": "岡山理大附",
-          "score": 3,
-          "won": false,
-          "name": "岡山理大附",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-19",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "3回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "玉島商業",
-          "score": 10,
-          "won": true,
-          "name": "玉島商業高校",
-          "slug": "tamashimashogyo"
-        },
-        {
-          "display": "岡山東商業",
-          "score": 1,
-          "won": false,
-          "name": "岡山東商業高校",
-          "slug": "okayamahigashishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-19",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "3回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "関西",
-          "score": 4,
-          "won": true,
-          "name": "関西",
-          "slug": null
-        },
-        {
-          "display": "玉野商工",
-          "score": 3,
-          "won": false,
-          "name": "玉野商工高校",
-          "slug": "tamanoshoko"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-19",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "3回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "和気閑谷",
-          "score": 5,
-          "won": false,
-          "name": "和気閑谷高校",
-          "slug": "wakeshizutani"
-        },
-        {
-          "display": "倉敷商業",
-          "score": 12,
-          "won": true,
-          "name": "倉敷商業高校",
-          "slug": "kurashikishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-21",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "準々決勝",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "創志学園",
-          "score": 4,
-          "won": true,
-          "name": "創志学園",
-          "slug": null
-        },
-        {
-          "display": "玉島商業",
-          "score": 2,
-          "won": false,
-          "name": "玉島商業高校",
-          "slug": "tamashimashogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-21",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "準々決勝",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "関西",
-          "score": 3,
-          "won": false,
-          "name": "関西",
-          "slug": null
-        },
-        {
-          "display": "倉敷商業",
-          "score": 4,
-          "won": true,
-          "name": "倉敷商業高校",
-          "slug": "kurashikishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-23",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "準決勝",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "創志学園",
-          "score": 3,
-          "won": false,
-          "name": "創志学園",
-          "slug": null
-        },
-        {
-          "display": "倉敷商業",
-          "score": 4,
-          "won": true,
-          "name": "倉敷商業高校",
-          "slug": "kurashikishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-10",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "瀬戸",
-          "score": 7,
-          "won": true,
-          "name": "瀬戸高校",
-          "slug": "okayama-seto"
-        },
-        {
-          "display": "岡山御津",
-          "score": 2,
-          "won": false,
-          "name": "岡山御津高校",
-          "slug": "okayamamitsu"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-11",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "エイコンスタジアム",
-      "teams": [
-        {
-          "display": "倉敷天城",
-          "score": 4,
-          "won": true,
-          "name": "倉敷天城高校",
-          "slug": "kurashikiamaki"
-        },
-        {
-          "display": "岡山工業",
-          "score": 2,
-          "won": false,
-          "name": "岡山工業高校",
-          "slug": "okayamakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-11",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "岡山城東",
-          "score": 8,
-          "won": true,
-          "name": "岡山城東高校",
-          "slug": "okayamajoto"
-        },
-        {
-          "display": "津山商業",
-          "score": 0,
-          "won": false,
-          "name": "津山商業高校",
-          "slug": "tsuyamashogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-11",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "エイコンスタジアム",
-      "teams": [
-        {
-          "display": "岡山県作陽",
-          "score": 0,
-          "won": false,
-          "name": "岡山県作陽",
-          "slug": null
-        },
-        {
-          "display": "岡山学芸館",
-          "score": 3,
-          "won": true,
-          "name": "岡山学芸館",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-11",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "岡山白陵",
-          "score": 0,
-          "won": false,
-          "name": "岡山白陵",
-          "slug": null
-        },
-        {
-          "display": "明誠学院",
-          "score": 10,
-          "won": true,
-          "name": "明誠学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-11",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "高梁",
-          "score": 3,
-          "won": false,
-          "name": "高梁高校",
-          "slug": "takahashi"
-        },
-        {
-          "display": "玉野光南",
-          "score": 10,
-          "won": true,
-          "name": "玉野光南高校",
-          "slug": "tamanokonan"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-11",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "岡山商大附",
-          "score": 4,
-          "won": true,
-          "name": "岡山商大附",
-          "slug": null
-        },
-        {
-          "display": "水島工業",
-          "score": 1,
-          "won": false,
-          "name": "水島工業高校",
-          "slug": "mizushimakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-13",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "岡山南",
-          "score": 7,
-          "won": true,
-          "name": "岡山南高校",
-          "slug": "okayamaminami"
-        },
-        {
-          "display": "岡山県美作",
-          "score": 6,
-          "won": false,
-          "name": "岡山県美作",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-12",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "岡山操山",
-          "score": 12,
-          "won": true,
-          "name": "岡山操山高校",
-          "slug": "okayamasozan"
-        },
-        {
-          "display": "玉野",
-          "score": 5,
-          "won": false,
-          "name": "玉野高校",
-          "slug": "tamano"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-12",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "就実",
-          "score": 10,
-          "won": true,
-          "name": "就実",
-          "slug": null
-        },
-        {
-          "display": "東岡山工業",
-          "score": 0,
-          "won": false,
-          "name": "東岡山工業高校",
-          "slug": "higashiokayamakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-13",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "興陽",
-          "score": 1,
-          "won": false,
-          "name": "興陽高校",
-          "slug": "okayama-koyo"
-        },
-        {
-          "display": "倉敷古城池",
-          "score": 2,
-          "won": true,
-          "name": "倉敷古城池高校",
-          "slug": "kurashikikojochi"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-13",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "倉敷青陵",
-          "score": 8,
-          "won": false,
-          "name": "倉敷青陵高校",
-          "slug": "kurashikiseiryo"
-        },
-        {
-          "display": "津山東",
-          "score": 10,
-          "won": true,
-          "name": "津山東高校",
-          "slug": "tsuyamahigashi"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-10",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "1回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "倉敷翠松",
-          "score": 13,
-          "won": true,
-          "name": "倉敷翠松",
-          "slug": null
-        },
-        {
-          "display": "岡山",
-          "score": 3,
-          "won": false,
-          "name": "岡山",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-15",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "2回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "倉敷工業",
-          "score": 10,
-          "won": true,
-          "name": "倉敷工業高校",
-          "slug": "kurashikikogyo"
-        },
-        {
-          "display": "瀬戸",
-          "score": 0,
-          "won": false,
-          "name": "瀬戸高校",
-          "slug": "okayama-seto"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-16",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "2回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "倉敷天城",
-          "score": 0,
-          "won": false,
-          "name": "倉敷天城高校",
-          "slug": "kurashikiamaki"
-        },
-        {
-          "display": "岡山城東",
-          "score": 2,
-          "won": true,
-          "name": "岡山城東高校",
-          "slug": "okayamajoto"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-16",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "2回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "岡山学芸館",
-          "score": 3,
-          "won": true,
-          "name": "岡山学芸館",
-          "slug": null
-        },
-        {
-          "display": "明誠学院",
-          "score": 0,
-          "won": false,
-          "name": "明誠学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-15",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "2回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "玉野光南",
-          "score": 0,
-          "won": false,
-          "name": "玉野光南高校",
-          "slug": "tamanokonan"
-        },
-        {
-          "display": "おかやま山陽",
-          "score": 7,
-          "won": true,
-          "name": "おかやま山陽",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-15",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "2回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "岡山商大附",
-          "score": 5,
-          "won": true,
-          "name": "岡山商大附",
-          "slug": null
-        },
-        {
-          "display": "岡山南",
-          "score": 4,
-          "won": false,
-          "name": "岡山南高校",
-          "slug": "okayamaminami"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-16",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "2回戦",
-      "venue": "エイコンスタジアム",
-      "teams": [
-        {
-          "display": "岡山操山",
-          "score": 0,
-          "won": false,
-          "name": "岡山操山高校",
-          "slug": "okayamasozan"
-        },
-        {
-          "display": "就実",
-          "score": 10,
-          "won": true,
-          "name": "就実",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-16",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "2回戦",
-      "venue": "エイコンスタジアム",
-      "teams": [
-        {
-          "display": "倉敷古城池",
-          "score": 2,
-          "won": false,
-          "name": "倉敷古城池高校",
-          "slug": "kurashikikojochi"
-        },
-        {
-          "display": "津山東",
-          "score": 3,
-          "won": true,
-          "name": "津山東高校",
-          "slug": "tsuyamahigashi"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-15",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "2回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "倉敷翠松",
-          "score": 3,
-          "won": false,
-          "name": "倉敷翠松",
-          "slug": null
-        },
-        {
-          "display": "総社南",
-          "score": 10,
-          "won": true,
-          "name": "総社南高校",
-          "slug": "sojaminami"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-18",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "3回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "倉敷工業",
-          "score": 3,
-          "won": false,
-          "name": "倉敷工業高校",
-          "slug": "kurashikikogyo"
-        },
-        {
-          "display": "岡山城東",
-          "score": 4,
-          "won": true,
-          "name": "岡山城東高校",
-          "slug": "okayamajoto"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-18",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "3回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "岡山学芸館",
-          "score": 0,
-          "won": false,
-          "name": "岡山学芸館",
-          "slug": null
-        },
-        {
-          "display": "おかやま山陽",
-          "score": 10,
-          "won": true,
-          "name": "おかやま山陽",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-18",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "3回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "岡山商大附",
-          "score": 8,
-          "won": false,
-          "name": "岡山商大附",
-          "slug": null
-        },
-        {
-          "display": "就実",
-          "score": 11,
-          "won": true,
-          "name": "就実",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-18",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "3回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "津山東",
-          "score": 0,
-          "won": false,
-          "name": "津山東高校",
-          "slug": "tsuyamahigashi"
-        },
-        {
-          "display": "総社南",
-          "score": 4,
-          "won": true,
-          "name": "総社南高校",
-          "slug": "sojaminami"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-20",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "準々決勝",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "岡山城東",
-          "score": 5,
-          "won": false,
-          "name": "岡山城東高校",
-          "slug": "okayamajoto"
-        },
-        {
-          "display": "おかやま山陽",
-          "score": 12,
-          "won": true,
-          "name": "おかやま山陽",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-20",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "準々決勝",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "就実",
-          "score": 8,
-          "won": true,
-          "name": "就実",
-          "slug": null
-        },
-        {
-          "display": "総社南",
-          "score": 2,
-          "won": false,
-          "name": "総社南高校",
-          "slug": "sojaminami"
-        }
-      ]
-    },
-    {
-      "date": "2021-07-23",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "準決勝",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "おかやま山陽",
-          "score": 8,
-          "won": true,
-          "name": "おかやま山陽",
-          "slug": null
-        },
-        {
-          "display": "就実",
-          "score": 0,
-          "won": false,
-          "name": "就実",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-07-25",
-      "season": "summer",
-      "tournament": "第103回全国高等学校野球選手権 岡山大会",
-      "round": "決勝",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "おかやま山陽",
-          "score": 6,
-          "won": false,
-          "name": "おかやま山陽",
-          "slug": null
-        },
-        {
-          "display": "倉敷商業",
-          "score": 7,
-          "won": true,
-          "name": "倉敷商業高校",
-          "slug": "kurashikishogyo"
         }
       ]
     },
@@ -13399,6 +13905,443 @@
       ]
     },
     {
+      "date": "2021-09-25",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "1回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "岡山県美作",
+          "score": 11,
+          "won": true,
+          "name": "岡山県美作",
+          "slug": null
+        },
+        {
+          "display": "津山東",
+          "score": 3,
+          "won": false,
+          "name": "津山東高校",
+          "slug": "tsuyamahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2021-09-25",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "1回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "玉野商工",
+          "score": 2,
+          "won": true,
+          "name": "玉野商工高校",
+          "slug": "tamanoshoko"
+        },
+        {
+          "display": "明誠学院",
+          "score": 0,
+          "won": false,
+          "name": "明誠学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-09-26",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "岡山学芸館",
+          "score": 10,
+          "won": true,
+          "name": "岡山学芸館",
+          "slug": null
+        },
+        {
+          "display": "倉敷商業",
+          "score": 6,
+          "won": false,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-09-26",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "岡山理大附",
+          "score": 4,
+          "won": true,
+          "name": "岡山理大附",
+          "slug": null
+        },
+        {
+          "display": "岡山県美作",
+          "score": 2,
+          "won": false,
+          "name": "岡山県美作",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-09-26",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "玉野商工",
+          "score": 6,
+          "won": true,
+          "name": "玉野商工高校",
+          "slug": "tamanoshoko"
+        },
+        {
+          "display": "岡山県作陽",
+          "score": 2,
+          "won": false,
+          "name": "岡山県作陽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-09-26",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "玉島商業",
+          "score": 1,
+          "won": false,
+          "name": "玉島商業高校",
+          "slug": "tamashimashogyo"
+        },
+        {
+          "display": "創志学園",
+          "score": 5,
+          "won": true,
+          "name": "創志学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-10-03",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山学芸館",
+          "score": 4,
+          "won": true,
+          "name": "岡山学芸館",
+          "slug": null
+        },
+        {
+          "display": "岡山理大附",
+          "score": 1,
+          "won": false,
+          "name": "岡山理大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-10-03",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "玉野商工",
+          "score": 1,
+          "won": false,
+          "name": "玉野商工高校",
+          "slug": "tamanoshoko"
+        },
+        {
+          "display": "創志学園",
+          "score": 5,
+          "won": true,
+          "name": "創志学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-10-09",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "準決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山学芸館",
+          "score": 6,
+          "won": true,
+          "name": "岡山学芸館",
+          "slug": null
+        },
+        {
+          "display": "創志学園",
+          "score": 0,
+          "won": false,
+          "name": "創志学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-09-25",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "1回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "倉敷天城",
+          "score": 11,
+          "won": true,
+          "name": "倉敷天城高校",
+          "slug": "kurashikiamaki"
+        },
+        {
+          "display": "岡山一宮",
+          "score": 2,
+          "won": false,
+          "name": "岡山一宮高校",
+          "slug": "okayamaichinomiya"
+        }
+      ]
+    },
+    {
+      "date": "2021-09-25",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "1回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "興譲館",
+          "score": 2,
+          "won": false,
+          "name": "興譲館",
+          "slug": null
+        },
+        {
+          "display": "西大寺",
+          "score": 12,
+          "won": true,
+          "name": "西大寺高校",
+          "slug": "saidaiji"
+        }
+      ]
+    },
+    {
+      "date": "2021-09-25",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "倉敷工業",
+          "score": 11,
+          "won": true,
+          "name": "倉敷工業高校",
+          "slug": "kurashikikogyo"
+        },
+        {
+          "display": "おかやま山陽",
+          "score": 2,
+          "won": false,
+          "name": "おかやま山陽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-09-26",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "玉野光南",
+          "score": 12,
+          "won": true,
+          "name": "玉野光南高校",
+          "slug": "tamanokonan"
+        },
+        {
+          "display": "倉敷天城",
+          "score": 5,
+          "won": false,
+          "name": "倉敷天城高校",
+          "slug": "kurashikiamaki"
+        }
+      ]
+    },
+    {
+      "date": "2021-09-26",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "西大寺",
+          "score": 4,
+          "won": false,
+          "name": "西大寺高校",
+          "slug": "saidaiji"
+        },
+        {
+          "display": "関西",
+          "score": 6,
+          "won": true,
+          "name": "関西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-09-25",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "就実",
+          "score": 1,
+          "won": false,
+          "name": "就実",
+          "slug": null
+        },
+        {
+          "display": "岡山東商業",
+          "score": 3,
+          "won": true,
+          "name": "岡山東商業高校",
+          "slug": "okayamahigashishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-10-02",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "倉敷工業",
+          "score": 5,
+          "won": true,
+          "name": "倉敷工業高校",
+          "slug": "kurashikikogyo"
+        },
+        {
+          "display": "玉野光南",
+          "score": 1,
+          "won": false,
+          "name": "玉野光南高校",
+          "slug": "tamanokonan"
+        }
+      ]
+    },
+    {
+      "date": "2021-10-02",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "関西",
+          "score": 4,
+          "won": false,
+          "name": "関西",
+          "slug": null
+        },
+        {
+          "display": "岡山東商業",
+          "score": 11,
+          "won": true,
+          "name": "岡山東商業高校",
+          "slug": "okayamahigashishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-10-09",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "準決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "倉敷工業",
+          "score": 6,
+          "won": true,
+          "name": "倉敷工業高校",
+          "slug": "kurashikikogyo"
+        },
+        {
+          "display": "岡山東商業",
+          "score": 4,
+          "won": false,
+          "name": "岡山東商業高校",
+          "slug": "okayamahigashishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-10-10",
+      "season": "autumn",
+      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
+      "round": "決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "倉敷工業",
+          "score": 3,
+          "won": true,
+          "name": "倉敷工業高校",
+          "slug": "kurashikikogyo"
+        },
+        {
+          "display": "岡山学芸館",
+          "score": 0,
+          "won": false,
+          "name": "岡山学芸館",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2019-09-21",
       "season": "autumn",
       "tournament": "2019年 秋季中国地区高校野球 岡山県大会",
@@ -14268,443 +15211,6 @@
           "score": 2,
           "won": true,
           "name": "創志学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-09-25",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "1回戦",
-      "venue": "エイコンスタジアム",
-      "teams": [
-        {
-          "display": "岡山県美作",
-          "score": 11,
-          "won": true,
-          "name": "岡山県美作",
-          "slug": null
-        },
-        {
-          "display": "津山東",
-          "score": 3,
-          "won": false,
-          "name": "津山東高校",
-          "slug": "tsuyamahigashi"
-        }
-      ]
-    },
-    {
-      "date": "2021-09-25",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "1回戦",
-      "venue": "エイコンスタジアム",
-      "teams": [
-        {
-          "display": "玉野商工",
-          "score": 2,
-          "won": true,
-          "name": "玉野商工高校",
-          "slug": "tamanoshoko"
-        },
-        {
-          "display": "明誠学院",
-          "score": 0,
-          "won": false,
-          "name": "明誠学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-09-26",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "2回戦",
-      "venue": "エイコンスタジアム",
-      "teams": [
-        {
-          "display": "岡山学芸館",
-          "score": 10,
-          "won": true,
-          "name": "岡山学芸館",
-          "slug": null
-        },
-        {
-          "display": "倉敷商業",
-          "score": 6,
-          "won": false,
-          "name": "倉敷商業高校",
-          "slug": "kurashikishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-09-26",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "2回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "岡山理大附",
-          "score": 4,
-          "won": true,
-          "name": "岡山理大附",
-          "slug": null
-        },
-        {
-          "display": "岡山県美作",
-          "score": 2,
-          "won": false,
-          "name": "岡山県美作",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-09-26",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "2回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "玉野商工",
-          "score": 6,
-          "won": true,
-          "name": "玉野商工高校",
-          "slug": "tamanoshoko"
-        },
-        {
-          "display": "岡山県作陽",
-          "score": 2,
-          "won": false,
-          "name": "岡山県作陽",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-09-26",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "2回戦",
-      "venue": "エイコンスタジアム",
-      "teams": [
-        {
-          "display": "玉島商業",
-          "score": 1,
-          "won": false,
-          "name": "玉島商業高校",
-          "slug": "tamashimashogyo"
-        },
-        {
-          "display": "創志学園",
-          "score": 5,
-          "won": true,
-          "name": "創志学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-10-03",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "準々決勝",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "岡山学芸館",
-          "score": 4,
-          "won": true,
-          "name": "岡山学芸館",
-          "slug": null
-        },
-        {
-          "display": "岡山理大附",
-          "score": 1,
-          "won": false,
-          "name": "岡山理大附",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-10-03",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "準々決勝",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "玉野商工",
-          "score": 1,
-          "won": false,
-          "name": "玉野商工高校",
-          "slug": "tamanoshoko"
-        },
-        {
-          "display": "創志学園",
-          "score": 5,
-          "won": true,
-          "name": "創志学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-10-09",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "準決勝",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "岡山学芸館",
-          "score": 6,
-          "won": true,
-          "name": "岡山学芸館",
-          "slug": null
-        },
-        {
-          "display": "創志学園",
-          "score": 0,
-          "won": false,
-          "name": "創志学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-09-25",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "1回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "倉敷天城",
-          "score": 11,
-          "won": true,
-          "name": "倉敷天城高校",
-          "slug": "kurashikiamaki"
-        },
-        {
-          "display": "岡山一宮",
-          "score": 2,
-          "won": false,
-          "name": "岡山一宮高校",
-          "slug": "okayamaichinomiya"
-        }
-      ]
-    },
-    {
-      "date": "2021-09-25",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "1回戦",
-      "venue": "倉敷市営球場",
-      "teams": [
-        {
-          "display": "興譲館",
-          "score": 2,
-          "won": false,
-          "name": "興譲館",
-          "slug": null
-        },
-        {
-          "display": "西大寺",
-          "score": 12,
-          "won": true,
-          "name": "西大寺高校",
-          "slug": "saidaiji"
-        }
-      ]
-    },
-    {
-      "date": "2021-09-25",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "2回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "倉敷工業",
-          "score": 11,
-          "won": true,
-          "name": "倉敷工業高校",
-          "slug": "kurashikikogyo"
-        },
-        {
-          "display": "おかやま山陽",
-          "score": 2,
-          "won": false,
-          "name": "おかやま山陽",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-09-26",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "2回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "玉野光南",
-          "score": 12,
-          "won": true,
-          "name": "玉野光南高校",
-          "slug": "tamanokonan"
-        },
-        {
-          "display": "倉敷天城",
-          "score": 5,
-          "won": false,
-          "name": "倉敷天城高校",
-          "slug": "kurashikiamaki"
-        }
-      ]
-    },
-    {
-      "date": "2021-09-26",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "2回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "西大寺",
-          "score": 4,
-          "won": false,
-          "name": "西大寺高校",
-          "slug": "saidaiji"
-        },
-        {
-          "display": "関西",
-          "score": 6,
-          "won": true,
-          "name": "関西",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2021-09-25",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "2回戦",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "就実",
-          "score": 1,
-          "won": false,
-          "name": "就実",
-          "slug": null
-        },
-        {
-          "display": "岡山東商業",
-          "score": 3,
-          "won": true,
-          "name": "岡山東商業高校",
-          "slug": "okayamahigashishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-10-02",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "準々決勝",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "倉敷工業",
-          "score": 5,
-          "won": true,
-          "name": "倉敷工業高校",
-          "slug": "kurashikikogyo"
-        },
-        {
-          "display": "玉野光南",
-          "score": 1,
-          "won": false,
-          "name": "玉野光南高校",
-          "slug": "tamanokonan"
-        }
-      ]
-    },
-    {
-      "date": "2021-10-02",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "準々決勝",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "関西",
-          "score": 4,
-          "won": false,
-          "name": "関西",
-          "slug": null
-        },
-        {
-          "display": "岡山東商業",
-          "score": 11,
-          "won": true,
-          "name": "岡山東商業高校",
-          "slug": "okayamahigashishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-10-09",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "準決勝",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "倉敷工業",
-          "score": 6,
-          "won": true,
-          "name": "倉敷工業高校",
-          "slug": "kurashikikogyo"
-        },
-        {
-          "display": "岡山東商業",
-          "score": 4,
-          "won": false,
-          "name": "岡山東商業高校",
-          "slug": "okayamahigashishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2021-10-10",
-      "season": "autumn",
-      "tournament": "2021年 秋季中国地区高校野球 岡山県大会",
-      "round": "決勝",
-      "venue": "マスカットスタジアム",
-      "teams": [
-        {
-          "display": "倉敷工業",
-          "score": 3,
-          "won": true,
-          "name": "倉敷工業高校",
-          "slug": "kurashikikogyo"
-        },
-        {
-          "display": "岡山学芸館",
-          "score": 0,
-          "won": false,
-          "name": "岡山学芸館",
           "slug": null
         }
       ]

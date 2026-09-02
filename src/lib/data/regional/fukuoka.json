@@ -24169,6 +24169,2884 @@
       ]
     },
     {
+      "date": "2025-08-30",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "1回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "三潴",
+          "score": 3,
+          "won": true,
+          "name": "三潴高校",
+          "slug": "mizuma"
+        },
+        {
+          "display": "中村三陽",
+          "score": 2,
+          "won": false,
+          "name": "中村三陽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "1回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "福大若葉",
+          "score": 8,
+          "won": true,
+          "name": "福大若葉",
+          "slug": null
+        },
+        {
+          "display": "ありあけ新世",
+          "score": 2,
+          "won": false,
+          "name": "ありあけ新世高校",
+          "slug": "ariakeshinsei"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "北筑",
+          "score": 4,
+          "won": true,
+          "name": "北筑高校",
+          "slug": "hokuchiku"
+        },
+        {
+          "display": "北九州",
+          "score": 3,
+          "won": false,
+          "name": "北九州高校",
+          "slug": "kitakyushu"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "中間仰木彬記念球場",
+      "teams": [
+        {
+          "display": "八幡南",
+          "score": 5,
+          "won": false,
+          "name": "八幡南高校",
+          "slug": "yahataminami"
+        },
+        {
+          "display": "近大福岡",
+          "score": 9,
+          "won": true,
+          "name": "近大福岡",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-07",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "県営筑豊緑地野球場",
+      "teams": [
+        {
+          "display": "慶成",
+          "score": 0,
+          "won": false,
+          "name": "慶成",
+          "slug": null
+        },
+        {
+          "display": "小倉",
+          "score": 9,
+          "won": true,
+          "name": "小倉高校",
+          "slug": "kokura"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-07",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "新宮",
+          "score": 10,
+          "won": true,
+          "name": "新宮高校",
+          "slug": "fukuoka-shingu"
+        },
+        {
+          "display": "若松・鞍手竜徳",
+          "score": 6,
+          "won": false,
+          "name": "若松・鞍手竜徳",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2025-10-07",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "県営筑豊緑地野球場",
+      "teams": [
+        {
+          "display": "東筑紫学園",
+          "score": 6,
+          "won": true,
+          "name": "東筑紫学園",
+          "slug": null
+        },
+        {
+          "display": "星琳",
+          "score": 5,
+          "won": false,
+          "name": "星琳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-07",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "小倉西",
+          "score": 1,
+          "won": false,
+          "name": "小倉西高校",
+          "slug": "kokuranishi"
+        },
+        {
+          "display": "小倉工業",
+          "score": 11,
+          "won": true,
+          "name": "小倉工業高校",
+          "slug": "kokurakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "県営筑豊緑地野球場",
+      "teams": [
+        {
+          "display": "折尾",
+          "score": 12,
+          "won": true,
+          "name": "折尾高校",
+          "slug": "orio"
+        },
+        {
+          "display": "嘉穂総合",
+          "score": 2,
+          "won": false,
+          "name": "嘉穂総合高校",
+          "slug": "kahosogo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "東福岡",
+          "score": 5,
+          "won": true,
+          "name": "東福岡",
+          "slug": null
+        },
+        {
+          "display": "三潴",
+          "score": 1,
+          "won": false,
+          "name": "三潴高校",
+          "slug": "mizuma"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "オクゼン不動産ベースボールスタジアム",
+      "teams": [
+        {
+          "display": "春日",
+          "score": 8,
+          "won": true,
+          "name": "春日高校",
+          "slug": "kasuga"
+        },
+        {
+          "display": "久留米",
+          "score": 3,
+          "won": false,
+          "name": "久留米高校",
+          "slug": "kurume"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "糸島",
+          "score": 6,
+          "won": true,
+          "name": "糸島高校",
+          "slug": "itoshima"
+        },
+        {
+          "display": "福島",
+          "score": 2,
+          "won": false,
+          "name": "福島高校",
+          "slug": "fukuoka-fukushima"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "久留米商業",
+          "score": 10,
+          "won": true,
+          "name": "久留米商業高校",
+          "slug": "kurumeshogyo"
+        },
+        {
+          "display": "三井",
+          "score": 2,
+          "won": false,
+          "name": "三井高校",
+          "slug": "mii"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-07",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "柳川",
+          "score": 10,
+          "won": true,
+          "name": "柳川",
+          "slug": null
+        },
+        {
+          "display": "福岡常葉",
+          "score": 0,
+          "won": false,
+          "name": "福岡常葉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-07",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "福翔",
+          "score": 7,
+          "won": true,
+          "name": "福翔高校",
+          "slug": "fukusho"
+        },
+        {
+          "display": "筑紫丘",
+          "score": 4,
+          "won": false,
+          "name": "筑紫丘高校",
+          "slug": "chikushigaoka"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "筑紫台",
+          "score": 5,
+          "won": true,
+          "name": "筑紫台",
+          "slug": null
+        },
+        {
+          "display": "久留米高専・久留米筑水・八女農業・輝翔館",
+          "score": 0,
+          "won": false,
+          "name": "久留米高専・久留米筑水・八女農業・輝翔館",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "光陵グリーンスタジアム",
+      "teams": [
+        {
+          "display": "高稜",
+          "score": 10,
+          "won": true,
+          "name": "高稜",
+          "slug": null
+        },
+        {
+          "display": "若松商業",
+          "score": 0,
+          "won": false,
+          "name": "若松商業高校",
+          "slug": "fukuoka-wakamatsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "県営筑豊緑地野球場",
+      "teams": [
+        {
+          "display": "常磐",
+          "score": 6,
+          "won": true,
+          "name": "常磐",
+          "slug": null
+        },
+        {
+          "display": "嘉穂東",
+          "score": 3,
+          "won": false,
+          "name": "嘉穂東高校",
+          "slug": "kahohigashi"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "光陵グリーンスタジアム",
+      "teams": [
+        {
+          "display": "古賀竟成館",
+          "score": 10,
+          "won": true,
+          "name": "公立古賀竟成館高校",
+          "slug": "koritsukogakyoseikan"
+        },
+        {
+          "display": "筑豊",
+          "score": 0,
+          "won": false,
+          "name": "筑豊高校",
+          "slug": "chikuho"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "光陵グリーンスタジアム",
+      "teams": [
+        {
+          "display": "須恵",
+          "score": 2,
+          "won": true,
+          "name": "須恵高校",
+          "slug": "sue"
+        },
+        {
+          "display": "鞍手",
+          "score": 1,
+          "won": false,
+          "name": "鞍手高校",
+          "slug": "kurate"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "自由ヶ丘",
+          "score": 12,
+          "won": true,
+          "name": "自由ヶ丘",
+          "slug": null
+        },
+        {
+          "display": "小倉南",
+          "score": 3,
+          "won": false,
+          "name": "小倉南高校",
+          "slug": "kokuraminami"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "光陵グリーンスタジアム",
+      "teams": [
+        {
+          "display": "小倉東",
+          "score": 3,
+          "won": true,
+          "name": "小倉東高校",
+          "slug": "kokurahigashi"
+        },
+        {
+          "display": "門司大翔館",
+          "score": 1,
+          "won": false,
+          "name": "門司大翔館高校",
+          "slug": "mojitaishokan"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "光陵",
+          "score": 6,
+          "won": false,
+          "name": "光陵高校",
+          "slug": "fukuoka-koryo"
+        },
+        {
+          "display": "豊国学園",
+          "score": 7,
+          "won": true,
+          "name": "豊国学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "西短大附",
+          "score": 9,
+          "won": true,
+          "name": "西短大附",
+          "slug": null
+        },
+        {
+          "display": "福大若葉",
+          "score": 7,
+          "won": false,
+          "name": "福大若葉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "柏陵",
+          "score": 8,
+          "won": true,
+          "name": "柏陵高校",
+          "slug": "fukuoka-hakuryo"
+        },
+        {
+          "display": "浮羽工業",
+          "score": 1,
+          "won": false,
+          "name": "浮羽工業高校",
+          "slug": "ukihakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "オクゼン不動産ベースボールスタジアム",
+      "teams": [
+        {
+          "display": "南筑",
+          "score": 7,
+          "won": true,
+          "name": "南筑高校",
+          "slug": "nanchiku"
+        },
+        {
+          "display": "山門",
+          "score": 0,
+          "won": false,
+          "name": "山門高校",
+          "slug": "fukuoka-yamato"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "明善",
+          "score": 5,
+          "won": false,
+          "name": "明善高校",
+          "slug": "meizen"
+        },
+        {
+          "display": "福岡",
+          "score": 6,
+          "won": true,
+          "name": "福岡高校",
+          "slug": "fukuoka-fukuoka"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "八女学院",
+          "score": 1,
+          "won": false,
+          "name": "八女学院",
+          "slug": null
+        },
+        {
+          "display": "福大大濠",
+          "score": 8,
+          "won": true,
+          "name": "福大大濠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "久留米学園",
+          "score": 3,
+          "won": false,
+          "name": "久留米学園",
+          "slug": null
+        },
+        {
+          "display": "福岡第一",
+          "score": 8,
+          "won": true,
+          "name": "福岡第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "太宰府",
+          "score": 2,
+          "won": true,
+          "name": "太宰府高校",
+          "slug": "dazaifu"
+        },
+        {
+          "display": "武蔵台",
+          "score": 0,
+          "won": false,
+          "name": "武蔵台高校",
+          "slug": "musashidai"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "早良",
+          "score": 6,
+          "won": false,
+          "name": "早良高校",
+          "slug": "fukuoka-sawara"
+        },
+        {
+          "display": "浮羽究真館",
+          "score": 12,
+          "won": true,
+          "name": "浮羽究真館高校",
+          "slug": "ukihakyushinkan"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "戸畑",
+          "score": 7,
+          "won": true,
+          "name": "戸畑高校",
+          "slug": "tobata"
+        },
+        {
+          "display": "北筑",
+          "score": 6,
+          "won": false,
+          "name": "北筑高校",
+          "slug": "hokuchiku"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "光陵グリーンスタジアム",
+      "teams": [
+        {
+          "display": "近大福岡",
+          "score": 3,
+          "won": false,
+          "name": "近大福岡",
+          "slug": null
+        },
+        {
+          "display": "小倉",
+          "score": 4,
+          "won": true,
+          "name": "小倉高校",
+          "slug": "kokura"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "新宮",
+          "score": 3,
+          "won": false,
+          "name": "新宮高校",
+          "slug": "fukuoka-shingu"
+        },
+        {
+          "display": "東筑紫学園",
+          "score": 7,
+          "won": true,
+          "name": "東筑紫学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "光陵グリーンスタジアム",
+      "teams": [
+        {
+          "display": "小倉工業",
+          "score": 2,
+          "won": false,
+          "name": "小倉工業高校",
+          "slug": "kokurakogyo"
+        },
+        {
+          "display": "折尾",
+          "score": 3,
+          "won": true,
+          "name": "折尾高校",
+          "slug": "orio"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "東福岡",
+          "score": 2,
+          "won": false,
+          "name": "東福岡",
+          "slug": null
+        },
+        {
+          "display": "春日",
+          "score": 7,
+          "won": true,
+          "name": "春日高校",
+          "slug": "kasuga"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "糸島",
+          "score": 1,
+          "won": false,
+          "name": "糸島高校",
+          "slug": "itoshima"
+        },
+        {
+          "display": "久留米商業",
+          "score": 2,
+          "won": true,
+          "name": "久留米商業高校",
+          "slug": "kurumeshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "柳川",
+          "score": 1,
+          "won": false,
+          "name": "柳川",
+          "slug": null
+        },
+        {
+          "display": "福翔",
+          "score": 8,
+          "won": true,
+          "name": "福翔高校",
+          "slug": "fukusho"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "筑紫台",
+          "score": 6,
+          "won": true,
+          "name": "筑紫台",
+          "slug": null
+        },
+        {
+          "display": "八女",
+          "score": 4,
+          "won": false,
+          "name": "八女高校",
+          "slug": "yame"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "東筑",
+          "score": 7,
+          "won": true,
+          "name": "東筑高校",
+          "slug": "tochiku"
+        },
+        {
+          "display": "高稜",
+          "score": 0,
+          "won": false,
+          "name": "高稜",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "常磐",
+          "score": 2,
+          "won": false,
+          "name": "常磐",
+          "slug": null
+        },
+        {
+          "display": "古賀竟成館",
+          "score": 6,
+          "won": true,
+          "name": "公立古賀竟成館高校",
+          "slug": "koritsukogakyoseikan"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "中間仰木彬記念球場",
+      "teams": [
+        {
+          "display": "須恵",
+          "score": 6,
+          "won": true,
+          "name": "須恵高校",
+          "slug": "sue"
+        },
+        {
+          "display": "自由ヶ丘",
+          "score": 3,
+          "won": false,
+          "name": "自由ヶ丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "小倉東",
+          "score": 4,
+          "won": false,
+          "name": "小倉東高校",
+          "slug": "kokurahigashi"
+        },
+        {
+          "display": "豊国学園",
+          "score": 5,
+          "won": true,
+          "name": "豊国学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "西短大附",
+          "score": 10,
+          "won": true,
+          "name": "西短大附",
+          "slug": null
+        },
+        {
+          "display": "柏陵",
+          "score": 0,
+          "won": false,
+          "name": "柏陵高校",
+          "slug": "fukuoka-hakuryo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "南筑",
+          "score": 4,
+          "won": false,
+          "name": "南筑高校",
+          "slug": "nanchiku"
+        },
+        {
+          "display": "福岡",
+          "score": 8,
+          "won": true,
+          "name": "福岡高校",
+          "slug": "fukuoka-fukuoka"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "福大大濠",
+          "score": 6,
+          "won": true,
+          "name": "福大大濠",
+          "slug": null
+        },
+        {
+          "display": "福岡第一",
+          "score": 2,
+          "won": false,
+          "name": "福岡第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "太宰府",
+          "score": 10,
+          "won": true,
+          "name": "太宰府高校",
+          "slug": "dazaifu"
+        },
+        {
+          "display": "浮羽究真館",
+          "score": 6,
+          "won": false,
+          "name": "浮羽究真館高校",
+          "slug": "ukihakyushinkan"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-26",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "戸畑",
+          "score": 3,
+          "won": false,
+          "name": "戸畑高校",
+          "slug": "tobata"
+        },
+        {
+          "display": "小倉",
+          "score": 10,
+          "won": true,
+          "name": "小倉高校",
+          "slug": "kokura"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-26",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "中間仰木彬記念球場",
+      "teams": [
+        {
+          "display": "東筑紫学園",
+          "score": 1,
+          "won": false,
+          "name": "東筑紫学園",
+          "slug": null
+        },
+        {
+          "display": "折尾",
+          "score": 8,
+          "won": true,
+          "name": "折尾高校",
+          "slug": "orio"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-23",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "春日",
+          "score": 3,
+          "won": false,
+          "name": "春日高校",
+          "slug": "kasuga"
+        },
+        {
+          "display": "久留米商業",
+          "score": 8,
+          "won": true,
+          "name": "久留米商業高校",
+          "slug": "kurumeshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-23",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "福翔",
+          "score": 5,
+          "won": true,
+          "name": "福翔高校",
+          "slug": "fukusho"
+        },
+        {
+          "display": "筑紫台",
+          "score": 2,
+          "won": false,
+          "name": "筑紫台",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-26",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "東筑",
+          "score": 9,
+          "won": true,
+          "name": "東筑高校",
+          "slug": "tochiku"
+        },
+        {
+          "display": "古賀竟成館",
+          "score": 1,
+          "won": false,
+          "name": "公立古賀竟成館高校",
+          "slug": "koritsukogakyoseikan"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-26",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "中間仰木彬記念球場",
+      "teams": [
+        {
+          "display": "須恵",
+          "score": 4,
+          "won": true,
+          "name": "須恵高校",
+          "slug": "sue"
+        },
+        {
+          "display": "豊国学園",
+          "score": 3,
+          "won": false,
+          "name": "豊国学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-23",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "西短大附",
+          "score": 6,
+          "won": true,
+          "name": "西短大附",
+          "slug": null
+        },
+        {
+          "display": "福岡",
+          "score": 1,
+          "won": false,
+          "name": "福岡高校",
+          "slug": "fukuoka-fukuoka"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-23",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "福大大濠",
+          "score": 5,
+          "won": true,
+          "name": "福大大濠",
+          "slug": null
+        },
+        {
+          "display": "太宰府",
+          "score": 0,
+          "won": false,
+          "name": "太宰府高校",
+          "slug": "dazaifu"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "5回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "小倉",
+          "score": 0,
+          "won": false,
+          "name": "小倉高校",
+          "slug": "kokura"
+        },
+        {
+          "display": "折尾",
+          "score": 10,
+          "won": true,
+          "name": "折尾高校",
+          "slug": "orio"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "5回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "久留米商業",
+          "score": 9,
+          "won": true,
+          "name": "久留米商業高校",
+          "slug": "kurumeshogyo"
+        },
+        {
+          "display": "福翔",
+          "score": 3,
+          "won": false,
+          "name": "福翔高校",
+          "slug": "fukusho"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "5回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "東筑",
+          "score": 9,
+          "won": true,
+          "name": "東筑高校",
+          "slug": "tochiku"
+        },
+        {
+          "display": "須恵",
+          "score": 5,
+          "won": false,
+          "name": "須恵高校",
+          "slug": "sue"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "5回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "西短大附",
+          "score": 8,
+          "won": false,
+          "name": "西短大附",
+          "slug": null
+        },
+        {
+          "display": "福大大濠",
+          "score": 9,
+          "won": true,
+          "name": "福大大濠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "準々決勝",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "折尾",
+          "score": 3,
+          "won": false,
+          "name": "折尾高校",
+          "slug": "orio"
+        },
+        {
+          "display": "久留米商業",
+          "score": 5,
+          "won": true,
+          "name": "久留米商業高校",
+          "slug": "kurumeshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "準々決勝",
+      "venue": "光陵グリーンスタジアム",
+      "teams": [
+        {
+          "display": "東筑",
+          "score": 0,
+          "won": false,
+          "name": "東筑高校",
+          "slug": "tochiku"
+        },
+        {
+          "display": "福大大濠",
+          "score": 4,
+          "won": true,
+          "name": "福大大濠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-11",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "準決勝",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "久留米商業",
+          "score": 0,
+          "won": false,
+          "name": "久留米商業高校",
+          "slug": "kurumeshogyo"
+        },
+        {
+          "display": "福大大濠",
+          "score": 4,
+          "won": true,
+          "name": "福大大濠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "1回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "香椎",
+          "score": 4,
+          "won": false,
+          "name": "香椎高校",
+          "slug": "kashii"
+        },
+        {
+          "display": "修猷館",
+          "score": 6,
+          "won": true,
+          "name": "修猷館高校",
+          "slug": "shuyukan"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "1回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "三池",
+          "score": 1,
+          "won": false,
+          "name": "三池高校",
+          "slug": "miike"
+        },
+        {
+          "display": "香住丘",
+          "score": 13,
+          "won": true,
+          "name": "香住丘高校",
+          "slug": "kasumigaoka"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "県営筑豊緑地野球場",
+      "teams": [
+        {
+          "display": "行橋",
+          "score": 2,
+          "won": false,
+          "name": "行橋高校",
+          "slug": "yukuhashi"
+        },
+        {
+          "display": "八幡工業",
+          "score": 8,
+          "won": true,
+          "name": "八幡工業高校",
+          "slug": "fukuoka-hachimankogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "青豊",
+          "score": 1,
+          "won": false,
+          "name": "青豊高校",
+          "slug": "seiho"
+        },
+        {
+          "display": "北九州市立",
+          "score": 10,
+          "won": true,
+          "name": "北九州市立高校",
+          "slug": "kitakyushushiritsu"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "中間仰木彬記念球場",
+      "teams": [
+        {
+          "display": "戸畑工業",
+          "score": 12,
+          "won": true,
+          "name": "戸畑工業高校",
+          "slug": "tobatakogyo"
+        },
+        {
+          "display": "直方",
+          "score": 5,
+          "won": false,
+          "name": "直方高校",
+          "slug": "nogata"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "県営筑豊緑地野球場",
+      "teams": [
+        {
+          "display": "嘉穂",
+          "score": 7,
+          "won": true,
+          "name": "嘉穂高校",
+          "slug": "kaho"
+        },
+        {
+          "display": "田川",
+          "score": 0,
+          "won": false,
+          "name": "田川高校",
+          "slug": "fukuoka-tagawa"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "大和青藍",
+          "score": 2,
+          "won": false,
+          "name": "大和青藍",
+          "slug": null
+        },
+        {
+          "display": "福岡魁誠",
+          "score": 4,
+          "won": true,
+          "name": "福岡魁誠高校",
+          "slug": "fukuokakaisei"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "中間仰木彬記念球場",
+      "teams": [
+        {
+          "display": "水産",
+          "score": 0,
+          "won": false,
+          "name": "福岡県立水産高校",
+          "slug": "fukuokakenritsusuisan"
+        },
+        {
+          "display": "育徳館",
+          "score": 20,
+          "won": true,
+          "name": "育徳館高校",
+          "slug": "ikutokukan"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-31",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "県営筑豊緑地野球場",
+      "teams": [
+        {
+          "display": "飯塚",
+          "score": 18,
+          "won": true,
+          "name": "飯塚",
+          "slug": null
+        },
+        {
+          "display": "田川科技・東鷹",
+          "score": 0,
+          "won": false,
+          "name": "田川科技・東鷹",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "大牟田",
+          "score": 5,
+          "won": true,
+          "name": "大牟田",
+          "slug": null
+        },
+        {
+          "display": "修猷館",
+          "score": 2,
+          "won": false,
+          "name": "修猷館高校",
+          "slug": "shuyukan"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "伝習館",
+          "score": 5,
+          "won": false,
+          "name": "伝習館高校",
+          "slug": "denshukan"
+        },
+        {
+          "display": "西南学院",
+          "score": 12,
+          "won": true,
+          "name": "西南学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-08-31",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "福岡舞鶴",
+          "score": 12,
+          "won": true,
+          "name": "福岡舞鶴",
+          "slug": null
+        },
+        {
+          "display": "筑前",
+          "score": 1,
+          "won": false,
+          "name": "筑前高校",
+          "slug": "chikuzen"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-31",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "八女工業",
+          "score": 5,
+          "won": true,
+          "name": "八女工業高校",
+          "slug": "yamekogyo"
+        },
+        {
+          "display": "有明高専",
+          "score": 2,
+          "won": false,
+          "name": "有明工業高専",
+          "slug": "ariakekogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-31",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "大川樟風",
+          "score": 3,
+          "won": false,
+          "name": "大川樟風高校",
+          "slug": "okawashofu"
+        },
+        {
+          "display": "博多工業",
+          "score": 13,
+          "won": true,
+          "name": "博多工業高校",
+          "slug": "hakatakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-31",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "香椎工業",
+          "score": 5,
+          "won": true,
+          "name": "香椎工業高校",
+          "slug": "kashiikogyo"
+        },
+        {
+          "display": "祐誠",
+          "score": 2,
+          "won": false,
+          "name": "祐誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-08-31",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "筑陽学園",
+          "score": 1,
+          "won": true,
+          "name": "筑陽学園",
+          "slug": null
+        },
+        {
+          "display": "純真",
+          "score": 0,
+          "won": false,
+          "name": "純真",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-08-31",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "博多",
+          "score": 6,
+          "won": true,
+          "name": "博多",
+          "slug": null
+        },
+        {
+          "display": "三池工業",
+          "score": 2,
+          "won": false,
+          "name": "三池工業高校",
+          "slug": "miikekogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-31",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "真颯館",
+          "score": 1,
+          "won": false,
+          "name": "真颯館",
+          "slug": null
+        },
+        {
+          "display": "九国大付",
+          "score": 11,
+          "won": true,
+          "name": "九国大付",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-08-31",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "県営筑豊緑地野球場",
+      "teams": [
+        {
+          "display": "宇美商業",
+          "score": 0,
+          "won": false,
+          "name": "宇美商業高校",
+          "slug": "umishogyo"
+        },
+        {
+          "display": "宗像",
+          "score": 7,
+          "won": true,
+          "name": "宗像高校",
+          "slug": "munakata"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-31",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "苅田工業",
+          "score": 7,
+          "won": false,
+          "name": "苅田工業高校",
+          "slug": "kandakogyo"
+        },
+        {
+          "display": "小倉商業",
+          "score": 8,
+          "won": true,
+          "name": "小倉商業高校",
+          "slug": "kokurashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "光陵グリーンスタジアム",
+      "teams": [
+        {
+          "display": "八幡",
+          "score": 9,
+          "won": true,
+          "name": "八幡高校",
+          "slug": "fukuoka-hachiman"
+        },
+        {
+          "display": "中間",
+          "score": 0,
+          "won": false,
+          "name": "中間高校",
+          "slug": "nakama"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "稲築志耕館",
+          "score": 0,
+          "won": false,
+          "name": "稲築志耕館高校",
+          "slug": "inatsukishikokan"
+        },
+        {
+          "display": "京都",
+          "score": 10,
+          "won": true,
+          "name": "京都高校",
+          "slug": "fukuoka-miyako"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "中間仰木彬記念球場",
+      "teams": [
+        {
+          "display": "八幡中央",
+          "score": 1,
+          "won": false,
+          "name": "八幡中央高校",
+          "slug": "yahatachuo"
+        },
+        {
+          "display": "玄界",
+          "score": 8,
+          "won": true,
+          "name": "玄界高校",
+          "slug": "genkai"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "光陵グリーンスタジアム",
+      "teams": [
+        {
+          "display": "折尾愛真",
+          "score": 11,
+          "won": true,
+          "name": "折尾愛真",
+          "slug": null
+        },
+        {
+          "display": "門司学園",
+          "score": 1,
+          "won": false,
+          "name": "門司学園高校",
+          "slug": "mojigakuen"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "福工大城東",
+          "score": 6,
+          "won": true,
+          "name": "福工大城東",
+          "slug": null
+        },
+        {
+          "display": "香住丘",
+          "score": 0,
+          "won": false,
+          "name": "香住丘高校",
+          "slug": "kasumigaoka"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "沖学園",
+          "score": 7,
+          "won": true,
+          "name": "沖学園",
+          "slug": null
+        },
+        {
+          "display": "朝倉",
+          "score": 0,
+          "won": false,
+          "name": "朝倉高校",
+          "slug": "asakura"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "玄洋",
+          "score": 1,
+          "won": false,
+          "name": "玄洋高校",
+          "slug": "genyo"
+        },
+        {
+          "display": "福岡中央",
+          "score": 10,
+          "won": true,
+          "name": "福岡中央高校",
+          "slug": "fukuokachuo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "九産大九産",
+          "score": 10,
+          "won": true,
+          "name": "九産大九産",
+          "slug": null
+        },
+        {
+          "display": "福岡西陵",
+          "score": 0,
+          "won": false,
+          "name": "福岡西陵高校",
+          "slug": "fukuokaseiryo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-07",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "朝倉光陽",
+          "score": 1,
+          "won": false,
+          "name": "朝倉光陽高校",
+          "slug": "asakurakoyo"
+        },
+        {
+          "display": "福岡工業",
+          "score": 8,
+          "won": true,
+          "name": "福岡工業高校",
+          "slug": "fukuokakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-07",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "九産大九州",
+          "score": 14,
+          "won": true,
+          "name": "九産大九州",
+          "slug": null
+        },
+        {
+          "display": "福岡農業",
+          "score": 0,
+          "won": false,
+          "name": "福岡農業高校",
+          "slug": "fukuokanogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-07",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "筑紫中央",
+          "score": 7,
+          "won": true,
+          "name": "筑紫中央高校",
+          "slug": "chikushichuo"
+        },
+        {
+          "display": "小郡",
+          "score": 4,
+          "won": false,
+          "name": "小郡高校",
+          "slug": "ogori"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-07",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "城南",
+          "score": 1,
+          "won": true,
+          "name": "城南高校",
+          "slug": "fukuoka-jonan"
+        },
+        {
+          "display": "筑紫",
+          "score": 0,
+          "won": false,
+          "name": "筑紫高校",
+          "slug": "chikushi"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "県営筑豊緑地野球場",
+      "teams": [
+        {
+          "display": "希望が丘",
+          "score": 8,
+          "won": true,
+          "name": "希望が丘",
+          "slug": null
+        },
+        {
+          "display": "八幡工業",
+          "score": 0,
+          "won": false,
+          "name": "八幡工業高校",
+          "slug": "fukuoka-hachimankogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "北九州市立",
+          "score": 2,
+          "won": false,
+          "name": "北九州市立高校",
+          "slug": "kitakyushushiritsu"
+        },
+        {
+          "display": "戸畑工業",
+          "score": 4,
+          "won": true,
+          "name": "戸畑工業高校",
+          "slug": "tobatakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "県営筑豊緑地野球場",
+      "teams": [
+        {
+          "display": "嘉穂",
+          "score": 9,
+          "won": true,
+          "name": "嘉穂高校",
+          "slug": "kaho"
+        },
+        {
+          "display": "福岡魁誠",
+          "score": 2,
+          "won": false,
+          "name": "福岡魁誠高校",
+          "slug": "fukuokakaisei"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "光陵グリーンスタジアム",
+      "teams": [
+        {
+          "display": "育徳館",
+          "score": 1,
+          "won": false,
+          "name": "育徳館高校",
+          "slug": "ikutokukan"
+        },
+        {
+          "display": "飯塚",
+          "score": 11,
+          "won": true,
+          "name": "飯塚",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "大牟田",
+          "score": 8,
+          "won": true,
+          "name": "大牟田",
+          "slug": null
+        },
+        {
+          "display": "西南学院",
+          "score": 0,
+          "won": false,
+          "name": "西南学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "福岡舞鶴",
+          "score": 2,
+          "won": true,
+          "name": "福岡舞鶴",
+          "slug": null
+        },
+        {
+          "display": "八女工業",
+          "score": 0,
+          "won": false,
+          "name": "八女工業高校",
+          "slug": "yamekogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "博多工業",
+          "score": 0,
+          "won": false,
+          "name": "博多工業高校",
+          "slug": "hakatakogyo"
+        },
+        {
+          "display": "香椎工業",
+          "score": 3,
+          "won": true,
+          "name": "香椎工業高校",
+          "slug": "kashiikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "筑陽学園",
+          "score": 5,
+          "won": true,
+          "name": "筑陽学園",
+          "slug": null
+        },
+        {
+          "display": "博多",
+          "score": 3,
+          "won": false,
+          "name": "博多",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "光陵グリーンスタジアム",
+      "teams": [
+        {
+          "display": "東海大福岡",
+          "score": 5,
+          "won": false,
+          "name": "東海大福岡",
+          "slug": null
+        },
+        {
+          "display": "九国大付",
+          "score": 6,
+          "won": true,
+          "name": "九国大付",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "宗像",
+          "score": 3,
+          "won": false,
+          "name": "宗像高校",
+          "slug": "munakata"
+        },
+        {
+          "display": "小倉商業",
+          "score": 7,
+          "won": true,
+          "name": "小倉商業高校",
+          "slug": "kokurashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "八幡",
+          "score": 10,
+          "won": true,
+          "name": "八幡高校",
+          "slug": "fukuoka-hachiman"
+        },
+        {
+          "display": "京都",
+          "score": 0,
+          "won": false,
+          "name": "京都高校",
+          "slug": "fukuoka-miyako"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "玄界",
+          "score": 0,
+          "won": false,
+          "name": "玄界高校",
+          "slug": "genkai"
+        },
+        {
+          "display": "折尾愛真",
+          "score": 5,
+          "won": true,
+          "name": "折尾愛真",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "福工大城東",
+          "score": 4,
+          "won": true,
+          "name": "福工大城東",
+          "slug": null
+        },
+        {
+          "display": "沖学園",
+          "score": 2,
+          "won": false,
+          "name": "沖学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "福岡中央",
+          "score": 3,
+          "won": false,
+          "name": "福岡中央高校",
+          "slug": "fukuokachuo"
+        },
+        {
+          "display": "九産大九産",
+          "score": 13,
+          "won": true,
+          "name": "九産大九産",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "福岡工業",
+          "score": 1,
+          "won": false,
+          "name": "福岡工業高校",
+          "slug": "fukuokakogyo"
+        },
+        {
+          "display": "九産大九州",
+          "score": 5,
+          "won": true,
+          "name": "九産大九州",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "筑紫中央",
+          "score": 3,
+          "won": false,
+          "name": "筑紫中央高校",
+          "slug": "chikushichuo"
+        },
+        {
+          "display": "城南",
+          "score": 6,
+          "won": true,
+          "name": "城南高校",
+          "slug": "fukuoka-jonan"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "中間仰木彬記念球場",
+      "teams": [
+        {
+          "display": "嘉穂",
+          "score": 0,
+          "won": false,
+          "name": "嘉穂高校",
+          "slug": "kaho"
+        },
+        {
+          "display": "飯塚",
+          "score": 7,
+          "won": true,
+          "name": "飯塚",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "大牟田",
+          "score": 7,
+          "won": true,
+          "name": "大牟田",
+          "slug": null
+        },
+        {
+          "display": "福岡舞鶴",
+          "score": 0,
+          "won": false,
+          "name": "福岡舞鶴",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-23",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "香椎工業",
+          "score": 0,
+          "won": false,
+          "name": "香椎工業高校",
+          "slug": "kashiikogyo"
+        },
+        {
+          "display": "筑陽学園",
+          "score": 5,
+          "won": true,
+          "name": "筑陽学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "九国大付",
+          "score": 8,
+          "won": true,
+          "name": "九国大付",
+          "slug": null
+        },
+        {
+          "display": "小倉商業",
+          "score": 0,
+          "won": false,
+          "name": "小倉商業高校",
+          "slug": "kokurashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "八幡",
+          "score": 9,
+          "won": true,
+          "name": "八幡高校",
+          "slug": "fukuoka-hachiman"
+        },
+        {
+          "display": "折尾愛真",
+          "score": 5,
+          "won": false,
+          "name": "折尾愛真",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-23",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "福工大城東",
+          "score": 7,
+          "won": true,
+          "name": "福工大城東",
+          "slug": null
+        },
+        {
+          "display": "九産大九産",
+          "score": 4,
+          "won": false,
+          "name": "九産大九産",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "九産大九州",
+          "score": 11,
+          "won": true,
+          "name": "九産大九州",
+          "slug": null
+        },
+        {
+          "display": "城南",
+          "score": 2,
+          "won": false,
+          "name": "城南高校",
+          "slug": "fukuoka-jonan"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-26",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "5回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "戸畑工業",
+          "score": 2,
+          "won": false,
+          "name": "戸畑工業高校",
+          "slug": "tobatakogyo"
+        },
+        {
+          "display": "飯塚",
+          "score": 3,
+          "won": true,
+          "name": "飯塚",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "5回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "大牟田",
+          "score": 3,
+          "won": true,
+          "name": "大牟田",
+          "slug": null
+        },
+        {
+          "display": "筑陽学園",
+          "score": 2,
+          "won": false,
+          "name": "筑陽学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "5回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "九国大付",
+          "score": 5,
+          "won": true,
+          "name": "九国大付",
+          "slug": null
+        },
+        {
+          "display": "八幡",
+          "score": 1,
+          "won": false,
+          "name": "八幡高校",
+          "slug": "fukuoka-hachiman"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "5回戦",
+      "venue": "今津運動公園野球場",
+      "teams": [
+        {
+          "display": "福工大城東",
+          "score": 8,
+          "won": true,
+          "name": "福工大城東",
+          "slug": null
+        },
+        {
+          "display": "九産大九州",
+          "score": 5,
+          "won": false,
+          "name": "九産大九州",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "準々決勝",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "飯塚",
+          "score": 2,
+          "won": false,
+          "name": "飯塚",
+          "slug": null
+        },
+        {
+          "display": "大牟田",
+          "score": 5,
+          "won": true,
+          "name": "大牟田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "準々決勝",
+      "venue": "光陵グリーンスタジアム",
+      "teams": [
+        {
+          "display": "九国大付",
+          "score": 8,
+          "won": true,
+          "name": "九国大付",
+          "slug": null
+        },
+        {
+          "display": "福工大城東",
+          "score": 7,
+          "won": false,
+          "name": "福工大城東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-11",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "準決勝",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "大牟田",
+          "score": 4,
+          "won": false,
+          "name": "大牟田",
+          "slug": null
+        },
+        {
+          "display": "九国大付",
+          "score": 5,
+          "won": true,
+          "name": "九国大付",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季九州地区高校野球 福岡県大会",
+      "round": "決勝",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "九国大付",
+          "score": 11,
+          "won": true,
+          "name": "九国大付",
+          "slug": null
+        },
+        {
+          "display": "福大大濠",
+          "score": 4,
+          "won": false,
+          "name": "福大大濠",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2024-08-31",
       "season": "autumn",
       "tournament": "2024年 秋季九州地区高校野球 福岡県大会",

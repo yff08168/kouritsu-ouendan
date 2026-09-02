@@ -17274,6 +17274,29 @@
       ]
     },
     {
+      "date": "2026-09-01",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 中信予選会",
+      "round": "1回戦",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "松本工業",
+          "score": 3,
+          "won": false,
+          "name": "松本工業高校",
+          "slug": "matsumotokogyo"
+        },
+        {
+          "display": "松本県ケ丘",
+          "score": 6,
+          "won": true,
+          "name": "松本県ケ丘高校",
+          "slug": "matsumotoagatagaoka"
+        }
+      ]
+    },
+    {
       "date": "2026-08-31",
       "season": "autumn",
       "tournament": "第155回 北信越地区高等学校野球長野県大会 北信予選会",

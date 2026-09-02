@@ -5,19 +5,19 @@ import type { RegionalProgressBoard } from "@/lib/regional-results";
 
 export const REGIONAL_PROGRESS: RegionalProgressBoard = {
   "season": "autumn",
-  "latestDate": "2026-08-31",
-  "generatedAt": "2026-08-31T10:42:26Z",
+  "latestDate": "2026-09-01",
+  "generatedAt": "2026-09-02T10:48:40Z",
   "districts": [
     {
       "slug": "nagano",
       "district": "長野",
       "state": "playing",
       "season": "autumn",
-      "tournament": "第155回 北信越地区高等学校野球長野県大会 南信予選会",
-      "games": 9,
-      "publicGames": 9,
-      "round": "2回戦",
-      "latestDate": "2026-08-31",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 中信予選会",
+      "games": 6,
+      "publicGames": 6,
+      "round": "1回戦",
+      "latestDate": "2026-09-01",
       "champion": null
     },
     {
@@ -68,11 +68,6 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "champion": null
     },
     {
-      "slug": "ehime",
-      "district": "愛媛",
-      "state": "pending"
-    },
-    {
       "slug": "niigata",
       "district": "新潟",
       "state": "pending"
@@ -98,11 +93,6 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "pending"
     },
     {
-      "slug": "kagoshima",
-      "district": "鹿児島",
-      "state": "pending"
-    },
-    {
       "slug": "ishikawa",
       "district": "石川",
       "state": "pending"
@@ -123,10 +113,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "第79回秋季東北地区高等学校野球山形県大会 シード決定ブロック大会",
-      "games": 19,
-      "publicGames": 13,
+      "games": 26,
+      "publicGames": 18,
       "round": "2回戦",
-      "latestDate": "2026-08-31",
+      "latestDate": "2026-09-01",
       "champion": null
     },
     {
@@ -201,16 +191,6 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "pending"
     },
     {
-      "slug": "kochi",
-      "district": "高知",
-      "state": "pending"
-    },
-    {
-      "slug": "nagasaki",
-      "district": "長崎",
-      "state": "pending"
-    },
-    {
       "slug": "shimane",
       "district": "島根",
       "state": "pending"
@@ -218,16 +198,19 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "iwate",
       "district": "岩手",
-      "state": "pending"
+      "state": "playing",
+      "season": "autumn",
+      "tournament": "秋季岩手県大会",
+      "games": 58,
+      "publicGames": 51,
+      "round": "準決勝",
+      "latestDate": "2026-08-29",
+      "champion": null
     },
     {
       "slug": "oita",
       "district": "大分",
-      "state": "scheduled",
-      "season": "autumn",
-      "tournament": "第150回大分県高等学校野球選手権記念大会",
-      "opensOn": "2026-08-29",
-      "games": 4
+      "state": "pending"
     },
     {
       "slug": "tochigi",
@@ -237,6 +220,26 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "fukuoka",
       "district": "福岡",
+      "state": "pending"
+    },
+    {
+      "slug": "kagoshima",
+      "district": "鹿児島",
+      "state": "pending"
+    },
+    {
+      "slug": "ehime",
+      "district": "愛媛",
+      "state": "pending"
+    },
+    {
+      "slug": "nagasaki",
+      "district": "長崎",
+      "state": "pending"
+    },
+    {
+      "slug": "kochi",
+      "district": "高知",
       "state": "pending"
     },
     {

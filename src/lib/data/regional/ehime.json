@@ -5,6 +5,982 @@
   "sourceUrl": "https://ehime.hsbflash.jp/",
   "games": [
     {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "伊予",
+          "score": 1,
+          "won": false,
+          "name": "伊予高校",
+          "slug": "iyo"
+        },
+        {
+          "display": "松山中央",
+          "score": 2,
+          "won": true,
+          "name": "松山中央高校",
+          "slug": "matsuyamachuo"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "丸山公園野球場",
+      "teams": [
+        {
+          "display": "松山工",
+          "score": 2,
+          "won": false,
+          "name": "松山工業高校",
+          "slug": "matsuyamakogyo"
+        },
+        {
+          "display": "野村・吉田・南宇和",
+          "score": 4,
+          "won": true,
+          "name": "野村・吉田・南宇和",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "今治市営球場",
+      "teams": [
+        {
+          "display": "川之江",
+          "score": 10,
+          "won": true,
+          "name": "川之江高校",
+          "slug": "kawanoe"
+        },
+        {
+          "display": "土居・北条・西条農",
+          "score": 0,
+          "won": false,
+          "name": "土居・北条・西条農",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "済美",
+          "score": 10,
+          "won": true,
+          "name": "済美",
+          "slug": null
+        },
+        {
+          "display": "伊予農",
+          "score": 0,
+          "won": false,
+          "name": "伊予農業高校",
+          "slug": "iyonogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "丸山公園野球場",
+      "teams": [
+        {
+          "display": "愛大附・松山西",
+          "score": 1,
+          "won": false,
+          "name": "愛大附・松山西",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "宇和",
+          "score": 3,
+          "won": true,
+          "name": "宇和高校",
+          "slug": "uwa"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "今治市営球場",
+      "teams": [
+        {
+          "display": "今治北",
+          "score": 3,
+          "won": true,
+          "name": "今治北高校",
+          "slug": "imabarikita"
+        },
+        {
+          "display": "松山南",
+          "score": 1,
+          "won": false,
+          "name": "松山南高校",
+          "slug": "matsuyamaminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "2回戦",
+      "venue": "宇和球場",
+      "teams": [
+        {
+          "display": "宇和島東",
+          "score": 5,
+          "won": true,
+          "name": "宇和島東高校",
+          "slug": "uwajimahigashi"
+        },
+        {
+          "display": "松山中央",
+          "score": 0,
+          "won": false,
+          "name": "松山中央高校",
+          "slug": "matsuyamachuo"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-23",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "2回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "松山東",
+          "score": 4,
+          "won": false,
+          "name": "松山東高校",
+          "slug": "matsuyamahigashi"
+        },
+        {
+          "display": "野村・吉田・南宇和",
+          "score": 5,
+          "won": true,
+          "name": "野村・吉田・南宇和",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-03-21",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "2回戦",
+      "venue": "今治市営球場",
+      "teams": [
+        {
+          "display": "西条",
+          "score": 10,
+          "won": true,
+          "name": "西条高校",
+          "slug": "saijo"
+        },
+        {
+          "display": "丹原",
+          "score": 0,
+          "won": false,
+          "name": "丹原高校",
+          "slug": "tanbara"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "2回戦",
+      "venue": "大洲球場",
+      "teams": [
+        {
+          "display": "新居浜商",
+          "score": 0,
+          "won": false,
+          "name": "新居浜商業高校",
+          "slug": "niihamashogyo"
+        },
+        {
+          "display": "川之江",
+          "score": 6,
+          "won": true,
+          "name": "川之江高校",
+          "slug": "kawanoe"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "2回戦",
+      "venue": "今治市営球場",
+      "teams": [
+        {
+          "display": "今治西",
+          "score": 6,
+          "won": true,
+          "name": "今治西高校",
+          "slug": "imabarinishi"
+        },
+        {
+          "display": "済美",
+          "score": 2,
+          "won": false,
+          "name": "済美",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-23",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "2回戦",
+      "venue": "宇和球場",
+      "teams": [
+        {
+          "display": "内子",
+          "score": 5,
+          "won": false,
+          "name": "内子高校",
+          "slug": "uchiko"
+        },
+        {
+          "display": "宇和",
+          "score": 6,
+          "won": true,
+          "name": "宇和高校",
+          "slug": "uwa"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-21",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "2回戦",
+      "venue": "丸山公園野球場",
+      "teams": [
+        {
+          "display": "新田",
+          "score": 15,
+          "won": true,
+          "name": "新田",
+          "slug": null
+        },
+        {
+          "display": "新居浜東",
+          "score": 0,
+          "won": false,
+          "name": "新居浜東高校",
+          "slug": "niihamahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-23",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "2回戦",
+      "venue": "マドンナスタジアム",
+      "teams": [
+        {
+          "display": "今治工",
+          "score": 0,
+          "won": false,
+          "name": "今治工業高校",
+          "slug": "imabarikogyo"
+        },
+        {
+          "display": "今治北",
+          "score": 8,
+          "won": true,
+          "name": "今治北高校",
+          "slug": "imabarikita"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "3回戦",
+      "venue": "宇和球場",
+      "teams": [
+        {
+          "display": "宇和島東",
+          "score": 6,
+          "won": true,
+          "name": "宇和島東高校",
+          "slug": "uwajimahigashi"
+        },
+        {
+          "display": "野村・吉田・南宇和",
+          "score": 0,
+          "won": false,
+          "name": "野村・吉田・南宇和",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "3回戦",
+      "venue": "今治市営球場",
+      "teams": [
+        {
+          "display": "西条",
+          "score": 3,
+          "won": true,
+          "name": "西条高校",
+          "slug": "saijo"
+        },
+        {
+          "display": "川之江",
+          "score": 1,
+          "won": false,
+          "name": "川之江高校",
+          "slug": "kawanoe"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "3回戦",
+      "venue": "今治市営球場",
+      "teams": [
+        {
+          "display": "今治西",
+          "score": 2,
+          "won": true,
+          "name": "今治西高校",
+          "slug": "imabarinishi"
+        },
+        {
+          "display": "宇和",
+          "score": 1,
+          "won": false,
+          "name": "宇和高校",
+          "slug": "uwa"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "3回戦",
+      "venue": "マドンナスタジアム",
+      "teams": [
+        {
+          "display": "新田",
+          "score": 9,
+          "won": true,
+          "name": "新田",
+          "slug": null
+        },
+        {
+          "display": "今治北",
+          "score": 2,
+          "won": false,
+          "name": "今治北高校",
+          "slug": "imabarikita"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "準々決勝",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "宇和島東",
+          "score": 4,
+          "won": true,
+          "name": "宇和島東高校",
+          "slug": "uwajimahigashi"
+        },
+        {
+          "display": "西条",
+          "score": 2,
+          "won": false,
+          "name": "西条高校",
+          "slug": "saijo"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "準々決勝",
+      "venue": "今治市営球場",
+      "teams": [
+        {
+          "display": "今治西",
+          "score": 0,
+          "won": false,
+          "name": "今治西高校",
+          "slug": "imabarinishi"
+        },
+        {
+          "display": "新田",
+          "score": 7,
+          "won": true,
+          "name": "新田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "準決勝",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "宇和島東",
+          "score": 2,
+          "won": false,
+          "name": "宇和島東高校",
+          "slug": "uwajimahigashi"
+        },
+        {
+          "display": "新田",
+          "score": 3,
+          "won": true,
+          "name": "新田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-21",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "大洲球場",
+      "teams": [
+        {
+          "display": "東予",
+          "score": 3,
+          "won": false,
+          "name": "東予高校",
+          "slug": "toyo"
+        },
+        {
+          "display": "北宇和",
+          "score": 10,
+          "won": true,
+          "name": "北宇和高校",
+          "slug": "kitauwa"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "丸山公園野球場",
+      "teams": [
+        {
+          "display": "八幡浜工",
+          "score": 1,
+          "won": false,
+          "name": "八幡浜工業高校",
+          "slug": "yawatahamakogyo"
+        },
+        {
+          "display": "松山北",
+          "score": 8,
+          "won": true,
+          "name": "松山北高校",
+          "slug": "matsuyamakita"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "今治市営球場",
+      "teams": [
+        {
+          "display": "宇和島南",
+          "score": 1,
+          "won": false,
+          "name": "宇和島南中等教育学校",
+          "slug": "uwajimaminami"
+        },
+        {
+          "display": "新居浜南",
+          "score": 4,
+          "won": true,
+          "name": "新居浜南高校",
+          "slug": "niihamaminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "松山学院",
+          "score": 10,
+          "won": true,
+          "name": "松山学院",
+          "slug": null
+        },
+        {
+          "display": "済美平成・内子小田・上浮穴",
+          "score": 0,
+          "won": false,
+          "name": "済美平成・内子小田・上浮穴",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-03-21",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "大洲球場",
+      "teams": [
+        {
+          "display": "松山商",
+          "score": 6,
+          "won": true,
+          "name": "松山商業高校",
+          "slug": "matsuyamashogyo"
+        },
+        {
+          "display": "八幡浜・川之石",
+          "score": 0,
+          "won": false,
+          "name": "八幡浜・川之石",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-03-21",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "2回戦",
+      "venue": "丸山公園野球場",
+      "teams": [
+        {
+          "display": "帝京第五",
+          "score": 10,
+          "won": true,
+          "name": "帝京第五",
+          "slug": null
+        },
+        {
+          "display": "新居浜高専",
+          "score": 0,
+          "won": false,
+          "name": "新居浜工業高専",
+          "slug": "niihamakogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-23",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "2回戦",
+      "venue": "マドンナスタジアム",
+      "teams": [
+        {
+          "display": "三島",
+          "score": 4,
+          "won": false,
+          "name": "三島高校",
+          "slug": "ehime-mishima"
+        },
+        {
+          "display": "北宇和",
+          "score": 17,
+          "won": true,
+          "name": "北宇和高校",
+          "slug": "kitauwa"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "2回戦",
+      "venue": "宇和球場",
+      "teams": [
+        {
+          "display": "聖カタリナ学園",
+          "score": 5,
+          "won": true,
+          "name": "聖カタリナ学園",
+          "slug": null
+        },
+        {
+          "display": "松山北",
+          "score": 4,
+          "won": false,
+          "name": "松山北高校",
+          "slug": "matsuyamakita"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-23",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "2回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "新居浜西",
+          "score": 6,
+          "won": true,
+          "name": "新居浜西高校",
+          "slug": "niihamanishi"
+        },
+        {
+          "display": "新居浜南",
+          "score": 3,
+          "won": false,
+          "name": "新居浜南高校",
+          "slug": "niihamaminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-21",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "2回戦",
+      "venue": "今治市営球場",
+      "teams": [
+        {
+          "display": "松山聖陵",
+          "score": 10,
+          "won": true,
+          "name": "松山聖陵",
+          "slug": null
+        },
+        {
+          "display": "今治南・今治東・今治北大三島",
+          "score": 0,
+          "won": false,
+          "name": "今治南・今治東・今治北大三島",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "2回戦",
+      "venue": "大洲球場",
+      "teams": [
+        {
+          "display": "東温",
+          "score": 0,
+          "won": false,
+          "name": "東温高校",
+          "slug": "ton"
+        },
+        {
+          "display": "松山学院",
+          "score": 7,
+          "won": true,
+          "name": "松山学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "2回戦",
+      "venue": "今治市営球場",
+      "teams": [
+        {
+          "display": "小松",
+          "score": 9,
+          "won": true,
+          "name": "小松高校",
+          "slug": "ehime-komatsu"
+        },
+        {
+          "display": "新居浜工",
+          "score": 2,
+          "won": false,
+          "name": "新居浜工業高校",
+          "slug": "niihamakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-23",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "2回戦",
+      "venue": "宇和球場",
+      "teams": [
+        {
+          "display": "大洲・大洲農",
+          "score": 6,
+          "won": true,
+          "name": "大洲・大洲農",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "松山商",
+          "score": 5,
+          "won": false,
+          "name": "松山商業高校",
+          "slug": "matsuyamashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "3回戦",
+      "venue": "宇和球場",
+      "teams": [
+        {
+          "display": "帝京第五",
+          "score": 3,
+          "won": false,
+          "name": "帝京第五",
+          "slug": null
+        },
+        {
+          "display": "北宇和",
+          "score": 5,
+          "won": true,
+          "name": "北宇和高校",
+          "slug": "kitauwa"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "3回戦",
+      "venue": "マドンナスタジアム",
+      "teams": [
+        {
+          "display": "聖カタリナ学園",
+          "score": 6,
+          "won": true,
+          "name": "聖カタリナ学園",
+          "slug": null
+        },
+        {
+          "display": "新居浜西",
+          "score": 3,
+          "won": false,
+          "name": "新居浜西高校",
+          "slug": "niihamanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "3回戦",
+      "venue": "マドンナスタジアム",
+      "teams": [
+        {
+          "display": "松山聖陵",
+          "score": 8,
+          "won": true,
+          "name": "松山聖陵",
+          "slug": null
+        },
+        {
+          "display": "松山学院",
+          "score": 0,
+          "won": false,
+          "name": "松山学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "3回戦",
+      "venue": "今治市営球場",
+      "teams": [
+        {
+          "display": "小松",
+          "score": 11,
+          "won": true,
+          "name": "小松高校",
+          "slug": "ehime-komatsu"
+        },
+        {
+          "display": "大洲・大洲農",
+          "score": 2,
+          "won": false,
+          "name": "大洲・大洲農",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "準々決勝",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "北宇和",
+          "score": 3,
+          "won": false,
+          "name": "北宇和高校",
+          "slug": "kitauwa"
+        },
+        {
+          "display": "聖カタリナ学園",
+          "score": 13,
+          "won": true,
+          "name": "聖カタリナ学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "準々決勝",
+      "venue": "今治市営球場",
+      "teams": [
+        {
+          "display": "松山聖陵",
+          "score": 13,
+          "won": true,
+          "name": "松山聖陵",
+          "slug": null
+        },
+        {
+          "display": "小松",
+          "score": 12,
+          "won": false,
+          "name": "小松高校",
+          "slug": "ehime-komatsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "準決勝",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "聖カタリナ学園",
+          "score": 7,
+          "won": false,
+          "name": "聖カタリナ学園",
+          "slug": null
+        },
+        {
+          "display": "松山聖陵",
+          "score": 9,
+          "won": true,
+          "name": "松山聖陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "season": "spring",
+      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "round": "決勝",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "松山聖陵",
+          "score": 1,
+          "won": false,
+          "name": "松山聖陵",
+          "slug": null
+        },
+        {
+          "display": "新田",
+          "score": 11,
+          "won": true,
+          "name": "新田",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2019-03-30",
       "season": "spring",
       "tournament": "2019年 春季四国地区高校野球 愛媛県大会",
@@ -2427,117 +3403,92 @@
       ]
     },
     {
-      "date": "2026-03-20",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "伊予",
-          "score": 1,
-          "won": false,
-          "name": "伊予高校",
-          "slug": "iyo"
-        },
-        {
-          "display": "松山中央",
-          "score": 2,
-          "won": true,
-          "name": "松山中央高校",
-          "slug": "matsuyamachuo"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-20",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "丸山公園野球場",
-      "teams": [
-        {
-          "display": "松山工",
-          "score": 2,
-          "won": false,
-          "name": "松山工業高校",
-          "slug": "matsuyamakogyo"
-        },
-        {
-          "display": "野村・吉田・南宇和",
-          "score": 4,
-          "won": true,
-          "name": "野村・吉田・南宇和",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-03-20",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
       "round": "1回戦",
       "venue": "今治市営球場",
       "teams": [
         {
-          "display": "川之江",
-          "score": 10,
-          "won": true,
-          "name": "川之江高校",
-          "slug": "kawanoe"
+          "display": "丹原",
+          "score": 6,
+          "won": false,
+          "name": "丹原高校",
+          "slug": "tanbara"
         },
         {
-          "display": "土居・北条・西条農",
-          "score": 0,
-          "won": false,
-          "name": "土居・北条・西条農",
+          "display": "今治東・今治南大三島・しまなみ",
+          "score": 7,
+          "won": true,
+          "name": "今治東・今治南大三島・しまなみ",
           "slug": null,
           "combined": true
         }
       ]
     },
     {
-      "date": "2026-03-20",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
       "round": "1回戦",
       "venue": "坊っちゃんスタジアム",
       "teams": [
         {
-          "display": "済美",
-          "score": 10,
+          "display": "松山北",
+          "score": 4,
           "won": true,
-          "name": "済美",
-          "slug": null
+          "name": "松山北高校",
+          "slug": "matsuyamakita"
         },
         {
-          "display": "伊予農",
-          "score": 0,
+          "display": "松山東",
+          "score": 1,
           "won": false,
-          "name": "伊予農業高校",
-          "slug": "iyonogyo"
+          "name": "松山東高校",
+          "slug": "matsuyamahigashi"
         }
       ]
     },
     {
-      "date": "2026-03-20",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
       "round": "1回戦",
       "venue": "丸山公園野球場",
       "teams": [
         {
-          "display": "愛大附・松山西",
-          "score": 1,
+          "display": "松山南",
+          "score": 6,
           "won": false,
-          "name": "愛大附・松山西",
-          "slug": null,
-          "combined": true
+          "name": "松山南高校",
+          "slug": "matsuyamaminami"
+        },
+        {
+          "display": "大洲",
+          "score": 13,
+          "won": true,
+          "name": "大洲高校",
+          "slug": "ozu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "1回戦",
+      "venue": "丸山公園野球場",
+      "teams": [
+        {
+          "display": "帝京第五",
+          "score": 2,
+          "won": false,
+          "name": "帝京第五",
+          "slug": null
         },
         {
           "display": "宇和",
-          "score": 3,
+          "score": 4,
           "won": true,
           "name": "宇和高校",
           "slug": "uwa"
@@ -2545,34 +3496,684 @@
       ]
     },
     {
-      "date": "2026-03-20",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "1回戦",
+      "venue": "丸山公園野球場",
+      "teams": [
+        {
+          "display": "宇和島南",
+          "score": 6,
+          "won": false,
+          "name": "宇和島南中等教育学校",
+          "slug": "uwajimaminami"
+        },
+        {
+          "display": "(新)小松",
+          "score": 11,
+          "won": true,
+          "name": "小松高校（新）",
+          "slug": "komatsushin"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "1回戦",
+      "venue": "丸山公園野球場",
+      "teams": [
+        {
+          "display": "松山学院",
+          "score": 4,
+          "won": true,
+          "name": "松山学院",
+          "slug": null
+        },
+        {
+          "display": "北宇和",
+          "score": 3,
+          "won": false,
+          "name": "北宇和高校",
+          "slug": "kitauwa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "1回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "吉田・野村",
+          "score": 2,
+          "won": false,
+          "name": "吉田・野村",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "新居浜商",
+          "score": 3,
+          "won": true,
+          "name": "新居浜商業高校",
+          "slug": "niihamashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "1回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "東温",
+          "score": 8,
+          "won": true,
+          "name": "東温高校",
+          "slug": "ton"
+        },
+        {
+          "display": "内子小田・上浮穴済美平成",
+          "score": 0,
+          "won": false,
+          "name": "内子小田・上浮穴済美平成",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "2回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "松山聖陵",
+          "score": 4,
+          "won": false,
+          "name": "松山聖陵",
+          "slug": null
+        },
+        {
+          "display": "松山商",
+          "score": 5,
+          "won": true,
+          "name": "松山商業高校",
+          "slug": "matsuyamashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "2回戦",
+      "venue": "西条市ひうち球場",
+      "teams": [
+        {
+          "display": "新居浜工",
+          "score": 1,
+          "won": false,
+          "name": "新居浜工業高校",
+          "slug": "niihamakogyo"
+        },
+        {
+          "display": "松山西",
+          "score": 3,
+          "won": true,
+          "name": "松山西中等教育学校",
+          "slug": "matsuyamanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "2回戦",
+      "venue": "西条市ひうち球場",
+      "teams": [
+        {
+          "display": "今治東・今治南大三島・しまなみ",
+          "score": 2,
+          "won": false,
+          "name": "今治東・今治南大三島・しまなみ",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "松山北",
+          "score": 6,
+          "won": true,
+          "name": "松山北高校",
+          "slug": "matsuyamakita"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "2回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "大洲",
+          "score": 3,
+          "won": false,
+          "name": "大洲高校",
+          "slug": "ozu"
+        },
+        {
+          "display": "宇和",
+          "score": 5,
+          "won": true,
+          "name": "宇和高校",
+          "slug": "uwa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "2回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "西条",
+          "score": 11,
+          "won": true,
+          "name": "西条高校",
+          "slug": "saijo"
+        },
+        {
+          "display": "東予・東予総合",
+          "score": 0,
+          "won": false,
+          "name": "東予・東予総合",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "2回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "聖カタリナ学園",
+          "score": 11,
+          "won": true,
+          "name": "聖カタリナ学園",
+          "slug": null
+        },
+        {
+          "display": "愛大附",
+          "score": 0,
+          "won": false,
+          "name": "愛媛大学附属高校",
+          "slug": "ehimedaigakufuzoku"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "2回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "(新)小松",
+          "score": 1,
+          "won": false,
+          "name": "小松高校（新）",
+          "slug": "komatsushin"
+        },
+        {
+          "display": "松山学院",
+          "score": 8,
+          "won": true,
+          "name": "松山学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "2回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "新居浜商",
+          "score": 2,
+          "won": true,
+          "name": "新居浜商業高校",
+          "slug": "niihamashogyo"
+        },
+        {
+          "display": "東温",
+          "score": 1,
+          "won": false,
+          "name": "東温高校",
+          "slug": "ton"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "3回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "松山商",
+          "score": 7,
+          "won": true,
+          "name": "松山商業高校",
+          "slug": "matsuyamashogyo"
+        },
+        {
+          "display": "松山西",
+          "score": 0,
+          "won": false,
+          "name": "松山西中等教育学校",
+          "slug": "matsuyamanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "3回戦",
+      "venue": "西条市ひうち球場",
+      "teams": [
+        {
+          "display": "松山北",
+          "score": 11,
+          "won": true,
+          "name": "松山北高校",
+          "slug": "matsuyamakita"
+        },
+        {
+          "display": "宇和",
+          "score": 6,
+          "won": false,
+          "name": "宇和高校",
+          "slug": "uwa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "3回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "西条",
+          "score": 13,
+          "won": true,
+          "name": "西条高校",
+          "slug": "saijo"
+        },
+        {
+          "display": "聖カタリナ学園",
+          "score": 4,
+          "won": false,
+          "name": "聖カタリナ学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "3回戦",
+      "venue": "西条市ひうち球場",
+      "teams": [
+        {
+          "display": "松山学院",
+          "score": 12,
+          "won": true,
+          "name": "松山学院",
+          "slug": null
+        },
+        {
+          "display": "新居浜商",
+          "score": 6,
+          "won": false,
+          "name": "新居浜商業高校",
+          "slug": "niihamashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "準々決勝",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "松山商",
+          "score": 8,
+          "won": false,
+          "name": "松山商業高校",
+          "slug": "matsuyamashogyo"
+        },
+        {
+          "display": "松山北",
+          "score": 11,
+          "won": true,
+          "name": "松山北高校",
+          "slug": "matsuyamakita"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "準々決勝",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "西条",
+          "score": 1,
+          "won": false,
+          "name": "西条高校",
+          "slug": "saijo"
+        },
+        {
+          "display": "松山学院",
+          "score": 4,
+          "won": true,
+          "name": "松山学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "準決勝",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "松山北",
+          "score": 5,
+          "won": false,
+          "name": "松山北高校",
+          "slug": "matsuyamakita"
+        },
+        {
+          "display": "松山学院",
+          "score": 7,
+          "won": true,
+          "name": "松山学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
       "round": "1回戦",
       "venue": "今治市営球場",
       "teams": [
         {
+          "display": "新居浜高専",
+          "score": 1,
+          "won": false,
+          "name": "新居浜工業高専",
+          "slug": "niihamakogyo-kosen"
+        },
+        {
+          "display": "新居浜南",
+          "score": 9,
+          "won": true,
+          "name": "新居浜南高校",
+          "slug": "niihamaminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "1回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
           "display": "今治北",
-          "score": 3,
+          "score": 10,
           "won": true,
           "name": "今治北高校",
           "slug": "imabarikita"
         },
         {
-          "display": "松山南",
-          "score": 1,
+          "display": "八幡浜・川之石",
+          "score": 3,
           "won": false,
-          "name": "松山南高校",
-          "slug": "matsuyamaminami"
+          "name": "八幡浜・川之石",
+          "slug": null,
+          "combined": true
         }
       ]
     },
     {
-      "date": "2026-03-22",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "1回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "川之江",
+          "score": 8,
+          "won": true,
+          "name": "川之江高校",
+          "slug": "kawanoe"
+        },
+        {
+          "display": "松山中央",
+          "score": 1,
+          "won": false,
+          "name": "松山中央高校",
+          "slug": "matsuyamachuo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "1回戦",
+      "venue": "今治市営球場",
+      "teams": [
+        {
+          "display": "内子",
+          "score": 4,
+          "won": false,
+          "name": "内子高校",
+          "slug": "uchiko"
+        },
+        {
+          "display": "今治西",
+          "score": 9,
+          "won": true,
+          "name": "今治西高校",
+          "slug": "imabarinishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "1回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "済美",
+          "score": 11,
+          "won": true,
+          "name": "済美",
+          "slug": null
+        },
+        {
+          "display": "松山工",
+          "score": 4,
+          "won": false,
+          "name": "松山工業高校",
+          "slug": "matsuyamakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "1回戦",
+      "venue": "今治市営球場",
+      "teams": [
+        {
+          "display": "北条・西条農業・土居",
+          "score": 0,
+          "won": false,
+          "name": "北条・西条農業・土居",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "今治工",
+          "score": 14,
+          "won": true,
+          "name": "今治工業高校",
+          "slug": "imabarikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
       "round": "2回戦",
-      "venue": "宇和球場",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "新田",
+          "score": 15,
+          "won": true,
+          "name": "新田",
+          "slug": null
+        },
+        {
+          "display": "南宇和",
+          "score": 0,
+          "won": false,
+          "name": "南宇和高校",
+          "slug": "minamiuwa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "2回戦",
+      "venue": "西条市ひうち球場",
+      "teams": [
+        {
+          "display": "新居浜東",
+          "score": 7,
+          "won": true,
+          "name": "新居浜東高校",
+          "slug": "niihamahigashi"
+        },
+        {
+          "display": "三島",
+          "score": 0,
+          "won": false,
+          "name": "三島高校",
+          "slug": "ehime-mishima"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "2回戦",
+      "venue": "西条市ひうち球場",
+      "teams": [
+        {
+          "display": "八幡浜工",
+          "score": 6,
+          "won": false,
+          "name": "八幡浜工業高校",
+          "slug": "yawatahamakogyo"
+        },
+        {
+          "display": "新居浜西",
+          "score": 10,
+          "won": true,
+          "name": "新居浜西高校",
+          "slug": "niihamanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "2回戦",
+      "venue": "西条市ひうち球場",
+      "teams": [
+        {
+          "display": "新居浜南",
+          "score": 0,
+          "won": false,
+          "name": "新居浜南高校",
+          "slug": "niihamaminami"
+        },
+        {
+          "display": "今治北",
+          "score": 11,
+          "won": true,
+          "name": "今治北高校",
+          "slug": "imabarikita"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "2回戦",
+      "venue": "坊っちゃんスタジアム",
       "teams": [
         {
           "display": "宇和島東",
@@ -2582,140 +4183,93 @@
           "slug": "uwajimahigashi"
         },
         {
-          "display": "松山中央",
-          "score": 0,
+          "display": "伊予農",
+          "score": 1,
           "won": false,
-          "name": "松山中央高校",
-          "slug": "matsuyamachuo"
+          "name": "伊予農業高校",
+          "slug": "iyonogyo"
         }
       ]
     },
     {
-      "date": "2026-03-23",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
       "round": "2回戦",
-      "venue": "坊っちゃんスタジアム",
+      "venue": "西条市ひうち球場",
       "teams": [
         {
-          "display": "松山東",
-          "score": 4,
-          "won": false,
-          "name": "松山東高校",
-          "slug": "matsuyamahigashi"
-        },
-        {
-          "display": "野村・吉田・南宇和",
-          "score": 5,
+          "display": "小松",
+          "score": 13,
           "won": true,
-          "name": "野村・吉田・南宇和",
-          "slug": null,
-          "combined": true
+          "name": "小松高校",
+          "slug": "ehime-komatsu"
+        },
+        {
+          "display": "伊予",
+          "score": 1,
+          "won": false,
+          "name": "伊予高校",
+          "slug": "iyo"
         }
       ]
     },
     {
-      "date": "2026-03-21",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
       "round": "2回戦",
-      "venue": "今治市営球場",
+      "venue": "西条市ひうち球場",
       "teams": [
-        {
-          "display": "西条",
-          "score": 10,
-          "won": true,
-          "name": "西条高校",
-          "slug": "saijo"
-        },
-        {
-          "display": "丹原",
-          "score": 0,
-          "won": false,
-          "name": "丹原高校",
-          "slug": "tanbara"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-22",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "2回戦",
-      "venue": "大洲球場",
-      "teams": [
-        {
-          "display": "新居浜商",
-          "score": 0,
-          "won": false,
-          "name": "新居浜商業高校",
-          "slug": "niihamashogyo"
-        },
         {
           "display": "川之江",
-          "score": 6,
-          "won": true,
+          "score": 1,
+          "won": false,
           "name": "川之江高校",
           "slug": "kawanoe"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-22",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "2回戦",
-      "venue": "今治市営球場",
-      "teams": [
+        },
         {
           "display": "今治西",
-          "score": 6,
+          "score": 2,
           "won": true,
           "name": "今治西高校",
           "slug": "imabarinishi"
-        },
-        {
-          "display": "済美",
-          "score": 2,
-          "won": false,
-          "name": "済美",
-          "slug": null
         }
       ]
     },
     {
-      "date": "2026-03-23",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
       "round": "2回戦",
-      "venue": "宇和球場",
+      "venue": "西条市ひうち球場",
       "teams": [
         {
-          "display": "内子",
-          "score": 5,
-          "won": false,
-          "name": "内子高校",
-          "slug": "uchiko"
+          "display": "済美",
+          "score": 7,
+          "won": true,
+          "name": "済美",
+          "slug": null
         },
         {
-          "display": "宇和",
-          "score": 6,
-          "won": true,
-          "name": "宇和高校",
-          "slug": "uwa"
+          "display": "今治工",
+          "score": 0,
+          "won": false,
+          "name": "今治工業高校",
+          "slug": "imabarikogyo"
         }
       ]
     },
     {
-      "date": "2026-03-21",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "2回戦",
-      "venue": "丸山公園野球場",
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "3回戦",
+      "venue": "坊っちゃんスタジアム",
       "teams": [
         {
           "display": "新田",
-          "score": 15,
+          "score": 8,
           "won": true,
           "name": "新田",
           "slug": null
@@ -2730,674 +4284,162 @@
       ]
     },
     {
-      "date": "2026-03-23",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "2回戦",
-      "venue": "マドンナスタジアム",
-      "teams": [
-        {
-          "display": "今治工",
-          "score": 0,
-          "won": false,
-          "name": "今治工業高校",
-          "slug": "imabarikogyo"
-        },
-        {
-          "display": "今治北",
-          "score": 8,
-          "won": true,
-          "name": "今治北高校",
-          "slug": "imabarikita"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-26",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
       "round": "3回戦",
-      "venue": "宇和球場",
-      "teams": [
-        {
-          "display": "宇和島東",
-          "score": 6,
-          "won": true,
-          "name": "宇和島東高校",
-          "slug": "uwajimahigashi"
-        },
-        {
-          "display": "野村・吉田・南宇和",
-          "score": 0,
-          "won": false,
-          "name": "野村・吉田・南宇和",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-03-26",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "3回戦",
-      "venue": "今治市営球場",
-      "teams": [
-        {
-          "display": "西条",
-          "score": 3,
-          "won": true,
-          "name": "西条高校",
-          "slug": "saijo"
-        },
-        {
-          "display": "川之江",
-          "score": 1,
-          "won": false,
-          "name": "川之江高校",
-          "slug": "kawanoe"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-26",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "3回戦",
-      "venue": "今治市営球場",
-      "teams": [
-        {
-          "display": "今治西",
-          "score": 2,
-          "won": true,
-          "name": "今治西高校",
-          "slug": "imabarinishi"
-        },
-        {
-          "display": "宇和",
-          "score": 1,
-          "won": false,
-          "name": "宇和高校",
-          "slug": "uwa"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-26",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "3回戦",
-      "venue": "マドンナスタジアム",
-      "teams": [
-        {
-          "display": "新田",
-          "score": 9,
-          "won": true,
-          "name": "新田",
-          "slug": null
-        },
-        {
-          "display": "今治北",
-          "score": 2,
-          "won": false,
-          "name": "今治北高校",
-          "slug": "imabarikita"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-28",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "準々決勝",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "宇和島東",
-          "score": 4,
-          "won": true,
-          "name": "宇和島東高校",
-          "slug": "uwajimahigashi"
-        },
-        {
-          "display": "西条",
-          "score": 2,
-          "won": false,
-          "name": "西条高校",
-          "slug": "saijo"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-28",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "準々決勝",
-      "venue": "今治市営球場",
-      "teams": [
-        {
-          "display": "今治西",
-          "score": 0,
-          "won": false,
-          "name": "今治西高校",
-          "slug": "imabarinishi"
-        },
-        {
-          "display": "新田",
-          "score": 7,
-          "won": true,
-          "name": "新田",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-03-30",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "準決勝",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "宇和島東",
-          "score": 2,
-          "won": false,
-          "name": "宇和島東高校",
-          "slug": "uwajimahigashi"
-        },
-        {
-          "display": "新田",
-          "score": 3,
-          "won": true,
-          "name": "新田",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-03-21",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "大洲球場",
-      "teams": [
-        {
-          "display": "東予",
-          "score": 3,
-          "won": false,
-          "name": "東予高校",
-          "slug": "toyo"
-        },
-        {
-          "display": "北宇和",
-          "score": 10,
-          "won": true,
-          "name": "北宇和高校",
-          "slug": "kitauwa"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-20",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "丸山公園野球場",
-      "teams": [
-        {
-          "display": "八幡浜工",
-          "score": 1,
-          "won": false,
-          "name": "八幡浜工業高校",
-          "slug": "yawatahamakogyo"
-        },
-        {
-          "display": "松山北",
-          "score": 8,
-          "won": true,
-          "name": "松山北高校",
-          "slug": "matsuyamakita"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-20",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "今治市営球場",
-      "teams": [
-        {
-          "display": "宇和島南",
-          "score": 1,
-          "won": false,
-          "name": "宇和島南中等教育学校",
-          "slug": "uwajimaminami"
-        },
-        {
-          "display": "新居浜南",
-          "score": 4,
-          "won": true,
-          "name": "新居浜南高校",
-          "slug": "niihamaminami"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-20",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "松山学院",
-          "score": 10,
-          "won": true,
-          "name": "松山学院",
-          "slug": null
-        },
-        {
-          "display": "済美平成・内子小田・上浮穴",
-          "score": 0,
-          "won": false,
-          "name": "済美平成・内子小田・上浮穴",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-03-21",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "大洲球場",
-      "teams": [
-        {
-          "display": "松山商",
-          "score": 6,
-          "won": true,
-          "name": "松山商業高校",
-          "slug": "matsuyamashogyo"
-        },
-        {
-          "display": "八幡浜・川之石",
-          "score": 0,
-          "won": false,
-          "name": "八幡浜・川之石",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-03-21",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "2回戦",
-      "venue": "丸山公園野球場",
-      "teams": [
-        {
-          "display": "帝京第五",
-          "score": 10,
-          "won": true,
-          "name": "帝京第五",
-          "slug": null
-        },
-        {
-          "display": "新居浜高専",
-          "score": 0,
-          "won": false,
-          "name": "新居浜工業高専",
-          "slug": "niihamakogyo-kosen"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-23",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "2回戦",
-      "venue": "マドンナスタジアム",
-      "teams": [
-        {
-          "display": "三島",
-          "score": 4,
-          "won": false,
-          "name": "三島高校",
-          "slug": "ehime-mishima"
-        },
-        {
-          "display": "北宇和",
-          "score": 17,
-          "won": true,
-          "name": "北宇和高校",
-          "slug": "kitauwa"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-22",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "2回戦",
-      "venue": "宇和球場",
-      "teams": [
-        {
-          "display": "聖カタリナ学園",
-          "score": 5,
-          "won": true,
-          "name": "聖カタリナ学園",
-          "slug": null
-        },
-        {
-          "display": "松山北",
-          "score": 4,
-          "won": false,
-          "name": "松山北高校",
-          "slug": "matsuyamakita"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-23",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "2回戦",
-      "venue": "坊っちゃんスタジアム",
+      "venue": "西条市ひうち球場",
       "teams": [
         {
           "display": "新居浜西",
-          "score": 6,
-          "won": true,
-          "name": "新居浜西高校",
-          "slug": "niihamanishi"
-        },
-        {
-          "display": "新居浜南",
-          "score": 3,
-          "won": false,
-          "name": "新居浜南高校",
-          "slug": "niihamaminami"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-21",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "2回戦",
-      "venue": "今治市営球場",
-      "teams": [
-        {
-          "display": "松山聖陵",
-          "score": 10,
-          "won": true,
-          "name": "松山聖陵",
-          "slug": null
-        },
-        {
-          "display": "今治南・今治東・今治北大三島",
-          "score": 0,
-          "won": false,
-          "name": "今治南・今治東・今治北大三島",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-03-22",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "2回戦",
-      "venue": "大洲球場",
-      "teams": [
-        {
-          "display": "東温",
-          "score": 0,
-          "won": false,
-          "name": "東温高校",
-          "slug": "ton"
-        },
-        {
-          "display": "松山学院",
-          "score": 7,
-          "won": true,
-          "name": "松山学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-03-22",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "2回戦",
-      "venue": "今治市営球場",
-      "teams": [
-        {
-          "display": "小松",
-          "score": 9,
-          "won": true,
-          "name": "小松高校",
-          "slug": "ehime-komatsu"
-        },
-        {
-          "display": "新居浜工",
-          "score": 2,
-          "won": false,
-          "name": "新居浜工業高校",
-          "slug": "niihamakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-23",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "2回戦",
-      "venue": "宇和球場",
-      "teams": [
-        {
-          "display": "大洲・大洲農",
-          "score": 6,
-          "won": true,
-          "name": "大洲・大洲農",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "松山商",
-          "score": 5,
-          "won": false,
-          "name": "松山商業高校",
-          "slug": "matsuyamashogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-26",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "3回戦",
-      "venue": "宇和球場",
-      "teams": [
-        {
-          "display": "帝京第五",
-          "score": 3,
-          "won": false,
-          "name": "帝京第五",
-          "slug": null
-        },
-        {
-          "display": "北宇和",
-          "score": 5,
-          "won": true,
-          "name": "北宇和高校",
-          "slug": "kitauwa"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-26",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "3回戦",
-      "venue": "マドンナスタジアム",
-      "teams": [
-        {
-          "display": "聖カタリナ学園",
-          "score": 6,
-          "won": true,
-          "name": "聖カタリナ学園",
-          "slug": null
-        },
-        {
-          "display": "新居浜西",
-          "score": 3,
-          "won": false,
-          "name": "新居浜西高校",
-          "slug": "niihamanishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-03-26",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "3回戦",
-      "venue": "マドンナスタジアム",
-      "teams": [
-        {
-          "display": "松山聖陵",
-          "score": 8,
-          "won": true,
-          "name": "松山聖陵",
-          "slug": null
-        },
-        {
-          "display": "松山学院",
-          "score": 0,
-          "won": false,
-          "name": "松山学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-03-26",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
-      "round": "3回戦",
-      "venue": "今治市営球場",
-      "teams": [
-        {
-          "display": "小松",
           "score": 11,
-          "won": true,
-          "name": "小松高校",
-          "slug": "ehime-komatsu"
+          "won": false,
+          "name": "新居浜西高校",
+          "slug": "niihamanishi"
         },
         {
-          "display": "大洲・大洲農",
-          "score": 2,
-          "won": false,
-          "name": "大洲・大洲農",
-          "slug": null,
-          "combined": true
+          "display": "今治北",
+          "score": 14,
+          "won": true,
+          "name": "今治北高校",
+          "slug": "imabarikita"
         }
       ]
     },
     {
-      "date": "2026-03-28",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "3回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "宇和島東",
+          "score": 2,
+          "won": false,
+          "name": "宇和島東高校",
+          "slug": "uwajimahigashi"
+        },
+        {
+          "display": "小松",
+          "score": 9,
+          "won": true,
+          "name": "小松高校",
+          "slug": "ehime-komatsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "round": "3回戦",
+      "venue": "西条市ひうち球場",
+      "teams": [
+        {
+          "display": "今治西",
+          "score": 1,
+          "won": false,
+          "name": "今治西高校",
+          "slug": "imabarinishi"
+        },
+        {
+          "display": "済美",
+          "score": 4,
+          "won": true,
+          "name": "済美",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
       "round": "準々決勝",
       "venue": "坊っちゃんスタジアム",
       "teams": [
         {
-          "display": "北宇和",
-          "score": 3,
-          "won": false,
-          "name": "北宇和高校",
-          "slug": "kitauwa"
+          "display": "新田",
+          "score": 8,
+          "won": true,
+          "name": "新田",
+          "slug": null
         },
         {
-          "display": "聖カタリナ学園",
-          "score": 13,
-          "won": true,
-          "name": "聖カタリナ学園",
-          "slug": null
+          "display": "今治北",
+          "score": 1,
+          "won": false,
+          "name": "今治北高校",
+          "slug": "imabarikita"
         }
       ]
     },
     {
-      "date": "2026-03-28",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
       "round": "準々決勝",
-      "venue": "今治市営球場",
+      "venue": "坊っちゃんスタジアム",
       "teams": [
         {
-          "display": "松山聖陵",
-          "score": 13,
-          "won": true,
-          "name": "松山聖陵",
-          "slug": null
-        },
-        {
           "display": "小松",
-          "score": 12,
-          "won": false,
+          "score": 3,
+          "won": true,
           "name": "小松高校",
           "slug": "ehime-komatsu"
+        },
+        {
+          "display": "済美",
+          "score": 0,
+          "won": false,
+          "name": "済美",
+          "slug": null
         }
       ]
     },
     {
-      "date": "2026-03-30",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "date": "2026-07-24",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
       "round": "準決勝",
       "venue": "坊っちゃんスタジアム",
       "teams": [
         {
-          "display": "聖カタリナ学園",
-          "score": 7,
-          "won": false,
-          "name": "聖カタリナ学園",
+          "display": "新田",
+          "score": 6,
+          "won": true,
+          "name": "新田",
           "slug": null
         },
         {
-          "display": "松山聖陵",
-          "score": 9,
-          "won": true,
-          "name": "松山聖陵",
-          "slug": null
+          "display": "小松",
+          "score": 0,
+          "won": false,
+          "name": "小松高校",
+          "slug": "ehime-komatsu"
         }
       ]
     },
     {
-      "date": "2026-04-01",
-      "season": "spring",
-      "tournament": "2026年 春季四国地区高校野球 愛媛県大会",
+      "date": "2026-07-26",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
       "round": "決勝",
       "venue": "坊っちゃんスタジアム",
       "teams": [
         {
-          "display": "松山聖陵",
-          "score": 1,
-          "won": false,
-          "name": "松山聖陵",
+          "display": "新田",
+          "score": 12,
+          "won": true,
+          "name": "新田",
           "slug": null
         },
         {
-          "display": "新田",
-          "score": 11,
-          "won": true,
-          "name": "新田",
+          "display": "松山学院",
+          "score": 3,
+          "won": false,
+          "name": "松山学院",
           "slug": null
         }
       ]
@@ -11652,46 +12694,253 @@
       ]
     },
     {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
       "round": "1回戦",
-      "venue": "今治市営球場",
+      "venue": "西条市ひうち球場",
       "teams": [
         {
-          "display": "丹原",
-          "score": 6,
-          "won": false,
-          "name": "丹原高校",
-          "slug": "tanbara"
+          "display": "西条",
+          "score": 8,
+          "won": true,
+          "name": "西条高校",
+          "slug": "saijo"
         },
         {
-          "display": "今治東・今治南大三島・しまなみ",
-          "score": 7,
-          "won": true,
-          "name": "今治東・今治南大三島・しまなみ",
+          "display": "大洲・大洲農",
+          "score": 0,
+          "won": false,
+          "name": "大洲・大洲農",
           "slug": null,
           "combined": true
         }
       ]
     },
     {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "丸山公園野球場",
+      "teams": [
+        {
+          "display": "宇和島東",
+          "score": 7,
+          "won": true,
+          "name": "宇和島東高校",
+          "slug": "uwajimahigashi"
+        },
+        {
+          "display": "新居浜西",
+          "score": 1,
+          "won": false,
+          "name": "新居浜西高校",
+          "slug": "niihamanishi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "西条市ひうち球場",
+      "teams": [
+        {
+          "display": "今治西",
+          "score": 10,
+          "won": true,
+          "name": "今治西高校",
+          "slug": "imabarinishi"
+        },
+        {
+          "display": "松山学院",
+          "score": 4,
+          "won": false,
+          "name": "松山学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "西条市ひうち球場",
+      "teams": [
+        {
+          "display": "帝京第五",
+          "score": 8,
+          "won": true,
+          "name": "帝京第五",
+          "slug": null
+        },
+        {
+          "display": "川之江",
+          "score": 7,
+          "won": false,
+          "name": "川之江高校",
+          "slug": "kawanoe"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
+      "round": "準々決勝",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "西条",
+          "score": 3,
+          "won": true,
+          "name": "西条高校",
+          "slug": "saijo"
+        },
+        {
+          "display": "宇和島東",
+          "score": 1,
+          "won": false,
+          "name": "宇和島東高校",
+          "slug": "uwajimahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
+      "round": "準々決勝",
+      "venue": "西条市ひうち球場",
+      "teams": [
+        {
+          "display": "今治西",
+          "score": 5,
+          "won": false,
+          "name": "今治西高校",
+          "slug": "imabarinishi"
+        },
+        {
+          "display": "帝京第五",
+          "score": 6,
+          "won": true,
+          "name": "帝京第五",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-04",
+      "season": "autumn",
+      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
+      "round": "準決勝",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "西条",
+          "score": 7,
+          "won": true,
+          "name": "西条高校",
+          "slug": "saijo"
+        },
+        {
+          "display": "帝京第五",
+          "score": 6,
+          "won": false,
+          "name": "帝京第五",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
       "round": "1回戦",
       "venue": "坊っちゃんスタジアム",
       "teams": [
         {
-          "display": "松山北",
-          "score": 4,
+          "display": "新田",
+          "score": 7,
           "won": true,
-          "name": "松山北高校",
-          "slug": "matsuyamakita"
+          "name": "新田",
+          "slug": null
+        },
+        {
+          "display": "今治北",
+          "score": 1,
+          "won": false,
+          "name": "今治北高校",
+          "slug": "imabarikita"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "丸山公園野球場",
+      "teams": [
+        {
+          "display": "小松",
+          "score": 11,
+          "won": true,
+          "name": "小松高校",
+          "slug": "ehime-komatsu"
+        },
+        {
+          "display": "松山南",
+          "score": 1,
+          "won": false,
+          "name": "松山南高校",
+          "slug": "matsuyamaminami"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "聖カタリナ学園",
+          "score": 2,
+          "won": true,
+          "name": "聖カタリナ学園",
+          "slug": null
+        },
+        {
+          "display": "新居浜商",
+          "score": 1,
+          "won": false,
+          "name": "新居浜商業高校",
+          "slug": "niihamashogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松山聖陵",
+          "score": 5,
+          "won": true,
+          "name": "松山聖陵",
+          "slug": null
         },
         {
           "display": "松山東",
-          "score": 1,
+          "score": 2,
           "won": false,
           "name": "松山東高校",
           "slug": "matsuyamahigashi"
@@ -11699,997 +12948,94 @@
       ]
     },
     {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "1回戦",
-      "venue": "丸山公園野球場",
-      "teams": [
-        {
-          "display": "松山南",
-          "score": 6,
-          "won": false,
-          "name": "松山南高校",
-          "slug": "matsuyamaminami"
-        },
-        {
-          "display": "大洲",
-          "score": 13,
-          "won": true,
-          "name": "大洲高校",
-          "slug": "ozu"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "1回戦",
-      "venue": "丸山公園野球場",
-      "teams": [
-        {
-          "display": "帝京第五",
-          "score": 2,
-          "won": false,
-          "name": "帝京第五",
-          "slug": null
-        },
-        {
-          "display": "宇和",
-          "score": 4,
-          "won": true,
-          "name": "宇和高校",
-          "slug": "uwa"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "1回戦",
-      "venue": "丸山公園野球場",
-      "teams": [
-        {
-          "display": "宇和島南",
-          "score": 6,
-          "won": false,
-          "name": "宇和島南中等教育学校",
-          "slug": "uwajimaminami"
-        },
-        {
-          "display": "(新)小松",
-          "score": 11,
-          "won": true,
-          "name": "小松高校（新）",
-          "slug": "komatsushin"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "1回戦",
-      "venue": "丸山公園野球場",
-      "teams": [
-        {
-          "display": "松山学院",
-          "score": 4,
-          "won": true,
-          "name": "松山学院",
-          "slug": null
-        },
-        {
-          "display": "北宇和",
-          "score": 3,
-          "won": false,
-          "name": "北宇和高校",
-          "slug": "kitauwa"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "1回戦",
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
+      "round": "準々決勝",
       "venue": "坊っちゃんスタジアム",
       "teams": [
         {
-          "display": "吉田・野村",
-          "score": 2,
-          "won": false,
-          "name": "吉田・野村",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "新居浜商",
-          "score": 3,
-          "won": true,
-          "name": "新居浜商業高校",
-          "slug": "niihamashogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "1回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "東温",
+          "display": "新田",
           "score": 8,
           "won": true,
-          "name": "東温高校",
-          "slug": "ton"
+          "name": "新田",
+          "slug": null
         },
         {
-          "display": "内子小田・上浮穴済美平成",
-          "score": 0,
+          "display": "小松",
+          "score": 1,
           "won": false,
-          "name": "内子小田・上浮穴済美平成",
-          "slug": null,
-          "combined": true
+          "name": "小松高校",
+          "slug": "ehime-komatsu"
         }
       ]
     },
     {
-      "date": "2026-07-13",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "2回戦",
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
+      "round": "準々決勝",
+      "venue": "西条市ひうち球場",
+      "teams": [
+        {
+          "display": "聖カタリナ学園",
+          "score": 0,
+          "won": false,
+          "name": "聖カタリナ学園",
+          "slug": null
+        },
+        {
+          "display": "松山聖陵",
+          "score": 6,
+          "won": true,
+          "name": "松山聖陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-04",
+      "season": "autumn",
+      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
+      "round": "準決勝",
       "venue": "坊っちゃんスタジアム",
       "teams": [
+        {
+          "display": "新田",
+          "score": 2,
+          "won": false,
+          "name": "新田",
+          "slug": null
+        },
         {
           "display": "松山聖陵",
           "score": 4,
-          "won": false,
+          "won": true,
           "name": "松山聖陵",
           "slug": null
-        },
-        {
-          "display": "松山商",
-          "score": 5,
-          "won": true,
-          "name": "松山商業高校",
-          "slug": "matsuyamashogyo"
         }
       ]
     },
     {
-      "date": "2026-07-13",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "2回戦",
-      "venue": "西条市ひうち球場",
-      "teams": [
-        {
-          "display": "新居浜工",
-          "score": 1,
-          "won": false,
-          "name": "新居浜工業高校",
-          "slug": "niihamakogyo"
-        },
-        {
-          "display": "松山西",
-          "score": 3,
-          "won": true,
-          "name": "松山西中等教育学校",
-          "slug": "matsuyamanishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "2回戦",
-      "venue": "西条市ひうち球場",
-      "teams": [
-        {
-          "display": "今治東・今治南大三島・しまなみ",
-          "score": 2,
-          "won": false,
-          "name": "今治東・今治南大三島・しまなみ",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "松山北",
-          "score": 6,
-          "won": true,
-          "name": "松山北高校",
-          "slug": "matsuyamakita"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "2回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "大洲",
-          "score": 3,
-          "won": false,
-          "name": "大洲高校",
-          "slug": "ozu"
-        },
-        {
-          "display": "宇和",
-          "score": 5,
-          "won": true,
-          "name": "宇和高校",
-          "slug": "uwa"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-14",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "2回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "西条",
-          "score": 11,
-          "won": true,
-          "name": "西条高校",
-          "slug": "saijo"
-        },
-        {
-          "display": "東予・東予総合",
-          "score": 0,
-          "won": false,
-          "name": "東予・東予総合",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "2回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "聖カタリナ学園",
-          "score": 11,
-          "won": true,
-          "name": "聖カタリナ学園",
-          "slug": null
-        },
-        {
-          "display": "愛大附",
-          "score": 0,
-          "won": false,
-          "name": "愛媛大学附属高校",
-          "slug": "ehimedaigakufuzoku"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "2回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "(新)小松",
-          "score": 1,
-          "won": false,
-          "name": "小松高校（新）",
-          "slug": "komatsushin"
-        },
-        {
-          "display": "松山学院",
-          "score": 8,
-          "won": true,
-          "name": "松山学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "2回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "新居浜商",
-          "score": 2,
-          "won": true,
-          "name": "新居浜商業高校",
-          "slug": "niihamashogyo"
-        },
-        {
-          "display": "東温",
-          "score": 1,
-          "won": false,
-          "name": "東温高校",
-          "slug": "ton"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "3回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "松山商",
-          "score": 7,
-          "won": true,
-          "name": "松山商業高校",
-          "slug": "matsuyamashogyo"
-        },
-        {
-          "display": "松山西",
-          "score": 0,
-          "won": false,
-          "name": "松山西中等教育学校",
-          "slug": "matsuyamanishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "3回戦",
-      "venue": "西条市ひうち球場",
-      "teams": [
-        {
-          "display": "松山北",
-          "score": 11,
-          "won": true,
-          "name": "松山北高校",
-          "slug": "matsuyamakita"
-        },
-        {
-          "display": "宇和",
-          "score": 6,
-          "won": false,
-          "name": "宇和高校",
-          "slug": "uwa"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "3回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "西条",
-          "score": 13,
-          "won": true,
-          "name": "西条高校",
-          "slug": "saijo"
-        },
-        {
-          "display": "聖カタリナ学園",
-          "score": 4,
-          "won": false,
-          "name": "聖カタリナ学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "3回戦",
-      "venue": "西条市ひうち球場",
-      "teams": [
-        {
-          "display": "松山学院",
-          "score": 12,
-          "won": true,
-          "name": "松山学院",
-          "slug": null
-        },
-        {
-          "display": "新居浜商",
-          "score": 6,
-          "won": false,
-          "name": "新居浜商業高校",
-          "slug": "niihamashogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-21",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "準々決勝",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "松山商",
-          "score": 8,
-          "won": false,
-          "name": "松山商業高校",
-          "slug": "matsuyamashogyo"
-        },
-        {
-          "display": "松山北",
-          "score": 11,
-          "won": true,
-          "name": "松山北高校",
-          "slug": "matsuyamakita"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-22",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "準々決勝",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "西条",
-          "score": 1,
-          "won": false,
-          "name": "西条高校",
-          "slug": "saijo"
-        },
-        {
-          "display": "松山学院",
-          "score": 4,
-          "won": true,
-          "name": "松山学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-24",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "準決勝",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "松山北",
-          "score": 5,
-          "won": false,
-          "name": "松山北高校",
-          "slug": "matsuyamakita"
-        },
-        {
-          "display": "松山学院",
-          "score": 7,
-          "won": true,
-          "name": "松山学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "1回戦",
-      "venue": "今治市営球場",
-      "teams": [
-        {
-          "display": "新居浜高専",
-          "score": 1,
-          "won": false,
-          "name": "新居浜工業高専",
-          "slug": "niihamakogyo-kosen"
-        },
-        {
-          "display": "新居浜南",
-          "score": 9,
-          "won": true,
-          "name": "新居浜南高校",
-          "slug": "niihamaminami"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "1回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "今治北",
-          "score": 10,
-          "won": true,
-          "name": "今治北高校",
-          "slug": "imabarikita"
-        },
-        {
-          "display": "八幡浜・川之石",
-          "score": 3,
-          "won": false,
-          "name": "八幡浜・川之石",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "1回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "川之江",
-          "score": 8,
-          "won": true,
-          "name": "川之江高校",
-          "slug": "kawanoe"
-        },
-        {
-          "display": "松山中央",
-          "score": 1,
-          "won": false,
-          "name": "松山中央高校",
-          "slug": "matsuyamachuo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "1回戦",
-      "venue": "今治市営球場",
-      "teams": [
-        {
-          "display": "内子",
-          "score": 4,
-          "won": false,
-          "name": "内子高校",
-          "slug": "uchiko"
-        },
-        {
-          "display": "今治西",
-          "score": 9,
-          "won": true,
-          "name": "今治西高校",
-          "slug": "imabarinishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "1回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "済美",
-          "score": 11,
-          "won": true,
-          "name": "済美",
-          "slug": null
-        },
-        {
-          "display": "松山工",
-          "score": 4,
-          "won": false,
-          "name": "松山工業高校",
-          "slug": "matsuyamakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "1回戦",
-      "venue": "今治市営球場",
-      "teams": [
-        {
-          "display": "北条・西条農業・土居",
-          "score": 0,
-          "won": false,
-          "name": "北条・西条農業・土居",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "今治工",
-          "score": 14,
-          "won": true,
-          "name": "今治工業高校",
-          "slug": "imabarikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-13",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "2回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "新田",
-          "score": 15,
-          "won": true,
-          "name": "新田",
-          "slug": null
-        },
-        {
-          "display": "南宇和",
-          "score": 0,
-          "won": false,
-          "name": "南宇和高校",
-          "slug": "minamiuwa"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-13",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "2回戦",
-      "venue": "西条市ひうち球場",
-      "teams": [
-        {
-          "display": "新居浜東",
-          "score": 7,
-          "won": true,
-          "name": "新居浜東高校",
-          "slug": "niihamahigashi"
-        },
-        {
-          "display": "三島",
-          "score": 0,
-          "won": false,
-          "name": "三島高校",
-          "slug": "ehime-mishima"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-14",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "2回戦",
-      "venue": "西条市ひうち球場",
-      "teams": [
-        {
-          "display": "八幡浜工",
-          "score": 6,
-          "won": false,
-          "name": "八幡浜工業高校",
-          "slug": "yawatahamakogyo"
-        },
-        {
-          "display": "新居浜西",
-          "score": 10,
-          "won": true,
-          "name": "新居浜西高校",
-          "slug": "niihamanishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "2回戦",
-      "venue": "西条市ひうち球場",
-      "teams": [
-        {
-          "display": "新居浜南",
-          "score": 0,
-          "won": false,
-          "name": "新居浜南高校",
-          "slug": "niihamaminami"
-        },
-        {
-          "display": "今治北",
-          "score": 11,
-          "won": true,
-          "name": "今治北高校",
-          "slug": "imabarikita"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-14",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "2回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "宇和島東",
-          "score": 5,
-          "won": true,
-          "name": "宇和島東高校",
-          "slug": "uwajimahigashi"
-        },
-        {
-          "display": "伊予農",
-          "score": 1,
-          "won": false,
-          "name": "伊予農業高校",
-          "slug": "iyonogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-14",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "2回戦",
-      "venue": "西条市ひうち球場",
-      "teams": [
-        {
-          "display": "小松",
-          "score": 13,
-          "won": true,
-          "name": "小松高校",
-          "slug": "ehime-komatsu"
-        },
-        {
-          "display": "伊予",
-          "score": 1,
-          "won": false,
-          "name": "伊予高校",
-          "slug": "iyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "2回戦",
-      "venue": "西条市ひうち球場",
-      "teams": [
-        {
-          "display": "川之江",
-          "score": 1,
-          "won": false,
-          "name": "川之江高校",
-          "slug": "kawanoe"
-        },
-        {
-          "display": "今治西",
-          "score": 2,
-          "won": true,
-          "name": "今治西高校",
-          "slug": "imabarinishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "2回戦",
-      "venue": "西条市ひうち球場",
-      "teams": [
-        {
-          "display": "済美",
-          "score": 7,
-          "won": true,
-          "name": "済美",
-          "slug": null
-        },
-        {
-          "display": "今治工",
-          "score": 0,
-          "won": false,
-          "name": "今治工業高校",
-          "slug": "imabarikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "3回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "新田",
-          "score": 8,
-          "won": true,
-          "name": "新田",
-          "slug": null
-        },
-        {
-          "display": "新居浜東",
-          "score": 0,
-          "won": false,
-          "name": "新居浜東高校",
-          "slug": "niihamahigashi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "3回戦",
-      "venue": "西条市ひうち球場",
-      "teams": [
-        {
-          "display": "新居浜西",
-          "score": 11,
-          "won": false,
-          "name": "新居浜西高校",
-          "slug": "niihamanishi"
-        },
-        {
-          "display": "今治北",
-          "score": 14,
-          "won": true,
-          "name": "今治北高校",
-          "slug": "imabarikita"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "3回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "宇和島東",
-          "score": 2,
-          "won": false,
-          "name": "宇和島東高校",
-          "slug": "uwajimahigashi"
-        },
-        {
-          "display": "小松",
-          "score": 9,
-          "won": true,
-          "name": "小松高校",
-          "slug": "ehime-komatsu"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "3回戦",
-      "venue": "西条市ひうち球場",
-      "teams": [
-        {
-          "display": "今治西",
-          "score": 1,
-          "won": false,
-          "name": "今治西高校",
-          "slug": "imabarinishi"
-        },
-        {
-          "display": "済美",
-          "score": 4,
-          "won": true,
-          "name": "済美",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-21",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "準々決勝",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "新田",
-          "score": 8,
-          "won": true,
-          "name": "新田",
-          "slug": null
-        },
-        {
-          "display": "今治北",
-          "score": 1,
-          "won": false,
-          "name": "今治北高校",
-          "slug": "imabarikita"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-22",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "準々決勝",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "小松",
-          "score": 3,
-          "won": true,
-          "name": "小松高校",
-          "slug": "ehime-komatsu"
-        },
-        {
-          "display": "済美",
-          "score": 0,
-          "won": false,
-          "name": "済美",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-24",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
-      "round": "準決勝",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "新田",
-          "score": 6,
-          "won": true,
-          "name": "新田",
-          "slug": null
-        },
-        {
-          "display": "小松",
-          "score": 0,
-          "won": false,
-          "name": "小松高校",
-          "slug": "ehime-komatsu"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-26",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 愛媛大会",
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
       "round": "決勝",
       "venue": "坊っちゃんスタジアム",
       "teams": [
         {
-          "display": "新田",
-          "score": 12,
+          "display": "松山聖陵",
+          "score": 11,
           "won": true,
-          "name": "新田",
+          "name": "松山聖陵",
           "slug": null
         },
         {
-          "display": "松山学院",
-          "score": 3,
+          "display": "西条",
+          "score": 1,
           "won": false,
-          "name": "松山学院",
-          "slug": null
+          "name": "西条高校",
+          "slug": "saijo"
         }
       ]
     },
@@ -14760,352 +15106,6 @@
           "won": false,
           "name": "松山商業高校",
           "slug": "matsuyamashogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "西条市ひうち球場",
-      "teams": [
-        {
-          "display": "西条",
-          "score": 8,
-          "won": true,
-          "name": "西条高校",
-          "slug": "saijo"
-        },
-        {
-          "display": "大洲・大洲農",
-          "score": 0,
-          "won": false,
-          "name": "大洲・大洲農",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "丸山公園野球場",
-      "teams": [
-        {
-          "display": "宇和島東",
-          "score": 7,
-          "won": true,
-          "name": "宇和島東高校",
-          "slug": "uwajimahigashi"
-        },
-        {
-          "display": "新居浜西",
-          "score": 1,
-          "won": false,
-          "name": "新居浜西高校",
-          "slug": "niihamanishi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "西条市ひうち球場",
-      "teams": [
-        {
-          "display": "今治西",
-          "score": 10,
-          "won": true,
-          "name": "今治西高校",
-          "slug": "imabarinishi"
-        },
-        {
-          "display": "松山学院",
-          "score": 4,
-          "won": false,
-          "name": "松山学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "西条市ひうち球場",
-      "teams": [
-        {
-          "display": "帝京第五",
-          "score": 8,
-          "won": true,
-          "name": "帝京第五",
-          "slug": null
-        },
-        {
-          "display": "川之江",
-          "score": 7,
-          "won": false,
-          "name": "川之江高校",
-          "slug": "kawanoe"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-28",
-      "season": "autumn",
-      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
-      "round": "準々決勝",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "西条",
-          "score": 3,
-          "won": true,
-          "name": "西条高校",
-          "slug": "saijo"
-        },
-        {
-          "display": "宇和島東",
-          "score": 1,
-          "won": false,
-          "name": "宇和島東高校",
-          "slug": "uwajimahigashi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-28",
-      "season": "autumn",
-      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
-      "round": "準々決勝",
-      "venue": "西条市ひうち球場",
-      "teams": [
-        {
-          "display": "今治西",
-          "score": 5,
-          "won": false,
-          "name": "今治西高校",
-          "slug": "imabarinishi"
-        },
-        {
-          "display": "帝京第五",
-          "score": 6,
-          "won": true,
-          "name": "帝京第五",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-04",
-      "season": "autumn",
-      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
-      "round": "準決勝",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "西条",
-          "score": 7,
-          "won": true,
-          "name": "西条高校",
-          "slug": "saijo"
-        },
-        {
-          "display": "帝京第五",
-          "score": 6,
-          "won": false,
-          "name": "帝京第五",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "新田",
-          "score": 7,
-          "won": true,
-          "name": "新田",
-          "slug": null
-        },
-        {
-          "display": "今治北",
-          "score": 1,
-          "won": false,
-          "name": "今治北高校",
-          "slug": "imabarikita"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "丸山公園野球場",
-      "teams": [
-        {
-          "display": "小松",
-          "score": 11,
-          "won": true,
-          "name": "小松高校",
-          "slug": "ehime-komatsu"
-        },
-        {
-          "display": "松山南",
-          "score": 1,
-          "won": false,
-          "name": "松山南高校",
-          "slug": "matsuyamaminami"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "聖カタリナ学園",
-          "score": 2,
-          "won": true,
-          "name": "聖カタリナ学園",
-          "slug": null
-        },
-        {
-          "display": "新居浜商",
-          "score": 1,
-          "won": false,
-          "name": "新居浜商業高校",
-          "slug": "niihamashogyo"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "松山聖陵",
-          "score": 5,
-          "won": true,
-          "name": "松山聖陵",
-          "slug": null
-        },
-        {
-          "display": "松山東",
-          "score": 2,
-          "won": false,
-          "name": "松山東高校",
-          "slug": "matsuyamahigashi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-28",
-      "season": "autumn",
-      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
-      "round": "準々決勝",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "新田",
-          "score": 8,
-          "won": true,
-          "name": "新田",
-          "slug": null
-        },
-        {
-          "display": "小松",
-          "score": 1,
-          "won": false,
-          "name": "小松高校",
-          "slug": "ehime-komatsu"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-28",
-      "season": "autumn",
-      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
-      "round": "準々決勝",
-      "venue": "西条市ひうち球場",
-      "teams": [
-        {
-          "display": "聖カタリナ学園",
-          "score": 0,
-          "won": false,
-          "name": "聖カタリナ学園",
-          "slug": null
-        },
-        {
-          "display": "松山聖陵",
-          "score": 6,
-          "won": true,
-          "name": "松山聖陵",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-04",
-      "season": "autumn",
-      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
-      "round": "準決勝",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "新田",
-          "score": 2,
-          "won": false,
-          "name": "新田",
-          "slug": null
-        },
-        {
-          "display": "松山聖陵",
-          "score": 4,
-          "won": true,
-          "name": "松山聖陵",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-05",
-      "season": "autumn",
-      "tournament": "2025年 秋季四国地区高校野球 愛媛県大会",
-      "round": "決勝",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "松山聖陵",
-          "score": 11,
-          "won": true,
-          "name": "松山聖陵",
-          "slug": null
-        },
-        {
-          "display": "西条",
-          "score": 1,
-          "won": false,
-          "name": "西条高校",
-          "slug": "saijo"
         }
       ]
     }

@@ -206,7 +206,16 @@ export function ResultsCarousel({ slides, label, className }: Props) {
 
   return (
     <div
-      className={className}
+      /*
+        ★★**縦は「枠の余りを使い切る」形にしてある**（2026-09-01。運営者の指示）。
+
+        トップの結果カードは**右カラムと横並び**で、`grid` が高さをそろえるので、
+        **右が高い日は結果カードの下に大きな空白ができる**（実測で230ポイント）。
+        ★**中身を伸ばして埋める**ため、ここを縦のflexにして
+        **枚（`track`）に余りを渡す**（操作の行は下に残る）。
+        ★**渡された `className` に `flex-1` が無ければ、今までどおり中身なりの高さ**になる。
+      */
+      className={cn("flex flex-col", className)}
       role="group"
       aria-roledescription="カルーセル"
       aria-label={label}
@@ -231,7 +240,11 @@ export function ResultsCarousel({ slides, label, className }: Props) {
           **指定すると、なめらかな移動が効かない環境で
           `scrollTo({behavior:"auto"})` の逃げ道まで塞がれる。**
         */
-        className="flex snap-x snap-mandatory overflow-x-auto overscroll-x-contain [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        /*
+          ★**`min-h-0` を必ず付ける** —— flexの子は既定で中身より縮まないので、
+          これが無いと `flex-1` を渡しても枠からはみ出す。
+        */
+        className="flex min-h-0 flex-1 snap-x snap-mandatory overflow-x-auto overscroll-x-contain [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         /*
           ★**読み上げの更新通知は、自動で動いているあいだは出さない**
           （勝手に動くものを読み上げ続けると邪魔になる。APGの指針）。
@@ -244,6 +257,8 @@ export function ResultsCarousel({ slides, label, className }: Props) {
             key={i}
             data-index={i}
             className="w-full shrink-0 snap-start"
+            // ★1枚ぶんの中身も枠いっぱいに伸ばす（中の行が余りを分け合う）
+            style={{ minHeight: "100%" }}
             role="group"
             aria-roledescription="スライド"
             aria-label={`${i + 1} / ${slides.length}`}

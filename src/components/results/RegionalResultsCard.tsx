@@ -34,18 +34,21 @@ import {
  */
 export function RegionalResultsCard({
   pickups,
-  perSlide = 12,
+  maxPerSlide = 18,
   slides = 4,
   seed,
 }: {
   pickups: RegionalPickups;
   /**
-   * 1枚に出す試合数。★**枚をまたいで変えないこと**（高さが揃わなくなる）。
+   * 1枚に出す試合数の**上限**。★**枚をまたいで変えないこと**（高さが揃わなくなる）。
    * ★★**2列×6行＝12件**（2026-08-31。運営者の指示）。
    * それまで1列4件で、**校名の字が大きいぶん余白が目立っていた。**
+   * ★★**2026-09-01 に上限を 18（2列×9行）まで上げた**（運営者の「目いっぱい使って」）。
+   * **抜粋にある試合の数で決まる**（下の `fitPerSlide`）ので、
+   * 試合が少ない日は今までどおり12件のまま。
    * ★**狭い画面では1列に落とす**（半分の幅に校名2つとスコアは入らない）。
    */
-  perSlide?: number;
+  maxPerSlide?: number;
   /** 何枚までめくれるようにするか */
   slides?: number;
   /** 同じ並びを再現したいとき（検証用）。省略すると毎回変わる */
@@ -56,7 +59,16 @@ export function RegionalResultsCard({
     **データを増やさずに見せる量を5倍にできる**ので、枚に分けて横へめくる。
     ★**足りなければ枚数が減るだけ**（`chunk` が空の枚を作らない）。
   */
-  const games = pickRegionalGames(pickups, perSlide * slides, seed);
+  const picked = pickRegionalGames(pickups, maxPerSlide * slides, seed);
+  /*
+    ★★★**1枚あたりの件数は、抜粋にある試合の数から決める**（2026-09-01）。
+
+    ★**割り切れない数で切ると、最後の1枚だけ短くなる** ——
+    「1枚あたりの件数を枚ごとに変えないこと」（高さが揃わずめくるたびにガタつく）
+    という決めごとに反する。**いままでは 24件÷12 がたまたま割り切れていただけ。**
+  */
+  const perSlide = fitPerSlide(picked.length, maxPerSlide);
+  const games = picked.slice(0, perSlide * Math.max(1, Math.floor(picked.length / perSlide)));
   const pages = chunk(games, perSlide);
 
   /*
@@ -69,7 +81,15 @@ export function RegionalResultsCard({
   return (
     <section
       aria-labelledby="regional-heading"
-      className="rounded-xl border border-line bg-white p-4 sm:p-6"
+      /*
+        ★★**縦のflexにして、余った高さを試合の一覧に渡す**（2026-09-01。運営者の指示）。
+
+        このカードは右カラム（勝ち上がっている公立校）と横並びで、
+        `grid` が高さをそろえる。**右が高い日は、下に大きな空白ができていた**
+        （実測230ポイント。「全国47地区の進捗を見る」の下がまるごと空く）。
+        ★**空白を消すのではなく、中身に使わせる。**
+      */
+      className="flex h-full flex-col rounded-xl border border-line bg-white p-4 sm:p-6"
     >
       {/* ★進捗の地図（/regional）への入口。地図から各県の試合とトーナメント表へ行ける */}
       <SectionHeading
@@ -99,7 +119,8 @@ export function RegionalResultsCard({
         </p>
       ) : (
         <ResultsCarousel
-          className="mt-4"
+          // ★`flex-1` で余った高さを受け取る（`min-h-0` はカルーセル側に入れてある）
+          className="mt-4 flex-1"
           label="地方大会の結果"
           /*
             ★★**中身はここ（サーバー）で全部描いて渡す。**
@@ -114,12 +135,13 @@ export function RegionalResultsCard({
             */
             <div
               key={p}
-              className="grid grid-cols-1 sm:grid-cols-2 sm:divide-x sm:divide-line"
+              // ★★`h-full` と `auto-rows-fr` で、余った高さを行が分け合う
+              className="grid h-full grid-cols-1 sm:grid-cols-2 sm:divide-x sm:divide-line"
             >
               {chunk(page, Math.ceil(page.length / 2)).map((column, c) => (
                 <ul
                   key={c}
-                  className="divide-y divide-line sm:first:pr-5 sm:last:pl-5"
+                  className="grid auto-rows-fr divide-y divide-line sm:first:pr-5 sm:last:pl-5"
                 >
                   {column.map((game, i) => (
                     <li key={`${game.districtSlug}-${game.date}-${i}`}>
@@ -158,6 +180,25 @@ export function RegionalResultsCard({
   );
 }
 
+/**
+ * 1枚あたりの件数を決める（2026-09-01）。
+ *
+ * ★**2枚以上めくれる、いちばん大きい偶数**を採る。
+ *   - **偶数**にするのは2列に均等に割るため（奇数だと左右で行数が変わる）
+ *   - **2枚以上**にするのは、1枚では横スライドの意味が無くなるため
+ *
+ * ★**割り切れなければ余りは出さない**（呼ぶ側が切り捨てる）。
+ * 抜粋はもともと乱数で選んだ標本なので、数件落ちても中身の性格は変わらない。
+ * ★**「最後の1枚だけ短い」を出さないほうが大事**（めくるたびに高さが跳ねる）。
+ */
+function fitPerSlide(count: number, max: number): number {
+  for (let n = max - (max % 2); n >= 8; n -= 2) {
+    if (Math.floor(count / n) >= 2) return n;
+  }
+  // 2枚に足りないときは1枚にまとめる（偶数に丸める）
+  return Math.max(2, Math.min(count - (count % 2), max));
+}
+
 /** 決まった数ずつに切り分ける。★**空の枚は作らない** */
 function chunk<T>(items: T[], size: number): T[][] {
   const pages: T[][] = [];
@@ -194,7 +235,8 @@ function RegionalRow({ game }: { game: RegionalPickup }) {
       ★**上の行は県・日付・回戦だけ。** 2行にまたがる要素を置くと
       行の高さが揃わず、左右の列で段差が出る。
     */
-    <div className="py-2.5">
+    /* ★行が伸びたぶんは上下に均す（`auto-rows-fr` で高さを分け合うため） */
+    <div className="flex h-full flex-col justify-center py-2.5">
       <p className="flex items-center gap-1.5 text-[0.6875rem] leading-tight text-ink-faint">
         {/*
           ★★**○/● の丸は 2026-08-31 に外した**（運営者の指示）。

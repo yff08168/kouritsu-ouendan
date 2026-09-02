@@ -192,6 +192,8 @@ export function readHsbBracket(html, { district = "" } = {}) {
     .filter(Boolean);
 
   const games = [];
+  /** ★**不戦勝の数**（枠は使うが試合は行われていない）。呼ぶ側の検算に渡す */
+  let byes = 0;
   /*
     ★**スロット番号の文字は枝の線より 4 ポイント下にある**（文字の基準線）。
     枝の高さで引くので、**許容を 8 まで広げる**（スロットの間隔は 30 なので混ざらない）。
@@ -232,6 +234,14 @@ export function readHsbBracket(html, { district = "" } = {}) {
     */
     if (!st || !sb) {
       if (j.topRed !== j.bottomRed) {
+        /*
+          ★★**不戦勝は数えて返すこと**（2026-09-02）。
+          **枠は使うが試合は行われていない**ので、呼ぶ側の
+          「チーム数 − 試合数 = 1」がそのままでは必ず1つ足りなくなる
+          （鹿児島・愛媛・長崎・高知で、そのために大会がまるごと落ちていた）。
+          ★**画面には出さない**（0対0にしない。大阪・石川・群馬と同じ）。
+        */
+        byes += 1;
         at.delete(kt);
         at.delete(kb);
         at.set(key(side, j.mid), j.topRed ? A : B);
@@ -325,6 +335,7 @@ export function readHsbBracket(html, { district = "" } = {}) {
   return {
     slots,
     games,
+    byes,
     champion,
     legend,
     printedChampion: texts.find((t) => t.cls === "y_f18" && /優勝/.test(t.text))?.text ?? null,

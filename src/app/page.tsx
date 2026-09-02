@@ -146,7 +146,20 @@ export default async function HomePage() {
       </div>
 
       <Container className="mt-4 sm:mt-5">
-        <div className="grid gap-4 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
+        {/*
+          ★★★**`items-start` にしてある**（2026-09-01。運営者の「目いっぱい使って」）。
+
+          左右のカードは中身の量が別々に決まる（左＝抜粋の試合数／右＝まだ負けていない
+          公立校の数）ので、**どちらが高いかは日によって入れ替わる。**
+          既定の `stretch` だと**低いほうのカードに大きな空白**ができていた
+          （実測：右が3校の日は右に246ポイント、右が8校の日は左に230ポイント）。
+
+          ★**右のカードは中身なりの高さで終わらせる**（`items-start`）。
+          ★★**左（結果）のカードだけ `h-full` で行の高さいっぱいに伸ばし、中身に使わせる**
+          —— こちらは横スライドなので、伸びたぶんを行が分け合える。
+          ★**`h-full` は `items-start` でも効く**（%の高さはグリッド領域＝行の高さに対して解く）。
+        */}
+        <div className="grid items-start gap-4 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
           {/*
             結果速報。**時期によって中身が入れ替わる枠。**
 

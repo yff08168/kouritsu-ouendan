@@ -4541,6 +4541,19 @@ function readTwoColumnBracket(raw, opts) {
       ★**渡さなければ今までどおり紙の全体を走査する**（他県は1行も変わらない）。
     */
     centerFloor,
+    /*
+      ★★★**スロット番号が下から上へ振ってある半分がある**（2026-09-01 その7。広島の2024年）。
+
+        2026年の紙 … 左 1→43・右 43→85 で、**どちらも上から下へ増える**
+        2024年の紙 … 左 1→43 は上から下だが、**右は 86→44**（下へ行くほど減る）
+
+      ★**`assembleSlotBracket` は「上から順に 1,2,3…」を前提**にしているので、
+      逆さの半分では**連番が1つも見つからず**「スロット番号が3個しか連番になっていない」
+      で組み立てに入る前に落ちる。
+      ★**向きを渡された半分だけ、入れ替える前に y を反転する**（`flip` は回戦の向きで別物）。
+      ★**既定は両方 false**（既存の県は1行も変わらない）。
+    */
+    mirrorSlots = [false, false],
   } = opts;
   const flat = raw.lines.map((l) => normalize(l.text.replace(/\t/g, "")));
   const tournament = flat.map((t) => t.match(titlePattern)?.[0]).find(Boolean);
@@ -4564,7 +4577,7 @@ function readTwoColumnBracket(raw, opts) {
   const LABELS = ["準決勝", "準々決勝"];
   const halves = [0, 1].map((i) =>
     assembleSlotBracket(
-      orientPage(page, {
+      orientPage(mirrorSlots[i] ? { page: page.page, lines: page.lines.map((l) => ({ ...l, y: -l.y })) } : page, {
         slotAxis: "y",
         flip: i === 1,
         /*
@@ -4901,10 +4914,44 @@ const hiroshima = {
   name: "広島県高等学校野球連盟",
   siteUrl: "https://hiroshima.hhbf1950.or.jp/",
   politenessMs: 2000,
-  // **夏だけ。** 春季・秋季の表は形が違う可能性があるので確かめてから足すこと
+  /*
+    ★★**夏だけ**（2026-09-01 その7 に春季・秋季を試して戻した）。
+
+    ★**紙は同じページに並んでいて、大会名も読める**（下の `TITLES` に形が書いてある）が、
+    **左右2段組ではなかった** —— 令和8年度春季の紙はスロット番号の連番が
+    **左 9 個・右 16 個**で左右に割れておらず、`readTwoColumnBracket` の前提
+    （半分ずつ組んで中央でつなぐ）に合わない。実際、両方の半分が組み立てに落ちる。
+    ★**`seasons` に足すと、毎回の実行で警告だけが2本出る**ので戻してある。
+    ★**次に触る人へ**: 春季・秋季は**1段の紙**として別の読み手が要る（README を読むこと）。
+  */
   seasons: {
     summer:
       "https://hiroshima.hhbf1950.or.jp/%E5%A4%A7%E4%BC%9A%E9%96%A2%E9%80%A3/%E7%A1%AC%E5%BC%8F%E9%83%A8%E5%90%84%E7%A8%AE%E5%A4%A7%E4%BC%9A",
+  },
+  /**
+   * 季節ごとの大会名と、年の出し方。
+   *
+   * ★**夏だけ「第N回」から年が出る**（N + 1918）。
+   * ★★**春季・秋季は元号年度**（`令和８年度春季広島県高校野球大会（知事杯）…`）。
+   *   **回数（第146回）は中国地区大会の通し番号**なので年には使えない
+   *   （宮崎の「第158回」・福井の「第154回」と同じ）。
+   * ★**「高校野球大会」と「高等学校野球大会」が季節で違う。** 寄せないこと。
+   * ★**春季・秋季はいま `seasons` に入れていない**（上の説明）。
+   *   **紙の題の形を測ってあるので、読み手ができたらそのまま使える。**
+   */
+  TITLES: {
+    spring: {
+      re: /令和\d+年度春季広島県高校野球大会/,
+      year: (t) => 2018 + Number(normalize(t).match(/令和(\d+)年度/)[1]),
+    },
+    summer: {
+      re: /第\d+回全国高等学校野球選手権広島大会/,
+      year: (t) => Number(t.match(/第(\d+)回/)[1]) + 1918,
+    },
+    autumn: {
+      re: /令和\d+年度秋季広島県高等学校野球大会/,
+      year: (t) => 2018 + Number(normalize(t).match(/令和(\d+)年度/)[1]),
+    },
   },
   /** 凡例「呉 ： 鶴岡一人記念球場」。1文字の記号 → 球場名 */
   venueLegend(page) {
@@ -4917,7 +4964,109 @@ const hiroshima = {
     }
     return map;
   },
-  async collect({ fetchHtml, season, url }) {
+  /*
+    ★★★**過去の大会は「硬式部 各種大会」の中の「過去の大会」から**（2026-09-01 その7）。
+
+    ★**トップページには入口が無い**（前のメモの「リンクが見つからない」はそのため）。
+    **年度ごとに Google Sites が別に立っている**が、中の作りはいまの年と同じ
+    （`drive.google.com/file/d/…` の組み合わせ表PDF）。
+
+      大会関連 → 硬式部 各種大会 → 過去の大会
+        https://sites.google.com/view/taikaikankei/大会関係過年度
+          令和６(2024)年度 … /view/taikaikankei/大会関係過年度/令和年度   （PDFはこのページに直接ある）
+          令和７(2025)年度 … /view/r7taikai/令和年度各種大会              （**子ページ「硬式部各種大会」にある**）
+
+    ★★**「試合結果」のリンクはバーチャル高校野球と一球速報**なので**そこからは取らない。**
+    取れるのは**組み合わせ表のPDFだけ**（大会が終わると結果が刷り込まれる）。
+  */
+  pastIndexUrl: "https://sites.google.com/view/taikaikankei/%E5%A4%A7%E4%BC%9A%E9%96%A2%E4%BF%82%E9%81%8E%E5%B9%B4%E5%BA%A6",
+  /** 何枚まで開いて表題を見るか。**リンク名では大会を見分けられない**（下の説明） */
+  maxSheets: 8,
+  /**
+   * ★**Google Sites のリンクは「外部へ飛ぶ」と `google.com/url?q=…` で包まれる。**
+   * 包みを剥がさないと同じサイトの中かどうかも分からない。
+   */
+  unwrap(href) {
+    const m = /^https:\/\/www\.google\.com\/url\?q=([^&]+)/.exec(href);
+    return m ? decodeURIComponent(m[1]) : href;
+  },
+  /**
+   * ★★**リンク名の入り方が年で違う**（2026-09-01 に実測）。
+   *
+   *   いまの年（2026）… `aria-label="組み合わせ表"`（`<a>` の中は画像だけ）
+   *   令和6年度（2024）… **`aria-label` が無く、`<a>` の中の文字が
+   *                        `組み合わせ表（PDF形式）`**
+   *
+   * ★**片方だけを見ていると、その年のPDFが1枚も拾えない**（実際に0枚だった）。
+   */
+  sheetIds(html) {
+    const out = [];
+    for (const m of html.matchAll(
+      /<a\b[^>]*href="https:\/\/drive\.google\.com\/file\/d\/([\w-]{20,})\/view[^"]*"[^>]*>([\s\S]{0,300}?)<\/a>/g,
+    )) {
+      const label = (m[0].match(/aria-label="([^"]*)"/)?.[1] ?? m[2].replace(/<[^>]+>/g, ""))
+        .replace(/\s+/g, " ")
+        .trim();
+      // ★「組み合わせ表（ベスト16）」は途中経過、「地区予選」は別の紙
+      if (!/組\s*み?\s*合\s*わ?\s*せ\s*表/.test(label)) continue;
+      if (/ベスト|地区予選|各地区/.test(label)) continue;
+      if (!out.includes(m[1])) out.push(m[1]);
+    }
+    return out;
+  },
+  /** 年 → その年度のページ（複数）。**約束のまま持つ**（季節ごとに取り直さない） */
+  _pastHtml: new Map(),
+  pastPages(fetchHtml, year) {
+    if (!this._pastHtml.has(year)) {
+      this._pastHtml.set(
+        year,
+        (async () => {
+          const index = await fetchHtml(this.pastIndexUrl);
+          if (!index) return [];
+          /*
+            ★**年度の見分けは「(2024)」のような西暦**（`令和6年度` だけを見ない）。
+            元号の計算をこちら側でやらずに済む。
+          */
+          let target = null;
+          for (const m of index.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]{0,200}?)<\/a>/g)) {
+            const label = m[2].replace(/<[^>]+>/g, "").replace(/\s+/g, "");
+            if (!new RegExp(`[(（]${year}[)）]`).test(label)) continue;
+            target = new URL(this.unwrap(m[1].replace(/&amp;/g, "&")), this.pastIndexUrl).toString();
+            break;
+          }
+          if (!target) return [];
+          const first = await fetchHtml(target);
+          if (!first) return [];
+          if (this.sheetIds(first).length) return [first];
+          /*
+            ★**年度によっては、その年のサイトの入口に飛ぶ**（令和7年度）。
+            **組み合わせ表は子ページ「硬式部各種大会」にある**ので、そこまで辿る。
+          */
+          for (const m of first.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]{0,200}?)<\/a>/g)) {
+            const label = m[2].replace(/<[^>]+>/g, "").replace(/\s+/g, "");
+            if (!/硬式/.test(label)) continue;
+            const child = await fetchHtml(
+              new URL(this.unwrap(m[1].replace(/&amp;/g, "&")), target).toString(),
+            );
+            if (child && this.sheetIds(child).length) return [child];
+          }
+          return [];
+        })(),
+      );
+    }
+    return this._pastHtml.get(year);
+  },
+  async collect({ fetchHtml, season, url, year }) {
+    /*
+      ★★**過去年は「過去の大会」から**（上の説明）。
+      ★**今年は今までどおり連盟のページ**（大会中はそちらのほうが早く出る）。
+    */
+    if (year !== new Date().getFullYear()) {
+      const pages = await this.pastPages(fetchHtml, year);
+      const games = [];
+      for (const page of pages) games.push(...(await this.readSheets(this.sheetIds(page), season, year)));
+      return games;
+    }
     const index = await fetchHtml(url);
     if (!index) return [];
     /*
@@ -4931,43 +5080,143 @@ const hiroshima = {
       前後の文字を窓で拾うと、**すぐ上にある「組み合わせ表（ベスト16）」を
       巻き込んで目当ての表が落ちる**（実際に落ちて0件になった）。
     */
-    const ids = [];
-    for (const m of index.matchAll(
-      /drive\.google\.com\/file\/d\/([\w-]{20,})\/view[^"]*"[^>]*aria-label="([^"]*)"/g,
-    )) {
-      if (!/組\s*み?\s*合\s*わ?\s*せ\s*表/.test(m[2]) || /ベスト/.test(m[2])) continue;
-      if (!ids.includes(m[1])) ids.push(m[1]);
-    }
+    const ids = this.sheetIds(index);
     if (!ids.length) {
       console.log("  ⚠️ 広島: 大会ページに組み合わせ表のPDFが見つからない。出典の作りが変わった可能性がある");
       return [];
     }
-    for (const id of ids.slice(0, 6)) {
+    return this.readSheets(ids, season, year);
+  },
+  /** 候補のPDFを順に開いて、目当ての大会の紙が来たらそれを読む */
+  async readSheets(ids, season, year) {
+    for (const id of ids.slice(0, this.maxSheets)) {
       const parsed = await fetchPdfPages(`https://drive.google.com/uc?export=download&id=${id}`, { headers: UA });
       await sleep(this.politenessMs);
       if (!parsed?.length) continue;
       for (const raw of parsed) {
-        const games = this.readSheet(raw, season);
+        const games = this.readSheet(raw, season, year);
         if (games) return games;
       }
     }
     return [];
   },
+  /**
+   * ★★**左右2段組の境目は紙から測る**（2026-09-01 その7）。
+   *
+   * 紙の大きさが年でまるで違う —— **いまの年は x が 42〜2,900、2024年は 42〜546**
+   * （同じ内容を別の紙面に組んでいる）。
+   * ★**決め打ちの 1400 のままでは、2024年の紙は右半分が丸ごと左に入って組めない。**
+   * ★**スロット番号の列は「連番がいちばん長く並ぶ x」**なので、
+   * **上位2つの列の中間**を境目にする（実測：いまの年 1,422／2024年 291.5）。
+   */
+  halfOf(page) {
+    const cols = new Map();
+    for (const l of page.lines) {
+      for (const it of l.items) {
+        const t = it.text.trim();
+        if (!/^\d{1,3}$/.test(t)) continue;
+        const k = Math.round(it.x);
+        if (!cols.has(k)) cols.set(k, new Set());
+        cols.get(k).add(Number(t));
+      }
+    }
+    const runOf = (set) => {
+      const ns = [...set].sort((a, b) => a - b);
+      let best = 0;
+      let cur = 0;
+      for (let i = 0; i < ns.length; i++) {
+        cur = i && ns[i] === ns[i - 1] + 1 ? cur + 1 : 1;
+        best = Math.max(best, cur);
+      }
+      return best;
+    };
+    const ranked = [...cols.entries()]
+      .map(([x, set]) => ({ x, run: runOf(set) }))
+      .sort((a, b) => b.run - a.run);
+    if (!ranked.length) return null;
+    // ★**スコアの列を相方に選ばないこと。** 十分に離れていて、連番も長い列だけ
+    const mate = ranked.slice(1).find((c) => Math.abs(c.x - ranked[0].x) > 50 && c.run >= 8);
+    return mate ? (ranked[0].x + mate.x) / 2 : null;
+  },
+  /**
+   * ★★**その半分のスロット番号が「下へ行くほど増える」か**（2026-09-01 その7）。
+   *
+   * 2024年の紙は**右半分だけ 86→44 と逆さ**で、
+   * そのままでは `assembleSlotBracket` が連番を1つも見つけられない。
+   * ★**紙から測る。決め打ちにしないこと**（年で向きが変わる）。
+   *
+   * @returns true なら逆さ（呼ぶ側が `mirrorSlots` に渡す）
+   */
+  slotsReversed(page, [lo, hi]) {
+    const cols = new Map();
+    for (const l of page.lines) {
+      for (const it of l.items) {
+        const t = it.text.trim();
+        if (!/^\d{1,3}$/.test(t) || it.x < lo || it.x > hi) continue;
+        const k = Math.round(it.x);
+        if (!cols.has(k)) cols.set(k, []);
+        cols.get(k).push({ y: l.y, v: Number(t) });
+      }
+    }
+    let best = null;
+    for (const [, list] of cols) {
+      const uniq = new Set(list.map((o) => o.v)).size;
+      if (!best || uniq > best.length) best = list;
+    }
+    if (!best || best.length < 8) return false;
+    // ★上（yが大きい）から下（yが小さい）へ見て、番号が減っていれば逆さ
+    const sorted = [...best].sort((a, b) => b.y - a.y);
+    let down = 0;
+    let up = 0;
+    for (let i = 1; i < sorted.length; i++) {
+      if (sorted[i].v > sorted[i - 1].v) down += 1;
+      else up += 1;
+    }
+    return up > down;
+  },
   /** 1枚の組合せ表を読む。**組めなければ null**（呼び出し側は次のPDFへ） */
-  readSheet(raw, season) {
+  readSheet(raw, season, year) {
+    /*
+      ★★**過去年は回数まで見て選ぶ**（2026-09-01 その7）。
+      同じ年度のページに**複数の大会の紙**が並ぶので、
+      `第\d+回` のままだと**別の年の紙を読んでしまう。**
+    */
+    const spec = this.TITLES[season];
+    if (!spec) return null;
+    /*
+      ★★**過去年は年まで見て選ぶ**（2026-09-01 その7）。
+      同じ年度のページに**複数の大会の紙**が並ぶので、
+      季節の形だけで選ぶと**別の年の紙を読んでしまう。**
+    */
+    const titlePattern =
+      year == null
+        ? spec.re
+        : season === "summer"
+          ? new RegExp(`第${year - 1918}回全国高等学校野球選手権広島大会`)
+          : new RegExp(spec.re.source.replace("令和\\d+年度", `令和${year - 2018}年度`));
+    const half = this.halfOf(raw);
+    if (half == null) return null;
     return readTwoColumnBracket(raw, {
       district: "広島",
-      titlePattern: /第\d+回全国高等学校野球選手権広島大会/,
+      titlePattern,
+      yearOf: spec.year,
       /*
         左右で分ける境目。**中央の決勝はどちらにも入れない。**
-        スロット列の x（左408／右2449）のちょうど中間あたりで切る。
+        ★**紙から測る**（`halfOf`。紙の大きさが年で違う）。
       */
-      half: 1400,
+      half,
       /*
         ★**入れ替えたあとは行の許容幅を広げる。** 右半分は数字が右揃えで、
         2桁のスコアだけ約29ポイント別の帯に落ちる。回戦の間隔（約141）より十分小さく。
+        ★★**紙の大きさが年で違う**ので、**幅も紙に合わせて縮める**
+        （2024年の紙はいまの年の 1/5 ほどの寸法。40 のままだと回戦の帯どうしがくっつく）。
       */
-      rowTolerance: 40,
+      rowTolerance: Math.max(6, Math.round((40 * half) / 1422)),
+      // ★★スロット番号の向きは紙から測る（2024年の紙は右半分だけ逆さ）
+      mirrorSlots: [
+        this.slotsReversed(raw, [0, half]),
+        this.slotsReversed(raw, [half, 1e6]),
+      ],
       // ★広島の校名は横書きで折り返すので、京都（縦書き）と読む順が逆
       nameOrder: ["asc", "asc"],
       season,
@@ -10832,9 +11081,24 @@ const shiga = {
           （春は「安曇川・」の後ろに空白があり、末尾に `）` が付く）。
           空白を落として括弧を外してから、`・` でつながっているものだけを採る。
         */
-        const m = it.text.trim().match(/([①-⑳])\s*([^：:]+)$/);
+        /*
+          ★★**丸数字とコロンの順番が年で逆になる**（2026-09-02。令和5年度）。
+
+            令和6年度 … `合：① 湖南農業・甲南・信楽・愛知・長浜農業` `② 高島・安曇川）`
+            令和5年度 … `出場チーム：４９チーム（連合①：信楽･愛知・長浜農業・長浜北星`
+                         `連合②：湖南農業・甲南）`
+
+          ★**「丸数字のあとにコロンが来ない」と決めていたので、令和5年度は
+          1件も読めず「連合チームの内訳が紙から読めない」で春が丸ごと落ちていた。**
+          ★**丸数字のうしろのコロンは、あってもなくてもよい**ことにする。
+        */
+        const m = it.text.trim().match(/([①-⑳])\s*[：:]?\s*([^：:]+)$/);
         if (!m) continue;
-        const names = m[2].replace(/[）)]\s*$/, "").replace(/\s+/g, "");
+        /*
+          ★**中黒は全角とは限らない**（令和5年度は `信楽･愛知` と**半角の `･`** が混ざる）。
+          ★**寄せておかないと、画面に出る校名の区切りが1件だけ半角になる。**
+        */
+        const names = m[2].replace(/[）)]\s*$/, "").replace(/\s+/g, "").replace(/[･·・]/g, "・");
         if (/・/.test(names)) found.set(m[1], names);
       }
     }
@@ -15066,8 +15330,13 @@ const nagasaki = omyuAdapter({
  *   ★★**このサイトは47都道府県ぶんある**（`<県>.hsbflash.jp`）。
  *   **規約で外している6県（北海道・青森・秋田・東京・鳥取・宮城）も
  *   ここからなら技術的には取れてしまう。**
- *   ★**連盟が断っているものを別経路で取るかどうかは運営者の判断**なので、
- *   **福岡だけにしてある。勝手に他県へ広げないこと。**
+ *   ★★★**そこへは広げないこと。** **連盟が断っているものを別経路で取るかどうかは運営者の判断**で、
+ *   **6県については「取らない」ままである。**
+ *
+ *   ★★**2026-09-02 に 鹿児島・愛媛・長崎・高知 を足した**（運営者の判断）。
+ *   **この4県の連盟は取得を断っていない** —— 断っていないが、
+ *   **連盟からはこれ以上取れなかった**（`kagoshimaHsb` の説明に県ごとの理由がある）。
+ *   ★**「連盟が断っている県へ広げる」のとは別の話**なので、上の線は動いていない。
  *
  * ------------------------------------------------------------------
  * ★★ 出典の形 ── **枝が線として描いてあるトーナメント表**
@@ -15122,17 +15391,19 @@ const nagasaki = omyuAdapter({
  *      （またぐときは「開始日以上なら開始月、そうでなければ終了月」）。
  *      ★**決勝だけ縦書きの漢数字**（`四 月 六 日`）なので別に読む。
  */
-const fukuoka = {
-  slug: "fukuoka",
-  district: "福岡",
+/*
+  ★★★**県ごとの違いは4つだけ**（2026-09-02 に共通化した。それまで福岡だけの作りだった）。
+
+    slug / district / host（`<host>.hsbflash.jp`）/ summer2020
+
+  ★**中身の作りはどの県も同じ**（索引 → 過去の大会 → トーナメント表のSVG）。
+  ★**`summer2020` は「2020年に選手権の代わりに開かれた県独自の大会」の題**。
+    **名指しで拾うこと** —— 「◯◯大会」を広く夏に寄せると1年生大会や招待試合まで入る。
+    ★**県ごとに題がまるで違う**ので、規則では拾えない（下の一覧を見ること）。
+*/
+const HSB_BASE = {
   name: "HSB flash",
-  siteUrl: "https://fukuoka.hsbflash.jp/",
   politenessMs: 2000,
-  seasons: {
-    spring: "https://fukuoka.hsbflash.jp/",
-    summer: "https://fukuoka.hsbflash.jp/",
-    autumn: "https://fukuoka.hsbflash.jp/",
-  },
   /*
     ★**同じページを季節ごとに取りに行かない**（3季ぶんで3倍になる）。
     ★**約束（Promise）のまま持つ**（取得中にもう一度呼ばれても二重に取らない）。
@@ -15149,21 +15420,28 @@ const fukuoka = {
     if (/秋季/.test(title)) return "autumn";
     /*
       ★★**2020年は選手権が中止で、県独自の大会が代わりに開かれた**
-      （`2020年がんばれ福岡2020高等学校野球大会`。2026-08-28 に足した）。
-      **夏として収める**（奈良の「令和2年度奈良県高等学校夏季野球大会」と同じ扱い）。
+      （2026-08-28 に足した）。**夏として収める**
+      （奈良の「令和2年度奈良県高等学校夏季野球大会」と同じ扱い）。
       ★**名指しで拾う。** 「◯◯大会」を広く夏に寄せると、1年生大会や招待試合まで入る。
+      ★★**県ごとに題がまるで違う**（`summer2020`。規則では拾えない）:
+
+        福岡   … `2020年がんばれ福岡2020高等学校野球大会`
+        鹿児島 … `2020鹿児島県夏季高等学校野球大会`
+        愛媛   … `令和2年度愛媛県高等学校夏季野球大会`
+        高知   … `2020高知県高等学校夏季特別野球大会`
+        長崎   … `令和2年度長崎県高等学校野球大会`   ← ★**「夏季」の字が無い**
     */
-    if (/がんばれ福岡\s*2020/.test(title)) return "summer";
+    if (this.summer2020?.test(title)) return "summer";
     return null;
   },
   async collect({ fetchHtml, season, year }) {
     const get = (url) => this.page(url, fetchHtml);
-    const base = "https://fukuoka.hsbflash.jp";
+    const base = this.base;
 
     // ---- 1. 索引（開催中/直近の大会）----
     const index = await get(`${base}/`);
     if (!index) {
-      console.log("  ⚠️ 福岡: 索引が取れない。出典の作りが変わった可能性がある");
+      console.log("  ⚠️ ${this.district}: 索引が取れない。出典の作りが変わった可能性がある");
       return [];
     }
     /*
@@ -15187,18 +15465,30 @@ const fukuoka = {
       bracket: `${base}/tournament`,
       ...this.winners(index),
     };
-    if (this.seasonOf(cur.title) === season && cur.title) {
-      /*
-        ★**索引には西暦が無い。** 選手権は「第N回 − 1918」で出せる。
-        春季・秋季には回数が無いので、**開催中は暦年**とみなす
-        （春3〜4月・秋8〜10月なので年をまたがない）。
-        ★**未来の日付が出たら1試合も出さない**ので、取り違えればそこで止まる。
-      */
-      const n = Number(cur.title.match(/第(\d+)回/)?.[1]);
+    /*
+      ★**索引には西暦が無い。** 選手権は「第N回 − 1918」で出せる。
+      春季・秋季には回数が無いので、**開催中は暦年**とみなす
+      （春3〜4月・秋8〜10月なので年をまたがない）。
+      ★**未来の日付が出たら1試合も出さない**ので、取り違えればそこで止まる。
+    */
+    const n = Number(cur.title.match(/第(\d+)回/)?.[1]);
+    const curYear =
+      season === "summer" && Number.isFinite(n) ? n + 1918 : new Date().getFullYear();
+    /*
+      ★★★**索引に載っているのは「開催中／直近の大会」だけ**（2026-09-02 に直した）。
+
+      `--year` で別の年を頼まれているのに、ここで索引の大会を返していた ——
+      **どの年を指定しても、夏はいつも同じ（いちばん新しい）大会が返っていた**
+      （鹿児島を2019年まで遡ったら、7年ぶん全部が `第108回…鹿児島大会` になった）。
+      ★**同じ大会名なので生成物は壊れない**が、**目当ての年の夏が永遠に入らない。**
+      ★**警告も出ない。** 気づけたのは、遡るたびのログに同じ大会名が並んだから。
+      ★**春季・秋季にも同じ危うさがある** —— 索引の大会に**頼まれた年の札を貼って**しまう。
+    */
+    if (this.seasonOf(cur.title) === season && cur.title && curYear === year) {
       const games = await this.readTournament(get, {
         ...cur,
         season,
-        year: season === "summer" && Number.isFinite(n) ? n + 1918 : year,
+        year: curYear,
         entries: null,
       });
       if (games.length) return games;
@@ -15233,7 +15523,7 @@ const fukuoka = {
       const period = normalize(plain(html).replace(/^.*大会期間/s, "").slice(0, 60));
       const y = Number(period.match(/(\d{4})年/)?.[1]);
       if (!Number.isFinite(y)) {
-        console.log(`  ⚠️ 福岡: 「${link.title}」の大会期間から西暦を読めない`);
+        console.log(`  ⚠️ ${this.district}: 「${link.title}」の大会期間から西暦を読めない`);
         continue;
       }
       if (y !== year) continue;
@@ -15279,17 +15569,24 @@ const fukuoka = {
     if (!info.bracket) return [];
     const html = await get(info.bracket);
     if (!html) {
-      console.log(`  ⚠️ 福岡: 「${info.title}」のトーナメント表が取れない`);
+      console.log(`  ⚠️ ${this.district}: 「${info.title}」のトーナメント表が取れない`);
       return [];
     }
-    const built = readHsbBracket(html, { district: "福岡" });
+    const built = readHsbBracket(html, { district: this.district });
     if (!built) return [];
 
-    // ---- 検算B: 勝ち抜きの算数 ----
-    if (built.slots.length - built.games.length !== 1) {
+    /*
+      ---- 検算B: 勝ち抜きの算数 ----
+      ★★**不戦勝は枠を使うが試合は行われていない**（2026-09-02）ので、そのぶんを数に入れる。
+      **入れる前は、不戦勝が1件あるだけで大会がまるごと落ちていた**
+      （鹿児島・愛媛・長崎・高知で何大会も落ちていた）。
+      ★**画面には出さない**（0対0にしない。大阪・石川・群馬と同じ）。
+    */
+    const byes = built.byes ?? 0;
+    if (built.slots.length - built.games.length - byes !== 1) {
       console.log(
-        `  ⚠️ 福岡: ${info.title} は ${built.slots.length} チームに対し ${built.games.length} 試合` +
-          `（${built.slots.length - 1} のはず）。1試合も出さない`,
+        `  ⚠️ ${this.district}: ${info.title} は ${built.slots.length} チームに対し ${built.games.length} 試合` +
+          `${byes ? `・不戦勝 ${byes}` : ""}（${built.slots.length - 1 - byes} のはず）。1試合も出さない`,
       );
       return [];
     }
@@ -15303,7 +15600,7 @@ const fukuoka = {
     if (info.entries) {
       if (info.entries.length !== built.slots.length) {
         console.log(
-          `  ⚠️ 福岡: ${info.title} の出場校が ${info.entries.length} 校、表は ${built.slots.length} スロット。1試合も出さない`,
+          `  ⚠️ ${this.district}: ${info.title} の出場校が ${info.entries.length} 校、表は ${built.slots.length} スロット。1試合も出さない`,
         );
         return [];
       }
@@ -15321,7 +15618,7 @@ const fukuoka = {
       });
       if (bad >= 0) {
         console.log(
-          `  ⚠️ 福岡: ${info.title} のスロット ${bad + 1} が一覧と合わない` +
+          `  ⚠️ ${this.district}: ${info.title} のスロット ${bad + 1} が一覧と合わない` +
             `（表「${built.slots[bad].name}」/ 一覧「${info.entries[bad]}」）。1試合も出さない`,
         );
         return [];
@@ -15343,7 +15640,7 @@ const fukuoka = {
       const lost = won === final.a ? final.b : final.a;
       if (!same(won, info.champion) || (info.runnerUp && !same(lost, info.runnerUp))) {
         console.log(
-          `  ⚠️ 福岡: ${info.title} の決勝が記載と合わない` +
+          `  ⚠️ ${this.district}: ${info.title} の決勝が記載と合わない` +
             `（記載「${info.champion} / ${info.runnerUp}」/ 組み立て「${won} / ${lost}」）。1試合も出さない`,
         );
         return [];
@@ -15358,7 +15655,7 @@ const fukuoka = {
     */
     const span = info.period?.match(/(\d{1,2})月\s*(\d{1,2})日[\s\S]*?(\d{1,2})月\s*(\d{1,2})日/);
     if (!span) {
-      console.log(`  ⚠️ 福岡: ${info.title} の大会期間が読めない（${info.period ?? ""}）。1試合も出さない`);
+      console.log(`  ⚠️ ${this.district}: ${info.title} の大会期間が読めない（${info.period ?? ""}）。1試合も出さない`);
       return [];
     }
     const [m1, d1, m2] = [Number(span[1]), Number(span[2]), Number(span[3])];
@@ -15397,7 +15694,7 @@ const fukuoka = {
       }
       // ★**未来の日付は出さない**（年を取り違えたらここで止まる。栃木で入れた歯止め）
       if (date && date > today) {
-        console.log(`  ⚠️ 福岡: ${info.title} に未来の日付（${date}）がある。1試合も出さない`);
+        console.log(`  ⚠️ ${this.district}: ${info.title} に未来の日付（${date}）がある。1試合も出さない`);
         return [];
       }
       /*
@@ -15438,6 +15735,78 @@ const fukuoka = {
     return out;
   },
 };
+
+/**
+ * HSB flash のアダプタを1県ぶん作る。
+ *
+ * ★★**`_pages` は県ごとに新しく持つこと。** 共有すると
+ * **1県目の索引を2県目が使ってしまう**（同じURLに見えないので実害は出ないが、
+ * 取得の使い回しが県をまたぐのは筋が悪い）。
+ */
+function hsbAdapter({ slug, district, host, summer2020 }) {
+  const base = `https://${host}.hsbflash.jp`;
+  return {
+    ...HSB_BASE,
+    slug,
+    district,
+    siteUrl: `${base}/`,
+    base,
+    seasons: { spring: `${base}/`, summer: `${base}/`, autumn: `${base}/` },
+    summer2020,
+    _pages: new Map(),
+  };
+}
+
+const fukuoka = hsbAdapter({
+  slug: "fukuoka",
+  district: "福岡",
+  host: "fukuoka",
+  summer2020: /がんばれ福岡\s*2020/,
+});
+
+/*
+  ★★★**2026-09-02 に 鹿児島・愛媛・長崎・高知 も HSB flash へ切り替えた**（運営者の判断）。
+
+  ★**連盟からはこれ以上取れなかった**（README の引き継ぎメモに、県ごとの理由がある）:
+    鹿児島 … 紙が16枚あるのに3枚しか読めない（年ごとに組み方が違う・不戦勝・優勝校が無い）
+    高知・長崎 … 連盟の日程APIが直近の年しか持っていない
+    愛媛 … スコアPDFは2022年度から。それ以前は日別HTMLで別の読み手が要る
+
+  ★★**切り替えであって、足すのではない。** 連盟の大会名と HSB flash の大会名は
+  **空白の有無だけが違う**ことがあり（`第107回全国高等学校野球選手権鹿児島大会` と
+  `第107回全国高等学校野球選手権 鹿児島大会`）、**両方を登録すると同じ大会が2つ並ぶ。**
+  ★**生成物を消してから取り直すこと**（引き継ぎの鍵は大会名なので、そのまま走らせると古い名前が残る）。
+
+  ★**連盟のアダプタは消していない**（`RETIRED_ADAPTERS`）。**戻すならそこを `ADAPTERS` に移す。**
+*/
+const kagoshimaHsb = hsbAdapter({
+  slug: "kagoshima",
+  district: "鹿児島",
+  host: "kagoshima",
+  summer2020: /^2020鹿児島県夏季/,
+});
+
+const ehimeHsb = hsbAdapter({
+  slug: "ehime",
+  district: "愛媛",
+  host: "ehime",
+  summer2020: /令和2年度愛媛県高等学校夏季野球大会/,
+});
+
+const nagasakiHsb = hsbAdapter({
+  slug: "nagasaki",
+  district: "長崎",
+  host: "nagasaki",
+  // ★★長崎だけ「夏季」の字が無い。**規則では拾えないので名指しにしてある**
+  summer2020: /令和2年度長崎県高等学校野球大会/,
+});
+
+const kochiHsb = hsbAdapter({
+  slug: "kochi",
+  district: "高知",
+  host: "kochi",
+  summer2020: /^2020高知県高等学校夏季特別野球大会/,
+});
 
 /**
  * ★**過去の大会を何年ぶん辿るか**（2026-08-24）。
@@ -16048,13 +16417,11 @@ const ADAPTERS = [
   gunma,
   saga,
   nara,
-  ehime,
   niigata,
   aichi,
   kyoto,
   hiroshima,
   mie,
-  kagoshima,
   ishikawa,
   gifu,
   chiba,
@@ -16070,8 +16437,6 @@ const ADAPTERS = [
   ibaraki,
   okayama,
   kagawa,
-  kochi,
-  nagasaki,
   // ★連盟ではなく個人運営のサイトが出典（埼玉・神奈川・愛知と同じ）
   shimane,
   iwate,
@@ -16080,6 +16445,14 @@ const ADAPTERS = [
   tochigi,
   // ★連盟が結果を画像でしか出していないので、連盟以外から取る（fukuoka の説明を読むこと）
   fukuoka,
+  /*
+    ★★**2026-09-02 に HSB flash へ切り替えた4県**（運営者の判断。上の `kagoshimaHsb` の説明を読むこと）。
+    ★**連盟のアダプタは `RETIRED_ADAPTERS` に置いてある。戻すならそこから移す。**
+  */
+  kagoshimaHsb,
+  ehimeHsb,
+  nagasakiHsb,
+  kochiHsb,
   // ★「スロット番号の行が無い」という記録が誤りだった（okinawa の説明を読むこと）
   okinawa,
   /*
@@ -16098,6 +16471,17 @@ const ADAPTERS = [
   toyama,
   osaka,
 ];
+
+/**
+ * ★★★**使うのをやめたアダプタ**（2026-09-02）。**消していない。**
+ *
+ * ★**この4県は HSB flash に切り替えた**（`kagoshimaHsb` の説明を読むこと）。
+ * ★★**戻すときは、ここから `ADAPTERS` へ移して、生成物を消してから取り直すこと**
+ * （大会名が違うので、そのまま走らせると同じ大会が2つ並ぶ）。
+ * ★**中の説明は捨てない。** どの紙がどう読めなかったかは、ここにしか残っていない。
+ */
+const RETIRED_ADAPTERS = [kagoshima, ehime, kochi, nagasaki];
+if (process.env.REGIONAL_RETIRED) ADAPTERS.push(...RETIRED_ADAPTERS);
 
 // ------------------------------------------------------------------
 // 学校マスタとの照合（build-live-results.mjs と同じ考え方）

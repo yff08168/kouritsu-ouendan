@@ -15893,6 +15893,23 @@ const osakaHsb = hsbAdapter({
 });
 
 /*
+  ★★★**2026-09-02 その3 に 千葉 も HSB flash へ切り替えた。**
+
+  ★**連盟からは14大会1,089試合**（2019〜2026年。**2020年が丸ごと無く、春も秋も飛び飛び**）。
+  ★**HSB flash は 2019〜2026年の25大会**（夏147校・春48校・秋48校）。
+  ★★**季節ごとの大会数も年も減らない**ことを、切り替える前の生成物と突き合わせて確かめた。
+
+  ★**連盟の支部予選は元から取っていない**（ブロック表で勝ち抜きの木ではないため）。
+  **切り替えで失うものは無い。**
+*/
+const chibaHsb = hsbAdapter({
+  slug: "chiba",
+  district: "千葉",
+  host: "chiba",
+  summer2020: /^2020夏季千葉県高等学校野球大会/,
+});
+
+/*
   ★★★**2026-09-02 その2 に 岩手・岐阜・滋賀・岡山・三重・徳島 も HSB flash へ切り替えた**
   （運営者の判断。上の4県と同じ回）。
 
@@ -16576,7 +16593,6 @@ const ADAPTERS = [
   niigata,
   aichi,
   ishikawa,
-  chiba,
   yamagata,
   shizuoka,
   yamaguchi,
@@ -16617,6 +16633,7 @@ const ADAPTERS = [
   iwateHsb,
   gifuHsb,
   osakaHsb,
+  chibaHsb,
   shigaHsb,
   okayamaHsb,
   mieHsb,
@@ -16657,6 +16674,7 @@ const RETIRED_ADAPTERS = [
   okayama,
   mie,
   tokushima,
+  chiba,
 ];
 if (process.env.REGIONAL_RETIRED) ADAPTERS.push(...RETIRED_ADAPTERS);
 

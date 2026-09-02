@@ -15874,6 +15874,25 @@ const fukuiHsb = hsbAdapter({
 });
 
 /*
+  ★★★**2026-09-02 その3 に 大阪 も HSB flash へ切り替えた**（運営者の「作業続けて」）。
+
+  ★**連盟からは5年ぶん（2021〜2025年）しか取れていなかった** ——
+  15大会2,231試合。**2026年の紙はまだ出ていない。**
+  ★**HSB flash は 2019〜2026年の25大会**を持っており、**1大会が約150校**（大阪は加盟校が多い）。
+  ★★**季節ごとの大会数も年も減らない**ことを、切り替える前の生成物と突き合わせて確かめた。
+
+  ★**長野は切り替えていない** —— HSB flash の春季は16校・秋季は24校（**支部予選のあとの県大会だけ**）で、
+  **連盟の63大会1,123試合のほうが厚い。**
+*/
+const osakaHsb = hsbAdapter({
+  slug: "osaka",
+  district: "大阪",
+  host: "osaka",
+  // ★出典は全角の「令和２年」。**照合は `normalize` を通したあと**なので半角で書く
+  summer2020: /^令和2年大阪府高等学校野球大会/,
+});
+
+/*
   ★★★**2026-09-02 その2 に 岩手・岐阜・滋賀・岡山・三重・徳島 も HSB flash へ切り替えた**
   （運営者の判断。上の4県と同じ回）。
 
@@ -16597,6 +16616,7 @@ const ADAPTERS = [
   */
   iwateHsb,
   gifuHsb,
+  osakaHsb,
   shigaHsb,
   okayamaHsb,
   mieHsb,
@@ -16610,7 +16630,6 @@ const ADAPTERS = [
     福岡（SVG）と同じ考え方の、PDF版。**toyama の説明を読むこと。**
   */
   toyama,
-  osaka,
 ];
 
 /**
@@ -16634,6 +16653,7 @@ const RETIRED_ADAPTERS = [
   iwate,
   gifu,
   shiga,
+  osaka,
   okayama,
   mie,
   tokushima,

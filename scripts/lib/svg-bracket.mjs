@@ -161,11 +161,21 @@ export function readHsbBracket(html, { district = "" } = {}) {
   /*
     ---- 2. 校名 ----
     ★**同じスロットに2行ぶんあることがある**（長い連合チーム名）。上から順につなぐ。
+
+    ★★★**1段の紙では「スロット番号の列より左」だけを見ること**（2026-09-02 その3。大阪の秋季）。
+    **紙の右側に、別の小さな枝が同じ高さで刷ってあることがある**
+    （`第5ブロック` の右に `三位決定戦`。どちらも y=85〜175）。
+    **左右を分けずに拾うと、右の校名が左のスロットにくっついて
+    `太成学院大高太成学院大高・近大附…` という校名になる**（実際になった）。
+    ★**2段組の紙は今までどおり中心で左右に分ける**（そちらは1バイトも変わらない）。
   */
   const nameTexts = texts.filter((t) => /^b\b/.test(t.cls));
+  const nameMax = mode === "one" ? slotCols[0].x : Infinity;
   for (const s of slots) {
     s.name = nameTexts
-      .filter((t) => (t.x < center ? "L" : "R") === s.side && Math.abs(t.y - s.y) < pitch / 2)
+      .filter(
+        (t) => t.x < nameMax && (t.x < center ? "L" : "R") === s.side && Math.abs(t.y - s.y) < pitch / 2,
+      )
       .sort((a, b) => a.y - b.y)
       .map((t) => t.text)
       .join("");
@@ -377,13 +387,21 @@ export function readHsbBracket(html, { district = "" } = {}) {
   }
 
   /*
-    ---- 6. 山（サブトーナメント）----
+    ---- 6. 山（サブトーナメント）と段 ----
     ★★**1段の紙は1枚に山がいくつも並ぶ**（2026-09-02 その2）。
-    ブロックがいくつかと、**その優勝校だけで戦う「決勝トーナメント」**が1枚に刷ってある
+    ブロックがいくつかと、**その優勝校だけで戦う上の山**が1枚に刷ってある
     （岐阜の夏・2020年の代替大会）。**山が1つだけの紙**（小さい大会）も同じ道を通る。
+
+    ★★★**段は2つとは限らない**（2026-09-02 その3。大阪の夏で踏んだ）:
+
+        32ブロック（159校） → 「4回戦・5回戦」の山が8つ → 「準々決勝・準決勝・決勝」の山が1つ
+
+    ★**だから「上の山は1つ」と決め打ちしない。**
+    **「その山の出場校が、すべて他の山の優勝校」なら1つ上の段**として、下から順に決める。
   */
-  let finalComp = null;
+  let topComp = null;
   let blockSlots = slots;
+  const levelOf = new Map();
   if (mode === "one") {
     /*
       ★**山の番号は、まとめた先が後からまた変わる**（union-find）ので、
@@ -404,20 +422,81 @@ export function readHsbBracket(html, { district = "" } = {}) {
       if (c !== undefined && v) winnerOf.set(find(c), v);
     }
     const comps = [...new Set(slots.map((s) => s.comp))];
-    const namesOf = (c) => slots.filter((s) => s.comp === c).map((s) => s.name).sort().join("\u0001");
-    const winners = (list) => list.map((c) => winnerOf.get(c)).filter(Boolean).sort().join("\u0001");
-    if (comps.length > 1) {
-      /*
-        ★★**決勝トーナメントの山は「他の山の優勝校だけで出来ている」。**
-        **枝とは別の場所から来る事実ではない**が、**同じ紙の中の2か所が一致することを求める**
-        ので、山の切り分けを読み違えれば必ず落ちる。
-      */
-      finalComp = comps.find((c) => namesOf(c) === winners(comps.filter((o) => o !== c))) ?? null;
-      if (finalComp === null) {
-        return bail(`山が ${comps.length} つあるのに、決勝トーナメントが見つからない`);
+    /*
+      ★★**中黒を外してから比べること**（2026-09-02 その3。大阪で踏んだ）。
+      **連合チームの校名が2行に折り返されると「・」が消える**ので、
+      **上の山の出場校とブロックの優勝校が、同じ学校なのに一致しない。**
+      ★**呼ぶ側が出場校の一覧と比べるときと同じ寄せ方**にそろえてある。
+    */
+    const bareName = (v) => (v ?? "").replace(/[・･、,\s]/g, "");
+    const slotsOf = (c) => slots.filter((s) => s.comp === c);
+    const winnerName = (c) => bareName(winnerOf.get(c));
+    /** ★詰まったら `HSB_DEBUG=1`。山ごとのスロット数と優勝校が出る */
+    if (process.env.HSB_DEBUG) {
+      for (const c of comps) {
+        const list = slotsOf(c);
+        console.log(
+          `    [HSB] 山 ${c}: ${list.length}スロット / 優勝 ${winnerOf.get(c) ?? "-"} / ${list.slice(0, 3).map((s) => s.name).join("・")}`,
+        );
       }
-      blockSlots = slots.filter((s) => s.comp !== finalComp);
     }
+    /*
+      ★★**段を決める。** その山の出場校が**すべて別々の山の優勝校**で埋まれば、
+      **その中でいちばん深い段の1つ上**がこの山の段になる。1つでも埋まらなければ 0 段（ブロック）。
+
+      ★**同じ校名の山が2つあることがある** —— ブロックで優勝し、次の段でも優勝した学校は
+      **2つの山の優勝校**になる。**いちばん段の深いほうを採る**（そうしないと段が浅く出る）。
+    */
+    const feedersOf = new Map();
+    const levelOfComp = (c, seen) => {
+      if (levelOf.has(c)) return levelOf.get(c);
+      const used = new Set();
+      let deepest = -1;
+      let fed = comps.length > 1;
+      for (const s of slotsOf(c)) {
+        const want = bareName(s.name);
+        let best = null;
+        let bestLv = -1;
+        for (const o of comps) {
+          if (o === c || used.has(o) || seen.has(o)) continue;
+          if (winnerName(o) !== want) continue;
+          const lv = levelOfComp(o, new Set([...seen, c]));
+          if (lv > bestLv) {
+            bestLv = lv;
+            best = o;
+          }
+        }
+        if (best === null) {
+          fed = false;
+          break;
+        }
+        used.add(best);
+        deepest = Math.max(deepest, bestLv);
+      }
+      const lv = fed ? deepest + 1 : 0;
+      levelOf.set(c, lv);
+      if (fed) feedersOf.set(c, used);
+      return lv;
+    };
+    for (const c of comps) levelOfComp(c, new Set());
+    /*
+      ★★**いちばん上の山はちょうど1つ**（どの山にも食べられていない山）。
+      2つ以上なら、**紙を読み違えて山が余分に割れている**か、
+      **1枚に別々の大会が刷ってある。** どちらでも出してはいけない。
+    */
+    const consumed = new Set();
+    for (const list of feedersOf.values()) for (const o of list) consumed.add(o);
+    const tops = comps.filter((c) => !consumed.has(c));
+    if (tops.length !== 1) {
+      return bail(`いちばん上の山が ${tops.length} つある（山は全部で ${comps.length} つ）`);
+    }
+    topComp = tops[0];
+    /*
+      ★★**返すのは 0 段の山のスロットだけ。** 上の段に並ぶのは**同じ学校が2度出ているだけ**で、
+      外すと呼ぶ側の「チーム数 − 試合数 = 1」がそのまま成り立つ
+      （大阪の第105回は 159校・158試合）。
+    */
+    blockSlots = slots.filter((s) => levelOf.get(s.comp) === 0);
     /*
       ★★★**返すのは「スロット番号の順」。紙に並んでいる順ではない**（2026-09-02 その2）。
       **ブロックが紙の上で逆さに並ぶ年がある**（岐阜の第105回は 第2ブロック が上、第1ブロック が下）。
@@ -436,18 +515,19 @@ export function readHsbBracket(html, { district = "" } = {}) {
     */
     const labelX = slotCols[0].x;
     for (const c of comps) {
-      const ys = slots.filter((s) => s.comp === c).map((s) => s.y);
+      const ys = slotsOf(c).map((s) => s.y);
       const lo = Math.min(...ys) - pitch;
       const hi = Math.max(...ys) + pitch;
       const printed = texts.filter((t) => t.cls === "y_f14" && t.x > labelX && t.y > lo && t.y < hi);
       const won = winnerOf.get(c);
       if (printed.length !== 1 || !won) continue;
-      const a = printed[0].text;
-      if (!(a.includes(won) || won.includes(a))) {
-        return bail(`山の優勝校が紙と合わない（紙「${a}」/ 組み立て「${won}」）`);
+      const a = bareName(printed[0].text);
+      const w = bareName(won);
+      if (!(a.includes(w) || w.includes(a))) {
+        return bail(`山の優勝校が紙と合わない（紙「${printed[0].text}」/ 組み立て「${won}」）`);
       }
     }
-    champion = winnerOf.get(finalComp ?? comps[0]) ?? null;
+    champion = winnerOf.get(topComp) ?? null;
   }
 
   /*
@@ -493,20 +573,33 @@ export function readHsbBracket(html, { district = "" } = {}) {
     }
   } else {
     /*
-      ★★★**1段の紙の回戦は「ブロックの回戦 → 決勝トーナメントの回戦」と続けて数える。**
+      ★★★**1段の紙の回戦は「下の段から順に」数える**（2026-09-02 その3）。
       ブロックの決勝（16チームなら4戦目）は、**大会全体では準々決勝**にあたる。
-      ★**ブロックどうしは連結線の x がそろっている**ので、まとめて並べてよい。
-      ★**決勝トーナメントの x はブロックと重なる**（岐阜は 240・300 が両方に出る）ので、
-      **必ず山で分けてから数えること。**
+      ★★**段は2つとは限らない** —— 大阪の夏は
+      **ブロック（1〜3回戦）→「4回戦・5回戦」の山 →「準々決勝・準決勝・決勝」の山**の3段。
+      ★**同じ段の山どうしは連結線の x がそろっている**ので、まとめて並べてよい。
+      ★**段が違えば x は重なる**（岐阜は 240・300 がブロックにも上の山にも出る）ので、
+      **必ず段で分けてから数えること。**
     */
-    const bandsOf = (list) => [...new Set(list.map((g) => g.roundX))].sort((a, b) => a - b);
-    const blockBands = bandsOf(games.filter((g) => g.comp !== finalComp));
-    const finalBands = finalComp === null ? [] : bandsOf(games.filter((g) => g.comp === finalComp));
-    const indexOf = (g) =>
-      g.comp === finalComp && finalComp !== null
-        ? blockBands.length + finalBands.indexOf(g.roundX)
-        : blockBands.indexOf(g.roundX);
-    const last = Math.max(...games.map(indexOf));
+    const bandsAt = new Map();
+    for (const g of games) {
+      const lv = levelOf.get(g.comp) ?? 0;
+      if (!bandsAt.has(lv)) bandsAt.set(lv, new Set());
+      bandsAt.get(lv).add(g.roundX);
+    }
+    const levels = [...bandsAt.keys()].sort((a, b) => a - b);
+    const bands = new Map(levels.map((lv) => [lv, [...bandsAt.get(lv)].sort((a, b) => a - b)]));
+    const offset = new Map();
+    let acc = 0;
+    for (const lv of levels) {
+      offset.set(lv, acc);
+      acc += bands.get(lv).length;
+    }
+    const indexOf = (g) => {
+      const lv = levelOf.get(g.comp) ?? 0;
+      return offset.get(lv) + bands.get(lv).indexOf(g.roundX);
+    };
+    const last = acc - 1;
     for (const g of games) {
       const i = indexOf(g);
       const fromTop = last - i;

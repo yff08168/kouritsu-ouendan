@@ -44,11 +44,11 @@ export const REGIONAL_LOADERS: Record<string, () => Promise<RegionalDistrict>> =
   fukui: () => import("./fukui.json").then((m) => m.default as RegionalDistrict),
   iwate: () => import("./iwate.json").then((m) => m.default as RegionalDistrict),
   gifu: () => import("./gifu.json").then((m) => m.default as RegionalDistrict),
+  osaka: () => import("./osaka.json").then((m) => m.default as RegionalDistrict),
   shiga: () => import("./shiga.json").then((m) => m.default as RegionalDistrict),
   okayama: () => import("./okayama.json").then((m) => m.default as RegionalDistrict),
   mie: () => import("./mie.json").then((m) => m.default as RegionalDistrict),
   tokushima: () => import("./tokushima.json").then((m) => m.default as RegionalDistrict),
   okinawa: () => import("./okinawa.json").then((m) => m.default as RegionalDistrict),
   toyama: () => import("./toyama.json").then((m) => m.default as RegionalDistrict),
-  osaka: () => import("./osaka.json").then((m) => m.default as RegionalDistrict),
 };

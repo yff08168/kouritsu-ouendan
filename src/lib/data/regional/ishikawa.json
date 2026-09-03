@@ -5,6 +5,1141 @@
   "sourceUrl": "https://ishikawa-hbf.jp/",
   "games": [
     {
+      "date": "2022-04-16",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松市立",
+          "score": 2,
+          "won": false,
+          "name": "小松市立高校",
+          "slug": "komatsushiritsu"
+        },
+        {
+          "display": "輪島",
+          "score": 9,
+          "won": true,
+          "name": "輪島高校",
+          "slug": "wajima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-16",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "羽咋",
+          "score": 1,
+          "won": false,
+          "name": "羽咋高校",
+          "slug": "hakui"
+        },
+        {
+          "display": "大聖寺",
+          "score": 11,
+          "won": true,
+          "name": "大聖寺高校",
+          "slug": "daishoji"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-16",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "金沢北陵",
+          "score": 11,
+          "won": true,
+          "name": "金沢北陵高校",
+          "slug": "kanazawahokuryo"
+        },
+        {
+          "display": "松任",
+          "score": 8,
+          "won": false,
+          "name": "松任高校",
+          "slug": "matto"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-16",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "寺井",
+          "score": 4,
+          "won": false,
+          "name": "寺井高校",
+          "slug": "terai"
+        },
+        {
+          "display": "金沢龍谷",
+          "score": 8,
+          "won": true,
+          "name": "金沢龍谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-16",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "羽咋工業",
+          "score": 4,
+          "won": false,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        },
+        {
+          "display": "金沢学院大附",
+          "score": 5,
+          "won": true,
+          "name": "金沢学院大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-16",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢二水",
+          "score": 25,
+          "won": true,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        },
+        {
+          "display": "穴水",
+          "score": 1,
+          "won": false,
+          "name": "穴水高校",
+          "slug": "anamizu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-23",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 6,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "金沢市立工業",
+          "score": 2,
+          "won": false,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-23",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "輪島",
+          "score": 2,
+          "won": false,
+          "name": "輪島高校",
+          "slug": "wajima"
+        },
+        {
+          "display": "大聖寺",
+          "score": 5,
+          "won": true,
+          "name": "大聖寺高校",
+          "slug": "daishoji"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-24",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢北陵",
+          "score": 1,
+          "won": false,
+          "name": "金沢北陵高校",
+          "slug": "kanazawahokuryo"
+        },
+        {
+          "display": "金沢龍谷",
+          "score": 5,
+          "won": true,
+          "name": "金沢龍谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-23",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢伏見",
+          "score": 0,
+          "won": false,
+          "name": "金沢伏見高校",
+          "slug": "kanazawafushimi"
+        },
+        {
+          "display": "金沢",
+          "score": 11,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "野々市明倫",
+          "score": 2,
+          "won": false,
+          "name": "野々市明倫高校",
+          "slug": "nonoichimeirin"
+        },
+        {
+          "display": "小松明峰",
+          "score": 12,
+          "won": true,
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-24",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢学院大附",
+          "score": 8,
+          "won": false,
+          "name": "金沢学院大附",
+          "slug": null
+        },
+        {
+          "display": "金沢二水",
+          "score": 11,
+          "won": true,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "大聖寺実業",
+          "score": 1,
+          "won": false,
+          "name": "大聖寺実業高校",
+          "slug": "daishojijitsugyo"
+        },
+        {
+          "display": "県立工業",
+          "score": 14,
+          "won": true,
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "石川高専",
+          "score": 1,
+          "won": false,
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        },
+        {
+          "display": "小松大谷",
+          "score": 11,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-29",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 9,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "大聖寺",
+          "score": 5,
+          "won": false,
+          "name": "大聖寺高校",
+          "slug": "daishoji"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-30",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢龍谷",
+          "score": 1,
+          "won": false,
+          "name": "金沢龍谷",
+          "slug": null
+        },
+        {
+          "display": "金沢",
+          "score": 11,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-30",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松明峰",
+          "score": 0,
+          "won": false,
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
+        },
+        {
+          "display": "金沢二水",
+          "score": 7,
+          "won": true,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-24",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "県立工業",
+          "score": 2,
+          "won": false,
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        },
+        {
+          "display": "小松大谷",
+          "score": 6,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-02",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "準々決勝",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 1,
+          "won": false,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "金沢",
+          "score": 2,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-02",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢二水",
+          "score": 1,
+          "won": false,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        },
+        {
+          "display": "小松大谷",
+          "score": 17,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-03",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 6,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "小松大谷",
+          "score": 3,
+          "won": false,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-16",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢大学附属",
+          "score": 14,
+          "won": true,
+          "name": "金沢大学附属",
+          "slug": null
+        },
+        {
+          "display": "翠星",
+          "score": 3,
+          "won": false,
+          "name": "翠星高校",
+          "slug": "suisei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-16",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松商業",
+          "score": 3,
+          "won": true,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        },
+        {
+          "display": "七尾",
+          "score": 2,
+          "won": false,
+          "name": "七尾高校",
+          "slug": "nanao"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "鹿西",
+          "score": 3,
+          "won": false,
+          "name": "鹿西高校",
+          "slug": "rokusei"
+        },
+        {
+          "display": "飯田",
+          "score": 13,
+          "won": true,
+          "name": "飯田高校",
+          "slug": "iida"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "金沢桜丘",
+          "score": 2,
+          "won": false,
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
+        },
+        {
+          "display": "津幡",
+          "score": 3,
+          "won": true,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "能登",
+          "score": 0,
+          "won": false,
+          "name": "能登高校",
+          "slug": "noto"
+        },
+        {
+          "display": "金沢泉丘",
+          "score": 8,
+          "won": true,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢錦丘",
+          "score": 3,
+          "won": true,
+          "name": "金沢錦丘高校",
+          "slug": "kanazawanishikigaoka"
+        },
+        {
+          "display": "鶴来",
+          "score": 0,
+          "won": false,
+          "name": "鶴来高校",
+          "slug": "tsurugi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 5,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "金沢商業",
+          "score": 4,
+          "won": false,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松工業",
+          "score": 3,
+          "won": true,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        },
+        {
+          "display": "門前",
+          "score": 1,
+          "won": false,
+          "name": "門前高校",
+          "slug": "monzen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-24",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢大学附属",
+          "score": 1,
+          "won": false,
+          "name": "金沢大学附属",
+          "slug": null
+        },
+        {
+          "display": "小松商業",
+          "score": 11,
+          "won": true,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-23",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢西",
+          "score": 1,
+          "won": false,
+          "name": "金沢西高校",
+          "slug": "kanazawanishi"
+        },
+        {
+          "display": "小松",
+          "score": 9,
+          "won": true,
+          "name": "小松高校",
+          "slug": "komatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-23",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "日本航空石川",
+          "score": 16,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        },
+        {
+          "display": "七尾東雲・加賀・宝達",
+          "score": 0,
+          "won": false,
+          "name": "七尾東雲・加賀・宝達",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-24",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "飯田",
+          "score": 6,
+          "won": false,
+          "name": "飯田高校",
+          "slug": "iida"
+        },
+        {
+          "display": "津幡",
+          "score": 9,
+          "won": true,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-23",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "金沢泉丘",
+          "score": 8,
+          "won": true,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        },
+        {
+          "display": "金沢錦丘",
+          "score": 0,
+          "won": false,
+          "name": "金沢錦丘高校",
+          "slug": "kanazawanishikigaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-24",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 2,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "小松工業",
+          "score": 0,
+          "won": false,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-30",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松商業",
+          "score": 4,
+          "won": false,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        },
+        {
+          "display": "小松",
+          "score": 8,
+          "won": true,
+          "name": "小松高校",
+          "slug": "komatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-30",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "日本航空石川",
+          "score": 8,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        },
+        {
+          "display": "津幡",
+          "score": 5,
+          "won": false,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-29",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢泉丘",
+          "score": 0,
+          "won": false,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        },
+        {
+          "display": "鵬学園",
+          "score": 9,
+          "won": true,
+          "name": "鵬学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-02",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 8,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "小松",
+          "score": 0,
+          "won": false,
+          "name": "小松高校",
+          "slug": "komatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-02",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "準々決勝",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "日本航空石川",
+          "score": 4,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        },
+        {
+          "display": "鵬学園",
+          "score": 3,
+          "won": false,
+          "name": "鵬学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-03",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 0,
+          "won": false,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "日本航空石川",
+          "score": 1,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-05",
+      "season": "spring",
+      "tournament": "2022年 春季北信越地区高校野球 石川県大会",
+      "round": "決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "日本航空石川",
+          "score": 3,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        },
+        {
+          "display": "金沢",
+          "score": 1,
+          "won": false,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-04-18",
       "season": "spring",
       "round": "1回戦",
@@ -20470,6 +21605,2276 @@
       "tournament": "第110回北信越地区高等学校野球石川県大会（平成16年度春季）"
     },
     {
+      "date": "2023-07-14",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "北陸学院",
+          "score": 7,
+          "won": true,
+          "name": "北陸学院",
+          "slug": null
+        },
+        {
+          "display": "小松市立",
+          "score": 1,
+          "won": false,
+          "name": "小松市立高校",
+          "slug": "komatsushiritsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-14",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "鹿西",
+          "score": 4,
+          "won": false,
+          "name": "鹿西高校",
+          "slug": "rokusei"
+        },
+        {
+          "display": "金沢北陵",
+          "score": 6,
+          "won": true,
+          "name": "金沢北陵高校",
+          "slug": "kanazawahokuryo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-13",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "七尾",
+          "score": 7,
+          "won": false,
+          "name": "七尾高校",
+          "slug": "nanao"
+        },
+        {
+          "display": "金沢錦丘",
+          "score": 8,
+          "won": true,
+          "name": "金沢錦丘高校",
+          "slug": "kanazawanishikigaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-13",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢伏見",
+          "score": 1,
+          "won": false,
+          "name": "金沢伏見高校",
+          "slug": "kanazawafushimi"
+        },
+        {
+          "display": "羽咋",
+          "score": 5,
+          "won": true,
+          "name": "羽咋高校",
+          "slug": "hakui"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-12",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "鵬学園",
+          "score": 3,
+          "won": false,
+          "name": "鵬学園",
+          "slug": null
+        },
+        {
+          "display": "大聖寺",
+          "score": 5,
+          "won": true,
+          "name": "大聖寺高校",
+          "slug": "daishoji"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-13",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 9,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "小松",
+          "score": 0,
+          "won": false,
+          "name": "小松高校",
+          "slug": "komatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-15",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 3,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "小松商業",
+          "score": 2,
+          "won": false,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "北陸学院",
+          "score": 15,
+          "won": true,
+          "name": "北陸学院",
+          "slug": null
+        },
+        {
+          "display": "金沢北陵",
+          "score": 0,
+          "won": false,
+          "name": "金沢北陵高校",
+          "slug": "kanazawahokuryo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "金沢錦丘",
+          "score": 3,
+          "won": false,
+          "name": "金沢錦丘高校",
+          "slug": "kanazawanishikigaoka"
+        },
+        {
+          "display": "羽咋",
+          "score": 7,
+          "won": true,
+          "name": "羽咋高校",
+          "slug": "hakui"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-16",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "大聖寺実業",
+          "score": 8,
+          "won": false,
+          "name": "大聖寺実業高校",
+          "slug": "daishojijitsugyo"
+        },
+        {
+          "display": "金沢学院大附",
+          "score": 13,
+          "won": true,
+          "name": "金沢学院大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-16",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢龍谷",
+          "score": 4,
+          "won": true,
+          "name": "金沢龍谷",
+          "slug": null
+        },
+        {
+          "display": "輪島",
+          "score": 3,
+          "won": false,
+          "name": "輪島高校",
+          "slug": "wajima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "大聖寺",
+          "score": 2,
+          "won": false,
+          "name": "大聖寺高校",
+          "slug": "daishoji"
+        },
+        {
+          "display": "金沢",
+          "score": 13,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "県立工業",
+          "score": 5,
+          "won": true,
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        },
+        {
+          "display": "野々市明倫",
+          "score": 1,
+          "won": false,
+          "name": "野々市明倫高校",
+          "slug": "nonoichimeirin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-15",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "津幡",
+          "score": 5,
+          "won": false,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        },
+        {
+          "display": "日本航空石川",
+          "score": 8,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-20",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 16,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "北陸学院",
+          "score": 1,
+          "won": false,
+          "name": "北陸学院",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-20",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "3回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "羽咋",
+          "score": 0,
+          "won": false,
+          "name": "羽咋高校",
+          "slug": "hakui"
+        },
+        {
+          "display": "金沢学院大附",
+          "score": 3,
+          "won": true,
+          "name": "金沢学院大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-20",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢龍谷",
+          "score": 6,
+          "won": false,
+          "name": "金沢龍谷",
+          "slug": null
+        },
+        {
+          "display": "金沢",
+          "score": 13,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-20",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "県立工業",
+          "score": 2,
+          "won": false,
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        },
+        {
+          "display": "日本航空石川",
+          "score": 6,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-23",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "準々決勝",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 9,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "金沢学院大附",
+          "score": 3,
+          "won": false,
+          "name": "金沢学院大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-23",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 3,
+          "won": false,
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "日本航空石川",
+          "score": 6,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-25",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 6,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "日本航空石川",
+          "score": 4,
+          "won": false,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-11",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "寺井",
+          "score": 6,
+          "won": true,
+          "name": "寺井高校",
+          "slug": "terai"
+        },
+        {
+          "display": "鶴来",
+          "score": 5,
+          "won": false,
+          "name": "鶴来高校",
+          "slug": "tsurugi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-12",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "穴水・宝達・松任・加賀",
+          "score": 0,
+          "won": false,
+          "name": "穴水・宝達・松任・加賀",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "金沢商業",
+          "score": 29,
+          "won": true,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-15",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "金沢市立工業",
+          "score": 9,
+          "won": true,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        },
+        {
+          "display": "翠星",
+          "score": 1,
+          "won": false,
+          "name": "翠星高校",
+          "slug": "suisei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-15",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "小松工業",
+          "score": 14,
+          "won": true,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        },
+        {
+          "display": "金沢大学附属",
+          "score": 4,
+          "won": false,
+          "name": "金沢大学附属",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-13",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "七尾東雲",
+          "score": 2,
+          "won": false,
+          "name": "七尾東雲高校",
+          "slug": "nanaoshinonome"
+        },
+        {
+          "display": "羽咋工業",
+          "score": 9,
+          "won": true,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-15",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 7,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "小松明峰",
+          "score": 2,
+          "won": false,
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-15",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "石川高専",
+          "score": 7,
+          "won": true,
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        },
+        {
+          "display": "門前",
+          "score": 2,
+          "won": false,
+          "name": "門前高校",
+          "slug": "monzen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "寺井",
+          "score": 1,
+          "won": false,
+          "name": "寺井高校",
+          "slug": "terai"
+        },
+        {
+          "display": "金沢商業",
+          "score": 11,
+          "won": true,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-16",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢二水",
+          "score": 4,
+          "won": false,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        },
+        {
+          "display": "飯田",
+          "score": 5,
+          "won": true,
+          "name": "飯田高校",
+          "slug": "iida"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-16",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢桜丘",
+          "score": 3,
+          "won": false,
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
+        },
+        {
+          "display": "金沢泉丘",
+          "score": 13,
+          "won": true,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢市立工業",
+          "score": 0,
+          "won": false,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        },
+        {
+          "display": "小松工業",
+          "score": 7,
+          "won": true,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢西",
+          "score": 2,
+          "won": false,
+          "name": "金沢西高校",
+          "slug": "kanazawanishi"
+        },
+        {
+          "display": "羽咋工業",
+          "score": 3,
+          "won": true,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-15",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "能登",
+          "score": 0,
+          "won": false,
+          "name": "能登高校",
+          "slug": "noto"
+        },
+        {
+          "display": "小松大谷",
+          "score": 10,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-20",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 13,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "石川高専",
+          "score": 0,
+          "won": false,
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-20",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢商業",
+          "score": 3,
+          "won": true,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        },
+        {
+          "display": "飯田",
+          "score": 1,
+          "won": false,
+          "name": "飯田高校",
+          "slug": "iida"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-20",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "3回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "金沢泉丘",
+          "score": 5,
+          "won": false,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        },
+        {
+          "display": "小松工業",
+          "score": 6,
+          "won": true,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-20",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "羽咋工業",
+          "score": 0,
+          "won": false,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        },
+        {
+          "display": "小松大谷",
+          "score": 7,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-23",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 11,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "金沢商業",
+          "score": 4,
+          "won": false,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-23",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "準々決勝",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松工業",
+          "score": 0,
+          "won": false,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        },
+        {
+          "display": "小松大谷",
+          "score": 19,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-25",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 6,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "小松大谷",
+          "score": 5,
+          "won": false,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-27",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 石川大会",
+      "round": "決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 6,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "遊学館",
+          "score": 5,
+          "won": false,
+          "name": "遊学館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "飯田",
+          "score": 11,
+          "won": true,
+          "name": "飯田高校",
+          "slug": "iida"
+        },
+        {
+          "display": "羽咋",
+          "score": 1,
+          "won": false,
+          "name": "羽咋高校",
+          "slug": "hakui"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-12",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "伏見・穴水・辰巳丘・向陽・宝達・加賀",
+          "score": 0,
+          "won": false,
+          "name": "伏見・穴水・辰巳丘・向陽・宝達・加賀",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "金沢龍谷",
+          "score": 10,
+          "won": true,
+          "name": "金沢龍谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "翠星",
+          "score": 9,
+          "won": true,
+          "name": "翠星高校",
+          "slug": "suisei"
+        },
+        {
+          "display": "小松市立",
+          "score": 3,
+          "won": false,
+          "name": "小松市立高校",
+          "slug": "komatsushiritsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "鵬学園",
+          "score": 10,
+          "won": true,
+          "name": "鵬学園",
+          "slug": null
+        },
+        {
+          "display": "能登",
+          "score": 0,
+          "won": false,
+          "name": "能登高校",
+          "slug": "noto"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "寺井",
+          "score": 8,
+          "won": true,
+          "name": "寺井高校",
+          "slug": "terai"
+        },
+        {
+          "display": "小松明峰",
+          "score": 1,
+          "won": false,
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 8,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "飯田",
+          "score": 1,
+          "won": false,
+          "name": "飯田高校",
+          "slug": "iida"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢商業",
+          "score": 5,
+          "won": true,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        },
+        {
+          "display": "金沢龍谷",
+          "score": 0,
+          "won": false,
+          "name": "金沢龍谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "北陸学院",
+          "score": 6,
+          "won": true,
+          "name": "北陸学院",
+          "slug": null
+        },
+        {
+          "display": "石川高専",
+          "score": 0,
+          "won": false,
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "羽咋工業",
+          "score": 6,
+          "won": true,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        },
+        {
+          "display": "七尾東雲",
+          "score": 0,
+          "won": false,
+          "name": "七尾東雲高校",
+          "slug": "nanaoshinonome"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "翠星",
+          "score": 0,
+          "won": false,
+          "name": "翠星高校",
+          "slug": "suisei"
+        },
+        {
+          "display": "日本航空石川",
+          "score": 10,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢学院",
+          "score": 4,
+          "won": false,
+          "name": "金沢学院",
+          "slug": null
+        },
+        {
+          "display": "鵬学園",
+          "score": 7,
+          "won": true,
+          "name": "鵬学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "門前",
+          "score": 1,
+          "won": false,
+          "name": "門前高校",
+          "slug": "monzen"
+        },
+        {
+          "display": "七尾",
+          "score": 2,
+          "won": true,
+          "name": "七尾高校",
+          "slug": "nanao"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "寺井",
+          "score": 3,
+          "won": false,
+          "name": "寺井高校",
+          "slug": "terai"
+        },
+        {
+          "display": "遊学館",
+          "score": 10,
+          "won": true,
+          "name": "遊学館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢商業",
+          "score": 6,
+          "won": true,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        },
+        {
+          "display": "北陸学院",
+          "score": 4,
+          "won": false,
+          "name": "北陸学院",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "羽咋工業",
+          "score": 2,
+          "won": false,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        },
+        {
+          "display": "日本航空石川",
+          "score": 7,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "鵬学園",
+          "score": 5,
+          "won": true,
+          "name": "鵬学園",
+          "slug": null
+        },
+        {
+          "display": "七尾",
+          "score": 0,
+          "won": false,
+          "name": "七尾高校",
+          "slug": "nanao"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 0,
+          "won": false,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "金沢商業",
+          "score": 3,
+          "won": true,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "日本航空石川",
+          "score": 9,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        },
+        {
+          "display": "鵬学園",
+          "score": 5,
+          "won": false,
+          "name": "鵬学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-08",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢商業",
+          "score": 5,
+          "won": false,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        },
+        {
+          "display": "日本航空石川",
+          "score": 6,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-12",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "大聖寺",
+          "score": 6,
+          "won": true,
+          "name": "大聖寺高校",
+          "slug": "daishoji"
+        },
+        {
+          "display": "鶴来",
+          "score": 2,
+          "won": false,
+          "name": "鶴来高校",
+          "slug": "tsurugi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢北陵",
+          "score": 2,
+          "won": false,
+          "name": "金沢北陵高校",
+          "slug": "kanazawahokuryo"
+        },
+        {
+          "display": "金沢",
+          "score": 15,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-12",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "野々市明倫",
+          "score": 3,
+          "won": false,
+          "name": "野々市明倫高校",
+          "slug": "nonoichimeirin"
+        },
+        {
+          "display": "金沢西",
+          "score": 4,
+          "won": true,
+          "name": "金沢西高校",
+          "slug": "kanazawanishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金大附属",
+          "score": 1,
+          "won": false,
+          "name": "金沢大学人間社会学域学校教育学類附属高校",
+          "slug": "kanazawadaigakuningenshakaigakuikigakkokyoikugakuruifuzoku"
+        },
+        {
+          "display": "金沢桜丘",
+          "score": 8,
+          "won": true,
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "大聖寺実業",
+          "score": 1,
+          "won": false,
+          "name": "大聖寺実業高校",
+          "slug": "daishojijitsugyo"
+        },
+        {
+          "display": "小松工業",
+          "score": 2,
+          "won": true,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "県立工業",
+          "score": 3,
+          "won": true,
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        },
+        {
+          "display": "金沢錦丘",
+          "score": 0,
+          "won": false,
+          "name": "金沢錦丘高校",
+          "slug": "kanazawanishikigaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢二水",
+          "score": 0,
+          "won": false,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        },
+        {
+          "display": "金沢市工",
+          "score": 17,
+          "won": true,
+          "name": "金沢市工",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "松任",
+          "score": 0,
+          "won": false,
+          "name": "松任高校",
+          "slug": "matto"
+        },
+        {
+          "display": "小松商業",
+          "score": 12,
+          "won": true,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 6,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "大聖寺",
+          "score": 1,
+          "won": false,
+          "name": "大聖寺高校",
+          "slug": "daishoji"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "金沢泉丘",
+          "score": 0,
+          "won": false,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        },
+        {
+          "display": "金沢",
+          "score": 9,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "輪島",
+          "score": 4,
+          "won": true,
+          "name": "輪島高校",
+          "slug": "wajima"
+        },
+        {
+          "display": "鹿西",
+          "score": 3,
+          "won": false,
+          "name": "鹿西高校",
+          "slug": "rokusei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "小松",
+          "score": 6,
+          "won": true,
+          "name": "小松高校",
+          "slug": "komatsu"
+        },
+        {
+          "display": "金沢西",
+          "score": 2,
+          "won": false,
+          "name": "金沢西高校",
+          "slug": "kanazawanishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松大谷",
+          "score": 11,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        },
+        {
+          "display": "金沢桜丘",
+          "score": 1,
+          "won": false,
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "小松工業",
+          "score": 6,
+          "won": true,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        },
+        {
+          "display": "県立工業",
+          "score": 4,
+          "won": false,
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "津幡",
+          "score": 4,
+          "won": true,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        },
+        {
+          "display": "金沢市工",
+          "score": 0,
+          "won": false,
+          "name": "金沢市工",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松商業",
+          "score": 0,
+          "won": false,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        },
+        {
+          "display": "星稜",
+          "score": 6,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 11,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "輪島",
+          "score": 0,
+          "won": false,
+          "name": "輪島高校",
+          "slug": "wajima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松",
+          "score": 0,
+          "won": false,
+          "name": "小松高校",
+          "slug": "komatsu"
+        },
+        {
+          "display": "小松大谷",
+          "score": 2,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松工業",
+          "score": 1,
+          "won": false,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        },
+        {
+          "display": "津幡",
+          "score": 2,
+          "won": true,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 9,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "金沢",
+          "score": 0,
+          "won": false,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松大谷",
+          "score": 5,
+          "won": false,
+          "name": "小松大谷",
+          "slug": null
+        },
+        {
+          "display": "津幡",
+          "score": 7,
+          "won": true,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-08",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 7,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "津幡",
+          "score": 0,
+          "won": false,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-09",
+      "season": "summer",
+      "tournament": "2020年 令和2年度夏季石川県高等学校野球大会",
+      "round": "決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 1,
+          "won": false,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "日本航空石川",
+          "score": 2,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-07-09",
       "season": "summer",
       "round": "1回戦",
@@ -35428,6 +38833,1140 @@
         }
       ],
       "tournament": "第86回全国高等学校野球選手権石川大会（平成16年度夏季）"
+    },
+    {
+      "date": "2024-09-07",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "鵬学園",
+          "score": 3,
+          "won": false,
+          "name": "鵬学園",
+          "slug": null
+        },
+        {
+          "display": "小松商業",
+          "score": 5,
+          "won": true,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-07",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "輪島",
+          "score": 9,
+          "won": true,
+          "name": "輪島高校",
+          "slug": "wajima"
+        },
+        {
+          "display": "飯田",
+          "score": 0,
+          "won": false,
+          "name": "飯田高校",
+          "slug": "iida"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-08",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "七尾",
+          "score": 1,
+          "won": false,
+          "name": "七尾高校",
+          "slug": "nanao"
+        },
+        {
+          "display": "門前",
+          "score": 8,
+          "won": true,
+          "name": "門前高校",
+          "slug": "monzen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-08",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "野々市明倫",
+          "score": 5,
+          "won": true,
+          "name": "野々市明倫高校",
+          "slug": "nonoichimeirin"
+        },
+        {
+          "display": "鶴来",
+          "score": 0,
+          "won": false,
+          "name": "鶴来高校",
+          "slug": "tsurugi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-07",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "七尾東雲",
+          "score": 1,
+          "won": false,
+          "name": "七尾東雲高校",
+          "slug": "nanaoshinonome"
+        },
+        {
+          "display": "小松",
+          "score": 26,
+          "won": true,
+          "name": "小松高校",
+          "slug": "komatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-07",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "金沢龍谷",
+          "score": 8,
+          "won": true,
+          "name": "金沢龍谷",
+          "slug": null
+        },
+        {
+          "display": "金沢桜丘",
+          "score": 4,
+          "won": false,
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-14",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "日本航空石川",
+          "score": 16,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        },
+        {
+          "display": "金沢大学附属",
+          "score": 0,
+          "won": false,
+          "name": "金沢大学附属",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-16",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松商業",
+          "score": 0,
+          "won": false,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        },
+        {
+          "display": "輪島",
+          "score": 7,
+          "won": true,
+          "name": "輪島高校",
+          "slug": "wajima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-16",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "門前",
+          "score": 3,
+          "won": true,
+          "name": "門前高校",
+          "slug": "monzen"
+        },
+        {
+          "display": "野々市明倫",
+          "score": 2,
+          "won": false,
+          "name": "野々市明倫高校",
+          "slug": "nonoichimeirin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-08",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢二水",
+          "score": 10,
+          "won": true,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        },
+        {
+          "display": "鹿西",
+          "score": 0,
+          "won": false,
+          "name": "鹿西高校",
+          "slug": "rokusei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-08",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "小松市立",
+          "score": 0,
+          "won": false,
+          "name": "小松市立高校",
+          "slug": "komatsushiritsu"
+        },
+        {
+          "display": "金沢",
+          "score": 13,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-16",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松",
+          "score": 10,
+          "won": true,
+          "name": "小松高校",
+          "slug": "komatsu"
+        },
+        {
+          "display": "金沢龍谷",
+          "score": 5,
+          "won": false,
+          "name": "金沢龍谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-08",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "穴水",
+          "score": 5,
+          "won": false,
+          "name": "穴水高校",
+          "slug": "anamizu"
+        },
+        {
+          "display": "北陸学院",
+          "score": 17,
+          "won": true,
+          "name": "北陸学院",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-14",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 4,
+          "won": false,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "星稜",
+          "score": 6,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-21",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "日本航空石川",
+          "score": 3,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        },
+        {
+          "display": "輪島",
+          "score": 2,
+          "won": false,
+          "name": "輪島高校",
+          "slug": "wajima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-21",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "門前",
+          "score": 8,
+          "won": true,
+          "name": "門前高校",
+          "slug": "monzen"
+        },
+        {
+          "display": "金沢二水",
+          "score": 6,
+          "won": false,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-21",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 12,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "小松",
+          "score": 1,
+          "won": false,
+          "name": "小松高校",
+          "slug": "komatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-16",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "北陸学院",
+          "score": 0,
+          "won": false,
+          "name": "北陸学院",
+          "slug": null
+        },
+        {
+          "display": "星稜",
+          "score": 7,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-23",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "準々決勝",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "日本航空石川",
+          "score": 4,
+          "won": true,
+          "name": "日本航空石川",
+          "slug": null
+        },
+        {
+          "display": "門前",
+          "score": 3,
+          "won": false,
+          "name": "門前高校",
+          "slug": "monzen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-23",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 6,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "星稜",
+          "score": 4,
+          "won": false,
+          "name": "星稜",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-28",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "日本航空石川",
+          "score": 7,
+          "won": false,
+          "name": "日本航空石川",
+          "slug": null
+        },
+        {
+          "display": "金沢",
+          "score": 8,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-07",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "羽咋工業",
+          "score": 8,
+          "won": true,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        },
+        {
+          "display": "金沢西",
+          "score": 1,
+          "won": false,
+          "name": "金沢西高校",
+          "slug": "kanazawanishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-07",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢北陵",
+          "score": 2,
+          "won": false,
+          "name": "金沢北陵高校",
+          "slug": "kanazawahokuryo"
+        },
+        {
+          "display": "羽咋",
+          "score": 6,
+          "won": true,
+          "name": "羽咋高校",
+          "slug": "hakui"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-08",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "県立工業",
+          "score": 10,
+          "won": true,
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        },
+        {
+          "display": "金沢伏見",
+          "score": 0,
+          "won": false,
+          "name": "金沢伏見高校",
+          "slug": "kanazawafushimi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-08",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢市立工業",
+          "score": 7,
+          "won": true,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        },
+        {
+          "display": "石川高専",
+          "score": 4,
+          "won": false,
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-08",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "翠星",
+          "score": 0,
+          "won": false,
+          "name": "翠星高校",
+          "slug": "suisei"
+        },
+        {
+          "display": "小松明峰",
+          "score": 22,
+          "won": true,
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-14",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢学院大学附属",
+          "score": 15,
+          "won": true,
+          "name": "金沢学院大学附属",
+          "slug": null
+        },
+        {
+          "display": "能登",
+          "score": 0,
+          "won": false,
+          "name": "能登高校",
+          "slug": "noto"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-08",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "大聖寺実業",
+          "score": 7,
+          "won": true,
+          "name": "大聖寺実業高校",
+          "slug": "daishojijitsugyo"
+        },
+        {
+          "display": "金沢錦丘",
+          "score": 0,
+          "won": false,
+          "name": "金沢錦丘高校",
+          "slug": "kanazawanishikigaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-15",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "羽咋工業",
+          "score": 9,
+          "won": true,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        },
+        {
+          "display": "羽咋",
+          "score": 5,
+          "won": false,
+          "name": "羽咋高校",
+          "slug": "hakui"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-09",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松工業",
+          "score": 9,
+          "won": true,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        },
+        {
+          "display": "大聖寺",
+          "score": 2,
+          "won": false,
+          "name": "大聖寺高校",
+          "slug": "daishoji"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-09",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "寺井",
+          "score": 5,
+          "won": true,
+          "name": "寺井高校",
+          "slug": "terai"
+        },
+        {
+          "display": "金沢商業",
+          "score": 3,
+          "won": false,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-16",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "県立工業",
+          "score": 3,
+          "won": false,
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        },
+        {
+          "display": "金沢市立工業",
+          "score": 8,
+          "won": true,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-15",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢泉丘",
+          "score": 6,
+          "won": true,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        },
+        {
+          "display": "小松明峰",
+          "score": 3,
+          "won": false,
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-15",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "津幡",
+          "score": 0,
+          "won": false,
+          "name": "津幡高校",
+          "slug": "tsubata"
+        },
+        {
+          "display": "小松大谷",
+          "score": 3,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-16",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢学院大学附属",
+          "score": 7,
+          "won": true,
+          "name": "金沢学院大学附属",
+          "slug": null
+        },
+        {
+          "display": "大聖寺実業",
+          "score": 3,
+          "won": false,
+          "name": "大聖寺実業高校",
+          "slug": "daishojijitsugyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-23",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "羽咋工業",
+          "score": 1,
+          "won": false,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        },
+        {
+          "display": "小松工業",
+          "score": 8,
+          "won": true,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-21",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "寺井",
+          "score": 1,
+          "won": false,
+          "name": "寺井高校",
+          "slug": "terai"
+        },
+        {
+          "display": "金沢市立工業",
+          "score": 8,
+          "won": true,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-21",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢泉丘",
+          "score": 1,
+          "won": false,
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        },
+        {
+          "display": "小松大谷",
+          "score": 11,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-25",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢学院大学附属",
+          "score": 0,
+          "won": false,
+          "name": "金沢学院大学附属",
+          "slug": null
+        },
+        {
+          "display": "小松工業",
+          "score": 3,
+          "won": true,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-23",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "準々決勝",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢市立工業",
+          "score": 2,
+          "won": false,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        },
+        {
+          "display": "小松大谷",
+          "score": 10,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-28",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松工業",
+          "score": 7,
+          "won": true,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        },
+        {
+          "display": "小松大谷",
+          "score": 2,
+          "won": false,
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-09-29",
+      "season": "autumn",
+      "tournament": "2024年 秋季北信越地区高校野球 石川県大会",
+      "round": "決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松工業",
+          "score": 2,
+          "won": false,
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        },
+        {
+          "display": "金沢",
+          "score": 5,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
     },
     {
       "date": "2025-09-06",

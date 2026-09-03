@@ -16670,35 +16670,225 @@ const wakayamaHsbFill = hsbFillAdapter({
   primary: wakayama,
 });
 
+/*
+  ★★**同じ2本立てを、連盟が飛び飛びの県にも広げた**（2026-09-03 その2）。
+  ★**主（連盟）が1試合でも持っている 年×季節 には入らない**ので、**足すだけで減らない。**
+  ★**`summer2020` は2020年の代替大会の題**（県ごとにまるで違う。**名指しで拾う**）。
+*/
+const oitaHsbFill = hsbFillAdapter({
+  slug: "oita",
+  district: "大分",
+  host: "oita",
+  summer2020: /^2020大分県高等学校野球大会/,
+  primary: oita,
+});
+
+const shimaneHsbFill = hsbFillAdapter({
+  slug: "shimane",
+  district: "島根",
+  host: "shimane",
+  summer2020: /^令和2年度島根県高等学校夏季野球大会/,
+  primary: shimane,
+});
+
+const sagaHsbFill = hsbFillAdapter({
+  slug: "saga",
+  district: "佐賀",
+  host: "saga",
+  // ★佐賀の2020年は `SAGA2020SSP杯佐賀県高校スポーツ大会`（野球の字が無い）
+  summer2020: /^SAGA2020SSP杯佐賀県高校スポーツ大会/,
+  primary: saga,
+});
+
+const kagawaHsbFill = hsbFillAdapter({
+  slug: "kagawa",
+  district: "香川",
+  host: "kagawa",
+  summer2020: /^令和2年度香川県高等学校野球大会/,
+  primary: kagawa,
+});
+
+const yamagataHsbFill = hsbFillAdapter({
+  slug: "yamagata",
+  district: "山形",
+  host: "yamagata",
+  summer2020: /^山形県高等学校野球大会2020/,
+  primary: yamagata,
+});
+
+const miyazakiHsbFill = hsbFillAdapter({
+  slug: "miyazaki",
+  district: "宮崎",
+  host: "miyazaki",
+  summer2020: /^宮崎県高等学校野球大会2020/,
+  primary: miyazaki,
+});
+
+const okinawaHsbFill = hsbFillAdapter({
+  slug: "okinawa",
+  district: "沖縄",
+  host: "okinawa",
+  summer2020: /^2020沖縄県高等学校野球夏季大会/,
+  primary: okinawa,
+});
+
+const naraHsbFill = hsbFillAdapter({
+  slug: "nara",
+  district: "奈良",
+  host: "nara",
+  summer2020: /^令和2年度奈良県高等学校夏季野球大会/,
+  primary: nara,
+});
+
+const niigataHsbFill = hsbFillAdapter({
+  slug: "niigata",
+  district: "新潟",
+  host: "niigata",
+  summer2020: /^令和2年度新潟県高等学校夏季野球大会/,
+  primary: niigata,
+});
+
+const gunmaHsbFill = hsbFillAdapter({
+  slug: "gunma",
+  district: "群馬",
+  host: "gunma",
+  summer2020: /^2020年群馬県高等学校野球大会/,
+  primary: gunma,
+});
+
+/*
+  ★**残りの県にも同じ2本立てを広げた**（2026-09-03 その2）。
+  ★**穴が「年×季節」の単位で空いているところにだけ入る**ので、**足すだけで減らない。**
+*/
+const ibarakiHsbFill = hsbFillAdapter({
+  slug: "ibaraki",
+  district: "茨城",
+  host: "ibaraki",
+  summer2020: /^2020年夏季茨城県高等学校野球大会/,
+  primary: ibaraki,
+});
+
+const tochigiHsbFill = hsbFillAdapter({
+  slug: "tochigi",
+  district: "栃木",
+  host: "tochigi",
+  // ★栃木の2020年は「交流試合」（勝ち抜きではない）。**題を名指しして夏に入れる**
+  summer2020: /^2020年栃木県高校野球交流試合/,
+  primary: tochigi,
+});
+
+const saitamaHsbFill = hsbFillAdapter({
+  slug: "saitama",
+  district: "埼玉",
+  host: "saitama",
+  summer2020: /^2020夏季埼玉県高等学校野球大会/,
+  primary: saitama,
+});
+
+const kanagawaHsbFill = hsbFillAdapter({
+  slug: "kanagawa",
+  district: "神奈川",
+  host: "kanagawa",
+  summer2020: /^令和2年度神奈川県高等学校野球大会/,
+  primary: kanagawa,
+});
+
+const ishikawaHsbFill = hsbFillAdapter({
+  slug: "ishikawa",
+  district: "石川",
+  host: "ishikawa",
+  summer2020: /^令和2年度夏季石川県高等学校野球大会/,
+  primary: ishikawa,
+});
+
+const yamanashiHsbFill = hsbFillAdapter({
+  slug: "yamanashi",
+  district: "山梨",
+  host: "yamanashi",
+  summer2020: /^2020年夏季山梨県高等学校野球大会/,
+  primary: yamanashi,
+});
+
+const naganoHsbFill = hsbFillAdapter({
+  slug: "nagano",
+  district: "長野",
+  host: "nagano",
+  summer2020: /^2020年度夏季高等学校野球長野県大会/,
+  primary: nagano,
+});
+
+const shizuokaHsbFill = hsbFillAdapter({
+  slug: "shizuoka",
+  district: "静岡",
+  host: "shizuoka",
+  summer2020: /^2020夏季静岡県高等学校野球大会/,
+  primary: shizuoka,
+});
+
+const kumamotoHsbFill = hsbFillAdapter({
+  slug: "kumamoto",
+  district: "熊本",
+  host: "kumamoto",
+  summer2020: /^2020夏季熊本県高等学校野球大会/,
+  primary: kumamoto,
+});
+
+const yamaguchiHsbFill = hsbFillAdapter({
+  slug: "yamaguchi",
+  district: "山口",
+  host: "yamaguchi",
+  summer2020: /^2020メモリアルカップ夏季高等学校野球大会/,
+  primary: yamaguchi,
+});
+
 const ADAPTERS = [
   nagano,
+  naganoHsbFill,
   kanagawa,
+  kanagawaHsbFill,
   saitama,
+  saitamaHsbFill,
   yamanashi,
+  yamanashiHsbFill,
   kumamoto,
+  kumamotoHsbFill,
   gunma,
+  gunmaHsbFill,
   saga,
+  sagaHsbFill,
   nara,
+  naraHsbFill,
   niigata,
+  niigataHsbFill,
   aichi,
   aichiHsbFill,
   ishikawa,
+  ishikawaHsbFill,
   yamagata,
+  yamagataHsbFill,
   shizuoka,
+  shizuokaHsbFill,
   yamaguchi,
+  yamaguchiHsbFill,
   miyazaki,
+  miyazakiHsbFill,
   wakayama,
   wakayamaHsbFill,
   hyogo,
   hyogoHsbFill,
   // ★2026-08-20 に方針を変えて足した5県（omyuAdapter の説明を読むこと）
   ibaraki,
+  ibarakiHsbFill,
   kagawa,
+  kagawaHsbFill,
   // ★連盟ではなく個人運営のサイトが出典（埼玉・神奈川・愛知と同じ）
   shimane,
+  shimaneHsbFill,
   // ★規約で外していたのは誤りだった（oita / tochigi の説明を読むこと）
   oita,
+  oitaHsbFill,
   tochigi,
+  tochigiHsbFill,
   // ★連盟が結果を画像でしか出していないので、連盟以外から取る（fukuoka の説明を読むこと）
   fukuoka,
   /*
@@ -16732,6 +16922,7 @@ const ADAPTERS = [
   tokushimaHsb,
   // ★「スロット番号の行が無い」という記録が誤りだった（okinawa の説明を読むこと）
   okinawa,
+  okinawaHsbFill,
   /*
     ★★**富山は「枝の線から読む」最初の県**（2026-08-24）。
     座標から推測して組み立てる `slot-bracket.mjs` の条件を満たさないので
@@ -18042,6 +18233,34 @@ async function main() {
         }
       }
 
+      /*
+        ★★★**同じ試合が2つ入っていることがある**（2026-09-03 その2。実測で5件）。
+
+        ★**重複を落とす鍵（上の `add`）は「日付＋1校目＋2校目」**なので、
+        **出典が同じ試合を左右逆に載せていると落ちない**
+        （静岡 2025-09-14 `袋井 6-静清 4` と `静清 4-袋井 6`）。
+        ★**引き継いだぶんは `add` を通らない**ので、そこでも落ちない
+        （長野の中信予選会に同じ試合が3組）。
+
+        ★**ここで「日付＋校名2つ（並べ替え）＋得点2つ（並べ替え）」で落とす。**
+        ★★**得点まで鍵に入れるのは、同じ日に同じ顔合わせが2試合ある紙があるため**
+        （山梨 2023-04-19 は `富士学苑 10-甲府東 2` と `甲府東 12-富士学苑 13` の2試合が
+        別の球場で行われている）。**得点が違えば別の試合として残す。**
+      */
+      const dupKey = (g) =>
+        [
+          g.date ?? "",
+          ...g.teams.map((t) => t.display).sort(),
+          ...g.teams.map((t) => t.score).sort((x, y) => x - y),
+        ].join("\t");
+      const uniq = new Map();
+      for (const g of seasonGames) if (!uniq.has(dupKey(g))) uniq.set(dupKey(g), g);
+      if (uniq.size !== seasonGames.length) {
+        console.log(`  ℹ️ ${season}: 同じ試合が2つ入っていたので ${seasonGames.length - uniq.size} 件落とした`);
+        seasonGames.length = 0;
+        seasonGames.push(...uniq.values());
+      }
+
       const kept = seasonGames;
 
       const dates = kept.map((g) => g.date).filter(Boolean).sort();
@@ -18052,6 +18271,48 @@ async function main() {
           (years.length > 1 ? ` ／ ${years.length} 年ぶん` : ""),
       );
       all.push(...kept);
+    }
+
+    /*
+      ★★★**同じ大会が2つの季節に分かれていることがある**（2026-09-03 その2。長野で3試合）。
+
+      **出典の季節ごとのページが、別の季節の紙を1枚だけ拾っていた** ——
+      `第153回 北信越地区高等学校野球長野県大会 中信予選会`（2025-08-31）が
+      **秋季に16試合・春季に3試合**入っており、**その3試合は秋季と丸ごと重なっていた。**
+
+      ★**大会は1つの季節に属する**ので、**試合数の多いほうの季節に寄せる。**
+      ★**寄せたあとに、季節をまたいだ重複を落とす**（季節ごとの重複落としでは残る）。
+      ★**日付を持たない試合は大会名と回戦まで鍵に入れる** ——
+      **別の年の同じ顔合わせ・同じ得点**が落ちてしまう（富山・三重のように日付が無い出典がある）。
+    */
+    const seasonsOfTournament = new Map();
+    for (const g of all) {
+      if (!g.tournament) continue;
+      if (!seasonsOfTournament.has(g.tournament)) seasonsOfTournament.set(g.tournament, new Map());
+      const m = seasonsOfTournament.get(g.tournament);
+      m.set(g.season, (m.get(g.season) ?? 0) + 1);
+    }
+    for (const [name, m] of seasonsOfTournament) {
+      if (m.size < 2) continue;
+      const best = [...m].sort((a, b) => b[1] - a[1])[0][0];
+      console.log(
+        `  ⚠️ 「${name}」が ${[...m].map(([s, n]) => `${s}${n}件`).join("・")} に分かれている。` +
+          `**${best} に寄せる**（出典の季節ごとのページが別の季節の紙を拾っている）`,
+      );
+      for (const g of all) if (g.tournament === name) g.season = best;
+    }
+    {
+      const key = (g) =>
+        g.date
+          ? [g.date, ...g.teams.map((t) => t.display).sort(), ...g.teams.map((t) => t.score).sort((x, y) => x - y)].join("\t")
+          : [g.tournament, g.round, ...g.teams.map((t) => t.display).sort(), ...g.teams.map((t) => t.score).sort((x, y) => x - y)].join("\t");
+      const uniq = new Map();
+      for (const g of all) if (!uniq.has(key(g))) uniq.set(key(g), g);
+      if (uniq.size !== all.length) {
+        console.log(`  ℹ️ 季節をまたいで同じ試合が ${all.length - uniq.size} 件あったので落とした`);
+        all.length = 0;
+        all.push(...uniq.values());
+      }
     }
 
     /*

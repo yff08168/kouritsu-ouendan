@@ -5,6 +5,2033 @@
   "sourceUrl": "https://niigata-hbf.jp/",
   "games": [
     {
+      "date": "2019-04-28",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小千谷",
+          "score": 8,
+          "won": true,
+          "name": "小千谷高校",
+          "slug": "ojiya"
+        },
+        {
+          "display": "高田農商",
+          "score": 5,
+          "won": false,
+          "name": "高田農商",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-28",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新潟西",
+          "score": 9,
+          "won": true,
+          "name": "新潟西高校",
+          "slug": "niigatanishi"
+        },
+        {
+          "display": "新潟江南",
+          "score": 6,
+          "won": false,
+          "name": "新潟江南高校",
+          "slug": "niigatakonan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-27",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "巻総合",
+          "score": 8,
+          "won": false,
+          "name": "巻総合高校",
+          "slug": "makisogo"
+        },
+        {
+          "display": "新津工",
+          "score": 9,
+          "won": true,
+          "name": "新津工業高校",
+          "slug": "niitsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-28",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新潟青陵",
+          "score": 6,
+          "won": true,
+          "name": "新潟青陵",
+          "slug": null
+        },
+        {
+          "display": "敬和学園",
+          "score": 0,
+          "won": false,
+          "name": "敬和学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-27",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "六日町",
+          "score": 2,
+          "won": false,
+          "name": "六日町高校",
+          "slug": "muikamachi"
+        },
+        {
+          "display": "十日町",
+          "score": 3,
+          "won": true,
+          "name": "十日町高校",
+          "slug": "tokamachi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-27",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐渡総合",
+          "score": 10,
+          "won": true,
+          "name": "佐渡総合高校",
+          "slug": "sadosogo"
+        },
+        {
+          "display": "万代",
+          "score": 2,
+          "won": false,
+          "name": "万代高校",
+          "slug": "bandai"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "関根学園",
+          "score": 2,
+          "won": false,
+          "name": "関根学園",
+          "slug": null
+        },
+        {
+          "display": "小千谷",
+          "score": 3,
+          "won": true,
+          "name": "小千谷高校",
+          "slug": "ojiya"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "塩松十総",
+          "score": 2,
+          "won": false,
+          "name": "塩松十総",
+          "slug": null
+        },
+        {
+          "display": "糸魚川白嶺",
+          "score": 11,
+          "won": true,
+          "name": "糸魚川白嶺高校",
+          "slug": "itoigawahakurei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "村上桜ヶ丘",
+          "score": 8,
+          "won": true,
+          "name": "村上桜ヶ丘高校",
+          "slug": "murakamisakuragaoka"
+        },
+        {
+          "display": "新潟西",
+          "score": 3,
+          "won": false,
+          "name": "新潟西高校",
+          "slug": "niigatanishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-30",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "白根",
+          "score": 1,
+          "won": false,
+          "name": "白根高校",
+          "slug": "shirone"
+        },
+        {
+          "display": "新潟第一",
+          "score": 3,
+          "won": true,
+          "name": "新潟第一",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "加茂暁星",
+          "score": 10,
+          "won": true,
+          "name": "加茂暁星",
+          "slug": null
+        },
+        {
+          "display": "新津工",
+          "score": 3,
+          "won": false,
+          "name": "新津工業高校",
+          "slug": "niitsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-30",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新津南",
+          "score": 0,
+          "won": false,
+          "name": "新津南高校",
+          "slug": "niitsuminami"
+        },
+        {
+          "display": "新潟明訓",
+          "score": 8,
+          "won": true,
+          "name": "新潟明訓",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-30",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "長岡",
+          "score": 14,
+          "won": true,
+          "name": "長岡高校",
+          "slug": "nagaoka"
+        },
+        {
+          "display": "長岡農・正徳館・栃尾",
+          "score": 0,
+          "won": false,
+          "name": "長岡農・正徳館・栃尾",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-01",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "糸魚川",
+          "score": 17,
+          "won": true,
+          "name": "糸魚川高校",
+          "slug": "itoigawa"
+        },
+        {
+          "display": "吉田・分水",
+          "score": 0,
+          "won": false,
+          "name": "吉田・分水",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開志学園",
+          "score": 30,
+          "won": true,
+          "name": "開志学園",
+          "slug": null
+        },
+        {
+          "display": "新潟青陵",
+          "score": 0,
+          "won": false,
+          "name": "新潟青陵",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-30",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新潟東",
+          "score": 0,
+          "won": false,
+          "name": "新潟東高校",
+          "slug": "niigatahigashi"
+        },
+        {
+          "display": "佐渡",
+          "score": 14,
+          "won": true,
+          "name": "佐渡高校",
+          "slug": "sado"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高田",
+          "score": 6,
+          "won": true,
+          "name": "高田高校",
+          "slug": "niigata-takata"
+        },
+        {
+          "display": "十日町",
+          "score": 5,
+          "won": false,
+          "name": "十日町高校",
+          "slug": "tokamachi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新井",
+          "score": 9,
+          "won": true,
+          "name": "新井高校",
+          "slug": "arai"
+        },
+        {
+          "display": "柏崎常磐",
+          "score": 2,
+          "won": false,
+          "name": "柏崎常磐",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-30",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三条",
+          "score": 5,
+          "won": true,
+          "name": "三条高校",
+          "slug": "sanjo"
+        },
+        {
+          "display": "三条東",
+          "score": 0,
+          "won": false,
+          "name": "三条東高校",
+          "slug": "sanjohigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-30",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三条商",
+          "score": 2,
+          "won": false,
+          "name": "三条商業高校",
+          "slug": "sanjoshogyo"
+        },
+        {
+          "display": "上越",
+          "score": 3,
+          "won": true,
+          "name": "上越",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新潟南",
+          "score": 3,
+          "won": true,
+          "name": "新潟南高校",
+          "slug": "niigataminami"
+        },
+        {
+          "display": "佐渡総合",
+          "score": 2,
+          "won": false,
+          "name": "佐渡総合高校",
+          "slug": "sadosogo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-30",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "村上",
+          "score": 1,
+          "won": false,
+          "name": "村上高校",
+          "slug": "murakami"
+        },
+        {
+          "display": "新発田",
+          "score": 11,
+          "won": true,
+          "name": "新発田高校",
+          "slug": "niigata-shibata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-02",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小千谷",
+          "score": 10,
+          "won": true,
+          "name": "小千谷高校",
+          "slug": "ojiya"
+        },
+        {
+          "display": "糸魚川白嶺",
+          "score": 3,
+          "won": false,
+          "name": "糸魚川白嶺高校",
+          "slug": "itoigawahakurei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-02",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "村上桜ヶ丘",
+          "score": 11,
+          "won": true,
+          "name": "村上桜ヶ丘高校",
+          "slug": "murakamisakuragaoka"
+        },
+        {
+          "display": "新潟第一",
+          "score": 1,
+          "won": false,
+          "name": "新潟第一",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-02",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "加茂暁星",
+          "score": 3,
+          "won": false,
+          "name": "加茂暁星",
+          "slug": null
+        },
+        {
+          "display": "新潟明訓",
+          "score": 5,
+          "won": true,
+          "name": "新潟明訓",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-02",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "長岡",
+          "score": 6,
+          "won": false,
+          "name": "長岡高校",
+          "slug": "nagaoka"
+        },
+        {
+          "display": "糸魚川",
+          "score": 8,
+          "won": true,
+          "name": "糸魚川高校",
+          "slug": "itoigawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-02",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開志学園",
+          "score": 9,
+          "won": true,
+          "name": "開志学園",
+          "slug": null
+        },
+        {
+          "display": "佐渡",
+          "score": 2,
+          "won": false,
+          "name": "佐渡高校",
+          "slug": "sado"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-02",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高田",
+          "score": 3,
+          "won": true,
+          "name": "高田高校",
+          "slug": "niigata-takata"
+        },
+        {
+          "display": "新井",
+          "score": 1,
+          "won": false,
+          "name": "新井高校",
+          "slug": "arai"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-02",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三条",
+          "score": 8,
+          "won": true,
+          "name": "三条高校",
+          "slug": "sanjo"
+        },
+        {
+          "display": "上越",
+          "score": 2,
+          "won": false,
+          "name": "上越",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-02",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新潟南",
+          "score": 2,
+          "won": false,
+          "name": "新潟南高校",
+          "slug": "niigataminami"
+        },
+        {
+          "display": "新発田",
+          "score": 7,
+          "won": true,
+          "name": "新発田高校",
+          "slug": "niigata-shibata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-04",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小千谷",
+          "score": 0,
+          "won": false,
+          "name": "小千谷高校",
+          "slug": "ojiya"
+        },
+        {
+          "display": "村上桜ヶ丘",
+          "score": 5,
+          "won": true,
+          "name": "村上桜ヶ丘高校",
+          "slug": "murakamisakuragaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-04",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新潟明訓",
+          "score": 2,
+          "won": false,
+          "name": "新潟明訓",
+          "slug": null
+        },
+        {
+          "display": "糸魚川",
+          "score": 8,
+          "won": true,
+          "name": "糸魚川高校",
+          "slug": "itoigawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-04",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開志学園",
+          "score": 3,
+          "won": false,
+          "name": "開志学園",
+          "slug": null
+        },
+        {
+          "display": "高田",
+          "score": 5,
+          "won": true,
+          "name": "高田高校",
+          "slug": "niigata-takata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-04",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三条",
+          "score": 10,
+          "won": true,
+          "name": "三条高校",
+          "slug": "sanjo"
+        },
+        {
+          "display": "新発田",
+          "score": 3,
+          "won": false,
+          "name": "新発田高校",
+          "slug": "niigata-shibata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-06",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "村上桜ヶ丘",
+          "score": 3,
+          "won": true,
+          "name": "村上桜ヶ丘高校",
+          "slug": "murakamisakuragaoka"
+        },
+        {
+          "display": "糸魚川",
+          "score": 0,
+          "won": false,
+          "name": "糸魚川高校",
+          "slug": "itoigawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-06",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高田",
+          "score": 3,
+          "won": false,
+          "name": "高田高校",
+          "slug": "niigata-takata"
+        },
+        {
+          "display": "三条",
+          "score": 4,
+          "won": true,
+          "name": "三条高校",
+          "slug": "sanjo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-11",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "村上桜ヶ丘",
+          "score": 1,
+          "won": false,
+          "name": "村上桜ヶ丘高校",
+          "slug": "murakamisakuragaoka"
+        },
+        {
+          "display": "三条",
+          "score": 3,
+          "won": true,
+          "name": "三条高校",
+          "slug": "sanjo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-28",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "羽茂",
+          "score": 3,
+          "won": false,
+          "name": "羽茂高校",
+          "slug": "hamochi"
+        },
+        {
+          "display": "中条",
+          "score": 12,
+          "won": true,
+          "name": "中条高校",
+          "slug": "nakajo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-28",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "加茂農林",
+          "score": 9,
+          "won": true,
+          "name": "加茂農林高校",
+          "slug": "kamonorin"
+        },
+        {
+          "display": "新潟北",
+          "score": 8,
+          "won": false,
+          "name": "新潟北高校",
+          "slug": "niigatakita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-28",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "有総久",
+          "score": 2,
+          "won": false,
+          "name": "有総久",
+          "slug": null
+        },
+        {
+          "display": "柏崎",
+          "score": 12,
+          "won": true,
+          "name": "柏崎高校",
+          "slug": "kashiwazaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-27",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新潟向陽",
+          "score": 0,
+          "won": false,
+          "name": "新潟向陽高校",
+          "slug": "niigatakoyo"
+        },
+        {
+          "display": "新発田中央",
+          "score": 18,
+          "won": true,
+          "name": "新発田中央",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-27",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "豊栄",
+          "score": 0,
+          "won": false,
+          "name": "豊栄高校",
+          "slug": "toyosaka"
+        },
+        {
+          "display": "新発田商",
+          "score": 8,
+          "won": true,
+          "name": "新発田商業高校",
+          "slug": "shibatashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-27",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小出",
+          "score": 3,
+          "won": false,
+          "name": "小出高校",
+          "slug": "koide"
+        },
+        {
+          "display": "長岡工",
+          "score": 14,
+          "won": true,
+          "name": "長岡工業高校",
+          "slug": "nagaokakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日本文理",
+          "score": 21,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        },
+        {
+          "display": "中条",
+          "score": 0,
+          "won": false,
+          "name": "中条高校",
+          "slug": "nakajo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-30",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新発田農",
+          "score": 3,
+          "won": false,
+          "name": "新発田農業高校",
+          "slug": "shibatanogyo"
+        },
+        {
+          "display": "新津",
+          "score": 5,
+          "won": true,
+          "name": "新津高校",
+          "slug": "niitsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-30",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "長岡商",
+          "score": 6,
+          "won": true,
+          "name": "長岡商業高校",
+          "slug": "nagaokashogyo"
+        },
+        {
+          "display": "高田北城",
+          "score": 1,
+          "won": false,
+          "name": "高田北城高校",
+          "slug": "takadahokujo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-30",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小千谷西",
+          "score": 3,
+          "won": false,
+          "name": "小千谷西高校",
+          "slug": "ojiyanishi"
+        },
+        {
+          "display": "柏崎工",
+          "score": 9,
+          "won": true,
+          "name": "柏崎工業高校",
+          "slug": "kashiwazakikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-30",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "長岡大手",
+          "score": 11,
+          "won": true,
+          "name": "長岡大手高校",
+          "slug": "nagaokaote"
+        },
+        {
+          "display": "海洋",
+          "score": 1,
+          "won": false,
+          "name": "海洋高校",
+          "slug": "niigata-kaiyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-30",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "長岡高専",
+          "score": 2,
+          "won": false,
+          "name": "長岡工業高専",
+          "slug": "nagaokakogyo-kosen"
+        },
+        {
+          "display": "見附",
+          "score": 7,
+          "won": true,
+          "name": "見附高校",
+          "slug": "mitsuke"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東京学館新潟",
+          "score": 13,
+          "won": true,
+          "name": "東京学館新潟",
+          "slug": null
+        },
+        {
+          "display": "加茂農林",
+          "score": 0,
+          "won": false,
+          "name": "加茂農林高校",
+          "slug": "kamonorin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-01",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "加茂",
+          "score": 0,
+          "won": false,
+          "name": "加茂高校",
+          "slug": "kamo"
+        },
+        {
+          "display": "新発田南",
+          "score": 8,
+          "won": true,
+          "name": "新発田南高校",
+          "slug": "shibataminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新潟産大附",
+          "score": 8,
+          "won": true,
+          "name": "新潟産大附",
+          "slug": null
+        },
+        {
+          "display": "柏崎",
+          "score": 7,
+          "won": false,
+          "name": "柏崎高校",
+          "slug": "kashiwazaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新潟県央工",
+          "score": 13,
+          "won": true,
+          "name": "新潟県央工業高校",
+          "slug": "niigatakenokogyo"
+        },
+        {
+          "display": "長岡向陵",
+          "score": 1,
+          "won": false,
+          "name": "長岡向陵高校",
+          "slug": "nagaokakoryo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "巻",
+          "score": 0,
+          "won": false,
+          "name": "巻高校",
+          "slug": "maki"
+        },
+        {
+          "display": "新発田中央",
+          "score": 10,
+          "won": true,
+          "name": "新発田中央",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-01",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "五泉",
+          "score": 10,
+          "won": true,
+          "name": "五泉高校",
+          "slug": "gosen"
+        },
+        {
+          "display": "新潟商",
+          "score": 3,
+          "won": false,
+          "name": "新潟商業高校",
+          "slug": "niigatashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新潟",
+          "score": 11,
+          "won": true,
+          "name": "新潟高校",
+          "slug": "niigata"
+        },
+        {
+          "display": "新発田商",
+          "score": 6,
+          "won": false,
+          "name": "新発田商業高校",
+          "slug": "shibatashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-30",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北越",
+          "score": 13,
+          "won": true,
+          "name": "北越",
+          "slug": null
+        },
+        {
+          "display": "新潟工",
+          "score": 6,
+          "won": false,
+          "name": "新潟工業高校",
+          "slug": "niigatakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帝京長岡",
+          "score": 5,
+          "won": true,
+          "name": "帝京長岡",
+          "slug": null
+        },
+        {
+          "display": "長岡工",
+          "score": 3,
+          "won": false,
+          "name": "長岡工業高校",
+          "slug": "nagaokakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "中越",
+          "score": 5,
+          "won": true,
+          "name": "中越",
+          "slug": null
+        },
+        {
+          "display": "上越総合技術",
+          "score": 2,
+          "won": false,
+          "name": "上越総合技術高校",
+          "slug": "joetsusogogijutsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-02",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日本文理",
+          "score": 12,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        },
+        {
+          "display": "新津",
+          "score": 2,
+          "won": false,
+          "name": "新津高校",
+          "slug": "niitsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-02",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "長岡商",
+          "score": 8,
+          "won": true,
+          "name": "長岡商業高校",
+          "slug": "nagaokashogyo"
+        },
+        {
+          "display": "柏崎工",
+          "score": 1,
+          "won": false,
+          "name": "柏崎工業高校",
+          "slug": "kashiwazakikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-02",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "長岡大手",
+          "score": 10,
+          "won": true,
+          "name": "長岡大手高校",
+          "slug": "nagaokaote"
+        },
+        {
+          "display": "見附",
+          "score": 0,
+          "won": false,
+          "name": "見附高校",
+          "slug": "mitsuke"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-02",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東京学館新潟",
+          "score": 10,
+          "won": true,
+          "name": "東京学館新潟",
+          "slug": null
+        },
+        {
+          "display": "新発田南",
+          "score": 0,
+          "won": false,
+          "name": "新発田南高校",
+          "slug": "shibataminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-02",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新潟産大附",
+          "score": 4,
+          "won": true,
+          "name": "新潟産大附",
+          "slug": null
+        },
+        {
+          "display": "新潟県央工",
+          "score": 1,
+          "won": false,
+          "name": "新潟県央工業高校",
+          "slug": "niigatakenokogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-02",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新発田中央",
+          "score": 6,
+          "won": false,
+          "name": "新発田中央",
+          "slug": null
+        },
+        {
+          "display": "五泉",
+          "score": 7,
+          "won": true,
+          "name": "五泉高校",
+          "slug": "gosen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-02",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新潟",
+          "score": 1,
+          "won": false,
+          "name": "新潟高校",
+          "slug": "niigata"
+        },
+        {
+          "display": "北越",
+          "score": 7,
+          "won": true,
+          "name": "北越",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-02",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帝京長岡",
+          "score": 0,
+          "won": false,
+          "name": "帝京長岡",
+          "slug": null
+        },
+        {
+          "display": "中越",
+          "score": 3,
+          "won": true,
+          "name": "中越",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-04",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日本文理",
+          "score": 6,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        },
+        {
+          "display": "長岡商",
+          "score": 3,
+          "won": false,
+          "name": "長岡商業高校",
+          "slug": "nagaokashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-04",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "長岡大手",
+          "score": 5,
+          "won": true,
+          "name": "長岡大手高校",
+          "slug": "nagaokaote"
+        },
+        {
+          "display": "東京学館新潟",
+          "score": 3,
+          "won": false,
+          "name": "東京学館新潟",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-04",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新潟産大附",
+          "score": 2,
+          "won": true,
+          "name": "新潟産大附",
+          "slug": null
+        },
+        {
+          "display": "五泉",
+          "score": 0,
+          "won": false,
+          "name": "五泉高校",
+          "slug": "gosen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-04",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北越",
+          "score": 9,
+          "won": true,
+          "name": "北越",
+          "slug": null
+        },
+        {
+          "display": "中越",
+          "score": 1,
+          "won": false,
+          "name": "中越",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-06",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日本文理",
+          "score": 3,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        },
+        {
+          "display": "長岡大手",
+          "score": 2,
+          "won": false,
+          "name": "長岡大手高校",
+          "slug": "nagaokaote"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-06",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新潟産大附",
+          "score": 2,
+          "won": false,
+          "name": "新潟産大附",
+          "slug": null
+        },
+        {
+          "display": "北越",
+          "score": 9,
+          "won": true,
+          "name": "北越",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-11",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日本文理",
+          "score": 5,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        },
+        {
+          "display": "北越",
+          "score": 4,
+          "won": false,
+          "name": "北越",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-12",
+      "season": "spring",
+      "tournament": "2019年 春季北信越地区高校野球 新潟県大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日本文理",
+          "score": 11,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        },
+        {
+          "display": "三条",
+          "score": 3,
+          "won": false,
+          "name": "三条高校",
+          "slug": "sanjo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2010-04-29",
       "season": "spring",
       "tournament": "第122回北信越地区高等学校野球新潟県大会（平成22年度春季）",
@@ -26241,6 +28268,4013 @@
           "slug": null
         }
       ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "1回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "小出",
+          "score": 8,
+          "won": true,
+          "name": "小出高校",
+          "slug": "koide"
+        },
+        {
+          "display": "加茂",
+          "score": 0,
+          "won": false,
+          "name": "加茂高校",
+          "slug": "kamo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "1回戦",
+      "venue": "刈羽村源土野球場",
+      "teams": [
+        {
+          "display": "長岡工",
+          "score": 8,
+          "won": true,
+          "name": "長岡工業高校",
+          "slug": "nagaokakogyo"
+        },
+        {
+          "display": "長岡向陵",
+          "score": 1,
+          "won": false,
+          "name": "長岡向陵高校",
+          "slug": "nagaokakoryo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "1回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "見附",
+          "score": 2,
+          "won": false,
+          "name": "見附高校",
+          "slug": "mitsuke"
+        },
+        {
+          "display": "長岡商",
+          "score": 9,
+          "won": true,
+          "name": "長岡商業高校",
+          "slug": "nagaokashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "1回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "高田農",
+          "score": 2,
+          "won": false,
+          "name": "高田農業高校",
+          "slug": "takadanogyo"
+        },
+        {
+          "display": "十日町総合・海洋・塩沢商工・松代",
+          "score": 9,
+          "won": true,
+          "name": "十日町総合・海洋・塩沢商工・松代",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "1回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "新井",
+          "score": 0,
+          "won": false,
+          "name": "新井高校",
+          "slug": "arai"
+        },
+        {
+          "display": "小千谷西",
+          "score": 2,
+          "won": true,
+          "name": "小千谷西高校",
+          "slug": "ojiyanishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "加茂暁星",
+          "score": 4,
+          "won": true,
+          "name": "加茂暁星",
+          "slug": null
+        },
+        {
+          "display": "小出",
+          "score": 1,
+          "won": false,
+          "name": "小出高校",
+          "slug": "koide"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "加茂農林",
+          "score": 0,
+          "won": false,
+          "name": "加茂農林高校",
+          "slug": "kamonorin"
+        },
+        {
+          "display": "帝京長岡",
+          "score": 27,
+          "won": true,
+          "name": "帝京長岡",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "白根・吉田・阿賀野・村松",
+          "score": 0,
+          "won": false,
+          "name": "白根・吉田・阿賀野・村松",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "六日町",
+          "score": 28,
+          "won": true,
+          "name": "六日町高校",
+          "slug": "muikamachi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "刈羽村源土野球場",
+      "teams": [
+        {
+          "display": "中越",
+          "score": 8,
+          "won": true,
+          "name": "中越",
+          "slug": null
+        },
+        {
+          "display": "三条",
+          "score": 1,
+          "won": false,
+          "name": "三条高校",
+          "slug": "sanjo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "刈羽村源土野球場",
+      "teams": [
+        {
+          "display": "三条東",
+          "score": 3,
+          "won": false,
+          "name": "三条東高校",
+          "slug": "sanjohigashi"
+        },
+        {
+          "display": "長岡工",
+          "score": 6,
+          "won": true,
+          "name": "長岡工業高校",
+          "slug": "nagaokakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "刈羽村源土野球場",
+      "teams": [
+        {
+          "display": "長岡大手",
+          "score": 10,
+          "won": true,
+          "name": "長岡大手高校",
+          "slug": "nagaokaote"
+        },
+        {
+          "display": "長岡",
+          "score": 7,
+          "won": false,
+          "name": "長岡高校",
+          "slug": "nagaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "刈羽村源土野球場",
+      "teams": [
+        {
+          "display": "長岡農・正徳館・栃尾",
+          "score": 0,
+          "won": false,
+          "name": "長岡農・正徳館・栃尾",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "新潟県央工",
+          "score": 6,
+          "won": true,
+          "name": "新潟県央工業高校",
+          "slug": "niigatakenokogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "刈羽村源土野球場",
+      "teams": [
+        {
+          "display": "長岡商",
+          "score": 10,
+          "won": true,
+          "name": "長岡商業高校",
+          "slug": "nagaokashogyo"
+        },
+        {
+          "display": "三条商",
+          "score": 0,
+          "won": false,
+          "name": "三条商業高校",
+          "slug": "sanjoshogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "上越",
+          "score": 9,
+          "won": true,
+          "name": "上越",
+          "slug": null
+        },
+        {
+          "display": "十日町総合・海洋・塩沢商工・松代",
+          "score": 1,
+          "won": false,
+          "name": "十日町総合・海洋・塩沢商工・松代",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "糸魚川市美山公園野球場",
+      "teams": [
+        {
+          "display": "糸魚川",
+          "score": 7,
+          "won": true,
+          "name": "糸魚川高校",
+          "slug": "itoigawa"
+        },
+        {
+          "display": "糸魚川白嶺",
+          "score": 2,
+          "won": false,
+          "name": "糸魚川白嶺高校",
+          "slug": "itoigawahakurei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "上越総合技術",
+          "score": 10,
+          "won": true,
+          "name": "上越総合技術高校",
+          "slug": "joetsusogogijutsu"
+        },
+        {
+          "display": "小千谷",
+          "score": 3,
+          "won": false,
+          "name": "小千谷高校",
+          "slug": "ojiya"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "高田",
+          "score": 2,
+          "won": false,
+          "name": "高田高校",
+          "slug": "niigata-takata"
+        },
+        {
+          "display": "高田北城",
+          "score": 7,
+          "won": true,
+          "name": "高田北城高校",
+          "slug": "takadahokujo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "柏崎",
+          "score": 8,
+          "won": true,
+          "name": "柏崎高校",
+          "slug": "kashiwazaki"
+        },
+        {
+          "display": "柏崎工",
+          "score": 5,
+          "won": false,
+          "name": "柏崎工業高校",
+          "slug": "kashiwazakikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "柏崎常盤・柏崎総合・久比岐",
+          "score": 1,
+          "won": false,
+          "name": "柏崎常盤・柏崎総合・久比岐",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "十日町",
+          "score": 17,
+          "won": true,
+          "name": "十日町高校",
+          "slug": "tokamachi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "糸魚川市美山公園野球場",
+      "teams": [
+        {
+          "display": "関根学園",
+          "score": 12,
+          "won": true,
+          "name": "関根学園",
+          "slug": null
+        },
+        {
+          "display": "高田商",
+          "score": 5,
+          "won": false,
+          "name": "高田商業高校",
+          "slug": "takadashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "小千谷西",
+          "score": 3,
+          "won": false,
+          "name": "小千谷西高校",
+          "slug": "ojiyanishi"
+        },
+        {
+          "display": "新潟産大附",
+          "score": 10,
+          "won": true,
+          "name": "新潟産大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "加茂暁星",
+          "score": 1,
+          "won": true,
+          "name": "加茂暁星",
+          "slug": null
+        },
+        {
+          "display": "帝京長岡",
+          "score": 0,
+          "won": false,
+          "name": "帝京長岡",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "六日町",
+          "score": 0,
+          "won": false,
+          "name": "六日町高校",
+          "slug": "muikamachi"
+        },
+        {
+          "display": "中越",
+          "score": 18,
+          "won": true,
+          "name": "中越",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "長岡工",
+          "score": 3,
+          "won": false,
+          "name": "長岡工業高校",
+          "slug": "nagaokakogyo"
+        },
+        {
+          "display": "長岡大手",
+          "score": 4,
+          "won": true,
+          "name": "長岡大手高校",
+          "slug": "nagaokaote"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "新潟県央工",
+          "score": 6,
+          "won": true,
+          "name": "新潟県央工業高校",
+          "slug": "niigatakenokogyo"
+        },
+        {
+          "display": "長岡商",
+          "score": 1,
+          "won": false,
+          "name": "長岡商業高校",
+          "slug": "nagaokashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "上越",
+          "score": 13,
+          "won": true,
+          "name": "上越",
+          "slug": null
+        },
+        {
+          "display": "糸魚川",
+          "score": 0,
+          "won": false,
+          "name": "糸魚川高校",
+          "slug": "itoigawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "上越総合技術",
+          "score": 2,
+          "won": false,
+          "name": "上越総合技術高校",
+          "slug": "joetsusogogijutsu"
+        },
+        {
+          "display": "高田北城",
+          "score": 7,
+          "won": true,
+          "name": "高田北城高校",
+          "slug": "takadahokujo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "柏崎",
+          "score": 15,
+          "won": true,
+          "name": "柏崎高校",
+          "slug": "kashiwazaki"
+        },
+        {
+          "display": "十日町",
+          "score": 12,
+          "won": false,
+          "name": "十日町高校",
+          "slug": "tokamachi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "関根学園",
+          "score": 9,
+          "won": true,
+          "name": "関根学園",
+          "slug": null
+        },
+        {
+          "display": "新潟産大附",
+          "score": 8,
+          "won": false,
+          "name": "新潟産大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "4回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "加茂暁星",
+          "score": 3,
+          "won": false,
+          "name": "加茂暁星",
+          "slug": null
+        },
+        {
+          "display": "中越",
+          "score": 4,
+          "won": true,
+          "name": "中越",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "4回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "長岡大手",
+          "score": 0,
+          "won": false,
+          "name": "長岡大手高校",
+          "slug": "nagaokaote"
+        },
+        {
+          "display": "新潟県央工",
+          "score": 1,
+          "won": true,
+          "name": "新潟県央工業高校",
+          "slug": "niigatakenokogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "4回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "上越",
+          "score": 5,
+          "won": true,
+          "name": "上越",
+          "slug": null
+        },
+        {
+          "display": "高田北城",
+          "score": 2,
+          "won": false,
+          "name": "高田北城高校",
+          "slug": "takadahokujo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "4回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "柏崎",
+          "score": 5,
+          "won": false,
+          "name": "柏崎高校",
+          "slug": "kashiwazaki"
+        },
+        {
+          "display": "関根学園",
+          "score": 8,
+          "won": true,
+          "name": "関根学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "準々決勝",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "中越",
+          "score": 5,
+          "won": true,
+          "name": "中越",
+          "slug": null
+        },
+        {
+          "display": "新潟県央工",
+          "score": 0,
+          "won": false,
+          "name": "新潟県央工業高校",
+          "slug": "niigatakenokogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "準々決勝",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "上越",
+          "score": 7,
+          "won": true,
+          "name": "上越",
+          "slug": null
+        },
+        {
+          "display": "関根学園",
+          "score": 6,
+          "won": false,
+          "name": "関根学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "準決勝",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "中越",
+          "score": 7,
+          "won": true,
+          "name": "中越",
+          "slug": null
+        },
+        {
+          "display": "上越",
+          "score": 0,
+          "won": false,
+          "name": "上越",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "1回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "新潟南",
+          "score": 6,
+          "won": true,
+          "name": "新潟南高校",
+          "slug": "niigataminami"
+        },
+        {
+          "display": "開志学園",
+          "score": 4,
+          "won": false,
+          "name": "開志学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "1回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "佐渡",
+          "score": 4,
+          "won": true,
+          "name": "佐渡高校",
+          "slug": "sado"
+        },
+        {
+          "display": "佐渡総合",
+          "score": 3,
+          "won": false,
+          "name": "佐渡総合高校",
+          "slug": "sadosogo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "1回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "豊栄",
+          "score": 0,
+          "won": false,
+          "name": "豊栄高校",
+          "slug": "toyosaka"
+        },
+        {
+          "display": "村上桜ヶ丘",
+          "score": 22,
+          "won": true,
+          "name": "村上桜ヶ丘高校",
+          "slug": "murakamisakuragaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "1回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新潟東",
+          "score": 0,
+          "won": false,
+          "name": "新潟東高校",
+          "slug": "niigatahigashi"
+        },
+        {
+          "display": "五泉",
+          "score": 9,
+          "won": true,
+          "name": "五泉高校",
+          "slug": "gosen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "北越",
+          "score": 10,
+          "won": true,
+          "name": "北越",
+          "slug": null
+        },
+        {
+          "display": "新潟南",
+          "score": 0,
+          "won": false,
+          "name": "新潟南高校",
+          "slug": "niigataminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "三条パール金属スタジアム",
+      "teams": [
+        {
+          "display": "新潟明訓",
+          "score": 13,
+          "won": true,
+          "name": "新潟明訓",
+          "slug": null
+        },
+        {
+          "display": "新津南",
+          "score": 0,
+          "won": false,
+          "name": "新津南高校",
+          "slug": "niitsuminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "新潟西",
+          "score": 7,
+          "won": false,
+          "name": "新潟西高校",
+          "slug": "niigatanishi"
+        },
+        {
+          "display": "新潟第一",
+          "score": 8,
+          "won": true,
+          "name": "新潟第一",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "巻総合",
+          "score": 0,
+          "won": false,
+          "name": "巻総合高校",
+          "slug": "makisogo"
+        },
+        {
+          "display": "東京学館新潟",
+          "score": 10,
+          "won": true,
+          "name": "東京学館新潟",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "万代",
+          "score": 0,
+          "won": false,
+          "name": "万代高校",
+          "slug": "bandai"
+        },
+        {
+          "display": "日本文理",
+          "score": 17,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "新潟江南",
+          "score": 10,
+          "won": true,
+          "name": "新潟江南高校",
+          "slug": "niigatakonan"
+        },
+        {
+          "display": "敬和学園",
+          "score": 0,
+          "won": false,
+          "name": "敬和学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "新潟青陵",
+          "score": 5,
+          "won": true,
+          "name": "新潟青陵",
+          "slug": null
+        },
+        {
+          "display": "羽茂",
+          "score": 4,
+          "won": false,
+          "name": "羽茂高校",
+          "slug": "hamochi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "新潟市みどりと森の運動公園野球場",
+      "teams": [
+        {
+          "display": "佐渡",
+          "score": 6,
+          "won": false,
+          "name": "佐渡高校",
+          "slug": "sado"
+        },
+        {
+          "display": "新潟",
+          "score": 11,
+          "won": true,
+          "name": "新潟高校",
+          "slug": "niigata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新潟向陽",
+          "score": 3,
+          "won": false,
+          "name": "新潟向陽高校",
+          "slug": "niigatakoyo"
+        },
+        {
+          "display": "村上桜ヶ丘",
+          "score": 9,
+          "won": true,
+          "name": "村上桜ヶ丘高校",
+          "slug": "murakamisakuragaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新発田商",
+          "score": 2,
+          "won": false,
+          "name": "新発田商業高校",
+          "slug": "shibatashogyo"
+        },
+        {
+          "display": "新発田",
+          "score": 3,
+          "won": true,
+          "name": "新発田高校",
+          "slug": "niigata-shibata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新発田南",
+          "score": 4,
+          "won": false,
+          "name": "新発田南高校",
+          "slug": "shibataminami"
+        },
+        {
+          "display": "新発田中央",
+          "score": 5,
+          "won": true,
+          "name": "新発田中央",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新津工",
+          "score": 2,
+          "won": false,
+          "name": "新津工業高校",
+          "slug": "niitsukogyo"
+        },
+        {
+          "display": "村上",
+          "score": 13,
+          "won": true,
+          "name": "村上高校",
+          "slug": "murakami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "中条",
+          "score": 3,
+          "won": false,
+          "name": "中条高校",
+          "slug": "nakajo"
+        },
+        {
+          "display": "新津",
+          "score": 13,
+          "won": true,
+          "name": "新津高校",
+          "slug": "niitsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新潟北",
+          "score": 1,
+          "won": false,
+          "name": "新潟北高校",
+          "slug": "niigatakita"
+        },
+        {
+          "display": "新発田農",
+          "score": 21,
+          "won": true,
+          "name": "新発田農業高校",
+          "slug": "shibatanogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "新潟市みどりと森の運動公園野球場",
+      "teams": [
+        {
+          "display": "新潟商",
+          "score": 11,
+          "won": true,
+          "name": "新潟商業高校",
+          "slug": "niigatashogyo"
+        },
+        {
+          "display": "新潟工",
+          "score": 4,
+          "won": false,
+          "name": "新潟工業高校",
+          "slug": "niigatakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": "三条パール金属スタジアム",
+      "teams": [
+        {
+          "display": "五泉",
+          "score": 3,
+          "won": true,
+          "name": "五泉高校",
+          "slug": "gosen"
+        },
+        {
+          "display": "巻",
+          "score": 2,
+          "won": false,
+          "name": "巻高校",
+          "slug": "maki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "北越",
+          "score": 4,
+          "won": true,
+          "name": "北越",
+          "slug": null
+        },
+        {
+          "display": "新潟明訓",
+          "score": 3,
+          "won": false,
+          "name": "新潟明訓",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "新潟第一",
+          "score": 0,
+          "won": false,
+          "name": "新潟第一",
+          "slug": null
+        },
+        {
+          "display": "東京学館新潟",
+          "score": 3,
+          "won": true,
+          "name": "東京学館新潟",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "日本文理",
+          "score": 15,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        },
+        {
+          "display": "新潟江南",
+          "score": 0,
+          "won": false,
+          "name": "新潟江南高校",
+          "slug": "niigatakonan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "新潟青陵",
+          "score": 4,
+          "won": false,
+          "name": "新潟青陵",
+          "slug": null
+        },
+        {
+          "display": "新潟",
+          "score": 9,
+          "won": true,
+          "name": "新潟高校",
+          "slug": "niigata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "村上桜ヶ丘",
+          "score": 5,
+          "won": true,
+          "name": "村上桜ヶ丘高校",
+          "slug": "murakamisakuragaoka"
+        },
+        {
+          "display": "新発田",
+          "score": 0,
+          "won": false,
+          "name": "新発田高校",
+          "slug": "niigata-shibata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "新発田中央",
+          "score": 2,
+          "won": false,
+          "name": "新発田中央",
+          "slug": null
+        },
+        {
+          "display": "村上",
+          "score": 9,
+          "won": true,
+          "name": "村上高校",
+          "slug": "murakami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "新津",
+          "score": 9,
+          "won": true,
+          "name": "新津高校",
+          "slug": "niitsu"
+        },
+        {
+          "display": "新発田農",
+          "score": 2,
+          "won": false,
+          "name": "新発田農業高校",
+          "slug": "shibatanogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "新潟商",
+          "score": 0,
+          "won": false,
+          "name": "新潟商業高校",
+          "slug": "niigatashogyo"
+        },
+        {
+          "display": "五泉",
+          "score": 7,
+          "won": true,
+          "name": "五泉高校",
+          "slug": "gosen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "4回戦",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "北越",
+          "score": 1,
+          "won": true,
+          "name": "北越",
+          "slug": null
+        },
+        {
+          "display": "東京学館新潟",
+          "score": 0,
+          "won": false,
+          "name": "東京学館新潟",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "4回戦",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "日本文理",
+          "score": 5,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        },
+        {
+          "display": "新潟",
+          "score": 2,
+          "won": false,
+          "name": "新潟高校",
+          "slug": "niigata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "4回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "村上桜ヶ丘",
+          "score": 10,
+          "won": true,
+          "name": "村上桜ヶ丘高校",
+          "slug": "murakamisakuragaoka"
+        },
+        {
+          "display": "村上",
+          "score": 0,
+          "won": false,
+          "name": "村上高校",
+          "slug": "murakami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "4回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新津",
+          "score": 1,
+          "won": false,
+          "name": "新津高校",
+          "slug": "niitsu"
+        },
+        {
+          "display": "五泉",
+          "score": 9,
+          "won": true,
+          "name": "五泉高校",
+          "slug": "gosen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "準々決勝",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "北越",
+          "score": 0,
+          "won": false,
+          "name": "北越",
+          "slug": null
+        },
+        {
+          "display": "日本文理",
+          "score": 7,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "準々決勝",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "村上桜ヶ丘",
+          "score": 7,
+          "won": true,
+          "name": "村上桜ヶ丘高校",
+          "slug": "murakamisakuragaoka"
+        },
+        {
+          "display": "五泉",
+          "score": 2,
+          "won": false,
+          "name": "五泉高校",
+          "slug": "gosen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "準決勝",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "日本文理",
+          "score": 6,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        },
+        {
+          "display": "村上桜ヶ丘",
+          "score": 2,
+          "won": false,
+          "name": "村上桜ヶ丘高校",
+          "slug": "murakamisakuragaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 令和2年度新潟県高等学校夏季野球大会",
+      "round": "決勝",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "日本文理",
+          "score": 3,
+          "won": false,
+          "name": "日本文理",
+          "slug": null
+        },
+        {
+          "display": "中越",
+          "score": 9,
+          "won": true,
+          "name": "中越",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-08",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "1回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "新潟向陽",
+          "score": 1,
+          "won": false,
+          "name": "新潟向陽高校",
+          "slug": "niigatakoyo"
+        },
+        {
+          "display": "新潟第一",
+          "score": 3,
+          "won": true,
+          "name": "新潟第一",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-09",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "1回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新潟東",
+          "score": 4,
+          "won": false,
+          "name": "新潟東高校",
+          "slug": "niigatahigashi"
+        },
+        {
+          "display": "新潟西",
+          "score": 9,
+          "won": true,
+          "name": "新潟西高校",
+          "slug": "niigatanishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-09",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "1回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "長岡高専",
+          "score": 0,
+          "won": false,
+          "name": "長岡工業高専",
+          "slug": "nagaokakogyo-kosen"
+        },
+        {
+          "display": "柏崎",
+          "score": 8,
+          "won": true,
+          "name": "柏崎高校",
+          "slug": "kashiwazaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-09",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "1回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "分水・村松・阿賀野",
+          "score": 0,
+          "won": false,
+          "name": "分水・村松・阿賀野",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "上越",
+          "score": 19,
+          "won": true,
+          "name": "上越",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-09",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "1回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "佐渡総合",
+          "score": 30,
+          "won": true,
+          "name": "佐渡総合高校",
+          "slug": "sadosogo"
+        },
+        {
+          "display": "新潟北",
+          "score": 1,
+          "won": false,
+          "name": "新潟北高校",
+          "slug": "niigatakita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-08",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "1回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "久比岐・柏崎総合",
+          "score": 2,
+          "won": false,
+          "name": "久比岐・柏崎総合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "高田農・高田商",
+          "score": 9,
+          "won": true,
+          "name": "高田農・高田商",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-11",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "北越",
+          "score": 8,
+          "won": true,
+          "name": "北越",
+          "slug": null
+        },
+        {
+          "display": "新潟第一",
+          "score": 1,
+          "won": false,
+          "name": "新潟第一",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-11",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "見附",
+          "score": 5,
+          "won": true,
+          "name": "見附高校",
+          "slug": "mitsuke"
+        },
+        {
+          "display": "長岡農・正徳館・栃尾",
+          "score": 2,
+          "won": false,
+          "name": "長岡農・正徳館・栃尾",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-11",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "新潟市みどりと森の運動公園野球場",
+      "teams": [
+        {
+          "display": "新潟江南",
+          "score": 2,
+          "won": false,
+          "name": "新潟江南高校",
+          "slug": "niigatakonan"
+        },
+        {
+          "display": "新潟工",
+          "score": 3,
+          "won": true,
+          "name": "新潟工業高校",
+          "slug": "niigatakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-11",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "南魚沼市べーマガスタジアム",
+      "teams": [
+        {
+          "display": "十日町",
+          "score": 6,
+          "won": true,
+          "name": "十日町高校",
+          "slug": "tokamachi"
+        },
+        {
+          "display": "小千谷",
+          "score": 3,
+          "won": false,
+          "name": "小千谷高校",
+          "slug": "ojiya"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新発田",
+          "score": 2,
+          "won": false,
+          "name": "新発田高校",
+          "slug": "niigata-shibata"
+        },
+        {
+          "display": "新潟西",
+          "score": 4,
+          "won": true,
+          "name": "新潟西高校",
+          "slug": "niigatanishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "長岡向陵",
+          "score": 15,
+          "won": true,
+          "name": "長岡向陵高校",
+          "slug": "nagaokakoryo"
+        },
+        {
+          "display": "吉田",
+          "score": 3,
+          "won": false,
+          "name": "吉田高校",
+          "slug": "yoshida"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "新潟市みどりと森の運動公園野球場",
+      "teams": [
+        {
+          "display": "新潟商",
+          "score": 18,
+          "won": true,
+          "name": "新潟商業高校",
+          "slug": "niigatashogyo"
+        },
+        {
+          "display": "羽茂",
+          "score": 0,
+          "won": false,
+          "name": "羽茂高校",
+          "slug": "hamochi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "柏崎",
+          "score": 2,
+          "won": false,
+          "name": "柏崎高校",
+          "slug": "kashiwazaki"
+        },
+        {
+          "display": "糸魚川",
+          "score": 6,
+          "won": true,
+          "name": "糸魚川高校",
+          "slug": "itoigawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "長岡大手",
+          "score": 2,
+          "won": false,
+          "name": "長岡大手高校",
+          "slug": "nagaokaote"
+        },
+        {
+          "display": "上越",
+          "score": 3,
+          "won": true,
+          "name": "上越",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新発田南",
+          "score": 0,
+          "won": false,
+          "name": "新発田南高校",
+          "slug": "shibataminami"
+        },
+        {
+          "display": "新潟南",
+          "score": 4,
+          "won": true,
+          "name": "新潟南高校",
+          "slug": "niigataminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "柏崎常盤",
+          "score": 4,
+          "won": false,
+          "name": "柏崎常盤高校",
+          "slug": "kashiwazakitokiwa"
+        },
+        {
+          "display": "新井",
+          "score": 11,
+          "won": true,
+          "name": "新井高校",
+          "slug": "arai"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "佐渡総合",
+          "score": 3,
+          "won": false,
+          "name": "佐渡総合高校",
+          "slug": "sadosogo"
+        },
+        {
+          "display": "東京学館新潟",
+          "score": 9,
+          "won": true,
+          "name": "東京学館新潟",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-11",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "中越",
+          "score": 4,
+          "won": true,
+          "name": "中越",
+          "slug": null
+        },
+        {
+          "display": "関根学園",
+          "score": 1,
+          "won": false,
+          "name": "関根学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-11",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "村上",
+          "score": 8,
+          "won": false,
+          "name": "村上高校",
+          "slug": "murakami"
+        },
+        {
+          "display": "新発田農",
+          "score": 11,
+          "won": true,
+          "name": "新発田農業高校",
+          "slug": "shibatanogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-11",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "新潟市みどりと森の運動公園野球場",
+      "teams": [
+        {
+          "display": "佐渡",
+          "score": 10,
+          "won": true,
+          "name": "佐渡高校",
+          "slug": "sado"
+        },
+        {
+          "display": "中条",
+          "score": 0,
+          "won": false,
+          "name": "中条高校",
+          "slug": "nakajo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-11",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "高田農・高田商",
+          "score": 2,
+          "won": false,
+          "name": "高田農・高田商",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "三条",
+          "score": 9,
+          "won": true,
+          "name": "三条高校",
+          "slug": "sanjo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "3回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "北越",
+          "score": 7,
+          "won": true,
+          "name": "北越",
+          "slug": null
+        },
+        {
+          "display": "見附",
+          "score": 0,
+          "won": false,
+          "name": "見附高校",
+          "slug": "mitsuke"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "3回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新潟工",
+          "score": 2,
+          "won": false,
+          "name": "新潟工業高校",
+          "slug": "niigatakogyo"
+        },
+        {
+          "display": "十日町",
+          "score": 3,
+          "won": true,
+          "name": "十日町高校",
+          "slug": "tokamachi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "3回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新潟西",
+          "score": 4,
+          "won": true,
+          "name": "新潟西高校",
+          "slug": "niigatanishi"
+        },
+        {
+          "display": "長岡向陵",
+          "score": 2,
+          "won": false,
+          "name": "長岡向陵高校",
+          "slug": "nagaokakoryo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "3回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新潟商",
+          "score": 0,
+          "won": false,
+          "name": "新潟商業高校",
+          "slug": "niigatashogyo"
+        },
+        {
+          "display": "糸魚川",
+          "score": 4,
+          "won": true,
+          "name": "糸魚川高校",
+          "slug": "itoigawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "3回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "上越",
+          "score": 0,
+          "won": false,
+          "name": "上越",
+          "slug": null
+        },
+        {
+          "display": "新潟南",
+          "score": 12,
+          "won": true,
+          "name": "新潟南高校",
+          "slug": "niigataminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "3回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "新井",
+          "score": 0,
+          "won": false,
+          "name": "新井高校",
+          "slug": "arai"
+        },
+        {
+          "display": "東京学館新潟",
+          "score": 4,
+          "won": true,
+          "name": "東京学館新潟",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "3回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "中越",
+          "score": 22,
+          "won": true,
+          "name": "中越",
+          "slug": null
+        },
+        {
+          "display": "新発田農",
+          "score": 2,
+          "won": false,
+          "name": "新発田農業高校",
+          "slug": "shibatanogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "3回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "佐渡",
+          "score": 11,
+          "won": true,
+          "name": "佐渡高校",
+          "slug": "sado"
+        },
+        {
+          "display": "三条",
+          "score": 3,
+          "won": false,
+          "name": "三条高校",
+          "slug": "sanjo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-17",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "4回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "北越",
+          "score": 11,
+          "won": true,
+          "name": "北越",
+          "slug": null
+        },
+        {
+          "display": "十日町",
+          "score": 4,
+          "won": false,
+          "name": "十日町高校",
+          "slug": "tokamachi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-17",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "4回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新潟西",
+          "score": 0,
+          "won": false,
+          "name": "新潟西高校",
+          "slug": "niigatanishi"
+        },
+        {
+          "display": "糸魚川",
+          "score": 9,
+          "won": true,
+          "name": "糸魚川高校",
+          "slug": "itoigawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-17",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "4回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "新潟南",
+          "score": 2,
+          "won": false,
+          "name": "新潟南高校",
+          "slug": "niigataminami"
+        },
+        {
+          "display": "東京学館新潟",
+          "score": 8,
+          "won": true,
+          "name": "東京学館新潟",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-17",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "4回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "中越",
+          "score": 11,
+          "won": true,
+          "name": "中越",
+          "slug": null
+        },
+        {
+          "display": "佐渡",
+          "score": 1,
+          "won": false,
+          "name": "佐渡高校",
+          "slug": "sado"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-21",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "準々決勝",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "北越",
+          "score": 1,
+          "won": false,
+          "name": "北越",
+          "slug": null
+        },
+        {
+          "display": "糸魚川",
+          "score": 2,
+          "won": true,
+          "name": "糸魚川高校",
+          "slug": "itoigawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-21",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "準々決勝",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "東京学館新潟",
+          "score": 5,
+          "won": true,
+          "name": "東京学館新潟",
+          "slug": null
+        },
+        {
+          "display": "中越",
+          "score": 2,
+          "won": false,
+          "name": "中越",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-23",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "準決勝",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "糸魚川",
+          "score": 1,
+          "won": false,
+          "name": "糸魚川高校",
+          "slug": "itoigawa"
+        },
+        {
+          "display": "東京学館新潟",
+          "score": 2,
+          "won": true,
+          "name": "東京学館新潟",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-08",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "1回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新発田中央",
+          "score": 10,
+          "won": true,
+          "name": "新発田中央",
+          "slug": null
+        },
+        {
+          "display": "豊栄",
+          "score": 0,
+          "won": false,
+          "name": "豊栄高校",
+          "slug": "toyosaka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-09",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "1回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新発田商",
+          "score": 5,
+          "won": true,
+          "name": "新発田商業高校",
+          "slug": "shibatashogyo"
+        },
+        {
+          "display": "新津",
+          "score": 2,
+          "won": false,
+          "name": "新津高校",
+          "slug": "niitsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-08",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "1回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "高田北城",
+          "score": 11,
+          "won": true,
+          "name": "高田北城高校",
+          "slug": "takadahokujo"
+        },
+        {
+          "display": "小千谷西",
+          "score": 9,
+          "won": false,
+          "name": "小千谷西高校",
+          "slug": "ojiyanishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-08",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "1回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "糸魚川白嶺",
+          "score": 4,
+          "won": true,
+          "name": "糸魚川白嶺高校",
+          "slug": "itoigawahakurei"
+        },
+        {
+          "display": "帝京長岡",
+          "score": 3,
+          "won": false,
+          "name": "帝京長岡",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-09",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "1回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "新潟青陵",
+          "score": 5,
+          "won": true,
+          "name": "新潟青陵",
+          "slug": null
+        },
+        {
+          "display": "巻総合",
+          "score": 4,
+          "won": false,
+          "name": "巻総合高校",
+          "slug": "makisogo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-08",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "1回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "新津南",
+          "score": 1,
+          "won": false,
+          "name": "新津南高校",
+          "slug": "niitsuminami"
+        },
+        {
+          "display": "新潟",
+          "score": 8,
+          "won": true,
+          "name": "新潟高校",
+          "slug": "niigata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-08",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "1回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "加茂",
+          "score": 0,
+          "won": false,
+          "name": "加茂高校",
+          "slug": "kamo"
+        },
+        {
+          "display": "新津工",
+          "score": 7,
+          "won": true,
+          "name": "新津工業高校",
+          "slug": "niitsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-11",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "日本文理",
+          "score": 6,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        },
+        {
+          "display": "新発田中央",
+          "score": 2,
+          "won": false,
+          "name": "新発田中央",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-11",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "南魚沼市べーマガスタジアム",
+      "teams": [
+        {
+          "display": "塩沢商工・松代・十日町総合",
+          "score": 2,
+          "won": false,
+          "name": "塩沢商工・松代・十日町総合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "新潟県央工",
+          "score": 6,
+          "won": true,
+          "name": "新潟県央工業高校",
+          "slug": "niigatakenokogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-11",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "新潟市みどりと森の運動公園野球場",
+      "teams": [
+        {
+          "display": "巻",
+          "score": 7,
+          "won": true,
+          "name": "巻高校",
+          "slug": "maki"
+        },
+        {
+          "display": "敬和学園",
+          "score": 0,
+          "won": false,
+          "name": "敬和学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-11",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "上越総合技術",
+          "score": 1,
+          "won": false,
+          "name": "上越総合技術高校",
+          "slug": "joetsusogogijutsu"
+        },
+        {
+          "display": "長岡商",
+          "score": 11,
+          "won": true,
+          "name": "長岡商業高校",
+          "slug": "nagaokashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "五泉",
+          "score": 4,
+          "won": true,
+          "name": "五泉高校",
+          "slug": "gosen"
+        },
+        {
+          "display": "新発田商",
+          "score": 0,
+          "won": false,
+          "name": "新発田商業高校",
+          "slug": "shibatashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "南魚沼市べーマガスタジアム",
+      "teams": [
+        {
+          "display": "三条商",
+          "score": 5,
+          "won": true,
+          "name": "三条商業高校",
+          "slug": "sanjoshogyo"
+        },
+        {
+          "display": "長岡",
+          "score": 3,
+          "won": false,
+          "name": "長岡高校",
+          "slug": "nagaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "新潟市みどりと森の運動公園野球場",
+      "teams": [
+        {
+          "display": "白根",
+          "score": 3,
+          "won": false,
+          "name": "白根高校",
+          "slug": "shirone"
+        },
+        {
+          "display": "万代",
+          "score": 5,
+          "won": true,
+          "name": "万代高校",
+          "slug": "bandai"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "高田北城",
+          "score": 3,
+          "won": false,
+          "name": "高田北城高校",
+          "slug": "takadahokujo"
+        },
+        {
+          "display": "高田",
+          "score": 4,
+          "won": true,
+          "name": "高田高校",
+          "slug": "niigata-takata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "新潟産大附",
+          "score": 11,
+          "won": true,
+          "name": "新潟産大附",
+          "slug": null
+        },
+        {
+          "display": "糸魚川白嶺",
+          "score": 1,
+          "won": false,
+          "name": "糸魚川白嶺高校",
+          "slug": "itoigawahakurei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "新潟市みどりと森の運動公園野球場",
+      "teams": [
+        {
+          "display": "加茂農林",
+          "score": 0,
+          "won": false,
+          "name": "加茂農林高校",
+          "slug": "kamonorin"
+        },
+        {
+          "display": "加茂暁星",
+          "score": 31,
+          "won": true,
+          "name": "加茂暁星",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "南魚沼市べーマガスタジアム",
+      "teams": [
+        {
+          "display": "小出",
+          "score": 0,
+          "won": false,
+          "name": "小出高校",
+          "slug": "koide"
+        },
+        {
+          "display": "六日町",
+          "score": 7,
+          "won": true,
+          "name": "六日町高校",
+          "slug": "muikamachi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "新潟青陵",
+          "score": 4,
+          "won": false,
+          "name": "新潟青陵",
+          "slug": null
+        },
+        {
+          "display": "新潟明訓",
+          "score": 14,
+          "won": true,
+          "name": "新潟明訓",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-11",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "開志学園",
+          "score": 6,
+          "won": false,
+          "name": "開志学園",
+          "slug": null
+        },
+        {
+          "display": "新潟",
+          "score": 8,
+          "won": true,
+          "name": "新潟高校",
+          "slug": "niigata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-11",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "柏崎工",
+          "score": 9,
+          "won": true,
+          "name": "柏崎工業高校",
+          "slug": "kashiwazakikogyo"
+        },
+        {
+          "display": "海洋",
+          "score": 3,
+          "won": false,
+          "name": "海洋高校",
+          "slug": "niigata-kaiyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-11",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "長岡工",
+          "score": 2,
+          "won": false,
+          "name": "長岡工業高校",
+          "slug": "nagaokakogyo"
+        },
+        {
+          "display": "三条東",
+          "score": 6,
+          "won": true,
+          "name": "三条東高校",
+          "slug": "sanjohigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-11",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "2回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新津工",
+          "score": 2,
+          "won": true,
+          "name": "新津工業高校",
+          "slug": "niitsukogyo"
+        },
+        {
+          "display": "村上桜ヶ丘",
+          "score": 1,
+          "won": false,
+          "name": "村上桜ヶ丘高校",
+          "slug": "murakamisakuragaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "3回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "日本文理",
+          "score": 5,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        },
+        {
+          "display": "新潟県央工",
+          "score": 0,
+          "won": false,
+          "name": "新潟県央工業高校",
+          "slug": "niigatakenokogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "3回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "巻",
+          "score": 1,
+          "won": false,
+          "name": "巻高校",
+          "slug": "maki"
+        },
+        {
+          "display": "長岡商",
+          "score": 2,
+          "won": true,
+          "name": "長岡商業高校",
+          "slug": "nagaokashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "3回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "五泉",
+          "score": 7,
+          "won": true,
+          "name": "五泉高校",
+          "slug": "gosen"
+        },
+        {
+          "display": "三条商",
+          "score": 0,
+          "won": false,
+          "name": "三条商業高校",
+          "slug": "sanjoshogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "3回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "万代",
+          "score": 5,
+          "won": false,
+          "name": "万代高校",
+          "slug": "bandai"
+        },
+        {
+          "display": "高田",
+          "score": 6,
+          "won": true,
+          "name": "高田高校",
+          "slug": "niigata-takata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "3回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "新潟産大附",
+          "score": 0,
+          "won": false,
+          "name": "新潟産大附",
+          "slug": null
+        },
+        {
+          "display": "加茂暁星",
+          "score": 1,
+          "won": true,
+          "name": "加茂暁星",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "3回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "六日町",
+          "score": 3,
+          "won": false,
+          "name": "六日町高校",
+          "slug": "muikamachi"
+        },
+        {
+          "display": "新潟明訓",
+          "score": 4,
+          "won": true,
+          "name": "新潟明訓",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "3回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "新潟",
+          "score": 8,
+          "won": true,
+          "name": "新潟高校",
+          "slug": "niigata"
+        },
+        {
+          "display": "柏崎工",
+          "score": 0,
+          "won": false,
+          "name": "柏崎工業高校",
+          "slug": "kashiwazakikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "3回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "三条東",
+          "score": 10,
+          "won": true,
+          "name": "三条東高校",
+          "slug": "sanjohigashi"
+        },
+        {
+          "display": "新津工",
+          "score": 1,
+          "won": false,
+          "name": "新津工業高校",
+          "slug": "niitsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-17",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "4回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "日本文理",
+          "score": 9,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        },
+        {
+          "display": "長岡商",
+          "score": 2,
+          "won": false,
+          "name": "長岡商業高校",
+          "slug": "nagaokashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-17",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "4回戦",
+      "venue": "新潟市鳥屋野運動公園野球場",
+      "teams": [
+        {
+          "display": "五泉",
+          "score": 8,
+          "won": true,
+          "name": "五泉高校",
+          "slug": "gosen"
+        },
+        {
+          "display": "高田",
+          "score": 3,
+          "won": false,
+          "name": "高田高校",
+          "slug": "niigata-takata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-17",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "4回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "加茂暁星",
+          "score": 2,
+          "won": false,
+          "name": "加茂暁星",
+          "slug": null
+        },
+        {
+          "display": "新潟明訓",
+          "score": 4,
+          "won": true,
+          "name": "新潟明訓",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-17",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "4回戦",
+      "venue": "柏崎市佐藤池野球場",
+      "teams": [
+        {
+          "display": "新潟",
+          "score": 3,
+          "won": true,
+          "name": "新潟高校",
+          "slug": "niigata"
+        },
+        {
+          "display": "三条東",
+          "score": 1,
+          "won": false,
+          "name": "三条東高校",
+          "slug": "sanjohigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-21",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "準々決勝",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "日本文理",
+          "score": 7,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        },
+        {
+          "display": "五泉",
+          "score": 0,
+          "won": false,
+          "name": "五泉高校",
+          "slug": "gosen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-21",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "準々決勝",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "新潟明訓",
+          "score": 1,
+          "won": false,
+          "name": "新潟明訓",
+          "slug": null
+        },
+        {
+          "display": "新潟",
+          "score": 4,
+          "won": true,
+          "name": "新潟高校",
+          "slug": "niigata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-23",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "準決勝",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "日本文理",
+          "score": 9,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        },
+        {
+          "display": "新潟",
+          "score": 0,
+          "won": false,
+          "name": "新潟高校",
+          "slug": "niigata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-24",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 新潟大会",
+      "round": "決勝",
+      "venue": "ハードオフエコスタジアム新潟",
+      "teams": [
+        {
+          "display": "日本文理",
+          "score": 12,
+          "won": true,
+          "name": "日本文理",
+          "slug": null
+        },
+        {
+          "display": "東京学館新潟",
+          "score": 3,
+          "won": false,
+          "name": "東京学館新潟",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
     },
     {
       "date": "2010-07-10",

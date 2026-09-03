@@ -3413,29 +3413,6 @@
       ]
     },
     {
-      "date": "2022-05-31",
-      "season": "spring",
-      "tournament": "第104回全国高等学校野球選手権佐賀大会",
-      "round": null,
-      "venue": "さがみどりの森球場",
-      "teams": [
-        {
-          "display": "北陵",
-          "score": 11,
-          "won": true,
-          "name": "北陵",
-          "slug": null
-        },
-        {
-          "display": "佐賀商",
-          "score": 9,
-          "won": false,
-          "name": "佐賀商業高校",
-          "slug": "sagashogyo"
-        }
-      ]
-    },
-    {
       "date": "2022-05-30",
       "season": "spring",
       "tournament": "第69回ＮＨＫ杯佐賀県高等学校野球大会",
@@ -6590,6 +6567,1162 @@
       ]
     },
     {
+      "date": "2025-06-04",
+      "season": "spring",
+      "tournament": "第72回ＮＨＫ杯佐賀県高等学校野球大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥栖",
+          "score": 10,
+          "won": true,
+          "name": "鳥栖高校",
+          "slug": "tosu"
+        },
+        {
+          "display": "早稲田佐賀",
+          "score": 3,
+          "won": false,
+          "name": "早稲田佐賀",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-06-03",
+      "season": "spring",
+      "tournament": "第72回ＮＨＫ杯佐賀県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥栖",
+          "score": 5,
+          "won": true,
+          "name": "鳥栖高校",
+          "slug": "tosu"
+        },
+        {
+          "display": "北陵",
+          "score": 2,
+          "won": false,
+          "name": "北陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-06-03",
+      "season": "spring",
+      "tournament": "第72回ＮＨＫ杯佐賀県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐賀北",
+          "score": 2,
+          "won": false,
+          "name": "佐賀北高校",
+          "slug": "sagakita"
+        },
+        {
+          "display": "早稲田佐賀",
+          "score": 4,
+          "won": true,
+          "name": "早稲田佐賀",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-06-01",
+      "season": "spring",
+      "tournament": "第72回ＮＨＫ杯佐賀県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥栖",
+          "score": 6,
+          "won": true,
+          "name": "鳥栖高校",
+          "slug": "tosu"
+        },
+        {
+          "display": "龍谷",
+          "score": 2,
+          "won": false,
+          "name": "龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-06-01",
+      "season": "spring",
+      "tournament": "第72回ＮＨＫ杯佐賀県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐賀北",
+          "score": 5,
+          "won": true,
+          "name": "佐賀北高校",
+          "slug": "sagakita"
+        },
+        {
+          "display": "唐津商",
+          "score": 1,
+          "won": false,
+          "name": "唐津商業高校",
+          "slug": "karatsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-06-01",
+      "season": "spring",
+      "tournament": "第72回ＮＨＫ杯佐賀県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "ブル-スタジアム",
+      "teams": [
+        {
+          "display": "北陵",
+          "score": 9,
+          "won": true,
+          "name": "北陵",
+          "slug": null
+        },
+        {
+          "display": "太良",
+          "score": 5,
+          "won": false,
+          "name": "太良高校",
+          "slug": "tara"
+        }
+      ]
+    },
+    {
+      "date": "2025-06-01",
+      "season": "spring",
+      "tournament": "第72回ＮＨＫ杯佐賀県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "ブルースタジアム",
+      "teams": [
+        {
+          "display": "早稲田佐賀",
+          "score": 4,
+          "won": true,
+          "name": "早稲田佐賀",
+          "slug": null
+        },
+        {
+          "display": "東明館",
+          "score": 1,
+          "won": false,
+          "name": "東明館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-05-31",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権佐賀大会",
+      "round": null,
+      "venue": "さがみどりの森球場",
+      "teams": [
+        {
+          "display": "北陵",
+          "score": 11,
+          "won": true,
+          "name": "北陵",
+          "slug": null
+        },
+        {
+          "display": "佐賀商",
+          "score": 9,
+          "won": false,
+          "name": "佐賀商業高校",
+          "slug": "sagashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-14",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鹿島",
+          "score": 1,
+          "won": false,
+          "name": "鹿島高校",
+          "slug": "saga-kashima"
+        },
+        {
+          "display": "鳥栖工",
+          "score": 3,
+          "won": true,
+          "name": "鳥栖工業高校",
+          "slug": "tosukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-14",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "武雄",
+          "score": 12,
+          "won": true,
+          "name": "武雄高校",
+          "slug": "takeo"
+        },
+        {
+          "display": "神埼",
+          "score": 4,
+          "won": false,
+          "name": "神埼高校",
+          "slug": "saga-kanzaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東明館",
+          "score": 2,
+          "won": false,
+          "name": "東明館",
+          "slug": null
+        },
+        {
+          "display": "鳥栖工",
+          "score": 3,
+          "won": true,
+          "name": "鳥栖工業高校",
+          "slug": "tosukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "唐津西",
+          "score": 5,
+          "won": true,
+          "name": "唐津西高校",
+          "slug": "karatsunishi"
+        },
+        {
+          "display": "三養基",
+          "score": 3,
+          "won": false,
+          "name": "三養基高校",
+          "slug": "miyaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "唐津商",
+          "score": 9,
+          "won": true,
+          "name": "唐津商業高校",
+          "slug": "karatsushogyo"
+        },
+        {
+          "display": "唐津南",
+          "score": 2,
+          "won": false,
+          "name": "唐津南高校",
+          "slug": "karatsuminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "唐津青翔",
+          "score": 0,
+          "won": false,
+          "name": "唐津青翔高校",
+          "slug": "karatsuseisho"
+        },
+        {
+          "display": "鳥栖",
+          "score": 10,
+          "won": true,
+          "name": "鳥栖高校",
+          "slug": "tosu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "致遠館",
+          "score": 2,
+          "won": false,
+          "name": "致遠館高校",
+          "slug": "chienkan"
+        },
+        {
+          "display": "有田工",
+          "score": 3,
+          "won": true,
+          "name": "有田工業高校",
+          "slug": "aritakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐賀工",
+          "score": 3,
+          "won": false,
+          "name": "佐賀工業高校",
+          "slug": "sagakogyo"
+        },
+        {
+          "display": "龍谷",
+          "score": 9,
+          "won": true,
+          "name": "龍谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐賀西",
+          "score": 5,
+          "won": true,
+          "name": "佐賀西高校",
+          "slug": "saganishi"
+        },
+        {
+          "display": "佐賀商",
+          "score": 2,
+          "won": false,
+          "name": "佐賀商業高校",
+          "slug": "sagashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "武雄",
+          "score": 11,
+          "won": true,
+          "name": "武雄高校",
+          "slug": "takeo"
+        },
+        {
+          "display": "厳木",
+          "score": 4,
+          "won": false,
+          "name": "厳木高校",
+          "slug": "kyuragi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥栖工",
+          "score": 1,
+          "won": false,
+          "name": "鳥栖工業高校",
+          "slug": "tosukogyo"
+        },
+        {
+          "display": "唐津西",
+          "score": 3,
+          "won": true,
+          "name": "唐津西高校",
+          "slug": "karatsunishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "唐津商",
+          "score": 8,
+          "won": true,
+          "name": "唐津商業高校",
+          "slug": "karatsushogyo"
+        },
+        {
+          "display": "鳥栖",
+          "score": 4,
+          "won": false,
+          "name": "鳥栖高校",
+          "slug": "tosu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-28",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "有田工",
+          "score": 3,
+          "won": false,
+          "name": "有田工業高校",
+          "slug": "aritakogyo"
+        },
+        {
+          "display": "龍谷",
+          "score": 6,
+          "won": true,
+          "name": "龍谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐賀西",
+          "score": 6,
+          "won": true,
+          "name": "佐賀西高校",
+          "slug": "saganishi"
+        },
+        {
+          "display": "武雄",
+          "score": 1,
+          "won": false,
+          "name": "武雄高校",
+          "slug": "takeo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "唐津西",
+          "score": 1,
+          "won": false,
+          "name": "唐津西高校",
+          "slug": "karatsunishi"
+        },
+        {
+          "display": "唐津商",
+          "score": 9,
+          "won": true,
+          "name": "唐津商業高校",
+          "slug": "karatsushogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "龍谷",
+          "score": 7,
+          "won": true,
+          "name": "龍谷",
+          "slug": null
+        },
+        {
+          "display": "佐賀西",
+          "score": 0,
+          "won": false,
+          "name": "佐賀西高校",
+          "slug": "saganishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "唐津商",
+          "score": 3,
+          "won": false,
+          "name": "唐津商業高校",
+          "slug": "karatsushogyo"
+        },
+        {
+          "display": "龍谷",
+          "score": 9,
+          "won": true,
+          "name": "龍谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-13",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐賀北",
+          "score": 5,
+          "won": true,
+          "name": "佐賀北高校",
+          "slug": "sagakita"
+        },
+        {
+          "display": "鳥栖商",
+          "score": 0,
+          "won": false,
+          "name": "鳥栖商業高校",
+          "slug": "tosushogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-13",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "唐津工",
+          "score": 4,
+          "won": false,
+          "name": "唐津工業高校",
+          "slug": "karatsukogyo"
+        },
+        {
+          "display": "早稲田佐賀",
+          "score": 11,
+          "won": true,
+          "name": "早稲田佐賀",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-13",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐賀農",
+          "score": 3,
+          "won": true,
+          "name": "佐賀農業高校",
+          "slug": "saganogyo"
+        },
+        {
+          "display": "高志館",
+          "score": 1,
+          "won": false,
+          "name": "高志館高校",
+          "slug": "koshikan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "伊商農実",
+          "score": 1,
+          "won": false,
+          "name": "伊商農実",
+          "slug": null
+        },
+        {
+          "display": "佐賀北",
+          "score": 8,
+          "won": true,
+          "name": "佐賀北高校",
+          "slug": "sagakita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-14",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐賀学園",
+          "score": 0,
+          "won": false,
+          "name": "佐賀学園",
+          "slug": null
+        },
+        {
+          "display": "敬徳",
+          "score": 1,
+          "won": true,
+          "name": "敬徳",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-14",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小城",
+          "score": 3,
+          "won": false,
+          "name": "小城高校",
+          "slug": "ogi"
+        },
+        {
+          "display": "太良",
+          "score": 5,
+          "won": true,
+          "name": "太良高校",
+          "slug": "tara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-14",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐賀東",
+          "score": 1,
+          "won": false,
+          "name": "佐賀東高校",
+          "slug": "sagahigashi"
+        },
+        {
+          "display": "伊万里",
+          "score": 2,
+          "won": true,
+          "name": "伊万里高校",
+          "slug": "imari"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "唐津東",
+          "score": 3,
+          "won": false,
+          "name": "唐津東高校",
+          "slug": "karatsuhigashi"
+        },
+        {
+          "display": "早稲田佐賀",
+          "score": 8,
+          "won": true,
+          "name": "早稲田佐賀",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-14",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "白石",
+          "score": 8,
+          "won": false,
+          "name": "白石高校",
+          "slug": "saga-shiroishi"
+        },
+        {
+          "display": "多久",
+          "score": 9,
+          "won": true,
+          "name": "多久高校",
+          "slug": "taku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "嬉野",
+          "score": 0,
+          "won": false,
+          "name": "嬉野高校",
+          "slug": "ureshino"
+        },
+        {
+          "display": "北陵",
+          "score": 6,
+          "won": true,
+          "name": "北陵",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐賀農",
+          "score": 0,
+          "won": false,
+          "name": "佐賀農業高校",
+          "slug": "saganogyo"
+        },
+        {
+          "display": "神埼清明",
+          "score": 8,
+          "won": true,
+          "name": "神埼清明高校",
+          "slug": "kanzakiseimei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐賀北",
+          "score": 3,
+          "won": false,
+          "name": "佐賀北高校",
+          "slug": "sagakita"
+        },
+        {
+          "display": "敬徳",
+          "score": 6,
+          "won": true,
+          "name": "敬徳",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "太良",
+          "score": 2,
+          "won": false,
+          "name": "太良高校",
+          "slug": "tara"
+        },
+        {
+          "display": "伊万里",
+          "score": 7,
+          "won": true,
+          "name": "伊万里高校",
+          "slug": "imari"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "早稲田佐賀",
+          "score": 6,
+          "won": true,
+          "name": "早稲田佐賀",
+          "slug": null
+        },
+        {
+          "display": "多久",
+          "score": 5,
+          "won": false,
+          "name": "多久高校",
+          "slug": "taku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北陵",
+          "score": 2,
+          "won": true,
+          "name": "北陵",
+          "slug": null
+        },
+        {
+          "display": "神埼清明",
+          "score": 0,
+          "won": false,
+          "name": "神埼清明高校",
+          "slug": "kanzakiseimei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "敬徳",
+          "score": 3,
+          "won": true,
+          "name": "敬徳",
+          "slug": null
+        },
+        {
+          "display": "伊万里",
+          "score": 0,
+          "won": false,
+          "name": "伊万里高校",
+          "slug": "imari"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "早稲田佐賀",
+          "score": 11,
+          "won": true,
+          "name": "早稲田佐賀",
+          "slug": null
+        },
+        {
+          "display": "北陵",
+          "score": 4,
+          "won": false,
+          "name": "北陵",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "敬徳",
+          "score": 6,
+          "won": true,
+          "name": "敬徳",
+          "slug": null
+        },
+        {
+          "display": "早稲田佐賀",
+          "score": 5,
+          "won": false,
+          "name": "早稲田佐賀",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 SAGA2020SSP杯佐賀県高校スポーツ大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "敬徳",
+          "score": 7,
+          "won": false,
+          "name": "敬徳",
+          "slug": null
+        },
+        {
+          "display": "龍谷",
+          "score": 8,
+          "won": true,
+          "name": "龍谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://saga.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-06-05",
       "season": "summer",
       "tournament": "第108回全国高等学校野球佐賀大会",
@@ -7414,167 +8547,6 @@
           "won": false,
           "name": "鹿島高校",
           "slug": "saga-kashima"
-        }
-      ]
-    },
-    {
-      "date": "2025-06-04",
-      "season": "summer",
-      "tournament": "第72回ＮＨＫ杯佐賀県高等学校野球大会",
-      "round": "決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "鳥栖",
-          "score": 10,
-          "won": true,
-          "name": "鳥栖高校",
-          "slug": "tosu"
-        },
-        {
-          "display": "早稲田佐賀",
-          "score": 3,
-          "won": false,
-          "name": "早稲田佐賀",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-06-03",
-      "season": "summer",
-      "tournament": "第72回ＮＨＫ杯佐賀県高等学校野球大会",
-      "round": "準決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "鳥栖",
-          "score": 5,
-          "won": true,
-          "name": "鳥栖高校",
-          "slug": "tosu"
-        },
-        {
-          "display": "北陵",
-          "score": 2,
-          "won": false,
-          "name": "北陵",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-06-03",
-      "season": "summer",
-      "tournament": "第72回ＮＨＫ杯佐賀県高等学校野球大会",
-      "round": "準決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "佐賀北",
-          "score": 2,
-          "won": false,
-          "name": "佐賀北高校",
-          "slug": "sagakita"
-        },
-        {
-          "display": "早稲田佐賀",
-          "score": 4,
-          "won": true,
-          "name": "早稲田佐賀",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-06-01",
-      "season": "summer",
-      "tournament": "第72回ＮＨＫ杯佐賀県高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "鳥栖",
-          "score": 6,
-          "won": true,
-          "name": "鳥栖高校",
-          "slug": "tosu"
-        },
-        {
-          "display": "龍谷",
-          "score": 2,
-          "won": false,
-          "name": "龍谷",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-06-01",
-      "season": "summer",
-      "tournament": "第72回ＮＨＫ杯佐賀県高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "佐賀北",
-          "score": 5,
-          "won": true,
-          "name": "佐賀北高校",
-          "slug": "sagakita"
-        },
-        {
-          "display": "唐津商",
-          "score": 1,
-          "won": false,
-          "name": "唐津商業高校",
-          "slug": "karatsushogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-06-01",
-      "season": "summer",
-      "tournament": "第72回ＮＨＫ杯佐賀県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "ブル-スタジアム",
-      "teams": [
-        {
-          "display": "北陵",
-          "score": 9,
-          "won": true,
-          "name": "北陵",
-          "slug": null
-        },
-        {
-          "display": "太良",
-          "score": 5,
-          "won": false,
-          "name": "太良高校",
-          "slug": "tara"
-        }
-      ]
-    },
-    {
-      "date": "2025-06-01",
-      "season": "summer",
-      "tournament": "第72回ＮＨＫ杯佐賀県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "ブルースタジアム",
-      "teams": [
-        {
-          "display": "早稲田佐賀",
-          "score": 4,
-          "won": true,
-          "name": "早稲田佐賀",
-          "slug": null
-        },
-        {
-          "display": "東明館",
-          "score": 1,
-          "won": false,
-          "name": "東明館",
-          "slug": null
         }
       ]
     },

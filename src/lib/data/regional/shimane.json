@@ -5,6 +5,411 @@
   "sourceUrl": "https://kokoyakyu-database.jp/",
   "games": [
     {
+      "date": "2022-04-22",
+      "season": "spring",
+      "tournament": "2022年 春季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江工業",
+          "score": 0,
+          "won": false,
+          "name": "松江工業高校",
+          "slug": "matsuekogyo"
+        },
+        {
+          "display": "益田東",
+          "score": 7,
+          "won": true,
+          "name": "益田東",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-22",
+      "season": "spring",
+      "tournament": "2022年 春季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "矢上",
+          "score": 8,
+          "won": true,
+          "name": "矢上高校",
+          "slug": "yakami"
+        },
+        {
+          "display": "大田",
+          "score": 7,
+          "won": false,
+          "name": "大田高校",
+          "slug": "oda"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-23",
+      "season": "spring",
+      "tournament": "2022年 春季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "島根中央",
+          "score": 2,
+          "won": false,
+          "name": "島根中央高校",
+          "slug": "shimanechuo"
+        },
+        {
+          "display": "安来",
+          "score": 7,
+          "won": true,
+          "name": "安来高校",
+          "slug": "yasugi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-23",
+      "season": "spring",
+      "tournament": "2022年 春季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大社",
+          "score": 3,
+          "won": false,
+          "name": "大社高校",
+          "slug": "taisha"
+        },
+        {
+          "display": "立正大淞南",
+          "score": 4,
+          "won": true,
+          "name": "立正大淞南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-24",
+      "season": "spring",
+      "tournament": "2022年 春季中国地区高校野球 島根県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "益田東",
+          "score": 6,
+          "won": true,
+          "name": "益田東",
+          "slug": null
+        },
+        {
+          "display": "矢上",
+          "score": 4,
+          "won": false,
+          "name": "矢上高校",
+          "slug": "yakami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-24",
+      "season": "spring",
+      "tournament": "2022年 春季中国地区高校野球 島根県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "安来",
+          "score": 3,
+          "won": false,
+          "name": "安来高校",
+          "slug": "yasugi"
+        },
+        {
+          "display": "立正大淞南",
+          "score": 4,
+          "won": true,
+          "name": "立正大淞南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-30",
+      "season": "spring",
+      "tournament": "2022年 春季中国地区高校野球 島根県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "益田東",
+          "score": 2,
+          "won": false,
+          "name": "益田東",
+          "slug": null
+        },
+        {
+          "display": "立正大淞南",
+          "score": 8,
+          "won": true,
+          "name": "立正大淞南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-22",
+      "season": "spring",
+      "tournament": "2022年 春季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江南",
+          "score": 1,
+          "won": false,
+          "name": "松江南高校",
+          "slug": "matsueminami"
+        },
+        {
+          "display": "飯南",
+          "score": 3,
+          "won": true,
+          "name": "飯南高校",
+          "slug": "shimane-iinan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-22",
+      "season": "spring",
+      "tournament": "2022年 春季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石見智翠館",
+          "score": 9,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        },
+        {
+          "display": "松江北",
+          "score": 2,
+          "won": false,
+          "name": "松江北高校",
+          "slug": "matsuekita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-23",
+      "season": "spring",
+      "tournament": "2022年 春季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開星",
+          "score": 11,
+          "won": true,
+          "name": "開星",
+          "slug": null
+        },
+        {
+          "display": "邇摩",
+          "score": 1,
+          "won": false,
+          "name": "邇摩高校",
+          "slug": "nima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-23",
+      "season": "spring",
+      "tournament": "2022年 春季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "益田翔陽",
+          "score": 1,
+          "won": false,
+          "name": "益田翔陽高校",
+          "slug": "masudashoyo"
+        },
+        {
+          "display": "大東",
+          "score": 8,
+          "won": true,
+          "name": "大東高校",
+          "slug": "shimane-daito"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-24",
+      "season": "spring",
+      "tournament": "2022年 春季中国地区高校野球 島根県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "飯南",
+          "score": 1,
+          "won": false,
+          "name": "飯南高校",
+          "slug": "shimane-iinan"
+        },
+        {
+          "display": "石見智翠館",
+          "score": 3,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-24",
+      "season": "spring",
+      "tournament": "2022年 春季中国地区高校野球 島根県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開星",
+          "score": 5,
+          "won": false,
+          "name": "開星",
+          "slug": null
+        },
+        {
+          "display": "大東",
+          "score": 6,
+          "won": true,
+          "name": "大東高校",
+          "slug": "shimane-daito"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-30",
+      "season": "spring",
+      "tournament": "2022年 春季中国地区高校野球 島根県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石見智翠館",
+          "score": 8,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        },
+        {
+          "display": "大東",
+          "score": 0,
+          "won": false,
+          "name": "大東高校",
+          "slug": "shimane-daito"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-01",
+      "season": "spring",
+      "tournament": "2022年 春季中国地区高校野球 島根県大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石見智翠館",
+          "score": 1,
+          "won": false,
+          "name": "石見智翠館",
+          "slug": null
+        },
+        {
+          "display": "立正大淞南",
+          "score": 5,
+          "won": true,
+          "name": "立正大淞南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-04-17",
       "season": "spring",
       "tournament": "2026年代春季島根県大会",
@@ -9621,6 +10026,3031 @@
           "slug": null
         }
       ]
+    },
+    {
+      "date": "2022-07-14",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "出雲",
+          "score": 6,
+          "won": true,
+          "name": "出雲高校",
+          "slug": "izumo"
+        },
+        {
+          "display": "大田",
+          "score": 1,
+          "won": false,
+          "name": "大田高校",
+          "slug": "oda"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-14",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "出雲西",
+          "score": 9,
+          "won": true,
+          "name": "出雲西",
+          "slug": null
+        },
+        {
+          "display": "出雲工業",
+          "score": 2,
+          "won": false,
+          "name": "出雲工業高校",
+          "slug": "izumokogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-14",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "益田翔陽",
+          "score": 4,
+          "won": true,
+          "name": "益田翔陽高校",
+          "slug": "masudashoyo"
+        },
+        {
+          "display": "津和野",
+          "score": 3,
+          "won": false,
+          "name": "津和野高校",
+          "slug": "tsuwano"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-15",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "益田東",
+          "score": 10,
+          "won": true,
+          "name": "益田東",
+          "slug": null
+        },
+        {
+          "display": "浜田商業",
+          "score": 0,
+          "won": false,
+          "name": "浜田商業高校",
+          "slug": "hamadashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-16",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "島根中央",
+          "score": 2,
+          "won": false,
+          "name": "島根中央高校",
+          "slug": "shimanechuo"
+        },
+        {
+          "display": "矢上",
+          "score": 9,
+          "won": true,
+          "name": "矢上高校",
+          "slug": "yakami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-16",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "情報科学",
+          "score": 3,
+          "won": false,
+          "name": "情報科学高校",
+          "slug": "johokagaku"
+        },
+        {
+          "display": "浜田",
+          "score": 6,
+          "won": true,
+          "name": "浜田高校",
+          "slug": "hamada"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大社",
+          "score": 0,
+          "won": false,
+          "name": "大社高校",
+          "slug": "taisha"
+        },
+        {
+          "display": "出雲",
+          "score": 1,
+          "won": true,
+          "name": "出雲高校",
+          "slug": "izumo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "出雲西",
+          "score": 6,
+          "won": false,
+          "name": "出雲西",
+          "slug": null
+        },
+        {
+          "display": "益田翔陽",
+          "score": 7,
+          "won": true,
+          "name": "益田翔陽高校",
+          "slug": "masudashoyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-15",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三刀屋",
+          "score": 10,
+          "won": true,
+          "name": "三刀屋高校",
+          "slug": "mitoya"
+        },
+        {
+          "display": "出雲農林",
+          "score": 3,
+          "won": false,
+          "name": "出雲農林高校",
+          "slug": "izumonorin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-15",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江東",
+          "score": 0,
+          "won": false,
+          "name": "松江東高校",
+          "slug": "matsuehigashi"
+        },
+        {
+          "display": "大東",
+          "score": 11,
+          "won": true,
+          "name": "大東高校",
+          "slug": "shimane-daito"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-18",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "益田東",
+          "score": 7,
+          "won": true,
+          "name": "益田東",
+          "slug": null
+        },
+        {
+          "display": "矢上",
+          "score": 0,
+          "won": false,
+          "name": "矢上高校",
+          "slug": "yakami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-20",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浜田",
+          "score": 4,
+          "won": true,
+          "name": "浜田高校",
+          "slug": "hamada"
+        },
+        {
+          "display": "出雲",
+          "score": 1,
+          "won": false,
+          "name": "出雲高校",
+          "slug": "izumo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-20",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "益田翔陽",
+          "score": 5,
+          "won": true,
+          "name": "益田翔陽高校",
+          "slug": "masudashoyo"
+        },
+        {
+          "display": "邇摩",
+          "score": 4,
+          "won": false,
+          "name": "邇摩高校",
+          "slug": "nima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-18",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三刀屋",
+          "score": 5,
+          "won": true,
+          "name": "三刀屋高校",
+          "slug": "mitoya"
+        },
+        {
+          "display": "大東",
+          "score": 4,
+          "won": false,
+          "name": "大東高校",
+          "slug": "shimane-daito"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-24",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "益田東",
+          "score": 10,
+          "won": false,
+          "name": "益田東",
+          "slug": null
+        },
+        {
+          "display": "浜田",
+          "score": 11,
+          "won": true,
+          "name": "浜田高校",
+          "slug": "hamada"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-24",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "益田翔陽",
+          "score": 4,
+          "won": false,
+          "name": "益田翔陽高校",
+          "slug": "masudashoyo"
+        },
+        {
+          "display": "三刀屋",
+          "score": 7,
+          "won": true,
+          "name": "三刀屋高校",
+          "slug": "mitoya"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-26",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浜田",
+          "score": 5,
+          "won": true,
+          "name": "浜田高校",
+          "slug": "hamada"
+        },
+        {
+          "display": "三刀屋",
+          "score": 2,
+          "won": false,
+          "name": "三刀屋高校",
+          "slug": "mitoya"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-13",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開星",
+          "score": 7,
+          "won": true,
+          "name": "開星",
+          "slug": null
+        },
+        {
+          "display": "江津・浜田水産",
+          "score": 0,
+          "won": false,
+          "name": "江津・浜田水産",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-15",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江北",
+          "score": 5,
+          "won": true,
+          "name": "松江北高校",
+          "slug": "matsuekita"
+        },
+        {
+          "display": "江津工業",
+          "score": 4,
+          "won": false,
+          "name": "江津工業高校",
+          "slug": "gotsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-15",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "飯南",
+          "score": 5,
+          "won": true,
+          "name": "飯南高校",
+          "slug": "shimane-iinan"
+        },
+        {
+          "display": "益田",
+          "score": 3,
+          "won": false,
+          "name": "益田高校",
+          "slug": "shimane-masuda"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-16",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立正大淞南",
+          "score": 9,
+          "won": true,
+          "name": "立正大淞南",
+          "slug": null
+        },
+        {
+          "display": "明誠",
+          "score": 2,
+          "won": false,
+          "name": "明誠",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "平田",
+          "score": 7,
+          "won": true,
+          "name": "平田高校",
+          "slug": "hirata"
+        },
+        {
+          "display": "松江西",
+          "score": 5,
+          "won": false,
+          "name": "松江西",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "安来",
+          "score": 1,
+          "won": true,
+          "name": "安来高校",
+          "slug": "yasugi"
+        },
+        {
+          "display": "隠岐",
+          "score": 0,
+          "won": false,
+          "name": "隠岐高校",
+          "slug": "shimane-oki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-18",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江南",
+          "score": 0,
+          "won": false,
+          "name": "松江南高校",
+          "slug": "matsueminami"
+        },
+        {
+          "display": "開星",
+          "score": 4,
+          "won": true,
+          "name": "開星",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-18",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江北",
+          "score": 3,
+          "won": false,
+          "name": "松江北高校",
+          "slug": "matsuekita"
+        },
+        {
+          "display": "飯南",
+          "score": 7,
+          "won": true,
+          "name": "飯南高校",
+          "slug": "shimane-iinan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江農林",
+          "score": 14,
+          "won": true,
+          "name": "松江農林高校",
+          "slug": "matsuenorin"
+        },
+        {
+          "display": "出雲北陵",
+          "score": 7,
+          "won": false,
+          "name": "出雲北陵",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-16",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江高専",
+          "score": 1,
+          "won": false,
+          "name": "松江工業高専",
+          "slug": "matsuekogyo-kosen"
+        },
+        {
+          "display": "松江工業",
+          "score": 3,
+          "won": true,
+          "name": "松江工業高校",
+          "slug": "matsuekogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-16",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江商業",
+          "score": 7,
+          "won": true,
+          "name": "松江商業高校",
+          "slug": "matsueshogyo"
+        },
+        {
+          "display": "石見智翠館",
+          "score": 1,
+          "won": false,
+          "name": "石見智翠館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-20",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立正大淞南",
+          "score": 11,
+          "won": true,
+          "name": "立正大淞南",
+          "slug": null
+        },
+        {
+          "display": "平田",
+          "score": 1,
+          "won": false,
+          "name": "平田高校",
+          "slug": "hirata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-21",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "安来",
+          "score": 2,
+          "won": false,
+          "name": "安来高校",
+          "slug": "yasugi"
+        },
+        {
+          "display": "開星",
+          "score": 8,
+          "won": true,
+          "name": "開星",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-21",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "飯南",
+          "score": 4,
+          "won": true,
+          "name": "飯南高校",
+          "slug": "shimane-iinan"
+        },
+        {
+          "display": "松江農林",
+          "score": 1,
+          "won": false,
+          "name": "松江農林高校",
+          "slug": "matsuenorin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-20",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江工業",
+          "score": 3,
+          "won": false,
+          "name": "松江工業高校",
+          "slug": "matsuekogyo"
+        },
+        {
+          "display": "松江商業",
+          "score": 11,
+          "won": true,
+          "name": "松江商業高校",
+          "slug": "matsueshogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-23",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立正大淞南",
+          "score": 2,
+          "won": false,
+          "name": "立正大淞南",
+          "slug": null
+        },
+        {
+          "display": "開星",
+          "score": 5,
+          "won": true,
+          "name": "開星",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-23",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "飯南",
+          "score": 3,
+          "won": true,
+          "name": "飯南高校",
+          "slug": "shimane-iinan"
+        },
+        {
+          "display": "松江商業",
+          "score": 2,
+          "won": false,
+          "name": "松江商業高校",
+          "slug": "matsueshogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-26",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開星",
+          "score": 2,
+          "won": false,
+          "name": "開星",
+          "slug": null
+        },
+        {
+          "display": "飯南",
+          "score": 3,
+          "won": true,
+          "name": "飯南高校",
+          "slug": "shimane-iinan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-28",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 島根大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "飯南",
+          "score": 4,
+          "won": false,
+          "name": "飯南高校",
+          "slug": "shimane-iinan"
+        },
+        {
+          "display": "浜田",
+          "score": 9,
+          "won": true,
+          "name": "浜田高校",
+          "slug": "hamada"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-15",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江東",
+          "score": 2,
+          "won": false,
+          "name": "松江東高校",
+          "slug": "matsuehigashi"
+        },
+        {
+          "display": "隠岐",
+          "score": 5,
+          "won": true,
+          "name": "隠岐高校",
+          "slug": "shimane-oki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "出雲西",
+          "score": 11,
+          "won": true,
+          "name": "出雲西",
+          "slug": null
+        },
+        {
+          "display": "松江工業",
+          "score": 3,
+          "won": false,
+          "name": "松江工業高校",
+          "slug": "matsuekogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "情報科学",
+          "score": 9,
+          "won": true,
+          "name": "情報科学高校",
+          "slug": "johokagaku"
+        },
+        {
+          "display": "邇摩",
+          "score": 5,
+          "won": false,
+          "name": "邇摩高校",
+          "slug": "nima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江商業",
+          "score": 1,
+          "won": true,
+          "name": "松江商業高校",
+          "slug": "matsueshogyo"
+        },
+        {
+          "display": "飯南",
+          "score": 0,
+          "won": false,
+          "name": "飯南高校",
+          "slug": "shimane-iinan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浜田",
+          "score": 6,
+          "won": true,
+          "name": "浜田高校",
+          "slug": "hamada"
+        },
+        {
+          "display": "島根中央",
+          "score": 1,
+          "won": false,
+          "name": "島根中央高校",
+          "slug": "shimanechuo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "出雲北陵",
+          "score": 5,
+          "won": true,
+          "name": "出雲北陵",
+          "slug": null
+        },
+        {
+          "display": "浜田商業",
+          "score": 2,
+          "won": false,
+          "name": "浜田商業高校",
+          "slug": "hamadashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江南",
+          "score": 9,
+          "won": true,
+          "name": "松江南高校",
+          "slug": "matsueminami"
+        },
+        {
+          "display": "浜田水産",
+          "score": 0,
+          "won": false,
+          "name": "浜田水産高校",
+          "slug": "hamadasuisan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-19",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "隠岐",
+          "score": 1,
+          "won": false,
+          "name": "隠岐高校",
+          "slug": "shimane-oki"
+        },
+        {
+          "display": "出雲西",
+          "score": 3,
+          "won": true,
+          "name": "出雲西",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-19",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "情報科学",
+          "score": 2,
+          "won": false,
+          "name": "情報科学高校",
+          "slug": "johokagaku"
+        },
+        {
+          "display": "松江商業",
+          "score": 11,
+          "won": true,
+          "name": "松江商業高校",
+          "slug": "matsueshogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "明誠",
+          "score": 1,
+          "won": false,
+          "name": "明誠",
+          "slug": null
+        },
+        {
+          "display": "三刀屋",
+          "score": 2,
+          "won": true,
+          "name": "三刀屋高校",
+          "slug": "mitoya"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開星",
+          "score": 7,
+          "won": true,
+          "name": "開星",
+          "slug": null
+        },
+        {
+          "display": "出雲",
+          "score": 0,
+          "won": false,
+          "name": "出雲高校",
+          "slug": "izumo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江北",
+          "score": 1,
+          "won": false,
+          "name": "松江北高校",
+          "slug": "matsuekita"
+        },
+        {
+          "display": "石見智翠館",
+          "score": 3,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-21",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浜田",
+          "score": 12,
+          "won": true,
+          "name": "浜田高校",
+          "slug": "hamada"
+        },
+        {
+          "display": "出雲北陵",
+          "score": 2,
+          "won": false,
+          "name": "出雲北陵",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-22",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江南",
+          "score": 3,
+          "won": false,
+          "name": "松江南高校",
+          "slug": "matsueminami"
+        },
+        {
+          "display": "出雲西",
+          "score": 4,
+          "won": true,
+          "name": "出雲西",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-22",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江商業",
+          "score": 1,
+          "won": false,
+          "name": "松江商業高校",
+          "slug": "matsueshogyo"
+        },
+        {
+          "display": "三刀屋",
+          "score": 8,
+          "won": true,
+          "name": "三刀屋高校",
+          "slug": "mitoya"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-21",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開星",
+          "score": 0,
+          "won": false,
+          "name": "開星",
+          "slug": null
+        },
+        {
+          "display": "石見智翠館",
+          "score": 1,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-24",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浜田",
+          "score": 4,
+          "won": true,
+          "name": "浜田高校",
+          "slug": "hamada"
+        },
+        {
+          "display": "出雲西",
+          "score": 1,
+          "won": false,
+          "name": "出雲西",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-24",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三刀屋",
+          "score": 1,
+          "won": false,
+          "name": "三刀屋高校",
+          "slug": "mitoya"
+        },
+        {
+          "display": "石見智翠館",
+          "score": 9,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-27",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浜田",
+          "score": 0,
+          "won": false,
+          "name": "浜田高校",
+          "slug": "hamada"
+        },
+        {
+          "display": "石見智翠館",
+          "score": 9,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "益田",
+          "score": 1,
+          "won": false,
+          "name": "益田高校",
+          "slug": "shimane-masuda"
+        },
+        {
+          "display": "益田東",
+          "score": 8,
+          "won": true,
+          "name": "益田東",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "出雲工業",
+          "score": 2,
+          "won": false,
+          "name": "出雲工業高校",
+          "slug": "izumokogyo"
+        },
+        {
+          "display": "津和野",
+          "score": 3,
+          "won": true,
+          "name": "津和野高校",
+          "slug": "tsuwano"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大東",
+          "score": 8,
+          "won": true,
+          "name": "大東高校",
+          "slug": "shimane-daito"
+        },
+        {
+          "display": "江津工業",
+          "score": 0,
+          "won": false,
+          "name": "江津工業高校",
+          "slug": "gotsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立正大淞南",
+          "score": 5,
+          "won": true,
+          "name": "立正大淞南",
+          "slug": null
+        },
+        {
+          "display": "大田",
+          "score": 4,
+          "won": false,
+          "name": "大田高校",
+          "slug": "oda"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江高専",
+          "score": 1,
+          "won": false,
+          "name": "松江工業高専",
+          "slug": "matsuekogyo-kosen"
+        },
+        {
+          "display": "安来",
+          "score": 8,
+          "won": true,
+          "name": "安来高校",
+          "slug": "yasugi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江農林",
+          "score": 12,
+          "won": true,
+          "name": "松江農林高校",
+          "slug": "matsuenorin"
+        },
+        {
+          "display": "江津",
+          "score": 5,
+          "won": false,
+          "name": "江津高校",
+          "slug": "gotsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-19",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江西",
+          "score": 5,
+          "won": false,
+          "name": "松江西",
+          "slug": null
+        },
+        {
+          "display": "益田東",
+          "score": 6,
+          "won": true,
+          "name": "益田東",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-19",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "津和野",
+          "score": 0,
+          "won": false,
+          "name": "津和野高校",
+          "slug": "tsuwano"
+        },
+        {
+          "display": "大東",
+          "score": 4,
+          "won": true,
+          "name": "大東高校",
+          "slug": "shimane-daito"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "出雲農林",
+          "score": 0,
+          "won": false,
+          "name": "出雲農林高校",
+          "slug": "izumonorin"
+        },
+        {
+          "display": "大社",
+          "score": 11,
+          "won": true,
+          "name": "大社高校",
+          "slug": "taisha"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "平田",
+          "score": 3,
+          "won": true,
+          "name": "平田高校",
+          "slug": "hirata"
+        },
+        {
+          "display": "益田翔陽",
+          "score": 2,
+          "won": false,
+          "name": "益田翔陽高校",
+          "slug": "masudashoyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "出雲商業",
+          "score": 2,
+          "won": false,
+          "name": "出雲商業高校",
+          "slug": "izumoshogyo"
+        },
+        {
+          "display": "矢上",
+          "score": 8,
+          "won": true,
+          "name": "矢上高校",
+          "slug": "yakami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-21",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立正大淞南",
+          "score": 7,
+          "won": false,
+          "name": "立正大淞南",
+          "slug": null
+        },
+        {
+          "display": "安来",
+          "score": 9,
+          "won": true,
+          "name": "安来高校",
+          "slug": "yasugi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-22",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江農林",
+          "score": 0,
+          "won": false,
+          "name": "松江農林高校",
+          "slug": "matsuenorin"
+        },
+        {
+          "display": "益田東",
+          "score": 11,
+          "won": true,
+          "name": "益田東",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-22",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大東",
+          "score": 2,
+          "won": false,
+          "name": "大東高校",
+          "slug": "shimane-daito"
+        },
+        {
+          "display": "大社",
+          "score": 8,
+          "won": true,
+          "name": "大社高校",
+          "slug": "taisha"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-21",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "平田",
+          "score": 0,
+          "won": false,
+          "name": "平田高校",
+          "slug": "hirata"
+        },
+        {
+          "display": "矢上",
+          "score": 8,
+          "won": true,
+          "name": "矢上高校",
+          "slug": "yakami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-24",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "安来",
+          "score": 1,
+          "won": false,
+          "name": "安来高校",
+          "slug": "yasugi"
+        },
+        {
+          "display": "益田東",
+          "score": 3,
+          "won": true,
+          "name": "益田東",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-24",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大社",
+          "score": 6,
+          "won": true,
+          "name": "大社高校",
+          "slug": "taisha"
+        },
+        {
+          "display": "矢上",
+          "score": 1,
+          "won": false,
+          "name": "矢上高校",
+          "slug": "yakami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-27",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "益田東",
+          "score": 4,
+          "won": false,
+          "name": "益田東",
+          "slug": null
+        },
+        {
+          "display": "大社",
+          "score": 10,
+          "won": true,
+          "name": "大社高校",
+          "slug": "taisha"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-29",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 島根大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大社",
+          "score": 0,
+          "won": false,
+          "name": "大社高校",
+          "slug": "taisha"
+        },
+        {
+          "display": "石見智翠館",
+          "score": 8,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開星",
+          "score": 4,
+          "won": true,
+          "name": "開星",
+          "slug": null
+        },
+        {
+          "display": "松江西",
+          "score": 3,
+          "won": false,
+          "name": "松江西",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "平田",
+          "score": 15,
+          "won": true,
+          "name": "平田高校",
+          "slug": "hirata"
+        },
+        {
+          "display": "江津工業",
+          "score": 0,
+          "won": false,
+          "name": "江津工業高校",
+          "slug": "gotsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "出雲",
+          "score": 0,
+          "won": false,
+          "name": "出雲高校",
+          "slug": "izumo"
+        },
+        {
+          "display": "立正大淞南",
+          "score": 7,
+          "won": true,
+          "name": "立正大淞南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大東",
+          "score": 1,
+          "won": false,
+          "name": "大東高校",
+          "slug": "shimane-daito"
+        },
+        {
+          "display": "石見智翠館",
+          "score": 11,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "安来",
+          "score": 12,
+          "won": true,
+          "name": "安来高校",
+          "slug": "yasugi"
+        },
+        {
+          "display": "津和野",
+          "score": 5,
+          "won": false,
+          "name": "津和野高校",
+          "slug": "tsuwano"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三刀屋",
+          "score": 6,
+          "won": true,
+          "name": "三刀屋高校",
+          "slug": "mitoya"
+        },
+        {
+          "display": "大社",
+          "score": 5,
+          "won": false,
+          "name": "大社高校",
+          "slug": "taisha"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "島根中央",
+          "score": 2,
+          "won": false,
+          "name": "島根中央高校",
+          "slug": "shimanechuo"
+        },
+        {
+          "display": "矢上",
+          "score": 9,
+          "won": true,
+          "name": "矢上高校",
+          "slug": "yakami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "益田東",
+          "score": 9,
+          "won": true,
+          "name": "益田東",
+          "slug": null
+        },
+        {
+          "display": "松江東",
+          "score": 2,
+          "won": false,
+          "name": "松江東高校",
+          "slug": "matsuehigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-17",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "安来",
+          "score": 11,
+          "won": true,
+          "name": "安来高校",
+          "slug": "yasugi"
+        },
+        {
+          "display": "情報科学",
+          "score": 4,
+          "won": false,
+          "name": "情報科学高校",
+          "slug": "johokagaku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-17",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江東",
+          "score": 2,
+          "won": true,
+          "name": "松江東高校",
+          "slug": "matsuehigashi"
+        },
+        {
+          "display": "松江農林",
+          "score": 1,
+          "won": false,
+          "name": "松江農林高校",
+          "slug": "matsuenorin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-17",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江商業",
+          "score": 0,
+          "won": false,
+          "name": "松江商業高校",
+          "slug": "matsueshogyo"
+        },
+        {
+          "display": "立正大淞南",
+          "score": 3,
+          "won": true,
+          "name": "立正大淞南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-17",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "出雲工業",
+          "score": 2,
+          "won": false,
+          "name": "出雲工業高校",
+          "slug": "izumokogyo"
+        },
+        {
+          "display": "三刀屋",
+          "score": 9,
+          "won": true,
+          "name": "三刀屋高校",
+          "slug": "mitoya"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-17",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "出雲農林",
+          "score": 2,
+          "won": false,
+          "name": "出雲農林高校",
+          "slug": "izumonorin"
+        },
+        {
+          "display": "大東",
+          "score": 3,
+          "won": true,
+          "name": "大東高校",
+          "slug": "shimane-daito"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-17",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "邇摩",
+          "score": 8,
+          "won": true,
+          "name": "邇摩高校",
+          "slug": "nima"
+        },
+        {
+          "display": "出雲北陵",
+          "score": 1,
+          "won": false,
+          "name": "出雲北陵",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-17",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浜田水産",
+          "score": 0,
+          "won": false,
+          "name": "浜田水産高校",
+          "slug": "hamadasuisan"
+        },
+        {
+          "display": "益田",
+          "score": 10,
+          "won": true,
+          "name": "益田高校",
+          "slug": "shimane-masuda"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開星",
+          "score": 4,
+          "won": true,
+          "name": "開星",
+          "slug": null
+        },
+        {
+          "display": "平田",
+          "score": 1,
+          "won": false,
+          "name": "平田高校",
+          "slug": "hirata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立正大淞南",
+          "score": 6,
+          "won": true,
+          "name": "立正大淞南",
+          "slug": null
+        },
+        {
+          "display": "石見智翠館",
+          "score": 1,
+          "won": false,
+          "name": "石見智翠館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "安来",
+          "score": 2,
+          "won": false,
+          "name": "安来高校",
+          "slug": "yasugi"
+        },
+        {
+          "display": "三刀屋",
+          "score": 3,
+          "won": true,
+          "name": "三刀屋高校",
+          "slug": "mitoya"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "矢上",
+          "score": 0,
+          "won": false,
+          "name": "矢上高校",
+          "slug": "yakami"
+        },
+        {
+          "display": "益田東",
+          "score": 1,
+          "won": true,
+          "name": "益田東",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江北",
+          "score": 3,
+          "won": false,
+          "name": "松江北高校",
+          "slug": "matsuekita"
+        },
+        {
+          "display": "安来",
+          "score": 5,
+          "won": true,
+          "name": "安来高校",
+          "slug": "yasugi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "隠岐",
+          "score": 2,
+          "won": false,
+          "name": "隠岐高校",
+          "slug": "shimane-oki"
+        },
+        {
+          "display": "松江東",
+          "score": 3,
+          "won": true,
+          "name": "松江東高校",
+          "slug": "matsuehigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江西",
+          "score": 6,
+          "won": true,
+          "name": "松江西",
+          "slug": null
+        },
+        {
+          "display": "松江高専",
+          "score": 5,
+          "won": false,
+          "name": "松江工業高専",
+          "slug": "matsuekogyo-kosen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江南",
+          "score": 2,
+          "won": false,
+          "name": "松江南高校",
+          "slug": "matsueminami"
+        },
+        {
+          "display": "開星",
+          "score": 13,
+          "won": true,
+          "name": "開星",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立正大淞南",
+          "score": 9,
+          "won": true,
+          "name": "立正大淞南",
+          "slug": null
+        },
+        {
+          "display": "松江工業",
+          "score": 0,
+          "won": false,
+          "name": "松江工業高校",
+          "slug": "matsuekogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "出雲西",
+          "score": 2,
+          "won": false,
+          "name": "出雲西",
+          "slug": null
+        },
+        {
+          "display": "三刀屋",
+          "score": 3,
+          "won": true,
+          "name": "三刀屋高校",
+          "slug": "mitoya"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "飯南",
+          "score": 7,
+          "won": false,
+          "name": "飯南高校",
+          "slug": "shimane-iinan"
+        },
+        {
+          "display": "大東",
+          "score": 8,
+          "won": true,
+          "name": "大東高校",
+          "slug": "shimane-daito"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "出雲商業",
+          "score": 3,
+          "won": false,
+          "name": "出雲商業高校",
+          "slug": "izumoshogyo"
+        },
+        {
+          "display": "出雲",
+          "score": 7,
+          "won": true,
+          "name": "出雲高校",
+          "slug": "izumo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大社",
+          "score": 8,
+          "won": true,
+          "name": "大社高校",
+          "slug": "taisha"
+        },
+        {
+          "display": "大田",
+          "score": 1,
+          "won": false,
+          "name": "大田高校",
+          "slug": "oda"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "邇摩",
+          "score": 4,
+          "won": false,
+          "name": "邇摩高校",
+          "slug": "nima"
+        },
+        {
+          "display": "平田",
+          "score": 11,
+          "won": true,
+          "name": "平田高校",
+          "slug": "hirata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "矢上",
+          "score": 15,
+          "won": true,
+          "name": "矢上高校",
+          "slug": "yakami"
+        },
+        {
+          "display": "益田",
+          "score": 0,
+          "won": false,
+          "name": "益田高校",
+          "slug": "shimane-masuda"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-17",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浜田商業",
+          "score": 0,
+          "won": false,
+          "name": "浜田商業高校",
+          "slug": "hamadashogyo"
+        },
+        {
+          "display": "江津工業",
+          "score": 8,
+          "won": true,
+          "name": "江津工業高校",
+          "slug": "gotsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "益田東",
+          "score": 9,
+          "won": true,
+          "name": "益田東",
+          "slug": null
+        },
+        {
+          "display": "益田翔陽",
+          "score": 3,
+          "won": false,
+          "name": "益田翔陽高校",
+          "slug": "masudashoyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浜田",
+          "score": 8,
+          "won": false,
+          "name": "浜田高校",
+          "slug": "hamada"
+        },
+        {
+          "display": "石見智翠館",
+          "score": 14,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "江津",
+          "score": 2,
+          "won": false,
+          "name": "江津高校",
+          "slug": "gotsu"
+        },
+        {
+          "display": "津和野",
+          "score": 9,
+          "won": true,
+          "name": "津和野高校",
+          "slug": "tsuwano"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "島根中央",
+          "score": 11,
+          "won": true,
+          "name": "島根中央高校",
+          "slug": "shimanechuo"
+        },
+        {
+          "display": "明誠",
+          "score": 2,
+          "won": false,
+          "name": "明誠",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開星",
+          "score": 6,
+          "won": false,
+          "name": "開星",
+          "slug": null
+        },
+        {
+          "display": "立正大淞南",
+          "score": 7,
+          "won": true,
+          "name": "立正大淞南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三刀屋",
+          "score": 1,
+          "won": false,
+          "name": "三刀屋高校",
+          "slug": "mitoya"
+        },
+        {
+          "display": "益田東",
+          "score": 4,
+          "won": true,
+          "name": "益田東",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 令和2年度島根県高等学校夏季野球大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立正大淞南",
+          "score": 5,
+          "won": false,
+          "name": "立正大淞南",
+          "slug": null
+        },
+        {
+          "display": "益田東",
+          "score": 10,
+          "won": true,
+          "name": "益田東",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-11",
@@ -21700,6 +25130,411 @@
           "slug": "oda"
         }
       ]
+    },
+    {
+      "date": "2020-09-19",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "江津",
+          "score": 10,
+          "won": true,
+          "name": "江津高校",
+          "slug": "gotsu"
+        },
+        {
+          "display": "津和野",
+          "score": 6,
+          "won": false,
+          "name": "津和野高校",
+          "slug": "tsuwano"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-09-19",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大東",
+          "score": 1,
+          "won": false,
+          "name": "大東高校",
+          "slug": "shimane-daito"
+        },
+        {
+          "display": "浜田",
+          "score": 4,
+          "won": true,
+          "name": "浜田高校",
+          "slug": "hamada"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-09-20",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "安来",
+          "score": 5,
+          "won": false,
+          "name": "安来高校",
+          "slug": "yasugi"
+        },
+        {
+          "display": "飯南",
+          "score": 6,
+          "won": true,
+          "name": "飯南高校",
+          "slug": "shimane-iinan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-09-20",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "出雲西",
+          "score": 0,
+          "won": false,
+          "name": "出雲西",
+          "slug": null
+        },
+        {
+          "display": "立正大淞南",
+          "score": 8,
+          "won": true,
+          "name": "立正大淞南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-09-21",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 島根県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "江津",
+          "score": 1,
+          "won": false,
+          "name": "江津高校",
+          "slug": "gotsu"
+        },
+        {
+          "display": "浜田",
+          "score": 2,
+          "won": true,
+          "name": "浜田高校",
+          "slug": "hamada"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 島根県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "飯南",
+          "score": 3,
+          "won": false,
+          "name": "飯南高校",
+          "slug": "shimane-iinan"
+        },
+        {
+          "display": "立正大淞南",
+          "score": 7,
+          "won": true,
+          "name": "立正大淞南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-09-26",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 島根県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浜田",
+          "score": 4,
+          "won": true,
+          "name": "浜田高校",
+          "slug": "hamada"
+        },
+        {
+          "display": "立正大淞南",
+          "score": 3,
+          "won": false,
+          "name": "立正大淞南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-09-19",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開星",
+          "score": 2,
+          "won": false,
+          "name": "開星",
+          "slug": null
+        },
+        {
+          "display": "矢上",
+          "score": 3,
+          "won": true,
+          "name": "矢上高校",
+          "slug": "yakami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "平田",
+          "score": 5,
+          "won": false,
+          "name": "平田高校",
+          "slug": "hirata"
+        },
+        {
+          "display": "大社",
+          "score": 6,
+          "won": true,
+          "name": "大社高校",
+          "slug": "taisha"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-09-20",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江北",
+          "score": 9,
+          "won": true,
+          "name": "松江北高校",
+          "slug": "matsuekita"
+        },
+        {
+          "display": "江津工業",
+          "score": 7,
+          "won": false,
+          "name": "江津工業高校",
+          "slug": "gotsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-09-20",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石見智翠館",
+          "score": 4,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        },
+        {
+          "display": "益田東",
+          "score": 3,
+          "won": false,
+          "name": "益田東",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 島根県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "矢上",
+          "score": 5,
+          "won": true,
+          "name": "矢上高校",
+          "slug": "yakami"
+        },
+        {
+          "display": "大社",
+          "score": 4,
+          "won": false,
+          "name": "大社高校",
+          "slug": "taisha"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 島根県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松江北",
+          "score": 0,
+          "won": false,
+          "name": "松江北高校",
+          "slug": "matsuekita"
+        },
+        {
+          "display": "石見智翠館",
+          "score": 9,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-09-26",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 島根県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "矢上",
+          "score": 3,
+          "won": false,
+          "name": "矢上高校",
+          "slug": "yakami"
+        },
+        {
+          "display": "石見智翠館",
+          "score": 10,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-09-27",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 島根県大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石見智翠館",
+          "score": 3,
+          "won": true,
+          "name": "石見智翠館",
+          "slug": null
+        },
+        {
+          "display": "浜田",
+          "score": 0,
+          "won": false,
+          "name": "浜田高校",
+          "slug": "hamada"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://shimane.hsbflash.jp/"
+      }
     },
     {
       "date": "2025-09-12",

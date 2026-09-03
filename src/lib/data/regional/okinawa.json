@@ -5,6 +5,1471 @@
   "sourceUrl": "http://www.kouyaren-okinawa.jp/",
   "games": [
     {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "那覇商業",
+          "score": 2,
+          "won": false,
+          "name": "那覇商業高校",
+          "slug": "nahashogyo"
+        },
+        {
+          "display": "宮古",
+          "score": 3,
+          "won": true,
+          "name": "宮古高校",
+          "slug": "okinawa-miyako"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-23",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "陽明",
+          "score": 2,
+          "won": false,
+          "name": "陽明高校",
+          "slug": "yomei"
+        },
+        {
+          "display": "浦添商業",
+          "score": 9,
+          "won": true,
+          "name": "浦添商業高校",
+          "slug": "urasoeshogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-23",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "ユニオンですからスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "北谷",
+          "score": 0,
+          "won": false,
+          "name": "北谷高校",
+          "slug": "chatan"
+        },
+        {
+          "display": "エナジック",
+          "score": 27,
+          "won": true,
+          "name": "エナジック",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-23",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "那覇",
+          "score": 0,
+          "won": false,
+          "name": "那覇高校",
+          "slug": "naha"
+        },
+        {
+          "display": "西原",
+          "score": 1,
+          "won": true,
+          "name": "西原高校",
+          "slug": "nishihara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-23",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "ユニオンですからスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "中部商業",
+          "score": 7,
+          "won": true,
+          "name": "中部商業高校",
+          "slug": "chubushogyo"
+        },
+        {
+          "display": "中部農林",
+          "score": 0,
+          "won": false,
+          "name": "中部農林高校",
+          "slug": "chubunorin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "那覇国際",
+          "score": 7,
+          "won": true,
+          "name": "那覇国際高校",
+          "slug": "nahakokusai"
+        },
+        {
+          "display": "宮古総合実業・宮古工業",
+          "score": 2,
+          "won": false,
+          "name": "宮古総合実業・宮古工業",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南部商業・豊見城南・那覇西",
+          "score": 5,
+          "won": false,
+          "name": "南部商業・豊見城南・那覇西",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "与勝",
+          "score": 7,
+          "won": true,
+          "name": "与勝高校",
+          "slug": "yokatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-24",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "カトリック",
+          "score": 3,
+          "won": true,
+          "name": "カトリック",
+          "slug": null
+        },
+        {
+          "display": "球陽",
+          "score": 2,
+          "won": false,
+          "name": "球陽高校",
+          "slug": "kyuyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-24",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "糸満市西崎球場",
+      "teams": [
+        {
+          "display": "沖縄水産",
+          "score": 1,
+          "won": true,
+          "name": "沖縄水産高校",
+          "slug": "okinawasuisan"
+        },
+        {
+          "display": "八重山",
+          "score": 0,
+          "won": false,
+          "name": "八重山高校",
+          "slug": "yaeyama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南風原",
+          "score": 1,
+          "won": false,
+          "name": "南風原高校",
+          "slug": "haebaru"
+        },
+        {
+          "display": "北中城",
+          "score": 5,
+          "won": true,
+          "name": "北中城高校",
+          "slug": "kitanakagusuku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-24",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "首里",
+          "score": 2,
+          "won": true,
+          "name": "首里高校",
+          "slug": "shuri"
+        },
+        {
+          "display": "美里",
+          "score": 1,
+          "won": false,
+          "name": "美里高校",
+          "slug": "okinawa-misato"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-24",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "糸満市西崎球場",
+      "teams": [
+        {
+          "display": "八重山商工",
+          "score": 1,
+          "won": false,
+          "name": "八重山商工高校",
+          "slug": "yaeyamashoko"
+        },
+        {
+          "display": "知念",
+          "score": 3,
+          "won": true,
+          "name": "知念高校",
+          "slug": "chinen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-26",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "沖縄尚学",
+          "score": 10,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        },
+        {
+          "display": "沖縄工業",
+          "score": 3,
+          "won": false,
+          "name": "沖縄工業高校",
+          "slug": "okinawakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宮古",
+          "score": 3,
+          "won": true,
+          "name": "宮古高校",
+          "slug": "okinawa-miyako"
+        },
+        {
+          "display": "浦添商業",
+          "score": 2,
+          "won": false,
+          "name": "浦添商業高校",
+          "slug": "urasoeshogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "エナジック",
+          "score": 9,
+          "won": true,
+          "name": "エナジック",
+          "slug": null
+        },
+        {
+          "display": "西原",
+          "score": 0,
+          "won": false,
+          "name": "西原高校",
+          "slug": "nishihara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-26",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "中部商業",
+          "score": 12,
+          "won": true,
+          "name": "中部商業高校",
+          "slug": "chubushogyo"
+        },
+        {
+          "display": "那覇国際",
+          "score": 6,
+          "won": false,
+          "name": "那覇国際高校",
+          "slug": "nahakokusai"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "具志川商業",
+          "score": 0,
+          "won": false,
+          "name": "具志川商業高校",
+          "slug": "gushikawashogyo"
+        },
+        {
+          "display": "ウェルネス",
+          "score": 1,
+          "won": true,
+          "name": "ウェルネス",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "与勝",
+          "score": 12,
+          "won": true,
+          "name": "与勝高校",
+          "slug": "yokatsu"
+        },
+        {
+          "display": "カトリック",
+          "score": 2,
+          "won": false,
+          "name": "カトリック",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "沖縄水産",
+          "score": 6,
+          "won": true,
+          "name": "沖縄水産高校",
+          "slug": "okinawasuisan"
+        },
+        {
+          "display": "北中城",
+          "score": 3,
+          "won": false,
+          "name": "北中城高校",
+          "slug": "kitanakagusuku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-26",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "首里",
+          "score": 4,
+          "won": false,
+          "name": "首里高校",
+          "slug": "shuri"
+        },
+        {
+          "display": "知念",
+          "score": 7,
+          "won": true,
+          "name": "知念高校",
+          "slug": "chinen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "沖縄尚学",
+          "score": 12,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        },
+        {
+          "display": "宮古",
+          "score": 0,
+          "won": false,
+          "name": "宮古高校",
+          "slug": "okinawa-miyako"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-28",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "3回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "エナジック",
+          "score": 7,
+          "won": true,
+          "name": "エナジック",
+          "slug": null
+        },
+        {
+          "display": "中部商業",
+          "score": 6,
+          "won": false,
+          "name": "中部商業高校",
+          "slug": "chubushogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 7,
+          "won": true,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "与勝",
+          "score": 0,
+          "won": false,
+          "name": "与勝高校",
+          "slug": "yokatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "沖縄水産",
+          "score": 5,
+          "won": true,
+          "name": "沖縄水産高校",
+          "slug": "okinawasuisan"
+        },
+        {
+          "display": "知念",
+          "score": 1,
+          "won": false,
+          "name": "知念高校",
+          "slug": "chinen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-30",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "準々決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "沖縄尚学",
+          "score": 2,
+          "won": false,
+          "name": "沖縄尚学",
+          "slug": null
+        },
+        {
+          "display": "エナジック",
+          "score": 3,
+          "won": true,
+          "name": "エナジック",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 2,
+          "won": true,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "沖縄水産",
+          "score": 1,
+          "won": false,
+          "name": "沖縄水産高校",
+          "slug": "okinawasuisan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-04-01",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "準決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "エナジック",
+          "score": 8,
+          "won": true,
+          "name": "エナジック",
+          "slug": null
+        },
+        {
+          "display": "ウェルネス",
+          "score": 0,
+          "won": false,
+          "name": "ウェルネス",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-20",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "ユニオンですからスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "普天間",
+          "score": 0,
+          "won": false,
+          "name": "普天間高校",
+          "slug": "futenma"
+        },
+        {
+          "display": "北山",
+          "score": 10,
+          "won": true,
+          "name": "北山高校",
+          "slug": "hokuzan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浦添工業",
+          "score": 0,
+          "won": false,
+          "name": "浦添工業高校",
+          "slug": "urasoekogyo"
+        },
+        {
+          "display": "糸満",
+          "score": 9,
+          "won": true,
+          "name": "糸満高校",
+          "slug": "itoman"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "向陽・南部工業",
+          "score": 2,
+          "won": false,
+          "name": "向陽・南部工業",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "読谷",
+          "score": 10,
+          "won": true,
+          "name": "読谷高校",
+          "slug": "yomitan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "久米島",
+          "score": 0,
+          "won": false,
+          "name": "久米島高校",
+          "slug": "kumejima"
+        },
+        {
+          "display": "美来工科",
+          "score": 12,
+          "won": true,
+          "name": "美来工科高校",
+          "slug": "miraikoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-20",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "ユニオンですからスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "名護",
+          "score": 2,
+          "won": true,
+          "name": "名護高校",
+          "slug": "nago"
+        },
+        {
+          "display": "浦添",
+          "score": 1,
+          "won": false,
+          "name": "浦添高校",
+          "slug": "urasoe"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "豊見城",
+          "score": 6,
+          "won": true,
+          "name": "豊見城高校",
+          "slug": "tomigusuku"
+        },
+        {
+          "display": "昭和薬大附",
+          "score": 4,
+          "won": false,
+          "name": "昭和薬大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "前原",
+          "score": 14,
+          "won": true,
+          "name": "前原高校",
+          "slug": "maehara"
+        },
+        {
+          "display": "八重山農林",
+          "score": 2,
+          "won": false,
+          "name": "八重山農林高校",
+          "slug": "yaeyamanorin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-21",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "ＫＢＣ未来",
+          "score": 2,
+          "won": true,
+          "name": "ＫＢＣ未来",
+          "slug": null
+        },
+        {
+          "display": "宜野湾",
+          "score": 0,
+          "won": false,
+          "name": "宜野湾高校",
+          "slug": "ginowan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "美里工業",
+          "score": 0,
+          "won": false,
+          "name": "美里工業高校",
+          "slug": "misatokogyo"
+        },
+        {
+          "display": "嘉手納",
+          "score": 5,
+          "won": true,
+          "name": "嘉手納高校",
+          "slug": "kadena"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南部農林・開邦・真和志",
+          "score": 0,
+          "won": false,
+          "name": "南部農林・開邦・真和志",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "コザ",
+          "score": 10,
+          "won": true,
+          "name": "コザ高校",
+          "slug": "koza"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "那覇工業・首里東",
+          "score": 5,
+          "won": true,
+          "name": "那覇工業・首里東",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "名護商工・本部・辺土名・北部農林",
+          "score": 1,
+          "won": false,
+          "name": "名護商工・本部・辺土名・北部農林",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-25",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "興南",
+          "score": 10,
+          "won": true,
+          "name": "興南",
+          "slug": null
+        },
+        {
+          "display": "石川",
+          "score": 2,
+          "won": false,
+          "name": "石川高校",
+          "slug": "okinawa-ishikawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北山",
+          "score": 4,
+          "won": true,
+          "name": "北山高校",
+          "slug": "hokuzan"
+        },
+        {
+          "display": "糸満",
+          "score": 3,
+          "won": false,
+          "name": "糸満高校",
+          "slug": "itoman"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-25",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "糸満市西崎球場",
+      "teams": [
+        {
+          "display": "読谷",
+          "score": 0,
+          "won": false,
+          "name": "読谷高校",
+          "slug": "yomitan"
+        },
+        {
+          "display": "美来工科",
+          "score": 4,
+          "won": true,
+          "name": "美来工科高校",
+          "slug": "miraikoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-25",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "ユニオンですからスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "名護",
+          "score": 5,
+          "won": true,
+          "name": "名護高校",
+          "slug": "nago"
+        },
+        {
+          "display": "具志川",
+          "score": 0,
+          "won": false,
+          "name": "具志川高校",
+          "slug": "gushikawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-25",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "宜野座",
+          "score": 4,
+          "won": true,
+          "name": "宜野座高校",
+          "slug": "ginoza"
+        },
+        {
+          "display": "小禄",
+          "score": 2,
+          "won": false,
+          "name": "小禄高校",
+          "slug": "oroku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "豊見城",
+          "score": 2,
+          "won": true,
+          "name": "豊見城高校",
+          "slug": "tomigusuku"
+        },
+        {
+          "display": "前原",
+          "score": 1,
+          "won": false,
+          "name": "前原高校",
+          "slug": "maehara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "ＫＢＣ未来",
+          "score": 3,
+          "won": false,
+          "name": "ＫＢＣ未来",
+          "slug": null
+        },
+        {
+          "display": "嘉手納",
+          "score": 4,
+          "won": true,
+          "name": "嘉手納高校",
+          "slug": "kadena"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "コザ",
+          "score": 8,
+          "won": true,
+          "name": "コザ高校",
+          "slug": "koza"
+        },
+        {
+          "display": "那覇工業・首里東",
+          "score": 0,
+          "won": false,
+          "name": "那覇工業・首里東",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-28",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "3回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "興南",
+          "score": 10,
+          "won": true,
+          "name": "興南",
+          "slug": null
+        },
+        {
+          "display": "北山",
+          "score": 0,
+          "won": false,
+          "name": "北山高校",
+          "slug": "hokuzan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "美来工科",
+          "score": 1,
+          "won": false,
+          "name": "美来工科高校",
+          "slug": "miraikoka"
+        },
+        {
+          "display": "名護",
+          "score": 2,
+          "won": true,
+          "name": "名護高校",
+          "slug": "nago"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-28",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "3回戦",
+      "venue": "糸満市西崎球場",
+      "teams": [
+        {
+          "display": "宜野座",
+          "score": 5,
+          "won": true,
+          "name": "宜野座高校",
+          "slug": "ginoza"
+        },
+        {
+          "display": "豊見城",
+          "score": 2,
+          "won": false,
+          "name": "豊見城高校",
+          "slug": "tomigusuku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "嘉手納",
+          "score": 7,
+          "won": true,
+          "name": "嘉手納高校",
+          "slug": "kadena"
+        },
+        {
+          "display": "コザ",
+          "score": 2,
+          "won": false,
+          "name": "コザ高校",
+          "slug": "koza"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-30",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "準々決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "興南",
+          "score": 7,
+          "won": true,
+          "name": "興南",
+          "slug": null
+        },
+        {
+          "display": "名護",
+          "score": 3,
+          "won": false,
+          "name": "名護高校",
+          "slug": "nago"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-03-30",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "準々決勝",
+      "venue": "ユニオンですからスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "宜野座",
+          "score": 3,
+          "won": true,
+          "name": "宜野座高校",
+          "slug": "ginoza"
+        },
+        {
+          "display": "嘉手納",
+          "score": 0,
+          "won": false,
+          "name": "嘉手納高校",
+          "slug": "kadena"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-04-01",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "準決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "興南",
+          "score": 2,
+          "won": true,
+          "name": "興南",
+          "slug": null
+        },
+        {
+          "display": "宜野座",
+          "score": 1,
+          "won": false,
+          "name": "宜野座高校",
+          "slug": "ginoza"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-04-10",
+      "season": "spring",
+      "tournament": "2024年 春季九州地区高校野球 沖縄県大会",
+      "round": "決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "興南",
+          "score": 0,
+          "won": false,
+          "name": "興南",
+          "slug": null
+        },
+        {
+          "display": "エナジック",
+          "score": 2,
+          "won": true,
+          "name": "エナジック",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-03-20",
       "season": "spring",
       "tournament": "第73回沖縄県高等学校野球春季大会",
@@ -17119,6 +18584,3174 @@
           "slug": "urasoeshogyo"
         }
       ]
+    },
+    {
+      "date": "2023-06-23",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "中部農林",
+          "score": 1,
+          "won": false,
+          "name": "中部農林高校",
+          "slug": "chubunorin"
+        },
+        {
+          "display": "コザ",
+          "score": 6,
+          "won": true,
+          "name": "コザ高校",
+          "slug": "koza"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-23",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "アトムホ－ムスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "南部工業",
+          "score": 3,
+          "won": true,
+          "name": "南部工業高校",
+          "slug": "nanbukogyo"
+        },
+        {
+          "display": "那覇西",
+          "score": 0,
+          "won": false,
+          "name": "那覇西高校",
+          "slug": "nahanishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-23",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "那覇工業",
+          "score": 0,
+          "won": false,
+          "name": "那覇工業高校",
+          "slug": "nahakogyo"
+        },
+        {
+          "display": "エナジック",
+          "score": 11,
+          "won": true,
+          "name": "エナジック",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-23",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "首里東",
+          "score": 1,
+          "won": false,
+          "name": "首里東高校",
+          "slug": "shurihigashi"
+        },
+        {
+          "display": "那覇商業",
+          "score": 9,
+          "won": true,
+          "name": "那覇商業高校",
+          "slug": "nahashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-24",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "豊見城南",
+          "score": 2,
+          "won": false,
+          "name": "豊見城南高校",
+          "slug": "tomigusukuminami"
+        },
+        {
+          "display": "与勝",
+          "score": 9,
+          "won": true,
+          "name": "与勝高校",
+          "slug": "yokatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-24",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "美来工科",
+          "score": 14,
+          "won": true,
+          "name": "美来工科高校",
+          "slug": "miraikoka"
+        },
+        {
+          "display": "沖高専",
+          "score": 1,
+          "won": false,
+          "name": "沖縄工業高専",
+          "slug": "okinawakogyo-kosen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-24",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "アトムホ－ムスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "ＫＢＣ未来",
+          "score": 8,
+          "won": true,
+          "name": "ＫＢＣ未来",
+          "slug": null
+        },
+        {
+          "display": "浦添",
+          "score": 6,
+          "won": false,
+          "name": "浦添高校",
+          "slug": "urasoe"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-24",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "美里",
+          "score": 1,
+          "won": false,
+          "name": "美里高校",
+          "slug": "okinawa-misato"
+        },
+        {
+          "display": "南風原",
+          "score": 3,
+          "won": true,
+          "name": "南風原高校",
+          "slug": "haebaru"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-24",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "南部農林・南部商・開邦・真和志",
+          "score": 4,
+          "won": true,
+          "name": "南部農林・南部商・開邦・真和志",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "浦添工業",
+          "score": 0,
+          "won": false,
+          "name": "浦添工業高校",
+          "slug": "urasoekogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-24",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "アトムホ－ムスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "昭和薬附",
+          "score": 1,
+          "won": false,
+          "name": "昭和薬附",
+          "slug": null
+        },
+        {
+          "display": "宜野湾",
+          "score": 8,
+          "won": true,
+          "name": "宜野湾高校",
+          "slug": "ginowan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "八重山",
+          "score": 5,
+          "won": true,
+          "name": "八重山高校",
+          "slug": "yaeyama"
+        },
+        {
+          "display": "普天間",
+          "score": 2,
+          "won": false,
+          "name": "普天間高校",
+          "slug": "futenma"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "知念",
+          "score": 4,
+          "won": true,
+          "name": "知念高校",
+          "slug": "chinen"
+        },
+        {
+          "display": "八重山農林",
+          "score": 3,
+          "won": false,
+          "name": "八重山農林高校",
+          "slug": "yaeyamanorin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-24",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "本部・名護商工",
+          "score": 1,
+          "won": false,
+          "name": "本部・名護商工",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "名護",
+          "score": 8,
+          "won": true,
+          "name": "名護高校",
+          "slug": "nago"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "八重商工",
+          "score": 3,
+          "won": true,
+          "name": "八重商工",
+          "slug": null
+        },
+        {
+          "display": "那覇国際",
+          "score": 2,
+          "won": false,
+          "name": "那覇国際高校",
+          "slug": "nahakokusai"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-01",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "2回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "沖縄尚学",
+          "score": 9,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        },
+        {
+          "display": "コザ",
+          "score": 2,
+          "won": false,
+          "name": "コザ高校",
+          "slug": "koza"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-01",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "2回戦",
+      "venue": "タピックスタジアム名護",
+      "teams": [
+        {
+          "display": "南部工業",
+          "score": 1,
+          "won": false,
+          "name": "南部工業高校",
+          "slug": "nanbukogyo"
+        },
+        {
+          "display": "エナジック",
+          "score": 8,
+          "won": true,
+          "name": "エナジック",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-01",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "2回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "那覇商業",
+          "score": 2,
+          "won": true,
+          "name": "那覇商業高校",
+          "slug": "nahashogyo"
+        },
+        {
+          "display": "与勝",
+          "score": 0,
+          "won": false,
+          "name": "与勝高校",
+          "slug": "yokatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-01",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "2回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "美来工科",
+          "score": 1,
+          "won": false,
+          "name": "美来工科高校",
+          "slug": "miraikoka"
+        },
+        {
+          "display": "ＫＢＣ未来",
+          "score": 4,
+          "won": true,
+          "name": "ＫＢＣ未来",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-01",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "2回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "宮古",
+          "score": 8,
+          "won": true,
+          "name": "宮古高校",
+          "slug": "okinawa-miyako"
+        },
+        {
+          "display": "南風原",
+          "score": 0,
+          "won": false,
+          "name": "南風原高校",
+          "slug": "haebaru"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-01",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "2回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "南部農林・南部商・開邦・真和志",
+          "score": 0,
+          "won": false,
+          "name": "南部農林・南部商・開邦・真和志",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "宜野湾",
+          "score": 20,
+          "won": true,
+          "name": "宜野湾高校",
+          "slug": "ginowan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-01",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "2回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "八重山",
+          "score": 1,
+          "won": false,
+          "name": "八重山高校",
+          "slug": "yaeyama"
+        },
+        {
+          "display": "知念",
+          "score": 11,
+          "won": true,
+          "name": "知念高校",
+          "slug": "chinen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-01",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "2回戦",
+      "venue": "タピックスタジアム名護",
+      "teams": [
+        {
+          "display": "名護",
+          "score": 7,
+          "won": true,
+          "name": "名護高校",
+          "slug": "nago"
+        },
+        {
+          "display": "八重商工",
+          "score": 4,
+          "won": false,
+          "name": "八重商工",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-04",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "3回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "沖縄尚学",
+          "score": 3,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        },
+        {
+          "display": "エナジック",
+          "score": 0,
+          "won": false,
+          "name": "エナジック",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-02",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "3回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "那覇商業",
+          "score": 1,
+          "won": false,
+          "name": "那覇商業高校",
+          "slug": "nahashogyo"
+        },
+        {
+          "display": "ＫＢＣ未来",
+          "score": 2,
+          "won": true,
+          "name": "ＫＢＣ未来",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-02",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "3回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "宮古",
+          "score": 5,
+          "won": true,
+          "name": "宮古高校",
+          "slug": "okinawa-miyako"
+        },
+        {
+          "display": "宜野湾",
+          "score": 1,
+          "won": false,
+          "name": "宜野湾高校",
+          "slug": "ginowan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-02",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "3回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "知念",
+          "score": 5,
+          "won": false,
+          "name": "知念高校",
+          "slug": "chinen"
+        },
+        {
+          "display": "名護",
+          "score": 12,
+          "won": true,
+          "name": "名護高校",
+          "slug": "nago"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-09",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "準々決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "沖縄尚学",
+          "score": 9,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        },
+        {
+          "display": "ＫＢＣ未来",
+          "score": 0,
+          "won": false,
+          "name": "ＫＢＣ未来",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-09",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "準々決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "宮古",
+          "score": 2,
+          "won": true,
+          "name": "宮古高校",
+          "slug": "okinawa-miyako"
+        },
+        {
+          "display": "名護",
+          "score": 1,
+          "won": false,
+          "name": "名護高校",
+          "slug": "nago"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-15",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "準決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "沖縄尚学",
+          "score": 5,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        },
+        {
+          "display": "宮古",
+          "score": 2,
+          "won": false,
+          "name": "宮古高校",
+          "slug": "okinawa-miyako"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "宮古総業・宮古工業",
+          "score": 8,
+          "won": true,
+          "name": "宮古総業・宮古工業",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "沖縄工業",
+          "score": 3,
+          "won": false,
+          "name": "沖縄工業高校",
+          "slug": "okinawakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-18",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "アトムホ－ムスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "カトリック",
+          "score": 1,
+          "won": false,
+          "name": "カトリック",
+          "slug": null
+        },
+        {
+          "display": "球陽",
+          "score": 2,
+          "won": true,
+          "name": "球陽高校",
+          "slug": "kyuyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-18",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "アトムホ－ムスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "首里",
+          "score": 12,
+          "won": true,
+          "name": "首里高校",
+          "slug": "shuri"
+        },
+        {
+          "display": "辺土名・北部農林",
+          "score": 0,
+          "won": false,
+          "name": "辺土名・北部農林",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "向陽",
+          "score": 3,
+          "won": false,
+          "name": "向陽高校",
+          "slug": "okinawa-koyo"
+        },
+        {
+          "display": "久米島",
+          "score": 4,
+          "won": true,
+          "name": "久米島高校",
+          "slug": "kumejima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-18",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "石川",
+          "score": 0,
+          "won": false,
+          "name": "石川高校",
+          "slug": "okinawa-ishikawa"
+        },
+        {
+          "display": "北谷",
+          "score": 5,
+          "won": true,
+          "name": "北谷高校",
+          "slug": "chatan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-18",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "宜野座",
+          "score": 5,
+          "won": true,
+          "name": "宜野座高校",
+          "slug": "ginoza"
+        },
+        {
+          "display": "読谷",
+          "score": 1,
+          "won": false,
+          "name": "読谷高校",
+          "slug": "yomitan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-18",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "前原",
+          "score": 0,
+          "won": false,
+          "name": "前原高校",
+          "slug": "maehara"
+        },
+        {
+          "display": "糸満",
+          "score": 5,
+          "won": true,
+          "name": "糸満高校",
+          "slug": "itoman"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-18",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "北中城",
+          "score": 2,
+          "won": false,
+          "name": "北中城高校",
+          "slug": "kitanakagusuku"
+        },
+        {
+          "display": "沖縄水産",
+          "score": 7,
+          "won": true,
+          "name": "沖縄水産高校",
+          "slug": "okinawasuisan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-18",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "アトムホ－ムスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "嘉手納",
+          "score": 0,
+          "won": false,
+          "name": "嘉手納高校",
+          "slug": "kadena"
+        },
+        {
+          "display": "具志川商",
+          "score": 2,
+          "won": true,
+          "name": "具志川商業高校",
+          "slug": "gushikawashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-18",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "豊見城",
+          "score": 3,
+          "won": false,
+          "name": "豊見城高校",
+          "slug": "tomigusuku"
+        },
+        {
+          "display": "小禄",
+          "score": 9,
+          "won": true,
+          "name": "小禄高校",
+          "slug": "oroku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-18",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "浦添商業",
+          "score": 5,
+          "won": false,
+          "name": "浦添商業高校",
+          "slug": "urasoeshogyo"
+        },
+        {
+          "display": "北山",
+          "score": 6,
+          "won": true,
+          "name": "北山高校",
+          "slug": "hokuzan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-23",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "中部商業",
+          "score": 3,
+          "won": false,
+          "name": "中部商業高校",
+          "slug": "chubushogyo"
+        },
+        {
+          "display": "興南",
+          "score": 10,
+          "won": true,
+          "name": "興南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-23",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "具志川",
+          "score": 4,
+          "won": false,
+          "name": "具志川高校",
+          "slug": "gushikawa"
+        },
+        {
+          "display": "美里工業",
+          "score": 6,
+          "won": true,
+          "name": "美里工業高校",
+          "slug": "misatokogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-23",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "1回戦",
+      "venue": "アトムホ－ムスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "陽明",
+          "score": 0,
+          "won": false,
+          "name": "陽明高校",
+          "slug": "yomei"
+        },
+        {
+          "display": "那覇",
+          "score": 7,
+          "won": true,
+          "name": "那覇高校",
+          "slug": "naha"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-25",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "2回戦",
+      "venue": "アトムホ－ムスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 8,
+          "won": true,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "宮古総業・宮古工業",
+          "score": 1,
+          "won": false,
+          "name": "宮古総業・宮古工業",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-25",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "2回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "球陽",
+          "score": 5,
+          "won": true,
+          "name": "球陽高校",
+          "slug": "kyuyo"
+        },
+        {
+          "display": "首里",
+          "score": 2,
+          "won": false,
+          "name": "首里高校",
+          "slug": "shuri"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-25",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "2回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "久米島",
+          "score": 1,
+          "won": false,
+          "name": "久米島高校",
+          "slug": "kumejima"
+        },
+        {
+          "display": "北谷",
+          "score": 7,
+          "won": true,
+          "name": "北谷高校",
+          "slug": "chatan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-25",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "2回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "宜野座",
+          "score": 3,
+          "won": false,
+          "name": "宜野座高校",
+          "slug": "ginoza"
+        },
+        {
+          "display": "糸満",
+          "score": 4,
+          "won": true,
+          "name": "糸満高校",
+          "slug": "itoman"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-25",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "2回戦",
+      "venue": "アトムホ－ムスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "西原",
+          "score": 9,
+          "won": true,
+          "name": "西原高校",
+          "slug": "nishihara"
+        },
+        {
+          "display": "沖縄水産",
+          "score": 4,
+          "won": false,
+          "name": "沖縄水産高校",
+          "slug": "okinawasuisan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-25",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "2回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "具志川商",
+          "score": 2,
+          "won": false,
+          "name": "具志川商業高校",
+          "slug": "gushikawashogyo"
+        },
+        {
+          "display": "小禄",
+          "score": 7,
+          "won": true,
+          "name": "小禄高校",
+          "slug": "oroku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-25",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "2回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "北山",
+          "score": 0,
+          "won": false,
+          "name": "北山高校",
+          "slug": "hokuzan"
+        },
+        {
+          "display": "興南",
+          "score": 3,
+          "won": true,
+          "name": "興南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-06-25",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "2回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "美里工業",
+          "score": 0,
+          "won": false,
+          "name": "美里工業高校",
+          "slug": "misatokogyo"
+        },
+        {
+          "display": "那覇",
+          "score": 3,
+          "won": true,
+          "name": "那覇高校",
+          "slug": "naha"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-02",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "3回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 9,
+          "won": true,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "球陽",
+          "score": 0,
+          "won": false,
+          "name": "球陽高校",
+          "slug": "kyuyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-02",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "3回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "北谷",
+          "score": 3,
+          "won": false,
+          "name": "北谷高校",
+          "slug": "chatan"
+        },
+        {
+          "display": "糸満",
+          "score": 6,
+          "won": true,
+          "name": "糸満高校",
+          "slug": "itoman"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-02",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "3回戦",
+      "venue": "タピックスタジアム名護",
+      "teams": [
+        {
+          "display": "西原",
+          "score": 1,
+          "won": false,
+          "name": "西原高校",
+          "slug": "nishihara"
+        },
+        {
+          "display": "小禄",
+          "score": 3,
+          "won": true,
+          "name": "小禄高校",
+          "slug": "oroku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-02",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "3回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "興南",
+          "score": 6,
+          "won": true,
+          "name": "興南",
+          "slug": null
+        },
+        {
+          "display": "那覇",
+          "score": 1,
+          "won": false,
+          "name": "那覇高校",
+          "slug": "naha"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-08",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "準々決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 4,
+          "won": true,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "糸満",
+          "score": 0,
+          "won": false,
+          "name": "糸満高校",
+          "slug": "itoman"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-08",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "準々決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "小禄",
+          "score": 2,
+          "won": false,
+          "name": "小禄高校",
+          "slug": "oroku"
+        },
+        {
+          "display": "興南",
+          "score": 10,
+          "won": true,
+          "name": "興南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-15",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "準決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 1,
+          "won": true,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "興南",
+          "score": 0,
+          "won": false,
+          "name": "興南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-07-16",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 沖縄大会",
+      "round": "決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 0,
+          "won": false,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "沖縄尚学",
+          "score": 3,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-04",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "宮古工業・宮古総合実業",
+          "score": 1,
+          "won": false,
+          "name": "宮古工業・宮古総合実業",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "中部農林",
+          "score": 7,
+          "won": true,
+          "name": "中部農林高校",
+          "slug": "chubunorin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-05",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "ＫＢＣ未来",
+          "score": 9,
+          "won": true,
+          "name": "ＫＢＣ未来",
+          "slug": null
+        },
+        {
+          "display": "浦添",
+          "score": 6,
+          "won": false,
+          "name": "浦添高校",
+          "slug": "urasoe"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-05",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "タピックスタジアム名護",
+      "teams": [
+        {
+          "display": "那覇国際",
+          "score": 3,
+          "won": false,
+          "name": "那覇国際高校",
+          "slug": "nahakokusai"
+        },
+        {
+          "display": "名護商工",
+          "score": 4,
+          "won": true,
+          "name": "名護商工高校",
+          "slug": "nagoshoko"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "石川",
+          "score": 0,
+          "won": false,
+          "name": "石川高校",
+          "slug": "okinawa-ishikawa"
+        },
+        {
+          "display": "普天間",
+          "score": 8,
+          "won": true,
+          "name": "普天間高校",
+          "slug": "futenma"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "南風原",
+          "score": 3,
+          "won": false,
+          "name": "南風原高校",
+          "slug": "haebaru"
+        },
+        {
+          "display": "豊見城",
+          "score": 7,
+          "won": true,
+          "name": "豊見城高校",
+          "slug": "tomigusuku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "具志川商",
+          "score": 6,
+          "won": true,
+          "name": "具志川商業高校",
+          "slug": "gushikawashogyo"
+        },
+        {
+          "display": "北谷",
+          "score": 3,
+          "won": false,
+          "name": "北谷高校",
+          "slug": "chatan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "北部農林",
+          "score": 0,
+          "won": false,
+          "name": "北部農林高校",
+          "slug": "hokubunorin"
+        },
+        {
+          "display": "浦添工業",
+          "score": 18,
+          "won": true,
+          "name": "浦添工業高校",
+          "slug": "urasoekogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "豊見城南",
+          "score": 1,
+          "won": false,
+          "name": "豊見城南高校",
+          "slug": "tomigusukuminami"
+        },
+        {
+          "display": "前原",
+          "score": 7,
+          "won": true,
+          "name": "前原高校",
+          "slug": "maehara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "本部",
+          "score": 2,
+          "won": false,
+          "name": "本部高校",
+          "slug": "motobu"
+        },
+        {
+          "display": "美里工業",
+          "score": 6,
+          "won": true,
+          "name": "美里工業高校",
+          "slug": "misatokogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "那覇工業",
+          "score": 3,
+          "won": false,
+          "name": "那覇工業高校",
+          "slug": "nahakogyo"
+        },
+        {
+          "display": "北中城",
+          "score": 4,
+          "won": true,
+          "name": "北中城高校",
+          "slug": "kitanakagusuku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "西原",
+          "score": 1,
+          "won": false,
+          "name": "西原高校",
+          "slug": "nishihara"
+        },
+        {
+          "display": "沖縄水産",
+          "score": 4,
+          "won": true,
+          "name": "沖縄水産高校",
+          "slug": "okinawasuisan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-12",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "嘉手納",
+          "score": 5,
+          "won": true,
+          "name": "嘉手納高校",
+          "slug": "kadena"
+        },
+        {
+          "display": "宜野湾",
+          "score": 1,
+          "won": false,
+          "name": "宜野湾高校",
+          "slug": "ginowan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-12",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "宜野座",
+          "score": 5,
+          "won": true,
+          "name": "宜野座高校",
+          "slug": "ginoza"
+        },
+        {
+          "display": "コザ",
+          "score": 1,
+          "won": false,
+          "name": "コザ高校",
+          "slug": "koza"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-12",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "沖縄尚学",
+          "score": 14,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        },
+        {
+          "display": "沖縄カトリック",
+          "score": 0,
+          "won": false,
+          "name": "沖縄カトリック",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宮古",
+          "score": 14,
+          "won": true,
+          "name": "宮古高校",
+          "slug": "okinawa-miyako"
+        },
+        {
+          "display": "中部農林",
+          "score": 1,
+          "won": false,
+          "name": "中部農林高校",
+          "slug": "chubunorin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "ＫＢＣ未来",
+          "score": 7,
+          "won": true,
+          "name": "ＫＢＣ未来",
+          "slug": null
+        },
+        {
+          "display": "名護商工",
+          "score": 0,
+          "won": false,
+          "name": "名護商工高校",
+          "slug": "nagoshoko"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "普天間",
+          "score": 4,
+          "won": true,
+          "name": "普天間高校",
+          "slug": "futenma"
+        },
+        {
+          "display": "豊見城",
+          "score": 3,
+          "won": false,
+          "name": "豊見城高校",
+          "slug": "tomigusuku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "具志川商",
+          "score": 6,
+          "won": true,
+          "name": "具志川商業高校",
+          "slug": "gushikawashogyo"
+        },
+        {
+          "display": "浦添工業",
+          "score": 1,
+          "won": false,
+          "name": "浦添工業高校",
+          "slug": "urasoekogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "中部商業",
+          "score": 5,
+          "won": true,
+          "name": "中部商業高校",
+          "slug": "chubushogyo"
+        },
+        {
+          "display": "前原",
+          "score": 2,
+          "won": false,
+          "name": "前原高校",
+          "slug": "maehara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "美里工業",
+          "score": 6,
+          "won": true,
+          "name": "美里工業高校",
+          "slug": "misatokogyo"
+        },
+        {
+          "display": "北中城",
+          "score": 0,
+          "won": false,
+          "name": "北中城高校",
+          "slug": "kitanakagusuku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "沖縄水産",
+          "score": 2,
+          "won": true,
+          "name": "沖縄水産高校",
+          "slug": "okinawasuisan"
+        },
+        {
+          "display": "嘉手納",
+          "score": 1,
+          "won": false,
+          "name": "嘉手納高校",
+          "slug": "kadena"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宜野座",
+          "score": 0,
+          "won": false,
+          "name": "宜野座高校",
+          "slug": "ginoza"
+        },
+        {
+          "display": "沖縄尚学",
+          "score": 1,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宮古",
+          "score": 1,
+          "won": false,
+          "name": "宮古高校",
+          "slug": "okinawa-miyako"
+        },
+        {
+          "display": "ＫＢＣ未来",
+          "score": 2,
+          "won": true,
+          "name": "ＫＢＣ未来",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "普天間",
+          "score": 4,
+          "won": true,
+          "name": "普天間高校",
+          "slug": "futenma"
+        },
+        {
+          "display": "具志川商",
+          "score": 2,
+          "won": false,
+          "name": "具志川商業高校",
+          "slug": "gushikawashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "中部商業",
+          "score": 3,
+          "won": false,
+          "name": "中部商業高校",
+          "slug": "chubushogyo"
+        },
+        {
+          "display": "美里工業",
+          "score": 8,
+          "won": true,
+          "name": "美里工業高校",
+          "slug": "misatokogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "沖縄水産",
+          "score": 3,
+          "won": true,
+          "name": "沖縄水産高校",
+          "slug": "okinawasuisan"
+        },
+        {
+          "display": "沖縄尚学",
+          "score": 2,
+          "won": false,
+          "name": "沖縄尚学",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "準々決勝",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "ＫＢＣ未来",
+          "score": 3,
+          "won": true,
+          "name": "ＫＢＣ未来",
+          "slug": null
+        },
+        {
+          "display": "普天間",
+          "score": 2,
+          "won": false,
+          "name": "普天間高校",
+          "slug": "futenma"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "準々決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "美里工業",
+          "score": 2,
+          "won": true,
+          "name": "美里工業高校",
+          "slug": "misatokogyo"
+        },
+        {
+          "display": "沖縄水産",
+          "score": 1,
+          "won": false,
+          "name": "沖縄水産高校",
+          "slug": "okinawasuisan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "準決勝",
+      "venue": "タピックスタジアム名護",
+      "teams": [
+        {
+          "display": "ＫＢＣ未来",
+          "score": 10,
+          "won": true,
+          "name": "ＫＢＣ未来",
+          "slug": null
+        },
+        {
+          "display": "美里工業",
+          "score": 5,
+          "won": false,
+          "name": "美里工業高校",
+          "slug": "misatokogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-04",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "与勝",
+          "score": 7,
+          "won": true,
+          "name": "与勝高校",
+          "slug": "yokatsu"
+        },
+        {
+          "display": "南部商業",
+          "score": 0,
+          "won": false,
+          "name": "南部商業高校",
+          "slug": "nanbushogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-04",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "具志川",
+          "score": 0,
+          "won": false,
+          "name": "具志川高校",
+          "slug": "gushikawa"
+        },
+        {
+          "display": "八重山農",
+          "score": 4,
+          "won": true,
+          "name": "八重山農",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-04",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "興南",
+          "score": 13,
+          "won": true,
+          "name": "興南",
+          "slug": null
+        },
+        {
+          "display": "那覇商業",
+          "score": 2,
+          "won": false,
+          "name": "那覇商業高校",
+          "slug": "nahashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-04",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "タピックスタジアム名護",
+      "teams": [
+        {
+          "display": "読谷",
+          "score": 4,
+          "won": true,
+          "name": "読谷高校",
+          "slug": "yomitan"
+        },
+        {
+          "display": "那覇",
+          "score": 2,
+          "won": false,
+          "name": "那覇高校",
+          "slug": "naha"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-04",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "浦添商業",
+          "score": 10,
+          "won": true,
+          "name": "浦添商業高校",
+          "slug": "urasoeshogyo"
+        },
+        {
+          "display": "美里",
+          "score": 0,
+          "won": false,
+          "name": "美里高校",
+          "slug": "okinawa-misato"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-04",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "タピックスタジアム名護",
+      "teams": [
+        {
+          "display": "球陽",
+          "score": 2,
+          "won": true,
+          "name": "球陽高校",
+          "slug": "kyuyo"
+        },
+        {
+          "display": "名護",
+          "score": 0,
+          "won": false,
+          "name": "名護高校",
+          "slug": "nago"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-04",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "八重商工",
+          "score": 0,
+          "won": false,
+          "name": "八重商工",
+          "slug": null
+        },
+        {
+          "display": "八重山",
+          "score": 8,
+          "won": true,
+          "name": "八重山高校",
+          "slug": "yaeyama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-05",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "陽明",
+          "score": 4,
+          "won": false,
+          "name": "陽明高校",
+          "slug": "yomei"
+        },
+        {
+          "display": "那覇西",
+          "score": 16,
+          "won": true,
+          "name": "那覇西高校",
+          "slug": "nahanishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-05",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "昭和薬附",
+          "score": 0,
+          "won": false,
+          "name": "昭和薬附",
+          "slug": null
+        },
+        {
+          "display": "知念",
+          "score": 10,
+          "won": true,
+          "name": "知念高校",
+          "slug": "chinen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-05",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "開邦・南部農林・辺土名・真和志",
+          "score": 7,
+          "won": true,
+          "name": "開邦・南部農林・辺土名・真和志",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "首里東",
+          "score": 0,
+          "won": false,
+          "name": "首里東高校",
+          "slug": "shurihigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-05",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "小禄",
+          "score": 8,
+          "won": true,
+          "name": "小禄高校",
+          "slug": "oroku"
+        },
+        {
+          "display": "糸満",
+          "score": 2,
+          "won": false,
+          "name": "糸満高校",
+          "slug": "itoman"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-05",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "南部工業",
+          "score": 4,
+          "won": true,
+          "name": "南部工業高校",
+          "slug": "nanbukogyo"
+        },
+        {
+          "display": "向陽",
+          "score": 2,
+          "won": false,
+          "name": "向陽高校",
+          "slug": "okinawa-koyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "首里",
+          "score": 2,
+          "won": false,
+          "name": "首里高校",
+          "slug": "shuri"
+        },
+        {
+          "display": "美来工科",
+          "score": 7,
+          "won": true,
+          "name": "美来工科高校",
+          "slug": "miraikoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 1,
+          "won": true,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "与勝",
+          "score": 0,
+          "won": false,
+          "name": "与勝高校",
+          "slug": "yokatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "八重山農",
+          "score": 0,
+          "won": false,
+          "name": "八重山農",
+          "slug": null
+        },
+        {
+          "display": "興南",
+          "score": 9,
+          "won": true,
+          "name": "興南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "読谷",
+          "score": 1,
+          "won": false,
+          "name": "読谷高校",
+          "slug": "yomitan"
+        },
+        {
+          "display": "浦添商業",
+          "score": 8,
+          "won": true,
+          "name": "浦添商業高校",
+          "slug": "urasoeshogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "球陽",
+          "score": 2,
+          "won": false,
+          "name": "球陽高校",
+          "slug": "kyuyo"
+        },
+        {
+          "display": "北山",
+          "score": 5,
+          "won": true,
+          "name": "北山高校",
+          "slug": "hokuzan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "沖縄工業",
+          "score": 2,
+          "won": false,
+          "name": "沖縄工業高校",
+          "slug": "okinawakogyo"
+        },
+        {
+          "display": "八重山",
+          "score": 10,
+          "won": true,
+          "name": "八重山高校",
+          "slug": "yaeyama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "那覇西",
+          "score": 1,
+          "won": false,
+          "name": "那覇西高校",
+          "slug": "nahanishi"
+        },
+        {
+          "display": "知念",
+          "score": 2,
+          "won": true,
+          "name": "知念高校",
+          "slug": "chinen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開邦・南部農林・辺土名・真和志",
+          "score": 0,
+          "won": false,
+          "name": "開邦・南部農林・辺土名・真和志",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "小禄",
+          "score": 1,
+          "won": true,
+          "name": "小禄高校",
+          "slug": "oroku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南部工業",
+          "score": 1,
+          "won": false,
+          "name": "南部工業高校",
+          "slug": "nanbukogyo"
+        },
+        {
+          "display": "美来工科",
+          "score": 9,
+          "won": true,
+          "name": "美来工科高校",
+          "slug": "miraikoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 8,
+          "won": true,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "興南",
+          "score": 2,
+          "won": false,
+          "name": "興南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浦添商業",
+          "score": 6,
+          "won": true,
+          "name": "浦添商業高校",
+          "slug": "urasoeshogyo"
+        },
+        {
+          "display": "北山",
+          "score": 1,
+          "won": false,
+          "name": "北山高校",
+          "slug": "hokuzan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "八重山",
+          "score": 5,
+          "won": true,
+          "name": "八重山高校",
+          "slug": "yaeyama"
+        },
+        {
+          "display": "知念",
+          "score": 2,
+          "won": false,
+          "name": "知念高校",
+          "slug": "chinen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小禄",
+          "score": 5,
+          "won": true,
+          "name": "小禄高校",
+          "slug": "oroku"
+        },
+        {
+          "display": "美来工科",
+          "score": 4,
+          "won": false,
+          "name": "美来工科高校",
+          "slug": "miraikoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "準々決勝",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 10,
+          "won": true,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "浦添商業",
+          "score": 0,
+          "won": false,
+          "name": "浦添商業高校",
+          "slug": "urasoeshogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "準々決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "八重山",
+          "score": 4,
+          "won": true,
+          "name": "八重山高校",
+          "slug": "yaeyama"
+        },
+        {
+          "display": "小禄",
+          "score": 2,
+          "won": false,
+          "name": "小禄高校",
+          "slug": "oroku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "準決勝",
+      "venue": "タピックスタジアム名護",
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 7,
+          "won": false,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "八重山",
+          "score": 8,
+          "won": true,
+          "name": "八重山高校",
+          "slug": "yaeyama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 2020沖縄県高等学校野球夏季大会",
+      "round": "決勝",
+      "venue": "タピックスタジアム名護",
+      "teams": [
+        {
+          "display": "八重山",
+          "score": 4,
+          "won": true,
+          "name": "八重山高校",
+          "slug": "yaeyama"
+        },
+        {
+          "display": "ＫＢＣ未来",
+          "score": 2,
+          "won": false,
+          "name": "ＫＢＣ未来",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
     },
     {
       "date": "2026-06-14",
@@ -35198,6 +39831,1548 @@
           "slug": "chubushogyo"
         }
       ]
+    },
+    {
+      "date": "2019-09-14",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "昭和薬附",
+          "score": 3,
+          "won": false,
+          "name": "昭和薬附",
+          "slug": null
+        },
+        {
+          "display": "那覇工業",
+          "score": 4,
+          "won": true,
+          "name": "那覇工業高校",
+          "slug": "nahakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-14",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "北谷公園野球場",
+      "teams": [
+        {
+          "display": "中部農林",
+          "score": 8,
+          "won": true,
+          "name": "中部農林高校",
+          "slug": "chubunorin"
+        },
+        {
+          "display": "那覇",
+          "score": 7,
+          "won": false,
+          "name": "那覇高校",
+          "slug": "naha"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-14",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "北谷公園野球場",
+      "teams": [
+        {
+          "display": "宜野湾",
+          "score": 6,
+          "won": true,
+          "name": "宜野湾高校",
+          "slug": "ginowan"
+        },
+        {
+          "display": "北谷",
+          "score": 1,
+          "won": false,
+          "name": "北谷高校",
+          "slug": "chatan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "球陽",
+          "score": 0,
+          "won": false,
+          "name": "球陽高校",
+          "slug": "kyuyo"
+        },
+        {
+          "display": "前原",
+          "score": 10,
+          "won": true,
+          "name": "前原高校",
+          "slug": "maehara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "八重山農",
+          "score": 11,
+          "won": true,
+          "name": "八重山農",
+          "slug": null
+        },
+        {
+          "display": "北部農林",
+          "score": 0,
+          "won": false,
+          "name": "北部農林高校",
+          "slug": "hokubunorin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-14",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "沖縄工業",
+          "score": 12,
+          "won": true,
+          "name": "沖縄工業高校",
+          "slug": "okinawakogyo"
+        },
+        {
+          "display": "南部農林",
+          "score": 2,
+          "won": false,
+          "name": "南部農林高校",
+          "slug": "nanbunorin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-16",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "宮古",
+          "score": 4,
+          "won": true,
+          "name": "宮古高校",
+          "slug": "okinawa-miyako"
+        },
+        {
+          "display": "西原",
+          "score": 2,
+          "won": false,
+          "name": "西原高校",
+          "slug": "nishihara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-16",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "知念",
+          "score": 3,
+          "won": true,
+          "name": "知念高校",
+          "slug": "chinen"
+        },
+        {
+          "display": "那覇商業",
+          "score": 2,
+          "won": false,
+          "name": "那覇商業高校",
+          "slug": "nahashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "首里",
+          "score": 6,
+          "won": true,
+          "name": "首里高校",
+          "slug": "shuri"
+        },
+        {
+          "display": "北中城",
+          "score": 0,
+          "won": false,
+          "name": "北中城高校",
+          "slug": "kitanakagusuku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東・開・陽・真",
+          "score": 2,
+          "won": false,
+          "name": "東・開・陽・真",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "名護商工",
+          "score": 7,
+          "won": true,
+          "name": "名護商工高校",
+          "slug": "nagoshoko"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-16",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "北谷公園野球場",
+      "teams": [
+        {
+          "display": "南風原",
+          "score": 4,
+          "won": false,
+          "name": "南風原高校",
+          "slug": "haebaru"
+        },
+        {
+          "display": "宮工・宮実",
+          "score": 21,
+          "won": true,
+          "name": "宮工・宮実",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-16",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "具志川",
+          "score": 6,
+          "won": true,
+          "name": "具志川高校",
+          "slug": "gushikawa"
+        },
+        {
+          "display": "与勝",
+          "score": 3,
+          "won": false,
+          "name": "与勝高校",
+          "slug": "yokatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-16",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "糸満",
+          "score": 8,
+          "won": true,
+          "name": "糸満高校",
+          "slug": "itoman"
+        },
+        {
+          "display": "KBC未来",
+          "score": 1,
+          "won": false,
+          "name": "KBC未来",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-23",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "具志川商",
+          "score": 2,
+          "won": true,
+          "name": "具志川商業高校",
+          "slug": "gushikawashogyo"
+        },
+        {
+          "display": "那覇工業",
+          "score": 1,
+          "won": false,
+          "name": "那覇工業高校",
+          "slug": "nahakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "中部農林",
+          "score": 2,
+          "won": false,
+          "name": "中部農林高校",
+          "slug": "chubunorin"
+        },
+        {
+          "display": "宜野湾",
+          "score": 3,
+          "won": true,
+          "name": "宜野湾高校",
+          "slug": "ginowan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "前原",
+          "score": 0,
+          "won": false,
+          "name": "前原高校",
+          "slug": "maehara"
+        },
+        {
+          "display": "八重山農",
+          "score": 10,
+          "won": true,
+          "name": "八重山農",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "沖縄工業",
+          "score": 2,
+          "won": true,
+          "name": "沖縄工業高校",
+          "slug": "okinawakogyo"
+        },
+        {
+          "display": "ウェルネス",
+          "score": 1,
+          "won": false,
+          "name": "ウェルネス",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-23",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "美里工業",
+          "score": 7,
+          "won": true,
+          "name": "美里工業高校",
+          "slug": "misatokogyo"
+        },
+        {
+          "display": "宮古",
+          "score": 0,
+          "won": false,
+          "name": "宮古高校",
+          "slug": "okinawa-miyako"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-23",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "知念",
+          "score": 6,
+          "won": true,
+          "name": "知念高校",
+          "slug": "chinen"
+        },
+        {
+          "display": "首里",
+          "score": 4,
+          "won": false,
+          "name": "首里高校",
+          "slug": "shuri"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "名護商工",
+          "score": 5,
+          "won": true,
+          "name": "名護商工高校",
+          "slug": "nagoshoko"
+        },
+        {
+          "display": "宮工・宮実",
+          "score": 1,
+          "won": false,
+          "name": "宮工・宮実",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-22",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "具志川",
+          "score": 1,
+          "won": true,
+          "name": "具志川高校",
+          "slug": "gushikawa"
+        },
+        {
+          "display": "糸満",
+          "score": 0,
+          "won": false,
+          "name": "糸満高校",
+          "slug": "itoman"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "具志川商",
+          "score": 1,
+          "won": false,
+          "name": "具志川商業高校",
+          "slug": "gushikawashogyo"
+        },
+        {
+          "display": "宜野湾",
+          "score": 5,
+          "won": true,
+          "name": "宜野湾高校",
+          "slug": "ginowan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-24",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "3回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "八重山農",
+          "score": 4,
+          "won": true,
+          "name": "八重山農",
+          "slug": null
+        },
+        {
+          "display": "沖縄工業",
+          "score": 0,
+          "won": false,
+          "name": "沖縄工業高校",
+          "slug": "okinawakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "美里工業",
+          "score": 13,
+          "won": true,
+          "name": "美里工業高校",
+          "slug": "misatokogyo"
+        },
+        {
+          "display": "知念",
+          "score": 3,
+          "won": false,
+          "name": "知念高校",
+          "slug": "chinen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-24",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "3回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "名護商工",
+          "score": 0,
+          "won": false,
+          "name": "名護商工高校",
+          "slug": "nagoshoko"
+        },
+        {
+          "display": "具志川",
+          "score": 4,
+          "won": true,
+          "name": "具志川高校",
+          "slug": "gushikawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-28",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "準々決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "宜野湾",
+          "score": 8,
+          "won": false,
+          "name": "宜野湾高校",
+          "slug": "ginowan"
+        },
+        {
+          "display": "八重山農",
+          "score": 9,
+          "won": true,
+          "name": "八重山農",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-28",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "準々決勝",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "美里工業",
+          "score": 4,
+          "won": false,
+          "name": "美里工業高校",
+          "slug": "misatokogyo"
+        },
+        {
+          "display": "具志川",
+          "score": 5,
+          "won": true,
+          "name": "具志川高校",
+          "slug": "gushikawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-29",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "準決勝",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "八重山農",
+          "score": 3,
+          "won": true,
+          "name": "八重山農",
+          "slug": null
+        },
+        {
+          "display": "具志川",
+          "score": 2,
+          "won": false,
+          "name": "具志川高校",
+          "slug": "gushikawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-07",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "南部工業",
+          "score": 0,
+          "won": false,
+          "name": "南部工業高校",
+          "slug": "nanbukogyo"
+        },
+        {
+          "display": "中部商業",
+          "score": 2,
+          "won": true,
+          "name": "中部商業高校",
+          "slug": "chubushogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-07",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "読谷",
+          "score": 1,
+          "won": false,
+          "name": "読谷高校",
+          "slug": "yomitan"
+        },
+        {
+          "display": "興南",
+          "score": 8,
+          "won": true,
+          "name": "興南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "那覇国際",
+          "score": 1,
+          "won": false,
+          "name": "那覇国際高校",
+          "slug": "nahakokusai"
+        },
+        {
+          "display": "沖縄カトリック",
+          "score": 9,
+          "won": true,
+          "name": "沖縄カトリック",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浦添工業",
+          "score": 10,
+          "won": true,
+          "name": "浦添工業高校",
+          "slug": "urasoekogyo"
+        },
+        {
+          "display": "美里",
+          "score": 3,
+          "won": false,
+          "name": "美里高校",
+          "slug": "okinawa-misato"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石川",
+          "score": 1,
+          "won": false,
+          "name": "石川高校",
+          "slug": "okinawa-ishikawa"
+        },
+        {
+          "display": "嘉手納",
+          "score": 5,
+          "won": true,
+          "name": "嘉手納高校",
+          "slug": "kadena"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "名護",
+          "score": 5,
+          "won": true,
+          "name": "名護高校",
+          "slug": "nago"
+        },
+        {
+          "display": "向陽",
+          "score": 1,
+          "won": false,
+          "name": "向陽高校",
+          "slug": "okinawa-koyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-10",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "小禄",
+          "score": 2,
+          "won": false,
+          "name": "小禄高校",
+          "slug": "oroku"
+        },
+        {
+          "display": "美来工科",
+          "score": 3,
+          "won": true,
+          "name": "美来工科高校",
+          "slug": "miraikoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "八重商工",
+          "score": 0,
+          "won": false,
+          "name": "八重商工",
+          "slug": null
+        },
+        {
+          "display": "普天間",
+          "score": 28,
+          "won": true,
+          "name": "普天間高校",
+          "slug": "futenma"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北山",
+          "score": 2,
+          "won": false,
+          "name": "北山高校",
+          "slug": "hokuzan"
+        },
+        {
+          "display": "那覇西",
+          "score": 7,
+          "won": true,
+          "name": "那覇西高校",
+          "slug": "nahanishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-10",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "北谷公園野球場",
+      "teams": [
+        {
+          "display": "コザ",
+          "score": 1,
+          "won": false,
+          "name": "コザ高校",
+          "slug": "koza"
+        },
+        {
+          "display": "豊見城南",
+          "score": 2,
+          "won": true,
+          "name": "豊見城南高校",
+          "slug": "tomigusukuminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-10",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "浦添",
+          "score": 3,
+          "won": false,
+          "name": "浦添高校",
+          "slug": "urasoe"
+        },
+        {
+          "display": "豊見城",
+          "score": 4,
+          "won": true,
+          "name": "豊見城高校",
+          "slug": "tomigusuku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-14",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "宜野座",
+          "score": 2,
+          "won": false,
+          "name": "宜野座高校",
+          "slug": "ginoza"
+        },
+        {
+          "display": "浦添商業",
+          "score": 3,
+          "won": true,
+          "name": "浦添商業高校",
+          "slug": "urasoeshogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-14",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "沖縄尚学",
+          "score": 10,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        },
+        {
+          "display": "南部商業",
+          "score": 0,
+          "won": false,
+          "name": "南部商業高校",
+          "slug": "nanbushogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-16",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "沖縄水産",
+          "score": 11,
+          "won": true,
+          "name": "沖縄水産高校",
+          "slug": "okinawasuisan"
+        },
+        {
+          "display": "中部商業",
+          "score": 1,
+          "won": false,
+          "name": "中部商業高校",
+          "slug": "chubushogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-16",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "北谷公園野球場",
+      "teams": [
+        {
+          "display": "興南",
+          "score": 14,
+          "won": true,
+          "name": "興南",
+          "slug": null
+        },
+        {
+          "display": "沖縄カトリック",
+          "score": 1,
+          "won": false,
+          "name": "沖縄カトリック",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "浦添工業",
+          "score": 4,
+          "won": false,
+          "name": "浦添工業高校",
+          "slug": "urasoekogyo"
+        },
+        {
+          "display": "嘉手納",
+          "score": 11,
+          "won": true,
+          "name": "嘉手納高校",
+          "slug": "kadena"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "名護",
+          "score": 1,
+          "won": false,
+          "name": "名護高校",
+          "slug": "nago"
+        },
+        {
+          "display": "八重山",
+          "score": 10,
+          "won": true,
+          "name": "八重山高校",
+          "slug": "yaeyama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-17",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "本部",
+          "score": 12,
+          "won": true,
+          "name": "本部高校",
+          "slug": "motobu"
+        },
+        {
+          "display": "美来工科",
+          "score": 7,
+          "won": false,
+          "name": "美来工科高校",
+          "slug": "miraikoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-17",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "普天間",
+          "score": 8,
+          "won": true,
+          "name": "普天間高校",
+          "slug": "futenma"
+        },
+        {
+          "display": "那覇西",
+          "score": 1,
+          "won": false,
+          "name": "那覇西高校",
+          "slug": "nahanishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "豊見城南",
+          "score": 1,
+          "won": false,
+          "name": "豊見城南高校",
+          "slug": "tomigusukuminami"
+        },
+        {
+          "display": "豊見城",
+          "score": 9,
+          "won": true,
+          "name": "豊見城高校",
+          "slug": "tomigusuku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-17",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "浦添商業",
+          "score": 2,
+          "won": false,
+          "name": "浦添商業高校",
+          "slug": "urasoeshogyo"
+        },
+        {
+          "display": "沖縄尚学",
+          "score": 7,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-23",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "3回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "沖縄水産",
+          "score": 10,
+          "won": true,
+          "name": "沖縄水産高校",
+          "slug": "okinawasuisan"
+        },
+        {
+          "display": "興南",
+          "score": 2,
+          "won": false,
+          "name": "興南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-23",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "3回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "嘉手納",
+          "score": 4,
+          "won": true,
+          "name": "嘉手納高校",
+          "slug": "kadena"
+        },
+        {
+          "display": "八重山",
+          "score": 3,
+          "won": false,
+          "name": "八重山高校",
+          "slug": "yaeyama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-24",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "3回戦",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "本部",
+          "score": 1,
+          "won": true,
+          "name": "本部高校",
+          "slug": "motobu"
+        },
+        {
+          "display": "普天間",
+          "score": 0,
+          "won": false,
+          "name": "普天間高校",
+          "slug": "futenma"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-24",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "3回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "豊見城",
+          "score": 0,
+          "won": false,
+          "name": "豊見城高校",
+          "slug": "tomigusuku"
+        },
+        {
+          "display": "沖縄尚学",
+          "score": 7,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-28",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "準々決勝",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "沖縄水産",
+          "score": 0,
+          "won": false,
+          "name": "沖縄水産高校",
+          "slug": "okinawasuisan"
+        },
+        {
+          "display": "嘉手納",
+          "score": 1,
+          "won": true,
+          "name": "嘉手納高校",
+          "slug": "kadena"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-28",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "準々決勝",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "本部",
+          "score": 3,
+          "won": false,
+          "name": "本部高校",
+          "slug": "motobu"
+        },
+        {
+          "display": "沖縄尚学",
+          "score": 5,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-09-29",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "準決勝",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "嘉手納",
+          "score": 1,
+          "won": false,
+          "name": "嘉手納高校",
+          "slug": "kadena"
+        },
+        {
+          "display": "沖縄尚学",
+          "score": 11,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-10-05",
+      "season": "autumn",
+      "tournament": "2019年 秋季九州地区高校野球 沖縄県大会",
+      "round": "決勝",
+      "venue": "コザしんきんスタジアム",
+      "teams": [
+        {
+          "display": "沖縄尚学",
+          "score": 8,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        },
+        {
+          "display": "八重山農",
+          "score": 7,
+          "won": false,
+          "name": "八重山農",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
     },
     {
       "date": "2025-09-20",

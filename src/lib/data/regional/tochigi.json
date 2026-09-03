@@ -5,6 +5,1335 @@
   "sourceUrl": "https://www.tochigi-koyaren.net/",
   "games": [
     {
+      "date": "2025-04-12",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": "とちぎ木の花スタジアム",
+      "teams": [
+        {
+          "display": "栃木商",
+          "score": 7,
+          "won": true,
+          "name": "栃木商業高校",
+          "slug": "tochigishogyo"
+        },
+        {
+          "display": "上三川",
+          "score": 2,
+          "won": false,
+          "name": "上三川高校",
+          "slug": "kaminokawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-13",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "茂木",
+          "score": 17,
+          "won": true,
+          "name": "茂木高校",
+          "slug": "motegi"
+        },
+        {
+          "display": "矢板・矢板東・黒磯南・黒羽",
+          "score": 1,
+          "won": false,
+          "name": "矢板・矢板東・黒磯南・黒羽",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-13",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "鹿沼商工",
+          "score": 5,
+          "won": true,
+          "name": "鹿沼商工高校",
+          "slug": "kanumashoko"
+        },
+        {
+          "display": "鹿沼東",
+          "score": 2,
+          "won": false,
+          "name": "鹿沼東高校",
+          "slug": "kanumahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-13",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "今市",
+          "score": 5,
+          "won": false,
+          "name": "今市高校",
+          "slug": "imaichi"
+        },
+        {
+          "display": "宇都宮",
+          "score": 7,
+          "won": true,
+          "name": "宇都宮高校",
+          "slug": "utsunomiya"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-13",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": "とちぎ木の花スタジアム",
+      "teams": [
+        {
+          "display": "鹿沼南",
+          "score": 2,
+          "won": false,
+          "name": "鹿沼南高校",
+          "slug": "kanumaminami"
+        },
+        {
+          "display": "黒磯",
+          "score": 14,
+          "won": true,
+          "name": "黒磯高校",
+          "slug": "kuroiso"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-14",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "足利",
+          "score": 12,
+          "won": true,
+          "name": "足利高校",
+          "slug": "ashikaga"
+        },
+        {
+          "display": "小山南",
+          "score": 5,
+          "won": false,
+          "name": "小山南高校",
+          "slug": "oyamaminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-14",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "足利大附",
+          "score": 10,
+          "won": false,
+          "name": "足利大附",
+          "slug": null
+        },
+        {
+          "display": "那須清峰",
+          "score": 11,
+          "won": true,
+          "name": "那須清峰高校",
+          "slug": "nasuseiho"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-14",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "宇都宮北",
+          "score": 3,
+          "won": false,
+          "name": "宇都宮北高校",
+          "slug": "utsunomiyakita"
+        },
+        {
+          "display": "真岡工",
+          "score": 11,
+          "won": true,
+          "name": "真岡工業高校",
+          "slug": "mokakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-13",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "小山",
+          "score": 4,
+          "won": false,
+          "name": "小山高校",
+          "slug": "oyama"
+        },
+        {
+          "display": "大田原",
+          "score": 5,
+          "won": true,
+          "name": "大田原高校",
+          "slug": "otawara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-20",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "2回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "矢板中央",
+          "score": 12,
+          "won": true,
+          "name": "矢板中央",
+          "slug": null
+        },
+        {
+          "display": "栃木商",
+          "score": 2,
+          "won": false,
+          "name": "栃木商業高校",
+          "slug": "tochigishogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-20",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "2回戦",
+      "venue": "とちぎ木の花スタジアム",
+      "teams": [
+        {
+          "display": "茂木",
+          "score": 8,
+          "won": true,
+          "name": "茂木高校",
+          "slug": "motegi"
+        },
+        {
+          "display": "鹿沼商工",
+          "score": 1,
+          "won": false,
+          "name": "鹿沼商工高校",
+          "slug": "kanumashoko"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-20",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "2回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "宇都宮白楊",
+          "score": 7,
+          "won": true,
+          "name": "宇都宮白楊高校",
+          "slug": "utsunomiyahakuyo"
+        },
+        {
+          "display": "宇都宮",
+          "score": 6,
+          "won": false,
+          "name": "宇都宮高校",
+          "slug": "utsunomiya"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-20",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "2回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "黒磯",
+          "score": 0,
+          "won": false,
+          "name": "黒磯高校",
+          "slug": "kuroiso"
+        },
+        {
+          "display": "作新学院",
+          "score": 10,
+          "won": true,
+          "name": "作新学院",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-20",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "2回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "宇都宮工",
+          "score": 5,
+          "won": true,
+          "name": "宇都宮工業高校",
+          "slug": "utsunomiyakogyo"
+        },
+        {
+          "display": "足利",
+          "score": 1,
+          "won": false,
+          "name": "足利高校",
+          "slug": "ashikaga"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-20",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "2回戦",
+      "venue": "とちぎ木の花スタジアム",
+      "teams": [
+        {
+          "display": "那須清峰",
+          "score": 0,
+          "won": false,
+          "name": "那須清峰高校",
+          "slug": "nasuseiho"
+        },
+        {
+          "display": "栃木",
+          "score": 7,
+          "won": true,
+          "name": "栃木高校",
+          "slug": "tochigi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-20",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "2回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "足利工",
+          "score": 8,
+          "won": true,
+          "name": "足利工業高校",
+          "slug": "ashikagakogyo"
+        },
+        {
+          "display": "真岡工",
+          "score": 7,
+          "won": false,
+          "name": "真岡工業高校",
+          "slug": "mokakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-20",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "2回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "大田原",
+          "score": 0,
+          "won": false,
+          "name": "大田原高校",
+          "slug": "otawara"
+        },
+        {
+          "display": "青藍泰斗",
+          "score": 5,
+          "won": true,
+          "name": "青藍泰斗",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-26",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "3回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "矢板中央",
+          "score": 5,
+          "won": true,
+          "name": "矢板中央",
+          "slug": null
+        },
+        {
+          "display": "茂木",
+          "score": 0,
+          "won": false,
+          "name": "茂木高校",
+          "slug": "motegi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-26",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "3回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "宇都宮白楊",
+          "score": 1,
+          "won": false,
+          "name": "宇都宮白楊高校",
+          "slug": "utsunomiyahakuyo"
+        },
+        {
+          "display": "作新学院",
+          "score": 10,
+          "won": true,
+          "name": "作新学院",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-26",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "3回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "宇都宮工",
+          "score": 6,
+          "won": true,
+          "name": "宇都宮工業高校",
+          "slug": "utsunomiyakogyo"
+        },
+        {
+          "display": "栃木",
+          "score": 2,
+          "won": false,
+          "name": "栃木高校",
+          "slug": "tochigi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-26",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "3回戦",
+      "venue": "とちぎ木の花スタジアム",
+      "teams": [
+        {
+          "display": "足利工",
+          "score": 2,
+          "won": false,
+          "name": "足利工業高校",
+          "slug": "ashikagakogyo"
+        },
+        {
+          "display": "青藍泰斗",
+          "score": 12,
+          "won": true,
+          "name": "青藍泰斗",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-29",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "準々決勝",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "矢板中央",
+          "score": 1,
+          "won": false,
+          "name": "矢板中央",
+          "slug": null
+        },
+        {
+          "display": "作新学院",
+          "score": 9,
+          "won": true,
+          "name": "作新学院",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-29",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "準々決勝",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "宇都宮工",
+          "score": 2,
+          "won": true,
+          "name": "宇都宮工業高校",
+          "slug": "utsunomiyakogyo"
+        },
+        {
+          "display": "青藍泰斗",
+          "score": 1,
+          "won": false,
+          "name": "青藍泰斗",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-05-03",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "準決勝",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "作新学院",
+          "score": 7,
+          "won": true,
+          "name": "作新学院",
+          "slug": null
+        },
+        {
+          "display": "宇都宮工",
+          "score": 0,
+          "won": false,
+          "name": "宇都宮工業高校",
+          "slug": "utsunomiyakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-12",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "那須拓陽",
+          "score": 6,
+          "won": true,
+          "name": "那須拓陽高校",
+          "slug": "nasutakuyo"
+        },
+        {
+          "display": "小山北桜",
+          "score": 2,
+          "won": false,
+          "name": "小山北桜高校",
+          "slug": "oyamahokuo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-12",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宇都宮東",
+          "score": 3,
+          "won": false,
+          "name": "宇都宮東高校",
+          "slug": "utsunomiyahigashi"
+        },
+        {
+          "display": "幸福学園",
+          "score": 19,
+          "won": true,
+          "name": "幸福学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-12",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "小山西",
+          "score": 14,
+          "won": true,
+          "name": "小山西高校",
+          "slug": "oyamanishi"
+        },
+        {
+          "display": "足利清風・佐野東・栃木翔南",
+          "score": 1,
+          "won": false,
+          "name": "足利清風・佐野東・栃木翔南",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-12",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "白鷗大足利",
+          "score": 3,
+          "won": false,
+          "name": "白鷗大足利",
+          "slug": null
+        },
+        {
+          "display": "烏山",
+          "score": 4,
+          "won": true,
+          "name": "烏山高校",
+          "slug": "karasuyama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-12",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "宇都宮商",
+          "score": 12,
+          "won": true,
+          "name": "宇都宮商業高校",
+          "slug": "utsunomiyashogyo"
+        },
+        {
+          "display": "佐野",
+          "score": 1,
+          "won": false,
+          "name": "佐野高校",
+          "slug": "sano"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-12",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": "とちぎ木の花スタジアム",
+      "teams": [
+        {
+          "display": "高根沢",
+          "score": 1,
+          "won": false,
+          "name": "高根沢高校",
+          "slug": "takanezawa"
+        },
+        {
+          "display": "宇短大附",
+          "score": 8,
+          "won": true,
+          "name": "宇短大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-12",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "宇都宮清陵・さくら清修",
+          "score": 5,
+          "won": true,
+          "name": "宇都宮清陵・さくら清修",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "今市工・真岡北陵",
+          "score": 0,
+          "won": false,
+          "name": "今市工・真岡北陵",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-12",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "栃木工",
+          "score": 13,
+          "won": true,
+          "name": "栃木工業高校",
+          "slug": "tochigikogyo"
+        },
+        {
+          "display": "佐野松桜",
+          "score": 3,
+          "won": false,
+          "name": "佐野松桜高校",
+          "slug": "sanosho"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-12",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "1回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "石橋",
+          "score": 23,
+          "won": true,
+          "name": "石橋高校",
+          "slug": "ishibashi"
+        },
+        {
+          "display": "壬生・小山高専・栃木農・足利南",
+          "score": 2,
+          "won": false,
+          "name": "壬生・小山高専・栃木農・足利南",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-19",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "2回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "宇都宮南",
+          "score": 11,
+          "won": true,
+          "name": "宇都宮南高校",
+          "slug": "utsunomiyaminami"
+        },
+        {
+          "display": "那須拓陽",
+          "score": 3,
+          "won": false,
+          "name": "那須拓陽高校",
+          "slug": "nasutakuyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-19",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "2回戦",
+      "venue": "とちぎ木の花スタジアム",
+      "teams": [
+        {
+          "display": "幸福学園",
+          "score": 9,
+          "won": true,
+          "name": "幸福学園",
+          "slug": null
+        },
+        {
+          "display": "小山西",
+          "score": 1,
+          "won": false,
+          "name": "小山西高校",
+          "slug": "oyamanishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-19",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "2回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "鹿沼",
+          "score": 1,
+          "won": false,
+          "name": "鹿沼高校",
+          "slug": "kanuma"
+        },
+        {
+          "display": "烏山",
+          "score": 7,
+          "won": true,
+          "name": "烏山高校",
+          "slug": "karasuyama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-19",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "2回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "宇都宮商",
+          "score": 0,
+          "won": false,
+          "name": "宇都宮商業高校",
+          "slug": "utsunomiyashogyo"
+        },
+        {
+          "display": "佐野日大",
+          "score": 7,
+          "won": true,
+          "name": "佐野日大",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-19",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "2回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "國學院栃木",
+          "score": 10,
+          "won": true,
+          "name": "國學院栃木",
+          "slug": null
+        },
+        {
+          "display": "宇短大附",
+          "score": 3,
+          "won": false,
+          "name": "宇短大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-19",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "2回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "宇都宮清陵・さくら清修",
+          "score": 3,
+          "won": false,
+          "name": "宇都宮清陵・さくら清修",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "真岡",
+          "score": 7,
+          "won": true,
+          "name": "真岡高校",
+          "slug": "moka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-19",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "2回戦",
+      "venue": "とちぎ木の花スタジアム",
+      "teams": [
+        {
+          "display": "宇都宮中央",
+          "score": 0,
+          "won": false,
+          "name": "宇都宮中央高校",
+          "slug": "utsunomiyachuo"
+        },
+        {
+          "display": "栃木工",
+          "score": 10,
+          "won": true,
+          "name": "栃木工業高校",
+          "slug": "tochigikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-19",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "2回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "石橋",
+          "score": 3,
+          "won": false,
+          "name": "石橋高校",
+          "slug": "ishibashi"
+        },
+        {
+          "display": "文星芸大附",
+          "score": 5,
+          "won": true,
+          "name": "文星芸大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-26",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "3回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "宇都宮南",
+          "score": 0,
+          "won": false,
+          "name": "宇都宮南高校",
+          "slug": "utsunomiyaminami"
+        },
+        {
+          "display": "幸福学園",
+          "score": 3,
+          "won": true,
+          "name": "幸福学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-26",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "3回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "烏山",
+          "score": 1,
+          "won": false,
+          "name": "烏山高校",
+          "slug": "karasuyama"
+        },
+        {
+          "display": "佐野日大",
+          "score": 11,
+          "won": true,
+          "name": "佐野日大",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-26",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "3回戦",
+      "venue": "とちぎ木の花スタジアム",
+      "teams": [
+        {
+          "display": "國學院栃木",
+          "score": 5,
+          "won": true,
+          "name": "國學院栃木",
+          "slug": null
+        },
+        {
+          "display": "真岡",
+          "score": 2,
+          "won": false,
+          "name": "真岡高校",
+          "slug": "moka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-26",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "3回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "栃木工",
+          "score": 6,
+          "won": false,
+          "name": "栃木工業高校",
+          "slug": "tochigikogyo"
+        },
+        {
+          "display": "文星芸大附",
+          "score": 9,
+          "won": true,
+          "name": "文星芸大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-29",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "準々決勝",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "幸福学園",
+          "score": 4,
+          "won": false,
+          "name": "幸福学園",
+          "slug": null
+        },
+        {
+          "display": "佐野日大",
+          "score": 17,
+          "won": true,
+          "name": "佐野日大",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-04-29",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "準々決勝",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "國學院栃木",
+          "score": 1,
+          "won": false,
+          "name": "國學院栃木",
+          "slug": null
+        },
+        {
+          "display": "文星芸大附",
+          "score": 6,
+          "won": true,
+          "name": "文星芸大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-05-03",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "準決勝",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "佐野日大",
+          "score": 7,
+          "won": true,
+          "name": "佐野日大",
+          "slug": null
+        },
+        {
+          "display": "文星芸大附",
+          "score": 0,
+          "won": false,
+          "name": "文星芸大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-05-04",
+      "season": "spring",
+      "tournament": "2025年 春季関東地区高校野球 栃木県大会",
+      "round": "決勝",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "佐野日大",
+          "score": 10,
+          "won": true,
+          "name": "佐野日大",
+          "slug": null
+        },
+        {
+          "display": "作新学院",
+          "score": 9,
+          "won": false,
+          "name": "作新学院",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-04-11",
       "season": "spring",
       "tournament": "第79回春季栃木県高等学校野球大会試合結果",
@@ -10164,6 +11493,1442 @@
           "slug": "tochigikogyo"
         }
       ]
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "宇都宮中央",
+          "score": 6,
+          "won": true,
+          "name": "宇都宮中央高校",
+          "slug": "utsunomiyachuo"
+        },
+        {
+          "display": "茂木",
+          "score": 4,
+          "won": false,
+          "name": "茂木高校",
+          "slug": "motegi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "真岡工",
+          "score": 3,
+          "won": false,
+          "name": "真岡工業高校",
+          "slug": "mokakogyo"
+        },
+        {
+          "display": "宇都宮商",
+          "score": 8,
+          "won": true,
+          "name": "宇都宮商業高校",
+          "slug": "utsunomiyashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "烏山",
+          "score": 7,
+          "won": true,
+          "name": "烏山高校",
+          "slug": "karasuyama"
+        },
+        {
+          "display": "矢板・黒磯南",
+          "score": 0,
+          "won": false,
+          "name": "矢板・黒磯南",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "宇都宮北",
+          "score": 5,
+          "won": true,
+          "name": "宇都宮北高校",
+          "slug": "utsunomiyakita"
+        },
+        {
+          "display": "宇都宮清陵・今市工",
+          "score": 2,
+          "won": false,
+          "name": "宇都宮清陵・今市工",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "栃木商",
+          "score": 8,
+          "won": true,
+          "name": "栃木商業高校",
+          "slug": "tochigishogyo"
+        },
+        {
+          "display": "佐野",
+          "score": 1,
+          "won": false,
+          "name": "佐野高校",
+          "slug": "sano"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "佐野東・足利南・足利清風",
+          "score": 3,
+          "won": false,
+          "name": "佐野東・足利南・足利清風",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "真岡",
+          "score": 13,
+          "won": true,
+          "name": "真岡高校",
+          "slug": "moka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "鹿沼東",
+          "score": 1,
+          "won": false,
+          "name": "鹿沼東高校",
+          "slug": "kanumahigashi"
+        },
+        {
+          "display": "石橋",
+          "score": 10,
+          "won": true,
+          "name": "石橋高校",
+          "slug": "ishibashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "宇短大附",
+          "score": 5,
+          "won": true,
+          "name": "宇短大附",
+          "slug": null
+        },
+        {
+          "display": "那須拓陽",
+          "score": 4,
+          "won": false,
+          "name": "那須拓陽高校",
+          "slug": "nasutakuyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "鹿沼商工",
+          "score": 7,
+          "won": true,
+          "name": "鹿沼商工高校",
+          "slug": "kanumashoko"
+        },
+        {
+          "display": "小山北桜",
+          "score": 0,
+          "won": false,
+          "name": "小山北桜高校",
+          "slug": "oyamahokuo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "栃木農",
+          "score": 1,
+          "won": false,
+          "name": "栃木農業高校",
+          "slug": "tochiginogyo"
+        },
+        {
+          "display": "鹿沼",
+          "score": 9,
+          "won": true,
+          "name": "鹿沼高校",
+          "slug": "kanuma"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "矢板東・黒羽",
+          "score": 0,
+          "won": false,
+          "name": "矢板東・黒羽",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "宇都宮",
+          "score": 21,
+          "won": true,
+          "name": "宇都宮高校",
+          "slug": "utsunomiya"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-17",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "2回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "青藍泰斗",
+          "score": 10,
+          "won": true,
+          "name": "青藍泰斗",
+          "slug": null
+        },
+        {
+          "display": "宇都宮中央",
+          "score": 3,
+          "won": false,
+          "name": "宇都宮中央高校",
+          "slug": "utsunomiyachuo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-17",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "2回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "宇都宮商",
+          "score": 5,
+          "won": true,
+          "name": "宇都宮商業高校",
+          "slug": "utsunomiyashogyo"
+        },
+        {
+          "display": "烏山",
+          "score": 3,
+          "won": false,
+          "name": "烏山高校",
+          "slug": "karasuyama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-17",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "2回戦",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "栃木工",
+          "score": 3,
+          "won": true,
+          "name": "栃木工業高校",
+          "slug": "tochigikogyo"
+        },
+        {
+          "display": "宇都宮北",
+          "score": 1,
+          "won": false,
+          "name": "宇都宮北高校",
+          "slug": "utsunomiyakita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-17",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "2回戦",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "栃木商",
+          "score": 0,
+          "won": false,
+          "name": "栃木商業高校",
+          "slug": "tochigishogyo"
+        },
+        {
+          "display": "佐野日大",
+          "score": 5,
+          "won": true,
+          "name": "佐野日大",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-17",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "2回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "宇都宮工",
+          "score": 9,
+          "won": true,
+          "name": "宇都宮工業高校",
+          "slug": "utsunomiyakogyo"
+        },
+        {
+          "display": "真岡",
+          "score": 5,
+          "won": false,
+          "name": "真岡高校",
+          "slug": "moka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-17",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "2回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "石橋",
+          "score": 4,
+          "won": true,
+          "name": "石橋高校",
+          "slug": "ishibashi"
+        },
+        {
+          "display": "宇短大附",
+          "score": 1,
+          "won": false,
+          "name": "宇短大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-17",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "2回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "鹿沼商工",
+          "score": 4,
+          "won": true,
+          "name": "鹿沼商工高校",
+          "slug": "kanumashoko"
+        },
+        {
+          "display": "鹿沼",
+          "score": 2,
+          "won": false,
+          "name": "鹿沼高校",
+          "slug": "kanuma"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-17",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "2回戦",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "宇都宮",
+          "score": 4,
+          "won": true,
+          "name": "宇都宮高校",
+          "slug": "utsunomiya"
+        },
+        {
+          "display": "矢板中央",
+          "score": 2,
+          "won": false,
+          "name": "矢板中央",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-20",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "3回戦",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "青藍泰斗",
+          "score": 7,
+          "won": true,
+          "name": "青藍泰斗",
+          "slug": null
+        },
+        {
+          "display": "宇都宮商",
+          "score": 3,
+          "won": false,
+          "name": "宇都宮商業高校",
+          "slug": "utsunomiyashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-20",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "3回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "栃木工",
+          "score": 5,
+          "won": true,
+          "name": "栃木工業高校",
+          "slug": "tochigikogyo"
+        },
+        {
+          "display": "佐野日大",
+          "score": 4,
+          "won": false,
+          "name": "佐野日大",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-20",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "3回戦",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "宇都宮工",
+          "score": 2,
+          "won": true,
+          "name": "宇都宮工業高校",
+          "slug": "utsunomiyakogyo"
+        },
+        {
+          "display": "石橋",
+          "score": 1,
+          "won": false,
+          "name": "石橋高校",
+          "slug": "ishibashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-20",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "3回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "鹿沼商工",
+          "score": 1,
+          "won": false,
+          "name": "鹿沼商工高校",
+          "slug": "kanumashoko"
+        },
+        {
+          "display": "宇都宮",
+          "score": 2,
+          "won": true,
+          "name": "宇都宮高校",
+          "slug": "utsunomiya"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-23",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "準々決勝",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "青藍泰斗",
+          "score": 3,
+          "won": true,
+          "name": "青藍泰斗",
+          "slug": null
+        },
+        {
+          "display": "栃木工",
+          "score": 1,
+          "won": false,
+          "name": "栃木工業高校",
+          "slug": "tochigikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-23",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "準々決勝",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "宇都宮工",
+          "score": 11,
+          "won": true,
+          "name": "宇都宮工業高校",
+          "slug": "utsunomiyakogyo"
+        },
+        {
+          "display": "宇都宮",
+          "score": 4,
+          "won": false,
+          "name": "宇都宮高校",
+          "slug": "utsunomiya"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-25",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "準決勝",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "青藍泰斗",
+          "score": 6,
+          "won": true,
+          "name": "青藍泰斗",
+          "slug": null
+        },
+        {
+          "display": "宇都宮工",
+          "score": 0,
+          "won": false,
+          "name": "宇都宮工業高校",
+          "slug": "utsunomiyakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-11",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "宇都宮白楊",
+          "score": 1,
+          "won": false,
+          "name": "宇都宮白楊高校",
+          "slug": "utsunomiyahakuyo"
+        },
+        {
+          "display": "小山",
+          "score": 4,
+          "won": true,
+          "name": "小山高校",
+          "slug": "oyama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-10",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "黒磯",
+          "score": 1,
+          "won": true,
+          "name": "黒磯高校",
+          "slug": "kuroiso"
+        },
+        {
+          "display": "足利工",
+          "score": 0,
+          "won": false,
+          "name": "足利工業高校",
+          "slug": "ashikagakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-11",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "足利",
+          "score": 11,
+          "won": true,
+          "name": "足利高校",
+          "slug": "ashikaga"
+        },
+        {
+          "display": "壬生・栃木翔南",
+          "score": 2,
+          "won": false,
+          "name": "壬生・栃木翔南",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-11",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "宇都宮東",
+          "score": 2,
+          "won": false,
+          "name": "宇都宮東高校",
+          "slug": "utsunomiyahigashi"
+        },
+        {
+          "display": "小山西",
+          "score": 5,
+          "won": true,
+          "name": "小山西高校",
+          "slug": "oyamanishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-11",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "大田原",
+          "score": 7,
+          "won": false,
+          "name": "大田原高校",
+          "slug": "otawara"
+        },
+        {
+          "display": "那須清峰",
+          "score": 8,
+          "won": true,
+          "name": "那須清峰高校",
+          "slug": "nasuseiho"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-11",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "今市",
+          "score": 11,
+          "won": true,
+          "name": "今市高校",
+          "slug": "imaichi"
+        },
+        {
+          "display": "真岡北陵",
+          "score": 1,
+          "won": false,
+          "name": "真岡北陵高校",
+          "slug": "mokahokuryo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-11",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "白鷗大足利",
+          "score": 7,
+          "won": true,
+          "name": "白鷗大足利",
+          "slug": null
+        },
+        {
+          "display": "鹿沼南",
+          "score": 0,
+          "won": false,
+          "name": "鹿沼南高校",
+          "slug": "kanumaminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-11",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "宇都宮南",
+          "score": 6,
+          "won": true,
+          "name": "宇都宮南高校",
+          "slug": "utsunomiyaminami"
+        },
+        {
+          "display": "佐野松桜",
+          "score": 5,
+          "won": false,
+          "name": "佐野松桜高校",
+          "slug": "sanosho"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "高根沢",
+          "score": 3,
+          "won": false,
+          "name": "高根沢高校",
+          "slug": "takanezawa"
+        },
+        {
+          "display": "足利大附",
+          "score": 5,
+          "won": true,
+          "name": "足利大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "上三川",
+          "score": 7,
+          "won": true,
+          "name": "上三川高校",
+          "slug": "kaminokawa"
+        },
+        {
+          "display": "小山高専",
+          "score": 4,
+          "won": false,
+          "name": "小山工業高専",
+          "slug": "oyamakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "さくら清修",
+          "score": 1,
+          "won": false,
+          "name": "さくら清修高校",
+          "slug": "sakuraseishu"
+        },
+        {
+          "display": "栃木",
+          "score": 11,
+          "won": true,
+          "name": "栃木高校",
+          "slug": "tochigi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-16",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "2回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "作新学院",
+          "score": 8,
+          "won": true,
+          "name": "作新学院",
+          "slug": null
+        },
+        {
+          "display": "小山",
+          "score": 1,
+          "won": false,
+          "name": "小山高校",
+          "slug": "oyama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-16",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "2回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "黒磯",
+          "score": 3,
+          "won": false,
+          "name": "黒磯高校",
+          "slug": "kuroiso"
+        },
+        {
+          "display": "足利",
+          "score": 7,
+          "won": true,
+          "name": "足利高校",
+          "slug": "ashikaga"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-16",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "2回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "小山南",
+          "score": 2,
+          "won": false,
+          "name": "小山南高校",
+          "slug": "oyamaminami"
+        },
+        {
+          "display": "小山西",
+          "score": 5,
+          "won": true,
+          "name": "小山西高校",
+          "slug": "oyamanishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-16",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "2回戦",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "那須清峰",
+          "score": 4,
+          "won": false,
+          "name": "那須清峰高校",
+          "slug": "nasuseiho"
+        },
+        {
+          "display": "幸福学園",
+          "score": 9,
+          "won": true,
+          "name": "幸福学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-16",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "2回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "文星芸大附",
+          "score": 10,
+          "won": true,
+          "name": "文星芸大附",
+          "slug": null
+        },
+        {
+          "display": "今市",
+          "score": 0,
+          "won": false,
+          "name": "今市高校",
+          "slug": "imaichi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-16",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "2回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "白鷗大足利",
+          "score": 10,
+          "won": true,
+          "name": "白鷗大足利",
+          "slug": null
+        },
+        {
+          "display": "宇都宮南",
+          "score": 3,
+          "won": false,
+          "name": "宇都宮南高校",
+          "slug": "utsunomiyaminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-16",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "2回戦",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "足利大附",
+          "score": 1,
+          "won": false,
+          "name": "足利大附",
+          "slug": null
+        },
+        {
+          "display": "上三川",
+          "score": 5,
+          "won": true,
+          "name": "上三川高校",
+          "slug": "kaminokawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-16",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "2回戦",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "栃木",
+          "score": 0,
+          "won": false,
+          "name": "栃木高校",
+          "slug": "tochigi"
+        },
+        {
+          "display": "國學院栃木",
+          "score": 4,
+          "won": true,
+          "name": "國學院栃木",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-19",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "3回戦",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "作新学院",
+          "score": 10,
+          "won": true,
+          "name": "作新学院",
+          "slug": null
+        },
+        {
+          "display": "足利",
+          "score": 3,
+          "won": false,
+          "name": "足利高校",
+          "slug": "ashikaga"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-19",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "3回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "小山西",
+          "score": 6,
+          "won": false,
+          "name": "小山西高校",
+          "slug": "oyamanishi"
+        },
+        {
+          "display": "幸福学園",
+          "score": 10,
+          "won": true,
+          "name": "幸福学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-19",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "3回戦",
+      "venue": "宇都宮市清原球場",
+      "teams": [
+        {
+          "display": "文星芸大附",
+          "score": 2,
+          "won": true,
+          "name": "文星芸大附",
+          "slug": null
+        },
+        {
+          "display": "白鷗大足利",
+          "score": 1,
+          "won": false,
+          "name": "白鷗大足利",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-19",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "3回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "上三川",
+          "score": 2,
+          "won": false,
+          "name": "上三川高校",
+          "slug": "kaminokawa"
+        },
+        {
+          "display": "國學院栃木",
+          "score": 8,
+          "won": true,
+          "name": "國學院栃木",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-23",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "準々決勝",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "作新学院",
+          "score": 11,
+          "won": true,
+          "name": "作新学院",
+          "slug": null
+        },
+        {
+          "display": "幸福学園",
+          "score": 1,
+          "won": false,
+          "name": "幸福学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-23",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "準々決勝",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "文星芸大附",
+          "score": 1,
+          "won": false,
+          "name": "文星芸大附",
+          "slug": null
+        },
+        {
+          "display": "國學院栃木",
+          "score": 2,
+          "won": true,
+          "name": "國學院栃木",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-25",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "準決勝",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "作新学院",
+          "score": 5,
+          "won": true,
+          "name": "作新学院",
+          "slug": null
+        },
+        {
+          "display": "國學院栃木",
+          "score": 4,
+          "won": false,
+          "name": "國學院栃木",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-07-27",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 栃木大会",
+      "round": "決勝",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "作新学院",
+          "score": 3,
+          "won": false,
+          "name": "作新学院",
+          "slug": null
+        },
+        {
+          "display": "青藍泰斗",
+          "score": 4,
+          "won": true,
+          "name": "青藍泰斗",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://tochigi.hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-09",

@@ -5,6 +5,872 @@
   "sourceUrl": "http://www1.kcn.ne.jp/~nhsbbf/",
   "games": [
     {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "1回戦",
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "宇陀",
+          "score": 0,
+          "won": false,
+          "name": "宇陀高校",
+          "slug": "uda"
+        },
+        {
+          "display": "王寺工業",
+          "score": 10,
+          "won": true,
+          "name": "王寺工業高校",
+          "slug": "ojikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "2回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "高田商業",
+          "score": 5,
+          "won": true,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        },
+        {
+          "display": "王寺工業",
+          "score": 2,
+          "won": false,
+          "name": "王寺工業高校",
+          "slug": "ojikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "2回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "御所実業",
+          "score": 6,
+          "won": true,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        },
+        {
+          "display": "添上",
+          "score": 4,
+          "won": false,
+          "name": "添上高校",
+          "slug": "soekami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "2回戦",
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 8,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "奈良高専",
+          "score": 7,
+          "won": false,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "2回戦",
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "青翔・西和清陵・十津川・奈良南",
+          "score": 0,
+          "won": false,
+          "name": "青翔・西和清陵・十津川・奈良南",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "橿原",
+          "score": 13,
+          "won": true,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "2回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "畝傍",
+          "score": 6,
+          "won": true,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        },
+        {
+          "display": "奈女大附",
+          "score": 0,
+          "won": false,
+          "name": "奈良女子大学附属中等教育学校",
+          "slug": "narajoshidaigakufuzoku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "2回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "西大和学園",
+          "score": 1,
+          "won": false,
+          "name": "西大和学園",
+          "slug": null
+        },
+        {
+          "display": "帝塚山",
+          "score": 3,
+          "won": true,
+          "name": "帝塚山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "2回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "県立大附属",
+          "score": 0,
+          "won": false,
+          "name": "県立大附属",
+          "slug": null
+        },
+        {
+          "display": "法隆寺国際",
+          "score": 13,
+          "won": true,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "2回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "桜井",
+          "score": 21,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        },
+        {
+          "display": "高円芸術・国際・二階堂・山辺",
+          "score": 0,
+          "won": false,
+          "name": "高円芸術・国際・二階堂・山辺",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "3回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "高田商業",
+          "score": 7,
+          "won": true,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        },
+        {
+          "display": "御所実業",
+          "score": 0,
+          "won": false,
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-29",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "3回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 7,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        },
+        {
+          "display": "橿原",
+          "score": 0,
+          "won": false,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-29",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "3回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "畝傍",
+          "score": 9,
+          "won": true,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        },
+        {
+          "display": "帝塚山",
+          "score": 3,
+          "won": false,
+          "name": "帝塚山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-29",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "3回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "法隆寺国際",
+          "score": 2,
+          "won": false,
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        },
+        {
+          "display": "桜井",
+          "score": 8,
+          "won": true,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-05-04",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "準々決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "高田商業",
+          "score": 9,
+          "won": true,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        },
+        {
+          "display": "郡山",
+          "score": 2,
+          "won": false,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-05-04",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "準々決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "畝傍",
+          "score": 8,
+          "won": true,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        },
+        {
+          "display": "桜井",
+          "score": 2,
+          "won": false,
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-05-06",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "準決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "高田商業",
+          "score": 0,
+          "won": false,
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        },
+        {
+          "display": "畝傍",
+          "score": 6,
+          "won": true,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "2回戦",
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "奈良北",
+          "score": 3,
+          "won": true,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        },
+        {
+          "display": "奈良",
+          "score": 2,
+          "won": false,
+          "name": "奈良高校",
+          "slug": "nara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "2回戦",
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "score": 4,
+          "won": false,
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "大和広陵",
+          "score": 5,
+          "won": true,
+          "name": "大和広陵高校",
+          "slug": "yamatokoryo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "2回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "県立商業",
+          "score": 0,
+          "won": false,
+          "name": "奈良県立商業高校",
+          "slug": "narakenritsushogyo"
+        },
+        {
+          "display": "奈良商工",
+          "score": 7,
+          "won": true,
+          "name": "奈良商工高校",
+          "slug": "narashoko"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "2回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "香芝",
+          "score": 4,
+          "won": true,
+          "name": "香芝高校",
+          "slug": "kashiba"
+        },
+        {
+          "display": "高取国際",
+          "score": 3,
+          "won": false,
+          "name": "高取国際高校",
+          "slug": "takatorikokusai"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "2回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "五條",
+          "score": 0,
+          "won": false,
+          "name": "五條高校",
+          "slug": "nara-gojo"
+        },
+        {
+          "display": "智辯学園",
+          "score": 22,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "2回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良大附",
+          "score": 8,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        },
+        {
+          "display": "一条",
+          "score": 1,
+          "won": false,
+          "name": "一条高校",
+          "slug": "ichijo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "2回戦",
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 7,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "生駒",
+          "score": 0,
+          "won": false,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "2回戦",
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "磯城野",
+          "score": 5,
+          "won": false,
+          "name": "磯城野高校",
+          "slug": "nara-shikino"
+        },
+        {
+          "display": "高田",
+          "score": 7,
+          "won": true,
+          "name": "高田高校",
+          "slug": "nara-takata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "3回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良北",
+          "score": 4,
+          "won": true,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        },
+        {
+          "display": "大和広陵",
+          "score": 1,
+          "won": false,
+          "name": "大和広陵高校",
+          "slug": "yamatokoryo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "3回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良商工",
+          "score": 13,
+          "won": true,
+          "name": "奈良商工高校",
+          "slug": "narashoko"
+        },
+        {
+          "display": "香芝",
+          "score": 5,
+          "won": false,
+          "name": "香芝高校",
+          "slug": "kashiba"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "3回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "score": 5,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "奈良大附",
+          "score": 0,
+          "won": false,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "3回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 1,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "高田",
+          "score": 0,
+          "won": false,
+          "name": "高田高校",
+          "slug": "nara-takata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-05-04",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "準々決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良北",
+          "score": 3,
+          "won": true,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        },
+        {
+          "display": "奈良商工",
+          "score": 1,
+          "won": false,
+          "name": "奈良商工高校",
+          "slug": "narashoko"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-05-04",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "準々決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "score": 2,
+          "won": false,
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "天理",
+          "score": 9,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-05-06",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "準決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良北",
+          "score": 0,
+          "won": false,
+          "name": "奈良北高校",
+          "slug": "narakita"
+        },
+        {
+          "display": "天理",
+          "score": 6,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-05-09",
+      "season": "spring",
+      "tournament": "2026年 春季近畿地区高校野球 奈良県大会",
+      "round": "決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 21,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "畝傍",
+          "score": 2,
+          "won": false,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nara.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2025-05-03",
       "season": "spring",
       "tournament": "2025年 春季近畿地区高等学校野球大会奈良県予選",

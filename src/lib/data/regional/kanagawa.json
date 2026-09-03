@@ -19387,6 +19387,4628 @@
       ]
     },
     {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭",
+          "score": 0,
+          "won": false,
+          "name": "旭高校",
+          "slug": "asahi"
+        },
+        {
+          "display": "城山",
+          "score": 7,
+          "won": true,
+          "name": "城山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "津久井・橋本",
+          "score": 0,
+          "won": false,
+          "name": "津久井・橋本",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "武相",
+          "score": 11,
+          "won": true,
+          "name": "武相",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜学園",
+          "score": 4,
+          "won": false,
+          "name": "横浜学園",
+          "slug": null
+        },
+        {
+          "display": "大磯",
+          "score": 9,
+          "won": true,
+          "name": "大磯高校",
+          "slug": "oiso"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "二宮",
+          "score": 1,
+          "won": false,
+          "name": "二宮高校",
+          "slug": "ninomiya"
+        },
+        {
+          "display": "住吉",
+          "score": 14,
+          "won": true,
+          "name": "住吉高校",
+          "slug": "sumiyoshi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "瀬谷西",
+          "score": 13,
+          "won": true,
+          "name": "瀬谷西",
+          "slug": null
+        },
+        {
+          "display": "逗葉",
+          "score": 2,
+          "won": false,
+          "name": "逗葉",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "城郷",
+          "score": 0,
+          "won": false,
+          "name": "城郷高校",
+          "slug": "shirosato"
+        },
+        {
+          "display": "座間総合",
+          "score": 3,
+          "won": true,
+          "name": "座間総合高校",
+          "slug": "zamasogo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市川崎・横浜緑園・釜利谷・永谷・横浜明朋",
+          "score": 0,
+          "won": false,
+          "name": "市川崎・横浜緑園・釜利谷・永谷・横浜明朋",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "湘南学院",
+          "score": 14,
+          "won": true,
+          "name": "湘南学院",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "秦野総合",
+          "score": 0,
+          "won": false,
+          "name": "秦野総合高校",
+          "slug": "hadanosogo"
+        },
+        {
+          "display": "菅",
+          "score": 14,
+          "won": true,
+          "name": "菅高校",
+          "slug": "suge"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "茅ヶ崎北陵",
+          "score": 10,
+          "won": true,
+          "name": "茅ケ崎北陵高校",
+          "slug": "chigasakihokuryo"
+        },
+        {
+          "display": "サレジオ学院",
+          "score": 0,
+          "won": false,
+          "name": "サレジオ学院",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "海老名",
+          "score": 7,
+          "won": true,
+          "name": "海老名高校",
+          "slug": "ebina"
+        },
+        {
+          "display": "金井",
+          "score": 2,
+          "won": false,
+          "name": "金井高校",
+          "slug": "kanai"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "秀英",
+          "score": 0,
+          "won": false,
+          "name": "秀英",
+          "slug": null
+        },
+        {
+          "display": "寒川",
+          "score": 10,
+          "won": true,
+          "name": "寒川高校",
+          "slug": "samukawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜桜陽",
+          "score": 2,
+          "won": true,
+          "name": "横浜桜陽高校",
+          "slug": "yokohamaoyo"
+        },
+        {
+          "display": "横浜旭陵・相模向陽館",
+          "score": 0,
+          "won": false,
+          "name": "横浜旭陵・相模向陽館",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "有馬",
+          "score": 4,
+          "won": true,
+          "name": "有馬高校",
+          "slug": "arima"
+        },
+        {
+          "display": "新羽",
+          "score": 2,
+          "won": false,
+          "name": "新羽高校",
+          "slug": "nippa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜栄",
+          "score": 11,
+          "won": true,
+          "name": "横浜栄高校",
+          "slug": "yokohamasakae"
+        },
+        {
+          "display": "多摩",
+          "score": 6,
+          "won": false,
+          "name": "多摩高校",
+          "slug": "kanagawa-tama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜氷取沢",
+          "score": 6,
+          "won": true,
+          "name": "横浜氷取沢高校",
+          "slug": "yokohamahitorizawa"
+        },
+        {
+          "display": "中大横浜",
+          "score": 4,
+          "won": false,
+          "name": "中大横浜",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "港北",
+          "score": 5,
+          "won": true,
+          "name": "港北高校",
+          "slug": "kanagawa-kohoku"
+        },
+        {
+          "display": "鶴見大附",
+          "score": 3,
+          "won": false,
+          "name": "鶴見大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "厚木清南・愛川・中央農・総合産業",
+          "score": 8,
+          "won": false,
+          "name": "厚木清南・愛川・中央農・総合産業",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "厚木西",
+          "score": 11,
+          "won": true,
+          "name": "厚木西高校",
+          "slug": "atsuginishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "藤沢清流",
+          "score": 8,
+          "won": true,
+          "name": "藤沢清流高校",
+          "slug": "fujisawaseiryu"
+        },
+        {
+          "display": "逗子",
+          "score": 3,
+          "won": false,
+          "name": "逗子",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "橘",
+          "score": 10,
+          "won": true,
+          "name": "橘高校",
+          "slug": "kanagawa-tachibana"
+        },
+        {
+          "display": "麻生",
+          "score": 0,
+          "won": false,
+          "name": "麻生高校",
+          "slug": "asao"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鶴嶺",
+          "score": 10,
+          "won": true,
+          "name": "鶴嶺高校",
+          "slug": "tsurumine"
+        },
+        {
+          "display": "高浜",
+          "score": 0,
+          "won": false,
+          "name": "高浜高校",
+          "slug": "takahama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "生田",
+          "score": 1,
+          "won": false,
+          "name": "生田高校",
+          "slug": "ikuta"
+        },
+        {
+          "display": "秦野曽屋",
+          "score": 3,
+          "won": true,
+          "name": "秦野曽屋高校",
+          "slug": "hadanosoya"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "茅ケ崎西浜",
+          "score": 46,
+          "won": true,
+          "name": "茅ケ崎西浜高校",
+          "slug": "chigasakinishihama"
+        },
+        {
+          "display": "海洋科学",
+          "score": 0,
+          "won": false,
+          "name": "海洋科学高校",
+          "slug": "kaiyokagaku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小田原",
+          "score": 0,
+          "won": false,
+          "name": "小田原高校",
+          "slug": "odawara"
+        },
+        {
+          "display": "光明相模原",
+          "score": 11,
+          "won": true,
+          "name": "光明相模原",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-07",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐光学園",
+          "score": 11,
+          "won": true,
+          "name": "桐光学園",
+          "slug": null
+        },
+        {
+          "display": "城山",
+          "score": 1,
+          "won": false,
+          "name": "城山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-07",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "相模原中等教育",
+          "score": 9,
+          "won": true,
+          "name": "相模原中等教育",
+          "slug": null
+        },
+        {
+          "display": "相模田名",
+          "score": 1,
+          "won": false,
+          "name": "相模田名高校",
+          "slug": "sagamitana"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-07",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "厚木北",
+          "score": 0,
+          "won": false,
+          "name": "厚木北高校",
+          "slug": "atsugikita"
+        },
+        {
+          "display": "武相",
+          "score": 1,
+          "won": true,
+          "name": "武相",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-07",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "湘南学園",
+          "score": 7,
+          "won": false,
+          "name": "湘南学園",
+          "slug": null
+        },
+        {
+          "display": "生田東",
+          "score": 9,
+          "won": true,
+          "name": "生田東高校",
+          "slug": "ikutahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-09",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜商業",
+          "score": 10,
+          "won": true,
+          "name": "横浜商業高校",
+          "slug": "yokohamashogyo"
+        },
+        {
+          "display": "大磯",
+          "score": 0,
+          "won": false,
+          "name": "大磯高校",
+          "slug": "oiso"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-07",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "西湘",
+          "score": 4,
+          "won": true,
+          "name": "西湘高校",
+          "slug": "seisho"
+        },
+        {
+          "display": "七里ガ浜",
+          "score": 2,
+          "won": false,
+          "name": "七里ガ浜高校",
+          "slug": "shichirigahama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-07",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横須賀総合",
+          "score": 2,
+          "won": false,
+          "name": "横須賀総合高校",
+          "slug": "yokosukasogo"
+        },
+        {
+          "display": "住吉",
+          "score": 7,
+          "won": true,
+          "name": "住吉高校",
+          "slug": "sumiyoshi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-07",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "川和",
+          "score": 13,
+          "won": true,
+          "name": "川和高校",
+          "slug": "kawawa"
+        },
+        {
+          "display": "瀬谷西",
+          "score": 0,
+          "won": false,
+          "name": "瀬谷西",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-07",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "湘南工大附",
+          "score": 8,
+          "won": true,
+          "name": "湘南工大附",
+          "slug": null
+        },
+        {
+          "display": "座間総合",
+          "score": 1,
+          "won": false,
+          "name": "座間総合高校",
+          "slug": "zamasogo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-08",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "幸",
+          "score": 0,
+          "won": false,
+          "name": "幸高校",
+          "slug": "saiwai"
+        },
+        {
+          "display": "星槎国際湘南",
+          "score": 31,
+          "won": true,
+          "name": "星槎国際湘南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-08",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜隼人",
+          "score": 6,
+          "won": true,
+          "name": "横浜隼人",
+          "slug": null
+        },
+        {
+          "display": "湘南学院",
+          "score": 1,
+          "won": false,
+          "name": "湘南学院",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-07",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "綾瀬",
+          "score": 2,
+          "won": true,
+          "name": "綾瀬高校",
+          "slug": "ayase"
+        },
+        {
+          "display": "菅",
+          "score": 1,
+          "won": false,
+          "name": "菅高校",
+          "slug": "suge"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-09",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "橘学苑",
+          "score": 10,
+          "won": true,
+          "name": "橘学苑",
+          "slug": null
+        },
+        {
+          "display": "茅ヶ崎北陵",
+          "score": 0,
+          "won": false,
+          "name": "茅ケ崎北陵高校",
+          "slug": "chigasakihokuryo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-07",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市ヶ尾",
+          "score": 9,
+          "won": true,
+          "name": "市ケ尾高校",
+          "slug": "ichigao"
+        },
+        {
+          "display": "座間",
+          "score": 1,
+          "won": false,
+          "name": "座間高校",
+          "slug": "zama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-09",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "法政二",
+          "score": 3,
+          "won": false,
+          "name": "法政二",
+          "slug": null
+        },
+        {
+          "display": "海老名",
+          "score": 4,
+          "won": true,
+          "name": "海老名高校",
+          "slug": "ebina"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-09",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大和南",
+          "score": 6,
+          "won": false,
+          "name": "大和南高校",
+          "slug": "yamatominami"
+        },
+        {
+          "display": "寒川",
+          "score": 8,
+          "won": true,
+          "name": "寒川高校",
+          "slug": "samukawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-08",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "相洋",
+          "score": 10,
+          "won": true,
+          "name": "相洋",
+          "slug": null
+        },
+        {
+          "display": "横浜桜陽",
+          "score": 0,
+          "won": false,
+          "name": "横浜桜陽高校",
+          "slug": "yokohamaoyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-09",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜翠陵",
+          "score": 8,
+          "won": true,
+          "name": "横浜翠陵",
+          "slug": null
+        },
+        {
+          "display": "アレセイア湘南",
+          "score": 3,
+          "won": false,
+          "name": "アレセイア湘南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-09",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "柏木学園",
+          "score": 18,
+          "won": true,
+          "name": "柏木学園",
+          "slug": null
+        },
+        {
+          "display": "有馬",
+          "score": 4,
+          "won": false,
+          "name": "有馬高校",
+          "slug": "arima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-07",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "平塚湘風",
+          "score": 6,
+          "won": true,
+          "name": "平塚湘風高校",
+          "slug": "hiratsukashofu"
+        },
+        {
+          "display": "横浜栄",
+          "score": 1,
+          "won": false,
+          "name": "横浜栄高校",
+          "slug": "yokohamasakae"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-08",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "慶応義塾",
+          "score": 9,
+          "won": true,
+          "name": "慶応義塾",
+          "slug": null
+        },
+        {
+          "display": "横浜氷取沢",
+          "score": 1,
+          "won": false,
+          "name": "横浜氷取沢高校",
+          "slug": "yokohamahitorizawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-07",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "津久井浜",
+          "score": 5,
+          "won": false,
+          "name": "津久井浜高校",
+          "slug": "tsukuihama"
+        },
+        {
+          "display": "横須賀大津",
+          "score": 12,
+          "won": true,
+          "name": "横須賀大津高校",
+          "slug": "yokosukaotsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-08",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "相原",
+          "score": 8,
+          "won": true,
+          "name": "相原高校",
+          "slug": "aihara"
+        },
+        {
+          "display": "港北",
+          "score": 4,
+          "won": false,
+          "name": "港北高校",
+          "slug": "kanagawa-kohoku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-08",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "伊志田",
+          "score": 7,
+          "won": true,
+          "name": "伊志田高校",
+          "slug": "ishida"
+        },
+        {
+          "display": "厚木西",
+          "score": 4,
+          "won": false,
+          "name": "厚木西高校",
+          "slug": "atsuginishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-09",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立花学園",
+          "score": 11,
+          "won": true,
+          "name": "立花学園",
+          "slug": null
+        },
+        {
+          "display": "藤沢清流",
+          "score": 1,
+          "won": false,
+          "name": "藤沢清流高校",
+          "slug": "fujisawaseiryu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-07",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "湘南台",
+          "score": 8,
+          "won": true,
+          "name": "湘南台高校",
+          "slug": "shonandai"
+        },
+        {
+          "display": "上矢部",
+          "score": 7,
+          "won": false,
+          "name": "上矢部高校",
+          "slug": "kamiyabe"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-08",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "城北工業",
+          "score": 4,
+          "won": false,
+          "name": "城北工業",
+          "slug": null
+        },
+        {
+          "display": "橘",
+          "score": 10,
+          "won": true,
+          "name": "橘高校",
+          "slug": "kanagawa-tachibana"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-07",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "霧が丘",
+          "score": 9,
+          "won": true,
+          "name": "霧が丘高校",
+          "slug": "kanagawa-kirigaoka"
+        },
+        {
+          "display": "鶴嶺",
+          "score": 6,
+          "won": false,
+          "name": "鶴嶺高校",
+          "slug": "tsurumine"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-08",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "向上",
+          "score": 10,
+          "won": true,
+          "name": "向上",
+          "slug": null
+        },
+        {
+          "display": "秦野曽屋",
+          "score": 0,
+          "won": false,
+          "name": "秦野曽屋高校",
+          "slug": "hadanosoya"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-08",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "藤嶺藤沢",
+          "score": 14,
+          "won": true,
+          "name": "藤嶺藤沢",
+          "slug": null
+        },
+        {
+          "display": "秦野",
+          "score": 3,
+          "won": false,
+          "name": "秦野高校",
+          "slug": "hadano"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-07",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "相模原総合",
+          "score": 9,
+          "won": false,
+          "name": "相模原総合",
+          "slug": null
+        },
+        {
+          "display": "茅ケ崎西浜",
+          "score": 10,
+          "won": true,
+          "name": "茅ケ崎西浜高校",
+          "slug": "chigasakinishihama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-08",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜創学館",
+          "score": 7,
+          "won": true,
+          "name": "横浜創学館",
+          "slug": null
+        },
+        {
+          "display": "光明相模原",
+          "score": 0,
+          "won": false,
+          "name": "光明相模原",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-10",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐光学園",
+          "score": 11,
+          "won": true,
+          "name": "桐光学園",
+          "slug": null
+        },
+        {
+          "display": "相模原中等教育",
+          "score": 0,
+          "won": false,
+          "name": "相模原中等教育",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-10",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "武相",
+          "score": 16,
+          "won": true,
+          "name": "武相",
+          "slug": null
+        },
+        {
+          "display": "生田東",
+          "score": 4,
+          "won": false,
+          "name": "生田東高校",
+          "slug": "ikutahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜商業",
+          "score": 6,
+          "won": true,
+          "name": "横浜商業高校",
+          "slug": "yokohamashogyo"
+        },
+        {
+          "display": "西湘",
+          "score": 0,
+          "won": false,
+          "name": "西湘高校",
+          "slug": "seisho"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "住吉",
+          "score": 2,
+          "won": false,
+          "name": "住吉高校",
+          "slug": "sumiyoshi"
+        },
+        {
+          "display": "川和",
+          "score": 6,
+          "won": true,
+          "name": "川和高校",
+          "slug": "kawawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "湘南工大附",
+          "score": 1,
+          "won": false,
+          "name": "湘南工大附",
+          "slug": null
+        },
+        {
+          "display": "星槎国際湘南",
+          "score": 12,
+          "won": true,
+          "name": "星槎国際湘南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜隼人",
+          "score": 8,
+          "won": true,
+          "name": "横浜隼人",
+          "slug": null
+        },
+        {
+          "display": "綾瀬",
+          "score": 1,
+          "won": false,
+          "name": "綾瀬高校",
+          "slug": "ayase"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "橘学苑",
+          "score": 15,
+          "won": true,
+          "name": "橘学苑",
+          "slug": null
+        },
+        {
+          "display": "市ヶ尾",
+          "score": 1,
+          "won": false,
+          "name": "市ケ尾高校",
+          "slug": "ichigao"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-12",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "海老名",
+          "score": 16,
+          "won": true,
+          "name": "海老名高校",
+          "slug": "ebina"
+        },
+        {
+          "display": "寒川",
+          "score": 13,
+          "won": false,
+          "name": "寒川高校",
+          "slug": "samukawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "相洋",
+          "score": 10,
+          "won": true,
+          "name": "相洋",
+          "slug": null
+        },
+        {
+          "display": "横浜翠陵",
+          "score": 0,
+          "won": false,
+          "name": "横浜翠陵",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "柏木学園",
+          "score": 4,
+          "won": false,
+          "name": "柏木学園",
+          "slug": null
+        },
+        {
+          "display": "平塚湘風",
+          "score": 5,
+          "won": true,
+          "name": "平塚湘風高校",
+          "slug": "hiratsukashofu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "慶応義塾",
+          "score": 11,
+          "won": true,
+          "name": "慶応義塾",
+          "slug": null
+        },
+        {
+          "display": "横須賀大津",
+          "score": 1,
+          "won": false,
+          "name": "横須賀大津高校",
+          "slug": "yokosukaotsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "相原",
+          "score": 0,
+          "won": false,
+          "name": "相原高校",
+          "slug": "aihara"
+        },
+        {
+          "display": "伊志田",
+          "score": 10,
+          "won": true,
+          "name": "伊志田高校",
+          "slug": "ishida"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立花学園",
+          "score": 13,
+          "won": true,
+          "name": "立花学園",
+          "slug": null
+        },
+        {
+          "display": "湘南台",
+          "score": 2,
+          "won": false,
+          "name": "湘南台高校",
+          "slug": "shonandai"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "橘",
+          "score": 4,
+          "won": true,
+          "name": "橘高校",
+          "slug": "kanagawa-tachibana"
+        },
+        {
+          "display": "霧が丘",
+          "score": 3,
+          "won": false,
+          "name": "霧が丘高校",
+          "slug": "kanagawa-kirigaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "向上",
+          "score": 5,
+          "won": true,
+          "name": "向上",
+          "slug": null
+        },
+        {
+          "display": "藤嶺藤沢",
+          "score": 4,
+          "won": false,
+          "name": "藤嶺藤沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "茅ケ崎西浜",
+          "score": 1,
+          "won": false,
+          "name": "茅ケ崎西浜高校",
+          "slug": "chigasakinishihama"
+        },
+        {
+          "display": "横浜創学館",
+          "score": 3,
+          "won": true,
+          "name": "横浜創学館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-12",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐光学園",
+          "score": 12,
+          "won": true,
+          "name": "桐光学園",
+          "slug": null
+        },
+        {
+          "display": "武相",
+          "score": 5,
+          "won": false,
+          "name": "武相",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-13",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜商業",
+          "score": 5,
+          "won": true,
+          "name": "横浜商業高校",
+          "slug": "yokohamashogyo"
+        },
+        {
+          "display": "川和",
+          "score": 0,
+          "won": false,
+          "name": "川和高校",
+          "slug": "kawawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-13",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "星槎国際湘南",
+          "score": 7,
+          "won": true,
+          "name": "星槎国際湘南",
+          "slug": null
+        },
+        {
+          "display": "横浜隼人",
+          "score": 4,
+          "won": false,
+          "name": "横浜隼人",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-13",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "橘学苑",
+          "score": 1,
+          "won": false,
+          "name": "橘学苑",
+          "slug": null
+        },
+        {
+          "display": "海老名",
+          "score": 2,
+          "won": true,
+          "name": "海老名高校",
+          "slug": "ebina"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-13",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "相洋",
+          "score": 7,
+          "won": true,
+          "name": "相洋",
+          "slug": null
+        },
+        {
+          "display": "平塚湘風",
+          "score": 0,
+          "won": false,
+          "name": "平塚湘風高校",
+          "slug": "hiratsukashofu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-13",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "慶応義塾",
+          "score": 4,
+          "won": true,
+          "name": "慶応義塾",
+          "slug": null
+        },
+        {
+          "display": "伊志田",
+          "score": 3,
+          "won": false,
+          "name": "伊志田高校",
+          "slug": "ishida"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-13",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立花学園",
+          "score": 10,
+          "won": true,
+          "name": "立花学園",
+          "slug": null
+        },
+        {
+          "display": "橘",
+          "score": 2,
+          "won": false,
+          "name": "橘高校",
+          "slug": "kanagawa-tachibana"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-13",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "向上",
+          "score": 3,
+          "won": false,
+          "name": "向上",
+          "slug": null
+        },
+        {
+          "display": "横浜創学館",
+          "score": 5,
+          "won": true,
+          "name": "横浜創学館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-16",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐光学園",
+          "score": 3,
+          "won": true,
+          "name": "桐光学園",
+          "slug": null
+        },
+        {
+          "display": "横浜商業",
+          "score": 0,
+          "won": false,
+          "name": "横浜商業高校",
+          "slug": "yokohamashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-16",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "星槎国際湘南",
+          "score": 13,
+          "won": true,
+          "name": "星槎国際湘南",
+          "slug": null
+        },
+        {
+          "display": "海老名",
+          "score": 2,
+          "won": false,
+          "name": "海老名高校",
+          "slug": "ebina"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-15",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "相洋",
+          "score": 18,
+          "won": true,
+          "name": "相洋",
+          "slug": null
+        },
+        {
+          "display": "慶応義塾",
+          "score": 4,
+          "won": false,
+          "name": "慶応義塾",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-15",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立花学園",
+          "score": 5,
+          "won": true,
+          "name": "立花学園",
+          "slug": null
+        },
+        {
+          "display": "横浜創学館",
+          "score": 4,
+          "won": false,
+          "name": "横浜創学館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐光学園",
+          "score": 0,
+          "won": false,
+          "name": "桐光学園",
+          "slug": null
+        },
+        {
+          "display": "星槎国際湘南",
+          "score": 4,
+          "won": true,
+          "name": "星槎国際湘南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-16",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "相洋",
+          "score": 5,
+          "won": true,
+          "name": "相洋",
+          "slug": null
+        },
+        {
+          "display": "立花学園",
+          "score": 0,
+          "won": false,
+          "name": "立花学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-22",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "星槎国際湘南",
+          "score": 6,
+          "won": false,
+          "name": "星槎国際湘南",
+          "slug": null
+        },
+        {
+          "display": "相洋",
+          "score": 9,
+          "won": true,
+          "name": "相洋",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "関東学院",
+          "score": 2,
+          "won": false,
+          "name": "関東学院",
+          "slug": null
+        },
+        {
+          "display": "川崎北",
+          "score": 6,
+          "won": true,
+          "name": "川崎北高校",
+          "slug": "kawasakikita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "藤沢総合・平塚農商",
+          "score": 0,
+          "won": false,
+          "name": "藤沢総合・平塚農商",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "新城",
+          "score": 8,
+          "won": true,
+          "name": "新城高校",
+          "slug": "shinjo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "深沢",
+          "score": 2,
+          "won": false,
+          "name": "深沢高校",
+          "slug": "kanagawa-fukasawa"
+        },
+        {
+          "display": "大和西",
+          "score": 12,
+          "won": true,
+          "name": "大和西高校",
+          "slug": "yamatonishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "上溝南",
+          "score": 19,
+          "won": true,
+          "name": "上溝南高校",
+          "slug": "kamimizominami"
+        },
+        {
+          "display": "森村学園",
+          "score": 0,
+          "won": false,
+          "name": "森村学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "県川崎",
+          "score": 0,
+          "won": false,
+          "name": "県川崎",
+          "slug": null
+        },
+        {
+          "display": "相模原弥栄",
+          "score": 30,
+          "won": true,
+          "name": "相模原弥栄高校",
+          "slug": "sagamiharayaei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜サイエンスフロンティア",
+          "score": 1,
+          "won": false,
+          "name": "横浜サイエンスフロンティア高校",
+          "slug": "yokohamasaiensufurontia"
+        },
+        {
+          "display": "横浜清陵",
+          "score": 5,
+          "won": true,
+          "name": "横浜清陵高校",
+          "slug": "yokohamaseiryo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "上溝",
+          "score": 3,
+          "won": false,
+          "name": "上溝高校",
+          "slug": "kamimizo"
+        },
+        {
+          "display": "横浜緑ヶ丘",
+          "score": 5,
+          "won": true,
+          "name": "横浜緑ケ丘高校",
+          "slug": "yokohamamidorigaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "厚木東",
+          "score": 0,
+          "won": false,
+          "name": "厚木東",
+          "slug": null
+        },
+        {
+          "display": "総合科学",
+          "score": 8,
+          "won": true,
+          "name": "総合科学",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "逗子開成",
+          "score": 8,
+          "won": false,
+          "name": "逗子開成",
+          "slug": null
+        },
+        {
+          "display": "神奈川大附",
+          "score": 10,
+          "won": true,
+          "name": "神奈川大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大和",
+          "score": 10,
+          "won": true,
+          "name": "大和高校",
+          "slug": "yamato"
+        },
+        {
+          "display": "横須賀南",
+          "score": 0,
+          "won": false,
+          "name": "横須賀南高校",
+          "slug": "yokosukaminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横須賀学院",
+          "score": 6,
+          "won": true,
+          "name": "横須賀学院",
+          "slug": null
+        },
+        {
+          "display": "綾瀬西",
+          "score": 0,
+          "won": false,
+          "name": "綾瀬西高校",
+          "slug": "ayasenishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新栄",
+          "score": 1,
+          "won": false,
+          "name": "新栄高校",
+          "slug": "shinei"
+        },
+        {
+          "display": "桜丘",
+          "score": 8,
+          "won": true,
+          "name": "桜丘高校",
+          "slug": "sakuragaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高津",
+          "score": 4,
+          "won": true,
+          "name": "高津高校",
+          "slug": "takatsu"
+        },
+        {
+          "display": "追浜",
+          "score": 3,
+          "won": false,
+          "name": "追浜高校",
+          "slug": "oppama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大和東",
+          "score": 1,
+          "won": false,
+          "name": "大和東高校",
+          "slug": "yamatohigashi"
+        },
+        {
+          "display": "南",
+          "score": 11,
+          "won": true,
+          "name": "南高校",
+          "slug": "minami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "光陵",
+          "score": 3,
+          "won": false,
+          "name": "光陵高校",
+          "slug": "koryo"
+        },
+        {
+          "display": "元石川",
+          "score": 8,
+          "won": true,
+          "name": "元石川高校",
+          "slug": "motoishikawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "慶應藤沢",
+          "score": 13,
+          "won": true,
+          "name": "慶應藤沢",
+          "slug": null
+        },
+        {
+          "display": "茅ヶ崎",
+          "score": 4,
+          "won": false,
+          "name": "茅ケ崎高校",
+          "slug": "chigasaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "白山",
+          "score": 3,
+          "won": false,
+          "name": "白山高校",
+          "slug": "hakusan"
+        },
+        {
+          "display": "戸塚",
+          "score": 4,
+          "won": true,
+          "name": "戸塚高校",
+          "slug": "totsuka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "厚木",
+          "score": 7,
+          "won": true,
+          "name": "厚木高校",
+          "slug": "atsugi"
+        },
+        {
+          "display": "旭丘",
+          "score": 6,
+          "won": false,
+          "name": "旭丘",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜平沼",
+          "score": 13,
+          "won": true,
+          "name": "横浜平沼高校",
+          "slug": "yokohamahiranuma"
+        },
+        {
+          "display": "藤沢工科",
+          "score": 4,
+          "won": false,
+          "name": "藤沢工科高校",
+          "slug": "fujisawakoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜南陵",
+          "score": 1,
+          "won": false,
+          "name": "横浜南陵高校",
+          "slug": "yokohamananryo"
+        },
+        {
+          "display": "山北",
+          "score": 8,
+          "won": true,
+          "name": "山北高校",
+          "slug": "yamakita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日本大学",
+          "score": 16,
+          "won": true,
+          "name": "日本大学",
+          "slug": null
+        },
+        {
+          "display": "上鶴間",
+          "score": 0,
+          "won": false,
+          "name": "上鶴間高校",
+          "slug": "kamitsuruma"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "百合丘",
+          "score": 4,
+          "won": true,
+          "name": "百合丘高校",
+          "slug": "yurigaoka"
+        },
+        {
+          "display": "伊勢原",
+          "score": 2,
+          "won": false,
+          "name": "伊勢原高校",
+          "slug": "isehara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海大相模",
+          "score": 7,
+          "won": true,
+          "name": "東海大相模",
+          "slug": null
+        },
+        {
+          "display": "川崎北",
+          "score": 0,
+          "won": false,
+          "name": "川崎北高校",
+          "slug": "kawasakikita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "保土ヶ谷",
+          "score": 1,
+          "won": false,
+          "name": "保土ケ谷高校",
+          "slug": "hodogaya"
+        },
+        {
+          "display": "山手学院",
+          "score": 2,
+          "won": true,
+          "name": "山手学院",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "関東学院六浦",
+          "score": 1,
+          "won": false,
+          "name": "関東学院六浦",
+          "slug": null
+        },
+        {
+          "display": "新城",
+          "score": 8,
+          "won": true,
+          "name": "新城高校",
+          "slug": "shinjo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "希望ヶ丘",
+          "score": 5,
+          "won": false,
+          "name": "希望ケ丘高校",
+          "slug": "kibogaoka"
+        },
+        {
+          "display": "相模原",
+          "score": 19,
+          "won": true,
+          "name": "相模原高校",
+          "slug": "sagamihara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐蔭学園",
+          "score": 13,
+          "won": true,
+          "name": "桐蔭学園",
+          "slug": null
+        },
+        {
+          "display": "大和西",
+          "score": 3,
+          "won": false,
+          "name": "大和西高校",
+          "slug": "yamatonishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-05",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "湘南",
+          "score": 10,
+          "won": true,
+          "name": "湘南高校",
+          "slug": "kanagawa-shonan"
+        },
+        {
+          "display": "上溝南",
+          "score": 2,
+          "won": false,
+          "name": "上溝南高校",
+          "slug": "kamimizominami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "平塚江南",
+          "score": 2,
+          "won": false,
+          "name": "平塚江南高校",
+          "slug": "hiratsukakonan"
+        },
+        {
+          "display": "相模原弥栄",
+          "score": 7,
+          "won": true,
+          "name": "相模原弥栄高校",
+          "slug": "sagamiharayaei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜商大",
+          "score": 3,
+          "won": true,
+          "name": "横浜商大",
+          "slug": null
+        },
+        {
+          "display": "横浜清陵",
+          "score": 1,
+          "won": false,
+          "name": "横浜清陵高校",
+          "slug": "yokohamaseiryo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "平塚工科",
+          "score": 0,
+          "won": false,
+          "name": "平塚工科高校",
+          "slug": "hiratsukakoka"
+        },
+        {
+          "display": "麻布大附",
+          "score": 14,
+          "won": true,
+          "name": "麻布大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-05",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "荏田",
+          "score": 7,
+          "won": true,
+          "name": "荏田高校",
+          "slug": "eda"
+        },
+        {
+          "display": "横浜緑ヶ丘",
+          "score": 1,
+          "won": false,
+          "name": "横浜緑ケ丘高校",
+          "slug": "yokohamamidorigaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-05",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "川崎工科",
+          "score": 4,
+          "won": false,
+          "name": "川崎工科高校",
+          "slug": "kawasakikoka"
+        },
+        {
+          "display": "総合科学",
+          "score": 9,
+          "won": true,
+          "name": "総合科学",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "平塚学園",
+          "score": 8,
+          "won": true,
+          "name": "平塚学園",
+          "slug": null
+        },
+        {
+          "display": "神奈川大附",
+          "score": 1,
+          "won": false,
+          "name": "神奈川大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鶴見",
+          "score": 0,
+          "won": false,
+          "name": "鶴見高校",
+          "slug": "tsurumi"
+        },
+        {
+          "display": "鎌倉学園",
+          "score": 3,
+          "won": true,
+          "name": "鎌倉学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-05",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東",
+          "score": 1,
+          "won": false,
+          "name": "東高校",
+          "slug": "higashi"
+        },
+        {
+          "display": "大和",
+          "score": 9,
+          "won": true,
+          "name": "大和高校",
+          "slug": "yamato"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "柏陽",
+          "score": 1,
+          "won": false,
+          "name": "柏陽高校",
+          "slug": "hakuyo"
+        },
+        {
+          "display": "横須賀学院",
+          "score": 6,
+          "won": true,
+          "name": "横須賀学院",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三浦学苑",
+          "score": 7,
+          "won": true,
+          "name": "三浦学苑",
+          "slug": null
+        },
+        {
+          "display": "桜丘",
+          "score": 0,
+          "won": false,
+          "name": "桜丘高校",
+          "slug": "sakuragaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "藤沢西",
+          "score": 10,
+          "won": true,
+          "name": "藤沢西高校",
+          "slug": "fujisawanishi"
+        },
+        {
+          "display": "向の岡工業",
+          "score": 0,
+          "won": false,
+          "name": "向の岡工業高校",
+          "slug": "mukainokakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-07",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横須賀工業",
+          "score": 4,
+          "won": true,
+          "name": "横須賀工業高校",
+          "slug": "yokosukakogyo"
+        },
+        {
+          "display": "高津",
+          "score": 3,
+          "won": false,
+          "name": "高津高校",
+          "slug": "takatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大船",
+          "score": 3,
+          "won": false,
+          "name": "大船高校",
+          "slug": "ofuna"
+        },
+        {
+          "display": "瀬谷",
+          "score": 13,
+          "won": true,
+          "name": "瀬谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-08",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "藤沢翔陵",
+          "score": 14,
+          "won": true,
+          "name": "藤沢翔陵",
+          "slug": null
+        },
+        {
+          "display": "南",
+          "score": 3,
+          "won": false,
+          "name": "南高校",
+          "slug": "minami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 8,
+          "won": true,
+          "name": "金沢高校",
+          "slug": "kanazawa"
+        },
+        {
+          "display": "麻溝台",
+          "score": 2,
+          "won": false,
+          "name": "麻溝台高校",
+          "slug": "asamizodai"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松陽",
+          "score": 7,
+          "won": true,
+          "name": "松陽高校",
+          "slug": "kanagawa-shoyo"
+        },
+        {
+          "display": "元石川",
+          "score": 5,
+          "won": false,
+          "name": "元石川高校",
+          "slug": "motoishikawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日大藤沢",
+          "score": 17,
+          "won": true,
+          "name": "日大藤沢",
+          "slug": null
+        },
+        {
+          "display": "慶應藤沢",
+          "score": 9,
+          "won": false,
+          "name": "慶應藤沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-05",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜",
+          "score": 10,
+          "won": true,
+          "name": "横浜",
+          "slug": null
+        },
+        {
+          "display": "戸塚",
+          "score": 0,
+          "won": false,
+          "name": "戸塚高校",
+          "slug": "totsuka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-05",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岸根",
+          "score": 13,
+          "won": true,
+          "name": "岸根高校",
+          "slug": "kishine"
+        },
+        {
+          "display": "磯子工業",
+          "score": 3,
+          "won": false,
+          "name": "磯子工業高校",
+          "slug": "isogokogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横須賀",
+          "score": 5,
+          "won": true,
+          "name": "横須賀高校",
+          "slug": "yokosuka"
+        },
+        {
+          "display": "厚木",
+          "score": 1,
+          "won": false,
+          "name": "厚木高校",
+          "slug": "atsugi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大師",
+          "score": 1,
+          "won": false,
+          "name": "大師高校",
+          "slug": "daishi"
+        },
+        {
+          "display": "横浜平沼",
+          "score": 2,
+          "won": true,
+          "name": "横浜平沼高校",
+          "slug": "yokohamahiranuma"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "神奈川工業",
+          "score": 8,
+          "won": false,
+          "name": "神奈川工業高校",
+          "slug": "kanagawakogyo"
+        },
+        {
+          "display": "山北",
+          "score": 11,
+          "won": true,
+          "name": "山北高校",
+          "slug": "yamakita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-05",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鎌倉",
+          "score": 3,
+          "won": false,
+          "name": "鎌倉高校",
+          "slug": "kamakura"
+        },
+        {
+          "display": "商工",
+          "score": 5,
+          "won": true,
+          "name": "神奈川県立商工高校",
+          "slug": "kanagawakenritsushoko"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-05",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜立野",
+          "score": 1,
+          "won": false,
+          "name": "横浜立野高校",
+          "slug": "yokohamatateno"
+        },
+        {
+          "display": "日本大学",
+          "score": 10,
+          "won": true,
+          "name": "日本大学",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "金沢総合",
+          "score": 6,
+          "won": false,
+          "name": "金沢総合高校",
+          "slug": "kanazawasogo"
+        },
+        {
+          "display": "百合丘",
+          "score": 8,
+          "won": true,
+          "name": "百合丘高校",
+          "slug": "yurigaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-07",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海大相模",
+          "score": 7,
+          "won": true,
+          "name": "東海大相模",
+          "slug": null
+        },
+        {
+          "display": "山手学院",
+          "score": 0,
+          "won": false,
+          "name": "山手学院",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-09",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新城",
+          "score": 0,
+          "won": false,
+          "name": "新城高校",
+          "slug": "shinjo"
+        },
+        {
+          "display": "相模原",
+          "score": 11,
+          "won": true,
+          "name": "相模原高校",
+          "slug": "sagamihara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-09",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐蔭学園",
+          "score": 9,
+          "won": true,
+          "name": "桐蔭学園",
+          "slug": null
+        },
+        {
+          "display": "横浜翠嵐",
+          "score": 2,
+          "won": false,
+          "name": "横浜翠嵐高校",
+          "slug": "yokohamasuiran"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-09",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "湘南",
+          "score": 4,
+          "won": false,
+          "name": "湘南高校",
+          "slug": "kanagawa-shonan"
+        },
+        {
+          "display": "相模原弥栄",
+          "score": 15,
+          "won": true,
+          "name": "相模原弥栄高校",
+          "slug": "sagamiharayaei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-09",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜商大",
+          "score": 9,
+          "won": true,
+          "name": "横浜商大",
+          "slug": null
+        },
+        {
+          "display": "麻布大附",
+          "score": 4,
+          "won": false,
+          "name": "麻布大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-08",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "荏田",
+          "score": 1,
+          "won": false,
+          "name": "荏田高校",
+          "slug": "eda"
+        },
+        {
+          "display": "総合科学",
+          "score": 2,
+          "won": true,
+          "name": "総合科学",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-09",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "平塚学園",
+          "score": 13,
+          "won": true,
+          "name": "平塚学園",
+          "slug": null
+        },
+        {
+          "display": "鎌倉学園",
+          "score": 3,
+          "won": false,
+          "name": "鎌倉学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-09",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大和",
+          "score": 3,
+          "won": false,
+          "name": "大和高校",
+          "slug": "yamato"
+        },
+        {
+          "display": "横須賀学院",
+          "score": 8,
+          "won": true,
+          "name": "横須賀学院",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-10",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三浦学苑",
+          "score": 7,
+          "won": true,
+          "name": "三浦学苑",
+          "slug": null
+        },
+        {
+          "display": "藤沢西",
+          "score": 0,
+          "won": false,
+          "name": "藤沢西高校",
+          "slug": "fujisawanishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-10",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横須賀工業",
+          "score": 3,
+          "won": false,
+          "name": "横須賀工業高校",
+          "slug": "yokosukakogyo"
+        },
+        {
+          "display": "瀬谷",
+          "score": 17,
+          "won": true,
+          "name": "瀬谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "藤沢翔陵",
+          "score": 6,
+          "won": true,
+          "name": "藤沢翔陵",
+          "slug": null
+        },
+        {
+          "display": "金沢",
+          "score": 4,
+          "won": false,
+          "name": "金沢高校",
+          "slug": "kanazawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-09",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松陽",
+          "score": 0,
+          "won": false,
+          "name": "松陽高校",
+          "slug": "kanagawa-shoyo"
+        },
+        {
+          "display": "日大藤沢",
+          "score": 10,
+          "won": true,
+          "name": "日大藤沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-10",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜",
+          "score": 10,
+          "won": true,
+          "name": "横浜",
+          "slug": null
+        },
+        {
+          "display": "岸根",
+          "score": 0,
+          "won": false,
+          "name": "岸根高校",
+          "slug": "kishine"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-10",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横須賀",
+          "score": 10,
+          "won": true,
+          "name": "横須賀高校",
+          "slug": "yokosuka"
+        },
+        {
+          "display": "横浜平沼",
+          "score": 6,
+          "won": false,
+          "name": "横浜平沼高校",
+          "slug": "yokohamahiranuma"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-10",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "山北",
+          "score": 12,
+          "won": true,
+          "name": "山北高校",
+          "slug": "yamakita"
+        },
+        {
+          "display": "商工",
+          "score": 3,
+          "won": false,
+          "name": "神奈川県立商工高校",
+          "slug": "kanagawakenritsushoko"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-10",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日本大学",
+          "score": 8,
+          "won": true,
+          "name": "日本大学",
+          "slug": null
+        },
+        {
+          "display": "百合丘",
+          "score": 1,
+          "won": false,
+          "name": "百合丘高校",
+          "slug": "yurigaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-12",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海大相模",
+          "score": 10,
+          "won": true,
+          "name": "東海大相模",
+          "slug": null
+        },
+        {
+          "display": "相模原",
+          "score": 3,
+          "won": false,
+          "name": "相模原高校",
+          "slug": "sagamihara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-12",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐蔭学園",
+          "score": 2,
+          "won": false,
+          "name": "桐蔭学園",
+          "slug": null
+        },
+        {
+          "display": "相模原弥栄",
+          "score": 3,
+          "won": true,
+          "name": "相模原弥栄高校",
+          "slug": "sagamiharayaei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-12",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜商大",
+          "score": 17,
+          "won": true,
+          "name": "横浜商大",
+          "slug": null
+        },
+        {
+          "display": "総合科学",
+          "score": 0,
+          "won": false,
+          "name": "総合科学",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-12",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "平塚学園",
+          "score": 14,
+          "won": true,
+          "name": "平塚学園",
+          "slug": null
+        },
+        {
+          "display": "横須賀学院",
+          "score": 0,
+          "won": false,
+          "name": "横須賀学院",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-12",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三浦学苑",
+          "score": 10,
+          "won": true,
+          "name": "三浦学苑",
+          "slug": null
+        },
+        {
+          "display": "瀬谷",
+          "score": 6,
+          "won": false,
+          "name": "瀬谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-13",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "藤沢翔陵",
+          "score": 7,
+          "won": false,
+          "name": "藤沢翔陵",
+          "slug": null
+        },
+        {
+          "display": "日大藤沢",
+          "score": 15,
+          "won": true,
+          "name": "日大藤沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-12",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜",
+          "score": 10,
+          "won": true,
+          "name": "横浜",
+          "slug": null
+        },
+        {
+          "display": "横須賀",
+          "score": 0,
+          "won": false,
+          "name": "横須賀高校",
+          "slug": "yokosuka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-12",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "山北",
+          "score": 1,
+          "won": false,
+          "name": "山北高校",
+          "slug": "yamakita"
+        },
+        {
+          "display": "日本大学",
+          "score": 9,
+          "won": true,
+          "name": "日本大学",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-15",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海大相模",
+          "score": 11,
+          "won": true,
+          "name": "東海大相模",
+          "slug": null
+        },
+        {
+          "display": "相模原弥栄",
+          "score": 4,
+          "won": false,
+          "name": "相模原弥栄高校",
+          "slug": "sagamiharayaei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-15",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜商大",
+          "score": 1,
+          "won": false,
+          "name": "横浜商大",
+          "slug": null
+        },
+        {
+          "display": "平塚学園",
+          "score": 10,
+          "won": true,
+          "name": "平塚学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-15",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三浦学苑",
+          "score": 8,
+          "won": true,
+          "name": "三浦学苑",
+          "slug": null
+        },
+        {
+          "display": "日大藤沢",
+          "score": 5,
+          "won": false,
+          "name": "日大藤沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-15",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "横浜",
+          "score": 8,
+          "won": true,
+          "name": "横浜",
+          "slug": null
+        },
+        {
+          "display": "日本大学",
+          "score": 1,
+          "won": false,
+          "name": "日本大学",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海大相模",
+          "score": 11,
+          "won": true,
+          "name": "東海大相模",
+          "slug": null
+        },
+        {
+          "display": "平塚学園",
+          "score": 4,
+          "won": false,
+          "name": "平塚学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-16",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三浦学苑",
+          "score": 7,
+          "won": true,
+          "name": "三浦学苑",
+          "slug": null
+        },
+        {
+          "display": "横浜",
+          "score": 6,
+          "won": false,
+          "name": "横浜",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-22",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海大相模",
+          "score": 7,
+          "won": true,
+          "name": "東海大相模",
+          "slug": null
+        },
+        {
+          "display": "三浦学苑",
+          "score": 1,
+          "won": false,
+          "name": "三浦学苑",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-08-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年度神奈川県高等学校野球大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海大相模",
+          "score": 9,
+          "won": true,
+          "name": "東海大相模",
+          "slug": null
+        },
+        {
+          "display": "相洋",
+          "score": 5,
+          "won": false,
+          "name": "相洋",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://kanagawa.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-07-07",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権神奈川大会",

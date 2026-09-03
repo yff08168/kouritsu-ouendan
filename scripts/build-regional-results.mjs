@@ -17844,6 +17844,89 @@ async function main() {
         「その季節のいちばん新しい試合」を基点にしていた。**外すほうがより安定する**
         （もう試合が落ちることが無い）。
       */
+      /*
+        ★★★**同じ大会が2つの名前で並ぶことがある**（2026-09-02 その3。**佐賀7件・熊本1件**）。
+        **出典が日ごとのページで大会名を書き分けている**ためで、実際に入っていたのは:
+
+          「第107回全国高等学校野球選手権佐賀大会」22試合 ／「第107回全国高等学校野球佐賀大会」13試合
+          「第105回全国高等学校野球選手権記念佐賀大会」7試合 ／「…選手権佐賀大会」26試合
+          「第72回NHK杯佐賀県…」1試合 ／「第72回ＮＨＫ杯佐賀県…」6試合          ← **全角**
+          「第143回 九州地区高等学校野球熊本大会」9試合 ／「第143回 九州地区高等学校野球 熊本大会」46試合 ← **空白**
+
+        ★★**寄せないと、画面では1つの大会が2つに割れる**（トーナメント表も組めない）。
+        ★**寄せるのは「空白・全角ラテン・選手権・記念を外すと同じになる名前」だけ。**
+        **試合数の多いほうへ寄せる**（少ないほうが書き落とし）。
+        ★**寄せたことは必ずログに出す** —— 出典の書き方が変わったときに気づけるように。
+      */
+      const canonKey = (n) =>
+        (n ?? "")
+          .replace(/[Ａ-Ｚａ-ｚ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0))
+          .replace(/[\s\u3000]/g, "")
+          .replace(/選手権|記念/g, "");
+      const nameBuckets = new Map();
+      for (const g of seasonGames) {
+        if (!g.tournament) continue;
+        const k = canonKey(g.tournament);
+        if (!nameBuckets.has(k)) nameBuckets.set(k, new Map());
+        const m = nameBuckets.get(k);
+        m.set(g.tournament, (m.get(g.tournament) ?? 0) + 1);
+      }
+      /*
+        ★★★**寄せる前に「会期の中に収まるか」を必ず見ること**（2026-09-02 その3）。
+
+        **出典が1日ぶんのページで大会名を書き間違えていることがある** ——
+        佐賀の **2026-06-05（NHK杯の決勝）** のページが
+        「第108回全国高等学校野球佐賀大会」と名乗っており、
+        **名前だけで寄せると、6月の試合が7月の選手権の「決勝」として並ぶ**（実際に並んだ）。
+        ★**少ないほうの試合が、多いほうの会期（いちばん早い日〜いちばん遅い日）に
+        収まっているときだけ寄せる。** 日付を持たない試合が混じるときは寄せない。
+      */
+      const spanOf = (name) => {
+        const ds = seasonGames.filter((g) => g.tournament === name).map((g) => g.date);
+        return ds.every(Boolean) ? [ds.slice().sort()[0], ds.slice().sort().at(-1)] : null;
+      };
+      const canonName = new Map();
+      for (const m of nameBuckets.values()) {
+        if (m.size < 2) continue;
+        const best = [...m].sort((a, b) => b[1] - a[1] || b[0].length - a[0].length)[0][0];
+        const span = spanOf(best);
+        for (const name of m.keys()) {
+          if (name === best) continue;
+          const mine = spanOf(name);
+          if (!span || !mine) continue;
+          /*
+            ★**少ないほうは「早い回戦の日」であることが多い**（出典が大会の序盤だけ別の名前で
+            書いていた）ので、**会期に収まっていることまでは求めない。**
+            ★★**求めるのは「離れていないこと」** —— 県大会は1か月ほどで終わるので、
+            **どちらかの会期からもう一方までが1週間より離れていたら別の大会**とみなす。
+          */
+          const gapDays = Math.max(
+            0,
+            (Date.parse(mine[0]) - Date.parse(span[1])) / 86400000,
+            (Date.parse(span[0]) - Date.parse(mine[1])) / 86400000,
+          );
+          if (gapDays > 7) {
+            console.log(
+              `  ⚠️ ${season}: 「${name}」は「${best}」と同じ名前に見えるが、${Math.round(gapDays)}日離れている` +
+                `（${mine[0]}〜${mine[1]} / 会期 ${span[0]}〜${span[1]}）。**別の大会とみて寄せない**`,
+            );
+            continue;
+          }
+          canonName.set(name, best);
+        }
+      }
+      if (canonName.size) {
+        console.log(
+          `  ℹ️ ${season}: 同じ大会が2つの名前で入っていたので寄せた（` +
+            [...canonName].map(([from, to]) => `「${from}」→「${to}」`).join("、") +
+            "）",
+        );
+        for (const g of seasonGames) {
+          const to = canonName.get(g.tournament);
+          if (to) g.tournament = to;
+        }
+      }
+
       const kept = seasonGames;
 
       const dates = kept.map((g) => g.date).filter(Boolean).sort();

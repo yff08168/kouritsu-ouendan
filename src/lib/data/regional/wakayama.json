@@ -5,6 +5,1951 @@
   "sourceUrl": "https://www.whbf.jp/",
   "games": [
     {
+      "date": "2019-04-13",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "1回戦",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "田辺",
+          "score": 0,
+          "won": false,
+          "name": "田辺高校",
+          "slug": "wakayama-tanabe"
+        },
+        {
+          "display": "星林",
+          "score": 3,
+          "won": true,
+          "name": "星林高校",
+          "slug": "seirin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-13",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "1回戦",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "紀央館",
+          "score": 1,
+          "won": false,
+          "name": "紀央館高校",
+          "slug": "kiokan"
+        },
+        {
+          "display": "県和歌山",
+          "score": 6,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-14",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "1回戦",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "箕島",
+          "score": 8,
+          "won": true,
+          "name": "箕島高校",
+          "slug": "minoshima"
+        },
+        {
+          "display": "近大新宮",
+          "score": 1,
+          "won": false,
+          "name": "近大新宮",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-14",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "向陽",
+          "score": 4,
+          "won": true,
+          "name": "向陽高校",
+          "slug": "wakayama-koyo"
+        },
+        {
+          "display": "和歌山高専",
+          "score": 3,
+          "won": false,
+          "name": "和歌山工業高専",
+          "slug": "wakayamakogyo-kosen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-20",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": "上富田スポーツセンター野球場",
+      "teams": [
+        {
+          "display": "紀北工",
+          "score": 5,
+          "won": true,
+          "name": "紀北工業高校",
+          "slug": "kihokukogyo"
+        },
+        {
+          "display": "星林",
+          "score": 4,
+          "won": false,
+          "name": "星林高校",
+          "slug": "seirin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-14",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "桐蔭",
+          "score": 10,
+          "won": true,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        },
+        {
+          "display": "新翔",
+          "score": 0,
+          "won": false,
+          "name": "新翔高校",
+          "slug": "shinsho"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "熊野",
+          "score": 1,
+          "won": false,
+          "name": "熊野高校",
+          "slug": "kumano"
+        },
+        {
+          "display": "県和歌山",
+          "score": 11,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-20",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": "上富田スポーツセンター野球場",
+      "teams": [
+        {
+          "display": "和歌山北",
+          "score": 0,
+          "won": false,
+          "name": "和歌山北高校",
+          "slug": "wakayamakita"
+        },
+        {
+          "display": "南部",
+          "score": 3,
+          "won": true,
+          "name": "南部高校",
+          "slug": "minabe"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新宮",
+          "score": 1,
+          "won": false,
+          "name": "新宮高校",
+          "slug": "shingu"
+        },
+        {
+          "display": "高野山",
+          "score": 5,
+          "won": true,
+          "name": "高野山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-20",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": "上富田スポーツセンター野球場",
+      "teams": [
+        {
+          "display": "和歌山南陵",
+          "score": 0,
+          "won": false,
+          "name": "和歌山南陵",
+          "slug": null
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 3,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山東",
+          "score": 4,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        },
+        {
+          "display": "箕島",
+          "score": 3,
+          "won": false,
+          "name": "箕島高校",
+          "slug": "minoshima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "向陽",
+          "score": 3,
+          "won": true,
+          "name": "向陽高校",
+          "slug": "wakayama-koyo"
+        },
+        {
+          "display": "紀北工",
+          "score": 2,
+          "won": false,
+          "name": "紀北工業高校",
+          "slug": "kihokukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐蔭",
+          "score": 6,
+          "won": true,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        },
+        {
+          "display": "県和歌山",
+          "score": 2,
+          "won": false,
+          "name": "和歌山高校",
+          "slug": "wakayama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-28",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "3回戦",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "南部",
+          "score": 3,
+          "won": true,
+          "name": "南部高校",
+          "slug": "minabe"
+        },
+        {
+          "display": "高野山",
+          "score": 2,
+          "won": false,
+          "name": "高野山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-28",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "3回戦",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 6,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "和歌山東",
+          "score": 2,
+          "won": false,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "準々決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "向陽",
+          "score": 1,
+          "won": false,
+          "name": "向陽高校",
+          "slug": "wakayama-koyo"
+        },
+        {
+          "display": "桐蔭",
+          "score": 3,
+          "won": true,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "準々決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "南部",
+          "score": 2,
+          "won": false,
+          "name": "南部高校",
+          "slug": "minabe"
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 11,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-11",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "準決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "桐蔭",
+          "score": 0,
+          "won": false,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 4,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-13",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "1回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "南部龍神",
+          "score": 1,
+          "won": false,
+          "name": "南部高校龍神分校",
+          "slug": "minaberyujin"
+        },
+        {
+          "display": "日高中津",
+          "score": 11,
+          "won": true,
+          "name": "日高高校中津分校",
+          "slug": "hidakanakatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山商",
+          "score": 12,
+          "won": true,
+          "name": "和歌山商業高校",
+          "slug": "wakayamashogyo"
+        },
+        {
+          "display": "貴志川",
+          "score": 1,
+          "won": false,
+          "name": "貴志川高校",
+          "slug": "kishigawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "田辺工",
+          "score": 3,
+          "won": false,
+          "name": "田辺工業高校",
+          "slug": "tanabekogyo"
+        },
+        {
+          "display": "海南",
+          "score": 10,
+          "won": true,
+          "name": "海南高校",
+          "slug": "kainan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-14",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "慶風",
+          "score": 10,
+          "won": true,
+          "name": "慶風",
+          "slug": null
+        },
+        {
+          "display": "紀北農芸",
+          "score": 0,
+          "won": false,
+          "name": "紀北農芸高校",
+          "slug": "kihokunogei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "串本古座",
+          "score": 2,
+          "won": false,
+          "name": "串本古座高校",
+          "slug": "kushimotokoza"
+        },
+        {
+          "display": "市和歌山",
+          "score": 5,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-14",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "初芝橋本",
+          "score": 0,
+          "won": false,
+          "name": "初芝橋本",
+          "slug": null
+        },
+        {
+          "display": "那賀",
+          "score": 10,
+          "won": true,
+          "name": "那賀高校",
+          "slug": "naga"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-20",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "耐久",
+          "score": 0,
+          "won": false,
+          "name": "耐久高校",
+          "slug": "taikyu"
+        },
+        {
+          "display": "日高中津",
+          "score": 2,
+          "won": true,
+          "name": "日高高校中津分校",
+          "slug": "hidakanakatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "神島",
+          "score": 13,
+          "won": true,
+          "name": "神島高校",
+          "slug": "wakayama-kashima"
+        },
+        {
+          "display": "笠田",
+          "score": 10,
+          "won": false,
+          "name": "笠田高校",
+          "slug": "kaseda"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日高",
+          "score": 7,
+          "won": false,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        },
+        {
+          "display": "和歌山商",
+          "score": 11,
+          "won": true,
+          "name": "和歌山商業高校",
+          "slug": "wakayamashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山工",
+          "score": 2,
+          "won": true,
+          "name": "和歌山工業高校",
+          "slug": "wakayamakogyo"
+        },
+        {
+          "display": "橋本",
+          "score": 1,
+          "won": false,
+          "name": "橋本高校",
+          "slug": "wakayama-hashimoto"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "粉河",
+          "score": 1,
+          "won": false,
+          "name": "粉河高校",
+          "slug": "kokawa"
+        },
+        {
+          "display": "海南",
+          "score": 5,
+          "won": true,
+          "name": "海南高校",
+          "slug": "kainan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-27",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "3回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "慶風",
+          "score": 0,
+          "won": false,
+          "name": "慶風",
+          "slug": null
+        },
+        {
+          "display": "市和歌山",
+          "score": 13,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "那賀",
+          "score": 6,
+          "won": false,
+          "name": "那賀高校",
+          "slug": "naga"
+        },
+        {
+          "display": "日高中津",
+          "score": 9,
+          "won": true,
+          "name": "日高高校中津分校",
+          "slug": "hidakanakatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "神島",
+          "score": 1,
+          "won": false,
+          "name": "神島高校",
+          "slug": "wakayama-kashima"
+        },
+        {
+          "display": "和歌山商",
+          "score": 3,
+          "won": true,
+          "name": "和歌山商業高校",
+          "slug": "wakayamashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山工",
+          "score": 1,
+          "won": false,
+          "name": "和歌山工業高校",
+          "slug": "wakayamakogyo"
+        },
+        {
+          "display": "海南",
+          "score": 2,
+          "won": true,
+          "name": "海南高校",
+          "slug": "kainan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市和歌山",
+          "score": 5,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        },
+        {
+          "display": "日高中津",
+          "score": 2,
+          "won": false,
+          "name": "日高高校中津分校",
+          "slug": "hidakanakatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山商",
+          "score": 7,
+          "won": false,
+          "name": "和歌山商業高校",
+          "slug": "wakayamashogyo"
+        },
+        {
+          "display": "海南",
+          "score": 8,
+          "won": true,
+          "name": "海南高校",
+          "slug": "kainan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-11",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "準決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "市和歌山",
+          "score": 2,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        },
+        {
+          "display": "海南",
+          "score": 1,
+          "won": false,
+          "name": "海南高校",
+          "slug": "kainan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-12",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 和歌山県大会",
+      "round": "決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "市和歌山",
+          "score": 7,
+          "won": false,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 8,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-09",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "粉河",
+          "score": 1,
+          "won": false,
+          "name": "粉河高校",
+          "slug": "kokawa"
+        },
+        {
+          "display": "熊野",
+          "score": 2,
+          "won": true,
+          "name": "熊野高校",
+          "slug": "kumano"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-09",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "1回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "和歌山南陵",
+          "score": 5,
+          "won": true,
+          "name": "和歌山南陵",
+          "slug": null
+        },
+        {
+          "display": "桐蔭",
+          "score": 4,
+          "won": false,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-10",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "1回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "笠田",
+          "score": 5,
+          "won": true,
+          "name": "笠田高校",
+          "slug": "kaseda"
+        },
+        {
+          "display": "紀北工",
+          "score": 2,
+          "won": false,
+          "name": "紀北工業高校",
+          "slug": "kihokukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-16",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "初芝橋本",
+          "score": 4,
+          "won": true,
+          "name": "初芝橋本",
+          "slug": null
+        },
+        {
+          "display": "紀央館",
+          "score": 3,
+          "won": false,
+          "name": "紀央館高校",
+          "slug": "kiokan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南部",
+          "score": 1,
+          "won": false,
+          "name": "南部高校",
+          "slug": "minabe"
+        },
+        {
+          "display": "和歌山東",
+          "score": 9,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日高",
+          "score": 13,
+          "won": true,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        },
+        {
+          "display": "橋本",
+          "score": 3,
+          "won": false,
+          "name": "橋本高校",
+          "slug": "wakayama-hashimoto"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "有田中央・貴志川",
+          "score": 2,
+          "won": false,
+          "name": "有田中央・貴志川",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "熊野",
+          "score": 12,
+          "won": true,
+          "name": "熊野高校",
+          "slug": "kumano"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-16",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "串本古座",
+          "score": 2,
+          "won": false,
+          "name": "串本古座高校",
+          "slug": "kushimotokoza"
+        },
+        {
+          "display": "神島",
+          "score": 12,
+          "won": true,
+          "name": "神島高校",
+          "slug": "wakayama-kashima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "箕島",
+          "score": 9,
+          "won": true,
+          "name": "箕島高校",
+          "slug": "minoshima"
+        },
+        {
+          "display": "和歌山南陵",
+          "score": 8,
+          "won": false,
+          "name": "和歌山南陵",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-16",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "和歌山商",
+          "score": 11,
+          "won": true,
+          "name": "和歌山商業高校",
+          "slug": "wakayamashogyo"
+        },
+        {
+          "display": "向陽",
+          "score": 3,
+          "won": false,
+          "name": "向陽高校",
+          "slug": "wakayama-koyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-23",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "県和歌山",
+          "score": 11,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama"
+        },
+        {
+          "display": "笠田",
+          "score": 2,
+          "won": false,
+          "name": "笠田高校",
+          "slug": "kaseda"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-25",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "3回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "日高",
+          "score": 2,
+          "won": true,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        },
+        {
+          "display": "熊野",
+          "score": 0,
+          "won": false,
+          "name": "熊野高校",
+          "slug": "kumano"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-25",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "3回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "神島",
+          "score": 4,
+          "won": false,
+          "name": "神島高校",
+          "slug": "wakayama-kashima"
+        },
+        {
+          "display": "箕島",
+          "score": 9,
+          "won": true,
+          "name": "箕島高校",
+          "slug": "minoshima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-25",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "3回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "和歌山商",
+          "score": 6,
+          "won": true,
+          "name": "和歌山商業高校",
+          "slug": "wakayamashogyo"
+        },
+        {
+          "display": "県和歌山",
+          "score": 2,
+          "won": false,
+          "name": "和歌山高校",
+          "slug": "wakayama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-02",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "準々決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "和歌山東",
+          "score": 1,
+          "won": false,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        },
+        {
+          "display": "日高",
+          "score": 3,
+          "won": true,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-02",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "準々決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "箕島",
+          "score": 0,
+          "won": false,
+          "name": "箕島高校",
+          "slug": "minoshima"
+        },
+        {
+          "display": "和歌山商",
+          "score": 1,
+          "won": true,
+          "name": "和歌山商業高校",
+          "slug": "wakayamashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-07",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "準決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "日高",
+          "score": 2,
+          "won": false,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        },
+        {
+          "display": "和歌山商",
+          "score": 3,
+          "won": true,
+          "name": "和歌山商業高校",
+          "slug": "wakayamashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-09",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日高中津",
+          "score": 3,
+          "won": false,
+          "name": "日高高校中津分校",
+          "slug": "hidakanakatsu"
+        },
+        {
+          "display": "慶風",
+          "score": 5,
+          "won": true,
+          "name": "慶風",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-09",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "1回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "新宮",
+          "score": 0,
+          "won": false,
+          "name": "新宮高校",
+          "slug": "shingu"
+        },
+        {
+          "display": "近大新宮",
+          "score": 11,
+          "won": true,
+          "name": "近大新宮",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-09",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "1回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "田辺工",
+          "score": 2,
+          "won": true,
+          "name": "田辺工業高校",
+          "slug": "tanabekogyo"
+        },
+        {
+          "display": "那賀",
+          "score": 1,
+          "won": false,
+          "name": "那賀高校",
+          "slug": "naga"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-09",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南部龍神",
+          "score": 9,
+          "won": true,
+          "name": "南部高校龍神分校",
+          "slug": "minaberyujin"
+        },
+        {
+          "display": "星林",
+          "score": 1,
+          "won": false,
+          "name": "星林高校",
+          "slug": "seirin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-16",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市和歌山",
+          "score": 8,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        },
+        {
+          "display": "和歌山工",
+          "score": 1,
+          "won": false,
+          "name": "和歌山工業高校",
+          "slug": "wakayamakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新翔",
+          "score": 2,
+          "won": false,
+          "name": "新翔高校",
+          "slug": "shinsho"
+        },
+        {
+          "display": "慶風",
+          "score": 8,
+          "won": true,
+          "name": "慶風",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-10",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 11,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "和歌山北",
+          "score": 1,
+          "won": false,
+          "name": "和歌山北高校",
+          "slug": "wakayamakita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-16",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "紀北農芸",
+          "score": 3,
+          "won": false,
+          "name": "紀北農芸高校",
+          "slug": "kihokunogei"
+        },
+        {
+          "display": "近大新宮",
+          "score": 15,
+          "won": true,
+          "name": "近大新宮",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-10",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "高野山",
+          "score": 1,
+          "won": false,
+          "name": "高野山",
+          "slug": null
+        },
+        {
+          "display": "田辺",
+          "score": 4,
+          "won": true,
+          "name": "田辺高校",
+          "slug": "wakayama-tanabe"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "2回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "海南",
+          "score": 3,
+          "won": false,
+          "name": "海南高校",
+          "slug": "kainan"
+        },
+        {
+          "display": "田辺工",
+          "score": 6,
+          "won": true,
+          "name": "田辺工業高校",
+          "slug": "tanabekogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-23",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南部龍神",
+          "score": 0,
+          "won": false,
+          "name": "南部高校龍神分校",
+          "slug": "minaberyujin"
+        },
+        {
+          "display": "市和歌山",
+          "score": 5,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-23",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "耐久",
+          "score": 5,
+          "won": true,
+          "name": "耐久高校",
+          "slug": "taikyu"
+        },
+        {
+          "display": "慶風",
+          "score": 2,
+          "won": false,
+          "name": "慶風",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-23",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "3回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 1,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "近大新宮",
+          "score": 0,
+          "won": false,
+          "name": "近大新宮",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-23",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "3回戦",
+      "venue": "田辺スポーツパーク野球場",
+      "teams": [
+        {
+          "display": "田辺",
+          "score": 4,
+          "won": true,
+          "name": "田辺高校",
+          "slug": "wakayama-tanabe"
+        },
+        {
+          "display": "田辺工",
+          "score": 3,
+          "won": false,
+          "name": "田辺工業高校",
+          "slug": "tanabekogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-29",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "準々決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "市和歌山",
+          "score": 4,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        },
+        {
+          "display": "耐久",
+          "score": 3,
+          "won": false,
+          "name": "耐久高校",
+          "slug": "taikyu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-02",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "準々決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 4,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "田辺",
+          "score": 1,
+          "won": false,
+          "name": "田辺高校",
+          "slug": "wakayama-tanabe"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-07",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "準決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "市和歌山",
+          "score": 2,
+          "won": false,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 4,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-08",
+      "season": "spring",
+      "tournament": "2022年 春季近畿地区高校野球 和歌山県大会",
+      "round": "決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 4,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "和歌山商",
+          "score": 3,
+          "won": false,
+          "name": "和歌山商業高校",
+          "slug": "wakayamashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-04-11",
       "season": "spring",
       "tournament": "令和8年度春季近畿地区高等学校野球大会和歌山県予選",
@@ -5742,6 +7687,3952 @@
       ]
     },
     {
+      "date": "2019-07-28",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南部",
+          "score": 0,
+          "won": false,
+          "name": "南部高校",
+          "slug": "minabe"
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 9,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-28",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "那賀",
+          "score": 5,
+          "won": true,
+          "name": "那賀高校",
+          "slug": "naga"
+        },
+        {
+          "display": "熊野",
+          "score": 1,
+          "won": false,
+          "name": "熊野高校",
+          "slug": "kumano"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新宮",
+          "score": 5,
+          "won": true,
+          "name": "新宮高校",
+          "slug": "shingu"
+        },
+        {
+          "display": "和歌山工",
+          "score": 4,
+          "won": false,
+          "name": "和歌山工業高校",
+          "slug": "wakayamakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-13",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "田辺",
+          "score": 12,
+          "won": true,
+          "name": "田辺高校",
+          "slug": "wakayama-tanabe"
+        },
+        {
+          "display": "慶風",
+          "score": 7,
+          "won": false,
+          "name": "慶風",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-13",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "那賀",
+          "score": 7,
+          "won": true,
+          "name": "那賀高校",
+          "slug": "naga"
+        },
+        {
+          "display": "県和歌山",
+          "score": 1,
+          "won": false,
+          "name": "和歌山高校",
+          "slug": "wakayama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-13",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "橋本",
+          "score": 1,
+          "won": false,
+          "name": "橋本高校",
+          "slug": "wakayama-hashimoto"
+        },
+        {
+          "display": "神島",
+          "score": 4,
+          "won": true,
+          "name": "神島高校",
+          "slug": "wakayama-kashima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "粉河",
+          "score": 13,
+          "won": true,
+          "name": "粉河高校",
+          "slug": "kokawa"
+        },
+        {
+          "display": "紀北農芸",
+          "score": 0,
+          "won": false,
+          "name": "紀北農芸高校",
+          "slug": "kihokunogei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山商",
+          "score": 14,
+          "won": true,
+          "name": "和歌山商業高校",
+          "slug": "wakayamashogyo"
+        },
+        {
+          "display": "初芝橋本",
+          "score": 12,
+          "won": false,
+          "name": "初芝橋本",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "星林",
+          "score": 1,
+          "won": false,
+          "name": "星林高校",
+          "slug": "seirin"
+        },
+        {
+          "display": "和歌山東",
+          "score": 11,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-29",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 12,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "那賀",
+          "score": 1,
+          "won": false,
+          "name": "那賀高校",
+          "slug": "naga"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "有田中央",
+          "score": 10,
+          "won": false,
+          "name": "有田中央高校",
+          "slug": "aridachuo"
+        },
+        {
+          "display": "貴志川",
+          "score": 11,
+          "won": true,
+          "name": "貴志川高校",
+          "slug": "kishigawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "箕島",
+          "score": 4,
+          "won": true,
+          "name": "箕島高校",
+          "slug": "minoshima"
+        },
+        {
+          "display": "南部龍神",
+          "score": 3,
+          "won": false,
+          "name": "南部高校龍神分校",
+          "slug": "minaberyujin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "海南",
+          "score": 2,
+          "won": false,
+          "name": "海南高校",
+          "slug": "kainan"
+        },
+        {
+          "display": "熊野",
+          "score": 8,
+          "won": true,
+          "name": "熊野高校",
+          "slug": "kumano"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-18",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "田辺工",
+          "score": 6,
+          "won": true,
+          "name": "田辺工業高校",
+          "slug": "tanabekogyo"
+        },
+        {
+          "display": "新宮",
+          "score": 3,
+          "won": false,
+          "name": "新宮高校",
+          "slug": "shingu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-16",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "串本古座",
+          "score": 2,
+          "won": false,
+          "name": "串本古座高校",
+          "slug": "kushimotokoza"
+        },
+        {
+          "display": "桐蔭",
+          "score": 6,
+          "won": true,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-20",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "紀央館",
+          "score": 2,
+          "won": true,
+          "name": "紀央館高校",
+          "slug": "kiokan"
+        },
+        {
+          "display": "田辺",
+          "score": 1,
+          "won": false,
+          "name": "田辺高校",
+          "slug": "wakayama-tanabe"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-16",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山高専",
+          "score": 6,
+          "won": true,
+          "name": "和歌山工業高専",
+          "slug": "wakayamakogyo-kosen"
+        },
+        {
+          "display": "笠田",
+          "score": 4,
+          "won": false,
+          "name": "笠田高校",
+          "slug": "kaseda"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-20",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山北",
+          "score": 0,
+          "won": false,
+          "name": "和歌山北高校",
+          "slug": "wakayamakita"
+        },
+        {
+          "display": "那賀",
+          "score": 5,
+          "won": true,
+          "name": "那賀高校",
+          "slug": "naga"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-16",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "耐久",
+          "score": 3,
+          "won": false,
+          "name": "耐久高校",
+          "slug": "taikyu"
+        },
+        {
+          "display": "日高",
+          "score": 13,
+          "won": true,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-21",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "紀北工",
+          "score": 0,
+          "won": false,
+          "name": "紀北工業高校",
+          "slug": "kihokukogyo"
+        },
+        {
+          "display": "神島",
+          "score": 4,
+          "won": true,
+          "name": "神島高校",
+          "slug": "wakayama-kashima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-17",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山南陵",
+          "score": 0,
+          "won": false,
+          "name": "和歌山南陵",
+          "slug": null
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 4,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-21",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高野山",
+          "score": 1,
+          "won": false,
+          "name": "高野山",
+          "slug": null
+        },
+        {
+          "display": "粉河",
+          "score": 5,
+          "won": true,
+          "name": "粉河高校",
+          "slug": "kokawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-17",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南部",
+          "score": 6,
+          "won": true,
+          "name": "南部高校",
+          "slug": "minabe"
+        },
+        {
+          "display": "新翔",
+          "score": 1,
+          "won": false,
+          "name": "新翔高校",
+          "slug": "shinsho"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-21",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "近大新宮",
+          "score": 4,
+          "won": true,
+          "name": "近大新宮",
+          "slug": null
+        },
+        {
+          "display": "和歌山商",
+          "score": 2,
+          "won": false,
+          "name": "和歌山商業高校",
+          "slug": "wakayamashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-17",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市和歌山",
+          "score": 5,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        },
+        {
+          "display": "日高中津",
+          "score": 2,
+          "won": false,
+          "name": "日高高校中津分校",
+          "slug": "hidakanakatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-22",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "向陽",
+          "score": 3,
+          "won": false,
+          "name": "向陽高校",
+          "slug": "wakayama-koyo"
+        },
+        {
+          "display": "和歌山東",
+          "score": 4,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-22",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "貴志川",
+          "score": 1,
+          "won": false,
+          "name": "貴志川高校",
+          "slug": "kishigawa"
+        },
+        {
+          "display": "箕島",
+          "score": 8,
+          "won": true,
+          "name": "箕島高校",
+          "slug": "minoshima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-23",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "熊野",
+          "score": 1,
+          "won": true,
+          "name": "熊野高校",
+          "slug": "kumano"
+        },
+        {
+          "display": "田辺工",
+          "score": 0,
+          "won": false,
+          "name": "田辺工業高校",
+          "slug": "tanabekogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-23",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐蔭",
+          "score": 5,
+          "won": true,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        },
+        {
+          "display": "紀央館",
+          "score": 4,
+          "won": false,
+          "name": "紀央館高校",
+          "slug": "kiokan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-23",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山高専",
+          "score": 1,
+          "won": false,
+          "name": "和歌山工業高専",
+          "slug": "wakayamakogyo-kosen"
+        },
+        {
+          "display": "那賀",
+          "score": 8,
+          "won": true,
+          "name": "那賀高校",
+          "slug": "naga"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-23",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日高",
+          "score": 5,
+          "won": false,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        },
+        {
+          "display": "神島",
+          "score": 6,
+          "won": true,
+          "name": "神島高校",
+          "slug": "wakayama-kashima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-24",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 10,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "粉河",
+          "score": 0,
+          "won": false,
+          "name": "粉河高校",
+          "slug": "kokawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-24",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南部",
+          "score": 11,
+          "won": true,
+          "name": "南部高校",
+          "slug": "minabe"
+        },
+        {
+          "display": "近大新宮",
+          "score": 1,
+          "won": false,
+          "name": "近大新宮",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-24",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市和歌山",
+          "score": 4,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        },
+        {
+          "display": "和歌山東",
+          "score": 3,
+          "won": false,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-25",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "箕島",
+          "score": 2,
+          "won": false,
+          "name": "箕島高校",
+          "slug": "minoshima"
+        },
+        {
+          "display": "熊野",
+          "score": 7,
+          "won": true,
+          "name": "熊野高校",
+          "slug": "kumano"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-25",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐蔭",
+          "score": 4,
+          "won": false,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        },
+        {
+          "display": "那賀",
+          "score": 12,
+          "won": true,
+          "name": "那賀高校",
+          "slug": "naga"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-26",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "神島",
+          "score": 0,
+          "won": false,
+          "name": "神島高校",
+          "slug": "wakayama-kashima"
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 5,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-07-26",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 和歌山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南部",
+          "score": 4,
+          "won": true,
+          "name": "南部高校",
+          "slug": "minabe"
+        },
+        {
+          "display": "市和歌山",
+          "score": 3,
+          "won": false,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-25",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市和歌山",
+          "score": 10,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        },
+        {
+          "display": "高野山",
+          "score": 0,
+          "won": false,
+          "name": "高野山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-25",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山東",
+          "score": 1,
+          "won": false,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 7,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-09",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "笠田",
+          "score": 10,
+          "won": true,
+          "name": "笠田高校",
+          "slug": "kaseda"
+        },
+        {
+          "display": "紀北農芸",
+          "score": 6,
+          "won": false,
+          "name": "紀北農芸高校",
+          "slug": "kihokunogei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-10",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山商",
+          "score": 3,
+          "won": true,
+          "name": "和歌山商業高校",
+          "slug": "wakayamashogyo"
+        },
+        {
+          "display": "熊野",
+          "score": 0,
+          "won": false,
+          "name": "熊野高校",
+          "slug": "kumano"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-10",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南部",
+          "score": 0,
+          "won": false,
+          "name": "南部高校",
+          "slug": "minabe"
+        },
+        {
+          "display": "粉河",
+          "score": 2,
+          "won": true,
+          "name": "粉河高校",
+          "slug": "kokawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-10",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山南陵",
+          "score": 1,
+          "won": false,
+          "name": "和歌山南陵",
+          "slug": null
+        },
+        {
+          "display": "星林",
+          "score": 8,
+          "won": true,
+          "name": "星林高校",
+          "slug": "seirin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-11",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "紀北工",
+          "score": 2,
+          "won": false,
+          "name": "紀北工業高校",
+          "slug": "kihokukogyo"
+        },
+        {
+          "display": "初芝橋本",
+          "score": 9,
+          "won": true,
+          "name": "初芝橋本",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-11",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新翔",
+          "score": 0,
+          "won": false,
+          "name": "新翔高校",
+          "slug": "shinsho"
+        },
+        {
+          "display": "耐久",
+          "score": 7,
+          "won": true,
+          "name": "耐久高校",
+          "slug": "taikyu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-11",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "有田中央",
+          "score": 2,
+          "won": false,
+          "name": "有田中央高校",
+          "slug": "aridachuo"
+        },
+        {
+          "display": "田辺工",
+          "score": 9,
+          "won": true,
+          "name": "田辺工業高校",
+          "slug": "tanabekogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-27",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市和歌山",
+          "score": 1,
+          "won": false,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 4,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-12",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "近大新宮",
+          "score": 2,
+          "won": false,
+          "name": "近大新宮",
+          "slug": null
+        },
+        {
+          "display": "日高",
+          "score": 3,
+          "won": true,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-12",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "慶風",
+          "score": 4,
+          "won": false,
+          "name": "慶風",
+          "slug": null
+        },
+        {
+          "display": "日高中津",
+          "score": 10,
+          "won": true,
+          "name": "日高高校中津分校",
+          "slug": "hidakanakatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-13",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "那賀",
+          "score": 0,
+          "won": false,
+          "name": "那賀高校",
+          "slug": "naga"
+        },
+        {
+          "display": "高野山",
+          "score": 3,
+          "won": true,
+          "name": "高野山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "海南",
+          "score": 0,
+          "won": false,
+          "name": "海南高校",
+          "slug": "kainan"
+        },
+        {
+          "display": "笠田",
+          "score": 11,
+          "won": true,
+          "name": "笠田高校",
+          "slug": "kaseda"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-13",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新宮",
+          "score": 0,
+          "won": false,
+          "name": "新宮高校",
+          "slug": "shingu"
+        },
+        {
+          "display": "和歌山東",
+          "score": 8,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "向陽",
+          "score": 1,
+          "won": false,
+          "name": "向陽高校",
+          "slug": "wakayama-koyo"
+        },
+        {
+          "display": "和歌山商",
+          "score": 4,
+          "won": true,
+          "name": "和歌山商業高校",
+          "slug": "wakayamashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-14",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "貴志川",
+          "score": 9,
+          "won": false,
+          "name": "貴志川高校",
+          "slug": "kishigawa"
+        },
+        {
+          "display": "和歌山北",
+          "score": 14,
+          "won": true,
+          "name": "和歌山北高校",
+          "slug": "wakayamakita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南部龍神",
+          "score": 0,
+          "won": false,
+          "name": "南部高校龍神分校",
+          "slug": "minaberyujin"
+        },
+        {
+          "display": "粉河",
+          "score": 8,
+          "won": true,
+          "name": "粉河高校",
+          "slug": "kokawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-14",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "箕島",
+          "score": 2,
+          "won": false,
+          "name": "箕島高校",
+          "slug": "minoshima"
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 8,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "橋本",
+          "score": 3,
+          "won": false,
+          "name": "橋本高校",
+          "slug": "wakayama-hashimoto"
+        },
+        {
+          "display": "星林",
+          "score": 11,
+          "won": true,
+          "name": "星林高校",
+          "slug": "seirin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-15",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "田辺",
+          "score": 1,
+          "won": false,
+          "name": "田辺高校",
+          "slug": "wakayama-tanabe"
+        },
+        {
+          "display": "和歌山工",
+          "score": 3,
+          "won": true,
+          "name": "和歌山工業高校",
+          "slug": "wakayamakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "神島",
+          "score": 3,
+          "won": false,
+          "name": "神島高校",
+          "slug": "wakayama-kashima"
+        },
+        {
+          "display": "初芝橋本",
+          "score": 6,
+          "won": true,
+          "name": "初芝橋本",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-15",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐蔭",
+          "score": 9,
+          "won": true,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        },
+        {
+          "display": "和歌山高専",
+          "score": 1,
+          "won": false,
+          "name": "和歌山工業高専",
+          "slug": "wakayamakogyo-kosen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "紀央館",
+          "score": 3,
+          "won": false,
+          "name": "紀央館高校",
+          "slug": "kiokan"
+        },
+        {
+          "display": "耐久",
+          "score": 11,
+          "won": true,
+          "name": "耐久高校",
+          "slug": "taikyu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-15",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市和歌山",
+          "score": 11,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        },
+        {
+          "display": "県和歌山",
+          "score": 1,
+          "won": false,
+          "name": "和歌山高校",
+          "slug": "wakayama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "串本古座",
+          "score": 0,
+          "won": false,
+          "name": "串本古座高校",
+          "slug": "kushimotokoza"
+        },
+        {
+          "display": "田辺工",
+          "score": 10,
+          "won": true,
+          "name": "田辺工業高校",
+          "slug": "tanabekogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日高",
+          "score": 5,
+          "won": true,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        },
+        {
+          "display": "日高中津",
+          "score": 2,
+          "won": false,
+          "name": "日高高校中津分校",
+          "slug": "hidakanakatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高野山",
+          "score": 10,
+          "won": true,
+          "name": "高野山",
+          "slug": null
+        },
+        {
+          "display": "笠田",
+          "score": 1,
+          "won": false,
+          "name": "笠田高校",
+          "slug": "kaseda"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-19",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山東",
+          "score": 5,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        },
+        {
+          "display": "和歌山商",
+          "score": 3,
+          "won": false,
+          "name": "和歌山商業高校",
+          "slug": "wakayamashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-19",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山北",
+          "score": 5,
+          "won": false,
+          "name": "和歌山北高校",
+          "slug": "wakayamakita"
+        },
+        {
+          "display": "粉河",
+          "score": 6,
+          "won": true,
+          "name": "粉河高校",
+          "slug": "kokawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-19",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 11,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "星林",
+          "score": 0,
+          "won": false,
+          "name": "星林高校",
+          "slug": "seirin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-21",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山工",
+          "score": 7,
+          "won": false,
+          "name": "和歌山工業高校",
+          "slug": "wakayamakogyo"
+        },
+        {
+          "display": "初芝橋本",
+          "score": 8,
+          "won": true,
+          "name": "初芝橋本",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-21",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐蔭",
+          "score": 2,
+          "won": false,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        },
+        {
+          "display": "耐久",
+          "score": 8,
+          "won": true,
+          "name": "耐久高校",
+          "slug": "taikyu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-21",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市和歌山",
+          "score": 7,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        },
+        {
+          "display": "田辺工",
+          "score": 0,
+          "won": false,
+          "name": "田辺工業高校",
+          "slug": "tanabekogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-22",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日高",
+          "score": 4,
+          "won": false,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        },
+        {
+          "display": "高野山",
+          "score": 6,
+          "won": true,
+          "name": "高野山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-22",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山東",
+          "score": 3,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        },
+        {
+          "display": "粉河",
+          "score": 1,
+          "won": false,
+          "name": "粉河高校",
+          "slug": "kokawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-23",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 3,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "初芝橋本",
+          "score": 2,
+          "won": false,
+          "name": "初芝橋本",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2021-07-23",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 和歌山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "耐久",
+          "score": 0,
+          "won": false,
+          "name": "耐久高校",
+          "slug": "taikyu"
+        },
+        {
+          "display": "市和歌山",
+          "score": 11,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-27",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 9,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "和歌山南陵",
+          "score": 2,
+          "won": false,
+          "name": "和歌山南陵",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-27",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐蔭",
+          "score": 10,
+          "won": true,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        },
+        {
+          "display": "和歌山東",
+          "score": 0,
+          "won": false,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-13",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "紀央館",
+          "score": 3,
+          "won": false,
+          "name": "紀央館高校",
+          "slug": "kiokan"
+        },
+        {
+          "display": "向陽",
+          "score": 9,
+          "won": true,
+          "name": "向陽高校",
+          "slug": "wakayama-koyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-13",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "笠田",
+          "score": 0,
+          "won": false,
+          "name": "笠田高校",
+          "slug": "kaseda"
+        },
+        {
+          "display": "橋本",
+          "score": 4,
+          "won": true,
+          "name": "橋本高校",
+          "slug": "wakayama-hashimoto"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-13",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "県和歌山",
+          "score": 8,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama"
+        },
+        {
+          "display": "和歌山高専",
+          "score": 3,
+          "won": false,
+          "name": "和歌山工業高専",
+          "slug": "wakayamakogyo-kosen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-14",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高野山",
+          "score": 0,
+          "won": false,
+          "name": "高野山",
+          "slug": null
+        },
+        {
+          "display": "耐久",
+          "score": 7,
+          "won": true,
+          "name": "耐久高校",
+          "slug": "taikyu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-29",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 7,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "桐蔭",
+          "score": 2,
+          "won": false,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-14",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "田辺工",
+          "score": 2,
+          "won": false,
+          "name": "田辺工業高校",
+          "slug": "tanabekogyo"
+        },
+        {
+          "display": "慶風",
+          "score": 6,
+          "won": true,
+          "name": "慶風",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-14",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "那賀",
+          "score": 2,
+          "won": false,
+          "name": "那賀高校",
+          "slug": "naga"
+        },
+        {
+          "display": "桐蔭",
+          "score": 8,
+          "won": true,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-15",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "神島",
+          "score": 8,
+          "won": true,
+          "name": "神島高校",
+          "slug": "wakayama-kashima"
+        },
+        {
+          "display": "和歌山商",
+          "score": 5,
+          "won": false,
+          "name": "和歌山商業高校",
+          "slug": "wakayamashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-18",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "粉河",
+          "score": 6,
+          "won": false,
+          "name": "粉河高校",
+          "slug": "kokawa"
+        },
+        {
+          "display": "南部",
+          "score": 11,
+          "won": true,
+          "name": "南部高校",
+          "slug": "minabe"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-15",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "紀北工",
+          "score": 4,
+          "won": false,
+          "name": "紀北工業高校",
+          "slug": "kihokukogyo"
+        },
+        {
+          "display": "近大新宮",
+          "score": 7,
+          "won": true,
+          "name": "近大新宮",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-15",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新宮",
+          "score": 1,
+          "won": false,
+          "name": "新宮高校",
+          "slug": "shingu"
+        },
+        {
+          "display": "日高中津",
+          "score": 13,
+          "won": true,
+          "name": "日高高校中津分校",
+          "slug": "hidakanakatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-16",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "田辺",
+          "score": 0,
+          "won": false,
+          "name": "田辺高校",
+          "slug": "wakayama-tanabe"
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 7,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-20",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南部龍神",
+          "score": 0,
+          "won": false,
+          "name": "南部高校龍神分校",
+          "slug": "minaberyujin"
+        },
+        {
+          "display": "向陽",
+          "score": 1,
+          "won": true,
+          "name": "向陽高校",
+          "slug": "wakayama-koyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-16",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "海南",
+          "score": 2,
+          "won": false,
+          "name": "海南高校",
+          "slug": "kainan"
+        },
+        {
+          "display": "箕島",
+          "score": 7,
+          "won": true,
+          "name": "箕島高校",
+          "slug": "minoshima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "有田中央・貴志川・串本古座",
+          "score": 5,
+          "won": false,
+          "name": "有田中央・貴志川・串本古座",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "和歌山南陵",
+          "score": 8,
+          "won": true,
+          "name": "和歌山南陵",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "熊野",
+          "score": 0,
+          "won": false,
+          "name": "熊野高校",
+          "slug": "kumano"
+        },
+        {
+          "display": "日高",
+          "score": 5,
+          "won": true,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-20",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山工",
+          "score": 3,
+          "won": true,
+          "name": "和歌山工業高校",
+          "slug": "wakayamakogyo"
+        },
+        {
+          "display": "橋本",
+          "score": 2,
+          "won": false,
+          "name": "橋本高校",
+          "slug": "wakayama-hashimoto"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-18",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市和歌山",
+          "score": 12,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        },
+        {
+          "display": "初芝橋本",
+          "score": 5,
+          "won": false,
+          "name": "初芝橋本",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-20",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "星林",
+          "score": 7,
+          "won": true,
+          "name": "星林高校",
+          "slug": "seirin"
+        },
+        {
+          "display": "県和歌山",
+          "score": 0,
+          "won": false,
+          "name": "和歌山高校",
+          "slug": "wakayama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-18",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山東",
+          "score": 12,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        },
+        {
+          "display": "紀北農芸",
+          "score": 2,
+          "won": false,
+          "name": "紀北農芸高校",
+          "slug": "kihokunogei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-21",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山北",
+          "score": 4,
+          "won": false,
+          "name": "和歌山北高校",
+          "slug": "wakayamakita"
+        },
+        {
+          "display": "耐久",
+          "score": 8,
+          "won": true,
+          "name": "耐久高校",
+          "slug": "taikyu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-21",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "慶風",
+          "score": 0,
+          "won": false,
+          "name": "慶風",
+          "slug": null
+        },
+        {
+          "display": "桐蔭",
+          "score": 4,
+          "won": true,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-21",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "神島",
+          "score": 5,
+          "won": true,
+          "name": "神島高校",
+          "slug": "wakayama-kashima"
+        },
+        {
+          "display": "南部",
+          "score": 4,
+          "won": false,
+          "name": "南部高校",
+          "slug": "minabe"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-22",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "近大新宮",
+          "score": 5,
+          "won": false,
+          "name": "近大新宮",
+          "slug": null
+        },
+        {
+          "display": "日高中津",
+          "score": 9,
+          "won": true,
+          "name": "日高高校中津分校",
+          "slug": "hidakanakatsu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-22",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 7,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "向陽",
+          "score": 0,
+          "won": false,
+          "name": "向陽高校",
+          "slug": "wakayama-koyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-22",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "箕島",
+          "score": 1,
+          "won": false,
+          "name": "箕島高校",
+          "slug": "minoshima"
+        },
+        {
+          "display": "和歌山南陵",
+          "score": 8,
+          "won": true,
+          "name": "和歌山南陵",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-23",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日高",
+          "score": 14,
+          "won": true,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        },
+        {
+          "display": "和歌山工",
+          "score": 6,
+          "won": false,
+          "name": "和歌山工業高校",
+          "slug": "wakayamakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-23",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市和歌山",
+          "score": 9,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        },
+        {
+          "display": "星林",
+          "score": 2,
+          "won": false,
+          "name": "星林高校",
+          "slug": "seirin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-23",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山東",
+          "score": 12,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        },
+        {
+          "display": "耐久",
+          "score": 0,
+          "won": false,
+          "name": "耐久高校",
+          "slug": "taikyu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-24",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐蔭",
+          "score": 4,
+          "won": true,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        },
+        {
+          "display": "神島",
+          "score": 3,
+          "won": false,
+          "name": "神島高校",
+          "slug": "wakayama-kashima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-24",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日高中津",
+          "score": 1,
+          "won": false,
+          "name": "日高高校中津分校",
+          "slug": "hidakanakatsu"
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 15,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-25",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山南陵",
+          "score": 6,
+          "won": true,
+          "name": "和歌山南陵",
+          "slug": null
+        },
+        {
+          "display": "日高",
+          "score": 3,
+          "won": false,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-07-25",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 和歌山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市和歌山",
+          "score": 0,
+          "won": false,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        },
+        {
+          "display": "和歌山東",
+          "score": 3,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-27",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "田辺",
+          "score": 0,
+          "won": false,
+          "name": "田辺高校",
+          "slug": "wakayama-tanabe"
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 7,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-27",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山東",
+          "score": 0,
+          "won": false,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        },
+        {
+          "display": "近大新宮",
+          "score": 3,
+          "won": true,
+          "name": "近大新宮",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-11",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山北",
+          "score": 5,
+          "won": true,
+          "name": "和歌山北高校",
+          "slug": "wakayamakita"
+        },
+        {
+          "display": "紀北工",
+          "score": 1,
+          "won": false,
+          "name": "紀北工業高校",
+          "slug": "kihokukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-11",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "熊野",
+          "score": 7,
+          "won": true,
+          "name": "熊野高校",
+          "slug": "kumano"
+        },
+        {
+          "display": "星林",
+          "score": 4,
+          "won": false,
+          "name": "星林高校",
+          "slug": "seirin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-13",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "初芝橋本",
+          "score": 10,
+          "won": true,
+          "name": "初芝橋本",
+          "slug": null
+        },
+        {
+          "display": "慶風",
+          "score": 3,
+          "won": false,
+          "name": "慶風",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-13",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日高",
+          "score": 5,
+          "won": true,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        },
+        {
+          "display": "粉河",
+          "score": 1,
+          "won": false,
+          "name": "粉河高校",
+          "slug": "kokawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-29",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 4,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "近大新宮",
+          "score": 2,
+          "won": false,
+          "name": "近大新宮",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-14",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "田辺工",
+          "score": 6,
+          "won": true,
+          "name": "田辺工業高校",
+          "slug": "tanabekogyo"
+        },
+        {
+          "display": "神島",
+          "score": 4,
+          "won": false,
+          "name": "神島高校",
+          "slug": "wakayama-kashima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-14",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山東",
+          "score": 10,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        },
+        {
+          "display": "南部龍神",
+          "score": 0,
+          "won": false,
+          "name": "南部高校龍神分校",
+          "slug": "minaberyujin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-16",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山工",
+          "score": 0,
+          "won": false,
+          "name": "和歌山工業高校",
+          "slug": "wakayamakogyo"
+        },
+        {
+          "display": "桐蔭",
+          "score": 4,
+          "won": true,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-18",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "那賀",
+          "score": 8,
+          "won": true,
+          "name": "那賀高校",
+          "slug": "naga"
+        },
+        {
+          "display": "和歌山北",
+          "score": 0,
+          "won": false,
+          "name": "和歌山北高校",
+          "slug": "wakayamakita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-14",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "橋本",
+          "score": 2,
+          "won": false,
+          "name": "橋本高校",
+          "slug": "wakayama-hashimoto"
+        },
+        {
+          "display": "県和歌山",
+          "score": 3,
+          "won": true,
+          "name": "和歌山高校",
+          "slug": "wakayama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-15",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "耐久",
+          "score": 8,
+          "won": true,
+          "name": "耐久高校",
+          "slug": "taikyu"
+        },
+        {
+          "display": "有田中央・貴志川・串本古座",
+          "score": 1,
+          "won": false,
+          "name": "有田中央・貴志川・串本古座",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-17",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "近大新宮",
+          "score": 5,
+          "won": true,
+          "name": "近大新宮",
+          "slug": null
+        },
+        {
+          "display": "箕島",
+          "score": 3,
+          "won": false,
+          "name": "箕島高校",
+          "slug": "minoshima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-20",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高野山",
+          "score": 3,
+          "won": true,
+          "name": "高野山",
+          "slug": null
+        },
+        {
+          "display": "熊野",
+          "score": 0,
+          "won": false,
+          "name": "熊野高校",
+          "slug": "kumano"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-15",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "向陽",
+          "score": 5,
+          "won": false,
+          "name": "向陽高校",
+          "slug": "wakayama-koyo"
+        },
+        {
+          "display": "新宮・新翔",
+          "score": 10,
+          "won": true,
+          "name": "新宮・新翔",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-15",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "田辺",
+          "score": 6,
+          "won": true,
+          "name": "田辺高校",
+          "slug": "wakayama-tanabe"
+        },
+        {
+          "display": "市和歌山",
+          "score": 0,
+          "won": false,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-17",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山高専",
+          "score": 0,
+          "won": false,
+          "name": "和歌山工業高専",
+          "slug": "wakayamakogyo-kosen"
+        },
+        {
+          "display": "南部",
+          "score": 6,
+          "won": true,
+          "name": "南部高校",
+          "slug": "minabe"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-20",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "海南",
+          "score": 8,
+          "won": true,
+          "name": "海南高校",
+          "slug": "kainan"
+        },
+        {
+          "display": "初芝橋本",
+          "score": 6,
+          "won": false,
+          "name": "初芝橋本",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-16",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "紀北農芸",
+          "score": 0,
+          "won": false,
+          "name": "紀北農芸高校",
+          "slug": "kihokunogei"
+        },
+        {
+          "display": "和歌山南陵",
+          "score": 4,
+          "won": true,
+          "name": "和歌山南陵",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-16",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 7,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "笠田",
+          "score": 0,
+          "won": false,
+          "name": "笠田高校",
+          "slug": "kaseda"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-18",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日高中津",
+          "score": 3,
+          "won": true,
+          "name": "日高高校中津分校",
+          "slug": "hidakanakatsu"
+        },
+        {
+          "display": "和歌山商",
+          "score": 2,
+          "won": false,
+          "name": "和歌山商業高校",
+          "slug": "wakayamashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-20",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "紀央館",
+          "score": 2,
+          "won": false,
+          "name": "紀央館高校",
+          "slug": "kiokan"
+        },
+        {
+          "display": "日高",
+          "score": 4,
+          "won": true,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-21",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "田辺工",
+          "score": 0,
+          "won": false,
+          "name": "田辺工業高校",
+          "slug": "tanabekogyo"
+        },
+        {
+          "display": "和歌山東",
+          "score": 7,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-21",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐蔭",
+          "score": 10,
+          "won": true,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        },
+        {
+          "display": "那賀",
+          "score": 3,
+          "won": false,
+          "name": "那賀高校",
+          "slug": "naga"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-21",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "県和歌山",
+          "score": 5,
+          "won": false,
+          "name": "和歌山高校",
+          "slug": "wakayama"
+        },
+        {
+          "display": "耐久",
+          "score": 10,
+          "won": true,
+          "name": "耐久高校",
+          "slug": "taikyu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-22",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "近大新宮",
+          "score": 6,
+          "won": true,
+          "name": "近大新宮",
+          "slug": null
+        },
+        {
+          "display": "高野山",
+          "score": 1,
+          "won": false,
+          "name": "高野山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-22",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新宮・新翔",
+          "score": 8,
+          "won": false,
+          "name": "新宮・新翔",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "田辺",
+          "score": 9,
+          "won": true,
+          "name": "田辺高校",
+          "slug": "wakayama-tanabe"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-22",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "南部",
+          "score": 4,
+          "won": false,
+          "name": "南部高校",
+          "slug": "minabe"
+        },
+        {
+          "display": "海南",
+          "score": 5,
+          "won": true,
+          "name": "海南高校",
+          "slug": "kainan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-23",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山南陵",
+          "score": 0,
+          "won": false,
+          "name": "和歌山南陵",
+          "slug": null
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 7,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-23",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日高中津",
+          "score": 1,
+          "won": false,
+          "name": "日高高校中津分校",
+          "slug": "hidakanakatsu"
+        },
+        {
+          "display": "日高",
+          "score": 5,
+          "won": true,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-24",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山東",
+          "score": 4,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        },
+        {
+          "display": "桐蔭",
+          "score": 0,
+          "won": false,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-24",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "耐久",
+          "score": 1,
+          "won": false,
+          "name": "耐久高校",
+          "slug": "taikyu"
+        },
+        {
+          "display": "近大新宮",
+          "score": 3,
+          "won": true,
+          "name": "近大新宮",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-25",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "田辺",
+          "score": 4,
+          "won": true,
+          "name": "田辺高校",
+          "slug": "wakayama-tanabe"
+        },
+        {
+          "display": "海南",
+          "score": 1,
+          "won": false,
+          "name": "海南高校",
+          "slug": "kainan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2024-07-25",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 和歌山大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 12,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "日高",
+          "score": 0,
+          "won": false,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
       "date": null,
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権和歌山大会",
@@ -8141,6 +14032,195 @@
           "slug": "wakayamakita"
         }
       ]
+    },
+    {
+      "date": "2020-09-27",
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 和歌山県大会",
+      "round": "準々決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 13,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "箕島",
+          "score": 0,
+          "won": false,
+          "name": "箕島高校",
+          "slug": "minoshima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-09-27",
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 和歌山県大会",
+      "round": "準々決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "市立和歌山",
+          "score": 11,
+          "won": true,
+          "name": "市立和歌山",
+          "slug": null
+        },
+        {
+          "display": "和歌山南陵",
+          "score": 2,
+          "won": false,
+          "name": "和歌山南陵",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-10-03",
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 和歌山県大会",
+      "round": "準決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 4,
+          "won": false,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "市立和歌山",
+          "score": 5,
+          "won": true,
+          "name": "市立和歌山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-09-26",
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 和歌山県大会",
+      "round": "準々決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "和歌山東",
+          "score": 6,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        },
+        {
+          "display": "耐久",
+          "score": 0,
+          "won": false,
+          "name": "耐久高校",
+          "slug": "taikyu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-09-26",
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 和歌山県大会",
+      "round": "準々決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "笠田",
+          "score": 2,
+          "won": false,
+          "name": "笠田高校",
+          "slug": "kaseda"
+        },
+        {
+          "display": "向陽",
+          "score": 9,
+          "won": true,
+          "name": "向陽高校",
+          "slug": "wakayama-koyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-10-03",
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 和歌山県大会",
+      "round": "準決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "和歌山東",
+          "score": 12,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        },
+        {
+          "display": "向陽",
+          "score": 3,
+          "won": false,
+          "name": "向陽高校",
+          "slug": "wakayama-koyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2020-10-04",
+      "season": "autumn",
+      "tournament": "2020年 秋季近畿地区高校野球 和歌山県大会",
+      "round": "決勝",
+      "venue": "紀三井寺公園野球場",
+      "teams": [
+        {
+          "display": "和歌山東",
+          "score": 2,
+          "won": false,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        },
+        {
+          "display": "市立和歌山",
+          "score": 8,
+          "won": true,
+          "name": "市立和歌山",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://wakayama.hsbflash.jp/"
+      }
     },
     {
       "date": "2025-09-06",

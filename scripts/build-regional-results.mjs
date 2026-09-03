@@ -15773,6 +15773,50 @@ function hsbAdapter({ slug, district, host, summer2020 }) {
   };
 }
 
+/**
+ * ★★★**「連盟が持っていない年・季節だけ」を HSB flash から足すアダプタ**（2026-09-03）。
+ *
+ * ------------------------------------------------------------------
+ * ★★ なぜ切り替えではなく「足す」なのか
+ *
+ *   **愛知（2015年〜）・兵庫（2017年〜）・富山（2014年〜）・和歌山（2017年〜）は、
+ *   連盟のほうが古い年を持っている。** HSB flash はどの県も 2019年から。
+ *   ★**切り替えると、その古い年が丸ごと消える。**
+ *   ★**そのまま両方を登録すると、同じ大会が2つの名前で並ぶ**（引き継ぎの鍵は大会名）。
+ *
+ * ------------------------------------------------------------------
+ * ★★ 仕組み（**主・副の2本立て**）
+ *
+ *   - **主**は連盟のアダプタ。**先に走って生成物を書く。**
+ *   - **副**（これ）は**そのあとに走り**、生成物を読んで
+ *     ★**「主が1試合でも持っている 年×季節」は返さない。**
+ *   - ★**県の出典表示（`sourceName`）は主のまま**にする（`name` / `siteUrl` を主から借りる）。
+ *   - ★★**副が足した試合には `source` を付ける**（愛知の CATVase と同じ形）。
+ *     **転記した経路が別ならその経路が本当の出所**（AGENTS.md）。
+ *
+ *   ★**この2本立ては「切り替え」より弱い** —— 主が薄い年でも、
+ *   **1試合でもあれば副は入らない。** 混ざって二重になるより取りこぼすほうを選んでいる。
+ */
+function hsbFillAdapter({ slug, district, host, summer2020, primary }) {
+  const base = `https://${host}.hsbflash.jp`;
+  return {
+    ...HSB_BASE,
+    slug,
+    district,
+    // ★**県の出典は主（連盟）のまま。** 足したぶんは試合ごとの `source` で示す
+    name: primary.name,
+    siteUrl: primary.siteUrl,
+    base,
+    seasons: { spring: `${base}/`, summer: `${base}/`, autumn: `${base}/` },
+    summer2020,
+    /** ★**主が持っていない 年×季節 だけ返す**（下の `add` が見る） */
+    fillGapsOnly: true,
+    /** ★**足した試合に付ける出所。** これが「主のもの」と見分ける印にもなる */
+    gameSource: { name: "HSB flash", url: `${base}/` },
+    _pages: new Map(),
+  };
+}
+
 const fukuoka = hsbAdapter({
   slug: "fukuoka",
   district: "福岡",
@@ -15908,6 +15952,7 @@ const chibaHsb = hsbAdapter({
   host: "chiba",
   summer2020: /^2020夏季千葉県高等学校野球大会/,
 });
+
 
 /*
   ★★★**2026-09-02 その2 に 岩手・岐阜・滋賀・岡山・三重・徳島 も HSB flash へ切り替えた**
@@ -16581,6 +16626,50 @@ const osaka = {
   },
 };
 
+/*
+  ★★★**連盟が持っていない年だけ HSB flash から足す4県**（2026-09-03。`hsbFillAdapter` の説明を読むこと）。
+
+  ★**この4県は連盟のほうが古い年を持っている**ので、切り替えると年が減る:
+
+      愛知 2015年〜 ／ 兵庫 2017年〜 ／ 富山 2014年〜 ／ 和歌山 2017年〜
+
+  ★**HSB flash はどの県も 2019年から。** 主（連盟）が1試合も持っていない
+  **年×季節だけ**を足すので、**二重にはならない。**
+  ★**`ADAPTERS` では必ず主のうしろに置くこと**（主が先に生成物を書いてから読む）。
+*/
+const aichiHsbFill = hsbFillAdapter({
+  slug: "aichi",
+  district: "愛知",
+  host: "aichi",
+  summer2020: /^令和2年夏季愛知県高等学校野球大会/,
+  primary: aichi,
+});
+
+const hyogoHsbFill = hsbFillAdapter({
+  slug: "hyogo",
+  district: "兵庫",
+  host: "hyogo",
+  summer2020: /^令和2年度夏季兵庫県高等学校野球大会/,
+  primary: hyogo,
+});
+
+const toyamaHsbFill = hsbFillAdapter({
+  slug: "toyama",
+  district: "富山",
+  host: "toyama",
+  // ★富山だけ題に「夏」も「野球大会」の前の年度も無い（`TOYAMA2020高校野球大会`）
+  summer2020: /^TOYAMA2020高校野球大会/,
+  primary: toyama,
+});
+
+const wakayamaHsbFill = hsbFillAdapter({
+  slug: "wakayama",
+  district: "和歌山",
+  host: "wakayama",
+  summer2020: /^2020夏高校野球和歌山大会/,
+  primary: wakayama,
+});
+
 const ADAPTERS = [
   nagano,
   kanagawa,
@@ -16592,13 +16681,16 @@ const ADAPTERS = [
   nara,
   niigata,
   aichi,
+  aichiHsbFill,
   ishikawa,
   yamagata,
   shizuoka,
   yamaguchi,
   miyazaki,
   wakayama,
+  wakayamaHsbFill,
   hyogo,
+  hyogoHsbFill,
   // ★2026-08-20 に方針を変えて足した5県（omyuAdapter の説明を読むこと）
   ibaraki,
   kagawa,
@@ -16647,6 +16739,7 @@ const ADAPTERS = [
     福岡（SVG）と同じ考え方の、PDF版。**toyama の説明を読むこと。**
   */
   toyama,
+  toyamaHsbFill,
 ];
 
 /**
@@ -17567,9 +17660,31 @@ async function main() {
        *   ★**日付の無い引き分け再試合は落ちる**（同じ大会・同じ回戦・同じ顔合わせ）。
        *   いまそういう出典は無い。出てきたらここを見直すこと。
        */
+      /*
+        ★★★**副の出典は「主の出典が持っていない 年×季節」だけを足す**（2026-09-03。`hsbFillAdapter`）。
+
+        ★**主が1試合でも持っている年は入れない。** 混ざって同じ大会が2つの名前で並ぶより、
+        **取りこぼすほうを選んでいる。**
+        ★**主のものかどうかは `source` の名前で見分ける** ——
+        副が足した試合には必ず `source` が付いている（愛知の CATVase と同じ形）。
+        ★**主が先に走って生成物を書いている**ので、ここで読めば今回のぶんも入っている。
+      */
+      const coveredByPrimary = adapter.fillGapsOnly
+        ? new Set(
+            (previousDistrict(adapter.slug)?.games ?? [])
+              .filter((g) => g.source?.name !== adapter.gameSource?.name)
+              .map((g) => `${g.season}\t${g.date?.slice(0, 4) ?? yearOfTournament(g.tournament, [g]) ?? "?"}`),
+          )
+        : null;
       const add = (list) => {
         let added = 0;
         for (const g of list) {
+          if (coveredByPrimary) {
+            const y = g.date?.slice(0, 4) ?? yearOfTournament(g.tournament, [g]);
+            if (coveredByPrimary.has(`${g.season}\t${y ?? "?"}`)) continue;
+            // ★**足したぶんの出所を必ず書く**（県の出典は主のままなので、これが無いと嘘になる）
+            g.source = { ...adapter.gameSource };
+          }
           const key = g.date
             ? `${g.date}\t${g.teams[0].display}\t${g.teams[1].display}`
             : `${g.tournament}\t${g.round}\t${g.teams[0].display}\t${g.teams[1].display}`;
@@ -18159,7 +18274,15 @@ async function main() {
       失われた**（栃木で実際に35県ぶんが消えた）。
     */
     writeDistrict(district);
-    districts.push(district);
+    /*
+      ★★**1つの県にアダプタが2つあることがある**（2026-09-03。`hsbFillAdapter`）。
+      **あとから走ったほうの `district` には、引き継ぎで主のぶんも入っている**
+      （書き出したファイルと同じ中身）ので、**同じ slug は後勝ちで置き換える。**
+      ★**足すと、抜粋も勝ち上がりもその県だけ二重に数える。**
+    */
+    const already = districts.findIndex((d) => d.slug === district.slug);
+    if (already >= 0) districts[already] = district;
+    else districts.push(district);
   }
 
   const results = { districts };
@@ -18548,7 +18671,15 @@ async function main() {
     （`Module not found: Can't resolve '@/lib/data/regional'` がリクエストごとに出る）。
     ファイルを名指しできる名前にしておけば、どちらでも同じ解決になる。
   */
-  const known = ADAPTERS.filter((a) => existsSync(path.join(OUT_DIR, `${a.slug}.json`)));
+  /*
+    ★**同じ slug のアダプタが2つあるので、ここで畳むこと**（2026-09-03）。
+    畳まないと `loaders.ts` に同じ鍵が2回出て、**TypeScript が通らない**（TS1117）。
+  */
+  const known = [
+    ...new Map(
+      ADAPTERS.filter((a) => existsSync(path.join(OUT_DIR, `${a.slug}.json`))).map((a) => [a.slug, a]),
+    ).values(),
+  ];
   const indexFile =
     `// このファイルは scripts/build-regional-results.mjs が生成する。直接編集しない。\n` +
     `// 県のページが自分の県だけ読み込むための表。**静的 import にしないこと**\n` +

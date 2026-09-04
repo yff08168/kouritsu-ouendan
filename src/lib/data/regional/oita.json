@@ -32254,6 +32254,1141 @@
       ]
     },
     {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "情報科学",
+          "score": 7,
+          "won": true,
+          "name": "情報科学高校",
+          "slug": "oita-johokagaku"
+        },
+        {
+          "display": "安心院",
+          "score": 4,
+          "won": false,
+          "name": "安心院高校",
+          "slug": "ajimu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "中津北",
+          "score": 4,
+          "won": false,
+          "name": "中津北高校",
+          "slug": "nakatsukita"
+        },
+        {
+          "display": "楊志館",
+          "score": 5,
+          "won": true,
+          "name": "楊志館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-15",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "1回戦",
+      "venue": "臼杵市民球場",
+      "teams": [
+        {
+          "display": "別府翔青",
+          "score": 0,
+          "won": false,
+          "name": "別府翔青高校",
+          "slug": "beppushosei"
+        },
+        {
+          "display": "佐伯鶴城",
+          "score": 3,
+          "won": true,
+          "name": "佐伯鶴城高校",
+          "slug": "saikikakujo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "1回戦",
+      "venue": "臼杵市民球場",
+      "teams": [
+        {
+          "display": "臼杵",
+          "score": 2,
+          "won": false,
+          "name": "臼杵高校",
+          "slug": "usuki"
+        },
+        {
+          "display": "大分上野丘",
+          "score": 6,
+          "won": true,
+          "name": "大分上野丘高校",
+          "slug": "oitauenogaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "国東",
+          "score": 5,
+          "won": true,
+          "name": "国東高校",
+          "slug": "kunisaki"
+        },
+        {
+          "display": "大分鶴崎",
+          "score": 4,
+          "won": false,
+          "name": "大分鶴崎高校",
+          "slug": "oitatsurusaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大分高専",
+          "score": 2,
+          "won": true,
+          "name": "大分工業高専",
+          "slug": "oitakogyo-kosen"
+        },
+        {
+          "display": "日田",
+          "score": 1,
+          "won": false,
+          "name": "日田高校",
+          "slug": "hita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "別大興産スタジアム",
+      "teams": [
+        {
+          "display": "津久見",
+          "score": 4,
+          "won": true,
+          "name": "津久見高校",
+          "slug": "tsukumi"
+        },
+        {
+          "display": "情報科学",
+          "score": 0,
+          "won": false,
+          "name": "情報科学高校",
+          "slug": "oita-johokagaku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "別大興産スタジアム",
+      "teams": [
+        {
+          "display": "三重総合",
+          "score": 3,
+          "won": true,
+          "name": "三重総合高校",
+          "slug": "miesogo"
+        },
+        {
+          "display": "大分南",
+          "score": 2,
+          "won": false,
+          "name": "大分南高校",
+          "slug": "oitaminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "別大興産スタジアム",
+      "teams": [
+        {
+          "display": "中津南",
+          "score": 4,
+          "won": true,
+          "name": "中津南高校",
+          "slug": "nakatsuminami"
+        },
+        {
+          "display": "楊志館",
+          "score": 3,
+          "won": false,
+          "name": "楊志館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-18",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "別大興産スタジアム",
+      "teams": [
+        {
+          "display": "玖珠美山",
+          "score": 2,
+          "won": false,
+          "name": "玖珠美山高校",
+          "slug": "kusumiyama"
+        },
+        {
+          "display": "佐伯鶴城",
+          "score": 3,
+          "won": true,
+          "name": "佐伯鶴城高校",
+          "slug": "saikikakujo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-18",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "別大興産スタジアム",
+      "teams": [
+        {
+          "display": "中津東",
+          "score": 6,
+          "won": false,
+          "name": "中津東高校",
+          "slug": "nakatsuhigashi"
+        },
+        {
+          "display": "大分上野丘",
+          "score": 8,
+          "won": true,
+          "name": "大分上野丘高校",
+          "slug": "oitauenogaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-18",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "別大興産スタジアム",
+      "teams": [
+        {
+          "display": "明豊",
+          "score": 13,
+          "won": true,
+          "name": "明豊",
+          "slug": null
+        },
+        {
+          "display": "大分商業",
+          "score": 2,
+          "won": false,
+          "name": "大分商業高校",
+          "slug": "oitashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "柳ヶ浦",
+          "score": 6,
+          "won": true,
+          "name": "柳ヶ浦",
+          "slug": null
+        },
+        {
+          "display": "国東",
+          "score": 0,
+          "won": false,
+          "name": "国東高校",
+          "slug": "kunisaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宇佐",
+          "score": 2,
+          "won": false,
+          "name": "宇佐高校",
+          "slug": "usa"
+        },
+        {
+          "display": "大分高専",
+          "score": 12,
+          "won": true,
+          "name": "大分工業高専",
+          "slug": "oitakogyo-kosen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-19",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "3回戦",
+      "venue": "臼杵市民球場",
+      "teams": [
+        {
+          "display": "津久見",
+          "score": 7,
+          "won": true,
+          "name": "津久見高校",
+          "slug": "tsukumi"
+        },
+        {
+          "display": "三重総合",
+          "score": 1,
+          "won": false,
+          "name": "三重総合高校",
+          "slug": "miesogo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "3回戦",
+      "venue": "臼杵市民球場",
+      "teams": [
+        {
+          "display": "中津南",
+          "score": 1,
+          "won": false,
+          "name": "中津南高校",
+          "slug": "nakatsuminami"
+        },
+        {
+          "display": "佐伯鶴城",
+          "score": 7,
+          "won": true,
+          "name": "佐伯鶴城高校",
+          "slug": "saikikakujo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大分上野丘",
+          "score": 1,
+          "won": false,
+          "name": "大分上野丘高校",
+          "slug": "oitauenogaoka"
+        },
+        {
+          "display": "明豊",
+          "score": 10,
+          "won": true,
+          "name": "明豊",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "柳ヶ浦",
+          "score": 6,
+          "won": true,
+          "name": "柳ヶ浦",
+          "slug": null
+        },
+        {
+          "display": "大分高専",
+          "score": 2,
+          "won": false,
+          "name": "大分工業高専",
+          "slug": "oitakogyo-kosen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "準々決勝",
+      "venue": "臼杵市民球場",
+      "teams": [
+        {
+          "display": "津久見",
+          "score": 5,
+          "won": true,
+          "name": "津久見高校",
+          "slug": "tsukumi"
+        },
+        {
+          "display": "佐伯鶴城",
+          "score": 2,
+          "won": false,
+          "name": "佐伯鶴城高校",
+          "slug": "saikikakujo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "準々決勝",
+      "venue": "臼杵市民球場",
+      "teams": [
+        {
+          "display": "明豊",
+          "score": 7,
+          "won": true,
+          "name": "明豊",
+          "slug": null
+        },
+        {
+          "display": "柳ヶ浦",
+          "score": 0,
+          "won": false,
+          "name": "柳ヶ浦",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-10-02",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "準決勝",
+      "venue": "別大興産スタジアム",
+      "teams": [
+        {
+          "display": "津久見",
+          "score": 3,
+          "won": false,
+          "name": "津久見高校",
+          "slug": "tsukumi"
+        },
+        {
+          "display": "明豊",
+          "score": 4,
+          "won": true,
+          "name": "明豊",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高田",
+          "score": 7,
+          "won": false,
+          "name": "高田高校",
+          "slug": "oita-takata"
+        },
+        {
+          "display": "杵築",
+          "score": 8,
+          "won": true,
+          "name": "杵築高校",
+          "slug": "kitsuki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大分東",
+          "score": 7,
+          "won": true,
+          "name": "大分東高校",
+          "slug": "oitahigashi"
+        },
+        {
+          "display": "由布",
+          "score": 0,
+          "won": false,
+          "name": "由布高校",
+          "slug": "yufu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鶴崎工業",
+          "score": 6,
+          "won": true,
+          "name": "鶴崎工業高校",
+          "slug": "tsurusakikogyo"
+        },
+        {
+          "display": "三隈･宇産･双国",
+          "score": 4,
+          "won": false,
+          "name": "三隈･宇産･双国",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "別府鶴見丘",
+          "score": 3,
+          "won": false,
+          "name": "別府鶴見丘高校",
+          "slug": "bepputsurumigaoka"
+        },
+        {
+          "display": "藤蔭",
+          "score": 10,
+          "won": true,
+          "name": "藤蔭",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "竹田",
+          "score": 3,
+          "won": false,
+          "name": "竹田高校",
+          "slug": "taketa"
+        },
+        {
+          "display": "大分国際情報",
+          "score": 10,
+          "won": true,
+          "name": "大分国際情報",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "臼杵市民球場",
+      "teams": [
+        {
+          "display": "日本文理大附",
+          "score": 1,
+          "won": true,
+          "name": "日本文理大附",
+          "slug": null
+        },
+        {
+          "display": "杵築",
+          "score": 0,
+          "won": false,
+          "name": "杵築高校",
+          "slug": "kitsuki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "臼杵市民球場",
+      "teams": [
+        {
+          "display": "日出総合",
+          "score": 4,
+          "won": true,
+          "name": "日出総合高校",
+          "slug": "hijisogo"
+        },
+        {
+          "display": "大分西",
+          "score": 1,
+          "won": false,
+          "name": "大分西高校",
+          "slug": "oitanishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "臼杵市民球場",
+      "teams": [
+        {
+          "display": "大分舞鶴",
+          "score": 9,
+          "won": true,
+          "name": "大分舞鶴高校",
+          "slug": "oitamaizuru"
+        },
+        {
+          "display": "大分東",
+          "score": 0,
+          "won": false,
+          "name": "大分東高校",
+          "slug": "oitahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-18",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "臼杵市民球場",
+      "teams": [
+        {
+          "display": "大分東明",
+          "score": 6,
+          "won": false,
+          "name": "大分東明",
+          "slug": null
+        },
+        {
+          "display": "大分工業",
+          "score": 8,
+          "won": true,
+          "name": "大分工業高校",
+          "slug": "oitakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大分",
+          "score": 8,
+          "won": true,
+          "name": "大分",
+          "slug": null
+        },
+        {
+          "display": "鶴崎工業",
+          "score": 3,
+          "won": false,
+          "name": "鶴崎工業高校",
+          "slug": "tsurusakikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大分雄城台",
+          "score": 12,
+          "won": true,
+          "name": "大分雄城台高校",
+          "slug": "oitaoginodai"
+        },
+        {
+          "display": "佐伯豊南",
+          "score": 6,
+          "won": false,
+          "name": "佐伯豊南高校",
+          "slug": "saikihonan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-19",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "臼杵市民球場",
+      "teams": [
+        {
+          "display": "日田林工",
+          "score": 2,
+          "won": false,
+          "name": "日田林工高校",
+          "slug": "hitarinko"
+        },
+        {
+          "display": "藤蔭",
+          "score": 4,
+          "won": true,
+          "name": "藤蔭",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-19",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "臼杵市民球場",
+      "teams": [
+        {
+          "display": "大分豊府",
+          "score": 4,
+          "won": true,
+          "name": "大分豊府高校",
+          "slug": "oitahofu"
+        },
+        {
+          "display": "大分国際情報",
+          "score": 3,
+          "won": false,
+          "name": "大分国際情報",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-19",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "3回戦",
+      "venue": "別大興産スタジアム",
+      "teams": [
+        {
+          "display": "日本文理大附",
+          "score": 10,
+          "won": true,
+          "name": "日本文理大附",
+          "slug": null
+        },
+        {
+          "display": "日出総合",
+          "score": 0,
+          "won": false,
+          "name": "日出総合高校",
+          "slug": "hijisogo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大分舞鶴",
+          "score": 2,
+          "won": false,
+          "name": "大分舞鶴高校",
+          "slug": "oitamaizuru"
+        },
+        {
+          "display": "大分工業",
+          "score": 4,
+          "won": true,
+          "name": "大分工業高校",
+          "slug": "oitakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "3回戦",
+      "venue": "臼杵市民球場",
+      "teams": [
+        {
+          "display": "大分",
+          "score": 9,
+          "won": true,
+          "name": "大分",
+          "slug": null
+        },
+        {
+          "display": "大分雄城台",
+          "score": 1,
+          "won": false,
+          "name": "大分雄城台高校",
+          "slug": "oitaoginodai"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "藤蔭",
+          "score": 10,
+          "won": true,
+          "name": "藤蔭",
+          "slug": null
+        },
+        {
+          "display": "大分豊府",
+          "score": 3,
+          "won": false,
+          "name": "大分豊府高校",
+          "slug": "oitahofu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "準々決勝",
+      "venue": "別大興産スタジアム",
+      "teams": [
+        {
+          "display": "日本文理大附",
+          "score": 5,
+          "won": true,
+          "name": "日本文理大附",
+          "slug": null
+        },
+        {
+          "display": "大分工業",
+          "score": 2,
+          "won": false,
+          "name": "大分工業高校",
+          "slug": "oitakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "準々決勝",
+      "venue": "別大興産スタジアム",
+      "teams": [
+        {
+          "display": "大分",
+          "score": 8,
+          "won": true,
+          "name": "大分",
+          "slug": null
+        },
+        {
+          "display": "藤蔭",
+          "score": 5,
+          "won": false,
+          "name": "藤蔭",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-10-02",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "準決勝",
+      "venue": "別大興産スタジアム",
+      "teams": [
+        {
+          "display": "日本文理大附",
+          "score": 1,
+          "won": false,
+          "name": "日本文理大附",
+          "slug": null
+        },
+        {
+          "display": "大分",
+          "score": 2,
+          "won": true,
+          "name": "大分",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-10-03",
+      "season": "autumn",
+      "tournament": "2018年 秋季九州地区高等学校野球 大分県大会",
+      "round": "決勝",
+      "venue": "別大興産スタジアム",
+      "teams": [
+        {
+          "display": "大分",
+          "score": 6,
+          "won": false,
+          "name": "大分",
+          "slug": null
+        },
+        {
+          "display": "明豊",
+          "score": 11,
+          "won": true,
+          "name": "明豊",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2025-09-20",
       "season": "autumn",
       "tournament": "2025年 秋季九州地区高校野球 大分県大会",

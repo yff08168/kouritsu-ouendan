@@ -488,7 +488,16 @@ export function readHsbBracket(html, { district = "" } = {}) {
     for (const list of feedersOf.values()) for (const o of list) consumed.add(o);
     const tops = comps.filter((c) => !consumed.has(c));
     if (tops.length !== 1) {
-      return bail(`いちばん上の山が ${tops.length} つある（山は全部で ${comps.length} つ）`);
+      /*
+        ★**どの山が余っているかを必ず出すこと。** 数だけでは追えない ——
+        たいていは**校名の書き方が上の山と食い違っている**（折り返しで切れている・略し方が違う）。
+      */
+      return bail(
+        `いちばん上の山が ${tops.length} つある（山は全部で ${comps.length} つ）: ` +
+          tops
+            .map((c) => `[${slotsOf(c).length}校 優勝 ${winnerOf.get(c) ?? "-"}]`)
+            .join(" / "),
+      );
     }
     topComp = tops[0];
     /*
@@ -626,6 +635,43 @@ export function readHsbBracket(html, { district = "" } = {}) {
     if (name) legend.set(t.text, name.text);
   }
   /*
+    ---- 8. 順位決定戦 ----
+    ★★★**勝ち抜き表の下に「順位決定戦」がある紙がある**（2026-09-04。高知・愛媛・徳島の春季）。
+    **四国大会へ進む枠を決める試合**で、**日付と両校名だけが刷ってあり、得点は無い。**
+
+        410 385  順位決定戦
+        438 385  4/11(土) 10:00
+        460 335  高知商業      460 435  高知農業
+
+    ★★**この試合は出せない**（得点が無い）。**返すのは「あった」ことと出場2校だけ。**
+    ★**呼ぶ側はこれを使って2つ緩める**:
+      ①**一覧のほうが多いぶんが、この2校のうち表に無いほうだけなら受ける**
+      ②★★**準優勝は突き合わせない** —— **一覧の準優勝はこの試合の結果**であって、
+        勝ち抜き表の決勝で負けた学校ではない。**優勝校は今までどおり突き合わせる。**
+  */
+  const placementLabel = texts.find((t) => /^(順位|順位.?)決定戦$/.test(t.text.replace(/\s/g, "")));
+  let placement = null;
+  if (placementLabel) {
+    /*
+      ★**ラベルより下の、いちばん近い行に2校が並ぶ。**
+      日付・球場の記号・「使用球場」は落とす（数字を含む・1文字・見出しの語）。
+    */
+    const below = texts
+      .filter((t) => t.y > placementLabel.y && t.y < placementLabel.y + pitch * 3)
+      /*
+        ★★**枝の中の校名を拾わないこと。** 順位決定戦はラベルの真下に中央寄せで刷ってあるが、
+        **同じ高さに勝ち抜き表の校名やスコアがある**（徳島はラベルの10ポイント下に
+        スロット27の `阿波` が x=717 で並ぶ）。**ラベルの近く（左右120ポイント）だけ見る。**
+      */
+      .filter((t) => Math.abs(t.x - placementLabel.x) < 120)
+      .filter((t) => ![...t.text].some((c) => /[0-9()／/:]/.test(c)))
+      .filter((t) => [...t.text].length >= 2 && !/使用球場|順位|決定戦/.test(t.text))
+      .sort((a, b) => a.y - b.y || a.x - b.x);
+    const row = below.filter((t) => Math.abs(t.y - below[0]?.y) < 2);
+    if (row.length === 2) placement = { label: placementLabel.text, teams: row.map((t) => t.text) };
+  }
+
+  /*
     ★★**返すスロットからは「決勝トーナメントの山」を外す**（2026-09-02 その2）。
     あちらに並ぶのは**他の山の優勝校**で、**同じ学校がこの紙に2度出ている**だけ。
     ★**外すと「チーム数 − 試合数 = 1」がそのまま成り立つ**
@@ -637,6 +683,8 @@ export function readHsbBracket(html, { district = "" } = {}) {
     byes,
     champion,
     legend,
+    /** ★**勝ち抜き表の外にある「順位決定戦」**（得点が無いので試合としては返さない） */
+    placement,
     printedChampion: texts.find((t) => t.cls === "y_f18" && /優勝/.test(t.text))?.text ?? null,
   };
 }

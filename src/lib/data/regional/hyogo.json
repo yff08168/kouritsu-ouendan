@@ -5,924 +5,6 @@
   "sourceUrl": "http://www.hyogo-koyaren.or.jp/",
   "games": [
     {
-      "date": "2019-04-14",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "相生学院",
-          "score": 5,
-          "won": true,
-          "name": "相生学院",
-          "slug": null
-        },
-        {
-          "display": "赤穂",
-          "score": 3,
-          "won": false,
-          "name": "赤穂高校",
-          "slug": "ako"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-14",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "飾磨",
-          "score": 6,
-          "won": true,
-          "name": "飾磨高校",
-          "slug": "shikama"
-        },
-        {
-          "display": "西宮南",
-          "score": 5,
-          "won": false,
-          "name": "西宮南高校",
-          "slug": "nishinomiyaminami"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-20",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "明石商業",
-          "score": 8,
-          "won": true,
-          "name": "明石商業高校",
-          "slug": "akashishogyo"
-        },
-        {
-          "display": "相生学院",
-          "score": 0,
-          "won": false,
-          "name": "相生学院",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-20",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "滝川",
-          "score": 0,
-          "won": false,
-          "name": "滝川",
-          "slug": null
-        },
-        {
-          "display": "須磨翔風",
-          "score": 3,
-          "won": true,
-          "name": "須磨翔風高校",
-          "slug": "sumashofu"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-21",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "相生産業",
-          "score": 0,
-          "won": false,
-          "name": "相生産業高校",
-          "slug": "aioisangyo"
-        },
-        {
-          "display": "西宮東",
-          "score": 9,
-          "won": true,
-          "name": "西宮東高校",
-          "slug": "nishinomiyahigashi"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-21",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "関西学院",
-          "score": 5,
-          "won": true,
-          "name": "関西学院",
-          "slug": null
-        },
-        {
-          "display": "有馬",
-          "score": 1,
-          "won": false,
-          "name": "有馬高校",
-          "slug": "hyogo-arima"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-21",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "六甲アイランド",
-          "score": 5,
-          "won": true,
-          "name": "六甲アイランド高校",
-          "slug": "rokkoairando"
-        },
-        {
-          "display": "神戸高専",
-          "score": 4,
-          "won": false,
-          "name": "神戸市立工業高専",
-          "slug": "kobeshiritsukogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-21",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "東播工業",
-          "score": 4,
-          "won": false,
-          "name": "東播工業高校",
-          "slug": "tobankogyo"
-        },
-        {
-          "display": "東洋大姫路",
-          "score": 7,
-          "won": true,
-          "name": "東洋大姫路",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-21",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "明石南",
-          "score": 7,
-          "won": true,
-          "name": "明石南高校",
-          "slug": "akashiminami"
-        },
-        {
-          "display": "西脇工業",
-          "score": 4,
-          "won": false,
-          "name": "西脇工業高校",
-          "slug": "nishiwakikogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-21",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "飾磨",
-          "score": 2,
-          "won": false,
-          "name": "飾磨高校",
-          "slug": "shikama"
-        },
-        {
-          "display": "柏原",
-          "score": 9,
-          "won": true,
-          "name": "柏原高校",
-          "slug": "kaibara"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-27",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "明石商業",
-          "score": 2,
-          "won": false,
-          "name": "明石商業高校",
-          "slug": "akashishogyo"
-        },
-        {
-          "display": "須磨翔風",
-          "score": 3,
-          "won": true,
-          "name": "須磨翔風高校",
-          "slug": "sumashofu"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-27",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "西宮東",
-          "score": 8,
-          "won": true,
-          "name": "西宮東高校",
-          "slug": "nishinomiyahigashi"
-        },
-        {
-          "display": "関西学院",
-          "score": 1,
-          "won": false,
-          "name": "関西学院",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-27",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "六甲アイランド",
-          "score": 2,
-          "won": false,
-          "name": "六甲アイランド高校",
-          "slug": "rokkoairando"
-        },
-        {
-          "display": "東洋大姫路",
-          "score": 7,
-          "won": true,
-          "name": "東洋大姫路",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "明石南",
-          "score": 4,
-          "won": true,
-          "name": "明石南高校",
-          "slug": "akashiminami"
-        },
-        {
-          "display": "柏原",
-          "score": 2,
-          "won": false,
-          "name": "柏原高校",
-          "slug": "kaibara"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-29",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "須磨翔風",
-          "score": 3,
-          "won": true,
-          "name": "須磨翔風高校",
-          "slug": "sumashofu"
-        },
-        {
-          "display": "西宮東",
-          "score": 2,
-          "won": false,
-          "name": "西宮東高校",
-          "slug": "nishinomiyahigashi"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-29",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "東洋大姫路",
-          "score": 6,
-          "won": true,
-          "name": "東洋大姫路",
-          "slug": null
-        },
-        {
-          "display": "明石南",
-          "score": 1,
-          "won": false,
-          "name": "明石南高校",
-          "slug": "akashiminami"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-05-03",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "準決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "須磨翔風",
-          "score": 2,
-          "won": true,
-          "name": "須磨翔風高校",
-          "slug": "sumashofu"
-        },
-        {
-          "display": "東洋大姫路",
-          "score": 1,
-          "won": false,
-          "name": "東洋大姫路",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-14",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "神戸北",
-          "score": 2,
-          "won": true,
-          "name": "神戸北高校",
-          "slug": "kobekita"
-        },
-        {
-          "display": "篠山産業",
-          "score": 1,
-          "won": false,
-          "name": "篠山産業高校",
-          "slug": "sasayamasangyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-14",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "育英",
-          "score": 1,
-          "won": true,
-          "name": "育英",
-          "slug": null
-        },
-        {
-          "display": "三田松聖",
-          "score": 0,
-          "won": false,
-          "name": "三田松聖",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-20",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "龍野",
-          "score": 0,
-          "won": false,
-          "name": "龍野高校",
-          "slug": "hyogo-tatsuno"
-        },
-        {
-          "display": "姫路南",
-          "score": 10,
-          "won": true,
-          "name": "姫路南高校",
-          "slug": "himejiminami"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-20",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "舞子",
-          "score": 2,
-          "won": false,
-          "name": "舞子高校",
-          "slug": "maiko"
-        },
-        {
-          "display": "社",
-          "score": 9,
-          "won": true,
-          "name": "社高校",
-          "slug": "hyogo-yashiro"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-20",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "市川",
-          "score": 2,
-          "won": true,
-          "name": "市川",
-          "slug": null
-        },
-        {
-          "display": "高砂",
-          "score": 0,
-          "won": false,
-          "name": "高砂高校",
-          "slug": "takasago"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-20",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "市立西宮",
-          "score": 9,
-          "won": true,
-          "name": "市立西宮",
-          "slug": null
-        },
-        {
-          "display": "甲南",
-          "score": 2,
-          "won": false,
-          "name": "甲南",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-20",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "淡路",
-          "score": 0,
-          "won": false,
-          "name": "淡路高校",
-          "slug": "awaji"
-        },
-        {
-          "display": "武庫荘総合",
-          "score": 5,
-          "won": true,
-          "name": "武庫荘総合高校",
-          "slug": "mukonososogo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-20",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "市立尼崎",
-          "score": 0,
-          "won": false,
-          "name": "尼崎高校",
-          "slug": "hyogo-amagasaki"
-        },
-        {
-          "display": "神戸国際大付",
-          "score": 6,
-          "won": true,
-          "name": "神戸国際大付",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-20",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "神戸北",
-          "score": 3,
-          "won": true,
-          "name": "神戸北高校",
-          "slug": "kobekita"
-        },
-        {
-          "display": "東播磨",
-          "score": 1,
-          "won": false,
-          "name": "東播磨高校",
-          "slug": "higashiharima"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-27",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "育英",
-          "score": 1,
-          "won": false,
-          "name": "育英",
-          "slug": null
-        },
-        {
-          "display": "姫路南",
-          "score": 2,
-          "won": true,
-          "name": "姫路南高校",
-          "slug": "himejiminami"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-27",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "社",
-          "score": 10,
-          "won": true,
-          "name": "社高校",
-          "slug": "hyogo-yashiro"
-        },
-        {
-          "display": "市川",
-          "score": 0,
-          "won": false,
-          "name": "市川",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "市立西宮",
-          "score": 3,
-          "won": false,
-          "name": "市立西宮",
-          "slug": null
-        },
-        {
-          "display": "武庫荘総合",
-          "score": 4,
-          "won": true,
-          "name": "武庫荘総合高校",
-          "slug": "mukonososogo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-27",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "神戸国際大付",
-          "score": 10,
-          "won": true,
-          "name": "神戸国際大付",
-          "slug": null
-        },
-        {
-          "display": "神戸北",
-          "score": 3,
-          "won": false,
-          "name": "神戸北高校",
-          "slug": "kobekita"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-29",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "姫路南",
-          "score": 4,
-          "won": true,
-          "name": "姫路南高校",
-          "slug": "himejiminami"
-        },
-        {
-          "display": "社",
-          "score": 3,
-          "won": false,
-          "name": "社高校",
-          "slug": "hyogo-yashiro"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-04-29",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "武庫荘総合",
-          "score": 0,
-          "won": false,
-          "name": "武庫荘総合高校",
-          "slug": "mukonososogo"
-        },
-        {
-          "display": "神戸国際大付",
-          "score": 10,
-          "won": true,
-          "name": "神戸国際大付",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-05-03",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "準決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "姫路南",
-          "score": 2,
-          "won": false,
-          "name": "姫路南高校",
-          "slug": "himejiminami"
-        },
-        {
-          "display": "神戸国際大付",
-          "score": 3,
-          "won": true,
-          "name": "神戸国際大付",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2019-05-04",
-      "season": "spring",
-      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
-      "round": "決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "神戸国際大付",
-          "score": 5,
-          "won": true,
-          "name": "神戸国際大付",
-          "slug": null
-        },
-        {
-          "display": "須磨翔風",
-          "score": 2,
-          "won": false,
-          "name": "須磨翔風高校",
-          "slug": "sumashofu"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://hyogo.hsbflash.jp/"
-      }
-    },
-    {
       "date": "2026-04-18",
       "season": "spring",
       "tournament": "2026年 春季近畿地区高校野球 兵庫県大会",
@@ -1861,6 +943,924 @@
           "won": false,
           "name": "高砂高校",
           "slug": "takasago"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-14",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "相生学院",
+          "score": 5,
+          "won": true,
+          "name": "相生学院",
+          "slug": null
+        },
+        {
+          "display": "赤穂",
+          "score": 3,
+          "won": false,
+          "name": "赤穂高校",
+          "slug": "ako"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-14",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "飾磨",
+          "score": 6,
+          "won": true,
+          "name": "飾磨高校",
+          "slug": "shikama"
+        },
+        {
+          "display": "西宮南",
+          "score": 5,
+          "won": false,
+          "name": "西宮南高校",
+          "slug": "nishinomiyaminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-20",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "明石商業",
+          "score": 8,
+          "won": true,
+          "name": "明石商業高校",
+          "slug": "akashishogyo"
+        },
+        {
+          "display": "相生学院",
+          "score": 0,
+          "won": false,
+          "name": "相生学院",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-20",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滝川",
+          "score": 0,
+          "won": false,
+          "name": "滝川",
+          "slug": null
+        },
+        {
+          "display": "須磨翔風",
+          "score": 3,
+          "won": true,
+          "name": "須磨翔風高校",
+          "slug": "sumashofu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-21",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "相生産業",
+          "score": 0,
+          "won": false,
+          "name": "相生産業高校",
+          "slug": "aioisangyo"
+        },
+        {
+          "display": "西宮東",
+          "score": 9,
+          "won": true,
+          "name": "西宮東高校",
+          "slug": "nishinomiyahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-21",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "関西学院",
+          "score": 5,
+          "won": true,
+          "name": "関西学院",
+          "slug": null
+        },
+        {
+          "display": "有馬",
+          "score": 1,
+          "won": false,
+          "name": "有馬高校",
+          "slug": "hyogo-arima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-21",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "六甲アイランド",
+          "score": 5,
+          "won": true,
+          "name": "六甲アイランド高校",
+          "slug": "rokkoairando"
+        },
+        {
+          "display": "神戸高専",
+          "score": 4,
+          "won": false,
+          "name": "神戸市立工業高専",
+          "slug": "kobeshiritsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-21",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東播工業",
+          "score": 4,
+          "won": false,
+          "name": "東播工業高校",
+          "slug": "tobankogyo"
+        },
+        {
+          "display": "東洋大姫路",
+          "score": 7,
+          "won": true,
+          "name": "東洋大姫路",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-21",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "明石南",
+          "score": 7,
+          "won": true,
+          "name": "明石南高校",
+          "slug": "akashiminami"
+        },
+        {
+          "display": "西脇工業",
+          "score": 4,
+          "won": false,
+          "name": "西脇工業高校",
+          "slug": "nishiwakikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-21",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "飾磨",
+          "score": 2,
+          "won": false,
+          "name": "飾磨高校",
+          "slug": "shikama"
+        },
+        {
+          "display": "柏原",
+          "score": 9,
+          "won": true,
+          "name": "柏原高校",
+          "slug": "kaibara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-27",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "明石商業",
+          "score": 2,
+          "won": false,
+          "name": "明石商業高校",
+          "slug": "akashishogyo"
+        },
+        {
+          "display": "須磨翔風",
+          "score": 3,
+          "won": true,
+          "name": "須磨翔風高校",
+          "slug": "sumashofu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-27",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "西宮東",
+          "score": 8,
+          "won": true,
+          "name": "西宮東高校",
+          "slug": "nishinomiyahigashi"
+        },
+        {
+          "display": "関西学院",
+          "score": 1,
+          "won": false,
+          "name": "関西学院",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-27",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "六甲アイランド",
+          "score": 2,
+          "won": false,
+          "name": "六甲アイランド高校",
+          "slug": "rokkoairando"
+        },
+        {
+          "display": "東洋大姫路",
+          "score": 7,
+          "won": true,
+          "name": "東洋大姫路",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "明石南",
+          "score": 4,
+          "won": true,
+          "name": "明石南高校",
+          "slug": "akashiminami"
+        },
+        {
+          "display": "柏原",
+          "score": 2,
+          "won": false,
+          "name": "柏原高校",
+          "slug": "kaibara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "須磨翔風",
+          "score": 3,
+          "won": true,
+          "name": "須磨翔風高校",
+          "slug": "sumashofu"
+        },
+        {
+          "display": "西宮東",
+          "score": 2,
+          "won": false,
+          "name": "西宮東高校",
+          "slug": "nishinomiyahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東洋大姫路",
+          "score": 6,
+          "won": true,
+          "name": "東洋大姫路",
+          "slug": null
+        },
+        {
+          "display": "明石南",
+          "score": 1,
+          "won": false,
+          "name": "明石南高校",
+          "slug": "akashiminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-03",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "須磨翔風",
+          "score": 2,
+          "won": true,
+          "name": "須磨翔風高校",
+          "slug": "sumashofu"
+        },
+        {
+          "display": "東洋大姫路",
+          "score": 1,
+          "won": false,
+          "name": "東洋大姫路",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-14",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "神戸北",
+          "score": 2,
+          "won": true,
+          "name": "神戸北高校",
+          "slug": "kobekita"
+        },
+        {
+          "display": "篠山産業",
+          "score": 1,
+          "won": false,
+          "name": "篠山産業高校",
+          "slug": "sasayamasangyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-14",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "育英",
+          "score": 1,
+          "won": true,
+          "name": "育英",
+          "slug": null
+        },
+        {
+          "display": "三田松聖",
+          "score": 0,
+          "won": false,
+          "name": "三田松聖",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-20",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "龍野",
+          "score": 0,
+          "won": false,
+          "name": "龍野高校",
+          "slug": "hyogo-tatsuno"
+        },
+        {
+          "display": "姫路南",
+          "score": 10,
+          "won": true,
+          "name": "姫路南高校",
+          "slug": "himejiminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-20",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "舞子",
+          "score": 2,
+          "won": false,
+          "name": "舞子高校",
+          "slug": "maiko"
+        },
+        {
+          "display": "社",
+          "score": 9,
+          "won": true,
+          "name": "社高校",
+          "slug": "hyogo-yashiro"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-20",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市川",
+          "score": 2,
+          "won": true,
+          "name": "市川",
+          "slug": null
+        },
+        {
+          "display": "高砂",
+          "score": 0,
+          "won": false,
+          "name": "高砂高校",
+          "slug": "takasago"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-20",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市立西宮",
+          "score": 9,
+          "won": true,
+          "name": "市立西宮",
+          "slug": null
+        },
+        {
+          "display": "甲南",
+          "score": 2,
+          "won": false,
+          "name": "甲南",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-20",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "淡路",
+          "score": 0,
+          "won": false,
+          "name": "淡路高校",
+          "slug": "awaji"
+        },
+        {
+          "display": "武庫荘総合",
+          "score": 5,
+          "won": true,
+          "name": "武庫荘総合高校",
+          "slug": "mukonososogo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-20",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市立尼崎",
+          "score": 0,
+          "won": false,
+          "name": "尼崎高校",
+          "slug": "hyogo-amagasaki"
+        },
+        {
+          "display": "神戸国際大付",
+          "score": 6,
+          "won": true,
+          "name": "神戸国際大付",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-20",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "神戸北",
+          "score": 3,
+          "won": true,
+          "name": "神戸北高校",
+          "slug": "kobekita"
+        },
+        {
+          "display": "東播磨",
+          "score": 1,
+          "won": false,
+          "name": "東播磨高校",
+          "slug": "higashiharima"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-27",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "育英",
+          "score": 1,
+          "won": false,
+          "name": "育英",
+          "slug": null
+        },
+        {
+          "display": "姫路南",
+          "score": 2,
+          "won": true,
+          "name": "姫路南高校",
+          "slug": "himejiminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-27",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "社",
+          "score": 10,
+          "won": true,
+          "name": "社高校",
+          "slug": "hyogo-yashiro"
+        },
+        {
+          "display": "市川",
+          "score": 0,
+          "won": false,
+          "name": "市川",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市立西宮",
+          "score": 3,
+          "won": false,
+          "name": "市立西宮",
+          "slug": null
+        },
+        {
+          "display": "武庫荘総合",
+          "score": 4,
+          "won": true,
+          "name": "武庫荘総合高校",
+          "slug": "mukonososogo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-27",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "神戸国際大付",
+          "score": 10,
+          "won": true,
+          "name": "神戸国際大付",
+          "slug": null
+        },
+        {
+          "display": "神戸北",
+          "score": 3,
+          "won": false,
+          "name": "神戸北高校",
+          "slug": "kobekita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "姫路南",
+          "score": 4,
+          "won": true,
+          "name": "姫路南高校",
+          "slug": "himejiminami"
+        },
+        {
+          "display": "社",
+          "score": 3,
+          "won": false,
+          "name": "社高校",
+          "slug": "hyogo-yashiro"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-04-29",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "武庫荘総合",
+          "score": 0,
+          "won": false,
+          "name": "武庫荘総合高校",
+          "slug": "mukonososogo"
+        },
+        {
+          "display": "神戸国際大付",
+          "score": 10,
+          "won": true,
+          "name": "神戸国際大付",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-03",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "姫路南",
+          "score": 2,
+          "won": false,
+          "name": "姫路南高校",
+          "slug": "himejiminami"
+        },
+        {
+          "display": "神戸国際大付",
+          "score": 3,
+          "won": true,
+          "name": "神戸国際大付",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2019-05-04",
+      "season": "spring",
+      "tournament": "2019年 春季近畿地区高校野球 兵庫県大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "神戸国際大付",
+          "score": 5,
+          "won": true,
+          "name": "神戸国際大付",
+          "slug": null
+        },
+        {
+          "display": "須磨翔風",
+          "score": 2,
+          "won": false,
+          "name": "須磨翔風高校",
+          "slug": "sumashofu"
         }
       ],
       "source": {

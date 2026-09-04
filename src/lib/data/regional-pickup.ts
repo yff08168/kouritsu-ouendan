@@ -15,24 +15,6 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "districtSlug": "nagano",
       "wins": 1,
       "standing": "1回戦突破"
-    },
-    {
-      "slug": "kurashikiseiryo",
-      "display": "青陵",
-      "name": "倉敷青陵高校",
-      "district": "岡山",
-      "districtSlug": "okayama",
-      "wins": 2,
-      "standing": null
-    },
-    {
-      "slug": "higashiokayamakogyo",
-      "display": "東岡工",
-      "name": "東岡山工業高校",
-      "district": "岡山",
-      "districtSlug": "okayama",
-      "wins": 1,
-      "standing": null
     }
   ],
   "games": [
@@ -398,110 +380,6 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
           "won": true,
           "name": "掛川西高校",
           "slug": "kakegawanishi"
-        }
-      ]
-    },
-    {
-      "districtSlug": "okayama",
-      "district": "岡山",
-      "sourceName": "岡山県高等学校野球連盟",
-      "sourceUrl": "https://www.okayama-hbf.com/",
-      "date": "2026-08-30",
-      "season": "autumn",
-      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
-      "round": null,
-      "teams": [
-        {
-          "display": "古城池",
-          "score": 1,
-          "won": false,
-          "name": "倉敷古城池高校",
-          "slug": "kurashikikojochi"
-        },
-        {
-          "display": "青陵",
-          "score": 8,
-          "won": true,
-          "name": "倉敷青陵高校",
-          "slug": "kurashikiseiryo"
-        }
-      ]
-    },
-    {
-      "districtSlug": "okayama",
-      "district": "岡山",
-      "sourceName": "岡山県高等学校野球連盟",
-      "sourceUrl": "https://www.okayama-hbf.com/",
-      "date": "2026-08-30",
-      "season": "autumn",
-      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
-      "round": null,
-      "teams": [
-        {
-          "display": "大安寺",
-          "score": 11,
-          "won": true,
-          "name": "岡山大安寺中等教育学校",
-          "slug": "okayamadaianji"
-        },
-        {
-          "display": "興陽",
-          "score": 5,
-          "won": false,
-          "name": "興陽高校",
-          "slug": "okayama-koyo"
-        }
-      ]
-    },
-    {
-      "districtSlug": "okayama",
-      "district": "岡山",
-      "sourceName": "岡山県高等学校野球連盟",
-      "sourceUrl": "https://www.okayama-hbf.com/",
-      "date": "2026-08-30",
-      "season": "autumn",
-      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
-      "round": null,
-      "teams": [
-        {
-          "display": "岡山吉備白陵",
-          "score": 1,
-          "won": false,
-          "name": "岡山吉備白陵",
-          "slug": null
-        },
-        {
-          "display": "東岡工",
-          "score": 25,
-          "won": true,
-          "name": "東岡山工業高校",
-          "slug": "higashiokayamakogyo"
-        }
-      ]
-    },
-    {
-      "districtSlug": "okayama",
-      "district": "岡山",
-      "sourceName": "岡山県高等学校野球連盟",
-      "sourceUrl": "https://www.okayama-hbf.com/",
-      "date": "2026-08-30",
-      "season": "autumn",
-      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
-      "round": null,
-      "teams": [
-        {
-          "display": "津山商",
-          "score": 6,
-          "won": true,
-          "name": "津山商業高校",
-          "slug": "tsuyamashogyo"
-        },
-        {
-          "display": "津山工",
-          "score": 3,
-          "won": false,
-          "name": "津山工業高校",
-          "slug": "tsuyamakogyo"
         }
       ]
     },

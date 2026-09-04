@@ -5,6 +5,535 @@
   "sourceUrl": "https://gifu.hsbflash.jp/",
   "games": [
     {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "1回戦",
+      "venue": "中津川公園野球場",
+      "teams": [
+        {
+          "display": "岐阜工業",
+          "score": 5,
+          "won": true,
+          "name": "岐阜工業高校",
+          "slug": "gifukogyo"
+        },
+        {
+          "display": "麗澤瑞浪",
+          "score": 2,
+          "won": false,
+          "name": "麗澤瑞浪",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "1回戦",
+      "venue": "河上薬品スタジアム（関市）",
+      "teams": [
+        {
+          "display": "岐阜第一",
+          "score": 7,
+          "won": true,
+          "name": "岐阜第一",
+          "slug": null
+        },
+        {
+          "display": "美濃加茂",
+          "score": 4,
+          "won": false,
+          "name": "美濃加茂",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "1回戦",
+      "venue": "弘光舎レインボースタジアム",
+      "teams": [
+        {
+          "display": "岐阜総合",
+          "score": 4,
+          "won": false,
+          "name": "岐阜総合学園高校",
+          "slug": "gifusogogakuen"
+        },
+        {
+          "display": "海津明誠",
+          "score": 5,
+          "won": true,
+          "name": "海津明誠高校",
+          "slug": "kaizumeisei"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "1回戦",
+      "venue": "中津川公園野球場",
+      "teams": [
+        {
+          "display": "土岐商",
+          "score": 7,
+          "won": true,
+          "name": "土岐商業高校",
+          "slug": "tokishogyo"
+        },
+        {
+          "display": "関",
+          "score": 6,
+          "won": false,
+          "name": "関高校",
+          "slug": "seki"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "2回戦",
+      "venue": "プリニーの野球場（各務原市民）",
+      "teams": [
+        {
+          "display": "県岐阜商",
+          "score": 5,
+          "won": true,
+          "name": "岐阜商業高校",
+          "slug": "gifushogyo"
+        },
+        {
+          "display": "岐阜工業",
+          "score": 0,
+          "won": false,
+          "name": "岐阜工業高校",
+          "slug": "gifukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "2回戦",
+      "venue": "中津川公園野球場",
+      "teams": [
+        {
+          "display": "岐阜第一",
+          "score": 1,
+          "won": false,
+          "name": "岐阜第一",
+          "slug": null
+        },
+        {
+          "display": "中京",
+          "score": 5,
+          "won": true,
+          "name": "中京",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "2回戦",
+      "venue": "河上薬品スタジアム（関市）",
+      "teams": [
+        {
+          "display": "加茂農林",
+          "score": 4,
+          "won": false,
+          "name": "加茂農林高校",
+          "slug": "gifu-kamonorin"
+        },
+        {
+          "display": "海津明誠",
+          "score": 7,
+          "won": true,
+          "name": "海津明誠高校",
+          "slug": "kaizumeisei"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "2回戦",
+      "venue": "大垣市北公園野球場",
+      "teams": [
+        {
+          "display": "土岐商",
+          "score": 1,
+          "won": false,
+          "name": "土岐商業高校",
+          "slug": "tokishogyo"
+        },
+        {
+          "display": "岐阜城北",
+          "score": 4,
+          "won": true,
+          "name": "岐阜城北高校",
+          "slug": "gifujohoku"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "準々決勝",
+      "venue": "弘光舎レインボースタジアム",
+      "teams": [
+        {
+          "display": "県岐阜商",
+          "score": 1,
+          "won": true,
+          "name": "岐阜商業高校",
+          "slug": "gifushogyo"
+        },
+        {
+          "display": "中京",
+          "score": 0,
+          "won": false,
+          "name": "中京",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "準々決勝",
+      "venue": "大垣市北公園野球場",
+      "teams": [
+        {
+          "display": "海津明誠",
+          "score": 2,
+          "won": false,
+          "name": "海津明誠高校",
+          "slug": "kaizumeisei"
+        },
+        {
+          "display": "岐阜城北",
+          "score": 12,
+          "won": true,
+          "name": "岐阜城北高校",
+          "slug": "gifujohoku"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "準決勝",
+      "venue": "弘光舎レインボースタジアム",
+      "teams": [
+        {
+          "display": "県岐阜商",
+          "score": 7,
+          "won": true,
+          "name": "岐阜商業高校",
+          "slug": "gifushogyo"
+        },
+        {
+          "display": "岐阜城北",
+          "score": 0,
+          "won": false,
+          "name": "岐阜城北高校",
+          "slug": "gifujohoku"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "1回戦",
+      "venue": "弘光舎レインボースタジアム",
+      "teams": [
+        {
+          "display": "大垣養老",
+          "score": 4,
+          "won": true,
+          "name": "大垣養老高校",
+          "slug": "ogakiyoro"
+        },
+        {
+          "display": "岐阜北",
+          "score": 0,
+          "won": false,
+          "name": "岐阜北高校",
+          "slug": "gifukita"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "1回戦",
+      "venue": "プリニーの野球場（各務原市民）",
+      "teams": [
+        {
+          "display": "益田清風",
+          "score": 5,
+          "won": false,
+          "name": "益田清風高校",
+          "slug": "mashitaseifu"
+        },
+        {
+          "display": "各務原西",
+          "score": 6,
+          "won": true,
+          "name": "各務原西高校",
+          "slug": "kakamigaharanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "1回戦",
+      "venue": "プリニーの野球場（各務原市民）",
+      "teams": [
+        {
+          "display": "大垣西",
+          "score": 12,
+          "won": true,
+          "name": "大垣西高校",
+          "slug": "ogakinishi"
+        },
+        {
+          "display": "岐阜各務野",
+          "score": 4,
+          "won": false,
+          "name": "岐阜各務野高校",
+          "slug": "gifukakamino"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "1回戦",
+      "venue": "河上薬品スタジアム（関市）",
+      "teams": [
+        {
+          "display": "帝京大可児",
+          "score": 7,
+          "won": true,
+          "name": "帝京大可児",
+          "slug": null
+        },
+        {
+          "display": "長良",
+          "score": 6,
+          "won": false,
+          "name": "長良高校",
+          "slug": "nagara"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "2回戦",
+      "venue": "大垣市北公園野球場",
+      "teams": [
+        {
+          "display": "大垣商",
+          "score": 12,
+          "won": true,
+          "name": "大垣商業高校",
+          "slug": "ogakishogyo"
+        },
+        {
+          "display": "大垣養老",
+          "score": 7,
+          "won": false,
+          "name": "大垣養老高校",
+          "slug": "ogakiyoro"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "2回戦",
+      "venue": "河上薬品スタジアム（関市）",
+      "teams": [
+        {
+          "display": "各務原西",
+          "score": 0,
+          "won": false,
+          "name": "各務原西高校",
+          "slug": "kakamigaharanishi"
+        },
+        {
+          "display": "大垣日大",
+          "score": 11,
+          "won": true,
+          "name": "大垣日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "2回戦",
+      "venue": "中津川公園野球場",
+      "teams": [
+        {
+          "display": "多治見工",
+          "score": 9,
+          "won": true,
+          "name": "多治見工業高校",
+          "slug": "tajimikogyo"
+        },
+        {
+          "display": "大垣西",
+          "score": 2,
+          "won": false,
+          "name": "大垣西高校",
+          "slug": "ogakinishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "2回戦",
+      "venue": "プリニーの野球場（各務原市民）",
+      "teams": [
+        {
+          "display": "帝京大可児",
+          "score": 7,
+          "won": true,
+          "name": "帝京大可児",
+          "slug": null
+        },
+        {
+          "display": "関商工",
+          "score": 4,
+          "won": false,
+          "name": "関商工高校",
+          "slug": "sekishoko"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "準々決勝",
+      "venue": "弘光舎レインボースタジアム",
+      "teams": [
+        {
+          "display": "大垣商",
+          "score": 0,
+          "won": false,
+          "name": "大垣商業高校",
+          "slug": "ogakishogyo"
+        },
+        {
+          "display": "大垣日大",
+          "score": 8,
+          "won": true,
+          "name": "大垣日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "準々決勝",
+      "venue": "大垣市北公園野球場",
+      "teams": [
+        {
+          "display": "多治見工",
+          "score": 2,
+          "won": false,
+          "name": "多治見工業高校",
+          "slug": "tajimikogyo"
+        },
+        {
+          "display": "帝京大可児",
+          "score": 3,
+          "won": true,
+          "name": "帝京大可児",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "準決勝",
+      "venue": "弘光舎レインボースタジアム",
+      "teams": [
+        {
+          "display": "大垣日大",
+          "score": 6,
+          "won": true,
+          "name": "大垣日大",
+          "slug": null
+        },
+        {
+          "display": "帝京大可児",
+          "score": 2,
+          "won": false,
+          "name": "帝京大可児",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "round": "決勝",
+      "venue": "弘光舎レインボースタジアム",
+      "teams": [
+        {
+          "display": "大垣日大",
+          "score": 3,
+          "won": true,
+          "name": "大垣日大",
+          "slug": null
+        },
+        {
+          "display": "県岐阜商",
+          "score": 2,
+          "won": false,
+          "name": "岐阜商業高校",
+          "slug": "gifushogyo"
+        }
+      ]
+    },
+    {
       "date": "2019-04-14",
       "season": "spring",
       "tournament": "2019年 春季東海地区高校野球 岐阜県大会",
@@ -3133,436 +3662,22 @@
       ]
     },
     {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "1回戦",
-      "venue": "中津川公園野球場",
-      "teams": [
-        {
-          "display": "岐阜工業",
-          "score": 5,
-          "won": true,
-          "name": "岐阜工業高校",
-          "slug": "gifukogyo"
-        },
-        {
-          "display": "麗澤瑞浪",
-          "score": 2,
-          "won": false,
-          "name": "麗澤瑞浪",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "1回戦",
-      "venue": "河上薬品スタジアム（関市）",
-      "teams": [
-        {
-          "display": "岐阜第一",
-          "score": 7,
-          "won": true,
-          "name": "岐阜第一",
-          "slug": null
-        },
-        {
-          "display": "美濃加茂",
-          "score": 4,
-          "won": false,
-          "name": "美濃加茂",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "1回戦",
-      "venue": "弘光舎レインボースタジアム",
-      "teams": [
-        {
-          "display": "岐阜総合",
-          "score": 4,
-          "won": false,
-          "name": "岐阜総合学園高校",
-          "slug": "gifusogogakuen"
-        },
-        {
-          "display": "海津明誠",
-          "score": 5,
-          "won": true,
-          "name": "海津明誠高校",
-          "slug": "kaizumeisei"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "1回戦",
-      "venue": "中津川公園野球場",
-      "teams": [
-        {
-          "display": "土岐商",
-          "score": 7,
-          "won": true,
-          "name": "土岐商業高校",
-          "slug": "tokishogyo"
-        },
-        {
-          "display": "関",
-          "score": 6,
-          "won": false,
-          "name": "関高校",
-          "slug": "seki"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "2回戦",
-      "venue": "プリニーの野球場（各務原市民）",
-      "teams": [
-        {
-          "display": "県岐阜商",
-          "score": 5,
-          "won": true,
-          "name": "岐阜商業高校",
-          "slug": "gifushogyo"
-        },
-        {
-          "display": "岐阜工業",
-          "score": 0,
-          "won": false,
-          "name": "岐阜工業高校",
-          "slug": "gifukogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "2回戦",
-      "venue": "中津川公園野球場",
-      "teams": [
-        {
-          "display": "岐阜第一",
-          "score": 1,
-          "won": false,
-          "name": "岐阜第一",
-          "slug": null
-        },
-        {
-          "display": "中京",
-          "score": 5,
-          "won": true,
-          "name": "中京",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "2回戦",
-      "venue": "河上薬品スタジアム（関市）",
-      "teams": [
-        {
-          "display": "加茂農林",
-          "score": 4,
-          "won": false,
-          "name": "加茂農林高校",
-          "slug": "gifu-kamonorin"
-        },
-        {
-          "display": "海津明誠",
-          "score": 7,
-          "won": true,
-          "name": "海津明誠高校",
-          "slug": "kaizumeisei"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "2回戦",
-      "venue": "大垣市北公園野球場",
-      "teams": [
-        {
-          "display": "土岐商",
-          "score": 1,
-          "won": false,
-          "name": "土岐商業高校",
-          "slug": "tokishogyo"
-        },
-        {
-          "display": "岐阜城北",
-          "score": 4,
-          "won": true,
-          "name": "岐阜城北高校",
-          "slug": "gifujohoku"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "準々決勝",
-      "venue": "弘光舎レインボースタジアム",
-      "teams": [
-        {
-          "display": "県岐阜商",
-          "score": 1,
-          "won": true,
-          "name": "岐阜商業高校",
-          "slug": "gifushogyo"
-        },
-        {
-          "display": "中京",
-          "score": 0,
-          "won": false,
-          "name": "中京",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "準々決勝",
-      "venue": "大垣市北公園野球場",
-      "teams": [
-        {
-          "display": "海津明誠",
-          "score": 2,
-          "won": false,
-          "name": "海津明誠高校",
-          "slug": "kaizumeisei"
-        },
-        {
-          "display": "岐阜城北",
-          "score": 12,
-          "won": true,
-          "name": "岐阜城北高校",
-          "slug": "gifujohoku"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-25",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
+      "date": "2026-07-26",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
       "round": "準決勝",
-      "venue": "弘光舎レインボースタジアム",
+      "venue": null,
       "teams": [
         {
-          "display": "県岐阜商",
+          "display": "中京",
           "score": 7,
           "won": true,
-          "name": "岐阜商業高校",
-          "slug": "gifushogyo"
-        },
-        {
-          "display": "岐阜城北",
-          "score": 0,
-          "won": false,
-          "name": "岐阜城北高校",
-          "slug": "gifujohoku"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "1回戦",
-      "venue": "弘光舎レインボースタジアム",
-      "teams": [
-        {
-          "display": "大垣養老",
-          "score": 4,
-          "won": true,
-          "name": "大垣養老高校",
-          "slug": "ogakiyoro"
-        },
-        {
-          "display": "岐阜北",
-          "score": 0,
-          "won": false,
-          "name": "岐阜北高校",
-          "slug": "gifukita"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "1回戦",
-      "venue": "プリニーの野球場（各務原市民）",
-      "teams": [
-        {
-          "display": "益田清風",
-          "score": 5,
-          "won": false,
-          "name": "益田清風高校",
-          "slug": "mashitaseifu"
-        },
-        {
-          "display": "各務原西",
-          "score": 6,
-          "won": true,
-          "name": "各務原西高校",
-          "slug": "kakamigaharanishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "1回戦",
-      "venue": "プリニーの野球場（各務原市民）",
-      "teams": [
-        {
-          "display": "大垣西",
-          "score": 12,
-          "won": true,
-          "name": "大垣西高校",
-          "slug": "ogakinishi"
-        },
-        {
-          "display": "岐阜各務野",
-          "score": 4,
-          "won": false,
-          "name": "岐阜各務野高校",
-          "slug": "gifukakamino"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "1回戦",
-      "venue": "河上薬品スタジアム（関市）",
-      "teams": [
-        {
-          "display": "帝京大可児",
-          "score": 7,
-          "won": true,
-          "name": "帝京大可児",
-          "slug": null
-        },
-        {
-          "display": "長良",
-          "score": 6,
-          "won": false,
-          "name": "長良高校",
-          "slug": "nagara"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "2回戦",
-      "venue": "大垣市北公園野球場",
-      "teams": [
-        {
-          "display": "大垣商",
-          "score": 12,
-          "won": true,
-          "name": "大垣商業高校",
-          "slug": "ogakishogyo"
-        },
-        {
-          "display": "大垣養老",
-          "score": 7,
-          "won": false,
-          "name": "大垣養老高校",
-          "slug": "ogakiyoro"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "2回戦",
-      "venue": "河上薬品スタジアム（関市）",
-      "teams": [
-        {
-          "display": "各務原西",
-          "score": 0,
-          "won": false,
-          "name": "各務原西高校",
-          "slug": "kakamigaharanishi"
-        },
-        {
-          "display": "大垣日大",
-          "score": 11,
-          "won": true,
-          "name": "大垣日大",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "2回戦",
-      "venue": "中津川公園野球場",
-      "teams": [
-        {
-          "display": "多治見工",
-          "score": 9,
-          "won": true,
-          "name": "多治見工業高校",
-          "slug": "tajimikogyo"
-        },
-        {
-          "display": "大垣西",
-          "score": 2,
-          "won": false,
-          "name": "大垣西高校",
-          "slug": "ogakinishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "2回戦",
-      "venue": "プリニーの野球場（各務原市民）",
-      "teams": [
-        {
-          "display": "帝京大可児",
-          "score": 7,
-          "won": true,
-          "name": "帝京大可児",
+          "name": "中京",
           "slug": null
         },
         {
           "display": "関商工",
-          "score": 4,
+          "score": 0,
           "won": false,
           "name": "関商工高校",
           "slug": "sekishoko"
@@ -3570,22 +3685,22 @@
       ]
     },
     {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "準々決勝",
-      "venue": "弘光舎レインボースタジアム",
+      "date": "2026-07-26",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "準決勝",
+      "venue": null,
       "teams": [
         {
-          "display": "大垣商",
-          "score": 0,
+          "display": "県岐阜商",
+          "score": 3,
           "won": false,
-          "name": "大垣商業高校",
-          "slug": "ogakishogyo"
+          "name": "岐阜商業高校",
+          "slug": "gifushogyo"
         },
         {
           "display": "大垣日大",
-          "score": 8,
+          "score": 6,
           "won": true,
           "name": "大垣日大",
           "slug": null
@@ -3593,34 +3708,727 @@
       ]
     },
     {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "準々決勝",
-      "venue": "大垣市北公園野球場",
+      "date": "2026-07-04",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
       "teams": [
         {
-          "display": "多治見工",
-          "score": 2,
+          "display": "土岐紅陵",
+          "score": 0,
           "won": false,
-          "name": "多治見工業高校",
-          "slug": "tajimikogyo"
+          "name": "土岐紅陵高校",
+          "slug": "tokikoryo"
         },
         {
-          "display": "帝京大可児",
-          "score": 3,
+          "display": "加茂農林",
+          "score": 8,
           "won": true,
-          "name": "帝京大可児",
+          "name": "加茂農林高校",
+          "slug": "gifu-kamonorin"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大垣養老",
+          "score": 5,
+          "won": true,
+          "name": "大垣養老高校",
+          "slug": "ogakiyoro"
+        },
+        {
+          "display": "高山西",
+          "score": 4,
+          "won": false,
+          "name": "高山西",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-25",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "準決勝",
-      "venue": "弘光舎レインボースタジアム",
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "可児",
+          "score": 3,
+          "won": true,
+          "name": "可児高校",
+          "slug": "kani"
+        },
+        {
+          "display": "岐阜工",
+          "score": 1,
+          "won": false,
+          "name": "岐阜工業高校",
+          "slug": "gifukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大垣商",
+          "score": 8,
+          "won": true,
+          "name": "大垣商業高校",
+          "slug": "ogakishogyo"
+        },
+        {
+          "display": "岐阜各務野",
+          "score": 2,
+          "won": false,
+          "name": "岐阜各務野高校",
+          "slug": "gifukakamino"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "八百津・瑞浪・東濃・恵那南",
+          "score": 5,
+          "won": false,
+          "name": "八百津・瑞浪・東濃・恵那南",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "岐阜高専",
+          "score": 15,
+          "won": true,
+          "name": "岐阜工業高専",
+          "slug": "gifukogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東濃実業",
+          "score": 2,
+          "won": false,
+          "name": "東濃実業高校",
+          "slug": "tonojitsugyo"
+        },
+        {
+          "display": "岐阜東",
+          "score": 4,
+          "won": true,
+          "name": "岐阜東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "益田清風",
+          "score": 8,
+          "won": true,
+          "name": "益田清風高校",
+          "slug": "mashitaseifu"
+        },
+        {
+          "display": "中津",
+          "score": 7,
+          "won": false,
+          "name": "中津高校",
+          "slug": "nakatsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市岐阜商",
+          "score": 8,
+          "won": true,
+          "name": "岐阜商業高校",
+          "slug": "gifu-gifushogyo"
+        },
+        {
+          "display": "関",
+          "score": 1,
+          "won": false,
+          "name": "関高校",
+          "slug": "seki"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "美濃加茂",
+          "score": 1,
+          "won": false,
+          "name": "美濃加茂",
+          "slug": null
+        },
+        {
+          "display": "岐阜第一",
+          "score": 3,
+          "won": true,
+          "name": "岐阜第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "池田",
+          "score": 3,
+          "won": false,
+          "name": "池田高校",
+          "slug": "gifu-ikeda"
+        },
+        {
+          "display": "岐阜",
+          "score": 4,
+          "won": true,
+          "name": "岐阜高校",
+          "slug": "gifu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "海津明誠",
+          "score": 4,
+          "won": true,
+          "name": "海津明誠高校",
+          "slug": "kaizumeisei"
+        },
+        {
+          "display": "揖斐",
+          "score": 2,
+          "won": false,
+          "name": "揖斐高校",
+          "slug": "ibi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "不破",
+          "score": 0,
+          "won": false,
+          "name": "不破高校",
+          "slug": "fuwa"
+        },
+        {
+          "display": "武義",
+          "score": 24,
+          "won": true,
+          "name": "武義高校",
+          "slug": "mugi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大垣東",
+          "score": 2,
+          "won": false,
+          "name": "大垣東高校",
+          "slug": "ogakihigashi"
+        },
+        {
+          "display": "中津川工",
+          "score": 4,
+          "won": true,
+          "name": "中津川工業高校",
+          "slug": "nakatsugawakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岐南工",
+          "score": 3,
+          "won": false,
+          "name": "岐南工業高校",
+          "slug": "ginankogyo"
+        },
+        {
+          "display": "中津商",
+          "score": 12,
+          "won": true,
+          "name": "中津商業高校",
+          "slug": "nakatsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帝京大可児",
+          "score": 2,
+          "won": false,
+          "name": "帝京大可児",
+          "slug": null
+        },
+        {
+          "display": "大垣西",
+          "score": 5,
+          "won": true,
+          "name": "大垣西高校",
+          "slug": "ogakinishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岐阜総合",
+          "score": 7,
+          "won": true,
+          "name": "岐阜総合学園高校",
+          "slug": "gifusogogakuen"
+        },
+        {
+          "display": "本巣松陽",
+          "score": 0,
+          "won": false,
+          "name": "本巣松陽高校",
+          "slug": "motosushoyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "各務原西",
+          "score": 15,
+          "won": true,
+          "name": "各務原西高校",
+          "slug": "kakamigaharanishi"
+        },
+        {
+          "display": "飛騨高山",
+          "score": 8,
+          "won": false,
+          "name": "飛騨高山高校",
+          "slug": "hidatakayama"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岐阜聖徳",
+          "score": 4,
+          "won": true,
+          "name": "岐阜聖徳",
+          "slug": null
+        },
+        {
+          "display": "富田",
+          "score": 2,
+          "won": false,
+          "name": "富田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "中京",
+          "score": 10,
+          "won": true,
+          "name": "中京",
+          "slug": null
+        },
+        {
+          "display": "郡上",
+          "score": 0,
+          "won": false,
+          "name": "郡上高校",
+          "slug": "gujo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "羽島・山県",
+          "score": 0,
+          "won": false,
+          "name": "羽島・山県",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "多治見",
+          "score": 10,
+          "won": true,
+          "name": "多治見高校",
+          "slug": "tajimi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大垣北",
+          "score": 14,
+          "won": true,
+          "name": "大垣北高校",
+          "slug": "ogakikita"
+        },
+        {
+          "display": "関有知",
+          "score": 2,
+          "won": false,
+          "name": "関有知高校",
+          "slug": "sekiuchi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岐阜北",
+          "score": 4,
+          "won": false,
+          "name": "岐阜北高校",
+          "slug": "gifukita"
+        },
+        {
+          "display": "麗澤瑞浪",
+          "score": 14,
+          "won": true,
+          "name": "麗澤瑞浪",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岐阜城北",
+          "score": 0,
+          "won": false,
+          "name": "岐阜城北高校",
+          "slug": "gifujohoku"
+        },
+        {
+          "display": "長良",
+          "score": 4,
+          "won": true,
+          "name": "長良高校",
+          "slug": "nagara"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "可児工",
+          "score": 1,
+          "won": false,
+          "name": "可児工業高校",
+          "slug": "kanikogyo"
+        },
+        {
+          "display": "加茂",
+          "score": 3,
+          "won": true,
+          "name": "加茂高校",
+          "slug": "gifu-kamo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "土岐商",
+          "score": 5,
+          "won": false,
+          "name": "土岐商業高校",
+          "slug": "tokishogyo"
+        },
+        {
+          "display": "関商工",
+          "score": 11,
+          "won": true,
+          "name": "関商工高校",
+          "slug": "sekishoko"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "羽島北",
+          "score": 0,
+          "won": false,
+          "name": "羽島北高校",
+          "slug": "hashimakita"
+        },
+        {
+          "display": "各務原",
+          "score": 8,
+          "won": true,
+          "name": "各務原高校",
+          "slug": "kakamigahara"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "多治見工",
+          "score": 8,
+          "won": true,
+          "name": "多治見工業高校",
+          "slug": "tajimikogyo"
+        },
+        {
+          "display": "高山工・飛騨神岡",
+          "score": 1,
+          "won": false,
+          "name": "高山工・飛騨神岡",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岐阜農林",
+          "score": 11,
+          "won": true,
+          "name": "岐阜農林高校",
+          "slug": "gifunorin"
+        },
+        {
+          "display": "斐太",
+          "score": 1,
+          "won": false,
+          "name": "斐太高校",
+          "slug": "hida"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大垣南",
+          "score": 7,
+          "won": true,
+          "name": "大垣南高校",
+          "slug": "ogakiminami"
+        },
+        {
+          "display": "大垣工",
+          "score": 5,
+          "won": false,
+          "name": "大垣工業高校",
+          "slug": "ogakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岐山",
+          "score": 4,
+          "won": false,
+          "name": "岐山高校",
+          "slug": "gizan"
+        },
+        {
+          "display": "加納",
+          "score": 8,
+          "won": true,
+          "name": "加納高校",
+          "slug": "kano"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-28",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "中京",
+          "score": 5,
+          "won": true,
+          "name": "中京",
+          "slug": null
+        },
+        {
+          "display": "大垣日大",
+          "score": 2,
+          "won": false,
+          "name": "大垣日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "2回戦",
+      "venue": null,
       "teams": [
         {
           "display": "大垣日大",
@@ -3630,34 +4438,632 @@
           "slug": null
         },
         {
-          "display": "帝京大可児",
+          "display": "加茂農林",
+          "score": 4,
+          "won": false,
+          "name": "加茂農林高校",
+          "slug": "gifu-kamonorin"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大垣養老",
+          "score": 8,
+          "won": true,
+          "name": "大垣養老高校",
+          "slug": "ogakiyoro"
+        },
+        {
+          "display": "可児",
+          "score": 7,
+          "won": false,
+          "name": "可児高校",
+          "slug": "kani"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大垣商",
+          "score": 5,
+          "won": false,
+          "name": "大垣商業高校",
+          "slug": "ogakishogyo"
+        },
+        {
+          "display": "岐阜高専",
+          "score": 6,
+          "won": true,
+          "name": "岐阜工業高専",
+          "slug": "gifukogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岐阜東",
+          "score": 3,
+          "won": false,
+          "name": "岐阜東",
+          "slug": null
+        },
+        {
+          "display": "益田清風",
+          "score": 10,
+          "won": true,
+          "name": "益田清風高校",
+          "slug": "mashitaseifu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "県岐阜商",
+          "score": 10,
+          "won": true,
+          "name": "岐阜商業高校",
+          "slug": "gifushogyo"
+        },
+        {
+          "display": "市岐阜商",
+          "score": 0,
+          "won": false,
+          "name": "岐阜商業高校",
+          "slug": "gifu-gifushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岐阜第一",
+          "score": 10,
+          "won": true,
+          "name": "岐阜第一",
+          "slug": null
+        },
+        {
+          "display": "岐阜",
+          "score": 5,
+          "won": false,
+          "name": "岐阜高校",
+          "slug": "gifu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "海津明誠",
+          "score": 9,
+          "won": true,
+          "name": "海津明誠高校",
+          "slug": "kaizumeisei"
+        },
+        {
+          "display": "武義",
+          "score": 1,
+          "won": false,
+          "name": "武義高校",
+          "slug": "mugi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "中津川工",
+          "score": 1,
+          "won": false,
+          "name": "中津川工業高校",
+          "slug": "nakatsugawakogyo"
+        },
+        {
+          "display": "中津商",
+          "score": 4,
+          "won": true,
+          "name": "中津商業高校",
+          "slug": "nakatsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大垣西",
           "score": 2,
           "won": false,
-          "name": "帝京大可児",
+          "name": "大垣西高校",
+          "slug": "ogakinishi"
+        },
+        {
+          "display": "岐阜総合",
+          "score": 4,
+          "won": true,
+          "name": "岐阜総合学園高校",
+          "slug": "gifusogogakuen"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "各務原西",
+          "score": 0,
+          "won": false,
+          "name": "各務原西高校",
+          "slug": "kakamigaharanishi"
+        },
+        {
+          "display": "岐阜聖徳",
+          "score": 7,
+          "won": true,
+          "name": "岐阜聖徳",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-29",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 岐阜県大会",
-      "round": "決勝",
-      "venue": "弘光舎レインボースタジアム",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "中京",
+          "score": 13,
+          "won": true,
+          "name": "中京",
+          "slug": null
+        },
+        {
+          "display": "多治見",
+          "score": 0,
+          "won": false,
+          "name": "多治見高校",
+          "slug": "tajimi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大垣北",
+          "score": 6,
+          "won": false,
+          "name": "大垣北高校",
+          "slug": "ogakikita"
+        },
+        {
+          "display": "麗澤瑞浪",
+          "score": 8,
+          "won": true,
+          "name": "麗澤瑞浪",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "長良",
+          "score": 8,
+          "won": true,
+          "name": "長良高校",
+          "slug": "nagara"
+        },
+        {
+          "display": "加茂",
+          "score": 1,
+          "won": false,
+          "name": "加茂高校",
+          "slug": "gifu-kamo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "関商工",
+          "score": 10,
+          "won": true,
+          "name": "関商工高校",
+          "slug": "sekishoko"
+        },
+        {
+          "display": "各務原",
+          "score": 0,
+          "won": false,
+          "name": "各務原高校",
+          "slug": "kakamigahara"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "多治見工",
+          "score": 4,
+          "won": true,
+          "name": "多治見工業高校",
+          "slug": "tajimikogyo"
+        },
+        {
+          "display": "岐阜農林",
+          "score": 2,
+          "won": false,
+          "name": "岐阜農林高校",
+          "slug": "gifunorin"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大垣南",
+          "score": 8,
+          "won": false,
+          "name": "大垣南高校",
+          "slug": "ogakiminami"
+        },
+        {
+          "display": "加納",
+          "score": 13,
+          "won": true,
+          "name": "加納高校",
+          "slug": "kano"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "3回戦",
+      "venue": null,
       "teams": [
         {
           "display": "大垣日大",
-          "score": 3,
+          "score": 2,
           "won": true,
           "name": "大垣日大",
           "slug": null
         },
         {
-          "display": "県岐阜商",
+          "display": "大垣養老",
+          "score": 0,
+          "won": false,
+          "name": "大垣養老高校",
+          "slug": "ogakiyoro"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岐阜高専",
           "score": 2,
           "won": false,
+          "name": "岐阜工業高専",
+          "slug": "gifukogyo-kosen"
+        },
+        {
+          "display": "益田清風",
+          "score": 12,
+          "won": true,
+          "name": "益田清風高校",
+          "slug": "mashitaseifu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "県岐阜商",
+          "score": 9,
+          "won": true,
           "name": "岐阜商業高校",
           "slug": "gifushogyo"
+        },
+        {
+          "display": "岐阜第一",
+          "score": 5,
+          "won": false,
+          "name": "岐阜第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "海津明誠",
+          "score": 1,
+          "won": false,
+          "name": "海津明誠高校",
+          "slug": "kaizumeisei"
+        },
+        {
+          "display": "中津商",
+          "score": 5,
+          "won": true,
+          "name": "中津商業高校",
+          "slug": "nakatsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岐阜総合",
+          "score": 1,
+          "won": false,
+          "name": "岐阜総合学園高校",
+          "slug": "gifusogogakuen"
+        },
+        {
+          "display": "岐阜聖徳",
+          "score": 6,
+          "won": true,
+          "name": "岐阜聖徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "中京",
+          "score": 6,
+          "won": true,
+          "name": "中京",
+          "slug": null
+        },
+        {
+          "display": "麗澤瑞浪",
+          "score": 0,
+          "won": false,
+          "name": "麗澤瑞浪",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "長良",
+          "score": 2,
+          "won": false,
+          "name": "長良高校",
+          "slug": "nagara"
+        },
+        {
+          "display": "関商工",
+          "score": 5,
+          "won": true,
+          "name": "関商工高校",
+          "slug": "sekishoko"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "多治見工",
+          "score": 10,
+          "won": true,
+          "name": "多治見工業高校",
+          "slug": "tajimikogyo"
+        },
+        {
+          "display": "加納",
+          "score": 2,
+          "won": false,
+          "name": "加納高校",
+          "slug": "kano"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大垣日大",
+          "score": 7,
+          "won": true,
+          "name": "大垣日大",
+          "slug": null
+        },
+        {
+          "display": "益田清風",
+          "score": 1,
+          "won": false,
+          "name": "益田清風高校",
+          "slug": "mashitaseifu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "県岐阜商",
+          "score": 2,
+          "won": true,
+          "name": "岐阜商業高校",
+          "slug": "gifushogyo"
+        },
+        {
+          "display": "中津商",
+          "score": 1,
+          "won": false,
+          "name": "中津商業高校",
+          "slug": "nakatsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岐阜聖徳",
+          "score": 2,
+          "won": false,
+          "name": "岐阜聖徳",
+          "slug": null
+        },
+        {
+          "display": "中京",
+          "score": 7,
+          "won": true,
+          "name": "中京",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "関商工",
+          "score": 9,
+          "won": true,
+          "name": "関商工高校",
+          "slug": "sekishoko"
+        },
+        {
+          "display": "多治見工",
+          "score": 2,
+          "won": false,
+          "name": "多治見工業高校",
+          "slug": "tajimikogyo"
         }
       ]
     },
@@ -13951,207 +15357,22 @@
       ]
     },
     {
-      "date": "2026-07-26",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "準決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "中京",
-          "score": 7,
-          "won": true,
-          "name": "中京",
-          "slug": null
-        },
-        {
-          "display": "関商工",
-          "score": 0,
-          "won": false,
-          "name": "関商工高校",
-          "slug": "sekishoko"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-26",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "準決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "県岐阜商",
-          "score": 3,
-          "won": false,
-          "name": "岐阜商業高校",
-          "slug": "gifushogyo"
-        },
-        {
-          "display": "大垣日大",
-          "score": 6,
-          "won": true,
-          "name": "大垣日大",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-04",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
       "round": "1回戦",
-      "venue": null,
+      "venue": "大野レインボースタジアム",
       "teams": [
         {
-          "display": "土岐紅陵",
-          "score": 0,
-          "won": false,
-          "name": "土岐紅陵高校",
-          "slug": "tokikoryo"
-        },
-        {
-          "display": "加茂農林",
-          "score": 8,
-          "won": true,
-          "name": "加茂農林高校",
-          "slug": "gifu-kamonorin"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-05",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "大垣養老",
+          "display": "富田",
           "score": 5,
           "won": true,
-          "name": "大垣養老高校",
-          "slug": "ogakiyoro"
-        },
-        {
-          "display": "高山西",
-          "score": 4,
-          "won": false,
-          "name": "高山西",
+          "name": "富田",
           "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-05",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "可児",
-          "score": 3,
-          "won": true,
-          "name": "可児高校",
-          "slug": "kani"
-        },
-        {
-          "display": "岐阜工",
-          "score": 1,
-          "won": false,
-          "name": "岐阜工業高校",
-          "slug": "gifukogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-05",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "大垣商",
-          "score": 8,
-          "won": true,
-          "name": "大垣商業高校",
-          "slug": "ogakishogyo"
-        },
-        {
-          "display": "岐阜各務野",
-          "score": 2,
-          "won": false,
-          "name": "岐阜各務野高校",
-          "slug": "gifukakamino"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-05",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "八百津・瑞浪・東濃・恵那南",
-          "score": 5,
-          "won": false,
-          "name": "八百津・瑞浪・東濃・恵那南",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "岐阜高専",
-          "score": 15,
-          "won": true,
-          "name": "岐阜工業高専",
-          "slug": "gifukogyo-kosen"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-05",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "東濃実業",
-          "score": 2,
-          "won": false,
-          "name": "東濃実業高校",
-          "slug": "tonojitsugyo"
-        },
-        {
-          "display": "岐阜東",
-          "score": 4,
-          "won": true,
-          "name": "岐阜東",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-05",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "益田清風",
-          "score": 8,
-          "won": true,
-          "name": "益田清風高校",
-          "slug": "mashitaseifu"
         },
         {
           "display": "中津",
-          "score": 7,
+          "score": 4,
           "won": false,
           "name": "中津高校",
           "slug": "nakatsu"
@@ -14159,202 +15380,41 @@
       ]
     },
     {
-      "date": "2026-07-05",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
       "round": "1回戦",
-      "venue": null,
+      "venue": "プリニーの野球場（各務原）",
       "teams": [
-        {
-          "display": "市岐阜商",
-          "score": 8,
-          "won": true,
-          "name": "岐阜商業高校",
-          "slug": "gifu-gifushogyo"
-        },
         {
           "display": "関",
-          "score": 1,
-          "won": false,
-          "name": "関高校",
-          "slug": "seki"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-05",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "美濃加茂",
-          "score": 1,
-          "won": false,
-          "name": "美濃加茂",
-          "slug": null
-        },
-        {
-          "display": "岐阜第一",
-          "score": 3,
-          "won": true,
-          "name": "岐阜第一",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-05",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "池田",
-          "score": 3,
-          "won": false,
-          "name": "池田高校",
-          "slug": "gifu-ikeda"
-        },
-        {
-          "display": "岐阜",
-          "score": 4,
-          "won": true,
-          "name": "岐阜高校",
-          "slug": "gifu"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "海津明誠",
-          "score": 4,
-          "won": true,
-          "name": "海津明誠高校",
-          "slug": "kaizumeisei"
-        },
-        {
-          "display": "揖斐",
-          "score": 2,
-          "won": false,
-          "name": "揖斐高校",
-          "slug": "ibi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "不破",
-          "score": 0,
-          "won": false,
-          "name": "不破高校",
-          "slug": "fuwa"
-        },
-        {
-          "display": "武義",
-          "score": 24,
-          "won": true,
-          "name": "武義高校",
-          "slug": "mugi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "大垣東",
-          "score": 2,
-          "won": false,
-          "name": "大垣東高校",
-          "slug": "ogakihigashi"
-        },
-        {
-          "display": "中津川工",
-          "score": 4,
-          "won": true,
-          "name": "中津川工業高校",
-          "slug": "nakatsugawakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "岐南工",
-          "score": 3,
-          "won": false,
-          "name": "岐南工業高校",
-          "slug": "ginankogyo"
-        },
-        {
-          "display": "中津商",
           "score": 12,
           "won": true,
-          "name": "中津商業高校",
-          "slug": "nakatsushogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "帝京大可児",
-          "score": 2,
-          "won": false,
-          "name": "帝京大可児",
-          "slug": null
+          "name": "関高校",
+          "slug": "seki"
         },
         {
-          "display": "大垣西",
+          "display": "岐阜北",
           "score": 5,
-          "won": true,
-          "name": "大垣西高校",
-          "slug": "ogakinishi"
+          "won": false,
+          "name": "岐阜北高校",
+          "slug": "gifukita"
         }
       ]
     },
     {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "中津川公園野球場",
       "teams": [
         {
-          "display": "岐阜総合",
-          "score": 7,
+          "display": "中京",
+          "score": 10,
           "won": true,
-          "name": "岐阜総合学園高校",
-          "slug": "gifusogogakuen"
+          "name": "中京",
+          "slug": null
         },
         {
           "display": "本巣松陽",
@@ -14366,115 +15426,91 @@
       ]
     },
     {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "河上薬品スタジアム（関市民球場）",
       "teams": [
         {
-          "display": "各務原西",
-          "score": 15,
-          "won": true,
-          "name": "各務原西高校",
-          "slug": "kakamigaharanishi"
-        },
-        {
-          "display": "飛騨高山",
-          "score": 8,
+          "display": "長良",
+          "score": 1,
           "won": false,
-          "name": "飛騨高山高校",
-          "slug": "hidatakayama"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "岐阜聖徳",
-          "score": 4,
-          "won": true,
-          "name": "岐阜聖徳",
-          "slug": null
+          "name": "長良高校",
+          "slug": "nagara"
         },
         {
           "display": "富田",
           "score": 2,
-          "won": false,
+          "won": true,
           "name": "富田",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "大垣市北公園野球場",
       "teams": [
         {
-          "display": "中京",
-          "score": 10,
+          "display": "大垣商",
+          "score": 7,
           "won": true,
-          "name": "中京",
-          "slug": null
+          "name": "大垣商業高校",
+          "slug": "ogakishogyo"
         },
         {
-          "display": "郡上",
+          "display": "可児工",
           "score": 0,
           "won": false,
-          "name": "郡上高校",
-          "slug": "gujo"
+          "name": "可児工業高校",
+          "slug": "kanikogyo"
         }
       ]
     },
     {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "プリニーの野球場（各務原）",
       "teams": [
         {
-          "display": "羽島・山県",
-          "score": 0,
+          "display": "県岐阜商",
+          "score": 4,
           "won": false,
-          "name": "羽島・山県",
-          "slug": null,
-          "combined": true
+          "name": "岐阜商業高校",
+          "slug": "gifushogyo"
         },
         {
-          "display": "多治見",
-          "score": 10,
+          "display": "岐阜総合",
+          "score": 5,
           "won": true,
-          "name": "多治見高校",
-          "slug": "tajimi"
+          "name": "岐阜総合学園高校",
+          "slug": "gifusogogakuen"
         }
       ]
     },
     {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "プリニーの野球場（各務原）",
       "teams": [
         {
-          "display": "大垣北",
-          "score": 14,
+          "display": "関商工",
+          "score": 18,
           "won": true,
-          "name": "大垣北高校",
-          "slug": "ogakikita"
+          "name": "関商工高校",
+          "slug": "sekishoko"
         },
         {
           "display": "関有知",
-          "score": 2,
+          "score": 4,
           "won": false,
           "name": "関有知高校",
           "slug": "sekiuchi"
@@ -14482,253 +15518,137 @@
       ]
     },
     {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "河上薬品スタジアム（関市民球場）",
       "teams": [
         {
-          "display": "岐阜北",
-          "score": 4,
-          "won": false,
-          "name": "岐阜北高校",
-          "slug": "gifukita"
+          "display": "加茂農林",
+          "score": 1,
+          "won": true,
+          "name": "加茂農林高校",
+          "slug": "gifu-kamonorin"
         },
         {
-          "display": "麗澤瑞浪",
-          "score": 14,
+          "display": "関",
+          "score": 0,
+          "won": false,
+          "name": "関高校",
+          "slug": "seki"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "大垣市北公園野球場",
+      "teams": [
+        {
+          "display": "岐阜工",
+          "score": 0,
+          "won": false,
+          "name": "岐阜工業高校",
+          "slug": "gifukogyo"
+        },
+        {
+          "display": "帝京大可児",
+          "score": 3,
           "won": true,
-          "name": "麗澤瑞浪",
+          "name": "帝京大可児",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "岐阜城北",
-          "score": 0,
-          "won": false,
-          "name": "岐阜城北高校",
-          "slug": "gifujohoku"
-        },
-        {
-          "display": "長良",
-          "score": 4,
-          "won": true,
-          "name": "長良高校",
-          "slug": "nagara"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "可児工",
-          "score": 1,
-          "won": false,
-          "name": "可児工業高校",
-          "slug": "kanikogyo"
-        },
-        {
-          "display": "加茂",
-          "score": 3,
-          "won": true,
-          "name": "加茂高校",
-          "slug": "gifu-kamo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "中津川公園野球場",
       "teams": [
         {
           "display": "土岐商",
-          "score": 5,
-          "won": false,
+          "score": 9,
+          "won": true,
           "name": "土岐商業高校",
           "slug": "tokishogyo"
         },
         {
-          "display": "関商工",
-          "score": 11,
-          "won": true,
-          "name": "関商工高校",
-          "slug": "sekishoko"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "羽島北",
-          "score": 0,
-          "won": false,
-          "name": "羽島北高校",
-          "slug": "hashimakita"
-        },
-        {
-          "display": "各務原",
-          "score": 8,
-          "won": true,
-          "name": "各務原高校",
-          "slug": "kakamigahara"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "多治見工",
-          "score": 8,
-          "won": true,
-          "name": "多治見工業高校",
-          "slug": "tajimikogyo"
-        },
-        {
-          "display": "高山工・飛騨神岡",
+          "display": "益田清風",
           "score": 1,
           "won": false,
-          "name": "高山工・飛騨神岡",
-          "slug": null,
-          "combined": true
+          "name": "益田清風高校",
+          "slug": "mashitaseifu"
         }
       ]
     },
     {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "岐阜農林",
-          "score": 11,
-          "won": true,
-          "name": "岐阜農林高校",
-          "slug": "gifunorin"
-        },
-        {
-          "display": "斐太",
-          "score": 1,
-          "won": false,
-          "name": "斐太高校",
-          "slug": "hida"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "大垣南",
-          "score": 7,
-          "won": true,
-          "name": "大垣南高校",
-          "slug": "ogakiminami"
-        },
-        {
-          "display": "大垣工",
-          "score": 5,
-          "won": false,
-          "name": "大垣工業高校",
-          "slug": "ogakikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "岐山",
-          "score": 4,
-          "won": false,
-          "name": "岐山高校",
-          "slug": "gizan"
-        },
-        {
-          "display": "加納",
-          "score": 8,
-          "won": true,
-          "name": "加納高校",
-          "slug": "kano"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-28",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "決勝",
-      "venue": null,
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "3回戦",
+      "venue": "カヤバスタジアム",
       "teams": [
         {
           "display": "中京",
-          "score": 5,
+          "score": 7,
           "won": true,
           "name": "中京",
           "slug": null
         },
         {
-          "display": "大垣日大",
-          "score": 2,
+          "display": "富田",
+          "score": 1,
           "won": false,
-          "name": "大垣日大",
+          "name": "富田",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "2回戦",
-      "venue": null,
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "3回戦",
+      "venue": "大野レインボースタジアム",
       "teams": [
         {
-          "display": "大垣日大",
+          "display": "大垣商",
           "score": 6,
+          "won": false,
+          "name": "大垣商業高校",
+          "slug": "ogakishogyo"
+        },
+        {
+          "display": "岐阜総合",
+          "score": 7,
           "won": true,
-          "name": "大垣日大",
-          "slug": null
+          "name": "岐阜総合学園高校",
+          "slug": "gifusogogakuen"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "3回戦",
+      "venue": "河上薬品スタジアム（関市民球場）",
+      "teams": [
+        {
+          "display": "関商工",
+          "score": 3,
+          "won": true,
+          "name": "関商工高校",
+          "slug": "sekishoko"
         },
         {
           "display": "加茂農林",
-          "score": 4,
+          "score": 0,
           "won": false,
           "name": "加茂農林高校",
           "slug": "gifu-kamonorin"
@@ -14736,87 +15656,202 @@
       ]
     },
     {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "2回戦",
-      "venue": null,
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "3回戦",
+      "venue": "大垣市北公園野球場",
+      "teams": [
+        {
+          "display": "帝京大可児",
+          "score": 8,
+          "won": true,
+          "name": "帝京大可児",
+          "slug": null
+        },
+        {
+          "display": "土岐商",
+          "score": 2,
+          "won": false,
+          "name": "土岐商業高校",
+          "slug": "tokishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": "しんきん長良川球場",
+      "teams": [
+        {
+          "display": "中京",
+          "score": 8,
+          "won": true,
+          "name": "中京",
+          "slug": null
+        },
+        {
+          "display": "岐阜総合",
+          "score": 0,
+          "won": false,
+          "name": "岐阜総合学園高校",
+          "slug": "gifusogogakuen"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": "大野レインボースタジアム",
+      "teams": [
+        {
+          "display": "関商工",
+          "score": 7,
+          "won": true,
+          "name": "関商工高校",
+          "slug": "sekishoko"
+        },
+        {
+          "display": "帝京大可児",
+          "score": 1,
+          "won": false,
+          "name": "帝京大可児",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "準決勝",
+      "venue": "しんきん長良川球場",
+      "teams": [
+        {
+          "display": "中京",
+          "score": 1,
+          "won": true,
+          "name": "中京",
+          "slug": null
+        },
+        {
+          "display": "関商工",
+          "score": 0,
+          "won": false,
+          "name": "関商工高校",
+          "slug": "sekishoko"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "大野レインボースタジアム",
+      "teams": [
+        {
+          "display": "武義",
+          "score": 0,
+          "won": false,
+          "name": "武義高校",
+          "slug": "mugi"
+        },
+        {
+          "display": "市岐阜商",
+          "score": 6,
+          "won": true,
+          "name": "岐阜商業高校",
+          "slug": "gifu-gifushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "プリニーの野球場（各務原）",
+      "teams": [
+        {
+          "display": "岐阜",
+          "score": 6,
+          "won": true,
+          "name": "岐阜高校",
+          "slug": "gifu"
+        },
+        {
+          "display": "岐阜農林",
+          "score": 0,
+          "won": false,
+          "name": "岐阜農林高校",
+          "slug": "gifunorin"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "カヤバスタジアム",
       "teams": [
         {
           "display": "大垣養老",
-          "score": 8,
+          "score": 11,
           "won": true,
           "name": "大垣養老高校",
           "slug": "ogakiyoro"
         },
         {
-          "display": "可児",
-          "score": 7,
+          "display": "岐南工",
+          "score": 1,
           "won": false,
-          "name": "可児高校",
-          "slug": "kani"
+          "name": "岐南工業高校",
+          "slug": "ginankogyo"
         }
       ]
     },
     {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
       "round": "2回戦",
-      "venue": null,
+      "venue": "大野レインボースタジアム",
       "teams": [
         {
-          "display": "大垣商",
-          "score": 5,
-          "won": false,
-          "name": "大垣商業高校",
-          "slug": "ogakishogyo"
+          "display": "岐阜城北",
+          "score": 18,
+          "won": true,
+          "name": "岐阜城北高校",
+          "slug": "gifujohoku"
         },
         {
-          "display": "岐阜高専",
-          "score": 6,
-          "won": true,
-          "name": "岐阜工業高専",
-          "slug": "gifukogyo-kosen"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "岐阜東",
-          "score": 3,
+          "display": "高山西",
+          "score": 1,
           "won": false,
-          "name": "岐阜東",
+          "name": "高山西",
           "slug": null
-        },
-        {
-          "display": "益田清風",
-          "score": 10,
-          "won": true,
-          "name": "益田清風高校",
-          "slug": "mashitaseifu"
         }
       ]
     },
     {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
       "round": "2回戦",
-      "venue": null,
+      "venue": "プリニーの野球場（各務原）",
       "teams": [
         {
-          "display": "県岐阜商",
-          "score": 10,
+          "display": "岐阜第一",
+          "score": 11,
           "won": true,
-          "name": "岐阜商業高校",
-          "slug": "gifushogyo"
+          "name": "岐阜第一",
+          "slug": null
         },
         {
           "display": "市岐阜商",
@@ -14828,22 +15863,91 @@
       ]
     },
     {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
       "round": "2回戦",
-      "venue": null,
+      "venue": "中津川公園野球場",
       "teams": [
         {
-          "display": "岐阜第一",
-          "score": 10,
+          "display": "中津商",
+          "score": 11,
           "won": true,
-          "name": "岐阜第一",
+          "name": "中津商業高校",
+          "slug": "nakatsushogyo"
+        },
+        {
+          "display": "飛騨高山",
+          "score": 0,
+          "won": false,
+          "name": "飛騨高山高校",
+          "slug": "hidatakayama"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "大垣市北公園野球場",
+      "teams": [
+        {
+          "display": "岐阜聖徳",
+          "score": 10,
+          "won": false,
+          "name": "岐阜聖徳",
           "slug": null
         },
         {
+          "display": "多治見工",
+          "score": 13,
+          "won": true,
+          "name": "多治見工業高校",
+          "slug": "tajimikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "大垣市北公園野球場",
+      "teams": [
+        {
+          "display": "大垣日大",
+          "score": 6,
+          "won": true,
+          "name": "大垣日大",
+          "slug": null
+        },
+        {
+          "display": "加納",
+          "score": 0,
+          "won": false,
+          "name": "加納高校",
+          "slug": "kano"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "中津川公園野球場",
+      "teams": [
+        {
+          "display": "東濃実",
+          "score": 3,
+          "won": true,
+          "name": "東濃実業高校",
+          "slug": "tonojitsugyo"
+        },
+        {
           "display": "岐阜",
-          "score": 5,
+          "score": 2,
           "won": false,
           "name": "岐阜高校",
           "slug": "gifu"
@@ -14851,137 +15955,22 @@
       ]
     },
     {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
       "round": "2回戦",
-      "venue": null,
+      "venue": "プリニーの野球場（各務原）",
       "teams": [
         {
-          "display": "海津明誠",
-          "score": 9,
-          "won": true,
-          "name": "海津明誠高校",
-          "slug": "kaizumeisei"
-        },
-        {
-          "display": "武義",
-          "score": 1,
-          "won": false,
-          "name": "武義高校",
-          "slug": "mugi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "中津川工",
-          "score": 1,
-          "won": false,
-          "name": "中津川工業高校",
-          "slug": "nakatsugawakogyo"
-        },
-        {
-          "display": "中津商",
-          "score": 4,
-          "won": true,
-          "name": "中津商業高校",
-          "slug": "nakatsushogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "大垣西",
-          "score": 2,
-          "won": false,
-          "name": "大垣西高校",
-          "slug": "ogakinishi"
-        },
-        {
-          "display": "岐阜総合",
-          "score": 4,
-          "won": true,
-          "name": "岐阜総合学園高校",
-          "slug": "gifusogogakuen"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "各務原西",
+          "display": "美濃加茂",
           "score": 0,
           "won": false,
-          "name": "各務原西高校",
-          "slug": "kakamigaharanishi"
-        },
-        {
-          "display": "岐阜聖徳",
-          "score": 7,
-          "won": true,
-          "name": "岐阜聖徳",
+          "name": "美濃加茂",
           "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "中京",
-          "score": 13,
-          "won": true,
-          "name": "中京",
-          "slug": null
-        },
-        {
-          "display": "多治見",
-          "score": 0,
-          "won": false,
-          "name": "多治見高校",
-          "slug": "tajimi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "大垣北",
-          "score": 6,
-          "won": false,
-          "name": "大垣北高校",
-          "slug": "ogakikita"
         },
         {
           "display": "麗澤瑞浪",
-          "score": 8,
+          "score": 3,
           "won": true,
           "name": "麗澤瑞浪",
           "slug": null
@@ -14989,114 +15978,22 @@
       ]
     },
     {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
       "round": "2回戦",
-      "venue": null,
+      "venue": "大野レインボースタジアム",
       "teams": [
         {
-          "display": "長良",
-          "score": 8,
+          "display": "大垣西",
+          "score": 5,
           "won": true,
-          "name": "長良高校",
-          "slug": "nagara"
-        },
-        {
-          "display": "加茂",
-          "score": 1,
-          "won": false,
-          "name": "加茂高校",
-          "slug": "gifu-kamo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "関商工",
-          "score": 10,
-          "won": true,
-          "name": "関商工高校",
-          "slug": "sekishoko"
-        },
-        {
-          "display": "各務原",
-          "score": 0,
-          "won": false,
-          "name": "各務原高校",
-          "slug": "kakamigahara"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "多治見工",
-          "score": 4,
-          "won": true,
-          "name": "多治見工業高校",
-          "slug": "tajimikogyo"
-        },
-        {
-          "display": "岐阜農林",
-          "score": 2,
-          "won": false,
-          "name": "岐阜農林高校",
-          "slug": "gifunorin"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "大垣南",
-          "score": 8,
-          "won": false,
-          "name": "大垣南高校",
-          "slug": "ogakiminami"
-        },
-        {
-          "display": "加納",
-          "score": 13,
-          "won": true,
-          "name": "加納高校",
-          "slug": "kano"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-20",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "大垣日大",
-          "score": 2,
-          "won": true,
-          "name": "大垣日大",
-          "slug": null
+          "name": "大垣西高校",
+          "slug": "ogakinishi"
         },
         {
           "display": "大垣養老",
-          "score": 0,
+          "score": 4,
           "won": false,
           "name": "大垣養老高校",
           "slug": "ogakiyoro"
@@ -15104,45 +16001,22 @@
       ]
     },
     {
-      "date": "2026-07-20",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
       "round": "3回戦",
-      "venue": null,
+      "venue": "大垣市北公園野球場",
       "teams": [
         {
-          "display": "岐阜高専",
-          "score": 2,
-          "won": false,
-          "name": "岐阜工業高専",
-          "slug": "gifukogyo-kosen"
-        },
-        {
-          "display": "益田清風",
-          "score": 12,
+          "display": "岐阜城北",
+          "score": 5,
           "won": true,
-          "name": "益田清風高校",
-          "slug": "mashitaseifu"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-20",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "県岐阜商",
-          "score": 9,
-          "won": true,
-          "name": "岐阜商業高校",
-          "slug": "gifushogyo"
+          "name": "岐阜城北高校",
+          "slug": "gifujohoku"
         },
         {
           "display": "岐阜第一",
-          "score": 5,
+          "score": 1,
           "won": false,
           "name": "岐阜第一",
           "slug": null
@@ -15150,156 +16024,87 @@
       ]
     },
     {
-      "date": "2026-07-20",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
       "round": "3回戦",
-      "venue": null,
+      "venue": "河上薬品スタジアム（関市民球場）",
       "teams": [
         {
-          "display": "海津明誠",
-          "score": 1,
-          "won": false,
-          "name": "海津明誠高校",
-          "slug": "kaizumeisei"
-        },
-        {
           "display": "中津商",
-          "score": 5,
+          "score": 2,
           "won": true,
           "name": "中津商業高校",
           "slug": "nakatsushogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-20",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "岐阜総合",
-          "score": 1,
-          "won": false,
-          "name": "岐阜総合学園高校",
-          "slug": "gifusogogakuen"
         },
-        {
-          "display": "岐阜聖徳",
-          "score": 6,
-          "won": true,
-          "name": "岐阜聖徳",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-20",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "中京",
-          "score": 6,
-          "won": true,
-          "name": "中京",
-          "slug": null
-        },
-        {
-          "display": "麗澤瑞浪",
-          "score": 0,
-          "won": false,
-          "name": "麗澤瑞浪",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-20",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "長良",
-          "score": 2,
-          "won": false,
-          "name": "長良高校",
-          "slug": "nagara"
-        },
-        {
-          "display": "関商工",
-          "score": 5,
-          "won": true,
-          "name": "関商工高校",
-          "slug": "sekishoko"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-20",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
         {
           "display": "多治見工",
-          "score": 10,
-          "won": true,
+          "score": 1,
+          "won": false,
           "name": "多治見工業高校",
           "slug": "tajimikogyo"
-        },
-        {
-          "display": "加納",
-          "score": 2,
-          "won": false,
-          "name": "加納高校",
-          "slug": "kano"
         }
       ]
     },
     {
-      "date": "2026-07-22",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "準々決勝",
-      "venue": null,
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "3回戦",
+      "venue": "大野レインボースタジアム",
       "teams": [
         {
           "display": "大垣日大",
-          "score": 7,
+          "score": 15,
           "won": true,
           "name": "大垣日大",
           "slug": null
         },
         {
-          "display": "益田清風",
-          "score": 1,
+          "display": "東濃実",
+          "score": 0,
           "won": false,
-          "name": "益田清風高校",
-          "slug": "mashitaseifu"
+          "name": "東濃実業高校",
+          "slug": "tonojitsugyo"
         }
       ]
     },
     {
-      "date": "2026-07-22",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "準々決勝",
-      "venue": null,
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "3回戦",
+      "venue": "カヤバスタジアム",
       "teams": [
         {
-          "display": "県岐阜商",
+          "display": "麗澤瑞浪",
+          "score": 5,
+          "won": false,
+          "name": "麗澤瑞浪",
+          "slug": null
+        },
+        {
+          "display": "大垣西",
+          "score": 6,
+          "won": true,
+          "name": "大垣西高校",
+          "slug": "ogakinishi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": "しんきん長良川球場",
+      "teams": [
+        {
+          "display": "岐阜城北",
           "score": 2,
           "won": true,
-          "name": "岐阜商業高校",
-          "slug": "gifushogyo"
+          "name": "岐阜城北高校",
+          "slug": "gifujohoku"
         },
         {
           "display": "中津商",
@@ -15311,48 +16116,71 @@
       ]
     },
     {
-      "date": "2026-07-23",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
+      "date": "2025-09-23",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
       "round": "準々決勝",
-      "venue": null,
+      "venue": "大野レインボースタジアム",
       "teams": [
         {
-          "display": "岐阜聖徳",
-          "score": 2,
-          "won": false,
-          "name": "岐阜聖徳",
+          "display": "大垣日大",
+          "score": 8,
+          "won": true,
+          "name": "大垣日大",
           "slug": null
         },
         {
-          "display": "中京",
-          "score": 7,
+          "display": "大垣西",
+          "score": 0,
+          "won": false,
+          "name": "大垣西高校",
+          "slug": "ogakinishi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "準決勝",
+      "venue": "しんきん長良川球場",
+      "teams": [
+        {
+          "display": "岐阜城北",
+          "score": 4,
+          "won": false,
+          "name": "岐阜城北高校",
+          "slug": "gifujohoku"
+        },
+        {
+          "display": "大垣日大",
+          "score": 11,
           "won": true,
-          "name": "中京",
+          "name": "大垣日大",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-23",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 岐阜大会",
-      "round": "準々決勝",
-      "venue": null,
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "2025年 秋季岐阜県高等学校野球大会",
+      "round": "決勝",
+      "venue": "しんきん長良川球場",
       "teams": [
         {
-          "display": "関商工",
+          "display": "大垣日大",
           "score": 9,
           "won": true,
-          "name": "関商工高校",
-          "slug": "sekishoko"
+          "name": "大垣日大",
+          "slug": null
         },
         {
-          "display": "多治見工",
+          "display": "中京",
           "score": 2,
           "won": false,
-          "name": "多治見工業高校",
-          "slug": "tajimikogyo"
+          "name": "中京",
+          "slug": null
         }
       ]
     },
@@ -23850,834 +24678,6 @@
           "score": 3,
           "won": true,
           "name": "大垣日大",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-07",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "1回戦",
-      "venue": "大野レインボースタジアム",
-      "teams": [
-        {
-          "display": "富田",
-          "score": 5,
-          "won": true,
-          "name": "富田",
-          "slug": null
-        },
-        {
-          "display": "中津",
-          "score": 4,
-          "won": false,
-          "name": "中津高校",
-          "slug": "nakatsu"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-07",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "1回戦",
-      "venue": "プリニーの野球場（各務原）",
-      "teams": [
-        {
-          "display": "関",
-          "score": 12,
-          "won": true,
-          "name": "関高校",
-          "slug": "seki"
-        },
-        {
-          "display": "岐阜北",
-          "score": 5,
-          "won": false,
-          "name": "岐阜北高校",
-          "slug": "gifukita"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "中津川公園野球場",
-      "teams": [
-        {
-          "display": "中京",
-          "score": 10,
-          "won": true,
-          "name": "中京",
-          "slug": null
-        },
-        {
-          "display": "本巣松陽",
-          "score": 0,
-          "won": false,
-          "name": "本巣松陽高校",
-          "slug": "motosushoyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "河上薬品スタジアム（関市民球場）",
-      "teams": [
-        {
-          "display": "長良",
-          "score": 1,
-          "won": false,
-          "name": "長良高校",
-          "slug": "nagara"
-        },
-        {
-          "display": "富田",
-          "score": 2,
-          "won": true,
-          "name": "富田",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-15",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "大垣市北公園野球場",
-      "teams": [
-        {
-          "display": "大垣商",
-          "score": 7,
-          "won": true,
-          "name": "大垣商業高校",
-          "slug": "ogakishogyo"
-        },
-        {
-          "display": "可児工",
-          "score": 0,
-          "won": false,
-          "name": "可児工業高校",
-          "slug": "kanikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "プリニーの野球場（各務原）",
-      "teams": [
-        {
-          "display": "県岐阜商",
-          "score": 4,
-          "won": false,
-          "name": "岐阜商業高校",
-          "slug": "gifushogyo"
-        },
-        {
-          "display": "岐阜総合",
-          "score": 5,
-          "won": true,
-          "name": "岐阜総合学園高校",
-          "slug": "gifusogogakuen"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "プリニーの野球場（各務原）",
-      "teams": [
-        {
-          "display": "関商工",
-          "score": 18,
-          "won": true,
-          "name": "関商工高校",
-          "slug": "sekishoko"
-        },
-        {
-          "display": "関有知",
-          "score": 4,
-          "won": false,
-          "name": "関有知高校",
-          "slug": "sekiuchi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "河上薬品スタジアム（関市民球場）",
-      "teams": [
-        {
-          "display": "加茂農林",
-          "score": 1,
-          "won": true,
-          "name": "加茂農林高校",
-          "slug": "gifu-kamonorin"
-        },
-        {
-          "display": "関",
-          "score": 0,
-          "won": false,
-          "name": "関高校",
-          "slug": "seki"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-15",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "大垣市北公園野球場",
-      "teams": [
-        {
-          "display": "岐阜工",
-          "score": 0,
-          "won": false,
-          "name": "岐阜工業高校",
-          "slug": "gifukogyo"
-        },
-        {
-          "display": "帝京大可児",
-          "score": 3,
-          "won": true,
-          "name": "帝京大可児",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "中津川公園野球場",
-      "teams": [
-        {
-          "display": "土岐商",
-          "score": 9,
-          "won": true,
-          "name": "土岐商業高校",
-          "slug": "tokishogyo"
-        },
-        {
-          "display": "益田清風",
-          "score": 1,
-          "won": false,
-          "name": "益田清風高校",
-          "slug": "mashitaseifu"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "3回戦",
-      "venue": "カヤバスタジアム",
-      "teams": [
-        {
-          "display": "中京",
-          "score": 7,
-          "won": true,
-          "name": "中京",
-          "slug": null
-        },
-        {
-          "display": "富田",
-          "score": 1,
-          "won": false,
-          "name": "富田",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "3回戦",
-      "venue": "大野レインボースタジアム",
-      "teams": [
-        {
-          "display": "大垣商",
-          "score": 6,
-          "won": false,
-          "name": "大垣商業高校",
-          "slug": "ogakishogyo"
-        },
-        {
-          "display": "岐阜総合",
-          "score": 7,
-          "won": true,
-          "name": "岐阜総合学園高校",
-          "slug": "gifusogogakuen"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "3回戦",
-      "venue": "河上薬品スタジアム（関市民球場）",
-      "teams": [
-        {
-          "display": "関商工",
-          "score": 3,
-          "won": true,
-          "name": "関商工高校",
-          "slug": "sekishoko"
-        },
-        {
-          "display": "加茂農林",
-          "score": 0,
-          "won": false,
-          "name": "加茂農林高校",
-          "slug": "gifu-kamonorin"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "3回戦",
-      "venue": "大垣市北公園野球場",
-      "teams": [
-        {
-          "display": "帝京大可児",
-          "score": 8,
-          "won": true,
-          "name": "帝京大可児",
-          "slug": null
-        },
-        {
-          "display": "土岐商",
-          "score": 2,
-          "won": false,
-          "name": "土岐商業高校",
-          "slug": "tokishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-23",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "準々決勝",
-      "venue": "しんきん長良川球場",
-      "teams": [
-        {
-          "display": "中京",
-          "score": 8,
-          "won": true,
-          "name": "中京",
-          "slug": null
-        },
-        {
-          "display": "岐阜総合",
-          "score": 0,
-          "won": false,
-          "name": "岐阜総合学園高校",
-          "slug": "gifusogogakuen"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-23",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "準々決勝",
-      "venue": "大野レインボースタジアム",
-      "teams": [
-        {
-          "display": "関商工",
-          "score": 7,
-          "won": true,
-          "name": "関商工高校",
-          "slug": "sekishoko"
-        },
-        {
-          "display": "帝京大可児",
-          "score": 1,
-          "won": false,
-          "name": "帝京大可児",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "準決勝",
-      "venue": "しんきん長良川球場",
-      "teams": [
-        {
-          "display": "中京",
-          "score": 1,
-          "won": true,
-          "name": "中京",
-          "slug": null
-        },
-        {
-          "display": "関商工",
-          "score": 0,
-          "won": false,
-          "name": "関商工高校",
-          "slug": "sekishoko"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-07",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "1回戦",
-      "venue": "大野レインボースタジアム",
-      "teams": [
-        {
-          "display": "武義",
-          "score": 0,
-          "won": false,
-          "name": "武義高校",
-          "slug": "mugi"
-        },
-        {
-          "display": "市岐阜商",
-          "score": 6,
-          "won": true,
-          "name": "岐阜商業高校",
-          "slug": "gifu-gifushogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-07",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "1回戦",
-      "venue": "プリニーの野球場（各務原）",
-      "teams": [
-        {
-          "display": "岐阜",
-          "score": 6,
-          "won": true,
-          "name": "岐阜高校",
-          "slug": "gifu"
-        },
-        {
-          "display": "岐阜農林",
-          "score": 0,
-          "won": false,
-          "name": "岐阜農林高校",
-          "slug": "gifunorin"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-07",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "1回戦",
-      "venue": "カヤバスタジアム",
-      "teams": [
-        {
-          "display": "大垣養老",
-          "score": 11,
-          "won": true,
-          "name": "大垣養老高校",
-          "slug": "ogakiyoro"
-        },
-        {
-          "display": "岐南工",
-          "score": 1,
-          "won": false,
-          "name": "岐南工業高校",
-          "slug": "ginankogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "大野レインボースタジアム",
-      "teams": [
-        {
-          "display": "岐阜城北",
-          "score": 18,
-          "won": true,
-          "name": "岐阜城北高校",
-          "slug": "gifujohoku"
-        },
-        {
-          "display": "高山西",
-          "score": 1,
-          "won": false,
-          "name": "高山西",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "プリニーの野球場（各務原）",
-      "teams": [
-        {
-          "display": "岐阜第一",
-          "score": 11,
-          "won": true,
-          "name": "岐阜第一",
-          "slug": null
-        },
-        {
-          "display": "市岐阜商",
-          "score": 0,
-          "won": false,
-          "name": "岐阜商業高校",
-          "slug": "gifu-gifushogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "中津川公園野球場",
-      "teams": [
-        {
-          "display": "中津商",
-          "score": 11,
-          "won": true,
-          "name": "中津商業高校",
-          "slug": "nakatsushogyo"
-        },
-        {
-          "display": "飛騨高山",
-          "score": 0,
-          "won": false,
-          "name": "飛騨高山高校",
-          "slug": "hidatakayama"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "大垣市北公園野球場",
-      "teams": [
-        {
-          "display": "岐阜聖徳",
-          "score": 10,
-          "won": false,
-          "name": "岐阜聖徳",
-          "slug": null
-        },
-        {
-          "display": "多治見工",
-          "score": 13,
-          "won": true,
-          "name": "多治見工業高校",
-          "slug": "tajimikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "大垣市北公園野球場",
-      "teams": [
-        {
-          "display": "大垣日大",
-          "score": 6,
-          "won": true,
-          "name": "大垣日大",
-          "slug": null
-        },
-        {
-          "display": "加納",
-          "score": 0,
-          "won": false,
-          "name": "加納高校",
-          "slug": "kano"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "中津川公園野球場",
-      "teams": [
-        {
-          "display": "東濃実",
-          "score": 3,
-          "won": true,
-          "name": "東濃実業高校",
-          "slug": "tonojitsugyo"
-        },
-        {
-          "display": "岐阜",
-          "score": 2,
-          "won": false,
-          "name": "岐阜高校",
-          "slug": "gifu"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "プリニーの野球場（各務原）",
-      "teams": [
-        {
-          "display": "美濃加茂",
-          "score": 0,
-          "won": false,
-          "name": "美濃加茂",
-          "slug": null
-        },
-        {
-          "display": "麗澤瑞浪",
-          "score": 3,
-          "won": true,
-          "name": "麗澤瑞浪",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "2回戦",
-      "venue": "大野レインボースタジアム",
-      "teams": [
-        {
-          "display": "大垣西",
-          "score": 5,
-          "won": true,
-          "name": "大垣西高校",
-          "slug": "ogakinishi"
-        },
-        {
-          "display": "大垣養老",
-          "score": 4,
-          "won": false,
-          "name": "大垣養老高校",
-          "slug": "ogakiyoro"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "3回戦",
-      "venue": "大垣市北公園野球場",
-      "teams": [
-        {
-          "display": "岐阜城北",
-          "score": 5,
-          "won": true,
-          "name": "岐阜城北高校",
-          "slug": "gifujohoku"
-        },
-        {
-          "display": "岐阜第一",
-          "score": 1,
-          "won": false,
-          "name": "岐阜第一",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "3回戦",
-      "venue": "河上薬品スタジアム（関市民球場）",
-      "teams": [
-        {
-          "display": "中津商",
-          "score": 2,
-          "won": true,
-          "name": "中津商業高校",
-          "slug": "nakatsushogyo"
-        },
-        {
-          "display": "多治見工",
-          "score": 1,
-          "won": false,
-          "name": "多治見工業高校",
-          "slug": "tajimikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "3回戦",
-      "venue": "大野レインボースタジアム",
-      "teams": [
-        {
-          "display": "大垣日大",
-          "score": 15,
-          "won": true,
-          "name": "大垣日大",
-          "slug": null
-        },
-        {
-          "display": "東濃実",
-          "score": 0,
-          "won": false,
-          "name": "東濃実業高校",
-          "slug": "tonojitsugyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "3回戦",
-      "venue": "カヤバスタジアム",
-      "teams": [
-        {
-          "display": "麗澤瑞浪",
-          "score": 5,
-          "won": false,
-          "name": "麗澤瑞浪",
-          "slug": null
-        },
-        {
-          "display": "大垣西",
-          "score": 6,
-          "won": true,
-          "name": "大垣西高校",
-          "slug": "ogakinishi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-23",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "準々決勝",
-      "venue": "しんきん長良川球場",
-      "teams": [
-        {
-          "display": "岐阜城北",
-          "score": 2,
-          "won": true,
-          "name": "岐阜城北高校",
-          "slug": "gifujohoku"
-        },
-        {
-          "display": "中津商",
-          "score": 1,
-          "won": false,
-          "name": "中津商業高校",
-          "slug": "nakatsushogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-23",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "準々決勝",
-      "venue": "大野レインボースタジアム",
-      "teams": [
-        {
-          "display": "大垣日大",
-          "score": 8,
-          "won": true,
-          "name": "大垣日大",
-          "slug": null
-        },
-        {
-          "display": "大垣西",
-          "score": 0,
-          "won": false,
-          "name": "大垣西高校",
-          "slug": "ogakinishi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "準決勝",
-      "venue": "しんきん長良川球場",
-      "teams": [
-        {
-          "display": "岐阜城北",
-          "score": 4,
-          "won": false,
-          "name": "岐阜城北高校",
-          "slug": "gifujohoku"
-        },
-        {
-          "display": "大垣日大",
-          "score": 11,
-          "won": true,
-          "name": "大垣日大",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-28",
-      "season": "autumn",
-      "tournament": "2025年 秋季岐阜県高等学校野球大会",
-      "round": "決勝",
-      "venue": "しんきん長良川球場",
-      "teams": [
-        {
-          "display": "大垣日大",
-          "score": 9,
-          "won": true,
-          "name": "大垣日大",
-          "slug": null
-        },
-        {
-          "display": "中京",
-          "score": 2,
-          "won": false,
-          "name": "中京",
           "slug": null
         }
       ]

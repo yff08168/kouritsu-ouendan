@@ -5,6 +5,719 @@
   "sourceUrl": "https://hiroshima.hsbflash.jp/",
   "games": [
     {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "市立福山",
+          "score": 7,
+          "won": true,
+          "name": "福山高校",
+          "slug": "fukuyama"
+        },
+        {
+          "display": "高陽東",
+          "score": 0,
+          "won": false,
+          "name": "高陽東高校",
+          "slug": "koyohigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "市立呉",
+          "score": 9,
+          "won": true,
+          "name": "呉高校",
+          "slug": "kure"
+        },
+        {
+          "display": "沼田",
+          "score": 0,
+          "won": false,
+          "name": "沼田高校",
+          "slug": "hiroshima-numata"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "瀬戸内",
+          "score": 2,
+          "won": false,
+          "name": "瀬戸内",
+          "slug": null
+        },
+        {
+          "display": "如水館",
+          "score": 10,
+          "won": true,
+          "name": "如水館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "福山工業",
+          "score": 9,
+          "won": true,
+          "name": "福山工業高校",
+          "slug": "fukuyamakogyo"
+        },
+        {
+          "display": "工大高",
+          "score": 7,
+          "won": false,
+          "name": "工大高",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "尾道商業",
+          "score": 0,
+          "won": false,
+          "name": "尾道商業高校",
+          "slug": "onomichishogyo"
+        },
+        {
+          "display": "武田",
+          "score": 4,
+          "won": true,
+          "name": "武田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "広島国際学院",
+          "score": 2,
+          "won": false,
+          "name": "広島国際学院",
+          "slug": null
+        },
+        {
+          "display": "呉港",
+          "score": 3,
+          "won": true,
+          "name": "呉港",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "広島商業",
+          "score": 5,
+          "won": true,
+          "name": "広島商業高校",
+          "slug": "hiroshimashogyo"
+        },
+        {
+          "display": "広島新庄",
+          "score": 4,
+          "won": false,
+          "name": "広島新庄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "総合技術",
+          "score": 1,
+          "won": false,
+          "name": "総合技術高校",
+          "slug": "sogogijutsu"
+        },
+        {
+          "display": "広陵",
+          "score": 7,
+          "won": true,
+          "name": "広陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "市立福山",
+          "score": 2,
+          "won": false,
+          "name": "福山高校",
+          "slug": "fukuyama"
+        },
+        {
+          "display": "市立呉",
+          "score": 9,
+          "won": true,
+          "name": "呉高校",
+          "slug": "kure"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "如水館",
+          "score": 1,
+          "won": false,
+          "name": "如水館",
+          "slug": null
+        },
+        {
+          "display": "福山工業",
+          "score": 4,
+          "won": true,
+          "name": "福山工業高校",
+          "slug": "fukuyamakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "武田",
+          "score": 2,
+          "won": false,
+          "name": "武田",
+          "slug": null
+        },
+        {
+          "display": "呉港",
+          "score": 9,
+          "won": true,
+          "name": "呉港",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "広島商業",
+          "score": 0,
+          "won": false,
+          "name": "広島商業高校",
+          "slug": "hiroshimashogyo"
+        },
+        {
+          "display": "広陵",
+          "score": 7,
+          "won": true,
+          "name": "広陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "準々決勝",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "市立呉",
+          "score": 4,
+          "won": true,
+          "name": "呉高校",
+          "slug": "kure"
+        },
+        {
+          "display": "福山工業",
+          "score": 3,
+          "won": false,
+          "name": "福山工業高校",
+          "slug": "fukuyamakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "準々決勝",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "呉港",
+          "score": 2,
+          "won": true,
+          "name": "呉港",
+          "slug": null
+        },
+        {
+          "display": "広陵",
+          "score": 1,
+          "won": false,
+          "name": "広陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-09",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "準決勝",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "市立呉",
+          "score": 0,
+          "won": false,
+          "name": "呉高校",
+          "slug": "kure"
+        },
+        {
+          "display": "呉港",
+          "score": 5,
+          "won": true,
+          "name": "呉港",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "庄原格致",
+          "score": 4,
+          "won": false,
+          "name": "庄原格致高校",
+          "slug": "shobarakakuchi"
+        },
+        {
+          "display": "廿日市西",
+          "score": 11,
+          "won": true,
+          "name": "廿日市西高校",
+          "slug": "hatsukaichinishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "修大協創",
+          "score": 1,
+          "won": true,
+          "name": "修大協創",
+          "slug": null
+        },
+        {
+          "display": "舟入",
+          "score": 0,
+          "won": false,
+          "name": "舟入高校",
+          "slug": "funairi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "三次",
+          "score": 1,
+          "won": false,
+          "name": "三次高校",
+          "slug": "hiroshima-miyoshi"
+        },
+        {
+          "display": "広島城北",
+          "score": 2,
+          "won": true,
+          "name": "広島城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "海田",
+          "score": 1,
+          "won": false,
+          "name": "海田高校",
+          "slug": "kaita"
+        },
+        {
+          "display": "崇徳",
+          "score": 5,
+          "won": true,
+          "name": "崇徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "安芸府中",
+          "score": 4,
+          "won": true,
+          "name": "安芸府中高校",
+          "slug": "akifuchu"
+        },
+        {
+          "display": "広島市工",
+          "score": 1,
+          "won": false,
+          "name": "広島工業高校",
+          "slug": "hiroshima-hiroshimakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "近大福山",
+          "score": 1,
+          "won": true,
+          "name": "近大福山",
+          "slug": null
+        },
+        {
+          "display": "神辺旭",
+          "score": 0,
+          "won": false,
+          "name": "神辺旭高校",
+          "slug": "kannabeasahi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "尾道",
+          "score": 8,
+          "won": true,
+          "name": "尾道",
+          "slug": null
+        },
+        {
+          "display": "祇園北",
+          "score": 1,
+          "won": false,
+          "name": "祇園北高校",
+          "slug": "gionkita"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "盈進",
+          "score": 5,
+          "won": false,
+          "name": "盈進",
+          "slug": null
+        },
+        {
+          "display": "広島工業",
+          "score": 6,
+          "won": true,
+          "name": "広島工業高校",
+          "slug": "hiroshimakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "廿日市西",
+          "score": 1,
+          "won": true,
+          "name": "廿日市西高校",
+          "slug": "hatsukaichinishi"
+        },
+        {
+          "display": "修大協創",
+          "score": 0,
+          "won": false,
+          "name": "修大協創",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "広島城北",
+          "score": 5,
+          "won": false,
+          "name": "広島城北",
+          "slug": null
+        },
+        {
+          "display": "崇徳",
+          "score": 8,
+          "won": true,
+          "name": "崇徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "安芸府中",
+          "score": 2,
+          "won": false,
+          "name": "安芸府中高校",
+          "slug": "akifuchu"
+        },
+        {
+          "display": "近大福山",
+          "score": 5,
+          "won": true,
+          "name": "近大福山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "尾道",
+          "score": 3,
+          "won": false,
+          "name": "尾道",
+          "slug": null
+        },
+        {
+          "display": "広島工業",
+          "score": 4,
+          "won": true,
+          "name": "広島工業高校",
+          "slug": "hiroshimakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "準々決勝",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "廿日市西",
+          "score": 2,
+          "won": false,
+          "name": "廿日市西高校",
+          "slug": "hatsukaichinishi"
+        },
+        {
+          "display": "崇徳",
+          "score": 13,
+          "won": true,
+          "name": "崇徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "準々決勝",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "近大福山",
+          "score": 7,
+          "won": true,
+          "name": "近大福山",
+          "slug": null
+        },
+        {
+          "display": "広島工業",
+          "score": 1,
+          "won": false,
+          "name": "広島工業高校",
+          "slug": "hiroshimakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-09",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "準決勝",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "崇徳",
+          "score": 2,
+          "won": false,
+          "name": "崇徳",
+          "slug": null
+        },
+        {
+          "display": "近大福山",
+          "score": 5,
+          "won": true,
+          "name": "近大福山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-10",
+      "season": "spring",
+      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "round": "決勝",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "近大福山",
+          "score": 0,
+          "won": false,
+          "name": "近大福山",
+          "slug": null
+        },
+        {
+          "display": "呉港",
+          "score": 6,
+          "won": true,
+          "name": "呉港",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2019-04-13",
       "season": "spring",
       "tournament": "2019年 春季中国地区高校野球 広島県大会",
@@ -4559,45 +5272,184 @@
       ]
     },
     {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "市立福山",
-          "score": 7,
-          "won": true,
-          "name": "福山高校",
-          "slug": "fukuyama"
-        },
-        {
-          "display": "高陽東",
-          "score": 0,
-          "won": false,
-          "name": "高陽東高校",
-          "slug": "koyohigashi"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "date": "2026-07-06",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
       "round": "1回戦",
       "venue": "鶴岡一人記念球場",
       "teams": [
         {
-          "display": "市立呉",
+          "display": "呉三津田",
+          "score": 0,
+          "won": false,
+          "name": "呉三津田高校",
+          "slug": "kuremitsuta"
+        },
+        {
+          "display": "瀬戸内",
+          "score": 10,
+          "won": true,
+          "name": "瀬戸内",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": "エブリイ福山市民球場",
+      "teams": [
+        {
+          "display": "呉商業",
+          "score": 0,
+          "won": false,
+          "name": "呉商業高校",
+          "slug": "kureshogyo"
+        },
+        {
+          "display": "神辺旭",
+          "score": 7,
+          "won": true,
+          "name": "神辺旭高校",
+          "slug": "kannabeasahi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": "やまみ三原市民球場",
+      "teams": [
+        {
+          "display": "尾道北",
+          "score": 3,
+          "won": false,
+          "name": "尾道北高校",
+          "slug": "onomichikita"
+        },
+        {
+          "display": "基町",
+          "score": 6,
+          "won": true,
+          "name": "基町高校",
+          "slug": "motomachi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": "やまみ三原市民球場",
+      "teams": [
+        {
+          "display": "竹原・福山商業",
+          "score": 3,
+          "won": false,
+          "name": "竹原・福山商業",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "広島城北",
+          "score": 4,
+          "won": true,
+          "name": "広島城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "神辺",
+          "score": 7,
+          "won": false,
+          "name": "神辺高校",
+          "slug": "kannabe"
+        },
+        {
+          "display": "広",
           "score": 9,
           "won": true,
-          "name": "呉高校",
-          "slug": "kure"
+          "name": "広高校",
+          "slug": "hiro"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "盈進",
+          "score": 31,
+          "won": true,
+          "name": "盈進",
+          "slug": null
+        },
+        {
+          "display": "三次青陵",
+          "score": 0,
+          "won": false,
+          "name": "三次青陵高校",
+          "slug": "miyoshiseiryo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": "エブリイ福山市民球場",
+      "teams": [
+        {
+          "display": "戸手",
+          "score": 1,
+          "won": false,
+          "name": "戸手高校",
+          "slug": "tode"
+        },
+        {
+          "display": "広島国際学院",
+          "score": 11,
+          "won": true,
+          "name": "広島国際学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "山陽",
+          "score": 8,
+          "won": true,
+          "name": "山陽",
+          "slug": null
         },
         {
           "display": "沼田",
-          "score": 0,
+          "score": 2,
           "won": false,
           "name": "沼田高校",
           "slug": "hiroshima-numata"
@@ -4605,321 +5457,252 @@
       ]
     },
     {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "date": "2026-07-06",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
       "round": "1回戦",
       "venue": null,
       "teams": [
         {
+          "display": "美鈴が丘",
+          "score": 7,
+          "won": true,
+          "name": "美鈴が丘高校",
+          "slug": "misuzugaoka"
+        },
+        {
+          "display": "広島商船",
+          "score": 1,
+          "won": false,
+          "name": "広島商船高専",
+          "slug": "hiroshimashosen"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "世羅",
+          "score": 0,
+          "won": false,
+          "name": "世羅高校",
+          "slug": "sera"
+        },
+        {
+          "display": "廿日市",
+          "score": 6,
+          "won": true,
+          "name": "廿日市高校",
+          "slug": "hatsukaichi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "呉高専",
+          "score": 3,
+          "won": false,
+          "name": "呉工業高専",
+          "slug": "kurekogyo-kosen"
+        },
+        {
+          "display": "吉田",
+          "score": 8,
+          "won": true,
+          "name": "吉田高校",
+          "slug": "hiroshima-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "エブリイ福山市民球場",
+      "teams": [
+        {
+          "display": "近大福山",
+          "score": 3,
+          "won": true,
+          "name": "近大福山",
+          "slug": null
+        },
+        {
           "display": "瀬戸内",
-          "score": 2,
+          "score": 1,
           "won": false,
           "name": "瀬戸内",
           "slug": null
-        },
-        {
-          "display": "如水館",
-          "score": 10,
-          "won": true,
-          "name": "如水館",
-          "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "1回戦",
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "賀茂",
+          "score": 8,
+          "won": true,
+          "name": "賀茂高校",
+          "slug": "hiroshima-kamo"
+        },
+        {
+          "display": "安西",
+          "score": 1,
+          "won": false,
+          "name": "安西高校",
+          "slug": "ansei"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "熊野",
+          "score": 2,
+          "won": false,
+          "name": "熊野高校",
+          "slug": "hiroshima-kumano"
+        },
+        {
+          "display": "神辺旭",
+          "score": 10,
+          "won": true,
+          "name": "神辺旭高校",
+          "slug": "kannabeasahi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "油木",
+          "score": 0,
+          "won": false,
+          "name": "油木高校",
+          "slug": "yuki"
+        },
+        {
+          "display": "市立福山",
+          "score": 17,
+          "won": true,
+          "name": "福山高校",
+          "slug": "fukuyama"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
       "venue": null,
       "teams": [
         {
-          "display": "福山工業",
-          "score": 9,
-          "won": true,
-          "name": "福山工業高校",
-          "slug": "fukuyamakogyo"
-        },
-        {
-          "display": "工大高",
-          "score": 7,
-          "won": false,
-          "name": "工大高",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "尾道商業",
-          "score": 0,
-          "won": false,
-          "name": "尾道商業高校",
-          "slug": "onomichishogyo"
-        },
-        {
-          "display": "武田",
-          "score": 4,
-          "won": true,
-          "name": "武田",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "広島国際学院",
+          "display": "英数学館",
           "score": 2,
-          "won": false,
-          "name": "広島国際学院",
+          "won": true,
+          "name": "英数学館",
           "slug": null
         },
         {
-          "display": "呉港",
-          "score": 3,
-          "won": true,
-          "name": "呉港",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "広島商業",
-          "score": 5,
-          "won": true,
-          "name": "広島商業高校",
-          "slug": "hiroshimashogyo"
-        },
-        {
-          "display": "広島新庄",
-          "score": 4,
-          "won": false,
-          "name": "広島新庄",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "総合技術",
+          "display": "基町",
           "score": 1,
           "won": false,
-          "name": "総合技術高校",
-          "slug": "sogogijutsu"
-        },
-        {
-          "display": "広陵",
-          "score": 7,
-          "won": true,
-          "name": "広陵",
-          "slug": null
+          "name": "基町高校",
+          "slug": "motomachi"
         }
       ]
     },
     {
-      "date": "2026-04-25",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
       "round": "2回戦",
       "venue": "電光石火きんさいスタジアム三次",
       "teams": [
         {
-          "display": "市立福山",
-          "score": 2,
-          "won": false,
-          "name": "福山高校",
-          "slug": "fukuyama"
-        },
-        {
-          "display": "市立呉",
-          "score": 9,
+          "display": "広島城北",
+          "score": 10,
           "won": true,
-          "name": "呉高校",
-          "slug": "kure"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-25",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "2回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "如水館",
-          "score": 1,
-          "won": false,
-          "name": "如水館",
+          "name": "広島城北",
           "slug": null
         },
         {
-          "display": "福山工業",
+          "display": "庄原実業",
           "score": 4,
-          "won": true,
-          "name": "福山工業高校",
-          "slug": "fukuyamakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-25",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "2回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "武田",
-          "score": 2,
           "won": false,
-          "name": "武田",
-          "slug": null
-        },
-        {
-          "display": "呉港",
-          "score": 9,
-          "won": true,
-          "name": "呉港",
-          "slug": null
+          "name": "庄原実業高校",
+          "slug": "shobarajitsugyo"
         }
       ]
     },
     {
-      "date": "2026-04-25",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
       "round": "2回戦",
-      "venue": "ぶんちゃんしまなみ球場",
+      "venue": null,
       "teams": [
         {
-          "display": "広島商業",
-          "score": 0,
-          "won": false,
-          "name": "広島商業高校",
-          "slug": "hiroshimashogyo"
-        },
-        {
-          "display": "広陵",
-          "score": 7,
-          "won": true,
-          "name": "広陵",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-26",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "準々決勝",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "市立呉",
-          "score": 4,
-          "won": true,
-          "name": "呉高校",
-          "slug": "kure"
-        },
-        {
-          "display": "福山工業",
+          "display": "祇園北",
           "score": 3,
           "won": false,
-          "name": "福山工業高校",
-          "slug": "fukuyamakogyo"
+          "name": "祇園北高校",
+          "slug": "gionkita"
+        },
+        {
+          "display": "高陽東",
+          "score": 4,
+          "won": true,
+          "name": "高陽東高校",
+          "slug": "koyohigashi"
         }
       ]
     },
     {
-      "date": "2026-04-26",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "準々決勝",
-      "venue": "鶴岡一人記念球場",
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": null,
       "teams": [
         {
-          "display": "呉港",
-          "score": 2,
-          "won": true,
-          "name": "呉港",
-          "slug": null
-        },
-        {
-          "display": "広陵",
+          "display": "広",
           "score": 1,
           "won": false,
-          "name": "広陵",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-09",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "準決勝",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "市立呉",
-          "score": 0,
-          "won": false,
-          "name": "呉高校",
-          "slug": "kure"
-        },
-        {
-          "display": "呉港",
-          "score": 5,
-          "won": true,
-          "name": "呉港",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "庄原格致",
-          "score": 4,
-          "won": false,
-          "name": "庄原格致高校",
-          "slug": "shobarakakuchi"
+          "name": "広高校",
+          "slug": "hiro"
         },
         {
           "display": "廿日市西",
-          "score": 11,
+          "score": 8,
           "won": true,
           "name": "廿日市西高校",
           "slug": "hatsukaichinishi"
@@ -4927,22 +5710,1014 @@
       ]
     },
     {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "広島工業",
+          "score": 1,
+          "won": false,
+          "name": "広島工業高校",
+          "slug": "hiroshimakogyo"
+        },
+        {
+          "display": "盈進",
+          "score": 4,
+          "won": true,
+          "name": "盈進",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "エブリイ福山市民球場",
+      "teams": [
+        {
+          "display": "府中東",
+          "score": 7,
+          "won": true,
+          "name": "府中東高校",
+          "slug": "hiroshima-fuchuhigashi"
+        },
+        {
+          "display": "日彰館",
+          "score": 0,
+          "won": false,
+          "name": "日彰館高校",
+          "slug": "nisshokan"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "尾道東",
+          "score": 0,
+          "won": false,
+          "name": "尾道東高校",
+          "slug": "onomichihigashi"
+        },
+        {
+          "display": "広島国際学院",
+          "score": 15,
+          "won": true,
+          "name": "広島国際学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "山陽",
+          "score": 5,
+          "won": true,
+          "name": "山陽",
+          "slug": null
+        },
+        {
+          "display": "広島修道大学ひろしま協創",
+          "score": 3,
+          "won": false,
+          "name": "広島修道大学ひろしま協創",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "エブリイ福山市民球場",
+      "teams": [
+        {
+          "display": "三原",
+          "score": 2,
+          "won": false,
+          "name": "三原高校",
+          "slug": "hiroshima-mihara"
+        },
+        {
+          "display": "美鈴が丘",
+          "score": 7,
+          "won": true,
+          "name": "美鈴が丘高校",
+          "slug": "misuzugaoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "廿日市",
+          "score": 7,
+          "won": true,
+          "name": "廿日市高校",
+          "slug": "hatsukaichi"
+        },
+        {
+          "display": "因島・松永",
+          "score": 0,
+          "won": false,
+          "name": "因島・松永",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "上下",
+          "score": 4,
+          "won": false,
+          "name": "上下高校",
+          "slug": "joge"
+        },
+        {
+          "display": "修道",
+          "score": 9,
+          "won": true,
+          "name": "修道",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "吉田",
+          "score": 1,
+          "won": false,
+          "name": "吉田高校",
+          "slug": "hiroshima-yoshida"
+        },
+        {
+          "display": "市立呉",
+          "score": 11,
+          "won": true,
+          "name": "呉高校",
+          "slug": "kure"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "3回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "近大福山",
+          "score": 2,
+          "won": false,
+          "name": "近大福山",
+          "slug": null
+        },
+        {
+          "display": "賀茂",
+          "score": 4,
+          "won": true,
+          "name": "賀茂高校",
+          "slug": "hiroshima-kamo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "神辺旭",
+          "score": 2,
+          "won": false,
+          "name": "神辺旭高校",
+          "slug": "kannabeasahi"
+        },
+        {
+          "display": "市立福山",
+          "score": 3,
+          "won": true,
+          "name": "福山高校",
+          "slug": "fukuyama"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "3回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "英数学館",
+          "score": 1,
+          "won": false,
+          "name": "英数学館",
+          "slug": null
+        },
+        {
+          "display": "広島城北",
+          "score": 3,
+          "won": true,
+          "name": "広島城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "3回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "高陽東",
+          "score": 3,
+          "won": false,
+          "name": "高陽東高校",
+          "slug": "koyohigashi"
+        },
+        {
+          "display": "廿日市西",
+          "score": 4,
+          "won": true,
+          "name": "廿日市西高校",
+          "slug": "hatsukaichinishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "3回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "盈進",
+          "score": 14,
+          "won": true,
+          "name": "盈進",
+          "slug": null
+        },
+        {
+          "display": "府中東",
+          "score": 0,
+          "won": false,
+          "name": "府中東高校",
+          "slug": "hiroshima-fuchuhigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "3回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "広島国際学院",
+          "score": 5,
+          "won": true,
+          "name": "広島国際学院",
+          "slug": null
+        },
+        {
+          "display": "山陽",
+          "score": 4,
+          "won": false,
+          "name": "山陽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "3回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "美鈴が丘",
+          "score": 4,
+          "won": false,
+          "name": "美鈴が丘高校",
+          "slug": "misuzugaoka"
+        },
+        {
+          "display": "廿日市",
+          "score": 8,
+          "won": true,
+          "name": "廿日市高校",
+          "slug": "hatsukaichi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "修道",
+          "score": 5,
+          "won": false,
+          "name": "修道",
+          "slug": null
+        },
+        {
+          "display": "市立呉",
+          "score": 8,
+          "won": true,
+          "name": "呉高校",
+          "slug": "kure"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "4回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "賀茂",
+          "score": 1,
+          "won": false,
+          "name": "賀茂高校",
+          "slug": "hiroshima-kamo"
+        },
+        {
+          "display": "市立福山",
+          "score": 8,
+          "won": true,
+          "name": "福山高校",
+          "slug": "fukuyama"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "広島城北",
+          "score": 11,
+          "won": true,
+          "name": "広島城北",
+          "slug": null
+        },
+        {
+          "display": "廿日市西",
+          "score": 3,
+          "won": false,
+          "name": "廿日市西高校",
+          "slug": "hatsukaichinishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "4回戦",
+      "venue": "エブリイ福山市民球場",
+      "teams": [
+        {
+          "display": "盈進",
+          "score": 1,
+          "won": false,
+          "name": "盈進",
+          "slug": null
+        },
+        {
+          "display": "広島国際学院",
+          "score": 7,
+          "won": true,
+          "name": "広島国際学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "4回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "廿日市",
+          "score": 3,
+          "won": false,
+          "name": "廿日市高校",
+          "slug": "hatsukaichi"
+        },
+        {
+          "display": "市立呉",
+          "score": 11,
+          "won": true,
+          "name": "呉高校",
+          "slug": "kure"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "準々決勝",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "市立福山",
+          "score": 11,
+          "won": true,
+          "name": "福山高校",
+          "slug": "fukuyama"
+        },
+        {
+          "display": "広島城北",
+          "score": 1,
+          "won": false,
+          "name": "広島城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "準々決勝",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "広島国際学院",
+          "score": 0,
+          "won": false,
+          "name": "広島国際学院",
+          "slug": null
+        },
+        {
+          "display": "市立呉",
+          "score": 4,
+          "won": true,
+          "name": "呉高校",
+          "slug": "kure"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-26",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "準決勝",
+      "venue": "ＭＡＺＤＡＺｏｏ－Ｚｏｏｍスタジアム広島",
+      "teams": [
+        {
+          "display": "市立福山",
+          "score": 4,
+          "won": true,
+          "name": "福山高校",
+          "slug": "fukuyama"
+        },
+        {
+          "display": "市立呉",
+          "score": 3,
+          "won": false,
+          "name": "呉高校",
+          "slug": "kure"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "広島国泰寺",
+          "score": 5,
+          "won": false,
+          "name": "広島国泰寺高校",
+          "slug": "hiroshimakokutaiji"
+        },
+        {
+          "display": "庄原格致",
+          "score": 7,
+          "won": true,
+          "name": "庄原格致高校",
+          "slug": "shobarakakuchi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
       "round": "1回戦",
       "venue": null,
       "teams": [
         {
-          "display": "修大協創",
-          "score": 1,
+          "display": "安芸府中",
+          "score": 2,
+          "won": false,
+          "name": "安芸府中高校",
+          "slug": "akifuchu"
+        },
+        {
+          "display": "武田",
+          "score": 3,
           "won": true,
-          "name": "修大協創",
+          "name": "武田",
           "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": "エブリイ福山市民球場",
+      "teams": [
+        {
+          "display": "広島中等教育",
+          "score": 1,
+          "won": false,
+          "name": "広島中等教育学校",
+          "slug": "hiroshima-chuto"
+        },
+        {
+          "display": "尾道商業",
+          "score": 6,
+          "won": true,
+          "name": "尾道商業高校",
+          "slug": "onomichishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "呉工業",
+          "score": 1,
+          "won": false,
+          "name": "呉工業高校",
+          "slug": "kurekogyo"
+        },
+        {
+          "display": "如水館",
+          "score": 9,
+          "won": true,
+          "name": "如水館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": "やまみ三原市民球場",
+      "teams": [
+        {
+          "display": "安芸南",
+          "score": 0,
+          "won": false,
+          "name": "安芸南高校",
+          "slug": "akiminami"
+        },
+        {
+          "display": "尾道",
+          "score": 4,
+          "won": true,
+          "name": "尾道",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "加計芸北",
+          "score": 4,
+          "won": false,
+          "name": "加計高校芸北分校",
+          "slug": "kakegeihoku"
+        },
+        {
+          "display": "広島観音",
+          "score": 9,
+          "won": true,
+          "name": "広島観音高校",
+          "slug": "hiroshimakanon"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "黒瀬・大柿のみのお分校・忠海",
+          "score": 1,
+          "won": false,
+          "name": "黒瀬・大柿のみのお分校・忠海",
+          "slug": null,
+          "combined": true
         },
         {
           "display": "舟入",
+          "score": 11,
+          "won": true,
+          "name": "舟入高校",
+          "slug": "funairi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": "エブリイ福山市民球場",
+      "teams": [
+        {
+          "display": "府中",
+          "score": 3,
+          "won": true,
+          "name": "府中高校",
+          "slug": "hiroshima-fuchu"
+        },
+        {
+          "display": "並木学院",
+          "score": 2,
+          "won": false,
+          "name": "並木学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": "やまみ三原市民球場",
+      "teams": [
+        {
+          "display": "大竹",
+          "score": 8,
+          "won": true,
+          "name": "大竹高校",
+          "slug": "otake"
+        },
+        {
+          "display": "総合技術",
+          "score": 4,
+          "won": false,
+          "name": "総合技術高校",
+          "slug": "sogogijutsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "1回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "可部",
+          "score": 7,
+          "won": false,
+          "name": "可部高校",
+          "slug": "kabe"
+        },
+        {
+          "display": "広島桜が丘",
+          "score": 9,
+          "won": true,
+          "name": "広島桜が丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "呉港",
+          "score": 4,
+          "won": true,
+          "name": "呉港",
+          "slug": null
+        },
+        {
+          "display": "庄原格致",
+          "score": 1,
+          "won": false,
+          "name": "庄原格致高校",
+          "slug": "shobarakakuchi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "海田",
+          "score": 7,
+          "won": true,
+          "name": "海田高校",
+          "slug": "kaita"
+        },
+        {
+          "display": "河内",
+          "score": 1,
+          "won": false,
+          "name": "河内高校",
+          "slug": "kochi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "エブリイ福山市民球場",
+      "teams": [
+        {
+          "display": "呉宮原",
+          "score": 2,
+          "won": false,
+          "name": "呉宮原高校",
+          "slug": "kuremiyahara"
+        },
+        {
+          "display": "武田",
+          "score": 9,
+          "won": true,
+          "name": "武田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "三次",
+          "score": 12,
+          "won": true,
+          "name": "三次高校",
+          "slug": "hiroshima-miyoshi"
+        },
+        {
+          "display": "五日市",
+          "score": 5,
+          "won": false,
+          "name": "五日市高校",
+          "slug": "hiroshima-itsukaichi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "福山明王台",
           "score": 0,
+          "won": false,
+          "name": "福山明王台高校",
+          "slug": "fukuyamamyodai"
+        },
+        {
+          "display": "尾道商業",
+          "score": 8,
+          "won": true,
+          "name": "尾道商業高校",
+          "slug": "onomichishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "如水館",
+          "score": 0,
+          "won": false,
+          "name": "如水館",
+          "slug": null
+        },
+        {
+          "display": "広島新庄",
+          "score": 9,
+          "won": true,
+          "name": "広島新庄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "広島商業",
+          "score": 23,
+          "won": true,
+          "name": "広島商業高校",
+          "slug": "hiroshimashogyo"
+        },
+        {
+          "display": "千代田・向原",
+          "score": 0,
+          "won": false,
+          "name": "千代田・向原",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "エブリイ福山市民球場",
+      "teams": [
+        {
+          "display": "尾道",
+          "score": 4,
+          "won": true,
+          "name": "尾道",
+          "slug": null
+        },
+        {
+          "display": "福山工業",
+          "score": 0,
+          "won": false,
+          "name": "福山工業高校",
+          "slug": "fukuyamakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "広陵",
+          "score": 20,
+          "won": true,
+          "name": "広陵",
+          "slug": null
+        },
+        {
+          "display": "広島観音",
+          "score": 0,
+          "won": false,
+          "name": "広島観音高校",
+          "slug": "hiroshimakanon"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "広島工業大学",
+          "score": 16,
+          "won": true,
+          "name": "広島工業大学",
+          "slug": null
+        },
+        {
+          "display": "宮島工業",
+          "score": 4,
+          "won": false,
+          "name": "宮島工業高校",
+          "slug": "miyajimakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "広島市工",
+          "score": 8,
+          "won": true,
+          "name": "広島工業高校",
+          "slug": "hiroshima-hiroshimakogyo"
+        },
+        {
+          "display": "舟入",
+          "score": 4,
           "won": false,
           "name": "舟入高校",
           "slug": "funairi"
@@ -4950,41 +6725,294 @@
       ]
     },
     {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "1回戦",
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "府中",
+          "score": 1,
+          "won": false,
+          "name": "府中高校",
+          "slug": "hiroshima-fuchu"
+        },
+        {
+          "display": "福山葦陽",
+          "score": 3,
+          "won": true,
+          "name": "福山葦陽高校",
+          "slug": "fukuyamaiyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "エブリイ福山市民球場",
+      "teams": [
+        {
+          "display": "福山誠之館",
+          "score": 14,
+          "won": true,
+          "name": "福山誠之館高校",
+          "slug": "fukuyamaseishikan"
+        },
+        {
+          "display": "加計",
+          "score": 0,
+          "won": false,
+          "name": "加計高校",
+          "slug": "kake"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
       "venue": "電光石火きんさいスタジアム三次",
       "teams": [
         {
-          "display": "三次",
-          "score": 1,
-          "won": false,
-          "name": "三次高校",
-          "slug": "hiroshima-miyoshi"
+          "display": "大竹",
+          "score": 11,
+          "won": true,
+          "name": "大竹高校",
+          "slug": "otake"
         },
         {
-          "display": "広島城北",
-          "score": 2,
+          "display": "広島井口",
+          "score": 8,
+          "won": false,
+          "name": "広島井口高校",
+          "slug": "hiroshimainokuchi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "西条農業",
+          "score": 6,
           "won": true,
-          "name": "広島城北",
+          "name": "西条農業高校",
+          "slug": "saijonogyo"
+        },
+        {
+          "display": "大門",
+          "score": 1,
+          "won": false,
+          "name": "大門高校",
+          "slug": "hiroshima-daimon"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "広島桜が丘",
+          "score": 0,
+          "won": false,
+          "name": "広島桜が丘",
+          "slug": null
+        },
+        {
+          "display": "崇徳",
+          "score": 10,
+          "won": true,
+          "name": "崇徳",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "ぶんちゃんしまなみ球場",
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "3回戦",
+      "venue": "電光石火きんさいスタジアム三次",
       "teams": [
         {
+          "display": "呉港",
+          "score": 5,
+          "won": true,
+          "name": "呉港",
+          "slug": null
+        },
+        {
           "display": "海田",
-          "score": 1,
+          "score": 4,
           "won": false,
           "name": "海田高校",
           "slug": "kaita"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "武田",
+          "score": 3,
+          "won": false,
+          "name": "武田",
+          "slug": null
+        },
+        {
+          "display": "三次",
+          "score": 5,
+          "won": true,
+          "name": "三次高校",
+          "slug": "hiroshima-miyoshi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "尾道商業",
+          "score": 4,
+          "won": true,
+          "name": "尾道商業高校",
+          "slug": "onomichishogyo"
+        },
+        {
+          "display": "広島新庄",
+          "score": 2,
+          "won": false,
+          "name": "広島新庄",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "3回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "広島商業",
+          "score": 12,
+          "won": true,
+          "name": "広島商業高校",
+          "slug": "hiroshimashogyo"
+        },
+        {
+          "display": "尾道",
+          "score": 2,
+          "won": false,
+          "name": "尾道",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "3回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "広陵",
+          "score": 11,
+          "won": true,
+          "name": "広陵",
+          "slug": null
+        },
+        {
+          "display": "広島工業大学",
+          "score": 1,
+          "won": false,
+          "name": "広島工業大学",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "3回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "広島市工",
+          "score": 4,
+          "won": true,
+          "name": "広島工業高校",
+          "slug": "hiroshima-hiroshimakogyo"
+        },
+        {
+          "display": "福山葦陽",
+          "score": 1,
+          "won": false,
+          "name": "福山葦陽高校",
+          "slug": "fukuyamaiyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "3回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "福山誠之館",
+          "score": 6,
+          "won": true,
+          "name": "福山誠之館高校",
+          "slug": "fukuyamaseishikan"
+        },
+        {
+          "display": "大竹",
+          "score": 2,
+          "won": false,
+          "name": "大竹高校",
+          "slug": "otake"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "3回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "西条農業",
+          "score": 0,
+          "won": false,
+          "name": "西条農業高校",
+          "slug": "saijonogyo"
         },
         {
           "display": "崇徳",
@@ -4996,22 +7024,68 @@
       ]
     },
     {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "1回戦",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "4回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "呉港",
+          "score": 2,
+          "won": true,
+          "name": "呉港",
+          "slug": null
+        },
+        {
+          "display": "三次",
+          "score": 0,
+          "won": false,
+          "name": "三次高校",
+          "slug": "hiroshima-miyoshi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "4回戦",
       "venue": null,
       "teams": [
         {
-          "display": "安芸府中",
-          "score": 4,
+          "display": "尾道商業",
+          "score": 1,
+          "won": false,
+          "name": "尾道商業高校",
+          "slug": "onomichishogyo"
+        },
+        {
+          "display": "広島商業",
+          "score": 6,
           "won": true,
-          "name": "安芸府中高校",
-          "slug": "akifuchu"
+          "name": "広島商業高校",
+          "slug": "hiroshimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "4回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "広陵",
+          "score": 9,
+          "won": true,
+          "name": "広陵",
+          "slug": null
         },
         {
           "display": "広島市工",
-          "score": 1,
+          "score": 0,
           "won": false,
           "name": "広島工業高校",
           "slug": "hiroshima-hiroshimakogyo"
@@ -5019,114 +7093,22 @@
       ]
     },
     {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "ぶんちゃんしまなみ球場",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "4回戦",
+      "venue": "エブリイ福山市民球場",
       "teams": [
         {
-          "display": "近大福山",
-          "score": 1,
-          "won": true,
-          "name": "近大福山",
-          "slug": null
-        },
-        {
-          "display": "神辺旭",
-          "score": 0,
-          "won": false,
-          "name": "神辺旭高校",
-          "slug": "kannabeasahi"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "尾道",
-          "score": 8,
-          "won": true,
-          "name": "尾道",
-          "slug": null
-        },
-        {
-          "display": "祇園北",
+          "display": "福山誠之館",
           "score": 1,
           "won": false,
-          "name": "祇園北高校",
-          "slug": "gionkita"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "盈進",
-          "score": 5,
-          "won": false,
-          "name": "盈進",
-          "slug": null
-        },
-        {
-          "display": "広島工業",
-          "score": 6,
-          "won": true,
-          "name": "広島工業高校",
-          "slug": "hiroshimakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-25",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "廿日市西",
-          "score": 1,
-          "won": true,
-          "name": "廿日市西高校",
-          "slug": "hatsukaichinishi"
-        },
-        {
-          "display": "修大協創",
-          "score": 0,
-          "won": false,
-          "name": "修大協創",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-25",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "広島城北",
-          "score": 5,
-          "won": false,
-          "name": "広島城北",
-          "slug": null
+          "name": "福山誠之館高校",
+          "slug": "fukuyamaseishikan"
         },
         {
           "display": "崇徳",
-          "score": 8,
+          "score": 3,
           "won": true,
           "name": "崇徳",
           "slug": null
@@ -5134,140 +7116,94 @@
       ]
     },
     {
-      "date": "2026-04-25",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "2回戦",
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "準々決勝",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "呉港",
+          "score": 3,
+          "won": false,
+          "name": "呉港",
+          "slug": null
+        },
+        {
+          "display": "広島商業",
+          "score": 5,
+          "won": true,
+          "name": "広島商業高校",
+          "slug": "hiroshimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "準々決勝",
       "venue": "電光石火きんさいスタジアム三次",
       "teams": [
         {
-          "display": "安芸府中",
-          "score": 2,
-          "won": false,
-          "name": "安芸府中高校",
-          "slug": "akifuchu"
-        },
-        {
-          "display": "近大福山",
+          "display": "広陵",
           "score": 5,
           "won": true,
-          "name": "近大福山",
+          "name": "広陵",
           "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-25",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "2回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
+        },
         {
-          "display": "尾道",
+          "display": "崇徳",
           "score": 3,
           "won": false,
-          "name": "尾道",
+          "name": "崇徳",
           "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-26",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "準決勝",
+      "venue": "ＭＡＺＤＡＺｏｏ－Ｚｏｏｍスタジアム広島",
+      "teams": [
+        {
+          "display": "広島商業",
+          "score": 9,
+          "won": true,
+          "name": "広島商業高校",
+          "slug": "hiroshimashogyo"
         },
         {
-          "display": "広島工業",
+          "display": "広陵",
+          "score": 4,
+          "won": false,
+          "name": "広陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-28",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "round": "決勝",
+      "venue": "ＭＡＺＤＡＺｏｏ－Ｚｏｏｍスタジアム広島",
+      "teams": [
+        {
+          "display": "広島商業",
+          "score": 3,
+          "won": false,
+          "name": "広島商業高校",
+          "slug": "hiroshimashogyo"
+        },
+        {
+          "display": "市立福山",
           "score": 4,
           "won": true,
-          "name": "広島工業高校",
-          "slug": "hiroshimakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-26",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "準々決勝",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "廿日市西",
-          "score": 2,
-          "won": false,
-          "name": "廿日市西高校",
-          "slug": "hatsukaichinishi"
-        },
-        {
-          "display": "崇徳",
-          "score": 13,
-          "won": true,
-          "name": "崇徳",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-02",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "準々決勝",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "近大福山",
-          "score": 7,
-          "won": true,
-          "name": "近大福山",
-          "slug": null
-        },
-        {
-          "display": "広島工業",
-          "score": 1,
-          "won": false,
-          "name": "広島工業高校",
-          "slug": "hiroshimakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-09",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "準決勝",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "崇徳",
-          "score": 2,
-          "won": false,
-          "name": "崇徳",
-          "slug": null
-        },
-        {
-          "display": "近大福山",
-          "score": 5,
-          "won": true,
-          "name": "近大福山",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-10",
-      "season": "spring",
-      "tournament": "2026年 春季中国地区高校野球 広島県大会",
-      "round": "決勝",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "近大福山",
-          "score": 0,
-          "won": false,
-          "name": "近大福山",
-          "slug": null
-        },
-        {
-          "display": "呉港",
-          "score": 6,
-          "won": true,
-          "name": "呉港",
-          "slug": null
+          "name": "福山高校",
+          "slug": "fukuyama"
         }
       ]
     },
@@ -20929,1025 +22865,57 @@
       ]
     },
     {
-      "date": "2026-07-06",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
       "round": "1回戦",
       "venue": "鶴岡一人記念球場",
       "teams": [
         {
-          "display": "呉三津田",
-          "score": 0,
-          "won": false,
-          "name": "呉三津田高校",
-          "slug": "kuremitsuta"
-        },
-        {
-          "display": "瀬戸内",
-          "score": 10,
-          "won": true,
-          "name": "瀬戸内",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-06",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "1回戦",
-      "venue": "エブリイ福山市民球場",
-      "teams": [
-        {
-          "display": "呉商業",
-          "score": 0,
-          "won": false,
-          "name": "呉商業高校",
-          "slug": "kureshogyo"
-        },
-        {
-          "display": "神辺旭",
-          "score": 7,
-          "won": true,
-          "name": "神辺旭高校",
-          "slug": "kannabeasahi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-06",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "1回戦",
-      "venue": "やまみ三原市民球場",
-      "teams": [
-        {
-          "display": "尾道北",
-          "score": 3,
-          "won": false,
-          "name": "尾道北高校",
-          "slug": "onomichikita"
-        },
-        {
-          "display": "基町",
-          "score": 6,
-          "won": true,
-          "name": "基町高校",
-          "slug": "motomachi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-06",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "1回戦",
-      "venue": "やまみ三原市民球場",
-      "teams": [
-        {
-          "display": "竹原・福山商業",
-          "score": 3,
-          "won": false,
-          "name": "竹原・福山商業",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "広島城北",
-          "score": 4,
-          "won": true,
-          "name": "広島城北",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-06",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "1回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "神辺",
-          "score": 7,
-          "won": false,
-          "name": "神辺高校",
-          "slug": "kannabe"
-        },
-        {
-          "display": "広",
-          "score": 9,
-          "won": true,
-          "name": "広高校",
-          "slug": "hiro"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-06",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "1回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "盈進",
-          "score": 31,
-          "won": true,
-          "name": "盈進",
-          "slug": null
-        },
-        {
-          "display": "三次青陵",
-          "score": 0,
-          "won": false,
-          "name": "三次青陵高校",
-          "slug": "miyoshiseiryo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-06",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "1回戦",
-      "venue": "エブリイ福山市民球場",
-      "teams": [
-        {
-          "display": "戸手",
+          "display": "呉港",
           "score": 1,
           "won": false,
-          "name": "戸手高校",
-          "slug": "tode"
+          "name": "呉港",
+          "slug": null
         },
         {
-          "display": "広島国際学院",
-          "score": 11,
+          "display": "広島商業",
+          "score": 5,
           "won": true,
-          "name": "広島国際学院",
-          "slug": null
+          "name": "広島商業高校",
+          "slug": "hiroshimashogyo"
         }
       ]
     },
     {
-      "date": "2026-07-06",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
       "round": "1回戦",
       "venue": null,
       "teams": [
-        {
-          "display": "山陽",
-          "score": 8,
-          "won": true,
-          "name": "山陽",
-          "slug": null
-        },
         {
           "display": "沼田",
-          "score": 2,
-          "won": false,
+          "score": 5,
+          "won": true,
           "name": "沼田高校",
           "slug": "hiroshima-numata"
+        },
+        {
+          "display": "広島工大",
+          "score": 4,
+          "won": false,
+          "name": "広島工大",
+          "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-06",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
       "round": "1回戦",
       "venue": null,
-      "teams": [
-        {
-          "display": "美鈴が丘",
-          "score": 7,
-          "won": true,
-          "name": "美鈴が丘高校",
-          "slug": "misuzugaoka"
-        },
-        {
-          "display": "広島商船",
-          "score": 1,
-          "won": false,
-          "name": "広島商船高専",
-          "slug": "hiroshimashosen"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-06",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "1回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "世羅",
-          "score": 0,
-          "won": false,
-          "name": "世羅高校",
-          "slug": "sera"
-        },
-        {
-          "display": "廿日市",
-          "score": 6,
-          "won": true,
-          "name": "廿日市高校",
-          "slug": "hatsukaichi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-05",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "1回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "呉高専",
-          "score": 3,
-          "won": false,
-          "name": "呉工業高専",
-          "slug": "kurekogyo-kosen"
-        },
-        {
-          "display": "吉田",
-          "score": 8,
-          "won": true,
-          "name": "吉田高校",
-          "slug": "hiroshima-yoshida"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "エブリイ福山市民球場",
-      "teams": [
-        {
-          "display": "近大福山",
-          "score": 3,
-          "won": true,
-          "name": "近大福山",
-          "slug": null
-        },
-        {
-          "display": "瀬戸内",
-          "score": 1,
-          "won": false,
-          "name": "瀬戸内",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "賀茂",
-          "score": 8,
-          "won": true,
-          "name": "賀茂高校",
-          "slug": "hiroshima-kamo"
-        },
-        {
-          "display": "安西",
-          "score": 1,
-          "won": false,
-          "name": "安西高校",
-          "slug": "ansei"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "熊野",
-          "score": 2,
-          "won": false,
-          "name": "熊野高校",
-          "slug": "hiroshima-kumano"
-        },
-        {
-          "display": "神辺旭",
-          "score": 10,
-          "won": true,
-          "name": "神辺旭高校",
-          "slug": "kannabeasahi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "油木",
-          "score": 0,
-          "won": false,
-          "name": "油木高校",
-          "slug": "yuki"
-        },
-        {
-          "display": "市立福山",
-          "score": 17,
-          "won": true,
-          "name": "福山高校",
-          "slug": "fukuyama"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "英数学館",
-          "score": 2,
-          "won": true,
-          "name": "英数学館",
-          "slug": null
-        },
-        {
-          "display": "基町",
-          "score": 1,
-          "won": false,
-          "name": "基町高校",
-          "slug": "motomachi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "広島城北",
-          "score": 10,
-          "won": true,
-          "name": "広島城北",
-          "slug": null
-        },
-        {
-          "display": "庄原実業",
-          "score": 4,
-          "won": false,
-          "name": "庄原実業高校",
-          "slug": "shobarajitsugyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "祇園北",
-          "score": 3,
-          "won": false,
-          "name": "祇園北高校",
-          "slug": "gionkita"
-        },
-        {
-          "display": "高陽東",
-          "score": 4,
-          "won": true,
-          "name": "高陽東高校",
-          "slug": "koyohigashi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "広",
-          "score": 1,
-          "won": false,
-          "name": "広高校",
-          "slug": "hiro"
-        },
-        {
-          "display": "廿日市西",
-          "score": 8,
-          "won": true,
-          "name": "廿日市西高校",
-          "slug": "hatsukaichinishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "広島工業",
-          "score": 1,
-          "won": false,
-          "name": "広島工業高校",
-          "slug": "hiroshimakogyo"
-        },
-        {
-          "display": "盈進",
-          "score": 4,
-          "won": true,
-          "name": "盈進",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "エブリイ福山市民球場",
-      "teams": [
-        {
-          "display": "府中東",
-          "score": 7,
-          "won": true,
-          "name": "府中東高校",
-          "slug": "hiroshima-fuchuhigashi"
-        },
-        {
-          "display": "日彰館",
-          "score": 0,
-          "won": false,
-          "name": "日彰館高校",
-          "slug": "nisshokan"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "尾道東",
-          "score": 0,
-          "won": false,
-          "name": "尾道東高校",
-          "slug": "onomichihigashi"
-        },
-        {
-          "display": "広島国際学院",
-          "score": 15,
-          "won": true,
-          "name": "広島国際学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "山陽",
-          "score": 5,
-          "won": true,
-          "name": "山陽",
-          "slug": null
-        },
-        {
-          "display": "広島修道大学ひろしま協創",
-          "score": 3,
-          "won": false,
-          "name": "広島修道大学ひろしま協創",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "エブリイ福山市民球場",
-      "teams": [
-        {
-          "display": "三原",
-          "score": 2,
-          "won": false,
-          "name": "三原高校",
-          "slug": "hiroshima-mihara"
-        },
-        {
-          "display": "美鈴が丘",
-          "score": 7,
-          "won": true,
-          "name": "美鈴が丘高校",
-          "slug": "misuzugaoka"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "廿日市",
-          "score": 7,
-          "won": true,
-          "name": "廿日市高校",
-          "slug": "hatsukaichi"
-        },
-        {
-          "display": "因島・松永",
-          "score": 0,
-          "won": false,
-          "name": "因島・松永",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "上下",
-          "score": 4,
-          "won": false,
-          "name": "上下高校",
-          "slug": "joge"
-        },
-        {
-          "display": "修道",
-          "score": 9,
-          "won": true,
-          "name": "修道",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "吉田",
-          "score": 1,
-          "won": false,
-          "name": "吉田高校",
-          "slug": "hiroshima-yoshida"
-        },
-        {
-          "display": "市立呉",
-          "score": 11,
-          "won": true,
-          "name": "呉高校",
-          "slug": "kure"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "3回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "近大福山",
-          "score": 2,
-          "won": false,
-          "name": "近大福山",
-          "slug": null
-        },
-        {
-          "display": "賀茂",
-          "score": 4,
-          "won": true,
-          "name": "賀茂高校",
-          "slug": "hiroshima-kamo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "神辺旭",
-          "score": 2,
-          "won": false,
-          "name": "神辺旭高校",
-          "slug": "kannabeasahi"
-        },
-        {
-          "display": "市立福山",
-          "score": 3,
-          "won": true,
-          "name": "福山高校",
-          "slug": "fukuyama"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "3回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "英数学館",
-          "score": 1,
-          "won": false,
-          "name": "英数学館",
-          "slug": null
-        },
-        {
-          "display": "広島城北",
-          "score": 3,
-          "won": true,
-          "name": "広島城北",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "3回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "高陽東",
-          "score": 3,
-          "won": false,
-          "name": "高陽東高校",
-          "slug": "koyohigashi"
-        },
-        {
-          "display": "廿日市西",
-          "score": 4,
-          "won": true,
-          "name": "廿日市西高校",
-          "slug": "hatsukaichinishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "3回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "盈進",
-          "score": 14,
-          "won": true,
-          "name": "盈進",
-          "slug": null
-        },
-        {
-          "display": "府中東",
-          "score": 0,
-          "won": false,
-          "name": "府中東高校",
-          "slug": "hiroshima-fuchuhigashi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "3回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "広島国際学院",
-          "score": 5,
-          "won": true,
-          "name": "広島国際学院",
-          "slug": null
-        },
-        {
-          "display": "山陽",
-          "score": 4,
-          "won": false,
-          "name": "山陽",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "3回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "美鈴が丘",
-          "score": 4,
-          "won": false,
-          "name": "美鈴が丘高校",
-          "slug": "misuzugaoka"
-        },
-        {
-          "display": "廿日市",
-          "score": 8,
-          "won": true,
-          "name": "廿日市高校",
-          "slug": "hatsukaichi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "修道",
-          "score": 5,
-          "won": false,
-          "name": "修道",
-          "slug": null
-        },
-        {
-          "display": "市立呉",
-          "score": 8,
-          "won": true,
-          "name": "呉高校",
-          "slug": "kure"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "4回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "賀茂",
-          "score": 1,
-          "won": false,
-          "name": "賀茂高校",
-          "slug": "hiroshima-kamo"
-        },
-        {
-          "display": "市立福山",
-          "score": 8,
-          "won": true,
-          "name": "福山高校",
-          "slug": "fukuyama"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "4回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "広島城北",
-          "score": 11,
-          "won": true,
-          "name": "広島城北",
-          "slug": null
-        },
-        {
-          "display": "廿日市西",
-          "score": 3,
-          "won": false,
-          "name": "廿日市西高校",
-          "slug": "hatsukaichinishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "4回戦",
-      "venue": "エブリイ福山市民球場",
-      "teams": [
-        {
-          "display": "盈進",
-          "score": 1,
-          "won": false,
-          "name": "盈進",
-          "slug": null
-        },
-        {
-          "display": "広島国際学院",
-          "score": 7,
-          "won": true,
-          "name": "広島国際学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "4回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "廿日市",
-          "score": 3,
-          "won": false,
-          "name": "廿日市高校",
-          "slug": "hatsukaichi"
-        },
-        {
-          "display": "市立呉",
-          "score": 11,
-          "won": true,
-          "name": "呉高校",
-          "slug": "kure"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-22",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "準々決勝",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "市立福山",
-          "score": 11,
-          "won": true,
-          "name": "福山高校",
-          "slug": "fukuyama"
-        },
-        {
-          "display": "広島城北",
-          "score": 1,
-          "won": false,
-          "name": "広島城北",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-22",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "準々決勝",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "広島国際学院",
-          "score": 0,
-          "won": false,
-          "name": "広島国際学院",
-          "slug": null
-        },
-        {
-          "display": "市立呉",
-          "score": 4,
-          "won": true,
-          "name": "呉高校",
-          "slug": "kure"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-26",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "準決勝",
-      "venue": "ＭＡＺＤＡＺｏｏ－Ｚｏｏｍスタジアム広島",
-      "teams": [
-        {
-          "display": "市立福山",
-          "score": 4,
-          "won": true,
-          "name": "福山高校",
-          "slug": "fukuyama"
-        },
-        {
-          "display": "市立呉",
-          "score": 3,
-          "won": false,
-          "name": "呉高校",
-          "slug": "kure"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-05",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "1回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "広島国泰寺",
-          "score": 5,
-          "won": false,
-          "name": "広島国泰寺高校",
-          "slug": "hiroshimakokutaiji"
-        },
-        {
-          "display": "庄原格致",
-          "score": 7,
-          "won": true,
-          "name": "庄原格致高校",
-          "slug": "shobarakakuchi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-07",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "安芸府中",
-          "score": 2,
-          "won": false,
-          "name": "安芸府中高校",
-          "slug": "akifuchu"
-        },
-        {
-          "display": "武田",
-          "score": 3,
-          "won": true,
-          "name": "武田",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-07",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "1回戦",
-      "venue": "エブリイ福山市民球場",
       "teams": [
         {
           "display": "広島中等教育",
@@ -21957,50 +22925,27 @@
           "slug": "hiroshima-chuto"
         },
         {
-          "display": "尾道商業",
-          "score": 6,
-          "won": true,
-          "name": "尾道商業高校",
-          "slug": "onomichishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-07",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "1回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "呉工業",
-          "score": 1,
-          "won": false,
-          "name": "呉工業高校",
-          "slug": "kurekogyo"
-        },
-        {
-          "display": "如水館",
+          "display": "英数学館",
           "score": 9,
           "won": true,
-          "name": "如水館",
+          "name": "英数学館",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-07",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
       "round": "1回戦",
-      "venue": "やまみ三原市民球場",
+      "venue": "ぶんちゃんしまなみ球場",
       "teams": [
         {
-          "display": "安芸南",
-          "score": 0,
+          "display": "市立福山",
+          "score": 3,
           "won": false,
-          "name": "安芸南高校",
-          "slug": "akiminami"
+          "name": "福山高校",
+          "slug": "fukuyama"
         },
         {
           "display": "尾道",
@@ -22012,92 +22957,413 @@
       ]
     },
     {
-      "date": "2026-07-07",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
       "round": "1回戦",
-      "venue": null,
+      "venue": "電光石火きんさいスタジアム三次",
       "teams": [
         {
-          "display": "加計芸北",
-          "score": 4,
-          "won": false,
-          "name": "加計高校芸北分校",
-          "slug": "kakegeihoku"
+          "display": "広島新庄",
+          "score": 5,
+          "won": true,
+          "name": "広島新庄",
+          "slug": null
         },
         {
-          "display": "広島観音",
-          "score": 9,
-          "won": true,
-          "name": "広島観音高校",
-          "slug": "hiroshimakanon"
+          "display": "広島国際学院",
+          "score": 1,
+          "won": false,
+          "name": "広島国際学院",
+          "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-07",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "海田",
+          "score": 1,
+          "won": false,
+          "name": "海田高校",
+          "slug": "kaita"
+        },
+        {
+          "display": "西条農業",
+          "score": 2,
+          "won": true,
+          "name": "西条農業高校",
+          "slug": "saijonogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "近大福山",
+          "score": 0,
+          "won": false,
+          "name": "近大福山",
+          "slug": null
+        },
+        {
+          "display": "崇徳",
+          "score": 4,
+          "won": true,
+          "name": "崇徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
       "round": "1回戦",
       "venue": "鶴岡一人記念球場",
       "teams": [
         {
-          "display": "黒瀬・大柿のみのお分校・忠海",
+          "display": "広島国泰寺",
+          "score": 2,
+          "won": false,
+          "name": "広島国泰寺高校",
+          "slug": "hiroshimakokutaiji"
+        },
+        {
+          "display": "武田",
+          "score": 3,
+          "won": true,
+          "name": "武田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "広島商業",
+          "score": 6,
+          "won": true,
+          "name": "広島商業高校",
+          "slug": "hiroshimashogyo"
+        },
+        {
+          "display": "沼田",
+          "score": 0,
+          "won": false,
+          "name": "沼田高校",
+          "slug": "hiroshima-numata"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "英数学館",
+          "score": 0,
+          "won": false,
+          "name": "英数学館",
+          "slug": null
+        },
+        {
+          "display": "尾道",
+          "score": 3,
+          "won": true,
+          "name": "尾道",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "広島新庄",
+          "score": 5,
+          "won": true,
+          "name": "広島新庄",
+          "slug": null
+        },
+        {
+          "display": "西条農業",
           "score": 1,
           "won": false,
-          "name": "黒瀬・大柿のみのお分校・忠海",
-          "slug": null,
-          "combined": true
+          "name": "西条農業高校",
+          "slug": "saijonogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "崇徳",
+          "score": 6,
+          "won": true,
+          "name": "崇徳",
+          "slug": null
+        },
+        {
+          "display": "武田",
+          "score": 2,
+          "won": false,
+          "name": "武田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "広島商業",
+          "score": 6,
+          "won": true,
+          "name": "広島商業高校",
+          "slug": "hiroshimashogyo"
+        },
+        {
+          "display": "尾道",
+          "score": 3,
+          "won": false,
+          "name": "尾道",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
+      "round": "準々決勝",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "広島新庄",
+          "score": 5,
+          "won": false,
+          "name": "広島新庄",
+          "slug": null
+        },
+        {
+          "display": "崇徳",
+          "score": 8,
+          "won": true,
+          "name": "崇徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
+      "round": "準決勝",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "広島商業",
+          "score": 4,
+          "won": false,
+          "name": "広島商業高校",
+          "slug": "hiroshimashogyo"
+        },
+        {
+          "display": "崇徳",
+          "score": 5,
+          "won": true,
+          "name": "崇徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市立呉",
+          "score": 8,
+          "won": true,
+          "name": "呉高校",
+          "slug": "kure"
         },
         {
           "display": "舟入",
-          "score": 11,
-          "won": true,
+          "score": 4,
+          "won": false,
           "name": "舟入高校",
           "slug": "funairi"
         }
       ]
     },
     {
-      "date": "2026-07-07",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
       "round": "1回戦",
-      "venue": "エブリイ福山市民球場",
+      "venue": "ぶんちゃんしまなみ球場",
       "teams": [
         {
-          "display": "府中",
-          "score": 3,
+          "display": "瀬戸内",
+          "score": 5,
           "won": true,
-          "name": "府中高校",
-          "slug": "hiroshima-fuchu"
+          "name": "瀬戸内",
+          "slug": null
         },
         {
-          "display": "並木学院",
+          "display": "盈進",
           "score": 2,
           "won": false,
-          "name": "並木学院",
+          "name": "盈進",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-07",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
       "round": "1回戦",
-      "venue": "やまみ三原市民球場",
+      "venue": "ぶんちゃんしまなみ球場",
       "teams": [
         {
-          "display": "大竹",
+          "display": "広島市工",
+          "score": 4,
+          "won": false,
+          "name": "広島工業高校",
+          "slug": "hiroshima-hiroshimakogyo"
+        },
+        {
+          "display": "尾道商業",
+          "score": 7,
+          "won": true,
+          "name": "尾道商業高校",
+          "slug": "onomichishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "広陵",
+          "score": 14,
+          "won": true,
+          "name": "広陵",
+          "slug": null
+        },
+        {
+          "display": "高陽東",
+          "score": 0,
+          "won": false,
+          "name": "高陽東高校",
+          "slug": "koyohigashi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "如水館",
+          "score": 1,
+          "won": false,
+          "name": "如水館",
+          "slug": null
+        },
+        {
+          "display": "三次",
+          "score": 2,
+          "won": true,
+          "name": "三次高校",
+          "slug": "hiroshima-miyoshi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "神辺旭",
+          "score": 0,
+          "won": false,
+          "name": "神辺旭高校",
+          "slug": "kannabeasahi"
+        },
+        {
+          "display": "山陽",
+          "score": 13,
+          "won": true,
+          "name": "山陽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "安芸府中",
           "score": 8,
           "won": true,
-          "name": "大竹高校",
-          "slug": "otake"
+          "name": "安芸府中高校",
+          "slug": "akifuchu"
         },
         {
           "display": "総合技術",
-          "score": 4,
+          "score": 7,
           "won": false,
           "name": "総合技術高校",
           "slug": "sogogijutsu"
@@ -22105,762 +23371,209 @@
       ]
     },
     {
-      "date": "2026-07-05",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
       "round": "1回戦",
-      "venue": "電光石火きんさいスタジアム三次",
+      "venue": null,
       "teams": [
         {
-          "display": "可部",
-          "score": 7,
-          "won": false,
-          "name": "可部高校",
-          "slug": "kabe"
-        },
-        {
-          "display": "広島桜が丘",
-          "score": 9,
-          "won": true,
-          "name": "広島桜が丘",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "呉港",
-          "score": 4,
-          "won": true,
-          "name": "呉港",
-          "slug": null
-        },
-        {
-          "display": "庄原格致",
-          "score": 1,
-          "won": false,
-          "name": "庄原格致高校",
-          "slug": "shobarakakuchi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "海田",
-          "score": 7,
-          "won": true,
-          "name": "海田高校",
-          "slug": "kaita"
-        },
-        {
-          "display": "河内",
-          "score": 1,
-          "won": false,
-          "name": "河内高校",
-          "slug": "kochi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "エブリイ福山市民球場",
-      "teams": [
-        {
-          "display": "呉宮原",
-          "score": 2,
-          "won": false,
-          "name": "呉宮原高校",
-          "slug": "kuremiyahara"
-        },
-        {
-          "display": "武田",
-          "score": 9,
-          "won": true,
-          "name": "武田",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "三次",
-          "score": 12,
-          "won": true,
-          "name": "三次高校",
-          "slug": "hiroshima-miyoshi"
-        },
-        {
-          "display": "五日市",
+          "display": "廿日市西",
           "score": 5,
           "won": false,
-          "name": "五日市高校",
-          "slug": "hiroshima-itsukaichi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "福山明王台",
-          "score": 0,
-          "won": false,
-          "name": "福山明王台高校",
-          "slug": "fukuyamamyodai"
+          "name": "廿日市西高校",
+          "slug": "hatsukaichinishi"
         },
         {
-          "display": "尾道商業",
-          "score": 8,
+          "display": "祇園北",
+          "score": 7,
           "won": true,
-          "name": "尾道商業高校",
-          "slug": "onomichishogyo"
+          "name": "祇園北高校",
+          "slug": "gionkita"
         }
       ]
     },
     {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "如水館",
-          "score": 0,
-          "won": false,
-          "name": "如水館",
-          "slug": null
-        },
-        {
-          "display": "広島新庄",
-          "score": 9,
-          "won": true,
-          "name": "広島新庄",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "広島商業",
-          "score": 23,
-          "won": true,
-          "name": "広島商業高校",
-          "slug": "hiroshimashogyo"
-        },
-        {
-          "display": "千代田・向原",
-          "score": 0,
-          "won": false,
-          "name": "千代田・向原",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "エブリイ福山市民球場",
-      "teams": [
-        {
-          "display": "尾道",
-          "score": 4,
-          "won": true,
-          "name": "尾道",
-          "slug": null
-        },
-        {
-          "display": "福山工業",
-          "score": 0,
-          "won": false,
-          "name": "福山工業高校",
-          "slug": "fukuyamakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "広陵",
-          "score": 20,
-          "won": true,
-          "name": "広陵",
-          "slug": null
-        },
-        {
-          "display": "広島観音",
-          "score": 0,
-          "won": false,
-          "name": "広島観音高校",
-          "slug": "hiroshimakanon"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "広島工業大学",
-          "score": 16,
-          "won": true,
-          "name": "広島工業大学",
-          "slug": null
-        },
-        {
-          "display": "宮島工業",
-          "score": 4,
-          "won": false,
-          "name": "宮島工業高校",
-          "slug": "miyajimakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "広島市工",
-          "score": 8,
-          "won": true,
-          "name": "広島工業高校",
-          "slug": "hiroshima-hiroshimakogyo"
-        },
-        {
-          "display": "舟入",
-          "score": 4,
-          "won": false,
-          "name": "舟入高校",
-          "slug": "funairi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "府中",
-          "score": 1,
-          "won": false,
-          "name": "府中高校",
-          "slug": "hiroshima-fuchu"
-        },
-        {
-          "display": "福山葦陽",
-          "score": 3,
-          "won": true,
-          "name": "福山葦陽高校",
-          "slug": "fukuyamaiyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "エブリイ福山市民球場",
-      "teams": [
-        {
-          "display": "福山誠之館",
-          "score": 14,
-          "won": true,
-          "name": "福山誠之館高校",
-          "slug": "fukuyamaseishikan"
-        },
-        {
-          "display": "加計",
-          "score": 0,
-          "won": false,
-          "name": "加計高校",
-          "slug": "kake"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "2回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "大竹",
-          "score": 11,
-          "won": true,
-          "name": "大竹高校",
-          "slug": "otake"
-        },
-        {
-          "display": "広島井口",
-          "score": 8,
-          "won": false,
-          "name": "広島井口高校",
-          "slug": "hiroshimainokuchi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
       "round": "2回戦",
       "venue": "鶴岡一人記念球場",
       "teams": [
         {
-          "display": "西条農業",
-          "score": 6,
+          "display": "市立呉",
+          "score": 3,
           "won": true,
-          "name": "西条農業高校",
-          "slug": "saijonogyo"
+          "name": "呉高校",
+          "slug": "kure"
         },
         {
-          "display": "大門",
-          "score": 1,
+          "display": "瀬戸内",
+          "score": 2,
           "won": false,
-          "name": "大門高校",
-          "slug": "hiroshima-daimon"
+          "name": "瀬戸内",
+          "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
       "round": "2回戦",
-      "venue": null,
+      "venue": "鶴岡一人記念球場",
       "teams": [
         {
-          "display": "広島桜が丘",
+          "display": "尾道商業",
           "score": 0,
           "won": false,
-          "name": "広島桜が丘",
-          "slug": null
+          "name": "尾道商業高校",
+          "slug": "onomichishogyo"
         },
         {
-          "display": "崇徳",
+          "display": "広陵",
           "score": 10,
           "won": true,
-          "name": "崇徳",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "3回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "呉港",
-          "score": 5,
-          "won": true,
-          "name": "呉港",
-          "slug": null
-        },
-        {
-          "display": "海田",
-          "score": 4,
-          "won": false,
-          "name": "海田高校",
-          "slug": "kaita"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "武田",
-          "score": 3,
-          "won": false,
-          "name": "武田",
-          "slug": null
-        },
-        {
-          "display": "三次",
-          "score": 5,
-          "won": true,
-          "name": "三次高校",
-          "slug": "hiroshima-miyoshi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "尾道商業",
-          "score": 4,
-          "won": true,
-          "name": "尾道商業高校",
-          "slug": "onomichishogyo"
-        },
-        {
-          "display": "広島新庄",
-          "score": 2,
-          "won": false,
-          "name": "広島新庄",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "3回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "広島商業",
-          "score": 12,
-          "won": true,
-          "name": "広島商業高校",
-          "slug": "hiroshimashogyo"
-        },
-        {
-          "display": "尾道",
-          "score": 2,
-          "won": false,
-          "name": "尾道",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "3回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "広陵",
-          "score": 11,
-          "won": true,
           "name": "広陵",
           "slug": null
-        },
-        {
-          "display": "広島工業大学",
-          "score": 1,
-          "won": false,
-          "name": "広島工業大学",
-          "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "3回戦",
-      "venue": "鶴岡一人記念球場",
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": null,
       "teams": [
-        {
-          "display": "広島市工",
-          "score": 4,
-          "won": true,
-          "name": "広島工業高校",
-          "slug": "hiroshima-hiroshimakogyo"
-        },
-        {
-          "display": "福山葦陽",
-          "score": 1,
-          "won": false,
-          "name": "福山葦陽高校",
-          "slug": "fukuyamaiyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "3回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "福山誠之館",
-          "score": 6,
-          "won": true,
-          "name": "福山誠之館高校",
-          "slug": "fukuyamaseishikan"
-        },
-        {
-          "display": "大竹",
-          "score": 2,
-          "won": false,
-          "name": "大竹高校",
-          "slug": "otake"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "3回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "西条農業",
-          "score": 0,
-          "won": false,
-          "name": "西条農業高校",
-          "slug": "saijonogyo"
-        },
-        {
-          "display": "崇徳",
-          "score": 5,
-          "won": true,
-          "name": "崇徳",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "4回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "呉港",
-          "score": 2,
-          "won": true,
-          "name": "呉港",
-          "slug": null
-        },
         {
           "display": "三次",
-          "score": 0,
+          "score": 2,
           "won": false,
           "name": "三次高校",
           "slug": "hiroshima-miyoshi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "4回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "尾道商業",
-          "score": 1,
-          "won": false,
-          "name": "尾道商業高校",
-          "slug": "onomichishogyo"
         },
         {
-          "display": "広島商業",
-          "score": 6,
+          "display": "山陽",
+          "score": 4,
           "won": true,
-          "name": "広島商業高校",
-          "slug": "hiroshimashogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "4回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "広陵",
-          "score": 9,
-          "won": true,
-          "name": "広陵",
-          "slug": null
-        },
-        {
-          "display": "広島市工",
-          "score": 0,
-          "won": false,
-          "name": "広島工業高校",
-          "slug": "hiroshima-hiroshimakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "4回戦",
-      "venue": "エブリイ福山市民球場",
-      "teams": [
-        {
-          "display": "福山誠之館",
-          "score": 1,
-          "won": false,
-          "name": "福山誠之館高校",
-          "slug": "fukuyamaseishikan"
-        },
-        {
-          "display": "崇徳",
-          "score": 3,
-          "won": true,
-          "name": "崇徳",
+          "name": "山陽",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-22",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
-      "round": "準々決勝",
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
+      "round": "2回戦",
       "venue": "ぶんちゃんしまなみ球場",
       "teams": [
         {
-          "display": "呉港",
-          "score": 3,
-          "won": false,
-          "name": "呉港",
-          "slug": null
+          "display": "安芸府中",
+          "score": 1,
+          "won": true,
+          "name": "安芸府中高校",
+          "slug": "akifuchu"
         },
         {
-          "display": "広島商業",
-          "score": 5,
-          "won": true,
-          "name": "広島商業高校",
-          "slug": "hiroshimashogyo"
+          "display": "祇園北",
+          "score": 0,
+          "won": false,
+          "name": "祇園北高校",
+          "slug": "gionkita"
         }
       ]
     },
     {
-      "date": "2026-07-22",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
       "round": "準々決勝",
-      "venue": "電光石火きんさいスタジアム三次",
+      "venue": null,
       "teams": [
         {
+          "display": "市立呉",
+          "score": 4,
+          "won": false,
+          "name": "呉高校",
+          "slug": "kure"
+        },
+        {
           "display": "広陵",
-          "score": 5,
+          "score": 13,
           "won": true,
           "name": "広陵",
           "slug": null
-        },
-        {
-          "display": "崇徳",
-          "score": 3,
-          "won": false,
-          "name": "崇徳",
-          "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-26",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
+      "round": "準々決勝",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "山陽",
+          "score": 4,
+          "won": true,
+          "name": "山陽",
+          "slug": null
+        },
+        {
+          "display": "安芸府中",
+          "score": 2,
+          "won": false,
+          "name": "安芸府中高校",
+          "slug": "akifuchu"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
       "round": "準決勝",
-      "venue": "ＭＡＺＤＡＺｏｏ－Ｚｏｏｍスタジアム広島",
+      "venue": "鶴岡一人記念球場",
       "teams": [
         {
-          "display": "広島商業",
-          "score": 9,
+          "display": "広陵",
+          "score": 3,
           "won": true,
-          "name": "広島商業高校",
-          "slug": "hiroshimashogyo"
+          "name": "広陵",
+          "slug": null
         },
         {
-          "display": "広陵",
-          "score": 4,
+          "display": "山陽",
+          "score": 0,
           "won": false,
-          "name": "広陵",
+          "name": "山陽",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-28",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 広島大会",
+      "date": "2025-10-11",
+      "season": "autumn",
+      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
       "round": "決勝",
-      "venue": "ＭＡＺＤＡＺｏｏ－Ｚｏｏｍスタジアム広島",
+      "venue": "鶴岡一人記念球場",
       "teams": [
         {
-          "display": "広島商業",
-          "score": 3,
-          "won": false,
-          "name": "広島商業高校",
-          "slug": "hiroshimashogyo"
+          "display": "広陵",
+          "score": 5,
+          "won": true,
+          "name": "広陵",
+          "slug": null
         },
         {
-          "display": "市立福山",
+          "display": "崇徳",
           "score": 4,
-          "won": true,
-          "name": "福山高校",
-          "slug": "fukuyama"
+          "won": false,
+          "name": "崇徳",
+          "slug": null
         }
       ]
     },
@@ -28407,719 +29120,6 @@
           "score": 3,
           "won": false,
           "name": "如水館",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-21",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "呉港",
-          "score": 1,
-          "won": false,
-          "name": "呉港",
-          "slug": null
-        },
-        {
-          "display": "広島商業",
-          "score": 5,
-          "won": true,
-          "name": "広島商業高校",
-          "slug": "hiroshimashogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-21",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "沼田",
-          "score": 5,
-          "won": true,
-          "name": "沼田高校",
-          "slug": "hiroshima-numata"
-        },
-        {
-          "display": "広島工大",
-          "score": 4,
-          "won": false,
-          "name": "広島工大",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-21",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "広島中等教育",
-          "score": 1,
-          "won": false,
-          "name": "広島中等教育学校",
-          "slug": "hiroshima-chuto"
-        },
-        {
-          "display": "英数学館",
-          "score": 9,
-          "won": true,
-          "name": "英数学館",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-21",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "市立福山",
-          "score": 3,
-          "won": false,
-          "name": "福山高校",
-          "slug": "fukuyama"
-        },
-        {
-          "display": "尾道",
-          "score": 4,
-          "won": true,
-          "name": "尾道",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-21",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "広島新庄",
-          "score": 5,
-          "won": true,
-          "name": "広島新庄",
-          "slug": null
-        },
-        {
-          "display": "広島国際学院",
-          "score": 1,
-          "won": false,
-          "name": "広島国際学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-21",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "海田",
-          "score": 1,
-          "won": false,
-          "name": "海田高校",
-          "slug": "kaita"
-        },
-        {
-          "display": "西条農業",
-          "score": 2,
-          "won": true,
-          "name": "西条農業高校",
-          "slug": "saijonogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-21",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "近大福山",
-          "score": 0,
-          "won": false,
-          "name": "近大福山",
-          "slug": null
-        },
-        {
-          "display": "崇徳",
-          "score": 4,
-          "won": true,
-          "name": "崇徳",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-21",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "広島国泰寺",
-          "score": 2,
-          "won": false,
-          "name": "広島国泰寺高校",
-          "slug": "hiroshimakokutaiji"
-        },
-        {
-          "display": "武田",
-          "score": 3,
-          "won": true,
-          "name": "武田",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "2回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "広島商業",
-          "score": 6,
-          "won": true,
-          "name": "広島商業高校",
-          "slug": "hiroshimashogyo"
-        },
-        {
-          "display": "沼田",
-          "score": 0,
-          "won": false,
-          "name": "沼田高校",
-          "slug": "hiroshima-numata"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "2回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "英数学館",
-          "score": 0,
-          "won": false,
-          "name": "英数学館",
-          "slug": null
-        },
-        {
-          "display": "尾道",
-          "score": 3,
-          "won": true,
-          "name": "尾道",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "2回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "広島新庄",
-          "score": 5,
-          "won": true,
-          "name": "広島新庄",
-          "slug": null
-        },
-        {
-          "display": "西条農業",
-          "score": 1,
-          "won": false,
-          "name": "西条農業高校",
-          "slug": "saijonogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "崇徳",
-          "score": 6,
-          "won": true,
-          "name": "崇徳",
-          "slug": null
-        },
-        {
-          "display": "武田",
-          "score": 2,
-          "won": false,
-          "name": "武田",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-28",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "広島商業",
-          "score": 6,
-          "won": true,
-          "name": "広島商業高校",
-          "slug": "hiroshimashogyo"
-        },
-        {
-          "display": "尾道",
-          "score": 3,
-          "won": false,
-          "name": "尾道",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-28",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "準々決勝",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "広島新庄",
-          "score": 5,
-          "won": false,
-          "name": "広島新庄",
-          "slug": null
-        },
-        {
-          "display": "崇徳",
-          "score": 8,
-          "won": true,
-          "name": "崇徳",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-05",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "準決勝",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "広島商業",
-          "score": 4,
-          "won": false,
-          "name": "広島商業高校",
-          "slug": "hiroshimashogyo"
-        },
-        {
-          "display": "崇徳",
-          "score": 5,
-          "won": true,
-          "name": "崇徳",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "市立呉",
-          "score": 8,
-          "won": true,
-          "name": "呉高校",
-          "slug": "kure"
-        },
-        {
-          "display": "舟入",
-          "score": 4,
-          "won": false,
-          "name": "舟入高校",
-          "slug": "funairi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "瀬戸内",
-          "score": 5,
-          "won": true,
-          "name": "瀬戸内",
-          "slug": null
-        },
-        {
-          "display": "盈進",
-          "score": 2,
-          "won": false,
-          "name": "盈進",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "広島市工",
-          "score": 4,
-          "won": false,
-          "name": "広島工業高校",
-          "slug": "hiroshima-hiroshimakogyo"
-        },
-        {
-          "display": "尾道商業",
-          "score": 7,
-          "won": true,
-          "name": "尾道商業高校",
-          "slug": "onomichishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "広陵",
-          "score": 14,
-          "won": true,
-          "name": "広陵",
-          "slug": null
-        },
-        {
-          "display": "高陽東",
-          "score": 0,
-          "won": false,
-          "name": "高陽東高校",
-          "slug": "koyohigashi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "電光石火きんさいスタジアム三次",
-      "teams": [
-        {
-          "display": "如水館",
-          "score": 1,
-          "won": false,
-          "name": "如水館",
-          "slug": null
-        },
-        {
-          "display": "三次",
-          "score": 2,
-          "won": true,
-          "name": "三次高校",
-          "slug": "hiroshima-miyoshi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "神辺旭",
-          "score": 0,
-          "won": false,
-          "name": "神辺旭高校",
-          "slug": "kannabeasahi"
-        },
-        {
-          "display": "山陽",
-          "score": 13,
-          "won": true,
-          "name": "山陽",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "安芸府中",
-          "score": 8,
-          "won": true,
-          "name": "安芸府中高校",
-          "slug": "akifuchu"
-        },
-        {
-          "display": "総合技術",
-          "score": 7,
-          "won": false,
-          "name": "総合技術高校",
-          "slug": "sogogijutsu"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "廿日市西",
-          "score": 5,
-          "won": false,
-          "name": "廿日市西高校",
-          "slug": "hatsukaichinishi"
-        },
-        {
-          "display": "祇園北",
-          "score": 7,
-          "won": true,
-          "name": "祇園北高校",
-          "slug": "gionkita"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "2回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "市立呉",
-          "score": 3,
-          "won": true,
-          "name": "呉高校",
-          "slug": "kure"
-        },
-        {
-          "display": "瀬戸内",
-          "score": 2,
-          "won": false,
-          "name": "瀬戸内",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "2回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "尾道商業",
-          "score": 0,
-          "won": false,
-          "name": "尾道商業高校",
-          "slug": "onomichishogyo"
-        },
-        {
-          "display": "広陵",
-          "score": 10,
-          "won": true,
-          "name": "広陵",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "三次",
-          "score": 2,
-          "won": false,
-          "name": "三次高校",
-          "slug": "hiroshima-miyoshi"
-        },
-        {
-          "display": "山陽",
-          "score": 4,
-          "won": true,
-          "name": "山陽",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "2回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "安芸府中",
-          "score": 1,
-          "won": true,
-          "name": "安芸府中高校",
-          "slug": "akifuchu"
-        },
-        {
-          "display": "祇園北",
-          "score": 0,
-          "won": false,
-          "name": "祇園北高校",
-          "slug": "gionkita"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-28",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "市立呉",
-          "score": 4,
-          "won": false,
-          "name": "呉高校",
-          "slug": "kure"
-        },
-        {
-          "display": "広陵",
-          "score": 13,
-          "won": true,
-          "name": "広陵",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-28",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "準々決勝",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "山陽",
-          "score": 4,
-          "won": true,
-          "name": "山陽",
-          "slug": null
-        },
-        {
-          "display": "安芸府中",
-          "score": 2,
-          "won": false,
-          "name": "安芸府中高校",
-          "slug": "akifuchu"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-05",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "準決勝",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "広陵",
-          "score": 3,
-          "won": true,
-          "name": "広陵",
-          "slug": null
-        },
-        {
-          "display": "山陽",
-          "score": 0,
-          "won": false,
-          "name": "山陽",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-11",
-      "season": "autumn",
-      "tournament": "2025年 秋季中国地区高校野球 広島県大会",
-      "round": "決勝",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "広陵",
-          "score": 5,
-          "won": true,
-          "name": "広陵",
-          "slug": null
-        },
-        {
-          "display": "崇徳",
-          "score": 4,
-          "won": false,
-          "name": "崇徳",
           "slug": null
         }
       ]

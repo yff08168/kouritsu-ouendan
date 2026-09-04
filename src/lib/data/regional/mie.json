@@ -5,6 +5,583 @@
   "sourceUrl": "https://mie.hsbflash.jp/",
   "games": [
     {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "1回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "木本・紀南・熊野青藍",
+          "score": 10,
+          "won": true,
+          "name": "木本・紀南・熊野青藍",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "四日市工",
+          "score": 3,
+          "won": false,
+          "name": "四日市工業高校",
+          "slug": "yokkaichikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "1回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "桑名西",
+          "score": 10,
+          "won": true,
+          "name": "桑名西高校",
+          "slug": "kuwananishi"
+        },
+        {
+          "display": "久居",
+          "score": 3,
+          "won": false,
+          "name": "久居高校",
+          "slug": "hisai"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "1回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "松阪商",
+          "score": 3,
+          "won": false,
+          "name": "松阪商業高校",
+          "slug": "matsusakashogyo"
+        },
+        {
+          "display": "伊勢",
+          "score": 5,
+          "won": true,
+          "name": "伊勢高校",
+          "slug": "ise"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "1回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "津西",
+          "score": 18,
+          "won": true,
+          "name": "津西高校",
+          "slug": "tsunishi"
+        },
+        {
+          "display": "津",
+          "score": 0,
+          "won": false,
+          "name": "津高校",
+          "slug": "tsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "1回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "伊勢工",
+          "score": 0,
+          "won": false,
+          "name": "伊勢工業高校",
+          "slug": "isekogyo"
+        },
+        {
+          "display": "高田",
+          "score": 7,
+          "won": true,
+          "name": "高田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "津商",
+          "score": 7,
+          "won": true,
+          "name": "津商業高校",
+          "slug": "tsushogyo"
+        },
+        {
+          "display": "木本・紀南・熊野青藍",
+          "score": 3,
+          "won": false,
+          "name": "木本・紀南・熊野青藍",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "桑名西",
+          "score": 3,
+          "won": false,
+          "name": "桑名西高校",
+          "slug": "kuwananishi"
+        },
+        {
+          "display": "伊勢",
+          "score": 6,
+          "won": true,
+          "name": "伊勢高校",
+          "slug": "ise"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "三重",
+          "score": 4,
+          "won": true,
+          "name": "三重",
+          "slug": null
+        },
+        {
+          "display": "津西",
+          "score": 2,
+          "won": false,
+          "name": "津西高校",
+          "slug": "tsunishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "高田",
+          "score": 2,
+          "won": false,
+          "name": "高田",
+          "slug": null
+        },
+        {
+          "display": "いなべ総合",
+          "score": 8,
+          "won": true,
+          "name": "いなべ総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "準々決勝",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "津商",
+          "score": 18,
+          "won": true,
+          "name": "津商業高校",
+          "slug": "tsushogyo"
+        },
+        {
+          "display": "伊勢",
+          "score": 0,
+          "won": false,
+          "name": "伊勢高校",
+          "slug": "ise"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "準々決勝",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "三重",
+          "score": 5,
+          "won": true,
+          "name": "三重",
+          "slug": null
+        },
+        {
+          "display": "いなべ総合",
+          "score": 3,
+          "won": false,
+          "name": "いなべ総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "準決勝",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "津商",
+          "score": 5,
+          "won": true,
+          "name": "津商業高校",
+          "slug": "tsushogyo"
+        },
+        {
+          "display": "三重",
+          "score": 0,
+          "won": false,
+          "name": "三重",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "1回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "鈴鹿",
+          "score": 10,
+          "won": true,
+          "name": "鈴鹿",
+          "slug": null
+        },
+        {
+          "display": "津田学園",
+          "score": 2,
+          "won": false,
+          "name": "津田学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "1回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "宇治山田商",
+          "score": 7,
+          "won": true,
+          "name": "宇治山田商業高校",
+          "slug": "ujiyamadashogyo"
+        },
+        {
+          "display": "久居農林",
+          "score": 2,
+          "won": false,
+          "name": "久居農林高校",
+          "slug": "hisainorin"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "1回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "津東",
+          "score": 2,
+          "won": false,
+          "name": "津東高校",
+          "slug": "tsuhigashi"
+        },
+        {
+          "display": "四日市南",
+          "score": 3,
+          "won": true,
+          "name": "四日市南高校",
+          "slug": "yokkaichiminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "1回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "明野",
+          "score": 14,
+          "won": true,
+          "name": "明野高校",
+          "slug": "mie-akeno"
+        },
+        {
+          "display": "菰野",
+          "score": 5,
+          "won": false,
+          "name": "菰野高校",
+          "slug": "komono"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "1回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "四日市中央工",
+          "score": 7,
+          "won": false,
+          "name": "四日市中央工業高校",
+          "slug": "yokkaichichuokogyo"
+        },
+        {
+          "display": "上野",
+          "score": 10,
+          "won": true,
+          "name": "上野高校",
+          "slug": "mie-ueno"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "昴学園",
+          "score": 2,
+          "won": true,
+          "name": "昴学園高校",
+          "slug": "subarugakuen"
+        },
+        {
+          "display": "鈴鹿",
+          "score": 1,
+          "won": false,
+          "name": "鈴鹿",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "宇治山田商",
+          "score": 5,
+          "won": false,
+          "name": "宇治山田商業高校",
+          "slug": "ujiyamadashogyo"
+        },
+        {
+          "display": "近大高専",
+          "score": 7,
+          "won": true,
+          "name": "近大高専",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "海星",
+          "score": 2,
+          "won": false,
+          "name": "海星",
+          "slug": null
+        },
+        {
+          "display": "四日市南",
+          "score": 3,
+          "won": true,
+          "name": "四日市南高校",
+          "slug": "yokkaichiminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "明野",
+          "score": 8,
+          "won": true,
+          "name": "明野高校",
+          "slug": "mie-akeno"
+        },
+        {
+          "display": "上野",
+          "score": 7,
+          "won": false,
+          "name": "上野高校",
+          "slug": "mie-ueno"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "準々決勝",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "昴学園",
+          "score": 10,
+          "won": true,
+          "name": "昴学園高校",
+          "slug": "subarugakuen"
+        },
+        {
+          "display": "近大高専",
+          "score": 0,
+          "won": false,
+          "name": "近大高専",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "準々決勝",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "四日市南",
+          "score": 1,
+          "won": false,
+          "name": "四日市南高校",
+          "slug": "yokkaichiminami"
+        },
+        {
+          "display": "明野",
+          "score": 9,
+          "won": true,
+          "name": "明野高校",
+          "slug": "mie-akeno"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "準決勝",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "昴学園",
+          "score": 4,
+          "won": true,
+          "name": "昴学園高校",
+          "slug": "subarugakuen"
+        },
+        {
+          "display": "明野",
+          "score": 1,
+          "won": false,
+          "name": "明野高校",
+          "slug": "mie-akeno"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "round": "決勝",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "昴学園",
+          "score": 4,
+          "won": true,
+          "name": "昴学園高校",
+          "slug": "subarugakuen"
+        },
+        {
+          "display": "津商",
+          "score": 3,
+          "won": false,
+          "name": "津商業高校",
+          "slug": "tsushogyo"
+        }
+      ]
+    },
+    {
       "date": "2019-04-13",
       "season": "spring",
       "tournament": "2019年 春季東海地区高校野球 三重県大会",
@@ -3365,342 +3942,366 @@
       ]
     },
     {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
       "round": "1回戦",
       "venue": "ドリームオーシャンスタジアム",
       "teams": [
         {
-          "display": "木本・紀南・熊野青藍",
-          "score": 10,
-          "won": true,
-          "name": "木本・紀南・熊野青藍",
-          "slug": null,
-          "combined": true
+          "display": "稲生",
+          "score": 1,
+          "won": false,
+          "name": "稲生高校",
+          "slug": "ino"
         },
         {
-          "display": "四日市工",
-          "score": 3,
-          "won": false,
-          "name": "四日市工業高校",
-          "slug": "yokkaichikogyo"
+          "display": "飯南",
+          "score": 6,
+          "won": true,
+          "name": "飯南高校",
+          "slug": "iinan"
         }
       ]
     },
     {
-      "date": "2026-04-11",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "四日市霞ヶ浦第１野球場",
+      "teams": [
+        {
+          "display": "松阪工",
+          "score": 11,
+          "won": true,
+          "name": "松阪工業高校",
+          "slug": "matsusakakogyo"
+        },
+        {
+          "display": "朝明・四日市四郷",
+          "score": 1,
+          "won": false,
+          "name": "朝明・四日市四郷",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
       "round": "1回戦",
       "venue": "津球場公園内野球場",
       "teams": [
         {
-          "display": "桑名西",
-          "score": 10,
-          "won": true,
-          "name": "桑名西高校",
-          "slug": "kuwananishi"
-        },
-        {
-          "display": "久居",
-          "score": 3,
-          "won": false,
-          "name": "久居高校",
-          "slug": "hisai"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-11",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
-      "round": "1回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
           "display": "松阪商",
-          "score": 3,
+          "score": 2,
           "won": false,
           "name": "松阪商業高校",
           "slug": "matsusakashogyo"
         },
         {
-          "display": "伊勢",
-          "score": 5,
+          "display": "津工",
+          "score": 7,
           "won": true,
-          "name": "伊勢高校",
-          "slug": "ise"
+          "name": "津工業高校",
+          "slug": "tsukogyo"
         }
       ]
     },
     {
-      "date": "2026-04-11",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
       "round": "1回戦",
-      "venue": "津球場公園内野球場",
+      "venue": "ドリームオーシャンスタジアム",
       "teams": [
         {
-          "display": "津西",
-          "score": 18,
+          "display": "川越",
+          "score": 8,
           "won": true,
-          "name": "津西高校",
-          "slug": "tsunishi"
+          "name": "川越高校",
+          "slug": "mie-kawagoe"
         },
         {
-          "display": "津",
-          "score": 0,
+          "display": "尾鷲",
+          "score": 7,
           "won": false,
-          "name": "津高校",
-          "slug": "tsu"
+          "name": "尾鷲高校",
+          "slug": "owase"
         }
       ]
     },
     {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
       "round": "1回戦",
       "venue": "ダイムスタジアム伊勢",
       "teams": [
         {
-          "display": "伊勢工",
+          "display": "徳風",
           "score": 0,
           "won": false,
-          "name": "伊勢工業高校",
-          "slug": "isekogyo"
-        },
-        {
-          "display": "高田",
-          "score": 7,
-          "won": true,
-          "name": "高田",
+          "name": "徳風",
           "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "津商",
-          "score": 7,
-          "won": true,
-          "name": "津商業高校",
-          "slug": "tsushogyo"
         },
         {
-          "display": "木本・紀南・熊野青藍",
-          "score": 3,
-          "won": false,
-          "name": "木本・紀南・熊野青藍",
+          "display": "石薬師・南伊勢・鳥羽",
+          "score": 11,
+          "won": true,
+          "name": "石薬師・南伊勢・鳥羽",
           "slug": null,
           "combined": true
         }
       ]
     },
     {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "神村学園伊賀",
+          "score": 8,
+          "won": true,
+          "name": "神村学園伊賀",
+          "slug": null
+        },
+        {
+          "display": "四日市中央工",
+          "score": 0,
+          "won": false,
+          "name": "四日市中央工業高校",
+          "slug": "yokkaichichuokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "水産",
+          "score": 1,
+          "won": false,
+          "name": "三重県立水産高校",
+          "slug": "miekenritsusuisan"
+        },
+        {
+          "display": "上野",
+          "score": 19,
+          "won": true,
+          "name": "上野高校",
+          "slug": "mie-ueno"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "久居",
+          "score": 8,
+          "won": true,
+          "name": "久居高校",
+          "slug": "hisai"
+        },
+        {
+          "display": "亀山",
+          "score": 1,
+          "won": false,
+          "name": "亀山高校",
+          "slug": "kameyama"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "菰野",
+          "score": 5,
+          "won": true,
+          "name": "菰野高校",
+          "slug": "komono"
+        },
+        {
+          "display": "木本紀南青藍",
+          "score": 4,
+          "won": false,
+          "name": "木本紀南青藍",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "津",
+          "score": 4,
+          "won": false,
+          "name": "津高校",
+          "slug": "tsu"
+        },
+        {
+          "display": "高田",
+          "score": 11,
+          "won": true,
+          "name": "高田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "四日市霞ヶ浦第１野球場",
+      "teams": [
+        {
+          "display": "神戸",
+          "score": 0,
+          "won": false,
+          "name": "神戸高校",
+          "slug": "kanbe"
+        },
+        {
+          "display": "四日市商",
+          "score": 7,
+          "won": true,
+          "name": "四日市商業高校",
+          "slug": "yokkaichishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "津東",
+          "score": 11,
+          "won": true,
+          "name": "津東高校",
+          "slug": "tsuhigashi"
+        },
+        {
+          "display": "白子",
+          "score": 0,
+          "won": false,
+          "name": "白子高校",
+          "slug": "shiroko"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "2回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "津商",
+          "score": 11,
+          "won": true,
+          "name": "津商業高校",
+          "slug": "tsushogyo"
+        },
+        {
+          "display": "飯南",
+          "score": 0,
+          "won": false,
+          "name": "飯南高校",
+          "slug": "iinan"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "2回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "松阪工",
+          "score": 10,
+          "won": true,
+          "name": "松阪工業高校",
+          "slug": "matsusakakogyo"
+        },
+        {
+          "display": "津工",
+          "score": 1,
+          "won": false,
+          "name": "津工業高校",
+          "slug": "tsukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
       "round": "2回戦",
       "venue": "ダイムスタジアム伊勢",
       "teams": [
         {
-          "display": "桑名西",
-          "score": 3,
-          "won": false,
-          "name": "桑名西高校",
-          "slug": "kuwananishi"
-        },
-        {
-          "display": "伊勢",
-          "score": 6,
-          "won": true,
-          "name": "伊勢高校",
-          "slug": "ise"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "三重",
-          "score": 4,
-          "won": true,
-          "name": "三重",
-          "slug": null
-        },
-        {
-          "display": "津西",
-          "score": 2,
-          "won": false,
-          "name": "津西高校",
-          "slug": "tsunishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "高田",
-          "score": 2,
-          "won": false,
-          "name": "高田",
-          "slug": null
-        },
-        {
-          "display": "いなべ総合",
+          "display": "川越",
           "score": 8,
           "won": true,
-          "name": "いなべ総合",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
-      "round": "準々決勝",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "津商",
-          "score": 18,
-          "won": true,
-          "name": "津商業高校",
-          "slug": "tsushogyo"
+          "name": "川越高校",
+          "slug": "mie-kawagoe"
         },
         {
-          "display": "伊勢",
-          "score": 0,
+          "display": "石薬師・南伊勢・鳥羽",
+          "score": 1,
           "won": false,
-          "name": "伊勢高校",
-          "slug": "ise"
+          "name": "石薬師・南伊勢・鳥羽",
+          "slug": null,
+          "combined": true
         }
       ]
     },
     {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
-      "round": "準々決勝",
-      "venue": "ドリームオーシャンスタジアム",
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "2回戦",
+      "venue": "四日市霞ヶ浦第１野球場",
       "teams": [
         {
-          "display": "三重",
-          "score": 5,
-          "won": true,
-          "name": "三重",
-          "slug": null
-        },
-        {
-          "display": "いなべ総合",
-          "score": 3,
-          "won": false,
-          "name": "いなべ総合",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-25",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
-      "round": "準決勝",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "津商",
-          "score": 5,
-          "won": true,
-          "name": "津商業高校",
-          "slug": "tsushogyo"
-        },
-        {
-          "display": "三重",
-          "score": 0,
-          "won": false,
-          "name": "三重",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
-      "round": "1回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "鈴鹿",
-          "score": 10,
-          "won": true,
-          "name": "鈴鹿",
-          "slug": null
-        },
-        {
-          "display": "津田学園",
+          "display": "神村学園伊賀",
           "score": 2,
           "won": false,
-          "name": "津田学園",
+          "name": "神村学園伊賀",
           "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-11",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
-      "round": "1回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "宇治山田商",
-          "score": 7,
-          "won": true,
-          "name": "宇治山田商業高校",
-          "slug": "ujiyamadashogyo"
-        },
-        {
-          "display": "久居農林",
-          "score": 2,
-          "won": false,
-          "name": "久居農林高校",
-          "slug": "hisainorin"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
-      "round": "1回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "津東",
-          "score": 2,
-          "won": false,
-          "name": "津東高校",
-          "slug": "tsuhigashi"
         },
         {
           "display": "四日市南",
@@ -3712,18 +4313,156 @@
       ]
     },
     {
-      "date": "2026-04-11",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
-      "round": "1回戦",
-      "venue": "ダイムスタジアム伊勢",
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "2回戦",
+      "venue": "四日市霞ヶ浦第１野球場",
       "teams": [
         {
-          "display": "明野",
-          "score": 14,
+          "display": "いなべ総合",
+          "score": 4,
           "won": true,
-          "name": "明野高校",
-          "slug": "mie-akeno"
+          "name": "いなべ総合",
+          "slug": null
+        },
+        {
+          "display": "上野",
+          "score": 1,
+          "won": false,
+          "name": "上野高校",
+          "slug": "mie-ueno"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "2回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "久居",
+          "score": 4,
+          "won": false,
+          "name": "久居高校",
+          "slug": "hisai"
+        },
+        {
+          "display": "菰野",
+          "score": 5,
+          "won": true,
+          "name": "菰野高校",
+          "slug": "komono"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "2回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "高田",
+          "score": 4,
+          "won": true,
+          "name": "高田",
+          "slug": null
+        },
+        {
+          "display": "四日市商",
+          "score": 1,
+          "won": false,
+          "name": "四日市商業高校",
+          "slug": "yokkaichishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "2回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "津東",
+          "score": 2,
+          "won": false,
+          "name": "津東高校",
+          "slug": "tsuhigashi"
+        },
+        {
+          "display": "三重",
+          "score": 12,
+          "won": true,
+          "name": "三重",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "3回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "津商",
+          "score": 3,
+          "won": true,
+          "name": "津商業高校",
+          "slug": "tsushogyo"
+        },
+        {
+          "display": "松阪工",
+          "score": 0,
+          "won": false,
+          "name": "松阪工業高校",
+          "slug": "matsusakakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "3回戦",
+      "venue": "四日市霞ヶ浦第１野球場",
+      "teams": [
+        {
+          "display": "川越",
+          "score": 7,
+          "won": true,
+          "name": "川越高校",
+          "slug": "mie-kawagoe"
+        },
+        {
+          "display": "四日市南",
+          "score": 5,
+          "won": false,
+          "name": "四日市南高校",
+          "slug": "yokkaichiminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "3回戦",
+      "venue": "四日市霞ヶ浦第１野球場",
+      "teams": [
+        {
+          "display": "いなべ総合",
+          "score": 8,
+          "won": true,
+          "name": "いなべ総合",
+          "slug": null
         },
         {
           "display": "菰野",
@@ -3735,160 +4474,712 @@
       ]
     },
     {
-      "date": "2026-04-11",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
-      "round": "1回戦",
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "3回戦",
       "venue": "ドリームオーシャンスタジアム",
       "teams": [
         {
-          "display": "四日市中央工",
-          "score": 7,
+          "display": "高田",
+          "score": 3,
           "won": false,
-          "name": "四日市中央工業高校",
-          "slug": "yokkaichichuokogyo"
+          "name": "高田",
+          "slug": null
         },
         {
-          "display": "上野",
-          "score": 10,
+          "display": "三重",
+          "score": 13,
           "won": true,
-          "name": "上野高校",
-          "slug": "mie-ueno"
+          "name": "三重",
+          "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
-      "round": "2回戦",
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "準々決勝",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "津商",
+          "score": 10,
+          "won": true,
+          "name": "津商業高校",
+          "slug": "tsushogyo"
+        },
+        {
+          "display": "川越",
+          "score": 0,
+          "won": false,
+          "name": "川越高校",
+          "slug": "mie-kawagoe"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "準々決勝",
+      "venue": "四日市霞ヶ浦第１野球場",
+      "teams": [
+        {
+          "display": "いなべ総合",
+          "score": 0,
+          "won": false,
+          "name": "いなべ総合",
+          "slug": null
+        },
+        {
+          "display": "三重",
+          "score": 7,
+          "won": true,
+          "name": "三重",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "準決勝",
+      "venue": "四日市霞ヶ浦第１野球場",
+      "teams": [
+        {
+          "display": "津商",
+          "score": 6,
+          "won": false,
+          "name": "津商業高校",
+          "slug": "tsushogyo"
+        },
+        {
+          "display": "三重",
+          "score": 7,
+          "won": true,
+          "name": "三重",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "白山",
+          "score": 2,
+          "won": false,
+          "name": "白山高校",
+          "slug": "mie-hakusan"
+        },
+        {
+          "display": "宇治山田商",
+          "score": 10,
+          "won": true,
+          "name": "宇治山田商業高校",
+          "slug": "ujiyamadashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "伊勢工",
+          "score": 5,
+          "won": true,
+          "name": "伊勢工業高校",
+          "slug": "isekogyo"
+        },
+        {
+          "display": "暁",
+          "score": 4,
+          "won": false,
+          "name": "暁",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "四日市霞ヶ浦第１野球場",
+      "teams": [
+        {
+          "display": "四日市農芸",
+          "score": 0,
+          "won": false,
+          "name": "四日市農芸高校",
+          "slug": "yokkaichinogei"
+        },
+        {
+          "display": "津田学園",
+          "score": 10,
+          "won": true,
+          "name": "津田学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "名張",
+          "score": 5,
+          "won": true,
+          "name": "名張高校",
+          "slug": "nabari"
+        },
+        {
+          "display": "桑名北",
+          "score": 0,
+          "won": false,
+          "name": "桑名北高校",
+          "slug": "kuwanakita"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
       "venue": "ドリームオーシャンスタジアム",
       "teams": [
         {
-          "display": "昴学園",
-          "score": 2,
+          "display": "四日市",
+          "score": 14,
           "won": true,
-          "name": "昴学園高校",
-          "slug": "subarugakuen"
+          "name": "四日市高校",
+          "slug": "yokkaichi"
+        },
+        {
+          "display": "相可",
+          "score": 5,
+          "won": false,
+          "name": "相可高校",
+          "slug": "oka"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "四日市霞ヶ浦第１野球場",
+      "teams": [
+        {
+          "display": "桑名西",
+          "score": 8,
+          "won": true,
+          "name": "桑名西高校",
+          "slug": "kuwananishi"
+        },
+        {
+          "display": "四日市西",
+          "score": 3,
+          "won": false,
+          "name": "四日市西高校",
+          "slug": "yokkaichinishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "伊賀白鳳",
+          "score": 0,
+          "won": false,
+          "name": "伊賀白鳳高校",
+          "slug": "igahakuho"
+        },
+        {
+          "display": "近大工業高専",
+          "score": 14,
+          "won": true,
+          "name": "近大工業高専",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "四日市霞ヶ浦第１野球場",
+      "teams": [
+        {
+          "display": "桑名工",
+          "score": 0,
+          "won": false,
+          "name": "桑名工業高校",
+          "slug": "kuwanakogyo"
         },
         {
           "display": "鈴鹿",
-          "score": 1,
-          "won": false,
+          "score": 3,
+          "won": true,
           "name": "鈴鹿",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "date": "2026-07-04",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "津西",
+          "score": 5,
+          "won": true,
+          "name": "津西高校",
+          "slug": "tsunishi"
+        },
+        {
+          "display": "四日市工",
+          "score": 1,
+          "won": false,
+          "name": "四日市工業高校",
+          "slug": "yokkaichikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "四日市霞ヶ浦第１野球場",
+      "teams": [
+        {
+          "display": "海星",
+          "score": 10,
+          "won": true,
+          "name": "海星",
+          "slug": null
+        },
+        {
+          "display": "久居農林",
+          "score": 0,
+          "won": false,
+          "name": "久居農林高校",
+          "slug": "hisainorin"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "松阪",
+          "score": 7,
+          "won": false,
+          "name": "松阪高校",
+          "slug": "matsusaka"
+        },
+        {
+          "display": "皇學館",
+          "score": 8,
+          "won": true,
+          "name": "皇學館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "宇治山田",
+          "score": 4,
+          "won": false,
+          "name": "宇治山田高校",
+          "slug": "ujiyamada"
+        },
+        {
+          "display": "青山",
+          "score": 5,
+          "won": true,
+          "name": "青山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "1回戦",
+      "venue": "四日市霞ヶ浦第１野球場",
+      "teams": [
+        {
+          "display": "名張青峰",
+          "score": 0,
+          "won": false,
+          "name": "名張青峰高校",
+          "slug": "nabariseiho"
+        },
+        {
+          "display": "桑名",
+          "score": 10,
+          "won": true,
+          "name": "桑名高校",
+          "slug": "kuwana"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
       "round": "2回戦",
       "venue": "ドリームオーシャンスタジアム",
       "teams": [
         {
+          "display": "昴学園",
+          "score": 2,
+          "won": false,
+          "name": "昴学園高校",
+          "slug": "subarugakuen"
+        },
+        {
           "display": "宇治山田商",
+          "score": 3,
+          "won": true,
+          "name": "宇治山田商業高校",
+          "slug": "ujiyamadashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "2回戦",
+      "venue": "四日市霞ヶ浦第１野球場",
+      "teams": [
+        {
+          "display": "伊勢工",
+          "score": 4,
+          "won": false,
+          "name": "伊勢工業高校",
+          "slug": "isekogyo"
+        },
+        {
+          "display": "津田学園",
+          "score": 11,
+          "won": true,
+          "name": "津田学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "2回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "名張",
+          "score": 0,
+          "won": false,
+          "name": "名張高校",
+          "slug": "nabari"
+        },
+        {
+          "display": "四日市",
+          "score": 8,
+          "won": true,
+          "name": "四日市高校",
+          "slug": "yokkaichi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "2回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "桑名西",
+          "score": 1,
+          "won": false,
+          "name": "桑名西高校",
+          "slug": "kuwananishi"
+        },
+        {
+          "display": "近大工業高専",
+          "score": 4,
+          "won": true,
+          "name": "近大工業高専",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "2回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "伊勢",
+          "score": 3,
+          "won": false,
+          "name": "伊勢高校",
+          "slug": "ise"
+        },
+        {
+          "display": "鈴鹿",
+          "score": 6,
+          "won": true,
+          "name": "鈴鹿",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "2回戦",
+      "venue": "四日市霞ヶ浦第１野球場",
+      "teams": [
+        {
+          "display": "津西",
+          "score": 2,
+          "won": true,
+          "name": "津西高校",
+          "slug": "tsunishi"
+        },
+        {
+          "display": "海星",
+          "score": 1,
+          "won": false,
+          "name": "海星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "2回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "皇學館",
+          "score": 8,
+          "won": true,
+          "name": "皇學館",
+          "slug": null
+        },
+        {
+          "display": "青山",
+          "score": 2,
+          "won": false,
+          "name": "青山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "2回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "桑名",
           "score": 5,
+          "won": false,
+          "name": "桑名高校",
+          "slug": "kuwana"
+        },
+        {
+          "display": "明野",
+          "score": 6,
+          "won": true,
+          "name": "明野高校",
+          "slug": "mie-akeno"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "3回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "宇治山田商",
+          "score": 0,
           "won": false,
           "name": "宇治山田商業高校",
           "slug": "ujiyamadashogyo"
         },
         {
-          "display": "近大高専",
-          "score": 7,
+          "display": "津田学園",
+          "score": 6,
           "won": true,
-          "name": "近大高専",
+          "name": "津田学園",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
-      "round": "2回戦",
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "3回戦",
       "venue": "津球場公園内野球場",
       "teams": [
         {
-          "display": "海星",
+          "display": "四日市",
           "score": 2,
           "won": false,
-          "name": "海星",
-          "slug": null
+          "name": "四日市高校",
+          "slug": "yokkaichi"
         },
         {
-          "display": "四日市南",
-          "score": 3,
+          "display": "近大工業高専",
+          "score": 9,
           "won": true,
-          "name": "四日市南高校",
-          "slug": "yokkaichiminami"
+          "name": "近大工業高専",
+          "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
-      "round": "2回戦",
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "3回戦",
       "venue": "ダイムスタジアム伊勢",
       "teams": [
+        {
+          "display": "鈴鹿",
+          "score": 4,
+          "won": false,
+          "name": "鈴鹿",
+          "slug": null
+        },
+        {
+          "display": "津西",
+          "score": 5,
+          "won": true,
+          "name": "津西高校",
+          "slug": "tsunishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "round": "3回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "皇學館",
+          "score": 7,
+          "won": false,
+          "name": "皇學館",
+          "slug": null
+        },
         {
           "display": "明野",
           "score": 8,
           "won": true,
           "name": "明野高校",
           "slug": "mie-akeno"
-        },
-        {
-          "display": "上野",
-          "score": 7,
-          "won": false,
-          "name": "上野高校",
-          "slug": "mie-ueno"
         }
       ]
     },
     {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
       "round": "準々決勝",
-      "venue": "ドリームオーシャンスタジアム",
+      "venue": "津球場公園内野球場",
       "teams": [
         {
-          "display": "昴学園",
-          "score": 10,
-          "won": true,
-          "name": "昴学園高校",
-          "slug": "subarugakuen"
+          "display": "津田学園",
+          "score": 2,
+          "won": false,
+          "name": "津田学園",
+          "slug": null
         },
         {
-          "display": "近大高専",
-          "score": 0,
-          "won": false,
-          "name": "近大高専",
+          "display": "近大工業高専",
+          "score": 5,
+          "won": true,
+          "name": "近大工業高専",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
       "round": "準々決勝",
-      "venue": "津球場公園内野球場",
+      "venue": "四日市霞ヶ浦第１野球場",
       "teams": [
         {
-          "display": "四日市南",
-          "score": 1,
+          "display": "津西",
+          "score": 8,
           "won": false,
-          "name": "四日市南高校",
-          "slug": "yokkaichiminami"
+          "name": "津西高校",
+          "slug": "tsunishi"
         },
         {
           "display": "明野",
-          "score": 9,
+          "score": 15,
           "won": true,
           "name": "明野高校",
           "slug": "mie-akeno"
@@ -3896,22 +5187,22 @@
       ]
     },
     {
-      "date": "2026-04-25",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
       "round": "準決勝",
-      "venue": "ドリームオーシャンスタジアム",
+      "venue": "四日市霞ヶ浦第１野球場",
       "teams": [
         {
-          "display": "昴学園",
-          "score": 4,
+          "display": "近大工業高専",
+          "score": 7,
           "won": true,
-          "name": "昴学園高校",
-          "slug": "subarugakuen"
+          "name": "近大工業高専",
+          "slug": null
         },
         {
           "display": "明野",
-          "score": 1,
+          "score": 4,
           "won": false,
           "name": "明野高校",
           "slug": "mie-akeno"
@@ -3919,25 +5210,25 @@
       ]
     },
     {
-      "date": "2026-04-26",
-      "season": "spring",
-      "tournament": "2026年 春季東海地区高校野球 三重県大会",
+      "date": "2026-07-27",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 三重大会",
       "round": "決勝",
-      "venue": "ドリームオーシャンスタジアム",
+      "venue": "四日市霞ヶ浦第１野球場",
       "teams": [
         {
-          "display": "昴学園",
-          "score": 4,
-          "won": true,
-          "name": "昴学園高校",
-          "slug": "subarugakuen"
-        },
-        {
-          "display": "津商",
+          "display": "近大工業高専",
           "score": 3,
           "won": false,
-          "name": "津商業高校",
-          "slug": "tsushogyo"
+          "name": "近大工業高専",
+          "slug": null
+        },
+        {
+          "display": "三重",
+          "score": 12,
+          "won": true,
+          "name": "三重",
+          "slug": null
         }
       ]
     },
@@ -14995,139 +16286,209 @@
       ]
     },
     {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
       "round": "1回戦",
-      "venue": "ドリームオーシャンスタジアム",
+      "venue": null,
       "teams": [
         {
-          "display": "稲生",
-          "score": 1,
+          "display": "松阪",
+          "score": 12,
+          "won": true,
+          "name": "松阪高校",
+          "slug": "matsusaka"
+        },
+        {
+          "display": "水産",
+          "score": 2,
           "won": false,
-          "name": "稲生高校",
-          "slug": "ino"
+          "name": "三重県立水産高校",
+          "slug": "miekenritsusuisan"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "津商",
+          "score": 12,
+          "won": true,
+          "name": "津商業高校",
+          "slug": "tsushogyo"
+        },
+        {
+          "display": "海星",
+          "score": 5,
+          "won": false,
+          "name": "海星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "久居",
+          "score": 11,
+          "won": true,
+          "name": "久居高校",
+          "slug": "hisai"
+        },
+        {
+          "display": "朝明・四日市四郷・石薬師・鳥羽・南伊勢",
+          "score": 0,
+          "won": false,
+          "name": "朝明・四日市四郷・石薬師・鳥羽・南伊勢",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宇治山田",
+          "score": 2,
+          "won": false,
+          "name": "宇治山田高校",
+          "slug": "ujiyamada"
+        },
+        {
+          "display": "菰野",
+          "score": 12,
+          "won": true,
+          "name": "菰野高校",
+          "slug": "komono"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "名張青峰",
+          "score": 6,
+          "won": false,
+          "name": "名張青峰高校",
+          "slug": "nabariseiho"
+        },
+        {
+          "display": "木本・紀南・熊野青藍",
+          "score": 7,
+          "won": true,
+          "name": "木本・紀南・熊野青藍",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "白子",
+          "score": 13,
+          "won": true,
+          "name": "白子高校",
+          "slug": "shiroko"
         },
         {
           "display": "飯南",
-          "score": 6,
-          "won": true,
+          "score": 11,
+          "won": false,
           "name": "飯南高校",
           "slug": "iinan"
         }
       ]
     },
     {
-      "date": "2026-07-08",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
       "round": "1回戦",
-      "venue": "四日市霞ヶ浦第１野球場",
+      "venue": null,
       "teams": [
         {
-          "display": "松阪工",
-          "score": 11,
-          "won": true,
-          "name": "松阪工業高校",
-          "slug": "matsusakakogyo"
-        },
-        {
-          "display": "朝明・四日市四郷",
-          "score": 1,
-          "won": false,
-          "name": "朝明・四日市四郷",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-07-08",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "1回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "松阪商",
-          "score": 2,
-          "won": false,
-          "name": "松阪商業高校",
-          "slug": "matsusakashogyo"
-        },
-        {
-          "display": "津工",
+          "display": "四日市工",
           "score": 7,
-          "won": true,
-          "name": "津工業高校",
-          "slug": "tsukogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-08",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "1回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
+          "won": false,
+          "name": "四日市工業高校",
+          "slug": "yokkaichikogyo"
+        },
         {
           "display": "川越",
-          "score": 8,
+          "score": 11,
           "won": true,
           "name": "川越高校",
           "slug": "mie-kawagoe"
-        },
-        {
-          "display": "尾鷲",
-          "score": 7,
-          "won": false,
-          "name": "尾鷲高校",
-          "slug": "owase"
         }
       ]
     },
     {
-      "date": "2026-07-05",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
       "round": "1回戦",
-      "venue": "ダイムスタジアム伊勢",
+      "venue": null,
       "teams": [
         {
-          "display": "徳風",
-          "score": 0,
-          "won": false,
-          "name": "徳風",
-          "slug": null
+          "display": "四日市商",
+          "score": 23,
+          "won": true,
+          "name": "四日市商業高校",
+          "slug": "yokkaichishogyo"
         },
         {
-          "display": "石薬師・南伊勢・鳥羽",
-          "score": 11,
-          "won": true,
-          "name": "石薬師・南伊勢・鳥羽",
+          "display": "徳風・英心",
+          "score": 0,
+          "won": false,
+          "name": "徳風・英心",
           "slug": null,
           "combined": true
         }
       ]
     },
     {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
       "round": "1回戦",
-      "venue": "ドリームオーシャンスタジアム",
+      "venue": null,
       "teams": [
         {
-          "display": "神村学園伊賀",
-          "score": 8,
+          "display": "伊賀白鳳",
+          "score": 5,
           "won": true,
-          "name": "神村学園伊賀",
-          "slug": null
+          "name": "伊賀白鳳高校",
+          "slug": "igahakuho"
         },
         {
           "display": "四日市中央工",
-          "score": 0,
+          "score": 2,
           "won": false,
           "name": "四日市中央工業高校",
           "slug": "yokkaichichuokogyo"
@@ -15135,541 +16496,34 @@
       ]
     },
     {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
       "round": "1回戦",
-      "venue": "ダイムスタジアム伊勢",
+      "venue": null,
       "teams": [
         {
-          "display": "水産",
-          "score": 1,
-          "won": false,
-          "name": "三重県立水産高校",
-          "slug": "miekenritsusuisan"
-        },
-        {
-          "display": "上野",
-          "score": 19,
-          "won": true,
-          "name": "上野高校",
-          "slug": "mie-ueno"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "1回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "久居",
-          "score": 8,
-          "won": true,
-          "name": "久居高校",
-          "slug": "hisai"
-        },
-        {
-          "display": "亀山",
-          "score": 1,
-          "won": false,
-          "name": "亀山高校",
-          "slug": "kameyama"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "1回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "菰野",
-          "score": 5,
-          "won": true,
-          "name": "菰野高校",
-          "slug": "komono"
-        },
-        {
-          "display": "木本紀南青藍",
-          "score": 4,
-          "won": false,
-          "name": "木本紀南青藍",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "1回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "津",
-          "score": 4,
-          "won": false,
-          "name": "津高校",
-          "slug": "tsu"
-        },
-        {
-          "display": "高田",
-          "score": 11,
-          "won": true,
-          "name": "高田",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "1回戦",
-      "venue": "四日市霞ヶ浦第１野球場",
-      "teams": [
-        {
-          "display": "神戸",
-          "score": 0,
-          "won": false,
-          "name": "神戸高校",
-          "slug": "kanbe"
-        },
-        {
-          "display": "四日市商",
-          "score": 7,
-          "won": true,
-          "name": "四日市商業高校",
-          "slug": "yokkaichishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "1回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "津東",
-          "score": 11,
-          "won": true,
-          "name": "津東高校",
-          "slug": "tsuhigashi"
-        },
-        {
-          "display": "白子",
-          "score": 0,
-          "won": false,
-          "name": "白子高校",
-          "slug": "shiroko"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "2回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "津商",
-          "score": 11,
-          "won": true,
-          "name": "津商業高校",
-          "slug": "tsushogyo"
-        },
-        {
-          "display": "飯南",
-          "score": 0,
-          "won": false,
-          "name": "飯南高校",
-          "slug": "iinan"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "2回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "松阪工",
-          "score": 10,
-          "won": true,
-          "name": "松阪工業高校",
-          "slug": "matsusakakogyo"
-        },
-        {
-          "display": "津工",
-          "score": 1,
-          "won": false,
-          "name": "津工業高校",
-          "slug": "tsukogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "2回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "川越",
-          "score": 8,
-          "won": true,
-          "name": "川越高校",
-          "slug": "mie-kawagoe"
-        },
-        {
-          "display": "石薬師・南伊勢・鳥羽",
-          "score": 1,
-          "won": false,
-          "name": "石薬師・南伊勢・鳥羽",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "2回戦",
-      "venue": "四日市霞ヶ浦第１野球場",
-      "teams": [
-        {
-          "display": "神村学園伊賀",
-          "score": 2,
-          "won": false,
-          "name": "神村学園伊賀",
-          "slug": null
-        },
-        {
-          "display": "四日市南",
-          "score": 3,
-          "won": true,
-          "name": "四日市南高校",
-          "slug": "yokkaichiminami"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "2回戦",
-      "venue": "四日市霞ヶ浦第１野球場",
-      "teams": [
-        {
-          "display": "いなべ総合",
-          "score": 4,
-          "won": true,
-          "name": "いなべ総合",
-          "slug": null
-        },
-        {
-          "display": "上野",
-          "score": 1,
-          "won": false,
-          "name": "上野高校",
-          "slug": "mie-ueno"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "2回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "久居",
-          "score": 4,
-          "won": false,
-          "name": "久居高校",
-          "slug": "hisai"
-        },
-        {
-          "display": "菰野",
-          "score": 5,
-          "won": true,
-          "name": "菰野高校",
-          "slug": "komono"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "2回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "高田",
-          "score": 4,
-          "won": true,
-          "name": "高田",
-          "slug": null
-        },
-        {
-          "display": "四日市商",
-          "score": 1,
-          "won": false,
-          "name": "四日市商業高校",
-          "slug": "yokkaichishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "2回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "津東",
-          "score": 2,
-          "won": false,
-          "name": "津東高校",
-          "slug": "tsuhigashi"
-        },
-        {
-          "display": "三重",
+          "display": "明野",
           "score": 12,
           "won": true,
-          "name": "三重",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-21",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "3回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "津商",
-          "score": 3,
-          "won": true,
-          "name": "津商業高校",
-          "slug": "tsushogyo"
+          "name": "明野高校",
+          "slug": "mie-akeno"
         },
         {
-          "display": "松阪工",
-          "score": 0,
-          "won": false,
-          "name": "松阪工業高校",
-          "slug": "matsusakakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-21",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "3回戦",
-      "venue": "四日市霞ヶ浦第１野球場",
-      "teams": [
-        {
-          "display": "川越",
-          "score": 7,
-          "won": true,
-          "name": "川越高校",
-          "slug": "mie-kawagoe"
-        },
-        {
-          "display": "四日市南",
-          "score": 5,
-          "won": false,
-          "name": "四日市南高校",
-          "slug": "yokkaichiminami"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-21",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "3回戦",
-      "venue": "四日市霞ヶ浦第１野球場",
-      "teams": [
-        {
-          "display": "いなべ総合",
-          "score": 8,
-          "won": true,
-          "name": "いなべ総合",
-          "slug": null
-        },
-        {
-          "display": "菰野",
-          "score": 5,
-          "won": false,
-          "name": "菰野高校",
-          "slug": "komono"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-21",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "3回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "高田",
-          "score": 3,
-          "won": false,
-          "name": "高田",
-          "slug": null
-        },
-        {
-          "display": "三重",
-          "score": 13,
-          "won": true,
-          "name": "三重",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-23",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "準々決勝",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "津商",
-          "score": 10,
-          "won": true,
-          "name": "津商業高校",
-          "slug": "tsushogyo"
-        },
-        {
-          "display": "川越",
-          "score": 0,
-          "won": false,
-          "name": "川越高校",
-          "slug": "mie-kawagoe"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-23",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "準々決勝",
-      "venue": "四日市霞ヶ浦第１野球場",
-      "teams": [
-        {
-          "display": "いなべ総合",
-          "score": 0,
-          "won": false,
-          "name": "いなべ総合",
-          "slug": null
-        },
-        {
-          "display": "三重",
-          "score": 7,
-          "won": true,
-          "name": "三重",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-25",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "準決勝",
-      "venue": "四日市霞ヶ浦第１野球場",
-      "teams": [
-        {
-          "display": "津商",
-          "score": 6,
-          "won": false,
-          "name": "津商業高校",
-          "slug": "tsushogyo"
-        },
-        {
-          "display": "三重",
-          "score": 7,
-          "won": true,
-          "name": "三重",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "1回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "白山",
+          "display": "尾鷲",
           "score": 2,
           "won": false,
-          "name": "白山高校",
-          "slug": "mie-hakusan"
-        },
-        {
-          "display": "宇治山田商",
-          "score": 10,
-          "won": true,
-          "name": "宇治山田商業高校",
-          "slug": "ujiyamadashogyo"
+          "name": "尾鷲高校",
+          "slug": "owase"
         }
       ]
     },
     {
-      "date": "2026-07-08",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
       "round": "1回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "伊勢工",
-          "score": 5,
-          "won": true,
-          "name": "伊勢工業高校",
-          "slug": "isekogyo"
-        },
-        {
-          "display": "暁",
-          "score": 4,
-          "won": false,
-          "name": "暁",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-04",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "1回戦",
-      "venue": "四日市霞ヶ浦第１野球場",
+      "venue": null,
       "teams": [
         {
           "display": "四日市農芸",
@@ -15679,31 +16533,584 @@
           "slug": "yokkaichinogei"
         },
         {
-          "display": "津田学園",
-          "score": 10,
+          "display": "昴学園",
+          "score": 28,
           "won": true,
-          "name": "津田学園",
+          "name": "昴学園高校",
+          "slug": "subarugakuen"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "桑名西",
+          "score": 5,
+          "won": true,
+          "name": "桑名西高校",
+          "slug": "kuwananishi"
+        },
+        {
+          "display": "松阪",
+          "score": 4,
+          "won": false,
+          "name": "松阪高校",
+          "slug": "matsusaka"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "津商",
+          "score": 9,
+          "won": true,
+          "name": "津商業高校",
+          "slug": "tsushogyo"
+        },
+        {
+          "display": "久居",
+          "score": 2,
+          "won": false,
+          "name": "久居高校",
+          "slug": "hisai"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "菰野",
+          "score": 8,
+          "won": true,
+          "name": "菰野高校",
+          "slug": "komono"
+        },
+        {
+          "display": "木本・紀南・熊野青藍",
+          "score": 6,
+          "won": false,
+          "name": "木本・紀南・熊野青藍",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "白子",
+          "score": 0,
+          "won": false,
+          "name": "白子高校",
+          "slug": "shiroko"
+        },
+        {
+          "display": "近大工業高専",
+          "score": 6,
+          "won": true,
+          "name": "近大工業高専",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-08",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "1回戦",
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
       "venue": "津球場公園内野球場",
       "teams": [
         {
-          "display": "名張",
+          "display": "神村学園伊賀",
+          "score": 2,
+          "won": false,
+          "name": "神村学園伊賀",
+          "slug": null
+        },
+        {
+          "display": "川越",
           "score": 5,
           "won": true,
-          "name": "名張高校",
-          "slug": "nabari"
+          "name": "川越高校",
+          "slug": "mie-kawagoe"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "四日市商",
+          "score": 5,
+          "won": true,
+          "name": "四日市商業高校",
+          "slug": "yokkaichishogyo"
+        },
+        {
+          "display": "伊賀白鳳",
+          "score": 0,
+          "won": false,
+          "name": "伊賀白鳳高校",
+          "slug": "igahakuho"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-16",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "明野",
+          "score": 3,
+          "won": false,
+          "name": "明野高校",
+          "slug": "mie-akeno"
+        },
+        {
+          "display": "昴学園",
+          "score": 4,
+          "won": true,
+          "name": "昴学園高校",
+          "slug": "subarugakuen"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "上野",
+          "score": 0,
+          "won": false,
+          "name": "上野高校",
+          "slug": "mie-ueno"
+        },
+        {
+          "display": "三重",
+          "score": 5,
+          "won": true,
+          "name": "三重",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "3回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "桑名西",
+          "score": 2,
+          "won": false,
+          "name": "桑名西高校",
+          "slug": "kuwananishi"
+        },
+        {
+          "display": "津商",
+          "score": 12,
+          "won": true,
+          "name": "津商業高校",
+          "slug": "tsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "3回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "菰野",
+          "score": 2,
+          "won": false,
+          "name": "菰野高校",
+          "slug": "komono"
+        },
+        {
+          "display": "近大工業高専",
+          "score": 7,
+          "won": true,
+          "name": "近大工業高専",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "3回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "川越",
+          "score": 8,
+          "won": true,
+          "name": "川越高校",
+          "slug": "mie-kawagoe"
+        },
+        {
+          "display": "四日市商",
+          "score": 2,
+          "won": false,
+          "name": "四日市商業高校",
+          "slug": "yokkaichishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "3回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "昴学園",
+          "score": 0,
+          "won": false,
+          "name": "昴学園高校",
+          "slug": "subarugakuen"
+        },
+        {
+          "display": "三重",
+          "score": 4,
+          "won": true,
+          "name": "三重",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "準々決勝",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "津商",
+          "score": 8,
+          "won": true,
+          "name": "津商業高校",
+          "slug": "tsushogyo"
+        },
+        {
+          "display": "近大工業高専",
+          "score": 0,
+          "won": false,
+          "name": "近大工業高専",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "準々決勝",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "川越",
+          "score": 0,
+          "won": false,
+          "name": "川越高校",
+          "slug": "mie-kawagoe"
+        },
+        {
+          "display": "三重",
+          "score": 7,
+          "won": true,
+          "name": "三重",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "準決勝",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "津商",
+          "score": 0,
+          "won": false,
+          "name": "津商業高校",
+          "slug": "tsushogyo"
+        },
+        {
+          "display": "三重",
+          "score": 7,
+          "won": true,
+          "name": "三重",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "津",
+          "score": 1,
+          "won": false,
+          "name": "津高校",
+          "slug": "tsu"
+        },
+        {
+          "display": "桑名工",
+          "score": 10,
+          "won": true,
+          "name": "桑名工業高校",
+          "slug": "kuwanakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "皇學館",
+          "score": 1,
+          "won": false,
+          "name": "皇學館",
+          "slug": null
+        },
+        {
+          "display": "津西",
+          "score": 8,
+          "won": true,
+          "name": "津西高校",
+          "slug": "tsunishi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高田",
+          "score": 11,
+          "won": true,
+          "name": "高田",
+          "slug": null
+        },
+        {
+          "display": "亀山",
+          "score": 3,
+          "won": false,
+          "name": "亀山高校",
+          "slug": "kameyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "津工",
+          "score": 1,
+          "won": false,
+          "name": "津工業高校",
+          "slug": "tsukogyo"
+        },
+        {
+          "display": "津東",
+          "score": 3,
+          "won": true,
+          "name": "津東高校",
+          "slug": "tsuhigashi"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "伊勢工",
+          "score": 8,
+          "won": true,
+          "name": "伊勢工業高校",
+          "slug": "isekogyo"
+        },
+        {
+          "display": "稲生",
+          "score": 7,
+          "won": false,
+          "name": "稲生高校",
+          "slug": "ino"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "白山",
+          "score": 2,
+          "won": true,
+          "name": "白山高校",
+          "slug": "mie-hakusan"
+        },
+        {
+          "display": "四日市南",
+          "score": 1,
+          "won": false,
+          "name": "四日市南高校",
+          "slug": "yokkaichiminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "伊勢",
+          "score": 9,
+          "won": true,
+          "name": "伊勢高校",
+          "slug": "ise"
+        },
+        {
+          "display": "松阪商",
+          "score": 1,
+          "won": false,
+          "name": "松阪商業高校",
+          "slug": "matsusakashogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "四日市西",
+          "score": 0,
+          "won": false,
+          "name": "四日市西高校",
+          "slug": "yokkaichinishi"
+        },
+        {
+          "display": "松阪工",
+          "score": 1,
+          "won": true,
+          "name": "松阪工業高校",
+          "slug": "matsusakakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "相可",
+          "score": 5,
+          "won": false,
+          "name": "相可高校",
+          "slug": "oka"
+        },
+        {
+          "display": "暁",
+          "score": 6,
+          "won": true,
+          "name": "暁",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桑名",
+          "score": 10,
+          "won": true,
+          "name": "桑名高校",
+          "slug": "kuwana"
         },
         {
           "display": "桑名北",
-          "score": 0,
+          "score": 8,
           "won": false,
           "name": "桑名北高校",
           "slug": "kuwanakita"
@@ -15711,91 +17118,45 @@
       ]
     },
     {
-      "date": "2026-07-08",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "date": "2025-08-30",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
       "round": "1回戦",
-      "venue": "ドリームオーシャンスタジアム",
+      "venue": null,
       "teams": [
         {
-          "display": "四日市",
-          "score": 14,
-          "won": true,
-          "name": "四日市高校",
-          "slug": "yokkaichi"
-        },
-        {
-          "display": "相可",
-          "score": 5,
-          "won": false,
-          "name": "相可高校",
-          "slug": "oka"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-05",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "1回戦",
-      "venue": "四日市霞ヶ浦第１野球場",
-      "teams": [
-        {
-          "display": "桑名西",
-          "score": 8,
-          "won": true,
-          "name": "桑名西高校",
-          "slug": "kuwananishi"
-        },
-        {
-          "display": "四日市西",
-          "score": 3,
-          "won": false,
-          "name": "四日市西高校",
-          "slug": "yokkaichinishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "1回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "伊賀白鳳",
+          "display": "神戸",
           "score": 0,
           "won": false,
-          "name": "伊賀白鳳高校",
-          "slug": "igahakuho"
+          "name": "神戸高校",
+          "slug": "kanbe"
         },
         {
-          "display": "近大工業高専",
-          "score": 14,
+          "display": "いなべ総合",
+          "score": 11,
           "won": true,
-          "name": "近大工業高専",
+          "name": "いなべ総合",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "date": null,
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
       "round": "1回戦",
-      "venue": "四日市霞ヶ浦第１野球場",
+      "venue": null,
       "teams": [
         {
-          "display": "桑名工",
-          "score": 0,
+          "display": "名張",
+          "score": 1,
           "won": false,
-          "name": "桑名工業高校",
-          "slug": "kuwanakogyo"
+          "name": "名張高校",
+          "slug": "nabari"
         },
         {
           "display": "鈴鹿",
-          "score": 3,
+          "score": 11,
           "won": true,
           "name": "鈴鹿",
           "slug": null
@@ -15803,482 +17164,367 @@
       ]
     },
     {
-      "date": "2026-07-04",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "1回戦",
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "久居農林",
+          "score": 5,
+          "won": true,
+          "name": "久居農林高校",
+          "slug": "hisainorin"
+        },
+        {
+          "display": "桑名工",
+          "score": 3,
+          "won": false,
+          "name": "桑名工業高校",
+          "slug": "kuwanakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
       "venue": "津球場公園内野球場",
       "teams": [
         {
           "display": "津西",
-          "score": 5,
+          "score": 7,
           "won": true,
           "name": "津西高校",
           "slug": "tsunishi"
         },
         {
-          "display": "四日市工",
-          "score": 1,
+          "display": "高田",
+          "score": 2,
           "won": false,
-          "name": "四日市工業高校",
-          "slug": "yokkaichikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-04",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "1回戦",
-      "venue": "四日市霞ヶ浦第１野球場",
-      "teams": [
-        {
-          "display": "海星",
-          "score": 10,
-          "won": true,
-          "name": "海星",
+          "name": "高田",
           "slug": null
-        },
-        {
-          "display": "久居農林",
-          "score": 0,
-          "won": false,
-          "name": "久居農林高校",
-          "slug": "hisainorin"
         }
       ]
     },
     {
-      "date": "2026-07-04",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "1回戦",
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
       "venue": "ダイムスタジアム伊勢",
       "teams": [
         {
-          "display": "松阪",
-          "score": 7,
-          "won": false,
-          "name": "松阪高校",
-          "slug": "matsusaka"
-        },
-        {
-          "display": "皇學館",
+          "display": "津東",
           "score": 8,
           "won": true,
-          "name": "皇學館",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-04",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "1回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "宇治山田",
-          "score": 4,
-          "won": false,
-          "name": "宇治山田高校",
-          "slug": "ujiyamada"
+          "name": "津東高校",
+          "slug": "tsuhigashi"
         },
-        {
-          "display": "青山",
-          "score": 5,
-          "won": true,
-          "name": "青山",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "1回戦",
-      "venue": "四日市霞ヶ浦第１野球場",
-      "teams": [
-        {
-          "display": "名張青峰",
-          "score": 0,
-          "won": false,
-          "name": "名張青峰高校",
-          "slug": "nabariseiho"
-        },
-        {
-          "display": "桑名",
-          "score": 10,
-          "won": true,
-          "name": "桑名高校",
-          "slug": "kuwana"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "2回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "昴学園",
-          "score": 2,
-          "won": false,
-          "name": "昴学園高校",
-          "slug": "subarugakuen"
-        },
-        {
-          "display": "宇治山田商",
-          "score": 3,
-          "won": true,
-          "name": "宇治山田商業高校",
-          "slug": "ujiyamadashogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "2回戦",
-      "venue": "四日市霞ヶ浦第１野球場",
-      "teams": [
         {
           "display": "伊勢工",
-          "score": 4,
+          "score": 2,
           "won": false,
           "name": "伊勢工業高校",
           "slug": "isekogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "白山",
+          "score": 2,
+          "won": false,
+          "name": "白山高校",
+          "slug": "mie-hakusan"
         },
+        {
+          "display": "津田学園",
+          "score": 8,
+          "won": true,
+          "name": "津田学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "宇治山田商",
+          "score": 9,
+          "won": true,
+          "name": "宇治山田商業高校",
+          "slug": "ujiyamadashogyo"
+        },
+        {
+          "display": "伊勢",
+          "score": 0,
+          "won": false,
+          "name": "伊勢高校",
+          "slug": "ise"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "松阪工",
+          "score": 17,
+          "won": true,
+          "name": "松阪工業高校",
+          "slug": "matsusakakogyo"
+        },
+        {
+          "display": "暁",
+          "score": 6,
+          "won": false,
+          "name": "暁",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-16",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "桑名",
+          "score": 0,
+          "won": false,
+          "name": "桑名高校",
+          "slug": "kuwana"
+        },
+        {
+          "display": "いなべ総合",
+          "score": 2,
+          "won": true,
+          "name": "いなべ総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "鈴鹿",
+          "score": 5,
+          "won": false,
+          "name": "鈴鹿",
+          "slug": null
+        },
+        {
+          "display": "四日市",
+          "score": 14,
+          "won": true,
+          "name": "四日市高校",
+          "slug": "yokkaichi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "3回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "久居農林",
+          "score": 4,
+          "won": true,
+          "name": "久居農林高校",
+          "slug": "hisainorin"
+        },
+        {
+          "display": "津西",
+          "score": 3,
+          "won": false,
+          "name": "津西高校",
+          "slug": "tsunishi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "3回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "津東",
+          "score": 3,
+          "won": false,
+          "name": "津東高校",
+          "slug": "tsuhigashi"
+        },
+        {
+          "display": "津田学園",
+          "score": 5,
+          "won": true,
+          "name": "津田学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "3回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "宇治山田商",
+          "score": 10,
+          "won": true,
+          "name": "宇治山田商業高校",
+          "slug": "ujiyamadashogyo"
+        },
+        {
+          "display": "松阪工",
+          "score": 3,
+          "won": false,
+          "name": "松阪工業高校",
+          "slug": "matsusakakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "3回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "いなべ総合",
+          "score": 1,
+          "won": false,
+          "name": "いなべ総合",
+          "slug": null
+        },
+        {
+          "display": "四日市",
+          "score": 4,
+          "won": true,
+          "name": "四日市高校",
+          "slug": "yokkaichi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "準々決勝",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "久居農林",
+          "score": 3,
+          "won": false,
+          "name": "久居農林高校",
+          "slug": "hisainorin"
+        },
+        {
+          "display": "津田学園",
+          "score": 8,
+          "won": true,
+          "name": "津田学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "準々決勝",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "宇治山田商",
+          "score": 5,
+          "won": false,
+          "name": "宇治山田商業高校",
+          "slug": "ujiyamadashogyo"
+        },
+        {
+          "display": "四日市",
+          "score": 6,
+          "won": true,
+          "name": "四日市高校",
+          "slug": "yokkaichi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
+      "round": "準決勝",
+      "venue": "津球場公園内野球場",
+      "teams": [
         {
           "display": "津田学園",
           "score": 11,
           "won": true,
           "name": "津田学園",
           "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "2回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "名張",
-          "score": 0,
-          "won": false,
-          "name": "名張高校",
-          "slug": "nabari"
         },
         {
           "display": "四日市",
-          "score": 8,
-          "won": true,
+          "score": 4,
+          "won": false,
           "name": "四日市高校",
           "slug": "yokkaichi"
         }
       ]
     },
     {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "2回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "桑名西",
-          "score": 1,
-          "won": false,
-          "name": "桑名西高校",
-          "slug": "kuwananishi"
-        },
-        {
-          "display": "近大工業高専",
-          "score": 4,
-          "won": true,
-          "name": "近大工業高専",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "2回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "伊勢",
-          "score": 3,
-          "won": false,
-          "name": "伊勢高校",
-          "slug": "ise"
-        },
-        {
-          "display": "鈴鹿",
-          "score": 6,
-          "won": true,
-          "name": "鈴鹿",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "2回戦",
-      "venue": "四日市霞ヶ浦第１野球場",
-      "teams": [
-        {
-          "display": "津西",
-          "score": 2,
-          "won": true,
-          "name": "津西高校",
-          "slug": "tsunishi"
-        },
-        {
-          "display": "海星",
-          "score": 1,
-          "won": false,
-          "name": "海星",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "2回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "皇學館",
-          "score": 8,
-          "won": true,
-          "name": "皇學館",
-          "slug": null
-        },
-        {
-          "display": "青山",
-          "score": 2,
-          "won": false,
-          "name": "青山",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "2回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "桑名",
-          "score": 5,
-          "won": false,
-          "name": "桑名高校",
-          "slug": "kuwana"
-        },
-        {
-          "display": "明野",
-          "score": 6,
-          "won": true,
-          "name": "明野高校",
-          "slug": "mie-akeno"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-21",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "3回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "宇治山田商",
-          "score": 0,
-          "won": false,
-          "name": "宇治山田商業高校",
-          "slug": "ujiyamadashogyo"
-        },
-        {
-          "display": "津田学園",
-          "score": 6,
-          "won": true,
-          "name": "津田学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-21",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "3回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "四日市",
-          "score": 2,
-          "won": false,
-          "name": "四日市高校",
-          "slug": "yokkaichi"
-        },
-        {
-          "display": "近大工業高専",
-          "score": 9,
-          "won": true,
-          "name": "近大工業高専",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-21",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "3回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "鈴鹿",
-          "score": 4,
-          "won": false,
-          "name": "鈴鹿",
-          "slug": null
-        },
-        {
-          "display": "津西",
-          "score": 5,
-          "won": true,
-          "name": "津西高校",
-          "slug": "tsunishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-21",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "3回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "皇學館",
-          "score": 7,
-          "won": false,
-          "name": "皇學館",
-          "slug": null
-        },
-        {
-          "display": "明野",
-          "score": 8,
-          "won": true,
-          "name": "明野高校",
-          "slug": "mie-akeno"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-23",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "準々決勝",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "津田学園",
-          "score": 2,
-          "won": false,
-          "name": "津田学園",
-          "slug": null
-        },
-        {
-          "display": "近大工業高専",
-          "score": 5,
-          "won": true,
-          "name": "近大工業高専",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-23",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "準々決勝",
-      "venue": "四日市霞ヶ浦第１野球場",
-      "teams": [
-        {
-          "display": "津西",
-          "score": 8,
-          "won": false,
-          "name": "津西高校",
-          "slug": "tsunishi"
-        },
-        {
-          "display": "明野",
-          "score": 15,
-          "won": true,
-          "name": "明野高校",
-          "slug": "mie-akeno"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-25",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
-      "round": "準決勝",
-      "venue": "四日市霞ヶ浦第１野球場",
-      "teams": [
-        {
-          "display": "近大工業高専",
-          "score": 7,
-          "won": true,
-          "name": "近大工業高専",
-          "slug": null
-        },
-        {
-          "display": "明野",
-          "score": 4,
-          "won": false,
-          "name": "明野高校",
-          "slug": "mie-akeno"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-27",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 三重大会",
+      "date": "2025-09-28",
+      "season": "autumn",
+      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
       "round": "決勝",
-      "venue": "四日市霞ヶ浦第１野球場",
+      "venue": "津球場公園内野球場",
       "teams": [
         {
-          "display": "近大工業高専",
-          "score": 3,
+          "display": "津田学園",
+          "score": 5,
           "won": false,
-          "name": "近大工業高専",
+          "name": "津田学園",
           "slug": null
         },
         {
           "display": "三重",
-          "score": 12,
+          "score": 6,
           "won": true,
           "name": "三重",
           "slug": null
@@ -20215,1252 +21461,6 @@
           "score": 1,
           "won": true,
           "name": "海星",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "松阪",
-          "score": 12,
-          "won": true,
-          "name": "松阪高校",
-          "slug": "matsusaka"
-        },
-        {
-          "display": "水産",
-          "score": 2,
-          "won": false,
-          "name": "三重県立水産高校",
-          "slug": "miekenritsusuisan"
-        }
-      ]
-    },
-    {
-      "date": "2025-08-30",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "津商",
-          "score": 12,
-          "won": true,
-          "name": "津商業高校",
-          "slug": "tsushogyo"
-        },
-        {
-          "display": "海星",
-          "score": 5,
-          "won": false,
-          "name": "海星",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "久居",
-          "score": 11,
-          "won": true,
-          "name": "久居高校",
-          "slug": "hisai"
-        },
-        {
-          "display": "朝明・四日市四郷・石薬師・鳥羽・南伊勢",
-          "score": 0,
-          "won": false,
-          "name": "朝明・四日市四郷・石薬師・鳥羽・南伊勢",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "宇治山田",
-          "score": 2,
-          "won": false,
-          "name": "宇治山田高校",
-          "slug": "ujiyamada"
-        },
-        {
-          "display": "菰野",
-          "score": 12,
-          "won": true,
-          "name": "菰野高校",
-          "slug": "komono"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "名張青峰",
-          "score": 6,
-          "won": false,
-          "name": "名張青峰高校",
-          "slug": "nabariseiho"
-        },
-        {
-          "display": "木本・紀南・熊野青藍",
-          "score": 7,
-          "won": true,
-          "name": "木本・紀南・熊野青藍",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "白子",
-          "score": 13,
-          "won": true,
-          "name": "白子高校",
-          "slug": "shiroko"
-        },
-        {
-          "display": "飯南",
-          "score": 11,
-          "won": false,
-          "name": "飯南高校",
-          "slug": "iinan"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "四日市工",
-          "score": 7,
-          "won": false,
-          "name": "四日市工業高校",
-          "slug": "yokkaichikogyo"
-        },
-        {
-          "display": "川越",
-          "score": 11,
-          "won": true,
-          "name": "川越高校",
-          "slug": "mie-kawagoe"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "四日市商",
-          "score": 23,
-          "won": true,
-          "name": "四日市商業高校",
-          "slug": "yokkaichishogyo"
-        },
-        {
-          "display": "徳風・英心",
-          "score": 0,
-          "won": false,
-          "name": "徳風・英心",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "伊賀白鳳",
-          "score": 5,
-          "won": true,
-          "name": "伊賀白鳳高校",
-          "slug": "igahakuho"
-        },
-        {
-          "display": "四日市中央工",
-          "score": 2,
-          "won": false,
-          "name": "四日市中央工業高校",
-          "slug": "yokkaichichuokogyo"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "明野",
-          "score": 12,
-          "won": true,
-          "name": "明野高校",
-          "slug": "mie-akeno"
-        },
-        {
-          "display": "尾鷲",
-          "score": 2,
-          "won": false,
-          "name": "尾鷲高校",
-          "slug": "owase"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "四日市農芸",
-          "score": 0,
-          "won": false,
-          "name": "四日市農芸高校",
-          "slug": "yokkaichinogei"
-        },
-        {
-          "display": "昴学園",
-          "score": 28,
-          "won": true,
-          "name": "昴学園高校",
-          "slug": "subarugakuen"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "桑名西",
-          "score": 5,
-          "won": true,
-          "name": "桑名西高校",
-          "slug": "kuwananishi"
-        },
-        {
-          "display": "松阪",
-          "score": 4,
-          "won": false,
-          "name": "松阪高校",
-          "slug": "matsusaka"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-15",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "津商",
-          "score": 9,
-          "won": true,
-          "name": "津商業高校",
-          "slug": "tsushogyo"
-        },
-        {
-          "display": "久居",
-          "score": 2,
-          "won": false,
-          "name": "久居高校",
-          "slug": "hisai"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "菰野",
-          "score": 8,
-          "won": true,
-          "name": "菰野高校",
-          "slug": "komono"
-        },
-        {
-          "display": "木本・紀南・熊野青藍",
-          "score": 6,
-          "won": false,
-          "name": "木本・紀南・熊野青藍",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "白子",
-          "score": 0,
-          "won": false,
-          "name": "白子高校",
-          "slug": "shiroko"
-        },
-        {
-          "display": "近大工業高専",
-          "score": 6,
-          "won": true,
-          "name": "近大工業高専",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "神村学園伊賀",
-          "score": 2,
-          "won": false,
-          "name": "神村学園伊賀",
-          "slug": null
-        },
-        {
-          "display": "川越",
-          "score": 5,
-          "won": true,
-          "name": "川越高校",
-          "slug": "mie-kawagoe"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-15",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "四日市商",
-          "score": 5,
-          "won": true,
-          "name": "四日市商業高校",
-          "slug": "yokkaichishogyo"
-        },
-        {
-          "display": "伊賀白鳳",
-          "score": 0,
-          "won": false,
-          "name": "伊賀白鳳高校",
-          "slug": "igahakuho"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-16",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "明野",
-          "score": 3,
-          "won": false,
-          "name": "明野高校",
-          "slug": "mie-akeno"
-        },
-        {
-          "display": "昴学園",
-          "score": 4,
-          "won": true,
-          "name": "昴学園高校",
-          "slug": "subarugakuen"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "上野",
-          "score": 0,
-          "won": false,
-          "name": "上野高校",
-          "slug": "mie-ueno"
-        },
-        {
-          "display": "三重",
-          "score": 5,
-          "won": true,
-          "name": "三重",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-21",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "3回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "桑名西",
-          "score": 2,
-          "won": false,
-          "name": "桑名西高校",
-          "slug": "kuwananishi"
-        },
-        {
-          "display": "津商",
-          "score": 12,
-          "won": true,
-          "name": "津商業高校",
-          "slug": "tsushogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-21",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "3回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "菰野",
-          "score": 2,
-          "won": false,
-          "name": "菰野高校",
-          "slug": "komono"
-        },
-        {
-          "display": "近大工業高専",
-          "score": 7,
-          "won": true,
-          "name": "近大工業高専",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-21",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "3回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "川越",
-          "score": 8,
-          "won": true,
-          "name": "川越高校",
-          "slug": "mie-kawagoe"
-        },
-        {
-          "display": "四日市商",
-          "score": 2,
-          "won": false,
-          "name": "四日市商業高校",
-          "slug": "yokkaichishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "3回戦",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "昴学園",
-          "score": 0,
-          "won": false,
-          "name": "昴学園高校",
-          "slug": "subarugakuen"
-        },
-        {
-          "display": "三重",
-          "score": 4,
-          "won": true,
-          "name": "三重",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-23",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "準々決勝",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "津商",
-          "score": 8,
-          "won": true,
-          "name": "津商業高校",
-          "slug": "tsushogyo"
-        },
-        {
-          "display": "近大工業高専",
-          "score": 0,
-          "won": false,
-          "name": "近大工業高専",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-23",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "準々決勝",
-      "venue": "ドリームオーシャンスタジアム",
-      "teams": [
-        {
-          "display": "川越",
-          "score": 0,
-          "won": false,
-          "name": "川越高校",
-          "slug": "mie-kawagoe"
-        },
-        {
-          "display": "三重",
-          "score": 7,
-          "won": true,
-          "name": "三重",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "準決勝",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "津商",
-          "score": 0,
-          "won": false,
-          "name": "津商業高校",
-          "slug": "tsushogyo"
-        },
-        {
-          "display": "三重",
-          "score": 7,
-          "won": true,
-          "name": "三重",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "津",
-          "score": 1,
-          "won": false,
-          "name": "津高校",
-          "slug": "tsu"
-        },
-        {
-          "display": "桑名工",
-          "score": 10,
-          "won": true,
-          "name": "桑名工業高校",
-          "slug": "kuwanakogyo"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "皇學館",
-          "score": 1,
-          "won": false,
-          "name": "皇學館",
-          "slug": null
-        },
-        {
-          "display": "津西",
-          "score": 8,
-          "won": true,
-          "name": "津西高校",
-          "slug": "tsunishi"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "高田",
-          "score": 11,
-          "won": true,
-          "name": "高田",
-          "slug": null
-        },
-        {
-          "display": "亀山",
-          "score": 3,
-          "won": false,
-          "name": "亀山高校",
-          "slug": "kameyama"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "津工",
-          "score": 1,
-          "won": false,
-          "name": "津工業高校",
-          "slug": "tsukogyo"
-        },
-        {
-          "display": "津東",
-          "score": 3,
-          "won": true,
-          "name": "津東高校",
-          "slug": "tsuhigashi"
-        }
-      ]
-    },
-    {
-      "date": "2025-08-30",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "伊勢工",
-          "score": 8,
-          "won": true,
-          "name": "伊勢工業高校",
-          "slug": "isekogyo"
-        },
-        {
-          "display": "稲生",
-          "score": 7,
-          "won": false,
-          "name": "稲生高校",
-          "slug": "ino"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "白山",
-          "score": 2,
-          "won": true,
-          "name": "白山高校",
-          "slug": "mie-hakusan"
-        },
-        {
-          "display": "四日市南",
-          "score": 1,
-          "won": false,
-          "name": "四日市南高校",
-          "slug": "yokkaichiminami"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "伊勢",
-          "score": 9,
-          "won": true,
-          "name": "伊勢高校",
-          "slug": "ise"
-        },
-        {
-          "display": "松阪商",
-          "score": 1,
-          "won": false,
-          "name": "松阪商業高校",
-          "slug": "matsusakashogyo"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "四日市西",
-          "score": 0,
-          "won": false,
-          "name": "四日市西高校",
-          "slug": "yokkaichinishi"
-        },
-        {
-          "display": "松阪工",
-          "score": 1,
-          "won": true,
-          "name": "松阪工業高校",
-          "slug": "matsusakakogyo"
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "相可",
-          "score": 5,
-          "won": false,
-          "name": "相可高校",
-          "slug": "oka"
-        },
-        {
-          "display": "暁",
-          "score": 6,
-          "won": true,
-          "name": "暁",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "桑名",
-          "score": 10,
-          "won": true,
-          "name": "桑名高校",
-          "slug": "kuwana"
-        },
-        {
-          "display": "桑名北",
-          "score": 8,
-          "won": false,
-          "name": "桑名北高校",
-          "slug": "kuwanakita"
-        }
-      ]
-    },
-    {
-      "date": "2025-08-30",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "神戸",
-          "score": 0,
-          "won": false,
-          "name": "神戸高校",
-          "slug": "kanbe"
-        },
-        {
-          "display": "いなべ総合",
-          "score": 11,
-          "won": true,
-          "name": "いなべ総合",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "名張",
-          "score": 1,
-          "won": false,
-          "name": "名張高校",
-          "slug": "nabari"
-        },
-        {
-          "display": "鈴鹿",
-          "score": 11,
-          "won": true,
-          "name": "鈴鹿",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "久居農林",
-          "score": 5,
-          "won": true,
-          "name": "久居農林高校",
-          "slug": "hisainorin"
-        },
-        {
-          "display": "桑名工",
-          "score": 3,
-          "won": false,
-          "name": "桑名工業高校",
-          "slug": "kuwanakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-15",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "津西",
-          "score": 7,
-          "won": true,
-          "name": "津西高校",
-          "slug": "tsunishi"
-        },
-        {
-          "display": "高田",
-          "score": 2,
-          "won": false,
-          "name": "高田",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "津東",
-          "score": 8,
-          "won": true,
-          "name": "津東高校",
-          "slug": "tsuhigashi"
-        },
-        {
-          "display": "伊勢工",
-          "score": 2,
-          "won": false,
-          "name": "伊勢工業高校",
-          "slug": "isekogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "白山",
-          "score": 2,
-          "won": false,
-          "name": "白山高校",
-          "slug": "mie-hakusan"
-        },
-        {
-          "display": "津田学園",
-          "score": 8,
-          "won": true,
-          "name": "津田学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "宇治山田商",
-          "score": 9,
-          "won": true,
-          "name": "宇治山田商業高校",
-          "slug": "ujiyamadashogyo"
-        },
-        {
-          "display": "伊勢",
-          "score": 0,
-          "won": false,
-          "name": "伊勢高校",
-          "slug": "ise"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-15",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "松阪工",
-          "score": 17,
-          "won": true,
-          "name": "松阪工業高校",
-          "slug": "matsusakakogyo"
-        },
-        {
-          "display": "暁",
-          "score": 6,
-          "won": false,
-          "name": "暁",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-16",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "桑名",
-          "score": 0,
-          "won": false,
-          "name": "桑名高校",
-          "slug": "kuwana"
-        },
-        {
-          "display": "いなべ総合",
-          "score": 2,
-          "won": true,
-          "name": "いなべ総合",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-15",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "2回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "鈴鹿",
-          "score": 5,
-          "won": false,
-          "name": "鈴鹿",
-          "slug": null
-        },
-        {
-          "display": "四日市",
-          "score": 14,
-          "won": true,
-          "name": "四日市高校",
-          "slug": "yokkaichi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "3回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "久居農林",
-          "score": 4,
-          "won": true,
-          "name": "久居農林高校",
-          "slug": "hisainorin"
-        },
-        {
-          "display": "津西",
-          "score": 3,
-          "won": false,
-          "name": "津西高校",
-          "slug": "tsunishi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "3回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "津東",
-          "score": 3,
-          "won": false,
-          "name": "津東高校",
-          "slug": "tsuhigashi"
-        },
-        {
-          "display": "津田学園",
-          "score": 5,
-          "won": true,
-          "name": "津田学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "3回戦",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "宇治山田商",
-          "score": 10,
-          "won": true,
-          "name": "宇治山田商業高校",
-          "slug": "ujiyamadashogyo"
-        },
-        {
-          "display": "松阪工",
-          "score": 3,
-          "won": false,
-          "name": "松阪工業高校",
-          "slug": "matsusakakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "3回戦",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "いなべ総合",
-          "score": 1,
-          "won": false,
-          "name": "いなべ総合",
-          "slug": null
-        },
-        {
-          "display": "四日市",
-          "score": 4,
-          "won": true,
-          "name": "四日市高校",
-          "slug": "yokkaichi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-23",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "準々決勝",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "久居農林",
-          "score": 3,
-          "won": false,
-          "name": "久居農林高校",
-          "slug": "hisainorin"
-        },
-        {
-          "display": "津田学園",
-          "score": 8,
-          "won": true,
-          "name": "津田学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-23",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "準々決勝",
-      "venue": "ダイムスタジアム伊勢",
-      "teams": [
-        {
-          "display": "宇治山田商",
-          "score": 5,
-          "won": false,
-          "name": "宇治山田商業高校",
-          "slug": "ujiyamadashogyo"
-        },
-        {
-          "display": "四日市",
-          "score": 6,
-          "won": true,
-          "name": "四日市高校",
-          "slug": "yokkaichi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "準決勝",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "津田学園",
-          "score": 11,
-          "won": true,
-          "name": "津田学園",
-          "slug": null
-        },
-        {
-          "display": "四日市",
-          "score": 4,
-          "won": false,
-          "name": "四日市高校",
-          "slug": "yokkaichi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-28",
-      "season": "autumn",
-      "tournament": "2025年 秋季東海地区高等学校野球 三重県大会",
-      "round": "決勝",
-      "venue": "津球場公園内野球場",
-      "teams": [
-        {
-          "display": "津田学園",
-          "score": 5,
-          "won": false,
-          "name": "津田学園",
-          "slug": null
-        },
-        {
-          "display": "三重",
-          "score": 6,
-          "won": true,
-          "name": "三重",
           "slug": null
         }
       ]

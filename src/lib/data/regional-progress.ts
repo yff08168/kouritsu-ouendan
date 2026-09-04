@@ -6,7 +6,7 @@ import type { RegionalProgressBoard } from "@/lib/regional-results";
 export const REGIONAL_PROGRESS: RegionalProgressBoard = {
   "season": "autumn",
   "latestDate": "2026-08-31",
-  "generatedAt": "2026-08-31T10:42:26Z",
+  "generatedAt": "2026-09-04T06:59:09Z",
   "districts": [
     {
       "slug": "nagano",
@@ -33,11 +33,6 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "yamanashi",
       "district": "山梨",
-      "state": "pending"
-    },
-    {
-      "slug": "tokushima",
-      "district": "徳島",
       "state": "pending"
     },
     {
@@ -68,11 +63,6 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "champion": null
     },
     {
-      "slug": "ehime",
-      "district": "愛媛",
-      "state": "pending"
-    },
-    {
       "slug": "niigata",
       "district": "新潟",
       "state": "pending"
@@ -83,38 +73,8 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "pending"
     },
     {
-      "slug": "kyoto",
-      "district": "京都",
-      "state": "pending"
-    },
-    {
-      "slug": "hiroshima",
-      "district": "広島",
-      "state": "pending"
-    },
-    {
-      "slug": "mie",
-      "district": "三重",
-      "state": "pending"
-    },
-    {
-      "slug": "kagoshima",
-      "district": "鹿児島",
-      "state": "pending"
-    },
-    {
       "slug": "ishikawa",
       "district": "石川",
-      "state": "pending"
-    },
-    {
-      "slug": "gifu",
-      "district": "岐阜",
-      "state": "pending"
-    },
-    {
-      "slug": "chiba",
-      "district": "千葉",
       "state": "pending"
     },
     {
@@ -152,18 +112,8 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "pending"
     },
     {
-      "slug": "fukui",
-      "district": "福井",
-      "state": "pending"
-    },
-    {
       "slug": "wakayama",
       "district": "和歌山",
-      "state": "pending"
-    },
-    {
-      "slug": "shiga",
-      "district": "滋賀",
       "state": "pending"
     },
     {
@@ -184,30 +134,8 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "champion": null
     },
     {
-      "slug": "okayama",
-      "district": "岡山",
-      "state": "playing",
-      "season": "autumn",
-      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
-      "games": 48,
-      "publicGames": 39,
-      "round": null,
-      "latestDate": "2026-08-30",
-      "champion": null
-    },
-    {
       "slug": "kagawa",
       "district": "香川",
-      "state": "pending"
-    },
-    {
-      "slug": "kochi",
-      "district": "高知",
-      "state": "pending"
-    },
-    {
-      "slug": "nagasaki",
-      "district": "長崎",
       "state": "pending"
     },
     {
@@ -216,18 +144,9 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "pending"
     },
     {
-      "slug": "iwate",
-      "district": "岩手",
-      "state": "pending"
-    },
-    {
       "slug": "oita",
       "district": "大分",
-      "state": "scheduled",
-      "season": "autumn",
-      "tournament": "第150回大分県高等学校野球選手権記念大会",
-      "opensOn": "2026-08-29",
-      "games": 4
+      "state": "pending"
     },
     {
       "slug": "tochigi",
@@ -240,8 +159,23 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "pending"
     },
     {
-      "slug": "okinawa",
-      "district": "沖縄",
+      "slug": "kagoshima",
+      "district": "鹿児島",
+      "state": "pending"
+    },
+    {
+      "slug": "ehime",
+      "district": "愛媛",
+      "state": "pending"
+    },
+    {
+      "slug": "nagasaki",
+      "district": "長崎",
+      "state": "pending"
+    },
+    {
+      "slug": "kochi",
+      "district": "高知",
       "state": "pending"
     },
     {
@@ -250,13 +184,68 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "pending"
     },
     {
-      "slug": "toyama",
-      "district": "富山",
+      "slug": "hiroshima",
+      "district": "広島",
+      "state": "pending"
+    },
+    {
+      "slug": "kyoto",
+      "district": "京都",
+      "state": "pending"
+    },
+    {
+      "slug": "fukui",
+      "district": "福井",
+      "state": "pending"
+    },
+    {
+      "slug": "iwate",
+      "district": "岩手",
+      "state": "pending"
+    },
+    {
+      "slug": "gifu",
+      "district": "岐阜",
       "state": "pending"
     },
     {
       "slug": "osaka",
       "district": "大阪",
+      "state": "pending"
+    },
+    {
+      "slug": "chiba",
+      "district": "千葉",
+      "state": "pending"
+    },
+    {
+      "slug": "shiga",
+      "district": "滋賀",
+      "state": "pending"
+    },
+    {
+      "slug": "okayama",
+      "district": "岡山",
+      "state": "pending"
+    },
+    {
+      "slug": "mie",
+      "district": "三重",
+      "state": "pending"
+    },
+    {
+      "slug": "tokushima",
+      "district": "徳島",
+      "state": "pending"
+    },
+    {
+      "slug": "okinawa",
+      "district": "沖縄",
+      "state": "pending"
+    },
+    {
+      "slug": "toyama",
+      "district": "富山",
       "state": "pending"
     }
   ]

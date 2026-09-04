@@ -15858,6 +15858,558 @@
       ]
     },
     {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "県営あづま球場",
+      "teams": [
+        {
+          "display": "安達",
+          "score": 4,
+          "won": false,
+          "name": "安達高校",
+          "slug": "adachi"
+        },
+        {
+          "display": "相馬",
+          "score": 11,
+          "won": true,
+          "name": "相馬高校",
+          "slug": "soma"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "いわき光洋",
+          "score": 2,
+          "won": false,
+          "name": "いわき光洋高校",
+          "slug": "iwakikoyo"
+        },
+        {
+          "display": "聖光学院",
+          "score": 9,
+          "won": true,
+          "name": "聖光学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "郡山",
+          "score": 3,
+          "won": false,
+          "name": "郡山高校",
+          "slug": "koriyama"
+        },
+        {
+          "display": "光南",
+          "score": 5,
+          "won": true,
+          "name": "光南高校",
+          "slug": "fukushima-konan"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "会津学鳳",
+          "score": 2,
+          "won": false,
+          "name": "会津学鳳高校",
+          "slug": "aizugakuho"
+        },
+        {
+          "display": "白河",
+          "score": 9,
+          "won": true,
+          "name": "白河高校",
+          "slug": "shirakawa"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "2回戦",
+      "venue": "県営あづま球場",
+      "teams": [
+        {
+          "display": "東日大昌平",
+          "score": 7,
+          "won": true,
+          "name": "東日大昌平",
+          "slug": null
+        },
+        {
+          "display": "相馬",
+          "score": 3,
+          "won": false,
+          "name": "相馬高校",
+          "slug": "soma"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "2回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "聖光学院",
+          "score": 10,
+          "won": true,
+          "name": "聖光学院",
+          "slug": null
+        },
+        {
+          "display": "会津",
+          "score": 0,
+          "won": false,
+          "name": "会津高校",
+          "slug": "aizu"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "2回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "学法石川",
+          "score": 13,
+          "won": true,
+          "name": "学法石川",
+          "slug": null
+        },
+        {
+          "display": "光南",
+          "score": 2,
+          "won": false,
+          "name": "光南高校",
+          "slug": "fukushima-konan"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "2回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "白河",
+          "score": 1,
+          "won": false,
+          "name": "白河高校",
+          "slug": "shirakawa"
+        },
+        {
+          "display": "福島商",
+          "score": 13,
+          "won": true,
+          "name": "福島商業高校",
+          "slug": "fukushima-fukushimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "準々決勝",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "東日大昌平",
+          "score": 2,
+          "won": false,
+          "name": "東日大昌平",
+          "slug": null
+        },
+        {
+          "display": "聖光学院",
+          "score": 10,
+          "won": true,
+          "name": "聖光学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "準々決勝",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "学法石川",
+          "score": 2,
+          "won": false,
+          "name": "学法石川",
+          "slug": null
+        },
+        {
+          "display": "福島商",
+          "score": 4,
+          "won": true,
+          "name": "福島商業高校",
+          "slug": "fukushima-fukushimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "準決勝",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "聖光学院",
+          "score": 9,
+          "won": true,
+          "name": "聖光学院",
+          "slug": null
+        },
+        {
+          "display": "福島商",
+          "score": 5,
+          "won": false,
+          "name": "福島商業高校",
+          "slug": "fukushima-fukushimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-14",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "勿来工",
+          "score": 3,
+          "won": false,
+          "name": "勿来工業高校",
+          "slug": "nakosokogyo"
+        },
+        {
+          "display": "湯本",
+          "score": 5,
+          "won": true,
+          "name": "湯本",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "田村",
+          "score": 6,
+          "won": true,
+          "name": "田村高校",
+          "slug": "tamura"
+        },
+        {
+          "display": "安積黎明",
+          "score": 0,
+          "won": false,
+          "name": "安積黎明高校",
+          "slug": "asakareimei"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "学法福島",
+          "score": 2,
+          "won": true,
+          "name": "学法福島",
+          "slug": null
+        },
+        {
+          "display": "須賀川",
+          "score": 1,
+          "won": false,
+          "name": "須賀川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "県営あづま球場",
+      "teams": [
+        {
+          "display": "福島西",
+          "score": 0,
+          "won": false,
+          "name": "福島西高校",
+          "slug": "fukushimanishi"
+        },
+        {
+          "display": "会津工",
+          "score": 2,
+          "won": true,
+          "name": "会津工業高校",
+          "slug": "aizukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "県営あづま球場",
+      "teams": [
+        {
+          "display": "磐城",
+          "score": 8,
+          "won": true,
+          "name": "磐城高校",
+          "slug": "iwaki"
+        },
+        {
+          "display": "福島",
+          "score": 0,
+          "won": false,
+          "name": "福島高校",
+          "slug": "fukushima"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "2回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "会津農林",
+          "score": 4,
+          "won": false,
+          "name": "会津農林高校",
+          "slug": "aizunorin"
+        },
+        {
+          "display": "湯本",
+          "score": 7,
+          "won": true,
+          "name": "湯本",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "2回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "田村",
+          "score": 2,
+          "won": false,
+          "name": "田村高校",
+          "slug": "tamura"
+        },
+        {
+          "display": "学法福島",
+          "score": 8,
+          "won": true,
+          "name": "学法福島",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "2回戦",
+      "venue": "県営あづま球場",
+      "teams": [
+        {
+          "display": "日大東北",
+          "score": 10,
+          "won": true,
+          "name": "日大東北",
+          "slug": null
+        },
+        {
+          "display": "会津工",
+          "score": 0,
+          "won": false,
+          "name": "会津工業高校",
+          "slug": "aizukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "2回戦",
+      "venue": "県営あづま球場",
+      "teams": [
+        {
+          "display": "磐城",
+          "score": 7,
+          "won": true,
+          "name": "磐城高校",
+          "slug": "iwaki"
+        },
+        {
+          "display": "小高産技",
+          "score": 3,
+          "won": false,
+          "name": "小高産技",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "準々決勝",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "湯本",
+          "score": 4,
+          "won": false,
+          "name": "湯本",
+          "slug": null
+        },
+        {
+          "display": "学法福島",
+          "score": 7,
+          "won": true,
+          "name": "学法福島",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "準々決勝",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "日大東北",
+          "score": 1,
+          "won": true,
+          "name": "日大東北",
+          "slug": null
+        },
+        {
+          "display": "磐城",
+          "score": 0,
+          "won": false,
+          "name": "磐城高校",
+          "slug": "iwaki"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "準決勝",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "学法福島",
+          "score": 0,
+          "won": false,
+          "name": "学法福島",
+          "slug": null
+        },
+        {
+          "display": "日大東北",
+          "score": 6,
+          "won": true,
+          "name": "日大東北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 福島県大会",
+      "round": "決勝",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "日大東北",
+          "score": 2,
+          "won": false,
+          "name": "日大東北",
+          "slug": null
+        },
+        {
+          "display": "聖光学院",
+          "score": 17,
+          "won": true,
+          "name": "聖光学院",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2021-09-16",
       "season": "autumn",
       "tournament": "2021年 秋季東北地区高等学校野球 福島県大会",

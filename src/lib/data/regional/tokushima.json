@@ -7026,6 +7026,655 @@
       ]
     },
     {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "JAアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "板野",
+          "score": 10,
+          "won": true,
+          "name": "板野高校",
+          "slug": "itano"
+        },
+        {
+          "display": "小松島西",
+          "score": 9,
+          "won": false,
+          "name": "小松島西高校",
+          "slug": "komatsushimanishi"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "JAアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "生光学園",
+          "score": 11,
+          "won": true,
+          "name": "生光学園",
+          "slug": null
+        },
+        {
+          "display": "那賀",
+          "score": 1,
+          "won": false,
+          "name": "那賀高校",
+          "slug": "tokushima-naga"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "JAアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "海部",
+          "score": 0,
+          "won": false,
+          "name": "海部高校",
+          "slug": "kaifu"
+        },
+        {
+          "display": "川島",
+          "score": 6,
+          "won": true,
+          "name": "川島高校",
+          "slug": "kawashima"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "オロナミンC球場",
+      "teams": [
+        {
+          "display": "徳島市立",
+          "score": 6,
+          "won": false,
+          "name": "徳島市立高校",
+          "slug": "tokushimashiritsu"
+        },
+        {
+          "display": "徳島科技",
+          "score": 9,
+          "won": true,
+          "name": "徳島科学技術高校",
+          "slug": "tokushimakagakugijutsu"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "オロナミンC球場",
+      "teams": [
+        {
+          "display": "城北",
+          "score": 0,
+          "won": false,
+          "name": "城北高校",
+          "slug": "johoku"
+        },
+        {
+          "display": "阿南工業・新野・阿南光",
+          "score": 7,
+          "won": true,
+          "name": "阿南工業・新野・阿南光",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "オロナミンC球場",
+      "teams": [
+        {
+          "display": "阿波西・吉野川",
+          "score": 7,
+          "won": true,
+          "name": "阿波西・吉野川",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "穴吹",
+          "score": 5,
+          "won": false,
+          "name": "穴吹高校",
+          "slug": "anabuki"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "2回戦",
+      "venue": "オロナミンC球場",
+      "teams": [
+        {
+          "display": "鳴門渦潮",
+          "score": 8,
+          "won": true,
+          "name": "鳴門渦潮高校",
+          "slug": "narutozushio"
+        },
+        {
+          "display": "板野",
+          "score": 1,
+          "won": false,
+          "name": "板野高校",
+          "slug": "itano"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "2回戦",
+      "venue": "オロナミンC球場",
+      "teams": [
+        {
+          "display": "生光学園",
+          "score": 1,
+          "won": false,
+          "name": "生光学園",
+          "slug": null
+        },
+        {
+          "display": "川島",
+          "score": 3,
+          "won": true,
+          "name": "川島高校",
+          "slug": "kawashima"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "2回戦",
+      "venue": "JAアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "池田",
+          "score": 9,
+          "won": true,
+          "name": "池田高校",
+          "slug": "tokushima-ikeda"
+        },
+        {
+          "display": "徳島科技",
+          "score": 0,
+          "won": false,
+          "name": "徳島科学技術高校",
+          "slug": "tokushimakagakugijutsu"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "2回戦",
+      "venue": "JAアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "阿南工業・新野・阿南光",
+          "score": 10,
+          "won": true,
+          "name": "阿南工業・新野・阿南光",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "阿波西・吉野川",
+          "score": 1,
+          "won": false,
+          "name": "阿波西・吉野川",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2018-10-08",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "準々決勝",
+      "venue": "オロナミンC球場",
+      "teams": [
+        {
+          "display": "鳴門渦潮",
+          "score": 2,
+          "won": false,
+          "name": "鳴門渦潮高校",
+          "slug": "narutozushio"
+        },
+        {
+          "display": "川島",
+          "score": 3,
+          "won": true,
+          "name": "川島高校",
+          "slug": "kawashima"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-08",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "準々決勝",
+      "venue": "オロナミンC球場",
+      "teams": [
+        {
+          "display": "池田",
+          "score": 9,
+          "won": true,
+          "name": "池田高校",
+          "slug": "tokushima-ikeda"
+        },
+        {
+          "display": "阿南工業・新野・阿南光",
+          "score": 3,
+          "won": false,
+          "name": "阿南工業・新野・阿南光",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2018-10-13",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "準決勝",
+      "venue": "オロナミンC球場",
+      "teams": [
+        {
+          "display": "川島",
+          "score": 6,
+          "won": true,
+          "name": "川島高校",
+          "slug": "kawashima"
+        },
+        {
+          "display": "池田",
+          "score": 2,
+          "won": false,
+          "name": "池田高校",
+          "slug": "tokushima-ikeda"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "オロナミンC球場",
+      "teams": [
+        {
+          "display": "小松島",
+          "score": 14,
+          "won": true,
+          "name": "小松島高校",
+          "slug": "komatsushima"
+        },
+        {
+          "display": "名西",
+          "score": 7,
+          "won": false,
+          "name": "名西高校",
+          "slug": "myozai"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "オロナミンC球場",
+      "teams": [
+        {
+          "display": "阿南工",
+          "score": 3,
+          "won": false,
+          "name": "阿南工",
+          "slug": null
+        },
+        {
+          "display": "城南",
+          "score": 10,
+          "won": true,
+          "name": "城南高校",
+          "slug": "jonan"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "オロナミンC球場",
+      "teams": [
+        {
+          "display": "阿波",
+          "score": 5,
+          "won": false,
+          "name": "阿波高校",
+          "slug": "tokushima-awa"
+        },
+        {
+          "display": "城東",
+          "score": 6,
+          "won": true,
+          "name": "城東高校",
+          "slug": "tokushima-joto"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "JAアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "鳴門",
+          "score": 11,
+          "won": true,
+          "name": "鳴門高校",
+          "slug": "tokushima-naruto"
+        },
+        {
+          "display": "つるぎ",
+          "score": 1,
+          "won": false,
+          "name": "つるぎ高校",
+          "slug": "tokushima-tsurugi"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "JAアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "徳島北",
+          "score": 7,
+          "won": true,
+          "name": "徳島北高校",
+          "slug": "tokushimakita"
+        },
+        {
+          "display": "脇町",
+          "score": 0,
+          "won": false,
+          "name": "脇町高校",
+          "slug": "wakimachi"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "JAアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "池田",
+          "score": 6,
+          "won": true,
+          "name": "池田高校",
+          "slug": "tokushima-ikeda"
+        },
+        {
+          "display": "城ノ内",
+          "score": 1,
+          "won": false,
+          "name": "城ノ内中等教育学校",
+          "slug": "jonochi"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "JAアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "城西",
+          "score": 2,
+          "won": false,
+          "name": "城西高校",
+          "slug": "josei"
+        },
+        {
+          "display": "徳島商業",
+          "score": 19,
+          "won": true,
+          "name": "徳島商業高校",
+          "slug": "tokushimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "2回戦",
+      "venue": "JAアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "富岡西",
+          "score": 12,
+          "won": true,
+          "name": "富岡西高校",
+          "slug": "tomiokanishi"
+        },
+        {
+          "display": "小松島",
+          "score": 1,
+          "won": false,
+          "name": "小松島高校",
+          "slug": "komatsushima"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "2回戦",
+      "venue": "JAアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "城南",
+          "score": 1,
+          "won": false,
+          "name": "城南高校",
+          "slug": "jonan"
+        },
+        {
+          "display": "城東",
+          "score": 2,
+          "won": true,
+          "name": "城東高校",
+          "slug": "tokushima-joto"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "2回戦",
+      "venue": "オロナミンC球場",
+      "teams": [
+        {
+          "display": "鳴門",
+          "score": 5,
+          "won": true,
+          "name": "鳴門高校",
+          "slug": "tokushima-naruto"
+        },
+        {
+          "display": "徳島北",
+          "score": 0,
+          "won": false,
+          "name": "徳島北高校",
+          "slug": "tokushimakita"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "2回戦",
+      "venue": "オロナミンC球場",
+      "teams": [
+        {
+          "display": "池田",
+          "score": 0,
+          "won": false,
+          "name": "池田高校",
+          "slug": "tokushima-ikeda"
+        },
+        {
+          "display": "徳島商業",
+          "score": 13,
+          "won": true,
+          "name": "徳島商業高校",
+          "slug": "tokushimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-07",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "準々決勝",
+      "venue": "オロナミンC球場",
+      "teams": [
+        {
+          "display": "富岡西",
+          "score": 7,
+          "won": true,
+          "name": "富岡西高校",
+          "slug": "tomiokanishi"
+        },
+        {
+          "display": "城東",
+          "score": 0,
+          "won": false,
+          "name": "城東高校",
+          "slug": "tokushima-joto"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-07",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "準々決勝",
+      "venue": "オロナミンC球場",
+      "teams": [
+        {
+          "display": "鳴門",
+          "score": 2,
+          "won": false,
+          "name": "鳴門高校",
+          "slug": "tokushima-naruto"
+        },
+        {
+          "display": "徳島商業",
+          "score": 12,
+          "won": true,
+          "name": "徳島商業高校",
+          "slug": "tokushimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-13",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "準決勝",
+      "venue": "オロナミンC球場",
+      "teams": [
+        {
+          "display": "富岡西",
+          "score": 2,
+          "won": false,
+          "name": "富岡西高校",
+          "slug": "tomiokanishi"
+        },
+        {
+          "display": "徳島商業",
+          "score": 3,
+          "won": true,
+          "name": "徳島商業高校",
+          "slug": "tokushimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-14",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 徳島県大会",
+      "round": "決勝",
+      "venue": "オロナミンC球場",
+      "teams": [
+        {
+          "display": "徳島商業",
+          "score": 4,
+          "won": false,
+          "name": "徳島商業高校",
+          "slug": "tokushimashogyo"
+        },
+        {
+          "display": "川島",
+          "score": 7,
+          "won": true,
+          "name": "川島高校",
+          "slug": "kawashima"
+        }
+      ]
+    },
+    {
       "date": "2019-09-23",
       "season": "autumn",
       "tournament": "2019年 秋季四国地区高等学校野球 徳島県大会",

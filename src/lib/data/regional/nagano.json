@@ -2912,75 +2912,6 @@
       ]
     },
     {
-      "date": "2025-08-31",
-      "season": "autumn",
-      "tournament": "第153回 北信越地区高等学校野球長野県大会 中信予選会",
-      "round": "1回戦",
-      "venue": "セキスイハイム松本スタジアム",
-      "teams": [
-        {
-          "display": "松本蟻ケ崎",
-          "score": 1,
-          "won": false,
-          "name": "松本蟻ケ崎高校",
-          "slug": "matsumotoarigasaki"
-        },
-        {
-          "display": "塩尻志学館",
-          "score": 14,
-          "won": true,
-          "name": "塩尻志学館高校",
-          "slug": "shiojirishigakukan"
-        }
-      ]
-    },
-    {
-      "date": "2025-08-31",
-      "season": "autumn",
-      "tournament": "第153回 北信越地区高等学校野球長野県大会 中信予選会",
-      "round": "1回戦",
-      "venue": "セキスイハイム松本スタジアム",
-      "teams": [
-        {
-          "display": "豊科",
-          "score": 0,
-          "won": false,
-          "name": "豊科高校",
-          "slug": "toyoshina"
-        },
-        {
-          "display": "松本第一",
-          "score": 12,
-          "won": true,
-          "name": "松本第一",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-08-31",
-      "season": "autumn",
-      "tournament": "第153回 北信越地区高等学校野球長野県大会 中信予選会",
-      "round": "1回戦",
-      "venue": "セキスイハイム松本スタジアム",
-      "teams": [
-        {
-          "display": "松本県ケ丘",
-          "score": 0,
-          "won": false,
-          "name": "松本県ケ丘高校",
-          "slug": "matsumotoagatagaoka"
-        },
-        {
-          "display": "松本国際",
-          "score": 12,
-          "won": true,
-          "name": "松本国際",
-          "slug": null
-        }
-      ]
-    },
-    {
       "date": "2025-05-19",
       "season": "spring",
       "tournament": "第152回北信越地区高等学校野球長野県大会",
@@ -6895,53 +6826,6 @@
           "won": true,
           "name": "篠ノ井高校",
           "slug": "shinonoi"
-        }
-      ]
-    },
-    {
-      "date": "2023-09-02",
-      "season": "autumn",
-      "tournament": "第149回北信越地区高等学校野球長野県大会南信予選会",
-      "round": "1回戦",
-      "venue": "しんきん諏訪湖スタジアム",
-      "teams": [
-        {
-          "display": "南信連合",
-          "score": 9,
-          "won": true,
-          "name": "南信連合",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "諏訪実業",
-          "score": 7,
-          "won": false,
-          "name": "諏訪実業高校",
-          "slug": "suwajitsugyo"
-        }
-      ]
-    },
-    {
-      "date": "2023-09-02",
-      "season": "autumn",
-      "tournament": "第149回北信越地区高等学校野球長野県大会南信予選会",
-      "round": "1回戦",
-      "venue": "しんきん諏訪湖スタジアム",
-      "teams": [
-        {
-          "display": "岡谷南",
-          "score": 16,
-          "won": true,
-          "name": "岡谷南高校",
-          "slug": "okayaminami"
-        },
-        {
-          "display": "辰野",
-          "score": 0,
-          "won": false,
-          "name": "辰野高校",
-          "slug": "tatsuno"
         }
       ]
     },
@@ -24465,6 +24349,743 @@
           "won": true,
           "name": "田川高校",
           "slug": "tagawa"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "1回戦",
+      "venue": "県営上田野球場",
+      "teams": [
+        {
+          "display": "高遠",
+          "score": 8,
+          "won": true,
+          "name": "高遠高校",
+          "slug": "takato"
+        },
+        {
+          "display": "須坂創成",
+          "score": 1,
+          "won": false,
+          "name": "須坂創成高校",
+          "slug": "suzakasosei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "1回戦",
+      "venue": "長野県営野球場",
+      "teams": [
+        {
+          "display": "長野西",
+          "score": 10,
+          "won": true,
+          "name": "長野西高校",
+          "slug": "naganonishi"
+        },
+        {
+          "display": "上田染谷丘",
+          "score": 9,
+          "won": false,
+          "name": "上田染谷丘高校",
+          "slug": "uedasomeyagaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "1回戦",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "伊那弥生ヶ丘",
+          "score": 5,
+          "won": true,
+          "name": "伊那弥生ケ丘高校",
+          "slug": "inayayoigaoka"
+        },
+        {
+          "display": "日本ウェルネス",
+          "score": 4,
+          "won": false,
+          "name": "日本ウェルネス",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "1回戦",
+      "venue": "県営上田野球場",
+      "teams": [
+        {
+          "display": "佐久長聖",
+          "score": 20,
+          "won": true,
+          "name": "佐久長聖",
+          "slug": null
+        },
+        {
+          "display": "田川",
+          "score": 0,
+          "won": false,
+          "name": "田川高校",
+          "slug": "tagawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "2回戦",
+      "venue": "県営上田野球場",
+      "teams": [
+        {
+          "display": "松本第一",
+          "score": 5,
+          "won": true,
+          "name": "松本第一",
+          "slug": null
+        },
+        {
+          "display": "高遠",
+          "score": 0,
+          "won": false,
+          "name": "高遠高校",
+          "slug": "takato"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "2回戦",
+      "venue": "県営上田野球場",
+      "teams": [
+        {
+          "display": "長野西",
+          "score": 13,
+          "won": true,
+          "name": "長野西高校",
+          "slug": "naganonishi"
+        },
+        {
+          "display": "岡谷南",
+          "score": 2,
+          "won": false,
+          "name": "岡谷南高校",
+          "slug": "okayaminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "2回戦",
+      "venue": "長野県営野球場",
+      "teams": [
+        {
+          "display": "小諸商業",
+          "score": 5,
+          "won": true,
+          "name": "小諸商業",
+          "slug": null
+        },
+        {
+          "display": "伊那弥生ヶ丘",
+          "score": 4,
+          "won": false,
+          "name": "伊那弥生ケ丘高校",
+          "slug": "inayayoigaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "2回戦",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "佐久長聖",
+          "score": 4,
+          "won": false,
+          "name": "佐久長聖",
+          "slug": null
+        },
+        {
+          "display": "長野日大",
+          "score": 6,
+          "won": true,
+          "name": "長野日大",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-26",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "準々決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "松本第一",
+          "score": 5,
+          "won": true,
+          "name": "松本第一",
+          "slug": null
+        },
+        {
+          "display": "長野西",
+          "score": 1,
+          "won": false,
+          "name": "長野西高校",
+          "slug": "naganonishi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-26",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "準々決勝",
+      "venue": "県営上田野球場",
+      "teams": [
+        {
+          "display": "小諸商業",
+          "score": 1,
+          "won": false,
+          "name": "小諸商業",
+          "slug": null
+        },
+        {
+          "display": "長野日大",
+          "score": 5,
+          "won": true,
+          "name": "長野日大",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-10-01",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "準決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "松本第一",
+          "score": 9,
+          "won": true,
+          "name": "松本第一",
+          "slug": null
+        },
+        {
+          "display": "長野日大",
+          "score": 8,
+          "won": false,
+          "name": "長野日大",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "1回戦",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "中野立志館",
+          "score": 3,
+          "won": true,
+          "name": "中野立志館高校",
+          "slug": "nakanorisshikan"
+        },
+        {
+          "display": "小諸",
+          "score": 1,
+          "won": false,
+          "name": "小諸",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "1回戦",
+      "venue": "県営上田野球場",
+      "teams": [
+        {
+          "display": "上田東",
+          "score": 1,
+          "won": false,
+          "name": "上田東高校",
+          "slug": "uedahigashi"
+        },
+        {
+          "display": "都市大塩尻",
+          "score": 8,
+          "won": true,
+          "name": "都市大塩尻",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "1回戦",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "長野商業",
+          "score": 11,
+          "won": true,
+          "name": "長野商業高校",
+          "slug": "naganoshogyo"
+        },
+        {
+          "display": "岡谷東",
+          "score": 1,
+          "won": false,
+          "name": "岡谷東高校",
+          "slug": "okayahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "1回戦",
+      "venue": "長野県営野球場",
+      "teams": [
+        {
+          "display": "赤穂",
+          "score": 5,
+          "won": true,
+          "name": "赤穂高校",
+          "slug": "akaho"
+        },
+        {
+          "display": "松本県ヶ丘",
+          "score": 0,
+          "won": false,
+          "name": "松本県ケ丘高校",
+          "slug": "matsumotoagatagaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "2回戦",
+      "venue": "県営上田野球場",
+      "teams": [
+        {
+          "display": "東海大諏訪",
+          "score": 8,
+          "won": true,
+          "name": "東海大諏訪",
+          "slug": null
+        },
+        {
+          "display": "中野立志館",
+          "score": 1,
+          "won": false,
+          "name": "中野立志館高校",
+          "slug": "nakanorisshikan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "2回戦",
+      "venue": "長野県営野球場",
+      "teams": [
+        {
+          "display": "都市大塩尻",
+          "score": 2,
+          "won": false,
+          "name": "都市大塩尻",
+          "slug": null
+        },
+        {
+          "display": "飯山",
+          "score": 3,
+          "won": true,
+          "name": "飯山高校",
+          "slug": "iiyama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "2回戦",
+      "venue": "長野県営野球場",
+      "teams": [
+        {
+          "display": "松本深志",
+          "score": 0,
+          "won": false,
+          "name": "松本深志高校",
+          "slug": "matsumotofukashi"
+        },
+        {
+          "display": "長野商業",
+          "score": 3,
+          "won": true,
+          "name": "長野商業高校",
+          "slug": "naganoshogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "2回戦",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "赤穂",
+          "score": 0,
+          "won": false,
+          "name": "赤穂高校",
+          "slug": "akaho"
+        },
+        {
+          "display": "上田西",
+          "score": 10,
+          "won": true,
+          "name": "上田西",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-26",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "準々決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "東海大諏訪",
+          "score": 7,
+          "won": true,
+          "name": "東海大諏訪",
+          "slug": null
+        },
+        {
+          "display": "飯山",
+          "score": 0,
+          "won": false,
+          "name": "飯山高校",
+          "slug": "iiyama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-09-26",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "準々決勝",
+      "venue": "県営上田野球場",
+      "teams": [
+        {
+          "display": "長野商業",
+          "score": 2,
+          "won": false,
+          "name": "長野商業高校",
+          "slug": "naganoshogyo"
+        },
+        {
+          "display": "上田西",
+          "score": 14,
+          "won": true,
+          "name": "上田西",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-10-01",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "準決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "東海大諏訪",
+          "score": 5,
+          "won": false,
+          "name": "東海大諏訪",
+          "slug": null
+        },
+        {
+          "display": "上田西",
+          "score": 14,
+          "won": true,
+          "name": "上田西",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2018-10-03",
+      "season": "autumn",
+      "tournament": "2018年 秋季北信越地区高校野球 長野県大会",
+      "round": "決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "上田西",
+          "score": 11,
+          "won": true,
+          "name": "上田西",
+          "slug": null
+        },
+        {
+          "display": "松本第一",
+          "score": 6,
+          "won": false,
+          "name": "松本第一",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://nagano.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2025-08-31",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球長野県大会 中信予選会",
+      "round": "1回戦",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "松本蟻ケ崎",
+          "score": 1,
+          "won": false,
+          "name": "松本蟻ケ崎高校",
+          "slug": "matsumotoarigasaki"
+        },
+        {
+          "display": "塩尻志学館",
+          "score": 14,
+          "won": true,
+          "name": "塩尻志学館高校",
+          "slug": "shiojirishigakukan"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-31",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球長野県大会 中信予選会",
+      "round": "1回戦",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "豊科",
+          "score": 0,
+          "won": false,
+          "name": "豊科高校",
+          "slug": "toyoshina"
+        },
+        {
+          "display": "松本第一",
+          "score": 12,
+          "won": true,
+          "name": "松本第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-08-31",
+      "season": "autumn",
+      "tournament": "第153回 北信越地区高等学校野球長野県大会 中信予選会",
+      "round": "1回戦",
+      "venue": "セキスイハイム松本スタジアム",
+      "teams": [
+        {
+          "display": "松本県ケ丘",
+          "score": 0,
+          "won": false,
+          "name": "松本県ケ丘高校",
+          "slug": "matsumotoagatagaoka"
+        },
+        {
+          "display": "松本国際",
+          "score": 12,
+          "won": true,
+          "name": "松本国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-09-02",
+      "season": "autumn",
+      "tournament": "第149回北信越地区高等学校野球長野県大会南信予選会",
+      "round": "1回戦",
+      "venue": "しんきん諏訪湖スタジアム",
+      "teams": [
+        {
+          "display": "南信連合",
+          "score": 9,
+          "won": true,
+          "name": "南信連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "諏訪実業",
+          "score": 7,
+          "won": false,
+          "name": "諏訪実業高校",
+          "slug": "suwajitsugyo"
+        }
+      ]
+    },
+    {
+      "date": "2023-09-02",
+      "season": "autumn",
+      "tournament": "第149回北信越地区高等学校野球長野県大会南信予選会",
+      "round": "1回戦",
+      "venue": "しんきん諏訪湖スタジアム",
+      "teams": [
+        {
+          "display": "岡谷南",
+          "score": 16,
+          "won": true,
+          "name": "岡谷南高校",
+          "slug": "okayaminami"
+        },
+        {
+          "display": "辰野",
+          "score": 0,
+          "won": false,
+          "name": "辰野高校",
+          "slug": "tatsuno"
         }
       ]
     },

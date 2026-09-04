@@ -13905,6 +13905,443 @@
       ]
     },
     {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "1回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "倉敷古城池",
+          "score": 0,
+          "won": false,
+          "name": "倉敷古城池高校",
+          "slug": "kurashikikojochi"
+        },
+        {
+          "display": "岡山南",
+          "score": 6,
+          "won": true,
+          "name": "岡山南高校",
+          "slug": "okayamaminami"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "1回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "岡山東商業",
+          "score": 7,
+          "won": true,
+          "name": "岡山東商業高校",
+          "slug": "okayamahigashishogyo"
+        },
+        {
+          "display": "岡山県共生",
+          "score": 3,
+          "won": false,
+          "name": "岡山県共生",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "玉野光南",
+          "score": 3,
+          "won": true,
+          "name": "玉野光南高校",
+          "slug": "tamanokonan"
+        },
+        {
+          "display": "倉敷工業",
+          "score": 2,
+          "won": false,
+          "name": "倉敷工業高校",
+          "slug": "kurashikikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山理大附",
+          "score": 5,
+          "won": true,
+          "name": "岡山理大附",
+          "slug": null
+        },
+        {
+          "display": "岡山南",
+          "score": 4,
+          "won": false,
+          "name": "岡山南高校",
+          "slug": "okayamaminami"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山東商業",
+          "score": 0,
+          "won": false,
+          "name": "岡山東商業高校",
+          "slug": "okayamahigashishogyo"
+        },
+        {
+          "display": "玉島商業",
+          "score": 4,
+          "won": true,
+          "name": "玉島商業高校",
+          "slug": "tamashimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "関西",
+          "score": 5,
+          "won": true,
+          "name": "関西",
+          "slug": null
+        },
+        {
+          "display": "東岡山工業",
+          "score": 1,
+          "won": false,
+          "name": "東岡山工業高校",
+          "slug": "higashiokayamakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-01",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "玉野光南",
+          "score": 4,
+          "won": false,
+          "name": "玉野光南高校",
+          "slug": "tamanokonan"
+        },
+        {
+          "display": "岡山理大附",
+          "score": 6,
+          "won": true,
+          "name": "岡山理大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-10-01",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "玉島商業",
+          "score": 1,
+          "won": false,
+          "name": "玉島商業高校",
+          "slug": "tamashimashogyo"
+        },
+        {
+          "display": "関西",
+          "score": 6,
+          "won": true,
+          "name": "関西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-10-06",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "準決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山理大附",
+          "score": 5,
+          "won": false,
+          "name": "岡山理大附",
+          "slug": null
+        },
+        {
+          "display": "関西",
+          "score": 7,
+          "won": true,
+          "name": "関西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "1回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "興譲館",
+          "score": 7,
+          "won": false,
+          "name": "興譲館",
+          "slug": null
+        },
+        {
+          "display": "勝山",
+          "score": 8,
+          "won": true,
+          "name": "勝山高校",
+          "slug": "okayama-katsuyama"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "1回戦",
+      "venue": "エイコンスタジアム",
+      "teams": [
+        {
+          "display": "金光学園",
+          "score": 9,
+          "won": true,
+          "name": "金光学園",
+          "slug": null
+        },
+        {
+          "display": "邑久",
+          "score": 2,
+          "won": false,
+          "name": "邑久高校",
+          "slug": "oku"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "おかやま山陽",
+          "score": 0,
+          "won": false,
+          "name": "おかやま山陽",
+          "slug": null
+        },
+        {
+          "display": "創志学園",
+          "score": 7,
+          "won": true,
+          "name": "創志学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "明誠学院",
+          "score": 9,
+          "won": true,
+          "name": "明誠学院",
+          "slug": null
+        },
+        {
+          "display": "勝山",
+          "score": 0,
+          "won": false,
+          "name": "勝山高校",
+          "slug": "okayama-katsuyama"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "金光学園",
+          "score": 0,
+          "won": false,
+          "name": "金光学園",
+          "slug": null
+        },
+        {
+          "display": "倉敷商業",
+          "score": 7,
+          "won": true,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山県作陽",
+          "score": 0,
+          "won": false,
+          "name": "岡山県作陽",
+          "slug": null
+        },
+        {
+          "display": "岡山学芸館",
+          "score": 2,
+          "won": true,
+          "name": "岡山学芸館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-10-01",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "創志学園",
+          "score": 4,
+          "won": true,
+          "name": "創志学園",
+          "slug": null
+        },
+        {
+          "display": "明誠学院",
+          "score": 0,
+          "won": false,
+          "name": "明誠学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-10-01",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "倉敷商業",
+          "score": 3,
+          "won": true,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        },
+        {
+          "display": "岡山学芸館",
+          "score": 2,
+          "won": false,
+          "name": "岡山学芸館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-10-06",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "準決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "創志学園",
+          "score": 5,
+          "won": false,
+          "name": "創志学園",
+          "slug": null
+        },
+        {
+          "display": "倉敷商業",
+          "score": 7,
+          "won": true,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-07",
+      "season": "autumn",
+      "tournament": "2018年 秋季中国地区高校野球 岡山県大会",
+      "round": "決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "倉敷商業",
+          "score": 3,
+          "won": true,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        },
+        {
+          "display": "関西",
+          "score": 1,
+          "won": false,
+          "name": "関西",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2021-09-25",
       "season": "autumn",
       "tournament": "2021年 秋季中国地区高校野球 岡山県大会",

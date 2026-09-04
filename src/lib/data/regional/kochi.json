@@ -560,6 +560,630 @@
       ]
     },
     {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "1回戦",
+      "venue": "高知市高知野球場",
+      "teams": [
+        {
+          "display": "高知東",
+          "score": 7,
+          "won": true,
+          "name": "高知東高校",
+          "slug": "kochihigashi"
+        },
+        {
+          "display": "安芸",
+          "score": 0,
+          "won": false,
+          "name": "安芸高校",
+          "slug": "aki"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "1回戦",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "小津",
+          "score": 3,
+          "won": false,
+          "name": "高知小津高校",
+          "slug": "kochiozu"
+        },
+        {
+          "display": "岡豊",
+          "score": 4,
+          "won": true,
+          "name": "岡豊高校",
+          "slug": "oko"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "1回戦",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "須崎工",
+          "score": 1,
+          "won": false,
+          "name": "須崎工",
+          "slug": null
+        },
+        {
+          "display": "梼原",
+          "score": 8,
+          "won": true,
+          "name": "梼原",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "1回戦",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "中村",
+          "score": 3,
+          "won": true,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        },
+        {
+          "display": "須崎",
+          "score": 1,
+          "won": false,
+          "name": "須崎",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-16",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "1回戦",
+      "venue": "高知市高知野球場",
+      "teams": [
+        {
+          "display": "清水・幡多農・窪川",
+          "score": 21,
+          "won": true,
+          "name": "清水・幡多農・窪川",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "安芸桜ケ丘",
+          "score": 3,
+          "won": false,
+          "name": "安芸桜ケ丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-16",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "1回戦",
+      "venue": "高知市高知野球場",
+      "teams": [
+        {
+          "display": "高知南",
+          "score": 1,
+          "won": false,
+          "name": "高知南",
+          "slug": null
+        },
+        {
+          "display": "追手前",
+          "score": 6,
+          "won": true,
+          "name": "高知追手前高校",
+          "slug": "kochiotemae"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-20",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "2回戦",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "高知",
+          "score": 9,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        },
+        {
+          "display": "高知東",
+          "score": 5,
+          "won": false,
+          "name": "高知東高校",
+          "slug": "kochihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-20",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "2回戦",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "岡豊",
+          "score": 6,
+          "won": true,
+          "name": "岡豊高校",
+          "slug": "oko"
+        },
+        {
+          "display": "梼原",
+          "score": 1,
+          "won": false,
+          "name": "梼原",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-21",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "2回戦",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "高知商",
+          "score": 7,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "中村",
+          "score": 3,
+          "won": false,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-21",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "2回戦",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "清水・幡多農・窪川",
+          "score": 0,
+          "won": false,
+          "name": "清水・幡多農・窪川",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "追手前",
+          "score": 7,
+          "won": true,
+          "name": "高知追手前高校",
+          "slug": "kochiotemae"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-23",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "準々決勝",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "高知",
+          "score": 6,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        },
+        {
+          "display": "岡豊",
+          "score": 2,
+          "won": false,
+          "name": "岡豊高校",
+          "slug": "oko"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-23",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "準々決勝",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "高知商",
+          "score": 9,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "追手前",
+          "score": 2,
+          "won": false,
+          "name": "高知追手前高校",
+          "slug": "kochiotemae"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-25",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "準決勝",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "高知",
+          "score": 0,
+          "won": false,
+          "name": "高知",
+          "slug": null
+        },
+        {
+          "display": "高知商",
+          "score": 4,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-14",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "1回戦",
+      "venue": "高知市高知野球場",
+      "teams": [
+        {
+          "display": "丸の内・室戸",
+          "score": 3,
+          "won": false,
+          "name": "丸の内・室戸",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "高知中央",
+          "score": 11,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-14",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "1回戦",
+      "venue": "高知市高知野球場",
+      "teams": [
+        {
+          "display": "高知工",
+          "score": 10,
+          "won": true,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        },
+        {
+          "display": "宿毛工",
+          "score": 3,
+          "won": false,
+          "name": "宿毛工業高校",
+          "slug": "sukumokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-14",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "1回戦",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "宿毛",
+          "score": 4,
+          "won": true,
+          "name": "宿毛高校",
+          "slug": "sukumo"
+        },
+        {
+          "display": "高知高専",
+          "score": 3,
+          "won": false,
+          "name": "高知工業高専",
+          "slug": "kochikogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-14",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "1回戦",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "伊野商",
+          "score": 5,
+          "won": false,
+          "name": "伊野商業高校",
+          "slug": "inoshogyo"
+        },
+        {
+          "display": "高知西",
+          "score": 12,
+          "won": true,
+          "name": "高知西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "1回戦",
+      "venue": "高知市高知野球場",
+      "teams": [
+        {
+          "display": "高知農業",
+          "score": 0,
+          "won": false,
+          "name": "高知農業高校",
+          "slug": "kochinogyo"
+        },
+        {
+          "display": "土佐塾",
+          "score": 8,
+          "won": true,
+          "name": "土佐塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "1回戦",
+      "venue": "高知市高知野球場",
+      "teams": [
+        {
+          "display": "高知海洋",
+          "score": 0,
+          "won": false,
+          "name": "高知海洋高校",
+          "slug": "kochikaiyo"
+        },
+        {
+          "display": "東工業",
+          "score": 10,
+          "won": true,
+          "name": "高知東工業高校",
+          "slug": "kochihigashikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-16",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "2回戦",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 4,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "高知中央",
+          "score": 2,
+          "won": false,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-16",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "2回戦",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "高知工",
+          "score": 4,
+          "won": true,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        },
+        {
+          "display": "宿毛",
+          "score": 2,
+          "won": false,
+          "name": "宿毛高校",
+          "slug": "sukumo"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-16",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "2回戦",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "土佐",
+          "score": 6,
+          "won": true,
+          "name": "土佐",
+          "slug": null
+        },
+        {
+          "display": "高知西",
+          "score": 0,
+          "won": false,
+          "name": "高知西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-20",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "2回戦",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "土佐塾",
+          "score": 8,
+          "won": true,
+          "name": "土佐塾",
+          "slug": null
+        },
+        {
+          "display": "東工業",
+          "score": 1,
+          "won": false,
+          "name": "高知東工業高校",
+          "slug": "kochihigashikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-22",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "準々決勝",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 8,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "高知工",
+          "score": 1,
+          "won": false,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-22",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "準々決勝",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "土佐",
+          "score": 6,
+          "won": true,
+          "name": "土佐",
+          "slug": null
+        },
+        {
+          "display": "土佐塾",
+          "score": 3,
+          "won": false,
+          "name": "土佐塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-25",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "準決勝",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 8,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "土佐",
+          "score": 0,
+          "won": false,
+          "name": "土佐",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-26",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 高知県大会",
+      "round": "決勝",
+      "venue": "県立春野総合運動公園野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 2,
+          "won": false,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "高知商",
+          "score": 10,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        }
+      ]
+    },
+    {
       "date": "2019-07-14",
       "season": "summer",
       "tournament": "第101回全国高等学校野球選手権 高知大会",
@@ -4756,6 +5380,583 @@
           "won": true,
           "name": "明徳義塾",
           "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "1回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知海洋・高知丸の内・室戸",
+          "score": 0,
+          "won": false,
+          "name": "高知海洋・高知丸の内・室戸",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "高知中央",
+          "score": 10,
+          "won": true,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "1回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "中村",
+          "score": 9,
+          "won": true,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        },
+        {
+          "display": "清水・宿毛・幡多農業",
+          "score": 1,
+          "won": false,
+          "name": "清水・宿毛・幡多農業",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "1回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "小津",
+          "score": 0,
+          "won": false,
+          "name": "高知小津高校",
+          "slug": "kochiozu"
+        },
+        {
+          "display": "土佐塾",
+          "score": 5,
+          "won": true,
+          "name": "土佐塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "須崎工",
+          "score": 8,
+          "won": true,
+          "name": "須崎工",
+          "slug": null
+        },
+        {
+          "display": "高知農業",
+          "score": 5,
+          "won": false,
+          "name": "高知農業高校",
+          "slug": "kochinogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "桜ケ丘",
+          "score": 1,
+          "won": false,
+          "name": "桜ケ丘",
+          "slug": null
+        },
+        {
+          "display": "安芸",
+          "score": 3,
+          "won": true,
+          "name": "安芸高校",
+          "slug": "aki"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "2回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "高知商",
+          "score": 5,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "高知中央",
+          "score": 3,
+          "won": false,
+          "name": "高知中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "2回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "中村",
+          "score": 2,
+          "won": false,
+          "name": "中村高校",
+          "slug": "kochi-nakamura"
+        },
+        {
+          "display": "土佐塾",
+          "score": 4,
+          "won": true,
+          "name": "土佐塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "2回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "土佐",
+          "score": 11,
+          "won": true,
+          "name": "土佐",
+          "slug": null
+        },
+        {
+          "display": "須崎工",
+          "score": 0,
+          "won": false,
+          "name": "須崎工",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "2回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知工",
+          "score": 6,
+          "won": true,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        },
+        {
+          "display": "安芸",
+          "score": 1,
+          "won": false,
+          "name": "安芸高校",
+          "slug": "aki"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-08",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "準々決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知商",
+          "score": 6,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "土佐塾",
+          "score": 0,
+          "won": false,
+          "name": "土佐塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-10-08",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "準々決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "土佐",
+          "score": 3,
+          "won": true,
+          "name": "土佐",
+          "slug": null
+        },
+        {
+          "display": "高知工",
+          "score": 2,
+          "won": false,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-13",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "準決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知商",
+          "score": 3,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "土佐",
+          "score": 0,
+          "won": false,
+          "name": "土佐",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-15",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "1回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "梼原",
+          "score": 3,
+          "won": true,
+          "name": "梼原",
+          "slug": null
+        },
+        {
+          "display": "伊野商",
+          "score": 0,
+          "won": false,
+          "name": "伊野商業高校",
+          "slug": "inoshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-15",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "1回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "須崎",
+          "score": 3,
+          "won": false,
+          "name": "須崎",
+          "slug": null
+        },
+        {
+          "display": "高知高専",
+          "score": 4,
+          "won": true,
+          "name": "高知工業高専",
+          "slug": "kochikogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-15",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "1回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知東",
+          "score": 1,
+          "won": true,
+          "name": "高知東高校",
+          "slug": "kochihigashi"
+        },
+        {
+          "display": "高知南",
+          "score": 0,
+          "won": false,
+          "name": "高知南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-15",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "宿毛工",
+          "score": 10,
+          "won": true,
+          "name": "宿毛工業高校",
+          "slug": "sukumokogyo"
+        },
+        {
+          "display": "東工業",
+          "score": 0,
+          "won": false,
+          "name": "高知東工業高校",
+          "slug": "kochihigashikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-15",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "1回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "岡豊",
+          "score": 1,
+          "won": true,
+          "name": "岡豊高校",
+          "slug": "oko"
+        },
+        {
+          "display": "高知西",
+          "score": 0,
+          "won": false,
+          "name": "高知西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "2回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 9,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "梼原",
+          "score": 0,
+          "won": false,
+          "name": "梼原",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "2回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知高専",
+          "score": 4,
+          "won": false,
+          "name": "高知工業高専",
+          "slug": "kochikogyo-kosen"
+        },
+        {
+          "display": "高知東",
+          "score": 8,
+          "won": true,
+          "name": "高知東高校",
+          "slug": "kochihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "2回戦",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知",
+          "score": 14,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        },
+        {
+          "display": "宿毛工",
+          "score": 1,
+          "won": false,
+          "name": "宿毛工業高校",
+          "slug": "sukumokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "2回戦",
+      "venue": "高知球場",
+      "teams": [
+        {
+          "display": "追手前",
+          "score": 1,
+          "won": false,
+          "name": "高知追手前高校",
+          "slug": "kochiotemae"
+        },
+        {
+          "display": "岡豊",
+          "score": 4,
+          "won": true,
+          "name": "岡豊高校",
+          "slug": "oko"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-07",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "準々決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 7,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "高知東",
+          "score": 1,
+          "won": false,
+          "name": "高知東高校",
+          "slug": "kochihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-07",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "準々決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知",
+          "score": 2,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        },
+        {
+          "display": "岡豊",
+          "score": 1,
+          "won": false,
+          "name": "岡豊高校",
+          "slug": "oko"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-13",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "準決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 8,
+          "won": false,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "高知",
+          "score": 10,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-10-14",
+      "season": "autumn",
+      "tournament": "2018年 秋季四国地区高等学校野球 高知県大会",
+      "round": "決勝",
+      "venue": "春野球場",
+      "teams": [
+        {
+          "display": "高知",
+          "score": 2,
+          "won": false,
+          "name": "高知",
+          "slug": null
+        },
+        {
+          "display": "高知商",
+          "score": 8,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
         }
       ]
     },

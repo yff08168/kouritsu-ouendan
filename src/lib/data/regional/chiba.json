@@ -5,6 +5,1110 @@
   "sourceUrl": "https://chiba.hsbflash.jp/",
   "games": [
     {
+      "date": "2018-04-28",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "1回戦",
+      "venue": "第一カッター球場（旧：秋津野球場）",
+      "teams": [
+        {
+          "display": "印旛明誠",
+          "score": 3,
+          "won": false,
+          "name": "印旛明誠高校",
+          "slug": "inbameisei"
+        },
+        {
+          "display": "市立船橋",
+          "score": 4,
+          "won": true,
+          "name": "船橋高校",
+          "slug": "chiba-funabashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-28",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "1回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "千葉敬愛",
+          "score": 8,
+          "won": true,
+          "name": "千葉敬愛",
+          "slug": null
+        },
+        {
+          "display": "船橋芝山",
+          "score": 6,
+          "won": false,
+          "name": "船橋芝山高校",
+          "slug": "funabashishibayama"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-28",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "1回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "専修大松戸",
+          "score": 9,
+          "won": true,
+          "name": "専修大松戸",
+          "slug": null
+        },
+        {
+          "display": "我孫子",
+          "score": 0,
+          "won": false,
+          "name": "我孫子高校",
+          "slug": "abiko"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-28",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "1回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "東葛飾",
+          "score": 5,
+          "won": false,
+          "name": "東葛飾高校",
+          "slug": "higashikatsushika"
+        },
+        {
+          "display": "東葉",
+          "score": 12,
+          "won": true,
+          "name": "東葉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-04-28",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "1回戦",
+      "venue": "第一カッター球場（旧：秋津野球場）",
+      "teams": [
+        {
+          "display": "鎌ケ谷",
+          "score": 3,
+          "won": false,
+          "name": "鎌ヶ谷高校",
+          "slug": "kamagaya"
+        },
+        {
+          "display": "市川昴",
+          "score": 8,
+          "won": true,
+          "name": "市川昴高校",
+          "slug": "ichikawasubaru"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-28",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "1回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "市川",
+          "score": 1,
+          "won": false,
+          "name": "市川",
+          "slug": null
+        },
+        {
+          "display": "西武台千葉",
+          "score": 7,
+          "won": true,
+          "name": "西武台千葉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-04-28",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "1回戦",
+      "venue": "第一カッター球場（旧：秋津野球場）",
+      "teams": [
+        {
+          "display": "四街道",
+          "score": 2,
+          "won": false,
+          "name": "四街道高校",
+          "slug": "yotsukaido"
+        },
+        {
+          "display": "学館船橋",
+          "score": 3,
+          "won": true,
+          "name": "学館船橋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-04-28",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "1回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "麗澤",
+          "score": 1,
+          "won": false,
+          "name": "麗澤",
+          "slug": null
+        },
+        {
+          "display": "市立柏",
+          "score": 9,
+          "won": true,
+          "name": "柏高校",
+          "slug": "chiba-kashiwa"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-29",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "2回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "流経大柏",
+          "score": 2,
+          "won": true,
+          "name": "流経大柏",
+          "slug": null
+        },
+        {
+          "display": "市立船橋",
+          "score": 0,
+          "won": false,
+          "name": "船橋高校",
+          "slug": "chiba-funabashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-29",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "2回戦",
+      "venue": "第一カッター球場（旧：秋津野球場）",
+      "teams": [
+        {
+          "display": "千葉敬愛",
+          "score": 3,
+          "won": true,
+          "name": "千葉敬愛",
+          "slug": null
+        },
+        {
+          "display": "日体大柏",
+          "score": 1,
+          "won": false,
+          "name": "日体大柏",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-04-29",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "2回戦",
+      "venue": "第一カッター球場（旧：秋津野球場）",
+      "teams": [
+        {
+          "display": "松戸馬橋",
+          "score": 2,
+          "won": false,
+          "name": "松戸馬橋高校",
+          "slug": "matsudomabashi"
+        },
+        {
+          "display": "専修大松戸",
+          "score": 5,
+          "won": true,
+          "name": "専修大松戸",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-04-29",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "2回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "東葉",
+          "score": 1,
+          "won": false,
+          "name": "東葉",
+          "slug": null
+        },
+        {
+          "display": "中央学院",
+          "score": 8,
+          "won": true,
+          "name": "中央学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-04-29",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "2回戦",
+      "venue": "第一カッター球場（旧：秋津野球場）",
+      "teams": [
+        {
+          "display": "八千代松陰",
+          "score": 10,
+          "won": true,
+          "name": "八千代松陰",
+          "slug": null
+        },
+        {
+          "display": "市川昴",
+          "score": 0,
+          "won": false,
+          "name": "市川昴高校",
+          "slug": "ichikawasubaru"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-29",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "2回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "西武台千葉",
+          "score": 4,
+          "won": true,
+          "name": "西武台千葉",
+          "slug": null
+        },
+        {
+          "display": "我孫子東",
+          "score": 1,
+          "won": false,
+          "name": "我孫子東高校",
+          "slug": "abikohigashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-29",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "2回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "学館浦安",
+          "score": 2,
+          "won": true,
+          "name": "学館浦安",
+          "slug": null
+        },
+        {
+          "display": "学館船橋",
+          "score": 0,
+          "won": false,
+          "name": "学館船橋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-04-30",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "2回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "市立柏",
+          "score": 1,
+          "won": false,
+          "name": "柏高校",
+          "slug": "chiba-kashiwa"
+        },
+        {
+          "display": "習志野",
+          "score": 4,
+          "won": true,
+          "name": "習志野高校",
+          "slug": "narashino"
+        }
+      ]
+    },
+    {
+      "date": "2018-05-04",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "3回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "流経大柏",
+          "score": 5,
+          "won": true,
+          "name": "流経大柏",
+          "slug": null
+        },
+        {
+          "display": "千葉敬愛",
+          "score": 1,
+          "won": false,
+          "name": "千葉敬愛",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-05-04",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "3回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "専修大松戸",
+          "score": 6,
+          "won": true,
+          "name": "専修大松戸",
+          "slug": null
+        },
+        {
+          "display": "中央学院",
+          "score": 2,
+          "won": false,
+          "name": "中央学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-05-04",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "3回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "八千代松陰",
+          "score": 2,
+          "won": true,
+          "name": "八千代松陰",
+          "slug": null
+        },
+        {
+          "display": "西武台千葉",
+          "score": 1,
+          "won": false,
+          "name": "西武台千葉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-05-04",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "3回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "学館浦安",
+          "score": 0,
+          "won": false,
+          "name": "学館浦安",
+          "slug": null
+        },
+        {
+          "display": "習志野",
+          "score": 7,
+          "won": true,
+          "name": "習志野高校",
+          "slug": "narashino"
+        }
+      ]
+    },
+    {
+      "date": "2018-05-05",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "準々決勝",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "流経大柏",
+          "score": 2,
+          "won": false,
+          "name": "流経大柏",
+          "slug": null
+        },
+        {
+          "display": "専修大松戸",
+          "score": 3,
+          "won": true,
+          "name": "専修大松戸",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-05-05",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "準々決勝",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "八千代松陰",
+          "score": 2,
+          "won": false,
+          "name": "八千代松陰",
+          "slug": null
+        },
+        {
+          "display": "習志野",
+          "score": 9,
+          "won": true,
+          "name": "習志野高校",
+          "slug": "narashino"
+        }
+      ]
+    },
+    {
+      "date": "2018-05-07",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "準決勝",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "専修大松戸",
+          "score": 0,
+          "won": false,
+          "name": "専修大松戸",
+          "slug": null
+        },
+        {
+          "display": "習志野",
+          "score": 8,
+          "won": true,
+          "name": "習志野高校",
+          "slug": "narashino"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-28",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "1回戦",
+      "venue": "青葉の森公園野球場",
+      "teams": [
+        {
+          "display": "館山総合",
+          "score": 0,
+          "won": false,
+          "name": "館山総合高校",
+          "slug": "tateyamasogo"
+        },
+        {
+          "display": "成東",
+          "score": 2,
+          "won": true,
+          "name": "成東高校",
+          "slug": "naruto"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-28",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "1回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "姉崎",
+          "score": 5,
+          "won": true,
+          "name": "姉崎高校",
+          "slug": "anesaki"
+        },
+        {
+          "display": "長狭",
+          "score": 3,
+          "won": false,
+          "name": "長狭高校",
+          "slug": "nagasa"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-28",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "1回戦",
+      "venue": "青葉の森公園野球場",
+      "teams": [
+        {
+          "display": "東京学館",
+          "score": 6,
+          "won": false,
+          "name": "東京学館",
+          "slug": null
+        },
+        {
+          "display": "市原中央",
+          "score": 7,
+          "won": true,
+          "name": "市原中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-04-28",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "1回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "多古",
+          "score": 7,
+          "won": false,
+          "name": "多古高校",
+          "slug": "tako"
+        },
+        {
+          "display": "千葉明徳",
+          "score": 8,
+          "won": true,
+          "name": "千葉明徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-04-28",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "1回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "成田",
+          "score": 10,
+          "won": true,
+          "name": "成田",
+          "slug": null
+        },
+        {
+          "display": "君津商業",
+          "score": 3,
+          "won": false,
+          "name": "君津商業高校",
+          "slug": "kimitsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-28",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "1回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "長生",
+          "score": 1,
+          "won": false,
+          "name": "長生高校",
+          "slug": "chosei"
+        },
+        {
+          "display": "銚子商業",
+          "score": 5,
+          "won": true,
+          "name": "銚子商業高校",
+          "slug": "choshishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-28",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "1回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "稲毛",
+          "score": 8,
+          "won": true,
+          "name": "稲毛高校",
+          "slug": "inage"
+        },
+        {
+          "display": "袖ケ浦",
+          "score": 6,
+          "won": false,
+          "name": "袖ヶ浦高校",
+          "slug": "sodegaura"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-28",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "1回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "検見川",
+          "score": 4,
+          "won": false,
+          "name": "検見川高校",
+          "slug": "kemigawa"
+        },
+        {
+          "display": "志学館",
+          "score": 14,
+          "won": true,
+          "name": "志学館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-04-28",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "1回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "千葉商業",
+          "score": 3,
+          "won": false,
+          "name": "千葉商業高校",
+          "slug": "chibashogyo"
+        },
+        {
+          "display": "安房",
+          "score": 4,
+          "won": true,
+          "name": "安房高校",
+          "slug": "awa"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-30",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "2回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "千葉黎明",
+          "score": 4,
+          "won": true,
+          "name": "千葉黎明",
+          "slug": null
+        },
+        {
+          "display": "成東",
+          "score": 3,
+          "won": false,
+          "name": "成東高校",
+          "slug": "naruto"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-29",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "2回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "姉崎",
+          "score": 8,
+          "won": false,
+          "name": "姉崎高校",
+          "slug": "anesaki"
+        },
+        {
+          "display": "千葉学芸",
+          "score": 13,
+          "won": true,
+          "name": "千葉学芸",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-04-29",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "2回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "千葉経大附",
+          "score": 6,
+          "won": true,
+          "name": "千葉経大附",
+          "slug": null
+        },
+        {
+          "display": "市原中央",
+          "score": 2,
+          "won": false,
+          "name": "市原中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-04-29",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "2回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "千葉明徳",
+          "score": 1,
+          "won": false,
+          "name": "千葉明徳",
+          "slug": null
+        },
+        {
+          "display": "拓殖大紅陵",
+          "score": 5,
+          "won": true,
+          "name": "拓殖大紅陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-04-29",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "2回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "木更津総合",
+          "score": 6,
+          "won": true,
+          "name": "木更津総合",
+          "slug": null
+        },
+        {
+          "display": "成田",
+          "score": 5,
+          "won": false,
+          "name": "成田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-04-29",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "2回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "銚子商業",
+          "score": 0,
+          "won": false,
+          "name": "銚子商業高校",
+          "slug": "choshishogyo"
+        },
+        {
+          "display": "幕張総合",
+          "score": 7,
+          "won": true,
+          "name": "幕張総合高校",
+          "slug": "makuharisogo"
+        }
+      ]
+    },
+    {
+      "date": "2018-04-29",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "2回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "稲毛",
+          "score": 1,
+          "won": false,
+          "name": "稲毛高校",
+          "slug": "inage"
+        },
+        {
+          "display": "志学館",
+          "score": 7,
+          "won": true,
+          "name": "志学館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-04-29",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "2回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "安房",
+          "score": 3,
+          "won": true,
+          "name": "安房高校",
+          "slug": "awa"
+        },
+        {
+          "display": "東海大市原望洋",
+          "score": 2,
+          "won": false,
+          "name": "東海大市原望洋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-05-04",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "3回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "千葉黎明",
+          "score": 12,
+          "won": true,
+          "name": "千葉黎明",
+          "slug": null
+        },
+        {
+          "display": "千葉学芸",
+          "score": 4,
+          "won": false,
+          "name": "千葉学芸",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-05-04",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "3回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "千葉経大附",
+          "score": 3,
+          "won": false,
+          "name": "千葉経大附",
+          "slug": null
+        },
+        {
+          "display": "拓殖大紅陵",
+          "score": 5,
+          "won": true,
+          "name": "拓殖大紅陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-05-04",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "3回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "木更津総合",
+          "score": 12,
+          "won": true,
+          "name": "木更津総合",
+          "slug": null
+        },
+        {
+          "display": "幕張総合",
+          "score": 5,
+          "won": false,
+          "name": "幕張総合高校",
+          "slug": "makuharisogo"
+        }
+      ]
+    },
+    {
+      "date": "2018-05-04",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "3回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "志学館",
+          "score": 10,
+          "won": true,
+          "name": "志学館",
+          "slug": null
+        },
+        {
+          "display": "安房",
+          "score": 0,
+          "won": false,
+          "name": "安房高校",
+          "slug": "awa"
+        }
+      ]
+    },
+    {
+      "date": "2018-05-05",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "準々決勝",
+      "venue": "青葉の森公園野球場",
+      "teams": [
+        {
+          "display": "千葉黎明",
+          "score": 7,
+          "won": true,
+          "name": "千葉黎明",
+          "slug": null
+        },
+        {
+          "display": "拓殖大紅陵",
+          "score": 6,
+          "won": false,
+          "name": "拓殖大紅陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-05-05",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "準々決勝",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "木更津総合",
+          "score": 10,
+          "won": true,
+          "name": "木更津総合",
+          "slug": null
+        },
+        {
+          "display": "志学館",
+          "score": 0,
+          "won": false,
+          "name": "志学館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-05-07",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "準決勝",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "千葉黎明",
+          "score": 3,
+          "won": false,
+          "name": "千葉黎明",
+          "slug": null
+        },
+        {
+          "display": "木更津総合",
+          "score": 5,
+          "won": true,
+          "name": "木更津総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-05-08",
+      "season": "spring",
+      "tournament": "2018年 千葉県高校野球春季大会",
+      "round": "決勝",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "木更津総合",
+          "score": 6,
+          "won": true,
+          "name": "木更津総合",
+          "slug": null
+        },
+        {
+          "display": "習志野",
+          "score": 2,
+          "won": false,
+          "name": "習志野高校",
+          "slug": "narashino"
+        }
+      ]
+    },
+    {
       "date": "2019-04-27",
       "season": "spring",
       "tournament": "2019年 春季関東地区高校野球 千葉県大会",
@@ -7565,6 +8669,1824 @@
         {
           "display": "学館浦安",
           "score": 3,
+          "won": false,
+          "name": "学館浦安",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-13",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "1回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "野田中央",
+          "score": 4,
+          "won": false,
+          "name": "野田中央高校",
+          "slug": "nodachuo"
+        },
+        {
+          "display": "千葉日大一",
+          "score": 5,
+          "won": true,
+          "name": "千葉日大一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-12",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "1回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "流山北",
+          "score": 2,
+          "won": true,
+          "name": "流山北高校",
+          "slug": "nagareyamakita"
+        },
+        {
+          "display": "市川工業",
+          "score": 0,
+          "won": false,
+          "name": "市川工業高校",
+          "slug": "ichikawakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-12",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "1回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "市川東",
+          "score": 5,
+          "won": false,
+          "name": "市川東高校",
+          "slug": "ichikawahigashi"
+        },
+        {
+          "display": "柏陵",
+          "score": 9,
+          "won": true,
+          "name": "柏陵高校",
+          "slug": "hakuryo"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-12",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "1回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "行徳",
+          "score": 0,
+          "won": false,
+          "name": "行徳高校",
+          "slug": "gyotoku"
+        },
+        {
+          "display": "我孫子二階堂",
+          "score": 10,
+          "won": true,
+          "name": "我孫子二階堂",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-13",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "1回戦",
+      "venue": "ＺＯＺＯマリンスタジアム",
+      "teams": [
+        {
+          "display": "印旛明誠",
+          "score": 11,
+          "won": true,
+          "name": "印旛明誠高校",
+          "slug": "inbameisei"
+        },
+        {
+          "display": "東邦大東邦",
+          "score": 1,
+          "won": false,
+          "name": "東邦大東邦",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-12",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "1回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "柏",
+          "score": 2,
+          "won": false,
+          "name": "柏高校",
+          "slug": "kashiwa"
+        },
+        {
+          "display": "市立船橋",
+          "score": 12,
+          "won": true,
+          "name": "船橋高校",
+          "slug": "chiba-funabashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-11",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "1回戦",
+      "venue": "ＺＯＺＯマリンスタジアム",
+      "teams": [
+        {
+          "display": "白井",
+          "score": 0,
+          "won": false,
+          "name": "白井高校",
+          "slug": "shiroi"
+        },
+        {
+          "display": "学館船橋",
+          "score": 25,
+          "won": true,
+          "name": "学館船橋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-13",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "1回戦",
+      "venue": "ナスパ・スタジアム",
+      "teams": [
+        {
+          "display": "千葉商大付",
+          "score": 9,
+          "won": true,
+          "name": "千葉商大付",
+          "slug": null
+        },
+        {
+          "display": "薬園台",
+          "score": 0,
+          "won": false,
+          "name": "薬園台高校",
+          "slug": "yakuendai"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "市川国府台球場",
+      "teams": [
+        {
+          "display": "流経大柏",
+          "score": 4,
+          "won": true,
+          "name": "流経大柏",
+          "slug": null
+        },
+        {
+          "display": "千葉日大一",
+          "score": 1,
+          "won": false,
+          "name": "千葉日大一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "長生の森公園野球場",
+      "teams": [
+        {
+          "display": "佐倉東",
+          "score": 1,
+          "won": false,
+          "name": "佐倉東高校",
+          "slug": "sakurahigashi"
+        },
+        {
+          "display": "四街道",
+          "score": 13,
+          "won": true,
+          "name": "四街道高校",
+          "slug": "yotsukaido"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-14",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "我孫子",
+          "score": 10,
+          "won": true,
+          "name": "我孫子高校",
+          "slug": "abiko"
+        },
+        {
+          "display": "流山北",
+          "score": 0,
+          "won": false,
+          "name": "流山北高校",
+          "slug": "nagareyamakita"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-13",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "船橋北",
+          "score": 3,
+          "won": true,
+          "name": "船橋北高校",
+          "slug": "funabashikita"
+        },
+        {
+          "display": "柏の葉",
+          "score": 2,
+          "won": false,
+          "name": "柏の葉高校",
+          "slug": "kashiwanoha"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-13",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "ＺＯＺＯマリンスタジアム",
+      "teams": [
+        {
+          "display": "小金",
+          "score": 8,
+          "won": true,
+          "name": "小金高校",
+          "slug": "kogane"
+        },
+        {
+          "display": "船橋二和",
+          "score": 5,
+          "won": false,
+          "name": "船橋二和高校",
+          "slug": "funabashifutawa"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "ナスパ・スタジアム",
+      "teams": [
+        {
+          "display": "柏陵",
+          "score": 10,
+          "won": true,
+          "name": "柏陵高校",
+          "slug": "hakuryo"
+        },
+        {
+          "display": "佐倉南",
+          "score": 1,
+          "won": false,
+          "name": "佐倉南高校",
+          "slug": "sakuraminami"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "第一カッター球場",
+      "teams": [
+        {
+          "display": "市立松戸",
+          "score": 9,
+          "won": true,
+          "name": "松戸高校",
+          "slug": "chiba-matsudo"
+        },
+        {
+          "display": "船橋法典",
+          "score": 8,
+          "won": false,
+          "name": "船橋法典高校",
+          "slug": "funabashihoten"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "我孫子二階堂",
+          "score": 1,
+          "won": false,
+          "name": "我孫子二階堂",
+          "slug": null
+        },
+        {
+          "display": "学館浦安",
+          "score": 10,
+          "won": true,
+          "name": "学館浦安",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "千葉敬愛",
+          "score": 7,
+          "won": true,
+          "name": "千葉敬愛",
+          "slug": null
+        },
+        {
+          "display": "印旛明誠",
+          "score": 6,
+          "won": false,
+          "name": "印旛明誠高校",
+          "slug": "inbameisei"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "流山おおたかの森",
+          "score": 5,
+          "won": true,
+          "name": "流山おおたかの森高校",
+          "slug": "nagareyamaotakanomori"
+        },
+        {
+          "display": "鎌ケ谷西",
+          "score": 3,
+          "won": false,
+          "name": "鎌ヶ谷西高校",
+          "slug": "kamagayanishi"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "関宿・流山・清水・船橋豊富",
+          "score": 2,
+          "won": false,
+          "name": "関宿・流山・清水・船橋豊富",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "市立船橋",
+          "score": 12,
+          "won": true,
+          "name": "船橋高校",
+          "slug": "chiba-funabashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-13",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "二松学舎柏",
+          "score": 1,
+          "won": true,
+          "name": "二松学舎柏",
+          "slug": null
+        },
+        {
+          "display": "昭和学院",
+          "score": 0,
+          "won": false,
+          "name": "昭和学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "第一カッター球場",
+      "teams": [
+        {
+          "display": "船橋古和釜",
+          "score": 5,
+          "won": true,
+          "name": "船橋古和釜高校",
+          "slug": "funabashikowagama"
+        },
+        {
+          "display": "松戸",
+          "score": 3,
+          "won": false,
+          "name": "松戸",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-14",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "学館船橋",
+          "score": 4,
+          "won": false,
+          "name": "学館船橋",
+          "slug": null
+        },
+        {
+          "display": "松戸国際",
+          "score": 11,
+          "won": true,
+          "name": "松戸国際高校",
+          "slug": "matsudokokusai"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "市川国府台球場",
+      "teams": [
+        {
+          "display": "柏中央",
+          "score": 9,
+          "won": true,
+          "name": "柏中央高校",
+          "slug": "kashiwachuo"
+        },
+        {
+          "display": "流山南",
+          "score": 2,
+          "won": false,
+          "name": "流山南高校",
+          "slug": "nagareyamaminami"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "ＺＯＺＯマリンスタジアム",
+      "teams": [
+        {
+          "display": "千葉商大付",
+          "score": 6,
+          "won": true,
+          "name": "千葉商大付",
+          "slug": null
+        },
+        {
+          "display": "専修大松戸",
+          "score": 4,
+          "won": false,
+          "name": "専修大松戸",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-17",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "3回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "流経大柏",
+          "score": 6,
+          "won": false,
+          "name": "流経大柏",
+          "slug": null
+        },
+        {
+          "display": "四街道",
+          "score": 10,
+          "won": true,
+          "name": "四街道高校",
+          "slug": "yotsukaido"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-17",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "3回戦",
+      "venue": "青葉の森公園野球場",
+      "teams": [
+        {
+          "display": "我孫子",
+          "score": 5,
+          "won": false,
+          "name": "我孫子高校",
+          "slug": "abiko"
+        },
+        {
+          "display": "船橋北",
+          "score": 10,
+          "won": true,
+          "name": "船橋北高校",
+          "slug": "funabashikita"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-17",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "3回戦",
+      "venue": "青葉の森公園野球場",
+      "teams": [
+        {
+          "display": "小金",
+          "score": 7,
+          "won": true,
+          "name": "小金高校",
+          "slug": "kogane"
+        },
+        {
+          "display": "柏陵",
+          "score": 4,
+          "won": false,
+          "name": "柏陵高校",
+          "slug": "hakuryo"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-17",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "3回戦",
+      "venue": "市川国府台球場",
+      "teams": [
+        {
+          "display": "市立松戸",
+          "score": 8,
+          "won": false,
+          "name": "松戸高校",
+          "slug": "chiba-matsudo"
+        },
+        {
+          "display": "学館浦安",
+          "score": 9,
+          "won": true,
+          "name": "学館浦安",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-17",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "3回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "千葉敬愛",
+          "score": 9,
+          "won": true,
+          "name": "千葉敬愛",
+          "slug": null
+        },
+        {
+          "display": "流山おおたかの森",
+          "score": 0,
+          "won": false,
+          "name": "流山おおたかの森高校",
+          "slug": "nagareyamaotakanomori"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-17",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "3回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "市立船橋",
+          "score": 8,
+          "won": true,
+          "name": "船橋高校",
+          "slug": "chiba-funabashi"
+        },
+        {
+          "display": "二松学舎柏",
+          "score": 1,
+          "won": false,
+          "name": "二松学舎柏",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-17",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "3回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "船橋古和釜",
+          "score": 0,
+          "won": false,
+          "name": "船橋古和釜高校",
+          "slug": "funabashikowagama"
+        },
+        {
+          "display": "松戸国際",
+          "score": 23,
+          "won": true,
+          "name": "松戸国際高校",
+          "slug": "matsudokokusai"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-17",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "3回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "柏中央",
+          "score": 3,
+          "won": false,
+          "name": "柏中央高校",
+          "slug": "kashiwachuo"
+        },
+        {
+          "display": "千葉商大付",
+          "score": 6,
+          "won": true,
+          "name": "千葉商大付",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-19",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "4回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "四街道",
+          "score": 11,
+          "won": true,
+          "name": "四街道高校",
+          "slug": "yotsukaido"
+        },
+        {
+          "display": "船橋北",
+          "score": 1,
+          "won": false,
+          "name": "船橋北高校",
+          "slug": "funabashikita"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-19",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "4回戦",
+      "venue": "第一カッター球場",
+      "teams": [
+        {
+          "display": "小金",
+          "score": 5,
+          "won": false,
+          "name": "小金高校",
+          "slug": "kogane"
+        },
+        {
+          "display": "学館浦安",
+          "score": 15,
+          "won": true,
+          "name": "学館浦安",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-19",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "4回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "千葉敬愛",
+          "score": 1,
+          "won": false,
+          "name": "千葉敬愛",
+          "slug": null
+        },
+        {
+          "display": "市立船橋",
+          "score": 11,
+          "won": true,
+          "name": "船橋高校",
+          "slug": "chiba-funabashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-19",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "4回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "松戸国際",
+          "score": 1,
+          "won": false,
+          "name": "松戸国際高校",
+          "slug": "matsudokokusai"
+        },
+        {
+          "display": "千葉商大付",
+          "score": 4,
+          "won": true,
+          "name": "千葉商大付",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-22",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "準々決勝",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "四街道",
+          "score": 0,
+          "won": false,
+          "name": "四街道高校",
+          "slug": "yotsukaido"
+        },
+        {
+          "display": "学館浦安",
+          "score": 2,
+          "won": true,
+          "name": "学館浦安",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-22",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "準々決勝",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "市立船橋",
+          "score": 7,
+          "won": true,
+          "name": "船橋高校",
+          "slug": "chiba-funabashi"
+        },
+        {
+          "display": "千葉商大付",
+          "score": 2,
+          "won": false,
+          "name": "千葉商大付",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-24",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "準決勝",
+      "venue": "ＺＯＺＯマリンスタジアム",
+      "teams": [
+        {
+          "display": "学館浦安",
+          "score": 4,
+          "won": true,
+          "name": "学館浦安",
+          "slug": null
+        },
+        {
+          "display": "市立船橋",
+          "score": 3,
+          "won": false,
+          "name": "船橋高校",
+          "slug": "chiba-funabashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-13",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "1回戦",
+      "venue": "青葉の森公園野球場",
+      "teams": [
+        {
+          "display": "四街道北",
+          "score": 4,
+          "won": false,
+          "name": "四街道北高校",
+          "slug": "yotsukaidokita"
+        },
+        {
+          "display": "佐倉",
+          "score": 6,
+          "won": true,
+          "name": "佐倉高校",
+          "slug": "sakura"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-12",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "1回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "東葛飾",
+          "score": 0,
+          "won": false,
+          "name": "東葛飾高校",
+          "slug": "higashikatsushika"
+        },
+        {
+          "display": "東葉",
+          "score": 23,
+          "won": true,
+          "name": "東葉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-12",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "1回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "国府台",
+          "score": 1,
+          "won": false,
+          "name": "国府台高校",
+          "slug": "konodai"
+        },
+        {
+          "display": "市立柏",
+          "score": 11,
+          "won": true,
+          "name": "柏高校",
+          "slug": "chiba-kashiwa"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-12",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "1回戦",
+      "venue": "市川国府台球場",
+      "teams": [
+        {
+          "display": "浦安",
+          "score": 13,
+          "won": true,
+          "name": "浦安高校",
+          "slug": "urayasu"
+        },
+        {
+          "display": "実籾",
+          "score": 1,
+          "won": false,
+          "name": "実籾高校",
+          "slug": "mimomi"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-13",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "1回戦",
+      "venue": "市川国府台球場",
+      "teams": [
+        {
+          "display": "松戸馬橋",
+          "score": 3,
+          "won": true,
+          "name": "松戸馬橋高校",
+          "slug": "matsudomabashi"
+        },
+        {
+          "display": "柏南",
+          "score": 2,
+          "won": false,
+          "name": "柏南高校",
+          "slug": "kashiwaminami"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-12",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "1回戦",
+      "venue": "市川国府台球場",
+      "teams": [
+        {
+          "display": "津田沼",
+          "score": 7,
+          "won": true,
+          "name": "津田沼高校",
+          "slug": "tsudanuma"
+        },
+        {
+          "display": "東海大浦安",
+          "score": 2,
+          "won": false,
+          "name": "東海大浦安",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-12",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "1回戦",
+      "venue": "市川国府台球場",
+      "teams": [
+        {
+          "display": "日大習志野",
+          "score": 4,
+          "won": false,
+          "name": "日大習志野",
+          "slug": null
+        },
+        {
+          "display": "浦安南",
+          "score": 5,
+          "won": true,
+          "name": "浦安南高校",
+          "slug": "urayasuminami"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-13",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "1回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "沼南",
+          "score": 3,
+          "won": false,
+          "name": "沼南高校",
+          "slug": "shonan"
+        },
+        {
+          "display": "我孫子東",
+          "score": 6,
+          "won": true,
+          "name": "我孫子東高校",
+          "slug": "abikohigashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "ＺＯＺＯマリンスタジアム",
+      "teams": [
+        {
+          "display": "習志野",
+          "score": 8,
+          "won": true,
+          "name": "習志野高校",
+          "slug": "narashino"
+        },
+        {
+          "display": "佐倉",
+          "score": 5,
+          "won": false,
+          "name": "佐倉高校",
+          "slug": "sakura"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "第一カッター球場",
+      "teams": [
+        {
+          "display": "松戸六実",
+          "score": 9,
+          "won": true,
+          "name": "松戸六実高校",
+          "slug": "matsudomutsumi"
+        },
+        {
+          "display": "沼南高柳",
+          "score": 1,
+          "won": false,
+          "name": "沼南高柳高校",
+          "slug": "shonantakayanagi"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "長生の森公園野球場",
+      "teams": [
+        {
+          "display": "秀明八千代",
+          "score": 4,
+          "won": false,
+          "name": "秀明八千代",
+          "slug": null
+        },
+        {
+          "display": "東葉",
+          "score": 6,
+          "won": true,
+          "name": "東葉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-13",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "青葉の森公園野球場",
+      "teams": [
+        {
+          "display": "船橋",
+          "score": 8,
+          "won": true,
+          "name": "船橋高校",
+          "slug": "funabashi"
+        },
+        {
+          "display": "日体大柏",
+          "score": 7,
+          "won": false,
+          "name": "日体大柏",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-13",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "ＺＯＺＯマリンスタジアム",
+      "teams": [
+        {
+          "display": "国分",
+          "score": 10,
+          "won": true,
+          "name": "国分高校",
+          "slug": "kokubun"
+        },
+        {
+          "display": "鎌ケ谷",
+          "score": 2,
+          "won": false,
+          "name": "鎌ヶ谷高校",
+          "slug": "kamagaya"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "ナスパ・スタジアム",
+      "teams": [
+        {
+          "display": "市立柏",
+          "score": 6,
+          "won": false,
+          "name": "柏高校",
+          "slug": "chiba-kashiwa"
+        },
+        {
+          "display": "千葉英和",
+          "score": 9,
+          "won": true,
+          "name": "千葉英和",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "ナスパ・スタジアム",
+      "teams": [
+        {
+          "display": "船橋芝山",
+          "score": 9,
+          "won": true,
+          "name": "船橋芝山高校",
+          "slug": "funabashishibayama"
+        },
+        {
+          "display": "麗澤",
+          "score": 6,
+          "won": false,
+          "name": "麗澤",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "浦安",
+          "score": 2,
+          "won": false,
+          "name": "浦安高校",
+          "slug": "urayasu"
+        },
+        {
+          "display": "西武台千葉",
+          "score": 4,
+          "won": true,
+          "name": "西武台千葉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "中央学院",
+          "score": 10,
+          "won": true,
+          "name": "中央学院",
+          "slug": null
+        },
+        {
+          "display": "松戸馬橋",
+          "score": 1,
+          "won": false,
+          "name": "松戸馬橋高校",
+          "slug": "matsudomabashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "市川国府台球場",
+      "teams": [
+        {
+          "display": "船橋東",
+          "score": 3,
+          "won": false,
+          "name": "船橋東高校",
+          "slug": "funabashihigashi"
+        },
+        {
+          "display": "市川南",
+          "score": 7,
+          "won": true,
+          "name": "市川南高校",
+          "slug": "ichikawaminami"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "八千代東",
+          "score": 4,
+          "won": true,
+          "name": "八千代東高校",
+          "slug": "yachiyohigashi"
+        },
+        {
+          "display": "津田沼",
+          "score": 3,
+          "won": false,
+          "name": "津田沼高校",
+          "slug": "tsudanuma"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-13",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "市川国府台球場",
+      "teams": [
+        {
+          "display": "八千代西",
+          "score": 0,
+          "won": false,
+          "name": "八千代西高校",
+          "slug": "yachiyonishi"
+        },
+        {
+          "display": "市川昴",
+          "score": 7,
+          "won": true,
+          "name": "市川昴高校",
+          "slug": "ichikawasubaru"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-13",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "芝浦工大柏",
+          "score": 1,
+          "won": false,
+          "name": "芝浦工大柏",
+          "slug": null
+        },
+        {
+          "display": "佐倉西",
+          "score": 5,
+          "won": true,
+          "name": "佐倉西高校",
+          "slug": "sakuranishi"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-14",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "浦安南",
+          "score": 0,
+          "won": false,
+          "name": "浦安南高校",
+          "slug": "urayasuminami"
+        },
+        {
+          "display": "船橋啓明",
+          "score": 8,
+          "won": true,
+          "name": "船橋啓明高校",
+          "slug": "funabashikeimei"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "八千代",
+          "score": 2,
+          "won": true,
+          "name": "八千代高校",
+          "slug": "chiba-yachiyo"
+        },
+        {
+          "display": "市川",
+          "score": 1,
+          "won": false,
+          "name": "市川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "2回戦",
+      "venue": "ＺＯＺＯマリンスタジアム",
+      "teams": [
+        {
+          "display": "我孫子東",
+          "score": 3,
+          "won": true,
+          "name": "我孫子東高校",
+          "slug": "abikohigashi"
+        },
+        {
+          "display": "八千代松陰",
+          "score": 2,
+          "won": false,
+          "name": "八千代松陰",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-17",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "3回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "習志野",
+          "score": 5,
+          "won": true,
+          "name": "習志野高校",
+          "slug": "narashino"
+        },
+        {
+          "display": "松戸六実",
+          "score": 2,
+          "won": false,
+          "name": "松戸六実高校",
+          "slug": "matsudomutsumi"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-17",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "3回戦",
+      "venue": "第一カッター球場",
+      "teams": [
+        {
+          "display": "東葉",
+          "score": 2,
+          "won": false,
+          "name": "東葉",
+          "slug": null
+        },
+        {
+          "display": "船橋",
+          "score": 9,
+          "won": true,
+          "name": "船橋高校",
+          "slug": "funabashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-17",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "3回戦",
+      "venue": "青葉の森公園野球場",
+      "teams": [
+        {
+          "display": "国分",
+          "score": 0,
+          "won": false,
+          "name": "国分高校",
+          "slug": "kokubun"
+        },
+        {
+          "display": "千葉英和",
+          "score": 5,
+          "won": true,
+          "name": "千葉英和",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-17",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "3回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "船橋芝山",
+          "score": 4,
+          "won": false,
+          "name": "船橋芝山高校",
+          "slug": "funabashishibayama"
+        },
+        {
+          "display": "西武台千葉",
+          "score": 5,
+          "won": true,
+          "name": "西武台千葉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-17",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "3回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "中央学院",
+          "score": 7,
+          "won": true,
+          "name": "中央学院",
+          "slug": null
+        },
+        {
+          "display": "市川南",
+          "score": 0,
+          "won": false,
+          "name": "市川南高校",
+          "slug": "ichikawaminami"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-17",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "3回戦",
+      "venue": "市川国府台球場",
+      "teams": [
+        {
+          "display": "八千代東",
+          "score": 6,
+          "won": true,
+          "name": "八千代東高校",
+          "slug": "yachiyohigashi"
+        },
+        {
+          "display": "市川昴",
+          "score": 3,
+          "won": false,
+          "name": "市川昴高校",
+          "slug": "ichikawasubaru"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-17",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "3回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "佐倉西",
+          "score": 4,
+          "won": false,
+          "name": "佐倉西高校",
+          "slug": "sakuranishi"
+        },
+        {
+          "display": "船橋啓明",
+          "score": 5,
+          "won": true,
+          "name": "船橋啓明高校",
+          "slug": "funabashikeimei"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-17",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "3回戦",
+      "venue": "第一カッター球場",
+      "teams": [
+        {
+          "display": "八千代",
+          "score": 7,
+          "won": true,
+          "name": "八千代高校",
+          "slug": "chiba-yachiyo"
+        },
+        {
+          "display": "我孫子東",
+          "score": 6,
+          "won": false,
+          "name": "我孫子東高校",
+          "slug": "abikohigashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-19",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "4回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "習志野",
+          "score": 3,
+          "won": true,
+          "name": "習志野高校",
+          "slug": "narashino"
+        },
+        {
+          "display": "船橋",
+          "score": 0,
+          "won": false,
+          "name": "船橋高校",
+          "slug": "funabashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-19",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "4回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "千葉英和",
+          "score": 5,
+          "won": false,
+          "name": "千葉英和",
+          "slug": null
+        },
+        {
+          "display": "西武台千葉",
+          "score": 14,
+          "won": true,
+          "name": "西武台千葉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-19",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "4回戦",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "中央学院",
+          "score": 10,
+          "won": true,
+          "name": "中央学院",
+          "slug": null
+        },
+        {
+          "display": "八千代東",
+          "score": 4,
+          "won": false,
+          "name": "八千代東高校",
+          "slug": "yachiyohigashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-19",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "4回戦",
+      "venue": "第一カッター球場",
+      "teams": [
+        {
+          "display": "船橋啓明",
+          "score": 1,
+          "won": false,
+          "name": "船橋啓明高校",
+          "slug": "funabashikeimei"
+        },
+        {
+          "display": "八千代",
+          "score": 11,
+          "won": true,
+          "name": "八千代高校",
+          "slug": "chiba-yachiyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-22",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "準々決勝",
+      "venue": "千葉県野球場",
+      "teams": [
+        {
+          "display": "習志野",
+          "score": 9,
+          "won": true,
+          "name": "習志野高校",
+          "slug": "narashino"
+        },
+        {
+          "display": "西武台千葉",
+          "score": 1,
+          "won": false,
+          "name": "西武台千葉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-22",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "準々決勝",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "中央学院",
+          "score": 4,
+          "won": true,
+          "name": "中央学院",
+          "slug": null
+        },
+        {
+          "display": "八千代",
+          "score": 3,
+          "won": false,
+          "name": "八千代高校",
+          "slug": "chiba-yachiyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-07-24",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "準決勝",
+      "venue": "ＺＯＺＯマリンスタジアム",
+      "teams": [
+        {
+          "display": "習志野",
+          "score": 5,
+          "won": false,
+          "name": "習志野高校",
+          "slug": "narashino"
+        },
+        {
+          "display": "中央学院",
+          "score": 6,
+          "won": true,
+          "name": "中央学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-07-26",
+      "season": "summer",
+      "tournament": "第100回全国高等学校野球選手権記念 西千葉大会",
+      "round": "決勝",
+      "venue": "ＺＯＺＯマリンスタジアム",
+      "teams": [
+        {
+          "display": "中央学院",
+          "score": 6,
+          "won": true,
+          "name": "中央学院",
+          "slug": null
+        },
+        {
+          "display": "学館浦安",
+          "score": 2,
           "won": false,
           "name": "学館浦安",
           "slug": null
@@ -35522,6 +38444,1455 @@
           "score": 1,
           "won": false,
           "name": "専修大松戸",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "千葉英和",
+          "score": 1,
+          "won": false,
+          "name": "千葉英和",
+          "slug": null
+        },
+        {
+          "display": "千葉黎明",
+          "score": 7,
+          "won": true,
+          "name": "千葉黎明",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "長生の森公園野球場",
+      "teams": [
+        {
+          "display": "千葉商業",
+          "score": 2,
+          "won": false,
+          "name": "千葉商業高校",
+          "slug": "chibashogyo"
+        },
+        {
+          "display": "日大習志野",
+          "score": 3,
+          "won": true,
+          "name": "日大習志野",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "志学館",
+          "score": 11,
+          "won": true,
+          "name": "志学館",
+          "slug": null
+        },
+        {
+          "display": "柏陵",
+          "score": 4,
+          "won": false,
+          "name": "柏陵高校",
+          "slug": "hakuryo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "学館浦安",
+          "score": 1,
+          "won": false,
+          "name": "学館浦安",
+          "slug": null
+        },
+        {
+          "display": "中央学院",
+          "score": 8,
+          "won": true,
+          "name": "中央学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "ナスパ・スタジアム",
+      "teams": [
+        {
+          "display": "市立船橋",
+          "score": 5,
+          "won": true,
+          "name": "船橋高校",
+          "slug": "chiba-funabashi"
+        },
+        {
+          "display": "横芝敬愛",
+          "score": 4,
+          "won": false,
+          "name": "横芝敬愛",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "東京学館",
+          "score": 0,
+          "won": false,
+          "name": "東京学館",
+          "slug": null
+        },
+        {
+          "display": "木更津総合",
+          "score": 6,
+          "won": true,
+          "name": "木更津総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "千葉商大付",
+          "score": 7,
+          "won": true,
+          "name": "千葉商大付",
+          "slug": null
+        },
+        {
+          "display": "君津商業",
+          "score": 0,
+          "won": false,
+          "name": "君津商業高校",
+          "slug": "kimitsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "国府台",
+          "score": 4,
+          "won": true,
+          "name": "国府台高校",
+          "slug": "konodai"
+        },
+        {
+          "display": "四街道",
+          "score": 3,
+          "won": false,
+          "name": "四街道高校",
+          "slug": "yotsukaido"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "印旛明誠",
+          "score": 0,
+          "won": false,
+          "name": "印旛明誠高校",
+          "slug": "inbameisei"
+        },
+        {
+          "display": "千葉日大一",
+          "score": 7,
+          "won": true,
+          "name": "千葉日大一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "柏南",
+          "score": 3,
+          "won": true,
+          "name": "柏南高校",
+          "slug": "kashiwaminami"
+        },
+        {
+          "display": "千葉学芸",
+          "score": 2,
+          "won": false,
+          "name": "千葉学芸",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "長生の森公園野球場",
+      "teams": [
+        {
+          "display": "鎌ケ谷",
+          "score": 0,
+          "won": false,
+          "name": "鎌ヶ谷高校",
+          "slug": "kamagaya"
+        },
+        {
+          "display": "成東",
+          "score": 2,
+          "won": true,
+          "name": "成東高校",
+          "slug": "naruto"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "東海大浦安",
+          "score": 4,
+          "won": false,
+          "name": "東海大浦安",
+          "slug": null
+        },
+        {
+          "display": "暁星国際",
+          "score": 8,
+          "won": true,
+          "name": "暁星国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "東金",
+          "score": 1,
+          "won": false,
+          "name": "東金高校",
+          "slug": "togane"
+        },
+        {
+          "display": "松戸六実",
+          "score": 9,
+          "won": true,
+          "name": "松戸六実高校",
+          "slug": "matsudomutsumi"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "八千代松陰",
+          "score": 3,
+          "won": false,
+          "name": "八千代松陰",
+          "slug": null
+        },
+        {
+          "display": "船橋芝山",
+          "score": 8,
+          "won": true,
+          "name": "船橋芝山高校",
+          "slug": "funabashishibayama"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "流経大柏",
+          "score": 2,
+          "won": false,
+          "name": "流経大柏",
+          "slug": null
+        },
+        {
+          "display": "八千代東",
+          "score": 5,
+          "won": true,
+          "name": "八千代東高校",
+          "slug": "yachiyohigashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "ナスパ・スタジアム",
+      "teams": [
+        {
+          "display": "成田",
+          "score": 7,
+          "won": true,
+          "name": "成田",
+          "slug": null
+        },
+        {
+          "display": "袖ケ浦",
+          "score": 5,
+          "won": false,
+          "name": "袖ヶ浦高校",
+          "slug": "sodegaura"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "2回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "千葉黎明",
+          "score": 6,
+          "won": true,
+          "name": "千葉黎明",
+          "slug": null
+        },
+        {
+          "display": "日大習志野",
+          "score": 1,
+          "won": false,
+          "name": "日大習志野",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "2回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "志学館",
+          "score": 6,
+          "won": false,
+          "name": "志学館",
+          "slug": null
+        },
+        {
+          "display": "中央学院",
+          "score": 12,
+          "won": true,
+          "name": "中央学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "2回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "市立船橋",
+          "score": 1,
+          "won": false,
+          "name": "船橋高校",
+          "slug": "chiba-funabashi"
+        },
+        {
+          "display": "木更津総合",
+          "score": 10,
+          "won": true,
+          "name": "木更津総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "2回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "千葉商大付",
+          "score": 12,
+          "won": true,
+          "name": "千葉商大付",
+          "slug": null
+        },
+        {
+          "display": "国府台",
+          "score": 0,
+          "won": false,
+          "name": "国府台高校",
+          "slug": "konodai"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "2回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "千葉日大一",
+          "score": 5,
+          "won": false,
+          "name": "千葉日大一",
+          "slug": null
+        },
+        {
+          "display": "柏南",
+          "score": 7,
+          "won": true,
+          "name": "柏南高校",
+          "slug": "kashiwaminami"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "2回戦",
+      "venue": "長生の森公園野球場",
+      "teams": [
+        {
+          "display": "成東",
+          "score": 2,
+          "won": false,
+          "name": "成東高校",
+          "slug": "naruto"
+        },
+        {
+          "display": "暁星国際",
+          "score": 6,
+          "won": true,
+          "name": "暁星国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "2回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "松戸六実",
+          "score": 7,
+          "won": false,
+          "name": "松戸六実高校",
+          "slug": "matsudomutsumi"
+        },
+        {
+          "display": "船橋芝山",
+          "score": 8,
+          "won": true,
+          "name": "船橋芝山高校",
+          "slug": "funabashishibayama"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "2回戦",
+      "venue": "ナスパ・スタジアム",
+      "teams": [
+        {
+          "display": "八千代東",
+          "score": 2,
+          "won": false,
+          "name": "八千代東高校",
+          "slug": "yachiyohigashi"
+        },
+        {
+          "display": "成田",
+          "score": 13,
+          "won": true,
+          "name": "成田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-29",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "3回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "千葉黎明",
+          "score": 4,
+          "won": false,
+          "name": "千葉黎明",
+          "slug": null
+        },
+        {
+          "display": "中央学院",
+          "score": 6,
+          "won": true,
+          "name": "中央学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-29",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "3回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "木更津総合",
+          "score": 5,
+          "won": true,
+          "name": "木更津総合",
+          "slug": null
+        },
+        {
+          "display": "千葉商大付",
+          "score": 0,
+          "won": false,
+          "name": "千葉商大付",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-29",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "3回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "柏南",
+          "score": 0,
+          "won": false,
+          "name": "柏南高校",
+          "slug": "kashiwaminami"
+        },
+        {
+          "display": "暁星国際",
+          "score": 7,
+          "won": true,
+          "name": "暁星国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-29",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "3回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "船橋芝山",
+          "score": 1,
+          "won": false,
+          "name": "船橋芝山高校",
+          "slug": "funabashishibayama"
+        },
+        {
+          "display": "成田",
+          "score": 19,
+          "won": true,
+          "name": "成田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-10-01",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "準々決勝",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "中央学院",
+          "score": 4,
+          "won": true,
+          "name": "中央学院",
+          "slug": null
+        },
+        {
+          "display": "木更津総合",
+          "score": 3,
+          "won": false,
+          "name": "木更津総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-10-01",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "準々決勝",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "暁星国際",
+          "score": 2,
+          "won": false,
+          "name": "暁星国際",
+          "slug": null
+        },
+        {
+          "display": "成田",
+          "score": 6,
+          "won": true,
+          "name": "成田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-10-06",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "準決勝",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "中央学院",
+          "score": 4,
+          "won": true,
+          "name": "中央学院",
+          "slug": null
+        },
+        {
+          "display": "成田",
+          "score": 2,
+          "won": false,
+          "name": "成田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "浦安",
+          "score": 5,
+          "won": false,
+          "name": "浦安高校",
+          "slug": "urayasu"
+        },
+        {
+          "display": "京葉工業",
+          "score": 7,
+          "won": true,
+          "name": "京葉工業高校",
+          "slug": "keiyokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "我孫子二階堂",
+          "score": 2,
+          "won": false,
+          "name": "我孫子二階堂",
+          "slug": null
+        },
+        {
+          "display": "君津",
+          "score": 8,
+          "won": true,
+          "name": "君津高校",
+          "slug": "kimitsu"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "船橋",
+          "score": 3,
+          "won": true,
+          "name": "船橋高校",
+          "slug": "funabashi"
+        },
+        {
+          "display": "安房",
+          "score": 1,
+          "won": false,
+          "name": "安房高校",
+          "slug": "awa"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "船橋東",
+          "score": 0,
+          "won": false,
+          "name": "船橋東高校",
+          "slug": "funabashihigashi"
+        },
+        {
+          "display": "千葉敬愛",
+          "score": 8,
+          "won": true,
+          "name": "千葉敬愛",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "千葉経大附",
+          "score": 7,
+          "won": true,
+          "name": "千葉経大附",
+          "slug": null
+        },
+        {
+          "display": "幕張総合",
+          "score": 0,
+          "won": false,
+          "name": "幕張総合高校",
+          "slug": "makuharisogo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "ナスパ・スタジアム",
+      "teams": [
+        {
+          "display": "松戸国際",
+          "score": 6,
+          "won": false,
+          "name": "松戸国際高校",
+          "slug": "matsudokokusai"
+        },
+        {
+          "display": "佐倉",
+          "score": 7,
+          "won": true,
+          "name": "佐倉高校",
+          "slug": "sakura"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "我孫子",
+          "score": 2,
+          "won": false,
+          "name": "我孫子高校",
+          "slug": "abiko"
+        },
+        {
+          "display": "市立柏",
+          "score": 3,
+          "won": true,
+          "name": "柏高校",
+          "slug": "chiba-kashiwa"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "拓殖大紅陵",
+          "score": 1,
+          "won": false,
+          "name": "拓殖大紅陵",
+          "slug": null
+        },
+        {
+          "display": "習志野",
+          "score": 2,
+          "won": true,
+          "name": "習志野高校",
+          "slug": "narashino"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "翔凛",
+          "score": 3,
+          "won": true,
+          "name": "翔凛",
+          "slug": null
+        },
+        {
+          "display": "津田沼",
+          "score": 1,
+          "won": false,
+          "name": "津田沼高校",
+          "slug": "tsudanuma"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "市川南",
+          "score": 0,
+          "won": false,
+          "name": "市川南高校",
+          "slug": "ichikawaminami"
+        },
+        {
+          "display": "東海大市原望洋",
+          "score": 9,
+          "won": true,
+          "name": "東海大市原望洋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "専修大松戸",
+          "score": 3,
+          "won": true,
+          "name": "専修大松戸",
+          "slug": null
+        },
+        {
+          "display": "千葉明徳",
+          "score": 2,
+          "won": false,
+          "name": "千葉明徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "日体大柏",
+          "score": 0,
+          "won": false,
+          "name": "日体大柏",
+          "slug": null
+        },
+        {
+          "display": "敬愛学園",
+          "score": 5,
+          "won": true,
+          "name": "敬愛学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "長生の森公園野球場",
+      "teams": [
+        {
+          "display": "市立千葉",
+          "score": 4,
+          "won": true,
+          "name": "千葉高校",
+          "slug": "chiba-chiba"
+        },
+        {
+          "display": "一宮商業",
+          "score": 3,
+          "won": false,
+          "name": "一宮商業高校",
+          "slug": "ichinomiyashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "柏の葉",
+          "score": 6,
+          "won": true,
+          "name": "柏の葉高校",
+          "slug": "kashiwanoha"
+        },
+        {
+          "display": "佐倉南",
+          "score": 2,
+          "won": false,
+          "name": "佐倉南高校",
+          "slug": "sakuraminami"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "昭和学院",
+          "score": 1,
+          "won": false,
+          "name": "昭和学院",
+          "slug": null
+        },
+        {
+          "display": "匝瑳",
+          "score": 5,
+          "won": true,
+          "name": "匝瑳高校",
+          "slug": "sosa"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "ナスパ・スタジアム",
+      "teams": [
+        {
+          "display": "銚子商業",
+          "score": 11,
+          "won": true,
+          "name": "銚子商業高校",
+          "slug": "choshishogyo"
+        },
+        {
+          "display": "千葉西",
+          "score": 1,
+          "won": false,
+          "name": "千葉西高校",
+          "slug": "chibanishi"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "2回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "京葉工業",
+          "score": 8,
+          "won": true,
+          "name": "京葉工業高校",
+          "slug": "keiyokogyo"
+        },
+        {
+          "display": "君津",
+          "score": 3,
+          "won": false,
+          "name": "君津高校",
+          "slug": "kimitsu"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "2回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "船橋",
+          "score": 1,
+          "won": false,
+          "name": "船橋高校",
+          "slug": "funabashi"
+        },
+        {
+          "display": "千葉敬愛",
+          "score": 5,
+          "won": true,
+          "name": "千葉敬愛",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "2回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "千葉経大附",
+          "score": 3,
+          "won": false,
+          "name": "千葉経大附",
+          "slug": null
+        },
+        {
+          "display": "佐倉",
+          "score": 4,
+          "won": true,
+          "name": "佐倉高校",
+          "slug": "sakura"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "2回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "市立柏",
+          "score": 1,
+          "won": false,
+          "name": "柏高校",
+          "slug": "chiba-kashiwa"
+        },
+        {
+          "display": "習志野",
+          "score": 3,
+          "won": true,
+          "name": "習志野高校",
+          "slug": "narashino"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "2回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "翔凛",
+          "score": 1,
+          "won": false,
+          "name": "翔凛",
+          "slug": null
+        },
+        {
+          "display": "東海大市原望洋",
+          "score": 8,
+          "won": true,
+          "name": "東海大市原望洋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "2回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "専修大松戸",
+          "score": 4,
+          "won": true,
+          "name": "専修大松戸",
+          "slug": null
+        },
+        {
+          "display": "敬愛学園",
+          "score": 1,
+          "won": false,
+          "name": "敬愛学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "2回戦",
+      "venue": "ナスパ・スタジアム",
+      "teams": [
+        {
+          "display": "市立千葉",
+          "score": 6,
+          "won": true,
+          "name": "千葉高校",
+          "slug": "chiba-chiba"
+        },
+        {
+          "display": "柏の葉",
+          "score": 1,
+          "won": false,
+          "name": "柏の葉高校",
+          "slug": "kashiwanoha"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-24",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "2回戦",
+      "venue": "長生の森公園野球場",
+      "teams": [
+        {
+          "display": "匝瑳",
+          "score": 0,
+          "won": false,
+          "name": "匝瑳高校",
+          "slug": "sosa"
+        },
+        {
+          "display": "銚子商業",
+          "score": 9,
+          "won": true,
+          "name": "銚子商業高校",
+          "slug": "choshishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-29",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "3回戦",
+      "venue": "袖ケ浦市営球場",
+      "teams": [
+        {
+          "display": "京葉工業",
+          "score": 0,
+          "won": false,
+          "name": "京葉工業高校",
+          "slug": "keiyokogyo"
+        },
+        {
+          "display": "千葉敬愛",
+          "score": 5,
+          "won": true,
+          "name": "千葉敬愛",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-29",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "3回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "佐倉",
+          "score": 0,
+          "won": false,
+          "name": "佐倉高校",
+          "slug": "sakura"
+        },
+        {
+          "display": "習志野",
+          "score": 7,
+          "won": true,
+          "name": "習志野高校",
+          "slug": "narashino"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-29",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "3回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "東海大市原望洋",
+          "score": 9,
+          "won": true,
+          "name": "東海大市原望洋",
+          "slug": null
+        },
+        {
+          "display": "専修大松戸",
+          "score": 4,
+          "won": false,
+          "name": "専修大松戸",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-29",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "3回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "市立千葉",
+          "score": 1,
+          "won": false,
+          "name": "千葉高校",
+          "slug": "chiba-chiba"
+        },
+        {
+          "display": "銚子商業",
+          "score": 11,
+          "won": true,
+          "name": "銚子商業高校",
+          "slug": "choshishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-01",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "準々決勝",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "千葉敬愛",
+          "score": 0,
+          "won": false,
+          "name": "千葉敬愛",
+          "slug": null
+        },
+        {
+          "display": "習志野",
+          "score": 7,
+          "won": true,
+          "name": "習志野高校",
+          "slug": "narashino"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-01",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "準々決勝",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "東海大市原望洋",
+          "score": 7,
+          "won": false,
+          "name": "東海大市原望洋",
+          "slug": null
+        },
+        {
+          "display": "銚子商業",
+          "score": 11,
+          "won": true,
+          "name": "銚子商業高校",
+          "slug": "choshishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-06",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "準決勝",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "習志野",
+          "score": 6,
+          "won": true,
+          "name": "習志野高校",
+          "slug": "narashino"
+        },
+        {
+          "display": "銚子商業",
+          "score": 1,
+          "won": false,
+          "name": "銚子商業高校",
+          "slug": "choshishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-07",
+      "season": "autumn",
+      "tournament": "2018年 秋季関東地区高校野球 千葉県大会",
+      "round": "決勝",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "習志野",
+          "score": 2,
+          "won": false,
+          "name": "習志野高校",
+          "slug": "narashino"
+        },
+        {
+          "display": "中央学院",
+          "score": 6,
+          "won": true,
+          "name": "中央学院",
           "slug": null
         }
       ]

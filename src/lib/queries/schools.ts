@@ -188,6 +188,42 @@ export async function getSchoolRecords(
 }
 
 /** 同じ都道府県の他の学校。回遊導線に使う（要件23）。 */
+/*
+  ★★**同じ県の学校は「県ごとに1回」取る**（2026-09-04）。
+
+  ★**学校ページ3,500枚が1枚ずつ問い合わせていた** ——
+  返ってくるのは**その県の校名順の先頭数校**で、**同じ県ならほとんど同じ**。
+  ★**「自分を除く先頭4校」は、先頭5校を取ってから自分を外せば同じ結果になる**
+  （自分が先頭5校に入っていれば4校、入っていなければ先頭4校）。
+  ★**5分で作り直す**（`fetchSchoolNameRows` と同じ考え方。永久に持たない）。
+*/
+const RELATED_TTL_MS = 5 * 60 * 1000;
+const relatedCache = new Map<string, { at: number; rows: Promise<SchoolRow[]> }>();
+
+function relatedRows(prefectureId: number, take: number): Promise<SchoolRow[]> {
+  const key = `${prefectureId}\t${take}`;
+  const now = Date.now();
+  const hit = relatedCache.get(key);
+  if (hit && now - hit.at <= RELATED_TTL_MS) return hit.rows;
+  const rows = (async () => {
+    const supabase = createSupabaseServerClient();
+    const { data, error } = await supabase
+      .from("schools")
+      .select(SCHOOL_SUMMARY_SELECT)
+      .eq("prefecture_id", prefectureId)
+      .order("name", { ascending: true })
+      .limit(take);
+    throwIfError(error, "同じ都道府県の学校の取得");
+    return (data ?? []) as unknown as SchoolRow[];
+  })().catch((e) => {
+    // ★**失敗を持ち越さない。** 次の呼び出しでもう一度取りに行く
+    relatedCache.delete(key);
+    throw e;
+  });
+  relatedCache.set(key, { at: now, rows });
+  return rows;
+}
+
 export async function getRelatedSchools(
   prefectureSlug: string,
   excludeSchoolId: string,
@@ -196,19 +232,12 @@ export async function getRelatedSchools(
   const prefecture = PREFECTURE_BY_SLUG.get(prefectureSlug);
   if (!prefecture) return [];
 
-  const supabase = createSupabaseServerClient();
-
-  const { data, error } = await supabase
-    .from("schools")
-    .select(SCHOOL_SUMMARY_SELECT)
-    .eq("prefecture_id", prefecture.id)
-    .neq("id", excludeSchoolId)
-    .order("name", { ascending: true })
-    .limit(limit);
-
-  throwIfError(error, "同じ都道府県の学校の取得");
-
-  return ((data ?? []) as unknown as SchoolRow[]).map(toSchoolSummary);
+  // ★**自分が入っているかもしれないので1校多く取る**
+  const rows = await relatedRows(prefecture.id, limit + 1);
+  return rows
+    .filter((row) => row.id !== excludeSchoolId)
+    .slice(0, limit)
+    .map(toSchoolSummary);
 }
 
 /**
@@ -527,7 +556,24 @@ type SchoolNameRow = {
   prefecture: { name: string } | { name: string }[] | null;
 };
 
-const fetchSchoolNameRows = cache(async (): Promise<SchoolNameRow[]> => {
+/*
+  ★★★**校名索引は「モジュールに1回」持つ**（2026-09-04）。
+
+  ★**`cache()`（React）はリクエスト1つのあいだしか効かない。**
+  ビルドは**ページ1枚ごとが1リクエスト**なので、**5,000枚ぶん取り直していた** ——
+  1枚につき **schools 3,500行を4リクエスト**（PostgREST は1回1,000行）。
+  ★★**そのせいでビルドが落ちるようになった** ——
+  `Failed to build /schools/… after 3 attempts`（1枚60秒の上限）。
+  **落ちる枚数は回ごとに変わり**（0枚・7枚・149枚・238枚）、**遅いのは Supabase の待ち**だった。
+
+  ★**5分で作り直す**（県のページの `revalidate = 300` に合わせる）。
+  **ビルド中は5分以内に終わる範囲で使い回し、動いているサーバーでは5分で新しくなる。**
+  ★**永久に持たないこと** —— 学校マスタを入れ替えたのに古い索引を返し続ける。
+*/
+const SCHOOL_NAME_ROWS_TTL_MS = 5 * 60 * 1000;
+let schoolNameRows: { at: number; rows: Promise<SchoolNameRow[]> } | null = null;
+
+const loadSchoolNameRows = async (): Promise<SchoolNameRow[]> => {
   const supabase = createSupabaseServerClient();
   const rows: SchoolNameRow[] = [];
 
@@ -548,7 +594,20 @@ const fetchSchoolNameRows = cache(async (): Promise<SchoolNameRow[]> => {
   }
 
   return rows;
-});
+};
+
+const fetchSchoolNameRows = (): Promise<SchoolNameRow[]> => {
+  const now = Date.now();
+  if (!schoolNameRows || now - schoolNameRows.at > SCHOOL_NAME_ROWS_TTL_MS) {
+    // ★**取り直しに失敗したら次の呼び出しでもう一度取りに行く**（失敗を持ち越さない）
+    const rows = loadSchoolNameRows().catch((e) => {
+      schoolNameRows = null;
+      throw e;
+    });
+    schoolNameRows = { at: now, rows };
+  }
+  return schoolNameRows.rows;
+};
 
 export type SchoolNameIndex = {
   /**

@@ -15534,13 +15534,65 @@ const HSB_BASE = {
       ★**春季・秋季にも同じ危うさがある** —— 索引の大会に**頼まれた年の札を貼って**しまう。
     */
     if (this.seasonOf(cur.title) === season && cur.title && curYear === year) {
-      const games = await this.readTournament(get, {
-        ...cur,
-        season,
-        year: curYear,
-        entries: null,
-      });
-      if (games.length) return games;
+      /*
+        ★★★**`keepTitle` はここにも効かせること**（2026-09-05 その3。**実害のあるバグだった**）。
+        **北海道と東京はホストが1つで、夏は2つの大会が同時に開かれる。**
+        索引が出しているのは片方だけ（`… 南北海道大会`）なので、
+        **`kita-hokkaido` のアダプタが南北海道の表を読みに行っていた** ——
+        **別の地区の試合を書き込みかねない。**
+
+        ★★**`/tournament` のページには両方が載っている**（`<svg>` が2つ）ので、
+        **そこから自分の地区のリンクを選び直す**:
+
+            [<a href="/tournament/…">南北海道大会</a>] [<a href="/tournament/…">北北海道大会</a>]
+
+        ★**大会名は索引のものから、地区の語だけ入れ替える**
+        （個別ページは大会名を持っていない。実際に開いて確かめた）。
+        ★**リンクが見つからなければ読まない**（当て推量で片方を採らない）。
+      */
+      let one = { ...cur };
+      let ok = true;
+      /*
+        ★★★**題が自分の地区と一致していても、必ずリンクを辿ること**（2026-09-05 その3）。
+        **`/tournament` には2大会ぶんの表が入っている**（`<svg>` が2つ）ので、
+        **そのまま読むと「スロット番号の列が0本」で落ちる**（実際に南北海道・西東京が落ちた）。
+        ★**題が合っているときは、大会名も優勝校もそのまま使う**（切り替えではないため）。
+      */
+      if (this.keepTitle) {
+        const matches = this.keepTitle.test(cur.title);
+        const page = await get(cur.bracket);
+        const link = page
+          ? [...page.matchAll(/<a[^>]+href="(\/tournament\/[^"]+)"[^>]*>([^<]*)<\/a>/g)]
+              .map((m) => ({ url: base + m[1], label: normalize(plain(m[2])) }))
+              .find((l) => this.keepTitle.test(l.label))
+          : null;
+        // ★リンクが無ければ、題が合っているときだけそのまま読む
+        ok = Boolean(link) || matches;
+        if (link) {
+          one = {
+            ...cur,
+            bracket: link.url,
+            // 「…選手権 南北海道大会」→「…選手権 北北海道大会」
+            title: matches ? cur.title : cur.title.replace(/\S*大会$/, link.label),
+            /*
+              ★★**別の大会へ切り替えたときは、索引の優勝校・準優勝校を持ち越さないこと**
+              —— **もう一方の大会のもの**なので、
+              **持ち越すと「決勝が記載と合わない」で必ず落ちる**（実際に落ちた）。
+              ★**表そのものが刷っている優勝校で突き合わせる**（検算D）。
+            */
+            ...(matches ? {} : { champion: null, runnerUp: null }),
+          };
+        }
+      }
+      if (ok) {
+        const games = await this.readTournament(get, {
+          ...one,
+          season,
+          year: curYear,
+          entries: null,
+        });
+        if (games.length) return games;
+      }
     }
 
     // ---- 2. 過去の大会 ----
@@ -15757,8 +15809,17 @@ const HSB_BASE = {
           `**決勝・準決勝という回戦名は出さない**（大会の決勝が行われていない）`,
       );
     }
+    /*
+      ★★★**表そのものが優勝校を刷っている**（`優勝校 白樺学園高校`。2026-09-05 その3）。
+      **索引の記載が使えないときはこちらで突き合わせる** ——
+      北海道と東京は夏に2つの大会が並行し、**索引はその片方の優勝校しか出さない**ので、
+      **もう一方の表を読んだときに「記載と合わない」で落ちていた**（実際に落ちた）。
+      ★**索引の記載があるときは今までどおりそちらを優先**（既存の県は1バイトも変わらない）。
+    */
+    const printedChampion = built.printedChampion?.replace(/^優勝校\s*/, "") || null;
+    const champion = info.champion ?? printedChampion;
     const final = built.games.find((g) => g.round === "決勝");
-    if (info.champion && final) {
+    if (champion && final) {
       const won = built.champion;
       const lost = won === final.a ? final.b : final.a;
       /*
@@ -15768,11 +15829,11 @@ const HSB_BASE = {
         ★★**取り消した理由は上の検算Cにある** —— **表の勝者が優勝校とは限らない**ので、
         準優勝だけ緩めても「決勝でない試合が決勝として出る」ことは止まらない。
       */
-      const wantRunnerUp = info.runnerUp;
-      if (!same(won, info.champion) || (wantRunnerUp && !same(lost, info.runnerUp))) {
+      const wantRunnerUp = info.champion ? info.runnerUp : null;
+      if (!same(won, champion) || (wantRunnerUp && !same(lost, wantRunnerUp))) {
         console.log(
           `  ⚠️ ${this.district}: ${info.title} の決勝が記載と合わない` +
-            `（記載「${info.champion} / ${info.runnerUp}」/ 組み立て「${won} / ${lost}」）。1試合も出さない`,
+            `（記載「${champion} / ${wantRunnerUp ?? "－"}」/ 組み立て「${won} / ${lost}」）。1試合も出さない`,
         );
         return [];
       }
@@ -15862,7 +15923,14 @@ const HSB_BASE = {
       `  （${info.title}: ${out.length} 試合 / ` +
         ((built.blocks ?? 1) > 1
           ? `${built.blocks} ブロック（大会の優勝校は無し）`
-          : `優勝 ${built.champion}${info.champion ? "（記載と一致）" : "（記載が無く未検算）"}`) +
+          : // ★**表が刷っている優勝校で突き合わせたときも「検算した」と書く**（2026-09-05 その3）
+            `優勝 ${built.champion}${
+              info.champion
+                ? "（記載と一致）"
+                : printedChampion
+                  ? "（表の優勝校と一致）"
+                  : "（記載が無く未検算）"
+            }`) +
         ` / ${built.slots.length} チーム` +
         `${undated ? ` ・日付の付かない試合 ${undated} 件` : ""}）`,
     );

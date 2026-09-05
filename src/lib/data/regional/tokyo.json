@@ -5,6 +5,2538 @@
   "sourceUrl": "https://tokyo.hsbflash.jp/",
   "games": [
     {
+      "date": "2026-04-01",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "明大明治",
+          "score": 6,
+          "won": false,
+          "name": "明大明治",
+          "slug": null
+        },
+        {
+          "display": "朋優学院",
+          "score": 9,
+          "won": true,
+          "name": "朋優学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "青山",
+          "score": 12,
+          "won": false,
+          "name": "青山高校",
+          "slug": "aoyama"
+        },
+        {
+          "display": "福生",
+          "score": 13,
+          "won": true,
+          "name": "福生高校",
+          "slug": "fussa"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "田園調布",
+          "score": 0,
+          "won": false,
+          "name": "田園調布高校",
+          "slug": "denenchofu"
+        },
+        {
+          "display": "立正大立正",
+          "score": 8,
+          "won": true,
+          "name": "立正大立正",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "成城",
+          "score": 17,
+          "won": true,
+          "name": "成城",
+          "slug": null
+        },
+        {
+          "display": "竹台",
+          "score": 7,
+          "won": false,
+          "name": "竹台高校",
+          "slug": "takedai"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "富士森",
+          "score": 14,
+          "won": true,
+          "name": "富士森高校",
+          "slug": "fujimori"
+        },
+        {
+          "display": "町田",
+          "score": 4,
+          "won": false,
+          "name": "町田高校",
+          "slug": "machida"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "実践学園",
+          "score": 8,
+          "won": true,
+          "name": "実践学園",
+          "slug": null
+        },
+        {
+          "display": "日比谷",
+          "score": 0,
+          "won": false,
+          "name": "日比谷高校",
+          "slug": "hibiya"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松が谷",
+          "score": 0,
+          "won": false,
+          "name": "松が谷高校",
+          "slug": "matsugaya"
+        },
+        {
+          "display": "錦城学園",
+          "score": 10,
+          "won": true,
+          "name": "錦城学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "江戸川",
+          "score": 11,
+          "won": true,
+          "name": "江戸川高校",
+          "slug": "edogawa"
+        },
+        {
+          "display": "新宿",
+          "score": 4,
+          "won": false,
+          "name": "新宿高校",
+          "slug": "shinjuku"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "桐朋",
+          "score": 5,
+          "won": true,
+          "name": "桐朋",
+          "slug": null
+        },
+        {
+          "display": "小岩",
+          "score": 0,
+          "won": false,
+          "name": "小岩高校",
+          "slug": "koiwa"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岩倉",
+          "score": 10,
+          "won": true,
+          "name": "岩倉",
+          "slug": null
+        },
+        {
+          "display": "東村山西",
+          "score": 0,
+          "won": false,
+          "name": "東村山西高校",
+          "slug": "higashimurayamanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "新日本物流スタジアム多摩",
+      "teams": [
+        {
+          "display": "目黒日大",
+          "score": 11,
+          "won": true,
+          "name": "目黒日大",
+          "slug": null
+        },
+        {
+          "display": "専大附",
+          "score": 1,
+          "won": false,
+          "name": "専大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜町",
+          "score": 5,
+          "won": false,
+          "name": "桜町高校",
+          "slug": "sakuramachi"
+        },
+        {
+          "display": "早大学院",
+          "score": 13,
+          "won": true,
+          "name": "早大学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "成瀬",
+          "score": 0,
+          "won": false,
+          "name": "成瀬高校",
+          "slug": "naruse"
+        },
+        {
+          "display": "安田学園",
+          "score": 9,
+          "won": true,
+          "name": "安田学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "文京",
+          "score": 10,
+          "won": true,
+          "name": "文京高校",
+          "slug": "bunkyo"
+        },
+        {
+          "display": "板橋",
+          "score": 2,
+          "won": false,
+          "name": "板橋高校",
+          "slug": "itabashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "篠崎",
+          "score": 4,
+          "won": false,
+          "name": "篠崎高校",
+          "slug": "shinozaki"
+        },
+        {
+          "display": "千歳丘",
+          "score": 8,
+          "won": true,
+          "name": "千歳丘高校",
+          "slug": "chitosegaoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "國學院久我山",
+          "score": 15,
+          "won": true,
+          "name": "國學院久我山",
+          "slug": null
+        },
+        {
+          "display": "明学東村山",
+          "score": 1,
+          "won": false,
+          "name": "明学東村山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大東大一",
+          "score": 7,
+          "won": true,
+          "name": "大東大一",
+          "slug": null
+        },
+        {
+          "display": "府中工科",
+          "score": 6,
+          "won": false,
+          "name": "府中工科高校",
+          "slug": "fuchukoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "八王子",
+          "score": 10,
+          "won": true,
+          "name": "八王子",
+          "slug": null
+        },
+        {
+          "display": "法政",
+          "score": 0,
+          "won": false,
+          "name": "法政",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "鷺宮・農大一・光丘・芦花",
+          "score": 4,
+          "won": true,
+          "name": "鷺宮・農大一・光丘・芦花",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "多摩工科",
+          "score": 2,
+          "won": false,
+          "name": "多摩工科高校",
+          "slug": "tamakoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東亜学園",
+          "score": 6,
+          "won": true,
+          "name": "東亜学園",
+          "slug": null
+        },
+        {
+          "display": "城北",
+          "score": 2,
+          "won": false,
+          "name": "城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "新日本物流スタジアム多摩",
+      "teams": [
+        {
+          "display": "正則学園",
+          "score": 5,
+          "won": false,
+          "name": "正則学園",
+          "slug": null
+        },
+        {
+          "display": "狛江",
+          "score": 15,
+          "won": true,
+          "name": "狛江高校",
+          "slug": "komae"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "東大和",
+          "score": 3,
+          "won": false,
+          "name": "東大和高校",
+          "slug": "higashiyamato"
+        },
+        {
+          "display": "海城",
+          "score": 4,
+          "won": true,
+          "name": "海城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "穎明館",
+          "score": 2,
+          "won": false,
+          "name": "穎明館",
+          "slug": null
+        },
+        {
+          "display": "高島",
+          "score": 4,
+          "won": true,
+          "name": "高島高校",
+          "slug": "takashima"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "早稲田実",
+          "score": 5,
+          "won": true,
+          "name": "早稲田実",
+          "slug": null
+        },
+        {
+          "display": "小川",
+          "score": 3,
+          "won": false,
+          "name": "小川高校",
+          "slug": "nishi-tokyo-ogawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-04",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "桜美林",
+          "score": 7,
+          "won": true,
+          "name": "桜美林",
+          "slug": null
+        },
+        {
+          "display": "朋優学院",
+          "score": 1,
+          "won": false,
+          "name": "朋優学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "福生",
+          "score": 4,
+          "won": false,
+          "name": "福生高校",
+          "slug": "fussa"
+        },
+        {
+          "display": "立正大立正",
+          "score": 8,
+          "won": true,
+          "name": "立正大立正",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "成城",
+          "score": 4,
+          "won": true,
+          "name": "成城",
+          "slug": null
+        },
+        {
+          "display": "富士森",
+          "score": 3,
+          "won": false,
+          "name": "富士森高校",
+          "slug": "fujimori"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-04",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "実践学園",
+          "score": 4,
+          "won": false,
+          "name": "実践学園",
+          "slug": null
+        },
+        {
+          "display": "八王子実践",
+          "score": 5,
+          "won": true,
+          "name": "八王子実践",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-04",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "聖パウロ学園",
+          "score": 19,
+          "won": true,
+          "name": "聖パウロ学園",
+          "slug": null
+        },
+        {
+          "display": "錦城学園",
+          "score": 5,
+          "won": false,
+          "name": "錦城学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "江戸川",
+          "score": 13,
+          "won": true,
+          "name": "江戸川高校",
+          "slug": "edogawa"
+        },
+        {
+          "display": "桐朋",
+          "score": 3,
+          "won": false,
+          "name": "桐朋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岩倉",
+          "score": 6,
+          "won": true,
+          "name": "岩倉",
+          "slug": null
+        },
+        {
+          "display": "目黒日大",
+          "score": 0,
+          "won": false,
+          "name": "目黒日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "早大学院",
+          "score": 4,
+          "won": false,
+          "name": "早大学院",
+          "slug": null
+        },
+        {
+          "display": "東海大高輪台",
+          "score": 10,
+          "won": true,
+          "name": "東海大高輪台",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "成立学園",
+          "score": 5,
+          "won": false,
+          "name": "成立学園",
+          "slug": null
+        },
+        {
+          "display": "安田学園",
+          "score": 6,
+          "won": true,
+          "name": "安田学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "文京",
+          "score": 3,
+          "won": true,
+          "name": "文京高校",
+          "slug": "bunkyo"
+        },
+        {
+          "display": "千歳丘",
+          "score": 1,
+          "won": false,
+          "name": "千歳丘高校",
+          "slug": "chitosegaoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "國學院久我山",
+          "score": 3,
+          "won": true,
+          "name": "國學院久我山",
+          "slug": null
+        },
+        {
+          "display": "大東大一",
+          "score": 1,
+          "won": false,
+          "name": "大東大一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "八王子",
+          "score": 7,
+          "won": true,
+          "name": "八王子",
+          "slug": null
+        },
+        {
+          "display": "広尾",
+          "score": 0,
+          "won": false,
+          "name": "広尾高校",
+          "slug": "higashi-tokyo-hiroo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日体大荏原",
+          "score": 8,
+          "won": true,
+          "name": "日体大荏原",
+          "slug": null
+        },
+        {
+          "display": "鷺宮・農大一・光丘・芦花",
+          "score": 0,
+          "won": false,
+          "name": "鷺宮・農大一・光丘・芦花",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-04-04",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "東亜学園",
+          "score": 15,
+          "won": true,
+          "name": "東亜学園",
+          "slug": null
+        },
+        {
+          "display": "狛江",
+          "score": 2,
+          "won": false,
+          "name": "狛江高校",
+          "slug": "komae"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "海城",
+          "score": 7,
+          "won": true,
+          "name": "海城",
+          "slug": null
+        },
+        {
+          "display": "高島",
+          "score": 2,
+          "won": false,
+          "name": "高島高校",
+          "slug": "takashima"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "早稲田実",
+          "score": 1,
+          "won": false,
+          "name": "早稲田実",
+          "slug": null
+        },
+        {
+          "display": "関東一",
+          "score": 5,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "桜美林",
+          "score": 4,
+          "won": true,
+          "name": "桜美林",
+          "slug": null
+        },
+        {
+          "display": "立正大立正",
+          "score": 0,
+          "won": false,
+          "name": "立正大立正",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-07",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "成城",
+          "score": 3,
+          "won": false,
+          "name": "成城",
+          "slug": null
+        },
+        {
+          "display": "八王子実践",
+          "score": 6,
+          "won": true,
+          "name": "八王子実践",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-07",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "聖パウロ学園",
+          "score": 11,
+          "won": true,
+          "name": "聖パウロ学園",
+          "slug": null
+        },
+        {
+          "display": "江戸川",
+          "score": 1,
+          "won": false,
+          "name": "江戸川高校",
+          "slug": "edogawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岩倉",
+          "score": 5,
+          "won": true,
+          "name": "岩倉",
+          "slug": null
+        },
+        {
+          "display": "東海大高輪台",
+          "score": 1,
+          "won": false,
+          "name": "東海大高輪台",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "安田学園",
+          "score": 9,
+          "won": true,
+          "name": "安田学園",
+          "slug": null
+        },
+        {
+          "display": "文京",
+          "score": 0,
+          "won": false,
+          "name": "文京高校",
+          "slug": "bunkyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "國學院久我山",
+          "score": 16,
+          "won": true,
+          "name": "國學院久我山",
+          "slug": null
+        },
+        {
+          "display": "八王子",
+          "score": 6,
+          "won": false,
+          "name": "八王子",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日体大荏原",
+          "score": 6,
+          "won": false,
+          "name": "日体大荏原",
+          "slug": null
+        },
+        {
+          "display": "東亜学園",
+          "score": 10,
+          "won": true,
+          "name": "東亜学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "海城",
+          "score": 1,
+          "won": false,
+          "name": "海城",
+          "slug": null
+        },
+        {
+          "display": "関東一",
+          "score": 12,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "4回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "桜美林",
+          "score": 11,
+          "won": true,
+          "name": "桜美林",
+          "slug": null
+        },
+        {
+          "display": "八王子実践",
+          "score": 7,
+          "won": false,
+          "name": "八王子実践",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "聖パウロ学園",
+          "score": 1,
+          "won": false,
+          "name": "聖パウロ学園",
+          "slug": null
+        },
+        {
+          "display": "岩倉",
+          "score": 4,
+          "won": true,
+          "name": "岩倉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "安田学園",
+          "score": 8,
+          "won": false,
+          "name": "安田学園",
+          "slug": null
+        },
+        {
+          "display": "國學院久我山",
+          "score": 15,
+          "won": true,
+          "name": "國學院久我山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東亜学園",
+          "score": 0,
+          "won": false,
+          "name": "東亜学園",
+          "slug": null
+        },
+        {
+          "display": "関東一",
+          "score": 7,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "準々決勝",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "桜美林",
+          "score": 8,
+          "won": false,
+          "name": "桜美林",
+          "slug": null
+        },
+        {
+          "display": "岩倉",
+          "score": 9,
+          "won": true,
+          "name": "岩倉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "準々決勝",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "國學院久我山",
+          "score": 1,
+          "won": false,
+          "name": "國學院久我山",
+          "slug": null
+        },
+        {
+          "display": "関東一",
+          "score": 4,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "準決勝",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "岩倉",
+          "score": 0,
+          "won": false,
+          "name": "岩倉",
+          "slug": null
+        },
+        {
+          "display": "関東一",
+          "score": 6,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "昭和",
+          "score": 7,
+          "won": false,
+          "name": "昭和高校",
+          "slug": "nishi-tokyo-showa"
+        },
+        {
+          "display": "東京",
+          "score": 8,
+          "won": true,
+          "name": "東京",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "日大一",
+          "score": 6,
+          "won": true,
+          "name": "日大一",
+          "slug": null
+        },
+        {
+          "display": "東京実",
+          "score": 4,
+          "won": false,
+          "name": "東京実",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日大櫻丘",
+          "score": 4,
+          "won": true,
+          "name": "日大櫻丘",
+          "slug": null
+        },
+        {
+          "display": "目白研心",
+          "score": 2,
+          "won": false,
+          "name": "目白研心",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "拓大一",
+          "score": 2,
+          "won": false,
+          "name": "拓大一",
+          "slug": null
+        },
+        {
+          "display": "佼成学園",
+          "score": 9,
+          "won": true,
+          "name": "佼成学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "新日本物流スタジアム多摩",
+      "teams": [
+        {
+          "display": "創価",
+          "score": 12,
+          "won": true,
+          "name": "創価",
+          "slug": null
+        },
+        {
+          "display": "久留米西",
+          "score": 0,
+          "won": false,
+          "name": "久留米西高校",
+          "slug": "kurumenishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "調布南",
+          "score": 9,
+          "won": true,
+          "name": "調布南高校",
+          "slug": "chofuminami"
+        },
+        {
+          "display": "葛飾野",
+          "score": 8,
+          "won": false,
+          "name": "葛飾野高校",
+          "slug": "katsushikano"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "淑徳",
+          "score": 11,
+          "won": true,
+          "name": "淑徳",
+          "slug": null
+        },
+        {
+          "display": "日本ウェルネス",
+          "score": 3,
+          "won": false,
+          "name": "日本ウェルネス",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "駒場学園",
+          "score": 2,
+          "won": false,
+          "name": "駒場学園",
+          "slug": null
+        },
+        {
+          "display": "日大鶴ヶ丘",
+          "score": 6,
+          "won": true,
+          "name": "日大鶴ヶ丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "新日本物流スタジアム多摩",
+      "teams": [
+        {
+          "display": "明大中野",
+          "score": 10,
+          "won": true,
+          "name": "明大中野",
+          "slug": null
+        },
+        {
+          "display": "豊多摩",
+          "score": 1,
+          "won": false,
+          "name": "豊多摩高校",
+          "slug": "toyotama"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小山台",
+          "score": 4,
+          "won": false,
+          "name": "小山台高校",
+          "slug": "koyamadai"
+        },
+        {
+          "display": "杉並",
+          "score": 6,
+          "won": true,
+          "name": "杉並高校",
+          "slug": "suginami"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "修徳",
+          "score": 11,
+          "won": true,
+          "name": "修徳",
+          "slug": null
+        },
+        {
+          "display": "早稲田",
+          "score": 1,
+          "won": false,
+          "name": "早稲田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "拝島",
+          "score": 0,
+          "won": false,
+          "name": "拝島高校",
+          "slug": "haijima"
+        },
+        {
+          "display": "共栄学園",
+          "score": 10,
+          "won": true,
+          "name": "共栄学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "駿台学園",
+          "score": 4,
+          "won": true,
+          "name": "駿台学園",
+          "slug": null
+        },
+        {
+          "display": "練馬",
+          "score": 0,
+          "won": false,
+          "name": "練馬高校",
+          "slug": "nerima"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "九段中等",
+          "score": 8,
+          "won": true,
+          "name": "九段中等",
+          "slug": null
+        },
+        {
+          "display": "片倉",
+          "score": 7,
+          "won": false,
+          "name": "片倉高校",
+          "slug": "katakura"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "青山学院",
+          "score": 14,
+          "won": false,
+          "name": "青山学院",
+          "slug": null
+        },
+        {
+          "display": "八王子北",
+          "score": 15,
+          "won": true,
+          "name": "八王子北高校",
+          "slug": "hachiojikita"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "日本学園",
+          "score": 10,
+          "won": false,
+          "name": "日本学園",
+          "slug": null
+        },
+        {
+          "display": "世田谷学園",
+          "score": 11,
+          "won": true,
+          "name": "世田谷学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "郁文館",
+          "score": 3,
+          "won": true,
+          "name": "郁文館",
+          "slug": null
+        },
+        {
+          "display": "堀越",
+          "score": 2,
+          "won": false,
+          "name": "堀越",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "日野台",
+          "score": 0,
+          "won": false,
+          "name": "日野台高校",
+          "slug": "hinodai"
+        },
+        {
+          "display": "大森学園",
+          "score": 8,
+          "won": true,
+          "name": "大森学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "武蔵丘",
+          "score": 7,
+          "won": true,
+          "name": "武蔵丘高校",
+          "slug": "musashigaoka"
+        },
+        {
+          "display": "聖学院",
+          "score": 0,
+          "won": false,
+          "name": "聖学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "府中東",
+          "score": 1,
+          "won": false,
+          "name": "府中東高校",
+          "slug": "fuchuhigashi"
+        },
+        {
+          "display": "駒大高",
+          "score": 2,
+          "won": true,
+          "name": "駒大高",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "桜修館",
+          "score": 7,
+          "won": false,
+          "name": "桜修館中等教育学校",
+          "slug": "oshukan"
+        },
+        {
+          "display": "立志舎",
+          "score": 15,
+          "won": true,
+          "name": "立志舎",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立川",
+          "score": 2,
+          "won": false,
+          "name": "立川高校",
+          "slug": "tachikawa"
+        },
+        {
+          "display": "豊南",
+          "score": 8,
+          "won": true,
+          "name": "豊南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "明星",
+          "score": 6,
+          "won": true,
+          "name": "明星",
+          "slug": null
+        },
+        {
+          "display": "城西大城西",
+          "score": 1,
+          "won": false,
+          "name": "城西大城西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "帝京",
+          "score": 13,
+          "won": true,
+          "name": "帝京",
+          "slug": null
+        },
+        {
+          "display": "東京",
+          "score": 2,
+          "won": false,
+          "name": "東京",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "日大一",
+          "score": 1,
+          "won": false,
+          "name": "日大一",
+          "slug": null
+        },
+        {
+          "display": "工学院大附",
+          "score": 8,
+          "won": true,
+          "name": "工学院大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "日大櫻丘",
+          "score": 0,
+          "won": false,
+          "name": "日大櫻丘",
+          "slug": null
+        },
+        {
+          "display": "佼成学園",
+          "score": 9,
+          "won": true,
+          "name": "佼成学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "創価",
+          "score": 8,
+          "won": true,
+          "name": "創価",
+          "slug": null
+        },
+        {
+          "display": "東海大菅生",
+          "score": 7,
+          "won": false,
+          "name": "東海大菅生",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "明大八王子",
+          "score": 2,
+          "won": false,
+          "name": "明大八王子",
+          "slug": null
+        },
+        {
+          "display": "調布南",
+          "score": 3,
+          "won": true,
+          "name": "調布南高校",
+          "slug": "chofuminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "淑徳",
+          "score": 4,
+          "won": true,
+          "name": "淑徳",
+          "slug": null
+        },
+        {
+          "display": "日大鶴ヶ丘",
+          "score": 3,
+          "won": false,
+          "name": "日大鶴ヶ丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "明大中野",
+          "score": 9,
+          "won": true,
+          "name": "明大中野",
+          "slug": null
+        },
+        {
+          "display": "杉並",
+          "score": 1,
+          "won": false,
+          "name": "杉並高校",
+          "slug": "suginami"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "修徳",
+          "score": 14,
+          "won": true,
+          "name": "修徳",
+          "slug": null
+        },
+        {
+          "display": "日大二",
+          "score": 3,
+          "won": false,
+          "name": "日大二",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "日野",
+          "score": 3,
+          "won": false,
+          "name": "日野高校",
+          "slug": "hino"
+        },
+        {
+          "display": "共栄学園",
+          "score": 6,
+          "won": true,
+          "name": "共栄学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "駿台学園",
+          "score": 10,
+          "won": true,
+          "name": "駿台学園",
+          "slug": null
+        },
+        {
+          "display": "九段中等",
+          "score": 1,
+          "won": false,
+          "name": "九段中等",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "八王子北",
+          "score": 0,
+          "won": false,
+          "name": "八王子北高校",
+          "slug": "hachiojikita"
+        },
+        {
+          "display": "世田谷学園",
+          "score": 10,
+          "won": true,
+          "name": "世田谷学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-04",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "郁文館",
+          "score": 0,
+          "won": false,
+          "name": "郁文館",
+          "slug": null
+        },
+        {
+          "display": "二松学舎大附",
+          "score": 12,
+          "won": true,
+          "name": "二松学舎大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "城東",
+          "score": 9,
+          "won": true,
+          "name": "城東高校",
+          "slug": "joto"
+        },
+        {
+          "display": "大森学園",
+          "score": 2,
+          "won": false,
+          "name": "大森学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "武蔵丘",
+          "score": 6,
+          "won": false,
+          "name": "武蔵丘高校",
+          "slug": "musashigaoka"
+        },
+        {
+          "display": "駒大高",
+          "score": 10,
+          "won": true,
+          "name": "駒大高",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "立志舎",
+          "score": 3,
+          "won": false,
+          "name": "立志舎",
+          "slug": null
+        },
+        {
+          "display": "豊南",
+          "score": 7,
+          "won": true,
+          "name": "豊南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "明星",
+          "score": 3,
+          "won": false,
+          "name": "明星",
+          "slug": null
+        },
+        {
+          "display": "国士舘",
+          "score": 12,
+          "won": true,
+          "name": "国士舘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "帝京",
+          "score": 6,
+          "won": true,
+          "name": "帝京",
+          "slug": null
+        },
+        {
+          "display": "工学院大附",
+          "score": 1,
+          "won": false,
+          "name": "工学院大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": "新日本物流スタジアム多摩",
+      "teams": [
+        {
+          "display": "佼成学園",
+          "score": 6,
+          "won": true,
+          "name": "佼成学園",
+          "slug": null
+        },
+        {
+          "display": "創価",
+          "score": 5,
+          "won": false,
+          "name": "創価",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "調布南",
+          "score": 0,
+          "won": false,
+          "name": "調布南高校",
+          "slug": "chofuminami"
+        },
+        {
+          "display": "淑徳",
+          "score": 7,
+          "won": true,
+          "name": "淑徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": "新日本物流スタジアム多摩",
+      "teams": [
+        {
+          "display": "明大中野",
+          "score": 6,
+          "won": true,
+          "name": "明大中野",
+          "slug": null
+        },
+        {
+          "display": "修徳",
+          "score": 2,
+          "won": false,
+          "name": "修徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "共栄学園",
+          "score": 8,
+          "won": true,
+          "name": "共栄学園",
+          "slug": null
+        },
+        {
+          "display": "駿台学園",
+          "score": 6,
+          "won": false,
+          "name": "駿台学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "世田谷学園",
+          "score": 5,
+          "won": true,
+          "name": "世田谷学園",
+          "slug": null
+        },
+        {
+          "display": "二松学舎大附",
+          "score": 3,
+          "won": false,
+          "name": "二松学舎大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "城東",
+          "score": 5,
+          "won": false,
+          "name": "城東高校",
+          "slug": "joto"
+        },
+        {
+          "display": "駒大高",
+          "score": 9,
+          "won": true,
+          "name": "駒大高",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "豊南",
+          "score": 1,
+          "won": false,
+          "name": "豊南",
+          "slug": null
+        },
+        {
+          "display": "国士舘",
+          "score": 9,
+          "won": true,
+          "name": "国士舘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "4回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "帝京",
+          "score": 1,
+          "won": false,
+          "name": "帝京",
+          "slug": null
+        },
+        {
+          "display": "佼成学園",
+          "score": 4,
+          "won": true,
+          "name": "佼成学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "4回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "淑徳",
+          "score": 6,
+          "won": true,
+          "name": "淑徳",
+          "slug": null
+        },
+        {
+          "display": "明大中野",
+          "score": 3,
+          "won": false,
+          "name": "明大中野",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "共栄学園",
+          "score": 5,
+          "won": false,
+          "name": "共栄学園",
+          "slug": null
+        },
+        {
+          "display": "世田谷学園",
+          "score": 7,
+          "won": true,
+          "name": "世田谷学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "4回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "駒大高",
+          "score": 4,
+          "won": false,
+          "name": "駒大高",
+          "slug": null
+        },
+        {
+          "display": "国士舘",
+          "score": 11,
+          "won": true,
+          "name": "国士舘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "準々決勝",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "佼成学園",
+          "score": 5,
+          "won": true,
+          "name": "佼成学園",
+          "slug": null
+        },
+        {
+          "display": "淑徳",
+          "score": 4,
+          "won": false,
+          "name": "淑徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "準々決勝",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "世田谷学園",
+          "score": 6,
+          "won": false,
+          "name": "世田谷学園",
+          "slug": null
+        },
+        {
+          "display": "国士舘",
+          "score": 8,
+          "won": true,
+          "name": "国士舘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "準決勝",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "佼成学園",
+          "score": 1,
+          "won": false,
+          "name": "佼成学園",
+          "slug": null
+        },
+        {
+          "display": "国士舘",
+          "score": 8,
+          "won": true,
+          "name": "国士舘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-03",
+      "season": "spring",
+      "tournament": "2026年 春季東京都高等学校野球大会",
+      "round": "決勝",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "国士舘",
+          "score": 2,
+          "won": false,
+          "name": "国士舘",
+          "slug": null
+        },
+        {
+          "display": "関東一",
+          "score": 5,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2019-04-01",
       "season": "spring",
       "tournament": "2019年 春季東京都高等学校野球大会",
@@ -14109,483 +16641,114 @@
       ]
     },
     {
-      "date": "2026-04-01",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "S&D昭島スタジアム",
-      "teams": [
-        {
-          "display": "明大明治",
-          "score": 6,
-          "won": false,
-          "name": "明大明治",
-          "slug": null
-        },
-        {
-          "display": "朋優学院",
-          "score": 9,
-          "won": true,
-          "name": "朋優学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-02",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "青山",
-          "score": 12,
-          "won": false,
-          "name": "青山高校",
-          "slug": "aoyama"
-        },
-        {
-          "display": "福生",
-          "score": 13,
-          "won": true,
-          "name": "福生高校",
-          "slug": "fussa"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-01",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "田園調布",
-          "score": 0,
-          "won": false,
-          "name": "田園調布高校",
-          "slug": "denenchofu"
-        },
-        {
-          "display": "立正大立正",
-          "score": 8,
-          "won": true,
-          "name": "立正大立正",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-02",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "S&D昭島スタジアム",
-      "teams": [
-        {
-          "display": "成城",
-          "score": 17,
-          "won": true,
-          "name": "成城",
-          "slug": null
-        },
-        {
-          "display": "竹台",
-          "score": 7,
-          "won": false,
-          "name": "竹台高校",
-          "slug": "takedai"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-01",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "スリーボンドベースボールパーク上柚木",
-      "teams": [
-        {
-          "display": "富士森",
-          "score": 14,
-          "won": true,
-          "name": "富士森高校",
-          "slug": "fujimori"
-        },
-        {
-          "display": "町田",
-          "score": 4,
-          "won": false,
-          "name": "町田高校",
-          "slug": "machida"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-01",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "1回戦",
       "venue": "スリーボンドスタジアム八王子",
       "teams": [
         {
-          "display": "実践学園",
-          "score": 8,
+          "display": "桜修館",
+          "score": 2,
+          "won": false,
+          "name": "桜修館中等教育学校",
+          "slug": "oshukan"
+        },
+        {
+          "display": "世田谷学園",
+          "score": 9,
           "won": true,
+          "name": "世田谷学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "朋優学院",
+          "score": 0,
+          "won": false,
+          "name": "朋優学院",
+          "slug": null
+        },
+        {
+          "display": "明大八王子",
+          "score": 6,
+          "won": true,
+          "name": "明大八王子",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "実践学園",
+          "score": 3,
+          "won": false,
           "name": "実践学園",
           "slug": null
         },
         {
-          "display": "日比谷",
-          "score": 0,
-          "won": false,
-          "name": "日比谷高校",
-          "slug": "hibiya"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-01",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "松が谷",
-          "score": 0,
-          "won": false,
-          "name": "松が谷高校",
-          "slug": "matsugaya"
-        },
-        {
-          "display": "錦城学園",
-          "score": 10,
-          "won": true,
-          "name": "錦城学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-01",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "オーエンススタジアム江戸川",
-      "teams": [
-        {
-          "display": "江戸川",
-          "score": 11,
-          "won": true,
-          "name": "江戸川高校",
-          "slug": "edogawa"
-        },
-        {
-          "display": "新宿",
-          "score": 4,
-          "won": false,
-          "name": "新宿高校",
-          "slug": "shinjuku"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-01",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "桐朋",
-          "score": 5,
-          "won": true,
-          "name": "桐朋",
-          "slug": null
-        },
-        {
-          "display": "小岩",
-          "score": 0,
-          "won": false,
-          "name": "小岩高校",
-          "slug": "koiwa"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "岩倉",
-          "score": 10,
-          "won": true,
-          "name": "岩倉",
-          "slug": null
-        },
-        {
-          "display": "東村山西",
-          "score": 0,
-          "won": false,
-          "name": "東村山西高校",
-          "slug": "higashimurayamanishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "新日本物流スタジアム多摩",
-      "teams": [
-        {
-          "display": "目黒日大",
-          "score": 11,
-          "won": true,
-          "name": "目黒日大",
-          "slug": null
-        },
-        {
-          "display": "専大附",
-          "score": 1,
-          "won": false,
-          "name": "専大附",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "桜町",
-          "score": 5,
-          "won": false,
-          "name": "桜町高校",
-          "slug": "sakuramachi"
-        },
-        {
-          "display": "早大学院",
-          "score": 13,
-          "won": true,
-          "name": "早大学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "大田スタジアム",
-      "teams": [
-        {
-          "display": "成瀬",
-          "score": 0,
-          "won": false,
-          "name": "成瀬高校",
-          "slug": "naruse"
-        },
-        {
-          "display": "安田学園",
-          "score": 9,
-          "won": true,
-          "name": "安田学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "オーエンススタジアム江戸川",
-      "teams": [
-        {
-          "display": "文京",
-          "score": 10,
-          "won": true,
-          "name": "文京高校",
-          "slug": "bunkyo"
-        },
-        {
-          "display": "板橋",
-          "score": 2,
-          "won": false,
-          "name": "板橋高校",
-          "slug": "itabashi"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "S&D昭島スタジアム",
-      "teams": [
-        {
-          "display": "篠崎",
-          "score": 4,
-          "won": false,
-          "name": "篠崎高校",
-          "slug": "shinozaki"
-        },
-        {
-          "display": "千歳丘",
-          "score": 8,
-          "won": true,
-          "name": "千歳丘高校",
-          "slug": "chitosegaoka"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "國學院久我山",
-          "score": 15,
-          "won": true,
-          "name": "國學院久我山",
-          "slug": null
-        },
-        {
-          "display": "明学東村山",
-          "score": 1,
-          "won": false,
-          "name": "明学東村山",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "大東大一",
-          "score": 7,
-          "won": true,
-          "name": "大東大一",
-          "slug": null
-        },
-        {
           "display": "府中工科",
-          "score": 6,
-          "won": false,
+          "score": 5,
+          "won": true,
           "name": "府中工科高校",
           "slug": "fuchukoka"
         }
       ]
     },
     {
-      "date": "2026-04-01",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "1回戦",
-      "venue": "スリーボンドスタジアム八王子",
+      "venue": "オーエンススタジアム江戸川",
       "teams": [
         {
-          "display": "八王子",
-          "score": 10,
+          "display": "関東一",
+          "score": 14,
           "won": true,
-          "name": "八王子",
+          "name": "関東一",
           "slug": null
         },
         {
-          "display": "法政",
+          "display": "東京",
           "score": 0,
           "won": false,
-          "name": "法政",
+          "name": "東京",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-01",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-11",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "1回戦",
-      "venue": "スリーボンドベースボールパーク上柚木",
+      "venue": "オーエンススタジアム江戸川",
       "teams": [
         {
-          "display": "鷺宮・農大一・光丘・芦花",
-          "score": 4,
-          "won": true,
-          "name": "鷺宮・農大一・光丘・芦花",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "多摩工科",
+          "display": "葛飾野",
           "score": 2,
           "won": false,
-          "name": "多摩工科高校",
-          "slug": "tamakoka"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-01",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "東亜学園",
-          "score": 6,
-          "won": true,
-          "name": "東亜学園",
-          "slug": null
-        },
-        {
-          "display": "城北",
-          "score": 2,
-          "won": false,
-          "name": "城北",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-01",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "新日本物流スタジアム多摩",
-      "teams": [
-        {
-          "display": "正則学園",
-          "score": 5,
-          "won": false,
-          "name": "正則学園",
-          "slug": null
+          "name": "葛飾野高校",
+          "slug": "katsushikano"
         },
         {
           "display": "狛江",
-          "score": 15,
+          "score": 5,
           "won": true,
           "name": "狛江高校",
           "slug": "komae"
@@ -14593,248 +16756,317 @@
       ]
     },
     {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-11",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "1回戦",
-      "venue": "コトブキヤスタジアム",
+      "venue": "オーエンススタジアム江戸川",
       "teams": [
         {
-          "display": "東大和",
-          "score": 3,
+          "display": "町田",
+          "score": 0,
           "won": false,
-          "name": "東大和高校",
-          "slug": "higashiyamato"
+          "name": "町田高校",
+          "slug": "machida"
         },
         {
-          "display": "海城",
-          "score": 4,
+          "display": "東海大高輪台",
+          "score": 14,
           "won": true,
-          "name": "海城",
+          "name": "東海大高輪台",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "二松学舎大附",
+          "score": 7,
+          "won": true,
+          "name": "二松学舎大附",
+          "slug": null
+        },
+        {
+          "display": "東亜学園",
+          "score": 2,
+          "won": false,
+          "name": "東亜学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-11",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "成城",
+          "score": 0,
+          "won": false,
+          "name": "成城",
+          "slug": null
+        },
+        {
+          "display": "明大中野",
+          "score": 7,
+          "won": true,
+          "name": "明大中野",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-11",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "日野",
+          "score": 8,
+          "won": true,
+          "name": "日野高校",
+          "slug": "hino"
+        },
+        {
+          "display": "東大和",
+          "score": 0,
+          "won": false,
+          "name": "東大和高校",
+          "slug": "higashiyamato"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "1回戦",
       "venue": "大田スタジアム",
       "teams": [
         {
-          "display": "穎明館",
-          "score": 2,
+          "display": "立正大立正",
+          "score": 10,
+          "won": true,
+          "name": "立正大立正",
+          "slug": null
+        },
+        {
+          "display": "桜町",
+          "score": 4,
           "won": false,
-          "name": "穎明館",
+          "name": "桜町高校",
+          "slug": "sakuramachi"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "錦城学園",
+          "score": 3,
+          "won": false,
+          "name": "錦城学園",
+          "slug": null
+        },
+        {
+          "display": "淑徳",
+          "score": 5,
+          "won": true,
+          "name": "淑徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "青山学院",
+          "score": 0,
+          "won": false,
+          "name": "青山学院",
+          "slug": null
+        },
+        {
+          "display": "広尾",
+          "score": 7,
+          "won": true,
+          "name": "広尾高校",
+          "slug": "higashi-tokyo-hiroo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-11",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "駿台学園",
+          "score": 4,
+          "won": false,
+          "name": "駿台学園",
+          "slug": null
+        },
+        {
+          "display": "八王子",
+          "score": 5,
+          "won": true,
+          "name": "八王子",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "八王子実践",
+          "score": 8,
+          "won": true,
+          "name": "八王子実践",
           "slug": null
         },
         {
           "display": "高島",
-          "score": 4,
-          "won": true,
+          "score": 1,
+          "won": false,
           "name": "高島高校",
           "slug": "takashima"
         }
       ]
     },
     {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "1回戦",
       "venue": "スリーボンドスタジアム八王子",
       "teams": [
         {
-          "display": "早稲田実",
-          "score": 5,
-          "won": true,
-          "name": "早稲田実",
+          "display": "東海大菅生",
+          "score": 2,
+          "won": false,
+          "name": "東海大菅生",
           "slug": null
         },
         {
-          "display": "小川",
-          "score": 3,
-          "won": false,
-          "name": "小川高校",
-          "slug": "nishi-tokyo-ogawa"
+          "display": "修徳",
+          "score": 6,
+          "won": true,
+          "name": "修徳",
+          "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-04",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "佼成学園",
+          "score": 2,
+          "won": false,
+          "name": "佼成学園",
+          "slug": null
+        },
+        {
+          "display": "桜美林",
+          "score": 4,
+          "won": true,
+          "name": "桜美林",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-18",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "2回戦",
       "venue": "スリーボンドスタジアム八王子",
       "teams": [
         {
-          "display": "桜美林",
-          "score": 7,
-          "won": true,
-          "name": "桜美林",
-          "slug": null
-        },
-        {
-          "display": "朋優学院",
-          "score": 1,
-          "won": false,
-          "name": "朋優学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "福生",
+          "display": "世田谷学園",
           "score": 4,
           "won": false,
-          "name": "福生高校",
-          "slug": "fussa"
-        },
-        {
-          "display": "立正大立正",
-          "score": 8,
-          "won": true,
-          "name": "立正大立正",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "成城",
-          "score": 4,
-          "won": true,
-          "name": "成城",
+          "name": "世田谷学園",
           "slug": null
         },
         {
-          "display": "富士森",
-          "score": 3,
-          "won": false,
-          "name": "富士森高校",
-          "slug": "fujimori"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-04",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "実践学園",
-          "score": 4,
-          "won": false,
-          "name": "実践学園",
-          "slug": null
-        },
-        {
-          "display": "八王子実践",
+          "display": "明大八王子",
           "score": 5,
           "won": true,
-          "name": "八王子実践",
+          "name": "明大八王子",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-04",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "聖パウロ学園",
-          "score": 19,
-          "won": true,
-          "name": "聖パウロ学園",
-          "slug": null
-        },
-        {
-          "display": "錦城学園",
-          "score": 5,
-          "won": false,
-          "name": "錦城学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "江戸川",
-          "score": 13,
-          "won": true,
-          "name": "江戸川高校",
-          "slug": "edogawa"
-        },
-        {
-          "display": "桐朋",
-          "score": 3,
-          "won": false,
-          "name": "桐朋",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-06",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "岩倉",
-          "score": 6,
-          "won": true,
-          "name": "岩倉",
-          "slug": null
-        },
-        {
-          "display": "目黒日大",
-          "score": 0,
-          "won": false,
-          "name": "目黒日大",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-18",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "2回戦",
       "venue": "オーエンススタジアム江戸川",
       "teams": [
         {
-          "display": "早大学院",
-          "score": 4,
+          "display": "府中工科",
+          "score": 0,
           "won": false,
-          "name": "早大学院",
+          "name": "府中工科高校",
+          "slug": "fuchukoka"
+        },
+        {
+          "display": "関東一",
+          "score": 9,
+          "won": true,
+          "name": "関東一",
           "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-18",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "狛江",
+          "score": 3,
+          "won": false,
+          "name": "狛江高校",
+          "slug": "komae"
         },
         {
           "display": "東海大高輪台",
@@ -14846,87 +17078,179 @@
       ]
     },
     {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-18",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "二松学舎大附",
+          "score": 7,
+          "won": true,
+          "name": "二松学舎大附",
+          "slug": null
+        },
+        {
+          "display": "明大中野",
+          "score": 1,
+          "won": false,
+          "name": "明大中野",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-18",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "新日本物流スタジアム多摩",
+      "teams": [
+        {
+          "display": "日野",
+          "score": 9,
+          "won": true,
+          "name": "日野高校",
+          "slug": "hino"
+        },
+        {
+          "display": "立正大立正",
+          "score": 2,
+          "won": false,
+          "name": "立正大立正",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-18",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "2回戦",
       "venue": "オーエンススタジアム江戸川",
       "teams": [
         {
-          "display": "成立学園",
-          "score": 5,
-          "won": false,
-          "name": "成立学園",
-          "slug": null
-        },
-        {
-          "display": "安田学園",
-          "score": 6,
-          "won": true,
-          "name": "安田学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "文京",
-          "score": 3,
-          "won": true,
-          "name": "文京高校",
-          "slug": "bunkyo"
-        },
-        {
-          "display": "千歳丘",
+          "display": "淑徳",
           "score": 1,
           "won": false,
-          "name": "千歳丘高校",
-          "slug": "chitosegaoka"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-06",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "國學院久我山",
-          "score": 3,
-          "won": true,
-          "name": "國學院久我山",
+          "name": "淑徳",
           "slug": null
         },
         {
-          "display": "大東大一",
-          "score": 1,
-          "won": false,
-          "name": "大東大一",
-          "slug": null
+          "display": "広尾",
+          "score": 9,
+          "won": true,
+          "name": "広尾高校",
+          "slug": "higashi-tokyo-hiroo"
         }
       ]
     },
     {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-18",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "2回戦",
-      "venue": "S&D昭島スタジアム",
+      "venue": "スリーボンドスタジアム八王子",
       "teams": [
         {
           "display": "八王子",
-          "score": 7,
-          "won": true,
+          "score": 5,
+          "won": false,
           "name": "八王子",
           "slug": null
+        },
+        {
+          "display": "八王子実践",
+          "score": 6,
+          "won": true,
+          "name": "八王子実践",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-18",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "新日本物流スタジアム多摩",
+      "teams": [
+        {
+          "display": "修徳",
+          "score": 1,
+          "won": false,
+          "name": "修徳",
+          "slug": null
+        },
+        {
+          "display": "桜美林",
+          "score": 2,
+          "won": true,
+          "name": "桜美林",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "明大八王子",
+          "score": 1,
+          "won": false,
+          "name": "明大八王子",
+          "slug": null
+        },
+        {
+          "display": "関東一",
+          "score": 11,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-28",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "東海大高輪台",
+          "score": 10,
+          "won": true,
+          "name": "東海大高輪台",
+          "slug": null
+        },
+        {
+          "display": "二松学舎大附",
+          "score": 7,
+          "won": false,
+          "name": "二松学舎大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-28",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "日野",
+          "score": 7,
+          "won": true,
+          "name": "日野高校",
+          "slug": "hino"
         },
         {
           "display": "広尾",
@@ -14938,184 +17262,45 @@
       ]
     },
     {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "日体大荏原",
-          "score": 8,
-          "won": true,
-          "name": "日体大荏原",
-          "slug": null
-        },
-        {
-          "display": "鷺宮・農大一・光丘・芦花",
-          "score": 0,
-          "won": false,
-          "name": "鷺宮・農大一・光丘・芦花",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-04-04",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "S&D昭島スタジアム",
-      "teams": [
-        {
-          "display": "東亜学園",
-          "score": 15,
-          "won": true,
-          "name": "東亜学園",
-          "slug": null
-        },
-        {
-          "display": "狛江",
-          "score": 2,
-          "won": false,
-          "name": "狛江高校",
-          "slug": "komae"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-06",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "海城",
-          "score": 7,
-          "won": true,
-          "name": "海城",
-          "slug": null
-        },
-        {
-          "display": "高島",
-          "score": 2,
-          "won": false,
-          "name": "高島高校",
-          "slug": "takashima"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "オーエンススタジアム江戸川",
-      "teams": [
-        {
-          "display": "早稲田実",
-          "score": 1,
-          "won": false,
-          "name": "早稲田実",
-          "slug": null
-        },
-        {
-          "display": "関東一",
-          "score": 5,
-          "won": true,
-          "name": "関東一",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-28",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "3回戦",
       "venue": "スリーボンドスタジアム八王子",
       "teams": [
         {
+          "display": "八王子実践",
+          "score": 1,
+          "won": false,
+          "name": "八王子実践",
+          "slug": null
+        },
+        {
           "display": "桜美林",
-          "score": 4,
+          "score": 6,
           "won": true,
           "name": "桜美林",
           "slug": null
-        },
-        {
-          "display": "立正大立正",
-          "score": 0,
-          "won": false,
-          "name": "立正大立正",
-          "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-07",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "3回戦",
+      "date": "2025-11-01",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "準々決勝",
       "venue": "スリーボンドスタジアム八王子",
       "teams": [
         {
-          "display": "成城",
-          "score": 3,
-          "won": false,
-          "name": "成城",
-          "slug": null
-        },
-        {
-          "display": "八王子実践",
-          "score": 6,
+          "display": "関東一",
+          "score": 10,
           "won": true,
-          "name": "八王子実践",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-07",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "聖パウロ学園",
-          "score": 11,
-          "won": true,
-          "name": "聖パウロ学園",
-          "slug": null
-        },
-        {
-          "display": "江戸川",
-          "score": 1,
-          "won": false,
-          "name": "江戸川高校",
-          "slug": "edogawa"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "岩倉",
-          "score": 5,
-          "won": true,
-          "name": "岩倉",
+          "name": "関東一",
           "slug": null
         },
         {
           "display": "東海大高輪台",
-          "score": 1,
+          "score": 2,
           "won": false,
           "name": "東海大高輪台",
           "slug": null
@@ -15123,22 +17308,68 @@
       ]
     },
     {
-      "date": "2026-04-11",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": null,
+      "date": "2025-11-01",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "準々決勝",
+      "venue": "スリーボンドスタジアム八王子",
       "teams": [
         {
-          "display": "安田学園",
+          "display": "日野",
+          "score": 1,
+          "won": false,
+          "name": "日野高校",
+          "slug": "hino"
+        },
+        {
+          "display": "桜美林",
+          "score": 5,
+          "won": true,
+          "name": "桜美林",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-11-08",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "準決勝",
+      "venue": "神宮球場",
+      "teams": [
+        {
+          "display": "関東一",
           "score": 9,
           "won": true,
-          "name": "安田学園",
+          "name": "関東一",
           "slug": null
         },
         {
+          "display": "桜美林",
+          "score": 1,
+          "won": false,
+          "name": "桜美林",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "小岩",
+          "score": 8,
+          "won": true,
+          "name": "小岩高校",
+          "slug": "koiwa"
+        },
+        {
           "display": "文京",
-          "score": 0,
+          "score": 6,
           "won": false,
           "name": "文京高校",
           "slug": "bunkyo"
@@ -15146,551 +17377,505 @@
       ]
     },
     {
-      "date": "2026-04-11",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "國學院久我山",
-          "score": 16,
-          "won": true,
-          "name": "國學院久我山",
-          "slug": null
-        },
-        {
-          "display": "八王子",
-          "score": 6,
-          "won": false,
-          "name": "八王子",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-11",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "日体大荏原",
-          "score": 6,
-          "won": false,
-          "name": "日体大荏原",
-          "slug": null
-        },
-        {
-          "display": "東亜学園",
-          "score": 10,
-          "won": true,
-          "name": "東亜学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-11",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "海城",
-          "score": 1,
-          "won": false,
-          "name": "海城",
-          "slug": null
-        },
-        {
-          "display": "関東一",
-          "score": 12,
-          "won": true,
-          "name": "関東一",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "4回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "桜美林",
-          "score": 11,
-          "won": true,
-          "name": "桜美林",
-          "slug": null
-        },
-        {
-          "display": "八王子実践",
-          "score": 7,
-          "won": false,
-          "name": "八王子実践",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "4回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "聖パウロ学園",
-          "score": 1,
-          "won": false,
-          "name": "聖パウロ学園",
-          "slug": null
-        },
-        {
-          "display": "岩倉",
-          "score": 4,
-          "won": true,
-          "name": "岩倉",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "4回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "安田学園",
-          "score": 8,
-          "won": false,
-          "name": "安田学園",
-          "slug": null
-        },
-        {
-          "display": "國學院久我山",
-          "score": 15,
-          "won": true,
-          "name": "國學院久我山",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "4回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "東亜学園",
-          "score": 0,
-          "won": false,
-          "name": "東亜学園",
-          "slug": null
-        },
-        {
-          "display": "関東一",
-          "score": 7,
-          "won": true,
-          "name": "関東一",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-26",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "準々決勝",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "桜美林",
-          "score": 8,
-          "won": false,
-          "name": "桜美林",
-          "slug": null
-        },
-        {
-          "display": "岩倉",
-          "score": 9,
-          "won": true,
-          "name": "岩倉",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-25",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "準々決勝",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "國學院久我山",
-          "score": 1,
-          "won": false,
-          "name": "國學院久我山",
-          "slug": null
-        },
-        {
-          "display": "関東一",
-          "score": 4,
-          "won": true,
-          "name": "関東一",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-02",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "準決勝",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "岩倉",
-          "score": 0,
-          "won": false,
-          "name": "岩倉",
-          "slug": null
-        },
-        {
-          "display": "関東一",
-          "score": 6,
-          "won": true,
-          "name": "関東一",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-02",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "昭和",
-          "score": 7,
-          "won": false,
-          "name": "昭和高校",
-          "slug": "nishi-tokyo-showa"
-        },
-        {
-          "display": "東京",
-          "score": 8,
-          "won": true,
-          "name": "東京",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-02",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "日大一",
-          "score": 6,
-          "won": true,
-          "name": "日大一",
-          "slug": null
-        },
-        {
-          "display": "東京実",
-          "score": 4,
-          "won": false,
-          "name": "東京実",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "1回戦",
       "venue": null,
       "teams": [
         {
-          "display": "日大櫻丘",
-          "score": 4,
-          "won": true,
-          "name": "日大櫻丘",
-          "slug": null
-        },
-        {
-          "display": "目白研心",
-          "score": 2,
-          "won": false,
-          "name": "目白研心",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "拓大一",
-          "score": 2,
-          "won": false,
-          "name": "拓大一",
-          "slug": null
-        },
-        {
-          "display": "佼成学園",
-          "score": 9,
-          "won": true,
-          "name": "佼成学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-01",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "新日本物流スタジアム多摩",
-      "teams": [
-        {
-          "display": "創価",
-          "score": 12,
-          "won": true,
-          "name": "創価",
-          "slug": null
-        },
-        {
-          "display": "久留米西",
-          "score": 0,
-          "won": false,
-          "name": "久留米西高校",
-          "slug": "kurumenishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-02",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "オーエンススタジアム江戸川",
-      "teams": [
-        {
-          "display": "調布南",
-          "score": 9,
-          "won": true,
-          "name": "調布南高校",
-          "slug": "chofuminami"
-        },
-        {
-          "display": "葛飾野",
-          "score": 8,
-          "won": false,
-          "name": "葛飾野高校",
-          "slug": "katsushikano"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-02",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "淑徳",
-          "score": 11,
-          "won": true,
-          "name": "淑徳",
-          "slug": null
-        },
-        {
-          "display": "日本ウェルネス",
+          "display": "青山",
           "score": 3,
           "won": false,
-          "name": "日本ウェルネス",
+          "name": "青山高校",
+          "slug": "aoyama"
+        },
+        {
+          "display": "日体大荏原",
+          "score": 7,
+          "won": true,
+          "name": "日体大荏原",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "1回戦",
-      "venue": "大田スタジアム",
+      "venue": "オーエンススタジアム江戸川",
       "teams": [
         {
-          "display": "駒場学園",
+          "display": "成立学園",
           "score": 2,
-          "won": false,
-          "name": "駒場学園",
-          "slug": null
-        },
-        {
-          "display": "日大鶴ヶ丘",
-          "score": 6,
           "won": true,
-          "name": "日大鶴ヶ丘",
+          "name": "成立学園",
           "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "新日本物流スタジアム多摩",
-      "teams": [
-        {
-          "display": "明大中野",
-          "score": 10,
-          "won": true,
-          "name": "明大中野",
-          "slug": null
-        },
-        {
-          "display": "豊多摩",
-          "score": 1,
-          "won": false,
-          "name": "豊多摩高校",
-          "slug": "toyotama"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "小山台",
-          "score": 4,
-          "won": false,
-          "name": "小山台高校",
-          "slug": "koyamadai"
-        },
-        {
-          "display": "杉並",
-          "score": 6,
-          "won": true,
-          "name": "杉並高校",
-          "slug": "suginami"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "オーエンススタジアム江戸川",
-      "teams": [
-        {
-          "display": "修徳",
-          "score": 11,
-          "won": true,
-          "name": "修徳",
-          "slug": null
-        },
-        {
-          "display": "早稲田",
-          "score": 1,
-          "won": false,
-          "name": "早稲田",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-02",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "オーエンススタジアム江戸川",
-      "teams": [
-        {
-          "display": "拝島",
-          "score": 0,
-          "won": false,
-          "name": "拝島高校",
-          "slug": "haijima"
         },
         {
           "display": "共栄学園",
-          "score": 10,
-          "won": true,
+          "score": 1,
+          "won": false,
           "name": "共栄学園",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "1回戦",
-      "venue": "コトブキヤスタジアム",
+      "venue": "スリーボンドスタジアム八王子",
       "teams": [
         {
-          "display": "駿台学園",
-          "score": 4,
+          "display": "創価",
+          "score": 8,
           "won": true,
-          "name": "駿台学園",
+          "name": "創価",
           "slug": null
         },
         {
-          "display": "練馬",
-          "score": 0,
+          "display": "日大鶴ヶ丘",
+          "score": 2,
           "won": false,
-          "name": "練馬高校",
-          "slug": "nerima"
+          "name": "日大鶴ヶ丘",
+          "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "1回戦",
-      "venue": "S&D昭島スタジアム",
+      "venue": null,
       "teams": [
         {
-          "display": "九段中等",
+          "display": "杉並",
+          "score": 5,
+          "won": false,
+          "name": "杉並高校",
+          "slug": "suginami"
+        },
+        {
+          "display": "國學院久我山",
+          "score": 6,
+          "won": true,
+          "name": "國學院久我山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "江戸川",
+          "score": 3,
+          "won": false,
+          "name": "江戸川高校",
+          "slug": "edogawa"
+        },
+        {
+          "display": "日大二",
+          "score": 10,
+          "won": true,
+          "name": "日大二",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "郁文館",
+          "score": 4,
+          "won": false,
+          "name": "郁文館",
+          "slug": null
+        },
+        {
+          "display": "工学院大附",
+          "score": 11,
+          "won": true,
+          "name": "工学院大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "国士舘",
+          "score": 5,
+          "won": true,
+          "name": "国士舘",
+          "slug": null
+        },
+        {
+          "display": "安田学園",
+          "score": 2,
+          "won": false,
+          "name": "安田学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "城東",
+          "score": 5,
+          "won": true,
+          "name": "城東高校",
+          "slug": "joto"
+        },
+        {
+          "display": "明星",
+          "score": 0,
+          "won": false,
+          "name": "明星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "武蔵丘",
+          "score": 0,
+          "won": false,
+          "name": "武蔵丘高校",
+          "slug": "musashigaoka"
+        },
+        {
+          "display": "駒大高",
+          "score": 7,
+          "won": true,
+          "name": "駒大高",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "日大櫻丘",
+          "score": 5,
+          "won": true,
+          "name": "日大櫻丘",
+          "slug": null
+        },
+        {
+          "display": "千歳丘",
+          "score": 4,
+          "won": false,
+          "name": "千歳丘高校",
+          "slug": "chitosegaoka"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "帝京",
+          "score": 6,
+          "won": true,
+          "name": "帝京",
+          "slug": null
+        },
+        {
+          "display": "専大附",
+          "score": 2,
+          "won": false,
+          "name": "専大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "日大三",
+          "score": 9,
+          "won": true,
+          "name": "日大三",
+          "slug": null
+        },
+        {
+          "display": "大森学園",
+          "score": 3,
+          "won": false,
+          "name": "大森学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "多摩工科",
+          "score": 2,
+          "won": false,
+          "name": "多摩工科高校",
+          "slug": "tamakoka"
+        },
+        {
+          "display": "片倉",
+          "score": 4,
+          "won": true,
+          "name": "片倉高校",
+          "slug": "katakura"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "早稲田実",
+          "score": 3,
+          "won": false,
+          "name": "早稲田実",
+          "slug": null
+        },
+        {
+          "display": "岩倉",
+          "score": 4,
+          "won": true,
+          "name": "岩倉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "聖パウロ学園",
+          "score": 6,
+          "won": true,
+          "name": "聖パウロ学園",
+          "slug": null
+        },
+        {
+          "display": "豊南",
+          "score": 2,
+          "won": false,
+          "name": "豊南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "小岩",
+          "score": 1,
+          "won": false,
+          "name": "小岩高校",
+          "slug": "koiwa"
+        },
+        {
+          "display": "日体大荏原",
+          "score": 15,
+          "won": true,
+          "name": "日体大荏原",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "成立学園",
+          "score": 4,
+          "won": true,
+          "name": "成立学園",
+          "slug": null
+        },
+        {
+          "display": "創価",
+          "score": 3,
+          "won": false,
+          "name": "創価",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "國學院久我山",
+          "score": 12,
+          "won": false,
+          "name": "國學院久我山",
+          "slug": null
+        },
+        {
+          "display": "日大二",
+          "score": 13,
+          "won": true,
+          "name": "日大二",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "工学院大附",
+          "score": 0,
+          "won": false,
+          "name": "工学院大附",
+          "slug": null
+        },
+        {
+          "display": "国士舘",
+          "score": 5,
+          "won": true,
+          "name": "国士舘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "城東",
+          "score": 6,
+          "won": true,
+          "name": "城東高校",
+          "slug": "joto"
+        },
+        {
+          "display": "駒大高",
+          "score": 3,
+          "won": false,
+          "name": "駒大高",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "日大櫻丘",
+          "score": 0,
+          "won": false,
+          "name": "日大櫻丘",
+          "slug": null
+        },
+        {
+          "display": "帝京",
+          "score": 11,
+          "won": true,
+          "name": "帝京",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-18",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "2回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "日大三",
           "score": 8,
           "won": true,
-          "name": "九段中等",
+          "name": "日大三",
           "slug": null
         },
         {
           "display": "片倉",
-          "score": 7,
+          "score": 1,
           "won": false,
           "name": "片倉高校",
           "slug": "katakura"
@@ -15698,574 +17883,68 @@
       ]
     },
     {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "S&D昭島スタジアム",
-      "teams": [
-        {
-          "display": "青山学院",
-          "score": 14,
-          "won": false,
-          "name": "青山学院",
-          "slug": null
-        },
-        {
-          "display": "八王子北",
-          "score": 15,
-          "won": true,
-          "name": "八王子北高校",
-          "slug": "hachiojikita"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-02",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "日本学園",
-          "score": 10,
-          "won": false,
-          "name": "日本学園",
-          "slug": null
-        },
-        {
-          "display": "世田谷学園",
-          "score": 11,
-          "won": true,
-          "name": "世田谷学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-02",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "S&D昭島スタジアム",
-      "teams": [
-        {
-          "display": "郁文館",
-          "score": 3,
-          "won": true,
-          "name": "郁文館",
-          "slug": null
-        },
-        {
-          "display": "堀越",
-          "score": 2,
-          "won": false,
-          "name": "堀越",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-01",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "オーエンススタジアム江戸川",
-      "teams": [
-        {
-          "display": "日野台",
-          "score": 0,
-          "won": false,
-          "name": "日野台高校",
-          "slug": "hinodai"
-        },
-        {
-          "display": "大森学園",
-          "score": 8,
-          "won": true,
-          "name": "大森学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "武蔵丘",
-          "score": 7,
-          "won": true,
-          "name": "武蔵丘高校",
-          "slug": "musashigaoka"
-        },
-        {
-          "display": "聖学院",
-          "score": 0,
-          "won": false,
-          "name": "聖学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "府中東",
-          "score": 1,
-          "won": false,
-          "name": "府中東高校",
-          "slug": "fuchuhigashi"
-        },
-        {
-          "display": "駒大高",
-          "score": 2,
-          "won": true,
-          "name": "駒大高",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-02",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "スリーボンドベースボールパーク上柚木",
-      "teams": [
-        {
-          "display": "桜修館",
-          "score": 7,
-          "won": false,
-          "name": "桜修館中等教育学校",
-          "slug": "oshukan"
-        },
-        {
-          "display": "立志舎",
-          "score": 15,
-          "won": true,
-          "name": "立志舎",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-02",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "立川",
-          "score": 2,
-          "won": false,
-          "name": "立川高校",
-          "slug": "tachikawa"
-        },
-        {
-          "display": "豊南",
-          "score": 8,
-          "won": true,
-          "name": "豊南",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-01",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "明星",
-          "score": 6,
-          "won": true,
-          "name": "明星",
-          "slug": null
-        },
-        {
-          "display": "城西大城西",
-          "score": 1,
-          "won": false,
-          "name": "城西大城西",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "帝京",
-          "score": 13,
-          "won": true,
-          "name": "帝京",
-          "slug": null
-        },
-        {
-          "display": "東京",
-          "score": 2,
-          "won": false,
-          "name": "東京",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "S&D昭島スタジアム",
-      "teams": [
-        {
-          "display": "日大一",
-          "score": 1,
-          "won": false,
-          "name": "日大一",
-          "slug": null
-        },
-        {
-          "display": "工学院大附",
-          "score": 8,
-          "won": true,
-          "name": "工学院大附",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-06",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-18",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "2回戦",
       "venue": "コトブキヤスタジアム",
       "teams": [
         {
-          "display": "日大櫻丘",
-          "score": 0,
-          "won": false,
-          "name": "日大櫻丘",
-          "slug": null
-        },
-        {
-          "display": "佼成学園",
-          "score": 9,
-          "won": true,
-          "name": "佼成学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "創価",
-          "score": 8,
-          "won": true,
-          "name": "創価",
-          "slug": null
-        },
-        {
-          "display": "東海大菅生",
-          "score": 7,
-          "won": false,
-          "name": "東海大菅生",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "明大八王子",
-          "score": 2,
-          "won": false,
-          "name": "明大八王子",
-          "slug": null
-        },
-        {
-          "display": "調布南",
+          "display": "岩倉",
           "score": 3,
-          "won": true,
-          "name": "調布南高校",
-          "slug": "chofuminami"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
+          "won": false,
+          "name": "岩倉",
+          "slug": null
+        },
         {
-          "display": "淑徳",
+          "display": "聖パウロ学園",
           "score": 4,
           "won": true,
-          "name": "淑徳",
-          "slug": null
-        },
-        {
-          "display": "日大鶴ヶ丘",
-          "score": 3,
-          "won": false,
-          "name": "日大鶴ヶ丘",
+          "name": "聖パウロ学園",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "S&D昭島スタジアム",
+      "date": "2025-10-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": "新日本物流スタジアム多摩",
       "teams": [
         {
-          "display": "明大中野",
-          "score": 9,
-          "won": true,
-          "name": "明大中野",
+          "display": "日体大荏原",
+          "score": 2,
+          "won": false,
+          "name": "日体大荏原",
           "slug": null
         },
         {
-          "display": "杉並",
-          "score": 1,
-          "won": false,
-          "name": "杉並高校",
-          "slug": "suginami"
+          "display": "成立学園",
+          "score": 5,
+          "won": true,
+          "name": "成立学園",
+          "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-06",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
+      "date": "2025-10-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "3回戦",
+      "venue": "新日本物流スタジアム多摩",
       "teams": [
-        {
-          "display": "修徳",
-          "score": 14,
-          "won": true,
-          "name": "修徳",
-          "slug": null
-        },
         {
           "display": "日大二",
           "score": 3,
           "won": false,
           "name": "日大二",
           "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "日野",
-          "score": 3,
-          "won": false,
-          "name": "日野高校",
-          "slug": "hino"
-        },
-        {
-          "display": "共栄学園",
-          "score": 6,
-          "won": true,
-          "name": "共栄学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "駿台学園",
-          "score": 10,
-          "won": true,
-          "name": "駿台学園",
-          "slug": null
-        },
-        {
-          "display": "九段中等",
-          "score": 1,
-          "won": false,
-          "name": "九段中等",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-06",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "八王子北",
-          "score": 0,
-          "won": false,
-          "name": "八王子北高校",
-          "slug": "hachiojikita"
-        },
-        {
-          "display": "世田谷学園",
-          "score": 10,
-          "won": true,
-          "name": "世田谷学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-04",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "オーエンススタジアム江戸川",
-      "teams": [
-        {
-          "display": "郁文館",
-          "score": 0,
-          "won": false,
-          "name": "郁文館",
-          "slug": null
-        },
-        {
-          "display": "二松学舎大附",
-          "score": 12,
-          "won": true,
-          "name": "二松学舎大附",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "城東",
-          "score": 9,
-          "won": true,
-          "name": "城東高校",
-          "slug": "joto"
-        },
-        {
-          "display": "大森学園",
-          "score": 2,
-          "won": false,
-          "name": "大森学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-06",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "武蔵丘",
-          "score": 6,
-          "won": false,
-          "name": "武蔵丘高校",
-          "slug": "musashigaoka"
-        },
-        {
-          "display": "駒大高",
-          "score": 10,
-          "won": true,
-          "name": "駒大高",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-06",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "立志舎",
-          "score": 3,
-          "won": false,
-          "name": "立志舎",
-          "slug": null
-        },
-        {
-          "display": "豊南",
-          "score": 7,
-          "won": true,
-          "name": "豊南",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-05",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "明星",
-          "score": 3,
-          "won": false,
-          "name": "明星",
-          "slug": null
         },
         {
           "display": "国士舘",
-          "score": 12,
+          "score": 4,
           "won": true,
           "name": "国士舘",
           "slug": null
@@ -16273,316 +17952,63 @@
       ]
     },
     {
-      "date": "2026-04-11",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "3回戦",
       "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "帝京",
-          "score": 6,
-          "won": true,
-          "name": "帝京",
-          "slug": null
-        },
-        {
-          "display": "工学院大附",
-          "score": 1,
-          "won": false,
-          "name": "工学院大附",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-11",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": "新日本物流スタジアム多摩",
-      "teams": [
-        {
-          "display": "佼成学園",
-          "score": 6,
-          "won": true,
-          "name": "佼成学園",
-          "slug": null
-        },
-        {
-          "display": "創価",
-          "score": 5,
-          "won": false,
-          "name": "創価",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-11",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "調布南",
-          "score": 0,
-          "won": false,
-          "name": "調布南高校",
-          "slug": "chofuminami"
-        },
-        {
-          "display": "淑徳",
-          "score": 7,
-          "won": true,
-          "name": "淑徳",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-11",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": "新日本物流スタジアム多摩",
-      "teams": [
-        {
-          "display": "明大中野",
-          "score": 6,
-          "won": true,
-          "name": "明大中野",
-          "slug": null
-        },
-        {
-          "display": "修徳",
-          "score": 2,
-          "won": false,
-          "name": "修徳",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "共栄学園",
-          "score": 8,
-          "won": true,
-          "name": "共栄学園",
-          "slug": null
-        },
-        {
-          "display": "駿台学園",
-          "score": 6,
-          "won": false,
-          "name": "駿台学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "世田谷学園",
-          "score": 5,
-          "won": true,
-          "name": "世田谷学園",
-          "slug": null
-        },
-        {
-          "display": "二松学舎大附",
-          "score": 3,
-          "won": false,
-          "name": "二松学舎大附",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": null,
       "teams": [
         {
           "display": "城東",
-          "score": 5,
+          "score": 3,
           "won": false,
           "name": "城東高校",
           "slug": "joto"
         },
         {
-          "display": "駒大高",
-          "score": 9,
+          "display": "帝京",
+          "score": 4,
           "won": true,
-          "name": "駒大高",
+          "name": "帝京",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-12",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-10-27",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "3回戦",
       "venue": "スリーボンドスタジアム八王子",
       "teams": [
         {
-          "display": "豊南",
-          "score": 1,
-          "won": false,
-          "name": "豊南",
-          "slug": null
-        },
-        {
-          "display": "国士舘",
-          "score": 9,
-          "won": true,
-          "name": "国士舘",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "4回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "帝京",
-          "score": 1,
-          "won": false,
-          "name": "帝京",
-          "slug": null
-        },
-        {
-          "display": "佼成学園",
-          "score": 4,
-          "won": true,
-          "name": "佼成学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-19",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "4回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "淑徳",
-          "score": 6,
-          "won": true,
-          "name": "淑徳",
-          "slug": null
-        },
-        {
-          "display": "明大中野",
-          "score": 3,
-          "won": false,
-          "name": "明大中野",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "4回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "共栄学園",
-          "score": 5,
-          "won": false,
-          "name": "共栄学園",
-          "slug": null
-        },
-        {
-          "display": "世田谷学園",
-          "score": 7,
-          "won": true,
-          "name": "世田谷学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "4回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "駒大高",
-          "score": 4,
-          "won": false,
-          "name": "駒大高",
-          "slug": null
-        },
-        {
-          "display": "国士舘",
+          "display": "日大三",
           "score": 11,
           "won": true,
-          "name": "国士舘",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-04-25",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
-      "round": "準々決勝",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "佼成学園",
-          "score": 5,
-          "won": true,
-          "name": "佼成学園",
+          "name": "日大三",
           "slug": null
         },
         {
-          "display": "淑徳",
-          "score": 4,
+          "display": "聖パウロ学園",
+          "score": 3,
           "won": false,
-          "name": "淑徳",
+          "name": "聖パウロ学園",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-04-26",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-11-02",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "準々決勝",
       "venue": "スリーボンドスタジアム八王子",
       "teams": [
         {
-          "display": "世田谷学園",
-          "score": 6,
+          "display": "成立学園",
+          "score": 0,
           "won": false,
-          "name": "世田谷学園",
+          "name": "成立学園",
           "slug": null
         },
         {
@@ -16595,46 +18021,69 @@
       ]
     },
     {
-      "date": "2026-04-02",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-11-02",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
+      "round": "準々決勝",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "帝京",
+          "score": 3,
+          "won": true,
+          "name": "帝京",
+          "slug": null
+        },
+        {
+          "display": "日大三",
+          "score": 0,
+          "won": false,
+          "name": "日大三",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-11-08",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "準決勝",
-      "venue": "スリーボンドスタジアム八王子",
+      "venue": "神宮球場",
       "teams": [
         {
-          "display": "佼成学園",
-          "score": 1,
+          "display": "国士舘",
+          "score": 0,
           "won": false,
-          "name": "佼成学園",
+          "name": "国士舘",
           "slug": null
         },
         {
-          "display": "国士舘",
-          "score": 8,
+          "display": "帝京",
+          "score": 9,
           "won": true,
-          "name": "国士舘",
+          "name": "帝京",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-05-03",
-      "season": "spring",
-      "tournament": "2026年 春季東京都高等学校野球大会",
+      "date": "2025-11-09",
+      "season": "autumn",
+      "tournament": "2025年 秋季東京都高等学校野球大会",
       "round": "決勝",
-      "venue": "スリーボンドスタジアム八王子",
+      "venue": "神宮球場",
       "teams": [
         {
-          "display": "国士舘",
-          "score": 2,
-          "won": false,
-          "name": "国士舘",
+          "display": "帝京",
+          "score": 8,
+          "won": true,
+          "name": "帝京",
           "slug": null
         },
         {
           "display": "関東一",
-          "score": 5,
-          "won": true,
+          "score": 4,
+          "won": false,
           "name": "関東一",
           "slug": null
         }
@@ -26757,1455 +28206,6 @@
           "score": 6,
           "won": true,
           "name": "二松学舎大附",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "桜修館",
-          "score": 2,
-          "won": false,
-          "name": "桜修館中等教育学校",
-          "slug": "oshukan"
-        },
-        {
-          "display": "世田谷学園",
-          "score": 9,
-          "won": true,
-          "name": "世田谷学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "朋優学院",
-          "score": 0,
-          "won": false,
-          "name": "朋優学院",
-          "slug": null
-        },
-        {
-          "display": "明大八王子",
-          "score": 6,
-          "won": true,
-          "name": "明大八王子",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "実践学園",
-          "score": 3,
-          "won": false,
-          "name": "実践学園",
-          "slug": null
-        },
-        {
-          "display": "府中工科",
-          "score": 5,
-          "won": true,
-          "name": "府中工科高校",
-          "slug": "fuchukoka"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "オーエンススタジアム江戸川",
-      "teams": [
-        {
-          "display": "関東一",
-          "score": 14,
-          "won": true,
-          "name": "関東一",
-          "slug": null
-        },
-        {
-          "display": "東京",
-          "score": 0,
-          "won": false,
-          "name": "東京",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-11",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "オーエンススタジアム江戸川",
-      "teams": [
-        {
-          "display": "葛飾野",
-          "score": 2,
-          "won": false,
-          "name": "葛飾野高校",
-          "slug": "katsushikano"
-        },
-        {
-          "display": "狛江",
-          "score": 5,
-          "won": true,
-          "name": "狛江高校",
-          "slug": "komae"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-11",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "オーエンススタジアム江戸川",
-      "teams": [
-        {
-          "display": "町田",
-          "score": 0,
-          "won": false,
-          "name": "町田高校",
-          "slug": "machida"
-        },
-        {
-          "display": "東海大高輪台",
-          "score": 14,
-          "won": true,
-          "name": "東海大高輪台",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "二松学舎大附",
-          "score": 7,
-          "won": true,
-          "name": "二松学舎大附",
-          "slug": null
-        },
-        {
-          "display": "東亜学園",
-          "score": 2,
-          "won": false,
-          "name": "東亜学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-11",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "成城",
-          "score": 0,
-          "won": false,
-          "name": "成城",
-          "slug": null
-        },
-        {
-          "display": "明大中野",
-          "score": 7,
-          "won": true,
-          "name": "明大中野",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-11",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "スリーボンドベースボールパーク上柚木",
-      "teams": [
-        {
-          "display": "日野",
-          "score": 8,
-          "won": true,
-          "name": "日野高校",
-          "slug": "hino"
-        },
-        {
-          "display": "東大和",
-          "score": 0,
-          "won": false,
-          "name": "東大和高校",
-          "slug": "higashiyamato"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "大田スタジアム",
-      "teams": [
-        {
-          "display": "立正大立正",
-          "score": 10,
-          "won": true,
-          "name": "立正大立正",
-          "slug": null
-        },
-        {
-          "display": "桜町",
-          "score": 4,
-          "won": false,
-          "name": "桜町高校",
-          "slug": "sakuramachi"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "錦城学園",
-          "score": 3,
-          "won": false,
-          "name": "錦城学園",
-          "slug": null
-        },
-        {
-          "display": "淑徳",
-          "score": 5,
-          "won": true,
-          "name": "淑徳",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "青山学院",
-          "score": 0,
-          "won": false,
-          "name": "青山学院",
-          "slug": null
-        },
-        {
-          "display": "広尾",
-          "score": 7,
-          "won": true,
-          "name": "広尾高校",
-          "slug": "higashi-tokyo-hiroo"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-11",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "駿台学園",
-          "score": 4,
-          "won": false,
-          "name": "駿台学園",
-          "slug": null
-        },
-        {
-          "display": "八王子",
-          "score": 5,
-          "won": true,
-          "name": "八王子",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "大田スタジアム",
-      "teams": [
-        {
-          "display": "八王子実践",
-          "score": 8,
-          "won": true,
-          "name": "八王子実践",
-          "slug": null
-        },
-        {
-          "display": "高島",
-          "score": 1,
-          "won": false,
-          "name": "高島高校",
-          "slug": "takashima"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "東海大菅生",
-          "score": 2,
-          "won": false,
-          "name": "東海大菅生",
-          "slug": null
-        },
-        {
-          "display": "修徳",
-          "score": 6,
-          "won": true,
-          "name": "修徳",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "佼成学園",
-          "score": 2,
-          "won": false,
-          "name": "佼成学園",
-          "slug": null
-        },
-        {
-          "display": "桜美林",
-          "score": 4,
-          "won": true,
-          "name": "桜美林",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-18",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "世田谷学園",
-          "score": 4,
-          "won": false,
-          "name": "世田谷学園",
-          "slug": null
-        },
-        {
-          "display": "明大八王子",
-          "score": 5,
-          "won": true,
-          "name": "明大八王子",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-18",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "オーエンススタジアム江戸川",
-      "teams": [
-        {
-          "display": "府中工科",
-          "score": 0,
-          "won": false,
-          "name": "府中工科高校",
-          "slug": "fuchukoka"
-        },
-        {
-          "display": "関東一",
-          "score": 9,
-          "won": true,
-          "name": "関東一",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-18",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "オーエンススタジアム江戸川",
-      "teams": [
-        {
-          "display": "狛江",
-          "score": 3,
-          "won": false,
-          "name": "狛江高校",
-          "slug": "komae"
-        },
-        {
-          "display": "東海大高輪台",
-          "score": 10,
-          "won": true,
-          "name": "東海大高輪台",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-18",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "二松学舎大附",
-          "score": 7,
-          "won": true,
-          "name": "二松学舎大附",
-          "slug": null
-        },
-        {
-          "display": "明大中野",
-          "score": 1,
-          "won": false,
-          "name": "明大中野",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-18",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "新日本物流スタジアム多摩",
-      "teams": [
-        {
-          "display": "日野",
-          "score": 9,
-          "won": true,
-          "name": "日野高校",
-          "slug": "hino"
-        },
-        {
-          "display": "立正大立正",
-          "score": 2,
-          "won": false,
-          "name": "立正大立正",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-18",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "オーエンススタジアム江戸川",
-      "teams": [
-        {
-          "display": "淑徳",
-          "score": 1,
-          "won": false,
-          "name": "淑徳",
-          "slug": null
-        },
-        {
-          "display": "広尾",
-          "score": 9,
-          "won": true,
-          "name": "広尾高校",
-          "slug": "higashi-tokyo-hiroo"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-18",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "八王子",
-          "score": 5,
-          "won": false,
-          "name": "八王子",
-          "slug": null
-        },
-        {
-          "display": "八王子実践",
-          "score": 6,
-          "won": true,
-          "name": "八王子実践",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-18",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "新日本物流スタジアム多摩",
-      "teams": [
-        {
-          "display": "修徳",
-          "score": 1,
-          "won": false,
-          "name": "修徳",
-          "slug": null
-        },
-        {
-          "display": "桜美林",
-          "score": 2,
-          "won": true,
-          "name": "桜美林",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "明大八王子",
-          "score": 1,
-          "won": false,
-          "name": "明大八王子",
-          "slug": null
-        },
-        {
-          "display": "関東一",
-          "score": 11,
-          "won": true,
-          "name": "関東一",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-28",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "東海大高輪台",
-          "score": 10,
-          "won": true,
-          "name": "東海大高輪台",
-          "slug": null
-        },
-        {
-          "display": "二松学舎大附",
-          "score": 7,
-          "won": false,
-          "name": "二松学舎大附",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-28",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "日野",
-          "score": 7,
-          "won": true,
-          "name": "日野高校",
-          "slug": "hino"
-        },
-        {
-          "display": "広尾",
-          "score": 0,
-          "won": false,
-          "name": "広尾高校",
-          "slug": "higashi-tokyo-hiroo"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-28",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "八王子実践",
-          "score": 1,
-          "won": false,
-          "name": "八王子実践",
-          "slug": null
-        },
-        {
-          "display": "桜美林",
-          "score": 6,
-          "won": true,
-          "name": "桜美林",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-11-01",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "準々決勝",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "関東一",
-          "score": 10,
-          "won": true,
-          "name": "関東一",
-          "slug": null
-        },
-        {
-          "display": "東海大高輪台",
-          "score": 2,
-          "won": false,
-          "name": "東海大高輪台",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-11-01",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "準々決勝",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "日野",
-          "score": 1,
-          "won": false,
-          "name": "日野高校",
-          "slug": "hino"
-        },
-        {
-          "display": "桜美林",
-          "score": 5,
-          "won": true,
-          "name": "桜美林",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-11-08",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "準決勝",
-      "venue": "神宮球場",
-      "teams": [
-        {
-          "display": "関東一",
-          "score": 9,
-          "won": true,
-          "name": "関東一",
-          "slug": null
-        },
-        {
-          "display": "桜美林",
-          "score": 1,
-          "won": false,
-          "name": "桜美林",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "オーエンススタジアム江戸川",
-      "teams": [
-        {
-          "display": "小岩",
-          "score": 8,
-          "won": true,
-          "name": "小岩高校",
-          "slug": "koiwa"
-        },
-        {
-          "display": "文京",
-          "score": 6,
-          "won": false,
-          "name": "文京高校",
-          "slug": "bunkyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "青山",
-          "score": 3,
-          "won": false,
-          "name": "青山高校",
-          "slug": "aoyama"
-        },
-        {
-          "display": "日体大荏原",
-          "score": 7,
-          "won": true,
-          "name": "日体大荏原",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "オーエンススタジアム江戸川",
-      "teams": [
-        {
-          "display": "成立学園",
-          "score": 2,
-          "won": true,
-          "name": "成立学園",
-          "slug": null
-        },
-        {
-          "display": "共栄学園",
-          "score": 1,
-          "won": false,
-          "name": "共栄学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "創価",
-          "score": 8,
-          "won": true,
-          "name": "創価",
-          "slug": null
-        },
-        {
-          "display": "日大鶴ヶ丘",
-          "score": 2,
-          "won": false,
-          "name": "日大鶴ヶ丘",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "杉並",
-          "score": 5,
-          "won": false,
-          "name": "杉並高校",
-          "slug": "suginami"
-        },
-        {
-          "display": "國學院久我山",
-          "score": 6,
-          "won": true,
-          "name": "國學院久我山",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "江戸川",
-          "score": 3,
-          "won": false,
-          "name": "江戸川高校",
-          "slug": "edogawa"
-        },
-        {
-          "display": "日大二",
-          "score": 10,
-          "won": true,
-          "name": "日大二",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "郁文館",
-          "score": 4,
-          "won": false,
-          "name": "郁文館",
-          "slug": null
-        },
-        {
-          "display": "工学院大附",
-          "score": 11,
-          "won": true,
-          "name": "工学院大附",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "国士舘",
-          "score": 5,
-          "won": true,
-          "name": "国士舘",
-          "slug": null
-        },
-        {
-          "display": "安田学園",
-          "score": 2,
-          "won": false,
-          "name": "安田学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "オーエンススタジアム江戸川",
-      "teams": [
-        {
-          "display": "城東",
-          "score": 5,
-          "won": true,
-          "name": "城東高校",
-          "slug": "joto"
-        },
-        {
-          "display": "明星",
-          "score": 0,
-          "won": false,
-          "name": "明星",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "武蔵丘",
-          "score": 0,
-          "won": false,
-          "name": "武蔵丘高校",
-          "slug": "musashigaoka"
-        },
-        {
-          "display": "駒大高",
-          "score": 7,
-          "won": true,
-          "name": "駒大高",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "日大櫻丘",
-          "score": 5,
-          "won": true,
-          "name": "日大櫻丘",
-          "slug": null
-        },
-        {
-          "display": "千歳丘",
-          "score": 4,
-          "won": false,
-          "name": "千歳丘高校",
-          "slug": "chitosegaoka"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "大田スタジアム",
-      "teams": [
-        {
-          "display": "帝京",
-          "score": 6,
-          "won": true,
-          "name": "帝京",
-          "slug": null
-        },
-        {
-          "display": "専大附",
-          "score": 2,
-          "won": false,
-          "name": "専大附",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "スリーボンドベースボールパーク上柚木",
-      "teams": [
-        {
-          "display": "日大三",
-          "score": 9,
-          "won": true,
-          "name": "日大三",
-          "slug": null
-        },
-        {
-          "display": "大森学園",
-          "score": 3,
-          "won": false,
-          "name": "大森学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "多摩工科",
-          "score": 2,
-          "won": false,
-          "name": "多摩工科高校",
-          "slug": "tamakoka"
-        },
-        {
-          "display": "片倉",
-          "score": 4,
-          "won": true,
-          "name": "片倉高校",
-          "slug": "katakura"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "スリーボンドベースボールパーク上柚木",
-      "teams": [
-        {
-          "display": "早稲田実",
-          "score": 3,
-          "won": false,
-          "name": "早稲田実",
-          "slug": null
-        },
-        {
-          "display": "岩倉",
-          "score": 4,
-          "won": true,
-          "name": "岩倉",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "1回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "聖パウロ学園",
-          "score": 6,
-          "won": true,
-          "name": "聖パウロ学園",
-          "slug": null
-        },
-        {
-          "display": "豊南",
-          "score": 2,
-          "won": false,
-          "name": "豊南",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-19",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "小岩",
-          "score": 1,
-          "won": false,
-          "name": "小岩高校",
-          "slug": "koiwa"
-        },
-        {
-          "display": "日体大荏原",
-          "score": 15,
-          "won": true,
-          "name": "日体大荏原",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-19",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "成立学園",
-          "score": 4,
-          "won": true,
-          "name": "成立学園",
-          "slug": null
-        },
-        {
-          "display": "創価",
-          "score": 3,
-          "won": false,
-          "name": "創価",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-19",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "國學院久我山",
-          "score": 12,
-          "won": false,
-          "name": "國學院久我山",
-          "slug": null
-        },
-        {
-          "display": "日大二",
-          "score": 13,
-          "won": true,
-          "name": "日大二",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-19",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "工学院大附",
-          "score": 0,
-          "won": false,
-          "name": "工学院大附",
-          "slug": null
-        },
-        {
-          "display": "国士舘",
-          "score": 5,
-          "won": true,
-          "name": "国士舘",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-19",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "城東",
-          "score": 6,
-          "won": true,
-          "name": "城東高校",
-          "slug": "joto"
-        },
-        {
-          "display": "駒大高",
-          "score": 3,
-          "won": false,
-          "name": "駒大高",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-19",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "日大櫻丘",
-          "score": 0,
-          "won": false,
-          "name": "日大櫻丘",
-          "slug": null
-        },
-        {
-          "display": "帝京",
-          "score": 11,
-          "won": true,
-          "name": "帝京",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-18",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "日大三",
-          "score": 8,
-          "won": true,
-          "name": "日大三",
-          "slug": null
-        },
-        {
-          "display": "片倉",
-          "score": 1,
-          "won": false,
-          "name": "片倉高校",
-          "slug": "katakura"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-18",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "2回戦",
-      "venue": "コトブキヤスタジアム",
-      "teams": [
-        {
-          "display": "岩倉",
-          "score": 3,
-          "won": false,
-          "name": "岩倉",
-          "slug": null
-        },
-        {
-          "display": "聖パウロ学園",
-          "score": 4,
-          "won": true,
-          "name": "聖パウロ学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": "新日本物流スタジアム多摩",
-      "teams": [
-        {
-          "display": "日体大荏原",
-          "score": 2,
-          "won": false,
-          "name": "日体大荏原",
-          "slug": null
-        },
-        {
-          "display": "成立学園",
-          "score": 5,
-          "won": true,
-          "name": "成立学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": "新日本物流スタジアム多摩",
-      "teams": [
-        {
-          "display": "日大二",
-          "score": 3,
-          "won": false,
-          "name": "日大二",
-          "slug": null
-        },
-        {
-          "display": "国士舘",
-          "score": 4,
-          "won": true,
-          "name": "国士舘",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "城東",
-          "score": 3,
-          "won": false,
-          "name": "城東高校",
-          "slug": "joto"
-        },
-        {
-          "display": "帝京",
-          "score": 4,
-          "won": true,
-          "name": "帝京",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-27",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "3回戦",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "日大三",
-          "score": 11,
-          "won": true,
-          "name": "日大三",
-          "slug": null
-        },
-        {
-          "display": "聖パウロ学園",
-          "score": 3,
-          "won": false,
-          "name": "聖パウロ学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-11-02",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "準々決勝",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "成立学園",
-          "score": 0,
-          "won": false,
-          "name": "成立学園",
-          "slug": null
-        },
-        {
-          "display": "国士舘",
-          "score": 8,
-          "won": true,
-          "name": "国士舘",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-11-02",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "準々決勝",
-      "venue": "スリーボンドスタジアム八王子",
-      "teams": [
-        {
-          "display": "帝京",
-          "score": 3,
-          "won": true,
-          "name": "帝京",
-          "slug": null
-        },
-        {
-          "display": "日大三",
-          "score": 0,
-          "won": false,
-          "name": "日大三",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-11-08",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "準決勝",
-      "venue": "神宮球場",
-      "teams": [
-        {
-          "display": "国士舘",
-          "score": 0,
-          "won": false,
-          "name": "国士舘",
-          "slug": null
-        },
-        {
-          "display": "帝京",
-          "score": 9,
-          "won": true,
-          "name": "帝京",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-11-09",
-      "season": "autumn",
-      "tournament": "2025年 秋季東京都高等学校野球大会",
-      "round": "決勝",
-      "venue": "神宮球場",
-      "teams": [
-        {
-          "display": "帝京",
-          "score": 8,
-          "won": true,
-          "name": "帝京",
-          "slug": null
-        },
-        {
-          "display": "関東一",
-          "score": 4,
-          "won": false,
-          "name": "関東一",
           "slug": null
         }
       ]

@@ -5,6 +5,351 @@
   "sourceUrl": "https://hokkaido.hsbflash.jp/",
   "games": [
     {
+      "date": "2026-05-26",
+      "season": "spring",
+      "tournament": "2026年 春季北海道高校野球大会",
+      "round": "1回戦",
+      "venue": "モエレ沼公園球場",
+      "teams": [
+        {
+          "display": "士別翔雲",
+          "score": 6,
+          "won": true,
+          "name": "士別翔雲高校",
+          "slug": "shibetsushoun"
+        },
+        {
+          "display": "東海大札幌",
+          "score": 3,
+          "won": false,
+          "name": "東海大札幌",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "season": "spring",
+      "tournament": "2026年 春季北海道高校野球大会",
+      "round": "1回戦",
+      "venue": "モエレ沼公園球場",
+      "teams": [
+        {
+          "display": "札幌静修",
+          "score": 3,
+          "won": false,
+          "name": "札幌静修",
+          "slug": null
+        },
+        {
+          "display": "札幌龍谷",
+          "score": 4,
+          "won": true,
+          "name": "札幌龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-27",
+      "season": "spring",
+      "tournament": "2026年 春季北海道高校野球大会",
+      "round": "1回戦",
+      "venue": "モエレ沼公園球場",
+      "teams": [
+        {
+          "display": "網走南ケ丘",
+          "score": 4,
+          "won": false,
+          "name": "網走南ケ丘高校",
+          "slug": "abashiriminamigaoka"
+        },
+        {
+          "display": "倶知安",
+          "score": 7,
+          "won": true,
+          "name": "倶知安高校",
+          "slug": "kucchan"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-27",
+      "season": "spring",
+      "tournament": "2026年 春季北海道高校野球大会",
+      "round": "1回戦",
+      "venue": "モエレ沼公園球場",
+      "teams": [
+        {
+          "display": "帯広三条",
+          "score": 5,
+          "won": false,
+          "name": "帯広三条高校",
+          "slug": "obihirosanjo"
+        },
+        {
+          "display": "旭川志峯",
+          "score": 10,
+          "won": true,
+          "name": "旭川志峯",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "season": "spring",
+      "tournament": "2026年 春季北海道高校野球大会",
+      "round": "準々決勝",
+      "venue": "モエレ沼公園球場",
+      "teams": [
+        {
+          "display": "士別翔雲",
+          "score": 5,
+          "won": true,
+          "name": "士別翔雲高校",
+          "slug": "shibetsushoun"
+        },
+        {
+          "display": "札幌龍谷",
+          "score": 2,
+          "won": false,
+          "name": "札幌龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "season": "spring",
+      "tournament": "2026年 春季北海道高校野球大会",
+      "round": "準々決勝",
+      "venue": "モエレ沼公園球場",
+      "teams": [
+        {
+          "display": "倶知安",
+          "score": 3,
+          "won": false,
+          "name": "倶知安高校",
+          "slug": "kucchan"
+        },
+        {
+          "display": "旭川志峯",
+          "score": 5,
+          "won": true,
+          "name": "旭川志峯",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-30",
+      "season": "spring",
+      "tournament": "2026年 春季北海道高校野球大会",
+      "round": "準決勝",
+      "venue": "モエレ沼公園球場",
+      "teams": [
+        {
+          "display": "士別翔雲",
+          "score": 2,
+          "won": false,
+          "name": "士別翔雲高校",
+          "slug": "shibetsushoun"
+        },
+        {
+          "display": "旭川志峯",
+          "score": 9,
+          "won": true,
+          "name": "旭川志峯",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-25",
+      "season": "spring",
+      "tournament": "2026年 春季北海道高校野球大会",
+      "round": "1回戦",
+      "venue": "モエレ沼公園球場",
+      "teams": [
+        {
+          "display": "釧路湖陵",
+          "score": 1,
+          "won": false,
+          "name": "釧路湖陵高校",
+          "slug": "kushirokoryo"
+        },
+        {
+          "display": "クラーク記念国際",
+          "score": 8,
+          "won": true,
+          "name": "クラーク記念国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-25",
+      "season": "spring",
+      "tournament": "2026年 春季北海道高校野球大会",
+      "round": "1回戦",
+      "venue": "モエレ沼公園球場",
+      "teams": [
+        {
+          "display": "北海",
+          "score": 9,
+          "won": true,
+          "name": "北海",
+          "slug": null
+        },
+        {
+          "display": "旭川東",
+          "score": 0,
+          "won": false,
+          "name": "旭川東高校",
+          "slug": "asahikawahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-25",
+      "season": "spring",
+      "tournament": "2026年 春季北海道高校野球大会",
+      "round": "1回戦",
+      "venue": "モエレ沼公園球場",
+      "teams": [
+        {
+          "display": "北照",
+          "score": 3,
+          "won": true,
+          "name": "北照",
+          "slug": null
+        },
+        {
+          "display": "函大有斗",
+          "score": 1,
+          "won": false,
+          "name": "函大有斗",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "season": "spring",
+      "tournament": "2026年 春季北海道高校野球大会",
+      "round": "1回戦",
+      "venue": "モエレ沼公園球場",
+      "teams": [
+        {
+          "display": "駒大苫小牧",
+          "score": 2,
+          "won": false,
+          "name": "駒大苫小牧",
+          "slug": null
+        },
+        {
+          "display": "札幌日大",
+          "score": 3,
+          "won": true,
+          "name": "札幌日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-27",
+      "season": "spring",
+      "tournament": "2026年 春季北海道高校野球大会",
+      "round": "準々決勝",
+      "venue": "モエレ沼公園球場",
+      "teams": [
+        {
+          "display": "クラーク記念国際",
+          "score": 5,
+          "won": true,
+          "name": "クラーク記念国際",
+          "slug": null
+        },
+        {
+          "display": "北海",
+          "score": 3,
+          "won": false,
+          "name": "北海",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "season": "spring",
+      "tournament": "2026年 春季北海道高校野球大会",
+      "round": "準々決勝",
+      "venue": "モエレ沼公園球場",
+      "teams": [
+        {
+          "display": "北照",
+          "score": 1,
+          "won": false,
+          "name": "北照",
+          "slug": null
+        },
+        {
+          "display": "札幌日大",
+          "score": 5,
+          "won": true,
+          "name": "札幌日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-30",
+      "season": "spring",
+      "tournament": "2026年 春季北海道高校野球大会",
+      "round": "準決勝",
+      "venue": "モエレ沼公園球場",
+      "teams": [
+        {
+          "display": "クラーク記念国際",
+          "score": 6,
+          "won": true,
+          "name": "クラーク記念国際",
+          "slug": null
+        },
+        {
+          "display": "札幌日大",
+          "score": 4,
+          "won": false,
+          "name": "札幌日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-31",
+      "season": "spring",
+      "tournament": "2026年 春季北海道高校野球大会",
+      "round": "決勝",
+      "venue": "モエレ沼公園球場",
+      "teams": [
+        {
+          "display": "クラーク記念国際",
+          "score": 5,
+          "won": false,
+          "name": "クラーク記念国際",
+          "slug": null
+        },
+        {
+          "display": "旭川志峯",
+          "score": 8,
+          "won": true,
+          "name": "旭川志峯",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2019-05-28",
       "season": "spring",
       "tournament": "2019年 春季北海道高校野球大会",
@@ -2075,206 +2420,45 @@
       ]
     },
     {
-      "date": "2026-05-26",
-      "season": "spring",
-      "tournament": "2026年 春季北海道高校野球大会",
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
       "round": "1回戦",
-      "venue": "モエレ沼公園球場",
+      "venue": null,
       "teams": [
         {
-          "display": "士別翔雲",
-          "score": 6,
-          "won": true,
-          "name": "士別翔雲高校",
-          "slug": "shibetsushoun"
-        },
-        {
-          "display": "東海大札幌",
-          "score": 3,
-          "won": false,
-          "name": "東海大札幌",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-26",
-      "season": "spring",
-      "tournament": "2026年 春季北海道高校野球大会",
-      "round": "1回戦",
-      "venue": "モエレ沼公園球場",
-      "teams": [
-        {
-          "display": "札幌静修",
-          "score": 3,
-          "won": false,
-          "name": "札幌静修",
-          "slug": null
-        },
-        {
-          "display": "札幌龍谷",
-          "score": 4,
-          "won": true,
-          "name": "札幌龍谷",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-27",
-      "season": "spring",
-      "tournament": "2026年 春季北海道高校野球大会",
-      "round": "1回戦",
-      "venue": "モエレ沼公園球場",
-      "teams": [
-        {
-          "display": "網走南ケ丘",
-          "score": 4,
-          "won": false,
-          "name": "網走南ケ丘高校",
-          "slug": "abashiriminamigaoka"
-        },
-        {
-          "display": "倶知安",
-          "score": 7,
-          "won": true,
-          "name": "倶知安高校",
-          "slug": "kucchan"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-27",
-      "season": "spring",
-      "tournament": "2026年 春季北海道高校野球大会",
-      "round": "1回戦",
-      "venue": "モエレ沼公園球場",
-      "teams": [
-        {
-          "display": "帯広三条",
-          "score": 5,
-          "won": false,
-          "name": "帯広三条高校",
-          "slug": "obihirosanjo"
-        },
-        {
-          "display": "旭川志峯",
-          "score": 10,
-          "won": true,
-          "name": "旭川志峯",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-28",
-      "season": "spring",
-      "tournament": "2026年 春季北海道高校野球大会",
-      "round": "準々決勝",
-      "venue": "モエレ沼公園球場",
-      "teams": [
-        {
-          "display": "士別翔雲",
-          "score": 5,
-          "won": true,
-          "name": "士別翔雲高校",
-          "slug": "shibetsushoun"
-        },
-        {
-          "display": "札幌龍谷",
+          "display": "札幌大谷",
           "score": 2,
           "won": false,
-          "name": "札幌龍谷",
+          "name": "札幌大谷",
           "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-28",
-      "season": "spring",
-      "tournament": "2026年 春季北海道高校野球大会",
-      "round": "準々決勝",
-      "venue": "モエレ沼公園球場",
-      "teams": [
-        {
-          "display": "倶知安",
-          "score": 3,
-          "won": false,
-          "name": "倶知安高校",
-          "slug": "kucchan"
         },
-        {
-          "display": "旭川志峯",
-          "score": 5,
-          "won": true,
-          "name": "旭川志峯",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-30",
-      "season": "spring",
-      "tournament": "2026年 春季北海道高校野球大会",
-      "round": "準決勝",
-      "venue": "モエレ沼公園球場",
-      "teams": [
-        {
-          "display": "士別翔雲",
-          "score": 2,
-          "won": false,
-          "name": "士別翔雲高校",
-          "slug": "shibetsushoun"
-        },
-        {
-          "display": "旭川志峯",
-          "score": 9,
-          "won": true,
-          "name": "旭川志峯",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-25",
-      "season": "spring",
-      "tournament": "2026年 春季北海道高校野球大会",
-      "round": "1回戦",
-      "venue": "モエレ沼公園球場",
-      "teams": [
-        {
-          "display": "釧路湖陵",
-          "score": 1,
-          "won": false,
-          "name": "釧路湖陵高校",
-          "slug": "kushirokoryo"
-        },
-        {
-          "display": "クラーク記念国際",
-          "score": 8,
-          "won": true,
-          "name": "クラーク記念国際",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-25",
-      "season": "spring",
-      "tournament": "2026年 春季北海道高校野球大会",
-      "round": "1回戦",
-      "venue": "モエレ沼公園球場",
-      "teams": [
         {
           "display": "北海",
-          "score": 9,
+          "score": 3,
           "won": true,
           "name": "北海",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海大札幌",
+          "score": 4,
+          "won": true,
+          "name": "東海大札幌",
           "slug": null
         },
         {
           "display": "旭川東",
-          "score": 0,
+          "score": 1,
           "won": false,
           "name": "旭川東高校",
           "slug": "asahikawahigashi"
@@ -2282,63 +2466,17 @@
       ]
     },
     {
-      "date": "2026-05-25",
-      "season": "spring",
-      "tournament": "2026年 春季北海道高校野球大会",
-      "round": "1回戦",
-      "venue": "モエレ沼公園球場",
+      "date": "2025-10-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
       "teams": [
         {
           "display": "北照",
-          "score": 3,
-          "won": true,
-          "name": "北照",
-          "slug": null
-        },
-        {
-          "display": "函大有斗",
-          "score": 1,
-          "won": false,
-          "name": "函大有斗",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-26",
-      "season": "spring",
-      "tournament": "2026年 春季北海道高校野球大会",
-      "round": "1回戦",
-      "venue": "モエレ沼公園球場",
-      "teams": [
-        {
-          "display": "駒大苫小牧",
-          "score": 2,
-          "won": false,
-          "name": "駒大苫小牧",
-          "slug": null
-        },
-        {
-          "display": "札幌日大",
-          "score": 3,
-          "won": true,
-          "name": "札幌日大",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-27",
-      "season": "spring",
-      "tournament": "2026年 春季北海道高校野球大会",
-      "round": "準々決勝",
-      "venue": "モエレ沼公園球場",
-      "teams": [
-        {
-          "display": "クラーク記念国際",
           "score": 5,
           "won": true,
-          "name": "クラーク記念国際",
+          "name": "北照",
           "slug": null
         },
         {
@@ -2351,22 +2489,183 @@
       ]
     },
     {
-      "date": "2026-05-28",
-      "season": "spring",
-      "tournament": "2026年 春季北海道高校野球大会",
+      "date": "2025-10-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "函大有斗",
+          "score": 2,
+          "won": false,
+          "name": "函大有斗",
+          "slug": null
+        },
+        {
+          "display": "駒大苫小牧",
+          "score": 6,
+          "won": true,
+          "name": "駒大苫小牧",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "紋別",
+          "score": 11,
+          "won": true,
+          "name": "紋別高校",
+          "slug": "monbetsu"
+        },
+        {
+          "display": "釧路湖陵",
+          "score": 1,
+          "won": false,
+          "name": "釧路湖陵高校",
+          "slug": "kushirokoryo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海大札幌",
+          "score": 1,
+          "won": false,
+          "name": "東海大札幌",
+          "slug": null
+        },
+        {
+          "display": "旭川実業",
+          "score": 6,
+          "won": true,
+          "name": "旭川実業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-16",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
       "round": "準々決勝",
-      "venue": "モエレ沼公園球場",
+      "venue": null,
       "teams": [
         {
           "display": "北照",
-          "score": 1,
-          "won": false,
+          "score": 3,
+          "won": true,
           "name": "北照",
           "slug": null
         },
         {
-          "display": "札幌日大",
+          "display": "駒大苫小牧",
+          "score": 2,
+          "won": false,
+          "name": "駒大苫小牧",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-16",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "紋別",
+          "score": 8,
+          "won": false,
+          "name": "紋別高校",
+          "slug": "monbetsu"
+        },
+        {
+          "display": "旭川実業",
+          "score": 9,
+          "won": true,
+          "name": "旭川実業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北照",
+          "score": 7,
+          "won": true,
+          "name": "北照",
+          "slug": null
+        },
+        {
+          "display": "旭川実業",
+          "score": 0,
+          "won": false,
+          "name": "旭川実業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帯広三条",
+          "score": 3,
+          "won": false,
+          "name": "帯広三条高校",
+          "slug": "obihirosanjo"
+        },
+        {
+          "display": "士別翔雲",
           "score": 5,
+          "won": true,
+          "name": "士別翔雲高校",
+          "slug": "shibetsushoun"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "函館大柏稜",
+          "score": 0,
+          "won": false,
+          "name": "函館大柏稜",
+          "slug": null
+        },
+        {
+          "display": "札幌日大",
+          "score": 7,
           "won": true,
           "name": "札幌日大",
           "slug": null
@@ -2374,17 +2673,132 @@
       ]
     },
     {
-      "date": "2026-05-30",
-      "season": "spring",
-      "tournament": "2026年 春季北海道高校野球大会",
-      "round": "準決勝",
-      "venue": "モエレ沼公園球場",
+      "date": "2025-10-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
       "teams": [
         {
-          "display": "クラーク記念国際",
-          "score": 6,
+          "display": "北広島",
+          "score": 4,
+          "won": false,
+          "name": "北広島高校",
+          "slug": "kitahiroshima"
+        },
+        {
+          "display": "士別翔雲",
+          "score": 10,
           "won": true,
-          "name": "クラーク記念国際",
+          "name": "士別翔雲高校",
+          "slug": "shibetsushoun"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滝川西",
+          "score": 1,
+          "won": false,
+          "name": "滝川西高校",
+          "slug": "takikawanishi"
+        },
+        {
+          "display": "白樺学園",
+          "score": 2,
+          "won": true,
+          "name": "白樺学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "苫小牧東",
+          "score": 3,
+          "won": false,
+          "name": "苫小牧東高校",
+          "slug": "tomakomaihigashi"
+        },
+        {
+          "display": "立命館慶祥",
+          "score": 13,
+          "won": true,
+          "name": "立命館慶祥",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌日大",
+          "score": 4,
+          "won": true,
+          "name": "札幌日大",
+          "slug": null
+        },
+        {
+          "display": "札幌光星",
+          "score": 3,
+          "won": false,
+          "name": "札幌光星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-16",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "士別翔雲",
+          "score": 0,
+          "won": false,
+          "name": "士別翔雲高校",
+          "slug": "shibetsushoun"
+        },
+        {
+          "display": "白樺学園",
+          "score": 1,
+          "won": true,
+          "name": "白樺学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-16",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立命館慶祥",
+          "score": 5,
+          "won": true,
+          "name": "立命館慶祥",
           "slug": null
         },
         {
@@ -2397,24 +2811,47 @@
       ]
     },
     {
-      "date": "2026-05-31",
-      "season": "spring",
-      "tournament": "2026年 春季北海道高校野球大会",
-      "round": "決勝",
-      "venue": "モエレ沼公園球場",
+      "date": "2025-10-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
       "teams": [
         {
-          "display": "クラーク記念国際",
-          "score": 5,
-          "won": false,
-          "name": "クラーク記念国際",
+          "display": "白樺学園",
+          "score": 8,
+          "won": true,
+          "name": "白樺学園",
           "slug": null
         },
         {
-          "display": "旭川志峯",
-          "score": 8,
+          "display": "立命館慶祥",
+          "score": 1,
+          "won": false,
+          "name": "立命館慶祥",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-10-20",
+      "season": "autumn",
+      "tournament": "2025年 秋季北海道高等学校野球大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "白樺学園",
+          "score": 0,
+          "won": false,
+          "name": "白樺学園",
+          "slug": null
+        },
+        {
+          "display": "北照",
+          "score": 2,
           "won": true,
-          "name": "旭川志峯",
+          "name": "北照",
           "slug": null
         }
       ]
@@ -5474,443 +5911,6 @@
           "score": 0,
           "won": false,
           "name": "北海",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "札幌大谷",
-          "score": 2,
-          "won": false,
-          "name": "札幌大谷",
-          "slug": null
-        },
-        {
-          "display": "北海",
-          "score": 3,
-          "won": true,
-          "name": "北海",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "東海大札幌",
-          "score": 4,
-          "won": true,
-          "name": "東海大札幌",
-          "slug": null
-        },
-        {
-          "display": "旭川東",
-          "score": 1,
-          "won": false,
-          "name": "旭川東高校",
-          "slug": "asahikawahigashi"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-15",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "北照",
-          "score": 5,
-          "won": true,
-          "name": "北照",
-          "slug": null
-        },
-        {
-          "display": "北海",
-          "score": 3,
-          "won": false,
-          "name": "北海",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "函大有斗",
-          "score": 2,
-          "won": false,
-          "name": "函大有斗",
-          "slug": null
-        },
-        {
-          "display": "駒大苫小牧",
-          "score": 6,
-          "won": true,
-          "name": "駒大苫小牧",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "紋別",
-          "score": 11,
-          "won": true,
-          "name": "紋別高校",
-          "slug": "monbetsu"
-        },
-        {
-          "display": "釧路湖陵",
-          "score": 1,
-          "won": false,
-          "name": "釧路湖陵高校",
-          "slug": "kushirokoryo"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-15",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "東海大札幌",
-          "score": 1,
-          "won": false,
-          "name": "東海大札幌",
-          "slug": null
-        },
-        {
-          "display": "旭川実業",
-          "score": 6,
-          "won": true,
-          "name": "旭川実業",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-16",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "北照",
-          "score": 3,
-          "won": true,
-          "name": "北照",
-          "slug": null
-        },
-        {
-          "display": "駒大苫小牧",
-          "score": 2,
-          "won": false,
-          "name": "駒大苫小牧",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-16",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "紋別",
-          "score": 8,
-          "won": false,
-          "name": "紋別高校",
-          "slug": "monbetsu"
-        },
-        {
-          "display": "旭川実業",
-          "score": 9,
-          "won": true,
-          "name": "旭川実業",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-19",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "準決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "北照",
-          "score": 7,
-          "won": true,
-          "name": "北照",
-          "slug": null
-        },
-        {
-          "display": "旭川実業",
-          "score": 0,
-          "won": false,
-          "name": "旭川実業",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "帯広三条",
-          "score": 3,
-          "won": false,
-          "name": "帯広三条高校",
-          "slug": "obihirosanjo"
-        },
-        {
-          "display": "士別翔雲",
-          "score": 5,
-          "won": true,
-          "name": "士別翔雲高校",
-          "slug": "shibetsushoun"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "函館大柏稜",
-          "score": 0,
-          "won": false,
-          "name": "函館大柏稜",
-          "slug": null
-        },
-        {
-          "display": "札幌日大",
-          "score": 7,
-          "won": true,
-          "name": "札幌日大",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "北広島",
-          "score": 4,
-          "won": false,
-          "name": "北広島高校",
-          "slug": "kitahiroshima"
-        },
-        {
-          "display": "士別翔雲",
-          "score": 10,
-          "won": true,
-          "name": "士別翔雲高校",
-          "slug": "shibetsushoun"
-        }
-      ]
-    },
-    {
-      "date": "2025-10-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "滝川西",
-          "score": 1,
-          "won": false,
-          "name": "滝川西高校",
-          "slug": "takikawanishi"
-        },
-        {
-          "display": "白樺学園",
-          "score": 2,
-          "won": true,
-          "name": "白樺学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-13",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "苫小牧東",
-          "score": 3,
-          "won": false,
-          "name": "苫小牧東高校",
-          "slug": "tomakomaihigashi"
-        },
-        {
-          "display": "立命館慶祥",
-          "score": 13,
-          "won": true,
-          "name": "立命館慶祥",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-15",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "札幌日大",
-          "score": 4,
-          "won": true,
-          "name": "札幌日大",
-          "slug": null
-        },
-        {
-          "display": "札幌光星",
-          "score": 3,
-          "won": false,
-          "name": "札幌光星",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-16",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "士別翔雲",
-          "score": 0,
-          "won": false,
-          "name": "士別翔雲高校",
-          "slug": "shibetsushoun"
-        },
-        {
-          "display": "白樺学園",
-          "score": 1,
-          "won": true,
-          "name": "白樺学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-16",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "立命館慶祥",
-          "score": 5,
-          "won": true,
-          "name": "立命館慶祥",
-          "slug": null
-        },
-        {
-          "display": "札幌日大",
-          "score": 4,
-          "won": false,
-          "name": "札幌日大",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-19",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "準決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "白樺学園",
-          "score": 8,
-          "won": true,
-          "name": "白樺学園",
-          "slug": null
-        },
-        {
-          "display": "立命館慶祥",
-          "score": 1,
-          "won": false,
-          "name": "立命館慶祥",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-10-20",
-      "season": "autumn",
-      "tournament": "2025年 秋季北海道高等学校野球大会",
-      "round": "決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "白樺学園",
-          "score": 0,
-          "won": false,
-          "name": "白樺学園",
-          "slug": null
-        },
-        {
-          "display": "北照",
-          "score": 2,
-          "won": true,
-          "name": "北照",
           "slug": null
         }
       ]

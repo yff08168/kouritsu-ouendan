@@ -5,6 +5,2703 @@
   "sourceUrl": "https://tokyo.hsbflash.jp/",
   "games": [
     {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "新日本物流スタジアム多摩",
+      "teams": [
+        {
+          "display": "桜町",
+          "score": 12,
+          "won": true,
+          "name": "桜町高校",
+          "slug": "sakuramachi"
+        },
+        {
+          "display": "久留米西",
+          "score": 9,
+          "won": false,
+          "name": "久留米西高校",
+          "slug": "kurumenishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "専大附",
+          "score": 0,
+          "won": false,
+          "name": "専大附",
+          "slug": null
+        },
+        {
+          "display": "明星",
+          "score": 7,
+          "won": true,
+          "name": "明星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "四商",
+          "score": 3,
+          "won": false,
+          "name": "四商",
+          "slug": null
+        },
+        {
+          "display": "松が谷",
+          "score": 4,
+          "won": true,
+          "name": "松が谷高校",
+          "slug": "matsugaya"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "日野",
+          "score": 0,
+          "won": false,
+          "name": "日野高校",
+          "slug": "hino"
+        },
+        {
+          "display": "早大学院",
+          "score": 1,
+          "won": true,
+          "name": "早大学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "日大二",
+          "score": 2,
+          "won": false,
+          "name": "日大二",
+          "slug": null
+        },
+        {
+          "display": "明大八王子",
+          "score": 6,
+          "won": true,
+          "name": "明大八王子",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "秋留台",
+          "score": 0,
+          "won": false,
+          "name": "秋留台高校",
+          "slug": "akirudai"
+        },
+        {
+          "display": "日大櫻丘",
+          "score": 10,
+          "won": true,
+          "name": "日大櫻丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "狛江",
+          "score": 5,
+          "won": true,
+          "name": "狛江高校",
+          "slug": "komae"
+        },
+        {
+          "display": "筑波大駒場",
+          "score": 3,
+          "won": false,
+          "name": "筑波大駒場",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "明大世田谷",
+          "score": 10,
+          "won": true,
+          "name": "明大世田谷",
+          "slug": null
+        },
+        {
+          "display": "拝島",
+          "score": 0,
+          "won": false,
+          "name": "拝島高校",
+          "slug": "haijima"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "総合工科",
+          "score": 11,
+          "won": true,
+          "name": "総合工科高校",
+          "slug": "sogokoka"
+        },
+        {
+          "display": "小平",
+          "score": 3,
+          "won": false,
+          "name": "小平高校",
+          "slug": "kodaira"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "西",
+          "score": 6,
+          "won": false,
+          "name": "西高校",
+          "slug": "nishi"
+        },
+        {
+          "display": "武蔵",
+          "score": 8,
+          "won": true,
+          "name": "武蔵高校",
+          "slug": "musashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "調布南",
+          "score": 20,
+          "won": true,
+          "name": "調布南高校",
+          "slug": "chofuminami"
+        },
+        {
+          "display": "大東学園",
+          "score": 0,
+          "won": false,
+          "name": "大東学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "新日本物流スタジアム多摩",
+      "teams": [
+        {
+          "display": "東村山・府中",
+          "score": 2,
+          "won": false,
+          "name": "東村山・府中",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "豊多摩",
+          "score": 15,
+          "won": true,
+          "name": "豊多摩高校",
+          "slug": "toyotama"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "昭和",
+          "score": 8,
+          "won": true,
+          "name": "昭和高校",
+          "slug": "nishi-tokyo-showa"
+        },
+        {
+          "display": "明学東村山",
+          "score": 1,
+          "won": false,
+          "name": "明学東村山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "新日本物流スタジアム多摩",
+      "teams": [
+        {
+          "display": "瑞穂農芸",
+          "score": 2,
+          "won": false,
+          "name": "瑞穂農芸高校",
+          "slug": "mizuhonogei"
+        },
+        {
+          "display": "武蔵野北",
+          "score": 19,
+          "won": true,
+          "name": "武蔵野北高校",
+          "slug": "musashinokita"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "農大一・芦花",
+          "score": 4,
+          "won": false,
+          "name": "農大一・芦花",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "桐朋",
+          "score": 11,
+          "won": true,
+          "name": "桐朋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "新日本物流スタジアム多摩",
+      "teams": [
+        {
+          "display": "多摩大聖ヶ丘",
+          "score": 28,
+          "won": true,
+          "name": "多摩大聖ヶ丘",
+          "slug": null
+        },
+        {
+          "display": "帝京大高",
+          "score": 0,
+          "won": false,
+          "name": "帝京大高",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "深沢",
+          "score": 22,
+          "won": true,
+          "name": "深沢高校",
+          "slug": "fukasawa"
+        },
+        {
+          "display": "田柄・光丘",
+          "score": 7,
+          "won": false,
+          "name": "田柄・光丘",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "明法",
+          "score": 20,
+          "won": true,
+          "name": "明法",
+          "slug": null
+        },
+        {
+          "display": "青鳥特別支援",
+          "score": 0,
+          "won": false,
+          "name": "青鳥特別支援",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "中大杉並",
+          "score": 0,
+          "won": false,
+          "name": "中大杉並",
+          "slug": null
+        },
+        {
+          "display": "東大和",
+          "score": 2,
+          "won": true,
+          "name": "東大和高校",
+          "slug": "higashiyamato"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "農業",
+          "score": 0,
+          "won": false,
+          "name": "農業",
+          "slug": null
+        },
+        {
+          "display": "日大鶴ヶ丘",
+          "score": 18,
+          "won": true,
+          "name": "日大鶴ヶ丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "東大和南",
+          "score": 9,
+          "won": true,
+          "name": "東大和南高校",
+          "slug": "higashiyamatominami"
+        },
+        {
+          "display": "杉並",
+          "score": 5,
+          "won": false,
+          "name": "杉並高校",
+          "slug": "suginami"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "立川",
+          "score": 11,
+          "won": true,
+          "name": "立川高校",
+          "slug": "tachikawa"
+        },
+        {
+          "display": "和光",
+          "score": 1,
+          "won": false,
+          "name": "和光",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "神代",
+          "score": 0,
+          "won": false,
+          "name": "神代高校",
+          "slug": "jindai"
+        },
+        {
+          "display": "成瀬",
+          "score": 10,
+          "won": true,
+          "name": "成瀬高校",
+          "slug": "naruse"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "昭和一学園",
+          "score": 5,
+          "won": false,
+          "name": "昭和一学園",
+          "slug": null
+        },
+        {
+          "display": "小平南",
+          "score": 10,
+          "won": true,
+          "name": "小平南高校",
+          "slug": "kodairaminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "井草・大泉松蔭大松蔭・杉並工科",
+          "score": 0,
+          "won": false,
+          "name": "井草・大泉松蔭大松蔭・杉並工科",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "片倉",
+          "score": 7,
+          "won": true,
+          "name": "片倉高校",
+          "slug": "katakura"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "田無工科",
+          "score": 4,
+          "won": true,
+          "name": "田無工科高校",
+          "slug": "tanashikoka"
+        },
+        {
+          "display": "日野台",
+          "score": 2,
+          "won": false,
+          "name": "日野台高校",
+          "slug": "hinodai"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "八王子北",
+          "score": 1,
+          "won": false,
+          "name": "八王子北高校",
+          "slug": "hachiojikita"
+        },
+        {
+          "display": "国立",
+          "score": 8,
+          "won": true,
+          "name": "国立高校",
+          "slug": "kunitachi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "國學院久我山",
+          "score": 10,
+          "won": true,
+          "name": "國學院久我山",
+          "slug": null
+        },
+        {
+          "display": "桜町",
+          "score": 0,
+          "won": false,
+          "name": "桜町高校",
+          "slug": "sakuramachi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "明星",
+          "score": 8,
+          "won": true,
+          "name": "明星",
+          "slug": null
+        },
+        {
+          "display": "松が谷",
+          "score": 0,
+          "won": false,
+          "name": "松が谷高校",
+          "slug": "matsugaya"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "早大学院",
+          "score": 4,
+          "won": false,
+          "name": "早大学院",
+          "slug": null
+        },
+        {
+          "display": "明大八王子",
+          "score": 10,
+          "won": true,
+          "name": "明大八王子",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "新日本物流スタジアム多摩",
+      "teams": [
+        {
+          "display": "日大櫻丘",
+          "score": 8,
+          "won": true,
+          "name": "日大櫻丘",
+          "slug": null
+        },
+        {
+          "display": "狛江",
+          "score": 3,
+          "won": false,
+          "name": "狛江高校",
+          "slug": "komae"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "明大世田谷",
+          "score": 7,
+          "won": true,
+          "name": "明大世田谷",
+          "slug": null
+        },
+        {
+          "display": "総合工科",
+          "score": 3,
+          "won": false,
+          "name": "総合工科高校",
+          "slug": "sogokoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "ジャイアンツタウンスタジアム",
+      "teams": [
+        {
+          "display": "武蔵",
+          "score": 5,
+          "won": true,
+          "name": "武蔵高校",
+          "slug": "musashi"
+        },
+        {
+          "display": "調布南",
+          "score": 2,
+          "won": false,
+          "name": "調布南高校",
+          "slug": "chofuminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "豊多摩",
+          "score": 7,
+          "won": false,
+          "name": "豊多摩高校",
+          "slug": "toyotama"
+        },
+        {
+          "display": "昭和",
+          "score": 11,
+          "won": true,
+          "name": "昭和高校",
+          "slug": "nishi-tokyo-showa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "武蔵野北",
+          "score": 0,
+          "won": false,
+          "name": "武蔵野北高校",
+          "slug": "musashinokita"
+        },
+        {
+          "display": "聖パウロ学園",
+          "score": 7,
+          "won": true,
+          "name": "聖パウロ学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "八王子実践",
+          "score": 8,
+          "won": true,
+          "name": "八王子実践",
+          "slug": null
+        },
+        {
+          "display": "桐朋",
+          "score": 1,
+          "won": false,
+          "name": "桐朋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "多摩大聖ヶ丘",
+          "score": 9,
+          "won": true,
+          "name": "多摩大聖ヶ丘",
+          "slug": null
+        },
+        {
+          "display": "深沢",
+          "score": 2,
+          "won": false,
+          "name": "深沢高校",
+          "slug": "fukasawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "明法",
+          "score": 6,
+          "won": false,
+          "name": "明法",
+          "slug": null
+        },
+        {
+          "display": "東大和",
+          "score": 8,
+          "won": true,
+          "name": "東大和高校",
+          "slug": "higashiyamato"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "日大鶴ヶ丘",
+          "score": 13,
+          "won": true,
+          "name": "日大鶴ヶ丘",
+          "slug": null
+        },
+        {
+          "display": "東大和南",
+          "score": 1,
+          "won": false,
+          "name": "東大和南高校",
+          "slug": "higashiyamatominami"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "ジャイアンツタウンスタジアム",
+      "teams": [
+        {
+          "display": "成蹊",
+          "score": 8,
+          "won": true,
+          "name": "成蹊",
+          "slug": null
+        },
+        {
+          "display": "立川",
+          "score": 0,
+          "won": false,
+          "name": "立川高校",
+          "slug": "tachikawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "成瀬",
+          "score": 2,
+          "won": false,
+          "name": "成瀬高校",
+          "slug": "naruse"
+        },
+        {
+          "display": "小平南",
+          "score": 13,
+          "won": true,
+          "name": "小平南高校",
+          "slug": "kodairaminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "新日本物流スタジアム多摩",
+      "teams": [
+        {
+          "display": "片倉",
+          "score": 17,
+          "won": true,
+          "name": "片倉高校",
+          "slug": "katakura"
+        },
+        {
+          "display": "田無工科",
+          "score": 0,
+          "won": false,
+          "name": "田無工科高校",
+          "slug": "tanashikoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "国立",
+          "score": 1,
+          "won": false,
+          "name": "国立高校",
+          "slug": "kunitachi"
+        },
+        {
+          "display": "佼成学園",
+          "score": 8,
+          "won": true,
+          "name": "佼成学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "3回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "國學院久我山",
+          "score": 8,
+          "won": true,
+          "name": "國學院久我山",
+          "slug": null
+        },
+        {
+          "display": "明星",
+          "score": 4,
+          "won": false,
+          "name": "明星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "3回戦",
+      "venue": "ジャイアンツタウンスタジアム",
+      "teams": [
+        {
+          "display": "明大八王子",
+          "score": 6,
+          "won": true,
+          "name": "明大八王子",
+          "slug": null
+        },
+        {
+          "display": "日大櫻丘",
+          "score": 3,
+          "won": false,
+          "name": "日大櫻丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "3回戦",
+      "venue": "ジャイアンツタウンスタジアム",
+      "teams": [
+        {
+          "display": "明大世田谷",
+          "score": 10,
+          "won": true,
+          "name": "明大世田谷",
+          "slug": null
+        },
+        {
+          "display": "武蔵",
+          "score": 0,
+          "won": false,
+          "name": "武蔵高校",
+          "slug": "musashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "昭和",
+          "score": 5,
+          "won": false,
+          "name": "昭和高校",
+          "slug": "nishi-tokyo-showa"
+        },
+        {
+          "display": "聖パウロ学園",
+          "score": 11,
+          "won": true,
+          "name": "聖パウロ学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "3回戦",
+      "venue": "ジャイアンツタウンスタジアム",
+      "teams": [
+        {
+          "display": "八王子実践",
+          "score": 12,
+          "won": true,
+          "name": "八王子実践",
+          "slug": null
+        },
+        {
+          "display": "多摩大聖ヶ丘",
+          "score": 0,
+          "won": false,
+          "name": "多摩大聖ヶ丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "3回戦",
+      "venue": "ジャイアンツタウンスタジアム",
+      "teams": [
+        {
+          "display": "東大和",
+          "score": 4,
+          "won": false,
+          "name": "東大和高校",
+          "slug": "higashiyamato"
+        },
+        {
+          "display": "日大鶴ヶ丘",
+          "score": 6,
+          "won": true,
+          "name": "日大鶴ヶ丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "3回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "成蹊",
+          "score": 4,
+          "won": false,
+          "name": "成蹊",
+          "slug": null
+        },
+        {
+          "display": "小平南",
+          "score": 8,
+          "won": true,
+          "name": "小平南高校",
+          "slug": "kodairaminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "3回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "片倉",
+          "score": 6,
+          "won": false,
+          "name": "片倉高校",
+          "slug": "katakura"
+        },
+        {
+          "display": "佼成学園",
+          "score": 15,
+          "won": true,
+          "name": "佼成学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "4回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "國學院久我山",
+          "score": 1,
+          "won": false,
+          "name": "國學院久我山",
+          "slug": null
+        },
+        {
+          "display": "明大八王子",
+          "score": 6,
+          "won": true,
+          "name": "明大八王子",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "4回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "明大世田谷",
+          "score": 0,
+          "won": false,
+          "name": "明大世田谷",
+          "slug": null
+        },
+        {
+          "display": "聖パウロ学園",
+          "score": 7,
+          "won": true,
+          "name": "聖パウロ学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "八王子実践",
+          "score": 9,
+          "won": true,
+          "name": "八王子実践",
+          "slug": null
+        },
+        {
+          "display": "日大鶴ヶ丘",
+          "score": 8,
+          "won": false,
+          "name": "日大鶴ヶ丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "4回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "小平南",
+          "score": 0,
+          "won": false,
+          "name": "小平南高校",
+          "slug": "kodairaminami"
+        },
+        {
+          "display": "佼成学園",
+          "score": 10,
+          "won": true,
+          "name": "佼成学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "明大八王子",
+          "score": 11,
+          "won": true,
+          "name": "明大八王子",
+          "slug": null
+        },
+        {
+          "display": "聖パウロ学園",
+          "score": 4,
+          "won": false,
+          "name": "聖パウロ学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "八王子実践",
+          "score": 5,
+          "won": true,
+          "name": "八王子実践",
+          "slug": null
+        },
+        {
+          "display": "佼成学園",
+          "score": 2,
+          "won": false,
+          "name": "佼成学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "明大八王子",
+          "score": 2,
+          "won": false,
+          "name": "明大八王子",
+          "slug": null
+        },
+        {
+          "display": "八王子実践",
+          "score": 4,
+          "won": true,
+          "name": "八王子実践",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "新日本物流スタジアム多摩",
+      "teams": [
+        {
+          "display": "千歳丘",
+          "score": 1,
+          "won": false,
+          "name": "千歳丘高校",
+          "slug": "chitosegaoka"
+        },
+        {
+          "display": "創価",
+          "score": 11,
+          "won": true,
+          "name": "創価",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "学芸大附",
+          "score": 8,
+          "won": true,
+          "name": "学芸大附",
+          "slug": null
+        },
+        {
+          "display": "清瀬",
+          "score": 5,
+          "won": false,
+          "name": "清瀬高校",
+          "slug": "kiyose"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "玉川学園",
+          "score": 7,
+          "won": true,
+          "name": "玉川学園",
+          "slug": null
+        },
+        {
+          "display": "調布北",
+          "score": 5,
+          "won": false,
+          "name": "調布北高校",
+          "slug": "chofukita"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "拓大一",
+          "score": 9,
+          "won": false,
+          "name": "拓大一",
+          "slug": null
+        },
+        {
+          "display": "穎明館",
+          "score": 10,
+          "won": true,
+          "name": "穎明館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "南平",
+          "score": 8,
+          "won": false,
+          "name": "南平高校",
+          "slug": "minamidaira"
+        },
+        {
+          "display": "三鷹中等",
+          "score": 10,
+          "won": true,
+          "name": "三鷹中等",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "都市大高",
+          "score": 3,
+          "won": true,
+          "name": "都市大高",
+          "slug": null
+        },
+        {
+          "display": "福生",
+          "score": 2,
+          "won": false,
+          "name": "福生高校",
+          "slug": "fussa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "保谷",
+          "score": 8,
+          "won": false,
+          "name": "保谷高校",
+          "slug": "hoya"
+        },
+        {
+          "display": "田無",
+          "score": 12,
+          "won": true,
+          "name": "田無高校",
+          "slug": "tanashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "八王子",
+          "score": 3,
+          "won": false,
+          "name": "八王子",
+          "slug": null
+        },
+        {
+          "display": "早稲田実",
+          "score": 6,
+          "won": true,
+          "name": "早稲田実",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "国際基督教大高",
+          "score": 0,
+          "won": false,
+          "name": "国際基督教大高",
+          "slug": null
+        },
+        {
+          "display": "南多摩中等",
+          "score": 5,
+          "won": true,
+          "name": "南多摩中等",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東村山西",
+          "score": 4,
+          "won": true,
+          "name": "東村山西高校",
+          "slug": "higashimurayamanishi"
+        },
+        {
+          "display": "聖徳学園",
+          "score": 0,
+          "won": false,
+          "name": "聖徳学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "上水",
+          "score": 10,
+          "won": true,
+          "name": "上水高校",
+          "slug": "josui"
+        },
+        {
+          "display": "練馬工科",
+          "score": 0,
+          "won": false,
+          "name": "練馬工科高校",
+          "slug": "nerimakoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "法政",
+          "score": 11,
+          "won": true,
+          "name": "法政",
+          "slug": null
+        },
+        {
+          "display": "電機大高",
+          "score": 0,
+          "won": false,
+          "name": "電機大高",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "町田工科",
+          "score": 0,
+          "won": false,
+          "name": "町田工科高校",
+          "slug": "machidakoka"
+        },
+        {
+          "display": "中大附",
+          "score": 7,
+          "won": true,
+          "name": "中大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "小平西",
+          "score": 0,
+          "won": false,
+          "name": "小平西高校",
+          "slug": "kodairanishi"
+        },
+        {
+          "display": "錦城",
+          "score": 8,
+          "won": true,
+          "name": "錦城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東京高専",
+          "score": 3,
+          "won": false,
+          "name": "東京工業高専",
+          "slug": "tokyokogyo"
+        },
+        {
+          "display": "府中西",
+          "score": 7,
+          "won": true,
+          "name": "府中西高校",
+          "slug": "fuchunishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "日大三",
+          "score": 15,
+          "won": true,
+          "name": "日大三",
+          "slug": null
+        },
+        {
+          "display": "翔陽",
+          "score": 0,
+          "won": false,
+          "name": "翔陽高校",
+          "slug": "shoyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "町田",
+          "score": 8,
+          "won": true,
+          "name": "町田高校",
+          "slug": "machida"
+        },
+        {
+          "display": "帝京八王子",
+          "score": 1,
+          "won": false,
+          "name": "帝京八王子",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石神井",
+          "score": 2,
+          "won": false,
+          "name": "石神井高校",
+          "slug": "shakujii"
+        },
+        {
+          "display": "府中工科",
+          "score": 12,
+          "won": true,
+          "name": "府中工科高校",
+          "slug": "fuchukoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "富士森",
+          "score": 3,
+          "won": false,
+          "name": "富士森高校",
+          "slug": "fujimori"
+        },
+        {
+          "display": "工学院大附",
+          "score": 5,
+          "won": true,
+          "name": "工学院大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "五日市・八王子桑志松原",
+          "score": 0,
+          "won": false,
+          "name": "五日市・八王子桑志松原",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "成城学園",
+          "score": 15,
+          "won": true,
+          "name": "成城学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "明大明治",
+          "score": 4,
+          "won": true,
+          "name": "明大明治",
+          "slug": null
+        },
+        {
+          "display": "小川",
+          "score": 2,
+          "won": false,
+          "name": "小川高校",
+          "slug": "nishi-tokyo-ogawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "国分寺",
+          "score": 3,
+          "won": false,
+          "name": "国分寺高校",
+          "slug": "kokubunji"
+        },
+        {
+          "display": "駒場学園",
+          "score": 10,
+          "won": true,
+          "name": "駒場学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "府中東",
+          "score": 5,
+          "won": true,
+          "name": "府中東高校",
+          "slug": "fuchuhigashi"
+        },
+        {
+          "display": "永山",
+          "score": 0,
+          "won": false,
+          "name": "永山高校",
+          "slug": "nagayama"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "明星学園",
+          "score": 0,
+          "won": false,
+          "name": "明星学園",
+          "slug": null
+        },
+        {
+          "display": "練馬",
+          "score": 10,
+          "won": true,
+          "name": "練馬高校",
+          "slug": "nerima"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "大成",
+          "score": 13,
+          "won": true,
+          "name": "大成",
+          "slug": null
+        },
+        {
+          "display": "啓明学園",
+          "score": 6,
+          "won": false,
+          "name": "啓明学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "多摩工科",
+          "score": 0,
+          "won": false,
+          "name": "多摩工科高校",
+          "slug": "tamakoka"
+        },
+        {
+          "display": "東海大菅生",
+          "score": 10,
+          "won": true,
+          "name": "東海大菅生",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "都市大等々力",
+          "score": 9,
+          "won": true,
+          "name": "都市大等々力",
+          "slug": null
+        },
+        {
+          "display": "青梅総合・多摩・羽村",
+          "score": 0,
+          "won": false,
+          "name": "青梅総合・多摩・羽村",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "国士舘",
+          "score": 1,
+          "won": false,
+          "name": "国士舘",
+          "slug": null
+        },
+        {
+          "display": "創価",
+          "score": 11,
+          "won": true,
+          "name": "創価",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "学芸大附",
+          "score": 12,
+          "won": true,
+          "name": "学芸大附",
+          "slug": null
+        },
+        {
+          "display": "玉川学園",
+          "score": 2,
+          "won": false,
+          "name": "玉川学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "ジャイアンツタウンスタジアム",
+      "teams": [
+        {
+          "display": "穎明館",
+          "score": 14,
+          "won": true,
+          "name": "穎明館",
+          "slug": null
+        },
+        {
+          "display": "三鷹中等",
+          "score": 9,
+          "won": false,
+          "name": "三鷹中等",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "新日本物流スタジアム多摩",
+      "teams": [
+        {
+          "display": "都市大高",
+          "score": 6,
+          "won": true,
+          "name": "都市大高",
+          "slug": null
+        },
+        {
+          "display": "武蔵村山",
+          "score": 5,
+          "won": false,
+          "name": "武蔵村山高校",
+          "slug": "musashimurayama"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "田無",
+          "score": 0,
+          "won": false,
+          "name": "田無高校",
+          "slug": "tanashi"
+        },
+        {
+          "display": "早稲田実",
+          "score": 1,
+          "won": true,
+          "name": "早稲田実",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "南多摩中等",
+          "score": 3,
+          "won": false,
+          "name": "南多摩中等",
+          "slug": null
+        },
+        {
+          "display": "東村山西",
+          "score": 15,
+          "won": true,
+          "name": "東村山西高校",
+          "slug": "higashimurayamanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "上水",
+          "score": 5,
+          "won": false,
+          "name": "上水高校",
+          "slug": "josui"
+        },
+        {
+          "display": "法政",
+          "score": 11,
+          "won": true,
+          "name": "法政",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "中大附",
+          "score": 3,
+          "won": false,
+          "name": "中大附",
+          "slug": null
+        },
+        {
+          "display": "駒大高",
+          "score": 4,
+          "won": true,
+          "name": "駒大高",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "世田谷学園",
+          "score": 7,
+          "won": true,
+          "name": "世田谷学園",
+          "slug": null
+        },
+        {
+          "display": "錦城",
+          "score": 2,
+          "won": false,
+          "name": "錦城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "府中西",
+          "score": 2,
+          "won": false,
+          "name": "府中西高校",
+          "slug": "fuchunishi"
+        },
+        {
+          "display": "日大三",
+          "score": 6,
+          "won": true,
+          "name": "日大三",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "町田",
+          "score": 7,
+          "won": true,
+          "name": "町田高校",
+          "slug": "machida"
+        },
+        {
+          "display": "府中工科",
+          "score": 6,
+          "won": false,
+          "name": "府中工科高校",
+          "slug": "fuchukoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "スリーボンドベースボールパーク上柚木",
+      "teams": [
+        {
+          "display": "工学院大附",
+          "score": 4,
+          "won": true,
+          "name": "工学院大附",
+          "slug": null
+        },
+        {
+          "display": "成城学園",
+          "score": 0,
+          "won": false,
+          "name": "成城学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "明大明治",
+          "score": 8,
+          "won": false,
+          "name": "明大明治",
+          "slug": null
+        },
+        {
+          "display": "駒場学園",
+          "score": 18,
+          "won": true,
+          "name": "駒場学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "新日本物流スタジアム多摩",
+      "teams": [
+        {
+          "display": "府中東",
+          "score": 1,
+          "won": false,
+          "name": "府中東高校",
+          "slug": "fuchuhigashi"
+        },
+        {
+          "display": "練馬",
+          "score": 6,
+          "won": true,
+          "name": "練馬高校",
+          "slug": "nerima"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "大成",
+          "score": 1,
+          "won": false,
+          "name": "大成",
+          "slug": null
+        },
+        {
+          "display": "東海大菅生",
+          "score": 9,
+          "won": true,
+          "name": "東海大菅生",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "2回戦",
+      "venue": "ジャイアンツタウンスタジアム",
+      "teams": [
+        {
+          "display": "都市大等々力",
+          "score": 1,
+          "won": false,
+          "name": "都市大等々力",
+          "slug": null
+        },
+        {
+          "display": "桜美林",
+          "score": 8,
+          "won": true,
+          "name": "桜美林",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "3回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "創価",
+          "score": 12,
+          "won": true,
+          "name": "創価",
+          "slug": null
+        },
+        {
+          "display": "学芸大附",
+          "score": 0,
+          "won": false,
+          "name": "学芸大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "3回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "穎明館",
+          "score": 4,
+          "won": false,
+          "name": "穎明館",
+          "slug": null
+        },
+        {
+          "display": "都市大高",
+          "score": 5,
+          "won": true,
+          "name": "都市大高",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "早稲田実",
+          "score": 10,
+          "won": true,
+          "name": "早稲田実",
+          "slug": null
+        },
+        {
+          "display": "東村山西",
+          "score": 0,
+          "won": false,
+          "name": "東村山西高校",
+          "slug": "higashimurayamanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "法政",
+          "score": 1,
+          "won": false,
+          "name": "法政",
+          "slug": null
+        },
+        {
+          "display": "駒大高",
+          "score": 8,
+          "won": true,
+          "name": "駒大高",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "世田谷学園",
+          "score": 4,
+          "won": false,
+          "name": "世田谷学園",
+          "slug": null
+        },
+        {
+          "display": "日大三",
+          "score": 8,
+          "won": true,
+          "name": "日大三",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "3回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "町田",
+          "score": 3,
+          "won": false,
+          "name": "町田高校",
+          "slug": "machida"
+        },
+        {
+          "display": "工学院大附",
+          "score": 12,
+          "won": true,
+          "name": "工学院大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "3回戦",
+      "venue": "S&D昭島スタジアム",
+      "teams": [
+        {
+          "display": "駒場学園",
+          "score": 2,
+          "won": true,
+          "name": "駒場学園",
+          "slug": null
+        },
+        {
+          "display": "練馬",
+          "score": 1,
+          "won": false,
+          "name": "練馬高校",
+          "slug": "nerima"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "3回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "東海大菅生",
+          "score": 15,
+          "won": true,
+          "name": "東海大菅生",
+          "slug": null
+        },
+        {
+          "display": "桜美林",
+          "score": 13,
+          "won": false,
+          "name": "桜美林",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "4回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "創価",
+          "score": 5,
+          "won": true,
+          "name": "創価",
+          "slug": null
+        },
+        {
+          "display": "都市大高",
+          "score": 0,
+          "won": false,
+          "name": "都市大高",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "早稲田実",
+          "score": 3,
+          "won": false,
+          "name": "早稲田実",
+          "slug": null
+        },
+        {
+          "display": "駒大高",
+          "score": 7,
+          "won": true,
+          "name": "駒大高",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "4回戦",
+      "venue": "コトブキヤスタジアム",
+      "teams": [
+        {
+          "display": "日大三",
+          "score": 12,
+          "won": true,
+          "name": "日大三",
+          "slug": null
+        },
+        {
+          "display": "工学院大附",
+          "score": 0,
+          "won": false,
+          "name": "工学院大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "4回戦",
+      "venue": "スリーボンドスタジアム八王子",
+      "teams": [
+        {
+          "display": "駒場学園",
+          "score": 5,
+          "won": false,
+          "name": "駒場学園",
+          "slug": null
+        },
+        {
+          "display": "東海大菅生",
+          "score": 9,
+          "won": true,
+          "name": "東海大菅生",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "創価",
+          "score": 6,
+          "won": true,
+          "name": "創価",
+          "slug": null
+        },
+        {
+          "display": "駒大高",
+          "score": 3,
+          "won": false,
+          "name": "駒大高",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日大三",
+          "score": 5,
+          "won": true,
+          "name": "日大三",
+          "slug": null
+        },
+        {
+          "display": "東海大菅生",
+          "score": 4,
+          "won": false,
+          "name": "東海大菅生",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "創価",
+          "score": 7,
+          "won": true,
+          "name": "創価",
+          "slug": null
+        },
+        {
+          "display": "日大三",
+          "score": 4,
+          "won": false,
+          "name": "日大三",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-26",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 西東京大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "創価",
+          "score": 0,
+          "won": false,
+          "name": "創価",
+          "slug": null
+        },
+        {
+          "display": "八王子実践",
+          "score": 1,
+          "won": true,
+          "name": "八王子実践",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2018-07-08",
       "season": "summer",
       "tournament": "第100回全国高等学校野球選手権記念 西東京大会",

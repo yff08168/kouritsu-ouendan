@@ -5,6 +5,2885 @@
   "sourceUrl": "https://tokyo.hsbflash.jp/",
   "games": [
     {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "修徳",
+          "score": 14,
+          "won": true,
+          "name": "修徳",
+          "slug": null
+        },
+        {
+          "display": "渋谷教育渋谷",
+          "score": 0,
+          "won": false,
+          "name": "渋谷教育渋谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大東大一",
+          "score": 7,
+          "won": true,
+          "name": "大東大一",
+          "slug": null
+        },
+        {
+          "display": "自由ヶ丘学園",
+          "score": 1,
+          "won": false,
+          "name": "自由ヶ丘学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "戸山",
+          "score": 10,
+          "won": true,
+          "name": "戸山高校",
+          "slug": "toyama"
+        },
+        {
+          "display": "広尾学園",
+          "score": 4,
+          "won": false,
+          "name": "広尾学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "修徳",
+          "score": 2,
+          "won": true,
+          "name": "修徳",
+          "slug": null
+        },
+        {
+          "display": "城西大城西",
+          "score": 1,
+          "won": false,
+          "name": "城西大城西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "芝浦工大附",
+          "score": 14,
+          "won": true,
+          "name": "芝浦工大附",
+          "slug": null
+        },
+        {
+          "display": "品川翔英",
+          "score": 6,
+          "won": false,
+          "name": "品川翔英",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大田桜台・桐ヶ丘三商・中野工科",
+          "score": 3,
+          "won": false,
+          "name": "大田桜台・桐ヶ丘三商・中野工科",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "鷺宮",
+          "score": 11,
+          "won": true,
+          "name": "鷺宮高校",
+          "slug": "saginomiya"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "板橋",
+          "score": 14,
+          "won": true,
+          "name": "板橋高校",
+          "slug": "itabashi"
+        },
+        {
+          "display": "六郷工科",
+          "score": 4,
+          "won": false,
+          "name": "六郷工科高校",
+          "slug": "rokugokoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "郁文館",
+          "score": 10,
+          "won": true,
+          "name": "郁文館",
+          "slug": null
+        },
+        {
+          "display": "小岩",
+          "score": 3,
+          "won": false,
+          "name": "小岩高校",
+          "slug": "koiwa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開成",
+          "score": 6,
+          "won": false,
+          "name": "開成",
+          "slug": null
+        },
+        {
+          "display": "日比谷",
+          "score": 7,
+          "won": true,
+          "name": "日比谷高校",
+          "slug": "hibiya"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "ジャイアンツタウンスタジアム",
+      "teams": [
+        {
+          "display": "学習院",
+          "score": 1,
+          "won": false,
+          "name": "学習院",
+          "slug": null
+        },
+        {
+          "display": "桜修館",
+          "score": 9,
+          "won": true,
+          "name": "桜修館中等教育学校",
+          "slug": "oshukan"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "足立西・科学技術",
+          "score": 7,
+          "won": false,
+          "name": "足立西・科学技術",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "墨田工科",
+          "score": 18,
+          "won": true,
+          "name": "墨田工科高校",
+          "slug": "sumidakoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "江戸川",
+          "score": 3,
+          "won": true,
+          "name": "江戸川高校",
+          "slug": "edogawa"
+        },
+        {
+          "display": "日本ウェルネス",
+          "score": 2,
+          "won": false,
+          "name": "日本ウェルネス",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "桜丘",
+          "score": 1,
+          "won": false,
+          "name": "桜丘",
+          "slug": null
+        },
+        {
+          "display": "小山台",
+          "score": 8,
+          "won": true,
+          "name": "小山台高校",
+          "slug": "koyamadai"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "葛飾商",
+          "score": 0,
+          "won": false,
+          "name": "葛飾商業高校",
+          "slug": "katsushikashogyo"
+        },
+        {
+          "display": "朋優学院",
+          "score": 10,
+          "won": true,
+          "name": "朋優学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日体大荏原",
+          "score": 12,
+          "won": true,
+          "name": "日体大荏原",
+          "slug": null
+        },
+        {
+          "display": "東京実",
+          "score": 3,
+          "won": false,
+          "name": "東京実",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "葛飾野",
+          "score": 2,
+          "won": true,
+          "name": "葛飾野高校",
+          "slug": "katsushikano"
+        },
+        {
+          "display": "聖学院",
+          "score": 1,
+          "won": false,
+          "name": "聖学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "ジャイアンツタウンスタジアム",
+      "teams": [
+        {
+          "display": "東京",
+          "score": 6,
+          "won": false,
+          "name": "東京",
+          "slug": null
+        },
+        {
+          "display": "大東大一",
+          "score": 13,
+          "won": true,
+          "name": "大東大一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "ジャイアンツタウンスタジアム",
+      "teams": [
+        {
+          "display": "戸山",
+          "score": 1,
+          "won": false,
+          "name": "戸山高校",
+          "slug": "toyama"
+        },
+        {
+          "display": "正則",
+          "score": 11,
+          "won": true,
+          "name": "正則",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "堀越",
+          "score": 9,
+          "won": true,
+          "name": "堀越",
+          "slug": null
+        },
+        {
+          "display": "新宿",
+          "score": 0,
+          "won": false,
+          "name": "新宿高校",
+          "slug": "shinjuku"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "高島",
+          "score": 11,
+          "won": true,
+          "name": "高島高校",
+          "slug": "takashima"
+        },
+        {
+          "display": "国際・駒場・三田",
+          "score": 5,
+          "won": false,
+          "name": "国際・駒場・三田",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日大一",
+          "score": 0,
+          "won": false,
+          "name": "日大一",
+          "slug": null
+        },
+        {
+          "display": "立正大立正",
+          "score": 11,
+          "won": true,
+          "name": "立正大立正",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "獨協",
+          "score": 28,
+          "won": true,
+          "name": "獨協",
+          "slug": null
+        },
+        {
+          "display": "千早",
+          "score": 4,
+          "won": false,
+          "name": "千早高校",
+          "slug": "chihaya"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "大森学園",
+          "score": 15,
+          "won": true,
+          "name": "大森学園",
+          "slug": null
+        },
+        {
+          "display": "八丈",
+          "score": 1,
+          "won": false,
+          "name": "八丈高校",
+          "slug": "hachijo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大森",
+          "score": 0,
+          "won": false,
+          "name": "大森高校",
+          "slug": "omori"
+        },
+        {
+          "display": "青山",
+          "score": 9,
+          "won": true,
+          "name": "青山高校",
+          "slug": "aoyama"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "文教大付",
+          "score": 0,
+          "won": false,
+          "name": "文教大付",
+          "slug": null
+        },
+        {
+          "display": "成城",
+          "score": 8,
+          "won": true,
+          "name": "成城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "京華商",
+          "score": 4,
+          "won": false,
+          "name": "京華商",
+          "slug": null
+        },
+        {
+          "display": "早稲田",
+          "score": 7,
+          "won": true,
+          "name": "早稲田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "目黒",
+          "score": 0,
+          "won": false,
+          "name": "目黒高校",
+          "slug": "meguro"
+        },
+        {
+          "display": "日大豊山",
+          "score": 5,
+          "won": true,
+          "name": "日大豊山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "二松学舎大附",
+          "score": 20,
+          "won": true,
+          "name": "二松学舎大附",
+          "slug": null
+        },
+        {
+          "display": "葛西南",
+          "score": 0,
+          "won": false,
+          "name": "葛西南高校",
+          "slug": "kasaiminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "目黒学院",
+          "score": 0,
+          "won": false,
+          "name": "目黒学院",
+          "slug": null
+        },
+        {
+          "display": "正則学園",
+          "score": 17,
+          "won": true,
+          "name": "正則学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "淵江",
+          "score": 9,
+          "won": false,
+          "name": "淵江高校",
+          "slug": "fuchie"
+        },
+        {
+          "display": "高輪",
+          "score": 11,
+          "won": true,
+          "name": "高輪",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大崎",
+          "score": 3,
+          "won": false,
+          "name": "大崎高校",
+          "slug": "osaki"
+        },
+        {
+          "display": "足立学園",
+          "score": 6,
+          "won": true,
+          "name": "足立学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "淑徳",
+          "score": 3,
+          "won": true,
+          "name": "淑徳",
+          "slug": null
+        },
+        {
+          "display": "修徳",
+          "score": 2,
+          "won": false,
+          "name": "修徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "芝浦工大附",
+          "score": 9,
+          "won": true,
+          "name": "芝浦工大附",
+          "slug": null
+        },
+        {
+          "display": "鷺宮",
+          "score": 8,
+          "won": false,
+          "name": "鷺宮高校",
+          "slug": "saginomiya"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "板橋",
+          "score": 2,
+          "won": false,
+          "name": "板橋高校",
+          "slug": "itabashi"
+        },
+        {
+          "display": "郁文館",
+          "score": 9,
+          "won": true,
+          "name": "郁文館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日比谷",
+          "score": 9,
+          "won": true,
+          "name": "日比谷高校",
+          "slug": "hibiya"
+        },
+        {
+          "display": "桜修館",
+          "score": 6,
+          "won": false,
+          "name": "桜修館中等教育学校",
+          "slug": "oshukan"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "墨田工科",
+          "score": 1,
+          "won": false,
+          "name": "墨田工科高校",
+          "slug": "sumidakoka"
+        },
+        {
+          "display": "江戸川",
+          "score": 11,
+          "won": true,
+          "name": "江戸川高校",
+          "slug": "edogawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "小山台",
+          "score": 8,
+          "won": true,
+          "name": "小山台高校",
+          "slug": "koyamadai"
+        },
+        {
+          "display": "朋優学院",
+          "score": 1,
+          "won": false,
+          "name": "朋優学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "日体大荏原",
+          "score": 16,
+          "won": true,
+          "name": "日体大荏原",
+          "slug": null
+        },
+        {
+          "display": "葛飾野",
+          "score": 1,
+          "won": false,
+          "name": "葛飾野高校",
+          "slug": "katsushikano"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大東大一",
+          "score": 1,
+          "won": false,
+          "name": "大東大一",
+          "slug": null
+        },
+        {
+          "display": "帝京",
+          "score": 11,
+          "won": true,
+          "name": "帝京",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "明大中野",
+          "score": 9,
+          "won": true,
+          "name": "明大中野",
+          "slug": null
+        },
+        {
+          "display": "正則",
+          "score": 2,
+          "won": false,
+          "name": "正則",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "堀越",
+          "score": 9,
+          "won": true,
+          "name": "堀越",
+          "slug": null
+        },
+        {
+          "display": "高島",
+          "score": 0,
+          "won": false,
+          "name": "高島高校",
+          "slug": "takashima"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "立正大立正",
+          "score": 17,
+          "won": true,
+          "name": "立正大立正",
+          "slug": null
+        },
+        {
+          "display": "獨協",
+          "score": 0,
+          "won": false,
+          "name": "獨協",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "大森学園",
+          "score": 4,
+          "won": true,
+          "name": "大森学園",
+          "slug": null
+        },
+        {
+          "display": "青山",
+          "score": 2,
+          "won": false,
+          "name": "青山高校",
+          "slug": "aoyama"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "成城",
+          "score": 7,
+          "won": false,
+          "name": "成城",
+          "slug": null
+        },
+        {
+          "display": "早稲田",
+          "score": 9,
+          "won": true,
+          "name": "早稲田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日大豊山",
+          "score": 2,
+          "won": false,
+          "name": "日大豊山",
+          "slug": null
+        },
+        {
+          "display": "二松学舎大附",
+          "score": 4,
+          "won": true,
+          "name": "二松学舎大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "正則学園",
+          "score": 11,
+          "won": false,
+          "name": "正則学園",
+          "slug": null
+        },
+        {
+          "display": "高輪",
+          "score": 12,
+          "won": true,
+          "name": "高輪",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "足立学園",
+          "score": 0,
+          "won": false,
+          "name": "足立学園",
+          "slug": null
+        },
+        {
+          "display": "岩倉",
+          "score": 1,
+          "won": true,
+          "name": "岩倉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "淑徳",
+          "score": 11,
+          "won": true,
+          "name": "淑徳",
+          "slug": null
+        },
+        {
+          "display": "芝浦工大附",
+          "score": 0,
+          "won": false,
+          "name": "芝浦工大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "4回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "郁文館",
+          "score": 13,
+          "won": true,
+          "name": "郁文館",
+          "slug": null
+        },
+        {
+          "display": "日比谷",
+          "score": 3,
+          "won": false,
+          "name": "日比谷高校",
+          "slug": "hibiya"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "江戸川",
+          "score": 4,
+          "won": false,
+          "name": "江戸川高校",
+          "slug": "edogawa"
+        },
+        {
+          "display": "小山台",
+          "score": 5,
+          "won": true,
+          "name": "小山台高校",
+          "slug": "koyamadai"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日体大荏原",
+          "score": 5,
+          "won": false,
+          "name": "日体大荏原",
+          "slug": null
+        },
+        {
+          "display": "帝京",
+          "score": 15,
+          "won": true,
+          "name": "帝京",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "4回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "明大中野",
+          "score": 6,
+          "won": true,
+          "name": "明大中野",
+          "slug": null
+        },
+        {
+          "display": "堀越",
+          "score": 0,
+          "won": false,
+          "name": "堀越",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "4回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "立正大立正",
+          "score": 2,
+          "won": false,
+          "name": "立正大立正",
+          "slug": null
+        },
+        {
+          "display": "大森学園",
+          "score": 7,
+          "won": true,
+          "name": "大森学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "4回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "早稲田",
+          "score": 1,
+          "won": false,
+          "name": "早稲田",
+          "slug": null
+        },
+        {
+          "display": "二松学舎大附",
+          "score": 7,
+          "won": true,
+          "name": "二松学舎大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高輪",
+          "score": 0,
+          "won": false,
+          "name": "高輪",
+          "slug": null
+        },
+        {
+          "display": "岩倉",
+          "score": 10,
+          "won": true,
+          "name": "岩倉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "淑徳",
+          "score": 1,
+          "won": false,
+          "name": "淑徳",
+          "slug": null
+        },
+        {
+          "display": "郁文館",
+          "score": 11,
+          "won": true,
+          "name": "郁文館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小山台",
+          "score": 3,
+          "won": false,
+          "name": "小山台高校",
+          "slug": "koyamadai"
+        },
+        {
+          "display": "帝京",
+          "score": 4,
+          "won": true,
+          "name": "帝京",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "5回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "明大中野",
+          "score": 9,
+          "won": true,
+          "name": "明大中野",
+          "slug": null
+        },
+        {
+          "display": "大森学園",
+          "score": 2,
+          "won": false,
+          "name": "大森学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "5回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "二松学舎大附",
+          "score": 10,
+          "won": true,
+          "name": "二松学舎大附",
+          "slug": null
+        },
+        {
+          "display": "岩倉",
+          "score": 3,
+          "won": false,
+          "name": "岩倉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "郁文館",
+          "score": 8,
+          "won": false,
+          "name": "郁文館",
+          "slug": null
+        },
+        {
+          "display": "帝京",
+          "score": 11,
+          "won": true,
+          "name": "帝京",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "明大中野",
+          "score": 3,
+          "won": false,
+          "name": "明大中野",
+          "slug": null
+        },
+        {
+          "display": "二松学舎大附",
+          "score": 4,
+          "won": true,
+          "name": "二松学舎大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帝京",
+          "score": 3,
+          "won": false,
+          "name": "帝京",
+          "slug": null
+        },
+        {
+          "display": "二松学舎大附",
+          "score": 7,
+          "won": true,
+          "name": "二松学舎大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "荒川工科大島海洋国際",
+          "score": 8,
+          "won": false,
+          "name": "荒川工科大島海洋国際",
+          "slug": null
+        },
+        {
+          "display": "立教池袋",
+          "score": 23,
+          "won": true,
+          "name": "立教池袋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "実践学園",
+          "score": 14,
+          "won": true,
+          "name": "実践学園",
+          "slug": null
+        },
+        {
+          "display": "つばさ総合",
+          "score": 0,
+          "won": false,
+          "name": "つばさ総合高校",
+          "slug": "tsubasasogo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "昭和一",
+          "score": 3,
+          "won": true,
+          "name": "昭和一",
+          "slug": null
+        },
+        {
+          "display": "豊南",
+          "score": 2,
+          "won": false,
+          "name": "豊南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "筑波大附",
+          "score": 1,
+          "won": true,
+          "name": "筑波大附",
+          "slug": null
+        },
+        {
+          "display": "九段中等",
+          "score": 0,
+          "won": false,
+          "name": "九段中等",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "昭和鉄道",
+          "score": 0,
+          "won": false,
+          "name": "昭和鉄道",
+          "slug": null
+        },
+        {
+          "display": "東京成徳大高",
+          "score": 7,
+          "won": true,
+          "name": "東京成徳大高",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "芝",
+          "score": 7,
+          "won": true,
+          "name": "芝",
+          "slug": null
+        },
+        {
+          "display": "深川",
+          "score": 0,
+          "won": false,
+          "name": "深川高校",
+          "slug": "fukagawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "葛西工科",
+          "score": 0,
+          "won": false,
+          "name": "葛西工科高校",
+          "slug": "kasaikoka"
+        },
+        {
+          "display": "大山",
+          "score": 9,
+          "won": true,
+          "name": "大山高校",
+          "slug": "higashi-tokyo-oyama"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "田園調布",
+          "score": 9,
+          "won": true,
+          "name": "田園調布高校",
+          "slug": "denenchofu"
+        },
+        {
+          "display": "巣鴨",
+          "score": 0,
+          "won": false,
+          "name": "巣鴨",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "京華",
+          "score": 4,
+          "won": false,
+          "name": "京華",
+          "slug": null
+        },
+        {
+          "display": "攻玉社",
+          "score": 11,
+          "won": true,
+          "name": "攻玉社",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "日工大駒場",
+          "score": 11,
+          "won": true,
+          "name": "日工大駒場",
+          "slug": null
+        },
+        {
+          "display": "産技高専",
+          "score": 4,
+          "won": false,
+          "name": "産技高専",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "錦城学園",
+          "score": 7,
+          "won": true,
+          "name": "錦城学園",
+          "slug": null
+        },
+        {
+          "display": "東海大高輪台",
+          "score": 6,
+          "won": false,
+          "name": "東海大高輪台",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "足立新田",
+          "score": 3,
+          "won": true,
+          "name": "足立新田高校",
+          "slug": "adachishinden"
+        },
+        {
+          "display": "城北",
+          "score": 2,
+          "won": false,
+          "name": "城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "武蔵丘",
+          "score": 10,
+          "won": true,
+          "name": "武蔵丘高校",
+          "slug": "musashigaoka"
+        },
+        {
+          "display": "日本橋",
+          "score": 0,
+          "won": false,
+          "name": "日本橋高校",
+          "slug": "nihonbashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "葛飾総合",
+          "score": 1,
+          "won": false,
+          "name": "葛飾総合高校",
+          "slug": "katsushikasogo"
+        },
+        {
+          "display": "東",
+          "score": 6,
+          "won": true,
+          "name": "東高校",
+          "slug": "azuma"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "ジャイアンツタウンスタジアム",
+      "teams": [
+        {
+          "display": "多摩大目黒",
+          "score": 4,
+          "won": true,
+          "name": "多摩大目黒",
+          "slug": null
+        },
+        {
+          "display": "淑徳巣鴨",
+          "score": 3,
+          "won": false,
+          "name": "淑徳巣鴨",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "青井・足立東・農産南葛飾",
+          "score": 0,
+          "won": false,
+          "name": "青井・足立東・農産南葛飾",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "城東",
+          "score": 37,
+          "won": true,
+          "name": "城東高校",
+          "slug": "joto"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "文京",
+          "score": 7,
+          "won": false,
+          "name": "文京高校",
+          "slug": "bunkyo"
+        },
+        {
+          "display": "立教池袋",
+          "score": 8,
+          "won": true,
+          "name": "立教池袋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "ジャイアンツタウンスタジアム",
+      "teams": [
+        {
+          "display": "実践学園",
+          "score": 4,
+          "won": true,
+          "name": "実践学園",
+          "slug": null
+        },
+        {
+          "display": "本郷",
+          "score": 3,
+          "won": false,
+          "name": "本郷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "青稜",
+          "score": 10,
+          "won": true,
+          "name": "青稜",
+          "slug": null
+        },
+        {
+          "display": "駒込",
+          "score": 4,
+          "won": false,
+          "name": "駒込",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "ジャイアンツタウンスタジアム",
+      "teams": [
+        {
+          "display": "目黒日大",
+          "score": 6,
+          "won": true,
+          "name": "目黒日大",
+          "slug": null
+        },
+        {
+          "display": "上野学園",
+          "score": 0,
+          "won": false,
+          "name": "上野学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "両国",
+          "score": 0,
+          "won": false,
+          "name": "両国高校",
+          "slug": "ryogoku"
+        },
+        {
+          "display": "成立学園",
+          "score": 10,
+          "won": true,
+          "name": "成立学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "富士",
+          "score": 4,
+          "won": false,
+          "name": "富士高校",
+          "slug": "fuji"
+        },
+        {
+          "display": "目白研心",
+          "score": 11,
+          "won": true,
+          "name": "目白研心",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "紅葉川",
+          "score": 11,
+          "won": true,
+          "name": "紅葉川高校",
+          "slug": "momijigawa"
+        },
+        {
+          "display": "青山学院",
+          "score": 4,
+          "won": false,
+          "name": "青山学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "竹台",
+          "score": 10,
+          "won": true,
+          "name": "竹台高校",
+          "slug": "takedai"
+        },
+        {
+          "display": "豊島学院",
+          "score": 3,
+          "won": false,
+          "name": "豊島学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "國學院",
+          "score": 11,
+          "won": true,
+          "name": "國學院",
+          "slug": null
+        },
+        {
+          "display": "広尾",
+          "score": 7,
+          "won": false,
+          "name": "広尾高校",
+          "slug": "higashi-tokyo-hiroo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "海城",
+          "score": 10,
+          "won": true,
+          "name": "海城",
+          "slug": null
+        },
+        {
+          "display": "麻布",
+          "score": 0,
+          "won": false,
+          "name": "麻布",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "篠崎",
+          "score": 5,
+          "won": false,
+          "name": "篠崎高校",
+          "slug": "shinozaki"
+        },
+        {
+          "display": "小松川",
+          "score": 11,
+          "won": true,
+          "name": "小松川高校",
+          "slug": "komatsugawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立志舎",
+          "score": 1,
+          "won": false,
+          "name": "立志舎",
+          "slug": null
+        },
+        {
+          "display": "駿台学園",
+          "score": 4,
+          "won": true,
+          "name": "駿台学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "北里順天",
+          "score": 9,
+          "won": true,
+          "name": "北里順天",
+          "slug": null
+        },
+        {
+          "display": "東洋",
+          "score": 1,
+          "won": false,
+          "name": "東洋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大島",
+          "score": 1,
+          "won": false,
+          "name": "大島高校",
+          "slug": "oshima"
+        },
+        {
+          "display": "雪谷",
+          "score": 17,
+          "won": true,
+          "name": "雪谷高校",
+          "slug": "yukigaya"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "王子総合",
+          "score": 9,
+          "won": true,
+          "name": "王子総合高校",
+          "slug": "ojisogo"
+        },
+        {
+          "display": "昭和一",
+          "score": 8,
+          "won": false,
+          "name": "昭和一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "関東一",
+          "score": 21,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        },
+        {
+          "display": "筑波大附",
+          "score": 0,
+          "won": false,
+          "name": "筑波大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "東京成徳大高",
+          "score": 1,
+          "won": false,
+          "name": "東京成徳大高",
+          "slug": null
+        },
+        {
+          "display": "芝",
+          "score": 3,
+          "won": true,
+          "name": "芝",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大山",
+          "score": 4,
+          "won": false,
+          "name": "大山高校",
+          "slug": "higashi-tokyo-oyama"
+        },
+        {
+          "display": "田園調布",
+          "score": 6,
+          "won": true,
+          "name": "田園調布高校",
+          "slug": "denenchofu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "攻玉社",
+          "score": 5,
+          "won": true,
+          "name": "攻玉社",
+          "slug": null
+        },
+        {
+          "display": "日工大駒場",
+          "score": 2,
+          "won": false,
+          "name": "日工大駒場",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "錦城学園",
+          "score": 6,
+          "won": true,
+          "name": "錦城学園",
+          "slug": null
+        },
+        {
+          "display": "足立新田",
+          "score": 4,
+          "won": false,
+          "name": "足立新田高校",
+          "slug": "adachishinden"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "武蔵丘",
+          "score": 23,
+          "won": true,
+          "name": "武蔵丘高校",
+          "slug": "musashigaoka"
+        },
+        {
+          "display": "東",
+          "score": 1,
+          "won": false,
+          "name": "東高校",
+          "slug": "azuma"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "多摩大目黒",
+          "score": 3,
+          "won": false,
+          "name": "多摩大目黒",
+          "slug": null
+        },
+        {
+          "display": "城東",
+          "score": 10,
+          "won": true,
+          "name": "城東高校",
+          "slug": "joto"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "立教池袋",
+          "score": 0,
+          "won": false,
+          "name": "立教池袋",
+          "slug": null
+        },
+        {
+          "display": "安田学園",
+          "score": 7,
+          "won": true,
+          "name": "安田学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "共栄学園",
+          "score": 5,
+          "won": false,
+          "name": "共栄学園",
+          "slug": null
+        },
+        {
+          "display": "実践学園",
+          "score": 6,
+          "won": true,
+          "name": "実践学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "青稜",
+          "score": 0,
+          "won": false,
+          "name": "青稜",
+          "slug": null
+        },
+        {
+          "display": "目黒日大",
+          "score": 8,
+          "won": true,
+          "name": "目黒日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "成立学園",
+          "score": 10,
+          "won": true,
+          "name": "成立学園",
+          "slug": null
+        },
+        {
+          "display": "目白研心",
+          "score": 0,
+          "won": false,
+          "name": "目白研心",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "紅葉川",
+          "score": 7,
+          "won": true,
+          "name": "紅葉川高校",
+          "slug": "momijigawa"
+        },
+        {
+          "display": "竹台",
+          "score": 3,
+          "won": false,
+          "name": "竹台高校",
+          "slug": "takedai"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "國學院",
+          "score": 9,
+          "won": false,
+          "name": "國學院",
+          "slug": null
+        },
+        {
+          "display": "海城",
+          "score": 14,
+          "won": true,
+          "name": "海城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "小松川",
+          "score": 0,
+          "won": false,
+          "name": "小松川高校",
+          "slug": "komatsugawa"
+        },
+        {
+          "display": "駿台学園",
+          "score": 9,
+          "won": true,
+          "name": "駿台学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北里順天",
+          "score": 1,
+          "won": false,
+          "name": "北里順天",
+          "slug": null
+        },
+        {
+          "display": "雪谷",
+          "score": 8,
+          "won": true,
+          "name": "雪谷高校",
+          "slug": "yukigaya"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "王子総合",
+          "score": 0,
+          "won": false,
+          "name": "王子総合高校",
+          "slug": "ojisogo"
+        },
+        {
+          "display": "東亜学園",
+          "score": 6,
+          "won": true,
+          "name": "東亜学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "関東一",
+          "score": 10,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        },
+        {
+          "display": "芝",
+          "score": 0,
+          "won": false,
+          "name": "芝",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "4回戦",
+      "venue": "オーエンススタジアム江戸川",
+      "teams": [
+        {
+          "display": "田園調布",
+          "score": 6,
+          "won": true,
+          "name": "田園調布高校",
+          "slug": "denenchofu"
+        },
+        {
+          "display": "攻玉社",
+          "score": 2,
+          "won": false,
+          "name": "攻玉社",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "4回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "錦城学園",
+          "score": 6,
+          "won": true,
+          "name": "錦城学園",
+          "slug": null
+        },
+        {
+          "display": "武蔵丘",
+          "score": 4,
+          "won": false,
+          "name": "武蔵丘高校",
+          "slug": "musashigaoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "4回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "城東",
+          "score": 2,
+          "won": false,
+          "name": "城東高校",
+          "slug": "joto"
+        },
+        {
+          "display": "安田学園",
+          "score": 3,
+          "won": true,
+          "name": "安田学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "4回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "実践学園",
+          "score": 0,
+          "won": false,
+          "name": "実践学園",
+          "slug": null
+        },
+        {
+          "display": "目黒日大",
+          "score": 1,
+          "won": true,
+          "name": "目黒日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "4回戦",
+      "venue": "ジャイアンツタウンスタジアム",
+      "teams": [
+        {
+          "display": "成立学園",
+          "score": 7,
+          "won": true,
+          "name": "成立学園",
+          "slug": null
+        },
+        {
+          "display": "紅葉川",
+          "score": 3,
+          "won": false,
+          "name": "紅葉川高校",
+          "slug": "momijigawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "4回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "海城",
+          "score": 0,
+          "won": false,
+          "name": "海城",
+          "slug": null
+        },
+        {
+          "display": "駿台学園",
+          "score": 12,
+          "won": true,
+          "name": "駿台学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "雪谷",
+          "score": 5,
+          "won": false,
+          "name": "雪谷高校",
+          "slug": "yukigaya"
+        },
+        {
+          "display": "東亜学園",
+          "score": 9,
+          "won": true,
+          "name": "東亜学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "関東一",
+          "score": 16,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        },
+        {
+          "display": "田園調布",
+          "score": 0,
+          "won": false,
+          "name": "田園調布高校",
+          "slug": "denenchofu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "5回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "錦城学園",
+          "score": 6,
+          "won": true,
+          "name": "錦城学園",
+          "slug": null
+        },
+        {
+          "display": "安田学園",
+          "score": 0,
+          "won": false,
+          "name": "安田学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "5回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "目黒日大",
+          "score": 5,
+          "won": true,
+          "name": "目黒日大",
+          "slug": null
+        },
+        {
+          "display": "成立学園",
+          "score": 4,
+          "won": false,
+          "name": "成立学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "駿台学園",
+          "score": 6,
+          "won": false,
+          "name": "駿台学園",
+          "slug": null
+        },
+        {
+          "display": "東亜学園",
+          "score": 13,
+          "won": true,
+          "name": "東亜学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "関東一",
+          "score": 8,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        },
+        {
+          "display": "錦城学園",
+          "score": 2,
+          "won": false,
+          "name": "錦城学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "目黒日大",
+          "score": 6,
+          "won": true,
+          "name": "目黒日大",
+          "slug": null
+        },
+        {
+          "display": "東亜学園",
+          "score": 5,
+          "won": false,
+          "name": "東亜学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "関東一",
+          "score": 7,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        },
+        {
+          "display": "目黒日大",
+          "score": 0,
+          "won": false,
+          "name": "目黒日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権大会 東東京大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "関東一",
+          "score": 10,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        },
+        {
+          "display": "二松学舎大附",
+          "score": 4,
+          "won": false,
+          "name": "二松学舎大附",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2018-07-11",
       "season": "summer",
       "tournament": "第100回全国高等学校野球選手権記念 東東京大会",

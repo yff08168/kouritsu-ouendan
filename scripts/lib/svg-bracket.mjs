@@ -93,7 +93,7 @@ function readTexts(html) {
  * @param opts.district 警告に出す県名
  * @returns null（形が違って読めない）または `{ slots, games, champion, printedChampion }`
  */
-export function readHsbBracket(html, { district = "" } = {}) {
+export function readHsbBracket(html, { district = "", blocks = false } = {}) {
   const bail = (why) => {
     console.log(`  ⚠️ ${district}: トーナメント表を読めない（${why}）。1試合も出さない`);
     return null;
@@ -209,6 +209,8 @@ export function readHsbBracket(html, { district = "" } = {}) {
     byX.get(k).push({ ...l, lo: Math.min(l.y1, l.y2), hi: Math.max(l.y1, l.y2) });
   }
   const joins = [];
+  /** ★組にならなかった縦線（下の「不戦勝の連結線」で見る） */
+  const singles = [];
   for (const [x, list] of byX) {
     const used = new Set();
     for (let i = 0; i < list.length; i++) {
@@ -216,7 +218,10 @@ export function readHsbBracket(html, { district = "" } = {}) {
       const a = list[i];
       const j = list.findIndex((b, k) => k !== i && !used.has(k) && Math.abs(b.lo - a.hi) < 0.5);
       const j2 = j >= 0 ? j : list.findIndex((b, k) => k !== i && !used.has(k) && Math.abs(b.hi - a.lo) < 0.5);
-      if (j2 < 0) continue;
+      if (j2 < 0) {
+        singles.push({ x, lo: a.lo, hi: a.hi });
+        continue;
+      }
       const b = list[j2];
       used.add(i);
       used.add(j2);
@@ -226,6 +231,34 @@ export function readHsbBracket(html, { district = "" } = {}) {
     }
   }
   if (!joins.length) return bail("連結線の組が1つも作れない");
+  /*
+    ---- 3-b. 不戦勝の連結線 ----
+    ★★★**不戦勝の縦線は色が分かれず1本で描かれる**（2026-09-04 に大阪で突き止めた）。
+
+        2861.25  355  不戦                      ← ★**紙が「不戦」と刷っている**
+        x360-360 y2815-2897.5 黒                ← ★色の変わり目が無い縦線が1本
+        x300-360 y2815      **赤**              ← 上から入ってくる枝
+        x300-360 y2897.5    **赤**              ← 下から入ってくる枝も**赤**
+
+    ★**ふつうの試合は「勝ち色と負け色の2本」**が端点を共有するので1試合と分かるが、
+    **不戦勝は1本きり**なので**組にならず、そこで山が割れる**
+    （症状は `いちばん上の山が 2 つある`）。
+    ★★**どちらが上がったのかは色から決まらない** —— **両側とも赤で入ってくる**
+    （枝の色は「その枝の左端の試合に勝ったか」も表すため）。**下の walk で別に決める。**
+
+    ★★**拾うのは「紙が `不戦` と刷ってある縦線」だけ。**
+    組にならない縦線は他にもある（**三位決定戦**の小さな枝・**無効**試合）ので、
+    **中点のすぐそばに `不戦` の字があることを求める。**
+    ★**字で拾うので、当て推量にならない。**
+  */
+  for (const s of singles) {
+    const mid = (s.lo + s.hi) / 2;
+    const mark = texts.find(
+      (t) => t.text === "不戦" && Math.abs(t.x - s.x) <= 20 && Math.abs(t.y - mid) <= 10,
+    );
+    if (!mark) continue;
+    joins.push({ x: s.x, top: s.lo, bottom: s.hi, mid, topRed: false, bottomRed: false, bye: true });
+  }
 
   /*
     ---- 4. 枝をたどる ----
@@ -285,6 +318,12 @@ export function readHsbBracket(html, { district = "" } = {}) {
   /** ★**不戦勝の数**（枠は使うが試合は行われていない）。呼ぶ側の検算に渡す */
   let byes = 0;
   /*
+    ★**同じ校名が紙に何回刷ってあるか**（不戦勝でどちらが上がったのかを決めるのに使う）。
+    **ブロックで勝ち上がった学校だけが、上の段の山にもう一度出てくる。**
+  */
+  const slotNameCount = new Map();
+  for (const s of slots) slotNameCount.set(s.name, (slotNameCount.get(s.name) ?? 0) + 1);
+  /*
     ★**スロット番号の文字は枝の線より 4 ポイント下にある**（文字の基準線）。
     枝の高さで引くので、**許容を 8 まで広げる**（スロットの間隔は 30 なので混ざらない）。
   */
@@ -302,6 +341,26 @@ export function readHsbBracket(html, { district = "" } = {}) {
     const A = at.get(kt);
     const B = at.get(kb);
     if (!A || !B) continue;
+    /*
+      ★★★**不戦勝（色の分かれていない1本の縦線）はここで決める**（2026-09-04）。
+      **色では決まらない**ので、**紙の別のところに同じ校名がもう一度出てくるか**で見る ——
+      **ブロックで勝ち上がった学校は、上の段の山にスロットとしてもう一度刷ってある。**
+      ★**これは推測ではなく「紙の中の2か所」の突き合わせ**で、
+      **段を決めるときに使っているのと同じ性質のもの。**
+      ★**どちらも2回出てくる／どちらも1回だけ、なら決められない。1試合も出さない。**
+    */
+    if (j.bye) {
+      const ca = slotNameCount.get(A) ?? 0;
+      const cb = slotNameCount.get(B) ?? 0;
+      const up = ca > 1 && cb <= 1 ? A : cb > 1 && ca <= 1 ? B : null;
+      if (!up) return bail(`不戦勝でどちらが上がったのか決められない（${A} / ${B}）`);
+      byes += 1;
+      merge(kt, kb, key(side, j.mid));
+      at.delete(kt);
+      at.delete(kb);
+      at.set(key(side, j.mid), up);
+      continue;
+    }
     /*
       ★**得点は「連結線のすぐ外側」×「枝の高さ」で引く。**
       左半分は線の右、右半分は線の左に置かれる（実測で4ポイント）。
@@ -401,6 +460,10 @@ export function readHsbBracket(html, { district = "" } = {}) {
   */
   let topComp = null;
   let blockSlots = slots;
+  /** ★**いちばん上の山の数**（2以上なら「ブロック大会」。1が普通） */
+  let blockCount = 1;
+  /** ★**いちばん上の山それぞれの勝ち残り**（呼ぶ側が記載の優勝校と突き合わせる） */
+  let topWinners = [];
   const levelOf = new Map();
   if (mode === "one") {
     /*
@@ -487,7 +550,26 @@ export function readHsbBracket(html, { district = "" } = {}) {
     const consumed = new Set();
     for (const list of feedersOf.values()) for (const o of list) consumed.add(o);
     const tops = comps.filter((c) => !consumed.has(c));
-    if (tops.length !== 1) {
+    /*
+      ★★★**いちばん上の山が2つ以上あるのは、2020年の「ブロック大会」がそうだから**
+      （2026-09-04。コロナで選手権が中止になった年の代替大会）。
+
+          令和2年度夏季京都府高校野球ブロック大会 … **8つの山で終わっている**（優勝校が8人いる）
+          がんばれ福岡2020高等学校野球大会       … 4つ
+          令和2年大阪府高等学校野球大会          … 2つ（紙の見出しも `第15ブロック` で終わり）
+
+      ★**紙のいちばん深い試合は「その山の決勝」であって、大会の決勝ではない。**
+      ★★**だから `blocks` で受けたときは 決勝・準決勝・準々決勝という名前を1つも出さない**
+      （下の「回戦名」を見ること）。**`N回戦` は「その学校のN試合目」で、事実として正しい。**
+      ★**優勝校も返さない**（`champion = null`）ので、大会ページも「優勝◯◯」と書かない。
+
+      ★★★**受けてよいのは「出場校の一覧と1対1で突き合わせられるとき」だけ**（`blocks`）。
+      **読み違えでも同じ症状が出る**ため —— たいていは**上の山のスロットの校名が
+      ブロックの優勝校と食い違っている**（折り返しで切れている・略し方が違う）。
+      そのとき**上の山も level 0 になって `blockSlots` に混ざる**ので、
+      **一覧との1対1が必ず落ちる。** 一覧が無い大会（開催中）では受けない。
+    */
+    if (tops.length !== 1 && !(blocks && tops.length > 1)) {
       /*
         ★**どの山が余っているかを必ず出すこと。** 数だけでは追えない ——
         たいていは**校名の書き方が上の山と食い違っている**（折り返しで切れている・略し方が違う）。
@@ -499,7 +581,9 @@ export function readHsbBracket(html, { district = "" } = {}) {
             .join(" / "),
       );
     }
-    topComp = tops[0];
+    topComp = tops.length === 1 ? tops[0] : null;
+    topWinners = tops.map((c) => winnerOf.get(c) ?? null);
+    blockCount = tops.length;
     /*
       ★★**返すのは 0 段の山のスロットだけ。** 上の段に並ぶのは**同じ学校が2度出ているだけ**で、
       外すと呼ぶ側の「チーム数 − 試合数 = 1」がそのまま成り立つ
@@ -536,7 +620,8 @@ export function readHsbBracket(html, { district = "" } = {}) {
         return bail(`山の優勝校が紙と合わない（紙「${printed[0].text}」/ 組み立て「${won}」）`);
       }
     }
-    champion = winnerOf.get(topComp) ?? null;
+    // ★**山が2つ以上あるときは優勝校を返さない**（大会の決勝が行われていない）
+    champion = topComp === null ? null : (winnerOf.get(topComp) ?? null);
   }
 
   /*
@@ -612,7 +697,13 @@ export function readHsbBracket(html, { district = "" } = {}) {
     for (const g of games) {
       const i = indexOf(g);
       const fromTop = last - i;
-      g.round = fromTop < deep.length ? deep[fromTop] : `${i + 1}回戦`;
+      /*
+        ★★★**ブロック大会では 決勝・準決勝・準々決勝 という名前を1つも出さない**
+        （2026-09-04。上の「いちばん上の山が2つ以上」を読むこと）。
+        **紙のいちばん深い試合はその山の決勝であって、大会の決勝ではない。**
+        ★`N回戦` は「その学校のN試合目」なので、そのまま事実として正しい。
+      */
+      g.round = blockCount === 1 && fromTop < deep.length ? deep[fromTop] : `${i + 1}回戦`;
     }
   }
   for (const g of games) {
@@ -682,6 +773,10 @@ export function readHsbBracket(html, { district = "" } = {}) {
     games,
     byes,
     champion,
+    /** ★**いちばん上の山の数。** 2以上ならブロック大会（`チーム数 − 試合数` がこの数になる） */
+    blocks: blockCount,
+    /** ★**山ごとの勝ち残り**（記載の優勝校がこの中にいるかを呼ぶ側が確かめる） */
+    topWinners,
     legend,
     /** ★**勝ち抜き表の外にある「順位決定戦」**（得点が無いので試合としては返さない） */
     placement,

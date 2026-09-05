@@ -15511,6 +15511,13 @@ const HSB_BASE = {
       **年は開いてみないと分からない。** 上から順に開いて、**年が合った1件だけ**を使う。
       ★**「合わなければ次を試す」ではない** —— 目当ての年の大会が落ちたら**0件**にする
       （上に書いた「古い大会が今の季節として出る」を繰り返さないため）。
+
+      ★★★**同じ年・同じ季節に大会が2つあることがある**（2026-09-04 に大阪で見つけた）——
+      **第100回の記念大会は1県から2校が出る**ので、
+      `第100回全国高等学校野球選手権記念 南大阪大会` と `… 北大阪大会` が並んでいる。
+      **1件見つけたところで止めていたので、北大阪の86試合が永久に入らなかった**（警告も出ない）。
+      ★**年が合うものは全部読む。** 一覧は**新しい順**なので、
+      **目当ての年より古いものが出たらそこで止める**（出典に余計な負担をかけない）。
     */
     const wanted = [];
     for (const link of links) {
@@ -15526,10 +15533,13 @@ const HSB_BASE = {
         console.log(`  ⚠️ ${this.district}: 「${link.title}」の大会期間から西暦を読めない`);
         continue;
       }
-      if (y !== year) continue;
+      if (y !== year) {
+        if (y < year) break;
+        continue;
+      }
       wanted.push({ link, html, period, y });
-      break;
     }
+    const collected = [];
     for (const { link, html, period, y } of wanted) {
       const bracket = base + (/<a[^>]+href="(\/tournament\/[^"]+)"/.exec(html)?.[1] ?? "");
       /*
@@ -15549,9 +15559,9 @@ const HSB_BASE = {
         entries: entries.length ? entries : null,
         ...this.winners(html),
       });
-      if (games.length) return games;
+      collected.push(...games);
     }
-    return [];
+    return collected;
   },
   /** `<dt>優勝</dt><dd>◯◯高等学校</dd>` を読む */
   winners(html) {
@@ -15572,7 +15582,12 @@ const HSB_BASE = {
       console.log(`  ⚠️ ${this.district}: 「${info.title}」のトーナメント表が取れない`);
       return [];
     }
-    const built = readHsbBracket(html, { district: this.district });
+    /*
+      ★★**「ブロック大会」として受けてよいのは、出場校の一覧があるときだけ**（2026-09-04）。
+      一覧と1対1で突き合わせられないと、**読み違えと見分けが付かない**
+      （`svg-bracket.mjs` の「いちばん上の山が2つ以上」を読むこと）。
+    */
+    const built = readHsbBracket(html, { district: this.district, blocks: Boolean(info.entries) });
     if (!built) return [];
 
     /*
@@ -15583,10 +15598,15 @@ const HSB_BASE = {
       ★**画面には出さない**（0対0にしない。大阪・石川・群馬と同じ）。
     */
     const byes = built.byes ?? 0;
-    if (built.slots.length - built.games.length - byes !== 1) {
+    /*
+      ★★**ブロック大会は「山の数」だけ勝ち残る**（2026-09-04）。
+      8ブロックなら 74チーム・66試合で `74 − 66 = 8`。**式は同じで、右辺が山の数になるだけ。**
+    */
+    const wantLeft = built.blocks ?? 1;
+    if (built.slots.length - built.games.length - byes !== wantLeft) {
       console.log(
         `  ⚠️ ${this.district}: ${info.title} は ${built.slots.length} チームに対し ${built.games.length} 試合` +
-          `${byes ? `・不戦勝 ${byes}` : ""}（${built.slots.length - 1 - byes} のはず）。1試合も出さない`,
+          `${byes ? `・不戦勝 ${byes}` : ""}（${built.slots.length - wantLeft - byes} のはず）。1試合も出さない`,
       );
       return [];
     }
@@ -15658,6 +15678,28 @@ const HSB_BASE = {
       const y = normalizeSchoolName((b ?? "").replace(/高等?学?校.*$/, ""));
       return Boolean(x) && Boolean(y) && (x.includes(y) || y.includes(x));
     };
+    /*
+      ★★★**ブロック大会には決勝が無い**ので、代わりに
+      **「記載の優勝校が、どれかの山の勝ち残りであること」**を確かめる（2026-09-04）。
+      ★**出典は山が8つでも `優勝` を1つだけ書く**（京都2020は8ブロックの1つの優勝校）。
+      **その1校がどの山の勝ち残りでもなければ、紙を読み違えている。**
+      ★**記載が無いときは受けない**（一覧との1対1だけでは、枝の読み違いは止まらない）。
+    */
+    if ((built.blocks ?? 1) > 1) {
+      const winners = (built.topWinners ?? []).filter(Boolean);
+      if (!info.champion || !winners.some((w) => same(w, info.champion))) {
+        console.log(
+          `  ⚠️ ${this.district}: ${info.title} はブロック大会（山が ${built.blocks} つ）だが、` +
+            `記載の優勝校「${info.champion ?? "（記載なし）"}」がどの山の勝ち残りでもない` +
+            `（山の勝ち残り: ${winners.join("・") || "-"}）。1試合も出さない`,
+        );
+        return [];
+      }
+      console.log(
+        `  ℹ️ ${this.district}: ${info.title} はブロック大会（山が ${built.blocks} つ）。` +
+          `**決勝・準決勝という回戦名は出さない**（大会の決勝が行われていない）`,
+      );
+    }
     const final = built.games.find((g) => g.round === "決勝");
     if (info.champion && final) {
       const won = built.champion;
@@ -15760,8 +15802,11 @@ const HSB_BASE = {
     }
     const undated = out.filter((g) => !g.date).length;
     console.log(
-      `  （${info.title}: ${out.length} 試合 / 優勝 ${built.champion}` +
-        `${info.champion ? "（記載と一致）" : "（記載が無く未検算）"} / ${built.slots.length} チーム` +
+      `  （${info.title}: ${out.length} 試合 / ` +
+        ((built.blocks ?? 1) > 1
+          ? `${built.blocks} ブロック（大会の優勝校は無し）`
+          : `優勝 ${built.champion}${info.champion ? "（記載と一致）" : "（記載が無く未検算）"}`) +
+        ` / ${built.slots.length} チーム` +
         `${undated ? ` ・日付の付かない試合 ${undated} 件` : ""}）`,
     );
     return out;
@@ -16026,6 +16071,56 @@ const okayamaHsb = hsbAdapter({
   host: "okayama",
   summer2020: /^2020夏季岡山県高等学校野球大会/,
 });
+
+/**
+ * ★★★**岡山の「地区予選」だけを連盟から足す**（2026-09-04）。
+ *
+ * ------------------------------------------------------------------
+ * ★★ なぜ主・副の2本立て（`hsbFillAdapter`）では足りないのか
+ *
+ *   あちらは**「主が1試合も持っていない 年×季節」**だけを足す仕組み。
+ *   岡山は**主（HSB flash）が本大会を全部の年で持っている**ので、
+ *   **同じ年・同じ季節にある地区予選が永久に入らない。**
+ *   ★**2026-09-02 に HSB flash へ切り替えたとき、地区予選 268試合を失った**のはこれ。
+ *
+ * ------------------------------------------------------------------
+ * ★★ 仕組み ── 「主に無い大会」だけを名前で選んで足す
+ *
+ *   ★**連盟のアダプタ（`okayama`。`RETIRED_ADAPTERS` にあるもの）をそのまま呼び、
+ *     大会名に `地区予選` が入っているものだけ返す。**
+ *   ★**本大会は1試合も返さない。** これが無いと**同じ試合が2つ入る** ——
+ *     連盟と HSB flash は校名の書き方が違う（`倉敷天城` / `倉敷天城高校`）ので、
+ *     **重複を落とす鍵（日付＋校名）を通り抜ける**（実測で第108回が 54 → 97試合になった）。
+ *   ★★**大会名も両者で違う**（連盟`令和8年度 春季岡山県高等学校野球大会` /
+ *     HSB`2026年 春季中国地区高校野球 岡山県大会`）ので、
+ *     **本大会を混ぜると同じ大会が2つ並ぶ。** 地区予選の名前は主と重ならない。
+ *   ★**県の出典表示は主（HSB flash）のまま**にし、
+ *     **足した試合には連盟の `source` を付ける**（`hsbFillAdapter` と同じ形）。
+ *
+ * ★**`sectionCache` は必ず新しく持つこと**（`okayama` と共有すると取得が県をまたぐ）。
+ */
+const okayamaTrials = {
+  ...okayama,
+  // ★県の出典は主のまま。足したぶんは試合ごとの `source` で示す
+  name: okayamaHsb.name,
+  siteUrl: okayamaHsb.siteUrl,
+  /*
+    ★★★**3季とも見に行くこと。** 地区予選があるのは春季と秋季だけだが、
+    **書き出しは季節ごと**なので、**見に行かなかった季節は生成物から丸ごと消える**
+    （夏を外したら**主が取っていた446試合が消えた**）。
+    ★**0件のときは前の内容が残る**（季節ごとの歯止め）。
+    ★**`addsOnly` を立てて、そこで ⚠️ ではなく ℹ️ を出す**（夏は毎回0件なのが普通）。
+  */
+  addsOnly: "この出典は地区予選だけを足す",
+  sectionCache: new Map(),
+  async collect(ctx) {
+    const games = await okayama.collect.call(this, ctx);
+    const source = { name: okayama.name, url: okayama.siteUrl };
+    return games
+      .filter((g) => /地区予選/.test(g.tournament ?? ""))
+      .map((g) => ({ ...g, source: { ...source } }));
+  },
+};
 
 const mieHsb = hsbAdapter({
   slug: "mie",
@@ -16934,6 +17029,8 @@ const ADAPTERS = [
   chibaHsb,
   shigaHsb,
   okayamaHsb,
+  // ★**地区予選だけを連盟から足す**（`okayamaTrials` の説明を読むこと）。**必ず主のうしろ**
+  okayamaTrials,
   mieHsb,
   tokushimaHsb,
   // ★「スロット番号の行が無い」という記録が誤りだった（okinawa の説明を読むこと）
@@ -18071,10 +18168,22 @@ async function main() {
       );
       if (seasonGames.length === 0) {
         if (before.length) {
-          console.log(
-            `  ⚠️ ${season}: 前は ${before.length} 試合あったのに1試合も取れなかった。` +
-              `前の内容を残す（出典側の変更なら、直すまで古いままになる）`,
-          );
+          /*
+            ★★**「特定の大会だけを足す」副のアダプタは、0件が普通の季節がある**
+            （2026-09-04。`okayamaTrials` は地区予選だけを足すので**夏は必ず0件**）。
+            ★**そこに ⚠️ を出すと、毎回の実行で必ず1本鳴るので本物の異常が埋もれる。**
+            ★★**季節を減らして黙らせてはいけない** —— **書き出しは季節ごと**なので、
+            **見に行かなかった季節は生成物から丸ごと消える**（実際に夏446試合が消えた）。
+            **3季とも見に行って、0件のときに前の内容を残すのが正しい。**
+          */
+          if (adapter.addsOnly) {
+            console.log(`  ℹ️ ${season}: ${adapter.addsOnly}（今回は0件）。前の内容を残す`);
+          } else {
+            console.log(
+              `  ⚠️ ${season}: 前は ${before.length} 試合あったのに1試合も取れなかった。` +
+                `前の内容を残す（出典側の変更なら、直すまで古いままになる）`,
+            );
+          }
           seasonGames.push(...before);
         }
       } else if (before.length) {

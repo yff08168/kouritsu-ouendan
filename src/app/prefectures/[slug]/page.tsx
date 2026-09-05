@@ -9,6 +9,7 @@ import {
   MapPin,
   MessageSquareHeart,
   Newspaper,
+  Radio,
   School,
   Vote,
 } from "lucide-react";
@@ -347,6 +348,27 @@ export default async function PrefectureDetailPage({ params }: Props) {
         <h1 className="mt-1 text-2xl font-bold text-navy-800 sm:text-3xl">
           {prefecture.fullName}の公立高校野球
         </h1>
+
+        {/*
+          ★★**速報への入口**（2026-09-05）。**このページには速報を埋め込まない。**
+          このページは `revalidate = 300` で、Supabase の問い合わせを何本も持っている。
+          速報（60秒）を混ぜると、**Next はページの中でいちばん短い間隔を採る**ので、
+          **学校一覧や応援メッセージまで毎分作り直すことになる。**
+          ★**速報は `/live/<県>` に分けてあり、そちらだけが「いま」を出す。**
+          ★**リンクは常に出す** —— 試合の有無はこのページでは分からない
+          （分かるには全国の一覧を取りに行くことになり、ここの間隔がまた縮む）。
+        */}
+        {hasRegional && (
+          <p className="mt-3">
+            <Link
+              href={`/live/${prefecture.slug}`}
+              className="inline-flex items-center gap-1.5 rounded-full border border-accent-500/40 px-3 py-1.5 text-sm font-bold text-navy-800 hover:bg-navy-50"
+            >
+              <Radio size={14} className="text-accent-500" aria-hidden />
+              今日の試合速報
+            </Link>
+          </p>
+        )}
 
         {prefecture.description && (
           <p className="mt-3 text-sm leading-relaxed text-ink">

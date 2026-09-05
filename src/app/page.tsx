@@ -8,6 +8,7 @@ import { AdSlot } from "@/components/ads/AdSlot";
 import { LiveResultsCard } from "@/components/results/LiveResultsCard";
 import { RegionalResultsCard } from "@/components/results/RegionalResultsCard";
 import { ResultsTicker } from "@/components/results/ResultsTicker";
+import { LiveTodayCard } from "@/components/results/LiveTodayCard";
 import { SchoolCard } from "@/components/schools/SchoolCard";
 import { PrefectureMap } from "@/components/schools/PrefectureMap";
 import { PrefectureMapGuide } from "@/components/schools/PrefectureMapGuide";
@@ -17,6 +18,7 @@ import { FeatureCard } from "@/components/features/FeatureCard";
 import { LIVE_RESULTS } from "@/lib/data/live-results";
 import { REGIONAL_PICKUPS } from "@/lib/data/regional-pickup";
 import { pickResultsSlot } from "@/lib/results-slot";
+import { fetchLiveDistricts, liveToday as pickLiveToday } from "@/lib/live/hsb";
 import { spotlightTitle } from "@/lib/regional-results";
 import { statusBySlug } from "@/lib/live-results";
 import {
@@ -34,7 +36,7 @@ import {
 export const revalidate = 600;
 
 export default async function HomePage() {
-  const [phenomena, prefectureCounts, features, koshien] = await Promise.all([
+  const [phenomena, prefectureCounts, features, koshien, live] = await Promise.all([
     /*
       ★**公立旋風は「枠に入る最大数」をランダムに出す**（2026-08-24）。
       件数の根拠は `getRandomPhenomena` の説明にある（実測で4件）。
@@ -43,7 +45,14 @@ export default async function HomePage() {
     getSchoolCountByPrefecture(),
     getLatestFeatures(4),
     getKoshienDataset(),
+    /*
+      ★★**速報中の県**（2026-09-05）。**1リクエストで47県ぶんの状態が取れる**
+      （`hsbflash.jp/top` の9.6KB）。**県ごとに叩かない。**
+      ★**取れなくてもトップは出す**（カードが消えるだけ）。
+    */
+    fetchLiveDistricts().catch(() => []),
   ]);
+  const liveToday = pickLiveToday(live);
 
   /*
     「今夏の甲子園に出場している公立校」。
@@ -144,6 +153,19 @@ export default async function HomePage() {
       <div className="mt-4 sm:mt-5">
         <ResultsTicker pickups={REGIONAL_PICKUPS} />
       </div>
+
+      {/*
+        ★★★**速報中の都道府県**（2026-09-05。運営者の提案）。
+        **下の結果カードとは別物** —— あちらは生成物（1日2回）、こちらは**いま**。
+        ★**電光掲示板のすぐ下に置く。** 押して県の速報へ入る導線なので、
+        **結果カードより上**でないと、いま動いている試合に辿り着けない。
+        ★**試合の無い日はカードごと消える**（`LiveTodayCard` が null を返す）。
+      */}
+      {liveToday.length > 0 && (
+        <Container className="mt-4 sm:mt-5">
+          <LiveTodayCard districts={liveToday} />
+        </Container>
+      )}
 
       <Container className="mt-4 sm:mt-5">
         {/*

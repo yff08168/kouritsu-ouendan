@@ -15548,7 +15548,15 @@ const HSB_BASE = {
     if (!pasts) return [];
     const links = [...pasts.matchAll(/<a[^>]+href="(\/past\/[^"]+)"[^>]*>([\s\S]*?)<\/a>/g)]
       .map((m) => ({ url: base + m[1], title: normalize(plain(m[2])) }))
-      .filter((l) => this.seasonOf(l.title) === season);
+      .filter((l) => this.seasonOf(l.title) === season)
+      /*
+        ★★★**1つのホストに2地区ぶんの大会が入っていることがある**（2026-09-05）。
+        **北海道と東京は甲子園の区分で2つに割れる**が、出典のホストは1つで、
+        `第107回…選手権 北北海道大会` と `… 南北海道大会` が同じ一覧に並ぶ。
+        ★**`keepTitle` を渡した県は、自分の地区の大会だけを採る。**
+        ★**渡さない県は今までどおり全部**（既存45県は1バイトも変わらない）。
+      */
+      .filter((l) => !this.keepTitle || this.keepTitle.test(l.title));
     /*
       ★★**いちばん新しい1件しか見ないこと**（2026-08-21 に直した）。
       検算で落ちたときに次（＝1年前）を試すと、**古い大会が「今の季節」として出る。**
@@ -15869,7 +15877,7 @@ const HSB_BASE = {
  * **1県目の索引を2県目が使ってしまう**（同じURLに見えないので実害は出ないが、
  * 取得の使い回しが県をまたぐのは筋が悪い）。
  */
-function hsbAdapter({ slug, district, host, summer2020 }) {
+function hsbAdapter({ slug, district, host, summer2020, keepTitle, seasons }) {
   const base = `https://${host}.hsbflash.jp`;
   return {
     ...HSB_BASE,
@@ -15877,8 +15885,15 @@ function hsbAdapter({ slug, district, host, summer2020 }) {
     district,
     siteUrl: `${base}/`,
     base,
-    seasons: { spring: `${base}/`, summer: `${base}/`, autumn: `${base}/` },
+    /*
+      ★**季節を絞れる**（2026-09-05。北北海道・南北海道・東東京・西東京）。
+      **この4地区は夏にしか存在しない** —— 春季・秋季は「北海道」「東京都」で1つの大会で、
+      **どちらの地区のものでもない。**「片方に入れる」も「両方に入れる」も嘘になるので取らない。
+    */
+    seasons: seasons ?? { spring: `${base}/`, summer: `${base}/`, autumn: `${base}/` },
     summer2020,
+    /** ★**自分の地区の大会だけを採る**（1つのホストに2地区ぶん並ぶ県で使う） */
+    keepTitle,
     _pages: new Map(),
   };
 }
@@ -16119,6 +16134,95 @@ const okayamaHsb = hsbAdapter({
   district: "岡山",
   host: "okayama",
   summer2020: /^2020夏季岡山県高等学校野球大会/,
+});
+
+/*
+  ★★★**2026-09-05 に運営者の判断で足した6県**（それまで外していた）。
+
+  ★**外していたのは「連盟が自分のサイトで転載を断っている」から**で、
+  **出典（HSB flash）の規約が理由ではない。** あちらの掲示は47県とも同じ1文
+  （`記事、写真の無断転載を禁じます`）で、県ごとの出し分けは無く、`robots.txt` も空。
+  ★**各ページに「連盟の公式ページではありません」と書いてある独立した媒体**である。
+  ★**取るのは得点・校名・回・球場という事実だけ**（記事も写真も取らない）。
+  ★★**判断の経緯は README の「2026-09-05」の節にある。戻すときもそこを読むこと。**
+*/
+const aomoriHsb = hsbAdapter({
+  slug: "aomori",
+  district: "青森",
+  host: "aomori",
+  summer2020: /^2020年青森県高等学校野球大会/,
+});
+
+const miyagiHsb = hsbAdapter({
+  slug: "miyagi",
+  district: "宮城",
+  host: "miyagi",
+  summer2020: /^2020年宮城県高等学校野球大会/,
+});
+
+const akitaHsb = hsbAdapter({
+  slug: "akita",
+  district: "秋田",
+  host: "akita",
+  summer2020: /^2020年秋田県高等学校野球大会/,
+});
+
+const tottoriHsb = hsbAdapter({
+  slug: "tottori",
+  district: "鳥取",
+  host: "tottori",
+  summer2020: /^2020年鳥取県高等学校野球大会/,
+});
+
+/*
+  ★★★**北海道と東京は「1つのホストに2地区」**（2026-09-05）。
+
+  出典の一覧はこうなっている（実際に開いて確かめた）:
+
+      春季北海道高校野球大会 / 秋季北海道高等学校野球大会          ← 県で1つ
+      第107回全国高等学校野球選手権 南北海道大会 / 北北海道大会     ← 夏だけ2つ
+      春季東京都高等学校野球大会 / 秋季東京都高等学校野球大会
+      第107回…選手権大会 西東京大会 / 東東京大会
+
+  ★★**このサイトの地区は甲子園の大会区分**なので、
+  **夏の大会だけが北北海道・南北海道・東東京・西東京に対応する。**
+  ★★★**春季・秋季（全道大会・都大会）は取らない** ——
+  **どちらの地区のものでもない。**「片方に入れる」は嘘になり、
+  「両方に入れる」と**同じ試合を2度数える**（合計・勝ち上がり・ランキングが狂う）。
+  ★**入れるなら「北海道」「東京」という地区をサイトに作るところから**。運営者の判断。
+*/
+const summerOnly = (host) => ({ summer: `https://${host}.hsbflash.jp/` });
+
+const kitaHokkaidoHsb = hsbAdapter({
+  slug: "kita-hokkaido",
+  district: "北北海道",
+  host: "hokkaido",
+  keepTitle: /北北海道/,
+  seasons: summerOnly("hokkaido"),
+});
+
+const minamiHokkaidoHsb = hsbAdapter({
+  slug: "minami-hokkaido",
+  district: "南北海道",
+  host: "hokkaido",
+  keepTitle: /南北海道/,
+  seasons: summerOnly("hokkaido"),
+});
+
+const higashiTokyoHsb = hsbAdapter({
+  slug: "higashi-tokyo",
+  district: "東東京",
+  host: "tokyo",
+  keepTitle: /東東京/,
+  seasons: summerOnly("tokyo"),
+});
+
+const nishiTokyoHsb = hsbAdapter({
+  slug: "nishi-tokyo",
+  district: "西東京",
+  host: "tokyo",
+  keepTitle: /西東京/,
+  seasons: summerOnly("tokyo"),
 });
 
 /**
@@ -17093,6 +17197,18 @@ const ADAPTERS = [
   */
   toyama,
   toyamaHsbFill,
+  /*
+    ★★★**2026-09-05 に足した6県**（それまで規約で外していた。上の説明を読むこと）。
+    ★**北海道と東京は夏だけ**（春季・秋季は地区に振り分けられない）。
+  */
+  aomoriHsb,
+  miyagiHsb,
+  akitaHsb,
+  tottoriHsb,
+  kitaHokkaidoHsb,
+  minamiHokkaidoHsb,
+  higashiTokyoHsb,
+  nishiTokyoHsb,
 ];
 
 /**
@@ -17836,9 +17952,15 @@ function writeCoverage() {
    * `src/lib/constants.ts` に同じ並びがあるが、**このスクリプトは .mjs なので
    * TypeScript を import できない**（`labelCandidates` と同じ事情）。
    */
+  /*
+    ★★**北海道と東京は2地区ずつ**（2026-09-05 その2 に直した）。
+    このサイトの地区は**甲子園の大会区分49件**なので、
+    **「北海道」「東京」という地区は存在しない** ——
+    そのまま並べていたため、**中身が入っているのに「収録していない」と出ていた。**
+  */
   const ALL_DISTRICTS = [
-    "北海道", "青森", "岩手", "宮城", "秋田", "山形", "福島",
-    "茨城", "栃木", "群馬", "埼玉", "千葉", "東京", "神奈川",
+    "北北海道", "南北海道", "青森", "岩手", "宮城", "秋田", "山形", "福島",
+    "茨城", "栃木", "群馬", "埼玉", "千葉", "東東京", "西東京", "神奈川",
     "新潟", "富山", "石川", "福井", "山梨", "長野", "岐阜", "静岡", "愛知",
     "三重", "滋賀", "京都", "大阪", "兵庫", "奈良", "和歌山",
     "鳥取", "島根", "岡山", "広島", "山口",
@@ -19129,7 +19251,13 @@ async function main() {
     known
       .map(
         (a) =>
-          `  ${a.slug}: () => import("./${a.slug}.json").then((m) => m.default as RegionalDistrict),\n`,
+          /*
+            ★★**鍵は必ず引用符でくくること**（2026-09-05）。
+            **ハイフンを含む slug がある**（`kita-hokkaido` `higashi-tokyo`）ので、
+            **裸で書くと TypeScript が構文エラーになる**（実際になった）。
+            ★**41県のときは全部が識別子として通る名前だったので表に出ていなかった。**
+          */
+          `  "${a.slug}": () => import("./${a.slug}.json").then((m) => m.default as RegionalDistrict),\n`,
       )
       .join("") +
     `};\n`;

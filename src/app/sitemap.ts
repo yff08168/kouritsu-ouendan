@@ -6,6 +6,7 @@ import { getAllPhenomenonSlugs } from "@/lib/queries/phenomena";
 import { getAllFeatureSlugs } from "@/lib/queries/features";
 import { getRegionalDistrict } from "@/lib/regional-results";
 import { listTournaments } from "@/lib/regional-tournaments";
+import { livePrefectures } from "@/lib/live/hsb";
 import {
   listJinguTournaments,
   listKoshienTournaments,
@@ -83,6 +84,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url("/jingu"), lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     // 地方大会の進捗。大会中は毎日変わる
     { url: url("/regional"), lastModified: now, changeFrequency: "daily", priority: 0.8 },
+    /*
+      ★★**試合速報**（2026-09-05 追加）。**中身は毎日入れ替わるがURLは固定**なので、
+      `changeFrequency: "daily"` で載せる（新聞の速報面と同じ扱い）。
+      ★★**試合ごとのページ（`/live/<県>/<token>`）は載せない** ——
+      **トークンに期限が入っており、URLが数時間で無効になる。** あちらは `noindex`。
+    */
+    { url: url("/live"), lastModified: now, changeFrequency: "daily", priority: 0.9 },
+    ...livePrefectures().map((p) => ({
+      url: url(`/live/${p.slug}`),
+      lastModified: now,
+      changeFrequency: "daily" as const,
+      priority: 0.8,
+    })),
     // ★**年別アーカイブ**（2026-08-29 追加）。年ページは下でまとめて足す
     { url: url("/archive"), lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: url("/about"), lastModified: now, changeFrequency: "yearly", priority: 0.3 },

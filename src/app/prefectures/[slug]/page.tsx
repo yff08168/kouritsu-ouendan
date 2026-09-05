@@ -32,6 +32,7 @@ import { getNewsList } from "@/lib/queries/news";
 import { getPhenomenaByPrefecture } from "@/lib/queries/phenomena";
 import { getActivePolls, getCheerMessages } from "@/lib/queries/community";
 import { PREFECTURES } from "@/lib/constants";
+import { liveSlugOf } from "@/lib/live/hsb";
 import { getRegionalDistrict, latestSeasonGames } from "@/lib/regional-results";
 import { listTournaments, tournamentDisplayName } from "@/lib/regional-tournaments";
 import { TournamentLinks } from "@/components/results/TournamentLinks";
@@ -357,18 +358,19 @@ export default async function PrefectureDetailPage({ params }: Props) {
           ★**速報は `/live/<県>` に分けてあり、そちらだけが「いま」を出す。**
           ★**リンクは常に出す** —— 試合の有無はこのページでは分からない
           （分かるには全国の一覧を取りに行くことになり、ここの間隔がまた縮む）。
+          ★★**49地区すべてに出す**（2026-09-05 に6県の除外をやめた）。
+          **蓄積データ（`hasRegional`）の有無とは別**で、速報は47県とも出る。
+          ★**北北海道などは `liveSlugOf` で県に寄せる**（通さないと404）。
         */}
-        {hasRegional && (
-          <p className="mt-3">
-            <Link
-              href={`/live/${prefecture.slug}`}
-              className="inline-flex items-center gap-1.5 rounded-full border border-accent-500/40 px-3 py-1.5 text-sm font-bold text-navy-800 hover:bg-navy-50"
-            >
-              <Radio size={14} className="text-accent-500" aria-hidden />
-              今日の試合速報
-            </Link>
-          </p>
-        )}
+        <p className="mt-3">
+          <Link
+            href={`/live/${liveSlugOf(prefecture.slug)}`}
+            className="inline-flex items-center gap-1.5 rounded-full border border-accent-500/40 px-3 py-1.5 text-sm font-bold text-navy-800 hover:bg-navy-50"
+          >
+            <Radio size={14} className="text-accent-500" aria-hidden />
+            今日の試合速報
+          </Link>
+        </p>
 
         {prefecture.description && (
           <p className="mt-3 text-sm leading-relaxed text-ink">

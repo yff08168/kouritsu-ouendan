@@ -7,7 +7,7 @@ import { Container } from "@/components/layout/Container";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { LiveRefresh } from "@/components/results/LiveRefresh";
 import { PREFECTURES } from "@/lib/constants";
-import { LIVE_SOURCE, fetchLiveBoxScore } from "@/lib/live/hsb";
+import { LIVE_SOURCE, fetchLiveBoxScore, livePrefectures } from "@/lib/live/hsb";
 
 /** ★県の速報板と同じ間隔。**出典を叩く間隔は `hsb.ts` が持っている** */
 export const revalidate = 60;
@@ -22,7 +22,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string; token: string }>;
 }): Promise<Metadata> {
   const { slug, token } = await params;
-  const pref = PREFECTURES.find((p) => p.slug === slug);
+  const pref = livePrefectures().find((p) => p.slug === slug);
   const box = await fetchLiveBoxScore(slug, token);
   const teams = box ? `${box.teams[0].name} - ${box.teams[1].name}` : "試合";
   return {
@@ -39,7 +39,7 @@ export default async function LiveGamePage({
   params: Promise<{ slug: string; token: string }>;
 }) {
   const { slug, token } = await params;
-  const pref = PREFECTURES.find((p) => p.slug === slug);
+  const pref = livePrefectures().find((p) => p.slug === slug);
   if (!pref) notFound();
 
   const box = await fetchLiveBoxScore(slug, token);
@@ -49,7 +49,11 @@ export default async function LiveGamePage({
       <Breadcrumb
         items={[
           // ★ Breadcrumb が先頭の「ホーム」を自分で出すので、ここには入れない
-          { label: pref.name, href: `/prefectures/${slug}` },
+          // ★ hokkaido / tokyo には県のページが無いので、あるときだけリンクする
+          {
+            label: pref.name,
+            ...(PREFECTURES.some((p) => p.slug === slug) ? { href: `/prefectures/${slug}` } : {}),
+          },
           { label: "試合速報", href: `/live/${slug}` },
           { label: box ? `${box.teams[0].name} - ${box.teams[1].name}` : "試合" },
         ]}

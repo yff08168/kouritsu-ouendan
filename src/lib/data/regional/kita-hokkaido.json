@@ -1,0 +1,2078 @@
+{
+  "slug": "kita-hokkaido",
+  "district": "北北海道",
+  "sourceName": "HSB flash",
+  "sourceUrl": "https://hokkaido.hsbflash.jp/",
+  "games": [
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": "旭川市スタルヒン球場",
+      "teams": [
+        {
+          "display": "旭川明成",
+          "score": 4,
+          "won": true,
+          "name": "旭川明成",
+          "slug": null
+        },
+        {
+          "display": "釧路工業",
+          "score": 3,
+          "won": false,
+          "name": "釧路工業高校",
+          "slug": "kushirokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": "旭川市スタルヒン球場",
+      "teams": [
+        {
+          "display": "武修館",
+          "score": 3,
+          "won": true,
+          "name": "武修館",
+          "slug": null
+        },
+        {
+          "display": "網走南ヶ丘",
+          "score": 0,
+          "won": false,
+          "name": "網走南ケ丘高校",
+          "slug": "abashiriminamigaoka"
+        }
+      ]
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": "旭川市スタルヒン球場",
+      "teams": [
+        {
+          "display": "帯広農業",
+          "score": 1,
+          "won": false,
+          "name": "帯広農業高校",
+          "slug": "obihironogyo"
+        },
+        {
+          "display": "クラーク",
+          "score": 8,
+          "won": true,
+          "name": "クラーク",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": "旭川市スタルヒン球場",
+      "teams": [
+        {
+          "display": "滝川",
+          "score": 1,
+          "won": false,
+          "name": "滝川",
+          "slug": null
+        },
+        {
+          "display": "旭川龍谷",
+          "score": 6,
+          "won": true,
+          "name": "旭川龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-07-16",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": "旭川市スタルヒン球場",
+      "teams": [
+        {
+          "display": "旭川明成",
+          "score": 0,
+          "won": false,
+          "name": "旭川明成",
+          "slug": null
+        },
+        {
+          "display": "武修館",
+          "score": 2,
+          "won": true,
+          "name": "武修館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-07-16",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": "旭川市スタルヒン球場",
+      "teams": [
+        {
+          "display": "クラーク",
+          "score": 11,
+          "won": true,
+          "name": "クラーク",
+          "slug": null
+        },
+        {
+          "display": "旭川龍谷",
+          "score": 2,
+          "won": false,
+          "name": "旭川龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-07-18",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 北北海道大会",
+      "round": "準決勝",
+      "venue": "旭川市スタルヒン球場",
+      "teams": [
+        {
+          "display": "武修館",
+          "score": 4,
+          "won": false,
+          "name": "武修館",
+          "slug": null
+        },
+        {
+          "display": "クラーク",
+          "score": 5,
+          "won": true,
+          "name": "クラーク",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-07-13",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": "旭川市スタルヒン球場",
+      "teams": [
+        {
+          "display": "旭川大学",
+          "score": 4,
+          "won": true,
+          "name": "旭川大学",
+          "slug": null
+        },
+        {
+          "display": "釧路湖陵",
+          "score": 0,
+          "won": false,
+          "name": "釧路湖陵高校",
+          "slug": "kushirokoryo"
+        }
+      ]
+    },
+    {
+      "date": "2019-07-13",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": "旭川市スタルヒン球場",
+      "teams": [
+        {
+          "display": "帯広北",
+          "score": 3,
+          "won": true,
+          "name": "帯広北",
+          "slug": null
+        },
+        {
+          "display": "北見北斗",
+          "score": 1,
+          "won": false,
+          "name": "北見北斗高校",
+          "slug": "kitamihokuto"
+        }
+      ]
+    },
+    {
+      "date": "2019-07-13",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": "旭川市スタルヒン球場",
+      "teams": [
+        {
+          "display": "旭川北",
+          "score": 3,
+          "won": true,
+          "name": "旭川北高校",
+          "slug": "asahikawakita"
+        },
+        {
+          "display": "稚内大谷",
+          "score": 0,
+          "won": false,
+          "name": "稚内大谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-07-14",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": "旭川市スタルヒン球場",
+      "teams": [
+        {
+          "display": "帯広大谷",
+          "score": 2,
+          "won": false,
+          "name": "帯広大谷",
+          "slug": null
+        },
+        {
+          "display": "滝川西",
+          "score": 4,
+          "won": true,
+          "name": "滝川西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-07-15",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": "旭川市スタルヒン球場",
+      "teams": [
+        {
+          "display": "旭川大学",
+          "score": 3,
+          "won": true,
+          "name": "旭川大学",
+          "slug": null
+        },
+        {
+          "display": "帯広北",
+          "score": 2,
+          "won": false,
+          "name": "帯広北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-07-16",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": "旭川市スタルヒン球場",
+      "teams": [
+        {
+          "display": "旭川北",
+          "score": 7,
+          "won": true,
+          "name": "旭川北高校",
+          "slug": "asahikawakita"
+        },
+        {
+          "display": "滝川西",
+          "score": 2,
+          "won": false,
+          "name": "滝川西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-07-18",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 北北海道大会",
+      "round": "準決勝",
+      "venue": "旭川市スタルヒン球場",
+      "teams": [
+        {
+          "display": "旭川大学",
+          "score": 10,
+          "won": true,
+          "name": "旭川大学",
+          "slug": null
+        },
+        {
+          "display": "旭川北",
+          "score": 1,
+          "won": false,
+          "name": "旭川北高校",
+          "slug": "asahikawakita"
+        }
+      ]
+    },
+    {
+      "date": "2019-07-20",
+      "season": "summer",
+      "tournament": "第101回全国高等学校野球選手権 北北海道大会",
+      "round": "決勝",
+      "venue": "旭川市スタルヒン球場",
+      "teams": [
+        {
+          "display": "旭川大学",
+          "score": 9,
+          "won": true,
+          "name": "旭川大学",
+          "slug": null
+        },
+        {
+          "display": "クラーク",
+          "score": 0,
+          "won": false,
+          "name": "クラーク",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "稚内大谷",
+          "score": 10,
+          "won": true,
+          "name": "稚内大谷",
+          "slug": null
+        },
+        {
+          "display": "別海",
+          "score": 3,
+          "won": false,
+          "name": "別海高校",
+          "slug": "betsukai"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帯広大谷",
+          "score": 12,
+          "won": true,
+          "name": "帯広大谷",
+          "slug": null
+        },
+        {
+          "display": "旭川実業",
+          "score": 10,
+          "won": false,
+          "name": "旭川実業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滝川",
+          "score": 9,
+          "won": true,
+          "name": "滝川",
+          "slug": null
+        },
+        {
+          "display": "中標津",
+          "score": 8,
+          "won": false,
+          "name": "中標津高校",
+          "slug": "nakashibetsu"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川大学",
+          "score": 10,
+          "won": true,
+          "name": "旭川大学",
+          "slug": null
+        },
+        {
+          "display": "網走桂陽",
+          "score": 1,
+          "won": false,
+          "name": "網走桂陽高校",
+          "slug": "abashirikeiyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "稚内大谷",
+          "score": 1,
+          "won": false,
+          "name": "稚内大谷",
+          "slug": null
+        },
+        {
+          "display": "帯広大谷",
+          "score": 14,
+          "won": true,
+          "name": "帯広大谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滝川",
+          "score": 1,
+          "won": false,
+          "name": "滝川",
+          "slug": null
+        },
+        {
+          "display": "旭川大学",
+          "score": 9,
+          "won": true,
+          "name": "旭川大学",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-24",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 北北海道大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帯広大谷",
+          "score": 12,
+          "won": true,
+          "name": "帯広大谷",
+          "slug": null
+        },
+        {
+          "display": "旭川大学",
+          "score": 10,
+          "won": false,
+          "name": "旭川大学",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-15",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川東",
+          "score": 5,
+          "won": false,
+          "name": "旭川東高校",
+          "slug": "asahikawahigashi"
+        },
+        {
+          "display": "釧路北陽",
+          "score": 12,
+          "won": true,
+          "name": "釧路北陽高校",
+          "slug": "kushirohokuyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-15",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帯広農業",
+          "score": 4,
+          "won": true,
+          "name": "帯広農業高校",
+          "slug": "obihironogyo"
+        },
+        {
+          "display": "帯広北",
+          "score": 3,
+          "won": false,
+          "name": "帯広北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-15",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北見柏陽",
+          "score": 6,
+          "won": false,
+          "name": "北見柏陽高校",
+          "slug": "kitamihakuyo"
+        },
+        {
+          "display": "旭川工業",
+          "score": 7,
+          "won": true,
+          "name": "旭川工業高校",
+          "slug": "asahikawakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-16",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "クラーク国際",
+          "score": 4,
+          "won": false,
+          "name": "クラーク国際",
+          "slug": null
+        },
+        {
+          "display": "滝川西",
+          "score": 8,
+          "won": true,
+          "name": "滝川西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-17",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "釧路北陽",
+          "score": 3,
+          "won": false,
+          "name": "釧路北陽高校",
+          "slug": "kushirohokuyo"
+        },
+        {
+          "display": "帯広農業",
+          "score": 6,
+          "won": true,
+          "name": "帯広農業高校",
+          "slug": "obihironogyo"
+        }
+      ]
+    },
+    {
+      "date": "2021-07-18",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川工業",
+          "score": 2,
+          "won": false,
+          "name": "旭川工業高校",
+          "slug": "asahikawakogyo"
+        },
+        {
+          "display": "滝川西",
+          "score": 5,
+          "won": true,
+          "name": "滝川西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-24",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 北北海道大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帯広農業",
+          "score": 14,
+          "won": true,
+          "name": "帯広農業高校",
+          "slug": "obihironogyo"
+        },
+        {
+          "display": "滝川西",
+          "score": 4,
+          "won": false,
+          "name": "滝川西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2021-07-25",
+      "season": "summer",
+      "tournament": "第103回全国高等学校野球選手権 北北海道大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帯広農業",
+          "score": 19,
+          "won": true,
+          "name": "帯広農業高校",
+          "slug": "obihironogyo"
+        },
+        {
+          "display": "帯広大谷",
+          "score": 2,
+          "won": false,
+          "name": "帯広大谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-15",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川東",
+          "score": 4,
+          "won": true,
+          "name": "旭川東高校",
+          "slug": "asahikawahigashi"
+        },
+        {
+          "display": "旭川明成",
+          "score": 1,
+          "won": false,
+          "name": "旭川明成",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-15",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "稚内大谷",
+          "score": 5,
+          "won": false,
+          "name": "稚内大谷",
+          "slug": null
+        },
+        {
+          "display": "帯広大谷",
+          "score": 9,
+          "won": true,
+          "name": "帯広大谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-16",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滝川西",
+          "score": 3,
+          "won": true,
+          "name": "滝川西",
+          "slug": null
+        },
+        {
+          "display": "網走南ヶ丘",
+          "score": 1,
+          "won": false,
+          "name": "網走南ケ丘高校",
+          "slug": "abashiriminamigaoka"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-16",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "釧路北陽",
+          "score": 1,
+          "won": false,
+          "name": "釧路北陽高校",
+          "slug": "kushirohokuyo"
+        },
+        {
+          "display": "武修館",
+          "score": 5,
+          "won": true,
+          "name": "武修館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川東",
+          "score": 7,
+          "won": true,
+          "name": "旭川東高校",
+          "slug": "asahikawahigashi"
+        },
+        {
+          "display": "帯広大谷",
+          "score": 0,
+          "won": false,
+          "name": "帯広大谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-18",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滝川西",
+          "score": 9,
+          "won": true,
+          "name": "滝川西",
+          "slug": null
+        },
+        {
+          "display": "武修館",
+          "score": 4,
+          "won": false,
+          "name": "武修館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-23",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 北北海道大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川東",
+          "score": 7,
+          "won": true,
+          "name": "旭川東高校",
+          "slug": "asahikawahigashi"
+        },
+        {
+          "display": "滝川西",
+          "score": 5,
+          "won": false,
+          "name": "滝川西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-14",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "釧路明輝",
+          "score": 1,
+          "won": false,
+          "name": "釧路明輝高校",
+          "slug": "kushiromeiki"
+        },
+        {
+          "display": "クラーク記念国際",
+          "score": 8,
+          "won": true,
+          "name": "クラーク記念国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-14",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北見緑陵",
+          "score": 5,
+          "won": false,
+          "name": "北見緑陵高校",
+          "slug": "kitamiryokuryo"
+        },
+        {
+          "display": "岩見沢東",
+          "score": 7,
+          "won": true,
+          "name": "岩見沢東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-14",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川大学",
+          "score": 5,
+          "won": true,
+          "name": "旭川大学",
+          "slug": null
+        },
+        {
+          "display": "帯広緑陽",
+          "score": 0,
+          "won": false,
+          "name": "帯広緑陽高校",
+          "slug": "obihiroryokuyo"
+        }
+      ]
+    },
+    {
+      "date": "2022-07-15",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川龍谷",
+          "score": 1,
+          "won": false,
+          "name": "旭川龍谷",
+          "slug": null
+        },
+        {
+          "display": "白樺学園",
+          "score": 6,
+          "won": true,
+          "name": "白樺学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-16",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "クラーク記念国際",
+          "score": 5,
+          "won": true,
+          "name": "クラーク記念国際",
+          "slug": null
+        },
+        {
+          "display": "岩見沢東",
+          "score": 0,
+          "won": false,
+          "name": "岩見沢東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-17",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川大学",
+          "score": 7,
+          "won": true,
+          "name": "旭川大学",
+          "slug": null
+        },
+        {
+          "display": "白樺学園",
+          "score": 5,
+          "won": false,
+          "name": "白樺学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-23",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 北北海道大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "クラーク記念国際",
+          "score": 2,
+          "won": false,
+          "name": "クラーク記念国際",
+          "slug": null
+        },
+        {
+          "display": "旭川大学",
+          "score": 4,
+          "won": true,
+          "name": "旭川大学",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2022-07-24",
+      "season": "summer",
+      "tournament": "第104回全国高等学校野球選手権 北北海道大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川大学",
+          "score": 7,
+          "won": true,
+          "name": "旭川大学",
+          "slug": null
+        },
+        {
+          "display": "旭川東",
+          "score": 1,
+          "won": false,
+          "name": "旭川東高校",
+          "slug": "asahikawahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-15",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "釧路江南",
+          "score": 10,
+          "won": false,
+          "name": "釧路江南高校",
+          "slug": "kushirokonan"
+        },
+        {
+          "display": "釧路工業",
+          "score": 13,
+          "won": true,
+          "name": "釧路工業高校",
+          "slug": "kushirokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-15",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北見柏陽",
+          "score": 1,
+          "won": false,
+          "name": "北見柏陽高校",
+          "slug": "kitamihakuyo"
+        },
+        {
+          "display": "白樺学園",
+          "score": 14,
+          "won": true,
+          "name": "白樺学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-16",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帯広農業",
+          "score": 7,
+          "won": true,
+          "name": "帯広農業高校",
+          "slug": "obihironogyo"
+        },
+        {
+          "display": "旭川永嶺",
+          "score": 1,
+          "won": false,
+          "name": "旭川永嶺高校",
+          "slug": "asahikawaeiryo"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-16",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川実業",
+          "score": 2,
+          "won": false,
+          "name": "旭川実業",
+          "slug": null
+        },
+        {
+          "display": "クラーク記念国際",
+          "score": 5,
+          "won": true,
+          "name": "クラーク記念国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "釧路工業",
+          "score": 1,
+          "won": false,
+          "name": "釧路工業高校",
+          "slug": "kushirokogyo"
+        },
+        {
+          "display": "白樺学園",
+          "score": 3,
+          "won": true,
+          "name": "白樺学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帯広農業",
+          "score": 10,
+          "won": false,
+          "name": "帯広農業高校",
+          "slug": "obihironogyo"
+        },
+        {
+          "display": "クラーク記念国際",
+          "score": 11,
+          "won": true,
+          "name": "クラーク記念国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-22",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 北北海道大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "白樺学園",
+          "score": 5,
+          "won": false,
+          "name": "白樺学園",
+          "slug": null
+        },
+        {
+          "display": "クラーク記念国際",
+          "score": 7,
+          "won": true,
+          "name": "クラーク記念国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-14",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "足寄",
+          "score": 1,
+          "won": false,
+          "name": "足寄高校",
+          "slug": "ashoro"
+        },
+        {
+          "display": "士別翔雲",
+          "score": 8,
+          "won": true,
+          "name": "士別翔雲高校",
+          "slug": "shibetsushoun"
+        }
+      ]
+    },
+    {
+      "date": "2023-07-14",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滝川",
+          "score": 2,
+          "won": false,
+          "name": "滝川",
+          "slug": null
+        },
+        {
+          "display": "武修館",
+          "score": 3,
+          "won": true,
+          "name": "武修館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-14",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "遠軽",
+          "score": 2,
+          "won": false,
+          "name": "遠軽高校",
+          "slug": "engaru"
+        },
+        {
+          "display": "旭川明成",
+          "score": 4,
+          "won": true,
+          "name": "旭川明成",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-15",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川志峯",
+          "score": 7,
+          "won": true,
+          "name": "旭川志峯",
+          "slug": null
+        },
+        {
+          "display": "岩見沢東",
+          "score": 0,
+          "won": false,
+          "name": "岩見沢東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-16",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "士別翔雲",
+          "score": 10,
+          "won": true,
+          "name": "士別翔雲高校",
+          "slug": "shibetsushoun"
+        },
+        {
+          "display": "武修館",
+          "score": 7,
+          "won": false,
+          "name": "武修館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-17",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川明成",
+          "score": 1,
+          "won": true,
+          "name": "旭川明成",
+          "slug": null
+        },
+        {
+          "display": "旭川志峯",
+          "score": 0,
+          "won": false,
+          "name": "旭川志峯",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-22",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 北北海道大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "士別翔雲",
+          "score": 2,
+          "won": false,
+          "name": "士別翔雲高校",
+          "slug": "shibetsushoun"
+        },
+        {
+          "display": "旭川明成",
+          "score": 9,
+          "won": true,
+          "name": "旭川明成",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2023-07-23",
+      "season": "summer",
+      "tournament": "第105回全国高等学校野球選手権 北北海道大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川明成",
+          "score": 0,
+          "won": false,
+          "name": "旭川明成",
+          "slug": null
+        },
+        {
+          "display": "クラーク記念国際",
+          "score": 1,
+          "won": true,
+          "name": "クラーク記念国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-14",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "遠軽",
+          "score": 3,
+          "won": true,
+          "name": "遠軽高校",
+          "slug": "engaru"
+        },
+        {
+          "display": "滝川",
+          "score": 0,
+          "won": false,
+          "name": "滝川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-14",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "白樺学園",
+          "score": 8,
+          "won": true,
+          "name": "白樺学園",
+          "slug": null
+        },
+        {
+          "display": "別海",
+          "score": 0,
+          "won": false,
+          "name": "別海高校",
+          "slug": "betsukai"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-15",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岩見沢農業",
+          "score": 3,
+          "won": false,
+          "name": "岩見沢農業",
+          "slug": null
+        },
+        {
+          "display": "旭川志峯",
+          "score": 10,
+          "won": true,
+          "name": "旭川志峯",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-15",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帯広大谷",
+          "score": 11,
+          "won": true,
+          "name": "帯広大谷",
+          "slug": null
+        },
+        {
+          "display": "旭川東",
+          "score": 1,
+          "won": false,
+          "name": "旭川東高校",
+          "slug": "asahikawahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-16",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "遠軽",
+          "score": 1,
+          "won": false,
+          "name": "遠軽高校",
+          "slug": "engaru"
+        },
+        {
+          "display": "白樺学園",
+          "score": 3,
+          "won": true,
+          "name": "白樺学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-16",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川志峯",
+          "score": 10,
+          "won": true,
+          "name": "旭川志峯",
+          "slug": null
+        },
+        {
+          "display": "帯広大谷",
+          "score": 3,
+          "won": false,
+          "name": "帯広大谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-22",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 北北海道大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "白樺学園",
+          "score": 12,
+          "won": true,
+          "name": "白樺学園",
+          "slug": null
+        },
+        {
+          "display": "旭川志峯",
+          "score": 2,
+          "won": false,
+          "name": "旭川志峯",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-13",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帯広三条",
+          "score": 2,
+          "won": false,
+          "name": "帯広三条高校",
+          "slug": "obihirosanjo"
+        },
+        {
+          "display": "士別翔雲",
+          "score": 7,
+          "won": true,
+          "name": "士別翔雲高校",
+          "slug": "shibetsushoun"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-13",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川永嶺",
+          "score": 0,
+          "won": false,
+          "name": "旭川永嶺高校",
+          "slug": "asahikawaeiryo"
+        },
+        {
+          "display": "旭川実業",
+          "score": 11,
+          "won": true,
+          "name": "旭川実業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-13",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北見柏陽",
+          "score": 12,
+          "won": true,
+          "name": "北見柏陽高校",
+          "slug": "kitamihakuyo"
+        },
+        {
+          "display": "釧路江南",
+          "score": 1,
+          "won": false,
+          "name": "釧路江南高校",
+          "slug": "kushirokonan"
+        }
+      ]
+    },
+    {
+      "date": "2024-07-14",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "武修館",
+          "score": 1,
+          "won": false,
+          "name": "武修館",
+          "slug": null
+        },
+        {
+          "display": "クラーク記念国際",
+          "score": 6,
+          "won": true,
+          "name": "クラーク記念国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-15",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "士別翔雲",
+          "score": 4,
+          "won": false,
+          "name": "士別翔雲高校",
+          "slug": "shibetsushoun"
+        },
+        {
+          "display": "旭川実業",
+          "score": 6,
+          "won": true,
+          "name": "旭川実業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-16",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北見柏陽",
+          "score": 2,
+          "won": false,
+          "name": "北見柏陽高校",
+          "slug": "kitamihakuyo"
+        },
+        {
+          "display": "クラーク記念国際",
+          "score": 7,
+          "won": true,
+          "name": "クラーク記念国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-22",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 北北海道大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川実業",
+          "score": 1,
+          "won": false,
+          "name": "旭川実業",
+          "slug": null
+        },
+        {
+          "display": "クラーク記念国際",
+          "score": 9,
+          "won": true,
+          "name": "クラーク記念国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2024-07-23",
+      "season": "summer",
+      "tournament": "第106回全国高等学校野球選手権 北北海道大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "クラーク記念国際",
+          "score": 2,
+          "won": false,
+          "name": "クラーク記念国際",
+          "slug": null
+        },
+        {
+          "display": "白樺学園",
+          "score": 5,
+          "won": true,
+          "name": "白樺学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "中標津",
+          "score": 0,
+          "won": false,
+          "name": "中標津高校",
+          "slug": "nakashibetsu"
+        },
+        {
+          "display": "旭川志峯",
+          "score": 5,
+          "won": true,
+          "name": "旭川志峯",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滝川西",
+          "score": 8,
+          "won": false,
+          "name": "滝川西",
+          "slug": null
+        },
+        {
+          "display": "北見北斗",
+          "score": 11,
+          "won": true,
+          "name": "北見北斗高校",
+          "slug": "kitamihokuto"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-14",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帯広北",
+          "score": 3,
+          "won": false,
+          "name": "帯広北",
+          "slug": null
+        },
+        {
+          "display": "帯広大谷",
+          "score": 6,
+          "won": true,
+          "name": "帯広大谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-14",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川明成",
+          "score": 5,
+          "won": true,
+          "name": "旭川明成",
+          "slug": null
+        },
+        {
+          "display": "紋別",
+          "score": 0,
+          "won": false,
+          "name": "紋別高校",
+          "slug": "monbetsu"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-15",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川志峯",
+          "score": 9,
+          "won": true,
+          "name": "旭川志峯",
+          "slug": null
+        },
+        {
+          "display": "北見北斗",
+          "score": 1,
+          "won": false,
+          "name": "北見北斗高校",
+          "slug": "kitamihokuto"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-15",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帯広大谷",
+          "score": 13,
+          "won": true,
+          "name": "帯広大谷",
+          "slug": null
+        },
+        {
+          "display": "旭川明成",
+          "score": 10,
+          "won": false,
+          "name": "旭川明成",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-21",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 北北海道大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川志峯",
+          "score": 2,
+          "won": true,
+          "name": "旭川志峯",
+          "slug": null
+        },
+        {
+          "display": "帯広大谷",
+          "score": 1,
+          "won": false,
+          "name": "帯広大谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "士別翔雲",
+          "score": 4,
+          "won": true,
+          "name": "士別翔雲高校",
+          "slug": "shibetsushoun"
+        },
+        {
+          "display": "釧路江南",
+          "score": 1,
+          "won": false,
+          "name": "釧路江南高校",
+          "slug": "kushirokonan"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "旭川龍谷",
+          "score": 3,
+          "won": true,
+          "name": "旭川龍谷",
+          "slug": null
+        },
+        {
+          "display": "岩見沢緑陵",
+          "score": 0,
+          "won": false,
+          "name": "岩見沢緑陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-12",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "白樺学園",
+          "score": 4,
+          "won": true,
+          "name": "白樺学園",
+          "slug": null
+        },
+        {
+          "display": "旭川実業",
+          "score": 2,
+          "won": false,
+          "name": "旭川実業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-13",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 北北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "遠軽",
+          "score": 1,
+          "won": false,
+          "name": "遠軽高校",
+          "slug": "engaru"
+        },
+        {
+          "display": "クラーク記念国際",
+          "score": 2,
+          "won": true,
+          "name": "クラーク記念国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-14",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "士別翔雲",
+          "score": 5,
+          "won": true,
+          "name": "士別翔雲高校",
+          "slug": "shibetsushoun"
+        },
+        {
+          "display": "旭川龍谷",
+          "score": 4,
+          "won": false,
+          "name": "旭川龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-15",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 北北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "白樺学園",
+          "score": 4,
+          "won": true,
+          "name": "白樺学園",
+          "slug": null
+        },
+        {
+          "display": "クラーク記念国際",
+          "score": 2,
+          "won": false,
+          "name": "クラーク記念国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-21",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 北北海道大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "士別翔雲",
+          "score": 3,
+          "won": false,
+          "name": "士別翔雲高校",
+          "slug": "shibetsushoun"
+        },
+        {
+          "display": "白樺学園",
+          "score": 12,
+          "won": true,
+          "name": "白樺学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-07-22",
+      "season": "summer",
+      "tournament": "第107回全国高等学校野球選手権 北北海道大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "白樺学園",
+          "score": 3,
+          "won": false,
+          "name": "白樺学園",
+          "slug": null
+        },
+        {
+          "display": "旭川志峯",
+          "score": 4,
+          "won": true,
+          "name": "旭川志峯",
+          "slug": null
+        }
+      ]
+    }
+  ]
+}

@@ -5,12 +5,12 @@ import { Radio } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { SectionHeading } from "@/components/common/SectionHeading";
-import { PREFECTURES } from "@/lib/constants";
+import { LeadText } from "@/components/common/LeadText";
 import {
   LIVE_SOURCE,
   PHASE_LABEL,
   fetchLiveDistricts,
-  isLiveCovered,
+  livePrefectures,
   type LiveDistrict,
   type LivePhase,
 } from "@/lib/live/hsb";
@@ -19,15 +19,23 @@ import {
  * 速報の入口（全国）。
  *
  * ★★**1リクエストで作れる**（`hsbflash.jp/top` の9.6KB）。**県ごとに叩かない。**
- * ★**トップのカードは「本日試合あり」だけ**を出すが、ここは**41県すべて**を状態つきで並べる ——
+ * ★**トップのカードは「本日試合あり」だけ**を出すが、ここは**47県すべて**を状態つきで並べる ——
  * 「今日は試合が無い」ことも知りたい人がいる。
  */
 export const revalidate = 300;
 
+/**
+ * ★★**「速報」だけの見出しにしない**（2026-09-05）。
+ * 探されるのは「高校野球 速報」で、**競技名が入っていないと当たらない。**
+ * ★**47都道府県を数として出す** —— このページの値打ちは「全国から選べる」ことなので、
+ * それを題にも説明にも書く。
+ */
 export const metadata: Metadata = {
-  title: "試合速報",
+  title: "高校野球の試合速報｜47都道府県",
   description:
-    "全国の公立高校が出場する地方大会の試合を、イニングごとに出しています。都道府県を選んでください。",
+    "全国47都道府県の高校野球（春季・夏の選手権予選・秋季）の試合を、イニングごとの得点つきで出しています。" +
+    "都道府県を選ぶと、その日の全試合と経過が並びます。公立・国立の高校が出ている試合は校名を太字にしています。",
+  alternates: { canonical: "/live" },
 };
 
 /** ★**並びは「いま動いているものが上」。** 五十音でも地理でもない */
@@ -38,10 +46,12 @@ export default async function LiveIndexPage() {
   const bySlug = new Map(districts.map((d) => [d.slug, d]));
   /*
     ★**出典から取れなくても、県の一覧は出す。**
-    このサイトが収録している41地区は `PREFECTURES` 側で決まっており、
+    このサイトが速報を出す47県は `livePrefectures()` が持っており、
     **出典が止まっているかどうかとは別のこと。**
   */
-  const covered = PREFECTURES.filter((p) => isLiveCovered(p.slug));
+  const covered = livePrefectures();
+  // ★リード文に使う「今日試合がある県」（`liveToday` と同じ判定）
+  const today = districts.filter((d) => d.phase === "today");
   const groups = ORDER.map((phase) => ({
     phase,
     list: covered.filter((p) => bySlug.get(p.slug)?.phase === phase),
@@ -52,10 +62,29 @@ export default async function LiveIndexPage() {
     <Container className="py-6">
       <Breadcrumb items={[{ label: "試合速報" }]} />
 
-      <h1 className="mt-4 text-2xl font-bold">試合速報</h1>
-      <p className="mt-2 text-sm text-ink-muted">
-        地方大会の試合を、イニングごとに出しています。都道府県を選ぶと、その日の試合が並びます。
-      </p>
+      <h1 className="mt-4 text-2xl font-bold">高校野球の試合速報</h1>
+
+      {/*
+        ★★**リード文はここで組み立てる**（`live-lead.ts` は県のページ用で、こちらは全国の数）。
+        ★**数は取れた一覧から数えたものだけ。** 出典が止まっていれば数が出ないので、
+        **そのときは件数の文を出さない**（0県と書かない）。
+      */}
+      <LeadText
+        label="このページの概要"
+        className="mt-3"
+        paragraphs={[
+          `全国47都道府県の高校野球（春季・夏の選手権予選・秋季）の試合を、` +
+            `イニングごとの得点つきで出しています。都道府県を選ぶと、その日の全試合と経過が並びます。`,
+          ...(districts.length > 0
+            ? [
+                today.length > 0
+                  ? `今日は${today.length}の都道府県で試合が行われています（${today.map((p) => p.name).join("・")}）。`
+                  : `今日は試合が行われている都道府県がありません。大会が始まると、ここに県名が並びます。`,
+              ]
+            : []),
+          `公立・国立の高校が出ている試合は校名を太字にしています。試合を選ぶと、イニングごとの得点が見られます。`,
+        ]}
+      />
 
       {groups.map(({ phase, list }) => (
         <section key={phase} className="mt-5 rounded-xl border border-line bg-white p-5">
@@ -93,12 +122,13 @@ export default async function LiveIndexPage() {
       )}
 
       {/*
-        ★★**収録していない6県のことを書く。**「まだ対応していない」と読まれないように、
-        **理由まで書く**（AGENTS の「まだ対応していませんと書かない」）。
+        ★★**北海道と東京は「県」でひとまとまり**（2026-09-05）。
+        甲子園の区分では北北海道・南北海道／東東京・西東京に割れるが、
+        **割れるのは夏の予選だけ**で、出典の速報板も県で1つ。
       */}
       <p className="mt-5 text-xs text-ink-faint">
-        北海道・青森・宮城・秋田・東京・鳥取は、高校野球連盟が転載を制限しているため
-        地方大会の結果を扱っていません。
+        北海道と東京は県でひとまとめにしています。夏の大会だけ北北海道・南北海道、
+        東東京・西東京に分かれます。
       </p>
       <p className="mt-2 text-xs text-ink-faint">
         出典:{" "}

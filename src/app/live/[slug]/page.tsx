@@ -5,11 +5,13 @@ import { MapPinned } from "lucide-react";
 
 import { Container } from "@/components/layout/Container";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
+import { LeadText } from "@/components/common/LeadText";
 import { LiveBoard } from "@/components/results/LiveBoard";
 import { LiveRefresh } from "@/components/results/LiveRefresh";
 import { PREFECTURES } from "@/lib/constants";
-import { fetchLiveBoard, isLiveCovered } from "@/lib/live/hsb";
+import { fetchLiveBoard, livePrefectures } from "@/lib/live/hsb";
 import { getSchoolNameIndex } from "@/lib/queries/schools";
+import { buildLiveLead } from "@/lib/live-lead";
 
 /**
  * 県の速報ページ。
@@ -19,7 +21,7 @@ import { getSchoolNameIndex } from "@/lib/queries/schools";
  * ★**`revalidate = 60`** —— 出典を叩く間隔は `hsb.ts` の `fetch` が持っており、
  *   **試合時間帯（8〜20時）以外は30分**になる。ここはページの焼き直しの間隔。
  * ★**静的生成しない**（`generateStaticParams` を置かない）。
- *   **41県ぶんを1分ごとに焼き直すことになる。** 見られている県だけでよい。
+ *   **47県ぶんを1分ごとに焼き直すことになる。** 見られている県だけでよい。
  */
 export const revalidate = 60;
 
@@ -29,13 +31,43 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const pref = PREFECTURES.find((p) => p.slug === slug);
+  const pref = livePrefectures().find((p) => p.slug === slug);
   if (!pref) return {};
+  /*
+    ★**同じ `fetch` は1リクエストの中でまとめられる**ので、本文と2回叩くことにはならない。
+    ★★**中身から description を作る** —— 47県が同じ定型文だと、
+    **県名しか違いが無く「◯◯ 高校野球 速報」の検索で区別が付かない**
+    （県のページで 2026-08-29 に直したのと同じ話）。
+  */
+  const board = await fetchLiveBoard(slug);
+  const name = board?.name ?? pref.name;
+  const playing = board?.games.filter((g) => g.playing).length ?? 0;
+  const description = [
+    `${name}の高校野球の試合速報。`,
+    board?.tournament ? `${board.tournament}を` : "地方大会を",
+    board && board.games.length > 0
+      ? `${board.day ?? "今日"}${board.games.length}試合、イニングごとの得点つきで出しています。`
+      : "イニングごとの得点つきで出しています。",
+    playing > 0 ? `いま${playing}試合が進行中です。` : "",
+    "公立・国立の高校が出ている試合は校名を太字にしています。",
+  ].join("");
+
   return {
-    title: `${pref.name}の試合速報`,
-    description: `${pref.name}で今日行われている高校野球の試合を、イニングごとに出しています。`,
-    // ★**速報は残らない**（明日には別の中身になる）。検索結果に古い日の内容を残さない
-    robots: { index: false, follow: true },
+    /*
+      ★★**「速報」を見出しの語に入れる**（検索されるのは「◯◯ 高校野球 速報」）。
+      ★**県名 → 競技 → 速報 の順**。読んだときに何のページか分かる並びにする。
+    */
+    title: `${name}の高校野球 試合速報`,
+    description,
+    alternates: { canonical: `/live/${slug}` },
+    /*
+      ★★★**このページは検索に載せる**（2026-09-05）。
+      **URLは県ごとに固定**で、中身が毎日変わるのは新聞の速報面と同じ。
+      ★**中身が入れ替わるページを noindex にすると、
+      「◯◯ 高校野球 速報」という検索がまるごと取れない**（この機能の主な入口）。
+      ★**試合ごとのページ（`/live/<県>/<token>`）は別で、あちらは noindex のまま** ——
+      **トークンに期限が入っており、URLが数時間で無効になる。**
+    */
   };
 }
 
@@ -45,46 +77,65 @@ export default async function LivePrefecturePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const pref = PREFECTURES.find((p) => p.slug === slug);
+  /*
+    ★★**速報は県単位**（47件）。甲子園の区分で割れている4地区（北北海道など）は
+    `liveSlugOf` で `hokkaido` / `tokyo` に寄せてからここへ来る。
+  */
+  const pref = livePrefectures().find((p) => p.slug === slug);
   if (!pref) notFound();
 
-  /*
-    ★★**収録していない県は、取りに行く前にここで止める。**
-    「取れなかった」と書くと**出典の不調と読み違えられる**（直らない不具合に見える）。
-    ★**6県を収録していないのは規約の判断**で、出典の都合ではない。
-  */
-  const covered = isLiveCovered(slug);
-  const board = covered ? await fetchLiveBoard(slug) : null;
+  const board = await fetchLiveBoard(slug);
   /*
     ★**学校マスタは公立だけ。** 引けた校名に印を付けるために使う。
     ★**取れなくても速報は出す**（印が付かないだけ）。出典が生きていることのほうが大事。
   */
   const index = await getSchoolNameIndex("koshien").catch(() => null);
 
+  /*
+    ★★**`hokkaido` と `tokyo` には県のページが無い** ——
+    サイトの地区は甲子園の区分（北北海道・南北海道…）で、この2つは速報だけの単位。
+    **リンクを張れるときだけ張る**（張ると404になる）。
+  */
+  const districtHref = PREFECTURES.some((p) => p.slug === slug) ? `/prefectures/${slug}` : null;
+  // ★**夏は盤の大会名から「北北海道」などになる**（`boardName`）
+  const title = board?.name ?? pref.name;
+  /*
+    ★**公立が絡む試合の数**（リード文に使う）。
+    ★**索引が引けなかったときは null**（0と書かない。当て推量をしない）。
+  */
+  const publicCount = index
+    ? (board?.games.filter((g) => index.find(g.first) || index.find(g.third)).length ?? 0)
+    : null;
+  const lead = buildLiveLead({ board, name: title, publicCount });
+
   return (
     <Container className="py-6">
       <Breadcrumb
         items={[
           // ★ Breadcrumb が先頭の「ホーム」を自分で出すので、ここには入れない
-          { label: pref.name, href: `/prefectures/${slug}` },
+          { label: pref.name, ...(districtHref ? { href: districtHref } : {}) },
           { label: "試合速報" },
         ]}
       />
 
       <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
-        <h1 className="text-2xl font-bold">{pref.name}の試合速報</h1>
-        {/* ★収録していない県では自動更新の操作を出さない（取りに行かないので意味が無い） */}
-        {covered && <LiveRefresh />}
+        {/*
+          ★**見出しは「◯◯の高校野球 試合速報」**（2026-09-05）。
+          「◯◯の試合速報」だけだと**何の競技か書いていない** ——
+          このサイトの他のページと違い、速報は県名＋競技名で探される。
+        */}
+        <h1 className="text-2xl font-bold">{title}の高校野球 試合速報</h1>
+        <LiveRefresh />
       </div>
 
+      {/*
+        ★★**リード文**（`src/lib/live-lead.ts`）。**その日の状態で段落の構成が変わる。**
+        ★**組み立てをここに書かないこと**（規則が2か所に散る）。
+      */}
+      <LeadText paragraphs={lead} label="この画面の見かた" />
+
       <div className="mt-4">
-        {!covered ? (
-          <p className="rounded-xl border border-line bg-white p-5 text-sm text-ink-muted">
-            {pref.name}の試合結果は、このサイトでは収録していません。
-            {/* ★**理由を書く。** 「まだ対応していない」と読まれないように（AGENTS の書き方） */}
-            高校野球連盟が転載を制限しているため、地方大会の結果を扱っていない県です。
-          </p>
-        ) : board ? (
+        {board ? (
           <LiveBoard board={board} index={index} />
         ) : (
           /*
@@ -97,15 +148,17 @@ export default async function LivePrefecturePage({
         )}
       </div>
 
-      <p className="mt-4 text-sm">
-        <Link
-          href={`/prefectures/${slug}`}
-          className="inline-flex items-center gap-1 font-bold text-navy-800 underline"
-        >
-          <MapPinned size={16} aria-hidden />
-          {pref.name}のページ（過去の大会・学校一覧）
-        </Link>
-      </p>
+      {districtHref && (
+        <p className="mt-4 text-sm">
+          <Link
+            href={districtHref}
+            className="inline-flex items-center gap-1 font-bold text-navy-800 underline"
+          >
+            <MapPinned size={16} aria-hidden />
+            {pref.name}のページ（過去の大会・学校一覧）
+          </Link>
+        </p>
+      )}
     </Container>
   );
 }

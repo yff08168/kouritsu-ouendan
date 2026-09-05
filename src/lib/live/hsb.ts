@@ -36,33 +36,49 @@ import { PREFECTURES } from "@/lib/constants";
 export const LIVE_SOURCE = { name: "HSB flash", url: "https://hsbflash.jp/" } as const;
 
 /**
- * ★**規約で外している6県**（AGENTS.md）。**この一覧を短くしないこと。**
+ * ★★★**速報は「県単位」で持つ。甲子園の大会区分ではない**（2026-09-05）。
  *
- * ★★**出典のホスト名で書いてある**（`hokkaido` / `tokyo`）。
- * 出典は47都道府県ぶんなので、**何もしなければこの6県も出てしまう。**
+ * このサイトの地区マスタ（`PREFECTURES`）は**甲子園の大会区分49件**で、
+ * **北海道は北北海道・南北海道、東京は東東京・西東京に割れている。**
+ * ★**出典（HSB flash）のホストは県ごとに1つ**（`hokkaido` / `tokyo`）なので、
+ * **1対1にならない。**
+ * ★★**同じ盤を2ページに出すと読む人が混乱する**ので、
+ * **速報だけは `hokkaido` / `tokyo` の1件にまとめる。**
+ * ★**割れるのは夏の甲子園予選だけ**で、秋季・春季はどちらも県で1つの大会。
+ *
+ * ★**残る45地区は、slugがそのまま出典のホスト名になっている**（実測で確認）。
  */
-const EXCLUDED_HOSTS = new Set(["hokkaido", "aomori", "miyagi", "akita", "tokyo", "tottori"]);
+const MERGED: { slug: string; name: string }[] = [
+  { slug: "hokkaido", name: "北海道" },
+  { slug: "tokyo", name: "東京" },
+];
+
+/** 甲子園の区分で割れている地区 → 速報での県slug */
+const MERGED_OF: Record<string, string> = {
+  "kita-hokkaido": "hokkaido",
+  "minami-hokkaido": "hokkaido",
+  "higashi-tokyo": "tokyo",
+  "nishi-tokyo": "tokyo",
+};
 
 /**
- * ★★★**サイトの地区slugで書いた、速報を出さない一覧**（2026-09-05）。
+ * ★**速報を出す県の一覧**（47件）。
  *
- * **北海道と東京は甲子園の大会区分で2つに割れており**（`kita-hokkaido` など）、
- * **出典のホスト名（`hokkaido` / `tokyo`）と1対1にならない。**
- * ★**ホスト名の一覧だけで弾くと、`/live/kita-hokkaido` が素通りして
- * 「取れませんでした」（＝出典の不調）と出る** —— 本当は**収録していない地区**である。
+ * ★★★**2026-09-05 に運営者の判断で47県すべてにした。**
+ * それまでは**6県（北海道・青森・宮城・秋田・東京・鳥取）を外していた** ——
+ * **連盟が自分のサイトで転載を断っている**ためで、**出典の規約が理由ではない。**
+ * ★**HSB flash の掲示は47県とも同じ1文**（`記事、写真の無断転載を禁じます`）で、
+ * **県ごとの出し分けは無い。** `robots.txt` も空。
+ * ★**各ページに「連盟の公式ページではありません」と書いてある独立した媒体**である。
+ * ★**取るのは得点・校名・回・球場という事実だけ**（記事も写真も取らない）。
  *
- * ★**これ以外の45地区は、slugがそのまま出典のホスト名になっている**（実測で確認）。
+ * ★★**蓄積している地方大会データ（`src/lib/data/regional/`）は別の判断**で、
+ * **いまも41県のまま。** 変えるならそちらは改めて決めること。
  */
-const EXCLUDED_SLUGS = new Set([
-  "kita-hokkaido",
-  "minami-hokkaido",
-  "aomori",
-  "miyagi",
-  "akita",
-  "higashi-tokyo",
-  "nishi-tokyo",
-  "tottori",
-]);
+const LIVE_PREFECTURES: { slug: string; name: string }[] = [
+  ...PREFECTURES.filter((p) => !(p.slug in MERGED_OF)).map((p) => ({ slug: p.slug, name: p.name })),
+  ...MERGED,
+];
 
 /** 出典の `phase0〜4`。**順番が意味を持つ**ので数字のまま持たない */
 export type LivePhase = "before" | "drawn" | "running" | "today" | "done";
@@ -197,11 +213,10 @@ export async function fetchLiveDistricts(revalidate = 300): Promise<LiveDistrict
     /href="https?:\/\/([a-z]+)\.hsbflash\.jp[^"]*"[^>]*>\s*<dd class="(phase\d)">([^<]+)<\/dd>/g,
   )) {
     const [, host, phaseClass] = m;
-    if (EXCLUDED_HOSTS.has(host)) continue;
     const phase = PHASES[phaseClass];
     if (!phase) continue;
-    // ★**県名は出典の表記ではなくサイトの `PREFECTURES` から出す**（表記をそろえる）
-    const pref = PREFECTURES.find((p) => p.slug === host);
+    // ★**県名は出典の表記ではなくサイト側から出す**（表記をそろえる）
+    const pref = LIVE_PREFECTURES.find((p) => p.slug === host);
     if (!pref) continue;
     out.push({ slug: pref.slug, name: pref.name, host, phase });
   }
@@ -212,13 +227,40 @@ export async function fetchLiveDistricts(revalidate = 300): Promise<LiveDistrict
 export const liveToday = (list: LiveDistrict[]) => list.filter((d) => d.phase === "today");
 
 /**
- * ★**この県の速報を出してよいか。**
- * ★**規約で外している6県は false**（`EXCLUDED_SLUGS`。北海道・東京は2地区ずつ）。
- * **「取れなかった」ではなく「収録していない」と書き分けるために要る** ——
- * 出典の不調と混同されると、いつまでも直らない不具合に見える。
+ * ★**速報を出す県か。47県すべて true**
+ * （2026-09-05 に運営者の判断で6県の除外をやめた。上の `LIVE_PREFECTURES` を読むこと）。
+ * ★**甲子園の区分で割れている4地区は false** —— 速報は県単位なので、
+ * `kita-hokkaido` ではなく `hokkaido` を使う（`liveSlugOf` で寄せる）。
  */
-export const isLiveCovered = (slug: string) =>
-  PREFECTURES.some((p) => p.slug === slug) && !EXCLUDED_SLUGS.has(slug);
+export const isLiveCovered = (slug: string) => LIVE_PREFECTURES.some((p) => p.slug === slug);
+
+/**
+ * ★★**地区slug → 速報の県slug**（北北海道・南北海道 → `hokkaido` ほか）。
+ * ★**県のページから速報へリンクするときは必ず通すこと**（通さないと404になる）。
+ */
+export const liveSlugOf = (slug: string) => MERGED_OF[slug] ?? slug;
+
+/** ★速報を出す県の一覧（47件）。`/live` の索引が使う */
+export const livePrefectures = () => LIVE_PREFECTURES;
+
+/**
+ * ★★★**夏だけ「北北海道・南北海道」「東東京・西東京」で呼ぶ**（2026-09-05。運営者の指示）。
+ *
+ * **出典の作りがそのとおりになっている**（`/pasts` を開いて確かめた）:
+ *
+ *     春季北海道高校野球大会 / 秋季北海道高等学校野球大会        ← 県で1つ
+ *     第107回全国高等学校野球選手権 南北海道大会 / 北北海道大会   ← 夏だけ2つ
+ *     春季東京都高等学校野球大会 / 秋季東京都高等学校野球大会
+ *     第107回…選手権大会 西東京大会 / 東東京大会
+ *
+ * ★**盤に出ている大会名から決める。** 月では決めない（雨天順延で季節はずれる）。
+ * ★**当てはまらなければ県名のまま**（推測で割らない）。
+ */
+function boardName(fallback: string, tournament: string | null): string {
+  const t = tournament ?? "";
+  for (const n of ["北北海道", "南北海道", "東東京", "西東京"]) if (t.includes(n)) return n;
+  return fallback;
+}
 
 /* ------------------------------------------------------------------ */
 
@@ -236,8 +278,8 @@ export const isLiveCovered = (slug: string) =>
  * ★**未開始の試合は得点が空で、詳細のリンクも無い**（`〔&nbsp;〕`）。**0対0にしない。**
  */
 export async function fetchLiveBoard(slug: string): Promise<LiveBoard | null> {
-  const pref = PREFECTURES.find((p) => p.slug === slug);
-  if (!pref || !isLiveCovered(slug)) return null;
+  const pref = LIVE_PREFECTURES.find((p) => p.slug === slug);
+  if (!pref) return null;
   const html = await get(`https://${slug}.hsbflash.jp/`);
   if (!html) return null;
 
@@ -267,11 +309,13 @@ export async function fetchLiveBoard(slug: string): Promise<LiveBoard | null> {
       place: plain(/<td class="place"[^>]*>([\s\S]*?)<\/td>/.exec(item)?.[1] ?? "") || null,
     });
   }
+  const tournament = plain(/<p class="games_name">([\s\S]*?)<\/p>/.exec(html)?.[1] ?? "") || null;
   return {
     slug,
-    name: pref.name,
+    // ★**夏だけ「北北海道」「東東京」などになる**（`boardName` を読むこと）
+    name: boardName(pref.name, tournament),
     day: plain(/<span class="game_day">([\s\S]*?)<\/span>/.exec(html)?.[1] ?? "") || null,
-    tournament: plain(/<p class="games_name">([\s\S]*?)<\/p>/.exec(html)?.[1] ?? "") || null,
+    tournament,
     games,
   };
 }

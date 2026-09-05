@@ -70,6 +70,13 @@
 
 const num = (attr, k) => Number(new RegExp(`\\b${k}="([-\\d.]+)"`).exec(attr)?.[1]);
 
+/**
+ * ★**「誰もいない枝」の印**（2026-09-04 その4）。
+ * **無効になった試合から出てくる枝**に置く。校名と混ざらない値にしてある。
+ * ★**空（undefined）にしないこと** —— 「まだ前の試合が終わっていない枝」と見分けが付かなくなる。
+ */
+const DEAD = Symbol("dead");
+
 /** SVGの `<text>` を { cls, x, y, text } にする */
 function readTexts(html) {
   const out = [];
@@ -251,13 +258,37 @@ export function readHsbBracket(html, { district = "", blocks = false } = {}) {
     **中点のすぐそばに `不戦` の字があることを求める。**
     ★**字で拾うので、当て推量にならない。**
   */
+  /*
+    ---- 3-c. 無効試合の連結線 ----
+    ★★★**「無効」と刷ってある試合がある**（2026-09-04 その4。大阪の2021年秋。コロナ禍）。
+    **不戦勝と同じく色の分かれていない1本の縦線**だが、**意味が逆で、どちらも上がらない。**
+
+        1357.5  200  無効                  ← ★**紙が「無効」と刷っている**（枝の40ほど外側）
+        x240-240 y1331-1376 黒             ← 色の変わり目が無い縦線が1本
+        x240-300 y1353.5     黒            ← 出ていく枝も黒（**誰もいない**）
+
+    ★★**出典の「出場校別試合一覧」で確かめてある** —— この試合に出た6校はどれも
+    **この1試合しか持たず、得点も空**（`／ － ／`）。**次の試合を戦っていない。**
+    ★★**そのかわり、次の回戦が不戦勝になる**（下の DEAD の扱い）:
+
+        x300-300 y1271-1312.25  **赤**     ← 生きている側（前の回戦の勝者）
+        x300-300 y1312.25-1353.5 黒        ← ★**無効から出てきた「誰もいない枝」**
+        1316.25  295  不戦                  ← 紙が「不戦」と刷っている
+
+    ★**無効の試合は画面に出さない**（行われていないので）。**2校とも大会から消える。**
+  */
   for (const s of singles) {
     const mid = (s.lo + s.hi) / 2;
-    const mark = texts.find(
-      (t) => t.text === "不戦" && Math.abs(t.x - s.x) <= 20 && Math.abs(t.y - mid) <= 10,
-    );
-    if (!mark) continue;
-    joins.push({ x: s.x, top: s.lo, bottom: s.hi, mid, topRed: false, bottomRed: false, bye: true });
+    const near = (word, dx) =>
+      texts.find((t) => t.text === word && Math.abs(t.x - s.x) <= dx && Math.abs(t.y - mid) <= 10);
+    if (near("不戦", 20)) {
+      joins.push({ x: s.x, top: s.lo, bottom: s.hi, mid, topRed: false, bottomRed: false, bye: true });
+      continue;
+    }
+    // ★**「無効」は枝の外側（左半分なら左、右半分なら右）40ポイントほどに刷ってある**
+    if (near("無効", 60)) {
+      joins.push({ x: s.x, top: s.lo, bottom: s.hi, mid, topRed: false, bottomRed: false, voided: true });
+    }
   }
 
   /*
@@ -315,6 +346,12 @@ export function readHsbBracket(html, { district = "", blocks = false } = {}) {
     .filter(Boolean);
 
   const games = [];
+  /*
+    ★**回戦の帯を数えるための一覧**（2026-09-04 その4）。
+    **試合にならなかった合流（不戦勝・無効）も入れること** ——
+    入れないと「不戦勝だけの回戦」が消えて、その側の回戦名が全部ずれる。
+  */
+  const bandRows = [];
   /** ★**不戦勝の数**（枠は使うが試合は行われていない）。呼ぶ側の検算に渡す */
   let byes = 0;
   /*
@@ -355,11 +392,59 @@ export function readHsbBracket(html, { district = "", blocks = false } = {}) {
       const up = ca > 1 && cb <= 1 ? A : cb > 1 && ca <= 1 ? B : null;
       if (!up) return bail(`不戦勝でどちらが上がったのか決められない（${A} / ${B}）`);
       byes += 1;
-      merge(kt, kb, key(side, j.mid));
+      bandRows.push({ side, comp: merge(kt, kb, key(side, j.mid)), roundX: j.x });
       at.delete(kt);
       at.delete(kb);
       at.set(key(side, j.mid), up);
       continue;
+    }
+    /*
+      ★★★**「無効」の試合は、どちらも上がらない**（2026-09-04 その4。上の 3-c を読むこと）。
+      ★**2校とも大会から消える**ので、`byes`（＝行われていない試合で消える数）に **2つ**数える。
+      ★**枝には「誰もいない」印（DEAD）を置く** —— 消してしまうと、
+      **次の回戦が「まだ前の試合が終わっていない」と見分けが付かず、そこで止まる**
+      （実際に `決勝に残ったのが 17 チーム` になっていた）。
+    */
+    if (j.voided) {
+      byes += (A === DEAD ? 0 : 1) + (B === DEAD ? 0 : 1);
+      bandRows.push({ side, comp: merge(kt, kb, key(side, j.mid)), roundX: j.x });
+      at.delete(kt);
+      at.delete(kb);
+      at.set(key(side, j.mid), DEAD);
+      continue;
+    }
+    /*
+      ★★★**片側が「誰もいない枝」なら、生きているほうが不戦勝で上がる**（2026-09-04 その4）。
+      ★**消える学校は1つも増えない**ので `byes` は増やさない
+      （無効のところで2つ数えてある）。
+      ★**紙の裏づけを必ず取る** —— **得点が刷られていない**こと（試合をしていない）と、
+      **生きている側の枝が勝ち色**か**中点に `不戦` と刷ってある**こと。
+    */
+    if (A === DEAD || B === DEAD) {
+      const liveIsTop = B === DEAD;
+      const live = liveIsTop ? A : B;
+      const hasScore = scores.some(
+        (t) => Math.abs(t.x - j.x) <= 10 && (Math.abs(t.y - j.top) <= 10 || Math.abs(t.y - j.bottom) <= 10),
+      );
+      const marked = texts.some(
+        (t) => t.text === "不戦" && Math.abs(t.x - j.x) <= 20 && Math.abs(t.y - j.mid) <= 10,
+      );
+      const liveRed = liveIsTop ? j.topRed : j.bottomRed;
+      if (live !== DEAD && !hasScore && (liveRed || marked)) {
+        bandRows.push({ side, comp: merge(kt, kb, key(side, j.mid)), roundX: j.x });
+        at.delete(kt);
+        at.delete(kb);
+        at.set(key(side, j.mid), live);
+        continue;
+      }
+      if (live === DEAD) {
+        bandRows.push({ side, comp: merge(kt, kb, key(side, j.mid)), roundX: j.x });
+        at.delete(kt);
+        at.delete(kb);
+        at.set(key(side, j.mid), DEAD);
+        continue;
+      }
+      return bail(`無効試合の次の回戦で、上がった学校が決められない（${live}）`);
     }
     /*
       ★**得点は「連結線のすぐ外側」×「枝の高さ」で引く。**
@@ -391,7 +476,7 @@ export function readHsbBracket(html, { district = "", blocks = false } = {}) {
           ★**画面には出さない**（0対0にしない。大阪・石川・群馬と同じ）。
         */
         byes += 1;
-        merge(kt, kb, key(side, j.mid));
+        bandRows.push({ side, comp: merge(kt, kb, key(side, j.mid)), roundX: j.x });
         at.delete(kt);
         at.delete(kb);
         at.set(key(side, j.mid), j.topRed ? A : B);
@@ -411,6 +496,7 @@ export function readHsbBracket(html, { district = "", blocks = false } = {}) {
       (a) => Math.abs(a.y + a.h / 2 - j.mid) <= 3 && Math.abs((j.x < center ? a.x + a.w : a.x) - j.x) <= 3,
     );
     const comp = merge(kt, kb, key(side, j.mid));
+    bandRows.push({ side, comp, roundX: j.x });
     games.push({ side, comp, roundX: j.x, a: A, b: B, sa, sb: sbv, label: anchor?.label ?? [] });
     at.delete(kt);
     at.delete(kb);
@@ -429,7 +515,7 @@ export function readHsbBracket(html, { district = "", blocks = false } = {}) {
       : [];
   let champion = null;
   if (finalScores.length === 2) {
-    const rest = [...at.entries()].filter(([, v]) => v);
+    const rest = [...at.entries()].filter(([, v]) => v && v !== DEAD);
     if (rest.length !== 2) return bail(`決勝に残ったのが ${rest.length} チーム（2チームのはず）`);
     /*
       ★**左右は「枝の x」ではなく「どちらの半分から来たか」で決まる。**
@@ -482,7 +568,7 @@ export function readHsbBracket(html, { district = "", blocks = false } = {}) {
     const winnerOf = new Map();
     for (const [k, v] of at) {
       const c = compOf.get(k);
-      if (c !== undefined && v) winnerOf.set(find(c), v);
+      if (c !== undefined && v && v !== DEAD) winnerOf.set(find(c), v);
     }
     const comps = [...new Set(slots.map((s) => s.comp))];
     /*
@@ -637,8 +723,17 @@ export function readHsbBracket(html, { district = "", blocks = false } = {}) {
   */
   const deep = ["決勝", "準決勝", "準々決勝"];
   if (mode === "two") {
+    /*
+      ★★★**回戦の帯は「試合」ではなく「枝の合流」から数えること**（2026-09-04 その4。群馬2022春）。
+      **その回戦が不戦勝だけで、試合が1つも無いことがある。**
+      試合から数えると**その帯が丸ごと消えて、その側の回戦名が1つずつ浅くなる** ——
+      群馬の2022年春は**右半分の準決勝が不戦勝**だったので、
+      **右の1回戦が「2回戦」、2回戦が「3回戦」…と全部ずれ、
+      画面に「準々決勝が6試合・準決勝が3試合」と出ていた**（本当は 4・2）。
+      ★**どの帯にも試合がある紙では、集合はまったく同じになる**（既存の県は1バイトも変わらない）。
+    */
     const bandsOf = (side) =>
-      [...new Set(games.filter((g) => g.side === side).map((g) => g.roundX))].sort((a, b) =>
+      [...new Set(bandRows.filter((g) => g.side === side).map((g) => g.roundX))].sort((a, b) =>
         side === "L" ? a - b : b - a,
       );
     const bands = { L: bandsOf("L"), R: bandsOf("R") };
@@ -675,9 +770,10 @@ export function readHsbBracket(html, { district = "", blocks = false } = {}) {
       ★**段が違えば x は重なる**（岐阜は 240・300 がブロックにも上の山にも出る）ので、
       **必ず段で分けてから数えること。**
     */
+    // ★**帯は「枝の合流」から数える**（上の2段組と同じ理由。不戦勝だけの回戦がある）
     const bandsAt = new Map();
-    for (const g of games) {
-      const lv = levelOf.get(g.comp) ?? 0;
+    for (const g of bandRows) {
+      const lv = levelOf.get(find(g.comp)) ?? 0;
       if (!bandsAt.has(lv)) bandsAt.set(lv, new Set());
       bandsAt.get(lv).add(g.roundX);
     }

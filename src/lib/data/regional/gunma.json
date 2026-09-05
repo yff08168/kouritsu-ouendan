@@ -5,6 +5,1547 @@
   "sourceUrl": "http://www.gunma-hbf.com/",
   "games": [
     {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "西毛運動公園球場",
+      "teams": [
+        {
+          "display": "大間々",
+          "score": 1,
+          "won": false,
+          "name": "大間々高校",
+          "slug": "omama"
+        },
+        {
+          "display": "高崎東",
+          "score": 8,
+          "won": true,
+          "name": "高崎東高校",
+          "slug": "takasakihigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "館林",
+          "score": 3,
+          "won": true,
+          "name": "館林高校",
+          "slug": "tatebayashi"
+        },
+        {
+          "display": "前橋工",
+          "score": 2,
+          "won": false,
+          "name": "前橋工業高校",
+          "slug": "maebashikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "群馬高専",
+          "score": 2,
+          "won": false,
+          "name": "群馬工業高専",
+          "slug": "gunmakogyo"
+        },
+        {
+          "display": "市立太田",
+          "score": 12,
+          "won": true,
+          "name": "市立太田",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "太田",
+          "score": 13,
+          "won": true,
+          "name": "太田",
+          "slug": null
+        },
+        {
+          "display": "渋川青翠",
+          "score": 7,
+          "won": false,
+          "name": "渋川青翠高校",
+          "slug": "shibukawaseisui"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "吾妻中央",
+          "score": 13,
+          "won": true,
+          "name": "吾妻中央高校",
+          "slug": "agatsumachuo"
+        },
+        {
+          "display": "藤岡工",
+          "score": 9,
+          "won": false,
+          "name": "藤岡工業高校",
+          "slug": "fujiokakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "クライムスタジアムぬまた",
+      "teams": [
+        {
+          "display": "松井田",
+          "score": 1,
+          "won": false,
+          "name": "松井田高校",
+          "slug": "matsuida"
+        },
+        {
+          "display": "利根実",
+          "score": 11,
+          "won": true,
+          "name": "利根実",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "クライムスタジアムぬまた",
+      "teams": [
+        {
+          "display": "藤岡中央",
+          "score": 7,
+          "won": true,
+          "name": "藤岡中央高校",
+          "slug": "fujiokachuo"
+        },
+        {
+          "display": "四・榛・下・嬬",
+          "score": 0,
+          "won": false,
+          "name": "四・榛・下・嬬",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "西毛運動公園球場",
+      "teams": [
+        {
+          "display": "大泉",
+          "score": 9,
+          "won": true,
+          "name": "大泉高校",
+          "slug": "oizumi"
+        },
+        {
+          "display": "高崎北",
+          "score": 5,
+          "won": false,
+          "name": "高崎北高校",
+          "slug": "takasakikita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市前橋",
+          "score": 5,
+          "won": true,
+          "name": "市前橋",
+          "slug": null
+        },
+        {
+          "display": "伊勢崎",
+          "score": 2,
+          "won": false,
+          "name": "伊勢崎高校",
+          "slug": "isesaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "沼田",
+          "score": 0,
+          "won": false,
+          "name": "沼田高校",
+          "slug": "numata"
+        },
+        {
+          "display": "前橋東",
+          "score": 5,
+          "won": true,
+          "name": "前橋東高校",
+          "slug": "maebashihigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "利根商",
+          "score": 7,
+          "won": true,
+          "name": "利根商業高校",
+          "slug": "toneshogyo"
+        },
+        {
+          "display": "樹徳",
+          "score": 3,
+          "won": false,
+          "name": "樹徳",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "吉井",
+          "score": 9,
+          "won": true,
+          "name": "吉井高校",
+          "slug": "yoshii"
+        },
+        {
+          "display": "勢多農林",
+          "score": 2,
+          "won": false,
+          "name": "勢多農林高校",
+          "slug": "setanorin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "太田東",
+          "score": 1,
+          "won": false,
+          "name": "太田東高校",
+          "slug": "otahigashi"
+        },
+        {
+          "display": "商大附",
+          "score": 8,
+          "won": true,
+          "name": "商大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "渋川工",
+          "score": 12,
+          "won": false,
+          "name": "渋川工業高校",
+          "slug": "shibukawakogyo"
+        },
+        {
+          "display": "新田暁",
+          "score": 13,
+          "won": true,
+          "name": "新田暁高校",
+          "slug": "nittaakatsuki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "健大高崎",
+          "score": 10,
+          "won": true,
+          "name": "健大高崎",
+          "slug": null
+        },
+        {
+          "display": "高崎東",
+          "score": 0,
+          "won": false,
+          "name": "高崎東高校",
+          "slug": "takasakihigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "館林",
+          "score": 2,
+          "won": false,
+          "name": "館林高校",
+          "slug": "tatebayashi"
+        },
+        {
+          "display": "市立太田",
+          "score": 5,
+          "won": true,
+          "name": "市立太田",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "太田",
+          "score": 10,
+          "won": true,
+          "name": "太田",
+          "slug": null
+        },
+        {
+          "display": "吾妻中央",
+          "score": 1,
+          "won": false,
+          "name": "吾妻中央高校",
+          "slug": "agatsumachuo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "利根実",
+          "score": 7,
+          "won": true,
+          "name": "利根実",
+          "slug": null
+        },
+        {
+          "display": "藤岡中央",
+          "score": 5,
+          "won": false,
+          "name": "藤岡中央高校",
+          "slug": "fujiokachuo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "関学大附",
+          "score": 12,
+          "won": true,
+          "name": "関学大附",
+          "slug": null
+        },
+        {
+          "display": "大泉",
+          "score": 0,
+          "won": false,
+          "name": "大泉高校",
+          "slug": "oizumi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市前橋",
+          "score": 1,
+          "won": false,
+          "name": "市前橋",
+          "slug": null
+        },
+        {
+          "display": "前橋東",
+          "score": 8,
+          "won": true,
+          "name": "前橋東高校",
+          "slug": "maebashihigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "利根商",
+          "score": 9,
+          "won": true,
+          "name": "利根商業高校",
+          "slug": "toneshogyo"
+        },
+        {
+          "display": "吉井",
+          "score": 2,
+          "won": false,
+          "name": "吉井高校",
+          "slug": "yoshii"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "商大附",
+          "score": 8,
+          "won": true,
+          "name": "商大附",
+          "slug": null
+        },
+        {
+          "display": "新田暁",
+          "score": 1,
+          "won": false,
+          "name": "新田暁高校",
+          "slug": "nittaakatsuki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-27",
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "健大高崎",
+          "score": 6,
+          "won": true,
+          "name": "健大高崎",
+          "slug": null
+        },
+        {
+          "display": "市立太田",
+          "score": 3,
+          "won": false,
+          "name": "市立太田",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-27",
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "太田",
+          "score": 16,
+          "won": true,
+          "name": "太田",
+          "slug": null
+        },
+        {
+          "display": "利根実",
+          "score": 1,
+          "won": false,
+          "name": "利根実",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "関学大附",
+          "score": 7,
+          "won": true,
+          "name": "関学大附",
+          "slug": null
+        },
+        {
+          "display": "前橋東",
+          "score": 0,
+          "won": false,
+          "name": "前橋東高校",
+          "slug": "maebashihigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "利根商",
+          "score": 8,
+          "won": true,
+          "name": "利根商業高校",
+          "slug": "toneshogyo"
+        },
+        {
+          "display": "商大附",
+          "score": 1,
+          "won": false,
+          "name": "商大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-01",
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "準々決勝",
+      "venue": "高崎城南球場",
+      "teams": [
+        {
+          "display": "健大高崎",
+          "score": 6,
+          "won": true,
+          "name": "健大高崎",
+          "slug": null
+        },
+        {
+          "display": "太田",
+          "score": 3,
+          "won": false,
+          "name": "太田",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-01",
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "準々決勝",
+      "venue": "高崎城南球場",
+      "teams": [
+        {
+          "display": "関学大附",
+          "score": 1,
+          "won": false,
+          "name": "関学大附",
+          "slug": null
+        },
+        {
+          "display": "利根商",
+          "score": 4,
+          "won": true,
+          "name": "利根商業高校",
+          "slug": "toneshogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "中央中等",
+          "score": 0,
+          "won": false,
+          "name": "中央中等",
+          "slug": null
+        },
+        {
+          "display": "西邑楽",
+          "score": 11,
+          "won": true,
+          "name": "西邑楽高校",
+          "slug": "nishiora"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高崎工",
+          "score": 4,
+          "won": false,
+          "name": "高崎工業高校",
+          "slug": "takasakikogyo"
+        },
+        {
+          "display": "伊勢崎清明",
+          "score": 10,
+          "won": true,
+          "name": "伊勢崎清明高校",
+          "slug": "isesakiseimei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "前橋南",
+          "score": 9,
+          "won": true,
+          "name": "前橋南高校",
+          "slug": "maebashiminami"
+        },
+        {
+          "display": "前・玉・尾・富",
+          "score": 2,
+          "won": false,
+          "name": "前・玉・尾・富",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東農大二",
+          "score": 7,
+          "won": false,
+          "name": "東農大二",
+          "slug": null
+        },
+        {
+          "display": "藤岡北",
+          "score": 8,
+          "won": true,
+          "name": "藤岡北高校",
+          "slug": "fujiokakita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "安中総合",
+          "score": 2,
+          "won": false,
+          "name": "安中総合学園高校",
+          "slug": "annakasogogakuen"
+        },
+        {
+          "display": "伊勢崎工",
+          "score": 8,
+          "won": true,
+          "name": "伊勢崎工業高校",
+          "slug": "isesakikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐生",
+          "score": 7,
+          "won": false,
+          "name": "桐生高校",
+          "slug": "kiryu"
+        },
+        {
+          "display": "高崎",
+          "score": 10,
+          "won": true,
+          "name": "高崎高校",
+          "slug": "takasaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "高崎城南球場",
+      "teams": [
+        {
+          "display": "明和県央",
+          "score": 3,
+          "won": true,
+          "name": "明和県央",
+          "slug": null
+        },
+        {
+          "display": "富岡",
+          "score": 1,
+          "won": false,
+          "name": "富岡高校",
+          "slug": "gunma-tomioka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐生清桜",
+          "score": 9,
+          "won": false,
+          "name": "桐生清桜高校",
+          "slug": "kiryuseio"
+        },
+        {
+          "display": "伊勢崎商",
+          "score": 12,
+          "won": true,
+          "name": "伊勢崎商業高校",
+          "slug": "isesakishogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高崎商",
+          "score": 3,
+          "won": true,
+          "name": "高崎商業高校",
+          "slug": "takasakishogyo"
+        },
+        {
+          "display": "前橋",
+          "score": 1,
+          "won": false,
+          "name": "前橋",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "太田工",
+          "score": 1,
+          "won": false,
+          "name": "太田工業高校",
+          "slug": "otakogyo"
+        },
+        {
+          "display": "常磐",
+          "score": 11,
+          "won": true,
+          "name": "常磐",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "館林商工",
+          "score": 9,
+          "won": true,
+          "name": "館林商工高校",
+          "slug": "tatebayashishoko"
+        },
+        {
+          "display": "高経大附",
+          "score": 8,
+          "won": false,
+          "name": "高経大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐生工",
+          "score": 4,
+          "won": false,
+          "name": "桐生工業高校",
+          "slug": "kiryukogyo"
+        },
+        {
+          "display": "桐生市商",
+          "score": 7,
+          "won": true,
+          "name": "桐生市立商業高校",
+          "slug": "kiryushiritsushogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "興陽",
+          "score": 0,
+          "won": false,
+          "name": "興陽",
+          "slug": null
+        },
+        {
+          "display": "渋川",
+          "score": 8,
+          "won": true,
+          "name": "渋川高校",
+          "slug": "shibukawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐生第一",
+          "score": 13,
+          "won": true,
+          "name": "桐生第一",
+          "slug": null
+        },
+        {
+          "display": "西邑楽",
+          "score": 0,
+          "won": false,
+          "name": "西邑楽高校",
+          "slug": "nishiora"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "伊勢崎清明",
+          "score": 8,
+          "won": true,
+          "name": "伊勢崎清明高校",
+          "slug": "isesakiseimei"
+        },
+        {
+          "display": "前橋南",
+          "score": 3,
+          "won": false,
+          "name": "前橋南高校",
+          "slug": "maebashiminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "藤岡北",
+          "score": 0,
+          "won": false,
+          "name": "藤岡北高校",
+          "slug": "fujiokakita"
+        },
+        {
+          "display": "伊勢崎工",
+          "score": 3,
+          "won": true,
+          "name": "伊勢崎工業高校",
+          "slug": "isesakikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高崎",
+          "score": 12,
+          "won": true,
+          "name": "高崎高校",
+          "slug": "takasaki"
+        },
+        {
+          "display": "明和県央",
+          "score": 2,
+          "won": false,
+          "name": "明和県央",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "前橋商",
+          "score": 13,
+          "won": true,
+          "name": "前橋商業高校",
+          "slug": "maebashishogyo"
+        },
+        {
+          "display": "伊勢崎商",
+          "score": 1,
+          "won": false,
+          "name": "伊勢崎商業高校",
+          "slug": "isesakishogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高崎商",
+          "score": 5,
+          "won": false,
+          "name": "高崎商業高校",
+          "slug": "takasakishogyo"
+        },
+        {
+          "display": "常磐",
+          "score": 10,
+          "won": true,
+          "name": "常磐",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "前橋育英",
+          "score": 18,
+          "won": true,
+          "name": "前橋育英",
+          "slug": null
+        },
+        {
+          "display": "館林商工",
+          "score": 3,
+          "won": false,
+          "name": "館林商工高校",
+          "slug": "tatebayashishoko"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐生市商",
+          "score": 0,
+          "won": false,
+          "name": "桐生市立商業高校",
+          "slug": "kiryushiritsushogyo"
+        },
+        {
+          "display": "渋川",
+          "score": 7,
+          "won": true,
+          "name": "渋川高校",
+          "slug": "shibukawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐生第一",
+          "score": 4,
+          "won": true,
+          "name": "桐生第一",
+          "slug": null
+        },
+        {
+          "display": "伊勢崎清明",
+          "score": 3,
+          "won": false,
+          "name": "伊勢崎清明高校",
+          "slug": "isesakiseimei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "伊勢崎工",
+          "score": 3,
+          "won": false,
+          "name": "伊勢崎工業高校",
+          "slug": "isesakikogyo"
+        },
+        {
+          "display": "高崎",
+          "score": 11,
+          "won": true,
+          "name": "高崎高校",
+          "slug": "takasaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "前橋商",
+          "score": 10,
+          "won": true,
+          "name": "前橋商業高校",
+          "slug": "maebashishogyo"
+        },
+        {
+          "display": "常磐",
+          "score": 0,
+          "won": false,
+          "name": "常磐",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "前橋育英",
+          "score": 8,
+          "won": true,
+          "name": "前橋育英",
+          "slug": null
+        },
+        {
+          "display": "渋川",
+          "score": 1,
+          "won": false,
+          "name": "渋川高校",
+          "slug": "shibukawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-30",
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "準々決勝",
+      "venue": "高崎城南球場",
+      "teams": [
+        {
+          "display": "桐生第一",
+          "score": 5,
+          "won": true,
+          "name": "桐生第一",
+          "slug": null
+        },
+        {
+          "display": "高崎",
+          "score": 3,
+          "won": false,
+          "name": "高崎高校",
+          "slug": "takasaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-04-30",
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "準々決勝",
+      "venue": "高崎城南球場",
+      "teams": [
+        {
+          "display": "前橋商",
+          "score": 8,
+          "won": false,
+          "name": "前橋商業高校",
+          "slug": "maebashishogyo"
+        },
+        {
+          "display": "前橋育英",
+          "score": 15,
+          "won": true,
+          "name": "前橋育英",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-04",
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "準決勝",
+      "venue": "高崎城南球場",
+      "teams": [
+        {
+          "display": "桐生第一",
+          "score": 7,
+          "won": false,
+          "name": "桐生第一",
+          "slug": null
+        },
+        {
+          "display": "前橋育英",
+          "score": 11,
+          "won": true,
+          "name": "前橋育英",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2022-05-05",
+      "season": "spring",
+      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
+      "round": "決勝",
+      "venue": "高崎城南球場",
+      "teams": [
+        {
+          "display": "前橋育英",
+          "score": 2,
+          "won": true,
+          "name": "前橋育英",
+          "slug": null
+        },
+        {
+          "display": "健大高崎",
+          "score": 1,
+          "won": false,
+          "name": "健大高崎",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
       "date": null,
       "season": "spring",
       "tournament": "2025年 春季関東地区高校野球 群馬県大会",
@@ -3078,1547 +4619,6 @@
           "score": 3,
           "won": false,
           "name": "明和県央",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2022-04-17",
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": "西毛運動公園球場",
-      "teams": [
-        {
-          "display": "大間々",
-          "score": 1,
-          "won": false,
-          "name": "大間々高校",
-          "slug": "omama"
-        },
-        {
-          "display": "高崎東",
-          "score": 8,
-          "won": true,
-          "name": "高崎東高校",
-          "slug": "takasakihigashi"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "館林",
-          "score": 3,
-          "won": true,
-          "name": "館林高校",
-          "slug": "tatebayashi"
-        },
-        {
-          "display": "前橋工",
-          "score": 2,
-          "won": false,
-          "name": "前橋工業高校",
-          "slug": "maebashikogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "群馬高専",
-          "score": 2,
-          "won": false,
-          "name": "群馬工業高専",
-          "slug": "gunmakogyo"
-        },
-        {
-          "display": "市立太田",
-          "score": 12,
-          "won": true,
-          "name": "市立太田",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "太田",
-          "score": 13,
-          "won": true,
-          "name": "太田",
-          "slug": null
-        },
-        {
-          "display": "渋川青翠",
-          "score": 7,
-          "won": false,
-          "name": "渋川青翠高校",
-          "slug": "shibukawaseisui"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "吾妻中央",
-          "score": 13,
-          "won": true,
-          "name": "吾妻中央高校",
-          "slug": "agatsumachuo"
-        },
-        {
-          "display": "藤岡工",
-          "score": 9,
-          "won": false,
-          "name": "藤岡工業高校",
-          "slug": "fujiokakogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2022-04-17",
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": "クライムスタジアムぬまた",
-      "teams": [
-        {
-          "display": "松井田",
-          "score": 1,
-          "won": false,
-          "name": "松井田高校",
-          "slug": "matsuida"
-        },
-        {
-          "display": "利根実",
-          "score": 11,
-          "won": true,
-          "name": "利根実",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2022-04-17",
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": "クライムスタジアムぬまた",
-      "teams": [
-        {
-          "display": "藤岡中央",
-          "score": 7,
-          "won": true,
-          "name": "藤岡中央高校",
-          "slug": "fujiokachuo"
-        },
-        {
-          "display": "四・榛・下・嬬",
-          "score": 0,
-          "won": false,
-          "name": "四・榛・下・嬬",
-          "slug": null,
-          "combined": true
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2022-04-17",
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": "西毛運動公園球場",
-      "teams": [
-        {
-          "display": "大泉",
-          "score": 9,
-          "won": true,
-          "name": "大泉高校",
-          "slug": "oizumi"
-        },
-        {
-          "display": "高崎北",
-          "score": 5,
-          "won": false,
-          "name": "高崎北高校",
-          "slug": "takasakikita"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "市前橋",
-          "score": 5,
-          "won": true,
-          "name": "市前橋",
-          "slug": null
-        },
-        {
-          "display": "伊勢崎",
-          "score": 2,
-          "won": false,
-          "name": "伊勢崎高校",
-          "slug": "isesaki"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "沼田",
-          "score": 0,
-          "won": false,
-          "name": "沼田高校",
-          "slug": "numata"
-        },
-        {
-          "display": "前橋東",
-          "score": 5,
-          "won": true,
-          "name": "前橋東高校",
-          "slug": "maebashihigashi"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "利根商",
-          "score": 7,
-          "won": true,
-          "name": "利根商業高校",
-          "slug": "toneshogyo"
-        },
-        {
-          "display": "樹徳",
-          "score": 3,
-          "won": false,
-          "name": "樹徳",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "吉井",
-          "score": 9,
-          "won": true,
-          "name": "吉井高校",
-          "slug": "yoshii"
-        },
-        {
-          "display": "勢多農林",
-          "score": 2,
-          "won": false,
-          "name": "勢多農林高校",
-          "slug": "setanorin"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "太田東",
-          "score": 1,
-          "won": false,
-          "name": "太田東高校",
-          "slug": "otahigashi"
-        },
-        {
-          "display": "商大附",
-          "score": 8,
-          "won": true,
-          "name": "商大附",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "渋川工",
-          "score": 12,
-          "won": false,
-          "name": "渋川工業高校",
-          "slug": "shibukawakogyo"
-        },
-        {
-          "display": "新田暁",
-          "score": 13,
-          "won": true,
-          "name": "新田暁高校",
-          "slug": "nittaakatsuki"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "健大高崎",
-          "score": 10,
-          "won": true,
-          "name": "健大高崎",
-          "slug": null
-        },
-        {
-          "display": "高崎東",
-          "score": 0,
-          "won": false,
-          "name": "高崎東高校",
-          "slug": "takasakihigashi"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "館林",
-          "score": 2,
-          "won": false,
-          "name": "館林高校",
-          "slug": "tatebayashi"
-        },
-        {
-          "display": "市立太田",
-          "score": 5,
-          "won": true,
-          "name": "市立太田",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "太田",
-          "score": 10,
-          "won": true,
-          "name": "太田",
-          "slug": null
-        },
-        {
-          "display": "吾妻中央",
-          "score": 1,
-          "won": false,
-          "name": "吾妻中央高校",
-          "slug": "agatsumachuo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "利根実",
-          "score": 7,
-          "won": true,
-          "name": "利根実",
-          "slug": null
-        },
-        {
-          "display": "藤岡中央",
-          "score": 5,
-          "won": false,
-          "name": "藤岡中央高校",
-          "slug": "fujiokachuo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "関学大附",
-          "score": 12,
-          "won": true,
-          "name": "関学大附",
-          "slug": null
-        },
-        {
-          "display": "大泉",
-          "score": 0,
-          "won": false,
-          "name": "大泉高校",
-          "slug": "oizumi"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "市前橋",
-          "score": 1,
-          "won": false,
-          "name": "市前橋",
-          "slug": null
-        },
-        {
-          "display": "前橋東",
-          "score": 8,
-          "won": true,
-          "name": "前橋東高校",
-          "slug": "maebashihigashi"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "利根商",
-          "score": 9,
-          "won": true,
-          "name": "利根商業高校",
-          "slug": "toneshogyo"
-        },
-        {
-          "display": "吉井",
-          "score": 2,
-          "won": false,
-          "name": "吉井高校",
-          "slug": "yoshii"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "商大附",
-          "score": 8,
-          "won": true,
-          "name": "商大附",
-          "slug": null
-        },
-        {
-          "display": "新田暁",
-          "score": 1,
-          "won": false,
-          "name": "新田暁高校",
-          "slug": "nittaakatsuki"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2022-04-27",
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "準々決勝",
-      "venue": "上毛新聞敷島球場",
-      "teams": [
-        {
-          "display": "健大高崎",
-          "score": 6,
-          "won": true,
-          "name": "健大高崎",
-          "slug": null
-        },
-        {
-          "display": "市立太田",
-          "score": 3,
-          "won": false,
-          "name": "市立太田",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2022-04-27",
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "準々決勝",
-      "venue": "上毛新聞敷島球場",
-      "teams": [
-        {
-          "display": "太田",
-          "score": 16,
-          "won": true,
-          "name": "太田",
-          "slug": null
-        },
-        {
-          "display": "利根実",
-          "score": 1,
-          "won": false,
-          "name": "利根実",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "関学大附",
-          "score": 7,
-          "won": true,
-          "name": "関学大附",
-          "slug": null
-        },
-        {
-          "display": "前橋東",
-          "score": 0,
-          "won": false,
-          "name": "前橋東高校",
-          "slug": "maebashihigashi"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "利根商",
-          "score": 8,
-          "won": true,
-          "name": "利根商業高校",
-          "slug": "toneshogyo"
-        },
-        {
-          "display": "商大附",
-          "score": 1,
-          "won": false,
-          "name": "商大附",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2022-05-01",
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "準決勝",
-      "venue": "高崎城南球場",
-      "teams": [
-        {
-          "display": "健大高崎",
-          "score": 6,
-          "won": true,
-          "name": "健大高崎",
-          "slug": null
-        },
-        {
-          "display": "太田",
-          "score": 3,
-          "won": false,
-          "name": "太田",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2022-05-01",
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "準決勝",
-      "venue": "高崎城南球場",
-      "teams": [
-        {
-          "display": "関学大附",
-          "score": 1,
-          "won": false,
-          "name": "関学大附",
-          "slug": null
-        },
-        {
-          "display": "利根商",
-          "score": 4,
-          "won": true,
-          "name": "利根商業高校",
-          "slug": "toneshogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "中央中等",
-          "score": 0,
-          "won": false,
-          "name": "中央中等",
-          "slug": null
-        },
-        {
-          "display": "西邑楽",
-          "score": 11,
-          "won": true,
-          "name": "西邑楽高校",
-          "slug": "nishiora"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "高崎工",
-          "score": 4,
-          "won": false,
-          "name": "高崎工業高校",
-          "slug": "takasakikogyo"
-        },
-        {
-          "display": "伊勢崎清明",
-          "score": 10,
-          "won": true,
-          "name": "伊勢崎清明高校",
-          "slug": "isesakiseimei"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "前橋南",
-          "score": 9,
-          "won": true,
-          "name": "前橋南高校",
-          "slug": "maebashiminami"
-        },
-        {
-          "display": "前・玉・尾・富",
-          "score": 2,
-          "won": false,
-          "name": "前・玉・尾・富",
-          "slug": null,
-          "combined": true
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "東農大二",
-          "score": 7,
-          "won": false,
-          "name": "東農大二",
-          "slug": null
-        },
-        {
-          "display": "藤岡北",
-          "score": 8,
-          "won": true,
-          "name": "藤岡北高校",
-          "slug": "fujiokakita"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "安中総合",
-          "score": 2,
-          "won": false,
-          "name": "安中総合学園高校",
-          "slug": "annakasogogakuen"
-        },
-        {
-          "display": "伊勢崎工",
-          "score": 8,
-          "won": true,
-          "name": "伊勢崎工業高校",
-          "slug": "isesakikogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "桐生",
-          "score": 7,
-          "won": false,
-          "name": "桐生高校",
-          "slug": "kiryu"
-        },
-        {
-          "display": "高崎",
-          "score": 10,
-          "won": true,
-          "name": "高崎高校",
-          "slug": "takasaki"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2022-04-17",
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": "高崎城南球場",
-      "teams": [
-        {
-          "display": "明和県央",
-          "score": 3,
-          "won": true,
-          "name": "明和県央",
-          "slug": null
-        },
-        {
-          "display": "富岡",
-          "score": 1,
-          "won": false,
-          "name": "富岡高校",
-          "slug": "gunma-tomioka"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "桐生清桜",
-          "score": 9,
-          "won": false,
-          "name": "桐生清桜高校",
-          "slug": "kiryuseio"
-        },
-        {
-          "display": "伊勢崎商",
-          "score": 12,
-          "won": true,
-          "name": "伊勢崎商業高校",
-          "slug": "isesakishogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "高崎商",
-          "score": 3,
-          "won": true,
-          "name": "高崎商業高校",
-          "slug": "takasakishogyo"
-        },
-        {
-          "display": "前橋",
-          "score": 1,
-          "won": false,
-          "name": "前橋",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "太田工",
-          "score": 1,
-          "won": false,
-          "name": "太田工業高校",
-          "slug": "otakogyo"
-        },
-        {
-          "display": "常磐",
-          "score": 11,
-          "won": true,
-          "name": "常磐",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "館林商工",
-          "score": 9,
-          "won": true,
-          "name": "館林商工高校",
-          "slug": "tatebayashishoko"
-        },
-        {
-          "display": "高経大附",
-          "score": 8,
-          "won": false,
-          "name": "高経大附",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "桐生工",
-          "score": 4,
-          "won": false,
-          "name": "桐生工業高校",
-          "slug": "kiryukogyo"
-        },
-        {
-          "display": "桐生市商",
-          "score": 7,
-          "won": true,
-          "name": "桐生市立商業高校",
-          "slug": "kiryushiritsushogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "興陽",
-          "score": 0,
-          "won": false,
-          "name": "興陽",
-          "slug": null
-        },
-        {
-          "display": "渋川",
-          "score": 8,
-          "won": true,
-          "name": "渋川高校",
-          "slug": "shibukawa"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "桐生第一",
-          "score": 13,
-          "won": true,
-          "name": "桐生第一",
-          "slug": null
-        },
-        {
-          "display": "西邑楽",
-          "score": 0,
-          "won": false,
-          "name": "西邑楽高校",
-          "slug": "nishiora"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "伊勢崎清明",
-          "score": 8,
-          "won": true,
-          "name": "伊勢崎清明高校",
-          "slug": "isesakiseimei"
-        },
-        {
-          "display": "前橋南",
-          "score": 3,
-          "won": false,
-          "name": "前橋南高校",
-          "slug": "maebashiminami"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "藤岡北",
-          "score": 0,
-          "won": false,
-          "name": "藤岡北高校",
-          "slug": "fujiokakita"
-        },
-        {
-          "display": "伊勢崎工",
-          "score": 3,
-          "won": true,
-          "name": "伊勢崎工業高校",
-          "slug": "isesakikogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "高崎",
-          "score": 12,
-          "won": true,
-          "name": "高崎高校",
-          "slug": "takasaki"
-        },
-        {
-          "display": "明和県央",
-          "score": 2,
-          "won": false,
-          "name": "明和県央",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "前橋商",
-          "score": 13,
-          "won": true,
-          "name": "前橋商業高校",
-          "slug": "maebashishogyo"
-        },
-        {
-          "display": "伊勢崎商",
-          "score": 1,
-          "won": false,
-          "name": "伊勢崎商業高校",
-          "slug": "isesakishogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "高崎商",
-          "score": 5,
-          "won": false,
-          "name": "高崎商業高校",
-          "slug": "takasakishogyo"
-        },
-        {
-          "display": "常磐",
-          "score": 10,
-          "won": true,
-          "name": "常磐",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "前橋育英",
-          "score": 18,
-          "won": true,
-          "name": "前橋育英",
-          "slug": null
-        },
-        {
-          "display": "館林商工",
-          "score": 3,
-          "won": false,
-          "name": "館林商工高校",
-          "slug": "tatebayashishoko"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "桐生市商",
-          "score": 0,
-          "won": false,
-          "name": "桐生市立商業高校",
-          "slug": "kiryushiritsushogyo"
-        },
-        {
-          "display": "渋川",
-          "score": 7,
-          "won": true,
-          "name": "渋川高校",
-          "slug": "shibukawa"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "桐生第一",
-          "score": 4,
-          "won": true,
-          "name": "桐生第一",
-          "slug": null
-        },
-        {
-          "display": "伊勢崎清明",
-          "score": 3,
-          "won": false,
-          "name": "伊勢崎清明高校",
-          "slug": "isesakiseimei"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "伊勢崎工",
-          "score": 3,
-          "won": false,
-          "name": "伊勢崎工業高校",
-          "slug": "isesakikogyo"
-        },
-        {
-          "display": "高崎",
-          "score": 11,
-          "won": true,
-          "name": "高崎高校",
-          "slug": "takasaki"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "前橋商",
-          "score": 10,
-          "won": true,
-          "name": "前橋商業高校",
-          "slug": "maebashishogyo"
-        },
-        {
-          "display": "常磐",
-          "score": 0,
-          "won": false,
-          "name": "常磐",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "前橋育英",
-          "score": 8,
-          "won": true,
-          "name": "前橋育英",
-          "slug": null
-        },
-        {
-          "display": "渋川",
-          "score": 1,
-          "won": false,
-          "name": "渋川高校",
-          "slug": "shibukawa"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2022-04-30",
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "準々決勝",
-      "venue": "高崎城南球場",
-      "teams": [
-        {
-          "display": "桐生第一",
-          "score": 5,
-          "won": true,
-          "name": "桐生第一",
-          "slug": null
-        },
-        {
-          "display": "高崎",
-          "score": 3,
-          "won": false,
-          "name": "高崎高校",
-          "slug": "takasaki"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2022-04-30",
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "準々決勝",
-      "venue": "高崎城南球場",
-      "teams": [
-        {
-          "display": "前橋商",
-          "score": 8,
-          "won": false,
-          "name": "前橋商業高校",
-          "slug": "maebashishogyo"
-        },
-        {
-          "display": "前橋育英",
-          "score": 15,
-          "won": true,
-          "name": "前橋育英",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2022-05-04",
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "準決勝",
-      "venue": "高崎城南球場",
-      "teams": [
-        {
-          "display": "桐生第一",
-          "score": 7,
-          "won": false,
-          "name": "桐生第一",
-          "slug": null
-        },
-        {
-          "display": "前橋育英",
-          "score": 11,
-          "won": true,
-          "name": "前橋育英",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2022-05-05",
-      "season": "spring",
-      "tournament": "2022年 春季関東地区高校野球 群馬県大会",
-      "round": "決勝",
-      "venue": "高崎城南球場",
-      "teams": [
-        {
-          "display": "前橋育英",
-          "score": 2,
-          "won": true,
-          "name": "前橋育英",
-          "slug": null
-        },
-        {
-          "display": "健大高崎",
-          "score": 1,
-          "won": false,
-          "name": "健大高崎",
           "slug": null
         }
       ],
@@ -42926,1466 +42926,6 @@
     {
       "date": null,
       "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "勢多農林",
-          "score": 3,
-          "won": false,
-          "name": "勢多農林高校",
-          "slug": "setanorin"
-        },
-        {
-          "display": "高崎東",
-          "score": 9,
-          "won": true,
-          "name": "高崎東高校",
-          "slug": "takasakihigashi"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "桐生工",
-          "score": 1,
-          "won": false,
-          "name": "桐生工業高校",
-          "slug": "kiryukogyo"
-        },
-        {
-          "display": "新田暁",
-          "score": 9,
-          "won": true,
-          "name": "新田暁高校",
-          "slug": "nittaakatsuki"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "高崎商",
-          "score": 4,
-          "won": true,
-          "name": "高崎商業高校",
-          "slug": "takasakishogyo"
-        },
-        {
-          "display": "伊勢崎工",
-          "score": 0,
-          "won": false,
-          "name": "伊勢崎工業高校",
-          "slug": "isesakikogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "前橋南",
-          "score": 4,
-          "won": true,
-          "name": "前橋南高校",
-          "slug": "maebashiminami"
-        },
-        {
-          "display": "大泉",
-          "score": 0,
-          "won": false,
-          "name": "大泉高校",
-          "slug": "oizumi"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "樹徳",
-          "score": 6,
-          "won": true,
-          "name": "樹徳",
-          "slug": null
-        },
-        {
-          "display": "館林商工",
-          "score": 0,
-          "won": false,
-          "name": "館林商工高校",
-          "slug": "tatebayashishoko"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "桐生清桜",
-          "score": 8,
-          "won": true,
-          "name": "桐生清桜高校",
-          "slug": "kiryuseio"
-        },
-        {
-          "display": "沼田",
-          "score": 5,
-          "won": false,
-          "name": "沼田高校",
-          "slug": "numata"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "高崎工",
-          "score": 2,
-          "won": false,
-          "name": "高崎工業高校",
-          "slug": "takasakikogyo"
-        },
-        {
-          "display": "高崎",
-          "score": 3,
-          "won": true,
-          "name": "高崎高校",
-          "slug": "takasaki"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "興陽",
-          "score": 5,
-          "won": false,
-          "name": "興陽",
-          "slug": null
-        },
-        {
-          "display": "大間々",
-          "score": 7,
-          "won": true,
-          "name": "大間々高校",
-          "slug": "omama"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "藤岡中央・藤岡工・吉井",
-          "score": 0,
-          "won": false,
-          "name": "藤岡中央・藤岡工・吉井",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "商大附",
-          "score": 7,
-          "won": true,
-          "name": "商大附",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "安中総合",
-          "score": 5,
-          "won": false,
-          "name": "安中総合学園高校",
-          "slug": "annakasogogakuen"
-        },
-        {
-          "display": "群馬高専",
-          "score": 8,
-          "won": true,
-          "name": "群馬工業高専",
-          "slug": "gunmakogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-03",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": "西毛運動公園野球場",
-      "teams": [
-        {
-          "display": "松井田",
-          "score": 0,
-          "won": false,
-          "name": "松井田高校",
-          "slug": "matsuida"
-        },
-        {
-          "display": "吾妻中央",
-          "score": 10,
-          "won": true,
-          "name": "吾妻中央高校",
-          "slug": "agatsumachuo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "前橋商",
-          "score": 4,
-          "won": true,
-          "name": "前橋商業高校",
-          "slug": "maebashishogyo"
-        },
-        {
-          "display": "高崎東",
-          "score": 1,
-          "won": false,
-          "name": "高崎東高校",
-          "slug": "takasakihigashi"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "新田暁",
-          "score": 9,
-          "won": true,
-          "name": "新田暁高校",
-          "slug": "nittaakatsuki"
-        },
-        {
-          "display": "高崎商",
-          "score": 8,
-          "won": false,
-          "name": "高崎商業高校",
-          "slug": "takasakishogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-10",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": "上毛新聞敷島球場",
-      "teams": [
-        {
-          "display": "東農大二",
-          "score": 9,
-          "won": true,
-          "name": "東農大二",
-          "slug": null
-        },
-        {
-          "display": "前橋南",
-          "score": 0,
-          "won": false,
-          "name": "前橋南高校",
-          "slug": "maebashiminami"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-10",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": "上毛新聞敷島球場",
-      "teams": [
-        {
-          "display": "樹徳",
-          "score": 7,
-          "won": true,
-          "name": "樹徳",
-          "slug": null
-        },
-        {
-          "display": "高経大附",
-          "score": 2,
-          "won": false,
-          "name": "高経大附",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-09",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": "高崎市城南球場",
-      "teams": [
-        {
-          "display": "明和県央",
-          "score": 5,
-          "won": true,
-          "name": "明和県央",
-          "slug": null
-        },
-        {
-          "display": "桐生清桜",
-          "score": 0,
-          "won": false,
-          "name": "桐生清桜高校",
-          "slug": "kiryuseio"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "高崎",
-          "score": 9,
-          "won": true,
-          "name": "高崎高校",
-          "slug": "takasaki"
-        },
-        {
-          "display": "大間々",
-          "score": 1,
-          "won": false,
-          "name": "大間々高校",
-          "slug": "omama"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-09",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": "セブンナッツスタジアム",
-      "teams": [
-        {
-          "display": "関学大附",
-          "score": 6,
-          "won": false,
-          "name": "関学大附",
-          "slug": null
-        },
-        {
-          "display": "商大附",
-          "score": 7,
-          "won": true,
-          "name": "商大附",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "群馬高専",
-          "score": 7,
-          "won": false,
-          "name": "群馬工業高専",
-          "slug": "gunmakogyo"
-        },
-        {
-          "display": "吾妻中央",
-          "score": 8,
-          "won": true,
-          "name": "吾妻中央高校",
-          "slug": "agatsumachuo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-16",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": "上毛新聞敷島球場",
-      "teams": [
-        {
-          "display": "前橋商",
-          "score": 9,
-          "won": true,
-          "name": "前橋商業高校",
-          "slug": "maebashishogyo"
-        },
-        {
-          "display": "新田暁",
-          "score": 2,
-          "won": false,
-          "name": "新田暁高校",
-          "slug": "nittaakatsuki"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-16",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": "上毛新聞敷島球場",
-      "teams": [
-        {
-          "display": "東農大二",
-          "score": 3,
-          "won": false,
-          "name": "東農大二",
-          "slug": null
-        },
-        {
-          "display": "樹徳",
-          "score": 7,
-          "won": true,
-          "name": "樹徳",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-16",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": "高崎市城南球場",
-      "teams": [
-        {
-          "display": "明和県央",
-          "score": 7,
-          "won": true,
-          "name": "明和県央",
-          "slug": null
-        },
-        {
-          "display": "高崎",
-          "score": 1,
-          "won": false,
-          "name": "高崎高校",
-          "slug": "takasaki"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-16",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": "高崎市城南球場",
-      "teams": [
-        {
-          "display": "商大附",
-          "score": 13,
-          "won": true,
-          "name": "商大附",
-          "slug": null
-        },
-        {
-          "display": "吾妻中央",
-          "score": 7,
-          "won": false,
-          "name": "吾妻中央高校",
-          "slug": "agatsumachuo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-24",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "準々決勝",
-      "venue": "小倉クラッチ・スタジアム",
-      "teams": [
-        {
-          "display": "前橋商",
-          "score": 3,
-          "won": true,
-          "name": "前橋商業高校",
-          "slug": "maebashishogyo"
-        },
-        {
-          "display": "樹徳",
-          "score": 1,
-          "won": false,
-          "name": "樹徳",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-24",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "準々決勝",
-      "venue": "小倉クラッチ・スタジアム",
-      "teams": [
-        {
-          "display": "明和県央",
-          "score": 6,
-          "won": true,
-          "name": "明和県央",
-          "slug": null
-        },
-        {
-          "display": "商大附",
-          "score": 5,
-          "won": false,
-          "name": "商大附",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-30",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "準決勝",
-      "venue": "小倉クラッチ・スタジアム",
-      "teams": [
-        {
-          "display": "前橋商",
-          "score": 1,
-          "won": false,
-          "name": "前橋商業高校",
-          "slug": "maebashishogyo"
-        },
-        {
-          "display": "明和県央",
-          "score": 3,
-          "won": true,
-          "name": "明和県央",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-05",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": "小倉クラッチ・スタジアム",
-      "teams": [
-        {
-          "display": "前西・四ツ葉・玉村・中央中等・榛名・下仁田",
-          "score": 0,
-          "won": false,
-          "name": "前西・四ツ葉・玉村・中央中等・榛名・下仁田",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "健大高崎",
-          "score": 21,
-          "won": true,
-          "name": "健大高崎",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "館林",
-          "score": 8,
-          "won": true,
-          "name": "館林高校",
-          "slug": "tatebayashi"
-        },
-        {
-          "display": "前橋東",
-          "score": 1,
-          "won": false,
-          "name": "前橋東高校",
-          "slug": "maebashihigashi"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-02",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": "小倉クラッチ・スタジアム",
-      "teams": [
-        {
-          "display": "伊勢崎",
-          "score": 10,
-          "won": false,
-          "name": "伊勢崎高校",
-          "slug": "isesaki"
-        },
-        {
-          "display": "伊勢崎清明",
-          "score": 13,
-          "won": true,
-          "name": "伊勢崎清明高校",
-          "slug": "isesakiseimei"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "藤岡北",
-          "score": 4,
-          "won": true,
-          "name": "藤岡北高校",
-          "slug": "fujiokakita"
-        },
-        {
-          "display": "太田工",
-          "score": 1,
-          "won": false,
-          "name": "太田工業高校",
-          "slug": "otakogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-02",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": "太田運動公園球場",
-      "teams": [
-        {
-          "display": "桐生第一",
-          "score": 7,
-          "won": true,
-          "name": "桐生第一",
-          "slug": null
-        },
-        {
-          "display": "市立太田",
-          "score": 5,
-          "won": false,
-          "name": "市立太田",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-02",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": "太田運動公園球場",
-      "teams": [
-        {
-          "display": "高崎北",
-          "score": 3,
-          "won": false,
-          "name": "高崎北高校",
-          "slug": "takasakikita"
-        },
-        {
-          "display": "桐生",
-          "score": 6,
-          "won": true,
-          "name": "桐生高校",
-          "slug": "kiryu"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "常磐",
-          "score": 12,
-          "won": true,
-          "name": "常磐",
-          "slug": null
-        },
-        {
-          "display": "伊勢崎商",
-          "score": 4,
-          "won": false,
-          "name": "伊勢崎商業高校",
-          "slug": "isesakishogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "富岡実",
-          "score": 1,
-          "won": false,
-          "name": "富岡実",
-          "slug": null
-        },
-        {
-          "display": "前橋工",
-          "score": 14,
-          "won": true,
-          "name": "前橋工業高校",
-          "slug": "maebashikogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "太田",
-          "score": 14,
-          "won": true,
-          "name": "太田",
-          "slug": null
-        },
-        {
-          "display": "市前橋",
-          "score": 2,
-          "won": false,
-          "name": "市前橋",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "渋川",
-          "score": 9,
-          "won": true,
-          "name": "渋川高校",
-          "slug": "shibukawa"
-        },
-        {
-          "display": "利根実",
-          "score": 7,
-          "won": false,
-          "name": "利根実",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-03",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": "太田運動公園球場",
-      "teams": [
-        {
-          "display": "富岡",
-          "score": 0,
-          "won": false,
-          "name": "富岡高校",
-          "slug": "gunma-tomioka"
-        },
-        {
-          "display": "太田東",
-          "score": 3,
-          "won": true,
-          "name": "太田東高校",
-          "slug": "otahigashi"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "渋川青翠",
-          "score": 19,
-          "won": true,
-          "name": "渋川青翠高校",
-          "slug": "shibukawaseisui"
-        },
-        {
-          "display": "渋川工",
-          "score": 0,
-          "won": false,
-          "name": "渋川工業高校",
-          "slug": "shibukawakogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-09",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": "小倉クラッチ・スタジアム",
-      "teams": [
-        {
-          "display": "利根商",
-          "score": 0,
-          "won": false,
-          "name": "利根商業高校",
-          "slug": "toneshogyo"
-        },
-        {
-          "display": "健大高崎",
-          "score": 4,
-          "won": true,
-          "name": "健大高崎",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-09",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": "小倉クラッチ・スタジアム",
-      "teams": [
-        {
-          "display": "館林",
-          "score": 7,
-          "won": true,
-          "name": "館林高校",
-          "slug": "tatebayashi"
-        },
-        {
-          "display": "伊勢崎清明",
-          "score": 2,
-          "won": false,
-          "name": "伊勢崎清明高校",
-          "slug": "isesakiseimei"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-09",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": "太田運動公園球場",
-      "teams": [
-        {
-          "display": "前橋",
-          "score": 9,
-          "won": true,
-          "name": "前橋",
-          "slug": null
-        },
-        {
-          "display": "藤岡北",
-          "score": 2,
-          "won": false,
-          "name": "藤岡北高校",
-          "slug": "fujiokakita"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-09",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": "太田運動公園球場",
-      "teams": [
-        {
-          "display": "桐生第一",
-          "score": 15,
-          "won": true,
-          "name": "桐生第一",
-          "slug": null
-        },
-        {
-          "display": "桐生",
-          "score": 5,
-          "won": false,
-          "name": "桐生高校",
-          "slug": "kiryu"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "桐生市商",
-          "score": 1,
-          "won": false,
-          "name": "桐生市立商業高校",
-          "slug": "kiryushiritsushogyo"
-        },
-        {
-          "display": "常磐",
-          "score": 2,
-          "won": true,
-          "name": "常磐",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-09",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": "グレースイン前橋市民球場",
-      "teams": [
-        {
-          "display": "前橋工",
-          "score": 6,
-          "won": false,
-          "name": "前橋工業高校",
-          "slug": "maebashikogyo"
-        },
-        {
-          "display": "太田",
-          "score": 13,
-          "won": true,
-          "name": "太田",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-10",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": "グレースイン前橋市民球場",
-      "teams": [
-        {
-          "display": "前橋育英",
-          "score": 10,
-          "won": true,
-          "name": "前橋育英",
-          "slug": null
-        },
-        {
-          "display": "渋川",
-          "score": 0,
-          "won": false,
-          "name": "渋川高校",
-          "slug": "shibukawa"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-10",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "2回戦",
-      "venue": "グレースイン前橋市民球場",
-      "teams": [
-        {
-          "display": "太田東",
-          "score": 4,
-          "won": false,
-          "name": "太田東高校",
-          "slug": "otahigashi"
-        },
-        {
-          "display": "渋川青翠",
-          "score": 5,
-          "won": true,
-          "name": "渋川青翠高校",
-          "slug": "shibukawaseisui"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-16",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": "小倉クラッチ・スタジアム",
-      "teams": [
-        {
-          "display": "健大高崎",
-          "score": 13,
-          "won": true,
-          "name": "健大高崎",
-          "slug": null
-        },
-        {
-          "display": "館林",
-          "score": 0,
-          "won": false,
-          "name": "館林高校",
-          "slug": "tatebayashi"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-16",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": "小倉クラッチ・スタジアム",
-      "teams": [
-        {
-          "display": "前橋",
-          "score": 1,
-          "won": false,
-          "name": "前橋",
-          "slug": null
-        },
-        {
-          "display": "桐生第一",
-          "score": 10,
-          "won": true,
-          "name": "桐生第一",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "常磐",
-          "score": 6,
-          "won": false,
-          "name": "常磐",
-          "slug": null
-        },
-        {
-          "display": "太田",
-          "score": 7,
-          "won": true,
-          "name": "太田",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "3回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "前橋育英",
-          "score": 11,
-          "won": true,
-          "name": "前橋育英",
-          "slug": null
-        },
-        {
-          "display": "渋川青翠",
-          "score": 1,
-          "won": false,
-          "name": "渋川青翠高校",
-          "slug": "shibukawaseisui"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-23",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "準々決勝",
-      "venue": "小倉クラッチ・スタジアム",
-      "teams": [
-        {
-          "display": "健大高崎",
-          "score": 9,
-          "won": true,
-          "name": "健大高崎",
-          "slug": null
-        },
-        {
-          "display": "桐生第一",
-          "score": 2,
-          "won": false,
-          "name": "桐生第一",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-23",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "準々決勝",
-      "venue": "小倉クラッチ・スタジアム",
-      "teams": [
-        {
-          "display": "太田",
-          "score": 1,
-          "won": false,
-          "name": "太田",
-          "slug": null
-        },
-        {
-          "display": "前橋育英",
-          "score": 7,
-          "won": true,
-          "name": "前橋育英",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-09-30",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "準決勝",
-      "venue": "小倉クラッチ・スタジアム",
-      "teams": [
-        {
-          "display": "健大高崎",
-          "score": 11,
-          "won": true,
-          "name": "健大高崎",
-          "slug": null
-        },
-        {
-          "display": "前橋育英",
-          "score": 4,
-          "won": false,
-          "name": "前橋育英",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2023-10-01",
-      "season": "autumn",
-      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
-      "round": "決勝",
-      "venue": "小倉クラッチ・スタジアム",
-      "teams": [
-        {
-          "display": "健大高崎",
-          "score": 14,
-          "won": true,
-          "name": "健大高崎",
-          "slug": null
-        },
-        {
-          "display": "明和県央",
-          "score": 4,
-          "won": false,
-          "name": "明和県央",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://gunma.hsbflash.jp/"
-      }
-    },
-    {
-      "date": null,
-      "season": "autumn",
       "tournament": "2022年 秋季関東地区高校野球 群馬県大会",
       "round": "1回戦",
       "venue": null,
@@ -45916,6 +44456,1466 @@
           "score": 1,
           "won": true,
           "name": "健大高崎",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "勢多農林",
+          "score": 3,
+          "won": false,
+          "name": "勢多農林高校",
+          "slug": "setanorin"
+        },
+        {
+          "display": "高崎東",
+          "score": 9,
+          "won": true,
+          "name": "高崎東高校",
+          "slug": "takasakihigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐生工",
+          "score": 1,
+          "won": false,
+          "name": "桐生工業高校",
+          "slug": "kiryukogyo"
+        },
+        {
+          "display": "新田暁",
+          "score": 9,
+          "won": true,
+          "name": "新田暁高校",
+          "slug": "nittaakatsuki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高崎商",
+          "score": 4,
+          "won": true,
+          "name": "高崎商業高校",
+          "slug": "takasakishogyo"
+        },
+        {
+          "display": "伊勢崎工",
+          "score": 0,
+          "won": false,
+          "name": "伊勢崎工業高校",
+          "slug": "isesakikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "前橋南",
+          "score": 4,
+          "won": true,
+          "name": "前橋南高校",
+          "slug": "maebashiminami"
+        },
+        {
+          "display": "大泉",
+          "score": 0,
+          "won": false,
+          "name": "大泉高校",
+          "slug": "oizumi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "樹徳",
+          "score": 6,
+          "won": true,
+          "name": "樹徳",
+          "slug": null
+        },
+        {
+          "display": "館林商工",
+          "score": 0,
+          "won": false,
+          "name": "館林商工高校",
+          "slug": "tatebayashishoko"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐生清桜",
+          "score": 8,
+          "won": true,
+          "name": "桐生清桜高校",
+          "slug": "kiryuseio"
+        },
+        {
+          "display": "沼田",
+          "score": 5,
+          "won": false,
+          "name": "沼田高校",
+          "slug": "numata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高崎工",
+          "score": 2,
+          "won": false,
+          "name": "高崎工業高校",
+          "slug": "takasakikogyo"
+        },
+        {
+          "display": "高崎",
+          "score": 3,
+          "won": true,
+          "name": "高崎高校",
+          "slug": "takasaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "興陽",
+          "score": 5,
+          "won": false,
+          "name": "興陽",
+          "slug": null
+        },
+        {
+          "display": "大間々",
+          "score": 7,
+          "won": true,
+          "name": "大間々高校",
+          "slug": "omama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "藤岡中央・藤岡工・吉井",
+          "score": 0,
+          "won": false,
+          "name": "藤岡中央・藤岡工・吉井",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "商大附",
+          "score": 7,
+          "won": true,
+          "name": "商大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "安中総合",
+          "score": 5,
+          "won": false,
+          "name": "安中総合学園高校",
+          "slug": "annakasogogakuen"
+        },
+        {
+          "display": "群馬高専",
+          "score": 8,
+          "won": true,
+          "name": "群馬工業高専",
+          "slug": "gunmakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-03",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "西毛運動公園野球場",
+      "teams": [
+        {
+          "display": "松井田",
+          "score": 0,
+          "won": false,
+          "name": "松井田高校",
+          "slug": "matsuida"
+        },
+        {
+          "display": "吾妻中央",
+          "score": 10,
+          "won": true,
+          "name": "吾妻中央高校",
+          "slug": "agatsumachuo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "前橋商",
+          "score": 4,
+          "won": true,
+          "name": "前橋商業高校",
+          "slug": "maebashishogyo"
+        },
+        {
+          "display": "高崎東",
+          "score": 1,
+          "won": false,
+          "name": "高崎東高校",
+          "slug": "takasakihigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "新田暁",
+          "score": 9,
+          "won": true,
+          "name": "新田暁高校",
+          "slug": "nittaakatsuki"
+        },
+        {
+          "display": "高崎商",
+          "score": 8,
+          "won": false,
+          "name": "高崎商業高校",
+          "slug": "takasakishogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-10",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "東農大二",
+          "score": 9,
+          "won": true,
+          "name": "東農大二",
+          "slug": null
+        },
+        {
+          "display": "前橋南",
+          "score": 0,
+          "won": false,
+          "name": "前橋南高校",
+          "slug": "maebashiminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-10",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "樹徳",
+          "score": 7,
+          "won": true,
+          "name": "樹徳",
+          "slug": null
+        },
+        {
+          "display": "高経大附",
+          "score": 2,
+          "won": false,
+          "name": "高経大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-09",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "高崎市城南球場",
+      "teams": [
+        {
+          "display": "明和県央",
+          "score": 5,
+          "won": true,
+          "name": "明和県央",
+          "slug": null
+        },
+        {
+          "display": "桐生清桜",
+          "score": 0,
+          "won": false,
+          "name": "桐生清桜高校",
+          "slug": "kiryuseio"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高崎",
+          "score": 9,
+          "won": true,
+          "name": "高崎高校",
+          "slug": "takasaki"
+        },
+        {
+          "display": "大間々",
+          "score": 1,
+          "won": false,
+          "name": "大間々高校",
+          "slug": "omama"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-09",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "セブンナッツスタジアム",
+      "teams": [
+        {
+          "display": "関学大附",
+          "score": 6,
+          "won": false,
+          "name": "関学大附",
+          "slug": null
+        },
+        {
+          "display": "商大附",
+          "score": 7,
+          "won": true,
+          "name": "商大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "群馬高専",
+          "score": 7,
+          "won": false,
+          "name": "群馬工業高専",
+          "slug": "gunmakogyo"
+        },
+        {
+          "display": "吾妻中央",
+          "score": 8,
+          "won": true,
+          "name": "吾妻中央高校",
+          "slug": "agatsumachuo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-16",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "前橋商",
+          "score": 9,
+          "won": true,
+          "name": "前橋商業高校",
+          "slug": "maebashishogyo"
+        },
+        {
+          "display": "新田暁",
+          "score": 2,
+          "won": false,
+          "name": "新田暁高校",
+          "slug": "nittaakatsuki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-16",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "東農大二",
+          "score": 3,
+          "won": false,
+          "name": "東農大二",
+          "slug": null
+        },
+        {
+          "display": "樹徳",
+          "score": 7,
+          "won": true,
+          "name": "樹徳",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-16",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "高崎市城南球場",
+      "teams": [
+        {
+          "display": "明和県央",
+          "score": 7,
+          "won": true,
+          "name": "明和県央",
+          "slug": null
+        },
+        {
+          "display": "高崎",
+          "score": 1,
+          "won": false,
+          "name": "高崎高校",
+          "slug": "takasaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-16",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "高崎市城南球場",
+      "teams": [
+        {
+          "display": "商大附",
+          "score": 13,
+          "won": true,
+          "name": "商大附",
+          "slug": null
+        },
+        {
+          "display": "吾妻中央",
+          "score": 7,
+          "won": false,
+          "name": "吾妻中央高校",
+          "slug": "agatsumachuo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-24",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "準々決勝",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "前橋商",
+          "score": 3,
+          "won": true,
+          "name": "前橋商業高校",
+          "slug": "maebashishogyo"
+        },
+        {
+          "display": "樹徳",
+          "score": 1,
+          "won": false,
+          "name": "樹徳",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-24",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "準々決勝",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "明和県央",
+          "score": 6,
+          "won": true,
+          "name": "明和県央",
+          "slug": null
+        },
+        {
+          "display": "商大附",
+          "score": 5,
+          "won": false,
+          "name": "商大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-30",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "準決勝",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "前橋商",
+          "score": 1,
+          "won": false,
+          "name": "前橋商業高校",
+          "slug": "maebashishogyo"
+        },
+        {
+          "display": "明和県央",
+          "score": 3,
+          "won": true,
+          "name": "明和県央",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-05",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "前西・四ツ葉・玉村・中央中等・榛名・下仁田",
+          "score": 0,
+          "won": false,
+          "name": "前西・四ツ葉・玉村・中央中等・榛名・下仁田",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "健大高崎",
+          "score": 21,
+          "won": true,
+          "name": "健大高崎",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "館林",
+          "score": 8,
+          "won": true,
+          "name": "館林高校",
+          "slug": "tatebayashi"
+        },
+        {
+          "display": "前橋東",
+          "score": 1,
+          "won": false,
+          "name": "前橋東高校",
+          "slug": "maebashihigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-02",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "伊勢崎",
+          "score": 10,
+          "won": false,
+          "name": "伊勢崎高校",
+          "slug": "isesaki"
+        },
+        {
+          "display": "伊勢崎清明",
+          "score": 13,
+          "won": true,
+          "name": "伊勢崎清明高校",
+          "slug": "isesakiseimei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "藤岡北",
+          "score": 4,
+          "won": true,
+          "name": "藤岡北高校",
+          "slug": "fujiokakita"
+        },
+        {
+          "display": "太田工",
+          "score": 1,
+          "won": false,
+          "name": "太田工業高校",
+          "slug": "otakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-02",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "太田運動公園球場",
+      "teams": [
+        {
+          "display": "桐生第一",
+          "score": 7,
+          "won": true,
+          "name": "桐生第一",
+          "slug": null
+        },
+        {
+          "display": "市立太田",
+          "score": 5,
+          "won": false,
+          "name": "市立太田",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-02",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "太田運動公園球場",
+      "teams": [
+        {
+          "display": "高崎北",
+          "score": 3,
+          "won": false,
+          "name": "高崎北高校",
+          "slug": "takasakikita"
+        },
+        {
+          "display": "桐生",
+          "score": 6,
+          "won": true,
+          "name": "桐生高校",
+          "slug": "kiryu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "常磐",
+          "score": 12,
+          "won": true,
+          "name": "常磐",
+          "slug": null
+        },
+        {
+          "display": "伊勢崎商",
+          "score": 4,
+          "won": false,
+          "name": "伊勢崎商業高校",
+          "slug": "isesakishogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富岡実",
+          "score": 1,
+          "won": false,
+          "name": "富岡実",
+          "slug": null
+        },
+        {
+          "display": "前橋工",
+          "score": 14,
+          "won": true,
+          "name": "前橋工業高校",
+          "slug": "maebashikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "太田",
+          "score": 14,
+          "won": true,
+          "name": "太田",
+          "slug": null
+        },
+        {
+          "display": "市前橋",
+          "score": 2,
+          "won": false,
+          "name": "市前橋",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "渋川",
+          "score": 9,
+          "won": true,
+          "name": "渋川高校",
+          "slug": "shibukawa"
+        },
+        {
+          "display": "利根実",
+          "score": 7,
+          "won": false,
+          "name": "利根実",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-03",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "太田運動公園球場",
+      "teams": [
+        {
+          "display": "富岡",
+          "score": 0,
+          "won": false,
+          "name": "富岡高校",
+          "slug": "gunma-tomioka"
+        },
+        {
+          "display": "太田東",
+          "score": 3,
+          "won": true,
+          "name": "太田東高校",
+          "slug": "otahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "渋川青翠",
+          "score": 19,
+          "won": true,
+          "name": "渋川青翠高校",
+          "slug": "shibukawaseisui"
+        },
+        {
+          "display": "渋川工",
+          "score": 0,
+          "won": false,
+          "name": "渋川工業高校",
+          "slug": "shibukawakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-09",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "利根商",
+          "score": 0,
+          "won": false,
+          "name": "利根商業高校",
+          "slug": "toneshogyo"
+        },
+        {
+          "display": "健大高崎",
+          "score": 4,
+          "won": true,
+          "name": "健大高崎",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-09",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "館林",
+          "score": 7,
+          "won": true,
+          "name": "館林高校",
+          "slug": "tatebayashi"
+        },
+        {
+          "display": "伊勢崎清明",
+          "score": 2,
+          "won": false,
+          "name": "伊勢崎清明高校",
+          "slug": "isesakiseimei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-09",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "太田運動公園球場",
+      "teams": [
+        {
+          "display": "前橋",
+          "score": 9,
+          "won": true,
+          "name": "前橋",
+          "slug": null
+        },
+        {
+          "display": "藤岡北",
+          "score": 2,
+          "won": false,
+          "name": "藤岡北高校",
+          "slug": "fujiokakita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-09",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "太田運動公園球場",
+      "teams": [
+        {
+          "display": "桐生第一",
+          "score": 15,
+          "won": true,
+          "name": "桐生第一",
+          "slug": null
+        },
+        {
+          "display": "桐生",
+          "score": 5,
+          "won": false,
+          "name": "桐生高校",
+          "slug": "kiryu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐生市商",
+          "score": 1,
+          "won": false,
+          "name": "桐生市立商業高校",
+          "slug": "kiryushiritsushogyo"
+        },
+        {
+          "display": "常磐",
+          "score": 2,
+          "won": true,
+          "name": "常磐",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-09",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "グレースイン前橋市民球場",
+      "teams": [
+        {
+          "display": "前橋工",
+          "score": 6,
+          "won": false,
+          "name": "前橋工業高校",
+          "slug": "maebashikogyo"
+        },
+        {
+          "display": "太田",
+          "score": 13,
+          "won": true,
+          "name": "太田",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-10",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "グレースイン前橋市民球場",
+      "teams": [
+        {
+          "display": "前橋育英",
+          "score": 10,
+          "won": true,
+          "name": "前橋育英",
+          "slug": null
+        },
+        {
+          "display": "渋川",
+          "score": 0,
+          "won": false,
+          "name": "渋川高校",
+          "slug": "shibukawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-10",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "グレースイン前橋市民球場",
+      "teams": [
+        {
+          "display": "太田東",
+          "score": 4,
+          "won": false,
+          "name": "太田東高校",
+          "slug": "otahigashi"
+        },
+        {
+          "display": "渋川青翠",
+          "score": 5,
+          "won": true,
+          "name": "渋川青翠高校",
+          "slug": "shibukawaseisui"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-16",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "健大高崎",
+          "score": 13,
+          "won": true,
+          "name": "健大高崎",
+          "slug": null
+        },
+        {
+          "display": "館林",
+          "score": 0,
+          "won": false,
+          "name": "館林高校",
+          "slug": "tatebayashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-16",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "前橋",
+          "score": 1,
+          "won": false,
+          "name": "前橋",
+          "slug": null
+        },
+        {
+          "display": "桐生第一",
+          "score": 10,
+          "won": true,
+          "name": "桐生第一",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "常磐",
+          "score": 6,
+          "won": false,
+          "name": "常磐",
+          "slug": null
+        },
+        {
+          "display": "太田",
+          "score": 7,
+          "won": true,
+          "name": "太田",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "前橋育英",
+          "score": 11,
+          "won": true,
+          "name": "前橋育英",
+          "slug": null
+        },
+        {
+          "display": "渋川青翠",
+          "score": 1,
+          "won": false,
+          "name": "渋川青翠高校",
+          "slug": "shibukawaseisui"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-23",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "準々決勝",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "健大高崎",
+          "score": 9,
+          "won": true,
+          "name": "健大高崎",
+          "slug": null
+        },
+        {
+          "display": "桐生第一",
+          "score": 2,
+          "won": false,
+          "name": "桐生第一",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-23",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "準々決勝",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "太田",
+          "score": 1,
+          "won": false,
+          "name": "太田",
+          "slug": null
+        },
+        {
+          "display": "前橋育英",
+          "score": 7,
+          "won": true,
+          "name": "前橋育英",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-09-30",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "準決勝",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "健大高崎",
+          "score": 11,
+          "won": true,
+          "name": "健大高崎",
+          "slug": null
+        },
+        {
+          "display": "前橋育英",
+          "score": 4,
+          "won": false,
+          "name": "前橋育英",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2023-10-01",
+      "season": "autumn",
+      "tournament": "2023年 秋季関東地区高校野球 群馬県大会",
+      "round": "決勝",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "健大高崎",
+          "score": 14,
+          "won": true,
+          "name": "健大高崎",
+          "slug": null
+        },
+        {
+          "display": "明和県央",
+          "score": 4,
+          "won": false,
+          "name": "明和県央",
           "slug": null
         }
       ],

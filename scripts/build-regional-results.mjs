@@ -15086,6 +15086,55 @@ function omyuMatchName(full) {
  * `section_list`（その季節の中の大会）を持っている。
  * ★**茨城は 2012年度まで**（`year_list` が44件）。
  */
+/**
+ * ★★★**連盟のお知らせAPI**（`other-api.omyutech.com`）。
+ *
+ * ★★**2026-09-04 その4 に復活させた。**「山形を履歴APIに替えて2019年まで遡る」の回に
+ * **定義だけ消えていて、呼び出しは6か所残っていた** ——
+ * **宮崎の連盟アダプタが毎回 `fetchOmyuNews is not defined` で落ち、
+ * 3季とも「前の内容を残す」で凍っていた**（画面は正しく見えるので気づけない）。
+ * ★**消すときは呼び出しが残っていないか必ず確かめること。**
+ *
+ * ★**スコアAPI（`baseballapi`）ではない。** ここから取るのは
+ * **連盟が自分で書いたお知らせと、その添付の置き場所**だけ（2026-08-16 の運営者判断）。
+ */
+async function fetchOmyuNews(leagueId, type = "N") {
+  const j = await fetchOmyuJson(`newsandtopic/list?userID=&language=&leagueId=${leagueId}&type=${type}`);
+  return j?.news ?? null;
+}
+
+/** お知らせ1件の本文（HTML）。添付リンクは本文の `<a href>` に入っている */
+async function fetchOmyuNewsBody(leagueId, newsId) {
+  const j = await fetchOmyuJson(`newsandtopic/detail?userID=&language=&leagueId=${leagueId}&newsId=${newsId}`);
+  if (!j?.datas) return null;
+  // TT＝見出し／TD＝掲載日／TR＝本文。**本文は複数に分かれることがある**ので全部つなぐ
+  return j.datas.filter((d) => d.type === "TR").map((d) => d.content ?? "").join("\n");
+}
+
+/**
+ * ★**`retCode` を必ず見ること。** このAPIは中身が空でも HTTP 200 を返す
+ * （`{"retCode":0,...,"news":[]}`）。パラメータを1つ落とすと 400 の**HTML**が返り、
+ * `res.json()` が例外になるので、そこも握って null にする。
+ */
+async function fetchOmyuJson(pathAndQuery) {
+  const url = `https://other-api.omyutech.com/otherapi/rest/${pathAndQuery}`;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    if (attempt > 0) await sleep(3000 * attempt);
+    try {
+      const res = await fetch(url, {
+        headers: { ...UA, Accept: "application/json" },
+        signal: AbortSignal.timeout(30000),
+      });
+      if (!res.ok) continue;
+      const j = await res.json();
+      return j?.retCode === 0 ? j : null;
+    } catch {
+      // 次の試行へ
+    }
+  }
+  return null;
+}
+
 async function fetchOmyuScheduleHistory(leagueId, year, seasonCode, sectionId = "") {
   const url =
     `https://baseball.omyutech.com/json/omyuleagueschedulenew.action` +

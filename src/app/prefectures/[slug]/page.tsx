@@ -31,7 +31,7 @@ import { getPrefectureKoshienSummary, searchSchools } from "@/lib/queries/school
 import { getNewsList } from "@/lib/queries/news";
 import { getPhenomenaByPrefecture } from "@/lib/queries/phenomena";
 import { getActivePolls, getCheerMessages } from "@/lib/queries/community";
-import { PREFECTURES } from "@/lib/constants";
+import { ALL_DISTRICT_SLUGS } from "@/lib/constants";
 import { liveSlugOf } from "@/lib/live/hsb";
 import { getRegionalDistrict, latestSeasonGames } from "@/lib/regional-results";
 import { listTournaments, tournamentDisplayName } from "@/lib/regional-tournaments";
@@ -61,7 +61,12 @@ type Props = {
 };
 
 export function generateStaticParams() {
-  return PREFECTURES.map((p) => ({ slug: p.slug }));
+  /*
+    ★★**地方大会だけの2地区（北海道・東京）も作る**（2026-09-05 その2）。
+    **春季・秋季の全道大会・都大会の置き場所**で、**学校は1校も紐づかない**
+    （学校は北北海道・南北海道…のどれかに属している）。
+  */
+  return ALL_DISTRICT_SLUGS.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

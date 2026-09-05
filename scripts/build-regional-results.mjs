@@ -15877,7 +15877,7 @@ const HSB_BASE = {
  * **1県目の索引を2県目が使ってしまう**（同じURLに見えないので実害は出ないが、
  * 取得の使い回しが県をまたぐのは筋が悪い）。
  */
-function hsbAdapter({ slug, district, host, summer2020, keepTitle, seasons }) {
+function hsbAdapter({ slug, district, host, summer2020, keepTitle, seasons, matchDistricts }) {
   const base = `https://${host}.hsbflash.jp`;
   return {
     ...HSB_BASE,
@@ -15894,6 +15894,8 @@ function hsbAdapter({ slug, district, host, summer2020, keepTitle, seasons }) {
     summer2020,
     /** ★**自分の地区の大会だけを採る**（1つのホストに2地区ぶん並ぶ県で使う） */
     keepTitle,
+    /** ★**学校を引く地区**（渡さなければ自分の地区だけ）。北海道・東京で使う */
+    matchDistricts,
     _pages: new Map(),
   };
 }
@@ -16192,6 +16194,33 @@ const tottoriHsb = hsbAdapter({
   ★**入れるなら「北海道」「東京」という地区をサイトに作るところから**。運営者の判断。
 */
 const summerOnly = (host) => ({ summer: `https://${host}.hsbflash.jp/` });
+const springAutumnOnly = (host) => ({
+  spring: `https://${host}.hsbflash.jp/`,
+  autumn: `https://${host}.hsbflash.jp/`,
+});
+
+/*
+  ★★★**春季・秋季（全道大会・都大会）の置き場所**（2026-09-05 その2。運営者の判断）。
+  ★**`slug` は `hokkaido` / `tokyo`** —— サイトの地区（甲子園の大会区分49件）には無い、
+  **地方大会だけの地区**（`REGIONAL_ONLY_DISTRICTS`）。
+  ★**夏はここでは取らない**（4地区のほうに入る）。**取ると同じ試合が2つ数えられる。**
+*/
+const hokkaidoHsb = hsbAdapter({
+  slug: "hokkaido",
+  district: "北海道",
+  host: "hokkaido",
+  seasons: springAutumnOnly("hokkaido"),
+  // ★**学校は「北北海道」「南北海道」に入っている**（学校マスタは甲子園の区分）
+  matchDistricts: ["北北海道", "南北海道"],
+});
+
+const tokyoHsb = hsbAdapter({
+  slug: "tokyo",
+  district: "東京",
+  host: "tokyo",
+  seasons: springAutumnOnly("tokyo"),
+  matchDistricts: ["東東京", "西東京"],
+});
 
 const kitaHokkaidoHsb = hsbAdapter({
   slug: "kita-hokkaido",
@@ -17209,6 +17238,9 @@ const ADAPTERS = [
   minamiHokkaidoHsb,
   higashiTokyoHsb,
   nishiTokyoHsb,
+  // ★春季・秋季の置き場所（地方大会だけの2地区）
+  hokkaidoHsb,
+  tokyoHsb,
 ];
 
 /**
@@ -17959,8 +17991,8 @@ function writeCoverage() {
     そのまま並べていたため、**中身が入っているのに「収録していない」と出ていた。**
   */
   const ALL_DISTRICTS = [
-    "北北海道", "南北海道", "青森", "岩手", "宮城", "秋田", "山形", "福島",
-    "茨城", "栃木", "群馬", "埼玉", "千葉", "東東京", "西東京", "神奈川",
+    "北北海道", "南北海道", "北海道", "青森", "岩手", "宮城", "秋田", "山形", "福島",
+    "茨城", "栃木", "群馬", "埼玉", "千葉", "東東京", "西東京", "東京", "神奈川",
     "新潟", "富山", "石川", "福井", "山梨", "長野", "岐阜", "静岡", "愛知",
     "三重", "滋賀", "京都", "大阪", "兵庫", "奈良", "和歌山",
     "鳥取", "島根", "岡山", "広島", "山口",
@@ -18683,14 +18715,31 @@ async function main() {
         あるので、正式名称の側が1件に決まらないときは略称（「市立千葉」）に頼る。
       */
       const norm = normalizeSchoolName(matchName ?? t.display);
-      let hits = index.byDistrict.get(`${adapter.district}\t${norm}`) ?? [];
+      /*
+        ★★★**学校が別の地区名で入っている県がある**（2026-09-05 その2。北海道・東京）。
+        **学校マスタの地区は甲子園の大会区分**なので、
+        **北海道の学校は「北北海道」か「南北海道」**に入っている。
+        ★**全道大会・都大会のアダプタ（`hokkaido` / `tokyo`）は、
+        そのままだと1校も引けない**（実際に「公立が絡む 0 件」になった）。
+        ★**`matchDistricts` を渡した県は、その地区を順に引く。**
+        ★**渡さない県は今までどおり自分の地区だけ**（既存49地区は1バイトも変わらない）。
+      */
+      const districts = adapter.matchDistricts ?? [adapter.district];
+      const lookup = (key) => {
+        for (const d of districts) {
+          const found = index.byDistrict.get(`${d}\t${key}`) ?? [];
+          if (found.length) return found;
+        }
+        return [];
+      };
+      let hits = lookup(norm);
       /*
         県内で引けなければ全国で引く（**地区大会の県外の相手**）。
         ★**県大会では使わない**（上の `isPrefectureOnly` を参照）。
       */
       // ★正式名称で引けなければ、画面に出す略称でもう一度引く（上の説明）
       if (hits.length !== 1 && matchName) {
-        const alt = index.byDistrict.get(`${adapter.district}\t${normalizeSchoolName(t.display)}`) ?? [];
+        const alt = lookup(normalizeSchoolName(t.display));
         if (alt.length === 1) hits = alt;
       }
       if (hits.length === 0 && allowNationwide) hits = index.nationwide.get(norm) ?? [];

@@ -59,4 +59,6 @@ export const REGIONAL_LOADERS: Record<string, () => Promise<RegionalDistrict>> =
   "minami-hokkaido": () => import("./minami-hokkaido.json").then((m) => m.default as RegionalDistrict),
   "higashi-tokyo": () => import("./higashi-tokyo.json").then((m) => m.default as RegionalDistrict),
   "nishi-tokyo": () => import("./nishi-tokyo.json").then((m) => m.default as RegionalDistrict),
+  "hokkaido": () => import("./hokkaido.json").then((m) => m.default as RegionalDistrict),
+  "tokyo": () => import("./tokyo.json").then((m) => m.default as RegionalDistrict),
 };

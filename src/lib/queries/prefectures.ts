@@ -1,4 +1,5 @@
 import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { REGIONAL_ONLY_DISTRICTS } from "@/lib/constants";
 import { throwIfError } from "@/lib/queries/shared";
 
 export type Prefecture = {
@@ -42,7 +43,15 @@ export async function getPrefectureBySlug(
     .maybeSingle();
 
   throwIfError(error, "都道府県の取得");
-  if (!data) return null;
+  /*
+    ★★**地方大会だけの地区（北海道・東京）はDBに行が無い**（2026-09-05 その2）。
+    **学校もニュースも投票も紐づかない**ので、行を足す必要が無い。
+    ★**定義は `REGIONAL_ONLY_DISTRICTS`**（`constants.ts` の説明を読むこと）。
+  */
+  if (!data) {
+    const only = REGIONAL_ONLY_DISTRICTS.find((p) => p.slug === slug);
+    return only ? { ...only, description: null } : null;
+  }
 
   const row = data as unknown as PrefectureRow;
   return {

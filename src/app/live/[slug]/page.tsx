@@ -8,7 +8,7 @@ import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { LeadText } from "@/components/common/LeadText";
 import { LiveBoard } from "@/components/results/LiveBoard";
 import { LiveRefresh } from "@/components/results/LiveRefresh";
-import { PREFECTURES } from "@/lib/constants";
+import { ALL_DISTRICT_SLUGS } from "@/lib/constants";
 import { fetchLiveBoard, livePrefectures } from "@/lib/live/hsb";
 import { getSchoolNameIndex } from "@/lib/queries/schools";
 import { buildLiveLead } from "@/lib/live-lead";
@@ -92,11 +92,10 @@ export default async function LivePrefecturePage({
   const index = await getSchoolNameIndex("koshien").catch(() => null);
 
   /*
-    ★★**`hokkaido` と `tokyo` には県のページが無い** ——
-    サイトの地区は甲子園の区分（北北海道・南北海道…）で、この2つは速報だけの単位。
-    **リンクを張れるときだけ張る**（張ると404になる）。
+    ★**県のページがある地区だけリンクする。**
+    ★**`hokkaido` / `tokyo` にもページができた**（2026-09-05 その2。春季・秋季の置き場所）。
   */
-  const districtHref = PREFECTURES.some((p) => p.slug === slug) ? `/prefectures/${slug}` : null;
+  const districtHref = ALL_DISTRICT_SLUGS.includes(slug) ? `/prefectures/${slug}` : null;
   // ★**夏は盤の大会名から「北北海道」などになる**（`boardName`）
   const title = board?.name ?? pref.name;
   /*

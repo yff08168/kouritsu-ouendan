@@ -6,7 +6,7 @@ import { Radio } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { LiveRefresh } from "@/components/results/LiveRefresh";
-import { PREFECTURES } from "@/lib/constants";
+import { ALL_DISTRICT_SLUGS } from "@/lib/constants";
 import { LIVE_SOURCE, fetchLiveBoxScore, livePrefectures } from "@/lib/live/hsb";
 
 /** ★県の速報板と同じ間隔。**出典を叩く間隔は `hsb.ts` が持っている** */
@@ -52,7 +52,7 @@ export default async function LiveGamePage({
           // ★ hokkaido / tokyo には県のページが無いので、あるときだけリンクする
           {
             label: pref.name,
-            ...(PREFECTURES.some((p) => p.slug === slug) ? { href: `/prefectures/${slug}` } : {}),
+            ...(ALL_DISTRICT_SLUGS.includes(slug) ? { href: `/prefectures/${slug}` } : {}),
           },
           { label: "試合速報", href: `/live/${slug}` },
           { label: box ? `${box.teams[0].name} - ${box.teams[1].name}` : "試合" },

@@ -312,8 +312,13 @@ export async function fetchLiveBoard(slug: string): Promise<LiveBoard | null> {
   const tournament = plain(/<p class="games_name">([\s\S]*?)<\/p>/.exec(html)?.[1] ?? "") || null;
   return {
     slug,
-    // ★**夏だけ「北北海道」「東東京」などになる**（`boardName` を読むこと）
-    name: boardName(pref.name, tournament),
+    /*
+      ★**夏だけ「北北海道」「東東京」などになる**（`boardName` を読むこと）。
+      ★★**試合が1つも無い日は県名のまま** —— 大会が終わったあとも
+      **盤の見出しにはその大会名が残る**ので、
+      **秋なのに「南北海道の試合速報」と出ていた**（実際に出た）。
+    */
+    name: boardName(pref.name, games.length > 0 ? tournament : null),
     day: plain(/<span class="game_day">([\s\S]*?)<\/span>/.exec(html)?.[1] ?? "") || null,
     tournament,
     games,

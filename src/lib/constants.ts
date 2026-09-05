@@ -399,3 +399,31 @@ export const PREFECTURES: PrefectureMaster[] = [
 
 export const PREFECTURE_BY_SLUG = new Map(PREFECTURES.map((p) => [p.slug, p]));
 export const PREFECTURE_BY_ID = new Map(PREFECTURES.map((p) => [p.id, p]));
+
+/**
+ * ★★★**地方大会だけの地区**（2026-09-05 その2。運営者の判断）。
+ *
+ * **北海道と東京は、夏の甲子園予選だけが2つに分かれる** ——
+ * 春季・秋季は「北海道大会」「東京都大会」で**県ごとに1つ**しかない。
+ * ★**その大会はどちらの地区のものでもない**ので、
+ * `PREFECTURES`（＝甲子園の大会区分49件）には置き場所が無かった。
+ *
+ * ★★**`PREFECTURES` に混ぜないこと。**
+ * あちらは**タイル地図・色分け・甲子園の集計**が使う「甲子園の区分」で、
+ * **地図に北海道と東京のマスを足すと、北北海道…と二重に並ぶ。**
+ * ★**学校もニュースも投票も紐づかない**（学校は4地区のどれかに属している）。
+ *
+ * ★**idはJISコード**（北海道=1・東京=13）。**分割した4地区が 48〜51 を使っており、空いている。**
+ * ★★**DBの `prefectures` に行は足していない** —— この2地区には学校が1校も無く、
+ * **`getPrefectureBySlug` がここから返す**ので要らない。
+ */
+export const REGIONAL_ONLY_DISTRICTS = [
+  { id: 1, name: "北海道", fullName: "北海道", nameKana: "ほっかいどう", slug: "hokkaido", region: "北海道" },
+  { id: 13, name: "東京", fullName: "東京都", nameKana: "とうきょうと", slug: "tokyo", region: "関東" },
+] as const;
+
+/** ★**地方大会を持ちうる地区の slug**（49 + 2）。sitemap と県ページが使う */
+export const ALL_DISTRICT_SLUGS = [
+  ...PREFECTURES.map((p) => p.slug),
+  ...REGIONAL_ONLY_DISTRICTS.map((p) => p.slug),
+];

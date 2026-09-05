@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { SITE, PREFECTURES, RANKINGS } from "@/lib/constants";
+import { SITE, ALL_DISTRICT_SLUGS, PREFECTURES, RANKINGS } from "@/lib/constants";
 import { getAllSchoolSlugs, getIndexableSchoolSlugs } from "@/lib/queries/schools";
 import { getAllNewsSlugs } from "@/lib/queries/news";
 import { getAllPhenomenonSlugs } from "@/lib/queries/phenomena";
@@ -114,8 +114,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  const prefecturePages: MetadataRoute.Sitemap = PREFECTURES.map((p) => ({
-    url: url(`/prefectures/${p.slug}`),
+  // ★**地方大会だけの2地区（北海道・東京）も載せる**（2026-09-05 その2）
+  const prefecturePages: MetadataRoute.Sitemap = ALL_DISTRICT_SLUGS.map((slug) => ({
+    url: url(`/prefectures/${slug}`),
     lastModified: now,
     changeFrequency: "weekly",
     priority: 0.6,
@@ -130,11 +131,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   */
   const tournamentPages: MetadataRoute.Sitemap = (
     await Promise.all(
-      PREFECTURES.map(async (p) => {
-        const district = await getRegionalDistrict(p.slug);
+      ALL_DISTRICT_SLUGS.map(async (slug) => {
+        const district = await getRegionalDistrict(slug);
         if (!district) return [];
         return listTournaments(district).map((t) => ({
-          url: url(`/prefectures/${p.slug}/${t.slug}`),
+          url: url(`/prefectures/${slug}/${t.slug}`),
           lastModified: now,
           changeFrequency: "weekly" as const,
           priority: 0.6,

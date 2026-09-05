@@ -4980,6 +4980,1527 @@
       ]
     },
     {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "1回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "泉松陵",
+          "score": 7,
+          "won": true,
+          "name": "泉松陵高校",
+          "slug": "izumishoryo"
+        },
+        {
+          "display": "多賀城",
+          "score": 2,
+          "won": false,
+          "name": "多賀城高校",
+          "slug": "tagajo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "1回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "宮城広瀬",
+          "score": 4,
+          "won": true,
+          "name": "宮城広瀬高校",
+          "slug": "miyagihirose"
+        },
+        {
+          "display": "石巻好文館",
+          "score": 1,
+          "won": false,
+          "name": "石巻好文館高校",
+          "slug": "ishinomakikobunkan"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "城南",
+          "score": 10,
+          "won": true,
+          "name": "城南",
+          "slug": null
+        },
+        {
+          "display": "響・水産連合",
+          "score": 0,
+          "won": false,
+          "name": "響・水産連合",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "仙台",
+          "score": 6,
+          "won": true,
+          "name": "仙台高校",
+          "slug": "sendai"
+        },
+        {
+          "display": "仙台第二",
+          "score": 5,
+          "won": false,
+          "name": "仙台第二高校",
+          "slug": "sendaidaini"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-14",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "大崎中央",
+          "score": 13,
+          "won": true,
+          "name": "大崎中央",
+          "slug": null
+        },
+        {
+          "display": "松島",
+          "score": 9,
+          "won": false,
+          "name": "松島高校",
+          "slug": "matsushima"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-13",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "涌谷",
+          "score": 0,
+          "won": false,
+          "name": "涌谷高校",
+          "slug": "wakuya"
+        },
+        {
+          "display": "佐沼",
+          "score": 12,
+          "won": true,
+          "name": "佐沼高校",
+          "slug": "sanuma"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "泉松陵",
+          "score": 20,
+          "won": true,
+          "name": "泉松陵高校",
+          "slug": "izumishoryo"
+        },
+        {
+          "display": "鹿島台商業",
+          "score": 0,
+          "won": false,
+          "name": "鹿島台商業高校",
+          "slug": "kashimadaishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "利府",
+          "score": 9,
+          "won": true,
+          "name": "利府高校",
+          "slug": "rifu"
+        },
+        {
+          "display": "中新田",
+          "score": 2,
+          "won": false,
+          "name": "中新田高校",
+          "slug": "nakaniida"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-15",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "一・崎・山連合",
+          "score": 0,
+          "won": false,
+          "name": "一・崎・山連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "仙台南",
+          "score": 10,
+          "won": true,
+          "name": "仙台南高校",
+          "slug": "sendaiminami"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-13",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "石巻工",
+          "score": 9,
+          "won": true,
+          "name": "石巻工業高校",
+          "slug": "ishinomakikogyo"
+        },
+        {
+          "display": "白石工業",
+          "score": 2,
+          "won": false,
+          "name": "白石工業高校",
+          "slug": "shiroishikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-12",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "東北",
+          "score": 9,
+          "won": true,
+          "name": "東北",
+          "slug": null
+        },
+        {
+          "display": "生文大",
+          "score": 2,
+          "won": false,
+          "name": "生文大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-15",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "亘理",
+          "score": 0,
+          "won": false,
+          "name": "亘理高校",
+          "slug": "watari"
+        },
+        {
+          "display": "黒川",
+          "score": 15,
+          "won": true,
+          "name": "黒川高校",
+          "slug": "kurokawa"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "大河原商業",
+          "score": 2,
+          "won": false,
+          "name": "大河原商業",
+          "slug": null
+        },
+        {
+          "display": "角田",
+          "score": 9,
+          "won": true,
+          "name": "角田高校",
+          "slug": "kakuda"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "平成の森しおかぜ球場",
+      "teams": [
+        {
+          "display": "石巻",
+          "score": 7,
+          "won": true,
+          "name": "石巻高校",
+          "slug": "ishinomaki"
+        },
+        {
+          "display": "宮城広瀬",
+          "score": 0,
+          "won": false,
+          "name": "宮城広瀬高校",
+          "slug": "miyagihirose"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "平成の森しおかぜ球場",
+      "teams": [
+        {
+          "display": "東陵",
+          "score": 6,
+          "won": true,
+          "name": "東陵",
+          "slug": null
+        },
+        {
+          "display": "仙台西",
+          "score": 0,
+          "won": false,
+          "name": "仙台西高校",
+          "slug": "sendainishi"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "平成の森しおかぜ球場",
+      "teams": [
+        {
+          "display": "泉",
+          "score": 3,
+          "won": false,
+          "name": "泉高校",
+          "slug": "izumi"
+        },
+        {
+          "display": "気仙沼向洋",
+          "score": 9,
+          "won": true,
+          "name": "気仙沼向洋高校",
+          "slug": "kesennumakoyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "平成の森しおかぜ球場",
+      "teams": [
+        {
+          "display": "泉館山",
+          "score": 3,
+          "won": true,
+          "name": "泉館山高校",
+          "slug": "izumitateyama"
+        },
+        {
+          "display": "石巻西",
+          "score": 1,
+          "won": false,
+          "name": "石巻西高校",
+          "slug": "ishinomakinishi"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "加美農",
+          "score": 1,
+          "won": false,
+          "name": "加美農業高校",
+          "slug": "kaminogyo"
+        },
+        {
+          "display": "仙台商",
+          "score": 14,
+          "won": true,
+          "name": "仙台商業高校",
+          "slug": "sendaishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "3回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "城南",
+          "score": 2,
+          "won": false,
+          "name": "城南",
+          "slug": null
+        },
+        {
+          "display": "仙台",
+          "score": 11,
+          "won": true,
+          "name": "仙台高校",
+          "slug": "sendai"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "3回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "大崎中央",
+          "score": 1,
+          "won": false,
+          "name": "大崎中央",
+          "slug": null
+        },
+        {
+          "display": "佐沼",
+          "score": 4,
+          "won": true,
+          "name": "佐沼高校",
+          "slug": "sanuma"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "3回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "泉松陵",
+          "score": 1,
+          "won": false,
+          "name": "泉松陵高校",
+          "slug": "izumishoryo"
+        },
+        {
+          "display": "利府",
+          "score": 11,
+          "won": true,
+          "name": "利府高校",
+          "slug": "rifu"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "3回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "仙台南",
+          "score": 6,
+          "won": true,
+          "name": "仙台南高校",
+          "slug": "sendaiminami"
+        },
+        {
+          "display": "石巻工",
+          "score": 4,
+          "won": false,
+          "name": "石巻工業高校",
+          "slug": "ishinomakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "3回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "東北",
+          "score": 11,
+          "won": true,
+          "name": "東北",
+          "slug": null
+        },
+        {
+          "display": "黒川",
+          "score": 1,
+          "won": false,
+          "name": "黒川高校",
+          "slug": "kurokawa"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "3回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "角田",
+          "score": 1,
+          "won": false,
+          "name": "角田高校",
+          "slug": "kakuda"
+        },
+        {
+          "display": "石巻",
+          "score": 5,
+          "won": true,
+          "name": "石巻高校",
+          "slug": "ishinomaki"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-22",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "3回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "東陵",
+          "score": 7,
+          "won": true,
+          "name": "東陵",
+          "slug": null
+        },
+        {
+          "display": "気仙沼向洋",
+          "score": 0,
+          "won": false,
+          "name": "気仙沼向洋高校",
+          "slug": "kesennumakoyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-22",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "3回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "泉館山",
+          "score": 3,
+          "won": false,
+          "name": "泉館山高校",
+          "slug": "izumitateyama"
+        },
+        {
+          "display": "仙台商",
+          "score": 6,
+          "won": true,
+          "name": "仙台商業高校",
+          "slug": "sendaishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "4回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "仙台",
+          "score": 10,
+          "won": true,
+          "name": "仙台高校",
+          "slug": "sendai"
+        },
+        {
+          "display": "佐沼",
+          "score": 3,
+          "won": false,
+          "name": "佐沼高校",
+          "slug": "sanuma"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "4回戦",
+      "venue": "楽天イーグルス蔵王球場",
+      "teams": [
+        {
+          "display": "利府",
+          "score": 6,
+          "won": true,
+          "name": "利府高校",
+          "slug": "rifu"
+        },
+        {
+          "display": "仙台南",
+          "score": 2,
+          "won": false,
+          "name": "仙台南高校",
+          "slug": "sendaiminami"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "4回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "東北",
+          "score": 5,
+          "won": true,
+          "name": "東北",
+          "slug": null
+        },
+        {
+          "display": "石巻",
+          "score": 2,
+          "won": false,
+          "name": "石巻高校",
+          "slug": "ishinomaki"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "4回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "東陵",
+          "score": 5,
+          "won": true,
+          "name": "東陵",
+          "slug": null
+        },
+        {
+          "display": "仙台商",
+          "score": 0,
+          "won": false,
+          "name": "仙台商業高校",
+          "slug": "sendaishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "準々決勝",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "仙台",
+          "score": 5,
+          "won": true,
+          "name": "仙台高校",
+          "slug": "sendai"
+        },
+        {
+          "display": "利府",
+          "score": 1,
+          "won": false,
+          "name": "利府高校",
+          "slug": "rifu"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "準々決勝",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "東北",
+          "score": 0,
+          "won": false,
+          "name": "東北",
+          "slug": null
+        },
+        {
+          "display": "東陵",
+          "score": 3,
+          "won": true,
+          "name": "東陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "準決勝",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "仙台",
+          "score": 4,
+          "won": true,
+          "name": "仙台高校",
+          "slug": "sendai"
+        },
+        {
+          "display": "東陵",
+          "score": 1,
+          "won": false,
+          "name": "東陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "1回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "宮城工",
+          "score": 0,
+          "won": false,
+          "name": "宮城工",
+          "slug": null
+        },
+        {
+          "display": "富谷",
+          "score": 13,
+          "won": true,
+          "name": "富谷高校",
+          "slug": "tomiya"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "仙台育英",
+          "score": 15,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        },
+        {
+          "display": "塩釜",
+          "score": 2,
+          "won": false,
+          "name": "塩釜高校",
+          "slug": "shiogama"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "仙台第三",
+          "score": 3,
+          "won": false,
+          "name": "仙台第三高校",
+          "slug": "sendaidaisan"
+        },
+        {
+          "display": "聖和",
+          "score": 5,
+          "won": true,
+          "name": "聖和",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "平成の森しおかぜ球場",
+      "teams": [
+        {
+          "display": "石巻商",
+          "score": 3,
+          "won": false,
+          "name": "石巻商業高校",
+          "slug": "ishinomakishogyo"
+        },
+        {
+          "display": "気仙沼",
+          "score": 10,
+          "won": true,
+          "name": "気仙沼高校",
+          "slug": "kesennuma"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "迫桜",
+          "score": 5,
+          "won": false,
+          "name": "迫桜高校",
+          "slug": "hakuo"
+        },
+        {
+          "display": "仙台工",
+          "score": 6,
+          "won": true,
+          "name": "仙台工業高校",
+          "slug": "sendaikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "富谷",
+          "score": 4,
+          "won": false,
+          "name": "富谷高校",
+          "slug": "tomiya"
+        },
+        {
+          "display": "仙台高専名取",
+          "score": 5,
+          "won": true,
+          "name": "仙台高専名取",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 0,
+          "won": false,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "柴田",
+          "score": 9,
+          "won": true,
+          "name": "柴田高校",
+          "slug": "shibata"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-12",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "宮城農",
+          "score": 6,
+          "won": false,
+          "name": "宮城農",
+          "slug": null
+        },
+        {
+          "display": "東北学院",
+          "score": 7,
+          "won": true,
+          "name": "東北学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-13",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "古川学園",
+          "score": 9,
+          "won": true,
+          "name": "古川学園",
+          "slug": null
+        },
+        {
+          "display": "東北学院榴ケ岡",
+          "score": 7,
+          "won": false,
+          "name": "東北学院榴ケ岡",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "仙台第一",
+          "score": 2,
+          "won": true,
+          "name": "仙台第一高校",
+          "slug": "sendaidaiichi"
+        },
+        {
+          "display": "小牛田農林",
+          "score": 1,
+          "won": false,
+          "name": "小牛田農林高校",
+          "slug": "kogotanorin"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "柴田農林",
+          "score": 5,
+          "won": false,
+          "name": "柴田農林",
+          "slug": null
+        },
+        {
+          "display": "村田",
+          "score": 11,
+          "won": true,
+          "name": "村田高校",
+          "slug": "murata"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "向山",
+          "score": 2,
+          "won": true,
+          "name": "向山",
+          "slug": null
+        },
+        {
+          "display": "古川",
+          "score": 1,
+          "won": false,
+          "name": "古川高校",
+          "slug": "furukawa"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-12",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "白石",
+          "score": 3,
+          "won": false,
+          "name": "白石高校",
+          "slug": "shiroishi"
+        },
+        {
+          "display": "登米",
+          "score": 7,
+          "won": true,
+          "name": "登米高校",
+          "slug": "tome"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-15",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "仙台東",
+          "score": 16,
+          "won": true,
+          "name": "仙台東高校",
+          "slug": "sendaihigashi"
+        },
+        {
+          "display": "名取",
+          "score": 8,
+          "won": false,
+          "name": "名取高校",
+          "slug": "natori"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-13",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "古川黎明",
+          "score": 5,
+          "won": false,
+          "name": "古川黎明高校",
+          "slug": "furukawareimei"
+        },
+        {
+          "display": "築館",
+          "score": 8,
+          "won": true,
+          "name": "築館高校",
+          "slug": "tsukidate"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "平成の森しおかぜ球場",
+      "teams": [
+        {
+          "display": "志・石北連合",
+          "score": 1,
+          "won": false,
+          "name": "志・石北連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "登米総合",
+          "score": 16,
+          "won": true,
+          "name": "登米総合",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "2回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "名取北",
+          "score": 0,
+          "won": false,
+          "name": "名取北高校",
+          "slug": "natorikita"
+        },
+        {
+          "display": "古川工",
+          "score": 9,
+          "won": true,
+          "name": "古川工業高校",
+          "slug": "furukawakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-22",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "3回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "仙台育英",
+          "score": 9,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        },
+        {
+          "display": "聖和",
+          "score": 1,
+          "won": false,
+          "name": "聖和",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-22",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "3回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "気仙沼",
+          "score": 11,
+          "won": true,
+          "name": "気仙沼高校",
+          "slug": "kesennuma"
+        },
+        {
+          "display": "仙台工",
+          "score": 10,
+          "won": false,
+          "name": "仙台工業高校",
+          "slug": "sendaikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "3回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "仙台高専名取",
+          "score": 1,
+          "won": false,
+          "name": "仙台高専名取",
+          "slug": null
+        },
+        {
+          "display": "柴田",
+          "score": 13,
+          "won": true,
+          "name": "柴田高校",
+          "slug": "shibata"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "3回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "東北学院",
+          "score": 7,
+          "won": true,
+          "name": "東北学院",
+          "slug": null
+        },
+        {
+          "display": "古川学園",
+          "score": 2,
+          "won": false,
+          "name": "古川学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "3回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "仙台第一",
+          "score": 8,
+          "won": true,
+          "name": "仙台第一高校",
+          "slug": "sendaidaiichi"
+        },
+        {
+          "display": "村田",
+          "score": 1,
+          "won": false,
+          "name": "村田高校",
+          "slug": "murata"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "3回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "向山",
+          "score": 2,
+          "won": false,
+          "name": "向山",
+          "slug": null
+        },
+        {
+          "display": "登米",
+          "score": 6,
+          "won": true,
+          "name": "登米高校",
+          "slug": "tome"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "3回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "仙台東",
+          "score": 10,
+          "won": true,
+          "name": "仙台東高校",
+          "slug": "sendaihigashi"
+        },
+        {
+          "display": "築館",
+          "score": 3,
+          "won": false,
+          "name": "築館高校",
+          "slug": "tsukidate"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "3回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "登米総合",
+          "score": 2,
+          "won": false,
+          "name": "登米総合",
+          "slug": null
+        },
+        {
+          "display": "古川工",
+          "score": 11,
+          "won": true,
+          "name": "古川工業高校",
+          "slug": "furukawakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "4回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "仙台育英",
+          "score": 11,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        },
+        {
+          "display": "気仙沼",
+          "score": 0,
+          "won": false,
+          "name": "気仙沼高校",
+          "slug": "kesennuma"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "4回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "柴田",
+          "score": 5,
+          "won": true,
+          "name": "柴田高校",
+          "slug": "shibata"
+        },
+        {
+          "display": "東北学院",
+          "score": 4,
+          "won": false,
+          "name": "東北学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "4回戦",
+      "venue": "楽天イーグルス蔵王球場",
+      "teams": [
+        {
+          "display": "仙台第一",
+          "score": 7,
+          "won": true,
+          "name": "仙台第一高校",
+          "slug": "sendaidaiichi"
+        },
+        {
+          "display": "登米",
+          "score": 0,
+          "won": false,
+          "name": "登米高校",
+          "slug": "tome"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "4回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "仙台東",
+          "score": 4,
+          "won": false,
+          "name": "仙台東高校",
+          "slug": "sendaihigashi"
+        },
+        {
+          "display": "古川工",
+          "score": 7,
+          "won": true,
+          "name": "古川工業高校",
+          "slug": "furukawakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "準々決勝",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "仙台育英",
+          "score": 4,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        },
+        {
+          "display": "柴田",
+          "score": 3,
+          "won": false,
+          "name": "柴田高校",
+          "slug": "shibata"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "準々決勝",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "仙台第一",
+          "score": 5,
+          "won": true,
+          "name": "仙台第一高校",
+          "slug": "sendaidaiichi"
+        },
+        {
+          "display": "古川工",
+          "score": 3,
+          "won": false,
+          "name": "古川工業高校",
+          "slug": "furukawakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "準決勝",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "仙台育英",
+          "score": 7,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        },
+        {
+          "display": "仙台第一",
+          "score": 1,
+          "won": false,
+          "name": "仙台第一高校",
+          "slug": "sendaidaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 令和2年東北地区高等学校野球 宮城大会",
+      "round": "決勝",
+      "venue": "楽天生命パーク宮城",
+      "teams": [
+        {
+          "display": "仙台育英",
+          "score": 8,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        },
+        {
+          "display": "仙台",
+          "score": 2,
+          "won": false,
+          "name": "仙台高校",
+          "slug": "sendai"
+        }
+      ]
+    },
+    {
       "date": "2018-07-15",
       "season": "summer",
       "tournament": "第100回全国高等学校野球選手権記念 宮城大会",
@@ -16183,1248 +17704,6 @@
       ]
     },
     {
-      "date": "2018-09-16",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "仙台商業",
-          "score": 2,
-          "won": false,
-          "name": "仙台商業高校",
-          "slug": "sendaishogyo"
-        },
-        {
-          "display": "佐沼",
-          "score": 7,
-          "won": true,
-          "name": "佐沼高校",
-          "slug": "sanuma"
-        }
-      ]
-    },
-    {
-      "date": "2018-09-15",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "気仙沼向洋",
-          "score": 5,
-          "won": true,
-          "name": "気仙沼向洋高校",
-          "slug": "kesennumakoyo"
-        },
-        {
-          "display": "利府",
-          "score": 4,
-          "won": false,
-          "name": "利府高校",
-          "slug": "rifu"
-        }
-      ]
-    },
-    {
-      "date": "2018-09-15",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "白石",
-          "score": 0,
-          "won": false,
-          "name": "白石高校",
-          "slug": "shiroishi"
-        },
-        {
-          "display": "柴田",
-          "score": 9,
-          "won": true,
-          "name": "柴田高校",
-          "slug": "shibata"
-        }
-      ]
-    },
-    {
-      "date": "2018-09-15",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "仙台育英",
-          "score": 7,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        },
-        {
-          "display": "仙台東",
-          "score": 3,
-          "won": false,
-          "name": "仙台東高校",
-          "slug": "sendaihigashi"
-        }
-      ]
-    },
-    {
-      "date": "2018-09-16",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "岩ケ崎",
-          "score": 12,
-          "won": true,
-          "name": "岩ヶ崎高校",
-          "slug": "iwagasaki"
-        },
-        {
-          "display": "仙台高専名取",
-          "score": 2,
-          "won": false,
-          "name": "仙台高専名取",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2018-09-16",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "富谷",
-          "score": 3,
-          "won": false,
-          "name": "富谷高校",
-          "slug": "tomiya"
-        },
-        {
-          "display": "名取北",
-          "score": 8,
-          "won": true,
-          "name": "名取北高校",
-          "slug": "natorikita"
-        }
-      ]
-    },
-    {
-      "date": "2018-09-17",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "東北学院榴ケ岡",
-          "score": 3,
-          "won": false,
-          "name": "東北学院榴ケ岡",
-          "slug": null
-        },
-        {
-          "display": "佐沼",
-          "score": 5,
-          "won": true,
-          "name": "佐沼高校",
-          "slug": "sanuma"
-        }
-      ]
-    },
-    {
-      "date": "2018-09-17",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "気仙沼向洋",
-          "score": 3,
-          "won": false,
-          "name": "気仙沼向洋高校",
-          "slug": "kesennumakoyo"
-        },
-        {
-          "display": "柴田",
-          "score": 10,
-          "won": true,
-          "name": "柴田高校",
-          "slug": "shibata"
-        }
-      ]
-    },
-    {
-      "date": "2018-09-17",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "仙台育英",
-          "score": 12,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        },
-        {
-          "display": "岩ケ崎",
-          "score": 2,
-          "won": false,
-          "name": "岩ヶ崎高校",
-          "slug": "iwagasaki"
-        }
-      ]
-    },
-    {
-      "date": "2018-09-17",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "名取北",
-          "score": 2,
-          "won": false,
-          "name": "名取北高校",
-          "slug": "natorikita"
-        },
-        {
-          "display": "東陵",
-          "score": 6,
-          "won": true,
-          "name": "東陵",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2018-09-19",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "佐沼",
-          "score": 1,
-          "won": false,
-          "name": "佐沼高校",
-          "slug": "sanuma"
-        },
-        {
-          "display": "柴田",
-          "score": 2,
-          "won": true,
-          "name": "柴田高校",
-          "slug": "shibata"
-        }
-      ]
-    },
-    {
-      "date": "2018-09-19",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "仙台育英",
-          "score": 5,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        },
-        {
-          "display": "東陵",
-          "score": 3,
-          "won": false,
-          "name": "東陵",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2018-09-22",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "柴田",
-          "score": 0,
-          "won": false,
-          "name": "柴田高校",
-          "slug": "shibata"
-        },
-        {
-          "display": "仙台育英",
-          "score": 15,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2018-09-16",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "石巻工業",
-          "score": 2,
-          "won": true,
-          "name": "石巻工業高校",
-          "slug": "ishinomakikogyo"
-        },
-        {
-          "display": "宮城農業",
-          "score": 0,
-          "won": false,
-          "name": "宮城農業",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2018-09-16",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "仙台南",
-          "score": 4,
-          "won": true,
-          "name": "仙台南高校",
-          "slug": "sendaiminami"
-        },
-        {
-          "display": "東北生文大",
-          "score": 1,
-          "won": false,
-          "name": "東北生文大",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2018-09-15",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "聖和学園",
-          "score": 3,
-          "won": false,
-          "name": "聖和学園",
-          "slug": null
-        },
-        {
-          "display": "大崎中央",
-          "score": 4,
-          "won": true,
-          "name": "大崎中央",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2018-09-15",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "多賀城",
-          "score": 2,
-          "won": false,
-          "name": "多賀城高校",
-          "slug": "tagajo"
-        },
-        {
-          "display": "東北学院",
-          "score": 9,
-          "won": true,
-          "name": "東北学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2018-09-16",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "古川",
-          "score": 5,
-          "won": true,
-          "name": "古川高校",
-          "slug": "furukawa"
-        },
-        {
-          "display": "松島",
-          "score": 0,
-          "won": false,
-          "name": "松島高校",
-          "slug": "matsushima"
-        }
-      ]
-    },
-    {
-      "date": "2018-09-16",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "泉松陵",
-          "score": 13,
-          "won": true,
-          "name": "泉松陵高校",
-          "slug": "izumishoryo"
-        },
-        {
-          "display": "塩釜",
-          "score": 2,
-          "won": false,
-          "name": "塩釜高校",
-          "slug": "shiogama"
-        }
-      ]
-    },
-    {
-      "date": "2018-09-17",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "仙台城南",
-          "score": 8,
-          "won": true,
-          "name": "仙台城南",
-          "slug": null
-        },
-        {
-          "display": "石巻工業",
-          "score": 7,
-          "won": false,
-          "name": "石巻工業高校",
-          "slug": "ishinomakikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2018-09-17",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "仙台南",
-          "score": 0,
-          "won": false,
-          "name": "仙台南高校",
-          "slug": "sendaiminami"
-        },
-        {
-          "display": "大崎中央",
-          "score": 4,
-          "won": true,
-          "name": "大崎中央",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2018-09-17",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "東北学院",
-          "score": 3,
-          "won": false,
-          "name": "東北学院",
-          "slug": null
-        },
-        {
-          "display": "古川",
-          "score": 6,
-          "won": true,
-          "name": "古川高校",
-          "slug": "furukawa"
-        }
-      ]
-    },
-    {
-      "date": "2018-09-17",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "泉松陵",
-          "score": 3,
-          "won": false,
-          "name": "泉松陵高校",
-          "slug": "izumishoryo"
-        },
-        {
-          "display": "東北",
-          "score": 8,
-          "won": true,
-          "name": "東北",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2018-09-19",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "仙台城南",
-          "score": 4,
-          "won": false,
-          "name": "仙台城南",
-          "slug": null
-        },
-        {
-          "display": "大崎中央",
-          "score": 12,
-          "won": true,
-          "name": "大崎中央",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2018-09-19",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "古川",
-          "score": 4,
-          "won": true,
-          "name": "古川高校",
-          "slug": "furukawa"
-        },
-        {
-          "display": "東北",
-          "score": 3,
-          "won": false,
-          "name": "東北",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2018-09-22",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "大崎中央",
-          "score": 0,
-          "won": false,
-          "name": "大崎中央",
-          "slug": null
-        },
-        {
-          "display": "古川",
-          "score": 4,
-          "won": true,
-          "name": "古川高校",
-          "slug": "furukawa"
-        }
-      ]
-    },
-    {
-      "date": "2018-09-23",
-      "season": "autumn",
-      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "古川",
-          "score": 3,
-          "won": false,
-          "name": "古川高校",
-          "slug": "furukawa"
-        },
-        {
-          "display": "仙台育英",
-          "score": 17,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2019-09-15",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "白石工業",
-          "score": 3,
-          "won": true,
-          "name": "白石工業高校",
-          "slug": "shiroishikogyo"
-        },
-        {
-          "display": "登米",
-          "score": 1,
-          "won": false,
-          "name": "登米高校",
-          "slug": "tome"
-        }
-      ]
-    },
-    {
-      "date": "2019-09-15",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "小牛田農林",
-          "score": 2,
-          "won": true,
-          "name": "小牛田農林高校",
-          "slug": "kogotanorin"
-        },
-        {
-          "display": "宮城県工業",
-          "score": 1,
-          "won": false,
-          "name": "宮城県工業高校",
-          "slug": "miyagikenkogyo"
-        }
-      ]
-    },
-    {
-      "date": "2019-09-14",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "仙台城南",
-          "score": 6,
-          "won": true,
-          "name": "仙台城南",
-          "slug": null
-        },
-        {
-          "display": "仙台南",
-          "score": 4,
-          "won": false,
-          "name": "仙台南高校",
-          "slug": "sendaiminami"
-        }
-      ]
-    },
-    {
-      "date": "2019-09-14",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "東陵",
-          "score": 0,
-          "won": false,
-          "name": "東陵",
-          "slug": null
-        },
-        {
-          "display": "仙台第三",
-          "score": 1,
-          "won": true,
-          "name": "仙台第三高校",
-          "slug": "sendaidaisan"
-        }
-      ]
-    },
-    {
-      "date": "2019-09-15",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "黒川",
-          "score": 1,
-          "won": false,
-          "name": "黒川高校",
-          "slug": "kurokawa"
-        },
-        {
-          "display": "東北",
-          "score": 7,
-          "won": true,
-          "name": "東北",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2019-09-15",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "宮城農業",
-          "score": 3,
-          "won": false,
-          "name": "宮城農業",
-          "slug": null
-        },
-        {
-          "display": "聖和学園",
-          "score": 4,
-          "won": true,
-          "name": "聖和学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2019-09-17",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "大崎中央",
-          "score": 0,
-          "won": false,
-          "name": "大崎中央",
-          "slug": null
-        },
-        {
-          "display": "白石工業",
-          "score": 2,
-          "won": true,
-          "name": "白石工業高校",
-          "slug": "shiroishikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2019-09-17",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "小牛田農林",
-          "score": 4,
-          "won": false,
-          "name": "小牛田農林高校",
-          "slug": "kogotanorin"
-        },
-        {
-          "display": "仙台城南",
-          "score": 5,
-          "won": true,
-          "name": "仙台城南",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2019-09-17",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "仙台第三",
-          "score": 0,
-          "won": false,
-          "name": "仙台第三高校",
-          "slug": "sendaidaisan"
-        },
-        {
-          "display": "東北",
-          "score": 8,
-          "won": true,
-          "name": "東北",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2019-09-17",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "聖和学園",
-          "score": 2,
-          "won": false,
-          "name": "聖和学園",
-          "slug": null
-        },
-        {
-          "display": "仙台育英",
-          "score": 11,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2019-09-19",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "白石工業",
-          "score": 3,
-          "won": false,
-          "name": "白石工業高校",
-          "slug": "shiroishikogyo"
-        },
-        {
-          "display": "仙台城南",
-          "score": 5,
-          "won": true,
-          "name": "仙台城南",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2019-09-19",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "東北",
-          "score": 7,
-          "won": false,
-          "name": "東北",
-          "slug": null
-        },
-        {
-          "display": "仙台育英",
-          "score": 9,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2019-09-21",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "仙台城南",
-          "score": 0,
-          "won": false,
-          "name": "仙台城南",
-          "slug": null
-        },
-        {
-          "display": "仙台育英",
-          "score": 9,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2019-09-15",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "石巻",
-          "score": 2,
-          "won": false,
-          "name": "石巻高校",
-          "slug": "ishinomaki"
-        },
-        {
-          "display": "古川工業",
-          "score": 3,
-          "won": true,
-          "name": "古川工業高校",
-          "slug": "furukawakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2019-09-15",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "松島",
-          "score": 6,
-          "won": true,
-          "name": "松島高校",
-          "slug": "matsushima"
-        },
-        {
-          "display": "古川学園",
-          "score": 5,
-          "won": false,
-          "name": "古川学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2019-09-14",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "仙台",
-          "score": 2,
-          "won": false,
-          "name": "仙台高校",
-          "slug": "sendai"
-        },
-        {
-          "display": "仙台第一",
-          "score": 3,
-          "won": true,
-          "name": "仙台第一高校",
-          "slug": "sendaidaiichi"
-        }
-      ]
-    },
-    {
-      "date": "2019-09-14",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "東北学院榴ケ岡",
-          "score": 19,
-          "won": true,
-          "name": "東北学院榴ケ岡",
-          "slug": null
-        },
-        {
-          "display": "仙台高専名取",
-          "score": 4,
-          "won": false,
-          "name": "仙台高専名取",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2019-09-15",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "角田",
-          "score": 7,
-          "won": true,
-          "name": "角田高校",
-          "slug": "kakuda"
-        },
-        {
-          "display": "多賀城",
-          "score": 0,
-          "won": false,
-          "name": "多賀城高校",
-          "slug": "tagajo"
-        }
-      ]
-    },
-    {
-      "date": "2019-09-14",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "仙台商業",
-          "score": 7,
-          "won": true,
-          "name": "仙台商業高校",
-          "slug": "sendaishogyo"
-        },
-        {
-          "display": "塩釜",
-          "score": 0,
-          "won": false,
-          "name": "塩釜高校",
-          "slug": "shiogama"
-        }
-      ]
-    },
-    {
-      "date": "2019-09-17",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "柴田",
-          "score": 4,
-          "won": false,
-          "name": "柴田高校",
-          "slug": "shibata"
-        },
-        {
-          "display": "古川工業",
-          "score": 6,
-          "won": true,
-          "name": "古川工業高校",
-          "slug": "furukawakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2019-09-16",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "松島",
-          "score": 1,
-          "won": false,
-          "name": "松島高校",
-          "slug": "matsushima"
-        },
-        {
-          "display": "仙台第一",
-          "score": 5,
-          "won": true,
-          "name": "仙台第一高校",
-          "slug": "sendaidaiichi"
-        }
-      ]
-    },
-    {
-      "date": "2019-09-17",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "東北学院榴ケ岡",
-          "score": 7,
-          "won": true,
-          "name": "東北学院榴ケ岡",
-          "slug": null
-        },
-        {
-          "display": "角田",
-          "score": 2,
-          "won": false,
-          "name": "角田高校",
-          "slug": "kakuda"
-        }
-      ]
-    },
-    {
-      "date": "2019-09-15",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "仙台商業",
-          "score": 2,
-          "won": true,
-          "name": "仙台商業高校",
-          "slug": "sendaishogyo"
-        },
-        {
-          "display": "石巻工業",
-          "score": 0,
-          "won": false,
-          "name": "石巻工業高校",
-          "slug": "ishinomakikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2019-09-19",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "古川工業",
-          "score": 5,
-          "won": true,
-          "name": "古川工業高校",
-          "slug": "furukawakogyo"
-        },
-        {
-          "display": "仙台第一",
-          "score": 4,
-          "won": false,
-          "name": "仙台第一高校",
-          "slug": "sendaidaiichi"
-        }
-      ]
-    },
-    {
-      "date": "2019-09-19",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "東北学院榴ケ岡",
-          "score": 2,
-          "won": false,
-          "name": "東北学院榴ケ岡",
-          "slug": null
-        },
-        {
-          "display": "仙台商業",
-          "score": 10,
-          "won": true,
-          "name": "仙台商業高校",
-          "slug": "sendaishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2019-09-21",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "古川工業",
-          "score": 5,
-          "won": false,
-          "name": "古川工業高校",
-          "slug": "furukawakogyo"
-        },
-        {
-          "display": "仙台商業",
-          "score": 6,
-          "won": true,
-          "name": "仙台商業高校",
-          "slug": "sendaishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2019-09-22",
-      "season": "autumn",
-      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "仙台商業",
-          "score": 1,
-          "won": false,
-          "name": "仙台商業高校",
-          "slug": "sendaishogyo"
-        },
-        {
-          "display": "仙台育英",
-          "score": 12,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        }
-      ]
-    },
-    {
       "date": "2020-09-06",
       "season": "autumn",
       "tournament": "2020年 秋季東北地区高等学校野球宮城県大会",
@@ -18852,6 +19131,1248 @@
           "score": 0,
           "won": false,
           "name": "東北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "仙台商業",
+          "score": 2,
+          "won": false,
+          "name": "仙台商業高校",
+          "slug": "sendaishogyo"
+        },
+        {
+          "display": "佐沼",
+          "score": 7,
+          "won": true,
+          "name": "佐沼高校",
+          "slug": "sanuma"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-15",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "気仙沼向洋",
+          "score": 5,
+          "won": true,
+          "name": "気仙沼向洋高校",
+          "slug": "kesennumakoyo"
+        },
+        {
+          "display": "利府",
+          "score": 4,
+          "won": false,
+          "name": "利府高校",
+          "slug": "rifu"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-15",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "白石",
+          "score": 0,
+          "won": false,
+          "name": "白石高校",
+          "slug": "shiroishi"
+        },
+        {
+          "display": "柴田",
+          "score": 9,
+          "won": true,
+          "name": "柴田高校",
+          "slug": "shibata"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-15",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "仙台育英",
+          "score": 7,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        },
+        {
+          "display": "仙台東",
+          "score": 3,
+          "won": false,
+          "name": "仙台東高校",
+          "slug": "sendaihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岩ケ崎",
+          "score": 12,
+          "won": true,
+          "name": "岩ヶ崎高校",
+          "slug": "iwagasaki"
+        },
+        {
+          "display": "仙台高専名取",
+          "score": 2,
+          "won": false,
+          "name": "仙台高専名取",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富谷",
+          "score": 3,
+          "won": false,
+          "name": "富谷高校",
+          "slug": "tomiya"
+        },
+        {
+          "display": "名取北",
+          "score": 8,
+          "won": true,
+          "name": "名取北高校",
+          "slug": "natorikita"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東北学院榴ケ岡",
+          "score": 3,
+          "won": false,
+          "name": "東北学院榴ケ岡",
+          "slug": null
+        },
+        {
+          "display": "佐沼",
+          "score": 5,
+          "won": true,
+          "name": "佐沼高校",
+          "slug": "sanuma"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "気仙沼向洋",
+          "score": 3,
+          "won": false,
+          "name": "気仙沼向洋高校",
+          "slug": "kesennumakoyo"
+        },
+        {
+          "display": "柴田",
+          "score": 10,
+          "won": true,
+          "name": "柴田高校",
+          "slug": "shibata"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "仙台育英",
+          "score": 12,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        },
+        {
+          "display": "岩ケ崎",
+          "score": 2,
+          "won": false,
+          "name": "岩ヶ崎高校",
+          "slug": "iwagasaki"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "名取北",
+          "score": 2,
+          "won": false,
+          "name": "名取北高校",
+          "slug": "natorikita"
+        },
+        {
+          "display": "東陵",
+          "score": 6,
+          "won": true,
+          "name": "東陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-19",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐沼",
+          "score": 1,
+          "won": false,
+          "name": "佐沼高校",
+          "slug": "sanuma"
+        },
+        {
+          "display": "柴田",
+          "score": 2,
+          "won": true,
+          "name": "柴田高校",
+          "slug": "shibata"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-19",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "仙台育英",
+          "score": 5,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        },
+        {
+          "display": "東陵",
+          "score": 3,
+          "won": false,
+          "name": "東陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "柴田",
+          "score": 0,
+          "won": false,
+          "name": "柴田高校",
+          "slug": "shibata"
+        },
+        {
+          "display": "仙台育英",
+          "score": 15,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石巻工業",
+          "score": 2,
+          "won": true,
+          "name": "石巻工業高校",
+          "slug": "ishinomakikogyo"
+        },
+        {
+          "display": "宮城農業",
+          "score": 0,
+          "won": false,
+          "name": "宮城農業",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "仙台南",
+          "score": 4,
+          "won": true,
+          "name": "仙台南高校",
+          "slug": "sendaiminami"
+        },
+        {
+          "display": "東北生文大",
+          "score": 1,
+          "won": false,
+          "name": "東北生文大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-15",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "聖和学園",
+          "score": 3,
+          "won": false,
+          "name": "聖和学園",
+          "slug": null
+        },
+        {
+          "display": "大崎中央",
+          "score": 4,
+          "won": true,
+          "name": "大崎中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-15",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "多賀城",
+          "score": 2,
+          "won": false,
+          "name": "多賀城高校",
+          "slug": "tagajo"
+        },
+        {
+          "display": "東北学院",
+          "score": 9,
+          "won": true,
+          "name": "東北学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "古川",
+          "score": 5,
+          "won": true,
+          "name": "古川高校",
+          "slug": "furukawa"
+        },
+        {
+          "display": "松島",
+          "score": 0,
+          "won": false,
+          "name": "松島高校",
+          "slug": "matsushima"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-16",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "泉松陵",
+          "score": 13,
+          "won": true,
+          "name": "泉松陵高校",
+          "slug": "izumishoryo"
+        },
+        {
+          "display": "塩釜",
+          "score": 2,
+          "won": false,
+          "name": "塩釜高校",
+          "slug": "shiogama"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "仙台城南",
+          "score": 8,
+          "won": true,
+          "name": "仙台城南",
+          "slug": null
+        },
+        {
+          "display": "石巻工業",
+          "score": 7,
+          "won": false,
+          "name": "石巻工業高校",
+          "slug": "ishinomakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "仙台南",
+          "score": 0,
+          "won": false,
+          "name": "仙台南高校",
+          "slug": "sendaiminami"
+        },
+        {
+          "display": "大崎中央",
+          "score": 4,
+          "won": true,
+          "name": "大崎中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東北学院",
+          "score": 3,
+          "won": false,
+          "name": "東北学院",
+          "slug": null
+        },
+        {
+          "display": "古川",
+          "score": 6,
+          "won": true,
+          "name": "古川高校",
+          "slug": "furukawa"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-17",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "泉松陵",
+          "score": 3,
+          "won": false,
+          "name": "泉松陵高校",
+          "slug": "izumishoryo"
+        },
+        {
+          "display": "東北",
+          "score": 8,
+          "won": true,
+          "name": "東北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-19",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "仙台城南",
+          "score": 4,
+          "won": false,
+          "name": "仙台城南",
+          "slug": null
+        },
+        {
+          "display": "大崎中央",
+          "score": 12,
+          "won": true,
+          "name": "大崎中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-19",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "古川",
+          "score": 4,
+          "won": true,
+          "name": "古川高校",
+          "slug": "furukawa"
+        },
+        {
+          "display": "東北",
+          "score": 3,
+          "won": false,
+          "name": "東北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2018-09-22",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大崎中央",
+          "score": 0,
+          "won": false,
+          "name": "大崎中央",
+          "slug": null
+        },
+        {
+          "display": "古川",
+          "score": 4,
+          "won": true,
+          "name": "古川高校",
+          "slug": "furukawa"
+        }
+      ]
+    },
+    {
+      "date": "2018-09-23",
+      "season": "autumn",
+      "tournament": "2018年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "古川",
+          "score": 3,
+          "won": false,
+          "name": "古川高校",
+          "slug": "furukawa"
+        },
+        {
+          "display": "仙台育英",
+          "score": 17,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-09-15",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "白石工業",
+          "score": 3,
+          "won": true,
+          "name": "白石工業高校",
+          "slug": "shiroishikogyo"
+        },
+        {
+          "display": "登米",
+          "score": 1,
+          "won": false,
+          "name": "登米高校",
+          "slug": "tome"
+        }
+      ]
+    },
+    {
+      "date": "2019-09-15",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小牛田農林",
+          "score": 2,
+          "won": true,
+          "name": "小牛田農林高校",
+          "slug": "kogotanorin"
+        },
+        {
+          "display": "宮城県工業",
+          "score": 1,
+          "won": false,
+          "name": "宮城県工業高校",
+          "slug": "miyagikenkogyo"
+        }
+      ]
+    },
+    {
+      "date": "2019-09-14",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "仙台城南",
+          "score": 6,
+          "won": true,
+          "name": "仙台城南",
+          "slug": null
+        },
+        {
+          "display": "仙台南",
+          "score": 4,
+          "won": false,
+          "name": "仙台南高校",
+          "slug": "sendaiminami"
+        }
+      ]
+    },
+    {
+      "date": "2019-09-14",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東陵",
+          "score": 0,
+          "won": false,
+          "name": "東陵",
+          "slug": null
+        },
+        {
+          "display": "仙台第三",
+          "score": 1,
+          "won": true,
+          "name": "仙台第三高校",
+          "slug": "sendaidaisan"
+        }
+      ]
+    },
+    {
+      "date": "2019-09-15",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "黒川",
+          "score": 1,
+          "won": false,
+          "name": "黒川高校",
+          "slug": "kurokawa"
+        },
+        {
+          "display": "東北",
+          "score": 7,
+          "won": true,
+          "name": "東北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-09-15",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "宮城農業",
+          "score": 3,
+          "won": false,
+          "name": "宮城農業",
+          "slug": null
+        },
+        {
+          "display": "聖和学園",
+          "score": 4,
+          "won": true,
+          "name": "聖和学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-09-17",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大崎中央",
+          "score": 0,
+          "won": false,
+          "name": "大崎中央",
+          "slug": null
+        },
+        {
+          "display": "白石工業",
+          "score": 2,
+          "won": true,
+          "name": "白石工業高校",
+          "slug": "shiroishikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2019-09-17",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小牛田農林",
+          "score": 4,
+          "won": false,
+          "name": "小牛田農林高校",
+          "slug": "kogotanorin"
+        },
+        {
+          "display": "仙台城南",
+          "score": 5,
+          "won": true,
+          "name": "仙台城南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-09-17",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "仙台第三",
+          "score": 0,
+          "won": false,
+          "name": "仙台第三高校",
+          "slug": "sendaidaisan"
+        },
+        {
+          "display": "東北",
+          "score": 8,
+          "won": true,
+          "name": "東北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-09-17",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "聖和学園",
+          "score": 2,
+          "won": false,
+          "name": "聖和学園",
+          "slug": null
+        },
+        {
+          "display": "仙台育英",
+          "score": 11,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-09-19",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "白石工業",
+          "score": 3,
+          "won": false,
+          "name": "白石工業高校",
+          "slug": "shiroishikogyo"
+        },
+        {
+          "display": "仙台城南",
+          "score": 5,
+          "won": true,
+          "name": "仙台城南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-09-19",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東北",
+          "score": 7,
+          "won": false,
+          "name": "東北",
+          "slug": null
+        },
+        {
+          "display": "仙台育英",
+          "score": 9,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-09-21",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "仙台城南",
+          "score": 0,
+          "won": false,
+          "name": "仙台城南",
+          "slug": null
+        },
+        {
+          "display": "仙台育英",
+          "score": 9,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-09-15",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石巻",
+          "score": 2,
+          "won": false,
+          "name": "石巻高校",
+          "slug": "ishinomaki"
+        },
+        {
+          "display": "古川工業",
+          "score": 3,
+          "won": true,
+          "name": "古川工業高校",
+          "slug": "furukawakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2019-09-15",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松島",
+          "score": 6,
+          "won": true,
+          "name": "松島高校",
+          "slug": "matsushima"
+        },
+        {
+          "display": "古川学園",
+          "score": 5,
+          "won": false,
+          "name": "古川学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-09-14",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "仙台",
+          "score": 2,
+          "won": false,
+          "name": "仙台高校",
+          "slug": "sendai"
+        },
+        {
+          "display": "仙台第一",
+          "score": 3,
+          "won": true,
+          "name": "仙台第一高校",
+          "slug": "sendaidaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2019-09-14",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東北学院榴ケ岡",
+          "score": 19,
+          "won": true,
+          "name": "東北学院榴ケ岡",
+          "slug": null
+        },
+        {
+          "display": "仙台高専名取",
+          "score": 4,
+          "won": false,
+          "name": "仙台高専名取",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2019-09-15",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "角田",
+          "score": 7,
+          "won": true,
+          "name": "角田高校",
+          "slug": "kakuda"
+        },
+        {
+          "display": "多賀城",
+          "score": 0,
+          "won": false,
+          "name": "多賀城高校",
+          "slug": "tagajo"
+        }
+      ]
+    },
+    {
+      "date": "2019-09-14",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "仙台商業",
+          "score": 7,
+          "won": true,
+          "name": "仙台商業高校",
+          "slug": "sendaishogyo"
+        },
+        {
+          "display": "塩釜",
+          "score": 0,
+          "won": false,
+          "name": "塩釜高校",
+          "slug": "shiogama"
+        }
+      ]
+    },
+    {
+      "date": "2019-09-17",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "柴田",
+          "score": 4,
+          "won": false,
+          "name": "柴田高校",
+          "slug": "shibata"
+        },
+        {
+          "display": "古川工業",
+          "score": 6,
+          "won": true,
+          "name": "古川工業高校",
+          "slug": "furukawakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2019-09-16",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "松島",
+          "score": 1,
+          "won": false,
+          "name": "松島高校",
+          "slug": "matsushima"
+        },
+        {
+          "display": "仙台第一",
+          "score": 5,
+          "won": true,
+          "name": "仙台第一高校",
+          "slug": "sendaidaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2019-09-17",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東北学院榴ケ岡",
+          "score": 7,
+          "won": true,
+          "name": "東北学院榴ケ岡",
+          "slug": null
+        },
+        {
+          "display": "角田",
+          "score": 2,
+          "won": false,
+          "name": "角田高校",
+          "slug": "kakuda"
+        }
+      ]
+    },
+    {
+      "date": "2019-09-15",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "仙台商業",
+          "score": 2,
+          "won": true,
+          "name": "仙台商業高校",
+          "slug": "sendaishogyo"
+        },
+        {
+          "display": "石巻工業",
+          "score": 0,
+          "won": false,
+          "name": "石巻工業高校",
+          "slug": "ishinomakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2019-09-19",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "古川工業",
+          "score": 5,
+          "won": true,
+          "name": "古川工業高校",
+          "slug": "furukawakogyo"
+        },
+        {
+          "display": "仙台第一",
+          "score": 4,
+          "won": false,
+          "name": "仙台第一高校",
+          "slug": "sendaidaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2019-09-19",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東北学院榴ケ岡",
+          "score": 2,
+          "won": false,
+          "name": "東北学院榴ケ岡",
+          "slug": null
+        },
+        {
+          "display": "仙台商業",
+          "score": 10,
+          "won": true,
+          "name": "仙台商業高校",
+          "slug": "sendaishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2019-09-21",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "古川工業",
+          "score": 5,
+          "won": false,
+          "name": "古川工業高校",
+          "slug": "furukawakogyo"
+        },
+        {
+          "display": "仙台商業",
+          "score": 6,
+          "won": true,
+          "name": "仙台商業高校",
+          "slug": "sendaishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2019-09-22",
+      "season": "autumn",
+      "tournament": "2019年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "仙台商業",
+          "score": 1,
+          "won": false,
+          "name": "仙台商業高校",
+          "slug": "sendaishogyo"
+        },
+        {
+          "display": "仙台育英",
+          "score": 12,
+          "won": true,
+          "name": "仙台育英",
           "slug": null
         }
       ]

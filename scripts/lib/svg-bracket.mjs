@@ -133,7 +133,17 @@ export function readHsbBracket(html, { district = "", blocks = false } = {}) {
     ({ list }) =>
       list.length >= 4 && list.every((t, i) => i === 0 || Number(t.text) === Number(list[i - 1].text) + 1),
   );
-  const wideCols = columns.filter(({ list }) => list.length >= 4);
+  /*
+    ★★**1試合だけの「大会」がある**（2026-09-06。東京の2020年「東西決戦」）。
+    東西それぞれの優勝校が1試合だけ戦うもので、**スロット番号は2つしかない。**
+    ★**既定の「4つ以上」では入口で落ちる**（`スロット番号の列が0本`）。
+    ★★**緩めるのは「数字の列が紙に1本しか無いとき」だけ** ——
+    ふつうの紙は列が2本以上あるので、**この道には入らない**（実測で確かめてある）。
+    ★**組み立てのあとの検算（チーム数 − 試合数・出場校の一覧・優勝校）はそのまま効く。**
+  */
+  const wideCols = columns.filter(
+    ({ list }) => list.length >= 4 || (columns.length === 1 && list.length >= 2),
+  );
   /** "two" = 左右2段組（今までの紙）／"one" = 1段（山が1つ以上） */
   let mode, slotCols, center, slots, pitch;
   if (runCols.length === 2) {

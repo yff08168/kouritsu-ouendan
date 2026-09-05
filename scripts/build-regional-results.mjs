@@ -16220,28 +16220,29 @@ const aomoriHsb = hsbAdapter({
   slug: "aomori",
   district: "青森",
   host: "aomori",
-  summer2020: /^2020年青森県高等学校野球大会/,
+  // ★出典の題は実際に開いて確かめた（2026-09-06）
+  summer2020: /^令和2年度夏季青森県高等学校野球大会$/,
 });
 
 const miyagiHsb = hsbAdapter({
   slug: "miyagi",
   district: "宮城",
   host: "miyagi",
-  summer2020: /^2020年宮城県高等学校野球大会/,
+  summer2020: /^令和2年東北地区高等学校野球 宮城大会$/,
 });
 
 const akitaHsb = hsbAdapter({
   slug: "akita",
   district: "秋田",
   host: "akita",
-  summer2020: /^2020年秋田県高等学校野球大会/,
+  summer2020: /^2020秋田県高等学校野球大会$/,
 });
 
 const tottoriHsb = hsbAdapter({
   slug: "tottori",
   district: "鳥取",
   host: "tottori",
-  summer2020: /^2020年鳥取県高等学校野球大会/,
+  summer2020: /^2020年夏季鳥取県高等学校野球大会$/,
 });
 
 /*
@@ -16286,7 +16287,25 @@ const tokyoHsb = hsbAdapter({
   slug: "tokyo",
   district: "東京",
   host: "tokyo",
-  seasons: springAutumnOnly("tokyo"),
+  /*
+    ★★★**夏も見る。ただし「東西決戦」だけ**（2026-09-06。運営者の判断）。
+    2020年は選手権の代わりに東西それぞれで大会を開き、
+    **その優勝校どうしが8月10日に1試合だけ戦っている**
+    （`2020年夏季東西東京都高等学校野球大会 東西決戦`。東海大菅生 - 帝京）。
+    ★**東東京の大会でも西東京の大会でもない**ので、**この「東京」の地区に入れる。**
+    ★**選手権（東東京大会・西東京大会）は4地区のほうに入る** —— `keepTitle` で外している。
+  */
+  seasons: {
+    spring: "https://tokyo.hsbflash.jp/",
+    summer: "https://tokyo.hsbflash.jp/",
+    autumn: "https://tokyo.hsbflash.jp/",
+  },
+  /*
+    ★★**末尾で照合すること。** `西東京` は「東**西東京**都高等学校野球大会」にも含まれ、
+    **東東京大会まで拾ってしまう**（実測で確かめた）。
+  */
+  keepTitle: /(春季|秋季)東京都高等学校野球大会$|東西決戦$/,
+  summer2020: /^2020年夏季東西東京都高等学校野球大会 東西決戦$/,
   matchDistricts: ["東東京", "西東京"],
 });
 
@@ -16294,7 +16313,8 @@ const kitaHokkaidoHsb = hsbAdapter({
   slug: "kita-hokkaido",
   district: "北北海道",
   host: "hokkaido",
-  keepTitle: /北北海道/,
+  keepTitle: /北北海道大会$/,
+  summer2020: /^令和2年北海道高等学校野球大会/,
   seasons: summerOnly("hokkaido"),
 });
 
@@ -16302,7 +16322,8 @@ const minamiHokkaidoHsb = hsbAdapter({
   slug: "minami-hokkaido",
   district: "南北海道",
   host: "hokkaido",
-  keepTitle: /南北海道/,
+  keepTitle: /南北海道大会$/,
+  summer2020: /^令和2年北海道高等学校野球大会/,
   seasons: summerOnly("hokkaido"),
 });
 
@@ -16310,7 +16331,8 @@ const higashiTokyoHsb = hsbAdapter({
   slug: "higashi-tokyo",
   district: "東東京",
   host: "tokyo",
-  keepTitle: /東東京/,
+  keepTitle: /東東京大会$/,
+  summer2020: /^2020年夏季東西東京都高等学校野球大会/,
   seasons: summerOnly("tokyo"),
 });
 
@@ -16318,7 +16340,8 @@ const nishiTokyoHsb = hsbAdapter({
   slug: "nishi-tokyo",
   district: "西東京",
   host: "tokyo",
-  keepTitle: /西東京/,
+  keepTitle: /西東京大会$/,
+  summer2020: /^2020年夏季東西東京都高等学校野球大会/,
   seasons: summerOnly("tokyo"),
 });
 

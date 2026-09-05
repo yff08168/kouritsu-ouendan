@@ -5,6 +5,2769 @@
   "sourceUrl": "https://tokyo.hsbflash.jp/",
   "games": [
     {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三田",
+          "score": 0,
+          "won": false,
+          "name": "三田高校",
+          "slug": "mita"
+        },
+        {
+          "display": "岩倉",
+          "score": 9,
+          "won": true,
+          "name": "岩倉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-27",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "豊島学院",
+          "score": 11,
+          "won": true,
+          "name": "豊島学院",
+          "slug": null
+        },
+        {
+          "display": "青稜",
+          "score": 1,
+          "won": false,
+          "name": "青稜",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "上野学園",
+          "score": 6,
+          "won": true,
+          "name": "上野学園",
+          "slug": null
+        },
+        {
+          "display": "昭和鉄道",
+          "score": 2,
+          "won": false,
+          "name": "昭和鉄道",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "二松學舍大附",
+          "score": 10,
+          "won": true,
+          "name": "二松學舍大附",
+          "slug": null
+        },
+        {
+          "display": "文京",
+          "score": 2,
+          "won": false,
+          "name": "文京高校",
+          "slug": "bunkyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-27",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "海城",
+          "score": 1,
+          "won": false,
+          "name": "海城",
+          "slug": null
+        },
+        {
+          "display": "東京成徳大高",
+          "score": 4,
+          "won": true,
+          "name": "東京成徳大高",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "荒川工",
+          "score": 1,
+          "won": false,
+          "name": "荒川工",
+          "slug": null
+        },
+        {
+          "display": "城北",
+          "score": 2,
+          "won": true,
+          "name": "城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-27",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小山台",
+          "score": 7,
+          "won": true,
+          "name": "小山台高校",
+          "slug": "koyamadai"
+        },
+        {
+          "display": "東京実",
+          "score": 4,
+          "won": false,
+          "name": "東京実",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-27",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "自由ヶ丘学園",
+          "score": 1,
+          "won": false,
+          "name": "自由ヶ丘学園",
+          "slug": null
+        },
+        {
+          "display": "大森",
+          "score": 14,
+          "won": true,
+          "name": "大森高校",
+          "slug": "omori"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-27",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "立志舎",
+          "score": 11,
+          "won": true,
+          "name": "立志舎",
+          "slug": null
+        },
+        {
+          "display": "大島",
+          "score": 2,
+          "won": false,
+          "name": "大島高校",
+          "slug": "oshima"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "荒川商・葛西南・つばさ総合",
+          "score": 1,
+          "won": false,
+          "name": "荒川商・葛西南・つばさ総合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "國學院",
+          "score": 12,
+          "won": true,
+          "name": "國學院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "農産",
+          "score": 11,
+          "won": true,
+          "name": "農産高校",
+          "slug": "nosan"
+        },
+        {
+          "display": "大山・蒲田・橘・六郷工科",
+          "score": 10,
+          "won": false,
+          "name": "大山・蒲田・橘・六郷工科",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "日比谷",
+          "score": 4,
+          "won": false,
+          "name": "日比谷高校",
+          "slug": "hibiya"
+        },
+        {
+          "display": "江戸川",
+          "score": 11,
+          "won": true,
+          "name": "江戸川高校",
+          "slug": "edogawa"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-27",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "芝浦工大附",
+          "score": 0,
+          "won": false,
+          "name": "芝浦工大附",
+          "slug": null
+        },
+        {
+          "display": "安田学園",
+          "score": 4,
+          "won": true,
+          "name": "安田学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大島海洋国際",
+          "score": 0,
+          "won": false,
+          "name": "大島海洋国際高校",
+          "slug": "oshimakaiyokokusai"
+        },
+        {
+          "display": "大森学園",
+          "score": 10,
+          "won": true,
+          "name": "大森学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "千早",
+          "score": 0,
+          "won": false,
+          "name": "千早高校",
+          "slug": "chihaya"
+        },
+        {
+          "display": "錦城学園",
+          "score": 25,
+          "won": true,
+          "name": "錦城学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-27",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "深川",
+          "score": 5,
+          "won": true,
+          "name": "深川高校",
+          "slug": "fukagawa"
+        },
+        {
+          "display": "京華商",
+          "score": 2,
+          "won": false,
+          "name": "京華商",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "青井",
+          "score": 2,
+          "won": false,
+          "name": "青井高校",
+          "slug": "higashi-tokyo-aoi"
+        },
+        {
+          "display": "淑徳",
+          "score": 12,
+          "won": true,
+          "name": "淑徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-27",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "京華",
+          "score": 1,
+          "won": false,
+          "name": "京華",
+          "slug": null
+        },
+        {
+          "display": "淑徳巣鴨",
+          "score": 11,
+          "won": true,
+          "name": "淑徳巣鴨",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "朋優学院",
+          "score": 5,
+          "won": true,
+          "name": "朋優学院",
+          "slug": null
+        },
+        {
+          "display": "日工大駒場",
+          "score": 4,
+          "won": false,
+          "name": "日工大駒場",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "巣鴨",
+          "score": 2,
+          "won": false,
+          "name": "巣鴨",
+          "slug": null
+        },
+        {
+          "display": "東洋",
+          "score": 3,
+          "won": true,
+          "name": "東洋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "立正大立正",
+          "score": 22,
+          "won": true,
+          "name": "立正大立正",
+          "slug": null
+        },
+        {
+          "display": "広尾学園",
+          "score": 1,
+          "won": false,
+          "name": "広尾学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "早稲田",
+          "score": 3,
+          "won": false,
+          "name": "早稲田",
+          "slug": null
+        },
+        {
+          "display": "足立学園",
+          "score": 7,
+          "won": true,
+          "name": "足立学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東京",
+          "score": 17,
+          "won": true,
+          "name": "東京",
+          "slug": null
+        },
+        {
+          "display": "産業技術高専",
+          "score": 0,
+          "won": false,
+          "name": "産業技術高専",
+          "slug": "sangyogijutsu"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜丘",
+          "score": 11,
+          "won": true,
+          "name": "桜丘",
+          "slug": null
+        },
+        {
+          "display": "東",
+          "score": 9,
+          "won": false,
+          "name": "東高校",
+          "slug": "azuma"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富士",
+          "score": 0,
+          "won": false,
+          "name": "富士高校",
+          "slug": "fuji"
+        },
+        {
+          "display": "小松川",
+          "score": 4,
+          "won": true,
+          "name": "小松川高校",
+          "slug": "komatsugawa"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "多摩大目黒",
+          "score": 2,
+          "won": false,
+          "name": "多摩大目黒",
+          "slug": null
+        },
+        {
+          "display": "広尾",
+          "score": 8,
+          "won": true,
+          "name": "広尾高校",
+          "slug": "higashi-tokyo-hiroo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "両国",
+          "score": 1,
+          "won": false,
+          "name": "両国高校",
+          "slug": "ryogoku"
+        },
+        {
+          "display": "駒込",
+          "score": 8,
+          "won": true,
+          "name": "駒込",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "王子総合",
+          "score": 9,
+          "won": true,
+          "name": "王子総合高校",
+          "slug": "ojisogo"
+        },
+        {
+          "display": "立教池袋",
+          "score": 2,
+          "won": false,
+          "name": "立教池袋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜修館",
+          "score": 3,
+          "won": false,
+          "name": "桜修館中等教育学校",
+          "slug": "oshukan"
+        },
+        {
+          "display": "鷺宮",
+          "score": 10,
+          "won": true,
+          "name": "鷺宮高校",
+          "slug": "saginomiya"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-28",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "共栄学園",
+          "score": 10,
+          "won": true,
+          "name": "共栄学園",
+          "slug": null
+        },
+        {
+          "display": "岩倉",
+          "score": 1,
+          "won": false,
+          "name": "岩倉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-31",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "豊島学院",
+          "score": 0,
+          "won": false,
+          "name": "豊島学院",
+          "slug": null
+        },
+        {
+          "display": "上野学園",
+          "score": 11,
+          "won": true,
+          "name": "上野学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "二松學舍大附",
+          "score": 10,
+          "won": true,
+          "name": "二松學舍大附",
+          "slug": null
+        },
+        {
+          "display": "東京成徳大高",
+          "score": 0,
+          "won": false,
+          "name": "東京成徳大高",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "城北",
+          "score": 2,
+          "won": true,
+          "name": "城北",
+          "slug": null
+        },
+        {
+          "display": "小山台",
+          "score": 1,
+          "won": false,
+          "name": "小山台高校",
+          "slug": "koyamadai"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "大森",
+          "score": 8,
+          "won": true,
+          "name": "大森高校",
+          "slug": "omori"
+        },
+        {
+          "display": "立志舎",
+          "score": 1,
+          "won": false,
+          "name": "立志舎",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "國學院",
+          "score": 12,
+          "won": true,
+          "name": "國學院",
+          "slug": null
+        },
+        {
+          "display": "農産",
+          "score": 0,
+          "won": false,
+          "name": "農産高校",
+          "slug": "nosan"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "江戸川",
+          "score": 5,
+          "won": true,
+          "name": "江戸川高校",
+          "slug": "edogawa"
+        },
+        {
+          "display": "安田学園",
+          "score": 4,
+          "won": false,
+          "name": "安田学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "大森学園",
+          "score": 3,
+          "won": true,
+          "name": "大森学園",
+          "slug": null
+        },
+        {
+          "display": "錦城学園",
+          "score": 1,
+          "won": false,
+          "name": "錦城学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-28",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "関東一",
+          "score": 24,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        },
+        {
+          "display": "深川",
+          "score": 0,
+          "won": false,
+          "name": "深川高校",
+          "slug": "fukagawa"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "淑徳",
+          "score": 5,
+          "won": true,
+          "name": "淑徳",
+          "slug": null
+        },
+        {
+          "display": "淑徳巣鴨",
+          "score": 1,
+          "won": false,
+          "name": "淑徳巣鴨",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "朋優学院",
+          "score": 5,
+          "won": true,
+          "name": "朋優学院",
+          "slug": null
+        },
+        {
+          "display": "東洋",
+          "score": 2,
+          "won": false,
+          "name": "東洋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立正大立正",
+          "score": 6,
+          "won": true,
+          "name": "立正大立正",
+          "slug": null
+        },
+        {
+          "display": "足立学園",
+          "score": 2,
+          "won": false,
+          "name": "足立学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "東京",
+          "score": 9,
+          "won": true,
+          "name": "東京",
+          "slug": null
+        },
+        {
+          "display": "桜丘",
+          "score": 4,
+          "won": false,
+          "name": "桜丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小松川",
+          "score": 1,
+          "won": true,
+          "name": "小松川高校",
+          "slug": "komatsugawa"
+        },
+        {
+          "display": "広尾",
+          "score": 0,
+          "won": false,
+          "name": "広尾高校",
+          "slug": "higashi-tokyo-hiroo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "駒込",
+          "score": 4,
+          "won": false,
+          "name": "駒込",
+          "slug": null
+        },
+        {
+          "display": "王子総合",
+          "score": 5,
+          "won": true,
+          "name": "王子総合高校",
+          "slug": "ojisogo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-28",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "鷺宮",
+          "score": 0,
+          "won": false,
+          "name": "鷺宮高校",
+          "slug": "saginomiya"
+        },
+        {
+          "display": "城東",
+          "score": 7,
+          "won": true,
+          "name": "城東高校",
+          "slug": "joto"
+        }
+      ]
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "共栄学園",
+          "score": 0,
+          "won": false,
+          "name": "共栄学園",
+          "slug": null
+        },
+        {
+          "display": "上野学園",
+          "score": 5,
+          "won": true,
+          "name": "上野学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "二松學舍大附",
+          "score": 8,
+          "won": true,
+          "name": "二松學舍大附",
+          "slug": null
+        },
+        {
+          "display": "城北",
+          "score": 0,
+          "won": false,
+          "name": "城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大森",
+          "score": 3,
+          "won": false,
+          "name": "大森高校",
+          "slug": "omori"
+        },
+        {
+          "display": "國學院",
+          "score": 8,
+          "won": true,
+          "name": "國學院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "江戸川",
+          "score": 0,
+          "won": false,
+          "name": "江戸川高校",
+          "slug": "edogawa"
+        },
+        {
+          "display": "大森学園",
+          "score": 7,
+          "won": true,
+          "name": "大森学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-31",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "3回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "関東一",
+          "score": 10,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        },
+        {
+          "display": "淑徳",
+          "score": 0,
+          "won": false,
+          "name": "淑徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-31",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "朋優学院",
+          "score": 3,
+          "won": false,
+          "name": "朋優学院",
+          "slug": null
+        },
+        {
+          "display": "立正大立正",
+          "score": 7,
+          "won": true,
+          "name": "立正大立正",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-31",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東京",
+          "score": 10,
+          "won": true,
+          "name": "東京",
+          "slug": null
+        },
+        {
+          "display": "小松川",
+          "score": 0,
+          "won": false,
+          "name": "小松川高校",
+          "slug": "komatsugawa"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-31",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "王子総合",
+          "score": 1,
+          "won": false,
+          "name": "王子総合高校",
+          "slug": "ojisogo"
+        },
+        {
+          "display": "城東",
+          "score": 2,
+          "won": true,
+          "name": "城東高校",
+          "slug": "joto"
+        }
+      ]
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "上野学園",
+          "score": 0,
+          "won": false,
+          "name": "上野学園",
+          "slug": null
+        },
+        {
+          "display": "二松學舍大附",
+          "score": 14,
+          "won": true,
+          "name": "二松學舍大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "國學院",
+          "score": 1,
+          "won": false,
+          "name": "國學院",
+          "slug": null
+        },
+        {
+          "display": "大森学園",
+          "score": 12,
+          "won": true,
+          "name": "大森学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "関東一",
+          "score": 4,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        },
+        {
+          "display": "立正大立正",
+          "score": 0,
+          "won": false,
+          "name": "立正大立正",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東京",
+          "score": 0,
+          "won": false,
+          "name": "東京",
+          "slug": null
+        },
+        {
+          "display": "城東",
+          "score": 2,
+          "won": true,
+          "name": "城東高校",
+          "slug": "joto"
+        }
+      ]
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "準々決勝",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "二松學舍大附",
+          "score": 5,
+          "won": false,
+          "name": "二松學舍大附",
+          "slug": null
+        },
+        {
+          "display": "大森学園",
+          "score": 6,
+          "won": true,
+          "name": "大森学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "準々決勝",
+      "venue": "ダイワハウススタジアム八王子",
+      "teams": [
+        {
+          "display": "関東一",
+          "score": 12,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        },
+        {
+          "display": "城東",
+          "score": 2,
+          "won": false,
+          "name": "城東高校",
+          "slug": "joto"
+        }
+      ]
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "準決勝",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "大森学園",
+          "score": 1,
+          "won": false,
+          "name": "大森学園",
+          "slug": null
+        },
+        {
+          "display": "関東一",
+          "score": 7,
+          "won": true,
+          "name": "関東一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "田園調布",
+          "score": 3,
+          "won": false,
+          "name": "田園調布高校",
+          "slug": "denenchofu"
+        },
+        {
+          "display": "目黒学院",
+          "score": 5,
+          "won": true,
+          "name": "目黒学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "墨田工",
+          "score": 1,
+          "won": false,
+          "name": "墨田工",
+          "slug": null
+        },
+        {
+          "display": "目白研心",
+          "score": 7,
+          "won": true,
+          "name": "目白研心",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "雪谷",
+          "score": 11,
+          "won": true,
+          "name": "雪谷高校",
+          "slug": "yukigaya"
+        },
+        {
+          "display": "豊南",
+          "score": 1,
+          "won": false,
+          "name": "豊南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "成城",
+          "score": 13,
+          "won": true,
+          "name": "成城",
+          "slug": null
+        },
+        {
+          "display": "足立工",
+          "score": 9,
+          "won": false,
+          "name": "足立工",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "武蔵丘",
+          "score": 17,
+          "won": true,
+          "name": "武蔵丘高校",
+          "slug": "musashigaoka"
+        },
+        {
+          "display": "戸山",
+          "score": 5,
+          "won": false,
+          "name": "戸山高校",
+          "slug": "toyama"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "攻玉社",
+          "score": 0,
+          "won": false,
+          "name": "攻玉社",
+          "slug": null
+        },
+        {
+          "display": "板橋",
+          "score": 10,
+          "won": true,
+          "name": "板橋高校",
+          "slug": "itabashi"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "駿台学園",
+          "score": 5,
+          "won": true,
+          "name": "駿台学園",
+          "slug": null
+        },
+        {
+          "display": "新宿",
+          "score": 2,
+          "won": false,
+          "name": "新宿高校",
+          "slug": "shinjuku"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日体大荏原",
+          "score": 27,
+          "won": true,
+          "name": "日体大荏原",
+          "slug": null
+        },
+        {
+          "display": "南葛飾",
+          "score": 0,
+          "won": false,
+          "name": "南葛飾高校",
+          "slug": "minamikatsushika"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "篠崎",
+          "score": 6,
+          "won": false,
+          "name": "篠崎高校",
+          "slug": "shinozaki"
+        },
+        {
+          "display": "東海大高輪台",
+          "score": 10,
+          "won": true,
+          "name": "東海大高輪台",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "国際",
+          "score": 1,
+          "won": false,
+          "name": "国際高校",
+          "slug": "kokusai"
+        },
+        {
+          "display": "日大一",
+          "score": 9,
+          "won": true,
+          "name": "日大一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "日大豊山",
+          "score": 3,
+          "won": true,
+          "name": "日大豊山",
+          "slug": null
+        },
+        {
+          "display": "駒場",
+          "score": 1,
+          "won": false,
+          "name": "駒場高校",
+          "slug": "komaba"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "郁文館",
+          "score": 12,
+          "won": true,
+          "name": "郁文館",
+          "slug": null
+        },
+        {
+          "display": "本郷",
+          "score": 5,
+          "won": false,
+          "name": "本郷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "明大中野",
+          "score": 13,
+          "won": true,
+          "name": "明大中野",
+          "slug": null
+        },
+        {
+          "display": "九段中等",
+          "score": 0,
+          "won": false,
+          "name": "九段中等",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "成立学園",
+          "score": 3,
+          "won": false,
+          "name": "成立学園",
+          "slug": null
+        },
+        {
+          "display": "紅葉川",
+          "score": 5,
+          "won": true,
+          "name": "紅葉川高校",
+          "slug": "momijigawa"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-27",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日本ウェルネス",
+          "score": 11,
+          "won": true,
+          "name": "日本ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "正則学園",
+          "score": 0,
+          "won": false,
+          "name": "正則学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-27",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "足立東・北豊島工・三商・日本橋",
+          "score": 0,
+          "won": false,
+          "name": "足立東・北豊島工・三商・日本橋",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "足立新田",
+          "score": 10,
+          "won": true,
+          "name": "足立新田高校",
+          "slug": "adachishinden"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "足立西",
+          "score": 4,
+          "won": true,
+          "name": "足立西高校",
+          "slug": "adachinishi"
+        },
+        {
+          "display": "筑波大付",
+          "score": 2,
+          "won": false,
+          "name": "筑波大付",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "淵江",
+          "score": 2,
+          "won": false,
+          "name": "淵江高校",
+          "slug": "fuchie"
+        },
+        {
+          "display": "芝",
+          "score": 4,
+          "won": true,
+          "name": "芝",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-27",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "実践学園",
+          "score": 11,
+          "won": true,
+          "name": "実践学園",
+          "slug": null
+        },
+        {
+          "display": "大東文化一",
+          "score": 4,
+          "won": false,
+          "name": "大東文化一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-27",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高島",
+          "score": 7,
+          "won": true,
+          "name": "高島高校",
+          "slug": "takashima"
+        },
+        {
+          "display": "青山",
+          "score": 1,
+          "won": false,
+          "name": "青山高校",
+          "slug": "aoyama"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-27",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "目黒",
+          "score": 3,
+          "won": false,
+          "name": "目黒高校",
+          "slug": "meguro"
+        },
+        {
+          "display": "高輪",
+          "score": 10,
+          "won": true,
+          "name": "高輪",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-28",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "目黒日大",
+          "score": 10,
+          "won": true,
+          "name": "目黒日大",
+          "slug": null
+        },
+        {
+          "display": "中野工",
+          "score": 0,
+          "won": false,
+          "name": "中野工",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "正則",
+          "score": 15,
+          "won": true,
+          "name": "正則",
+          "slug": null
+        },
+        {
+          "display": "獨協",
+          "score": 5,
+          "won": false,
+          "name": "獨協",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-27",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "葛飾野",
+          "score": 1,
+          "won": false,
+          "name": "葛飾野高校",
+          "slug": "katsushikano"
+        },
+        {
+          "display": "城西大城西",
+          "score": 5,
+          "won": true,
+          "name": "城西大城西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-28",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大崎",
+          "score": 10,
+          "won": true,
+          "name": "大崎高校",
+          "slug": "osaki"
+        },
+        {
+          "display": "渋谷教育渋谷",
+          "score": 1,
+          "won": false,
+          "name": "渋谷教育渋谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-28",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "麻布",
+          "score": 4,
+          "won": false,
+          "name": "麻布",
+          "slug": null
+        },
+        {
+          "display": "学習院",
+          "score": 9,
+          "won": true,
+          "name": "学習院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開成",
+          "score": 13,
+          "won": true,
+          "name": "開成",
+          "slug": null
+        },
+        {
+          "display": "葛飾商",
+          "score": 2,
+          "won": false,
+          "name": "葛飾商業高校",
+          "slug": "katsushikashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小岩",
+          "score": 9,
+          "won": true,
+          "name": "小岩高校",
+          "slug": "koiwa"
+        },
+        {
+          "display": "順天",
+          "score": 1,
+          "won": false,
+          "name": "順天",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-27",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帝京",
+          "score": 15,
+          "won": true,
+          "name": "帝京",
+          "slug": null
+        },
+        {
+          "display": "目黒学院",
+          "score": 0,
+          "won": false,
+          "name": "目黒学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-28",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "目白研心",
+          "score": 10,
+          "won": true,
+          "name": "目白研心",
+          "slug": null
+        },
+        {
+          "display": "雪谷",
+          "score": 0,
+          "won": false,
+          "name": "雪谷高校",
+          "slug": "yukigaya"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "成城",
+          "score": 6,
+          "won": true,
+          "name": "成城",
+          "slug": null
+        },
+        {
+          "display": "武蔵丘",
+          "score": 5,
+          "won": false,
+          "name": "武蔵丘高校",
+          "slug": "musashigaoka"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "板橋",
+          "score": 6,
+          "won": true,
+          "name": "板橋高校",
+          "slug": "itabashi"
+        },
+        {
+          "display": "駿台学園",
+          "score": 3,
+          "won": false,
+          "name": "駿台学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "日体大荏原",
+          "score": 5,
+          "won": false,
+          "name": "日体大荏原",
+          "slug": null
+        },
+        {
+          "display": "東海大高輪台",
+          "score": 7,
+          "won": true,
+          "name": "東海大高輪台",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-29",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日大一",
+          "score": 1,
+          "won": false,
+          "name": "日大一",
+          "slug": null
+        },
+        {
+          "display": "日大豊山",
+          "score": 6,
+          "won": true,
+          "name": "日大豊山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-28",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "郁文館",
+          "score": 1,
+          "won": true,
+          "name": "郁文館",
+          "slug": null
+        },
+        {
+          "display": "明大中野",
+          "score": 0,
+          "won": false,
+          "name": "明大中野",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-28",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "紅葉川",
+          "score": 2,
+          "won": false,
+          "name": "紅葉川高校",
+          "slug": "momijigawa"
+        },
+        {
+          "display": "堀越",
+          "score": 5,
+          "won": true,
+          "name": "堀越",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "日本ウェルネス",
+          "score": 10,
+          "won": true,
+          "name": "日本ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "足立新田",
+          "score": 7,
+          "won": false,
+          "name": "足立新田高校",
+          "slug": "adachishinden"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "足立西",
+          "score": 6,
+          "won": true,
+          "name": "足立西高校",
+          "slug": "adachinishi"
+        },
+        {
+          "display": "芝",
+          "score": 3,
+          "won": false,
+          "name": "芝",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-31",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "実践学園",
+          "score": 2,
+          "won": true,
+          "name": "実践学園",
+          "slug": null
+        },
+        {
+          "display": "高島",
+          "score": 0,
+          "won": false,
+          "name": "高島高校",
+          "slug": "takashima"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高輪",
+          "score": 0,
+          "won": false,
+          "name": "高輪",
+          "slug": null
+        },
+        {
+          "display": "目黒日大",
+          "score": 27,
+          "won": true,
+          "name": "目黒日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-31",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "正則",
+          "score": 8,
+          "won": false,
+          "name": "正則",
+          "slug": null
+        },
+        {
+          "display": "城西大城西",
+          "score": 9,
+          "won": true,
+          "name": "城西大城西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大崎",
+          "score": 6,
+          "won": false,
+          "name": "大崎高校",
+          "slug": "osaki"
+        },
+        {
+          "display": "学習院",
+          "score": 7,
+          "won": true,
+          "name": "学習院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-31",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開成",
+          "score": 3,
+          "won": false,
+          "name": "開成",
+          "slug": null
+        },
+        {
+          "display": "東亜学園",
+          "score": 8,
+          "won": true,
+          "name": "東亜学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-28",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "2回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "小岩",
+          "score": 2,
+          "won": true,
+          "name": "小岩高校",
+          "slug": "koiwa"
+        },
+        {
+          "display": "修徳",
+          "score": 1,
+          "won": false,
+          "name": "修徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-31",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "3回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "帝京",
+          "score": 7,
+          "won": true,
+          "name": "帝京",
+          "slug": null
+        },
+        {
+          "display": "目白研心",
+          "score": 0,
+          "won": false,
+          "name": "目白研心",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-31",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "成城",
+          "score": 5,
+          "won": true,
+          "name": "成城",
+          "slug": null
+        },
+        {
+          "display": "板橋",
+          "score": 3,
+          "won": false,
+          "name": "板橋高校",
+          "slug": "itabashi"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-31",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海大高輪台",
+          "score": 4,
+          "won": false,
+          "name": "東海大高輪台",
+          "slug": null
+        },
+        {
+          "display": "日大豊山",
+          "score": 6,
+          "won": true,
+          "name": "日大豊山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-31",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "3回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "郁文館",
+          "score": 0,
+          "won": false,
+          "name": "郁文館",
+          "slug": null
+        },
+        {
+          "display": "堀越",
+          "score": 2,
+          "won": true,
+          "name": "堀越",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日本ウェルネス",
+          "score": 1,
+          "won": false,
+          "name": "日本ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "足立西",
+          "score": 6,
+          "won": true,
+          "name": "足立西高校",
+          "slug": "adachinishi"
+        }
+      ]
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "実践学園",
+          "score": 8,
+          "won": true,
+          "name": "実践学園",
+          "slug": null
+        },
+        {
+          "display": "目黒日大",
+          "score": 1,
+          "won": false,
+          "name": "目黒日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "城西大城西",
+          "score": 13,
+          "won": true,
+          "name": "城西大城西",
+          "slug": null
+        },
+        {
+          "display": "学習院",
+          "score": 1,
+          "won": false,
+          "name": "学習院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-01",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東亜学園",
+          "score": 8,
+          "won": true,
+          "name": "東亜学園",
+          "slug": null
+        },
+        {
+          "display": "小岩",
+          "score": 0,
+          "won": false,
+          "name": "小岩高校",
+          "slug": "koiwa"
+        }
+      ]
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "帝京",
+          "score": 6,
+          "won": true,
+          "name": "帝京",
+          "slug": null
+        },
+        {
+          "display": "成城",
+          "score": 0,
+          "won": false,
+          "name": "成城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-02",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日大豊山",
+          "score": 9,
+          "won": true,
+          "name": "日大豊山",
+          "slug": null
+        },
+        {
+          "display": "堀越",
+          "score": 7,
+          "won": false,
+          "name": "堀越",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "4回戦",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "足立西",
+          "score": 0,
+          "won": false,
+          "name": "足立西高校",
+          "slug": "adachinishi"
+        },
+        {
+          "display": "実践学園",
+          "score": 2,
+          "won": true,
+          "name": "実践学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "城西大城西",
+          "score": 1,
+          "won": false,
+          "name": "城西大城西",
+          "slug": null
+        },
+        {
+          "display": "東亜学園",
+          "score": 6,
+          "won": true,
+          "name": "東亜学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "準々決勝",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "帝京",
+          "score": 9,
+          "won": true,
+          "name": "帝京",
+          "slug": null
+        },
+        {
+          "display": "日大豊山",
+          "score": 0,
+          "won": false,
+          "name": "日大豊山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "準々決勝",
+      "venue": "ダイワハウススタジアム八王子",
+      "teams": [
+        {
+          "display": "実践学園",
+          "score": 0,
+          "won": false,
+          "name": "実践学園",
+          "slug": null
+        },
+        {
+          "display": "東亜学園",
+          "score": 7,
+          "won": true,
+          "name": "東亜学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "準決勝",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "帝京",
+          "score": 6,
+          "won": true,
+          "name": "帝京",
+          "slug": null
+        },
+        {
+          "display": "東亜学園",
+          "score": 3,
+          "won": false,
+          "name": "東亜学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-08",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季東西東京都高等学校野球大会 東東京大会",
+      "round": "決勝",
+      "venue": "大田スタジアム",
+      "teams": [
+        {
+          "display": "帝京",
+          "score": 3,
+          "won": true,
+          "name": "帝京",
+          "slug": null
+        },
+        {
+          "display": "関東一",
+          "score": 2,
+          "won": false,
+          "name": "関東一",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-07-05",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権大会 東東京大会",

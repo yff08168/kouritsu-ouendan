@@ -5,6 +5,2292 @@
   "sourceUrl": "https://hokkaido.hsbflash.jp/",
   "games": [
     {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "琴似工業",
+          "score": 0,
+          "won": false,
+          "name": "琴似工業",
+          "slug": null
+        },
+        {
+          "display": "札幌東",
+          "score": 7,
+          "won": true,
+          "name": "札幌東高校",
+          "slug": "sapporohigashi"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌丘珠",
+          "score": 8,
+          "won": true,
+          "name": "札幌丘珠高校",
+          "slug": "sapporokadama"
+        },
+        {
+          "display": "札幌旭丘",
+          "score": 4,
+          "won": false,
+          "name": "札幌旭丘高校",
+          "slug": "sapporoasahigaoka"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "檜山北",
+          "score": 0,
+          "won": false,
+          "name": "檜山北高校",
+          "slug": "hiyamakita"
+        },
+        {
+          "display": "函大有斗",
+          "score": 4,
+          "won": true,
+          "name": "函大有斗",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "渡島連合",
+          "score": 6,
+          "won": true,
+          "name": "渡島連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "函館水産",
+          "score": 5,
+          "won": false,
+          "name": "函館水産高校",
+          "slug": "hakodatesuisan"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌創成",
+          "score": 4,
+          "won": true,
+          "name": "札幌創成",
+          "slug": null
+        },
+        {
+          "display": "札幌手稲",
+          "score": 3,
+          "won": false,
+          "name": "札幌手稲高校",
+          "slug": "sapporoteine"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-20",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大麻",
+          "score": 1,
+          "won": false,
+          "name": "大麻高校",
+          "slug": "oasa"
+        },
+        {
+          "display": "北海",
+          "score": 9,
+          "won": true,
+          "name": "北海",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-20",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札啓北商",
+          "score": 7,
+          "won": true,
+          "name": "札啓北商",
+          "slug": null
+        },
+        {
+          "display": "江別",
+          "score": 1,
+          "won": false,
+          "name": "江別高校",
+          "slug": "ebetsu"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-20",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌清田",
+          "score": 8,
+          "won": true,
+          "name": "札幌清田高校",
+          "slug": "sapporokiyota"
+        },
+        {
+          "display": "札幌英藍",
+          "score": 1,
+          "won": false,
+          "name": "札幌英藍高校",
+          "slug": "sapporoeiai"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "登別青嶺",
+          "score": 2,
+          "won": false,
+          "name": "登別青嶺高校",
+          "slug": "noboribetsuseirei"
+        },
+        {
+          "display": "室蘭工業",
+          "score": 4,
+          "won": true,
+          "name": "室蘭工業高校",
+          "slug": "murorankogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "静内",
+          "score": 11,
+          "won": true,
+          "name": "静内高校",
+          "slug": "shizunai"
+        },
+        {
+          "display": "室蘭東翔",
+          "score": 8,
+          "won": false,
+          "name": "室蘭東翔高校",
+          "slug": "murorantosho"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌厚別",
+          "score": 1,
+          "won": false,
+          "name": "札幌厚別高校",
+          "slug": "sapporoatsubetsu"
+        },
+        {
+          "display": "札幌新陽",
+          "score": 8,
+          "won": true,
+          "name": "札幌新陽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌第一",
+          "score": 11,
+          "won": true,
+          "name": "札幌第一",
+          "slug": null
+        },
+        {
+          "display": "北広島西",
+          "score": 0,
+          "won": false,
+          "name": "北広島西高校",
+          "slug": "kitahiroshimanishi"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌北陵",
+          "score": 12,
+          "won": true,
+          "name": "札幌北陵高校",
+          "slug": "sapporohokuryo"
+        },
+        {
+          "display": "札幌西陵",
+          "score": 2,
+          "won": false,
+          "name": "札幌西陵高校",
+          "slug": "sapporoseiryo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石狩翔陽",
+          "score": 8,
+          "won": true,
+          "name": "石狩翔陽高校",
+          "slug": "ishikarishoyo"
+        },
+        {
+          "display": "千歳",
+          "score": 4,
+          "won": false,
+          "name": "千歳高校",
+          "slug": "chitose"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北広島西",
+          "score": 0,
+          "won": false,
+          "name": "北広島西高校",
+          "slug": "kitahiroshimanishi"
+        },
+        {
+          "display": "北科大",
+          "score": 12,
+          "won": true,
+          "name": "北科大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-20",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌大谷",
+          "score": 15,
+          "won": true,
+          "name": "札幌大谷",
+          "slug": null
+        },
+        {
+          "display": "札幌東",
+          "score": 1,
+          "won": false,
+          "name": "札幌東高校",
+          "slug": "sapporohigashi"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-20",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌丘珠",
+          "score": 12,
+          "won": true,
+          "name": "札幌丘珠高校",
+          "slug": "sapporokadama"
+        },
+        {
+          "display": "あすかぜ",
+          "score": 2,
+          "won": false,
+          "name": "あすかぜ",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "函大柏稜",
+          "score": 5,
+          "won": true,
+          "name": "函大柏稜",
+          "slug": null
+        },
+        {
+          "display": "函館中部",
+          "score": 4,
+          "won": false,
+          "name": "函館中部高校",
+          "slug": "hakodatechubu"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "函大有斗",
+          "score": 14,
+          "won": true,
+          "name": "函大有斗",
+          "slug": null
+        },
+        {
+          "display": "函館大谷",
+          "score": 3,
+          "won": false,
+          "name": "函館大谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-12",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "函館工業",
+          "score": 10,
+          "won": true,
+          "name": "函館工業高校",
+          "slug": "hakodatekogyo"
+        },
+        {
+          "display": "檜山稜北連合",
+          "score": 0,
+          "won": false,
+          "name": "檜山稜北連合",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2020-07-12",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "渡島連合",
+          "score": 29,
+          "won": true,
+          "name": "渡島連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "南茅部",
+          "score": 0,
+          "won": false,
+          "name": "南茅部高校",
+          "slug": "minamikayabe"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-21",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌静修",
+          "score": 1,
+          "won": false,
+          "name": "札幌静修",
+          "slug": null
+        },
+        {
+          "display": "札幌創成",
+          "score": 5,
+          "won": true,
+          "name": "札幌創成",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-22",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北海",
+          "score": 2,
+          "won": true,
+          "name": "北海",
+          "slug": null
+        },
+        {
+          "display": "学園札幌",
+          "score": 1,
+          "won": false,
+          "name": "学園札幌",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-22",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立命館慶祥",
+          "score": 9,
+          "won": true,
+          "name": "立命館慶祥",
+          "slug": null
+        },
+        {
+          "display": "札啓北商",
+          "score": 1,
+          "won": false,
+          "name": "札啓北商",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-22",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌清田",
+          "score": 5,
+          "won": false,
+          "name": "札幌清田高校",
+          "slug": "sapporokiyota"
+        },
+        {
+          "display": "札幌光星",
+          "score": 10,
+          "won": true,
+          "name": "札幌光星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鵡川",
+          "score": 9,
+          "won": true,
+          "name": "鵡川高校",
+          "slug": "mukawa"
+        },
+        {
+          "display": "室蘭工業",
+          "score": 0,
+          "won": false,
+          "name": "室蘭工業高校",
+          "slug": "murorankogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "静内",
+          "score": 1,
+          "won": false,
+          "name": "静内高校",
+          "slug": "shizunai"
+        },
+        {
+          "display": "浦河",
+          "score": 11,
+          "won": true,
+          "name": "浦河高校",
+          "slug": "urakawa"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-21",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌藻岩",
+          "score": 1,
+          "won": false,
+          "name": "札幌藻岩高校",
+          "slug": "sapporomoiwa"
+        },
+        {
+          "display": "札幌新陽",
+          "score": 3,
+          "won": true,
+          "name": "札幌新陽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-21",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌第一",
+          "score": 7,
+          "won": true,
+          "name": "札幌第一",
+          "slug": null
+        },
+        {
+          "display": "札幌白石",
+          "score": 5,
+          "won": false,
+          "name": "札幌白石高校",
+          "slug": "sapporoshiroishi"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-20",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌龍谷",
+          "score": 3,
+          "won": false,
+          "name": "札幌龍谷",
+          "slug": null
+        },
+        {
+          "display": "札幌北陵",
+          "score": 8,
+          "won": true,
+          "name": "札幌北陵高校",
+          "slug": "sapporohokuryo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-20",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石狩翔陽",
+          "score": 0,
+          "won": false,
+          "name": "石狩翔陽高校",
+          "slug": "ishikarishoyo"
+        },
+        {
+          "display": "北科大",
+          "score": 1,
+          "won": true,
+          "name": "北科大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌大谷",
+          "score": 11,
+          "won": true,
+          "name": "札幌大谷",
+          "slug": null
+        },
+        {
+          "display": "札幌丘珠",
+          "score": 0,
+          "won": false,
+          "name": "札幌丘珠高校",
+          "slug": "sapporokadama"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "函大柏稜",
+          "score": 4,
+          "won": true,
+          "name": "函大柏稜",
+          "slug": null
+        },
+        {
+          "display": "函大有斗",
+          "score": 2,
+          "won": false,
+          "name": "函大有斗",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "函館工業",
+          "score": 13,
+          "won": true,
+          "name": "函館工業高校",
+          "slug": "hakodatekogyo"
+        },
+        {
+          "display": "渡島連合",
+          "score": 1,
+          "won": false,
+          "name": "渡島連合",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌創成",
+          "score": 1,
+          "won": false,
+          "name": "札幌創成",
+          "slug": null
+        },
+        {
+          "display": "北海",
+          "score": 12,
+          "won": true,
+          "name": "北海",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立命館慶祥",
+          "score": 2,
+          "won": true,
+          "name": "立命館慶祥",
+          "slug": null
+        },
+        {
+          "display": "札幌光星",
+          "score": 0,
+          "won": false,
+          "name": "札幌光星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鵡川",
+          "score": 5,
+          "won": true,
+          "name": "鵡川高校",
+          "slug": "mukawa"
+        },
+        {
+          "display": "浦河",
+          "score": 0,
+          "won": false,
+          "name": "浦河高校",
+          "slug": "urakawa"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌新陽",
+          "score": 1,
+          "won": false,
+          "name": "札幌新陽",
+          "slug": null
+        },
+        {
+          "display": "札幌第一",
+          "score": 11,
+          "won": true,
+          "name": "札幌第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌北陵",
+          "score": 5,
+          "won": false,
+          "name": "札幌北陵高校",
+          "slug": "sapporohokuryo"
+        },
+        {
+          "display": "北科大",
+          "score": 16,
+          "won": true,
+          "name": "北科大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌大谷",
+          "score": 5,
+          "won": true,
+          "name": "札幌大谷",
+          "slug": null
+        },
+        {
+          "display": "函大柏稜",
+          "score": 4,
+          "won": false,
+          "name": "函大柏稜",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "函館工業",
+          "score": 1,
+          "won": false,
+          "name": "函館工業高校",
+          "slug": "hakodatekogyo"
+        },
+        {
+          "display": "北海",
+          "score": 10,
+          "won": true,
+          "name": "北海",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-05",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立命館慶祥",
+          "score": 12,
+          "won": true,
+          "name": "立命館慶祥",
+          "slug": null
+        },
+        {
+          "display": "鵡川",
+          "score": 8,
+          "won": false,
+          "name": "鵡川高校",
+          "slug": "mukawa"
+        }
+      ]
+    },
+    {
+      "date": "2020-08-05",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌第一",
+          "score": 10,
+          "won": true,
+          "name": "札幌第一",
+          "slug": null
+        },
+        {
+          "display": "北科大",
+          "score": 0,
+          "won": false,
+          "name": "北科大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌大谷",
+          "score": 7,
+          "won": true,
+          "name": "札幌大谷",
+          "slug": null
+        },
+        {
+          "display": "北海",
+          "score": 6,
+          "won": false,
+          "name": "北海",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "立命館慶祥",
+          "score": 8,
+          "won": false,
+          "name": "立命館慶祥",
+          "slug": null
+        },
+        {
+          "display": "札幌第一",
+          "score": 10,
+          "won": true,
+          "name": "札幌第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-08",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌大谷",
+          "score": 1,
+          "won": false,
+          "name": "札幌大谷",
+          "slug": null
+        },
+        {
+          "display": "札幌第一",
+          "score": 4,
+          "won": true,
+          "name": "札幌第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小樽桜陽",
+          "score": 3,
+          "won": false,
+          "name": "小樽桜陽高校",
+          "slug": "otaruoyo"
+        },
+        {
+          "display": "倶知安",
+          "score": 5,
+          "won": true,
+          "name": "倶知安高校",
+          "slug": "kucchan"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "小樽水産",
+          "score": 7,
+          "won": true,
+          "name": "小樽水産高校",
+          "slug": "otarusuisan"
+        },
+        {
+          "display": "小樽未来創造",
+          "score": 0,
+          "won": false,
+          "name": "小樽未来創造高校",
+          "slug": "otarumiraisozo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "石狩南",
+          "score": 4,
+          "won": false,
+          "name": "石狩南高校",
+          "slug": "ishikariminami"
+        },
+        {
+          "display": "札幌新川",
+          "score": 11,
+          "won": true,
+          "name": "札幌新川高校",
+          "slug": "sapporoshinkawa"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "開成中等",
+          "score": 2,
+          "won": false,
+          "name": "開成中等",
+          "slug": null
+        },
+        {
+          "display": "札幌啓成",
+          "score": 10,
+          "won": true,
+          "name": "札幌啓成高校",
+          "slug": "sapporokeisei"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "苫小牧東",
+          "score": 6,
+          "won": false,
+          "name": "苫小牧東高校",
+          "slug": "tomakomaihigashi"
+        },
+        {
+          "display": "室蘭栄",
+          "score": 10,
+          "won": true,
+          "name": "室蘭栄高校",
+          "slug": "muroransakae"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "伊達",
+          "score": 6,
+          "won": false,
+          "name": "伊達",
+          "slug": null
+        },
+        {
+          "display": "室蘭清水丘",
+          "score": 10,
+          "won": true,
+          "name": "室蘭清水丘高校",
+          "slug": "muroranshimizugaoka"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "函館西",
+          "score": 3,
+          "won": false,
+          "name": "函館西高校",
+          "slug": "hakodatenishi"
+        },
+        {
+          "display": "市立函館",
+          "score": 6,
+          "won": true,
+          "name": "市立函館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "えりも",
+          "score": 0,
+          "won": false,
+          "name": "えりも高校",
+          "slug": "erimo"
+        },
+        {
+          "display": "苫小牧中央",
+          "score": 10,
+          "won": true,
+          "name": "苫小牧中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "苫小牧南",
+          "score": 7,
+          "won": true,
+          "name": "苫小牧南高校",
+          "slug": "tomakomaiminami"
+        },
+        {
+          "display": "白老東・富川・苫西",
+          "score": 1,
+          "won": false,
+          "name": "白老東・富川・苫西",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "苫小牧工業",
+          "score": 9,
+          "won": true,
+          "name": "苫小牧工業高校",
+          "slug": "tomakomaikogyo"
+        },
+        {
+          "display": "伊達緑丘",
+          "score": 0,
+          "won": false,
+          "name": "伊達緑丘",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌東陵",
+          "score": 1,
+          "won": false,
+          "name": "札幌東陵高校",
+          "slug": "sapporotoryo"
+        },
+        {
+          "display": "北星大付",
+          "score": 4,
+          "won": true,
+          "name": "北星大付",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌平岸",
+          "score": 29,
+          "won": true,
+          "name": "札幌平岸高校",
+          "slug": "sapporohiragishi"
+        },
+        {
+          "display": "札幌東豊",
+          "score": 3,
+          "won": false,
+          "name": "札幌東豊高校",
+          "slug": "sapporotoho"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岩内",
+          "score": 12,
+          "won": true,
+          "name": "岩内高校",
+          "slug": "iwanai"
+        },
+        {
+          "display": "小樽潮陵",
+          "score": 7,
+          "won": false,
+          "name": "小樽潮陵高校",
+          "slug": "otaruchoryo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-20",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "倶知安",
+          "score": 3,
+          "won": true,
+          "name": "倶知安高校",
+          "slug": "kucchan"
+        },
+        {
+          "display": "寿都",
+          "score": 0,
+          "won": false,
+          "name": "寿都高校",
+          "slug": "suttsu"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-20",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北照",
+          "score": 6,
+          "won": true,
+          "name": "北照",
+          "slug": null
+        },
+        {
+          "display": "小樽水産",
+          "score": 5,
+          "won": false,
+          "name": "小樽水産高校",
+          "slug": "otarusuisan"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "倶知安農業・蘭越・小樽明峰",
+          "score": 2,
+          "won": false,
+          "name": "倶知安農業・蘭越・小樽明峰",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "小樽双葉",
+          "score": 15,
+          "won": true,
+          "name": "小樽双葉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌月寒",
+          "score": 8,
+          "won": true,
+          "name": "札幌月寒高校",
+          "slug": "sapporotsukisamu"
+        },
+        {
+          "display": "札幌北",
+          "score": 0,
+          "won": false,
+          "name": "札幌北高校",
+          "slug": "sapporokita"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "恵庭南",
+          "score": 8,
+          "won": true,
+          "name": "恵庭南高校",
+          "slug": "eniwaminami"
+        },
+        {
+          "display": "札幌工業",
+          "score": 7,
+          "won": false,
+          "name": "札幌工業高校",
+          "slug": "sapporokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "野白南連合",
+          "score": 2,
+          "won": false,
+          "name": "野白南連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "札幌稲雲",
+          "score": 13,
+          "won": true,
+          "name": "札幌稲雲高校",
+          "slug": "sapporotoun"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌西",
+          "score": 8,
+          "won": true,
+          "name": "札幌西高校",
+          "slug": "sapporonishi"
+        },
+        {
+          "display": "札幌北斗",
+          "score": 0,
+          "won": false,
+          "name": "札幌北斗",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "恵庭北",
+          "score": 9,
+          "won": true,
+          "name": "恵庭北高校",
+          "slug": "eniwakita"
+        },
+        {
+          "display": "札幌平岡",
+          "score": 0,
+          "won": false,
+          "name": "札幌平岡高校",
+          "slug": "sapporohiraoka"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-21",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "山の手",
+          "score": 4,
+          "won": false,
+          "name": "山の手",
+          "slug": null
+        },
+        {
+          "display": "札幌新川",
+          "score": 11,
+          "won": true,
+          "name": "札幌新川高校",
+          "slug": "sapporoshinkawa"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-21",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌啓成",
+          "score": 0,
+          "won": false,
+          "name": "札幌啓成高校",
+          "slug": "sapporokeisei"
+        },
+        {
+          "display": "とわの森",
+          "score": 11,
+          "won": true,
+          "name": "とわの森",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "駒大苫小牧",
+          "score": 8,
+          "won": true,
+          "name": "駒大苫小牧",
+          "slug": null
+        },
+        {
+          "display": "室蘭栄",
+          "score": 1,
+          "won": false,
+          "name": "室蘭栄高校",
+          "slug": "muroransakae"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "室蘭清水丘",
+          "score": 0,
+          "won": false,
+          "name": "室蘭清水丘高校",
+          "slug": "muroranshimizugaoka"
+        },
+        {
+          "display": "大谷室蘭",
+          "score": 7,
+          "won": true,
+          "name": "大谷室蘭",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "知内",
+          "score": 9,
+          "won": true,
+          "name": "知内高校",
+          "slug": "shiriuchi"
+        },
+        {
+          "display": "函館商業",
+          "score": 1,
+          "won": false,
+          "name": "函館商業高校",
+          "slug": "hakodateshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市立函館",
+          "score": 3,
+          "won": false,
+          "name": "市立函館",
+          "slug": null
+        },
+        {
+          "display": "函館ラ・サール",
+          "score": 5,
+          "won": true,
+          "name": "函館ラ・サール",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北海道栄",
+          "score": 0,
+          "won": false,
+          "name": "北海道栄",
+          "slug": null
+        },
+        {
+          "display": "苫小牧中央",
+          "score": 5,
+          "won": true,
+          "name": "苫小牧中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "苫小牧南",
+          "score": 2,
+          "won": false,
+          "name": "苫小牧南高校",
+          "slug": "tomakomaiminami"
+        },
+        {
+          "display": "苫小牧工業",
+          "score": 9,
+          "won": true,
+          "name": "苫小牧工業高校",
+          "slug": "tomakomaikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-21",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海大札幌",
+          "score": 10,
+          "won": true,
+          "name": "東海大札幌",
+          "slug": null
+        },
+        {
+          "display": "北星大付",
+          "score": 0,
+          "won": false,
+          "name": "北星大付",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-21",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌平岸",
+          "score": 1,
+          "won": false,
+          "name": "札幌平岸高校",
+          "slug": "sapporohiragishi"
+        },
+        {
+          "display": "札幌真栄",
+          "score": 5,
+          "won": true,
+          "name": "札幌真栄高校",
+          "slug": "sapporoshinei"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岩内",
+          "score": 3,
+          "won": true,
+          "name": "岩内高校",
+          "slug": "iwanai"
+        },
+        {
+          "display": "倶知安",
+          "score": 1,
+          "won": false,
+          "name": "倶知安高校",
+          "slug": "kucchan"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北照",
+          "score": 4,
+          "won": true,
+          "name": "北照",
+          "slug": null
+        },
+        {
+          "display": "小樽双葉",
+          "score": 3,
+          "won": false,
+          "name": "小樽双葉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-21",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌日大",
+          "score": 5,
+          "won": true,
+          "name": "札幌日大",
+          "slug": null
+        },
+        {
+          "display": "札幌月寒",
+          "score": 1,
+          "won": false,
+          "name": "札幌月寒高校",
+          "slug": "sapporotsukisamu"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-21",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "恵庭南",
+          "score": 1,
+          "won": false,
+          "name": "恵庭南高校",
+          "slug": "eniwaminami"
+        },
+        {
+          "display": "札幌南",
+          "score": 6,
+          "won": true,
+          "name": "札幌南高校",
+          "slug": "sapporominami"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-20",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "国際情報",
+          "score": 3,
+          "won": true,
+          "name": "国際情報",
+          "slug": null
+        },
+        {
+          "display": "札幌稲雲",
+          "score": 0,
+          "won": false,
+          "name": "札幌稲雲高校",
+          "slug": "sapporotoun"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-20",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌西",
+          "score": 1,
+          "won": false,
+          "name": "札幌西高校",
+          "slug": "sapporonishi"
+        },
+        {
+          "display": "恵庭北",
+          "score": 8,
+          "won": true,
+          "name": "恵庭北高校",
+          "slug": "eniwakita"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌新川",
+          "score": 9,
+          "won": true,
+          "name": "札幌新川高校",
+          "slug": "sapporoshinkawa"
+        },
+        {
+          "display": "とわの森",
+          "score": 8,
+          "won": false,
+          "name": "とわの森",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "駒大苫小牧",
+          "score": 2,
+          "won": true,
+          "name": "駒大苫小牧",
+          "slug": null
+        },
+        {
+          "display": "大谷室蘭",
+          "score": 0,
+          "won": false,
+          "name": "大谷室蘭",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "知内",
+          "score": 2,
+          "won": true,
+          "name": "知内高校",
+          "slug": "shiriuchi"
+        },
+        {
+          "display": "函館ラ・サール",
+          "score": 0,
+          "won": false,
+          "name": "函館ラ・サール",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "苫小牧中央",
+          "score": 3,
+          "won": true,
+          "name": "苫小牧中央",
+          "slug": null
+        },
+        {
+          "display": "苫小牧工業",
+          "score": 0,
+          "won": false,
+          "name": "苫小牧工業高校",
+          "slug": "tomakomaikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海大札幌",
+          "score": 7,
+          "won": true,
+          "name": "東海大札幌",
+          "slug": null
+        },
+        {
+          "display": "札幌真栄",
+          "score": 0,
+          "won": false,
+          "name": "札幌真栄高校",
+          "slug": "sapporoshinei"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岩内",
+          "score": 0,
+          "won": false,
+          "name": "岩内高校",
+          "slug": "iwanai"
+        },
+        {
+          "display": "北照",
+          "score": 3,
+          "won": true,
+          "name": "北照",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-24",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌日大",
+          "score": 8,
+          "won": true,
+          "name": "札幌日大",
+          "slug": null
+        },
+        {
+          "display": "札幌南",
+          "score": 1,
+          "won": false,
+          "name": "札幌南高校",
+          "slug": "sapporominami"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-23",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "国際情報",
+          "score": 8,
+          "won": true,
+          "name": "国際情報",
+          "slug": null
+        },
+        {
+          "display": "恵庭北",
+          "score": 2,
+          "won": false,
+          "name": "恵庭北高校",
+          "slug": "eniwakita"
+        }
+      ]
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌新川",
+          "score": 0,
+          "won": false,
+          "name": "札幌新川高校",
+          "slug": "sapporoshinkawa"
+        },
+        {
+          "display": "駒大苫小牧",
+          "score": 7,
+          "won": true,
+          "name": "駒大苫小牧",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "知内",
+          "score": 0,
+          "won": false,
+          "name": "知内高校",
+          "slug": "shiriuchi"
+        },
+        {
+          "display": "苫小牧中央",
+          "score": 2,
+          "won": true,
+          "name": "苫小牧中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-03",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海大札幌",
+          "score": 7,
+          "won": true,
+          "name": "東海大札幌",
+          "slug": null
+        },
+        {
+          "display": "北照",
+          "score": 6,
+          "won": false,
+          "name": "北照",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-04",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "札幌日大",
+          "score": 2,
+          "won": false,
+          "name": "札幌日大",
+          "slug": null
+        },
+        {
+          "display": "国際情報",
+          "score": 5,
+          "won": true,
+          "name": "国際情報",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-05",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "駒大苫小牧",
+          "score": 3,
+          "won": true,
+          "name": "駒大苫小牧",
+          "slug": null
+        },
+        {
+          "display": "苫小牧中央",
+          "score": 2,
+          "won": false,
+          "name": "苫小牧中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-06",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海大札幌",
+          "score": 1,
+          "won": false,
+          "name": "東海大札幌",
+          "slug": null
+        },
+        {
+          "display": "国際情報",
+          "score": 8,
+          "won": true,
+          "name": "国際情報",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-08",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "駒大苫小牧",
+          "score": 5,
+          "won": false,
+          "name": "駒大苫小牧",
+          "slug": null
+        },
+        {
+          "display": "国際情報",
+          "score": 9,
+          "won": true,
+          "name": "国際情報",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-08-09",
+      "season": "summer",
+      "tournament": "2020年 令和2年北海道高等学校野球大会 南北海道大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "国際情報",
+          "score": 3,
+          "won": false,
+          "name": "国際情報",
+          "slug": null
+        },
+        {
+          "display": "札幌第一",
+          "score": 8,
+          "won": true,
+          "name": "札幌第一",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-06-25",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権 南北海道大会",

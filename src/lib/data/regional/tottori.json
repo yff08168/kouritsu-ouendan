@@ -3277,6 +3277,490 @@
       ]
     },
     {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥取工業",
+          "score": 4,
+          "won": false,
+          "name": "鳥取工業高校",
+          "slug": "tottorikogyo"
+        },
+        {
+          "display": "倉吉西",
+          "score": 7,
+          "won": true,
+          "name": "倉吉西高校",
+          "slug": "kurayoshinishi"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-12",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥取東",
+          "score": 3,
+          "won": false,
+          "name": "鳥取東高校",
+          "slug": "tottorihigashi"
+        },
+        {
+          "display": "米子松蔭",
+          "score": 10,
+          "won": true,
+          "name": "米子松蔭",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥取商業",
+          "score": 5,
+          "won": true,
+          "name": "鳥取商業高校",
+          "slug": "tottorishogyo"
+        },
+        {
+          "display": "岩美",
+          "score": 3,
+          "won": false,
+          "name": "岩美高校",
+          "slug": "iwami"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "米子北",
+          "score": 8,
+          "won": false,
+          "name": "米子北",
+          "slug": null
+        },
+        {
+          "display": "倉吉西",
+          "score": 9,
+          "won": true,
+          "name": "倉吉西高校",
+          "slug": "kurayoshinishi"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-20",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "米子松蔭",
+          "score": 2,
+          "won": false,
+          "name": "米子松蔭",
+          "slug": null
+        },
+        {
+          "display": "倉吉北",
+          "score": 8,
+          "won": true,
+          "name": "倉吉北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "倉吉総合産業",
+          "score": 10,
+          "won": false,
+          "name": "倉吉総合産業高校",
+          "slug": "kurayoshisogosangyo"
+        },
+        {
+          "display": "倉吉東",
+          "score": 11,
+          "won": true,
+          "name": "倉吉東高校",
+          "slug": "kurayoshihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥取商業",
+          "score": 15,
+          "won": true,
+          "name": "鳥取商業高校",
+          "slug": "tottorishogyo"
+        },
+        {
+          "display": "倉吉農業",
+          "score": 1,
+          "won": false,
+          "name": "倉吉農業高校",
+          "slug": "kurayoshinogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-27",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "倉吉西",
+          "score": 4,
+          "won": false,
+          "name": "倉吉西高校",
+          "slug": "kurayoshinishi"
+        },
+        {
+          "display": "倉吉北",
+          "score": 6,
+          "won": true,
+          "name": "倉吉北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "倉吉東",
+          "score": 2,
+          "won": true,
+          "name": "倉吉東高校",
+          "slug": "kurayoshihigashi"
+        },
+        {
+          "display": "鳥取商業",
+          "score": 1,
+          "won": false,
+          "name": "鳥取商業高校",
+          "slug": "tottorishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "倉吉北",
+          "score": 5,
+          "won": false,
+          "name": "倉吉北",
+          "slug": null
+        },
+        {
+          "display": "倉吉東",
+          "score": 6,
+          "won": true,
+          "name": "倉吉東高校",
+          "slug": "kurayoshihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-11",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥取湖陵",
+          "score": 3,
+          "won": false,
+          "name": "鳥取湖陵高校",
+          "slug": "tottorikoryo"
+        },
+        {
+          "display": "鳥取西",
+          "score": 13,
+          "won": true,
+          "name": "鳥取西高校",
+          "slug": "tottorinishi"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-12",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "米子高専",
+          "score": 0,
+          "won": false,
+          "name": "米子工業高専",
+          "slug": "yonagokogyo-kosen"
+        },
+        {
+          "display": "米子東",
+          "score": 9,
+          "won": true,
+          "name": "米子東高校",
+          "slug": "yonagohigashi"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-12",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "八頭",
+          "score": 4,
+          "won": false,
+          "name": "八頭高校",
+          "slug": "yazu"
+        },
+        {
+          "display": "鳥取中央育英",
+          "score": 7,
+          "won": true,
+          "name": "鳥取中央育英高校",
+          "slug": "tottorichuoikuei"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "境",
+          "score": 10,
+          "won": true,
+          "name": "境高校",
+          "slug": "tottori-sakai"
+        },
+        {
+          "display": "鳥取西",
+          "score": 3,
+          "won": false,
+          "name": "鳥取西高校",
+          "slug": "tottorinishi"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-18",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "米子・日野・境港総合",
+          "score": 0,
+          "won": false,
+          "name": "米子・日野・境港総合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "鳥取城北",
+          "score": 17,
+          "won": true,
+          "name": "鳥取城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-20",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "米子西",
+          "score": 2,
+          "won": false,
+          "name": "米子西高校",
+          "slug": "yonagonishi"
+        },
+        {
+          "display": "米子東",
+          "score": 9,
+          "won": true,
+          "name": "米子東高校",
+          "slug": "yonagohigashi"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-19",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥取中央育英",
+          "score": 4,
+          "won": false,
+          "name": "鳥取中央育英高校",
+          "slug": "tottorichuoikuei"
+        },
+        {
+          "display": "米子工業",
+          "score": 8,
+          "won": true,
+          "name": "米子工業高校",
+          "slug": "yonagokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-25",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "境",
+          "score": 0,
+          "won": false,
+          "name": "境高校",
+          "slug": "tottori-sakai"
+        },
+        {
+          "display": "鳥取城北",
+          "score": 6,
+          "won": true,
+          "name": "鳥取城北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07-26",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "米子東",
+          "score": 3,
+          "won": false,
+          "name": "米子東高校",
+          "slug": "yonagohigashi"
+        },
+        {
+          "display": "米子工業",
+          "score": 4,
+          "won": true,
+          "name": "米子工業高校",
+          "slug": "yonagokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-30",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥取城北",
+          "score": 4,
+          "won": true,
+          "name": "鳥取城北",
+          "slug": null
+        },
+        {
+          "display": "米子工業",
+          "score": 0,
+          "won": false,
+          "name": "米子工業高校",
+          "slug": "yonagokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-07-31",
+      "season": "summer",
+      "tournament": "2020年 2020年夏季鳥取県高等学校野球大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥取城北",
+          "score": 5,
+          "won": false,
+          "name": "鳥取城北",
+          "slug": null
+        },
+        {
+          "display": "倉吉東",
+          "score": 7,
+          "won": true,
+          "name": "倉吉東高校",
+          "slug": "kurayoshihigashi"
+        }
+      ]
+    },
+    {
       "date": "2026-07-12",
       "season": "summer",
       "tournament": "第108回全国高等学校野球選手権 鳥取大会",
@@ -6711,6 +7195,468 @@
       ]
     },
     {
+      "date": "2020-09-19",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "倉吉農業",
+          "score": 2,
+          "won": false,
+          "name": "倉吉農業高校",
+          "slug": "kurayoshinogyo"
+        },
+        {
+          "display": "倉吉北",
+          "score": 12,
+          "won": true,
+          "name": "倉吉北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-09-19",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥取工業",
+          "score": 1,
+          "won": false,
+          "name": "鳥取工業高校",
+          "slug": "tottorikogyo"
+        },
+        {
+          "display": "境",
+          "score": 11,
+          "won": true,
+          "name": "境高校",
+          "slug": "tottori-sakai"
+        }
+      ]
+    },
+    {
+      "date": "2020-09-20",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥取城北",
+          "score": 10,
+          "won": true,
+          "name": "鳥取城北",
+          "slug": null
+        },
+        {
+          "display": "倉吉北",
+          "score": 1,
+          "won": false,
+          "name": "倉吉北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-09-21",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "米子高専",
+          "score": 1,
+          "won": false,
+          "name": "米子工業高専",
+          "slug": "yonagokogyo-kosen"
+        },
+        {
+          "display": "倉吉東",
+          "score": 13,
+          "won": true,
+          "name": "倉吉東高校",
+          "slug": "kurayoshihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2020-09-21",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "米子・日野・倉吉西・境港総合技術",
+          "score": 12,
+          "won": true,
+          "name": "米子・日野・倉吉西・境港総合技術",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "鳥取湖陵",
+          "score": 1,
+          "won": false,
+          "name": "鳥取湖陵高校",
+          "slug": "tottorikoryo"
+        }
+      ]
+    },
+    {
+      "date": "2020-09-20",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "境",
+          "score": 10,
+          "won": true,
+          "name": "境高校",
+          "slug": "tottori-sakai"
+        },
+        {
+          "display": "倉吉総合産業",
+          "score": 1,
+          "won": false,
+          "name": "倉吉総合産業高校",
+          "slug": "kurayoshisogosangyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-09-22",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥取城北",
+          "score": 10,
+          "won": true,
+          "name": "鳥取城北",
+          "slug": null
+        },
+        {
+          "display": "倉吉東",
+          "score": 0,
+          "won": false,
+          "name": "倉吉東高校",
+          "slug": "kurayoshihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2020-09-22",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "米子・日野・倉吉西・境港総合技術",
+          "score": 0,
+          "won": false,
+          "name": "米子・日野・倉吉西・境港総合技術",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "境",
+          "score": 7,
+          "won": true,
+          "name": "境高校",
+          "slug": "tottori-sakai"
+        }
+      ]
+    },
+    {
+      "date": "2020-09-27",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥取城北",
+          "score": 3,
+          "won": true,
+          "name": "鳥取城北",
+          "slug": null
+        },
+        {
+          "display": "境",
+          "score": 2,
+          "won": false,
+          "name": "境高校",
+          "slug": "tottori-sakai"
+        }
+      ]
+    },
+    {
+      "date": "2020-09-19",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥取商業",
+          "score": 9,
+          "won": true,
+          "name": "鳥取商業高校",
+          "slug": "tottorishogyo"
+        },
+        {
+          "display": "米子西",
+          "score": 2,
+          "won": false,
+          "name": "米子西高校",
+          "slug": "yonagonishi"
+        }
+      ]
+    },
+    {
+      "date": "2020-09-19",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "米子松蔭",
+          "score": 5,
+          "won": true,
+          "name": "米子松蔭",
+          "slug": null
+        },
+        {
+          "display": "米子北",
+          "score": 2,
+          "won": false,
+          "name": "米子北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-09-19",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "八頭",
+          "score": 6,
+          "won": true,
+          "name": "八頭高校",
+          "slug": "yazu"
+        },
+        {
+          "display": "鳥取東",
+          "score": 0,
+          "won": false,
+          "name": "鳥取東高校",
+          "slug": "tottorihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2020-09-20",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "米子東",
+          "score": 2,
+          "won": true,
+          "name": "米子東高校",
+          "slug": "yonagohigashi"
+        },
+        {
+          "display": "鳥取商業",
+          "score": 0,
+          "won": false,
+          "name": "鳥取商業高校",
+          "slug": "tottorishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-09-21",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "米子工業",
+          "score": 7,
+          "won": true,
+          "name": "米子工業高校",
+          "slug": "yonagokogyo"
+        },
+        {
+          "display": "岩美",
+          "score": 3,
+          "won": false,
+          "name": "岩美高校",
+          "slug": "iwami"
+        }
+      ]
+    },
+    {
+      "date": "2020-09-21",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥取中央育英",
+          "score": 2,
+          "won": false,
+          "name": "鳥取中央育英高校",
+          "slug": "tottorichuoikuei"
+        },
+        {
+          "display": "米子松蔭",
+          "score": 7,
+          "won": true,
+          "name": "米子松蔭",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2020-09-20",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "八頭",
+          "score": 1,
+          "won": false,
+          "name": "八頭高校",
+          "slug": "yazu"
+        },
+        {
+          "display": "鳥取西",
+          "score": 2,
+          "won": true,
+          "name": "鳥取西高校",
+          "slug": "tottorinishi"
+        }
+      ]
+    },
+    {
+      "date": "2020-09-22",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "米子東",
+          "score": 6,
+          "won": true,
+          "name": "米子東高校",
+          "slug": "yonagohigashi"
+        },
+        {
+          "display": "米子工業",
+          "score": 4,
+          "won": false,
+          "name": "米子工業高校",
+          "slug": "yonagokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2020-09-22",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "米子松蔭",
+          "score": 4,
+          "won": false,
+          "name": "米子松蔭",
+          "slug": null
+        },
+        {
+          "display": "鳥取西",
+          "score": 5,
+          "won": true,
+          "name": "鳥取西高校",
+          "slug": "tottorinishi"
+        }
+      ]
+    },
+    {
+      "date": "2020-09-27",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "米子東",
+          "score": 10,
+          "won": true,
+          "name": "米子東高校",
+          "slug": "yonagohigashi"
+        },
+        {
+          "display": "鳥取西",
+          "score": 3,
+          "won": false,
+          "name": "鳥取西高校",
+          "slug": "tottorinishi"
+        }
+      ]
+    },
+    {
+      "date": "2020-09-28",
+      "season": "autumn",
+      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "米子東",
+          "score": 11,
+          "won": true,
+          "name": "米子東高校",
+          "slug": "yonagohigashi"
+        },
+        {
+          "display": "鳥取城北",
+          "score": 10,
+          "won": false,
+          "name": "鳥取城北",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "2025年 秋季中国地区高校野球 鳥取県大会",
@@ -8160,468 +9106,6 @@
           "won": false,
           "name": "境高校",
           "slug": "tottori-sakai"
-        }
-      ]
-    },
-    {
-      "date": "2020-09-19",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "倉吉農業",
-          "score": 2,
-          "won": false,
-          "name": "倉吉農業高校",
-          "slug": "kurayoshinogyo"
-        },
-        {
-          "display": "倉吉北",
-          "score": 12,
-          "won": true,
-          "name": "倉吉北",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2020-09-19",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "鳥取工業",
-          "score": 1,
-          "won": false,
-          "name": "鳥取工業高校",
-          "slug": "tottorikogyo"
-        },
-        {
-          "display": "境",
-          "score": 11,
-          "won": true,
-          "name": "境高校",
-          "slug": "tottori-sakai"
-        }
-      ]
-    },
-    {
-      "date": "2020-09-20",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "鳥取城北",
-          "score": 10,
-          "won": true,
-          "name": "鳥取城北",
-          "slug": null
-        },
-        {
-          "display": "倉吉北",
-          "score": 1,
-          "won": false,
-          "name": "倉吉北",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2020-09-21",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "米子高専",
-          "score": 1,
-          "won": false,
-          "name": "米子工業高専",
-          "slug": "yonagokogyo-kosen"
-        },
-        {
-          "display": "倉吉東",
-          "score": 13,
-          "won": true,
-          "name": "倉吉東高校",
-          "slug": "kurayoshihigashi"
-        }
-      ]
-    },
-    {
-      "date": "2020-09-21",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "米子・日野・倉吉西・境港総合技術",
-          "score": 12,
-          "won": true,
-          "name": "米子・日野・倉吉西・境港総合技術",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "鳥取湖陵",
-          "score": 1,
-          "won": false,
-          "name": "鳥取湖陵高校",
-          "slug": "tottorikoryo"
-        }
-      ]
-    },
-    {
-      "date": "2020-09-20",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "境",
-          "score": 10,
-          "won": true,
-          "name": "境高校",
-          "slug": "tottori-sakai"
-        },
-        {
-          "display": "倉吉総合産業",
-          "score": 1,
-          "won": false,
-          "name": "倉吉総合産業高校",
-          "slug": "kurayoshisogosangyo"
-        }
-      ]
-    },
-    {
-      "date": "2020-09-22",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "鳥取城北",
-          "score": 10,
-          "won": true,
-          "name": "鳥取城北",
-          "slug": null
-        },
-        {
-          "display": "倉吉東",
-          "score": 0,
-          "won": false,
-          "name": "倉吉東高校",
-          "slug": "kurayoshihigashi"
-        }
-      ]
-    },
-    {
-      "date": "2020-09-22",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "米子・日野・倉吉西・境港総合技術",
-          "score": 0,
-          "won": false,
-          "name": "米子・日野・倉吉西・境港総合技術",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "境",
-          "score": 7,
-          "won": true,
-          "name": "境高校",
-          "slug": "tottori-sakai"
-        }
-      ]
-    },
-    {
-      "date": "2020-09-27",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "準決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "鳥取城北",
-          "score": 3,
-          "won": true,
-          "name": "鳥取城北",
-          "slug": null
-        },
-        {
-          "display": "境",
-          "score": 2,
-          "won": false,
-          "name": "境高校",
-          "slug": "tottori-sakai"
-        }
-      ]
-    },
-    {
-      "date": "2020-09-19",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "鳥取商業",
-          "score": 9,
-          "won": true,
-          "name": "鳥取商業高校",
-          "slug": "tottorishogyo"
-        },
-        {
-          "display": "米子西",
-          "score": 2,
-          "won": false,
-          "name": "米子西高校",
-          "slug": "yonagonishi"
-        }
-      ]
-    },
-    {
-      "date": "2020-09-19",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "米子松蔭",
-          "score": 5,
-          "won": true,
-          "name": "米子松蔭",
-          "slug": null
-        },
-        {
-          "display": "米子北",
-          "score": 2,
-          "won": false,
-          "name": "米子北",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2020-09-19",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "1回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "八頭",
-          "score": 6,
-          "won": true,
-          "name": "八頭高校",
-          "slug": "yazu"
-        },
-        {
-          "display": "鳥取東",
-          "score": 0,
-          "won": false,
-          "name": "鳥取東高校",
-          "slug": "tottorihigashi"
-        }
-      ]
-    },
-    {
-      "date": "2020-09-20",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "米子東",
-          "score": 2,
-          "won": true,
-          "name": "米子東高校",
-          "slug": "yonagohigashi"
-        },
-        {
-          "display": "鳥取商業",
-          "score": 0,
-          "won": false,
-          "name": "鳥取商業高校",
-          "slug": "tottorishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2020-09-21",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "米子工業",
-          "score": 7,
-          "won": true,
-          "name": "米子工業高校",
-          "slug": "yonagokogyo"
-        },
-        {
-          "display": "岩美",
-          "score": 3,
-          "won": false,
-          "name": "岩美高校",
-          "slug": "iwami"
-        }
-      ]
-    },
-    {
-      "date": "2020-09-21",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "鳥取中央育英",
-          "score": 2,
-          "won": false,
-          "name": "鳥取中央育英高校",
-          "slug": "tottorichuoikuei"
-        },
-        {
-          "display": "米子松蔭",
-          "score": 7,
-          "won": true,
-          "name": "米子松蔭",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2020-09-20",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "2回戦",
-      "venue": null,
-      "teams": [
-        {
-          "display": "八頭",
-          "score": 1,
-          "won": false,
-          "name": "八頭高校",
-          "slug": "yazu"
-        },
-        {
-          "display": "鳥取西",
-          "score": 2,
-          "won": true,
-          "name": "鳥取西高校",
-          "slug": "tottorinishi"
-        }
-      ]
-    },
-    {
-      "date": "2020-09-22",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "米子東",
-          "score": 6,
-          "won": true,
-          "name": "米子東高校",
-          "slug": "yonagohigashi"
-        },
-        {
-          "display": "米子工業",
-          "score": 4,
-          "won": false,
-          "name": "米子工業高校",
-          "slug": "yonagokogyo"
-        }
-      ]
-    },
-    {
-      "date": "2020-09-22",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "準々決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "米子松蔭",
-          "score": 4,
-          "won": false,
-          "name": "米子松蔭",
-          "slug": null
-        },
-        {
-          "display": "鳥取西",
-          "score": 5,
-          "won": true,
-          "name": "鳥取西高校",
-          "slug": "tottorinishi"
-        }
-      ]
-    },
-    {
-      "date": "2020-09-27",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "準決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "米子東",
-          "score": 10,
-          "won": true,
-          "name": "米子東高校",
-          "slug": "yonagohigashi"
-        },
-        {
-          "display": "鳥取西",
-          "score": 3,
-          "won": false,
-          "name": "鳥取西高校",
-          "slug": "tottorinishi"
-        }
-      ]
-    },
-    {
-      "date": "2020-09-28",
-      "season": "autumn",
-      "tournament": "2020年 秋季中国地区高校野球 鳥取県大会",
-      "round": "決勝",
-      "venue": null,
-      "teams": [
-        {
-          "display": "米子東",
-          "score": 11,
-          "won": true,
-          "name": "米子東高校",
-          "slug": "yonagohigashi"
-        },
-        {
-          "display": "鳥取城北",
-          "score": 10,
-          "won": false,
-          "name": "鳥取城北",
-          "slug": null
         }
       ]
     },

@@ -25,6 +25,27 @@ import { buildLiveLead } from "@/lib/live-lead";
  */
 export const revalidate = 60;
 
+/*
+  ★★★**空の `generateStaticParams` を置く**（2026-09-06。**これが無いとキャッシュされない**）。
+
+  この版の Next は、**`generateStaticParams` の無い動的な区間を「毎回サーバーで作る」**
+  として扱う。**`revalidate` を書いても効かない。** 手元の本番ビルドで測ると:
+
+      /live                （動的な区間なし）        … s-maxage=300 で作り置き
+      /prefectures/<県>    （generateStaticParams あり）… 同上
+      /live/<県>           （**無い**）              … private, no-store（毎回作成）
+
+  ★**空の配列を返すのが要点** —— **ビルドでは1枚も作らない**（47県ぶんの盤を
+  ビルド時に取りに行かないし、**作り置きが何時間も前の盤になることもない**）。
+  **最初に開かれたときに作り、そのあとは `revalidate` の間隔で作り直す。**
+
+  ★★**「本当に直ったか」はヘッダで確かめること**（`cache-control` と
+  Vercel の `x-vercel-cache`）。**画面を見ても分からない。**
+*/
+export function generateStaticParams() {
+  return [];
+}
+
 export async function generateMetadata({
   params,
 }: {

@@ -14689,14 +14689,35 @@
           "score": 6,
           "won": true,
           "name": "下山学園",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            3,
+            1,
+            0,
+            0,
+            2
+          ]
         },
         {
           "display": "弘前中央",
           "score": 1,
           "won": false,
           "name": "弘前中央高校",
-          "slug": "hirosakichuo"
+          "slug": "hirosakichuo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         }
       ]
     },
@@ -14760,14 +14781,36 @@
           "score": 1,
           "won": false,
           "name": "八戸高校",
-          "slug": "hachinohe"
+          "slug": "hachinohe",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "八工大二",
           "score": 5,
           "won": true,
           "name": "八工大二",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            2,
+            0
+          ]
         }
       ]
     },
@@ -14783,14 +14826,32 @@
           "score": 2,
           "won": false,
           "name": "八戸北高校",
-          "slug": "hachinohekita"
+          "slug": "hachinohekita",
+          "innings": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "五所川原農林",
           "score": 9,
           "won": true,
           "name": "五所川原農林高校",
-          "slug": "goshogawaranorin"
+          "slug": "goshogawaranorin",
+          "innings": [
+            3,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -14806,14 +14867,36 @@
           "score": 6,
           "won": true,
           "name": "八戸聖ウルスラ",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            4,
+            0,
+            0
+          ]
         },
         {
           "display": "弘前工業",
           "score": 4,
           "won": false,
           "name": "弘前工業高校",
-          "slug": "hirosakikogyo"
+          "slug": "hirosakikogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            2,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -14829,14 +14912,31 @@
           "score": 8,
           "won": true,
           "name": "青森山田",
-          "slug": null
+          "slug": null,
+          "innings": [
+            2,
+            0,
+            3,
+            0,
+            1,
+            2
+          ]
         },
         {
           "display": "下山学園",
           "score": 1,
           "won": false,
           "name": "下山学園",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         }
       ]
     },
@@ -14852,14 +14952,36 @@
           "score": 6,
           "won": true,
           "name": "青森南高校",
-          "slug": "aomoriminami"
+          "slug": "aomoriminami",
+          "innings": [
+            0,
+            1,
+            3,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "八戸工業",
           "score": 1,
           "won": false,
           "name": "八戸工業高校",
-          "slug": "hachinohekogyo"
+          "slug": "hachinohekogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -14875,14 +14997,35 @@
           "score": 4,
           "won": true,
           "name": "大湊高校",
-          "slug": "ominato"
+          "slug": "ominato",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            3,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "八工大二",
           "score": 3,
           "won": false,
           "name": "八工大二",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -14898,14 +15041,38 @@
           "score": 2,
           "won": false,
           "name": "八戸聖ウルスラ",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "display": "聖愛",
           "score": 4,
           "won": true,
           "name": "聖愛",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            3
+          ]
         }
       ]
     },
@@ -14921,14 +15088,35 @@
           "score": 2,
           "won": false,
           "name": "八戸水産高校",
-          "slug": "hachinohesuisan"
+          "slug": "hachinohesuisan",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "八戸高専",
           "score": 8,
           "won": true,
           "name": "八戸工業高専",
-          "slug": "hachinohekogyo-kosen"
+          "slug": "hachinohekogyo-kosen",
+          "innings": [
+            1,
+            3,
+            2,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
         }
       ]
     },
@@ -14991,14 +15179,40 @@
           "score": 3,
           "won": false,
           "name": "弘前高校",
-          "slug": "hirosaki"
+          "slug": "hirosaki",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "青森明の星",
           "score": 6,
           "won": true,
           "name": "青森明の星",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ]
         }
       ]
     },
@@ -15014,14 +15228,27 @@
           "score": 2,
           "won": false,
           "name": "三沢高校",
-          "slug": "misawa"
+          "slug": "misawa",
+          "innings": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
         },
         {
           "display": "弘前南",
           "score": 28,
           "won": true,
           "name": "弘前南高校",
-          "slug": "hirosakiminami"
+          "slug": "hirosakiminami",
+          "innings": [
+            13,
+            1,
+            2,
+            12
+          ]
         }
       ]
     },
@@ -15037,14 +15264,31 @@
           "score": 8,
           "won": true,
           "name": "三沢商業高校",
-          "slug": "misawashogyo"
+          "slug": "misawashogyo",
+          "innings": [
+            1,
+            1,
+            2,
+            2,
+            2,
+            0
+          ]
         },
         {
           "display": "八戸高専",
           "score": 0,
           "won": false,
           "name": "八戸工業高専",
-          "slug": "hachinohekogyo-kosen"
+          "slug": "hachinohekogyo-kosen",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -15060,14 +15304,28 @@
           "score": 4,
           "won": false,
           "name": "八戸商業高校",
-          "slug": "hachinoheshogyo"
+          "slug": "hachinoheshogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            3
+          ]
         },
         {
           "display": "青森",
           "score": 14,
           "won": true,
           "name": "青森高校",
-          "slug": "aomori"
+          "slug": "aomori",
+          "innings": [
+            3,
+            1,
+            0,
+            5,
+            5
+          ]
         }
       ]
     },
@@ -15083,14 +15341,36 @@
           "score": 10,
           "won": true,
           "name": "弘前東",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            1,
+            1,
+            5
+          ]
         },
         {
           "display": "青森明の星",
           "score": 1,
           "won": false,
           "name": "青森明の星",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -15106,14 +15386,35 @@
           "score": 1,
           "won": false,
           "name": "弘前南高校",
-          "slug": "hirosakiminami"
+          "slug": "hirosakiminami",
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "八学光星",
           "score": 6,
           "won": true,
           "name": "八学光星",
-          "slug": null
+          "slug": null,
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4
+          ]
         }
       ]
     },

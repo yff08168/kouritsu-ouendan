@@ -38846,14 +38846,32 @@
           "score": 13,
           "won": true,
           "name": "翠星高校",
-          "slug": "suisei"
+          "slug": "suisei",
+          "innings": [
+            2,
+            4,
+            0,
+            6,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "金沢大学附属",
           "score": 4,
           "won": false,
           "name": "金沢大学附属",
-          "slug": null
+          "slug": null,
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ]
         }
       ],
       "source": {
@@ -38927,14 +38945,27 @@
           "score": 0,
           "won": false,
           "name": "大聖寺高校",
-          "slug": "daishoji"
+          "slug": "daishoji",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "金沢学院大学附属",
           "score": 19,
           "won": true,
           "name": "金沢学院大学附属",
-          "slug": null
+          "slug": null,
+          "innings": [
+            4,
+            5,
+            3,
+            7
+          ]
         }
       ],
       "source": {
@@ -38954,14 +38985,28 @@
           "score": 16,
           "won": true,
           "name": "金沢桜丘高校",
-          "slug": "kanazawasakuragaoka"
+          "slug": "kanazawasakuragaoka",
+          "innings": [
+            4,
+            0,
+            11,
+            1,
+            0
+          ]
         },
         {
           "display": "金沢西",
           "score": 1,
           "won": false,
           "name": "金沢西高校",
-          "slug": "kanazawanishi"
+          "slug": "kanazawanishi",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
         }
       ],
       "source": {
@@ -38981,14 +39026,28 @@
           "score": 1,
           "won": false,
           "name": "鹿西高校",
-          "slug": "rokusei"
+          "slug": "rokusei",
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "金沢泉丘",
           "score": 11,
           "won": true,
           "name": "金沢泉丘高校",
-          "slug": "kanazawaizumigaoka"
+          "slug": "kanazawaizumigaoka",
+          "innings": [
+            3,
+            0,
+            4,
+            2,
+            2
+          ]
         }
       ],
       "source": {
@@ -39008,14 +39067,36 @@
           "score": 2,
           "won": false,
           "name": "鶴来高校",
-          "slug": "tsurugi"
+          "slug": "tsurugi",
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "津幡",
           "score": 4,
           "won": true,
           "name": "津幡高校",
-          "slug": "tsubata"
+          "slug": "tsubata",
+          "innings": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
         }
       ],
       "source": {
@@ -39035,14 +39116,36 @@
           "score": 6,
           "won": true,
           "name": "門前高校",
-          "slug": "monzen"
+          "slug": "monzen",
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            3,
+            1,
+            1
+          ]
         },
         {
           "display": "小松工業",
           "score": 3,
           "won": false,
           "name": "小松工業高校",
-          "slug": "komatsukogyo"
+          "slug": "komatsukogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
         }
       ],
       "source": {

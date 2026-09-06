@@ -151,7 +151,21 @@ export default async function RegionalGamePage({ params }: Props) {
         */}
         <div className="mt-5">
           {hasInnings(game) ? (
-            <GameScoreboard teams={game.teams} />
+            <>
+              <GameScoreboard teams={game.teams} />
+              {/*
+                ★★**各回だけ出所が違うときは、そう書く**（2026-09-06）。
+                **スコアは連盟から、各回は速報から**という試合がある。
+                ★**このサイトは「転記した経路が本当の出所」**という線を守っている。
+                ★**同じ出所のときは出さない**（県の出典表示で足りる）。
+              */}
+              {game.inningsSource && (
+                <p className="mt-2 text-xs text-ink-faint">
+                  各回の得点の出典：{game.inningsSource.name}
+                  {district.sourceName && <>（スコアは{district.sourceName}）</>}
+                </p>
+              )}
+            </>
           ) : (
             <p className="rounded-lg border border-line bg-navy-50/40 p-4 text-sm leading-relaxed text-ink-muted">
               この試合は、出典が合計得点だけを出しているため各回の得点がありません。

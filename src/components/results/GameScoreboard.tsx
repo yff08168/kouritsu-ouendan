@@ -10,10 +10,16 @@ import type { RegionalTeam } from "@/lib/regional-results";
  * ★**無い試合ではこの部品を出さない**（0を並べて埋めない）。
  *
  * ------------------------------------------------------------------
- * ★★**両チームで回数が違うことがある。** サヨナラで決まった試合は、
- * **後攻がその回を打ち切っていない**ので配列が1つ短い。
- * ★**足りないところは空欄**（球場の掲示板と同じ）。**0 を書かないこと** ——
- * 「打っていない」と「0点だった」は違う。
+ * ★★★**打たなかった回には `×` を入れる**（2026-09-06。運営者の指示）。
+ *
+ * **後攻が勝った試合では、その回の裏の攻撃が行われない**
+ * （サヨナラも、後攻がリードしたままのコールドも同じ）。
+ * 球場の掲示板はそこに `×` を出すので、それに合わせる。
+ *
+ * ★★**`×` を入れるのは「回数が短いほうが勝っている」ときだけ。**
+ * **負けた側が短いのは、こちらが読み切れていないということ**なので、
+ * **そこは空欄のままにする**（推測で `×` を置かない）。
+ * ★**0 を書かないこと** —— 「打っていない」と「0点だった」は違う。
  *
  * ★**延長は回が増えるだけ**（配列の長さがそのまま回数）。
  * ★**横に長くなるので、狭い画面では横スクロールさせる**（ページごと横に伸ばさない）。
@@ -21,6 +27,13 @@ import type { RegionalTeam } from "@/lib/regional-results";
 export function GameScoreboard({ teams }: { teams: RegionalTeam[] }) {
   const innings = Math.max(...teams.map((t) => t.innings?.length ?? 0));
   if (innings === 0) return null;
+
+  /*
+    ★**「打たなかった」と言い切れるのは、短いほうが勝っているときだけ。**
+    引き分けや、負けた側が短い形（＝読み切れていない）では出さない。
+  */
+  const didNotBat = (team: RegionalTeam) =>
+    team.won && (team.innings?.length ?? 0) < innings;
 
   return (
     <div className="overflow-x-auto">
@@ -51,15 +64,19 @@ export function GameScoreboard({ teams }: { teams: RegionalTeam[] }) {
               >
                 {team.display}
               </th>
-              {Array.from({ length: innings }, (_, i) => (
-                <td key={i} className="py-2 text-center text-ink">
-                  {/*
-                    ★**打っていない回は空欄。** `?? 0` にしないこと
-                    （サヨナラの裏は「0点」ではなく「打っていない」）。
-                  */}
-                  {team.innings?.[i] ?? ""}
-                </td>
-              ))}
+              {Array.from({ length: innings }, (_, i) => {
+                const run = team.innings?.[i];
+                return (
+                  <td key={i} className="py-2 text-center text-ink">
+                    {/*
+                      ★**`?? 0` にしないこと**（打っていない回は「0点」ではない）。
+                      ★**勝っている側が短いなら、その回は行われていない**ので `×`。
+                      **それ以外の欠けは空欄のまま**（上の説明を読むこと）。
+                    */}
+                    {run ?? (didNotBat(team) ? <span className="text-ink-faint">×</span> : "")}
+                  </td>
+                );
+              })}
               <td
                 className={cn(
                   "py-2 pl-3 text-center text-base font-bold",

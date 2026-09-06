@@ -15368,14 +15368,35 @@
           "score": 8,
           "won": true,
           "name": "関高校",
-          "slug": "seki"
+          "slug": "seki",
+          "innings": [
+            1,
+            0,
+            0,
+            3,
+            3,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "武義",
           "score": 5,
           "won": false,
           "name": "武義高校",
-          "slug": "mugi"
+          "slug": "mugi",
+          "innings": [
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -15391,14 +15412,34 @@
           "score": 10,
           "won": true,
           "name": "岐阜農林高校",
-          "slug": "gifunorin"
+          "slug": "gifunorin",
+          "innings": [
+            6,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            2
+          ]
         },
         {
           "display": "多治見",
           "score": 2,
           "won": false,
           "name": "多治見高校",
-          "slug": "tajimi"
+          "slug": "tajimi",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -15414,14 +15455,36 @@
           "score": 1,
           "won": false,
           "name": "東濃実業高校",
-          "slug": "tonojitsugyo"
+          "slug": "tonojitsugyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "市岐阜商",
           "score": 3,
           "won": true,
           "name": "岐阜商業高校",
-          "slug": "gifu-gifushogyo"
+          "slug": "gifu-gifushogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
         }
       ]
     },
@@ -15437,14 +15500,35 @@
           "score": 5,
           "won": true,
           "name": "池田高校",
-          "slug": "gifu-ikeda"
+          "slug": "gifu-ikeda",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            3,
+            2,
+            0,
+            0
+          ]
         },
         {
           "display": "岐南工",
           "score": 0,
           "won": false,
           "name": "岐南工業高校",
-          "slug": "ginankogyo"
+          "slug": "ginankogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -15484,14 +15568,35 @@
           "score": 3,
           "won": false,
           "name": "関高校",
-          "slug": "seki"
+          "slug": "seki",
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
         },
         {
           "display": "岐阜農林",
           "score": 4,
           "won": true,
           "name": "岐阜農林高校",
-          "slug": "gifunorin"
+          "slug": "gifunorin",
+          "innings": [
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
         }
       ]
     },
@@ -15507,14 +15612,35 @@
           "score": 4,
           "won": true,
           "name": "多治見工業高校",
-          "slug": "tajimikogyo"
+          "slug": "tajimikogyo",
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            0
+          ]
         },
         {
           "display": "中津川工",
           "score": 2,
           "won": false,
           "name": "中津川工業高校",
-          "slug": "nakatsugawakogyo"
+          "slug": "nakatsugawakogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
         }
       ]
     },
@@ -15530,14 +15656,36 @@
           "score": 4,
           "won": false,
           "name": "大垣養老高校",
-          "slug": "ogakiyoro"
+          "slug": "ogakiyoro",
+          "innings": [
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "富田",
           "score": 9,
           "won": true,
           "name": "富田",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            0,
+            1,
+            5
+          ]
         }
       ]
     },
@@ -15554,14 +15702,35 @@
           "won": true,
           "name": "海津明誠・不破・揖斐",
           "slug": null,
-          "combined": true
+          "combined": true,
+          "innings": [
+            4,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            6
+          ]
         },
         {
           "display": "可児",
           "score": 6,
           "won": false,
           "name": "可児高校",
-          "slug": "kani"
+          "slug": "kani",
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            2,
+            0
+          ]
         }
       ]
     },
@@ -15577,14 +15746,35 @@
           "score": 1,
           "won": false,
           "name": "岐阜商業高校",
-          "slug": "gifu-gifushogyo"
+          "slug": "gifu-gifushogyo",
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "池田",
           "score": 2,
           "won": true,
           "name": "池田高校",
-          "slug": "gifu-ikeda"
+          "slug": "gifu-ikeda",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
         }
       ]
     },
@@ -15600,14 +15790,36 @@
           "score": 2,
           "won": false,
           "name": "大垣工業高校",
-          "slug": "ogakikogyo"
+          "slug": "ogakikogyo",
+          "innings": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "大垣東",
           "score": 3,
           "won": true,
           "name": "大垣東高校",
-          "slug": "ogakihigashi"
+          "slug": "ogakihigashi",
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
         }
       ]
     },
@@ -15623,14 +15835,35 @@
           "score": 7,
           "won": true,
           "name": "美濃加茂",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            3,
+            1,
+            0
+          ]
         },
         {
           "display": "大垣北",
           "score": 3,
           "won": false,
           "name": "大垣北高校",
-          "slug": "ogakikita"
+          "slug": "ogakikita",
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -15646,14 +15879,36 @@
           "score": 8,
           "won": true,
           "name": "関商工高校",
-          "slug": "sekishoko"
+          "slug": "sekishoko",
+          "innings": [
+            4,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1
+          ]
         },
         {
           "display": "加茂農林",
           "score": 6,
           "won": false,
           "name": "加茂農林高校",
-          "slug": "gifu-kamonorin"
+          "slug": "gifu-kamonorin",
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            4
+          ]
         }
       ]
     },
@@ -15669,14 +15924,35 @@
           "score": 6,
           "won": true,
           "name": "麗澤瑞浪",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            0,
+            0,
+            2
+          ]
         },
         {
           "display": "多治見工",
           "score": 5,
           "won": false,
           "name": "多治見工業高校",
-          "slug": "tajimikogyo"
+          "slug": "tajimikogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -15692,7 +15968,14 @@
           "score": 15,
           "won": true,
           "name": "中京",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            2,
+            7,
+            2,
+            3
+          ]
         },
         {
           "display": "海津明誠・不破・揖斐",
@@ -15700,7 +15983,14 @@
           "won": false,
           "name": "海津明誠・不破・揖斐",
           "slug": null,
-          "combined": true
+          "combined": true,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -15808,14 +16098,32 @@
           "score": 10,
           "won": true,
           "name": "中津商業高校",
-          "slug": "nakatsushogyo"
+          "slug": "nakatsushogyo",
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            4,
+            0,
+            5
+          ]
         },
         {
           "display": "関有知",
           "score": 1,
           "won": false,
           "name": "関有知高校",
-          "slug": "sekiuchi"
+          "slug": "sekiuchi",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
         }
       ]
     },
@@ -15831,14 +16139,36 @@
           "score": 6,
           "won": true,
           "name": "岐山高校",
-          "slug": "gizan"
+          "slug": "gizan",
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            3
+          ]
         },
         {
           "display": "岐阜高専",
           "score": 2,
           "won": false,
           "name": "岐阜工業高専",
-          "slug": "gifukogyo-kosen"
+          "slug": "gifukogyo-kosen",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -15854,14 +16184,35 @@
           "score": 5,
           "won": false,
           "name": "岐阜総合学園高校",
-          "slug": "gifusogogakuen"
+          "slug": "gifusogogakuen",
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            0,
+            1
+          ]
         },
         {
           "display": "大垣南",
           "score": 6,
           "won": true,
           "name": "大垣南高校",
-          "slug": "ogakiminami"
+          "slug": "ogakiminami",
+          "innings": [
+            2,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -15877,14 +16228,35 @@
           "score": 2,
           "won": false,
           "name": "土岐紅陵高校",
-          "slug": "tokikoryo"
+          "slug": "tokikoryo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ]
         },
         {
           "display": "岐阜",
           "score": 6,
           "won": true,
           "name": "岐阜高校",
-          "slug": "gifu"
+          "slug": "gifu",
+          "innings": [
+            0,
+            2,
+            2,
+            0,
+            1,
+            1,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -15900,14 +16272,36 @@
           "score": 1,
           "won": false,
           "name": "加納高校",
-          "slug": "kano"
+          "slug": "kano",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "岐阜各務野",
           "score": 3,
           "won": true,
           "name": "岐阜各務野高校",
-          "slug": "gifukakamino"
+          "slug": "gifukakamino",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -15923,14 +16317,35 @@
           "score": 2,
           "won": false,
           "name": "益田清風高校",
-          "slug": "mashitaseifu"
+          "slug": "mashitaseifu",
+          "innings": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "岐阜工",
           "score": 4,
           "won": true,
           "name": "岐阜工業高校",
-          "slug": "gifukogyo"
+          "slug": "gifukogyo",
+          "innings": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0
+          ]
         }
       ]
     },
@@ -15969,14 +16384,36 @@
           "score": 17,
           "won": true,
           "name": "本巣松陽高校",
-          "slug": "motosushoyo"
+          "slug": "motosushoyo",
+          "innings": [
+            1,
+            0,
+            5,
+            4,
+            0,
+            0,
+            1,
+            5,
+            1
+          ]
         },
         {
           "display": "郡上",
           "score": 11,
           "won": false,
           "name": "郡上高校",
-          "slug": "gujo"
+          "slug": "gujo",
+          "innings": [
+            0,
+            4,
+            0,
+            0,
+            0,
+            4,
+            3,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -15992,14 +16429,32 @@
           "score": 2,
           "won": false,
           "name": "斐太高校",
-          "slug": "hida"
+          "slug": "hida",
+          "innings": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "中津商",
           "score": 12,
           "won": true,
           "name": "中津商業高校",
-          "slug": "nakatsushogyo"
+          "slug": "nakatsushogyo",
+          "innings": [
+            5,
+            1,
+            0,
+            1,
+            0,
+            3,
+            2
+          ]
         }
       ]
     },
@@ -16039,14 +16494,35 @@
           "score": 1,
           "won": false,
           "name": "岐山高校",
-          "slug": "gizan"
+          "slug": "gizan",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "大垣南",
           "score": 7,
           "won": true,
           "name": "大垣南高校",
-          "slug": "ogakiminami"
+          "slug": "ogakiminami",
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            3,
+            0,
+            2
+          ]
         }
       ]
     },
@@ -16062,14 +16538,31 @@
           "score": 7,
           "won": true,
           "name": "大垣日大",
-          "slug": null
+          "slug": null,
+          "innings": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            0
+          ]
         },
         {
           "display": "岐阜",
           "score": 0,
           "won": false,
           "name": "岐阜高校",
-          "slug": "gifu"
+          "slug": "gifu",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -16085,14 +16578,36 @@
           "score": 7,
           "won": true,
           "name": "岐阜第一",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            2,
+            1,
+            0,
+            2
+          ]
         },
         {
           "display": "岐阜工",
           "score": 3,
           "won": false,
           "name": "岐阜工業高校",
-          "slug": "gifukogyo"
+          "slug": "gifukogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ]
         }
       ]
     },
@@ -16108,14 +16623,27 @@
           "score": 13,
           "won": true,
           "name": "岐阜商業高校",
-          "slug": "gifushogyo"
+          "slug": "gifushogyo",
+          "innings": [
+            5,
+            2,
+            5,
+            1
+          ]
         },
         {
           "display": "本巣松陽",
           "score": 0,
           "won": false,
           "name": "本巣松陽高校",
-          "slug": "motosushoyo"
+          "slug": "motosushoyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },

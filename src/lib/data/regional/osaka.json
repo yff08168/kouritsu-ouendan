@@ -58076,14 +58076,36 @@
           "score": 1,
           "won": false,
           "name": "高石高校",
-          "slug": "takaishi"
+          "slug": "takaishi",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
         },
         {
           "display": "興國",
           "score": 9,
           "won": true,
           "name": "興國",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            0,
+            2,
+            1,
+            0,
+            1,
+            1,
+            0,
+            3
+          ]
         }
       ]
     },

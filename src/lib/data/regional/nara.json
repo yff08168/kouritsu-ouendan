@@ -21720,16 +21720,34 @@
           "score": 24,
           "won": true,
           "name": "香芝高校",
-          "slug": "kashiba"
+          "slug": "kashiba",
+          "innings": [
+            5,
+            6,
+            3,
+            5,
+            5
+          ]
         },
         {
           "display": "宇陀",
           "score": 0,
           "won": false,
           "name": "宇陀高校",
-          "slug": "uda"
+          "slug": "uda",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-09-05",
@@ -21743,16 +21761,44 @@
           "score": 14,
           "won": true,
           "name": "郡山高校",
-          "slug": "nara-koriyama"
+          "slug": "nara-koriyama",
+          "innings": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            10
+          ]
         },
         {
           "display": "桜井",
           "score": 6,
           "won": false,
           "name": "桜井高校",
-          "slug": "nara-sakurai"
+          "slug": "nara-sakurai",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            2,
+            2
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-09-05",
@@ -21812,16 +21858,44 @@
           "score": 4,
           "won": true,
           "name": "西大和学園",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
         },
         {
           "display": "奈女大附",
           "score": 2,
           "won": false,
           "name": "奈良女子大学附属中等教育学校",
-          "slug": "narajoshidaigakufuzoku"
+          "slug": "narajoshidaigakufuzoku",
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-08-30",
@@ -21882,16 +21956,38 @@
           "score": 7,
           "won": true,
           "name": "御所実業高校",
-          "slug": "gosejitsugyo"
+          "slug": "gosejitsugyo",
+          "innings": [
+            0,
+            0,
+            5,
+            0,
+            1,
+            0,
+            1
+          ]
         },
         {
           "display": "添上",
           "score": 0,
           "won": false,
           "name": "添上高校",
-          "slug": "soekami"
+          "slug": "soekami",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-08-29",
@@ -21928,16 +22024,34 @@
           "score": 17,
           "won": true,
           "name": "智辯学園",
-          "slug": null
+          "slug": null,
+          "innings": [
+            6,
+            0,
+            0,
+            7,
+            4
+          ]
         },
         {
           "display": "王寺工業",
           "score": 0,
           "won": false,
           "name": "王寺工業高校",
-          "slug": "ojikogyo"
+          "slug": "ojikogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-08-29",

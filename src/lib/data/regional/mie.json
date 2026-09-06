@@ -16320,14 +16320,34 @@
           "score": 6,
           "won": false,
           "name": "上野高校",
-          "slug": "mie-ueno"
+          "slug": "mie-ueno",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            4,
+            0,
+            1
+          ]
         },
         {
           "display": "稲生",
           "score": 14,
           "won": true,
           "name": "稲生高校",
-          "slug": "ino"
+          "slug": "ino",
+          "innings": [
+            0,
+            0,
+            6,
+            4,
+            0,
+            1,
+            0,
+            3
+          ]
         }
       ]
     },
@@ -16435,14 +16455,36 @@
           "score": 1,
           "won": false,
           "name": "伊勢高校",
-          "slug": "ise"
+          "slug": "ise",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "津工",
           "score": 4,
           "won": true,
           "name": "津工業高校",
-          "slug": "tsukogyo"
+          "slug": "tsukogyo",
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
         }
       ]
     },
@@ -16759,14 +16801,35 @@
           "score": 1,
           "won": true,
           "name": "桑名工業高校",
-          "slug": "kuwanakogyo"
+          "slug": "kuwanakogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "display": "四日市南",
           "score": 0,
           "won": false,
           "name": "四日市南高校",
-          "slug": "yokkaichiminami"
+          "slug": "yokkaichiminami",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },

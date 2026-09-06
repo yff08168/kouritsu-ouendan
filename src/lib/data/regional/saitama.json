@@ -11379,16 +11379,34 @@
           "score": 19,
           "won": true,
           "name": "西武文理",
-          "slug": null
+          "slug": null,
+          "innings": [
+            3,
+            5,
+            6,
+            4,
+            1
+          ]
         },
         {
           "display": "浦和北",
           "score": 4,
           "won": false,
           "name": "浦和北高校",
-          "slug": "urawakita"
+          "slug": "urawakita",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            4
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-09",
@@ -11425,16 +11443,41 @@
           "score": 3,
           "won": false,
           "name": "志木高校",
-          "slug": "shiki"
+          "slug": "shiki",
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "坂戸西",
           "score": 8,
           "won": true,
           "name": "坂戸西高校",
-          "slug": "sakadonishi"
+          "slug": "sakadonishi",
+          "innings": [
+            1,
+            0,
+            4,
+            0,
+            0,
+            2,
+            1,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-09",
@@ -11448,16 +11491,42 @@
           "score": 3,
           "won": true,
           "name": "所沢西高校",
-          "slug": "tokorozawanishi"
+          "slug": "tokorozawanishi",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ]
         },
         {
           "display": "三郷北",
           "score": 2,
           "won": false,
           "name": "三郷北高校",
-          "slug": "misatokita"
+          "slug": "misatokita",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-09",
@@ -11471,16 +11540,37 @@
           "score": 0,
           "won": false,
           "name": "いずみ高校",
-          "slug": "saitama-izumi"
+          "slug": "saitama-izumi",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "所沢北",
           "score": 9,
           "won": true,
           "name": "所沢北高校",
-          "slug": "tokorozawakita"
+          "slug": "tokorozawakita",
+          "innings": [
+            0,
+            5,
+            0,
+            4,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-09",
@@ -11494,16 +11584,42 @@
           "score": 9,
           "won": true,
           "name": "ふじみ野高校",
-          "slug": "fujimino"
+          "slug": "fujimino",
+          "innings": [
+            2,
+            2,
+            0,
+            0,
+            0,
+            3,
+            1,
+            0,
+            1
+          ]
         },
         {
           "display": "上尾南",
           "score": 4,
           "won": false,
           "name": "上尾南高校",
-          "slug": "ageominami"
+          "slug": "ageominami",
+          "innings": [
+            0,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-09",
@@ -11517,16 +11633,33 @@
           "score": 0,
           "won": false,
           "name": "庄和高校",
-          "slug": "showa"
+          "slug": "showa",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "栄北",
           "score": 10,
           "won": true,
           "name": "栄北",
-          "slug": null
+          "slug": null,
+          "innings": [
+            4,
+            5,
+            0,
+            1
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-09",
@@ -11563,16 +11696,37 @@
           "score": 1,
           "won": false,
           "name": "新座柳瀬高校",
-          "slug": "niizayanase"
+          "slug": "niizayanase",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "富士見",
           "score": 8,
           "won": true,
           "name": "富士見高校",
-          "slug": "fujimi"
+          "slug": "fujimi",
+          "innings": [
+            0,
+            2,
+            2,
+            0,
+            2,
+            2
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-09",
@@ -11586,16 +11740,42 @@
           "score": 9,
           "won": true,
           "name": "東野",
-          "slug": null
+          "slug": null,
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            4,
+            1
+          ]
         },
         {
           "display": "大宮北",
           "score": 6,
           "won": false,
           "name": "大宮北高校",
-          "slug": "omiyakita"
+          "slug": "omiyakita",
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-09",
@@ -11632,16 +11812,34 @@
           "score": 17,
           "won": true,
           "name": "国際学院",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            9,
+            5,
+            3,
+            0
+          ]
         },
         {
           "display": "わせがく夢育",
           "score": 0,
           "won": false,
           "name": "わせがく夢育",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-09",
@@ -11678,16 +11876,42 @@
           "score": 4,
           "won": true,
           "name": "城西大川越",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
         },
         {
           "display": "所沢中央",
           "score": 2,
           "won": false,
           "name": "所沢中央高校",
-          "slug": "tokorozawachuo"
+          "slug": "tokorozawachuo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-09",
@@ -11701,16 +11925,37 @@
           "score": 1,
           "won": false,
           "name": "久喜工業高校",
-          "slug": "kukikogyo"
+          "slug": "kukikogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "草加西",
           "score": 9,
           "won": true,
           "name": "草加西高校",
-          "slug": "sokanishi"
+          "slug": "sokanishi",
+          "innings": [
+            1,
+            3,
+            2,
+            1,
+            0,
+            2
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-09",
@@ -11724,16 +11969,36 @@
           "score": 15,
           "won": true,
           "name": "開智未来",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            13
+          ]
         },
         {
           "display": "越谷総合",
           "score": 0,
           "won": false,
           "name": "越谷総合",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-09",
@@ -11747,16 +12012,42 @@
           "score": 9,
           "won": true,
           "name": "蕨高校",
-          "slug": "warabi"
+          "slug": "warabi",
+          "innings": [
+            0,
+            5,
+            0,
+            2,
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
         },
         {
           "display": "朝霞西",
           "score": 5,
           "won": false,
           "name": "朝霞西高校",
-          "slug": "asakanishi"
+          "slug": "asakanishi",
+          "innings": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-09",
@@ -11770,16 +12061,42 @@
           "score": 6,
           "won": true,
           "name": "春日部東高校",
-          "slug": "kasukabehigashi"
+          "slug": "kasukabehigashi",
+          "innings": [
+            1,
+            1,
+            0,
+            0,
+            2,
+            0,
+            2,
+            0,
+            0
+          ]
         },
         {
           "display": "川越南",
           "score": 1,
           "won": false,
           "name": "川越南高校",
-          "slug": "kawagoeminami"
+          "slug": "kawagoeminami",
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-10",
@@ -11793,16 +12110,42 @@
           "score": 3,
           "won": true,
           "name": "浦和麗明",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "叡明",
           "score": 1,
           "won": false,
           "name": "叡明",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-10",
@@ -11839,16 +12182,41 @@
           "score": 4,
           "won": false,
           "name": "聖望学園",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            2,
+            0
+          ]
         },
         {
           "display": "昌平",
           "score": 5,
           "won": true,
           "name": "昌平",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            2,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-10",
@@ -11886,16 +12254,42 @@
           "score": 10,
           "won": true,
           "name": "深谷商業高校",
-          "slug": "fukayashogyo"
+          "slug": "fukayashogyo",
+          "innings": [
+            0,
+            3,
+            1,
+            1,
+            0,
+            2,
+            2,
+            1,
+            0
+          ]
         },
         {
           "display": "草加南",
           "score": 6,
           "won": false,
           "name": "草加南高校",
-          "slug": "sokaminami"
+          "slug": "sokaminami",
+          "innings": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-10",
@@ -11932,16 +12326,33 @@
           "score": 1,
           "won": false,
           "name": "大宮開成",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "上尾",
           "score": 28,
           "won": true,
           "name": "上尾高校",
-          "slug": "ageo"
+          "slug": "ageo",
+          "innings": [
+            0,
+            6,
+            17,
+            5
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-10",
@@ -11955,16 +12366,41 @@
           "score": 8,
           "won": false,
           "name": "川越西高校",
-          "slug": "kawagoenishi"
+          "slug": "kawagoenishi",
+          "innings": [
+            1,
+            1,
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "秀明英光",
           "score": 11,
           "won": true,
           "name": "秀明英光",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            1,
+            3,
+            0,
+            4,
+            1,
+            1,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-10",
@@ -11978,16 +12414,33 @@
           "score": 1,
           "won": false,
           "name": "秩父農工科",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
         },
         {
           "display": "鴻巣",
           "score": 16,
           "won": true,
           "name": "鴻巣高校",
-          "slug": "konosu"
+          "slug": "konosu",
+          "innings": [
+            9,
+            1,
+            2,
+            4
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-10",
@@ -12001,16 +12454,40 @@
           "score": 7,
           "won": true,
           "name": "山村国際",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            0,
+            2,
+            1,
+            1,
+            0,
+            0,
+            2
+          ]
         },
         {
           "display": "熊谷農",
           "score": 0,
           "won": false,
           "name": "熊谷農業高校",
-          "slug": "kumagayanogyo"
+          "slug": "kumagayanogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-10",
@@ -12024,16 +12501,42 @@
           "score": 6,
           "won": true,
           "name": "坂戸高校",
-          "slug": "sakado"
+          "slug": "sakado",
+          "innings": [
+            0,
+            2,
+            0,
+            0,
+            2,
+            2,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "豊岡",
           "score": 5,
           "won": false,
           "name": "豊岡高校",
-          "slug": "toyoka"
+          "slug": "toyoka",
+          "innings": [
+            1,
+            0,
+            0,
+            3,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-10",
@@ -12070,16 +12573,34 @@
           "score": 13,
           "won": true,
           "name": "細田学園",
-          "slug": null
+          "slug": null,
+          "innings": [
+            7,
+            0,
+            4,
+            2,
+            0
+          ]
         },
         {
           "display": "川越",
           "score": 1,
           "won": false,
           "name": "川越",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-10",
@@ -12093,16 +12614,42 @@
           "score": 3,
           "won": true,
           "name": "浦和商業高校",
-          "slug": "urawashogyo"
+          "slug": "urawashogyo",
+          "innings": [
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "浦和西",
           "score": 1,
           "won": false,
           "name": "浦和西高校",
-          "slug": "urawanishi"
+          "slug": "urawanishi",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-10",
@@ -12116,16 +12663,42 @@
           "score": 9,
           "won": true,
           "name": "川口青陵高校",
-          "slug": "kawaguchiseiryo"
+          "slug": "kawaguchiseiryo",
+          "innings": [
+            2,
+            0,
+            0,
+            2,
+            1,
+            1,
+            0,
+            3,
+            0
+          ]
         },
         {
           "display": "川口工",
           "score": 6,
           "won": false,
           "name": "川口工業高校",
-          "slug": "kawaguchikogyo"
+          "slug": "kawaguchikogyo",
+          "innings": [
+            0,
+            1,
+            0,
+            2,
+            2,
+            0,
+            1,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-10",
@@ -12139,16 +12712,42 @@
           "score": 9,
           "won": true,
           "name": "蓮田松韻高校",
-          "slug": "hasudashoin"
+          "slug": "hasudashoin",
+          "innings": [
+            4,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ]
         },
         {
           "display": "岩槻商",
           "score": 4,
           "won": false,
           "name": "岩槻商業高校",
-          "slug": "iwatsukishogyo"
+          "slug": "iwatsukishogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-11",
@@ -12185,16 +12784,41 @@
           "score": 1,
           "won": false,
           "name": "不動岡高校",
-          "slug": "fudoka"
+          "slug": "fudoka",
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "大宮東",
           "score": 3,
           "won": true,
           "name": "大宮東高校",
-          "slug": "omiyahigashi"
+          "slug": "omiyahigashi",
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-11",
@@ -12208,16 +12832,41 @@
           "score": 0,
           "won": false,
           "name": "獨協埼玉",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "浦和",
           "score": 5,
           "won": true,
           "name": "浦和",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            2,
+            1,
+            0,
+            0,
+            2,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-11",
@@ -12254,16 +12903,41 @@
           "score": 2,
           "won": false,
           "name": "大宮武蔵野高校",
-          "slug": "omiyamusashino"
+          "slug": "omiyamusashino",
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "display": "埼玉栄",
           "score": 7,
           "won": true,
           "name": "埼玉栄",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            5,
+            0,
+            0,
+            1
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-11",
@@ -12277,16 +12951,38 @@
           "score": 20,
           "won": true,
           "name": "深谷第一高校",
-          "slug": "fukayadaiichi"
+          "slug": "fukayadaiichi",
+          "innings": [
+            2,
+            9,
+            0,
+            1,
+            1,
+            0,
+            7
+          ]
         },
         {
           "display": "岩槻",
           "score": 4,
           "won": false,
           "name": "岩槻高校",
-          "slug": "iwatsuki"
+          "slug": "iwatsuki",
+          "innings": [
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-11",
@@ -12300,16 +12996,42 @@
           "score": 6,
           "won": true,
           "name": "大宮高校",
-          "slug": "omiya"
+          "slug": "omiya",
+          "innings": [
+            0,
+            3,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "松山",
           "score": 2,
           "won": false,
           "name": "松山高校",
-          "slug": "saitama-matsuyama"
+          "slug": "saitama-matsuyama",
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-11",
@@ -12323,16 +13045,41 @@
           "score": 0,
           "won": false,
           "name": "滑川総合高校",
-          "slug": "namegawasogo"
+          "slug": "namegawasogo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "大宮南",
           "score": 2,
           "won": true,
           "name": "大宮南高校",
-          "slug": "omiyaminami"
+          "slug": "omiyaminami",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-11",
@@ -12346,16 +13093,37 @@
           "score": 1,
           "won": false,
           "name": "市立浦和",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "星野",
           "score": 10,
           "won": true,
           "name": "星野",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            7,
+            0,
+            1,
+            1,
+            1
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-11",
@@ -12415,16 +13183,38 @@
           "score": 11,
           "won": true,
           "name": "本庄高校",
-          "slug": "saitama-honjo"
+          "slug": "saitama-honjo",
+          "innings": [
+            5,
+            1,
+            0,
+            5,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "入間向陽",
           "score": 3,
           "won": false,
           "name": "入間向陽高校",
-          "slug": "irumakoyo"
+          "slug": "irumakoyo",
+          "innings": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-11",
@@ -12438,16 +13228,37 @@
           "score": 1,
           "won": false,
           "name": "所沢商業高校",
-          "slug": "tokorozawashogyo"
+          "slug": "tokorozawashogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "西武台",
           "score": 8,
           "won": true,
           "name": "西武台",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            3,
+            3,
+            0,
+            0,
+            2
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-11",
@@ -12484,16 +13295,41 @@
           "score": 3,
           "won": false,
           "name": "越谷北高校",
-          "slug": "koshigayakita"
+          "slug": "koshigayakita",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1
+          ]
         },
         {
           "display": "草加東",
           "score": 7,
           "won": true,
           "name": "草加東高校",
-          "slug": "sokahigashi"
+          "slug": "sokahigashi",
+          "innings": [
+            1,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-11",
@@ -12507,16 +13343,33 @@
           "score": 0,
           "won": false,
           "name": "杉戸農業高校",
-          "slug": "sugitonogyo"
+          "slug": "sugitonogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "久喜北陽",
           "score": 16,
           "won": true,
           "name": "久喜北陽高校",
-          "slug": "kukihokuyo"
+          "slug": "kukihokuyo",
+          "innings": [
+            1,
+            6,
+            7,
+            2
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-11",
@@ -12553,16 +13406,33 @@
           "score": 1,
           "won": false,
           "name": "新座高校",
-          "slug": "niiza"
+          "slug": "niiza",
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "市立川越",
           "score": 14,
           "won": true,
           "name": "市立川越",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            6,
+            0,
+            8
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-12",
@@ -12576,16 +13446,38 @@
           "score": 8,
           "won": true,
           "name": "浦和実",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            5
+          ]
         },
         {
           "display": "ふじみ野",
           "score": 0,
           "won": false,
           "name": "ふじみ野高校",
-          "slug": "fujimino"
+          "slug": "fujimino",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-12",
@@ -12599,16 +13491,34 @@
           "score": 10,
           "won": true,
           "name": "川越東",
-          "slug": null
+          "slug": null,
+          "innings": [
+            2,
+            1,
+            2,
+            2,
+            3
+          ]
         },
         {
           "display": "栄東",
           "score": 0,
           "won": false,
           "name": "栄東",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-12",
@@ -12622,16 +13532,41 @@
           "score": 0,
           "won": false,
           "name": "川越工業高校",
-          "slug": "kawagoekogyo"
+          "slug": "kawagoekogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "早大本庄",
           "score": 4,
           "won": true,
           "name": "早大本庄",
-          "slug": null
+          "slug": null,
+          "innings": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-12",
@@ -12645,16 +13580,41 @@
           "score": 8,
           "won": false,
           "name": "秩父高校",
-          "slug": "chichibu"
+          "slug": "chichibu",
+          "innings": [
+            0,
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
         },
         {
           "display": "春日部",
           "score": 9,
           "won": true,
           "name": "春日部高校",
-          "slug": "kasukabe"
+          "slug": "kasukabe",
+          "innings": [
+            2,
+            0,
+            2,
+            1,
+            3,
+            0,
+            1,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-12",
@@ -12668,16 +13628,41 @@
           "score": 6,
           "won": false,
           "name": "春日部工業高校",
-          "slug": "kasukabekogyo"
+          "slug": "kasukabekogyo",
+          "innings": [
+            0,
+            1,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "正智深谷",
           "score": 8,
           "won": true,
           "name": "正智深谷",
-          "slug": null
+          "slug": null,
+          "innings": [
+            3,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            2
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-12",
@@ -12691,16 +13676,33 @@
           "score": 4,
           "won": false,
           "name": "杉戸高校",
-          "slug": "sugito"
+          "slug": "sugito",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            4
+          ]
         },
         {
           "display": "西武文理",
           "score": 16,
           "won": true,
           "name": "西武文理",
-          "slug": null
+          "slug": null,
+          "innings": [
+            4,
+            10,
+            0,
+            2
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-12",
@@ -12714,16 +13716,36 @@
           "score": 11,
           "won": true,
           "name": "開智未来",
-          "slug": null
+          "slug": null,
+          "innings": [
+            7,
+            1,
+            1,
+            0,
+            0,
+            2
+          ]
         },
         {
           "display": "北本",
           "score": 0,
           "won": false,
           "name": "北本高校",
-          "slug": "kitamoto"
+          "slug": "kitamoto",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-12",
@@ -12761,16 +13783,42 @@
           "score": 8,
           "won": true,
           "name": "本庄第一",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            6,
+            0,
+            0,
+            1
+          ]
         },
         {
           "display": "伊奈学園",
           "score": 5,
           "won": false,
           "name": "伊奈学園",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-12",
@@ -12831,16 +13879,42 @@
           "score": 10,
           "won": true,
           "name": "与野高校",
-          "slug": "yono"
+          "slug": "yono",
+          "innings": [
+            1,
+            0,
+            0,
+            1,
+            2,
+            1,
+            3,
+            2,
+            0
+          ]
         },
         {
           "display": "熊谷西",
           "score": 6,
           "won": false,
           "name": "熊谷西高校",
-          "slug": "kumagayanishi"
+          "slug": "kumagayanishi",
+          "innings": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            3,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-12",
@@ -12854,16 +13928,34 @@
           "score": 17,
           "won": true,
           "name": "熊谷高校",
-          "slug": "kumagaya"
+          "slug": "kumagaya",
+          "innings": [
+            2,
+            0,
+            3,
+            5,
+            7
+          ]
         },
         {
           "display": "狭山経済",
           "score": 4,
           "won": false,
           "name": "狭山経済高校",
-          "slug": "sayamakeizai"
+          "slug": "sayamakeizai",
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            2
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-12",
@@ -12900,16 +13992,33 @@
           "score": 1,
           "won": false,
           "name": "狭山工業高校",
-          "slug": "sayamakogyo"
+          "slug": "sayamakogyo",
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "坂戸西",
           "score": 11,
           "won": true,
           "name": "坂戸西高校",
-          "slug": "sakadonishi"
+          "slug": "sakadonishi",
+          "innings": [
+            2,
+            8,
+            0,
+            1
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-12",
@@ -12923,16 +14032,34 @@
           "score": 17,
           "won": true,
           "name": "武蔵越生",
-          "slug": null
+          "slug": null,
+          "innings": [
+            13,
+            1,
+            0,
+            2,
+            1
+          ]
         },
         {
           "display": "越谷西",
           "score": 3,
           "won": false,
           "name": "越谷西高校",
-          "slug": "koshigayanishi"
+          "slug": "koshigayanishi",
+          "innings": [
+            0,
+            0,
+            0,
+            3,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-12",
@@ -12946,16 +14073,42 @@
           "score": 4,
           "won": true,
           "name": "鷲宮高校",
-          "slug": "washimiya"
+          "slug": "washimiya",
+          "innings": [
+            1,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "越ヶ谷",
           "score": 1,
           "won": false,
           "name": "越ケ谷高校",
-          "slug": "koshigaya"
+          "slug": "koshigaya",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-12",
@@ -12992,16 +14145,42 @@
           "score": 4,
           "won": true,
           "name": "南稜高校",
-          "slug": "nanryo"
+          "slug": "nanryo",
+          "innings": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
         },
         {
           "display": "草加",
           "score": 1,
           "won": false,
           "name": "草加高校",
-          "slug": "soka"
+          "slug": "soka",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-12",
@@ -13038,16 +14217,42 @@
           "score": 4,
           "won": true,
           "name": "武南",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "白岡",
           "score": 2,
           "won": false,
           "name": "白岡高校",
-          "slug": "shiraoka"
+          "slug": "shiraoka",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-12",
@@ -13061,16 +14266,36 @@
           "score": 12,
           "won": true,
           "name": "飯能高校",
-          "slug": "hanno"
+          "slug": "hanno",
+          "innings": [
+            2,
+            2,
+            1,
+            2,
+            1,
+            4
+          ]
         },
         {
           "display": "宮代",
           "score": 1,
           "won": false,
           "name": "宮代高校",
-          "slug": "miyashiro"
+          "slug": "miyashiro",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-14",
@@ -13107,16 +14332,42 @@
           "score": 4,
           "won": true,
           "name": "上尾高校",
-          "slug": "ageo"
+          "slug": "ageo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            1
+          ]
         },
         {
           "display": "細田学園",
           "score": 2,
           "won": false,
           "name": "細田学園",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-14",
@@ -13130,16 +14381,33 @@
           "score": 1,
           "won": false,
           "name": "浦和商業高校",
-          "slug": "urawashogyo"
+          "slug": "urawashogyo",
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "花咲徳栄",
           "score": 19,
           "won": true,
           "name": "花咲徳栄",
-          "slug": null
+          "slug": null,
+          "innings": [
+            7,
+            5,
+            4,
+            3
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-14",
@@ -13153,16 +14421,38 @@
           "score": 16,
           "won": true,
           "name": "川口市立高校",
-          "slug": "kawaguchishiritsu"
+          "slug": "kawaguchishiritsu",
+          "innings": [
+            2,
+            2,
+            1,
+            4,
+            2,
+            1,
+            4
+          ]
         },
         {
           "display": "八潮ﾌﾛﾝﾃｨｱ",
           "score": 3,
           "won": false,
           "name": "八潮フロンティア高校",
-          "slug": "yashiofurontia"
+          "slug": "yashiofurontia",
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-14",
@@ -13176,16 +14466,41 @@
           "score": 0,
           "won": false,
           "name": "山村国際",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "山村学園",
           "score": 2,
           "won": true,
           "name": "山村学園",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-14",
@@ -13291,16 +14606,42 @@
           "score": 4,
           "won": true,
           "name": "大宮高校",
-          "slug": "omiya"
+          "slug": "omiya",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            2,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "星野",
           "score": 2,
           "won": false,
           "name": "星野",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-14",
@@ -13314,16 +14655,34 @@
           "score": 14,
           "won": true,
           "name": "熊谷商業高校",
-          "slug": "kumagayashogyo"
+          "slug": "kumagayashogyo",
+          "innings": [
+            3,
+            1,
+            3,
+            3,
+            4
+          ]
         },
         {
           "display": "深谷第一",
           "score": 0,
           "won": false,
           "name": "深谷第一高校",
-          "slug": "fukayadaiichi"
+          "slug": "fukayadaiichi",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-14",
@@ -13337,16 +14696,38 @@
           "score": 11,
           "won": true,
           "name": "秀明英光",
-          "slug": null
+          "slug": null,
+          "innings": [
+            5,
+            0,
+            2,
+            0,
+            1,
+            1,
+            2
+          ]
         },
         {
           "display": "鴻巣",
           "score": 3,
           "won": false,
           "name": "鴻巣高校",
-          "slug": "konosu"
+          "slug": "konosu",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-14",
@@ -13360,16 +14741,38 @@
           "score": 26,
           "won": true,
           "name": "城北埼玉",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            1,
+            3,
+            4,
+            4,
+            1,
+            12
+          ]
         },
         {
           "display": "所沢北",
           "score": 8,
           "won": false,
           "name": "所沢北高校",
-          "slug": "tokorozawakita"
+          "slug": "tokorozawakita",
+          "innings": [
+            0,
+            5,
+            2,
+            1,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-14",
@@ -13383,16 +14786,41 @@
           "score": 0,
           "won": false,
           "name": "東野",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "城西大川越",
           "score": 6,
           "won": true,
           "name": "城西大川越",
-          "slug": null
+          "slug": null,
+          "innings": [
+            2,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-14",
@@ -13406,16 +14834,42 @@
           "score": 10,
           "won": true,
           "name": "春日部共栄",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            2,
+            1,
+            0,
+            3,
+            0,
+            4
+          ]
         },
         {
           "display": "久喜北陽",
           "score": 5,
           "won": false,
           "name": "久喜北陽高校",
-          "slug": "kukihokuyo"
+          "slug": "kukihokuyo",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            2
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-14",
@@ -13429,16 +14883,33 @@
           "score": 3,
           "won": false,
           "name": "川口青陵高校",
-          "slug": "kawaguchiseiryo"
+          "slug": "kawaguchiseiryo",
+          "innings": [
+            0,
+            0,
+            2,
+            1,
+            0
+          ]
         },
         {
           "display": "昌平",
           "score": 19,
           "won": true,
           "name": "昌平",
-          "slug": null
+          "slug": null,
+          "innings": [
+            7,
+            2,
+            5,
+            5
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-15",
@@ -13452,16 +14923,36 @@
           "score": 12,
           "won": true,
           "name": "春日部高校",
-          "slug": "kasukabe"
+          "slug": "kasukabe",
+          "innings": [
+            0,
+            0,
+            0,
+            4,
+            2,
+            6
+          ]
         },
         {
           "display": "浦和東",
           "score": 0,
           "won": false,
           "name": "浦和東高校",
-          "slug": "urawahigashi"
+          "slug": "urawahigashi",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-15",
@@ -13475,16 +14966,42 @@
           "score": 6,
           "won": true,
           "name": "市立川越",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            3,
+            1
+          ]
         },
         {
           "display": "埼玉栄",
           "score": 3,
           "won": false,
           "name": "埼玉栄",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-15",
@@ -13521,16 +15038,33 @@
           "score": 1,
           "won": false,
           "name": "熊谷工業高校",
-          "slug": "kumagayakogyo"
+          "slug": "kumagayakogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "display": "浦和",
           "score": 15,
           "won": true,
           "name": "浦和",
-          "slug": null
+          "slug": null,
+          "innings": [
+            4,
+            7,
+            2,
+            2
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-15",
@@ -13544,16 +15078,42 @@
           "score": 4,
           "won": true,
           "name": "武蔵越生",
-          "slug": null
+          "slug": null,
+          "innings": [
+            3,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "鷲宮",
           "score": 3,
           "won": false,
           "name": "鷲宮高校",
-          "slug": "washimiya"
+          "slug": "washimiya",
+          "innings": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-15",
@@ -13567,16 +15127,37 @@
           "score": 3,
           "won": false,
           "name": "開智未来",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            2,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "川越東",
           "score": 12,
           "won": true,
           "name": "川越東",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            0,
+            4,
+            0,
+            2,
+            5
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-15",
@@ -13590,16 +15171,42 @@
           "score": 7,
           "won": true,
           "name": "浦和実",
-          "slug": null
+          "slug": null,
+          "innings": [
+            2,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ]
         },
         {
           "display": "本庄第一",
           "score": 1,
           "won": false,
           "name": "本庄第一",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-15",
@@ -13613,16 +15220,40 @@
           "score": 7,
           "won": true,
           "name": "大宮東高校",
-          "slug": "omiyahigashi"
+          "slug": "omiyahigashi",
+          "innings": [
+            2,
+            0,
+            1,
+            1,
+            0,
+            0,
+            2,
+            1
+          ]
         },
         {
           "display": "本庄",
           "score": 0,
           "won": false,
           "name": "本庄高校",
-          "slug": "saitama-honjo"
+          "slug": "saitama-honjo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-15",
@@ -13636,16 +15267,42 @@
           "score": 5,
           "won": true,
           "name": "南稜高校",
-          "slug": "nanryo"
+          "slug": "nanryo",
+          "innings": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0,
+            2
+          ]
         },
         {
           "display": "越谷南",
           "score": 2,
           "won": false,
           "name": "越谷南高校",
-          "slug": "koshigayaminami"
+          "slug": "koshigayaminami",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-15",
@@ -13659,16 +15316,41 @@
           "score": 1,
           "won": false,
           "name": "与野高校",
-          "slug": "yono"
+          "slug": "yono",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "西武文理",
           "score": 4,
           "won": true,
           "name": "西武文理",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-15",
@@ -13682,16 +15364,33 @@
           "score": 1,
           "won": false,
           "name": "栄北",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "正智深谷",
           "score": 14,
           "won": true,
           "name": "正智深谷",
-          "slug": null
+          "slug": null,
+          "innings": [
+            6,
+            2,
+            3,
+            3
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-15",
@@ -13705,16 +15404,41 @@
           "score": 0,
           "won": false,
           "name": "熊谷高校",
-          "slug": "kumagaya"
+          "slug": "kumagaya",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "飯能",
           "score": 4,
           "won": true,
           "name": "飯能高校",
-          "slug": "hanno"
+          "slug": "hanno",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            2
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-15",
@@ -13728,16 +15452,42 @@
           "score": 13,
           "won": true,
           "name": "所沢西高校",
-          "slug": "tokorozawanishi"
+          "slug": "tokorozawanishi",
+          "innings": [
+            5,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            6
+          ]
         },
         {
           "display": "越谷東",
           "score": 10,
           "won": false,
           "name": "越谷東高校",
-          "slug": "koshigayahigashi"
+          "slug": "koshigayahigashi",
+          "innings": [
+            1,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            3,
+            1
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-15",
@@ -13751,16 +15501,42 @@
           "score": 5,
           "won": true,
           "name": "早大本庄",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            2,
+            0,
+            0
+          ]
         },
         {
           "display": "坂戸西",
           "score": 0,
           "won": false,
           "name": "坂戸西高校",
-          "slug": "sakadonishi"
+          "slug": "sakadonishi",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-15",
@@ -13774,16 +15550,41 @@
           "score": 4,
           "won": false,
           "name": "草加西高校",
-          "slug": "sokanishi"
+          "slug": "sokanishi",
+          "innings": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "武南",
           "score": 7,
           "won": true,
           "name": "武南",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            2,
+            1,
+            1,
+            3,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-15",
@@ -13866,16 +15667,34 @@
           "score": 12,
           "won": true,
           "name": "花咲徳栄",
-          "slug": null
+          "slug": null,
+          "innings": [
+            6,
+            1,
+            1,
+            0,
+            4
+          ]
         },
         {
           "display": "富士見",
           "score": 1,
           "won": false,
           "name": "富士見高校",
-          "slug": "fujimi"
+          "slug": "fujimi",
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-18",
@@ -13889,16 +15708,41 @@
           "score": 1,
           "won": false,
           "name": "飯能高校",
-          "slug": "hanno"
+          "slug": "hanno",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "川口市立",
           "score": 4,
           "won": true,
           "name": "川口市立高校",
-          "slug": "kawaguchishiritsu"
+          "slug": "kawaguchishiritsu",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            1
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-18",
@@ -13935,16 +15779,34 @@
           "score": 19,
           "won": true,
           "name": "昌平",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            0,
+            8,
+            5,
+            5
+          ]
         },
         {
           "display": "城西大川越",
           "score": 0,
           "won": false,
           "name": "城西大川越",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-18",
@@ -13958,16 +15820,41 @@
           "score": 4,
           "won": false,
           "name": "上尾高校",
-          "slug": "ageo"
+          "slug": "ageo",
+          "innings": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
         },
         {
           "display": "正智深谷",
           "score": 5,
           "won": true,
           "name": "正智深谷",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            3,
+            0,
+            0,
+            1
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-18",
@@ -14004,16 +15891,38 @@
           "score": 9,
           "won": true,
           "name": "市立川越",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            5,
+            2,
+            1,
+            0,
+            1,
+            0
+          ]
         },
         {
           "display": "西武文理",
           "score": 0,
           "won": false,
           "name": "西武文理",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-18",
@@ -14027,16 +15936,41 @@
           "score": 0,
           "won": false,
           "name": "浦和実",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "浦和",
           "score": 3,
           "won": true,
           "name": "浦和",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-18",
@@ -14050,16 +15984,42 @@
           "score": 1,
           "won": true,
           "name": "熊谷商業高校",
-          "slug": "kumagayashogyo"
+          "slug": "kumagayashogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "display": "武南",
           "score": 0,
           "won": false,
           "name": "武南",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-18",
@@ -14073,16 +16033,42 @@
           "score": 6,
           "won": true,
           "name": "秀明英光",
-          "slug": null
+          "slug": null,
+          "innings": [
+            3,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
         },
         {
           "display": "草加東",
           "score": 3,
           "won": false,
           "name": "草加東高校",
-          "slug": "sokahigashi"
+          "slug": "sokahigashi",
+          "innings": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-18",
@@ -14096,16 +16082,41 @@
           "score": 2,
           "won": false,
           "name": "春日部高校",
-          "slug": "kasukabe"
+          "slug": "kasukabe",
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "display": "山村学園",
           "score": 4,
           "won": true,
           "name": "山村学園",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            2,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-18",
@@ -14119,16 +16130,41 @@
           "score": 3,
           "won": false,
           "name": "所沢西高校",
-          "slug": "tokorozawanishi"
+          "slug": "tokorozawanishi",
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "大宮東",
           "score": 8,
           "won": true,
           "name": "大宮東高校",
-          "slug": "omiyahigashi"
+          "slug": "omiyahigashi",
+          "innings": [
+            3,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            2
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-18",
@@ -14142,16 +16178,42 @@
           "score": 9,
           "won": true,
           "name": "浦和麗明",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            4,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "南稜",
           "score": 4,
           "won": false,
           "name": "南稜高校",
-          "slug": "nanryo"
+          "slug": "nanryo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            1,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-18",
@@ -14165,16 +16227,42 @@
           "score": 6,
           "won": true,
           "name": "武蔵越生",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            2,
+            1,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "大宮",
           "score": 1,
           "won": false,
           "name": "大宮高校",
-          "slug": "omiya"
+          "slug": "omiya",
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-20",
@@ -14188,16 +16276,33 @@
           "score": 0,
           "won": false,
           "name": "早大本庄",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "浦和学院",
           "score": 12,
           "won": true,
           "name": "浦和学院",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            7,
+            3,
+            1
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-20",
@@ -14211,16 +16316,42 @@
           "score": 21,
           "won": true,
           "name": "昌平",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            8,
+            0,
+            2,
+            1,
+            1,
+            2,
+            2,
+            5
+          ]
         },
         {
           "display": "浦和",
           "score": 12,
           "won": false,
           "name": "浦和",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            4,
+            0,
+            2,
+            0,
+            2,
+            3,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-20",
@@ -14234,16 +16365,42 @@
           "score": 5,
           "won": true,
           "name": "花咲徳栄",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0
+          ]
         },
         {
           "display": "武蔵越生",
           "score": 2,
           "won": false,
           "name": "武蔵越生",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-20",
@@ -14257,16 +16414,41 @@
           "score": 1,
           "won": false,
           "name": "浦和麗明",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
         },
         {
           "display": "大宮東",
           "score": 2,
           "won": true,
           "name": "大宮東高校",
-          "slug": "omiyahigashi"
+          "slug": "omiyahigashi",
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-20",
@@ -14280,16 +16462,41 @@
           "score": 3,
           "won": false,
           "name": "市立川越",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "立教新座",
           "score": 7,
           "won": true,
           "name": "立教新座",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            3,
+            0,
+            4,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-20",
@@ -14326,16 +16533,41 @@
           "score": 1,
           "won": false,
           "name": "正智深谷",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "川口市立",
           "score": 3,
           "won": true,
           "name": "川口市立高校",
-          "slug": "kawaguchishiritsu"
+          "slug": "kawaguchishiritsu",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-20",
@@ -14349,16 +16581,41 @@
           "score": 0,
           "won": false,
           "name": "熊谷商業高校",
-          "slug": "kumagayashogyo"
+          "slug": "kumagayashogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "秀明英光",
           "score": 2,
           "won": true,
           "name": "秀明英光",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-22",
@@ -14395,16 +16652,42 @@
           "score": 9,
           "won": true,
           "name": "花咲徳栄",
-          "slug": null
+          "slug": null,
+          "innings": [
+            2,
+            2,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "display": "川口市立",
           "score": 2,
           "won": false,
           "name": "川口市立高校",
-          "slug": "kawaguchishiritsu"
+          "slug": "kawaguchishiritsu",
+          "innings": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-22",
@@ -14418,16 +16701,41 @@
           "score": 6,
           "won": false,
           "name": "大宮東高校",
-          "slug": "omiyahigashi"
+          "slug": "omiyahigashi",
+          "innings": [
+            0,
+            0,
+            1,
+            1,
+            3,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "display": "立教新座",
           "score": 11,
           "won": true,
           "name": "立教新座",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            3,
+            3,
+            0,
+            0,
+            5
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-22",
@@ -14441,16 +16749,42 @@
           "score": 3,
           "won": true,
           "name": "昌平",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
         },
         {
           "display": "山村学園",
           "score": 2,
           "won": false,
           "name": "山村学園",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-24",
@@ -14464,16 +16798,38 @@
           "score": 9,
           "won": true,
           "name": "浦和学院",
-          "slug": null
+          "slug": null,
+          "innings": [
+            3,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ]
         },
         {
           "display": "立教新座",
           "score": 0,
           "won": false,
           "name": "立教新座",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-24",
@@ -14487,16 +16843,42 @@
           "score": 6,
           "won": true,
           "name": "花咲徳栄",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            1,
+            2,
+            1,
+            1,
+            0,
+            1,
+            0
+          ]
         },
         {
           "display": "昌平",
           "score": 3,
           "won": false,
           "name": "昌平",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2026-07-26",
@@ -14510,16 +16892,42 @@
           "score": 7,
           "won": true,
           "name": "花咲徳栄",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            3,
+            3
+          ]
         },
         {
           "display": "浦和学院",
           "score": 3,
           "won": false,
           "name": "浦和学院",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
         }
-      ]
+      ],
+      "inningsSource": {
+        "name": "HSB flash",
+        "url": "https://hsbflash.jp/"
+      }
     },
     {
       "date": "2015-07-11",

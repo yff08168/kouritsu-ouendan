@@ -109,6 +109,16 @@ export type RegionalGame = {
    * データとして正しく持っておくためのもの。
    */
   source?: { name: string; url?: string };
+  /**
+   * ★★**各回の得点だけ出所が違うときの出典**（2026-09-06）。
+   *
+   * **スコアは連盟から、各回は速報（HSB flash）から**という試合がある。
+   * 連盟の紙は合計しか刷っていないことが多く、**各回は速報にしか無い**ため。
+   * ★**このサイトは「転記した経路が本当の出所」**という線を守っているので、
+   * **出所が違うなら、その試合のページに両方を出す。**
+   * ★**スコアと同じ出所のときは付けない**（`source` ないし県の `sourceName` で足りる）。
+   */
+  inningsSource?: { name: string; url?: string };
 };
 
 export type RegionalDistrict = {

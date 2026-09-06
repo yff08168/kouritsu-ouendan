@@ -9358,14 +9358,27 @@
           "score": 17,
           "won": true,
           "name": "れいめい",
-          "slug": null
+          "slug": null,
+          "innings": [
+            2,
+            8,
+            4,
+            3
+          ]
         },
         {
           "display": "市来農芸",
           "score": 0,
           "won": false,
           "name": "市来農芸高校",
-          "slug": "ichikinogei"
+          "slug": "ichikinogei",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -9381,14 +9394,31 @@
           "score": 2,
           "won": false,
           "name": "隼人工業高校",
-          "slug": "hayatokogyo"
+          "slug": "hayatokogyo",
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "鹿児島",
           "score": 10,
           "won": true,
           "name": "鹿児島",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            2,
+            8,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -9404,14 +9434,31 @@
           "score": 0,
           "won": false,
           "name": "奄美高校",
-          "slug": "amami"
+          "slug": "amami",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "出水中央",
           "score": 9,
           "won": true,
           "name": "出水中央",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            3,
+            0,
+            1,
+            2,
+            2
+          ]
         }
       ]
     },
@@ -9427,14 +9474,32 @@
           "score": 8,
           "won": true,
           "name": "鹿児島城西",
-          "slug": null
+          "slug": null,
+          "innings": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3
+          ]
         },
         {
           "display": "鹿児島高専",
           "score": 1,
           "won": false,
           "name": "鹿児島工業高専",
-          "slug": "kagoshimakogyo-kosen"
+          "slug": "kagoshimakogyo-kosen",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
         }
       ]
     },
@@ -9450,14 +9515,31 @@
           "score": 0,
           "won": false,
           "name": "指宿高校",
-          "slug": "ibusuki"
+          "slug": "ibusuki",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "国分中央",
           "score": 8,
           "won": true,
           "name": "国分中央高校",
-          "slug": "kokubuchuo"
+          "slug": "kokubuchuo",
+          "innings": [
+            6,
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -9473,14 +9555,28 @@
           "score": 12,
           "won": true,
           "name": "屋久島高校",
-          "slug": "yakushima"
+          "slug": "yakushima",
+          "innings": [
+            2,
+            5,
+            3,
+            0,
+            2
+          ]
         },
         {
           "display": "明桜館",
           "score": 0,
           "won": false,
           "name": "明桜館高校",
-          "slug": "meiokan"
+          "slug": "meiokan",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -9496,14 +9592,27 @@
           "score": 0,
           "won": false,
           "name": "開陽高校",
-          "slug": "kagoshima-kaiyo"
+          "slug": "kagoshima-kaiyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "樟南",
           "score": 16,
           "won": true,
           "name": "樟南",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            10,
+            4,
+            1
+          ]
         }
       ]
     },
@@ -9519,14 +9628,36 @@
           "score": 5,
           "won": false,
           "name": "川内商工高校",
-          "slug": "sendaishoko"
+          "slug": "sendaishoko",
+          "innings": [
+            0,
+            0,
+            1,
+            3,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "display": "鶴丸",
           "score": 7,
           "won": true,
           "name": "鶴丸高校",
-          "slug": "tsurumaru"
+          "slug": "tsurumaru",
+          "innings": [
+            0,
+            0,
+            1,
+            1,
+            3,
+            0,
+            0,
+            1,
+            1
+          ]
         }
       ]
     },
@@ -9542,14 +9673,35 @@
           "score": 4,
           "won": false,
           "name": "鹿児島水産高校",
-          "slug": "kagoshimasuisan"
+          "slug": "kagoshimasuisan",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0
+          ]
         },
         {
           "display": "加治木",
           "score": 8,
           "won": true,
           "name": "加治木高校",
-          "slug": "kajiki"
+          "slug": "kajiki",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            3
+          ]
         }
       ]
     },
@@ -9588,14 +9740,36 @@
           "score": 4,
           "won": true,
           "name": "枕崎高校",
-          "slug": "makurazaki"
+          "slug": "makurazaki",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "鹿児島情報",
           "score": 3,
           "won": false,
           "name": "鹿児島情報",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
         }
       ]
     },
@@ -9611,14 +9785,28 @@
           "score": 10,
           "won": true,
           "name": "鹿児島中央高校",
-          "slug": "kagoshimachuo"
+          "slug": "kagoshimachuo",
+          "innings": [
+            3,
+            4,
+            0,
+            2,
+            1
+          ]
         },
         {
           "display": "沖永良部",
           "score": 0,
           "won": false,
           "name": "沖永良部高校",
-          "slug": "okinoerabu"
+          "slug": "okinoerabu",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -9634,7 +9822,15 @@
           "score": 19,
           "won": true,
           "name": "頴娃高校",
-          "slug": "ei"
+          "slug": "ei",
+          "innings": [
+            0,
+            1,
+            2,
+            0,
+            5,
+            11
+          ]
         },
         {
           "display": "志布志・串良商業",
@@ -9642,7 +9838,15 @@
           "won": false,
           "name": "志布志・串良商業",
           "slug": null,
-          "combined": true
+          "combined": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -9682,14 +9886,36 @@
           "score": 3,
           "won": false,
           "name": "鹿屋工業高校",
-          "slug": "kanoyakogyo"
+          "slug": "kanoyakogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0
+          ]
         },
         {
           "display": "鹿屋農業",
           "score": 7,
           "won": true,
           "name": "鹿屋農業高校",
-          "slug": "kanoyanogyo"
+          "slug": "kanoyanogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            1,
+            1,
+            2
+          ]
         }
       ]
     },
@@ -9728,14 +9954,36 @@
           "score": 1,
           "won": false,
           "name": "出水中央",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "鹿児島城西",
           "score": 5,
           "won": true,
           "name": "鹿児島城西",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            3
+          ]
         }
       ]
     },
@@ -9751,14 +9999,35 @@
           "score": 3,
           "won": true,
           "name": "国分中央高校",
-          "slug": "kokubuchuo"
+          "slug": "kokubuchuo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "屋久島",
           "score": 1,
           "won": false,
           "name": "屋久島高校",
-          "slug": "yakushima"
+          "slug": "yakushima",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -9774,14 +10043,36 @@
           "score": 11,
           "won": true,
           "name": "樟南",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            4,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            5
+          ]
         },
         {
           "display": "鶴丸",
           "score": 3,
           "won": false,
           "name": "鶴丸高校",
-          "slug": "tsurumaru"
+          "slug": "tsurumaru",
+          "innings": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
         }
       ]
     },
@@ -9797,14 +10088,35 @@
           "score": 1,
           "won": false,
           "name": "加治木高校",
-          "slug": "kajiki"
+          "slug": "kajiki",
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "鹿児島実業",
           "score": 6,
           "won": true,
           "name": "鹿児島実業",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            3,
+            0,
+            2
+          ]
         }
       ]
     },
@@ -9820,14 +10132,35 @@
           "score": 6,
           "won": false,
           "name": "枕崎高校",
-          "slug": "makurazaki"
+          "slug": "makurazaki",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            3,
+            1,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "鹿児島中央",
           "score": 10,
           "won": true,
           "name": "鹿児島中央高校",
-          "slug": "kagoshimachuo"
+          "slug": "kagoshimachuo",
+          "innings": [
+            0,
+            2,
+            0,
+            0,
+            1,
+            1,
+            1,
+            5
+          ]
         }
       ]
     },
@@ -9866,14 +10199,35 @@
           "score": 3,
           "won": true,
           "name": "鹿屋農業高校",
-          "slug": "kanoyanogyo"
+          "slug": "kanoyanogyo",
+          "innings": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "display": "鹿屋中央",
           "score": 2,
           "won": false,
           "name": "鹿屋中央",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
         }
       ]
     },
@@ -9889,14 +10243,36 @@
           "score": 0,
           "won": false,
           "name": "れいめい",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "鹿児島城西",
           "score": 1,
           "won": true,
           "name": "鹿児島城西",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -9912,14 +10288,35 @@
           "score": 4,
           "won": true,
           "name": "国分中央高校",
-          "slug": "kokubuchuo"
+          "slug": "kokubuchuo",
+          "innings": [
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "樟南",
           "score": 3,
           "won": false,
           "name": "樟南",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -9958,14 +10355,36 @@
           "score": 4,
           "won": true,
           "name": "大島高校",
-          "slug": "kagoshima-oshima"
+          "slug": "kagoshima-oshima",
+          "innings": [
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "鹿屋農業",
           "score": 1,
           "won": false,
           "name": "鹿屋農業高校",
-          "slug": "kanoyanogyo"
+          "slug": "kanoyanogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         }
       ]
     },
@@ -9981,14 +10400,32 @@
           "score": 9,
           "won": true,
           "name": "鹿児島城西",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            0,
+            0,
+            6,
+            0,
+            2,
+            0
+          ]
         },
         {
           "display": "国分中央",
           "score": 1,
           "won": false,
           "name": "国分中央高校",
-          "slug": "kokubuchuo"
+          "slug": "kokubuchuo",
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -10027,14 +10464,35 @@
           "score": 5,
           "won": false,
           "name": "鹿児島城西",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            2
+          ]
         },
         {
           "display": "鹿児島実業",
           "score": 8,
           "won": true,
           "name": "鹿児島実業",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            0,
+            1,
+            6,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -10050,14 +10508,35 @@
           "score": 5,
           "won": true,
           "name": "喜界高校",
-          "slug": "kikai"
+          "slug": "kikai",
+          "innings": [
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
         },
         {
           "display": "種子島中央",
           "score": 4,
           "won": false,
           "name": "種子島中央高校",
-          "slug": "tanegashimachuo"
+          "slug": "tanegashimachuo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -10073,14 +10552,35 @@
           "score": 9,
           "won": true,
           "name": "鹿児島南高校",
-          "slug": "kagoshimaminami"
+          "slug": "kagoshimaminami",
+          "innings": [
+            4,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "display": "吹上",
           "score": 5,
           "won": false,
           "name": "吹上高校",
-          "slug": "fukiage"
+          "slug": "fukiage",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            3,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -10096,14 +10596,35 @@
           "score": 2,
           "won": false,
           "name": "種子島高校",
-          "slug": "tanegashima"
+          "slug": "tanegashima",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ]
         },
         {
           "display": "池田",
           "score": 4,
           "won": true,
           "name": "池田",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -10119,14 +10640,31 @@
           "score": 1,
           "won": false,
           "name": "国分高校",
-          "slug": "kagoshima-kokubun"
+          "slug": "kagoshima-kokubun",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "錦江湾",
           "score": 8,
           "won": true,
           "name": "錦江湾高校",
-          "slug": "kinkowan"
+          "slug": "kinkowan",
+          "innings": [
+            1,
+            2,
+            2,
+            3,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -10166,14 +10704,35 @@
           "score": 6,
           "won": true,
           "name": "松陽高校",
-          "slug": "kagoshima-shoyo"
+          "slug": "kagoshima-shoyo",
+          "innings": [
+            0,
+            0,
+            3,
+            0,
+            0,
+            3,
+            0,
+            0
+          ]
         },
         {
           "display": "薩南工業",
           "score": 4,
           "won": false,
           "name": "薩南工業高校",
-          "slug": "satsunankogyo"
+          "slug": "satsunankogyo",
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -10189,14 +10748,36 @@
           "score": 0,
           "won": false,
           "name": "加治木工業高校",
-          "slug": "kajikikogyo"
+          "slug": "kajikikogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "徳之島",
           "score": 5,
           "won": true,
           "name": "徳之島高校",
-          "slug": "tokunoshima"
+          "slug": "tokunoshima",
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ]
         }
       ]
     },
@@ -10212,14 +10793,32 @@
           "score": 1,
           "won": false,
           "name": "甲南高校",
-          "slug": "kagoshima-konan"
+          "slug": "kagoshima-konan",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "伊集院",
           "score": 8,
           "won": true,
           "name": "伊集院高校",
-          "slug": "ijuin"
+          "slug": "ijuin",
+          "innings": [
+            1,
+            0,
+            0,
+            7,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -10235,14 +10834,35 @@
           "score": 0,
           "won": false,
           "name": "加世田高校",
-          "slug": "kagoshima-kaseda"
+          "slug": "kagoshima-kaseda",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "鹿児島商業",
           "score": 4,
           "won": true,
           "name": "鹿児島商業高校",
-          "slug": "kagoshimashogyo"
+          "slug": "kagoshimashogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            3,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -10258,14 +10878,36 @@
           "score": 6,
           "won": true,
           "name": "尚志館",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            4
+          ]
         },
         {
           "display": "鹿児島玉龍",
           "score": 4,
           "won": false,
           "name": "鹿児島玉龍高校",
-          "slug": "kagoshimagyokuryu"
+          "slug": "kagoshimagyokuryu",
+          "innings": [
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -10304,14 +10946,35 @@
           "score": 5,
           "won": true,
           "name": "川内高校",
-          "slug": "kagoshima-sendai"
+          "slug": "kagoshima-sendai",
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            3,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "指宿商業",
           "score": 4,
           "won": false,
           "name": "指宿商業高校",
-          "slug": "ibusukishogyo"
+          "slug": "ibusukishogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
         }
       ]
     },
@@ -10327,14 +10990,38 @@
           "score": 2,
           "won": false,
           "name": "鹿児島工業高校",
-          "slug": "kagoshimakogyo"
+          "slug": "kagoshimakogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
         },
         {
           "display": "曽於",
           "score": 3,
           "won": true,
           "name": "曽於高校",
-          "slug": "so"
+          "slug": "so",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ]
         }
       ]
     },
@@ -10420,14 +11107,35 @@
           "score": 6,
           "won": true,
           "name": "鹿児島南高校",
-          "slug": "kagoshimaminami"
+          "slug": "kagoshimaminami",
+          "innings": [
+            0,
+            0,
+            1,
+            2,
+            0,
+            3,
+            0,
+            0
+          ]
         },
         {
           "display": "池田",
           "score": 1,
           "won": false,
           "name": "池田",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -10443,14 +11151,40 @@
           "score": 7,
           "won": true,
           "name": "錦江湾高校",
-          "slug": "kinkowan"
+          "slug": "kinkowan",
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            2
+          ]
         },
         {
           "display": "出水",
           "score": 5,
           "won": false,
           "name": "出水高校",
-          "slug": "kagoshima-izumi"
+          "slug": "kagoshima-izumi",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            3,
+            1,
+            0
+          ]
         }
       ]
     },
@@ -10489,14 +11223,35 @@
           "score": 3,
           "won": false,
           "name": "伊集院高校",
-          "slug": "ijuin"
+          "slug": "ijuin",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0
+          ]
         },
         {
           "display": "鹿児島商業",
           "score": 6,
           "won": true,
           "name": "鹿児島商業高校",
-          "slug": "kagoshimashogyo"
+          "slug": "kagoshimashogyo",
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0
+          ]
         }
       ]
     },
@@ -10512,14 +11267,35 @@
           "score": 3,
           "won": true,
           "name": "尚志館",
-          "slug": null
+          "slug": null,
+          "innings": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "川薩清修館",
           "score": 1,
           "won": false,
           "name": "川薩清修館高校",
-          "slug": "sensatsuseishukan"
+          "slug": "sensatsuseishukan",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -10535,14 +11311,31 @@
           "score": 10,
           "won": true,
           "name": "川内高校",
-          "slug": "kagoshima-sendai"
+          "slug": "kagoshima-sendai",
+          "innings": [
+            0,
+            1,
+            2,
+            2,
+            0,
+            5
+          ]
         },
         {
           "display": "曽於",
           "score": 2,
           "won": false,
           "name": "曽於高校",
-          "slug": "so"
+          "slug": "so",
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         }
       ]
     },
@@ -10558,14 +11351,38 @@
           "score": 1,
           "won": true,
           "name": "武岡台高校",
-          "slug": "takeokadai"
+          "slug": "takeokadai",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "display": "鹿屋",
           "score": 0,
           "won": false,
           "name": "鹿屋高校",
-          "slug": "kanoya"
+          "slug": "kanoya",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -10581,14 +11398,31 @@
           "score": 11,
           "won": true,
           "name": "神村学園",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            6,
+            0,
+            5,
+            0,
+            0
+          ]
         },
         {
           "display": "鹿児島南",
           "score": 3,
           "won": false,
           "name": "鹿児島南高校",
-          "slug": "kagoshimaminami"
+          "slug": "kagoshimaminami",
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         }
       ]
     },
@@ -10604,14 +11438,35 @@
           "score": 5,
           "won": true,
           "name": "錦江湾高校",
-          "slug": "kinkowan"
+          "slug": "kinkowan",
+          "innings": [
+            0,
+            1,
+            3,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "徳之島",
           "score": 3,
           "won": false,
           "name": "徳之島高校",
-          "slug": "tokunoshima"
+          "slug": "tokunoshima",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -10627,14 +11482,35 @@
           "score": 4,
           "won": false,
           "name": "鹿児島商業高校",
-          "slug": "kagoshimashogyo"
+          "slug": "kagoshimashogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2
+          ]
         },
         {
           "display": "尚志館",
           "score": 5,
           "won": true,
           "name": "尚志館",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            1,
+            0
+          ]
         }
       ]
     },
@@ -10650,14 +11526,36 @@
           "score": 1,
           "won": true,
           "name": "川内高校",
-          "slug": "kagoshima-sendai"
+          "slug": "kagoshima-sendai",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
         },
         {
           "display": "武岡台",
           "score": 0,
           "won": false,
           "name": "武岡台高校",
-          "slug": "takeokadai"
+          "slug": "takeokadai",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -10673,14 +11571,28 @@
           "score": 13,
           "won": true,
           "name": "神村学園",
-          "slug": null
+          "slug": null,
+          "innings": [
+            3,
+            0,
+            4,
+            4,
+            2
+          ]
         },
         {
           "display": "錦江湾",
           "score": 0,
           "won": false,
           "name": "錦江湾高校",
-          "slug": "kinkowan"
+          "slug": "kinkowan",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -10696,14 +11608,36 @@
           "score": 4,
           "won": true,
           "name": "尚志館",
-          "slug": null
+          "slug": null,
+          "innings": [
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "川内",
           "score": 2,
           "won": false,
           "name": "川内高校",
-          "slug": "kagoshima-sendai"
+          "slug": "kagoshima-sendai",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
         }
       ]
     },
@@ -10719,14 +11653,31 @@
           "score": 7,
           "won": true,
           "name": "神村学園",
-          "slug": null
+          "slug": null,
+          "innings": [
+            1,
+            0,
+            1,
+            0,
+            5,
+            0
+          ]
         },
         {
           "display": "尚志館",
           "score": 0,
           "won": false,
           "name": "尚志館",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -10742,14 +11693,35 @@
           "score": 9,
           "won": true,
           "name": "神村学園",
-          "slug": null
+          "slug": null,
+          "innings": [
+            3,
+            5,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
         },
         {
           "display": "鹿児島実業",
           "score": 0,
           "won": false,
           "name": "鹿児島実業",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },

@@ -55697,14 +55697,36 @@
           "score": 10,
           "won": false,
           "name": "糸魚川高校",
-          "slug": "itoigawa"
+          "slug": "itoigawa",
+          "innings": [
+            3,
+            1,
+            0,
+            2,
+            0,
+            1,
+            0,
+            2,
+            1
+          ]
         },
         {
           "display": "十日町",
           "score": 12,
           "won": true,
           "name": "十日町高校",
-          "slug": "tokamachi"
+          "slug": "tokamachi",
+          "innings": [
+            0,
+            0,
+            0,
+            3,
+            1,
+            0,
+            0,
+            6,
+            2
+          ]
         }
       ],
       "source": {
@@ -55724,14 +55746,36 @@
           "score": 10,
           "won": true,
           "name": "新発田高校",
-          "slug": "niigata-shibata"
+          "slug": "niigata-shibata",
+          "innings": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0,
+            6
+          ]
         },
         {
           "display": "巻総合",
           "score": 4,
           "won": false,
           "name": "巻総合高校",
-          "slug": "makisogo"
+          "slug": "makisogo",
+          "innings": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
         }
       ],
       "source": {
@@ -55778,14 +55822,30 @@
           "score": 14,
           "won": true,
           "name": "巻高校",
-          "slug": "maki"
+          "slug": "maki",
+          "innings": [
+            4,
+            3,
+            0,
+            3,
+            0,
+            4
+          ]
         },
         {
           "display": "新潟青陵",
           "score": 3,
           "won": false,
           "name": "新潟青陵",
-          "slug": null
+          "slug": null,
+          "innings": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ],
       "source": {
@@ -55805,14 +55865,35 @@
           "score": 4,
           "won": false,
           "name": "五泉高校",
-          "slug": "gosen"
+          "slug": "gosen",
+          "innings": [
+            3,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "新発田中央",
           "score": 9,
           "won": true,
           "name": "新発田中央",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            1,
+            2,
+            1,
+            0,
+            0,
+            5
+          ]
         }
       ],
       "source": {
@@ -55833,14 +55914,35 @@
           "won": false,
           "name": "柏崎常盤・柏崎総合",
           "slug": null,
-          "combined": true
+          "combined": true,
+          "innings": [
+            2,
+            0,
+            4,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "上越総合技術",
           "score": 8,
           "won": true,
           "name": "上越総合技術高校",
-          "slug": "joetsusogogijutsu"
+          "slug": "joetsusogogijutsu",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            2,
+            5,
+            0,
+            0
+          ]
         }
       ],
       "source": {
@@ -55941,14 +56043,36 @@
           "score": 1,
           "won": false,
           "name": "北越",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
         },
         {
           "display": "東京学館新潟",
           "score": 3,
           "won": true,
           "name": "東京学館新潟",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0
+          ]
         }
       ],
       "source": {
@@ -55996,14 +56120,27 @@
           "score": 18,
           "won": true,
           "name": "日本文理",
-          "slug": null
+          "slug": null,
+          "innings": [
+            2,
+            9,
+            7,
+            0
+          ]
         },
         {
           "display": "新津工",
           "score": 0,
           "won": false,
           "name": "新津工業高校",
-          "slug": "niitsukogyo"
+          "slug": "niitsukogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ],
       "source": {
@@ -56023,14 +56160,34 @@
           "score": 9,
           "won": true,
           "name": "佐渡高校",
-          "slug": "sado"
+          "slug": "sado",
+          "innings": [
+            0,
+            4,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "display": "新発田南",
           "score": 2,
           "won": false,
           "name": "新発田南高校",
-          "slug": "shibataminami"
+          "slug": "shibataminami",
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
         }
       ],
       "source": {
@@ -56078,14 +56235,38 @@
           "score": 10,
           "won": true,
           "name": "上越",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            6
+          ]
         },
         {
           "display": "中越",
           "score": 5,
           "won": false,
           "name": "中越",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            3,
+            0,
+            1
+          ]
         }
       ],
       "source": {
@@ -56187,14 +56368,28 @@
           "score": 0,
           "won": false,
           "name": "新潟東高校",
-          "slug": "niigatahigashi"
+          "slug": "niigatahigashi",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "新潟商",
           "score": 15,
           "won": true,
           "name": "新潟商業高校",
-          "slug": "niigatashogyo"
+          "slug": "niigatashogyo",
+          "innings": [
+            6,
+            1,
+            1,
+            6,
+            1
+          ]
         }
       ],
       "source": {
@@ -56214,7 +56409,14 @@
           "score": 0,
           "won": false,
           "name": "新発田商業高校",
-          "slug": "shibatashogyo"
+          "slug": "shibatashogyo",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "村上・村上桜ヶ丘",
@@ -56222,7 +56424,13 @@
           "won": true,
           "name": "村上・村上桜ヶ丘",
           "slug": null,
-          "combined": true
+          "combined": true,
+          "innings": [
+            1,
+            7,
+            0,
+            4
+          ]
         }
       ],
       "source": {
@@ -56269,14 +56477,35 @@
           "score": 0,
           "won": false,
           "name": "小千谷西高校",
-          "slug": "ojiyanishi"
+          "slug": "ojiyanishi",
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "display": "柏崎",
           "score": 2,
           "won": true,
           "name": "柏崎高校",
-          "slug": "kashiwazaki"
+          "slug": "kashiwazaki",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
         }
       ],
       "source": {
@@ -56296,14 +56525,35 @@
           "score": 7,
           "won": true,
           "name": "長岡高校",
-          "slug": "nagaoka"
+          "slug": "nagaoka",
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            2,
+            3
+          ]
         },
         {
           "display": "新潟産大附",
           "score": 1,
           "won": false,
           "name": "新潟産大附",
-          "slug": null
+          "slug": null,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
         }
       ],
       "source": {

@@ -216,7 +216,7 @@ export default async function TournamentPage({ params }: Props) {
           title="全試合"
           icon={<ListOrdered size={18} />}
         />
-        <RegionalGameList games={entry.games} />
+        <RegionalGameList games={entry.games} districtSlug={slug} />
       </section>
 
       <OtherTournaments slug={slug} current={entry.slug} district={district} />

@@ -44,6 +44,25 @@ export type RegionalTeam = {
    * 記録にするかを決められないため。
    */
   combined?: boolean;
+  /**
+   * ★★**各回の得点**（2026-09-06。運営者の指示で入れた）。
+   *
+   * ★**持っている県と持っていない県がある。** 出典が箱スコア（イニング表）を
+   * 出している県だけで、**トーナメント表しか無い県は紙に合計しか刷っていない。**
+   * ★★**無い試合に 0 を並べないこと** —— 空欄を 0 と読んで
+   * 「0対0の引き分け」が生まれる轍を、このリポジトリは何度も踏んでいる。
+   * **無いときは項目ごと無い**（`undefined`）。
+   *
+   * ★**入るのは「読み手を直したあとに読み直した大会」だけ。**
+   * 生成物は「取れなかった大会は前の内容を引き継ぐ」ので、
+   * **過去の大会には遡って入らない**（埋めるには県ごとに年を指定して取り直す）。
+   *
+   * ★★**和は必ず `score` と一致する** —— どの読み手も
+   * 「各回の和＝印刷された合計」を検算にしており、**通った試合しか生成物に出ない。**
+   * ★**サヨナラの `x` は落として数だけ**にしてある（後攻が最終回を打ち切った試合は、
+   * こちらの配列が1つ短い）。
+   */
+  innings?: number[];
 };
 
 export type RegionalGame = {
@@ -353,6 +372,51 @@ export function pickRegionalGames(
 }
 
 /** その試合に出ている公立校（連合チームは除く） */
+/** その試合が各回の得点を持っているか（両チームぶん揃っているときだけ true） */
+export function hasInnings(game: { teams: RegionalTeam[] }): boolean {
+  return game.teams.length === 2 && game.teams.every((t) => (t.innings?.length ?? 0) > 0);
+}
+
+/**
+ * 試合ごとのページのURLに使う短い鍵（2026-09-06）。
+ *
+ * ------------------------------------------------------------------
+ * ★★★**並び順（何番目の試合か）を鍵にしないこと。**
+ *
+ * **開催中の大会は毎日試合が増える。** 番号で指すと、
+ * **昨日踏んだURLが今日は別の試合を指す。**
+ *
+ * ★★**試合そのものの中身から作る** —— 日付・回戦・両校名・得点。
+ * **同じ大会に同じ内容の試合は無い**ので一意に決まり、
+ * **試合が増えても既に配ったURLは動かない。**
+ * ★**出典がスコアを直したら鍵も変わる**（＝別のURLになる）が、
+ * **中身が変わったのだから、それでよい。**
+ *
+ * ★**ローマ字（36進数）にしてある** —— 日本語をURLに入れない、という決めごと。
+ */
+export function gameKey(game: {
+  date: string | null;
+  round: string | null;
+  teams: RegionalTeam[];
+}): string {
+  const seed = [
+    game.date ?? "",
+    game.round ?? "",
+    ...game.teams.map((t) => `${t.display}:${t.score}`),
+  ].join("|");
+  /*
+    ★**FNV-1a。** 暗号用途ではないので短くて速いもので足りる。
+    ★**符号なしで回す**（`>>> 0`）—— JavaScript のビット演算は符号付き32ビットなので、
+    そのままだと負になって基数変換が `-` から始まる。
+  */
+  let h = 0x811c9dc5;
+  for (let i = 0; i < seed.length; i++) {
+    h ^= seed.charCodeAt(i);
+    h = Math.imul(h, 0x01000193) >>> 0;
+  }
+  return h.toString(36);
+}
+
 export function publicTeams(game: { teams: RegionalTeam[] }): RegionalTeam[] {
   return game.teams.filter((t) => t.slug && !t.combined);
 }

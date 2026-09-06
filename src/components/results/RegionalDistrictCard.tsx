@@ -4,6 +4,7 @@ import { MapPinned } from "lucide-react";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { cn } from "@/lib/utils";
 import {
+  gameKey,
   groupGamesForDistrict,
   seasonLabel,
   type RegionalDistrict,
@@ -99,7 +100,7 @@ export function RegionalDistrictCard({
             <ul className="mt-1 divide-y divide-line border-t border-line">
               {groupGames.map((game, i) => (
                 <li key={`${key}-${i}`}>
-                  <GameRow game={game} />
+                  <GameRow game={game} districtSlug={district.slug} />
                 </li>
               ))}
             </ul>
@@ -126,7 +127,7 @@ export function RegionalDistrictCard({
   );
 }
 
-function GameRow({ game }: { game: RegionalGame }) {
+function GameRow({ game, districtSlug }: { game: RegionalGame; districtSlug: string }) {
   /*
     公立校を先に出す。**両方が公立なら勝ったほうを先にする**
     （行の先頭の ○ / ● はこの学校の勝敗なので、公立が勝った試合で
@@ -147,7 +148,19 @@ function GameRow({ game }: { game: RegionalGame }) {
   const drawn = ours.score === other.score;
 
   return (
-    <div className="flex items-center gap-3 py-3 sm:gap-4">
+    /*
+      ★★**行いっぱいに見えないリンクを1枚敷く**（2026-09-06。他の一覧と同じ作り）。
+      **リンクの中にリンクは置けない**ので、校名側は `relative` で手前に出す。
+    */
+    <div className="group relative flex items-center gap-3 py-3 sm:gap-4">
+      <Link
+        href={`/prefectures/${districtSlug}/game/${gameKey(game)}`}
+        className="absolute inset-0 rounded-sm focus-visible:ring-2 focus-visible:ring-accent-500 group-hover:bg-navy-50/60"
+      >
+        <span className="sr-only">
+          {ours.display}と{other.display}の試合結果
+        </span>
+      </Link>
       <span
         aria-hidden="true"
         className={cn(
@@ -175,7 +188,7 @@ function GameRow({ game }: { game: RegionalGame }) {
         <Link
           href={`/schools/${ours.slug}`}
           title={ours.name}
-          className="min-w-0 truncate text-right text-sm font-bold text-navy-800 hover:underline sm:text-lg"
+          className="relative min-w-0 truncate text-right text-sm font-bold text-navy-800 hover:underline sm:text-lg"
         >
           {ours.display}
         </Link>
@@ -194,7 +207,7 @@ function GameRow({ game }: { game: RegionalGame }) {
             <Link
               href={`/schools/${other.slug}`}
               title={other.name}
-              className="font-bold text-navy-800 hover:underline"
+              className="relative font-bold text-navy-800 hover:underline"
             >
               {other.display}
             </Link>

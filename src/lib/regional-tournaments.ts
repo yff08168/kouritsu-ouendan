@@ -27,6 +27,7 @@
  *   **日付が1つも無い季節がある**ので（実測：夏7県・春3県・秋1県）、
  *   日付に頼ると年が付かない大会ができる。
  */
+import { gameKey } from "@/lib/regional-results";
 import type {
   RegionalDistrict,
   RegionalGame,
@@ -319,4 +320,25 @@ export function findTournament(
   slug: string,
 ): TournamentEntry | null {
   return listTournaments(district).find((t) => t.slug === slug) ?? null;
+}
+
+/**
+ * 試合ごとのページ（`/prefectures/<県>/game/<鍵>`）が使う。
+ *
+ * ★★**大会を指定せずに引ける**ようにしてある —— **トップの結果カードは
+ * 大会の slug を持っていない**（抜粋には大会名しか入っていない）。
+ * 県のファイルはどのみち丸ごと読むので、**その中を探せば済む。**
+ *
+ * ★**鍵は試合の中身から作る**（`gameKey`）。並び順ではないので、
+ * **開催中に試合が増えても、配ったURLは動かない。**
+ */
+export function findGame(
+  district: RegionalDistrict,
+  key: string,
+): { game: RegionalGame; tournament: TournamentEntry } | null {
+  for (const tournament of listTournaments(district)) {
+    const game = tournament.games.find((g) => gameKey(g) === key);
+    if (game) return { game, tournament };
+  }
+  return null;
 }

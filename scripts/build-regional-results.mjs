@@ -837,6 +837,92 @@ function totalReader(rows) {
 }
 
 /**
+ * 「校名 → 各回 → 合計」の1行から各回の得点を取り出す（2026-09-06）。
+ * ★**合計の列が分かっているとき用**（山梨のように合計が行の途中にある紙）。
+ * ★**合計より前だけを渡す**ので、合計を最終回として数えることがない。
+ */
+function inningsOfRow(row, totalAt, total) {
+  const end = totalAt >= 0 && totalAt < row.length ? totalAt : row.length - 1;
+  return inningsFromCells([...row.slice(1, end), String(total)], total);
+}
+
+/**
+ * ★★**「校名のうしろに数字が並ぶ」形から各回の得点を取り出す**（2026-09-06）。
+ *
+ * `inningTotal` と対になるもの。**合計は右から数えて最初の数字**で、
+ * **その手前までが各回**。
+ *
+ * ★★**空セルで打ち切る** —— **合計の手前に空セルを挟む紙がある**
+ * （山梨は1つ、熊本は延長ぶんが15回まで並ぶ）。
+ * **空を 0 と読むと、和が合計と合わなくなって全部落ちる**（そして
+ * 「空欄を0にしない」というこのリポジトリの決めごとにも反する）。
+ *
+ * ★**和が合計と一致しなければ `null`。** 合わないときはイニングだけ落とし、
+ * **得点は今までどおり出す**（試合そのものは落とさない）。
+ */
+function inningsFromCells(cells, total) {
+  const norm = (c) => normalize(String(c ?? "")).trim().replace(/[xX×]$/, "");
+  let last = -1;
+  for (let i = cells.length - 1; i >= 0; i--) {
+    const t = norm(cells[i]);
+    if (t !== "" && Number.isFinite(Number(t))) {
+      last = i;
+      break;
+    }
+  }
+  if (last <= 0) return null;
+  const out = [];
+  for (let i = 0; i < last; i++) {
+    const t = norm(cells[i]);
+    if (t === "") break;
+    const v = Number(t);
+    if (!Number.isFinite(v)) break;
+    out.push(v);
+  }
+  if (!out.length) return null;
+  return out.reduce((a, b) => a + b, 0) === total ? out : null;
+}
+
+/**
+ * ★★**各回の得点を取り出す**（2026-09-06。運営者の指示）。
+ *
+ * `totalReader` と対になるもので、**「計」より手前の数字の並び**を返す。
+ * 見出しに「計」が無い表では**いちばん右の数字（＝合計）を落とした残り**を返す。
+ *
+ * ★★**和が合計と一致しなければ `null` を返す。**
+ * このリポジトリの箱スコアはどれも「各回の和＝印刷された合計」を検算にしており、
+ * **合わないものを画面に出さない**という線をここでも守る。
+ * ★**合わないからといって試合そのものは落とさない** —— 合計は別に読めているので、
+ * **イニングだけ落として、得点は今までどおり出す。**
+ *
+ * ★**サヨナラの `x` は落として数だけにする**（`3x` → 3）。
+ * ★**空欄は「まだ打っていない回」**なので、そこで打ち切る。**0 と読まないこと。**
+ */
+function inningCellsReader(rows) {
+  const isTotal = (c) => normalize(String(c ?? "")).trim() === "計";
+  const header = rows.find((r) => r.some(isTotal));
+  const at = header ? header.findIndex(isTotal) : -1;
+  /*
+    ★**回の欄がどこから始まるか。** 見出しがあれば「1」の列から、
+    無ければ**先頭（校名）の次**から見る。
+  */
+  const from = header ? Math.max(1, header.findIndex((c) => String(c ?? "").trim() === "1")) : 1;
+  return (row, total) => {
+    const end = at >= 0 ? at : row.length;
+    const out = [];
+    for (let i = from; i < end && i < row.length; i++) {
+      const cell = normalize(String(row[i] ?? "")).trim().replace(/[xX×]$/, "");
+      if (cell === "") break; // ★ まだ打っていない回。ここで終わり
+      const v = Number(cell);
+      if (!Number.isFinite(v)) break;
+      out.push(v);
+    }
+    if (!out.length) return null;
+    return out.reduce((a, b) => a + b, 0) === total ? out : null;
+  };
+}
+
+/**
  * 山梨県高等学校野球連盟（`yamanashi-hbf.com`）。
  *
  * **規約に転載の制限は無い**（2026-08-13 に トップ・お問合せ・結果ページを確認）。
@@ -1047,10 +1133,26 @@ const yamanashi = {
           tournament,
           round,
           venue,
+          /*
+            ★**各回の得点**（2026-09-06。`inningsFromCells`）。
+            ★★**「計」の列より前だけを渡す** —— この紙は合計が行の途中にあることがあり、
+            そのまま渡すと**合計を最終回として数えてしまう。**
+            ★**和が合計と合わなければ null が返る**ので、そのときはイニングだけ落ちる。
+          */
           // 勝者の印が無いので点数から決める（神奈川・埼玉と同じ）
           teams: [
-            { display: home, score: a, won: a > b },
-            { display: away, score: b, won: b > a },
+            {
+              display: home,
+              score: a,
+              won: a > b,
+              innings: inningsOfRow(homeRow, totalAt, a) ?? undefined,
+            },
+            {
+              display: away,
+              score: b,
+              won: b > a,
+              innings: inningsOfRow(awayRow, totalAt, b) ?? undefined,
+            },
           ],
         });
       }
@@ -1978,6 +2080,8 @@ const saga = {
           const a = total(homeRow);
           const b = total(awayRow);
           if (a === null || b === null) continue;
+          // ★**各回の得点**（`inningCellsReader`。和が合計と合わなければ null が返る）
+          const cells = inningCellsReader(rows);
 
           games.push({
             date: isoDate,
@@ -1986,8 +2090,8 @@ const saga = {
             round: pickRound(head),
             venue: pickVenue(head),
             teams: [
-              { display: home, score: a, won: a > b },
-              { display: away, score: b, won: b > a },
+              { display: home, score: a, won: a > b, innings: cells(homeRow, a) ?? undefined },
+              { display: away, score: b, won: b > a, innings: cells(awayRow, b) ?? undefined },
             ],
           });
         }
@@ -2383,9 +2487,11 @@ const ehime = {
             }
             const name = (carry ?? "") + cells.slice(0, firstNumber).join("");
             carry = null;
-            const score = inningTotal(["", ...cells.slice(firstNumber).map(normalize)]);
+            const numbers = cells.slice(firstNumber).map(normalize);
+            const score = inningTotal(["", ...numbers]);
             if (!name || score === null) continue;
-            pending.push({ name, score });
+            // ★**各回の得点**（`inningsFromCells`。和が合計と合わなければ null）
+            pending.push({ name, score, innings: inningsFromCells(numbers, score) });
 
             if (pending.length === 2) {
               const [a, b] = pending;
@@ -2397,8 +2503,18 @@ const ehime = {
                 round: pageRound,
                 venue,
                 teams: [
-                  { display: a.name, score: a.score, won: a.score > b.score },
-                  { display: b.name, score: b.score, won: b.score > a.score },
+                  {
+                    display: a.name,
+                    score: a.score,
+                    won: a.score > b.score,
+                    innings: a.innings ?? undefined,
+                  },
+                  {
+                    display: b.name,
+                    score: b.score,
+                    won: b.score > a.score,
+                    innings: b.innings ?? undefined,
+                  },
                 ],
               });
             }

@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { districtOrder } from "@/lib/constants";
 import {
   formatRegionalDate,
+  gameKey,
   seasonLabel,
   type RegionalPickup,
   type RegionalPickups,
@@ -318,7 +319,27 @@ function RegionalRow({ game }: { game: RegionalPickup }) {
   const drawn = ours.score === other.score;
 
   return (
-    <div className="py-1.5">
+    /*
+      ★★★**行そのものを試合のページへの入口にする**（2026-09-06。運営者の指示）。
+
+      ★★**リンクの中にリンクは置けない**（HTMLとして不正）。
+      校名は**学校ページへのリンクのまま残したい**ので、
+      **行を包むのではなく、行いっぱいに広がる見えないリンクを1枚敷く**
+      （`absolute inset-0`）。校名リンクは `relative` で手前に出す。
+      ★**この形なら、行のどこを押しても試合ページ・校名を押せば学校ページ**になる。
+
+      ★**読み上げには「◯◯対◯◯の試合結果」と読ませる**（`sr-only`）——
+      見えないリンクに名前が無いと、何へ行くのか分からない。
+    */
+    <div className="group relative py-1.5">
+      <Link
+        href={`/prefectures/${game.districtSlug}/game/${gameKey(game)}`}
+        className="absolute inset-0 rounded-sm focus-visible:ring-2 focus-visible:ring-accent-500 group-hover:bg-navy-50/60"
+      >
+        <span className="sr-only">
+          {ours.display}と{other.display}の試合結果
+        </span>
+      </Link>
       {/*
         ★★**県名と日付はここから消えた**（2026-09-06）。
         **県は見出しに、日付はカードの説明文に**移してあるので、
@@ -350,7 +371,7 @@ function RegionalRow({ game }: { game: RegionalPickup }) {
         <Link
           href={`/schools/${ours.slug}`}
           title={ours.name}
-          className="min-w-0 truncate text-right text-[0.9375rem] font-bold text-navy-800 hover:underline"
+          className="min-w-0 truncate relative text-right text-[0.9375rem] font-bold text-navy-800 hover:underline"
         >
           {ours.display}
         </Link>
@@ -373,9 +394,10 @@ function RegionalRow({ game }: { game: RegionalPickup }) {
         */}
         <span className="min-w-0 truncate text-[0.9375rem] text-ink" title={other.name}>
           {other.slug && !other.combined ? (
+            // ★`relative` で、行いっぱいの見えないリンクより手前に出す
             <Link
               href={`/schools/${other.slug}`}
-              className="font-bold text-navy-800 hover:underline"
+              className="relative font-bold text-navy-800 hover:underline"
             >
               {other.display}
             </Link>

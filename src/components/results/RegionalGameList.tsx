@@ -3,6 +3,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import {
   formatRegionalDate,
+  gameKey,
   type RegionalGame,
   type RegionalTeam,
 } from "@/lib/regional-results";
@@ -27,7 +28,21 @@ import {
  *   大会のページは**勝ち上がりを追って読む**ので、日付の新しい順ではなく
  *   1回戦から並べる。★**日付を持たない出典がある**ので、日付では並べない。
  */
-export function RegionalGameList({ games }: { games: RegionalGame[] }) {
+export function RegionalGameList({
+  games,
+  districtSlug,
+}: {
+  games: RegionalGame[];
+  /**
+   * ★★**渡すと、行が試合ごとのページへの入口になる**（2026-09-06。運営者の指示）。
+   *
+   * ★**渡さない使い方がある** —— この部品は**甲子園と明治神宮のページでも使っている**
+   * （`toRegionalGames` で形を寄せてから渡す）。
+   * **全国大会の試合には県のファイルが無い**ので、そちらには試合ページが無い。
+   * ★**無いものへリンクしない。**
+   */
+  districtSlug?: string;
+}) {
   const groups = groupByRound(games);
 
   return (
@@ -41,7 +56,7 @@ export function RegionalGameList({ games }: { games: RegionalGame[] }) {
           <ul className="mt-1 divide-y divide-line border-t border-line">
             {group.games.map((game, i) => (
               <li key={`${group.key}-${i}`}>
-                <GameRow game={game} />
+                <GameRow game={game} districtSlug={districtSlug} />
               </li>
             ))}
           </ul>
@@ -88,7 +103,13 @@ function groupByRound(games: RegionalGame[]) {
     .sort((a, b) => a.depth - b.depth);
 }
 
-function GameRow({ game }: { game: RegionalGame }) {
+function GameRow({
+  game,
+  districtSlug,
+}: {
+  game: RegionalGame;
+  districtSlug?: string;
+}) {
   const [a, b] = game.teams;
   if (!a || !b) return null;
   /*
@@ -99,7 +120,22 @@ function GameRow({ game }: { game: RegionalGame }) {
   const drawn = a.score === b.score;
 
   return (
-    <div className="flex items-center gap-3 py-3 sm:gap-4">
+    /*
+      ★★**行いっぱいに見えないリンクを1枚敷く**（2026-09-06。トップの結果カードと同じ作り）。
+      **リンクの中にリンクは置けない**ので、行を `<a>` で包むと
+      **校名から学校ページへ行けなくなる。** 校名側は `relative` で手前に出す。
+    */
+    <div className={cn("relative flex items-center gap-3 py-3 sm:gap-4", districtSlug && "group")}>
+      {districtSlug && (
+        <Link
+          href={`/prefectures/${districtSlug}/game/${gameKey(game)}`}
+          className="absolute inset-0 rounded-sm focus-visible:ring-2 focus-visible:ring-accent-500 group-hover:bg-navy-50/60"
+        >
+          <span className="sr-only">
+            {a.display}と{b.display}の試合結果
+          </span>
+        </Link>
+      )}
       {/* 日付と球場。★どちらも無い出典があるので、無ければ列ごと空ける */}
       <p className="w-14 shrink-0 text-xs leading-tight text-ink-faint sm:w-24">
         {game.date && formatRegionalDate(game.date)}
@@ -161,10 +197,11 @@ function TeamName({
 
   // 公立は学校ページへ。私立と連合チームは当サイトに個別ページが無い
   return team.slug && !team.combined ? (
+    // ★`relative` で、行いっぱいの見えないリンクより手前に出す
     <Link
       href={`/schools/${team.slug}`}
       title={team.name}
-      className="min-w-0 text-sm hover:underline sm:text-base"
+      className="relative min-w-0 text-sm hover:underline sm:text-base"
     >
       {name}
     </Link>

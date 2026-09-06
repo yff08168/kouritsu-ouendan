@@ -1,4 +1,5 @@
 import { cache } from "react";
+import { unstable_cache } from "next/cache";
 
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { normalizeKoshienName, prefectureKey } from "@/lib/koshien-games";
@@ -573,7 +574,23 @@ type SchoolNameRow = {
 const SCHOOL_NAME_ROWS_TTL_MS = 5 * 60 * 1000;
 let schoolNameRows: { at: number; rows: Promise<SchoolNameRow[]> } | null = null;
 
-const loadSchoolNameRows = async (): Promise<SchoolNameRow[]> => {
+/*
+  ★★★**Next のデータキャッシュに載せる**（2026-09-06。**本番で実際に困った**）。
+
+  この読み取りは Supabase のクライアント経由なので、Next から見ると
+  **キャッシュされない `fetch`** になる。**作り置きできるページでは何も起きない**
+  （ビルドのときに1回走るだけ）が、
+  ★★**`/live/<県>` のように「開かれてから作る」ページでは、
+  これがあるだけでページ全体がキャッシュされなくなる。**
+
+      /live          … この読み取りを使わない → PRERENDER（83ms で返る）
+      /live/<県>     … 使う                  → 毎回サーバーで作り直し（no-store・1〜2秒）
+
+  ★**`unstable_cache` で包むと Next の側でも「キャッシュしてよい」と分かる。**
+  ★**下のモジュール内の憶え書きは残す** —— あちらは同じ実行の中で何度も
+  呼ばれたときのためのもので、役割が違う。
+*/
+const loadSchoolNameRowsUncached = async (): Promise<SchoolNameRow[]> => {
   const supabase = createSupabaseServerClient();
   const rows: SchoolNameRow[] = [];
 
@@ -595,6 +612,12 @@ const loadSchoolNameRows = async (): Promise<SchoolNameRow[]> => {
 
   return rows;
 };
+
+const loadSchoolNameRows = unstable_cache(loadSchoolNameRowsUncached, ["school-name-rows"], {
+  // ★**5分**（このモジュールの憶え書きと同じ。学校マスタを入れ替えたら5分で追いつく）
+  revalidate: SCHOOL_NAME_ROWS_TTL_MS / 1000,
+  tags: ["schools"],
+});
 
 const fetchSchoolNameRows = (): Promise<SchoolNameRow[]> => {
   const now = Date.now();

@@ -15481,6 +15481,15 @@ const HSB_BASE = {
         長崎   … `令和2年度長崎県高等学校野球大会`   ← ★**「夏季」の字が無い**
     */
     if (this.summer2020?.test(title)) return "summer";
+    /*
+      ★★**「春季」ではなく「春期」と書く県がある**（2026-09-06。秋田）。
+      `春期東北地区高等学校野球 秋田県大会` —— **同じ東北でも青森・岩手・宮城・山形・福島は
+      「春季」**で、**春が丸ごと欠けていたのは秋田だけ**だった（`収録状況.md` で確かめた）。
+      ★★**既定には足さない。渡した県だけ通る道にしてある** ——
+      **広く寄せると、別の県で正しく外している大会を拾いかねない**
+      （新人大会・1年生大会・招待試合は取らない、という決めごとがある）。
+    */
+    if (this.springAlt?.test(title)) return "spring";
     return null;
   },
   async collect({ fetchHtml, season, year }) {
@@ -15945,7 +15954,16 @@ const HSB_BASE = {
  * **1県目の索引を2県目が使ってしまう**（同じURLに見えないので実害は出ないが、
  * 取得の使い回しが県をまたぐのは筋が悪い）。
  */
-function hsbAdapter({ slug, district, host, summer2020, keepTitle, seasons, matchDistricts }) {
+function hsbAdapter({
+  slug,
+  district,
+  host,
+  summer2020,
+  springAlt,
+  keepTitle,
+  seasons,
+  matchDistricts,
+}) {
   const base = `https://${host}.hsbflash.jp`;
   return {
     ...HSB_BASE,
@@ -15960,6 +15978,8 @@ function hsbAdapter({ slug, district, host, summer2020, keepTitle, seasons, matc
     */
     seasons: seasons ?? { spring: `${base}/`, summer: `${base}/`, autumn: `${base}/` },
     summer2020,
+    /** ★**春季を「春期」と書く県で使う**（秋田だけ。`seasonOf` の注記を読むこと） */
+    springAlt,
     /** ★**自分の地区の大会だけを採る**（1つのホストに2地区ぶん並ぶ県で使う） */
     keepTitle,
     /** ★**学校を引く地区**（渡さなければ自分の地区だけ）。北海道・東京で使う */
@@ -16236,6 +16256,8 @@ const akitaHsb = hsbAdapter({
   district: "秋田",
   host: "akita",
   summer2020: /^2020秋田県高等学校野球大会$/,
+  /* ★**2022年から題が「春期」に変わっている**（2021年までは「春季」）。両方受ける */
+  springAlt: /^春期東北地区高等学校野球 秋田県大会$/,
 });
 
 const tottoriHsb = hsbAdapter({

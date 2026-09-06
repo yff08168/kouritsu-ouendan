@@ -5,6 +5,558 @@
   "sourceUrl": "https://miyagi.hsbflash.jp/",
   "games": [
     {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "柴田",
+          "score": 0,
+          "won": false,
+          "name": "柴田高校",
+          "slug": "shibata"
+        },
+        {
+          "display": "利府",
+          "score": 6,
+          "won": true,
+          "name": "利府高校",
+          "slug": "rifu"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "宮城工業",
+          "score": 7,
+          "won": true,
+          "name": "宮城工業",
+          "slug": null
+        },
+        {
+          "display": "仙台東",
+          "score": 6,
+          "won": false,
+          "name": "仙台東高校",
+          "slug": "sendaihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "石巻",
+          "score": 2,
+          "won": true,
+          "name": "石巻高校",
+          "slug": "ishinomaki"
+        },
+        {
+          "display": "石巻工業",
+          "score": 1,
+          "won": false,
+          "name": "石巻工業高校",
+          "slug": "ishinomakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "東陵",
+          "score": 12,
+          "won": true,
+          "name": "東陵",
+          "slug": null
+        },
+        {
+          "display": "白石工業",
+          "score": 2,
+          "won": false,
+          "name": "白石工業高校",
+          "slug": "shiroishikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "名取北",
+          "score": 2,
+          "won": false,
+          "name": "名取北高校",
+          "slug": "natorikita"
+        },
+        {
+          "display": "利府",
+          "score": 12,
+          "won": true,
+          "name": "利府高校",
+          "slug": "rifu"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "宮城工業",
+          "score": 1,
+          "won": false,
+          "name": "宮城工業",
+          "slug": null
+        },
+        {
+          "display": "東北学院",
+          "score": 8,
+          "won": true,
+          "name": "東北学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "仙台第三",
+          "score": 1,
+          "won": false,
+          "name": "仙台第三高校",
+          "slug": "sendaidaisan"
+        },
+        {
+          "display": "石巻",
+          "score": 5,
+          "won": true,
+          "name": "石巻高校",
+          "slug": "ishinomaki"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "東陵",
+          "score": 1,
+          "won": false,
+          "name": "東陵",
+          "slug": null
+        },
+        {
+          "display": "仙台育英",
+          "score": 8,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "準々決勝",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "利府",
+          "score": 6,
+          "won": true,
+          "name": "利府高校",
+          "slug": "rifu"
+        },
+        {
+          "display": "東北学院",
+          "score": 2,
+          "won": false,
+          "name": "東北学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "準々決勝",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "石巻",
+          "score": 2,
+          "won": false,
+          "name": "石巻高校",
+          "slug": "ishinomaki"
+        },
+        {
+          "display": "仙台育英",
+          "score": 9,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "準決勝",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "利府",
+          "score": 2,
+          "won": false,
+          "name": "利府高校",
+          "slug": "rifu"
+        },
+        {
+          "display": "仙台育英",
+          "score": 10,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "古川工業",
+          "score": 3,
+          "won": false,
+          "name": "古川工業高校",
+          "slug": "furukawakogyo"
+        },
+        {
+          "display": "仙台商業",
+          "score": 14,
+          "won": true,
+          "name": "仙台商業高校",
+          "slug": "sendaishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "大崎中央",
+          "score": 8,
+          "won": true,
+          "name": "大崎中央",
+          "slug": null
+        },
+        {
+          "display": "塩釜",
+          "score": 0,
+          "won": false,
+          "name": "塩釜高校",
+          "slug": "shiogama"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "角田",
+          "score": 4,
+          "won": false,
+          "name": "角田高校",
+          "slug": "kakuda"
+        },
+        {
+          "display": "古川学園",
+          "score": 7,
+          "won": true,
+          "name": "古川学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "白石",
+          "score": 3,
+          "won": false,
+          "name": "白石高校",
+          "slug": "shiroishi"
+        },
+        {
+          "display": "多賀城",
+          "score": 4,
+          "won": true,
+          "name": "多賀城高校",
+          "slug": "tagajo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "宮城農業",
+          "score": 1,
+          "won": false,
+          "name": "宮城農業",
+          "slug": null
+        },
+        {
+          "display": "聖和学園",
+          "score": 10,
+          "won": true,
+          "name": "聖和学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "東北",
+          "score": 5,
+          "won": true,
+          "name": "東北",
+          "slug": null
+        },
+        {
+          "display": "仙台商業",
+          "score": 3,
+          "won": false,
+          "name": "仙台商業高校",
+          "slug": "sendaishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "大崎中央",
+          "score": 2,
+          "won": false,
+          "name": "大崎中央",
+          "slug": null
+        },
+        {
+          "display": "古川学園",
+          "score": 4,
+          "won": true,
+          "name": "古川学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "東北学院榴ケ岡",
+          "score": 1,
+          "won": true,
+          "name": "東北学院榴ケ岡",
+          "slug": null
+        },
+        {
+          "display": "多賀城",
+          "score": 0,
+          "won": false,
+          "name": "多賀城高校",
+          "slug": "tagajo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "聖和学園",
+          "score": 8,
+          "won": true,
+          "name": "聖和学園",
+          "slug": null
+        },
+        {
+          "display": "気仙沼",
+          "score": 2,
+          "won": false,
+          "name": "気仙沼高校",
+          "slug": "kesennuma"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "準々決勝",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "東北",
+          "score": 14,
+          "won": true,
+          "name": "東北",
+          "slug": null
+        },
+        {
+          "display": "古川学園",
+          "score": 0,
+          "won": false,
+          "name": "古川学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "準々決勝",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "東北学院榴ケ岡",
+          "score": 2,
+          "won": true,
+          "name": "東北学院榴ケ岡",
+          "slug": null
+        },
+        {
+          "display": "聖和学園",
+          "score": 0,
+          "won": false,
+          "name": "聖和学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "準決勝",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "東北",
+          "score": 7,
+          "won": true,
+          "name": "東北",
+          "slug": null
+        },
+        {
+          "display": "東北学院榴ケ岡",
+          "score": 1,
+          "won": false,
+          "name": "東北学院榴ケ岡",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-24",
+      "season": "spring",
+      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "round": "決勝",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "東北",
+          "score": 1,
+          "won": false,
+          "name": "東北",
+          "slug": null
+        },
+        {
+          "display": "仙台育英",
+          "score": 4,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2019-05-18",
       "season": "spring",
       "tournament": "2019年 春季東北地区高等学校野球 宮城県大会",
@@ -4428,11 +4980,1118 @@
       ]
     },
     {
-      "date": "2026-05-16",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "名取",
+          "score": 0,
+          "won": false,
+          "name": "名取高校",
+          "slug": "natori"
+        },
+        {
+          "display": "古川工業",
+          "score": 12,
+          "won": true,
+          "name": "古川工業高校",
+          "slug": "furukawakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
       "round": "1回戦",
       "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "仙台向山",
+          "score": 7,
+          "won": true,
+          "name": "仙台向山高校",
+          "slug": "sendaimukaiyama"
+        },
+        {
+          "display": "仙台西",
+          "score": 5,
+          "won": false,
+          "name": "仙台西高校",
+          "slug": "sendainishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "東陵",
+          "score": 9,
+          "won": true,
+          "name": "東陵",
+          "slug": null
+        },
+        {
+          "display": "佐沼",
+          "score": 2,
+          "won": false,
+          "name": "佐沼高校",
+          "slug": "sanuma"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "名取北",
+          "score": 9,
+          "won": true,
+          "name": "名取北高校",
+          "slug": "natorikita"
+        },
+        {
+          "display": "泉松陵",
+          "score": 1,
+          "won": false,
+          "name": "泉松陵高校",
+          "slug": "izumishoryo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "仙台第二",
+          "score": 14,
+          "won": true,
+          "name": "仙台第二高校",
+          "slug": "sendaidaini"
+        },
+        {
+          "display": "伊具",
+          "score": 1,
+          "won": false,
+          "name": "伊具高校",
+          "slug": "igu"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "富谷",
+          "score": 0,
+          "won": false,
+          "name": "富谷高校",
+          "slug": "tomiya"
+        },
+        {
+          "display": "東北生文大",
+          "score": 8,
+          "won": true,
+          "name": "東北生文大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "仙台高専名取",
+          "score": 0,
+          "won": false,
+          "name": "仙台高専名取",
+          "slug": null
+        },
+        {
+          "display": "仙台商業",
+          "score": 9,
+          "won": true,
+          "name": "仙台商業高校",
+          "slug": "sendaishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "泉館山",
+          "score": 1,
+          "won": false,
+          "name": "泉館山高校",
+          "slug": "izumitateyama"
+        },
+        {
+          "display": "宮城県工業",
+          "score": 8,
+          "won": true,
+          "name": "宮城県工業高校",
+          "slug": "miyagikenkogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "日本ウェルネス宮城",
+          "score": 5,
+          "won": true,
+          "name": "日本ウェルネス宮城",
+          "slug": null
+        },
+        {
+          "display": "築館",
+          "score": 4,
+          "won": false,
+          "name": "築館高校",
+          "slug": "tsukidate"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "小牛田農林",
+          "score": 1,
+          "won": false,
+          "name": "小牛田農林高校",
+          "slug": "kogotanorin"
+        },
+        {
+          "display": "石巻工業",
+          "score": 11,
+          "won": true,
+          "name": "石巻工業高校",
+          "slug": "ishinomakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "仙台工業",
+          "score": 2,
+          "won": false,
+          "name": "仙台工業高校",
+          "slug": "sendaikogyo"
+        },
+        {
+          "display": "仙台第一",
+          "score": 29,
+          "won": true,
+          "name": "仙台第一高校",
+          "slug": "sendaidaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "楽天モバイル最強パーク宮城",
+      "teams": [
+        {
+          "display": "気仙沼",
+          "score": 14,
+          "won": true,
+          "name": "気仙沼高校",
+          "slug": "kesennuma"
+        },
+        {
+          "display": "黒川・古川黎明・迫桜・中新田・岩ケ崎",
+          "score": 0,
+          "won": false,
+          "name": "黒川・古川黎明・迫桜・中新田・岩ケ崎",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "2回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "利府",
+          "score": 8,
+          "won": true,
+          "name": "利府高校",
+          "slug": "rifu"
+        },
+        {
+          "display": "古川工業",
+          "score": 4,
+          "won": false,
+          "name": "古川工業高校",
+          "slug": "furukawakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "仙台向山",
+          "score": 0,
+          "won": false,
+          "name": "仙台向山高校",
+          "slug": "sendaimukaiyama"
+        },
+        {
+          "display": "東陵",
+          "score": 7,
+          "won": true,
+          "name": "東陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "名取北",
+          "score": 7,
+          "won": true,
+          "name": "名取北高校",
+          "slug": "natorikita"
+        },
+        {
+          "display": "仙台第二",
+          "score": 0,
+          "won": false,
+          "name": "仙台第二高校",
+          "slug": "sendaidaini"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "2回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "東北生文大",
+          "score": 1,
+          "won": false,
+          "name": "東北生文大",
+          "slug": null
+        },
+        {
+          "display": "石巻",
+          "score": 3,
+          "won": true,
+          "name": "石巻高校",
+          "slug": "ishinomaki"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "2回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "聖和学園",
+          "score": 1,
+          "won": false,
+          "name": "聖和学園",
+          "slug": null
+        },
+        {
+          "display": "仙台商業",
+          "score": 3,
+          "won": true,
+          "name": "仙台商業高校",
+          "slug": "sendaishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "宮城県工業",
+          "score": 10,
+          "won": false,
+          "name": "宮城県工業高校",
+          "slug": "miyagikenkogyo"
+        },
+        {
+          "display": "日本ウェルネス宮城",
+          "score": 13,
+          "won": true,
+          "name": "日本ウェルネス宮城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "石巻工業",
+          "score": 4,
+          "won": true,
+          "name": "石巻工業高校",
+          "slug": "ishinomakikogyo"
+        },
+        {
+          "display": "仙台第一",
+          "score": 2,
+          "won": false,
+          "name": "仙台第一高校",
+          "slug": "sendaidaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "気仙沼",
+          "score": 0,
+          "won": false,
+          "name": "気仙沼高校",
+          "slug": "kesennuma"
+        },
+        {
+          "display": "東北",
+          "score": 1,
+          "won": true,
+          "name": "東北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "3回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "利府",
+          "score": 5,
+          "won": false,
+          "name": "利府高校",
+          "slug": "rifu"
+        },
+        {
+          "display": "東陵",
+          "score": 6,
+          "won": true,
+          "name": "東陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "3回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "名取北",
+          "score": 3,
+          "won": false,
+          "name": "名取北高校",
+          "slug": "natorikita"
+        },
+        {
+          "display": "石巻",
+          "score": 4,
+          "won": true,
+          "name": "石巻高校",
+          "slug": "ishinomaki"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "3回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "仙台商業",
+          "score": 4,
+          "won": true,
+          "name": "仙台商業高校",
+          "slug": "sendaishogyo"
+        },
+        {
+          "display": "日本ウェルネス宮城",
+          "score": 3,
+          "won": false,
+          "name": "日本ウェルネス宮城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "3回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "石巻工業",
+          "score": 1,
+          "won": false,
+          "name": "石巻工業高校",
+          "slug": "ishinomakikogyo"
+        },
+        {
+          "display": "東北",
+          "score": 5,
+          "won": true,
+          "name": "東北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "準々決勝",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "東陵",
+          "score": 3,
+          "won": true,
+          "name": "東陵",
+          "slug": null
+        },
+        {
+          "display": "石巻",
+          "score": 1,
+          "won": false,
+          "name": "石巻高校",
+          "slug": "ishinomaki"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "準々決勝",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "仙台商業",
+          "score": 3,
+          "won": false,
+          "name": "仙台商業高校",
+          "slug": "sendaishogyo"
+        },
+        {
+          "display": "東北",
+          "score": 7,
+          "won": true,
+          "name": "東北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "準決勝",
+      "venue": "楽天モバイル最強パーク宮城",
+      "teams": [
+        {
+          "display": "東陵",
+          "score": 0,
+          "won": false,
+          "name": "東陵",
+          "slug": null
+        },
+        {
+          "display": "東北",
+          "score": 1,
+          "won": true,
+          "name": "東北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "楽天モバイル最強パーク宮城",
+      "teams": [
+        {
+          "display": "仙台",
+          "score": 16,
+          "won": true,
+          "name": "仙台高校",
+          "slug": "sendai"
+        },
+        {
+          "display": "宮城広瀬",
+          "score": 1,
+          "won": false,
+          "name": "宮城広瀬高校",
+          "slug": "miyagihirose"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "気仙沼向洋・南三陸",
+          "score": 6,
+          "won": false,
+          "name": "気仙沼向洋・南三陸",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "登米総合産業",
+          "score": 9,
+          "won": true,
+          "name": "登米総合産業高校",
+          "slug": "tomesogosangyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "石巻好文館",
+          "score": 2,
+          "won": false,
+          "name": "石巻好文館高校",
+          "slug": "ishinomakikobunkan"
+        },
+        {
+          "display": "大河原産業",
+          "score": 14,
+          "won": true,
+          "name": "大河原産業高校",
+          "slug": "ogawarasangyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "白石工業",
+          "score": 4,
+          "won": false,
+          "name": "白石工業高校",
+          "slug": "shiroishikogyo"
+        },
+        {
+          "display": "柴田",
+          "score": 6,
+          "won": true,
+          "name": "柴田高校",
+          "slug": "shibata"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "松島",
+          "score": 1,
+          "won": false,
+          "name": "松島高校",
+          "slug": "matsushima"
+        },
+        {
+          "display": "仙台第三",
+          "score": 14,
+          "won": true,
+          "name": "仙台第三高校",
+          "slug": "sendaidaisan"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "楽天モバイル最強パーク宮城",
+      "teams": [
+        {
+          "display": "加美農業",
+          "score": 1,
+          "won": false,
+          "name": "加美農業高校",
+          "slug": "kaminogyo"
+        },
+        {
+          "display": "角田",
+          "score": 8,
+          "won": true,
+          "name": "角田高校",
+          "slug": "kakuda"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "古川",
+          "score": 5,
+          "won": false,
+          "name": "古川高校",
+          "slug": "furukawa"
+        },
+        {
+          "display": "仙台東",
+          "score": 13,
+          "won": true,
+          "name": "仙台東高校",
+          "slug": "sendaihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "石巻北・宮城水産・涌谷",
+          "score": 6,
+          "won": false,
+          "name": "石巻北・宮城水産・涌谷",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "白石",
+          "score": 14,
+          "won": true,
+          "name": "白石高校",
+          "slug": "shiroishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "仙台城南",
+          "score": 6,
+          "won": true,
+          "name": "仙台城南",
+          "slug": null
+        },
+        {
+          "display": "大崎中央",
+          "score": 5,
+          "won": false,
+          "name": "大崎中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "仙台南",
+          "score": 8,
+          "won": true,
+          "name": "仙台南高校",
+          "slug": "sendaiminami"
+        },
+        {
+          "display": "多賀城",
+          "score": 6,
+          "won": false,
+          "name": "多賀城高校",
+          "slug": "tagajo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "泉",
+          "score": 5,
+          "won": false,
+          "name": "泉高校",
+          "slug": "izumi"
+        },
+        {
+          "display": "宮城県農業",
+          "score": 8,
+          "won": true,
+          "name": "宮城県農業高校",
+          "slug": "miyagikennogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "1回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "塩釜",
+          "score": 11,
+          "won": true,
+          "name": "塩釜高校",
+          "slug": "shiogama"
+        },
+        {
+          "display": "石巻西",
+          "score": 0,
+          "won": false,
+          "name": "石巻西高校",
+          "slug": "ishinomakinishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "仙台育英",
+          "score": 21,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        },
+        {
+          "display": "仙台",
+          "score": 0,
+          "won": false,
+          "name": "仙台高校",
+          "slug": "sendai"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "登米総合産業",
+          "score": 15,
+          "won": true,
+          "name": "登米総合産業高校",
+          "slug": "tomesogosangyo"
+        },
+        {
+          "display": "大河原産業",
+          "score": 11,
+          "won": false,
+          "name": "大河原産業高校",
+          "slug": "ogawarasangyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "柴田",
+          "score": 6,
+          "won": true,
+          "name": "柴田高校",
+          "slug": "shibata"
+        },
+        {
+          "display": "仙台第三",
+          "score": 3,
+          "won": false,
+          "name": "仙台第三高校",
+          "slug": "sendaidaisan"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "角田",
+          "score": 1,
+          "won": false,
+          "name": "角田高校",
+          "slug": "kakuda"
+        },
+        {
+          "display": "古川学園",
+          "score": 6,
+          "won": true,
+          "name": "古川学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "東北学院",
+          "score": 9,
+          "won": true,
+          "name": "東北学院",
+          "slug": null
+        },
+        {
+          "display": "仙台東",
+          "score": 1,
+          "won": false,
+          "name": "仙台東高校",
+          "slug": "sendaihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "2回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "白石",
+          "score": 4,
+          "won": false,
+          "name": "白石高校",
+          "slug": "shiroishi"
+        },
+        {
+          "display": "仙台城南",
+          "score": 6,
+          "won": true,
+          "name": "仙台城南",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "2回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "仙台南",
+          "score": 4,
+          "won": false,
+          "name": "仙台南高校",
+          "slug": "sendaiminami"
+        },
+        {
+          "display": "宮城県農業",
+          "score": 7,
+          "won": true,
+          "name": "宮城県農業高校",
+          "slug": "miyagikennogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "塩釜",
+          "score": 0,
+          "won": false,
+          "name": "塩釜高校",
+          "slug": "shiogama"
+        },
+        {
+          "display": "東北学院榴ケ岡",
+          "score": 2,
+          "won": true,
+          "name": "東北学院榴ケ岡",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "3回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "仙台育英",
+          "score": 22,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        },
+        {
+          "display": "登米総合産業",
+          "score": 0,
+          "won": false,
+          "name": "登米総合産業高校",
+          "slug": "tomesogosangyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "3回戦",
+      "venue": "利府町中央公園野球場",
       "teams": [
         {
           "display": "柴田",
@@ -4442,514 +6101,123 @@
           "slug": "shibata"
         },
         {
-          "display": "利府",
-          "score": 6,
+          "display": "古川学園",
+          "score": 2,
           "won": true,
-          "name": "利府高校",
-          "slug": "rifu"
+          "name": "古川学園",
+          "slug": null
         }
       ]
     },
     {
-      "date": "2026-05-16",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "3回戦",
       "venue": "利府町中央公園野球場",
       "teams": [
         {
-          "display": "宮城工業",
-          "score": 7,
-          "won": true,
-          "name": "宮城工業",
-          "slug": null
-        },
-        {
-          "display": "仙台東",
-          "score": 6,
-          "won": false,
-          "name": "仙台東高校",
-          "slug": "sendaihigashi"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-16",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "石巻",
-          "score": 2,
-          "won": true,
-          "name": "石巻高校",
-          "slug": "ishinomaki"
-        },
-        {
-          "display": "石巻工業",
-          "score": 1,
-          "won": false,
-          "name": "石巻工業高校",
-          "slug": "ishinomakikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-16",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "東陵",
-          "score": 12,
-          "won": true,
-          "name": "東陵",
-          "slug": null
-        },
-        {
-          "display": "白石工業",
-          "score": 2,
-          "won": false,
-          "name": "白石工業高校",
-          "slug": "shiroishikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-17",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "名取北",
-          "score": 2,
-          "won": false,
-          "name": "名取北高校",
-          "slug": "natorikita"
-        },
-        {
-          "display": "利府",
-          "score": 12,
-          "won": true,
-          "name": "利府高校",
-          "slug": "rifu"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-17",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "宮城工業",
-          "score": 1,
-          "won": false,
-          "name": "宮城工業",
-          "slug": null
-        },
-        {
           "display": "東北学院",
-          "score": 8,
-          "won": true,
-          "name": "東北学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-17",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "仙台第三",
-          "score": 1,
-          "won": false,
-          "name": "仙台第三高校",
-          "slug": "sendaidaisan"
-        },
-        {
-          "display": "石巻",
-          "score": 5,
-          "won": true,
-          "name": "石巻高校",
-          "slug": "ishinomaki"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-17",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "東陵",
-          "score": 1,
-          "won": false,
-          "name": "東陵",
-          "slug": null
-        },
-        {
-          "display": "仙台育英",
-          "score": 8,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-20",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "準々決勝",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "利府",
-          "score": 6,
-          "won": true,
-          "name": "利府高校",
-          "slug": "rifu"
-        },
-        {
-          "display": "東北学院",
-          "score": 2,
+          "score": 4,
           "won": false,
           "name": "東北学院",
           "slug": null
+        },
+        {
+          "display": "仙台城南",
+          "score": 8,
+          "won": true,
+          "name": "仙台城南",
+          "slug": null
         }
       ]
     },
     {
-      "date": "2026-05-20",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "3回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "宮城県農業",
+          "score": 1,
+          "won": false,
+          "name": "宮城県農業高校",
+          "slug": "miyagikennogyo"
+        },
+        {
+          "display": "東北学院榴ケ岡",
+          "score": 6,
+          "won": true,
+          "name": "東北学院榴ケ岡",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
       "round": "準々決勝",
       "venue": "石巻市民球場",
       "teams": [
         {
-          "display": "石巻",
-          "score": 2,
-          "won": false,
-          "name": "石巻高校",
-          "slug": "ishinomaki"
-        },
-        {
           "display": "仙台育英",
-          "score": 9,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-23",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "準決勝",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "利府",
-          "score": 2,
-          "won": false,
-          "name": "利府高校",
-          "slug": "rifu"
-        },
-        {
-          "display": "仙台育英",
-          "score": 10,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-15",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "古川工業",
-          "score": 3,
-          "won": false,
-          "name": "古川工業高校",
-          "slug": "furukawakogyo"
-        },
-        {
-          "display": "仙台商業",
-          "score": 14,
-          "won": true,
-          "name": "仙台商業高校",
-          "slug": "sendaishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-15",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": "鹿島台中央野球場",
-      "teams": [
-        {
-          "display": "大崎中央",
-          "score": 8,
-          "won": true,
-          "name": "大崎中央",
-          "slug": null
-        },
-        {
-          "display": "塩釜",
-          "score": 0,
-          "won": false,
-          "name": "塩釜高校",
-          "slug": "shiogama"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-15",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "角田",
-          "score": 4,
-          "won": false,
-          "name": "角田高校",
-          "slug": "kakuda"
-        },
-        {
-          "display": "古川学園",
-          "score": 7,
-          "won": true,
-          "name": "古川学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-15",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": "鹿島台中央野球場",
-      "teams": [
-        {
-          "display": "白石",
-          "score": 3,
-          "won": false,
-          "name": "白石高校",
-          "slug": "shiroishi"
-        },
-        {
-          "display": "多賀城",
-          "score": 4,
-          "won": true,
-          "name": "多賀城高校",
-          "slug": "tagajo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-15",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "宮城農業",
-          "score": 1,
-          "won": false,
-          "name": "宮城農業",
-          "slug": null
-        },
-        {
-          "display": "聖和学園",
-          "score": 10,
-          "won": true,
-          "name": "聖和学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-16",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "東北",
           "score": 5,
           "won": true,
-          "name": "東北",
-          "slug": null
-        },
-        {
-          "display": "仙台商業",
-          "score": 3,
-          "won": false,
-          "name": "仙台商業高校",
-          "slug": "sendaishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-16",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "大崎中央",
-          "score": 2,
-          "won": false,
-          "name": "大崎中央",
+          "name": "仙台育英",
           "slug": null
         },
         {
           "display": "古川学園",
+          "score": 1,
+          "won": false,
+          "name": "古川学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "round": "準々決勝",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "仙台城南",
+          "score": 1,
+          "won": false,
+          "name": "仙台城南",
+          "slug": null
+        },
+        {
+          "display": "東北学院榴ケ岡",
           "score": 4,
           "won": true,
-          "name": "古川学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-16",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "東北学院榴ケ岡",
-          "score": 1,
-          "won": true,
           "name": "東北学院榴ケ岡",
           "slug": null
-        },
-        {
-          "display": "多賀城",
-          "score": 0,
-          "won": false,
-          "name": "多賀城高校",
-          "slug": "tagajo"
         }
       ]
     },
     {
-      "date": "2026-05-16",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "聖和学園",
-          "score": 8,
-          "won": true,
-          "name": "聖和学園",
-          "slug": null
-        },
-        {
-          "display": "気仙沼",
-          "score": 2,
-          "won": false,
-          "name": "気仙沼高校",
-          "slug": "kesennuma"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-20",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "準々決勝",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "東北",
-          "score": 14,
-          "won": true,
-          "name": "東北",
-          "slug": null
-        },
-        {
-          "display": "古川学園",
-          "score": 0,
-          "won": false,
-          "name": "古川学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-20",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
-      "round": "準々決勝",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "東北学院榴ケ岡",
-          "score": 2,
-          "won": true,
-          "name": "東北学院榴ケ岡",
-          "slug": null
-        },
-        {
-          "display": "聖和学園",
-          "score": 0,
-          "won": false,
-          "name": "聖和学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-23",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "date": "2026-07-27",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
       "round": "準決勝",
-      "venue": "石巻市民球場",
+      "venue": "楽天モバイル最強パーク宮城",
       "teams": [
         {
-          "display": "東北",
+          "display": "仙台育英",
           "score": 7,
           "won": true,
-          "name": "東北",
+          "name": "仙台育英",
           "slug": null
         },
         {
           "display": "東北学院榴ケ岡",
-          "score": 1,
+          "score": 0,
           "won": false,
           "name": "東北学院榴ケ岡",
           "slug": null
@@ -4957,24 +6225,24 @@
       ]
     },
     {
-      "date": "2026-05-24",
-      "season": "spring",
-      "tournament": "2026年 春季東北地区高等学校野球 宮城県大会",
+      "date": "2026-07-28",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 宮城大会",
       "round": "決勝",
       "venue": "石巻市民球場",
       "teams": [
         {
-          "display": "東北",
-          "score": 1,
-          "won": false,
-          "name": "東北",
-          "slug": null
-        },
-        {
           "display": "仙台育英",
           "score": 4,
           "won": true,
           "name": "仙台育英",
+          "slug": null
+        },
+        {
+          "display": "東北",
+          "score": 1,
+          "won": false,
+          "name": "東北",
           "slug": null
         }
       ]
@@ -16436,126 +17704,57 @@
       ]
     },
     {
-      "date": "2026-07-13",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "名取",
-          "score": 0,
-          "won": false,
-          "name": "名取高校",
-          "slug": "natori"
-        },
-        {
-          "display": "古川工業",
-          "score": 12,
-          "won": true,
-          "name": "古川工業高校",
-          "slug": "furukawakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-13",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "仙台向山",
-          "score": 7,
-          "won": true,
-          "name": "仙台向山高校",
-          "slug": "sendaimukaiyama"
-        },
-        {
-          "display": "仙台西",
-          "score": 5,
-          "won": false,
-          "name": "仙台西高校",
-          "slug": "sendainishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-13",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "東陵",
-          "score": 9,
-          "won": true,
-          "name": "東陵",
-          "slug": null
-        },
-        {
-          "display": "佐沼",
-          "score": 2,
-          "won": false,
-          "name": "佐沼高校",
-          "slug": "sanuma"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "名取北",
-          "score": 9,
-          "won": true,
-          "name": "名取北高校",
-          "slug": "natorikita"
-        },
-        {
-          "display": "泉松陵",
-          "score": 1,
-          "won": false,
-          "name": "泉松陵高校",
-          "slug": "izumishoryo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
+      "date": "2025-09-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
       "venue": "仙台市民球場",
       "teams": [
         {
           "display": "仙台第二",
-          "score": 14,
+          "score": 3,
           "won": true,
           "name": "仙台第二高校",
           "slug": "sendaidaini"
         },
         {
-          "display": "伊具",
+          "display": "加美農業",
           "score": 1,
           "won": false,
-          "name": "伊具高校",
-          "slug": "igu"
+          "name": "加美農業高校",
+          "slug": "kaminogyo"
         }
       ]
     },
     {
-      "date": "2026-07-13",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "仙台市民球場",
+      "date": "2025-09-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "仙台城南",
+          "score": 9,
+          "won": false,
+          "name": "仙台城南",
+          "slug": null
+        },
+        {
+          "display": "仙台第三",
+          "score": 11,
+          "won": true,
+          "name": "仙台第三高校",
+          "slug": "sendaidaisan"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "利府町中央公園野球場",
       "teams": [
         {
           "display": "富谷",
@@ -16565,123 +17764,54 @@
           "slug": "tomiya"
         },
         {
-          "display": "東北生文大",
-          "score": 8,
+          "display": "東北",
+          "score": 10,
           "won": true,
-          "name": "東北生文大",
+          "name": "東北",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-13",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
+      "date": "2025-09-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
       "venue": "仙台市民球場",
       "teams": [
         {
-          "display": "仙台高専名取",
-          "score": 0,
-          "won": false,
-          "name": "仙台高専名取",
-          "slug": null
-        },
-        {
-          "display": "仙台商業",
-          "score": 9,
-          "won": true,
-          "name": "仙台商業高校",
-          "slug": "sendaishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "泉館山",
-          "score": 1,
-          "won": false,
-          "name": "泉館山高校",
-          "slug": "izumitateyama"
-        },
-        {
-          "display": "宮城県工業",
-          "score": 8,
-          "won": true,
-          "name": "宮城県工業高校",
-          "slug": "miyagikenkogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-12",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "日本ウェルネス宮城",
-          "score": 5,
-          "won": true,
-          "name": "日本ウェルネス宮城",
-          "slug": null
-        },
-        {
-          "display": "築館",
-          "score": 4,
-          "won": false,
-          "name": "築館高校",
-          "slug": "tsukidate"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "小牛田農林",
-          "score": 1,
-          "won": false,
-          "name": "小牛田農林高校",
-          "slug": "kogotanorin"
-        },
-        {
-          "display": "石巻工業",
-          "score": 11,
-          "won": true,
-          "name": "石巻工業高校",
-          "slug": "ishinomakikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "仙台工業",
+          "display": "宮城県農業",
           "score": 2,
           "won": false,
-          "name": "仙台工業高校",
-          "slug": "sendaikogyo"
+          "name": "宮城県農業高校",
+          "slug": "miyagikennogyo"
+        },
+        {
+          "display": "利府",
+          "score": 4,
+          "won": true,
+          "name": "利府高校",
+          "slug": "rifu"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "石巻工業",
+          "score": 0,
+          "won": false,
+          "name": "石巻工業高校",
+          "slug": "ishinomakikogyo"
         },
         {
           "display": "仙台第一",
-          "score": 29,
+          "score": 7,
           "won": true,
           "name": "仙台第一高校",
           "slug": "sendaidaiichi"
@@ -16689,484 +17819,91 @@
       ]
     },
     {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "楽天モバイル最強パーク宮城",
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "鹿島台中央野球場",
       "teams": [
         {
-          "display": "気仙沼",
-          "score": 14,
-          "won": true,
-          "name": "気仙沼高校",
-          "slug": "kesennuma"
-        },
-        {
-          "display": "黒川・古川黎明・迫桜・中新田・岩ケ崎",
+          "display": "多賀城",
           "score": 0,
           "won": false,
-          "name": "黒川・古川黎明・迫桜・中新田・岩ケ崎",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "2回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "利府",
-          "score": 8,
-          "won": true,
-          "name": "利府高校",
-          "slug": "rifu"
+          "name": "多賀城高校",
+          "slug": "tagajo"
         },
         {
-          "display": "古川工業",
-          "score": 4,
-          "won": false,
-          "name": "古川工業高校",
-          "slug": "furukawakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "2回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "仙台向山",
-          "score": 0,
-          "won": false,
-          "name": "仙台向山高校",
-          "slug": "sendaimukaiyama"
-        },
-        {
-          "display": "東陵",
+          "display": "ウェルネス宮城",
           "score": 7,
           "won": true,
-          "name": "東陵",
+          "name": "ウェルネス宮城",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "date": "2025-09-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
       "round": "2回戦",
-      "venue": "石巻市民球場",
+      "venue": "利府町中央公園野球場",
       "teams": [
         {
-          "display": "名取北",
-          "score": 7,
-          "won": true,
-          "name": "名取北高校",
-          "slug": "natorikita"
+          "display": "古川工業",
+          "score": 0,
+          "won": false,
+          "name": "古川工業高校",
+          "slug": "furukawakogyo"
         },
+        {
+          "display": "石巻",
+          "score": 8,
+          "won": true,
+          "name": "石巻高校",
+          "slug": "ishinomaki"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "気仙沼",
+          "score": 12,
+          "won": true,
+          "name": "気仙沼高校",
+          "slug": "kesennuma"
+        },
+        {
+          "display": "白石工業",
+          "score": 2,
+          "won": false,
+          "name": "白石工業高校",
+          "slug": "shiroishikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "3回戦",
+      "venue": "仙台市民球場",
+      "teams": [
         {
           "display": "仙台第二",
           "score": 0,
           "won": false,
           "name": "仙台第二高校",
           "slug": "sendaidaini"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "2回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "東北生文大",
-          "score": 1,
-          "won": false,
-          "name": "東北生文大",
-          "slug": null
-        },
-        {
-          "display": "石巻",
-          "score": 3,
-          "won": true,
-          "name": "石巻高校",
-          "slug": "ishinomaki"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "2回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "聖和学園",
-          "score": 1,
-          "won": false,
-          "name": "聖和学園",
-          "slug": null
-        },
-        {
-          "display": "仙台商業",
-          "score": 3,
-          "won": true,
-          "name": "仙台商業高校",
-          "slug": "sendaishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "2回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "宮城県工業",
-          "score": 10,
-          "won": false,
-          "name": "宮城県工業高校",
-          "slug": "miyagikenkogyo"
-        },
-        {
-          "display": "日本ウェルネス宮城",
-          "score": 13,
-          "won": true,
-          "name": "日本ウェルネス宮城",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "2回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "石巻工業",
-          "score": 4,
-          "won": true,
-          "name": "石巻工業高校",
-          "slug": "ishinomakikogyo"
-        },
-        {
-          "display": "仙台第一",
-          "score": 2,
-          "won": false,
-          "name": "仙台第一高校",
-          "slug": "sendaidaiichi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "2回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "気仙沼",
-          "score": 0,
-          "won": false,
-          "name": "気仙沼高校",
-          "slug": "kesennuma"
-        },
-        {
-          "display": "東北",
-          "score": 1,
-          "won": true,
-          "name": "東北",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "3回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "利府",
-          "score": 5,
-          "won": false,
-          "name": "利府高校",
-          "slug": "rifu"
-        },
-        {
-          "display": "東陵",
-          "score": 6,
-          "won": true,
-          "name": "東陵",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "3回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "名取北",
-          "score": 3,
-          "won": false,
-          "name": "名取北高校",
-          "slug": "natorikita"
-        },
-        {
-          "display": "石巻",
-          "score": 4,
-          "won": true,
-          "name": "石巻高校",
-          "slug": "ishinomaki"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "3回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "仙台商業",
-          "score": 4,
-          "won": true,
-          "name": "仙台商業高校",
-          "slug": "sendaishogyo"
-        },
-        {
-          "display": "日本ウェルネス宮城",
-          "score": 3,
-          "won": false,
-          "name": "日本ウェルネス宮城",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "3回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "石巻工業",
-          "score": 1,
-          "won": false,
-          "name": "石巻工業高校",
-          "slug": "ishinomakikogyo"
-        },
-        {
-          "display": "東北",
-          "score": 5,
-          "won": true,
-          "name": "東北",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-22",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "準々決勝",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "東陵",
-          "score": 3,
-          "won": true,
-          "name": "東陵",
-          "slug": null
-        },
-        {
-          "display": "石巻",
-          "score": 1,
-          "won": false,
-          "name": "石巻高校",
-          "slug": "ishinomaki"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-22",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "準々決勝",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "仙台商業",
-          "score": 3,
-          "won": false,
-          "name": "仙台商業高校",
-          "slug": "sendaishogyo"
-        },
-        {
-          "display": "東北",
-          "score": 7,
-          "won": true,
-          "name": "東北",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-27",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "準決勝",
-      "venue": "楽天モバイル最強パーク宮城",
-      "teams": [
-        {
-          "display": "東陵",
-          "score": 0,
-          "won": false,
-          "name": "東陵",
-          "slug": null
-        },
-        {
-          "display": "東北",
-          "score": 1,
-          "won": true,
-          "name": "東北",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "楽天モバイル最強パーク宮城",
-      "teams": [
-        {
-          "display": "仙台",
-          "score": 16,
-          "won": true,
-          "name": "仙台高校",
-          "slug": "sendai"
-        },
-        {
-          "display": "宮城広瀬",
-          "score": 1,
-          "won": false,
-          "name": "宮城広瀬高校",
-          "slug": "miyagihirose"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "気仙沼向洋・南三陸",
-          "score": 6,
-          "won": false,
-          "name": "気仙沼向洋・南三陸",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "登米総合産業",
-          "score": 9,
-          "won": true,
-          "name": "登米総合産業高校",
-          "slug": "tomesogosangyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "石巻好文館",
-          "score": 2,
-          "won": false,
-          "name": "石巻好文館高校",
-          "slug": "ishinomakikobunkan"
-        },
-        {
-          "display": "大河原産業",
-          "score": 14,
-          "won": true,
-          "name": "大河原産業高校",
-          "slug": "ogawarasangyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "白石工業",
-          "score": 4,
-          "won": false,
-          "name": "白石工業高校",
-          "slug": "shiroishikogyo"
-        },
-        {
-          "display": "柴田",
-          "score": 6,
-          "won": true,
-          "name": "柴田高校",
-          "slug": "shibata"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "松島",
-          "score": 1,
-          "won": false,
-          "name": "松島高校",
-          "slug": "matsushima"
         },
         {
           "display": "仙台第三",
-          "score": 14,
+          "score": 7,
           "won": true,
           "name": "仙台第三高校",
           "slug": "sendaidaisan"
@@ -17174,161 +17911,183 @@
       ]
     },
     {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "楽天モバイル最強パーク宮城",
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "3回戦",
+      "venue": "利府町中央公園野球場",
       "teams": [
         {
-          "display": "加美農業",
-          "score": 1,
-          "won": false,
-          "name": "加美農業高校",
-          "slug": "kaminogyo"
+          "display": "東北",
+          "score": 7,
+          "won": true,
+          "name": "東北",
+          "slug": null
         },
         {
-          "display": "角田",
-          "score": 8,
-          "won": true,
-          "name": "角田高校",
-          "slug": "kakuda"
+          "display": "利府",
+          "score": 6,
+          "won": false,
+          "name": "利府高校",
+          "slug": "rifu"
         }
       ]
     },
     {
-      "date": "2026-07-14",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
+      "date": "2025-09-16",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "3回戦",
       "venue": "石巻市民球場",
       "teams": [
         {
-          "display": "古川",
-          "score": 5,
+          "display": "仙台第一",
+          "score": 1,
           "won": false,
-          "name": "古川高校",
-          "slug": "furukawa"
+          "name": "仙台第一高校",
+          "slug": "sendaidaiichi"
         },
         {
+          "display": "ウェルネス宮城",
+          "score": 4,
+          "won": true,
+          "name": "ウェルネス宮城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-16",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "3回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "石巻",
+          "score": 0,
+          "won": false,
+          "name": "石巻高校",
+          "slug": "ishinomaki"
+        },
+        {
+          "display": "気仙沼",
+          "score": 2,
+          "won": true,
+          "name": "気仙沼高校",
+          "slug": "kesennuma"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準々決勝",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "仙台第三",
+          "score": 3,
+          "won": false,
+          "name": "仙台第三高校",
+          "slug": "sendaidaisan"
+        },
+        {
+          "display": "東北",
+          "score": 7,
+          "won": true,
+          "name": "東北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-19",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準々決勝",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "ウェルネス宮城",
+          "score": 6,
+          "won": false,
+          "name": "ウェルネス宮城",
+          "slug": null
+        },
+        {
+          "display": "気仙沼",
+          "score": 7,
+          "won": true,
+          "name": "気仙沼高校",
+          "slug": "kesennuma"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準決勝",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "東北",
+          "score": 5,
+          "won": true,
+          "name": "東北",
+          "slug": null
+        },
+        {
+          "display": "気仙沼",
+          "score": 3,
+          "won": false,
+          "name": "気仙沼高校",
+          "slug": "kesennuma"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "角田",
+          "score": 2,
+          "won": false,
+          "name": "角田高校",
+          "slug": "kakuda"
+        },
+        {
+          "display": "仙台商業",
+          "score": 12,
+          "won": true,
+          "name": "仙台商業高校",
+          "slug": "sendaishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-12",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
           "display": "仙台東",
-          "score": 13,
+          "score": 6,
           "won": true,
           "name": "仙台東高校",
           "slug": "sendaihigashi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-14",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "石巻北・宮城水産・涌谷",
-          "score": 6,
-          "won": false,
-          "name": "石巻北・宮城水産・涌谷",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "白石",
-          "score": 14,
-          "won": true,
-          "name": "白石高校",
-          "slug": "shiroishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-13",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "仙台城南",
-          "score": 6,
-          "won": true,
-          "name": "仙台城南",
-          "slug": null
-        },
-        {
-          "display": "大崎中央",
-          "score": 5,
-          "won": false,
-          "name": "大崎中央",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-14",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "仙台南",
-          "score": 8,
-          "won": true,
-          "name": "仙台南高校",
-          "slug": "sendaiminami"
-        },
-        {
-          "display": "多賀城",
-          "score": 6,
-          "won": false,
-          "name": "多賀城高校",
-          "slug": "tagajo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-14",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "泉",
-          "score": 5,
-          "won": false,
-          "name": "泉高校",
-          "slug": "izumi"
-        },
-        {
-          "display": "宮城県農業",
-          "score": 8,
-          "won": true,
-          "name": "宮城県農業高校",
-          "slug": "miyagikennogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-14",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "1回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "塩釜",
-          "score": 11,
-          "won": true,
-          "name": "塩釜高校",
-          "slug": "shiogama"
         },
         {
           "display": "石巻西",
-          "score": 0,
+          "score": 4,
           "won": false,
           "name": "石巻西高校",
           "slug": "ishinomakinishi"
@@ -17336,218 +18095,126 @@
       ]
     },
     {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
       "round": "2回戦",
       "venue": "仙台市民球場",
       "teams": [
         {
           "display": "仙台育英",
-          "score": 21,
+          "score": 13,
           "won": true,
           "name": "仙台育英",
           "slug": null
         },
         {
-          "display": "仙台",
+          "display": "仙台商業",
           "score": 0,
           "won": false,
-          "name": "仙台高校",
-          "slug": "sendai"
+          "name": "仙台商業高校",
+          "slug": "sendaishogyo"
         }
       ]
     },
     {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "2回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "登米総合産業",
-          "score": 15,
-          "won": true,
-          "name": "登米総合産業高校",
-          "slug": "tomesogosangyo"
-        },
-        {
-          "display": "大河原産業",
-          "score": 11,
-          "won": false,
-          "name": "大河原産業高校",
-          "slug": "ogawarasangyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "2回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "柴田",
-          "score": 6,
-          "won": true,
-          "name": "柴田高校",
-          "slug": "shibata"
-        },
-        {
-          "display": "仙台第三",
-          "score": 3,
-          "won": false,
-          "name": "仙台第三高校",
-          "slug": "sendaidaisan"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-15",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "2回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "角田",
-          "score": 1,
-          "won": false,
-          "name": "角田高校",
-          "slug": "kakuda"
-        },
-        {
-          "display": "古川学園",
-          "score": 6,
-          "won": true,
-          "name": "古川学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-17",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "2回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "東北学院",
-          "score": 9,
-          "won": true,
-          "name": "東北学院",
-          "slug": null
-        },
-        {
-          "display": "仙台東",
-          "score": 1,
-          "won": false,
-          "name": "仙台東高校",
-          "slug": "sendaihigashi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-17",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "2回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "白石",
-          "score": 4,
-          "won": false,
-          "name": "白石高校",
-          "slug": "shiroishi"
-        },
-        {
-          "display": "仙台城南",
-          "score": 6,
-          "won": true,
-          "name": "仙台城南",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-17",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
       "round": "2回戦",
       "venue": "利府町中央公園野球場",
       "teams": [
         {
           "display": "仙台南",
-          "score": 4,
+          "score": 2,
           "won": false,
           "name": "仙台南高校",
           "slug": "sendaiminami"
         },
         {
-          "display": "宮城県農業",
-          "score": 7,
+          "display": "古川学園",
+          "score": 9,
           "won": true,
-          "name": "宮城県農業高校",
-          "slug": "miyagikennogyo"
+          "name": "古川学園",
+          "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-17",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
       "round": "2回戦",
-      "venue": "石巻市民球場",
+      "venue": "鹿島台中央野球場",
       "teams": [
         {
-          "display": "塩釜",
-          "score": 0,
-          "won": false,
-          "name": "塩釜高校",
-          "slug": "shiogama"
+          "display": "東北学院",
+          "score": 3,
+          "won": true,
+          "name": "東北学院",
+          "slug": null
         },
         {
-          "display": "東北学院榴ケ岡",
-          "score": 2,
-          "won": true,
-          "name": "東北学院榴ケ岡",
-          "slug": null
+          "display": "泉館山",
+          "score": 1,
+          "won": false,
+          "name": "泉館山高校",
+          "slug": "izumitateyama"
         }
       ]
     },
     {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "3回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "仙台育英",
-          "score": 22,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        },
-        {
-          "display": "登米総合産業",
-          "score": 0,
-          "won": false,
-          "name": "登米総合産業高校",
-          "slug": "tomesogosangyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-18",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "3回戦",
+      "date": "2025-09-14",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
       "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "東北生文大",
+          "score": 8,
+          "won": false,
+          "name": "東北生文大",
+          "slug": null
+        },
+        {
+          "display": "大崎中央",
+          "score": 9,
+          "won": true,
+          "name": "大崎中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "名取北",
+          "score": 10,
+          "won": true,
+          "name": "名取北高校",
+          "slug": "natorikita"
+        },
+        {
+          "display": "東陵",
+          "score": 9,
+          "won": false,
+          "name": "東陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "鹿島台中央野球場",
       "teams": [
         {
           "display": "柴田",
@@ -17557,54 +18224,31 @@
           "slug": "shibata"
         },
         {
-          "display": "古川学園",
-          "score": 2,
-          "won": true,
-          "name": "古川学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "3回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "東北学院",
+          "display": "白石",
           "score": 4,
-          "won": false,
-          "name": "東北学院",
-          "slug": null
-        },
-        {
-          "display": "仙台城南",
-          "score": 8,
           "won": true,
-          "name": "仙台城南",
-          "slug": null
+          "name": "白石高校",
+          "slug": "shiroishi"
         }
       ]
     },
     {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "3回戦",
-      "venue": "石巻市民球場",
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "鹿島台中央野球場",
       "teams": [
         {
-          "display": "宮城県農業",
-          "score": 1,
+          "display": "佐沼",
+          "score": 2,
           "won": false,
-          "name": "宮城県農業高校",
-          "slug": "miyagikennogyo"
+          "name": "佐沼高校",
+          "slug": "sanuma"
         },
         {
           "display": "東北学院榴ケ岡",
-          "score": 6,
+          "score": 3,
           "won": true,
           "name": "東北学院榴ケ岡",
           "slug": null
@@ -17612,22 +18256,45 @@
       ]
     },
     {
-      "date": "2026-07-22",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "準々決勝",
-      "venue": "石巻市民球場",
+      "date": "2025-09-15",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "仙台東",
+          "score": 0,
+          "won": false,
+          "name": "仙台東高校",
+          "slug": "sendaihigashi"
+        },
+        {
+          "display": "塩釜",
+          "score": 5,
+          "won": true,
+          "name": "塩釜高校",
+          "slug": "shiogama"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-16",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "3回戦",
+      "venue": "仙台市民球場",
       "teams": [
         {
           "display": "仙台育英",
-          "score": 5,
+          "score": 15,
           "won": true,
           "name": "仙台育英",
           "slug": null
         },
         {
           "display": "古川学園",
-          "score": 1,
+          "score": 2,
           "won": false,
           "name": "古川学園",
           "slug": null
@@ -17635,34 +18302,80 @@
       ]
     },
     {
-      "date": "2026-07-22",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "準々決勝",
-      "venue": "仙台市民球場",
+      "date": "2025-09-16",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "3回戦",
+      "venue": "石巻市民球場",
       "teams": [
         {
-          "display": "仙台城南",
-          "score": 1,
-          "won": false,
-          "name": "仙台城南",
+          "display": "東北学院",
+          "score": 3,
+          "won": true,
+          "name": "東北学院",
           "slug": null
         },
         {
-          "display": "東北学院榴ケ岡",
-          "score": 4,
-          "won": true,
-          "name": "東北学院榴ケ岡",
+          "display": "大崎中央",
+          "score": 2,
+          "won": false,
+          "name": "大崎中央",
           "slug": null
         }
       ]
     },
     {
-      "date": "2026-07-27",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "準決勝",
-      "venue": "楽天モバイル最強パーク宮城",
+      "date": "2025-09-16",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "3回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "名取北",
+          "score": 10,
+          "won": true,
+          "name": "名取北高校",
+          "slug": "natorikita"
+        },
+        {
+          "display": "白石",
+          "score": 3,
+          "won": false,
+          "name": "白石高校",
+          "slug": "shiroishi"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-16",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "3回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "東北学院榴ケ岡",
+          "score": 3,
+          "won": true,
+          "name": "東北学院榴ケ岡",
+          "slug": null
+        },
+        {
+          "display": "塩釜",
+          "score": 2,
+          "won": false,
+          "name": "塩釜高校",
+          "slug": "shiogama"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-18",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準々決勝",
+      "venue": "石巻市民球場",
       "teams": [
         {
           "display": "仙台育英",
@@ -17672,8 +18385,31 @@
           "slug": null
         },
         {
-          "display": "東北学院榴ケ岡",
+          "display": "東北学院",
           "score": 0,
+          "won": false,
+          "name": "東北学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2025-09-18",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準々決勝",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "名取北",
+          "score": 9,
+          "won": true,
+          "name": "名取北高校",
+          "slug": "natorikita"
+        },
+        {
+          "display": "東北学院榴ケ岡",
+          "score": 2,
           "won": false,
           "name": "東北学院榴ケ岡",
           "slug": null
@@ -17681,15 +18417,38 @@
       ]
     },
     {
-      "date": "2026-07-28",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 宮城大会",
-      "round": "決勝",
-      "venue": "石巻市民球場",
+      "date": "2025-09-21",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "準決勝",
+      "venue": "仙台市民球場",
       "teams": [
         {
           "display": "仙台育英",
-          "score": 4,
+          "score": 11,
+          "won": true,
+          "name": "仙台育英",
+          "slug": null
+        },
+        {
+          "display": "名取北",
+          "score": 1,
+          "won": false,
+          "name": "名取北高校",
+          "slug": "natorikita"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "season": "autumn",
+      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
+      "round": "決勝",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "仙台育英",
+          "score": 2,
           "won": true,
           "name": "仙台育英",
           "slug": null
@@ -23551,765 +24310,6 @@
           "score": 8,
           "won": true,
           "name": "仙台育英",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "仙台第二",
-          "score": 3,
-          "won": true,
-          "name": "仙台第二高校",
-          "slug": "sendaidaini"
-        },
-        {
-          "display": "加美農業",
-          "score": 1,
-          "won": false,
-          "name": "加美農業高校",
-          "slug": "kaminogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "仙台城南",
-          "score": 9,
-          "won": false,
-          "name": "仙台城南",
-          "slug": null
-        },
-        {
-          "display": "仙台第三",
-          "score": 11,
-          "won": true,
-          "name": "仙台第三高校",
-          "slug": "sendaidaisan"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "富谷",
-          "score": 0,
-          "won": false,
-          "name": "富谷高校",
-          "slug": "tomiya"
-        },
-        {
-          "display": "東北",
-          "score": 10,
-          "won": true,
-          "name": "東北",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "宮城県農業",
-          "score": 2,
-          "won": false,
-          "name": "宮城県農業高校",
-          "slug": "miyagikennogyo"
-        },
-        {
-          "display": "利府",
-          "score": 4,
-          "won": true,
-          "name": "利府高校",
-          "slug": "rifu"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "石巻工業",
-          "score": 0,
-          "won": false,
-          "name": "石巻工業高校",
-          "slug": "ishinomakikogyo"
-        },
-        {
-          "display": "仙台第一",
-          "score": 7,
-          "won": true,
-          "name": "仙台第一高校",
-          "slug": "sendaidaiichi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "鹿島台中央野球場",
-      "teams": [
-        {
-          "display": "多賀城",
-          "score": 0,
-          "won": false,
-          "name": "多賀城高校",
-          "slug": "tagajo"
-        },
-        {
-          "display": "ウェルネス宮城",
-          "score": 7,
-          "won": true,
-          "name": "ウェルネス宮城",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "古川工業",
-          "score": 0,
-          "won": false,
-          "name": "古川工業高校",
-          "slug": "furukawakogyo"
-        },
-        {
-          "display": "石巻",
-          "score": 8,
-          "won": true,
-          "name": "石巻高校",
-          "slug": "ishinomaki"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "気仙沼",
-          "score": 12,
-          "won": true,
-          "name": "気仙沼高校",
-          "slug": "kesennuma"
-        },
-        {
-          "display": "白石工業",
-          "score": 2,
-          "won": false,
-          "name": "白石工業高校",
-          "slug": "shiroishikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-15",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "3回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "仙台第二",
-          "score": 0,
-          "won": false,
-          "name": "仙台第二高校",
-          "slug": "sendaidaini"
-        },
-        {
-          "display": "仙台第三",
-          "score": 7,
-          "won": true,
-          "name": "仙台第三高校",
-          "slug": "sendaidaisan"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-15",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "3回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "東北",
-          "score": 7,
-          "won": true,
-          "name": "東北",
-          "slug": null
-        },
-        {
-          "display": "利府",
-          "score": 6,
-          "won": false,
-          "name": "利府高校",
-          "slug": "rifu"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-16",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "3回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "仙台第一",
-          "score": 1,
-          "won": false,
-          "name": "仙台第一高校",
-          "slug": "sendaidaiichi"
-        },
-        {
-          "display": "ウェルネス宮城",
-          "score": 4,
-          "won": true,
-          "name": "ウェルネス宮城",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-16",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "3回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "石巻",
-          "score": 0,
-          "won": false,
-          "name": "石巻高校",
-          "slug": "ishinomaki"
-        },
-        {
-          "display": "気仙沼",
-          "score": 2,
-          "won": true,
-          "name": "気仙沼高校",
-          "slug": "kesennuma"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-19",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準々決勝",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "仙台第三",
-          "score": 3,
-          "won": false,
-          "name": "仙台第三高校",
-          "slug": "sendaidaisan"
-        },
-        {
-          "display": "東北",
-          "score": 7,
-          "won": true,
-          "name": "東北",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-19",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準々決勝",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "ウェルネス宮城",
-          "score": 6,
-          "won": false,
-          "name": "ウェルネス宮城",
-          "slug": null
-        },
-        {
-          "display": "気仙沼",
-          "score": 7,
-          "won": true,
-          "name": "気仙沼高校",
-          "slug": "kesennuma"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-21",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準決勝",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "東北",
-          "score": 5,
-          "won": true,
-          "name": "東北",
-          "slug": null
-        },
-        {
-          "display": "気仙沼",
-          "score": 3,
-          "won": false,
-          "name": "気仙沼高校",
-          "slug": "kesennuma"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": "鹿島台中央野球場",
-      "teams": [
-        {
-          "display": "角田",
-          "score": 2,
-          "won": false,
-          "name": "角田高校",
-          "slug": "kakuda"
-        },
-        {
-          "display": "仙台商業",
-          "score": 12,
-          "won": true,
-          "name": "仙台商業高校",
-          "slug": "sendaishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-12",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": "鹿島台中央野球場",
-      "teams": [
-        {
-          "display": "仙台東",
-          "score": 6,
-          "won": true,
-          "name": "仙台東高校",
-          "slug": "sendaihigashi"
-        },
-        {
-          "display": "石巻西",
-          "score": 4,
-          "won": false,
-          "name": "石巻西高校",
-          "slug": "ishinomakinishi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-15",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "仙台育英",
-          "score": 13,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        },
-        {
-          "display": "仙台商業",
-          "score": 0,
-          "won": false,
-          "name": "仙台商業高校",
-          "slug": "sendaishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "仙台南",
-          "score": 2,
-          "won": false,
-          "name": "仙台南高校",
-          "slug": "sendaiminami"
-        },
-        {
-          "display": "古川学園",
-          "score": 9,
-          "won": true,
-          "name": "古川学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "鹿島台中央野球場",
-      "teams": [
-        {
-          "display": "東北学院",
-          "score": 3,
-          "won": true,
-          "name": "東北学院",
-          "slug": null
-        },
-        {
-          "display": "泉館山",
-          "score": 1,
-          "won": false,
-          "name": "泉館山高校",
-          "slug": "izumitateyama"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-14",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "東北生文大",
-          "score": 8,
-          "won": false,
-          "name": "東北生文大",
-          "slug": null
-        },
-        {
-          "display": "大崎中央",
-          "score": 9,
-          "won": true,
-          "name": "大崎中央",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-15",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "名取北",
-          "score": 10,
-          "won": true,
-          "name": "名取北高校",
-          "slug": "natorikita"
-        },
-        {
-          "display": "東陵",
-          "score": 9,
-          "won": false,
-          "name": "東陵",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-15",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "鹿島台中央野球場",
-      "teams": [
-        {
-          "display": "柴田",
-          "score": 0,
-          "won": false,
-          "name": "柴田高校",
-          "slug": "shibata"
-        },
-        {
-          "display": "白石",
-          "score": 4,
-          "won": true,
-          "name": "白石高校",
-          "slug": "shiroishi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-15",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "鹿島台中央野球場",
-      "teams": [
-        {
-          "display": "佐沼",
-          "score": 2,
-          "won": false,
-          "name": "佐沼高校",
-          "slug": "sanuma"
-        },
-        {
-          "display": "東北学院榴ケ岡",
-          "score": 3,
-          "won": true,
-          "name": "東北学院榴ケ岡",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-15",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "2回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "仙台東",
-          "score": 0,
-          "won": false,
-          "name": "仙台東高校",
-          "slug": "sendaihigashi"
-        },
-        {
-          "display": "塩釜",
-          "score": 5,
-          "won": true,
-          "name": "塩釜高校",
-          "slug": "shiogama"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-16",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "3回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "仙台育英",
-          "score": 15,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        },
-        {
-          "display": "古川学園",
-          "score": 2,
-          "won": false,
-          "name": "古川学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-16",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "3回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "東北学院",
-          "score": 3,
-          "won": true,
-          "name": "東北学院",
-          "slug": null
-        },
-        {
-          "display": "大崎中央",
-          "score": 2,
-          "won": false,
-          "name": "大崎中央",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-16",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "3回戦",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "名取北",
-          "score": 10,
-          "won": true,
-          "name": "名取北高校",
-          "slug": "natorikita"
-        },
-        {
-          "display": "白石",
-          "score": 3,
-          "won": false,
-          "name": "白石高校",
-          "slug": "shiroishi"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-16",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "3回戦",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "東北学院榴ケ岡",
-          "score": 3,
-          "won": true,
-          "name": "東北学院榴ケ岡",
-          "slug": null
-        },
-        {
-          "display": "塩釜",
-          "score": 2,
-          "won": false,
-          "name": "塩釜高校",
-          "slug": "shiogama"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-18",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準々決勝",
-      "venue": "石巻市民球場",
-      "teams": [
-        {
-          "display": "仙台育英",
-          "score": 7,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        },
-        {
-          "display": "東北学院",
-          "score": 0,
-          "won": false,
-          "name": "東北学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-18",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準々決勝",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "名取北",
-          "score": 9,
-          "won": true,
-          "name": "名取北高校",
-          "slug": "natorikita"
-        },
-        {
-          "display": "東北学院榴ケ岡",
-          "score": 2,
-          "won": false,
-          "name": "東北学院榴ケ岡",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2025-09-21",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "準決勝",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "仙台育英",
-          "score": 11,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        },
-        {
-          "display": "名取北",
-          "score": 1,
-          "won": false,
-          "name": "名取北高校",
-          "slug": "natorikita"
-        }
-      ]
-    },
-    {
-      "date": "2025-09-23",
-      "season": "autumn",
-      "tournament": "2025年 秋季東北地区高等学校野球 宮城県大会",
-      "round": "決勝",
-      "venue": "仙台市民球場",
-      "teams": [
-        {
-          "display": "仙台育英",
-          "score": 2,
-          "won": true,
-          "name": "仙台育英",
-          "slug": null
-        },
-        {
-          "display": "東北",
-          "score": 1,
-          "won": false,
-          "name": "東北",
           "slug": null
         }
       ]

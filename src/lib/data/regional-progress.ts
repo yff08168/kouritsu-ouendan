@@ -5,8 +5,8 @@ import type { RegionalProgressBoard } from "@/lib/regional-results";
 
 export const REGIONAL_PROGRESS: RegionalProgressBoard = {
   "season": "autumn",
-  "latestDate": "2026-08-31",
-  "generatedAt": "2026-09-04T06:59:09Z",
+  "latestDate": "2026-09-06",
+  "generatedAt": "2026-09-06T04:42:44Z",
   "districts": [
     {
       "slug": "nagano",
@@ -14,16 +14,23 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "第155回 北信越地区高等学校野球長野県大会 南信予選会",
-      "games": 9,
-      "publicGames": 9,
-      "round": "2回戦",
-      "latestDate": "2026-08-31",
+      "games": 17,
+      "publicGames": 16,
+      "round": "準々決勝",
+      "latestDate": "2026-09-06",
       "champion": null
     },
     {
       "slug": "kanagawa",
       "district": "神奈川",
-      "state": "pending"
+      "state": "playing",
+      "season": "autumn",
+      "tournament": "令和8年度神奈川県高校野球秋季県大会",
+      "games": 24,
+      "publicGames": 21,
+      "round": "2回戦",
+      "latestDate": "2026-09-05",
+      "champion": null
     },
     {
       "slug": "saitama",
@@ -33,7 +40,14 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "yamanashi",
       "district": "山梨",
-      "state": "pending"
+      "state": "playing",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高校野球山梨県大会",
+      "games": 3,
+      "publicGames": 3,
+      "round": null,
+      "latestDate": "2026-09-05",
+      "champion": null
     },
     {
       "slug": "kumamoto",
@@ -56,10 +70,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",
-      "games": 6,
-      "publicGames": 6,
+      "games": 11,
+      "publicGames": 11,
       "round": null,
-      "latestDate": "2026-08-31",
+      "latestDate": "2026-09-05",
       "champion": null
     },
     {
@@ -83,10 +97,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "第79回秋季東北地区高等学校野球山形県大会 シード決定ブロック大会",
-      "games": 19,
-      "publicGames": 13,
+      "games": 26,
+      "publicGames": 18,
       "round": "2回戦",
-      "latestDate": "2026-08-31",
+      "latestDate": "2026-09-01",
       "champion": null
     },
     {
@@ -95,10 +109,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
-      "games": 99,
-      "publicGames": 91,
+      "games": 101,
+      "publicGames": 93,
       "round": "代表決定戦",
-      "latestDate": "2026-08-30",
+      "latestDate": "2026-09-05",
       "champion": null
     },
     {
@@ -126,11 +140,11 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "茨城",
       "state": "playing",
       "season": "autumn",
-      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 一次予選",
-      "games": 61,
-      "publicGames": 54,
-      "round": "代表決定戦",
-      "latestDate": "2026-08-23",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 二次予選",
+      "games": 20,
+      "publicGames": 19,
+      "round": "準決勝",
+      "latestDate": "2026-09-06",
       "champion": null
     },
     {
@@ -226,7 +240,14 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "okayama",
       "district": "岡山",
-      "state": "pending"
+      "state": "playing",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "games": 68,
+      "publicGames": 55,
+      "round": null,
+      "latestDate": "2026-09-06",
+      "champion": null
     },
     {
       "slug": "mie",
@@ -246,6 +267,56 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "toyama",
       "district": "富山",
+      "state": "pending"
+    },
+    {
+      "slug": "aomori",
+      "district": "青森",
+      "state": "pending"
+    },
+    {
+      "slug": "miyagi",
+      "district": "宮城",
+      "state": "pending"
+    },
+    {
+      "slug": "akita",
+      "district": "秋田",
+      "state": "pending"
+    },
+    {
+      "slug": "tottori",
+      "district": "鳥取",
+      "state": "pending"
+    },
+    {
+      "slug": "kita-hokkaido",
+      "district": "北北海道",
+      "state": "pending"
+    },
+    {
+      "slug": "minami-hokkaido",
+      "district": "南北海道",
+      "state": "pending"
+    },
+    {
+      "slug": "higashi-tokyo",
+      "district": "東東京",
+      "state": "pending"
+    },
+    {
+      "slug": "nishi-tokyo",
+      "district": "西東京",
+      "state": "pending"
+    },
+    {
+      "slug": "hokkaido",
+      "district": "北海道",
+      "state": "pending"
+    },
+    {
+      "slug": "tokyo",
+      "district": "東京",
       "state": "pending"
     }
   ]

@@ -84,12 +84,22 @@ export default async function LivePrefecturePage({
   const pref = livePrefectures().find((p) => p.slug === slug);
   if (!pref) notFound();
 
-  const board = await fetchLiveBoard(slug);
   /*
-    ★**学校マスタは公立だけ。** 引けた校名に印を付けるために使う。
-    ★**取れなくても速報は出す**（印が付かないだけ）。出典が生きていることのほうが大事。
+    ★★★**2つの待ちを直列にしないこと**（2026-09-06。運営者から「遷移に時間がかかる」）。
+    **出典の取得**（〜0.3秒。詰まると8秒で打ち切り）と
+    **学校マスタの校名索引**（Supabase に4リクエスト。〜1.5秒）は**互いに関係が無い。**
+    ★**直列に `await` すると足し算になる。** 並べれば長いほうだけで済む。
+    ★**このページは `revalidate = 60` で、しかも47県ぶんある** ——
+    **初めて開かれた県は作り置きが無いので、この待ち時間がそのまま画面の遅さになる。**
   */
-  const index = await getSchoolNameIndex("koshien").catch(() => null);
+  const [board, index] = await Promise.all([
+    fetchLiveBoard(slug),
+    /*
+      ★**学校マスタは公立だけ。** 引けた校名に印を付けるために使う。
+      ★**取れなくても速報は出す**（印が付かないだけ）。出典が生きていることのほうが大事。
+    */
+    getSchoolNameIndex("koshien").catch(() => null),
+  ]);
 
   /*
     ★**県のページがある地区だけリンクする。**

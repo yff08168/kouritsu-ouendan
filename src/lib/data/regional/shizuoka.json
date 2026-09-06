@@ -52776,6 +52776,52 @@
       ]
     },
     {
+      "date": "2026-09-05",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "venue": "静岡県営愛鷹球場",
+      "teams": [
+        {
+          "display": "三島南",
+          "score": 0,
+          "won": false,
+          "name": "三島南高校",
+          "slug": "mishimaminami"
+        },
+        {
+          "display": "加藤学園",
+          "score": 9,
+          "won": true,
+          "name": "加藤学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会 予選",
+      "round": "1回戦",
+      "venue": "静岡県営愛鷹球場",
+      "teams": [
+        {
+          "display": "飛龍",
+          "score": 9,
+          "won": true,
+          "name": "飛龍",
+          "slug": null
+        },
+        {
+          "display": "三島北",
+          "score": 5,
+          "won": false,
+          "name": "三島北高校",
+          "slug": "mishimakita"
+        }
+      ]
+    },
+    {
       "date": "2025-08-16",
       "season": "autumn",
       "tournament": "第78回秋季東海地区高等学校野球静岡県大会 予選",

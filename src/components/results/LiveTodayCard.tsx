@@ -40,10 +40,13 @@ export function LiveTodayCard({ districts }: { districts: LiveDistrict[] }) {
           <li key={d.slug}>
             <Link
               href={`/live/${d.slug}`}
-              className="inline-flex items-center gap-1.5 rounded-full border border-line px-3 py-1.5 text-sm font-bold text-navy-800 hover:bg-navy-50"
+              className="inline-flex items-center rounded-full border border-line px-3 py-1.5 text-sm font-bold text-navy-800 hover:bg-navy-50"
             >
-              {/* ★**点は飾り。** 読み上げからは外す（県名だけで足りる） */}
-              <span className="size-1.5 rounded-full bg-accent-500" aria-hidden />
+              {/*
+                ★★**点は置かない**（2026-09-06。運営者の指示で外した）。
+                **どの県にも同じ点が付くので、何も区別していない** ——
+                「速報中の都道府県」という見出しがすでにそれを言っている。
+              */}
               {d.name}
             </Link>
           </li>

@@ -173,14 +173,43 @@ function revalidateSeconds(): number {
  * ★**落ちても例外を投げない** —— 速報が取れないことでページ全体を落とさない
  * （このサイトの他の中身は生成物なので、出典が止まっても出せる）。
  */
+const TIMEOUT_MS = 8000;
+
 async function get(url: string, revalidate = revalidateSeconds()): Promise<string | null> {
   try {
-    const res = await fetch(url, {
-      headers: { "User-Agent": "kouritsu-ouendan/1.0 (+https://kouritsu-ouendan.com)" },
-      next: { revalidate },
-      signal: AbortSignal.timeout(8000),
-    });
-    if (!res.ok) return null;
+    /*
+      ★★★**`cache: "force-cache"` を書かないと1つもキャッシュされない**
+      （2026-09-06。**本番で実際にそうなっていた**）。
+
+      **この版の Next は「キャッシュは opt-in」** ——
+      `node_modules/next/dist/docs/01-app/02-guides/caching-without-cache-components.md` に
+      **「By default, fetch requests are not cached」**と書いてある。
+      ★**`next: { revalidate }` だけでは opt-in にならない**（間隔を言っているだけ）。
+
+      ★★**その結果、設計していた負荷の抑えがまったく効いていなかった** ——
+      「訪問者が何人いても取得は60秒に1回」のはずが、**開いた人ごとに出典を叩いていた。**
+      ★**ページもキャッシュされない**（`x-vercel-cache: MISS` / `cache-control: no-store`）ので、
+      **クリックしてから表示まで毎回1〜2秒待たされる**（運営者の「遷移に時間がかかる」）。
+
+      ------------------------------------------------------------------
+      ★★★**打ち切りに `signal` を使わないこと。**
+
+      `fetch` の API リファレンスに **「To opt out (of memoization), pass an AbortController signal」**
+      と書いてある —— **打ち切りのつもりで渡した `signal` が、キャッシュとメモ化を両方外していた。**
+      ★**メモ化が外れると `generateMetadata` と本文で2回叩く**（1回で済むはずのものが2回）。
+      ★**そこで `Promise.race` で待つ**（`fetch` 自体には何も足さない）。
+      **間に合わなかった回は null を返すが、取得そのものは続いてキャッシュに入る**ので、
+      **次に開いた人はそれを読める。**
+    */
+    const res = await Promise.race([
+      fetch(url, {
+        headers: { "User-Agent": "kouritsu-ouendan/1.0 (+https://kouritsu-ouendan.com)" },
+        cache: "force-cache",
+        next: { revalidate },
+      }),
+      new Promise<null>((resolve) => setTimeout(() => resolve(null), TIMEOUT_MS)),
+    ]);
+    if (!res || !res.ok) return null;
     return await res.text();
   } catch {
     return null;

@@ -17185,6 +17185,34 @@
       "season": "autumn",
       "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
       "round": null,
+      "venue": "かさおか古代の丘スポーツ公園野球場",
+      "teams": [
+        {
+          "display": "玉野・笠工",
+          "score": 7,
+          "won": true,
+          "name": "玉野・笠工",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "倉敷南",
+          "score": 3,
+          "won": false,
+          "name": "倉敷南高校",
+          "slug": "kurashikiminami"
+        }
+      ],
+      "source": {
+        "name": "岡山県高等学校野球連盟",
+        "url": "https://www.okayama-hbf.com/"
+      }
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
       "venue": "なりわ運動公園野球場",
       "teams": [
         {
@@ -17212,21 +17240,21 @@
       "season": "autumn",
       "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
       "round": null,
-      "venue": "就実グラウンド",
+      "venue": "なりわ運動公園野球場",
       "teams": [
         {
-          "display": "就実",
-          "score": 2,
-          "won": false,
-          "name": "就実",
-          "slug": null
+          "display": "高梁",
+          "score": 8,
+          "won": true,
+          "name": "高梁高校",
+          "slug": "takahashi"
         },
         {
-          "display": "理大附",
-          "score": 3,
-          "won": true,
-          "name": "理大附",
-          "slug": null
+          "display": "玉野商工",
+          "score": 1,
+          "won": false,
+          "name": "玉野商工高校",
+          "slug": "tamanoshoko"
         }
       ],
       "source": {
@@ -17242,17 +17270,17 @@
       "venue": "就実グラウンド",
       "teams": [
         {
-          "display": "岡山吉備白陵",
-          "score": 0,
+          "display": "就実",
+          "score": 2,
           "won": false,
-          "name": "岡山吉備白陵",
+          "name": "就実",
           "slug": null
         },
         {
-          "display": "山陽学園高等学校",
-          "score": 0,
-          "won": false,
-          "name": "山陽学園高等学校",
+          "display": "理大附",
+          "score": 3,
+          "won": true,
+          "name": "理大附",
           "slug": null
         }
       ],
@@ -17293,6 +17321,33 @@
       "season": "autumn",
       "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
       "round": null,
+      "venue": "瀬戸町総合運動公園球場",
+      "teams": [
+        {
+          "display": "一宮",
+          "score": 3,
+          "won": false,
+          "name": "岡山一宮高校",
+          "slug": "okayamaichinomiya"
+        },
+        {
+          "display": "岡山東商",
+          "score": 6,
+          "won": true,
+          "name": "岡山東商業高校",
+          "slug": "okayamahigashishogyo"
+        }
+      ],
+      "source": {
+        "name": "岡山県高等学校野球連盟",
+        "url": "https://www.okayama-hbf.com/"
+      }
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
       "venue": "美咲エイコンスタジアム",
       "teams": [
         {
@@ -17320,6 +17375,33 @@
       "season": "autumn",
       "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
       "round": null,
+      "venue": "美咲エイコンスタジアム",
+      "teams": [
+        {
+          "display": "林野",
+          "score": 1,
+          "won": false,
+          "name": "林野高校",
+          "slug": "hayashino"
+        },
+        {
+          "display": "勝山",
+          "score": 10,
+          "won": true,
+          "name": "勝山高校",
+          "slug": "okayama-katsuyama"
+        }
+      ],
+      "source": {
+        "name": "岡山県高等学校野球連盟",
+        "url": "https://www.okayama-hbf.com/"
+      }
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
       "venue": "邑久スポーツ公園野球場",
       "teams": [
         {
@@ -17335,6 +17417,34 @@
           "won": false,
           "name": "岡山大安寺中等教育学校",
           "slug": "okayamadaianji"
+        }
+      ],
+      "source": {
+        "name": "岡山県高等学校野球連盟",
+        "url": "https://www.okayama-hbf.com/"
+      }
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": null,
+      "venue": "邑久スポーツ公園野球場",
+      "teams": [
+        {
+          "display": "操山",
+          "score": 17,
+          "won": true,
+          "name": "岡山操山高校",
+          "slug": "okayamasozan"
+        },
+        {
+          "display": "御津・鷲羽・緑陽",
+          "score": 8,
+          "won": false,
+          "name": "御津・鷲羽・緑陽",
+          "slug": null,
+          "combined": true
         }
       ],
       "source": {

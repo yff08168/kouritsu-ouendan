@@ -100,7 +100,7 @@ function readTexts(html) {
  * @param opts.district 警告に出す県名
  * @returns null（形が違って読めない）または `{ slots, games, champion, printedChampion }`
  */
-export function readHsbBracket(html, { district = "", blocks = false } = {}) {
+export function readHsbBracket(html, { district = "", blocks = false, partial = false } = {}) {
   const bail = (why) => {
     console.log(`  ⚠️ ${district}: トーナメント表を読めない（${why}）。1試合も出さない`);
     return null;
@@ -248,6 +248,24 @@ export function readHsbBracket(html, { district = "", blocks = false } = {}) {
     }
   }
   if (!joins.length) return bail("連結線の組が1つも作れない");
+  /*
+    ★★★**紙には「まだ終わっていない試合の枝」も引いてある**（2026-09-06。開催中の大会）。
+
+    色が付くのは**終わった試合だけ**なので、`joins` から数えた帯は
+    **その日までに終わった回戦の数**にしかならない。
+    開催中の神奈川の秋季（81チーム・24試合）は、**1回戦・2回戦が
+    「準々決勝・準決勝」として出ていた**（回戦は画面に事実として出るので、これは嘘になる）。
+
+    ★**縦線の x はどの回戦にも最初から引いてある**ので、そこから数えれば正しい:
+
+        左 180(20本) 240(16) 300(8) 335(4) 370(2) 405(1)
+        右 810(16)   750(21) 690(8) 655(4) 620(2) 585(1)
+
+    ★**使うのは `partial` を渡されたときだけ** —— 終わった大会では
+    どちらから数えても同じ結果になるが、**三位決定戦のような別の小さな枝**が
+    帯として混じる紙があるので、**既定は今までどおり「終わった試合から数える」**。
+  */
+  const frameX = [...byX.keys()];
   /*
     ---- 3-b. 不戦勝の連結線 ----
     ★★★**不戦勝の縦線は色が分かれず1本で描かれる**（2026-09-04 に大阪で突き止めた）。
@@ -742,10 +760,19 @@ export function readHsbBracket(html, { district = "", blocks = false } = {}) {
       画面に「準々決勝が6試合・準決勝が3試合」と出ていた**（本当は 4・2）。
       ★**どの帯にも試合がある紙では、集合はまったく同じになる**（既存の県は1バイトも変わらない）。
     */
-    const bandsOf = (side) =>
-      [...new Set(bandRows.filter((g) => g.side === side).map((g) => g.roundX))].sort((a, b) =>
-        side === "L" ? a - b : b - a,
-      );
+    const bandsOf = (side) => {
+      const played = [...new Set(bandRows.filter((g) => g.side === side).map((g) => g.roundX))];
+      /*
+        ★**開催中の大会は骨格（全部の縦線）から数える**（上の `frameX` の注記）。
+        ★★**終わった試合の帯が骨格に無かったら、読み違えているので使わない** ——
+        黙って番号だけ変えるより、今までどおりの数え方に落ちるほうがよい。
+      */
+      const list =
+        partial && played.every((x) => frameX.some((f) => Math.abs(f - x) <= 1))
+          ? frameX.filter((x) => (x < center ? "L" : "R") === side)
+          : played;
+      return [...new Set(list)].sort((a, b) => (side === "L" ? a - b : b - a));
+    };
     const bands = { L: bandsOf("L"), R: bandsOf("R") };
     /*
       ★★**左右で回戦の数が1つ違う紙がある**（2026-09-02 その2。岐阜の第104回）。
@@ -887,5 +914,7 @@ export function readHsbBracket(html, { district = "", blocks = false } = {}) {
     /** ★**勝ち抜き表の外にある「順位決定戦」**（得点が無いので試合としては返さない） */
     placement,
     printedChampion: texts.find((t) => t.cls === "y_f18" && /優勝/.test(t.text))?.text ?? null,
+    /** ★**骨格から回戦を数えた**（開催中の大会。呼ぶ側は「チーム数 − 試合数」を求めない） */
+    partial,
   };
 }

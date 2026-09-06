@@ -7,7 +7,6 @@ import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { LeadText } from "@/components/common/LeadText";
 import {
-  LIVE_SOURCE,
   PHASE_LABEL,
   fetchLiveDistricts,
   livePrefectures,
@@ -129,12 +128,6 @@ export default async function LiveIndexPage() {
       <p className="mt-5 text-xs text-ink-faint">
         北海道と東京は県でひとまとめにしています。夏の大会だけ北北海道・南北海道、
         東東京・西東京に分かれます。
-      </p>
-      <p className="mt-2 text-xs text-ink-faint">
-        出典:{" "}
-        <a href={LIVE_SOURCE.url} className="underline" rel="noopener noreferrer" target="_blank">
-          {LIVE_SOURCE.name}
-        </a>
       </p>
     </Container>
   );

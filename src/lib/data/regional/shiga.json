@@ -16384,6 +16384,283 @@
       ]
     },
     {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "1回戦",
+      "venue": "ＨＰＬベースボールパーク",
+      "teams": [
+        {
+          "display": "水口東",
+          "score": 1,
+          "won": true,
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
+        },
+        {
+          "display": "滋賀学園",
+          "score": 0,
+          "won": false,
+          "name": "滋賀学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "1回戦",
+      "venue": "ＨＰＬベースボールパーク",
+      "teams": [
+        {
+          "display": "国際情報",
+          "score": 0,
+          "won": false,
+          "name": "国際情報高校",
+          "slug": "shiga-kokusaijoho"
+        },
+        {
+          "display": "大津商業",
+          "score": 21,
+          "won": true,
+          "name": "大津商業高校",
+          "slug": "otsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "1回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "伊吹",
+          "score": 4,
+          "won": true,
+          "name": "伊吹高校",
+          "slug": "ibuki"
+        },
+        {
+          "display": "虎姫",
+          "score": 3,
+          "won": false,
+          "name": "虎姫高校",
+          "slug": "torahime"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "1回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "石山",
+          "score": 1,
+          "won": false,
+          "name": "石山高校",
+          "slug": "ishiyama"
+        },
+        {
+          "display": "綾羽",
+          "score": 10,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北大津",
+          "score": 10,
+          "won": true,
+          "name": "北大津高校",
+          "slug": "kitaotsu"
+        },
+        {
+          "display": "日野",
+          "score": 2,
+          "won": false,
+          "name": "日野高校",
+          "slug": "shiga-hino"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "2回戦",
+      "venue": "ＨＰＬベースボールパーク",
+      "teams": [
+        {
+          "display": "湖南農業・石部・信楽",
+          "score": 0,
+          "won": false,
+          "name": "湖南農業・石部・信楽",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "立命館守山",
+          "score": 34,
+          "won": true,
+          "name": "立命館守山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "2回戦",
+      "venue": "ＨＰＬベースボールパーク",
+      "teams": [
+        {
+          "display": "比叡山",
+          "score": 15,
+          "won": true,
+          "name": "比叡山",
+          "slug": null
+        },
+        {
+          "display": "野洲",
+          "score": 1,
+          "won": false,
+          "name": "野洲高校",
+          "slug": "yasu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "2回戦",
+      "venue": "ＨＰＬベースボールパーク",
+      "teams": [
+        {
+          "display": "彦根翔西館",
+          "score": 2,
+          "won": true,
+          "name": "彦根翔西館高校",
+          "slug": "hikoneshosaikan"
+        },
+        {
+          "display": "瀬田工業",
+          "score": 0,
+          "won": false,
+          "name": "瀬田工業高校",
+          "slug": "setakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "草津",
+          "score": 5,
+          "won": false,
+          "name": "草津高校",
+          "slug": "kusatsu"
+        },
+        {
+          "display": "膳所",
+          "score": 7,
+          "won": true,
+          "name": "膳所高校",
+          "slug": "zeze"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "草津東",
+          "score": 1,
+          "won": false,
+          "name": "草津東高校",
+          "slug": "kusatsuhigashi"
+        },
+        {
+          "display": "水口",
+          "score": 3,
+          "won": true,
+          "name": "水口高校",
+          "slug": "minakuchi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東大津",
+          "score": 3,
+          "won": false,
+          "name": "東大津高校",
+          "slug": "higashiotsu"
+        },
+        {
+          "display": "八日市",
+          "score": 6,
+          "won": true,
+          "name": "八日市高校",
+          "slug": "yokaichi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "2回戦",
+      "venue": "ＨＰＬベースボールパーク",
+      "teams": [
+        {
+          "display": "伊香",
+          "score": 7,
+          "won": true,
+          "name": "伊香高校",
+          "slug": "ika"
+        },
+        {
+          "display": "玉川",
+          "score": 6,
+          "won": false,
+          "name": "玉川高校",
+          "slug": "tamagawa"
+        }
+      ]
+    },
+    {
       "date": "2025-10-06",
       "season": "autumn",
       "tournament": "2025年 秋季近畿地区高校野球 滋賀県大会",

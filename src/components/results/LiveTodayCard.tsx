@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Radio } from "lucide-react";
 
 import { SectionHeading } from "@/components/common/SectionHeading";
-import { LIVE_SOURCE, type LiveDistrict } from "@/lib/live/hsb";
+import { type LiveDistrict } from "@/lib/live/hsb";
 
 /**
  * トップの「速報中の都道府県」。
@@ -52,13 +52,6 @@ export function LiveTodayCard({ districts }: { districts: LiveDistrict[] }) {
           </li>
         ))}
       </ul>
-
-      <p className="mt-3 text-xs text-ink-faint">
-        出典:{" "}
-        <a href={LIVE_SOURCE.url} className="underline" rel="noopener noreferrer" target="_blank">
-          {LIVE_SOURCE.name}
-        </a>
-      </p>
     </section>
   );
 }

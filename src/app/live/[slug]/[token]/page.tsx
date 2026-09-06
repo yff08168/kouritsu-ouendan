@@ -7,7 +7,7 @@ import { Container } from "@/components/layout/Container";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { LiveRefresh } from "@/components/results/LiveRefresh";
 import { ALL_DISTRICT_SLUGS } from "@/lib/constants";
-import { LIVE_SOURCE, fetchLiveBoxScore, livePrefectures } from "@/lib/live/hsb";
+import { fetchLiveBoxScore, livePrefectures } from "@/lib/live/hsb";
 
 /** ★県の速報板と同じ間隔。**出典を叩く間隔は `hsb.ts` が持っている** */
 export const revalidate = 60;
@@ -112,18 +112,6 @@ export default async function LiveGamePage({
                 <dd className="tabular-nums">{box.gameSet ?? "—"}</dd>
               </div>
             </dl>
-
-            <p className="mt-4 text-xs text-ink-faint">
-              出典:{" "}
-              <a
-                href={LIVE_SOURCE.url}
-                className="underline"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                {LIVE_SOURCE.name}
-              </a>
-            </p>
           </section>
         </>
       )}

@@ -15515,9 +15515,23 @@ const HSB_BASE = {
       plain(/<p class="games_name">([\s\S]*?)<\/p>/.exec(index)?.[1] ?? "") ||
         plain(/<h1 class="games_name_L">([\s\S]*?)<\/h1>/.exec(index)?.[1] ?? ""),
     );
+    /*
+      ★★**大会名の年が二重になる紙がある**（2026-09-06。大阪の秋季）。
+      索引は「年」と「大会名」を別々に持つが、**大会名のほうにも年が入っている**ことがある:
+
+          games_year 「令和 8年」／games_name「令和8年秋季近畿地区高校野球 大阪府大会」
+          → そのままつなぐと **「令和 8年令和8年秋季…」**
+
+      ★**大会名がすでに年を名乗っているなら、頭に足さない。**
+      ★**開催中の大会を出すようになって初めて画面に出る**（それまでは検算で落ちていた）。
+    */
+    const curYearText = plain(/<p class="games_year">([\s\S]*?)<\/p>/.exec(index)?.[1] ?? "");
     const cur = {
       title: normalize(
-        (plain(/<p class="games_year">([\s\S]*?)<\/p>/.exec(index)?.[1] ?? "") + curName).trim(),
+        (/令和\s*\d+\s*年|平成\s*\d+\s*年|20\d\d\s*年/.test(curName)
+          ? curName
+          : curYearText + curName
+        ).trim(),
       ),
       period: normalize(plain(/<p class="games_period">([\s\S]*?)<\/p>/.exec(index)?.[1] ?? "")),
       bracket: `${base}/tournament`,
@@ -15705,8 +15719,44 @@ const HSB_BASE = {
       一覧と1対1で突き合わせられないと、**読み違えと見分けが付かない**
       （`svg-bracket.mjs` の「いちばん上の山が2つ以上」を読むこと）。
     */
-    const built = readHsbBracket(html, { district: this.district, blocks: Boolean(info.entries) });
+    let built = readHsbBracket(html, { district: this.district, blocks: Boolean(info.entries) });
     if (!built) return [];
+    /*
+      ★★★**開催中の大会は「終わったところまで」を出す**（2026-09-06。運営者の指示）。
+
+      それまでは**大会が終わるまで1試合も出せなかった** ——
+      「チーム数 − 試合数 = 1」を常に求めていたためで、
+      **神奈川の秋季（9月5日開幕・81チーム）は9月30日まで1試合も出ない**状態だった。
+
+      ★★**回戦名を当てにいかないこと。** 開催中の紙をそのまま読むと
+      **いちばん深い試合が「決勝」になる**（実測：1回戦18・2回戦6が
+      「準々決勝18・準決勝6」として出ていた）。**「◯回戦」は事実として画面に出る。**
+      ★**紙には最初から全回戦の枝が引いてある**ので、そこから数えれば正しくなる
+      （`svg-bracket.mjs` の `partial`）。
+
+      ★**受けるのは「まだ決勝が終わっていない」ときだけ。**
+      終わっているのに数が合わないのは**読み違え**なので、今までどおり落とす。
+    */
+    if (built.slots.length - built.games.length - (built.byes ?? 0) !== (built.blocks ?? 1)) {
+      const again = readHsbBracket(html, {
+        district: this.district,
+        blocks: Boolean(info.entries),
+        partial: true,
+      });
+      /*
+        ★★**「開催中」の目印は、決勝が読めていないこと** ——
+        紙の上でいちばん深い回戦（決勝）に色が付いていない。
+        ★**記載の優勝校があるなら終わっている**ので、この道は通さない。
+      */
+      const unfinished = again && !again.games.some((g) => g.round === "決勝") && !info.champion;
+      if (unfinished) {
+        console.log(
+          `  ℹ️ ${this.district}: ${info.title} は開催中（${again.slots.length} チーム中 ` +
+            `${again.games.length} 試合が終了）。**終わったところまで出す**`,
+        );
+        built = again;
+      }
+    }
 
     /*
       ---- 検算B: 勝ち抜きの算数 ----
@@ -15721,7 +15771,8 @@ const HSB_BASE = {
       8ブロックなら 74チーム・66試合で `74 − 66 = 8`。**式は同じで、右辺が山の数になるだけ。**
     */
     const wantLeft = built.blocks ?? 1;
-    if (built.slots.length - built.games.length - byes !== wantLeft) {
+    // ★**開催中の大会には求めない**（まだ終わっていないのだから合わなくて当たり前）
+    if (!built.partial && built.slots.length - built.games.length - byes !== wantLeft) {
       console.log(
         `  ⚠️ ${this.district}: ${info.title} は ${built.slots.length} チームに対し ${built.games.length} 試合` +
           `${byes ? `・不戦勝 ${byes}` : ""}（${built.slots.length - wantLeft - byes} のはず）。1試合も出さない`,
@@ -15859,10 +15910,26 @@ const HSB_BASE = {
       console.log(`  ⚠️ ${this.district}: ${info.title} の大会期間が読めない（${info.period ?? ""}）。1試合も出さない`);
       return [];
     }
-    const [m1, d1, m2] = [Number(span[1]), Number(span[2]), Number(span[3])];
+    const [m1, d1, m2, d2] = [Number(span[1]), Number(span[2]), Number(span[3]), Number(span[4])];
+    /*
+      ★★★**期間が3か月にまたがる大会がある**（2026-09-06。大阪の秋季 8月29日〜10月4日）。
+      **2つの月しか考えない書き方だと、9月の試合が10月になる**
+      （`day >= d1` で振り分けるので、6日は「29日より小さい」→ 終わりの月＝10月）。
+      **「未来の日付がある」で大会がまるごと落ちていた。**
+
+      ★**3か月以上のときだけ、期間に収まる月を探す**（2か月までは今までと同じ計算になる）。
+      ★★**2つ以上の月に収まる日は `null` にする**（8月29日〜10月4日の「30日」は
+      8月にも9月にもありうる）。**推測で埋めない**というこのリポジトリの決めごとに従う。
+    */
     const iso = (day) => {
-      const mm = m1 === m2 ? m1 : day >= d1 ? m1 : m2;
-      return `${info.year}-${String(mm).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+      const stamp = (mm) =>
+        `${info.year}-${String(mm).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+      if (m2 - m1 <= 1) return stamp(m1 === m2 ? m1 : day >= d1 ? m1 : m2);
+      const fits = [];
+      for (let mm = m1; mm <= m2; mm += 1) {
+        if ((mm > m1 || day >= d1) && (mm < m2 || day <= d2)) fits.push(mm);
+      }
+      return fits.length === 1 ? stamp(fits[0]) : null;
     };
     /*
       ★★**カタカナの「ニ」が漢数字の「二」として使われている**（2026-08-21）。
@@ -17525,6 +17592,23 @@ const DISTRICT_ALIASES = {
   "愛媛\t愛大附": "ehimedaigakufuzoku",
   "愛媛\t（新）小松": "komatsushin",
   "愛媛\t（新）八幡浜": "yawatahamashin",
+  /*
+    神奈川。**この出典は設置区分を頭に付けて書き分ける**（2026-09-06。運営者の指摘）。
+
+      「県相模原」… 神奈川県立相模原高等学校（`相模原高校`）
+      「県商工」  … 神奈川県立商工高等学校（**正式名がそのまま「神奈川県立商工」**）
+      「県川崎」／「市川崎」 … 県立川崎／川崎市立川崎（**同じ大会に両方出る**）
+
+    ★**規則では拾えない** —— マスタの校名は「相模原高校」「川崎高校」で、
+    頭の「県」「市」は付かない。**川崎は県立と市立が同名**なので校名だけでは引けない。
+    ★**出典が書き分けているので読み取りであって推測ではない**（千葉の5組と同じ線引き）。
+    ★**「県川崎幸」「県川崎新城幸」「新城麻生総合市川崎幸」は連合チーム**なので、
+    ここには足さない（1校に結び付けてはいけない）。
+  */
+  "神奈川\t県相模原": "sagamihara",
+  "神奈川\t県商工": "kanagawakenritsushoko",
+  "神奈川\t県川崎": "kawasaki",
+  "神奈川\t市川崎": "kanagawa-kawasaki",
   /*
     愛知。**「名市」は名古屋市立の略。** この出典は市立校を「名市工業」
     「名市工芸」と書く（他の市立校は「菊里」「向陽」のように設置区分を

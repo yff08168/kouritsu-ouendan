@@ -59251,6 +59251,29 @@
       "date": "2026-09-06",
       "season": "autumn",
       "tournament": "第79回秋季関東地区高等学校野球茨城県大会 二次予選",
+      "round": "準決勝",
+      "venue": "ひたちなか市民球場",
+      "teams": [
+        {
+          "display": "茨城キリスト",
+          "score": 12,
+          "won": true,
+          "name": "茨城キリスト",
+          "slug": null
+        },
+        {
+          "display": "日立一",
+          "score": 6,
+          "won": false,
+          "name": "日立第一高校",
+          "slug": "hitachidaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 二次予選",
       "round": "1回戦",
       "venue": "茨城トヨタスポーツパークうしく（牛久運動公園）野球場",
       "teams": [
@@ -59320,6 +59343,52 @@
       "date": "2026-09-06",
       "season": "autumn",
       "tournament": "第79回秋季関東地区高等学校野球茨城県大会 二次予選",
+      "round": "準決勝",
+      "venue": "笠間市民球場",
+      "teams": [
+        {
+          "display": "鹿島学園",
+          "score": 5,
+          "won": true,
+          "name": "鹿島学園",
+          "slug": null
+        },
+        {
+          "display": "水戸葵陵",
+          "score": 4,
+          "won": false,
+          "name": "水戸葵陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 二次予選",
+      "round": "1回戦",
+      "venue": "笠間市民球場",
+      "teams": [
+        {
+          "display": "那珂",
+          "score": 4,
+          "won": false,
+          "name": "那珂高校",
+          "slug": "naka"
+        },
+        {
+          "display": "波崎",
+          "score": 5,
+          "won": true,
+          "name": "波崎高校",
+          "slug": "hasaki"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 二次予選",
       "round": "1回戦",
       "venue": "結城鹿窪球場",
       "teams": [
@@ -59337,6 +59406,29 @@
           "won": true,
           "name": "鬼怒商業高校",
           "slug": "kinushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 二次予選",
+      "round": "準決勝",
+      "venue": "結城鹿窪球場",
+      "teams": [
+        {
+          "display": "四谷学院",
+          "score": 7,
+          "won": true,
+          "name": "四谷学院",
+          "slug": null
+        },
+        {
+          "display": "下館工",
+          "score": 2,
+          "won": false,
+          "name": "下館工業高校",
+          "slug": "shimodatekogyo"
         }
       ]
     },

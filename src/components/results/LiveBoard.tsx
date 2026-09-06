@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ChevronRight, Radio } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { LIVE_SOURCE, type LiveBoard as Board, type LiveGame } from "@/lib/live/hsb";
+import { type LiveBoard as Board, type LiveGame } from "@/lib/live/hsb";
 import type { SchoolNameIndex } from "@/lib/queries/schools";
 
 /**
@@ -54,13 +54,8 @@ export function LiveBoard({
         </ul>
       )}
 
-      <p className="mt-4 text-xs text-ink-faint">
-        出典:{" "}
-        <a href={LIVE_SOURCE.url} className="underline" rel="noopener noreferrer" target="_blank">
-          {LIVE_SOURCE.name}
-        </a>
-        （試合中は約1分ごとに取り直しています）
-      </p>
+      {/* ★**出典は 2026-09-06 に画面から外した**（運営者の判断）。下の注記は残す */}
+      <p className="mt-4 text-xs text-ink-faint">試合中は約1分ごとに取り直しています。</p>
     </section>
   );
 }

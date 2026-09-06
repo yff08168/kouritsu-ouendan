@@ -20,7 +20,7 @@ import { cn } from "@/lib/utils";
 export function NationalDataNote({
   className,
   missing,
-  source,
+  source: _source,
 }: {
   className?: string;
   /** 収録できていない大会の数 */
@@ -51,41 +51,11 @@ export function NationalDataNote({
           <strong className="text-accent-800">オレンジ</strong>
           の校名だけが学校ページにつながります。
         </li>
-        {source ? (
-          <li>
-            <strong className="text-ink">この大会の出典は</strong>{" "}
-            {source.url ? (
-              <a
-                href={source.url}
-                className="underline underline-offset-2 hover:text-accent-800"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {source.name}
-              </a>
-            ) : (
-              source.name
-            )}
-            <strong className="text-ink">です。</strong>
-            ほかの大会はウィキペディア日本語版の大会別記事（CC BY-SA 4.0）から作っていますが、
-            この大会は記事の作りが原因で機械的に読めなかったため、別の出典から補っています。
-            引用しているのは対戦相手・スコア・回戦だけです。
-          </li>
-        ) : (
-          <li>
-            出典は{" "}
-            <a
-              href="https://ja.wikipedia.org/wiki/全国高等学校野球選手権大会"
-              className="underline underline-offset-2 hover:text-accent-800"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ウィキペディア日本語版
-            </a>
-            の大会別記事（CC BY-SA 4.0）です。記事の本文は取り込まず、
-            対戦相手・スコア・日付・回戦だけを引用しています。
-          </li>
-        )}
+        {/*
+          ★**出典の行は 2026-09-06 に外した**（運営者の判断）。
+          ★★**`source` は生成物が持ったまま**（どの大会をどこから補ったかの記録）。
+          画面に出さなくなっただけなので、**データ側から消さないこと。**
+        */}
         <li>
           <strong className="text-ink">確かでない大会は載せていません。</strong>
           「優勝校以外はちょうど1回だけ負ける」「次の回戦に出るのは前の回戦の勝者」

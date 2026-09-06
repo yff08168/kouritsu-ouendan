@@ -34,20 +34,15 @@ export function DataNote({ children, className }: Props) {
           このサイトが扱うのは公立・国立・高専だけです。ここでの順位は全国順位ではなく、
           公立勢の中での順位です。
         </li>
+        {/*
+          ★**出典の行は 2026-09-06 に外した**（運営者の判断）。
+          ★★**「私立を収録していない」と「取りこぼしがありうる」は残すこと** ——
+          あちらは**この数字の読み方**であって、出典表示とは別物。
+          **消すと「ここでの1位＝全国1位」と読まれる。**
+        */}
         <li>
-          出場歴の出典は{" "}
-          <a
-            href="https://ja.wikipedia.org/wiki/全国高等学校野球選手権大会"
-            className="underline underline-offset-2 hover:text-accent-800"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ウィキペディア日本語版
-          </a>
-          の大会別記事（CC BY-SA 4.0）です。統廃合した学校の記録は現在の学校に引き継いでいます。
-        </li>
-        <li>
-          二次情報のため、校名の表記ゆれなどで取りこぼしがありえます。数字は
+          統廃合した学校の記録は現在の学校に引き継いでいます。校名の表記ゆれなどで
+          取りこぼしがありえるため、数字は
           <strong className="text-ink">やや少なめに出る</strong>方向にずれます。
         </li>
         <li>

@@ -24500,8 +24500,8 @@
       "teams": [
         {
           "display": "長野日大",
-          "score": 7,
-          "won": false,
+          "score": 10,
+          "won": true,
           "name": "長野日大",
           "slug": null
         },
@@ -24511,6 +24511,30 @@
           "won": false,
           "name": "須坂創成高校",
           "slug": "suzakasosei"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会 北信予選会",
+      "round": "準々決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "北信連合",
+          "score": 2,
+          "won": false,
+          "name": "北信連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "長野商業",
+          "score": 9,
+          "won": true,
+          "name": "長野商業高校",
+          "slug": "naganoshogyo"
         }
       ]
     },
@@ -24569,14 +24593,14 @@
       "teams": [
         {
           "display": "上田東",
-          "score": 1,
-          "won": false,
+          "score": 6,
+          "won": true,
           "name": "上田東高校",
           "slug": "uedahigashi"
         },
         {
           "display": "上田",
-          "score": 0,
+          "score": 4,
           "won": false,
           "name": "上田高校",
           "slug": "ueda"
@@ -24615,14 +24639,14 @@
       "teams": [
         {
           "display": "伊那弥生ヶ丘",
-          "score": 0,
-          "won": false,
+          "score": 4,
+          "won": true,
           "name": "伊那弥生ケ丘高校",
           "slug": "inayayoigaoka"
         },
         {
           "display": "諏訪清陵",
-          "score": 0,
+          "score": 3,
           "won": false,
           "name": "諏訪清陵高校",
           "slug": "suwaseiryo"
@@ -24661,14 +24685,14 @@
       "teams": [
         {
           "display": "岡谷南",
-          "score": 0,
-          "won": false,
+          "score": 8,
+          "won": true,
           "name": "岡谷南高校",
           "slug": "okayaminami"
         },
         {
           "display": "上伊那農業",
-          "score": 3,
+          "score": 4,
           "won": false,
           "name": "上伊那農業高校",
           "slug": "kamiinanogyo"

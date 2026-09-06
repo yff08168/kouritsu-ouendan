@@ -14678,6 +14678,446 @@
       ]
     },
     {
+      "date": "2026-09-04",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "1回戦",
+      "venue": "青森県営野球場",
+      "teams": [
+        {
+          "display": "下山学園",
+          "score": 6,
+          "won": true,
+          "name": "下山学園",
+          "slug": null
+        },
+        {
+          "display": "弘前中央",
+          "score": 1,
+          "won": false,
+          "name": "弘前中央高校",
+          "slug": "hirosakichuo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "1回戦",
+      "venue": "黒石運動公園野球場",
+      "teams": [
+        {
+          "display": "三本木農業恵拓六ヶ所・大間・七戸",
+          "score": 13,
+          "won": false,
+          "name": "三本木農業恵拓六ヶ所・大間・七戸",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "青森工業",
+          "score": 15,
+          "won": true,
+          "name": "青森工業高校",
+          "slug": "aomorikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "1回戦",
+      "venue": "青森県営野球場",
+      "teams": [
+        {
+          "display": "五所川原工科柏木農業・黒石",
+          "score": 5,
+          "won": false,
+          "name": "五所川原工科柏木農業・黒石",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "青森南",
+          "score": 12,
+          "won": true,
+          "name": "青森南高校",
+          "slug": "aomoriminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "1回戦",
+      "venue": "メイプルスタジアム（六戸町）",
+      "teams": [
+        {
+          "display": "八戸",
+          "score": 1,
+          "won": false,
+          "name": "八戸高校",
+          "slug": "hachinohe"
+        },
+        {
+          "display": "八工大二",
+          "score": 5,
+          "won": true,
+          "name": "八工大二",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "1回戦",
+      "venue": "青森県営野球場",
+      "teams": [
+        {
+          "display": "八戸北",
+          "score": 2,
+          "won": false,
+          "name": "八戸北高校",
+          "slug": "hachinohekita"
+        },
+        {
+          "display": "五所川原農林",
+          "score": 9,
+          "won": true,
+          "name": "五所川原農林高校",
+          "slug": "goshogawaranorin"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "1回戦",
+      "venue": "黒石運動公園野球場",
+      "teams": [
+        {
+          "display": "八戸聖ウルスラ",
+          "score": 6,
+          "won": true,
+          "name": "八戸聖ウルスラ",
+          "slug": null
+        },
+        {
+          "display": "弘前工業",
+          "score": 4,
+          "won": false,
+          "name": "弘前工業高校",
+          "slug": "hirosakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "2回戦",
+      "venue": "青森県営野球場",
+      "teams": [
+        {
+          "display": "青森山田",
+          "score": 8,
+          "won": true,
+          "name": "青森山田",
+          "slug": null
+        },
+        {
+          "display": "下山学園",
+          "score": 1,
+          "won": false,
+          "name": "下山学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "2回戦",
+      "venue": "青森県営野球場",
+      "teams": [
+        {
+          "display": "青森南",
+          "score": 6,
+          "won": true,
+          "name": "青森南高校",
+          "slug": "aomoriminami"
+        },
+        {
+          "display": "八戸工業",
+          "score": 1,
+          "won": false,
+          "name": "八戸工業高校",
+          "slug": "hachinohekogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "2回戦",
+      "venue": "メイプルスタジアム（六戸町）",
+      "teams": [
+        {
+          "display": "大湊",
+          "score": 4,
+          "won": true,
+          "name": "大湊高校",
+          "slug": "ominato"
+        },
+        {
+          "display": "八工大二",
+          "score": 3,
+          "won": false,
+          "name": "八工大二",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "2回戦",
+      "venue": "黒石運動公園野球場",
+      "teams": [
+        {
+          "display": "八戸聖ウルスラ",
+          "score": 2,
+          "won": false,
+          "name": "八戸聖ウルスラ",
+          "slug": null
+        },
+        {
+          "display": "聖愛",
+          "score": 4,
+          "won": true,
+          "name": "聖愛",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "2回戦",
+      "venue": "メイプルスタジアム（六戸町）",
+      "teams": [
+        {
+          "display": "八戸水産",
+          "score": 2,
+          "won": false,
+          "name": "八戸水産高校",
+          "slug": "hachinohesuisan"
+        },
+        {
+          "display": "八戸高専",
+          "score": 8,
+          "won": true,
+          "name": "八戸工業高専",
+          "slug": "hachinohekogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "2回戦",
+      "venue": "青森県営野球場",
+      "teams": [
+        {
+          "display": "八戸東",
+          "score": 2,
+          "won": true,
+          "name": "八戸東高校",
+          "slug": "hachinohehigashi"
+        },
+        {
+          "display": "青森西",
+          "score": 1,
+          "won": false,
+          "name": "青森西高校",
+          "slug": "aomorinishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "2回戦",
+      "venue": "青森県営野球場",
+      "teams": [
+        {
+          "display": "青森中央・青森東松風塾",
+          "score": 7,
+          "won": false,
+          "name": "青森中央・青森東松風塾",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "八戸商",
+          "score": 11,
+          "won": true,
+          "name": "八戸商業高校",
+          "slug": "hachinoheshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "2回戦",
+      "venue": "黒石運動公園野球場",
+      "teams": [
+        {
+          "display": "弘前",
+          "score": 3,
+          "won": false,
+          "name": "弘前高校",
+          "slug": "hirosaki"
+        },
+        {
+          "display": "青森明の星",
+          "score": 6,
+          "won": true,
+          "name": "青森明の星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "2回戦",
+      "venue": "メイプルスタジアム（六戸町）",
+      "teams": [
+        {
+          "display": "三沢",
+          "score": 2,
+          "won": false,
+          "name": "三沢高校",
+          "slug": "misawa"
+        },
+        {
+          "display": "弘前南",
+          "score": 28,
+          "won": true,
+          "name": "弘前南高校",
+          "slug": "hirosakiminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "3回戦",
+      "venue": "メイプルスタジアム（六戸町）",
+      "teams": [
+        {
+          "display": "三沢商業",
+          "score": 8,
+          "won": true,
+          "name": "三沢商業高校",
+          "slug": "misawashogyo"
+        },
+        {
+          "display": "八戸高専",
+          "score": 0,
+          "won": false,
+          "name": "八戸工業高専",
+          "slug": "hachinohekogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "3回戦",
+      "venue": "青森県営野球場",
+      "teams": [
+        {
+          "display": "八戸商",
+          "score": 4,
+          "won": false,
+          "name": "八戸商業高校",
+          "slug": "hachinoheshogyo"
+        },
+        {
+          "display": "青森",
+          "score": 14,
+          "won": true,
+          "name": "青森高校",
+          "slug": "aomori"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "3回戦",
+      "venue": "黒石運動公園野球場",
+      "teams": [
+        {
+          "display": "弘前東",
+          "score": 10,
+          "won": true,
+          "name": "弘前東",
+          "slug": null
+        },
+        {
+          "display": "青森明の星",
+          "score": 1,
+          "won": false,
+          "name": "青森明の星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "3回戦",
+      "venue": "メイプルスタジアム（六戸町）",
+      "teams": [
+        {
+          "display": "弘前南",
+          "score": 1,
+          "won": false,
+          "name": "弘前南高校",
+          "slug": "hirosakiminami"
+        },
+        {
+          "display": "八学光星",
+          "score": 6,
+          "won": true,
+          "name": "八学光星",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-05",
       "season": "autumn",
       "tournament": "2025年 秋季東北地区高等学校野球 青森県大会",

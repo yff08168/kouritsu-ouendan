@@ -120,16 +120,8 @@ export default async function JinguIndexPage() {
       <AdSlot slot="sidebar" />
 
       <aside className="mt-4 rounded-xl border border-line bg-navy-50/60 p-4 text-[0.6875rem] leading-relaxed text-ink-muted">
-        出典は
-        <a
-          href="https://www.student-baseball.or.jp/"
-          className="underline underline-offset-2 hover:text-accent-800"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          公益財団法人 日本学生野球協会
-        </a>
-        （大会の主催者）です。大学の部は収録していません。
+        {/* ★**出典の行は 2026-09-06 に外した**（運営者の判断）。収録範囲の説明は残す */}
+        大学の部は収録していません。
         私立を含む全試合を載せていますが、学校ページにつながるのは公立・国立・高専だけです。
       </aside>
     </Container>

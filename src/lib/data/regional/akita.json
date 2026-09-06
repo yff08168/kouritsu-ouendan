@@ -5,6 +5,791 @@
   "sourceUrl": "https://akita.hsbflash.jp/",
   "games": [
     {
+      "date": "2026-05-08",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "1回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "仁賀保",
+          "score": 0,
+          "won": false,
+          "name": "仁賀保高校",
+          "slug": "nikaho"
+        },
+        {
+          "display": "男鹿工業",
+          "score": 30,
+          "won": true,
+          "name": "男鹿工業高校",
+          "slug": "ogakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-08",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "1回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "秋田西",
+          "score": 7,
+          "won": true,
+          "name": "秋田西高校",
+          "slug": "akitanishi"
+        },
+        {
+          "display": "大館桂桜",
+          "score": 5,
+          "won": false,
+          "name": "大館桂桜高校",
+          "slug": "odatekeio"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-09",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "秋田中央",
+          "score": 10,
+          "won": true,
+          "name": "秋田中央高校",
+          "slug": "akitachuo"
+        },
+        {
+          "display": "秋田高専",
+          "score": 0,
+          "won": false,
+          "name": "秋田工業高専",
+          "slug": "akitakogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-11",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "大館鳳鳴",
+          "score": 8,
+          "won": true,
+          "name": "大館鳳鳴高校",
+          "slug": "odatehomei"
+        },
+        {
+          "display": "大曲",
+          "score": 5,
+          "won": false,
+          "name": "大曲高校",
+          "slug": "omagari"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-11",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "湯沢",
+          "score": 5,
+          "won": false,
+          "name": "湯沢高校",
+          "slug": "yuzawa"
+        },
+        {
+          "display": "男鹿工業",
+          "score": 6,
+          "won": true,
+          "name": "男鹿工業高校",
+          "slug": "ogakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-10",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "湯沢翔北",
+          "score": 2,
+          "won": false,
+          "name": "湯沢翔北高校",
+          "slug": "yuzawashohoku"
+        },
+        {
+          "display": "鹿角",
+          "score": 14,
+          "won": true,
+          "name": "鹿角高校",
+          "slug": "kazuno"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-10",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "秋田修英",
+          "score": 8,
+          "won": true,
+          "name": "秋田修英",
+          "slug": null
+        },
+        {
+          "display": "横手城南",
+          "score": 3,
+          "won": false,
+          "name": "横手城南高校",
+          "slug": "yokotejonan"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-10",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "秋田西",
+          "score": 27,
+          "won": true,
+          "name": "秋田西高校",
+          "slug": "akitanishi"
+        },
+        {
+          "display": "能代科技・男鹿海洋・五城目",
+          "score": 3,
+          "won": false,
+          "name": "能代科技・男鹿海洋・五城目",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-05-11",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "横手",
+          "score": 11,
+          "won": true,
+          "name": "横手高校",
+          "slug": "yokote"
+        },
+        {
+          "display": "増田・羽後",
+          "score": 1,
+          "won": false,
+          "name": "増田・羽後",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-05-09",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "秋田北鷹",
+          "score": 0,
+          "won": false,
+          "name": "秋田北鷹高校",
+          "slug": "akitahokuyo"
+        },
+        {
+          "display": "金足農業",
+          "score": 1,
+          "won": true,
+          "name": "金足農業高校",
+          "slug": "kanaashinogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "3回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "秋田中央",
+          "score": 6,
+          "won": false,
+          "name": "秋田中央高校",
+          "slug": "akitachuo"
+        },
+        {
+          "display": "大館鳳鳴",
+          "score": 7,
+          "won": true,
+          "name": "大館鳳鳴高校",
+          "slug": "odatehomei"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "3回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "男鹿工業",
+          "score": 3,
+          "won": false,
+          "name": "男鹿工業高校",
+          "slug": "ogakogyo"
+        },
+        {
+          "display": "鹿角",
+          "score": 4,
+          "won": true,
+          "name": "鹿角高校",
+          "slug": "kazuno"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "3回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "秋田修英",
+          "score": 6,
+          "won": true,
+          "name": "秋田修英",
+          "slug": null
+        },
+        {
+          "display": "秋田西",
+          "score": 5,
+          "won": false,
+          "name": "秋田西高校",
+          "slug": "akitanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "3回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "横手",
+          "score": 6,
+          "won": true,
+          "name": "横手高校",
+          "slug": "yokote"
+        },
+        {
+          "display": "金足農業",
+          "score": 2,
+          "won": false,
+          "name": "金足農業高校",
+          "slug": "kanaashinogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "準々決勝",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "大館鳳鳴",
+          "score": 4,
+          "won": false,
+          "name": "大館鳳鳴高校",
+          "slug": "odatehomei"
+        },
+        {
+          "display": "鹿角",
+          "score": 5,
+          "won": true,
+          "name": "鹿角高校",
+          "slug": "kazuno"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "準々決勝",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "秋田修英",
+          "score": 3,
+          "won": true,
+          "name": "秋田修英",
+          "slug": null
+        },
+        {
+          "display": "横手",
+          "score": 2,
+          "won": false,
+          "name": "横手高校",
+          "slug": "yokote"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "準決勝",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "鹿角",
+          "score": 2,
+          "won": true,
+          "name": "鹿角高校",
+          "slug": "kazuno"
+        },
+        {
+          "display": "秋田修英",
+          "score": 1,
+          "won": false,
+          "name": "秋田修英",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-08",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "1回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "西目・西仙北・大農太田・六郷",
+          "score": 0,
+          "won": false,
+          "name": "西目・西仙北・大農太田・六郷",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "本荘",
+          "score": 10,
+          "won": true,
+          "name": "本荘高校",
+          "slug": "honjo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-09",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "明桜",
+          "score": 3,
+          "won": true,
+          "name": "明桜",
+          "slug": null
+        },
+        {
+          "display": "由利",
+          "score": 2,
+          "won": false,
+          "name": "由利高校",
+          "slug": "yuri"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-11",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "角館",
+          "score": 2,
+          "won": false,
+          "name": "角館高校",
+          "slug": "kakunodate"
+        },
+        {
+          "display": "秋田商業",
+          "score": 5,
+          "won": true,
+          "name": "秋田商業高校",
+          "slug": "akitashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-10",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "大館国際",
+          "score": 4,
+          "won": true,
+          "name": "大館国際",
+          "slug": null
+        },
+        {
+          "display": "能代",
+          "score": 0,
+          "won": false,
+          "name": "能代高校",
+          "slug": "noshiro"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-10",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "新屋",
+          "score": 5,
+          "won": true,
+          "name": "新屋高校",
+          "slug": "araya"
+        },
+        {
+          "display": "秋田南",
+          "score": 4,
+          "won": false,
+          "name": "秋田南高校",
+          "slug": "akitaminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-10",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "秋田",
+          "score": 2,
+          "won": true,
+          "name": "秋田高校",
+          "slug": "akita"
+        },
+        {
+          "display": "由利工業",
+          "score": 0,
+          "won": false,
+          "name": "由利工業高校",
+          "slug": "yurikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-11",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "本荘",
+          "score": 8,
+          "won": true,
+          "name": "本荘高校",
+          "slug": "honjo"
+        },
+        {
+          "display": "大曲農業",
+          "score": 7,
+          "won": false,
+          "name": "大曲農業高校",
+          "slug": "omagarinogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-11",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "秋田工業",
+          "score": 6,
+          "won": true,
+          "name": "秋田工業高校",
+          "slug": "akitakogyo"
+        },
+        {
+          "display": "横手清陵",
+          "score": 0,
+          "won": false,
+          "name": "横手清陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-05-09",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "大曲工業",
+          "score": 8,
+          "won": true,
+          "name": "大曲工業高校",
+          "slug": "omagarikogyo"
+        },
+        {
+          "display": "能代松陽",
+          "score": 4,
+          "won": false,
+          "name": "能代松陽高校",
+          "slug": "noshiroshoyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "3回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "明桜",
+          "score": 0,
+          "won": false,
+          "name": "明桜",
+          "slug": null
+        },
+        {
+          "display": "秋田商業",
+          "score": 1,
+          "won": true,
+          "name": "秋田商業高校",
+          "slug": "akitashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "3回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "大館国際",
+          "score": 3,
+          "won": false,
+          "name": "大館国際",
+          "slug": null
+        },
+        {
+          "display": "新屋",
+          "score": 7,
+          "won": true,
+          "name": "新屋高校",
+          "slug": "araya"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "3回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "秋田",
+          "score": 2,
+          "won": false,
+          "name": "秋田高校",
+          "slug": "akita"
+        },
+        {
+          "display": "本荘",
+          "score": 3,
+          "won": true,
+          "name": "本荘高校",
+          "slug": "honjo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "3回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "秋田工業",
+          "score": 0,
+          "won": false,
+          "name": "秋田工業高校",
+          "slug": "akitakogyo"
+        },
+        {
+          "display": "大曲工業",
+          "score": 1,
+          "won": true,
+          "name": "大曲工業高校",
+          "slug": "omagarikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "準々決勝",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "秋田商業",
+          "score": 7,
+          "won": true,
+          "name": "秋田商業高校",
+          "slug": "akitashogyo"
+        },
+        {
+          "display": "新屋",
+          "score": 1,
+          "won": false,
+          "name": "新屋高校",
+          "slug": "araya"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "準々決勝",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "本荘",
+          "score": 1,
+          "won": false,
+          "name": "本荘高校",
+          "slug": "honjo"
+        },
+        {
+          "display": "大曲工業",
+          "score": 3,
+          "won": true,
+          "name": "大曲工業高校",
+          "slug": "omagarikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "準決勝",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "秋田商業",
+          "score": 9,
+          "won": true,
+          "name": "秋田商業高校",
+          "slug": "akitashogyo"
+        },
+        {
+          "display": "大曲工業",
+          "score": 1,
+          "won": false,
+          "name": "大曲工業高校",
+          "slug": "omagarikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-25",
+      "season": "spring",
+      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
+      "round": "決勝",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "秋田商業",
+          "score": 4,
+          "won": true,
+          "name": "秋田商業高校",
+          "slug": "akitashogyo"
+        },
+        {
+          "display": "鹿角",
+          "score": 3,
+          "won": false,
+          "name": "鹿角高校",
+          "slug": "kazuno"
+        }
+      ]
+    },
+    {
       "date": "2025-05-13",
       "season": "spring",
       "tournament": "2025年 春期東北地区高等学校野球 秋田県大会",
@@ -3440,791 +4225,6 @@
       ]
     },
     {
-      "date": "2026-05-08",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "1回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "仁賀保",
-          "score": 0,
-          "won": false,
-          "name": "仁賀保高校",
-          "slug": "nikaho"
-        },
-        {
-          "display": "男鹿工業",
-          "score": 30,
-          "won": true,
-          "name": "男鹿工業高校",
-          "slug": "ogakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-08",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "1回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "秋田西",
-          "score": 7,
-          "won": true,
-          "name": "秋田西高校",
-          "slug": "akitanishi"
-        },
-        {
-          "display": "大館桂桜",
-          "score": 5,
-          "won": false,
-          "name": "大館桂桜高校",
-          "slug": "odatekeio"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-09",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "2回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "秋田中央",
-          "score": 10,
-          "won": true,
-          "name": "秋田中央高校",
-          "slug": "akitachuo"
-        },
-        {
-          "display": "秋田高専",
-          "score": 0,
-          "won": false,
-          "name": "秋田工業高専",
-          "slug": "akitakogyo-kosen"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-11",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "2回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "大館鳳鳴",
-          "score": 8,
-          "won": true,
-          "name": "大館鳳鳴高校",
-          "slug": "odatehomei"
-        },
-        {
-          "display": "大曲",
-          "score": 5,
-          "won": false,
-          "name": "大曲高校",
-          "slug": "omagari"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-11",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "2回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "湯沢",
-          "score": 5,
-          "won": false,
-          "name": "湯沢高校",
-          "slug": "yuzawa"
-        },
-        {
-          "display": "男鹿工業",
-          "score": 6,
-          "won": true,
-          "name": "男鹿工業高校",
-          "slug": "ogakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-10",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "2回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "湯沢翔北",
-          "score": 2,
-          "won": false,
-          "name": "湯沢翔北高校",
-          "slug": "yuzawashohoku"
-        },
-        {
-          "display": "鹿角",
-          "score": 14,
-          "won": true,
-          "name": "鹿角高校",
-          "slug": "kazuno"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-10",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "2回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "秋田修英",
-          "score": 8,
-          "won": true,
-          "name": "秋田修英",
-          "slug": null
-        },
-        {
-          "display": "横手城南",
-          "score": 3,
-          "won": false,
-          "name": "横手城南高校",
-          "slug": "yokotejonan"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-10",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "2回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "秋田西",
-          "score": 27,
-          "won": true,
-          "name": "秋田西高校",
-          "slug": "akitanishi"
-        },
-        {
-          "display": "能代科技・男鹿海洋・五城目",
-          "score": 3,
-          "won": false,
-          "name": "能代科技・男鹿海洋・五城目",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-05-11",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "2回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "横手",
-          "score": 11,
-          "won": true,
-          "name": "横手高校",
-          "slug": "yokote"
-        },
-        {
-          "display": "増田・羽後",
-          "score": 1,
-          "won": false,
-          "name": "増田・羽後",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-05-09",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "2回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "秋田北鷹",
-          "score": 0,
-          "won": false,
-          "name": "秋田北鷹高校",
-          "slug": "akitahokuyo"
-        },
-        {
-          "display": "金足農業",
-          "score": 1,
-          "won": true,
-          "name": "金足農業高校",
-          "slug": "kanaashinogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-16",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "3回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "秋田中央",
-          "score": 6,
-          "won": false,
-          "name": "秋田中央高校",
-          "slug": "akitachuo"
-        },
-        {
-          "display": "大館鳳鳴",
-          "score": 7,
-          "won": true,
-          "name": "大館鳳鳴高校",
-          "slug": "odatehomei"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-16",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "3回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "男鹿工業",
-          "score": 3,
-          "won": false,
-          "name": "男鹿工業高校",
-          "slug": "ogakogyo"
-        },
-        {
-          "display": "鹿角",
-          "score": 4,
-          "won": true,
-          "name": "鹿角高校",
-          "slug": "kazuno"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-15",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "3回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "秋田修英",
-          "score": 6,
-          "won": true,
-          "name": "秋田修英",
-          "slug": null
-        },
-        {
-          "display": "秋田西",
-          "score": 5,
-          "won": false,
-          "name": "秋田西高校",
-          "slug": "akitanishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-15",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "3回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "横手",
-          "score": 6,
-          "won": true,
-          "name": "横手高校",
-          "slug": "yokote"
-        },
-        {
-          "display": "金足農業",
-          "score": 2,
-          "won": false,
-          "name": "金足農業高校",
-          "slug": "kanaashinogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-18",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "準々決勝",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "大館鳳鳴",
-          "score": 4,
-          "won": false,
-          "name": "大館鳳鳴高校",
-          "slug": "odatehomei"
-        },
-        {
-          "display": "鹿角",
-          "score": 5,
-          "won": true,
-          "name": "鹿角高校",
-          "slug": "kazuno"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-17",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "準々決勝",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "秋田修英",
-          "score": 3,
-          "won": true,
-          "name": "秋田修英",
-          "slug": null
-        },
-        {
-          "display": "横手",
-          "score": 2,
-          "won": false,
-          "name": "横手高校",
-          "slug": "yokote"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-23",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "準決勝",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "鹿角",
-          "score": 2,
-          "won": true,
-          "name": "鹿角高校",
-          "slug": "kazuno"
-        },
-        {
-          "display": "秋田修英",
-          "score": 1,
-          "won": false,
-          "name": "秋田修英",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-08",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "1回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "西目・西仙北・大農太田・六郷",
-          "score": 0,
-          "won": false,
-          "name": "西目・西仙北・大農太田・六郷",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "本荘",
-          "score": 10,
-          "won": true,
-          "name": "本荘高校",
-          "slug": "honjo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-09",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "2回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "明桜",
-          "score": 3,
-          "won": true,
-          "name": "明桜",
-          "slug": null
-        },
-        {
-          "display": "由利",
-          "score": 2,
-          "won": false,
-          "name": "由利高校",
-          "slug": "yuri"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-11",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "2回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "角館",
-          "score": 2,
-          "won": false,
-          "name": "角館高校",
-          "slug": "kakunodate"
-        },
-        {
-          "display": "秋田商業",
-          "score": 5,
-          "won": true,
-          "name": "秋田商業高校",
-          "slug": "akitashogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-10",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "2回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "大館国際",
-          "score": 4,
-          "won": true,
-          "name": "大館国際",
-          "slug": null
-        },
-        {
-          "display": "能代",
-          "score": 0,
-          "won": false,
-          "name": "能代高校",
-          "slug": "noshiro"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-10",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "2回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "新屋",
-          "score": 5,
-          "won": true,
-          "name": "新屋高校",
-          "slug": "araya"
-        },
-        {
-          "display": "秋田南",
-          "score": 4,
-          "won": false,
-          "name": "秋田南高校",
-          "slug": "akitaminami"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-10",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "2回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "秋田",
-          "score": 2,
-          "won": true,
-          "name": "秋田高校",
-          "slug": "akita"
-        },
-        {
-          "display": "由利工業",
-          "score": 0,
-          "won": false,
-          "name": "由利工業高校",
-          "slug": "yurikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-11",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "2回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "本荘",
-          "score": 8,
-          "won": true,
-          "name": "本荘高校",
-          "slug": "honjo"
-        },
-        {
-          "display": "大曲農業",
-          "score": 7,
-          "won": false,
-          "name": "大曲農業高校",
-          "slug": "omagarinogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-11",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "2回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "秋田工業",
-          "score": 6,
-          "won": true,
-          "name": "秋田工業高校",
-          "slug": "akitakogyo"
-        },
-        {
-          "display": "横手清陵",
-          "score": 0,
-          "won": false,
-          "name": "横手清陵",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-05-09",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "2回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "大曲工業",
-          "score": 8,
-          "won": true,
-          "name": "大曲工業高校",
-          "slug": "omagarikogyo"
-        },
-        {
-          "display": "能代松陽",
-          "score": 4,
-          "won": false,
-          "name": "能代松陽高校",
-          "slug": "noshiroshoyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-15",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "3回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "明桜",
-          "score": 0,
-          "won": false,
-          "name": "明桜",
-          "slug": null
-        },
-        {
-          "display": "秋田商業",
-          "score": 1,
-          "won": true,
-          "name": "秋田商業高校",
-          "slug": "akitashogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-15",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "3回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "大館国際",
-          "score": 3,
-          "won": false,
-          "name": "大館国際",
-          "slug": null
-        },
-        {
-          "display": "新屋",
-          "score": 7,
-          "won": true,
-          "name": "新屋高校",
-          "slug": "araya"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-16",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "3回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "秋田",
-          "score": 2,
-          "won": false,
-          "name": "秋田高校",
-          "slug": "akita"
-        },
-        {
-          "display": "本荘",
-          "score": 3,
-          "won": true,
-          "name": "本荘高校",
-          "slug": "honjo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-16",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "3回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "秋田工業",
-          "score": 0,
-          "won": false,
-          "name": "秋田工業高校",
-          "slug": "akitakogyo"
-        },
-        {
-          "display": "大曲工業",
-          "score": 1,
-          "won": true,
-          "name": "大曲工業高校",
-          "slug": "omagarikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-17",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "準々決勝",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "秋田商業",
-          "score": 7,
-          "won": true,
-          "name": "秋田商業高校",
-          "slug": "akitashogyo"
-        },
-        {
-          "display": "新屋",
-          "score": 1,
-          "won": false,
-          "name": "新屋高校",
-          "slug": "araya"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-18",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "準々決勝",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "本荘",
-          "score": 1,
-          "won": false,
-          "name": "本荘高校",
-          "slug": "honjo"
-        },
-        {
-          "display": "大曲工業",
-          "score": 3,
-          "won": true,
-          "name": "大曲工業高校",
-          "slug": "omagarikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-23",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "準決勝",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "秋田商業",
-          "score": 9,
-          "won": true,
-          "name": "秋田商業高校",
-          "slug": "akitashogyo"
-        },
-        {
-          "display": "大曲工業",
-          "score": 1,
-          "won": false,
-          "name": "大曲工業高校",
-          "slug": "omagarikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-25",
-      "season": "spring",
-      "tournament": "2026年 春期東北地区高等学校野球 秋田県大会",
-      "round": "決勝",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "秋田商業",
-          "score": 4,
-          "won": true,
-          "name": "秋田商業高校",
-          "slug": "akitashogyo"
-        },
-        {
-          "display": "鹿角",
-          "score": 3,
-          "won": false,
-          "name": "鹿角高校",
-          "slug": "kazuno"
-        }
-      ]
-    },
-    {
       "date": "2019-05-17",
       "season": "spring",
       "tournament": "2019年 春季東北地区高等学校野球 秋田県大会",
@@ -5003,6 +5003,791 @@
           "won": true,
           "name": "明桜",
           "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "1回戦",
+      "venue": "ＩＴＯＫＥＮ８０ｔｈスタジアムよこて",
+      "teams": [
+        {
+          "display": "大曲",
+          "score": 0,
+          "won": false,
+          "name": "大曲高校",
+          "slug": "omagari"
+        },
+        {
+          "display": "秋田中央",
+          "score": 9,
+          "won": true,
+          "name": "秋田中央高校",
+          "slug": "akitachuo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "1回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "能代",
+          "score": 18,
+          "won": true,
+          "name": "能代高校",
+          "slug": "noshiro"
+        },
+        {
+          "display": "湯沢翔北",
+          "score": 6,
+          "won": false,
+          "name": "湯沢翔北高校",
+          "slug": "yuzawashohoku"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "2回戦",
+      "venue": "ＩＴＯＫＥＮ８０ｔｈスタジアムよこて",
+      "teams": [
+        {
+          "display": "秋田修英",
+          "score": 11,
+          "won": true,
+          "name": "秋田修英",
+          "slug": null
+        },
+        {
+          "display": "能代科技・男鹿海洋五城目",
+          "score": 1,
+          "won": false,
+          "name": "能代科技・男鹿海洋五城目",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "2回戦",
+      "venue": "ＩＴＯＫＥＮ８０ｔｈスタジアムよこて",
+      "teams": [
+        {
+          "display": "大曲農業",
+          "score": 9,
+          "won": true,
+          "name": "大曲農業高校",
+          "slug": "omagarinogyo"
+        },
+        {
+          "display": "西目・西仙北大農太田・六郷",
+          "score": 2,
+          "won": false,
+          "name": "西目・西仙北大農太田・六郷",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "2回戦",
+      "venue": "ＩＴＯＫＥＮ８０ｔｈスタジアムよこて",
+      "teams": [
+        {
+          "display": "秋田南",
+          "score": 7,
+          "won": true,
+          "name": "秋田南高校",
+          "slug": "akitaminami"
+        },
+        {
+          "display": "秋田中央",
+          "score": 1,
+          "won": false,
+          "name": "秋田中央高校",
+          "slug": "akitachuo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "2回戦",
+      "venue": "ＩＴＯＫＥＮ８０ｔｈスタジアムよこて",
+      "teams": [
+        {
+          "display": "金足農業",
+          "score": 1,
+          "won": false,
+          "name": "金足農業高校",
+          "slug": "kanaashinogyo"
+        },
+        {
+          "display": "横手",
+          "score": 3,
+          "won": true,
+          "name": "横手高校",
+          "slug": "yokote"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "2回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "本荘",
+          "score": 4,
+          "won": false,
+          "name": "本荘高校",
+          "slug": "honjo"
+        },
+        {
+          "display": "男鹿工業",
+          "score": 6,
+          "won": true,
+          "name": "男鹿工業高校",
+          "slug": "ogakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "2回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "能代",
+          "score": 0,
+          "won": false,
+          "name": "能代高校",
+          "slug": "noshiro"
+        },
+        {
+          "display": "角館",
+          "score": 6,
+          "won": true,
+          "name": "角館高校",
+          "slug": "kakunodate"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "2回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "横手城南",
+          "score": 5,
+          "won": true,
+          "name": "横手城南高校",
+          "slug": "yokotejonan"
+        },
+        {
+          "display": "由利工業",
+          "score": 4,
+          "won": false,
+          "name": "由利工業高校",
+          "slug": "yurikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "2回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "湯沢",
+          "score": 7,
+          "won": true,
+          "name": "湯沢高校",
+          "slug": "yuzawa"
+        },
+        {
+          "display": "鹿角",
+          "score": 4,
+          "won": false,
+          "name": "鹿角高校",
+          "slug": "kazuno"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "3回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "秋田修英",
+          "score": 3,
+          "won": true,
+          "name": "秋田修英",
+          "slug": null
+        },
+        {
+          "display": "大曲農業",
+          "score": 2,
+          "won": false,
+          "name": "大曲農業高校",
+          "slug": "omagarinogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "3回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "秋田南",
+          "score": 1,
+          "won": false,
+          "name": "秋田南高校",
+          "slug": "akitaminami"
+        },
+        {
+          "display": "横手",
+          "score": 2,
+          "won": true,
+          "name": "横手高校",
+          "slug": "yokote"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "3回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "男鹿工業",
+          "score": 3,
+          "won": true,
+          "name": "男鹿工業高校",
+          "slug": "ogakogyo"
+        },
+        {
+          "display": "角館",
+          "score": 2,
+          "won": false,
+          "name": "角館高校",
+          "slug": "kakunodate"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "3回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "横手城南",
+          "score": 11,
+          "won": true,
+          "name": "横手城南高校",
+          "slug": "yokotejonan"
+        },
+        {
+          "display": "湯沢",
+          "score": 5,
+          "won": false,
+          "name": "湯沢高校",
+          "slug": "yuzawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "準々決勝",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "秋田修英",
+          "score": 2,
+          "won": false,
+          "name": "秋田修英",
+          "slug": null
+        },
+        {
+          "display": "横手",
+          "score": 3,
+          "won": true,
+          "name": "横手高校",
+          "slug": "yokote"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "準々決勝",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "男鹿工業",
+          "score": 0,
+          "won": false,
+          "name": "男鹿工業高校",
+          "slug": "ogakogyo"
+        },
+        {
+          "display": "横手城南",
+          "score": 9,
+          "won": true,
+          "name": "横手城南高校",
+          "slug": "yokotejonan"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "準決勝",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "横手",
+          "score": 10,
+          "won": true,
+          "name": "横手高校",
+          "slug": "yokote"
+        },
+        {
+          "display": "横手城南",
+          "score": 4,
+          "won": false,
+          "name": "横手城南高校",
+          "slug": "yokotejonan"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "1回戦",
+      "venue": "山田久志サブマリンスタジアム",
+      "teams": [
+        {
+          "display": "大館桂桜",
+          "score": 3,
+          "won": false,
+          "name": "大館桂桜高校",
+          "slug": "odatekeio"
+        },
+        {
+          "display": "秋田西",
+          "score": 6,
+          "won": true,
+          "name": "秋田西高校",
+          "slug": "akitanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "2回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "秋田商業",
+          "score": 1,
+          "won": false,
+          "name": "秋田商業高校",
+          "slug": "akitashogyo"
+        },
+        {
+          "display": "秋田工業",
+          "score": 5,
+          "won": true,
+          "name": "秋田工業高校",
+          "slug": "akitakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "2回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "能代松陽",
+          "score": 5,
+          "won": true,
+          "name": "能代松陽高校",
+          "slug": "noshiroshoyo"
+        },
+        {
+          "display": "増田・羽後",
+          "score": 1,
+          "won": false,
+          "name": "増田・羽後",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "2回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "仁賀保",
+          "score": 0,
+          "won": false,
+          "name": "仁賀保高校",
+          "slug": "nikaho"
+        },
+        {
+          "display": "大館国際",
+          "score": 26,
+          "won": true,
+          "name": "大館国際",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "2回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "明桜",
+          "score": 3,
+          "won": false,
+          "name": "明桜",
+          "slug": null
+        },
+        {
+          "display": "新屋",
+          "score": 5,
+          "won": true,
+          "name": "新屋高校",
+          "slug": "araya"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "2回戦",
+      "venue": "山田久志サブマリンスタジアム",
+      "teams": [
+        {
+          "display": "大館鳳鳴",
+          "score": 2,
+          "won": false,
+          "name": "大館鳳鳴高校",
+          "slug": "odatehomei"
+        },
+        {
+          "display": "横手清陵",
+          "score": 3,
+          "won": true,
+          "name": "横手清陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "2回戦",
+      "venue": "山田久志サブマリンスタジアム",
+      "teams": [
+        {
+          "display": "秋田西",
+          "score": 14,
+          "won": true,
+          "name": "秋田西高校",
+          "slug": "akitanishi"
+        },
+        {
+          "display": "秋田高専",
+          "score": 4,
+          "won": false,
+          "name": "秋田工業高専",
+          "slug": "akitakogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "2回戦",
+      "venue": "山田久志サブマリンスタジアム",
+      "teams": [
+        {
+          "display": "秋田北鷹",
+          "score": 1,
+          "won": false,
+          "name": "秋田北鷹高校",
+          "slug": "akitahokuyo"
+        },
+        {
+          "display": "秋田",
+          "score": 5,
+          "won": true,
+          "name": "秋田高校",
+          "slug": "akita"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "2回戦",
+      "venue": "山田久志サブマリンスタジアム",
+      "teams": [
+        {
+          "display": "由利",
+          "score": 8,
+          "won": false,
+          "name": "由利高校",
+          "slug": "yuri"
+        },
+        {
+          "display": "大曲工業",
+          "score": 9,
+          "won": true,
+          "name": "大曲工業高校",
+          "slug": "omagarikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "3回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "秋田工業",
+          "score": 1,
+          "won": false,
+          "name": "秋田工業高校",
+          "slug": "akitakogyo"
+        },
+        {
+          "display": "能代松陽",
+          "score": 8,
+          "won": true,
+          "name": "能代松陽高校",
+          "slug": "noshiroshoyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "3回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "大館国際",
+          "score": 0,
+          "won": false,
+          "name": "大館国際",
+          "slug": null
+        },
+        {
+          "display": "新屋",
+          "score": 5,
+          "won": true,
+          "name": "新屋高校",
+          "slug": "araya"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "3回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "横手清陵",
+          "score": 0,
+          "won": false,
+          "name": "横手清陵",
+          "slug": null
+        },
+        {
+          "display": "秋田西",
+          "score": 3,
+          "won": true,
+          "name": "秋田西高校",
+          "slug": "akitanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "3回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "秋田",
+          "score": 5,
+          "won": false,
+          "name": "秋田高校",
+          "slug": "akita"
+        },
+        {
+          "display": "大曲工業",
+          "score": 6,
+          "won": true,
+          "name": "大曲工業高校",
+          "slug": "omagarikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "準々決勝",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "能代松陽",
+          "score": 1,
+          "won": false,
+          "name": "能代松陽高校",
+          "slug": "noshiroshoyo"
+        },
+        {
+          "display": "新屋",
+          "score": 3,
+          "won": true,
+          "name": "新屋高校",
+          "slug": "araya"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "準々決勝",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "秋田西",
+          "score": 2,
+          "won": false,
+          "name": "秋田西高校",
+          "slug": "akitanishi"
+        },
+        {
+          "display": "大曲工業",
+          "score": 7,
+          "won": true,
+          "name": "大曲工業高校",
+          "slug": "omagarikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "準決勝",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "新屋",
+          "score": 0,
+          "won": false,
+          "name": "新屋高校",
+          "slug": "araya"
+        },
+        {
+          "display": "大曲工業",
+          "score": 3,
+          "won": true,
+          "name": "大曲工業高校",
+          "slug": "omagarikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 秋田大会",
+      "round": "決勝",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "大曲工業",
+          "score": 1,
+          "won": false,
+          "name": "大曲工業高校",
+          "slug": "omagarikogyo"
+        },
+        {
+          "display": "横手",
+          "score": 7,
+          "won": true,
+          "name": "横手高校",
+          "slug": "yokote"
         }
       ]
     },
@@ -8438,791 +9223,6 @@
           "won": false,
           "name": "秋田南高校",
           "slug": "akitaminami"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-09",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "1回戦",
-      "venue": "ＩＴＯＫＥＮ８０ｔｈスタジアムよこて",
-      "teams": [
-        {
-          "display": "大曲",
-          "score": 0,
-          "won": false,
-          "name": "大曲高校",
-          "slug": "omagari"
-        },
-        {
-          "display": "秋田中央",
-          "score": 9,
-          "won": true,
-          "name": "秋田中央高校",
-          "slug": "akitachuo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-08",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "1回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "能代",
-          "score": 18,
-          "won": true,
-          "name": "能代高校",
-          "slug": "noshiro"
-        },
-        {
-          "display": "湯沢翔北",
-          "score": 6,
-          "won": false,
-          "name": "湯沢翔北高校",
-          "slug": "yuzawashohoku"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-09",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "2回戦",
-      "venue": "ＩＴＯＫＥＮ８０ｔｈスタジアムよこて",
-      "teams": [
-        {
-          "display": "秋田修英",
-          "score": 11,
-          "won": true,
-          "name": "秋田修英",
-          "slug": null
-        },
-        {
-          "display": "能代科技・男鹿海洋五城目",
-          "score": 1,
-          "won": false,
-          "name": "能代科技・男鹿海洋五城目",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "2回戦",
-      "venue": "ＩＴＯＫＥＮ８０ｔｈスタジアムよこて",
-      "teams": [
-        {
-          "display": "大曲農業",
-          "score": 9,
-          "won": true,
-          "name": "大曲農業高校",
-          "slug": "omagarinogyo"
-        },
-        {
-          "display": "西目・西仙北大農太田・六郷",
-          "score": 2,
-          "won": false,
-          "name": "西目・西仙北大農太田・六郷",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "2回戦",
-      "venue": "ＩＴＯＫＥＮ８０ｔｈスタジアムよこて",
-      "teams": [
-        {
-          "display": "秋田南",
-          "score": 7,
-          "won": true,
-          "name": "秋田南高校",
-          "slug": "akitaminami"
-        },
-        {
-          "display": "秋田中央",
-          "score": 1,
-          "won": false,
-          "name": "秋田中央高校",
-          "slug": "akitachuo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "2回戦",
-      "venue": "ＩＴＯＫＥＮ８０ｔｈスタジアムよこて",
-      "teams": [
-        {
-          "display": "金足農業",
-          "score": 1,
-          "won": false,
-          "name": "金足農業高校",
-          "slug": "kanaashinogyo"
-        },
-        {
-          "display": "横手",
-          "score": 3,
-          "won": true,
-          "name": "横手高校",
-          "slug": "yokote"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-09",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "2回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "本荘",
-          "score": 4,
-          "won": false,
-          "name": "本荘高校",
-          "slug": "honjo"
-        },
-        {
-          "display": "男鹿工業",
-          "score": 6,
-          "won": true,
-          "name": "男鹿工業高校",
-          "slug": "ogakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "2回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "能代",
-          "score": 0,
-          "won": false,
-          "name": "能代高校",
-          "slug": "noshiro"
-        },
-        {
-          "display": "角館",
-          "score": 6,
-          "won": true,
-          "name": "角館高校",
-          "slug": "kakunodate"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "2回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "横手城南",
-          "score": 5,
-          "won": true,
-          "name": "横手城南高校",
-          "slug": "yokotejonan"
-        },
-        {
-          "display": "由利工業",
-          "score": 4,
-          "won": false,
-          "name": "由利工業高校",
-          "slug": "yurikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-09",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "2回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "湯沢",
-          "score": 7,
-          "won": true,
-          "name": "湯沢高校",
-          "slug": "yuzawa"
-        },
-        {
-          "display": "鹿角",
-          "score": 4,
-          "won": false,
-          "name": "鹿角高校",
-          "slug": "kazuno"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-13",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "3回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "秋田修英",
-          "score": 3,
-          "won": true,
-          "name": "秋田修英",
-          "slug": null
-        },
-        {
-          "display": "大曲農業",
-          "score": 2,
-          "won": false,
-          "name": "大曲農業高校",
-          "slug": "omagarinogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-14",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "3回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "秋田南",
-          "score": 1,
-          "won": false,
-          "name": "秋田南高校",
-          "slug": "akitaminami"
-        },
-        {
-          "display": "横手",
-          "score": 2,
-          "won": true,
-          "name": "横手高校",
-          "slug": "yokote"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-14",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "3回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "男鹿工業",
-          "score": 3,
-          "won": true,
-          "name": "男鹿工業高校",
-          "slug": "ogakogyo"
-        },
-        {
-          "display": "角館",
-          "score": 2,
-          "won": false,
-          "name": "角館高校",
-          "slug": "kakunodate"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-13",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "3回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "横手城南",
-          "score": 11,
-          "won": true,
-          "name": "横手城南高校",
-          "slug": "yokotejonan"
-        },
-        {
-          "display": "湯沢",
-          "score": 5,
-          "won": false,
-          "name": "湯沢高校",
-          "slug": "yuzawa"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-17",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "準々決勝",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "秋田修英",
-          "score": 2,
-          "won": false,
-          "name": "秋田修英",
-          "slug": null
-        },
-        {
-          "display": "横手",
-          "score": 3,
-          "won": true,
-          "name": "横手高校",
-          "slug": "yokote"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "準々決勝",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "男鹿工業",
-          "score": 0,
-          "won": false,
-          "name": "男鹿工業高校",
-          "slug": "ogakogyo"
-        },
-        {
-          "display": "横手城南",
-          "score": 9,
-          "won": true,
-          "name": "横手城南高校",
-          "slug": "yokotejonan"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "準決勝",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "横手",
-          "score": 10,
-          "won": true,
-          "name": "横手高校",
-          "slug": "yokote"
-        },
-        {
-          "display": "横手城南",
-          "score": 4,
-          "won": false,
-          "name": "横手城南高校",
-          "slug": "yokotejonan"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-09",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "1回戦",
-      "venue": "山田久志サブマリンスタジアム",
-      "teams": [
-        {
-          "display": "大館桂桜",
-          "score": 3,
-          "won": false,
-          "name": "大館桂桜高校",
-          "slug": "odatekeio"
-        },
-        {
-          "display": "秋田西",
-          "score": 6,
-          "won": true,
-          "name": "秋田西高校",
-          "slug": "akitanishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-09",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "2回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "秋田商業",
-          "score": 1,
-          "won": false,
-          "name": "秋田商業高校",
-          "slug": "akitashogyo"
-        },
-        {
-          "display": "秋田工業",
-          "score": 5,
-          "won": true,
-          "name": "秋田工業高校",
-          "slug": "akitakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "2回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "能代松陽",
-          "score": 5,
-          "won": true,
-          "name": "能代松陽高校",
-          "slug": "noshiroshoyo"
-        },
-        {
-          "display": "増田・羽後",
-          "score": 1,
-          "won": false,
-          "name": "増田・羽後",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "2回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "仁賀保",
-          "score": 0,
-          "won": false,
-          "name": "仁賀保高校",
-          "slug": "nikaho"
-        },
-        {
-          "display": "大館国際",
-          "score": 26,
-          "won": true,
-          "name": "大館国際",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-09",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "2回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "明桜",
-          "score": 3,
-          "won": false,
-          "name": "明桜",
-          "slug": null
-        },
-        {
-          "display": "新屋",
-          "score": 5,
-          "won": true,
-          "name": "新屋高校",
-          "slug": "araya"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "2回戦",
-      "venue": "山田久志サブマリンスタジアム",
-      "teams": [
-        {
-          "display": "大館鳳鳴",
-          "score": 2,
-          "won": false,
-          "name": "大館鳳鳴高校",
-          "slug": "odatehomei"
-        },
-        {
-          "display": "横手清陵",
-          "score": 3,
-          "won": true,
-          "name": "横手清陵",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-07-11",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "2回戦",
-      "venue": "山田久志サブマリンスタジアム",
-      "teams": [
-        {
-          "display": "秋田西",
-          "score": 14,
-          "won": true,
-          "name": "秋田西高校",
-          "slug": "akitanishi"
-        },
-        {
-          "display": "秋田高専",
-          "score": 4,
-          "won": false,
-          "name": "秋田工業高専",
-          "slug": "akitakogyo-kosen"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-10",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "2回戦",
-      "venue": "山田久志サブマリンスタジアム",
-      "teams": [
-        {
-          "display": "秋田北鷹",
-          "score": 1,
-          "won": false,
-          "name": "秋田北鷹高校",
-          "slug": "akitahokuyo"
-        },
-        {
-          "display": "秋田",
-          "score": 5,
-          "won": true,
-          "name": "秋田高校",
-          "slug": "akita"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-09",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "2回戦",
-      "venue": "山田久志サブマリンスタジアム",
-      "teams": [
-        {
-          "display": "由利",
-          "score": 8,
-          "won": false,
-          "name": "由利高校",
-          "slug": "yuri"
-        },
-        {
-          "display": "大曲工業",
-          "score": 9,
-          "won": true,
-          "name": "大曲工業高校",
-          "slug": "omagarikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-13",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "3回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "秋田工業",
-          "score": 1,
-          "won": false,
-          "name": "秋田工業高校",
-          "slug": "akitakogyo"
-        },
-        {
-          "display": "能代松陽",
-          "score": 8,
-          "won": true,
-          "name": "能代松陽高校",
-          "slug": "noshiroshoyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-14",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "3回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "大館国際",
-          "score": 0,
-          "won": false,
-          "name": "大館国際",
-          "slug": null
-        },
-        {
-          "display": "新屋",
-          "score": 5,
-          "won": true,
-          "name": "新屋高校",
-          "slug": "araya"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-14",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "3回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "横手清陵",
-          "score": 0,
-          "won": false,
-          "name": "横手清陵",
-          "slug": null
-        },
-        {
-          "display": "秋田西",
-          "score": 3,
-          "won": true,
-          "name": "秋田西高校",
-          "slug": "akitanishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-13",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "3回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "秋田",
-          "score": 5,
-          "won": false,
-          "name": "秋田高校",
-          "slug": "akita"
-        },
-        {
-          "display": "大曲工業",
-          "score": 6,
-          "won": true,
-          "name": "大曲工業高校",
-          "slug": "omagarikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-16",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "準々決勝",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "能代松陽",
-          "score": 1,
-          "won": false,
-          "name": "能代松陽高校",
-          "slug": "noshiroshoyo"
-        },
-        {
-          "display": "新屋",
-          "score": 3,
-          "won": true,
-          "name": "新屋高校",
-          "slug": "araya"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-17",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "準々決勝",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "秋田西",
-          "score": 2,
-          "won": false,
-          "name": "秋田西高校",
-          "slug": "akitanishi"
-        },
-        {
-          "display": "大曲工業",
-          "score": 7,
-          "won": true,
-          "name": "大曲工業高校",
-          "slug": "omagarikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-19",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "準決勝",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "新屋",
-          "score": 0,
-          "won": false,
-          "name": "新屋高校",
-          "slug": "araya"
-        },
-        {
-          "display": "大曲工業",
-          "score": 3,
-          "won": true,
-          "name": "大曲工業高校",
-          "slug": "omagarikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-21",
-      "season": "summer",
-      "tournament": "第108回全国高等学校野球選手権 秋田大会",
-      "round": "決勝",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "大曲工業",
-          "score": 1,
-          "won": false,
-          "name": "大曲工業高校",
-          "slug": "omagarikogyo"
-        },
-        {
-          "display": "横手",
-          "score": 7,
-          "won": true,
-          "name": "横手高校",
-          "slug": "yokote"
         }
       ]
     },

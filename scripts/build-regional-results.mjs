@@ -5605,9 +5605,20 @@ const mie = {
           tournament: g.tournament,
           round: g.round,
           venue: g.venue,
+          // ★**各回の得点も持たせる**（`readBoxScores` の説明。石川と同じ）
           teams: [
-            { display: g.teams[0].name, score: g.teams[0].score, won: g.teams[0].score > g.teams[1].score },
-            { display: g.teams[1].name, score: g.teams[1].score, won: g.teams[1].score > g.teams[0].score },
+            {
+              display: g.teams[0].name,
+              score: g.teams[0].score,
+              won: g.teams[0].score > g.teams[1].score,
+              innings: g.teams[0].innings,
+            },
+            {
+              display: g.teams[1].name,
+              score: g.teams[1].score,
+              won: g.teams[1].score > g.teams[0].score,
+              innings: g.teams[1].innings,
+            },
           ],
         });
       }
@@ -5705,7 +5716,17 @@ const mie = {
           round,
           md: md ? [Number(md[1]), Number(md[2])] : null,
           venue,
-          teams: teams.map((t) => ({ name: t.name, score: val(t.total) })),
+          /*
+            ★★**各回の得点を残す**（2026-09-06。運営者の指示。石川と同じ）。
+            **検算（各回の和＝印刷された合計）に使ったあと捨てていた**ものを持たせるだけで、
+            読み方は変えていない。**通った試合しかここへ来ない**ので和は必ず合う。
+            ★**サヨナラの `2x` は数だけにする**（`val`）。**印は落ちるが得点は正しい。**
+          */
+          teams: teams.map((t) => ({
+            name: t.name,
+            score: val(t.total),
+            innings: t.innings.map(val),
+          })),
         });
       }
     }
@@ -7062,9 +7083,31 @@ const ishikawa = {
             season,
             round,
             venue: mark.text.trim().replace(/^◆/, ""),
+            /*
+              ★★**各回の得点を残す**（2026-09-06。運営者の指示）。
+
+              **読み手はもともとこれを組み立てている** —— 「各回の和＝印刷された合計」が
+              この紙のいちばん強い検算だからで、**使ったあと捨てていた。**
+              ★**捨てずに持たせるだけ**なので、読み方は1バイトも変えていない。
+              ★**検算を通った試合しかここへ来ない**ので、和は必ず合計と一致する。
+
+              ★★**持てる県と持てない県がある。** 紙に合計しか刷っていない県
+              （大阪・愛知・群馬ほか多数）では**そもそも取りようがない。**
+              **無い試合に 0 を並べないこと**（空欄を0と読む轍を踏まない）。
+            */
             teams: [
-              { display: names[0], score: sides[0].total, won: sides[0].total > sides[1].total },
-              { display: names[1], score: sides[1].total, won: sides[1].total > sides[0].total },
+              {
+                display: names[0],
+                score: sides[0].total,
+                won: sides[0].total > sides[1].total,
+                innings: sides[0].innings,
+              },
+              {
+                display: names[1],
+                score: sides[1].total,
+                won: sides[1].total > sides[0].total,
+                innings: sides[1].innings,
+              },
             ],
           });
         }
@@ -15737,7 +15780,36 @@ const HSB_BASE = {
       （`svg-bracket.mjs` の「いちばん上の山が2つ以上」を読むこと）。
     */
     let built = readHsbBracket(html, { district: this.district, blocks: Boolean(info.entries) });
-    if (!built) return [];
+    /*
+      ★★★**読めなかったときも、開催中として読み直す**（2026-09-06。運営者から
+      「福岡が反映されていない」）。
+
+      **開催中の紙は、左右の山の進み方が違う。** 福岡の2026年秋季は
+      **左が3回戦まで・右が1回戦まで**進んでおり、
+      `左右で回戦の数が違う（左 3 / 右 1）` で**1試合も出していなかった**
+      （2018〜2025年の秋季は各127試合前後すべて入っているのに今年だけ落ちていた）。
+
+      ★★**この検査は「終わった試合から回戦を数える」ことが前提**で、
+      **開催中はその数え方自体が当たらない**（`svg-bracket.mjs` の `partial` が
+      骨格の縦線から数え直す）。
+      ★**下の「算数が合わない」からの読み直しと同じ入口に合流させる** ——
+      **受けるのは決勝がまだで、記載の優勝校も無いときだけ。**
+      **終わっているのに読めないのは読み違え**なので、今までどおり落とす。
+    */
+    if (!built) {
+      const again = readHsbBracket(html, {
+        district: this.district,
+        blocks: Boolean(info.entries),
+        partial: true,
+      });
+      const unfinished = again && !again.games.some((g) => g.round === "決勝") && !info.champion;
+      if (!unfinished) return [];
+      console.log(
+        `  ℹ️ ${this.district}: ${info.title} は開催中（${again.slots.length} チーム中 ` +
+          `${again.games.length} 試合が終了）。**終わったところまで出す**`,
+      );
+      built = again;
+    }
     /*
       ★★★**開催中の大会は「終わったところまで」を出す**（2026-09-06。運営者の指示）。
 

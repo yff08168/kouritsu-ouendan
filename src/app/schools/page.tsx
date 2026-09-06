@@ -92,13 +92,21 @@ export async function generateMetadata({
   const keyword = normalizeQuery(q);
   const prefecture = pref ? PREFECTURE_BY_SLUG.get(pref) : undefined;
 
+  /*
+    ★★**題に「野球部」を入れる**（2026-09-06）。
+    それまでは `公立高校を探す` で、**このサイトが野球のサイトであることが
+    タイトルに1文字も無かった。** 学校ページの h1・title を
+    「◯◯高校の野球部」にそろえたのと同じ理由。
+  */
   const titleParts = [
-    prefecture ? `${prefecture.name}の公立高校` : null,
+    prefecture ? `${prefecture.name}の公立高校 野球部一覧` : null,
     keyword ? `「${keyword}」の検索結果` : null,
   ].filter(Boolean);
 
   const title =
-    titleParts.length > 0 ? titleParts.join(" ") : "公立高校を探す";
+    titleParts.length > 0
+      ? titleParts.join(" ")
+      : "公立高校の野球部を探す｜都道府県・学校名から検索";
 
   return {
     title,
@@ -199,8 +207,9 @@ export default async function SchoolsPage({ searchParams }: Props) {
       <header className="rounded-xl border border-line bg-white p-5">
         <div className="flex items-center gap-2">
           <School size={24} aria-hidden="true" className="text-accent-500" />
+          {/* ★ title と語をそろえる（2026-09-06）。理由は generateMetadata のコメント */}
           <h1 className="text-xl font-bold text-navy-800 sm:text-2xl">
-            公立高校を探す
+            公立高校の野球部を探す
           </h1>
         </div>
         <p className="mt-2 text-base leading-relaxed text-ink-muted">

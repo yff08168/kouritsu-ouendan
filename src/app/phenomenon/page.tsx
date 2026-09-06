@@ -50,9 +50,13 @@ export async function generateMetadata({
   const parsedYear = Number.parseInt(year ?? "", 10);
 
   return {
+    /*
+      ★**区切りは全角「｜」にそろえる**（2026-09-06。`SITE.titleSeparator`）。
+      ダッシュのままだと `公立旋風 — …｜公立応援団` と2種類が1つのタイトルに並ぶ。
+    */
     title: Number.isFinite(parsedYear)
       ? `${parsedYear}年の${PHENOMENON.label}`
-      : `${PHENOMENON.label} — ${PHENOMENON.tagline}`,
+      : `${PHENOMENON.label}｜${PHENOMENON.tagline}`,
     description: PHENOMENON.description,
     alternates: { canonical: "/phenomenon" },
   };

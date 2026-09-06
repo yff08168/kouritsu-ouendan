@@ -63,11 +63,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     "出場した公立高校の成績もまとめています。",
   ].join("");
 
+  /*
+    ★★**title の先頭に西暦を置く**（2026-09-06）。
+
+    大会の正式名には**回数しか入っていない**（`第107回全国高等学校野球選手権大会`）ので、
+    **探す人が打つ「2025 選手権 結果」の年がタイトルに1文字も無かった。**
+    ★**先頭に置くのは、日本語の検索結果が30文字ほどで切れるため** ——
+    後ろに付けると、いちばん効く語から先に落ちる。
+
+    ★★**「甲子園」を足さないこと** —— **第1〜9回は豊中・鳴尾**で、
+    **出典に球場は入っていない**（AGENTS.md「球場を補わない」）。
+    199大会に一律で書けば、そのぶんが嘘になる。
+    ★**一覧（`/koshien`）とパンくずが「甲子園の記録」を持っている。**
+  */
+  const title = `${t.year}年 ${t.name}`;
+
   return {
-    title: t.name,
+    title,
     description,
     alternates: { canonical: `/koshien/${t.slug}` },
-    openGraph: { type: "article", title: `${t.name}｜公立応援団`, description },
+    openGraph: { type: "article", title: `${title}｜公立応援団`, description },
   };
 }
 

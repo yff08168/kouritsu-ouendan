@@ -103,11 +103,41 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? `地方大会の結果を${tournaments.length}大会・${totalGames}試合ぶん掲載しています。`
       : "",
     latest?.displayName ? `最新は「${latest.displayName}」。` : "",
-    `公立高校・国立高校・高専${schools.total}校の一覧と、公立旋風もまとめています。`,
+    /*
+      ★★**「0校の一覧」と書かないこと**（2026-09-06）。
+      **北海道と東京は地方大会だけの地区**で、**学校は1校も紐づかない**
+      （学校は北北海道・南北海道…のどれかに属している）。
+      **リード文（`prefecture-lead.ts`）は既に0を避けていた**が、
+      **検索結果に出るこちらは `…高専0校の一覧` のままだった。**
+      ★**0を書かない**（サイト全体で守っている線）。
+    */
+    schools.total > 0
+      ? `公立高校・国立高校・高専${schools.total}校の一覧と、公立旋風もまとめています。`
+      : "",
   ].join("");
 
+  /*
+    ★★**title に「地方大会の結果」を入れる**（2026-09-06。運営者の判断）。
+
+    それまでは `神奈川県の公立高校野球` で、**このページの主役である
+    地方大会の結果とその大会名が、タイトルに1文字も入っていなかった。**
+    想定している読者の1つが**「各都道府県の速報・結果を見たい人」**で、
+    打つのは「神奈川 高校野球 結果」「神奈川県大会 結果」。
+    ★**開催中の速報は `/live/<県>`、終わった大会はこのページ**という住み分けなので、
+    こちらは**「結果」**を持つ。
+
+    ★★**持っている県でだけ書く。** 地方大会が無い地区に「結果」と書かない
+    （画面には無い）。**学校が0校の地区に「公立高校一覧」と書かない**（同上）。
+  */
+  const title =
+    tournaments.length > 0
+      ? schools.total > 0
+        ? `${prefecture.fullName}の高校野球｜地方大会の結果・公立高校一覧`
+        : `${prefecture.fullName}の高校野球｜地方大会の結果`
+      : `${prefecture.fullName}の公立高校野球`;
+
   return {
-    title: `${prefecture.fullName}の公立高校野球`,
+    title,
     description,
     alternates: { canonical: `/prefectures/${prefecture.slug}` },
   };

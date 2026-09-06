@@ -13,10 +13,21 @@ import { PREFECTURES, REGIONS } from "@/lib/constants";
 
 export const revalidate = 3600;
 
+/*
+  ★★**題に「野球」と「地方大会の結果」を入れる**（2026-09-06）。
+  それまでは `都道府県から公立高校を探す` で、**このページの先にあるものが
+  何なのかがタイトルから分からなかった。**
+
+  ★★**あわせて description の「地方大会のニュース」を外した** ——
+  **ニュースは 2026-08-24 に画面から外してある**（運営予定が無い）のに、
+  **検索結果に出るこの一文だけが誘導を続けていた。**
+  **まだ無いものへ誘導しない**（サイト全体で守っている線）。
+*/
 export const metadata: Metadata = {
-  title: "都道府県から公立高校を探す",
+  title: "都道府県別の公立高校野球｜地方大会の結果と学校一覧",
   description:
-    "47都道府県から公立高校・国立高校・高専を探せます。地域ごとの注目校、地方大会のニュース、公立旋風もまとめて確認できます。",
+    "47都道府県の地図から、その地区の公立高校・国立高校・高専と、地方大会の結果を見に行けます。" +
+    "マスには春・夏それぞれで、その地区から最後に甲子園へ出た公立校を出しています。",
   alternates: { canonical: "/prefectures" },
 };
 
@@ -44,8 +55,9 @@ export default async function PrefecturesPage() {
       <header className="rounded-xl border border-line bg-white p-5 sm:p-7">
         <div className="flex items-center gap-2">
           <MapPinned size={22} aria-hidden="true" className="text-accent-500" />
+          {/* ★ title と語をそろえる（2026-09-06）。理由は上の metadata のコメント */}
           <h1 className="text-xl font-bold text-navy-800 sm:text-2xl">
-            都道府県から公立高校を探す
+            都道府県から公立高校野球を探す
           </h1>
         </div>
         <p className="mt-2 text-base leading-relaxed text-ink-muted">

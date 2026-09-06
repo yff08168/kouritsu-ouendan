@@ -7,18 +7,36 @@ import { Analytics } from "@/components/common/Analytics";
 import { websiteJsonLd } from "@/lib/seo";
 import "./globals.css";
 
+/*
+  ★★**トップの title はキャッチコピーではなく「何が載っているか」**（2026-09-06。運営者の判断）。
+
+  それまでは `公立応援団 | 公立高校野球が、もっと面白くなる。` で、
+  **検索語が「公立高校野球」しか入っていなかった。**
+  想定している読者は**県の速報を見に来る人・学校の戦績を調べに来る人・
+  公立を応援している人**の3つで、**戦績・結果・速報のどれもタイトルに無かった。**
+
+  ★**キャッチコピーはヒーローの h1 に残っている**（画面からは消えていない）。
+  ★**文言は `SITE.searchTagline`**（そこに「無いものを書かない」の理由も書いてある）。
+*/
+const HOME_TITLE = `${SITE.name}${SITE.titleSeparator}${SITE.searchTagline}`;
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} | ${SITE.catchphrase}`,
-    template: `%s | ${SITE.name}`,
+    default: HOME_TITLE,
+    /*
+      ★**区切りは全角「｜」**（`SITE.titleSeparator`）。
+      ページ側の title も全角で書いてあるので、**1つのタイトルに2種類の区切りが
+      出ない**ようにそろえてある。理由は定数側のコメントに書いた。
+    */
+    template: `%s${SITE.titleSeparator}${SITE.name}`,
   },
   description: SITE.description,
   openGraph: {
     type: "website",
     locale: SITE.locale,
     siteName: SITE.name,
-    title: `${SITE.name} | ${SITE.catchphrase}`,
+    title: HOME_TITLE,
     description: SITE.description,
   },
   twitter: {

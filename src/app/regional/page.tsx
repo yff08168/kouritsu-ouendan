@@ -21,10 +21,15 @@ export const revalidate = 3600;
 
 const SEASON = REGIONAL_PROGRESS.season;
 
+/*
+  ★**題に「高校野球」を入れる**（2026-09-06）。`地方大会の進捗` だけでは
+  **何の大会か書いていない**（「地方大会」は他競技でも使う言葉）。
+  ★**季節は今日の日付で決めていない**（生成物の `season`。下のコメント参照）。
+*/
 export const metadata: Metadata = {
   title: SEASON
-    ? `地方大会の進捗（${seasonLabel(SEASON)}）`
-    : "地方大会の進捗",
+    ? `高校野球 地方大会の進捗（${seasonLabel(SEASON)}）`
+    : "高校野球 地方大会の進捗",
   description:
     "全国の地方大会が、いまどこまで進んでいるかを地図で一覧できます。地区を選ぶと、その大会で公立高校が出た試合を見られます。",
   alternates: { canonical: "/regional" },
@@ -133,8 +138,9 @@ export default function RegionalPage() {
       <header className="rounded-xl border border-line bg-white p-5 sm:p-7">
         <div className="flex items-center gap-2">
           <MapPinned size={22} aria-hidden="true" className="text-accent-500" />
+          {/* ★ title と語をそろえる（2026-09-06）。理由は上の metadata のコメント */}
           <h1 className="text-xl font-bold text-navy-800 sm:text-2xl">
-            地方大会の進捗
+            高校野球 地方大会の進捗
             {SEASON && (
               <span className="ml-2 text-base font-bold text-accent-800">
                 {seasonLabel(SEASON)}

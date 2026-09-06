@@ -63,9 +63,16 @@ export function RegionalDistrictCard({
       aria-labelledby="pref-regional"
       className="mt-4 rounded-xl border border-line bg-white p-5"
     >
+      {/*
+        ★**見出しに「結果」を入れる**（2026-09-06）。
+        `神奈川の秋季大会` だけだと**このカードに何が並んでいるか書いていない。**
+        県のページで**h1 の次に来る見出し**なので、
+        **「◯◯ 高校野球 結果」で来た人が着地を確かめる場所**でもある。
+        ★**中身は試合の結果そのもの**なので、書いてあることと画面が食い違わない。
+      */}
       <SectionHeading
         id="pref-regional"
-        title={`${district.district}の${seasonLabel(season)}`}
+        title={`${district.district}の${seasonLabel(season)} 結果`}
         icon={<MapPinned size={18} />}
       />
 

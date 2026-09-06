@@ -77,8 +77,13 @@ export async function generateMetadata({
     /*
       ★★**「速報」を見出しの語に入れる**（検索されるのは「◯◯ 高校野球 速報」）。
       ★**県名 → 競技 → 速報 の順**。読んだときに何のページか分かる並びにする。
+
+      ★★**「結果」も入れる**（2026-09-06）。**同じ人が日中は「速報」で、
+      夜は「結果」で探す。** この盤は終わった試合もその日の分は載せているので、
+      **どちらの語も画面の中身と合っている。**
+      ★**過去の大会の結果は `/prefectures/<県>` が持つ**（住み分けはあちらのコメント）。
     */
-    title: `${name}の高校野球 試合速報`,
+    title: `${name}の高校野球 試合速報・結果`,
     description,
     alternates: { canonical: `/live/${slug}` },
     /*
@@ -153,8 +158,20 @@ export default async function LivePrefecturePage({
           ★**見出しは「◯◯の高校野球 試合速報」**（2026-09-05）。
           「◯◯の試合速報」だけだと**何の競技か書いていない** ——
           このサイトの他のページと違い、速報は県名＋競技名で探される。
+          ★**「結果」まで入れた**（2026-09-06。title と語をそろえる。
+          理由は `generateMetadata` のコメント）。
         */}
-        <h1 className="text-2xl font-bold">{title}の高校野球 試合速報</h1>
+        {/*
+          ★**語のまとまりで折り返す**（2026-09-06）。日本語はどこでも改行できるので、
+          そのままだと**375px幅で「…試合速報・結」「果」と1文字だけ落ちる**（実測）。
+          ★**`whitespace-nowrap` を2つに分けて、県名と「試合速報・結果」の
+          あいだで折り返させる。** `<br>` で決め打ちしないこと ——
+          県名の長さが「北北海道」から「三重」まで幅3文字ぶん違う。
+        */}
+        <h1 className="text-2xl font-bold">
+          <span className="whitespace-nowrap">{title}の高校野球</span>{" "}
+          <span className="whitespace-nowrap">試合速報・結果</span>
+        </h1>
         <LiveRefresh />
       </div>
 

@@ -72,7 +72,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: { canonical: `/archive/${entry.year}` },
     openGraph: {
       type: "article",
-      title: `${entry.year}年の高校野球 | 公立応援団`,
+      title: `${entry.year}年の高校野球｜公立応援団`,
       description,
     },
   };

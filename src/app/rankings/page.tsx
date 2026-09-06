@@ -19,8 +19,13 @@ import { TWENTY_FIRST_CENTURY_BERTHS } from "@/lib/data/twenty-first-century";
 // 出場歴が増えるのは年に2回だけ。長めに取って毎回の集計を減らす。
 export const revalidate = 86400;
 
+/*
+  ★**題に主語を入れる**（2026-09-06）。`記録・ランキング` だけでは
+  **何の記録か書いていない**（テンプレートが足す「公立応援団」も、
+  名前で探す人がまだいないうちは主語の代わりにならない）。
+*/
 export const metadata: Metadata = {
-  title: "記録・ランキング",
+  title: "公立高校野球の記録・ランキング",
   description:
     "全国の公立高校の甲子園記録をまとめたページ。出場回数・通算勝利数・春夏の最高成績・21世紀枠・都道府県別の分布まで、公立高校野球の記録を図で見られます。",
   alternates: { canonical: "/rankings" },
@@ -44,8 +49,9 @@ export default async function RankingsPage() {
       <header className="rounded-xl border border-line bg-white p-5">
         <div className="flex items-center gap-2">
           <BarChart3 size={22} aria-hidden="true" className="text-accent-500" />
+          {/* ★ title と語をそろえる（2026-09-06）。理由は上の metadata のコメント */}
           <h1 className="text-xl font-bold text-navy-800 sm:text-2xl">
-            記録・ランキング
+            公立高校野球の記録・ランキング
           </h1>
         </div>
         <p className="mt-2 text-sm leading-relaxed text-ink-muted">

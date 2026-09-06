@@ -95,7 +95,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { a, b, record } = found;
 
   const label = labelsOf(a, b);
-  const title = `${label.a} vs ${label.b} 直接対決`;
+  /*
+    ★**題は「対戦成績」**（2026-09-06）。画面の見出しは「直接対決」で通しているが、
+    **探す人が打つのは「◯◯高校 ◯◯高校 対戦成績」**のほう。
+    ★**「直接対決」は description と本文にそのまま残っている**ので、どちらでも当たる。
+  */
+  const title = `${label.a} vs ${label.b}の対戦成績`;
   const description =
     `${label.a}と${label.b}の直接対決は通算${record.meetings.length}戦。` +
     `${label.a}が${record.wins}勝、${label.b}が${record.opponentWins}勝` +

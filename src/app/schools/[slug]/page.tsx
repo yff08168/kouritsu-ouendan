@@ -55,7 +55,7 @@ import { getCheerMessages } from "@/lib/queries/community";
 import { JsonLd } from "@/components/common/JsonLd";
 import { schoolJsonLd } from "@/lib/seo";
 
-import { ESTABLISHMENTS, SCHOOL_KINDS, establishmentLabel } from "@/lib/constants";
+import { ESTABLISHMENTS, SCHOOL_KINDS, SITE, establishmentLabel } from "@/lib/constants";
 import { bestResultBySeason } from "@/lib/koshien";
 import { buildSchoolLead } from "@/lib/school-lead";
 import { TWENTY_FIRST_CENTURY_BERTHS } from "@/lib/data/twenty-first-century";
@@ -129,9 +129,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     北海道の学校は `北北海道・旭川市` になる。**住所として直さないこと** ——
     このサイトは学校を大会区分で並べており、description・パンくず・
     検索結果の表示もすべてこの形で揃えてある。**title だけ別の見せ方にしない。**
+
+    ------------------------------------------------------------------
+    ★★**「戦績」を入れる**（2026-09-06。運営者が挙げた読者の1つが
+    **「各高校の戦績を調べたい人」**）。
+
+    ★★**戦績を持っているページでだけ書く** —— 甲子園も地方大会も無い学校に
+    「戦績」と書くと、画面には「まだありません」しか出ない。
+    **無いものを書かない**（description の分岐と同じ判定材料を使っている）。
+    ★**そちらのページは `isIndexableSchool` が noindex にする**ので、
+    実際に検索結果へ出るのは戦績のあるほうだけになる。
   */
+  const where = `${school.prefecture.name}${school.city ? `・${school.city}` : ""}`;
+  const hasRecord = koshienTotal > 0 || regionalGames > 0;
+  const title = hasRecord
+    ? `${school.name}（${where}）野球部の戦績`
+    : `${school.name}（${where}）の野球部`;
+
   return {
-    title: `${school.name}（${school.prefecture.name}${school.city ? `・${school.city}` : ""}）の野球部`,
+    title,
     description,
     alternates: { canonical: `/schools/${school.slug}` },
     // 中身の無いページは検索インデックスに入れない。理由は `lib/school-index.ts`。
@@ -140,7 +156,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : { index: false, follow: true },
     openGraph: {
       type: "article",
-      title: `${school.name}（${school.prefecture.name}）| 公立応援団`,
+      // ★**区切りは全角「｜」**（`SITE.titleSeparator` にそろえる）
+      title: `${title}｜${SITE.name}`,
       description,
     },
   };
@@ -357,8 +374,32 @@ export default async function SchoolDetailPage({ params }: Props) {
               )}
             </div>
 
+            {/*
+              ★★**h1 は「◯◯高校の野球部」**（2026-09-06。運営者の判断）。
+
+              それまでは校名だけで、**title（`◯◯高校（県・市）野球部の戦績`）と
+              語がそろっていなかった。** 想定している読者の1つが
+              **「各高校の戦績を調べたい人」**で、探すときに打つのは
+              「高校名 野球部」「高校名 野球 戦績」。**h1 にその語が無かった。**
+
+              ★★**短い校名（`school-name.ts`）は使わない** ——
+              **見出しは一意に伝える必要がある**という決めごとが AGENTS.md にある。
+              `school.name`（末尾の「高校」まで入った形）のまま「の野球部」を足す。
+
+              ★**正式名は今までどおりすぐ下に出す**（`神奈川県立新城高等学校`）。
+              ★**このページは学校紹介や応援メッセージも載せている**ので、
+              野球部だけのページではない。**それは承知のうえで、
+              このサイトに来る人が探しているものに見出しを合わせている。**
+            */}
             <h1 className="mt-2.5 text-2xl font-bold text-navy-800 sm:text-3xl">
               {school.name}
+              {/*
+                ★**「の野球部」を1語として折り返す**（2026-09-06）。
+                日本語はどこでも改行できるので、**長い校名のときに
+                「の野球」「部」と1文字だけ落ちる**（`/live/<県>` で実測した形）。
+                ★**校名そのものは折り返してよい**（連合チームや中等教育学校は長い）。
+              */}
+              <span className="whitespace-nowrap">の野球部</span>
             </h1>
             <p className="mt-1 text-sm text-ink-muted">{school.officialName}</p>
 

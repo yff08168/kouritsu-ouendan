@@ -322,10 +322,16 @@ export async function fetchLiveBoard(slug: string): Promise<LiveBoard | null> {
       plain(s[1]),
     );
     const num = (v: string | undefined) => (v && /^\d+$/.test(v) ? Number(v) : null);
-    const status = plain(/<td class="status"[^>]*>([\s\S]*?)<\/td>/.exec(item)?.[1] ?? "").replace(
-      /^〔|〕$/g,
-      "",
-    );
+    /*
+      ★★**括弧を外したあとに空白を落とす**（2026-09-06）。
+      **中止は `〔<span style="color:red;">中止</span>〕` と色を付けて刷ってある**ので、
+      タグを外すと `〔 中止 〕` になり、括弧だけ取ると **` 中止 ` と前後に空白が残る。**
+      ★**HTMLに出すぶんには詰まって見えるが、文に埋め込むと `「 中止 」` になる**
+      （リード文で実際にそうなった）。
+    */
+    const status = plain(/<td class="status"[^>]*>([\s\S]*?)<\/td>/.exec(item)?.[1] ?? "")
+      .replace(/^〔|〕$/g, "")
+      .trim();
     games.push({
       token: /href="\/flash\/([^"]+)"/.exec(item)?.[1] ?? null,
       first,

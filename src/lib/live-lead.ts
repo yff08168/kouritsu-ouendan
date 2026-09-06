@@ -40,7 +40,13 @@ export function buildLiveLead({
 
   const playing = games.filter((g) => g.playing);
   const finished = games.filter((g) => g.finished);
-  const before = games.filter((g) => !g.playing && !g.finished);
+  /*
+    ★★**「終了でも試合中でもない」を全部「これから」に落とさない**（2026-09-06）。
+    出典は中止になった試合に `〔中止〕` と書く。**それは開始前ではない。**
+    ★**本当に開始前の試合は、出典が何も書いていない**（`status` が空）。
+  */
+  const stopped = games.filter((g) => !g.playing && !g.finished && g.status);
+  const before = games.filter((g) => !g.playing && !g.finished && !g.status);
   const day = board.day ? `${board.day}の` : "今日の";
   const where = board.tournament ? `${board.tournament}は、` : "";
 
@@ -61,15 +67,30 @@ export function buildLiveLead({
           : "") +
         (finished.length > 0 ? `すでに${finished.length}試合が終わっています。` : ""),
     );
-  } else if (finished.length === games.length) {
+  } else if (before.length === 0 && finished.length > 0) {
+    /*
+      ★★**「これからの試合が1つも無い」は、全部終わったとは限らない**（2026-09-06）。
+      **中止になった試合がある。** 出典は `〔中止〕` のように書いており、
+      その試合は**終了でも試合中でもない。**
+      ★**「すべて終わりました」と書くと嘘になる**ので、終わった数と、
+      **出典が書いている言葉のまま**その数を並べる。
+      ★**「中止」と決め打ちで書かないこと** —— 順延・ノーゲームなど他の書き方がありうる。
+    */
     out.push(
-      `${where}${day}${games.length}試合はすべて終わりました。` +
-        `試合を選ぶと、イニングごとの得点が見られます。`,
+      stopped.length > 0
+        ? `${where}${day}${games.length}試合のうち${finished.length}試合が終わりました。` +
+            `残りの${stopped.length}試合は、出典に「${stoppedLabel(stopped)}」と出ています。`
+        : `${where}${day}${games.length}試合はすべて終わりました。` +
+            `試合を選ぶと、イニングごとの得点が見られます。`,
     );
   } else if (finished.length > 0) {
     out.push(
       `${where}${day}${games.length}試合のうち${finished.length}試合が終わり、` +
-        `残り${before.length}試合はこれからです。`,
+        `残り${before.length}試合はこれからです。` +
+        // ★**中止のぶんは「これから」に混ぜない**（上と同じ理由）
+        (stopped.length > 0
+          ? `ほかに${stopped.length}試合が「${stoppedLabel(stopped)}」です。`
+          : ""),
     );
   } else {
     const first = before.map((g) => g.place ?? "").find((p) => /\d{1,2}:\d{2}/.test(p));
@@ -91,4 +112,19 @@ export function buildLiveLead({
   }
 
   return out;
+}
+
+/**
+ * 中止などの試合につく言葉を1つにまとめる。
+ *
+ * ★**出典が書いた言葉をそのまま使う**（「中止」と決め打ちで書かない）。
+ * ★**書き方が混ざっていたら「中止・順延」のように並べる**（多い順）。
+ */
+function stoppedLabel(games: { status: string }[]): string {
+  const count = new Map<string, number>();
+  for (const g of games) count.set(g.status, (count.get(g.status) ?? 0) + 1);
+  return [...count.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([label]) => label)
+    .join("・");
 }

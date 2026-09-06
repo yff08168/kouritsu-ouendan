@@ -150,6 +150,26 @@ function StatusChip({ game }: { game: LiveGame }) {
         {game.status}
       </span>
     );
+  /*
+    ★★★**出典が何か書いていれば、それをそのまま出す**（2026-09-06。運営者から
+    「9時30分の試合が開始前になっている」）。
+
+    **福岡の3試合は出典が `〔中止〕` と刷っていた**のに、
+    **こちらが「終了でも試合中でもない」を全部「開始前」に落としていた**ので、
+    **22時になっても朝9時半の試合が「開始前」**と出ていた。
+    ★**読み落としであって、出典の誤りではない**（`fukuoka.hsbflash.jp` を直接見て確かめた）。
+
+    ★★**語を名指しで拾わないこと** —— いま見えているのは「中止」だけだが、
+    **順延・ノーゲーム・継続試合など、他の書き方がありうる。**
+    **「何か書いてあるならそれを出す」**にしておけば、どれが来ても画面に出る。
+    ★**何も書いていないときだけ「開始前」**（それが本当に開始前の試合）。
+  */
+  if (game.status)
+    return (
+      <span className="shrink-0 rounded border border-line px-1.5 py-0.5 text-[11px] font-bold text-ink-muted">
+        {game.status}
+      </span>
+    );
   return (
     <span className="shrink-0 rounded border border-line px-1.5 py-0.5 text-[11px] text-ink-faint">
       開始前

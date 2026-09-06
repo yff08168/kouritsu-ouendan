@@ -119,6 +119,15 @@ const flagValue = (name) => {
 };
 const onlyPref = flagValue("--pref");
 const jsonPath = flagValue("--json");
+/**
+ * ★**`--pickup-only`** —— 出典を1つも叩かず、書き出し済みの県のファイルから
+ * **トップ用の抜粋（`regional-pickup.ts`）だけ**を作り直す（2026-09-06 に足した）。
+ *
+ * ★**抜粋の選び方を変えたときに、その場で確かめるための口。**
+ * ★★**作り直すのは抜粋だけ** —— 勝ち上がりと進捗は `allGames` を見て数えており、
+ * それは生成物に入っていない。詳しくは `districtsFromFiles` の説明。
+ */
+const PICKUP_ONLY = args.includes("--pickup-only");
 /*
   ~~`--all` … 過去ぶんも全部残す。工数見積もりや検算のとき用~~
   → ★**2026-08-23 に既定が「全部残す」になったので消した**（`kept` の説明を読むこと）。
@@ -177,12 +186,20 @@ const MAX_PDF_PAGES = 45;
 const TARGET_YEAR = Number(flagValue("--year") ?? new Date().getFullYear());
 
 /**
- * トップ用の抜粋の大きさ。**トップページが読むのはこのファイルだけ。**
- * 1県から取りすぎると全国を見ている感じが出ないので、県ごとにも上限を置く。
- * 47県 × 4 = 188件だが、全体でも 80 件で切る（約30KB）。
+ * ~~トップ用の抜粋の大きさ~~ → ★★**2026-09-06 に使うのをやめた**（運営者の指示）。
+ *
+ * 抜粋は「**いちばん新しい日の全試合**」になったので、**上限で切らない**
+ * （切った瞬間に「その日の結果を全部」ではなくなる）。選び方は
+ * `pickupDate` のところに書いてある。
+ *
+ * ★**この2つは消さずに残してある** —— **夏の予選の山では1日342試合**になり
+ * （実測。2019-07-15、47県）、生成物もトップのHTMLもそのぶん大きくなる。
+ * **重いと判断したときに戻す口**として置いておく。
  */
 const PICKUP_PER_DISTRICT = 4;
 const PICKUP_TOTAL = 80;
+void PICKUP_PER_DISTRICT;
+void PICKUP_TOTAL;
 
 /**
  * 勝ち上がっている公立校を何校まで出すか。
@@ -18340,19 +18357,86 @@ function writeCoverage() {
   console.log(`  書き出した: ${path.relative(ROOT, OUT_COVERAGE)}（${rows.length} 県）`);
 }
 
+/**
+ * 書き出し済みの県のファイルから `districts` を組み直す（`--pickup-only`）。
+ *
+ * ------------------------------------------------------------------
+ * ★★**出典を1つも叩かない。** トップ用の抜粋（`regional-pickup.ts`）は
+ * **県のファイルだけから決まる**ので、出典を取り直さなくても作り直せる。
+ * ★**選び方を変えたときに、その場で確かめるための口**（2026-09-06 に足した）。
+ *
+ * ------------------------------------------------------------------
+ * ★★★**これで作れるのは抜粋だけ。**
+ *
+ * 勝ち上がり（`spotlight`）と進捗（`regional-progress.ts`）は
+ * **`allGames`（私立どうしも含む全試合）**を見て数えているが、
+ * **`allGames` は生成物に書き出していない**（`writeDistrict` が落としている）。
+ * ★**無いものから数え直さない** —— `spotlight` は**いまのファイルの値をそのまま持ち越し**、
+ * 進捗のファイルは**書き換えない。**
+ * ★**どちらも、次に出典から取り直したとき（CIは1日2回）に正しく作り直される。**
+ */
+function districtsFromFiles() {
+  const out = [];
+  for (const adapter of ADAPTERS) {
+    const file = path.join(OUT_DIR, `${adapter.slug}.json`);
+    if (!existsSync(file)) continue;
+    // ★**同じ県にアダプタが2つある**（主＝連盟、副＝穴埋め）。ファイルは1つなので1回だけ
+    if (out.some((d) => d.slug === adapter.slug)) continue;
+    /*
+      ★**`allGames` は空で入れる。** 生成物に入っていないので**持っていない**のが事実。
+      ★**これを見て数えるもの（勝ち上がり・進捗）は、この経路では書き換えない**
+      （空から数えた0を、正しい値の上に書かないため）。
+    */
+    out.push({ ...JSON.parse(readFileSync(file, "utf8")), allGames: [] });
+  }
+  return out;
+}
+
+/** いまの `regional-pickup.ts` から勝ち上がり（`spotlight`）だけを読み戻す */
+function previousPickupSpotlight() {
+  if (!existsSync(OUT_PICKUP)) return [];
+  try {
+    const text = readFileSync(OUT_PICKUP, "utf8");
+    const start = text.indexOf("= {");
+    const json = text.slice(start + 2, text.lastIndexOf("}") + 1);
+    return JSON.parse(json).spotlight ?? [];
+  } catch {
+    // ★**読めなければ空**。`--pickup-only` は抜粋を作り直すためのものなので、ここで止めない
+    return [];
+  }
+}
+
 async function main() {
-  const targets = onlyPref ? ADAPTERS.filter((a) => a.slug === onlyPref) : ADAPTERS;
-  if (!targets.length) {
+  /*
+    ★**`--pickup-only` のときは1県も取りに行かない**（`districtsFromFiles` の説明）。
+    **空の `targets` にして、下のループを1周も回さない**のがいちばん小さい細工で済む。
+  */
+  const targets = PICKUP_ONLY
+    ? []
+    : onlyPref
+      ? ADAPTERS.filter((a) => a.slug === onlyPref)
+      : ADAPTERS;
+  if (!PICKUP_ONLY && !targets.length) {
     console.log(`対応している県: ${ADAPTERS.map((a) => a.slug).join(", ")}`);
     return;
   }
 
-  const supabase = createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
-    { auth: { persistSession: false, autoRefreshToken: false } },
-  );
-  const index = buildIndex(await fetchSchools(supabase));
+  /*
+    ★**学校名の索引は出典を読むときにしか要らない。**
+    `--pickup-only` は書き出し済みのファイル（もう slug が付いている）だけを見るので、
+    Supabase にも繋がない。
+  */
+  const index = PICKUP_ONLY
+    ? null
+    : buildIndex(
+        await fetchSchools(
+          createClient(
+            process.env.NEXT_PUBLIC_SUPABASE_URL,
+            process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+            { auth: { persistSession: false, autoRefreshToken: false } },
+          ),
+        ),
+      );
 
   const districts = [];
   for (const adapter of targets) {
@@ -19108,6 +19192,16 @@ async function main() {
     else districts.push(district);
   }
 
+  /*
+    ★**`--pickup-only` はここで中身を入れる**（上のループは1周も回っていない）。
+    ★★**`allGames` は持っていない**ので、この先で使えるのは抜粋の選定だけ。
+    勝ち上がりと進捗は下で書き換えないようにしてある。
+  */
+  if (PICKUP_ONLY) {
+    districts.push(...districtsFromFiles());
+    console.log(`--pickup-only: ${districts.length} 県のファイルから抜粋を作り直します`);
+  }
+
   const results = { districts };
 
   if (jsonPath) {
@@ -19145,7 +19239,12 @@ async function main() {
   // ★**日付を持たない試合は抜粋に出さない**（新しい順に選ぶので順番を決められない）
   const newestOverall =
     districts.flatMap((d) => d.games.map((g) => g.date)).filter(Boolean).sort().at(-1) ?? null;
-  const pickupFrom = (() => {
+  /*
+    ★**抜粋は「いちばん新しい日」だけになったので、この窓はもう掛けていない**（2026-09-06）。
+    **計算は残してある** —— 下の進捗の説明が「抜粋と同じ窓（`pickupFrom`）」を指しており、
+    **窓の考え方そのものはまだ生きている**（前年の秋を今季と数えない）。
+  */
+  const _pickupFrom = (() => {
     if (!newestOverall) return null;
     const limit = new Date(`${newestOverall}T00:00:00Z`);
     limit.setUTCDate(limit.getUTCDate() - KEEP_DAYS);
@@ -19171,20 +19270,49 @@ async function main() {
       .sort((a, b) => a.date.localeCompare(b.date))
       .at(-1)?.season ?? null;
 
+  /*
+    ★★★**抜粋は「いちばん新しい日の全試合」にした**（2026-09-06。運営者の指示）。
+
+    それまでは「公立が勝った試合を優先・新しい順・1県4件まで・全体80件まで」で
+    選んでいたが、**その日に行われた試合のうち画面に出るのは半分以下**だった
+    （実測：2026-09-06 は公立が絡む試合が81件あるのに、抜粋に入ったのは39件）。
+    ★★**「1県4件まで」が効いて、11試合あった長野も12試合あった新潟も4件で切れていた。**
+
+    ★**日を1つに絞ると、行から日付が消せる**（全部同じ日なので、カード側の
+    説明文に1度書けば足りる）。そのぶんの幅を校名に渡せる。
+    ★★**上限で切らない。** 「その日の結果を全部出す」がこの枠の意味なので、
+    **切った瞬間に「全部」ではなくなる。**
+
+    ★★★**夏の予選の山では1日342試合になる**（実測。2019-07-15、47県）。
+    **そのぶん生成物も、トップのHTMLも大きくなる**（1試合およそ600バイト）。
+    ★**枚数が増えるだけで壊れはしない**（カルーセルは枚数に上限を持たない）が、
+    **重いと感じたらここで上限を入れること**（`PICKUP_TOTAL` が残してある）。
+
+    ★**並べ替えはしない。** 県ごとにまとめて北海道から並べるのは**表示側**の仕事で、
+    そこは `PREFECTURES` の並びを持っている TypeScript 側にしか書けない
+    （このスクリプトに47県の順番をもう1つ写さない）。
+  */
+  // ★**その日に公立が絡む試合が1つも無ければ、その前の日まで下がる**
+  const pickupDate =
+    districts
+      .flatMap((d) => d.games)
+      .filter((g) => g.date && (!pickupSeason || g.season === pickupSeason))
+      .filter((g) => g.teams.some((t) => t.slug && !t.combined))
+      .map((g) => g.date)
+      .sort()
+      .at(-1) ?? null;
+
   const pickups = [];
   for (const d of districts) {
-    const sorted = [...d.games]
-      .filter((g) => g.teams.some((t) => t.slug && !t.combined))
-      .filter((g) => !pickupSeason || g.season === pickupSeason)
-      .filter((g) => g.date && (!pickupFrom || g.date >= pickupFrom))
-      .sort((a, b) => {
-        const wonA = a.teams.some((t) => t.slug && t.won) ? 1 : 0;
-        const wonB = b.teams.some((t) => t.slug && t.won) ? 1 : 0;
-        return wonB - wonA || b.date.localeCompare(a.date);
-      })
-      .slice(0, PICKUP_PER_DISTRICT);
-
-    for (const g of sorted) {
+    /*
+      ★**`pickupFrom`（120日の窓）はもう要らない** —— 取るのは1日ぶんで、
+      その日は定義から「いちばん新しい日」なので、前年の秋は入りようがない。
+      ★**変数は残してある**（下の進捗の説明がこの窓を参照している）。
+    */
+    for (const g of d.games) {
+      if (!pickupDate || g.date !== pickupDate) continue;
+      if (pickupSeason && g.season !== pickupSeason) continue;
+      if (!g.teams.some((t) => t.slug && !t.combined)) continue;
       pickups.push({
         districtSlug: d.slug,
         district: d.district,
@@ -19198,9 +19326,7 @@ async function main() {
       });
     }
   }
-  // 全体でも新しい順に並べてから上限で切る
-  pickups.sort((a, b) => b.date.localeCompare(a.date));
-  const picked = pickups.slice(0, PICKUP_TOTAL);
+  const picked = pickups;
   /*
     **鮮度は抜粋ではなく全試合から出す。** 抜粋は「公立が勝った試合を優先」で
     選んでいるので、いちばん新しい試合が入っているとは限らない。
@@ -19427,7 +19553,18 @@ async function main() {
     }
   }
 
-  const spotlight = [...bySlugRecord.values()]
+  /*
+    ★★★**`--pickup-only` では勝ち上がりを数え直さない**（2026-09-06）。
+
+    数えるのに要る `allGames`（私立どうしも含む全試合）は**生成物に入っていない**
+    ので、書き出し済みのファイルから組み直した `districts` では
+    **必ず0校になる。** そのまま書けば、**いまある正しい値を空で上書きする。**
+    ★**無いものから数え直さない。いまのファイルの値をそのまま持ち越す。**
+    ★**次に出典から取り直したとき（CIは1日2回）に正しく作り直される。**
+  */
+  const spotlight = PICKUP_ONLY
+    ? previousPickupSpotlight()
+    : [...bySlugRecord.values()]
     /*
       まだ負けていない学校。
 
@@ -19451,7 +19588,8 @@ async function main() {
     .map(({ losses: _l, tournamentKey: _k, deepestWon: _d, ...rest }) => rest);
 
   console.log(
-    `\n抜粋: ${picked.length} 件（${districts.length} 県から。1県あたり最大 ${PICKUP_PER_DISTRICT} 件）`,
+    `\n抜粋: ${picked.length} 件` +
+      `（${pickupDate ?? "-"} の全試合。${new Set(picked.map((g) => g.districtSlug)).size} 県）`,
   );
   console.log(
     `勝ち上がり: ${spotlight.length} 校（${spotlightSeason ?? "-"}）` +
@@ -19581,6 +19719,13 @@ async function main() {
   console.log(
     `  書き出した: ${path.relative(ROOT, OUT_PICKUP)}（${Math.round(pickupFile.length / 1024)}KB）`,
   );
+
+  /*
+    ★★★**`--pickup-only` はここで終わる。進捗の生成物は書き換えない**（2026-09-06）。
+    下の進捗は `allGames`（生成物に入っていない）と、開催中かどうかの判定を見ている。
+    **空から数えた結果で上書きすると、地図が「今季はまだ」で埋まる。**
+  */
+  if (PICKUP_ONLY) return;
 
   /*
     ------------------------------------------------------------------

@@ -19,7 +19,6 @@ import { LIVE_RESULTS } from "@/lib/data/live-results";
 import { REGIONAL_PICKUPS } from "@/lib/data/regional-pickup";
 import { pickResultsSlot } from "@/lib/results-slot";
 import { fetchLiveDistricts, liveToday as pickLiveToday } from "@/lib/live/hsb";
-import { spotlightTitle } from "@/lib/regional-results";
 import { statusBySlug } from "@/lib/live-results";
 import {
   getSchoolsBySlugs,
@@ -114,21 +113,10 @@ export default async function HomePage() {
   */
   const resultsSlot = pickResultsSlot(LIVE_RESULTS, REGIONAL_PICKUPS);
   /*
-    **勝ち上がりが1校も無いときは切り替えない。** 大会の谷間や、
-    どの県も初戦前のときに空の枠が出てしまう。そのときは
-    従来どおり甲子園の出場校を出しておくほうが、情報として空にならない。
+    ★★**「勝ち上がっている公立校」の組み立ては 2026-09-06 に消した**（運営者の指示で
+    画面から外したため）。**生成物の側（`REGIONAL_PICKUPS.spotlight`）は残っている**ので、
+    戻すときはここで `getSchoolsBySlugs` を呼び直す。下のカラムのコメントに手順がある。
   */
-  const showRegionalSpotlight =
-    resultsSlot === "regional" &&
-    REGIONAL_PICKUPS.spotlightSeason != null &&
-    REGIONAL_PICKUPS.spotlight.length > 0;
-  const spotlightBySlug = new Map(
-    REGIONAL_PICKUPS.spotlight.map((s) => [s.slug, s]),
-  );
-  // 学校カードに出す情報はDBから引く（甲子園の出場校と同じ作り）
-  const spotlightCards = showRegionalSpotlight
-    ? await getSchoolsBySlugs(REGIONAL_PICKUPS.spotlight.map((s) => s.slug))
-    : [];
 
   return (
     <>
@@ -169,89 +157,59 @@ export default async function HomePage() {
 
       <Container className="mt-4 sm:mt-5">
         {/*
+          結果速報。**時期によって中身が入れ替わる枠。**
+
+          大会期間中は甲子園、それ以外は地方大会（秋季・春季・選手権予選）。
+          公立校が絡む試合だけに絞ってあるのがこのサイトの切り口で、
+          そこは甲子園でも地方大会でも同じ。
+
+          ★**切り替えは今日の日付ではなくデータで決める**（`pickResultsSlot`）。
+          日付で切ると大会の谷間に何も出ない期間ができ、雨天順延にも追随できない。
+
+          ------------------------------------------------------------------
+          ★★★**地方大会のときは横幅いっぱいの1カラムにする**（2026-09-06。運営者の指示）。
+
+          右にあった「勝ち上がっている公立校」を**画面から外した**ので、
+          結果カードが幅を丸ごと使える。**そのぶんカードは3列**になっている
+          （`RegionalResultsCard`）。
+          ★**データ（`REGIONAL_PICKUPS.spotlight`）は残っている。** 戻すならここ。
+
+          ★★**甲子園のときは今までどおり2カラムのまま** ——
+          あちらの右は「今年夏の出場校」で、**外してほしいと言われたのは
+          地方大会のほうの右カラム**。左のカード（`LiveResultsCard`）も別物なので、
+          **こちらのレイアウトは1バイトも触っていない。**
+        */}
+        {resultsSlot === "regional" ? (
+          <RegionalResultsCard pickups={REGIONAL_PICKUPS} />
+        ) : (
+        /*
           ★★★**`items-start` にしてある**（2026-09-01。運営者の「目いっぱい使って」）。
 
-          左右のカードは中身の量が別々に決まる（左＝抜粋の試合数／右＝まだ負けていない
-          公立校の数）ので、**どちらが高いかは日によって入れ替わる。**
-          既定の `stretch` だと**低いほうのカードに大きな空白**ができていた
-          （実測：右が3校の日は右に246ポイント、右が8校の日は左に230ポイント）。
+          左右のカードは中身の量が別々に決まるので、**どちらが高いかは日によって
+          入れ替わる。** 既定の `stretch` だと**低いほうのカードに大きな空白**が
+          できていた（実測：右が3校の日は右に246ポイント、右が8校の日は左に230ポイント）。
 
           ★**右のカードは中身なりの高さで終わらせる**（`items-start`）。
-          ★★**左（結果）のカードだけ `h-full` で行の高さいっぱいに伸ばし、中身に使わせる**
-          —— こちらは横スライドなので、伸びたぶんを行が分け合える。
           ★**`h-full` は `items-start` でも効く**（%の高さはグリッド領域＝行の高さに対して解く）。
-        */}
+        */
         <div className="grid items-start gap-4 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
-          {/*
-            結果速報。**時期によって中身が入れ替わる枠。**
-
-            大会期間中は甲子園、それ以外は地方大会（秋季・春季・選手権予選）。
-            公立校が絡む試合だけに絞ってあるのがこのサイトの切り口で、
-            そこは甲子園でも地方大会でも同じ。
-
-            ★**切り替えは今日の日付ではなくデータで決める**（`pickResultsSlot`）。
-            日付で切ると大会の谷間に何も出ない期間ができ、雨天順延にも追随できない。
-          */}
-          {resultsSlot === "koshien" ? (
-            <LiveResultsCard results={LIVE_RESULTS} />
-          ) : (
-            <RegionalResultsCard pickups={REGIONAL_PICKUPS} />
-          )}
+          <LiveResultsCard results={LIVE_RESULTS} />
 
           {/*
-            右カラムも左の枠と一緒に入れ替える。**左が地方大会なのに右が
-            夏の出場校のままだと、秋・冬に古い情報が残り続ける。**
+            右カラムは**今夏の甲子園に出場している公立校**。
+            **大会期間中に見たいのは殿堂ではなく「いま出ている学校」**なので、
+            「甲子園出場回数の多い順」ではなくこちらを出している。
 
-            甲子園の期間中 … 今夏の甲子園に出場している公立校
-            それ以外       … いま開催中の地方大会で勝ち上がっている公立校
+            ------------------------------------------------------------------
+            ★★★**地方大会のときの右カラムは 2026-09-06 に画面から外した**（運営者の指示）。
 
-            以前は「甲子園出場回数の多い順」の3校を出していたが、
-            **大会期間中に見たいのは殿堂ではなく「いま出ている学校」。**
-            地方大会のときも同じ考えで「いま勝ち上がっている学校」を出す。
+            外したのは「秋季大会を勝ち上がっている公立校」で、**この甲子園の枠は残っている。**
+            ★**データ（`REGIONAL_PICKUPS.spotlight` と `spotlightSeason`）は
+            生成し続けている。** 戻すときはここに分岐を書き直すだけ ——
+            見出しは `spotlightTitle(季節)`、説明は「まだ1度も負けていない公立校 N校」、
+            1行の注記は `record.standing ?? \`${"${record.wins}"}勝で勝ち上がり\``。
+            ★**そのときは左のカードを2列に戻すこと**（`RegionalResultsCard` の `columns`）。
           */}
-          {showRegionalSpotlight ? (
-            <section
-              aria-labelledby="featured-heading"
-              className="rounded-xl border border-line bg-white p-4 sm:p-5"
-            >
-              <SectionHeading
-                id="featured-heading"
-                title={spotlightTitle(REGIONAL_PICKUPS.spotlightSeason!)}
-                icon={<Star size={22} />}
-                moreHref="/schools"
-              />
-              <p className="mt-1 text-sm text-ink-muted">
-                まだ1度も負けていない公立校　{spotlightCards.length}校
-              </p>
-              <ul className="mt-1 divide-y divide-line">
-                {spotlightCards.map((school) => {
-                  const record = spotlightBySlug.get(school.slug);
-                  return (
-                    <li key={school.id}>
-                      <SchoolCard
-                        school={school}
-                        compact
-                        note={
-                          record ? (
-                            <span className="font-bold text-accent-800">
-                              {record.district}・
-                              {/*
-                                **「1勝」ではなく「ベスト16」を出す。**
-                                参加校数が県で大きく違うので、勝ち数だけでは
-                                どこまで勝ち上がったのか伝わらない。
-                                数えられなかったときだけ勝ち数に落とす。
-                              */}
-                              {record.standing ?? `${record.wins}勝で勝ち上がり`}
-                            </span>
-                          ) : null
-                        }
-                      />
-                    </li>
-                  );
-                })}
-              </ul>
-            </section>
-          ) : (
           <section
             aria-labelledby="featured-heading"
             className="rounded-xl border border-line bg-white p-4 sm:p-5"
@@ -300,8 +258,8 @@ export default async function HomePage() {
               })}
             </ul>
           </section>
-          )}
         </div>
+        )}
       </Container>
 
       {/*

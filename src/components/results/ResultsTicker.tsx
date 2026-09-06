@@ -55,8 +55,32 @@ const PIXELS_PER_SECOND = 65;
  */
 const APPROX_ITEM_WIDTH = 300;
 
+/**
+ * ★★★**帯に流す試合数の上限**（2026-09-06）。
+ *
+ * 抜粋が「いちばん新しい日の**全試合**」になったので、
+ * **夏の予選の山では1日342試合**（実測。2019-07-15）まで増えうる。
+ * ★★**この帯は同じ並びを2回描く**ので、**342試合なら幅がおよそ20万ピクセル**になる。
+ *
+ * ★**帯は `will-change: transform` で合成レイヤーに載せてある**
+ * （`globals.css`。載せないと毎秒65pxの動きが整数に丸められてカクつく）。
+ * **レイヤーは幅×高さぶんのメモリを食う**ので、20万pxでは30MBを超える。
+ * ★**そこまで行くとレイヤーに載せてもらえず、直そうとしたカクつきが戻る。**
+ *
+ * ★**30試合なら幅およそ1万8千px（3MBほど）** —— 実測 1試合294px。
+ * ★★**下のカードには全試合が出ている。** ここは眺めるための飾りなので、
+ * **全部を流す必要がない**（読ませたいものは下にリンク付きで並んでいる）。
+ */
+const MAX_TICKER_GAMES = 30;
+
 export function ResultsTicker({ pickups }: { pickups: RegionalPickups }) {
-  const games = pickups.games;
+  /*
+    ★**間引くときは等間隔で拾う。** 先頭から30件だと**同じ1〜2県で埋まる**
+    （抜粋は県ごとにまとまって並んでいる）。
+    ★**乱数を使わない** —— 描くたびに並びが変わると、
+    ページを開き直すたびに帯の中身が入れ替わって落ち着かない。
+  */
+  const games = sampleEvenly(pickups.games, MAX_TICKER_GAMES);
   // ★**流すものが無ければ帯ごと出さない**（空の黒帯が残るのを防ぐ）
   if (games.length === 0) return null;
 
@@ -92,6 +116,15 @@ export function ResultsTicker({ pickups }: { pickups: RegionalPickups }) {
   );
 }
 
+/** 等間隔に `max` 件まで拾う。★**元の並びは崩さない** */
+function sampleEvenly<T>(items: T[], max: number): T[] {
+  if (items.length <= max) return items;
+  const step = items.length / max;
+  const out: T[] = [];
+  for (let i = 0; i < max; i++) out.push(items[Math.floor(i * step)]);
+  return out;
+}
+
 function TickerItem({ game }: { game: RegionalPickup }) {
   /*
     ★**公立を先に出す。両方が公立なら勝ったほうを先。**
@@ -102,8 +135,27 @@ function TickerItem({ game }: { game: RegionalPickup }) {
   const other = game.teams.find((t) => t !== ours);
   if (!ours || !other) return null;
 
+  /*
+    ★★**◆は試合と試合の「あいだ」に立たせる**（2026-09-06。運営者から
+    「ダイヤマークが中途半端な位置にある」）。
+
+    ★**実測すると左20ポイント・右40ポイント**で、**左の試合にくっついていた。**
+    内訳は次のとおり:
+
+        左 … `gap-2.5`(10) ＋ ◆の `pl-2.5`(10)          = 20
+        右 … この試合の右余白(20) ＋ 次の試合の左余白(20) = 40
+
+    ★**◆は各試合の末尾に置いてある**（そうしないと**2周ぶんを並べて
+    `translateX(-50%)` で戻す継ぎ目**が合わない）ので、
+    **左右の余白は別々の場所から来る。** 片方だけ足しても揃わない。
+
+    ★**左右とも30になるように振り直した**（`px` 20→15、◆の `pl` 10→20）。
+    ★★**試合と試合の間隔（74ポイント）は変えていない** ——
+    間隔を変えると1周の長さが変わり、**流れる速さの見積もり
+    （`APPROX_ITEM_WIDTH`）とずれる。**
+  */
   return (
-    <span className="ticker__item inline-flex items-center gap-2.5 px-5 text-sm">
+    <span className="ticker__item inline-flex items-center gap-2.5 px-[0.9375rem] text-sm">
       <span className="ticker__meta text-xs">
         {game.district}
         {game.date && ` ${formatRegionalDate(game.date)}`}
@@ -113,7 +165,7 @@ function TickerItem({ game }: { game: RegionalPickup }) {
         {ours.score} - {other.score}
       </span>
       <span>{other.display}</span>
-      <span className="ticker__divider pl-2.5">◆</span>
+      <span className="ticker__divider pl-5">◆</span>
     </span>
   );
 }

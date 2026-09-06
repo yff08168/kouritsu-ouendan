@@ -4,9 +4,9 @@ import { ChevronRight, MapPinned } from "lucide-react";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { ResultsCarousel } from "@/components/results/ResultsCarousel";
 import { cn } from "@/lib/utils";
+import { districtOrder } from "@/lib/constants";
 import {
   formatRegionalDate,
-  pickRegionalGames,
   seasonLabel,
   type RegionalPickup,
   type RegionalPickups,
@@ -15,81 +15,70 @@ import {
 /**
  * トップページの地方大会の結果。
  *
- * データは `src/lib/data/regional-pickup.ts`（生成物・**抜粋だけ**）。
- * 県ごとの全試合は `src/lib/data/regional/<県>.ts` にあり、そちらは
+ * データは `src/lib/data/regional-pickup.ts`（生成物）。
+ * 県ごとの全試合は `src/lib/data/regional/<県>.json` にあり、そちらは
  * 1県あたり約100KBあるのでトップでは読まない。
  *
  * ------------------------------------------------------------------
- * ★**並べ替えはここ（表示時）でやる。生成時ではない。**
+ * ★★★**出すのは「いちばん新しい日に、公立高校が出た全試合」**（2026-09-06。運営者の指示）。
  *
- *   生成時に混ぜると、試合が1つも増えていなくても実行のたびに生成物が
- *   変わり、3時間おきのCIが意味のないコミットを積み続ける。
- *   生成側は「公立が勝った試合を優先・新しい順・1県4件まで」で決め打ちに選び、
- *   混ぜるのはここ。ページは ISR（10分）なので、実際に入れ替わるのは再生成のとき。
+ * それまでは「公立が勝った試合を優先・1県4件まで」で選んだ抜粋を、
+ * 乱数で混ぜて出していた。**その日81試合あったうち画面に出たのは39試合**で、
+ * **11試合あった長野も12試合あった新潟も4件で切れていた。**
+ * ★**選び方は生成側**（`scripts/build-regional-results.mjs` の `pickupDate`）。
+ * **ここでは間引かない。**
  *
  * ------------------------------------------------------------------
- * **出典は県ごとに違う。** 連盟とは限らず、埼玉・神奈川は個人運営の
- * 情報サイトから取っている。**1つにまとめて「各都道府県高野連」と
- * 書かないこと。** 出した試合の出典だけを、その名前で並べる。
+ * ★★**県ごとにまとめて、北から順に並べる**（運営者の指示）。
+ *
+ * ★**日付が全部同じ**になったので、**行から県名と日付を落とせる。**
+ * そのぶんの幅は校名に渡している（AGENTS.md「校名を切ってはいけない」）。
+ * 日付は説明文に1度だけ書く。
+ * ★**並びは `districtOrder`**（JISコード順＝北から南）。**ここに47県の順番を写さない。**
+ *
+ * ------------------------------------------------------------------
+ * ★★**右カラム（勝ち上がっている公立校）は 2026-09-06 に画面から外した**（運営者の指示）。
+ * カードが横幅いっぱいになったので**3列**にしてある。
+ * ★**データ（`pickups.spotlight`）は残っている。** 戻すのは `src/app/page.tsx` の1か所。
  */
 export function RegionalResultsCard({
   pickups,
-  maxPerSlide = 18,
-  slides = 4,
+  rowsPerColumn = 10,
+  columns = 3,
   seed,
 }: {
   pickups: RegionalPickups;
   /**
-   * 1枚に出す試合数の**上限**。★**枚をまたいで変えないこと**（高さが揃わなくなる）。
-   * ★★**2列×6行＝12件**（2026-08-31。運営者の指示）。
-   * それまで1列4件で、**校名の字が大きいぶん余白が目立っていた。**
-   * ★★**2026-09-01 に上限を 18（2列×9行）まで上げた**（運営者の「目いっぱい使って」）。
-   * **抜粋にある試合の数で決まる**（下の `fitPerSlide`）ので、
-   * 試合が少ない日は今までどおり12件のまま。
-   * ★**狭い画面では1列に落とす**（半分の幅に校名2つとスコアは入らない）。
+   * 1列に入れる行数。**県の見出しも1行として数える**（下の `packColumns`）。
+   * ★★**列ごとに変えないこと** —— めくるたびに高さが跳ねる。
    */
-  maxPerSlide?: number;
-  /** 何枚までめくれるようにするか */
-  slides?: number;
-  /** 同じ並びを再現したいとき（検証用）。省略すると毎回変わる */
+  rowsPerColumn?: number;
+  /** 1枚あたりの列数。★**狭い画面では CSS が1列・2列に落とす** */
+  columns?: number;
+  /** 最初に出す枚を決める乱数の種。省略すると毎回変わる（検証用に固定できる） */
   seed?: number;
 }) {
-  /*
-    ★★**抜粋は20試合入っているのに、4試合しか出していなかった**（2026-08-31）。
-    **データを増やさずに見せる量を5倍にできる**ので、枚に分けて横へめくる。
-    ★**足りなければ枚数が減るだけ**（`chunk` が空の枚を作らない）。
-  */
-  const picked = pickRegionalGames(pickups, maxPerSlide * slides, seed);
-  /*
-    ★★★**1枚あたりの件数は、抜粋にある試合の数から決める**（2026-09-01）。
-
-    ★**割り切れない数で切ると、最後の1枚だけ短くなる** ——
-    「1枚あたりの件数を枚ごとに変えないこと」（高さが揃わずめくるたびにガタつく）
-    という決めごとに反する。**いままでは 24件÷12 がたまたま割り切れていただけ。**
-  */
-  const perSlide = fitPerSlide(picked.length, maxPerSlide);
-  const games = picked.slice(0, perSlide * Math.max(1, Math.floor(picked.length / perSlide)));
-  const pages = chunk(games, perSlide);
+  const games = pickups.games;
+  const blocks = groupByDistrict(games);
+  const columnList = packColumns(blocks, rowsPerColumn);
+  const pages = chunk(columnList, columns);
 
   /*
-    ★**出典を並べる処理は 2026-08-21 に消した**（画面から外したため。運営者の判断）。
-    戻すときは「**出した試合の出典だけ**を、その名前で並べる」に戻すこと ——
-    出していない県の出典を書いたり、1つにまとめて「各都道府県高野連」と
-    書いたりしないこと（出典は県ごとに違い、連盟とは限らない）。
+    ★★**最初に出す枚をずらす**（2026-09-06。運営者の「最初に表示させるのはランダムでOK」）。
+
+    並びは北から南のままで、**どこから読み始めるかだけ**を回す。
+    ★**そうしないと、いつ来ても1枚目は青森・茨城で、沖縄は最後の枚にしか出ない。**
+    ★**サーバー側で回している** —— クライアントで最初の枚へ飛ばすと、
+    **1枚目が一瞬見えてから跳ぶ**（`ResultsCarousel` はDOMの順に並べるだけ）。
   */
+  const slides = rotate(pages, pages.length > 1 ? pickStart(pages, seed) : 0);
+
+  const districtCount = new Set(games.map((g) => g.districtSlug)).size;
 
   return (
     <section
       aria-labelledby="regional-heading"
-      /*
-        ★★**縦のflexにして、余った高さを試合の一覧に渡す**（2026-09-01。運営者の指示）。
-
-        このカードは右カラム（勝ち上がっている公立校）と横並びで、
-        `grid` が高さをそろえる。**右が高い日は、下に大きな空白ができていた**
-        （実測230ポイント。「全国47地区の進捗を見る」の下がまるごと空く）。
-        ★**空白を消すのではなく、中身に使わせる。**
-      */
-      className="flex h-full flex-col rounded-xl border border-line bg-white p-4 sm:p-6"
+      className="rounded-xl border border-line bg-white p-4 sm:p-6"
     >
       {/* ★進捗の地図（/regional）への入口。地図から各県の試合とトーナメント表へ行ける */}
       <SectionHeading
@@ -101,16 +90,19 @@ export function RegionalResultsCard({
       />
 
       {/*
-        ★**抜粋はいちばん新しい季節だけ**（2026-08-21 に変えた）。
-        以前は春・夏・秋を混ぜていたので「秋季・春季大会と選手権予選から」と
-        書いていたが、**いまは1つの季節しか出ない**ので、その季節を名乗る。
-        ★**季節が分からないときだけ、元の言い方に落とす。**
+        ★★**説明文で「いつの・何試合か」を言い切る**（2026-09-06）。
+        行から日付を落としたぶん、**ここが日付を持つ唯一の場所**になる。
+        ★**数は数えたものだけ**（出典が無い日は件数の文が出ない）。
       */}
       <p className="mt-1 text-sm text-ink-muted">
-        {pickups.spotlightSeason
-          ? `各県の${seasonLabel(pickups.spotlightSeason)}から、公立高校の試合を選んで出しています`
-          : "各県の地方大会から、公立高校の試合を選んで出しています"}
-        {pickups.latestDate && <>・{formatRegionalDate(pickups.latestDate)}の試合まで</>}
+        {pickups.latestDate
+          ? `${formatRegionalDate(pickups.latestDate)}の`
+          : "直近の"}
+        {pickups.spotlightSeason ? seasonLabel(pickups.spotlightSeason) : "地方大会"}
+        から、公立高校が出た
+        {games.length > 0 && <>{games.length}試合</>}
+        {districtCount > 0 && <>（{districtCount}県）</>}
+        をすべて出しています
       </p>
 
       {games.length === 0 ? (
@@ -119,36 +111,56 @@ export function RegionalResultsCard({
         </p>
       ) : (
         <ResultsCarousel
-          // ★`flex-1` で余った高さを受け取る（`min-h-0` はカルーセル側に入れてある）
-          className="mt-4 flex-1"
+          className="mt-4"
           label="地方大会の結果"
           /*
             ★★**中身はここ（サーバー）で全部描いて渡す。**
             カルーセル側で描くと、**検索エンジンには1枚ぶんしか見えない。**
           */
-          slides={pages.map((page, p) => (
+          slides={slides.map((page, p) => (
             /*
-              ★★**2列×6行**（2026-08-31）。
-              ★**区切り線は列ごとに引く** —— 格子全体に `divide-y` を掛けると
-              **左右で線の位置が食い違う**（行の高さが揃わないため）。
-              ★**列のあいだに縦線を1本**入れて、どちらの列を読んでいるか分かるようにする。
+              ★**列の区切りは縦線1本**（どの列を読んでいるか分かるように）。
+              ★**列の数は `columns`。** 狭い画面では1列・2列に落とす
+              （半分より狭い幅に校名2つとスコアは入らない）。
             */
             <div
               key={p}
-              // ★★`h-full` と `auto-rows-fr` で、余った高さを行が分け合う
-              className="grid h-full grid-cols-1 sm:grid-cols-2 sm:divide-x sm:divide-line"
+              className="grid grid-cols-1 gap-y-1 sm:grid-cols-2 sm:divide-x sm:divide-line lg:grid-cols-3"
             >
-              {chunk(page, Math.ceil(page.length / 2)).map((column, c) => (
-                <ul
+              {page.map((column, c) => (
+                <div
                   key={c}
-                  className="grid auto-rows-fr divide-y divide-line sm:first:pr-5 sm:last:pl-5"
+                  className="min-w-0 sm:[&:not(:first-child)]:pl-4 sm:[&:not(:last-child)]:pr-4"
                 >
-                  {column.map((game, i) => (
-                    <li key={`${game.districtSlug}-${game.date}-${i}`}>
-                      <RegionalRow game={game} />
-                    </li>
+                  {column.map((block, b) => (
+                    <section key={`${block.slug}-${b}`} className="min-w-0">
+                      {/*
+                        ★**県名は見出しにして、行からは落としてある。**
+                        ★**県のページへのリンク**（その県の全試合とトーナメント表がある）。
+                        ★★**列をまたいだ続きには「つづき」と書く** ——
+                        同じ県名が2つの列に並ぶので、書かないと別の大会に見える。
+                      */}
+                      <h3 className="flex items-baseline gap-1.5 border-b border-line pb-1 pt-2 text-xs font-bold text-navy-700 first:pt-0">
+                        <Link
+                          href={`/prefectures/${block.slug}`}
+                          className="hover:underline"
+                        >
+                          {block.district}
+                        </Link>
+                        {block.continued && (
+                          <span className="font-normal text-ink-faint">つづき</span>
+                        )}
+                      </h3>
+                      <ul className="divide-y divide-line">
+                        {block.games.map((game, i) => (
+                          <li key={`${block.slug}-${i}`}>
+                            <RegionalRow game={game} />
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
                   ))}
-                </ul>
+                </div>
               ))}
             </div>
           ))}
@@ -159,7 +171,6 @@ export function RegionalResultsCard({
         ★★**下にも「全国の進捗」への入口を置く**（2026-08-31。運営者の指示）。
         見出しの右にも同じリンクがあるが、**そちらは読み始める前の位置**。
         ★**結果を見終わった人が次に行く先**なので、下にも要る。
-        ★**行き先は同じ `/regional`**（進捗地図。県ごとの試合とトーナメント表へ辿れる）。
       */}
       <Link
         href="/regional"
@@ -173,30 +184,85 @@ export function RegionalResultsCard({
       {/*
         ★**出典の行は 2026-08-21 に運営者の判断で画面から外した。**
         **データ側（`sourceName` / `sourceUrl`）は残してある**ので、戻すのはここだけ。
-        ★**どの県をどこから取っているかの記録が消えたわけではない**
-        （README とアダプタのコメントにある）。
       */}
     </section>
   );
 }
 
+/** 1つの県のかたまり。`continued` は前の列からの続き */
+type Block = {
+  slug: string;
+  district: string;
+  games: RegionalPickup[];
+  continued: boolean;
+};
+
 /**
- * 1枚あたりの件数を決める（2026-09-01）。
+ * 県ごとにまとめて、北から南へ並べる。
  *
- * ★**2枚以上めくれる、いちばん大きい偶数**を採る。
- *   - **偶数**にするのは2列に均等に割るため（奇数だと左右で行数が変わる）
- *   - **2枚以上**にするのは、1枚では横スライドの意味が無くなるため
- *
- * ★**割り切れなければ余りは出さない**（呼ぶ側が切り捨てる）。
- * 抜粋はもともと乱数で選んだ標本なので、数件落ちても中身の性格は変わらない。
- * ★**「最後の1枚だけ短い」を出さないほうが大事**（めくるたびに高さが跳ねる）。
+ * ★**並びは `districtOrder`**（JISコード順。北北海道 → 南北海道 → 北海道 → 青森 … 沖縄）。
+ * ★**県の中の並びは生成物のまま**（出典が並べた順）。**ここで混ぜない** ——
+ * 実行のたびに変わると、試合が増えていなくても差分が出る。
  */
-function fitPerSlide(count: number, max: number): number {
-  for (let n = max - (max % 2); n >= 8; n -= 2) {
-    if (Math.floor(count / n) >= 2) return n;
+function groupByDistrict(games: RegionalPickup[]): Block[] {
+  const bySlug = new Map<string, Block>();
+  for (const game of games) {
+    const found = bySlug.get(game.districtSlug);
+    if (found) found.games.push(game);
+    else
+      bySlug.set(game.districtSlug, {
+        slug: game.districtSlug,
+        district: game.district,
+        games: [game],
+        continued: false,
+      });
   }
-  // 2枚に足りないときは1枚にまとめる（偶数に丸める）
-  return Math.max(2, Math.min(count - (count % 2), max));
+  return [...bySlug.values()].sort(
+    (a, b) => districtOrder(a.slug) - districtOrder(b.slug),
+  );
+}
+
+/**
+ * 県のかたまりを列に詰める。
+ *
+ * ------------------------------------------------------------------
+ * ★★**どの列も行数を同じにする**（見出しも1行として数える）。
+ *
+ * 行数が列ごとに違うと、**同じ枚の中で列の背の高さが揃わない。**
+ * ★**県が列に収まらないときは割って、続きの列に見出しを刷り直す**
+ * （新聞の段組と同じ）。**割らない詰め方も試したが、順番が決まっているので
+ * 隙間だらけになる**（10試合の県が入らずに列を1つ空ける、が頻発する）。
+ *
+ * ★**刷り直した見出しも1行として数える** —— 数えないと、その列だけ1行はみ出す。
+ */
+function packColumns(blocks: Block[], rowsPerColumn: number): Block[][] {
+  const columns: Block[][] = [];
+  let column: Block[] = [];
+  let rows = 0;
+
+  const flush = () => {
+    if (column.length > 0) columns.push(column);
+    column = [];
+    rows = 0;
+  };
+
+  for (const block of blocks) {
+    let continued = false;
+    let rest = block.games;
+    while (rest.length > 0) {
+      // ★見出しに1行使うので、この列に入れられる試合はあと `rows` 次第
+      if (rows >= rowsPerColumn - 1) flush();
+      const room = rowsPerColumn - rows - 1;
+      const take = rest.slice(0, room);
+      column.push({ ...block, games: take, continued });
+      rows += take.length + 1;
+      rest = rest.slice(room);
+      continued = true;
+      if (rows >= rowsPerColumn) flush();
+    }
+  }
+  flush();
+  return columns;
 }
 
 /** 決まった数ずつに切り分ける。★**空の枚は作らない** */
@@ -204,6 +270,35 @@ function chunk<T>(items: T[], size: number): T[][] {
   const pages: T[][] = [];
   for (let i = 0; i < items.length; i += size) pages.push(items.slice(i, i + size));
   return pages;
+}
+
+/** 先頭を `at` 枚ぶん回す（並びは変えず、読み始める場所だけ変える） */
+function rotate<T>(items: T[], at: number): T[] {
+  if (items.length === 0) return items;
+  const n = ((at % items.length) + items.length) % items.length;
+  return [...items.slice(n), ...items.slice(0, n)];
+}
+
+/**
+ * 何枚目から読ませるか。
+ *
+ * ★**`seed` を渡せば同じ場所から始まる**（検証で並びを固定したいとき）。
+ *
+ * ★★**「つづき」で始まる枚は選ばない**（2026-09-06 に実測して足した）。
+ * 12試合ある県は2列にまたがるので、**回した先が運悪くその途中だと、
+ * 最初に見える3列が全部「◯◯ つづき」**になる（実際にそうなった）。
+ * **何の続きなのかが画面のどこにも無い**ので、読む人には壊れて見える。
+ * ★**先頭の列が県の頭から始まる枚まで進める。** 1枚も無ければ元のまま
+ * （1県で全部埋まる日はありうる）。
+ */
+function pickStart(pages: Block[][][], seed?: number): number {
+  const count = pages.length;
+  const from = seed === undefined ? Math.floor(Math.random() * count) : seed % count;
+  for (let i = 0; i < count; i++) {
+    const at = (from + i) % count;
+    if (pages[at][0]?.[0]?.continued === false) return at;
+  }
+  return from;
 }
 
 function RegionalRow({ game }: { game: RegionalPickup }) {
@@ -223,69 +318,45 @@ function RegionalRow({ game }: { game: RegionalPickup }) {
   const drawn = ours.score === other.score;
 
   return (
-    /*
-      ★★**県・日付を上の行に逃がしてある**（2026-08-31。2列にしたため）。
-
-        以前は「県・日付」を左の細い列に置いていたが、**2列にすると
-        校名に残る幅が50pxしかなくなり、実測で22校が3文字ほどに切れていた**
-        （`岡山吉備白陵` → `岡山吉…`）。
-        ★**校名はこのサイトの主役。切ってはいけない。**
-        上に逃がすと、校名とスコアが列の幅を丸ごと使える。
-
-      ★**上の行は県・日付・回戦だけ。** 2行にまたがる要素を置くと
-      行の高さが揃わず、左右の列で段差が出る。
-    */
-    /* ★行が伸びたぶんは上下に均す（`auto-rows-fr` で高さを分け合うため） */
-    <div className="flex h-full flex-col justify-center py-2.5">
+    <div className="py-1.5">
+      {/*
+        ★★**県名と日付はここから消えた**（2026-09-06）。
+        **県は見出しに、日付はカードの説明文に**移してあるので、
+        ★**残るのは回戦だけ。** 3列にしたぶん行の幅が狭いので、
+        **校名に渡せる幅をできるだけ増やす。**
+      */}
       <p className="flex items-center gap-1.5 text-[0.6875rem] leading-tight text-ink-faint">
         {/*
-          ★★**○/● の丸は 2026-08-31 に外した**（運営者の指示）。
-          **勝敗はスコアの色で分かる**（勝ったほうがオレンジ）ので、
-          丸は同じことを2度言っていた。
+          ★**勝敗はスコアの色で分かる**（勝ったほうがオレンジ）。
           ★**読み上げ用の文字だけは残す** —— 色は読み上げに乗らないので、
           **これを消すと目の見えない人には勝敗が伝わらなくなる。**
-          画面には出ない（`sr-only`）ので、見た目は指示どおり丸が消えるだけ。
         */}
         <span className="sr-only">
           {ours.won ? "勝ち" : drawn ? "引き分け" : "負け"}
         </span>
-        <Link
-          href={`/prefectures/${game.districtSlug}`}
-          className="font-bold text-navy-700 hover:underline"
-        >
-          {game.district}
-        </Link>
-        <span>{formatRegionalDate(game.date)}</span>
         {/*
-          ★**回戦は出典に無いことがある。** 山梨は準々決勝より前の日に回戦を
-          書いていない。「・」を決め打ちで出すと「秋季大会・」と中黒が宙に浮く。
-          **無いものを埋めない**（推測した回戦を出すほうが害が大きい）。
-          ★**狭いときは季節を省く**（日付と回戦のほうが効く）。
+          ★**回戦は出典に無いことがある。** 無いものを埋めない
+          （推測した回戦を出すほうが害が大きい）。
         */}
-        <span className="truncate">
-          <span className="hidden sm:inline">
-            {seasonLabel(game.season)}
-            {game.round && "・"}
-          </span>
-          {game.round}
-        </span>
+        <span className="truncate">{game.round}</span>
       </p>
 
       {/*
         **スコアの列を固定幅にする。** 横並びにすると「0 - 1」と「0 - 10」で
         幅が変わり、行ごとに校名の右端がずれる（甲子園のカードと同じ理由）。
+        ★**3列にしたので幅を 4.5rem → 3.5rem に詰めてある**（校名に回す）。
       */}
-      <p className="mt-0.5 grid grid-cols-[minmax(0,1fr)_4.5rem_minmax(0,1fr)] items-baseline gap-x-1.5">
+      <p className="mt-0.5 grid grid-cols-[minmax(0,1fr)_3.5rem_minmax(0,1fr)] items-baseline gap-x-1">
         <Link
           href={`/schools/${ours.slug}`}
           title={ours.name}
-          className="min-w-0 truncate text-right text-base font-bold text-navy-800 hover:underline"
+          className="min-w-0 truncate text-right text-[0.9375rem] font-bold text-navy-800 hover:underline"
         >
           {ours.display}
         </Link>
         <span
           className={cn(
-            "text-center text-lg font-bold tabular-nums",
+            "text-center text-base font-bold tabular-nums",
             ours.won ? "text-accent-800" : "text-ink-muted",
           )}
         >
@@ -293,11 +364,17 @@ function RegionalRow({ game }: { game: RegionalPickup }) {
           {" - "}
           {other.score}
         </span>
-        <span className="min-w-0 truncate text-base text-ink">
+        {/*
+          ★**連合チームはリンクにしない**（どの学校の戦績か決められない）。
+          ★★**`title` は付ける** —— 3列にすると**連合チームの校名だけは入りきらない**
+          （実測：243件のうち切れるのは連合チーム2件だけ。
+          `下仁田・藤岡工・吉井大間々` は195px要るのに136pxしかない）。
+          **校名を切ってはいけない**という決めごとに対する、ここだけの逃げ道。
+        */}
+        <span className="min-w-0 truncate text-[0.9375rem] text-ink" title={other.name}>
           {other.slug && !other.combined ? (
             <Link
               href={`/schools/${other.slug}`}
-              title={other.name}
               className="font-bold text-navy-800 hover:underline"
             >
               {other.display}

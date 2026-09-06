@@ -451,3 +451,31 @@ export const ALL_DISTRICT_SLUGS = [
   ...PREFECTURES.map((p) => p.slug),
   ...REGIONAL_ONLY_DISTRICTS.map((p) => p.slug),
 ];
+
+/**
+ * ★★**地区を北から南へ並べるための順番**（2026-09-06。トップの結果カードが使う）。
+ *
+ * ★**`ALL_DISTRICT_SLUGS` の並びは使えない** —— あちらは
+ * 「甲子園の区分49件のうしろに北海道・東京を足した」形なので、
+ * **北海道の全道大会と東京都大会が、沖縄より後ろに来る。**
+ *
+ * ★★**idはJISコード**（`REGIONAL_ONLY_DISTRICTS` の説明）。
+ * 分割した4地区だけ 48〜51 を使っているので、**そこを元の県のJISに読み替えて**
+ * 並べれば、北北海道 → 南北海道 → 北海道 → 青森 … 沖縄 の順になる。
+ * ★**同じ県の中は id 順**（北北海道48 → 南北海道49 → 北海道1 とはならないよう、
+ * 分割ぶんを先に置く）。
+ */
+const DISTRICT_SORT_KEY = new Map<string, number>(
+  [...PREFECTURES, ...REGIONAL_ONLY_DISTRICTS].map((p) => {
+    // 48/49＝北北海道・南北海道 → 北海道(1)、50/51＝東東京・西東京 → 東京(13)
+    const jis = p.id === 48 || p.id === 49 ? 1 : p.id === 50 || p.id === 51 ? 13 : p.id;
+    // ★**分割ぶんを、まとめ役（北海道・東京）より前に置く**（48〜51 は 1・13 より小さくする）
+    const within = p.id >= 48 ? p.id - 48 : 9;
+    return [p.slug, jis * 100 + within];
+  }),
+);
+
+/** その地区が北から数えて何番目か。**知らない slug は最後に回す** */
+export function districtOrder(slug: string): number {
+  return DISTRICT_SORT_KEY.get(slug) ?? Number.MAX_SAFE_INTEGER;
+}

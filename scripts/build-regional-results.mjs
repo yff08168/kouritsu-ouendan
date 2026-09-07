@@ -15710,29 +15710,115 @@ const HSB_BASE = {
     if (!index) return [];
     const info = this.currentTournament(index);
     if (!info) return [];
-    const season = this.seasonOf(info.title);
-    if (!season) return [];
+    /*
+      ★★★**`keepTitle` を組み合わせにも効かせること**（2026-09-07）。
+
+      **1つのホストに2つの地区が同居している**（北海道＝北北海道・南北海道、
+      東京＝東東京・西東京）。**索引が出しているのは片方だけ**なので、
+      **効かせないと、その1枚の紙から読んだ組み合わせが3つの地区に同じ内容で入る**
+      （結果の側は `keepTitle` で選び直しているのに、こちらだけ素通しだった）。
+    */
+    if (this.keepTitle && !this.keepTitle.test(info.title)) return [];
+    /*
+      ★★**その季節を見に行かないアダプタでは読まない。**
+      北北海道・南北海道・東東京・西東京は**夏だけ**の受け持ちなので、
+      秋の紙を読ませると全道大会・都大会と同じ試合が二重に並ぶ。
+    */
+    const season = this.seasonOf(info.title) ?? this.upcomingSeasonOf?.(info.title) ?? null;
+    if (!season || !this.seasons?.[season]) return [];
 
     const html = await get(`${this.base}/tournament`);
     if (!html) return [];
-    const draw = readHsbDraw(html, { district: this.district });
+    /*
+      ★★★**1枚のページに表が2つ入っていることがある**（北海道・東京）。
+      **そのまま読むと2つの表の座標が混ざる** —— 北海道は左右の列が
+      `113`（1枚目の左）と `872`（2枚目の右）に見え、**真ん中が2枚のあいだに来る。**
+      **同じ高さのスロットが2つずつ並ぶのでスロットの間隔が0**になり、
+      **36件の組が全部「中点から遠い」で捨てられた**（＝1試合も出ない）。
+      ★**表ごとに切って、いま見ている大会の表だけを読む。**
+      ★★**夏の北北海道・南北海道／東東京・西東京はこれでは足りない** ——
+      **索引が出しているのは片方だけ**なので、結果の側と同じく
+      **大会ごとのリンクから辿り直す作りが要る**（AGENTS.md の「索引の経路にも効かせること」）。
+      いまは `keepTitle` が合わなければ何も出さないので、**嘘は出ない。**
+    */
+    const sheets = html.split(/(?=<svg)/).filter((s) => s.includes("<svg"));
+    const titleOf = (s) =>
+      normalize(
+        /<text[^>]*id="y_title"[^>]*>([\s\S]*?)<\/text>/.exec(s)?.[1]?.replace(/<[^>]+>/g, "") ?? "",
+      ).replace(/[\s　]+/g, "");
+    const want = normalize(info.title).replace(/[\s　]+/g, "");
+    const sheet =
+      sheets.length > 1
+        ? sheets.find((s) => titleOf(s) && (want.includes(titleOf(s)) || titleOf(s).includes(want)))
+        : html;
+    if (!sheet) return [];
+    const draw = readHsbDraw(sheet, { district: this.district });
     if (!draw) return [];
+    /*
+      ★★★**終わった大会の紙から組み合わせを作らない**（2026-09-07）。
+
+      **索引が出すのは「開催中／直近の大会」**なので、**大会と大会のあいだは
+      終わった大会の紙**を読むことになる。**そのまま出すと、7月に終わった1回戦が
+      「これからの試合」として並ぶ**（長野で実際に2件出た。
+      **結果の側と校名の書き方が1文字違う**ものが「まだ済んでいない」に見えていた ——
+      紙は `飯田OIDE⻑姫`（U+2ED1 の部首の「長」）、結果は `飯田OIDE長姫`）。
+
+      ★**紙に `優勝◯◯` が刷ってあれば、その大会は終わっている。**
+      ★★**校名の突き合わせに頼らないこと** —— 出典どうしで書き方が違うので、
+      **1文字でもずれると「これから」として残る。**
+    */
+    if (draw.printedChampion) return [];
 
     /*
       ★**球場は略称で刷ってある**（`利08:30`）。紙の凡例で正式名に直す。
       ★**開始時刻は出さない**（`RegionalUpcoming` に置き場所が無い。日付と球場までにする）。
+
+      ★★★**凡例が紙に無い県がある**（2026-09-07。山口・熊本・長崎・沖縄・島根・栃木）。
+      **`絆` `藤` `た` のような1文字だけが画面に出ていた。**
+      ★**出典に「球場名 略称一覧」のページがある**ので、そこから引く
+      （速報の `src/lib/live/hsb.ts` が使っているものと同じ）。
+      ★★**先に出てきたほうを採ること** —— **他県の球場も同じページに並ぶ**
+      （山口の一覧に神奈川の球場が続けて載っている）。
+      ★**引けなければ略称のまま出す。当て推量で正式名を書かない。**
     */
-    return draw.games.map((g) => {
-      const mark = /^(\D+?)\s*\d{1,2}:\d{2}$/.exec(g.place ?? "")?.[1]?.trim() ?? null;
-      return {
-        date: hsbDrawDate(g.day, draw.base),
-        season,
-        tournament: info.title,
-        round: "1回戦",
-        venue: (mark && draw.legend.get(mark)) || mark || null,
-        teams: g.teams.map((t) => ({ display: t.display })),
-      };
-    });
+    const marks = draw.games.map(
+      (g) => /^(\D+?)\s*\d{1,2}:\d{2}$/.exec(g.place ?? "")?.[1]?.trim() ?? null,
+    );
+    const abbrTable =
+      marks.some((m) => m && !draw.legend.get(m)) ? await this.stadiumNames(get) : null;
+    return (
+      draw.games
+        .map((g, i) => {
+          const mark = marks[i];
+          return {
+            date: hsbDrawDate(g.day, draw.base),
+            season,
+            tournament: info.title,
+            round: "1回戦",
+            venue: (mark && (draw.legend.get(mark) || abbrTable?.get(mark))) || mark || null,
+            teams: g.teams.map((t) => ({ display: t.display })),
+          };
+        })
+        /*
+          ★★**日付が出せなかった枠は組み合わせにしない**（2026-09-07）。
+          紙は必ず日を刷っているので、`hsbDrawDate` が null を返すのは
+          **その日が紙の生成時刻より前**＝**もう行われた試合**のとき
+          （曜日の合う月が見つからない、という形で落ちる）。
+          ★**「日程未定」として出さない** —— 画面では終わった試合と見分けが付かない。
+        */
+        .filter((g) => g.date)
+    );
+  },
+  /** 出典の「球場名 略称一覧」。★**先勝ち**（同じページに他県の球場も並ぶ） */
+  async stadiumNames(get) {
+    const html = await get(`${this.base}/stadium_abbr`).catch(() => null);
+    if (!html) return null;
+    const out = new Map();
+    for (const m of html.matchAll(/<dt>([\s\S]*?)<\/dt>\s*<dd>([\s\S]*?)<\/dd>/g)) {
+      const [abbr, name] = [plain(m[1]), plain(m[2])];
+      if (abbr && name && !out.has(abbr)) out.set(abbr, name);
+    }
+    return out.size ? out : null;
   },
   async collect({ fetchHtml, season, year }) {
     const get = (url) => this.page(url, fetchHtml);
@@ -16351,7 +16437,7 @@ function hsbAdapter({
  *   ★**この2本立ては「切り替え」より弱い** —— 主が薄い年でも、
  *   **1試合でもあれば副は入らない。** 混ざって二重になるより取りこぼすほうを選んでいる。
  */
-function hsbFillAdapter({ slug, district, host, summer2020, primary }) {
+function hsbFillAdapter({ slug, district, host, summer2020, primary, upcomingSeasonOf }) {
   const base = `https://${host}.hsbflash.jp`;
   return {
     ...HSB_BASE,
@@ -16363,6 +16449,13 @@ function hsbFillAdapter({ slug, district, host, summer2020, primary }) {
     base,
     seasons: { spring: `${base}/`, summer: `${base}/`, autumn: `${base}/` },
     summer2020,
+    /*
+      ★★**組み合わせ（`collectUpcoming`）のときだけ効く季節の読み替え**（2026-09-07。山口）。
+      ★★**`seasonOf`（結果の側）には入れないこと** —— あちらを変えると
+      **副が今年の秋の「結果」まで拾い始め、主（連盟）が別の名前で同じ大会を出したときに
+      同じ秋が2つ並ぶ。** 組み合わせは主が持っていないものなので、ここだけ広げる。
+    */
+    upcomingSeasonOf,
     /** ★**主が持っていない 年×季節 だけ返す**（下の `add` が見る） */
     fillGapsOnly: true,
     /** ★**足した試合に付ける出所。** これが「主のもの」と見分ける印にもなる */
@@ -17584,6 +17677,17 @@ const yamaguchiHsbFill = hsbFillAdapter({
   host: "yamaguchi",
   summer2020: /^2020メモリアルカップ夏季高等学校野球大会/,
   primary: yamaguchi,
+  /*
+    ★★★**山口の秋の大会名には「秋季」の字が無い**（2026-09-07）。
+    `令和8年 山口県スポーツ大会高校野球競技予選`（9月12日〜9月20日）——
+    **これが秋季中国地区大会へ続く県の大会**で、連盟の側も
+    `令和7年度山口県スポーツ大会高校野球競技（硬式） 地区予選大会` を**秋として収めている。**
+    ★**`seasonOf` が当たらないので、組み合わせだけ丸ごと落ちていた。**
+    ★★**新人大会ではない** —— 山口には別に `令和8年度山口県新人高等学校野球大会` があり、
+    そちらは `OFF_TARGET` が外す（AGENTS.md の「収録する大会の範囲」）。
+  */
+  upcomingSeasonOf: (title) =>
+    /山口県スポーツ大会高校野球競技|山口県体育大会高校野球競技/.test(title) ? "autumn" : null,
 });
 
 /**
@@ -19400,9 +19504,33 @@ async function main() {
           return [];
         })
       : [];
-    const pairKey = (g) =>
-      [g.tournament, ...[...g.teams.map((t) => t.display)].sort()].join("\t");
+    const pair = (g) => [...g.teams.map((t) => t.display)].sort().join("\t");
+    const pairKey = (g) => [g.tournament, pair(g)].join("\t");
+    /*
+      ★★★**大会名が一致しない出典どうしがある**（2026-09-07）。
+
+      **組み合わせは HSB flash・結果は連盟**という県が6つある
+      （熊本・沖縄・栃木・富山・佐賀・香川。**副のアダプタ**）。
+      **同じ大会を別の名前で呼ぶ**ので、大会名を鍵にしたままだと
+      **試合が終わっても組み合わせが落ちず、「これから」として残り続ける:**
+
+          HSB flash 「令和 8年秋季九州地区高校野球 熊本県大会」
+          連盟      「第157回九州地区高等学校野球熊本大会」
+
+      ★**そこで「同じ季節・同じ年に同じ顔合わせの結果がある」も見る。**
+      **年と季節まで一致を求める**ので、大分で踏んだ「春・夏に同じ2校が当たっていた」
+      は落ちない（あれは季節が違う）。
+      ★**年が出せないときは今までどおり大会名だけで見る**（推測で落とさない）。
+    */
+    const yearOf = (g) => g.date?.slice(0, 4) ?? yearOfTournament(g.tournament, [g]) ?? null;
+    const seasonPairKey = (g) => {
+      const y = yearOf(g);
+      return y ? [g.season, y, pair(g)].join("\t") : null;
+    };
     const playedKey = new Set(games.map(pairKey));
+    const playedSeasonPair = new Set(games.map(seasonPairKey).filter(Boolean));
+    let byName = 0;
+    let bySeason = 0;
     const upcoming = upcomingRaw
       // ★組み合わせにも同じ範囲をかける（新人大会の組合せを入れない）
       .filter((g) => isTargetTournament(g.tournament))
@@ -19413,11 +19541,28 @@ async function main() {
           return rest;
         }),
       }))
-      .filter((g) => !playedKey.has(pairKey(g)));
+      .filter((g) => {
+        if (playedKey.has(pairKey(g))) {
+          byName += 1;
+          return false;
+        }
+        const k = seasonPairKey(g);
+        if (k && playedSeasonPair.has(k)) {
+          bySeason += 1;
+          return false;
+        }
+        return true;
+      });
     if (upcomingRaw.length) {
       console.log(
         `  → 組み合わせ ${upcoming.length} 試合（読んだ ${upcomingRaw.length} 件のうち、` +
-          `結果が出ている ${upcomingRaw.length - upcoming.length} 件は落とした）`,
+          `結果が出ている ${byName + bySeason} 件は落とした` +
+          /*
+            ★**大会名が違う出典どうしで落としたぶんは数を出す。**
+            **同じ季節・同じ年に同じ顔合わせが2大会ある県では、まだ行われていない試合を
+            落としてしまう**（岡山の地区予選と本大会）。**黙って消さないための数字。**
+          */
+          `${bySeason ? `。うち ${bySeason} 件は大会名ではなく「同じ季節・同じ年の同じ顔合わせ」で落とした` : ""}）`,
       );
     }
 

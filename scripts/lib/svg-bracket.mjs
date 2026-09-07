@@ -1086,7 +1086,21 @@ export function readHsbDraw(html, { district = "" } = {}) {
       console.log(`  [draw]   ${g.slots.join("-")} ${g.teams.map((t) => t.display).join(" vs ")} ${g.day} ${g.place}`);
   }
 
-  return { title, base, legend, slots, games };
+  return {
+    title,
+    base,
+    legend,
+    slots,
+    games,
+    /*
+      ★★★**紙に優勝校が刷ってあれば、その大会はもう終わっている**（2026-09-07）。
+      ★**索引が「開催中／直近の大会」を出す**ので、**大会と大会のあいだは
+      終わった大会の紙を読むことになる。** そのまま出すと
+      **7月に終わった1回戦が「これからの試合」として並ぶ**（長野で実際に2件出た）。
+      ★**呼ぶ側はこれがあれば1試合も出さないこと。**
+    */
+    printedChampion: texts.find((t) => t.cls === "y_f18" && /優勝/.test(t.text))?.text ?? null,
+  };
 }
 
 /**

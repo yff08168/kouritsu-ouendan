@@ -32882,5 +32882,292 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季近畿地区高校野球 奈良県大会",
+      "round": "1回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "添上",
+          "name": "添上高校",
+          "slug": "soekami"
+        },
+        {
+          "display": "御所実業",
+          "name": "御所実業高校",
+          "slug": "gosejitsugyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季近畿地区高校野球 奈良県大会",
+      "round": "1回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "県立大付属",
+          "name": "県立大付属",
+          "slug": null
+        },
+        {
+          "display": "高田商業",
+          "name": "高田商業高校",
+          "slug": "nara-takadashogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季近畿地区高校野球 奈良県大会",
+      "round": "1回戦",
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "王寺工業",
+          "name": "王寺工業高校",
+          "slug": "ojikogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季近畿地区高校野球 奈良県大会",
+      "round": "1回戦",
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "奈良北",
+          "name": "奈良北高校",
+          "slug": "narakita"
+        },
+        {
+          "display": "帝塚山",
+          "name": "帝塚山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季近畿地区高校野球 奈良県大会",
+      "round": "1回戦",
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "法隆寺国際",
+          "name": "法隆寺国際高校",
+          "slug": "horyujikokusai"
+        },
+        {
+          "display": "高取国際",
+          "name": "高取国際高校",
+          "slug": "takatorikokusai"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季近畿地区高校野球 奈良県大会",
+      "round": "1回戦",
+      "venue": "ロートスタジアム",
+      "teams": [
+        {
+          "display": "奈良",
+          "name": "奈良高校",
+          "slug": "nara"
+        },
+        {
+          "display": "大和広陵",
+          "name": "大和広陵高校",
+          "slug": "yamatokoryo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季近畿地区高校野球 奈良県大会",
+      "round": "1回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "宇陀",
+          "name": "宇陀高校",
+          "slug": "uda"
+        },
+        {
+          "display": "香芝",
+          "name": "香芝高校",
+          "slug": "kashiba"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季近畿地区高校野球 奈良県大会",
+      "round": "1回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "桜井",
+          "name": "桜井高校",
+          "slug": "nara-sakurai"
+        },
+        {
+          "display": "郡山",
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季近畿地区高校野球 奈良県大会",
+      "round": "1回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "高田",
+          "name": "高田高校",
+          "slug": "nara-takata"
+        },
+        {
+          "display": "奈良大附",
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季近畿地区高校野球 奈良県大会",
+      "round": "1回戦",
+      "venue": "ロートスタジアム",
+      "teams": [
+        {
+          "display": "奈女大附",
+          "name": "奈良女子大学附属中等教育学校",
+          "slug": "narajoshidaigakufuzoku"
+        },
+        {
+          "display": "西大和学園",
+          "name": "西大和学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季近畿地区高校野球 奈良県大会",
+      "round": "1回戦",
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "五條",
+          "name": "五條高校",
+          "slug": "nara-gojo"
+        },
+        {
+          "display": "奈良商工",
+          "name": "奈良商工高校",
+          "slug": "narashoko"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季近畿地区高校野球 奈良県大会",
+      "round": "1回戦",
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "橿原学院",
+          "name": "橿原学院",
+          "slug": null
+        },
+        {
+          "display": "磯城野",
+          "name": "磯城野高校",
+          "slug": "nara-shikino"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季近畿地区高校野球 奈良県大会",
+      "round": "1回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原",
+          "name": "橿原高校",
+          "slug": "kashihara"
+        },
+        {
+          "display": "生駒",
+          "name": "生駒高校",
+          "slug": "ikoma"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季近畿地区高校野球 奈良県大会",
+      "round": "1回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "県立商業",
+          "name": "奈良県立商業高校",
+          "slug": "narakenritsushogyo"
+        },
+        {
+          "display": "奈良高専",
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季近畿地区高校野球 奈良県大会",
+      "round": "1回戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "畝傍",
+          "name": "畝傍高校",
+          "slug": "unebi"
+        },
+        {
+          "display": "天理",
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    }
   ]
 }

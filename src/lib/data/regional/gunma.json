@@ -60715,5 +60715,444 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "太田市運動公園球場",
+      "teams": [
+        {
+          "display": "桐生",
+          "name": "桐生高校",
+          "slug": "kiryu"
+        },
+        {
+          "display": "富岡実",
+          "name": "富岡実",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "桐生市商",
+          "name": "桐生市立商業高校",
+          "slug": "kiryushiritsushogyo"
+        },
+        {
+          "display": "高崎工",
+          "name": "高崎工業高校",
+          "slug": "takasakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "高崎東",
+          "name": "高崎東高校",
+          "slug": "takasakihigashi"
+        },
+        {
+          "display": "中央中等",
+          "name": "中央中等",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "利根商",
+          "name": "利根商業高校",
+          "slug": "toneshogyo"
+        },
+        {
+          "display": "藤岡中央",
+          "name": "藤岡中央高校",
+          "slug": "fujiokachuo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "勢多農林",
+          "name": "勢多農林高校",
+          "slug": "setanorin"
+        },
+        {
+          "display": "市立太田",
+          "name": "市立太田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "常磐",
+          "name": "常磐",
+          "slug": null
+        },
+        {
+          "display": "渋川青翠",
+          "name": "渋川青翠高校",
+          "slug": "shibukawaseisui"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "高崎市城南球場",
+      "teams": [
+        {
+          "display": "群馬高専",
+          "name": "群馬工業高専",
+          "slug": "gunmakogyo"
+        },
+        {
+          "display": "興陽",
+          "name": "興陽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "高崎市城南球場",
+      "teams": [
+        {
+          "display": "松井田",
+          "name": "松井田高校",
+          "slug": "matsuida"
+        },
+        {
+          "display": "太田",
+          "name": "太田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "高崎市城南球場",
+      "teams": [
+        {
+          "display": "前橋東",
+          "name": "前橋東高校",
+          "slug": "maebashihigashi"
+        },
+        {
+          "display": "樹徳",
+          "name": "樹徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "高崎市城南球場",
+      "teams": [
+        {
+          "display": "渋川",
+          "name": "渋川高校",
+          "slug": "shibukawa"
+        },
+        {
+          "display": "太田東",
+          "name": "太田東高校",
+          "slug": "otahigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "グレースイン前橋市民球場",
+      "teams": [
+        {
+          "display": "伊勢崎",
+          "name": "伊勢崎高校",
+          "slug": "isesaki"
+        },
+        {
+          "display": "関学大附",
+          "name": "関学大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "高崎北",
+          "name": "高崎北高校",
+          "slug": "takasakikita"
+        },
+        {
+          "display": "大泉",
+          "name": "大泉高校",
+          "slug": "oizumi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "安中総合",
+          "name": "安中総合学園高校",
+          "slug": "annakasogogakuen"
+        },
+        {
+          "display": "伊勢崎工",
+          "name": "伊勢崎工業高校",
+          "slug": "isesakikogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "伊勢崎商",
+          "name": "伊勢崎商業高校",
+          "slug": "isesakishogyo"
+        },
+        {
+          "display": "新田暁",
+          "name": "新田暁高校",
+          "slug": "nittaakatsuki"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "グレースイン前橋市民球場",
+      "teams": [
+        {
+          "display": "藤岡北",
+          "name": "藤岡北高校",
+          "slug": "fujiokakita"
+        },
+        {
+          "display": "高崎",
+          "name": "高崎高校",
+          "slug": "takasaki"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "館林",
+          "name": "館林高校",
+          "slug": "tatebayashi"
+        },
+        {
+          "display": "館林商工",
+          "name": "館林商工高校",
+          "slug": "tatebayashishoko"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "吾妻中央",
+          "name": "吾妻中央高校",
+          "slug": "agatsumachuo"
+        },
+        {
+          "display": "前橋商",
+          "name": "前橋商業高校",
+          "slug": "maebashishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "グレースイン前橋市民球場",
+      "teams": [
+        {
+          "display": "伊勢崎清明",
+          "name": "伊勢崎清明高校",
+          "slug": "isesakiseimei"
+        },
+        {
+          "display": "市前橋",
+          "name": "市前橋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "グレースイン前橋市民球場",
+      "teams": [
+        {
+          "display": "前橋工",
+          "name": "前橋工業高校",
+          "slug": "maebashikogyo"
+        },
+        {
+          "display": "利根実",
+          "name": "利根実",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "グレースイン前橋市民球場",
+      "teams": [
+        {
+          "display": "商大附",
+          "name": "商大附",
+          "slug": null
+        },
+        {
+          "display": "太田工",
+          "name": "太田工業高校",
+          "slug": "otakogyo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "太田市運動公園球場",
+      "teams": [
+        {
+          "display": "高経大附",
+          "name": "高経大附",
+          "slug": null
+        },
+        {
+          "display": "沼田",
+          "name": "沼田高校",
+          "slug": "numata"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "オリエントスタジアムぬまた",
+      "teams": [
+        {
+          "display": "桐生清桜",
+          "name": "桐生清桜高校",
+          "slug": "kiryuseio"
+        },
+        {
+          "display": "富岡",
+          "name": "富岡高校",
+          "slug": "gunma-tomioka"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
+      "venue": "オリエントスタジアムぬまた",
+      "teams": [
+        {
+          "display": "渋川工",
+          "name": "渋川工業高校",
+          "slug": "shibukawakogyo"
+        },
+        {
+          "display": "前橋南",
+          "name": "前橋南高校",
+          "slug": "maebashiminami"
+        }
+      ]
+    }
   ]
 }

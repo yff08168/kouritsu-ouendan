@@ -20450,5 +20450,159 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "1回戦",
+      "venue": "メイプルスタジアム（六戸町）",
+      "teams": [
+        {
+          "display": "八戸水産",
+          "name": "八戸水産高校",
+          "slug": "hachinohesuisan"
+        },
+        {
+          "display": "八戸高専",
+          "name": "八戸工業高専",
+          "slug": "hachinohekogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "1回戦",
+      "venue": "青森県営野球場",
+      "teams": [
+        {
+          "display": "八戸東",
+          "name": "八戸東高校",
+          "slug": "hachinohehigashi"
+        },
+        {
+          "display": "青森西",
+          "name": "青森西高校",
+          "slug": "aomorinishi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "1回戦",
+      "venue": "黒石運動公園野球場",
+      "teams": [
+        {
+          "display": "弘前",
+          "name": "弘前高校",
+          "slug": "hirosaki"
+        },
+        {
+          "display": "青森明の星",
+          "name": "青森明の星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "1回戦",
+      "venue": "メイプルスタジアム（六戸町）",
+      "teams": [
+        {
+          "display": "三沢",
+          "name": "三沢高校",
+          "slug": "misawa"
+        },
+        {
+          "display": "弘前南",
+          "name": "弘前南高校",
+          "slug": "hirosakiminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "1回戦",
+      "venue": "青森県営野球場",
+      "teams": [
+        {
+          "display": "下山学園",
+          "name": "下山学園",
+          "slug": null
+        },
+        {
+          "display": "弘前中央",
+          "name": "弘前中央高校",
+          "slug": "hirosakichuo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "1回戦",
+      "venue": "メイプルスタジアム（六戸町）",
+      "teams": [
+        {
+          "display": "八戸",
+          "name": "八戸高校",
+          "slug": "hachinohe"
+        },
+        {
+          "display": "八工大二",
+          "name": "八工大二",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "1回戦",
+      "venue": "青森県営野球場",
+      "teams": [
+        {
+          "display": "八戸北",
+          "name": "八戸北高校",
+          "slug": "hachinohekita"
+        },
+        {
+          "display": "五所川原農林",
+          "name": "五所川原農林高校",
+          "slug": "goshogawaranorin"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "1回戦",
+      "venue": "黒石運動公園野球場",
+      "teams": [
+        {
+          "display": "八戸聖ウルスラ",
+          "name": "八戸聖ウルスラ",
+          "slug": null
+        },
+        {
+          "display": "弘前工業",
+          "name": "弘前工業高校",
+          "slug": "hirosakikogyo"
+        }
+      ]
+    }
   ]
 }

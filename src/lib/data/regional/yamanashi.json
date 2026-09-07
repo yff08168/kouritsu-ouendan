@@ -40296,5 +40296,255 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 山梨県大会",
+      "round": "1回戦",
+      "venue": "山日",
+      "teams": [
+        {
+          "display": "甲府西",
+          "name": "甲府西高校",
+          "slug": "kofunishi"
+        },
+        {
+          "display": "甲府南",
+          "name": "甲府南高校",
+          "slug": "kofuminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 山梨県大会",
+      "round": "1回戦",
+      "venue": "山日",
+      "teams": [
+        {
+          "display": "山梨学院",
+          "name": "山梨学院",
+          "slug": null
+        },
+        {
+          "display": "白根",
+          "name": "白根高校",
+          "slug": "yamanashi-shirone"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 山梨県大会",
+      "round": "1回戦",
+      "venue": "山日",
+      "teams": [
+        {
+          "display": "農林",
+          "name": "山梨県立農林高校",
+          "slug": "yamanashikenritsunorin"
+        },
+        {
+          "display": "富士北稜",
+          "name": "富士北稜高校",
+          "slug": "fujihokuryo"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 山梨県大会",
+      "round": "1回戦",
+      "venue": "山日",
+      "teams": [
+        {
+          "display": "東海大甲府",
+          "name": "東海大甲府",
+          "slug": null
+        },
+        {
+          "display": "甲府第一",
+          "name": "甲府第一高校",
+          "slug": "kofudaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 山梨県大会",
+      "round": "1回戦",
+      "venue": "山日",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "笛吹",
+          "name": "笛吹高校",
+          "slug": "fuefuki"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 山梨県大会",
+      "round": "1回戦",
+      "venue": "山日",
+      "teams": [
+        {
+          "display": "青州",
+          "name": "青州",
+          "slug": null
+        },
+        {
+          "display": "巨摩",
+          "name": "巨摩高校",
+          "slug": "koma"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 山梨県大会",
+      "round": "1回戦",
+      "venue": "山日",
+      "teams": [
+        {
+          "display": "北杜・韮崎",
+          "name": "北杜・韮崎",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "韮崎工業",
+          "name": "韮崎工業高校",
+          "slug": "nirasakikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 山梨県大会",
+      "round": "1回戦",
+      "venue": "山日",
+      "teams": [
+        {
+          "display": "山梨",
+          "name": "山梨高校",
+          "slug": "yamanashi"
+        },
+        {
+          "display": "甲府東",
+          "name": "甲府東高校",
+          "slug": "kofuhigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 山梨県大会",
+      "round": "1回戦",
+      "venue": "北麓",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "駿台甲府",
+          "name": "駿台甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 山梨県大会",
+      "round": "1回戦",
+      "venue": "北麓",
+      "teams": [
+        {
+          "display": "甲府城西",
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        },
+        {
+          "display": "日川",
+          "name": "日川高校",
+          "slug": "hikawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 山梨県大会",
+      "round": "1回戦",
+      "venue": "山日",
+      "teams": [
+        {
+          "display": "身延",
+          "name": "身延高校",
+          "slug": "minobu"
+        },
+        {
+          "display": "日大明誠",
+          "name": "日大明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 山梨県大会",
+      "round": "1回戦",
+      "venue": "山日",
+      "teams": [
+        {
+          "display": "甲府商業",
+          "name": "甲府商業高校",
+          "slug": "kofushogyo"
+        },
+        {
+          "display": "甲府昭和",
+          "name": "甲府昭和高校",
+          "slug": "kofushowa"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 山梨県大会",
+      "round": "1回戦",
+      "venue": "山日",
+      "teams": [
+        {
+          "display": "都留",
+          "name": "都留高校",
+          "slug": "tsuru"
+        },
+        {
+          "display": "吉田",
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        }
+      ]
+    }
   ]
 }

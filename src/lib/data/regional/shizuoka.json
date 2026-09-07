@@ -73008,5 +73008,159 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東海地区高校野球 静岡県大会",
+      "round": "1回戦",
+      "venue": "愛鷹球場",
+      "teams": [
+        {
+          "display": "韮山",
+          "name": "韮山高校",
+          "slug": "nirayama"
+        },
+        {
+          "display": "浜松工業",
+          "name": "浜松工業高校",
+          "slug": "hamamatsukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東海地区高校野球 静岡県大会",
+      "round": "1回戦",
+      "venue": "掛川球場",
+      "teams": [
+        {
+          "display": "掛川東",
+          "name": "掛川東高校",
+          "slug": "kakegawahigashi"
+        },
+        {
+          "display": "島田樟誠",
+          "name": "島田樟誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東海地区高校野球 静岡県大会",
+      "round": "1回戦",
+      "venue": "ちゅーるスタジアム清水",
+      "teams": [
+        {
+          "display": "東海大静岡翔洋",
+          "name": "東海大静岡翔洋",
+          "slug": null
+        },
+        {
+          "display": "富士宮西",
+          "name": "富士宮西高校",
+          "slug": "fujinomiyanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東海地区高校野球 静岡県大会",
+      "round": "1回戦",
+      "venue": "浜松球場",
+      "teams": [
+        {
+          "display": "袋井",
+          "name": "袋井高校",
+          "slug": "fukuroi"
+        },
+        {
+          "display": "相良",
+          "name": "相良高校",
+          "slug": "sagara"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東海地区高校野球 静岡県大会",
+      "round": "1回戦",
+      "venue": "愛鷹球場",
+      "teams": [
+        {
+          "display": "沼津東",
+          "name": "沼津東高校",
+          "slug": "numazuhigashi"
+        },
+        {
+          "display": "遠江総合",
+          "name": "遠江総合高校",
+          "slug": "totomisogo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東海地区高校野球 静岡県大会",
+      "round": "1回戦",
+      "venue": "しずてつスタジアム草薙",
+      "teams": [
+        {
+          "display": "知徳",
+          "name": "知徳",
+          "slug": null
+        },
+        {
+          "display": "駿河総合",
+          "name": "駿河総合高校",
+          "slug": "surugasogo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東海地区高校野球 静岡県大会",
+      "round": "1回戦",
+      "venue": "浜松球場",
+      "teams": [
+        {
+          "display": "浜松湖南",
+          "name": "浜松湖南高校",
+          "slug": "hamamatsukonan"
+        },
+        {
+          "display": "静清",
+          "name": "静清",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東海地区高校野球 静岡県大会",
+      "round": "1回戦",
+      "venue": "ちゅーるスタジアム清水",
+      "teams": [
+        {
+          "display": "桐陽",
+          "name": "桐陽",
+          "slug": null
+        },
+        {
+          "display": "浜松修学舎",
+          "name": "浜松修学舎",
+          "slug": null
+        }
+      ]
+    }
   ]
 }

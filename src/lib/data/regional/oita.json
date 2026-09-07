@@ -45900,5 +45900,178 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 大分大会",
+      "round": "1回戦",
+      "venue": "大",
+      "teams": [
+        {
+          "display": "高田",
+          "name": "高田高校",
+          "slug": "oita-takata"
+        },
+        {
+          "display": "中津北",
+          "name": "中津北高校",
+          "slug": "nakatsukita"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 大分大会",
+      "round": "1回戦",
+      "venue": "大",
+      "teams": [
+        {
+          "display": "大分高専",
+          "name": "大分工業高専",
+          "slug": "oitakogyo-kosen"
+        },
+        {
+          "display": "玖珠美山",
+          "name": "玖珠美山高校",
+          "slug": "kusumiyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 大分大会",
+      "round": "1回戦",
+      "venue": "大",
+      "teams": [
+        {
+          "display": "国東",
+          "name": "国東高校",
+          "slug": "kunisaki"
+        },
+        {
+          "display": "佐伯豊南",
+          "name": "佐伯豊南高校",
+          "slug": "saikihonan"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 大分大会",
+      "round": "1回戦",
+      "venue": "大",
+      "teams": [
+        {
+          "display": "佐伯鶴城",
+          "name": "佐伯鶴城高校",
+          "slug": "saikikakujo"
+        },
+        {
+          "display": "臼杵",
+          "name": "臼杵高校",
+          "slug": "usuki"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 大分大会",
+      "round": "1回戦",
+      "venue": "大",
+      "teams": [
+        {
+          "display": "柳ヶ浦",
+          "name": "柳ヶ浦",
+          "slug": null
+        },
+        {
+          "display": "日田林工",
+          "name": "日田林工高校",
+          "slug": "hitarinko"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 大分大会",
+      "round": "1回戦",
+      "venue": "大",
+      "teams": [
+        {
+          "display": "大分上野丘",
+          "name": "大分上野丘高校",
+          "slug": "oitauenogaoka"
+        },
+        {
+          "display": "宇佐",
+          "name": "宇佐高校",
+          "slug": "usa"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 大分大会",
+      "round": "1回戦",
+      "venue": "大",
+      "teams": [
+        {
+          "display": "日本文理大附",
+          "name": "日本文理大附",
+          "slug": null
+        },
+        {
+          "display": "大分南",
+          "name": "大分南高校",
+          "slug": "oitaminami"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 大分大会",
+      "round": "1回戦",
+      "venue": "大",
+      "teams": [
+        {
+          "display": "三重総合",
+          "name": "三重総合高校",
+          "slug": "miesogo"
+        },
+        {
+          "display": "大分西",
+          "name": "大分西高校",
+          "slug": "oitanishi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 大分大会",
+      "round": "1回戦",
+      "venue": "大",
+      "teams": [
+        {
+          "display": "大分国際情報",
+          "name": "大分国際情報",
+          "slug": null
+        },
+        {
+          "display": "大分工業",
+          "name": "大分工業高校",
+          "slug": "oitakogyo"
+        }
+      ]
+    }
   ]
 }

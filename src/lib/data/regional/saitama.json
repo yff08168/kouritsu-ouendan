@@ -57848,5 +57848,216 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 埼玉大会",
+      "round": "1回戦",
+      "venue": "レ",
+      "teams": [
+        {
+          "display": "志木",
+          "name": "志木高校",
+          "slug": "shiki"
+        },
+        {
+          "display": "坂戸西",
+          "name": "坂戸西高校",
+          "slug": "sakadonishi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 埼玉大会",
+      "round": "1回戦",
+      "venue": "越谷市民球場",
+      "teams": [
+        {
+          "display": "久喜工業",
+          "name": "久喜工業高校",
+          "slug": "kukikogyo"
+        },
+        {
+          "display": "草加西",
+          "name": "草加西高校",
+          "slug": "sokanishi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 埼玉大会",
+      "round": "1回戦",
+      "venue": "おふろＣａｆéハレニワスタジアム熊谷",
+      "teams": [
+        {
+          "display": "国際学院",
+          "name": "国際学院",
+          "slug": null
+        },
+        {
+          "display": "わせがく夢育",
+          "name": "わせがく夢育",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 埼玉大会",
+      "round": "1回戦",
+      "venue": "レ",
+      "teams": [
+        {
+          "display": "所沢西",
+          "name": "所沢西高校",
+          "slug": "tokorozawanishi"
+        },
+        {
+          "display": "三郷北",
+          "name": "三郷北高校",
+          "slug": "misatokita"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 埼玉大会",
+      "round": "1回戦",
+      "venue": "県",
+      "teams": [
+        {
+          "display": "浦和北",
+          "name": "浦和北高校",
+          "slug": "urawakita"
+        },
+        {
+          "display": "西武文理",
+          "name": "西武文理",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 埼玉大会",
+      "round": "1回戦",
+      "venue": "所沢航空記念公園球場",
+      "teams": [
+        {
+          "display": "所沢",
+          "name": "所沢高校",
+          "slug": "tokorozawa"
+        },
+        {
+          "display": "武蔵越生",
+          "name": "武蔵越生",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 埼玉大会",
+      "round": "1回戦",
+      "venue": "県",
+      "teams": [
+        {
+          "display": "埼玉平成",
+          "name": "埼玉平成",
+          "slug": null
+        },
+        {
+          "display": "飯能",
+          "name": "飯能高校",
+          "slug": "hanno"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 埼玉大会",
+      "round": "1回戦",
+      "venue": "上",
+      "teams": [
+        {
+          "display": "庄和",
+          "name": "庄和高校",
+          "slug": "showa"
+        },
+        {
+          "display": "栄北",
+          "name": "栄北",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 埼玉大会",
+      "round": "1回戦",
+      "venue": "おふろＣａｆéハレニワスタジアム熊谷",
+      "teams": [
+        {
+          "display": "秩父",
+          "name": "秩父高校",
+          "slug": "chichibu"
+        },
+        {
+          "display": "大宮科学技術",
+          "name": "大宮科学技術高校",
+          "slug": "omiyakagakugijutsu"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 埼玉大会",
+      "round": "1回戦",
+      "venue": "越谷市民球場",
+      "teams": [
+        {
+          "display": "越谷総合技術",
+          "name": "越谷総合技術高校",
+          "slug": "koshigayasogogijutsu"
+        },
+        {
+          "display": "開智未来",
+          "name": "開智未来",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "summer",
+      "tournament": "第108回全国高等学校野球選手権 埼玉大会",
+      "round": "1回戦",
+      "venue": "上",
+      "teams": [
+        {
+          "display": "上尾南",
+          "name": "上尾南高校",
+          "slug": "ageominami"
+        },
+        {
+          "display": "ふじみ野",
+          "name": "ふじみ野高校",
+          "slug": "fujimino"
+        }
+      ]
+    }
   ]
 }

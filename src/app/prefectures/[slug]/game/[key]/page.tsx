@@ -151,25 +151,18 @@ export default async function RegionalGamePage({ params }: Props) {
         */}
         <div className="mt-5">
           {hasInnings(game) ? (
-            <>
-              <GameScoreboard teams={game.teams} />
-              {/*
-                ★★**各回だけ出所が違うときは、そう書く**（2026-09-06）。
-                **スコアは連盟から、各回は速報から**という試合がある。
-                ★**このサイトは「転記した経路が本当の出所」**という線を守っている。
-                ★**同じ出所のときは出さない**（県の出典表示で足りる）。
-              */}
-              {game.inningsSource && (
-                <p className="mt-2 text-xs text-ink-faint">
-                  各回の得点の出典：{game.inningsSource.name}
-                  {district.sourceName && <>（スコアは{district.sourceName}）</>}
-                </p>
-              )}
-            </>
+            /*
+              ★**出典の行は 2026-09-06 に運営者の判断で画面から外した。**
+              **データ側（`game.inningsSource`）は残してある**ので、戻すのはここだけ。
+              文言は「各回の得点の出典：◯◯（スコアは◯◯）」だった
+              （スコアは連盟・各回は速報、という試合が528件ある）。
+              ★**結果カードの出典の行を 2026-08-21 に外したのと同じ判断。**
+            */
+            <GameScoreboard teams={game.teams} />
           ) : (
+            /* ★**出典名はここでも出さない**（2026-09-06。上の行と同じ判断） */
             <p className="rounded-lg border border-line bg-navy-50/40 p-4 text-sm leading-relaxed text-ink-muted">
               この試合は、出典が合計得点だけを出しているため各回の得点がありません。
-              {district.sourceName && <>（出典：{district.sourceName}）</>}
             </p>
           )}
         </div>

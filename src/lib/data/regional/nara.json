@@ -21709,6 +21709,121 @@
       ]
     },
     {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "橿原",
+          "score": 6,
+          "won": true,
+          "name": "橿原高校",
+          "slug": "kashihara"
+        },
+        {
+          "display": "生駒",
+          "score": 5,
+          "won": false,
+          "name": "生駒高校",
+          "slug": "ikoma"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "県立商業",
+          "score": 0,
+          "won": false,
+          "name": "奈良県立商業高校",
+          "slug": "narakenritsushogyo"
+        },
+        {
+          "display": "奈良高専",
+          "score": 5,
+          "won": true,
+          "name": "奈良工業高専",
+          "slug": "narakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 11,
+          "won": true,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "畝傍",
+          "score": 0,
+          "won": false,
+          "name": "畝傍高校",
+          "slug": "unebi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "五條",
+          "score": 6,
+          "won": false,
+          "name": "五條高校",
+          "slug": "nara-gojo"
+        },
+        {
+          "display": "奈良商工",
+          "score": 7,
+          "won": true,
+          "name": "奈良商工高校",
+          "slug": "narashoko"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",
+      "round": null,
+      "venue": "ならっきー球場",
+      "teams": [
+        {
+          "display": "磯城野",
+          "score": 5,
+          "won": false,
+          "name": "磯城野高校",
+          "slug": "nara-shikino"
+        },
+        {
+          "display": "橿原学院",
+          "score": 12,
+          "won": true,
+          "name": "橿原学院",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-09-05",
       "season": "autumn",
       "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",
@@ -21720,34 +21835,16 @@
           "score": 24,
           "won": true,
           "name": "香芝高校",
-          "slug": "kashiba",
-          "innings": [
-            5,
-            6,
-            3,
-            5,
-            5
-          ]
+          "slug": "kashiba"
         },
         {
           "display": "宇陀",
           "score": 0,
           "won": false,
           "name": "宇陀高校",
-          "slug": "uda",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "uda"
         }
-      ],
-      "inningsSource": {
-        "name": "HSB flash",
-        "url": "https://hsbflash.jp/"
-      }
+      ]
     },
     {
       "date": "2026-09-05",
@@ -21761,44 +21858,16 @@
           "score": 14,
           "won": true,
           "name": "郡山高校",
-          "slug": "nara-koriyama",
-          "innings": [
-            1,
-            0,
-            1,
-            0,
-            0,
-            0,
-            1,
-            1,
-            0,
-            10
-          ]
+          "slug": "nara-koriyama"
         },
         {
           "display": "桜井",
           "score": 6,
           "won": false,
           "name": "桜井高校",
-          "slug": "nara-sakurai",
-          "innings": [
-            0,
-            0,
-            0,
-            1,
-            0,
-            1,
-            0,
-            0,
-            2,
-            2
-          ]
+          "slug": "nara-sakurai"
         }
-      ],
-      "inningsSource": {
-        "name": "HSB flash",
-        "url": "https://hsbflash.jp/"
-      }
+      ]
     },
     {
       "date": "2026-09-05",
@@ -21858,44 +21927,16 @@
           "score": 4,
           "won": true,
           "name": "西大和学園",
-          "slug": null,
-          "innings": [
-            0,
-            0,
-            2,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            2
-          ]
+          "slug": null
         },
         {
           "display": "奈女大附",
           "score": 2,
           "won": false,
           "name": "奈良女子大学附属中等教育学校",
-          "slug": "narajoshidaigakufuzoku",
-          "innings": [
-            0,
-            0,
-            2,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "narajoshidaigakufuzoku"
         }
-      ],
-      "inningsSource": {
-        "name": "HSB flash",
-        "url": "https://hsbflash.jp/"
-      }
+      ]
     },
     {
       "date": "2026-08-30",
@@ -21956,38 +21997,16 @@
           "score": 7,
           "won": true,
           "name": "御所実業高校",
-          "slug": "gosejitsugyo",
-          "innings": [
-            0,
-            0,
-            5,
-            0,
-            1,
-            0,
-            1
-          ]
+          "slug": "gosejitsugyo"
         },
         {
           "display": "添上",
           "score": 0,
           "won": false,
           "name": "添上高校",
-          "slug": "soekami",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "soekami"
         }
-      ],
-      "inningsSource": {
-        "name": "HSB flash",
-        "url": "https://hsbflash.jp/"
-      }
+      ]
     },
     {
       "date": "2026-08-29",
@@ -22024,34 +22043,16 @@
           "score": 17,
           "won": true,
           "name": "智辯学園",
-          "slug": null,
-          "innings": [
-            6,
-            0,
-            0,
-            7,
-            4
-          ]
+          "slug": null
         },
         {
           "display": "王寺工業",
           "score": 0,
           "won": false,
           "name": "王寺工業高校",
-          "slug": "ojikogyo",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "ojikogyo"
         }
-      ],
-      "inningsSource": {
-        "name": "HSB flash",
-        "url": "https://hsbflash.jp/"
-      }
+      ]
     },
     {
       "date": "2026-08-29",

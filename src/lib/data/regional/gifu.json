@@ -15359,7 +15359,7 @@
     {
       "date": "2026-08-29",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "1回戦",
       "venue": "カヤバスタジアム（可児）",
       "teams": [
@@ -15368,42 +15368,21 @@
           "score": 8,
           "won": true,
           "name": "関高校",
-          "slug": "seki",
-          "innings": [
-            1,
-            0,
-            0,
-            3,
-            3,
-            1,
-            0,
-            0
-          ]
+          "slug": "seki"
         },
         {
           "display": "武義",
           "score": 5,
           "won": false,
           "name": "武義高校",
-          "slug": "mugi",
-          "innings": [
-            0,
-            0,
-            5,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "mugi"
         }
       ]
     },
     {
       "date": "2026-08-29",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "1回戦",
       "venue": "土岐市総合公園野球場",
       "teams": [
@@ -15412,41 +15391,21 @@
           "score": 10,
           "won": true,
           "name": "岐阜農林高校",
-          "slug": "gifunorin",
-          "innings": [
-            6,
-            0,
-            0,
-            0,
-            0,
-            1,
-            1,
-            2
-          ]
+          "slug": "gifunorin"
         },
         {
           "display": "多治見",
           "score": 2,
           "won": false,
           "name": "多治見高校",
-          "slug": "tajimi",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            2,
-            0,
-            0
-          ]
+          "slug": "tajimi"
         }
       ]
     },
     {
       "date": "2026-08-29",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "1回戦",
       "venue": "河上薬品スタジアム（関市民球場）",
       "teams": [
@@ -15455,43 +15414,21 @@
           "score": 1,
           "won": false,
           "name": "東濃実業高校",
-          "slug": "tonojitsugyo",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0
-          ]
+          "slug": "tonojitsugyo"
         },
         {
           "display": "市岐阜商",
           "score": 3,
           "won": true,
           "name": "岐阜商業高校",
-          "slug": "gifu-gifushogyo",
-          "innings": [
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            2
-          ]
+          "slug": "gifu-gifushogyo"
         }
       ]
     },
     {
       "date": "2026-08-29",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "1回戦",
       "venue": "プリニーの野球場（各務原）",
       "teams": [
@@ -15500,42 +15437,21 @@
           "score": 5,
           "won": true,
           "name": "池田高校",
-          "slug": "gifu-ikeda",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            3,
-            2,
-            0,
-            0
-          ]
+          "slug": "gifu-ikeda"
         },
         {
           "display": "岐南工",
           "score": 0,
           "won": false,
           "name": "岐南工業高校",
-          "slug": "ginankogyo",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "ginankogyo"
         }
       ]
     },
     {
       "date": "2026-08-30",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "2回戦",
       "venue": "カヤバスタジアム（可児）",
       "teams": [
@@ -15559,7 +15475,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "2回戦",
       "venue": "土岐市総合公園野球場",
       "teams": [
@@ -15568,42 +15484,21 @@
           "score": 3,
           "won": false,
           "name": "関高校",
-          "slug": "seki",
-          "innings": [
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            2
-          ]
+          "slug": "seki"
         },
         {
           "display": "岐阜農林",
           "score": 4,
           "won": true,
           "name": "岐阜農林高校",
-          "slug": "gifunorin",
-          "innings": [
-            0,
-            1,
-            2,
-            0,
-            0,
-            0,
-            1,
-            0
-          ]
+          "slug": "gifunorin"
         }
       ]
     },
     {
       "date": "2026-08-30",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "2回戦",
       "venue": "土岐市総合公園野球場",
       "teams": [
@@ -15612,42 +15507,21 @@
           "score": 4,
           "won": true,
           "name": "多治見工業高校",
-          "slug": "tajimikogyo",
-          "innings": [
-            1,
-            0,
-            0,
-            0,
-            0,
-            2,
-            1,
-            0
-          ]
+          "slug": "tajimikogyo"
         },
         {
           "display": "中津川工",
           "score": 2,
           "won": false,
           "name": "中津川工業高校",
-          "slug": "nakatsugawakogyo",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            1
-          ]
+          "slug": "nakatsugawakogyo"
         }
       ]
     },
     {
       "date": "2026-08-30",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "2回戦",
       "venue": "プリニーの野球場（各務原）",
       "teams": [
@@ -15656,43 +15530,21 @@
           "score": 4,
           "won": false,
           "name": "大垣養老高校",
-          "slug": "ogakiyoro",
-          "innings": [
-            2,
-            0,
-            2,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "ogakiyoro"
         },
         {
           "display": "富田",
           "score": 9,
           "won": true,
           "name": "富田",
-          "slug": null,
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            2,
-            1,
-            0,
-            1,
-            5
-          ]
+          "slug": null
         }
       ]
     },
     {
       "date": "2026-08-30",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "2回戦",
       "venue": "弘光舎レインボースタジアム（大野）",
       "teams": [
@@ -15702,42 +15554,21 @@
           "won": true,
           "name": "海津明誠・不破・揖斐",
           "slug": null,
-          "combined": true,
-          "innings": [
-            4,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            6
-          ]
+          "combined": true
         },
         {
           "display": "可児",
           "score": 6,
           "won": false,
           "name": "可児高校",
-          "slug": "kani",
-          "innings": [
-            2,
-            0,
-            0,
-            0,
-            0,
-            2,
-            0,
-            2,
-            0
-          ]
+          "slug": "kani"
         }
       ]
     },
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "2回戦",
       "venue": "弘光舎レインボースタジアム（大野）",
       "teams": [
@@ -15746,42 +15577,21 @@
           "score": 1,
           "won": false,
           "name": "岐阜商業高校",
-          "slug": "gifu-gifushogyo",
-          "innings": [
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "gifu-gifushogyo"
         },
         {
           "display": "池田",
           "score": 2,
           "won": true,
           "name": "池田高校",
-          "slug": "gifu-ikeda",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            1
-          ]
+          "slug": "gifu-ikeda"
         }
       ]
     },
     {
       "date": "2026-08-30",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "2回戦",
       "venue": "弘光舎レインボースタジアム（大野）",
       "teams": [
@@ -15790,43 +15600,21 @@
           "score": 2,
           "won": false,
           "name": "大垣工業高校",
-          "slug": "ogakikogyo",
-          "innings": [
-            0,
-            1,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "ogakikogyo"
         },
         {
           "display": "大垣東",
           "score": 3,
           "won": true,
           "name": "大垣東高校",
-          "slug": "ogakihigashi",
-          "innings": [
-            1,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            1
-          ]
+          "slug": "ogakihigashi"
         }
       ]
     },
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "2回戦",
       "venue": "プリニーの野球場（各務原）",
       "teams": [
@@ -15835,42 +15623,21 @@
           "score": 7,
           "won": true,
           "name": "美濃加茂",
-          "slug": null,
-          "innings": [
-            0,
-            0,
-            0,
-            3,
-            0,
-            3,
-            1,
-            0
-          ]
+          "slug": null
         },
         {
           "display": "大垣北",
           "score": 3,
           "won": false,
           "name": "大垣北高校",
-          "slug": "ogakikita",
-          "innings": [
-            1,
-            0,
-            0,
-            0,
-            1,
-            1,
-            0,
-            0,
-            0
-          ]
+          "slug": "ogakikita"
         }
       ]
     },
     {
       "date": "2026-09-06",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "3回戦",
       "venue": "弘光舎レインボースタジアム（大野）",
       "teams": [
@@ -15879,43 +15646,21 @@
           "score": 8,
           "won": true,
           "name": "関商工高校",
-          "slug": "sekishoko",
-          "innings": [
-            4,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            2,
-            1
-          ]
+          "slug": "sekishoko"
         },
         {
           "display": "加茂農林",
           "score": 6,
           "won": false,
           "name": "加茂農林高校",
-          "slug": "gifu-kamonorin",
-          "innings": [
-            0,
-            1,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            4
-          ]
+          "slug": "gifu-kamonorin"
         }
       ]
     },
     {
       "date": "2026-09-06",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "3回戦",
       "venue": "カヤバスタジアム（可児）",
       "teams": [
@@ -15924,42 +15669,21 @@
           "score": 6,
           "won": true,
           "name": "麗澤瑞浪",
-          "slug": null,
-          "innings": [
-            0,
-            0,
-            1,
-            1,
-            2,
-            0,
-            0,
-            2
-          ]
+          "slug": null
         },
         {
           "display": "多治見工",
           "score": 5,
           "won": false,
           "name": "多治見工業高校",
-          "slug": "tajimikogyo",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            1,
-            2,
-            2,
-            0,
-            0
-          ]
+          "slug": "tajimikogyo"
         }
       ]
     },
     {
       "date": "2026-09-06",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "3回戦",
       "venue": "土岐市総合公園野球場",
       "teams": [
@@ -15968,14 +15692,7 @@
           "score": 15,
           "won": true,
           "name": "中京",
-          "slug": null,
-          "innings": [
-            1,
-            2,
-            7,
-            2,
-            3
-          ]
+          "slug": null
         },
         {
           "display": "海津明誠・不破・揖斐",
@@ -15983,21 +15700,14 @@
           "won": false,
           "name": "海津明誠・不破・揖斐",
           "slug": null,
-          "combined": true,
-          "innings": [
-            0,
-            1,
-            0,
-            0,
-            0
-          ]
+          "combined": true
         }
       ]
     },
     {
       "date": "2026-09-06",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "3回戦",
       "venue": "カヤバスタジアム（可児）",
       "teams": [
@@ -16020,7 +15730,7 @@
     {
       "date": "2026-08-29",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "2回戦",
       "venue": "弘光舎レインボースタジアム（大野）",
       "teams": [
@@ -16043,7 +15753,7 @@
     {
       "date": "2026-08-29",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "2回戦",
       "venue": "土岐市総合公園野球場",
       "teams": [
@@ -16066,7 +15776,7 @@
     {
       "date": "2026-08-29",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "2回戦",
       "venue": "カヤバスタジアム（可児）",
       "teams": [
@@ -16089,7 +15799,7 @@
     {
       "date": "2026-08-29",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "2回戦",
       "venue": "河上薬品スタジアム（関市民球場）",
       "teams": [
@@ -16098,39 +15808,21 @@
           "score": 10,
           "won": true,
           "name": "中津商業高校",
-          "slug": "nakatsushogyo",
-          "innings": [
-            0,
-            1,
-            0,
-            0,
-            4,
-            0,
-            5
-          ]
+          "slug": "nakatsushogyo"
         },
         {
           "display": "関有知",
           "score": 1,
           "won": false,
           "name": "関有知高校",
-          "slug": "sekiuchi",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0
-          ]
+          "slug": "sekiuchi"
         }
       ]
     },
     {
       "date": "2026-08-29",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "2回戦",
       "venue": "プリニーの野球場（各務原）",
       "teams": [
@@ -16139,43 +15831,21 @@
           "score": 6,
           "won": true,
           "name": "岐山高校",
-          "slug": "gizan",
-          "innings": [
-            0,
-            1,
-            0,
-            0,
-            1,
-            0,
-            1,
-            0,
-            3
-          ]
+          "slug": "gizan"
         },
         {
           "display": "岐阜高専",
           "score": 2,
           "won": false,
           "name": "岐阜工業高専",
-          "slug": "gifukogyo-kosen",
-          "innings": [
-            0,
-            0,
-            0,
-            1,
-            0,
-            1,
-            0,
-            0,
-            0
-          ]
+          "slug": "gifukogyo-kosen"
         }
       ]
     },
     {
       "date": "2026-08-29",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "2回戦",
       "venue": "弘光舎レインボースタジアム（大野）",
       "teams": [
@@ -16184,42 +15854,21 @@
           "score": 5,
           "won": false,
           "name": "岐阜総合学園高校",
-          "slug": "gifusogogakuen",
-          "innings": [
-            0,
-            0,
-            2,
-            0,
-            0,
-            0,
-            2,
-            0,
-            1
-          ]
+          "slug": "gifusogogakuen"
         },
         {
           "display": "大垣南",
           "score": 6,
           "won": true,
           "name": "大垣南高校",
-          "slug": "ogakiminami",
-          "innings": [
-            2,
-            0,
-            0,
-            4,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "ogakiminami"
         }
       ]
     },
     {
       "date": "2026-08-30",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "3回戦",
       "venue": "プリニーの野球場（各務原）",
       "teams": [
@@ -16228,42 +15877,21 @@
           "score": 2,
           "won": false,
           "name": "土岐紅陵高校",
-          "slug": "tokikoryo",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            2,
-            0,
-            0
-          ]
+          "slug": "tokikoryo"
         },
         {
           "display": "岐阜",
           "score": 6,
           "won": true,
           "name": "岐阜高校",
-          "slug": "gifu",
-          "innings": [
-            0,
-            2,
-            2,
-            0,
-            1,
-            1,
-            0,
-            0
-          ]
+          "slug": "gifu"
         }
       ]
     },
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "3回戦",
       "venue": "弘光舎レインボースタジアム（大野）",
       "teams": [
@@ -16272,43 +15900,21 @@
           "score": 1,
           "won": false,
           "name": "加納高校",
-          "slug": "kano",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0
-          ]
+          "slug": "kano"
         },
         {
           "display": "岐阜各務野",
           "score": 3,
           "won": true,
           "name": "岐阜各務野高校",
-          "slug": "gifukakamino",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            3,
-            0,
-            0
-          ]
+          "slug": "gifukakamino"
         }
       ]
     },
     {
       "date": "2026-08-30",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "3回戦",
       "venue": "河上薬品スタジアム（関市民球場）",
       "teams": [
@@ -16317,42 +15923,21 @@
           "score": 2,
           "won": false,
           "name": "益田清風高校",
-          "slug": "mashitaseifu",
-          "innings": [
-            1,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "mashitaseifu"
         },
         {
           "display": "岐阜工",
           "score": 4,
           "won": true,
           "name": "岐阜工業高校",
-          "slug": "gifukogyo",
-          "innings": [
-            1,
-            0,
-            0,
-            1,
-            0,
-            1,
-            1,
-            0
-          ]
+          "slug": "gifukogyo"
         }
       ]
     },
     {
       "date": "2026-08-30",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "3回戦",
       "venue": "土岐市総合公園野球場",
       "teams": [
@@ -16375,7 +15960,7 @@
     {
       "date": "2026-08-30",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "3回戦",
       "venue": "カヤバスタジアム（可児）",
       "teams": [
@@ -16384,43 +15969,21 @@
           "score": 17,
           "won": true,
           "name": "本巣松陽高校",
-          "slug": "motosushoyo",
-          "innings": [
-            1,
-            0,
-            5,
-            4,
-            0,
-            0,
-            1,
-            5,
-            1
-          ]
+          "slug": "motosushoyo"
         },
         {
           "display": "郡上",
           "score": 11,
           "won": false,
           "name": "郡上高校",
-          "slug": "gujo",
-          "innings": [
-            0,
-            4,
-            0,
-            0,
-            0,
-            4,
-            3,
-            0,
-            0
-          ]
+          "slug": "gujo"
         }
       ]
     },
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "3回戦",
       "venue": "土岐市総合公園野球場",
       "teams": [
@@ -16429,39 +15992,21 @@
           "score": 2,
           "won": false,
           "name": "斐太高校",
-          "slug": "hida",
-          "innings": [
-            0,
-            2,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "hida"
         },
         {
           "display": "中津商",
           "score": 12,
           "won": true,
           "name": "中津商業高校",
-          "slug": "nakatsushogyo",
-          "innings": [
-            5,
-            1,
-            0,
-            1,
-            0,
-            3,
-            2
-          ]
+          "slug": "nakatsushogyo"
         }
       ]
     },
     {
       "date": "2026-08-30",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "3回戦",
       "venue": "河上薬品スタジアム（関市民球場）",
       "teams": [
@@ -16485,7 +16030,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "3回戦",
       "venue": "プリニーの野球場（各務原）",
       "teams": [
@@ -16494,42 +16039,21 @@
           "score": 1,
           "won": false,
           "name": "岐山高校",
-          "slug": "gizan",
-          "innings": [
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "gizan"
         },
         {
           "display": "大垣南",
           "score": 7,
           "won": true,
           "name": "大垣南高校",
-          "slug": "ogakiminami",
-          "innings": [
-            0,
-            0,
-            2,
-            0,
-            0,
-            3,
-            0,
-            2
-          ]
+          "slug": "ogakiminami"
         }
       ]
     },
     {
       "date": "2026-09-06",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "4回戦",
       "venue": "大垣市北公園野球場",
       "teams": [
@@ -16538,38 +16062,21 @@
           "score": 7,
           "won": true,
           "name": "大垣日大",
-          "slug": null,
-          "innings": [
-            2,
-            1,
-            0,
-            0,
-            4,
-            0
-          ]
+          "slug": null
         },
         {
           "display": "岐阜",
           "score": 0,
           "won": false,
           "name": "岐阜高校",
-          "slug": "gifu",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "gifu"
         }
       ]
     },
     {
       "date": "2026-09-06",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "4回戦",
       "venue": "プリニーの野球場（各務原）",
       "teams": [
@@ -16578,43 +16085,21 @@
           "score": 7,
           "won": true,
           "name": "岐阜第一",
-          "slug": null,
-          "innings": [
-            1,
-            0,
-            0,
-            1,
-            0,
-            2,
-            1,
-            0,
-            2
-          ]
+          "slug": null
         },
         {
           "display": "岐阜工",
           "score": 3,
           "won": false,
           "name": "岐阜工業高校",
-          "slug": "gifukogyo",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            3,
-            0
-          ]
+          "slug": "gifukogyo"
         }
       ]
     },
     {
       "date": "2026-09-06",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "4回戦",
       "venue": "弘光舎レインボースタジアム（大野）",
       "teams": [
@@ -16623,34 +16108,21 @@
           "score": 13,
           "won": true,
           "name": "岐阜商業高校",
-          "slug": "gifushogyo",
-          "innings": [
-            5,
-            2,
-            5,
-            1
-          ]
+          "slug": "gifushogyo"
         },
         {
           "display": "本巣松陽",
           "score": 0,
           "won": false,
           "name": "本巣松陽高校",
-          "slug": "motosushoyo",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "motosushoyo"
         }
       ]
     },
     {
       "date": "2026-09-06",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
       "round": "4回戦",
       "venue": "プリニーの野球場（各務原）",
       "teams": [

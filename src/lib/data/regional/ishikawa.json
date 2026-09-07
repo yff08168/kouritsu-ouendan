@@ -14,6 +14,16 @@
           "display": "七尾東雲",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "七尾東雲高校",
           "slug": "nanaoshinonome"
         },
@@ -21,6 +31,16 @@
           "display": "北陸学院",
           "score": 7,
           "won": true,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            3,
+            0,
+            2,
+            1
+          ],
           "name": "北陸学院",
           "slug": null
         }
@@ -37,6 +57,16 @@
           "display": "輪島",
           "score": 8,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            3,
+            1,
+            2,
+            0,
+            2
+          ],
           "name": "輪島高校",
           "slug": "wajima"
         },
@@ -44,6 +74,16 @@
           "display": "金大附属",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
           "name": "金沢大学人間社会学域学校教育学類附属高校",
           "slug": "kanazawadaigakuningenshakaigakuikigakkokyoikugakuruifuzoku"
         }
@@ -60,6 +100,18 @@
           "display": "七尾",
           "score": 14,
           "won": true,
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            9
+          ],
           "name": "七尾高校",
           "slug": "nanao"
         },
@@ -67,6 +119,18 @@
           "display": "金沢錦丘",
           "score": 8,
           "won": false,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0,
+            0,
+            3
+          ],
           "name": "金沢錦丘高校",
           "slug": "kanazawanishikigaoka"
         }
@@ -83,6 +147,17 @@
           "display": "金沢商業",
           "score": 4,
           "won": true,
+          "innings": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
           "name": "金沢商業高校",
           "slug": "kanazawashogyo"
         },
@@ -90,6 +165,17 @@
           "display": "大聖寺実業",
           "score": 3,
           "won": false,
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "大聖寺実業高校",
           "slug": "daishojijitsugyo"
         }
@@ -106,6 +192,16 @@
           "display": "金沢西",
           "score": 8,
           "won": true,
+          "innings": [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2
+          ],
           "name": "金沢西高校",
           "slug": "kanazawanishi"
         },
@@ -113,6 +209,16 @@
           "display": "能登・穴水",
           "score": 1,
           "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "能登・穴水",
           "slug": null,
           "combined": true
@@ -130,6 +236,13 @@
           "display": "金沢桜丘",
           "score": 18,
           "won": true,
+          "innings": [
+            13,
+            0,
+            0,
+            1,
+            4
+          ],
           "name": "金沢桜丘高校",
           "slug": "kanazawasakuragaoka"
         },
@@ -137,6 +250,13 @@
           "display": "鶴来",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
           "name": "鶴来高校",
           "slug": "tsurugi"
         }
@@ -153,6 +273,15 @@
           "display": "飯田",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "飯田高校",
           "slug": "iida"
         },
@@ -160,6 +289,14 @@
           "display": "小松市立",
           "score": 9,
           "won": true,
+          "innings": [
+            0,
+            0,
+            3,
+            1,
+            4,
+            1
+          ],
           "name": "小松市立高校",
           "slug": "komatsushiritsu"
         }
@@ -176,6 +313,13 @@
           "display": "松任・翠星・明倫",
           "score": 2,
           "won": false,
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "松任・翠星・明倫",
           "slug": null,
           "combined": true
@@ -184,6 +328,12 @@
           "display": "県立工業",
           "score": 17,
           "won": true,
+          "innings": [
+            7,
+            1,
+            1,
+            8
+          ],
           "name": "石川県立工業高校",
           "slug": "ishikawakenritsukogyo"
         }
@@ -200,6 +350,13 @@
           "display": "大聖寺",
           "score": 12,
           "won": true,
+          "innings": [
+            3,
+            1,
+            8,
+            0,
+            0
+          ],
           "name": "大聖寺高校",
           "slug": "daishoji"
         },
@@ -207,6 +364,13 @@
           "display": "金沢伏見",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
           "name": "金沢伏見高校",
           "slug": "kanazawafushimi"
         }
@@ -223,6 +387,13 @@
           "display": "鹿西",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "鹿西高校",
           "slug": "rokusei"
         },
@@ -230,6 +401,12 @@
           "display": "小松大谷",
           "score": 16,
           "won": true,
+          "innings": [
+            10,
+            1,
+            2,
+            3
+          ],
           "name": "小松大谷",
           "slug": null
         }
@@ -246,6 +423,13 @@
           "display": "羽咋",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "羽咋高校",
           "slug": "hakui"
         },
@@ -253,6 +437,12 @@
           "display": "日本航空石川",
           "score": 25,
           "won": true,
+          "innings": [
+            6,
+            1,
+            9,
+            9
+          ],
           "name": "日本航空石川",
           "slug": null
         }
@@ -269,6 +459,17 @@
           "display": "金沢泉丘",
           "score": 3,
           "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢泉丘高校",
           "slug": "kanazawaizumigaoka"
         },
@@ -276,6 +477,16 @@
           "display": "遊学館",
           "score": 5,
           "won": true,
+          "innings": [
+            2,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0
+          ],
           "name": "遊学館",
           "slug": null
         }
@@ -292,6 +503,13 @@
           "display": "金沢二水",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
           "name": "金沢二水高校",
           "slug": "kanazawanisui"
         },
@@ -299,6 +517,12 @@
           "display": "星稜",
           "score": 12,
           "won": true,
+          "innings": [
+            5,
+            2,
+            5,
+            0
+          ],
           "name": "星稜",
           "slug": null
         }
@@ -315,6 +539,14 @@
           "display": "鵬学園",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
           "name": "鵬学園",
           "slug": null
         },
@@ -322,6 +554,14 @@
           "display": "小松",
           "score": 11,
           "won": true,
+          "innings": [
+            2,
+            2,
+            0,
+            0,
+            0,
+            7
+          ],
           "name": "小松高校",
           "slug": "komatsu"
         }
@@ -338,6 +578,15 @@
           "display": "金沢北陵",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢北陵高校",
           "slug": "kanazawahokuryo"
         },
@@ -345,6 +594,14 @@
           "display": "金沢学院大附",
           "score": 9,
           "won": true,
+          "innings": [
+            0,
+            2,
+            1,
+            0,
+            5,
+            1
+          ],
           "name": "金沢学院大附",
           "slug": null
         }
@@ -361,6 +618,17 @@
           "display": "金沢",
           "score": 8,
           "won": true,
+          "innings": [
+            1,
+            3,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
           "name": "金沢",
           "slug": null
         },
@@ -368,6 +636,17 @@
           "display": "金沢龍谷",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢龍谷",
           "slug": null
         }
@@ -384,6 +663,17 @@
           "display": "門前",
           "score": 6,
           "won": true,
+          "innings": [
+            0,
+            2,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "門前高校",
           "slug": "monzen"
         },
@@ -391,6 +681,17 @@
           "display": "小松商業",
           "score": 3,
           "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
           "name": "小松商業高校",
           "slug": "komatsushogyo"
         }
@@ -407,6 +708,18 @@
           "display": "石川高専",
           "score": 6,
           "won": true,
+          "innings": [
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
           "name": "石川工業高専",
           "slug": "ishikawakogyo"
         },
@@ -414,6 +727,18 @@
           "display": "金沢市立工業",
           "score": 4,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
           "name": "金沢市立工業高校",
           "slug": "kanazawashiritsukogyo"
         }
@@ -430,6 +755,17 @@
           "display": "小松明峰",
           "score": 7,
           "won": true,
+          "innings": [
+            0,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
           "name": "小松明峰高校",
           "slug": "komatsumeiho"
         },
@@ -437,6 +773,17 @@
           "display": "小松工業",
           "score": 5,
           "won": false,
+          "innings": [
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
           "name": "小松工業高校",
           "slug": "komatsukogyo"
         }
@@ -453,6 +800,17 @@
           "display": "寺井",
           "score": 3,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ],
           "name": "寺井高校",
           "slug": "terai"
         },
@@ -460,6 +818,17 @@
           "display": "津幡",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
           "name": "津幡高校",
           "slug": "tsubata"
         }
@@ -476,6 +845,17 @@
           "display": "輪島",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "輪島高校",
           "slug": "wajima"
         },
@@ -483,6 +863,16 @@
           "display": "羽咋工業",
           "score": 4,
           "won": true,
+          "innings": [
+            1,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0
+          ],
           "name": "羽咋工業高校",
           "slug": "hakuikogyo"
         }
@@ -499,6 +889,17 @@
           "display": "北陸学院",
           "score": 6,
           "won": true,
+          "innings": [
+            1,
+            1,
+            0,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "北陸学院",
           "slug": null
         },
@@ -506,6 +907,17 @@
           "display": "七尾",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "七尾高校",
           "slug": "nanao"
         }
@@ -522,6 +934,15 @@
           "display": "金沢西",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
           "name": "金沢西高校",
           "slug": "kanazawanishi"
         },
@@ -529,6 +950,14 @@
           "display": "金沢商業",
           "score": 9,
           "won": true,
+          "innings": [
+            0,
+            2,
+            2,
+            1,
+            1,
+            3
+          ],
           "name": "金沢商業高校",
           "slug": "kanazawashogyo"
         }
@@ -545,6 +974,17 @@
           "display": "金沢桜丘",
           "score": 2,
           "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢桜丘高校",
           "slug": "kanazawasakuragaoka"
         },
@@ -552,6 +992,16 @@
           "display": "小松市立",
           "score": 4,
           "won": true,
+          "innings": [
+            0,
+            0,
+            3,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
           "name": "小松市立高校",
           "slug": "komatsushiritsu"
         }
@@ -568,6 +1018,13 @@
           "display": "大聖寺",
           "score": 4,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            3,
+            1
+          ],
           "name": "大聖寺高校",
           "slug": "daishoji"
         },
@@ -575,6 +1032,13 @@
           "display": "県立工業",
           "score": 14,
           "won": true,
+          "innings": [
+            3,
+            1,
+            7,
+            1,
+            2
+          ],
           "name": "石川県立工業高校",
           "slug": "ishikawakenritsukogyo"
         }
@@ -591,6 +1055,17 @@
           "display": "石川高専",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
           "name": "石川工業高専",
           "slug": "ishikawakogyo"
         },
@@ -598,6 +1073,16 @@
           "display": "小松大谷",
           "score": 7,
           "won": true,
+          "innings": [
+            3,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2
+          ],
           "name": "小松大谷",
           "slug": null
         }
@@ -614,6 +1099,17 @@
           "display": "小松明峰",
           "score": 2,
           "won": false,
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "小松明峰高校",
           "slug": "komatsumeiho"
         },
@@ -621,6 +1117,16 @@
           "display": "日本航空石川",
           "score": 6,
           "won": true,
+          "innings": [
+            1,
+            0,
+            0,
+            2,
+            1,
+            2,
+            0,
+            0
+          ],
           "name": "日本航空石川",
           "slug": null
         }
@@ -637,6 +1143,17 @@
           "display": "寺井",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "寺井高校",
           "slug": "terai"
         },
@@ -644,6 +1161,16 @@
           "display": "遊学館",
           "score": 5,
           "won": true,
+          "innings": [
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
           "name": "遊学館",
           "slug": null
         }
@@ -660,6 +1187,17 @@
           "display": "羽咋工業",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "羽咋工業高校",
           "slug": "hakuikogyo"
         },
@@ -667,6 +1205,16 @@
           "display": "星稜",
           "score": 4,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            2
+          ],
           "name": "星稜",
           "slug": null
         }
@@ -683,6 +1231,17 @@
           "display": "北陸学院",
           "score": 2,
           "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
           "name": "北陸学院",
           "slug": null
         },
@@ -690,6 +1249,16 @@
           "display": "小松",
           "score": 5,
           "won": true,
+          "innings": [
+            2,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
           "name": "小松高校",
           "slug": "komatsu"
         }
@@ -706,6 +1275,15 @@
           "display": "金沢学院大附",
           "score": 10,
           "won": true,
+          "innings": [
+            0,
+            5,
+            3,
+            0,
+            2,
+            0,
+            0
+          ],
           "name": "金沢学院大附",
           "slug": null
         },
@@ -713,6 +1291,15 @@
           "display": "金沢商業",
           "score": 3,
           "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
           "name": "金沢商業高校",
           "slug": "kanazawashogyo"
         }
@@ -729,6 +1316,15 @@
           "display": "小松市立",
           "score": 3,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
           "name": "小松市立高校",
           "slug": "komatsushiritsu"
         },
@@ -736,6 +1332,15 @@
           "display": "金沢",
           "score": 10,
           "won": true,
+          "innings": [
+            1,
+            2,
+            2,
+            1,
+            3,
+            0,
+            1
+          ],
           "name": "金沢",
           "slug": null
         }
@@ -752,6 +1357,17 @@
           "display": "県立工業",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "石川県立工業高校",
           "slug": "ishikawakenritsukogyo"
         },
@@ -759,6 +1375,17 @@
           "display": "門前",
           "score": 1,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
           "name": "門前高校",
           "slug": "monzen"
         }
@@ -775,6 +1402,15 @@
           "display": "門前",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "門前高校",
           "slug": "monzen"
         },
@@ -782,6 +1418,14 @@
           "display": "小松大谷",
           "score": 7,
           "won": true,
+          "innings": [
+            0,
+            0,
+            4,
+            0,
+            1,
+            2
+          ],
           "name": "小松大谷",
           "slug": null
         }
@@ -798,6 +1442,15 @@
           "display": "小松",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "小松高校",
           "slug": "komatsu"
         },
@@ -805,6 +1458,14 @@
           "display": "星稜",
           "score": 9,
           "won": true,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            8
+          ],
           "name": "星稜",
           "slug": null
         }
@@ -821,6 +1482,18 @@
           "display": "日本航空石川",
           "score": 4,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            2
+          ],
           "name": "日本航空石川",
           "slug": null
         },
@@ -828,6 +1501,18 @@
           "display": "金沢",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢",
           "slug": null
         }
@@ -844,6 +1529,17 @@
           "display": "金沢学院大附",
           "score": 4,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            3,
+            0,
+            0
+          ],
           "name": "金沢学院大附",
           "slug": null
         },
@@ -851,6 +1547,17 @@
           "display": "遊学館",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
           "name": "遊学館",
           "slug": null
         }
@@ -867,6 +1574,17 @@
           "display": "小松大谷",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "小松大谷",
           "slug": null
         },
@@ -874,6 +1592,16 @@
           "display": "星稜",
           "score": 1,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
           "name": "星稜",
           "slug": null
         }
@@ -890,6 +1618,18 @@
           "display": "日本航空石川",
           "score": 5,
           "won": true,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            2
+          ],
           "name": "日本航空石川",
           "slug": null
         },
@@ -897,6 +1637,18 @@
           "display": "金沢学院大附",
           "score": 3,
           "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
           "name": "金沢学院大附",
           "slug": null
         }
@@ -913,6 +1665,17 @@
           "display": "日本航空石川",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "日本航空石川",
           "slug": null
         },
@@ -920,6 +1683,16 @@
           "display": "星稜",
           "score": 4,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0
+          ],
           "name": "星稜",
           "slug": null
         }
@@ -21614,6 +22387,17 @@
           "display": "金沢泉丘",
           "score": 6,
           "won": true,
+          "innings": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            3,
+            0,
+            0
+          ],
           "name": "金沢泉丘高校",
           "slug": "kanazawaizumigaoka"
         },
@@ -21621,6 +22405,17 @@
           "display": "能登・穴水",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "能登・穴水",
           "slug": null,
           "combined": true
@@ -21638,6 +22433,17 @@
           "display": "大聖寺",
           "score": 1,
           "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "大聖寺高校",
           "slug": "daishoji"
         },
@@ -21645,6 +22451,16 @@
           "display": "小松市立",
           "score": 6,
           "won": true,
+          "innings": [
+            0,
+            3,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0
+          ],
           "name": "小松市立高校",
           "slug": "komatsushiritsu"
         }
@@ -21661,6 +22477,13 @@
           "display": "金沢龍谷",
           "score": 19,
           "won": true,
+          "innings": [
+            9,
+            6,
+            0,
+            4,
+            0
+          ],
           "name": "金沢龍谷",
           "slug": null
         },
@@ -21668,6 +22491,13 @@
           "display": "金大附属",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢大学人間社会学域学校教育学類附属高校",
           "slug": "kanazawadaigakuningenshakaigakuikigakkokyoikugakuruifuzoku"
         }
@@ -21684,6 +22514,17 @@
           "display": "金沢市立工業",
           "score": 6,
           "won": true,
+          "innings": [
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
           "name": "金沢市立工業高校",
           "slug": "kanazawashiritsukogyo"
         },
@@ -21691,6 +22532,17 @@
           "display": "石川高専",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "石川工業高専",
           "slug": "ishikawakogyo"
         }
@@ -21707,6 +22559,17 @@
           "display": "金沢北陵",
           "score": 4,
           "won": true,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
           "name": "金沢北陵高校",
           "slug": "kanazawahokuryo"
         },
@@ -21714,6 +22577,17 @@
           "display": "鵬学園",
           "score": 2,
           "won": false,
+          "innings": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "鵬学園",
           "slug": null
         }
@@ -21730,6 +22604,16 @@
           "display": "金沢二水",
           "score": 14,
           "won": true,
+          "innings": [
+            2,
+            0,
+            0,
+            1,
+            1,
+            0,
+            2,
+            8
+          ],
           "name": "金沢二水高校",
           "slug": "kanazawanisui"
         },
@@ -21737,6 +22621,16 @@
           "display": "金沢伏見",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢伏見高校",
           "slug": "kanazawafushimi"
         }
@@ -21753,6 +22647,13 @@
           "display": "金沢錦丘",
           "score": 18,
           "won": true,
+          "innings": [
+            1,
+            5,
+            8,
+            4,
+            0
+          ],
           "name": "金沢錦丘高校",
           "slug": "kanazawanishikigaoka"
         },
@@ -21760,6 +22661,13 @@
           "display": "鹿西",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "鹿西高校",
           "slug": "rokusei"
         }
@@ -21776,6 +22684,16 @@
           "display": "県立工業",
           "score": 11,
           "won": true,
+          "innings": [
+            0,
+            1,
+            1,
+            4,
+            1,
+            1,
+            0,
+            3
+          ],
           "name": "石川県立工業高校",
           "slug": "ishikawakenritsukogyo"
         },
@@ -21783,6 +22701,16 @@
           "display": "七尾",
           "score": 2,
           "won": false,
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "七尾高校",
           "slug": "nanao"
         }
@@ -21799,6 +22727,17 @@
           "display": "小松明峰",
           "score": 4,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            1
+          ],
           "name": "小松明峰高校",
           "slug": "komatsumeiho"
         },
@@ -21806,6 +22745,17 @@
           "display": "大聖寺実業",
           "score": 5,
           "won": true,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            3,
+            0,
+            1
+          ],
           "name": "大聖寺実業高校",
           "slug": "daishojijitsugyo"
         }
@@ -21822,6 +22772,17 @@
           "display": "輪島",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "輪島高校",
           "slug": "wajima"
         },
@@ -21829,6 +22790,16 @@
           "display": "小松商業",
           "score": 6,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0,
+            2
+          ],
           "name": "小松商業高校",
           "slug": "komatsushogyo"
         }
@@ -21845,6 +22816,17 @@
           "display": "北陸学院",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
           "name": "北陸学院",
           "slug": null
         },
@@ -21852,6 +22834,16 @@
           "display": "星稜",
           "score": 6,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            3
+          ],
           "name": "星稜",
           "slug": null
         }
@@ -21868,6 +22860,13 @@
           "display": "翠星",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "翠星高校",
           "slug": "suisei"
         },
@@ -21875,6 +22874,12 @@
           "display": "日本航空石川",
           "score": 21,
           "won": true,
+          "innings": [
+            5,
+            4,
+            12,
+            0
+          ],
           "name": "日本航空石川",
           "slug": null
         }
@@ -21891,6 +22896,17 @@
           "display": "小松大谷",
           "score": 11,
           "won": true,
+          "innings": [
+            0,
+            2,
+            0,
+            5,
+            1,
+            0,
+            0,
+            0,
+            3
+          ],
           "name": "小松大谷",
           "slug": null
         },
@@ -21898,6 +22914,17 @@
           "display": "小松工業",
           "score": 3,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0
+          ],
           "name": "小松工業高校",
           "slug": "komatsukogyo"
         }
@@ -21914,6 +22941,13 @@
           "display": "野々市明倫",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "野々市明倫高校",
           "slug": "nonoichimeirin"
         },
@@ -21921,6 +22955,12 @@
           "display": "金沢学院大附",
           "score": 28,
           "won": true,
+          "innings": [
+            10,
+            8,
+            1,
+            9
+          ],
           "name": "金沢学院大附",
           "slug": null
         }
@@ -21937,6 +22977,17 @@
           "display": "羽咋",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
           "name": "羽咋高校",
           "slug": "hakui"
         },
@@ -21944,6 +22995,16 @@
           "display": "小松",
           "score": 5,
           "won": true,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            2
+          ],
           "name": "小松高校",
           "slug": "komatsu"
         }
@@ -21960,6 +23021,16 @@
           "display": "門前",
           "score": 12,
           "won": true,
+          "innings": [
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            6
+          ],
           "name": "門前高校",
           "slug": "monzen"
         },
@@ -21967,6 +23038,16 @@
           "display": "寺井",
           "score": 4,
           "won": false,
+          "innings": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "寺井高校",
           "slug": "terai"
         }
@@ -21983,6 +23064,17 @@
           "display": "津幡",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
           "name": "津幡高校",
           "slug": "tsubata"
         },
@@ -21990,6 +23082,16 @@
           "display": "遊学館",
           "score": 5,
           "won": true,
+          "innings": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            2,
+            0
+          ],
           "name": "遊学館",
           "slug": null
         }
@@ -22006,6 +23108,13 @@
           "display": "金沢西",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢西高校",
           "slug": "kanazawanishi"
         },
@@ -22013,6 +23122,13 @@
           "display": "金沢",
           "score": 10,
           "won": true,
+          "innings": [
+            1,
+            0,
+            3,
+            5,
+            1
+          ],
           "name": "金沢",
           "slug": null
         }
@@ -22029,6 +23145,17 @@
           "display": "金沢桜丘",
           "score": 12,
           "won": true,
+          "innings": [
+            1,
+            4,
+            3,
+            0,
+            1,
+            0,
+            0,
+            1,
+            2
+          ],
           "name": "金沢桜丘高校",
           "slug": "kanazawasakuragaoka"
         },
@@ -22036,6 +23163,17 @@
           "display": "飯田",
           "score": 7,
           "won": false,
+          "innings": [
+            2,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
           "name": "飯田高校",
           "slug": "iida"
         }
@@ -22052,6 +23190,13 @@
           "display": "鶴来",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "鶴来高校",
           "slug": "tsurugi"
         },
@@ -22059,6 +23204,13 @@
           "display": "金沢商業",
           "score": 10,
           "won": true,
+          "innings": [
+            3,
+            0,
+            0,
+            6,
+            1
+          ],
           "name": "金沢商業高校",
           "slug": "kanazawashogyo"
         }
@@ -22075,6 +23227,17 @@
           "display": "羽咋工業",
           "score": 6,
           "won": true,
+          "innings": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            2,
+            0
+          ],
           "name": "羽咋工業高校",
           "slug": "hakuikogyo"
         },
@@ -22082,6 +23245,17 @@
           "display": "七尾東雲",
           "score": 4,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
           "name": "七尾東雲高校",
           "slug": "nanaoshinonome"
         }
@@ -22098,6 +23272,17 @@
           "display": "金沢泉丘",
           "score": 8,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            7,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢泉丘高校",
           "slug": "kanazawaizumigaoka"
         },
@@ -22105,6 +23290,17 @@
           "display": "小松市立",
           "score": 5,
           "won": false,
+          "innings": [
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2
+          ],
           "name": "小松市立高校",
           "slug": "komatsushiritsu"
         }
@@ -22121,6 +23317,14 @@
           "display": "金沢市立工業",
           "score": 11,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            9
+          ],
           "name": "金沢市立工業高校",
           "slug": "kanazawashiritsukogyo"
         },
@@ -22128,6 +23332,14 @@
           "display": "金沢龍谷",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
           "name": "金沢龍谷",
           "slug": null
         }
@@ -22144,6 +23356,17 @@
           "display": "金沢二水",
           "score": 5,
           "won": true,
+          "innings": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
           "name": "金沢二水高校",
           "slug": "kanazawanisui"
         },
@@ -22151,6 +23374,17 @@
           "display": "金沢北陵",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢北陵高校",
           "slug": "kanazawahokuryo"
         }
@@ -22167,6 +23401,13 @@
           "display": "金沢錦丘",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
           "name": "金沢錦丘高校",
           "slug": "kanazawanishikigaoka"
         },
@@ -22174,6 +23415,13 @@
           "display": "県立工業",
           "score": 12,
           "won": true,
+          "innings": [
+            0,
+            0,
+            4,
+            4,
+            4
+          ],
           "name": "石川県立工業高校",
           "slug": "ishikawakenritsukogyo"
         }
@@ -22190,6 +23438,17 @@
           "display": "大聖寺実業",
           "score": 2,
           "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
           "name": "大聖寺実業高校",
           "slug": "daishojijitsugyo"
         },
@@ -22197,6 +23456,16 @@
           "display": "小松商業",
           "score": 4,
           "won": true,
+          "innings": [
+            0,
+            0,
+            1,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
           "name": "小松商業高校",
           "slug": "komatsushogyo"
         }
@@ -22213,6 +23482,17 @@
           "display": "金沢桜丘",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
           "name": "金沢桜丘高校",
           "slug": "kanazawasakuragaoka"
         },
@@ -22220,6 +23500,16 @@
           "display": "星稜",
           "score": 4,
           "won": true,
+          "innings": [
+            0,
+            0,
+            3,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
           "name": "星稜",
           "slug": null
         }
@@ -22236,6 +23526,17 @@
           "display": "金沢商業",
           "score": 3,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0
+          ],
           "name": "金沢商業高校",
           "slug": "kanazawashogyo"
         },
@@ -22243,6 +23544,16 @@
           "display": "日本航空石川",
           "score": 8,
           "won": true,
+          "innings": [
+            2,
+            0,
+            2,
+            2,
+            0,
+            1,
+            1,
+            0
+          ],
           "name": "日本航空石川",
           "slug": null
         }
@@ -22259,6 +23570,17 @@
           "display": "羽咋工業",
           "score": 5,
           "won": false,
+          "innings": [
+            1,
+            1,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
           "name": "羽咋工業高校",
           "slug": "hakuikogyo"
         },
@@ -22266,6 +23588,16 @@
           "display": "小松大谷",
           "score": 6,
           "won": true,
+          "innings": [
+            2,
+            1,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
           "name": "小松大谷",
           "slug": null
         }
@@ -22282,6 +23614,17 @@
           "display": "金沢学院大附",
           "score": 7,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            2,
+            2,
+            1,
+            0,
+            0,
+            2
+          ],
           "name": "金沢学院大附",
           "slug": null
         },
@@ -22289,6 +23632,17 @@
           "display": "金沢泉丘",
           "score": 4,
           "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ],
           "name": "金沢泉丘高校",
           "slug": "kanazawaizumigaoka"
         }
@@ -22305,6 +23659,17 @@
           "display": "金沢市立工業",
           "score": 4,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0
+          ],
           "name": "金沢市立工業高校",
           "slug": "kanazawashiritsukogyo"
         },
@@ -22312,6 +23677,17 @@
           "display": "小松",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "小松高校",
           "slug": "komatsu"
         }
@@ -22328,6 +23704,17 @@
           "display": "金沢二水",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢二水高校",
           "slug": "kanazawanisui"
         },
@@ -22335,6 +23722,16 @@
           "display": "門前",
           "score": 7,
           "won": true,
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            4,
+            0,
+            1
+          ],
           "name": "門前高校",
           "slug": "monzen"
         }
@@ -22351,6 +23748,17 @@
           "display": "県立工業",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "石川県立工業高校",
           "slug": "ishikawakenritsukogyo"
         },
@@ -22358,6 +23766,16 @@
           "display": "遊学館",
           "score": 4,
           "won": true,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
           "name": "遊学館",
           "slug": null
         }
@@ -22374,6 +23792,17 @@
           "display": "小松商業",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "小松商業高校",
           "slug": "komatsushogyo"
         },
@@ -22381,6 +23810,16 @@
           "display": "金沢",
           "score": 3,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2
+          ],
           "name": "金沢",
           "slug": null
         }
@@ -22397,6 +23836,15 @@
           "display": "金沢",
           "score": 10,
           "won": true,
+          "innings": [
+            1,
+            4,
+            0,
+            2,
+            0,
+            0,
+            3
+          ],
           "name": "金沢",
           "slug": null
         },
@@ -22404,6 +23852,15 @@
           "display": "星稜",
           "score": 3,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            0
+          ],
           "name": "星稜",
           "slug": null
         }
@@ -22420,6 +23877,17 @@
           "display": "金沢市立工業",
           "score": 2,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
           "name": "金沢市立工業高校",
           "slug": "kanazawashiritsukogyo"
         },
@@ -22427,6 +23895,17 @@
           "display": "金沢学院大附",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢学院大附",
           "slug": null
         }
@@ -22443,6 +23922,17 @@
           "display": "遊学館",
           "score": 4,
           "won": true,
+          "innings": [
+            3,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "遊学館",
           "slug": null
         },
@@ -22450,6 +23940,17 @@
           "display": "日本航空石川",
           "score": 2,
           "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
           "name": "日本航空石川",
           "slug": null
         }
@@ -22466,6 +23967,17 @@
           "display": "小松大谷",
           "score": 5,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            3
+          ],
           "name": "小松大谷",
           "slug": null
         },
@@ -22473,6 +23985,17 @@
           "display": "門前",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
           "name": "門前高校",
           "slug": "monzen"
         }
@@ -22489,6 +24012,17 @@
           "display": "金沢市立工業",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢市立工業高校",
           "slug": "kanazawashiritsukogyo"
         },
@@ -22496,6 +24030,16 @@
           "display": "金沢",
           "score": 3,
           "won": true,
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
           "name": "金沢",
           "slug": null
         }
@@ -22512,6 +24056,17 @@
           "display": "遊学館",
           "score": 12,
           "won": true,
+          "innings": [
+            2,
+            0,
+            1,
+            3,
+            0,
+            1,
+            2,
+            1,
+            2
+          ],
           "name": "遊学館",
           "slug": null
         },
@@ -22519,6 +24074,17 @@
           "display": "小松大谷",
           "score": 8,
           "won": false,
+          "innings": [
+            0,
+            0,
+            3,
+            0,
+            2,
+            3,
+            0,
+            0,
+            0
+          ],
           "name": "小松大谷",
           "slug": null
         }
@@ -22535,6 +24101,17 @@
           "display": "金沢",
           "score": 3,
           "won": false,
+          "innings": [
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢",
           "slug": null
         },
@@ -22542,6 +24119,16 @@
           "display": "遊学館",
           "score": 4,
           "won": true,
+          "innings": [
+            0,
+            0,
+            2,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
           "name": "遊学館",
           "slug": null
         }
@@ -38837,7 +40424,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
       "round": "1回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -38846,32 +40433,14 @@
           "score": 13,
           "won": true,
           "name": "翠星高校",
-          "slug": "suisei",
-          "innings": [
-            2,
-            4,
-            0,
-            6,
-            1,
-            0,
-            0
-          ]
+          "slug": "suisei"
         },
         {
           "display": "金沢大学附属",
           "score": 4,
           "won": false,
           "name": "金沢大学附属",
-          "slug": null,
-          "innings": [
-            2,
-            0,
-            0,
-            0,
-            2,
-            0,
-            0
-          ]
+          "slug": null
         }
       ],
       "source": {
@@ -38882,7 +40451,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
       "round": "1回戦",
       "venue": "金沢市民野球場",
       "teams": [
@@ -38909,7 +40478,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
       "round": "1回戦",
       "venue": "金沢市民野球場",
       "teams": [
@@ -38936,7 +40505,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
       "round": "1回戦",
       "venue": "金沢市民野球場",
       "teams": [
@@ -38945,27 +40514,14 @@
           "score": 0,
           "won": false,
           "name": "大聖寺高校",
-          "slug": "daishoji",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "daishoji"
         },
         {
           "display": "金沢学院大学附属",
           "score": 19,
           "won": true,
           "name": "金沢学院大学附属",
-          "slug": null,
-          "innings": [
-            4,
-            5,
-            3,
-            7
-          ]
+          "slug": null
         }
       ],
       "source": {
@@ -38976,7 +40532,7 @@
     {
       "date": "2026-09-06",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -38985,28 +40541,14 @@
           "score": 16,
           "won": true,
           "name": "金沢桜丘高校",
-          "slug": "kanazawasakuragaoka",
-          "innings": [
-            4,
-            0,
-            11,
-            1,
-            0
-          ]
+          "slug": "kanazawasakuragaoka"
         },
         {
           "display": "金沢西",
           "score": 1,
           "won": false,
           "name": "金沢西高校",
-          "slug": "kanazawanishi",
-          "innings": [
-            0,
-            0,
-            0,
-            1,
-            0
-          ]
+          "slug": "kanazawanishi"
         }
       ],
       "source": {
@@ -39017,7 +40559,7 @@
     {
       "date": "2026-09-06",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -39026,28 +40568,14 @@
           "score": 1,
           "won": false,
           "name": "鹿西高校",
-          "slug": "rokusei",
-          "innings": [
-            1,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "rokusei"
         },
         {
           "display": "金沢泉丘",
           "score": 11,
           "won": true,
           "name": "金沢泉丘高校",
-          "slug": "kanazawaizumigaoka",
-          "innings": [
-            3,
-            0,
-            4,
-            2,
-            2
-          ]
+          "slug": "kanazawaizumigaoka"
         }
       ],
       "source": {
@@ -39058,7 +40586,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -39067,36 +40595,14 @@
           "score": 2,
           "won": false,
           "name": "鶴来高校",
-          "slug": "tsurugi",
-          "innings": [
-            2,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "tsurugi"
         },
         {
           "display": "津幡",
           "score": 4,
           "won": true,
           "name": "津幡高校",
-          "slug": "tsubata",
-          "innings": [
-            0,
-            2,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            1
-          ]
+          "slug": "tsubata"
         }
       ],
       "source": {
@@ -39107,7 +40613,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -39116,36 +40622,14 @@
           "score": 6,
           "won": true,
           "name": "門前高校",
-          "slug": "monzen",
-          "innings": [
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            3,
-            1,
-            1
-          ]
+          "slug": "monzen"
         },
         {
           "display": "小松工業",
           "score": 3,
           "won": false,
           "name": "小松工業高校",
-          "slug": "komatsukogyo",
-          "innings": [
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            2,
-            0
-          ]
+          "slug": "komatsukogyo"
         }
       ],
       "source": {
@@ -39163,6 +40647,17 @@
           "display": "金沢桜丘",
           "score": 4,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            1
+          ],
           "name": "金沢桜丘高校",
           "slug": "kanazawasakuragaoka"
         },
@@ -39170,6 +40665,17 @@
           "display": "小松",
           "score": 5,
           "won": true,
+          "innings": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
           "name": "小松高校",
           "slug": "komatsu"
         }
@@ -39186,6 +40692,17 @@
           "display": "羽咋",
           "score": 12,
           "won": true,
+          "innings": [
+            2,
+            4,
+            1,
+            0,
+            4,
+            0,
+            0,
+            1,
+            0
+          ],
           "name": "羽咋高校",
           "slug": "hakui"
         },
@@ -39193,6 +40710,17 @@
           "display": "七尾東雲",
           "score": 10,
           "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            5,
+            1,
+            0,
+            3,
+            0,
+            0
+          ],
           "name": "七尾東雲高校",
           "slug": "nanaoshinonome"
         }
@@ -39209,6 +40737,17 @@
           "display": "津幡",
           "score": 6,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            2,
+            2
+          ],
           "name": "津幡高校",
           "slug": "tsubata"
         },
@@ -39216,6 +40755,17 @@
           "display": "飯田",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "飯田高校",
           "slug": "iida"
         }
@@ -39232,6 +40782,15 @@
           "display": "寺井",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "寺井高校",
           "slug": "terai"
         },
@@ -39239,6 +40798,14 @@
           "display": "日本航空石川",
           "score": 7,
           "won": true,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            5,
+            1
+          ],
           "name": "日本航空石川",
           "slug": null
         }
@@ -39255,6 +40822,13 @@
           "display": "金沢伏見",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢伏見高校",
           "slug": "kanazawafushimi"
         },
@@ -39262,6 +40836,12 @@
           "display": "小松商業",
           "score": 11,
           "won": true,
+          "innings": [
+            1,
+            8,
+            2,
+            0
+          ],
           "name": "小松商業高校",
           "slug": "komatsushogyo"
         }
@@ -39278,6 +40858,17 @@
           "display": "金沢西",
           "score": 5,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            2,
+            1,
+            2,
+            0,
+            0,
+            0
+          ],
           "name": "金沢西高校",
           "slug": "kanazawanishi"
         },
@@ -39285,6 +40876,17 @@
           "display": "金沢北陵",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢北陵高校",
           "slug": "kanazawahokuryo"
         }
@@ -39301,6 +40903,13 @@
           "display": "金沢学院大附",
           "score": 14,
           "won": true,
+          "innings": [
+            7,
+            1,
+            3,
+            2,
+            1
+          ],
           "name": "金沢学院大附",
           "slug": null
         },
@@ -39308,6 +40917,13 @@
           "display": "金沢泉丘",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢泉丘高校",
           "slug": "kanazawaizumigaoka"
         }
@@ -39324,6 +40940,17 @@
           "display": "能登・穴水",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "能登・穴水",
           "slug": null,
           "combined": true
@@ -39332,6 +40959,16 @@
           "display": "大聖寺実業",
           "score": 7,
           "won": true,
+          "innings": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            4,
+            0,
+            0
+          ],
           "name": "大聖寺実業高校",
           "slug": "daishojijitsugyo"
         }
@@ -39348,6 +40985,17 @@
           "display": "北陸学院",
           "score": 5,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            3,
+            0
+          ],
           "name": "北陸学院",
           "slug": null
         },
@@ -39355,6 +41003,16 @@
           "display": "遊学館",
           "score": 7,
           "won": true,
+          "innings": [
+            2,
+            1,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "遊学館",
           "slug": null
         }
@@ -39371,6 +41029,15 @@
           "display": "七尾",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "七尾高校",
           "slug": "nanao"
         },
@@ -39378,6 +41045,14 @@
           "display": "星稜",
           "score": 8,
           "won": true,
+          "innings": [
+            5,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
           "name": "星稜",
           "slug": null
         }
@@ -39394,6 +41069,17 @@
           "display": "門前",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
           "name": "門前高校",
           "slug": "monzen"
         },
@@ -39401,6 +41087,16 @@
           "display": "金沢",
           "score": 5,
           "won": true,
+          "innings": [
+            2,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
           "name": "金沢",
           "slug": null
         }
@@ -39417,6 +41113,15 @@
           "display": "鶴来",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "鶴来高校",
           "slug": "tsurugi"
         },
@@ -39424,6 +41129,14 @@
           "display": "小松大谷",
           "score": 9,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            6
+          ],
           "name": "小松大谷",
           "slug": null
         }
@@ -39440,6 +41153,16 @@
           "display": "金沢錦丘",
           "score": 3,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
           "name": "金沢錦丘高校",
           "slug": "kanazawanishikigaoka"
         },
@@ -39447,6 +41170,16 @@
           "display": "小松市立",
           "score": 10,
           "won": true,
+          "innings": [
+            1,
+            2,
+            0,
+            2,
+            0,
+            0,
+            1,
+            4
+          ],
           "name": "小松市立高校",
           "slug": "komatsushiritsu"
         }
@@ -39463,6 +41196,17 @@
           "display": "鹿西・翠星・明倫",
           "score": 2,
           "won": false,
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "鹿西・翠星・明倫",
           "slug": null,
           "combined": true
@@ -39471,6 +41215,16 @@
           "display": "小松工業",
           "score": 8,
           "won": true,
+          "innings": [
+            1,
+            0,
+            0,
+            2,
+            4,
+            0,
+            1,
+            0
+          ],
           "name": "小松工業高校",
           "slug": "komatsukogyo"
         }
@@ -39487,6 +41241,13 @@
           "display": "大聖寺",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
           "name": "大聖寺高校",
           "slug": "daishoji"
         },
@@ -39494,6 +41255,13 @@
           "display": "県立工業",
           "score": 12,
           "won": true,
+          "innings": [
+            0,
+            3,
+            0,
+            6,
+            3
+          ],
           "name": "石川県立工業高校",
           "slug": "ishikawakenritsukogyo"
         }
@@ -39510,6 +41278,15 @@
           "display": "石川高専",
           "score": 1,
           "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "石川工業高専",
           "slug": "ishikawakogyo"
         },
@@ -39517,6 +41294,14 @@
           "display": "小松明峰",
           "score": 10,
           "won": true,
+          "innings": [
+            0,
+            2,
+            0,
+            1,
+            4,
+            3
+          ],
           "name": "小松明峰高校",
           "slug": "komatsumeiho"
         }
@@ -39533,6 +41318,14 @@
           "display": "金沢市立工業",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
           "name": "金沢市立工業高校",
           "slug": "kanazawashiritsukogyo"
         },
@@ -39540,6 +41333,14 @@
           "display": "羽咋工業",
           "score": 11,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            8,
+            0,
+            3
+          ],
           "name": "羽咋工業高校",
           "slug": "hakuikogyo"
         }
@@ -39556,6 +41357,17 @@
           "display": "金沢龍谷",
           "score": 7,
           "won": true,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            1,
+            1
+          ],
           "name": "金沢龍谷",
           "slug": null
         },
@@ -39563,6 +41375,17 @@
           "display": "輪島",
           "score": 5,
           "won": false,
+          "innings": [
+            0,
+            0,
+            3,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
           "name": "輪島高校",
           "slug": "wajima"
         }
@@ -39579,6 +41402,17 @@
           "display": "金沢二水",
           "score": 1,
           "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢二水高校",
           "slug": "kanazawanisui"
         },
@@ -39586,6 +41420,16 @@
           "display": "金沢商業",
           "score": 7,
           "won": true,
+          "innings": [
+            3,
+            3,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
           "name": "金沢商業高校",
           "slug": "kanazawashogyo"
         }
@@ -39602,6 +41446,17 @@
           "display": "羽咋",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
           "name": "羽咋高校",
           "slug": "hakui"
         },
@@ -39609,6 +41464,16 @@
           "display": "小松",
           "score": 7,
           "won": true,
+          "innings": [
+            0,
+            0,
+            2,
+            1,
+            1,
+            3,
+            0,
+            0
+          ],
           "name": "小松高校",
           "slug": "komatsu"
         }
@@ -39625,6 +41490,16 @@
           "display": "津幡",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
           "name": "津幡高校",
           "slug": "tsubata"
         },
@@ -39632,6 +41507,16 @@
           "display": "日本航空石川",
           "score": 8,
           "won": true,
+          "innings": [
+            1,
+            0,
+            2,
+            0,
+            3,
+            0,
+            0,
+            2
+          ],
           "name": "日本航空石川",
           "slug": null
         }
@@ -39648,6 +41533,17 @@
           "display": "金大附属",
           "score": 5,
           "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
           "name": "金沢大学人間社会学域学校教育学類附属高校",
           "slug": "kanazawadaigakuningenshakaigakuikigakkokyoikugakuruifuzoku"
         },
@@ -39655,6 +41551,16 @@
           "display": "鵬学園",
           "score": 8,
           "won": true,
+          "innings": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+          ],
           "name": "鵬学園",
           "slug": null
         }
@@ -39671,6 +41577,15 @@
           "display": "金沢西",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢西高校",
           "slug": "kanazawanishi"
         },
@@ -39678,6 +41593,14 @@
           "display": "小松商業",
           "score": 8,
           "won": true,
+          "innings": [
+            1,
+            3,
+            4,
+            0,
+            0,
+            0
+          ],
           "name": "小松商業高校",
           "slug": "komatsushogyo"
         }
@@ -39694,6 +41617,17 @@
           "display": "大聖寺実業",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "大聖寺実業高校",
           "slug": "daishojijitsugyo"
         },
@@ -39701,6 +41635,17 @@
           "display": "金沢学院大附",
           "score": 2,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
           "name": "金沢学院大附",
           "slug": null
         }
@@ -39717,6 +41662,17 @@
           "display": "金沢商業",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢商業高校",
           "slug": "kanazawashogyo"
         },
@@ -39724,6 +41680,16 @@
           "display": "遊学館",
           "score": 3,
           "won": true,
+          "innings": [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "遊学館",
           "slug": null
         }
@@ -39740,6 +41706,13 @@
           "display": "羽咋工業",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
           "name": "羽咋工業高校",
           "slug": "hakuikogyo"
         },
@@ -39747,6 +41720,12 @@
           "display": "星稜",
           "score": 14,
           "won": true,
+          "innings": [
+            5,
+            6,
+            0,
+            3
+          ],
           "name": "星稜",
           "slug": null
         }
@@ -39763,6 +41742,15 @@
           "display": "金沢",
           "score": 10,
           "won": true,
+          "innings": [
+            0,
+            1,
+            0,
+            2,
+            7,
+            0,
+            0
+          ],
           "name": "金沢",
           "slug": null
         },
@@ -39770,6 +41758,15 @@
           "display": "金沢龍谷",
           "score": 3,
           "won": false,
+          "innings": [
+            0,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
           "name": "金沢龍谷",
           "slug": null
         }
@@ -39786,6 +41783,13 @@
           "display": "小松大谷",
           "score": 14,
           "won": true,
+          "innings": [
+            2,
+            4,
+            0,
+            2,
+            6
+          ],
           "name": "小松大谷",
           "slug": null
         },
@@ -39793,6 +41797,13 @@
           "display": "鵬学園",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "鵬学園",
           "slug": null
         }
@@ -39809,6 +41820,17 @@
           "display": "小松",
           "score": 2,
           "won": true,
+          "innings": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "小松高校",
           "slug": "komatsu"
         },
@@ -39816,6 +41838,17 @@
           "display": "小松市立",
           "score": 1,
           "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "小松市立高校",
           "slug": "komatsushiritsu"
         }
@@ -39832,6 +41865,15 @@
           "display": "日本航空石川",
           "score": 11,
           "won": true,
+          "innings": [
+            1,
+            1,
+            3,
+            1,
+            0,
+            1,
+            4
+          ],
           "name": "日本航空石川",
           "slug": null
         },
@@ -39839,6 +41881,15 @@
           "display": "小松工業",
           "score": 3,
           "won": false,
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
           "name": "小松工業高校",
           "slug": "komatsukogyo"
         }
@@ -39855,6 +41906,17 @@
           "display": "県立工業",
           "score": 4,
           "won": false,
+          "innings": [
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
           "name": "石川県立工業高校",
           "slug": "ishikawakenritsukogyo"
         },
@@ -39862,6 +41924,16 @@
           "display": "小松商業",
           "score": 7,
           "won": true,
+          "innings": [
+            2,
+            2,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
           "name": "小松商業高校",
           "slug": "komatsushogyo"
         }
@@ -39878,6 +41950,15 @@
           "display": "金沢学院大附",
           "score": 8,
           "won": true,
+          "innings": [
+            1,
+            4,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢学院大附",
           "slug": null
         },
@@ -39885,6 +41966,15 @@
           "display": "小松明峰",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "小松明峰高校",
           "slug": "komatsumeiho"
         }
@@ -39901,6 +41991,13 @@
           "display": "金沢学院大附",
           "score": 0,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢学院大附",
           "slug": null
         },
@@ -39908,6 +42005,13 @@
           "display": "遊学館",
           "score": 10,
           "won": true,
+          "innings": [
+            4,
+            0,
+            0,
+            5,
+            1
+          ],
           "name": "遊学館",
           "slug": null
         }
@@ -39924,6 +42028,17 @@
           "display": "小松商業",
           "score": 1,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "小松商業高校",
           "slug": "komatsushogyo"
         },
@@ -39931,6 +42046,16 @@
           "display": "星稜",
           "score": 2,
           "won": true,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
           "name": "星稜",
           "slug": null
         }
@@ -39947,6 +42072,16 @@
           "display": "日本航空石川",
           "score": 14,
           "won": true,
+          "innings": [
+            7,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            5
+          ],
           "name": "日本航空石川",
           "slug": null
         },
@@ -39954,6 +42089,16 @@
           "display": "金沢",
           "score": 3,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "金沢",
           "slug": null
         }
@@ -39970,6 +42115,15 @@
           "display": "小松",
           "score": 5,
           "won": false,
+          "innings": [
+            0,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "小松高校",
           "slug": "komatsu"
         },
@@ -39977,6 +42131,15 @@
           "display": "小松大谷",
           "score": 12,
           "won": true,
+          "innings": [
+            3,
+            1,
+            4,
+            0,
+            0,
+            3,
+            1
+          ],
           "name": "小松大谷",
           "slug": null
         }
@@ -39993,6 +42156,17 @@
           "display": "遊学館",
           "score": 3,
           "won": false,
+          "innings": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
           "name": "遊学館",
           "slug": null
         },
@@ -40000,6 +42174,16 @@
           "display": "小松大谷",
           "score": 7,
           "won": true,
+          "innings": [
+            1,
+            0,
+            0,
+            2,
+            4,
+            0,
+            0,
+            0
+          ],
           "name": "小松大谷",
           "slug": null
         }
@@ -40016,6 +42200,17 @@
           "display": "星稜",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
           "name": "星稜",
           "slug": null
         },
@@ -40023,6 +42218,16 @@
           "display": "日本航空石川",
           "score": 5,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            2,
+            2,
+            0,
+            0,
+            1
+          ],
           "name": "日本航空石川",
           "slug": null
         }
@@ -40039,6 +42244,17 @@
           "display": "小松大谷",
           "score": 4,
           "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            3,
+            0
+          ],
           "name": "小松大谷",
           "slug": null
         },
@@ -40046,6 +42262,17 @@
           "display": "日本航空石川",
           "score": 2,
           "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
           "name": "日本航空石川",
           "slug": null
         }

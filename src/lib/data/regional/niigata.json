@@ -55697,36 +55697,14 @@
           "score": 10,
           "won": false,
           "name": "糸魚川高校",
-          "slug": "itoigawa",
-          "innings": [
-            3,
-            1,
-            0,
-            2,
-            0,
-            1,
-            0,
-            2,
-            1
-          ]
+          "slug": "itoigawa"
         },
         {
           "display": "十日町",
           "score": 12,
           "won": true,
           "name": "十日町高校",
-          "slug": "tokamachi",
-          "innings": [
-            0,
-            0,
-            0,
-            3,
-            1,
-            0,
-            0,
-            6,
-            2
-          ]
+          "slug": "tokamachi"
         }
       ],
       "source": {
@@ -55746,36 +55724,14 @@
           "score": 10,
           "won": true,
           "name": "新発田高校",
-          "slug": "niigata-shibata",
-          "innings": [
-            1,
-            0,
-            0,
-            1,
-            0,
-            2,
-            0,
-            0,
-            6
-          ]
+          "slug": "niigata-shibata"
         },
         {
           "display": "巻総合",
           "score": 4,
           "won": false,
           "name": "巻総合高校",
-          "slug": "makisogo",
-          "innings": [
-            0,
-            0,
-            0,
-            3,
-            0,
-            0,
-            1,
-            0,
-            0
-          ]
+          "slug": "makisogo"
         }
       ],
       "source": {
@@ -55811,6 +55767,33 @@
       }
     },
     {
+      "date": "2026-09-07",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 新潟県大会",
+      "round": "1回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "三条東",
+          "score": 4,
+          "won": true,
+          "name": "三条東高校",
+          "slug": "sanjohigashi"
+        },
+        {
+          "display": "長岡高専",
+          "score": 0,
+          "won": false,
+          "name": "長岡工業高専",
+          "slug": "nagaokakogyo-kosen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-06",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季北信越地区高校野球 新潟県大会",
@@ -55822,30 +55805,14 @@
           "score": 14,
           "won": true,
           "name": "巻高校",
-          "slug": "maki",
-          "innings": [
-            4,
-            3,
-            0,
-            3,
-            0,
-            4
-          ]
+          "slug": "maki"
         },
         {
           "display": "新潟青陵",
           "score": 3,
           "won": false,
           "name": "新潟青陵",
-          "slug": null,
-          "innings": [
-            3,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": null
         }
       ],
       "source": {
@@ -55865,35 +55832,14 @@
           "score": 4,
           "won": false,
           "name": "五泉高校",
-          "slug": "gosen",
-          "innings": [
-            3,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "gosen"
         },
         {
           "display": "新発田中央",
           "score": 9,
           "won": true,
           "name": "新発田中央",
-          "slug": null,
-          "innings": [
-            0,
-            0,
-            1,
-            2,
-            1,
-            0,
-            0,
-            5
-          ]
+          "slug": null
         }
       ],
       "source": {
@@ -55914,35 +55860,14 @@
           "won": false,
           "name": "柏崎常盤・柏崎総合",
           "slug": null,
-          "combined": true,
-          "innings": [
-            2,
-            0,
-            4,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0
-          ]
+          "combined": true
         },
         {
           "display": "上越総合技術",
           "score": 8,
           "won": true,
           "name": "上越総合技術高校",
-          "slug": "joetsusogogijutsu",
-          "innings": [
-            0,
-            0,
-            0,
-            1,
-            2,
-            5,
-            0,
-            0
-          ]
+          "slug": "joetsusogogijutsu"
         }
       ],
       "source": {
@@ -55970,6 +55895,33 @@
           "won": false,
           "name": "長岡工業高校",
           "slug": "nagaokakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-07",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 新潟県大会",
+      "round": "1回戦",
+      "venue": "みどりと森の運動公園野球場",
+      "teams": [
+        {
+          "display": "加茂暁星",
+          "score": 5,
+          "won": true,
+          "name": "加茂暁星",
+          "slug": null
+        },
+        {
+          "display": "新潟第一",
+          "score": 3,
+          "won": false,
+          "name": "新潟第一",
+          "slug": null
         }
       ],
       "source": {
@@ -56043,36 +55995,14 @@
           "score": 1,
           "won": false,
           "name": "北越",
-          "slug": null,
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0
-          ]
+          "slug": null
         },
         {
           "display": "東京学館新潟",
           "score": 3,
           "won": true,
           "name": "東京学館新潟",
-          "slug": null,
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            3,
-            0,
-            0,
-            0
-          ]
+          "slug": null
         }
       ],
       "source": {
@@ -56120,27 +56050,14 @@
           "score": 18,
           "won": true,
           "name": "日本文理",
-          "slug": null,
-          "innings": [
-            2,
-            9,
-            7,
-            0
-          ]
+          "slug": null
         },
         {
           "display": "新津工",
           "score": 0,
           "won": false,
           "name": "新津工業高校",
-          "slug": "niitsukogyo",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "niitsukogyo"
         }
       ],
       "source": {
@@ -56160,34 +56077,14 @@
           "score": 9,
           "won": true,
           "name": "佐渡高校",
-          "slug": "sado",
-          "innings": [
-            0,
-            4,
-            0,
-            4,
-            0,
-            0,
-            0,
-            1
-          ]
+          "slug": "sado"
         },
         {
           "display": "新発田南",
           "score": 2,
           "won": false,
           "name": "新発田南高校",
-          "slug": "shibataminami",
-          "innings": [
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            1,
-            0
-          ]
+          "slug": "shibataminami"
         }
       ],
       "source": {
@@ -56235,38 +56132,14 @@
           "score": 10,
           "won": true,
           "name": "上越",
-          "slug": null,
-          "innings": [
-            0,
-            1,
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-            1,
-            6
-          ]
+          "slug": null
         },
         {
           "display": "中越",
           "score": 5,
           "won": false,
           "name": "中越",
-          "slug": null,
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            3,
-            0,
-            1
-          ]
+          "slug": null
         }
       ],
       "source": {
@@ -56368,28 +56241,69 @@
           "score": 0,
           "won": false,
           "name": "新潟東高校",
-          "slug": "niigatahigashi",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "niigatahigashi"
         },
         {
           "display": "新潟商",
           "score": 15,
           "won": true,
           "name": "新潟商業高校",
-          "slug": "niigatashogyo",
-          "innings": [
-            6,
-            1,
-            1,
-            6,
-            1
-          ]
+          "slug": "niigatashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-07",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": "柏崎市佐藤池球場",
+      "teams": [
+        {
+          "display": "糸魚川白嶺・海洋",
+          "score": 2,
+          "won": false,
+          "name": "糸魚川白嶺・海洋",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "塩沢商工",
+          "score": 4,
+          "won": true,
+          "name": "塩沢商工高校",
+          "slug": "shiozawashoko"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-07",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": "柏崎市佐藤池球場",
+      "teams": [
+        {
+          "display": "小出",
+          "score": 2,
+          "won": false,
+          "name": "小出高校",
+          "slug": "koide"
+        },
+        {
+          "display": "長岡大手",
+          "score": 9,
+          "won": true,
+          "name": "長岡大手高校",
+          "slug": "nagaokaote"
         }
       ],
       "source": {
@@ -56409,14 +56323,7 @@
           "score": 0,
           "won": false,
           "name": "新発田商業高校",
-          "slug": "shibatashogyo",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "shibatashogyo"
         },
         {
           "display": "村上・村上桜ヶ丘",
@@ -56424,13 +56331,7 @@
           "won": true,
           "name": "村上・村上桜ヶ丘",
           "slug": null,
-          "combined": true,
-          "innings": [
-            1,
-            7,
-            0,
-            4
-          ]
+          "combined": true
         }
       ],
       "source": {
@@ -56477,35 +56378,14 @@
           "score": 0,
           "won": false,
           "name": "小千谷西高校",
-          "slug": "ojiyanishi",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "ojiyanishi"
         },
         {
           "display": "柏崎",
           "score": 2,
           "won": true,
           "name": "柏崎高校",
-          "slug": "kashiwazaki",
-          "innings": [
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            1,
-            0
-          ]
+          "slug": "kashiwazaki"
         }
       ],
       "source": {
@@ -56525,35 +56405,14 @@
           "score": 7,
           "won": true,
           "name": "長岡高校",
-          "slug": "nagaoka",
-          "innings": [
-            0,
-            0,
-            0,
-            1,
-            1,
-            0,
-            2,
-            3
-          ]
+          "slug": "nagaoka"
         },
         {
           "display": "新潟産大附",
           "score": 1,
           "won": false,
           "name": "新潟産大附",
-          "slug": null,
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0
-          ]
+          "slug": null
         }
       ],
       "source": {

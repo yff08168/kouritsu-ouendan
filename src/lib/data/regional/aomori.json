@@ -14689,35 +14689,14 @@
           "score": 6,
           "won": true,
           "name": "下山学園",
-          "slug": null,
-          "innings": [
-            0,
-            0,
-            0,
-            3,
-            1,
-            0,
-            0,
-            2
-          ]
+          "slug": null
         },
         {
           "display": "弘前中央",
           "score": 1,
           "won": false,
           "name": "弘前中央高校",
-          "slug": "hirosakichuo",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            1
-          ]
+          "slug": "hirosakichuo"
         }
       ]
     },
@@ -14781,36 +14760,14 @@
           "score": 1,
           "won": false,
           "name": "八戸高校",
-          "slug": "hachinohe",
-          "innings": [
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "hachinohe"
         },
         {
           "display": "八工大二",
           "score": 5,
           "won": true,
           "name": "八工大二",
-          "slug": null,
-          "innings": [
-            1,
-            0,
-            0,
-            0,
-            0,
-            2,
-            0,
-            2,
-            0
-          ]
+          "slug": null
         }
       ]
     },
@@ -14826,32 +14783,14 @@
           "score": 2,
           "won": false,
           "name": "八戸北高校",
-          "slug": "hachinohekita",
-          "innings": [
-            0,
-            0,
-            0,
-            2,
-            0,
-            0,
-            0
-          ]
+          "slug": "hachinohekita"
         },
         {
           "display": "五所川原農林",
           "score": 9,
           "won": true,
           "name": "五所川原農林高校",
-          "slug": "goshogawaranorin",
-          "innings": [
-            3,
-            3,
-            3,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "goshogawaranorin"
         }
       ]
     },
@@ -14867,36 +14806,14 @@
           "score": 6,
           "won": true,
           "name": "八戸聖ウルスラ",
-          "slug": null,
-          "innings": [
-            0,
-            0,
-            1,
-            0,
-            0,
-            1,
-            4,
-            0,
-            0
-          ]
+          "slug": null
         },
         {
           "display": "弘前工業",
           "score": 4,
           "won": false,
           "name": "弘前工業高校",
-          "slug": "hirosakikogyo",
-          "innings": [
-            0,
-            0,
-            0,
-            1,
-            1,
-            0,
-            2,
-            0,
-            0
-          ]
+          "slug": "hirosakikogyo"
         }
       ]
     },
@@ -14912,31 +14829,60 @@
           "score": 8,
           "won": true,
           "name": "青森山田",
-          "slug": null,
-          "innings": [
-            2,
-            0,
-            3,
-            0,
-            1,
-            2
-          ]
+          "slug": null
         },
         {
           "display": "下山学園",
           "score": 1,
           "won": false,
           "name": "下山学園",
-          "slug": null,
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            1
-          ]
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "2回戦",
+      "venue": "メイプルスタジアム（六戸町）",
+      "teams": [
+        {
+          "display": "木造",
+          "score": 2,
+          "won": false,
+          "name": "木造高校",
+          "slug": "kizukuri"
+        },
+        {
+          "display": "三本木",
+          "score": 4,
+          "won": true,
+          "name": "三本木高校",
+          "slug": "sanbongi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "2回戦",
+      "venue": "黒石運動公園野球場",
+      "teams": [
+        {
+          "display": "弘前実業",
+          "score": 14,
+          "won": true,
+          "name": "弘前実業高校",
+          "slug": "hirosakijitsugyo"
+        },
+        {
+          "display": "青森工業",
+          "score": 12,
+          "won": false,
+          "name": "青森工業高校",
+          "slug": "aomorikogyo"
         }
       ]
     },
@@ -14952,36 +14898,14 @@
           "score": 6,
           "won": true,
           "name": "青森南高校",
-          "slug": "aomoriminami",
-          "innings": [
-            0,
-            1,
-            3,
-            1,
-            0,
-            0,
-            1,
-            0,
-            0
-          ]
+          "slug": "aomoriminami"
         },
         {
           "display": "八戸工業",
           "score": 1,
           "won": false,
           "name": "八戸工業高校",
-          "slug": "hachinohekogyo",
-          "innings": [
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "hachinohekogyo"
         }
       ]
     },
@@ -14997,35 +14921,60 @@
           "score": 4,
           "won": true,
           "name": "大湊高校",
-          "slug": "ominato",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            3,
-            1,
-            0,
-            0
-          ]
+          "slug": "ominato"
         },
         {
           "display": "八工大二",
           "score": 3,
           "won": false,
           "name": "八工大二",
-          "slug": null,
-          "innings": [
-            1,
-            0,
-            0,
-            1,
-            1,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "2回戦",
+      "venue": "青森県営野球場",
+      "teams": [
+        {
+          "display": "五所川原農林",
+          "score": 0,
+          "won": false,
+          "name": "五所川原農林高校",
+          "slug": "goshogawaranorin"
+        },
+        {
+          "display": "八工大一",
+          "score": 10,
+          "won": true,
+          "name": "八工大一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "2回戦",
+      "venue": "青森県営野球場",
+      "teams": [
+        {
+          "display": "青森商業",
+          "score": 9,
+          "won": true,
+          "name": "青森商業高校",
+          "slug": "aomorishogyo"
+        },
+        {
+          "display": "田名部",
+          "score": 2,
+          "won": false,
+          "name": "田名部高校",
+          "slug": "tanabu"
         }
       ]
     },
@@ -15041,38 +14990,14 @@
           "score": 2,
           "won": false,
           "name": "八戸聖ウルスラ",
-          "slug": null,
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            1
-          ]
+          "slug": null
         },
         {
           "display": "聖愛",
           "score": 4,
           "won": true,
           "name": "聖愛",
-          "slug": null,
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            3
-          ]
+          "slug": null
         }
       ]
     },
@@ -15088,35 +15013,14 @@
           "score": 2,
           "won": false,
           "name": "八戸水産高校",
-          "slug": "hachinohesuisan",
-          "innings": [
-            0,
-            0,
-            0,
-            1,
-            1,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "hachinohesuisan"
         },
         {
           "display": "八戸高専",
           "score": 8,
           "won": true,
           "name": "八戸工業高専",
-          "slug": "hachinohekogyo-kosen",
-          "innings": [
-            1,
-            3,
-            2,
-            1,
-            0,
-            0,
-            1,
-            0
-          ]
+          "slug": "hachinohekogyo-kosen"
         }
       ]
     },
@@ -15179,40 +15083,14 @@
           "score": 3,
           "won": false,
           "name": "弘前高校",
-          "slug": "hirosaki",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            3,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "hirosaki"
         },
         {
           "display": "青森明の星",
           "score": 6,
           "won": true,
           "name": "青森明の星",
-          "slug": null,
-          "innings": [
-            0,
-            0,
-            2,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            3
-          ]
+          "slug": null
         }
       ]
     },
@@ -15228,27 +15106,14 @@
           "score": 2,
           "won": false,
           "name": "三沢高校",
-          "slug": "misawa",
-          "innings": [
-            0,
-            0,
-            0,
-            2,
-            0
-          ]
+          "slug": "misawa"
         },
         {
           "display": "弘前南",
           "score": 28,
           "won": true,
           "name": "弘前南高校",
-          "slug": "hirosakiminami",
-          "innings": [
-            13,
-            1,
-            2,
-            12
-          ]
+          "slug": "hirosakiminami"
         }
       ]
     },
@@ -15264,31 +15129,60 @@
           "score": 8,
           "won": true,
           "name": "三沢商業高校",
-          "slug": "misawashogyo",
-          "innings": [
-            1,
-            1,
-            2,
-            2,
-            2,
-            0
-          ]
+          "slug": "misawashogyo"
         },
         {
           "display": "八戸高専",
           "score": 0,
           "won": false,
           "name": "八戸工業高専",
-          "slug": "hachinohekogyo-kosen",
-          "innings": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "hachinohekogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "3回戦",
+      "venue": "黒石運動公園野球場",
+      "teams": [
+        {
+          "display": "東奥学園",
+          "score": 0,
+          "won": false,
+          "name": "東奥学園",
+          "slug": null
+        },
+        {
+          "display": "東奥義塾",
+          "score": 13,
+          "won": true,
+          "name": "東奥義塾",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "3回戦",
+      "venue": "メイプルスタジアム（六戸町）",
+      "teams": [
+        {
+          "display": "八戸西",
+          "score": 6,
+          "won": true,
+          "name": "八戸西高校",
+          "slug": "hachinohenishi"
+        },
+        {
+          "display": "八戸東",
+          "score": 2,
+          "won": false,
+          "name": "八戸東高校",
+          "slug": "hachinohehigashi"
         }
       ]
     },
@@ -15304,28 +15198,14 @@
           "score": 4,
           "won": false,
           "name": "八戸商業高校",
-          "slug": "hachinoheshogyo",
-          "innings": [
-            0,
-            0,
-            0,
-            1,
-            3
-          ]
+          "slug": "hachinoheshogyo"
         },
         {
           "display": "青森",
           "score": 14,
           "won": true,
           "name": "青森高校",
-          "slug": "aomori",
-          "innings": [
-            3,
-            1,
-            0,
-            5,
-            5
-          ]
+          "slug": "aomori"
         }
       ]
     },
@@ -15341,36 +15221,60 @@
           "score": 10,
           "won": true,
           "name": "弘前東",
-          "slug": null,
-          "innings": [
-            0,
-            1,
-            0,
-            0,
-            2,
-            0,
-            1,
-            1,
-            5
-          ]
+          "slug": null
         },
         {
           "display": "青森明の星",
           "score": 1,
           "won": false,
           "name": "青森明の星",
-          "slug": null,
-          "innings": [
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "3回戦",
+      "venue": "青森県営野球場",
+      "teams": [
+        {
+          "display": "むつ工業",
+          "score": 3,
+          "won": false,
+          "name": "むつ工業高校",
+          "slug": "mutsukogyo"
+        },
+        {
+          "display": "青森北",
+          "score": 10,
+          "won": true,
+          "name": "青森北高校",
+          "slug": "aomorikita"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "3回戦",
+      "venue": "メイプルスタジアム（六戸町）",
+      "teams": [
+        {
+          "display": "十和田工業",
+          "score": 10,
+          "won": true,
+          "name": "十和田工業高校",
+          "slug": "towadakogyo"
+        },
+        {
+          "display": "五所川原",
+          "score": 4,
+          "won": false,
+          "name": "五所川原高校",
+          "slug": "goshogawara"
         }
       ]
     },
@@ -15386,35 +15290,14 @@
           "score": 1,
           "won": false,
           "name": "弘前南高校",
-          "slug": "hirosakiminami",
-          "innings": [
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
+          "slug": "hirosakiminami"
         },
         {
           "display": "八学光星",
           "score": 6,
           "won": true,
           "name": "八学光星",
-          "slug": null,
-          "innings": [
-            2,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            4
-          ]
+          "slug": null
         }
       ]
     },

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { MapPinned } from "lucide-react";
+import { MapPinned, Trophy } from "lucide-react";
 
 import { Container } from "@/components/layout/Container";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
@@ -12,6 +12,7 @@ import { ALL_DISTRICT_SLUGS } from "@/lib/constants";
 import { fetchLiveBoard, fetchStadiumNames, livePrefectures } from "@/lib/live/hsb";
 import { getSchoolNameIndex } from "@/lib/queries/schools";
 import { buildLiveLead } from "@/lib/live-lead";
+import { findLiveTournamentHref } from "@/lib/live-tournament";
 
 /**
  * 県の速報ページ。
@@ -145,10 +146,24 @@ export default async function LivePrefecturePage({
     ★**公立が絡む試合の数**（リード文に使う）。
     ★**索引が引けなかったときは null**（0と書かない。当て推量をしない）。
   */
+  /*
+    ★★**県まで渡して引く**（2026-09-08）。**渡さないと `橘` のように
+    全国に2つ以上ある校名が引けず、公立なのに数に入らない**（盤の太字も同じ）。
+  */
   const publicCount = index
-    ? (board?.games.filter((g) => index.find(g.first) || index.find(g.third)).length ?? 0)
+    ? (board?.games.filter((g) => index.find(g.first, pref.name) || index.find(g.third, pref.name))
+        .length ?? 0)
     : null;
   const lead = buildLiveLead({ board, name: title, publicCount });
+
+  /*
+    ★★**盤が出している大会のページ**（2026-09-08。運営者の指示）。
+    ★**盤を取ったあとに引く**（大会名が要る）。**生成物を読むだけ**なので出典は叩かない。
+    ★**決められなければ null**（下の県ページへのリンクが受け皿になる）。
+  */
+  const tournamentHref = board
+    ? await findLiveTournamentHref(slug, board.tournament).catch(() => null)
+    : null;
 
   return (
     <Container className="py-6">
@@ -190,7 +205,13 @@ export default async function LivePrefecturePage({
 
       <div className="mt-4">
         {board ? (
-          <LiveBoard board={board} index={index} stadiums={stadiums} />
+          <LiveBoard
+            board={board}
+            index={index}
+            pref={pref.name}
+            stadiums={stadiums}
+            tournamentHref={tournamentHref}
+          />
         ) : (
           /*
             ★**「試合がありません」と書かないこと。** 取れなかっただけかもしれない。
@@ -202,15 +223,31 @@ export default async function LivePrefecturePage({
         )}
       </div>
 
-      {districtHref && (
-        <p className="mt-4 text-sm">
-          <Link
-            href={districtHref}
-            className="inline-flex items-center gap-1 font-bold text-navy-800 underline"
-          >
-            <MapPinned size={16} aria-hidden />
-            {pref.name}のページ（過去の大会・学校一覧）
-          </Link>
+      {/*
+        ★**次にどこへ行けるか**（2026-09-08 に大会のページを足した）。
+        ★**大会 → 県 の順**。速報を見に来た人がいちばん見たいのは
+        **いま進んでいる大会のトーナメント表**で、県のページはその外側。
+      */}
+      {(tournamentHref || districtHref) && (
+        <p className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+          {tournamentHref && (
+            <Link
+              href={tournamentHref}
+              className="inline-flex items-center gap-1 font-bold text-navy-800 underline"
+            >
+              <Trophy size={16} aria-hidden />
+              この大会のページ（トーナメント表・全試合）
+            </Link>
+          )}
+          {districtHref && (
+            <Link
+              href={districtHref}
+              className="inline-flex items-center gap-1 font-bold text-navy-800 underline"
+            >
+              <MapPinned size={16} aria-hidden />
+              {pref.name}のページ（過去の大会・学校一覧）
+            </Link>
+          )}
         </p>
       )}
     </Container>

@@ -104,7 +104,7 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "sourceUrl": "https://aomori.hsbflash.jp/",
       "date": "2026-09-07",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 青森県大会",
       "round": "2回戦",
       "teams": [
         {
@@ -130,7 +130,7 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "sourceUrl": "https://aomori.hsbflash.jp/",
       "date": "2026-09-07",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 青森県大会",
       "round": "2回戦",
       "teams": [
         {
@@ -156,7 +156,7 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "sourceUrl": "https://aomori.hsbflash.jp/",
       "date": "2026-09-07",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 青森県大会",
       "round": "2回戦",
       "teams": [
         {
@@ -182,7 +182,7 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "sourceUrl": "https://aomori.hsbflash.jp/",
       "date": "2026-09-07",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 青森県大会",
       "round": "2回戦",
       "teams": [
         {
@@ -208,7 +208,7 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "sourceUrl": "https://aomori.hsbflash.jp/",
       "date": "2026-09-07",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 青森県大会",
       "round": "3回戦",
       "teams": [
         {
@@ -234,7 +234,7 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "sourceUrl": "https://aomori.hsbflash.jp/",
       "date": "2026-09-07",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 青森県大会",
       "round": "3回戦",
       "teams": [
         {
@@ -260,7 +260,7 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "sourceUrl": "https://aomori.hsbflash.jp/",
       "date": "2026-09-07",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 青森県大会",
       "round": "3回戦",
       "teams": [
         {

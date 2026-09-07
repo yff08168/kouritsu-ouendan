@@ -19,16 +19,37 @@ import type { SchoolNameIndex } from "@/lib/queries/schools";
 export function LiveBoard({
   board,
   index,
+  pref,
   stadiums,
+  tournamentHref,
 }: {
   board: Board;
   /** 公立かどうかを引く。**引けない校名は無印**（当て推量をしない） */
   index: SchoolNameIndex | null;
   /**
+   * ★★★**校名を引く県**（2026-09-08。運営者から「橘高校は公立です。川崎市立橘高校」）。
+   *
+   * **県を渡さないと、同じ校名が全国に2つ以上ある学校を引けない** ——
+   * `橘高校` は**福島・東東京・神奈川の3県にあり**、
+   * `SchoolNameIndex` は「どれか分からない」として null を返す。
+   * **川崎市立橘は公立なのに、盤で太字にならなかった。**
+   *
+   * ★**`prefectureKey` が 北北海道・南北海道 → 北海道、東東京・西東京 → 東京 に
+   * そろえる**ので、速報の県の名前（`北海道` `東京`）をそのまま渡してよい。
+   * ★★**県で引けなければ結び付けない**（全国に広げると県外の同名校に当たる。
+   * AGENTS の「県大会で県外の学校に結び付けない」）。
+   */
+  pref: string;
+  /**
    * ★**球場名の略称 → 正式名称**（`fetchStadiumNames`）。取れなければ null。
    * **盤の球場欄は略称1文字のことがある**（`メ` `県` `黒`）ので、下に対応表を出す。
    */
   stadiums: Map<string, string> | null;
+  /**
+   * ★**この大会のページ**（`/prefectures/<県>/<大会>`）。**無ければ null。**
+   * 盤の大会名がそのままリンクになる（`src/lib/live-tournament.ts` が決める）。
+   */
+  tournamentHref?: string | null;
 }) {
   const playing = board.games.filter((g) => g.playing).length;
   const finished = board.games.filter((g) => g.finished).length;
@@ -64,7 +85,27 @@ export function LiveBoard({
         {board.day && <p className="text-sm text-ink-muted">{board.day}</p>}
       </div>
 
-      {board.tournament && <p className="mt-1 text-sm text-ink-muted">{board.tournament}</p>}
+      {/*
+        ★★**大会名からその大会のページへ行けるようにする**（2026-09-08。運営者の指示
+        「各都道府県の速報ページに、その大会のページに飛ぶリンクを設置したほうがよい」）。
+        ★**リンクにするのは、その大会がこのサイトに載っているときだけ**
+        （`findLiveTournamentHref` が決める）。**無いときは今までどおりただの文字。**
+        ★**行き先は大会のページ**（トーナメント表と全試合）。県のページは下のリンクが持つ。
+      */}
+      {board.tournament &&
+        (tournamentHref ? (
+          <p className="mt-1 text-sm">
+            <Link
+              href={tournamentHref}
+              className="inline-flex items-center gap-0.5 font-bold text-navy-800 underline"
+            >
+              {board.tournament}
+              <ChevronRight size={14} aria-hidden />
+            </Link>
+          </p>
+        ) : (
+          <p className="mt-1 text-sm text-ink-muted">{board.tournament}</p>
+        ))}
       <p className="mt-1 text-xs text-ink-faint">
         {board.games.length} 試合（試合中 {playing}・終了 {finished}）
       </p>
@@ -87,7 +128,7 @@ export function LiveBoard({
               key={`${game.first}-${game.third}-${i}`}
               className="border-b border-line"
             >
-              <GameRow slug={board.slug} game={game} index={index} />
+              <GameRow slug={board.slug} game={game} index={index} pref={pref} />
             </li>
           ))}
         </ul>
@@ -119,21 +160,23 @@ function GameRow({
   slug,
   game,
   index,
+  pref,
 }: {
   slug: string;
   game: LiveGame;
   index: SchoolNameIndex | null;
+  pref: string;
 }) {
   const body = (
     <div className="flex items-center gap-3 py-2.5">
       <StatusChip game={game} />
       <div className="min-w-0 flex-1">
         <div className="flex items-center gap-2">
-          <TeamName name={game.first} index={index} />
+          <TeamName name={game.first} index={index} pref={pref} />
           <Score value={game.scoreFirst} lead={isLead(game.scoreFirst, game.scoreThird)} />
           <span className="text-xs text-ink-faint">-</span>
           <Score value={game.scoreThird} lead={isLead(game.scoreThird, game.scoreFirst)} />
-          <TeamName name={game.third} index={index} />
+          <TeamName name={game.third} index={index} pref={pref} />
         </div>
         {/*
           ★**「未」だけの欄を出さない。** 球場も開始時刻も決まっていない試合で
@@ -178,8 +221,20 @@ function Score({ value, lead }: { value: number | null; lead: boolean }) {
  * ★**引けない校名は無印のまま出す。** 当て推量で「私立」と書かない ——
  * **同じ県に同名が2校あるときも引けない**（`SchoolNameIndex` の説明）。
  */
-function TeamName({ name, index }: { name: string; index: SchoolNameIndex | null }) {
-  const ref = index?.find(name) ?? null;
+function TeamName({
+  name,
+  index,
+  pref,
+}: {
+  name: string;
+  index: SchoolNameIndex | null;
+  pref: string;
+}) {
+  /*
+    ★★**県まで渡して引く**（2026-09-08）。**渡さないと `橘` のような
+    全国に2つ以上ある校名が「どれか分からない」で引けず、公立なのに無印になる。**
+  */
+  const ref = index?.find(name, pref) ?? null;
   /*
     ★★★**校名を切らない**（AGENTS の決めごと。結果カードを2列にしたときに決めた）。
     **切ると `サレジオ学院` が `サレジ…` になる** ——

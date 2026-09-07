@@ -6,7 +6,7 @@ import type { RegionalProgressBoard } from "@/lib/regional-results";
 export const REGIONAL_PROGRESS: RegionalProgressBoard = {
   "season": "autumn",
   "latestDate": "2026-09-07",
-  "generatedAt": "2026-09-07T10:55:53Z",
+  "generatedAt": "2026-09-07T16:14:04Z",
   "districts": [
     {
       "slug": "nagano",
@@ -347,7 +347,7 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "青森",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 青森県大会",
       "games": 27,
       "publicGames": 23,
       "round": "3回戦",

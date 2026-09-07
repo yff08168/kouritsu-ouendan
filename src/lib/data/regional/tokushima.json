@@ -12737,5 +12737,198 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季四国地区高校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "城ノ内・阿南高専",
+          "name": "城ノ内・阿南高専",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "城南",
+          "name": "城南高校",
+          "slug": "jonan"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季四国地区高校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "板野",
+          "name": "板野高校",
+          "slug": "itano"
+        },
+        {
+          "display": "阿波",
+          "name": "阿波高校",
+          "slug": "tokushima-awa"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季四国地区高校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "城西",
+          "name": "城西高校",
+          "slug": "josei"
+        },
+        {
+          "display": "脇町",
+          "name": "脇町高校",
+          "slug": "wakimachi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "令和 8年秋季四国地区高校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "名西",
+          "name": "名西高校",
+          "slug": "myozai"
+        },
+        {
+          "display": "富岡西",
+          "name": "富岡西高校",
+          "slug": "tomiokanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "令和 8年秋季四国地区高校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "城北",
+          "name": "城北高校",
+          "slug": "johoku"
+        },
+        {
+          "display": "小松島西",
+          "name": "小松島西高校",
+          "slug": "komatsushimanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季四国地区高校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "ＪＡアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "城東",
+          "name": "城東高校",
+          "slug": "tokushima-joto"
+        },
+        {
+          "display": "徳島市立",
+          "name": "徳島市立高校",
+          "slug": "tokushimashiritsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季四国地区高校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "ＪＡアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "穴吹",
+          "name": "穴吹高校",
+          "slug": "anabuki"
+        },
+        {
+          "display": "徳島北",
+          "name": "徳島北高校",
+          "slug": "tokushimakita"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "令和 8年秋季四国地区高校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "ＪＡアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "海部",
+          "name": "海部高校",
+          "slug": "kaifu"
+        },
+        {
+          "display": "池田",
+          "name": "池田高校",
+          "slug": "tokushima-ikeda"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "令和 8年秋季四国地区高校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "ＪＡアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "那賀",
+          "name": "那賀高校",
+          "slug": "tokushima-naga"
+        },
+        {
+          "display": "科学技術",
+          "name": "徳島科学技術高校",
+          "slug": "tokushimakagakugijutsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "令和 8年秋季四国地区高校野球 徳島県大会",
+      "round": "1回戦",
+      "venue": "ＪＡアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "小松島",
+          "name": "小松島高校",
+          "slug": "komatsushima"
+        },
+        {
+          "display": "鳴門",
+          "name": "鳴門高校",
+          "slug": "tokushima-naruto"
+        }
+      ]
+    }
   ]
 }

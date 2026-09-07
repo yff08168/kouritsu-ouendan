@@ -14293,5 +14293,198 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
+      "round": "1回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "福井高専",
+          "name": "福井工業高専",
+          "slug": "fukuikogyo"
+        },
+        {
+          "display": "敦賀工業",
+          "name": "敦賀工業高校",
+          "slug": "tsurugakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
+      "round": "1回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "三国",
+          "name": "三国高校",
+          "slug": "mikuni"
+        },
+        {
+          "display": "福井商業",
+          "name": "福井商業高校",
+          "slug": "fukuishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
+      "round": "1回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "若狭",
+          "name": "若狭高校",
+          "slug": "wakasa"
+        },
+        {
+          "display": "丸岡",
+          "name": "丸岡高校",
+          "slug": "maruoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
+      "round": "1回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "金津",
+          "name": "金津高校",
+          "slug": "kanazu"
+        },
+        {
+          "display": "美方",
+          "name": "美方高校",
+          "slug": "mikata"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
+      "round": "1回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "啓新",
+          "name": "啓新",
+          "slug": null
+        },
+        {
+          "display": "工大福井",
+          "name": "工大福井",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
+      "round": "1回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "丹生",
+          "name": "丹生高校",
+          "slug": "nyu"
+        },
+        {
+          "display": "羽水",
+          "name": "羽水高校",
+          "slug": "usui"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
+      "round": "1回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "敦賀",
+          "name": "敦賀高校",
+          "slug": "tsuruga"
+        },
+        {
+          "display": "高志・勝山",
+          "name": "高志・勝山",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
+      "round": "1回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "藤島",
+          "name": "藤島高校",
+          "slug": "fujishima"
+        },
+        {
+          "display": "鯖江",
+          "name": "鯖江高校",
+          "slug": "sabae"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
+      "round": "1回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "足羽",
+          "name": "足羽高校",
+          "slug": "asuwa"
+        },
+        {
+          "display": "大野",
+          "name": "大野高校",
+          "slug": "fukui-ono"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
+      "round": "1回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "武生",
+          "name": "武生高校",
+          "slug": "takefu"
+        },
+        {
+          "display": "坂井",
+          "name": "坂井高校",
+          "slug": "fukui-sakai"
+        }
+      ]
+    }
   ]
 }

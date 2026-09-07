@@ -60247,5 +60247,351 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "藤",
+      "teams": [
+        {
+          "display": "岱志",
+          "name": "岱志高校",
+          "slug": "kumamoto-taishi"
+        },
+        {
+          "display": "熊本商業",
+          "name": "熊本商業高校",
+          "slug": "kumamotoshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "藤",
+      "teams": [
+        {
+          "display": "必由館",
+          "name": "必由館高校",
+          "slug": "hitsuyukan"
+        },
+        {
+          "display": "天草拓心・牛深",
+          "name": "天草拓心・牛深",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "藤",
+      "teams": [
+        {
+          "display": "玉名",
+          "name": "玉名高校",
+          "slug": "tamana"
+        },
+        {
+          "display": "済々黌",
+          "name": "済々黌高校",
+          "slug": "seiseiko"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "藤",
+      "teams": [
+        {
+          "display": "文徳",
+          "name": "文徳",
+          "slug": null
+        },
+        {
+          "display": "熊本北",
+          "name": "熊本北高校",
+          "slug": "kumamotokita"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "藤",
+      "teams": [
+        {
+          "display": "芦北",
+          "name": "芦北高校",
+          "slug": "ashikita"
+        },
+        {
+          "display": "球磨工業",
+          "name": "球磨工業高校",
+          "slug": "kumakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "藤",
+      "teams": [
+        {
+          "display": "翔陽",
+          "name": "翔陽高校",
+          "slug": "kumamoto-shoyo"
+        },
+        {
+          "display": "小川工業",
+          "name": "小川工業高校",
+          "slug": "ogawakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "藤",
+      "teams": [
+        {
+          "display": "八代",
+          "name": "八代高校",
+          "slug": "yatsushiro"
+        },
+        {
+          "display": "菊池",
+          "name": "菊池高校",
+          "slug": "kikuchi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "藤",
+      "teams": [
+        {
+          "display": "熊本工業",
+          "name": "熊本工業高校",
+          "slug": "kumamotokogyo"
+        },
+        {
+          "display": "有明",
+          "name": "有明",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "藤",
+      "teams": [
+        {
+          "display": "天草",
+          "name": "天草高校",
+          "slug": "amakusa"
+        },
+        {
+          "display": "学園大付属",
+          "name": "学園大付属",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "藤",
+      "teams": [
+        {
+          "display": "真和",
+          "name": "真和",
+          "slug": null
+        },
+        {
+          "display": "宇土",
+          "name": "宇土高校",
+          "slug": "uto"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "藤",
+      "teams": [
+        {
+          "display": "千原台",
+          "name": "千原台高校",
+          "slug": "chiharadai"
+        },
+        {
+          "display": "八代清流",
+          "name": "八代清流高校",
+          "slug": "yatsushiroseiryu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "藤",
+      "teams": [
+        {
+          "display": "水俣",
+          "name": "水俣高校",
+          "slug": "minamata"
+        },
+        {
+          "display": "八代東",
+          "name": "八代東高校",
+          "slug": "yatsushirohigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "藤",
+      "teams": [
+        {
+          "display": "第一",
+          "name": "熊本県立第一高校",
+          "slug": "kumamotokenritsudaiichi"
+        },
+        {
+          "display": "大津",
+          "name": "大津高校",
+          "slug": "kumamoto-otsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "藤",
+      "teams": [
+        {
+          "display": "熊本西",
+          "name": "熊本西高校",
+          "slug": "kumamotonishi"
+        },
+        {
+          "display": "専大熊本",
+          "name": "専大熊本",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "藤",
+      "teams": [
+        {
+          "display": "鹿本商工・鹿本",
+          "name": "鹿本商工・鹿本",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "上天草",
+          "name": "上天草高校",
+          "slug": "kamiamakusa"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "藤",
+      "teams": [
+        {
+          "display": "御船",
+          "name": "御船高校",
+          "slug": "mifune"
+        },
+        {
+          "display": "人吉",
+          "name": "人吉高校",
+          "slug": "hitoyoshi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "山",
+      "teams": [
+        {
+          "display": "秀岳館",
+          "name": "秀岳館",
+          "slug": null
+        },
+        {
+          "display": "東稜",
+          "name": "東稜高校",
+          "slug": "kumamoto-toryo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "round": "1回戦",
+      "venue": "山",
+      "teams": [
+        {
+          "display": "天草工業",
+          "name": "天草工業高校",
+          "slug": "amakusakogyo"
+        },
+        {
+          "display": "九州学院",
+          "name": "九州学院",
+          "slug": null
+        }
+      ]
+    }
   ]
 }

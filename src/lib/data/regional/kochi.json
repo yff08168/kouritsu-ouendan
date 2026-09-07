@@ -9899,5 +9899,103 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季四国地区高校野球 高知県大会",
+      "round": "1回戦",
+      "venue": "県立春野野球場",
+      "teams": [
+        {
+          "display": "高知東",
+          "name": "高知東高校",
+          "slug": "kochihigashi"
+        },
+        {
+          "display": "梼原",
+          "name": "梼原",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季四国地区高校野球 高知県大会",
+      "round": "1回戦",
+      "venue": "県立春野野球場",
+      "teams": [
+        {
+          "display": "土佐塾",
+          "name": "土佐塾",
+          "slug": null
+        },
+        {
+          "display": "高知農業",
+          "name": "高知農業高校",
+          "slug": "kochinogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季四国地区高校野球 高知県大会",
+      "round": "1回戦",
+      "venue": "県立春野野球場",
+      "teams": [
+        {
+          "display": "小津",
+          "name": "高知小津高校",
+          "slug": "kochiozu"
+        },
+        {
+          "display": "須崎総合",
+          "name": "須崎総合高校",
+          "slug": "susakisogo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季四国地区高校野球 高知県大会",
+      "round": "1回戦",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "追手前",
+          "name": "高知追手前高校",
+          "slug": "kochiotemae"
+        },
+        {
+          "display": "高知",
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和 8年秋季四国地区高校野球 高知県大会",
+      "round": "1回戦",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "安芸",
+          "name": "安芸高校",
+          "slug": "aki"
+        },
+        {
+          "display": "丸の内・東工業",
+          "name": "丸の内・東工業",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    }
   ]
 }

@@ -404,16 +404,32 @@ export function hasInnings(game: { teams: RegionalTeam[] }): boolean {
  *
  * ★**ローマ字（36進数）にしてある** —— 日本語をURLに入れない、という決めごと。
  */
+/**
+ * 試合を1つに決める文字列。**日付・回戦・両校名・得点**。
+ *
+ * ★★**各回の得点のファイル（`regional-innings.json`）の鍵でもある。**
+ * ★**`scripts/build-regional-innings.mjs` に同じ組み立てがある**
+ * （スクリプトは .mjs なので TS を import できない）。**変えるときは両方直すこと。**
+ * ★**ハッシュにしていないのは、2か所で同じ結果になることを目で確かめられるようにするため。**
+ */
+export function gameSeed(game: {
+  date: string | null;
+  round: string | null;
+  teams: { display: string; score: number }[];
+}): string {
+  return [
+    game.date ?? "",
+    game.round ?? "",
+    ...game.teams.map((t) => `${t.display}:${t.score}`),
+  ].join("|");
+}
+
 export function gameKey(game: {
   date: string | null;
   round: string | null;
   teams: RegionalTeam[];
 }): string {
-  const seed = [
-    game.date ?? "",
-    game.round ?? "",
-    ...game.teams.map((t) => `${t.display}:${t.score}`),
-  ].join("|");
+  const seed = gameSeed(game);
   /*
     ★**FNV-1a。** 暗号用途ではないので短くて速いもので足りる。
     ★**符号なしで回す**（`>>> 0`）—— JavaScript のビット演算は符号付き32ビットなので、
@@ -507,7 +523,44 @@ async function buildRegionalDistrict(
   */
   const { mergeRegionalSupplements } = await import("@/lib/content/regional-supplements");
   const games = mergeRegionalSupplements(prefectureSlug, district.games);
-  return games === district.games ? district : { ...district, games };
+  return withInnings(prefectureSlug, games === district.games ? district : { ...district, games });
+}
+
+/**
+ * ★★★**各回の得点は県のファイルの外に置いてある**（2026-09-07）。
+ *
+ * **中に持たせていたら、結果を取り直すワークフローに全部消された**
+ * （1,510試合が一度に消えた。**警告もエラーも出ない** —— 試合数はむしろ増えるので、
+ * 数だけ見ていると気づけない）。
+ * ★**結果は1日2回、出典から読み直して県のファイルを丸ごと書き直す。**
+ * **開催中の大会は毎回新しい試合オブジェクトになる**ので、
+ * **そこに足したものは必ず消える。**
+ *
+ * ★★**取り込みは別の出典（HSB flash）・別のスクリプト・別の周期**なのだから、
+ * **置き場所も分けるのが筋。** こうしておけば、結果を何度取り直しても消えない。
+ * ★**鍵は `gameSeed`**（日付・回戦・両校名・得点）。
+ * **スコアが直れば鍵も変わる**ので、古い各回が別の試合に付くことはない。
+ */
+async function withInnings(
+  prefectureSlug: string,
+  district: RegionalDistrict,
+): Promise<RegionalDistrict> {
+  const { REGIONAL_INNINGS } = await import("@/lib/data/regional-innings");
+  const table = REGIONAL_INNINGS[prefectureSlug];
+  if (!table) return district;
+
+  let touched = false;
+  const games = district.games.map((game) => {
+    const hit = table[gameSeed(game)];
+    if (!hit || hit.innings.length !== game.teams.length) return game;
+    touched = true;
+    return {
+      ...game,
+      teams: game.teams.map((t, i) => ({ ...t, innings: hit.innings[i] })),
+      ...(hit.from ? { inningsSource: { name: hit.from } } : {}),
+    };
+  });
+  return touched ? { ...district, games } : district;
 }
 
 /**

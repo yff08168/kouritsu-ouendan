@@ -918,3 +918,212 @@ export function readHsbBracket(html, { district = "", blocks = false, partial = 
     partial,
   };
 }
+
+/* ================================================================== */
+
+/**
+ * ★★★**組み合わせ（まだ行われていない試合）を読む**（2026-09-07。運営者の指示）。
+ *
+ * `readHsbBracket` は**枝の色から試合を作る**ので、
+ * **1試合も行われていない大会では「連結線の組が1つも作れない」で落ちる**
+ * （色が付くのは試合が終わってから）。**組み合わせはそれとは別に読む。**
+ *
+ * ------------------------------------------------------------------
+ * ★★ 紙の作り（宮城の秋季で測った）
+ *
+ *     スロット番号  class="y_f8"     x=113（左half）/ 652（右half）  y=90 から 30 おき
+ *     校名          class="b y_f12"  x=55（左）    / 717（右）        スロットと同じ y
+ *     日程          class="y_f10"    x=175（左1回戦）/ 594（右1回戦） 2行1組
+ *                                    上の行 `12(土)` ／ 下の行 `利08:30`
+ *     球場の凡例    class="y_f10"    紙の下（`利` と `利府町中央公園野球場` が30おき）
+ *
+ * ★**日程の列は回戦ごとにある**（左 175→235→295→330）。
+ * **いちばん外側の列＝1回戦**だけを返す —— **2回戦から先は出場校が決まっていない。**
+ *
+ * ------------------------------------------------------------------
+ * ★★★**組は「日程ラベルの位置」で決まる。枝を推測しない。**
+ *
+ * ラベルは**対戦する2スロットの中点**に置かれている。
+ * 宮城は最初のラベルが y=136（2行の中点）で、スロット2（y=120）と3（y=150）の
+ * 中点135に当たる —— **つまりスロット1は不戦（シード）。**
+ * ★**番号の順に2つずつ組む、としないこと**（それだとシードのある紙で全部ずれる）。
+ *
+ * ------------------------------------------------------------------
+ * ★★**日付は「日と曜日」しか書いていない**（`12(土)`）。
+ * **紙に刷ってある生成時刻**（`id="y_tm"` の `2026-09-07 19:22:56`）から年と月を取り、
+ * ★**曜日が合う月だけを採る**（当月と翌月を試す）。**合わなければ日付を出さない。**
+ */
+export function readHsbDraw(html, { district = "" } = {}) {
+  const texts = readTexts(html);
+  const slotTexts = texts.filter((t) => t.cls === "y_f8" && /^\d+$/.test(t.text));
+  const nameTexts = texts.filter((t) => /\by_f12\b/.test(t.cls));
+  if (slotTexts.length < 4 || nameTexts.length < 4) return null;
+
+  // ★**題は `class` ではなく `id="y_title"`**（`readTexts` は class しか持たないので直に拾う）
+  const title =
+    /<text[^>]*id="y_title"[^>]*>([\s\S]*?)<\/text>/
+      .exec(html)?.[1]
+      ?.replace(/<[^>]+>/g, "")
+      .trim() || null;
+  // ★**紙に刷ってある生成時刻。** 年と月はここから取る（下の `dateOf`）
+  const stamp = /id="y_tm"[^>]*>\s*(\d{4})-(\d{2})-(\d{2})/.exec(html);
+  const base = stamp
+    ? { y: Number(stamp[1]), m: Number(stamp[2]), d: Number(stamp[3]) }
+    : null;
+
+  /*
+    ---- 左half / 右half ----
+    ★★★**スロット番号の列が1本しかない紙がある**（2026-09-07。島根の秋季）——
+    **1列にブロックが縦に並ぶ形**（`一次大会 1ブロック` `2ブロック` …）。
+    ★**左右の中点で分けると、全部が同じ側に寄って校名と貼り合わない**
+    （実際に0件になった）。**列の数を数えてから決めること。**
+  */
+  const slotCols = [];
+  for (const t of slotTexts) {
+    const hit = slotCols.find((c) => Math.abs(c - t.x) <= 6);
+    if (hit === undefined) slotCols.push(t.x);
+  }
+  const twoSided = slotCols.length >= 2;
+  const centerX = twoSided
+    ? (Math.min(...slotCols) + Math.max(...slotCols)) / 2
+    : Infinity;
+  // ★**1列の紙では全部を左half として扱う**（校名はスロットの左にある）
+  const side = (t) => (t.x < centerX ? "L" : "R");
+
+  // ---- スロットに校名を貼る（同じ y・同じ half） ----
+  const slots = [];
+  for (const s of slotTexts) {
+    const name = nameTexts.find((n) => side(n) === side(s) && Math.abs(n.y - s.y) <= 3);
+    if (!name) continue;
+    slots.push({ n: Number(s.text), side: side(s), y: s.y, name: name.text });
+  }
+  if (slots.length < 4) return null;
+
+  // ---- 球場の凡例（略称 → 正式名） ----
+  /*
+    ★**紙の下のほうにある**（スロットより下）。`利` の30ポイント右に `利府町中央公園野球場`。
+    ★**取れなくても組み合わせは出す**（球場名が略称のままになるだけ）。
+  */
+  const bottom = Math.max(...slots.map((s) => s.y)) + 40;
+  const legend = new Map();
+  const legendTexts = texts.filter((t) => t.cls === "y_f10" && t.y > bottom);
+  for (const t of legendTexts) {
+    if (t.text.length > 2) continue;
+    const full = legendTexts.find((o) => Math.abs(o.y - t.y) <= 2 && o.x > t.x && o.x - t.x <= 40);
+    if (full && full.text.length > 2 && !legend.has(t.text)) legend.set(t.text, full.text);
+  }
+
+  // ---- 日程のラベル（2行1組） ----
+  const sched = texts.filter(
+    (t) => t.cls === "y_f10" && t.y < bottom && /^\d{1,2}[(（]|^\d{1,2}\/\d{1,2}/.test(t.text),
+  );
+  const pairs = [];
+  for (const head of sched) {
+    // ★下の行（球場＋開始時刻）。**12ポイント下にある**
+    const foot = texts.find(
+      (t) => t.cls === "y_f10" && Math.abs(t.x - head.x) <= 2 && t.y > head.y && t.y - head.y <= 16,
+    );
+    pairs.push({ x: head.x, y: (head.y + (foot?.y ?? head.y + 12)) / 2, head: head.text, foot: foot?.text ?? "" });
+  }
+  if (!pairs.length) return null;
+
+  // ---- いちばん外側の列＝1回戦 ----
+  /*
+    ★**左は「スロット列にいちばん近い列」、右も同じ。**
+    ★**回戦ごとに列がある**ので、外側だけを採らないと
+    **出場校が決まっていない2回戦以降まで出してしまう。**
+  */
+  const firstRound = [];
+  for (const s of ["L", "R"]) {
+    const here = pairs.filter((p) => side(p) === s);
+    if (!here.length || !slots.some((t) => t.side === s)) continue;
+    /*
+      ★**左half はスロット列のすぐ右、右half はすぐ左が1回戦**。
+      ★**1列の紙も左half として扱う**（`side` が全部 L を返す）ので同じ計算でよい。
+    */
+    const edge = s === "L" ? Math.min(...here.map((p) => p.x)) : Math.max(...here.map((p) => p.x));
+    firstRound.push(...here.filter((p) => Math.abs(p.x - edge) <= 2));
+  }
+
+  // ---- ラベルの位置から対戦する2スロットを決める ----
+  const games = [];
+  for (const p of firstRound) {
+    const s = p.x < centerX ? "L" : "R";
+    const ordered = slots.filter((t) => t.side === s).sort((a, b) => a.y - b.y);
+    let best = null;
+    for (let i = 0; i + 1 < ordered.length; i++) {
+      const mid = (ordered[i].y + ordered[i + 1].y) / 2;
+      const gap = Math.abs(mid - p.y);
+      if (!best || gap < best.gap) best = { gap, a: ordered[i], b: ordered[i + 1] };
+    }
+    // ★**中点から離れていたら組にしない**（スロットの間隔の1/3まで）
+    const step = ordered.length > 1 ? ordered[1].y - ordered[0].y : 30;
+    if (!best || best.gap > step / 3) continue;
+    games.push({
+      teams: [{ display: best.a.name }, { display: best.b.name }],
+      day: p.head,
+      place: p.foot,
+      slots: [best.a.n, best.b.n],
+    });
+  }
+  if (!games.length) return null;
+
+  /*
+    ★★**同じスロットが2つの試合に出たら、1試合も返さない。**
+    ラベルの拾い方を誤ると起きる。**「だいたい合っている組み合わせ」を出さない。**
+  */
+  const used = new Set();
+  for (const g of games) {
+    for (const n of g.slots) {
+      if (used.has(n)) return null;
+      used.add(n);
+    }
+  }
+
+  if (process.env.DRAW_DEBUG) {
+    console.log(`  [draw] ${district}: スロット${slots.length} 1回戦${games.length}試合`);
+    for (const g of games)
+      console.log(`  [draw]   ${g.slots.join("-")} ${g.teams.map((t) => t.display).join(" vs ")} ${g.day} ${g.place}`);
+  }
+
+  return { title, base, legend, slots, games };
+}
+
+/**
+ * 組み合わせの日付（`12(土)`）を ISO にする。
+ *
+ * ★★**紙には日と曜日しか書いていない。** 年と月は**紙に刷ってある生成時刻**から取る。
+ * ★★**曜日が合う月だけを採る** —— 当月と翌月を試し、**合わなければ null**。
+ * **推測で埋めない**（このリポジトリの決めごと）。
+ * ★**生成時刻より前の日は採らない**（組み合わせはこれからの試合なので、前の月には行かない）。
+ */
+export function hsbDrawDate(label, base) {
+  if (!base) return null;
+  const m = /^(\d{1,2})[(（]([日月火水木金土])[)）]/.exec(String(label ?? "").trim());
+  // ★**`9/22(火)` のように月まで書いてある札もある**
+  const md = /^(\d{1,2})\/(\d{1,2})[(（]([日月火水木金土])[)）]/.exec(String(label ?? "").trim());
+  const WEEK = "日月火水木金土";
+  const iso = (y, mo, d) => `${y}-${String(mo).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+  const ok = (y, mo, d, w) => {
+    const dt = new Date(Date.UTC(y, mo - 1, d));
+    return dt.getUTCMonth() + 1 === mo && dt.getUTCDate() === d && WEEK[dt.getUTCDay()] === w;
+  };
+  if (md) {
+    const [, mo, d, w] = [md[0], Number(md[1]), Number(md[2]), md[3]];
+    for (const y of [base.y, base.y + 1]) if (ok(y, mo, d, w)) return iso(y, mo, d);
+    return null;
+  }
+  if (!m) return null;
+  const [d, w] = [Number(m[1]), m[2]];
+  const hits = [];
+  for (let step = 0; step <= 1; step++) {
+    const mo = ((base.m - 1 + step) % 12) + 1;
+    const y = base.m + step > 12 ? base.y + 1 : base.y;
+    if (!ok(y, mo, d, w)) continue;
+    // ★**生成時刻より前には行かない**
+    if (y === base.y && mo === base.m && d < base.d) continue;
+    hits.push(iso(y, mo, d));
+  }
+  // ★**2つに決まったら出さない**（当月と翌月の両方で曜日が合うことはまず無いが、念のため）
+  return hits.length === 1 ? hits[0] : null;
+}

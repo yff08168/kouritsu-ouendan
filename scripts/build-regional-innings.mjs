@@ -101,6 +101,39 @@ const SOURCE = { name: "HSB flash", url: "https://hsbflash.jp/" };
  */
 const CACHE_FILE = path.join(ROOT, "data", "innings-captured.json");
 
+/**
+ * ★★★**各回の得点の置き場所**（2026-09-07。**県のファイルの中ではない**）。
+ *
+ * **中に持たせていたら、結果を取り直すワークフローに1,510試合ぶんを一度に消された。**
+ * 結果は1日2回、出典から読み直して**県のファイルを丸ごと書き直す**ので、
+ * **開催中の大会の試合は毎回新しいオブジェクトになり、足したものは必ず消える。**
+ * ★**警告もエラーも出ない**（試合数はむしろ増える）。
+ * ★**読む側は `src/lib/regional-results.ts` の `withInnings` が突き合わせる。**
+ */
+const INNINGS_FILE = path.join(ROOT, "src", "lib", "data", "regional-innings.json");
+
+/** 試合を1つに決める文字列。★**`src/lib/regional-results.ts` の `gameSeed` と同じ組み立て** */
+const gameSeed = (g) =>
+  [g.date ?? "", g.round ?? "", ...g.teams.map((t) => `${t.display}:${t.score}`)].join("|");
+
+function loadInnings() {
+  try {
+    return JSON.parse(readFileSync(INNINGS_FILE, "utf8"));
+  } catch {
+    return {};
+  }
+}
+
+/** ★**並びを固定して書く**（中身が同じなら差分が出ないように） */
+function writeInnings() {
+  const sorted = {};
+  for (const k of Object.keys(innings).sort()) {
+    sorted[k] = {};
+    for (const s of Object.keys(innings[k]).sort()) sorted[k][s] = innings[k][s];
+  }
+  writeFileSync(INNINGS_FILE, `${JSON.stringify(sorted, null, 1)}\n`, "utf8");
+}
+
 function loadCache() {
   try {
     return JSON.parse(readFileSync(CACHE_FILE, "utf8"));
@@ -313,8 +346,7 @@ async function harvest(slug) {
   const newestYear = dated.at(-1) ? Number(dated.at(-1).slice(0, 4)) : null;
   const wanted = district.games.filter(
     (g) =>
-      g.teams.length === 2 &&
-      !g.teams.every((t) => Array.isArray(t.innings) && t.innings.length),
+      g.teams.length === 2 && !innings[slug]?.[gameSeed(g)],
   );
   if (!wanted.length) {
     console.log(`  ${district.district}: 足すものはありません`);
@@ -405,7 +437,7 @@ async function harvest(slug) {
       continue;
     }
     // ★**もう持っている試合。** 開かずに済むよう控えるだけにして、書き換えない
-    if (hit.game.teams.every((t) => Array.isArray(t.innings) && t.innings.length)) {
+    if (innings[slug]?.[gameSeed(hit.game)]) {
       if (id) done.add(id);
       misses = 0;
       continue;
@@ -421,16 +453,25 @@ async function harvest(slug) {
     );
     if (!ok) continue;
 
-    hit.game.teams.forEach((t, i) => {
-      t.innings = hit.rows[i].innings;
-    });
+    /*
+      ★★★**県のファイルには書かない**（2026-09-07。**一度これで全部消した**）。
+
+      結果を取り直すワークフローは**県のファイルを丸ごと書き直す**ので、
+      **開催中の大会の試合は毎回新しいオブジェクトになり、足したものは必ず消える**
+      （実際に1,510試合が一度に消えた。**警告もエラーも出ない**）。
+      ★**別のファイル（`src/lib/data/regional-innings.json`）に置く。**
+      **鍵は `gameSeed`**（日付・回戦・両校名・得点）。
+    */
+    const rec = { innings: hit.rows.map((r) => r.innings) };
     /*
       ★**出所が違うときだけ書く。** 県の出典がもともと HSB flash なら、
       県の `sourceName` で足りるので付けない。
     */
     if (district.sourceName !== SOURCE.name && hit.game.source?.name !== SOURCE.name) {
-      hit.game.inningsSource = SOURCE;
+      rec.from = SOURCE.name;
     }
+    innings[slug] ??= {};
+    innings[slug][gameSeed(hit.game)] = rec;
     left.delete(hit.game);
     // ★**取り込めたものだけ控える**（試合前・結び付かなかったものは控えない）
     if (id) done.add(id);
@@ -444,9 +485,14 @@ async function harvest(slug) {
       `${skipped ? `・控えで飛ばした ${skipped} ページ` : ""}` +
       `${stoppedEarly ? `・空振りが ${MAX_MISSES} 続いたので切り上げ` : ""}）`,
   );
+  /*
+    ★**各回のファイルは県ごとに書き出す** —— 途中で落ちても、そこまでが無駄にならない。
+    ★**並びを固定する**（実行のたびに順番が変わると、中身が同じでも差分が出る）。
+    ★★**県のファイルには触らない**（上の説明。触ると結果の取り直しで消える）。
+  */
   if (added && !DRY) {
-    writeFileSync(file, `${JSON.stringify(district, null, 2)}\n`, "utf8");
-    console.log(`    書き出した: ${path.relative(ROOT, file)}`);
+    writeInnings();
+    console.log(`    書き出した: ${path.relative(ROOT, INNINGS_FILE)}（${added} 試合ぶん）`);
   }
   /*
     ★**控えは県ごとに書き出す** —— 途中で落ちても、そこまでの取り込みが無駄にならない。
@@ -462,6 +508,8 @@ async function harvest(slug) {
 
 /** ★**取り込めた試合の控え**（`slug` → `大会:試合番号` の配列）。上の `CACHE_FILE` を読むこと */
 const cache = loadCache();
+/** ★**各回の得点**（`slug` → `gameSeed` → 各回）。上の `INNINGS_FILE` を読むこと */
+const innings = loadInnings();
 
 async function main() {
   const slugs = readdirSync(OUT_DIR)

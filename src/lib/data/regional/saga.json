@@ -34313,5 +34313,64 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 佐賀県大会",
+      "round": "1回戦",
+      "venue": "鳥栖",
+      "teams": [
+        {
+          "display": "佐賀農業",
+          "name": "佐賀農業高校",
+          "slug": "saganogyo"
+        },
+        {
+          "display": "鳥栖",
+          "name": "鳥栖高校",
+          "slug": "tosu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 佐賀県大会",
+      "round": "1回戦",
+      "venue": "鳥栖",
+      "teams": [
+        {
+          "display": "佐賀西",
+          "name": "佐賀西高校",
+          "slug": "saganishi"
+        },
+        {
+          "display": "太良",
+          "name": "太良高校",
+          "slug": "tara"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 佐賀県大会",
+      "round": "1回戦",
+      "venue": "鳥栖",
+      "teams": [
+        {
+          "display": "小城",
+          "name": "小城高校",
+          "slug": "ogi"
+        },
+        {
+          "display": "佐賀商業",
+          "name": "佐賀商業高校",
+          "slug": "sagashogyo"
+        }
+      ]
+    }
   ]
 }

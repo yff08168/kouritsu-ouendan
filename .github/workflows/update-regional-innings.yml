@@ -78,11 +78,13 @@ jobs:
         run: |
           set -eu
 
-          # ★★**控え（`data/innings-captured.json`）を必ず入れること。**
+          # ★★★**各回の得点は `src/lib/data/regional-innings.json`**（2026-09-07）。
+          #   **県のファイル（`src/lib/data/regional/`）には書かない** ——
+          #   **結果を取り直すワークフローが丸ごと書き直すので、置いたら消える**
+          #   （実際に1,510試合が一度に消えた）。**ここに県のディレクトリを足さないこと。**
+          # ★★**控え（`data/innings-captured.json`）も必ず入れること。**
           #   入れ忘れると**毎回まっさらから始まり、1〜2時間かかり続ける。**
-          #   ★**生成物を足したら、ここに書き足すこと**（結果のワークフローで
-          #   `regional-progress.ts` を入れ忘れて地図が凍った前例がある）。
-          TARGETS="src/lib/data/regional data/innings-captured.json"
+          TARGETS="src/lib/data/regional-innings.json data/innings-captured.json"
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

@@ -61,7 +61,7 @@ import {
   stripVerticalInningMarks,
   stripVerticalNotes,
 } from "./lib/slot-bracket.mjs";
-import { readHsbBracket } from "./lib/svg-bracket.mjs";
+import { readHsbBracket, readHsbDraw, hsbDrawDate } from "./lib/svg-bracket.mjs";
 import { fetchXlsxSheets } from "./lib/xlsx-rows.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
@@ -15668,6 +15668,72 @@ const HSB_BASE = {
     if (this.springAlt?.test(title)) return "spring";
     return null;
   },
+  /**
+   * ★★★**組み合わせ（まだ行われていない試合）を読む**（2026-09-07。運営者の指示
+   * 「すでに秋大会の組み合わせが出ているところは随時各都道府県ページに反映させて」）。
+   *
+   * ★★**`collect`（結果）とは別の読み手を使う** —— `readHsbBracket` は
+   * **枝の色から試合を作る**ので、**1試合も行われていない大会では落ちる**
+   * （色が付くのは試合が終わってから）。組み合わせは `readHsbDraw` が
+   * **スロット番号・校名・日程ラベルの位置**から読む。
+   *
+   * ★**出すのは1回戦だけ**（2回戦から先は出場校が決まっていない）。
+   * ★**大会名は索引のもの**（SVGの題には年が入っておらず、
+   * **結果の側と名前が食い違うと「もう終わった試合」の判定が効かない**）。
+   * ★**結果が出た組は呼ぶ側が落とす**（`pairKey`）。
+   */
+  /**
+   * 索引から「開催中／直近の大会」の題と会期を取る。
+   * ★★**大会名の年が二重になる紙がある**（2026-09-06。大阪の秋季）——
+   * 索引は「年」と「大会名」を別々に持つが、**大会名にも年が入っている**ことがある
+   * （`令和 8年` ＋ `令和8年秋季近畿地区高校野球 大阪府大会`）。
+   * **大会名がすでに年を名乗っているなら、頭に足さない。**
+   * ★**結果と組み合わせで同じ題を使うために切り出してある**（片方だけ直さないこと）。
+   */
+  currentTournament(index) {
+    const name = normalize(
+      plain(/<p class="games_name">([\s\S]*?)<\/p>/.exec(index)?.[1] ?? "") ||
+        plain(/<h1 class="games_name_L">([\s\S]*?)<\/h1>/.exec(index)?.[1] ?? ""),
+    );
+    if (!name) return null;
+    const yearText = plain(/<p class="games_year">([\s\S]*?)<\/p>/.exec(index)?.[1] ?? "");
+    return {
+      title: normalize(
+        (/令和\s*\d+\s*年|平成\s*\d+\s*年|20\d\d\s*年/.test(name) ? name : yearText + name).trim(),
+      ),
+      period: normalize(plain(/<p class="games_period">([\s\S]*?)<\/p>/.exec(index)?.[1] ?? "")),
+    };
+  },
+  async collectUpcoming({ fetchHtml }) {
+    const get = (url) => this.page(url, fetchHtml);
+    const index = await get(`${this.base}/`);
+    if (!index) return [];
+    const info = this.currentTournament(index);
+    if (!info) return [];
+    const season = this.seasonOf(info.title);
+    if (!season) return [];
+
+    const html = await get(`${this.base}/tournament`);
+    if (!html) return [];
+    const draw = readHsbDraw(html, { district: this.district });
+    if (!draw) return [];
+
+    /*
+      ★**球場は略称で刷ってある**（`利08:30`）。紙の凡例で正式名に直す。
+      ★**開始時刻は出さない**（`RegionalUpcoming` に置き場所が無い。日付と球場までにする）。
+    */
+    return draw.games.map((g) => {
+      const mark = /^(\D+?)\s*\d{1,2}:\d{2}$/.exec(g.place ?? "")?.[1]?.trim() ?? null;
+      return {
+        date: hsbDrawDate(g.day, draw.base),
+        season,
+        tournament: info.title,
+        round: "1回戦",
+        venue: (mark && draw.legend.get(mark)) || mark || null,
+        teams: g.teams.map((t) => ({ display: t.display })),
+      };
+    });
+  },
   async collect({ fetchHtml, season, year }) {
     const get = (url) => this.page(url, fetchHtml);
     const base = this.base;
@@ -15702,17 +15768,18 @@ const HSB_BASE = {
       ★**開催中の大会を出すようになって初めて画面に出る**（それまでは検算で落ちていた）。
     */
     const curYearText = plain(/<p class="games_year">([\s\S]*?)<\/p>/.exec(index)?.[1] ?? "");
+    /*
+      ★**題の組み立ては `currentTournament` に切り出してある**（2026-09-07）。
+      **組み合わせ（`collectUpcoming`）も同じ題を使う** ——
+      **結果と名前が食い違うと「もう終わった試合」の判定が効かない。**
+    */
     const cur = {
-      title: normalize(
-        (/令和\s*\d+\s*年|平成\s*\d+\s*年|20\d\d\s*年/.test(curName)
-          ? curName
-          : curYearText + curName
-        ).trim(),
-      ),
-      period: normalize(plain(/<p class="games_period">([\s\S]*?)<\/p>/.exec(index)?.[1] ?? "")),
+      ...this.currentTournament(index),
       bracket: `${base}/tournament`,
       ...this.winners(index),
     };
+    void curName;
+    void curYearText;
     /*
       ★**索引には西暦が無い。** 選手権は「第N回 − 1918」で出せる。
       春季・秋季には回数が無いので、**開催中は暦年**とみなす
@@ -19380,8 +19447,22 @@ async function main() {
       /*
         ★**組み合わせ（未実施）。無い県は空**（型のうえでも省略できる）。
         **`games` とは別物**なので混ぜないこと。
+
+        ★★★**組み合わせを読めないアダプタは、前の内容を消さないこと**（2026-09-07）。
+
+        **1つの県にアダプタが2つある**（主＝HSB flash・副＝連盟、またはその逆）。
+        **副が後に走って district を書き直す**ので、
+        **副が `collectUpcoming` を持っていないと、主が読んだ組み合わせが消える**
+        （実際に徳島10試合・高知5試合が、書き出した直後に消えていた）。
+        ★**「読めない」と「読んだが0件だった」は違う。**
+        **読む口を持たないアダプタのときだけ前の内容を残す**ので、
+        **出典から組み合わせが取り下げられたときはちゃんと消える。**
       */
-      ...(upcoming.length ? { upcoming } : {}),
+      ...(upcoming.length
+        ? { upcoming }
+        : !adapter.collectUpcoming && previousDistrict(adapter.slug)?.upcoming?.length
+          ? { upcoming: previousDistrict(adapter.slug).upcoming }
+          : {}),
       /*
         ★**絞る前の全試合。ベストNを数えるのに要る。**
         `games` は公立が絡む試合だけなので、私立同士の試合が落ちている。

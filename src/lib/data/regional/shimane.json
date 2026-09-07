@@ -32237,5 +32237,64 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-09-11",
+      "season": "autumn",
+      "tournament": "令和 8年秋季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": "松江",
+      "teams": [
+        {
+          "display": "邇摩",
+          "name": "邇摩高校",
+          "slug": "nima"
+        },
+        {
+          "display": "松江商業",
+          "name": "松江商業高校",
+          "slug": "matsueshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "season": "autumn",
+      "tournament": "令和 8年秋季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": "江",
+      "teams": [
+        {
+          "display": "出雲農林",
+          "name": "出雲農林高校",
+          "slug": "izumonorin"
+        },
+        {
+          "display": "出雲北陵",
+          "name": "出雲北陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "season": "autumn",
+      "tournament": "令和 8年秋季中国地区高校野球 島根県大会",
+      "round": "1回戦",
+      "venue": "浜田",
+      "teams": [
+        {
+          "display": "益田",
+          "name": "益田高校",
+          "slug": "shimane-masuda"
+        },
+        {
+          "display": "松江東",
+          "name": "松江東高校",
+          "slug": "matsuehigashi"
+        }
+      ]
+    }
   ]
 }

@@ -117,11 +117,45 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : "全試合のスコアと、公立高校の勝ち上がりが分かります。",
   ].join("");
 
+  /*
+    ★★★**title の先頭を「県・年・季節・トーナメント表」にする**（2026-09-07。
+    Search Console のデータで決めた）。
+
+    それまでは `第79回徳島県高等学校野球春季大会（2026年）｜徳島` という**正式名が先頭**で、
+    **大会ページ全体の CTR が 0.43%**（表示466回でクリック2回・平均13.4位）だった。
+    ★★**探されている語が題に無かった** ——
+    「高校野球 徳島大会 トーナメント表 2026」表示53・**クリック0**・10位、
+    「徳島県高校野球春季大会 2026」表示52・**クリック0**・7.8位。
+    **9位に出ていても選ばれていない。**
+
+    ★**正式名は16文字ほどあり、後ろに何を足しても切れて見えない。**
+    **県・年・季節・「トーナメント表」を先頭に置く**と、この4語が
+    **どの端末でも見える位置**に収まる（クリックの31/36はモバイル）。
+
+    ★★★**「トーナメント表」と書くのは、その大会で表が組めているときだけ**（運営者の指摘）。
+    **組めない大会がある**（枝が欠ける・校名が一意でない。実測で95大会中57大会しか組めない）。
+    ★**判定は本体と同じ `buildRegionalBracket`** —— 別々に書くと
+    「題には表と書いてあるのにページに無い」が必ずいつか起きる。
+
+    ★★**正式名は「同じ年・同じ季節に大会が2つ以上あるとき」だけ後ろに足す** ——
+    **徳島の秋は5大会**あり、足さないと題が全部同じになる。
+    **1つしか無いときは足さない**（そのほうが短く、切れずに読める）。
+  */
+  const what = bracket ? "トーナメント表" : "全試合の結果";
+  const head = [
+    district.district,
+    entry.year != null ? `${entry.year}年` : "",
+    seasonLabel(entry.season),
+  ]
+    .filter(Boolean)
+    .join("");
+  const sameSlot = listTournaments(district).filter(
+    (t) => t.season === entry.season && t.year === entry.year,
+  );
+
   return {
-    // ★**title にも年を入れる**（description より効くため。重複するときは足さない）
-    title: entry.year != null && !hasYear
-      ? `${title}（${entry.year}年）｜${district.district}`
-      : `${title}｜${district.district}`,
+    title:
+      sameSlot.length > 1 ? `${head}の${what}｜${title}` : `${head}の${what}`,
     description,
     alternates: { canonical: `/prefectures/${slug}/${tournament}` },
   };

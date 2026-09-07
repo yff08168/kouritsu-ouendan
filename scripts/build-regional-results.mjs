@@ -17519,6 +17519,38 @@ const yamaguchiHsbFill = hsbFillAdapter({
   primary: yamaguchi,
 });
 
+/**
+ * ★★★**切り替えで落ちた年を、退役した連盟のアダプタで埋め直す**（2026-09-07）。
+ *
+ * **Search Console で分かった** —— サイトでいちばん表示されていたページ
+ * `/prefectures/tokushima/2026-spring`（**表示158回・9位**）が**404になっていた。**
+ * 2026-09-02 に徳島・高知を HSB flash へ切り替えたとき、
+ * **連盟が持っていた春季の年が落ちた**（徳島の春季は 4 → 3 大会に減っていた）。
+ *
+ * ★★**HSB flash からは取り直せない** —— **高知・愛媛・徳島の春季は
+ * 勝ち抜き表の下に「順位決定戦」があり、表の勝者が大会の優勝校ではない**
+ * （2026-09-04 に確定。検算が止める）。**連盟からなら取れていた。**
+ *
+ * ★★**向きが逆なだけで、仕組みは `hsbFillAdapter` と同じ** ——
+ * **主が HSB flash・副が連盟**。`fillGapsOnly` は HSB 専用の細工ではないので、
+ * 印を2つ付けるだけで済む。
+ * ★★★**「切り替え」を「両方登録」に戻さないこと** —— 連盟と HSB flash では
+ * **大会名が空白の有無だけ違う**ことがあり（`…選手権徳島大会` と `…選手権 徳島大会`）、
+ * **素で両方登録すると同じ大会が2つ並ぶ**（実測：夏で23試合が重複した）。
+ * **`fillGapsOnly` は「主が1試合でも持っている 年×季節」を返さない**ので、そこを踏まない。
+ */
+const fillWith = (primaryOf, adapter) => ({
+  ...adapter,
+  // ★**県の出典は主（HSB flash）のまま。** 足したぶんは試合ごとの `source` で示す
+  name: primaryOf.name,
+  siteUrl: primaryOf.siteUrl,
+  fillGapsOnly: true,
+  gameSource: { name: adapter.name, url: adapter.siteUrl },
+});
+
+const tokushimaFedFill = fillWith(tokushimaHsb, tokushima);
+const kochiFedFill = fillWith(kochiHsb, kochi);
+
 const ADAPTERS = [
   nagano,
   naganoHsbFill,
@@ -17577,6 +17609,7 @@ const ADAPTERS = [
   ehimeHsb,
   nagasakiHsb,
   kochiHsb,
+  kochiFedFill,
   /*
     ★★**2026-09-02 その2 に HSB flash へ切り替えた4県**（上の `fukushimaHsb` の説明を読むこと）。
     ★**どれも「1〜2年ぶんしか無い薄い県」で、連盟からはこれ以上取れないと確かめてある。**
@@ -17600,6 +17633,7 @@ const ADAPTERS = [
   okayamaTrials,
   mieHsb,
   tokushimaHsb,
+  tokushimaFedFill,
   // ★「スロット番号の行が無い」という記録が誤りだった（okinawa の説明を読むこと）
   okinawa,
   okinawaHsbFill,

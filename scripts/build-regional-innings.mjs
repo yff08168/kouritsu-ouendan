@@ -61,12 +61,66 @@ const flag = (name) => {
 const ONLY = flag("--pref");
 /** 1県あたりに開く試合ページの上限。**試すとき用**（既定は上限なし） */
 const LIMIT = Number(flag("--limit") ?? 0) || Infinity;
+/**
+ * ★★**空振りが続いたら、その県は切り上げる**（2026-09-07）。
+ *
+ * **控えが効くのは「取り込めた試合」だけ**で、**まだ行われていない試合は毎回開き直す**
+ * ことになる（終わったかどうかは開かないと分からない）。
+ * 大会の紙は**回戦の浅い順にトークンが並ぶ**ので、
+ * **まだの試合は後ろにかたまる。** 空振りが続いたらそこから先もまだ、とみて切り上げる。
+ *
+ * ★**取りこぼしても次の回で拾える**（毎晩走らせる前提）。
+ * ★**0 を渡すと切り上げない**（`--misses 0`）。
+ */
+const MAX_MISSES = Number(flag("--misses") ?? 25);
 
 const UA = { "User-Agent": "kouritsu-ouendan/1.0 (+https://kouritsu-ouendan.com)" };
 /** ★**相手のサーバーへの間隔。** 1試合1リクエストなので短くしないこと */
 const POLITENESS_MS = 2000;
 
 const SOURCE = { name: "HSB flash", url: "https://hsbflash.jp/" };
+
+/**
+ * ★★★**一度取れた試合を二度と開かないための控え**（2026-09-07）。
+ *
+ * **初回は1〜2時間かかる**（47県 × その大会の全試合ぶんのページ）。
+ * ★**それを毎回やると自動更新に載せられない。**
+ *
+ * ★**トークンは base64 の JSON**（`{"sel":25,"tno":4,"exp":…}`）で、
+ * **`sel`＝大会・`tno`＝その大会の何試合目**。**`exp` は毎回変わるが `sel:tno` は変わらない**ので、
+ * **取れた試合を `sel:tno` で控えておけば、次からは開かずに飛ばせる。**
+ *
+ * ★★**読むだけで、作らない。** `build-regional-results.mjs` の hsbAdapter に
+ * 「トークンを自分で組み立てないこと」という決めごとがあるが、
+ * **これは大会ページに書いてあるトークンを読んでいるだけ**で、その線は越えていない。
+ * ★**読めなければ控えを使わず、今までどおり開く**（形が変わっても壊れない）。
+ *
+ * ★★**控えるのは「取り込めた試合」だけ。**
+ * **まだ試合前のもの・結び付かなかったものは控えない** ——
+ * 前者は後で終わるし、後者はこちらのデータが増えれば結び付くかもしれない。
+ */
+const CACHE_FILE = path.join(ROOT, "data", "innings-captured.json");
+
+function loadCache() {
+  try {
+    return JSON.parse(readFileSync(CACHE_FILE, "utf8"));
+  } catch {
+    return {};
+  }
+}
+
+/** トークンから `大会:試合番号` を出す。★**読めなければ null**（そのときは開く） */
+function tokenId(token) {
+  try {
+    const json = JSON.parse(
+      Buffer.from(token.replace(/-/g, "+").replace(/_/g, "/"), "base64").toString("utf8"),
+    );
+    const [sel, tno] = [json.sel, json.tno];
+    return Number.isFinite(sel) && Number.isFinite(tno) ? `${sel}:${tno}` : null;
+  } catch {
+    return null;
+  }
+}
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -288,11 +342,40 @@ async function harvest(slug) {
 
   let added = 0;
   let opened = 0;
+  let skipped = 0;
+  const done = new Set(cache[slug] ?? []);
+  const knownBefore = done.size;
+  let misses = 0;
+  let stoppedEarly = false;
   const left = new Set(wanted);
   for (const token of tokens) {
     // ★**足すものが無くなったら、そこで開くのをやめる**（相手に無駄を掛けない）
     if (!left.size || opened >= LIMIT) break;
+    /*
+      ★★**前に取り込めた試合は開かない**（`tokenId` の説明）。
+      **これが無いと毎回1〜2時間かかり、自動更新に載せられない。**
+      ★**読めないトークンは控えを使わず開く**（形が変わっても止まらない）。
+    */
+    const id = tokenId(token);
+    if (id && done.has(id)) {
+      skipped += 1;
+      /*
+        ★**控えに当たったら空振りを数え直す。**
+        **控えにあるということは、そこは行われた試合が並んでいるところ**なので、
+        まだ先に取れるものがある。ここで数え続けると、
+        **取り終わった前半だけで切り上げてしまう。**
+      */
+      misses = 0;
+      continue;
+    }
+    // ★**空振りが続いたら切り上げる**（上の `MAX_MISSES` の説明）
+    if (MAX_MISSES > 0 && misses >= MAX_MISSES) {
+      stoppedEarly = true;
+      break;
+    }
     opened += 1;
+    // ★**まず空振りとして数え、結び付いたら下で 0 に戻す**
+    misses += 1;
     const html = await get(`${base}/flash/${token}`);
     if (!html) continue;
     const box = parseBoxScore(html);
@@ -308,9 +391,23 @@ async function harvest(slug) {
     if (!box || !box.state.includes("試合終了")) continue;
     if (box.teams.some((t) => !t.innings.length)) continue;
 
-    const hit = matchGame([...left], box, newestYear);
+    /*
+      ★★★**照合は「まだ持っていない試合」ではなく、その県の全試合に対して行う**（2026-09-07）。
+
+      **すでに各回を持っている試合と結び付いたときも、控えに入れたい。**
+      持っていないものだけを相手にすると、**取り終わった大会のページを毎回開き直す**
+      ことになり、控えがいつまでも育たない（＝自動更新に載せられない）。
+      ★**厳しさは変わらない** —— 1件に決まらなければ入れないのは同じ。
+    */
+    const hit = matchGame(district.games, box, newestYear);
     if (!hit) {
       if (process.env.INNINGS_DEBUG) console.log(`    [debug]   → 結び付かない`);
+      continue;
+    }
+    // ★**もう持っている試合。** 開かずに済むよう控えるだけにして、書き換えない
+    if (hit.game.teams.every((t) => Array.isArray(t.innings) && t.innings.length)) {
+      if (id) done.add(id);
+      misses = 0;
       continue;
     }
     /*
@@ -335,18 +432,36 @@ async function harvest(slug) {
       hit.game.inningsSource = SOURCE;
     }
     left.delete(hit.game);
+    // ★**取り込めたものだけ控える**（試合前・結び付かなかったものは控えない）
+    if (id) done.add(id);
+    misses = 0;
     added += 1;
   }
 
   console.log(
     `  ${district.district}: ${added} 試合に各回を入れた` +
-      `（対象 ${wanted.length} 件・開いた ${opened} ページ）`,
+      `（対象 ${wanted.length} 件・開いた ${opened} ページ` +
+      `${skipped ? `・控えで飛ばした ${skipped} ページ` : ""}` +
+      `${stoppedEarly ? `・空振りが ${MAX_MISSES} 続いたので切り上げ` : ""}）`,
   );
   if (added && !DRY) {
     writeFileSync(file, `${JSON.stringify(district, null, 2)}\n`, "utf8");
     console.log(`    書き出した: ${path.relative(ROOT, file)}`);
   }
+  /*
+    ★**控えは県ごとに書き出す** —— 途中で落ちても、そこまでの取り込みが無駄にならない。
+    ★**並びを固定する**（実行のたびに順番が変わると、中身が同じでも差分が出る）。
+    ★★**`added` が0でも書く** —— **すでに持っている試合を控えたときも増えている。**
+    そこを書かないと、取り終わった大会のページを毎回開き直すことになる。
+  */
+  if (done.size !== knownBefore && !DRY) {
+    cache[slug] = [...done].sort();
+    writeFileSync(CACHE_FILE, `${JSON.stringify(cache, null, 2)}\n`, "utf8");
+  }
 }
+
+/** ★**取り込めた試合の控え**（`slug` → `大会:試合番号` の配列）。上の `CACHE_FILE` を読むこと */
+const cache = loadCache();
 
 async function main() {
   const slugs = readdirSync(OUT_DIR)

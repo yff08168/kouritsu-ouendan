@@ -9,7 +9,7 @@ import { LeadText } from "@/components/common/LeadText";
 import { LiveBoard } from "@/components/results/LiveBoard";
 import { LiveRefresh } from "@/components/results/LiveRefresh";
 import { ALL_DISTRICT_SLUGS } from "@/lib/constants";
-import { fetchLiveBoard, livePrefectures } from "@/lib/live/hsb";
+import { fetchLiveBoard, fetchStadiumNames, livePrefectures } from "@/lib/live/hsb";
 import { getSchoolNameIndex } from "@/lib/queries/schools";
 import { buildLiveLead } from "@/lib/live-lead";
 
@@ -118,13 +118,20 @@ export default async function LivePrefecturePage({
     ★**このページは `revalidate = 60` で、しかも47県ぶんある** ——
     **初めて開かれた県は作り置きが無いので、この待ち時間がそのまま画面の遅さになる。**
   */
-  const [board, index] = await Promise.all([
+  const [board, index, stadiums] = await Promise.all([
     fetchLiveBoard(slug),
     /*
       ★**学校マスタは公立だけ。** 引けた校名に印を付けるために使う。
       ★**取れなくても速報は出す**（印が付かないだけ）。出典が生きていることのほうが大事。
     */
     getSchoolNameIndex("koshien").catch(() => null),
+    /*
+      ★**球場名の略称の対応表**（2026-09-07。盤の球場欄が `メ 09:00` のように1文字）。
+      ★★**取り直す間隔は1日**（`fetchStadiumNames`）。**盤の60秒に引きずらせない** ——
+      Next は**ページの中でいちばん短い間隔**を採るので、ここを短くする意味が無い。
+      ★**ここも並べて待つ**（直列にすると足し算になる）。
+    */
+    fetchStadiumNames(slug).catch(() => null),
   ]);
 
   /*
@@ -183,7 +190,7 @@ export default async function LivePrefecturePage({
 
       <div className="mt-4">
         {board ? (
-          <LiveBoard board={board} index={index} />
+          <LiveBoard board={board} index={index} stadiums={stadiums} />
         ) : (
           /*
             ★**「試合がありません」と書かないこと。** 取れなかっただけかもしれない。

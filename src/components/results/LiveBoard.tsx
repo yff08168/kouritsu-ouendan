@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ChevronRight, Radio } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { type LiveBoard as Board, type LiveGame } from "@/lib/live/hsb";
+import { splitPlace, type LiveBoard as Board, type LiveGame } from "@/lib/live/hsb";
 import type { SchoolNameIndex } from "@/lib/queries/schools";
 
 /**
@@ -19,13 +19,40 @@ import type { SchoolNameIndex } from "@/lib/queries/schools";
 export function LiveBoard({
   board,
   index,
+  stadiums,
 }: {
   board: Board;
   /** 公立かどうかを引く。**引けない校名は無印**（当て推量をしない） */
   index: SchoolNameIndex | null;
+  /**
+   * ★**球場名の略称 → 正式名称**（`fetchStadiumNames`）。取れなければ null。
+   * **盤の球場欄は略称1文字のことがある**（`メ` `県` `黒`）ので、下に対応表を出す。
+   */
+  stadiums: Map<string, string> | null;
 }) {
   const playing = board.games.filter((g) => g.playing).length;
   const finished = board.games.filter((g) => g.finished).length;
+
+  /*
+    ★★**正式名称は「表の下」に置く**（2026-09-07。運営者の指示
+    「幅的に難しければ略称のままとし、正式名称を表下部に記載」）。
+
+    ★**行の中に入れない** —— 2列にしたぶん行が狭く、
+    **`いせはらサンシャイン・スタジアム` のような長い名前が校名の幅を食う。**
+    **校名はこのサイトの主役**（AGENTS の「校名を切ってはいけない」）。
+    ★**出すのはその日に使われている略称だけ**（対応表は他県ぶんまで並んでいることがある）。
+    ★**並びは盤に出てくる順**（読む人が上から突き合わせられる）。
+  */
+  const used: { abbr: string; name: string }[] = [];
+  if (stadiums) {
+    for (const game of board.games) {
+      const { abbr } = splitPlace(game.place);
+      if (!abbr || abbr === "未") continue;
+      const name = stadiums.get(abbr);
+      if (!name || name === abbr) continue;
+      if (!used.some((u) => u.abbr === abbr)) used.push({ abbr, name });
+    }
+  }
 
   return (
     <section aria-labelledby="live-board" className="rounded-xl border border-line bg-white p-5">
@@ -45,13 +72,41 @@ export function LiveBoard({
       {board.games.length === 0 ? (
         <p className="mt-4 text-sm text-ink-muted">今日はこの県の試合がありません。</p>
       ) : (
-        <ul className="mt-4 divide-y divide-line border-t border-line">
+        /*
+          ★★**2列にする**（2026-09-07。運営者の指示）。
+          ★**狭い画面では1列**（半分の幅に校名2つとスコアは入らない）。
+          ★**列の区切りは余白だけ**（縦線は入れていない）——
+          **行ごとに下線が引いてある**ので、縦線まで足すと枠が細かくなりすぎる。
+          ★★**並びは「左の列を上から、次に右の列」ではなく、行ごとに左→右** ——
+          **試合は開始時刻の順に並んでいる**ので、列で切ると読む順が時刻の順でなくなる。
+          `grid` に流し込めば、そのまま左→右→次の行の順になる。
+        */
+        <ul className="mt-4 grid border-t border-line sm:grid-cols-2 sm:gap-x-5">
           {board.games.map((game, i) => (
-            <li key={`${game.first}-${game.third}-${i}`}>
+            <li
+              key={`${game.first}-${game.third}-${i}`}
+              className="border-b border-line"
+            >
               <GameRow slug={board.slug} game={game} index={index} />
             </li>
           ))}
         </ul>
+      )}
+
+      {/*
+        ★**球場名の対応表**（2026-09-07。運営者の指示）。
+        ★**その日に使われている略称だけ**を、盤に出てくる順で出す。
+        ★**取れなければ何も出さない**（出典が対応表を出していない県がありうる）。
+      */}
+      {used.length > 0 && (
+        <dl className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-xs text-ink-faint">
+          {used.map((u) => (
+            <div key={u.abbr} className="flex gap-1.5">
+              <dt className="font-bold">{u.abbr}</dt>
+              <dd>{u.name}</dd>
+            </div>
+          ))}
+        </dl>
       )}
 
       {/* ★**出典は 2026-09-06 に画面から外した**（運営者の判断）。下の注記は残す */}

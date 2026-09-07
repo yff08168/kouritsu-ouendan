@@ -138,19 +138,17 @@ export function RegionalResultsCard({
                       {/*
                         ★**県名は見出しにして、行からは落としてある。**
                         ★**県のページへのリンク**（その県の全試合とトーナメント表がある）。
-                        ★★**列をまたいだ続きには「つづき」と書く** ——
-                        同じ県名が2つの列に並ぶので、書かないと別の大会に見える。
+                        ★**「つづき」の表記は 2026-09-07 に運営者の判断で外した。**
+                        **`block.continued` は残してある** —— 最初に出す枚を選ぶとき
+                        （`pickStart`）に、県の途中から始まる枚を避けるのに使っている。
                       */}
-                      <h3 className="flex items-baseline gap-1.5 border-b border-line pb-1 pt-2 text-xs font-bold text-navy-700 first:pt-0">
+                      <h3 className="border-b border-line pb-1 pt-2 text-xs font-bold text-navy-700 first:pt-0">
                         <Link
                           href={`/prefectures/${block.slug}`}
                           className="hover:underline"
                         >
                           {block.district}
                         </Link>
-                        {block.continued && (
-                          <span className="font-normal text-ink-faint">つづき</span>
-                        )}
                       </h3>
                       <ul className="divide-y divide-line">
                         {block.games.map((game, i) => (

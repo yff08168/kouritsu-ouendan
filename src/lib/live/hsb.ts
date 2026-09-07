@@ -418,3 +418,61 @@ export async function fetchLiveBoxScore(slug: string, token: string): Promise<Li
     teams,
   };
 }
+
+/* ------------------------------------------------------------------ */
+
+/**
+ * 球場名の略称の対応表（`<host>.hsbflash.jp/stadium_abbr`）。
+ *
+ * ------------------------------------------------------------------
+ * ★★**盤の球場欄は略称1文字のことがある**（`メ 09:00` `県 09:00` `黒 10:00`）。
+ * **それだけでは何球場か分からない**ので、出典が出している対応表を読む。
+ *
+ *     <dl class="stadium_abbr_list"><dt>県</dt><dd>青森県営野球場</dd> …
+ *
+ * ------------------------------------------------------------------
+ * ★★★**同じ略称が2つ出てきたら、先に出てきたほうを採る。**
+ *
+ * **青森のページには、その県のもの（県・メ・黒）のうしろに
+ * 別の県の球場が並んでいる**（`保土谷` `平塚` `相模原` …。出典側の作りで、
+ * こちらの読み間違いではない）。**その県のものが先に並んでいる**ので、
+ * **先勝ちにすれば取り違えない。**
+ * ★**引くのはその日の盤に出ている略称だけ**なので、余分な行は画面に出てこない。
+ *
+ * ------------------------------------------------------------------
+ * ★**球場名は年に何度も変わらない**ので1日1回でよい。
+ * ★★**ページの取り直す間隔を短くしないこと** —— Next は
+ * **ページの中でいちばん短い間隔を採る**ので、盤（60秒）より短くすると
+ * そちらに引きずられる（`fetchLiveDistricts` の注記と同じ話）。
+ */
+export async function fetchStadiumNames(
+  slug: string,
+): Promise<Map<string, string> | null> {
+  if (!isLiveCovered(slug)) return null;
+  const html = await get(`https://${slug}.hsbflash.jp/stadium_abbr`, 86400);
+  if (!html) return null;
+
+  const out = new Map<string, string>();
+  for (const m of html.matchAll(/<dt>([\s\S]*?)<\/dt>\s*<dd>([\s\S]*?)<\/dd>/g)) {
+    const [abbr, name] = [plain(m[1]), plain(m[2])];
+    // ★**先勝ち**（上の説明）。空の行は入れない
+    if (abbr && name && !out.has(abbr)) out.set(abbr, name);
+  }
+  return out.size > 0 ? out : null;
+}
+
+/**
+ * 盤の球場欄（`メ 09:00`）を、略称と開始時刻に割る。
+ * ★**時刻だけの欄・`未` だけの欄がある**ので、割れなければ略称は null。
+ */
+export function splitPlace(place: string | null): {
+  abbr: string | null;
+  time: string | null;
+} {
+  const text = (place ?? "").trim();
+  if (!text) return { abbr: null, time: null };
+  const m = text.match(/^(\S+?)\s+(\d{1,2}:\d{2})$/);
+  if (m) return { abbr: m[1], time: m[2] };
+  if (/^\d{1,2}:\d{2}$/.test(text)) return { abbr: null, time: text };
+  return { abbr: text, time: null };
+}

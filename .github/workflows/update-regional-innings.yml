@@ -1,0 +1,110 @@
+# 地方大会の試合に「各回の得点」を足す。
+#
+# ------------------------------------------------------------------
+# ★★★ 地方大会の結果（update-regional-results.yml）とは**別のワークフロー**
+#
+#   1. ★**1試合につき1リクエストかかる。** 結果の取り直しと同じ流れに入れると
+#      **毎回1〜2時間**になり、相手のサーバーに対して重すぎる。
+#   2. ★**走る回数も違ってよい。** 各回の得点は**あとから足すもの**で、
+#      速さは要らない。**1日1回**、その日の試合が終わってから拾えば足りる。
+#
+# ------------------------------------------------------------------
+# ★★ 出典は HSB flash（`<県>.hsbflash.jp`）
+#
+#   大会ページ（`/tournament`）に、その大会の全試合ぶんの `/flash/<token>` が
+#   並んでいる。**トークンは必ずそこから辿る。自分で組み立てない**
+#   （`build-regional-results.mjs` の hsbAdapter と同じ決めごと）。
+#
+# ------------------------------------------------------------------
+# ★★★ 控え（`data/innings-captured.json`）があるから毎晩走らせられる
+#
+#   **一度取り込めた試合は二度と開かない**（トークンの中の `大会:試合番号` で控える）。
+#   ★**これが無いと毎回1〜2時間**かかる。**控えは必ずコミットすること**
+#   —— コミットしないと毎回まっさらから始まる。
+#
+# 手で走らせたいときは Actions タブから "Run workflow"（workflow_dispatch）。
+name: 地方大会のイニングスコアの更新
+
+on:
+  schedule:
+    # 1日1回。cronはUTC。日本時間だと 23時。
+    # ★**地方大会の結果の更新（19時・22時）より後**に走らせる ——
+    #   その日の試合が生成物に入ってからでないと、箱スコアを結び付ける相手がいない。
+    - cron: "0 14 * * *"
+  workflow_dispatch:
+
+# 生成物をコミットするために必要
+permissions:
+  contents: write
+
+# 同時に走らせない。前の実行が終わる前に次が来るとコミットが衝突する。
+concurrency:
+  group: update-regional-innings
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    # ★**控えが効いていれば数分〜十数分**で終わる。
+    #   ★**大会が始まったばかりの時期は長くなる** —— まだ行われていない試合は
+    #   「終わったかどうか」を開かないと分からないので、毎回開き直すことになる
+    #   （空振りが続いたら県ごとに切り上げる仕組みは入れてある）。
+    # ★**明らかに詰まったと分かる長さで切る。**
+    #   ★★**打ち切られるとコミットの段まで行かず、その回のぶんは全部捨てられる**
+    #   （地方大会の結果のワークフローで実際に5日ぶん落ちた）。
+    #   **県や年を増やしたら、ここも見ること。**
+    timeout-minutes: 180
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+          cache: npm
+
+      - run: npm ci
+
+      - name: 各回の得点を取り込む
+        # ★**Supabase には繋がない。** 書き出し済みの県のファイルと
+        #   出典の箱スコアだけを見る（学校の照合はもう済んでいる）。
+        run: node scripts/build-regional-innings.mjs
+
+      - name: 型が通るか確かめる
+        # 壊れた生成物をコミットしないための保険。
+        run: npx tsc --noEmit
+
+      - name: 変化があればコミットする
+        run: |
+          set -eu
+
+          # ★★**控え（`data/innings-captured.json`）を必ず入れること。**
+          #   入れ忘れると**毎回まっさらから始まり、1〜2時間かかり続ける。**
+          #   ★**生成物を足したら、ここに書き足すこと**（結果のワークフローで
+          #   `regional-progress.ts` を入れ忘れて地図が凍った前例がある）。
+          TARGETS="src/lib/data/regional data/innings-captured.json"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # ★**先に add してから差分を見る**（追跡していないファイルを `git diff` は見ない）
+          git add -A -- $TARGETS
+
+          if git diff --cached --quiet -- $TARGETS; then
+            echo "変化なし。コミットしない。"
+            exit 0
+          fi
+
+          git commit -m "地方大会のイニングスコアを更新（自動）"
+
+          # ★他のワークフローと**同時に走ることがある**。どちらも同じブランチに
+          #   push するので、後から来たほうが non-fast-forward で失敗する。
+          #   生成物どうしで中身は衝突しないので、取り込んでから積み直す。
+          for i in 1 2 3; do
+            if git pull --rebase origin "$GITHUB_REF_NAME" && git push; then
+              exit 0
+            fi
+            echo "push に失敗した（$i 回目）。少し待って試し直す。"
+            sleep 15
+          done
+          exit 1

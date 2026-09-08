@@ -16,6 +16,7 @@ import {
   seasonLabel,
 } from "@/lib/regional-results";
 import { findGame } from "@/lib/regional-tournaments";
+import { findLiveInnings } from "@/lib/live-innings";
 import { vsPath } from "@/lib/head-to-head";
 
 /**
@@ -43,11 +44,17 @@ import { vsPath } from "@/lib/head-to-head";
  * この版の Next は**それが無い動的な区間を「毎回サーバーで作る」**として扱い、
  * **`revalidate` を書いても効かない**（`/live/<県>` で実測した罠）。
  */
-export const revalidate = 3600;
+/*
+  ★★★**キャッシュしない**（2026-09-08。速報から各回の得点を借りるようにしたので）。
 
-export function generateStaticParams() {
-  return [];
-}
+  **ページを1時間キャッシュすると、その日の試合を最初に開いた人の
+  「まだ取り込めていません」が1時間残る**（`/live/<県>` で踏んだのと同じ話）。
+  ★**描くのは速い** —— 県のファイルはモジュールに持っている（`districtCache`）。
+  ★**速報を叩くのは「今日の試合」を開いたときだけ**で、その取得も60秒キャッシュ。
+  ★**このページは `noindex` で sitemap にも入れていない**ので、
+  **作り置きの意味がもともと薄い。**
+*/
+export const dynamic = "force-dynamic";
 
 type Props = { params: Promise<{ slug: string; key: string }> };
 
@@ -96,6 +103,23 @@ export default async function RegionalGamePage({ params }: Props) {
   const publicPair = game.teams.filter((t) => t.slug && !t.combined);
   const versus =
     publicPair.length === 2 ? vsPath(publicPair[0].slug!, publicPair[1].slug!) : null;
+
+  /*
+    ★★★**その日の試合は速報から各回の得点を借りる**（2026-09-08。運営者から
+    「スコアボードはないんだっけ？速報では出ているけど」）。
+
+    **取り込みは1日1回（23時）**なので、**その日に終わった試合は夜まで生成物に入らない。**
+    ★**速報は同じ試合の箱スコアをすでに出している**ので、そこから借りる。
+    ★**見に行くのは「今日の試合」だけ**（`findLiveInnings` が日付で弾く）——
+    **試合は7万件以上あり、古い試合まで叩きに行くと出典に迷惑がかかる。**
+    ★**照合できなければ何も出さない**（当て推量で別の試合の得点を貼らない）。
+  */
+  const liveInnings = hasInnings(game) ? null : await findLiveInnings(slug, game);
+  const teams = hasInnings(game)
+    ? game.teams
+    : liveInnings
+      ? game.teams.map((t, i) => ({ ...t, innings: liveInnings[i] }))
+      : null;
 
   return (
     <Container className="pb-4">
@@ -150,7 +174,7 @@ export default async function RegionalGamePage({ params }: Props) {
           **読み込みに失敗したのか、もともと無いのかが分からない。**
         */}
         <div className="mt-5">
-          {hasInnings(game) ? (
+          {teams ? (
             /*
               ★**出典の行は 2026-09-06 に運営者の判断で画面から外した。**
               **データ側（`game.inningsSource`）は残してある**ので、戻すのはここだけ。
@@ -158,11 +182,17 @@ export default async function RegionalGamePage({ params }: Props) {
               （スコアは連盟・各回は速報、という試合が528件ある）。
               ★**結果カードの出典の行を 2026-08-21 に外したのと同じ判断。**
             */
-            <GameScoreboard teams={game.teams} />
+            <GameScoreboard teams={teams} />
           ) : (
-            /* ★**出典名はここでも出さない**（2026-09-06。上の行と同じ判断） */
+            /*
+              ★★**「出典が合計得点だけを出しているため」と書かないこと**（2026-09-08）。
+              **その日の試合は、速報が箱スコアを出していても夜まで取り込まれない**
+              （取り込みは1日1回）。**そう書くと事実でないことを言うことになる。**
+              ★**上の `liveInnings` でその日のぶんは補うようにしたが、
+              照合できなかったときはここに来る。** 分かることだけ書く。
+            */
             <p className="rounded-lg border border-line bg-navy-50/40 p-4 text-sm leading-relaxed text-ink-muted">
-              この試合は、出典が合計得点だけを出しているため各回の得点がありません。
+              この試合の各回の得点は、まだ取り込めていません。
             </p>
           )}
         </div>

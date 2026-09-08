@@ -55794,6 +55794,33 @@
       }
     },
     {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 新潟県大会",
+      "round": "1回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "十日町総合",
+          "score": 1,
+          "won": false,
+          "name": "十日町総合高校",
+          "slug": "tokamachisogo"
+        },
+        {
+          "display": "三条",
+          "score": 15,
+          "won": true,
+          "name": "三条高校",
+          "slug": "sanjo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-06",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季北信越地区高校野球 新潟県大会",
@@ -55895,6 +55922,33 @@
           "won": false,
           "name": "長岡工業高校",
           "slug": "nagaokakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 新潟県大会",
+      "round": "1回戦",
+      "venue": "新発田市五十公野公園野球場",
+      "teams": [
+        {
+          "display": "新潟工",
+          "score": 2,
+          "won": true,
+          "name": "新潟工業高校",
+          "slug": "niigatakogyo"
+        },
+        {
+          "display": "新発田農",
+          "score": 0,
+          "won": false,
+          "name": "新発田農業高校",
+          "slug": "shibatanogyo"
         }
       ],
       "source": {
@@ -56140,6 +56194,33 @@
           "won": false,
           "name": "中越",
           "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 新潟県大会",
+      "round": "2回戦",
+      "venue": "みどりと森の運動公園野球場",
+      "teams": [
+        {
+          "display": "新潟南",
+          "score": 9,
+          "won": true,
+          "name": "新潟南高校",
+          "slug": "niigataminami"
+        },
+        {
+          "display": "万代",
+          "score": 1,
+          "won": false,
+          "name": "万代高校",
+          "slug": "bandai"
         }
       ],
       "source": {
@@ -71878,25 +71959,6 @@
       "season": "autumn",
       "tournament": "令和8年秋季北信越地区高校野球 新潟県大会",
       "round": "1回戦",
-      "venue": "みどりと森の運動公園野球場",
-      "teams": [
-        {
-          "display": "新潟南",
-          "name": "新潟南高校",
-          "slug": "niigataminami"
-        },
-        {
-          "display": "万代",
-          "name": "万代高校",
-          "slug": "bandai"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-08",
-      "season": "autumn",
-      "tournament": "令和8年秋季北信越地区高校野球 新潟県大会",
-      "round": "1回戦",
       "venue": "新発田市五十公野公園野球場",
       "teams": [
         {
@@ -71908,44 +71970,6 @@
           "display": "新潟江南",
           "name": "新潟江南高校",
           "slug": "niigatakonan"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-08",
-      "season": "autumn",
-      "tournament": "令和8年秋季北信越地区高校野球 新潟県大会",
-      "round": "1回戦",
-      "venue": "長岡市悠久山野球場",
-      "teams": [
-        {
-          "display": "十日町総合",
-          "name": "十日町総合高校",
-          "slug": "tokamachisogo"
-        },
-        {
-          "display": "三条",
-          "name": "三条高校",
-          "slug": "sanjo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-08",
-      "season": "autumn",
-      "tournament": "令和8年秋季北信越地区高校野球 新潟県大会",
-      "round": "1回戦",
-      "venue": "新発田市五十公野公園野球場",
-      "teams": [
-        {
-          "display": "新潟工",
-          "name": "新潟工業高校",
-          "slug": "niigatakogyo"
-        },
-        {
-          "display": "新発田農",
-          "name": "新発田農業高校",
-          "slug": "shibatanogyo"
         }
       ]
     }

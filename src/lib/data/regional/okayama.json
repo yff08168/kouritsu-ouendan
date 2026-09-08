@@ -17453,6 +17453,60 @@
       }
     },
     {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": "順位決定戦",
+      "venue": "岡山県野球場",
+      "teams": [
+        {
+          "display": "岡山南",
+          "score": 2,
+          "won": false,
+          "name": "岡山南高校",
+          "slug": "okayamaminami"
+        },
+        {
+          "display": "一宮",
+          "score": 3,
+          "won": true,
+          "name": "岡山一宮高校",
+          "slug": "okayamaichinomiya"
+        }
+      ],
+      "source": {
+        "name": "岡山県高等学校野球連盟",
+        "url": "https://www.okayama-hbf.com/"
+      }
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": "順位決定戦",
+      "venue": "倉敷市営球場",
+      "teams": [
+        {
+          "display": "金光",
+          "score": 3,
+          "won": false,
+          "name": "金光",
+          "slug": null
+        },
+        {
+          "display": "倉敷工",
+          "score": 10,
+          "won": true,
+          "name": "倉敷工業高校",
+          "slug": "kurashikikogyo"
+        }
+      ],
+      "source": {
+        "name": "岡山県高等学校野球連盟",
+        "url": "https://www.okayama-hbf.com/"
+      }
+    },
+    {
       "date": "2025-09-20",
       "season": "autumn",
       "tournament": "2025年 秋季中国地区高校野球 岡山県大会",

@@ -16,8 +16,17 @@ import {
   type RegionalProgress,
 } from "@/lib/regional-results";
 import { PREFECTURES } from "@/lib/constants";
+import { fetchLiveDistricts, liveSlugOf, type LiveDistrict } from "@/lib/live/hsb";
 
-export const revalidate = 3600;
+/*
+  ★★★**キャッシュしない**（2026-09-08。速報を重ねたので）。
+
+  **ページのキャッシュと取得のキャッシュを重ねると遅れが足し算になる**
+  （`/live/<県>` で実際に「盤は0-0、開くと7-0」になった。あちらのコメントを読むこと）。
+  ★**取得のキャッシュは残す**ので、出典を叩くのは60秒に1回のまま。
+  **毎回作り直すのはHTMLだけ**で、読むのは生成物と60秒以内の索引。
+*/
+export const dynamic = "force-dynamic";
 
 const SEASON = REGIONAL_PROGRESS.season;
 
@@ -59,20 +68,67 @@ export const metadata: Metadata = {
  * ★**マスの中は2行まで。** 3行入れるとその行のマスだけ背が高くなり、
  * 同じ行の他県まで引き伸ばされる（`PrefectureMap` の `detail` の注意）。
  */
-export default function RegionalPage() {
+export default async function RegionalPage() {
   const bySlug = new Map<string, RegionalProgress>(
     REGIONAL_PROGRESS.districts.map((d) => [d.slug, d]),
   );
 
+  /*
+    ★★★**その日の試合の様子を速報から重ねる**（2026-09-08。運営者の指示
+    「速報とリンクさせることはできる？その日の試合状況について、リアルタイムで更新される。
+    スコアボードはクリックすると遷移するイメージ」）。
+
+    ★★**47県ぶんの状態が1回の取得で手に入る**（`hsbflash.jp/top` の9.6KB）。
+    **県ごとに叩かない。**
+    ★**取れなくても地図は出す**（生成物のほうは別の経路なので、速報が止まっても壊れない）。
+    ★**60秒で取り直す** —— このページは生成物を読むだけで Supabase を使わないので、
+    **短くしてもここ以外に響かない**（トップは `revalidate` を引きずられるので既定の5分のまま）。
+  */
+  const live = await fetchLiveDistricts(60).catch((): LiveDistrict[] => []);
+  const liveBy = new Map(live.map((d) => [d.slug, d]));
+  /** ★**甲子園の区分で割れている4地区は県に寄せてから引く**（通さないと引けない） */
+  const liveOf = (slug: string) => liveBy.get(liveSlugOf(slug)) ?? null;
+
   const detail: Record<string, PrefectureMapDetail> = {};
   const counts: Record<string, number> = {};
+  /** ★**本日試合がある県だけ、マスの行き先を速報にする**（下の `buildHref`） */
+  const liveToday = new Set<string>();
   for (const pref of PREFECTURES) {
     const p = bySlug.get(pref.slug);
     if (!p) continue; // 出典が無い地区。マスは「未対応」の見た目のまま
-    if (p.state === "pending") {
+
+    /*
+      ★★**その日に試合がある県は、進捗より「いま」を先に出す。**
+      **進捗は1日2回しか変わらない生成物**で、**速報は60秒ごと**。
+      **同じマスに混ぜるので、どちらの数字なのかが分かる言葉にする**
+      （「本日 試合あり」＝速報の側。試合数は出さない —— 索引は県ごとの試合数を持たない）。
+      ★**押すと速報へ行く**ので、細かい経過はそちらで見てもらう。
+    */
+    if (liveOf(pref.slug)?.phase === "today") {
+      liveToday.add(pref.slug);
+      /*
+        ★**大会名を持たない状態がある**（`pending` は slug と district しか無い）。
+        **その県は2行目を出さない**（推測で埋めない）。
+      */
+      const name = "tournament" in p ? shortTournament(p.tournament) : "";
       detail[pref.slug] = {
-        lines: [{ text: "まだ試合がありません" }],
-        label: `${pref.name}、今季の試合はまだありません`,
+        lines: [{ label: "本日", text: "試合あり" }, ...(name ? [{ text: name }] : [])],
+        highlight: true,
+        label: `${pref.name}、本日の試合があります。押すと試合速報へ移ります`,
+      };
+      if (p.state !== "pending" && p.state !== "scheduled") counts[pref.slug] = p.publicGames;
+      continue;
+    }
+    if (p.state === "pending") {
+      /*
+        ★★**「まだ試合がありません」と書かない**（2026-09-08。運営者の指示）。
+        **試合が行われていないのか、こちらがまだ取れていないのかは分からない。**
+        **組み合わせが出ている県は下の `scheduled` に行く**ので、
+        ここに残るのは**本当に何も分かっていない県**だけ。
+      */
+      detail[pref.slug] = {
+        lines: [{ text: "組み合わせ待ち" }],
+        label: `${pref.name}、この大会の組み合わせはまだ出ていません`,
       };
       continue;
     }
@@ -84,7 +140,7 @@ export default function RegionalPage() {
       const opens = p.opensOn ? formatRegionalDate(p.opensOn) : null;
       detail[pref.slug] = {
         lines: [
-          { label: "開幕", text: opens ?? "日程未定" },
+          { label: "組合せ", text: opens ? `${opens}開幕` : "決定" },
           { text: shortTournament(p.tournament) },
         ],
         label: [
@@ -182,8 +238,7 @@ export default function RegionalPage() {
             <time dateTime={REGIONAL_PROGRESS.generatedAt}>
               {formatUpdatedAt(REGIONAL_PROGRESS.generatedAt)}
             </time>
-            {/* ★**括弧で区切る。** `margin` だけだと読み上げで前の時刻とつながる */}
-            <span>（結果は1日2回、自動で取り込んでいます）</span>
+            {/* ★**「結果は1日2回、自動で取り込んでいます」は 2026-09-08 に外した**（運営者の指示） */}
           </p>
         )}
 
@@ -191,7 +246,16 @@ export default function RegionalPage() {
           <PrefectureMap
             counts={counts}
             detail={detail}
-            buildHref={(slug) => `/prefectures/${slug}`}
+            /*
+              ★★**本日試合がある県だけ速報へ**（2026-09-08。運営者の指示）。
+              **その日に動いているものを見に来た人を、1日2回しか変わらない
+              生成物のページに落とさない。**
+              ★**それ以外は今までどおり県のページ**（過去の大会・学校一覧）。
+              ★**`liveSlugOf` を必ず通すこと** —— 北北海道などをそのまま渡すと404。
+            */
+            buildHref={(slug) =>
+              liveToday.has(slug) ? `/live/${liveSlugOf(slug)}` : `/prefectures/${slug}`
+            }
           />
         </div>
 

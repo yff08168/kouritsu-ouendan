@@ -104,7 +104,22 @@ const UA = { "User-Agent": "kouritsu-ouendan/1.0 (+https://kouritsu-ouendan.com)
  * ★**1年生大会・錬成会・連盟杯・招待試合も同じ扱いで外す。**
  * ★**名前で外す。** 季節（開催月）では区別が付かない。
  */
-const OFF_TARGET = /新人|１年生|1年生|一年生|錬成|連盟杯|招待|交流|オープン戦/;
+/*
+  ★★★**大分県高等学校野球選手権大会は取らない**（2026-09-08。運営者の判断
+  「この大会は引用しなくて良いです」）。
+
+  **大分には春季・秋季の九州地区県予選とは別に、この大会がある**
+  （`第150回大分県高等学校野球選手権記念大会`。8大会104試合が入っていた）。
+  **春と秋の両方に現れる**ので、県のページの「秋季大会 結果」がこちらになっていた。
+
+  ★★★**愛知の `第78回愛知県高等学校野球選手権大会` を巻き込まないこと** ——
+  **あちらは愛知の秋季大会そのもの**（AGENTS の「秋季の大会名にも『選手権』が入る」）。
+  **`県高等学校野球選手権` で広く外すと、愛知の秋が8大会まるごと消える。**
+  ★**だから県名まで書いて名指しする。**
+  ★**夏の `第108回全国高等学校野球選手権大分大会` には当たらない**
+  （あちらは `全国高等学校野球選手権大分大会` で、`大分県高等学校` が続かない）。
+*/
+const OFF_TARGET = /新人|１年生|1年生|一年生|錬成|連盟杯|招待|交流|オープン戦|大分県高等学校野球選手権/;
 const isTargetTournament = (name) => !OFF_TARGET.test(normalize(name ?? ""));
 
 const args = process.argv.slice(2);
@@ -20220,10 +20235,19 @@ async function main() {
       **試合はまだ0件でも「これから始まる」ことは分かっている**ので、
       「まだ試合がありません」と同じ見た目にしない。
     */
-    const seasonGames = d.games.filter((g) => g.season === pickupSeason);
-    if (!seasonGames.length) {
+    /*
+      ★★★**「組み合わせだけ出ている」の判定を、その季節の試合の有無で決めないこと**
+      （2026-09-08。**16県が「まだ試合がありません」のままだった**）。
+
+      **`d.games` には去年までの同じ季節の試合が入っている**ので、
+      **`seasonGames.length` はほぼ全県で0にならない。**
+      **下の「今季のものでなければ pending」に落ちて、組み合わせを見ないまま終わっていた**
+      （熊本18・沖縄15・栃木15・鹿児島21・山口15 … いずれも組み合わせは持っていた）。
+      ★**pending を返す前に必ず組み合わせを見ること。**
+    */
+    const scheduledOf = () => {
       const soon = (d.upcoming ?? []).filter((g) => g.season === pickupSeason);
-      if (!soon.length) return pending;
+      if (!soon.length) return null;
       return {
         slug: d.slug,
         district: d.district,
@@ -20234,7 +20258,10 @@ async function main() {
         opensOn: soon.map((g) => g.date).filter(Boolean).sort()[0] ?? null,
         games: soon.length,
       };
-    }
+    };
+
+    const seasonGames = d.games.filter((g) => g.season === pickupSeason);
+    if (!seasonGames.length) return scheduledOf() ?? pending;
 
     /*
       ★★**大会ごとに分けてから、1つだけを見る。**
@@ -20262,9 +20289,14 @@ async function main() {
       (a, b) => newestOf(b[1]).localeCompare(newestOf(a[1])) || b[1].length - a[1].length,
     )[0];
 
-    // ★**今季のものでなければ出さない**（前年の大会を「今季」として並べない）
+    /*
+      ★**今季のものでなければ出さない**（前年の大会を「今季」として並べない）。
+      ★★**ただし、その前に組み合わせを見る** —— **ここに来る県のほとんどは
+      「去年の秋はあるが今年はまだ」**で、**組み合わせは出ていることがある。**
+    */
     const year = yearOfTournament(tournament, games);
-    if (year === null || (boardYear !== null && year !== boardYear)) return pending;
+    if (year === null || (boardYear !== null && year !== boardYear))
+      return scheduledOf() ?? pending;
 
     const finalGame = games.find((g) => g.round === "決勝");
     const deepest = games.reduce((a, b) => (depthOf(b.round) > depthOf(a.round) ? b : a));

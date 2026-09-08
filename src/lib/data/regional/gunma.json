@@ -43009,6 +43009,33 @@
       "season": "autumn",
       "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
       "round": "1回戦",
+      "venue": "グレースイン前橋市民球場",
+      "teams": [
+        {
+          "display": "藤岡北",
+          "score": 0,
+          "won": false,
+          "name": "藤岡北高校",
+          "slug": "fujiokakita"
+        },
+        {
+          "display": "高崎",
+          "score": 11,
+          "won": true,
+          "name": "高崎高校",
+          "slug": "takasaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "1回戦",
       "venue": "上毛新聞敷島球場",
       "teams": [
         {
@@ -43267,6 +43294,33 @@
           "won": false,
           "name": "高崎工業高校",
           "slug": "takasakikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "高崎東",
+          "score": 9,
+          "won": true,
+          "name": "高崎東高校",
+          "slug": "takasakihigashi"
+        },
+        {
+          "display": "中央中等",
+          "score": 3,
+          "won": false,
+          "name": "中央中等",
+          "slug": null
         }
       ],
       "source": {
@@ -60874,46 +60928,6 @@
           "won": false,
           "name": "前橋工業高校",
           "slug": "maebashikogyo"
-        }
-      ]
-    }
-  ],
-  "upcoming": [
-    {
-      "date": "2026-09-08",
-      "season": "autumn",
-      "tournament": "令和8年秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": "小倉クラッチ・スタジアム",
-      "teams": [
-        {
-          "display": "高崎東",
-          "name": "高崎東高校",
-          "slug": "takasakihigashi"
-        },
-        {
-          "display": "中央中等",
-          "name": "中央中等",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-08",
-      "season": "autumn",
-      "tournament": "令和8年秋季関東地区高校野球 群馬県大会",
-      "round": "1回戦",
-      "venue": "グレースイン前橋市民球場",
-      "teams": [
-        {
-          "display": "藤岡北",
-          "name": "藤岡北高校",
-          "slug": "fujiokakita"
-        },
-        {
-          "display": "高崎",
-          "name": "高崎高校",
-          "slug": "takasaki"
         }
       ]
     }

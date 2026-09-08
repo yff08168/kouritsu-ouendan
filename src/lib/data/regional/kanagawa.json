@@ -56705,6 +56705,52 @@
       "venue": null,
       "teams": [
         {
+          "display": "三浦学苑",
+          "score": 0,
+          "won": false,
+          "name": "三浦学苑",
+          "slug": null
+        },
+        {
+          "display": "平塚学園",
+          "score": 4,
+          "won": true,
+          "name": "平塚学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和8年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桜丘",
+          "score": 7,
+          "won": true,
+          "name": "桜丘高校",
+          "slug": "sakuragaoka"
+        },
+        {
+          "display": "川崎総合科学",
+          "score": 4,
+          "won": false,
+          "name": "川崎総合科学高校",
+          "slug": "kawasakisogokagaku"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和8年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "桐光学園",
           "score": 14,
           "won": true,
@@ -56728,6 +56774,52 @@
       "venue": null,
       "teams": [
         {
+          "display": "橘",
+          "score": 0,
+          "won": false,
+          "name": "橘高校",
+          "slug": "kanagawa-tachibana"
+        },
+        {
+          "display": "東海大相模",
+          "score": 11,
+          "won": true,
+          "name": "東海大相模",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和8年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "光明相模原",
+          "score": 1,
+          "won": true,
+          "name": "光明相模原",
+          "slug": null
+        },
+        {
+          "display": "厚木北",
+          "score": 0,
+          "won": false,
+          "name": "厚木北高校",
+          "slug": "atsugikita"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和8年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "湘南工大付",
           "score": 0,
           "won": false,
@@ -56739,6 +56831,29 @@
           "score": 4,
           "won": true,
           "name": "日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和8年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "川和",
+          "score": 3,
+          "won": false,
+          "name": "川和高校",
+          "slug": "kawawa"
+        },
+        {
+          "display": "横浜隼人",
+          "score": 4,
+          "won": true,
+          "name": "横浜隼人",
           "slug": null
         }
       ]
@@ -56774,6 +56889,29 @@
       "venue": null,
       "teams": [
         {
+          "display": "上溝",
+          "score": 0,
+          "won": false,
+          "name": "上溝高校",
+          "slug": "kamimizo"
+        },
+        {
+          "display": "浅野",
+          "score": 7,
+          "won": true,
+          "name": "浅野",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和8年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
           "display": "立花学園",
           "score": 4,
           "won": true,
@@ -56786,6 +56924,121 @@
           "won": false,
           "name": "相模原城山高校",
           "slug": "sagamiharashiroyama"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和8年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "柏木学園",
+          "score": 4,
+          "won": false,
+          "name": "柏木学園",
+          "slug": null
+        },
+        {
+          "display": "綾瀬西",
+          "score": 5,
+          "won": true,
+          "name": "綾瀬西高校",
+          "slug": "ayasenishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和8年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鎌倉学園",
+          "score": 2,
+          "won": true,
+          "name": "鎌倉学園",
+          "slug": null
+        },
+        {
+          "display": "県相模原",
+          "score": 1,
+          "won": false,
+          "name": "相模原高校",
+          "slug": "sagamihara"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "令和8年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "慶応",
+          "score": 5,
+          "won": true,
+          "name": "慶応",
+          "slug": null
+        },
+        {
+          "display": "山手学院",
+          "score": 0,
+          "won": false,
+          "name": "山手学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "season": "autumn",
+      "tournament": "令和8年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "光明相模原",
+          "score": 1,
+          "won": true,
+          "name": "光明相模原",
+          "slug": null
+        },
+        {
+          "display": "厚木北",
+          "score": 0,
+          "won": false,
+          "name": "厚木北高校",
+          "slug": "atsugikita"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "season": "autumn",
+      "tournament": "令和8年度神奈川県高校野球秋季県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "慶応",
+          "score": 5,
+          "won": true,
+          "name": "慶応",
+          "slug": null
+        },
+        {
+          "display": "山手学院",
+          "score": 0,
+          "won": false,
+          "name": "山手学院",
+          "slug": null
         }
       ]
     },

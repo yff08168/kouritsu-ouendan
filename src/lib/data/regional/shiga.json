@@ -25229,45 +25229,5 @@
         }
       ]
     }
-  ],
-  "upcoming": [
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季近畿地区高校野球 滋賀県大会",
-      "round": "1回戦",
-      "venue": "ＨＰＬベースボールパーク",
-      "teams": [
-        {
-          "display": "近江兄弟社",
-          "name": "近江兄弟社",
-          "slug": null
-        },
-        {
-          "display": "河瀬",
-          "name": "河瀬高校",
-          "slug": "kawase"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季近畿地区高校野球 滋賀県大会",
-      "round": "1回戦",
-      "venue": "ＨＰＬベースボールパーク",
-      "teams": [
-        {
-          "display": "八幡",
-          "name": "八幡高校",
-          "slug": "hachiman"
-        },
-        {
-          "display": "栗東",
-          "name": "栗東高校",
-          "slug": "ritto"
-        }
-      ]
-    }
   ]
 }

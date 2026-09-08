@@ -26035,6 +26035,192 @@
       ]
     },
     {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 2,
+          "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "笛吹",
+          "score": 10,
+          "won": true,
+          "name": "笛吹高校",
+          "slug": "fuefuki"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "巨摩",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "巨摩高校",
+          "slug": "koma"
+        },
+        {
+          "display": "吉田",
+          "score": 2,
+          "won": true,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "name": "吉田高校",
+          "slug": "yamanashi-yoshida"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "韮崎工業",
+          "score": 1,
+          "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "韮崎工業高校",
+          "slug": "nirasakikogyo"
+        },
+        {
+          "display": "青洲",
+          "score": 3,
+          "won": true,
+          "name": "青洲高校",
+          "slug": "seishu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "甲府第一",
+          "score": 3,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "name": "甲府第一高校",
+          "slug": "kofudaiichi"
+        },
+        {
+          "display": "東海大甲府",
+          "score": 5,
+          "won": true,
+          "innings": [
+            0,
+            3,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "name": "東海大甲府",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "巨摩",
+          "score": 7,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            3,
+            0,
+            1
+          ],
+          "name": "巨摩高校",
+          "slug": "koma"
+        },
+        {
+          "display": "青洲",
+          "score": 9,
+          "won": true,
+          "name": "青洲高校",
+          "slug": "seishu"
+        }
+      ]
+    },
+    {
       "date": "2026-09-05",
       "season": "autumn",
       "tournament": "第79回秋季関東地区高校野球山梨県大会",
@@ -40298,25 +40484,6 @@
     }
   ],
   "upcoming": [
-    {
-      "date": "2026-09-08",
-      "season": "autumn",
-      "tournament": "令和8年秋季関東地区高校野球 山梨県大会",
-      "round": "1回戦",
-      "venue": "小瀬スポーツ公園山日ＹＢＳ球場",
-      "teams": [
-        {
-          "display": "甲府工業",
-          "name": "甲府工業高校",
-          "slug": "kofukogyo"
-        },
-        {
-          "display": "笛吹",
-          "name": "笛吹高校",
-          "slug": "fuefuki"
-        }
-      ]
-    },
     {
       "date": "2026-09-13",
       "season": "autumn",

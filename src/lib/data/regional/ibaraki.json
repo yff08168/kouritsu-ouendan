@@ -59574,6 +59574,29 @@
       "date": "2026-09-08",
       "season": "autumn",
       "tournament": "第79回秋季関東地区高等学校野球茨城県大会 二次予選",
+      "round": "シード決定戦",
+      "venue": "ひたちなか市民球場",
+      "teams": [
+        {
+          "display": "明秀日立",
+          "score": 7,
+          "won": true,
+          "name": "明秀日立",
+          "slug": null
+        },
+        {
+          "display": "茨城キリスト",
+          "score": 4,
+          "won": false,
+          "name": "茨城キリスト",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 二次予選",
       "round": "1回戦",
       "venue": "茨城県営球場",
       "teams": [
@@ -59598,6 +59621,29 @@
       "season": "autumn",
       "tournament": "第79回秋季関東地区高等学校野球茨城県大会 二次予選",
       "round": "1回戦",
+      "venue": "茨城県営球場",
+      "teams": [
+        {
+          "display": "鹿島",
+          "score": 1,
+          "won": false,
+          "name": "鹿島高校",
+          "slug": "kashima"
+        },
+        {
+          "display": "水戸啓明",
+          "score": 8,
+          "won": true,
+          "name": "水戸啓明",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 二次予選",
+      "round": "1回戦",
       "venue": "笠間市民球場",
       "teams": [
         {
@@ -59613,6 +59659,29 @@
           "won": true,
           "name": "水戸第一高校",
           "slug": "mitodaiichi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 二次予選",
+      "round": "1回戦",
+      "venue": "笠間市民球場",
+      "teams": [
+        {
+          "display": "水戸工",
+          "score": 10,
+          "won": true,
+          "name": "水戸工業高校",
+          "slug": "mitokogyo"
+        },
+        {
+          "display": "水戸桜ノ牧",
+          "score": 7,
+          "won": false,
+          "name": "水戸桜ノ牧高校",
+          "slug": "mitosakuranomaki"
         }
       ]
     },
@@ -59751,6 +59820,29 @@
           "won": true,
           "name": "境高校",
           "slug": "sakai"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 二次予選",
+      "round": "代表決定戦",
+      "venue": "常総市石下球場",
+      "teams": [
+        {
+          "display": "古河三",
+          "score": 13,
+          "won": true,
+          "name": "古河第三高校",
+          "slug": "kogadaisan"
+        },
+        {
+          "display": "水海道一",
+          "score": 3,
+          "won": false,
+          "name": "水海道第一高校",
+          "slug": "mitsukaidodaiichi"
         }
       ]
     },

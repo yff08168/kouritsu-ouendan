@@ -188,17 +188,28 @@ function GameRow({ game, districtSlug }: { game: RegionalGame; districtSlug: str
         推測で埋めず、無ければ列ごと空ける。
       */}
       {/*
-        ★**2列にしたぶん、回戦の列を詰める**（2026-09-08）。
-        **1024px で `川崎総合科学` が8px足りずに切れていた**（実測 108>100）。
-        **校名はこのサイトの主役**なので、幅は回戦・球場のほうから渡す。
-      */}
-      <p className="w-12 shrink-0 text-xs leading-tight text-ink-faint sm:w-20 lg:w-16">
-        {game.round}
-        {game.venue && <span className="hidden truncate sm:block">{game.venue}</span>}
-      </p>
+        ★★★**スマホでは回戦を上の行へ逃がす**（2026-09-08。運営者の指示）。
 
-      {/* スコアの列は固定幅。「0 - 1」と「0 - 10」で校名の右端がずれないように */}
-      <p className="grid min-w-0 flex-1 grid-cols-[minmax(0,1fr)_4rem_minmax(0,1fr)] items-baseline gap-x-2 sm:grid-cols-[minmax(0,1fr)_5.5rem_minmax(0,1fr)] sm:gap-x-3">
+        **横に並べると校名に63pxしか残らず、`川崎総合科学` `茅ケ崎北陵` `横須賀総合` など
+        16件が切れていた**（実測 84>63）。
+        ★**トップの結果カードで踏んだのと同じ形**（AGENTS の
+        「県・日付・回戦を上の行へ逃がして、校名とスコアに列幅を丸ごと渡す」）。
+        ★**行が1行ぶん高くなるが、校名はこのサイトの主役**なのでそちらを採る。
+        ★**`sm` から先は今までどおり横並び**（`sm:flex`）。
+      */}
+      <div className="min-w-0 flex-1 sm:flex sm:items-center sm:gap-4">
+        {/*
+          ★**2列にしたぶん、回戦の列を詰める**（2026-09-08）。
+          **1024px で `川崎総合科学` が8px足りずに切れていた**（実測 108>100）。
+          **校名はこのサイトの主役**なので、幅は回戦・球場のほうから渡す。
+        */}
+        <p className="shrink-0 text-xs leading-tight text-ink-faint sm:w-20 lg:w-16">
+          {game.round}
+          {game.venue && <span className="hidden truncate sm:block">{game.venue}</span>}
+        </p>
+
+        {/* スコアの列は固定幅。「0 - 1」と「0 - 10」で校名の右端がずれないように */}
+        <p className="grid min-w-0 grid-cols-[minmax(0,1fr)_4rem_minmax(0,1fr)] items-baseline gap-x-2 sm:flex-1 sm:grid-cols-[minmax(0,1fr)_5.5rem_minmax(0,1fr)] sm:gap-x-3">
         <Link
           href={`/schools/${ours.slug}`}
           title={ours.name}
@@ -228,8 +239,9 @@ function GameRow({ game, districtSlug }: { game: RegionalGame; districtSlug: str
           ) : (
             other.display
           )}
-        </span>
-      </p>
+          </span>
+        </p>
+      </div>
     </div>
   );
 }

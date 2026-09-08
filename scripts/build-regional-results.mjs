@@ -15766,9 +15766,32 @@ const HSB_BASE = {
       sheets.length > 1
         ? sheets.find((s) => titleOf(s) && (want.includes(titleOf(s)) || titleOf(s).includes(want)))
         : html;
-    if (!sheet) return [];
+    /*
+      ★★★**読めなかったことを黙って0件にしないこと**（2026-09-08。運営者から
+      「徐々に都道府県ごとに秋大会の組み合わせが出てきます。自動で取得する方法ある？」）。
+
+      **取得は1日2回の自動更新でそのまま動く**（新しく出た紙はそこで拾われる）が、
+      **読めなかったときに何も言わないと、出たことにすら気づけない。**
+      ★**兵庫のような多段の紙**（ブロックと決勝トーナメントが1枚に入る）は
+      **いまの読み手では組めない。** 秋の紙が出たときにここで鳴る。
+      ★**「まだ紙が出ていない」ときは鳴らさない** —— 索引が夏の大会を出している
+      あいだは季節が合わずに上で抜けるので、ここまで来ない。
+    */
+    if (!sheet) {
+      console.log(
+        `  ⚠️ ${this.district}: 組み合わせの紙を選べない（1ページに表が複数あり、` +
+          `どれが「${info.title}」か分からない）`,
+      );
+      return [];
+    }
     const draw = readHsbDraw(sheet, { district: this.district });
-    if (!draw) return [];
+    if (!draw) {
+      console.log(
+        `  ⚠️ ${this.district}: 組み合わせの紙を読めない（${info.title}）。` +
+          `紙の作りが違う可能性がある。DRAW_DEBUG=1 で中身を出せる`,
+      );
+      return [];
+    }
     /*
       ★★★**終わった大会の紙から組み合わせを作らない**（2026-09-07）。
 
@@ -15801,7 +15824,7 @@ const HSB_BASE = {
     );
     const abbrTable =
       marks.some((m) => m && !draw.legend.get(m)) ? await this.stadiumNames(get) : null;
-    return (
+    return this.reportUpcoming(
       draw.games
         .map((g, i) => {
           const mark = marks[i];
@@ -15821,8 +15844,23 @@ const HSB_BASE = {
           （曜日の合う月が見つからない、という形で落ちる）。
           ★**「日程未定」として出さない** —— 画面では終わった試合と見分けが付かない。
         */
-        .filter((g) => g.date)
+        .filter((g) => g.date),
+      info.title,
     );
+  },
+  /**
+   * ★★**組み合わせを読んだ結果をひとこと出す**（2026-09-08）。
+   * **新しく出た県はここで「N試合」と鳴る**ので、
+   * **自動更新のログを見れば、どの県の紙が読めたか／読めなかったかが分かる。**
+   */
+  reportUpcoming(list, title) {
+    if (list.length) {
+      const from = list.map((g) => g.date).filter(Boolean).sort()[0];
+      console.log(
+        `  （組み合わせ: ${list.length} 試合${from ? ` ／ ${from} 開幕` : ""}｜${title}）`,
+      );
+    }
+    return list;
   },
   /** 出典の「球場名 略称一覧」。★**先勝ち**（同じページに他県の球場も並ぶ） */
   async stadiumNames(get) {

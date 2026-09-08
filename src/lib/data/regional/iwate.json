@@ -4185,10 +4185,10 @@
           "slug": "hanamakinogyo"
         },
         {
-          "display": "一関高専・前沢岩谷堂",
+          "display": "一関高専・前沢・岩谷堂",
           "score": 1,
           "won": false,
-          "name": "一関高専・前沢岩谷堂",
+          "name": "一関高専・前沢・岩谷堂",
           "slug": null,
           "combined": true
         }
@@ -4278,10 +4278,10 @@
           "slug": "mizusawa"
         },
         {
-          "display": "大船渡東・山田・住田江南義塾盛岡",
+          "display": "大船渡東・山田・住田・江南義塾盛岡・遠野緑峰・大東",
           "score": 1,
           "won": false,
-          "name": "大船渡東・山田・住田江南義塾盛岡",
+          "name": "大船渡東・山田・住田・江南義塾盛岡・遠野緑峰・大東",
           "slug": null,
           "combined": true
         }
@@ -19221,6 +19221,122 @@
           "score": 4,
           "won": false,
           "name": "花巻東",
+          "slug": null
+        }
+      ]
+    }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-09-16",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高校野球 岩手県大会",
+      "round": "1回戦",
+      "venue": "きたぎんボールパーク",
+      "teams": [
+        {
+          "display": "釜石",
+          "name": "釜石高校",
+          "slug": "kamaishi"
+        },
+        {
+          "display": "盛岡大附",
+          "name": "盛岡大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高校野球 岩手県大会",
+      "round": "1回戦",
+      "venue": "きたぎんボールパーク",
+      "teams": [
+        {
+          "display": "盛岡第四",
+          "name": "盛岡第四高校",
+          "slug": "moriokadaishi"
+        },
+        {
+          "display": "専大北上",
+          "name": "専大北上",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高校野球 岩手県大会",
+      "round": "1回戦",
+      "venue": "きたぎんボールパーク",
+      "teams": [
+        {
+          "display": "花巻北",
+          "name": "花巻北高校",
+          "slug": "hanamakikita"
+        },
+        {
+          "display": "一関第二",
+          "name": "一関第二高校",
+          "slug": "ichinosekidaini"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高校野球 岩手県大会",
+      "round": "1回戦",
+      "venue": "きたぎんボールパーク",
+      "teams": [
+        {
+          "display": "一関修紅",
+          "name": "一関修紅",
+          "slug": null
+        },
+        {
+          "display": "花北青雲",
+          "name": "花北青雲高校",
+          "slug": "kahokuseiun"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高校野球 岩手県大会",
+      "round": "1回戦",
+      "venue": "きたぎんボールパーク",
+      "teams": [
+        {
+          "display": "大船渡",
+          "name": "大船渡高校",
+          "slug": "ofunato"
+        },
+        {
+          "display": "盛岡商業",
+          "name": "盛岡商業高校",
+          "slug": "moriokashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高校野球 岩手県大会",
+      "round": "1回戦",
+      "venue": "きたぎんボールパーク",
+      "teams": [
+        {
+          "display": "盛岡工業",
+          "name": "盛岡工業高校",
+          "slug": "moriokakogyo"
+        },
+        {
+          "display": "岩手",
+          "name": "岩手",
           "slug": null
         }
       ]

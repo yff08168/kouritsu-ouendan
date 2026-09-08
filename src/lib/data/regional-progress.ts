@@ -5,8 +5,8 @@ import type { RegionalProgressBoard } from "@/lib/regional-results";
 
 export const REGIONAL_PROGRESS: RegionalProgressBoard = {
   "season": "autumn",
-  "latestDate": "2026-09-09",
-  "generatedAt": "2026-09-08T11:02:18Z",
+  "latestDate": "2026-09-08",
+  "generatedAt": "2026-09-08T13:58:50Z",
   "districts": [
     {
       "slug": "nagano",
@@ -26,10 +26,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "令和8年度神奈川県高校野球秋季県大会",
-      "games": 40,
-      "publicGames": 32,
+      "games": 38,
+      "publicGames": 31,
       "round": "2回戦",
-      "latestDate": "2026-09-09",
+      "latestDate": "2026-09-08",
       "champion": null
     },
     {
@@ -293,12 +293,20 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "fukui",
       "district": "福井",
-      "state": "pending"
+      "state": "scheduled",
+      "season": "autumn",
+      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
+      "opensOn": "2026-09-12",
+      "games": 10
     },
     {
       "slug": "iwate",
       "district": "岩手",
-      "state": "pending"
+      "state": "scheduled",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高校野球 岩手県大会",
+      "opensOn": "2026-09-16",
+      "games": 6
     },
     {
       "slug": "gifu",
@@ -368,7 +376,11 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "tokushima",
       "district": "徳島",
-      "state": "pending"
+      "state": "scheduled",
+      "season": "autumn",
+      "tournament": "令和 8年秋季四国地区高校野球 徳島県大会",
+      "opensOn": "2026-09-12",
+      "games": 10
     },
     {
       "slug": "okinawa",

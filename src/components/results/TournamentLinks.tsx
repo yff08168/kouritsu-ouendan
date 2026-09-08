@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { cn } from "@/lib/utils";
 import { seasonLabel } from "@/lib/regional-results";
 import type { RegionalSeason } from "@/lib/regional-results";
 import type { TournamentEntry } from "@/lib/regional-tournaments";
@@ -55,7 +56,17 @@ export function TournamentLinks({
   const years = groupByYear(entries);
 
   return (
-    <div className="space-y-2">
+    /*
+      ★★**年は2列に並べる**（2026-09-08。運営者の指示
+      「2026年　2025年 / 2024年　2023年 のような形式で並べて」）。
+      **年の数だけ縦に伸びていた** —— 神奈川は12年ぶんで、
+      **カード1枚が画面の高さを大きく超えていた。**
+      ★**流し込む順は左→右→次の行**なので、**新しい順に読める並びのまま。**
+      ★★**`items-start` を付けること** —— 既定（`stretch`）だと
+      **開いている年の隣の枠が、その高さまで引き伸ばされる**
+      （いちばん新しい年は最初から開いている）。
+    */
+    <div className="grid items-start gap-2 sm:grid-cols-2">
       {years.map((group, i) => (
         <details
           key={group.key}
@@ -81,7 +92,7 @@ export function TournamentLinks({
             </span>
           </summary>
           <div className="border-t border-line p-3">
-            <List prefectureSlug={prefectureSlug} entries={group.entries} />
+            <List prefectureSlug={prefectureSlug} entries={group.entries} single />
           </div>
         </details>
       ))}
@@ -126,12 +137,21 @@ function groupByYear(entries: TournamentEntry[]): YearGroup[] {
 function List({
   prefectureSlug,
   entries,
+  single = false,
 }: {
   prefectureSlug: string;
   entries: TournamentEntry[];
+  /**
+   * ★★**年の枠の中では1列にする**（2026-09-08）。
+   * **年そのものを2列に並べたので、枠の幅が半分になった** ——
+   * さらに中を2列にすると**1つあたり約170pxしかなく、大会名が切れる**
+   * （実測 `令和8年度神奈川県高校野球秋季県大会` は246px要る）。
+   * ★**畳んでいない一覧（大会の少ない県）は今までどおり2列。**
+   */
+  single?: boolean;
 }) {
   return (
-    <ul className="grid gap-2 sm:grid-cols-2">
+    <ul className={cn("grid gap-2", !single && "sm:grid-cols-2")}>
       {entries.map((t) => (
         <li key={t.slug}>
           <Link

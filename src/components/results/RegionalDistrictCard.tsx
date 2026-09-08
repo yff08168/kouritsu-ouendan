@@ -97,9 +97,18 @@ export function RegionalDistrictCard({
         {groups.map(({ key, label, games: groupGames }) => (
           <div key={key}>
             <h3 className="text-xs font-bold text-ink-faint">{label}</h3>
-            <ul className="mt-1 divide-y divide-line border-t border-line">
+            {/*
+              ★★**2列にする**（2026-09-08。運営者の指示「結果欄についても2列表示にして」）。
+              **速報の盤と同じ作り** —— `grid` に流し込むので、
+              **読む順は「行ごとに左→右」**のまま（列で切ると新しい順に読めなくなる）。
+              ★**区切りは行ごとの下線だけ**（縦線は入れない）。
+              ★**狭い画面では1列**（半分の幅に校名2つとスコアは入らない）。
+              ★★**広げるのは `lg` から** —— `sm`（640px）で割ると
+              **半分が約280pxしかなく、校名が切れる**（AGENTS の「校名を切ってはいけない」）。
+            */}
+            <ul className="mt-1 grid border-t border-line lg:grid-cols-2 lg:gap-x-6">
               {groupGames.map((game, i) => (
-                <li key={`${key}-${i}`}>
+                <li key={`${key}-${i}`} className="border-b border-line">
                   <GameRow game={game} districtSlug={district.slug} />
                 </li>
               ))}
@@ -178,7 +187,12 @@ function GameRow({ game, districtSlug }: { game: RegionalGame; districtSlug: str
         ★**回戦は出典に無いことがある**（山梨は準々決勝より前の日に書いていない）。
         推測で埋めず、無ければ列ごと空ける。
       */}
-      <p className="w-12 shrink-0 text-xs leading-tight text-ink-faint sm:w-20">
+      {/*
+        ★**2列にしたぶん、回戦の列を詰める**（2026-09-08）。
+        **1024px で `川崎総合科学` が8px足りずに切れていた**（実測 108>100）。
+        **校名はこのサイトの主役**なので、幅は回戦・球場のほうから渡す。
+      */}
+      <p className="w-12 shrink-0 text-xs leading-tight text-ink-faint sm:w-20 lg:w-16">
         {game.round}
         {game.venue && <span className="hidden truncate sm:block">{game.venue}</span>}
       </p>

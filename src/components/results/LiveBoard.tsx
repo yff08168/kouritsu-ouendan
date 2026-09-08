@@ -186,7 +186,12 @@ function GameRow({
           <p className="mt-0.5 text-xs text-ink-faint">{game.place}</p>
         )}
       </div>
-      {game.token && <ChevronRight size={16} className="shrink-0 text-ink-faint" aria-hidden />}
+      {/*
+        ★★**行の右に矢印を出さない**（2026-09-08。運営者から
+        「金沢の右にある矢印は不要、高校名の列がずれて見えてしまうので」）。
+        **矢印が出るのは詳細のある試合だけ**なので、**その行だけ校名の右端が内側に寄り、
+        列がそろって見えない。** 押せることは行全体の色が変わることで示す。
+      */}
     </div>
   );
 

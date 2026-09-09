@@ -21,7 +21,7 @@ import { LeadText } from "@/components/common/LeadText";
 import { SchoolRegionalRecord } from "@/components/schools/SchoolRegionalRecord";
 import { HeadToHeadList } from "@/components/schools/HeadToHeadList";
 import { SchoolKoshienRecord } from "@/components/schools/SchoolKoshienRecord";
-import { KOSHIEN_GAMES, koshienGamesOf } from "@/lib/koshien-games";
+import { KOSHIEN_GAMES, appearanceKey, koshienGamesOf } from "@/lib/koshien-games";
 import { JINGU_GAMES, jinguGamesOf } from "@/lib/jingu-games";
 import { shortSchoolName } from "@/lib/school-name";
 import {
@@ -55,7 +55,7 @@ import { getCheerMessages } from "@/lib/queries/community";
 import { JsonLd } from "@/components/common/JsonLd";
 import { schoolJsonLd } from "@/lib/seo";
 
-import { ESTABLISHMENTS, SCHOOL_KINDS, SITE, establishmentLabel } from "@/lib/constants";
+import { SCHOOL_KINDS, SITE, establishmentLabel } from "@/lib/constants";
 import { bestResultBySeason } from "@/lib/koshien";
 import { buildSchoolLead } from "@/lib/school-lead";
 import { TWENTY_FIRST_CENTURY_BERTHS } from "@/lib/data/twenty-first-century";
@@ -227,9 +227,24 @@ export default async function SchoolDetailPage({ params }: Props) {
     school.officialName,
     shortSchoolName(school.name, school.slug),
   ];
+  /*
+    ★★**出場歴も渡す**（2026-09-09。運営者から「都立城東高校の第31回甲子園は
+    出場していないので誤謬です」）。**県が取れず、しかも校名が複数の県に出てくる試合**
+    （`城東` は高知・徳島・静岡・東東京の4つ）**だけ、ここで確かめる。**
+    ★**この学校の出場は1999年と2001年の2回**なので、1949年の試合は落ちる。
+    ★**詳しくは `koshienGamesOf`**（一律に捨てると松山商業の44試合が消えることも書いてある）。
+  */
+  const appearances = new Set(
+    championships.map((c) => appearanceKey(c.year, c.season)),
+  );
   const koshienRecord = [
     // ★県も渡す（同名の別校に当てないため。2026-08-26）
-    ...koshienGamesOf(KOSHIEN_GAMES, nationalNames, school.prefecture.name),
+    ...koshienGamesOf(
+      KOSHIEN_GAMES,
+      nationalNames,
+      school.prefecture.name,
+      appearances,
+    ),
     // ★明治神宮大会も同じ枠に出す（どちらも全国大会。見出しのバッジで分ける）
     ...jinguGamesOf(JINGU_GAMES, nationalNames, school.prefecture.name),
   ];
@@ -436,8 +451,19 @@ export default async function SchoolDetailPage({ params }: Props) {
                   className="text-ink-faint"
                 />
                 <dd className="text-ink-muted">
-                  {ESTABLISHMENTS[school.establishment]}・
-                  {SCHOOL_KINDS[school.schoolKind]}
+                  {/*
+                    ★★**`ESTABLISHMENTS` を直に引かないこと**（2026-09-09。運営者の指摘
+                    「県立ではなく都立です」）。**あの表は区分の名前**で、
+                    **東京の学校まで「県立」と書いてしまう。**
+                    ★**同じページの上のバッジは `establishmentLabel` を通していた**ので、
+                    **1枚の中で「都立」と「県立」が並んでいた。**
+                    ★**都立・道立・府立（大阪・京都）はこちらが県名から決める。**
+                  */}
+                  {establishmentLabel(
+                    school.establishment,
+                    school.prefecture.name,
+                  )}
+                  ・{SCHOOL_KINDS[school.schoolKind]}
                   {school.foundedYear && `　${school.foundedYear}年創立`}
                 </dd>
               </div>

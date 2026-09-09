@@ -34,6 +34,7 @@ import {
   REGIONS,
   SCHOOL_KINDS,
   TARGET_ESTABLISHMENTS,
+  establishmentLabel,
   type Establishment,
   type SchoolKind,
 } from "@/lib/constants";
@@ -189,7 +190,16 @@ export default async function SchoolsPage({ searchParams }: Props) {
 
   const activeLabels = [
     prefecture?.name,
-    establishment ? ESTABLISHMENTS[establishment] : null,
+    /*
+      ★**県が決まっているときは、その県の言い方で書く**（2026-09-09）——
+      **同じ行に県名が並ぶ**ので、「東京都・県立」では食い違って見える。
+      県を選んでいないときは区分の名前のまま（全国をまたぐため）。
+    */
+    establishment
+      ? prefecture
+        ? establishmentLabel(establishment, prefecture.name)
+        : ESTABLISHMENTS[establishment]
+      : null,
     kind ? SCHOOL_KINDS[kind] : null,
     koshien ? SCHOOL_KOSHIEN_FILTERS[koshien] : null,
     keyword ? `「${keyword}」` : null,

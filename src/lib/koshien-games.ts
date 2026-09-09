@@ -92,6 +92,27 @@ export type KoshienGame = {
  * 実際に**2003年夏の「金沢」（石川・私立）が横浜市立金沢（神奈川）の戦績として
  * 出ていた。** ★**記事側に県が無い古い大会は、今までどおり校名だけで見る。**
  *
+ * ★★★**「県が無い」＋「その校名が複数の県に出てくる」ときは、出場歴で確かめる**
+ * （2026-09-09。運営者から「都立城東高校の第31回甲子園は出場していないので誤謬です」）。
+ *
+ * **1949年の第31回に出ている `城東` は県が取れない**が、
+ * **この校名は大会をまたいで4つの県に出てくる**（高知・徳島・静岡・東東京）。
+ * **`teamPrefecture` の借用は「県が1つに決まる校名だけ」**なので何も返せず、
+ * **`samePrefecture` は「どちらかが分からなければ true」**なので**校名だけで通っていた。**
+ * その結果、**都立城東に1949年の試合が付いていた**（この学校の出場は1999年と2001年の2回）。
+ *
+ * ★★★**「あいまいなら一律に捨てる」にしてはいけない**（実測して取り消した）——
+ * **同じことをする校名が20件あり、捨てると101試合が消える。**
+ * **松山商業（愛媛）だけで44試合**（1919〜1969年）、中京商21・海星13…。
+ * **どれもその学校のもので、消すほうがはるかに大きな誤り。**
+ *
+ * ★★**そこで、この学校が「その大会に出た」と記録があるかで決める**
+ * （`school_championships`。**出典つきで持っている別のデータ**）。
+ * ★**記録が1件も無い学校では今までどおり**（見分ける材料が無いので取りこぼさない）。
+ *
+ * @param appearances その学校の甲子園出場歴（`appearanceKey` で作る）。
+ *                   **県の分からない、あいまいな校名のときだけ使う。**
+ *
  * @param names その学校として認めてよい表記（学校マスタの校名・一覧用の短い校名など）
  * @param pref  その学校の都道府県（甲子園の大会区分名でよい）。省略すると県は見ない
  */
@@ -99,14 +120,41 @@ export function koshienGamesOf(
   games: readonly KoshienGame[],
   names: readonly string[],
   pref?: string,
+  appearances?: ReadonlySet<string>,
 ): KoshienGame[] {
   const want = new Set(names.map(normalizeKoshienName).filter(Boolean));
   if (!want.size) return [];
   return games.filter((g) =>
     g.teams.some(
-      (t) => want.has(normalizeKoshienName(t.display)) && samePrefecture(teamPrefecture(t), pref),
+      (t) => want.has(normalizeKoshienName(t.display)) && teamMatches(g, t, pref, appearances),
     ),
   );
+}
+
+/** 出場歴の鍵。★**`Championship` と `KoshienGame` で季節の言葉が同じ**なのでそのまま使える */
+export function appearanceKey(year: number, season: string): string {
+  return `${year}\t${season}`;
+}
+
+/**
+ * そのチームを、その学校のものとして数えてよいか。
+ *
+ * ★**記事に県があればそれで見る。** 無ければ同じ校名の他の大会から借りる。
+ * ★★**借りられず、しかもその校名が複数の県に出てくるなら、出場歴で確かめる**（上の説明）。
+ * ★**どの県にも出てこない校名は今までどおり**（見分けようが無いので、取りこぼさない）。
+ */
+function teamMatches(
+  g: KoshienGame,
+  t: KoshienGameTeam,
+  pref?: string,
+  appearances?: ReadonlySet<string>,
+): boolean {
+  const known = teamPrefecture(t);
+  if (known) return samePrefecture(known, pref);
+  if (!ambiguousNames().has(normalizeKoshienName(t.display))) return true;
+  // ★**出場歴を持っていない学校では今までどおり**（材料が無いので落とさない）
+  if (!appearances?.size) return true;
+  return appearances.has(appearanceKey(g.year, g.season));
 }
 
 /**
@@ -141,8 +189,17 @@ export function teamPrefecture(t: KoshienGameTeam): string | undefined {
   `normalizeKoshienName` はこのファイルの下のほうにある `const OLD_KANJI` を使うので、
   **読み込み時に走らせると「初期化前に触った」で500になる**（実際になった）。
 */
-let cachedPrefectureByName: Map<string, string> | null = null;
-const prefectureByName = () => (cachedPrefectureByName ??= buildPrefectureByName());
+const prefectureByName = () => buildNameIndex().byName;
+
+/**
+ * ★★**複数の県に出てくる校名**（`城東` は高知・徳島・静岡・東東京の4つ）。
+ * **県の書かれていない試合を、この校名で結び付けてはいけない。**
+ */
+let cachedAmbiguousNames: Set<string> | null = null;
+const ambiguousNames = () => (cachedAmbiguousNames ??= buildNameIndex().ambiguous);
+
+let cachedNameIndex: { byName: Map<string, string>; ambiguous: Set<string> } | null = null;
+const buildNameIndex = () => (cachedNameIndex ??= buildPrefectureByName());
 
 const buildPrefectureByName = () => {
   const found = new Map<string, Set<string>>();
@@ -155,9 +212,13 @@ const buildPrefectureByName = () => {
       found.set(key, set);
     }
   }
-  const out = new Map<string, string>();
-  for (const [key, set] of found) if (set.size === 1) out.set(key, [...set][0]);
-  return out;
+  const byName = new Map<string, string>();
+  const ambiguous = new Set<string>();
+  for (const [key, set] of found) {
+    if (set.size === 1) byName.set(key, [...set][0]);
+    else ambiguous.add(key);
+  }
+  return { byName, ambiguous };
 };
 
 /** 北北海道・南北海道 → 北海道／東東京・西東京 → 東京 にそろえる */

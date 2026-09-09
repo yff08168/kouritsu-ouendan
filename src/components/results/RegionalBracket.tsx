@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Trophy } from "lucide-react";
 
+import { BracketScroller } from "@/components/results/BracketScroller";
 import { cn } from "@/lib/utils";
 import type { RegionalBracket as Bracket } from "@/lib/regional-bracket";
 import type { RegionalTeam } from "@/lib/regional-results";
@@ -36,8 +36,12 @@ export function RegionalBracket({
 }) {
   return (
     <div className={cn("mt-3", className)}>
-      {/* 横に広い表はこの中だけでスクロールさせる */}
-      <div className="overflow-x-auto pb-2">
+      {/*
+        横に広い表はこの中だけでスクロールさせる。
+        ★**上にもスクロールバーを出す**（`BracketScroller`。表が縦に長く、
+        下端のバーが画面の何倍も下にあるため）。
+      */}
+      <BracketScroller>
         <div className="flex min-w-max gap-3">
           {bracket.rounds.map((round) => (
             <section
@@ -58,12 +62,7 @@ export function RegionalBracket({
                     className="rounded border border-line bg-white p-1.5"
                   >
                     {g.seats.map((seat, i) => (
-                      <TeamRow
-                        key={i}
-                        team={seat.team}
-                        /* ★シード（前の回戦に出ていない）は印を出す */
-                        seeded={seat.from === null && round.round !== "1回戦"}
-                      />
+                      <TeamRow key={i} team={seat.team} />
                     ))}
                   </li>
                 ))}
@@ -71,7 +70,7 @@ export function RegionalBracket({
             </section>
           ))}
         </div>
-      </div>
+      </BracketScroller>
 
       <p className="mt-2 text-xs leading-relaxed text-ink-faint">
         ※ 勝った学校を
@@ -79,16 +78,16 @@ export function RegionalBracket({
         で示しています。
         <strong className="font-medium text-accent-800">オレンジ</strong>
         は公立高校です。
+        {/* ★**「シ」の説明は 2026-09-09 に消した**（印そのものを外したため） */}
         <br />※ この表は{bracket.total}試合から組み直したものです。
         <strong className="font-medium">私立を含む全試合</strong>
         で組んでいます（枝が切れると勝ち上がりが追えないため）。
-        「シ」はその回戦から登場した学校です。
       </p>
     </div>
   );
 }
 
-function TeamRow({ team, seeded }: { team: RegionalTeam; seeded: boolean }) {
+function TeamRow({ team }: { team: RegionalTeam }) {
   const name = (
     <span
       className={cn(
@@ -104,14 +103,10 @@ function TeamRow({ team, seeded }: { team: RegionalTeam; seeded: boolean }) {
 
   return (
     <div className="flex items-baseline gap-1.5 text-xs leading-snug">
-      {seeded && (
-        <span
-          aria-label="この回戦から登場"
-          className="flex-none rounded-sm bg-navy-100 px-1 text-[0.5625rem] font-bold text-navy-700"
-        >
-          シ
-        </span>
-      )}
+      {/*
+        ★**シードの印も 2026-09-09 に外した**（運営者の指示）。
+        **前の回戦に出ていないことは、左の列が空いていることで表が示している。**
+      */}
       {/* 公立は学校ページへ。私立は当サイトに個別ページが無い */}
       {team.slug ? (
         <Link
@@ -131,13 +126,11 @@ function TeamRow({ team, seeded }: { team: RegionalTeam; seeded: boolean }) {
       >
         {team.score}
       </span>
-      {team.won && (
-        <Trophy
-          size={10}
-          aria-hidden="true"
-          className="flex-none text-accent-500"
-        />
-      )}
+      {/*
+        ★**トロフィーは 2026-09-09 に外した**（運営者の指示）。
+        **勝った側は太字とスコアで分かる**ので、印を足すと
+        **1試合につき2つ並んで表が読みにくくなる**（1回戦だけで56個出ていた）。
+      */}
     </div>
   );
 }

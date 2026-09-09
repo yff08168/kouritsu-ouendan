@@ -12,7 +12,6 @@ import { TournamentLinks } from "@/components/results/TournamentLinks";
 import { LeadText } from "@/components/common/LeadText";
 
 import { PREFECTURES } from "@/lib/constants";
-import { getPrefectureBySlug } from "@/lib/queries/prefectures";
 import { getRegionalDistrict, seasonLabel } from "@/lib/regional-results";
 import { buildRegionalBracket } from "@/lib/regional-bracket";
 import {
@@ -163,11 +162,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function TournamentPage({ params }: Props) {
   const { slug, tournament } = await params;
-  const [prefecture, district] = await Promise.all([
-    getPrefectureBySlug(slug),
-    getRegionalDistrict(slug),
-  ]);
-  if (!prefecture || !district) notFound();
+  /*
+    ★★★**このページから Supabase を外した**（2026-09-09。**本番が500になっていた**）。
+
+    **`getPrefectureBySlug` から使っていたのは `name` だけ**で、
+    **同じ文字列が生成物の `district.district` にある**（`PREFECTURES` の `name` と一致。
+    北北海道・東東京のような地区も同じ）。
+    ★★**中身は生成物だけで描けるページなのに、名前ひとつのために Supabase に
+    ぶら下がっていた** —— `throwIfError` が投げるので、
+    **Supabase が止まるとこのページごと「A server error occurred」になる。**
+    実際に転送量の上限で止められたとき、**キャッシュのあるページは無事なのに、
+    作り直しの走ったページだけが落ちた。**
+  */
+  const district = await getRegionalDistrict(slug);
+  if (!district) notFound();
+  const prefecture = { name: district.district };
 
   const entry = findTournament(district, tournament);
   if (!entry) notFound();

@@ -8,7 +8,6 @@ import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { GameScoreboard } from "@/components/results/GameScoreboard";
 
-import { getPrefectureBySlug } from "@/lib/queries/prefectures";
 import {
   formatRegionalDate,
   getRegionalDistrict,
@@ -88,11 +87,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function RegionalGamePage({ params }: Props) {
   const { slug, key } = await params;
-  const [found, prefecture] = await Promise.all([
-    load(slug, key),
-    getPrefectureBySlug(slug),
-  ]);
-  if (!found || !prefecture) notFound();
+  /*
+    ★★★**このページから Supabase を外した**（2026-09-09。**本番が500になっていた**）。
+
+    **`getPrefectureBySlug` の戻り値はどこにも使っていなかった** ——
+    `notFound()` の判定に足していただけで、**地区が実在するかは `load` がすでに見ている**
+    （生成物に無い県なら `null` を返す）。**パンくずに出しているのも `district.district`。**
+
+    ★★**それなのに、Supabase が落ちるとこのページだけ落ちていた** ——
+    `throwIfError` が投げるので、**画面いっぱいの「A server error occurred」**になる。
+    実際に Supabase が転送量の上限で止められたとき、
+    **キャッシュのあるページは無事なのに、毎回作り直すこのページだけが500**になった。
+    ★**中身は生成物だけで描けるのだから、飾りの問い合わせのために落ちてはいけない。**
+    ★**毎回叩かなくなるぶん、転送量も減る**（`force-dynamic` にしてあるため）。
+  */
+  const found = await load(slug, key);
+  if (!found) notFound();
 
   const { district, game, tournament } = found;
   const name = tournament.displayName ?? seasonLabel(game.season);

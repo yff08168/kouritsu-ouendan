@@ -5,6 +5,7 @@ import {
   toImageRef,
   toPrefectureRef,
 } from "@/lib/queries/shared";
+import { bulkLoader, fetchAllRows, EDITORIAL_TTL_MS } from "@/lib/queries/bulk";
 import { PREFECTURE_BY_SLUG, type NewsCategory } from "@/lib/constants";
 import type { NewsDetailRow, NewsRow } from "@/types/database";
 import type { NewsDetail, NewsSummary } from "@/types/app";
@@ -172,23 +173,50 @@ export async function getRelatedNews(
  * 中間テーブルのRLSは「親のニュースと学校が両方公開済み」を要求するので、
  * 下書き記事がここから漏れることはない。
  */
+/*
+  ★★**学校ページ1枚ごとに問い合わせない**（2026-09-10。`bulk.ts` を読むこと）。
+  **3,500枚が1枚ずつ聞いていた。** まとめて1回読んで学校ごとに配る。
+
+  ★**`!inner` の絞り込みを外すと、記事にひも付く学校が全部returnされる**ので、
+  それをそのまま学校ごとのまとめに使える。
+  ★**1つの記事が複数の学校にひも付く**ので、記事は学校ごとに何度も現れてよい。
+*/
+type NewsWithSchools = NewsRow & { news_schools: { school_id: string }[] | null };
+
+const loadNewsBySchool = bulkLoader("news-by-school", EDITORIAL_TTL_MS, async () => {
+  const supabase = createSupabaseServerClient();
+  const rows = await fetchAllRows<NewsWithSchools>("関連ニュースの取得", (from, to) =>
+    supabase
+      .from("news")
+      .select(`${NEWS_SUMMARY_SELECT}, news_schools!inner ( school_id )`)
+      // ★**並びを一意に決めてから取る**（ページの境目で抜けないように）
+      .order("id", { ascending: true })
+      .range(from, to),
+  );
+
+  const out = new Map<string, NewsWithSchools[]>();
+  for (const row of rows) {
+    // ★**公開日の無い記事は出さない**（今までどおり）
+    if (row.published_at === null) continue;
+    for (const link of row.news_schools ?? []) {
+      const list = out.get(link.school_id);
+      if (list) list.push(row);
+      else out.set(link.school_id, [row]);
+    }
+  }
+  // ★**新しい順**（取り出したあとに手元で並べる）
+  for (const list of out.values()) {
+    list.sort((a, b) => String(b.published_at).localeCompare(String(a.published_at)));
+  }
+  return out;
+});
+
 export async function getNewsBySchool(
   schoolId: string,
   limit = 6,
 ): Promise<NewsSummary[]> {
-  const supabase = createSupabaseServerClient();
-
-  const { data, error } = await supabase
-    .from("news")
-    .select(`${NEWS_SUMMARY_SELECT}, news_schools!inner ( school_id )`)
-    .eq("news_schools.school_id", schoolId)
-    .order("published_at", { ascending: false })
-    .limit(limit);
-
-  throwIfError(error, "関連ニュースの取得");
-
-  const rows = (data ?? []) as unknown as NewsRow[];
-  return rows.filter((row) => row.published_at !== null).map(toNewsSummary);
+  const rows = ((await loadNewsBySchool()).get(schoolId) ?? []).slice(0, limit);
+  return rows.map(toNewsSummary);
 }
 
 /**

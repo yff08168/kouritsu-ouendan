@@ -1,5 +1,6 @@
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { throwIfError, toImageRef, toPrefectureRef } from "@/lib/queries/shared";
+import { bulkLoader, fetchAllRows, EDITORIAL_TTL_MS } from "@/lib/queries/bulk";
 import { PREFECTURE_BY_SLUG } from "@/lib/constants";
 import type { PhenomenonDetailRow, PhenomenonRow } from "@/types/database";
 import type {
@@ -149,29 +150,64 @@ export async function getAllPhenomenonSlugs(): Promise<string[]> {
  * !inner + eq で中間テーブルを絞ると、埋め込みで返る phenomenon_schools も
  * その学校の行だけになる。結果として schoolName はその学校の名前になる。
  */
-export async function getPhenomenaBySchool(
-  schoolId: string,
-  limit = 6,
-): Promise<PhenomenonSummary[]> {
-  const supabase = createSupabaseServerClient();
+/*
+  ★★**学校ページ1枚ごとに問い合わせない**（2026-09-10。`bulk.ts` を読むこと）。
+  **3,500枚が1枚ずつ聞いていたが、公立旋風は全部で数十件**しかない。
 
-  const { data, error } = await supabase
-    .from("phenomena")
-    .select(
-      `
+  ★★★**絞り込みを外すと `phenomenon_schools` の中身が変わる** ——
+  `.eq()` を付けていたときは**その学校の行だけ**が入っていたが、
+  外すと**その旋風にひも付く全校**が入る。
+  ★**`toPhenomenonSummary` は中の学校名を使う**ので、
+  **絞り込みの有無で画面が変わらないよう、渡す前に学校ごとの行だけに削る。**
+*/
+type PhenomenonWithSchools = PhenomenonRow & {
+  phenomenon_schools: { role: string; school_id: string; schools: { name: string } | null }[] | null;
+};
+
+const loadPhenomenaBySchool = bulkLoader(
+  "phenomena-by-school",
+  EDITORIAL_TTL_MS,
+  async () => {
+    const supabase = createSupabaseServerClient();
+    const rows = await fetchAllRows<PhenomenonWithSchools>(
+      "関連する公立旋風の取得",
+      (from, to) =>
+        supabase
+          .from("phenomena")
+          .select(
+            `
       id, slug, title, year, season, level, badge,
       image_url, image_credit, image_source_url,
       prefecture:prefectures ( name, slug ),
       phenomenon_schools!inner ( role, school_id, schools ( name ) )
     `,
-    )
-    .eq("phenomenon_schools.school_id", schoolId)
-    .order("year", { ascending: false })
-    .limit(limit);
+          )
+          // ★**並びを一意に決めてから取る**（ページの境目で抜けないように）
+          .order("id", { ascending: true })
+          .range(from, to),
+    );
 
-  throwIfError(error, "関連する公立旋風の取得");
+    const out = new Map<string, PhenomenonWithSchools[]>();
+    for (const row of rows) {
+      for (const link of row.phenomenon_schools ?? []) {
+        // ★**その学校の行だけを持たせる**（絞り込みがあったときと同じ形にする）
+        const one = { ...row, phenomenon_schools: [link] };
+        const list = out.get(link.school_id);
+        if (list) list.push(one);
+        else out.set(link.school_id, [one]);
+      }
+    }
+    for (const list of out.values()) list.sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+    return out;
+  },
+);
 
-  return ((data ?? []) as unknown as PhenomenonRow[]).map(toPhenomenonSummary);
+export async function getPhenomenaBySchool(
+  schoolId: string,
+  limit = 6,
+): Promise<PhenomenonSummary[]> {
+  const rows = ((await loadPhenomenaBySchool()).get(schoolId) ?? []).slice(0, limit);
+  return rows.map((row) => toPhenomenonSummary(row as unknown as PhenomenonRow));
 }
 
 /** ある都道府県の公立旋風 */

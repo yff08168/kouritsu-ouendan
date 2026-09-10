@@ -1,5 +1,6 @@
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { throwIfError, toPrefectureRef } from "@/lib/queries/shared";
+import { bulkLoader, fetchAllRows, EDITORIAL_TTL_MS } from "@/lib/queries/bulk";
 import { PREFECTURE_BY_SLUG } from "@/lib/constants";
 import type { CheerMessageRow, PollRow } from "@/types/database";
 import type { CheerMessage, Poll } from "@/types/app";
@@ -92,6 +93,45 @@ export async function getActivePolls(prefectureSlug?: string): Promise<Poll[]> {
  * `prefecture_id` は投稿時にDBのトリガが学校から引いて入れているので、
  * 県で絞るのに学校を経由した結合は要らない。
  */
+/*
+  ★★**学校ページ1枚ごとに問い合わせない**（2026-09-10。`bulk.ts` を読むこと）。
+  **3,500枚が1枚ずつ聞いていた。** 承認済みのものだけが返る表で、件数は多くない。
+
+  ★★**憶えておく時間は短く**（`EDITORIAL_TTL_MS`）——
+  **承認したらすぐ画面に出したい**もの。**1回のビルドをまたげれば十分**なので、
+  短くしても問い合わせの回数はほとんど変わらない。
+  ★**RLS はそのまま効く**（承認済みの行しか返らない。絞り込みを手元に移しただけ）。
+*/
+type CheerRow = CheerMessageRow & {
+  school_id: string | null;
+  prefecture_id: number | null;
+};
+
+const loadCheerMessages = bulkLoader("cheer-messages", EDITORIAL_TTL_MS, async () => {
+  const supabase = createSupabaseServerClient();
+  const rows = await fetchAllRows<CheerRow>("応援メッセージの取得", (from, to) =>
+    supabase
+      .from("cheer_messages")
+      .select(
+        `id, body, display_name, published_at, school_id, prefecture_id,
+       schools ( slug, name ),
+       prefecture:prefectures ( name, slug )`,
+      )
+      // ★**並びを一意に決めてから取る**（ページの境目で抜けないように）
+      .order("id", { ascending: true })
+      .range(from, to),
+  );
+  /*
+    ★**新しい順。公開日の無いものは後ろ**（`nullsFirst: false` と同じ並び）。
+  */
+  return rows.sort((a, b) => {
+    if (a.published_at === b.published_at) return 0;
+    if (a.published_at === null) return 1;
+    if (b.published_at === null) return -1;
+    return String(b.published_at).localeCompare(String(a.published_at));
+  });
+});
+
 export async function getCheerMessages(
   options: {
     schoolId?: string;
@@ -99,33 +139,19 @@ export async function getCheerMessages(
     limit?: number;
   } = {},
 ): Promise<CheerMessage[]> {
-  const supabase = createSupabaseServerClient();
-
-  let query = supabase
-    .from("cheer_messages")
-    .select(
-      `id, body, display_name, published_at,
-       schools ( slug, name ),
-       prefecture:prefectures ( name, slug )`,
-    )
-    .order("published_at", { ascending: false, nullsFirst: false })
-    .limit(options.limit ?? 20);
-
-  if (options.schoolId) {
-    query = query.eq("school_id", options.schoolId);
-  }
-
+  let prefectureId: number | null = null;
   if (options.prefectureSlug) {
-    // 設問と同じ理由で、埋め込み側ではなく親のカラムで絞る
     const prefecture = PREFECTURE_BY_SLUG.get(options.prefectureSlug);
     if (!prefecture) return [];
-    query = query.eq("prefecture_id", prefecture.id);
+    prefectureId = prefecture.id;
   }
 
-  const { data, error } = await query;
-  throwIfError(error, "応援メッセージの取得");
+  const rows = (await loadCheerMessages())
+    .filter((row) => !options.schoolId || row.school_id === options.schoolId)
+    .filter((row) => prefectureId === null || row.prefecture_id === prefectureId)
+    .slice(0, options.limit ?? 20);
 
-  return ((data ?? []) as unknown as CheerMessageRow[]).map((row) => ({
+  return rows.map((row) => ({
     id: row.id,
     body: row.body,
     displayName: row.display_name,

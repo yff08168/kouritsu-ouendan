@@ -6,6 +6,12 @@ import { normalizeKoshienName, prefectureKey } from "@/lib/koshien-games";
 import { normalizeJinguName } from "@/lib/jingu-games";
 import { shortSchoolName } from "@/lib/school-name";
 import { escapeLikePattern, throwIfError, toImageRef, toPrefectureRef } from "@/lib/queries/shared";
+import {
+  bulkLoader,
+  fetchAllRows,
+  groupBySchool,
+  MASTER_TTL_MS,
+} from "@/lib/queries/bulk";
 import { PREFECTURE_BY_SLUG } from "@/lib/constants";
 import type { Establishment, SchoolKind } from "@/lib/constants";
 import type {
@@ -106,22 +112,33 @@ const SCHOOL_DETAIL_SELECT = `
   description, website_url, founded_year, name_aliases
 `;
 
+/*
+  ★★★**学校は「slugごとに1回」ではなく、表ごとに1回読む**（2026-09-10。`bulk.ts` を読むこと）。
+  **学校ページ3,500枚が1枚ずつ問い合わせていた** —— ビルド1回で3,500回。
+  ★**まとめて読んで slug で引く**ので、ビルド1回につき4回（1,000行ずつ）で済む。
+*/
+const loadSchoolDetails = bulkLoader("school-details", MASTER_TTL_MS, async () => {
+  const supabase = createSupabaseServerClient();
+  const rows = await fetchAllRows<SchoolDetailRow>("学校情報の取得", (from, to) =>
+    supabase
+      .from("schools")
+      .select(SCHOOL_DETAIL_SELECT)
+      // ★**並びを一意に決めてから取る**（不定だとページの境目で抜ける）
+      .order("slug", { ascending: true })
+      .range(from, to),
+  );
+  const bySlug = new Map<string, SchoolDetailRow>();
+  for (const row of rows) bySlug.set(row.slug, row);
+  return bySlug;
+});
+
 /** slug から学校1件を取得する。見つからなければ null（呼び出し側で404にする）。 */
 export async function getSchoolBySlug(
   slug: string,
 ): Promise<SchoolDetail | null> {
-  const supabase = createSupabaseServerClient();
+  const row = (await loadSchoolDetails()).get(slug);
+  if (!row) return null;
 
-  const { data, error } = await supabase
-    .from("schools")
-    .select(SCHOOL_DETAIL_SELECT)
-    .eq("slug", slug)
-    .maybeSingle();
-
-  throwIfError(error, "学校情報の取得");
-  if (!data) return null;
-
-  const row = data as unknown as SchoolDetailRow;
   return {
     ...toSchoolSummary(row),
     description: row.description,
@@ -138,21 +155,43 @@ export async function getSchoolBySlug(
  * 列挙型を**定義順**で比較する。降順にすると autumn → summer → spring に
  * なるので、これで夏が春より上に来る。
  */
+/*
+  ★★**表ごとに1回読んで学校ごとにまとめる**（2026-09-10。`bulk.ts`）。
+  ★**並べ替えは取ったあとに手元でやる** —— 出てくる順は今までと同じにする。
+  **季節は列挙型で `spring < summer < autumn`** なので、**降順は 秋→夏→春**。
+  ここでも同じ順位で比べる（**そうしないと夏と春が入れ替わる**）。
+*/
+const SEASON_RANK: Record<string, number> = { spring: 0, summer: 1, autumn: 2 };
+
+const loadChampionships = bulkLoader("school-championships", MASTER_TTL_MS, async () => {
+  const supabase = createSupabaseServerClient();
+  const rows = await fetchAllRows<ChampionshipRow & { school_id: string }>(
+    "甲子園出場歴の取得",
+    (from, to) =>
+      supabase
+        .from("school_championships")
+        .select("id, school_id, year, season, result, wins, losses, note")
+        // ★**並びを一意に決めてから取る**（ページの境目で抜けないように）
+        .order("id", { ascending: true })
+        .range(from, to),
+  );
+  const grouped = groupBySchool(rows, (row) => row.school_id);
+  for (const list of grouped.values()) {
+    list.sort(
+      (a, b) =>
+        b.year - a.year ||
+        (SEASON_RANK[b.season] ?? 0) - (SEASON_RANK[a.season] ?? 0),
+    );
+  }
+  return grouped;
+});
+
 export async function getSchoolChampionships(
   schoolId: string,
 ): Promise<Championship[]> {
-  const supabase = createSupabaseServerClient();
+  const rows = (await loadChampionships()).get(schoolId) ?? [];
 
-  const { data, error } = await supabase
-    .from("school_championships")
-    .select("id, year, season, result, wins, losses, note")
-    .eq("school_id", schoolId)
-    .order("year", { ascending: false })
-    .order("season", { ascending: false });
-
-  throwIfError(error, "甲子園出場歴の取得");
-
-  return ((data ?? []) as unknown as ChampionshipRow[]).map((row) => ({
+  return rows.map((row) => ({
     id: row.id,
     year: row.year,
     season: row.season,
@@ -163,23 +202,31 @@ export async function getSchoolChampionships(
   }));
 }
 
+/* ★**表ごとに1回**（2026-09-10。`bulk.ts`）。件数の切り出しは手元でやる */
+const loadSchoolRecords = bulkLoader("school-records", MASTER_TTL_MS, async () => {
+  const supabase = createSupabaseServerClient();
+  const rows = await fetchAllRows<SchoolRecordRow & { school_id: string }>(
+    "戦績の取得",
+    (from, to) =>
+      supabase
+        .from("school_records")
+        .select("id, school_id, year, tournament_name, result, note")
+        .order("id", { ascending: true })
+        .range(from, to),
+  );
+  const grouped = groupBySchool(rows, (row) => row.school_id);
+  for (const list of grouped.values()) list.sort((a, b) => b.year - a.year);
+  return grouped;
+});
+
 /** 最近の戦績。新しい年が上。 */
 export async function getSchoolRecords(
   schoolId: string,
   limit = 12,
 ): Promise<SchoolRecord[]> {
-  const supabase = createSupabaseServerClient();
+  const rows = ((await loadSchoolRecords()).get(schoolId) ?? []).slice(0, limit);
 
-  const { data, error } = await supabase
-    .from("school_records")
-    .select("id, year, tournament_name, result, note")
-    .eq("school_id", schoolId)
-    .order("year", { ascending: false })
-    .limit(limit);
-
-  throwIfError(error, "戦績の取得");
-
-  return ((data ?? []) as unknown as SchoolRecordRow[]).map((row) => ({
+  return rows.map((row) => ({
     id: row.id,
     year: row.year,
     tournamentName: row.tournament_name,

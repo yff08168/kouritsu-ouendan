@@ -19,14 +19,14 @@ import { PREFECTURES } from "@/lib/constants";
 import { fetchLiveDistricts, liveSlugOf, type LiveDistrict } from "@/lib/live/hsb";
 
 /*
-  ★★★**キャッシュしない**（2026-09-08。速報を重ねたので）。
+  ★★★**キャッシュに載せる**（2026-09-10。**`force-dynamic` にした翌日サイトが止まった**。
+  詳しくは `/live/<県>` のコメント）。
 
-  **ページのキャッシュと取得のキャッシュを重ねると遅れが足し算になる**
-  （`/live/<県>` で実際に「盤は0-0、開くと7-0」になった。あちらのコメントを読むこと）。
-  ★**取得のキャッシュは残す**ので、出典を叩くのは60秒に1回のまま。
-  **毎回作り直すのはHTMLだけ**で、読むのは生成物と60秒以内の索引。
+  ★**ここに載せている「本日試合あり」は速報から重ねたもの**なので、
+  **多少の遅れは効かない**（その日に試合があるかどうかは分単位では変わらない）。
+  ★**取得のキャッシュ（60秒）はそのまま**なので、出典を叩く回数も変わらない。
 */
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 const SEASON = REGIONAL_PROGRESS.season;
 

@@ -31,9 +31,14 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+/* ★**Supabase が取れなくてもビルドを落とさない**（`features/[slug]` のコメントを読むこと） */
 export async function generateStaticParams() {
-  const slugs = await getAllPhenomenonSlugs();
-  return slugs.map((slug) => ({ slug }));
+  try {
+    const slugs = await getAllPhenomenonSlugs();
+    return slugs.map((slug) => ({ slug }));
+  } catch {
+    return [];
+  }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

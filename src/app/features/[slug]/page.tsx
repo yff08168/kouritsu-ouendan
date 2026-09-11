@@ -27,9 +27,23 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+/*
+  ★★★**Supabase が取れなくてもビルドを落とさない**（2026-09-11。**実害が出た**）。
+
+  **Supabase が転送量の上限で止められているあいだ、ここで `throwIfError` が投げて
+  ビルドが丸ごと失敗し続けた** —— その結果、**Vercel を止めた原因（速報ページを
+  毎回作り直す設定）を直したのに、本番へ出せなかった。**
+  ★★**特集は「あれば載せる」もの**で、**サイトの本体（試合結果）は生成物だけで描ける。**
+  **付随する読み物のDBが読めないことで、全体のデプロイを止めてはいけない。**
+  ★**取れなければ作り置きしないだけ**（見に来られたときに作る）。**ページは消えない。**
+*/
 export async function generateStaticParams() {
-  const slugs = await getAllFeatureSlugs();
-  return slugs.map((slug) => ({ slug }));
+  try {
+    const slugs = await getAllFeatureSlugs();
+    return slugs.map((slug) => ({ slug }));
+  } catch {
+    return [];
+  }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

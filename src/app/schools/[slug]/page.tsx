@@ -43,7 +43,6 @@ import { CheerMessageForm } from "@/components/community/CheerMessageForm";
 import { CheerMessageList } from "@/components/community/CheerMessageList";
 
 import {
-  getAllSchoolSlugs,
   getRelatedSchools,
   getSchoolBySlug,
   getSchoolChampionships,
@@ -67,9 +66,34 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
-export async function generateStaticParams() {
-  const slugs = await getAllSchoolSlugs();
-  return slugs.map((slug) => ({ slug }));
+/*
+  ★★★**ビルド時に3,500枚を焼かない**（2026-09-11。**Vercel がサイトを止めた**）。
+
+  ------------------------------------------------------------------
+  ★★ 何が起きたか
+
+  **Vercel の Usage が6項目で枠を超え、配信が止まった**（`DEPLOYMENT_DISABLED`）。
+  **いちばん超えていたのは Deployment Storage で 162.65GB / 10GB（16倍）。**
+  ★**これは「過去のデプロイの合計サイズ」**で、**訪問者とは無関係**
+  （Function Invocations は 461K/1M で枠内だった）。
+  ★**ISR Writes も 1.3M / 200K** —— **ビルド1回で焼いたページの数がそのまま書き込みになる。**
+
+  ★★**焼いていたのは 学校3,505枚 ＋ 大会1,699枚**。
+  **デプロイのたびにこれが保存され、書き込みも数えられていた。**
+
+  ------------------------------------------------------------------
+  ★★**「見に来られたときに作って、以後はキャッシュ」に変えた**（空の配列）。
+
+  ★**同じ作りが `/vs/<a>/<b>`（7,563組）にすでにある。** 新しい考え方ではない。
+  ★**空の配列を返すことに意味がある** —— この版の Next は
+  **`generateStaticParams` の無い動的区間を「毎回サーバーで作る」**として扱い、
+  **`revalidate` を書いても効かない**（`/live/<県>` で実測した罠）。
+  ★**検索からの見え方は変わらない**（sitemap には今までどおり全部載る）。
+  ★**引き換えは「その学校のページに初めて誰かが来たときだけ遅い」こと**だけ。
+  ★★**`getAllSchoolSlugs` は sitemap がまだ使う**ので消さないこと。
+*/
+export function generateStaticParams() {
+  return [];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

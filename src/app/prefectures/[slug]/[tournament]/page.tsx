@@ -11,7 +11,6 @@ import { RegionalGameList } from "@/components/results/RegionalGameList";
 import { TournamentLinks } from "@/components/results/TournamentLinks";
 import { LeadText } from "@/components/common/LeadText";
 
-import { PREFECTURES } from "@/lib/constants";
 import { getRegionalDistrict, seasonLabel } from "@/lib/regional-results";
 import { buildRegionalBracket } from "@/lib/regional-bracket";
 import {
@@ -52,23 +51,21 @@ type Props = {
   params: Promise<{ slug: string; tournament: string }>;
 };
 
-/**
- * ★**全県ぶんの大会を静的に作る。**
- * 実測150大会ほどで、学校ページ（3,500件）に比べれば小さい。
- *
- * ★**`getRegionalDistrict` は県ごとの動的 import**なので、
- * ここで全県を読んでも1つのページに全国ぶんが入ることはない。
- */
-export async function generateStaticParams() {
-  const out: { slug: string; tournament: string }[] = [];
-  for (const p of PREFECTURES) {
-    const district = await getRegionalDistrict(p.slug);
-    if (!district) continue;
-    for (const t of listTournaments(district)) {
-      out.push({ slug: p.slug, tournament: t.slug });
-    }
-  }
-  return out;
+/*
+  ~~★全県ぶんの大会を静的に作る（実測150大会ほど）~~
+  → ★**実測は1,699大会あった。2026-09-11 にやめた**（下）。
+*/
+/*
+  ★★★**ビルド時に1,699大会ぶんを焼かない**（2026-09-11。**Vercel がサイトを止めた**。
+  詳しくは `src/app/schools/[slug]/page.tsx` のコメント）。
+
+  **Deployment Storage が 162.65GB / 10GB（16倍）**になり配信が止まった。
+  **焼いていたのは 学校3,505枚 ＋ ここ1,699枚**で、**デプロイのたびに保存されていた。**
+  ★**空の配列を返すことに意味がある**（無いと毎回サーバーで作る扱いになり
+  `revalidate` が効かない）。★**sitemap には今までどおり全部載るので検索の見え方は変わらない。**
+*/
+export function generateStaticParams() {
+  return [];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

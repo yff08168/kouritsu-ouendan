@@ -3360,10 +3360,10 @@
           "slug": "yonagohigashi"
         },
         {
-          "display": "倉吉西・倉吉農業境港総合技術",
+          "display": "倉吉西・倉吉農業・境港総合技術",
           "score": 2,
           "won": false,
-          "name": "倉吉西・倉吉農業境港総合技術",
+          "name": "倉吉西・倉吉農業・境港総合技術",
           "slug": null,
           "combined": true
         }
@@ -10972,6 +10972,65 @@
           "won": false,
           "name": "米子松蔭",
           "slug": null
+        }
+      ]
+    }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季中国地区高校野球 鳥取県大会",
+      "round": "1回戦",
+      "venue": "どらやきドラマチックパーク米子市民球場",
+      "teams": [
+        {
+          "display": "米子松蔭",
+          "name": "米子松蔭",
+          "slug": null
+        },
+        {
+          "display": "倉吉総合産業",
+          "name": "倉吉総合産業高校",
+          "slug": "kurayoshisogosangyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季中国地区高校野球 鳥取県大会",
+      "round": "1回戦",
+      "venue": "どらやきドラマチックパーク米子市民球場",
+      "teams": [
+        {
+          "display": "米子西",
+          "name": "米子西高校",
+          "slug": "yonagonishi"
+        },
+        {
+          "display": "岩美",
+          "name": "岩美高校",
+          "slug": "iwami"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季中国地区高校野球 鳥取県大会",
+      "round": "1回戦",
+      "venue": "どらやきドラマチックパーク米子市民球場",
+      "teams": [
+        {
+          "display": "倉吉東",
+          "name": "倉吉東高校",
+          "slug": "kurayoshihigashi"
+        },
+        {
+          "display": "米子高専",
+          "name": "米子工業高専",
+          "slug": "yonagokogyo-kosen"
         }
       ]
     }

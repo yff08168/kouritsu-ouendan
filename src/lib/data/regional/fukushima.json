@@ -4843,11 +4843,12 @@
       "venue": "あいづ球場",
       "teams": [
         {
-          "display": "磐城農いわき商業情報",
+          "display": "磐城農・いわき商業情報",
           "score": 1,
           "won": false,
-          "name": "磐城農いわき商業情報",
-          "slug": null
+          "name": "磐城農・いわき商業情報",
+          "slug": null,
+          "combined": true
         },
         {
           "display": "会津工",
@@ -23312,6 +23313,312 @@
           "won": true,
           "name": "聖光学院",
           "slug": null
+        }
+      ]
+    }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "ヨークいわきスタジアム",
+      "teams": [
+        {
+          "display": "東日大昌平",
+          "name": "東日大昌平",
+          "slug": null
+        },
+        {
+          "display": "田村",
+          "name": "田村高校",
+          "slug": "tamura"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "県営あづま球場",
+      "teams": [
+        {
+          "display": "福島成蹊",
+          "name": "福島成蹊",
+          "slug": null
+        },
+        {
+          "display": "南会津",
+          "name": "南会津高校",
+          "slug": "minamiaizu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "日大東北",
+          "name": "日大東北",
+          "slug": null
+        },
+        {
+          "display": "福島東",
+          "name": "福島東高校",
+          "slug": "fukushimahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "修明",
+          "name": "修明高校",
+          "slug": "shumei"
+        },
+        {
+          "display": "只見",
+          "name": "只見高校",
+          "slug": "tadami"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "学法石川",
+          "name": "学法石川",
+          "slug": null
+        },
+        {
+          "display": "福島商業",
+          "name": "福島商業高校",
+          "slug": "fukushima-fukushimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "県営あづま球場",
+      "teams": [
+        {
+          "display": "学法福島",
+          "name": "学法福島",
+          "slug": null
+        },
+        {
+          "display": "いわき総合",
+          "name": "いわき総合高校",
+          "slug": "iwakisogo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "県営あづま球場",
+      "teams": [
+        {
+          "display": "聖光学院",
+          "name": "聖光学院",
+          "slug": null
+        },
+        {
+          "display": "小高産業技術",
+          "name": "小高産業技術高校",
+          "slug": "odakasangyogijutsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "須賀川桐陽",
+          "name": "須賀川桐陽高校",
+          "slug": "sukagawatoyo"
+        },
+        {
+          "display": "会津学鳳",
+          "name": "会津学鳳高校",
+          "slug": "aizugakuho"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "ヨークいわきスタジアム",
+      "teams": [
+        {
+          "display": "ふたば未来",
+          "name": "ふたば未来学園高校",
+          "slug": "futabamiraigakuen"
+        },
+        {
+          "display": "平工業",
+          "name": "平工業高校",
+          "slug": "tairakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "ヨークいわきスタジアム",
+      "teams": [
+        {
+          "display": "安積黎明",
+          "name": "安積黎明高校",
+          "slug": "asakareimei"
+        },
+        {
+          "display": "いわき湯本",
+          "name": "いわき湯本高校",
+          "slug": "iwakiyumoto"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "須賀川創英館",
+          "name": "須賀川創英館高校",
+          "slug": "sukagawasoeikan"
+        },
+        {
+          "display": "若松商業",
+          "name": "若松商業高校",
+          "slug": "wakamatsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "郡山北工業",
+          "name": "郡山北工業高校",
+          "slug": "koriyamakitakogyo"
+        },
+        {
+          "display": "福島工",
+          "name": "福島工業高校",
+          "slug": "fukushimakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "県営あづま球場",
+      "teams": [
+        {
+          "display": "会津北嶺",
+          "name": "会津北嶺",
+          "slug": null
+        },
+        {
+          "display": "勿来工",
+          "name": "勿来工業高校",
+          "slug": "nakosokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "ヨーク開成山スタジアム",
+      "teams": [
+        {
+          "display": "安積",
+          "name": "安積高校",
+          "slug": "asaka"
+        },
+        {
+          "display": "福島",
+          "name": "福島高校",
+          "slug": "fukushima"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "ヨークいわきスタジアム",
+      "teams": [
+        {
+          "display": "磐城",
+          "name": "磐城高校",
+          "slug": "iwaki"
+        },
+        {
+          "display": "郡山商",
+          "name": "郡山商業高校",
+          "slug": "koriyamashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高等学校野球 福島県大会",
+      "round": "1回戦",
+      "venue": "白河グリーンスタジアム",
+      "teams": [
+        {
+          "display": "光南",
+          "name": "光南高校",
+          "slug": "fukushima-konan"
+        },
+        {
+          "display": "白河実業",
+          "name": "白河実業高校",
+          "slug": "shirakawajitsugyo"
         }
       ]
     }

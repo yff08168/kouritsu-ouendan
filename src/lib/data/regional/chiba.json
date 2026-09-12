@@ -8874,10 +8874,10 @@
           "slug": "kotehashi"
         },
         {
-          "display": "四街道北・旭農業銚子・成田西陵・八街",
+          "display": "四街道北・旭農業・銚子・成田西陵・八街",
           "score": 7,
           "won": false,
-          "name": "四街道北・旭農業銚子・成田西陵・八街",
+          "name": "四街道北・旭農業・銚子・成田西陵・八街",
           "slug": null,
           "combined": true
         }
@@ -9014,10 +9014,10 @@
           "slug": "keiyo"
         },
         {
-          "display": "鎌ヶ谷西・松戸国際沼南・沼南高柳",
+          "display": "鎌ヶ谷西・松戸国際・沼南・沼南高柳・流山おおたかの森・流山北",
           "score": 1,
           "won": false,
-          "name": "鎌ヶ谷西・松戸国際沼南・沼南高柳",
+          "name": "鎌ヶ谷西・松戸国際・沼南・沼南高柳・流山おおたかの森・流山北",
           "slug": null,
           "combined": true
         }
@@ -10918,10 +10918,10 @@
       "venue": "ＡＤＥＫＡ袖ケ浦球場",
       "teams": [
         {
-          "display": "泉・生浜・市原市原緑・君津青葉",
+          "display": "泉・生浜・市原・市原緑・君津青葉",
           "score": 0,
           "won": false,
-          "name": "泉・生浜・市原市原緑・君津青葉",
+          "name": "泉・生浜・市原・市原緑・君津青葉",
           "slug": null,
           "combined": true
         },
@@ -11080,11 +11080,12 @@
       "venue": "ゼットエーボールパーク",
       "teams": [
         {
-          "display": "稲毛稲毛国際中等教育",
+          "display": "稲毛・稲毛国際中等教育",
           "score": 13,
           "won": true,
-          "name": "稲毛稲毛国際中等教育",
-          "slug": null
+          "name": "稲毛・稲毛国際中等教育",
+          "slug": null,
+          "combined": true
         },
         {
           "display": "行徳",
@@ -11133,10 +11134,10 @@
           "slug": null
         },
         {
-          "display": "光英VERITAS",
+          "display": "光英ＶＥＲＩＴＡＳ",
           "score": 2,
           "won": false,
-          "name": "光英VERITAS",
+          "name": "光英ＶＥＲＩＴＡＳ",
           "slug": null
         }
       ]
@@ -11571,11 +11572,12 @@
           "slug": null
         },
         {
-          "display": "稲毛稲毛国際中等教育",
+          "display": "稲毛・稲毛国際中等教育",
           "score": 0,
           "won": false,
-          "name": "稲毛稲毛国際中等教育",
-          "slug": null
+          "name": "稲毛・稲毛国際中等教育",
+          "slug": null,
+          "combined": true
         }
       ]
     },
@@ -50798,6 +50800,293 @@
           "won": true,
           "name": "千葉黎明",
           "slug": null
+        }
+      ]
+    }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "長生の森公園野球場",
+      "teams": [
+        {
+          "display": "木更津総合",
+          "name": "木更津総合",
+          "slug": null
+        },
+        {
+          "display": "津田沼",
+          "name": "津田沼高校",
+          "slug": "tsudanuma"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "千葉県総合ＳＣ野球場",
+      "teams": [
+        {
+          "display": "千葉学芸",
+          "name": "千葉学芸",
+          "slug": null
+        },
+        {
+          "display": "市川",
+          "name": "市川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "鴨川令徳",
+          "name": "鴨川令徳",
+          "slug": null
+        },
+        {
+          "display": "松戸馬橋",
+          "name": "松戸馬橋高校",
+          "slug": "matsudomabashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "鎌ヶ谷",
+          "name": "鎌ヶ谷高校",
+          "slug": "kamagaya"
+        },
+        {
+          "display": "袖ケ浦",
+          "name": "袖ヶ浦高校",
+          "slug": "sodegaura"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "多古",
+          "name": "多古高校",
+          "slug": "tako"
+        },
+        {
+          "display": "市川工業",
+          "name": "市川工業高校",
+          "slug": "ichikawakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "ぴーちゃんフィールド大谷津野球場",
+      "teams": [
+        {
+          "display": "桜林",
+          "name": "桜林",
+          "slug": null
+        },
+        {
+          "display": "東京学館",
+          "name": "東京学館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "我孫子",
+          "name": "我孫子高校",
+          "slug": "abiko"
+        },
+        {
+          "display": "流経大柏",
+          "name": "流経大柏",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "柏の葉公園野球場",
+      "teams": [
+        {
+          "display": "習志野",
+          "name": "習志野高校",
+          "slug": "narashino"
+        },
+        {
+          "display": "千葉英和",
+          "name": "千葉英和",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "ゼットエーボールパーク",
+      "teams": [
+        {
+          "display": "長狭",
+          "name": "長狭高校",
+          "slug": "nagasa"
+        },
+        {
+          "display": "千葉北",
+          "name": "千葉北高校",
+          "slug": "chibakita"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "長生の森公園野球場",
+      "teams": [
+        {
+          "display": "千葉明徳",
+          "name": "千葉明徳",
+          "slug": null
+        },
+        {
+          "display": "成田北",
+          "name": "成田北高校",
+          "slug": "naritakita"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "千葉県総合ＳＣ野球場",
+      "teams": [
+        {
+          "display": "千葉経済大附",
+          "name": "千葉経済大附",
+          "slug": null
+        },
+        {
+          "display": "拓殖大紅陵",
+          "name": "拓殖大紅陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "ぴーちゃんフィールド大谷津野球場",
+      "teams": [
+        {
+          "display": "四街道",
+          "name": "四街道高校",
+          "slug": "yotsukaido"
+        },
+        {
+          "display": "成田",
+          "name": "成田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "船橋市民球場",
+      "teams": [
+        {
+          "display": "暁星国際",
+          "name": "暁星国際",
+          "slug": null
+        },
+        {
+          "display": "千葉日大一",
+          "name": "千葉日大一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "ぴーちゃんフィールド大谷津野球場",
+      "teams": [
+        {
+          "display": "匝瑳",
+          "name": "匝瑳高校",
+          "slug": "sosa"
+        },
+        {
+          "display": "千葉敬愛",
+          "name": "千葉敬愛",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 千葉県大会",
+      "round": "1回戦",
+      "venue": "長生の森公園野球場",
+      "teams": [
+        {
+          "display": "志学館",
+          "name": "志学館",
+          "slug": null
+        },
+        {
+          "display": "八千代",
+          "name": "八千代高校",
+          "slug": "chiba-yachiyo"
         }
       ]
     }

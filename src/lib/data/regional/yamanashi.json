@@ -26035,6 +26035,267 @@
       ]
     },
     {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "日大明誠",
+          "score": 3,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "name": "日大明誠",
+          "slug": null
+        },
+        {
+          "display": "身延",
+          "score": 4,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "name": "身延高校",
+          "slug": "minobu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "山梨",
+          "score": 1,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "name": "山梨高校",
+          "slug": "yamanashi"
+        },
+        {
+          "display": "甲府東",
+          "score": 2,
+          "won": true,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "name": "甲府東高校",
+          "slug": "kofuhigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "河･塩･上",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "河･塩･上",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "都留興譲館",
+          "score": 12,
+          "won": true,
+          "innings": [
+            9,
+            0,
+            0,
+            3
+          ],
+          "name": "都留興譲館高校",
+          "slug": "tsurukojokan"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "駿台甲府",
+          "score": 3,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "name": "駿台甲府",
+          "slug": null
+        },
+        {
+          "display": "富士学苑",
+          "score": 9,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            7,
+            2,
+            0
+          ],
+          "name": "富士学苑",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "日川",
+          "score": 3,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "name": "日川高校",
+          "slug": "hikawa"
+        },
+        {
+          "display": "甲府城西",
+          "score": 9,
+          "won": true,
+          "innings": [
+            1,
+            0,
+            2,
+            0,
+            2,
+            4,
+            0,
+            0
+          ],
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高校野球山梨県大会",
+      "round": null,
+      "venue": "富士北麓球場",
+      "teams": [
+        {
+          "display": "甲府工業",
+          "score": 12,
+          "won": true,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            4,
+            6
+          ],
+          "name": "甲府工業高校",
+          "slug": "kofukogyo"
+        },
+        {
+          "display": "笛吹",
+          "score": 1,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "笛吹高校",
+          "slug": "fuefuki"
+        }
+      ]
+    },
+    {
       "date": "2026-09-08",
       "season": "autumn",
       "tournament": "第79回秋季関東地区高校野球山梨県大会",
@@ -26044,7 +26305,7 @@
         {
           "display": "甲府工業",
           "score": 2,
-          "won": false,
+          "won": true,
           "innings": [
             1,
             0,
@@ -26059,8 +26320,17 @@
         },
         {
           "display": "笛吹",
-          "score": 10,
-          "won": true,
+          "score": 1,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
           "name": "笛吹高校",
           "slug": "fuefuki"
         }
@@ -26215,6 +26485,16 @@
           "display": "青洲",
           "score": 9,
           "won": true,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            4,
+            2
+          ],
           "name": "青洲高校",
           "slug": "seishu"
         }
@@ -40501,82 +40781,6 @@
           "display": "韮崎工業",
           "name": "韮崎工業高校",
           "slug": "nirasakikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和8年秋季関東地区高校野球 山梨県大会",
-      "round": "1回戦",
-      "venue": "小瀬スポーツ公園山日ＹＢＳ球場",
-      "teams": [
-        {
-          "display": "山梨",
-          "name": "山梨高校",
-          "slug": "yamanashi"
-        },
-        {
-          "display": "甲府東",
-          "name": "甲府東高校",
-          "slug": "kofuhigashi"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和8年秋季関東地区高校野球 山梨県大会",
-      "round": "1回戦",
-      "venue": "冨士北麓公園野球場",
-      "teams": [
-        {
-          "display": "富士学苑",
-          "name": "富士学苑",
-          "slug": null
-        },
-        {
-          "display": "駿台甲府",
-          "name": "駿台甲府",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和8年秋季関東地区高校野球 山梨県大会",
-      "round": "1回戦",
-      "venue": "冨士北麓公園野球場",
-      "teams": [
-        {
-          "display": "甲府城西",
-          "name": "甲府城西高校",
-          "slug": "kofujosei"
-        },
-        {
-          "display": "日川",
-          "name": "日川高校",
-          "slug": "hikawa"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和8年秋季関東地区高校野球 山梨県大会",
-      "round": "1回戦",
-      "venue": "小瀬スポーツ公園山日ＹＢＳ球場",
-      "teams": [
-        {
-          "display": "身延",
-          "name": "身延高校",
-          "slug": "minobu"
-        },
-        {
-          "display": "日大明誠",
-          "name": "日大明誠",
-          "slug": null
         }
       ]
     },

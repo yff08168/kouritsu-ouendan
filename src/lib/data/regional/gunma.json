@@ -43248,6 +43248,168 @@
       }
     },
     {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "明和県央",
+          "score": 10,
+          "won": true,
+          "name": "明和県央",
+          "slug": null
+        },
+        {
+          "display": "高崎北",
+          "score": 0,
+          "won": false,
+          "name": "高崎北高校",
+          "slug": "takasakikita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "伊勢崎工",
+          "score": 4,
+          "won": true,
+          "name": "伊勢崎工業高校",
+          "slug": "isesakikogyo"
+        },
+        {
+          "display": "新田暁",
+          "score": 1,
+          "won": false,
+          "name": "新田暁高校",
+          "slug": "nittaakatsuki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "グレースイン前橋市民球場",
+      "teams": [
+        {
+          "display": "東農大二",
+          "score": 7,
+          "won": true,
+          "name": "東農大二",
+          "slug": null
+        },
+        {
+          "display": "伊勢崎清明",
+          "score": 0,
+          "won": false,
+          "name": "伊勢崎清明高校",
+          "slug": "isesakiseimei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "グレースイン前橋市民球場",
+      "teams": [
+        {
+          "display": "前橋工",
+          "score": 7,
+          "won": true,
+          "name": "前橋工業高校",
+          "slug": "maebashikogyo"
+        },
+        {
+          "display": "商大附",
+          "score": 1,
+          "won": false,
+          "name": "商大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "オリエントスタジアムぬまた",
+      "teams": [
+        {
+          "display": "桐生第一",
+          "score": 11,
+          "won": true,
+          "name": "桐生第一",
+          "slug": null
+        },
+        {
+          "display": "高経大附",
+          "score": 1,
+          "won": false,
+          "name": "高経大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "オリエントスタジアムぬまた",
+      "teams": [
+        {
+          "display": "桐生清桜",
+          "score": 4,
+          "won": true,
+          "name": "桐生清桜高校",
+          "slug": "kiryuseio"
+        },
+        {
+          "display": "前橋南",
+          "score": 1,
+          "won": false,
+          "name": "前橋南高校",
+          "slug": "maebashiminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-06",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
@@ -43593,6 +43755,114 @@
           "won": false,
           "name": "高崎商業高校",
           "slug": "takasakishogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "前橋育英",
+          "score": 10,
+          "won": true,
+          "name": "前橋育英",
+          "slug": null
+        },
+        {
+          "display": "桐生",
+          "score": 0,
+          "won": false,
+          "name": "桐生高校",
+          "slug": "kiryu"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "桐生市商",
+          "score": 6,
+          "won": true,
+          "name": "桐生市立商業高校",
+          "slug": "kiryushiritsushogyo"
+        },
+        {
+          "display": "高崎東",
+          "score": 5,
+          "won": false,
+          "name": "高崎東高校",
+          "slug": "takasakihigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "高崎市城南球場",
+      "teams": [
+        {
+          "display": "桐生工",
+          "score": 3,
+          "won": true,
+          "name": "桐生工業高校",
+          "slug": "kiryukogyo"
+        },
+        {
+          "display": "興陽",
+          "score": 1,
+          "won": false,
+          "name": "興陽",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "高崎市城南球場",
+      "teams": [
+        {
+          "display": "太田",
+          "score": 1,
+          "won": false,
+          "name": "太田",
+          "slug": null
+        },
+        {
+          "display": "樹徳",
+          "score": 6,
+          "won": true,
+          "name": "樹徳",
+          "slug": null
         }
       ],
       "source": {

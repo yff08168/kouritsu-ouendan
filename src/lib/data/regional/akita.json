@@ -12129,6 +12129,98 @@
       ]
     },
     {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 秋田県大会",
+      "round": "1回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "秋田南",
+          "score": 10,
+          "won": true,
+          "name": "秋田南高校",
+          "slug": "akitaminami"
+        },
+        {
+          "display": "秋田修英",
+          "score": 7,
+          "won": false,
+          "name": "秋田修英",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 秋田県大会",
+      "round": "1回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "鹿角",
+          "score": 3,
+          "won": false,
+          "name": "鹿角高校",
+          "slug": "kazuno"
+        },
+        {
+          "display": "秋田",
+          "score": 4,
+          "won": true,
+          "name": "秋田高校",
+          "slug": "akita"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "能代松陽",
+          "score": 2,
+          "won": true,
+          "name": "能代松陽高校",
+          "slug": "noshiroshoyo"
+        },
+        {
+          "display": "秋田北鷹",
+          "score": 0,
+          "won": false,
+          "name": "秋田北鷹高校",
+          "slug": "akitahokuyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "秋田工業",
+          "score": 4,
+          "won": true,
+          "name": "秋田工業高校",
+          "slug": "akitakogyo"
+        },
+        {
+          "display": "由利工業",
+          "score": 3,
+          "won": false,
+          "name": "由利工業高校",
+          "slug": "yurikogyo"
+        }
+      ]
+    },
+    {
       "date": "2025-09-14",
       "season": "autumn",
       "tournament": "2025年 秋季東北地区高等学校野球 秋田県大会",
@@ -16024,47 +16116,9 @@
   ],
   "upcoming": [
     {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季東北地区高等学校野球 秋田県大会",
-      "round": "1回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "能代松陽",
-          "name": "能代松陽高校",
-          "slug": "noshiroshoyo"
-        },
-        {
-          "display": "秋田北鷹",
-          "name": "秋田北鷹高校",
-          "slug": "akitahokuyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季東北地区高等学校野球 秋田県大会",
-      "round": "1回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "秋田工業",
-          "name": "秋田工業高校",
-          "slug": "akitakogyo"
-        },
-        {
-          "display": "由利工業",
-          "name": "由利工業高校",
-          "slug": "yurikogyo"
-        }
-      ]
-    },
-    {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季東北地区高等学校野球 秋田県大会",
+      "tournament": "令和8年秋季東北地区高等学校野球 秋田県大会",
       "round": "1回戦",
       "venue": "こまちスタジアム",
       "teams": [
@@ -16083,7 +16137,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季東北地区高等学校野球 秋田県大会",
+      "tournament": "令和8年秋季東北地区高等学校野球 秋田県大会",
       "round": "1回戦",
       "venue": "こまちスタジアム",
       "teams": [
@@ -16102,7 +16156,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季東北地区高等学校野球 秋田県大会",
+      "tournament": "令和8年秋季東北地区高等学校野球 秋田県大会",
       "round": "1回戦",
       "venue": "さきがけ八橋球場",
       "teams": [
@@ -16121,7 +16175,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季東北地区高等学校野球 秋田県大会",
+      "tournament": "令和8年秋季東北地区高等学校野球 秋田県大会",
       "round": "1回戦",
       "venue": "さきがけ八橋球場",
       "teams": [
@@ -16134,44 +16188,6 @@
           "display": "新屋",
           "name": "新屋高校",
           "slug": "araya"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季東北地区高等学校野球 秋田県大会",
-      "round": "1回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "秋田南",
-          "name": "秋田南高校",
-          "slug": "akitaminami"
-        },
-        {
-          "display": "秋田修英",
-          "name": "秋田修英",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季東北地区高等学校野球 秋田県大会",
-      "round": "1回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "鹿角",
-          "name": "鹿角高校",
-          "slug": "kazuno"
-        },
-        {
-          "display": "秋田",
-          "name": "秋田高校",
-          "slug": "akita"
         }
       ]
     }

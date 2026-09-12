@@ -30014,5 +30014,45 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高校野球 山形県大会",
+      "round": "1回戦",
+      "venue": "ヤマリョースタジアム山形",
+      "teams": [
+        {
+          "display": "惺山",
+          "name": "惺山",
+          "slug": null
+        },
+        {
+          "display": "致道館",
+          "name": "致道館高校",
+          "slug": "chidokan"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "令和 8年秋季東北地区高校野球 山形県大会",
+      "round": "1回戦",
+      "venue": "ヤマリョースタジアム山形",
+      "teams": [
+        {
+          "display": "新庄東",
+          "name": "新庄東",
+          "slug": null
+        },
+        {
+          "display": "東桜学館",
+          "name": "東桜学館高校",
+          "slug": "togakkan"
+        }
+      ]
+    }
   ]
 }

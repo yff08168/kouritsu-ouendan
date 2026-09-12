@@ -40910,6 +40910,76 @@
       ]
     },
     {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "熊本商業",
+          "score": 3,
+          "won": true,
+          "name": "熊本商業高校",
+          "slug": "kumamotoshogyo"
+        },
+        {
+          "display": "岱志",
+          "score": 1,
+          "won": false,
+          "name": "岱志高校",
+          "slug": "kumamoto-taishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "天草拓心・牛深",
+          "score": 0,
+          "won": false,
+          "name": "天草拓心・牛深",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "必由館",
+          "score": 25,
+          "won": true,
+          "name": "必由館高校",
+          "slug": "hitsuyukan"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "済々黌",
+          "score": 15,
+          "won": true,
+          "name": "済々黌高校",
+          "slug": "seiseiko"
+        },
+        {
+          "display": "玉名",
+          "score": 0,
+          "won": false,
+          "name": "玉名高校",
+          "slug": "tamana"
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球熊本大会",
@@ -60250,67 +60320,9 @@
   ],
   "upcoming": [
     {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "リブワーク藤崎台球場",
-      "teams": [
-        {
-          "display": "岱志",
-          "name": "岱志高校",
-          "slug": "kumamoto-taishi"
-        },
-        {
-          "display": "熊本商業",
-          "name": "熊本商業高校",
-          "slug": "kumamotoshogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "リブワーク藤崎台球場",
-      "teams": [
-        {
-          "display": "必由館",
-          "name": "必由館高校",
-          "slug": "hitsuyukan"
-        },
-        {
-          "display": "天草拓心・牛深",
-          "name": "天草拓心・牛深",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "リブワーク藤崎台球場",
-      "teams": [
-        {
-          "display": "玉名",
-          "name": "玉名高校",
-          "slug": "tamana"
-        },
-        {
-          "display": "済々黌",
-          "name": "済々黌高校",
-          "slug": "seiseiko"
-        }
-      ]
-    },
-    {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
       "round": "1回戦",
       "venue": "リブワーク藤崎台球場",
       "teams": [
@@ -60329,7 +60341,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
       "round": "1回戦",
       "venue": "リブワーク藤崎台球場",
       "teams": [
@@ -60348,7 +60360,7 @@
     {
       "date": "2026-09-14",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
       "round": "1回戦",
       "venue": "リブワーク藤崎台球場",
       "teams": [
@@ -60367,7 +60379,7 @@
     {
       "date": "2026-09-14",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
       "round": "1回戦",
       "venue": "リブワーク藤崎台球場",
       "teams": [
@@ -60386,7 +60398,7 @@
     {
       "date": "2026-09-14",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
       "round": "1回戦",
       "venue": "リブワーク藤崎台球場",
       "teams": [
@@ -60405,7 +60417,7 @@
     {
       "date": "2026-09-15",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
       "round": "1回戦",
       "venue": "リブワーク藤崎台球場",
       "teams": [
@@ -60424,7 +60436,7 @@
     {
       "date": "2026-09-15",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
       "round": "1回戦",
       "venue": "リブワーク藤崎台球場",
       "teams": [
@@ -60443,7 +60455,7 @@
     {
       "date": "2026-09-15",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
       "round": "1回戦",
       "venue": "リブワーク藤崎台球場",
       "teams": [
@@ -60462,7 +60474,7 @@
     {
       "date": "2026-09-16",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
       "round": "1回戦",
       "venue": "リブワーク藤崎台球場",
       "teams": [
@@ -60481,7 +60493,7 @@
     {
       "date": "2026-09-16",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
       "round": "1回戦",
       "venue": "リブワーク藤崎台球場",
       "teams": [
@@ -60500,7 +60512,7 @@
     {
       "date": "2026-09-16",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
       "round": "1回戦",
       "venue": "リブワーク藤崎台球場",
       "teams": [
@@ -60519,7 +60531,7 @@
     {
       "date": "2026-09-17",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
       "round": "1回戦",
       "venue": "リブワーク藤崎台球場",
       "teams": [
@@ -60539,7 +60551,7 @@
     {
       "date": "2026-09-17",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
       "round": "1回戦",
       "venue": "リブワーク藤崎台球場",
       "teams": [
@@ -60558,7 +60570,7 @@
     {
       "date": "2026-09-17",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
       "round": "1回戦",
       "venue": "山鹿市民球場",
       "teams": [
@@ -60577,7 +60589,7 @@
     {
       "date": "2026-09-17",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 熊本県大会",
+      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
       "round": "1回戦",
       "venue": "山鹿市民球場",
       "teams": [

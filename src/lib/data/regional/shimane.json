@@ -25132,6 +25132,305 @@
       ]
     },
     {
+      "date": "2026-09-11",
+      "season": "autumn",
+      "tournament": "2027年代秋季島根県大会",
+      "round": "1回戦",
+      "venue": "松江市営野球場",
+      "teams": [
+        {
+          "display": "邇摩",
+          "score": 7,
+          "won": true,
+          "name": "邇摩高校",
+          "slug": "nima"
+        },
+        {
+          "display": "松江商業",
+          "score": 1,
+          "won": false,
+          "name": "松江商業高校",
+          "slug": "matsueshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "season": "autumn",
+      "tournament": "2027年代秋季島根県大会",
+      "round": "2回戦",
+      "venue": "松江市営野球場",
+      "teams": [
+        {
+          "display": "開星",
+          "score": 5,
+          "won": true,
+          "name": "開星",
+          "slug": null
+        },
+        {
+          "display": "飯南",
+          "score": 3,
+          "won": false,
+          "name": "飯南高校",
+          "slug": "shimane-iinan"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "season": "autumn",
+      "tournament": "2027年代秋季島根県大会",
+      "round": "1回戦",
+      "venue": "江津市民球場",
+      "teams": [
+        {
+          "display": "出雲農林",
+          "score": 4,
+          "won": false,
+          "name": "出雲農林高校",
+          "slug": "izumonorin"
+        },
+        {
+          "display": "出雲北陵",
+          "score": 6,
+          "won": true,
+          "name": "出雲北陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "season": "autumn",
+      "tournament": "2027年代秋季島根県大会",
+      "round": "2回戦",
+      "venue": "江津市民球場",
+      "teams": [
+        {
+          "display": "情報科学",
+          "score": 11,
+          "won": true,
+          "name": "情報科学高校",
+          "slug": "johokagaku"
+        },
+        {
+          "display": "江津工業",
+          "score": 2,
+          "won": false,
+          "name": "江津工業高校",
+          "slug": "gotsukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "season": "autumn",
+      "tournament": "2027年代秋季島根県大会",
+      "round": "1回戦",
+      "venue": "浜田市野球場",
+      "teams": [
+        {
+          "display": "益田",
+          "score": 2,
+          "won": false,
+          "name": "益田高校",
+          "slug": "shimane-masuda"
+        },
+        {
+          "display": "松江東",
+          "score": 11,
+          "won": true,
+          "name": "松江東高校",
+          "slug": "matsuehigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "season": "autumn",
+      "tournament": "2027年代秋季島根県大会",
+      "round": "2回戦",
+      "venue": "浜田市野球場",
+      "teams": [
+        {
+          "display": "三刀屋",
+          "score": 4,
+          "won": false,
+          "name": "三刀屋高校",
+          "slug": "mitoya"
+        },
+        {
+          "display": "益田東",
+          "score": 6,
+          "won": true,
+          "name": "益田東",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2027年代秋季島根県大会",
+      "round": "2回戦",
+      "venue": "松江市営野球場",
+      "teams": [
+        {
+          "display": "松江高専",
+          "score": 5,
+          "won": false,
+          "name": "松江工業高専",
+          "slug": "matsuekogyo-kosen"
+        },
+        {
+          "display": "大東",
+          "score": 11,
+          "won": true,
+          "name": "大東高校",
+          "slug": "shimane-daito"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2027年代秋季島根県大会",
+      "round": "2回戦",
+      "venue": "松江市営野球場",
+      "teams": [
+        {
+          "display": "松江南",
+          "score": 5,
+          "won": true,
+          "name": "松江南高校",
+          "slug": "matsueminami"
+        },
+        {
+          "display": "平田",
+          "score": 2,
+          "won": false,
+          "name": "平田高校",
+          "slug": "hirata"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2027年代秋季島根県大会",
+      "round": "2回戦",
+      "venue": "松江市営野球場",
+      "teams": [
+        {
+          "display": "松江農林",
+          "score": 10,
+          "won": true,
+          "name": "松江農林高校",
+          "slug": "matsuenorin"
+        },
+        {
+          "display": "松江工業",
+          "score": 9,
+          "won": false,
+          "name": "松江工業高校",
+          "slug": "matsuekogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2027年代秋季島根県大会",
+      "round": "2回戦",
+      "venue": "江津市民球場",
+      "teams": [
+        {
+          "display": "松江北",
+          "score": 3,
+          "won": false,
+          "name": "松江北高校",
+          "slug": "matsuekita"
+        },
+        {
+          "display": "大田",
+          "score": 6,
+          "won": true,
+          "name": "大田高校",
+          "slug": "oda"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2027年代秋季島根県大会",
+      "round": "2回戦",
+      "venue": "江津市民球場",
+      "teams": [
+        {
+          "display": "安来",
+          "score": 3,
+          "won": true,
+          "name": "安来高校",
+          "slug": "yasugi"
+        },
+        {
+          "display": "明誠",
+          "score": 2,
+          "won": false,
+          "name": "明誠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2027年代秋季島根県大会",
+      "round": "2回戦",
+      "venue": "浜田市野球場",
+      "teams": [
+        {
+          "display": "浜田商業",
+          "score": 5,
+          "won": false,
+          "name": "浜田商業高校",
+          "slug": "hamadashogyo"
+        },
+        {
+          "display": "浜田",
+          "score": 9,
+          "won": true,
+          "name": "浜田高校",
+          "slug": "hamada"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2027年代秋季島根県大会",
+      "round": "2回戦",
+      "venue": "浜田市野球場",
+      "teams": [
+        {
+          "display": "大社",
+          "score": 4,
+          "won": true,
+          "name": "大社高校",
+          "slug": "taisha"
+        },
+        {
+          "display": "島根中央",
+          "score": 0,
+          "won": false,
+          "name": "島根中央高校",
+          "slug": "shimanechuo"
+        }
+      ]
+    },
+    {
       "date": "2025-09-12",
       "season": "autumn",
       "tournament": "2026年代秋季島根県大会",
@@ -32234,65 +32533,6 @@
           "won": false,
           "name": "石見智翠館",
           "slug": null
-        }
-      ]
-    }
-  ],
-  "upcoming": [
-    {
-      "date": "2026-09-11",
-      "season": "autumn",
-      "tournament": "令和 8年秋季中国地区高校野球 島根県大会",
-      "round": "1回戦",
-      "venue": "ＳＴＧ松江緑ボールパーク",
-      "teams": [
-        {
-          "display": "邇摩",
-          "name": "邇摩高校",
-          "slug": "nima"
-        },
-        {
-          "display": "松江商業",
-          "name": "松江商業高校",
-          "slug": "matsueshogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-11",
-      "season": "autumn",
-      "tournament": "令和 8年秋季中国地区高校野球 島根県大会",
-      "round": "1回戦",
-      "venue": "江津市民球場",
-      "teams": [
-        {
-          "display": "出雲農林",
-          "name": "出雲農林高校",
-          "slug": "izumonorin"
-        },
-        {
-          "display": "出雲北陵",
-          "name": "出雲北陵",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-11",
-      "season": "autumn",
-      "tournament": "令和 8年秋季中国地区高校野球 島根県大会",
-      "round": "1回戦",
-      "venue": "浜田市野球場",
-      "teams": [
-        {
-          "display": "益田",
-          "name": "益田高校",
-          "slug": "shimane-masuda"
-        },
-        {
-          "display": "松江東",
-          "name": "松江東高校",
-          "slug": "matsuehigashi"
         }
       ]
     }

@@ -67149,6 +67149,213 @@
       ]
     },
     {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和8年度山口県スポーツ大会高校野球競技（硬式）",
+      "round": "1回戦",
+      "venue": "オーヴィジョンスタジアム下関",
+      "teams": [
+        {
+          "display": "下関西",
+          "score": 8,
+          "won": true,
+          "name": "下関西高校",
+          "slug": "shimonosekinishi"
+        },
+        {
+          "display": "慶進",
+          "score": 5,
+          "won": false,
+          "name": "慶進",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和8年度山口県スポーツ大会高校野球競技（硬式）",
+      "round": "1回戦",
+      "venue": "オーヴィジョンスタジアム下関",
+      "teams": [
+        {
+          "display": "宇部鴻城",
+          "score": 7,
+          "won": true,
+          "name": "宇部鴻城",
+          "slug": null
+        },
+        {
+          "display": "早鞆",
+          "score": 3,
+          "won": false,
+          "name": "早鞆",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和8年度山口県スポーツ大会高校野球競技（硬式）",
+      "round": "1回戦",
+      "venue": "オーヴィジョンスタジアム下関",
+      "teams": [
+        {
+          "display": "山口",
+          "score": 16,
+          "won": true,
+          "name": "山口高校",
+          "slug": "yamaguchi"
+        },
+        {
+          "display": "宇部高専",
+          "score": 0,
+          "won": false,
+          "name": "宇部工業高専",
+          "slug": "ubekogyo-kosen"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和8年度山口県スポーツ大会高校野球競技（硬式）",
+      "round": "1回戦",
+      "venue": "ユーピーアールスタジアム",
+      "teams": [
+        {
+          "display": "萩商工",
+          "score": 5,
+          "won": true,
+          "name": "萩商工高校",
+          "slug": "hagishoko"
+        },
+        {
+          "display": "下関商",
+          "score": 1,
+          "won": false,
+          "name": "下関商業高校",
+          "slug": "shimonosekishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和8年度山口県スポーツ大会高校野球競技（硬式）",
+      "round": "1回戦",
+      "venue": "ユーピーアールスタジアム",
+      "teams": [
+        {
+          "display": "宇部フ大香川",
+          "score": 6,
+          "won": false,
+          "name": "宇部フ大香川",
+          "slug": null
+        },
+        {
+          "display": "長門",
+          "score": 9,
+          "won": true,
+          "name": "長門",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和8年度山口県スポーツ大会高校野球競技（硬式）",
+      "round": "1回戦",
+      "venue": "津田恒実メモリアルスタジアム（周南市野球場）",
+      "teams": [
+        {
+          "display": "華陵",
+          "score": 2,
+          "won": false,
+          "name": "華陵高校",
+          "slug": "karyo"
+        },
+        {
+          "display": "柳井",
+          "score": 3,
+          "won": true,
+          "name": "柳井高校",
+          "slug": "yanai"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和8年度山口県スポーツ大会高校野球競技（硬式）",
+      "round": "1回戦",
+      "venue": "津田恒実メモリアルスタジアム（周南市野球場）",
+      "teams": [
+        {
+          "display": "光",
+          "score": 11,
+          "won": true,
+          "name": "光高校",
+          "slug": "hikari"
+        },
+        {
+          "display": "防府",
+          "score": 0,
+          "won": false,
+          "name": "防府高校",
+          "slug": "hofu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和8年度山口県スポーツ大会高校野球競技（硬式）",
+      "round": "1回戦",
+      "venue": "絆スタジアム",
+      "teams": [
+        {
+          "display": "新南陽",
+          "score": 0,
+          "won": false,
+          "name": "新南陽高校",
+          "slug": "shinnanyo"
+        },
+        {
+          "display": "南陽工",
+          "score": 16,
+          "won": true,
+          "name": "南陽工業高校",
+          "slug": "nanyokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "令和8年度山口県スポーツ大会高校野球競技（硬式）",
+      "round": "1回戦",
+      "venue": "絆スタジアム",
+      "teams": [
+        {
+          "display": "大島商船",
+          "score": 3,
+          "won": false,
+          "name": "大島商船高専",
+          "slug": "oshimashosen"
+        },
+        {
+          "display": "下松",
+          "score": 10,
+          "won": true,
+          "name": "下松高校",
+          "slug": "kudamatsu"
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "令和7年度山口県スポーツ大会高校野球競技（硬式） 地区予選大会",
@@ -103813,7 +104020,7 @@
     {
       "date": "2026-09-12",
       "season": "autumn",
-      "tournament": "令和 8年山口県スポーツ大会高校野球競技予選",
+      "tournament": "令和8年山口県スポーツ大会高校野球競技予選",
       "round": "1回戦",
       "venue": "絆スタジアム",
       "teams": [
@@ -103830,28 +104037,9 @@
       ]
     },
     {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年山口県スポーツ大会高校野球競技予選",
-      "round": "1回戦",
-      "venue": "絆スタジアム",
-      "teams": [
-        {
-          "display": "下松",
-          "name": "下松高校",
-          "slug": "kudamatsu"
-        },
-        {
-          "display": "大島商船",
-          "name": "大島商船高専",
-          "slug": "oshimashosen"
-        }
-      ]
-    },
-    {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年山口県スポーツ大会高校野球競技予選",
+      "tournament": "令和8年山口県スポーツ大会高校野球競技予選",
       "round": "1回戦",
       "venue": "絆スタジアム",
       "teams": [
@@ -103870,7 +104058,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年山口県スポーツ大会高校野球競技予選",
+      "tournament": "令和8年山口県スポーツ大会高校野球競技予選",
       "round": "1回戦",
       "venue": "絆スタジアム",
       "teams": [
@@ -103887,47 +104075,9 @@
       ]
     },
     {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年山口県スポーツ大会高校野球競技予選",
-      "round": "1回戦",
-      "venue": "津田恒美メモリアルスタジアム",
-      "teams": [
-        {
-          "display": "華陵",
-          "name": "華陵高校",
-          "slug": "karyo"
-        },
-        {
-          "display": "柳井",
-          "name": "柳井高校",
-          "slug": "yanai"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年山口県スポーツ大会高校野球競技予選",
-      "round": "1回戦",
-      "venue": "津田恒美メモリアルスタジアム",
-      "teams": [
-        {
-          "display": "光",
-          "name": "光高校",
-          "slug": "hikari"
-        },
-        {
-          "display": "防府",
-          "name": "防府高校",
-          "slug": "hofu"
-        }
-      ]
-    },
-    {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年山口県スポーツ大会高校野球競技予選",
+      "tournament": "令和8年山口県スポーツ大会高校野球競技予選",
       "round": "1回戦",
       "venue": "津田恒美メモリアルスタジアム",
       "teams": [
@@ -103946,7 +104096,7 @@
     {
       "date": "2026-09-12",
       "season": "autumn",
-      "tournament": "令和 8年山口県スポーツ大会高校野球競技予選",
+      "tournament": "令和8年山口県スポーツ大会高校野球競技予選",
       "round": "1回戦",
       "venue": "ユーピーアールスタジアム",
       "teams": [
@@ -103965,7 +104115,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年山口県スポーツ大会高校野球競技予選",
+      "tournament": "令和8年山口県スポーツ大会高校野球競技予選",
       "round": "1回戦",
       "venue": "ユーピーアールスタジアム",
       "teams": [
@@ -103984,7 +104134,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年山口県スポーツ大会高校野球競技予選",
+      "tournament": "令和8年山口県スポーツ大会高校野球競技予選",
       "round": "1回戦",
       "venue": "ユーピーアールスタジアム",
       "teams": [
@@ -104001,66 +104151,9 @@
       ]
     },
     {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年山口県スポーツ大会高校野球競技予選",
-      "round": "1回戦",
-      "venue": "オーヴィジョンスタジアム下関",
-      "teams": [
-        {
-          "display": "下関西",
-          "name": "下関西高校",
-          "slug": "shimonosekinishi"
-        },
-        {
-          "display": "慶進",
-          "name": "慶進",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年山口県スポーツ大会高校野球競技予選",
-      "round": "1回戦",
-      "venue": "オーヴィジョンスタジアム下関",
-      "teams": [
-        {
-          "display": "早鞆",
-          "name": "早鞆",
-          "slug": null
-        },
-        {
-          "display": "宇部鴻城",
-          "name": "宇部鴻城",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年山口県スポーツ大会高校野球競技予選",
-      "round": "1回戦",
-      "venue": "オーヴィジョンスタジアム下関",
-      "teams": [
-        {
-          "display": "山口",
-          "name": "山口高校",
-          "slug": "yamaguchi"
-        },
-        {
-          "display": "宇部高専",
-          "name": "宇部工業高専",
-          "slug": "ubekogyo-kosen"
-        }
-      ]
-    },
-    {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年山口県スポーツ大会高校野球競技予選",
+      "tournament": "令和8年山口県スポーツ大会高校野球競技予選",
       "round": "1回戦",
       "venue": "オーヴィジョンスタジアム下関",
       "teams": [
@@ -104079,7 +104172,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年山口県スポーツ大会高校野球競技予選",
+      "tournament": "令和8年山口県スポーツ大会高校野球競技予選",
       "round": "1回戦",
       "venue": "オーヴィジョンスタジアム下関",
       "teams": [

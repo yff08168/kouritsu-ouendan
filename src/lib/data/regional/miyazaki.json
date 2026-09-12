@@ -34568,5 +34568,256 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 宮崎県大会",
+      "round": "1回戦",
+      "venue": "のべおかｗａｉｗａｉスタジアム",
+      "teams": [
+        {
+          "display": "日南",
+          "name": "日南高校",
+          "slug": "nichinan"
+        },
+        {
+          "display": "高千穂",
+          "name": "高千穂高校",
+          "slug": "takachiho"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 宮崎県大会",
+      "round": "1回戦",
+      "venue": "のべおかｗａｉｗａｉスタジアム",
+      "teams": [
+        {
+          "display": "延岡工業",
+          "name": "延岡工業高校",
+          "slug": "nobeokakogyo"
+        },
+        {
+          "display": "日章学園",
+          "name": "日章学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 宮崎県大会",
+      "round": "1回戦",
+      "venue": "久峰球場",
+      "teams": [
+        {
+          "display": "高鍋農業",
+          "name": "高鍋農業高校",
+          "slug": "takanabenogyo"
+        },
+        {
+          "display": "都城工業",
+          "name": "都城工業高校",
+          "slug": "miyakonojokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 宮崎県大会",
+      "round": "1回戦",
+      "venue": "ひいらぎ野球場",
+      "teams": [
+        {
+          "display": "小林秀峰",
+          "name": "小林秀峰高校",
+          "slug": "kobayashishuho"
+        },
+        {
+          "display": "宮崎大宮",
+          "name": "宮崎大宮高校",
+          "slug": "miyazakiomiya"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 宮崎県大会",
+      "round": "1回戦",
+      "venue": "ひなたサンマリンスタジアム宮崎",
+      "teams": [
+        {
+          "display": "宮崎日大",
+          "name": "宮崎日大",
+          "slug": null
+        },
+        {
+          "display": "延岡商業",
+          "name": "延岡商業高校",
+          "slug": "nobeokashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 宮崎県大会",
+      "round": "1回戦",
+      "venue": "のべおかｗａｉｗａｉスタジアム",
+      "teams": [
+        {
+          "display": "都城西",
+          "name": "都城西高校",
+          "slug": "miyakonojonishi"
+        },
+        {
+          "display": "都城泉ヶ丘",
+          "name": "都城泉ヶ丘高校",
+          "slug": "miyakonojoizumigaoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 宮崎県大会",
+      "round": "1回戦",
+      "venue": "ひいらぎ野球場",
+      "teams": [
+        {
+          "display": "高城・福島",
+          "name": "高城・福島",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "飯野・都城高専",
+          "name": "飯野・都城高専",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 宮崎県大会",
+      "round": "1回戦",
+      "venue": "久峰球場",
+      "teams": [
+        {
+          "display": "宮崎第一",
+          "name": "宮崎第一",
+          "slug": null
+        },
+        {
+          "display": "小林",
+          "name": "小林高校",
+          "slug": "kobayashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 宮崎県大会",
+      "round": "1回戦",
+      "venue": "ひなたサンマリンスタジアム宮崎",
+      "teams": [
+        {
+          "display": "宮崎学園",
+          "name": "宮崎学園",
+          "slug": null
+        },
+        {
+          "display": "宮崎西",
+          "name": "宮崎西高校",
+          "slug": "miyazakinishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 宮崎県大会",
+      "round": "1回戦",
+      "venue": "のべおかｗａｉｗａｉスタジアム",
+      "teams": [
+        {
+          "display": "日南振徳",
+          "name": "日南振徳高校",
+          "slug": "nichinanshintoku"
+        },
+        {
+          "display": "鵬翔",
+          "name": "鵬翔",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 宮崎県大会",
+      "round": "1回戦",
+      "venue": "ひいらぎ野球場",
+      "teams": [
+        {
+          "display": "門川",
+          "name": "門川高校",
+          "slug": "kadogawa"
+        },
+        {
+          "display": "宮崎南",
+          "name": "宮崎南高校",
+          "slug": "miyazakiminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 宮崎県大会",
+      "round": "1回戦",
+      "venue": "ひなたサンマリンスタジアム宮崎",
+      "teams": [
+        {
+          "display": "宮崎農業",
+          "name": "宮崎農業高校",
+          "slug": "miyazakinogyo"
+        },
+        {
+          "display": "宮崎海洋",
+          "name": "宮崎海洋高校",
+          "slug": "miyazakikaiyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "令和 8年秋季九州地区高校野球 宮崎県大会",
+      "round": "1回戦",
+      "venue": "ひいらぎ野球場",
+      "teams": [
+        {
+          "display": "本庄",
+          "name": "本庄高校",
+          "slug": "miyazaki-honjo"
+        },
+        {
+          "display": "延岡",
+          "name": "延岡高校",
+          "slug": "nobeoka"
+        }
+      ]
+    }
   ]
 }

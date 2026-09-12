@@ -9370,6 +9370,144 @@
       ]
     },
     {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "1回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "丹生",
+          "score": 4,
+          "won": true,
+          "name": "丹生高校",
+          "slug": "nyu"
+        },
+        {
+          "display": "羽水",
+          "score": 1,
+          "won": false,
+          "name": "羽水高校",
+          "slug": "usui"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "2回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "福井高専",
+          "score": 4,
+          "won": false,
+          "name": "福井工業高専",
+          "slug": "fukuikogyo"
+        },
+        {
+          "display": "敦賀工業",
+          "score": 5,
+          "won": true,
+          "name": "敦賀工業高校",
+          "slug": "tsurugakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "2回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "三国",
+          "score": 0,
+          "won": false,
+          "name": "三国高校",
+          "slug": "mikuni"
+        },
+        {
+          "display": "福井商業",
+          "score": 10,
+          "won": true,
+          "name": "福井商業高校",
+          "slug": "fukuishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "2回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "若狭",
+          "score": 7,
+          "won": true,
+          "name": "若狭高校",
+          "slug": "wakasa"
+        },
+        {
+          "display": "丸岡",
+          "score": 0,
+          "won": false,
+          "name": "丸岡高校",
+          "slug": "maruoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "2回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "金津",
+          "score": 8,
+          "won": true,
+          "name": "金津高校",
+          "slug": "kanazu"
+        },
+        {
+          "display": "美方",
+          "score": 2,
+          "won": false,
+          "name": "美方高校",
+          "slug": "mikata"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "2回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "啓新",
+          "score": 0,
+          "won": false,
+          "name": "啓新",
+          "slug": null
+        },
+        {
+          "display": "工大福井",
+          "score": 1,
+          "won": true,
+          "name": "工大福井",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "2025年 秋季北信越地区高校野球 福井県大会",
@@ -14296,123 +14434,9 @@
   ],
   "upcoming": [
     {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
-      "round": "1回戦",
-      "venue": "セーレン・ドリームスタジアム",
-      "teams": [
-        {
-          "display": "福井高専",
-          "name": "福井工業高専",
-          "slug": "fukuikogyo"
-        },
-        {
-          "display": "敦賀工業",
-          "name": "敦賀工業高校",
-          "slug": "tsurugakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
-      "round": "1回戦",
-      "venue": "敦賀市総合運動公園野球場",
-      "teams": [
-        {
-          "display": "三国",
-          "name": "三国高校",
-          "slug": "mikuni"
-        },
-        {
-          "display": "福井商業",
-          "name": "福井商業高校",
-          "slug": "fukuishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
-      "round": "1回戦",
-      "venue": "セーレン・ドリームスタジアム",
-      "teams": [
-        {
-          "display": "若狭",
-          "name": "若狭高校",
-          "slug": "wakasa"
-        },
-        {
-          "display": "丸岡",
-          "name": "丸岡高校",
-          "slug": "maruoka"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
-      "round": "1回戦",
-      "venue": "敦賀市総合運動公園野球場",
-      "teams": [
-        {
-          "display": "金津",
-          "name": "金津高校",
-          "slug": "kanazu"
-        },
-        {
-          "display": "美方",
-          "name": "美方高校",
-          "slug": "mikata"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
-      "round": "1回戦",
-      "venue": "セーレン・ドリームスタジアム",
-      "teams": [
-        {
-          "display": "啓新",
-          "name": "啓新",
-          "slug": null
-        },
-        {
-          "display": "工大福井",
-          "name": "工大福井",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
-      "round": "1回戦",
-      "venue": "敦賀市総合運動公園野球場",
-      "teams": [
-        {
-          "display": "丹生",
-          "name": "丹生高校",
-          "slug": "nyu"
-        },
-        {
-          "display": "羽水",
-          "name": "羽水高校",
-          "slug": "usui"
-        }
-      ]
-    },
-    {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
+      "tournament": "令和8年秋季北信越地区高校野球 福井県大会",
       "round": "1回戦",
       "venue": "セーレン・ドリームスタジアム",
       "teams": [
@@ -14432,7 +14456,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
+      "tournament": "令和8年秋季北信越地区高校野球 福井県大会",
       "round": "1回戦",
       "venue": "敦賀市総合運動公園野球場",
       "teams": [
@@ -14451,7 +14475,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
+      "tournament": "令和8年秋季北信越地区高校野球 福井県大会",
       "round": "1回戦",
       "venue": "セーレン・ドリームスタジアム",
       "teams": [
@@ -14470,7 +14494,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季北信越地区高校野球 福井県大会",
+      "tournament": "令和8年秋季北信越地区高校野球 福井県大会",
       "round": "1回戦",
       "venue": "敦賀市総合運動公園野球場",
       "teams": [

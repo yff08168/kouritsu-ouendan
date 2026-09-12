@@ -18731,6 +18731,115 @@
       }
     },
     {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 富山県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "八尾",
+          "score": 7,
+          "won": false,
+          "name": "八尾高校",
+          "slug": "yatsuo"
+        },
+        {
+          "display": "高岡工芸",
+          "score": 8,
+          "won": true,
+          "name": "高岡工芸高校",
+          "slug": "takaokakogei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://toyama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 富山県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "砺波",
+          "score": 4,
+          "won": true,
+          "name": "砺波高校",
+          "slug": "tonami"
+        },
+        {
+          "display": "富山・魚津工業",
+          "score": 1,
+          "won": false,
+          "name": "富山・魚津工業",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://toyama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 富山県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "富山いずみ",
+          "score": 4,
+          "won": false,
+          "name": "富山いずみ高校",
+          "slug": "toyamaizumi"
+        },
+        {
+          "display": "石動",
+          "score": 7,
+          "won": true,
+          "name": "石動高校",
+          "slug": "isurugi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://toyama.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 富山県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "高岡龍谷",
+          "score": 4,
+          "won": false,
+          "name": "高岡龍谷",
+          "slug": null
+        },
+        {
+          "display": "南砺福野",
+          "score": 11,
+          "won": true,
+          "name": "南砺福野高校",
+          "slug": "nantofukuno"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://toyama.hsbflash.jp/"
+      }
+    },
+    {
       "date": null,
       "season": "autumn",
       "tournament": "2025年 秋季北信越地区高校野球 富山県大会",
@@ -27851,85 +27960,6 @@
           "won": false,
           "name": "富山工業高校",
           "slug": "toyamakogyo"
-        }
-      ]
-    }
-  ],
-  "upcoming": [
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季北信越地区高校野球 富山県大会",
-      "round": "1回戦",
-      "venue": "県営富山球場",
-      "teams": [
-        {
-          "display": "富山いずみ",
-          "name": "富山いずみ高校",
-          "slug": "toyamaizumi"
-        },
-        {
-          "display": "石動",
-          "name": "石動高校",
-          "slug": "isurugi"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季北信越地区高校野球 富山県大会",
-      "round": "1回戦",
-      "venue": "黒部市宮野運動公園野球場",
-      "teams": [
-        {
-          "display": "高岡龍谷",
-          "name": "高岡龍谷",
-          "slug": null
-        },
-        {
-          "display": "南砺福野",
-          "name": "南砺福野高校",
-          "slug": "nantofukuno"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季北信越地区高校野球 富山県大会",
-      "round": "1回戦",
-      "venue": "砺波市野球場",
-      "teams": [
-        {
-          "display": "八尾",
-          "name": "八尾高校",
-          "slug": "yatsuo"
-        },
-        {
-          "display": "高岡工芸",
-          "name": "高岡工芸高校",
-          "slug": "takaokakogei"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季北信越地区高校野球 富山県大会",
-      "round": "1回戦",
-      "venue": "高岡西部総合公園野球場",
-      "teams": [
-        {
-          "display": "砺波",
-          "name": "砺波高校",
-          "slug": "tonami"
-        },
-        {
-          "display": "富山・魚津工業",
-          "name": "富山・魚津工業",
-          "slug": null,
-          "combined": true
         }
       ]
     }

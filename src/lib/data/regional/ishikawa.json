@@ -40424,7 +40424,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "1回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -40451,7 +40451,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "1回戦",
       "venue": "金沢市民野球場",
       "teams": [
@@ -40478,7 +40478,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "1回戦",
       "venue": "金沢市民野球場",
       "teams": [
@@ -40505,7 +40505,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "1回戦",
       "venue": "金沢市民野球場",
       "teams": [
@@ -40530,9 +40530,117 @@
       }
     },
     {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "遊学館",
+          "score": 2,
+          "won": false,
+          "name": "遊学館",
+          "slug": null
+        },
+        {
+          "display": "星稜",
+          "score": 3,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢商業",
+          "score": 7,
+          "won": true,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        },
+        {
+          "display": "羽咋",
+          "score": 1,
+          "won": false,
+          "name": "羽咋高校",
+          "slug": "hakui"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "末広野球場（弁慶スタジアム）",
+      "teams": [
+        {
+          "display": "羽咋工業",
+          "score": 10,
+          "won": true,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        },
+        {
+          "display": "金沢龍谷",
+          "score": 3,
+          "won": false,
+          "name": "金沢龍谷",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "七尾",
+          "score": 0,
+          "won": false,
+          "name": "七尾高校",
+          "slug": "nanao"
+        },
+        {
+          "display": "金沢",
+          "score": 7,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-06",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -40559,7 +40667,7 @@
     {
       "date": "2026-09-06",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -40586,7 +40694,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -40613,7 +40721,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -40630,6 +40738,115 @@
           "won": false,
           "name": "小松工業高校",
           "slug": "komatsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松大谷",
+          "score": 10,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        },
+        {
+          "display": "小松明峰",
+          "score": 0,
+          "won": false,
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "末広野球場（弁慶スタジアム）",
+      "teams": [
+        {
+          "display": "金沢二水",
+          "score": 2,
+          "won": true,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        },
+        {
+          "display": "飯田",
+          "score": 0,
+          "won": false,
+          "name": "飯田高校",
+          "slug": "iida"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松商業",
+          "score": 30,
+          "won": true,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        },
+        {
+          "display": "野々市明倫・松任",
+          "score": 0,
+          "won": false,
+          "name": "野々市明倫・松任",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "北陸学院",
+          "score": 9,
+          "won": true,
+          "name": "北陸学院",
+          "slug": null
+        },
+        {
+          "display": "金沢市立工業",
+          "score": 5,
+          "won": false,
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
         }
       ],
       "source": {

@@ -39833,6 +39833,169 @@
       }
     },
     {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "嘉手納町野球場",
+      "teams": [
+        {
+          "display": "久米島",
+          "score": 1,
+          "won": false,
+          "name": "久米島高校",
+          "slug": "kumejima"
+        },
+        {
+          "display": "読谷",
+          "score": 2,
+          "won": true,
+          "name": "読谷高校",
+          "slug": "yomitan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "ユニオンですからスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "豊見城",
+          "score": 10,
+          "won": true,
+          "name": "豊見城高校",
+          "slug": "tomigusuku"
+        },
+        {
+          "display": "前原",
+          "score": 6,
+          "won": false,
+          "name": "前原高校",
+          "slug": "maehara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "八重山",
+          "score": 12,
+          "won": true,
+          "name": "八重山高校",
+          "slug": "yaeyama"
+        },
+        {
+          "display": "球陽",
+          "score": 4,
+          "won": false,
+          "name": "球陽高校",
+          "slug": "kyuyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "糸満",
+          "score": 3,
+          "won": true,
+          "name": "糸満高校",
+          "slug": "itoman"
+        },
+        {
+          "display": "具志川商業",
+          "score": 0,
+          "won": false,
+          "name": "具志川商業高校",
+          "slug": "gushikawashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "ユニオンですからスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "宮古",
+          "score": 9,
+          "won": true,
+          "name": "宮古高校",
+          "slug": "okinawa-miyako"
+        },
+        {
+          "display": "沖縄水産",
+          "score": 6,
+          "won": false,
+          "name": "沖縄水産高校",
+          "slug": "okinawasuisan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "嘉手納町野球場",
+      "teams": [
+        {
+          "display": "那覇",
+          "score": 17,
+          "won": true,
+          "name": "那覇高校",
+          "slug": "naha"
+        },
+        {
+          "display": "辺土名・名護商工北部農林・本部",
+          "score": 3,
+          "won": false,
+          "name": "辺土名・名護商工北部農林・本部",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2025-09-20",
       "season": "autumn",
       "tournament": "第75回沖縄県高等学校野球秋季大会",
@@ -59133,47 +59296,9 @@
   ],
   "upcoming": [
     {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 沖縄県大会",
-      "round": "1回戦",
-      "venue": "ユニオンですからスタジアム宜野湾",
-      "teams": [
-        {
-          "display": "豊見城",
-          "name": "豊見城高校",
-          "slug": "tomigusuku"
-        },
-        {
-          "display": "前原",
-          "name": "前原高校",
-          "slug": "maehara"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 沖縄県大会",
-      "round": "1回戦",
-      "venue": "Ａｇｒｅスタジアム北谷",
-      "teams": [
-        {
-          "display": "八重山",
-          "name": "八重山高校",
-          "slug": "yaeyama"
-        },
-        {
-          "display": "球陽",
-          "name": "球陽高校",
-          "slug": "kyuyo"
-        }
-      ]
-    },
-    {
       "date": "2026-09-19",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 沖縄県大会",
+      "tournament": "令和8年秋季九州地区高校野球 沖縄県大会",
       "round": "1回戦",
       "venue": "Ａｇｒｅスタジアム北谷",
       "teams": [
@@ -59190,47 +59315,9 @@
       ]
     },
     {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 沖縄県大会",
-      "round": "1回戦",
-      "venue": "Ａｇｒｅスタジアム北谷",
-      "teams": [
-        {
-          "display": "糸満",
-          "name": "糸満高校",
-          "slug": "itoman"
-        },
-        {
-          "display": "具志川商業",
-          "name": "具志川商業高校",
-          "slug": "gushikawashogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 沖縄県大会",
-      "round": "1回戦",
-      "venue": "ユニオンですからスタジアム宜野湾",
-      "teams": [
-        {
-          "display": "宮古",
-          "name": "宮古高校",
-          "slug": "okinawa-miyako"
-        },
-        {
-          "display": "沖縄水産",
-          "name": "沖縄水産高校",
-          "slug": "okinawasuisan"
-        }
-      ]
-    },
-    {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 沖縄県大会",
+      "tournament": "令和8年秋季九州地区高校野球 沖縄県大会",
       "round": "1回戦",
       "venue": "Ａｇｒｅスタジアム北谷",
       "teams": [
@@ -59249,7 +59336,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 沖縄県大会",
+      "tournament": "令和8年秋季九州地区高校野球 沖縄県大会",
       "round": "1回戦",
       "venue": "嘉手納町野球場",
       "teams": [
@@ -59268,7 +59355,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 沖縄県大会",
+      "tournament": "令和8年秋季九州地区高校野球 沖縄県大会",
       "round": "1回戦",
       "venue": "ユニオンですからスタジアム宜野湾",
       "teams": [
@@ -59287,7 +59374,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 沖縄県大会",
+      "tournament": "令和8年秋季九州地区高校野球 沖縄県大会",
       "round": "1回戦",
       "venue": "Ａｇｒｅスタジアム北谷",
       "teams": [
@@ -59307,7 +59394,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 沖縄県大会",
+      "tournament": "令和8年秋季九州地区高校野球 沖縄県大会",
       "round": "1回戦",
       "venue": "嘉手納町野球場",
       "teams": [
@@ -59326,7 +59413,7 @@
     {
       "date": "2026-09-19",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 沖縄県大会",
+      "tournament": "令和8年秋季九州地区高校野球 沖縄県大会",
       "round": "1回戦",
       "venue": "Ａｇｒｅスタジアム北谷",
       "teams": [
@@ -59343,28 +59430,9 @@
       ]
     },
     {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 沖縄県大会",
-      "round": "1回戦",
-      "venue": "嘉手納町野球場",
-      "teams": [
-        {
-          "display": "久米島",
-          "name": "久米島高校",
-          "slug": "kumejima"
-        },
-        {
-          "display": "読谷",
-          "name": "読谷高校",
-          "slug": "yomitan"
-        }
-      ]
-    },
-    {
       "date": "2026-09-19",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 沖縄県大会",
+      "tournament": "令和8年秋季九州地区高校野球 沖縄県大会",
       "round": "1回戦",
       "venue": "嘉手納町野球場",
       "teams": [
@@ -59383,7 +59451,7 @@
     {
       "date": "2026-09-20",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 沖縄県大会",
+      "tournament": "令和8年秋季九州地区高校野球 沖縄県大会",
       "round": "1回戦",
       "venue": "Ａｇｒｅスタジアム北谷",
       "teams": [
@@ -59402,7 +59470,7 @@
     {
       "date": "2026-09-20",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 沖縄県大会",
+      "tournament": "令和8年秋季九州地区高校野球 沖縄県大会",
       "round": "1回戦",
       "venue": "Ａｇｒｅスタジアム北谷",
       "teams": [

@@ -26244,6 +26244,191 @@
       ]
     },
     {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "小山南",
+          "score": 4,
+          "won": true,
+          "name": "小山南高校",
+          "slug": "oyamaminami"
+        },
+        {
+          "display": "足利工",
+          "score": 1,
+          "won": false,
+          "name": "足利工業高校",
+          "slug": "ashikagakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "足利大附",
+          "score": 8,
+          "won": true,
+          "name": "足利大附",
+          "slug": null
+        },
+        {
+          "display": "連合",
+          "score": 1,
+          "won": false,
+          "name": "連合",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "宇短大附",
+          "score": 10,
+          "won": true,
+          "name": "宇短大附",
+          "slug": null
+        },
+        {
+          "display": "真岡",
+          "score": 3,
+          "won": false,
+          "name": "真岡高校",
+          "slug": "moka"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "宇都宮中央",
+          "score": 0,
+          "won": false,
+          "name": "宇都宮中央高校",
+          "slug": "utsunomiyachuo"
+        },
+        {
+          "display": "白鷗大足利",
+          "score": 10,
+          "won": true,
+          "name": "白鷗大足利",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "とちぎ木の花スタジアム",
+      "teams": [
+        {
+          "display": "那須清峰",
+          "score": 0,
+          "won": false,
+          "name": "那須清峰高校",
+          "slug": "nasuseiho"
+        },
+        {
+          "display": "黒磯",
+          "score": 16,
+          "won": true,
+          "name": "黒磯高校",
+          "slug": "kuroiso"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "とちぎ木の花スタジアム",
+      "teams": [
+        {
+          "display": "烏山",
+          "score": 2,
+          "won": false,
+          "name": "烏山高校",
+          "slug": "karasuyama"
+        },
+        {
+          "display": "國學院栃木",
+          "score": 10,
+          "won": true,
+          "name": "國學院栃木",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "さくら清修",
+          "score": 5,
+          "won": true,
+          "name": "さくら清修高校",
+          "slug": "sakuraseishu"
+        },
+        {
+          "display": "上三川",
+          "score": 1,
+          "won": false,
+          "name": "上三川高校",
+          "slug": "kaminokawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "幸福学園",
+          "score": 7,
+          "won": true,
+          "name": "幸福学園",
+          "slug": null
+        },
+        {
+          "display": "宇都宮南",
+          "score": 0,
+          "won": false,
+          "name": "宇都宮南高校",
+          "slug": "utsunomiyaminami"
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第78回秋季栃木県高等学校野球大会",
@@ -42849,142 +43034,9 @@
   ],
   "upcoming": [
     {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 栃木県大会",
-      "round": "1回戦",
-      "venue": "宇都宮清原球場",
-      "teams": [
-        {
-          "display": "真岡",
-          "name": "真岡高校",
-          "slug": "moka"
-        },
-        {
-          "display": "宇短大附",
-          "name": "宇短大附",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 栃木県大会",
-      "round": "1回戦",
-      "venue": "宇都宮清原球場",
-      "teams": [
-        {
-          "display": "宇都宮中央",
-          "name": "宇都宮中央高校",
-          "slug": "utsunomiyachuo"
-        },
-        {
-          "display": "白鷗大足利",
-          "name": "白鷗大足利",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 栃木県大会",
-      "round": "1回戦",
-      "venue": "エイジェックスタジアム",
-      "teams": [
-        {
-          "display": "足利工",
-          "name": "足利工業高校",
-          "slug": "ashikagakogyo"
-        },
-        {
-          "display": "小山南",
-          "name": "小山南高校",
-          "slug": "oyamaminami"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 栃木県大会",
-      "round": "1回戦",
-      "venue": "とちぎ木の花スタジアム",
-      "teams": [
-        {
-          "display": "黒磯",
-          "name": "黒磯高校",
-          "slug": "kuroiso"
-        },
-        {
-          "display": "那須清峰",
-          "name": "那須清峰高校",
-          "slug": "nasuseiho"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 栃木県大会",
-      "round": "1回戦",
-      "venue": "とちぎ木の花スタジアム",
-      "teams": [
-        {
-          "display": "烏山",
-          "name": "烏山高校",
-          "slug": "karasuyama"
-        },
-        {
-          "display": "國學院栃木",
-          "name": "國學院栃木",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 栃木県大会",
-      "round": "1回戦",
-      "venue": "真岡ハイトラ運動公園市民球場",
-      "teams": [
-        {
-          "display": "上三川",
-          "name": "上三川高校",
-          "slug": "kaminokawa"
-        },
-        {
-          "display": "さくら清修",
-          "name": "さくら清修高校",
-          "slug": "sakuraseishu"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 栃木県大会",
-      "round": "1回戦",
-      "venue": "真岡ハイトラ運動公園市民球場",
-      "teams": [
-        {
-          "display": "幸福学園",
-          "name": "幸福学園",
-          "slug": null
-        },
-        {
-          "display": "宇都宮南",
-          "name": "宇都宮南高校",
-          "slug": "utsunomiyaminami"
-        }
-      ]
-    },
-    {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 栃木県大会",
+      "tournament": "令和8年秋季関東地区高校野球 栃木県大会",
       "round": "1回戦",
       "venue": "エイジェックスタジアム",
       "teams": [
@@ -43003,7 +43055,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 栃木県大会",
+      "tournament": "令和8年秋季関東地区高校野球 栃木県大会",
       "round": "1回戦",
       "venue": "宇都宮清原球場",
       "teams": [
@@ -43022,7 +43074,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 栃木県大会",
+      "tournament": "令和8年秋季関東地区高校野球 栃木県大会",
       "round": "1回戦",
       "venue": "宇都宮清原球場",
       "teams": [
@@ -43041,7 +43093,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 栃木県大会",
+      "tournament": "令和8年秋季関東地区高校野球 栃木県大会",
       "round": "1回戦",
       "venue": "エイジェックスタジアム",
       "teams": [
@@ -43060,7 +43112,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 栃木県大会",
+      "tournament": "令和8年秋季関東地区高校野球 栃木県大会",
       "round": "1回戦",
       "venue": "真岡ハイトラ運動公園市民球場",
       "teams": [
@@ -43079,7 +43131,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 栃木県大会",
+      "tournament": "令和8年秋季関東地区高校野球 栃木県大会",
       "round": "1回戦",
       "venue": "真岡ハイトラ運動公園市民球場",
       "teams": [
@@ -43098,7 +43150,7 @@
     {
       "date": "2026-09-14",
       "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 栃木県大会",
+      "tournament": "令和8年秋季関東地区高校野球 栃木県大会",
       "round": "1回戦",
       "venue": "宇都宮清原球場",
       "teams": [
@@ -43117,7 +43169,7 @@
     {
       "date": "2026-09-14",
       "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 栃木県大会",
+      "tournament": "令和8年秋季関東地区高校野球 栃木県大会",
       "round": "1回戦",
       "venue": "エイジェックスタジアム",
       "teams": [

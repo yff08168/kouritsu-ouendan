@@ -16275,6 +16275,75 @@
       ]
     },
     {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "長崎北",
+          "score": 2,
+          "won": false,
+          "name": "長崎北高校",
+          "slug": "nagasakikita"
+        },
+        {
+          "display": "長崎南",
+          "score": 12,
+          "won": true,
+          "name": "長崎南高校",
+          "slug": "nagasakiminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "鹿町工",
+          "score": 13,
+          "won": true,
+          "name": "鹿町工業高校",
+          "slug": "shikamachikogyo"
+        },
+        {
+          "display": "五島",
+          "score": 5,
+          "won": false,
+          "name": "五島高校",
+          "slug": "goto"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "諫早農",
+          "score": 7,
+          "won": true,
+          "name": "諫早農業高校",
+          "slug": "isahayanogyo"
+        },
+        {
+          "display": "波佐見",
+          "score": 4,
+          "won": false,
+          "name": "波佐見高校",
+          "slug": "hasami"
+        }
+      ]
+    },
+    {
       "date": "2025-09-15",
       "season": "autumn",
       "tournament": "2025年 秋季九州地区高校野球 長崎県大会",
@@ -24798,9 +24867,9 @@
   ],
   "upcoming": [
     {
-      "date": "2026-09-12",
+      "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 長崎県大会",
+      "tournament": "令和8年秋季九州地区高校野球 長崎県大会",
       "round": "1回戦",
       "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
@@ -24817,9 +24886,9 @@
       ]
     },
     {
-      "date": "2026-09-12",
+      "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 長崎県大会",
+      "tournament": "令和8年秋季九州地区高校野球 長崎県大会",
       "round": "1回戦",
       "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
@@ -24836,28 +24905,9 @@
       ]
     },
     {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 長崎県大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "諫早農",
-          "name": "諫早農業高校",
-          "slug": "isahayanogyo"
-        },
-        {
-          "display": "波佐見",
-          "name": "波佐見高校",
-          "slug": "hasami"
-        }
-      ]
-    },
-    {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 長崎県大会",
+      "tournament": "令和8年秋季九州地区高校野球 長崎県大会",
       "round": "1回戦",
       "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
@@ -24876,7 +24926,7 @@
     {
       "date": "2026-09-14",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 長崎県大会",
+      "tournament": "令和8年秋季九州地区高校野球 長崎県大会",
       "round": "1回戦",
       "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
@@ -24895,7 +24945,7 @@
     {
       "date": "2026-09-14",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 長崎県大会",
+      "tournament": "令和8年秋季九州地区高校野球 長崎県大会",
       "round": "1回戦",
       "venue": "長崎県営野球場",
       "teams": [
@@ -24914,7 +24964,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 長崎県大会",
+      "tournament": "令和8年秋季九州地区高校野球 長崎県大会",
       "round": "1回戦",
       "venue": "長崎県営野球場",
       "teams": [
@@ -24933,7 +24983,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 長崎県大会",
+      "tournament": "令和8年秋季九州地区高校野球 長崎県大会",
       "round": "1回戦",
       "venue": "長崎県営野球場",
       "teams": [
@@ -24952,7 +25002,7 @@
     {
       "date": "2026-09-14",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 長崎県大会",
+      "tournament": "令和8年秋季九州地区高校野球 長崎県大会",
       "round": "1回戦",
       "venue": "たちばなしんきんフィールド・オブ・ドリームス",
       "teams": [
@@ -24971,7 +25021,7 @@
     {
       "date": "2026-09-14",
       "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 長崎県大会",
+      "tournament": "令和8年秋季九州地区高校野球 長崎県大会",
       "round": "1回戦",
       "venue": "長崎県営野球場",
       "teams": [
@@ -24984,44 +25034,6 @@
           "display": "長崎西",
           "name": "長崎西高校",
           "slug": "nagasakinishi"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 長崎県大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "長崎北",
-          "name": "長崎北高校",
-          "slug": "nagasakikita"
-        },
-        {
-          "display": "長崎南",
-          "name": "長崎南高校",
-          "slug": "nagasakiminami"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "令和 8年秋季九州地区高校野球 長崎県大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "鹿町工",
-          "name": "鹿町工業高校",
-          "slug": "shikamachikogyo"
-        },
-        {
-          "display": "五島",
-          "name": "五島高校",
-          "slug": "goto"
         }
       ]
     }

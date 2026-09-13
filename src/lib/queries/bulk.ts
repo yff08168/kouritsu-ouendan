@@ -63,13 +63,31 @@ export async function fetchAllRows<Row>(
  * ★**`unstable_cache` と二重に持つのはわざと** ——
  * あちらは Next のデータキャッシュ（**これが無いと、開かれてから作るページが
  * 丸ごとキャッシュされなくなる**）、こちらは**同じ実行の中で何度も呼ばれたとき**用。
+ *
+ * ------------------------------------------------------------------
+ * ★★★**`load` は JSON にできる値だけを返すこと**（2026-09-13。**本番で500が出た**）。
+ *
+ * **Next はデータキャッシュに `JSON.stringify` した文字列で持つ**
+ * （`next/dist/server/web/spec-extension/unstable-cache.js` の `cacheNewResult`）。
+ * ★**`Map` は `{}` になって戻ってくる** —— `(intermediate value).get is not a function`。
+ * ★★**最初の1回は取ってきた値そのものが返るので、動いてしまう。**
+ * **壊れるのは「キャッシュから読んだとき」だけ**（別のインスタンス・憶え書きの期限切れ）で、
+ * **手元で1回開いただけでは気づけない**（学校ページと対戦成績ページが一部だけ500になった）。
+ * ★**だから `load` は行の配列を返し、`Map` に組むのは `shape`（キャッシュの外）でやる。**
+ *
+ * ★★**1件が2MBを超えるとデータキャッシュに載らない**（Next が警告を出して保存をやめる。
+ * `next/dist/server/lib/incremental-cache/index.js`）。
+ * **載らないとインスタンスが替わるたびに表を丸ごと読み直す**ので、**大きい表はここに通さない**
+ * （学校本体は3,505行で2.2MBあるので、slug ごとに引いている）。
  */
-export function bulkLoader<T>(
+export function bulkLoader<Raw, T = Raw>(
   name: string,
   ttlMs: number,
-  load: () => Promise<T>,
+  load: () => Promise<Raw>,
+  shape: (raw: Raw) => T = (raw) => raw as unknown as T,
 ): () => Promise<T> {
-  const cached = unstable_cache(load, [name], {
+  // ★**鍵に "rows" を足してある** —— `{}` を書き込んだ前の版のキャッシュを読まないため
+  const cached = unstable_cache(load, [name, "rows"], {
     revalidate: Math.round(ttlMs / 1000),
     tags: [name],
   });
@@ -80,10 +98,12 @@ export function bulkLoader<T>(
       // ★**失敗を持ち越さない**（次に呼ばれたらもう一度取りに行く）
       memo = {
         at: now,
-        value: cached().catch((e) => {
-          memo = null;
-          throw e;
-        }),
+        value: cached()
+          .then(shape)
+          .catch((e) => {
+            memo = null;
+            throw e;
+          }),
       };
     }
     return memo.value;

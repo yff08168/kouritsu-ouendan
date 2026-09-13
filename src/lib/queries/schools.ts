@@ -113,30 +113,35 @@ const SCHOOL_DETAIL_SELECT = `
 `;
 
 /*
-  ★★★**学校は「slugごとに1回」ではなく、表ごとに1回読む**（2026-09-10。`bulk.ts` を読むこと）。
-  **学校ページ3,500枚が1枚ずつ問い合わせていた** —— ビルド1回で3,500回。
-  ★**まとめて読んで slug で引く**ので、ビルド1回につき4回（1,000行ずつ）で済む。
+  ★★★**学校本体は slug ごとに引く**（2026-09-13。**表ごとに読む形を取り消した**）。
+
+  **3,505行で2.2MB**あり、**Next のデータキャッシュに載る上限（1件2MB）を超える**
+  （`bulk.ts` を読むこと）。★**載らないとインスタンスが替わるたびに表を丸ごと読み直す** ——
+  **転送量の上限で止められたのと同じ形**になる。
+  ★**1件なら数百バイト**で、学校ページと対戦成績ページ（2校ぶん）が同じ鍵で当たる。
+  ★**表ごとに読む形にしたのは、ビルドで学校ページを3,500枚作っていたから。**
+  **いまは作っていない**（`generateStaticParams` が空）ので、その理由はもう無い。
 */
-const loadSchoolDetails = bulkLoader("school-details", MASTER_TTL_MS, async () => {
-  const supabase = createSupabaseServerClient();
-  const rows = await fetchAllRows<SchoolDetailRow>("学校情報の取得", (from, to) =>
-    supabase
+const loadSchoolDetail = unstable_cache(
+  async (slug: string): Promise<SchoolDetailRow | null> => {
+    const supabase = createSupabaseServerClient();
+    const { data, error } = await supabase
       .from("schools")
       .select(SCHOOL_DETAIL_SELECT)
-      // ★**並びを一意に決めてから取る**（不定だとページの境目で抜ける）
-      .order("slug", { ascending: true })
-      .range(from, to),
-  );
-  const bySlug = new Map<string, SchoolDetailRow>();
-  for (const row of rows) bySlug.set(row.slug, row);
-  return bySlug;
-});
+      .eq("slug", slug)
+      .maybeSingle();
+    throwIfError(error, "学校情報の取得");
+    return (data ?? null) as unknown as SchoolDetailRow | null;
+  },
+  ["school-detail"],
+  { revalidate: MASTER_TTL_MS / 1000, tags: ["schools"] },
+);
 
 /** slug から学校1件を取得する。見つからなければ null（呼び出し側で404にする）。 */
 export async function getSchoolBySlug(
   slug: string,
 ): Promise<SchoolDetail | null> {
-  const row = (await loadSchoolDetails()).get(slug);
+  const row = await loadSchoolDetail(slug);
   if (!row) return null;
 
   return {
@@ -163,28 +168,35 @@ export async function getSchoolBySlug(
 */
 const SEASON_RANK: Record<string, number> = { spring: 0, summer: 1, autumn: 2 };
 
-const loadChampionships = bulkLoader("school-championships", MASTER_TTL_MS, async () => {
-  const supabase = createSupabaseServerClient();
-  const rows = await fetchAllRows<ChampionshipRow & { school_id: string }>(
-    "甲子園出場歴の取得",
-    (from, to) =>
-      supabase
-        .from("school_championships")
-        .select("id, school_id, year, season, result, wins, losses, note")
-        // ★**並びを一意に決めてから取る**（ページの境目で抜けないように）
-        .order("id", { ascending: true })
-        .range(from, to),
-  );
-  const grouped = groupBySchool(rows, (row) => row.school_id);
-  for (const list of grouped.values()) {
-    list.sort(
-      (a, b) =>
-        b.year - a.year ||
-        (SEASON_RANK[b.season] ?? 0) - (SEASON_RANK[a.season] ?? 0),
+const loadChampionships = bulkLoader(
+  "school-championships",
+  MASTER_TTL_MS,
+  () => {
+    const supabase = createSupabaseServerClient();
+    return fetchAllRows<ChampionshipRow & { school_id: string }>(
+      "甲子園出場歴の取得",
+      (from, to) =>
+        supabase
+          .from("school_championships")
+          .select("id, school_id, year, season, result, wins, losses, note")
+          // ★**並びを一意に決めてから取る**（ページの境目で抜けないように）
+          .order("id", { ascending: true })
+          .range(from, to),
     );
-  }
-  return grouped;
-});
+  },
+  // ★★**Map に組むのはキャッシュの外**（`bulk.ts`。Map は JSON にすると `{}` になる）
+  (rows) => {
+    const grouped = groupBySchool(rows, (row) => row.school_id);
+    for (const list of grouped.values()) {
+      list.sort(
+        (a, b) =>
+          b.year - a.year ||
+          (SEASON_RANK[b.season] ?? 0) - (SEASON_RANK[a.season] ?? 0),
+      );
+    }
+    return grouped;
+  },
+);
 
 export async function getSchoolChampionships(
   schoolId: string,
@@ -203,21 +215,28 @@ export async function getSchoolChampionships(
 }
 
 /* ★**表ごとに1回**（2026-09-10。`bulk.ts`）。件数の切り出しは手元でやる */
-const loadSchoolRecords = bulkLoader("school-records", MASTER_TTL_MS, async () => {
-  const supabase = createSupabaseServerClient();
-  const rows = await fetchAllRows<SchoolRecordRow & { school_id: string }>(
-    "戦績の取得",
-    (from, to) =>
-      supabase
-        .from("school_records")
-        .select("id, school_id, year, tournament_name, result, note")
-        .order("id", { ascending: true })
-        .range(from, to),
-  );
-  const grouped = groupBySchool(rows, (row) => row.school_id);
-  for (const list of grouped.values()) list.sort((a, b) => b.year - a.year);
-  return grouped;
-});
+const loadSchoolRecords = bulkLoader(
+  "school-records",
+  MASTER_TTL_MS,
+  () => {
+    const supabase = createSupabaseServerClient();
+    return fetchAllRows<SchoolRecordRow & { school_id: string }>(
+      "戦績の取得",
+      (from, to) =>
+        supabase
+          .from("school_records")
+          .select("id, school_id, year, tournament_name, result, note")
+          .order("id", { ascending: true })
+          .range(from, to),
+    );
+  },
+  // ★★**Map に組むのはキャッシュの外**（`bulk.ts`）
+  (rows) => {
+    const grouped = groupBySchool(rows, (row) => row.school_id);
+    for (const list of grouped.values()) list.sort((a, b) => b.year - a.year);
+    return grouped;
+  },
+);
 
 /** 最近の戦績。新しい年が上。 */
 export async function getSchoolRecords(

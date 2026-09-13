@@ -167,9 +167,9 @@ type PhenomenonWithSchools = PhenomenonRow & {
 const loadPhenomenaBySchool = bulkLoader(
   "phenomena-by-school",
   EDITORIAL_TTL_MS,
-  async () => {
+  () => {
     const supabase = createSupabaseServerClient();
-    const rows = await fetchAllRows<PhenomenonWithSchools>(
+    return fetchAllRows<PhenomenonWithSchools>(
       "関連する公立旋風の取得",
       (from, to) =>
         supabase
@@ -186,7 +186,9 @@ const loadPhenomenaBySchool = bulkLoader(
           .order("id", { ascending: true })
           .range(from, to),
     );
-
+  },
+  // ★★**Map に組むのはキャッシュの外**（`bulk.ts`。Map は JSON にすると `{}` になる）
+  (rows) => {
     const out = new Map<string, PhenomenonWithSchools[]>();
     for (const row of rows) {
       for (const link of row.phenomenon_schools ?? []) {

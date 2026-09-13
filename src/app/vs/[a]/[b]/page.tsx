@@ -20,7 +20,7 @@ import { LeadText } from "@/components/common/LeadText";
  * 2校の直接対決（`/vs/<slugA>/<slugB>`）。
  *
  * ------------------------------------------------------------------
- * ★★ 静的生成しない（`generateStaticParams` を置かない）
+ * ★★ 静的生成しない（`generateStaticParams` は空の配列を返す）
  *
  *   公立どうしの組は**7,563組**あり、全部を静的に作ると
  *   ビルドが跳ね上がる。かといって「3回以上戦った組だけ作る」にすると、
@@ -38,6 +38,18 @@ import { LeadText } from "@/components/common/LeadText";
  *   検索エンジンから見て重複になる。**リンクは必ず `vsPath()` で作る。**
  */
 export const revalidate = 3600;
+
+/*
+  ★★★**空の `generateStaticParams` を置く**（2026-09-13。**置いていなかったので毎回作り直していた**）。
+  **この版の Next は `generateStaticParams` の無い動的区間を ISR として扱わない**
+  （`revalidate` を書いても効かない。`schools/[slug]` のコメントを読むこと）。
+  ★**本番の実測：何度開いても `Cache-Control: private, no-cache, no-store` / `X-Vercel-Cache: MISS`。**
+  **sitemap に6,528組を載せているので、クロールされるたびに1枚ずつサーバーで作っていた。**
+  ★**空の配列なら何も作り置きしない**（ビルドは太らない）まま、**開かれた組を1時間寝かせる。**
+*/
+export function generateStaticParams() {
+  return [];
+}
 
 type Props = {
   params: Promise<{ a: string; b: string }>;

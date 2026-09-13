@@ -183,33 +183,39 @@ export async function getRelatedNews(
 */
 type NewsWithSchools = NewsRow & { news_schools: { school_id: string }[] | null };
 
-const loadNewsBySchool = bulkLoader("news-by-school", EDITORIAL_TTL_MS, async () => {
-  const supabase = createSupabaseServerClient();
-  const rows = await fetchAllRows<NewsWithSchools>("関連ニュースの取得", (from, to) =>
-    supabase
-      .from("news")
-      .select(`${NEWS_SUMMARY_SELECT}, news_schools!inner ( school_id )`)
-      // ★**並びを一意に決めてから取る**（ページの境目で抜けないように）
-      .order("id", { ascending: true })
-      .range(from, to),
-  );
-
-  const out = new Map<string, NewsWithSchools[]>();
-  for (const row of rows) {
-    // ★**公開日の無い記事は出さない**（今までどおり）
-    if (row.published_at === null) continue;
-    for (const link of row.news_schools ?? []) {
-      const list = out.get(link.school_id);
-      if (list) list.push(row);
-      else out.set(link.school_id, [row]);
+const loadNewsBySchool = bulkLoader(
+  "news-by-school",
+  EDITORIAL_TTL_MS,
+  () => {
+    const supabase = createSupabaseServerClient();
+    return fetchAllRows<NewsWithSchools>("関連ニュースの取得", (from, to) =>
+      supabase
+        .from("news")
+        .select(`${NEWS_SUMMARY_SELECT}, news_schools!inner ( school_id )`)
+        // ★**並びを一意に決めてから取る**（ページの境目で抜けないように）
+        .order("id", { ascending: true })
+        .range(from, to),
+    );
+  },
+  // ★★**Map に組むのはキャッシュの外**（`bulk.ts`。Map は JSON にすると `{}` になる）
+  (rows) => {
+    const out = new Map<string, NewsWithSchools[]>();
+    for (const row of rows) {
+      // ★**公開日の無い記事は出さない**（今までどおり）
+      if (row.published_at === null) continue;
+      for (const link of row.news_schools ?? []) {
+        const list = out.get(link.school_id);
+        if (list) list.push(row);
+        else out.set(link.school_id, [row]);
+      }
     }
-  }
-  // ★**新しい順**（取り出したあとに手元で並べる）
-  for (const list of out.values()) {
-    list.sort((a, b) => String(b.published_at).localeCompare(String(a.published_at)));
-  }
-  return out;
-});
+    // ★**新しい順**（取り出したあとに手元で並べる）
+    for (const list of out.values()) {
+      list.sort((a, b) => String(b.published_at).localeCompare(String(a.published_at)));
+    }
+    return out;
+  },
+);
 
 export async function getNewsBySchool(
   schoolId: string,

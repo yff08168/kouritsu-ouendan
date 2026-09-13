@@ -26429,6 +26429,144 @@
       ]
     },
     {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "高根沢",
+          "score": 3,
+          "won": false,
+          "name": "高根沢高校",
+          "slug": "takanezawa"
+        },
+        {
+          "display": "鹿沼商工",
+          "score": 5,
+          "won": true,
+          "name": "鹿沼商工高校",
+          "slug": "kanumashoko"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "小山",
+          "score": 0,
+          "won": false,
+          "name": "小山高校",
+          "slug": "oyama"
+        },
+        {
+          "display": "那須拓陽",
+          "score": 10,
+          "won": true,
+          "name": "那須拓陽高校",
+          "slug": "nasutakuyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "栃木",
+          "score": 11,
+          "won": true,
+          "name": "栃木高校",
+          "slug": "tochigi"
+        },
+        {
+          "display": "宇都宮工",
+          "score": 2,
+          "won": false,
+          "name": "宇都宮工業高校",
+          "slug": "utsunomiyakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "茂木",
+          "score": 12,
+          "won": true,
+          "name": "茂木高校",
+          "slug": "motegi"
+        },
+        {
+          "display": "真岡工",
+          "score": 4,
+          "won": false,
+          "name": "真岡工業高校",
+          "slug": "mokakogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "宇都宮東",
+          "score": 5,
+          "won": true,
+          "name": "宇都宮東高校",
+          "slug": "utsunomiyahigashi"
+        },
+        {
+          "display": "鹿沼",
+          "score": 4,
+          "won": false,
+          "name": "鹿沼高校",
+          "slug": "kanuma"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "佐野東",
+          "score": 1,
+          "won": false,
+          "name": "佐野東高校",
+          "slug": "sanohigashi"
+        },
+        {
+          "display": "矢板中央",
+          "score": 12,
+          "won": true,
+          "name": "矢板中央",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第78回秋季栃木県高等学校野球大会",
@@ -43033,120 +43171,6 @@
     }
   ],
   "upcoming": [
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季関東地区高校野球 栃木県大会",
-      "round": "1回戦",
-      "venue": "エイジェックスタジアム",
-      "teams": [
-        {
-          "display": "鹿沼商工",
-          "name": "鹿沼商工高校",
-          "slug": "kanumashoko"
-        },
-        {
-          "display": "高根沢",
-          "name": "高根沢高校",
-          "slug": "takanezawa"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季関東地区高校野球 栃木県大会",
-      "round": "1回戦",
-      "venue": "宇都宮清原球場",
-      "teams": [
-        {
-          "display": "栃木",
-          "name": "栃木高校",
-          "slug": "tochigi"
-        },
-        {
-          "display": "宇都宮工",
-          "name": "宇都宮工業高校",
-          "slug": "utsunomiyakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季関東地区高校野球 栃木県大会",
-      "round": "1回戦",
-      "venue": "宇都宮清原球場",
-      "teams": [
-        {
-          "display": "茂木",
-          "name": "茂木高校",
-          "slug": "motegi"
-        },
-        {
-          "display": "真岡工",
-          "name": "真岡工業高校",
-          "slug": "mokakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季関東地区高校野球 栃木県大会",
-      "round": "1回戦",
-      "venue": "エイジェックスタジアム",
-      "teams": [
-        {
-          "display": "小山",
-          "name": "小山高校",
-          "slug": "oyama"
-        },
-        {
-          "display": "那須拓陽",
-          "name": "那須拓陽高校",
-          "slug": "nasutakuyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季関東地区高校野球 栃木県大会",
-      "round": "1回戦",
-      "venue": "真岡ハイトラ運動公園市民球場",
-      "teams": [
-        {
-          "display": "宇都宮東",
-          "name": "宇都宮東高校",
-          "slug": "utsunomiyahigashi"
-        },
-        {
-          "display": "鹿沼",
-          "name": "鹿沼高校",
-          "slug": "kanuma"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季関東地区高校野球 栃木県大会",
-      "round": "1回戦",
-      "venue": "真岡ハイトラ運動公園市民球場",
-      "teams": [
-        {
-          "display": "矢板中央",
-          "name": "矢板中央",
-          "slug": null
-        },
-        {
-          "display": "佐野東",
-          "name": "佐野東高校",
-          "slug": "sanohigashi"
-        }
-      ]
-    },
     {
       "date": "2026-09-14",
       "season": "autumn",

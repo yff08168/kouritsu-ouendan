@@ -16569,6 +16569,98 @@
       ]
     },
     {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "2回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "彦根総合",
+          "score": 2,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        },
+        {
+          "display": "長浜北星",
+          "score": 0,
+          "won": false,
+          "name": "長浜北星高校",
+          "slug": "nagahamahokusei"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "水口東",
+          "score": 7,
+          "won": true,
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
+        },
+        {
+          "display": "大津商業",
+          "score": 5,
+          "won": false,
+          "name": "大津商業高校",
+          "slug": "otsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "伊吹",
+          "score": 1,
+          "won": false,
+          "name": "伊吹高校",
+          "slug": "ibuki"
+        },
+        {
+          "display": "綾羽",
+          "score": 6,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "2回戦",
+      "venue": "今津スタジアム",
+      "teams": [
+        {
+          "display": "長浜北",
+          "score": 2,
+          "won": false,
+          "name": "長浜北高校",
+          "slug": "nagahamakita"
+        },
+        {
+          "display": "八幡工業",
+          "score": 12,
+          "won": true,
+          "name": "八幡工業高校",
+          "slug": "hachimankogyo"
+        }
+      ]
+    },
+    {
       "date": "2026-09-05",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
@@ -16796,6 +16888,121 @@
           "won": false,
           "name": "膳所高校",
           "slug": "zeze"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "3回戦",
+      "venue": "ＨＰＬベースボールパーク",
+      "teams": [
+        {
+          "display": "光泉カトリック",
+          "score": 4,
+          "won": true,
+          "name": "光泉カトリック",
+          "slug": null
+        },
+        {
+          "display": "彦根東",
+          "score": 1,
+          "won": false,
+          "name": "彦根東高校",
+          "slug": "hikonehigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "3回戦",
+      "venue": "ＨＰＬベースボールパーク",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 14,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "守山",
+          "score": 2,
+          "won": false,
+          "name": "守山高校",
+          "slug": "shiga-moriyama"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "水口",
+          "score": 7,
+          "won": true,
+          "name": "水口高校",
+          "slug": "minakuchi"
+        },
+        {
+          "display": "八日市",
+          "score": 0,
+          "won": false,
+          "name": "八日市高校",
+          "slug": "yokaichi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "伊香",
+          "score": 4,
+          "won": false,
+          "name": "伊香高校",
+          "slug": "ika"
+        },
+        {
+          "display": "守山北",
+          "score": 7,
+          "won": true,
+          "name": "守山北高校",
+          "slug": "moriyamakita"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "愛知",
+          "score": 0,
+          "won": false,
+          "name": "愛知高校",
+          "slug": "echi"
+        },
+        {
+          "display": "甲西",
+          "score": 25,
+          "won": true,
+          "name": "甲西高校",
+          "slug": "kosei"
         }
       ]
     },

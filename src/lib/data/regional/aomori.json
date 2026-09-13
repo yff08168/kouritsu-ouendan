@@ -15094,6 +15094,52 @@
       ]
     },
     {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "4回戦",
+      "venue": "青森県営野球場",
+      "teams": [
+        {
+          "display": "青森山田",
+          "score": 7,
+          "won": true,
+          "name": "青森山田",
+          "slug": null
+        },
+        {
+          "display": "弘前実業",
+          "score": 0,
+          "won": false,
+          "name": "弘前実業高校",
+          "slug": "hirosakijitsugyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "4回戦",
+      "venue": "青森県営野球場",
+      "teams": [
+        {
+          "display": "八工大一",
+          "score": 5,
+          "won": true,
+          "name": "八工大一",
+          "slug": null
+        },
+        {
+          "display": "聖愛",
+          "score": 4,
+          "won": false,
+          "name": "聖愛",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-09-04",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
@@ -15479,6 +15525,52 @@
         {
           "display": "八学光星",
           "score": 14,
+          "won": true,
+          "name": "八学光星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "5回戦",
+      "venue": "メイプルスタジアム（六戸町）",
+      "teams": [
+        {
+          "display": "東奥義塾",
+          "score": 2,
+          "won": true,
+          "name": "東奥義塾",
+          "slug": null
+        },
+        {
+          "display": "八戸西",
+          "score": 1,
+          "won": false,
+          "name": "八戸西高校",
+          "slug": "hachinohenishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 青森県大会",
+      "round": "5回戦",
+      "venue": "メイプルスタジアム（六戸町）",
+      "teams": [
+        {
+          "display": "弘前東",
+          "score": 0,
+          "won": false,
+          "name": "弘前東",
+          "slug": null
+        },
+        {
+          "display": "八学光星",
+          "score": 2,
           "won": true,
           "name": "八学光星",
           "slug": null

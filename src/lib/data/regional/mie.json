@@ -16517,6 +16517,75 @@
       ]
     },
     {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "名張青峰",
+          "score": 4,
+          "won": false,
+          "name": "名張青峰高校",
+          "slug": "nabariseiho"
+        },
+        {
+          "display": "津西",
+          "score": 12,
+          "won": true,
+          "name": "津西高校",
+          "slug": "tsunishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "稲生",
+          "score": 6,
+          "won": false,
+          "name": "稲生高校",
+          "slug": "ino"
+        },
+        {
+          "display": "明野",
+          "score": 12,
+          "won": true,
+          "name": "明野高校",
+          "slug": "mie-akeno"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "白子",
+          "score": 0,
+          "won": false,
+          "name": "白子高校",
+          "slug": "shiroko"
+        },
+        {
+          "display": "松阪",
+          "score": 7,
+          "won": true,
+          "name": "松阪高校",
+          "slug": "matsusaka"
+        }
+      ]
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季東海地区高等学校野球 三重県大会",
@@ -16536,6 +16605,76 @@
           "won": true,
           "name": "昴学園高校",
           "slug": "subarugakuen"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "ドリームオーシャンスタジアム",
+      "teams": [
+        {
+          "display": "三重",
+          "score": 6,
+          "won": true,
+          "name": "三重",
+          "slug": null
+        },
+        {
+          "display": "四日市商",
+          "score": 5,
+          "won": false,
+          "name": "四日市商業高校",
+          "slug": "yokkaichishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "ダイムスタジアム伊勢",
+      "teams": [
+        {
+          "display": "津工",
+          "score": 11,
+          "won": true,
+          "name": "津工業高校",
+          "slug": "tsukogyo"
+        },
+        {
+          "display": "朝明・四日市四郷石薬師・鳥羽・南伊勢",
+          "score": 1,
+          "won": false,
+          "name": "朝明・四日市四郷石薬師・鳥羽・南伊勢",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東海地区高等学校野球 三重県大会",
+      "round": "2回戦",
+      "venue": "四日市市営霞ヶ浦第一野球場",
+      "teams": [
+        {
+          "display": "川越",
+          "score": 1,
+          "won": false,
+          "name": "川越高校",
+          "slug": "mie-kawagoe"
+        },
+        {
+          "display": "久居",
+          "score": 2,
+          "won": true,
+          "name": "久居高校",
+          "slug": "hisai"
         }
       ]
     },
@@ -16859,6 +16998,29 @@
           "won": true,
           "name": "宇治山田商業高校",
           "slug": "ujiyamadashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東海地区高等学校野球 三重県大会",
+      "round": "3回戦",
+      "venue": "四日市市営霞ヶ浦第一野球場",
+      "teams": [
+        {
+          "display": "菰野",
+          "score": 9,
+          "won": true,
+          "name": "菰野高校",
+          "slug": "komono"
+        },
+        {
+          "display": "四日市工",
+          "score": 1,
+          "won": false,
+          "name": "四日市工業高校",
+          "slug": "yokkaichikogyo"
         }
       ]
     },

@@ -40980,6 +40980,76 @@
       ]
     },
     {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "熊本農業",
+          "score": 27,
+          "won": true,
+          "name": "熊本農業高校",
+          "slug": "kumamotonogyo"
+        },
+        {
+          "display": "甲佐・矢部・湧心館・ 八代農・熊本高専八代",
+          "score": 1,
+          "won": false,
+          "name": "甲佐・矢部・湧心館・ 八代農・熊本高専八代",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "熊本北",
+          "score": 0,
+          "won": false,
+          "name": "熊本北高校",
+          "slug": "kumamotokita"
+        },
+        {
+          "display": "文徳",
+          "score": 7,
+          "won": true,
+          "name": "文徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "芦北",
+          "score": 6,
+          "won": false,
+          "name": "芦北高校",
+          "slug": "ashikita"
+        },
+        {
+          "display": "球磨工業",
+          "score": 15,
+          "won": true,
+          "name": "球磨工業高校",
+          "slug": "kumakogyo"
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球熊本大会",
@@ -60319,44 +60389,6 @@
     }
   ],
   "upcoming": [
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "リブワーク藤崎台球場",
-      "teams": [
-        {
-          "display": "文徳",
-          "name": "文徳",
-          "slug": null
-        },
-        {
-          "display": "熊本北",
-          "name": "熊本北高校",
-          "slug": "kumamotokita"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "リブワーク藤崎台球場",
-      "teams": [
-        {
-          "display": "芦北",
-          "name": "芦北高校",
-          "slug": "ashikita"
-        },
-        {
-          "display": "球磨工業",
-          "name": "球磨工業高校",
-          "slug": "kumakogyo"
-        }
-      ]
-    },
     {
       "date": "2026-09-14",
       "season": "autumn",

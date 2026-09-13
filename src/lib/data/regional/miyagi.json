@@ -17704,6 +17704,144 @@
       ]
     },
     {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "佐沼",
+          "score": 2,
+          "won": false,
+          "name": "佐沼高校",
+          "slug": "sanuma"
+        },
+        {
+          "display": "ウェルネス宮城",
+          "score": 15,
+          "won": true,
+          "name": "ウェルネス宮城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "仙台第二",
+          "score": 2,
+          "won": false,
+          "name": "仙台第二高校",
+          "slug": "sendaidaini"
+        },
+        {
+          "display": "東北学院",
+          "score": 6,
+          "won": true,
+          "name": "東北学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "登米総合産業",
+          "score": 1,
+          "won": false,
+          "name": "登米総合産業高校",
+          "slug": "tomesogosangyo"
+        },
+        {
+          "display": "富谷",
+          "score": 2,
+          "won": true,
+          "name": "富谷高校",
+          "slug": "tomiya"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": "鹿島台中央野球場",
+      "teams": [
+        {
+          "display": "仙台第一",
+          "score": 4,
+          "won": true,
+          "name": "仙台第一高校",
+          "slug": "sendaidaiichi"
+        },
+        {
+          "display": "古川学園",
+          "score": 2,
+          "won": false,
+          "name": "古川学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "大崎中央",
+          "score": 9,
+          "won": true,
+          "name": "大崎中央",
+          "slug": null
+        },
+        {
+          "display": "白石工業",
+          "score": 1,
+          "won": false,
+          "name": "白石工業高校",
+          "slug": "shiroishikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "round": "1回戦",
+      "venue": "利府町中央公園野球場",
+      "teams": [
+        {
+          "display": "仙台城南",
+          "score": 3,
+          "won": true,
+          "name": "仙台城南",
+          "slug": null
+        },
+        {
+          "display": "宮城県農業",
+          "score": 1,
+          "won": false,
+          "name": "宮城県農業高校",
+          "slug": "miyagikennogyo"
+        }
+      ]
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
@@ -24449,122 +24587,6 @@
           "won": true,
           "name": "仙台育英",
           "slug": null
-        }
-      ]
-    }
-  ],
-  "upcoming": [
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": "鹿島台中央野球場",
-      "teams": [
-        {
-          "display": "佐沼",
-          "name": "佐沼高校",
-          "slug": "sanuma"
-        },
-        {
-          "display": "ウェルネス宮城",
-          "name": "ウェルネス宮城",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "仙台第二",
-          "name": "仙台第二高校",
-          "slug": "sendaidaini"
-        },
-        {
-          "display": "東北学院",
-          "name": "東北学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": "鹿島台中央野球場",
-      "teams": [
-        {
-          "display": "登米総合産業",
-          "name": "登米総合産業高校",
-          "slug": "tomesogosangyo"
-        },
-        {
-          "display": "富谷",
-          "name": "富谷高校",
-          "slug": "tomiya"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": "鹿島台中央野球場",
-      "teams": [
-        {
-          "display": "仙台第一",
-          "name": "仙台第一高校",
-          "slug": "sendaidaiichi"
-        },
-        {
-          "display": "古川学園",
-          "name": "古川学園",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "大崎中央",
-          "name": "大崎中央",
-          "slug": null
-        },
-        {
-          "display": "白石工業",
-          "name": "白石工業高校",
-          "slug": "shiroishikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季東北地区高等学校野球 宮城県大会",
-      "round": "1回戦",
-      "venue": "利府町中央公園野球場",
-      "teams": [
-        {
-          "display": "仙台城南",
-          "name": "仙台城南",
-          "slug": null
-        },
-        {
-          "display": "宮城県農業",
-          "name": "宮城県農業高校",
-          "slug": "miyagikennogyo"
         }
       ]
     }

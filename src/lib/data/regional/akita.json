@@ -12129,6 +12129,52 @@
       ]
     },
     {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 秋田県大会",
+      "round": "1回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "秋田商業",
+          "score": 9,
+          "won": true,
+          "name": "秋田商業高校",
+          "slug": "akitashogyo"
+        },
+        {
+          "display": "金足農業",
+          "score": 2,
+          "won": false,
+          "name": "金足農業高校",
+          "slug": "kanaashinogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 秋田県大会",
+      "round": "1回戦",
+      "venue": "さきがけ八橋球場",
+      "teams": [
+        {
+          "display": "明桜",
+          "score": 3,
+          "won": false,
+          "name": "明桜",
+          "slug": null
+        },
+        {
+          "display": "新屋",
+          "score": 7,
+          "won": true,
+          "name": "新屋高校",
+          "slug": "araya"
+        }
+      ]
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季東北地区高等学校野球 秋田県大会",
@@ -12217,6 +12263,52 @@
           "won": false,
           "name": "由利工業高校",
           "slug": "yurikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "湯沢翔北",
+          "score": 4,
+          "won": true,
+          "name": "湯沢翔北高校",
+          "slug": "yuzawashohoku"
+        },
+        {
+          "display": "能代",
+          "score": 3,
+          "won": false,
+          "name": "能代高校",
+          "slug": "noshiro"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 秋田県大会",
+      "round": "2回戦",
+      "venue": "こまちスタジアム",
+      "teams": [
+        {
+          "display": "横手",
+          "score": 7,
+          "won": true,
+          "name": "横手高校",
+          "slug": "yokote"
+        },
+        {
+          "display": "角館",
+          "score": 0,
+          "won": false,
+          "name": "角館高校",
+          "slug": "kakunodate"
         }
       ]
     },
@@ -16110,84 +16202,6 @@
           "won": false,
           "name": "大館桂桜高校",
           "slug": "odatekeio"
-        }
-      ]
-    }
-  ],
-  "upcoming": [
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季東北地区高等学校野球 秋田県大会",
-      "round": "1回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "湯沢翔北",
-          "name": "湯沢翔北高校",
-          "slug": "yuzawashohoku"
-        },
-        {
-          "display": "能代",
-          "name": "能代高校",
-          "slug": "noshiro"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季東北地区高等学校野球 秋田県大会",
-      "round": "1回戦",
-      "venue": "こまちスタジアム",
-      "teams": [
-        {
-          "display": "横手",
-          "name": "横手高校",
-          "slug": "yokote"
-        },
-        {
-          "display": "角館",
-          "name": "角館高校",
-          "slug": "kakunodate"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季東北地区高等学校野球 秋田県大会",
-      "round": "1回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "秋田商業",
-          "name": "秋田商業高校",
-          "slug": "akitashogyo"
-        },
-        {
-          "display": "金足農業",
-          "name": "金足農業高校",
-          "slug": "kanaashinogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季東北地区高等学校野球 秋田県大会",
-      "round": "1回戦",
-      "venue": "さきがけ八橋球場",
-      "teams": [
-        {
-          "display": "明桜",
-          "name": "明桜",
-          "slug": null
-        },
-        {
-          "display": "新屋",
-          "name": "新屋高校",
-          "slug": "araya"
         }
       ]
     }

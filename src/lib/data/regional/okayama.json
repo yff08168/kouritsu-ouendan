@@ -17724,6 +17724,88 @@
       }
     },
     {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": "代表決定戦",
+      "venue": "なりわ運動公園野球場",
+      "teams": [
+        {
+          "display": "高梁",
+          "score": 2,
+          "won": true,
+          "name": "高梁高校",
+          "slug": "takahashi"
+        },
+        {
+          "display": "玉野・笠工",
+          "score": 1,
+          "won": false,
+          "name": "玉野・笠工",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "岡山県高等学校野球連盟",
+        "url": "https://www.okayama-hbf.com/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": "代表決定戦",
+      "venue": "なりわ運動公園野球場",
+      "teams": [
+        {
+          "display": "金光",
+          "score": 1,
+          "won": false,
+          "name": "金光",
+          "slug": null
+        },
+        {
+          "display": "作陽学園",
+          "score": 7,
+          "won": true,
+          "name": "作陽学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "岡山県高等学校野球連盟",
+        "url": "https://www.okayama-hbf.com/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
+      "round": "代表決定戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "東岡工",
+          "score": 2,
+          "won": false,
+          "name": "東岡山工業高校",
+          "slug": "higashiokayamakogyo"
+        },
+        {
+          "display": "就実",
+          "score": 9,
+          "won": true,
+          "name": "就実",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "岡山県高等学校野球連盟",
+        "url": "https://www.okayama-hbf.com/"
+      }
+    },
+    {
       "date": "2025-09-20",
       "season": "autumn",
       "tournament": "2025年 秋季中国地区高校野球 岡山県大会",

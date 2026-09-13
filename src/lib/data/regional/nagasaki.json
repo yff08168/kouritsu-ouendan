@@ -16275,6 +16275,29 @@
       ]
     },
     {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "鎮西学院",
+          "score": 2,
+          "won": true,
+          "name": "鎮西学院",
+          "slug": null
+        },
+        {
+          "display": "佐世保工",
+          "score": 1,
+          "won": false,
+          "name": "佐世保工業高校",
+          "slug": "sasebokogyo"
+        }
+      ]
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
@@ -16321,6 +16344,52 @@
       ]
     },
     {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐世保実",
+          "score": 5,
+          "won": true,
+          "name": "佐世保実",
+          "slug": null
+        },
+        {
+          "display": "口加",
+          "score": 3,
+          "won": false,
+          "name": "口加高校",
+          "slug": "koka"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "島原中央",
+          "score": 13,
+          "won": true,
+          "name": "島原中央",
+          "slug": null
+        },
+        {
+          "display": "島原",
+          "score": 3,
+          "won": false,
+          "name": "島原高校",
+          "slug": "shimabara"
+        }
+      ]
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
@@ -16340,6 +16409,52 @@
           "won": false,
           "name": "波佐見高校",
           "slug": "hasami"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "西陵",
+          "score": 8,
+          "won": true,
+          "name": "西陵高校",
+          "slug": "nagasaki-seiryo"
+        },
+        {
+          "display": "長崎明誠",
+          "score": 3,
+          "won": false,
+          "name": "長崎明誠高校",
+          "slug": "nagasakimeisei"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
+      "round": "1回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "長崎南山",
+          "score": 9,
+          "won": true,
+          "name": "長崎南山",
+          "slug": null
+        },
+        {
+          "display": "長総大附",
+          "score": 1,
+          "won": false,
+          "name": "長総大附",
+          "slug": null
         }
       ]
     },
@@ -24867,63 +24982,6 @@
   ],
   "upcoming": [
     {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 長崎県大会",
-      "round": "1回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "佐世保実",
-          "name": "佐世保実",
-          "slug": null
-        },
-        {
-          "display": "口加",
-          "name": "口加高校",
-          "slug": "koka"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 長崎県大会",
-      "round": "1回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "島原中央",
-          "name": "島原中央",
-          "slug": null
-        },
-        {
-          "display": "島原",
-          "name": "島原高校",
-          "slug": "shimabara"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 長崎県大会",
-      "round": "1回戦",
-      "venue": "たちばなしんきんフィールド・オブ・ドリームス",
-      "teams": [
-        {
-          "display": "西陵",
-          "name": "西陵高校",
-          "slug": "nagasaki-seiryo"
-        },
-        {
-          "display": "長崎明誠",
-          "name": "長崎明誠高校",
-          "slug": "nagasakimeisei"
-        }
-      ]
-    },
-    {
       "date": "2026-09-14",
       "season": "autumn",
       "tournament": "令和8年秋季九州地区高校野球 長崎県大会",
@@ -24958,44 +25016,6 @@
           "display": "佐世保高専",
           "name": "佐世保工業高専",
           "slug": "sasebokogyo-kosen"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 長崎県大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "長崎南山",
-          "name": "長崎南山",
-          "slug": null
-        },
-        {
-          "display": "長総大附",
-          "name": "長総大附",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 長崎県大会",
-      "round": "1回戦",
-      "venue": "長崎県営野球場",
-      "teams": [
-        {
-          "display": "鎮西学院",
-          "name": "鎮西学院",
-          "slug": null
-        },
-        {
-          "display": "佐世保工",
-          "name": "佐世保工業高校",
-          "slug": "sasebokogyo"
         }
       ]
     },

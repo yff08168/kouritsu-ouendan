@@ -15820,6 +15820,75 @@
       ]
     },
     {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "round": "4回戦",
+      "venue": "河上薬品スタジアム（関市民球場）",
+      "teams": [
+        {
+          "display": "関商工",
+          "score": 5,
+          "won": true,
+          "name": "関商工高校",
+          "slug": "sekishoko"
+        },
+        {
+          "display": "岐阜城北",
+          "score": 1,
+          "won": false,
+          "name": "岐阜城北高校",
+          "slug": "gifujohoku"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "round": "4回戦",
+      "venue": "弘光舎レインボースタジアム（大野）",
+      "teams": [
+        {
+          "display": "中京",
+          "score": 3,
+          "won": true,
+          "name": "中京",
+          "slug": null
+        },
+        {
+          "display": "池田",
+          "score": 2,
+          "won": false,
+          "name": "池田高校",
+          "slug": "gifu-ikeda"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "round": "4回戦",
+      "venue": "大垣市北公園野球場",
+      "teams": [
+        {
+          "display": "高山西",
+          "score": 2,
+          "won": false,
+          "name": "高山西",
+          "slug": null
+        },
+        {
+          "display": "大垣西",
+          "score": 6,
+          "won": true,
+          "name": "大垣西高校",
+          "slug": "ogakinishi"
+        }
+      ]
+    },
+    {
       "date": "2026-08-29",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
@@ -16321,6 +16390,75 @@
           "display": "大垣南",
           "score": 5,
           "won": true,
+          "name": "大垣南高校",
+          "slug": "ogakiminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "round": "5回戦",
+      "venue": "河上薬品スタジアム（関市民球場）",
+      "teams": [
+        {
+          "display": "大垣日大",
+          "score": 9,
+          "won": true,
+          "name": "大垣日大",
+          "slug": null
+        },
+        {
+          "display": "岐阜各務野",
+          "score": 0,
+          "won": false,
+          "name": "岐阜各務野高校",
+          "slug": "gifukakamino"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "round": "5回戦",
+      "venue": "弘光舎レインボースタジアム（大野）",
+      "teams": [
+        {
+          "display": "県岐阜商",
+          "score": 11,
+          "won": true,
+          "name": "岐阜商業高校",
+          "slug": "gifushogyo"
+        },
+        {
+          "display": "土岐商",
+          "score": 1,
+          "won": false,
+          "name": "土岐商業高校",
+          "slug": "tokishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "round": "5回戦",
+      "venue": "大垣市北公園野球場",
+      "teams": [
+        {
+          "display": "大垣商",
+          "score": 8,
+          "won": true,
+          "name": "大垣商業高校",
+          "slug": "ogakishogyo"
+        },
+        {
+          "display": "大垣南",
+          "score": 1,
+          "won": false,
           "name": "大垣南高校",
           "slug": "ogakiminami"
         }

@@ -43302,6 +43302,60 @@
       }
     },
     {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "健大高崎",
+          "score": 4,
+          "won": true,
+          "name": "健大高崎",
+          "slug": null
+        },
+        {
+          "display": "高崎",
+          "score": 0,
+          "won": false,
+          "name": "高崎高校",
+          "slug": "takasaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "2回戦",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "館林",
+          "score": 0,
+          "won": false,
+          "name": "館林高校",
+          "slug": "tatebayashi"
+        },
+        {
+          "display": "前橋商",
+          "score": 15,
+          "won": true,
+          "name": "前橋商業高校",
+          "slug": "maebashishogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
@@ -43817,6 +43871,60 @@
       }
     },
     {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "利根商",
+          "score": 8,
+          "won": true,
+          "name": "利根商業高校",
+          "slug": "toneshogyo"
+        },
+        {
+          "display": "西邑楽",
+          "score": 0,
+          "won": false,
+          "name": "西邑楽高校",
+          "slug": "nishiora"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "市立太田",
+          "score": 0,
+          "won": false,
+          "name": "市立太田",
+          "slug": null
+        },
+        {
+          "display": "常磐",
+          "score": 3,
+          "won": true,
+          "name": "常磐",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
@@ -43863,6 +43971,61 @@
           "won": true,
           "name": "樹徳",
           "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "オリエントスタジアムぬまた",
+      "teams": [
+        {
+          "display": "前橋",
+          "score": 6,
+          "won": true,
+          "name": "前橋",
+          "slug": null
+        },
+        {
+          "display": "太田東",
+          "score": 1,
+          "won": false,
+          "name": "太田東高校",
+          "slug": "otahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "オリエントスタジアムぬまた",
+      "teams": [
+        {
+          "display": "関学大附",
+          "score": 16,
+          "won": true,
+          "name": "関学大附",
+          "slug": null
+        },
+        {
+          "display": "下仁田・藤岡工・吉井大間々",
+          "score": 4,
+          "won": false,
+          "name": "下仁田・藤岡工・吉井大間々",
+          "slug": null,
+          "combined": true
         }
       ],
       "source": {

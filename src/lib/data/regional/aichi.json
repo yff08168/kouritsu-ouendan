@@ -50582,6 +50582,195 @@
       }
     },
     {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東海地区高等学校野球 愛知県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "愛知",
+          "score": 3,
+          "won": false,
+          "name": "愛知",
+          "slug": null
+        },
+        {
+          "display": "星城",
+          "score": 6,
+          "won": true,
+          "name": "星城",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://aichi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東海地区高等学校野球 愛知県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "誠信",
+          "score": 7,
+          "won": true,
+          "name": "誠信",
+          "slug": null
+        },
+        {
+          "display": "岡崎工科",
+          "score": 0,
+          "won": false,
+          "name": "岡崎工科高校",
+          "slug": "okazakikoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://aichi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東海地区高等学校野球 愛知県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "成章",
+          "score": 6,
+          "won": true,
+          "name": "成章高校",
+          "slug": "aichi-seisho"
+        },
+        {
+          "display": "豊橋中央",
+          "score": 3,
+          "won": false,
+          "name": "豊橋中央",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://aichi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東海地区高等学校野球 愛知県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大府",
+          "score": 1,
+          "won": false,
+          "name": "大府高校",
+          "slug": "obu"
+        },
+        {
+          "display": "桜丘",
+          "score": 8,
+          "won": true,
+          "name": "桜丘",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://aichi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東海地区高等学校野球 愛知県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "誉",
+          "score": 10,
+          "won": true,
+          "name": "誉",
+          "slug": null
+        },
+        {
+          "display": "中部大第一",
+          "score": 2,
+          "won": false,
+          "name": "中部大第一",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://aichi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東海地区高等学校野球 愛知県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "愛工大名電",
+          "score": 9,
+          "won": true,
+          "name": "愛工大名電",
+          "slug": null
+        },
+        {
+          "display": "東浦",
+          "score": 1,
+          "won": false,
+          "name": "東浦高校",
+          "slug": "higashiura"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://aichi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東海地区高等学校野球 愛知県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "名城大附属",
+          "score": 7,
+          "won": true,
+          "name": "名城大附属",
+          "slug": null
+        },
+        {
+          "display": "杜若",
+          "score": 5,
+          "won": false,
+          "name": "杜若",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://aichi.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-05",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季東海地区高等学校野球 愛知県大会",
@@ -50952,6 +51141,33 @@
           "won": false,
           "name": "小牧南高校",
           "slug": "komakiminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://aichi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東海地区高等学校野球 愛知県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東海",
+          "score": 2,
+          "won": false,
+          "name": "東海",
+          "slug": null
+        },
+        {
+          "display": "西尾",
+          "score": 4,
+          "won": true,
+          "name": "西尾高校",
+          "slug": "nishio"
         }
       ],
       "source": {

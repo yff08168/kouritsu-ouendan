@@ -39833,6 +39833,88 @@
       }
     },
     {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "ユニオンですからスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "沖縄工業",
+          "score": 3,
+          "won": false,
+          "name": "沖縄工業高校",
+          "slug": "okinawakogyo"
+        },
+        {
+          "display": "知念",
+          "score": 9,
+          "won": true,
+          "name": "知念高校",
+          "slug": "chinen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "北谷・美里",
+          "score": 2,
+          "won": false,
+          "name": "北谷・美里",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "南部工業",
+          "score": 9,
+          "won": true,
+          "name": "南部工業高校",
+          "slug": "nanbukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "嘉手納町野球場",
+      "teams": [
+        {
+          "display": "宜野湾",
+          "score": 5,
+          "won": true,
+          "name": "宜野湾高校",
+          "slug": "ginowan"
+        },
+        {
+          "display": "北中城",
+          "score": 2,
+          "won": false,
+          "name": "北中城高校",
+          "slug": "kitanakagusuku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
@@ -39988,6 +40070,88 @@
           "name": "辺土名・名護商工北部農林・本部",
           "slug": null,
           "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "ユニオンですからスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "那覇工業・陽明・開邦南部農林",
+          "score": 3,
+          "won": false,
+          "name": "那覇工業・陽明・開邦南部農林",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "中部商業",
+          "score": 13,
+          "won": true,
+          "name": "中部商業高校",
+          "slug": "chubushogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "普天間",
+          "score": 2,
+          "won": false,
+          "name": "普天間高校",
+          "slug": "futenma"
+        },
+        {
+          "display": "西原",
+          "score": 11,
+          "won": true,
+          "name": "西原高校",
+          "slug": "nishihara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "嘉手納町野球場",
+      "teams": [
+        {
+          "display": "エナジック",
+          "score": 5,
+          "won": true,
+          "name": "エナジック",
+          "slug": null
+        },
+        {
+          "display": "宜野座",
+          "score": 2,
+          "won": false,
+          "name": "宜野座高校",
+          "slug": "ginoza"
         }
       ],
       "source": {
@@ -59311,102 +59475,6 @@
           "display": "美来工科",
           "name": "美来工科高校",
           "slug": "miraikoka"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 沖縄県大会",
-      "round": "1回戦",
-      "venue": "Ａｇｒｅスタジアム北谷",
-      "teams": [
-        {
-          "display": "普天間",
-          "name": "普天間高校",
-          "slug": "futenma"
-        },
-        {
-          "display": "西原",
-          "name": "西原高校",
-          "slug": "nishihara"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 沖縄県大会",
-      "round": "1回戦",
-      "venue": "嘉手納町野球場",
-      "teams": [
-        {
-          "display": "エナジック",
-          "name": "エナジック",
-          "slug": null
-        },
-        {
-          "display": "宜野座",
-          "name": "宜野座高校",
-          "slug": "ginoza"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 沖縄県大会",
-      "round": "1回戦",
-      "venue": "ユニオンですからスタジアム宜野湾",
-      "teams": [
-        {
-          "display": "沖縄工業",
-          "name": "沖縄工業高校",
-          "slug": "okinawakogyo"
-        },
-        {
-          "display": "知念",
-          "name": "知念高校",
-          "slug": "chinen"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 沖縄県大会",
-      "round": "1回戦",
-      "venue": "Ａｇｒｅスタジアム北谷",
-      "teams": [
-        {
-          "display": "北谷・美里",
-          "name": "北谷・美里",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "南部工業",
-          "name": "南部工業高校",
-          "slug": "nanbukogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 沖縄県大会",
-      "round": "1回戦",
-      "venue": "嘉手納町野球場",
-      "teams": [
-        {
-          "display": "宜野湾",
-          "name": "宜野湾高校",
-          "slug": "ginowan"
-        },
-        {
-          "display": "北中城",
-          "name": "北中城高校",
-          "slug": "kitanakagusuku"
         }
       ]
     },

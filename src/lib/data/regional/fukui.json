@@ -9393,6 +9393,99 @@
       ]
     },
     {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "1回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "敦賀",
+          "score": 3,
+          "won": false,
+          "name": "敦賀高校",
+          "slug": "tsuruga"
+        },
+        {
+          "display": "高志・勝山",
+          "score": 5,
+          "won": true,
+          "name": "高志・勝山",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "1回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "藤島",
+          "score": 0,
+          "won": false,
+          "name": "藤島高校",
+          "slug": "fujishima"
+        },
+        {
+          "display": "鯖江",
+          "score": 6,
+          "won": true,
+          "name": "鯖江高校",
+          "slug": "sabae"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "1回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "足羽",
+          "score": 0,
+          "won": false,
+          "name": "足羽高校",
+          "slug": "asuwa"
+        },
+        {
+          "display": "大野",
+          "score": 4,
+          "won": true,
+          "name": "大野高校",
+          "slug": "fukui-ono"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "1回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "武生",
+          "score": 6,
+          "won": true,
+          "name": "武生高校",
+          "slug": "takefu"
+        },
+        {
+          "display": "坂井",
+          "score": 2,
+          "won": false,
+          "name": "坂井高校",
+          "slug": "fukui-sakai"
+        }
+      ]
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
@@ -14428,85 +14521,6 @@
           "won": true,
           "name": "敦賀気比",
           "slug": null
-        }
-      ]
-    }
-  ],
-  "upcoming": [
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季北信越地区高校野球 福井県大会",
-      "round": "1回戦",
-      "venue": "セーレン・ドリームスタジアム",
-      "teams": [
-        {
-          "display": "敦賀",
-          "name": "敦賀高校",
-          "slug": "tsuruga"
-        },
-        {
-          "display": "高志・勝山",
-          "name": "高志・勝山",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季北信越地区高校野球 福井県大会",
-      "round": "1回戦",
-      "venue": "敦賀市総合運動公園野球場",
-      "teams": [
-        {
-          "display": "藤島",
-          "name": "藤島高校",
-          "slug": "fujishima"
-        },
-        {
-          "display": "鯖江",
-          "name": "鯖江高校",
-          "slug": "sabae"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季北信越地区高校野球 福井県大会",
-      "round": "1回戦",
-      "venue": "セーレン・ドリームスタジアム",
-      "teams": [
-        {
-          "display": "足羽",
-          "name": "足羽高校",
-          "slug": "asuwa"
-        },
-        {
-          "display": "大野",
-          "name": "大野高校",
-          "slug": "fukui-ono"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年秋季北信越地区高校野球 福井県大会",
-      "round": "1回戦",
-      "venue": "敦賀市総合運動公園野球場",
-      "teams": [
-        {
-          "display": "武生",
-          "name": "武生高校",
-          "slug": "takefu"
-        },
-        {
-          "display": "坂井",
-          "name": "坂井高校",
-          "slug": "fukui-sakai"
         }
       ]
     }

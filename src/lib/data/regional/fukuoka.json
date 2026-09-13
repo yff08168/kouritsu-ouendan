@@ -46455,6 +46455,29 @@
       ]
     },
     {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "東筑",
+          "score": 5,
+          "won": true,
+          "name": "東筑高校",
+          "slug": "tochiku"
+        },
+        {
+          "display": "自由ヶ丘",
+          "score": 0,
+          "won": false,
+          "name": "自由ヶ丘",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": null,
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
@@ -47280,6 +47303,52 @@
           "won": false,
           "name": "育徳館高校",
           "slug": "ikutokukan"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "九産大九産",
+          "score": 2,
+          "won": false,
+          "name": "九産大九産",
+          "slug": null
+        },
+        {
+          "display": "久留米商業",
+          "score": 4,
+          "won": true,
+          "name": "久留米商業高校",
+          "slug": "kurumeshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "八女学院",
+          "score": 10,
+          "won": true,
+          "name": "八女学院",
+          "slug": null
+        },
+        {
+          "display": "博多",
+          "score": 0,
+          "won": false,
+          "name": "博多",
+          "slug": null
         }
       ]
     },

@@ -41050,6 +41050,75 @@
       ]
     },
     {
+      "date": "2026-09-14",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "小川工業",
+          "score": 1,
+          "won": false,
+          "name": "小川工業高校",
+          "slug": "ogawakogyo"
+        },
+        {
+          "display": "翔陽",
+          "score": 13,
+          "won": true,
+          "name": "翔陽高校",
+          "slug": "kumamoto-shoyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "菊池",
+          "score": 1,
+          "won": false,
+          "name": "菊池高校",
+          "slug": "kikuchi"
+        },
+        {
+          "display": "八代",
+          "score": 6,
+          "won": true,
+          "name": "八代高校",
+          "slug": "yatsushiro"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "熊本工業",
+          "score": 10,
+          "won": true,
+          "name": "熊本工業高校",
+          "slug": "kumamotokogyo"
+        },
+        {
+          "display": "有明",
+          "score": 2,
+          "won": false,
+          "name": "有明",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球熊本大会",
@@ -60389,63 +60458,6 @@
     }
   ],
   "upcoming": [
-    {
-      "date": "2026-09-14",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "リブワーク藤崎台球場",
-      "teams": [
-        {
-          "display": "翔陽",
-          "name": "翔陽高校",
-          "slug": "kumamoto-shoyo"
-        },
-        {
-          "display": "小川工業",
-          "name": "小川工業高校",
-          "slug": "ogawakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-14",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "リブワーク藤崎台球場",
-      "teams": [
-        {
-          "display": "八代",
-          "name": "八代高校",
-          "slug": "yatsushiro"
-        },
-        {
-          "display": "菊池",
-          "name": "菊池高校",
-          "slug": "kikuchi"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-14",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "リブワーク藤崎台球場",
-      "teams": [
-        {
-          "display": "熊本工業",
-          "name": "熊本工業高校",
-          "slug": "kumamotokogyo"
-        },
-        {
-          "display": "有明",
-          "name": "有明",
-          "slug": null
-        }
-      ]
-    },
     {
       "date": "2026-09-15",
       "season": "autumn",

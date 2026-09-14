@@ -26567,6 +26567,76 @@
       ]
     },
     {
+      "date": "2026-09-14",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "連合",
+          "score": 2,
+          "won": false,
+          "name": "連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "宇都宮",
+          "score": 9,
+          "won": true,
+          "name": "宇都宮高校",
+          "slug": "utsunomiya"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "矢板東",
+          "score": 0,
+          "won": false,
+          "name": "矢板東高校",
+          "slug": "yaitahigashi"
+        },
+        {
+          "display": "栃木工",
+          "score": 10,
+          "won": true,
+          "name": "栃木工業高校",
+          "slug": "tochigikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "1回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "真岡北陵",
+          "score": 0,
+          "won": false,
+          "name": "真岡北陵高校",
+          "slug": "mokahokuryo"
+        },
+        {
+          "display": "宇都宮白楊",
+          "score": 13,
+          "won": true,
+          "name": "宇都宮白楊高校",
+          "slug": "utsunomiyahakuyo"
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第78回秋季栃木県高等学校野球大会",
@@ -43166,46 +43236,6 @@
           "won": true,
           "name": "國學院栃木",
           "slug": null
-        }
-      ]
-    }
-  ],
-  "upcoming": [
-    {
-      "date": "2026-09-14",
-      "season": "autumn",
-      "tournament": "令和8年秋季関東地区高校野球 栃木県大会",
-      "round": "1回戦",
-      "venue": "宇都宮清原球場",
-      "teams": [
-        {
-          "display": "宇都宮白楊",
-          "name": "宇都宮白楊高校",
-          "slug": "utsunomiyahakuyo"
-        },
-        {
-          "display": "真岡北陵",
-          "name": "真岡北陵高校",
-          "slug": "mokahokuryo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-14",
-      "season": "autumn",
-      "tournament": "令和8年秋季関東地区高校野球 栃木県大会",
-      "round": "1回戦",
-      "venue": "エイジェックスタジアム",
-      "teams": [
-        {
-          "display": "矢板東",
-          "name": "矢板東高校",
-          "slug": "yaitahigashi"
-        },
-        {
-          "display": "栃木工",
-          "name": "栃木工業高校",
-          "slug": "tochigikogyo"
         }
       ]
     }

@@ -60100,6 +60100,98 @@
       ]
     },
     {
+      "date": "2026-09-14",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 二次予選",
+      "round": "代表決定戦",
+      "venue": "茨城県営球場",
+      "teams": [
+        {
+          "display": "水戸啓明",
+          "score": 1,
+          "won": false,
+          "name": "水戸啓明",
+          "slug": null
+        },
+        {
+          "display": "水城",
+          "score": 2,
+          "won": true,
+          "name": "水城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 二次予選",
+      "round": "代表決定戦",
+      "venue": "茨城県営球場",
+      "teams": [
+        {
+          "display": "波崎柳川",
+          "score": 2,
+          "won": false,
+          "name": "波崎柳川高校",
+          "slug": "hasakiyanagawa"
+        },
+        {
+          "display": "鉾田二",
+          "score": 5,
+          "won": true,
+          "name": "鉾田第二高校",
+          "slug": "hokotadaini"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 二次予選",
+      "round": "代表決定戦",
+      "venue": "笠間市民球場",
+      "teams": [
+        {
+          "display": "水戸一",
+          "score": 0,
+          "won": false,
+          "name": "水戸第一高校",
+          "slug": "mitodaiichi"
+        },
+        {
+          "display": "ウェルネス",
+          "score": 5,
+          "won": true,
+          "name": "ウェルネス",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会 二次予選",
+      "round": "代表決定戦",
+      "venue": "笠間市民球場",
+      "teams": [
+        {
+          "display": "水戸農",
+          "score": 4,
+          "won": true,
+          "name": "水戸農業高校",
+          "slug": "mitonogyo"
+        },
+        {
+          "display": "水戸工",
+          "score": 3,
+          "won": false,
+          "name": "水戸工業高校",
+          "slug": "mitokogyo"
+        }
+      ]
+    },
+    {
       "date": "2023-09-09",
       "season": "autumn",
       "tournament": "第76回 秋季関東地区高等学校野球茨城県大会 2次予選",

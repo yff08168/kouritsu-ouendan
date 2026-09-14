@@ -104200,45 +104200,5 @@
         }
       ]
     }
-  ],
-  "upcoming": [
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年山口県スポーツ大会高校野球競技予選",
-      "round": "1回戦",
-      "venue": "絆スタジアム",
-      "teams": [
-        {
-          "display": "下松工業",
-          "name": "下松工業高校",
-          "slug": "kudamatsukogyo"
-        },
-        {
-          "display": "防府商工",
-          "name": "防府商工高校",
-          "slug": "hofushoko"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "令和8年山口県スポーツ大会高校野球競技予選",
-      "round": "1回戦",
-      "venue": "オーヴィジョンスタジアム下関",
-      "teams": [
-        {
-          "display": "厚狭明進",
-          "name": "厚狭明進高校",
-          "slug": "asameishin"
-        },
-        {
-          "display": "小野田工業",
-          "name": "小野田工業高校",
-          "slug": "onodakogyo"
-        }
-      ]
-    }
   ]
 }

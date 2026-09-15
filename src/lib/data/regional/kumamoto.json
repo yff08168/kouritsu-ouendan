@@ -41119,6 +41119,75 @@
       ]
     },
     {
+      "date": "2026-09-15",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "学園大付属",
+          "score": 9,
+          "won": true,
+          "name": "学園大付属",
+          "slug": null
+        },
+        {
+          "display": "天草",
+          "score": 0,
+          "won": false,
+          "name": "天草高校",
+          "slug": "amakusa"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "真和",
+          "score": 0,
+          "won": false,
+          "name": "真和",
+          "slug": null
+        },
+        {
+          "display": "宇土",
+          "score": 7,
+          "won": true,
+          "name": "宇土高校",
+          "slug": "uto"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "八代清流",
+          "score": 1,
+          "won": false,
+          "name": "八代清流高校",
+          "slug": "yatsushiroseiryu"
+        },
+        {
+          "display": "千原台",
+          "score": 10,
+          "won": true,
+          "name": "千原台高校",
+          "slug": "chiharadai"
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球熊本大会",
@@ -60458,63 +60527,6 @@
     }
   ],
   "upcoming": [
-    {
-      "date": "2026-09-15",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "リブワーク藤崎台球場",
-      "teams": [
-        {
-          "display": "天草",
-          "name": "天草高校",
-          "slug": "amakusa"
-        },
-        {
-          "display": "学園大付属",
-          "name": "学園大付属",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-15",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "リブワーク藤崎台球場",
-      "teams": [
-        {
-          "display": "真和",
-          "name": "真和",
-          "slug": null
-        },
-        {
-          "display": "宇土",
-          "name": "宇土高校",
-          "slug": "uto"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-15",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "リブワーク藤崎台球場",
-      "teams": [
-        {
-          "display": "千原台",
-          "name": "千原台高校",
-          "slug": "chiharadai"
-        },
-        {
-          "display": "八代清流",
-          "name": "八代清流高校",
-          "slug": "yatsushiroseiryu"
-        }
-      ]
-    },
     {
       "date": "2026-09-16",
       "season": "autumn",

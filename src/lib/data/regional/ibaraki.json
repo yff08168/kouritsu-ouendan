@@ -92690,5 +92690,45 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 茨城県大会",
+      "round": "1回戦",
+      "venue": "ひたちなか市民球場",
+      "teams": [
+        {
+          "display": "江戸川学園",
+          "name": "江戸川学園",
+          "slug": null
+        },
+        {
+          "display": "多賀",
+          "name": "多賀高校",
+          "slug": "taga"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和 8年秋季関東地区高校野球 茨城県大会",
+      "round": "1回戦",
+      "venue": "茨城トヨタスポーツパークうしく野球場",
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "境",
+          "name": "境高校",
+          "slug": "sakai"
+        }
+      ]
+    }
   ]
 }

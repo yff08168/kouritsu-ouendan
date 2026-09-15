@@ -5,8 +5,8 @@ import type { RegionalProgressBoard } from "@/lib/regional-results";
 
 export const REGIONAL_PROGRESS: RegionalProgressBoard = {
   "season": "autumn",
-  "latestDate": "2026-09-14",
-  "generatedAt": "2026-09-14T16:58:19Z",
+  "latestDate": "2026-09-15",
+  "generatedAt": "2026-09-15T15:28:27Z",
   "districts": [
     {
       "slug": "nagano",
@@ -29,10 +29,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "令和8年度神奈川県高校野球秋季県大会",
-      "games": 66,
-      "publicGames": 49,
+      "games": 67,
+      "publicGames": 50,
       "round": "3回戦",
-      "latestDate": "2026-09-12",
+      "latestDate": "2026-09-15",
       "champion": null
     },
     {
@@ -58,10 +58,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "第159回九州地区高等学校野球熊本大会",
-      "games": 9,
-      "publicGames": 9,
+      "games": 12,
+      "publicGames": 12,
       "round": "1回戦",
-      "latestDate": "2026-09-14",
+      "latestDate": "2026-09-15",
       "champion": null
     },
     {
@@ -349,7 +349,7 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "岩手",
       "state": "scheduled",
       "season": "autumn",
-      "tournament": "令和 8年秋季東北地区高校野球 岩手県大会",
+      "tournament": "令和8年秋季東北地区高校野球 岩手県大会",
       "opensOn": "2026-09-16",
       "games": 6
     },

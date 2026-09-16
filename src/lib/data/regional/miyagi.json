@@ -17706,7 +17706,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
       "round": "1回戦",
       "venue": "鹿島台中央野球場",
       "teams": [
@@ -17729,7 +17729,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
       "round": "1回戦",
       "venue": "利府町中央公園野球場",
       "teams": [
@@ -17752,7 +17752,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
       "round": "1回戦",
       "venue": "鹿島台中央野球場",
       "teams": [
@@ -17775,7 +17775,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
       "round": "1回戦",
       "venue": "鹿島台中央野球場",
       "teams": [
@@ -17798,7 +17798,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
       "round": "1回戦",
       "venue": "利府町中央公園野球場",
       "teams": [
@@ -17821,7 +17821,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
       "round": "1回戦",
       "venue": "利府町中央公園野球場",
       "teams": [
@@ -17842,9 +17842,101 @@
       ]
     },
     {
+      "date": "2026-09-16",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "石巻工業",
+          "score": 1,
+          "won": false,
+          "name": "石巻工業高校",
+          "slug": "ishinomakikogyo"
+        },
+        {
+          "display": "ウェルネス宮城",
+          "score": 2,
+          "won": true,
+          "name": "ウェルネス宮城",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "東北学院",
+          "score": 2,
+          "won": false,
+          "name": "東北学院",
+          "slug": null
+        },
+        {
+          "display": "富谷",
+          "score": 7,
+          "won": true,
+          "name": "富谷高校",
+          "slug": "tomiya"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "石巻市民球場",
+      "teams": [
+        {
+          "display": "仙台第一",
+          "score": 9,
+          "won": true,
+          "name": "仙台第一高校",
+          "slug": "sendaidaiichi"
+        },
+        {
+          "display": "大崎中央",
+          "score": 1,
+          "won": false,
+          "name": "大崎中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
+      "round": "2回戦",
+      "venue": "仙台市民球場",
+      "teams": [
+        {
+          "display": "仙台城南",
+          "score": 3,
+          "won": true,
+          "name": "仙台城南",
+          "slug": null
+        },
+        {
+          "display": "名取北",
+          "score": 1,
+          "won": false,
+          "name": "名取北高校",
+          "slug": "natorikita"
+        }
+      ]
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
       "round": "2回戦",
       "venue": "利府町中央公園野球場",
       "teams": [
@@ -17867,7 +17959,7 @@
     {
       "date": "2026-09-12",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
       "round": "2回戦",
       "venue": "利府町中央公園野球場",
       "teams": [
@@ -17890,7 +17982,7 @@
     {
       "date": "2026-09-12",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
       "round": "2回戦",
       "venue": "鹿島台中央野球場",
       "teams": [
@@ -17913,7 +18005,7 @@
     {
       "date": "2026-09-12",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
       "round": "2回戦",
       "venue": "鹿島台中央野球場",
       "teams": [
@@ -17936,7 +18028,7 @@
     {
       "date": "2026-09-12",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
       "round": "2回戦",
       "venue": "利府町中央公園野球場",
       "teams": [
@@ -17959,7 +18051,7 @@
     {
       "date": "2026-09-12",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
       "round": "2回戦",
       "venue": "鹿島台中央野球場",
       "teams": [
@@ -17982,7 +18074,7 @@
     {
       "date": "2026-09-14",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
       "round": "3回戦",
       "venue": "仙台市民球場",
       "teams": [
@@ -18005,7 +18097,7 @@
     {
       "date": "2026-09-14",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
       "round": "3回戦",
       "venue": "石巻市民球場",
       "teams": [
@@ -18028,7 +18120,7 @@
     {
       "date": "2026-09-14",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
       "round": "3回戦",
       "venue": "石巻市民球場",
       "teams": [
@@ -18051,7 +18143,7 @@
     {
       "date": "2026-09-14",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高等学校野球 宮城県大会",
+      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 宮城県大会",
       "round": "3回戦",
       "venue": "仙台市民球場",
       "teams": [

@@ -41188,6 +41188,75 @@
       ]
     },
     {
+      "date": "2026-09-16",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "水俣",
+          "score": 9,
+          "won": true,
+          "name": "水俣高校",
+          "slug": "minamata"
+        },
+        {
+          "display": "八代東",
+          "score": 2,
+          "won": false,
+          "name": "八代東高校",
+          "slug": "yatsushirohigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "第一",
+          "score": 7,
+          "won": false,
+          "name": "熊本県立第一高校",
+          "slug": "kumamotokenritsudaiichi"
+        },
+        {
+          "display": "大津",
+          "score": 8,
+          "won": true,
+          "name": "大津高校",
+          "slug": "kumamoto-otsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "専大熊本",
+          "score": 11,
+          "won": true,
+          "name": "専大熊本",
+          "slug": null
+        },
+        {
+          "display": "熊本西",
+          "score": 3,
+          "won": false,
+          "name": "熊本西高校",
+          "slug": "kumamotonishi"
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球熊本大会",
@@ -60527,63 +60596,6 @@
     }
   ],
   "upcoming": [
-    {
-      "date": "2026-09-16",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "リブワーク藤崎台球場",
-      "teams": [
-        {
-          "display": "水俣",
-          "name": "水俣高校",
-          "slug": "minamata"
-        },
-        {
-          "display": "八代東",
-          "name": "八代東高校",
-          "slug": "yatsushirohigashi"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-16",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "リブワーク藤崎台球場",
-      "teams": [
-        {
-          "display": "第一",
-          "name": "熊本県立第一高校",
-          "slug": "kumamotokenritsudaiichi"
-        },
-        {
-          "display": "大津",
-          "name": "大津高校",
-          "slug": "kumamoto-otsu"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-16",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "リブワーク藤崎台球場",
-      "teams": [
-        {
-          "display": "熊本西",
-          "name": "熊本西高校",
-          "slug": "kumamotonishi"
-        },
-        {
-          "display": "専大熊本",
-          "name": "専大熊本",
-          "slug": null
-        }
-      ]
-    },
     {
       "date": "2026-09-17",
       "season": "autumn",

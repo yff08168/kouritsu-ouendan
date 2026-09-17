@@ -43464,6 +43464,114 @@
       }
     },
     {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "明和県央",
+          "score": 0,
+          "won": false,
+          "name": "明和県央",
+          "slug": null
+        },
+        {
+          "display": "伊勢崎工",
+          "score": 1,
+          "won": true,
+          "name": "伊勢崎工業高校",
+          "slug": "isesakikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "上毛新聞敷島球場",
+      "teams": [
+        {
+          "display": "健大高崎",
+          "score": 5,
+          "won": true,
+          "name": "健大高崎",
+          "slug": null
+        },
+        {
+          "display": "前橋商",
+          "score": 4,
+          "won": false,
+          "name": "前橋商業高校",
+          "slug": "maebashishogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "グレースイン前橋市民球場",
+      "teams": [
+        {
+          "display": "東農大二",
+          "score": 6,
+          "won": true,
+          "name": "東農大二",
+          "slug": null
+        },
+        {
+          "display": "前橋工",
+          "score": 3,
+          "won": false,
+          "name": "前橋工業高校",
+          "slug": "maebashikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "3回戦",
+      "venue": "グレースイン前橋市民球場",
+      "teams": [
+        {
+          "display": "桐生第一",
+          "score": 7,
+          "won": true,
+          "name": "桐生第一",
+          "slug": null
+        },
+        {
+          "display": "桐生清桜",
+          "score": 2,
+          "won": false,
+          "name": "桐生清桜高校",
+          "slug": "kiryuseio"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-06",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
@@ -44053,6 +44161,87 @@
           "won": false,
           "name": "桐生市立商業高校",
           "slug": "kiryushiritsushogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "4回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "利根商",
+          "score": 4,
+          "won": true,
+          "name": "利根商業高校",
+          "slug": "toneshogyo"
+        },
+        {
+          "display": "常磐",
+          "score": 0,
+          "won": false,
+          "name": "常磐",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "4回戦",
+      "venue": "高崎市城南球場",
+      "teams": [
+        {
+          "display": "桐生工",
+          "score": 1,
+          "won": false,
+          "name": "桐生工業高校",
+          "slug": "kiryukogyo"
+        },
+        {
+          "display": "樹徳",
+          "score": 2,
+          "won": true,
+          "name": "樹徳",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "4回戦",
+      "venue": "高崎市城南球場",
+      "teams": [
+        {
+          "display": "前橋",
+          "score": 3,
+          "won": false,
+          "name": "前橋",
+          "slug": null
+        },
+        {
+          "display": "関学大附",
+          "score": 10,
+          "won": true,
+          "name": "関学大附",
+          "slug": null
         }
       ],
       "source": {

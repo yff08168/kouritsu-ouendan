@@ -56336,6 +56336,33 @@
       }
     },
     {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 新潟県大会",
+      "round": "3回戦",
+      "venue": "長岡市悠久山野球場",
+      "teams": [
+        {
+          "display": "三条",
+          "score": 1,
+          "won": false,
+          "name": "三条高校",
+          "slug": "sanjo"
+        },
+        {
+          "display": "新発田中央",
+          "score": 11,
+          "won": true,
+          "name": "新発田中央",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://niigata.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-16",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季北信越地区高校野球 新潟県大会",

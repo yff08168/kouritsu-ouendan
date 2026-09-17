@@ -41257,6 +41257,99 @@
       ]
     },
     {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "鹿本商工・鹿本",
+          "score": 31,
+          "won": true,
+          "name": "鹿本商工・鹿本",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "上天草",
+          "score": 0,
+          "won": false,
+          "name": "上天草高校",
+          "slug": "kamiamakusa"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "人吉",
+          "score": 11,
+          "won": true,
+          "name": "人吉高校",
+          "slug": "hitoyoshi"
+        },
+        {
+          "display": "御船",
+          "score": 0,
+          "won": false,
+          "name": "御船高校",
+          "slug": "mifune"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "山鹿市民球場",
+      "teams": [
+        {
+          "display": "秀岳館",
+          "score": 6,
+          "won": true,
+          "name": "秀岳館",
+          "slug": null
+        },
+        {
+          "display": "東稜",
+          "score": 2,
+          "won": false,
+          "name": "東稜高校",
+          "slug": "kumamoto-toryo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "1回戦",
+      "venue": "山鹿市民球場",
+      "teams": [
+        {
+          "display": "天草工業",
+          "score": 1,
+          "won": false,
+          "name": "天草工業高校",
+          "slug": "amakusakogyo"
+        },
+        {
+          "display": "九州学院",
+          "score": 11,
+          "won": true,
+          "name": "九州学院",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球熊本大会",
@@ -60589,85 +60682,6 @@
           "display": "九州学院",
           "score": 15,
           "won": true,
-          "name": "九州学院",
-          "slug": null
-        }
-      ]
-    }
-  ],
-  "upcoming": [
-    {
-      "date": "2026-09-17",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "リブワーク藤崎台球場",
-      "teams": [
-        {
-          "display": "鹿本商工・鹿本",
-          "name": "鹿本商工・鹿本",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "上天草",
-          "name": "上天草高校",
-          "slug": "kamiamakusa"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-17",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "リブワーク藤崎台球場",
-      "teams": [
-        {
-          "display": "御船",
-          "name": "御船高校",
-          "slug": "mifune"
-        },
-        {
-          "display": "人吉",
-          "name": "人吉高校",
-          "slug": "hitoyoshi"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-17",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "山鹿市民球場",
-      "teams": [
-        {
-          "display": "秀岳館",
-          "name": "秀岳館",
-          "slug": null
-        },
-        {
-          "display": "東稜",
-          "name": "東稜高校",
-          "slug": "kumamoto-toryo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-17",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 熊本県大会",
-      "round": "1回戦",
-      "venue": "山鹿市民球場",
-      "teams": [
-        {
-          "display": "天草工業",
-          "name": "天草工業高校",
-          "slug": "amakusakogyo"
-        },
-        {
-          "display": "九州学院",
           "name": "九州学院",
           "slug": null
         }

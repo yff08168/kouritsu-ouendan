@@ -18989,6 +18989,52 @@
       ]
     },
     {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会",
+      "round": "1回戦",
+      "venue": "ヤマリョースタジアム山形",
+      "teams": [
+        {
+          "display": "惺山",
+          "score": 4,
+          "won": true,
+          "name": "惺山",
+          "slug": null
+        },
+        {
+          "display": "致道館",
+          "score": 1,
+          "won": false,
+          "name": "致道館高校",
+          "slug": "chidokan"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会",
+      "round": "1回戦",
+      "venue": "ヤマリョースタジアム山形",
+      "teams": [
+        {
+          "display": "東桜学館",
+          "score": 0,
+          "won": false,
+          "name": "東桜学館高校",
+          "slug": "togakkan"
+        },
+        {
+          "display": "新庄東",
+          "score": 9,
+          "won": true,
+          "name": "新庄東",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2018-09-23",
       "season": "autumn",
       "tournament": "2018年 秋季東北地区高等学校野球 山形県大会",
@@ -30011,46 +30057,6 @@
           "won": false,
           "name": "羽黒",
           "slug": null
-        }
-      ]
-    }
-  ],
-  "upcoming": [
-    {
-      "date": "2026-09-17",
-      "season": "autumn",
-      "tournament": "令和 8年秋季東北地区高校野球 山形県大会",
-      "round": "1回戦",
-      "venue": "ヤマリョースタジアム山形",
-      "teams": [
-        {
-          "display": "惺山",
-          "name": "惺山",
-          "slug": null
-        },
-        {
-          "display": "致道館",
-          "name": "致道館高校",
-          "slug": "chidokan"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-17",
-      "season": "autumn",
-      "tournament": "令和 8年秋季東北地区高校野球 山形県大会",
-      "round": "1回戦",
-      "venue": "ヤマリョースタジアム山形",
-      "teams": [
-        {
-          "display": "新庄東",
-          "name": "新庄東",
-          "slug": null
-        },
-        {
-          "display": "東桜学館",
-          "name": "東桜学館高校",
-          "slug": "togakkan"
         }
       ]
     }

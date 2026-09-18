@@ -46201,6 +46201,29 @@
       ]
     },
     {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "1回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "筑紫台",
+          "score": 5,
+          "won": true,
+          "name": "筑紫台",
+          "slug": null
+        },
+        {
+          "display": "福岡中央",
+          "score": 3,
+          "won": false,
+          "name": "福岡中央高校",
+          "slug": "fukuokachuo"
+        }
+      ]
+    },
+    {
       "date": null,
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
@@ -46313,6 +46336,29 @@
           "won": true,
           "name": "八女高校",
           "slug": "yame"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "1回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "沖学園",
+          "score": 11,
+          "won": true,
+          "name": "沖学園",
+          "slug": null
+        },
+        {
+          "display": "浮羽工業",
+          "score": 1,
+          "won": false,
+          "name": "浮羽工業高校",
+          "slug": "ukihakogyo"
         }
       ]
     },
@@ -47261,6 +47307,52 @@
       ]
     },
     {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "南筑",
+          "score": 3,
+          "won": false,
+          "name": "南筑高校",
+          "slug": "nanchiku"
+        },
+        {
+          "display": "修猷館",
+          "score": 5,
+          "won": true,
+          "name": "修猷館高校",
+          "slug": "shuyukan"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "香椎",
+          "score": 8,
+          "won": true,
+          "name": "香椎高校",
+          "slug": "kashii"
+        },
+        {
+          "display": "糸島",
+          "score": 7,
+          "won": false,
+          "name": "糸島高校",
+          "slug": "itoshima"
+        }
+      ]
+    },
+    {
       "date": null,
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
@@ -47396,6 +47488,52 @@
           "name": "真颯館・若松鞍手竜徳",
           "slug": null,
           "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "福工大城東",
+          "score": 2,
+          "won": false,
+          "name": "福工大城東",
+          "slug": null
+        },
+        {
+          "display": "東福岡",
+          "score": 11,
+          "won": true,
+          "name": "東福岡",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "福大若葉",
+          "score": 8,
+          "won": true,
+          "name": "福大若葉",
+          "slug": null
+        },
+        {
+          "display": "博多工業",
+          "score": 0,
+          "won": false,
+          "name": "博多工業高校",
+          "slug": "hakatakogyo"
         }
       ]
     },
@@ -70989,46 +71127,6 @@
           "won": true,
           "name": "西短大附",
           "slug": null
-        }
-      ]
-    }
-  ],
-  "upcoming": [
-    {
-      "date": "2026-09-18",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 福岡県大会",
-      "round": "1回戦",
-      "venue": "小郡市野球場",
-      "teams": [
-        {
-          "display": "筑紫台",
-          "name": "筑紫台",
-          "slug": null
-        },
-        {
-          "display": "福岡中央",
-          "name": "福岡中央高校",
-          "slug": "fukuokachuo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-18",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 福岡県大会",
-      "round": "1回戦",
-      "venue": "久留米市野球場",
-      "teams": [
-        {
-          "display": "沖学園",
-          "name": "沖学園",
-          "slug": null
-        },
-        {
-          "display": "浮羽工業",
-          "name": "浮羽工業高校",
-          "slug": "ukihakogyo"
         }
       ]
     }

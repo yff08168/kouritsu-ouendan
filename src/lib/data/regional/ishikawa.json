@@ -40424,7 +40424,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "1回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -40451,7 +40451,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "1回戦",
       "venue": "金沢市民野球場",
       "teams": [
@@ -40478,7 +40478,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "1回戦",
       "venue": "金沢市民野球場",
       "teams": [
@@ -40505,7 +40505,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "1回戦",
       "venue": "金沢市民野球場",
       "teams": [
@@ -40532,7 +40532,7 @@
     {
       "date": "2026-09-12",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -40559,7 +40559,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -40586,7 +40586,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "末広野球場（弁慶スタジアム）",
       "teams": [
@@ -40613,7 +40613,7 @@
     {
       "date": "2026-09-12",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "金沢市民野球場",
       "teams": [
@@ -40640,7 +40640,7 @@
     {
       "date": "2026-09-12",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "末広野球場（弁慶スタジアム）",
       "teams": [
@@ -40667,7 +40667,7 @@
     {
       "date": "2026-09-14",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "金沢市民野球場",
       "teams": [
@@ -40694,7 +40694,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -40721,7 +40721,7 @@
     {
       "date": "2026-09-12",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -40746,9 +40746,36 @@
       }
     },
     {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "県立工業",
+          "score": 3,
+          "won": false,
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        },
+        {
+          "display": "金沢",
+          "score": 6,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-06",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -40775,7 +40802,7 @@
     {
       "date": "2026-09-06",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -40802,7 +40829,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -40829,7 +40856,7 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "2回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -40856,7 +40883,7 @@
     {
       "date": "2026-09-12",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "3回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -40883,7 +40910,7 @@
     {
       "date": "2026-09-12",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "3回戦",
       "venue": "末広野球場（弁慶スタジアム）",
       "teams": [
@@ -40910,7 +40937,7 @@
     {
       "date": "2026-09-14",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "3回戦",
       "venue": "金沢市民野球場",
       "teams": [
@@ -40937,7 +40964,7 @@
     {
       "date": "2026-09-12",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "3回戦",
       "venue": "金沢市民野球場",
       "teams": [
@@ -40965,7 +40992,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "3回戦",
       "venue": "末広野球場（弁慶スタジアム）",
       "teams": [
@@ -40992,7 +41019,7 @@
     {
       "date": "2026-09-13",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "3回戦",
       "venue": "石川県立野球場",
       "teams": [
@@ -41020,7 +41047,7 @@
     {
       "date": "2026-09-12",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
       "round": "3回戦",
       "venue": "金沢市民野球場",
       "teams": [
@@ -41037,6 +41064,33 @@
           "won": false,
           "name": "金沢市立工業高校",
           "slug": "kanazawashiritsukogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "4回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松大谷",
+          "score": 21,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        },
+        {
+          "display": "金沢二水",
+          "score": 1,
+          "won": false,
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
         }
       ],
       "source": {

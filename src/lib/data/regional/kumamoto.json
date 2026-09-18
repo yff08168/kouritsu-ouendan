@@ -41350,6 +41350,52 @@
       ]
     },
     {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "南稜",
+          "score": 1,
+          "won": false,
+          "name": "南稜高校",
+          "slug": "kumamoto-nanryo"
+        },
+        {
+          "display": "熊本商業",
+          "score": 8,
+          "won": true,
+          "name": "熊本商業高校",
+          "slug": "kumamotoshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
+      "venue": "山鹿市民球場",
+      "teams": [
+        {
+          "display": "熊本農業",
+          "score": 2,
+          "won": false,
+          "name": "熊本農業高校",
+          "slug": "kumamotonogyo"
+        },
+        {
+          "display": "城北",
+          "score": 9,
+          "won": true,
+          "name": "城北",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球熊本大会",

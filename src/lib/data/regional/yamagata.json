@@ -19035,6 +19035,191 @@
       ]
     },
     {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会",
+      "round": "2回戦",
+      "venue": "きらやかスタジアム",
+      "teams": [
+        {
+          "display": "長井",
+          "score": 2,
+          "won": false,
+          "name": "長井高校",
+          "slug": "nagai"
+        },
+        {
+          "display": "村山産業",
+          "score": 4,
+          "won": true,
+          "name": "村山産業高校",
+          "slug": "murayamasangyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会",
+      "round": "2回戦",
+      "venue": "きらやかスタジアム",
+      "teams": [
+        {
+          "display": "羽黒",
+          "score": 4,
+          "won": true,
+          "name": "羽黒",
+          "slug": null
+        },
+        {
+          "display": "日大山形",
+          "score": 2,
+          "won": false,
+          "name": "日大山形",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会",
+      "round": "2回戦",
+      "venue": "きらやかスタジアム",
+      "teams": [
+        {
+          "display": "酒田光陵",
+          "score": 2,
+          "won": false,
+          "name": "酒田光陵高校",
+          "slug": "sakatakoryo"
+        },
+        {
+          "display": "山形中央",
+          "score": 3,
+          "won": true,
+          "name": "山形中央高校",
+          "slug": "yamagatachuo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会",
+      "round": "2回戦",
+      "venue": "ヤマリョースタジアム山形",
+      "teams": [
+        {
+          "display": "新庄志誠館",
+          "score": 1,
+          "won": false,
+          "name": "新庄志誠館高校",
+          "slug": "shinjoshiseikan"
+        },
+        {
+          "display": "米沢中央",
+          "score": 8,
+          "won": true,
+          "name": "米沢中央",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会",
+      "round": "2回戦",
+      "venue": "ヤマリョースタジアム山形",
+      "teams": [
+        {
+          "display": "山形学院",
+          "score": 7,
+          "won": true,
+          "name": "山形学院",
+          "slug": null
+        },
+        {
+          "display": "寒河江",
+          "score": 2,
+          "won": false,
+          "name": "寒河江高校",
+          "slug": "sagae"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会",
+      "round": "2回戦",
+      "venue": "ヤマリョースタジアム山形",
+      "teams": [
+        {
+          "display": "鶴岡高専",
+          "score": 2,
+          "won": false,
+          "name": "鶴岡工業高専",
+          "slug": "tsuruokakogyo-kosen"
+        },
+        {
+          "display": "３校連合",
+          "score": 12,
+          "won": true,
+          "name": "３校連合",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会",
+      "round": "2回戦",
+      "venue": "天童市スポーツセンター野球場",
+      "teams": [
+        {
+          "display": "寒河江工業",
+          "score": 1,
+          "won": false,
+          "name": "寒河江工業高校",
+          "slug": "sagaekogyo"
+        },
+        {
+          "display": "山形東",
+          "score": 8,
+          "won": true,
+          "name": "山形東高校",
+          "slug": "yamagatahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会",
+      "round": "2回戦",
+      "venue": "天童市スポーツセンター野球場",
+      "teams": [
+        {
+          "display": "鶴岡工業",
+          "score": 0,
+          "won": false,
+          "name": "鶴岡工業高校",
+          "slug": "tsuruokakogyo"
+        },
+        {
+          "display": "東海大山形",
+          "score": 14,
+          "won": true,
+          "name": "東海大山形",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2018-09-23",
       "season": "autumn",
       "tournament": "2018年 秋季東北地区高等学校野球 山形県大会",

@@ -16661,6 +16661,98 @@
       ]
     },
     {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "滋賀短大附属",
+          "score": 9,
+          "won": true,
+          "name": "滋賀短大附属",
+          "slug": null
+        },
+        {
+          "display": "米原",
+          "score": 2,
+          "won": false,
+          "name": "米原高校",
+          "slug": "maibara"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北大津",
+          "score": 10,
+          "won": true,
+          "name": "北大津高校",
+          "slug": "kitaotsu"
+        },
+        {
+          "display": "能登川",
+          "score": 3,
+          "won": false,
+          "name": "能登川高校",
+          "slug": "notogawa"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "2回戦",
+      "venue": "ＨＰＬベースボールパーク",
+      "teams": [
+        {
+          "display": "大津",
+          "score": 2,
+          "won": false,
+          "name": "大津高校",
+          "slug": "otsu"
+        },
+        {
+          "display": "八日市南",
+          "score": 10,
+          "won": true,
+          "name": "八日市南高校",
+          "slug": "yokaichiminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "3回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "彦根総合",
+          "score": 5,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        },
+        {
+          "display": "水口東",
+          "score": 0,
+          "won": false,
+          "name": "水口東高校",
+          "slug": "minakuchihigashi"
+        }
+      ]
+    },
+    {
       "date": "2026-09-05",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
@@ -17000,6 +17092,98 @@
         {
           "display": "甲西",
           "score": 25,
+          "won": true,
+          "name": "甲西高校",
+          "slug": "kosei"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "4回戦",
+      "venue": "ＨＰＬベースボールパーク",
+      "teams": [
+        {
+          "display": "八幡商業",
+          "score": 9,
+          "won": true,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
+        },
+        {
+          "display": "立命館守山",
+          "score": 4,
+          "won": false,
+          "name": "立命館守山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "4回戦",
+      "venue": "ＨＰＬベースボールパーク",
+      "teams": [
+        {
+          "display": "彦根翔西館",
+          "score": 3,
+          "won": false,
+          "name": "彦根翔西館高校",
+          "slug": "hikoneshosaikan"
+        },
+        {
+          "display": "光泉カトリック",
+          "score": 6,
+          "won": true,
+          "name": "光泉カトリック",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "4回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 8,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "水口",
+          "score": 4,
+          "won": false,
+          "name": "水口高校",
+          "slug": "minakuchi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "4回戦",
+      "venue": "湖東スタジアム",
+      "teams": [
+        {
+          "display": "守山北",
+          "score": 2,
+          "won": false,
+          "name": "守山北高校",
+          "slug": "moriyamakita"
+        },
+        {
+          "display": "甲西",
+          "score": 3,
           "won": true,
           "name": "甲西高校",
           "slug": "kosei"

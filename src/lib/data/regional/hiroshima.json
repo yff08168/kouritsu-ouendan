@@ -22865,6 +22865,190 @@
       ]
     },
     {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "海田",
+          "score": 6,
+          "won": false,
+          "name": "海田高校",
+          "slug": "kaita"
+        },
+        {
+          "display": "盈進",
+          "score": 7,
+          "won": true,
+          "name": "盈進",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "市立福山",
+          "score": 6,
+          "won": false,
+          "name": "福山高校",
+          "slug": "fukuyama"
+        },
+        {
+          "display": "武田",
+          "score": 9,
+          "won": true,
+          "name": "武田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "広陵",
+          "score": 24,
+          "won": true,
+          "name": "広陵",
+          "slug": null
+        },
+        {
+          "display": "呉三津田",
+          "score": 1,
+          "won": false,
+          "name": "呉三津田高校",
+          "slug": "kuremitsuta"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "広島商業",
+          "score": 1,
+          "won": true,
+          "name": "広島商業高校",
+          "slug": "hiroshimashogyo"
+        },
+        {
+          "display": "如水館",
+          "score": 0,
+          "won": false,
+          "name": "如水館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "広島新庄",
+          "score": 6,
+          "won": true,
+          "name": "広島新庄",
+          "slug": null
+        },
+        {
+          "display": "瀬戸内",
+          "score": 3,
+          "won": false,
+          "name": "瀬戸内",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "府中",
+          "score": 1,
+          "won": false,
+          "name": "府中高校",
+          "slug": "hiroshima-fuchu"
+        },
+        {
+          "display": "広島井口",
+          "score": 9,
+          "won": true,
+          "name": "広島井口高校",
+          "slug": "hiroshimainokuchi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "神辺旭",
+          "score": 6,
+          "won": true,
+          "name": "神辺旭高校",
+          "slug": "kannabeasahi"
+        },
+        {
+          "display": "沼田",
+          "score": 3,
+          "won": false,
+          "name": "沼田高校",
+          "slug": "hiroshima-numata"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 広島県大会",
+      "round": "1回戦",
+      "venue": "鶴岡一人記念球場",
+      "teams": [
+        {
+          "display": "市立呉",
+          "score": 12,
+          "won": true,
+          "name": "呉高校",
+          "slug": "kure"
+        },
+        {
+          "display": "福山工業",
+          "score": 0,
+          "won": false,
+          "name": "福山工業高校",
+          "slug": "fukuyamakogyo"
+        }
+      ]
+    },
+    {
       "date": "2025-09-21",
       "season": "autumn",
       "tournament": "2025年 秋季中国地区高校野球 広島県大会",
@@ -29275,158 +29459,6 @@
           "display": "広島国泰寺",
           "name": "広島国泰寺高校",
           "slug": "hiroshimakokutaiji"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-19",
-      "season": "autumn",
-      "tournament": "令和8年秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "海田",
-          "name": "海田高校",
-          "slug": "kaita"
-        },
-        {
-          "display": "盈進",
-          "name": "盈進",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-19",
-      "season": "autumn",
-      "tournament": "令和8年秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "市立福山",
-          "name": "福山高校",
-          "slug": "fukuyama"
-        },
-        {
-          "display": "武田",
-          "name": "武田",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-19",
-      "season": "autumn",
-      "tournament": "令和8年秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "広陵",
-          "name": "広陵",
-          "slug": null
-        },
-        {
-          "display": "呉三津田",
-          "name": "呉三津田高校",
-          "slug": "kuremitsuta"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-19",
-      "season": "autumn",
-      "tournament": "令和8年秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "ＢａｌｃｏｍＢＭＷＢａｓｅｂａｌｌＳｔａｄｉｕｍ",
-      "teams": [
-        {
-          "display": "広島商業",
-          "name": "広島商業高校",
-          "slug": "hiroshimashogyo"
-        },
-        {
-          "display": "如水館",
-          "name": "如水館",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-19",
-      "season": "autumn",
-      "tournament": "令和8年秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "広島新庄",
-          "name": "広島新庄",
-          "slug": null
-        },
-        {
-          "display": "瀬戸内",
-          "name": "瀬戸内",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-19",
-      "season": "autumn",
-      "tournament": "令和8年秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "ＢａｌｃｏｍＢＭＷＢａｓｅｂａｌｌＳｔａｄｉｕｍ",
-      "teams": [
-        {
-          "display": "府中",
-          "name": "府中高校",
-          "slug": "hiroshima-fuchu"
-        },
-        {
-          "display": "広島井口",
-          "name": "広島井口高校",
-          "slug": "hiroshimainokuchi"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-19",
-      "season": "autumn",
-      "tournament": "令和8年秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "ぶんちゃんしまなみ球場",
-      "teams": [
-        {
-          "display": "神辺旭",
-          "name": "神辺旭高校",
-          "slug": "kannabeasahi"
-        },
-        {
-          "display": "沼田",
-          "name": "沼田高校",
-          "slug": "hiroshima-numata"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-19",
-      "season": "autumn",
-      "tournament": "令和8年秋季中国地区高校野球 広島県大会",
-      "round": "1回戦",
-      "venue": "鶴岡一人記念球場",
-      "teams": [
-        {
-          "display": "市立呉",
-          "name": "呉高校",
-          "slug": "kure"
-        },
-        {
-          "display": "福山工業",
-          "name": "福山工業高校",
-          "slug": "fukuyamakogyo"
         }
       ]
     }

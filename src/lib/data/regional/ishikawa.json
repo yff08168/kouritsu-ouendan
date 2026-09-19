@@ -40746,6 +40746,60 @@
       }
     },
     {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 2,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "日本航空石川",
+          "score": 1,
+          "won": false,
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "羽咋工業",
+          "score": 0,
+          "won": false,
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        },
+        {
+          "display": "金沢学院大学附属",
+          "score": 3,
+          "won": true,
+          "name": "金沢学院大学附属",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-18",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
@@ -41091,6 +41145,33 @@
           "won": false,
           "name": "金沢二水高校",
           "slug": "kanazawanisui"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "4回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢桜丘",
+          "score": 3,
+          "won": true,
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
+        },
+        {
+          "display": "大聖寺実業",
+          "score": 2,
+          "won": false,
+          "name": "大聖寺実業高校",
+          "slug": "daishojijitsugyo"
         }
       ],
       "source": {

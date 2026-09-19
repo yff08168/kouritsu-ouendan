@@ -60192,6 +60192,144 @@
       ]
     },
     {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会",
+      "round": "1回戦",
+      "venue": "ひたちなか市民球場",
+      "teams": [
+        {
+          "display": "多賀",
+          "score": 6,
+          "won": false,
+          "name": "多賀高校",
+          "slug": "taga"
+        },
+        {
+          "display": "江戸川学園",
+          "score": 8,
+          "won": true,
+          "name": "江戸川学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会",
+      "round": "2回戦",
+      "venue": "ひたちなか市民球場",
+      "teams": [
+        {
+          "display": "岩瀬日大",
+          "score": 0,
+          "won": false,
+          "name": "岩瀬日大",
+          "slug": null
+        },
+        {
+          "display": "明秀日立",
+          "score": 5,
+          "won": true,
+          "name": "明秀日立",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会",
+      "round": "1回戦",
+      "venue": "茨城トヨタスポーツパークうしく（牛久運動公園）野球場",
+      "teams": [
+        {
+          "display": "境",
+          "score": 1,
+          "won": false,
+          "name": "境高校",
+          "slug": "sakai"
+        },
+        {
+          "display": "ウェルネス",
+          "score": 6,
+          "won": true,
+          "name": "ウェルネス",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会",
+      "round": "2回戦",
+      "venue": "茨城トヨタスポーツパークうしく（牛久運動公園）野球場",
+      "teams": [
+        {
+          "display": "四谷学院",
+          "score": 2,
+          "won": false,
+          "name": "四谷学院",
+          "slug": null
+        },
+        {
+          "display": "石岡商",
+          "score": 4,
+          "won": true,
+          "name": "石岡商業高校",
+          "slug": "ishiokashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会",
+      "round": "2回戦",
+      "venue": "笠間市民球場",
+      "teams": [
+        {
+          "display": "水戸葵陵",
+          "score": 2,
+          "won": false,
+          "name": "水戸葵陵",
+          "slug": null
+        },
+        {
+          "display": "土浦日大",
+          "score": 7,
+          "won": true,
+          "name": "土浦日大",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高等学校野球茨城県大会",
+      "round": "2回戦",
+      "venue": "笠間市民球場",
+      "teams": [
+        {
+          "display": "日立一",
+          "score": 4,
+          "won": true,
+          "name": "日立第一高校",
+          "slug": "hitachidaiichi"
+        },
+        {
+          "display": "古河三",
+          "score": 2,
+          "won": false,
+          "name": "古河第三高校",
+          "slug": "kogadaisan"
+        }
+      ]
+    },
+    {
       "date": "2023-09-09",
       "season": "autumn",
       "tournament": "第76回 秋季関東地区高等学校野球茨城県大会 2次予選",
@@ -92687,46 +92825,6 @@
           "won": false,
           "name": "霞ヶ浦",
           "slug": null
-        }
-      ]
-    }
-  ],
-  "upcoming": [
-    {
-      "date": "2026-09-19",
-      "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 茨城県大会",
-      "round": "1回戦",
-      "venue": "ひたちなか市民球場",
-      "teams": [
-        {
-          "display": "江戸川学園",
-          "name": "江戸川学園",
-          "slug": null
-        },
-        {
-          "display": "多賀",
-          "name": "多賀高校",
-          "slug": "taga"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-19",
-      "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 茨城県大会",
-      "round": "1回戦",
-      "venue": "茨城トヨタスポーツパークうしく野球場",
-      "teams": [
-        {
-          "display": "ウェルネス",
-          "name": "ウェルネス",
-          "slug": null
-        },
-        {
-          "display": "境",
-          "name": "境高校",
-          "slug": "sakai"
         }
       ]
     }

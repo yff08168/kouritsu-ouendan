@@ -22747,6 +22747,95 @@
       ]
     },
     {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "1回戦",
+      "venue": "鳥栖市民球場",
+      "teams": [
+        {
+          "display": "佐賀農業",
+          "score": 1,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "name": "佐賀農業高校",
+          "slug": "saganogyo"
+        },
+        {
+          "display": "鳥栖",
+          "score": 4,
+          "won": true,
+          "innings": [
+            0,
+            1,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "name": "鳥栖高校",
+          "slug": "tosu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "1回戦",
+      "venue": "鳥栖市民球場",
+      "teams": [
+        {
+          "display": "佐賀西",
+          "score": 5,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            1,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "佐賀西高校",
+          "slug": "saganishi"
+        },
+        {
+          "display": "太良",
+          "score": 4,
+          "won": false,
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "name": "太良高校",
+          "slug": "tara"
+        }
+      ]
+    },
+    {
       "date": "2025-09-29",
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球佐賀大会",
@@ -34310,6 +34399,27 @@
           "won": false,
           "name": "佐賀農業高校",
           "slug": "saganogyo"
+        }
+      ]
+    }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "令和8年秋季九州地区高校野球 佐賀県大会",
+      "round": "1回戦",
+      "venue": "鳥栖市民球場",
+      "teams": [
+        {
+          "display": "小城",
+          "name": "小城高校",
+          "slug": "ogi"
+        },
+        {
+          "display": "佐賀商業",
+          "name": "佐賀商業高校",
+          "slug": "sagashogyo"
         }
       ]
     }

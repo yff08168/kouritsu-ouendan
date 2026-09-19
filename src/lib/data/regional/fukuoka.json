@@ -46524,6 +46524,52 @@
       ]
     },
     {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "大和青藍",
+          "score": 10,
+          "won": true,
+          "name": "大和青藍",
+          "slug": null
+        },
+        {
+          "display": "行橋",
+          "score": 0,
+          "won": false,
+          "name": "行橋高校",
+          "slug": "yukuhashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "近大福岡",
+          "score": 14,
+          "won": true,
+          "name": "近大福岡",
+          "slug": null
+        },
+        {
+          "display": "常磐",
+          "score": 3,
+          "won": false,
+          "name": "常磐",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": null,
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
@@ -47580,6 +47626,52 @@
           "won": false,
           "name": "八幡南高校",
           "slug": "yahataminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "西短大附",
+          "score": 15,
+          "won": true,
+          "name": "西短大附",
+          "slug": null
+        },
+        {
+          "display": "柳川",
+          "score": 0,
+          "won": false,
+          "name": "柳川",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "福大大濠",
+          "score": 6,
+          "won": true,
+          "name": "福大大濠",
+          "slug": null
+        },
+        {
+          "display": "福岡舞鶴",
+          "score": 1,
+          "won": false,
+          "name": "福岡舞鶴",
+          "slug": null
         }
       ]
     },

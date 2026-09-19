@@ -14715,6 +14715,52 @@
       ]
     },
     {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高校野球 岩手県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "久慈",
+          "score": 9,
+          "won": true,
+          "name": "久慈高校",
+          "slug": "kuji"
+        },
+        {
+          "display": "一関修紅",
+          "score": 1,
+          "won": false,
+          "name": "一関修紅",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高校野球 岩手県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "盛岡商業",
+          "score": 4,
+          "won": true,
+          "name": "盛岡商業高校",
+          "slug": "moriokashogyo"
+        },
+        {
+          "display": "花巻南",
+          "score": 3,
+          "won": false,
+          "name": "花巻南高校",
+          "slug": "hanamakiminami"
+        }
+      ]
+    },
+    {
       "date": "2026-09-16",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季東北地区高校野球 岩手県大会",
@@ -14849,6 +14895,29 @@
           "won": false,
           "name": "専大北上",
           "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高校野球 岩手県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "花巻北",
+          "score": 6,
+          "won": true,
+          "name": "花巻北高校",
+          "slug": "hanamakikita"
+        },
+        {
+          "display": "一関第一",
+          "score": 4,
+          "won": false,
+          "name": "一関第一高校",
+          "slug": "ichinosekidaiichi"
         }
       ]
     },

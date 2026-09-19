@@ -20999,6 +20999,99 @@
       ]
     },
     {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "平和リース球場（県立鴨池野球場）",
+      "teams": [
+        {
+          "display": "出水",
+          "score": 5,
+          "won": true,
+          "name": "出水高校",
+          "slug": "kagoshima-izumi"
+        },
+        {
+          "display": "出水工業",
+          "score": 4,
+          "won": false,
+          "name": "出水工業高校",
+          "slug": "izumikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "平和リース球場（県立鴨池野球場）",
+      "teams": [
+        {
+          "display": "川薩清修館",
+          "score": 14,
+          "won": true,
+          "name": "川薩清修館高校",
+          "slug": "sensatsuseishukan"
+        },
+        {
+          "display": "樟南第二",
+          "score": 11,
+          "won": false,
+          "name": "樟南第二",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "鹿児島市鴨池公園野球場",
+      "teams": [
+        {
+          "display": "指宿・指宿商業・山川",
+          "score": 6,
+          "won": false,
+          "name": "指宿・指宿商業・山川",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "出水商業",
+          "score": 10,
+          "won": true,
+          "name": "出水商業高校",
+          "slug": "izumishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "鹿児島市鴨池公園野球場",
+      "teams": [
+        {
+          "display": "鹿児島商業",
+          "score": 7,
+          "won": true,
+          "name": "鹿児島商業高校",
+          "slug": "kagoshimashogyo"
+        },
+        {
+          "display": "吹上",
+          "score": 0,
+          "won": false,
+          "name": "吹上高校",
+          "slug": "fukiage"
+        }
+      ]
+    },
+    {
       "date": "2025-09-24",
       "season": "autumn",
       "tournament": "2025年 秋季九州地区高校野球 鹿児島県大会",
@@ -31984,25 +32077,6 @@
       ]
     },
     {
-      "date": "2026-09-19",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "鹿児島市鴨池公園野球場",
-      "teams": [
-        {
-          "display": "鹿児島商業",
-          "name": "鹿児島商業高校",
-          "slug": "kagoshimashogyo"
-        },
-        {
-          "display": "吹上",
-          "name": "吹上高校",
-          "slug": "fukiage"
-        }
-      ]
-    },
-    {
       "date": "2026-09-20",
       "season": "autumn",
       "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
@@ -32325,44 +32399,6 @@
           "display": "鹿児島高専",
           "name": "鹿児島工業高専",
           "slug": "kagoshimakogyo-kosen"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-19",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "平和リース球場（県立鴨池野球場）",
-      "teams": [
-        {
-          "display": "出水",
-          "name": "出水高校",
-          "slug": "kagoshima-izumi"
-        },
-        {
-          "display": "出水工業",
-          "name": "出水工業高校",
-          "slug": "izumikogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-19",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "平和リース球場（県立鴨池野球場）",
-      "teams": [
-        {
-          "display": "川薩清修館",
-          "name": "川薩清修館高校",
-          "slug": "sensatsuseishukan"
-        },
-        {
-          "display": "樟南第二",
-          "name": "樟南第二",
-          "slug": null
         }
       ]
     }

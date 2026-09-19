@@ -24469,6 +24469,190 @@
       ]
     },
     {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会",
+      "round": "1回戦",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "篠ノ井",
+          "score": 3,
+          "won": false,
+          "name": "篠ノ井高校",
+          "slug": "shinonoi"
+        },
+        {
+          "display": "岩村田",
+          "score": 10,
+          "won": true,
+          "name": "岩村田高校",
+          "slug": "iwamurada"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会",
+      "round": "1回戦",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "須坂",
+          "score": 10,
+          "won": true,
+          "name": "須坂高校",
+          "slug": "suzaka"
+        },
+        {
+          "display": "飯田OIDE長姫",
+          "score": 6,
+          "won": false,
+          "name": "飯田ＯＩＤＥ長姫高校",
+          "slug": "iidaoideosahime"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会",
+      "round": "1回戦",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "蓼科",
+          "score": 3,
+          "won": false,
+          "name": "蓼科高校",
+          "slug": "tateshina"
+        },
+        {
+          "display": "長野俊英",
+          "score": 5,
+          "won": true,
+          "name": "長野俊英",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会",
+      "round": "1回戦",
+      "venue": "鈴与マタイスポーツパーク野球場",
+      "teams": [
+        {
+          "display": "阿智",
+          "score": 5,
+          "won": true,
+          "name": "阿智高校",
+          "slug": "achi"
+        },
+        {
+          "display": "松本県ヶ丘",
+          "score": 2,
+          "won": false,
+          "name": "松本県ケ丘高校",
+          "slug": "matsumotoagatagaoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会",
+      "round": "1回戦",
+      "venue": "鈴与マタイスポーツパーク野球場",
+      "teams": [
+        {
+          "display": "松本国際",
+          "score": 2,
+          "won": false,
+          "name": "松本国際",
+          "slug": null
+        },
+        {
+          "display": "上田西",
+          "score": 5,
+          "won": true,
+          "name": "上田西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会",
+      "round": "1回戦",
+      "venue": "鈴与マタイスポーツパーク野球場",
+      "teams": [
+        {
+          "display": "松本深志",
+          "score": 1,
+          "won": false,
+          "name": "松本深志高校",
+          "slug": "matsumotofukashi"
+        },
+        {
+          "display": "上田東",
+          "score": 4,
+          "won": true,
+          "name": "上田東高校",
+          "slug": "uedahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会",
+      "round": "1回戦",
+      "venue": "長野県営野球場",
+      "teams": [
+        {
+          "display": "赤穂",
+          "score": 3,
+          "won": false,
+          "name": "赤穂高校",
+          "slug": "akaho"
+        },
+        {
+          "display": "都市大塩尻",
+          "score": 6,
+          "won": true,
+          "name": "都市大塩尻",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会",
+      "round": "1回戦",
+      "venue": "長野県営野球場",
+      "teams": [
+        {
+          "display": "飯山",
+          "score": 0,
+          "won": false,
+          "name": "飯山高校",
+          "slug": "iiyama"
+        },
+        {
+          "display": "東海大諏訪",
+          "score": 10,
+          "won": true,
+          "name": "東海大諏訪",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-09-13",
       "season": "autumn",
       "tournament": "第155回 北信越地区高等学校野球長野県大会 北信予選会",
@@ -32302,168 +32486,6 @@
       ]
     },
     {
-      "date": "2023-09-03",
-      "season": "autumn",
-      "tournament": "第149回北信越地区高等学校野球長野県大会北信予選会",
-      "round": "2回戦",
-      "venue": "長野オリンピックスタジアム",
-      "teams": [
-        {
-          "display": "更級農業",
-          "score": 4,
-          "won": true,
-          "name": "更級農業高校",
-          "slug": "sarashinanogyo"
-        },
-        {
-          "display": "松代",
-          "score": 1,
-          "won": false,
-          "name": "松代高校",
-          "slug": "nagano-matsudai"
-        }
-      ]
-    },
-    {
-      "date": "2023-09-03",
-      "season": "autumn",
-      "tournament": "第149回北信越地区高等学校野球長野県大会北信予選会",
-      "round": "2回戦",
-      "venue": "長野オリンピックスタジアム",
-      "teams": [
-        {
-          "display": "長野俊英",
-          "score": 8,
-          "won": true,
-          "name": "長野俊英",
-          "slug": null
-        },
-        {
-          "display": "飯山",
-          "score": 0,
-          "won": false,
-          "name": "飯山高校",
-          "slug": "iiyama"
-        }
-      ]
-    },
-    {
-      "date": "2023-09-03",
-      "season": "autumn",
-      "tournament": "第149回北信越地区高等学校野球長野県大会東信予選会",
-      "round": "1回戦",
-      "venue": "県営上田野球場",
-      "teams": [
-        {
-          "display": "上田染谷丘",
-          "score": 1,
-          "won": false,
-          "name": "上田染谷丘高校",
-          "slug": "uedasomeyagaoka"
-        },
-        {
-          "display": "佐久長聖",
-          "score": 6,
-          "won": true,
-          "name": "佐久長聖",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2023-09-03",
-      "season": "autumn",
-      "tournament": "第149回北信越地区高等学校野球長野県大会東信予選会",
-      "round": "1回戦",
-      "venue": "県営上田野球場",
-      "teams": [
-        {
-          "display": "軽井沢・野沢南・小海",
-          "score": 1,
-          "won": false,
-          "name": "軽井沢・野沢南・小海",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "上田",
-          "score": 9,
-          "won": true,
-          "name": "上田高校",
-          "slug": "ueda"
-        }
-      ]
-    },
-    {
-      "date": "2023-09-03",
-      "season": "autumn",
-      "tournament": "第149回北信越地区高等学校野球長野県大会東信予選会",
-      "round": "1回戦",
-      "venue": "県営上田野球場",
-      "teams": [
-        {
-          "display": "小諸",
-          "score": 3,
-          "won": false,
-          "name": "小諸",
-          "slug": null
-        },
-        {
-          "display": "丸子修学館",
-          "score": 8,
-          "won": true,
-          "name": "丸子修学館高校",
-          "slug": "marukoshugakukan"
-        }
-      ]
-    },
-    {
-      "date": "2023-09-03",
-      "season": "autumn",
-      "tournament": "第149回北信越地区高等学校野球長野県大会南信予選会",
-      "round": "2回戦",
-      "venue": "しんきん諏訪湖スタジアム",
-      "teams": [
-        {
-          "display": "飯田OIDE長姫",
-          "score": 15,
-          "won": true,
-          "name": "飯田ＯＩＤＥ長姫高校",
-          "slug": "iidaoideosahime"
-        },
-        {
-          "display": "岡谷工業",
-          "score": 2,
-          "won": false,
-          "name": "岡谷工業高校",
-          "slug": "okayakogyo"
-        }
-      ]
-    },
-    {
-      "date": "2023-09-03",
-      "season": "autumn",
-      "tournament": "第149回北信越地区高等学校野球長野県大会南信予選会",
-      "round": "2回戦",
-      "venue": "しんきん諏訪湖スタジアム",
-      "teams": [
-        {
-          "display": "下諏訪向陽",
-          "score": 4,
-          "won": false,
-          "name": "下諏訪向陽高校",
-          "slug": "shimosuwakoyo"
-        },
-        {
-          "display": "上伊那農業",
-          "score": 7,
-          "won": true,
-          "name": "上伊那農業高校",
-          "slug": "kamiinanogyo"
-        }
-      ]
-    },
-    {
       "date": "2022-10-02",
       "season": "autumn",
       "tournament": "第147回北信越地区高等学校野球長野県大会",
@@ -35647,6 +35669,84 @@
           "score": 27,
           "won": true,
           "name": "長野",
+          "slug": null
+        }
+      ]
+    }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和8年秋季北信越地区高校野球 長野県大会",
+      "round": "1回戦",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "⻑野俊英",
+          "name": "⻑野俊英",
+          "slug": null
+        },
+        {
+          "display": "蓼科",
+          "name": "蓼科高校",
+          "slug": "tateshina"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和8年秋季北信越地区高校野球 長野県大会",
+      "round": "1回戦",
+      "venue": "長野県営野球場",
+      "teams": [
+        {
+          "display": "都市大学塩尻",
+          "name": "都市大学塩尻",
+          "slug": null
+        },
+        {
+          "display": "赤穂",
+          "name": "赤穂高校",
+          "slug": "akaho"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和8年秋季北信越地区高校野球 長野県大会",
+      "round": "1回戦",
+      "venue": "鈴与マタイスポーツパーク野球場",
+      "teams": [
+        {
+          "display": "松本県ケ丘",
+          "name": "松本県ケ丘高校",
+          "slug": "matsumotoagatagaoka"
+        },
+        {
+          "display": "阿智",
+          "name": "阿智高校",
+          "slug": "achi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "令和8年秋季北信越地区高校野球 長野県大会",
+      "round": "1回戦",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "須坂",
+          "name": "須坂高校",
+          "slug": "suzaka"
+        },
+        {
+          "display": "飯田OIDE⻑姫",
+          "name": "飯田OIDE⻑姫",
           "slug": null
         }
       ]

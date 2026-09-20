@@ -14761,6 +14761,52 @@
       ]
     },
     {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高校野球 岩手県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "水沢工業",
+          "score": 1,
+          "won": false,
+          "name": "水沢工業高校",
+          "slug": "mizusawakogyo"
+        },
+        {
+          "display": "一関学院",
+          "score": 4,
+          "won": true,
+          "name": "一関学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高校野球 岩手県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "岩手",
+          "score": 0,
+          "won": false,
+          "name": "岩手",
+          "slug": null
+        },
+        {
+          "display": "盛岡中央",
+          "score": 10,
+          "won": true,
+          "name": "盛岡中央",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-09-16",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季東北地区高校野球 岩手県大会",

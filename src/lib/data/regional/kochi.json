@@ -6001,6 +6001,100 @@
       ]
     },
     {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季四国地区高校野球 高知県大会",
+      "round": "2回戦",
+      "venue": "県立春野野球場",
+      "teams": [
+        {
+          "display": "高知工業",
+          "score": 2,
+          "won": false,
+          "name": "高知工業高校",
+          "slug": "kochikogyo"
+        },
+        {
+          "display": "高知",
+          "score": 8,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季四国地区高校野球 高知県大会",
+      "round": "2回戦",
+      "venue": "県立春野野球場",
+      "teams": [
+        {
+          "display": "高知海洋・伊野商業幡多農",
+          "score": 3,
+          "won": false,
+          "name": "高知海洋・伊野商業幡多農",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "高知国際",
+          "score": 13,
+          "won": true,
+          "name": "高知国際高校",
+          "slug": "kochikokusai"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季四国地区高校野球 高知県大会",
+      "round": "2回戦",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "土佐",
+          "score": 6,
+          "won": true,
+          "name": "土佐",
+          "slug": null
+        },
+        {
+          "display": "丸の内・東工業",
+          "score": 0,
+          "won": false,
+          "name": "丸の内・東工業",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季四国地区高校野球 高知県大会",
+      "round": "2回戦",
+      "venue": "日本トーター野球場",
+      "teams": [
+        {
+          "display": "高知商業",
+          "score": 2,
+          "won": true,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        },
+        {
+          "display": "窪川",
+          "score": 0,
+          "won": false,
+          "name": "窪川高校",
+          "slug": "kubokawa"
+        }
+      ]
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季四国地区高校野球 高知県大会",

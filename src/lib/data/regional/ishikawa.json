@@ -40773,6 +40773,33 @@
       }
     },
     {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "翠星",
+          "score": 1,
+          "won": false,
+          "name": "翠星高校",
+          "slug": "suisei"
+        },
+        {
+          "display": "金沢商業",
+          "score": 22,
+          "won": true,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
@@ -41172,6 +41199,60 @@
           "won": false,
           "name": "大聖寺実業高校",
           "slug": "daishojijitsugyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "4回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松商業",
+          "score": 1,
+          "won": false,
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        },
+        {
+          "display": "門前",
+          "score": 8,
+          "won": true,
+          "name": "門前高校",
+          "slug": "monzen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "4回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢北陵",
+          "score": 1,
+          "won": false,
+          "name": "金沢北陵高校",
+          "slug": "kanazawahokuryo"
+        },
+        {
+          "display": "北陸学院",
+          "score": 9,
+          "won": true,
+          "name": "北陸学院",
+          "slug": null
         }
       ],
       "source": {

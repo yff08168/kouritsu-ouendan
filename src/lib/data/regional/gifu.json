@@ -15912,6 +15912,52 @@
       ]
     },
     {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "round": "5回戦",
+      "venue": "ぎふしん長良川球場",
+      "teams": [
+        {
+          "display": "関商工",
+          "score": 5,
+          "won": true,
+          "name": "関商工高校",
+          "slug": "sekishoko"
+        },
+        {
+          "display": "麗澤瑞浪",
+          "score": 4,
+          "won": false,
+          "name": "麗澤瑞浪",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "round": "5回戦",
+      "venue": "河上薬品スタジアム（関市民球場）",
+      "teams": [
+        {
+          "display": "中京",
+          "score": 6,
+          "won": true,
+          "name": "中京",
+          "slug": null
+        },
+        {
+          "display": "大垣西",
+          "score": 3,
+          "won": false,
+          "name": "大垣西高校",
+          "slug": "ogakinishi"
+        }
+      ]
+    },
+    {
       "date": "2026-08-29",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
@@ -16507,6 +16553,52 @@
           "won": false,
           "name": "大垣南高校",
           "slug": "ogakiminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "round": "6回戦",
+      "venue": "ぎふしん長良川球場",
+      "teams": [
+        {
+          "display": "大垣日大",
+          "score": 6,
+          "won": true,
+          "name": "大垣日大",
+          "slug": null
+        },
+        {
+          "display": "岐阜第一",
+          "score": 3,
+          "won": false,
+          "name": "岐阜第一",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季岐阜県高等学校野球大会",
+      "round": "6回戦",
+      "venue": "河上薬品スタジアム（関市民球場）",
+      "teams": [
+        {
+          "display": "県岐阜商",
+          "score": 10,
+          "won": true,
+          "name": "岐阜商業高校",
+          "slug": "gifushogyo"
+        },
+        {
+          "display": "大垣商",
+          "score": 2,
+          "won": false,
+          "name": "大垣商業高校",
+          "slug": "ogakishogyo"
         }
       ]
     },

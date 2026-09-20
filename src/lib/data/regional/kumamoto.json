@@ -41465,6 +41465,75 @@
       ]
     },
     {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "翔陽",
+          "score": 7,
+          "won": true,
+          "name": "翔陽高校",
+          "slug": "kumamoto-shoyo"
+        },
+        {
+          "display": "八代",
+          "score": 0,
+          "won": false,
+          "name": "八代高校",
+          "slug": "yatsushiro"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "熊本国府",
+          "score": 0,
+          "won": false,
+          "name": "熊本国府",
+          "slug": null
+        },
+        {
+          "display": "熊本工業",
+          "score": 10,
+          "won": true,
+          "name": "熊本工業高校",
+          "slug": "kumamotokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "八代工業",
+          "score": 2,
+          "won": false,
+          "name": "八代工業高校",
+          "slug": "yatsushirokogyo"
+        },
+        {
+          "display": "学園大付属",
+          "score": 7,
+          "won": true,
+          "name": "学園大付属",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球熊本大会",

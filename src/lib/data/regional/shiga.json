@@ -16711,6 +16711,29 @@
       "season": "autumn",
       "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
       "round": "2回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "近江兄弟社",
+          "score": 17,
+          "won": true,
+          "name": "近江兄弟社",
+          "slug": null
+        },
+        {
+          "display": "栗東",
+          "score": 2,
+          "won": false,
+          "name": "栗東高校",
+          "slug": "ritto"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "2回戦",
       "venue": "ＨＰＬベースボールパーク",
       "teams": [
         {
@@ -16749,6 +16772,75 @@
           "won": false,
           "name": "水口東高校",
           "slug": "minakuchihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "綾羽",
+          "score": 7,
+          "won": true,
+          "name": "綾羽",
+          "slug": null
+        },
+        {
+          "display": "八幡工業",
+          "score": 3,
+          "won": false,
+          "name": "八幡工業高校",
+          "slug": "hachimankogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "滋賀短大附属",
+          "score": 1,
+          "won": false,
+          "name": "滋賀短大附属",
+          "slug": null
+        },
+        {
+          "display": "北大津",
+          "score": 5,
+          "won": true,
+          "name": "北大津高校",
+          "slug": "kitaotsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "3回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "近江兄弟社",
+          "score": 2,
+          "won": false,
+          "name": "近江兄弟社",
+          "slug": null
+        },
+        {
+          "display": "八日市南",
+          "score": 9,
+          "won": true,
+          "name": "八日市南高校",
+          "slug": "yokaichiminami"
         }
       ]
     },

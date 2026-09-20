@@ -36157,6 +36157,114 @@
       }
     },
     {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "神戸弘陵学園",
+          "score": 12,
+          "won": true,
+          "name": "神戸弘陵学園",
+          "slug": null
+        },
+        {
+          "display": "御影",
+          "score": 0,
+          "won": false,
+          "name": "御影高校",
+          "slug": "mikage"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "加古川西",
+          "score": 3,
+          "won": false,
+          "name": "加古川西高校",
+          "slug": "kakogawanishi"
+        },
+        {
+          "display": "神戸学院大附",
+          "score": 11,
+          "won": true,
+          "name": "神戸学院大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "報徳学園",
+          "score": 7,
+          "won": true,
+          "name": "報徳学園",
+          "slug": null
+        },
+        {
+          "display": "相生産業",
+          "score": 0,
+          "won": false,
+          "name": "相生産業高校",
+          "slug": "aioisangyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 兵庫県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "西宮苦楽園",
+          "score": 6,
+          "won": true,
+          "name": "西宮苦楽園高校",
+          "slug": "nishinomiyakurakuen"
+        },
+        {
+          "display": "龍野北",
+          "score": 2,
+          "won": false,
+          "name": "龍野北高校",
+          "slug": "tatsunokita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季近畿地区高校野球 兵庫県大会",
@@ -36581,6 +36689,60 @@
           "won": false,
           "name": "須磨東高校",
           "slug": "sumahigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 兵庫県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "三田松聖",
+          "score": 0,
+          "won": false,
+          "name": "三田松聖",
+          "slug": null
+        },
+        {
+          "display": "東洋大姫路",
+          "score": 7,
+          "won": true,
+          "name": "東洋大姫路",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 兵庫県大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "尼崎工業",
+          "score": 4,
+          "won": true,
+          "name": "尼崎工業高校",
+          "slug": "amagasakikogyo"
+        },
+        {
+          "display": "小野",
+          "score": 1,
+          "won": false,
+          "name": "小野高校",
+          "slug": "hyogo-ono"
         }
       ],
       "source": {

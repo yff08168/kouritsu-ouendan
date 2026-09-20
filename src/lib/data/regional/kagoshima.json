@@ -20999,6 +20999,52 @@
       ]
     },
     {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "平和リース球場（県立鴨池野球場）",
+      "teams": [
+        {
+          "display": "甲南",
+          "score": 4,
+          "won": false,
+          "name": "甲南高校",
+          "slug": "kagoshima-konan"
+        },
+        {
+          "display": "鶴丸",
+          "score": 7,
+          "won": true,
+          "name": "鶴丸高校",
+          "slug": "tsurumaru"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "平和リース球場（県立鴨池野球場）",
+      "teams": [
+        {
+          "display": "尚志館",
+          "score": 6,
+          "won": true,
+          "name": "尚志館",
+          "slug": null
+        },
+        {
+          "display": "鹿児島高専",
+          "score": 2,
+          "won": false,
+          "name": "鹿児島工業高専",
+          "slug": "kagoshimakogyo-kosen"
+        }
+      ]
+    },
+    {
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
@@ -21088,6 +21134,52 @@
           "won": false,
           "name": "吹上高校",
           "slug": "fukiage"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "鹿児島市鴨池公園野球場",
+      "teams": [
+        {
+          "display": "武岡台",
+          "score": 5,
+          "won": false,
+          "name": "武岡台高校",
+          "slug": "takeokadai"
+        },
+        {
+          "display": "鹿屋農業",
+          "score": 9,
+          "won": true,
+          "name": "鹿屋農業高校",
+          "slug": "kanoyanogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "鹿児島市鴨池公園野球場",
+      "teams": [
+        {
+          "display": "頴娃",
+          "score": 5,
+          "won": false,
+          "name": "頴娃高校",
+          "slug": "ei"
+        },
+        {
+          "display": "加世田",
+          "score": 6,
+          "won": true,
+          "name": "加世田高校",
+          "slug": "kagoshima-kaseda"
         }
       ]
     },
@@ -32058,63 +32150,6 @@
   ],
   "upcoming": [
     {
-      "date": "2026-09-19",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "鹿児島市鴨池公園野球場",
-      "teams": [
-        {
-          "display": "国分中央",
-          "name": "国分中央高校",
-          "slug": "kokubuchuo"
-        },
-        {
-          "display": "出水商業",
-          "name": "出水商業高校",
-          "slug": "izumishogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-20",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "鹿児島市鴨池公園野球場",
-      "teams": [
-        {
-          "display": "武岡台",
-          "name": "武岡台高校",
-          "slug": "takeokadai"
-        },
-        {
-          "display": "鹿屋農業",
-          "name": "鹿屋農業高校",
-          "slug": "kanoyanogyo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-20",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "鹿児島市鴨池公園野球場",
-      "teams": [
-        {
-          "display": "頴娃",
-          "name": "頴娃高校",
-          "slug": "ei"
-        },
-        {
-          "display": "加世田",
-          "name": "加世田高校",
-          "slug": "kagoshima-kaseda"
-        }
-      ]
-    },
-    {
       "date": "2026-09-21",
       "season": "autumn",
       "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
@@ -32361,44 +32396,6 @@
           "display": "伊集院",
           "name": "伊集院高校",
           "slug": "ijuin"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-20",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "平和リース球場（県立鴨池野球場）",
-      "teams": [
-        {
-          "display": "甲南",
-          "name": "甲南高校",
-          "slug": "kagoshima-konan"
-        },
-        {
-          "display": "鶴丸",
-          "name": "鶴丸高校",
-          "slug": "tsurumaru"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-20",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "平和リース球場（県立鴨池野球場）",
-      "teams": [
-        {
-          "display": "尚志館",
-          "name": "尚志館",
-          "slug": null
-        },
-        {
-          "display": "鹿児島高専",
-          "name": "鹿児島工業高専",
-          "slug": "kagoshimakogyo-kosen"
         }
       ]
     }

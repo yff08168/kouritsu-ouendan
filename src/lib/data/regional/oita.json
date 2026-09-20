@@ -31793,6 +31793,60 @@
       }
     },
     {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
+      "round": "1回戦",
+      "venue": "佐伯中央病院スタジアム",
+      "teams": [
+        {
+          "display": "藤蔭",
+          "score": 10,
+          "won": true,
+          "name": "藤蔭",
+          "slug": null
+        },
+        {
+          "display": "臼杵",
+          "score": 5,
+          "won": false,
+          "name": "臼杵高校",
+          "slug": "usuki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
+      "round": "1回戦",
+      "venue": "佐伯中央病院スタジアム",
+      "teams": [
+        {
+          "display": "玖珠美山",
+          "score": 0,
+          "won": false,
+          "name": "玖珠美山高校",
+          "slug": "kusumiyama"
+        },
+        {
+          "display": "津久見",
+          "score": 9,
+          "won": true,
+          "name": "津久見高校",
+          "slug": "tsukumi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
@@ -31839,6 +31893,61 @@
           "won": false,
           "name": "大分工業高校",
           "slug": "oitakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
+      "round": "1回戦",
+      "venue": "フジジンの杜スタジアム",
+      "teams": [
+        {
+          "display": "柳ヶ浦",
+          "score": 12,
+          "won": true,
+          "name": "柳ヶ浦",
+          "slug": null
+        },
+        {
+          "display": "大分東・竹田",
+          "score": 2,
+          "won": false,
+          "name": "大分東・竹田",
+          "slug": null,
+          "combined": true
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
+      "round": "1回戦",
+      "venue": "フジジンの杜スタジアム",
+      "teams": [
+        {
+          "display": "中津南",
+          "score": 1,
+          "won": false,
+          "name": "中津南高校",
+          "slug": "nakatsuminami"
+        },
+        {
+          "display": "日本文理大附",
+          "score": 10,
+          "won": true,
+          "name": "日本文理大附",
+          "slug": null
         }
       ],
       "source": {
@@ -44637,85 +44746,6 @@
           "won": false,
           "name": "明豊",
           "slug": null
-        }
-      ]
-    }
-  ],
-  "upcoming": [
-    {
-      "date": "2026-09-20",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 大分県大会",
-      "round": "1回戦",
-      "venue": "フジジンの杜スタジアム",
-      "teams": [
-        {
-          "display": "柳ヶ浦",
-          "name": "柳ヶ浦",
-          "slug": null
-        },
-        {
-          "display": "大分東・竹田",
-          "name": "大分東・竹田",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-09-20",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 大分県大会",
-      "round": "1回戦",
-      "venue": "フジジンの杜スタジアム",
-      "teams": [
-        {
-          "display": "中津南",
-          "name": "中津南高校",
-          "slug": "nakatsuminami"
-        },
-        {
-          "display": "日本文理大附",
-          "name": "日本文理大附",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-09-20",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 大分県大会",
-      "round": "1回戦",
-      "venue": "佐伯中央病院スタジアム",
-      "teams": [
-        {
-          "display": "藤蔭",
-          "name": "藤蔭",
-          "slug": null
-        },
-        {
-          "display": "臼杵",
-          "name": "臼杵高校",
-          "slug": "usuki"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-20",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 大分県大会",
-      "round": "1回戦",
-      "venue": "佐伯中央病院スタジアム",
-      "teams": [
-        {
-          "display": "玖珠美山",
-          "name": "玖珠美山高校",
-          "slug": "kusumiyama"
-        },
-        {
-          "display": "津久見",
-          "name": "津久見高校",
-          "slug": "tsukumi"
         }
       ]
     }

@@ -46547,6 +46547,52 @@
       ]
     },
     {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "福翔",
+          "score": 19,
+          "won": true,
+          "name": "福翔高校",
+          "slug": "fukusho"
+        },
+        {
+          "display": "福岡常葉",
+          "score": 5,
+          "won": false,
+          "name": "福岡常葉",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "大牟田市延命球場",
+      "teams": [
+        {
+          "display": "九産大九州",
+          "score": 10,
+          "won": true,
+          "name": "九産大九州",
+          "slug": null
+        },
+        {
+          "display": "筑紫台",
+          "score": 9,
+          "won": false,
+          "name": "筑紫台",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
@@ -46566,6 +46612,75 @@
           "won": false,
           "name": "常磐",
           "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "戸畑",
+          "score": 5,
+          "won": true,
+          "name": "戸畑高校",
+          "slug": "tobata"
+        },
+        {
+          "display": "鞍手",
+          "score": 3,
+          "won": false,
+          "name": "鞍手高校",
+          "slug": "kurate"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "小倉工業",
+          "score": 6,
+          "won": true,
+          "name": "小倉工業高校",
+          "slug": "kokurakogyo"
+        },
+        {
+          "display": "小倉南",
+          "score": 1,
+          "won": false,
+          "name": "小倉南高校",
+          "slug": "kokuraminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "2回戦",
+      "venue": "桃園球場",
+      "teams": [
+        {
+          "display": "北九州",
+          "score": 4,
+          "won": true,
+          "name": "北九州高校",
+          "slug": "kitakyushu"
+        },
+        {
+          "display": "小倉",
+          "score": 0,
+          "won": false,
+          "name": "小倉高校",
+          "slug": "kokura"
         }
       ]
     },

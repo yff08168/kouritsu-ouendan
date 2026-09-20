@@ -43572,6 +43572,60 @@
       }
     },
     {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "4回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "伊勢崎工",
+          "score": 0,
+          "won": false,
+          "name": "伊勢崎工業高校",
+          "slug": "isesakikogyo"
+        },
+        {
+          "display": "健大高崎",
+          "score": 10,
+          "won": true,
+          "name": "健大高崎",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "round": "4回戦",
+      "venue": "小倉クラッチ・スタジアム",
+      "teams": [
+        {
+          "display": "東農大二",
+          "score": 4,
+          "won": false,
+          "name": "東農大二",
+          "slug": null
+        },
+        {
+          "display": "桐生第一",
+          "score": 8,
+          "won": true,
+          "name": "桐生第一",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://gunma.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-06",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",

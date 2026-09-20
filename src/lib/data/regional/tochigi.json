@@ -26821,6 +26821,122 @@
       ]
     },
     {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "宇都宮商",
+          "score": 7,
+          "won": true,
+          "name": "宇都宮商業高校",
+          "slug": "utsunomiyashogyo"
+        },
+        {
+          "display": "栃木",
+          "score": 1,
+          "won": false,
+          "name": "栃木高校",
+          "slug": "tochigi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "作新学院",
+          "score": 9,
+          "won": true,
+          "name": "作新学院",
+          "slug": null
+        },
+        {
+          "display": "宇都宮東",
+          "score": 0,
+          "won": false,
+          "name": "宇都宮東高校",
+          "slug": "utsunomiyahigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "大田原",
+          "score": 3,
+          "won": false,
+          "name": "大田原高校",
+          "slug": "otawara"
+        },
+        {
+          "display": "栃木工",
+          "score": 5,
+          "won": true,
+          "name": "栃木工業高校",
+          "slug": "tochigikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "とちぎ木の花スタジアム",
+      "teams": [
+        {
+          "display": "連合",
+          "score": 10,
+          "won": true,
+          "name": "連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "宇都宮白楊",
+          "score": 9,
+          "won": false,
+          "name": "宇都宮白楊高校",
+          "slug": "utsunomiyahakuyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "真岡ハイトラ運動公園市民球場",
+      "teams": [
+        {
+          "display": "茂木",
+          "score": 7,
+          "won": true,
+          "name": "茂木高校",
+          "slug": "motegi"
+        },
+        {
+          "display": "栃木商",
+          "score": 5,
+          "won": false,
+          "name": "栃木商業高校",
+          "slug": "tochigishogyo"
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第78回秋季栃木県高等学校野球大会",

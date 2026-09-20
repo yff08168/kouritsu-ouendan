@@ -9509,6 +9509,53 @@
       ]
     },
     {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "2回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "高志・勝山",
+          "score": 7,
+          "won": true,
+          "name": "高志・勝山",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "鯖江",
+          "score": 6,
+          "won": false,
+          "name": "鯖江高校",
+          "slug": "sabae"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "2回戦",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "大野",
+          "score": 1,
+          "won": false,
+          "name": "大野高校",
+          "slug": "fukui-ono"
+        },
+        {
+          "display": "武生",
+          "score": 4,
+          "won": true,
+          "name": "武生高校",
+          "slug": "takefu"
+        }
+      ]
+    },
+    {
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
@@ -9666,6 +9713,52 @@
           "won": true,
           "name": "科学技術高校",
           "slug": "fukui-kagakugijutsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "3回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "敦賀工業",
+          "score": 2,
+          "won": false,
+          "name": "敦賀工業高校",
+          "slug": "tsurugakogyo"
+        },
+        {
+          "display": "福井商業",
+          "score": 10,
+          "won": true,
+          "name": "福井商業高校",
+          "slug": "fukuishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "3回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "若狭",
+          "score": 2,
+          "won": false,
+          "name": "若狭高校",
+          "slug": "wakasa"
+        },
+        {
+          "display": "金津",
+          "score": 5,
+          "won": true,
+          "name": "金津高校",
+          "slug": "kanazu"
         }
       ]
     },

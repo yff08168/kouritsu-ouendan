@@ -40023,6 +40023,60 @@
       }
     },
     {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "首里",
+          "score": 10,
+          "won": true,
+          "name": "首里高校",
+          "slug": "shuri"
+        },
+        {
+          "display": "首里東",
+          "score": 1,
+          "won": false,
+          "name": "首里東高校",
+          "slug": "shurihigashi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "1回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "那覇国際",
+          "score": 1,
+          "won": false,
+          "name": "那覇国際高校",
+          "slug": "nahakokusai"
+        },
+        {
+          "display": "那覇商業",
+          "score": 12,
+          "won": true,
+          "name": "那覇商業高校",
+          "slug": "nahashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
@@ -59564,46 +59618,6 @@
         "name": "HSB flash",
         "url": "https://okinawa.hsbflash.jp/"
       }
-    }
-  ],
-  "upcoming": [
-    {
-      "date": "2026-09-20",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 沖縄県大会",
-      "round": "1回戦",
-      "venue": "Ａｇｒｅスタジアム北谷",
-      "teams": [
-        {
-          "display": "首里",
-          "name": "首里高校",
-          "slug": "shuri"
-        },
-        {
-          "display": "首里東",
-          "name": "首里東高校",
-          "slug": "shurihigashi"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-20",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 沖縄県大会",
-      "round": "1回戦",
-      "venue": "Ａｇｒｅスタジアム北谷",
-      "teams": [
-        {
-          "display": "那覇国際",
-          "name": "那覇国際高校",
-          "slug": "nahakokusai"
-        },
-        {
-          "display": "那覇商業",
-          "name": "那覇商業高校",
-          "slug": "nahashogyo"
-        }
-      ]
     }
   ]
 }

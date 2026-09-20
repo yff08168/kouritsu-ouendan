@@ -7241,6 +7241,52 @@
       ]
     },
     {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 鳥取県大会",
+      "round": "2回戦",
+      "venue": "倉吉市営野球場",
+      "teams": [
+        {
+          "display": "鳥取城北",
+          "score": 10,
+          "won": true,
+          "name": "鳥取城北",
+          "slug": null
+        },
+        {
+          "display": "岩美",
+          "score": 5,
+          "won": false,
+          "name": "岩美高校",
+          "slug": "iwami"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 鳥取県大会",
+      "round": "2回戦",
+      "venue": "どらやきドラマチックパーク米子市民球場",
+      "teams": [
+        {
+          "display": "倉吉東",
+          "score": 1,
+          "won": false,
+          "name": "倉吉東高校",
+          "slug": "kurayoshihigashi"
+        },
+        {
+          "display": "倉吉北",
+          "score": 4,
+          "won": true,
+          "name": "倉吉北",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季中国地区高校野球 鳥取県大会",
@@ -7260,6 +7306,52 @@
           "won": false,
           "name": "倉吉総合産業高校",
           "slug": "kurayoshisogosangyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 鳥取県大会",
+      "round": "3回戦",
+      "venue": "どらやきドラマチックパーク米子市民球場",
+      "teams": [
+        {
+          "display": "米子東",
+          "score": 7,
+          "won": true,
+          "name": "米子東高校",
+          "slug": "yonagohigashi"
+        },
+        {
+          "display": "米子松蔭",
+          "score": 2,
+          "won": false,
+          "name": "米子松蔭",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 鳥取県大会",
+      "round": "3回戦",
+      "venue": "倉吉市営野球場",
+      "teams": [
+        {
+          "display": "米子工業",
+          "score": 0,
+          "won": false,
+          "name": "米子工業高校",
+          "slug": "yonagokogyo"
+        },
+        {
+          "display": "米子北",
+          "score": 13,
+          "won": true,
+          "name": "米子北",
+          "slug": null
         }
       ]
     },

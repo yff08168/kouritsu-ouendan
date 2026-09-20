@@ -7918,6 +7918,29 @@
       ]
     },
     {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季四国地区高校野球 徳島県大会",
+      "round": "2回戦",
+      "venue": "ＪＡアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "城東",
+          "score": 9,
+          "won": true,
+          "name": "城東高校",
+          "slug": "tokushima-joto"
+        },
+        {
+          "display": "徳島北",
+          "score": 5,
+          "won": false,
+          "name": "徳島北高校",
+          "slug": "tokushimakita"
+        }
+      ]
+    },
+    {
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季四国地区高校野球 徳島県大会",
@@ -7937,6 +7960,29 @@
           "won": true,
           "name": "海部高校",
           "slug": "kaifu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季四国地区高校野球 徳島県大会",
+      "round": "2回戦",
+      "venue": "ＪＡアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "科学技術",
+          "score": 8,
+          "won": true,
+          "name": "徳島科学技術高校",
+          "slug": "tokushimakagakugijutsu"
+        },
+        {
+          "display": "小松島",
+          "score": 2,
+          "won": false,
+          "name": "小松島高校",
+          "slug": "komatsushima"
         }
       ]
     },
@@ -8080,6 +8126,29 @@
       ]
     },
     {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季四国地区高校野球 徳島県大会",
+      "round": "3回戦",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "板野",
+          "score": 6,
+          "won": true,
+          "name": "板野高校",
+          "slug": "itano"
+        },
+        {
+          "display": "脇町",
+          "score": 3,
+          "won": false,
+          "name": "脇町高校",
+          "slug": "wakimachi"
+        }
+      ]
+    },
+    {
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季四国地区高校野球 徳島県大会",
@@ -8099,6 +8168,29 @@
           "won": false,
           "name": "富岡西高校",
           "slug": "tomiokanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季四国地区高校野球 徳島県大会",
+      "round": "3回戦",
+      "venue": "ＪＡアグリあなんスタジアム",
+      "teams": [
+        {
+          "display": "吉野川",
+          "score": 5,
+          "won": false,
+          "name": "吉野川高校",
+          "slug": "yoshinogawa"
+        },
+        {
+          "display": "小松島西",
+          "score": 16,
+          "won": true,
+          "name": "小松島西高校",
+          "slug": "komatsushimanishi"
         }
       ]
     },

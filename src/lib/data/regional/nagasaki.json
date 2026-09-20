@@ -16437,6 +16437,29 @@
       ]
     },
     {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "長崎工",
+          "score": 13,
+          "won": true,
+          "name": "長崎工業高校",
+          "slug": "nagasakikogyo"
+        },
+        {
+          "display": "川棚",
+          "score": 0,
+          "won": false,
+          "name": "川棚高校",
+          "slug": "kawatana"
+        }
+      ]
+    },
+    {
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
@@ -16456,6 +16479,52 @@
           "won": true,
           "name": "清峰高校",
           "slug": "nagasaki-seiho"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
+      "round": "2回戦",
+      "venue": "長崎県営野球場",
+      "teams": [
+        {
+          "display": "長崎東",
+          "score": 9,
+          "won": true,
+          "name": "長崎東高校",
+          "slug": "nagasakihigashi"
+        },
+        {
+          "display": "対馬",
+          "score": 2,
+          "won": false,
+          "name": "対馬高校",
+          "slug": "nagasaki-tsushima"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "壱岐商",
+          "score": 4,
+          "won": true,
+          "name": "壱岐商業高校",
+          "slug": "ikishogyo"
+        },
+        {
+          "display": "長崎南",
+          "score": 3,
+          "won": false,
+          "name": "長崎南高校",
+          "slug": "nagasakiminami"
         }
       ]
     },
@@ -16663,6 +16732,75 @@
           "won": false,
           "name": "佐世保実",
           "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
+      "round": "2回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "島原中央",
+          "score": 4,
+          "won": false,
+          "name": "島原中央",
+          "slug": null
+        },
+        {
+          "display": "猶興館",
+          "score": 14,
+          "won": true,
+          "name": "猶興館高校",
+          "slug": "yukokan"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
+      "round": "2回戦",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "佐世保北",
+          "score": 3,
+          "won": false,
+          "name": "佐世保北高校",
+          "slug": "sasebokita"
+        },
+        {
+          "display": "壱岐",
+          "score": 13,
+          "won": true,
+          "name": "壱岐高校",
+          "slug": "iki"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "諫早農",
+          "score": 7,
+          "won": true,
+          "name": "諫早農業高校",
+          "slug": "isahayanogyo"
+        },
+        {
+          "display": "諫早",
+          "score": 0,
+          "won": false,
+          "name": "諫早高校",
+          "slug": "isahaya"
         }
       ]
     },

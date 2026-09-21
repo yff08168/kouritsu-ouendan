@@ -1,6 +1,11 @@
 import type { MetadataRoute } from "next";
 import { SITE, ALL_DISTRICT_SLUGS, PREFECTURES, RANKINGS } from "@/lib/constants";
-import { getAllSchoolSlugs, getIndexableSchoolSlugs } from "@/lib/queries/schools";
+import {
+  getAllSchoolSlugs,
+  getIndexableSchoolSlugs,
+  getSchoolNameIndex,
+} from "@/lib/queries/schools";
+import { listPublicYearsWithEntrants } from "@/lib/koshien-public";
 import { getAllNewsSlugs } from "@/lib/queries/news";
 import { getAllPhenomenonSlugs } from "@/lib/queries/phenomena";
 import { getAllFeatureSlugs } from "@/lib/queries/features";
@@ -81,6 +86,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url("/prefectures"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     // 全国大会（2026-08-26 追加）。大会ごとのページは下の nationalPages
     { url: url("/koshien"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    // ★**公立高校の甲子園出場校（年別）**（2026-09-21）。年ページは下の publicYearPages
+    { url: url("/koshien/public"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: url("/jingu"), lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     // 地方大会の進捗。大会中は毎日変わる
     { url: url("/regional"), lastModified: now, changeFrequency: "daily", priority: 0.8 },
@@ -164,6 +171,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.5,
     })),
   ];
+
+  /*
+    ★**公立高校の甲子園出場校の年ページ**（2026-09-21）。
+    ★**公立が1校も結び付かない年は載せない**（ページ側も 404 にしている。
+    ページの無いURLを検索エンジンに知らせない）。
+    ★校名の索引は5分の憶え書きがあるので、ここで1回引いても DB には1度しか行かない。
+  */
+  const koshienNameIndex = await getSchoolNameIndex("koshien");
+  const publicYearPages: MetadataRoute.Sitemap = listPublicYearsWithEntrants((d, p) =>
+    koshienNameIndex.find(d, p),
+  ).map((y) => ({
+    url: url(`/koshien/public/${y.year}`),
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
 
   /*
     ★**年別アーカイブの年ページ**（2026-08-29 追加）。
@@ -254,6 +277,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...prefecturePages,
     ...tournamentPages,
     ...nationalPages,
+    ...publicYearPages,
     ...archivePages,
     ...versusPages,
     ...schoolPages,

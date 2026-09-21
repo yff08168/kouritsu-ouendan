@@ -17,7 +17,17 @@ import type { PublicEntrant } from "@/lib/national-tournaments";
  * ★**成績が読めない学校は「成績不明」**と書く。
  *   **「初戦敗退」に混ぜないこと**（AGENTS.md）。
  */
-export function PublicEntrantList({ entrants }: { entrants: PublicEntrant[] }) {
+export function PublicEntrantList({
+  entrants,
+  badges,
+}: {
+  entrants: PublicEntrant[];
+  /**
+   * slug → 札の文字（「21世紀枠」）。**事実のあるものだけ渡す**
+   * （`src/lib/data/twenty-first-century.ts` の生成物から。2026-09-21）。
+   */
+  badges?: ReadonlyMap<string, string>;
+}) {
   return (
     <ul className="grid gap-2 sm:grid-cols-2">
       {entrants.map((e) => (
@@ -29,9 +39,15 @@ export function PublicEntrantList({ entrants }: { entrants: PublicEntrant[] }) {
             <span className="min-w-0 flex-1">
               <span className="block truncate text-sm font-bold text-accent-800">
                 {e.display}
+                {badges?.get(e.slug) && (
+                  <span className="ml-1.5 rounded border border-accent-500 px-1 align-middle text-[0.625rem] font-medium text-accent-800">
+                    {badges.get(e.slug)}
+                  </span>
+                )}
               </span>
               <span className="block truncate text-xs text-ink-faint">
                 {e.name}
+                {e.pref && <span className="ml-1">（{e.pref}）</span>}
               </span>
             </span>
             <span className="shrink-0 text-right">

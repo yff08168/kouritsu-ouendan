@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Trophy, GitBranch } from "lucide-react";
+import { Trophy, GitBranch, Users } from "lucide-react";
 
 import { Container } from "@/components/layout/Container";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
@@ -100,6 +100,40 @@ export default async function KoshienIndexPage() {
       </header>
 
       <NationalDataNote className="mt-4" missing={missing} />
+
+      {/* ------- 公立高校の出場校（年別） ------- */}
+      {/*
+        ★★**「公立高校 甲子園」の受け皿への入口**（2026-09-21）。
+        キーワードプランナーで8月に33,100検索されている語で、
+        中身は各大会ページが持っているが、年で束ねた入口が無かった。
+      */}
+      <section
+        aria-labelledby="koshien-public"
+        className="mt-4 rounded-xl border border-line bg-white p-5"
+      >
+        <SectionHeading
+          id="koshien-public"
+          title="甲子園に出場した公立高校（年別）"
+          icon={<Users size={18} />}
+          moreHref="/koshien/public"
+          moreLabel="年別の一覧へ"
+        />
+        <p className="mt-3 text-sm leading-relaxed text-ink-muted">
+          その年の春・夏に出場した公立高校を、成績と一緒に1枚にまとめています。
+        </p>
+        <ul className="mt-3 flex flex-wrap gap-2">
+          {[...new Set(years)].slice(0, 8).map((y) => (
+            <li key={y}>
+              <Link
+                href={`/koshien/public/${y}`}
+                className="inline-flex min-h-11 items-center rounded-lg border border-line px-3 text-sm text-ink hover:bg-navy-50"
+              >
+                {y}年
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       <section
         aria-labelledby="koshien-list"

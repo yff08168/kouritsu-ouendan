@@ -222,7 +222,11 @@ export default async function HomePage() {
                   : "注目の公立高校"
               }
               icon={<Star size={22} />}
-              moreHref="/schools?koshien=yes&sort=recent"
+              moreHref={
+                koshien.latestYear
+                  ? `/koshien/public/${koshien.latestYear}`
+                  : "/schools?koshien=yes&sort=recent"
+              }
             />
             <p className="mt-1 text-sm text-ink-muted">
               甲子園に出場している公立校

@@ -203,6 +203,8 @@ export default async function KoshienTournamentPage({ params }: Props) {
             title="この大会に出場した公立高校"
             icon={<Trophy size={18} />}
             note="勝ち上がった順"
+            moreHref={`/koshien/public/${t.year}`}
+            moreLabel="この年の公立校"
           />
           <div className="mt-3">
             <PublicEntrantList entrants={entrants} />

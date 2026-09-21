@@ -254,11 +254,19 @@ export type PublicEntrant = {
   result: string;
   /** 勝った試合の数 */
   wins: number;
+  /**
+   * 都道府県（甲子園の区分）。**学校マスタの県**を採り、無ければ出典の代表校の表から。
+   * ★年ごとのページ（`/koshien/public/<年>`）で校名の脇に出す（2026-09-21）。
+   */
+  pref: string | null;
 };
 
 export function publicEntrants(
   t: NationalTournament,
-  resolve: (display: string, pref?: string) => { slug: string; name: string } | null,
+  resolve: (
+    display: string,
+    pref?: string,
+  ) => { slug: string; name: string; pref?: string } | null,
 ): PublicEntrant[] {
   const ROUND_ORDER = ["1回戦", "2回戦", "3回戦", "4回戦", "準々決勝", "準決勝", "決勝"];
   const depth = (round: string | null) => ROUND_ORDER.indexOf(round ?? "1回戦");
@@ -266,12 +274,16 @@ export function publicEntrants(
   const found = new Map<string, PublicEntrant & { deepest: number }>();
   for (const g of t.games) {
     for (const x of g.teams) {
-      const school = resolve(x.display, teamPrefecture(x as { display: string; pref?: string; score: number; won: boolean }));
+      const teamPref = teamPrefecture(
+        x as { display: string; pref?: string; score: number; won: boolean },
+      );
+      const school = resolve(x.display, teamPref);
       if (!school) continue;
       const entry = found.get(school.slug) ?? {
         slug: school.slug,
         name: school.name,
         display: x.display,
+        pref: school.pref || teamPref || null,
         result: "",
         wins: 0,
         deepest: -1,

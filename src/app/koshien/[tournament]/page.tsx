@@ -198,7 +198,7 @@ export default async function KoshienTournamentPage({ params }: Props) {
         slugs={
           t.season === "spring"
             ? ["senbatsu-selection", "extra-innings", "tournament-rules"]
-            : ["tournament-rules", "extra-innings", "called-game"]
+            : ["tournament-rules", "video-review", "extra-innings"]
         }
       />
 

@@ -7197,7 +7197,7 @@
     {
       "date": "2026-09-19",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季中国地区高校野球 鳥取県大会",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
       "round": "1回戦",
       "venue": "どらやきドラマチックパーク米子市民球場",
       "teams": [
@@ -7220,7 +7220,7 @@
     {
       "date": "2026-09-19",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季中国地区高校野球 鳥取県大会",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
       "round": "1回戦",
       "venue": "どらやきドラマチックパーク米子市民球場",
       "teams": [
@@ -7243,7 +7243,7 @@
     {
       "date": "2026-09-20",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季中国地区高校野球 鳥取県大会",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
       "round": "2回戦",
       "venue": "倉吉市営野球場",
       "teams": [
@@ -7264,9 +7264,56 @@
       ]
     },
     {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
+      "round": "2回戦",
+      "venue": "どらやきドラマチックパーク米子市民球場",
+      "teams": [
+        {
+          "display": "八頭",
+          "score": 7,
+          "won": true,
+          "name": "八頭高校",
+          "slug": "yazu"
+        },
+        {
+          "display": "米子・境港総合技術日野・倉吉西",
+          "score": 2,
+          "won": false,
+          "name": "米子・境港総合技術日野・倉吉西",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
+      "round": "2回戦",
+      "venue": "倉吉市営野球場",
+      "teams": [
+        {
+          "display": "鳥取工業",
+          "score": 2,
+          "won": false,
+          "name": "鳥取工業高校",
+          "slug": "tottorikogyo"
+        },
+        {
+          "display": "鳥取中央育英",
+          "score": 4,
+          "won": true,
+          "name": "鳥取中央育英高校",
+          "slug": "tottorichuoikuei"
+        }
+      ]
+    },
+    {
       "date": "2026-09-20",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季中国地区高校野球 鳥取県大会",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
       "round": "2回戦",
       "venue": "どらやきドラマチックパーク米子市民球場",
       "teams": [
@@ -7289,7 +7336,7 @@
     {
       "date": "2026-09-19",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季中国地区高校野球 鳥取県大会",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
       "round": "2回戦",
       "venue": "どらやきドラマチックパーク米子市民球場",
       "teams": [
@@ -7312,7 +7359,7 @@
     {
       "date": "2026-09-20",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季中国地区高校野球 鳥取県大会",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
       "round": "3回戦",
       "venue": "どらやきドラマチックパーク米子市民球場",
       "teams": [
@@ -7333,9 +7380,55 @@
       ]
     },
     {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
+      "round": "3回戦",
+      "venue": "倉吉市営野球場",
+      "teams": [
+        {
+          "display": "鳥取西",
+          "score": 2,
+          "won": true,
+          "name": "鳥取西高校",
+          "slug": "tottorinishi"
+        },
+        {
+          "display": "鳥取東",
+          "score": 1,
+          "won": false,
+          "name": "鳥取東高校",
+          "slug": "tottorihigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
+      "round": "3回戦",
+      "venue": "どらやきドラマチックパーク米子市民球場",
+      "teams": [
+        {
+          "display": "鳥取商業",
+          "score": 2,
+          "won": false,
+          "name": "鳥取商業高校",
+          "slug": "tottorishogyo"
+        },
+        {
+          "display": "境",
+          "score": 3,
+          "won": true,
+          "name": "境高校",
+          "slug": "tottori-sakai"
+        }
+      ]
+    },
+    {
       "date": "2026-09-20",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季中国地区高校野球 鳥取県大会",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
       "round": "3回戦",
       "venue": "倉吉市営野球場",
       "teams": [

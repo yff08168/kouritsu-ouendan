@@ -40322,6 +40322,141 @@
       }
     },
     {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "沖縄尚学",
+          "score": 5,
+          "won": true,
+          "name": "沖縄尚学",
+          "slug": null
+        },
+        {
+          "display": "豊見城",
+          "score": 0,
+          "won": false,
+          "name": "豊見城高校",
+          "slug": "tomigusuku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "八重山",
+          "score": 13,
+          "won": true,
+          "name": "八重山高校",
+          "slug": "yaeyama"
+        },
+        {
+          "display": "向陽",
+          "score": 7,
+          "won": false,
+          "name": "向陽高校",
+          "slug": "okinawa-koyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "糸満",
+          "score": 22,
+          "won": true,
+          "name": "糸満高校",
+          "slug": "itoman"
+        },
+        {
+          "display": "中部農林",
+          "score": 0,
+          "won": false,
+          "name": "中部農林高校",
+          "slug": "chubunorin"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "KBC",
+          "score": 3,
+          "won": false,
+          "name": "KBC",
+          "slug": null
+        },
+        {
+          "display": "宮古",
+          "score": 4,
+          "won": true,
+          "name": "宮古高校",
+          "slug": "okinawa-miyako"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "ユニオンですからスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "那覇",
+          "score": 10,
+          "won": true,
+          "name": "那覇高校",
+          "slug": "naha"
+        },
+        {
+          "display": "宮古総合実業宮古工業",
+          "score": 3,
+          "won": false,
+          "name": "宮古総合実業宮古工業",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2025-09-20",
       "season": "autumn",
       "tournament": "第75回沖縄県高等学校野球秋季大会",

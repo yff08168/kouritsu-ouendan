@@ -50879,6 +50879,60 @@
       }
     },
     {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季東海地区高等学校野球 愛知県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東邦",
+          "score": 10,
+          "won": true,
+          "name": "東邦",
+          "slug": null
+        },
+        {
+          "display": "誠信",
+          "score": 0,
+          "won": false,
+          "name": "誠信",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://aichi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季東海地区高等学校野球 愛知県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "誉",
+          "score": 1,
+          "won": false,
+          "name": "誉",
+          "slug": null
+        },
+        {
+          "display": "愛工大名電",
+          "score": 4,
+          "won": true,
+          "name": "愛工大名電",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://aichi.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-05",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季東海地区高等学校野球 愛知県大会",
@@ -51435,6 +51489,60 @@
         {
           "display": "享栄",
           "score": 13,
+          "won": true,
+          "name": "享栄",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://aichi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季東海地区高等学校野球 愛知県大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "豊川",
+          "score": 0,
+          "won": false,
+          "name": "豊川",
+          "slug": null
+        },
+        {
+          "display": "三好",
+          "score": 2,
+          "won": true,
+          "name": "三好高校",
+          "slug": "miyoshi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://aichi.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季東海地区高等学校野球 愛知県大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "愛知啓成",
+          "score": 2,
+          "won": false,
+          "name": "愛知啓成",
+          "slug": null
+        },
+        {
+          "display": "享栄",
+          "score": 9,
           "won": true,
           "name": "享栄",
           "slug": null

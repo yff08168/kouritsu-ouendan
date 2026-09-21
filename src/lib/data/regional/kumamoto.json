@@ -41534,6 +41534,52 @@
       ]
     },
     {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "宇土",
+          "score": 1,
+          "won": true,
+          "name": "宇土高校",
+          "slug": "uto"
+        },
+        {
+          "display": "鎮西",
+          "score": 0,
+          "won": false,
+          "name": "鎮西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "水俣",
+          "score": 6,
+          "won": false,
+          "name": "水俣高校",
+          "slug": "minamata"
+        },
+        {
+          "display": "千原台",
+          "score": 10,
+          "won": true,
+          "name": "千原台高校",
+          "slug": "chiharadai"
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球熊本大会",

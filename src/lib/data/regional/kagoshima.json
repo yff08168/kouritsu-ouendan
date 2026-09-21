@@ -20999,6 +20999,52 @@
       ]
     },
     {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "平和リース球場（県立鴨池野球場）",
+      "teams": [
+        {
+          "display": "川内",
+          "score": 17,
+          "won": true,
+          "name": "川内高校",
+          "slug": "kagoshima-sendai"
+        },
+        {
+          "display": "川内商工",
+          "score": 0,
+          "won": false,
+          "name": "川内商工高校",
+          "slug": "sendaishoko"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "平和リース球場（県立鴨池野球場）",
+      "teams": [
+        {
+          "display": "明桜館",
+          "score": 3,
+          "won": false,
+          "name": "明桜館高校",
+          "slug": "meiokan"
+        },
+        {
+          "display": "伊集院",
+          "score": 25,
+          "won": true,
+          "name": "伊集院高校",
+          "slug": "ijuin"
+        }
+      ]
+    },
+    {
       "date": "2026-09-20",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
@@ -21180,6 +21226,53 @@
           "won": true,
           "name": "加世田高校",
           "slug": "kagoshima-kaseda"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "鹿児島市鴨池公園野球場",
+      "teams": [
+        {
+          "display": "枕崎",
+          "score": 7,
+          "won": true,
+          "name": "枕崎高校",
+          "slug": "makurazaki"
+        },
+        {
+          "display": "ラ・サール",
+          "score": 0,
+          "won": false,
+          "name": "ラ・サール",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "鹿児島市鴨池公園野球場",
+      "teams": [
+        {
+          "display": "鹿児島情報",
+          "score": 5,
+          "won": false,
+          "name": "鹿児島情報",
+          "slug": null
+        },
+        {
+          "display": "出水中央",
+          "score": 6,
+          "won": true,
+          "name": "出水中央",
+          "slug": null
         }
       ]
     },
@@ -32150,45 +32243,6 @@
   ],
   "upcoming": [
     {
-      "date": "2026-09-21",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "鹿児島市鴨池公園野球場",
-      "teams": [
-        {
-          "display": "枕崎",
-          "name": "枕崎高校",
-          "slug": "makurazaki"
-        },
-        {
-          "display": "ラ・サール",
-          "name": "ラ・サール",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-09-21",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "鹿児島市鴨池公園野球場",
-      "teams": [
-        {
-          "display": "鹿児島情報",
-          "name": "鹿児島情報",
-          "slug": null
-        },
-        {
-          "display": "出水中央",
-          "name": "出水中央",
-          "slug": null
-        }
-      ]
-    },
-    {
       "date": "2026-09-22",
       "season": "autumn",
       "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
@@ -32358,44 +32412,6 @@
           "name": "奄美・喜界",
           "slug": null,
           "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-09-21",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "平和リース球場（県立鴨池野球場）",
-      "teams": [
-        {
-          "display": "川内",
-          "name": "川内高校",
-          "slug": "kagoshima-sendai"
-        },
-        {
-          "display": "川内商工",
-          "name": "川内商工高校",
-          "slug": "sendaishoko"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-21",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "平和リース球場（県立鴨池野球場）",
-      "teams": [
-        {
-          "display": "明桜館",
-          "name": "明桜館高校",
-          "slug": "meiokan"
-        },
-        {
-          "display": "伊集院",
-          "name": "伊集院高校",
-          "slug": "ijuin"
         }
       ]
     }

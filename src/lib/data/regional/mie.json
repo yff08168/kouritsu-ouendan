@@ -16794,6 +16794,52 @@
       ]
     },
     {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季東海地区高等学校野球 三重県大会",
+      "round": "4回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "津西",
+          "score": 6,
+          "won": true,
+          "name": "津西高校",
+          "slug": "tsunishi"
+        },
+        {
+          "display": "昴学園",
+          "score": 3,
+          "won": false,
+          "name": "昴学園高校",
+          "slug": "subarugakuen"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季東海地区高等学校野球 三重県大会",
+      "round": "4回戦",
+      "venue": "四日市市営霞ヶ浦第一野球場",
+      "teams": [
+        {
+          "display": "三重",
+          "score": 10,
+          "won": true,
+          "name": "三重",
+          "slug": null
+        },
+        {
+          "display": "海星",
+          "score": 0,
+          "won": false,
+          "name": "海星",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": null,
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季東海地区高等学校野球 三重県大会",
@@ -17317,6 +17363,52 @@
         {
           "display": "近大工業高専",
           "score": 7,
+          "won": true,
+          "name": "近大工業高専",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季東海地区高等学校野球 三重県大会",
+      "round": "5回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "宇治山田商",
+          "score": 8,
+          "won": true,
+          "name": "宇治山田商業高校",
+          "slug": "ujiyamadashogyo"
+        },
+        {
+          "display": "菰野",
+          "score": 1,
+          "won": false,
+          "name": "菰野高校",
+          "slug": "komono"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季東海地区高等学校野球 三重県大会",
+      "round": "5回戦",
+      "venue": "四日市市営霞ヶ浦第一野球場",
+      "teams": [
+        {
+          "display": "津田学園",
+          "score": 2,
+          "won": false,
+          "name": "津田学園",
+          "slug": null
+        },
+        {
+          "display": "近大工業高専",
+          "score": 3,
           "won": true,
           "name": "近大工業高専",
           "slug": null

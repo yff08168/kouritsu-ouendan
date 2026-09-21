@@ -257,6 +257,7 @@ export const GUIDES: Guide[] = [
     related: [
       { href: "/rankings/21seiki-waku", label: "21世紀枠の出場校" },
       { href: "/jingu", label: "明治神宮大会（高校の部）" },
+      { href: "/koshien/champions", label: "甲子園の歴代優勝校（春・夏）" },
       { href: "/koshien", label: "甲子園の記録" },
       { href: "/prefectures", label: "都道府県から探す" },
     ],

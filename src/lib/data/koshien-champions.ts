@@ -1,0 +1,253 @@
+/**
+ * 甲子園（春の選抜・夏の選手権）の歴代優勝校・準優勝校・決勝のスコア。
+ *
+ * ★ このファイルは scripts/build-koshien-champions.mjs が生成する。直接編集しない。★
+ * 出典: ja.wikipedia「全国高等学校野球選手権大会歴代優勝校」「選抜高等学校野球大会歴代優勝校」の「歴代優勝校一覧」（CC BY-SA 4.0）。
+ *
+ * 取り込んでいるのは**事実データだけ**（回・年・校数・優勝校・県・決勝のスコア・準優勝校・県・決勝の日付）。
+ * 備考の文章は取り込んでいない。
+ * ★★**画面に出す校名とスコアは大会記事から読んだ試合（`finalists`）を使う。**
+ *   こちらは**都道府県**（大会記事の代表校の表からは取れない古い大会がある）と、
+ *   **出典の違う2つの表を突き合わせる検算**のためのもの（生成時に 202 大会すべてで
+ *   優勝校・準優勝校・スコアが一致することを確かめてある）。
+ * ★ 引き分け再試合の年（1969年夏・2006年夏）は `replay` に引き分けのスコアを持つ。
+ * ★ 県は「北北海道」「西東京」のように大会の区分で書かれている年がある。
+ *   都道府県で数えるときは `prefectureKey`（koshien-games.ts）で寄せること。
+ *   外地（満州・台湾・朝鮮）の代表校は準優勝にだけある。
+ */
+
+export type KoshienChampionTeam = {
+  /** 記事の表記（「中京商」「早稲田実」） */
+  name: string;
+  /** 「愛知」「西東京」「満州」 */
+  prefecture: string;
+};
+
+export type KoshienChampion = {
+  season: "spring" | "summer";
+  /** 第N回 */
+  no: number;
+  year: number;
+  /** 出場校数。記事に無ければ null */
+  schoolCount: number | null;
+  champion: KoshienChampionTeam;
+  /** 「4-3」（優勝校の得点が先） */
+  score: string;
+  /** サヨナラ */
+  walkOff: boolean;
+  /** 引き分け再試合になった年は、引き分けのスコア（「0-0」）。ふつうは空 */
+  replay: string[];
+  runnerUp: KoshienChampionTeam;
+  /** 決勝（再試合ならその日）の日付。記事に無ければ null */
+  finalDate: string | null;
+};
+
+export const KOSHIEN_CHAMPIONS_SOURCE = {
+  summer: {"name":"ja.wikipedia「全国高等学校野球選手権大会歴代優勝校」","url":"https://ja.wikipedia.org/wiki/%E5%85%A8%E5%9B%BD%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E9%81%B8%E6%89%8B%E6%A8%A9%E5%A4%A7%E4%BC%9A%E6%AD%B4%E4%BB%A3%E5%84%AA%E5%8B%9D%E6%A0%A1"},
+  spring: {"name":"ja.wikipedia「選抜高等学校野球大会歴代優勝校」","url":"https://ja.wikipedia.org/wiki/%E9%81%B8%E6%8A%9C%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E5%A4%A7%E4%BC%9A%E6%AD%B4%E4%BB%A3%E5%84%AA%E5%8B%9D%E6%A0%A1"},
+} as const;
+
+export const KOSHIEN_CHAMPIONS: readonly KoshienChampion[] = [
+  { season: "summer", no: 1, year: 1915, schoolCount: 10, champion: { name: "京都二中", prefecture: "京都" }, score: "2-1", walkOff: true, replay: [], runnerUp: { name: "秋田中", prefecture: "秋田" }, finalDate: "1915-08-22" },
+  { season: "summer", no: 2, year: 1916, schoolCount: 12, champion: { name: "慶応普通部", prefecture: "東京" }, score: "6-2", walkOff: false, replay: [], runnerUp: { name: "市岡中", prefecture: "大阪" }, finalDate: "1916-08-20" },
+  { season: "summer", no: 3, year: 1917, schoolCount: 12, champion: { name: "愛知一中", prefecture: "愛知" }, score: "1-0", walkOff: false, replay: [], runnerUp: { name: "関西学院中", prefecture: "兵庫" }, finalDate: "1917-08-19" },
+  { season: "summer", no: 5, year: 1919, schoolCount: 14, champion: { name: "神戸一中", prefecture: "兵庫" }, score: "7-4", walkOff: false, replay: [], runnerUp: { name: "長野師範", prefecture: "長野" }, finalDate: "1919-08-19" },
+  { season: "summer", no: 6, year: 1920, schoolCount: 15, champion: { name: "関西学院中", prefecture: "兵庫" }, score: "17-0", walkOff: false, replay: [], runnerUp: { name: "慶応普通部", prefecture: "東京" }, finalDate: "1920-08-19" },
+  { season: "summer", no: 7, year: 1921, schoolCount: 17, champion: { name: "和歌山中", prefecture: "和歌山" }, score: "16-4", walkOff: false, replay: [], runnerUp: { name: "京都一商", prefecture: "京都" }, finalDate: "1921-08-18" },
+  { season: "summer", no: 8, year: 1922, schoolCount: 17, champion: { name: "和歌山中", prefecture: "和歌山" }, score: "8-4", walkOff: false, replay: [], runnerUp: { name: "神戸商", prefecture: "兵庫" }, finalDate: "1922-08-18" },
+  { season: "summer", no: 9, year: 1923, schoolCount: 19, champion: { name: "甲陽中", prefecture: "兵庫" }, score: "5-2", walkOff: false, replay: [], runnerUp: { name: "和歌山中", prefecture: "和歌山" }, finalDate: "1923-08-20" },
+  { season: "spring", no: 1, year: 1924, schoolCount: 8, champion: { name: "高松商", prefecture: "香川" }, score: "2-0", walkOff: false, replay: [], runnerUp: { name: "早稲田実", prefecture: "東京" }, finalDate: "1924-04-05" },
+  { season: "summer", no: 10, year: 1924, schoolCount: 19, champion: { name: "広島商", prefecture: "広島" }, score: "3-0", walkOff: false, replay: [], runnerUp: { name: "松本商", prefecture: "長野" }, finalDate: "1924-08-19" },
+  { season: "spring", no: 2, year: 1925, schoolCount: 12, champion: { name: "松山商", prefecture: "愛媛" }, score: "3-2", walkOff: false, replay: [], runnerUp: { name: "高松商", prefecture: "香川" }, finalDate: "1925-04-05" },
+  { season: "summer", no: 11, year: 1925, schoolCount: 21, champion: { name: "高松商", prefecture: "香川" }, score: "5-3", walkOff: false, replay: [], runnerUp: { name: "早稲田実", prefecture: "東京" }, finalDate: "1925-08-23" },
+  { season: "spring", no: 3, year: 1926, schoolCount: 16, champion: { name: "広陵中", prefecture: "広島" }, score: "7-0", walkOff: false, replay: [], runnerUp: { name: "松本商", prefecture: "長野" }, finalDate: "1926-04-05" },
+  { season: "summer", no: 12, year: 1926, schoolCount: 22, champion: { name: "静岡中", prefecture: "静岡" }, score: "2-1", walkOff: false, replay: [], runnerUp: { name: "大連商", prefecture: "満州" }, finalDate: "1926-08-20" },
+  { season: "spring", no: 4, year: 1927, schoolCount: 8, champion: { name: "和歌山中", prefecture: "和歌山" }, score: "8-3", walkOff: false, replay: [], runnerUp: { name: "広陵中", prefecture: "広島" }, finalDate: "1927-05-01" },
+  { season: "summer", no: 13, year: 1927, schoolCount: 22, champion: { name: "高松商", prefecture: "香川" }, score: "5-1", walkOff: false, replay: [], runnerUp: { name: "広陵中", prefecture: "広島" }, finalDate: "1927-08-20" },
+  { season: "spring", no: 5, year: 1928, schoolCount: 16, champion: { name: "関西学院中", prefecture: "兵庫" }, score: "2-1", walkOff: false, replay: [], runnerUp: { name: "和歌山中", prefecture: "和歌山" }, finalDate: "1928-04-05" },
+  { season: "summer", no: 14, year: 1928, schoolCount: 22, champion: { name: "松本商", prefecture: "長野" }, score: "3-1", walkOff: false, replay: [], runnerUp: { name: "平安中", prefecture: "京都" }, finalDate: "1928-08-22" },
+  { season: "spring", no: 6, year: 1929, schoolCount: 16, champion: { name: "第一神港商", prefecture: "兵庫" }, score: "3-1", walkOff: false, replay: [], runnerUp: { name: "広陵中", prefecture: "広島" }, finalDate: "1929-04-04" },
+  { season: "summer", no: 15, year: 1929, schoolCount: 22, champion: { name: "広島商", prefecture: "広島" }, score: "3-0", walkOff: false, replay: [], runnerUp: { name: "海草中", prefecture: "和歌山" }, finalDate: "1929-08-20" },
+  { season: "spring", no: 7, year: 1930, schoolCount: 16, champion: { name: "第一神港商", prefecture: "兵庫" }, score: "6-1", walkOff: false, replay: [], runnerUp: { name: "松山商", prefecture: "愛媛" }, finalDate: "1930-04-05" },
+  { season: "summer", no: 16, year: 1930, schoolCount: 22, champion: { name: "広島商", prefecture: "広島" }, score: "8-2", walkOff: false, replay: [], runnerUp: { name: "諏訪蚕糸", prefecture: "長野" }, finalDate: "1930-08-20" },
+  { season: "spring", no: 8, year: 1931, schoolCount: 19, champion: { name: "広島商", prefecture: "広島" }, score: "2-0", walkOff: false, replay: [], runnerUp: { name: "中京商", prefecture: "愛知" }, finalDate: "1931-04-08" },
+  { season: "summer", no: 17, year: 1931, schoolCount: 22, champion: { name: "中京商", prefecture: "愛知" }, score: "4-0", walkOff: false, replay: [], runnerUp: { name: "嘉義農林", prefecture: "台湾" }, finalDate: "1931-08-21" },
+  { season: "spring", no: 9, year: 1932, schoolCount: 20, champion: { name: "松山商", prefecture: "愛媛" }, score: "1-0", walkOff: false, replay: [], runnerUp: { name: "明石中", prefecture: "兵庫" }, finalDate: "1932-04-05" },
+  { season: "summer", no: 18, year: 1932, schoolCount: 22, champion: { name: "中京商", prefecture: "愛知" }, score: "4-3", walkOff: true, replay: [], runnerUp: { name: "松山商", prefecture: "愛媛" }, finalDate: "1932-08-20" },
+  { season: "spring", no: 10, year: 1933, schoolCount: 32, champion: { name: "岐阜商", prefecture: "岐阜" }, score: "1-0", walkOff: false, replay: [], runnerUp: { name: "明石中", prefecture: "兵庫" }, finalDate: "1933-04-13" },
+  { season: "summer", no: 19, year: 1933, schoolCount: 22, champion: { name: "中京商", prefecture: "愛知" }, score: "2-1", walkOff: false, replay: [], runnerUp: { name: "平安中", prefecture: "京都" }, finalDate: "1933-08-20" },
+  { season: "spring", no: 11, year: 1934, schoolCount: 20, champion: { name: "東邦商", prefecture: "愛知" }, score: "2-1", walkOff: true, replay: [], runnerUp: { name: "浪華商", prefecture: "大阪" }, finalDate: "1934-04-07" },
+  { season: "summer", no: 20, year: 1934, schoolCount: 22, champion: { name: "呉港中", prefecture: "広島" }, score: "2-0", walkOff: false, replay: [], runnerUp: { name: "熊本工", prefecture: "熊本" }, finalDate: "1934-08-20" },
+  { season: "spring", no: 12, year: 1935, schoolCount: 20, champion: { name: "岐阜商", prefecture: "岐阜" }, score: "5-4", walkOff: false, replay: [], runnerUp: { name: "広陵中", prefecture: "広島" }, finalDate: "1935-04-07" },
+  { season: "summer", no: 21, year: 1935, schoolCount: 22, champion: { name: "松山商", prefecture: "愛媛" }, score: "6-1", walkOff: false, replay: [], runnerUp: { name: "育英商", prefecture: "兵庫" }, finalDate: "1935-08-21" },
+  { season: "spring", no: 13, year: 1936, schoolCount: 20, champion: { name: "愛知商", prefecture: "愛知" }, score: "2-1", walkOff: true, replay: [], runnerUp: { name: "桐生中", prefecture: "群馬" }, finalDate: "1936-04-06" },
+  { season: "summer", no: 22, year: 1936, schoolCount: 22, champion: { name: "岐阜商", prefecture: "岐阜" }, score: "9-1", walkOff: false, replay: [], runnerUp: { name: "平安中", prefecture: "京都" }, finalDate: "1936-08-20" },
+  { season: "spring", no: 14, year: 1937, schoolCount: 20, champion: { name: "浪華商", prefecture: "大阪" }, score: "2-0", walkOff: false, replay: [], runnerUp: { name: "中京商", prefecture: "愛知" }, finalDate: "1937-04-05" },
+  { season: "summer", no: 23, year: 1937, schoolCount: 22, champion: { name: "中京商", prefecture: "愛知" }, score: "3-1", walkOff: false, replay: [], runnerUp: { name: "熊本工", prefecture: "熊本" }, finalDate: "1937-08-20" },
+  { season: "spring", no: 15, year: 1938, schoolCount: 20, champion: { name: "中京商", prefecture: "愛知" }, score: "1-0", walkOff: false, replay: [], runnerUp: { name: "東邦商", prefecture: "愛知" }, finalDate: "1938-04-04" },
+  { season: "summer", no: 24, year: 1938, schoolCount: 22, champion: { name: "平安中", prefecture: "京都" }, score: "2-1", walkOff: true, replay: [], runnerUp: { name: "岐阜商", prefecture: "岐阜" }, finalDate: "1938-08-22" },
+  { season: "spring", no: 16, year: 1939, schoolCount: 20, champion: { name: "東邦商", prefecture: "愛知" }, score: "7-2", walkOff: false, replay: [], runnerUp: { name: "岐阜商", prefecture: "岐阜" }, finalDate: "1939-04-03" },
+  { season: "summer", no: 25, year: 1939, schoolCount: 22, champion: { name: "海草中", prefecture: "和歌山" }, score: "5-0", walkOff: false, replay: [], runnerUp: { name: "下関商", prefecture: "山口" }, finalDate: "1939-08-20" },
+  { season: "spring", no: 17, year: 1940, schoolCount: 20, champion: { name: "岐阜商", prefecture: "岐阜" }, score: "2-0", walkOff: false, replay: [], runnerUp: { name: "京都商", prefecture: "京都" }, finalDate: "1940-04-02" },
+  { season: "summer", no: 26, year: 1940, schoolCount: 22, champion: { name: "海草中", prefecture: "和歌山" }, score: "2-1", walkOff: false, replay: [], runnerUp: { name: "島田商", prefecture: "静岡" }, finalDate: "1940-08-19" },
+  { season: "spring", no: 18, year: 1941, schoolCount: 16, champion: { name: "東邦商", prefecture: "愛知" }, score: "5-2", walkOff: false, replay: [], runnerUp: { name: "一宮中", prefecture: "愛知" }, finalDate: "1941-03-28" },
+  { season: "summer", no: 28, year: 1946, schoolCount: 19, champion: { name: "浪華商", prefecture: "大阪" }, score: "2-0", walkOff: false, replay: [], runnerUp: { name: "京都二中", prefecture: "京都" }, finalDate: "1946-08-21" },
+  { season: "spring", no: 19, year: 1947, schoolCount: 26, champion: { name: "徳島商", prefecture: "徳島" }, score: "3-1", walkOff: false, replay: [], runnerUp: { name: "小倉中", prefecture: "福岡" }, finalDate: "1947-04-07" },
+  { season: "summer", no: 29, year: 1947, schoolCount: 19, champion: { name: "小倉中", prefecture: "福岡" }, score: "6-3", walkOff: false, replay: [], runnerUp: { name: "岐阜商", prefecture: "岐阜" }, finalDate: "1947-08-19" },
+  { season: "spring", no: 20, year: 1948, schoolCount: 16, champion: { name: "京都一商", prefecture: "京都" }, score: "1-0", walkOff: true, replay: [], runnerUp: { name: "京都二商", prefecture: "京都" }, finalDate: "1948-04-06" },
+  { season: "summer", no: 30, year: 1948, schoolCount: 23, champion: { name: "小倉", prefecture: "福岡" }, score: "1-0", walkOff: false, replay: [], runnerUp: { name: "桐蔭", prefecture: "和歌山" }, finalDate: "1948-08-20" },
+  { season: "spring", no: 21, year: 1949, schoolCount: 16, champion: { name: "北野", prefecture: "大阪" }, score: "6-4", walkOff: false, replay: [], runnerUp: { name: "芦屋", prefecture: "兵庫" }, finalDate: "1949-04-06" },
+  { season: "summer", no: 31, year: 1949, schoolCount: 23, champion: { name: "湘南", prefecture: "神奈川" }, score: "5-3", walkOff: false, replay: [], runnerUp: { name: "岐阜", prefecture: "岐阜" }, finalDate: "1949-08-20" },
+  { season: "spring", no: 22, year: 1950, schoolCount: 16, champion: { name: "韮山", prefecture: "静岡" }, score: "4-1", walkOff: false, replay: [], runnerUp: { name: "高知商", prefecture: "高知" }, finalDate: "1950-04-08" },
+  { season: "summer", no: 32, year: 1950, schoolCount: 23, champion: { name: "松山東", prefecture: "愛媛" }, score: "12-8", walkOff: false, replay: [], runnerUp: { name: "鳴門", prefecture: "徳島" }, finalDate: "1950-08-21" },
+  { season: "spring", no: 23, year: 1951, schoolCount: 16, champion: { name: "鳴門", prefecture: "徳島" }, score: "3-2", walkOff: true, replay: [], runnerUp: { name: "鳴尾", prefecture: "兵庫" }, finalDate: "1951-04-09" },
+  { season: "summer", no: 33, year: 1951, schoolCount: 23, champion: { name: "平安", prefecture: "京都" }, score: "7-4", walkOff: false, replay: [], runnerUp: { name: "熊谷", prefecture: "埼玉" }, finalDate: "1951-08-19" },
+  { season: "spring", no: 24, year: 1952, schoolCount: 18, champion: { name: "静岡商", prefecture: "静岡" }, score: "2-0", walkOff: false, replay: [], runnerUp: { name: "鳴門", prefecture: "徳島" }, finalDate: "1952-04-06" },
+  { season: "summer", no: 34, year: 1952, schoolCount: 23, champion: { name: "芦屋", prefecture: "兵庫" }, score: "4-1", walkOff: false, replay: [], runnerUp: { name: "八尾", prefecture: "大阪" }, finalDate: "1952-08-20" },
+  { season: "spring", no: 25, year: 1953, schoolCount: 19, champion: { name: "洲本", prefecture: "兵庫" }, score: "4-0", walkOff: false, replay: [], runnerUp: { name: "浪華商", prefecture: "大阪" }, finalDate: "1953-04-06" },
+  { season: "summer", no: 35, year: 1953, schoolCount: 23, champion: { name: "松山商", prefecture: "愛媛" }, score: "3-2", walkOff: false, replay: [], runnerUp: { name: "土佐", prefecture: "高知" }, finalDate: "1953-08-20" },
+  { season: "spring", no: 26, year: 1954, schoolCount: 19, champion: { name: "飯田長姫", prefecture: "長野" }, score: "1-0", walkOff: false, replay: [], runnerUp: { name: "小倉", prefecture: "福岡" }, finalDate: "1954-04-07" },
+  { season: "summer", no: 36, year: 1954, schoolCount: 23, champion: { name: "中京商", prefecture: "愛知" }, score: "3-0", walkOff: false, replay: [], runnerUp: { name: "静岡商", prefecture: "静岡" }, finalDate: "1954-08-22" },
+  { season: "spring", no: 27, year: 1955, schoolCount: 20, champion: { name: "浪華商", prefecture: "大阪" }, score: "4-3", walkOff: true, replay: [], runnerUp: { name: "桐生", prefecture: "群馬" }, finalDate: "1955-04-08" },
+  { season: "summer", no: 37, year: 1955, schoolCount: 23, champion: { name: "四日市", prefecture: "三重" }, score: "4-1", walkOff: false, replay: [], runnerUp: { name: "坂出商", prefecture: "香川" }, finalDate: "1955-08-17" },
+  { season: "spring", no: 28, year: 1956, schoolCount: 20, champion: { name: "中京商", prefecture: "愛知" }, score: "4-0", walkOff: false, replay: [], runnerUp: { name: "岐阜商", prefecture: "岐阜" }, finalDate: "1956-04-09" },
+  { season: "summer", no: 38, year: 1956, schoolCount: 23, champion: { name: "平安", prefecture: "京都" }, score: "3-2", walkOff: false, replay: [], runnerUp: { name: "岐阜商", prefecture: "岐阜" }, finalDate: "1956-08-20" },
+  { season: "spring", no: 29, year: 1957, schoolCount: 20, champion: { name: "早稲田実", prefecture: "東京" }, score: "5-3", walkOff: false, replay: [], runnerUp: { name: "高知商", prefecture: "高知" }, finalDate: "1957-04-07" },
+  { season: "summer", no: 39, year: 1957, schoolCount: 23, champion: { name: "広島商", prefecture: "広島" }, score: "3-1", walkOff: false, replay: [], runnerUp: { name: "法政二", prefecture: "神奈川" }, finalDate: "1957-08-20" },
+  { season: "spring", no: 30, year: 1958, schoolCount: 23, champion: { name: "済々黌", prefecture: "熊本" }, score: "7-1", walkOff: false, replay: [], runnerUp: { name: "中京商", prefecture: "愛知" }, finalDate: "1958-04-10" },
+  { season: "summer", no: 40, year: 1958, schoolCount: 47, champion: { name: "柳井", prefecture: "山口" }, score: "7-0", walkOff: false, replay: [], runnerUp: { name: "徳島商", prefecture: "徳島" }, finalDate: "1958-08-19" },
+  { season: "spring", no: 31, year: 1959, schoolCount: 23, champion: { name: "中京商", prefecture: "愛知" }, score: "3-2", walkOff: false, replay: [], runnerUp: { name: "岐阜商", prefecture: "岐阜" }, finalDate: "1959-04-10" },
+  { season: "summer", no: 41, year: 1959, schoolCount: 29, champion: { name: "西条", prefecture: "愛媛" }, score: "8-2", walkOff: false, replay: [], runnerUp: { name: "宇都宮工", prefecture: "栃木" }, finalDate: "1959-08-18" },
+  { season: "spring", no: 32, year: 1960, schoolCount: 23, champion: { name: "高松商", prefecture: "香川" }, score: "2-1", walkOff: true, replay: [], runnerUp: { name: "米子東", prefecture: "鳥取" }, finalDate: "1960-04-08" },
+  { season: "summer", no: 42, year: 1960, schoolCount: 30, champion: { name: "法政二", prefecture: "神奈川" }, score: "3-0", walkOff: false, replay: [], runnerUp: { name: "静岡", prefecture: "静岡" }, finalDate: "1960-08-21" },
+  { season: "spring", no: 33, year: 1961, schoolCount: 23, champion: { name: "法政二", prefecture: "神奈川" }, score: "4-0", walkOff: false, replay: [], runnerUp: { name: "高松商", prefecture: "香川" }, finalDate: "1961-04-05" },
+  { season: "summer", no: 43, year: 1961, schoolCount: 30, champion: { name: "浪商", prefecture: "大阪" }, score: "1-0", walkOff: false, replay: [], runnerUp: { name: "桐蔭", prefecture: "和歌山" }, finalDate: "1961-08-20" },
+  { season: "spring", no: 34, year: 1962, schoolCount: 23, champion: { name: "作新学院", prefecture: "栃木" }, score: "1-0", walkOff: false, replay: [], runnerUp: { name: "日大三", prefecture: "東京" }, finalDate: "1962-04-07" },
+  { season: "summer", no: 44, year: 1962, schoolCount: 30, champion: { name: "作新学院", prefecture: "栃木" }, score: "1-0", walkOff: false, replay: [], runnerUp: { name: "久留米商", prefecture: "福岡" }, finalDate: "1962-08-19" },
+  { season: "spring", no: 35, year: 1963, schoolCount: 28, champion: { name: "下関商", prefecture: "山口" }, score: "10-0", walkOff: false, replay: [], runnerUp: { name: "北海", prefecture: "北海道" }, finalDate: "1963-04-05" },
+  { season: "summer", no: 45, year: 1963, schoolCount: 48, champion: { name: "明星", prefecture: "大阪" }, score: "2-1", walkOff: false, replay: [], runnerUp: { name: "下関商", prefecture: "山口" }, finalDate: "1963-08-20" },
+  { season: "spring", no: 36, year: 1964, schoolCount: 23, champion: { name: "海南", prefecture: "徳島" }, score: "3-2", walkOff: false, replay: [], runnerUp: { name: "尾道商", prefecture: "広島" }, finalDate: "1964-04-05" },
+  { season: "summer", no: 46, year: 1964, schoolCount: 30, champion: { name: "高知", prefecture: "高知" }, score: "2-0", walkOff: false, replay: [], runnerUp: { name: "早鞆", prefecture: "山口" }, finalDate: "1964-08-18" },
+  { season: "spring", no: 37, year: 1965, schoolCount: 24, champion: { name: "岡山東商", prefecture: "岡山" }, score: "2-1", walkOff: true, replay: [], runnerUp: { name: "市和歌山商", prefecture: "和歌山" }, finalDate: "1965-04-04" },
+  { season: "summer", no: 47, year: 1965, schoolCount: 30, champion: { name: "三池工", prefecture: "福岡" }, score: "2-0", walkOff: false, replay: [], runnerUp: { name: "銚子商", prefecture: "千葉" }, finalDate: "1965-08-22" },
+  { season: "spring", no: 38, year: 1966, schoolCount: 24, champion: { name: "中京商", prefecture: "愛知" }, score: "1-0", walkOff: false, replay: [], runnerUp: { name: "土佐", prefecture: "高知" }, finalDate: "1966-04-03" },
+  { season: "summer", no: 48, year: 1966, schoolCount: 30, champion: { name: "中京商", prefecture: "愛知" }, score: "3-1", walkOff: false, replay: [], runnerUp: { name: "松山商", prefecture: "愛媛" }, finalDate: "1966-08-24" },
+  { season: "spring", no: 39, year: 1967, schoolCount: 24, champion: { name: "津久見", prefecture: "大分" }, score: "2-1", walkOff: false, replay: [], runnerUp: { name: "高知", prefecture: "高知" }, finalDate: "1967-04-07" },
+  { season: "summer", no: 49, year: 1967, schoolCount: 30, champion: { name: "習志野", prefecture: "千葉" }, score: "7-1", walkOff: false, replay: [], runnerUp: { name: "広陵", prefecture: "広島" }, finalDate: "1967-08-20" },
+  { season: "spring", no: 40, year: 1968, schoolCount: 30, champion: { name: "大宮工", prefecture: "埼玉" }, score: "3-2", walkOff: false, replay: [], runnerUp: { name: "尾道商", prefecture: "広島" }, finalDate: "1968-04-06" },
+  { season: "summer", no: 50, year: 1968, schoolCount: 48, champion: { name: "興国", prefecture: "大阪" }, score: "1-0", walkOff: false, replay: [], runnerUp: { name: "静岡商", prefecture: "静岡" }, finalDate: "1968-08-22" },
+  { season: "spring", no: 41, year: 1969, schoolCount: 26, champion: { name: "三重", prefecture: "三重" }, score: "12-0", walkOff: false, replay: [], runnerUp: { name: "堀越", prefecture: "東京" }, finalDate: "1969-04-06" },
+  { season: "summer", no: 51, year: 1969, schoolCount: 30, champion: { name: "松山商", prefecture: "愛媛" }, score: "4-2", walkOff: false, replay: ["0-0"], runnerUp: { name: "三沢", prefecture: "青森" }, finalDate: "1969-08-19" },
+  { season: "spring", no: 42, year: 1970, schoolCount: 26, champion: { name: "箕島", prefecture: "和歌山" }, score: "5-4", walkOff: true, replay: [], runnerUp: { name: "北陽", prefecture: "大阪" }, finalDate: "1970-04-05" },
+  { season: "summer", no: 52, year: 1970, schoolCount: 30, champion: { name: "東海大相模", prefecture: "神奈川" }, score: "10-6", walkOff: false, replay: [], runnerUp: { name: "PL学園", prefecture: "大阪" }, finalDate: "1970-08-20" },
+  { season: "spring", no: 43, year: 1971, schoolCount: 26, champion: { name: "日大三", prefecture: "東京" }, score: "2-0", walkOff: false, replay: [], runnerUp: { name: "大鉄", prefecture: "大阪" }, finalDate: "1971-04-06" },
+  { season: "summer", no: 53, year: 1971, schoolCount: 30, champion: { name: "桐蔭学園", prefecture: "神奈川" }, score: "1-0", walkOff: false, replay: [], runnerUp: { name: "磐城", prefecture: "福島" }, finalDate: "1971-08-16" },
+  { season: "spring", no: 44, year: 1972, schoolCount: 27, champion: { name: "日大桜丘", prefecture: "東京" }, score: "5-0", walkOff: false, replay: [], runnerUp: { name: "日大三", prefecture: "東京" }, finalDate: "1972-04-07" },
+  { season: "summer", no: 54, year: 1972, schoolCount: 30, champion: { name: "津久見", prefecture: "大分" }, score: "3-1", walkOff: false, replay: [], runnerUp: { name: "柳井", prefecture: "山口" }, finalDate: "1972-08-23" },
+  { season: "spring", no: 45, year: 1973, schoolCount: 30, champion: { name: "横浜", prefecture: "神奈川" }, score: "3-1", walkOff: false, replay: [], runnerUp: { name: "広島商", prefecture: "広島" }, finalDate: "1973-04-06" },
+  { season: "summer", no: 55, year: 1973, schoolCount: 48, champion: { name: "広島商", prefecture: "広島" }, score: "3-2", walkOff: true, replay: [], runnerUp: { name: "静岡", prefecture: "静岡" }, finalDate: "1973-08-22" },
+  { season: "spring", no: 46, year: 1974, schoolCount: 30, champion: { name: "報徳学園", prefecture: "兵庫" }, score: "3-1", walkOff: false, replay: [], runnerUp: { name: "池田", prefecture: "徳島" }, finalDate: "1974-04-06" },
+  { season: "summer", no: 56, year: 1974, schoolCount: 34, champion: { name: "銚子商", prefecture: "千葉" }, score: "7-0", walkOff: false, replay: [], runnerUp: { name: "防府商", prefecture: "山口" }, finalDate: "1974-08-19" },
+  { season: "spring", no: 47, year: 1975, schoolCount: 29, champion: { name: "高知", prefecture: "高知" }, score: "10-5", walkOff: false, replay: [], runnerUp: { name: "東海大相模", prefecture: "神奈川" }, finalDate: "1975-04-06" },
+  { season: "summer", no: 57, year: 1975, schoolCount: 38, champion: { name: "習志野", prefecture: "千葉" }, score: "5-4", walkOff: true, replay: [], runnerUp: { name: "新居浜商", prefecture: "愛媛" }, finalDate: "1975-08-24" },
+  { season: "spring", no: 48, year: 1976, schoolCount: 30, champion: { name: "崇徳", prefecture: "広島" }, score: "5-0", walkOff: false, replay: [], runnerUp: { name: "小山", prefecture: "栃木" }, finalDate: "1976-04-06" },
+  { season: "summer", no: 58, year: 1976, schoolCount: 41, champion: { name: "桜美林", prefecture: "西東京" }, score: "4-3", walkOff: true, replay: [], runnerUp: { name: "PL学園", prefecture: "大阪" }, finalDate: "1976-08-21" },
+  { season: "spring", no: 49, year: 1977, schoolCount: 30, champion: { name: "箕島", prefecture: "和歌山" }, score: "3-0", walkOff: false, replay: [], runnerUp: { name: "中村", prefecture: "高知" }, finalDate: "1977-04-07" },
+  { season: "summer", no: 59, year: 1977, schoolCount: 41, champion: { name: "東洋大姫路", prefecture: "兵庫" }, score: "4-1", walkOff: true, replay: [], runnerUp: { name: "東邦", prefecture: "愛知" }, finalDate: "1977-08-20" },
+  { season: "spring", no: 50, year: 1978, schoolCount: 30, champion: { name: "浜松商", prefecture: "静岡" }, score: "2-0", walkOff: false, replay: [], runnerUp: { name: "福井商", prefecture: "福井" }, finalDate: "1978-04-05" },
+  { season: "summer", no: 60, year: 1978, schoolCount: 49, champion: { name: "PL学園", prefecture: "大阪" }, score: "3-2", walkOff: true, replay: [], runnerUp: { name: "高知商", prefecture: "高知" }, finalDate: "1978-08-20" },
+  { season: "spring", no: 51, year: 1979, schoolCount: 30, champion: { name: "箕島", prefecture: "和歌山" }, score: "8-7", walkOff: false, replay: [], runnerUp: { name: "浪商", prefecture: "大阪" }, finalDate: "1979-04-07" },
+  { season: "summer", no: 61, year: 1979, schoolCount: 49, champion: { name: "箕島", prefecture: "和歌山" }, score: "4-3", walkOff: false, replay: [], runnerUp: { name: "池田", prefecture: "徳島" }, finalDate: "1979-08-21" },
+  { season: "spring", no: 52, year: 1980, schoolCount: 30, champion: { name: "高知商", prefecture: "高知" }, score: "1-0", walkOff: true, replay: [], runnerUp: { name: "帝京", prefecture: "東京" }, finalDate: "1980-04-06" },
+  { season: "summer", no: 62, year: 1980, schoolCount: 49, champion: { name: "横浜", prefecture: "神奈川" }, score: "6-4", walkOff: false, replay: [], runnerUp: { name: "早稲田実", prefecture: "東東京" }, finalDate: "1980-08-22" },
+  { season: "spring", no: 53, year: 1981, schoolCount: 30, champion: { name: "PL学園", prefecture: "大阪" }, score: "2-1", walkOff: true, replay: [], runnerUp: { name: "印旛", prefecture: "千葉" }, finalDate: "1981-04-08" },
+  { season: "summer", no: 63, year: 1981, schoolCount: 49, champion: { name: "報徳学園", prefecture: "兵庫" }, score: "2-0", walkOff: false, replay: [], runnerUp: { name: "京都商", prefecture: "京都" }, finalDate: "1981-08-21" },
+  { season: "spring", no: 54, year: 1982, schoolCount: 30, champion: { name: "PL学園", prefecture: "大阪" }, score: "15-2", walkOff: false, replay: [], runnerUp: { name: "二松学舎大付", prefecture: "東京" }, finalDate: "1982-04-05" },
+  { season: "summer", no: 64, year: 1982, schoolCount: 49, champion: { name: "池田", prefecture: "徳島" }, score: "12-2", walkOff: false, replay: [], runnerUp: { name: "広島商", prefecture: "広島" }, finalDate: "1982-08-20" },
+  { season: "spring", no: 55, year: 1983, schoolCount: 32, champion: { name: "池田", prefecture: "徳島" }, score: "3-0", walkOff: false, replay: [], runnerUp: { name: "横浜商", prefecture: "神奈川" }, finalDate: "1983-04-05" },
+  { season: "summer", no: 65, year: 1983, schoolCount: 49, champion: { name: "PL学園", prefecture: "大阪" }, score: "3-0", walkOff: false, replay: [], runnerUp: { name: "横浜商", prefecture: "神奈川" }, finalDate: "1983-08-21" },
+  { season: "spring", no: 56, year: 1984, schoolCount: 32, champion: { name: "岩倉", prefecture: "東京" }, score: "1-0", walkOff: false, replay: [], runnerUp: { name: "PL学園", prefecture: "大阪" }, finalDate: "1984-04-04" },
+  { season: "summer", no: 66, year: 1984, schoolCount: 49, champion: { name: "取手二", prefecture: "茨城" }, score: "8-4", walkOff: false, replay: [], runnerUp: { name: "PL学園", prefecture: "大阪" }, finalDate: "1984-08-21" },
+  { season: "spring", no: 57, year: 1985, schoolCount: 32, champion: { name: "伊野商", prefecture: "高知" }, score: "4-0", walkOff: false, replay: [], runnerUp: { name: "帝京", prefecture: "東京" }, finalDate: "1985-04-07" },
+  { season: "summer", no: 67, year: 1985, schoolCount: 49, champion: { name: "PL学園", prefecture: "大阪" }, score: "4-3", walkOff: true, replay: [], runnerUp: { name: "宇部商", prefecture: "山口" }, finalDate: "1985-08-21" },
+  { season: "spring", no: 58, year: 1986, schoolCount: 32, champion: { name: "池田", prefecture: "徳島" }, score: "7-1", walkOff: false, replay: [], runnerUp: { name: "宇都宮南", prefecture: "栃木" }, finalDate: "1986-04-05" },
+  { season: "summer", no: 68, year: 1986, schoolCount: 49, champion: { name: "天理", prefecture: "奈良" }, score: "3-2", walkOff: false, replay: [], runnerUp: { name: "松山商", prefecture: "愛媛" }, finalDate: "1986-08-21" },
+  { season: "spring", no: 59, year: 1987, schoolCount: 32, champion: { name: "PL学園", prefecture: "大阪" }, score: "7-1", walkOff: false, replay: [], runnerUp: { name: "関東一", prefecture: "東京" }, finalDate: "1987-04-04" },
+  { season: "summer", no: 69, year: 1987, schoolCount: 49, champion: { name: "PL学園", prefecture: "大阪" }, score: "5-2", walkOff: false, replay: [], runnerUp: { name: "常総学院", prefecture: "茨城" }, finalDate: "1987-08-21" },
+  { season: "spring", no: 60, year: 1988, schoolCount: 34, champion: { name: "宇和島東", prefecture: "愛媛" }, score: "6-0", walkOff: false, replay: [], runnerUp: { name: "東邦", prefecture: "愛知" }, finalDate: "1988-04-05" },
+  { season: "summer", no: 70, year: 1988, schoolCount: 49, champion: { name: "広島商", prefecture: "広島" }, score: "1-0", walkOff: false, replay: [], runnerUp: { name: "福岡第一", prefecture: "福岡" }, finalDate: "1988-08-22" },
+  { season: "spring", no: 61, year: 1989, schoolCount: 32, champion: { name: "東邦", prefecture: "愛知" }, score: "3-2", walkOff: true, replay: [], runnerUp: { name: "上宮", prefecture: "大阪" }, finalDate: "1989-04-05" },
+  { season: "summer", no: 71, year: 1989, schoolCount: 49, champion: { name: "帝京", prefecture: "東東京" }, score: "2-0", walkOff: false, replay: [], runnerUp: { name: "仙台育英", prefecture: "宮城" }, finalDate: "1989-08-22" },
+  { season: "spring", no: 62, year: 1990, schoolCount: 32, champion: { name: "近大付", prefecture: "大阪" }, score: "5-2", walkOff: false, replay: [], runnerUp: { name: "新田", prefecture: "愛媛" }, finalDate: "1990-04-04" },
+  { season: "summer", no: 72, year: 1990, schoolCount: 49, champion: { name: "天理", prefecture: "奈良" }, score: "1-0", walkOff: false, replay: [], runnerUp: { name: "沖縄水産", prefecture: "沖縄" }, finalDate: "1990-08-21" },
+  { season: "spring", no: 63, year: 1991, schoolCount: 32, champion: { name: "広陵", prefecture: "広島" }, score: "6-5", walkOff: true, replay: [], runnerUp: { name: "松商学園", prefecture: "長野" }, finalDate: "1991-04-05" },
+  { season: "summer", no: 73, year: 1991, schoolCount: 49, champion: { name: "大阪桐蔭", prefecture: "大阪" }, score: "13-8", walkOff: false, replay: [], runnerUp: { name: "沖縄水産", prefecture: "沖縄" }, finalDate: "1991-08-21" },
+  { season: "spring", no: 64, year: 1992, schoolCount: 32, champion: { name: "帝京", prefecture: "東京" }, score: "3-2", walkOff: false, replay: [], runnerUp: { name: "東海大相模", prefecture: "神奈川" }, finalDate: "1992-04-06" },
+  { season: "summer", no: 74, year: 1992, schoolCount: 49, champion: { name: "西日本短大付", prefecture: "福岡" }, score: "1-0", walkOff: false, replay: [], runnerUp: { name: "拓大紅陵", prefecture: "千葉" }, finalDate: "1992-08-25" },
+  { season: "spring", no: 65, year: 1993, schoolCount: 34, champion: { name: "上宮", prefecture: "大阪" }, score: "3-0", walkOff: false, replay: [], runnerUp: { name: "大宮東", prefecture: "埼玉" }, finalDate: "1993-04-05" },
+  { season: "summer", no: 75, year: 1993, schoolCount: 49, champion: { name: "育英", prefecture: "兵庫" }, score: "3-2", walkOff: false, replay: [], runnerUp: { name: "春日部共栄", prefecture: "埼玉" }, finalDate: "1993-08-23" },
+  { season: "spring", no: 66, year: 1994, schoolCount: 32, champion: { name: "智弁和歌山", prefecture: "和歌山" }, score: "7-5", walkOff: false, replay: [], runnerUp: { name: "常総学院", prefecture: "茨城" }, finalDate: "1994-04-04" },
+  { season: "summer", no: 76, year: 1994, schoolCount: 49, champion: { name: "佐賀商", prefecture: "佐賀" }, score: "8-4", walkOff: false, replay: [], runnerUp: { name: "樟南", prefecture: "鹿児島" }, finalDate: "1994-08-21" },
+  { season: "spring", no: 67, year: 1995, schoolCount: 32, champion: { name: "観音寺中央", prefecture: "香川" }, score: "4-0", walkOff: false, replay: [], runnerUp: { name: "銚子商", prefecture: "千葉" }, finalDate: "1995-04-05" },
+  { season: "summer", no: 77, year: 1995, schoolCount: 49, champion: { name: "帝京", prefecture: "東東京" }, score: "3-1", walkOff: false, replay: [], runnerUp: { name: "星稜", prefecture: "石川" }, finalDate: "1995-08-21" },
+  { season: "spring", no: 68, year: 1996, schoolCount: 32, champion: { name: "鹿児島実", prefecture: "鹿児島" }, score: "6-3", walkOff: false, replay: [], runnerUp: { name: "智弁和歌山", prefecture: "和歌山" }, finalDate: "1996-04-05" },
+  { season: "summer", no: 78, year: 1996, schoolCount: 49, champion: { name: "松山商", prefecture: "愛媛" }, score: "6-3", walkOff: false, replay: [], runnerUp: { name: "熊本工", prefecture: "熊本" }, finalDate: "1996-08-21" },
+  { season: "spring", no: 69, year: 1997, schoolCount: 32, champion: { name: "天理", prefecture: "奈良" }, score: "4-1", walkOff: false, replay: [], runnerUp: { name: "中京大中京", prefecture: "愛知" }, finalDate: "1997-04-09" },
+  { season: "summer", no: 79, year: 1997, schoolCount: 49, champion: { name: "智弁和歌山", prefecture: "和歌山" }, score: "6-3", walkOff: false, replay: [], runnerUp: { name: "平安", prefecture: "京都" }, finalDate: "1997-08-21" },
+  { season: "spring", no: 70, year: 1998, schoolCount: 36, champion: { name: "横浜", prefecture: "神奈川" }, score: "3-0", walkOff: false, replay: [], runnerUp: { name: "関大一", prefecture: "大阪" }, finalDate: "1998-04-08" },
+  { season: "summer", no: 80, year: 1998, schoolCount: 55, champion: { name: "横浜", prefecture: "東神奈川" }, score: "3-0", walkOff: false, replay: [], runnerUp: { name: "京都成章", prefecture: "京都" }, finalDate: "1998-08-22" },
+  { season: "spring", no: 71, year: 1999, schoolCount: 32, champion: { name: "沖縄尚学", prefecture: "沖縄" }, score: "7-2", walkOff: false, replay: [], runnerUp: { name: "水戸商", prefecture: "茨城" }, finalDate: "1999-04-04" },
+  { season: "summer", no: 81, year: 1999, schoolCount: 49, champion: { name: "桐生第一", prefecture: "群馬" }, score: "14-1", walkOff: false, replay: [], runnerUp: { name: "岡山理大附", prefecture: "岡山" }, finalDate: "1999-08-21" },
+  { season: "spring", no: 72, year: 2000, schoolCount: 32, champion: { name: "東海大相模", prefecture: "神奈川" }, score: "4-2", walkOff: false, replay: [], runnerUp: { name: "智弁和歌山", prefecture: "和歌山" }, finalDate: "2000-04-04" },
+  { season: "summer", no: 82, year: 2000, schoolCount: 49, champion: { name: "智弁和歌山", prefecture: "和歌山" }, score: "11-6", walkOff: false, replay: [], runnerUp: { name: "東海大浦安", prefecture: "千葉" }, finalDate: "2000-08-21" },
+  { season: "spring", no: 73, year: 2001, schoolCount: 34, champion: { name: "常総学院", prefecture: "茨城" }, score: "7-6", walkOff: false, replay: [], runnerUp: { name: "仙台育英", prefecture: "宮城" }, finalDate: "2001-04-04" },
+  { season: "summer", no: 83, year: 2001, schoolCount: 49, champion: { name: "日大三", prefecture: "西東京" }, score: "5-2", walkOff: false, replay: [], runnerUp: { name: "近江", prefecture: "滋賀" }, finalDate: "2001-08-22" },
+  { season: "spring", no: 74, year: 2002, schoolCount: 32, champion: { name: "報徳学園", prefecture: "兵庫" }, score: "8-2", walkOff: false, replay: [], runnerUp: { name: "鳴門工", prefecture: "徳島" }, finalDate: "2002-04-05" },
+  { season: "summer", no: 84, year: 2002, schoolCount: 49, champion: { name: "明徳義塾", prefecture: "高知" }, score: "7-2", walkOff: false, replay: [], runnerUp: { name: "智弁和歌山", prefecture: "和歌山" }, finalDate: "2002-08-21" },
+  { season: "spring", no: 75, year: 2003, schoolCount: 34, champion: { name: "広陵", prefecture: "広島" }, score: "15-3", walkOff: false, replay: [], runnerUp: { name: "横浜", prefecture: "神奈川" }, finalDate: "2003-04-03" },
+  { season: "summer", no: 85, year: 2003, schoolCount: 49, champion: { name: "常総学院", prefecture: "茨城" }, score: "4-2", walkOff: false, replay: [], runnerUp: { name: "東北", prefecture: "宮城" }, finalDate: "2003-08-23" },
+  { season: "spring", no: 76, year: 2004, schoolCount: 32, champion: { name: "済美", prefecture: "愛媛" }, score: "6-5", walkOff: false, replay: [], runnerUp: { name: "愛工大名電", prefecture: "愛知" }, finalDate: "2004-04-04" },
+  { season: "summer", no: 86, year: 2004, schoolCount: 49, champion: { name: "駒大苫小牧", prefecture: "南北海道" }, score: "13-10", walkOff: false, replay: [], runnerUp: { name: "済美", prefecture: "愛媛" }, finalDate: "2004-08-22" },
+  { season: "spring", no: 77, year: 2005, schoolCount: 32, champion: { name: "愛工大名電", prefecture: "愛知" }, score: "9-2", walkOff: false, replay: [], runnerUp: { name: "神村学園", prefecture: "鹿児島" }, finalDate: "2005-04-04" },
+  { season: "summer", no: 87, year: 2005, schoolCount: 49, champion: { name: "駒大苫小牧", prefecture: "南北海道" }, score: "5-3", walkOff: false, replay: [], runnerUp: { name: "京都外大西", prefecture: "京都" }, finalDate: "2005-08-20" },
+  { season: "spring", no: 78, year: 2006, schoolCount: 32, champion: { name: "横浜", prefecture: "神奈川" }, score: "21-0", walkOff: false, replay: [], runnerUp: { name: "清峰", prefecture: "長崎" }, finalDate: "2006-04-04" },
+  { season: "summer", no: 88, year: 2006, schoolCount: 49, champion: { name: "早稲田実", prefecture: "西東京" }, score: "4-3", walkOff: false, replay: ["1-1"], runnerUp: { name: "駒大苫小牧", prefecture: "南北海道" }, finalDate: "2006-08-21" },
+  { season: "spring", no: 79, year: 2007, schoolCount: 32, champion: { name: "常葉菊川", prefecture: "静岡" }, score: "6-5", walkOff: false, replay: [], runnerUp: { name: "大垣日大", prefecture: "岐阜" }, finalDate: "2007-04-03" },
+  { season: "summer", no: 89, year: 2007, schoolCount: 49, champion: { name: "佐賀北", prefecture: "佐賀" }, score: "5-4", walkOff: false, replay: [], runnerUp: { name: "広陵", prefecture: "広島" }, finalDate: "2007-08-22" },
+  { season: "spring", no: 80, year: 2008, schoolCount: 36, champion: { name: "沖縄尚学", prefecture: "沖縄" }, score: "9-0", walkOff: false, replay: [], runnerUp: { name: "聖望学園", prefecture: "埼玉" }, finalDate: "2008-04-04" },
+  { season: "summer", no: 90, year: 2008, schoolCount: 55, champion: { name: "大阪桐蔭", prefecture: "北大阪" }, score: "17-0", walkOff: false, replay: [], runnerUp: { name: "常葉菊川", prefecture: "静岡" }, finalDate: "2008-08-18" },
+  { season: "spring", no: 81, year: 2009, schoolCount: 32, champion: { name: "清峰", prefecture: "長崎" }, score: "1-0", walkOff: false, replay: [], runnerUp: { name: "花巻東", prefecture: "岩手" }, finalDate: "2009-04-02" },
+  { season: "summer", no: 91, year: 2009, schoolCount: 49, champion: { name: "中京大中京", prefecture: "愛知" }, score: "10-9", walkOff: false, replay: [], runnerUp: { name: "日本文理", prefecture: "新潟" }, finalDate: "2009-08-24" },
+  { season: "spring", no: 82, year: 2010, schoolCount: 32, champion: { name: "興南", prefecture: "沖縄" }, score: "10-5", walkOff: false, replay: [], runnerUp: { name: "日大三", prefecture: "東京" }, finalDate: "2010-04-03" },
+  { season: "summer", no: 92, year: 2010, schoolCount: 49, champion: { name: "興南", prefecture: "沖縄" }, score: "13-1", walkOff: false, replay: [], runnerUp: { name: "東海大相模", prefecture: "神奈川" }, finalDate: "2010-08-21" },
+  { season: "spring", no: 83, year: 2011, schoolCount: 32, champion: { name: "東海大相模", prefecture: "神奈川" }, score: "6-1", walkOff: false, replay: [], runnerUp: { name: "九州国際大付", prefecture: "福岡" }, finalDate: "2011-04-03" },
+  { season: "summer", no: 93, year: 2011, schoolCount: 49, champion: { name: "日大三", prefecture: "西東京" }, score: "11-0", walkOff: false, replay: [], runnerUp: { name: "光星学院", prefecture: "青森" }, finalDate: "2011-08-20" },
+  { season: "spring", no: 84, year: 2012, schoolCount: 32, champion: { name: "大阪桐蔭", prefecture: "大阪" }, score: "7-3", walkOff: false, replay: [], runnerUp: { name: "光星学院", prefecture: "青森" }, finalDate: "2012-04-04" },
+  { season: "summer", no: 94, year: 2012, schoolCount: 49, champion: { name: "大阪桐蔭", prefecture: "大阪" }, score: "3-0", walkOff: false, replay: [], runnerUp: { name: "光星学院", prefecture: "青森" }, finalDate: "2012-08-23" },
+  { season: "spring", no: 85, year: 2013, schoolCount: 36, champion: { name: "浦和学院", prefecture: "埼玉" }, score: "17-1", walkOff: false, replay: [], runnerUp: { name: "済美", prefecture: "愛媛" }, finalDate: "2013-04-03" },
+  { season: "summer", no: 95, year: 2013, schoolCount: 49, champion: { name: "前橋育英", prefecture: "群馬" }, score: "4-3", walkOff: false, replay: [], runnerUp: { name: "延岡学園", prefecture: "宮崎" }, finalDate: "2013-08-22" },
+  { season: "spring", no: 86, year: 2014, schoolCount: 32, champion: { name: "龍谷大平安", prefecture: "京都" }, score: "6-2", walkOff: false, replay: [], runnerUp: { name: "履正社", prefecture: "大阪" }, finalDate: "2014-04-02" },
+  { season: "summer", no: 96, year: 2014, schoolCount: 49, champion: { name: "大阪桐蔭", prefecture: "大阪" }, score: "4-3", walkOff: false, replay: [], runnerUp: { name: "三重", prefecture: "三重" }, finalDate: "2014-08-25" },
+  { season: "spring", no: 87, year: 2015, schoolCount: 32, champion: { name: "敦賀気比", prefecture: "福井" }, score: "3-1", walkOff: false, replay: [], runnerUp: { name: "東海大四", prefecture: "北海道" }, finalDate: "2015-04-01" },
+  { season: "summer", no: 97, year: 2015, schoolCount: 49, champion: { name: "東海大相模", prefecture: "神奈川" }, score: "10-6", walkOff: false, replay: [], runnerUp: { name: "仙台育英", prefecture: "宮城" }, finalDate: "2015-08-20" },
+  { season: "spring", no: 88, year: 2016, schoolCount: 32, champion: { name: "智弁学園", prefecture: "奈良" }, score: "2-1", walkOff: true, replay: [], runnerUp: { name: "高松商", prefecture: "香川" }, finalDate: "2016-03-31" },
+  { season: "summer", no: 98, year: 2016, schoolCount: 49, champion: { name: "作新学院", prefecture: "栃木" }, score: "7-1", walkOff: false, replay: [], runnerUp: { name: "北海", prefecture: "南北海道" }, finalDate: "2016-08-21" },
+  { season: "spring", no: 89, year: 2017, schoolCount: 32, champion: { name: "大阪桐蔭", prefecture: "大阪" }, score: "8-3", walkOff: false, replay: [], runnerUp: { name: "履正社", prefecture: "大阪" }, finalDate: "2017-04-01" },
+  { season: "summer", no: 99, year: 2017, schoolCount: 49, champion: { name: "花咲徳栄", prefecture: "埼玉" }, score: "14-4", walkOff: false, replay: [], runnerUp: { name: "広陵", prefecture: "広島" }, finalDate: "2017-08-23" },
+  { season: "spring", no: 90, year: 2018, schoolCount: 36, champion: { name: "大阪桐蔭", prefecture: "大阪" }, score: "5-2", walkOff: false, replay: [], runnerUp: { name: "智弁和歌山", prefecture: "和歌山" }, finalDate: "2018-04-04" },
+  { season: "summer", no: 100, year: 2018, schoolCount: 56, champion: { name: "大阪桐蔭", prefecture: "北大阪" }, score: "13-2", walkOff: false, replay: [], runnerUp: { name: "金足農", prefecture: "秋田" }, finalDate: "2018-08-21" },
+  { season: "spring", no: 91, year: 2019, schoolCount: 32, champion: { name: "東邦", prefecture: "愛知" }, score: "6-0", walkOff: false, replay: [], runnerUp: { name: "習志野", prefecture: "千葉" }, finalDate: "2019-04-03" },
+  { season: "summer", no: 101, year: 2019, schoolCount: 49, champion: { name: "履正社", prefecture: "大阪" }, score: "5-3", walkOff: false, replay: [], runnerUp: { name: "星稜", prefecture: "石川" }, finalDate: "2019-08-22" },
+  { season: "spring", no: 93, year: 2021, schoolCount: 32, champion: { name: "東海大相模", prefecture: "神奈川" }, score: "3-2", walkOff: true, replay: [], runnerUp: { name: "明豊", prefecture: "大分" }, finalDate: "2021-04-01" },
+  { season: "summer", no: 103, year: 2021, schoolCount: 49, champion: { name: "智弁和歌山", prefecture: "和歌山" }, score: "9-2", walkOff: false, replay: [], runnerUp: { name: "智弁学園", prefecture: "奈良" }, finalDate: "2021-08-29" },
+  { season: "spring", no: 94, year: 2022, schoolCount: 32, champion: { name: "大阪桐蔭", prefecture: "大阪" }, score: "18-1", walkOff: false, replay: [], runnerUp: { name: "近江", prefecture: "滋賀" }, finalDate: "2022-03-31" },
+  { season: "summer", no: 104, year: 2022, schoolCount: 49, champion: { name: "仙台育英", prefecture: "宮城" }, score: "8-1", walkOff: false, replay: [], runnerUp: { name: "下関国際", prefecture: "山口" }, finalDate: "2022-08-22" },
+  { season: "spring", no: 95, year: 2023, schoolCount: 36, champion: { name: "山梨学院", prefecture: "山梨" }, score: "7-3", walkOff: false, replay: [], runnerUp: { name: "報徳学園", prefecture: "兵庫" }, finalDate: "2023-04-01" },
+  { season: "summer", no: 105, year: 2023, schoolCount: 49, champion: { name: "慶応", prefecture: "神奈川" }, score: "8-2", walkOff: false, replay: [], runnerUp: { name: "仙台育英", prefecture: "宮城" }, finalDate: "2023-08-23" },
+  { season: "spring", no: 96, year: 2024, schoolCount: 32, champion: { name: "健大高崎", prefecture: "群馬" }, score: "3-2", walkOff: false, replay: [], runnerUp: { name: "報徳学園", prefecture: "兵庫" }, finalDate: "2024-03-31" },
+  { season: "summer", no: 106, year: 2024, schoolCount: 49, champion: { name: "京都国際", prefecture: "京都" }, score: "2-1", walkOff: false, replay: [], runnerUp: { name: "関東第一", prefecture: "東東京" }, finalDate: "2024-08-23" },
+  { season: "spring", no: 97, year: 2025, schoolCount: 32, champion: { name: "横浜", prefecture: "神奈川" }, score: "11-4", walkOff: false, replay: [], runnerUp: { name: "智弁和歌山", prefecture: "和歌山" }, finalDate: "2025-03-30" },
+  { season: "summer", no: 107, year: 2025, schoolCount: 49, champion: { name: "沖縄尚学", prefecture: "沖縄" }, score: "3-1", walkOff: false, replay: [], runnerUp: { name: "日大三", prefecture: "西東京" }, finalDate: "2025-08-23" },
+  { season: "spring", no: 98, year: 2026, schoolCount: 32, champion: { name: "大阪桐蔭", prefecture: "大阪" }, score: "7-3", walkOff: false, replay: [], runnerUp: { name: "智弁学園", prefecture: "奈良" }, finalDate: "2026-03-31" },
+  { season: "summer", no: 108, year: 2026, schoolCount: 49, champion: { name: "智弁和歌山", prefecture: "和歌山" }, score: "4-3", walkOff: false, replay: [], runnerUp: { name: "健大高崎", prefecture: "群馬" }, finalDate: "2026-08-22" },
+];

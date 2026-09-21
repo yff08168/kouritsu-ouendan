@@ -66,6 +66,7 @@ export default async function KoshienPublicChampionsPage() {
           { label: "優勝した公立高校" },
         ]}
       />
+      {/* ★私立も含む全大会の一覧は別ページ（2026-09-21）。こちらは公立だけ */}
 
       <header className="rounded-xl border border-line bg-white p-5 sm:p-7">
         <p className="text-sm font-bold text-accent-800">歴代</p>
@@ -80,6 +81,14 @@ export default async function KoshienPublicChampionsPage() {
       </header>
 
       <LeadText paragraphs={lead} />
+
+      <p className="mt-4 text-sm text-ink-muted">
+        私立も含めた全大会の優勝校・準優勝校と都道府県別の優勝回数は
+        <Link href="/koshien/champions" className="ml-1 font-bold text-accent-800 underline decoration-line underline-offset-2">
+          甲子園の歴代優勝校（春・夏）
+        </Link>
+        にあります。
+      </p>
 
       <GuideLinkBox className="mt-4" slugs={["senbatsu-selection", "tournament-rules"]} />
 

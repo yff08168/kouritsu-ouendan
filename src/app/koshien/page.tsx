@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Trophy, GitBranch, Users } from "lucide-react";
+import { Trophy, GitBranch, Medal, Users } from "lucide-react";
 
 import { Container } from "@/components/layout/Container";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
@@ -132,6 +132,61 @@ export default async function KoshienIndexPage() {
               </Link>
             </li>
           ))}
+        </ul>
+      </section>
+
+      {/* ------- 歴代優勝校 ------- */}
+      {/*
+        ★**「甲子園 歴代優勝校」の受け皿への入口**（2026-09-21）。
+        キーワードプランナーで月平均6,600・8月49,500。中身は大会ページが1大会ずつ持っている。
+      */}
+      <section
+        aria-labelledby="koshien-champions"
+        className="mt-4 rounded-xl border border-line bg-white p-5"
+      >
+        <SectionHeading
+          id="koshien-champions"
+          title="歴代優勝校（春・夏）"
+          icon={<Medal size={18} />}
+          moreHref="/koshien/champions"
+          moreLabel="一覧へ"
+        />
+        <p className="mt-3 text-sm leading-relaxed text-ink-muted">
+          春の選抜と夏の選手権の優勝校を、準優勝校・決勝のスコアと一緒に1枚に並べています。都道府県別の優勝回数も出しています。
+        </p>
+        <ul className="mt-3 flex flex-wrap gap-2">
+          <li>
+            <Link
+              href="/koshien/champions#summer"
+              className="inline-flex min-h-11 items-center rounded-lg border border-line px-3 text-sm text-ink hover:bg-navy-50"
+            >
+              夏の選手権
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/koshien/champions#spring"
+              className="inline-flex min-h-11 items-center rounded-lg border border-line px-3 text-sm text-ink hover:bg-navy-50"
+            >
+              春の選抜
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/koshien/champions#prefectures"
+              className="inline-flex min-h-11 items-center rounded-lg border border-line px-3 text-sm text-ink hover:bg-navy-50"
+            >
+              都道府県別の優勝回数
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/koshien/public/champions"
+              className="inline-flex min-h-11 items-center rounded-lg border border-accent-200 bg-accent-50 px-3 text-sm font-bold text-accent-800 hover:bg-accent-100"
+            >
+              優勝した公立高校
+            </Link>
+          </li>
         </ul>
       </section>
 

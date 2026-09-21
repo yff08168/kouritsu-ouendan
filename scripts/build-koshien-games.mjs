@@ -617,6 +617,18 @@ function prefectureOfTeams(text, teams) {
   for (const line of text.split("\n")) {
     if (!line.startsWith("|") || !line.includes("||")) continue;
     const cells = line.replace(/^\|-?/, "").split("||").map(cleanName);
+    /*
+      ★★★**試合の行を読まないこと**（2026-09-21）。
+      勝敗表の行（`|第2試合||松山商||2 - 0||秋田||`）にも校名が並び、
+      **相手の校名が県名と同じ**（秋田・静岡・青森・岩手 …）だと
+      **その校名が県として付く。** 実際に 1953年夏の松山商に「秋田」、
+      1951年夏の県和歌山商に「青森」、1955年夏の城東に「静岡」・坂出商に「岩手」が付いていた。
+      ★**県が誤ると学校に結び付かない**（松山商は公立なのに 1953年夏の優勝校として引けなかった）。
+      ★**代表校の表には得点も「第N試合」も無い**ので、それがある行は飛ばす。
+      ★**「校名が2つある行を飛ばす」にはしない** —— 代表校の行でも
+      **県名と同じ校名の学校が同じ大会にいる**と（1982年春の愛知と中京）2つに数えて落ちる。
+    */
+    if (cells.some((c) => /^\d+x?\s*[-‐－−–]\s*\d+x?$/i.test(c) || /^第\d+試合$/.test(c))) continue;
     const school = cells.find((c) => teams.has(c));
     const pref = cells.find((c) => PREFECTURE_NAMES.has(c));
     if (school && pref && !found.has(school)) found.set(school, pref);

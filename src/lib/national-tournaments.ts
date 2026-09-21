@@ -77,6 +77,22 @@ const SEASON_LABEL: Record<NationalSeason, string> = {
 export const nationalSeasonLabel = (s: NationalSeason) => SEASON_LABEL[s];
 
 /** 甲子園の全大会。**新しい順**（年 → 夏・春） */
+/**
+ * 決勝の試合。
+ *
+ * ★★★**引き分け再試合の年は「決勝」が2試合ある**（1969年夏 松山商－三沢、2006年夏 早稲田実－駒大苫小牧。
+ * 2026-09-21 に見つけた）。**最初の1つを採ると引き分けのほう**になり、`finalists` が
+ * 「勝った学校が無い」で null を返して、**大会一覧・年別ページ・優勝した公立校の一覧の
+ * どこにも優勝校が出ていなかった**（松山商は公立）。
+ * ★**勝敗の付いた決勝を採る。** 決着した決勝が無い大会は最初のもの（優勝校は出ない）。
+ */
+function pickFinal<G extends { round: string | null; teams: { won: boolean }[] }>(
+  games: G[],
+): G | null {
+  const finals = games.filter((g) => g.round === "決勝");
+  return finals.find((g) => g.teams.some((x) => x.won)) ?? finals[0] ?? null;
+}
+
 export function listKoshienTournaments(): NationalTournament[] {
   const byKey = new Map<string, KoshienGame[]>();
   for (const g of KOSHIEN_GAMES) {
@@ -97,7 +113,7 @@ export function listKoshienTournaments(): NationalTournament[] {
       name: head.tournament,
       slug,
       games,
-      final: games.find((g) => g.round === "決勝") ?? null,
+      final: pickFinal(games),
       firstDate: dates[0] ?? null,
       lastDate: dates.at(-1) ?? null,
       reference: TOURNAMENT_BY_KEY.get(`${head.year}:${head.season}`) ?? null,
@@ -131,7 +147,7 @@ export function listJinguTournaments(): NationalTournament[] {
         name: games[0].tournament,
         slug: String(year),
         games,
-        final: games.find((g) => g.round === "決勝") ?? null,
+        final: pickFinal(games),
         firstDate: dates[0] ?? null,
         lastDate: dates.at(-1) ?? null,
         reference: null,

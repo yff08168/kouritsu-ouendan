@@ -171,6 +171,13 @@ export default async function KoshienTournamentPage({ params }: Props) {
               <span className="text-ink-muted">準優勝</span>
               <span className="font-medium text-ink">{f.runnerUp}</span>
             </span>
+            {/* ★歴代優勝校の一覧への入口（2026-09-21）。202枚の大会ページから張る */}
+            <Link
+              href={`/koshien/champions#${t.season}`}
+              className="text-xs text-navy-800 underline decoration-line underline-offset-2 hover:text-accent-800"
+            >
+              歴代の優勝校を見る
+            </Link>
           </p>
         )}
 

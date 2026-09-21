@@ -89,6 +89,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url("/koshien"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     // ★**公立高校の甲子園出場校（年別）**（2026-09-21）。年ページは下の publicYearPages
     { url: url("/koshien/public"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: url("/koshien/public/champions"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     // ★**ルールと制度の解説**（2026-09-21）。各ページは下の guidePages
     { url: url("/guide"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: url("/jingu"), lastModified: now, changeFrequency: "monthly", priority: 0.6 },

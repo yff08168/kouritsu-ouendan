@@ -40,6 +40,7 @@ import {
   type NationalTournament,
   type PublicEntrant,
 } from "@/lib/national-tournaments";
+import { teamPrefecture } from "@/lib/koshien-games";
 import { TWENTY_FIRST_CENTURY_BERTHS } from "@/lib/data/twenty-first-century";
 
 /** 校名 → 学校マスタ。`getSchoolNameIndex("koshien").find` をそのまま渡す */
@@ -122,6 +123,96 @@ export function listPublicYears(resolve: Resolve): PublicYear[] {
 /** ページにする年だけ（公立が1校以上結び付いた年）。**新しい順** */
 export function listPublicYearsWithEntrants(resolve: Resolve): PublicYear[] {
   return listPublicYears(resolve).filter((y) => y.entrantCount > 0);
+}
+
+/** 決勝で公立高校が勝った／負けた大会 */
+export type PublicFinalEntry = {
+  tournament: NationalTournament;
+  champion: string;
+  runnerUp: string;
+  /** 「4-3」。決勝の得点。読めていなければ null */
+  score: string | null;
+  /** 公立の側の学校（優勝の一覧なら優勝校、準優勝の一覧なら準優勝校） */
+  school: { slug: string; name: string };
+};
+
+export type PublicChampions = {
+  /** 公立が優勝した大会。新しい順 */
+  champions: PublicFinalEntry[];
+  /** 公立が準優勝した大会。新しい順 */
+  runnersUp: PublicFinalEntry[];
+  /** 学校ごとの優勝回数。多い順 → 新しい順 */
+  bySchool: { slug: string; name: string; count: number; entries: PublicFinalEntry[] }[];
+};
+
+/**
+ * 甲子園で優勝・準優勝した公立高校（`/koshien/public/champions`）。
+ * ★**決勝が読めている大会だけ**（`finalists` が null を返す大会は数えない）。
+ * ★**公立かどうかは大会ページと同じ `resolve`**（県まで渡す。同名の別校に当てない）。
+ */
+export function listPublicChampions(resolve: Resolve): PublicChampions {
+  const champions: PublicFinalEntry[] = [];
+  const runnersUp: PublicFinalEntry[] = [];
+  for (const t of listKoshienTournaments()) {
+    const f = finalists(t);
+    if (!f || !t.final) continue;
+    const winner = t.final.teams.find((x) => x.won);
+    const loser = t.final.teams.find((x) => !x.won);
+    const score = winner && loser ? `${winner.score}-${loser.score}` : null;
+    const champ = resolve(f.champion, f.championPref);
+    if (champ) {
+      champions.push({ tournament: t, champion: f.champion, runnerUp: f.runnerUp, score, school: champ });
+    }
+    const runnerPref = loser
+      ? teamPrefecture(loser as { display: string; pref?: string; score: number; won: boolean })
+      : undefined;
+    const runner = resolve(f.runnerUp, runnerPref);
+    if (runner) {
+      runnersUp.push({ tournament: t, champion: f.champion, runnerUp: f.runnerUp, score, school: runner });
+    }
+  }
+  const bySchoolMap = new Map<string, PublicChampions["bySchool"][number]>();
+  for (const e of champions) {
+    const cur = bySchoolMap.get(e.school.slug) ?? { slug: e.school.slug, name: e.school.name, count: 0, entries: [] };
+    cur.count += 1;
+    cur.entries.push(e);
+    bySchoolMap.set(e.school.slug, cur);
+  }
+  const bySchool = [...bySchoolMap.values()].sort(
+    (a, b) => b.count - a.count || b.entries[0].tournament.year - a.entries[0].tournament.year,
+  );
+  return { champions, runnersUp, bySchool };
+}
+
+/**
+ * 優勝した公立高校の一覧のリード文。**持っているデータの並べ替えだけ。**
+ */
+export function buildPublicChampionsLead(data: PublicChampions): string[] {
+  const paragraphs: string[] = [];
+  const n = data.champions.length;
+  if (n === 0) return ["決勝が読めている大会の中に、公立高校が優勝した大会はありません。"];
+  const years = data.champions.map((e) => e.tournament.year);
+  const spring = data.champions.filter((e) => e.tournament.season === "spring").length;
+  const summer = n - spring;
+  const parts: string[] = [];
+  if (summer > 0) parts.push(`夏の選手権で${summer}大会`);
+  if (spring > 0) parts.push(`春の選抜で${spring}大会`);
+  paragraphs.push(
+    `このサイトが決勝の記録を持っている大会のうち、公立高校が優勝したのは${n}大会です（${parts.join("、")}）。いちばん古いのは${Math.min(...years)}年、いちばん新しいのは${Math.max(...years)}年です。`,
+  );
+  const top = data.bySchool[0];
+  if (top && top.count > 1) {
+    const ties = data.bySchool.filter((s) => s.count === top.count);
+    paragraphs.push(
+      ties.length === 1
+        ? `優勝回数がもっとも多いのは${top.name}の${top.count}回です。`
+        : `優勝回数がもっとも多いのは${ties.map((s) => s.name).join("と")}で、それぞれ${top.count}回です。`,
+    );
+  }
+  paragraphs.push(
+    "大会名を押すとその大会の全試合へ、校名を押すとその学校のページへ進めます。このサイトは私立を収録していないので、ここでの回数は全国での順位ではありません。",
+  );
+  return paragraphs;
 }
 
 /**

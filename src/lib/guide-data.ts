@@ -15,6 +15,7 @@ import { gameKeyOfSeed } from "@/lib/regional-results";
 import { KOSHIEN_GAMES } from "@/lib/koshien-games";
 import { finalists, listJinguTournaments } from "@/lib/national-tournaments";
 import { TWENTY_FIRST_CENTURY_BERTHS } from "@/lib/data/twenty-first-century";
+import { KOKUTAI_CHAMPIONS, KOKUTAI_SOURCE, type KokutaiChampion } from "@/lib/data/kokutai-champions";
 
 const DISTRICT_NAME = new Map<string, string>(
   [...PREFECTURES, ...REGIONAL_ONLY_DISTRICTS].map((p) => [p.slug, p.name]),
@@ -150,6 +151,11 @@ export function koshienExtraStats(): KoshienExtraStats {
   }
   koshienCache = { games: KOSHIEN_GAMES.length, extra, extraSince2018, tieBreak, draws, from, to };
   return koshienCache;
+}
+
+/** 国スポ（硬式）の歴代優勝校。**新しい順**。出典表示も一緒に返す */
+export function kokutaiChampions(): { rows: KokutaiChampion[]; source: typeof KOKUTAI_SOURCE } {
+  return { rows: [...KOKUTAI_CHAMPIONS].sort((a, b) => b.year - a.year), source: KOKUTAI_SOURCE };
 }
 
 export function jinguLatest(): { year: number; champion: string; runnerUp: string; slug: string } | null {

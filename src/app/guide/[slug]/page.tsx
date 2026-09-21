@@ -13,10 +13,28 @@ import { GUIDES, findGuide, type GuideBlock, type GuideDataId } from "@/lib/cont
 import {
   inningsStats,
   jinguLatest,
+  kokutaiChampions,
   koshienExtraStats,
   twentyFirstLatest,
   type InningsExample,
 } from "@/lib/guide-data";
+import { getSchoolNameIndex } from "@/lib/queries/schools";
+
+/** 校名 → 学校マスタ。**県まで渡して引く**（同名の別校に当てない。AGENTS.md） */
+type Resolve = (display: string, pref?: string) => { slug: string; name: string } | null;
+
+/**
+ * ★**索引が取れなくてもページを落とさない**（Supabase が止まっていた日にビルドが
+ *   丸ごと失敗した経緯。`/features` と同じ構え）。取れなければ公立の印を付けずに描く。
+ */
+async function loadResolve(): Promise<Resolve | null> {
+  try {
+    const index = await getSchoolNameIndex("koshien");
+    return (d, p) => index.find(d, p);
+  } catch {
+    return null;
+  }
+}
 import { formatDateLong, toDateAttr } from "@/lib/utils";
 
 /**
@@ -58,6 +76,11 @@ export default async function GuidePage({ params }: Props) {
   if (!guide) notFound();
 
   const others = GUIDES.filter((g) => g.slug !== guide.slug);
+  // ★校名索引は、学校マスタと突き合わせる部品があるページだけ引く（DB を無駄に叩かない）
+  const needsResolve = guide.sections.some((s) =>
+    s.blocks.some((b) => b.type === "data" && b.id === "kokutai-champions"),
+  );
+  const resolve = needsResolve ? await loadResolve() : null;
 
   return (
     <Container className="pb-4">
@@ -88,7 +111,7 @@ export default async function GuidePage({ params }: Props) {
           </h2>
           <div className="mt-3 space-y-3">
             {section.blocks.map((block, i) => (
-              <Block key={i} block={block} />
+              <Block key={i} block={block} resolve={resolve} />
             ))}
           </div>
         </section>
@@ -175,7 +198,7 @@ export default async function GuidePage({ params }: Props) {
   );
 }
 
-function Block({ block }: { block: GuideBlock }) {
+function Block({ block, resolve }: { block: GuideBlock; resolve: Resolve | null }) {
   switch (block.type) {
     case "p":
       return <p className="text-sm leading-relaxed text-ink">{block.text}</p>;
@@ -216,7 +239,7 @@ function Block({ block }: { block: GuideBlock }) {
         </div>
       );
     case "data":
-      return <DataBlock id={block.id} />;
+      return <DataBlock id={block.id} resolve={resolve} />;
   }
 }
 
@@ -224,8 +247,84 @@ function Block({ block }: { block: GuideBlock }) {
  * 生成物から描画時に数える部分。
  * ★**数えるだけ。無いときは「無い」と書かず、その部分ごと出さない。**
  */
-function DataBlock({ id }: { id: GuideDataId }) {
+function DataBlock({ id, resolve }: { id: GuideDataId; resolve: Resolve | null }) {
   switch (id) {
+    case "kokutai-champions": {
+      const { rows, source } = kokutaiChampions();
+      if (rows.length === 0) return null;
+      const mark = (t: { name: string; prefecture: string | null }) => {
+        const school = resolve ? resolve(t.name, t.prefecture ?? undefined) : null;
+        return school ? (
+          <Link href={`/schools/${school.slug}`} className="font-bold text-accent-800 underline decoration-line underline-offset-2">
+            {t.name}
+          </Link>
+        ) : (
+          <span className="text-ink">{t.name}</span>
+        );
+      };
+      const pref = (t: { prefecture: string | null }) =>
+        t.prefecture ? <span className="ml-1 text-xs text-ink-faint">{t.prefecture}</span> : null;
+      return (
+        <div className="space-y-3">
+          <p className="text-sm leading-relaxed text-ink">
+            {rows[rows.length - 1].year}年の第1回から{rows[0].year}年の第{rows[0].edition}回までの{rows.length}大会です。
+            オレンジの校名は、このサイトが学校ページを持つ公立・国立・高専の学校です。
+          </p>
+          <div className="overflow-x-auto">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="border-b border-line text-left text-xs text-ink-muted">
+                  <th scope="col" className="py-1.5 pr-3 font-medium">年（回）</th>
+                  <th scope="col" className="py-1.5 pr-3 font-medium">優勝</th>
+                  <th scope="col" className="py-1.5 pr-3 font-medium tabular-nums">決勝</th>
+                  <th scope="col" className="py-1.5 font-medium">準優勝</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((r) => (
+                  <tr key={`${r.year}-${r.edition}`} className="border-b border-line align-top last:border-0">
+                    <td className="py-2 pr-3 whitespace-nowrap tabular-nums text-ink">
+                      {r.year}年（{r.edition === "特" ? "特別" : `第${r.edition}回`}）
+                    </td>
+                    <td className="py-2 pr-3">
+                      {r.champions.length === 0 ? (
+                        <span className="text-ink-muted">優勝校なし</span>
+                      ) : (
+                        r.champions.map((c, i) => (
+                          <span key={c.name} className="block">
+                            {mark(c)}
+                            {pref(c)}
+                            {i === r.champions.length - 1 && r.note && (
+                              <span className="ml-1 text-xs text-ink-faint">（{r.note}）</span>
+                            )}
+                          </span>
+                        ))
+                      )}
+                      {r.champions.length === 0 && r.note && (
+                        <span className="ml-1 text-xs text-ink-faint">（{r.note}）</span>
+                      )}
+                    </td>
+                    <td className="py-2 pr-3 tabular-nums text-ink">{r.score ?? ""}</td>
+                    <td className="py-2">
+                      {r.runnerUp ? (
+                        <>
+                          {mark(r.runnerUp)}
+                          {pref(r.runnerUp)}
+                        </>
+                      ) : null}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-ink-faint">
+            出典: {source.title}（{source.license}）の歴代優勝校一覧から、回・年・優勝校・県・決勝のスコア・準優勝校だけを取り込んでいます。
+            軟式の部は載せていません。
+          </p>
+        </div>
+      );
+    }
     case "cold-stats": {
       const s = inningsStats();
       if (s.total === 0) return null;

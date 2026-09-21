@@ -85,6 +85,23 @@ export default async function KoshienPublicIndexPage() {
 
       <LeadText paragraphs={lead} />
 
+      {/* ------- 優勝した公立高校（2026-09-21） ------- */}
+      <section
+        aria-labelledby="kpi-champions"
+        className="mt-4 rounded-xl border border-line bg-white p-5"
+      >
+        <SectionHeading
+          id="kpi-champions"
+          title="甲子園で優勝した公立高校"
+          icon={<Trophy size={18} />}
+          moreHref="/koshien/public/champions"
+          moreLabel="歴代の一覧へ"
+        />
+        <p className="mt-3 text-sm leading-relaxed text-ink-muted">
+          春の選抜・夏の選手権で公立高校が優勝した{champions}大会を、決勝のスコアと一緒に新しい順に並べています。
+        </p>
+      </section>
+
       {/* ------- いちばん新しい年 ------- */}
       {latest &&
         latest.tournaments

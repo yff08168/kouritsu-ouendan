@@ -13,7 +13,8 @@
     "hero": "node scripts/build-hero-images.mjs",
     "koshien-games": "node scripts/build-koshien-games.mjs",
     "jingu-games": "node scripts/build-jingu-games.mjs",
-    "innings": "node scripts/build-regional-innings.mjs"
+    "innings": "node scripts/build-regional-innings.mjs",
+    "kokutai": "node scripts/build-kokutai-champions.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.2",

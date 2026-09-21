@@ -1,3 +1,4 @@
+import { GuideLinkBox } from "@/components/guide/GuideLinkBox";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CalendarDays, GitBranch, ListOrdered } from "lucide-react";
@@ -222,6 +223,19 @@ export default async function TournamentPage({ params }: Props) {
       </header>
 
       <LeadText paragraphs={lead} />
+
+      {/*
+        ★**関連する解説への入口**（2026-09-21）。秋は選抜の選考、春夏は大会運営の決まり。
+        コールドと延長はどの季節にもある。**説明文は付けない**（同じ文が1,349枚に並ぶ）。
+      */}
+      <GuideLinkBox
+        className="mt-4"
+        slugs={
+          entry.season === "autumn"
+            ? ["senbatsu-selection", "called-game", "extra-innings"]
+            : ["called-game", "extra-innings", "tournament-rules"]
+        }
+      />
 
       {/* ------- トーナメント表（枝が組めた大会だけ） ------- */}
       {bracket ? (

@@ -429,7 +429,15 @@ export function gameKey(game: {
   round: string | null;
   teams: RegionalTeam[];
 }): string {
-  const seed = gameSeed(game);
+  return gameKeyOfSeed(gameSeed(game));
+}
+
+/**
+ * `gameSeed` の文字列から鍵を作る。
+ * ★**各回の得点のファイルは seed そのものを鍵に持つ**ので、そこから試合ページのURLを
+ *   組み立てるときに使う（`src/lib/guide-data.ts`。2026-09-21）。
+ */
+export function gameKeyOfSeed(seed: string): string {
   /*
     ★**FNV-1a。** 暗号用途ではないので短くて速いもので足りる。
     ★**符号なしで回す**（`>>> 0`）—— JavaScript のビット演算は符号付き32ビットなので、

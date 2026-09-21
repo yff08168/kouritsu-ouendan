@@ -1,3 +1,4 @@
+import { GuideLinkBox } from "@/components/guide/GuideLinkBox";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Trophy } from "lucide-react";
@@ -66,6 +67,8 @@ export default async function JinguIndexPage() {
           {totalGames}試合を収録しています。
         </p>
       </header>
+
+      <GuideLinkBox className="mt-4" slugs={["senbatsu-selection"]} />
 
       <section
         aria-labelledby="jingu-list"

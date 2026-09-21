@@ -11,7 +11,11 @@ import { Logo } from "@/components/layout/Logo";
  * ★**`NAV` に足さない理由は幅**（1024px でナビの右端639px・ボタンの左端847px。
  * 6つ目を足すとあふれる）。**クローラには全ページのフッターから届く。**
  */
-const FOOTER_EXTRA_LINKS = [{ href: "/archive", label: "年別アーカイブ" }];
+const FOOTER_EXTRA_LINKS = [
+  { href: "/archive", label: "年別アーカイブ" },
+  // ★ルールと制度の解説（2026-09-21）。年別アーカイブと同じ理由で NAV には足さない
+  { href: "/guide", label: "ルールと制度の解説" },
+];
 
 const ABOUT_LINKS = [
   { href: "/about", label: "このサイトについて" },

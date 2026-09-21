@@ -1,3 +1,4 @@
+import { GuideLinkBox } from "@/components/guide/GuideLinkBox";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Sparkles } from "lucide-react";
@@ -22,7 +23,11 @@ import {
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "21世紀枠の出場校",
+  /*
+    ★**「21世紀枠 歴代」「21世紀枠 とは」の受け皿**（2026-09-21。キーワードプランナーで
+    歴代が月平均590・11月1,300、とは が3月480）。**選考の仕組みは解説ページに置き、ここから繋ぐ。**
+  */
+  title: "21世紀枠とは？ 歴代の出場校と選考の仕組み",
   description:
     "2001年に始まった21世紀枠で選抜高校野球に出場した学校の一覧。選ばれた年の順に並べ、甲子園での成績と都道府県ごとの分布も見られます。",
   alternates: { canonical: "/rankings/21seiki-waku" },
@@ -111,6 +116,8 @@ export default async function TwentyFirstCenturyPage() {
           note={best ? `${best.year}年 ${best.name}` : "記録が確定していません"}
         />
       </div>
+
+      <GuideLinkBox className="mt-4" slugs={["senbatsu-selection"]} />
 
       <section
         aria-labelledby="berth-map"

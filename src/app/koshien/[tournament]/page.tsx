@@ -1,3 +1,4 @@
+import { GuideLinkBox } from "@/components/guide/GuideLinkBox";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -191,6 +192,15 @@ export default async function KoshienTournamentPage({ params }: Props) {
       </header>
 
       <LeadText paragraphs={lead} />
+
+      <GuideLinkBox
+        className="mt-4"
+        slugs={
+          t.season === "spring"
+            ? ["senbatsu-selection", "extra-innings", "tournament-rules"]
+            : ["tournament-rules", "extra-innings", "called-game"]
+        }
+      />
 
       {/* ------- 出場した公立校 ------- */}
       {entrants.length > 0 && (

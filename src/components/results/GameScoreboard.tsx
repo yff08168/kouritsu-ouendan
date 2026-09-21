@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import type { RegionalTeam } from "@/lib/regional-results";
 
@@ -89,6 +90,27 @@ export function GameScoreboard({ teams }: { teams: RegionalTeam[] }) {
           ))}
         </tbody>
       </table>
+      {/*
+        ★**9回より前に終わった試合・10回以上まで行った試合は、解説へ繋ぐ**（2026-09-21）。
+        「コールド」と呼ぶのは勝敗の決まった試合だけ（引き分けは中断の可能性がある）。
+        ★試合ページはリンクの中ではないので、ここにリンクを置いてよい。
+      */}
+      {innings < 9 && teams.some((t) => t.won) && (
+        <p className="mt-1.5 text-xs text-ink-faint">
+          {innings}回で終了した試合です（コールドゲーム）。
+          <Link href="/guide/called-game" className="ml-1 underline decoration-line underline-offset-2 hover:text-accent-800">
+            コールドゲームの決まり
+          </Link>
+        </p>
+      )}
+      {innings > 9 && (
+        <p className="mt-1.5 text-xs text-ink-faint">
+          {innings}回まで行われた試合です。
+          <Link href="/guide/extra-innings" className="ml-1 underline decoration-line underline-offset-2 hover:text-accent-800">
+            延長とタイブレークの決まり
+          </Link>
+        </p>
+      )}
     </div>
   );
 }

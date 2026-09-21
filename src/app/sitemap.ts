@@ -6,6 +6,7 @@ import {
   getSchoolNameIndex,
 } from "@/lib/queries/schools";
 import { listPublicYearsWithEntrants } from "@/lib/koshien-public";
+import { GUIDES } from "@/lib/content/guides";
 import { getAllNewsSlugs } from "@/lib/queries/news";
 import { getAllPhenomenonSlugs } from "@/lib/queries/phenomena";
 import { getAllFeatureSlugs } from "@/lib/queries/features";
@@ -88,6 +89,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url("/koshien"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     // ★**公立高校の甲子園出場校（年別）**（2026-09-21）。年ページは下の publicYearPages
     { url: url("/koshien/public"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    // ★**ルールと制度の解説**（2026-09-21）。各ページは下の guidePages
+    { url: url("/guide"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: url("/jingu"), lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     // 地方大会の進捗。大会中は毎日変わる
     { url: url("/regional"), lastModified: now, changeFrequency: "daily", priority: 0.8 },
@@ -188,6 +191,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
+  // ★**ルールと制度の解説**（2026-09-21。手書き。`src/lib/content/guides.ts`）
+  const guidePages: MetadataRoute.Sitemap = GUIDES.map((g) => ({
+    url: url(`/guide/${g.slug}`),
+    lastModified: new Date(g.checkedOn),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   /*
     ★**年別アーカイブの年ページ**（2026-08-29 追加）。
     ★**地方大会がある年だけ**（`listArchiveYears`）。甲子園だけの年は作っていない
@@ -278,6 +289,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...tournamentPages,
     ...nationalPages,
     ...publicYearPages,
+    ...guidePages,
     ...archivePages,
     ...versusPages,
     ...schoolPages,

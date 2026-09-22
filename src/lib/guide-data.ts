@@ -252,6 +252,38 @@ export function samePrefectureGames(): SamePrefGame[] {
   return out;
 }
 
+/**
+ * 日程の解説用。**大会ごとの最初の試合の日と最後の試合の日**（収録している試合の日付から）。
+ * ★試合の日付を持たない古い大会は出さない。決勝が引き分け再試合の年は再試合の日が「最後の日」。
+ * 新しい順。
+ */
+export type KoshienDateRow = {
+  year: number;
+  season: "spring" | "summer";
+  no: number | null;
+  slug: string;
+  first: string;
+  last: string;
+  /** 最初の日から最後の日までの日数（両端を含む） */
+  days: number;
+  games: number;
+};
+
+export function koshienDates(limit = 15): { summer: KoshienDateRow[]; spring: KoshienDateRow[] } {
+  const rows = listKoshienTournaments()
+    .filter((t) => t.firstDate && t.lastDate)
+    .map((t) => {
+      const first = t.firstDate as string;
+      const last = t.lastDate as string;
+      const days = Math.round((Date.parse(last) - Date.parse(first)) / 86400000) + 1;
+      return { year: t.year, season: t.season as "spring" | "summer", no: t.no, slug: t.slug, first, last, days, games: t.games.length };
+    });
+  return {
+    summer: rows.filter((r) => r.season === "summer").slice(0, limit),
+    spring: rows.filter((r) => r.season === "spring").slice(0, limit),
+  };
+}
+
 export function jinguLatest(): { year: number; champion: string; runnerUp: string; slug: string } | null {
   const t = listJinguTournaments()[0];
   if (!t) return null;

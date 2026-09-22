@@ -14,6 +14,7 @@ import {
   inningsStats,
   jinguLatest,
   kokutaiChampions,
+  koshienDates,
   koshienDrawShape,
   koshienExtraStats,
   samePrefectureGames,
@@ -394,6 +395,52 @@ function DataBlock({ id, resolve }: { id: GuideDataId; resolve: Resolve | null }
           {d.summer && line(d.summer)}
           {d.spring && line(d.spring)}
         </ul>
+      );
+    }
+    case "koshien-dates": {
+      const d = koshienDates(15);
+      if (d.summer.length === 0 && d.spring.length === 0) return null;
+      const md = (iso: string) => {
+        const [, m, day] = iso.split("-");
+        return `${Number(m)}月${Number(day)}日`;
+      };
+      const table = (label: string, rows: typeof d.summer) =>
+        rows.length === 0 ? null : (
+          <div key={label} className="overflow-x-auto">
+            <table className="min-w-full text-sm tabular-nums">
+              <caption className="py-1 text-left text-xs font-bold text-navy-800">{label}</caption>
+              <thead>
+                <tr className="border-b border-line text-left text-xs text-ink-muted">
+                  <th scope="col" className="py-1.5 pr-3 font-medium">大会</th>
+                  <th scope="col" className="py-1.5 pr-3 font-medium">最初の試合</th>
+                  <th scope="col" className="py-1.5 pr-3 font-medium">最後の試合</th>
+                  <th scope="col" className="py-1.5 pr-3 text-right font-medium">日数</th>
+                  <th scope="col" className="py-1.5 text-right font-medium">収録試合</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((r) => (
+                  <tr key={r.slug} className="border-b border-line last:border-0">
+                    <td className="py-1.5 pr-3 whitespace-nowrap">
+                      <Link href={`/koshien/${r.slug}`} className="underline decoration-line underline-offset-2 hover:text-accent-800">
+                        {r.year}年{r.no ? `（第${r.no}回）` : ""}
+                      </Link>
+                    </td>
+                    <td className="py-1.5 pr-3 whitespace-nowrap">{md(r.first)}</td>
+                    <td className="py-1.5 pr-3 whitespace-nowrap">{md(r.last)}</td>
+                    <td className="py-1.5 pr-3 text-right">{r.days}</td>
+                    <td className="py-1.5 text-right">{r.games}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        );
+      return (
+        <div className="space-y-4">
+          {table("夏の選手権", d.summer)}
+          {table("春の選抜", d.spring)}
+        </div>
       );
     }
     case "same-pref-games": {

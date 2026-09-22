@@ -36859,6 +36859,114 @@
       }
     },
     {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 兵庫県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "社",
+          "score": 6,
+          "won": true,
+          "name": "社高校",
+          "slug": "hyogo-yashiro"
+        },
+        {
+          "display": "洲本",
+          "score": 0,
+          "won": false,
+          "name": "洲本高校",
+          "slug": "sumoto"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 兵庫県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "武庫荘総合",
+          "score": 0,
+          "won": false,
+          "name": "武庫荘総合高校",
+          "slug": "mukonososogo"
+        },
+        {
+          "display": "明石商業",
+          "score": 12,
+          "won": true,
+          "name": "明石商業高校",
+          "slug": "akashishogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 兵庫県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "須磨学園",
+          "score": 8,
+          "won": true,
+          "name": "須磨学園",
+          "slug": null
+        },
+        {
+          "display": "高砂",
+          "score": 1,
+          "won": false,
+          "name": "高砂高校",
+          "slug": "takasago"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 兵庫県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "東洋大姫路",
+          "score": 5,
+          "won": true,
+          "name": "東洋大姫路",
+          "slug": null
+        },
+        {
+          "display": "尼崎工業",
+          "score": 1,
+          "won": false,
+          "name": "尼崎工業高校",
+          "slug": "amagasakikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "令和7年度秋季兵庫県高校野球大会",

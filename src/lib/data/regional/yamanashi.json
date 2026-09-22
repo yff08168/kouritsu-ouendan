@@ -26035,6 +26035,127 @@
       ]
     },
     {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高校野球山梨県大会",
+      "round": "準々決勝",
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "甲府東",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "甲府東高校",
+          "slug": "kofuhigashi"
+        },
+        {
+          "display": "帝京第三",
+          "score": 10,
+          "won": true,
+          "innings": [
+            4,
+            1,
+            4,
+            0,
+            0,
+            1
+          ],
+          "name": "帝京第三",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高校野球山梨県大会",
+      "round": "準々決勝",
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "富士学苑",
+          "score": 5,
+          "won": true,
+          "innings": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          "name": "富士学苑",
+          "slug": null
+        },
+        {
+          "display": "甲府城西",
+          "score": 3,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "name": "甲府城西高校",
+          "slug": "kofujosei"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "第79回秋季関東地区高校野球山梨県大会",
+      "round": "準々決勝",
+      "venue": "山日YBS球場",
+      "teams": [
+        {
+          "display": "帝京第三",
+          "score": 18,
+          "won": true,
+          "innings": [
+            1,
+            4,
+            5,
+            8,
+            0
+          ],
+          "name": "帝京第三",
+          "slug": null
+        },
+        {
+          "display": "山梨",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "山梨高校",
+          "slug": "yamanashi"
+        }
+      ]
+    },
+    {
       "date": "2026-09-20",
       "season": "autumn",
       "tournament": "第79回秋季関東地区高校野球山梨県大会",

@@ -40854,6 +40854,33 @@
       }
     },
     {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "4回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢学院大学附属",
+          "score": 0,
+          "won": false,
+          "name": "金沢学院大学附属",
+          "slug": null
+        },
+        {
+          "display": "金沢",
+          "score": 5,
+          "won": true,
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-06",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
@@ -41253,6 +41280,33 @@
           "won": true,
           "name": "北陸学院",
           "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "5回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松大谷",
+          "score": 7,
+          "won": true,
+          "name": "小松大谷",
+          "slug": null
+        },
+        {
+          "display": "金沢桜丘",
+          "score": 0,
+          "won": false,
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
         }
       ],
       "source": {

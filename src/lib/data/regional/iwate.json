@@ -14968,6 +14968,52 @@
       ]
     },
     {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高校野球 岩手県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "釜石",
+          "score": 2,
+          "won": false,
+          "name": "釜石高校",
+          "slug": "kamaishi"
+        },
+        {
+          "display": "盛岡誠桜",
+          "score": 9,
+          "won": true,
+          "name": "盛岡誠桜",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季東北地区高校野球 岩手県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "花巻東",
+          "score": 8,
+          "won": true,
+          "name": "花巻東",
+          "slug": null
+        },
+        {
+          "display": "花巻北",
+          "score": 0,
+          "won": false,
+          "name": "花巻北高校",
+          "slug": "hanamakikita"
+        }
+      ]
+    },
+    {
       "date": "2025-09-21",
       "season": "autumn",
       "tournament": "2025年 秋季東北地区高校野球 岩手県大会",

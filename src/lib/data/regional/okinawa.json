@@ -40077,6 +40077,114 @@
       }
     },
     {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "ユニオンですからスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "ウェルネス",
+          "score": 5,
+          "won": true,
+          "name": "ウェルネス",
+          "slug": null
+        },
+        {
+          "display": "知念",
+          "score": 1,
+          "won": false,
+          "name": "知念高校",
+          "slug": "chinen"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "南部工業",
+          "score": 11,
+          "won": true,
+          "name": "南部工業高校",
+          "slug": "nanbukogyo"
+        },
+        {
+          "display": "石川",
+          "score": 1,
+          "won": false,
+          "name": "石川高校",
+          "slug": "okinawa-ishikawa"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "北山",
+          "score": 0,
+          "won": false,
+          "name": "北山高校",
+          "slug": "hokuzan"
+        },
+        {
+          "display": "宜野湾",
+          "score": 1,
+          "won": true,
+          "name": "宜野湾高校",
+          "slug": "ginowan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "ユニオンですからスタジアム宜野湾",
+      "teams": [
+        {
+          "display": "美里工業",
+          "score": 7,
+          "won": true,
+          "name": "美里工業高校",
+          "slug": "misatokogyo"
+        },
+        {
+          "display": "名護",
+          "score": 0,
+          "won": false,
+          "name": "名護高校",
+          "slug": "nago"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
@@ -40448,6 +40556,60 @@
           "score": 3,
           "won": false,
           "name": "宮古総合実業宮古工業",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "沖縄セルラースタジアム那覇",
+      "teams": [
+        {
+          "display": "興南",
+          "score": 9,
+          "won": true,
+          "name": "興南",
+          "slug": null
+        },
+        {
+          "display": "中部商業",
+          "score": 0,
+          "won": false,
+          "name": "中部商業高校",
+          "slug": "chubushogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://okinawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
+      "round": "2回戦",
+      "venue": "Ａｇｒｅスタジアム北谷",
+      "teams": [
+        {
+          "display": "西原",
+          "score": 1,
+          "won": false,
+          "name": "西原高校",
+          "slug": "nishihara"
+        },
+        {
+          "display": "エナジック",
+          "score": 8,
+          "won": true,
+          "name": "エナジック",
           "slug": null
         }
       ],

@@ -9579,6 +9579,53 @@
       ]
     },
     {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "3回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "北陸",
+          "score": 10,
+          "won": true,
+          "name": "北陸",
+          "slug": null
+        },
+        {
+          "display": "高志・勝山",
+          "score": 0,
+          "won": false,
+          "name": "高志・勝山",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "3回戦",
+      "venue": "敦賀市総合運動公園野球場",
+      "teams": [
+        {
+          "display": "武生",
+          "score": 3,
+          "won": false,
+          "name": "武生高校",
+          "slug": "takefu"
+        },
+        {
+          "display": "敦賀気比",
+          "score": 8,
+          "won": true,
+          "name": "敦賀気比",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
@@ -9782,6 +9829,52 @@
           "won": false,
           "name": "武生東高校",
           "slug": "takefuhigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "準々決勝",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "科学技術",
+          "score": 0,
+          "won": false,
+          "name": "科学技術高校",
+          "slug": "fukui-kagakugijutsu"
+        },
+        {
+          "display": "福井商業",
+          "score": 10,
+          "won": true,
+          "name": "福井商業高校",
+          "slug": "fukuishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
+      "round": "準々決勝",
+      "venue": "セーレン・ドリームスタジアム",
+      "teams": [
+        {
+          "display": "金津",
+          "score": 1,
+          "won": false,
+          "name": "金津高校",
+          "slug": "kanazu"
+        },
+        {
+          "display": "工大福井",
+          "score": 8,
+          "won": true,
+          "name": "工大福井",
+          "slug": null
         }
       ]
     },

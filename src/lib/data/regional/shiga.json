@@ -16845,6 +16845,52 @@
       ]
     },
     {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "4回戦",
+      "venue": "ＨＰＬベースボールパーク",
+      "teams": [
+        {
+          "display": "彦根総合",
+          "score": 1,
+          "won": true,
+          "name": "彦根総合",
+          "slug": null
+        },
+        {
+          "display": "綾羽",
+          "score": 0,
+          "won": false,
+          "name": "綾羽",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "4回戦",
+      "venue": "ＨＰＬベースボールパーク",
+      "teams": [
+        {
+          "display": "北大津",
+          "score": 6,
+          "won": false,
+          "name": "北大津高校",
+          "slug": "kitaotsu"
+        },
+        {
+          "display": "八日市南",
+          "score": 8,
+          "won": true,
+          "name": "八日市南高校",
+          "slug": "yokaichiminami"
+        }
+      ]
+    },
+    {
       "date": "2026-09-05",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
@@ -17277,6 +17323,52 @@
           "display": "甲西",
           "score": 3,
           "won": true,
+          "name": "甲西高校",
+          "slug": "kosei"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "5回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "八幡商業",
+          "score": 4,
+          "won": true,
+          "name": "八幡商業高校",
+          "slug": "hachimanshogyo"
+        },
+        {
+          "display": "光泉カトリック",
+          "score": 2,
+          "won": false,
+          "name": "光泉カトリック",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
+      "round": "5回戦",
+      "venue": "マイネットスタジアム皇子山",
+      "teams": [
+        {
+          "display": "近江",
+          "score": 17,
+          "won": true,
+          "name": "近江",
+          "slug": null
+        },
+        {
+          "display": "甲西",
+          "score": 0,
+          "won": false,
           "name": "甲西高校",
           "slug": "kosei"
         }

@@ -41580,6 +41580,52 @@
       ]
     },
     {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "大津",
+          "score": 2,
+          "won": false,
+          "name": "大津高校",
+          "slug": "kumamoto-otsu"
+        },
+        {
+          "display": "第二",
+          "score": 9,
+          "won": true,
+          "name": "熊本県立第二高校",
+          "slug": "kumamotokenritsudaini"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "東海大星翔",
+          "score": 18,
+          "won": true,
+          "name": "東海大星翔",
+          "slug": null
+        },
+        {
+          "display": "専大熊本",
+          "score": 1,
+          "won": false,
+          "name": "専大熊本",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球熊本大会",

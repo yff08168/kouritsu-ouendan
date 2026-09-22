@@ -31847,6 +31847,33 @@
       }
     },
     {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "フジジンの杜スタジアム",
+      "teams": [
+        {
+          "display": "鶴崎工業",
+          "score": 7,
+          "won": true,
+          "name": "鶴崎工業高校",
+          "slug": "tsurusakikogyo"
+        },
+        {
+          "display": "日田",
+          "score": 0,
+          "won": false,
+          "name": "日田高校",
+          "slug": "hita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-21",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
@@ -31866,6 +31893,33 @@
           "won": false,
           "name": "大分国際情報",
           "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "フジジンの杜スタジアム",
+      "teams": [
+        {
+          "display": "日出総合",
+          "score": 3,
+          "won": false,
+          "name": "日出総合高校",
+          "slug": "hijisogo"
+        },
+        {
+          "display": "大分豊府",
+          "score": 11,
+          "won": true,
+          "name": "大分豊府高校",
+          "slug": "oitahofu"
         }
       ],
       "source": {
@@ -32010,6 +32064,33 @@
       }
     },
     {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "佐伯中央病院スタジアム",
+      "teams": [
+        {
+          "display": "大分商業",
+          "score": 7,
+          "won": true,
+          "name": "大分商業高校",
+          "slug": "oitashogyo"
+        },
+        {
+          "display": "高田",
+          "score": 0,
+          "won": false,
+          "name": "高田高校",
+          "slug": "oita-takata"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-21",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
@@ -32029,6 +32110,33 @@
           "won": true,
           "name": "大分東明",
           "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "佐伯中央病院スタジアム",
+      "teams": [
+        {
+          "display": "大分高専",
+          "score": 0,
+          "won": false,
+          "name": "大分工業高専",
+          "slug": "oitakogyo-kosen"
+        },
+        {
+          "display": "国東",
+          "score": 9,
+          "won": true,
+          "name": "国東高校",
+          "slug": "kunisaki"
         }
       ],
       "source": {

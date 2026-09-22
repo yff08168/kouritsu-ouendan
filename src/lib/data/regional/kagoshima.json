@@ -20999,6 +20999,54 @@
       ]
     },
     {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "平和リース球場（県立鴨池野球場）",
+      "teams": [
+        {
+          "display": "志學館・鹿児島修学館薩摩中央",
+          "score": 0,
+          "won": false,
+          "name": "志學館・鹿児島修学館薩摩中央",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "隼人工業",
+          "score": 23,
+          "won": true,
+          "name": "隼人工業高校",
+          "slug": "hayatokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "平和リース球場（県立鴨池野球場）",
+      "teams": [
+        {
+          "display": "鹿児島水産",
+          "score": 12,
+          "won": true,
+          "name": "鹿児島水産高校",
+          "slug": "kagoshimasuisan"
+        },
+        {
+          "display": "奄美・喜界",
+          "score": 1,
+          "won": false,
+          "name": "奄美・喜界",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
       "date": "2026-09-21",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
@@ -21273,6 +21321,53 @@
           "won": true,
           "name": "出水中央",
           "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "鹿児島市鴨池公園野球場",
+      "teams": [
+        {
+          "display": "加治木工業",
+          "score": 3,
+          "won": true,
+          "name": "加治木工業高校",
+          "slug": "kajikikogyo"
+        },
+        {
+          "display": "種子島・屋久島",
+          "score": 0,
+          "won": false,
+          "name": "種子島・屋久島",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "鹿児島市鴨池公園野球場",
+      "teams": [
+        {
+          "display": "鹿屋工業",
+          "score": 3,
+          "won": false,
+          "name": "鹿屋工業高校",
+          "slug": "kanoyakogyo"
+        },
+        {
+          "display": "鹿児島玉龍",
+          "score": 4,
+          "won": true,
+          "name": "鹿児島玉龍高校",
+          "slug": "kagoshimagyokuryu"
         }
       ]
     },
@@ -32243,45 +32338,6 @@
   ],
   "upcoming": [
     {
-      "date": "2026-09-22",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "鹿児島市鴨池公園野球場",
-      "teams": [
-        {
-          "display": "加治木工業",
-          "name": "加治木工業高校",
-          "slug": "kajikikogyo"
-        },
-        {
-          "display": "種子島・屋久島",
-          "name": "種子島・屋久島",
-          "slug": null,
-          "combined": true
-        }
-      ]
-    },
-    {
-      "date": "2026-09-22",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "鹿児島市鴨池公園野球場",
-      "teams": [
-        {
-          "display": "鹿屋工業",
-          "name": "鹿屋工業高校",
-          "slug": "kanoyakogyo"
-        },
-        {
-          "display": "鹿児島玉龍",
-          "name": "鹿児島玉龍高校",
-          "slug": "kagoshimagyokuryu"
-        }
-      ]
-    },
-    {
       "date": "2026-09-23",
       "season": "autumn",
       "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
@@ -32392,26 +32448,6 @@
           "display": "種子島中央",
           "name": "種子島中央高校",
           "slug": "tanegashimachuo"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-22",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "平和リース球場（県立鴨池野球場）",
-      "teams": [
-        {
-          "display": "鹿児島水産",
-          "name": "鹿児島水産高校",
-          "slug": "kagoshimasuisan"
-        },
-        {
-          "display": "奄美・喜界",
-          "name": "奄美・喜界",
-          "slug": null,
-          "combined": true
         }
       ]
     }

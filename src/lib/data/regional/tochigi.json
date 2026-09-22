@@ -26937,6 +26937,77 @@
       ]
     },
     {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "エイジェックスタジアム",
+      "teams": [
+        {
+          "display": "矢板中央",
+          "score": 11,
+          "won": true,
+          "name": "矢板中央",
+          "slug": null
+        },
+        {
+          "display": "小山西",
+          "score": 1,
+          "won": false,
+          "name": "小山西高校",
+          "slug": "oyamanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "連合",
+          "score": 1,
+          "won": false,
+          "name": "連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "那須拓陽",
+          "score": 4,
+          "won": true,
+          "name": "那須拓陽高校",
+          "slug": "nasutakuyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "2回戦",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "連合",
+          "score": 0,
+          "won": false,
+          "name": "連合",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "宇都宮",
+          "score": 8,
+          "won": true,
+          "name": "宇都宮高校",
+          "slug": "utsunomiya"
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第78回秋季栃木県高等学校野球大会",

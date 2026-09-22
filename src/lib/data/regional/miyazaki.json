@@ -23236,6 +23236,33 @@
       }
     },
     {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 宮崎県大会",
+      "round": "2回戦",
+      "venue": "ひなたサンマリンスタジアム宮崎",
+      "teams": [
+        {
+          "display": "宮崎第一",
+          "score": 15,
+          "won": true,
+          "name": "宮崎第一",
+          "slug": null
+        },
+        {
+          "display": "日向工業",
+          "score": 0,
+          "won": false,
+          "name": "日向工業高校",
+          "slug": "hyugakogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://miyazaki.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-21",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 宮崎県大会",
@@ -23282,6 +23309,60 @@
           "won": false,
           "name": "日南高校",
           "slug": "nichinan"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://miyazaki.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 宮崎県大会",
+      "round": "2回戦",
+      "venue": "ＳＯＫＫＥＮスタジアム",
+      "teams": [
+        {
+          "display": "櫻美学園",
+          "score": 7,
+          "won": true,
+          "name": "櫻美学園",
+          "slug": null
+        },
+        {
+          "display": "本庄",
+          "score": 3,
+          "won": false,
+          "name": "本庄高校",
+          "slug": "miyazaki-honjo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://miyazaki.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 宮崎県大会",
+      "round": "2回戦",
+      "venue": "ひなたサンマリンスタジアム宮崎",
+      "teams": [
+        {
+          "display": "聖心ウルスラ",
+          "score": 0,
+          "won": false,
+          "name": "聖心ウルスラ",
+          "slug": null
+        },
+        {
+          "display": "延岡学園",
+          "score": 7,
+          "won": true,
+          "name": "延岡学園",
+          "slug": null
         }
       ],
       "source": {
@@ -23508,6 +23589,60 @@
       }
     },
     {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 宮崎県大会",
+      "round": "3回戦",
+      "venue": "ＳＯＫＫＥＮスタジアム",
+      "teams": [
+        {
+          "display": "日向",
+          "score": 12,
+          "won": true,
+          "name": "日向高校",
+          "slug": "hyuga"
+        },
+        {
+          "display": "延岡星雲",
+          "score": 3,
+          "won": false,
+          "name": "延岡星雲高校",
+          "slug": "nobeokaseiun"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://miyazaki.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 宮崎県大会",
+      "round": "3回戦",
+      "venue": "ひなたサンマリンスタジアム宮崎",
+      "teams": [
+        {
+          "display": "日章学園",
+          "score": 8,
+          "won": true,
+          "name": "日章学園",
+          "slug": null
+        },
+        {
+          "display": "都城工業",
+          "score": 0,
+          "won": false,
+          "name": "都城工業高校",
+          "slug": "miyakonojokogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://miyazaki.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-21",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 宮崎県大会",
@@ -23554,6 +23689,33 @@
           "won": false,
           "name": "妻高校",
           "slug": "tsuma"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://miyazaki.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 宮崎県大会",
+      "round": "3回戦",
+      "venue": "ＳＯＫＫＥＮスタジアム",
+      "teams": [
+        {
+          "display": "小林秀峰",
+          "score": 1,
+          "won": true,
+          "name": "小林秀峰高校",
+          "slug": "kobayashishuho"
+        },
+        {
+          "display": "宮崎日大",
+          "score": 0,
+          "won": false,
+          "name": "宮崎日大",
+          "slug": null
         }
       ],
       "source": {

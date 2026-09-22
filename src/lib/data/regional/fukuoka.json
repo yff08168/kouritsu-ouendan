@@ -46823,6 +46823,98 @@
       ]
     },
     {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "東筑紫学園",
+          "score": 3,
+          "won": false,
+          "name": "東筑紫学園",
+          "slug": null
+        },
+        {
+          "display": "青豊",
+          "score": 4,
+          "won": true,
+          "name": "青豊高校",
+          "slug": "seiho"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "光陵グリーンスタジアム",
+      "teams": [
+        {
+          "display": "東筑",
+          "score": 10,
+          "won": true,
+          "name": "東筑高校",
+          "slug": "tochiku"
+        },
+        {
+          "display": "大和青藍",
+          "score": 4,
+          "won": false,
+          "name": "大和青藍",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "近大福岡",
+          "score": 2,
+          "won": false,
+          "name": "近大福岡",
+          "slug": null
+        },
+        {
+          "display": "戸畑",
+          "score": 6,
+          "won": true,
+          "name": "戸畑高校",
+          "slug": "tobata"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "3回戦",
+      "venue": "光陵グリーンスタジアム",
+      "teams": [
+        {
+          "display": "小倉工業",
+          "score": 1,
+          "won": false,
+          "name": "小倉工業高校",
+          "slug": "kokurakogyo"
+        },
+        {
+          "display": "北九州",
+          "score": 5,
+          "won": true,
+          "name": "北九州高校",
+          "slug": "kitakyushu"
+        }
+      ]
+    },
+    {
       "date": null,
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
@@ -47975,6 +48067,29 @@
       ]
     },
     {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "修猷館",
+          "score": 3,
+          "won": false,
+          "name": "修猷館高校",
+          "slug": "shuyukan"
+        },
+        {
+          "display": "香椎",
+          "score": 8,
+          "won": true,
+          "name": "香椎高校",
+          "slug": "kashii"
+        }
+      ]
+    },
+    {
       "date": "2026-09-21",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
@@ -47994,6 +48109,29 @@
           "won": false,
           "name": "小倉西高校",
           "slug": "kokuranishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "久留米商業",
+          "score": 3,
+          "won": false,
+          "name": "久留米商業高校",
+          "slug": "kurumeshogyo"
+        },
+        {
+          "display": "八女学院",
+          "score": 11,
+          "won": true,
+          "name": "八女学院",
+          "slug": null
         }
       ]
     },
@@ -48021,6 +48159,29 @@
       ]
     },
     {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "小郡市野球場",
+      "teams": [
+        {
+          "display": "東福岡",
+          "score": 9,
+          "won": true,
+          "name": "東福岡",
+          "slug": null
+        },
+        {
+          "display": "福大若葉",
+          "score": 6,
+          "won": false,
+          "name": "福大若葉",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-09-21",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
@@ -48040,6 +48201,52 @@
           "won": false,
           "name": "京都高校",
           "slug": "fukuoka-miyako"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "久留米市野球場",
+      "teams": [
+        {
+          "display": "西短大附",
+          "score": 2,
+          "won": false,
+          "name": "西短大附",
+          "slug": null
+        },
+        {
+          "display": "福大大濠",
+          "score": 7,
+          "won": true,
+          "name": "福大大濠",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
+      "round": "4回戦",
+      "venue": "北九州市民球場",
+      "teams": [
+        {
+          "display": "飯塚",
+          "score": 4,
+          "won": true,
+          "name": "飯塚",
+          "slug": null
+        },
+        {
+          "display": "折尾愛真",
+          "score": 2,
+          "won": false,
+          "name": "折尾愛真",
+          "slug": null
         }
       ]
     },

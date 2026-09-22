@@ -10,8 +10,15 @@
  */
 
 import { REGIONAL_INNINGS } from "@/lib/data/regional-innings";
-import { PREFECTURES, REGIONAL_ONLY_DISTRICTS } from "@/lib/constants";
-import { gameKeyOfSeed } from "@/lib/regional-results";
+import { ALL_DISTRICT_SLUGS, PREFECTURES, REGIONAL_ONLY_DISTRICTS } from "@/lib/constants";
+import {
+  gameKey,
+  gameKeyOfSeed,
+  getRegionalDistrict,
+  type RegionalDistrict,
+  type RegionalGame,
+} from "@/lib/regional-results";
+import { getSpecialSchools } from "@/lib/queries/schools";
 import { KOSHIEN_GAMES, prefectureKey } from "@/lib/koshien-games";
 import { finalists, listJinguTournaments, listKoshienTournaments } from "@/lib/national-tournaments";
 import { TWENTY_FIRST_CENTURY_BERTHS } from "@/lib/data/twenty-first-century";
@@ -282,6 +289,253 @@ export function koshienDates(limit = 15): { summer: KoshienDateRow[]; spring: Ko
     summer: rows.filter((r) => r.season === "summer").slice(0, limit),
     spring: rows.filter((r) => r.season === "spring").slice(0, limit),
   };
+}
+
+// ------------------------------------------------------------------
+// 地方大会の全県を読む（連合チーム・高専などの解説用）
+// ------------------------------------------------------------------
+
+/**
+ * ★**全県を読むが1回だけ**（`archive.ts` と同じ構え。`getRegionalDistrict` は県ごとに憶えている）。
+ * 51地区（`ALL_DISTRICT_SLUGS`）。
+ */
+let districtsPromise: Promise<RegionalDistrict[]> | null = null;
+async function allDistricts(): Promise<RegionalDistrict[]> {
+  if (!districtsPromise) {
+    districtsPromise = (async () => {
+      const out: RegionalDistrict[] = [];
+      for (const slug of ALL_DISTRICT_SLUGS) {
+        const d = await getRegionalDistrict(slug);
+        if (d) out.push(d);
+      }
+      return out;
+    })();
+  }
+  return districtsPromise;
+}
+
+const dateDesc = (a: string | null, b: string | null) => (b ?? "").localeCompare(a ?? "");
+
+export type RegionalWinExample = {
+  date: string | null;
+  district: string;
+  districtSlug: string;
+  tournament: string | null;
+  round: string | null;
+  team: string;
+  /** 学校ページがあるときだけ */
+  teamSlug: string | null;
+  score: number;
+  oppScore: number;
+  opp: string;
+  /** 試合ページの鍵 */
+  key: string;
+};
+
+function winExample(d: RegionalDistrict, g: RegionalGame, i: number): RegionalWinExample {
+  const t = g.teams[i];
+  const o = g.teams[1 - i];
+  return {
+    date: g.date,
+    district: d.district,
+    districtSlug: d.slug,
+    tournament: g.tournament,
+    round: g.round,
+    team: t.name,
+    teamSlug: t.slug,
+    score: t.score,
+    oppScore: o?.score ?? 0,
+    opp: o?.name ?? "",
+    key: gameKey(g),
+  };
+}
+
+// ---- 連合チーム ----
+
+export type CombinedTeamStats = {
+  games: number;
+  wins: number;
+  /** チーム名の種類（同じ組み合わせは1つ） */
+  teamNames: number;
+  /** 試合の多い順 */
+  districts: { slug: string; district: string; games: number; wins: number; teams: number }[];
+  /** 何校の連合が何種類あるか（校名を並べた名前だけ。「県西連合」のような名前は数えられない）。校数の昇順 */
+  bySize: { schools: number; teams: number }[];
+  /** 新しい順。日付の無い試合は後ろ */
+  recentWins: RegionalWinExample[];
+};
+
+const TEAM_SEP = /[ 　・･]/;
+
+/**
+ * 連合チームかどうか。生成側の `combined` を信じるが、
+ * ★**全部カタカナで中黒が1つの名前（「ラ・サール」）は1校**なので外す（生成側が連合と見なしている）。
+ */
+function isCombinedTeam(t: { name: string; combined?: boolean }): boolean {
+  if (!t.combined) return false;
+  if (/^[ァ-ヶー]+[・･][ァ-ヶー]+$/.test(t.name)) return false;
+  return schoolParts(t.name).length >= 2 || t.name.includes("連合");
+}
+
+/**
+ * 校名の並びとして数える語。
+ * ★★**神奈川の出典は「第1シード 東海大相模」「健大高崎 （群馬1位）」のようにシードや順位を
+ *   校名と同じ欄に書いており、生成側がそれを連合チームと見なしている**（2026-09-22 に見つけた。
+ *   横浜商業のような公立が学校ページに結び付いていない原因でもある。**生成側の直しは別の宿題**）。
+ *   ここでは「シード」「○位」「括弧書き」の語を落としてから校数を数える。
+ */
+function schoolParts(name: string): string[] {
+  return name
+    .split(TEAM_SEP)
+    .filter(Boolean)
+    .filter((p) => !/シード|位[）)]?$|^[（(]|^d+$/.test(p));
+}
+
+let combinedCache: Promise<CombinedTeamStats> | null = null;
+
+export function combinedTeamStats(): Promise<CombinedTeamStats> {
+  if (!combinedCache) {
+    combinedCache = (async () => {
+      const districts = await allDistricts();
+      let games = 0;
+      let wins = 0;
+      const names = new Set<string>();
+      const perDistrict: CombinedTeamStats["districts"] = [];
+      const sizeMap = new Map<number, Set<string>>();
+      const winsAll: RegionalWinExample[] = [];
+      for (const d of districts) {
+        let dg = 0;
+        let dw = 0;
+        const dn = new Set<string>();
+        for (const g of d.games) {
+          g.teams.forEach((t, i) => {
+            if (!isCombinedTeam(t)) return;
+            dg += 1;
+            dn.add(t.name);
+            names.add(`${d.slug}:${t.name}`);
+            const parts = schoolParts(t.name);
+            if (parts.length >= 2) {
+              const set = sizeMap.get(parts.length) ?? new Set<string>();
+              set.add(`${d.slug}:${t.name}`);
+              sizeMap.set(parts.length, set);
+            }
+            if (t.won) {
+              dw += 1;
+              winsAll.push(winExample(d, g, i));
+            }
+          });
+        }
+        games += dg;
+        wins += dw;
+        if (dg > 0) perDistrict.push({ slug: d.slug, district: d.district, games: dg, wins: dw, teams: dn.size });
+      }
+      perDistrict.sort((a, b) => b.games - a.games || a.district.localeCompare(b.district, "ja"));
+      winsAll.sort((a, b) => dateDesc(a.date, b.date));
+      return {
+        games,
+        wins,
+        teamNames: names.size,
+        districts: perDistrict,
+        bySize: [...sizeMap.entries()].map(([schools, set]) => ({ schools, teams: set.size })).sort((a, b) => a.schools - b.schools),
+        recentWins: winsAll.filter((w) => w.date).slice(0, 6),
+      };
+    })();
+  }
+  return combinedCache;
+}
+
+// ---- 高専・中等教育学校・国立 ----
+
+export type SpecialKind = "kosen" | "secondary" | "national";
+
+export type SpecialSchoolStats = {
+  kinds: {
+    key: SpecialKind;
+    label: string;
+    /** 学校マスタにある数 */
+    total: number;
+    /** 地方大会の記録に1試合でも出ている数 */
+    withGames: number;
+    games: number;
+    wins: number;
+    recentWins: RegionalWinExample[];
+  }[];
+};
+
+const SPECIAL_LABEL: Record<SpecialKind, string> = {
+  kosen: "高専",
+  secondary: "中等教育学校",
+  national: "国立の高校",
+};
+
+function specialKindOf(s: { establishment: string; schoolKind: string }): SpecialKind | null {
+  if (s.schoolKind === "kosen") return "kosen";
+  if (s.schoolKind === "secondary") return "secondary";
+  if (s.establishment === "national") return "national";
+  return null;
+}
+
+let specialCache: Promise<SpecialSchoolStats | null> | null = null;
+
+/**
+ * ★**学校マスタが取れなければ null**（Supabase が止まっていた日にビルドが落ちた経緯。解説は落とさない）。
+ */
+export function specialSchoolStats(): Promise<SpecialSchoolStats | null> {
+  if (!specialCache) {
+    specialCache = (async () => {
+      let schools;
+      try {
+        schools = await getSpecialSchools();
+      } catch {
+        return null;
+      }
+      const kindBySlug = new Map<string, SpecialKind>();
+      const totals = new Map<SpecialKind, number>();
+      for (const s of schools) {
+        const k = specialKindOf(s);
+        if (!k) continue;
+        kindBySlug.set(s.slug, k);
+        totals.set(k, (totals.get(k) ?? 0) + 1);
+      }
+      const acc = new Map<SpecialKind, { schools: Set<string>; games: number; wins: number; winsAll: RegionalWinExample[] }>();
+      for (const k of ["kosen", "secondary", "national"] as SpecialKind[]) {
+        acc.set(k, { schools: new Set(), games: 0, wins: 0, winsAll: [] });
+      }
+      for (const d of await allDistricts()) {
+        for (const g of d.games) {
+          g.teams.forEach((t, i) => {
+            const k = t.slug ? kindBySlug.get(t.slug) : undefined;
+            if (!k || !t.slug) return;
+            const a = acc.get(k)!;
+            a.schools.add(t.slug);
+            a.games += 1;
+            if (t.won) {
+              a.wins += 1;
+              a.winsAll.push(winExample(d, g, i));
+            }
+          });
+        }
+      }
+      return {
+        kinds: (["kosen", "secondary", "national"] as SpecialKind[])
+          .filter((k) => (totals.get(k) ?? 0) > 0)
+          .map((k) => {
+            const a = acc.get(k)!;
+            a.winsAll.sort((x, y) => dateDesc(x.date, y.date));
+            return {
+              key: k,
+              label: SPECIAL_LABEL[k],
+              total: totals.get(k) ?? 0,
+              withGames: a.schools.size,
+              games: a.games,
+              wins: a.wins,
+              recentWins: a.winsAll.filter((w) => w.date).slice(0, 5),
+            };
+          }),
+      };
+    })();
+  }
+  return specialCache;
 }
 
 export function jinguLatest(): { year: number; champion: string; runnerUp: string; slug: string } | null {

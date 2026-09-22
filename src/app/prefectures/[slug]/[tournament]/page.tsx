@@ -232,8 +232,8 @@ export default async function TournamentPage({ params }: Props) {
         className="mt-4"
         slugs={
           entry.season === "autumn"
-            ? ["senbatsu-selection", "called-game", "extra-innings"]
-            : ["called-game", "extra-innings", "tournament-rules"]
+            ? ["senbatsu-selection", "called-game", "extra-innings", "combined-teams"]
+            : ["called-game", "extra-innings", "tournament-rules", "combined-teams"]
         }
       />
 

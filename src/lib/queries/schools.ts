@@ -360,6 +360,36 @@ const SLUG_PAGE_SIZE = 1000;
  *
  * `slug` は unique なので、これで並べればページの境目で重複・欠落が起きない。
  */
+/**
+ * 高専・中等教育学校・国立の学校（解説ページ `/guide/eligible-schools` 用。100校ほど）。
+ * ★**学校の種別は学校マスタの `establishment` / `school_kind` から**（校名から推測しない。AGENTS.md）。
+ */
+export type SpecialSchool = {
+  slug: string;
+  name: string;
+  pref: string;
+  establishment: string;
+  schoolKind: string;
+};
+
+export const getSpecialSchools = cache(async (): Promise<SpecialSchool[]> => {
+  const supabase = createSupabaseServerClient();
+  const { data, error } = await supabase
+    .from("schools")
+    .select("slug, name, establishment, school_kind, prefecture:prefectures ( name, slug )")
+    .or("establishment.eq.national,school_kind.eq.kosen,school_kind.eq.secondary")
+    .order("slug");
+  throwIfError(error, "getSpecialSchools");
+  return (data ?? []).map((row) => ({
+    slug: row.slug,
+    name: row.name,
+    // ★結合は配列で返ることがある（`SchoolNameRow` と同じ）。先頭だけ見る
+    pref: (Array.isArray(row.prefecture) ? row.prefecture[0] : row.prefecture)?.name ?? "",
+    establishment: row.establishment,
+    schoolKind: row.school_kind,
+  }));
+});
+
 export async function getAllSchoolSlugs(): Promise<string[]> {
   return fetchSchoolSlugs({ koshienOnly: false });
 }

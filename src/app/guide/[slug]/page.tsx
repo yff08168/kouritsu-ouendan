@@ -11,6 +11,7 @@ import { AdSlot } from "@/components/ads/AdSlot";
 
 import { GUIDES, findGuide, type GuideBlock, type GuideDataId } from "@/lib/content/guides";
 import {
+  combinedTeamStats,
   inningsStats,
   jinguLatest,
   kokutaiChampions,
@@ -18,8 +19,10 @@ import {
   koshienDrawShape,
   koshienExtraStats,
   samePrefectureGames,
+  specialSchoolStats,
   twentyFirstLatest,
   type InningsExample,
+  type RegionalWinExample,
 } from "@/lib/guide-data";
 import { getSchoolNameIndex } from "@/lib/queries/schools";
 
@@ -250,8 +253,86 @@ function Block({ block, resolve }: { block: GuideBlock; resolve: Resolve | null 
  * 生成物から描画時に数える部分。
  * ★**数えるだけ。無いときは「無い」と書かず、その部分ごと出さない。**
  */
-function DataBlock({ id, resolve }: { id: GuideDataId; resolve: Resolve | null }) {
+/**
+ * ★**非同期の部品**（連合チーム・高専は地方大会の全県と学校マスタを読む）。
+ *   サーバーコンポーネントなので `await` してよい。
+ */
+async function DataBlock({ id, resolve }: { id: GuideDataId; resolve: Resolve | null }) {
   switch (id) {
+    case "combined-teams": {
+      const c = await combinedTeamStats();
+      if (c.games === 0) return null;
+      return (
+        <div className="space-y-3 text-sm leading-relaxed text-ink">
+          <p>
+            このサイトが収録している地方大会の記録では、連合チームが出た試合はのべ{c.games.toLocaleString()}試合で、
+            チーム名の種類は{c.teamNames.toLocaleString()}あります（同じ組み合わせは1つと数え、県が違えば別に数えています）。
+            {c.wins > 0 && `連合チームが勝った試合は${c.wins.toLocaleString()}試合です。`}
+          </p>
+          {c.bySize.length > 0 && (
+            <p>
+              校名を並べたチーム名から何校の連合かを見ると、
+              {c.bySize.map((s, i) => (
+                <span key={s.schools}>
+                  {i > 0 && "、"}
+                  {s.schools}校の連合が{s.teams}種類
+                </span>
+              ))}
+              です。
+            </p>
+          )}
+          <div className="overflow-x-auto">
+            <table className="min-w-full text-sm tabular-nums">
+              <caption className="py-1 text-left text-xs font-bold text-navy-800">連合チームの試合が多い地区</caption>
+              <thead>
+                <tr className="border-b border-line text-left text-xs text-ink-muted">
+                  <th scope="col" className="py-1.5 pr-3 font-medium">地区</th>
+                  <th scope="col" className="py-1.5 pr-3 text-right font-medium">試合</th>
+                  <th scope="col" className="py-1.5 pr-3 text-right font-medium">勝った試合</th>
+                  <th scope="col" className="py-1.5 text-right font-medium">チーム名の種類</th>
+                </tr>
+              </thead>
+              <tbody>
+                {c.districts.slice(0, 12).map((d) => (
+                  <tr key={d.slug} className="border-b border-line last:border-0">
+                    <td className="py-1.5 pr-3 whitespace-nowrap">
+                      <Link href={`/prefectures/${d.slug}`} className="underline decoration-line underline-offset-2 hover:text-accent-800">
+                        {d.district}
+                      </Link>
+                    </td>
+                    <td className="py-1.5 pr-3 text-right">{d.games}</td>
+                    <td className="py-1.5 pr-3 text-right">{d.wins > 0 ? d.wins : ""}</td>
+                    <td className="py-1.5 text-right">{d.teams}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <p className="mt-1 text-xs text-ink-faint">収録している年数が県によって違うので、多い順は連合チームの多さではなく収録の深さも表しています。</p>
+          </div>
+          <WinList title="連合チームが勝った試合（新しい順）" wins={c.recentWins} />
+        </div>
+      );
+    }
+    case "special-schools": {
+      const s = await specialSchoolStats();
+      if (!s || s.kinds.length === 0) return null;
+      return (
+        <div className="space-y-4 text-sm leading-relaxed text-ink">
+          {s.kinds.map((k) => (
+            <div key={k.key}>
+              <p>
+                このサイトの学校マスタにある{k.label}は{k.total}校です。
+                {k.games > 0
+                  ? `収録している地方大会の記録では、そのうち${k.withGames}校が${k.games.toLocaleString()}試合に出ています。`
+                  : "収録している地方大会の記録には、まだ試合がありません。"}
+                {k.wins > 0 && `勝った試合は${k.wins.toLocaleString()}試合です。`}
+              </p>
+              <WinList title={`${k.label}が勝った試合（新しい順）`} wins={k.recentWins} />
+            </div>
+          ))}
+        </div>
+      );
+    }
     case "kokutai-champions": {
       const { rows, source } = kokutaiChampions();
       if (rows.length === 0) return null;
@@ -508,6 +589,45 @@ function DataBlock({ id, resolve }: { id: GuideDataId; resolve: Resolve | null }
       );
     }
   }
+}
+
+/** 地方大会で勝った試合の短い一覧（連合チーム・高専の解説用） */
+function WinList({ title, wins }: { title: string; wins: RegionalWinExample[] }) {
+  if (wins.length === 0) return null;
+  const md = (iso: string | null) => {
+    if (!iso) return "";
+    const [y, m, d] = iso.split("-");
+    return `${y}年${Number(m)}月${Number(d)}日`;
+  };
+  return (
+    <div className="mt-2">
+      <p className="text-xs font-bold text-navy-800">{title}</p>
+      <ul className="mt-1 space-y-1">
+        {wins.map((w) => (
+          <li key={`${w.districtSlug}-${w.key}`} className="flex flex-wrap gap-x-2">
+            <Link
+              href={`/prefectures/${w.districtSlug}/game/${w.key}`}
+              className="whitespace-nowrap underline decoration-line underline-offset-2 hover:text-accent-800"
+            >
+              {md(w.date)} {w.district}
+            </Link>
+            <span className="whitespace-nowrap text-ink-muted">{w.round ?? ""}</span>
+            <span>
+              {w.teamSlug ? (
+                <Link href={`/schools/${w.teamSlug}`} className="font-bold text-accent-800 underline decoration-line underline-offset-2">
+                  {w.team}
+                </Link>
+              ) : (
+                <span className="font-bold">{w.team}</span>
+              )}
+              {" "}
+              {w.score}-{w.oppScore} {w.opp}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 function DistrictTable({

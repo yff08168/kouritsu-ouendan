@@ -14,7 +14,9 @@ import {
   inningsStats,
   jinguLatest,
   kokutaiChampions,
+  koshienDrawShape,
   koshienExtraStats,
+  samePrefectureGames,
   twentyFirstLatest,
   type InningsExample,
 } from "@/lib/guide-data";
@@ -369,6 +371,54 @@ function DataBlock({ id, resolve }: { id: GuideDataId; resolve: Resolve | null }
           {k.extraSince2018}試合です。引き分けとして記録されている試合は{k.draws}試合あります。
           {k.tieBreak > 0 && `出典の記事がタイブレークと明記している延長は${k.tieBreak}試合です。`}
         </p>
+      );
+    }
+    case "koshien-draw": {
+      const d = koshienDrawShape();
+      if (!d.summer && !d.spring) return null;
+      const seasonName = (s: "spring" | "summer") => (s === "spring" ? "春の選抜" : "夏の選手権");
+      const line = (x: NonNullable<typeof d.summer>) => (
+        <li key={x.slug}>
+          {x.year}年の{seasonName(x.season)}
+          {x.no ? `（第${x.no}回）` : ""}は{x.schools}校が出場し、1回戦は{x.firstRoundGames}試合でした。
+          {x.fromSecondRound > 0
+            ? `${x.fromSecondRound}校は2回戦から登場しています。`
+            : "全校が1回戦から登場しています。"}
+          <Link href={`/koshien/${x.slug}`} className="ml-1 underline decoration-line underline-offset-2 hover:text-accent-800">
+            この大会の全試合
+          </Link>
+        </li>
+      );
+      return (
+        <ul className="list-disc space-y-1 pl-5 text-sm leading-relaxed text-ink">
+          {d.summer && line(d.summer)}
+          {d.spring && line(d.spring)}
+        </ul>
+      );
+    }
+    case "same-pref-games": {
+      const games = samePrefectureGames();
+      if (games.length === 0) return null;
+      const seasonShort = (s: "spring" | "summer") => (s === "spring" ? "春" : "夏");
+      return (
+        <div className="text-sm leading-relaxed text-ink">
+          <p>該当する試合は{games.length}試合です。新しい順に並べています。</p>
+          <ul className="mt-2 space-y-1">
+            {games.map((g) => (
+              <li key={`${g.slug}-${g.teams.map((t) => t.name).join("-")}-${g.round ?? ""}`} className="flex flex-wrap gap-x-2">
+                <Link href={`/koshien/${g.slug}`} className="whitespace-nowrap underline decoration-line underline-offset-2 hover:text-accent-800">
+                  {g.year}年{seasonShort(g.season)}
+                </Link>
+                <span className="whitespace-nowrap text-ink-muted">{g.round ?? ""}</span>
+                <span>
+                  {g.winner && g.loser
+                    ? `${g.winner.name}（${g.winner.pref}） ${g.winner.score}-${g.loser.score} ${g.loser.name}（${g.loser.pref}）`
+                    : g.teams.map((t) => `${t.name}（${t.pref}） ${t.score}`).join(" - ")}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
       );
     }
     case "jingu-latest": {

@@ -204,8 +204,8 @@ export default async function KoshienTournamentPage({ params }: Props) {
         className="mt-4"
         slugs={
           t.season === "spring"
-            ? ["senbatsu-selection", "extra-innings", "tournament-rules"]
-            : ["tournament-rules", "video-review", "extra-innings"]
+            ? ["senbatsu-selection", "koshien-draw", "extra-innings", "tournament-rules"]
+            : ["koshien-draw", "tournament-rules", "video-review", "extra-innings"]
         }
       />
 

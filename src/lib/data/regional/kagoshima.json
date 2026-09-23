@@ -20999,6 +20999,53 @@
       ]
     },
     {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "平和リース球場（県立鴨池野球場）",
+      "teams": [
+        {
+          "display": "徳之島",
+          "score": 14,
+          "won": true,
+          "name": "徳之島高校",
+          "slug": "tokunoshima"
+        },
+        {
+          "display": "種子島中央",
+          "score": 4,
+          "won": false,
+          "name": "種子島中央高校",
+          "slug": "tanegashimachuo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "平和リース球場（県立鴨池野球場）",
+      "teams": [
+        {
+          "display": "松陽",
+          "score": 7,
+          "won": true,
+          "name": "松陽高校",
+          "slug": "kagoshima-shoyo"
+        },
+        {
+          "display": "錦江湾・薩南工業市来農芸",
+          "score": 6,
+          "won": false,
+          "name": "錦江湾・薩南工業市来農芸",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
       "date": "2026-09-22",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
@@ -21368,6 +21415,52 @@
           "won": true,
           "name": "鹿児島玉龍高校",
           "slug": "kagoshimagyokuryu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "鹿児島市鴨池公園野球場",
+      "teams": [
+        {
+          "display": "開陽",
+          "score": 1,
+          "won": false,
+          "name": "開陽高校",
+          "slug": "kagoshima-kaiyo"
+        },
+        {
+          "display": "鹿屋",
+          "score": 8,
+          "won": true,
+          "name": "鹿屋高校",
+          "slug": "kanoya"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "1回戦",
+      "venue": "鹿児島市鴨池公園野球場",
+      "teams": [
+        {
+          "display": "鹿児島中央",
+          "score": 11,
+          "won": true,
+          "name": "鹿児島中央高校",
+          "slug": "kagoshimachuo"
+        },
+        {
+          "display": "国分",
+          "score": 1,
+          "won": false,
+          "name": "国分高校",
+          "slug": "kagoshima-kokubun"
         }
       ]
     },
@@ -32338,44 +32431,6 @@
   ],
   "upcoming": [
     {
-      "date": "2026-09-23",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "鹿児島市鴨池公園野球場",
-      "teams": [
-        {
-          "display": "開陽",
-          "name": "開陽高校",
-          "slug": "kagoshima-kaiyo"
-        },
-        {
-          "display": "鹿屋",
-          "name": "鹿屋高校",
-          "slug": "kanoya"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-23",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "鹿児島市鴨池公園野球場",
-      "teams": [
-        {
-          "display": "鹿児島中央",
-          "name": "鹿児島中央高校",
-          "slug": "kagoshimachuo"
-        },
-        {
-          "display": "国分",
-          "name": "国分高校",
-          "slug": "kagoshima-kokubun"
-        }
-      ]
-    },
-    {
       "date": "2026-09-24",
       "season": "autumn",
       "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
@@ -32429,25 +32484,6 @@
           "display": "曽於",
           "name": "曽於高校",
           "slug": "so"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-23",
-      "season": "autumn",
-      "tournament": "令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "1回戦",
-      "venue": "平和リース球場（県立鴨池野球場）",
-      "teams": [
-        {
-          "display": "徳之島",
-          "name": "徳之島高校",
-          "slug": "tokunoshima"
-        },
-        {
-          "display": "種子島中央",
-          "name": "種子島中央高校",
-          "slug": "tanegashimachuo"
         }
       ]
     }

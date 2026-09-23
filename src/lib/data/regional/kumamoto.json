@@ -41626,6 +41626,101 @@
       ]
     },
     {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "玉名工業",
+          "score": 4,
+          "won": false,
+          "name": "玉名工業高校",
+          "slug": "tamanakogyo"
+        },
+        {
+          "display": "秀岳館",
+          "score": 9,
+          "won": true,
+          "name": "秀岳館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "阿蘇中央・小国",
+          "score": 0,
+          "won": false,
+          "name": "阿蘇中央・小国",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "九州学院",
+          "score": 10,
+          "won": true,
+          "name": "九州学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
+      "venue": "山鹿市民球場",
+      "teams": [
+        {
+          "display": "高専熊本・菊池農業",
+          "score": 1,
+          "won": false,
+          "name": "高専熊本・菊池農業",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "鹿本商工・鹿本",
+          "score": 2,
+          "won": true,
+          "name": "鹿本商工・鹿本",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "2回戦",
+      "venue": "山鹿市民球場",
+      "teams": [
+        {
+          "display": "人吉",
+          "score": 0,
+          "won": false,
+          "name": "人吉高校",
+          "slug": "hitoyoshi"
+        },
+        {
+          "display": "熊本",
+          "score": 3,
+          "won": true,
+          "name": "熊本高校",
+          "slug": "kumamoto"
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球熊本大会",

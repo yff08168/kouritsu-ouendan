@@ -24469,6 +24469,98 @@
       ]
     },
     {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会",
+      "round": "準々決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "佐久長聖",
+          "score": 2,
+          "won": true,
+          "name": "佐久長聖",
+          "slug": null
+        },
+        {
+          "display": "長野商業",
+          "score": 1,
+          "won": false,
+          "name": "長野商業高校",
+          "slug": "naganoshogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会",
+      "round": "準々決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "上田東",
+          "score": 6,
+          "won": false,
+          "name": "上田東高校",
+          "slug": "uedahigashi"
+        },
+        {
+          "display": "上田西",
+          "score": 7,
+          "won": true,
+          "name": "上田西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会",
+      "round": "準々決勝",
+      "venue": "鈴与マタイスポーツパーク野球場",
+      "teams": [
+        {
+          "display": "松商学園",
+          "score": 8,
+          "won": true,
+          "name": "松商学園",
+          "slug": null
+        },
+        {
+          "display": "岡谷南",
+          "score": 1,
+          "won": false,
+          "name": "岡谷南高校",
+          "slug": "okayaminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会",
+      "round": "準々決勝",
+      "venue": "鈴与マタイスポーツパーク野球場",
+      "teams": [
+        {
+          "display": "東海大諏訪",
+          "score": 3,
+          "won": false,
+          "name": "東海大諏訪",
+          "slug": null
+        },
+        {
+          "display": "松本第一",
+          "score": 4,
+          "won": true,
+          "name": "松本第一",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-09-20",
       "season": "autumn",
       "tournament": "第155回 北信越地区高等学校野球長野県大会",
@@ -32435,99 +32527,6 @@
           "won": false,
           "name": "上田高校",
           "slug": "ueda"
-        }
-      ]
-    },
-    {
-      "date": "2023-09-09",
-      "season": "autumn",
-      "tournament": "第149回北信越地区高等学校野球長野県大会南信予選会",
-      "round": "2回戦",
-      "venue": "しんきん諏訪湖スタジアム",
-      "teams": [
-        {
-          "display": "赤穂",
-          "score": 8,
-          "won": true,
-          "name": "赤穂高校",
-          "slug": "akaho"
-        },
-        {
-          "display": "高遠",
-          "score": 1,
-          "won": false,
-          "name": "高遠高校",
-          "slug": "takato"
-        }
-      ]
-    },
-    {
-      "date": "2023-09-09",
-      "season": "autumn",
-      "tournament": "第149回北信越地区高等学校野球長野県大会南信予選会",
-      "round": "2回戦",
-      "venue": "しんきん諏訪湖スタジアム",
-      "teams": [
-        {
-          "display": "岡谷南",
-          "score": 4,
-          "won": false,
-          "name": "岡谷南高校",
-          "slug": "okayaminami"
-        },
-        {
-          "display": "諏訪清陵",
-          "score": 6,
-          "won": true,
-          "name": "諏訪清陵高校",
-          "slug": "suwaseiryo"
-        }
-      ]
-    },
-    {
-      "date": "2023-09-09",
-      "season": "autumn",
-      "tournament": "第149回北信越地区高等学校野球長野県大会南信予選会",
-      "round": "2回戦",
-      "venue": "綿半飯田野球場",
-      "teams": [
-        {
-          "display": "南信連合",
-          "score": 2,
-          "won": false,
-          "name": "南信連合",
-          "slug": null,
-          "combined": true
-        },
-        {
-          "display": "東海大諏訪",
-          "score": 4,
-          "won": true,
-          "name": "東海大諏訪",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2023-09-09",
-      "season": "autumn",
-      "tournament": "第149回北信越地区高等学校野球長野県大会南信予選会",
-      "round": "2回戦",
-      "venue": "綿半飯田野球場",
-      "teams": [
-        {
-          "display": "松川",
-          "score": 2,
-          "won": false,
-          "name": "松川高校",
-          "slug": "matsukawa"
-        },
-        {
-          "display": "飯田風越",
-          "score": 9,
-          "won": true,
-          "name": "飯田風越高校",
-          "slug": "iidafuetsu"
         }
       ]
     },

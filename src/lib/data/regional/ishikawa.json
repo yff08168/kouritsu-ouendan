@@ -40854,6 +40854,33 @@
       }
     },
     {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "4回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 7,
+          "won": true,
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "金沢商業",
+          "score": 0,
+          "won": false,
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-22",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
@@ -41307,6 +41334,33 @@
           "won": false,
           "name": "金沢桜丘高校",
           "slug": "kanazawasakuragaoka"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://ishikawa.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
+      "round": "5回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "門前",
+          "score": 3,
+          "won": true,
+          "name": "門前高校",
+          "slug": "monzen"
+        },
+        {
+          "display": "北陸学院",
+          "score": 0,
+          "won": false,
+          "name": "北陸学院",
+          "slug": null
         }
       ],
       "source": {

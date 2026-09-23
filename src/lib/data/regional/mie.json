@@ -16840,6 +16840,29 @@
       ]
     },
     {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季東海地区高等学校野球 三重県大会",
+      "round": "5回戦",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "津西",
+          "score": 0,
+          "won": false,
+          "name": "津西高校",
+          "slug": "tsunishi"
+        },
+        {
+          "display": "三重",
+          "score": 10,
+          "won": true,
+          "name": "三重",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": null,
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季東海地区高等学校野球 三重県大会",
@@ -17410,6 +17433,29 @@
           "display": "近大工業高専",
           "score": 3,
           "won": true,
+          "name": "近大工業高専",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季東海地区高等学校野球 三重県大会",
+      "round": "準々決勝",
+      "venue": "津球場公園内野球場",
+      "teams": [
+        {
+          "display": "宇治山田商",
+          "score": 3,
+          "won": true,
+          "name": "宇治山田商業高校",
+          "slug": "ujiyamadashogyo"
+        },
+        {
+          "display": "近大工業高専",
+          "score": 1,
+          "won": false,
           "name": "近大工業高専",
           "slug": null
         }

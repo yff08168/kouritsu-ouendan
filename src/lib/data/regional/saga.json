@@ -22747,6 +22747,142 @@
       ]
     },
     {
+      "date": "2026-09-24",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥栖",
+          "score": 3,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "name": "鳥栖高校",
+          "slug": "tosu"
+        },
+        {
+          "display": "伊万里",
+          "score": 2,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "name": "伊万里高校",
+          "slug": "imari"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐賀西",
+          "score": 5,
+          "won": false,
+          "innings": [
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "name": "佐賀西高校",
+          "slug": "saganishi"
+        },
+        {
+          "display": "唐津南",
+          "score": 6,
+          "won": true,
+          "innings": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            3,
+            1
+          ],
+          "name": "唐津南高校",
+          "slug": "karatsuminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "2回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "敬徳",
+          "score": 2,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "name": "敬徳",
+          "slug": null
+        },
+        {
+          "display": "佐賀商業",
+          "score": 3,
+          "won": true,
+          "innings": [
+            0,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "佐賀商業高校",
+          "slug": "sagashogyo"
+        }
+      ]
+    },
+    {
       "date": "2026-09-23",
       "season": "autumn",
       "tournament": "第159回九州地区高等学校野球佐賀大会",

@@ -32009,6 +32009,60 @@
       }
     },
     {
+      "date": "2026-09-24",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "フジジンの杜スタジアム",
+      "teams": [
+        {
+          "display": "大分",
+          "score": 1,
+          "won": true,
+          "name": "大分",
+          "slug": null
+        },
+        {
+          "display": "津久見",
+          "score": 0,
+          "won": false,
+          "name": "津久見高校",
+          "slug": "tsukumi"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-24",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "フジジンの杜スタジアム",
+      "teams": [
+        {
+          "display": "佐伯豊南",
+          "score": 3,
+          "won": true,
+          "name": "佐伯豊南高校",
+          "slug": "saikihonan"
+        },
+        {
+          "display": "大分鶴崎",
+          "score": 0,
+          "won": false,
+          "name": "大分鶴崎高校",
+          "slug": "oitatsurusaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
@@ -32272,6 +32326,61 @@
           "won": true,
           "name": "日田林工高校",
           "slug": "hitarinko"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-24",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "佐伯中央病院スタジアム",
+      "teams": [
+        {
+          "display": "宇佐産業科学・由布",
+          "score": 0,
+          "won": false,
+          "name": "宇佐産業科学・由布",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "日本文理大附",
+          "score": 21,
+          "won": true,
+          "name": "日本文理大附",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-24",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
+      "round": "2回戦",
+      "venue": "佐伯中央病院スタジアム",
+      "teams": [
+        {
+          "display": "大分舞鶴",
+          "score": 8,
+          "won": true,
+          "name": "大分舞鶴高校",
+          "slug": "oitamaizuru"
+        },
+        {
+          "display": "中津北",
+          "score": 1,
+          "won": false,
+          "name": "中津北高校",
+          "slug": "nakatsukita"
         }
       ],
       "source": {

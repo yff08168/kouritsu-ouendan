@@ -19591,6 +19591,98 @@
       ]
     },
     {
+      "date": "2026-09-24",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会",
+      "round": "準々決勝",
+      "venue": "きらやかスタジアム",
+      "teams": [
+        {
+          "display": "山形工業",
+          "score": 1,
+          "won": false,
+          "name": "山形工業高校",
+          "slug": "yamagatakogyo"
+        },
+        {
+          "display": "山形学院",
+          "score": 13,
+          "won": true,
+          "name": "山形学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会",
+      "round": "準々決勝",
+      "venue": "きらやかスタジアム",
+      "teams": [
+        {
+          "display": "山形南",
+          "score": 4,
+          "won": true,
+          "name": "山形南高校",
+          "slug": "yamagataminami"
+        },
+        {
+          "display": "羽黒",
+          "score": 3,
+          "won": false,
+          "name": "羽黒",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会",
+      "round": "準々決勝",
+      "venue": "ヤマリョースタジアム山形",
+      "teams": [
+        {
+          "display": "鶴岡東",
+          "score": 6,
+          "won": true,
+          "name": "鶴岡東",
+          "slug": null
+        },
+        {
+          "display": "東海大山形",
+          "score": 1,
+          "won": false,
+          "name": "東海大山形",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "season": "autumn",
+      "tournament": "第79回秋季東北地区高等学校野球山形県大会",
+      "round": "準々決勝",
+      "venue": "ヤマリョースタジアム山形",
+      "teams": [
+        {
+          "display": "山形商業",
+          "score": 3,
+          "won": false,
+          "name": "山形市立商業高校",
+          "slug": "yamagatashiritsushogyo"
+        },
+        {
+          "display": "山形中央",
+          "score": 4,
+          "won": true,
+          "name": "山形中央高校",
+          "slug": "yamagatachuo"
+        }
+      ]
+    },
+    {
       "date": "2018-09-23",
       "season": "autumn",
       "tournament": "2018年 秋季東北地区高等学校野球 山形県大会",

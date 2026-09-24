@@ -94,6 +94,9 @@ $env:Path = "C:\Users\81809\tools\node-v24.19.0-win-x64;" + $env:Path
 - **オレンジ（accent）は小面積のアクセントのみ。** 面で使わない。
 - **ロゴ画像は `npm run logo` で生成する。** `public/logo*.png` を直接編集しない。
   原本は `assets/logo-source.png`。詳細は README の「ロゴ」。
+  ★**サイトアイコン（`src/app/favicon.ico` / `icon.png` / `apple-icon.png`）も同じスクリプトが作る**（2026-09-24）。
+  ロゴの「旗と竿」だけを正方形に置いたもの。**Google の検索結果に出すには 48px の倍数の正方形が要る。**
+  `<link rel="icon">` は Next のファイル規約が出すので `layout.tsx` に `icons` を書かないこと。
 - **ヒーローの写真も同じで `npm run hero`。** 原本は `assets/hero/`、
   出力は `public/hero/`、表示順とクレジットは `src/lib/hero.ts`。
   **写真の上には無彩色の黒の膜を重ねる**（`globals.css` の `.hero-veil`）。

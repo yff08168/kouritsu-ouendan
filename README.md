@@ -389,6 +389,13 @@ $env:Path = "C:\Users\81809\tools\node-v24.19.0-win-x64;" + $env:Path
 | `public/logo-mark-white.png` | ヒーロー・フッター（ネイビー地） |
 | `public/logo.png` / `logo-white.png` | キャッチコピーまで入った一式。資料・印刷物用 |
 | `assets/og-logo.png` / `og-logo-white.png` | OGP画像に埋め込む用 |
+| `src/app/favicon.ico`（16/32/48）・`src/app/icon.png`（192）・`src/app/apple-icon.png`（180・白地） | **サイトアイコン**（2026-09-24）。ロゴの「旗と竿」だけを正方形に置いたもの。Next が `<link rel="icon">` を自動で出す |
+
+★**アイコンに使ったのは旗だけ**（2026-09-24。運営者の「ロゴから引用して」）。ワードマーク全体は16pxで読めず、
+ボールは「公」の字と重なっていて切り出せない（旗・ボール・「団」・ワードマークを48pxに縮めて見比べた）。
+**Google が検索結果に出すアイコンは 48px の倍数の正方形が要る**ので 16/32/48 と 192 にしてある。
+それまで `src/app/favicon.ico` は create-next-app の既定のまま（25,931バイトのNの字）だった。
+`.ico` は sharp が書けないので、スクリプトの `icoFromPngs` が PNG を ICO の器に詰めている。
 
 白背景は透過に、ネイビー地用はネイビーだけを白に置き換えている（オレンジは残す）。
 切り出し位置は原本の実測値なので、**ロゴを描き直したら

@@ -25,6 +25,13 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    /*
+      ★別セッションの作業ツリー（2026-09-24）。Claude の Code タブは並行作業を
+      `.claude/worktrees/<名前>/` に置き、そこで `next build` が走ると `.next/` ができる。
+      上の `.next/**` はリポジトリ直下しか見ないので、**そちらのビルド出力を1,692件のエラーとして拾い、
+      `npm run check` が落ちた**（自分の変更とは無関係）。
+    */
+    ".claude/**",
   ]),
 ]);
 

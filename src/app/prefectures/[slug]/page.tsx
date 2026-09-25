@@ -40,14 +40,11 @@ import { bracketForGames } from "@/lib/regional-bracket";
 import { RegionalBracket } from "@/components/results/RegionalBracket";
 import { RegionalUpcomingCard } from "@/components/results/RegionalUpcomingCard";
 
-/**
- * その県の地方大会の結果を何試合まで出すか。
- *
- * 神奈川の選手権予選は公立が絡む試合だけで100件を超える。全部出すと
- * ページが長くなりすぎるうえ、**下の応援メッセージや投票まで遠くなる。**
- * 出していない試合があることは画面に明記する（`RegionalDistrictCard`）。
- */
-const REGIONAL_GAMES_LIMIT = 24;
+/*
+  ~~その県の地方大会の結果は24試合まで出す~~ → ★★**2026-09-25 に上限を外した**
+  （運営者の「24件で切る必要はない」）。**いちばん新しい大会の試合を全部出す。**
+  ★結果欄を2列にしたので（2026-09-08）、同じ件数でも縦の長さは半分になっている。
+*/
 
 /**
  * 投票数と応援メッセージは動きが速いので、他のページより短く見直す。
@@ -174,7 +171,7 @@ export default async function PrefectureDetailPage({ params }: Props) {
       getPrefectureKoshienSummary(slug),
     ]);
 
-  const regionalGames = regional ? latestSeasonGames(regional, REGIONAL_GAMES_LIMIT) : null;
+  const regionalGames = regional ? latestSeasonGames(regional) : null;
   /*
     ★★**トーナメント表は「組めたときだけ」出す**（2026-08-22）。
 
@@ -313,7 +310,7 @@ export default async function PrefectureDetailPage({ params }: Props) {
             icon={<GitBranch size={18} />}
           />
           <RegionalBracket bracket={bracket} />
-          {/* ★この大会の全試合はこちら。県のページは24件までしか出していない */}
+          {/* ★この大会の全試合を回戦ごとに見るならこちら（県のページは日付ごと） */}
           {currentTournamentSlug && (
             <p className="mt-3 text-right">
               <Link
@@ -331,8 +328,7 @@ export default async function PrefectureDetailPage({ params }: Props) {
         <RegionalDistrictCard
           district={regional}
           season={regionalGames.season}
-          games={regionalGames.games}
-          total={regionalGames.total}
+          games={regionalGames.allGames}
           tournaments={regionalGames.tournaments}
         />
       )}

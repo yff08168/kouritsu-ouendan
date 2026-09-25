@@ -582,15 +582,15 @@ async function withInnings(
  * ★**古い季節を「最新」として出さない。** 秋のページがまだ前年ぶんしか無い
  * 県があるので、画面には年を必ず添えること（`RegionalDistrictCard`）。
  */
-export function latestSeasonGames(
-  district: RegionalDistrict,
-  limit: number,
-): {
+export function latestSeasonGames(district: RegionalDistrict): {
   season: RegionalSeason;
-  /** 新しい順。`limit` 件まで */
+  /** その大会の**公立が絡む試合**。新しい順 */
   games: RegionalGame[];
-  /** その季節に取れている試合の総数（`limit` で切る前） */
-  total: number;
+  /**
+   * その大会の**全試合**（私立どうしを含む）。並びは `games` と同じ規則。
+   * ★★県のページの「全試合」ボタン用（2026-09-25。運営者の提案）。
+   */
+  allGames: RegionalGame[];
   /** 出している試合の大会名（重複を除く） */
   tournaments: string[];
 } | null {
@@ -598,10 +598,12 @@ export function latestSeasonGames(
     ★★**生成物には私立どうしの試合も入っている**（2026-08-21 に方針を変えた）。
     **絞り込みはここでやる。**「取るときは私立の戦績も引用し、
     **着目するところを公立にする**」という決め方なので、
-    **データは全部持ち、画面に出すのは公立が絡む試合だけ**にする。
+    **季節と大会は公立が絡む試合だけで選ぶ。**
 
-    ★**この1行を外すと県のページに私立どうしの試合が並ぶ。**
-    ★**総数（`total`）も公立が絡む試合の数**である（画面の「N件あり、うち…」の N）。
+    ★★**2026-09-25 から県のページは全試合も出せる**（運営者の提案。**最初は公立のみ**）。
+    選んだ大会の全試合を `allGames` で返し、画面のボタンで切り替える。
+    ★**どの大会を出すかは今までどおり公立が絡む試合で決める** ——
+    私立どうしの試合だけの大会が「いちばん新しい大会」として先頭に出ないように。
     トーナメント表を作るときは `district.games` を直に読むこと（そちらは全試合）。
   */
   const publicGames = district.games.filter((g) => g.teams.some((t) => t.slug));
@@ -723,30 +725,39 @@ export function latestSeasonGames(
     list.map((g) => g.date).filter(Boolean).sort().at(-1) ?? "";
   const yearOf = (name: string, list: RegionalGame[]) =>
     yearOfTournament(name || null, list) ?? -1;
-  const newestTournament = [...byTournament.entries()].sort(
+  const [newestName, newestTournament] = [...byTournament.entries()].sort(
     ([an, a], [bn, b]) =>
       newestOf(b).localeCompare(newestOf(a)) ||
       yearOf(bn, b) - yearOf(an, a) ||
       b.length - a.length,
-  )[0][1];
+  )[0];
+
+  /*
+    日付があれば新しい順。**無ければ回戦の深い順**（決勝がいちばん上）。
+    同じ日・同じ回戦の中の並びは出典の順のまま（時刻を持っていないため）。
+  */
+  const newestFirst = (a: RegionalGame, b: RegionalGame) =>
+    a.date && b.date
+      ? b.date.localeCompare(a.date)
+      : roundDepth(b.round) - roundDepth(a.round);
 
   const games = newestTournament
     .filter((g) => g.season === newestSeason)
-    /*
-      日付があれば新しい順。**無ければ回戦の深い順**（決勝がいちばん上）。
-      同じ日・同じ回戦の中の並びは出典の順のまま（時刻を持っていないため）。
-    */
-    .sort((a, b) =>
-      a.date && b.date
-        ? b.date.localeCompare(a.date)
-        : roundDepth(b.round) - roundDepth(a.round),
-    );
+    .sort(newestFirst);
+  /*
+    ★**同じ大会の全試合。** 大会名は `byTournament` と同じ鍵（名前が無ければ空文字）で引く。
+    ★**並べ替えは同じ関数**なので、公立が絡む試合どうしの前後は `games` と変わらない。
+    ★★**件数で切らない**（2026-09-25。運営者の「24件で切る必要はない」）。
+  */
+  const allGames = district.games
+    .filter((g) => g.season === newestSeason && (g.tournament ?? "") === newestName)
+    .sort(newestFirst);
 
   return {
     season: newestSeason,
-    games: games.slice(0, limit),
-    total: games.length,
-    tournaments: [...new Set(games.slice(0, limit).map((g) => g.tournament).filter(Boolean))] as string[],
+    games,
+    allGames,
+    tournaments: [...new Set(games.map((g) => g.tournament).filter(Boolean))] as string[],
   };
 }
 

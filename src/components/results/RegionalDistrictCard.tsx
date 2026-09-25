@@ -2,6 +2,7 @@ import Link from "next/link";
 import { MapPinned } from "lucide-react";
 
 import { SectionHeading } from "@/components/common/SectionHeading";
+import { ResultsViewSwitch } from "@/components/results/ResultsViewSwitch";
 import { cn } from "@/lib/utils";
 import {
   gameKey,
@@ -35,23 +36,44 @@ import { tournamentDisplayName } from "@/lib/regional-tournaments";
  * ------------------------------------------------------------------
  * **出典は県ごとに違う。** 連盟とは限らない（埼玉・神奈川は個人運営の
  * 情報サイト）。**「各都道府県高野連」とまとめて書かないこと。**
+ *
+ * ------------------------------------------------------------------
+ * ★★ 「公立が出た試合」と「全試合」を切り替えられる（2026-09-25。運営者の提案）
+ *
+ *   `games` には**その大会の全試合**（私立どうしを含む）が来る。
+ *   **最初は公立が出た試合だけを見せ**、ボタンで全試合に切り替える（`ResultsViewSwitch`）。
+ *   ★**件数で切らない**（運営者の「24件で切る必要はない」）。
+ *   ★**私立どうしの試合が1つも無い大会ではボタンを出さない**（切り替えても何も変わらない）。
  */
+/**
+ * 「公立が出た試合」を選んでいるあいだ隠す行・見出しに付けるクラス。
+ * ★**Tailwind が拾えるよう文字列のまま1か所に置く**（組み立てない）。
+ * ★**`ResultsViewSwitch` の `group/view` と `data-view` が対になっている。**
+ * ★**クライアント部品のファイルから書き出さないこと** —— サーバー側で読むと
+ * 文字列ではなくクライアント部品への参照が返る。
+ */
+const HIDDEN_WHEN_PUBLIC = "group-data-[view=public]/view:hidden";
+
+/** 公立が絡む試合か。`latestSeasonGames` の絞り込みと同じ決め方 */
+function isPublicGame(game: RegionalGame): boolean {
+  return game.teams.some((t) => t.slug && !t.combined);
+}
+
 export function RegionalDistrictCard({
   district,
   season,
   games,
-  total,
   tournaments,
 }: {
   district: RegionalDistrict;
   season: Parameters<typeof seasonLabel>[0];
-  /** 新しい順 */
+  /** その大会の全試合（私立どうしを含む）。新しい順 */
   games: RegionalGame[];
-  /** その季節に取れている試合の総数 */
-  total: number;
   tournaments: string[];
 }) {
   const groups = groupGamesForDistrict(games);
+  const publicCount = games.filter(isPublicGame).length;
+  const hasPrivateOnly = publicCount < games.length;
   /*
     ★**日付を持たない出典がある**（三重の組合せ表など）。その県は
     日付ではなく**回戦**で見出しを作り、説明文も「回戦順」に変える。
@@ -90,12 +112,52 @@ export function RegionalDistrictCard({
             {tournaments.length > 2 && "ほか"}から、
           </>
         )}
-        公立高校が出た試合を{dated ? "新しい順" : "回戦の深い順"}に出しています
+        {hasPrivateOnly ? "試合" : "公立高校が出た試合"}を{dated ? "新しい順" : "回戦の深い順"}に出しています
+        {hasPrivateOnly && "。最初は公立高校が出た試合だけです"}
       </p>
 
+      {hasPrivateOnly ? (
+        <ResultsViewSwitch publicCount={publicCount} allCount={games.length}>
+          <GameGroups groups={groups} districtSlug={district.slug} />
+        </ResultsViewSwitch>
+      ) : (
+        <GameGroups groups={groups} districtSlug={district.slug} />
+      )}
+
+      {/*
+        ~~取れている試合の総数を必ず出す（「N件あり、うち新しいM件」）~~ →
+        ★**2026-09-25 に件数の上限を外したので、出している試合がその大会の全部。**
+        **件数は切り替えボタンに出している**（ボタンが無い大会は公立が出た試合＝全試合）。
+      */}
+
+      {/*
+        ★**出典の行は 2026-08-21 に運営者の判断で画面から外した**
+        （トップの `RegionalResultsCard` と揃えてある）。
+        **`district.sourceName` / `sourceUrl` は残してある**ので、戻すのはここだけ。
+      */}
+    </section>
+  );
+}
+
+/** 日付（無ければ回戦）ごとの見出しと、その下の試合の格子 */
+function GameGroups({
+  groups,
+  districtSlug,
+}: {
+  groups: ReturnType<typeof groupGamesForDistrict>;
+  districtSlug: string;
+}) {
+  return (
       <div className="mt-4 space-y-4">
         {groups.map(({ key, label, games: groupGames }) => (
-          <div key={key}>
+          /*
+            ★**私立どうしの試合しか無い日は、見出しごと隠す**
+            （公立のみの表示で「日付だけあって中身が空」の見出しを出さない）。
+          */
+          <div
+            key={key}
+            className={cn(!groupGames.some(isPublicGame) && HIDDEN_WHEN_PUBLIC)}
+          >
             <h3 className="text-xs font-bold text-ink-faint">{label}</h3>
             {/*
               ★★**2列にする**（2026-09-08。運営者の指示「結果欄についても2列表示にして」）。
@@ -108,31 +170,17 @@ export function RegionalDistrictCard({
             */}
             <ul className="mt-1 grid border-t border-line lg:grid-cols-2 lg:gap-x-6">
               {groupGames.map((game, i) => (
-                <li key={`${key}-${i}`} className="border-b border-line">
-                  <GameRow game={game} districtSlug={district.slug} />
+                <li
+                  key={`${key}-${i}`}
+                  className={cn("border-b border-line", !isPublicGame(game) && HIDDEN_WHEN_PUBLIC)}
+                >
+                  <GameRow game={game} districtSlug={districtSlug} />
                 </li>
               ))}
             </ul>
           </div>
         ))}
       </div>
-
-      {/*
-        **取れている試合の総数を必ず出す。** 「これで全部」と読まれると、
-        載せていない試合を「行われなかった」と取り違えられる。
-      */}
-      {total > games.length && (
-        <p className="mt-4 text-xs text-ink-faint">
-          この大会で公立が出た試合は {total} 件あり、うち新しい {games.length} 件を出しています。
-        </p>
-      )}
-
-      {/*
-        ★**出典の行は 2026-08-21 に運営者の判断で画面から外した**
-        （トップの `RegionalResultsCard` と揃えてある）。
-        **`district.sourceName` / `sourceUrl` は残してある**ので、戻すのはここだけ。
-      */}
-    </section>
   );
 }
 
@@ -145,7 +193,9 @@ function GameRow({ game, districtSlug }: { game: RegionalGame; districtSlug: str
   const ourCandidates = game.teams.filter((t) => t.slug && !t.combined);
   const ours = ourCandidates.find((t) => t.won) ?? ourCandidates[0];
   const other = game.teams.find((t) => t !== ours);
-  if (!ours || !other) return null;
+  // ★公立が絡まない試合（「全試合」のときだけ見える）は別の行で描く
+  if (!ours) return <PrivateGameRow game={game} districtSlug={districtSlug} />;
+  if (!other) return null;
 
   /*
     ★**引き分けを「負け」と書かない**（2026-08-15）。
@@ -239,6 +289,57 @@ function GameRow({ game, districtSlug }: { game: RegionalGame; districtSlug: str
           ) : (
             other.display
           )}
+          </span>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * 公立が絡まない試合の行。**「全試合」を選んだときだけ見える。**
+ *
+ * ★**公立の行と列の位置をそろえる**（○●の欄は空けて残す）。混ざって並ぶので、
+ * ずれると表として読めない。
+ * ★**着目するところは公立**なので、こちらは目立たせない。
+ * 校名は灰色で、**勝った側だけ濃い字**。得点も灰色（公立が勝った行のオレンジは使わない）。
+ * ★**並びは出典の順のまま**（勝った側を左に寄せるような並べ替えはしない）。
+ * ★私立と連合チームには当サイトの学校ページが無いので、校名はリンクにしない。
+ */
+function PrivateGameRow({ game, districtSlug }: { game: RegionalGame; districtSlug: string }) {
+  const [a, b] = game.teams;
+  if (!a || !b) return null;
+  const nameClass = (won: boolean) =>
+    cn("min-w-0 truncate text-sm sm:text-lg", won ? "font-bold text-ink" : "text-ink-muted");
+
+  return (
+    <div className="group relative flex items-center gap-3 py-3 sm:gap-4">
+      <Link
+        href={`/prefectures/${districtSlug}/game/${gameKey(game)}`}
+        className="absolute inset-0 rounded-sm focus-visible:ring-2 focus-visible:ring-accent-500 group-hover:bg-navy-50/60"
+      >
+        <span className="sr-only">
+          {a.display}と{b.display}の試合結果
+        </span>
+      </Link>
+      <span aria-hidden="true" className="size-6 shrink-0" />
+
+      <div className="min-w-0 flex-1 sm:flex sm:items-center sm:gap-4">
+        <p className="shrink-0 text-xs leading-tight text-ink-faint sm:w-20 lg:w-16">
+          {game.round}
+          {game.venue && <span className="hidden truncate sm:block">{game.venue}</span>}
+        </p>
+        <p className="grid min-w-0 grid-cols-[minmax(0,1fr)_4rem_minmax(0,1fr)] items-baseline gap-x-2 sm:flex-1 sm:grid-cols-[minmax(0,1fr)_5.5rem_minmax(0,1fr)] sm:gap-x-3">
+          <span title={a.name} className={cn(nameClass(a.won), "text-right")}>
+            {a.display}
+          </span>
+          <span className="text-center text-base font-bold tabular-nums text-ink-muted sm:text-xl">
+            {a.score}
+            {" - "}
+            {b.score}
+          </span>
+          <span title={b.name} className={nameClass(b.won)}>
+            {b.display}
           </span>
         </p>
       </div>

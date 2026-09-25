@@ -5,8 +5,8 @@ import type { RegionalProgressBoard } from "@/lib/regional-results";
 
 export const REGIONAL_PROGRESS: RegionalProgressBoard = {
   "season": "autumn",
-  "latestDate": "2026-09-24",
-  "generatedAt": "2026-09-24T15:23:35Z",
+  "latestDate": "2026-09-25",
+  "generatedAt": "2026-09-25T15:43:57Z",
   "districts": [
     {
       "slug": "nagano",
@@ -35,11 +35,14 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "saitama",
       "district": "埼玉",
-      "state": "scheduled",
+      "state": "playing",
       "season": "autumn",
-      "tournament": "令和 8年秋季関東地区高校野球 埼玉県大会",
-      "opensOn": "2026-09-25",
-      "games": 8
+      "tournament": "2026年秋季埼玉県高校野球大会",
+      "games": 8,
+      "publicGames": 4,
+      "round": "1回戦",
+      "latestDate": "2026-09-25",
+      "champion": null
     },
     {
       "slug": "yamanashi",
@@ -59,10 +62,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "第159回九州地区高等学校野球熊本大会",
-      "games": 39,
-      "publicGames": 34,
+      "games": 43,
+      "publicGames": 37,
       "round": "3回戦",
-      "latestDate": "2026-09-24",
+      "latestDate": "2026-09-25",
       "champion": null
     },
     {
@@ -170,10 +173,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "令和8年度山口県スポーツ大会高校野球競技（硬式）",
-      "games": 41,
-      "publicGames": 35,
-      "round": "3回戦",
-      "latestDate": "2026-09-20",
+      "games": 43,
+      "publicGames": 36,
+      "round": "準々決勝",
+      "latestDate": "2026-09-25",
       "champion": null
     },
     {
@@ -181,11 +184,11 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "宮崎",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季九州地区高校野球 宮崎県大会",
-      "games": 29,
-      "publicGames": 25,
-      "round": "3回戦",
-      "latestDate": "2026-09-23",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 宮崎県大会",
+      "games": 34,
+      "publicGames": 30,
+      "round": "4回戦",
+      "latestDate": "2026-09-25",
       "champion": null
     },
     {
@@ -277,7 +280,7 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "福岡",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季九州地区高校野球 福岡県大会",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 福岡県大会",
       "games": 110,
       "publicGames": 90,
       "round": "4回戦",
@@ -301,7 +304,7 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "愛媛",
       "state": "scheduled",
       "season": "autumn",
-      "tournament": "令和 8年秋季四国地区高校野球 愛媛県大会",
+      "tournament": "令和8年秋季四国地区高校野球 愛媛県大会",
       "opensOn": "2026-09-26",
       "games": 8
     },
@@ -358,7 +361,7 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "京都",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季近畿地区高校野球 京都府大会",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 京都府大会",
       "games": 63,
       "publicGames": 50,
       "round": "5回戦",
@@ -406,7 +409,7 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "大阪",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季近畿地区高校野球 大阪府大会",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 大阪府大会",
       "games": 130,
       "publicGames": 102,
       "round": "5回戦",
@@ -430,7 +433,7 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "滋賀",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季近畿地区高校野球 滋賀県大会",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 滋賀県大会",
       "games": 43,
       "publicGames": 40,
       "round": "5回戦",
@@ -454,7 +457,7 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "三重",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季東海地区高等学校野球 三重県大会",
+      "tournament": "2026年 令和8年秋季東海地区高等学校野球 三重県大会",
       "games": 51,
       "publicGames": 44,
       "round": "準々決勝",

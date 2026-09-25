@@ -41813,6 +41813,99 @@
       ]
     },
     {
+      "date": "2026-09-25",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "3回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "熊本",
+          "score": 10,
+          "won": true,
+          "name": "熊本高校",
+          "slug": "kumamoto"
+        },
+        {
+          "display": "鹿本商工・鹿本",
+          "score": 0,
+          "won": false,
+          "name": "鹿本商工・鹿本",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "3回戦",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "秀岳館",
+          "score": 0,
+          "won": false,
+          "name": "秀岳館",
+          "slug": null
+        },
+        {
+          "display": "九州学院",
+          "score": 2,
+          "won": true,
+          "name": "九州学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "3回戦",
+      "venue": "山鹿市民球場",
+      "teams": [
+        {
+          "display": "宇土",
+          "score": 4,
+          "won": false,
+          "name": "宇土高校",
+          "slug": "uto"
+        },
+        {
+          "display": "千原台",
+          "score": 7,
+          "won": true,
+          "name": "千原台高校",
+          "slug": "chiharadai"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "3回戦",
+      "venue": "山鹿市民球場",
+      "teams": [
+        {
+          "display": "東海大星翔",
+          "score": 7,
+          "won": true,
+          "name": "東海大星翔",
+          "slug": null
+        },
+        {
+          "display": "第二",
+          "score": 0,
+          "won": false,
+          "name": "熊本県立第二高校",
+          "slug": "kumamotokenritsudaini"
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球熊本大会",

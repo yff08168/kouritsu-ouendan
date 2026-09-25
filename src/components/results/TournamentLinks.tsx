@@ -65,8 +65,11 @@ export function TournamentLinks({
       ★★**`items-start` を付けること** —— 既定（`stretch`）だと
       **開いている年の隣の枠が、その高さまで引き伸ばされる**
       （いちばん新しい年は最初から開いている）。
+      ★★**スマホでも `grid-cols-1` を書くこと**（2026-09-25）。書かないと列の幅が
+      **中身のいちばん長い大会名に合わせて広がる**（大会名は `truncate` で折り返さない）。
+      **375px で千葉の大会ページが横に50pxはみ出していた。** `grid-cols-1` は `minmax(0,1fr)` なので縮む。
     */
-    <div className="grid items-start gap-2 sm:grid-cols-2">
+    <div className="grid grid-cols-1 items-start gap-2 sm:grid-cols-2">
       {years.map((group, i) => (
         <details
           key={group.key}
@@ -151,7 +154,7 @@ function List({
   single?: boolean;
 }) {
   return (
-    <ul className={cn("grid gap-2", !single && "sm:grid-cols-2")}>
+    <ul className={cn("grid grid-cols-1 gap-2", !single && "sm:grid-cols-2")}>
       {entries.map((t) => (
         <li key={t.slug}>
           <Link

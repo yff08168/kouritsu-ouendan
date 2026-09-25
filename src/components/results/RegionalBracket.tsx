@@ -62,7 +62,7 @@ export function RegionalBracket({
                     className="rounded border border-line bg-white p-1.5"
                   >
                     {g.seats.map((seat, i) => (
-                      <TeamRow key={i} team={seat.team} />
+                      <BracketTeamRow key={i} team={seat.team} />
                     ))}
                   </li>
                 ))}
@@ -87,18 +87,28 @@ export function RegionalBracket({
   );
 }
 
-function TeamRow({ team }: { team: RegionalTeam }) {
-  const name = (
-    <span
-      className={cn(
-        "truncate",
-        team.won ? "font-bold" : "text-ink-muted",
-        // ★公立はオレンジ。**面ではなく字の色**（アクセントは小面積のみ）
-        team.slug ? "text-accent-800" : team.won ? "text-navy-800" : undefined,
-      )}
-    >
-      {team.display}
-    </span>
+/**
+ * 箱の中の1チームぶんの行（校名＋得点）。
+ *
+ * ★★**大会ページの「全試合」も同じ行を使う**（2026-09-25。運営者の指示
+ * 「この形式が見やすいので、これにして」）。**表と一覧で見た目をそろえる。**
+ * ★**校名のリンクは `relative`** —— 一覧では箱いっぱいに試合ページへの
+ * 見えないリンクを敷くので、手前に出さないと学校ページへ行けなくなる。
+ */
+export function BracketTeamRow({ team }: { team: RegionalTeam }) {
+  const nameClass = cn(
+    /*
+      ★★**`block` を外さないこと**（2026-09-25）。`truncate` は**インラインの箱には効かない**
+      （はみ出しを隠す指定がインラインに当たらない）。外していたあいだ、
+      **連合チームの長い校名が得点の上に重なっていた**（千葉2026夏で3件。実測 360px が 190px の枠に）。
+      ★★**`w-fit max-w-full` で名前の幅だけにする** —— 行いっぱいに広げると、
+      一覧の箱では**校名の右の余白を押しても学校ページへ飛ぶ**（試合ページへ行けない）。
+      箱は最大350pxあり、校名は60pxほどなので、押せる場所の大半が学校ページになっていた。
+    */
+    "block w-fit max-w-full truncate",
+    team.won ? "font-bold" : "text-ink-muted",
+    // ★公立はオレンジ。**面ではなく字の色**（アクセントは小面積のみ）
+    team.slug ? "text-accent-800" : team.won ? "text-navy-800" : undefined,
   );
 
   return (
@@ -107,17 +117,22 @@ function TeamRow({ team }: { team: RegionalTeam }) {
         ★**シードの印も 2026-09-09 に外した**（運営者の指示）。
         **前の回戦に出ていないことは、左の列が空いていることで表が示している。**
       */}
-      {/* 公立は学校ページへ。私立は当サイトに個別ページが無い */}
-      {team.slug ? (
-        <Link
-          href={`/schools/${team.slug}`}
-          className="min-w-0 flex-1 hover:underline"
-        >
-          {name}
-        </Link>
-      ) : (
-        <span className="min-w-0 flex-1">{name}</span>
-      )}
+      <span className="min-w-0 flex-1">
+        {/* 公立は学校ページへ。私立は当サイトに個別ページが無い */}
+        {team.slug ? (
+          <Link
+            href={`/schools/${team.slug}`}
+            title={team.name}
+            className={cn(nameClass, "relative hover:underline")}
+          >
+            {team.display}
+          </Link>
+        ) : (
+          <span title={team.name} className={nameClass}>
+            {team.display}
+          </span>
+        )}
+      </span>
       <span
         className={cn(
           "flex-none font-variant-numeric tabular-nums",

@@ -1,11 +1,11 @@
 import Link from "next/link";
 
+import { BracketTeamRow } from "@/components/results/RegionalBracket";
 import { cn } from "@/lib/utils";
 import {
   formatRegionalDate,
   gameKey,
   type RegionalGame,
-  type RegionalTeam,
 } from "@/lib/regional-results";
 
 /**
@@ -21,6 +21,19 @@ import {
  *
  *   ★**着目するところは色で示す** —— `RegionalBracket` と同じで、
  *   **公立はオレンジ**（面ではなく字の色。アクセントは小面積のみ）。
+ *
+ * ------------------------------------------------------------------
+ * ★★ 1試合を小さな箱にして、2〜3列に並べる（2026-09-25。運営者の指示）
+ *
+ *   それまでは1試合1行で**縦に積み上げていた**（1回戦だけで42行）。
+ *   運営者の「縦に積み上げる形式は見づらい」「トーナメント表の形式が見やすいので、これにして」から、
+ *   **トーナメント表と同じ箱**（校名と得点の2行。勝った側が濃い字、公立はオレンジ）にした。
+ *   ★**行は表と同じ部品**（`BracketTeamRow`）。**見た目を2つ持たない。**
+ *   ★**箱の上に日付・球場・注記を小さく出す**（表には無いが、一覧は日付で追う人がいる）。
+ *   ★**列は スマホ2・`sm` から3。**
+ *   ★★**読む順は「行ごとに左→右」**（`grid` に流し込む。列で切ると試合の順に読めない）。
+ *   ★★**校名は横並びのときより広い幅をもらえる**（1チーム1行なので、箱の幅を丸ごと使える）。
+ *   **列を変えたら切れている校名の数を実測すること**（AGENTS の「校名を切ってはいけない」）。
  *
  * ------------------------------------------------------------------
  * ★ 並びは「回戦の浅い順」
@@ -53,10 +66,10 @@ export function RegionalGameList({
             {group.label}
             <span className="ml-2 font-normal">{group.games.length}試合</span>
           </h3>
-          <ul className="mt-1 divide-y divide-line border-t border-line">
+          <ul className="mt-1.5 grid grid-cols-2 gap-1.5 sm:grid-cols-3">
             {group.games.map((game, i) => (
               <li key={`${group.key}-${i}`}>
-                <GameRow game={game} districtSlug={districtSlug} />
+                <GameBox game={game} districtSlug={districtSlug} />
               </li>
             ))}
           </ul>
@@ -103,7 +116,7 @@ function groupByRound(games: RegionalGame[]) {
     .sort((a, b) => a.depth - b.depth);
 }
 
-function GameRow({
+function GameBox({
   game,
   districtSlug,
 }: {
@@ -115,99 +128,57 @@ function GameRow({
   /*
     ★**引き分けを「負け」と書かない。** 高校野球には引き分け再試合がある
     （岐阜の 市岐阜商 0-0 県岐阜商）。`won` は両方 false になるので、
-    **スコアで判定する。**
+    行はどちらも濃い字にならない（`BracketTeamRow` が `won` だけを見る）。
   */
-  const drawn = a.score === b.score;
+  /* 日付と球場。★どちらも無い出典があるので、無ければ行ごと出さない */
+  const date = game.date ? formatRegionalDate(game.date) : null;
 
   return (
     /*
-      ★★**行いっぱいに見えないリンクを1枚敷く**（2026-09-06。トップの結果カードと同じ作り）。
-      **リンクの中にリンクは置けない**ので、行を `<a>` で包むと
+      ★★**箱いっぱいに見えないリンクを1枚敷く**（2026-09-06。トップの結果カードと同じ作り）。
+      **リンクの中にリンクは置けない**ので、箱を `<a>` で包むと
       **校名から学校ページへ行けなくなる。** 校名側は `relative` で手前に出す。
     */
-    <div className={cn("relative flex items-center gap-3 py-3 sm:gap-4", districtSlug && "group")}>
+    <div
+      className={cn(
+        "relative h-full rounded border border-line bg-white p-1.5",
+        districtSlug && "hover:bg-navy-50/60",
+      )}
+    >
       {districtSlug && (
         <Link
           href={`/prefectures/${districtSlug}/game/${gameKey(game)}`}
-          className="absolute inset-0 rounded-sm focus-visible:ring-2 focus-visible:ring-accent-500 group-hover:bg-navy-50/60"
+          className="absolute inset-0 rounded focus-visible:ring-2 focus-visible:ring-accent-500"
         >
           <span className="sr-only">
             {a.display}と{b.display}の試合結果
           </span>
         </Link>
       )}
-      {/* 日付と球場。★どちらも無い出典があるので、無ければ列ごと空ける */}
-      <p className="w-14 shrink-0 text-xs leading-tight text-ink-faint sm:w-24">
-        {game.date && formatRegionalDate(game.date)}
-        {game.venue && (
-          <span className="hidden truncate sm:block">{game.venue}</span>
-        )}
-      </p>
 
-      {/* スコアの列は固定幅。「0 - 1」と「0 - 10」で校名の右端がずれないように */}
-      <p className="grid min-w-0 flex-1 grid-cols-[minmax(0,1fr)_4rem_minmax(0,1fr)] items-baseline gap-x-2 sm:grid-cols-[minmax(0,1fr)_5.5rem_minmax(0,1fr)] sm:gap-x-3">
-        <TeamName team={a} align="right" />
-        <span
-          className={cn(
-            "text-center text-base font-bold tabular-nums sm:text-lg",
-            drawn ? "text-ink-muted" : "text-navy-800",
+      {/*
+        ★注記（延長・サヨナラ）は**持っている出典だけが出す**（全国大会）。
+        ★**日付は縮めない**（`shrink-0`）。縮めるのは球場と注記だけ ——
+        スマホの箱は約150pxで、`サヨナラ・延長12回 TB` と並ぶと日付まで「8月…」に切れる。
+      */}
+      {(date || game.venue || game.note) && (
+        <p className="mb-0.5 flex gap-1.5 text-[11px] leading-tight text-ink-faint">
+          {date && <span className="shrink-0">{date}</span>}
+          {game.venue && (
+            <span title={game.venue} className="min-w-0 truncate">
+              {game.venue}
+            </span>
           )}
-        >
-          {a.score}
-          {" - "}
-          {b.score}
-        </span>
-        <TeamName team={b} align="left" />
-      </p>
-
-      {/* ★注記（延長・サヨナラ）。**持っている出典だけが出す**（全国大会） */}
-      {game.note && (
-        <p className="hidden w-24 shrink-0 truncate text-xs text-ink-faint sm:block">
-          {game.note}
+          {game.note && (
+            <span title={game.note} className="ml-auto min-w-0 truncate">
+              {game.note}
+            </span>
+          )}
         </p>
       )}
+
+      <BracketTeamRow team={a} />
+      <BracketTeamRow team={b} />
     </div>
-  );
-}
-
-function TeamName({
-  team,
-  align,
-}: {
-  team: RegionalTeam;
-  align: "left" | "right";
-}) {
-  const name = (
-    <span
-      className={cn(
-        "block truncate",
-        align === "right" ? "text-right" : "text-left",
-        team.won ? "font-bold" : "text-ink-muted",
-        // ★公立はオレンジ。**面ではなく字の色**（アクセントは小面積のみ）
-        team.slug && !team.combined
-          ? "text-accent-800"
-          : team.won
-            ? "text-navy-800"
-            : undefined,
-      )}
-    >
-      {team.display}
-    </span>
-  );
-
-  // 公立は学校ページへ。私立と連合チームは当サイトに個別ページが無い
-  return team.slug && !team.combined ? (
-    // ★`relative` で、行いっぱいの見えないリンクより手前に出す
-    <Link
-      href={`/schools/${team.slug}`}
-      title={team.name}
-      className="relative min-w-0 text-sm hover:underline sm:text-base"
-    >
-      {name}
-    </Link>
-  ) : (
-    <span title={team.name} className="min-w-0 text-sm sm:text-base">
-      {name}
-    </span>
   );
 }

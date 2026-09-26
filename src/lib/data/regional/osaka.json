@@ -58341,7 +58341,7 @@
       ]
     },
     {
-      "date": "2026-09-06",
+      "date": null,
       "season": "autumn",
       "tournament": "2026年 令和8年秋季近畿地区高校野球 大阪府大会",
       "round": "2回戦",
@@ -59142,6 +59142,29 @@
           "score": 7,
           "won": true,
           "name": "大阪桐蔭",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 大阪府大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "千里青雲",
+          "score": 0,
+          "won": false,
+          "name": "千里青雲高校",
+          "slug": "senriseiun"
+        },
+        {
+          "display": "大産大附",
+          "score": 3,
+          "won": true,
+          "name": "大産大附",
           "slug": null
         }
       ]
@@ -60641,6 +60664,98 @@
           "won": false,
           "name": "香里丘高校",
           "slug": "korigaoka"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 大阪府大会",
+      "round": "6回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "早稲田大阪",
+          "score": 5,
+          "won": false,
+          "name": "早稲田大阪",
+          "slug": null
+        },
+        {
+          "display": "関西創価",
+          "score": 6,
+          "won": true,
+          "name": "関西創価",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 大阪府大会",
+      "round": "6回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "大阪学院大高",
+          "score": 4,
+          "won": true,
+          "name": "大阪学院大高",
+          "slug": null
+        },
+        {
+          "display": "上宮太子",
+          "score": 1,
+          "won": false,
+          "name": "上宮太子",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 大阪府大会",
+      "round": "6回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "豊中",
+          "score": 0,
+          "won": false,
+          "name": "豊中高校",
+          "slug": "toyonaka"
+        },
+        {
+          "display": "東海大大阪仰星",
+          "score": 7,
+          "won": true,
+          "name": "東海大大阪仰星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季近畿地区高校野球 大阪府大会",
+      "round": "6回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "金光大阪",
+          "score": 8,
+          "won": true,
+          "name": "金光大阪",
+          "slug": null
+        },
+        {
+          "display": "八尾",
+          "score": 1,
+          "won": false,
+          "name": "八尾高校",
+          "slug": "osaka-yatsuo"
         }
       ]
     },

@@ -23452,6 +23452,87 @@
       }
     },
     {
+      "date": "2026-09-26",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 宮崎県大会",
+      "round": "3回戦",
+      "venue": "ひなたサンマリンスタジアム宮崎",
+      "teams": [
+        {
+          "display": "宮崎学園",
+          "score": 0,
+          "won": false,
+          "name": "宮崎学園",
+          "slug": null
+        },
+        {
+          "display": "日南学園",
+          "score": 9,
+          "won": true,
+          "name": "日南学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://miyazaki.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-26",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 宮崎県大会",
+      "round": "3回戦",
+      "venue": "ひなたサンマリンスタジアム宮崎",
+      "teams": [
+        {
+          "display": "都城",
+          "score": 5,
+          "won": true,
+          "name": "都城",
+          "slug": null
+        },
+        {
+          "display": "宮崎南",
+          "score": 2,
+          "won": false,
+          "name": "宮崎南高校",
+          "slug": "miyazakiminami"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://miyazaki.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-26",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 宮崎県大会",
+      "round": "3回戦",
+      "venue": "ひなたサンマリンスタジアム宮崎",
+      "teams": [
+        {
+          "display": "櫻美学園",
+          "score": 4,
+          "won": false,
+          "name": "櫻美学園",
+          "slug": null
+        },
+        {
+          "display": "延岡学園",
+          "score": 6,
+          "won": true,
+          "name": "延岡学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://miyazaki.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 宮崎県大会",

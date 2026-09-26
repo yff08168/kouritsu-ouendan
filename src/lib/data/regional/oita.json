@@ -32063,6 +32063,60 @@
       }
     },
     {
+      "date": "2026-09-26",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
+      "round": "3回戦",
+      "venue": "佐伯中央病院スタジアム",
+      "teams": [
+        {
+          "display": "鶴崎工業",
+          "score": 2,
+          "won": false,
+          "name": "鶴崎工業高校",
+          "slug": "tsurusakikogyo"
+        },
+        {
+          "display": "情報科学",
+          "score": 9,
+          "won": true,
+          "name": "情報科学高校",
+          "slug": "oita-johokagaku"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-26",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
+      "round": "3回戦",
+      "venue": "佐伯中央病院スタジアム",
+      "teams": [
+        {
+          "display": "大分豊府",
+          "score": 5,
+          "won": false,
+          "name": "大分豊府高校",
+          "slug": "oitahofu"
+        },
+        {
+          "display": "別府翔青",
+          "score": 6,
+          "won": true,
+          "name": "別府翔青高校",
+          "slug": "beppushosei"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
@@ -32381,6 +32435,33 @@
           "won": false,
           "name": "中津北高校",
           "slug": "nakatsukita"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://oita.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-26",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 大分県大会",
+      "round": "3回戦",
+      "venue": "別大興産スタジアム",
+      "teams": [
+        {
+          "display": "大分商業",
+          "score": 11,
+          "won": true,
+          "name": "大分商業高校",
+          "slug": "oitashogyo"
+        },
+        {
+          "display": "大分東明",
+          "score": 3,
+          "won": false,
+          "name": "大分東明",
+          "slug": null
         }
       ],
       "source": {

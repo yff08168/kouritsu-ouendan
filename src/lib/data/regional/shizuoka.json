@@ -53696,6 +53696,52 @@
       ]
     },
     {
+      "date": "2026-09-26",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会",
+      "round": "3位決定戦",
+      "venue": "しずてつスタジアム草薙",
+      "teams": [
+        {
+          "display": "掛川西",
+          "score": 6,
+          "won": true,
+          "name": "掛川西高校",
+          "slug": "kakegawanishi"
+        },
+        {
+          "display": "東海大翔洋",
+          "score": 3,
+          "won": false,
+          "name": "東海大翔洋",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "season": "autumn",
+      "tournament": "第79回秋季東海地区高等学校野球静岡県大会",
+      "round": "決勝",
+      "venue": "しずてつスタジアム草薙",
+      "teams": [
+        {
+          "display": "日大三島",
+          "score": 8,
+          "won": true,
+          "name": "日大三島",
+          "slug": null
+        },
+        {
+          "display": "常葉大菊川",
+          "score": 5,
+          "won": false,
+          "name": "常葉大菊川",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-08-16",
       "season": "autumn",
       "tournament": "第78回秋季東海地区高等学校野球静岡県大会 予選",

@@ -17808,7 +17808,7 @@
     {
       "date": "2026-09-19",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 岡山県大会",
       "round": "1回戦",
       "venue": "美咲エイコンスタジアム",
       "teams": [
@@ -17831,7 +17831,7 @@
     {
       "date": "2026-09-19",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 岡山県大会",
       "round": "1回戦",
       "venue": "美咲エイコンスタジアム",
       "teams": [
@@ -17854,7 +17854,7 @@
     {
       "date": "2026-09-19",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 岡山県大会",
       "round": "2回戦",
       "venue": "マスカットスタジアム",
       "teams": [
@@ -17877,7 +17877,7 @@
     {
       "date": "2026-09-19",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 岡山県大会",
       "round": "2回戦",
       "venue": "マスカットスタジアム",
       "teams": [
@@ -17894,6 +17894,52 @@
           "won": true,
           "name": "岡山朝日高校",
           "slug": "okayamaasahi"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 岡山県大会",
+      "round": "3回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "おかやま山陽",
+          "score": 11,
+          "won": true,
+          "name": "おかやま山陽",
+          "slug": null
+        },
+        {
+          "display": "岡山学芸館",
+          "score": 4,
+          "won": false,
+          "name": "岡山学芸館",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 岡山県大会",
+      "round": "3回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "関西",
+          "score": 4,
+          "won": true,
+          "name": "関西",
+          "slug": null
+        },
+        {
+          "display": "玉野光南",
+          "score": 2,
+          "won": false,
+          "name": "玉野光南高校",
+          "slug": "tamanokonan"
         }
       ]
     },

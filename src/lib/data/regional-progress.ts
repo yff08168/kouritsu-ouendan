@@ -5,20 +5,23 @@ import type { RegionalProgressBoard } from "@/lib/regional-results";
 
 export const REGIONAL_PROGRESS: RegionalProgressBoard = {
   "season": "autumn",
-  "latestDate": "2026-09-26",
-  "generatedAt": "2026-09-26T14:49:36Z",
+  "latestDate": "2026-09-27",
+  "generatedAt": "2026-09-27T15:44:00Z",
   "districts": [
     {
       "slug": "nagano",
       "district": "長野",
-      "state": "playing",
+      "state": "done",
       "season": "autumn",
       "tournament": "第155回 北信越地区高等学校野球長野県大会",
-      "games": 22,
+      "games": 24,
       "publicGames": 16,
-      "round": "準決勝",
-      "latestDate": "2026-09-26",
-      "champion": null
+      "round": "決勝",
+      "latestDate": "2026-09-27",
+      "champion": {
+        "display": "上田西",
+        "slug": null
+      }
     },
     {
       "slug": "kanagawa",
@@ -26,10 +29,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "令和8年度神奈川県高校野球秋季県大会",
-      "games": 79,
+      "games": 81,
       "publicGames": 53,
-      "round": "準々決勝",
-      "latestDate": "2026-09-24",
+      "round": "準決勝",
+      "latestDate": "2026-09-27",
       "champion": null
     },
     {
@@ -50,10 +53,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "第79回秋季関東地区高校野球山梨県大会",
-      "games": 28,
-      "publicGames": 27,
-      "round": null,
-      "latestDate": "2026-09-22",
+      "games": 34,
+      "publicGames": 31,
+      "round": "準々決勝",
+      "latestDate": "2026-09-27",
       "champion": null
     },
     {
@@ -73,11 +76,11 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "群馬",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季関東地区高校野球 群馬県大会",
-      "games": 53,
+      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
+      "games": 55,
       "publicGames": 46,
-      "round": "5回戦",
-      "latestDate": "2026-09-20",
+      "round": "準々決勝",
+      "latestDate": "2026-09-27",
       "champion": null
     },
     {
@@ -98,10 +101,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",
-      "games": 24,
-      "publicGames": 24,
-      "round": null,
-      "latestDate": "2026-09-13",
+      "games": 28,
+      "publicGames": 27,
+      "round": "準々決勝",
+      "latestDate": "2026-09-27",
       "champion": null
     },
     {
@@ -122,38 +125,47 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "aichi",
       "district": "愛知",
-      "state": "playing",
+      "state": "done",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季東海地区高等学校野球 愛知県大会",
-      "games": 47,
+      "games": 48,
       "publicGames": 27,
-      "round": "準々決勝",
-      "latestDate": "2026-09-23",
-      "champion": null
+      "round": "決勝",
+      "latestDate": "2026-09-27",
+      "champion": {
+        "display": "愛工大名電",
+        "slug": null
+      }
     },
     {
       "slug": "ishikawa",
       "district": "石川",
-      "state": "playing",
+      "state": "done",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季北信越地区高校野球 石川県大会",
-      "games": 37,
+      "tournament": "2026年 令和 8年秋季北信越地区高校野球 石川県大会",
+      "games": 38,
       "publicGames": 33,
-      "round": "準々決勝",
-      "latestDate": "2026-09-26",
-      "champion": null
+      "round": "決勝",
+      "latestDate": "2026-09-27",
+      "champion": {
+        "display": "小松大谷",
+        "slug": null
+      }
     },
     {
       "slug": "yamagata",
       "district": "山形",
-      "state": "playing",
+      "state": "done",
       "season": "autumn",
       "tournament": "第79回秋季東北地区高等学校野球山形県大会",
-      "games": 32,
-      "publicGames": 25,
-      "round": "準決勝",
-      "latestDate": "2026-09-26",
-      "champion": null
+      "games": 34,
+      "publicGames": 26,
+      "round": "決勝",
+      "latestDate": "2026-09-27",
+      "champion": {
+        "display": "鶴岡東",
+        "slug": null
+      }
     },
     {
       "slug": "shizuoka",
@@ -176,10 +188,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "令和8年度山口県スポーツ大会高校野球競技（硬式）",
-      "games": 43,
-      "publicGames": 36,
+      "games": 45,
+      "publicGames": 38,
       "round": "準々決勝",
-      "latestDate": "2026-09-25",
+      "latestDate": "2026-09-27",
       "champion": null
     },
     {
@@ -212,10 +224,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季近畿地区高校野球 兵庫県大会",
-      "games": 46,
-      "publicGames": 39,
-      "round": "4回戦",
-      "latestDate": "2026-09-23",
+      "games": 49,
+      "publicGames": 41,
+      "round": "5回戦",
+      "latestDate": "2026-09-27",
       "champion": null
     },
     {
@@ -224,10 +236,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "第79回秋季関東地区高等学校野球茨城県大会",
-      "games": 18,
-      "publicGames": 13,
-      "round": "2回戦",
-      "latestDate": "2026-09-23",
+      "games": 22,
+      "publicGames": 17,
+      "round": "3回戦",
+      "latestDate": "2026-09-27",
       "champion": null
     },
     {
@@ -245,14 +257,17 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "shimane",
       "district": "島根",
-      "state": "playing",
+      "state": "done",
       "season": "autumn",
       "tournament": "2027年代秋季島根県大会",
-      "games": 33,
-      "publicGames": 31,
-      "round": "準決勝",
-      "latestDate": "2026-09-26",
-      "champion": null
+      "games": 35,
+      "publicGames": 33,
+      "round": "決勝",
+      "latestDate": "2026-09-27",
+      "champion": {
+        "display": "石見智翠館",
+        "slug": null
+      }
     },
     {
       "slug": "oita",
@@ -272,10 +287,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "第79回秋季栃木県高等学校野球大会",
-      "games": 41,
-      "publicGames": 37,
-      "round": "3回戦",
-      "latestDate": "2026-09-24",
+      "games": 45,
+      "publicGames": 40,
+      "round": "準々決勝",
+      "latestDate": "2026-09-27",
       "champion": null
     },
     {
@@ -295,11 +310,11 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "鹿児島",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季九州地区高校野球 鹿児島県大会",
-      "games": 24,
-      "publicGames": 22,
-      "round": "1回戦",
-      "latestDate": "2026-09-24",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "games": 28,
+      "publicGames": 26,
+      "round": "2回戦",
+      "latestDate": "2026-09-27",
       "champion": null
     },
     {
@@ -307,7 +322,7 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "愛媛",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季四国地区高校野球 愛媛県大会",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 愛媛県大会",
       "games": 4,
       "publicGames": 4,
       "round": "2回戦",
@@ -332,10 +347,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季四国地区高校野球 高知県大会",
-      "games": 14,
-      "publicGames": 12,
+      "games": 15,
+      "publicGames": 13,
       "round": "準々決勝",
-      "latestDate": "2026-09-26",
+      "latestDate": "2026-09-27",
       "champion": null
     },
     {
@@ -343,11 +358,11 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "福島",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 福島県大会",
-      "games": 28,
-      "publicGames": 24,
-      "round": "準々決勝",
-      "latestDate": "2026-09-23",
+      "tournament": "2026年 令和8年秋季東北地区高等学校野球 福島県大会",
+      "games": 30,
+      "publicGames": 25,
+      "round": "準決勝",
+      "latestDate": "2026-09-27",
       "champion": null
     },
     {
@@ -355,7 +370,7 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "広島",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季中国地区高校野球 広島県大会",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
       "games": 18,
       "publicGames": 14,
       "round": "2回戦",
@@ -368,7 +383,7 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季近畿地区高校野球 京都府大会",
-      "games": 64,
+      "games": 65,
       "publicGames": 51,
       "round": "6回戦",
       "latestDate": "2026-09-20",
@@ -377,49 +392,58 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "fukui",
       "district": "福井",
-      "state": "playing",
+      "state": "done",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季北信越地区高校野球 福井県大会",
-      "games": 24,
-      "publicGames": 21,
-      "round": "準決勝",
-      "latestDate": "2026-09-26",
-      "champion": null
+      "tournament": "2026年 令和 8年秋季北信越地区高校野球 福井県大会",
+      "games": 25,
+      "publicGames": 22,
+      "round": "決勝",
+      "latestDate": "2026-09-27",
+      "champion": {
+        "display": "福井商業",
+        "slug": "fukuishogyo"
+      }
     },
     {
       "slug": "iwate",
       "district": "岩手",
-      "state": "playing",
+      "state": "done",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東北地区高校野球 岩手県大会",
-      "games": 20,
+      "tournament": "2026年 令和 8年秋季東北地区高校野球 岩手県大会",
+      "games": 21,
       "publicGames": 16,
-      "round": "準決勝",
-      "latestDate": "2026-09-26",
-      "champion": null
+      "round": "決勝",
+      "latestDate": "2026-09-27",
+      "champion": {
+        "display": "盛岡中央",
+        "slug": null
+      }
     },
     {
       "slug": "gifu",
       "district": "岐阜",
-      "state": "playing",
+      "state": "done",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季岐阜県高等学校野球大会",
-      "games": 56,
+      "games": 57,
       "publicGames": 51,
-      "round": "準々決勝",
-      "latestDate": "2026-09-23",
-      "champion": null
+      "round": "決勝",
+      "latestDate": "2026-09-27",
+      "champion": {
+        "display": "中京",
+        "slug": null
+      }
     },
     {
       "slug": "osaka",
       "district": "大阪",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季近畿地区高校野球 大阪府大会",
-      "games": 135,
-      "publicGames": 105,
+      "tournament": "2026年 令和 8年秋季近畿地区高校野球 大阪府大会",
+      "games": 138,
+      "publicGames": 106,
       "round": "6回戦",
-      "latestDate": "2026-09-26",
+      "latestDate": "2026-09-27",
       "champion": null
     },
     {
@@ -427,11 +451,11 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "千葉",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季関東地区高校野球 千葉県大会",
-      "games": 32,
-      "publicGames": 22,
-      "round": "2回戦",
-      "latestDate": "2026-09-24",
+      "tournament": "2026年 令和8年秋季関東地区高校野球 千葉県大会",
+      "games": 40,
+      "publicGames": 26,
+      "round": "3回戦",
+      "latestDate": "2026-09-27",
       "champion": null
     },
     {
@@ -440,10 +464,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季近畿地区高校野球 滋賀県大会",
-      "games": 43,
-      "publicGames": 40,
-      "round": "5回戦",
-      "latestDate": "2026-09-22",
+      "games": 44,
+      "publicGames": 41,
+      "round": "準々決勝",
+      "latestDate": "2026-09-27",
       "champion": null
     },
     {
@@ -451,31 +475,34 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "岡山",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
-      "games": 4,
-      "publicGames": 3,
-      "round": "2回戦",
-      "latestDate": "2026-09-19",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 岡山県大会",
+      "games": 6,
+      "publicGames": 4,
+      "round": "3回戦",
+      "latestDate": "2026-09-27",
       "champion": null
     },
     {
       "slug": "mie",
       "district": "三重",
-      "state": "playing",
+      "state": "done",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季東海地区高等学校野球 三重県大会",
-      "games": 51,
-      "publicGames": 44,
-      "round": "準々決勝",
-      "latestDate": "2026-09-23",
-      "champion": null
+      "tournament": "2026年 令和 8年秋季東海地区高等学校野球 三重県大会",
+      "games": 52,
+      "publicGames": 45,
+      "round": "決勝",
+      "latestDate": "2026-09-27",
+      "champion": {
+        "display": "三重",
+        "slug": null
+      }
     },
     {
       "slug": "tokushima",
       "district": "徳島",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季四国地区高校野球 徳島県大会",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 徳島県大会",
       "games": 21,
       "publicGames": 21,
       "round": "準々決勝",
@@ -487,24 +514,27 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "沖縄",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季九州地区高校野球 沖縄県大会",
-      "games": 37,
-      "publicGames": 36,
+      "tournament": "2026年 令和 8年秋季九州地区高校野球 沖縄県大会",
+      "games": 41,
+      "publicGames": 40,
       "round": "3回戦",
-      "latestDate": "2026-09-26",
+      "latestDate": "2026-09-27",
       "champion": null
     },
     {
       "slug": "toyama",
       "district": "富山",
-      "state": "playing",
+      "state": "done",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季北信越地区高校野球 富山県大会",
-      "games": 34,
-      "publicGames": 31,
-      "round": "準々決勝",
-      "latestDate": "2026-09-26",
-      "champion": null
+      "tournament": "2026年 令和 8年秋季北信越地区高校野球 富山県大会",
+      "games": 35,
+      "publicGames": 32,
+      "round": "決勝",
+      "latestDate": "2026-09-27",
+      "champion": {
+        "display": "富山商業",
+        "slug": "toyamashogyo"
+      }
     },
     {
       "slug": "aomori",
@@ -556,7 +586,7 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "district": "鳥取",
       "state": "playing",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季中国地区高校野球 鳥取県大会",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
       "games": 17,
       "publicGames": 16,
       "round": "準決勝",

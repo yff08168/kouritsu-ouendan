@@ -36481,6 +36481,33 @@
       }
     },
     {
+      "date": "2026-09-27",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季近畿地区高校野球 兵庫県大会",
+      "round": "4回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "神戸国際大附",
+          "score": 1,
+          "won": false,
+          "name": "神戸国際大附",
+          "slug": null
+        },
+        {
+          "display": "市尼崎",
+          "score": 3,
+          "won": true,
+          "name": "尼崎高校",
+          "slug": "hyogo-amagasaki"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季近畿地区高校野球 兵庫県大会",
@@ -37067,6 +37094,60 @@
           "won": false,
           "name": "尼崎工業高校",
           "slug": "amagasakikogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季近畿地区高校野球 兵庫県大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "社",
+          "score": 3,
+          "won": false,
+          "name": "社高校",
+          "slug": "hyogo-yashiro"
+        },
+        {
+          "display": "明石商業",
+          "score": 4,
+          "won": true,
+          "name": "明石商業高校",
+          "slug": "akashishogyo"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://hyogo.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季近畿地区高校野球 兵庫県大会",
+      "round": "5回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "須磨学園",
+          "score": 1,
+          "won": false,
+          "name": "須磨学園",
+          "slug": null
+        },
+        {
+          "display": "東洋大姫路",
+          "score": 3,
+          "won": true,
+          "name": "東洋大姫路",
+          "slug": null
         }
       ],
       "source": {

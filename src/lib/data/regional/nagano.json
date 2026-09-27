@@ -24469,6 +24469,52 @@
       ]
     },
     {
+      "date": "2026-09-27",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会",
+      "round": "決勝",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "上田西",
+          "score": 6,
+          "won": true,
+          "name": "上田西",
+          "slug": null
+        },
+        {
+          "display": "松商学園",
+          "score": 4,
+          "won": false,
+          "name": "松商学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "season": "autumn",
+      "tournament": "第155回 北信越地区高等学校野球長野県大会",
+      "round": "3位決定戦",
+      "venue": "長野オリンピックスタジアム",
+      "teams": [
+        {
+          "display": "佐久長聖",
+          "score": 2,
+          "won": true,
+          "name": "佐久長聖",
+          "slug": null
+        },
+        {
+          "display": "松本第一",
+          "score": 0,
+          "won": false,
+          "name": "松本第一",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-09-26",
       "season": "autumn",
       "tournament": "第155回 北信越地区高等学校野球長野県大会",
@@ -32457,75 +32503,6 @@
           "score": 7,
           "won": true,
           "name": "都市大塩尻",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2023-09-10",
-      "season": "autumn",
-      "tournament": "第149回北信越地区高等学校野球長野県大会中信予選会",
-      "round": "代表決定",
-      "venue": "セキスイハイム松本スタジアム",
-      "teams": [
-        {
-          "display": "松本第一",
-          "score": 2,
-          "won": false,
-          "name": "松本第一",
-          "slug": null
-        },
-        {
-          "display": "塩尻志学館",
-          "score": 6,
-          "won": true,
-          "name": "塩尻志学館高校",
-          "slug": "shiojirishigakukan"
-        }
-      ]
-    },
-    {
-      "date": "2023-09-09",
-      "season": "autumn",
-      "tournament": "第149回北信越地区高等学校野球長野県大会北信予選会",
-      "round": "代表決定",
-      "venue": "長野県営野球場",
-      "teams": [
-        {
-          "display": "長野西",
-          "score": 17,
-          "won": true,
-          "name": "長野西高校",
-          "slug": "naganonishi"
-        },
-        {
-          "display": "長野工業",
-          "score": 14,
-          "won": false,
-          "name": "長野工業高校",
-          "slug": "naganokogyo"
-        }
-      ]
-    },
-    {
-      "date": "2023-09-09",
-      "season": "autumn",
-      "tournament": "第149回北信越地区高等学校野球長野県大会北信予選会",
-      "round": "代表決定",
-      "venue": "長野県営野球場",
-      "teams": [
-        {
-          "display": "篠ノ井",
-          "score": 4,
-          "won": false,
-          "name": "篠ノ井高校",
-          "slug": "shinonoi"
-        },
-        {
-          "display": "長野俊英",
-          "score": 8,
-          "won": true,
-          "name": "長野俊英",
           "slug": null
         }
       ]

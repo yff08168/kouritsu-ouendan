@@ -21279,6 +21279,52 @@
       ]
     },
     {
+      "date": "2026-09-28",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "2回戦",
+      "venue": "鹿児島市鴨池公園野球場",
+      "teams": [
+        {
+          "display": "大島",
+          "score": 3,
+          "won": true,
+          "name": "大島高校",
+          "slug": "kagoshima-oshima"
+        },
+        {
+          "display": "川内",
+          "score": 1,
+          "won": false,
+          "name": "川内高校",
+          "slug": "kagoshima-sendai"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "2回戦",
+      "venue": "鹿児島市鴨池公園野球場",
+      "teams": [
+        {
+          "display": "伊集院",
+          "score": 4,
+          "won": false,
+          "name": "伊集院高校",
+          "slug": "ijuin"
+        },
+        {
+          "display": "鶴丸",
+          "score": 5,
+          "won": true,
+          "name": "鶴丸高校",
+          "slug": "tsurumaru"
+        }
+      ]
+    },
+    {
       "date": "2026-09-27",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
@@ -21646,6 +21692,52 @@
           "won": false,
           "name": "鹿屋農業高校",
           "slug": "kanoyanogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "2回戦",
+      "venue": "平和リース球場（県立鴨池野球場）",
+      "teams": [
+        {
+          "display": "加世田",
+          "score": 3,
+          "won": true,
+          "name": "加世田高校",
+          "slug": "kagoshima-kaseda"
+        },
+        {
+          "display": "枕崎",
+          "score": 1,
+          "won": false,
+          "name": "枕崎高校",
+          "slug": "makurazaki"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "2回戦",
+      "venue": "平和リース球場（県立鴨池野球場）",
+      "teams": [
+        {
+          "display": "出水中央",
+          "score": 2,
+          "won": false,
+          "name": "出水中央",
+          "slug": null
+        },
+        {
+          "display": "鹿児島実業",
+          "score": 9,
+          "won": true,
+          "name": "鹿児島実業",
+          "slug": null
         }
       ]
     },

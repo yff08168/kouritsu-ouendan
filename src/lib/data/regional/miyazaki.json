@@ -24049,6 +24049,60 @@
       }
     },
     {
+      "date": "2026-09-28",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 宮崎県大会",
+      "round": "5回戦",
+      "venue": "ひなたサンマリンスタジアム宮崎",
+      "teams": [
+        {
+          "display": "小林西",
+          "score": 7,
+          "won": true,
+          "name": "小林西",
+          "slug": null
+        },
+        {
+          "display": "日章学園",
+          "score": 3,
+          "won": false,
+          "name": "日章学園",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://miyazaki.hsbflash.jp/"
+      }
+    },
+    {
+      "date": "2026-09-28",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 宮崎県大会",
+      "round": "5回戦",
+      "venue": "ひなたサンマリンスタジアム宮崎",
+      "teams": [
+        {
+          "display": "高鍋",
+          "score": 2,
+          "won": true,
+          "name": "高鍋高校",
+          "slug": "takanabe"
+        },
+        {
+          "display": "佐土原",
+          "score": 0,
+          "won": false,
+          "name": "佐土原高校",
+          "slug": "sadowara"
+        }
+      ],
+      "source": {
+        "name": "HSB flash",
+        "url": "https://miyazaki.hsbflash.jp/"
+      }
+    },
+    {
       "date": null,
       "season": "autumn",
       "tournament": "2025年 第157回九州地区高等学校野球大会宮崎県予選",

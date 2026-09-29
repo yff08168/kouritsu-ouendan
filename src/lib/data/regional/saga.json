@@ -22747,6 +22747,137 @@
       ]
     },
     {
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "唐津東",
+          "score": 3,
+          "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "name": "唐津東高校",
+          "slug": "karatsuhigashi"
+        },
+        {
+          "display": "武雄",
+          "score": 4,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            3
+          ],
+          "name": "武雄高校",
+          "slug": "takeo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐賀工業",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "佐賀工業高校",
+          "slug": "sagakogyo"
+        },
+        {
+          "display": "早稲田佐賀",
+          "score": 7,
+          "won": true,
+          "innings": [
+            4,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "name": "早稲田佐賀",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "唐津商業",
+          "score": 7,
+          "won": true,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            3,
+            0,
+            2,
+            0,
+            1
+          ],
+          "name": "唐津商業高校",
+          "slug": "karatsushogyo"
+        },
+        {
+          "display": "龍谷",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-09-24",
       "season": "autumn",
       "tournament": "第159回九州地区高等学校野球佐賀大会",

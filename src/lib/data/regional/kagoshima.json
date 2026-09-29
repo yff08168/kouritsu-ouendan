@@ -21279,6 +21279,29 @@
       ]
     },
     {
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "2回戦",
+      "venue": "鹿児島市鴨池公園野球場",
+      "teams": [
+        {
+          "display": "鹿児島水産",
+          "score": 1,
+          "won": false,
+          "name": "鹿児島水産高校",
+          "slug": "kagoshimasuisan"
+        },
+        {
+          "display": "神村学園",
+          "score": 15,
+          "won": true,
+          "name": "神村学園",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-09-28",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
@@ -21738,6 +21761,29 @@
           "won": true,
           "name": "鹿児島実業",
           "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "2回戦",
+      "venue": "平和リース球場（県立鴨池野球場）",
+      "teams": [
+        {
+          "display": "鹿屋中央",
+          "score": 5,
+          "won": true,
+          "name": "鹿屋中央",
+          "slug": null
+        },
+        {
+          "display": "加治木工業",
+          "score": 0,
+          "won": false,
+          "name": "加治木工業高校",
+          "slug": "kajikikogyo"
         }
       ]
     },

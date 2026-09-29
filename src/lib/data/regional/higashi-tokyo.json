@@ -127,10 +127,10 @@
       "venue": null,
       "teams": [
         {
-          "display": "大田桜台・桐ヶ丘三商・中野工科",
+          "display": "大田桜台・桐ヶ丘・三商・中野工科",
           "score": 3,
           "won": false,
-          "name": "大田桜台・桐ヶ丘三商・中野工科",
+          "name": "大田桜台・桐ヶ丘・三商・中野工科",
           "slug": null,
           "combined": true
         },
@@ -1441,11 +1441,12 @@
       "venue": null,
       "teams": [
         {
-          "display": "荒川工科大島海洋国際",
+          "display": "荒川工科・大島海洋国際・北豊島工科",
           "score": 8,
           "won": false,
-          "name": "荒川工科大島海洋国際",
-          "slug": null
+          "name": "荒川工科・大島海洋国際・北豊島工科",
+          "slug": null,
+          "combined": true
         },
         {
           "display": "立教池袋",
@@ -1786,10 +1787,10 @@
       "venue": null,
       "teams": [
         {
-          "display": "青井・足立東・農産南葛飾",
+          "display": "青井・足立東・農産・南葛飾",
           "score": 0,
           "won": false,
-          "name": "青井・足立東・農産南葛飾",
+          "name": "青井・足立東・農産・南葛飾",
           "slug": null,
           "combined": true
         },

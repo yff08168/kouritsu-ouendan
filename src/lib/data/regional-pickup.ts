@@ -4,163 +4,251 @@
 import type { RegionalPickups } from "@/lib/regional-results";
 
 export const REGIONAL_PICKUPS: RegionalPickups = {
-  "latestDate": "2026-09-28",
+  "latestDate": "2026-09-29",
   "spotlightSeason": "autumn",
   "spotlight": [],
   "games": [
     {
-      "districtSlug": "saitama",
-      "district": "埼玉",
-      "sourceName": "埼玉高校野球情報局",
-      "sourceUrl": "https://saitama-baseball.com/",
-      "date": "2026-09-28",
+      "districtSlug": "kumamoto",
+      "district": "熊本",
+      "sourceName": "熊本県高等学校野球連盟",
+      "sourceUrl": "http://www.kumamoto-kouyaren.com/",
+      "date": "2026-09-29",
       "season": "autumn",
-      "tournament": "2026年秋季埼玉県高校野球大会",
-      "round": "2回戦",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "準々決勝",
       "teams": [
         {
-          "display": "入間向陽",
-          "score": 1,
-          "won": false,
-          "name": "入間向陽高校",
-          "slug": "irumakoyo"
-        },
-        {
-          "display": "花咲徳栄",
-          "score": 7,
-          "won": true,
-          "name": "花咲徳栄",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "districtSlug": "saitama",
-      "district": "埼玉",
-      "sourceName": "埼玉高校野球情報局",
-      "sourceUrl": "https://saitama-baseball.com/",
-      "date": "2026-09-28",
-      "season": "autumn",
-      "tournament": "2026年秋季埼玉県高校野球大会",
-      "round": "2回戦",
-      "teams": [
-        {
-          "display": "坂戸",
-          "score": 1,
-          "won": false,
-          "name": "坂戸高校",
-          "slug": "sakado"
-        },
-        {
-          "display": "浦和学院",
-          "score": 8,
-          "won": true,
-          "name": "浦和学院",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "districtSlug": "saitama",
-      "district": "埼玉",
-      "sourceName": "埼玉高校野球情報局",
-      "sourceUrl": "https://saitama-baseball.com/",
-      "date": "2026-09-28",
-      "season": "autumn",
-      "tournament": "2026年秋季埼玉県高校野球大会",
-      "round": "2回戦",
-      "teams": [
-        {
-          "display": "上尾",
-          "score": 8,
-          "won": true,
-          "name": "上尾高校",
-          "slug": "ageo"
-        },
-        {
-          "display": "立教新座",
-          "score": 2,
-          "won": false,
-          "name": "立教新座",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "districtSlug": "saitama",
-      "district": "埼玉",
-      "sourceName": "埼玉高校野球情報局",
-      "sourceUrl": "https://saitama-baseball.com/",
-      "date": "2026-09-28",
-      "season": "autumn",
-      "tournament": "2026年秋季埼玉県高校野球大会",
-      "round": "2回戦",
-      "teams": [
-        {
-          "display": "所沢商",
-          "score": 1,
-          "won": false,
-          "name": "所沢商業高校",
-          "slug": "tokorozawashogyo"
-        },
-        {
-          "display": "朝霞西",
-          "score": 3,
-          "won": true,
-          "name": "朝霞西高校",
-          "slug": "asakanishi"
-        }
-      ]
-    },
-    {
-      "districtSlug": "saitama",
-      "district": "埼玉",
-      "sourceName": "埼玉高校野球情報局",
-      "sourceUrl": "https://saitama-baseball.com/",
-      "date": "2026-09-28",
-      "season": "autumn",
-      "tournament": "2026年秋季埼玉県高校野球大会",
-      "round": "2回戦",
-      "teams": [
-        {
-          "display": "東農大三",
-          "score": 3,
-          "won": true,
-          "name": "東農大三",
-          "slug": null
-        },
-        {
-          "display": "越谷南",
+          "display": "熊本商業",
           "score": 0,
           "won": false,
-          "name": "越谷南高校",
-          "slug": "koshigayaminami"
+          "name": "熊本商業高校",
+          "slug": "kumamotoshogyo"
+        },
+        {
+          "display": "開新",
+          "score": 3,
+          "won": true,
+          "name": "開新",
+          "slug": null
         }
       ]
     },
     {
-      "districtSlug": "saitama",
-      "district": "埼玉",
-      "sourceName": "埼玉高校野球情報局",
-      "sourceUrl": "https://saitama-baseball.com/",
-      "date": "2026-09-28",
+      "districtSlug": "kumamoto",
+      "district": "熊本",
+      "sourceName": "熊本県高等学校野球連盟",
+      "sourceUrl": "http://www.kumamoto-kouyaren.com/",
+      "date": "2026-09-29",
       "season": "autumn",
-      "tournament": "2026年秋季埼玉県高校野球大会",
-      "round": "2回戦",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "準々決勝",
       "teams": [
         {
-          "display": "越谷西",
+          "display": "ルーテル学院",
           "score": 2,
           "won": false,
-          "name": "越谷西高校",
-          "slug": "koshigayanishi"
+          "name": "ルーテル学院",
+          "slug": null
         },
         {
-          "display": "越ヶ谷",
+          "display": "熊本工業",
           "score": 3,
           "won": true,
-          "name": "越ケ谷高校",
-          "slug": "koshigaya"
+          "name": "熊本工業高校",
+          "slug": "kumamotokogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "saga",
+      "district": "佐賀",
+      "sourceName": "佐賀県高等学校野球連盟",
+      "sourceUrl": "http://kouyaren-saga.jp/",
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "唐津東",
+          "score": 3,
+          "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "name": "唐津東高校",
+          "slug": "karatsuhigashi"
+        },
+        {
+          "display": "武雄",
+          "score": 4,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            3
+          ],
+          "name": "武雄高校",
+          "slug": "takeo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "saga",
+      "district": "佐賀",
+      "sourceName": "佐賀県高等学校野球連盟",
+      "sourceUrl": "http://kouyaren-saga.jp/",
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "佐賀工業",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "佐賀工業高校",
+          "slug": "sagakogyo"
+        },
+        {
+          "display": "早稲田佐賀",
+          "score": 7,
+          "won": true,
+          "innings": [
+            4,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "name": "早稲田佐賀",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "districtSlug": "saga",
+      "district": "佐賀",
+      "sourceName": "佐賀県高等学校野球連盟",
+      "sourceUrl": "http://kouyaren-saga.jp/",
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "唐津商業",
+          "score": 7,
+          "won": true,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            3,
+            0,
+            2,
+            0,
+            1
+          ],
+          "name": "唐津商業高校",
+          "slug": "karatsushogyo"
+        },
+        {
+          "display": "龍谷",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "龍谷",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "districtSlug": "yamaguchi",
+      "district": "山口",
+      "sourceName": "山口県高等学校野球連盟",
+      "sourceUrl": "https://yamaguchi-hbf.com/",
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "令和8年度山口県スポーツ大会高校野球競技（硬式）",
+      "round": "準決勝",
+      "teams": [
+        {
+          "display": "高川学園",
+          "score": 1,
+          "won": false,
+          "name": "高川学園",
+          "slug": null
+        },
+        {
+          "display": "南陽工",
+          "score": 2,
+          "won": true,
+          "name": "南陽工業高校",
+          "slug": "nanyokogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "yamaguchi",
+      "district": "山口",
+      "sourceName": "山口県高等学校野球連盟",
+      "sourceUrl": "https://yamaguchi-hbf.com/",
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "令和8年度山口県スポーツ大会高校野球競技（硬式）",
+      "round": "準決勝",
+      "teams": [
+        {
+          "display": "岩国",
+          "score": 1,
+          "won": false,
+          "name": "岩国高校",
+          "slug": "iwakuni"
+        },
+        {
+          "display": "桜ケ丘",
+          "score": 2,
+          "won": true,
+          "name": "桜ケ丘",
+          "slug": null
         }
       ]
     },
@@ -169,206 +257,76 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "district": "宮崎",
       "sourceName": "宮崎県高等学校野球連盟",
       "sourceUrl": "https://miyazaki-hbf.jp/",
-      "date": "2026-09-28",
+      "date": "2026-09-29",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季九州地区高校野球 宮崎県大会",
-      "round": "5回戦",
+      "tournament": "2026年 令和 8年秋季九州地区高校野球 宮崎県大会",
+      "round": "4回戦",
       "teams": [
         {
-          "display": "高鍋",
-          "score": 2,
+          "display": "宮崎商業",
+          "score": 1,
           "won": true,
-          "name": "高鍋高校",
-          "slug": "takanabe"
+          "name": "宮崎商業高校",
+          "slug": "miyazakishogyo"
         },
         {
-          "display": "佐土原",
+          "display": "日南学園",
           "score": 0,
           "won": false,
-          "name": "佐土原高校",
-          "slug": "sadowara"
+          "name": "日南学園",
+          "slug": null
         }
       ]
     },
     {
-      "districtSlug": "ibaraki",
-      "district": "茨城",
-      "sourceName": "茨城県高等学校野球連盟",
-      "sourceUrl": "http://www.ibaraki-hbf.com/",
-      "date": "2026-09-28",
+      "districtSlug": "kagoshima",
+      "district": "鹿児島",
+      "sourceName": "HSB flash",
+      "sourceUrl": "https://kagoshima.hsbflash.jp/",
+      "date": "2026-09-29",
       "season": "autumn",
-      "tournament": "第79回秋季関東地区高等学校野球茨城県大会",
-      "round": "3回戦",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "2回戦",
       "teams": [
         {
-          "display": "常総学院",
-          "score": 7,
-          "won": true,
-          "name": "常総学院",
-          "slug": null
-        },
-        {
-          "display": "藤代",
+          "display": "鹿児島水産",
           "score": 1,
           "won": false,
-          "name": "藤代高校",
-          "slug": "fujishiro"
+          "name": "鹿児島水産高校",
+          "slug": "kagoshimasuisan"
+        },
+        {
+          "display": "神村学園",
+          "score": 15,
+          "won": true,
+          "name": "神村学園",
+          "slug": null
         }
       ]
     },
     {
-      "districtSlug": "ibaraki",
-      "district": "茨城",
-      "sourceName": "茨城県高等学校野球連盟",
-      "sourceUrl": "http://www.ibaraki-hbf.com/",
-      "date": "2026-09-28",
+      "districtSlug": "kagoshima",
+      "district": "鹿児島",
+      "sourceName": "HSB flash",
+      "sourceUrl": "https://kagoshima.hsbflash.jp/",
+      "date": "2026-09-29",
       "season": "autumn",
-      "tournament": "第79回秋季関東地区高等学校野球茨城県大会",
-      "round": "3回戦",
+      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
+      "round": "2回戦",
       "teams": [
         {
-          "display": "江戸川学園",
+          "display": "鹿屋中央",
           "score": 5,
           "won": true,
-          "name": "江戸川学園",
+          "name": "鹿屋中央",
           "slug": null
         },
         {
-          "display": "下妻一",
-          "score": 2,
-          "won": false,
-          "name": "下妻第一高校",
-          "slug": "shimotsumadaiichi"
-        }
-      ]
-    },
-    {
-      "districtSlug": "ibaraki",
-      "district": "茨城",
-      "sourceName": "茨城県高等学校野球連盟",
-      "sourceUrl": "http://www.ibaraki-hbf.com/",
-      "date": "2026-09-28",
-      "season": "autumn",
-      "tournament": "第79回秋季関東地区高等学校野球茨城県大会",
-      "round": "3回戦",
-      "teams": [
-        {
-          "display": "東洋大牛久",
-          "score": 11,
-          "won": true,
-          "name": "東洋大牛久",
-          "slug": null
-        },
-        {
-          "display": "下妻二",
+          "display": "加治木工業",
           "score": 0,
           "won": false,
-          "name": "下妻第二高校",
-          "slug": "shimotsumadaini"
-        }
-      ]
-    },
-    {
-      "districtSlug": "ibaraki",
-      "district": "茨城",
-      "sourceName": "茨城県高等学校野球連盟",
-      "sourceUrl": "http://www.ibaraki-hbf.com/",
-      "date": "2026-09-28",
-      "season": "autumn",
-      "tournament": "第79回秋季関東地区高等学校野球茨城県大会",
-      "round": "3回戦",
-      "teams": [
-        {
-          "display": "日立一",
-          "score": 1,
-          "won": false,
-          "name": "日立第一高校",
-          "slug": "hitachidaiichi"
-        },
-        {
-          "display": "土浦日大",
-          "score": 8,
-          "won": true,
-          "name": "土浦日大",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "districtSlug": "kagoshima",
-      "district": "鹿児島",
-      "sourceName": "HSB flash",
-      "sourceUrl": "https://kagoshima.hsbflash.jp/",
-      "date": "2026-09-28",
-      "season": "autumn",
-      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "2回戦",
-      "teams": [
-        {
-          "display": "大島",
-          "score": 3,
-          "won": true,
-          "name": "大島高校",
-          "slug": "kagoshima-oshima"
-        },
-        {
-          "display": "川内",
-          "score": 1,
-          "won": false,
-          "name": "川内高校",
-          "slug": "kagoshima-sendai"
-        }
-      ]
-    },
-    {
-      "districtSlug": "kagoshima",
-      "district": "鹿児島",
-      "sourceName": "HSB flash",
-      "sourceUrl": "https://kagoshima.hsbflash.jp/",
-      "date": "2026-09-28",
-      "season": "autumn",
-      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "2回戦",
-      "teams": [
-        {
-          "display": "伊集院",
-          "score": 4,
-          "won": false,
-          "name": "伊集院高校",
-          "slug": "ijuin"
-        },
-        {
-          "display": "鶴丸",
-          "score": 5,
-          "won": true,
-          "name": "鶴丸高校",
-          "slug": "tsurumaru"
-        }
-      ]
-    },
-    {
-      "districtSlug": "kagoshima",
-      "district": "鹿児島",
-      "sourceName": "HSB flash",
-      "sourceUrl": "https://kagoshima.hsbflash.jp/",
-      "date": "2026-09-28",
-      "season": "autumn",
-      "tournament": "2026年 令和8年秋季九州地区高校野球 鹿児島県大会",
-      "round": "2回戦",
-      "teams": [
-        {
-          "display": "加世田",
-          "score": 3,
-          "won": true,
-          "name": "加世田高校",
-          "slug": "kagoshima-kaseda"
-        },
-        {
-          "display": "枕崎",
-          "score": 1,
-          "won": false,
-          "name": "枕崎高校",
-          "slug": "makurazaki"
+          "name": "加治木工業高校",
+          "slug": "kajikikogyo"
         }
       ]
     },
@@ -377,76 +335,206 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "district": "長崎",
       "sourceName": "HSB flash",
       "sourceUrl": "https://nagasaki.hsbflash.jp/",
-      "date": "2026-09-28",
+      "date": "2026-09-29",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季九州地区高校野球 長崎県大会",
+      "tournament": "2026年 令和 8年秋季九州地区高校野球 長崎県大会",
       "round": "3回戦",
       "teams": [
         {
-          "display": "壱岐商",
-          "score": 0,
+          "display": "長崎工",
+          "score": 2,
           "won": false,
-          "name": "壱岐商業高校",
-          "slug": "ikishogyo"
+          "name": "長崎工業高校",
+          "slug": "nagasakikogyo"
         },
         {
-          "display": "長崎商",
-          "score": 1,
+          "display": "清峰",
+          "score": 3,
           "won": true,
-          "name": "長崎商業高校",
-          "slug": "nagasakishogyo"
+          "name": "清峰高校",
+          "slug": "nagasaki-seiho"
         }
       ]
     },
     {
-      "districtSlug": "kochi",
-      "district": "高知",
+      "districtSlug": "nagasaki",
+      "district": "長崎",
       "sourceName": "HSB flash",
-      "sourceUrl": "https://kochi.hsbflash.jp/",
-      "date": "2026-09-28",
+      "sourceUrl": "https://nagasaki.hsbflash.jp/",
+      "date": "2026-09-29",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季四国地区高校野球 高知県大会",
+      "tournament": "2026年 令和 8年秋季九州地区高校野球 長崎県大会",
       "round": "3回戦",
       "teams": [
         {
-          "display": "土佐",
+          "display": "長崎西",
+          "score": 11,
+          "won": true,
+          "name": "長崎西高校",
+          "slug": "nagasakinishi"
+        },
+        {
+          "display": "長崎東",
           "score": 0,
           "won": false,
-          "name": "土佐",
+          "name": "長崎東高校",
+          "slug": "nagasakihigashi"
+        }
+      ]
+    },
+    {
+      "districtSlug": "nagasaki",
+      "district": "長崎",
+      "sourceName": "HSB flash",
+      "sourceUrl": "https://nagasaki.hsbflash.jp/",
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季九州地区高校野球 長崎県大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "長崎日本大学",
+          "score": 5,
+          "won": true,
+          "name": "長崎日本大学",
           "slug": null
         },
         {
-          "display": "高知商業",
-          "score": 5,
-          "won": true,
-          "name": "高知商業高校",
-          "slug": "kochishogyo"
+          "display": "猶興館",
+          "score": 0,
+          "won": false,
+          "name": "猶興館高校",
+          "slug": "yukokan"
         }
       ]
     },
     {
-      "districtSlug": "fukushima",
-      "district": "福島",
+      "districtSlug": "nagasaki",
+      "district": "長崎",
       "sourceName": "HSB flash",
-      "sourceUrl": "https://fukushima.hsbflash.jp/",
-      "date": "2026-09-28",
+      "sourceUrl": "https://nagasaki.hsbflash.jp/",
+      "date": "2026-09-29",
       "season": "autumn",
-      "tournament": "2026年 令和 8年秋季東北地区高等学校野球 福島県大会",
+      "tournament": "2026年 令和 8年秋季九州地区高校野球 長崎県大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "壱岐",
+          "score": 0,
+          "won": false,
+          "name": "壱岐高校",
+          "slug": "iki"
+        },
+        {
+          "display": "諫早農",
+          "score": 6,
+          "won": true,
+          "name": "諫早農業高校",
+          "slug": "isahayanogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "nagasaki",
+      "district": "長崎",
+      "sourceName": "HSB flash",
+      "sourceUrl": "https://nagasaki.hsbflash.jp/",
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季九州地区高校野球 長崎県大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "海星",
+          "score": 11,
+          "won": true,
+          "name": "海星",
+          "slug": null
+        },
+        {
+          "display": "島原工",
+          "score": 1,
+          "won": false,
+          "name": "島原工業高校",
+          "slug": "shimabarakogyo"
+        }
+      ]
+    },
+    {
+      "districtSlug": "nagasaki",
+      "district": "長崎",
+      "sourceName": "HSB flash",
+      "sourceUrl": "https://nagasaki.hsbflash.jp/",
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季九州地区高校野球 長崎県大会",
+      "round": "3回戦",
+      "teams": [
+        {
+          "display": "九州文化学園",
+          "score": 3,
+          "won": false,
+          "name": "九州文化学園",
+          "slug": null
+        },
+        {
+          "display": "大崎",
+          "score": 6,
+          "won": true,
+          "name": "大崎高校",
+          "slug": "nagasaki-osaki"
+        }
+      ]
+    },
+    {
+      "districtSlug": "okayama",
+      "district": "岡山",
+      "sourceName": "HSB flash",
+      "sourceUrl": "https://okayama.hsbflash.jp/",
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "teams": [
+        {
+          "display": "倉敷商業",
+          "score": 10,
+          "won": true,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        },
+        {
+          "display": "高梁",
+          "score": 1,
+          "won": false,
+          "name": "高梁高校",
+          "slug": "takahashi"
+        }
+      ]
+    },
+    {
+      "districtSlug": "tottori",
+      "district": "鳥取",
+      "sourceName": "HSB flash",
+      "sourceUrl": "https://tottori.hsbflash.jp/",
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
       "round": "決勝",
       "teams": [
         {
-          "display": "聖光学院",
-          "score": 4,
-          "won": true,
-          "name": "聖光学院",
-          "slug": null
+          "display": "米子東",
+          "score": 1,
+          "won": false,
+          "name": "米子東高校",
+          "slug": "yonagohigashi"
         },
         {
-          "display": "光南",
-          "score": 3,
-          "won": false,
-          "name": "光南高校",
-          "slug": "fukushima-konan"
+          "display": "鳥取城北",
+          "score": 2,
+          "won": true,
+          "name": "鳥取城北",
+          "slug": null
         }
       ]
     }

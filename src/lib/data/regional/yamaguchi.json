@@ -68186,6 +68186,52 @@
       ]
     },
     {
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "令和8年度山口県スポーツ大会高校野球競技（硬式）",
+      "round": "準決勝",
+      "venue": "オーヴィジョンスタジアム下関",
+      "teams": [
+        {
+          "display": "高川学園",
+          "score": 1,
+          "won": false,
+          "name": "高川学園",
+          "slug": null
+        },
+        {
+          "display": "南陽工",
+          "score": 2,
+          "won": true,
+          "name": "南陽工業高校",
+          "slug": "nanyokogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "令和8年度山口県スポーツ大会高校野球競技（硬式）",
+      "round": "準決勝",
+      "venue": "オーヴィジョンスタジアム下関",
+      "teams": [
+        {
+          "display": "岩国",
+          "score": 1,
+          "won": false,
+          "name": "岩国高校",
+          "slug": "iwakuni"
+        },
+        {
+          "display": "桜ケ丘",
+          "score": 2,
+          "won": true,
+          "name": "桜ケ丘",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "令和7年度山口県スポーツ大会高校野球競技（硬式） 地区予選大会",

@@ -41906,6 +41906,52 @@
       ]
     },
     {
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "準々決勝",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "熊本商業",
+          "score": 0,
+          "won": false,
+          "name": "熊本商業高校",
+          "slug": "kumamotoshogyo"
+        },
+        {
+          "display": "開新",
+          "score": 3,
+          "won": true,
+          "name": "開新",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球熊本大会",
+      "round": "準々決勝",
+      "venue": "リブワーク藤崎台球場",
+      "teams": [
+        {
+          "display": "ルーテル学院",
+          "score": 2,
+          "won": false,
+          "name": "ルーテル学院",
+          "slug": null
+        },
+        {
+          "display": "熊本工業",
+          "score": 3,
+          "won": true,
+          "name": "熊本工業高校",
+          "slug": "kumamotokogyo"
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第157回九州地区高等学校野球熊本大会",

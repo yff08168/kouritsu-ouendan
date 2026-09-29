@@ -7337,7 +7337,7 @@
       "date": "2026-09-23",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
-      "round": "3回戦",
+      "round": "準々決勝",
       "venue": "どらやきドラマチックパーク米子市民球場",
       "teams": [
         {
@@ -7360,7 +7360,7 @@
       "date": "2026-09-23",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
-      "round": "3回戦",
+      "round": "準々決勝",
       "venue": "倉吉市営野球場",
       "teams": [
         {
@@ -7383,7 +7383,7 @@
       "date": "2026-09-26",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
-      "round": "準々決勝",
+      "round": "準決勝",
       "venue": "どらやきドラマチックパーク米子市民球場",
       "teams": [
         {
@@ -7406,7 +7406,7 @@
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "どらやきドラマチックパーク米子市民球場",
       "teams": [
         {
@@ -7429,7 +7429,7 @@
       "date": "2026-09-20",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
-      "round": "3回戦",
+      "round": "2回戦",
       "venue": "どらやきドラマチックパーク米子市民球場",
       "teams": [
         {
@@ -7452,7 +7452,7 @@
       "date": "2026-09-21",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
-      "round": "3回戦",
+      "round": "2回戦",
       "venue": "倉吉市営野球場",
       "teams": [
         {
@@ -7475,7 +7475,7 @@
       "date": "2026-09-21",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
-      "round": "3回戦",
+      "round": "2回戦",
       "venue": "どらやきドラマチックパーク米子市民球場",
       "teams": [
         {
@@ -7498,7 +7498,7 @@
       "date": "2026-09-20",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
-      "round": "3回戦",
+      "round": "2回戦",
       "venue": "倉吉市営野球場",
       "teams": [
         {
@@ -7583,6 +7583,29 @@
           "won": false,
           "name": "境高校",
           "slug": "tottori-sakai"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 鳥取県大会",
+      "round": "決勝",
+      "venue": "どらやきドラマチックパーク米子市民球場",
+      "teams": [
+        {
+          "display": "米子東",
+          "score": 1,
+          "won": false,
+          "name": "米子東高校",
+          "slug": "yonagohigashi"
+        },
+        {
+          "display": "鳥取城北",
+          "score": 2,
+          "won": true,
+          "name": "鳥取城北",
+          "slug": null
         }
       ]
     },

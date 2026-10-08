@@ -6956,6 +6956,32 @@ HEAD から戻し、修正済みのスクリプトで作り直した。
 **鮮度**: 試合の速報と結果は Supabase を使っていないので変わらない。
 応援メッセージと投票は5分、学校マスタ・甲子園の記録・公立旋風・ニュース・特集は最長1時間で反映される。
 
+##### ★★★Vercel の使用量も Hobby の枠を大きく超えていた（2026-10-08 に調べた）
+
+9/11〜10/8 の Pro の使用量（$20 の込み分を使い切り、超過 $7.57）を Hobby の枠と比べた。
+
+| 項目 | 使用量 | Hobby の枠（月） |
+|---|---|---|
+| ISR Writes | 1.97M | 200K |
+| Fluid Active CPU | 14時間 | 4時間 |
+| Fast Origin Transfer | 32GB | 10GB |
+| CDN Requests | 2.09M | 1M |
+| ISR Reads | 1.53M | 1M |
+| Function Invocations | 847K | 1M |
+| Deployment Storage | 79 GB-months | — |
+
+**`vercel metrics` で内訳を出した**（9/13〜29）:
+- **ISR の書き込みの9割近く**は 学校ページ27%・対戦成績27%・試合18%・大会17%（どれも開かれたときに作るページ）
+- **リクエストの7割近くが AI と SEO ツールのクローラー**（OAI-SearchBot 35%・meta-externalagent 17%・Amazonbot 9%・
+  PerplexityBot 4%・Semrush ほか 5%）。**Googlebot は1%・Bingbot も1%。**
+- OAI-SearchBot は利用規約・問い合わせ・トップなどを**1週間に約5,200〜6,500回ずつ**取りに来ていた
+
+**対処**: robots.txt で AI の検索・学習用と SEO ツールのクローラーを止め、全クローラーに試合ページと速報の試合ページを止めた
+（`src/app/robots.ts`）。**Google・Bing・Applebot と、人が ChatGPT 等で開いたときの取得は止めていない。**
+★**robots.txt に従わないクローラーは Vercel の Firewall（AI Bots の管理ルール）で止める**（ダッシュボードの設定。デプロイ不要）。
+★**Hobby に戻すのは、push 後に1週間ほど `vercel metrics` で測って枠に収まると分かってから。**
+戻した月に枠を超えると、9/10 と同じく配信が止まる。
+
 **プラン**: Supabase は無料のまま（請求期間は毎月11日から）。Vercel は 2026-09-11 に「1か月限定」で Pro にした。
 ★**Supabase が戻ったらすぐ push すること** —— 本番はまだ古いコードで、戻った瞬間からまた読み直し続ける。
   その大会を見に来た人に「一部です」と返す理由が無い。

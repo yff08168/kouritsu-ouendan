@@ -1210,6 +1210,18 @@ $env:Path = "C:\Users\81809\tools\node-v24.19.0-win-x64;" + $env:Path
   ★★**確かめ方は「偽の PostgREST を立てて、同じページを2回開く」** —— 本物が止まっていても測れる。
   変更前は学校一覧を開くたびに4回（本番は出場歴が3ページあるのでもっと多い）、変更後は2回目以降0回だった。
   ★**偽物は空の配列を返すだけでよい**（`NEXT_PUBLIC_SUPABASE_URL` をそちらに向けて `next dev` / `next build`）。
+  ＋ ★★★★**AI の検索・学習用と SEO ツールのクローラーは robots.txt でサイト全体を止めた**（2026-10-08。運営者の「Vercel も無料にできるならしたい」）。
+  **Vercel の利用の7割近くがこれらのクローラーだった**（9/13〜29 のリクエスト約75万件: OAI-SearchBot 35%・meta-externalagent 17%・
+  Amazonbot 9%・PerplexityBot 4%・SEO ツール 5%。**Googlebot は1%**）。
+  ★**ISR の書き込みの9割近くは、学校（27%）・対戦成績（27%）・試合（18%）・大会（17%）のページを「開かれたときに作る」ぶん。**
+  ★**Google・Bing・Applebot・ChatGPT-User・Perplexity-User は止めない**（検索と、人が AI 経由で開いたときの取得）。
+  ★**止めた代わりに ChatGPT の検索や Perplexity の回答に出にくくなる。** 戻すなら `src/app/robots.ts` の `BLOCKED_BOTS` から外す。
+  ★**全クローラーに対して試合ページ（`/prefectures/*/game/`）と速報の試合ページも止めた**（どちらも noindex で sitemap に無い）。
+  ★★**robots.ts のコメントにワイルドカード入りのパスを書かないこと** —— 星とスラッシュで `/* */` のコメントが途中で閉じ、ビルドが落ちる（実際に落ちた）。
+  ★★**内訳の取り方は `vercel metrics`**（CLI は運営者のアカウントでログイン済み。読み取りだけ）——
+  `vercel metrics vercel.isr_operation.write_units -a sum --group-by route -p kouritsu-ouendan -s <開始> -u <終了> --json`、
+  ボット別は `vercel metrics vercel.request.count -a count --group-by botName ...`。
+  ★**ISR の書き込みはボット別に数えられない**（裏での作り直しは誰の要求か記録されず、全部「不明」になる）。
   ＋ ★★★**HSB flash は2018年まである**（2026-09-04）。**2019年からしか取っていなかった19県に足した**
   （**71,721 → 72,817試合**。大阪 +248・千葉 +190・広島 +130・三重 +84・鹿児島 +64 ほか）。
   ★**2017年は無い**（大阪・千葉で確かめた。**底は2018年**）。

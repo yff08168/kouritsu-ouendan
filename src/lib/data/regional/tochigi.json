@@ -27285,6 +27285,75 @@
       ]
     },
     {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "準決勝",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "佐野日大",
+          "score": 7,
+          "won": true,
+          "name": "佐野日大",
+          "slug": null
+        },
+        {
+          "display": "足利大附",
+          "score": 0,
+          "won": false,
+          "name": "足利大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "準決勝",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "栃木工",
+          "score": 1,
+          "won": false,
+          "name": "栃木工業高校",
+          "slug": "tochigikogyo"
+        },
+        {
+          "display": "作新学院",
+          "score": 8,
+          "won": true,
+          "name": "作新学院",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "season": "autumn",
+      "tournament": "第79回秋季栃木県高等学校野球大会",
+      "round": "決勝",
+      "venue": "宇都宮清原球場",
+      "teams": [
+        {
+          "display": "佐野日大",
+          "score": 1,
+          "won": false,
+          "name": "佐野日大",
+          "slug": null
+        },
+        {
+          "display": "作新学院",
+          "score": 4,
+          "won": true,
+          "name": "作新学院",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "第78回秋季栃木県高等学校野球大会",

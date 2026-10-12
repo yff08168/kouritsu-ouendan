@@ -7990,7 +7990,7 @@
       "date": "2026-09-26",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 徳島県大会",
-      "round": "3回戦",
+      "round": "準々決勝",
       "venue": "むつみスタジアム",
       "teams": [
         {
@@ -8010,10 +8010,56 @@
       ]
     },
     {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 徳島県大会",
+      "round": "準々決勝",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "海部",
+          "score": 10,
+          "won": true,
+          "name": "海部高校",
+          "slug": "kaifu"
+        },
+        {
+          "display": "科学技術",
+          "score": 0,
+          "won": false,
+          "name": "徳島科学技術高校",
+          "slug": "tokushimakagakugijutsu"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 徳島県大会",
+      "round": "準決勝",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "阿南光",
+          "score": 4,
+          "won": false,
+          "name": "阿南光高校",
+          "slug": "ananko"
+        },
+        {
+          "display": "海部",
+          "score": 5,
+          "won": true,
+          "name": "海部高校",
+          "slug": "kaifu"
+        }
+      ]
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 徳島県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "むつみスタジアム",
       "teams": [
         {
@@ -8037,7 +8083,7 @@
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 徳島県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "むつみスタジアム",
       "teams": [
         {
@@ -8060,7 +8106,7 @@
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 徳島県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "むつみスタジアム",
       "teams": [
         {
@@ -8083,7 +8129,7 @@
       "date": "2026-09-13",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 徳島県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "むつみスタジアム",
       "teams": [
         {
@@ -8106,7 +8152,7 @@
       "date": "2026-09-13",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 徳島県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "むつみスタジアム",
       "teams": [
         {
@@ -8129,7 +8175,7 @@
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 徳島県大会",
-      "round": "3回戦",
+      "round": "2回戦",
       "venue": "むつみスタジアム",
       "teams": [
         {
@@ -8152,7 +8198,7 @@
       "date": "2026-09-20",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 徳島県大会",
-      "round": "3回戦",
+      "round": "2回戦",
       "venue": "むつみスタジアム",
       "teams": [
         {
@@ -8175,7 +8221,7 @@
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 徳島県大会",
-      "round": "3回戦",
+      "round": "2回戦",
       "venue": "ＪＡアグリあなんスタジアム",
       "teams": [
         {
@@ -8198,7 +8244,7 @@
       "date": "2026-09-20",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 徳島県大会",
-      "round": "3回戦",
+      "round": "2回戦",
       "venue": "ＪＡアグリあなんスタジアム",
       "teams": [
         {
@@ -8237,6 +8283,75 @@
           "won": false,
           "name": "板野高校",
           "slug": "itano"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 徳島県大会",
+      "round": "準々決勝",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "徳島商業",
+          "score": 16,
+          "won": true,
+          "name": "徳島商業高校",
+          "slug": "tokushimashogyo"
+        },
+        {
+          "display": "小松島西",
+          "score": 1,
+          "won": false,
+          "name": "小松島西高校",
+          "slug": "komatsushimanishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 徳島県大会",
+      "round": "準決勝",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "城南",
+          "score": 3,
+          "won": false,
+          "name": "城南高校",
+          "slug": "jonan"
+        },
+        {
+          "display": "徳島商業",
+          "score": 4,
+          "won": true,
+          "name": "徳島商業高校",
+          "slug": "tokushimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 徳島県大会",
+      "round": "決勝",
+      "venue": "むつみスタジアム",
+      "teams": [
+        {
+          "display": "徳島商業",
+          "score": 14,
+          "won": true,
+          "name": "徳島商業高校",
+          "slug": "tokushimashogyo"
+        },
+        {
+          "display": "海部",
+          "score": 6,
+          "won": false,
+          "name": "海部高校",
+          "slug": "kaifu"
         }
       ]
     },

@@ -12694,6 +12694,29 @@
       ]
     },
     {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "聖カタリナ学園",
+          "score": 4,
+          "won": true,
+          "name": "聖カタリナ学園",
+          "slug": null
+        },
+        {
+          "display": "宇和島東",
+          "score": 3,
+          "won": false,
+          "name": "宇和島東高校",
+          "slug": "uwajimahigashi"
+        }
+      ]
+    },
+    {
       "date": "2026-09-26",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 愛媛県大会",
@@ -12741,10 +12764,103 @@
       ]
     },
     {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "今治市営球場",
+      "teams": [
+        {
+          "display": "今治北",
+          "score": 0,
+          "won": false,
+          "name": "今治北高校",
+          "slug": "imabarikita"
+        },
+        {
+          "display": "松山中央",
+          "score": 6,
+          "won": true,
+          "name": "松山中央高校",
+          "slug": "matsuyamachuo"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 愛媛県大会",
+      "round": "準々決勝",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "聖カタリナ学園",
+          "score": 8,
+          "won": true,
+          "name": "聖カタリナ学園",
+          "slug": null
+        },
+        {
+          "display": "八幡浜・川之石",
+          "score": 0,
+          "won": false,
+          "name": "八幡浜・川之石",
+          "slug": null,
+          "combined": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 愛媛県大会",
+      "round": "準々決勝",
+      "venue": "西条市ひうち球場",
+      "teams": [
+        {
+          "display": "帝京第五",
+          "score": 1,
+          "won": false,
+          "name": "帝京第五",
+          "slug": null
+        },
+        {
+          "display": "松山中央",
+          "score": 2,
+          "won": true,
+          "name": "松山中央高校",
+          "slug": "matsuyamachuo"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 愛媛県大会",
+      "round": "準決勝",
+      "venue": "西条市ひうち球場",
+      "teams": [
+        {
+          "display": "聖カタリナ学園",
+          "score": 10,
+          "won": true,
+          "name": "聖カタリナ学園",
+          "slug": null
+        },
+        {
+          "display": "松山中央",
+          "score": 1,
+          "won": false,
+          "name": "松山中央高校",
+          "slug": "matsuyamachuo"
+        }
+      ]
+    },
+    {
       "date": "2026-09-26",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 愛媛県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "坊っちゃんスタジアム",
       "teams": [
         {
@@ -12764,10 +12880,56 @@
       ]
     },
     {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "松山商",
+          "score": 7,
+          "won": true,
+          "name": "松山商業高校",
+          "slug": "matsuyamashogyo"
+        },
+        {
+          "display": "新田",
+          "score": 6,
+          "won": false,
+          "name": "新田",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 愛媛県大会",
+      "round": "1回戦",
+      "venue": "今治市営球場",
+      "teams": [
+        {
+          "display": "今治西",
+          "score": 7,
+          "won": true,
+          "name": "今治西高校",
+          "slug": "imabarinishi"
+        },
+        {
+          "display": "宇和",
+          "score": 0,
+          "won": false,
+          "name": "宇和高校",
+          "slug": "uwa"
+        }
+      ]
+    },
+    {
       "date": "2026-09-26",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 愛媛県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "丸山公園野球場",
       "teams": [
         {
@@ -12783,6 +12945,98 @@
           "won": true,
           "name": "丹原高校",
           "slug": "tanbara"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 愛媛県大会",
+      "round": "準々決勝",
+      "venue": "坊っちゃんスタジアム",
+      "teams": [
+        {
+          "display": "済美",
+          "score": 4,
+          "won": true,
+          "name": "済美",
+          "slug": null
+        },
+        {
+          "display": "松山商",
+          "score": 1,
+          "won": false,
+          "name": "松山商業高校",
+          "slug": "matsuyamashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 愛媛県大会",
+      "round": "準々決勝",
+      "venue": "西条市ひうち球場",
+      "teams": [
+        {
+          "display": "今治西",
+          "score": 9,
+          "won": true,
+          "name": "今治西高校",
+          "slug": "imabarinishi"
+        },
+        {
+          "display": "丹原",
+          "score": 0,
+          "won": false,
+          "name": "丹原高校",
+          "slug": "tanbara"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 愛媛県大会",
+      "round": "準決勝",
+      "venue": "西条市ひうち球場",
+      "teams": [
+        {
+          "display": "済美",
+          "score": 3,
+          "won": false,
+          "name": "済美",
+          "slug": null
+        },
+        {
+          "display": "今治西",
+          "score": 4,
+          "won": true,
+          "name": "今治西高校",
+          "slug": "imabarinishi"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 愛媛県大会",
+      "round": "決勝",
+      "venue": "西条市ひうち球場",
+      "teams": [
+        {
+          "display": "今治西",
+          "score": 2,
+          "won": true,
+          "name": "今治西高校",
+          "slug": "imabarinishi"
+        },
+        {
+          "display": "聖カタリナ学園",
+          "score": 0,
+          "won": false,
+          "name": "聖カタリナ学園",
+          "slug": null
         }
       ]
     },
@@ -15544,84 +15798,6 @@
           "won": false,
           "name": "松山商業高校",
           "slug": "matsuyamashogyo"
-        }
-      ]
-    }
-  ],
-  "upcoming": [
-    {
-      "date": "2026-10-03",
-      "season": "autumn",
-      "tournament": "令和 8年秋季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "松山商",
-          "name": "松山商業高校",
-          "slug": "matsuyamashogyo"
-        },
-        {
-          "display": "新田",
-          "name": "新田",
-          "slug": null
-        }
-      ]
-    },
-    {
-      "date": "2026-10-03",
-      "season": "autumn",
-      "tournament": "令和 8年秋季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "今治市営球場",
-      "teams": [
-        {
-          "display": "今治西",
-          "name": "今治西高校",
-          "slug": "imabarinishi"
-        },
-        {
-          "display": "宇和",
-          "name": "宇和高校",
-          "slug": "uwa"
-        }
-      ]
-    },
-    {
-      "date": "2026-10-03",
-      "season": "autumn",
-      "tournament": "令和 8年秋季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "坊っちゃんスタジアム",
-      "teams": [
-        {
-          "display": "聖カタリナ学園",
-          "name": "聖カタリナ学園",
-          "slug": null
-        },
-        {
-          "display": "宇和島東",
-          "name": "宇和島東高校",
-          "slug": "uwajimahigashi"
-        }
-      ]
-    },
-    {
-      "date": "2026-10-03",
-      "season": "autumn",
-      "tournament": "令和 8年秋季四国地区高校野球 愛媛県大会",
-      "round": "1回戦",
-      "venue": "今治市営球場",
-      "teams": [
-        {
-          "display": "今治北",
-          "name": "今治北高校",
-          "slug": "imabarikita"
-        },
-        {
-          "display": "松山中央",
-          "name": "松山中央高校",
-          "slug": "matsuyamachuo"
         }
       ]
     }

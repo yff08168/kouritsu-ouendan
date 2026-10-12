@@ -16690,6 +16690,75 @@
       ]
     },
     {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季九州地区高校野球 長崎県大会",
+      "round": "準々決勝",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "創成館",
+          "score": 10,
+          "won": true,
+          "name": "創成館",
+          "slug": null
+        },
+        {
+          "display": "清峰",
+          "score": 2,
+          "won": false,
+          "name": "清峰高校",
+          "slug": "nagasaki-seiho"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季九州地区高校野球 長崎県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "長崎西",
+          "score": 1,
+          "won": false,
+          "name": "長崎西高校",
+          "slug": "nagasakinishi"
+        },
+        {
+          "display": "長崎商",
+          "score": 5,
+          "won": true,
+          "name": "長崎商業高校",
+          "slug": "nagasakishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季九州地区高校野球 長崎県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "創成館",
+          "score": 7,
+          "won": true,
+          "name": "創成館",
+          "slug": null
+        },
+        {
+          "display": "長崎商",
+          "score": 6,
+          "won": false,
+          "name": "長崎商業高校",
+          "slug": "nagasakishogyo"
+        }
+      ]
+    },
+    {
       "date": "2026-09-13",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季九州地区高校野球 長崎県大会",
@@ -17124,6 +17193,98 @@
           "won": true,
           "name": "大崎高校",
           "slug": "nagasaki-osaki"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季九州地区高校野球 長崎県大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "長崎日本大学",
+          "score": 5,
+          "won": true,
+          "name": "長崎日本大学",
+          "slug": null
+        },
+        {
+          "display": "諫早農",
+          "score": 1,
+          "won": false,
+          "name": "諫早農業高校",
+          "slug": "isahayanogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季九州地区高校野球 長崎県大会",
+      "round": "準々決勝",
+      "venue": "佐世保市総合グラウンド野球場",
+      "teams": [
+        {
+          "display": "海星",
+          "score": 8,
+          "won": true,
+          "name": "海星",
+          "slug": null
+        },
+        {
+          "display": "大崎",
+          "score": 7,
+          "won": false,
+          "name": "大崎高校",
+          "slug": "nagasaki-osaki"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季九州地区高校野球 長崎県大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "長崎日本大学",
+          "score": 5,
+          "won": false,
+          "name": "長崎日本大学",
+          "slug": null
+        },
+        {
+          "display": "海星",
+          "score": 8,
+          "won": true,
+          "name": "海星",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季九州地区高校野球 長崎県大会",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "海星",
+          "score": 1,
+          "won": true,
+          "name": "海星",
+          "slug": null
+        },
+        {
+          "display": "創成館",
+          "score": 0,
+          "won": false,
+          "name": "創成館",
+          "slug": null
         }
       ]
     },

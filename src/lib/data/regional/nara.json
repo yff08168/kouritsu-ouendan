@@ -21709,6 +21709,98 @@
       ]
     },
     {
+      "date": "2026-10-08",
+      "season": "autumn",
+      "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",
+      "round": "3位決定戦",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "天理",
+          "score": 6,
+          "won": false,
+          "name": "天理",
+          "slug": null
+        },
+        {
+          "display": "郡山",
+          "score": 8,
+          "won": true,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "season": "autumn",
+      "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",
+      "round": "決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "score": 7,
+          "won": false,
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "奈良大附",
+          "score": 13,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",
+      "round": "準決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "智辯学園",
+          "score": 11,
+          "won": true,
+          "name": "智辯学園",
+          "slug": null
+        },
+        {
+          "display": "郡山",
+          "score": 0,
+          "won": false,
+          "name": "郡山高校",
+          "slug": "nara-koriyama"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "season": "autumn",
+      "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",
+      "round": "準決勝",
+      "venue": "さとやくスタジアム",
+      "teams": [
+        {
+          "display": "奈良大附",
+          "score": 5,
+          "won": true,
+          "name": "奈良大附",
+          "slug": null
+        },
+        {
+          "display": "天理",
+          "score": 4,
+          "won": false,
+          "name": "天理",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-09-27",
       "season": "autumn",
       "tournament": "2026年 秋季近畿地区高等学校野球大会奈良県予選",

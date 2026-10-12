@@ -22747,6 +22747,138 @@
       ]
     },
     {
+      "date": "2026-09-30",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "北陵",
+          "score": 2,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "name": "北陵",
+          "slug": null
+        },
+        {
+          "display": "鳥栖",
+          "score": 7,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            2,
+            0,
+            0,
+            3
+          ],
+          "name": "鳥栖高校",
+          "slug": "tosu"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "白石",
+          "score": 2,
+          "won": false,
+          "innings": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "白石高校",
+          "slug": "saga-shiroishi"
+        },
+        {
+          "display": "唐津南",
+          "score": 5,
+          "won": true,
+          "innings": [
+            1,
+            1,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "唐津南高校",
+          "slug": "karatsuminami"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "鳥栖商業",
+          "score": 3,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "鳥栖商業高校",
+          "slug": "tosushogyo"
+        },
+        {
+          "display": "佐賀北",
+          "score": 8,
+          "won": true,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            7
+          ],
+          "name": "佐賀北高校",
+          "slug": "sagakita"
+        }
+      ]
+    },
+    {
       "date": "2026-09-29",
       "season": "autumn",
       "tournament": "第159回九州地区高等学校野球佐賀大会",
@@ -23724,6 +23856,319 @@
           ],
           "name": "太良高校",
           "slug": "tara"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": null,
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐賀北",
+          "score": 4,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "name": "佐賀北高校",
+          "slug": "sagakita"
+        },
+        {
+          "display": "早稲田佐賀",
+          "score": 13,
+          "won": true,
+          "innings": [
+            0,
+            3,
+            0,
+            2,
+            0,
+            5,
+            2,
+            1
+          ],
+          "name": "早稲田佐賀",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "早稲田佐賀",
+          "score": 7,
+          "won": true,
+          "innings": [
+            0,
+            5,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "name": "早稲田佐賀",
+          "slug": null
+        },
+        {
+          "display": "唐津商業",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "唐津商業高校",
+          "slug": "karatsushogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐賀北",
+          "score": 11,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            5,
+            1,
+            0,
+            4
+          ],
+          "name": "佐賀北高校",
+          "slug": "sagakita"
+        },
+        {
+          "display": "鳥栖工",
+          "score": 1,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "鳥栖工業高校",
+          "slug": "tosukogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "武雄",
+          "score": 6,
+          "won": false,
+          "innings": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            1
+          ],
+          "name": "武雄高校",
+          "slug": "takeo"
+        },
+        {
+          "display": "早稲田佐賀",
+          "score": 7,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            2
+          ],
+          "name": "早稲田佐賀",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "唐津商業",
+          "score": 10,
+          "won": true,
+          "innings": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            0,
+            4,
+            1
+          ],
+          "name": "唐津商業高校",
+          "slug": "karatsushogyo"
+        },
+        {
+          "display": "鳥栖",
+          "score": 3,
+          "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "name": "鳥栖高校",
+          "slug": "tosu"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "多・厳",
+          "score": 9,
+          "won": true,
+          "innings": [
+            1,
+            0,
+            2,
+            0,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2
+          ],
+          "name": "多・厳",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "鹿島",
+          "score": 8,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            5,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "name": "鹿島高校",
+          "slug": "saga-kashima"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "season": "autumn",
+      "tournament": "第159回九州地区高等学校野球佐賀大会",
+      "round": "3回戦",
+      "venue": null,
+      "teams": [
+        {
+          "display": "佐賀商業",
+          "score": 4,
+          "won": false,
+          "innings": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "name": "佐賀商業高校",
+          "slug": "sagashogyo"
+        },
+        {
+          "display": "鳥栖工業",
+          "score": 5,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "name": "鳥栖工業高校",
+          "slug": "tosukogyo"
         }
       ]
     },

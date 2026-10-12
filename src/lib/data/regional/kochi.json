@@ -6098,7 +6098,7 @@
       "date": "2026-09-27",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 高知県大会",
-      "round": "3回戦",
+      "round": "準々決勝",
       "venue": "県立春野野球場",
       "teams": [
         {
@@ -6121,7 +6121,7 @@
       "date": "2026-09-28",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 高知県大会",
-      "round": "3回戦",
+      "round": "準々決勝",
       "venue": "県立春野野球場",
       "teams": [
         {
@@ -6141,10 +6141,33 @@
       ]
     },
     {
+      "date": "2026-10-10",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 高知県大会",
+      "round": "準決勝",
+      "venue": "県立春野野球場",
+      "teams": [
+        {
+          "display": "高知",
+          "score": 9,
+          "won": true,
+          "name": "高知",
+          "slug": null
+        },
+        {
+          "display": "高知商業",
+          "score": 4,
+          "won": false,
+          "name": "高知商業高校",
+          "slug": "kochishogyo"
+        }
+      ]
+    },
+    {
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 高知県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "県立春野野球場",
       "teams": [
         {
@@ -6167,7 +6190,7 @@
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 高知県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "県立春野野球場",
       "teams": [
         {
@@ -6190,7 +6213,7 @@
       "date": "2026-09-12",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 高知県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "県立春野野球場",
       "teams": [
         {
@@ -6213,7 +6236,7 @@
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 高知県大会",
-      "round": "3回戦",
+      "round": "2回戦",
       "venue": "県立春野野球場",
       "teams": [
         {
@@ -6236,7 +6259,7 @@
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 高知県大会",
-      "round": "3回戦",
+      "round": "2回戦",
       "venue": "県立春野野球場",
       "teams": [
         {
@@ -6259,7 +6282,7 @@
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季四国地区高校野球 高知県大会",
-      "round": "3回戦",
+      "round": "2回戦",
       "venue": "日本トーター野球場",
       "teams": [
         {
@@ -6321,6 +6344,52 @@
           "won": false,
           "name": "岡豊高校",
           "slug": "oko"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 高知県大会",
+      "round": "準決勝",
+      "venue": "県立春野野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 8,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "小津",
+          "score": 3,
+          "won": false,
+          "name": "高知小津高校",
+          "slug": "kochiozu"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季四国地区高校野球 高知県大会",
+      "round": "決勝",
+      "venue": "県立春野野球場",
+      "teams": [
+        {
+          "display": "明徳義塾",
+          "score": 6,
+          "won": true,
+          "name": "明徳義塾",
+          "slug": null
+        },
+        {
+          "display": "高知",
+          "score": 2,
+          "won": false,
+          "name": "高知",
+          "slug": null
         }
       ]
     },

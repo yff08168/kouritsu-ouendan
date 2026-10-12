@@ -578,61 +578,7 @@
       "season": "spring",
       "tournament": "令和8年度 春季岡山県高等学校野球大会 地区予選",
       "round": "代表決定戦",
-      "venue": "マスカット補助球場",
-      "teams": [
-        {
-          "display": "岡山工",
-          "score": 1,
-          "won": false,
-          "name": "岡山工業高校",
-          "slug": "okayamakogyo"
-        },
-        {
-          "display": "学芸館",
-          "score": 15,
-          "won": true,
-          "name": "学芸館",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "岡山県高等学校野球連盟",
-        "url": "https://www.okayama-hbf.com/"
-      }
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "令和8年度 春季岡山県高等学校野球大会 地区予選",
-      "round": "代表決定戦",
-      "venue": "マスカット補助球場",
-      "teams": [
-        {
-          "display": "明誠",
-          "score": 4,
-          "won": false,
-          "name": "明誠",
-          "slug": null
-        },
-        {
-          "display": "西大寺",
-          "score": 5,
-          "won": true,
-          "name": "西大寺高校",
-          "slug": "saidaiji"
-        }
-      ],
-      "source": {
-        "name": "岡山県高等学校野球連盟",
-        "url": "https://www.okayama-hbf.com/"
-      }
-    },
-    {
-      "date": "2026-04-18",
-      "season": "spring",
-      "tournament": "令和8年度 春季岡山県高等学校野球大会 地区予選",
-      "round": "代表決定戦",
-      "venue": "岡山県野球場",
+      "venue": "岡山県総合グラウンド野球場",
       "teams": [
         {
           "display": "就実",
@@ -659,7 +605,7 @@
       "season": "spring",
       "tournament": "令和8年度 春季岡山県高等学校野球大会 地区予選",
       "round": "代表決定戦",
-      "venue": "岡山県野球場",
+      "venue": "岡山県総合グラウンド野球場",
       "teams": [
         {
           "display": "東岡工",
@@ -674,6 +620,60 @@
           "won": true,
           "name": "商大附",
           "slug": null
+        }
+      ],
+      "source": {
+        "name": "岡山県高等学校野球連盟",
+        "url": "https://www.okayama-hbf.com/"
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "令和8年度 春季岡山県高等学校野球大会 地区予選",
+      "round": "代表決定戦",
+      "venue": "倉敷スポーツ公園マスカットスタジアム補助球場",
+      "teams": [
+        {
+          "display": "岡山工",
+          "score": 1,
+          "won": false,
+          "name": "岡山工業高校",
+          "slug": "okayamakogyo"
+        },
+        {
+          "display": "学芸館",
+          "score": 15,
+          "won": true,
+          "name": "学芸館",
+          "slug": null
+        }
+      ],
+      "source": {
+        "name": "岡山県高等学校野球連盟",
+        "url": "https://www.okayama-hbf.com/"
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "season": "spring",
+      "tournament": "令和8年度 春季岡山県高等学校野球大会 地区予選",
+      "round": "代表決定戦",
+      "venue": "倉敷スポーツ公園マスカットスタジアム補助球場",
+      "teams": [
+        {
+          "display": "明誠",
+          "score": 4,
+          "won": false,
+          "name": "明誠",
+          "slug": null
+        },
+        {
+          "display": "西大寺",
+          "score": 5,
+          "won": true,
+          "name": "西大寺高校",
+          "slug": "saidaiji"
         }
       ],
       "source": {
@@ -794,7 +794,7 @@
       "season": "spring",
       "tournament": "令和8年度 春季岡山県高等学校野球大会 地区予選",
       "round": "代表決定戦",
-      "venue": "岡山県野球場",
+      "venue": "岡山県総合グラウンド野球場",
       "teams": [
         {
           "display": "興陽",
@@ -15616,7 +15616,7 @@
       "season": "autumn",
       "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
       "round": null,
-      "venue": "岡山県野球場",
+      "venue": "岡山県総合グラウンド野球場",
       "teams": [
         {
           "display": "一宮",
@@ -15643,7 +15643,7 @@
       "season": "autumn",
       "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
       "round": null,
-      "venue": "岡山県野球場",
+      "venue": "岡山県総合グラウンド野球場",
       "teams": [
         {
           "display": "操山",
@@ -17457,7 +17457,7 @@
       "season": "autumn",
       "tournament": "令和8年度 秋季岡山県高等学校野球大会 地区予選",
       "round": "順位決定戦",
-      "venue": "岡山県野球場",
+      "venue": "岡山県総合グラウンド野球場",
       "teams": [
         {
           "display": "岡山南",
@@ -17808,7 +17808,7 @@
     {
       "date": "2026-09-19",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季中国地区高校野球 岡山県大会",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
       "round": "1回戦",
       "venue": "美咲エイコンスタジアム",
       "teams": [
@@ -17831,7 +17831,7 @@
     {
       "date": "2026-09-19",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季中国地区高校野球 岡山県大会",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
       "round": "1回戦",
       "venue": "美咲エイコンスタジアム",
       "teams": [
@@ -17852,9 +17852,32 @@
       ]
     },
     {
+      "date": "2026-09-30",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "美咲エイコンスタジアム",
+      "teams": [
+        {
+          "display": "興譲館",
+          "score": 0,
+          "won": false,
+          "name": "興譲館",
+          "slug": null
+        },
+        {
+          "display": "岡山東商業",
+          "score": 7,
+          "won": true,
+          "name": "岡山東商業高校",
+          "slug": "okayamahigashishogyo"
+        }
+      ]
+    },
+    {
       "date": "2026-09-29",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季中国地区高校野球 岡山県大会",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
       "round": "2回戦",
       "venue": "マスカットスタジアム",
       "teams": [
@@ -17875,10 +17898,125 @@
       ]
     },
     {
+      "date": "2026-09-30",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "作陽学園",
+          "score": 0,
+          "won": false,
+          "name": "作陽学園",
+          "slug": null
+        },
+        {
+          "display": "倉敷工業",
+          "score": 1,
+          "won": true,
+          "name": "倉敷工業高校",
+          "slug": "kurashikikogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "美咲エイコンスタジアム",
+      "teams": [
+        {
+          "display": "岡山商大附",
+          "score": 2,
+          "won": false,
+          "name": "岡山商大附",
+          "slug": null
+        },
+        {
+          "display": "岡山理大附",
+          "score": 4,
+          "won": true,
+          "name": "岡山理大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山東商業",
+          "score": 1,
+          "won": false,
+          "name": "岡山東商業高校",
+          "slug": "okayamahigashishogyo"
+        },
+        {
+          "display": "倉敷商業",
+          "score": 6,
+          "won": true,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "美咲エイコンスタジアム",
+      "teams": [
+        {
+          "display": "倉敷工業",
+          "score": 5,
+          "won": true,
+          "name": "倉敷工業高校",
+          "slug": "kurashikikogyo"
+        },
+        {
+          "display": "岡山理大附",
+          "score": 4,
+          "won": false,
+          "name": "岡山理大附",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "round": "準決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "倉敷商業",
+          "score": 2,
+          "won": true,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
+        },
+        {
+          "display": "倉敷工業",
+          "score": 1,
+          "won": false,
+          "name": "倉敷工業高校",
+          "slug": "kurashikikogyo"
+        }
+      ]
+    },
+    {
       "date": "2026-09-19",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季中国地区高校野球 岡山県大会",
-      "round": "2回戦",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "round": "1回戦",
       "venue": "マスカットスタジアム",
       "teams": [
         {
@@ -17900,8 +18038,8 @@
     {
       "date": "2026-09-19",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季中国地区高校野球 岡山県大会",
-      "round": "2回戦",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "round": "1回戦",
       "venue": "マスカットスタジアム",
       "teams": [
         {
@@ -17923,8 +18061,8 @@
     {
       "date": "2026-09-27",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季中国地区高校野球 岡山県大会",
-      "round": "3回戦",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
       "venue": "マスカットスタジアム",
       "teams": [
         {
@@ -17944,10 +18082,56 @@
       ]
     },
     {
+      "date": "2026-09-30",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "津山商業",
+          "score": 2,
+          "won": false,
+          "name": "津山商業高校",
+          "slug": "tsuyamashogyo"
+        },
+        {
+          "display": "就実",
+          "score": 4,
+          "won": true,
+          "name": "就実",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "岡山朝日",
+          "score": 2,
+          "won": false,
+          "name": "岡山朝日高校",
+          "slug": "okayamaasahi"
+        },
+        {
+          "display": "創志学園",
+          "score": 5,
+          "won": true,
+          "name": "創志学園",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-09-27",
       "season": "autumn",
-      "tournament": "2026年 令和8年秋季中国地区高校野球 岡山県大会",
-      "round": "3回戦",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "round": "2回戦",
       "venue": "マスカットスタジアム",
       "teams": [
         {
@@ -17963,6 +18147,98 @@
           "won": false,
           "name": "玉野光南高校",
           "slug": "tamanokonan"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "おかやま山陽",
+          "score": 7,
+          "won": true,
+          "name": "おかやま山陽",
+          "slug": null
+        },
+        {
+          "display": "就実",
+          "score": 4,
+          "won": false,
+          "name": "就実",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "round": "準々決勝",
+      "venue": "美咲エイコンスタジアム",
+      "teams": [
+        {
+          "display": "創志学園",
+          "score": 8,
+          "won": true,
+          "name": "創志学園",
+          "slug": null
+        },
+        {
+          "display": "関西",
+          "score": 0,
+          "won": false,
+          "name": "関西",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "round": "準決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "おかやま山陽",
+          "score": 1,
+          "won": false,
+          "name": "おかやま山陽",
+          "slug": null
+        },
+        {
+          "display": "創志学園",
+          "score": 8,
+          "won": true,
+          "name": "創志学園",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 岡山県大会",
+      "round": "決勝",
+      "venue": "マスカットスタジアム",
+      "teams": [
+        {
+          "display": "創志学園",
+          "score": 3,
+          "won": true,
+          "name": "創志学園",
+          "slug": null
+        },
+        {
+          "display": "倉敷商業",
+          "score": 2,
+          "won": false,
+          "name": "倉敷商業高校",
+          "slug": "kurashikishogyo"
         }
       ]
     },

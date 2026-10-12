@@ -23049,6 +23049,29 @@
       ]
     },
     {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "盈進",
+          "score": 4,
+          "won": false,
+          "name": "盈進",
+          "slug": null
+        },
+        {
+          "display": "武田",
+          "score": 11,
+          "won": true,
+          "name": "武田",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-09-26",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
@@ -23068,6 +23091,29 @@
           "won": false,
           "name": "広島商業高校",
           "slug": "hiroshimashogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "広島新庄",
+          "score": 4,
+          "won": true,
+          "name": "広島新庄",
+          "slug": null
+        },
+        {
+          "display": "広島井口",
+          "score": 3,
+          "won": false,
+          "name": "広島井口高校",
+          "slug": "hiroshimainokuchi"
         }
       ]
     },
@@ -23095,10 +23141,79 @@
       ]
     },
     {
+      "date": "2026-10-04",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
+      "round": "準々決勝",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "武田",
+          "score": 1,
+          "won": false,
+          "name": "武田",
+          "slug": null
+        },
+        {
+          "display": "広陵",
+          "score": 2,
+          "won": true,
+          "name": "広陵",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
+      "round": "準々決勝",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "広島新庄",
+          "score": 6,
+          "won": true,
+          "name": "広島新庄",
+          "slug": null
+        },
+        {
+          "display": "市立呉",
+          "score": 5,
+          "won": false,
+          "name": "呉高校",
+          "slug": "kure"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
+      "round": "準決勝",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "広陵",
+          "score": 4,
+          "won": true,
+          "name": "広陵",
+          "slug": null
+        },
+        {
+          "display": "広島新庄",
+          "score": 1,
+          "won": false,
+          "name": "広島新庄",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-09-20",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": null,
       "teams": [
         {
@@ -23121,7 +23236,7 @@
       "date": "2026-09-20",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "ぶんちゃんしまなみ球場",
       "teams": [
         {
@@ -23144,7 +23259,7 @@
       "date": "2026-09-20",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "鶴岡一人記念球場",
       "teams": [
         {
@@ -23167,7 +23282,7 @@
       "date": "2026-09-20",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": null,
       "teams": [
         {
@@ -23190,7 +23305,7 @@
       "date": "2026-09-20",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "鶴岡一人記念球場",
       "teams": [
         {
@@ -23213,7 +23328,7 @@
       "date": "2026-09-20",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "ぶんちゃんしまなみ球場",
       "teams": [
         {
@@ -23236,7 +23351,7 @@
       "date": "2026-09-20",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "鶴岡一人記念球場",
       "teams": [
         {
@@ -23259,7 +23374,7 @@
       "date": "2026-09-20",
       "season": "autumn",
       "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
-      "round": "2回戦",
+      "round": "1回戦",
       "venue": "ぶんちゃんしまなみ球場",
       "teams": [
         {
@@ -23275,6 +23390,190 @@
           "won": false,
           "name": "広島国泰寺高校",
           "slug": "hiroshimakokutaiji"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "山陽",
+          "score": 8,
+          "won": false,
+          "name": "山陽",
+          "slug": null
+        },
+        {
+          "display": "近大福山",
+          "score": 9,
+          "won": true,
+          "name": "近大福山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "西条農業",
+          "score": 5,
+          "won": true,
+          "name": "西条農業高校",
+          "slug": "saijonogyo"
+        },
+        {
+          "display": "基町",
+          "score": 0,
+          "won": false,
+          "name": "基町高校",
+          "slug": "motomachi"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "呉港",
+          "score": 8,
+          "won": true,
+          "name": "呉港",
+          "slug": null
+        },
+        {
+          "display": "高陽東",
+          "score": 0,
+          "won": false,
+          "name": "高陽東高校",
+          "slug": "koyohigashi"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
+      "round": "2回戦",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "崇徳",
+          "score": 5,
+          "won": true,
+          "name": "崇徳",
+          "slug": null
+        },
+        {
+          "display": "尾道",
+          "score": 3,
+          "won": false,
+          "name": "尾道",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
+      "round": "準々決勝",
+      "venue": "電光石火きんさいスタジアム三次",
+      "teams": [
+        {
+          "display": "近大福山",
+          "score": 1,
+          "won": false,
+          "name": "近大福山",
+          "slug": null
+        },
+        {
+          "display": "西条農業",
+          "score": 11,
+          "won": true,
+          "name": "西条農業高校",
+          "slug": "saijonogyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
+      "round": "準々決勝",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "呉港",
+          "score": 1,
+          "won": false,
+          "name": "呉港",
+          "slug": null
+        },
+        {
+          "display": "崇徳",
+          "score": 4,
+          "won": true,
+          "name": "崇徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
+      "round": "準決勝",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "西条農業",
+          "score": 5,
+          "won": false,
+          "name": "西条農業高校",
+          "slug": "saijonogyo"
+        },
+        {
+          "display": "崇徳",
+          "score": 6,
+          "won": true,
+          "name": "崇徳",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "season": "autumn",
+      "tournament": "2026年 令和 8年秋季中国地区高校野球 広島県大会",
+      "round": "決勝",
+      "venue": "ぶんちゃんしまなみ球場",
+      "teams": [
+        {
+          "display": "崇徳",
+          "score": 6,
+          "won": true,
+          "name": "崇徳",
+          "slug": null
+        },
+        {
+          "display": "広陵",
+          "score": 3,
+          "won": false,
+          "name": "広陵",
+          "slug": null
         }
       ]
     },

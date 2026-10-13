@@ -24,7 +24,8 @@ export function websiteJsonLd() {
         description: SITE.description,
         // 運営者名が未設定のうちは founder を出さない（虚偽を書かないため）
         ...(OPERATOR.name ? { founder: { "@type": "Person", name: OPERATOR.name } } : {}),
-        sameAs: [SITE.xUrl],
+        // ★`sameAs` は 2026-10-13 に外した（Xのアカウントが存在しない。存在しないものを名乗らない）。
+        //   アカウントを作ったら `sameAs: [SITE.xUrl]` を戻す
       },
       {
         "@type": "WebSite",

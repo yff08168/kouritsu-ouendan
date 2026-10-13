@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Menu, X as CloseIcon } from "lucide-react";
-import { NAV, SITE } from "@/lib/constants";
+import { NAV } from "@/lib/constants";
 import { SearchBar } from "@/components/common/SearchBar";
 
 /** スマートフォン用のメニュー。タップ領域は最低44pxを確保する（要件26）。 */
@@ -87,16 +87,12 @@ export function MobileMenu() {
               </ul>
             </nav>
 
-            <div className="border-t border-line p-4">
-              <a
-                href={SITE.xUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex min-h-12 items-center justify-center rounded-lg bg-navy-800 px-4 text-sm font-bold text-white hover:bg-navy-700"
-              >
-                X（旧Twitter）をフォロー
-              </a>
-            </div>
+            {/*
+              ★**Xのボタンは 2026-10-13 に外した**（アカウントが存在しない）。
+              ヘッダー側は 2026-08-24 に外していたが、**ここだけ残っていて
+              スマホで開くと存在しないアカウントへ誘導していた。**
+              アカウントを作ったら `SITE.xUrl` へのボタンをここに戻す。
+            */}
           </div>
         </div>
       )}

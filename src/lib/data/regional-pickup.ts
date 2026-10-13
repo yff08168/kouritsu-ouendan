@@ -88,7 +88,7 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "sourceUrl": "https://tokyo.hsbflash.jp/",
       "date": "2026-10-12",
       "season": "autumn",
-      "tournament": "2026年 20 26年秋季東京都高等学校野球大会",
+      "tournament": "2026年 秋季東京都高等学校野球大会",
       "round": "2回戦",
       "teams": [
         {
@@ -114,7 +114,7 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "sourceUrl": "https://tokyo.hsbflash.jp/",
       "date": "2026-10-12",
       "season": "autumn",
-      "tournament": "2026年 20 26年秋季東京都高等学校野球大会",
+      "tournament": "2026年 秋季東京都高等学校野球大会",
       "round": "2回戦",
       "teams": [
         {
@@ -140,7 +140,7 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "sourceUrl": "https://tokyo.hsbflash.jp/",
       "date": "2026-10-12",
       "season": "autumn",
-      "tournament": "2026年 20 26年秋季東京都高等学校野球大会",
+      "tournament": "2026年 秋季東京都高等学校野球大会",
       "round": "2回戦",
       "teams": [
         {

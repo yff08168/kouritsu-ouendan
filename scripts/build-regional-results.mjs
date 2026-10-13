@@ -15704,6 +15704,16 @@ const HSB_BASE = {
    * （`令和 8年` ＋ `令和8年秋季近畿地区高校野球 大阪府大会`）。
    * **大会名がすでに年を名乗っているなら、頭に足さない。**
    * ★**結果と組み合わせで同じ題を使うために切り出してある**（片方だけ直さないこと）。
+   *
+   * ★★★**索引の「年」（`games_year`）はもう題に足さない**（2026-10-13）。
+   * 足していたので、開催中の大会だけ **`2026年 令和 8年秋季…`** と年が二重になっていた
+   * （春季・秋季は `readTournament` が頭に西暦を足すため。30府県の秋季すべて）。
+   * ★**東京は年を西暦で `20<span>26年</span>` と刷る**ので、つなぐと `20 26年` になり、
+   * **画面に `2026年 20 26年秋季東京都…` と出ていた。**
+   * ★★**過去の大会（`/pasts`）の題は年を持たない**（`秋季東京都高等学校野球大会`）ので、
+   * 年を足したままだと **大会が終わって過去の一覧から読み直された日に名前が変わり、
+   * 同じ大会が2つの名前で並ぶ**（引き継ぎの鍵は大会名）。**開催中と過去で同じ題にそろえる。**
+   * ★**年は題からは取っていない**（開催中の春季・秋季は暦年、夏は回数から。呼ぶ側を見ること）。
    */
   currentTournament(index) {
     const name = normalize(
@@ -15711,11 +15721,8 @@ const HSB_BASE = {
         plain(/<h1 class="games_name_L">([\s\S]*?)<\/h1>/.exec(index)?.[1] ?? ""),
     );
     if (!name) return null;
-    const yearText = plain(/<p class="games_year">([\s\S]*?)<\/p>/.exec(index)?.[1] ?? "");
     return {
-      title: normalize(
-        (/令和\s*\d+\s*年|平成\s*\d+\s*年|20\d\d\s*年/.test(name) ? name : yearText + name).trim(),
-      ),
+      title: normalize(name.trim()),
       period: normalize(plain(/<p class="games_period">([\s\S]*?)<\/p>/.exec(index)?.[1] ?? "")),
     };
   },

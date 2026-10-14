@@ -40424,6 +40424,1605 @@
     {
       "date": "2026-09-05",
       "season": "autumn",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "津幡",
+          "score": 4,
+          "won": true,
+          "innings": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "name": "津幡高校",
+          "slug": "tsubata"
+        },
+        {
+          "display": "鶴来",
+          "score": 2,
+          "won": false,
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "鶴来高校",
+          "slug": "tsurugi"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-05",
+      "season": "autumn",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "門前",
+          "score": 6,
+          "won": true,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            3,
+            1,
+            1
+          ],
+          "name": "門前高校",
+          "slug": "monzen"
+        },
+        {
+          "display": "小松工業",
+          "score": 3,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "name": "小松工業高校",
+          "slug": "komatsukogyo"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-05",
+      "season": "autumn",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "翠星",
+          "score": 13,
+          "won": true,
+          "innings": [
+            2,
+            4,
+            0,
+            6,
+            1,
+            0,
+            0
+          ],
+          "name": "翠星高校",
+          "slug": "suisei"
+        },
+        {
+          "display": "金大附属",
+          "score": 4,
+          "won": false,
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "name": "金沢大学人間社会学域学校教育学類附属高校",
+          "slug": "kanazawadaigakuningenshakaigakuikigakkokyoikugakuruifuzoku"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-05",
+      "season": "autumn",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢錦丘",
+          "score": 5,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            4,
+            1,
+            0,
+            0
+          ],
+          "name": "金沢錦丘高校",
+          "slug": "kanazawanishikigaoka"
+        },
+        {
+          "display": "小松",
+          "score": 12,
+          "won": true,
+          "innings": [
+            2,
+            0,
+            0,
+            2,
+            0,
+            4,
+            4
+          ],
+          "name": "小松高校",
+          "slug": "komatsu"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-05",
+      "season": "autumn",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "能登",
+          "score": 7,
+          "won": false,
+          "innings": [
+            1,
+            0,
+            2,
+            0,
+            0,
+            3,
+            1
+          ],
+          "name": "能登高校",
+          "slug": "noto"
+        },
+        {
+          "display": "鵬学園",
+          "score": 14,
+          "won": true,
+          "innings": [
+            5,
+            0,
+            3,
+            3,
+            1,
+            0,
+            2
+          ],
+          "name": "鵬学園",
+          "slug": null
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-05",
+      "season": "autumn",
+      "round": "1回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "大聖寺",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "大聖寺高校",
+          "slug": "daishoji"
+        },
+        {
+          "display": "金沢学院大附",
+          "score": 19,
+          "won": true,
+          "innings": [
+            4,
+            5,
+            3,
+            7
+          ],
+          "name": "金沢学院大附",
+          "slug": null
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢桜丘",
+          "score": 16,
+          "won": true,
+          "innings": [
+            4,
+            0,
+            11,
+            1,
+            0
+          ],
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
+        },
+        {
+          "display": "金沢西",
+          "score": 1,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "name": "金沢西高校",
+          "slug": "kanazawanishi"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-06",
+      "season": "autumn",
+      "round": "1回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢泉丘",
+          "score": 11,
+          "won": true,
+          "innings": [
+            3,
+            0,
+            4,
+            2,
+            2
+          ],
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        },
+        {
+          "display": "鹿西",
+          "score": 1,
+          "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "鹿西高校",
+          "slug": "rokusei"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松明峰",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "小松明峰高校",
+          "slug": "komatsumeiho"
+        },
+        {
+          "display": "小松大谷",
+          "score": 10,
+          "won": true,
+          "innings": [
+            0,
+            3,
+            0,
+            7
+          ],
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "七尾",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "七尾高校",
+          "slug": "nanao"
+        },
+        {
+          "display": "金沢",
+          "score": 7,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            1,
+            2,
+            2
+          ],
+          "name": "金沢",
+          "slug": null
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "星稜",
+          "score": 3,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            0
+          ],
+          "name": "星稜",
+          "slug": null
+        },
+        {
+          "display": "遊学館",
+          "score": 2,
+          "won": false,
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "遊学館",
+          "slug": null
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "北陸学院",
+          "score": 9,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            3,
+            1,
+            2,
+            1,
+            0,
+            2
+          ],
+          "name": "北陸学院",
+          "slug": null
+        },
+        {
+          "display": "金沢市立工業",
+          "score": 5,
+          "won": false,
+          "innings": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0
+          ],
+          "name": "金沢市立工業高校",
+          "slug": "kanazawashiritsukogyo"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "野々市明倫・松任",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "野々市明倫・松任",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "小松商業",
+          "score": 30,
+          "won": true,
+          "innings": [
+            9,
+            8,
+            8,
+            5
+          ],
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "羽咋",
+          "score": 1,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "羽咋高校",
+          "slug": "hakui"
+        },
+        {
+          "display": "金沢商業",
+          "score": 7,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            1,
+            5,
+            0,
+            1,
+            0,
+            0
+          ],
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "金沢龍谷",
+          "score": 3,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          "name": "金沢龍谷",
+          "slug": null
+        },
+        {
+          "display": "羽咋工業",
+          "score": 10,
+          "won": true,
+          "innings": [
+            1,
+            1,
+            0,
+            2,
+            0,
+            1,
+            5
+          ],
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-12",
+      "season": "autumn",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "飯田",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "飯田高校",
+          "slug": "iida"
+        },
+        {
+          "display": "金沢二水",
+          "score": 2,
+          "won": true,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松市立・寺井",
+          "score": 3,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "小松市立・寺井",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "金沢北陵",
+          "score": 4,
+          "won": true,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          "name": "金沢北陵高校",
+          "slug": "kanazawahokuryo"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "輪島",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "輪島高校",
+          "slug": "wajima"
+        },
+        {
+          "display": "県立工業",
+          "score": 6,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            3,
+            0,
+            0,
+            1,
+            0,
+            2
+          ],
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "round": "2回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "石川高専",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "石川工業高専",
+          "slug": "ishikawakogyo"
+        },
+        {
+          "display": "日本航空石川",
+          "score": 7,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            3
+          ],
+          "name": "日本航空石川",
+          "slug": null
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "津幡",
+          "score": 4,
+          "won": false,
+          "innings": [
+            0,
+            1,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "津幡高校",
+          "slug": "tsubata"
+        },
+        {
+          "display": "門前",
+          "score": 5,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "name": "門前高校",
+          "slug": "monzen"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-13",
+      "season": "autumn",
+      "round": "2回戦",
+      "venue": "弁慶スタジアム",
+      "teams": [
+        {
+          "display": "翠星",
+          "score": 8,
+          "won": true,
+          "innings": [
+            3,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "翠星高校",
+          "slug": "suisei"
+        },
+        {
+          "display": "鵬学園",
+          "score": 6,
+          "won": false,
+          "innings": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0
+          ],
+          "name": "鵬学園",
+          "slug": null
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-14",
+      "season": "autumn",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "小松",
+          "score": 5,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "小松高校",
+          "slug": "komatsu"
+        },
+        {
+          "display": "金沢学院大附",
+          "score": 9,
+          "won": true,
+          "innings": [
+            0,
+            1,
+            0,
+            2,
+            1,
+            3,
+            2,
+            0
+          ],
+          "name": "金沢学院大附",
+          "slug": null
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-14",
+      "season": "autumn",
+      "round": "2回戦",
+      "venue": "金沢市民野球場",
+      "teams": [
+        {
+          "display": "金沢泉丘",
+          "score": 2,
+          "won": false,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "金沢泉丘高校",
+          "slug": "kanazawaizumigaoka"
+        },
+        {
+          "display": "金沢桜丘",
+          "score": 3,
+          "won": true,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松大谷",
+          "score": 21,
+          "won": true,
+          "innings": [
+            4,
+            0,
+            5,
+            9,
+            3
+          ],
+          "name": "小松大谷",
+          "slug": null
+        },
+        {
+          "display": "金沢二水",
+          "score": 1,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "name": "金沢二水高校",
+          "slug": "kanazawanisui"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-18",
+      "season": "autumn",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 6,
+          "won": true,
+          "innings": [
+            1,
+            0,
+            0,
+            0,
+            2,
+            1,
+            1,
+            0,
+            1
+          ],
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "県立工業",
+          "score": 3,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          "name": "石川県立工業高校",
+          "slug": "ishikawakenritsukogyo"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "日本航空石川",
+          "score": 1,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "name": "日本航空石川",
+          "slug": null
+        },
+        {
+          "display": "星稜",
+          "score": 2,
+          "won": true,
+          "innings": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "星稜",
+          "slug": null
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢学院大附",
+          "score": 3,
+          "won": true,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "name": "金沢学院大附",
+          "slug": null
+        },
+        {
+          "display": "羽咋工業",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "羽咋工業高校",
+          "slug": "hakuikogyo"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-19",
+      "season": "autumn",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢桜丘",
+          "score": 3,
+          "won": true,
+          "innings": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
+        },
+        {
+          "display": "大聖寺実業",
+          "score": 2,
+          "won": false,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "name": "大聖寺実業高校",
+          "slug": "daishojijitsugyo"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢北陵",
+          "score": 1,
+          "won": false,
+          "innings": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "金沢北陵高校",
+          "slug": "kanazawahokuryo"
+        },
+        {
+          "display": "北陸学院",
+          "score": 9,
+          "won": true,
+          "innings": [
+            3,
+            2,
+            1,
+            0,
+            0,
+            3
+          ],
+          "name": "北陸学院",
+          "slug": null
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "小松商業",
+          "score": 1,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "name": "小松商業高校",
+          "slug": "komatsushogyo"
+        },
+        {
+          "display": "門前",
+          "score": 8,
+          "won": true,
+          "innings": [
+            1,
+            2,
+            0,
+            0,
+            2,
+            2,
+            1
+          ],
+          "name": "門前高校",
+          "slug": "monzen"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-20",
+      "season": "autumn",
+      "round": "3回戦",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "翠星",
+          "score": 1,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "name": "翠星高校",
+          "slug": "suisei"
+        },
+        {
+          "display": "金沢商業",
+          "score": 22,
+          "won": true,
+          "innings": [
+            10,
+            4,
+            2,
+            6
+          ],
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢桜丘",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "金沢桜丘高校",
+          "slug": "kanazawasakuragaoka"
+        },
+        {
+          "display": "小松大谷",
+          "score": 7,
+          "won": true,
+          "innings": [
+            1,
+            1,
+            2,
+            0,
+            0,
+            0,
+            3
+          ],
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-22",
+      "season": "autumn",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 5,
+          "won": true,
+          "innings": [
+            0,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "金沢学院大附",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "金沢学院大附",
+          "slug": null
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢商業",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "金沢商業高校",
+          "slug": "kanazawashogyo"
+        },
+        {
+          "display": "星稜",
+          "score": 7,
+          "won": true,
+          "innings": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            4
+          ],
+          "name": "星稜",
+          "slug": null
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-23",
+      "season": "autumn",
+      "round": "準々決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "北陸学院",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "北陸学院",
+          "slug": null
+        },
+        {
+          "display": "門前",
+          "score": 3,
+          "won": true,
+          "innings": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "name": "門前高校",
+          "slug": "monzen"
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-26",
+      "season": "autumn",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "門前",
+          "score": 0,
+          "won": false,
+          "innings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "門前高校",
+          "slug": "monzen"
+        },
+        {
+          "display": "小松大谷",
+          "score": 6,
+          "won": true,
+          "innings": [
+            4,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-26",
+      "season": "autumn",
+      "round": "準決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 5,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            1,
+            1
+          ],
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "星稜",
+          "score": 4,
+          "won": false,
+          "innings": [
+            0,
+            1,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "星稜",
+          "slug": null
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-27",
+      "season": "autumn",
+      "round": "決勝",
+      "venue": "石川県立野球場",
+      "teams": [
+        {
+          "display": "金沢",
+          "score": 4,
+          "won": false,
+          "innings": [
+            1,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "金沢",
+          "slug": null
+        },
+        {
+          "display": "小松大谷",
+          "score": 13,
+          "won": true,
+          "innings": [
+            0,
+            0,
+            0,
+            3,
+            3,
+            7,
+            0,
+            0
+          ],
+          "name": "小松大谷",
+          "slug": null
+        }
+      ],
+      "tournament": "第155回北信越地区高等学校野球石川県大会（令和8年度秋季）"
+    },
+    {
+      "date": "2026-09-05",
+      "season": "autumn",
       "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
       "round": "1回戦",
       "venue": "石川県立野球場",
@@ -40441,60 +42040,6 @@
           "won": false,
           "name": "金沢大学附属",
           "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-05",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "1回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "能登",
-          "score": 7,
-          "won": false,
-          "name": "能登高校",
-          "slug": "noto"
-        },
-        {
-          "display": "鵬学園",
-          "score": 14,
-          "won": true,
-          "name": "鵬学園",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-05",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "1回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "小松",
-          "score": 12,
-          "won": true,
-          "name": "小松高校",
-          "slug": "komatsu"
-        },
-        {
-          "display": "金沢錦丘",
-          "score": 5,
-          "won": false,
-          "name": "金沢錦丘高校",
-          "slug": "kanazawanishikigaoka"
         }
       ],
       "source": {
@@ -40530,141 +42075,6 @@
       }
     },
     {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "遊学館",
-          "score": 2,
-          "won": false,
-          "name": "遊学館",
-          "slug": null
-        },
-        {
-          "display": "星稜",
-          "score": 3,
-          "won": true,
-          "name": "星稜",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "日本航空石川",
-          "score": 7,
-          "won": true,
-          "name": "日本航空石川",
-          "slug": null
-        },
-        {
-          "display": "石川高専",
-          "score": 0,
-          "won": false,
-          "name": "石川工業高専",
-          "slug": "ishikawakogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "2回戦",
-      "venue": "末広野球場（弁慶スタジアム）",
-      "teams": [
-        {
-          "display": "翠星",
-          "score": 8,
-          "won": true,
-          "name": "翠星高校",
-          "slug": "suisei"
-        },
-        {
-          "display": "鵬学園",
-          "score": 6,
-          "won": false,
-          "name": "鵬学園",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "2回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "金沢商業",
-          "score": 7,
-          "won": true,
-          "name": "金沢商業高校",
-          "slug": "kanazawashogyo"
-        },
-        {
-          "display": "羽咋",
-          "score": 1,
-          "won": false,
-          "name": "羽咋高校",
-          "slug": "hakui"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "2回戦",
-      "venue": "末広野球場（弁慶スタジアム）",
-      "teams": [
-        {
-          "display": "羽咋工業",
-          "score": 10,
-          "won": true,
-          "name": "羽咋工業高校",
-          "slug": "hakuikogyo"
-        },
-        {
-          "display": "金沢龍谷",
-          "score": 3,
-          "won": false,
-          "name": "金沢龍谷",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
       "date": "2026-09-14",
       "season": "autumn",
       "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
@@ -40692,114 +42102,6 @@
       }
     },
     {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "輪島",
-          "score": 0,
-          "won": false,
-          "name": "輪島高校",
-          "slug": "wajima"
-        },
-        {
-          "display": "県立工業",
-          "score": 6,
-          "won": true,
-          "name": "石川県立工業高校",
-          "slug": "ishikawakenritsukogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "七尾",
-          "score": 0,
-          "won": false,
-          "name": "七尾高校",
-          "slug": "nanao"
-        },
-        {
-          "display": "金沢",
-          "score": 7,
-          "won": true,
-          "name": "金沢",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-19",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "3回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "星稜",
-          "score": 2,
-          "won": true,
-          "name": "星稜",
-          "slug": null
-        },
-        {
-          "display": "日本航空石川",
-          "score": 1,
-          "won": false,
-          "name": "日本航空石川",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-20",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "3回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "翠星",
-          "score": 1,
-          "won": false,
-          "name": "翠星高校",
-          "slug": "suisei"
-        },
-        {
-          "display": "金沢商業",
-          "score": 22,
-          "won": true,
-          "name": "金沢商業高校",
-          "slug": "kanazawashogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
       "date": "2026-09-19",
       "season": "autumn",
       "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
@@ -40827,60 +42129,6 @@
       }
     },
     {
-      "date": "2026-09-18",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "3回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "県立工業",
-          "score": 3,
-          "won": false,
-          "name": "石川県立工業高校",
-          "slug": "ishikawakenritsukogyo"
-        },
-        {
-          "display": "金沢",
-          "score": 6,
-          "won": true,
-          "name": "金沢",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-23",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "準々決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "星稜",
-          "score": 7,
-          "won": true,
-          "name": "星稜",
-          "slug": null
-        },
-        {
-          "display": "金沢商業",
-          "score": 0,
-          "won": false,
-          "name": "金沢商業高校",
-          "slug": "kanazawashogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
       "date": "2026-09-22",
       "season": "autumn",
       "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
@@ -40898,548 +42146,6 @@
           "display": "金沢",
           "score": 5,
           "won": true,
-          "name": "金沢",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-26",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "準決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "星稜",
-          "score": 4,
-          "won": false,
-          "name": "星稜",
-          "slug": null
-        },
-        {
-          "display": "金沢",
-          "score": 5,
-          "won": true,
-          "name": "金沢",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-06",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "1回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "金沢桜丘",
-          "score": 16,
-          "won": true,
-          "name": "金沢桜丘高校",
-          "slug": "kanazawasakuragaoka"
-        },
-        {
-          "display": "金沢西",
-          "score": 1,
-          "won": false,
-          "name": "金沢西高校",
-          "slug": "kanazawanishi"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-06",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "1回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "鹿西",
-          "score": 1,
-          "won": false,
-          "name": "鹿西高校",
-          "slug": "rokusei"
-        },
-        {
-          "display": "金沢泉丘",
-          "score": 11,
-          "won": true,
-          "name": "金沢泉丘高校",
-          "slug": "kanazawaizumigaoka"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-05",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "1回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "鶴来",
-          "score": 2,
-          "won": false,
-          "name": "鶴来高校",
-          "slug": "tsurugi"
-        },
-        {
-          "display": "津幡",
-          "score": 4,
-          "won": true,
-          "name": "津幡高校",
-          "slug": "tsubata"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-05",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "1回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "門前",
-          "score": 6,
-          "won": true,
-          "name": "門前高校",
-          "slug": "monzen"
-        },
-        {
-          "display": "小松工業",
-          "score": 3,
-          "won": false,
-          "name": "小松工業高校",
-          "slug": "komatsukogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "小松大谷",
-          "score": 10,
-          "won": true,
-          "name": "小松大谷",
-          "slug": null
-        },
-        {
-          "display": "小松明峰",
-          "score": 0,
-          "won": false,
-          "name": "小松明峰高校",
-          "slug": "komatsumeiho"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "2回戦",
-      "venue": "末広野球場（弁慶スタジアム）",
-      "teams": [
-        {
-          "display": "金沢二水",
-          "score": 2,
-          "won": true,
-          "name": "金沢二水高校",
-          "slug": "kanazawanisui"
-        },
-        {
-          "display": "飯田",
-          "score": 0,
-          "won": false,
-          "name": "飯田高校",
-          "slug": "iida"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-14",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "2回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "金沢桜丘",
-          "score": 3,
-          "won": true,
-          "name": "金沢桜丘高校",
-          "slug": "kanazawasakuragaoka"
-        },
-        {
-          "display": "金沢泉丘",
-          "score": 2,
-          "won": false,
-          "name": "金沢泉丘高校",
-          "slug": "kanazawaizumigaoka"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "2回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "小松商業",
-          "score": 30,
-          "won": true,
-          "name": "小松商業高校",
-          "slug": "komatsushogyo"
-        },
-        {
-          "display": "野々市明倫・松任",
-          "score": 0,
-          "won": false,
-          "name": "野々市明倫・松任",
-          "slug": null,
-          "combined": true
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "2回戦",
-      "venue": "末広野球場（弁慶スタジアム）",
-      "teams": [
-        {
-          "display": "津幡",
-          "score": 4,
-          "won": false,
-          "name": "津幡高校",
-          "slug": "tsubata"
-        },
-        {
-          "display": "門前",
-          "score": 5,
-          "won": true,
-          "name": "門前高校",
-          "slug": "monzen"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-13",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "2回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "金沢北陵",
-          "score": 4,
-          "won": true,
-          "name": "金沢北陵高校",
-          "slug": "kanazawahokuryo"
-        },
-        {
-          "display": "小松市立・寺井",
-          "score": 3,
-          "won": false,
-          "name": "小松市立・寺井",
-          "slug": null,
-          "combined": true
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-12",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "2回戦",
-      "venue": "金沢市民野球場",
-      "teams": [
-        {
-          "display": "北陸学院",
-          "score": 9,
-          "won": true,
-          "name": "北陸学院",
-          "slug": null
-        },
-        {
-          "display": "金沢市立工業",
-          "score": 5,
-          "won": false,
-          "name": "金沢市立工業高校",
-          "slug": "kanazawashiritsukogyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-18",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "3回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "小松大谷",
-          "score": 21,
-          "won": true,
-          "name": "小松大谷",
-          "slug": null
-        },
-        {
-          "display": "金沢二水",
-          "score": 1,
-          "won": false,
-          "name": "金沢二水高校",
-          "slug": "kanazawanisui"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-19",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "3回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "金沢桜丘",
-          "score": 3,
-          "won": true,
-          "name": "金沢桜丘高校",
-          "slug": "kanazawasakuragaoka"
-        },
-        {
-          "display": "大聖寺実業",
-          "score": 2,
-          "won": false,
-          "name": "大聖寺実業高校",
-          "slug": "daishojijitsugyo"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-20",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "3回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "小松商業",
-          "score": 1,
-          "won": false,
-          "name": "小松商業高校",
-          "slug": "komatsushogyo"
-        },
-        {
-          "display": "門前",
-          "score": 8,
-          "won": true,
-          "name": "門前高校",
-          "slug": "monzen"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-20",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "3回戦",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "金沢北陵",
-          "score": 1,
-          "won": false,
-          "name": "金沢北陵高校",
-          "slug": "kanazawahokuryo"
-        },
-        {
-          "display": "北陸学院",
-          "score": 9,
-          "won": true,
-          "name": "北陸学院",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-22",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "準々決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "小松大谷",
-          "score": 7,
-          "won": true,
-          "name": "小松大谷",
-          "slug": null
-        },
-        {
-          "display": "金沢桜丘",
-          "score": 0,
-          "won": false,
-          "name": "金沢桜丘高校",
-          "slug": "kanazawasakuragaoka"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-23",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "準々決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "門前",
-          "score": 3,
-          "won": true,
-          "name": "門前高校",
-          "slug": "monzen"
-        },
-        {
-          "display": "北陸学院",
-          "score": 0,
-          "won": false,
-          "name": "北陸学院",
-          "slug": null
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-26",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "準決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "小松大谷",
-          "score": 6,
-          "won": true,
-          "name": "小松大谷",
-          "slug": null
-        },
-        {
-          "display": "門前",
-          "score": 0,
-          "won": false,
-          "name": "門前高校",
-          "slug": "monzen"
-        }
-      ],
-      "source": {
-        "name": "HSB flash",
-        "url": "https://ishikawa.hsbflash.jp/"
-      }
-    },
-    {
-      "date": "2026-09-27",
-      "season": "autumn",
-      "tournament": "2026年 秋季北信越地区高校野球 石川県大会",
-      "round": "決勝",
-      "venue": "石川県立野球場",
-      "teams": [
-        {
-          "display": "小松大谷",
-          "score": 13,
-          "won": true,
-          "name": "小松大谷",
-          "slug": null
-        },
-        {
-          "display": "金沢",
-          "score": 4,
-          "won": false,
           "name": "金沢",
           "slug": null
         }

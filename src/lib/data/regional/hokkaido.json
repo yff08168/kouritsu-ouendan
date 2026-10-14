@@ -2604,6 +2604,29 @@
       ]
     },
     {
+      "date": "2026-10-14",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北海道高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "白樺学園",
+          "score": 2,
+          "won": false,
+          "name": "白樺学園",
+          "slug": null
+        },
+        {
+          "display": "北海",
+          "score": 5,
+          "won": true,
+          "name": "北海",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2026-10-07",
       "season": "autumn",
       "tournament": "2026年 令和8年秋季北海道高等学校野球大会",
@@ -2784,6 +2807,29 @@
           "won": false,
           "name": "士別翔雲高校",
           "slug": "shibetsushoun"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "season": "autumn",
+      "tournament": "2026年 令和8年秋季北海道高等学校野球大会",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "武修館",
+          "score": 1,
+          "won": false,
+          "name": "武修館",
+          "slug": null
+        },
+        {
+          "display": "とわの森三愛",
+          "score": 4,
+          "won": true,
+          "name": "とわの森三愛",
+          "slug": null
         }
       ]
     },

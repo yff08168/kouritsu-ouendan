@@ -4,7 +4,7 @@
 import type { RegionalPickups } from "@/lib/regional-results";
 
 export const REGIONAL_PICKUPS: RegionalPickups = {
-  "latestDate": "2026-10-14",
+  "latestDate": "2026-10-15",
   "spotlightSeason": "autumn",
   "spotlight": [],
   "games": [

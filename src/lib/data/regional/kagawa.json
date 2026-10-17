@@ -29745,6 +29745,52 @@
       ]
     },
     {
+      "date": "2026-10-17",
+      "season": "autumn",
+      "tournament": "令和8年度(第79回)秋季四国地区高等学校野球 香川県大会",
+      "round": "3位決定戦",
+      "venue": "レクザムボールパーク丸亀（丸亀市民球場）",
+      "teams": [
+        {
+          "display": "尽誠学園",
+          "score": 5,
+          "won": true,
+          "name": "尽誠学園",
+          "slug": null
+        },
+        {
+          "display": "丸亀",
+          "score": 4,
+          "won": false,
+          "name": "丸亀高校",
+          "slug": "marugame"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "season": "autumn",
+      "tournament": "令和8年度(第79回)秋季四国地区高等学校野球 香川県大会",
+      "round": "決勝",
+      "venue": "レクザムボールパーク丸亀（丸亀市民球場）",
+      "teams": [
+        {
+          "display": "蓬莱",
+          "score": 3,
+          "won": false,
+          "name": "蓬莱",
+          "slug": null
+        },
+        {
+          "display": "寒川",
+          "score": 5,
+          "won": true,
+          "name": "寒川",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-13",
       "season": "autumn",
       "tournament": "令和7年度(第78回)秋季四国地区高等学校野球 香川県大会",

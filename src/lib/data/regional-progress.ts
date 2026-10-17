@@ -5,8 +5,8 @@ import type { RegionalProgressBoard } from "@/lib/regional-results";
 
 export const REGIONAL_PROGRESS: RegionalProgressBoard = {
   "season": "autumn",
-  "latestDate": "2026-10-15",
-  "generatedAt": "2026-10-16T15:17:17Z",
+  "latestDate": "2026-10-17",
+  "generatedAt": "2026-10-17T14:20:45Z",
   "districts": [
     {
       "slug": "nagano",
@@ -29,10 +29,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "done",
       "season": "autumn",
       "tournament": "令和8年度神奈川県高校野球秋季県大会",
-      "games": 82,
+      "games": 85,
       "publicGames": 53,
       "round": "決勝",
-      "latestDate": "2026-10-01",
+      "latestDate": "2026-10-17",
       "champion": {
         "display": "慶応",
         "slug": null
@@ -269,14 +269,17 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "kagawa",
       "district": "香川",
-      "state": "playing",
+      "state": "done",
       "season": "autumn",
       "tournament": "令和8年度(第79回)秋季四国地区高等学校野球 香川県大会",
-      "games": 32,
-      "publicGames": 27,
-      "round": "準決勝",
-      "latestDate": "2026-10-12",
-      "champion": null
+      "games": 34,
+      "publicGames": 28,
+      "round": "決勝",
+      "latestDate": "2026-10-17",
+      "champion": {
+        "display": "寒川",
+        "slug": null
+      }
     },
     {
       "slug": "shimane",
@@ -709,10 +712,10 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "playing",
       "season": "autumn",
       "tournament": "2026年 2026年秋季東京都高等学校野球大会",
-      "games": 48,
-      "publicGames": 21,
-      "round": "2回戦",
-      "latestDate": "2026-10-12",
+      "games": 52,
+      "publicGames": 22,
+      "round": "3回戦",
+      "latestDate": "2026-10-17",
       "champion": null
     }
   ]

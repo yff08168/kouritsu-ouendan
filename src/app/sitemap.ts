@@ -72,6 +72,65 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const now = new Date();
 
+  /*
+    ★★★**`lastmod` には「ほんとうに変わった日」を書く**（2026-10-18。**検索に戻すための手当て**）。
+
+    それまでは**11,779件のうち11,765件が「今日」**だった（毎回のビルドで `now` を入れていたため）。
+    ★★**Google は当てにならない `lastmod` を無視する。**
+    **9月29日〜10月11日の障害でクロールが1日480件から10〜50件まで落ちている**いま、
+    **「どこを見に来ればよいか」を伝えられる数少ない手段**なのに、全部が「今日」では区別が付かない。
+    ★**試合データから出せるものは出す**（地区・大会・学校・直接対決・甲子園・神宮）。
+    ★★**分からないものは書かない**（`undefined`）——
+    **1つでも当てにならない値があると、サイトマップ全体の `lastmod` が信用されなくなる。**
+    ★**毎日中身が変わるページ**（トップ・速報・進捗地図）**だけは `now` が事実。**
+  */
+  const asDate = (iso: string | null | undefined): Date | undefined => {
+    if (!iso) return undefined;
+    const d = new Date(`${iso.slice(0, 10)}T00:00:00Z`);
+    // ★**先の日付は書かない**（組み合わせ（未実施）の日付が混ざっても未来にならないように）
+    return Number.isNaN(d.getTime()) ? undefined : d > now ? now : d;
+  };
+  const keepLatest = (into: Map<string, string>, key: string, date: string | null) => {
+    if (!date) return;
+    const cur = into.get(key);
+    if (!cur || cur < date) into.set(key, date);
+  };
+
+  /*
+    ★**県のファイルはここで1度だけ読む。** 大会ページ・直接対決・学校の3か所が
+    同じ中身を見るので読み直さない（`getRegionalDistrict` は県ごとの動的 import）。
+  */
+  const districtEntries = await Promise.all(
+    ALL_DISTRICT_SLUGS.map(async (slug) => [slug, await getRegionalDistrict(slug)] as const),
+  );
+  /** 地区 slug → その地区でいちばん新しい試合の日付 */
+  const districtLast = new Map<string, string>();
+  /** 学校 slug → その学校のいちばん新しい試合の日付 */
+  const schoolLast = new Map<string, string>();
+  for (const [slug, district] of districtEntries) {
+    for (const game of district?.games ?? []) {
+      if (!game.date) continue;
+      keepLatest(districtLast, slug, game.date);
+      for (const team of game.teams) {
+        if (team.slug) keepLatest(schoolLast, team.slug, game.date);
+      }
+    }
+  }
+  const newest = (dates: (string | null | undefined)[]) =>
+    asDate(dates.filter((d): d is string => Boolean(d)).sort().at(-1));
+  /** 地方大会でいちばん新しい試合の日付（一覧ページ用） */
+  const regionalLast = newest([...districtLast.values()]);
+
+  // ★**全国大会は生成物を読むだけ**なので、ここで1度だけ組み立てて下でも使う
+  const koshienTournaments = listKoshienTournaments();
+  const jinguTournaments = listJinguTournaments();
+  const nationalLast = newest(
+    [...koshienTournaments, ...jinguTournaments].map((t) => t.lastDate),
+  );
+  /** 年（文字列） → その年の甲子園でいちばん新しい試合の日付 */
+  const koshienYearLast = new Map<string, string>();
+  for (const t of koshienTournaments) keepLatest(koshienYearLast, String(t.year), t.lastDate);
+
   const staticPages: MetadataRoute.Sitemap = [
     { url: url("/"), lastModified: now, changeFrequency: "daily", priority: 1 },
     /*
@@ -80,21 +139,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       始めるときはこの行と、下の `newsPages` を戻す。
       { url: url("/news"), lastModified: now, changeFrequency: "daily", priority: 0.9 },
     */
-    { url: url("/schools"), lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: url("/rankings"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: url("/phenomenon"), lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: url("/features"), lastModified: now, changeFrequency: "weekly", priority: 0.7 },
-    { url: url("/prefectures"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: url("/schools"), lastModified: regionalLast, changeFrequency: "weekly", priority: 0.9 },
+    // ★**順位・公立旋風・特集は「いつ変わったか」を持っていない**ので `lastmod` を書かない
+    { url: url("/rankings"), changeFrequency: "monthly", priority: 0.8 },
+    { url: url("/phenomenon"), changeFrequency: "weekly", priority: 0.8 },
+    { url: url("/features"), changeFrequency: "weekly", priority: 0.7 },
+    { url: url("/prefectures"), lastModified: regionalLast, changeFrequency: "monthly", priority: 0.7 },
     // 全国大会（2026-08-26 追加）。大会ごとのページは下の nationalPages
-    { url: url("/koshien"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: url("/koshien"), lastModified: nationalLast, changeFrequency: "monthly", priority: 0.8 },
     // ★**公立高校の甲子園出場校（年別）**（2026-09-21）。年ページは下の publicYearPages
-    { url: url("/koshien/public"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: url("/koshien/public/champions"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: url("/koshien/public"), lastModified: nationalLast, changeFrequency: "monthly", priority: 0.8 },
+    { url: url("/koshien/public/champions"), lastModified: nationalLast, changeFrequency: "monthly", priority: 0.7 },
     // ★**甲子園の歴代優勝校（私立も含む全大会）**（2026-09-21）
-    { url: url("/koshien/champions"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    // ★**ルールと制度の解説**（2026-09-21）。各ページは下の guidePages
-    { url: url("/guide"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: url("/jingu"), lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: url("/koshien/champions"), lastModified: nationalLast, changeFrequency: "monthly", priority: 0.8 },
+    // ★**ルールと制度の解説**（2026-09-21）。各ページは下の guidePages（`checkedOn` が最終確認日）
+    {
+      url: url("/guide"),
+      lastModified: newest(GUIDES.map((g) => g.checkedOn)),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    { url: url("/jingu"), lastModified: nationalLast, changeFrequency: "monthly", priority: 0.6 },
     // 地方大会の進捗。大会中は毎日変わる
     { url: url("/regional"), lastModified: now, changeFrequency: "daily", priority: 0.8 },
     /*
@@ -111,18 +176,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     })),
     // ★**年別アーカイブ**（2026-08-29 追加）。年ページは下でまとめて足す
-    { url: url("/archive"), lastModified: now, changeFrequency: "weekly", priority: 0.7 },
-    { url: url("/about"), lastModified: now, changeFrequency: "yearly", priority: 0.3 },
-    { url: url("/contact"), lastModified: now, changeFrequency: "yearly", priority: 0.3 },
-    { url: url("/privacy"), lastModified: now, changeFrequency: "yearly", priority: 0.1 },
-    { url: url("/terms"), lastModified: now, changeFrequency: "yearly", priority: 0.1 },
+    { url: url("/archive"), lastModified: regionalLast, changeFrequency: "weekly", priority: 0.7 },
+    // ★**手で書く4ページは「いつ直したか」を持っていない**ので `lastmod` を書かない
+    { url: url("/about"), changeFrequency: "yearly", priority: 0.3 },
+    { url: url("/contact"), changeFrequency: "yearly", priority: 0.3 },
+    { url: url("/privacy"), changeFrequency: "yearly", priority: 0.1 },
+    { url: url("/terms"), changeFrequency: "yearly", priority: 0.1 },
   ];
 
   // ランキングは検索条件（?season= など）を持つが、正規URLは条件なしの形にしてある。
   // sitemap にも条件なしだけを載せる。
   const rankingPages: MetadataRoute.Sitemap = RANKINGS.map((r) => ({
     url: url(`/rankings/${r.slug}`),
-    lastModified: now,
+    lastModified: nationalLast,
     changeFrequency: "monthly",
     priority: 0.7,
   }));
@@ -130,7 +196,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // ★**地方大会だけの2地区（北海道・東京）も載せる**（2026-09-05 その2）
   const prefecturePages: MetadataRoute.Sitemap = ALL_DISTRICT_SLUGS.map((slug) => ({
     url: url(`/prefectures/${slug}`),
-    lastModified: now,
+    lastModified: asDate(districtLast.get(slug)),
     changeFrequency: "weekly",
     priority: 0.6,
   }));
@@ -142,20 +208,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ★**`getRegionalDistrict` は県ごとの動的 import** なので、
     ここで全県を読んでも他のページには入らない。
   */
-  const tournamentPages: MetadataRoute.Sitemap = (
-    await Promise.all(
-      ALL_DISTRICT_SLUGS.map(async (slug) => {
-        const district = await getRegionalDistrict(slug);
-        if (!district) return [];
-        return listTournaments(district).map((t) => ({
-          url: url(`/prefectures/${slug}/${t.slug}`),
-          lastModified: now,
-          changeFrequency: "weekly" as const,
-          priority: 0.6,
-        }));
-      }),
-    )
-  ).flat();
+  const tournamentPages: MetadataRoute.Sitemap = districtEntries.flatMap(
+    ([slug, district]) =>
+      district
+        ? listTournaments(district).map((t) => ({
+            url: url(`/prefectures/${slug}/${t.slug}`),
+            // ★**終わった大会はその最終日から変わらない**（日付の無い大会は書かない）
+            lastModified: asDate(t.lastDate),
+            changeFrequency: "weekly" as const,
+            priority: 0.6,
+          }))
+        : [],
+  );
 
   /*
     ★**全国大会の大会ページ**（2026-08-26 追加）。
@@ -164,15 +228,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ★**生成物を読むだけ**なのでDBには当たらない。
   */
   const nationalPages: MetadataRoute.Sitemap = [
-    ...listKoshienTournaments().map((t) => ({
+    ...koshienTournaments.map((t) => ({
       url: url(`/koshien/${t.slug}`),
-      lastModified: now,
+      lastModified: asDate(t.lastDate),
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
-    ...listJinguTournaments().map((t) => ({
+    ...jinguTournaments.map((t) => ({
       url: url(`/jingu/${t.slug}`),
-      lastModified: now,
+      lastModified: asDate(t.lastDate),
       changeFrequency: "monthly" as const,
       priority: 0.5,
     })),
@@ -189,7 +253,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     koshienNameIndex.find(d, p),
   ).map((y) => ({
     url: url(`/koshien/public/${y.year}`),
-    lastModified: now,
+    // ★**その年の甲子園が終わった日**（中身はその年の出場校なので、以後は変わらない）
+    lastModified: asDate(koshienYearLast.get(String(y.year))),
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
@@ -209,7 +274,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   */
   const archivePages: MetadataRoute.Sitemap = (await listArchiveYears()).map((y) => ({
     url: url(`/archive/${y.year}`),
-    lastModified: now,
+    /*
+      ★**今年の分だけは「いちばん新しい試合の日」**（まだ増える）。
+      ★**過去の年は書かない** —— 遡って集めた試合が入れば変わるので、
+      「この日から変わっていない」とは言えない。
+    */
+    lastModified: y.year === now.getUTCFullYear() ? regionalLast : undefined,
     changeFrequency: "weekly" as const,
     priority: 0.6,
   }));
@@ -233,36 +303,36 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ★**1回の組までは広げない**（上の理由）。
     ★**戻すならここの数字だけ。**
   */
-  const versusPages: MetadataRoute.Sitemap = (
-    await Promise.all(
-      PREFECTURES.map(async (p) => {
-        const district = await getRegionalDistrict(p.slug);
-        if (!district) return [];
-        const pairs = new Map<string, number>();
-        for (const game of district.games) {
-          const [x, y] = game.teams;
-          if (!x?.slug || !y?.slug || x.combined || y.combined) continue;
-          const key = [x.slug, y.slug].sort().join("	");
-          pairs.set(key, (pairs.get(key) ?? 0) + 1);
-        }
-        return [...pairs.entries()]
-          .filter(([, n]) => n >= 2)
-          .map(([key]) => {
-            const [x, y] = key.split("	");
-            return {
-              url: url(vsPath(x, y)),
-              lastModified: now,
-              changeFrequency: "monthly" as const,
-              priority: 0.5,
-            };
-          });
-      }),
-    )
-  ).flat();
+  const versusDistricts = new Set(PREFECTURES.map((p) => p.slug));
+  const versusPages: MetadataRoute.Sitemap = districtEntries.flatMap(([slug, district]) => {
+    if (!district || !versusDistricts.has(slug)) return [];
+    const pairs = new Map<string, number>();
+    // ★**その組がいちばん最後に当たった日**（`lastmod` に使う）
+    const pairLast = new Map<string, string>();
+    for (const game of district.games) {
+      const [x, y] = game.teams;
+      if (!x?.slug || !y?.slug || x.combined || y.combined) continue;
+      const key = [x.slug, y.slug].sort().join("	");
+      pairs.set(key, (pairs.get(key) ?? 0) + 1);
+      keepLatest(pairLast, key, game.date);
+    }
+    return [...pairs.entries()]
+      .filter(([, n]) => n >= 2)
+      .map(([key]) => {
+        const [x, y] = key.split("	");
+        return {
+          url: url(vsPath(x, y)),
+          lastModified: asDate(pairLast.get(key)),
+          changeFrequency: "monthly" as const,
+          priority: 0.5,
+        };
+      });
+  });
 
   const schoolPages: MetadataRoute.Sitemap = schoolSlugs.map((slug) => ({
     url: url(`/schools/${slug}`),
-    lastModified: now,
+    // ★**その学校のいちばん新しい試合の日**（地方大会に1試合も無い学校は書かない）
+    lastModified: asDate(schoolLast.get(slug)),
     changeFrequency: "weekly",
     priority: 0.8,
   }));
@@ -271,16 +341,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   //   `getAllNewsSlugs` は残してあるので、戻すのはここを使う側だけ。
   void newsSlugs;
 
+  /*
+    ★**公立旋風と特集は `lastmod` を書かない**（2026-10-18）——
+    **slug しか取っていないので「いつ直したか」が分からない。**
+    書くなら `updated_at` も一緒に取ること（当てずっぽうの日付は書かない）。
+  */
   const phenomenonPages: MetadataRoute.Sitemap = phenomenonSlugs.map((slug) => ({
     url: url(`/phenomenon/${slug}`),
-    lastModified: now,
     changeFrequency: "monthly",
     priority: 0.7,
   }));
 
   const featurePages: MetadataRoute.Sitemap = featureSlugs.map((slug) => ({
     url: url(`/features/${slug}`),
-    lastModified: now,
     changeFrequency: "monthly",
     priority: 0.6,
   }));

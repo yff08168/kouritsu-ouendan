@@ -4,7 +4,7 @@
 import type { RegionalPickups } from "@/lib/regional-results";
 
 export const REGIONAL_PICKUPS: RegionalPickups = {
-  "latestDate": "2026-10-18",
+  "latestDate": "2026-10-19",
   "spotlightSeason": "autumn",
   "spotlight": [],
   "games": [
@@ -15,7 +15,7 @@ export const REGIONAL_PICKUPS: RegionalPickups = {
       "sourceUrl": "https://tokyo.hsbflash.jp/",
       "date": "2026-10-18",
       "season": "autumn",
-      "tournament": "2026年 2026年秋季東京都高等学校野球大会",
+      "tournament": "2026年 秋季東京都高等学校野球大会",
       "round": "3回戦",
       "teams": [
         {

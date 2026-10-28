@@ -72,9 +72,21 @@ const TOURNAMENT_NO = YEAR - 1918;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function fetchText(url) {
+  let lastError = null;
   for (let attempt = 0; attempt < 4; attempt++) {
     if (attempt > 0) await sleep(3000 * attempt);
-    const res = await fetch(url, { headers: UA });
+    // ★接続そのものが失敗したとき（`fetch failed`）も 5xx と同じく試し直す。
+    //   2026-10-27 から GitHub Actions の環境だけ高野連に繋がらない回があり
+    //   （ConnectTimeoutError）、1回の失敗で実行ごと落ちていた。
+    //   試し直しても繋がらなければ今までどおり落とす（黙って成功にしない）。
+    let res;
+    try {
+      res = await fetch(url, { headers: UA });
+    } catch (e) {
+      lastError = e;
+      console.warn(`⚠️ ${url} に接続できません（${attempt + 1} 回目）: ${e.cause?.code ?? e.message}`);
+      continue;
+    }
     if (res.ok) {
       await sleep(1200); // 相手のサーバーに負担をかけない
       return res.text();
@@ -84,7 +96,7 @@ async function fetchText(url) {
       throw new Error(`${url} → HTTP ${res.status}`);
     }
   }
-  throw new Error(`${url} → 取得できません`);
+  throw new Error(`${url} → 取得できません`, lastError ? { cause: lastError } : undefined);
 }
 
 /** タグを落として素のテキストにする */

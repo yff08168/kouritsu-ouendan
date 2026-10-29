@@ -84,11 +84,33 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     **1つでも当てにならない値があると、サイトマップ全体の `lastmod` が信用されなくなる。**
     ★**毎日中身が変わるページ**（トップ・速報・進捗地図）**だけは `now` が事実。**
   */
+  /*
+    ★★★**1970年より前の日付は書かない**（2026-10-29。**Search Console のサイトマップに
+    「無効な日付」が 58 件出ていた**）。
+
+    ★**Google の lastmod は Unix 時間が下限**で、**1970-01-01 より前は受け取らない。**
+    甲子園は1915年から収録しているので、`t.lastDate` をそのまま入れると
+    `/koshien/1915-summer` が `1915-08-23` になる。
+    ★**本番のサイトマップを数えたら、1970年より前のURLはちょうど 58 件**で、
+    Search Console の件数と一致した。
+
+    ★★**埋めずに落とす**（`undefined`）—— **その頁がいつ変わったかは持っていない。**
+    1970-01-01 のような作り物の日付を書くと、上の決めごと（分からないものは書かない）に反する。
+    ★**失うものは無い** —— 100年前の大会の頁はもともと再クロールの優先度がいちばん低く、
+    `lastmod` が無ければ Google が自分で判断する。
+    ★★**1970年以降は触らない。** 1962年の大会に `1962-08-xx` と書くのは
+    「古い＝急いで見に来なくてよい」を正しく伝えており、**少ないクロール予算を
+    新しい頁に回すために効いている。**
+  */
+  const LASTMOD_FLOOR = Date.UTC(1970, 0, 1);
   const asDate = (iso: string | null | undefined): Date | undefined => {
     if (!iso) return undefined;
     const d = new Date(`${iso.slice(0, 10)}T00:00:00Z`);
+    if (Number.isNaN(d.getTime())) return undefined;
+    // ★**1970年より前は Google が受け取らない**（上の注記）
+    if (d.getTime() < LASTMOD_FLOOR) return undefined;
     // ★**先の日付は書かない**（組み合わせ（未実施）の日付が混ざっても未来にならないように）
-    return Number.isNaN(d.getTime()) ? undefined : d > now ? now : d;
+    return d > now ? now : d;
   };
   const keepLatest = (into: Map<string, string>, key: string, date: string | null) => {
     if (!date) return;

@@ -41827,5 +41827,46 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-12-06",
+      "season": "autumn",
+      "tournament": "秋季関東地区高校野球 山梨県大会",
+      "round": "1回戦",
+      "venue": "小瀬スポーツ公園山日ＹＢＳ球場",
+      "teams": [
+        {
+          "display": "青州",
+          "name": "青州",
+          "slug": null
+        },
+        {
+          "display": "巨摩",
+          "name": "巨摩高校",
+          "slug": "koma"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-13",
+      "season": "autumn",
+      "tournament": "秋季関東地区高校野球 山梨県大会",
+      "round": "1回戦",
+      "venue": "小瀬スポーツ公園山日ＹＢＳ球場",
+      "teams": [
+        {
+          "display": "北杜・韮崎",
+          "name": "北杜・韮崎",
+          "slug": null,
+          "combined": true
+        },
+        {
+          "display": "韮崎工業",
+          "name": "韮崎工業高校",
+          "slug": "nirasakikogyo"
+        }
+      ]
+    }
   ]
 }

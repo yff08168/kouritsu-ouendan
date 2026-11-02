@@ -61,11 +61,6 @@ const TIERS = [
     rank: (u) => ({ autumn: 0, summer: 1, spring: 2 }[u.match(/2026-(\w+)/)[1]] ?? 9),
   },
   {
-    name: "明治神宮大会",
-    match: (u) => /\/jingu\/\d{4}$/.test(u),
-    rank: (u) => -Number(u.match(/(\d{4})$/)[1]),
-  },
-  {
     name: "去年の地方大会",
     match: (u) => /\/prefectures\/[a-z-]+\/2025-(autumn|summer|spring)/.test(u),
     rank: (u) => ({ autumn: 0, summer: 1, spring: 2 }[u.match(/2025-(\w+)/)[1]] ?? 9),
@@ -74,6 +69,17 @@ const TIERS = [
     name: "甲子園の大会",
     match: (u) => /\/koshien\/\d{4}-(spring|summer)$/.test(u),
     rank: (u) => -Number(u.match(/(\d{4})-/)[1]),
+  },
+  // ★★**明治神宮はいちばん下**（2026-11-02 に測って下げた）——
+  //   **11月は神宮の季節**なので一度いちばん上へ上げたが、
+  //   **7件を検査したら7件とも登録済み**（2025・2024・2023・2022・2021・2014・2009）。
+  //   ★**登録済みばかりの種類を上に置くと、検査に時間を使って枠が1件も減らない**
+  //   （10-31 に年別アーカイブで踏んだのと同じ）。
+  //   ★**季節で上げ直さないこと。** 上げるなら先に何件か検査して、未登録が出てからにする。
+  {
+    name: "明治神宮大会",
+    match: (u) => /\/jingu\/\d{4}$/.test(u),
+    rank: (u) => -Number(u.match(/(\d{4})$/)[1]),
   },
 ];
 

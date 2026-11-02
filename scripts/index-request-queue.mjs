@@ -43,6 +43,17 @@ const SITEMAP = "https://kouritsu-ouendan.com/sitemap.xml";
 //   年別アーカイブは実測5枚とも登録済み、`/koshien/public/<年>` は2017年以外すべて未登録だった。
 //   **登録済みばかりの種類を上に置くと、検査に時間を使って枠が1件も減らない。**
 const TIERS = [
+  // ★★**今年の地方大会がいちばん上**（2026-11-03 に測って上げた）——
+  //   **16枚を検査して10枚が未登録**（うち9枚は一度もクロールされていない）。
+  //   ★**大会ページは実測の流入1位**（`/prefectures/tokushima/2026-spring` 表示158回）で、
+  //   いま開催中の秋季大会そのものなので、いちばん先に拾われてほしい。
+  //   ★登録済みだったのは 愛知・千葉・愛媛・福岡・北海道・兵庫 の6枚。
+  {
+    name: "今年の地方大会",
+    match: (u) => /\/prefectures\/[a-z-]+\/2026-(autumn|summer|spring)/.test(u),
+    // 秋 → 夏 → 春（新しい大会から）
+    rank: (u) => ({ autumn: 0, summer: 1, spring: 2 }[u.match(/2026-(\w+)/)[1]] ?? 9),
+  },
   {
     name: "公立の甲子園出場（年別）",
     match: (u) => /\/koshien\/public\/\d{4}$/.test(u),
@@ -53,12 +64,6 @@ const TIERS = [
     match: (u) => /\/archive\/\d{4}$/.test(u),
     // 新しい年ほど上
     rank: (u) => -Number(u.match(/(\d{4})$/)[1]),
-  },
-  {
-    name: "今年の地方大会",
-    match: (u) => /\/prefectures\/[a-z-]+\/2026-(autumn|summer|spring)/.test(u),
-    // 秋 → 夏 → 春（新しい大会から）
-    rank: (u) => ({ autumn: 0, summer: 1, spring: 2 }[u.match(/2026-(\w+)/)[1]] ?? 9),
   },
   {
     name: "去年の地方大会",

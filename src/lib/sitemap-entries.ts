@@ -21,18 +21,65 @@ import { vsPath } from "@/lib/head-to-head";
 import { getRegionalSchoolSlugs } from "@/lib/school-index";
 import { listArchiveYears } from "@/lib/archive";
 
-// sitemapもISRで作り直す。記事を追加したときに反映されるようにする。
-export const revalidate = 3600;
-
 const url = (path: string) => new URL(path, SITE.url).toString();
 
+/*
+  ★★★**サイトマップは種類ごとに分けてある**（2026-11-03。**1枚 → 5枚**）。
+
+  ★**なぜ分けたか** —— 障害でクロールが 1日480件 → 134件 に落ちたまま、
+  **未登録7,820件のうち7,010件が「検出 - インデックス未登録」**（見つけてはいるが
+  取りに来ていない）。**どの種類が順番待ちで止まっているのかが、1枚のままでは分からない。**
+  ★★**Search Console はサイトマップごとにインデックス状況を出す**ので、
+  分ければ「`/vs/` が本当に飢えているのか」を当て推量でなく数字で確かめられる。
+  ★**クロール予算そのものは増えない。** 増えるのは分かることだけ。
+
+  ★★**`/sitemap.xml` は「サイトマップ索引」になった**（`src/app/sitemap.xml/route.ts`）。
+  **GSC に登録済みのURLと robots.txt の行を変えずに済む**ので、送り直さなくても
+  Google が索引から子を見つける。★**この2つを別々に動かさないこと。**
+
+  ★**分け方は「GSC で見たい単位」**。件数の多い `schools` と `vs` を必ず独立させる。
+*/
+export const SITEMAP_GROUPS = [
+  { id: "main", label: "固定ページ・順位・解説・公立旋風・特集・年別アーカイブ" },
+  { id: "prefectures", label: "地区と地方大会" },
+  { id: "koshien", label: "甲子園・明治神宮の大会" },
+  { id: "schools", label: "学校" },
+  { id: "vs", label: "直接対決" },
+] as const;
+
+export type SitemapGroupId = (typeof SITEMAP_GROUPS)[number]["id"];
+
+export type SitemapGroups = Record<SitemapGroupId, MetadataRoute.Sitemap>;
+
+/*
+  ★★**5枚ぶんを1回の計算で作る**（2026-11-03）。
+  **Next は種類ごとに別のルートとして描く**ので、素直に書くと
+  **51県のファイル読みと21,508組の数え上げが5回**走る。
+  ★**60秒だけ憶える** —— 1回のビルドの5枚を1回にまとめるためのもの。
+  **永久に持たないこと**（サイトマップが更新されなくなる）。
+*/
+let memo: { at: number; value: Promise<SitemapGroups> } | null = null;
+const MEMO_MS = 60_000;
+
+export function sitemapGroups(): Promise<SitemapGroups> {
+  const now = Date.now();
+  if (memo && now - memo.at < MEMO_MS) return memo.value;
+  const value = buildSitemapGroups();
+  memo = { at: now, value };
+  // ★失敗を持ち越さない（次の要求でやり直す）
+  value.catch(() => {
+    if (memo?.value === value) memo = null;
+  });
+  return value;
+}
+
 /**
- * sitemap.xml をDBから動的に生成する。
+ * sitemap の中身をDBと生成物から組み立てる。
  *
  * 非公開のコンテンツはRLSで取得できないため、下書き記事のURLが
  * sitemapに載ることはない（アプリ側でstatusを除外する必要がない）。
  */
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+async function buildSitemapGroups(): Promise<SitemapGroups> {
   const [
     koshienSchoolSlugs,
     regionalSchoolSlugs,
@@ -380,18 +427,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  return [
-    ...staticPages,
-    ...rankingPages,
-    ...prefecturePages,
-    ...tournamentPages,
-    ...nationalPages,
-    ...publicYearPages,
-    ...guidePages,
-    ...archivePages,
-    ...versusPages,
-    ...schoolPages,
-    ...phenomenonPages,
-    ...featurePages,
-  ];
+  /*
+    ★**どの種類をどの枚に入れるか。**
+    ★★**ページを足したら、必ずどれかに入れること** —— どれにも入れないと
+    **索引からも子からも漏れる。** 1枚だったころと違い、合計を数えても気づけない。
+  */
+  return {
+    main: [
+      ...staticPages,
+      ...rankingPages,
+      ...guidePages,
+      ...archivePages,
+      ...phenomenonPages,
+      ...featurePages,
+    ],
+    prefectures: [...prefecturePages, ...tournamentPages],
+    koshien: [...nationalPages, ...publicYearPages],
+    schools: schoolPages,
+    vs: versusPages,
+  };
 }

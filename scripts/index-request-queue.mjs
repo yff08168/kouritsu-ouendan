@@ -4,7 +4,9 @@
 //   9/30〜10/11 の障害で Googlebot のクロールが 1日480件 → 10件 に落ちた。
 //   サイトマップに 11,779件あるのに 1日10件しか取りに来ないので、
 //   **自分から「ここを見に来て」と言う手段が URL 検査のリクエストしかない。**
-//   枠は1日およそ10件で、日付で戻る。
+//   ★★**枠は1日16件**（2026-11-03 に実測。**17件目で「割り当て量を超えています」**）。
+//   ★**検査そのものは枠を使わない。** 使うのは「インデックス登録をリクエスト」を押したときだけ
+//   なので、**先に何件でも検査して、未登録のものにだけ枠を使うこと。**
 //
 // ★やっていることは2つだけ
 //   ①本番のサイトマップから候補を作り、価値の高い順に並べる
@@ -148,7 +150,13 @@ async function main(argv) {
     if (kind !== "requested" && kind !== "indexed") {
       throw new Error("--record のあとは requested か indexed");
     }
-    const today = new Date().toISOString().slice(0, 10);
+    /*
+      ★★**日付は手元の時刻（日本時間）で付ける**（2026-11-03 に直した）——
+      `toISOString()` は UTC なので、**朝9時より前に記録すると前日の日付になる。**
+      **「今日もう何件やったか」を数える歯止めがすり抜ける。**
+    */
+    const d = new Date();
+    const today = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
     const urls = argv.slice(flag("record") + 2).filter((a) => a.startsWith("http"));
     if (urls.length === 0) throw new Error("URLが無い");
     for (const u of urls) state[kind][u] = today;

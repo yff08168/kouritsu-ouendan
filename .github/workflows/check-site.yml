@@ -1,0 +1,87 @@
+# ★★★サイトの死活監視（2026-11-03 に足した）。
+#
+# ★なぜ要るか —— 2026-09-30 から 10-11 まで、Supabase の転送量超過と Vercel の
+#   枠超えで全ページが 5xx を返していた。**12日間気づかなかった。**
+#   その結果 Googlebot のクロールが 1日480件 → 10件 に落ち、
+#   検索の表示回数が 1日1,200回 → ほぼ0 になった。**いまも戻っていない。**
+#   ★★AGENTS.md の「いちばん大事なのは二度目の障害を起こさないこと」はこれのこと。
+#
+# ★**30分おきに主要ページを叩き、200 でなければ失敗する。**
+#   GitHub は失敗した実行をメールで知らせるので、**半日で気づける。**
+#   ★一時的な通信の失敗で鳴かないよう、**1つのURLにつき3回まで試す**
+#   （毎回鳴る警報は本物の異常を埋もれさせる）。
+#
+# ★**中身まで見る** —— 枠超えのときは「200 を返すのに中身がエラー」もありうるので、
+#   ページには `公立応援団`、サイトマップには `<sitemapindex` があることまで確かめる。
+#
+# ★叩くのは30分に7URL。**キャッシュに載っているので費用は増えない。**
+name: サイトの死活監視
+
+on:
+  schedule:
+    # 30分おき（UTC。cron に時差は関係ない）
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 主要ページが生きているか
+        run: |
+          set -u
+          BASE=https://kouritsu-ouendan.com
+          # ★描き方の違うページを1枚ずつ（どれか1種類だけ壊れることがある）
+          declare -a TARGETS=(
+            "/|公立応援団"
+            "/prefectures/kanagawa|公立応援団"
+            "/schools/inayayoigaoka|公立応援団"
+            "/vs/fuefuki/kofukogyo|公立応援団"
+            "/prefectures/ehime/2025-autumn|公立応援団"
+            "/live/kanagawa|公立応援団"
+            "/sitemap.xml|<sitemapindex"
+          )
+          FAILED=0
+          {
+            echo "| ページ | 状態 | 秒 |"
+            echo "|---|---|---|"
+          } >> "$GITHUB_STEP_SUMMARY"
+          for t in "${TARGETS[@]}"; do
+            path="${t%%|*}"
+            needle="${t#*|}"
+            ok=0
+            code=""
+            secs=""
+            # ★一時的な失敗で鳴かないよう3回まで試す
+            for attempt in 1 2 3; do
+              body=$(mktemp)
+              out=$(curl -sS -m 30 -o "$body" -w '%{http_code} %{time_total}' \
+                     -A 'kouritsu-ouendan-uptime (+https://github.com/yff08168/kouritsu-ouendan)' \
+                     "$BASE$path" || echo "000 0")
+              code="${out%% *}"
+              secs="${out##* }"
+              if [ "$code" = "200" ] && grep -qF "$needle" "$body"; then
+                ok=1
+                rm -f "$body"
+                break
+              fi
+              rm -f "$body"
+              [ "$attempt" -lt 3 ] && sleep 10
+            done
+            if [ "$ok" = "1" ]; then
+              echo "| $path | OK ($code) | $secs |" >> "$GITHUB_STEP_SUMMARY"
+            else
+              echo "| $path | **異常 ($code)** | $secs |" >> "$GITHUB_STEP_SUMMARY"
+              echo "::error title=サイトが異常::$BASE$path が $code（中身の確認にも失敗）"
+              FAILED=1
+            fi
+          done
+          if [ "$FAILED" = "1" ]; then
+            echo "::error::主要ページが落ちている。Vercel と Supabase の枠（転送量）をまず見ること。"
+            exit 1
+          fi
+          echo "すべて正常"

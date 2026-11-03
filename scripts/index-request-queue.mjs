@@ -101,11 +101,26 @@ function saveState(state) {
 `);
 }
 
+async function fetchXml(url) {
+  const res = await fetch(url, { headers: { "user-agent": "kouritsu-ouendan/index-queue" } });
+  if (!res.ok) throw new Error(`サイトマップが取れない: ${res.status} ${url}`);
+  return res.text();
+}
+
+const locsOf = (xml) => [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+
+/*
+  ★★**`/sitemap.xml` はサイトマップ索引**（2026-11-03 に種類ごとの5枚へ分けた）。
+  **索引なら子を1枚ずつ辿ること** —— 辿らないと `<loc>` は子のURL5件しか無く、
+  **「候補が尽きた」と出て1件も進まない**（実際にそうなった。**警告も出ない**）。
+  ★**分けていないサイトマップでもそのまま動く**（`<sitemapindex` が無ければ今までどおり）。
+*/
 async function sitemapUrls() {
-  const res = await fetch(SITEMAP, { headers: { "user-agent": "kouritsu-ouendan/index-queue" } });
-  if (!res.ok) throw new Error(`サイトマップが取れない: ${res.status}`);
-  const xml = await res.text();
-  return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+  const xml = await fetchXml(SITEMAP);
+  if (!/<sitemapindex/.test(xml)) return locsOf(xml);
+  const out = [];
+  for (const child of locsOf(xml)) out.push(...locsOf(await fetchXml(child)));
+  return out;
 }
 
 function candidates(urls, state) {

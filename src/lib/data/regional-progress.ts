@@ -5,8 +5,8 @@ import type { RegionalProgressBoard } from "@/lib/regional-results";
 
 export const REGIONAL_PROGRESS: RegionalProgressBoard = {
   "season": "autumn",
-  "latestDate": "2026-11-01",
-  "generatedAt": "2026-11-04T18:30:57Z",
+  "latestDate": "2026-11-05",
+  "generatedAt": "2026-11-05T18:36:29Z",
   "districts": [
     {
       "slug": "nagano",
@@ -709,14 +709,17 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "tokyo",
       "district": "東京",
-      "state": "playing",
+      "state": "done",
       "season": "autumn",
-      "tournament": "2026年 2026年秋季東京都高等学校野球大会",
-      "games": 62,
+      "tournament": "2026年 秋季東京都高等学校野球大会",
+      "games": 63,
       "publicGames": 23,
-      "round": "準決勝",
-      "latestDate": "2026-11-01",
-      "champion": null
+      "round": "決勝",
+      "latestDate": "2026-11-05",
+      "champion": {
+        "display": "二松学舎大附",
+        "slug": null
+      }
     }
   ]
 };

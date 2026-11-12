@@ -1,7 +1,7 @@
 import { GuideLinkBox } from "@/components/guide/GuideLinkBox";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Trophy } from "lucide-react";
+import { ChevronRight, Trophy } from "lucide-react";
 
 import { Container } from "@/components/layout/Container";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
@@ -10,6 +10,7 @@ import { AdSlot } from "@/components/ads/AdSlot";
 
 import { finalists, listJinguTournaments } from "@/lib/national-tournaments";
 import { jinguPrefectureOf } from "@/lib/jingu-games";
+import { jinguFeatureYear } from "@/lib/jingu-live";
 import { getSchoolNameIndex } from "@/lib/queries/schools";
 
 /**
@@ -42,6 +43,13 @@ export default async function JinguIndexPage() {
 
   const totalGames = tournaments.reduce((sum, t) => sum + t.games.length, 0);
   const years = tournaments.map((t) => t.year);
+  /*
+    ★**その年の大会が生成物に入ったら案内を外す**（通常の大会ページに替わるので、
+    下の「大会をたどる」に並ぶ）。
+  */
+  const windowYear = jinguFeatureYear();
+  const featureYear =
+    windowYear !== null && !tournaments.some((t) => t.year === windowYear) ? windowYear : null;
 
   return (
     <Container className="pb-4">
@@ -67,6 +75,27 @@ export default async function JinguIndexPage() {
           {totalGames}試合を収録しています。
         </p>
       </header>
+
+      {featureYear !== null && (
+        /*
+          ★**特設ページへの入口は日付の窓だけで決める**（主催者のページは取りに行かない）。
+          取りに行くと `/jingu` の作り直しが5分ごとになる。窓は `jinguFeatureYear` にある。
+        */
+        <Link
+          href={`/jingu/${featureYear}`}
+          className="mt-4 flex min-h-11 items-center justify-between gap-3 rounded-xl border border-accent-500 bg-white px-4 py-3 hover:bg-navy-50"
+        >
+          <span className="min-w-0 flex-1">
+            <span className="block text-sm font-bold text-navy-800">
+              {featureYear}年の大会　組み合わせ・日程・結果
+            </span>
+            <span className="block text-xs text-ink-muted">
+              出場校と試合の結果を、大会の進み具合に合わせて載せています
+            </span>
+          </span>
+          <ChevronRight size={18} aria-hidden="true" className="shrink-0 text-accent-500" />
+        </Link>
+      )}
 
       <GuideLinkBox className="mt-4" slugs={["senbatsu-selection"]} />
 

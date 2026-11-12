@@ -9,6 +9,8 @@ import { LiveResultsCard } from "@/components/results/LiveResultsCard";
 import { RegionalResultsCard } from "@/components/results/RegionalResultsCard";
 import { ResultsTicker } from "@/components/results/ResultsTicker";
 import { LiveTodayCard } from "@/components/results/LiveTodayCard";
+import { JinguFeatureBanner } from "@/components/jingu/JinguFeatureBanner";
+import { jinguAnnounceYear } from "@/lib/jingu-live";
 import { SchoolCard } from "@/components/schools/SchoolCard";
 import { PrefectureMap } from "@/components/schools/PrefectureMap";
 import { PrefectureMapGuide } from "@/components/schools/PrefectureMapGuide";
@@ -52,6 +54,8 @@ export default async function HomePage() {
     fetchLiveDistricts().catch(() => []),
   ]);
   const liveToday = pickLiveToday(live);
+  // 明治神宮大会の特設ページの案内（日付の窓と生成物だけで決める。取りに行かない）
+  const jinguBannerYear = jinguAnnounceYear();
 
   /*
     「今夏の甲子園に出場している公立校」。
@@ -152,6 +156,17 @@ export default async function HomePage() {
       {liveToday.length > 0 && (
         <Container className="mt-4 sm:mt-5">
           <LiveTodayCard districts={liveToday} />
+        </Container>
+      )}
+
+      {/*
+        ★**明治神宮大会の特設ページへの入口**（2026-11-12。運営者の指示）。
+        **窓の外・その年が生成物に入ったあとは `null`**（`JinguFeatureBanner` の説明）なので、
+        空の `Container` だけが残らないよう、窓の判定は中ではなくここで見る。
+      */}
+      {jinguBannerYear !== null && (
+        <Container className="mt-4 sm:mt-5">
+          <JinguFeatureBanner year={jinguBannerYear} />
         </Container>
       )}
 

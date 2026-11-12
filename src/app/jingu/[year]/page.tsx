@@ -23,8 +23,15 @@ import { buildRegionalBracket } from "@/lib/regional-bracket";
 import { buildNationalLead } from "@/lib/national-lead";
 import { LeadText } from "@/components/common/LeadText";
 import { getSchoolNameIndex } from "@/lib/queries/schools";
+import { getJinguLive } from "@/lib/jingu-live";
+import { JinguSpecial, jinguSpecialMetadata } from "@/components/jingu/JinguSpecial";
 
-/** 1つの明治神宮大会のページ（`/jingu/<年>`）。作りは甲子園の大会ページと同じ */
+/**
+ * 1つの明治神宮大会のページ（`/jingu/<年>`）。作りは甲子園の大会ページと同じ。
+ *
+ * ★開催中の年だけは特設ページ（`JinguSpecial`）。主催者の日程表を取りに行くので、
+ * **そのページは `fetch` の期限（5分）で作り直される**（`force-dynamic` にしないこと）。
+ */
 export const revalidate = 3600;
 
 type Props = {
@@ -38,7 +45,11 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { year } = await params;
   const t = findJinguTournament(year);
-  if (!t) return { title: "大会が見つかりません" };
+  if (!t) {
+    // ★開催中の大会は生成物にまだ無い。特設ページ（`JinguSpecial`）が受ける
+    const live = await getJinguLive(Number(year));
+    return live ? jinguSpecialMetadata(live) : { title: "大会が見つかりません" };
+  }
 
   const f = finalists(t);
   const description = [
@@ -58,7 +69,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function JinguTournamentPage({ params }: Props) {
   const { year } = await params;
   const t = findJinguTournament(year);
-  if (!t) notFound();
+  if (!t) {
+    /*
+      ★★**開催中の大会は特設ページ。** 生成物（`jingu-games.json`）にその年が入ると
+      上の `findJinguTournament` が当たり、通常の大会ページに替わる。
+      ★今年の窓の外の年・主催者の表が取れない年は 404（任意の年で主催者を叩かない）。
+    */
+    const live = await getJinguLive(Number(year));
+    if (!live) notFound();
+    return <JinguSpecial live={live} />;
+  }
 
   const index = await getSchoolNameIndex("jingu");
   /*

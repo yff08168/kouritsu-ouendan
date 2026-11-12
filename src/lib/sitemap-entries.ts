@@ -13,6 +13,7 @@ import { getAllFeatureSlugs } from "@/lib/queries/features";
 import { getRegionalDistrict } from "@/lib/regional-results";
 import { listTournaments } from "@/lib/regional-tournaments";
 import { livePrefectures } from "@/lib/live/hsb";
+import { jinguFeatureYear } from "@/lib/jingu-live";
 import {
   listJinguTournaments,
   listKoshienTournaments,
@@ -229,6 +230,23 @@ async function buildSitemapGroups(): Promise<SitemapGroups> {
       priority: 0.7,
     },
     { url: url("/jingu"), lastModified: nationalLast, changeFrequency: "monthly", priority: 0.6 },
+    /*
+      ★**開催中の明治神宮大会の特設ページ**（2026-11-11）。**日付の窓だけで決める**
+      （`jinguFeatureYear`）。主催者のページを取りに行くと sitemap の作り直しが5分ごとになる。
+      ★その年の大会が生成物に入ったら、下の `nationalPages` が通常の大会ページとして載せる。
+    */
+    ...(() => {
+      const year = jinguFeatureYear();
+      if (year === null || jinguTournaments.some((t) => t.year === year)) return [];
+      return [
+        {
+          url: url(`/jingu/${year}`),
+          lastModified: now,
+          changeFrequency: "daily" as const,
+          priority: 0.7,
+        },
+      ];
+    })(),
     // 地方大会の進捗。大会中は毎日変わる
     { url: url("/regional"), lastModified: now, changeFrequency: "daily", priority: 0.8 },
     /*

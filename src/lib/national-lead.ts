@@ -17,9 +17,10 @@
  *     （AGENTS.md。199大会のうち43件で「出場校数 − 1 ≠ 試合数」になっている）
  */
 
-import type {
-  NationalTournament,
-  PublicEntrant,
+import {
+  entrantCallName,
+  type NationalTournament,
+  type PublicEntrant,
 } from "@/lib/national-tournaments";
 
 export type NationalLeadInput = {
@@ -106,10 +107,15 @@ export function buildNationalLead(input: NationalLeadInput): string[] {
     */
     const best = entrants[0];
     if (best && best.result !== "成績不明") {
+      /*
+        ★**旧校名・略称・閉校校は大会記事の呼び名で書く**（`entrantCallName`。2026-11-04）。
+        「愛知一中が優勝」を「旭丘高校が優勝」と書くと、同じ段落の第2段落（`f.champion`）と
+        呼び名がずれ、しかも時代が合わない。
+      */
       third.push(
         best.result === "優勝"
-          ? `${best.name}が優勝しました。`
-          : `もっとも勝ち進んだのは${best.name}で、${best.result}でした。`,
+          ? `${entrantCallName(best)}が優勝しました。`
+          : `もっとも勝ち進んだのは${entrantCallName(best)}で、${best.result}でした。`,
       );
     }
     paragraphs.push(third.join(""));

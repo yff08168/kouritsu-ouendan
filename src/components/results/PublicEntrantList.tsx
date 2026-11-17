@@ -16,6 +16,11 @@ import type { PublicEntrant } from "@/lib/national-tournaments";
  *
  * ★**成績が読めない学校は「成績不明」**と書く。
  *   **「初戦敗退」に混ぜないこと**（AGENTS.md）。
+ *
+ * ★★**学校ページが無い公立校（`slug` が null。閉校して DB に承継先が無い学校）は、
+ *   リンクにしない**（2026-11-04）。公立としては同じ並びに出し、校名の下に
+ *   「2022年閉校（青洲高校に統合）」のような一言を添える。
+ *   ★リンクにすると `/schools/null` という存在しないページへ案内してしまう。
  */
 export function PublicEntrantList({
   entrants,
@@ -30,24 +35,23 @@ export function PublicEntrantList({
 }) {
   return (
     <ul className="grid gap-2 sm:grid-cols-2">
-      {entrants.map((e) => (
-        <li key={e.slug}>
-          <Link
-            href={`/schools/${e.slug}`}
-            className="flex min-h-11 items-center gap-3 rounded-lg border border-line px-3 py-2 hover:bg-navy-50"
-          >
+      {entrants.map((e) => {
+        const badge = e.slug ? badges?.get(e.slug) : undefined;
+        const body = (
+          <>
             <span className="min-w-0 flex-1">
               <span className="block truncate text-sm font-bold text-accent-800">
                 {e.display}
-                {badges?.get(e.slug) && (
+                {badge && (
                   <span className="ml-1.5 rounded border border-accent-500 px-1 align-middle text-[0.625rem] font-medium text-accent-800">
-                    {badges.get(e.slug)}
+                    {badge}
                   </span>
                 )}
               </span>
               <span className="block truncate text-xs text-ink-faint">
                 {e.name}
                 {e.pref && <span className="ml-1">（{e.pref}）</span>}
+                {e.status && <span className="ml-1">・{e.status}</span>}
               </span>
             </span>
             <span className="shrink-0 text-right">
@@ -67,9 +71,25 @@ export function PublicEntrantList({
                 </span>
               )}
             </span>
-          </Link>
-        </li>
-      ))}
+          </>
+        );
+        return (
+          <li key={e.slug ?? `${e.display}:${e.name}`}>
+            {e.slug ? (
+              <Link
+                href={`/schools/${e.slug}`}
+                className="flex min-h-11 items-center gap-3 rounded-lg border border-line px-3 py-2 hover:bg-navy-50"
+              >
+                {body}
+              </Link>
+            ) : (
+              <div className="flex min-h-11 items-center gap-3 rounded-lg border border-line px-3 py-2">
+                {body}
+              </div>
+            )}
+          </li>
+        );
+      })}
     </ul>
   );
 }

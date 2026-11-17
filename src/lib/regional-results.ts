@@ -36,6 +36,12 @@ export type RegionalTeam = {
   name: string;
   /** 公立校なら slug。私立・県外・連合チームは null */
   slug: string | null;
+  /**
+   * ★★**公立だが学校ページが無い**（閉校して DB に承継先が無い学校など。2026-11-04）。
+   * `slug` は null のまま、**公立の色だけ付けてリンクは張らない**。
+   * 地方大会の生成物には入らない（全国大会の `toRegionalGames` だけが付ける）。
+   */
+  closed?: boolean;
   score: number;
   won: boolean;
   /**

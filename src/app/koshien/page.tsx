@@ -214,6 +214,8 @@ export default async function KoshienIndexPage() {
                 games: t.games.length,
                 champion,
                 championSlug: school?.slug ?? null,
+                // ★学校ページが無い公立校（閉校）も公立（2026-11-04）
+                championIsPublic: Boolean(school),
               };
             })}
           />

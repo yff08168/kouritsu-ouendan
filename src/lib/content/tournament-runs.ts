@@ -20,6 +20,8 @@
  *   ブラケットには載っておらず、試合単体の記事にしか無い。
  */
 
+import senpuRuns from "@/lib/data/senpu-runs.json";
+
 export type GameOutcome = "win" | "loss" | "draw";
 
 /**
@@ -114,7 +116,7 @@ export type TournamentRun = {
   schoolSlug: string;
   schoolName: string;
   year: number;
-  season: "spring" | "summer";
+  season: "spring" | "summer" | "autumn";
   tournamentName: string;
   /**
    * 見出し。既定は「甲子園での勝ち上がり」。
@@ -1146,11 +1148,26 @@ export const TOURNAMENT_RUNS: TournamentRun[] = [
   },
 ];
 
+/**
+ * 機械で取り出した勝ち上がり（2026-11-04〜）。
+ *
+ * ★ 上の `TOURNAMENT_RUNS` は手で書いたもの、こちらは `scripts/build-senpu.mjs` が
+ *   `data/senpu/` の記事の骨組みから作る生成物（`src/lib/data/senpu-runs.json`）。
+ *   **スコアを手で写すと必ず誤る**ので、サイトが持っている大会データ
+ *   （`koshien-games.json`・`regional/<地区>.json`）から機械的に取り出している。
+ *   直接編集しない。直すなら `data/senpu/` を直して作り直す。
+ * ★ 同じ slug が両方にあれば手書きが勝つ（手書きは運営者のスコアブックなど、機械では取れない中身を持つ）。
+ */
+const GENERATED_RUNS = senpuRuns as unknown as TournamentRun[];
+
 /** phenomena の slug から勝ち上がりを引く。無ければ undefined。 */
 export function getTournamentRun(
   phenomenonSlug: string,
 ): TournamentRun | undefined {
-  return TOURNAMENT_RUNS.find((run) => run.phenomenonSlug === phenomenonSlug);
+  return (
+    TOURNAMENT_RUNS.find((run) => run.phenomenonSlug === phenomenonSlug) ??
+    GENERATED_RUNS.find((run) => run.phenomenonSlug === phenomenonSlug)
+  );
 }
 
 /** 勝敗の集計。**敗戦数は画面に出さない方針なので勝ち数と引き分けだけ返す。** */

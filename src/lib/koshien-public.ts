@@ -31,9 +31,13 @@
  * ★ 公立が1校も結び付かない年はページを作らない
  *   旧制中学の校名は学校マスタに当たらないことが多く、そういう年のページは
  *   見出しだけの薄いページになる。**一覧にも載せない**（sitemap も同じ）。
+ *   ★2026-11-04 から旧制中学名・改称・閉校の公立校も索引が結ぶので（`school-name-index.ts`）、
+ *   **大会のあった全106年（1915〜2026年）がページになる**（それまでは1916・1917年が対象外だった）。
+ *   この規則は残してある（データが変わって公立が0校の年が出たら、薄いページを作らない）。
  */
 
 import {
+  entrantCallName,
   finalists,
   listKoshienTournaments,
   publicEntrants,
@@ -42,12 +46,13 @@ import {
 } from "@/lib/national-tournaments";
 import { teamPrefecture } from "@/lib/koshien-games";
 import { TWENTY_FIRST_CENTURY_BERTHS } from "@/lib/data/twenty-first-century";
+import type { SchoolResolver } from "@/lib/school-name-index";
 
-/** 校名 → 学校マスタ。`getSchoolNameIndex("koshien").find` をそのまま渡す */
-export type Resolve = (
-  display: string,
-  pref?: string,
-) => { slug: string; name: string; pref?: string } | null;
+/**
+ * 校名 → 学校マスタ。`getSchoolNameIndex("koshien").find` をそのまま渡す。
+ * ★**`slug` が null の公立校（閉校して学校ページが無い）を返すことがある。** リンクは `slug` があるときだけ。
+ */
+export type Resolve = SchoolResolver;
 
 export type PublicTournamentSummary = {
   tournament: NationalTournament;
@@ -132,8 +137,11 @@ export type PublicFinalEntry = {
   runnerUp: string;
   /** 「4-3」。決勝の得点。読めていなければ null */
   score: string | null;
-  /** 公立の側の学校（優勝の一覧なら優勝校、準優勝の一覧なら準優勝校） */
-  school: { slug: string; name: string };
+  /**
+   * 公立の側の学校（優勝の一覧なら優勝校、準優勝の一覧なら準優勝校）。
+   * ★**`slug` が null なら学校ページが無い**（閉校した公立校）。リンクを作らないこと。
+   */
+  school: { slug: string | null; name: string; status?: string };
 };
 
 export type PublicChampions = {
@@ -141,8 +149,18 @@ export type PublicChampions = {
   champions: PublicFinalEntry[];
   /** 公立が準優勝した大会。新しい順 */
   runnersUp: PublicFinalEntry[];
-  /** 学校ごとの優勝回数。多い順 → 新しい順 */
-  bySchool: { slug: string; name: string; count: number; entries: PublicFinalEntry[] }[];
+  /**
+   * 学校ごとの優勝回数。多い順 → 新しい順。
+   * ★`key` は一覧の鍵（`slug`。学校ページが無い学校は正式名称）。**`slug` が null ならリンクを作らない。**
+   */
+  bySchool: {
+    key: string;
+    slug: string | null;
+    name: string;
+    status?: string;
+    count: number;
+    entries: PublicFinalEntry[];
+  }[];
 };
 
 /**
@@ -173,10 +191,19 @@ export function listPublicChampions(resolve: Resolve): PublicChampions {
   }
   const bySchoolMap = new Map<string, PublicChampions["bySchool"][number]>();
   for (const e of champions) {
-    const cur = bySchoolMap.get(e.school.slug) ?? { slug: e.school.slug, name: e.school.name, count: 0, entries: [] };
+    // ★学校ページが無い公立校は、正式名称を鍵にして1校にまとめる
+    const key = e.school.slug ?? `unlinked:${e.school.name}`;
+    const cur = bySchoolMap.get(key) ?? {
+      key,
+      slug: e.school.slug,
+      name: e.school.name,
+      ...(e.school.status ? { status: e.school.status } : {}),
+      count: 0,
+      entries: [],
+    };
     cur.count += 1;
     cur.entries.push(e);
-    bySchoolMap.set(e.school.slug, cur);
+    bySchoolMap.set(key, cur);
   }
   const bySchool = [...bySchoolMap.values()].sort(
     (a, b) => b.count - a.count || b.entries[0].tournament.year - a.entries[0].tournament.year,
@@ -264,8 +291,9 @@ export function buildPublicYearLead(y: PublicYear): string[] {
     if (!best || best.wins === 0 || best.result === "成績不明" || best.result === "優勝") {
       continue;
     }
+    // ★旧校名・略称・閉校校は大会記事の呼び名で書く（`entrantCallName`。時代が合わなくなる）
     third.push(
-      `${seasonLabel(s.tournament)}で公立高校のうちもっとも勝ち進んだのは${best.name}で、${best.result}でした。`,
+      `${seasonLabel(s.tournament)}で公立高校のうちもっとも勝ち進んだのは${entrantCallName(best)}で、${best.result}でした。`,
     );
   }
   // ★**0勝は書かない**（敗戦数の言い換えになる。AGENTS.md）

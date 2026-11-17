@@ -38,6 +38,7 @@ import { KOSHIEN_GAMES, teamPrefecture, type KoshienGame } from "@/lib/koshien-g
 import { JINGU_GAMES, type JinguGame } from "@/lib/jingu-games";
 import { TOURNAMENT_BY_KEY } from "@/lib/data/koshien-tournaments";
 import type { RegionalGame, RegionalSeason } from "@/lib/regional-results";
+import type { SchoolResolver } from "@/lib/school-name-index";
 
 export type NationalSeason = "spring" | "summer" | "autumn";
 
@@ -208,13 +209,15 @@ export function finalists(t: NationalTournament): {
  *
  * @param resolve 校名 → 学校マスタの学校。**当たらなければ null**（私立・旧制中等学校）
  *
- * ★**`slug` が付いた学校だけがオレンジになり、学校ページへ繋がる。**
+ * ★**`slug` が付いた学校だけが学校ページへ繋がる。**
+ * ★★**閉校して学校ページが無い公立校（`slug` が null で引けたもの）は `closed` を付ける**
+ * （2026-11-04）。オレンジの色だけ付けて、リンクは張らない。
  * ★**当たらない学校もそのまま出す。** 全国大会は全試合が揃って初めて
  * 大会の記録になる（地方大会で私立の戦績も引用しているのと同じ考え方）。
  */
 export function toRegionalGames(
   t: NationalTournament,
-  resolve: (display: string, pref?: string) => { slug: string; name: string } | null,
+  resolve: SchoolResolver,
 ): RegionalGame[] {
   return t.games.map((g) => ({
     date: g.date,
@@ -234,6 +237,8 @@ export function toRegionalGames(
         display: x.display,
         name: school?.name ?? x.display,
         slug: school?.slug ?? null,
+        // ★公立だが学校ページが無い（閉校など）。**引けたのに slug が無いときだけ**
+        ...(school && !school.slug ? { closed: true } : {}),
         score: x.score,
         won: x.won,
       };
@@ -263,7 +268,11 @@ export function toRegionalGames(
  * 出場校数が違い、同じ回戦でも段階名が変わる。**紙に書いてあることだけを出す。**
  */
 export type PublicEntrant = {
-  slug: string;
+  /**
+   * 学校ページの slug。
+   * ★★**閉校して学校ページが無い公立校は null**（2026-11-04）。**リンクを作らないこと。**
+   */
+  slug: string | null;
   name: string;
   display: string;
   /** 「優勝」「準優勝」「3回戦敗退」「1回戦敗退」 */
@@ -275,14 +284,28 @@ export type PublicEntrant = {
    * ★年ごとのページ（`/koshien/public/<年>`）で校名の脇に出す（2026-09-21）。
    */
   pref: string | null;
+  /**
+   * 大会記事の呼び名（`display`）が学校マスタの校名と違う（旧校名・略称・閉校校）。
+   * ★**地の文では `display` で呼ぶ**（`entrantCallName`）。`name` は今の校名で、
+   * 「愛知一中が優勝」を「旭丘高校が優勝」と書くと時代が合わない。
+   */
+  alias: boolean;
+  /** 学校ページが無い公立校の一言（「2022年閉校（青洲高校に統合）」） */
+  status: string | null;
 };
+
+/**
+ * 地の文で呼ぶ名前。
+ *
+ * ★**旧校名・略称・閉校校は、大会記事の呼び名のまま**（`alias`）。それ以外は今まで通り学校マスタの校名。
+ * ★今までの文は1文字も変わらない（`alias` は2026-11-04 に足した項目で、
+ * 校名がマスタに完全一致していた学校には付かない）。
+ */
+export const entrantCallName = (e: PublicEntrant): string => (e.alias ? e.display : e.name);
 
 export function publicEntrants(
   t: NationalTournament,
-  resolve: (
-    display: string,
-    pref?: string,
-  ) => { slug: string; name: string; pref?: string } | null,
+  resolve: SchoolResolver,
 ): PublicEntrant[] {
   const ROUND_ORDER = ["1回戦", "2回戦", "3回戦", "4回戦", "準々決勝", "準決勝", "決勝"];
   const depth = (round: string | null) => ROUND_ORDER.indexOf(round ?? "1回戦");
@@ -295,11 +318,18 @@ export function publicEntrants(
       );
       const school = resolve(x.display, teamPref);
       if (!school) continue;
-      const entry = found.get(school.slug) ?? {
+      /*
+        ★**学校ページが無い公立校（slug が null）も、同じ学校は1つにまとめる。**
+        鍵は slug の代わりに正式名称（`resolve` が返す `name`）。
+      */
+      const key = school.slug ?? `unlinked:${school.name}`;
+      const entry = found.get(key) ?? {
         slug: school.slug,
         name: school.name,
         display: x.display,
         pref: school.pref || teamPref || null,
+        alias: Boolean(school.alias),
+        status: school.status ?? null,
         result: "",
         wins: 0,
         deepest: -1,
@@ -312,7 +342,7 @@ export function publicEntrants(
         entry.deepest = d;
         entry.result = g.round === "決勝" ? "準優勝" : `${g.round ?? "1回戦"}敗退`;
       }
-      found.set(school.slug, entry);
+      found.set(key, entry);
     }
   }
 

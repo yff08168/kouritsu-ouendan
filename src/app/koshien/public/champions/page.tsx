@@ -122,31 +122,47 @@ export default async function KoshienPublicChampionsPage() {
             note="この一覧の中での並び"
           />
           <ul className="mt-3 grid gap-2 sm:grid-cols-2">
-            {data.bySchool.map((s) => (
-              <li key={s.slug}>
-                <Link
-                  href={`/schools/${s.slug}`}
-                  className="flex min-h-11 items-center justify-between gap-3 rounded-lg border border-line px-3 py-2 hover:bg-navy-50"
-                >
+            {data.bySchool.map((s) => {
+              const body = (
+                <>
                   <span className="min-w-0 flex-1">
                     <span className="block truncate text-sm font-bold text-accent-800">{s.name}</span>
                     <span className="block truncate text-xs text-ink-faint">
                       {s.entries
                         .map((e) => `${e.tournament.year}${e.tournament.season === "spring" ? "春" : "夏"}`)
                         .join("・")}
+                      {s.status && <span className="ml-1">・{s.status}</span>}
                     </span>
                   </span>
                   <span className="shrink-0 text-sm font-bold text-navy-800">
                     {s.count}
                     <span className="ml-0.5 text-xs font-normal text-ink-muted">回</span>
                   </span>
-                </Link>
-              </li>
-            ))}
+                </>
+              );
+              return (
+                <li key={s.key}>
+                  {s.slug ? (
+                    <Link
+                      href={`/schools/${s.slug}`}
+                      className="flex min-h-11 items-center justify-between gap-3 rounded-lg border border-line px-3 py-2 hover:bg-navy-50"
+                    >
+                      {body}
+                    </Link>
+                  ) : (
+                    /* ★学校ページが無い公立校（閉校して DB に承継先が無い）。リンクにしない */
+                    <div className="flex min-h-11 items-center justify-between gap-3 rounded-lg border border-line px-3 py-2">
+                      {body}
+                    </div>
+                  )}
+                </li>
+              );
+            })}
           </ul>
           <p className="mt-3 text-xs text-ink-faint">
             このサイトは私立を収録していないので、全国での順位ではありません。
             統廃合や校名変更で現在の学校に引き継いだ出場歴は、現在の校名で数えています。
+            閉校して引き継ぎ先の学校ページが無い学校は、当時の校名のまま数えていて、リンクはありません。
           </p>
         </section>
       )}
@@ -205,20 +221,25 @@ function FinalTable({ entries, role }: { entries: PublicFinalEntry[]; role: "cha
                   )}
                 </td>
                 <td className="py-2 pr-3">
-                  {champ ? (
+                  {champ?.slug ? (
                     <Link href={`/schools/${champ.slug}`} className="font-bold text-accent-800 underline decoration-line underline-offset-2">
                       {e.champion}
                     </Link>
+                  ) : champ ? (
+                    /* ★学校ページが無い公立校（閉校）。色だけ付けてリンクは張らない */
+                    <span className="font-bold text-accent-800">{e.champion}</span>
                   ) : (
                     <span className="text-ink">{e.champion}</span>
                   )}
                 </td>
                 <td className="py-2 pr-3 tabular-nums text-ink">{e.score ?? ""}</td>
                 <td className="py-2">
-                  {runner ? (
+                  {runner?.slug ? (
                     <Link href={`/schools/${runner.slug}`} className="font-bold text-accent-800 underline decoration-line underline-offset-2">
                       {e.runnerUp}
                     </Link>
+                  ) : runner ? (
+                    <span className="font-bold text-accent-800">{e.runnerUp}</span>
                   ) : (
                     <span className="text-ink">{e.runnerUp}</span>
                   )}

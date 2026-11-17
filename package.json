@@ -15,7 +15,9 @@
     "jingu-games": "node scripts/build-jingu-games.mjs",
     "innings": "node scripts/build-regional-innings.mjs",
     "kokutai": "node scripts/build-kokutai-champions.mjs",
-    "koshien-champions": "node scripts/build-koshien-champions.mjs"
+    "koshien-champions": "node scripts/build-koshien-champions.mjs",
+    "school-aliases": "node scripts/build-koshien-school-aliases.mjs",
+    "check-public-index": "node scripts/check-public-index.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.2",

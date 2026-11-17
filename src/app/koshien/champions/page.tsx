@@ -31,7 +31,8 @@ import { getSchoolNameIndex } from "@/lib/queries/schools";
  *   組み立ては `src/lib/koshien-champions.ts`（出典の重ね方もそこに書いてある）。
  *
  * ★ 私立も公立も全部載せる（大会の記録は全部そろって初めて意味がある。大会ページと同じ）。
- *   **公立だけオレンジ**で学校ページにつながる（`getSchoolNameIndex("koshien")`。大会ページと同じ規則）。
+ *   **公立だけオレンジ**で、学校ページのある学校はそこにつながる（`getSchoolNameIndex("koshien")`。大会ページと同じ規則）。
+ *   ★**閉校して学校ページが無い公立校（`slug` が null）はオレンジのままリンクだけ張らない**（2026-11-04）。
  * ★ 索引が取れなくてもページを落とさない（`loadResolve`。解説ページと同じ構え）。
  * ★ タブ（JavaScript）にしない。夏・春・都道府県別は同じページに縦に並べ、上のリンクで飛ぶ。
  */
@@ -228,8 +229,9 @@ export default async function KoshienChampionsPage() {
         <ul className="mt-2 space-y-1.5 text-[0.6875rem] leading-relaxed text-ink-muted">
           <li>
             <strong className="text-ink">私立を含む全大会を載せています。</strong>
-            このサイトが学校ページを持つのは公立・国立・高専だけなので、
-            <strong className="text-accent-800">オレンジ</strong>の校名だけが学校ページにつながります。
+            このサイトが載せるのは公立・国立・高専だけなので、
+            <strong className="text-accent-800">オレンジ</strong>の校名が公立です。
+            学校ページのある学校は押すとそのページへ進めます（閉校した学校にはページがありません）。
           </li>
           <li>
             <strong className="text-ink">学校ごとの優勝回数は出していません。</strong>
@@ -266,13 +268,16 @@ function JumpLink({ href, label }: { href: string; label: string }) {
 function SchoolName({ s, withPref = true }: { s: ChampionSchool; withPref?: boolean }) {
   return (
     <>
-      {s.school ? (
+      {s.school?.slug ? (
         <Link
           href={`/schools/${s.school.slug}`}
           className="font-bold text-accent-800 underline decoration-line underline-offset-2"
         >
           {s.name}
         </Link>
+      ) : s.school ? (
+        /* ★公立だが学校ページが無い（閉校して DB に承継先が無い）。色だけ付けてリンクは張らない */
+        <span className="font-bold text-accent-800">{s.name}</span>
       ) : (
         <span className="text-ink">{s.name}</span>
       )}

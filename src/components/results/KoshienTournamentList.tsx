@@ -29,8 +29,13 @@ export type KoshienListEntry = {
   games: number;
   /** 優勝校。決勝が読めていない大会は null */
   champion: string | null;
-  /** 優勝校が公立なら slug。私立・旧制中等学校は null */
+  /**
+   * 優勝校が公立なら slug。私立・旧制中等学校は null。
+   * ★**学校ページが無い公立校（閉校）も null** ── 公立かどうかは `championIsPublic` で見ること。
+   */
   championSlug: string | null;
+  /** 優勝校が公立か。★**学校ページの有無とは別**（閉校した公立校は slug が無いが公立） */
+  championIsPublic: boolean;
 };
 
 export function KoshienTournamentList({ entries }: { entries: KoshienListEntry[] }) {
@@ -84,11 +89,11 @@ export function KoshienTournamentList({ entries }: { entries: KoshienListEntry[]
                       <span
                         className={cn(
                           "block truncate text-xs",
-                          t.championSlug ? "text-accent-800" : "text-ink-muted",
+                          t.championIsPublic ? "text-accent-800" : "text-ink-muted",
                         )}
                       >
                         優勝　{t.champion}
-                        {t.championSlug && "（公立）"}
+                        {t.championIsPublic && "（公立）"}
                       </span>
                     )}
                   </span>
@@ -122,7 +127,7 @@ function groupByDecade(entries: KoshienListEntry[]): DecadeGroup[] {
       groups.set(decade, group);
     }
     group.entries.push(e);
-    if (e.championSlug) group.publicChampions += 1;
+    if (e.championIsPublic) group.publicChampions += 1;
   }
   return [...groups.values()];
 }

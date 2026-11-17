@@ -47,8 +47,12 @@ export type ChampionSchool = {
   name: string;
   /** 一覧の記事の県（「西東京」「北大阪」のように大会の区分で書かれている年がある） */
   pref: string;
-  /** 学校マスタに当たった（＝公立）ときだけ */
-  school: { slug: string; name: string } | null;
+  /**
+   * 学校マスタに当たった（＝公立）ときだけ。
+   * ★**`slug` が null なら学校ページが無い公立校**（閉校して DB に承継先が無い。2026-11-04）。
+   * 公立としては数えるが、**リンクは `slug` があるときだけ作ること。**
+   */
+  school: { slug: string | null; name: string } | null;
 };
 
 export type ChampionRow = {

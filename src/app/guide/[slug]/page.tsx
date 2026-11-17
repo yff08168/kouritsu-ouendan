@@ -26,8 +26,11 @@ import {
 } from "@/lib/guide-data";
 import { getSchoolNameIndex } from "@/lib/queries/schools";
 
-/** 校名 → 学校マスタ。**県まで渡して引く**（同名の別校に当てない。AGENTS.md） */
-type Resolve = (display: string, pref?: string) => { slug: string; name: string } | null;
+/**
+ * 校名 → 学校マスタ。**県まで渡して引く**（同名の別校に当てない。AGENTS.md）。
+ * ★`slug` が null の公立校（閉校して学校ページが無い）を返すことがある。リンクは `slug` があるときだけ。
+ */
+type Resolve = (display: string, pref?: string) => { slug: string | null; name: string } | null;
 
 /**
  * ★**索引が取れなくてもページを落とさない**（Supabase が止まっていた日にビルドが
@@ -338,13 +341,16 @@ async function DataBlock({ id, resolve }: { id: GuideDataId; resolve: Resolve | 
       if (rows.length === 0) return null;
       const mark = (t: { name: string; prefecture: string | null }) => {
         const school = resolve ? resolve(t.name, t.prefecture ?? undefined) : null;
-        return school ? (
-          <Link href={`/schools/${school.slug}`} className="font-bold text-accent-800 underline decoration-line underline-offset-2">
-            {t.name}
-          </Link>
-        ) : (
-          <span className="text-ink">{t.name}</span>
-        );
+        if (school?.slug) {
+          return (
+            <Link href={`/schools/${school.slug}`} className="font-bold text-accent-800 underline decoration-line underline-offset-2">
+              {t.name}
+            </Link>
+          );
+        }
+        // ★公立だが学校ページが無い（閉校して DB に承継先が無い）。色だけ付けてリンクは張らない
+        if (school) return <span className="font-bold text-accent-800">{t.name}</span>;
+        return <span className="text-ink">{t.name}</span>;
       };
       const pref = (t: { prefecture: string | null }) =>
         t.prefecture ? <span className="ml-1 text-xs text-ink-faint">{t.prefecture}</span> : null;
@@ -352,7 +358,7 @@ async function DataBlock({ id, resolve }: { id: GuideDataId; resolve: Resolve | 
         <div className="space-y-3">
           <p className="text-sm leading-relaxed text-ink">
             {rows[rows.length - 1].year}年の第1回から{rows[0].year}年の第{rows[0].edition}回までの{rows.length}大会です。
-            オレンジの校名は、このサイトが学校ページを持つ公立・国立・高専の学校です。
+            オレンジの校名は、このサイトが載せる公立・国立・高専の学校です（学校ページのある学校は押すとそのページへ進めます）。
           </p>
           <div className="overflow-x-auto">
             <table className="min-w-full text-sm">

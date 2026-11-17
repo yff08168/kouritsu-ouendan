@@ -107,8 +107,9 @@ export function BracketTeamRow({ team }: { team: RegionalTeam }) {
     */
     "block w-fit max-w-full truncate",
     team.won ? "font-bold" : "text-ink-muted",
-    // ★公立はオレンジ。**面ではなく字の色**（アクセントは小面積のみ）
-    team.slug ? "text-accent-800" : team.won ? "text-navy-800" : undefined,
+    // ★公立はオレンジ。**面ではなく字の色**（アクセントは小面積のみ）。
+    // ★**閉校などで学校ページが無い公立校（`closed`）にも付ける**（リンクだけ張らない）
+    team.slug || team.closed ? "text-accent-800" : team.won ? "text-navy-800" : undefined,
   );
 
   return (
@@ -118,7 +119,7 @@ export function BracketTeamRow({ team }: { team: RegionalTeam }) {
         **前の回戦に出ていないことは、左の列が空いていることで表が示している。**
       */}
       <span className="min-w-0 flex-1">
-        {/* 公立は学校ページへ。私立は当サイトに個別ページが無い */}
+        {/* 公立は学校ページへ。私立と、閉校した公立（`closed`）は当サイトに個別ページが無い */}
         {team.slug ? (
           <Link
             href={`/schools/${team.slug}`}

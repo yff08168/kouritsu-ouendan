@@ -263,8 +263,17 @@ export function getAutumnSummary(year: number): Promise<AutumnArea[]> {
           const district = await getRegionalDistrict(slug);
           if (!district) continue;
           prefectures.push(summarizePrefecture(district, year));
+          /*
+            ★**地区大会の試合は `district.areaGames`**（生成側が県の試合から分けたもの）。
+            ★**分ける前の生成物を読んだときのために、`games` の中のラベル付きも拾う**
+            （生成物が作り直されるまでの保険。両方に入ることは無い）。
+            ★**その年の秋の試合だけ**（日付の年で見る。秋は暦年をまたがない）。
+          */
           const picked = pickTournament(district, year);
-          const labelled = picked?.games.filter(isAreaGame) ?? [];
+          const labelled = [
+            ...(district.areaGames ?? []),
+            ...(picked?.games.filter(isAreaGame) ?? []),
+          ].filter((g) => g.season === "autumn" && (g.date ?? "").startsWith(String(year)));
           if (labelled.length > 0) areaGames.push({ games: labelled, sourceName: district.sourceName });
         }
         areas.push({

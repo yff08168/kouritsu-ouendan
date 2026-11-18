@@ -19504,7 +19504,7 @@ async function main() {
       return { ...t, name: hits[0].name, slug: hits[0].slug };
     };
 
-    const games = all
+    const gamesWithArea = all
       /*
         **勝敗はアダプタが出典から取ったものを使う。** スコアから導かない。
         引き分け・没収試合で食い違う。長野は勝者に class="win" が付いている。
@@ -19518,7 +19518,42 @@ async function main() {
         const allowNationwide = !isPrefectureOnly(g.tournament);
         return { ...g, teams: g.teams.map((t) => decorate(t, allowNationwide)) };
       });
-    const dropped = all.length - games.length;
+    /*
+      ★★★**地区大会（関東大会など）の試合を、県の試合から外して `areaGames` に分ける**（2026-11-18）。
+
+      **神奈川高校野球ステーションは、関東大会の試合を県大会と同じ日別ページに載せ、
+      同じ大会名で書いている**（2022・2023春秋・2026秋。会場は群馬など他県）。
+      チーム名の後ろに**都道府県大会での順位が付く**（「横浜（神奈川2位）」「健大高崎 （群馬 1位）」）ので見分けられる。
+      ★そのまま `games` に入れておくと、**神奈川の県大会の決勝が2試合になって優勝校が決まらず**、
+      県のページ・大会ページ・進捗地図が**関東大会の試合を神奈川の県大会として出していた**。
+
+      ★**消さずに `areaGames` に取っておく**（地区大会は収録範囲。`/regional/autumn/<年>` が関東大会として出す）。
+      ★**`games` から外すので、県を単位にしている既存の集計（最新の大会・進捗・勝ち上がり・記録・直接対決）は
+      どれも関東大会を数えなくなる。** 直接対決に出ていた試合も落ちる（都道府県大会ではないため）。
+      ★**TS側（`src/lib/autumn-summary.ts`）にも同じ目印の読み取りが残してある**（`areaGames` に移る前の生成物を読むとき用）。
+      ★★**規則を変えるときは両方直すこと**（`.mjs` は TS を import できない）。
+    */
+    const AREA_LABEL = /\s*[（(]\s*[^）)]*?\d\s*位\s*[）)]\s*$/;
+    const isAreaGame = (g) => g.teams.some((t) => AREA_LABEL.test(t.display));
+    const areaGamesNew = gamesWithArea.filter(isAreaGame);
+    const games = gamesWithArea.filter((g) => !isAreaGame(g));
+    /*
+      ★★**前の生成物の `areaGames` を引き継ぐ**。今回の実行は1年ぶん（`--year`）だけ取るので、
+      **取っていない年・季節の地区大会が消えないように**する。
+      ★**同じ季節・同じ年が今回取れたら新しいほうで置き換える**（大会単位ではなく季節×年）。
+    */
+    const areaKey = (g) => `${g.season}\t${g.date?.slice(0, 4) ?? ""}`;
+    const newAreaKeys = new Set(areaGamesNew.map(areaKey));
+    const areaGames = [
+      ...(previousDistrict(adapter.slug)?.areaGames ?? []).filter((g) => !newAreaKeys.has(areaKey(g))),
+      ...areaGamesNew,
+    ];
+    if (areaGames.length) {
+      console.log(
+        `  → 地区大会の試合 ${areaGames.length} 件を県の試合から分けた（今回 ${areaGamesNew.length} 件）`,
+      );
+    }
+    const dropped = all.length - gamesWithArea.length;
     if (dropped) {
       const names = [...new Set(all.filter((g) => !isTargetTournament(g.tournament)).map((g) => g.tournament))];
       console.log(`  （収録対象外の大会を ${dropped} 試合外した: ${names.join("・")}）`);
@@ -19649,6 +19684,8 @@ async function main() {
       // **リンクはトップページへ。** 深いURLへのリンクを断っている連盟がある
       sourceUrl: adapter.siteUrl,
       games,
+      // ★**地区大会の試合。出典が県大会と同じページに載せているときだけ**（上の説明）。無い県は省略
+      ...(areaGames.length ? { areaGames } : {}),
       /*
         ★**組み合わせ（未実施）。無い県は空**（型のうえでも省略できる）。
         **`games` とは別物**なので混ぜないこと。
@@ -19675,7 +19712,8 @@ async function main() {
         実際よりずっと小さく出る**（神奈川で1勝の学校が「ベスト32」になった）。
         生成物には出さない（下で落とす）。
       */
-      allGames: all.map((g) => ({
+      // ★地区大会の試合（`areaGames`）は数えない。「（群馬 1位）」付きの名前が別のチームとして数えられてしまう
+      allGames: all.filter((g) => !isAreaGame(g)).map((g) => ({
         season: g.season,
         tournament: g.tournament,
         // 決勝が済んでいるかを見るのに要る（取りこぼしの検算）

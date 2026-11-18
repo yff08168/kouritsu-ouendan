@@ -13,14 +13,16 @@
  *   ★**「第3位」とは書かない** —— 3位決定戦を持たない大会があり、準決勝で負けた2校は
  *   **「ベスト4」としか言えない。**
  *
- * ★★ **地区大会（東北大会・関東大会など）の本大会はここには入っていない。**
- *   取り込む出典がまだ決まっていない（HSB flash は都道府県大会だけ。連盟別の地区大会ページは
- *   別々の作り）。**入っていないものを「結果なし」と書かない**（ページ側の注記は「取り込み前」）。
+ * ★★ **地区大会（東北大会・関東大会など）は、読める地区だけ `areaTournament` に載せる。**
+ *   出典は2つ: ①その年の開催県の連盟が公開した結果（`regional-area.json`。北信越・東海・近畿・九州。
+ *   `scripts/build-area-results.mjs`）②県大会と同じページに載っていた試合（`areaGames`。関東＝神奈川の出典）。
+ *   **載っていない地区（東北・中国・四国）を「結果なし」と書かない**（出典の利用条件を確認して見送っている）。
  *   北海道と東京は、都道府県大会そのものが地区大会（北海道大会・東京都大会）。
  *
  * ★ **全県を読むが1回だけ**（`guide-data.ts` の `allDistricts` と同じ構え。`getRegionalDistrict` は県ごとに憶えている）。
  */
 
+import { REGIONAL_AREA } from "@/lib/data/regional-area";
 import { getRegionalDistrict, type RegionalDistrict, type RegionalGame, type RegionalTeam } from "@/lib/regional-results";
 import { listTournaments, summarizeTournament, type TournamentEntry } from "@/lib/regional-tournaments";
 
@@ -86,8 +88,13 @@ export type AutumnPrefecture = {
 export type AutumnAreaTournament = {
   /** 「関東大会」 */
   label: string;
-  /** どの県の出典に載っていた試合か（「神奈川高校野球ステーション」） */
+  /** どの県の出典に載っていた試合か（「神奈川高校野球ステーション」「京都府高等学校野球連盟」） */
   sourceName: string;
+  /**
+   * 地区大会を開いた県（「京都」）。**その県の連盟が公開した結果から読んだときだけ**入る。
+   * 関東大会のように「別の県の出典が県大会と同じページに載せていた試合」から読んだときは null。
+   */
+  hostName: string | null;
   games: number;
   champion: AutumnTeam | null;
   runnerUp: AutumnTeam | null;
@@ -228,18 +235,23 @@ function summarizePrefecture(district: RegionalDistrict, year: number): AutumnPr
 /** 地区大会の名前（「関東大会」）。**地区名から付ける**（東京・北海道は都道府県大会が地区大会なので付かない） */
 const areaTournamentLabel = (area: string): string => `${area}大会`;
 
-function areaTournamentOf(
-  area: string,
-  found: { games: RegionalGame[]; sourceName: string }[],
-): AutumnAreaTournament | null {
+type FoundArea = {
+  games: RegionalGame[];
+  sourceName: string;
+  /** 地区大会を開いた県（その県の連盟の公開ファイルから読んだとき）。出典が別の県の試合だけのとき（関東＝神奈川）は null */
+  hostName: string | null;
+};
+
+function areaTournamentOf(area: string, found: FoundArea[]): AutumnAreaTournament | null {
   // 2つ以上の県の出典に載っていたら、どれを採るか決められない（二重に数えない）→ 載せない
   if (found.length !== 1) return null;
-  const { games, sourceName } = found[0];
+  const { games, sourceName, hostName } = found[0];
   const o = outcomeOf(games);
   const dates = games.map((g) => g.date).filter((d): d is string => Boolean(d)).sort();
   return {
     label: areaTournamentLabel(area),
     sourceName,
+    hostName,
     games: games.length,
     champion: o.champion ? toTeam(o.champion) : null,
     runnerUp: o.runnerUp ? toTeam(o.runnerUp) : null,
@@ -258,7 +270,7 @@ export function getAutumnSummary(year: number): Promise<AutumnArea[]> {
       const areas: AutumnArea[] = [];
       for (const area of AUTUMN_AREAS) {
         const prefectures: AutumnPrefecture[] = [];
-        const areaGames: { games: RegionalGame[]; sourceName: string }[] = [];
+        const areaGames: FoundArea[] = [];
         for (const slug of area.slugs) {
           const district = await getRegionalDistrict(slug);
           if (!district) continue;
@@ -274,7 +286,22 @@ export function getAutumnSummary(year: number): Promise<AutumnArea[]> {
             ...(district.areaGames ?? []),
             ...(picked?.games.filter(isAreaGame) ?? []),
           ].filter((g) => g.season === "autumn" && (g.date ?? "").startsWith(String(year)));
-          if (labelled.length > 0) areaGames.push({ games: labelled, sourceName: district.sourceName });
+          if (labelled.length > 0) {
+            areaGames.push({ games: labelled, sourceName: district.sourceName, hostName: null });
+          }
+          /*
+            ★★**開催県の連盟が公開した地区大会の結果**（`regional-area.json`。`build-area-results.mjs`）。
+            ★**鍵は開催県の slug。** その年に地区大会を開いた県だけが持っている。
+            ★**出典が県大会と同じページに載せた試合（上）と同じ県に両方あれば、どちらを採るか決められない**
+            ので、`found` が2つになって `areaTournamentOf` が載せない（二重に数えない）。
+          */
+          const host = REGIONAL_AREA[slug];
+          const hosted = (host?.games ?? []).filter(
+            (g) => g.season === "autumn" && (g.date ?? "").startsWith(String(year)),
+          );
+          if (host && hosted.length > 0) {
+            areaGames.push({ games: hosted, sourceName: host.sourceName, hostName: district.district });
+          }
         }
         areas.push({
           name: area.name,

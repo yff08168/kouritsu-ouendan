@@ -24,8 +24,10 @@ import {
  * ★★**新しい出典は無い。** 地方大会の生成物の並べ替えだけ（`src/lib/autumn-summary.ts`）。
  *   データはデプロイで固まるので、ページは1時間の ISR。
  * ★**優勝校は「決勝がちょうど1試合」のときだけ**（`summarizeTournament`）。
- * ★**地区大会（東北大会・関東大会など）の本大会はまだ取り込んでいない**ので、
- *   「ない」と書かず、「取り込み前」と書く。
+ * ★**地区大会（東北大会・関東大会など）は、読める地区だけ載せる**（`areaTournament`）。
+ *   載っていない地区を「結果なし」と書かない（取り込んでいないだけ）。
+ *   ★**載せていない理由を「まだ」と書かない** —— 事実は作業が追いついていないのではなく、
+ *   出典の利用条件を確認したうえで見送っていること（連盟を非難する書き方にもしない）。
  */
 export const revalidate = 3600;
 export const dynamicParams = false;
@@ -260,8 +262,11 @@ export default async function AutumnSummaryPage({ params }: Props) {
                   </p>
                 )}
                 <p className="mt-1.5 text-[0.6875rem] text-ink-faint">
-                  括弧の「神奈川2位」などは、都道府県大会での順位です。{area.areaTournament.sourceName}に
-                  載っていた試合から読んでいます。
+                  {(area.areaTournament.champion?.note || area.areaTournament.runnerUp?.note) &&
+                    `「${area.areaTournament.champion?.note ?? area.areaTournament.runnerUp?.note}」などは、都道府県大会での順位です。`}
+                  {area.areaTournament.hostName
+                    ? `${year}年の開催県（${area.areaTournament.hostName}）の${area.areaTournament.sourceName}が公開している結果から読んでいます（${area.areaTournament.games}試合）。`
+                    : `${area.areaTournament.sourceName}に載っていた試合から読んでいます。`}
                 </p>
               </div>
             )}
@@ -280,9 +285,20 @@ export default async function AutumnSummaryPage({ params }: Props) {
             ベスト4は準決勝で敗れた2校です。3位決定戦を行わない大会があるため「第3位」とは書いていません。
           </li>
           <li>
-            <strong className="text-ink">地区大会（東北大会・北信越大会・東海大会・近畿大会・中国大会・四国大会・九州大会）の結果は、まだこのサイトに取り込んでいません。</strong>
-            関東大会は、出典の一つが県大会と同じページに載せていた試合から読んでいます。
-            ほかの地区も、取り込みが済み次第このページへ加えます。
+            地区大会（東北大会・関東大会など）の結果は、
+            <strong className="text-ink">
+              その年の開催県の連盟が公開している結果と、県大会と同じページに載せていた出典から読める地区だけ
+            </strong>
+            載せています。開催県の連盟の結果は、優勝校が明治神宮大会の出場校（各地区の優勝校）と一致することを確かめてから載せています。
+            {areas.filter((a) => !a.note && !a.areaTournament).length > 0 && (
+              <>
+                {areas
+                  .filter((a) => !a.note && !a.areaTournament)
+                  .map((a) => `${a.name}大会`)
+                  .join("・")}
+                は、出典の利用条件を確認したうえで、いまは載せていません。
+              </>
+            )}
           </li>
           <li>
             試合結果の出典は、都道府県ごとの大会ページの下に書いています。リンクのない学校は、

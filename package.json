@@ -17,6 +17,7 @@
     "kokutai": "node scripts/build-kokutai-champions.mjs",
     "koshien-champions": "node scripts/build-koshien-champions.mjs",
     "school-aliases": "node scripts/build-koshien-school-aliases.mjs",
+    "area-results": "node scripts/build-area-results.mjs",
     "check-public-index": "node scripts/check-public-index.mjs"
   },
   "dependencies": {

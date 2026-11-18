@@ -11,6 +11,8 @@ import { ResultsTicker } from "@/components/results/ResultsTicker";
 import { LiveTodayCard } from "@/components/results/LiveTodayCard";
 import { JinguFeatureBanner } from "@/components/jingu/JinguFeatureBanner";
 import { jinguAnnounceYear } from "@/lib/jingu-live";
+import { SenbatsuFeatureBanner } from "@/components/features/SenbatsuFeatureBanner";
+import { senbatsu21seikiFeatureYear } from "@/lib/content/senbatsu-21seiki";
 import { SchoolCard } from "@/components/schools/SchoolCard";
 import { PrefectureMap } from "@/components/schools/PrefectureMap";
 import { PrefectureMapGuide } from "@/components/schools/PrefectureMapGuide";
@@ -56,6 +58,7 @@ export default async function HomePage() {
   const liveToday = pickLiveToday(live);
   // 明治神宮大会の特設ページの案内（日付の窓と生成物だけで決める。取りに行かない）
   const jinguBannerYear = jinguAnnounceYear();
+  const senbatsu21seikiYear = senbatsu21seikiFeatureYear();
 
   /*
     「今夏の甲子園に出場している公立校」。
@@ -167,6 +170,16 @@ export default async function HomePage() {
       {jinguBannerYear !== null && (
         <Container className="mt-4 sm:mt-5">
           <JinguFeatureBanner year={jinguBannerYear} />
+        </Container>
+      )}
+
+      {/*
+        ★**選抜の21世紀枠の特設ページへの入口**（2026-11-18。運営者の指示）。
+        日付の窓（10/20〜1/31）だけで決める。窓の外は `null`。
+      */}
+      {senbatsu21seikiYear !== null && (
+        <Container className="mt-4 sm:mt-5">
+          <SenbatsuFeatureBanner year={senbatsu21seikiYear} />
         </Container>
       )}
 

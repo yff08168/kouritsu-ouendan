@@ -28,6 +28,8 @@ const FOOTER_EXTRA_LINKS = [
   { href: "/archive", label: "年別アーカイブ" },
   // ★ルールと制度の解説（2026-09-21）。年別アーカイブと同じ理由で NAV には足さない
   { href: "/guide", label: "ルールと制度の解説" },
+  // ★選抜の21世紀枠の特設ページ（2026-11-18）。選考の窓の外でも開くページなので常設
+  { href: "/koshien/21seiki/2027", label: "センバツ21世紀枠の推薦校" },
 ];
 
 const ABOUT_LINKS = [

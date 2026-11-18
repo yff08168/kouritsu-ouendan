@@ -117,6 +117,17 @@ export default async function TwentyFirstCenturyPage() {
         />
       </div>
 
+      {/* ★来季の推薦校の特設ページ（2026-11-18）。「21世紀枠 歴代」で来た人を今季の一覧へ */}
+      <Link
+        href="/koshien/21seiki/2027"
+        className="mt-4 flex min-h-11 items-center gap-3 rounded-xl border border-accent-500 bg-white px-4 py-3 hover:bg-navy-50"
+      >
+        <Sparkles size={18} aria-hidden="true" className="shrink-0 text-accent-500" />
+        <span className="text-sm font-bold text-navy-800">
+          センバツ2027 21世紀枠の推薦校一覧と選考スケジュール
+        </span>
+      </Link>
+
       <GuideLinkBox className="mt-4" slugs={["senbatsu-selection"]} />
 
       <section

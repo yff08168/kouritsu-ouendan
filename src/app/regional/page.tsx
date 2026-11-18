@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MapPinned } from "lucide-react";
+import { MapPinned, Trophy } from "lucide-react";
+import { AUTUMN_SUMMARY_YEARS } from "@/lib/autumn-summary";
 
 import { Container } from "@/components/layout/Container";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
@@ -305,6 +306,27 @@ export default async function RegionalPage() {
           <br />※ 甲子園の大会区分（49地区）で並べた図です。実際の県の形や面積とは異なります。
         </p>
       </header>
+
+      {/*
+        ★**秋季大会のまとめへの入口**（2026-11-18）。いちばん新しい試合が秋のときだけ。
+        年は進捗の「いちばん新しい試合」の年。まとめを作っていない年には出さない。
+      */}
+      {SEASON === "autumn" &&
+        (() => {
+          const year = Number(REGIONAL_PROGRESS.latestDate?.slice(0, 4));
+          if (!AUTUMN_SUMMARY_YEARS.includes(year)) return null;
+          return (
+            <Link
+              href={`/regional/autumn/${year}`}
+              className="mt-4 flex min-h-11 items-center gap-3 rounded-xl border border-accent-500 bg-white px-4 py-3 hover:bg-navy-50"
+            >
+              <Trophy size={18} aria-hidden="true" className="shrink-0 text-accent-500" />
+              <span className="text-sm font-bold text-navy-800">
+                {year}年 秋季大会のまとめ（10地区別の優勝校・ベスト4）
+              </span>
+            </Link>
+          );
+        })()}
 
       <section
         aria-labelledby="regional-note"

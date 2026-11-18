@@ -14,6 +14,9 @@ import { getRegionalDistrict } from "@/lib/regional-results";
 import { listTournaments } from "@/lib/regional-tournaments";
 import { livePrefectures } from "@/lib/live/hsb";
 import { jinguFeatureYear } from "@/lib/jingu-live";
+import { AUTUMN_SUMMARY_YEARS } from "@/lib/autumn-summary";
+import { snapshotUpdated, snapshotYears } from "@/lib/senbatsu-21seiki";
+import { SENBATSU_21SEIKI } from "@/lib/content/senbatsu-21seiki";
 import {
   listJinguTournaments,
   listKoshienTournaments,
@@ -213,6 +216,26 @@ async function buildSitemapGroups(): Promise<SitemapGroups> {
     // ★**順位・公立旋風・特集は「いつ変わったか」を持っていない**ので `lastmod` を書かない
     { url: url("/rankings"), changeFrequency: "monthly", priority: 0.8 },
     { url: url("/phenomenon"), changeFrequency: "weekly", priority: 0.8 },
+    /*
+      ★**選抜の21世紀枠の特設ページ**（2026-11-18）。推薦校の発表・9地区候補校・選考結果で内容が変わる。
+      `lastmod` は**取り込んである控えの更新日**（描くときに取りに行く値は sitemap では使わない。
+      主催者のページを叩くと sitemap の作り直しが短くなる）。
+    */
+    // ★秋季大会のまとめ（2026-11-18）。生成物の並べ替えで、内容が変わるのは地方大会の自動更新（1日2回）のとき
+    ...AUTUMN_SUMMARY_YEARS.map((y) => ({
+      url: url(`/regional/autumn/${y}`),
+      lastModified: regionalLast,
+      changeFrequency: "daily" as const,
+      priority: 0.8,
+    })),
+    ...snapshotYears()
+      .filter((y) => SENBATSU_21SEIKI[y])
+      .map((y) => ({
+        url: url(`/koshien/21seiki/${y}`),
+        lastModified: snapshotUpdated(y),
+        changeFrequency: "weekly" as const,
+        priority: 0.8,
+      })),
     { url: url("/features"), changeFrequency: "weekly", priority: 0.7 },
     { url: url("/prefectures"), lastModified: regionalLast, changeFrequency: "monthly", priority: 0.7 },
     // 全国大会（2026-08-26 追加）。大会ごとのページは下の nationalPages

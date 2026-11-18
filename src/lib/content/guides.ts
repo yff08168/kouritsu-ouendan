@@ -260,6 +260,8 @@ export const GUIDES: Guide[] = [
       SRC.wikiSenbatsu,
     ],
     related: [
+      { href: "/koshien/21seiki/2027", label: "センバツ2027 21世紀枠の推薦校一覧" },
+      { href: "/regional/autumn/2026", label: "2026年 秋季大会のまとめ" },
       { href: "/rankings/21seiki-waku", label: "21世紀枠の出場校" },
       { href: "/jingu", label: "明治神宮大会（高校の部）" },
       { href: "/guide/koshien-draw", label: "甲子園の組み合わせ抽選会のしくみ" },

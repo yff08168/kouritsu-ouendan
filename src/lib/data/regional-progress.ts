@@ -6,7 +6,7 @@ import type { RegionalProgressBoard } from "@/lib/regional-results";
 export const REGIONAL_PROGRESS: RegionalProgressBoard = {
   "season": "autumn",
   "latestDate": "2026-11-05",
-  "generatedAt": "2026-11-18T19:23:39Z",
+  "generatedAt": "2026-11-19T19:34:53Z",
   "districts": [
     {
       "slug": "nagano",
@@ -29,8 +29,8 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "done",
       "season": "autumn",
       "tournament": "令和8年度神奈川県高校野球秋季県大会",
-      "games": 82,
-      "publicGames": 53,
+      "games": 80,
+      "publicGames": 52,
       "round": "決勝",
       "latestDate": "2026-10-01",
       "champion": {
@@ -41,14 +41,17 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "saitama",
       "district": "埼玉",
-      "state": "playing",
+      "state": "done",
       "season": "autumn",
       "tournament": "2026年秋季埼玉県高校野球大会",
       "games": 39,
       "publicGames": 17,
-      "round": "準決勝",
+      "round": "決勝",
       "latestDate": "2026-10-06",
-      "champion": null
+      "champion": {
+        "display": "西武台",
+        "slug": null
+      }
     },
     {
       "slug": "yamanashi",
@@ -83,26 +86,22 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "gunma",
       "district": "群馬",
-      "state": "playing",
-      "season": "autumn",
-      "tournament": "2026年 令和8年秋季関東地区高校野球 群馬県大会",
-      "games": 55,
-      "publicGames": 46,
-      "round": "準々決勝",
-      "latestDate": "2026-09-27",
-      "champion": null
+      "state": "pending"
     },
     {
       "slug": "saga",
       "district": "佐賀",
-      "state": "playing",
+      "state": "done",
       "season": "autumn",
       "tournament": "第159回九州地区高等学校野球佐賀大会",
       "games": 32,
       "publicGames": 31,
-      "round": "準決勝",
+      "round": "決勝",
       "latestDate": "2026-10-12",
-      "champion": null
+      "champion": {
+        "display": "早稲田佐賀",
+        "slug": null
+      }
     },
     {
       "slug": "nara",
@@ -125,8 +124,8 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "done",
       "season": "autumn",
       "tournament": "第155回北信越地区高等学校野球新潟県大会（令和8年度秋季）",
-      "games": 64,
-      "publicGames": 52,
+      "games": 63,
+      "publicGames": 51,
       "round": "決勝",
       "latestDate": "2026-09-22",
       "champion": {

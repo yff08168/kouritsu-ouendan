@@ -14610,6 +14610,167 @@
       ]
     },
     {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和8年度秋季近畿地区高等学校野球大会県二次予選",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "日高",
+          "score": 9,
+          "won": false,
+          "name": "日高高校",
+          "slug": "wakayama-hidaka"
+        },
+        {
+          "display": "和歌山東",
+          "score": 10,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和8年度秋季近畿地区高等学校野球大会県二次予選",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "神島",
+          "score": 0,
+          "won": false,
+          "name": "神島高校",
+          "slug": "wakayama-kashima"
+        },
+        {
+          "display": "那賀",
+          "score": 6,
+          "won": true,
+          "name": "那賀高校",
+          "slug": "naga"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和8年度秋季近畿地区高等学校野球大会県二次予選",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "市和歌山",
+          "score": 2,
+          "won": false,
+          "name": "和歌山高校",
+          "slug": "wakayama-wakayama"
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 5,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和8年度秋季近畿地区高等学校野球大会県二次予選",
+      "round": "準々決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "桐蔭",
+          "score": 1,
+          "won": false,
+          "name": "桐蔭高校",
+          "slug": "toin"
+        },
+        {
+          "display": "田辺",
+          "score": 5,
+          "won": true,
+          "name": "田辺高校",
+          "slug": "wakayama-tanabe"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和8年度秋季近畿地区高等学校野球大会県二次予選",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山東",
+          "score": 13,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        },
+        {
+          "display": "那賀",
+          "score": 0,
+          "won": false,
+          "name": "那賀高校",
+          "slug": "naga"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和8年度秋季近畿地区高等学校野球大会県二次予選",
+      "round": "準決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "智辯和歌山",
+          "score": 12,
+          "won": true,
+          "name": "智辯和歌山",
+          "slug": null
+        },
+        {
+          "display": "田辺",
+          "score": 0,
+          "won": false,
+          "name": "田辺高校",
+          "slug": "wakayama-tanabe"
+        }
+      ]
+    },
+    {
+      "date": null,
+      "season": "autumn",
+      "tournament": "令和8年度秋季近畿地区高等学校野球大会県二次予選",
+      "round": "決勝",
+      "venue": null,
+      "teams": [
+        {
+          "display": "和歌山東",
+          "score": 6,
+          "won": true,
+          "name": "和歌山東高校",
+          "slug": "wakayamahigashi"
+        },
+        {
+          "display": "智辯和歌山",
+          "score": 3,
+          "won": false,
+          "name": "智辯和歌山",
+          "slug": null
+        }
+      ]
+    },
+    {
       "date": "2025-09-06",
       "season": "autumn",
       "tournament": "令和7年度秋季近畿地区高等学校野球大会和歌山県一次予選",

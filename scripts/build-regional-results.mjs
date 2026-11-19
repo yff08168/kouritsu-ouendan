@@ -11007,6 +11007,29 @@ const wakayama = {
     return this.readSheet(raw, season, { champion, runnerUp: null }) ?? [];
   },
 
+  /**
+   * ★★★**枝の下に「3位決定戦」の箱が付く紙がある**（2026-11-20。2026年秋季の県二次予選・全結果）。
+   *
+   *     ⑧ 田辺 5            ← 枝のいちばん下のスロット（y=328）
+   *     3位決定戦          （y=239）
+   *     A 那賀 0            ← **得点が1列目（x=241）にもう2つ**
+   *     B 田辺 2
+   *
+   * **箱の得点（0・2）が1回戦の帯の数字として拾われ、「1回戦の数字が試合数の2倍にならない」で組み立てに落ちた**
+   * （紙の勝ち上がり校は読めているのに、組み立てられなかった）。
+   * ★**3位決定戦は勝ち抜きの枝ではない**（`buildRegionalBracket` も外す）ので、**箱ごと読まない。**
+   * ★**「枝のいちばん下のスロットより下にあるときだけ」切る** —— 枝の途中に3位決定戦のラベルがある紙
+   *   （夏・他県）の本物の行を巻き込まない。★**ラベルがなければ何も変えない**（既存の年は1バイトも変わらない）。
+   */
+  trimThirdPlaceBox(raw) {
+    const text = (l) => normalize(l.text.replace(/\t/g, "")).replace(/[\s　]/g, "");
+    const label = raw.lines.find((l) => /^[3３三]位決定戦$/.test(text(l)));
+    if (!label) return raw;
+    const g = this.historyGeometry(raw);
+    if (!g || !(label.y < g.yLo)) return raw;
+    return { ...raw, lines: raw.lines.filter((l) => l.y > label.y + 4) };
+  },
+
   /** 大会履歴のPDFを1枚読む。**検算に落ちたら1試合も返さない** */
   readHistorySheet(raw, season, link) {
     const label = `${link.group.name} ${link.year}年度`;
@@ -11015,6 +11038,7 @@ const wakayama = {
     // ★スロット番号と開き括弧が1つの断片になっている紙（`11 (`）
     page = splitLeadingMark(page, /^(\d{1,3})\s*([(（])$/);
     page = this.normalizeSlotMarks(page);
+    page = this.trimThirdPlaceBox(page);
 
     const tournament = this.historyTitle(page);
     if (!tournament) {

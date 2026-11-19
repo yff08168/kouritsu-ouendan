@@ -173,7 +173,52 @@ function readBracketTemplates(text) {
   // {{Round…}} の中身を取る。入れ子は無い
   for (const m of text.matchAll(/\{\{Round[^|}]*\|([\s\S]*?)\n\}\}/g)) {
     let round = null;
-    for (const line of m[1].split("\n")) {
+    /*
+      ★★**回戦の見出し（`RD1=` `RD2=` …）が先頭にまとめて並び、試合の行が回戦の印を持たない形がある**
+      （2026-11-20。第21回選抜＝1949年春の `{{Round8`）。
+
+          {{Round8
+          |RD1=1回戦
+          |RD2=準々決勝
+          |RD3=準決勝
+          ||'''芦屋'''|'''7x'''|慶応二|6      ← 1回戦（4試合）
+          ||'''大鉄'''|'''4'''|岡崎|0
+          …                                  ← 準々決勝（2試合）→ 準決勝（1試合）
+
+      ★**そのままだと全部が最後の見出し（準決勝）になり**、表が組めない（14試合が「準決勝」になっていた）。
+      ★**行の数が `{{Round<N>` の N−1 ちょうどで、見出しの数が log2(N) のときだけ、並びの順で
+      N/2・N/4・…・1 試合ずつ回戦に割り当てる。** 形が合わなければ今までどおり（当て推量をしない）。
+    */
+    const lines = m[1].split("\n");
+    const isRd = (l) => /^\s*\|?\s*RD\d+\s*=/.test(l);
+    const isRow = (l) => l.startsWith("|") && !isRd(l) && stripTemplates(l).split("|").length - 1 >= 5;
+    let positional = null;
+    {
+      const n = Number(m[0].match(/^\{\{Round(\d+)/)?.[1]);
+      const rd = lines.filter(isRd).map((l) => l.match(/=\s*(.*)$/)?.[1]?.trim() ?? "");
+      const rows = lines.filter(isRow);
+      const lastRd = lines.map(isRd).lastIndexOf(true);
+      const firstRow = lines.findIndex(isRow);
+      if (
+        Number.isInteger(n) &&
+        n >= 4 &&
+        (n & (n - 1)) === 0 &&
+        rd.length === Math.log2(n) &&
+        rd.every((x) => x && x !== "-") &&
+        rows.length === n - 1 &&
+        lastRd < firstRow
+      ) {
+        positional = [];
+        let size = n / 2;
+        for (const name of rd) {
+          for (let i = 0; i < size; i++) positional.push(name);
+          size /= 2;
+        }
+      }
+    }
+    let rowNo = 0;
+    for (const line of lines) {
+      const rowIdx = isRow(line) ? rowNo++ : -1;
       /*
         ★★**ブロックの最初の `RD1=` にはパイプが付いていない**（2026-08-26）。
         `{{Round16 no third|RD1=1回戦` と**テンプレート名と同じ行から始まる**ため。
@@ -229,7 +274,8 @@ function readBracketTemplates(text) {
       if (!scoreA || !scoreB) continue;
       const { md, note } = parseLabel(label);
       games.push({
-        round,
+        // ★見出しが先頭にまとまっている形は、並びの順で回戦を決める（`positional`。上の説明）
+        round: positional && rowIdx >= 0 ? positional[rowIdx] : round,
         md,
         note,
         teams: [
@@ -586,6 +632,57 @@ function forfeitsOf(text) {
   return { won, lost };
 }
 
+/**
+ * 不戦勝の**試合**（回戦つき）を読む。2026-11-20 に足した。
+ *
+ * ------------------------------------------------------------------
+ * ★★ なぜ要るか
+ *
+ *   不戦勝は**試合として出さない**（`games` に入れない。試合数・各回の得点・直接対決を狂わせない）が、
+ *   **トーナメント表は「どの試合に勝って次へ来たか」で枝を組む**ので、
+ *   **辞退した学校の前の試合が行き場を失い、表がまるごと組めなくなる**（2021年夏・2022年春・2025年夏）。
+ *   ★**だから別の小さな生成物（`koshien-walkovers.json`）に取っておく。** 表の枝を組むときだけ使う。
+ *
+ * ★**形は2つある**（`forfeitsOf` の注記と同じ）。**（不戦勝）が付いているほうが勝者。**
+ *
+ *     |{{Efn|…}}|'''智弁和歌山'''（不戦勝）||宮崎商|      …… 日付・注記のセルが先頭に付くことがある
+ *     ||広島商||'''大阪桐蔭'''（不戦勝）|                  …… 辞退した側が先
+ *
+ * ★**回戦はそのブロック（`RDn=` の見出し）から**。回戦が分からない不戦勝は返さない（当て推量をしない）。
+ */
+function readWalkovers(text) {
+  const out = [];
+  for (const m of text.matchAll(/\{\{Round[^|}]*\|([\s\S]*?)\n\}\}/g)) {
+    let round = null;
+    for (const line of m[1].split("\n")) {
+      const rd = line.match(/^\s*\|?\s*RD\d+\s*=\s*(.*)$/);
+      if (rd) {
+        round = rd[1].trim() === "-" ? null : rd[1].trim();
+        continue;
+      }
+      if (!line.includes("（不戦勝）")) continue;
+      const cleaned = stripTemplates(line)
+        .replace(/<ref[^>]*>.*?<\/ref>/gs, "")
+        .replace(/<ref[^>]*\/>/g, "")
+        .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, "$2");
+      const cells = cleaned
+        .split("|")
+        .map((c) => c.trim())
+        .filter(Boolean)
+        // 日付（「8月19日（3）」など）のセルは校名ではない
+        .filter((c) => !/^\d+月\d+日/.test(c));
+      const winnerCell = cells.find((c) => c.includes("（不戦勝）"));
+      const loserCell = cells.find((c) => !c.includes("（不戦勝）"));
+      if (!winnerCell || !loserCell || !round) continue;
+      const winner = cleanName(winnerCell.replace("（不戦勝）", ""));
+      const loser = cleanName(loserCell);
+      if (!winner || !loser || winner.length > 10 || loser.length > 10) continue;
+      out.push({ round, winner, loser });
+    }
+  }
+  return out;
+}
+
 
 /**
  * その大会の「代表校」の表から **校名 → 都道府県** を読む。
@@ -874,6 +971,10 @@ function readTournament(entry, summary) {
   const year = entry.year;
   // ★代表校の表から都道府県を拾って添える（同名の別校に当てないため）
   const prefs = prefectureOfTeams(t, teams);
+  // ★不戦勝の試合は `games` に入れず、表の枝を組むためだけに別に取っておく（`readWalkovers`）
+  for (const w of readWalkovers(t)) {
+    WALKOVERS.push({ year, season: entry.season, round: w.round, winner: w.winner, loser: w.loser });
+  }
 
   return games.map((g) => ({
     // ★`leftFirst` は検算用の内部の印。生成物には出さない
@@ -893,6 +994,10 @@ function readTournament(entry, summary) {
     })),
   }));
 }
+
+/** 不戦勝の試合（大会ごと）。`koshien-walkovers.json` に書く */
+const WALKOVERS = [];
+const OUT_WALKOVERS = path.join(ROOT, "src", "lib", "data", "koshien-walkovers.json");
 
 async function main() {
   // 大会ごとの出場校数・試合数（別の生成物。検算に使う）
@@ -953,6 +1058,16 @@ async function main() {
   const file = JSON.stringify(out, null, 1) + "\n";
   writeFileSync(OUT, file, "utf8");
   console.log(`書き出した: ${path.relative(ROOT, OUT)}（${Math.round(file.length / 1024)}KB）`);
+  // ★不戦勝（表の枝を組むためだけ）。年・季節・回戦の順に並べて、再生成で差分が出ないようにする
+  WALKOVERS.sort(
+    (a, b) =>
+      a.year - b.year ||
+      a.season.localeCompare(b.season) ||
+      a.round.localeCompare(b.round) ||
+      a.winner.localeCompare(b.winner),
+  );
+  writeFileSync(OUT_WALKOVERS, JSON.stringify(WALKOVERS, null, 1) + "\n", "utf8");
+  console.log(`書き出した: ${path.relative(ROOT, OUT_WALKOVERS)}（不戦勝 ${WALKOVERS.length} 試合）`);
 }
 
 await main();

@@ -37,6 +37,7 @@
 import { KOSHIEN_GAMES, teamPrefecture, type KoshienGame } from "@/lib/koshien-games";
 import { JINGU_GAMES, type JinguGame } from "@/lib/jingu-games";
 import { TOURNAMENT_BY_KEY } from "@/lib/data/koshien-tournaments";
+import walkoverRaw from "@/lib/data/koshien-walkovers.json";
 import type { RegionalGame, RegionalSeason } from "@/lib/regional-results";
 import type { SchoolResolver } from "@/lib/school-name-index";
 
@@ -257,6 +258,48 @@ export function toRegionalGames(
       .filter(Boolean)
       .join("・") || null,
   }));
+}
+
+/**
+ * その大会の**不戦勝**を、表の枝を組むためだけの試合にして返す（甲子園のみ）。
+ *
+ * ★★**試合の一覧・集計には混ぜないこと。** 試合は行われていない（`walkover: true`。得点は 0 を入れてあるが出さない）。
+ *   混ぜるのは **`buildRegionalBracket` に渡す配列だけ**。
+ *   ★**辞退した学校の前の試合が行き場を失い、表が組めなかった**（2021年夏・2022年春・2025年夏。
+ *   出どころは `scripts/build-koshien-games.mjs` の `readWalkovers`）。
+ */
+export function walkoverGamesOf(
+  t: NationalTournament,
+  resolve: SchoolResolver,
+): RegionalGame[] {
+  if (t.kind !== "koshien") return [];
+  const prefOf = new Map<string, string | undefined>();
+  for (const g of t.games) {
+    for (const x of g.teams) prefOf.set(x.display, (x as { pref?: string }).pref);
+  }
+  const team = (display: string, won: boolean) => {
+    const school = resolve(display, prefOf.get(display));
+    return {
+      display,
+      name: school?.name ?? display,
+      slug: school?.slug ?? null,
+      ...(school && !school.slug ? { closed: true } : {}),
+      score: 0,
+      won,
+    };
+  };
+  return (walkoverRaw as { year: number; season: string; round: string; winner: string; loser: string }[])
+    .filter((w) => w.year === t.year && w.season === t.season)
+    .map((w) => ({
+      date: null,
+      season: t.season as RegionalSeason,
+      tournament: t.name,
+      round: w.round,
+      venue: null,
+      teams: [team(w.winner, true), team(w.loser, false)],
+      note: "不戦勝",
+      walkover: true,
+    }));
 }
 
 /**

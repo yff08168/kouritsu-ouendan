@@ -20,6 +20,7 @@ import {
   publicEntrants,
   supplementSource,
   toRegionalGames,
+  walkoverGamesOf,
 } from "@/lib/national-tournaments";
 import { buildRegionalBracket } from "@/lib/regional-bracket";
 import { buildNationalLead } from "@/lib/national-lead";
@@ -106,7 +107,8 @@ export default async function KoshienTournamentPage({ params }: Props) {
     ★**古い大会は回戦の名前が付いていない試合がある**ので、そこは組めない。
     **「だいたい合っている表」は出さない。**
   */
-  const bracket = buildRegionalBracket(games);
+  // ★不戦勝は表の枝を組むときだけ混ぜる（試合の一覧・集計には入れない。`walkoverGamesOf`）
+  const bracket = buildRegionalBracket([...games, ...walkoverGamesOf(t, resolve)]);
   const entrants = publicEntrants(t, resolve);
   const f = finalists(t);
 

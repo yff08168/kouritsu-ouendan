@@ -16,7 +16,7 @@ import type { RegionalTeam } from "@/lib/regional-results";
  *   得点は結び目の出口の線の上下（上のチームが上、下のチームが下）。
  *   **シードの校名は長い線で、出る回戦の結び目まで伸びる。**
  *
- *   ★★**勝ったチームの得点・勝ち上がる線・結び目の縦線の勝った側の半分・勝ち上がった校名は赤。**
+ *   ★★****赤にするのは線だけ**（勝ち上がる線・結び目の縦線の勝った側の半分。運営者の指示 2026-11-20「赤くするのは線だけで良い。校名まで赤くする必要なし」）。校名・得点・優勝校は黒で、勝った側は太字。**
  *   負けた側は黒（灰）。**引き分けは勝者なし**（赤にしない）。
  *   ★**オレンジ（accent）は公立の印のまま**（これまでどおり）。**赤と取り違えないよう、
  *   公立は「校名の箱をオレンジの枠にする」**（面で塗らず、枠線だけ）。
@@ -141,6 +141,8 @@ export function RegionalBracket({
   const sw = (red: boolean) => (red ? 2.25 : 1.5);
 
   const champion = root.winner !== null ? root.game.seats[root.winner].team : null;
+  // 不戦勝（試合が行われていない枝）。注記で「N試合と不戦勝M件」と分けて書く
+  const walkoverCount = nodes.filter((n) => n.game.game.walkover).length;
   const label = (n: Node) => n.game.round;
 
   return (
@@ -263,7 +265,7 @@ export function RegionalBracket({
                   fontSize={12.5}
                   fontWeight={advanced ? 700 : 500}
                   textAnchor="middle"
-                  fill={advanced ? RED : INK}
+                  fill={INK}
                   textLength={tooLong ? NAME_W - 12 : undefined}
                   lengthAdjust={tooLong ? "spacingAndGlyphs" : undefined}
                 >
@@ -297,6 +299,17 @@ export function RegionalBracket({
             {nodes.map((n) => {
               const [u, d] = n.game.seats;
               const x = joinX(n.col);
+              // ★不戦勝は試合が行われていないので、得点の代わりに「不戦勝」と出す（0対0にしない）
+              if (n.game.game.walkover) {
+                return (
+                  <g key={`t${n.game.index}`}>
+                    <text x={x + 6} y={n.outY - 4} fontSize={10.5} fontWeight={700} fill={INK}>
+                      不戦勝
+                    </text>
+                    <title>{label(n)}</title>
+                  </g>
+                );
+              }
               return (
                 <g key={`t${n.game.index}`}>
                   <text
@@ -304,7 +317,7 @@ export function RegionalBracket({
                     y={n.outY - 4}
                     fontSize={12}
                     fontWeight={u.team.won ? 700 : 400}
-                    fill={u.team.won ? RED : MUTED}
+                    fill={u.team.won ? INK : MUTED}
                     style={{ fontVariantNumeric: "tabular-nums" }}
                   >
                     {u.team.score}
@@ -314,7 +327,7 @@ export function RegionalBracket({
                     y={n.outY + 14}
                     fontSize={12}
                     fontWeight={d.team.won ? 700 : 400}
-                    fill={d.team.won ? RED : MUTED}
+                    fill={d.team.won ? INK : MUTED}
                     style={{ fontVariantNumeric: "tabular-nums" }}
                   >
                     {d.team.score}
@@ -327,10 +340,10 @@ export function RegionalBracket({
             {/* ---- 優勝（決勝の勝者）---- */}
             {champion && (
               <>
-                <text x={X_CHAMP + 8} y={root.outY - 8} fontSize={10.5} fontWeight={700} fill={RED}>
+                <text x={X_CHAMP + 8} y={root.outY - 8} fontSize={10.5} fontWeight={700} fill={MUTED}>
                   優勝
                 </text>
-                <text x={X_CHAMP + 8} y={root.outY + 12} fontSize={14} fontWeight={700} fill={RED}>
+                <text x={X_CHAMP + 8} y={root.outY + 12} fontSize={14} fontWeight={700} fill={INK}>
                   {champion.display}
                 </text>
               </>
@@ -340,9 +353,11 @@ export function RegionalBracket({
       </BracketScroller>
 
       <p className="mt-2 text-xs leading-relaxed text-ink-faint">
-        ※ <strong className="font-medium" style={{ color: RED }}>赤</strong>は勝ったチームと得点、勝ち上がる線です。
+        ※ <strong className="font-medium" style={{ color: RED }}>赤い線</strong>が勝ち上がり（勝った側は太字）です。
         <strong className="font-medium text-accent-800">オレンジの枠</strong>は公立高校（校名を押すと学校ページへ）。
-        <br />※ この表は{bracket.total}試合から組み直したものです。
+        <br />※ この表は
+        {bracket.total - walkoverCount}試合
+        {walkoverCount > 0 ? `と不戦勝${walkoverCount}件` : ""}から組み直したものです。
         <strong className="font-medium">私立を含む全試合</strong>
         で組んでいます（枝が切れると勝ち上がりが追えないため）。
       </p>

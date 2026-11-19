@@ -11,7 +11,8 @@ import type { BracketGame, JinguBracket } from "@/lib/jingu-bracket";
  *   真ん中から次の回戦へ線を出す。** 得点は結び目の線の上下（上のチームが上、下のチームが下）に書く。
  *   ★**シード（2回戦から）の校名は長い線で2回戦の結び目まで伸びる。**
  *
- * ★★ **勝ったチームと得点、勝ち上がる線は赤**。負けた側・まだ終わっていない試合は黒（灰）。
+ * ★★ **赤にするのは線だけ**（運営者の指示 2026-11-20「赤くするのは線だけで良い。校名まで赤くする必要なし」）。
+ *   校名・得点・優勝校は黒で、**勝った側は太字**。負けた側・まだ終わっていない試合の線は黒。
  *   結び目の縦線は**勝った側の半分だけ赤**にする（添付の表のとおり）。
  *   **途中の得点は出すが赤にしない**（勝者は開始から3時間たった試合だけ。`isFinished`）。
  * ★**オレンジ（accent）は使わない** —— 公立の印と取り違えるので、運営者が指定した赤を別に持つ。字と線だけ。
@@ -94,7 +95,7 @@ export function JinguBracketCard({
     { name: r1[1].teams[1].name, won: r1[1].teams[1].won },
     { name: r2[3].teams[1].name, won: r2[3].teams[1].won },
   ];
-  // 校名の行は「その学校が最初の1勝をしていれば」赤（勝ち上がった学校）。2回戦以降の勝ちも含める
+  // 校名の行は「その学校が1勝でもしていれば」太字（勝ち上がった学校）。赤にはしない
   const advanced = new Set<string>();
   for (const g of [...r1, ...r2, ...sf, f]) for (const t of g.teams) if (t.won && t.name) advanced.add(t.name);
 
@@ -165,9 +166,9 @@ export function JinguBracketCard({
             {[no, period].filter(Boolean).join("　")}
             {no || period ? "　" : ""}
             <span style={{ color: RED }} className="font-bold">
-              赤
+              赤い線
             </span>
-            は勝ったチームと得点
+            が勝ち上がり（勝った側は太字）
           </p>
         </div>
         <Link
@@ -287,7 +288,7 @@ export function JinguBracketCard({
                   fontSize={13}
                   fontWeight={red ? 700 : 500}
                   textAnchor="middle"
-                  fill={r.name ? (red ? RED : INK) : MUTED}
+                  fill={r.name ? INK : MUTED}
                   fontStyle={r.name ? "normal" : "italic"}
                 >
                   {r.name ?? "未定"}
@@ -308,7 +309,7 @@ export function JinguBracketCard({
                       y={j.outY - 5}
                       fontSize={13}
                       fontWeight={j.up.won ? 700 : 400}
-                      fill={j.up.won ? RED : MUTED}
+                      fill={j.up.won ? INK : MUTED}
                       style={{ fontVariantNumeric: "tabular-nums" }}
                     >
                       {j.up.score}
@@ -318,7 +319,7 @@ export function JinguBracketCard({
                       y={j.outY + 15}
                       fontSize={13}
                       fontWeight={j.low.won ? 700 : 400}
-                      fill={j.low.won ? RED : MUTED}
+                      fill={j.low.won ? INK : MUTED}
                       style={{ fontVariantNumeric: "tabular-nums" }}
                     >
                       {j.low.score}
@@ -336,7 +337,7 @@ export function JinguBracketCard({
           })}
 
           {/* ---- 優勝 ---- */}
-          <text x={X.champ + 8} y={jF.outY - 8} fontSize={10.5} fontWeight={700} fill={champion ? RED : MUTED}>
+          <text x={X.champ + 8} y={jF.outY - 8} fontSize={10.5} fontWeight={700} fill={MUTED}>
             優勝
           </text>
           <text
@@ -344,7 +345,7 @@ export function JinguBracketCard({
             y={jF.outY + 12}
             fontSize={14}
             fontWeight={700}
-            fill={champion ? RED : MUTED}
+            fill={champion ? INK : MUTED}
             fontStyle={champion ? "normal" : "italic"}
           >
             {champion ?? "未定"}
@@ -360,7 +361,7 @@ export function JinguBracketCard({
 
       <p className="mt-2 text-[0.6875rem] leading-relaxed text-ink-faint">
         主催者（日本学生野球協会）の発表を約5分ごとに取り直しています。得点が出ていても試合の途中のことがあり、
-        勝ちの印（赤）は開始から3時間たった試合にだけ付けています。
+        勝ちの印（赤い線・太字）は開始から3時間たった試合にだけ付けています。
       </p>
     </section>
   );

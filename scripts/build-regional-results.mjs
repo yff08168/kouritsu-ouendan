@@ -2711,6 +2711,8 @@ const niigata = {
       if (!sheets) continue;
 
       const found = [];
+      /** 「計」が空で刷られた（中断した）試合。結果としては出さない（下の説明） */
+      const suspended = [];
       let fileYear = null;
       for (const sheet of sheets) {
         if (this.SKIP_SHEETS.test(sheet.name)) continue;
@@ -2857,6 +2859,31 @@ const niigata = {
             const nameA = rowA[start] ?? "";
             const nameB = rowB[start] ?? "";
             if (!nameA || !nameB || !date) return;
+            /*
+              ★★★**「計」の欄が両チームとも空の試合は、中断した試合。結果として出さない**（2026-11-20）。
+
+              2026年秋の3回戦で、雨で3回までしか行われなかった試合が
+              `新発田中央 0 0 2 | 計が空 ／ 三条 0 0 | 計が空` と刷られていた。
+              **欠けた「計」をイニングの合計で埋める読み方（上の `scoreOf`）が、
+              この試合を「新発田中央 2-0 三条」の完了した試合として読んだ。**
+              翌日に**最初からやり直した試合**（11-1・5回コールド）が別の行にあるので、
+              **同じ顔合わせの3回戦が2つ**になり、トーナメント表の検算
+              （同じ試合が2つの試合へ繋がる）に落ちて、**大会ページの表が出なかった。**
+
+              ★**中断した試合は結果ではない**（山梨・岐阜・愛知でも同じ扱い。AGENTS の
+              「`Number("")` は 0 になる」と同じ種類の取り違え）。
+              ★**「計」の列があるのに、両チームとも数字が入っていないときだけ**捨てる。
+              片方だけ空・「計」の列そのものが無いファイルは今までどおり
+              （イニングの合計で読む）なので、既存の年は変わらない。
+            */
+            if (
+              totalAt >= 0 &&
+              !/^\d+$/.test(rowA[start + totalAt] ?? "") &&
+              !/^\d+$/.test(rowB[start + totalAt] ?? "")
+            ) {
+              suspended.push(`${date} ${nameA}-${nameB}`);
+              return;
+            }
 
             // 球場と回戦も同じ列の範囲から取る（右の試合は球場が違うことがある）
             const head = gameRow.slice(start, end);
@@ -2885,6 +2912,11 @@ const niigata = {
         ★★**試合ごとに日付の年を見て、表が言う年と合うものだけ採る。**
         ★**日付の無い試合は採らない**（この出典は必ず日付を持つ）。
       */
+      if (suspended.length) {
+        console.log(
+          `  ℹ️ 新潟: ${link.tournament} は「計」が空の試合（中断）を ${suspended.length} 件出さない（${suspended.join("、")}）`,
+        );
+      }
       const ofYear = found.filter((g) => g.date && Number(g.date.slice(0, 4)) === year);
       if (ofYear.length !== found.length) {
         console.log(

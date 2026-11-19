@@ -19120,9 +19120,48 @@ async function main() {
         );
       }
 
-      const before = (previousDistrict(adapter.slug)?.games ?? []).filter(
+      const beforeAll = (previousDistrict(adapter.slug)?.games ?? []).filter(
         (g) => g.season === season,
       );
+      /*
+        ★★★**副が足した断片は、主が同じ 年×季節 を持つようになったら捨てる**（2026-11-20）。
+
+        副（`hsbFillAdapter` など）は「主が1試合も持っていない 年×季節」だけを足す。
+        ところが**足したあとで主がその年×季節を持つようになっても、引き継ぎ（下）が
+        副の試合を「今回どこにも出てこなかった大会」として残し続けた。**
+        2026年の秋は、9月に連盟の紙がまだ無かった県で HSB flash が入り、
+        あとから連盟の紙が出ると、**同じ大会が2つの名前で並んだ**:
+
+          群馬   主「令和8年度第79回秋季関東…群馬県予選」56試合 ／ 副「2026年 令和8年秋季関東…群馬県大会」55試合
+          石川   主「第155回北信越…石川県大会」38試合           ／ 副「2026年 秋季北信越…石川県大会」5試合
+          新潟   主 64試合 ／ 副 7試合       沖縄   主 49試合 ／ 副 5試合
+
+        ★**名前の並びで `-2` を付けるので、断片のほうが `2026-autumn`（県のページが先に出すほう）になり、
+        完全な大会が `-2` に追いやられた**（トーナメント表が「組めていません」と出ていた）。
+        検算はどれも通る（断片も完全な大会も、それ自体は矛盾しない）。**気づけたのは大会の一覧を見たから。**
+
+        ★**「主が持っている年×季節」は `coveredByPrimary` が決める**（上の `add` と同じ鍵）。
+        ★**自分（副）の出所が付いている試合だけを捨てる。** 主の試合には触らない。
+        ★**主が薄い年でも、1試合でもあれば副は入らない**という決めごと（`hsbFillAdapter`）のとおり。
+      */
+      const before = coveredByPrimary
+        ? beforeAll.filter((g) => {
+            if (g.source?.name !== adapter.gameSource?.name) return true;
+            const y = g.date?.slice(0, 4) ?? yearOfTournament(g.tournament, [g]);
+            return !coveredByPrimary.has(`${g.season}\t${y ?? "?"}`);
+          })
+        : beforeAll;
+      if (before.length !== beforeAll.length) {
+        const names = [
+          ...new Set(
+            beforeAll.filter((g) => !before.includes(g)).map((g) => g.tournament ?? "大会名なし"),
+          ),
+        ];
+        console.log(
+          `  ℹ️ ${season}: 主が持つようになった 年×季節 の副の断片を ${beforeAll.length - before.length} 試合捨てた` +
+            `（${names.join("・")}）`,
+        );
+      }
       if (seasonGames.length === 0) {
         if (before.length) {
           /*

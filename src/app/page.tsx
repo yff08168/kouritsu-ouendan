@@ -10,7 +10,9 @@ import { RegionalResultsCard } from "@/components/results/RegionalResultsCard";
 import { ResultsTicker } from "@/components/results/ResultsTicker";
 import { LiveTodayCard } from "@/components/results/LiveTodayCard";
 import { JinguFeatureBanner } from "@/components/jingu/JinguFeatureBanner";
-import { jinguAnnounceYear } from "@/lib/jingu-live";
+import { getJinguLive, jinguAnnounceYear, jinguBracketWindow } from "@/lib/jingu-live";
+import { JinguBracketCard } from "@/components/jingu/JinguBracketCard";
+import { buildJinguBracket } from "@/lib/jingu-bracket";
 import { SenbatsuFeatureBanner } from "@/components/features/SenbatsuFeatureBanner";
 import { senbatsu21seikiFeatureYear } from "@/lib/content/senbatsu-21seiki";
 import { SchoolCard } from "@/components/schools/SchoolCard";
@@ -59,6 +61,15 @@ export default async function HomePage() {
   // 明治神宮大会の特設ページの案内（日付の窓と生成物だけで決める。取りに行かない）
   const jinguBannerYear = jinguAnnounceYear();
   const senbatsu21seikiYear = senbatsu21seikiFeatureYear();
+  /*
+    ★★**神宮のトーナメント表**（2026-11-20。運営者の指示）。**大会の期間（11/10〜11/30）だけ**主催者の表を取りに行く
+    （`jinguBracketWindow`。取りに行くとトップが5分で作り直される）。**取れなくてもトップは出す**（バナーに戻る）。
+  */
+  const jinguLive =
+    jinguBannerYear !== null && jinguBracketWindow()
+      ? await getJinguLive(jinguBannerYear).catch(() => null)
+      : null;
+  const jinguBracket = jinguLive ? buildJinguBracket(jinguLive, new Date()) : null;
 
   /*
     「今夏の甲子園に出場している公立校」。
@@ -169,7 +180,16 @@ export default async function HomePage() {
       */}
       {jinguBannerYear !== null && (
         <Container className="mt-4 sm:mt-5">
-          <JinguFeatureBanner year={jinguBannerYear} />
+          {jinguLive && jinguBracket ? (
+            <JinguBracketCard
+              bracket={jinguBracket}
+              year={jinguBannerYear}
+              period={jinguLive.period}
+              no={jinguLive.no}
+            />
+          ) : (
+            <JinguFeatureBanner year={jinguBannerYear} />
+          )}
         </Container>
       )}
 

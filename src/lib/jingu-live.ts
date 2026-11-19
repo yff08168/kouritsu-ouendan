@@ -305,6 +305,19 @@ export function jinguFeatureYear(now: Date = new Date()): number | null {
 }
 
 /**
+ * トップにトーナメント表を置く期間か（日本時間の11月10日〜30日）。
+ *
+ * ★★**表は主催者のページを取りに行く**（`getJinguLive`。`fetch` の期限は5分）ので、
+ * **置いたページは5分で作り直される。** トップは普段10分なので、**必要な期間だけに絞る**
+ * （窓の外は何も取りに行かない。AGENTS.md「期限をページより短くすると…」）。
+ * ★大会は11月中旬〜下旬（2026年は19〜24日）。**始まる前も出す**（出場校と組み合わせが出る）。
+ */
+export function jinguBracketWindow(now: Date = new Date()): boolean {
+  const jst = new Date(now.getTime() + 9 * 60 * 60 * 1000);
+  return jst.getUTCMonth() + 1 === 11 && jst.getUTCDate() >= 10;
+}
+
+/**
  * 案内（トップのバナーなど）を出す年。**出さないときは null。**
  *
  * `jinguFeatureYear` に加えて、**その年の大会が生成物（`jingu-games.json`）に入ったら出さない**

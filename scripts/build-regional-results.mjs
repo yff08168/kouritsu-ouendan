@@ -13079,7 +13079,14 @@ const tochigi = {
     const out = [];
     for (const block of html.split(/<div class="gamescore">/).slice(1)) {
       const round = pickRound(
-        normalize(plain(block.match(/<td>\s*[（(]([^）)]*?[回戦決勝][^）)]*?)[）)]\s*<\/td>/)?.[1] ?? "")),
+        normalize(
+          plain(
+            block.match(/<td>\s*[（(]([^）)]*?[回戦決勝][^）)]*?)[）)]\s*<\/td>/)?.[1] ??
+              // ★決勝のページは括弧が無い（`<td>決勝戦</td>`）。**括弧つきを先に見る**（通常の試合は今までどおり）
+              block.match(/<td>\s*(決勝戦?)\s*<\/td>/)?.[1] ??
+              "",
+          ),
+        ),
       );
       /*
         ★★★**「ノーゲーム」と書いてある試合は出さない**（2026-08-30 その2）。
@@ -13100,7 +13107,13 @@ const tochigi = {
         1行目は見出し（校名 1 2 3 … 計）なので、**`<th>` を持つ行のうち
         2行目・3行目**が両校。
       */
-      const board = block.match(/<div class="board">([\s\S]*?)<\/div>/)?.[1] ?? "";
+      /*
+        ★★**決勝のページだけ作りが違う**（2026-11-20。夏の決勝が丸ごと取れていなかった）。
+        **得点表の `div` が `class="board mgT10 "` と別の語を足している**ので、`class="board"` ちょうどを求めると
+        **決勝だけ得点表が見つからず、試合ごと落ちていた**（栃木の夏2026は準決勝までで終わっていた）。
+        ★**`board` で始まる class を受ける。** 回戦は `（決勝）` の括弧が無く `<td>決勝戦</td>` と書かれている（下）。
+      */
+      const board = block.match(/<div class="board[^"]*">([\s\S]*?)<\/div>/)?.[1] ?? "";
       const rows = [...board.matchAll(/<tr>([\s\S]*?)<\/tr>/g)].map((r) => r[1]);
       const nameOf = (row) =>
         normalize(plain(row.match(/<th[^>]*>([\s\S]*?)<\/th>/)?.[1] ?? "")).replace(/\s+/g, "");

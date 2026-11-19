@@ -516,7 +516,7 @@ const KANJI_DIGIT = { 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, �
   ★★★**「決 勝」のように、字のあいだに空白が入っている出典がある**（2026-11-20。埼玉・佐賀）。
 
     埼玉   10月6日 （決 勝）          佐賀   【決 勝】さがみどりの森
-  
+
   **`決勝` が連続していないと拾えない**ので、**決勝だけ `round: null` になり**、
   トーナメント表の検算が「いちばん深い回戦が準決勝2試合」で落ちる。
   **埼玉は34大会すべて（2015年〜）で決勝が null だった**（表が組めた大会が0）。
@@ -532,6 +532,65 @@ const pickRound = (s) => {
   const m = t.match(/準々決勝|準決勝|決勝|\d+回戦|代表決定戦|3位決定戦/);
   return m?.[0] ?? null;
 };
+
+/**
+ * ★★★**同じ学校が同じ回戦に2度出ているとき、先の試合を1つ前の回戦に直す**（2026-11-20。栃木・神奈川）。
+ *
+ * 出典が**回戦名を書き誤る／まとめて書く**と、**2回戦に勝った学校が同じ「2回戦」でまた戦う**形になる:
+ *
+ *   栃木   1回戦の最後の2試合（9/12・2回戦から出るシード校の初戦）に「（2回戦）」と刷っていた
+ *          （足利大附 ― 連合、宇都宮中央 ― 白鷗大足利。どちらも9/19にもう一度「2回戦」を戦っている）
+ *   神奈川 9/5のページが `1・2回戦` とまとめて書かれ、**`pickRound` が最初に当たる `2回戦` を採る**ので
+ *          その日の1回戦の試合が**全部「2回戦」**になる（実測18試合）
+ *
+ * トーナメント表の検算（決勝から辿れない試合がある）に落ちて、大会ページの表が出なかった。
+ * **1つの大会で同じ学校が同じ回戦に2度出ることはない。**
+ * ★数えても合う: 栃木（49チーム）は 1回戦17・2回戦16・3回戦8・準々決勝4・準決勝2・決勝1（計48）。
+ * 直したあとの形がちょうどこれになる（直す前は 1回戦15・2回戦18）。
+ *
+ * ★★**推測で回戦を動かさない。** 次を全部満たすときだけ直す:
+ *   ・同じ学校が同じ「◯回戦」で2試合あり、**先の試合に勝っている**
+ *     （負けた学校が同じ回戦に出ることは、別の誤り＝同名チームで、ここでは扱わない）
+ *   ・その学校に **1つ前の回戦の試合が無い**（あれば何が誤りか決められない）
+ *   ・校名が「連合」ではない（`連合` は別々のチームが同じ名前になっていて、同一のチームとして扱えない）
+ * ★**同じ2校の再試合（引き分け再試合）は動かさない。**
+ * ★**後ろの検算（`regional-bracket.ts`）はそのまま効く。** ここで直しても、
+ *   形が合わなければ表は出ない（**ゆるめていない**）。
+ * ★**直したことは必ずログに出す。**
+ * ★**回戦名を誤ったのが「後ろの」試合のときは、ここでは直せない**（栃木は備考の「ベスト8進出」で先に揃える。
+ *   `tochigi.fixRoundsByNotes`）。**どちらが誤りかは、この規則だけでは決められない。**
+ */
+function fixDoubledRounds(games, tournament, label) {
+  const byTeam = new Map();
+  for (const g of games) {
+    if (!g.round || !/^\d+回戦$/.test(g.round)) continue;
+    for (const t of g.teams) {
+      if (t.display === "連合") continue;
+      if (!byTeam.has(t.display)) byTeam.set(t.display, []);
+      byTeam.get(t.display).push(g);
+    }
+  }
+  for (const [name, list] of byTeam) {
+    const sorted = list.slice().sort((x, y) => String(x.date).localeCompare(String(y.date)));
+    for (let i = 0; i < sorted.length; i++) {
+      const early = sorted[i];
+      const mine = early.teams.find((t) => t.display === name);
+      const dup = sorted.slice(i + 1).find((g) => g.round === early.round);
+      if (!dup || !mine?.won) continue;
+      const pair = (g) => g.teams.map((t) => t.display).sort().join("\t");
+      if (pair(early) === pair(dup)) continue; // 再試合
+      const n = Number(early.round.match(/\d+/)[0]);
+      const lower = `${n - 1}回戦`;
+      if (n < 2 || list.some((g) => g.round === lower)) continue;
+      console.log(
+        `  ℹ️ ${label}: ${tournament} の ${early.date} ${early.teams.map((t) => t.display).join("-")} は ` +
+          `「${early.round}」と書かれているが、${name} は ${dup.date} にも同じ「${early.round}」を戦っている。` +
+          `**「${lower}」に直す**`,
+      );
+      early.round = lower;
+    }
+  }
+}
 
 /**
  * 神奈川高校野球ステーション（`kanagawa-baseball.com`）。
@@ -646,7 +705,7 @@ const kanagawa = {
           if (!m || !home || !away) continue;
           const a = Number(m[1]);
           const b = Number(m[3]);
-          games.push({
+          const game = {
             date: isoDate,
             season,
             tournament,
@@ -658,16 +717,72 @@ const kanagawa = {
               どちらも won: false になる。
             */
             teams: [
-              { display: home, score: a, won: a > b },
-              { display: away, score: b, won: b > a },
+              { display: kanagawaName(home), score: a, won: a > b },
+              { display: kanagawaName(away), score: b, won: b > a },
             ],
-          });
+          };
+          /*
+            ★**`(継続試合)` の印を持ち回る**（下の `dropSupersededContinuations` が読む）。
+            ★**列挙できない項目で付ける** —— 後ろの `{ ...g }`（生成物への書き出し）には入らない。
+          */
+          if (/継続試合/.test(score)) {
+            Object.defineProperty(game, "continued", { value: true, enumerable: false });
+          }
+          games.push(game);
         }
       }
     }
-    return games;
+    /*
+      ★★★**中断した試合（継続試合）は日をまたいで2行載る**（2026-11-20）。
+
+        9/8   光明相模原  1-0 (継続試合)  厚木北        ← 中断した時点の経過
+        9/9   光明相模原  8-5 (継続試合)  厚木北        ← 翌日に終わった結果
+
+      **後の行が結果で、前の行は途中の経過。** そのまま持つと**同じ顔合わせの2回戦が2つ**になり、
+      勝ち上がった側が2つの試合へ繋がって（検算の「同じ試合が2つの試合へ繋がる」）表が出ない。
+      ★**同じ顔合わせの継続試合は、いちばん後の1行だけを残す。**（引き分け再試合は
+      継続試合ではないので触らない。印が付いた行だけを見る。）
+      ★**後の行にも `(継続試合)` が付く** —— 印では最終かどうか決められないので、
+      **同じ顔合わせの後の行があるかどうか**で見る。
+    */
+    const kept = dropSupersededContinuations(games);
+    if (kept.length !== games.length) {
+      console.log(
+        `  ℹ️ 神奈川: 継続試合の途中経過の行を ${games.length - kept.length} 件落とした（同じ顔合わせの後の行が結果）`,
+      );
+    }
+    /*
+      ★★**日付が1日分の「1・2回戦」のようなページは、回戦をまとめて書いている**（上の `pickRound`）。
+      **同じ学校が同じ回戦に2度出ている形を直す**（`fixDoubledRounds`）。
+    */
+    fixDoubledRounds(kept, kept[0]?.tournament ?? null, "神奈川");
+    return kept;
   },
 };
+
+/**
+ * ★★★**神奈川は同じ学校を回戦ごとに書き分ける**（2026-11-20）。
+ * 2026年秋は **9/5が `アレセイア`、3回戦（9/12）が `アレセイア湘南`**。
+ * **トーナメント表は校名で枝をたどる**ので、書き分けがあると勝ち上がった学校が次の回戦で
+ * **別の学校に見え、「決勝から辿れない試合がある」で表が出ない。**
+ * ★**寄せる規則を一般にしない**（同じ大会に `湘南` と `湘南学院`、`横浜` と `横浜商業` …が全部別の学校として出ている）。
+ * **本物の書き分けは、同じ大会の校名の頭の一致を全部出して1組ずつ確かめた**（春・夏・秋の3大会で `アレセイア` だけ）。
+ * **新しい書き分けが見つかったら、ここに1組ずつ足す。**
+ */
+const KANAGAWA_NAME_FIX = { アレセイア: "アレセイア湘南" };
+const kanagawaName = (name) => KANAGAWA_NAME_FIX[name] ?? name;
+
+/** 同じ顔合わせの継続試合は、いちばん後の日の1行だけ残す（`kanagawa.collect` の説明を読むこと） */
+function dropSupersededContinuations(games) {
+  const key = (g) => [g.tournament, ...g.teams.map((t) => t.display).sort()].join("\t");
+  const lastDate = new Map();
+  for (const g of games) {
+    if (!g.continued) continue;
+    const k = key(g);
+    if (!lastDate.has(k) || lastDate.get(k) < g.date) lastDate.set(k, g.date);
+  }
+  return games.filter((g) => !g.continued || lastDate.get(key(g)) === g.date);
+}
 
 /**
  * 埼玉高校野球情報局（`saitama-baseball.com`）。
@@ -13113,57 +13228,9 @@ const tochigi = {
     }
     this.fixDoubledRounds(games, tournament);
   },
-  /**
-   * ★★★**同じ学校が同じ回戦に2度出ているとき、先の試合を1つ前の回戦に直す**（2026-11-20）。
-   *
-   * 2026年秋の紙は、**1回戦の最後の2試合（9/12・2回戦から出るシード校の初戦）に「（2回戦）」と刷っていた**
-   * （足利大附 ― 連合、宇都宮中央 ― 白鷗大足利）。**どちらの学校も9/19にもう一度「2回戦」を戦っている**
-   * （足利大附 14-1 足利、白鷗大足利 11-2 小山南）。**1つの大会で同じ回戦に2度出ることはない。**
-   * 出典どおりに持つと、**2回戦に勝った学校が同じ2回戦でまた戦う**形になり、
-   * トーナメント表の検算（決勝から辿れない試合がある）に落ちて、大会ページの表が出なかった。
-   * ★数えても合う: 49チームの大会は 1回戦17・2回戦16・3回戦8・準々決勝4・準決勝2・決勝1（計48）。
-   * 直したあとの形がちょうどこれになる（直す前は 1回戦15・2回戦18）。
-   *
-   * ★★**推測で回戦を動かさない。** 次を全部満たすときだけ直す:
-   *   ・同じ学校が同じ「◯回戦」で2試合あり、**先の試合に勝っている**
-   *     （負けた学校が同じ回戦に出ることは、別の誤り＝同名チームで、ここでは扱わない）
-   *   ・その学校に **1つ前の回戦の試合が無い**（あれば何が誤りか決められない）
-   *   ・校名が「連合」ではない（`連合` は別々のチームが同じ名前になっていて、同一のチームとして扱えない）
-   * ★**同じ2校の再試合（引き分け再試合）は動かさない。**
-   * ★**後ろの検算（`regional-bracket.ts`）はそのまま効く。** ここで直しても、
-   *   形が合わなければ表は出ない（**ゆるめていない**）。
-   * ★**直したことは必ずログに出す。**
-   */
+  /** ★同じ学校が同じ回戦に2度出ている誤りの直し方は共通（トップレベルの `fixDoubledRounds`。神奈川も使う） */
   fixDoubledRounds(games, tournament) {
-    const byTeam = new Map();
-    for (const g of games) {
-      if (!g.round || !/^\d+回戦$/.test(g.round)) continue;
-      for (const t of g.teams) {
-        if (t.display === "連合") continue;
-        if (!byTeam.has(t.display)) byTeam.set(t.display, []);
-        byTeam.get(t.display).push(g);
-      }
-    }
-    for (const [name, list] of byTeam) {
-      const sorted = list.slice().sort((x, y) => String(x.date).localeCompare(String(y.date)));
-      for (let i = 0; i < sorted.length; i++) {
-        const early = sorted[i];
-        const mine = early.teams.find((t) => t.display === name);
-        const dup = sorted.slice(i + 1).find((g) => g.round === early.round);
-        if (!dup || !mine?.won) continue;
-        const pair = (g) => g.teams.map((t) => t.display).sort().join("\t");
-        if (pair(early) === pair(dup)) continue; // 再試合
-        const n = Number(early.round.match(/\d+/)[0]);
-        const lower = `${n - 1}回戦`;
-        if (n < 2 || list.some((g) => g.round === lower)) continue;
-        console.log(
-          `  ℹ️ 栃木: ${tournament} の ${early.date} ${early.teams.map((t) => t.display).join("-")} は ` +
-            `「${early.round}」と書かれているが、${name} は ${dup.date} にも同じ「${early.round}」を戦っている。` +
-            `**「${lower}」に直す**`,
-        );
-        early.round = lower;
-      }
-    }
+    fixDoubledRounds(games, tournament, "栃木");
   },
 };
 

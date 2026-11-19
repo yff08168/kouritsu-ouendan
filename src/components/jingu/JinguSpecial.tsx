@@ -250,7 +250,8 @@ export async function JinguSpecial({ live }: { live: JinguLive }) {
         */}
         {refreshUntil && (
           <div className="mt-2">
-            <LiveRefresh seconds={300} until={refreshUntil} />
+            {/* 試合は朝8:30〜午後。日本時間の7〜20時だけ取り直す（夜は止める） */}
+            <LiveRefresh seconds={300} until={refreshUntil} activeHours={[7, 20]} />
           </div>
         )}
         <div className="mt-3 space-y-5">

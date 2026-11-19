@@ -23,8 +23,11 @@ import { Pause, Play } from "lucide-react";
 export function LiveRefresh({
   seconds = 60,
   until,
+  activeHours,
 }: {
   seconds?: number;
+  /** 自動更新する時間帯（日本時間の時。`[7, 20]` なら7時以上20時未満）。省くと終日 */
+  activeHours?: [number, number];
   /**
    * この時刻（ISO。`2026-11-24T23:59:00+09:00` など）を過ぎたら自動更新をやめる。
    * ★**明治神宮大会の特設ページ用**（大会の最終日まで。2026-11-19）。省くと止めない（速報ページ）。
@@ -44,6 +47,16 @@ export function LiveRefresh({
         setOn(false);
         return;
       }
+      // ★**試合のない時間帯（日本時間の20時〜7時）は取り直さない**（開きっぱなしのタブが夜通し叩かない）。
+      //   `activeHours` を渡したページだけ。速報ページは渡さない（夏の夜まで試合がある）
+      if (activeHours) {
+        const hour = Number(
+          new Intl.DateTimeFormat("en-GB", { timeZone: "Asia/Tokyo", hour: "2-digit", hour12: false }).format(
+            new Date(),
+          ),
+        );
+        if (hour < activeHours[0] || hour >= activeHours[1]) return;
+      }
       // ★**裏に回っているタブでは取り直さない**（見ていない画面のために叩かない）
       if (document.visibilityState !== "visible") return;
       router.refresh();
@@ -57,7 +70,7 @@ export function LiveRefresh({
     };
     const id = setInterval(tick, seconds * 1000);
     return () => clearInterval(id);
-  }, [on, seconds, until, router]);
+  }, [on, seconds, until, activeHours, router]);
 
   return (
     <div className="flex items-center gap-3 text-xs text-ink-faint">

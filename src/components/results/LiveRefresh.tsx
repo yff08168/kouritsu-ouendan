@@ -20,14 +20,30 @@ import { Pause, Play } from "lucide-react";
  * （キャッシュが変わるのは60秒ごと）。出典への負荷も増えない代わりに、
  * こちらのサーバーを無駄に叩くことになる。
  */
-export function LiveRefresh({ seconds = 60 }: { seconds?: number }) {
+export function LiveRefresh({
+  seconds = 60,
+  until,
+}: {
+  seconds?: number;
+  /**
+   * この時刻（ISO。`2026-11-24T23:59:00+09:00` など）を過ぎたら自動更新をやめる。
+   * ★**明治神宮大会の特設ページ用**（大会の最終日まで。2026-11-19）。省くと止めない（速報ページ）。
+   */
+  until?: string;
+}) {
   const router = useRouter();
   const [on, setOn] = useState(true);
   const [updatedAt, setUpdatedAt] = useState<string | null>(null);
+  const label = seconds % 60 === 0 && seconds >= 120 ? `${seconds / 60}分` : `${seconds}秒`;
 
   useEffect(() => {
     if (!on) return;
     const tick = () => {
+      // ★**終了日を過ぎたら止める**（大会が終わった画面を取り直し続けない）
+      if (until && Date.now() > new Date(until).getTime()) {
+        setOn(false);
+        return;
+      }
       // ★**裏に回っているタブでは取り直さない**（見ていない画面のために叩かない）
       if (document.visibilityState !== "visible") return;
       router.refresh();
@@ -41,7 +57,7 @@ export function LiveRefresh({ seconds = 60 }: { seconds?: number }) {
     };
     const id = setInterval(tick, seconds * 1000);
     return () => clearInterval(id);
-  }, [on, seconds, router]);
+  }, [on, seconds, until, router]);
 
   return (
     <div className="flex items-center gap-3 text-xs text-ink-faint">
@@ -55,7 +71,7 @@ export function LiveRefresh({ seconds = 60 }: { seconds?: number }) {
         {on ? "自動更新を止める" : "自動更新を再開する"}
       </button>
       <span aria-live="polite">
-        {on ? `${seconds}秒ごとに更新` : "自動更新は止まっています"}
+        {on ? `${label}ごとに更新` : "自動更新は止まっています"}
         {updatedAt && `／最終 ${updatedAt}`}
       </span>
     </div>

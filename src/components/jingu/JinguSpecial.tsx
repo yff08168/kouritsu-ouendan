@@ -8,6 +8,7 @@ import { SectionHeading } from "@/components/common/SectionHeading";
 import { LeadText } from "@/components/common/LeadText";
 import { GuideLinkBox } from "@/components/guide/GuideLinkBox";
 import { AdSlot } from "@/components/ads/AdSlot";
+import { LiveRefresh } from "@/components/results/LiveRefresh";
 
 import {
   buildJinguLiveLead,
@@ -164,6 +165,15 @@ export async function JinguSpecial({ live }: { live: JinguLive }) {
     else days.push({ key, label: dayLabel(g), games: [g] });
   }
 
+  // 自動更新を止める時刻（日程表でいちばん遅い日の23:59・日本時間）。日程が空なら出さない
+  const lastGame = live.games.reduce<JinguLiveGame | null>(
+    (a, g) => (!a || g.month * 100 + g.day > a.month * 100 + a.day ? g : a),
+    null,
+  );
+  const refreshUntil = lastGame
+    ? `${live.year}-${String(lastGame.month).padStart(2, "0")}-${String(lastGame.day).padStart(2, "0")}T23:59:00+09:00`
+    : null;
+
   /*
     ★★**過去の神宮大会に出た公立高校。** 生成物（2013〜2025年）から、
     学校マスタに当たった学校を年ごとに並べる。**成績は紙に書いてある回戦の名前のまま**
@@ -232,6 +242,17 @@ export async function JinguSpecial({ live }: { live: JinguLive }) {
           icon={<CalendarDays size={18} />}
           note="約5分ごとに更新"
         />
+        {/*
+          ★**開いたままの画面も5分ごとに取り直す。大会の最終日（日程表のいちばん遅い日）の
+          23:59（日本時間）で止まる**（2026-11-19。運営者の「大会終了日まで自動で更新したい」）。
+          ★間隔はサーバーの期限（5分）と同じ。**短くしても新しい値は来ない。**
+          ★**ISR のまま**（`force-dynamic` にしない）。CDN が返すのでサーバーは動かない。
+        */}
+        {refreshUntil && (
+          <div className="mt-2">
+            <LiveRefresh seconds={300} until={refreshUntil} />
+          </div>
+        )}
         <div className="mt-3 space-y-5">
           {days.map((d) => (
             <div key={d.key}>

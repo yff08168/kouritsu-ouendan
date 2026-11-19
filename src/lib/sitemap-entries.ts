@@ -253,6 +253,8 @@ async function buildSitemapGroups(): Promise<SitemapGroups> {
       priority: 0.7,
     },
     { url: url("/jingu"), lastModified: nationalLast, changeFrequency: "monthly", priority: 0.6 },
+    // ★**明治神宮大会（高校の部）の歴代優勝校**（2026-11-20）。**年ごとの大会ページ（下の nationalPages）とは別**
+    { url: url("/jingu/champions"), lastModified: nationalLast, changeFrequency: "monthly", priority: 0.7 },
     /*
       ★**開催中の明治神宮大会の特設ページ**（2026-11-11）。**日付の窓だけで決める**
       （`jinguFeatureYear`）。主催者のページを取りに行くと sitemap の作り直しが5分ごとになる。

@@ -89,7 +89,8 @@ export type KoshienChampionsData = {
 };
 
 /** 47都道府県（甲子園の区分49件から分割ぶんを外し、北海道・東京を足す）。JIS順 */
-const PREFECTURE_MASTER = [...REGIONAL_ONLY_DISTRICTS, ...PREFECTURES]
+// ★`/jingu/champions`（神宮の歴代優勝校）も同じ47都道府県で数えるので export している
+export const PREFECTURE_MASTER = [...REGIONAL_ONLY_DISTRICTS, ...PREFECTURES]
   .filter((p) => p.id <= 47)
   .map((p) => ({ id: p.id, name: p.name, slug: p.slug }))
   .sort((a, b) => a.id - b.id);

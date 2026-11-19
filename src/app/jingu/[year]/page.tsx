@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CalendarDays, GitBranch, ListOrdered, Trophy } from "lucide-react";
+import { CalendarDays, ChevronRight, GitBranch, ListOrdered, Trophy } from "lucide-react";
 
 import { Container } from "@/components/layout/Container";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
@@ -238,6 +238,16 @@ export default async function JinguTournamentPage({ params }: Props) {
             </li>
           ))}
         </ul>
+        {/* ★**歴代の優勝校**（2026-11-20）。全試合を持っていない古い年（1973年〜）と、地区別・都道府県別の優勝回数へ */}
+        <Link
+          href="/jingu/champions"
+          className="mt-2 flex min-h-11 items-center justify-between gap-3 rounded-lg border border-line px-3 py-2 hover:bg-navy-50"
+        >
+          <span className="min-w-0 flex-1 truncate text-sm font-medium text-ink">
+            歴代の優勝校・準優勝校・地区別の優勝回数
+          </span>
+          <ChevronRight size={16} aria-hidden="true" className="shrink-0 text-ink-faint" />
+        </Link>
       </section>
     </Container>
   );

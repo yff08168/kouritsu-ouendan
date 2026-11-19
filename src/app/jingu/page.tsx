@@ -10,6 +10,7 @@ import { AdSlot } from "@/components/ads/AdSlot";
 
 import { finalists, listJinguTournaments } from "@/lib/national-tournaments";
 import { jinguPrefectureOf } from "@/lib/jingu-games";
+import { JINGU_CHAMPIONS } from "@/lib/data/jingu-champions";
 import { jinguFeatureYear } from "@/lib/jingu-live";
 import { getSchoolNameIndex } from "@/lib/queries/schools";
 
@@ -96,6 +97,22 @@ export default async function JinguIndexPage() {
           <ChevronRight size={18} aria-hidden="true" className="shrink-0 text-accent-500" />
         </Link>
       )}
+
+      {/* ★**歴代の優勝校**（2026-11-20）。全試合を持っている大会（下の一覧）より古い年と、地区別・都道府県別の優勝回数がある */}
+      <Link
+        href="/jingu/champions"
+        className="mt-4 flex min-h-11 items-center justify-between gap-3 rounded-xl border border-line bg-white px-4 py-3 hover:bg-navy-50"
+      >
+        <span className="min-w-0 flex-1">
+          <span className="block text-sm font-bold text-navy-800">
+            歴代の優勝校・準優勝校・決勝スコア
+          </span>
+          <span className="block text-xs text-ink-muted">
+            {Math.min(...JINGU_CHAMPIONS.map((c) => c.year))}年から。地区別・都道府県別の優勝回数もあります
+          </span>
+        </span>
+        <ChevronRight size={18} aria-hidden="true" className="shrink-0 text-ink-faint" />
+      </Link>
 
       <GuideLinkBox className="mt-4" slugs={["senbatsu-selection"]} />
 

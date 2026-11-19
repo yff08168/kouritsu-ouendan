@@ -12842,6 +12842,8 @@ const tochigi = {
         if (!page) continue;
         found.push(...this.parse(page, season, tournament, date, venue));
       }
+      // ★**出典の回戦名の誤りを、備考で揃える**（`fixRoundsByNotes` の説明を読むこと）
+      this.fixRoundsByNotes(found, tournament);
 
       /*
         ---- 検算: 未来の日付が無いか ----
@@ -12977,7 +12979,34 @@ const tochigi = {
       }
       if (teams.length !== 2) continue;
       const [a, b] = teams;
-      out.push({
+      /*
+        ★★★**得点表の「連合」を、見出しの内訳（学校名）に置き換える**（2026-11-20）。
+
+        見出しは `足利大附　―　栃木農業・栃木翔南・エイジェック高等学院・佐野松桜` と**学校名を並べる**のに、
+        **得点表の行は `連合` の2文字**。**別々のチームが同じ「連合」になる**ので、
+        そのまま持つと**1つの連合チームが何度も勝ち上がったことになり**、
+        トーナメント表の検算（同じ試合が2つの試合へ繋がる）に落ちる（2026年春の栃木）。
+        ★**見出しの2つの名前のうち、もう片方の校名でないほうが連合の内訳**
+        （見出しの並びと得点表の並びは同じとは限らない。実際に逆だった）。
+        ★**1つに決まらないとき・内訳に「・」が無いときは「連合」のまま**（推測しない）。
+      */
+      /*
+        ★**区切りの字は `―` だけではない**（`-` で書いたページがある。2026-11-20 に1回目の実行で
+        `宇都宮白楊-鹿沼東・今市・今工・清陵` という1つの校名ができて気づいた）。
+        ★**見出しがちょうど2校に割れないときは触らない**（3つ以上に割れたら読み違い）。
+      */
+      const headNames = normalize(plain(block.match(/<h3[^>]*>([\s\S]*?)<\/h3>/)?.[1] ?? ""))
+        .split(/\s*[―—−–‐-]\s*/)
+        .map((n) => n.replace(/[\s　]+/g, ""))
+        .filter(Boolean);
+      const unionOf = (me, other) => {
+        if (me !== "連合" || headNames.length !== 2) return me;
+        const rest = headNames.filter((n) => n !== other);
+        return rest.length === 1 && rest[0].includes("・") ? rest[0] : me;
+      };
+      const nameA = unionOf(a.name, b.name);
+      const nameB = unionOf(b.name, a.name);
+      const game = {
         date,
         season,
         tournament,
@@ -12987,12 +13016,117 @@ const tochigi = {
           ★**引き分けがある。**「勝っていない＝負け」と読まないこと。
         */
         teams: [
-          { display: a.name, score: a.total, won: a.total > b.total },
-          { display: b.name, score: b.total, won: b.total > a.total },
+          { display: nameA, score: a.total, won: a.total > b.total },
+          { display: nameB, score: b.total, won: b.total > a.total },
         ],
-      });
+      };
+      /*
+        ★★**備考の「ベスト8進出」を持ち回る**（`fixRoundsByNotes` が読む。2026-11-20）。
+        ★**列挙できない項目で付ける** —— 後ろの `{ ...g }`（生成物への書き出し）には入らない。
+      */
+      const best = normalize(plain(block)).match(/ベスト\s*(\d+)\s*進出/);
+      if (best) Object.defineProperty(game, "bestN", { value: Number(best[1]), enumerable: false });
+      out.push(game);
     }
     return out;
+  },
+  /**
+   * ★★★**出典の回戦名が誤っている試合を、同じ備考を持つ試合に揃える**（2026-11-20）。
+   *
+   * 2026年秋の紙は、**3回戦の最後の2試合に「（2回戦）」と刷っていた**:
+   *
+   *     足利大附 ― 黒 磯  第2試合 （2回戦）  …  備考 ベスト8進出=足利大附=8年ぶり8回目   ← 9/23
+   *     宇都宮 ― 栃木工               （2回戦）  …  備考 ベスト8進出=栃木工             ← 9/24
+   *
+   * **同じ日の他の6試合は「3回戦」で、備考も「ベスト8進出」。** 連盟の記入の誤りと見える。
+   * そのままだと**2回戦に勝ったばかりの学校が、同じ「2回戦」でもう1度戦ったこと**になり、
+   * トーナメント表の検算（同じ試合が2つの試合へ繋がる）に落ちて、**大会ページの表が出なかった。**
+   * ★★**「◯回戦」は画面に事実として出る。** 誤った札をそのまま出さない。
+   *
+   * ★★**直す根拠は出典自身の備考。** 「ベスト8進出」と書かれた試合は、
+   * **大会の中で同じ回戦のはず**（勝てば準々決勝）。**推測で回戦を足し引きしない**ので、
+   * 次を全部満たすときだけ直す:
+   *   ・同じ「ベストN進出」を持つ試合のうち、**多数派の回戦が3試合以上あり、過半数を占める**
+   *   ・直す側の回戦は「◯回戦」（準々決勝などは動かさない）
+   * ★**当てはまらない大会は1試合も触らない**（ほかの県・年の生成物には効かない）。
+   * ★**直したことは必ずログに出す**（出典の誤りが連盟側で直ったときに気づけるように）。
+   */
+  fixRoundsByNotes(games, tournament) {
+    const byBest = new Map();
+    for (const g of games) {
+      if (!g.bestN || !g.round) continue;
+      if (!byBest.has(g.bestN)) byBest.set(g.bestN, []);
+      byBest.get(g.bestN).push(g);
+    }
+    for (const [n, list] of byBest) {
+      const counts = new Map();
+      for (const g of list) counts.set(g.round, (counts.get(g.round) ?? 0) + 1);
+      const [major, majorCount] = [...counts].sort((x, y) => y[1] - x[1])[0];
+      if (majorCount < 3 || majorCount * 2 <= list.length) continue;
+      if (!/^\d+回戦$/.test(major)) continue;
+      for (const g of list) {
+        if (g.round === major || !/^\d+回戦$/.test(g.round)) continue;
+        console.log(
+          `  ℹ️ 栃木: ${tournament} の ${g.date} ${g.teams.map((t) => t.display).join("-")} は ` +
+            `「${g.round}」と書かれているが、備考が「ベスト${n}進出」（同じ備考の他の${majorCount}試合は「${major}」）。` +
+            `**「${major}」に直す**`,
+        );
+        g.round = major;
+      }
+    }
+    this.fixDoubledRounds(games, tournament);
+  },
+  /**
+   * ★★★**同じ学校が同じ回戦に2度出ているとき、先の試合を1つ前の回戦に直す**（2026-11-20）。
+   *
+   * 2026年秋の紙は、**1回戦の最後の2試合（9/12・2回戦から出るシード校の初戦）に「（2回戦）」と刷っていた**
+   * （足利大附 ― 連合、宇都宮中央 ― 白鷗大足利）。**どちらの学校も9/19にもう一度「2回戦」を戦っている**
+   * （足利大附 14-1 足利、白鷗大足利 11-2 小山南）。**1つの大会で同じ回戦に2度出ることはない。**
+   * 出典どおりに持つと、**2回戦に勝った学校が同じ2回戦でまた戦う**形になり、
+   * トーナメント表の検算（決勝から辿れない試合がある）に落ちて、大会ページの表が出なかった。
+   * ★数えても合う: 49チームの大会は 1回戦17・2回戦16・3回戦8・準々決勝4・準決勝2・決勝1（計48）。
+   * 直したあとの形がちょうどこれになる（直す前は 1回戦15・2回戦18）。
+   *
+   * ★★**推測で回戦を動かさない。** 次を全部満たすときだけ直す:
+   *   ・同じ学校が同じ「◯回戦」で2試合あり、**先の試合に勝っている**
+   *     （負けた学校が同じ回戦に出ることは、別の誤り＝同名チームで、ここでは扱わない）
+   *   ・その学校に **1つ前の回戦の試合が無い**（あれば何が誤りか決められない）
+   *   ・校名が「連合」ではない（`連合` は別々のチームが同じ名前になっていて、同一のチームとして扱えない）
+   * ★**同じ2校の再試合（引き分け再試合）は動かさない。**
+   * ★**後ろの検算（`regional-bracket.ts`）はそのまま効く。** ここで直しても、
+   *   形が合わなければ表は出ない（**ゆるめていない**）。
+   * ★**直したことは必ずログに出す。**
+   */
+  fixDoubledRounds(games, tournament) {
+    const byTeam = new Map();
+    for (const g of games) {
+      if (!g.round || !/^\d+回戦$/.test(g.round)) continue;
+      for (const t of g.teams) {
+        if (t.display === "連合") continue;
+        if (!byTeam.has(t.display)) byTeam.set(t.display, []);
+        byTeam.get(t.display).push(g);
+      }
+    }
+    for (const [name, list] of byTeam) {
+      const sorted = list.slice().sort((x, y) => String(x.date).localeCompare(String(y.date)));
+      for (let i = 0; i < sorted.length; i++) {
+        const early = sorted[i];
+        const mine = early.teams.find((t) => t.display === name);
+        const dup = sorted.slice(i + 1).find((g) => g.round === early.round);
+        if (!dup || !mine?.won) continue;
+        const pair = (g) => g.teams.map((t) => t.display).sort().join("\t");
+        if (pair(early) === pair(dup)) continue; // 再試合
+        const n = Number(early.round.match(/\d+/)[0]);
+        const lower = `${n - 1}回戦`;
+        if (n < 2 || list.some((g) => g.round === lower)) continue;
+        console.log(
+          `  ℹ️ 栃木: ${tournament} の ${early.date} ${early.teams.map((t) => t.display).join("-")} は ` +
+            `「${early.round}」と書かれているが、${name} は ${dup.date} にも同じ「${early.round}」を戦っている。` +
+            `**「${lower}」に直す**`,
+        );
+        early.round = lower;
+      }
+    }
   },
 };
 

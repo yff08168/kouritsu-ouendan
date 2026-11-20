@@ -534,6 +534,108 @@ const pickRound = (s) => {
 };
 
 /**
+ * ★★★**「1・2回戦」「2・3回戦」のように、1日に2つの回戦をまとめて書いたラベルを割る**（2026-11-20。神奈川）。
+ *
+ * `pickRound` は**最初に当たる `N回戦` を採る**ので、`1・2回戦` は `2回戦`、`2・3回戦` は `3回戦` になる
+ * （`1・` の後ろに `回戦` が続かないため）。**その日の浅いほうの回戦の試合が、全部深いほうの回戦になる。**
+ * 返すのは**候補の回戦（数字の並び）**。まとめ書きでなければ null。
+ * ★**これは「どちらかの回戦」という出典自身の言葉**なので、推測ではない。**どちらかは `resolveCombinedRounds` が決める。**
+ */
+const roundCandidates = (s) => {
+  if (!s) return null;
+  const m = normalize(s).match(/(\d+(?:\s*[・･,、]\s*\d+)+)\s*回戦/);
+  if (!m) return null;
+  const nums = m[1].split(/\D+/).filter(Boolean).map(Number);
+  return nums.length >= 2 ? nums : null;
+};
+
+/**
+ * ★★★**まとめ書きの日の試合は、各校の「次の試合」から回戦を決める**（2026-11-20。神奈川の春2026）。
+ *
+ * ★**使う性質は1つだけ** —— **勝った学校は、次の回戦で戦う**（勝ち抜きの途中でシードは挟まらない）。
+ * したがって**勝った側の次の試合の回戦が K なら、この試合は K−1 回戦**。
+ * 前の試合の回戦が K なら（その学校が勝っているとき）この試合は K+1 回戦。
+ *
+ *   春2026   4/5  1・2回戦  生田 6-1 横浜南陵   ← どちらか
+ *            4/11 2・3回戦  生田 7-4 鎌倉       ← どちらか
+ *            4/12 3回戦     横浜 10-0 生田      ← 確定
+ *   → 4/11 は 2回戦、4/5 は 1回戦（**深いほうから順に決まる**）
+ *
+ * ★★**なぜ `fixDoubledRounds` だけでは足りなかったか** —— あちらは「同じ回戦に2度出ている学校」しか見ない。
+ *   **4/11 の生田-鎌倉は、決まった3回戦と食い違う相手（横浜）が別の日に居るだけ**で、
+ *   同じ学校が同じ回戦に2度出る形にならない学校（鎌倉・金井・旭）は直らず、
+ *   **同じ試合が2つの試合へ繋がって**表が出なかった。
+ * ★★**確定している回戦（単独の日の回戦）から、浅いほうへ順にたどる**ので、**深いほうの誤りが浅いほうへ伝わらない**。
+ *
+ * ★★**決められないときは触らない**（元のまま＝深いほうの回戦のまま。そこから先は従来どおり `fixDoubledRounds` と後ろの検算）。
+ *   次のどれかのとき:
+ *   ・次（前）の試合が無い／その回戦が `N回戦` でない（準々決勝以降は次の試合を数えない）
+ *   ・両チームの隣の試合が示す回戦が食い違う
+ *   ・示された回戦が、その日のラベルの候補に無い（**出典のラベルと矛盾**）
+ *   ・`連合` は別々のチームが同じ名前になっているので、手掛かりに使わない
+ * ★**引き分け（再試合）は勝者がいないので、手掛かりにならない**（勝った側の試合だけを辿る）。
+ * ★**直したことは必ずログに出す。**
+ * ★**後ろの検算（`regional-bracket.ts`）はそのまま効く。** ここで決めても、枝が合わなければ表は出ない。
+ */
+function resolveCombinedRounds(games, tournament, label) {
+  const pending = new Set(games.filter((g) => g.roundCandidates));
+  if (!pending.size) return;
+  const integerRound = (g) => (/^\d+回戦$/.test(g.round ?? "") ? Number(g.round.match(/\d+/)[0]) : null);
+  const byTeam = new Map();
+  for (const g of games) {
+    for (const t of g.teams) {
+      if (t.display === "連合") continue;
+      if (!byTeam.has(t.display)) byTeam.set(t.display, []);
+      byTeam.get(t.display).push(g);
+    }
+  }
+  for (const list of byTeam.values()) list.sort((x, y) => String(x.date).localeCompare(String(y.date)));
+  const neighbour = (g, name, dir) => {
+    const list = byTeam.get(name) ?? [];
+    const i = list.indexOf(g);
+    const other = list[i + dir];
+    return other && other.date !== g.date ? other : null;
+  };
+
+  const before = new Map([...pending].map((g) => [g, g.round]));
+  let changed = true;
+  while (pending.size && changed) {
+    changed = false;
+    for (const g of [...pending]) {
+      const implied = new Set();
+      for (const t of g.teams) {
+        if (t.display === "連合") continue;
+        // 次の試合があるのは勝った側だけ（負けた学校は、この試合で終わる）
+        const next = t.won ? neighbour(g, t.display, +1) : null;
+        if (next && !pending.has(next) && integerRound(next) !== null) implied.add(integerRound(next) - 1);
+        // 前の試合は、勝っていれば勝ち負けにかかわらずこの試合へ繋がる
+        const prev = neighbour(g, t.display, -1);
+        const mine = prev?.teams.find((x) => x.display === t.display);
+        if (prev && mine?.won && !pending.has(prev) && integerRound(prev) !== null) {
+          implied.add(integerRound(prev) + 1);
+        }
+      }
+      if (implied.size !== 1) continue;
+      const [r] = implied;
+      if (!g.roundCandidates.includes(r)) continue;
+      g.round = `${r}回戦`;
+      pending.delete(g);
+      changed = true;
+    }
+  }
+
+  const moved = [...before].filter(([g, was]) => g.round !== was);
+  console.log(
+    `  ℹ️ ${label}: ${tournament} の「1・2回戦」のようなまとめ書きの日 ${before.size} 試合のうち、` +
+      `各校の次の試合から回戦を決めた ${before.size - pending.size} 試合（うち ${moved.length} 試合は書かれた回戦から動かした）。` +
+      (pending.size ? `決められず元のままにした ${pending.size} 試合` : ""),
+  );
+  for (const [g, was] of moved.slice(0, 40)) {
+    console.log(`     ${g.date} ${g.teams.map((t) => t.display).join("-")}: ${was} → ${g.round}`);
+  }
+}
+
+/**
  * ★★★**同じ学校が同じ回戦に2度出ているとき、先の試合を1つ前の回戦に直す**（2026-11-20。栃木・神奈川）。
  *
  * 出典が**回戦名を書き誤る／まとめて書く**と、**2回戦に勝った学校が同じ「2回戦」でまた戦う**形になる:
@@ -665,6 +767,8 @@ const kanagawa = {
       if (!date) continue;
       const isoDate = `${date[1]}-${date[2]}-${date[3]}`;
       const round = pickRound(day.label);
+      // ★「1・2回戦」のようなまとめ書きの日は、候補の回戦を持ち回る（`resolveCombinedRounds` が決める）
+      const candidates = roundCandidates(day.label);
 
       /*
         表が球場ごとに「球場名の表 → 試合の表」と交互に並ぶ。
@@ -728,6 +832,10 @@ const kanagawa = {
           if (/継続試合/.test(score)) {
             Object.defineProperty(game, "continued", { value: true, enumerable: false });
           }
+          // ★同じく列挙できない項目（生成物に書き出さない）。`round` は決まるまでラベルの最初の回戦
+          if (candidates) {
+            Object.defineProperty(game, "roundCandidates", { value: candidates, enumerable: false });
+          }
           games.push(game);
         }
       }
@@ -755,6 +863,11 @@ const kanagawa = {
       ★★**日付が1日分の「1・2回戦」のようなページは、回戦をまとめて書いている**（上の `pickRound`）。
       **同じ学校が同じ回戦に2度出ている形を直す**（`fixDoubledRounds`）。
     */
+    /*
+      ★★★**先に、まとめ書きの日の回戦を各校の次の試合から決める**（`resolveCombinedRounds`）。
+      それでも残った「同じ学校が同じ回戦に2度」だけを `fixDoubledRounds` が直す（従来どおり）。
+    */
+    resolveCombinedRounds(kept, kept[0]?.tournament ?? null, "神奈川");
     fixDoubledRounds(kept, kept[0]?.tournament ?? null, "神奈川");
     return kept;
   },

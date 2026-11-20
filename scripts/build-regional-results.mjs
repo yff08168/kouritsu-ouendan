@@ -475,6 +475,7 @@ const nagano = {
  */
 function dailyLinks(html, baseUrl, { hrefPattern, labelPattern }) {
   const seen = new Map();
+  const labelsOf = new Map();
   const origin = new URL(baseUrl).origin;
   for (const m of html.matchAll(/<a[^>]+href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
     let href;
@@ -496,8 +497,18 @@ function dailyLinks(html, baseUrl, { hrefPattern, labelPattern }) {
     const label = normalize(plain(m[2]));
     if (labelPattern && !labelPattern.test(label)) continue;
     if (!seen.has(href)) seen.set(href, label);
+    /*
+      ★★★**同じ日のリンクがページの中に複数あり、ラベルが違う**（2026-11-20。神奈川）。
+        `9（水）` `1回戦` `9`  ← 日付 → 回戦 → 日の数字の順に並ぶ（2025年の夏）
+      **最初のラベルだけ持つと日付になり、回戦が取れない。** それで神奈川の2025年以前は
+      **回戦が全部 null** になり、トーナメント表が組めなかった。
+      ★**`label`（最初のラベル）は今までどおり。** 他の県の読み方は変えない。
+      足したのは `labels`（出てきた順に全部）だけ。使う県が回戦を探す。
+    */
+    if (!labelsOf.has(href)) labelsOf.set(href, []);
+    labelsOf.get(href).push(label);
   }
-  return [...seen].map(([url, label]) => ({ url, label }));
+  return [...seen].map(([url, label]) => ({ url, label, labels: labelsOf.get(url) ?? [label] }));
 }
 
 /**
@@ -717,6 +728,8 @@ const kanagawa = {
   district: "神奈川",
   name: "神奈川高校野球ステーション",
   siteUrl: "https://www.kanagawa-baseball.com/",
+  // ★大会名を題から付けるようにしたので、前の「名前の無い」試合は同じ年の新しい試合で置き換える（引き継ぎの `replaceNullNamed`）
+  replaceNullNamed: true,
   // **個人の共有サーバー。** 連盟より間隔をあける
   politenessMs: 2500,
   seasons: {
@@ -725,6 +738,20 @@ const kanagawa = {
     autumn: "https://www.kanagawa-baseball.com/fall/",
   },
   async collect({ fetchHtml, season, url, year }) {
+    /*
+      ★★★**2020年の夏（独自大会）は、この出典では読まない。HSB flash（副）に任せる**（2026-11-20）。
+      この出典の2020年夏は**不戦勝を試合として持たない**ので、勝ち抜きの木が途切れて表が組めない
+      （`浅野―横浜翠嵐` の不戦勝。舞岡が3回戦を戦ったように見えない）。
+      **これまでは HSB flash の171試合（表が組める）が出ていた**ので、**主が読むようになって表が組めなくなる**のを避ける。
+      ★**主がこの年の夏を持たなければ、副（`kanagawaHsbFill`）が足す**（`fillGapsOnly`）。
+      ★**主が前に書いた名前（下の `SUPERSEDED_TOURNAMENTS`）は引き継がない**。
+      ★不戦勝を試合として持てるようになったら、この行を外すこと。
+    */
+    if (season === "summer" && year === 2020) {
+      SUPERSEDED_TOURNAMENTS.add("2020年夏 令和2年度神奈川県高校野球大会");
+      console.log("  ℹ️ 神奈川: 2020年の夏は不戦勝を試合として持てず表が組めないので、HSB flash（副）に任せる");
+      return [];
+    }
     const indexUrl = `${url}${year}/`;
     const index = await fetchHtml(indexUrl);
     if (!index) return [];
@@ -742,7 +769,18 @@ const kanagawa = {
         .replace(/[[［][^\]］]*[\]］]/g, "")
         .trim() ||
       normalize(plain(/<h1[^>]*>([\s\S]*?)<\/h1>/.exec(index)?.[1] ?? "")) ||
-      null;
+      /*
+        ★★★**どちらにも無い年は、ページの題から付ける**（2026-11-20。2019年と2020年の夏・2019年の秋）。
+        **大会名が `null` のままだと、年が違う大会が1つにまとまり**（2019年夏178試合と2020年夏173試合が
+        「2020年の夏351試合」になって表が組めなかった）、年も大会名から出せない。
+        題は `2019年夏 第101回全国高校野球選手権神奈川大会 トーナメント表 組み合わせ 日程` のように
+        **頭に西暦が付き、末尾に決まり文句が並ぶ**ので、決まり文句を落として使う。
+        （`<title>` が前年のままの年があるのは上のとおり。ここは大会名の行も `<h1>` も無いときの最後の手段）
+      */
+      (normalize(plain(/<title[^>]*>([\s\S]*?)<\/title>/i.exec(index)?.[1] ?? ""))
+        .replace(/(トーナメント表|組み合わせ|組合せ|日程|試合速報|独自大会日程)/g, " ")
+        .replace(/\s+/g, " ")
+        .trim() || null);
 
     /*
       **ラベルで絞らないこと。** 「1回戦」などの回戦名が付いていない日別リンクが
@@ -755,20 +793,52 @@ const kanagawa = {
       `dailyLinks` が同一サイトに絞るまで甲子園の試合が混ざっていた。
       ここでも一覧のURLで始まるものだけに限っておく。
     */
-    const days = dailyLinks(index, indexUrl, {
+    const rawDays = dailyLinks(index, indexUrl, {
       hrefPattern: new RegExp(`^${indexUrl.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\d{4}/?$`),
     });
+    /*
+      ★★★**同じ日が、末尾の `/` の有無で2通りのリンクになっている年がある**（2026-11-20。2021年の夏・秋ほか）。
+        `…/summer/2021/0710`  と  `…/summer/2021/0710/`
+      `dailyLinks` はURLの文字列で見分けるので**別の日として2回数える**。すると
+        ・**同じ日を2回読み、試合が二重になる**（2021年夏は 171 件が重複）
+        ・**日別ページの上限（`MAX_DAILY_PAGES`＝30）が重複で先に尽き、準々決勝以降の日が読まれない**
+          （2021年夏は3回戦2試合・準々決勝1試合が欠け、**勝った学校の次の試合が「決勝から辿れない」**になった）
+      ★**末尾の `/` を落として1日にまとめ、ラベルは両方ぶん持つ。**
+    */
+    const dayMap = new Map();
+    for (const d of rawDays) {
+      const key = d.url.replace(/\/+$/, "");
+      if (!dayMap.has(key)) dayMap.set(key, { url: d.url, label: d.label, labels: [...d.labels] });
+      else dayMap.get(key).labels.push(...d.labels);
+    }
+    const days = [...dayMap.values()];
 
     const games = [];
+    const walkovers = [];
     for (const day of days.slice(0, MAX_DAILY_PAGES)) {
       const html = await fetchHtml(day.url);
       if (!html) continue;
       const date = day.url.match(/\/(\d{4})\/(\d{2})(\d{2})\/?$/);
       if (!date) continue;
       const isoDate = `${date[1]}-${date[2]}-${date[3]}`;
-      const round = pickRound(day.label);
+      /*
+        ★★★**回戦は、日別ページの題と、一覧の中のすべてのラベルから探す**（2026-11-20）。
+        一覧には同じ日のリンクが並ぶ（`9（水）` → `1回戦` → `9`）ので最初のラベルは日付になり、
+        **2025年以前は回戦が全部 null だった**。ページの題（`…の試合結果｜高校野球春季神奈川県大会 1・2回戦`）にも書いてある年がある。
+        **どこにも書いていない日は null のまま**（あとで `inferRoundsByDepth` が、全試合そろう大会だけ決める）。
+      */
+      /*
+        ★**「甲子園交流試合」の日は県大会ではない**（2020年8/17。東海大相模 対 大阪桐蔭）。**県の大会の試合に混ぜない**
+        （東海大相模が「負けたあとにも試合をした」形になり、勝ち抜きの検算も深さの推定も合わなくなる）。
+      */
+      if (day.labels.some((l) => /交流試合/.test(l))) {
+        console.log(`  ℹ️ 神奈川: ${isoDate} は「${day.labels.find((l) => /交流試合/.test(l))}」の日。県大会の試合ではないので入れない`);
+        continue;
+      }
+      const dayInfo = dayRoundInfo([...day.labels, titleOf(html), bodyRoundLabel(html)]);
+      const round = dayInfo.round;
       // ★「1・2回戦」のようなまとめ書きの日は、候補の回戦を持ち回る（`resolveCombinedRounds` が決める）
-      const candidates = roundCandidates(day.label);
+      const candidates = dayInfo.candidates;
 
       /*
         表が球場ごとに「球場名の表 → 試合の表」と交互に並ぶ。
@@ -806,6 +876,15 @@ const kanagawa = {
             Wikipediaは合計スコアに小文字 `x`）。神奈川は `5x-4` の形。
           */
           const m = score?.match(/(\d{1,2})\s*(x)?\s*[-－]\s*(\d{1,2})\s*(x)?/i);
+          /*
+            ★★**不戦勝（`東海大相模 不戦勝 藤沢翔陵`）は試合として持たない**（得点が無い。0対0にしない）。
+            **持たないので、勝ち抜きの木に「試合の無い勝ち上がり」ができ、表が組めない大会がある**
+            （2022年春・2021年夏ほか）。**数えて必ずログに出す**（原因が不戦勝だと分かるように。**どちらが勝ったかは出典に書かれていない**）。
+          */
+          if (!m && /不戦勝/.test(score ?? "") && home && away) {
+            walkovers.push(`${isoDate} ${home}―${away}`);
+            continue;
+          }
           if (!m || !home || !away) continue;
           const a = Number(m[1]);
           const b = Number(m[3]);
@@ -836,6 +915,13 @@ const kanagawa = {
           if (candidates) {
             Object.defineProperty(game, "roundCandidates", { value: candidates, enumerable: false });
           }
+          // ★「3位決定戦・決勝」の日（決勝と3位決定戦が同じ日にある）。どちらかは `resolveThirdPlaceAndFinal` が決める
+          if (dayInfo.thirdAndFinal) {
+            Object.defineProperty(game, "thirdAndFinal", { value: true, enumerable: false });
+          }
+          // ★「南・決勝」「北・決勝」のように南北が書かれた日（100回記念の2大会。`splitHalves` が読む）
+          const side = day.labels.map((l) => /^(南|北)\s*[・･]/.exec(normalize(l))?.[1]).find(Boolean);
+          if (side) Object.defineProperty(game, "side", { value: side, enumerable: false });
           games.push(game);
         }
       }
@@ -853,6 +939,13 @@ const kanagawa = {
       ★**後の行にも `(継続試合)` が付く** —— 印では最終かどうか決められないので、
       **同じ顔合わせの後の行があるかどうか**で見る。
     */
+    if (walkovers.length) {
+      console.log(
+        `  ℹ️ 神奈川: ${games[0]?.tournament ?? "大会名なし"} の不戦勝 ${walkovers.length} 件は試合として持たない` +
+          `（${walkovers.slice(0, 8).join(" / ")}${walkovers.length > 8 ? " ほか" : ""}）。` +
+          `**不戦勝で負けた側の勝ち上がりが、勝ち抜きの木の行き先を失う**（表が組めない原因になる）`,
+      );
+    }
     const kept = dropSupersededContinuations(games);
     if (kept.length !== games.length) {
       console.log(
@@ -867,11 +960,372 @@ const kanagawa = {
       ★★★**先に、まとめ書きの日の回戦を各校の次の試合から決める**（`resolveCombinedRounds`）。
       それでも残った「同じ学校が同じ回戦に2度」だけを `fixDoubledRounds` が直す（従来どおり）。
     */
+    // ★同じ回戦の同じ顔合わせが2度ある（どちらも決着）行は、後の行だけ残す（2015年春の準々決勝）
+    dropRepeatedPairs(kept, kept[0]?.tournament ?? null, "神奈川");
+    // ★100回記念（2018年夏）の南・北は大会名を分けてから、回戦を決める
+    splitHalves(kept, "神奈川", (name, side) =>
+      !side
+        ? `${name ?? ""}（南北の分からない試合）`
+        : /神奈川大会/.test(name ?? "")
+          ? name.replace("神奈川大会", `${side}神奈川大会`)
+          : `${name ?? ""}（${side}）`,
+    );
     resolveCombinedRounds(kept, kept[0]?.tournament ?? null, "神奈川");
+    resolveThirdPlaceAndFinal(kept, kept[0]?.tournament ?? null, "神奈川");
+    inferRoundsByDepth(kept, kept[0]?.tournament ?? null, "神奈川");
     fixDoubledRounds(kept, kept[0]?.tournament ?? null, "神奈川");
     return kept;
   },
 };
+
+/**
+ * ★★★**同じ回戦で同じ顔合わせが2度ある（どちらも決着している）とき、いちばん後の行だけ残す**（2026-11-20。埼玉の2022年春）。
+ *
+ *   4/29 3回戦 川越東 4-1 山村学園   ← 中断・ノーゲームのあと、翌日にやり直された試合
+ *   4/30 3回戦 川越東 3-4 山村学園   ← やり直した結果（このあとの準々決勝に勝った山村学園が進んでいる）
+ *
+ * **決着した同じ顔合わせが、同じ回戦で2度あることは無い**（引き分け再試合は同点なので別に扱う）。
+ * 出典は中断・ノーゲームの試合を消さずに載せ続けるので、そのまま持つと
+ * **同じ試合が2つの試合へ繋がって**（検算の「同じ試合が2つへ繋がる」）表が出ない。
+ * ★**前の行が同点（引き分け再試合）のときは両方残す。**
+ * ★**同じ回戦・同じ2校**のときだけ。回戦が違う（ラベルが日で違う）ものは触らない。
+ * ★**直したことは必ずログに出す。**
+ */
+function dropRepeatedPairs(games, tournament, label) {
+  /*
+    ★★**回戦が違っても、同じ顔合わせが翌日にもう一度あれば、前の行は途中経過**（神奈川の2018年夏の北。
+    `7/12 1回戦 上溝 1-2 多摩` → `7/13 2回戦 上溝 2-3 多摩`。得点が増えているので継続試合）。
+    日別ページの回戦は**その日の見出し**なので、継続試合の翌日の行には**別の回戦**が付く。
+    ★**同じ回戦なら日が離れていても**（ノーゲームのやり直し）、**回戦が違うときは翌日まで**に限る。
+  */
+  const key = (g) => [g.tournament, ...g.teams.map((t) => t.display).sort()].join("\t");
+  const dayNo = (g) => Math.round(Date.parse(g.date + "T00:00:00Z") / 86400000);
+  const groups = new Map();
+  for (const g of games) {
+    if (!g.round || !g.date) continue;
+    if (!groups.has(key(g))) groups.set(key(g), []);
+    groups.get(key(g)).push(g);
+  }
+  const drop = new Set();
+  for (const list of groups.values()) {
+    if (list.length < 2) continue;
+    const sorted = list.slice().sort((x, y) => String(x.date).localeCompare(String(y.date)));
+    sorted.forEach((g, i) => {
+      if (g.teams[0].score === g.teams[1].score) return; // 引き分け再試合は残す
+      const later = sorted.slice(i + 1).filter((h) => h.date !== g.date);
+      const sameRound = later.some((h) => h.round === g.round);
+      const nextDay = later.some((h) => h.round !== g.round && dayNo(h) - dayNo(g) <= 1);
+      if (sameRound || nextDay) drop.add(g);
+    });
+  }
+  if (!drop.size) return;
+  for (let i = games.length - 1; i >= 0; i--) if (drop.has(games[i])) games.splice(i, 1);
+  console.log(
+    `  ℹ️ ${label}: ${tournament} の「同じ顔合わせが2度ある」行 ${drop.size} 件を、後の行を結果として落とした`,
+  );
+}
+
+/**
+ * ★★★**100回記念大会は1県から2校が出るので、南と北の2つの大会が1つの一覧に入っている**（2026-11-20。神奈川・埼玉の2018年夏）。
+ *
+ * 一覧には `南・準決勝` `北・決勝` のように**準決勝以降だけ**南北が書かれ、それ以前（1回戦〜準々決勝）は共通の日に並ぶ。
+ * そのまま持つと**決勝が2試合・勝ち残りが2校**になり、トーナメント表が組めない。
+ * ★★**分け方は「同じ顔合わせの網」**: 試合で当たった学校どうしを結んで（union-find）できる**まとまり**を数える。
+ * 南と北は**学校が重ならない**ので、まとまりも2つになる。**南北が書かれた試合（準決勝以降）が属するまとまりの
+ * 南北が1つに決まるとき**だけ、そのまとまりの試合すべての大会名を直す。
+ * ★★**決められないときは何もしない**（元の大会名のまま）:
+ *   ・まとまりに南北が両方書かれている（学校が重なっている＝校名の書き分け・同名の別チーム）
+ *   ・南北の付いたまとまりが2つに満たない／同じ南北が2つのまとまりにある
+ *   ・南北が1つも書かれていない
+ * ★`連合` は別々のチームが同じ名前なので結びつけに使わない。
+ * ★大会名の直し方は `rename`（県ごとの名前の形に合わせる）。**直したことは必ずログに出す。**
+ */
+/** `splitHalves` が分ける前の大会名。引き継ぎ（下のほう）が前の生成物から捨てる */
+const SUPERSEDED_TOURNAMENTS = new Set();
+function splitHalves(games, label, rename) {
+  if (!games.some((g) => g.side)) return;
+  const parent = new Map();
+  const find = (x) => {
+    if (!parent.has(x)) parent.set(x, x);
+    let r = x;
+    while (parent.get(r) !== r) r = parent.get(r);
+    while (parent.get(x) !== r) {
+      const n = parent.get(x);
+      parent.set(x, r);
+      x = n;
+    }
+    return r;
+  };
+  for (const g of games) {
+    const names = g.teams.map((t) => t.display).filter((n) => n !== "連合");
+    if (names.length === 2) parent.set(find(names[0]), find(names[1]));
+  }
+  const comps = new Map();
+  for (const g of games) {
+    const name = g.teams.map((t) => t.display).find((n) => n !== "連合");
+    if (!name) continue;
+    const r = find(name);
+    if (!comps.has(r)) comps.set(r, []);
+    comps.get(r).push(g);
+  }
+  const sideOf = new Map();
+  for (const [r, list] of comps) {
+    const sides = new Set(list.filter((g) => g.side).map((g) => g.side));
+    if (sides.size > 1) {
+      console.log(`  ⚠️ ${label}: 南北が両方書かれたまとまりがある（学校が重なっている）。大会を分けない`);
+      return;
+    }
+    if (sides.size === 1) sideOf.set(r, [...sides][0]);
+  }
+  const distinct = new Set(sideOf.values());
+  if (sideOf.size < 2 || distinct.size !== sideOf.size) {
+    console.log(`  ⚠️ ${label}: 南北の付いたまとまりが ${sideOf.size} つ（南北 ${distinct.size} 種）。大会を分けない`);
+    return;
+  }
+  const counts = [];
+  // ★分ける前の大会名は、前の生成物から引き継がない（引き継ぎが「別の大会」として残し、同じ試合が二重になる）
+  for (const g of games) SUPERSEDED_TOURNAMENTS.add(g.tournament);
+  for (const [r, side] of sideOf) {
+    for (const g of comps.get(r)) g.tournament = rename(g.tournament, side);
+    counts.push(`${side} ${comps.get(r).length} 試合`);
+  }
+  /*
+    ★**南北が書かれていないまとまりが残ることがある**（埼玉の2018年夏。武南の2試合）。
+    次の試合が出典に載っていないので、**どちらの山か決められない**。**黙って落とさず**、
+    元の大会名のまま残すと**「南・北」の名前で試合が2つだけの大会**が1つできてしまうので、別の名前にする
+    （`rename(名前, null)`）。大会名の並びで `-2` `-3` を付けるので、**南北の名前より後ろに並ぶ名前にする**。
+  */
+  for (const [r, list] of comps) {
+    if (sideOf.has(r)) continue;
+    for (const g of list) g.tournament = rename(g.tournament, null);
+    counts.push(`南北不明 ${list.length} 試合`);
+  }
+  console.log(`  ℹ️ ${label}: 南北の2大会が1つにまとまっていたので大会名を分けた（${counts.join("・")}）`);
+}
+
+/**
+ * ★★★**その日の回戦を、一覧のラベル・日別ページの題から探す**（2026-11-20。神奈川）。
+ * 一覧のリンクには `9（水）` `1回戦` `9` のように複数のラベルが付く。**回戦の書いてあるもののうち最初のもの**を採る。
+ * 返す `candidates` は「1・2回戦」のまとめ書き、`thirdAndFinal` は「3位決定戦・決勝」の日。
+ * ★**どこにも書いていない日は `round: null`**（あとで `inferRoundsByDepth` が決められるときだけ決める）。
+ */
+function dayRoundInfo(labels) {
+  for (const raw of labels) {
+    if (!raw) continue;
+    const s = normalize(raw);
+    const flat = s.replace(/準\s*々\s*決\s*勝|準\s*決\s*勝|決\s*勝/g, (m) => m.replace(/\s+/g, ""));
+    if (/3位決定戦/.test(flat) && /決勝/.test(flat.replace(/準々決勝|準決勝/g, ""))) {
+      return { round: "決勝", candidates: null, thirdAndFinal: true };
+    }
+    /*
+      ★★**回戦の名前が2つ並ぶ日**（`5回戦・準々決勝`。2020年夏の8/16）。「1・2回戦」のように数字だけなら
+      `roundCandidates` が決めるが、**名前が違うものは候補に出来ない**。**どちらか書かれていない**（`null`）ことにして、
+      `inferRoundsByDepth` が決勝からの深さで決める（全試合が揃う大会だけ。決まらなければ null のまま）。
+    */
+    if (/(\d+回戦|準々決勝|準決勝|決勝)\s*[・･]\s*(\d+回戦|準々決勝|準決勝|決勝)/.test(flat) && !roundCandidates(s)) {
+      return { round: null, candidates: null, thirdAndFinal: false, ambiguous: true };
+    }
+    const candidates = roundCandidates(s);
+    const round = pickRound(s);
+    if (round || candidates) return { round, candidates, thirdAndFinal: false };
+  }
+  return { round: null, candidates: null, thirdAndFinal: false };
+}
+
+/**
+ * ページの本文に `【1・2回戦】` のように書かれた回戦名（最初の1つ）。無ければ null。
+ * ★2018年の春は、題には回戦が無く、**本文の見出し `平成30年度神奈川県高等学校野球春季県大会 【1・2回戦】`** にだけある。
+ */
+const bodyRoundLabel = (html) => {
+  const text = normalize(plain((html ?? "").replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, "")));
+  for (const m of text.matchAll(/【\s*([^】]{1,24}?)\s*】/g)) {
+    if (/回戦|決勝|3位決定戦/.test(m[1])) return m[1];
+  }
+  return null;
+};
+
+/** ページの `<title>`（空白を詰めたもの）。無ければ null */
+const titleOf = (html) => {
+  const t = /<title[^>]*>([\s\S]*?)<\/title>/i.exec(html ?? "")?.[1];
+  return t ? normalize(plain(t)) : null;
+};
+
+/**
+ * ★★**「3位決定戦・決勝」の日は、決勝と3位決定戦の2試合がある**（2026-11-20。神奈川）。
+ * ラベルの先頭の語を採ると**決勝まで「3位決定戦」になり、大会に決勝が無くなる**（表が組めない）。
+ * ★**見分けは出典の言葉ではなく勝ち抜きの性質**: 決勝に出るのは**準決勝に勝った2校**、
+ * 3位決定戦に出るのは**準決勝に負けた2校**。**直前の試合の勝ち負けが2校とも揃わなければ決めない**（元のまま）。
+ */
+function resolveThirdPlaceAndFinal(games, tournament, label) {
+  /*
+    ★★対象は2つ: ①ラベルが「3位決定戦・決勝」の日 ②**「決勝」の日に決勝が2試合ある**
+    （埼玉の2019年春・2022年秋。ラベルは「決勝」だけだが、3位決定戦も同じ日に行われている）
+  */
+  const finalsByDate = new Map();
+  for (const g of games) if (g.round === "決勝") finalsByDate.set(g.date, (finalsByDate.get(g.date) ?? 0) + 1);
+  const days = new Map();
+  for (const g of games) {
+    if (!g.thirdAndFinal && !(g.round === "決勝" && finalsByDate.get(g.date) > 1)) continue;
+    if (!days.has(g.date)) days.set(g.date, []);
+    days.get(g.date).push(g);
+  }
+  for (const [date, list] of days) {
+    const prevWon = (g) =>
+      g.teams.map((t) => {
+        const prev = games
+          .filter((o) => o !== g && o.date < date && o.teams.some((x) => x.display === t.display))
+          .sort((x, y) => String(y.date).localeCompare(String(x.date)))[0];
+        return prev ? prev.teams.find((x) => x.display === t.display).won : null;
+      });
+    const finals = list.filter((g) => prevWon(g).every((w) => w === true));
+    const thirds = list.filter((g) => prevWon(g).every((w) => w === false));
+    if (finals.length > 1 || finals.length + thirds.length !== list.length) {
+      console.log(`  ⚠️ ${label}: ${tournament} の ${date}（3位決定戦・決勝）は決勝と3位決定戦を見分けられない。元のまま`);
+      continue;
+    }
+    for (const g of finals) g.round = "決勝";
+    for (const g of thirds) g.round = "3位決定戦";
+    console.log(
+      `  ℹ️ ${label}: ${tournament} の ${date}（3位決定戦・決勝）: 決勝 ${finals.length} 試合・3位決定戦 ${thirds.length} 試合に分けた`,
+    );
+  }
+}
+
+/**
+ * ★★★**回戦がどこにも書かれていない試合は、決勝からの深さで回戦を決める**（2026-11-20。神奈川の過去年）。
+ *
+ * 神奈川の一覧は**2022年以前の春・2021年以前の夏などで、日ごとの回戦をどこにも書いていない**
+ * （一覧のラベルは日付だけ。日別ページの題にも無い）。回戦が null だとトーナメント表が組めない。
+ *
+ * ★★**これは「枝から回戦を当てる」ことではないので、条件を厳しくしてある**
+ *   （AGENTS.md の「出典が書いていない回戦を当てない」は、**試合が欠けている大会で深さを数えると名前がずれる**から）。
+ *   **勝ち抜きの形が完全に合う大会だけ**を対象にする。全部満たすときだけ決める:
+ *   ・**決勝が1試合**（勝った側に「次の試合」が無い試合が、3位決定戦を除いてちょうど1つ）
+ *   ・**どの学校も、負けるのは最後の1試合だけ**（勝ってから負けた学校の次の試合がある、は無い）
+ *   ・**どの試合も、勝った側の「次の試合」へ必ず繋がる**（欠けている試合があれば決勝へ辿れない）
+ *   ・**各深さの試合数が 2^深さ 以下**
+ *   ・**出典がすでに書いている回戦と、決めた回戦が1試合も食い違わない**（食い違えば何も決めない）
+ *   ・同点・連合（同名の別チーム）・地区大会の試合（`（群馬 1位）`）が混ざっていない
+ * ★名前は「決勝＝深さ0・準決勝＝1・準々決勝＝2・以降 `（最も深い試合の深さ − 深さ + 1）回戦`」。
+ *   **最も深い試合が1回戦**である前提は、**出典が書いている回戦との突き合わせ**で確かめられる大会に限らず、
+ *   神奈川の全大会で成り立っている（春・秋は 6段、夏は 7段。1回戦がある大会しか無い）。
+ * ★**書かれていない日にだけ付ける**（書いてある回戦は動かさない）。**決めたことは必ずログに出す。**
+ */
+function inferRoundsByDepth(allGames, _tournament, label) {
+  // ★大会ごとに別々に決める（南・北に分けた2018年夏のように、1回の取得に複数の大会が入ることがある）
+  const names = [...new Set(allGames.map((g) => g.tournament ?? ""))];
+  for (const name of names) {
+    inferRoundsForOne(
+      allGames.filter((g) => (g.tournament ?? "") === name),
+      name || null,
+      label,
+    );
+  }
+}
+
+function inferRoundsForOne(games, tournament, label) {
+  const unknown = games.filter((g) => !g.round);
+  if (!unknown.length) return;
+  const bail = (why) =>
+    console.log(`  ⚠️ ${label}: ${tournament} の回戦が書かれていない ${unknown.length} 試合は、${why}ので決められない。null のまま`);
+  const AREA = /\s*[（(]\s*[^）)]*?\d\s*位\s*[）)]\s*$/;
+  if (games.some((g) => g.teams.some((t) => AREA.test(t.display)))) {
+    // 地区大会の試合は別扱い。それだけを外して数える
+    games = games.filter((g) => !g.teams.some((t) => AREA.test(t.display)));
+  }
+  /*
+    ★★**3位決定戦は、準決勝に負けた2校が最後に戦う試合**（回戦が書かれていない年がある）。
+    **両校とも「直前の試合に負けていて、これが最後の試合」**なら3位決定戦（これは勝ち抜きの形からそれしか無い）。
+    決勝の数え方から外して、書かれていなければ `3位決定戦` と付ける。**1つより多いときは決めない。**
+  */
+  const byTeamAll = new Map();
+  for (const g of games) {
+    if (g.teams[0].score === g.teams[1].score) continue;
+    for (const t of g.teams) {
+      if (!byTeamAll.has(t.display)) byTeamAll.set(t.display, []);
+      byTeamAll.get(t.display).push(g);
+    }
+  }
+  for (const list of byTeamAll.values()) list.sort((x, y) => String(x.date).localeCompare(String(y.date)));
+  const thirds = games.filter((g) => {
+    if ((g.round && g.round !== "3位決定戦") || g.teams[0].score === g.teams[1].score) return false;
+    return g.teams.every((t) => {
+      const list = byTeamAll.get(t.display) ?? [];
+      const i = list.indexOf(g);
+      if (i < 1 || i !== list.length - 1) return false;
+      return !list[i - 1].teams.find((x) => x.display === t.display).won;
+    });
+  });
+  if (thirds.length > 1) return bail("3位決定戦に見える試合が2つ以上ある");
+  const sure = games.filter((g) => g.round !== "3位決定戦" && !thirds.includes(g));
+  if (sure.some((g) => g.teams[0].score === g.teams[1].score)) return bail("同点の試合がある");
+  if (sure.some((g) => g.teams.some((t) => t.display === "連合"))) return bail("同名の別チーム（連合）がある");
+  const byTeam = new Map();
+  for (const g of sure) {
+    for (const t of g.teams) {
+      if (!byTeam.has(t.display)) byTeam.set(t.display, []);
+      byTeam.get(t.display).push(g);
+    }
+  }
+  for (const [name, list] of byTeam) {
+    list.sort((x, y) => String(x.date).localeCompare(String(y.date)));
+    for (let i = 0; i < list.length; i++) {
+      if (i > 0 && list[i].date === list[i - 1].date) return bail(`${name} が同じ日に2試合ある`);
+      // 負けた試合のあとに試合がある学校は、校名の書き分けか、大会が混ざっている
+      if (i < list.length - 1 && !list[i].teams.find((t) => t.display === name).won) {
+        return bail(`${name} が負けたあとにも試合がある`);
+      }
+    }
+  }
+  const next = new Map();
+  for (const g of sure) {
+    const w = g.teams.find((t) => t.won);
+    const list = byTeam.get(w.display);
+    next.set(g, list[list.indexOf(g) + 1] ?? null);
+  }
+  const terminals = sure.filter((g) => !next.get(g));
+  if (terminals.length !== 1) return bail(`決勝が ${terminals.length} 試合に見える`);
+  const feeders = new Map();
+  for (const g of sure) {
+    const n = next.get(g);
+    if (n) feeders.set(n, (feeders.get(n) ?? 0) + 1);
+  }
+  if ([...feeders.values()].some((c) => c > 2)) return bail("1つの試合に3つ以上の試合が繋がる");
+  const depth = new Map();
+  const depthOf = (g) => {
+    if (depth.has(g)) return depth.get(g);
+    const n = next.get(g);
+    const d = n ? depthOf(n) + 1 : 0;
+    depth.set(g, d);
+    return d;
+  };
+  for (const g of sure) depthOf(g);
+  const dmax = Math.max(...depth.values());
+  const countAt = new Map();
+  for (const d of depth.values()) countAt.set(d, (countAt.get(d) ?? 0) + 1);
+  for (const [d, c] of countAt) if (c > 2 ** d) return bail(`深さ ${d} の試合が ${c} 件（上限 ${2 ** d}）ある`);
+  const nameAt = (d) => (d === 0 ? "決勝" : d === 1 ? "準決勝" : d === 2 ? "準々決勝" : `${dmax - d + 1}回戦`);
+  for (const g of sure) {
+    if (g.round && g.round !== nameAt(depth.get(g))) {
+      return bail(`書かれている回戦（${g.date} ${g.round}）と深さから出る回戦（${nameAt(depth.get(g))}）が食い違う`);
+    }
+  }
+  const rounds = new Map();
+  for (const g of sure) {
+    if (g.round) continue;
+    g.round = nameAt(depth.get(g));
+    rounds.set(g.round, (rounds.get(g.round) ?? 0) + 1);
+  }
+  for (const g of thirds) {
+    if (g.round) continue;
+    g.round = "3位決定戦";
+    rounds.set(g.round, (rounds.get(g.round) ?? 0) + 1);
+  }
+  console.log(
+    `  ℹ️ ${label}: ${tournament} の回戦が書かれていない試合 ${[...rounds.values()].reduce((a, b) => a + b, 0)} 件に、` +
+      `決勝からの深さで回戦を付けた（${[...rounds].map(([r, c]) => `${r}${c}`).join("・")}）`,
+  );
+}
 
 /**
  * ★★★**神奈川は同じ学校を回戦ごとに書き分ける**（2026-11-20）。
@@ -882,8 +1336,27 @@ const kanagawa = {
  * **本物の書き分けは、同じ大会の校名の頭の一致を全部出して1組ずつ確かめた**（春・夏・秋の3大会で `アレセイア` だけ）。
  * **新しい書き分けが見つかったら、ここに1組ずつ足す。**
  */
-const KANAGAWA_NAME_FIX = { アレセイア: "アレセイア湘南" };
-const kanagawaName = (name) => KANAGAWA_NAME_FIX[name] ?? name;
+const KANAGAWA_NAME_FIX = {
+  アレセイア: "アレセイア湘南",
+  茅ヶ崎: "茅ケ崎",
+  // ★2015年春は同じ大会の中で `相模原` と `県相模原` の両方（同じ学校）。決勝だけ `県相模原` だった
+  相模原: "県相模原",
+  // ★2018年春は同じ大会の中で `慶応藤沢` と `慶應藤沢`（同じ学校。字体の違い）。他の年は `慶応藤沢`
+  慶應藤沢: "慶応藤沢",
+  // ★2024年夏は `小田原城北工`（1回戦）と `小田原城北工業`（2回戦）。他の年は `小田原城北工`
+  小田原城北工業: "小田原城北工",
+};
+/*
+  ★★★**シードの印が校名の頭に付く日がある**（2026-11-20。`第1シード 慶應義塾`）。
+  2023年の夏は**2回戦だけ**この形で、3回戦以降は `慶應義塾`。**別の学校に見えて、勝ち上がった学校が
+  次の回戦から辿れず、1回戦から40試合が「決勝から辿れない」**になった（2021年夏・2024年夏にも同じ形）。
+  ★**校名の頭の `第N シード` だけを落とす**（校名の中身には触らない）。
+  ★**`茅ヶ崎`＝`茅ケ崎`**（2018年夏に1つの大会の中で両方の書き方が出ていた）。どちらも同じ学校（slug `chigasaki`）。
+*/
+const kanagawaName = (name) => {
+  const n = name.replace(/^第\s*\d+\s*シード\s*/, "");
+  return KANAGAWA_NAME_FIX[n] ?? n;
+};
 
 /** 同じ顔合わせの継続試合は、いちばん後の日の1行だけ残す（`kanagawa.collect` の説明を読むこと） */
 function dropSupersededContinuations(games) {
@@ -965,6 +1438,8 @@ const saitama = {
       */
       if (date[1] !== String(year)) continue;
       const round = pickRound(day.label);
+      // ★★「1・2回戦」のまとめ書きの日は、候補を持ち回って `resolveCombinedRounds` が決める（神奈川と同じ。2026-11-20）
+      const candidates = roundCandidates(day.label);
 
       for (const table of html.match(/<table[\s\S]*?<\/table>/gi) ?? []) {
         const rows = [...table.matchAll(/<tr[\s\S]*?<\/tr>/gi)].map((m) =>
@@ -973,29 +1448,92 @@ const saitama = {
         // イニング表は見出しが「TEAM … 計」で、続く2行が両校
         if (rows.length < 3) continue;
         const head = rows[0].join(" ");
-        if (!/TEAM/i.test(head) || !/計/.test(head)) continue;
+        /*
+          ★★★**古いページ（2015年ごろ）は見出しが `TEAM` ではなく `【決 勝】` `【3位決定戦】` のような回戦名**
+          （2026-11-20）。`TEAM` だけを探していたので、**その日の決勝・3位決定戦の試合表が丸ごと読まれず**、
+          2015年春は決勝が無い大会になっていた（表は準決勝で終わる）。
+          ★**見出しの回戦名は、その試合自身の回戦**（日のラベルが「決勝・3位決定戦」でも試合ごとに違う）。
+        */
+        /*
+          ★見出しの書き方は年で4通りある（2026-11-20に数えた）: `TEAM` ／ `【決 勝】` ／ `《決 勝》` ／
+          **回戦名そのもの**（`4回戦` `3回戦再試合`。2016年夏の7/18はこの形で、**9試合が丸ごと読まれていなかった**）。
+        */
+        const firstCell = rows[0][0] ?? "";
+        const bracketLabel = /^[【［《〔[]\s*([^】］》〕\]]+?)\s*[】］》〕\]]/.exec(firstCell);
+        const plainLabel =
+          !bracketLabel && !/TEAM/i.test(firstCell) && /回戦|決勝|3位決定戦/.test(firstCell) ? firstCell : null;
+        if (!/TEAM/i.test(head) && !bracketLabel && !plainLabel) continue;
+        const gameRound = bracketLabel ? pickRound(bracketLabel[1]) : plainLabel ? pickRound(plainLabel) : null;
 
-        const [homeRow, awayRow] = rows.slice(1, 3);
+        let [homeRow, awayRow] = rows.slice(1, 3);
+        /*
+          ★★★**11回以上の延長戦は、表が2段に割れている**（2026-11-20。埼玉の全年）。
+
+            TEAM | 1 | 2 | … | 10                       ← 1〜10回（`計` が無い）
+            本庄東  | 0 | 0 | … | 0
+            市立川口 | 1 | 0 | … | 0
+            TEAM | 11 | 12 |  |  | … | 計                ← 11回以降と合計
+            本庄東  | 1 | 1 |  |  | … | 5
+            市立川口 | 1 | 0 |  |  | … | 4
+            （延長12回）
+
+          **見出しに `計` が無い表は丸ごと読み飛ばされていた**ので、**11回以上の延長戦はどの年も1試合も入っていなかった**
+          （2017年夏の4回戦・5回戦が1試合ずつ欠け、**勝った学校の次の試合が「決勝から辿れない」**になっていた）。
+          ★**合計は2段目の `計` の列**（校名は1段目と同じ）。
+        */
+        if (!/計/.test(head)) {
+          const k = rows.findIndex((r, i) => i >= 3 && r.some((c) => /計/.test(c)));
+          if (k < 0 || !rows[k + 1] || !rows[k + 2]) continue;
+          homeRow = rows[k + 1];
+          awayRow = rows[k + 2];
+          if (homeRow[0] !== rows[1][0] || awayRow[0] !== rows[2][0]) continue; // 校名が合わない（別の表）
+        }
         const home = homeRow[0];
         const away = awayRow[0];
         const a = Number(homeRow.at(-1));
         const b = Number(awayRow.at(-1));
         if (!home || !away || !Number.isFinite(a) || !Number.isFinite(b)) continue;
 
-        games.push({
+        const game = {
           date: isoDate,
           season,
           tournament,
-          round,
+          round: gameRound ?? round,
           venue: null,
           // 勝者の印が無いので点数から決める（神奈川と同じ）
           teams: [
             { display: home, score: a, won: a > b },
             { display: away, score: b, won: b > a },
           ],
-        });
+        };
+        // ★列挙できない項目（生成物に書き出さない）
+        if (candidates && !gameRound) {
+          Object.defineProperty(game, "roundCandidates", { value: candidates, enumerable: false });
+        }
+        // ★「（南・準決勝）」「（北・決勝）」のように南北が書かれた日（100回記念の2大会。`splitHalves` が読む）
+        const side = /[（(]\s*(南|北)\s*[・･]/.exec(day.label ?? "")?.[1];
+        if (side) Object.defineProperty(game, "side", { value: side, enumerable: false });
+        games.push(game);
       }
     }
+    dropRepeatedPairs(games, games[0]?.tournament ?? null, "埼玉");
+    // ★100回記念（2018年夏）の南・北は大会名を分ける（HSB flash は「記念 北埼玉大会」「記念 南埼玉大会」と呼んでいる）
+    splitHalves(games, "埼玉", (name, side) =>
+      !side
+        ? `${(name ?? "").replace(/南・北|北・南/, "")}（南北の分からない試合）`
+        : /南・北|北・南/.test(name ?? "")
+          ? name.replace(/南・北|北・南/, `${side}埼玉`).replace(`${side}埼玉埼玉`, `${side}埼玉`)
+          : `${name ?? ""}（${side}）`,
+    );
+    /*
+      ★★★**「7月10日 （1・2回戦）」のまとめ書きの日がある**（2026-11-20。埼玉の2024〜2026年の夏）。
+      `pickRound` は最初に当たる `2回戦` を採るので、**その日の1回戦の試合が全部「2回戦」になり**、
+      決勝から辿れない試合が 10〜16 件出てトーナメント表が組めなかった。神奈川と同じ直し方。
+    */
+    resolveCombinedRounds(games, games[0]?.tournament ?? null, "埼玉");
+    // ★「決勝」の日に決勝が2試合ある（もう1つは3位決定戦。埼玉の2019年春・2022年秋）
+    resolveThirdPlaceAndFinal(games, games[0]?.tournament ?? null, "埼玉");
+    fixDoubledRounds(games, games[0]?.tournament ?? null, "埼玉");
     return games;
   },
 };
@@ -18322,6 +18860,12 @@ const saitamaHsbFill = hsbFillAdapter({
   host: "saitama",
   summer2020: /^2020夏季埼玉県高等学校野球大会/,
   primary: saitama,
+  /*
+    ★★★**埼玉に `reconcileWithFill`（HSB flash の完全な表から補う）を使わないこと**（2026-11-20に試して外した）。
+    「準決勝1試合が欠けている」の本当の原因は、**11回以上の延長戦を主（埼玉高校野球情報局）の読み取りが
+    読み飛ばしていたこと**（`saitama.collect` の `TEAM … 計` が2段に割れる表）。直したら HSB から足す必要が無くなった。
+    ★広げると、組めていた大会（2026年の春・秋）から主の試合を3〜6試合落とし、HSB の綴り（`狭山ケ丘`）の試合と入れ替えた。
+  */
 });
 
 const kanagawaHsbFill = hsbFillAdapter({
@@ -18330,6 +18874,15 @@ const kanagawaHsbFill = hsbFillAdapter({
   host: "kanagawa",
   summer2020: /^令和2年度神奈川県高等学校野球大会/,
   primary: kanagawa,
+  /*
+    ★★★**神奈川に `reconcileWithFill`（HSB flash の完全な表から補う）を使わないこと**（2026-11-20に試して外した）。
+    神奈川は**不戦勝を試合として持たない**ので、不戦勝のある大会（2022年春・2021年の夏と秋・2020年夏）は勝ち抜きの木が途切れて表が組めない。
+    そこで HSB flash から補おうとしたが、
+      ・**校名の字体が出典で違う**（`慶応藤沢` と `慶應藤沢`、`茅ケ崎北陵` と `茅ヶ崎北陵`）ので、**主の試合に寄せられず、
+        同じ試合が別の綴りで二重に足された**（2020年夏 +32・2019年夏 +30・2021年春 +12）。
+      ・**HSB flash も不戦勝を試合に持たない**ので、そもそも穴は埋まらない。
+    ★埼玉は主の綴りがそろっていて、穴が「出典に載っていない試合」なので効いた（`saitamaHsbFill`）。
+  */
 });
 
 const ishikawaHsbFill = hsbFillAdapter({
@@ -19811,9 +20364,20 @@ async function main() {
         ★**自分（副）の出所が付いている試合だけを捨てる。** 主の試合には触らない。
         ★**主が薄い年でも、1試合でもあれば副は入らない**という決めごと（`hsbFillAdapter`）のとおり。
       */
+      /*
+        ★★★**ただし、主の大会に足した試合（`reconcileWithFill`）は捨てない**（2026-11-20）。
+        足した試合は**主と同じ大会名**で入っている（断片は副の大会名）。**この実行が別の年だけを取り直すとき、
+        副は他の年を取り直さない**ので、ここで捨てると**過去年の穴埋めだけが消えて表が組めなくなる**
+        （埼玉で `--year 2015` を走らせたら、2018年の春・秋に足した6試合が消えた）。
+        ★**見分けは大会名**: 同じ 年×季節 に、副の出所ではない試合が持つ大会名と同じなら足した試合。
+      */
+      const mainNames = new Set(
+        beforeAll.filter((g) => g.source?.name !== adapter.gameSource?.name).map((g) => g.tournament ?? ""),
+      );
       const before = coveredByPrimary
         ? beforeAll.filter((g) => {
             if (g.source?.name !== adapter.gameSource?.name) return true;
+            if (adapter.reconcileWithFill && mainNames.has(g.tournament ?? "")) return true;
             const y = g.date?.slice(0, 4) ?? yearOfTournament(g.tournament, [g]);
             return !coveredByPrimary.has(`${g.season}\t${y ?? "?"}`);
           })
@@ -19847,7 +20411,8 @@ async function main() {
                 `前の内容を残す（出典側の変更なら、直すまで古いままになる）`,
             );
           }
-          seasonGames.push(...before);
+          // ★分ける前・読まなくなった大会名（`SUPERSEDED_TOURNAMENTS`）は、前の内容からも外す
+          seasonGames.push(...before.filter((g) => !SUPERSEDED_TOURNAMENTS.has(g.tournament)));
         }
       } else if (before.length) {
         /*
@@ -19903,8 +20468,18 @@ async function main() {
         const carryKey = (g) => `${g.tournament ?? ""}\t${g.date ? g.date.slice(0, 4) : ""}`;
         const fresh = new Set(seasonGames.map(carryKey));
         const freshNames = new Set(seasonGames.map((g) => g.tournament).filter(Boolean));
+        /*
+          ★★★**大会名が無かった前の試合は、同じ 年×季節 に大会名のある試合が取れたら捨てる**（2026-11-20。神奈川）。
+          大会名を題から付けるようにしたので、**名前の無い2019年の夏178試合が、名前のある2019年の夏と二重に残った。**
+          ★**`replaceNullNamed` を立てた県だけ**（他県には、名前の無い試合と名前のある試合が同じ年に混ざる出典がある）。
+        */
+        const freshYears = new Set(seasonGames.filter((g) => g.tournament && g.date).map((g) => g.date.slice(0, 4)));
         const carried = before.filter(
-          (g) => !fresh.has(carryKey(g)) && !(g.tournament && !g.date && freshNames.has(g.tournament)),
+          (g) =>
+            !SUPERSEDED_TOURNAMENTS.has(g.tournament) &&
+            !fresh.has(carryKey(g)) &&
+            !(g.tournament && !g.date && freshNames.has(g.tournament)) &&
+            !(adapter.replaceNullNamed && !g.tournament && g.date && freshYears.has(g.date.slice(0, 4))),
         );
         if (carried.length) {
           const names = [...new Set(carried.map((g) => g.tournament))];

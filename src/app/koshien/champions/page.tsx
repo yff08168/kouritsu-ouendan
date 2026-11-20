@@ -99,6 +99,15 @@ export default async function KoshienChampionsPage() {
                 優勝した公立高校の一覧
               </Link>
             </li>
+            {/* ★**神宮の歴代優勝校**（2026-11-20）。甲子園と並ぶ全国大会 */}
+            <li>
+              <Link
+                href="/jingu/champions"
+                className="inline-flex min-h-11 items-center rounded-lg border border-line px-3 text-ink hover:bg-navy-50"
+              >
+                明治神宮大会の歴代優勝校
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>

@@ -382,6 +382,15 @@ export async function JinguSpecial({ live }: { live: JinguLive }) {
         <p className="mt-3 text-xs text-ink-muted">
           収録している{nf.format(listJinguTournaments().length)}大会のうち、学校マスタに公立・国立・高専として収録されている学校だけを並べています。
         </p>
+        {/* ★**歴代の優勝校**（2026-11-20） */}
+        <p className="mt-2 text-xs">
+          <Link
+            href="/jingu/champions"
+            className="font-bold text-accent-800 underline decoration-line underline-offset-2"
+          >
+            歴代の優勝校・準優勝校・決勝スコアはこちら
+          </Link>
+        </p>
       </section>
 
       {lastYear && (

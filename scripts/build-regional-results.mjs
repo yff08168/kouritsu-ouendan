@@ -144,6 +144,17 @@ const jsonPath = flagValue("--json");
  */
 const PICKUP_ONLY = args.includes("--pickup-only");
 /*
+  `--progress-only` … **進捗地図（`regional-progress.ts`）だけ**を、書き出し済みの県のファイルから作り直す
+  （2026-11-21）。**出典を1つも叩かない。** 進捗の選び方を変えたときに、**次のCI（1日2回）を待たずに
+  地図へ反映する**ための口。
+  ★**進捗が見るのは県のファイルの `games` と `upcoming` だけ**（`allGames` は見ない）ので、
+  ファイルから組み直しても CI が作るものと同じになる（直す前の選び方で今の生成物を再現できることを確かめてある）。
+  ★**抜粋（`regional-pickup.ts`）は書き換えない。**
+*/
+const PROGRESS_ONLY = args.includes("--progress-only");
+/** 出典を叩かず、書き出し済みの県のファイルから `districts` を作る実行 */
+const FROM_FILES = PICKUP_ONLY || PROGRESS_ONLY;
+/*
   ~~`--all` … 過去ぶんも全部残す。工数見積もりや検算のとき用~~
   → ★**2026-08-23 に既定が「全部残す」になったので消した**（`kept` の説明を読むこと）。
 */
@@ -20161,12 +20172,12 @@ async function main() {
     ★**`--pickup-only` のときは1県も取りに行かない**（`districtsFromFiles` の説明）。
     **空の `targets` にして、下のループを1周も回さない**のがいちばん小さい細工で済む。
   */
-  const targets = PICKUP_ONLY
+  const targets = FROM_FILES
     ? []
     : onlyPref
       ? ADAPTERS.filter((a) => a.slug === onlyPref)
       : ADAPTERS;
-  if (!PICKUP_ONLY && !targets.length) {
+  if (!FROM_FILES && !targets.length) {
     console.log(`対応している県: ${ADAPTERS.map((a) => a.slug).join(", ")}`);
     return;
   }
@@ -20176,7 +20187,7 @@ async function main() {
     `--pickup-only` は書き出し済みのファイル（もう slug が付いている）だけを見るので、
     Supabase にも繋がない。
   */
-  const index = PICKUP_ONLY
+  const index = FROM_FILES
     ? null
     : buildIndex(
         await fetchSchools(
@@ -21144,9 +21155,12 @@ async function main() {
     ★★**`allGames` は持っていない**ので、この先で使えるのは抜粋の選定だけ。
     勝ち上がりと進捗は下で書き換えないようにしてある。
   */
-  if (PICKUP_ONLY) {
+  if (FROM_FILES) {
     districts.push(...districtsFromFiles());
-    console.log(`--pickup-only: ${districts.length} 県のファイルから抜粋を作り直します`);
+    console.log(
+      `${PROGRESS_ONLY ? "--progress-only" : "--pickup-only"}: ${districts.length} 県のファイルから` +
+        `${PROGRESS_ONLY ? "進捗地図" : "抜粋"}を作り直します`,
+    );
   }
 
   const results = { districts };
@@ -21509,7 +21523,7 @@ async function main() {
     ★**無いものから数え直さない。いまのファイルの値をそのまま持ち越す。**
     ★**次に出典から取り直したとき（CIは1日2回）に正しく作り直される。**
   */
-  const spotlight = PICKUP_ONLY
+  const spotlight = FROM_FILES
     ? previousPickupSpotlight()
     : [...bySlugRecord.values()]
     /*
@@ -21662,10 +21676,13 @@ async function main() {
       null,
       2,
     )};\n`;
-  writeFileSync(OUT_PICKUP, pickupFile, "utf8");
-  console.log(
-    `  書き出した: ${path.relative(ROOT, OUT_PICKUP)}（${Math.round(pickupFile.length / 1024)}KB）`,
-  );
+  // ★`--progress-only` は抜粋を書き換えない（進捗地図だけ作り直す）
+  if (!PROGRESS_ONLY) {
+    writeFileSync(OUT_PICKUP, pickupFile, "utf8");
+    console.log(
+      `  書き出した: ${path.relative(ROOT, OUT_PICKUP)}（${Math.round(pickupFile.length / 1024)}KB）`,
+    );
+  }
 
   /*
     ★★★**`--pickup-only` はここで終わる。進捗の生成物は書き換えない**（2026-09-06）。
@@ -21769,8 +21786,39 @@ async function main() {
       byTournament.get(k).push(g);
     }
     const newestOf = (gs) => gs.map((g) => g.date).filter(Boolean).sort().at(-1) ?? "";
-    const [tournament, games] = [...byTournament.entries()].sort(
-      (a, b) => newestOf(b[1]).localeCompare(newestOf(a[1])) || b[1].length - a[1].length,
+    /*
+      ★★★**日付の無い今年の大会が、日付のある去年以前の大会に負けていた**（2026-11-21。運営者の
+      「組み合わせ待ちと書いてあるのはもう大会が終わってる」「和歌山もすでに終わってる」）。
+
+      連盟の紙に**試合の日付が1つも無い**県がある（群馬・和歌山の県二次予選）。**日付を持たない大会は
+      「最後の試合の日」が空になり、並べ替えでいちばん古い扱いになる。** 群馬は 2023年の秋（日付あり）が
+      先頭に来て「今季のものでない」→ **今年の秋が終わっているのに「組み合わせ待ち」**になり、
+      和歌山は **日付のある一次予選（9/20）が日付の無い県二次予選（優勝 和歌山東）に勝って、「3回戦まで進行中」**になっていた。
+      ★**先に大会の年（`yearOfTournament`。日付が無ければ大会名から）で比べ、同じ年の中で日付を見る。**
+      年が出せない大会は最後。**日付のある県はこれまでと1つも変わらない**（新しい年の大会が必ず日付も新しい）。
+      ★**日付が無いもの同士は、試合数の多いほう**（これまでと同じ）。
+    */
+    const yearKey = (k, gs) => yearOfTournament(k || null, gs) ?? -1;
+    /*
+      ★★**同じ年の「一次予選」は、終わった本大会があれば外す。** 一次予選は本大会（県二次予選・県大会）へ
+      進む学校を決める予選で、**県の今季として出すのは本大会のほう**（和歌山）。
+      ★**外すのは「同じ年に決勝まで終わった一次予選以外の大会がある」ときだけ**（本大会がまだなら、
+      これまでどおり一次予選の進み具合を出す）。
+    */
+    const entries = [...byTournament.entries()];
+    const finishedMainYears = new Set(
+      entries
+        .filter(([k, gs]) => !/一次予選/.test(k) && gs.some((g) => g.round === "決勝"))
+        .map(([k, gs]) => yearKey(k, gs)),
+    );
+    const candidates = entries.filter(
+      ([k, gs]) => !(/一次予選/.test(k) && finishedMainYears.has(yearKey(k, gs))),
+    );
+    const [tournament, games] = candidates.sort(
+      (a, b) =>
+        yearKey(b[0], b[1]) - yearKey(a[0], a[1]) ||
+        newestOf(b[1]).localeCompare(newestOf(a[1])) ||
+        b[1].length - a[1].length,
     )[0];
 
     /*

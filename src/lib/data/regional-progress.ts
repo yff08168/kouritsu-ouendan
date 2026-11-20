@@ -6,7 +6,7 @@ import type { RegionalProgressBoard } from "@/lib/regional-results";
 export const REGIONAL_PROGRESS: RegionalProgressBoard = {
   "season": "autumn",
   "latestDate": "2026-11-05",
-  "generatedAt": "2026-11-20T19:01:36Z",
+  "generatedAt": "2026-11-20T23:03:44Z",
   "districts": [
     {
       "slug": "nagano",
@@ -86,7 +86,17 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "gunma",
       "district": "群馬",
-      "state": "pending"
+      "state": "done",
+      "season": "autumn",
+      "tournament": "令和8年度第79回秋季関東地区高等学校野球大会群馬県予選",
+      "games": 56,
+      "publicGames": 46,
+      "round": "決勝",
+      "latestDate": null,
+      "champion": {
+        "display": "健大高崎",
+        "slug": null
+      }
     },
     {
       "slug": "saga",
@@ -226,14 +236,17 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
     {
       "slug": "wakayama",
       "district": "和歌山",
-      "state": "playing",
+      "state": "done",
       "season": "autumn",
-      "tournament": "令和8年度秋季近畿地区高等学校野球大会和歌山県一次予選",
-      "games": 25,
-      "publicGames": 25,
-      "round": "3回戦",
-      "latestDate": "2026-09-20",
-      "champion": null
+      "tournament": "令和8年度秋季近畿地区高等学校野球大会県二次予選",
+      "games": 7,
+      "publicGames": 7,
+      "round": "決勝",
+      "latestDate": null,
+      "champion": {
+        "display": "和歌山東",
+        "slug": "wakayamahigashi"
+      }
     },
     {
       "slug": "hyogo",

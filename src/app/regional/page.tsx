@@ -94,9 +94,32 @@ export default async function RegionalPage() {
   const counts: Record<string, number> = {};
   /** ★**本日試合がある県だけ、マスの行き先を速報にする**（下の `buildHref`） */
   const liveToday = new Set<string>();
+  /** 地図に出した地区の進み具合（凡例の数を、地図のマスから数えるため） */
+  const shown: RegionalProgress[] = [];
+  /**
+   * ★★★**北北海道・南北海道・東東京・西東京のマスには、北海道大会・東京都大会を出す**（2026-11-21。運営者の
+   * 「組み合わせ待ちと書いてあるのはもう大会が終わってる」）。
+   * 春季・秋季は「北海道大会」「東京都大会」が1つしか無く、**夏だけ北・南／東・西に分かれる**
+   * （`REGIONAL_ONLY_DISTRICTS`）。**4地区の行は夏のためのもので、秋は「今季の試合なし」になる**ので、
+   * **自分の行が `pending` のときだけ親の行を使う**（夏は今までどおり自分の行）。
+   * ★**行き先は親のページ**（春・秋の試合は親の県ページにある。子のページは夏の大会）。
+   */
+  const PARENT_OF: Record<string, string> = {
+    "kita-hokkaido": "hokkaido",
+    "minami-hokkaido": "hokkaido",
+    "higashi-tokyo": "tokyo",
+    "nishi-tokyo": "tokyo",
+  };
+  const viaParent = new Map<string, string>();
   for (const pref of PREFECTURES) {
-    const p = bySlug.get(pref.slug);
+    const own = bySlug.get(pref.slug);
+    const parentSlug = PARENT_OF[pref.slug];
+    const parent = parentSlug ? bySlug.get(parentSlug) : undefined;
+    const useParent = Boolean(parent && parent.state !== "pending" && (!own || own.state === "pending"));
+    const p = useParent ? parent : own;
     if (!p) continue; // 出典が無い地区。マスは「未対応」の見た目のまま
+    if (useParent && parentSlug) viaParent.set(pref.slug, parentSlug);
+    shown.push(p);
 
     /*
       ★★**その日に試合がある県は、進捗より「いま」を先に出す。**
@@ -157,7 +180,13 @@ export default async function RegionalPage() {
     }
     counts[pref.slug] = p.publicGames;
     const done = p.state === "done";
+    /*
+      ★**公立が優勝した地区は色を付ける**（2026-11-21。運営者の指示）。
+      **優勝校の `slug` があるのは公立だけ**（私立は学校ページが無いので null）。
+    */
+    const publicChampion = done && Boolean(p.champion?.slug);
     detail[pref.slug] = {
+      tone: publicChampion ? "champion" : undefined,
       /*
         1行目 … どこまで進んだか（終わっていれば優勝校）
         2行目 … 大会名（長いので2行で打ち切られる。CSS の line-clamp）
@@ -174,7 +203,7 @@ export default async function RegionalPage() {
         pref.name,
         p.tournament ?? "",
         done
-          ? `終了。優勝は${p.champion?.display ?? "不明"}`
+          ? `終了。優勝は${p.champion?.display ?? "不明"}${publicChampion ? "（公立高校）" : ""}`
           : `${p.round ?? "開催中"}まで進行中`,
         `公立が出た試合は${p.publicGames}件`,
       ]
@@ -183,9 +212,17 @@ export default async function RegionalPage() {
     };
   }
 
-  const playing = REGIONAL_PROGRESS.districts.filter((d) => d.state === "playing");
-  const done = REGIONAL_PROGRESS.districts.filter((d) => d.state === "done");
-  const scheduled = REGIONAL_PROGRESS.districts.filter((d) => d.state === "scheduled");
+  /*
+    ★**凡例の数は、地図に出したマスから数える**（2026-11-21）。以前は生成物の行（北海道・東京の
+    全道・都大会の行を含む51行）を数えていたので、**マスの数（49）と合わなかった。**
+    ★**公立が優勝した地区は「決勝まで」から分けて数える**（凡例の色が別なので、足して合うように）。
+  */
+  const isPublicChampion = (d: RegionalProgress) =>
+    d.state === "done" && Boolean(d.champion?.slug);
+  const playing = shown.filter((d) => d.state === "playing");
+  const champions = shown.filter(isPublicChampion);
+  const done = shown.filter((d) => d.state === "done" && !isPublicChampion(d));
+  const scheduled = shown.filter((d) => d.state === "scheduled");
   const covered = REGIONAL_PROGRESS.districts.length;
 
   return (
@@ -255,7 +292,9 @@ export default async function RegionalPage() {
               ★**`liveSlugOf` を必ず通すこと** —— 北北海道などをそのまま渡すと404。
             */
             buildHref={(slug) =>
-              liveToday.has(slug) ? `/live/${liveSlugOf(slug)}` : `/prefectures/${slug}`
+              liveToday.has(slug)
+                ? `/live/${liveSlugOf(slug)}`
+                : `/prefectures/${viaParent.get(slug) ?? slug}`
             }
           />
         </div>
@@ -268,6 +307,15 @@ export default async function RegionalPage() {
             />
             開催中（{playing.length}地区）
           </span>
+          {champions.length > 0 && (
+            <span className="inline-flex items-center gap-1.5">
+              <span
+                aria-hidden="true"
+                className="inline-block h-3.5 w-6 rounded-sm border border-accent-500 bg-accent-100 ring-1 ring-inset ring-accent-500"
+              />
+              公立高校が優勝（{champions.length}地区）
+            </span>
+          )}
           <span className="inline-flex items-center gap-1.5">
             <span
               aria-hidden="true"
@@ -303,6 +351,8 @@ export default async function RegionalPage() {
           <strong className="font-medium">当サイトがまだ結果を掲載していない</strong>地区です。
           <br />
           右肩の数字は、その大会で公立高校が出た試合の数です。
+          <br />※ 春季・秋季の北海道大会と東京都大会は地区に分かれないので、
+          北北海道・南北海道には北海道大会、東東京・西東京には東京都大会の結果を出しています（夏は地区ごとの大会）。
           <br />※ 甲子園の大会区分（49地区）で並べた図です。実際の県の形や面積とは異なります。
         </p>
       </header>

@@ -25,6 +25,14 @@ import type { RegionalTeam } from "@/lib/regional-results";
  *   運営者の指示で一般的な形に替えた）。**横に広い表は表の中だけでスクロールさせる**
  *   （ページ本文は横に流れない。`BracketScroller` が上にもバーを出す）。
  *
+ * ★★★ **広い画面では回戦の列を横へ伸ばす**（2026-11-21。運営者の「右に余白があるので、全体をうまく活用して」）。
+ *   **列の位置は幅に対する割合で置く**（校名の箱は左の固定幅）。**SVG の `viewBox` を使わないこと** ——
+ *   使うと幅に合わせて字も行の高さも拡大され、**縦に長い表がもっと縦に伸びる**。**伸びるのは横だけ。**
+ *   そのため SVG の中の x は `%`（または校名の箱の幅の px）で書く。**表の幅の下限は従来の `WIDTH`**
+ *   （狭い画面では今までどおり表の中だけ横にスクロールする）。
+ *   ★**向きは「校名が左・右へ進む」のまま**（神宮のトップの表だけは運営者の指示で
+ *   「高校が下に横一列・上へ進む」＝`JinguBracketCard`。60校を超える表をその向きにはできない）。
+ *
  * ★★ **枝は `buildRegionalBracket` が検算済み**（組めない大会は組まない）。ここは**描くだけ**。
  *   `seat.from` が「前の試合の番号」、null が「シード（その回戦から出る）」。
  *   ★**決勝から辿って、校名の行は「seat.from が null の席」だけ**（行は深さ優先で上から順に振る）。
@@ -136,6 +144,8 @@ export function RegionalBracket({
   const WIDTH = X_CHAMP + 150;
   const HEIGHT = TOP + 14 + (leaves.length - 1) * rowH + 40 + TOP;
   const bottomY = HEIGHT - 12;
+  /** 下限の幅（`WIDTH`）での x（px）→ 幅に対する割合。これより広ければ横へ伸びる */
+  const pct = (x: number) => `${(x / WIDTH) * 100}%`;
 
   const stroke = (red: boolean) => (red ? RED : BLACK);
   const sw = (red: boolean) => (red ? 2.25 : 1.5);
@@ -148,33 +158,32 @@ export function RegionalBracket({
   return (
     <div className={cn("mt-3", className)}>
       <BracketScroller>
-        <div className="min-w-max">
+        <div style={{ minWidth: WIDTH }}>
           <svg
             role="img"
             aria-label={`トーナメント表。${bracket.total}試合。${
               champion ? `優勝は${champion.display}。` : "優勝校は決まっていません。"
             }`}
-            viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-            width={WIDTH}
             height={HEIGHT}
-            className="block max-w-none"
+            className="block w-full max-w-none"
           >
-            {/* 回戦の札（暗い地に白字）。縦に長い表のため、上と下の両方に出す */}
+            {/* 回戦の札（暗い地に白字）。縦に長い表のため、上と下の両方に出す。
+                位置は割合なので入れ子の svg で置く（はみ出しは見せる） */}
             {bracket.rounds.map((r, col) =>
               [8, bottomY - 20].map((y, k) => (
-                <g key={`${r.round}-${k}`}>
-                  <rect x={joinX(col) - 30} y={y} width={60} height={20} rx={10} fill="#1b2a4a" />
-                  <text
-                    x={joinX(col)}
-                    y={y + 14}
-                    fontSize={11}
-                    fontWeight={700}
-                    textAnchor="middle"
-                    fill="#fff"
-                  >
+                <svg
+                  key={`${r.round}-${k}`}
+                  x={pct(joinX(col))}
+                  y={0}
+                  width={1}
+                  height={1}
+                  overflow="visible"
+                >
+                  <rect x={-30} y={y} width={60} height={20} rx={10} fill="#1b2a4a" />
+                  <text x={0} y={y + 14} fontSize={11} fontWeight={700} textAnchor="middle" fill="#fff">
                     {r.round}
                   </text>
-                </g>
+                </svg>
               )),
             )}
 
@@ -188,7 +197,7 @@ export function RegionalBracket({
                       <line
                         key={`s${n.game.index}-${i}`}
                         x1={NAME_W}
-                        x2={joinX(n.col)}
+                        x2={pct(joinX(n.col))}
                         y1={c.y}
                         y2={c.y}
                         stroke={stroke(redPass)}
@@ -202,11 +211,11 @@ export function RegionalBracket({
                   const decided = n.winner !== null;
                   if (decided !== redPass) return null;
                   const parent = nodes.find((p) => p.children.includes(n));
-                  const toX = parent ? joinX(parent.col) : X_CHAMP;
+                  const toX = pct(parent ? joinX(parent.col) : X_CHAMP);
                   return (
                     <line
                       key={`o${n.game.index}`}
-                      x1={joinX(n.col)}
+                      x1={pct(joinX(n.col))}
                       x2={toX}
                       y1={n.outY}
                       y2={n.outY}
@@ -219,7 +228,7 @@ export function RegionalBracket({
                 {nodes.map((n) => {
                   const yOf = (c: Leaf | Node) => (c.kind === "team" ? c.y : c.outY);
                   const [a, b] = n.children;
-                  const x = joinX(n.col);
+                  const x = pct(joinX(n.col));
                   return (
                     <g key={`v${n.game.index}`}>
                       {(n.winner === 0) === redPass && (
@@ -298,12 +307,12 @@ export function RegionalBracket({
             {/* ---- 得点（結び目の出口の線の上下）---- */}
             {nodes.map((n) => {
               const [u, d] = n.game.seats;
-              const x = joinX(n.col);
+              const x = pct(joinX(n.col));
               // ★不戦勝は試合が行われていないので、得点の代わりに「不戦勝」と出す（0対0にしない）
               if (n.game.game.walkover) {
                 return (
                   <g key={`t${n.game.index}`}>
-                    <text x={x + 6} y={n.outY - 4} fontSize={10.5} fontWeight={700} fill={INK}>
+                    <text x={x} dx={6} y={n.outY - 4} fontSize={10.5} fontWeight={700} fill={INK}>
                       不戦勝
                     </text>
                     <title>{label(n)}</title>
@@ -313,7 +322,8 @@ export function RegionalBracket({
               return (
                 <g key={`t${n.game.index}`}>
                   <text
-                    x={x + 6}
+                    x={x}
+                    dx={6}
                     y={n.outY - 4}
                     fontSize={12}
                     fontWeight={u.team.won ? 700 : 400}
@@ -323,7 +333,8 @@ export function RegionalBracket({
                     {u.team.score}
                   </text>
                   <text
-                    x={x + 6}
+                    x={x}
+                    dx={6}
                     y={n.outY + 14}
                     fontSize={12}
                     fontWeight={d.team.won ? 700 : 400}
@@ -340,10 +351,10 @@ export function RegionalBracket({
             {/* ---- 優勝（決勝の勝者）---- */}
             {champion && (
               <>
-                <text x={X_CHAMP + 8} y={root.outY - 8} fontSize={10.5} fontWeight={700} fill={MUTED}>
+                <text x={pct(X_CHAMP)} dx={8} y={root.outY - 8} fontSize={10.5} fontWeight={700} fill={MUTED}>
                   優勝
                 </text>
-                <text x={X_CHAMP + 8} y={root.outY + 12} fontSize={14} fontWeight={700} fill={INK}>
+                <text x={pct(X_CHAMP)} dx={8} y={root.outY + 12} fontSize={14} fontWeight={700} fill={INK}>
                   {champion.display}
                 </text>
               </>

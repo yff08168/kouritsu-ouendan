@@ -66,6 +66,12 @@ export type PrefectureMapDetail = {
   lines: PrefectureMapLine[];
   /** オレンジの枠で目立たせる（「いま動いている」など） */
   highlight?: boolean;
+  /**
+   * ★**公立高校が優勝した地区**（2026-11-21。運営者の「公立高校が優勝した地区は色を付ける」）。
+   * `highlight`（開催中）より**濃いオレンジの面に、同じ色の輪**を付ける（輪は枠の内側に描くので
+   * マスの大きさは変わらない）。**「いま動いている」と取り違えない**ように別の見た目にしてある。
+   */
+  tone?: "champion";
   /** 読み上げ用の文。**マスの中身をそのまま読んでも意味が通らない**ので必ず渡す */
   label: string;
 };
@@ -122,6 +128,7 @@ export function PrefectureMap({
                 const cell = detail?.[prefecture.slug];
 
                 // 春も夏も「今年」に公立が出ている地区。今年いちばん熱い場所。
+                const isChampion = cell?.tone === "champion";
                 const isHot = cell
                   ? Boolean(cell.highlight)
                   : highlightYear != null &&
@@ -151,7 +158,9 @@ export function PrefectureMap({
                         "prefecture-map__tile rounded border transition-colors",
                         isActive
                           ? "border-navy-800 bg-navy-800 text-white"
-                          : isHot
+                          : isChampion
+                            ? "border-accent-500 bg-accent-100 text-navy-900 ring-1 ring-inset ring-accent-500 hover:bg-accent-100"
+                            : isHot
                             ? "border-accent-500 bg-accent-50 text-navy-900 hover:bg-accent-100"
                             : count > 0
                               ? "border-navy-300 bg-navy-50 text-navy-800 hover:border-navy-600 hover:bg-navy-100"
@@ -186,7 +195,7 @@ export function PrefectureMap({
                               key={i}
                               line={line}
                               isActive={isActive}
-                              isHighlight={Boolean(cell.highlight)}
+                              isHighlight={Boolean(cell.highlight) || isChampion}
                             />
                           ))}
                         </span>

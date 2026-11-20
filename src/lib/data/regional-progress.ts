@@ -6,7 +6,7 @@ import type { RegionalProgressBoard } from "@/lib/regional-results";
 export const REGIONAL_PROGRESS: RegionalProgressBoard = {
   "season": "autumn",
   "latestDate": "2026-11-05",
-  "generatedAt": "2026-11-19T19:34:53Z",
+  "generatedAt": "2026-11-20T19:01:36Z",
   "districts": [
     {
       "slug": "nagano",
@@ -59,8 +59,8 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "done",
       "season": "autumn",
       "tournament": "第79回秋季関東地区高校野球山梨県大会",
-      "games": 39,
-      "publicGames": 34,
+      "games": 29,
+      "publicGames": 25,
       "round": "決勝",
       "latestDate": "2026-10-04",
       "champion": {
@@ -94,8 +94,8 @@ export const REGIONAL_PROGRESS: RegionalProgressBoard = {
       "state": "done",
       "season": "autumn",
       "tournament": "第159回九州地区高等学校野球佐賀大会",
-      "games": 32,
-      "publicGames": 31,
+      "games": 34,
+      "publicGames": 33,
       "round": "決勝",
       "latestDate": "2026-10-12",
       "champion": {

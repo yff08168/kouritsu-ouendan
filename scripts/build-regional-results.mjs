@@ -745,7 +745,9 @@ const kanagawa = {
       **これまでは HSB flash の171試合（表が組める）が出ていた**ので、**主が読むようになって表が組めなくなる**のを避ける。
       ★**主がこの年の夏を持たなければ、副（`kanagawaHsbFill`）が足す**（`fillGapsOnly`）。
       ★**主が前に書いた名前（下の `SUPERSEDED_TOURNAMENTS`）は引き継がない**。
-      ★不戦勝を試合として持てるようになったら、この行を外すこと。
+      ★★**不戦勝を別の入れ物（`walkovers`）で持てるようにしたあとも、外せなかった**（2026-11-20に外して試した）。
+      不戦勝1件（`浅野―横浜翠嵐`）を足してもなお、**舞岡が3回戦を戦った試合が出典に無く**組めず、回戦の書かれていない4試合も決められなかった。
+      **別の穴なので、HSB flash（171試合・組める）に任せたまま。**
     */
     if (season === "summer" && year === 2020) {
       SUPERSEDED_TOURNAMENTS.add("2020年夏 令和2年度神奈川県高校野球大会");
@@ -882,7 +884,13 @@ const kanagawa = {
             （2022年春・2021年夏ほか）。**数えて必ずログに出す**（原因が不戦勝だと分かるように。**どちらが勝ったかは出典に書かれていない**）。
           */
           if (!m && /不戦勝/.test(score ?? "") && home && away) {
-            walkovers.push(`${isoDate} ${home}―${away}`);
+            walkovers.push({
+              date: isoDate,
+              a: kanagawaName(home),
+              b: kanagawaName(away),
+              round: dayInfo.round,
+              candidates: dayInfo.candidates,
+            });
             continue;
           }
           if (!m || !home || !away) continue;
@@ -939,13 +947,6 @@ const kanagawa = {
       ★**後の行にも `(継続試合)` が付く** —— 印では最終かどうか決められないので、
       **同じ顔合わせの後の行があるかどうか**で見る。
     */
-    if (walkovers.length) {
-      console.log(
-        `  ℹ️ 神奈川: ${games[0]?.tournament ?? "大会名なし"} の不戦勝 ${walkovers.length} 件は試合として持たない` +
-          `（${walkovers.slice(0, 8).join(" / ")}${walkovers.length > 8 ? " ほか" : ""}）。` +
-          `**不戦勝で負けた側の勝ち上がりが、勝ち抜きの木の行き先を失う**（表が組めない原因になる）`,
-      );
-    }
     const kept = dropSupersededContinuations(games);
     if (kept.length !== games.length) {
       console.log(
@@ -974,6 +975,8 @@ const kanagawa = {
     resolveThirdPlaceAndFinal(kept, kept[0]?.tournament ?? null, "神奈川");
     inferRoundsByDepth(kept, kept[0]?.tournament ?? null, "神奈川");
     fixDoubledRounds(kept, kept[0]?.tournament ?? null, "神奈川");
+    // ★不戦勝は試合として持たず、別の入れ物（`walkovers`）に記録する（勝った側と回戦は次の試合から決める）
+    recordWalkovers("kanagawa", season, year, resolveWalkovers(walkovers, kept, season, "神奈川"));
     return kept;
   },
 };
@@ -1040,6 +1043,101 @@ function dropRepeatedPairs(games, tournament, label) {
  * ★`連合` は別々のチームが同じ名前なので結びつけに使わない。
  * ★大会名の直し方は `rename`（県ごとの名前の形に合わせる）。**直したことは必ずログに出す。**
  */
+/**
+ * ★★★**不戦勝の入れ物**（2026-11-20。運営者の「不戦勝を試合として持てるようにして」）。
+ *
+ * 不戦勝（`東海大相模 不戦勝 藤沢翔陵`）は**試合が行われていない**。得点が無く、**勝ったほうも出典に書かれていない**。
+ * ★**`games` に入れない**（0対0の試合になり、勝敗数・得点・引き分けが狂う）。**別の入れ物 `walkovers`**
+ *   （`upcoming`・`areaGames` と同じ）に、**勝った側に `won: true`・得点は 0（画面に出さない）・`walkover: true`** で持つ。
+ *   **使うのは表の枝を組むときだけ**（サイト側の `bracketGamesOf`）。
+ * ★**アダプタが `recordWalkovers` で書き、組み立て（下）が読む**（**季節の取り込みの流れ・引き継ぎ・検算には入れない**）。
+ *   `scope`＝今回取りに行った 年×季節。**同じ 年×季節 の前の不戦勝は、今回のもので置き換える**（0件でも）。
+ */
+const WALKOVER_SINK = new Map();
+function recordWalkovers(slug, season, year, items) {
+  if (!WALKOVER_SINK.has(slug)) WALKOVER_SINK.set(slug, { scope: new Set(), items: [] });
+  const sink = WALKOVER_SINK.get(slug);
+  sink.scope.add(`${season}|${year}`);
+  sink.items.push(...items);
+}
+
+/**
+ * ★★**不戦勝の勝った側と回戦を、「次の試合」から決める**（出典は `A 不戦勝 B` としか書かない）。
+ *
+ * ★**勝った側 ＝ この日より後に試合をしているほう**（不戦勝で負けた側は、その大会で終わる）。
+ *   **両方に後の試合がある・どちらにも無いときは決めない**（入れない。ログに出す）。
+ * ★**回戦 ＝ 勝った側の次の試合の、1つ前の回戦**（決勝→準決勝→準々決勝→最も深い N回戦→N−1回戦）。
+ *   **その日のラベルの回戦と食い違うときは、ラベルのほうが書かれた事実なので、ラベルを採る**（食い違いはログに出す）。
+ *   ラベルが「1・2回戦」のまとめ書きなら、**候補に入っているときだけ**採る。
+ * ★**「連合」は同名の別チームなので手掛かりにしない**（決めない）。
+ */
+function resolveWalkovers(raw, games, season, label) {
+  const out = [];
+  const roundNo = (r) => (/^\d+回戦$/.test(r ?? "") ? Number(r.match(/\d+/)[0]) : null);
+  for (const w of raw) {
+    const desc = `${w.date} ${w.a}―${w.b}`;
+    if (w.a === "連合" || w.b === "連合") {
+      console.log(`  ⚠️ ${label}: 不戦勝 ${desc} は「連合」が同名の別チームなので、勝った側を決められず入れない`);
+      continue;
+    }
+    const laterOf = (name) =>
+      games
+        .filter((g) => g.date > w.date && g.teams.some((t) => t.display === name))
+        .sort((x, y) => String(x.date).localeCompare(String(y.date)))[0] ?? null;
+    const na = laterOf(w.a);
+    const nb = laterOf(w.b);
+    if (Boolean(na) === Boolean(nb)) {
+      console.log(
+        `  ⚠️ ${label}: 不戦勝 ${desc} は、${na ? "どちらにもこの後の試合がある" : "どちらにもこの後の試合が無い"}ので勝った側を決められず入れない`,
+      );
+      continue;
+    }
+    const [winner, loser, next] = na ? [w.a, w.b, na] : [w.b, w.a, nb];
+    // 1つ前の回戦
+    const maxInt = Math.max(0, ...games.filter((g) => g.tournament === next.tournament).map((g) => roundNo(g.round) ?? 0));
+    const prev =
+      next.round === "決勝" ? "準決勝"
+      : next.round === "準決勝" ? "準々決勝"
+      : next.round === "準々決勝" ? (maxInt ? `${maxInt}回戦` : null)
+      : roundNo(next.round) > 1 ? `${roundNo(next.round) - 1}回戦`
+      : null;
+    let round = prev;
+    if (w.round && !w.candidates) {
+      if (round && w.round !== round) {
+        console.log(`  ℹ️ ${label}: 不戦勝 ${desc} は、日のラベルが「${w.round}」・次の試合から出る回戦は「${round}」。**ラベルを採る**`);
+      }
+      round = w.round;
+    } else if (w.candidates && round && !w.candidates.includes(roundNo(round))) {
+      console.log(`  ⚠️ ${label}: 不戦勝 ${desc} は、まとめ書き（${w.candidates.join("・")}回戦）に次の試合から出る「${round}」が入っていないので入れない`);
+      continue;
+    }
+    if (!round) {
+      console.log(`  ⚠️ ${label}: 不戦勝 ${desc} は回戦を決められず入れない`);
+      continue;
+    }
+    out.push({
+      date: w.date,
+      season,
+      tournament: next.tournament,
+      round,
+      venue: null,
+      teams: [
+        { display: winner, score: 0, won: true },
+        { display: loser, score: 0, won: false },
+      ],
+      note: "不戦勝",
+      walkover: true,
+    });
+  }
+  if (raw.length) {
+    console.log(
+      `  ℹ️ ${label}: 不戦勝 ${raw.length} 件のうち ${out.length} 件を、試合とは別の入れ物（walkovers）に記録した` +
+        `（${out.map((g) => `${g.date.slice(5)} ${g.round} ${g.teams[0].display}○―${g.teams[1].display}`).join(" / ")}）`,
+    );
+  }
+  return out;
+}
+
 /** `splitHalves` が分ける前の大会名。引き継ぎ（下のほう）が前の生成物から捨てる */
 const SUPERSEDED_TOURNAMENTS = new Set();
 function splitHalves(games, label, rename) {
@@ -18876,12 +18974,12 @@ const kanagawaHsbFill = hsbFillAdapter({
   primary: kanagawa,
   /*
     ★★★**神奈川に `reconcileWithFill`（HSB flash の完全な表から補う）を使わないこと**（2026-11-20に試して外した）。
-    神奈川は**不戦勝を試合として持たない**ので、不戦勝のある大会（2022年春・2021年の夏と秋・2020年夏）は勝ち抜きの木が途切れて表が組めない。
-    そこで HSB flash から補おうとしたが、
+    不戦勝のある大会（2022年春・2021年の夏と秋）が表が組めなかったので、HSB flash から補おうとしたが、
       ・**校名の字体が出典で違う**（`慶応藤沢` と `慶應藤沢`、`茅ケ崎北陵` と `茅ヶ崎北陵`）ので、**主の試合に寄せられず、
         同じ試合が別の綴りで二重に足された**（2020年夏 +32・2019年夏 +30・2021年春 +12）。
       ・**HSB flash も不戦勝を試合に持たない**ので、そもそも穴は埋まらない。
-    ★埼玉は主の綴りがそろっていて、穴が「出典に載っていない試合」なので効いた（`saitamaHsbFill`）。
+    ★**不戦勝は別の入れ物（`walkovers`。`recordWalkovers`）で持つようにして解決した**（上の2つは起きない）。
+    ★佐賀・山梨で効いたのは、主の綴りがそろっていて穴が「出典に載っていない試合」だったから。
   */
 });
 
@@ -20958,6 +21056,26 @@ async function main() {
       console.log(`    ${[...unmatched].join("、")}`);
     }
 
+    /*
+      ★★★**不戦勝**（2026-11-20）。アダプタが `recordWalkovers` で記録したものを、`games` とは別の入れ物 `walkovers` に書く。
+      ★**校名は `games` と同じ照合（`decorate`）を通す**（公立の色・学校ページへのリンクのため）。
+      ★**前の生成物の不戦勝は、今回取りに行っていない 年×季節 のぶんだけ引き継ぐ**
+      （今回取った 年×季節 は、0件でも置き換える。`--year` で別の年だけ取る実行が、他の年の不戦勝を消さないように）。
+      ★**副のアダプタ（同じ県の2つ目）が後に走って書き直すので、前の内容から引き継ぐ**（主が書いた不戦勝を消さない）。
+    */
+    const walkoverSink = WALKOVER_SINK.get(adapter.slug);
+    const walkoversNew = (walkoverSink?.items ?? [])
+      .filter((g) => isTargetTournament(g.tournament))
+      .map((g) => ({ ...g, teams: g.teams.map((t) => decorate(t, !isPrefectureOnly(g.tournament))) }));
+    const walkoverKey = (g) => `${g.season}|${g.date?.slice(0, 4) ?? ""}`;
+    const walkovers = [
+      ...(previousDistrict(adapter.slug)?.walkovers ?? []).filter((g) => !walkoverSink?.scope.has(walkoverKey(g))),
+      ...walkoversNew,
+    ];
+    if (walkovers.length) {
+      console.log(`  → 不戦勝 ${walkovers.length} 件（今回 ${walkoversNew.length} 件）。試合には入れず、表の枝を組むときだけ使う`);
+    }
+
     const district = {
       slug: adapter.slug,
       district: adapter.district,
@@ -20967,6 +21085,8 @@ async function main() {
       games,
       // ★**地区大会の試合。出典が県大会と同じページに載せているときだけ**（上の説明）。無い県は省略
       ...(areaGames.length ? { areaGames } : {}),
+      // ★**不戦勝。`games` には混ぜない**（上の説明）。無い県は省略
+      ...(walkovers.length ? { walkovers } : {}),
       /*
         ★**組み合わせ（未実施）。無い県は空**（型のうえでも省略できる）。
         **`games` とは別物**なので混ぜないこと。

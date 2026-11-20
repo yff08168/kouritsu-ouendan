@@ -15,6 +15,7 @@ import { LeadText } from "@/components/common/LeadText";
 import { getRegionalDistrict, seasonLabel } from "@/lib/regional-results";
 import { buildRegionalBracket } from "@/lib/regional-bracket";
 import {
+  bracketGamesOf,
   findTournament,
   listTournaments,
   summarizeTournament,
@@ -90,7 +91,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     （`summarizeTournament`）。**当て推量を検索結果に出さない。**
   */
   const s = summarizeTournament(entry);
-  const bracket = buildRegionalBracket(entry.games);
+  const bracket = buildRegionalBracket(bracketGamesOf(entry));
 
   /*
     ★★**年を必ず入れる。** 狙っているのは「2025 神奈川 高校野球 決勝」のような
@@ -184,7 +185,7 @@ export default async function TournamentPage({ params }: Props) {
     ブロック予選・出典に載っていない試合がある・校名が一意でない、
     のいずれかで組めない。**「だいたい合っている表」は出さない。**
   */
-  const bracket = buildRegionalBracket(entry.games);
+  const bracket = buildRegionalBracket(bracketGamesOf(entry));
 
   const title = entry.displayName ?? `${entry.year ?? ""}年${seasonLabel(entry.season)}の大会`;
   // ★**description と同じ関数で数える**（画面と検索結果で数が食い違わないように）

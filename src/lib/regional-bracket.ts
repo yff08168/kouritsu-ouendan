@@ -200,6 +200,10 @@ export function buildRegionalBracket(games: RegionalGame[]): RegionalBracket | n
 export function bracketForGames(
   games: RegionalGame[],
   tournament: string | null,
+  walkovers: RegionalGame[] = [],
 ): RegionalBracket | null {
-  return buildRegionalBracket(games.filter((g) => g.tournament === tournament));
+  return buildRegionalBracket([
+    ...games.filter((g) => g.tournament === tournament),
+    ...walkovers.filter((g) => g.tournament === tournament),
+  ]);
 }

@@ -189,6 +189,8 @@ export default async function PrefectureDetailPage({ params }: Props) {
       ? bracketForGames(
           regional.games.filter((g) => g.season === regionalGames.season),
           regionalGames.tournaments[0] ?? null,
+          // ★不戦勝は表の枝を組むときだけ（試合の一覧・集計には入れない）
+          (regional.walkovers ?? []).filter((g) => g.season === regionalGames.season),
         )
       : null;
 

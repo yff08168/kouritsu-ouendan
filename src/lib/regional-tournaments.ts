@@ -165,9 +165,22 @@ export type TournamentEntry = {
   /** 大会の年。分からなければ null */
   year: number | null;
   games: RegionalGame[];
+  /**
+   * この大会の不戦勝（表の枝を組むときだけ使う。**試合の一覧・集計には混ぜない**。`RegionalDistrict.walkovers`）。
+   * 無い大会は空の配列。
+   */
+  walkovers: RegionalGame[];
   /** いちばん新しい試合の日付（無い大会がある） */
   lastDate: string | null;
 };
+
+/**
+ * ★★**表の枝を組むために渡す試合**（試合＋不戦勝）。**表示・集計に使う配列とは別物。**
+ * 不戦勝は試合が行われていないので、**一覧・勝敗数・得点には入れない**（`walkover: true`）。
+ */
+export function bracketGamesOf(entry: { games: RegionalGame[]; walkovers?: RegionalGame[] }): RegionalGame[] {
+  return entry.walkovers?.length ? [...entry.games, ...entry.walkovers] : entry.games;
+}
 
 const SEASON_ORDER: Record<RegionalSeason, number> = {
   spring: 0,
@@ -221,6 +234,10 @@ function buildTournaments(district: RegionalDistrict): TournamentEntry[] {
       season,
       year: yearOfTournament(name || null, games),
       games,
+      // ★不戦勝は同じ 季節＋大会名 のものだけ（表の枝を組むとき専用）
+      walkovers: (district.walkovers ?? []).filter(
+        (w) => w.season === season && (w.tournament ?? "") === name,
+      ),
       lastDate: dates.length ? dates.sort().at(-1)! : null,
       slug: "",
     };

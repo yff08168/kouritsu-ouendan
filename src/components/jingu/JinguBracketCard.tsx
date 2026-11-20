@@ -14,8 +14,15 @@ import type { BracketGame, JinguBracket } from "@/lib/jingu-bracket";
  * ★★ **赤にするのは線だけ**（運営者の指示 2026-11-20「赤くするのは線だけで良い。校名まで赤くする必要なし」）。
  *   校名・得点・優勝校は黒で、**勝った側は太字**。負けた側・まだ終わっていない試合の線は黒。
  *   結び目の縦線は**勝った側の半分だけ赤**にする（添付の表のとおり）。
- *   **途中の得点は出すが赤にしない**（勝者は開始から3時間たった試合だけ。`isFinished`）。
+ *   **途中の得点は出すが赤にしない**（勝者は終わった試合だけ。`isFinished`）。
  * ★**オレンジ（accent）は使わない** —— 公立の印と取り違えるので、運営者が指定した赤を別に持つ。字と線だけ。
+ *
+ * ★★ **横に伸ばす**（2026-11-20。運営者の「縦ではなく横に表示してスペースを有効活用する」）。
+ *   **列（1回戦・2回戦・準決勝・決勝）の位置は幅に対する割合**で置き、広い画面ほど横へ広がる。
+ *   ★**viewBox を使わない**（使うと幅に合わせて字も高さも拡大され、縦に伸びる）。**字の大きさと行の高さは固定で、
+ *   伸びるのは横だけ。** そのため SVG の中の x は `%`（または校名の箱の幅の px）で書く。
+ *   ★**優勝校の欄は SVG の外（右端の固定幅）。** 決勝の線は SVG の右端まで伸び、その先に「優勝」と校名を置く。
+ *   ★**優勝校が決まっていないときは「優勝」の字だけ出す**（運営者の指示「未定は削除」）。
  *
  * ★★ **10校の形だけを描く**（`buildJinguBracket` が形に合わなければ null）。
  *   上から 2回戦×4試合（8席）のうち、第3試合の下の席と第4試合の上の席が「1回戦の勝者」。
@@ -36,11 +43,17 @@ const BOX_LINE = "#cfd7e3";
 const ROW_H = 34;
 const NAME_W = 124;
 const BOX_H = 26;
-const X = { r1: 176, r2: 262, sf: 348, f: 434, champ: 500 } as const;
-const WIDTH = 660;
+/** 表（SVG）の幅の下限（px）。列の位置はこの幅での値を割合にして置く（これより広ければ横へ伸びる） */
+const BASE_W = 560;
+const X = { r1: 176, r2: 262, sf: 348, f: 434 } as const;
+/** 優勝校の欄の幅（px）。校名が6〜7字でも収まる */
+const CHAMP_W = 124;
 const TOP = 30; // 見出し（回戦の札）の高さ
 const rowY = (i: number) => TOP + 14 + i * ROW_H;
 const HEIGHT = TOP + 14 + 9 * ROW_H + 24;
+
+/** 下限の幅での x（px）→ 幅に対する割合 */
+const pct = (x: number) => `${(x / BASE_W) * 100}%`;
 
 type Slot = BracketGame["teams"][number];
 
@@ -124,17 +137,17 @@ export function JinguBracketCard({
     { y: rowY(9), toX: X.r2, red: jG4.low.won },
   ];
 
-  // 結び目から次の結び目へ伸びる線（勝者が決まっていれば赤）
-  const outs: { from: Join; toX: number }[] = [
-    { from: jR1a, toX: X.r2 },
-    { from: jR1b, toX: X.r2 },
-    { from: jG1, toX: X.sf },
-    { from: jG2, toX: X.sf },
-    { from: jG3, toX: X.sf },
-    { from: jG4, toX: X.sf },
-    { from: jS1, toX: X.f },
-    { from: jS2, toX: X.f },
-    { from: jF, toX: X.champ },
+  // 結び目から次の結び目へ伸びる線（勝者が決まっていれば赤）。決勝の線は表の右端（優勝校の欄の手前）まで
+  const outs: { from: Join; to: string }[] = [
+    { from: jR1a, to: pct(X.r2) },
+    { from: jR1b, to: pct(X.r2) },
+    { from: jG1, to: pct(X.sf) },
+    { from: jG2, to: pct(X.sf) },
+    { from: jG3, to: pct(X.sf) },
+    { from: jG4, to: pct(X.sf) },
+    { from: jS1, to: pct(X.f) },
+    { from: jS2, to: pct(X.f) },
+    { from: jF, to: "100%" },
   ];
   const joins = [jR1a, jR1b, jG1, jG2, jG3, jG4, jS1, jS2, jF];
 
@@ -182,175 +195,181 @@ export function JinguBracketCard({
 
       <p className="mt-2 text-[0.6875rem] text-ink-faint sm:hidden">← 横にスクロールして決勝まで見られます →</p>
       <div className="mt-1 overflow-x-auto sm:mt-3">
-        <svg
-          role="img"
-          aria-label={`${year}年 明治神宮大会 高校の部のトーナメント表。${
-            champion ? `優勝は${champion}。` : "優勝校は未定。"
-          }`}
-          viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-          width={WIDTH}
-          height={HEIGHT}
-          className="block h-auto min-w-[660px] max-w-none"
-        >
-          {/* 回戦の札（暗い地に白字） */}
-          {(
-            [
-              ["1回戦", X.r1],
-              ["2回戦", X.r2],
-              ["準決勝", X.sf],
-              ["決勝", X.f],
-            ] as const
-          ).map(([label, x]) => (
-            <g key={label}>
-              <rect x={x - 28} y={2} width={56} height={22} rx={11} fill="#1b2a4a" />
-              <text x={x} y={17} fontSize={11.5} fontWeight={700} textAnchor="middle" fill="#fff">
-                {label}
-              </text>
-            </g>
-          ))}
+        <div className="flex" style={{ minWidth: BASE_W + CHAMP_W }}>
+          <svg
+            role="img"
+            aria-label={`${year}年 明治神宮大会 高校の部のトーナメント表。${
+              champion ? `優勝は${champion}。` : "優勝校は未定。"
+            }`}
+            height={HEIGHT}
+            className="block min-w-0 flex-1"
+            style={{ minWidth: BASE_W }}
+          >
+            {/* 回戦の札（暗い地に白字）。位置は割合なので入れ子の svg で置く（はみ出しは見せる） */}
+            {(
+              [
+                ["1回戦", X.r1],
+                ["2回戦", X.r2],
+                ["準決勝", X.sf],
+                ["決勝", X.f],
+              ] as const
+            ).map(([label, x]) => (
+              <svg key={label} x={pct(x)} y={0} width={1} height={1} overflow="visible">
+                <rect x={-28} y={2} width={56} height={22} rx={11} fill="#1b2a4a" />
+                <text x={0} y={17} fontSize={11.5} fontWeight={700} textAnchor="middle" fill="#fff">
+                  {label}
+                </text>
+              </svg>
+            ))}
 
-          {/* ---- 線（黒を先に、赤を後に描いて、赤を上に重ねる）---- */}
-          {[false, true].map((redPass) => (
-            <g key={String(redPass)} strokeLinecap="round" strokeLinejoin="round" fill="none">
-              {/* 校名の行から結び目まで */}
-              {seedLines
-                .filter((l) => l.red === redPass)
-                .map((l, i) => (
-                  <line
-                    key={`s${i}`}
-                    x1={NAME_W}
-                    x2={l.toX}
-                    y1={l.y}
-                    y2={l.y}
-                    stroke={stroke(l.red)}
-                    strokeWidth={sw(l.red)}
-                  />
-                ))}
-              {/* 結び目から次の結び目へ（勝者が決まっていれば赤） */}
-              {outs
-                .filter((o) => o.from.game.decided === redPass)
-                .map((o, i) => (
-                  <line
-                    key={`o${i}`}
-                    x1={o.from.x}
-                    x2={o.toX}
-                    y1={o.from.outY}
-                    y2={o.from.outY}
-                    stroke={stroke(o.from.game.decided)}
-                    strokeWidth={sw(o.from.game.decided)}
-                  />
-                ))}
-              {/* 結び目の縦線。上半分は上の入力、下半分は下の入力。勝った側の半分だけ赤 */}
-              {joins.map((j, i) => (
-                <g key={`v${i}`}>
-                  {j.up.won === redPass && (
+            {/* ---- 線（黒を先に、赤を後に描いて、赤を上に重ねる）---- */}
+            {[false, true].map((redPass) => (
+              <g key={String(redPass)} strokeLinecap="round" strokeLinejoin="round" fill="none">
+                {/* 校名の行から結び目まで */}
+                {seedLines
+                  .filter((l) => l.red === redPass)
+                  .map((l, i) => (
                     <line
-                      x1={j.x}
-                      x2={j.x}
-                      y1={j.upY}
-                      y2={j.outY}
-                      stroke={stroke(j.up.won)}
-                      strokeWidth={sw(j.up.won)}
+                      key={`s${i}`}
+                      x1={NAME_W}
+                      x2={pct(l.toX)}
+                      y1={l.y}
+                      y2={l.y}
+                      stroke={stroke(l.red)}
+                      strokeWidth={sw(l.red)}
                     />
-                  )}
-                  {j.low.won === redPass && (
+                  ))}
+                {/* 結び目から次の結び目へ（勝者が決まっていれば赤） */}
+                {outs
+                  .filter((o) => o.from.game.decided === redPass)
+                  .map((o, i) => (
                     <line
-                      x1={j.x}
-                      x2={j.x}
-                      y1={j.outY}
-                      y2={j.lowY}
-                      stroke={stroke(j.low.won)}
-                      strokeWidth={sw(j.low.won)}
+                      key={`o${i}`}
+                      x1={pct(o.from.x)}
+                      x2={o.to}
+                      y1={o.from.outY}
+                      y2={o.from.outY}
+                      stroke={stroke(o.from.game.decided)}
+                      strokeWidth={sw(o.from.game.decided)}
                     />
+                  ))}
+                {/* 結び目の縦線。上半分は上の入力、下半分は下の入力。勝った側の半分だけ赤 */}
+                {joins.map((j, i) => (
+                  <g key={`v${i}`}>
+                    {j.up.won === redPass && (
+                      <line
+                        x1={pct(j.x)}
+                        x2={pct(j.x)}
+                        y1={j.upY}
+                        y2={j.outY}
+                        stroke={stroke(j.up.won)}
+                        strokeWidth={sw(j.up.won)}
+                      />
+                    )}
+                    {j.low.won === redPass && (
+                      <line
+                        x1={pct(j.x)}
+                        x2={pct(j.x)}
+                        y1={j.outY}
+                        y2={j.lowY}
+                        stroke={stroke(j.low.won)}
+                        strokeWidth={sw(j.low.won)}
+                      />
+                    )}
+                  </g>
+                ))}
+              </g>
+            ))}
+
+            {/* ---- 校名の箱 ---- */}
+            {rows.map((r, i) => {
+              const red = r.name !== null && advanced.has(r.name);
+              return (
+                <g key={`n${i}`}>
+                  <rect
+                    x={0}
+                    y={rowY(i) - BOX_H / 2}
+                    width={NAME_W}
+                    height={BOX_H}
+                    rx={4}
+                    fill={BOX_FILL}
+                    stroke={BOX_LINE}
+                  />
+                  <text
+                    x={NAME_W / 2}
+                    y={rowY(i) + 4.5}
+                    fontSize={13}
+                    fontWeight={red ? 700 : 500}
+                    textAnchor="middle"
+                    fill={r.name ? INK : MUTED}
+                    fontStyle={r.name ? "normal" : "italic"}
+                  >
+                    {r.name ?? "未定"}
+                  </text>
+                </g>
+              );
+            })}
+
+            {/* ---- 得点（結び目の出口の線の上下）。まだ得点が無い試合は日時 ---- */}
+            {joins.map((j, i) => {
+              const hasScore = j.up.score !== null && j.low.score !== null;
+              return (
+                <g key={`t${i}`}>
+                  {hasScore ? (
+                    <>
+                      <text
+                        x={pct(j.x)}
+                        dx={6}
+                        y={j.outY - 5}
+                        fontSize={13}
+                        fontWeight={j.up.won ? 700 : 400}
+                        fill={j.up.won ? INK : MUTED}
+                        style={{ fontVariantNumeric: "tabular-nums" }}
+                      >
+                        {j.up.score}
+                      </text>
+                      <text
+                        x={pct(j.x)}
+                        dx={6}
+                        y={j.outY + 15}
+                        fontSize={13}
+                        fontWeight={j.low.won ? 700 : 400}
+                        fill={j.low.won ? INK : MUTED}
+                        style={{ fontVariantNumeric: "tabular-nums" }}
+                      >
+                        {j.low.score}
+                      </text>
+                    </>
+                  ) : (
+                    j.game.label && (
+                      <text x={pct(j.x)} dx={6} y={j.outY - 5} fontSize={9.5} fill={MUTED}>
+                        {j.game.label}
+                      </text>
+                    )
                   )}
                 </g>
-              ))}
-            </g>
-          ))}
+              );
+            })}
+          </svg>
 
-          {/* ---- 校名の箱 ---- */}
-          {rows.map((r, i) => {
-            const red = r.name !== null && advanced.has(r.name);
-            return (
-              <g key={`n${i}`}>
-                <rect
-                  x={0}
-                  y={rowY(i) - BOX_H / 2}
-                  width={NAME_W}
-                  height={BOX_H}
-                  rx={4}
-                  fill={BOX_FILL}
-                  stroke={BOX_LINE}
-                />
-                <text
-                  x={NAME_W / 2}
-                  y={rowY(i) + 4.5}
-                  fontSize={13}
-                  fontWeight={red ? 700 : 500}
-                  textAnchor="middle"
-                  fill={r.name ? INK : MUTED}
-                  fontStyle={r.name ? "normal" : "italic"}
-                >
-                  {r.name ?? "未定"}
-                </text>
-              </g>
-            );
-          })}
-
-          {/* ---- 得点（結び目の出口の線の上下）。まだ得点が無い試合は日時 ---- */}
-          {joins.map((j, i) => {
-            const hasScore = j.up.score !== null && j.low.score !== null;
-            return (
-              <g key={`t${i}`}>
-                {hasScore ? (
-                  <>
-                    <text
-                      x={j.x + 6}
-                      y={j.outY - 5}
-                      fontSize={13}
-                      fontWeight={j.up.won ? 700 : 400}
-                      fill={j.up.won ? INK : MUTED}
-                      style={{ fontVariantNumeric: "tabular-nums" }}
-                    >
-                      {j.up.score}
-                    </text>
-                    <text
-                      x={j.x + 6}
-                      y={j.outY + 15}
-                      fontSize={13}
-                      fontWeight={j.low.won ? 700 : 400}
-                      fill={j.low.won ? INK : MUTED}
-                      style={{ fontVariantNumeric: "tabular-nums" }}
-                    >
-                      {j.low.score}
-                    </text>
-                  </>
-                ) : (
-                  j.game.label && (
-                    <text x={j.x + 6} y={j.outY - 5} fontSize={9.5} fill={MUTED}>
-                      {j.game.label}
-                    </text>
-                  )
-                )}
-              </g>
-            );
-          })}
-
-          {/* ---- 優勝 ---- */}
-          <text x={X.champ + 8} y={jF.outY - 8} fontSize={10.5} fontWeight={700} fill={MUTED}>
-            優勝
-          </text>
-          <text
-            x={X.champ + 8}
-            y={jF.outY + 12}
-            fontSize={14}
-            fontWeight={700}
-            fill={champion ? INK : MUTED}
-            fontStyle={champion ? "normal" : "italic"}
-          >
-            {champion ?? "未定"}
-          </text>
-        </svg>
+          {/* ---- 優勝（表の右端。決勝の線の先）。決まるまでは「優勝」の字だけ ---- */}
+          <div className="relative shrink-0" style={{ width: CHAMP_W, height: HEIGHT }} aria-hidden="true">
+            <span
+              className="absolute left-2 text-[0.65625rem] font-bold leading-none"
+              style={{ bottom: HEIGHT - (jF.outY - 7), color: MUTED }}
+            >
+              優勝
+            </span>
+            {champion && (
+              <span
+                className="absolute left-2 whitespace-nowrap text-sm font-bold leading-none"
+                style={{ top: jF.outY + 2, color: INK }}
+              >
+                {champion}
+              </span>
+            )}
+          </div>
+        </div>
       </div>
 
       <ul className="sr-only">
@@ -358,11 +377,6 @@ export function JinguBracketCard({
           <li key={s}>{s}</li>
         ))}
       </ul>
-
-      <p className="mt-2 text-[0.6875rem] leading-relaxed text-ink-faint">
-        主催者（日本学生野球協会）の発表を約5分ごとに取り直しています。得点が出ていても試合の途中のことがあり、
-        勝ちの印（赤い線・太字）は開始から3時間たった試合にだけ付けています。
-      </p>
     </section>
   );
 }

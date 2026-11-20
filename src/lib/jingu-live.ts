@@ -278,9 +278,13 @@ export function parseOutline(html: string): {
  * 勝者の印は**開始から3時間たった試合にだけ**付ける（高校野球の1試合は2時間前後）。
  * ★**得点そのものは、途中でもそのまま出す。** 隠すと「始まっているのに何も出ない」になる。
  * ★**出典が「中止」「ノーゲーム」などを書いているときは終わった扱いにしない。**
+ * ★★**ただし出典が「終了」と書いている試合は、時刻を待たずに終わった扱い**（2026-11-20。
+ *   運営者から「赤の線が入っていない」。主催者の表は終わった試合の備考に `終了` と書くのに、
+ *   「備考があれば終わっていない」としていたので、終わっている試合に勝ちの印が付かなかった）。
  */
 export function isFinished(game: JinguLiveGame, year: number, now: Date): boolean {
-  if (!game.scores || game.note) return false;
+  if (!game.scores) return false;
+  if (game.note) return /^(?:試合)?終了$/.test(game.note);
   const [hh, mm] = (game.time ?? "0:0").split(":").map(Number);
   // 日本時間（UTC+9）の開始時刻
   const startsAt = Date.UTC(year, game.month - 1, game.day, (hh || 0) - 9, mm || 0);

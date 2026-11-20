@@ -2145,6 +2145,43 @@ const gunma = {
  * ★**記事の一覧は10件で切れる。** WordPressの月別一覧は既定で1ページ10件。
  * 夏は15日ぶんあるので、`&paged=2` まで辿らないと**大会の前半が丸ごと落ちる。**
  */
+/*
+  ★★★**佐賀の連盟ブログは同じ学校を回戦ごとに書き分ける**（2026-11-20）。
+  `鳥栖工`／`鳥栖工業`、`唐津商`／`唐津商業`、`早佐賀`／`早稲田佐賀`、`神清明`／`神埼清明` …。
+  **同じ大会の中で混ざると、勝ち上がりを辿れず表が組めない**（2026年秋は `鳥栖工業` が3回戦、`鳥栖工` が準決勝）。
+  ★**直す根拠は学校マスタ**: 生成物の中で、これらの略称は**同じ slug の学校に当たっている**
+  （`鳥栖工`→tosukogyo、`唐津商`→karatsushogyo …）。slug の無い略称（早佐賀・佐学園・神清明・伊実業ほか）は
+  **「頭の字が同じで、字を飛ばして書いたもの」**で、同じ大会に両方の書き方が出てくる。
+  ★**名指しの対応表にした**（熊本と同じ。「頭が同じなら寄せる」という一般規則は別の学校を巻き込む）。
+  ★**連合チーム（`塩田工・嬉野` など）は触らない**（内訳の書き方が試合ごとに違い、どれが正しいか決められない）。
+*/
+const SAGA_NAME_FIX = {
+  佐賀商: "佐賀商業",
+  佐賀工: "佐賀工業",
+  佐賀農: "佐賀農業",
+  唐津商: "唐津商業",
+  唐津工: "唐津工業",
+  有田工: "有田工業",
+  鳥栖商: "鳥栖商業",
+  鳥栖工: "鳥栖工業",
+  杵島商: "杵島商業",
+  伊万里商: "伊万里商業",
+  伊万里実: "伊万里実業",
+  伊実業: "伊万里実業",
+  伊農林: "伊万里農林",
+  鹿島実: "鹿島実業",
+  塩田工: "塩田工業",
+  神崎清明: "神埼清明",
+  神清明: "神埼清明",
+  早佐賀: "早稲田佐賀",
+  佐学園: "佐賀学園",
+};
+const sagaName = (name) => {
+  // ★「（佐賀）」だけ外す（`佐賀北（佐賀）`。他県の学校の `（鹿児島）` は区別のために残す）
+  const n = (name ?? "").replace(/[（(]佐賀[）)]$/, "").trim();
+  return SAGA_NAME_FIX[n] ?? n;
+};
+
 const saga = {
   slug: "saga",
   district: "佐賀",
@@ -2257,8 +2294,8 @@ const saga = {
             round: pickRound(head),
             venue: pickVenue(head),
             teams: [
-              { display: home, score: a, won: a > b, innings: cells(homeRow, a) ?? undefined },
-              { display: away, score: b, won: b > a, innings: cells(awayRow, b) ?? undefined },
+              { display: sagaName(home), score: a, won: a > b, innings: cells(homeRow, a) ?? undefined },
+              { display: sagaName(away), score: b, won: b > a, innings: cells(awayRow, b) ?? undefined },
             ],
           });
         }
@@ -16781,6 +16818,181 @@ function hsbAdapter({
 }
 
 /**
+ * ★★★**主（連盟）の大会を、副（HSB flash）の「完全な表」と突き合わせて直す**（2026-11-20。佐賀・山梨。運営者の「直して」）。
+ *
+ * ★**なぜ要るか** —— 年×季節単位の副（`hsbFillAdapter`）は「主が1試合でも持っている 年×季節」を足さないので、
+ * **主の大会が欠けていたり壊れていたりしても、副は何も直せない**:
+ *   佐賀 … 連盟のブログは**記事の無い日の試合を載せていない**（2026年秋の準々決勝4試合のうち2試合）。
+ *   山梨 … 連盟のページは**1〜3回戦の回戦名を書かず**（`round: null`）、**準決勝を「準々決勝」と誤記**し、
+ *          **中断した試合の途中経過の行が残る**（日本航空 1-3 山梨学院 → 翌日 1-8）。
+ *   どちらも**表が組めない**（`buildRegionalBracket` の検算は一切ゆるめていない）。
+ *
+ * ★★**使うのは「HSB flash が完全な表を持つ年」だけ**（完全＝決勝がちょうど1試合・出場校数−1＝試合数。
+ *   HSB 側の読み取りが紙の優勝校と突き合わせて通したものだけが返ってくる）。
+ *   ★**主の大会がその年×季節に1つに決まるときだけ**（2つ以上なら黙って何もしない）。
+ *   ★**HSB の試合のうち主の試合と突き合わせられたものが半数に満たなければ何もしない**（別の大会を見ている恐れ）。
+ *
+ * ★★**やることは4つだけ。主の試合の中身（得点・各回・球場）は変えない。**
+ *   ① **同じ顔合わせ・同じ得点の試合は同じ試合**。主の試合に**HSB の回戦名を付ける**（主が null か食い違うとき）
+ *   ② HSB にあって主に無い試合は**足す**（大会名は主のもの。校名は主の書き方に寄せる）
+ *   ③ **主にあって HSB の完全な表に無い試合は落とす**（中断の途中経過・年の消し残り。完全な表にある試合が全部の試合なので、
+ *      それに無い行は大会の木の外にある）。★**3位決定戦は落とさない**（HSB の表に無いのは当然）。
+ *   ④ **同じ顔合わせで得点だけ違うとき**は主を残して知らせる（どちらが正しいか決められない。各回の和と合計の検算を通ったのは主）
+ * ★**校名は主に寄せる**: 同じ slug があればそれで、無ければ「主の校名が副の校名の部分列」で、
+ *   候補が複数なら最も長い1つ。決められなければその試合は足さない。
+ * ★**足したぶんは試合ごとに `source`（HSB flash）を持つ**（回戦名を補っただけの主の試合には付けない）。
+ */
+function reconcileWithHsb({ held, previous, label, preferFillDates, teamAliases = {} }) {
+  const yearOf = (g) => g.date?.slice(0, 4) ?? null;
+  const isSubseq = (small, big) => {
+    let i = 0;
+    for (const c of big) if (c === small[i]) i += 1;
+    return i === small.length && small.length > 0;
+  };
+  // ★連合の区切り（半角・全角の中黒、読点）は比べるときだけ外す（`河･塩･上` と `河口湖・塩山・上野原`）
+  const clean = (s) => normalize(s ?? "").replace(/[\s　･・、,]/g, "");
+  const pairOf = (a, b) => [a, b].sort().join("\t");
+  const scoreKey = (g, a, b) => {
+    const sa = g.teams.find((t) => t.display === a)?.score;
+    const sb = g.teams.find((t) => t.display === b)?.score;
+    return `${sa}-${sb}`;
+  };
+
+  // 主の大会（年ごと）
+  const primaryByYear = new Map();
+  for (const g of previous) {
+    const y = yearOf(g);
+    if (!y || !g.tournament) continue;
+    if (!primaryByYear.has(y)) primaryByYear.set(y, new Map());
+    const m = primaryByYear.get(y);
+    if (!m.has(g.tournament)) m.set(g.tournament, []);
+    m.get(g.tournament).push(g);
+  }
+  // 副（HSB）の大会（年ごと・大会名ごと）
+  const heldByYear = new Map();
+  for (const g of held) {
+    const y = yearOf(g);
+    if (!heldByYear.has(y)) heldByYear.set(y, new Map());
+    const m = heldByYear.get(y);
+    if (!m.has(g.tournament)) m.set(g.tournament, []);
+    m.get(g.tournament).push(g);
+  }
+
+  const result = [];
+  for (const [year, hTours] of [...heldByYear].sort()) {
+    const pTours = primaryByYear.get(year);
+    if (!pTours || pTours.size !== 1) continue;
+    // ★完全な表だけ（決勝が1試合・出場校数−1＝試合数）
+    const complete = [...hTours].filter(([, gs]) => {
+      const teams = new Set(gs.flatMap((g) => g.teams.map((t) => t.display)));
+      return gs.filter((g) => g.round === "決勝").length === 1 && gs.length === teams.size - 1;
+    });
+    if (complete.length !== 1) continue;
+    const [tournament, primaryGames] = [...pTours][0];
+    const hGames = complete[0][1];
+
+    // 主の大会に出てくる校名（display → slug）
+    const names = new Map();
+    for (const p of primaryGames) for (const t of p.teams) if (!names.has(t.display)) names.set(t.display, t.slug ?? null);
+    const mapTeam = (t0) => {
+      // ★副の校名の誤記・別表記を主の書き方に直す（`teamAliases`。例: HSB の「青州」＝山梨の青洲）
+      const t = teamAliases[t0.display] ? { ...t0, display: teamAliases[t0.display] } : t0;
+      const bySlug = t.slug ? [...names].filter(([, s]) => s === t.slug).map(([d]) => d) : [];
+      if (bySlug.length === 1) return bySlug[0];
+      if (names.has(t.display)) return t.display;
+      const hs = clean(t.display);
+      const cands = [...names.keys()].filter((d) => {
+        const ps = clean(d);
+        return ps[0] === hs[0] && ps.length <= hs.length && isSubseq(ps, hs);
+      });
+      if (cands.length === 0) return t.display; // 主に出てこない学校（そのまま）
+      cands.sort((a, b) => clean(b).length - clean(a).length);
+      if (cands.length > 1 && clean(cands[0]).length === clean(cands[1]).length) return null;
+      return cands[0];
+    };
+
+    const used = new Set(); // 突き合わせられた主の試合
+    const out = []; // この大会の最終形
+    let roundFixed = 0;
+    let dateFixed = 0;
+    const added = [];
+    const unmappable = [];
+    const conflicts = [];
+    let matched = 0;
+    const mapped = hGames.map((h) => ({ h, a: mapTeam(h.teams[0]), b: mapTeam(h.teams[1]) }));
+    for (const { h, a, b } of mapped) {
+      if (!a || !b || a === b) {
+        unmappable.push(`${h.date} ${h.teams[0].display}-${h.teams[1].display}`);
+        continue;
+      }
+      const want = `${h.teams[0].score}-${h.teams[1].score}`;
+      const hit = primaryGames.find(
+        (p) => !used.has(p) && pairOf(p.teams[0].display, p.teams[1].display) === pairOf(a, b) && scoreKey(p, a, b) === want,
+      );
+      if (hit) {
+        used.add(hit);
+        matched += 1;
+        let p = hit;
+        if (h.round && p.round !== h.round) {
+          p = { ...p, round: h.round };
+          roundFixed += 1;
+        }
+        if (preferFillDates && h.date && p.date !== h.date) {
+          p = { ...p, date: h.date };
+          dateFixed += 1;
+        }
+        out.push(p);
+      } else {
+        added.push({ h, a, b });
+      }
+    }
+    // 突き合わせられた試合が半数に満たない＝別の大会を見ている恐れ。何もしない
+    if (matched * 2 < hGames.length) {
+      console.log(`  ℹ️ ${label} ${year}: 副の表と主の試合が半数も一致しない（${matched}/${hGames.length}）。そのまま`);
+      continue;
+    }
+    // ② 足す
+    for (const { h, a, b } of added) {
+      const sameP = primaryGames.filter((p) => !used.has(p) && pairOf(p.teams[0].display, p.teams[1].display) === pairOf(a, b));
+      if (sameP.length) {
+        // ④ 同じ顔合わせで得点だけ違う
+        conflicts.push(
+          `${h.date} ${a} ${h.teams[0].score}-${h.teams[1].score} ${b}（主は ${sameP.map((p) => `${p.date} ${scoreKey(p, a, b)}`).join(" / ")}）`,
+        );
+        for (const p of sameP) {
+          used.add(p);
+          out.push(h.round && p.round !== h.round ? { ...p, round: h.round } : p);
+        }
+        continue;
+      }
+      const pick = (t, d) => ({ ...t, display: d });
+      out.push({ ...h, tournament, teams: [pick(h.teams[0], a), pick(h.teams[1], b)] });
+    }
+    // ③ 主にあって使われなかった試合: 3位決定戦は残し、それ以外は落とす
+    const dropped = [];
+    for (const p of primaryGames) {
+      if (used.has(p)) continue;
+      if (/3位|三位/.test(p.round ?? "")) out.push(p);
+      else dropped.push(p);
+    }
+    const notes = [];
+    if (roundFixed) notes.push(`回戦名を補った/直した ${roundFixed}`);
+    if (added.length - conflicts.length > 0) notes.push(`足した ${added.length - conflicts.length}（${added.filter((x) => !conflicts.some((c) => c.startsWith(`${x.h.date} ${x.a} `))).map(({ h, a, b }) => `${h.date.slice(5)} ${h.round ?? "?"} ${a}${h.teams[0].score}-${h.teams[1].score}${b}`).join(" / ")}）`);
+    if (dateFixed) notes.push(`日付を副に合わせた ${dateFixed}`);
+    if (dropped.length) notes.push(`主にだけあって落とした ${dropped.length}（${dropped.map((p) => `${p.date.slice(5)} ${p.round ?? "?"} ${p.teams[0].display}${p.teams[0].score}-${p.teams[1].score}${p.teams[1].display}`).join(" / ")}）`);
+    if (notes.length || conflicts.length || unmappable.length) {
+      console.log(`  🔧 ${label} ${year} 「${tournament}」: ${notes.join("・") || "変更なし"}`);
+    }
+    if (conflicts.length) console.log(`  ⚠️ ${label} ${year}: 主と副で同じ顔合わせの得点が違う（主を残す）:\n      ${conflicts.join("\n      ")}`);
+    if (unmappable.length) console.log(`  ⚠️ ${label} ${year}: 校名を主に寄せられず足さなかった副の試合 ${unmappable.length} 件（${unmappable.slice(0, 3).join("／")}）`);
+    // 何も変わらないなら返さない（引き継ぎにそのまま任せる）
+    if (!roundFixed && !dateFixed && !added.length && !dropped.length && !unmappable.length) continue;
+    result.push(...out);
+  }
+  return result;
+}
+
+/**
  * ★★★**「連盟が持っていない年・季節だけ」を HSB flash から足すアダプタ**（2026-09-03）。
  *
  * ------------------------------------------------------------------
@@ -16804,7 +17016,7 @@ function hsbAdapter({
  *   ★**この2本立ては「切り替え」より弱い** —— 主が薄い年でも、
  *   **1試合でもあれば副は入らない。** 混ざって二重になるより取りこぼすほうを選んでいる。
  */
-function hsbFillAdapter({ slug, district, host, summer2020, primary, upcomingSeasonOf }) {
+function hsbFillAdapter({ slug, district, host, summer2020, primary, upcomingSeasonOf, reconcileWithFill, preferFillDates, teamAliases }) {
   const base = `https://${host}.hsbflash.jp`;
   return {
     ...HSB_BASE,
@@ -16825,6 +17037,10 @@ function hsbFillAdapter({ slug, district, host, summer2020, primary, upcomingSea
     upcomingSeasonOf,
     /** ★**主が持っていない 年×季節 だけ返す**（下の `add` が見る） */
     fillGapsOnly: true,
+    /** ★**主が持つ 年×季節 にも、主に無い試合だけを足す**（佐賀）。 */
+    reconcileWithFill: !!reconcileWithFill,
+    preferFillDates: !!preferFillDates,
+    teamAliases: teamAliases ?? {},
     /** ★**足した試合に付ける出所。** これが「主のもの」と見分ける印にもなる */
     gameSource: { name: "HSB flash", url: `${base}/` },
     _pages: new Map(),
@@ -17903,6 +18119,11 @@ const sagaHsbFill = hsbFillAdapter({
   // ★佐賀の2020年は `SAGA2020SSP杯佐賀県高校スポーツ大会`（野球の字が無い）
   summer2020: /^SAGA2020SSP杯佐賀県高校スポーツ大会/,
   primary: saga,
+  // ★★2026-11-20: 連盟のブログは記事の無い日の試合を載せていない（2026年秋の準々決勝4試合のうち2試合）。
+  //   主が持つ 年×季節 でも、HSB flash の完全な表と突き合わせて直す（`reconcileWithHsb`）
+  reconcileWithFill: true,
+  // ★日付は連盟の記事の「投稿日」なので、結果が出た翌日になることがある。副の日付（表の日程）に合わせる
+  preferFillDates: true,
 });
 
 const kagawaHsbFill = hsbFillAdapter({
@@ -18012,6 +18233,11 @@ const yamanashiHsbFill = hsbFillAdapter({
   host: "yamanashi",
   summer2020: /^2020年夏季山梨県高等学校野球大会/,
   primary: yamanashi,
+  // ★★2026-11-20: 連盟のページは 1〜3回戦の回戦名を書かず・準決勝を「準々決勝」と誤記し・中断した試合の途中経過が残る。
+  //   HSB flash の完全な表と突き合わせて回戦名を補い、木の外の行を落とす（`reconcileWithHsb`）
+  reconcileWithFill: true,
+  // ★HSB flash は「青洲」を「青州」と書いている（山梨県立青洲高校）。突き合わせる前に直す
+  teamAliases: { 青州: "青洲" },
 });
 
 const naganoHsbFill = hsbFillAdapter({
@@ -19244,12 +19470,20 @@ async function main() {
               .map((g) => `${g.season}\t${g.date?.slice(0, 4) ?? yearOfTournament(g.tournament, [g]) ?? "?"}`),
           )
         : null;
+      const heldBack = [];
       const add = (list) => {
         let added = 0;
         for (const g of list) {
           if (coveredByPrimary) {
             const y = g.date?.slice(0, 4) ?? yearOfTournament(g.tournament, [g]);
-            if (coveredByPrimary.has(`${g.season}\t${y ?? "?"}`)) continue;
+            if (coveredByPrimary.has(`${g.season}\t${y ?? "?"}`)) {
+              // ★★**試合単位で足す副**（佐賀）は、主が持つ 年×季節 の試合を取っておく（下で主と突き合わせる）
+              if (adapter.reconcileWithFill && g.date) {
+                g.source = { ...adapter.gameSource };
+                heldBack.push(g);
+              }
+              continue;
+            }
             // ★**足したぶんの出所を必ず書く**（県の出典は主のままなので、これが無いと嘘になる）
             g.source = { ...adapter.gameSource };
           }
@@ -19306,6 +19540,19 @@ async function main() {
           止めると、他県の更新までできなくなる。
         */
         console.log(`  ⚠️ ${season}: ${e.message}`);
+      }
+      // ★★**主が持つ 年×季節 に、主に無い試合だけを足す**（佐賀。`reconcileWithFill`）
+      if (adapter.reconcileWithFill && heldBack.length) {
+        const merged = reconcileWithHsb({
+          held: heldBack,
+          previous: (previousDistrict(adapter.slug)?.games ?? []).filter(
+            (g) => g.season === season && g.source?.name !== adapter.gameSource?.name,
+          ),
+          label: `${adapter.district} ${season}`,
+          preferFillDates: adapter.preferFillDates,
+          teamAliases: adapter.teamAliases,
+        });
+        seasonGames.push(...merged);
       }
       /*
         ★★**季節ごとの歯止め**（2026-08-19 追加）。

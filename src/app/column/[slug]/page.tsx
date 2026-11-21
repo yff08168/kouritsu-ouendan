@@ -10,6 +10,7 @@ import { Badge } from "@/components/common/Badge";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { JsonLd } from "@/components/common/JsonLd";
 import { NewsBody } from "@/components/news/NewsBody";
+import { GameSummaryCard } from "@/components/column/GameSummaryCard";
 import { AdSlot } from "@/components/ads/AdSlot";
 
 import { COLUMNS, findColumn, listColumns, type ColumnGame } from "@/lib/content/columns";
@@ -123,8 +124,26 @@ export default async function ColumnPage({ params }: Props) {
             </section>
           )}
 
-          <div className="mt-7">
-            <NewsBody markdown={column.body} />
+          {/*
+            ★**節ごとに描く。** `game` がある節は、見出しを試合から自動で組み、
+            **見出しの下に試合の概要カード**（回ごとの得点・試合時間・観衆）を出す。
+          */}
+          <div className="mt-2">
+            {column.sections.map((section, i) => {
+              const game = section.game !== undefined ? column.games[section.game] : undefined;
+              const heading = section.heading ?? (game ? gameHeading(game) : "");
+              return (
+                <section key={i} aria-labelledby={`c-s${i}`}>
+                  <div className="markdown">
+                    <h2 id={`c-s${i}`}>{heading}</h2>
+                  </div>
+                  {game && <GameSummaryCard game={game} />}
+                  <div className="mt-3">
+                    <NewsBody markdown={section.body} />
+                  </div>
+                </section>
+              );
+            })}
           </div>
 
           {column.photos.length > 0 && (
@@ -213,6 +232,12 @@ export default async function ColumnPage({ params }: Props) {
       )}
     </Container>
   );
+}
+
+/** 試合の節の見出し。**点数は `games` から**組む（見出しに手で書き写さない） */
+function gameHeading(game: ColumnGame): string {
+  const [a, b] = game.teams;
+  return `第${game.order}試合　${a.name} ${a.score}－${b.score} ${b.name}`;
 }
 
 /** 観戦した試合の1行。点数は `games` から（本文には書き写さない） */

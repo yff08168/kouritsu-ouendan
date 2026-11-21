@@ -7,6 +7,7 @@ import { Container } from "@/components/layout/Container";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { AdSlot } from "@/components/ads/AdSlot";
+import { ColumnLinkCard } from "@/components/column/ColumnLinkCard";
 import { RegionalBracket } from "@/components/results/RegionalBracket";
 import { RegionalGameList } from "@/components/results/RegionalGameList";
 import { PublicEntrantList } from "@/components/results/PublicEntrantList";
@@ -195,6 +196,9 @@ export default async function JinguTournamentPage({ params }: Props) {
           <RegionalBracket bracket={bracket} />
         </section>
       )}
+
+      {/* ★観戦コラム（公開済みのコラムがあるときだけ出る）。押せる文字だけ */}
+      <ColumnLinkCard about={`/jingu/${t.slug}`} />
 
       <AdSlot slot="sidebar" />
 

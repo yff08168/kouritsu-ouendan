@@ -7,6 +7,7 @@ import {
 } from "@/lib/queries/schools";
 import { listPublicYearsWithEntrants } from "@/lib/koshien-public";
 import { GUIDES } from "@/lib/content/guides";
+import { COLUMNS } from "@/lib/content/columns";
 import { getAllNewsSlugs } from "@/lib/queries/news";
 import { getAllPhenomenonSlugs } from "@/lib/queries/phenomena";
 import { getAllFeatureSlugs } from "@/lib/queries/features";
@@ -193,6 +194,8 @@ async function buildSitemapGroups(): Promise<SitemapGroups> {
     asDate(dates.filter((d): d is string => Boolean(d)).sort().at(-1));
   /** 地方大会でいちばん新しい試合の日付（一覧ページ用） */
   const regionalLast = newest([...districtLast.values()]);
+  /** ★**公開済みのコラムだけ**（下書きは本番では404なので sitemap にも載せない） */
+  const publishedColumns = COLUMNS.filter((c) => c.published);
 
   // ★**全国大会は生成物を読むだけ**なので、ここで1度だけ組み立てて下でも使う
   const koshienTournaments = listKoshienTournaments();
@@ -252,6 +255,17 @@ async function buildSitemapGroups(): Promise<SitemapGroups> {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    // ★**コラム**（2026-11-21。運営者の観戦記）。**公開済みが1本も無いあいだは載せない**（`/column` が 404 のため）
+    ...(publishedColumns.length > 0
+      ? [
+          {
+            url: url("/column"),
+            lastModified: newest(publishedColumns.map((c) => c.updatedOn ?? c.publishedOn)),
+            changeFrequency: "monthly" as const,
+            priority: 0.6,
+          },
+        ]
+      : []),
     { url: url("/jingu"), lastModified: nationalLast, changeFrequency: "monthly", priority: 0.6 },
     // ★**明治神宮大会（高校の部）の歴代優勝校**（2026-11-20）。**年ごとの大会ページ（下の nationalPages）とは別**
     { url: url("/jingu/champions"), lastModified: nationalLast, changeFrequency: "monthly", priority: 0.7 },
@@ -379,6 +393,14 @@ async function buildSitemapGroups(): Promise<SitemapGroups> {
     priority: 0.7,
   }));
 
+  // ★**コラム**（2026-11-21。手書き。`src/lib/content/columns.ts`）。**公開済みだけ**。更新日（なければ公開日）が最終更新
+  const columnPages: MetadataRoute.Sitemap = publishedColumns.map((c) => ({
+    url: url(`/column/${c.slug}`),
+    lastModified: asDate(c.updatedOn ?? c.publishedOn),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
   /*
     ★**年別アーカイブの年ページ**（2026-08-29 追加）。
     ★**地方大会がある年だけ**（`listArchiveYears`）。甲子園だけの年は作っていない
@@ -480,6 +502,7 @@ async function buildSitemapGroups(): Promise<SitemapGroups> {
       ...staticPages,
       ...rankingPages,
       ...guidePages,
+      ...columnPages,
       ...archivePages,
       ...phenomenonPages,
       ...featurePages,

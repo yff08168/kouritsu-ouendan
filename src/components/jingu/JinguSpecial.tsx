@@ -8,6 +8,7 @@ import { SectionHeading } from "@/components/common/SectionHeading";
 import { LeadText } from "@/components/common/LeadText";
 import { GuideLinkBox } from "@/components/guide/GuideLinkBox";
 import { AdSlot } from "@/components/ads/AdSlot";
+import { ColumnLinkCard } from "@/components/column/ColumnLinkCard";
 import { LiveRefresh } from "@/components/results/LiveRefresh";
 
 import {
@@ -270,9 +271,12 @@ export async function JinguSpecial({ live }: { live: JinguLive }) {
         </div>
         <p className="mt-4 text-xs leading-relaxed text-ink-muted">
           {"出場校が決まっていない試合は「未定」と出ます。勝ち上がりに合わせて、大会主催者の発表のとおりに入れ替わります。" +
-            "得点が出ていても試合の途中のことがあるため、勝った学校の印は試合の開始から3時間たってから付けています。"}
+            "得点が出ていても試合の途中のことがあるため、勝った学校の印は、主催者が「終了」と書いてから（書かれていない試合は開始から3時間たってから）付けています。"}
         </p>
       </section>
+
+      {/* ★観戦コラム（公開済みのコラムがあるときだけ出る）。押せる文字だけ */}
+      <ColumnLinkCard about={`/jingu/${live.year}`} />
 
       <AdSlot slot="sidebar" />
 

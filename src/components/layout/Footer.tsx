@@ -2,6 +2,7 @@ import Link from "next/link";
 import { NAV, PREFECTURES, SITE } from "@/lib/constants";
 import { Container } from "@/components/layout/Container";
 import { Logo } from "@/components/layout/Logo";
+import { hasPublishedColumns } from "@/lib/content/columns";
 // ★`XIcon` は X のボタンを戻すときに一緒に戻す（下の注記を読むこと）
 
 /**
@@ -74,7 +75,15 @@ export function Footer() {
           <nav aria-label="コンテンツ">
             <h2 className="text-sm font-bold text-white">コンテンツ</h2>
             <ul className="mt-4 space-y-2.5">
-              {[...NAV, ...FOOTER_EXTRA_LINKS].map((item) => (
+              {[
+                ...NAV,
+                ...FOOTER_EXTRA_LINKS,
+                /*
+                  ★**コラムは公開済みが1本でもあるときだけ出す**（2026-11-21）。**公開済みが無いあいだは
+                  `/column` が 404** なので、入口だけを出さない。NAV には足さない（幅の理由は上の注記）。
+                */
+                ...(hasPublishedColumns() ? [{ href: "/column", label: "コラム" }] : []),
+              ].map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}

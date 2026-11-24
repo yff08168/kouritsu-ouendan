@@ -12,7 +12,8 @@
  *      開催中の年は **主催者の日程表**（`getJinguLive`。ネットワークを使う。読むだけ）、
  *      大会が終わって生成物に入った年は `src/lib/data/jingu-games.json`。
  *   ② **試合の概要カード（`summary`）** … **主催者の試合詳細ページ**（日程表の「詳細」リンク）。
- *      回ごとの得点・試合時間・観衆・投手の人数・主な得点場面。
+ *      回ごとの得点・試合時間・観衆・投手の人数・主な得点場面・**完投の記録（投手1人・投球回・球数）**。
+ *      ★本文に書いた「N球」「N回、N球」は、ここで検算した完投の値以外を書けない（`checkProse`）。
  *   ★どちらも取れなければ「照合できなかった」と書いて終了コード2（黙って通さない）。
  *
  * ★**確かめるのは 日付・回戦・両校・両校の得点。** 向き（どちらが1校目か）は問わず、校名ごとに点数を比べる。
@@ -170,6 +171,37 @@ function parseOfficial(html) {
         ]
       : [];
 
+  // 投手成績（投手欄と同じチームの並び）。見出し「回 球数 打者 安 振 球 責」のあとに、
+  // 投手ごとの9行（名前・(学年 中学)・回・球数・打者・安・振・球・責）が続き、最後に「計」と7つの数。
+  // ★投球回は「3 1/3」のように1行で書かれる。**人数は行の数から数える**（投手欄の「、」の数とは別の出所）
+  const pitching = [];
+  for (let n = 1; n < lines.length; n++) {
+    if (lines[n] !== "球数" || lines[n - 1] !== "回") continue;
+    let p = n + 6; // 見出しの残り（打者 安 振 球 責）を飛ばす
+    let people = 0;
+    while (p < lines.length && lines[p] !== "計" && people < 30) {
+      p += 9;
+      people++;
+    }
+    if (lines[p] === "計") {
+      // 投手の名前は各行の先頭（公式の表記＝姓だけ）
+      const rows = Array.from({ length: people }, (_, k) => ({
+        name: lines[n + 6 + 9 * k],
+        innings: lines[n + 6 + 9 * k + 2],
+        pitches: Number(lines[n + 6 + 9 * k + 3]),
+      }));
+      pitching.push({ people, names: rows.map((r) => r.name), rows, innings: lines[p + 1], pitches: Number(lines[p + 2]) });
+    }
+  }
+
+  // 得点経過（「[9裏]仙台・有本のソロでサヨナラ」）。ページに同じ内容が2か所あるので重複を除く
+  const scoring = [
+    ...new Set(lines.filter((l) => /^\[\d+[表裏]\]/.test(l))),
+  ].map((l) => {
+    const m = l.match(/^\[(\d+)(表|裏)\](.*)$/);
+    return { inning: Number(m[1]), half: m[2], text: m[3] };
+  });
+
   return {
     rows: [row(abbr1, t1), row(abbr2, t2)],
     no: meta ? Number(meta[1]) : null,
@@ -177,6 +209,8 @@ function parseOfficial(html) {
     endedAt: meta?.[3] ?? null,
     attendance: meta ? Number(meta[4].replace(/,/g, "")) : null,
     pitchers,
+    pitching,
+    scoring,
   };
 }
 
@@ -231,6 +265,65 @@ async function verifySummary(g) {
   }
   if (s.pitchers.length !== off.pitchers.length) fail("pitchers は両チームぶん");
 
+  // ---- 完投（1人が全イニングを投げた）の記録。本文の「N球」はこの値と突き合わせる（下の checkProse）
+  const cg = s.completeGame;
+  if (cg) {
+    const i = off.pitchers.findIndex((x) => same(x.team, cg.team));
+    const blk = off.pitching[i];
+    if (i < 0) fail(`完投 ${cg.team}: 公式の投手欄に見つからない`);
+    else if (!blk) fail(`完投 ${cg.team}: 公式の投手成績が読めない`);
+    else if (blk.people !== off.pitchers[i].count) {
+      // 投手成績の並びが投手欄と合っているかの番人（合わなければ、別のチームの球数を比べてしまう）
+      fail(`完投 ${cg.team}: 投手成績の並びが投手欄と合わない（成績 ${blk.people}人 ／ 投手欄 ${off.pitchers[i].count}人）`);
+    } else {
+      if (blk.people !== 1) fail(`完投 ${cg.team}: 公式の投手は${blk.people}人（完投ではない）`);
+      else if (blk.names[0] !== cg.pitcher) {
+        fail(`完投 ${cg.team}: 投手の名前が公式と違う（公式 ${blk.names[0]} ／ 書いた ${cg.pitcher}）`);
+      }
+      if (Number(blk.innings) !== cg.innings) {
+        fail(`完投 ${cg.team}: 投球回が公式と違う（公式 ${blk.innings}回 ／ 書いた ${cg.innings}回）`);
+      }
+      if (blk.pitches !== cg.pitches) {
+        fail(`完投 ${cg.team}: 球数が公式と違う（公式 ${blk.pitches}球 ／ 書いた ${cg.pitches}球）`);
+      }
+      // 完投なら、投球回は相手が攻撃した回数（裏の攻撃なし「x」の回は数えない）と同じ
+      const oppRow = s.lineScore.find((r) => !same(r.team, cg.team));
+      const faced = oppRow ? oppRow.innings.filter((t) => !/^x$/i.test(t)).length : NaN;
+      if (faced !== cg.innings) fail(`完投 ${cg.team}: 投球回 ${cg.innings}回が、相手が攻撃した回数 ${faced}回と違う`);
+    }
+    const mine = s.pitchers.find((p) => same(p.team, cg.team));
+    if (!mine || mine.count !== 1) fail(`完投 ${cg.team}: pitchers の人数が1人になっていない`);
+  }
+
+  // ---- 先発投手の投球回（「先発が8回まで投げた」「先発が初回のうちに交代した」の裏づけ。公式の投手成績の先頭の行）
+  for (const st of s.starters ?? []) {
+    const i = off.pitchers.findIndex((x) => same(x.team, st.team));
+    const blk = off.pitching[i];
+    if (i < 0 || !blk) fail(`先発 ${st.team}: 公式の投手成績が読めない`);
+    else if (blk.people !== off.pitchers[i].count) {
+      fail(`先発 ${st.team}: 投手成績の並びが投手欄と合わない（成績 ${blk.people}人 ／ 投手欄 ${off.pitchers[i].count}人）`);
+    } else if (blk.rows[0].innings !== st.innings) {
+      fail(`先発 ${st.team}: 投球回が公式と違う（公式 ${blk.rows[0].innings} ／ 書いた ${st.innings}）`);
+    }
+  }
+
+  // ---- 本文で名前を出した選手: 公式の「得点経過」のその回・その表裏の行に、名前とキーワードがあること
+  for (const n of s.named ?? []) {
+    const hit = off.scoring.filter((x) => x.inning === n.inning && x.half === n.half);
+    if (hit.length === 0) {
+      fail(`${n.name}: 公式の得点経過に ${n.inning}回${n.half} の行が無い`);
+      continue;
+    }
+    if (!hit.some((x) => x.text.includes(n.name))) {
+      fail(`${n.name}: 公式の ${n.inning}回${n.half} の行に名前が無い（公式 ${hit.map((x) => x.text).join(" ／ ")}）`);
+      continue;
+    }
+    const line = hit.find((x) => x.text.includes(n.name));
+    for (const w of n.words) {
+      if (!line.text.includes(w)) fail(`${n.name}: 公式の ${n.inning}回${n.half} の行に「${w}」が無い（公式 ${line.text}）`);
+    }
+  }
+
   // ---- 主な得点場面: 先攻＝表／後攻＝裏の行で、その回に点が入っていること
   for (const p of s.plays) {
     const row = s.lineScore[p.half === "表" ? 0 : 1];
@@ -246,8 +339,61 @@ async function verifySummary(g) {
   if (bad === before) console.log(`    ✅ 概要が公式記録と一致（${url.replace(/^.*\?/, "").slice(0, 60)}…）`);
 }
 
+/**
+ * 本文（題・説明・リード・節）に書いた「N球」「N回、N球」を、`summary.completeGame` と突き合わせる。
+ * ★**本文の中の数字は手で書くので必ず誤る**ため、球数は検算した値（公式の投手成績）以外を書けないようにする。
+ *   （点数は `games` から描くので本文に書かない。球数だけは文の中に書きたいので、ここで見張る）
+ */
+function checkProse(c) {
+  const known = c.games.flatMap((g) => (g.summary?.completeGame ? [g.summary.completeGame] : []));
+  const texts = [
+    c.title,
+    c.searchTitle,
+    c.description,
+    ...c.lead,
+    ...c.sections.flatMap((s) => [s.heading ?? "", s.body]),
+  ];
+  const before = bad;
+  for (const t of texts) {
+    for (const m of t.matchAll(/(\d+)球/g)) {
+      if (!known.some((k) => k.pitches === Number(m[1]))) {
+        fail(`本文の「${m[0]}」は、検算した完投の球数（${known.map((k) => k.pitches).join("・") || "なし"}）にない`);
+      }
+    }
+    for (const m of t.matchAll(/(\d+)回[、，,]\s*(\d+)球/g)) {
+      if (!known.some((k) => k.innings === Number(m[1]) && k.pitches === Number(m[2]))) {
+        fail(`本文の「${m[0]}」は、検算した完投の回数・球数の組にない`);
+      }
+    }
+  }
+  if (bad === before && known.length) console.log(`  ✅ 本文の球数が検算した値と一致（${known.map((k) => `${k.innings}回${k.pitches}球`).join("・")}）`);
+
+  // ---- 本文の「◯◯選手」「◯◯投手」は、裏づけを書いた名前（named / completeGame.pitcher）だけ
+  const allowed = new Set(
+    c.games.flatMap((g) => [
+      ...(g.summary?.named ?? []).map((n) => n.name),
+      ...(g.summary?.completeGame ? [g.summary.completeGame.pitcher] : []),
+    ]),
+  );
+  // 投手のうち、名前でない語（「先発投手」など）
+  const NOT_NAMES = new Set(["先発", "継投", "救援", "中継ぎ", "左", "右", "両", "エース"]);
+  const beforeNames = bad;
+  const seen = new Set();
+  for (const t of texts) {
+    // ★「ヶ」「ケ」は名前に入る（鐘ヶ江）。「選手権」は名前ではない
+    for (const m of t.matchAll(/([一-龥々ヶケ]{1,4})(?:選手(?!権)|投手)/g)) {
+      const name = m[1];
+      if (NOT_NAMES.has(name)) continue;
+      seen.add(name);
+      if (!allowed.has(name)) fail(`本文に出した「${m[0]}」は、公式記録で裏づけた名前（${[...allowed].join("・") || "なし"}）にない`);
+    }
+  }
+  if (bad === beforeNames && seen.size) console.log(`  ✅ 本文の選手名は公式記録で裏づけた名前だけ（${[...seen].join("・")}）`);
+}
+
 for (const c of targets) {
   console.log(`\n== ${c.slug}${c.published ? "" : "（下書き）"}`);
+  checkProse(c);
   if (c.games.length === 0) console.log("  観戦した試合の記載なし");
   for (const g of c.games) {
     const label = `${g.date} ${g.round} ${g.teams[0].name} ${g.teams[0].score}-${g.teams[1].score} ${g.teams[1].name}`;

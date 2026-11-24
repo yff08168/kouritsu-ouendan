@@ -84,6 +84,9 @@ export function GameSummaryCard({ game }: { game: ColumnGame }) {
             <span key={p.team}>
               {i > 0 && "　"}
               {p.team}{p.count}人
+              {s.completeGame?.team === p.team && (
+                <>（完投　{s.completeGame.innings}回・{s.completeGame.pitches}球）</>
+              )}
             </span>
           ))}
         </dd>

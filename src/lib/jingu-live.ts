@@ -185,7 +185,9 @@ export function parseSchedule(html: string): JinguLiveGame[] {
   const text = flatten(marked);
 
   const re = new RegExp(
-    String.raw`(\d{1,2})\/(\d{1,2})\(([${WEEKDAYS}])\)の試合|@@(高校|大学)@@|第(\d+)試合\s*(\d{1,2}:\d{2})?\s*\[([^\]]+)\]`,
+    // ★日付と曜日のあいだ・曜日と「の試合」のあいだの空白を許す（2026-11-20 ごろ主催者の表記が
+    //   `11/19(木)の試合` から `11/19 (木) の試合` に変わり、日付が1つも読めず特設ページが404になった）
+    String.raw`(\d{1,2})\/(\d{1,2})\s*\(([${WEEKDAYS}])\)\s*の試合|@@(高校|大学)@@|第(\d+)試合\s*(\d{1,2}:\d{2})?\s*\[([^\]]+)\]`,
     "g",
   );
   const marks = [...text.matchAll(re)];
@@ -361,9 +363,20 @@ export async function getJinguLive(year: number): Promise<JinguLive | null> {
   const outline = outlineHtml
     ? parseOutline(outlineHtml)
     : { officialName: null, no: null, period: null, venue: null };
-  const no = flatten(teamsHtml).match(/第(\d+)回\s*明治神宮野球大会/)?.[1];
+  // ★出場校のページの回数は、もとは「第57回」だったが、2026-11 ごろから「第五十七回」（漢数字）になった。両方読む
+  const flat = flatten(teamsHtml);
+  const kanji = flat.match(/第([〇一二三四五六七八九十]+)回\s*明治神宮野球大会/)?.[1];
+  const no = flat.match(/第(\d+)回\s*明治神宮野球大会/)?.[1] ?? (kanji ? kanjiNumber(kanji) : null);
 
   return { year, ...outline, no: outline.no ?? (no ? `第${no}回` : null), entrants, games };
+}
+
+/** 「五十七」→ 57（99まで）。読めなければ null */
+function kanjiNumber(s: string): number | null {
+  const d = "〇一二三四五六七八九";
+  const m = s.match(/^([一二三四五六七八九])?十([一二三四五六七八九])?$/);
+  if (m) return (m[1] ? d.indexOf(m[1]) : 1) * 10 + (m[2] ? d.indexOf(m[2]) : 0);
+  return s.length === 1 && d.includes(s) ? d.indexOf(s) : null;
 }
 
 // ---------------------------------------------------------------------

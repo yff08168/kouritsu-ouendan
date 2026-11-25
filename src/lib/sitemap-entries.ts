@@ -25,6 +25,8 @@ import {
 import { vsPath } from "@/lib/head-to-head";
 import { getRegionalSchoolSlugs } from "@/lib/school-index";
 import { listArchiveYears } from "@/lib/archive";
+import { PRO_ALUMNI_INDEX } from "@/lib/data/pro-alumni/loaders";
+import { proRegionCounts } from "@/lib/pro-alumni";
 
 const url = (path: string) => new URL(path, SITE.url).toString();
 
@@ -248,6 +250,17 @@ async function buildSitemapGroups(): Promise<SitemapGroups> {
     { url: url("/koshien/public/champions"), lastModified: nationalLast, changeFrequency: "monthly", priority: 0.7 },
     // ★**甲子園の歴代優勝校（私立も含む全大会）**（2026-09-21）
     { url: url("/koshien/champions"), lastModified: nationalLast, changeFrequency: "monthly", priority: 0.8 },
+    // ★**公立高校出身のプロ野球選手**（2026-11-25）。lastmod は生成物を作り直した日（本当の更新日）
+    { url: url("/pro-players"), lastModified: new Date(PRO_ALUMNI_INDEX.generatedAt), changeFrequency: "monthly", priority: 0.8 },
+    // 地方ごとの選手の一覧（選手が1人もいない地方はページが無い）
+    ...(await proRegionCounts())
+      .filter((r) => r.players > 0)
+      .map((r) => ({
+        url: url(`/pro-players/${r.slug}`),
+        lastModified: new Date(PRO_ALUMNI_INDEX.generatedAt),
+        changeFrequency: "monthly" as const,
+        priority: 0.7,
+      })),
     // ★**ルールと制度の解説**（2026-09-21）。各ページは下の guidePages（`checkedOn` が最終確認日）
     {
       url: url("/guide"),

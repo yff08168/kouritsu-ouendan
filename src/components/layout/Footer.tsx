@@ -31,6 +31,8 @@ const FOOTER_EXTRA_LINKS = [
   { href: "/guide", label: "ルールと制度の解説" },
   // ★選抜の21世紀枠の特設ページ（2026-11-18）。選考の窓の外でも開くページなので常設
   { href: "/koshien/21seiki/2027", label: "センバツ21世紀枠の推薦校" },
+  // ★公立高校出身のプロ野球選手の一覧（2026-11-25）。NAV には足さない（幅の理由は上の注記）
+  { href: "/pro-players", label: "公立高校出身のプロ野球選手" },
 ];
 
 const ABOUT_LINKS = [

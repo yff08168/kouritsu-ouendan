@@ -10,6 +10,7 @@ import {
   Swords,
   Newspaper,
   Trophy,
+  UserRound,
 } from "lucide-react";
 
 import { Container } from "@/components/layout/Container";
@@ -20,6 +21,8 @@ import { SectionHeading } from "@/components/common/SectionHeading";
 import { LeadText } from "@/components/common/LeadText";
 import { SchoolRegionalRecord } from "@/components/schools/SchoolRegionalRecord";
 import { HeadToHeadList } from "@/components/schools/HeadToHeadList";
+import { SchoolProAlumni } from "@/components/schools/SchoolProAlumni";
+import { getProAlumniOfSchool } from "@/lib/pro-alumni";
 import { SchoolKoshienRecord } from "@/components/schools/SchoolKoshienRecord";
 import { KOSHIEN_GAMES, appearanceKey, koshienGamesOf } from "@/lib/koshien-games";
 import { JINGU_GAMES, jinguGamesOf } from "@/lib/jingu-games";
@@ -215,6 +218,14 @@ export default async function SchoolDetailPage({ params }: Props) {
     ★**県のファイルだけを読む**（全国ぶんは6MBある）。**対応していない県は空。**
   */
   const regionalDistrict = await getRegionalDistrict(school.prefecture.slug);
+
+  /*
+    ★★**卒業生のプロ野球選手**（2026-11-25。運営者の指示）。**その地区のファイルだけ読む**
+    （`pro-alumni/<地区>.json`。全国ぶんを入れない）。**0人の学校では節ごと出さない**
+    （「いない」とは書かない。DBに無いことは世の中に無いことではない）。
+  */
+  const proAlumni = await getProAlumniOfSchool(school.prefecture.slug, school.slug);
+
   // ★**index の判定（generateMetadata）と同じ関数で絞る。** 片方だけ変えない
   const regionalRecord = regionalGamesOf(
     regionalDistrict?.games ?? [],
@@ -612,6 +623,28 @@ export default async function SchoolDetailPage({ params }: Props) {
       </div>
 
       <AdSlot slot="school-detail-bottom" />
+
+      {/* ------- 卒業生のプロ野球選手（事実だけ。成績・写真は載せない） ------- */}
+      {proAlumni.length > 0 && (
+        <section
+          aria-labelledby="school-pro-alumni"
+          className="mt-4 rounded-xl border border-line bg-white p-5"
+        >
+          <SectionHeading
+            id="school-pro-alumni"
+            title="卒業生のプロ野球選手"
+            icon={<UserRound size={18} />}
+            note={`${proAlumni.length}人`}
+            moreHref="/pro-players"
+            moreLabel="公立高校出身の選手一覧へ"
+          />
+          <p className="mt-2 text-xs leading-relaxed text-ink-muted">
+            Wikipedia に記事のある選手のうち、プロ野球に入った卒業生です（大学・社会人野球を経た選手を含みます）。
+            進路は「高校 → 大学・社会人 → 球団」の順です。
+          </p>
+          <SchoolProAlumni players={proAlumni} school={shortSchoolName(school.name)} />
+        </section>
+      )}
 
       {/* ------- 直接対決・通算成績 ------- */}
       {rivals.length > 0 && (

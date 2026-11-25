@@ -1,0 +1,71 @@
+{
+ "year": 2026,
+ "picks": [
+  {
+   "team": "日本ハム",
+   "rank": "5位",
+   "kind": "regular",
+   "name": "岡本翔斗",
+   "school": {
+    "slug": "korigaoka",
+    "officialName": "大阪府立香里丘高等学校",
+    "prefSlug": "osaka"
+   }
+  },
+  {
+   "team": "日本ハム",
+   "rank": "育成2位",
+   "kind": "development",
+   "name": "藤井悠貴",
+   "school": {
+    "slug": "fukuoka-shingu",
+    "officialName": "福岡県立新宮高等学校",
+    "prefSlug": "fukuoka"
+   }
+  },
+  {
+   "team": "西武",
+   "rank": "育成3位",
+   "kind": "development",
+   "name": "後藤幸樹",
+   "school": {
+    "slug": "numazushogyo",
+    "officialName": "静岡県立沼津商業高等学校",
+    "prefSlug": "shizuoka"
+   }
+  },
+  {
+   "team": "巨人",
+   "rank": "育成2位",
+   "kind": "development",
+   "name": "柳井球汰",
+   "school": {
+    "slug": "ubekogyo",
+    "officialName": "山口県立宇部工業高等学校",
+    "prefSlug": "yamaguchi"
+   }
+  },
+  {
+   "team": "ソフトバンク",
+   "rank": "育成1位",
+   "kind": "development",
+   "name": "丹羽涼介",
+   "school": {
+    "slug": "wakayama-wakayama",
+    "officialName": "和歌山市立和歌山高等学校",
+    "prefSlug": "wakayama"
+   }
+  },
+  {
+   "team": "ソフトバンク",
+   "rank": "育成15位",
+   "kind": "development",
+   "name": "平山護",
+   "school": {
+    "slug": "tochiku",
+    "officialName": "福岡県立東筑高等学校",
+    "prefSlug": "fukuoka"
+   }
+  }
+ ]
+}

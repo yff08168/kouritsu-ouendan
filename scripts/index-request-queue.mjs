@@ -100,8 +100,10 @@ const TIERS = [
   {
     name: "主要ページ（main.xml）",
     match: (u) =>
-      /^https:\/\/[^/]+\/(live\/[a-z-]+|archive|phenomenon(\/[a-z0-9-]+)?|guide(\/[a-z0-9-]+)?|rankings(\/[a-z0-9-]+)?|features(\/[a-z0-9-]+)?|about|contact|privacy|terms|prefectures|regional|koshien|schools)$/.test(u),
-    rank: (u) => (/\/live\//.test(u) ? 0 : 1),
+      /^https:\/\/[^/]+\/(live\/[a-z-]+|archive|phenomenon(\/[a-z0-9-]+)?|guide(\/[a-z0-9-]+)?|rankings(\/[a-z0-9-]+)?|features(\/[a-z0-9-]+)?|about|contact|privacy|terms|prefectures|regional|koshien|schools|pro-players(\/[a-z-]+)?)$/.test(u),
+    // ★**公立高校出身のプロ野球選手（`/pro-players`・地方別8ページ）を足した**（2026-11-26）。2026-11-25 に
+    //   トップと7地方を依頼し、**北海道だけ割当で止まった**。新しいページは先に拾われてほしいので、速報と同じ先頭に置く。
+    rank: (u) => (/\/live\/|\/pro-players/.test(u) ? 0 : 1),
   },
   // ★★**甲子園の大会は「主要ページ」のあとへ下げた**（2026-11-20 に測った）——
   //   **12件を検査して12件とも登録済み**（新しい年も 1954〜2022 の古い年も）。神宮2件も同じ。
